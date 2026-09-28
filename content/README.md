@@ -16,6 +16,7 @@ Nothing here is read directly by the app. `scripts/validate-content.ts` checks i
 then `scripts/seed.ts` loads it into Postgres via Prisma. The app only ever reads
 from the database.
 
-Built out in Milestone 2 (schema + validation + a sample bank for one course) and
-Milestone 7 (full starter banks for all four courses). See `CLAUDE.md` for the
-exact JSON schema per question/FRQ field.
+Schema + validation landed in Milestone 2, along with a small sample bank
+(AP CSA, Units 1 and 4). The full starter banks for all four courses (~30 MCQ +
+3 FRQ per unit) are Milestone 7. See `CLAUDE.md` for the exact JSON schema per
+question/FRQ field.

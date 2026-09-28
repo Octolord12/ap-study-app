@@ -10,6 +10,9 @@
     "postinstall": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
+    "content:validate": "tsx scripts/validate-content.ts",
+    "content:seed": "dotenv -e .env.local -- tsx scripts/seed.ts",
+    "db:seed": "npm run content:validate && npm run content:seed",
     "test": "vitest run",
     "test:watch": "vitest"
   },

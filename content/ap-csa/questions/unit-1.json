@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ap-csa-u1-mcq-1",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "easy",
+    "stem": "Which of the following is a valid declaration and initialization of an `int` variable in Java?",
+    "choices": [
+      { "label": "A", "text": "int x = \"5\";", "isCorrect": false, "explanation": "\"5\" is a String literal, not an int. Assigning it to an int variable is a compile-time type mismatch." },
+      { "label": "B", "text": "int x = 5;", "isCorrect": true, "explanation": "This declares x as an int and initializes it with the int literal 5 -- exactly right." },
+      { "label": "C", "text": "integer x = 5;", "isCorrect": false, "explanation": "\"integer\" (lowercase) is not a Java keyword. The primitive type keyword is int." },
+      { "label": "D", "text": "int x == 5;", "isCorrect": false, "explanation": "== is the equality comparison operator, not assignment. This isn't a valid declaration statement." }
+    ],
+    "explanation": "A declaration pairs a type keyword with a variable name, and initialization uses a single `=` with a value of a compatible type. `int x = 5;` satisfies both.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-2",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "medium",
+    "stem": "What is the result of the expression `7 / 2` in Java, assuming both operands are `int` literals?",
+    "choices": [
+      { "label": "A", "text": "3.5", "isCorrect": false, "explanation": "Dividing two int operands performs integer division in Java, which truncates rather than producing a decimal result." },
+      { "label": "B", "text": "3", "isCorrect": true, "explanation": "Integer division of 7 by 2 truncates the fractional part, giving 3." },
+      { "label": "C", "text": "4", "isCorrect": false, "explanation": "Java truncates toward zero rather than rounding, so the result is not rounded up." },
+      { "label": "D", "text": "3.0", "isCorrect": false, "explanation": "int / int produces an int, not a double, so there's no decimal point in the result." }
+    ],
+    "explanation": "When both operands of `/` are int, Java performs integer division and truncates any fractional part, so `7 / 2` evaluates to `3`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-3",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "easy",
+    "stem": "After the following code executes, what is the value of `y`?\n\n```java\nint x = 4;\nint y = x + 3;\nx = 10;\n```",
+    "choices": [
+      { "label": "A", "text": "4", "isCorrect": false, "explanation": "This is x's original value, not the value computed for y." },
+      { "label": "B", "text": "7", "isCorrect": true, "explanation": "y is computed as x + 3 using x's value at that moment (4), giving 7. Reassigning x afterward doesn't change y." },
+      { "label": "C", "text": "10", "isCorrect": false, "explanation": "This is x's value after the last line, but y was already computed earlier and doesn't update automatically." },
+      { "label": "D", "text": "13", "isCorrect": false, "explanation": "This would be 10 + 3, but y was computed before x was reassigned to 10, not after." }
+    ],
+    "explanation": "Java copies the value of an expression at the moment of assignment. `y = x + 3` evaluates to `4 + 3 = 7` and stores 7 in y; later changes to x have no effect on y.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-4",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "medium",
+    "stem": "What value is stored in `result` after this code runs?\n\n```java\nint a = 5;\nint b = 2;\ndouble result = a / b;\n```",
+    "choices": [
+      { "label": "A", "text": "2.5", "isCorrect": false, "explanation": "a / b is evaluated using integer division first (since a and b are both int), producing 2 before it's ever widened to double." },
+      { "label": "B", "text": "2.0", "isCorrect": true, "explanation": "a / b performs integer division (5 / 2 = 2), and that int value 2 is then widened to the double 2.0 for storage in result." },
+      { "label": "C", "text": "3.0", "isCorrect": false, "explanation": "There is no rounding in Java's integer division; the result truncates rather than rounding to the nearest int." },
+      { "label": "D", "text": "2", "isCorrect": false, "explanation": "result is declared as a double, so Java automatically widens the computed int value to 2.0; it wouldn't stay a bare int." }
+    ],
+    "explanation": "The type of an expression is determined by its operands before any assignment happens. Since a and b are both int, `a / b` truncates to 2 first, and only that already-truncated value is widened to double.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-5",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "medium",
+    "stem": "What is the value of `x` after the following code executes?\n\n```java\nint x = 7;\nx += 5;\nx /= 4;\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": true, "explanation": "x += 5 makes x equal 12, then x /= 4 performs integer division: 12 / 4 = 3." },
+      { "label": "B", "text": "3.0", "isCorrect": false, "explanation": "x is declared as int, so it can never hold a double value; the compound division still performs integer division." },
+      { "label": "C", "text": "4", "isCorrect": false, "explanation": "This isn't the correct arithmetic: 7 + 5 is 12, not 13, and 12 / 4 is exactly 3 with no rounding involved." },
+      { "label": "D", "text": "2", "isCorrect": false, "explanation": "This would come from computing 7 / 4 and ignoring the += step entirely, but += must be applied first." }
+    ],
+    "explanation": "Compound assignment operators apply in sequence: `x += 5` updates x to 12, then `x /= 4` performs integer division on the updated value, giving 3.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-6",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed by the following code?\n\n```java\ndouble d = 9.7;\nint x = (int) d;\nSystem.out.println(x);\n```",
+    "choices": [
+      { "label": "A", "text": "10", "isCorrect": false, "explanation": "Casting a double to int in Java truncates the decimal portion rather than rounding to the nearest integer." },
+      { "label": "B", "text": "9", "isCorrect": true, "explanation": "(int) d truncates 9.7 toward zero, discarding the .7 and leaving 9." },
+      { "label": "C", "text": "9.7", "isCorrect": false, "explanation": "Once cast to int, x can no longer hold a fractional value -- the .7 is permanently discarded." },
+      { "label": "D", "text": "9.0", "isCorrect": false, "explanation": "x is declared as int, not double, so println displays it as a whole number with no decimal point." }
+    ],
+    "explanation": "A `(int)` cast on a double truncates toward zero -- it does not round. `9.7` becomes `9`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-7",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "easy",
+    "stem": "Which cast correctly converts the `int` variable `count` to a `double`?",
+    "choices": [
+      { "label": "A", "text": "(int) count", "isCorrect": false, "explanation": "This casts to int, which is already count's type -- it wouldn't change anything." },
+      { "label": "B", "text": "(double) count", "isCorrect": true, "explanation": "Java's cast syntax is a type name in parentheses immediately before the value being converted." },
+      { "label": "C", "text": "double(count)", "isCorrect": false, "explanation": "This looks like constructor/function-call syntax from other languages, but Java doesn't use this form for casting." },
+      { "label": "D", "text": "count.toDouble()", "isCorrect": false, "explanation": "Primitive int values don't have methods in Java (no autoboxing happens here), so this wouldn't compile." }
+    ],
+    "explanation": "Java casts a value by writing the target type in parentheses directly before the expression: `(double) count`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  }
+]

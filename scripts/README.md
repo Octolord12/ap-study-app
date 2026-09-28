@@ -1,9 +1,13 @@
 # Scripts
 
-- `validate-content.ts` (Milestone 2) — checks every file in `/content` against
-  the schema: exactly one correct choice per MCQ, an explanation for every
-  choice, a concept link that resolves to a real unit/topic, valid LaTeX/code
-  fences, rubric points summing to the FRQ's point value.
-- `seed.ts` (Milestone 2) — loads validated content into Postgres via Prisma.
-
-Run with `npx tsx scripts/<name>.ts` (already installed as a dev dependency).
+- `validate-content.ts` — walks `/content` and checks every file against the
+  schema and semantic rules (exactly one correct choice per MCQ, rubric points
+  summing to the FRQ's point value, concept links resolving to a real unit/topic,
+  balanced LaTeX/code fences, no duplicate ids). The rules themselves live in
+  `src/lib/content/validate.ts` as pure, unit-tested functions; this script is
+  just the directory-walking wrapper. Run: `npm run content:validate`.
+- `seed.ts` — upserts validated content into Postgres via Prisma. Idempotent
+  (keyed by slug/id), safe to re-run after editing content. Needs `DATABASE_URL`,
+  so run it via `npm run content:seed` (wraps it with `dotenv-cli`), not directly
+  with `tsx`.
+- `npm run db:seed` runs both, in order.

@@ -44,6 +44,13 @@ get the client via `getDb()` in `src/lib/db/index.ts` — never construct
 `PrismaClient` elsewhere, and never wrap it in a `Proxy` (breaks Auth.js's
 Prisma adapter, which inspects the client object directly).
 
+### Gotcha: scripts need `DATABASE_URL`, and need `dotenv-cli` to get it
+
+`tsx` (used for `scripts/*.ts`) doesn't auto-load `.env.local` the way Next.js
+does. `content:seed` runs through `dotenv -e .env.local --` for this reason.
+If you add a new script that touches the database, wrap it the same way rather
+than adding another ad hoc env-loading mechanism.
+
 ### Gotcha: env vars live in `.env.local`, not `.env`
 
 This project is linked to Vercel (`vercel link`) with Neon provisioned through
@@ -76,8 +83,9 @@ npm run lint           # eslint
 npx tsc --noEmit       # typecheck (route types need a prior dev/build run)
 npm run db:migrate     # prisma migrate dev
 npm run db:studio      # prisma studio (browse the DB)
-npx tsx scripts/seed.ts            # (Milestone 2) seed /content into Postgres
-npx tsx scripts/validate-content.ts # (Milestone 2) validate /content
+npm run content:validate # check /content against the schema (see below)
+npm run content:seed     # load validated /content into Postgres (idempotent)
+npm run db:seed           # validate, then seed
 ```
 
 Env vars live in `.env.local` (gitignored). `vercel env pull .env.local` re-syncs
@@ -99,28 +107,61 @@ Full schema: `prisma/schema.prisma`. Summary:
   `UserBadge`, `BossBattleAttempt`.
 - **Social**: `Class`, `ClassMembership`, `Friendship`, `User.leaderboardOptOut`.
 
-### Content schema (for `/content/<course>/...` JSON, built out in Milestone 2)
+### Content pipeline (Milestone 2)
 
-**MCQ Question**
+`/content/<course-slug>/{course.json, units/*.json, questions/*.json, frqs/*.json}`
+is the source of truth, authored by hand or generated. Nothing in the app reads
+these files directly.
+
 ```
-id, course, unit, topic, difficulty (easy|medium|hard),
+npm run content:validate   # Zod shape + semantic checks, see below
+npm run content:seed       # upserts validated content into Postgres (idempotent, keyed by slug/id)
+npm run db:seed            # both, in order
+```
+
+The Zod schemas live in `src/lib/content/schema.ts`. The semantic rules (not
+expressible in Zod alone) live in `src/lib/content/validate.ts` as pure,
+unit-tested functions (`tests/content-validate.test.ts`) — `scripts/validate-content.ts`
+just walks `/content` and calls them:
+
+- exactly one `isCorrect` choice per question, labels sequential (A, B, C, ...)
+- `conceptLink` matches `<course>/<unit>/<topic>` exactly
+- every `unit`/`topic` a question or FRQ references actually exists in that
+  course's `units/*.json`
+- FRQ rubric points sum to exactly `pointValue`
+- no duplicate ids (MCQs and FRQs share one id space per course)
+- balanced `$...$` and ` ```...``` ` delimiters in markdown fields (catches the
+  most common authoring slip: an unclosed fence)
+
+Numerical-answer verification (for Calculus/Physics, per the original content
+sourcing rules) isn't built yet — there's no numerical content until Milestone 7.
+
+**MCQ Question** (`content/<course>/questions/*.json`, one JSON array per file)
+```
+id, unit, topic, difficulty (easy|medium|hard),
 stem (markdown; supports $latex$ and ```code``` fences),
 choices: [{ label, text, isCorrect, explanation }]  (4 or 5 choices, exactly one isCorrect),
 explanation (why the correct answer is right),
-conceptLink (slug back to the relevant unit/topic page),
+conceptLink ("<course-slug>/<unit-slug>/<topic-slug>"),
 reviewed (bool, default false)
 ```
 
-**FRQ Prompt**
+**FRQ Prompt** (`content/<course>/frqs/*.json`)
 ```
-id, course, unit, topic, prompt, pointValue,
+id, unit, topic, prompt, pointValue,
 rubric: [{ id, points, description }]  (points must sum to pointValue),
 sampleResponse,
 reviewed (bool, default false)
 ```
 
-**Course exam format** (stored as `Course.examFormat` JSON — see below for why
-this must stay data, not hardcoded)
+**Course** (`content/<course>/course.json`) and **Unit** (`content/<course>/units/*.json`,
+each with a nested `topics` array) match `CourseSchema`/`UnitSchema` in
+`src/lib/content/schema.ts` — see that file for the exact shape, including
+`examFormat` (why this must stay data, not hardcoded, is explained below).
+
+**Sample bank seeded so far**: AP CSA, Units 1 and 4 only (14 MCQs, 2 FRQs) —
+enough to prove the model end-to-end. The other 8 units and the other three
+courses are Milestone 7.
 
 ## Verified AP course info (2026-27)
 
@@ -144,8 +185,11 @@ in app logic — updating them should be a data edit.
       proven end-to-end, Vitest configured with passing tests, `next build`/`lint`/
       `tsc` all clean. Vercel project linked (`ap-study-app`). GitHub repo not
       yet created (see Known issues).
-- [ ] **Milestone 2 — Content foundation.** Validation script, seed pipeline,
-      sample question bank for one course.
+- [x] **Milestone 2 — Content foundation.** Zod schema + pure, unit-tested
+      validation rules (`src/lib/content/`), `validate-content`/`seed` scripts,
+      sample AP CSA bank (2 units, 14 MCQs, 2 FRQs) authored, validated, and
+      seeded into Neon — confirmed idempotent and checked directly against the
+      DB. 13 tests added (16 total), all clean.
 - [ ] **Milestone 3 — Core study loop.** Auth UI, course/unit/topic browsing,
       MCQ quizzes with explanations, filters, bookmarks, progress tracking.
 - [ ] **Milestone 4 — Practice modes.** Custom quizzes, exam simulation, daily
@@ -164,10 +208,11 @@ in app logic — updating them should be a data edit.
   this machine, so the repo couldn't be created non-interactively. Local git
   history exists (`git log`); create the repo on github.com and add it as a
   remote, or install `gh`/Homebrew and ask to retry.
-- **`npm audit` reports vulnerabilities** in `chevrotain`/`lodash`/`valibot` —
-  all transitive dev dependencies of the `prisma` CLI's schema-formatting
-  tooling, not runtime/production code. Revisit when Prisma ships a fix
-  upstream; not urgent.
+- **`npm audit` reports vulnerabilities** in `hono`/`mysql2` — both transitive
+  dev dependencies of the `prisma` CLI itself (bundled tooling for databases/
+  features we don't use), not runtime/production code. `npm audit fix --force`
+  would downgrade Prisma to 6.19.3, which is a step backward, not a fix — don't
+  run it. Revisit when Prisma ships a clean fix upstream; not urgent.
 - **Prisma 8 exists as a release candidate** (`8.0.0-rc.x`, currently tagged
   `latest` on npm) with a materially different CLI (`prisma.config.ts`, no more
   traditional `schema.prisma`-only flow). We deliberately pinned to the last

@@ -1,0 +1,12 @@
+{
+  "slug": "unit-1-primitive-types",
+  "order": 1,
+  "name": "Primitive Types",
+  "weightingMin": 2,
+  "weightingMax": 8,
+  "topics": [
+    { "slug": "variables-and-data-types", "order": 1, "name": "Variables and Data Types" },
+    { "slug": "expressions-and-assignment", "order": 2, "name": "Expressions and Assignment Statements" },
+    { "slug": "compound-assignment-and-casting", "order": 3, "name": "Compound Assignment Operators and Casting" }
+  ]
+}

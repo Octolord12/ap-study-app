@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ap-csa-u4-frq-1",
+    "unit": "unit-4-iteration",
+    "topic": "for-loops",
+    "prompt": "Write a method named `countMultiples` that takes two `int` parameters, `limit` and `factor`, and returns the number of positive integers less than `limit` that are multiples of `factor`. For example, `countMultiples(10, 3)` should return `3`, because 3, 6, and 9 are the positive multiples of 3 that are less than 10.\n\nComplete the method below.\n\n```java\npublic int countMultiples(int limit, int factor) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares and initializes a counter variable to 0" },
+      { "id": "r2", "points": 1, "description": "Uses a loop that iterates through the positive integers less than limit" },
+      { "id": "r3", "points": 1, "description": "Correctly tests whether each value is a multiple of factor (e.g. using i % factor == 0)" },
+      { "id": "r4", "points": 1, "description": "Returns the correct final count" }
+    ],
+    "sampleResponse": "```java\npublic int countMultiples(int limit, int factor) {\n    int count = 0;\n    for (int i = 1; i < limit; i++) {\n        if (i % factor == 0) {\n            count++;\n        }\n    }\n    return count;\n}\n```",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ap-csa-u1-frq-1",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "prompt": "Write a method named `celsiusToFahrenheit` that takes a `double` parameter `celsius` representing a temperature in Celsius and returns the equivalent temperature in Fahrenheit as a `double`. Use the formula `F = C * 9/5 + 32`.\n\nComplete the method below.\n\n```java\npublic double celsiusToFahrenheit(double celsius) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses the parameter celsius in the calculation" },
+      { "id": "r2", "points": 1, "description": "Applies the conversion formula correctly, using floating-point division (9.0/5.0, not integer division 9/5)" },
+      { "id": "r3", "points": 1, "description": "Returns the computed Fahrenheit value with a return statement" }
+    ],
+    "sampleResponse": "```java\npublic double celsiusToFahrenheit(double celsius) {\n    double fahrenheit = celsius * 9.0 / 5.0 + 32;\n    return fahrenheit;\n}\n```",
+    "reviewed": false
+  }
+]

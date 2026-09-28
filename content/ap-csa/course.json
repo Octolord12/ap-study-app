@@ -1,0 +1,13 @@
+{
+  "slug": "ap-csa",
+  "name": "AP Computer Science A",
+  "description": "A Java-based introduction to object-oriented programming: control structures, classes, and data structures (arrays, ArrayList, 2D arrays), aligned to the College Board Course and Exam Description.",
+  "colorTheme": "blue",
+  "examFormat": {
+    "totalDurationMinutes": 180,
+    "sections": [
+      { "type": "MCQ", "questionCount": 42, "durationMinutes": 90, "scoreWeight": 0.55 },
+      { "type": "FRQ", "questionCount": 4, "durationMinutes": 90, "scoreWeight": 0.45 }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "unit-4-iteration",
+  "order": 4,
+  "name": "Iteration",
+  "weightingMin": 17,
+  "weightingMax": 22,
+  "topics": [
+    { "slug": "while-loops", "order": 1, "name": "While Loops" },
+    { "slug": "for-loops", "order": 2, "name": "For Loops" },
+    { "slug": "nested-iteration", "order": 3, "name": "Nested Iteration" },
+    { "slug": "informal-code-analysis", "order": 4, "name": "Informal Code Analysis of Loops" }
+  ]
+}
