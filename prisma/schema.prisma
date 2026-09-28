@@ -1,0 +1,381 @@
+// Prisma schema for the AP Study app.
+// See CLAUDE.md for the reasoning behind the content model (JSON files -> validated -> seeded here).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------- Auth.js (NextAuth) required tables ----------
+// Shapes are dictated by @auth/prisma-adapter; don't rename fields.
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  passwordHash  String? // set for credentials login; null if a future OAuth provider is added
+  displayName   String
+  username      String    @unique
+  emailVerified DateTime?
+  image         String?
+  role          Role      @default(STUDENT)
+  createdAt     DateTime  @default(now())
+
+  leaderboardOptOut Boolean @default(false)
+
+  accounts Account[]
+  sessions Session[]
+
+  enrollments       Enrollment[]
+  questionAttempts  QuestionAttempt[]
+  frqAttempts       FRQAttempt[]
+  bookmarks         Bookmark[]
+  reviewStates      SpacedRepetitionState[]
+  xpEvents          XPEvent[]
+  userBadges        UserBadge[]
+  bossBattles       BossBattleAttempt[]
+  examAttempts      ExamAttempt[]
+  ownedClasses      Class[]                 @relation("ClassOwner")
+  classMemberships  ClassMembership[]
+  friendshipsSent   Friendship[]            @relation("FriendshipRequester")
+  friendshipsRecvd  Friendship[]            @relation("FriendshipAddressee")
+}
+
+enum Role {
+  STUDENT
+  ADMIN
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ---------- Content: Course -> Unit -> Topic -> Question / FRQPrompt ----------
+// Authored as JSON in /content, validated by scripts/validate-content.ts,
+// loaded into these tables by scripts/seed.ts. The app only ever reads from here.
+
+model Course {
+  id          String  @id @default(cuid())
+  slug        String  @unique // e.g. "ap-csa"
+  name        String // e.g. "AP Computer Science A"
+  description String
+  colorTheme  String // Tailwind color token driving the course's accent color
+  examFormat  Json // MCQ/FRQ counts, section timing, weighting ranges -- see content schema in CLAUDE.md
+
+  units       Unit[]
+  enrollments Enrollment[]
+  classes     Class[]
+  examAttempts ExamAttempt[]
+}
+
+model Unit {
+  id            String  @id @default(cuid())
+  courseId      String
+  order         Int
+  slug          String
+  name          String
+  weightingMin  Int // percent, from the CED
+  weightingMax  Int
+
+  course      Course       @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  topics      Topic[]
+  questions   Question[]
+  frqPrompts  FRQPrompt[]
+  bossBattles BossBattleAttempt[]
+
+  @@unique([courseId, slug])
+}
+
+model Topic {
+  id       String @id @default(cuid())
+  unitId   String
+  order    Int
+  slug     String
+  name     String
+
+  unit      Unit       @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  questions Question[]
+  frqPrompts FRQPrompt[]
+
+  @@unique([unitId, slug])
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+model Question {
+  id           String     @id @default(cuid())
+  courseId     String
+  unitId       String
+  topicId      String
+  difficulty   Difficulty
+  stem         String     @db.Text // markdown; supports $latex$ and fenced code blocks
+  explanation  String     @db.Text // why the correct answer is right
+  conceptLink  String // slug path back to the unit/topic page, e.g. "ap-csa/unit-4/iteration"
+  reviewed     Boolean    @default(false)
+  createdAt    DateTime   @default(now())
+
+  unit    Unit     @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  topic   Topic    @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  choices Choice[]
+
+  attempts     QuestionAttempt[]
+  bookmarks    Bookmark[]
+  reviewStates SpacedRepetitionState[]
+}
+
+model Choice {
+  id          String  @id @default(cuid())
+  questionId  String
+  label       String // "A", "B", "C", "D", ("E")
+  text        String  @db.Text
+  isCorrect   Boolean
+  explanation String  @db.Text // why THIS choice is right/wrong
+
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([questionId, label])
+}
+
+model FRQPrompt {
+  id             String   @id @default(cuid())
+  courseId       String
+  unitId         String
+  topicId        String
+  prompt         String   @db.Text
+  pointValue     Int
+  rubric         Json // itemized: [{ points, description }]
+  sampleResponse String   @db.Text
+  reviewed       Boolean  @default(false)
+  createdAt      DateTime @default(now())
+
+  unit  Unit  @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  topic Topic @relation(fields: [topicId], references: [id], onDelete: Cascade)
+
+  attempts FRQAttempt[]
+}
+
+// ---------- Enrollment & progress ----------
+
+model Enrollment {
+  userId    String
+  courseId  String
+  createdAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@id([userId, courseId])
+}
+
+enum AttemptSource {
+  PRACTICE
+  QUIZ
+  EXAM
+  DAILY
+  WEAK_SPOT
+}
+
+model QuestionAttempt {
+  id            String        @id @default(cuid())
+  userId        String
+  questionId    String
+  chosenLabel   String // matches Choice.label
+  correct       Boolean
+  timeSpentMs   Int
+  source        AttemptSource
+  createdAt     DateTime      @default(now())
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@index([userId, questionId])
+}
+
+model FRQAttempt {
+  id                 String   @id @default(cuid())
+  userId             String
+  frqPromptId        String
+  responseText       String   @db.Text
+  selfGradedPoints    Int // out of FRQPrompt.pointValue, set after self-grading against the rubric
+  createdAt          DateTime @default(now())
+
+  user User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  frq  FRQPrompt @relation(fields: [frqPromptId], references: [id], onDelete: Cascade)
+}
+
+model Bookmark {
+  userId     String
+  questionId String
+  createdAt  DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@id([userId, questionId])
+}
+
+// Simple SM-2-style spaced repetition state, one row per (user, question) they've missed.
+model SpacedRepetitionState {
+  userId      String
+  questionId  String
+  easeFactor  Float    @default(2.5)
+  intervalDays Int     @default(1)
+  dueAt       DateTime @default(now())
+  lapses      Int      @default(0)
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@id([userId, questionId])
+}
+
+model ExamAttempt {
+  id             String   @id @default(cuid())
+  userId         String
+  courseId       String
+  sectionScores  Json // per-section raw scores
+  estimatedScore String // e.g. "3-4", always labeled as an estimate in the UI
+  startedAt      DateTime @default(now())
+  completedAt    DateTime?
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+}
+
+// ---------- Gamification ----------
+// XP is an append-only ledger written ONLY by server-side route handlers, from validated
+// attempts. Level/streak/totals are always derived from this table, never trusted from the client.
+
+model XPEvent {
+  id        String   @id @default(cuid())
+  userId    String
+  amount    Int
+  reason    String // e.g. "question_correct", "streak_bonus", "boss_defeated"
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}
+
+model Badge {
+  id          String @id @default(cuid())
+  slug        String @unique
+  name        String
+  description String
+  icon        String
+
+  userBadges UserBadge[]
+}
+
+model UserBadge {
+  userId    String
+  badgeId   String
+  earnedAt  DateTime @default(now())
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge Badge @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+
+  @@id([userId, badgeId])
+}
+
+model BossBattleAttempt {
+  userId        String
+  unitId        String
+  passed        Boolean
+  attemptsCount Int      @default(1)
+  bestScore     Int
+  updatedAt     DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  unit Unit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+
+  @@id([userId, unitId])
+}
+
+// ---------- Social ----------
+
+model Class {
+  id         String @id @default(cuid())
+  name       String
+  inviteCode String @unique
+  ownerId    String
+  courseId   String?
+
+  owner       User              @relation("ClassOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  course      Course?           @relation(fields: [courseId], references: [id])
+  memberships ClassMembership[]
+}
+
+enum ClassRole {
+  OWNER
+  MEMBER
+}
+
+model ClassMembership {
+  classId  String
+  userId   String
+  role     ClassRole @default(MEMBER)
+  joinedAt DateTime  @default(now())
+
+  class Class @relation(fields: [classId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([classId, userId])
+}
+
+enum FriendshipStatus {
+  PENDING
+  ACCEPTED
+  BLOCKED
+}
+
+model Friendship {
+  requesterId String
+  addresseeId String
+  status      FriendshipStatus @default(PENDING)
+  createdAt   DateTime         @default(now())
+
+  requester User @relation("FriendshipRequester", fields: [requesterId], references: [id], onDelete: Cascade)
+  addressee User @relation("FriendshipAddressee", fields: [addresseeId], references: [id], onDelete: Cascade)
+
+  @@id([requesterId, addresseeId])
+}
