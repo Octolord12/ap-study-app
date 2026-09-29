@@ -60,6 +60,29 @@ export default async function UnitPage({
         questions={questionRows}
         initialTopicSlug={topic}
       />
+
+      {unit.frqPrompts.length > 0 ? (
+        <>
+          <h2 className="mt-8 mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+            Free response
+          </h2>
+          <ul className="divide-y divide-border rounded-lg border border-border">
+            {unit.frqPrompts.map((frq, index) => (
+              <li key={frq.id} className="flex items-center justify-between px-4 py-2 text-sm">
+                <span>
+                  FRQ {index + 1} · {frq.topic.name} · {frq.pointValue} pts
+                </span>
+                <Link
+                  href={`/courses/${course.slug}/units/${unit.slug}/frq/${frq.id}`}
+                  className="font-medium underline underline-offset-4"
+                >
+                  Practice
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      ) : null}
     </div>
   );
 }

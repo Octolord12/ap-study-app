@@ -27,11 +27,17 @@ export default async function CoursePage({ params }: { params: Promise<{ courseS
           <h1 className="text-2xl font-bold tracking-tight">{course.name}</h1>
           <p className="mt-1 text-sm text-muted-foreground">{course.description}</p>
         </div>
-        {!enrollment ? (
-          <form action={enrollAction}>
-            <Button type="submit">Start studying</Button>
-          </form>
-        ) : null}
+        <div className="flex shrink-0 gap-2">
+          {enrollment ? (
+            <Button render={<Link href={`/courses/${course.slug}/practice`} />} nativeButton={false} variant="outline">
+              Practice
+            </Button>
+          ) : (
+            <form action={enrollAction}>
+              <Button type="submit">Start studying</Button>
+            </form>
+          )}
+        </div>
       </div>
 
       <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Units</h2>

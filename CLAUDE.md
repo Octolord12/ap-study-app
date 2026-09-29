@@ -144,7 +144,11 @@ Full schema: `prisma/schema.prisma`. Summary:
 - **Auth.js tables**: `User`, `Account`, `Session`, `VerificationToken` (shapes
   fixed by `@auth/prisma-adapter`, don't rename fields).
 - **Progress**: `Enrollment`, `QuestionAttempt`, `FRQAttempt`, `Bookmark`,
-  `SpacedRepetitionState` (SM-2-style, drives weak-spot review), `ExamAttempt`.
+  `SpacedRepetitionState` (simplified SM-2, drives weak-spot review; the actual
+  scheduling logic is `src/lib/study/spaced-repetition.ts`, pure and unit-tested),
+  `ExamAttempt` (`questionIds`/`frqPromptIds` JSON arrays fix the exam's content
+  at start time so a reload doesn't reshuffle it mid-exam; `sectionScores`/
+  `estimatedScore` are null until submitted).
 - **Gamification**: `XPEvent` (append-only ledger — level/streak/totals are
   always *derived* from this, never stored/trusted directly), `Badge`,
   `UserBadge`, `BossBattleAttempt`.
@@ -154,6 +158,44 @@ There's no dedicated topic-detail route: "browse by topic" is the unit page's
 topic filter (`?topic=<slug>`), which is also what a question's "review this
 concept" link points at. Revisit only if topics need their own content beyond
 filtering (e.g. topic-level notes).
+
+### Practice modes (Milestone 4)
+
+Two quiz entry points share one `QuizRunner` (`src/components/study/quiz-runner.tsx`)
+and one server-side rendering helper (`src/lib/study/render-quiz.ts`):
+
+- `courses/[courseSlug]/units/[unitSlug]/quiz` — unit practice from the
+  question-browser filters, "back" goes to the unit.
+- `courses/[courseSlug]/quiz` — generic, takes `?ids=&source=&back=&backLabel=`;
+  everything else (custom quiz, weak-spot review, daily challenge) redirects
+  here after picking which questions belong in the quiz. `source` is the
+  `AttemptSource` recorded on each `QuestionAttempt` (QUIZ/WEAK_SPOT/DAILY).
+
+Custom quiz, weak-spot review, and the daily challenge are all **course-scoped**
+(`/courses/[courseSlug]/practice/...`), not global — deliberately, to keep
+routing simple (no quiz spans multiple courses). The daily challenge's
+"completed today" check is just `QuestionAttempt` rows with `source: DAILY`
+created since midnight — no separate table.
+
+**Exam simulation** (`courses/[courseSlug]/exam`) is its own flow, not a
+`QuizRunner` variant, because the UX is genuinely different: sequential
+MCQ-then-FRQ with a countdown timer and *no* per-question reveal (`ExamRunner`,
+`src/components/study/exam-runner.tsx`), submitted all at once
+(`submitExamAttempt`), with explanations/grading deferred to the results page.
+`estimateApScoreRange` (`src/lib/study/exam-scoring.ts`) is a deliberately
+crude, unit-tested heuristic from MCQ accuracy alone — always labeled
+"estimate" in the UI, not a real predictor. Known approximation: the results
+page's "what did you pick on this exam" lookup matches `QuestionAttempt` rows
+by user+question+`source: EXAM` (there's no FK from `QuestionAttempt` to a
+specific `ExamAttempt`), so it can't perfectly disambiguate two attempts at
+the same course's exam close together. Fine for now; revisit if that matters.
+
+**FRQ self-grading** (`src/components/study/frq-self-grade.tsx`) finally puts
+Milestone 1's `SelfGradingStrategy` (`src/lib/scoring/grading.ts`) to use, and
+is shared between two contexts: standalone practice (write + grade in one
+sitting, `submitFrqAttempt` creates the attempt already graded) and exam
+results (the response was already saved un-graded at submission time, so
+`updateFrqGrade` grades the existing `FRQAttempt` instead of creating a new one).
 
 ### Content pipeline (Milestone 2)
 
@@ -249,8 +291,18 @@ in app logic — updating them should be a data edit.
       logout, enroll, filter, take a 7-question quiz, bookmark persistence
       across reload, dashboard accuracy matching the quiz result, and
       logged-out users correctly bounced from protected pages.
-- [ ] **Milestone 4 — Practice modes.** Custom quizzes, exam simulation, daily
-      challenge, weak-spot review, FRQ self-grading.
+- [x] **Milestone 4 — Practice modes.** Custom quizzes (pick units/difficulty/
+      length), weak-spot review (spaced-repetition scheduling now wired into
+      `recordAttempt`), daily challenge (5 questions, prioritizes what's due),
+      FRQ self-grading (standalone and reused for exam results), and full exam
+      simulation (timed, sectioned, no reveal until submission, estimated AP
+      score range). `ExamAttempt` gained `questionIds`/`frqPromptIds` columns
+      (migrated). 8 tests added (29 total). Verified end-to-end in-browser:
+      custom quiz across both units, spaced-repetition state confirmed correct
+      directly against the DB after a hit and a miss, FRQ practice (checked
+      rubric lines against a deliberately-buggy response, got a partial score),
+      and a full exam run (timer, no-reveal MCQs, empty-FRQ handling, results
+      page scoring/estimate/review, dashboard reflecting the exam's attempts).
 - [ ] **Milestone 5 — Gamification.** XP, levels, streaks, badges, boss battles,
       animations.
 - [ ] **Milestone 6 — Social.** Friends, classes, leaderboards, anti-abuse checks.

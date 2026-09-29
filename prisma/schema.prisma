@@ -268,12 +268,14 @@ model SpacedRepetitionState {
 }
 
 model ExamAttempt {
-  id             String   @id @default(cuid())
+  id             String    @id @default(cuid())
   userId         String
   courseId       String
-  sectionScores  Json // per-section raw scores
-  estimatedScore String // e.g. "3-4", always labeled as an estimate in the UI
-  startedAt      DateTime @default(now())
+  questionIds    Json // ordered Question ids selected for this attempt -- fixed at start so a reload doesn't reshuffle mid-exam
+  frqPromptIds   Json // ordered FRQPrompt ids selected for this attempt
+  sectionScores  Json? // per-section raw scores, filled in on submit
+  estimatedScore String? // e.g. "3-4", always labeled as an estimate in the UI; set on submit
+  startedAt      DateTime  @default(now())
   completedAt    DateTime?
 
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)

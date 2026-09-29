@@ -1,9 +1,19 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import { auth } from "@/lib/auth/config";
 import { getDb } from "@/lib/db";
-import type { AttemptSource } from "@/generated/prisma/client";
+import { computeNextReview } from "@/lib/study/spaced-repetition";
+import { pickQuestionIdsForCustomQuiz } from "@/lib/study/queries";
+import { estimateApScoreRange } from "@/lib/study/exam-scoring";
+import { SelfGradingStrategy, type RubricLine } from "@/lib/scoring/grading";
+import type { AttemptSource, Difficulty } from "@/generated/prisma/client";
+import type { Course as ContentCourse } from "@/lib/content/schema";
+
+function shuffle<T>(items: T[]): T[] {
+  return [...items].sort(() => Math.random() - 0.5);
+}
 
 async function requireUserId(): Promise<string> {
   const session = await auth();
@@ -70,6 +80,216 @@ export async function recordAttempt(input: RecordAttemptInput): Promise<{ correc
     },
   });
 
+  const existingReviewState = await db.spacedRepetitionState.findUnique({
+    where: { userId_questionId: { userId, questionId: input.questionId } },
+  });
+  const nextReview = computeNextReview(
+    existingReviewState ?? { easeFactor: 2.5, intervalDays: 1, lapses: 0 },
+    correct,
+  );
+  await db.spacedRepetitionState.upsert({
+    where: { userId_questionId: { userId, questionId: input.questionId } },
+    create: { userId, questionId: input.questionId, ...nextReview },
+    update: nextReview,
+  });
+
   revalidatePath("/dashboard");
   return { correct };
+}
+
+const VALID_DIFFICULTIES: Difficulty[] = ["EASY", "MEDIUM", "HARD"];
+
+export async function startCustomQuiz(formData: FormData): Promise<void> {
+  await requireUserId();
+
+  const courseId = formData.get("courseId") as string;
+  const courseSlug = formData.get("courseSlug") as string;
+  const unitIds = formData.getAll("unitId") as string[];
+  const difficultyRaw = formData.get("difficulty");
+  const difficulty = VALID_DIFFICULTIES.includes(difficultyRaw as Difficulty) ? (difficultyRaw as Difficulty) : undefined;
+  const length = Math.max(1, Math.min(50, Number(formData.get("length")) || 10));
+
+  if (unitIds.length === 0) {
+    redirect(`/courses/${courseSlug}/practice/custom?error=no-units`);
+  }
+
+  const ids = await pickQuestionIdsForCustomQuiz({ courseId, unitIds, difficulty, length });
+  if (ids.length === 0) {
+    redirect(`/courses/${courseSlug}/practice/custom?error=no-matches`);
+  }
+
+  const params = new URLSearchParams({
+    ids: ids.join(","),
+    source: "QUIZ",
+    back: `/courses/${courseSlug}/practice`,
+    backLabel: "Back to practice",
+  });
+  redirect(`/courses/${courseSlug}/quiz?${params.toString()}`);
+}
+
+interface FrqGradeResult {
+  pointsAwarded: number;
+  maxPoints: number;
+}
+
+// Standalone FRQ practice: response and self-grade happen in one sitting, so
+// this creates the attempt already graded.
+export async function submitFrqAttempt(input: {
+  frqPromptId: string;
+  responseText: string;
+  checkedLineIds: string[];
+}): Promise<FrqGradeResult> {
+  const userId = await requireUserId();
+  const db = getDb();
+
+  const frq = await db.fRQPrompt.findUnique({ where: { id: input.frqPromptId } });
+  if (!frq) throw new Error("FRQ not found");
+
+  const rubric = frq.rubric as unknown as RubricLine[];
+  const result = await new SelfGradingStrategy().grade(
+    { responseText: input.responseText, rubric, maxPoints: frq.pointValue },
+    { checkedLineIds: input.checkedLineIds },
+  );
+
+  await db.fRQAttempt.create({
+    data: {
+      userId,
+      frqPromptId: input.frqPromptId,
+      responseText: input.responseText,
+      selfGradedPoints: result.pointsAwarded,
+    },
+  });
+
+  revalidatePath("/dashboard");
+  return { pointsAwarded: result.pointsAwarded, maxPoints: result.maxPoints };
+}
+
+// Exam flow: the response was already written and saved (ungraded) when the
+// exam was submitted, since self-grading happens afterward, against the
+// rubric the student couldn't see mid-exam. This just (re-)grades it.
+export async function updateFrqGrade(input: {
+  frqAttemptId: string;
+  checkedLineIds: string[];
+}): Promise<FrqGradeResult> {
+  const userId = await requireUserId();
+  const db = getDb();
+
+  const attempt = await db.fRQAttempt.findUnique({
+    where: { id: input.frqAttemptId },
+    include: { frq: true },
+  });
+  if (!attempt || attempt.userId !== userId) throw new Error("FRQ attempt not found");
+
+  const rubric = attempt.frq.rubric as unknown as RubricLine[];
+  const result = await new SelfGradingStrategy().grade(
+    { responseText: attempt.responseText, rubric, maxPoints: attempt.frq.pointValue },
+    { checkedLineIds: input.checkedLineIds },
+  );
+
+  await db.fRQAttempt.update({
+    where: { id: input.frqAttemptId },
+    data: { selfGradedPoints: result.pointsAwarded },
+  });
+
+  revalidatePath("/dashboard");
+  return { pointsAwarded: result.pointsAwarded, maxPoints: result.maxPoints };
+}
+
+export async function startExam(courseId: string, courseSlug: string): Promise<void> {
+  const userId = await requireUserId();
+  const db = getDb();
+
+  const course = await db.course.findUnique({ where: { id: courseId } });
+  if (!course) throw new Error("Course not found");
+
+  const examFormat = course.examFormat as unknown as ContentCourse["examFormat"];
+  const mcqTarget = examFormat.sections.find((s) => s.type === "MCQ")?.questionCount;
+  const frqTarget = examFormat.sections.find((s) => s.type === "FRQ")?.questionCount;
+
+  const [availableQuestions, availableFrqs] = await Promise.all([
+    db.question.findMany({ where: { courseId }, select: { id: true } }),
+    db.fRQPrompt.findMany({ where: { courseId }, select: { id: true } }),
+  ]);
+
+  // We rarely have anywhere near the real exam's question count yet (content
+  // is seeded incrementally, full banks are Milestone 7) -- use whatever's
+  // available rather than failing, and say so on the intro screen.
+  const questionIds = shuffle(availableQuestions.map((q) => q.id)).slice(0, mcqTarget ?? availableQuestions.length);
+  const frqPromptIds = shuffle(availableFrqs.map((f) => f.id)).slice(0, frqTarget ?? availableFrqs.length);
+
+  const attempt = await db.examAttempt.create({
+    data: { userId, courseId, questionIds, frqPromptIds },
+  });
+
+  redirect(`/courses/${courseSlug}/exam/${attempt.id}`);
+}
+
+interface SubmitExamInput {
+  examAttemptId: string;
+  courseSlug: string;
+  mcqAnswers: { questionId: string; chosenLabel: string }[];
+  frqResponses: { frqPromptId: string; responseText: string }[];
+}
+
+export async function submitExamAttempt(input: SubmitExamInput): Promise<void> {
+  const userId = await requireUserId();
+  const db = getDb();
+
+  const attempt = await db.examAttempt.findUnique({ where: { id: input.examAttemptId } });
+  if (!attempt || attempt.userId !== userId) throw new Error("Exam attempt not found");
+
+  if (!attempt.completedAt) {
+    let mcqCorrect = 0;
+    for (const answer of input.mcqAnswers) {
+      const question = await db.question.findUnique({
+        where: { id: answer.questionId },
+        include: { choices: true },
+      });
+      if (!question) continue;
+
+      const chosen = question.choices.find((c) => c.label === answer.chosenLabel);
+      const correct = chosen?.isCorrect ?? false;
+      if (correct) mcqCorrect++;
+
+      await db.questionAttempt.create({
+        data: {
+          userId,
+          questionId: answer.questionId,
+          chosenLabel: answer.chosenLabel,
+          correct,
+          timeSpentMs: 0,
+          source: "EXAM",
+        },
+      });
+    }
+
+    // FRQs are graded afterward on the results page (self-grading needs the
+    // rubric, which the student can't see mid-exam) -- 0 here just means
+    // "not graded yet," not an actual score.
+    for (const response of input.frqResponses) {
+      await db.fRQAttempt.create({
+        data: {
+          userId,
+          frqPromptId: response.frqPromptId,
+          responseText: response.responseText,
+          selfGradedPoints: 0,
+        },
+      });
+    }
+
+    const mcqTotal = (attempt.questionIds as string[]).length;
+    const mcqAccuracy = mcqTotal > 0 ? mcqCorrect / mcqTotal : 0;
+
+    await db.examAttempt.update({
+      where: { id: attempt.id },
+      data: {
+        completedAt: new Date(),
+        sectionScores: { mcqCorrect, mcqTotal },
+        estimatedScore: estimateApScoreRange(mcqAccuracy),
+      },
+    });
+  }
+
+  revalidatePath("/dashboard");
+  redirect(`/courses/${input.courseSlug}/exam/${attempt.id}/results`);
 }

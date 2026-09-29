@@ -16,6 +16,20 @@ export function getCourseTree(courseSlug: string) {
   });
 }
 
+// For the custom-quiz form: units with how many questions each has, so the
+// student can see what a difficulty/unit combination will actually give them.
+export function getCourseUnitsWithQuestionCounts(courseSlug: string) {
+  return getDb().course.findUnique({
+    where: { slug: courseSlug },
+    include: {
+      units: {
+        orderBy: { order: "asc" },
+        include: { _count: { select: { questions: true } } },
+      },
+    },
+  });
+}
+
 export async function getUnitWithQuestions(courseSlug: string, unitSlug: string) {
   const db = getDb();
   const course = await db.course.findUnique({ where: { slug: courseSlug } });
@@ -28,6 +42,10 @@ export async function getUnitWithQuestions(courseSlug: string, unitSlug: string)
       questions: {
         orderBy: { createdAt: "asc" },
         include: { choices: { orderBy: { label: "asc" } }, topic: true },
+      },
+      frqPrompts: {
+        orderBy: { createdAt: "asc" },
+        include: { topic: true },
       },
     },
   });
@@ -47,6 +65,78 @@ export async function getQuestionsByIds(questionIds: string[]) {
 
   const byId = new Map(questions.map((q) => [q.id, q]));
   return questionIds.map((id) => byId.get(id)).filter((q): q is NonNullable<typeof q> => q !== undefined);
+}
+
+interface CustomQuizFilter {
+  courseId: string;
+  unitIds: string[];
+  difficulty?: "EASY" | "MEDIUM" | "HARD";
+  length: number;
+}
+
+// Picks a random subset matching the filter -- true randomness (not a
+// deterministic shuffle), which is fine for "give me a fresh practice set."
+export async function pickQuestionIdsForCustomQuiz(filter: CustomQuizFilter): Promise<string[]> {
+  const matches = await getDb().question.findMany({
+    where: {
+      courseId: filter.courseId,
+      unitId: { in: filter.unitIds },
+      ...(filter.difficulty ? { difficulty: filter.difficulty } : {}),
+    },
+    select: { id: true },
+  });
+
+  const shuffled = [...matches].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, filter.length).map((q) => q.id);
+}
+
+// Questions the student has previously gotten wrong (or hasn't reinforced
+// enough) whose spaced-repetition due date has arrived.
+export async function getDueWeakSpotQuestionIds(userId: string, courseId: string, limit = 20): Promise<string[]> {
+  const dueStates = await getDb().spacedRepetitionState.findMany({
+    where: {
+      userId,
+      dueAt: { lte: new Date() },
+      question: { courseId },
+    },
+    orderBy: { dueAt: "asc" },
+    take: limit,
+    select: { questionId: true },
+  });
+  return dueStates.map((s) => s.questionId);
+}
+
+const DAILY_CHALLENGE_SIZE = 5;
+
+export async function hasCompletedDailyChallengeToday(userId: string, courseId: string): Promise<boolean> {
+  const startOfToday = new Date();
+  startOfToday.setHours(0, 0, 0, 0);
+
+  const count = await getDb().questionAttempt.count({
+    where: {
+      userId,
+      source: "DAILY",
+      createdAt: { gte: startOfToday },
+      question: { courseId },
+    },
+  });
+  return count > 0;
+}
+
+// Prioritizes weak-spot questions (already due for review) to fill the daily
+// set; tops up with a random sample of the rest if there aren't enough.
+export async function pickDailyChallengeQuestionIds(userId: string, courseId: string): Promise<string[]> {
+  const dueIds = await getDueWeakSpotQuestionIds(userId, courseId, DAILY_CHALLENGE_SIZE);
+  if (dueIds.length >= DAILY_CHALLENGE_SIZE) return dueIds.slice(0, DAILY_CHALLENGE_SIZE);
+
+  const remaining = DAILY_CHALLENGE_SIZE - dueIds.length;
+  const fillerCandidates = await getDb().question.findMany({
+    where: { courseId, id: { notIn: dueIds } },
+    select: { id: true },
+  });
+  const filler = [...fillerCandidates].sort(() => Math.random() - 0.5).slice(0, remaining);
+
+  return [...dueIds, ...filler.map((q) => q.id)];
 }
 
 // "Missed" is derived from each question's most recent attempt, not just "ever

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { recordAttempt } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import type { AttemptSource } from "@/generated/prisma/client";
 
 export interface RenderedChoice {
   id: string;
@@ -24,13 +25,15 @@ export interface RenderedQuestion {
 }
 
 export function QuizRunner({
-  courseSlug,
-  unitSlug,
   questions,
+  backHref,
+  backLabel,
+  source = "PRACTICE",
 }: {
-  courseSlug: string;
-  unitSlug: string;
   questions: RenderedQuestion[];
+  backHref: string;
+  backLabel: string;
+  source?: AttemptSource;
 }) {
   const [index, setIndex] = useState(0);
   const [selectedLabel, setSelectedLabel] = useState<string | null>(null);
@@ -48,8 +51,8 @@ export function QuizRunner({
           <h2 className="text-xl font-bold">
             {correctCount} / {questions.length} correct
           </h2>
-          <Button render={<Link href={`/courses/${courseSlug}/units/${unitSlug}`} />} nativeButton={false}>
-            Back to unit
+          <Button render={<Link href={backHref} />} nativeButton={false}>
+            {backLabel}
           </Button>
         </CardContent>
       </Card>
@@ -74,6 +77,7 @@ export function QuizRunner({
       questionId: question.id,
       chosenLabel: selectedLabel,
       timeSpentMs: Date.now() - startedAt,
+      source,
     });
   }
 
