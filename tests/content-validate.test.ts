@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { checkMarkdownBalance, validateFRQ, validateQuestion, validateUnit } from "@/lib/content/validate";
+import { checkMarkdownBalance, validateDiagram, validateFRQ, validateQuestion, validateUnit } from "@/lib/content/validate";
 import type { Choice, FRQ, Question, Unit } from "@/lib/content/schema";
+import type { ForceDiagram, XYGraphDiagram } from "@/lib/content/diagram-schema";
 
 function makeChoice(overrides: Partial<Choice>): Choice {
   return { label: "A", text: "text", isCorrect: false, explanation: "why", ...overrides };
@@ -114,6 +115,64 @@ describe("checkMarkdownBalance", () => {
   it("flags an unclosed code fence", () => {
     const problems = checkMarkdownBalance("```java\nint x = 1;", "stem");
     expect(problems.some((p) => p.message.includes("code fence"))).toBe(true);
+  });
+});
+
+describe("validateDiagram", () => {
+  function makeXYGraph(overrides: Partial<XYGraphDiagram> = {}): XYGraphDiagram {
+    return {
+      type: "xy-graph",
+      xLabel: "t (s)",
+      yLabel: "v (m/s)",
+      xMin: 0,
+      xMax: 10,
+      yMin: 0,
+      yMax: 10,
+      series: [{ points: [{ x: 0, y: 0 }, { x: 5, y: 5 }], color: "blue" }],
+      ...overrides,
+    };
+  }
+
+  function makeForceDiagram(overrides: Partial<ForceDiagram> = {}): ForceDiagram {
+    return {
+      type: "force-diagram",
+      vectors: [
+        { label: "Weight", angleDegrees: 270, magnitude: 5, color: "red" },
+        { label: "Normal", angleDegrees: 90, magnitude: 5, color: "blue" },
+      ],
+      ...overrides,
+    };
+  }
+
+  it("passes a well-formed xy-graph", () => {
+    expect(validateDiagram(makeXYGraph())).toEqual([]);
+  });
+
+  it("flags a series point outside the x range", () => {
+    const diagram = makeXYGraph({ series: [{ points: [{ x: 0, y: 0 }, { x: 15, y: 5 }], color: "blue" }] });
+    const problems = validateDiagram(diagram);
+    expect(problems.some((p) => p.message.includes("outside [xMin"))).toBe(true);
+  });
+
+  it("flags a series point outside the y range", () => {
+    const diagram = makeXYGraph({ series: [{ points: [{ x: 0, y: 0 }, { x: 5, y: -5 }], color: "blue" }] });
+    const problems = validateDiagram(diagram);
+    expect(problems.some((p) => p.message.includes("outside [yMin"))).toBe(true);
+  });
+
+  it("passes a well-formed force-diagram", () => {
+    expect(validateDiagram(makeForceDiagram())).toEqual([]);
+  });
+
+  it("flags duplicate vector labels", () => {
+    const diagram = makeForceDiagram({
+      vectors: [
+        { label: "Weight", angleDegrees: 270, magnitude: 5, color: "red" },
+        { label: "Weight", angleDegrees: 90, magnitude: 5, color: "blue" },
+      ],
+    });
+    const problems = validateDiagram(diagram);
+    expect(problems.some((p) => p.message.includes("duplicate vector label"))).toBe(true);
   });
 });
 

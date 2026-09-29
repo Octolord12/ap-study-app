@@ -1,3 +1,4 @@
+import type { Diagram } from "./diagram-schema";
 import type { FRQ, Question, Unit } from "./schema";
 
 export interface Problem {
@@ -55,6 +56,9 @@ export function validateQuestion(question: Question, courseSlug: string, knownTo
   }
 
   problems.push(...checkMarkdownBalance(question.stem, "stem"));
+  if (question.diagram) {
+    problems.push(...validateDiagram(question.diagram));
+  }
 
   return problems;
 }
@@ -72,6 +76,42 @@ export function validateFRQ(frq: FRQ, knownTopicKeys: Set<string>): Problem[] {
   }
 
   problems.push(...checkMarkdownBalance(frq.prompt, "prompt"));
+  if (frq.diagram) {
+    problems.push(...validateDiagram(frq.diagram));
+  }
+
+  return problems;
+}
+
+export function validateDiagram(diagram: Diagram): Problem[] {
+  const problems: Problem[] = [];
+
+  if (diagram.type === "xy-graph") {
+    for (const series of diagram.series) {
+      for (const point of series.points) {
+        if (point.x < diagram.xMin || point.x > diagram.xMax) {
+          problems.push({
+            message: `xy-graph: point x=${point.x} is outside [xMin=${diagram.xMin}, xMax=${diagram.xMax}]`,
+          });
+        }
+        if (point.y < diagram.yMin || point.y > diagram.yMax) {
+          problems.push({
+            message: `xy-graph: point y=${point.y} is outside [yMin=${diagram.yMin}, yMax=${diagram.yMax}]`,
+          });
+        }
+      }
+    }
+  }
+
+  if (diagram.type === "force-diagram") {
+    const seenLabels = new Set<string>();
+    for (const vector of diagram.vectors) {
+      if (seenLabels.has(vector.label)) {
+        problems.push({ message: `force-diagram: duplicate vector label "${vector.label}"` });
+      }
+      seenLabels.add(vector.label);
+    }
+  }
 
   return problems;
 }

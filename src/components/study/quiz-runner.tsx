@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { RewardToast, hasReward, type Reward } from "@/components/gamification/reward-toast";
 import type { AttemptSource } from "@/generated/prisma/client";
+import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
+import type { Diagram } from "@/lib/content/diagram-schema";
 
 export interface RenderedChoice {
   id: string;
@@ -21,6 +23,7 @@ export interface RenderedQuestion {
   difficulty: "EASY" | "MEDIUM" | "HARD";
   stemHtml: string;
   explanationHtml: string;
+  diagram: Diagram | null;
   conceptHref: string;
   choices: RenderedChoice[];
 }
@@ -125,6 +128,7 @@ export function QuizRunner({
           className="prose prose-neutral dark:prose-invert max-w-none"
           dangerouslySetInnerHTML={{ __html: question.stemHtml }}
         />
+        {question.diagram && <DiagramRenderer diagram={question.diagram} />}
 
         <div className="space-y-2">
           {question.choices.map((choice) => {

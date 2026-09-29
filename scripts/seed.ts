@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { getDb } from "../src/lib/db";
-import type { Difficulty } from "../src/generated/prisma/client";
+import { Prisma, type Difficulty } from "../src/generated/prisma/client";
 import { CourseSchema, FRQSchema, QuestionSchema, UnitSchema } from "../src/lib/content/schema";
 
 const CONTENT_DIR = path.join(__dirname, "../content");
@@ -103,6 +103,7 @@ async function seedCourse(courseSlug: string) {
             stem: q.stem,
             explanation: q.explanation,
             conceptLink: q.conceptLink,
+            diagram: q.diagram ?? undefined,
             reviewed: q.reviewed,
             choices: { create: choiceData },
           },
@@ -113,6 +114,7 @@ async function seedCourse(courseSlug: string) {
             stem: q.stem,
             explanation: q.explanation,
             conceptLink: q.conceptLink,
+            diagram: q.diagram ?? Prisma.JsonNull,
             reviewed: q.reviewed,
             choices: { deleteMany: {}, create: choiceData },
           },
@@ -146,6 +148,7 @@ async function seedCourse(courseSlug: string) {
             pointValue: frq.pointValue,
             rubric: frq.rubric,
             sampleResponse: frq.sampleResponse,
+            diagram: frq.diagram ?? undefined,
             reviewed: frq.reviewed,
           },
           update: {
@@ -155,6 +158,7 @@ async function seedCourse(courseSlug: string) {
             pointValue: frq.pointValue,
             rubric: frq.rubric,
             sampleResponse: frq.sampleResponse,
+            diagram: frq.diagram ?? Prisma.JsonNull,
             reviewed: frq.reviewed,
           },
         });

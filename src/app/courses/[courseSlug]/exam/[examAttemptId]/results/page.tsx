@@ -6,6 +6,8 @@ import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { ExamMcqReview } from "@/components/study/exam-mcq-review";
 import { FrqSelfGrade, type RubricLineView } from "@/components/study/frq-self-grade";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
+import type { Diagram } from "@/lib/content/diagram-schema";
 
 export default async function ExamResultsPage({
   params,
@@ -56,6 +58,7 @@ export default async function ExamResultsPage({
       frq,
       promptHtml: await renderContentToHtml(frq.prompt),
       sampleResponseHtml: await renderContentToHtml(frq.sampleResponse),
+      diagram: (frq.diagram as Diagram | null) ?? null,
       rubric: frq.rubric as unknown as RubricLineView[],
       existingAttempt: frqAttemptByPromptId.get(frq.id),
     })),
@@ -86,13 +89,14 @@ export default async function ExamResultsPage({
             Free response -- grade your own responses
           </h2>
           <div className="space-y-6">
-            {frqSections.map(({ frq, promptHtml, sampleResponseHtml, rubric, existingAttempt }) => (
+            {frqSections.map(({ frq, promptHtml, sampleResponseHtml, diagram, rubric, existingAttempt }) => (
               <Card key={frq.id}>
                 <CardContent className="space-y-4 py-6">
                   <div
                     className="prose prose-sm prose-neutral dark:prose-invert max-w-none"
                     dangerouslySetInnerHTML={{ __html: promptHtml }}
                   />
+                  {diagram && <DiagramRenderer diagram={diagram} />}
                   <FrqSelfGrade
                     frqPromptId={frq.id}
                     pointValue={frq.pointValue}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
+import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 
 // Static, always-revealed version of the quiz runner's per-question review --
 // the exam is already over, so there's no interactivity left, just the
@@ -22,6 +23,7 @@ export function ExamMcqReview({
               className="prose prose-sm prose-neutral dark:prose-invert mb-3 max-w-none"
               dangerouslySetInnerHTML={{ __html: question.stemHtml }}
             />
+            {question.diagram && <DiagramRenderer diagram={question.diagram} />}
             <div className="space-y-2">
               {question.choices.map((choice) => {
                 const wasChosen = chosenLabel === choice.label;

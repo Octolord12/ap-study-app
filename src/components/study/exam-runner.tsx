@@ -5,16 +5,20 @@ import { submitExamAttempt } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
+import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
+import type { Diagram } from "@/lib/content/diagram-schema";
 
 export interface ExamMcqItem {
   id: string;
   stemHtml: string;
+  diagram: Diagram | null;
   choices: { id: string; label: string; text: string }[];
 }
 
 export interface ExamFrqItem {
   id: string;
   promptHtml: string;
+  diagram: Diagram | null;
   pointValue: number;
 }
 
@@ -107,6 +111,7 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
                 className="prose prose-neutral dark:prose-invert max-w-none"
                 dangerouslySetInnerHTML={{ __html: mcqItem.stemHtml }}
               />
+              {mcqItem.diagram && <DiagramRenderer diagram={mcqItem.diagram} />}
               <div className="space-y-2">
                 {mcqItem.choices.map((choice) => (
                   <button
@@ -131,6 +136,7 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
                 className="prose prose-neutral dark:prose-invert max-w-none"
                 dangerouslySetInnerHTML={{ __html: frqItem.promptHtml }}
               />
+              {frqItem.diagram && <DiagramRenderer diagram={frqItem.diagram} />}
               <Textarea
                 value={frqResponses[frqItem.id] ?? ""}
                 onChange={(e) => setFrqResponses((prev) => ({ ...prev, [frqItem.id]: e.target.value }))}

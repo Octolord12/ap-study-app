@@ -157,6 +157,7 @@ model Question {
   stem         String     @db.Text // markdown; supports $latex$ and fenced code blocks
   explanation  String     @db.Text // why the correct answer is right
   conceptLink  String // slug path back to the unit/topic page, e.g. "ap-csa/unit-4/iteration"
+  diagram      Json? // optional structured diagram spec -- see src/lib/content/diagram-schema.ts
   reviewed     Boolean    @default(false)
   createdAt    DateTime   @default(now())
 
@@ -191,6 +192,7 @@ model FRQPrompt {
   pointValue     Int
   rubric         Json // itemized: [{ points, description }]
   sampleResponse String   @db.Text
+  diagram        Json? // optional structured diagram spec -- see src/lib/content/diagram-schema.ts
   reviewed       Boolean  @default(false)
   createdAt      DateTime @default(now())
 

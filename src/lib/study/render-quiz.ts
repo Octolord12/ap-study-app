@@ -1,6 +1,7 @@
 import { renderContentToHtml } from "@/lib/content/render";
 import { getQuestionsByIds } from "@/lib/study/queries";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
+import type { Diagram } from "@/lib/content/diagram-schema";
 
 // Shared by every quiz entry point (unit practice, custom quiz, weak-spot
 // review, daily challenge). Rendering markdown -> HTML has to happen
@@ -21,6 +22,7 @@ export async function renderQuizQuestions(questionIds: string[], courseSlug: str
         difficulty: q.difficulty,
         stemHtml: await renderContentToHtml(q.stem),
         explanationHtml: await renderContentToHtml(q.explanation),
+        diagram: (q.diagram as Diagram | null) ?? null,
         conceptHref: `/courses/${courseSlug}/units/${unitPart}?topic=${topicPart}`,
         choices: await Promise.all(
           q.choices.map(async (c) => ({

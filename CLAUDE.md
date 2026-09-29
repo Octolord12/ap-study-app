@@ -462,9 +462,56 @@ course-info table (42 MCQ + 6 FRQ, 3h10m) — note the table's flagged
 **May 2027 format change** isn't yet published in enough detail to encode,
 so this remains the current-format data until College Board publishes specifics.
 
-Not yet started: AP Physics 1 — its own pass through this same process,
-likely with its own scope discussion first (numerical/units handling, akin
-to how AP World History needed one for SAQ/DBQ/LEQ item types).
+**AP Physics 1 — content not yet started; diagram infra built first.** Asked
+the owner how to scope this given Physics 1 leans heavily on diagrams
+(free-body diagrams, motion graphs) that the markdown+LaTeX+code content
+pipeline can't render — chosen answer: build minimal SVG diagram support in
+the app before writing any Physics content, rather than word-describing
+everything or skipping diagram-dependent problems. This landed as its own
+app-engine change (schema + rendering), planned and reviewed separately from
+the content-only Milestone 7 pattern.
+
+**Diagram support**: `Question`/`FRQPrompt` gained an optional `diagram Json?`
+column (migration `20260929215128_add_diagram_field`), typed via a Zod
+discriminated union in `src/lib/content/diagram-schema.ts` — `xy-graph`
+(labeled axes + up to 3 piecewise-linear series; for position/velocity/
+acceleration-vs-time, force-vs-time, etc.) and `force-diagram` (an object
+marker with labeled force vectors at angle/magnitude, optional incline). This
+is a **sibling structured field to `stem`/`prompt`, not embedded in the
+markdown itself** — deliberately, so it stays fully typed/validated instead
+of hand-authored raw SVG, and never touches the `unified`/remark/rehype
+pipeline in `src/lib/content/render.ts` (no `rehype-raw`/sanitize step
+needed, no XSS surface). Rendering is plain SVG built on pure, unit-tested
+coordinate-transform math (`src/lib/diagrams/geometry.ts`) — no charting
+library — via `src/components/diagrams/{xy-graph,force-diagram,diagram-renderer}.tsx`,
+dark-mode-aware (`currentColor`/Tailwind `dark:` classes, matching the
+`prose dark:prose-invert` convention used everywhere else) and wired into
+every question/FRQ render path (unit quiz, boss battles, exam-taking, exam
+results, standalone FRQ practice, admin review — 8 call sites across 4
+independent data-fetch paths, since there's no single shared "render a
+question" function covering all of them).
+
+**Scope boundary** (documented rather than silently expanded, same as the
+World History SAQ/DBQ/LEQ gap): only two diagram categories are supported —
+reading a given graph (the graph *is* the given data, not word-equivalent)
+and force-vector diagrams (directions/magnitudes are awkward to specify
+unambiguously in prose). Mechanical scene layouts (inclines, pulleys,
+springs, pendulums as physical arrangements) stay word-described in the stem,
+as before.
+
+**Bug found and fixed while building this**: the force-diagram's object
+label was placed at a fixed position (directly south of the marker), which
+could collide with whichever vector's own label happened to land nearby —
+first surfaced by a short-magnitude friction vector whose label overlapped
+the object label. Fixed with `bestLabelDirection()` (`geometry.ts`), which
+places the object label wherever is angularly farthest from every vector on
+that diagram, plus `textAnchorForAngle()` so a label anchors away from its
+point (not centered on it) when offset mostly left/right — both pure,
+unit-tested functions, not a one-off tweak to this test case.
+
+Not yet started: the actual AP Physics 1 content pass (8 units, Kinematics →
+Fluids per the redesigned CED) — the next, separate, full-scope unit of work
+now that this infra is built and verified.
 
 **Review workflow** (the spec's "simple admin/review view" requirement):
 `/admin/review` (`src/app/admin/review/`), gated by `src/lib/admin/session.ts`'s

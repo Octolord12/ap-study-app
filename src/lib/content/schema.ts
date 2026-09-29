@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { DiagramSchema } from "./diagram-schema";
 
 // Structural shape of the JSON files in /content. Semantic checks (exactly one
 // correct choice, rubric points summing to pointValue, unit/topic references
@@ -23,6 +24,7 @@ export const QuestionSchema = z.object({
   explanation: z.string().min(1),
   conceptLink: z.string().min(1),
   reviewed: z.boolean(),
+  diagram: DiagramSchema.optional(),
 });
 
 export const RubricLineSchema = z.object({
@@ -40,6 +42,7 @@ export const FRQSchema = z.object({
   rubric: z.array(RubricLineSchema).min(1),
   sampleResponse: z.string().min(1),
   reviewed: z.boolean(),
+  diagram: DiagramSchema.optional(),
 });
 
 export const TopicSchema = z.object({

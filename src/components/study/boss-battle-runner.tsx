@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { RewardToast, hasReward, type Reward } from "@/components/gamification/reward-toast";
 import { playBossDefeatedSound, playBossHitSound } from "@/lib/gamification/sound";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
+import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 
 const PASS_THRESHOLD = 0.7;
 
@@ -149,6 +150,7 @@ export function BossBattleRunner({
             className="prose prose-neutral dark:prose-invert max-w-none"
             dangerouslySetInnerHTML={{ __html: question.stemHtml }}
           />
+          {question.diagram && <DiagramRenderer diagram={question.diagram} />}
 
           <div className="space-y-2">
             {question.choices.map((choice) => {

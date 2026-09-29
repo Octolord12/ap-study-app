@@ -4,6 +4,7 @@ import { getDb } from "@/lib/db";
 import { renderContentToHtml } from "@/lib/content/render";
 import { ExamRunner, type ExamFrqItem, type ExamMcqItem } from "@/components/study/exam-runner";
 import type { Course as ContentCourse } from "@/lib/content/schema";
+import type { Diagram } from "@/lib/content/diagram-schema";
 
 export default async function ExamRunnerPage({
   params,
@@ -39,6 +40,7 @@ export default async function ExamRunnerPage({
       .map(async (q) => ({
         id: q.id,
         stemHtml: await renderContentToHtml(q.stem),
+        diagram: (q.diagram as Diagram | null) ?? null,
         choices: q.choices.map((c) => ({ id: c.id, label: c.label, text: c.text })),
       })),
   );
@@ -50,6 +52,7 @@ export default async function ExamRunnerPage({
       .map(async (f) => ({
         id: f.id,
         promptHtml: await renderContentToHtml(f.prompt),
+        diagram: (f.diagram as Diagram | null) ?? null,
         pointValue: f.pointValue,
       })),
   );

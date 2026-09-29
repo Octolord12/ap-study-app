@@ -4,6 +4,8 @@ import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { renderContentToHtml } from "@/lib/content/render";
 import { FrqSelfGrade, type RubricLineView } from "@/components/study/frq-self-grade";
+import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
+import type { Diagram } from "@/lib/content/diagram-schema";
 
 export default async function FrqPracticePage({
   params,
@@ -21,6 +23,7 @@ export default async function FrqPracticePage({
     renderContentToHtml(frq.sampleResponse),
   ]);
   const rubric = frq.rubric as unknown as RubricLineView[];
+  const diagram = (frq.diagram as Diagram | null) ?? null;
 
   return (
     <div className="mx-auto w-full max-w-2xl px-6 py-10">
@@ -38,6 +41,7 @@ export default async function FrqPracticePage({
           className="prose prose-neutral dark:prose-invert max-w-none"
           dangerouslySetInnerHTML={{ __html: promptHtml }}
         />
+        {diagram && <DiagramRenderer diagram={diagram} />}
       </div>
 
       <FrqSelfGrade

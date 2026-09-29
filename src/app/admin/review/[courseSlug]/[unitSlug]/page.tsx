@@ -7,6 +7,8 @@ import { ContentRenderer } from "@/components/content-renderer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import type { RubricLine } from "@/lib/scoring/grading";
+import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
+import type { Diagram } from "@/lib/content/diagram-schema";
 
 export default async function AdminReviewUnitPage({
   params,
@@ -52,6 +54,7 @@ export default async function AdminReviewUnitPage({
                 </CardHeader>
                 <CardContent>
                   <ContentRenderer>{question.stem}</ContentRenderer>
+                  {question.diagram && <DiagramRenderer diagram={question.diagram as unknown as Diagram} />}
                   <ul className="mt-3 space-y-1">
                     {question.choices.map((choice) => (
                       <li
@@ -98,6 +101,7 @@ export default async function AdminReviewUnitPage({
                   </CardHeader>
                   <CardContent>
                     <ContentRenderer>{frq.prompt}</ContentRenderer>
+                    {frq.diagram && <DiagramRenderer diagram={frq.diagram as unknown as Diagram} />}
                     <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-muted-foreground">
                       {rubric.map((line) => (
                         <li key={line.id}>
