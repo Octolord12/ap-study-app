@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-calc-u8-mcq-1",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "difficulty": "easy",
+    "stem": "What is the formula for the average value of a continuous function $f$ on the interval $[a,b]$?",
+    "choices": [
+      { "label": "A", "text": "$\\dfrac{1}{b-a}\\displaystyle\\int_a^b f(x)\\,dx$", "isCorrect": true, "explanation": "This is the standard formula for the average value of a function on an interval." },
+      { "label": "B", "text": "$\\displaystyle\\int_a^b f(x)\\,dx$", "isCorrect": false, "explanation": "This gives the total accumulated value (net area), not divided by the interval length to get an average." },
+      { "label": "C", "text": "$f(b) - f(a)$", "isCorrect": false, "explanation": "This is the total change in f, not the average value of f over the interval." },
+      { "label": "D", "text": "$(b-a) \\cdot f(a)$", "isCorrect": false, "explanation": "This doesn't correctly represent the average value formula, which involves an integral divided by the interval length." }
+    ],
+    "explanation": "The average value of $f$ on $[a,b]$ is $\\frac{1}{b-a}\\int_a^b f(x)\\,dx$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/average-value-of-a-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-2",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "difficulty": "medium",
+    "stem": "Find the average value of $f(x) = x^2$ on the interval $[0,3]$.",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": true, "explanation": "Average = (1/3)*integral from 0 to 3 of x^2 dx = (1/3)*(27/3) = (1/3)*9 = 3." },
+      { "label": "B", "text": "9", "isCorrect": false, "explanation": "This is the value of the integral itself (before dividing by the interval length 3), not the average value." },
+      { "label": "C", "text": "27", "isCorrect": false, "explanation": "This is x^3 evaluated at x=3 without dividing by 3 or applying the correct antiderivative coefficient." },
+      { "label": "D", "text": "1", "isCorrect": false, "explanation": "This doesn't correctly compute the definite integral divided by the interval length." }
+    ],
+    "explanation": "The average value is $\\frac{1}{3}\\int_0^3 x^2\\,dx = \\frac{1}{3}(9) = 3$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/average-value-of-a-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-3",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "difficulty": "medium",
+    "stem": "Find the average value of $f(x) = 3x+1$ on the interval $[0,4]$.",
+    "choices": [
+      { "label": "A", "text": "7", "isCorrect": true, "explanation": "Average = (1/4)*integral from 0 to 4 of (3x+1) dx = (1/4)*[3x^2/2+x] from 0 to 4 = (1/4)*(24+4) = (1/4)*28 = 7." },
+      { "label": "B", "text": "28", "isCorrect": false, "explanation": "This is the value of the integral itself, before dividing by the interval length 4." },
+      { "label": "C", "text": "13", "isCorrect": false, "explanation": "This is f(4), the value at the right endpoint, not the average value over the interval." },
+      { "label": "D", "text": "4", "isCorrect": false, "explanation": "This is simply the interval length, not the correctly computed average value." }
+    ],
+    "explanation": "The average value is $\\frac{1}{4}\\int_0^4 (3x+1)\\,dx = \\frac{1}{4}(28) = 7$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/average-value-of-a-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-4",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "difficulty": "hard",
+    "stem": "Find the average value of $f(x) = \\sin(x)$ on the interval $[0,\\pi]$.",
+    "choices": [
+      { "label": "A", "text": "$2/\\pi$", "isCorrect": true, "explanation": "Average = (1/pi)*integral from 0 to pi of sin(x) dx = (1/pi)*[-cos(x)] from 0 to pi = (1/pi)*(1-(-1)) = 2/pi." },
+      { "label": "B", "text": "$2$", "isCorrect": false, "explanation": "This is the value of the integral itself, before dividing by the interval length pi." },
+      { "label": "C", "text": "$\\pi/2$", "isCorrect": false, "explanation": "This inverts the correct ratio; the average value is 2/pi, not pi/2." },
+      { "label": "D", "text": "$0$", "isCorrect": false, "explanation": "While sin(x) is symmetric about x=pi/2 on this interval, the integral of sin(x) over [0,pi] is NOT zero (unlike over a full period)." }
+    ],
+    "explanation": "The average value is $\\frac{1}{\\pi}\\int_0^\\pi \\sin(x)\\,dx = \\frac{2}{\\pi}$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/average-value-of-a-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-5",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "difficulty": "medium",
+    "stem": "Find the average value of $f(x) = x^3$ on the interval $[0,2]$.",
+    "choices": [
+      { "label": "A", "text": "2", "isCorrect": true, "explanation": "Average = (1/2)*integral from 0 to 2 of x^3 dx = (1/2)*[x^4/4] from 0 to 2 = (1/2)*4 = 2." },
+      { "label": "B", "text": "4", "isCorrect": false, "explanation": "This is the value of the integral itself, before dividing by the interval length 2." },
+      { "label": "C", "text": "8", "isCorrect": false, "explanation": "This is f(2)=2^3=8, the function value at the endpoint, not the average value." },
+      { "label": "D", "text": "1", "isCorrect": false, "explanation": "This doesn't correctly compute the definite integral of x^3 divided by the interval length." }
+    ],
+    "explanation": "The average value is $\\frac{1}{2}\\int_0^2 x^3\\,dx = \\frac{1}{2}(4) = 2$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/average-value-of-a-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-6",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "difficulty": "hard",
+    "stem": "The Mean Value Theorem for Integrals states that if $f$ is continuous on $[a,b]$, there exists some $c$ in $[a,b]$ such that $f(c)$ equals the average value of $f$. For $f(x)=x^2$ on $[0,3]$ (average value 3), find the exact value(s) of c guaranteed by this theorem.",
+    "choices": [
+      { "label": "A", "text": "$c = \\sqrt{3}$", "isCorrect": true, "explanation": "Setting f(c)=c^2=3 and solving: c=±√3. Since c must lie in [0,3], c=√3." },
+      { "label": "B", "text": "$c = 3$", "isCorrect": false, "explanation": "f(3)=9, not 3, so c=3 does not satisfy f(c)=3 (the average value)." },
+      { "label": "C", "text": "$c = 9$", "isCorrect": false, "explanation": "c=9 is outside the interval [0,3] entirely, so it cannot be a valid answer." },
+      { "label": "D", "text": "$c = 1.5$", "isCorrect": false, "explanation": "f(1.5)=2.25, not 3, so c=1.5 does not satisfy f(c)=3." }
+    ],
+    "explanation": "Solving $c^2=3$ with $c\\in[0,3]$ gives $c=\\sqrt{3}$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/average-value-of-a-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-7",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "difficulty": "medium",
+    "stem": "A car's velocity (in mph) over a 2-hour trip is given by $v(t)$. How would you interpret $\\dfrac{1}{2}\\int_0^2 v(t)\\,dt$ in this context?",
+    "choices": [
+      { "label": "A", "text": "The average velocity of the car over the 2-hour trip", "isCorrect": true, "explanation": "This is exactly the average value formula applied to velocity, giving the average velocity." },
+      { "label": "B", "text": "The car's total distance traveled", "isCorrect": false, "explanation": "Total distance would just be the integral of v(t) alone, without dividing by the time interval." },
+      { "label": "C", "text": "The car's maximum velocity during the trip", "isCorrect": false, "explanation": "This expression gives an AVERAGE, not the maximum value attained during the trip." },
+      { "label": "D", "text": "The car's acceleration", "isCorrect": false, "explanation": "Acceleration would involve a DERIVATIVE of velocity, not an integral of it." }
+    ],
+    "explanation": "$\\frac{1}{2}\\int_0^2 v(t)\\,dt$ represents the average velocity over the trip.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/average-value-of-a-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-8",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "difficulty": "easy",
+    "stem": "If $f(x) \\geq g(x)$ on $[a,b]$, what integral gives the area of the region between the curves $y=f(x)$ and $y=g(x)$ on $[a,b]$?",
+    "choices": [
+      { "label": "A", "text": "$\\displaystyle\\int_a^b [f(x)-g(x)]\\,dx$", "isCorrect": true, "explanation": "Since f is above g, subtracting g from f (top minus bottom) and integrating gives the area between the curves." },
+      { "label": "B", "text": "$\\displaystyle\\int_a^b [g(x)-f(x)]\\,dx$", "isCorrect": false, "explanation": "Since f≥g, this subtraction (bottom minus top) would give a negative value, not the correct positive area." },
+      { "label": "C", "text": "$\\displaystyle\\int_a^b f(x)\\,dx \\cdot \\int_a^b g(x)\\,dx$", "isCorrect": false, "explanation": "Multiplying the two integrals doesn't represent the area between the curves; subtraction (not multiplication) is required." },
+      { "label": "D", "text": "$f(b)-g(a)$", "isCorrect": false, "explanation": "This mismatched endpoint evaluation doesn't compute an area at all; an integral of the difference is needed." }
+    ],
+    "explanation": "When $f(x)\\geq g(x)$, the area between the curves is $\\int_a^b [f(x)-g(x)]\\,dx$ (top minus bottom).",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-9",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "difficulty": "medium",
+    "stem": "Find the area of the region bounded by $y=x$ and $y=x^2$ on $[0,1]$.",
+    "choices": [
+      { "label": "A", "text": "$1/6$", "isCorrect": true, "explanation": "On [0,1], x≥x^2, so area = integral from 0 to 1 of (x-x^2) dx = [x^2/2-x^3/3] from 0 to 1 = 1/2-1/3 = 1/6." },
+      { "label": "B", "text": "$1/2$", "isCorrect": false, "explanation": "This is the integral of x alone on [0,1]; it doesn't subtract x^2 to find the area BETWEEN the two curves." },
+      { "label": "C", "text": "$1/3$", "isCorrect": false, "explanation": "This is the integral of x^2 alone on [0,1], not the area between the two curves." },
+      { "label": "D", "text": "$5/6$", "isCorrect": false, "explanation": "This doesn't correctly represent the difference (x-x^2) integrated on [0,1]." }
+    ],
+    "explanation": "The area is $\\int_0^1 (x-x^2)\\,dx = 1/6$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-10",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "difficulty": "medium",
+    "stem": "Find the area under $y = 4-x^2$ and above the x-axis, from $x=-2$ to $x=2$.",
+    "choices": [
+      { "label": "A", "text": "$32/3$", "isCorrect": true, "explanation": "Area = integral from -2 to 2 of (4-x^2) dx = [4x-x^3/3] from -2 to 2 = (8-8/3)-(-8+8/3) = 16-16/3 = 32/3." },
+      { "label": "B", "text": "$16$", "isCorrect": false, "explanation": "This doesn't correctly account for the x^3/3 term when evaluating the antiderivative at the bounds." },
+      { "label": "C", "text": "$8$", "isCorrect": false, "explanation": "This is only half of the correct total area, perhaps from only integrating over half the interval." },
+      { "label": "D", "text": "$4/3$", "isCorrect": false, "explanation": "This doesn't correctly evaluate the definite integral of 4-x^2 over the full interval [-2,2]." }
+    ],
+    "explanation": "The area is $\\int_{-2}^2 (4-x^2)\\,dx = 32/3$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-11",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "difficulty": "hard",
+    "stem": "Find the area of the region bounded by $y=x+2$ and $y=x^2$.",
+    "choices": [
+      { "label": "A", "text": "$9/2$", "isCorrect": true, "explanation": "Intersections: x+2=x^2 gives x=-1 and x=2. Area = integral from -1 to 2 of [(x+2)-x^2] dx = 9/2." },
+      { "label": "B", "text": "$3$", "isCorrect": false, "explanation": "This doesn't correctly evaluate the definite integral of (x+2-x^2) between the correct intersection points -1 and 2." },
+      { "label": "C", "text": "$6$", "isCorrect": false, "explanation": "This doesn't correctly account for all terms when evaluating the antiderivative at both bounds." },
+      { "label": "D", "text": "$9$", "isCorrect": false, "explanation": "This is double the correct area of 9/2." }
+    ],
+    "explanation": "The curves intersect at $x=-1,2$; the area is $\\int_{-1}^2 [(x+2)-x^2]\\,dx = 9/2$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-12",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "difficulty": "hard",
+    "stem": "Find the area of the region bounded by $y=\\sqrt{x}$ and $y=x^3$ on $[0,1]$.",
+    "choices": [
+      { "label": "A", "text": "$5/12$", "isCorrect": true, "explanation": "On [0,1], sqrt(x) ≥ x^3, so area = integral from 0 to 1 of (sqrt(x)-x^3) dx = [2x^(3/2)/3 - x^4/4] from 0 to 1 = 2/3-1/4 = 5/12." },
+      { "label": "B", "text": "$2/3$", "isCorrect": false, "explanation": "This is only the integral of sqrt(x) alone on [0,1], without subtracting x^3." },
+      { "label": "C", "text": "$1/4$", "isCorrect": false, "explanation": "This is only the integral of x^3 alone on [0,1], not the area between the two curves." },
+      { "label": "D", "text": "$11/12$", "isCorrect": false, "explanation": "This doesn't correctly represent the difference between the two antiderivatives evaluated at the bounds." }
+    ],
+    "explanation": "The area is $\\int_0^1 (\\sqrt{x}-x^3)\\,dx = 5/12$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-13",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "difficulty": "medium",
+    "stem": "When finding the area between two curves that cross each other within the interval of interest, what must you do differently than when one curve stays entirely above the other?",
+    "choices": [
+      { "label": "A", "text": "Split the integral at the crossing point(s) and take the absolute value of (or swap the order of subtraction in) each piece, since which function is \"on top\" changes", "isCorrect": true, "explanation": "When curves cross, which function is greater switches, so the integral must be split at each crossing point to always subtract top minus bottom on each subinterval." },
+      { "label": "B", "text": "Nothing needs to change; you can always integrate f(x)-g(x) as a single integral regardless of crossings", "isCorrect": false, "explanation": "Integrating a single (f-g) across a crossing point without adjustment can give a smaller (or even zero) result that doesn't represent the true total area." },
+      { "label": "C", "text": "You should simply ignore the region past the crossing point entirely", "isCorrect": false, "explanation": "All regions between the curves should be accounted for, not ignored, even past a crossing point." },
+      { "label": "D", "text": "You must use only the far endpoints, disregarding the crossing point entirely", "isCorrect": false, "explanation": "The crossing point(s) ARE important and must be found and used to split the integral correctly." }
+    ],
+    "explanation": "When curves cross, split the integral at the crossing point(s) so you always subtract top minus bottom on each piece.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-14",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "difficulty": "medium",
+    "stem": "For finding the area between two curves that are more naturally expressed as functions of y (e.g., $x=f(y)$ and $x=g(y)$), how should the area integral be set up?",
+    "choices": [
+      { "label": "A", "text": "$\\displaystyle\\int_c^d [f(y)-g(y)]\\,dy$, integrating with respect to y, where f(y)≥g(y) (right minus left) on $[c,d]$", "isCorrect": true, "explanation": "When curves are naturally functions of y, integrating with respect to y (right minus left, in terms of x-values) is the appropriate approach." },
+      { "label": "B", "text": "You cannot find area between curves expressed as functions of y", "isCorrect": false, "explanation": "Area between curves defined as functions of y absolutely CAN be found, using an integral with respect to y." },
+      { "label": "C", "text": "Always convert to functions of x first, since integrating with respect to y is never valid", "isCorrect": false, "explanation": "Integrating with respect to y is a perfectly valid and often more convenient approach for curves naturally expressed as x=f(y)." },
+      { "label": "D", "text": "$\\displaystyle\\int_c^d [f(y)+g(y)]\\,dy$", "isCorrect": false, "explanation": "This incorrectly adds rather than subtracts the two functions, which would not give the area between them." }
+    ],
+    "explanation": "For curves as functions of y, the area is $\\int_c^d [f(y)-g(y)]\\,dy$ (right minus left).",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-15",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "difficulty": "easy",
+    "stem": "What is the first step in finding the area of a region bounded by two curves $y=f(x)$ and $y=g(x)$ whose points of intersection aren't given?",
+    "choices": [
+      { "label": "A", "text": "Set f(x)=g(x) and solve to find the x-coordinates of the points of intersection, which become the bounds of integration", "isCorrect": true, "explanation": "Finding the intersection points is essential to determine the correct bounds for the area integral." },
+      { "label": "B", "text": "Immediately integrate f(x)-g(x) from negative infinity to positive infinity", "isCorrect": false, "explanation": "Using infinite bounds is not the correct approach; specific finite intersection points must first be determined." },
+      { "label": "C", "text": "Assume the bounds are always 0 and 1", "isCorrect": false, "explanation": "The bounds depend on the actual intersection points of the specific curves, not a fixed assumption of 0 and 1." },
+      { "label": "D", "text": "Differentiate both functions", "isCorrect": false, "explanation": "Differentiating isn't the relevant first step; finding where the curves intersect (by setting them equal) is needed to establish bounds." }
+    ],
+    "explanation": "Setting $f(x)=g(x)$ and solving finds the intersection points, which serve as the bounds of integration.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-16",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "easy",
+    "stem": "What is the \"disc method\" used for computing volumes of revolution?",
+    "choices": [
+      { "label": "A", "text": "Finding the volume of a solid formed by rotating a region bounded by a single curve and an axis, around that axis, by integrating the area of circular cross-sections (discs)", "isCorrect": true, "explanation": "The disc method sums the volumes of thin circular discs (each with area πr²) to find the total volume of a solid of revolution." },
+      { "label": "B", "text": "Finding the area under a curve", "isCorrect": false, "explanation": "This describes basic definite integration for area, not the disc method (which computes VOLUME of a solid of revolution)." },
+      { "label": "C", "text": "Finding the slope of a tangent line", "isCorrect": false, "explanation": "This describes differentiation, an unrelated concept to the disc method for volumes." },
+      { "label": "D", "text": "Finding the length of a curve", "isCorrect": false, "explanation": "This describes arc length, a different application from the disc method for computing volumes." }
+    ],
+    "explanation": "The disc method finds the volume of a solid of revolution by integrating the area of circular cross-sections.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-17",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "medium",
+    "stem": "What is the formula for the volume of the solid formed by rotating the region under $y=f(x)$ (above the x-axis) on $[a,b]$ around the x-axis, using the disc method?",
+    "choices": [
+      { "label": "A", "text": "$\\pi\\displaystyle\\int_a^b [f(x)]^2\\,dx$", "isCorrect": true, "explanation": "This is the standard disc-method formula: each disc has radius f(x) and area π[f(x)]², integrated over the interval." },
+      { "label": "B", "text": "$\\displaystyle\\int_a^b f(x)\\,dx$", "isCorrect": false, "explanation": "This gives the AREA under the curve, not the volume of the solid of revolution (which requires squaring f(x) and multiplying by π)." },
+      { "label": "C", "text": "$2\\pi\\displaystyle\\int_a^b f(x)\\,dx$", "isCorrect": false, "explanation": "This doesn't correctly represent the disc method, which requires squaring the radius f(x), not just a factor of 2π times f(x)." },
+      { "label": "D", "text": "$\\pi\\displaystyle\\int_a^b f(x)\\,dx$", "isCorrect": false, "explanation": "This is missing the crucial squaring of f(x); the disc method requires [f(x)]^2, not just f(x)." }
+    ],
+    "explanation": "The disc-method volume formula is $\\pi\\int_a^b [f(x)]^2\\,dx$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-18",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "medium",
+    "stem": "Find the volume of the solid formed by rotating $y=\\sqrt{x}$ around the x-axis on $[0,4]$.",
+    "choices": [
+      { "label": "A", "text": "$8\\pi$", "isCorrect": true, "explanation": "V = π*integral from 0 to 4 of (sqrt(x))^2 dx = π*integral from 0 to 4 of x dx = π*[x^2/2] from 0 to 4 = π*8 = 8π." },
+      { "label": "B", "text": "$16\\pi$", "isCorrect": false, "explanation": "This doesn't correctly evaluate the antiderivative x^2/2 at the bound x=4." },
+      { "label": "C", "text": "$4\\pi$", "isCorrect": false, "explanation": "This is half the correct volume; the antiderivative evaluation wasn't completed correctly." },
+      { "label": "D", "text": "$2\\pi$", "isCorrect": false, "explanation": "This doesn't correctly compute π times the definite integral of x on [0,4]." }
+    ],
+    "explanation": "$V = \\pi\\int_0^4 x\\,dx = 8\\pi$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-19",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "hard",
+    "stem": "Find the volume of the solid formed by rotating $y=x^2$ around the x-axis on $[0,2]$.",
+    "choices": [
+      { "label": "A", "text": "$32\\pi/5$", "isCorrect": true, "explanation": "V = π*integral from 0 to 2 of (x^2)^2 dx = π*integral from 0 to 2 of x^4 dx = π*[x^5/5] from 0 to 2 = π*(32/5) = 32π/5." },
+      { "label": "B", "text": "$16\\pi/5$", "isCorrect": false, "explanation": "This is half the correct volume, suggesting an arithmetic error in evaluating x^5/5 at x=2." },
+      { "label": "C", "text": "$8\\pi/3$", "isCorrect": false, "explanation": "This doesn't correctly use x^4 as the integrand (from squaring x^2), instead resembling an x^3 integration." },
+      { "label": "D", "text": "$32\\pi$", "isCorrect": false, "explanation": "This omits dividing by 5 from the antiderivative x^5/5." }
+    ],
+    "explanation": "$V = \\pi\\int_0^2 x^4\\,dx = 32\\pi/5$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-20",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "medium",
+    "stem": "What distinguishes the \"washer method\" from the basic \"disc method\"?",
+    "choices": [
+      { "label": "A", "text": "The washer method is used when the solid of revolution has a hole through it (the region is bounded away from the axis of rotation by an inner curve), requiring subtraction of an inner radius", "isCorrect": true, "explanation": "The washer method accounts for a hollow center by subtracting the volume swept by an inner boundary curve from the volume swept by an outer boundary curve." },
+      { "label": "B", "text": "The washer method is used only for solids with no holes at all", "isCorrect": false, "explanation": "This describes the basic disc method, not the washer method, which specifically handles solids WITH a hole." },
+      { "label": "C", "text": "There is no difference between the two methods", "isCorrect": false, "explanation": "There IS a meaningful difference: the washer method subtracts an inner radius to account for a hole, unlike the basic disc method." },
+      { "label": "D", "text": "The washer method never involves integration", "isCorrect": false, "explanation": "The washer method absolutely still involves integration, just with an additional inner-radius term subtracted." }
+    ],
+    "explanation": "The washer method handles solids with a hole by subtracting the inner radius squared from the outer radius squared.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-21",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "hard",
+    "stem": "What is the formula for the washer-method volume of the solid formed by rotating the region between $y=f(x)$ (outer) and $y=g(x)$ (inner), with $f(x)\\geq g(x) \\geq 0$, around the x-axis on $[a,b]$?",
+    "choices": [
+      { "label": "A", "text": "$\\pi\\displaystyle\\int_a^b \\left([f(x)]^2-[g(x)]^2\\right)dx$", "isCorrect": true, "explanation": "The washer method subtracts the inner radius squared from the outer radius squared, then integrates and multiplies by π." },
+      { "label": "B", "text": "$\\pi\\displaystyle\\int_a^b [f(x)-g(x)]^2\\,dx$", "isCorrect": false, "explanation": "This incorrectly squares the DIFFERENCE (f-g) rather than correctly squaring f and g SEPARATELY before subtracting." },
+      { "label": "C", "text": "$\\pi\\displaystyle\\int_a^b [f(x)]^2\\,dx + \\pi\\displaystyle\\int_a^b [g(x)]^2\\,dx$", "isCorrect": false, "explanation": "This incorrectly ADDS the two integrals rather than correctly SUBTRACTING the inner-radius integral from the outer-radius integral." },
+      { "label": "D", "text": "$\\pi\\displaystyle\\int_a^b [f(x)-g(x)]\\,dx$", "isCorrect": false, "explanation": "This omits the necessary squaring of each radius before subtracting, giving an area-like formula rather than the correct volume formula." }
+    ],
+    "explanation": "The washer-method volume is $\\pi\\int_a^b ([f(x)]^2-[g(x)]^2)\\,dx$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-22",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "hard",
+    "stem": "Find the volume of the solid formed by rotating the region between $y=x$ and $y=x^2$ (with $x\\in[0,1]$) around the x-axis, using the washer method.",
+    "choices": [
+      { "label": "A", "text": "$2\\pi/15$", "isCorrect": true, "explanation": "On [0,1], x≥x^2, so V = π*integral from 0 to 1 of (x^2-(x^2)^2) dx = π*integral from 0 to 1 of (x^2-x^4) dx = π*(1/3-1/5) = π*(2/15) = 2π/15." },
+      { "label": "B", "text": "$\\pi/3$", "isCorrect": false, "explanation": "This uses only the outer radius (x) squared without subtracting the inner radius (x^2) squared." },
+      { "label": "C", "text": "$\\pi/5$", "isCorrect": false, "explanation": "This uses only the inner radius (x^2) squared without the required subtraction structure of the washer method." },
+      { "label": "D", "text": "$8\\pi/15$", "isCorrect": false, "explanation": "This doesn't correctly compute π*(1/3-1/5); the correct value is 2π/15, not 8π/15." }
+    ],
+    "explanation": "$V = \\pi\\int_0^1 (x^2-x^4)\\,dx = 2\\pi/15$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-23",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "easy",
+    "stem": "The region under $y=3$ and above the x-axis, on $[0,2]$, is rotated around the x-axis. What solid results, and what is its volume?",
+    "choices": [
+      { "label": "A", "text": "A cylinder with radius 3 and height 2; volume $18\\pi$", "isCorrect": true, "explanation": "Rotating a constant-height rectangle around the x-axis produces a cylinder; V = π*integral from 0 to 2 of 3^2 dx = π*9*2 = 18π, matching the standard cylinder volume formula πr²h." },
+      { "label": "B", "text": "A cone with volume $6\\pi$", "isCorrect": false, "explanation": "Rotating a CONSTANT height (not a linearly-varying one) produces a cylinder, not a cone." },
+      { "label": "C", "text": "A sphere with volume $36\\pi$", "isCorrect": false, "explanation": "Rotating a horizontal line segment around the x-axis produces a cylinder, not a sphere (which would come from rotating a semicircle)." },
+      { "label": "D", "text": "A cylinder with volume $9\\pi$", "isCorrect": false, "explanation": "This uses only half the correct height (2), rather than correctly multiplying by the full height of 2." }
+    ],
+    "explanation": "Rotating a constant height 3 over width 2 gives a cylinder with $V=\\pi r^2 h = \\pi(3)^2(2)=18\\pi$, matching the disc-method integral.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-24",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-disc-washer",
+    "difficulty": "hard",
+    "stem": "Find the volume of the solid formed by rotating the region between $y=4$ and $y=x^2$ (with $x\\in[-2,2]$) around the x-axis, using the washer method.",
+    "choices": [
+      { "label": "A", "text": "$256\\pi/5$", "isCorrect": true, "explanation": "V = π*integral from -2 to 2 of (4^2-(x^2)^2) dx = π*integral from -2 to 2 of (16-x^4) dx = π*(64-64/5) = π*(256/5) = 256π/5." },
+      { "label": "B", "text": "$64\\pi$", "isCorrect": false, "explanation": "This omits subtracting the inner radius term x^4, using only the outer radius squared (16) integrated." },
+      { "label": "C", "text": "$128\\pi/5$", "isCorrect": false, "explanation": "This is half the correct volume, likely from a sign or bound error." },
+      { "label": "D", "text": "$64\\pi/5$", "isCorrect": false, "explanation": "This doesn't correctly account for the full outer-radius term (16) across the interval [-2,2]." }
+    ],
+    "explanation": "$V = \\pi\\int_{-2}^2 (16-x^4)\\,dx = 256\\pi/5$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-25",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-cross-sections",
+    "difficulty": "easy",
+    "stem": "In the \"volume by cross-sections\" method (not a solid of revolution), how is the volume of the solid computed?",
+    "choices": [
+      { "label": "A", "text": "By integrating the area of the cross-sectional shape (perpendicular to a given axis) as a function of position along that axis", "isCorrect": true, "explanation": "This method sums (integrates) the areas of cross-sections perpendicular to an axis to find the total volume." },
+      { "label": "B", "text": "By finding the perimeter of the base region only", "isCorrect": false, "explanation": "Perimeter is unrelated to this method; the AREA of each cross-section is what must be integrated." },
+      { "label": "C", "text": "By always assuming the solid is a cylinder", "isCorrect": false, "explanation": "Cross-sections can be squares, semicircles, triangles, or many other shapes -- not always assumed to be a cylinder." },
+      { "label": "D", "text": "By differentiating the base area function", "isCorrect": false, "explanation": "Differentiation is the wrong operation; INTEGRATION of the cross-sectional area function is required." }
+    ],
+    "explanation": "The volume is found by integrating the cross-sectional area as a function of position along the axis.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-cross-sections",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-26",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-cross-sections",
+    "difficulty": "medium",
+    "stem": "A solid has a base region bounded by $y=\\sqrt{x}$, $y=0$, and $x=4$. Cross-sections perpendicular to the x-axis are squares, with the side length equal to the height of the region at each x. What is the area function A(x) for these cross-sections?",
+    "choices": [
+      { "label": "A", "text": "$A(x) = x$", "isCorrect": true, "explanation": "The side length is sqrt(x) (the height of the region), so the square's area is [sqrt(x)]^2 = x." },
+      { "label": "B", "text": "$A(x) = \\sqrt{x}$", "isCorrect": false, "explanation": "This is just the side length itself, not the AREA of the square (which requires squaring the side length)." },
+      { "label": "C", "text": "$A(x) = 4x$", "isCorrect": false, "explanation": "This incorrectly introduces a factor of 4, rather than correctly squaring the side length sqrt(x)." },
+      { "label": "D", "text": "$A(x) = x^2$", "isCorrect": false, "explanation": "This squares x itself rather than squaring the actual side length, which is sqrt(x), not x." }
+    ],
+    "explanation": "The side length is $\\sqrt{x}$, so the square cross-section's area is $A(x)=(\\sqrt{x})^2=x$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-cross-sections",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-27",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-cross-sections",
+    "difficulty": "medium",
+    "stem": "Using the setup from the previous question (base bounded by $y=\\sqrt{x}$, $y=0$, $x=4$; square cross-sections perpendicular to the x-axis with area $A(x)=x$), find the volume of the solid.",
+    "choices": [
+      { "label": "A", "text": "$8$", "isCorrect": true, "explanation": "V = integral from 0 to 4 of x dx = [x^2/2] from 0 to 4 = 16/2 = 8." },
+      { "label": "B", "text": "$16$", "isCorrect": false, "explanation": "This doesn't correctly divide by 2 when evaluating the antiderivative x^2/2 at x=4." },
+      { "label": "C", "text": "$4$", "isCorrect": false, "explanation": "This doesn't correctly evaluate the definite integral of x from 0 to 4." },
+      { "label": "D", "text": "$64/3$", "isCorrect": false, "explanation": "This resembles integrating x^2 rather than x; the correct cross-sectional area function here is A(x)=x." }
+    ],
+    "explanation": "$V = \\int_0^4 x\\,dx = 8$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-cross-sections",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-28",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-cross-sections",
+    "difficulty": "hard",
+    "stem": "A solid has a base region bounded by $y=x^2$ and $y=4$ (with $x\\in[-2,2]$). Cross-sections perpendicular to the x-axis are squares with side length equal to the vertical height of the region, $4-x^2$. Find the volume of the solid.",
+    "choices": [
+      { "label": "A", "text": "$512/15$", "isCorrect": true, "explanation": "V = integral from -2 to 2 of (4-x^2)^2 dx = integral from -2 to 2 of (16-8x^2+x^4) dx = 512/15." },
+      { "label": "B", "text": "$256/15$", "isCorrect": false, "explanation": "This is half the correct volume, suggesting an arithmetic error in evaluating the antiderivative at the bounds." },
+      { "label": "C", "text": "$64/3$", "isCorrect": false, "explanation": "This doesn't correctly expand and integrate the squared expression (4-x^2)^2." },
+      { "label": "D", "text": "$32/3$", "isCorrect": false, "explanation": "This resembles the area between the curves (not squared for cross-sectional area), not the correct volume." }
+    ],
+    "explanation": "$V = \\int_{-2}^2 (4-x^2)^2\\,dx = 512/15$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-cross-sections",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-29",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-cross-sections",
+    "difficulty": "hard",
+    "stem": "A solid's base is the region bounded by $y=x$ and $y=0$ on $[0,3]$. Cross-sections perpendicular to the x-axis are semicircles with diameter equal to the height y=x of the region. Find the volume of the solid. (Recall: the area of a semicircle with radius r is $\\frac{1}{2}\\pi r^2$.)",
+    "choices": [
+      { "label": "A", "text": "$9\\pi/8$", "isCorrect": true, "explanation": "Diameter=x, so radius=x/2. Area = (1/2)π(x/2)^2 = πx^2/8. V = integral from 0 to 3 of πx^2/8 dx = (π/8)(9) = 9π/8." },
+      { "label": "B", "text": "$9\\pi/4$", "isCorrect": false, "explanation": "This doesn't correctly account for the semicircle's radius being x/2 (half the diameter x), which introduces a factor of 1/4 when squared." },
+      { "label": "C", "text": "$9\\pi/2$", "isCorrect": false, "explanation": "This uses the full circle area formula πr² instead of the semicircle's half formula, and doesn't correctly use radius=x/2." },
+      { "label": "D", "text": "$3\\pi$", "isCorrect": false, "explanation": "This doesn't correctly integrate the semicircle area function πx^2/8 over the given interval [0,3]." }
+    ],
+    "explanation": "With radius $x/2$, the semicircle area is $\\pi x^2/8$; $V=\\int_0^3 \\pi x^2/8\\,dx = 9\\pi/8$.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-cross-sections",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-mcq-30",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-cross-sections",
+    "difficulty": "medium",
+    "stem": "When setting up a volume-by-cross-sections problem, why is it important to correctly identify the shape of each cross-section (square, semicircle, equilateral triangle, etc.) before integrating?",
+    "choices": [
+      { "label": "A", "text": "Because each shape has a different area formula in terms of its \"side\" or \"radius\" (which is determined by the base region), and using the wrong formula gives an incorrect area function to integrate", "isCorrect": true, "explanation": "The area formula (e.g., side², (1/2)πr², (√3/4)side²) depends entirely on the cross-sectional shape, so misidentifying it leads to integrating the wrong function." },
+      { "label": "B", "text": "The shape of the cross-section never matters; all shapes have the same area formula", "isCorrect": false, "explanation": "Different shapes (square, semicircle, triangle) have genuinely DIFFERENT area formulas, so the shape absolutely matters." },
+      { "label": "C", "text": "Only square cross-sections are ever used in these problems", "isCorrect": false, "explanation": "AP Calculus problems commonly use semicircles, equilateral triangles, and other shapes, not exclusively squares." },
+      { "label": "D", "text": "The base region's boundaries are irrelevant once the shape is identified", "isCorrect": false, "explanation": "The base region's boundaries ARE essential, since they determine the side length/radius that feeds into the area formula at each x." }
+    ],
+    "explanation": "Each cross-sectional shape has a distinct area formula, so correctly identifying the shape is essential to integrating the right area function.",
+    "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-cross-sections",
+    "reviewed": false
+  }
+]

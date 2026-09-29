@@ -1,0 +1,14 @@
+{
+  "slug": "unit-5-analytical-applications-of-differentiation",
+  "order": 5,
+  "name": "Analytical Applications of Differentiation",
+  "weightingMin": 15,
+  "weightingMax": 18,
+  "topics": [
+    { "slug": "mean-value-theorem", "order": 1, "name": "The Mean Value Theorem" },
+    { "slug": "extrema-and-first-derivative-test", "order": 2, "name": "Extrema and the First Derivative Test" },
+    { "slug": "concavity-and-second-derivative-test", "order": 3, "name": "Concavity and the Second Derivative Test" },
+    { "slug": "optimization", "order": 4, "name": "Optimization Problems" },
+    { "slug": "curve-sketching", "order": 5, "name": "Curve Sketching" }
+  ]
+}

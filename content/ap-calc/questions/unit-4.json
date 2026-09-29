@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-calc-u4-mcq-1",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "easy",
+    "stem": "If s(t) is position and v(t) = s'(t) is velocity, what does a positive value of v(t) indicate about the particle's motion?",
+    "choices": [
+      { "label": "A", "text": "The particle is moving in the positive direction", "isCorrect": true, "explanation": "A positive velocity means the particle's position is increasing, i.e. moving in the positive direction." },
+      { "label": "B", "text": "The particle is stationary", "isCorrect": false, "explanation": "A stationary particle has velocity 0, not a positive value." },
+      { "label": "C", "text": "The particle is moving in the negative direction", "isCorrect": false, "explanation": "Moving in the negative direction would correspond to NEGATIVE velocity, not positive." },
+      { "label": "D", "text": "The particle is accelerating", "isCorrect": false, "explanation": "Acceleration is described by a(t)=v'(t), a separate quantity from velocity's sign." }
+    ],
+    "explanation": "Positive velocity means the particle is moving in the positive direction.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-2",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "medium",
+    "stem": "A particle's velocity is given by $v(t) = t^2 - 4t$. At $t=1$, is the particle speeding up or slowing down?",
+    "choices": [
+      { "label": "A", "text": "Speeding up, since v(1) and a(1) are both negative (same sign)", "isCorrect": true, "explanation": "v(1) = 1-4 = -3 and a(t)=2t-4, so a(1) = -2. Since v and a have the same sign, the particle is speeding up." },
+      { "label": "B", "text": "Slowing down, since v(1) is negative", "isCorrect": false, "explanation": "The sign of velocity ALONE doesn't determine speeding up/slowing down; you must compare it to acceleration's sign." },
+      { "label": "C", "text": "Speeding up, since a(1) is negative", "isCorrect": false, "explanation": "The sign of acceleration ALONE doesn't determine speeding up/slowing down; it must be compared to velocity's sign." },
+      { "label": "D", "text": "Slowing down, since v(1) and a(1) have different signs", "isCorrect": false, "explanation": "v(1)=-3 and a(1)=-2 actually have the SAME sign (both negative), not different signs." }
+    ],
+    "explanation": "v(1)=-3 and a(1)=-2 have the same sign, so the particle is speeding up.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-3",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "medium",
+    "stem": "What does it mean when v(t) = 0 for a particle in straight-line motion?",
+    "choices": [
+      { "label": "A", "text": "The particle is momentarily at rest (though it may still be changing direction)", "isCorrect": true, "explanation": "v(t)=0 means the particle's instantaneous speed is zero at that moment." },
+      { "label": "B", "text": "The particle has infinite speed", "isCorrect": false, "explanation": "v(t)=0 means zero speed, the opposite of infinite speed." },
+      { "label": "C", "text": "The particle no longer exists", "isCorrect": false, "explanation": "Velocity being zero doesn't affect whether the particle \"exists\"; it simply describes its instantaneous motion." },
+      { "label": "D", "text": "The particle's position is always 0", "isCorrect": false, "explanation": "v(t)=0 describes the particle's velocity at that instant, not that its POSITION must be 0." }
+    ],
+    "explanation": "v(t) = 0 means the particle is momentarily at rest.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-4",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "hard",
+    "stem": "A particle's position is given by $s(t) = t^3 - 3t^2$ ($t \\geq 0$). Find all times where the particle is at rest ($v(t)=0$).",
+    "choices": [
+      { "label": "A", "text": "t=0 and t=2", "isCorrect": true, "explanation": "v(t) = 3t^2-6t = 3t(t-2). Setting equal to 0 gives t=0 or t=2." },
+      { "label": "B", "text": "t=0 only", "isCorrect": false, "explanation": "While t=0 is indeed one solution, t=2 is also a valid solution that's been left out." },
+      { "label": "C", "text": "t=2 only", "isCorrect": false, "explanation": "While t=2 is indeed one solution, t=0 is also a valid solution that's been left out." },
+      { "label": "D", "text": "t=3", "isCorrect": false, "explanation": "t=3 is not a solution to v(t)=0 for this particular velocity function." }
+    ],
+    "explanation": "$v(t) = 3t^2-6t = 3t(t-2) = 0$ gives $t=0$ or $t=2$.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-5",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "medium",
+    "stem": "For a particle with position s(t), what condition indicates the particle is moving in the negative direction?",
+    "choices": [
+      { "label": "A", "text": "v(t) < 0", "isCorrect": true, "explanation": "Negative velocity means the position is decreasing, i.e. moving in the negative direction." },
+      { "label": "B", "text": "v(t) > 0", "isCorrect": false, "explanation": "v(t) > 0 indicates movement in the POSITIVE direction, the opposite of what's being asked." },
+      { "label": "C", "text": "s(t) = 0", "isCorrect": false, "explanation": "s(t)=0 just means the particle is AT the origin at that instant; it says nothing about the direction of motion." },
+      { "label": "D", "text": "a(t) < 0", "isCorrect": false, "explanation": "a(t) < 0 describes deceleration/negative acceleration, a different concept from the direction of velocity itself." }
+    ],
+    "explanation": "Negative velocity, v(t) < 0, indicates the particle is moving in the negative direction.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-6",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "medium",
+    "stem": "How is total distance traveled by a particle different from its net displacement, in the context of straight-line motion?",
+    "choices": [
+      { "label": "A", "text": "Total distance accounts for ALL movement (including back-and-forth motion), while displacement is just the net change in position from start to end", "isCorrect": true, "explanation": "Distance is the sum of all movement, while displacement is only the net change, which can be smaller if the particle reverses direction." },
+      { "label": "B", "text": "They are always exactly the same value", "isCorrect": false, "explanation": "These values are only the same when a particle moves in a single, non-reversing direction; in general, total distance is greater than or equal to displacement in magnitude." },
+      { "label": "C", "text": "Distance is always negative, while displacement is always positive", "isCorrect": false, "explanation": "Distance is a NON-NEGATIVE quantity (never negative), and displacement can be positive, negative, or zero depending on direction." },
+      { "label": "D", "text": "There is no meaningful difference between these two concepts", "isCorrect": false, "explanation": "There IS a meaningful, important difference between these two related but distinct quantities in kinematics." }
+    ],
+    "explanation": "Total distance accounts for all movement, while displacement is only the net change in position.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-7",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "medium",
+    "stem": "A particle moves so that v(t) > 0 for $0 \\leq t < 3$, and v(t) < 0 for $t > 3$. What can be concluded about the particle's motion at $t=3$?",
+    "choices": [
+      { "label": "A", "text": "The particle changes direction at t=3 (moving from positive to negative direction)", "isCorrect": true, "explanation": "Since velocity goes from positive to negative through zero at t=3, the particle reverses direction there." },
+      { "label": "B", "text": "The particle's speed is maximum at t=3", "isCorrect": false, "explanation": "Since v(3)=0, the particle's speed is actually at a MINIMUM (zero) at this instant, not maximum." },
+      { "label": "C", "text": "The particle's acceleration is zero everywhere", "isCorrect": false, "explanation": "This scenario doesn't establish that acceleration is zero everywhere; it only describes velocity's sign change at one instant." },
+      { "label": "D", "text": "The particle stops permanently after t=3", "isCorrect": false, "explanation": "After t=3, the particle has negative velocity, meaning it continues moving (in the negative direction), not permanently stopping." }
+    ],
+    "explanation": "Since velocity changes sign from positive to negative at t=3, the particle changes direction there.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-8",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "medium",
+    "stem": "A particle's position is $s(t) = -t^2 + 6t$ ($t \\geq 0$). Find the particle's velocity at $t=2$, and state whether it is moving in the positive or negative direction.",
+    "choices": [
+      { "label": "A", "text": "v(2)=2, moving in the positive direction", "isCorrect": true, "explanation": "v(t) = -2t+6, so v(2) = -4+6 = 2, which is positive." },
+      { "label": "B", "text": "v(2)=-2, moving in the negative direction", "isCorrect": false, "explanation": "This has the correct magnitude but the wrong sign; v(2) is actually positive (+2), not negative." },
+      { "label": "C", "text": "v(2)=2, moving in the negative direction", "isCorrect": false, "explanation": "While the magnitude is correct, a positive velocity indicates the positive direction, not negative." },
+      { "label": "D", "text": "v(2)=6, moving in the positive direction", "isCorrect": false, "explanation": "This incorrectly uses the coefficient from the original position function rather than correctly evaluating the derivative at t=2." }
+    ],
+    "explanation": "$v(t) = -2t+6$, so $v(2) = 2$, indicating motion in the positive direction.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-9",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "easy",
+    "stem": "What type of problem does \"related rates\" typically address?",
+    "choices": [
+      { "label": "A", "text": "Finding how the rate of change of one quantity relates to the rate of change of another, connected quantity", "isCorrect": true, "explanation": "Related rates problems connect the rates of change of two or more related quantities through a shared equation." },
+      { "label": "B", "text": "Finding the maximum value of a function", "isCorrect": false, "explanation": "Finding maximum values relates to optimization, a different (though related) topic in calculus." },
+      { "label": "C", "text": "Finding the area under a curve", "isCorrect": false, "explanation": "Finding area under a curve relates to integration, a completely different topic." },
+      { "label": "D", "text": "Finding the limit of a sequence", "isCorrect": false, "explanation": "Finding limits of sequences is a different mathematical topic, unrelated to related rates problems." }
+    ],
+    "explanation": "Related rates problems find how the rate of change of one quantity relates to another connected quantity's rate of change.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-10",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "medium",
+    "stem": "In a typical related rates problem, what is the first key step?",
+    "choices": [
+      { "label": "A", "text": "Identify the relevant variables and write an equation relating them", "isCorrect": true, "explanation": "Establishing the relating equation is the essential first step before differentiation can be applied." },
+      { "label": "B", "text": "Immediately guess the final numerical answer", "isCorrect": false, "explanation": "Related rates problems require careful, methodical setup, not guessing at an answer." },
+      { "label": "C", "text": "Ignore all given rates", "isCorrect": false, "explanation": "The given rates are CENTRAL to solving these problems; they cannot be ignored." },
+      { "label": "D", "text": "Skip straight to differentiating with respect to time without setting up any relationship", "isCorrect": false, "explanation": "A foundational equation relating the variables must be established FIRST, before differentiation can meaningfully be applied." }
+    ],
+    "explanation": "The first key step is identifying the relevant variables and writing an equation relating them.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-11",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "medium",
+    "stem": "A spherical balloon is being inflated so that its radius r increases at a rate of $dr/dt = 2$ cm/s. The volume of a sphere is $V = \\frac{4}{3}\\pi r^3$. What is $dV/dt$ in terms of r?",
+    "choices": [
+      { "label": "A", "text": "$8\\pi r^2$", "isCorrect": true, "explanation": "dV/dt = 4*pi*r^2 * dr/dt = 4*pi*r^2 * 2 = 8*pi*r^2." },
+      { "label": "B", "text": "$4\\pi r^2$", "isCorrect": false, "explanation": "This omits the dr/dt = 2 factor required by the chain rule in this related rates setup." },
+      { "label": "C", "text": "$\\frac{4}{3}\\pi r^3$", "isCorrect": false, "explanation": "This is just the ORIGINAL volume formula, not its derivative with respect to time." },
+      { "label": "D", "text": "$4\\pi r^2 \\cdot 2r$", "isCorrect": false, "explanation": "This incorrectly introduces an extra factor of r that doesn't belong in the correctly differentiated expression." }
+    ],
+    "explanation": "$dV/dt = 4\\pi r^2 \\cdot dr/dt = 4\\pi r^2 \\cdot 2 = 8\\pi r^2$.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-12",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "hard",
+    "stem": "A ladder 10 ft long leans against a wall. The bottom slides away from the wall at 1 ft/s. Let x be the distance from the wall to the base, and y the height of the top on the wall, with $x^2+y^2=100$. Find $dy/dt$ when $x=6$ (so $y=8$).",
+    "choices": [
+      { "label": "A", "text": "-3/4 ft/s", "isCorrect": true, "explanation": "Differentiating: 2x(dx/dt)+2y(dy/dt)=0, so dy/dt = -x(dx/dt)/y = -(6)(1)/8 = -3/4." },
+      { "label": "B", "text": "3/4 ft/s", "isCorrect": false, "explanation": "This is missing the negative sign, which indicates the ladder's height is DECREASING as the base slides away." },
+      { "label": "C", "text": "-4/3 ft/s", "isCorrect": false, "explanation": "This incorrectly inverts the fraction x/y instead of correctly using x(dx/dt)/y." },
+      { "label": "D", "text": "-6 ft/s", "isCorrect": false, "explanation": "This forgets to divide by y (8), only accounting for the numerator of the correctly derived expression." }
+    ],
+    "explanation": "$dy/dt = -x(dx/dt)/y = -(6)(1)/8 = -3/4$ ft/s, indicating the top of the ladder is sliding down.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-13",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "medium",
+    "stem": "In related rates problems, why is it important to differentiate the relating equation with respect to TIME (t), even if time doesn't explicitly appear in the original equation?",
+    "choices": [
+      { "label": "A", "text": "Because all the variables in the equation are themselves functions of time, so their rates of change are with respect to t", "isCorrect": true, "explanation": "Each variable changes over time, so differentiating with respect to t captures how they're all changing together." },
+      { "label": "B", "text": "Time is irrelevant to related rates problems", "isCorrect": false, "explanation": "Time is actually central to related rates problems, since we're finding how quantities change OVER TIME." },
+      { "label": "C", "text": "The equation should be differentiated with respect to one of the OTHER variables instead, like x or y", "isCorrect": false, "explanation": "Differentiating with respect to x or y instead of t would not correctly capture how these quantities are CHANGING OVER TIME." },
+      { "label": "D", "text": "Differentiating with respect to time is optional and can be skipped", "isCorrect": false, "explanation": "Differentiating with respect to time is a REQUIRED step in related rates problems, not an optional one." }
+    ],
+    "explanation": "Since all variables are functions of time, differentiating with respect to t captures how they change together.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-14",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "medium",
+    "stem": "A cylindrical tank is being filled with water so that the volume increases at $dV/dt = 5$ m³/min. If $V = \\pi r^2 h$ with r constant, express $dh/dt$ in terms of $dV/dt$ and $r$.",
+    "choices": [
+      { "label": "A", "text": "$dh/dt = 5/(\\pi r^2)$", "isCorrect": true, "explanation": "Since r is constant, dV/dt = pi*r^2*(dh/dt), so dh/dt = dV/dt / (pi*r^2) = 5/(pi*r^2)." },
+      { "label": "B", "text": "$dh/dt = 5\\pi r^2$", "isCorrect": false, "explanation": "This incorrectly multiplies rather than divides by pi*r^2, reversing the correct relationship." },
+      { "label": "C", "text": "$dh/dt = 5/(2\\pi r)$", "isCorrect": false, "explanation": "This uses the wrong formula entirely, mixing up components that would apply to a different geometric quantity, not volume." },
+      { "label": "D", "text": "$dh/dt = \\pi r^2/5$", "isCorrect": false, "explanation": "This incorrectly inverts the relationship, dividing pi*r^2 by 5 instead of 5 by pi*r^2." }
+    ],
+    "explanation": "Since r is constant, $dV/dt = \\pi r^2 (dh/dt)$, so $dh/dt = 5/(\\pi r^2)$.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-15",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "medium",
+    "stem": "Two cars start from the same point. Car A travels north at 60 mph, and Car B travels east at 80 mph. Using $z^2 = x^2 + y^2$ where x, y are the distances traveled and z is the distance between them, what is the general strategy to find $dz/dt$?",
+    "choices": [
+      { "label": "A", "text": "Differentiate the equation z² = x² + y² with respect to time, then substitute known values of x, y, dx/dt, dy/dt to solve for dz/dt", "isCorrect": true, "explanation": "This is the standard related rates strategy: differentiate the relating equation, then substitute known values." },
+      { "label": "B", "text": "Simply add dx/dt and dy/dt together directly", "isCorrect": false, "explanation": "dz/dt cannot be found by SIMPLY ADDING the two rates directly; the relationship must be properly differentiated according to the given equation." },
+      { "label": "C", "text": "Take the square root of dx/dt and dy/dt separately", "isCorrect": false, "explanation": "Taking the square root of each rate separately doesn't correctly apply the related rates methodology to this Pythagorean relationship." },
+      { "label": "D", "text": "Ignore the Pythagorean relationship and use unrelated formulas", "isCorrect": false, "explanation": "The Pythagorean relationship IS the key equation connecting the relevant variables in this problem; it shouldn't be ignored." }
+    ],
+    "explanation": "The strategy is to differentiate the relating equation with respect to time, then substitute known values to solve for dz/dt.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-16",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "hard",
+    "stem": "For the two-car problem above, after 1 hour: x=60 mi, y=80 mi, dx/dt=60 mph, dy/dt=80 mph. Find z at this time, then find dz/dt.",
+    "choices": [
+      { "label": "A", "text": "z=100 mi, dz/dt=100 mph", "isCorrect": true, "explanation": "z = sqrt(60^2+80^2) = sqrt(10000) = 100. Then z(dz/dt)=x(dx/dt)+y(dy/dt), so dz/dt = [60(60)+80(80)]/100 = 10000/100 = 100." },
+      { "label": "B", "text": "z=100 mi, dz/dt=140 mph", "isCorrect": false, "explanation": "140 would be the simple sum of the two rates (60+80), which doesn't correctly apply the Pythagorean/related-rates relationship." },
+      { "label": "C", "text": "z=140 mi, dz/dt=100 mph", "isCorrect": false, "explanation": "z should be 100 (from sqrt(10000)), not 140; this confuses the distance calculation." },
+      { "label": "D", "text": "z=100 mi, dz/dt=70 mph", "isCorrect": false, "explanation": "This doesn't correctly compute the weighted sum [x(dx/dt)+y(dy/dt)]/z required by the related rates formula." }
+    ],
+    "explanation": "$z = \\sqrt{60^2+80^2} = 100$, and $dz/dt = [60(60)+80(80)]/100 = 100$ mph.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-17",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "local-linearization",
+    "difficulty": "easy",
+    "stem": "What is a \"local linearization\" (or \"tangent line approximation\") of a function f at a point x=a used for?",
+    "choices": [
+      { "label": "A", "text": "To approximate f(x) for values of x near a, using the tangent line at that point", "isCorrect": true, "explanation": "Local linearization uses the tangent line at x=a to approximate function values nearby." },
+      { "label": "B", "text": "To find the exact value of f(x) for ALL x", "isCorrect": false, "explanation": "Local linearization is specifically an APPROXIMATION technique, valid mainly for x NEAR a, not an exact method for all x values." },
+      { "label": "C", "text": "To find the area under f's curve", "isCorrect": false, "explanation": "Finding area under a curve relates to integration, a different concept." },
+      { "label": "D", "text": "To find the second derivative of f", "isCorrect": false, "explanation": "Local linearization relates to the tangent line (using the FIRST derivative), not to computing second derivatives." }
+    ],
+    "explanation": "Local linearization approximates f(x) near x=a using the tangent line at that point.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/local-linearization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-18",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "local-linearization",
+    "difficulty": "medium",
+    "stem": "What is the formula for the local linear approximation L(x) of f(x) near x=a?",
+    "choices": [
+      { "label": "A", "text": "$L(x) = f(a) + f'(a)(x-a)$", "isCorrect": true, "explanation": "This is the standard tangent-line (local linear) approximation formula." },
+      { "label": "B", "text": "$L(x) = f(a) + f(a)(x-a)$", "isCorrect": false, "explanation": "This incorrectly uses f(a) (the function value) in place of f'(a) (the derivative/slope) in the second term." },
+      { "label": "C", "text": "$L(x) = f'(a) + f(a)(x-a)$", "isCorrect": false, "explanation": "This incorrectly swaps the roles of f(a) and f'(a) in the formula." },
+      { "label": "D", "text": "$L(x) = f(a) \\cdot f'(a) \\cdot x$", "isCorrect": false, "explanation": "This doesn't represent the correct linear approximation formula at all." }
+    ],
+    "explanation": "The local linear approximation is $L(x) = f(a) + f'(a)(x-a)$.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/local-linearization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-19",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "local-linearization",
+    "difficulty": "medium",
+    "stem": "Use local linearization to approximate $\\sqrt{4.1}$, given $f(x)=\\sqrt{x}$, $f(4)=2$, and $f'(4) = 1/4$.",
+    "choices": [
+      { "label": "A", "text": "2.025", "isCorrect": true, "explanation": "L(4.1) = 2 + (1/4)(0.1) = 2 + 0.025 = 2.025." },
+      { "label": "B", "text": "2.1", "isCorrect": false, "explanation": "This doesn't correctly apply the linearization formula; it just adds the deviation (0.1) directly without scaling by f'(4)." },
+      { "label": "C", "text": "2", "isCorrect": false, "explanation": "This is just f(4), without accounting for the linear approximation adjustment as x moves away from 4." },
+      { "label": "D", "text": "2.25", "isCorrect": false, "explanation": "This doesn't correctly compute the small adjustment term (1/4)(0.1)=0.025; it overestimates the adjustment significantly." }
+    ],
+    "explanation": "$L(4.1) = 2 + \\frac{1}{4}(0.1) = 2.025$.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/local-linearization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-20",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "local-linearization",
+    "difficulty": "hard",
+    "stem": "Why does local linearization tend to become less accurate as x moves farther away from the point a where the tangent line was computed?",
+    "choices": [
+      { "label": "A", "text": "Because the tangent line is only guaranteed to closely match f(x) very near x=a; farther away, the curve's actual behavior (concavity, etc.) diverges more from the straight tangent line", "isCorrect": true, "explanation": "The tangent line is a straight-line approximation, while the actual curve can bend away from it as x moves further from a." },
+      { "label": "B", "text": "Local linearization is always perfectly accurate no matter how far x is from a", "isCorrect": false, "explanation": "This contradicts the fundamental nature of linear approximation, which is generally LESS accurate the farther x is from a." },
+      { "label": "C", "text": "The tangent line formula changes automatically for different x", "isCorrect": false, "explanation": "The tangent line formula does NOT change for different x-values; it's a fixed line, which is precisely why it diverges from the curve farther away." },
+      { "label": "D", "text": "f'(a) becomes undefined for x far from a", "isCorrect": false, "explanation": "f'(a) is a single computed value; it doesn't become \"undefined\" based on how far a different x is from a." }
+    ],
+    "explanation": "The tangent line is a fixed straight-line approximation, so it diverges from the curve's actual (possibly curving) behavior farther from a.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/local-linearization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-21",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "local-linearization",
+    "difficulty": "medium",
+    "stem": "For a function that is concave up near x=a, how does the local linear approximation L(x) compare to the actual function values f(x) for x near a (but not equal to a)?",
+    "choices": [
+      { "label": "A", "text": "L(x) underestimates f(x) (the tangent line lies below the curve)", "isCorrect": true, "explanation": "For a concave-up function, the curve bends away above the tangent line, so the linear approximation underestimates the true value." },
+      { "label": "B", "text": "L(x) always exactly equals f(x)", "isCorrect": false, "explanation": "L(x) only exactly equals f(x) AT the point x=a itself, not for other nearby x-values." },
+      { "label": "C", "text": "L(x) overestimates f(x) (the tangent line lies above the curve)", "isCorrect": false, "explanation": "This describes the situation for a CONCAVE DOWN function, not concave up; concave up curves lie above their tangent lines." },
+      { "label": "D", "text": "There is no consistent relationship between L(x) and f(x) for concave up functions", "isCorrect": false, "explanation": "There IS a well-established, consistent relationship: the tangent line always lies below (underestimates) the curve for a concave-up function." }
+    ],
+    "explanation": "For a concave-up function, the tangent line lies below the curve, so L(x) underestimates f(x).",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/local-linearization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-22",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "local-linearization",
+    "difficulty": "hard",
+    "stem": "Given $f(x) = x^3$, $f(2) = 8$, and $f'(2) = 12$, use local linearization to approximate $f(2.1)$. Then determine whether this approximation is likely an overestimate or underestimate, given that f is concave up for $x>0$.",
+    "choices": [
+      { "label": "A", "text": "L(2.1) = 9.2, and this is likely an underestimate since f is concave up", "isCorrect": true, "explanation": "L(2.1) = 8 + 12(0.1) = 9.2. Since f is concave up (f''(x)=6x>0 for x>0), the tangent line lies below the curve, so L underestimates." },
+      { "label": "B", "text": "L(2.1) = 9.2, and this is likely an overestimate since f is concave up", "isCorrect": false, "explanation": "For a concave UP function, the tangent line lies BELOW the curve, making the linear approximation an UNDERESTIMATE, not an overestimate." },
+      { "label": "C", "text": "L(2.1) = 8.12, and this is likely an underestimate", "isCorrect": false, "explanation": "This doesn't correctly compute the linear approximation; the correct calculation is 8 + 12(0.1) = 9.2, not 8.12." },
+      { "label": "D", "text": "L(2.1) = 9.2, with no way to determine over/underestimate", "isCorrect": false, "explanation": "There IS a determinable relationship here; concavity directly tells us whether the approximation over- or underestimates." }
+    ],
+    "explanation": "$L(2.1) = 8 + 12(0.1) = 9.2$; since f is concave up, the tangent line underestimates the actual curve.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/local-linearization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-23",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "easy",
+    "stem": "What condition must be met to apply L'Hopital's Rule to $\\lim_{x \\to c} f(x)/g(x)$?",
+    "choices": [
+      { "label": "A", "text": "Direct substitution gives an indeterminate form like 0/0 or ∞/∞", "isCorrect": true, "explanation": "L'Hopital's Rule specifically applies to resolve these indeterminate forms." },
+      { "label": "B", "text": "f(x) and g(x) must both be constant functions", "isCorrect": false, "explanation": "L'Hopital's Rule is used for functions that produce indeterminate forms, not constant functions." },
+      { "label": "C", "text": "The limit must already be a known finite number", "isCorrect": false, "explanation": "If the limit is ALREADY known to be a specific finite number through direct evaluation, there's no need for L'Hopital's Rule." },
+      { "label": "D", "text": "g(x) must never equal zero anywhere", "isCorrect": false, "explanation": "L'Hopital's Rule is specifically relevant in cases where direct substitution DOES cause an issue, like g(c)=0 leading to an indeterminate form." }
+    ],
+    "explanation": "L'Hopital's Rule requires direct substitution to give an indeterminate form like 0/0 or ∞/∞.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-24",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "medium",
+    "stem": "What does L'Hopital's Rule state for evaluating an indeterminate limit $\\lim_{x \\to c} f(x)/g(x)$?",
+    "choices": [
+      { "label": "A", "text": "$\\lim_{x \\to c} f(x)/g(x) = \\lim_{x \\to c} f'(x)/g'(x)$, provided the second limit exists (or is infinite)", "isCorrect": true, "explanation": "This is the correct statement of L'Hopital's Rule." },
+      { "label": "B", "text": "$\\lim_{x \\to c} f(x)/g(x) = f'(c)/g'(c)$ always, with no conditions", "isCorrect": false, "explanation": "L'Hopital's Rule is about the LIMIT of the ratio of derivatives, not necessarily the derivatives' values evaluated directly AT c." },
+      { "label": "C", "text": "$\\lim_{x \\to c} f(x)/g(x) = f(c)/g(c)$", "isCorrect": false, "explanation": "This is just direct substitution into the original functions, precisely what FAILS in the indeterminate-form situation." },
+      { "label": "D", "text": "L'Hopital's Rule has nothing to do with derivatives", "isCorrect": false, "explanation": "L'Hopital's Rule is fundamentally and directly based on derivatives." }
+    ],
+    "explanation": "L'Hopital's Rule: $\\lim_{x \\to c} f(x)/g(x) = \\lim_{x \\to c} f'(x)/g'(x)$ under indeterminate conditions.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-25",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "medium",
+    "stem": "Evaluate $\\lim_{x \\to 0} \\dfrac{\\sin(x)}{x}$ using L'Hopital's Rule.",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": true, "explanation": "Applying L'Hopital's Rule: lim (cos(x)/1) = cos(0) = 1." },
+      { "label": "B", "text": "0", "isCorrect": false, "explanation": "Applying L'Hopital's Rule gives cos(x)/1, which evaluates to 1, not 0, at x=0." },
+      { "label": "C", "text": "Undefined", "isCorrect": false, "explanation": "While direct substitution alone gives an indeterminate 0/0 form, L'Hopital's Rule resolves this to a well-defined value of 1." },
+      { "label": "D", "text": "∞", "isCorrect": false, "explanation": "The limit does not grow unboundedly; L'Hopital's Rule gives a finite, specific value of 1." }
+    ],
+    "explanation": "Applying L'Hopital's Rule: $\\lim_{x \\to 0} \\frac{\\cos(x)}{1} = 1$.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-26",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "hard",
+    "stem": "Evaluate $\\lim_{x \\to \\infty} \\dfrac{\\ln(x)}{x}$ using L'Hopital's Rule.",
+    "choices": [
+      { "label": "A", "text": "0", "isCorrect": true, "explanation": "Applying L'Hopital's Rule: lim (1/x)/(1) = lim 1/x = 0 as x approaches infinity." },
+      { "label": "B", "text": "1", "isCorrect": false, "explanation": "After applying L'Hopital's Rule, the expression simplifies to 1/x, which approaches 0 (not 1) as x approaches infinity." },
+      { "label": "C", "text": "∞", "isCorrect": false, "explanation": "The expression 1/x specifically approaches 0, not infinity, as x grows large after correctly applying L'Hopital's Rule." },
+      { "label": "D", "text": "Undefined", "isCorrect": false, "explanation": "This limit is well-defined and resolves to a specific finite value (0) once L'Hopital's Rule is correctly applied." }
+    ],
+    "explanation": "Applying L'Hopital's Rule: $\\lim_{x \\to \\infty} \\frac{1/x}{1} = 0$.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-27",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "medium",
+    "stem": "Why can't L'Hopital's Rule be applied to $\\lim_{x \\to 2} \\dfrac{x+3}{x-1}$?",
+    "choices": [
+      { "label": "A", "text": "Because direct substitution already gives a well-defined, non-indeterminate value (5), so L'Hopital's Rule isn't needed or applicable", "isCorrect": true, "explanation": "Direct substitution gives (2+3)/(2-1) = 5, a well-defined result, so no indeterminate form exists to resolve." },
+      { "label": "B", "text": "Because L'Hopital's Rule can never be used with linear functions", "isCorrect": false, "explanation": "L'Hopital's Rule CAN be used with linear functions in principle, when they produce an indeterminate form; the issue here is that no indeterminate form arises at all." },
+      { "label": "C", "text": "Because the denominator is never zero anywhere", "isCorrect": false, "explanation": "While it's true the denominator isn't zero at x=2 specifically, the real reason is that the limit isn't indeterminate in the first place." },
+      { "label": "D", "text": "Because L'Hopital's Rule only works for trigonometric functions", "isCorrect": false, "explanation": "L'Hopital's Rule is a general technique applicable to many types of functions producing indeterminate forms, not limited to trigonometric functions." }
+    ],
+    "explanation": "Since direct substitution already gives a well-defined value (5), there's no indeterminate form, so L'Hopital's Rule isn't applicable or needed.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-28",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "medium",
+    "stem": "What happens if you apply L'Hopital's Rule once, but the resulting limit is STILL an indeterminate form (0/0 or ∞/∞)?",
+    "choices": [
+      { "label": "A", "text": "You can apply L'Hopital's Rule again (differentiate numerator and denominator once more)", "isCorrect": true, "explanation": "L'Hopital's Rule can be applied repeatedly as long as each application still produces an indeterminate form." },
+      { "label": "B", "text": "You must immediately conclude the limit does not exist", "isCorrect": false, "explanation": "A repeated indeterminate form doesn't mean the limit doesn't exist; it just means you may need to apply the rule again to resolve it." },
+      { "label": "C", "text": "You must go back to using algebraic factoring exclusively", "isCorrect": false, "explanation": "While algebraic techniques are valid tools generally, L'Hopital's Rule specifically CAN be reapplied when the form remains indeterminate." },
+      { "label": "D", "text": "L'Hopital's Rule can only ever be applied exactly once, no matter what", "isCorrect": false, "explanation": "L'Hopital's Rule can indeed be applied multiple times in succession, as long as each application still produces an indeterminate form beforehand." }
+    ],
+    "explanation": "L'Hopital's Rule can be applied repeatedly as long as each application still yields an indeterminate form.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-29",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "medium",
+    "stem": "Evaluate $\\lim_{x \\to 0} \\dfrac{e^x - 1}{x}$ using L'Hopital's Rule.",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": true, "explanation": "Applying L'Hopital's Rule: lim (e^x)/1 = e^0 = 1." },
+      { "label": "B", "text": "0", "isCorrect": false, "explanation": "After applying L'Hopital's Rule, the expression becomes e^x, which evaluates to 1 (not 0) at x=0." },
+      { "label": "C", "text": "e", "isCorrect": false, "explanation": "While e IS the base of the exponential function here, the correctly evaluated limit is e^0=1, not e itself." },
+      { "label": "D", "text": "Undefined", "isCorrect": false, "explanation": "This limit is well-defined and resolves to a specific finite value (1) once L'Hopital's Rule is correctly applied." }
+    ],
+    "explanation": "Applying L'Hopital's Rule: $\\lim_{x \\to 0} \\frac{e^x}{1} = e^0 = 1$.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u4-mcq-30",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "easy",
+    "stem": "Related rates problems are a direct application of which core calculus concept covered in earlier units?",
+    "choices": [
+      { "label": "A", "text": "The Chain Rule, since each variable is treated as a function of time and differentiated accordingly", "isCorrect": true, "explanation": "Related rates rely on the Chain Rule, since each variable is implicitly a function of time." },
+      { "label": "B", "text": "The Intermediate Value Theorem", "isCorrect": false, "explanation": "The IVT is about the existence of function values between two points, unrelated to related rates problems." },
+      { "label": "C", "text": "The definition of a limit", "isCorrect": false, "explanation": "While limits underlie all of calculus, related rates problems specifically rely on differentiation techniques (the Chain Rule), not directly on limit evaluation." },
+      { "label": "D", "text": "The Power Rule alone, with no other differentiation rules needed", "isCorrect": false, "explanation": "While the Power Rule is often used within these problems, the Chain Rule is essential for correctly differentiating expressions with respect to time." }
+    ],
+    "explanation": "Related rates problems rely on the Chain Rule, treating each variable as an implicit function of time.",
+    "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  }
+]

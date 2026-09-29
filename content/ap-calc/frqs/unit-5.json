@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-calc-u5-frq-1",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "optimization",
+    "prompt": "A rectangular box with a square base and open top must have a volume of 32 cubic units. Let x be the side length of the square base and h the height.\n\n**(a)** Express h in terms of x, using the volume constraint $x^2h = 32$.\n\n**(b)** The surface area (base + 4 sides, no top) is $S = x^2 + 4xh$. Express S in terms of x alone.\n\n**(c)** Find the value of x that minimizes S.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly solves h = 32/x^2 from the volume constraint" },
+      { "id": "r2", "points": 1, "description": "Correctly substitutes to get S(x) = x^2 + 128/x" },
+      { "id": "r3", "points": 1, "description": "Correctly finds S'(x) = 2x - 128/x^2" },
+      { "id": "r4", "points": 1, "description": "Correctly solves S'(x)=0 to find x=4" }
+    ],
+    "sampleResponse": "(a) From x^2h = 32, h = 32/x^2.\n(b) S = x^2 + 4x(32/x^2) = x^2 + 128/x.\n(c) S'(x) = 2x - 128/x^2. Setting S'(x)=0: 2x = 128/x^2, so 2x^3 = 128, x^3 = 64, x = 4.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-frq-2",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "extrema-and-first-derivative-test",
+    "prompt": "Let $f(x) = x^4 - 4x^3$.\n\n**(a)** Find $f'(x)$ and all critical points.\n\n**(b)** Use the First Derivative Test to classify each critical point as a local maximum, local minimum, or neither.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly finds f'(x) = 4x^3-12x^2 = 4x^2(x-3)" },
+      { "id": "r2", "points": 1, "description": "Correctly identifies critical points x=0 and x=3" },
+      { "id": "r3", "points": 1, "description": "Correctly determines that f' does not change sign at x=0 (negative on both sides), so x=0 is neither a max nor min" },
+      { "id": "r4", "points": 1, "description": "Correctly determines that f' changes from negative to positive at x=3, so x=3 is a local minimum" }
+    ],
+    "sampleResponse": "(a) f'(x) = 4x^3 - 12x^2 = 4x^2(x-3). Setting equal to 0: x=0 or x=3.\n(b) Testing signs: for x<0 (e.g. x=-1), f'(-1) = 4(1)(-4) = -16 < 0. For 0<x<3 (e.g. x=1), f'(1) = 4(1)(-2) = -8 < 0. For x>3 (e.g. x=4), f'(4) = 4(16)(1) = 64 > 0.\nAt x=0, f' is negative on both sides (no sign change), so x=0 is neither a local max nor min.\nAt x=3, f' changes from negative to positive, so x=3 is a local minimum.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-frq-3",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "mean-value-theorem",
+    "prompt": "Let $f(x) = x^3 - 2x$ on the interval $[0, 2]$.\n\n**(a)** Verify that f satisfies the hypotheses of the Mean Value Theorem on [0,2].\n\n**(b)** Find the exact value(s) of c guaranteed by the MVT.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "States that f is a polynomial, hence continuous on [0,2] and differentiable on (0,2), satisfying the MVT's hypotheses" },
+      { "id": "r2", "points": 1, "description": "Correctly computes the average rate of change as 2" },
+      { "id": "r3", "points": 1, "description": "Correctly sets up 3c^2-2=2 and solves to get c^2=4/3" },
+      { "id": "r4", "points": 1, "description": "Correctly identifies c = 2\\sqrt{3}/3 (rejecting the negative root since c must lie in (0,2))" }
+    ],
+    "sampleResponse": "(a) f(x) = x^3-2x is a polynomial, so it is continuous on [0,2] and differentiable on (0,2), satisfying the MVT's hypotheses.\n(b) Average rate of change = [f(2)-f(0)]/(2-0) = [(8-4)-0]/2 = 4/2 = 2. Setting f'(c) = 2: 3c^2-2=2, so 3c^2=4, c^2=4/3, c = ±2√3/3. Since c must be in (0,2), c = 2√3/3.",
+    "reviewed": false
+  }
+]

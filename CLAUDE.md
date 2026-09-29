@@ -379,10 +379,10 @@ each with a nested `topics` array) match `CourseSchema`/`UnitSchema` in
 `src/lib/content/schema.ts` — see that file for the exact shape, including
 `examFormat` (why this must stay data, not hardcoded, is explained below).
 
-**Sample bank seeded so far**: AP CSA (10 units, 300 MCQs + 30 FRQs) and
-AP World History: Modern (9 units, 270 MCQs + 35 FRQs) are fully authored —
-see the Milestone 7 section below. AP Calculus AB and AP Physics 1 have no
-content yet.
+**Sample bank seeded so far**: AP CSA (10 units, 300 MCQs + 30 FRQs), AP World
+History: Modern (9 units, 270 MCQs + 35 FRQs), and AP Calculus AB (8 units,
+240 MCQs + 24 FRQs) are fully authored — see the Milestone 7 section below.
+AP Physics 1 has no content yet.
 
 ### Content generation at scale (Milestone 7, in progress)
 
@@ -436,8 +436,35 @@ selection logic — an app-engine change, out of scope for a content-only
 milestone. Flagging it here rather than either silently building it
 unasked or silently shipping content that won't exercise correctly.
 
-Not yet started: AP Calculus AB, AP Physics 1 — each is its own pass
-through this same process, one at a time, pausing for review after each.
+**AP Calculus AB — done.** All 8 units of the current (pre-May-2027) CED
+(Limits and Continuity → Differentiation: Definition and Fundamental
+Properties → Differentiation: Composite, Implicit, and Inverse Functions →
+Contextual Applications of Differentiation → Analytical Applications of
+Differentiation → Integration and Accumulation of Change → Differential
+Equations → Applications of Integration), each with 30 MCQs + 3 FRQs (240
+MCQs + 24 FRQs total), validated and seeded. `FRQPrompt`'s generic shape
+needed no changes here — unlike AP World History, Calc AB's FRQs are
+uniformly "FRQ" on the real exam, so the CSA-era model fit directly.
+Correctness approach (this is the course the spec's "extra scrutiny for
+numerical correctness... verified programmatically where possible" is
+squarely aimed at): every non-trivial computed answer — derivatives,
+antiderivatives/definite integrals, limits, and differential-equation
+solutions — was checked with `sympy` (`pip3 install --user sympy`; not a
+project dependency, just a local verification aid, so nothing was added to
+`package.json`) before being written into the question/choice/explanation
+text, rather than trusting hand arithmetic. This was adopted as a direct,
+lower-overhead substitute for a dedicated numeric-verification script that
+had been separately discussed but never built — sympy-checking each answer
+inline satisfies the same "verified programmatically" requirement without
+that extra tooling investment. No changes needed to `examFormat` in
+`content/ap-calc/course.json` beyond what was already set from the verified
+course-info table (42 MCQ + 6 FRQ, 3h10m) — note the table's flagged
+**May 2027 format change** isn't yet published in enough detail to encode,
+so this remains the current-format data until College Board publishes specifics.
+
+Not yet started: AP Physics 1 — its own pass through this same process,
+likely with its own scope discussion first (numerical/units handling, akin
+to how AP World History needed one for SAQ/DBQ/LEQ item types).
 
 **Review workflow** (the spec's "simple admin/review view" requirement):
 `/admin/review` (`src/app/admin/review/`), gated by `src/lib/admin/session.ts`'s
@@ -537,9 +564,11 @@ in app logic — updating them should be a data edit.
       validated. **AP World History: Modern done**: 9/9 units, 270 MCQs +
       27 SAQs, plus a separate course-level pool of 4 DBQs + 4 LEQs (35 FRQ-
       type items total), seeded and validated — see the known exam-engine
-      gap (no SAQ/DBQ/LEQ type field on `FRQPrompt`) noted above. Admin
-      review UI built (`/admin/review`), now covering both courses. Still
-      to do: AP Calculus AB, AP Physics 1 (each its own pass, same process).
+      gap (no SAQ/DBQ/LEQ type field on `FRQPrompt`) noted above. **AP
+      Calculus AB done**: 8/8 units, 240 MCQs + 24 FRQs, seeded and
+      validated, every computed answer sympy-verified (see above). Admin
+      review UI built (`/admin/review`), now covering all three courses.
+      Still to do: AP Physics 1 (its own pass, same process).
 - [ ] **Milestone 8 — Polish and launch prep.** Accessibility, mobile testing,
       performance, error handling, deployment, README.
 

@@ -1,0 +1,13 @@
+{
+  "slug": "unit-3-differentiation-composite-implicit-inverse",
+  "order": 3,
+  "name": "Differentiation: Composite, Implicit, and Inverse Functions",
+  "weightingMin": 9,
+  "weightingMax": 13,
+  "topics": [
+    { "slug": "chain-rule", "order": 1, "name": "The Chain Rule" },
+    { "slug": "implicit-differentiation", "order": 2, "name": "Implicit Differentiation" },
+    { "slug": "derivatives-of-inverse-functions", "order": 3, "name": "Derivatives of Inverse Functions" },
+    { "slug": "higher-order-derivatives", "order": 4, "name": "Higher-Order Derivatives" }
+  ]
+}

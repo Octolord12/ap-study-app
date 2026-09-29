@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-calc-u5-mcq-1",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "mean-value-theorem",
+    "difficulty": "easy",
+    "stem": "What does the Mean Value Theorem (MVT) state for a function f continuous on [a,b] and differentiable on (a,b)?",
+    "choices": [
+      { "label": "A", "text": "There exists at least one c in (a,b) such that f'(c) = [f(b)-f(a)]/(b-a)", "isCorrect": true, "explanation": "This is the precise statement of the Mean Value Theorem." },
+      { "label": "B", "text": "f'(x) = 0 for all x in (a,b)", "isCorrect": false, "explanation": "The MVT doesn't require the derivative to be zero everywhere; it guarantees the derivative equals the average rate of change at some specific point." },
+      { "label": "C", "text": "f(a) must equal f(b)", "isCorrect": false, "explanation": "The MVT doesn't require f(a) to equal f(b) (that additional condition describes Rolle's Theorem, a special case)." },
+      { "label": "D", "text": "f has no maximum on [a,b]", "isCorrect": false, "explanation": "This doesn't relate to the MVT's actual statement, which is about matching instantaneous and average rates of change." }
+    ],
+    "explanation": "The MVT guarantees some c in (a,b) where the instantaneous rate of change equals the average rate of change over [a,b].",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-2",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "mean-value-theorem",
+    "difficulty": "medium",
+    "stem": "What is required for the MVT to apply to a function f on [a,b]?",
+    "choices": [
+      { "label": "A", "text": "f must be continuous on [a,b] and differentiable on (a,b)", "isCorrect": true, "explanation": "These are the precise conditions required for the MVT to apply." },
+      { "label": "B", "text": "f must be a polynomial function only", "isCorrect": false, "explanation": "The MVT applies to any function meeting the continuity/differentiability conditions, not exclusively polynomials." },
+      { "label": "C", "text": "f(a) must equal f(b)", "isCorrect": false, "explanation": "f(a) equaling f(b) is not required for the general MVT (that specific case is Rolle's Theorem)." },
+      { "label": "D", "text": "f must be increasing throughout [a,b]", "isCorrect": false, "explanation": "The MVT doesn't require f to be increasing; it applies regardless of whether f is increasing, decreasing, or neither." }
+    ],
+    "explanation": "The MVT requires f to be continuous on [a,b] and differentiable on (a,b).",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-3",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "mean-value-theorem",
+    "difficulty": "medium",
+    "stem": "For $f(x) = x^2$ on $[0, 4]$, find the value(s) of c guaranteed by the MVT.",
+    "choices": [
+      { "label": "A", "text": "c=2", "isCorrect": true, "explanation": "Average rate of change = (16-0)/4 = 4. f'(x)=2x, so 2c=4 gives c=2." },
+      { "label": "B", "text": "c=4", "isCorrect": false, "explanation": "This is just the upper bound of the interval, not the correctly solved value of c." },
+      { "label": "C", "text": "c=0", "isCorrect": false, "explanation": "This is just the lower bound of the interval, not the correctly solved value of c." },
+      { "label": "D", "text": "c=8", "isCorrect": false, "explanation": "This doesn't correctly solve 2c=4 for c." }
+    ],
+    "explanation": "The average rate of change is 4, and setting $f'(c)=2c=4$ gives $c=2$.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-4",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "mean-value-theorem",
+    "difficulty": "hard",
+    "stem": "Rolle's Theorem is a special case of the MVT. What ADDITIONAL condition does Rolle's Theorem require, beyond the MVT's continuity/differentiability requirements?",
+    "choices": [
+      { "label": "A", "text": "f(a) = f(b)", "isCorrect": true, "explanation": "Rolle's Theorem adds the condition that the endpoint values are equal, which guarantees a point where f'(c)=0." },
+      { "label": "B", "text": "f must be a constant function", "isCorrect": false, "explanation": "Rolle's Theorem doesn't require f to be a CONSTANT function throughout; it only requires the endpoint values f(a) and f(b) to be equal." },
+      { "label": "C", "text": "f must have no derivative anywhere", "isCorrect": false, "explanation": "Rolle's Theorem, like the MVT, actually REQUIRES f to be differentiable on (a,b)." },
+      { "label": "D", "text": "a must equal b", "isCorrect": false, "explanation": "a and b are meant to be distinct endpoints of an interval; if a=b, there would be no meaningful interval at all." }
+    ],
+    "explanation": "Rolle's Theorem requires the additional condition that f(a) = f(b).",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-5",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "mean-value-theorem",
+    "difficulty": "medium",
+    "stem": "If f(a) = f(b) for a function satisfying Rolle's Theorem's conditions, what does the theorem guarantee?",
+    "choices": [
+      { "label": "A", "text": "There exists at least one c in (a,b) where f'(c) = 0", "isCorrect": true, "explanation": "Rolle's Theorem guarantees at least one point in (a,b) where the derivative is zero." },
+      { "label": "B", "text": "f'(x) = 0 for every x in (a,b)", "isCorrect": false, "explanation": "Rolle's Theorem guarantees the existence of AT LEAST ONE such point, not that the derivative is zero EVERYWHERE." },
+      { "label": "C", "text": "f(x) = 0 for every x in [a,b]", "isCorrect": false, "explanation": "Rolle's Theorem says nothing about the function's VALUE being zero; it's about the derivative being zero at some point." },
+      { "label": "D", "text": "There is no critical point in (a,b)", "isCorrect": false, "explanation": "This is the opposite of Rolle's Theorem's actual guarantee, which specifically ensures a critical point DOES exist." }
+    ],
+    "explanation": "Rolle's Theorem guarantees at least one point c in (a,b) where f'(c) = 0.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-6",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "mean-value-theorem",
+    "difficulty": "medium",
+    "stem": "What is a practical, real-world interpretation of the Mean Value Theorem, in the context of a car's motion?",
+    "choices": [
+      { "label": "A", "text": "At some moment during a trip, the car's instantaneous speed must equal its average speed for the entire trip", "isCorrect": true, "explanation": "This is the classic real-world interpretation of the MVT applied to motion." },
+      { "label": "B", "text": "The car must travel at a constant speed for the entire trip", "isCorrect": false, "explanation": "The MVT doesn't require CONSTANT speed throughout; it guarantees the average speed is matched at some particular instant." },
+      { "label": "C", "text": "The car's average speed must always be zero", "isCorrect": false, "explanation": "There's no reason to assume the average speed is zero in this generic interpretation." },
+      { "label": "D", "text": "The MVT has no real-world applications", "isCorrect": false, "explanation": "The MVT has this very practical, intuitive real-world interpretation regarding matching instantaneous and average rates in motion." }
+    ],
+    "explanation": "The MVT implies that at some moment, a car's instantaneous speed must equal its average speed for the trip.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-7",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "extrema-and-first-derivative-test",
+    "difficulty": "easy",
+    "stem": "What is a \"critical point\" of a function f?",
+    "choices": [
+      { "label": "A", "text": "A point where f'(x) = 0 or f'(x) is undefined (within f's domain)", "isCorrect": true, "explanation": "This is the precise definition of a critical point." },
+      { "label": "B", "text": "Any point where f(x) = 0", "isCorrect": false, "explanation": "f(x)=0 describes a ROOT/zero of the function, a different concept from a critical point." },
+      { "label": "C", "text": "The highest point on the entire graph", "isCorrect": false, "explanation": "A critical point isn't necessarily the highest point on the whole graph; it's a candidate location for a local extremum." },
+      { "label": "D", "text": "A point where f is discontinuous", "isCorrect": false, "explanation": "Critical points are generally about differentiability within the function's domain, not about points of discontinuity." }
+    ],
+    "explanation": "A critical point is where f'(x) = 0 or f'(x) is undefined.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/extrema-and-first-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-8",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "extrema-and-first-derivative-test",
+    "difficulty": "medium",
+    "stem": "According to the First Derivative Test, if f'(x) changes from positive to negative at a critical point x=c, what does this indicate?",
+    "choices": [
+      { "label": "A", "text": "f has a local maximum at x=c", "isCorrect": true, "explanation": "When f' goes from positive (increasing) to negative (decreasing), the function has a local maximum at that point." },
+      { "label": "B", "text": "f has a local minimum at x=c", "isCorrect": false, "explanation": "This describes the OPPOSITE scenario; a local minimum occurs when f' changes from NEGATIVE to POSITIVE." },
+      { "label": "C", "text": "f has no extremum at x=c", "isCorrect": false, "explanation": "A sign change in f' at a critical point specifically DOES indicate a local extremum exists there." },
+      { "label": "D", "text": "f is not differentiable at x=c", "isCorrect": false, "explanation": "The First Derivative Test's sign-change analysis presumes f' exists on either side of c." }
+    ],
+    "explanation": "When f' changes from positive to negative at x=c, f has a local maximum there.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/extrema-and-first-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-9",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "extrema-and-first-derivative-test",
+    "difficulty": "medium",
+    "stem": "Find the critical points of $f(x) = x^3 - 3x$.",
+    "choices": [
+      { "label": "A", "text": "x=1 and x=-1", "isCorrect": true, "explanation": "f'(x)=3x^2-3=3(x-1)(x+1)=0 gives x=1 or x=-1." },
+      { "label": "B", "text": "x=0 only", "isCorrect": false, "explanation": "x=0 is not a solution to 3(x-1)(x+1)=0." },
+      { "label": "C", "text": "x=3 only", "isCorrect": false, "explanation": "x=3 is not a solution to this equation." },
+      { "label": "D", "text": "x=1 only", "isCorrect": false, "explanation": "While x=1 is indeed one critical point, x=-1 is also a valid critical point that's been left out." }
+    ],
+    "explanation": "$f'(x) = 3(x-1)(x+1) = 0$ gives critical points $x=1$ and $x=-1$.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/extrema-and-first-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-10",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "extrema-and-first-derivative-test",
+    "difficulty": "hard",
+    "stem": "For $f(x) = x^3 - 3x$, use the First Derivative Test to classify the critical points x=1 and x=-1.",
+    "choices": [
+      { "label": "A", "text": "x=-1 is a local maximum, and x=1 is a local minimum", "isCorrect": true, "explanation": "f'(x)=3(x-1)(x+1) is positive for x<-1, negative for -1<x<1, and positive for x>1, so x=-1 is a max and x=1 is a min." },
+      { "label": "B", "text": "x=-1 is a local minimum, and x=1 is a local maximum", "isCorrect": false, "explanation": "This reverses the correct classification based on the sign analysis of f'(x)." },
+      { "label": "C", "text": "Both are local maxima", "isCorrect": false, "explanation": "Only ONE of these points (x=-1) is a local maximum; the other (x=1) is a local minimum." },
+      { "label": "D", "text": "Both are local minima", "isCorrect": false, "explanation": "Only ONE of these points (x=1) is a local minimum; the other (x=-1) is a local maximum." }
+    ],
+    "explanation": "Testing signs of f'(x) around the critical points shows x=-1 is a local maximum and x=1 is a local minimum.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/extrema-and-first-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-11",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "extrema-and-first-derivative-test",
+    "difficulty": "medium",
+    "stem": "What is the difference between a \"local\" extremum and a \"global\" (absolute) extremum?",
+    "choices": [
+      { "label": "A", "text": "A local extremum is the highest/lowest value in some neighborhood of that point, while a global extremum is the highest/lowest value over the entire domain being considered", "isCorrect": true, "explanation": "This correctly distinguishes the two: local extrema are about nearby behavior, global extrema are about the entire domain." },
+      { "label": "B", "text": "They are always exactly the same thing with no distinction", "isCorrect": false, "explanation": "These are NOT always exactly the same; a local extremum might not be the highest/lowest value considering the entire domain." },
+      { "label": "C", "text": "A local extremum only applies to linear functions", "isCorrect": false, "explanation": "The concept of a local extremum applies broadly to many types of functions, not exclusively linear ones." },
+      { "label": "D", "text": "A global extremum can never also be a local extremum", "isCorrect": false, "explanation": "A global extremum, in fact, generally also qualifies AS a local extremum at that same point." }
+    ],
+    "explanation": "A local extremum is the highest/lowest value nearby, while a global extremum is the highest/lowest over the entire domain.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/extrema-and-first-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-12",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "extrema-and-first-derivative-test",
+    "difficulty": "medium",
+    "stem": "On a closed interval [a,b], where should you check for the absolute (global) maximum and minimum of a continuous function f?",
+    "choices": [
+      { "label": "A", "text": "At the critical points within (a,b) AND at the endpoints a and b", "isCorrect": true, "explanation": "This is the standard Extreme Value Theorem procedure: check both critical points and endpoints." },
+      { "label": "B", "text": "Only at the critical points, never at the endpoints", "isCorrect": false, "explanation": "Endpoints must ALSO be checked, since the absolute extremum on a closed interval could occur at an endpoint." },
+      { "label": "C", "text": "Only at the endpoints, never at the critical points", "isCorrect": false, "explanation": "Critical points within the interval must ALSO be checked, since the absolute extremum could occur at an interior point." },
+      { "label": "D", "text": "Nowhere in particular; absolute extrema cannot be found this way", "isCorrect": false, "explanation": "This is precisely the correct, standard method for finding absolute extrema on a closed interval." }
+    ],
+    "explanation": "Absolute extrema on a closed interval are found by checking both critical points and the endpoints.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/extrema-and-first-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-13",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "concavity-and-second-derivative-test",
+    "difficulty": "easy",
+    "stem": "What does it mean for a function's graph to be \"concave up\" on an interval?",
+    "choices": [
+      { "label": "A", "text": "The graph curves upward, like a cup (f''(x) > 0 on that interval)", "isCorrect": true, "explanation": "Concave up means the graph curves upward, corresponding to a positive second derivative." },
+      { "label": "B", "text": "The graph is a straight line", "isCorrect": false, "explanation": "A straight line has ZERO concavity (f''(x)=0), a distinct, \"neutral\" case from concave up." },
+      { "label": "C", "text": "The graph curves downward, like a frown", "isCorrect": false, "explanation": "This describes CONCAVE DOWN, the opposite of concave up." },
+      { "label": "D", "text": "The function is always positive on that interval", "isCorrect": false, "explanation": "Concavity is about the SHAPE of the graph, not about whether the function's values are positive or negative." }
+    ],
+    "explanation": "Concave up means the graph curves upward, corresponding to $f''(x) > 0$.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-14",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "concavity-and-second-derivative-test",
+    "difficulty": "medium",
+    "stem": "According to the Second Derivative Test, if f'(c) = 0 and f''(c) > 0, what can be concluded about x=c?",
+    "choices": [
+      { "label": "A", "text": "f has a local minimum at x=c", "isCorrect": true, "explanation": "A positive second derivative at a critical point indicates the graph is concave up there, corresponding to a local minimum." },
+      { "label": "B", "text": "f has a local maximum at x=c", "isCorrect": false, "explanation": "A POSITIVE second derivative indicates a local MINIMUM, not a maximum." },
+      { "label": "C", "text": "f has no extremum at x=c", "isCorrect": false, "explanation": "This combination (f'(c)=0 and f''(c)>0) DOES specifically indicate the existence of a local extremum (a minimum)." },
+      { "label": "D", "text": "The test is inconclusive", "isCorrect": false, "explanation": "The Second Derivative Test IS conclusive in this specific case; it's only inconclusive when f''(c)=0." }
+    ],
+    "explanation": "f'(c)=0 and f''(c)>0 together indicate a local minimum at x=c.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-15",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "concavity-and-second-derivative-test",
+    "difficulty": "medium",
+    "stem": "According to the Second Derivative Test, what happens if f'(c) = 0 but f''(c) = 0 as well?",
+    "choices": [
+      { "label": "A", "text": "The test is inconclusive; another method (like the First Derivative Test) must be used", "isCorrect": true, "explanation": "When f''(c)=0, the Second Derivative Test cannot determine whether c is a max, min, or neither." },
+      { "label": "B", "text": "f definitely has a local maximum at x=c", "isCorrect": false, "explanation": "f''(c)=0 does NOT definitively indicate a maximum; the test simply fails to give a conclusive answer." },
+      { "label": "C", "text": "f definitely has a local minimum at x=c", "isCorrect": false, "explanation": "f''(c)=0 does NOT definitively indicate a minimum either." },
+      { "label": "D", "text": "f is definitely not differentiable at x=c", "isCorrect": false, "explanation": "f''(c)=0 actually confirms that f IS twice differentiable at c, the opposite of non-differentiability." }
+    ],
+    "explanation": "When f''(c)=0, the Second Derivative Test is inconclusive, and another method must be used.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-16",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "concavity-and-second-derivative-test",
+    "difficulty": "hard",
+    "stem": "Find the intervals of concavity for $f(x) = x^3 - 6x^2$.",
+    "choices": [
+      { "label": "A", "text": "Concave down on $(-\\infty,2)$, concave up on $(2,\\infty)$", "isCorrect": true, "explanation": "f''(x)=6x-12=0 at x=2; f'' is negative for x<2 and positive for x>2." },
+      { "label": "B", "text": "Concave up on $(-\\infty,2)$, concave down on $(2,\\infty)$", "isCorrect": false, "explanation": "This reverses the correct concavity classification based on the sign of f''(x)=6x-12." },
+      { "label": "C", "text": "Concave up everywhere", "isCorrect": false, "explanation": "The function is NOT concave up everywhere; it changes concavity at x=2." },
+      { "label": "D", "text": "Concave down everywhere", "isCorrect": false, "explanation": "The function is NOT concave down everywhere; it changes concavity at x=2." }
+    ],
+    "explanation": "$f''(x)=6x-12$ is negative for x<2 (concave down) and positive for x>2 (concave up).",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-17",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "concavity-and-second-derivative-test",
+    "difficulty": "medium",
+    "stem": "What is an \"inflection point\" of a function?",
+    "choices": [
+      { "label": "A", "text": "A point where the concavity of the function changes (from concave up to concave down, or vice versa)", "isCorrect": true, "explanation": "This is the precise definition of an inflection point." },
+      { "label": "B", "text": "A point where the function equals zero", "isCorrect": false, "explanation": "A function equaling zero describes a ROOT, a different concept from an inflection point." },
+      { "label": "C", "text": "A point where the function is undefined", "isCorrect": false, "explanation": "An inflection point is generally a point where the function IS defined and differentiable." },
+      { "label": "D", "text": "The highest point on the entire graph", "isCorrect": false, "explanation": "An inflection point isn't necessarily the highest point on the graph; it's specifically about a change in curvature." }
+    ],
+    "explanation": "An inflection point is where the concavity of the function changes.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-18",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "concavity-and-second-derivative-test",
+    "difficulty": "medium",
+    "stem": "For $f(x) = x^3 - 6x^2$ (from a previous problem), what is the x-coordinate of the inflection point?",
+    "choices": [
+      { "label": "A", "text": "x=2", "isCorrect": true, "explanation": "f''(x)=6x-12=0 at x=2, and concavity changes there from concave down to concave up." },
+      { "label": "B", "text": "x=0", "isCorrect": false, "explanation": "x=0 is not where f''(x)=0 for this function." },
+      { "label": "C", "text": "x=6", "isCorrect": false, "explanation": "x=6 is not where f''(x)=0 for this function." },
+      { "label": "D", "text": "x=-2", "isCorrect": false, "explanation": "x=-2 is not where f''(x)=0 for this function." }
+    ],
+    "explanation": "$f''(x)=6x-12=0$ at $x=2$, which is where concavity changes.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-19",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "optimization",
+    "difficulty": "easy",
+    "stem": "What is the general goal of an \"optimization\" problem in calculus?",
+    "choices": [
+      { "label": "A", "text": "To find the maximum or minimum value of some quantity, often subject to a constraint", "isCorrect": true, "explanation": "Optimization problems seek the maximum or minimum value of some quantity, typically within given constraints." },
+      { "label": "B", "text": "To find the derivative of a function with no further purpose", "isCorrect": false, "explanation": "While derivatives are often a TOOL used in optimization, the actual GOAL is to find a maximum or minimum value." },
+      { "label": "C", "text": "To find the limit of a function as x approaches infinity", "isCorrect": false, "explanation": "This describes a different type of calculus problem (limits at infinity), unrelated to optimization's actual goal." },
+      { "label": "D", "text": "To determine whether a function is continuous", "isCorrect": false, "explanation": "Continuity is a separate concept; optimization problems focus on finding extrema." }
+    ],
+    "explanation": "Optimization problems seek the maximum or minimum value of a quantity, often subject to a constraint.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/optimization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-20",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "optimization",
+    "difficulty": "medium",
+    "stem": "In a typical optimization word problem, what is generally the first key step?",
+    "choices": [
+      { "label": "A", "text": "Identify the quantity to be maximized or minimized, and express it as a function of one variable (using any given constraints)", "isCorrect": true, "explanation": "Setting up the function to be optimized, using given constraints, is the essential first step." },
+      { "label": "B", "text": "Immediately take the second derivative before doing anything else", "isCorrect": false, "explanation": "Jumping straight to a second derivative without first setting up the function to optimize skips essential steps." },
+      { "label": "C", "text": "Ignore any given constraints entirely", "isCorrect": false, "explanation": "Constraints are CRUCIAL for correctly setting up an optimization problem's equation." },
+      { "label": "D", "text": "Guess a reasonable-sounding final answer", "isCorrect": false, "explanation": "Optimization problems require careful, systematic mathematical work, not guessing." }
+    ],
+    "explanation": "The first step is identifying the quantity to optimize and expressing it as a function of one variable using constraints.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/optimization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-21",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "optimization",
+    "difficulty": "medium",
+    "stem": "A farmer wants to enclose a rectangular field with 100 meters of fencing, maximizing the area. If x is one side's length, express the area A in terms of x alone.",
+    "choices": [
+      { "label": "A", "text": "$A = 50x - x^2$", "isCorrect": true, "explanation": "From 2x+2y=100, y=50-x, so A=xy=x(50-x)=50x-x^2." },
+      { "label": "B", "text": "$A = x^2 + 50x$", "isCorrect": false, "explanation": "This incorrectly uses addition instead of subtraction for the x^2 term." },
+      { "label": "C", "text": "$A = 100x - x^2$", "isCorrect": false, "explanation": "This incorrectly uses 100 (the full perimeter) rather than 50 (half the perimeter) as the coefficient." },
+      { "label": "D", "text": "$A = 25x - x^2$", "isCorrect": false, "explanation": "This incorrectly uses 25 instead of the correctly derived coefficient 50 from the perimeter constraint." }
+    ],
+    "explanation": "From the perimeter constraint, $y=50-x$, so $A=x(50-x)=50x-x^2$.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/optimization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-22",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "optimization",
+    "difficulty": "hard",
+    "stem": "Continuing the farmer problem ($A = 50x - x^2$), find the value of x that maximizes the area.",
+    "choices": [
+      { "label": "A", "text": "x=25", "isCorrect": true, "explanation": "A'(x)=50-2x. Setting equal to 0: x=25." },
+      { "label": "B", "text": "x=50", "isCorrect": false, "explanation": "This is the coefficient from the area formula, not the correctly solved critical point." },
+      { "label": "C", "text": "x=0", "isCorrect": false, "explanation": "x=0 would give zero area (a degenerate rectangle), not the maximum." },
+      { "label": "D", "text": "x=100", "isCorrect": false, "explanation": "x=100 would exceed the constraint entirely, not the maximum-area solution." }
+    ],
+    "explanation": "$A'(x)=50-2x=0$ gives $x=25$, which maximizes the area.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/optimization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-23",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "optimization",
+    "difficulty": "medium",
+    "stem": "Why is it important to verify that a critical point found in an optimization problem actually corresponds to a maximum (or minimum, as appropriate), rather than just assuming it does?",
+    "choices": [
+      { "label": "A", "text": "A critical point could be a maximum, a minimum, or neither, so verification via the First or Second Derivative Test is necessary", "isCorrect": true, "explanation": "Critical points require verification since they could represent a maximum, minimum, or neither." },
+      { "label": "B", "text": "All critical points are automatically maximums by definition", "isCorrect": false, "explanation": "Critical points are NOT automatically maximums; they could just as easily be minimums or neither." },
+      { "label": "C", "text": "Verification is never actually necessary in optimization problems", "isCorrect": false, "explanation": "Verification IS an important, standard step in properly solving optimization problems." },
+      { "label": "D", "text": "Critical points can never correspond to minimums", "isCorrect": false, "explanation": "Critical points absolutely CAN correspond to minimums; this claim incorrectly rules out a very common, valid case." }
+    ],
+    "explanation": "Critical points must be verified since they could be a maximum, minimum, or neither.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/optimization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-24",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "curve-sketching",
+    "difficulty": "easy",
+    "stem": "What key pieces of information from calculus (derivatives) are typically used together to sketch an accurate graph of a function?",
+    "choices": [
+      { "label": "A", "text": "Critical points, intervals of increase/decrease, concavity, and inflection points", "isCorrect": true, "explanation": "These calculus-derived pieces of information together allow for an accurate, systematic curve sketch." },
+      { "label": "B", "text": "Only the function's y-intercept", "isCorrect": false, "explanation": "The y-intercept alone provides very limited information; a complete sketch requires more thorough calculus-based analysis." },
+      { "label": "C", "text": "Only the function's domain, with no other calculus information", "isCorrect": false, "explanation": "Domain alone is insufficient; a full curve-sketching approach draws on additional derivative-based information." },
+      { "label": "D", "text": "Random guessing of points on the graph", "isCorrect": false, "explanation": "Proper curve sketching is a systematic, calculus-based process, not random guessing." }
+    ],
+    "explanation": "Critical points, intervals of increase/decrease, concavity, and inflection points together enable accurate curve sketching.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-25",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "curve-sketching",
+    "difficulty": "medium",
+    "stem": "If f'(x) > 0 on an interval, what does this indicate about the graph of f on that interval?",
+    "choices": [
+      { "label": "A", "text": "f is increasing on that interval", "isCorrect": true, "explanation": "A positive first derivative indicates the function is increasing on that interval." },
+      { "label": "B", "text": "f is decreasing on that interval", "isCorrect": false, "explanation": "A POSITIVE first derivative indicates the function is INCREASING, not decreasing." },
+      { "label": "C", "text": "f is concave up on that interval", "isCorrect": false, "explanation": "Concavity is determined by the SECOND derivative's sign, not directly by the first derivative's sign." },
+      { "label": "D", "text": "f has a local maximum on that interval", "isCorrect": false, "explanation": "f'(x) > 0 throughout an interval means f is consistently increasing there; a local maximum would require f' to change sign." }
+    ],
+    "explanation": "A positive first derivative indicates f is increasing on that interval.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-26",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "curve-sketching",
+    "difficulty": "medium",
+    "stem": "If f''(x) < 0 on an interval, what does this indicate about the graph of f on that interval?",
+    "choices": [
+      { "label": "A", "text": "f is concave down on that interval", "isCorrect": true, "explanation": "A negative second derivative indicates the function is concave down on that interval." },
+      { "label": "B", "text": "f is concave up on that interval", "isCorrect": false, "explanation": "A NEGATIVE second derivative indicates the function is concave DOWN, not concave up." },
+      { "label": "C", "text": "f is increasing on that interval", "isCorrect": false, "explanation": "Whether f is increasing is determined by the FIRST derivative's sign, not directly by the second derivative's sign." },
+      { "label": "D", "text": "f is decreasing on that interval", "isCorrect": false, "explanation": "Similarly, whether f is decreasing relates to the first derivative, not the second derivative directly." }
+    ],
+    "explanation": "A negative second derivative indicates f is concave down on that interval.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-27",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "curve-sketching",
+    "difficulty": "hard",
+    "stem": "For $f(x) = x^3 - 3x^2$, summarize the full curve-sketching analysis: critical points, intervals of increase/decrease, and concavity.",
+    "choices": [
+      { "label": "A", "text": "Local max at x=0, local min at x=2, concave down for x<1, concave up for x>1, inflection at x=1", "isCorrect": true, "explanation": "f'(x)=3x(x-2) gives critical points at x=0,2 (max, min respectively), and f''(x)=6x-6 shows concavity changes at x=1." },
+      { "label": "B", "text": "Local min at x=0, local max at x=2, concave up for x<1, concave down for x>1", "isCorrect": false, "explanation": "This reverses BOTH the local extrema classification AND the concavity classification compared to the correct analysis." },
+      { "label": "C", "text": "No local extrema, concave up everywhere", "isCorrect": false, "explanation": "This function DOES have local extrema (at x=0 and x=2) and does NOT have constant concavity." },
+      { "label": "D", "text": "Local max at x=1, local min at x=2, no inflection points", "isCorrect": false, "explanation": "This incorrectly places critical points; x=1 is actually the inflection point, not a local max, and there IS an inflection point." }
+    ],
+    "explanation": "f has a local max at x=0, local min at x=2, and an inflection point at x=1 where concavity changes from down to up.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-28",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "curve-sketching",
+    "difficulty": "medium",
+    "stem": "Why is it useful to combine information from both the first AND second derivatives when sketching a curve, rather than using just one?",
+    "choices": [
+      { "label": "A", "text": "The first derivative reveals where the function is increasing/decreasing and locates extrema, while the second derivative reveals concavity and inflection points -- together they give a much fuller picture", "isCorrect": true, "explanation": "Each derivative provides distinct, complementary information essential for an accurate sketch." },
+      { "label": "B", "text": "The first and second derivatives always give exactly the same information", "isCorrect": false, "explanation": "These derivatives provide DIFFERENT types of information (increase/decrease vs. concavity), not the same information." },
+      { "label": "C", "text": "Only the second derivative is ever useful; the first derivative can be ignored", "isCorrect": false, "explanation": "The first derivative is essential for identifying increasing/decreasing behavior and extrema, information the second derivative alone doesn't provide." },
+      { "label": "D", "text": "Combining them serves no additional purpose beyond using just one", "isCorrect": false, "explanation": "Combining both derivatives provides meaningfully more complete information than using just one alone." }
+    ],
+    "explanation": "The first derivative reveals increasing/decreasing behavior and extrema, while the second reveals concavity and inflection points.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-29",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "curve-sketching",
+    "difficulty": "medium",
+    "stem": "What does it mean if a function has a critical point where f'(x) does NOT change sign on either side (e.g., f'(x) > 0 both before and after the critical point)?",
+    "choices": [
+      { "label": "A", "text": "The critical point is neither a local maximum nor a local minimum", "isCorrect": true, "explanation": "If the sign of f' doesn't change, the function continues increasing (or decreasing) through that point, so it's not a local extremum." },
+      { "label": "B", "text": "The critical point must be a local maximum", "isCorrect": false, "explanation": "A local maximum requires f' to change from positive to negative; if the sign never changes, this isn't a maximum." },
+      { "label": "C", "text": "The critical point must be a local minimum", "isCorrect": false, "explanation": "A local minimum requires f' to change from negative to positive; if the sign never changes, this isn't a minimum." },
+      { "label": "D", "text": "This situation can never actually occur", "isCorrect": false, "explanation": "This situation can and does occur, for example at a critical point of a function like x^3 at x=0." }
+    ],
+    "explanation": "If f' doesn't change sign at a critical point, that point is neither a local maximum nor minimum.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u5-mcq-30",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "curve-sketching",
+    "difficulty": "medium",
+    "stem": "For $f(x) = x^3$, what happens at the critical point $x=0$?",
+    "choices": [
+      { "label": "A", "text": "f'(x) = 3x^2 ≥ 0 everywhere, never changing sign, so x=0 is neither a local max nor min (it's a point of inflection with a horizontal tangent)", "isCorrect": true, "explanation": "f'(x)=3x^2 is non-negative everywhere and only zero at x=0, so the function is always increasing (or momentarily flat), making x=0 neither a max nor min." },
+      { "label": "B", "text": "x=0 is a local maximum", "isCorrect": false, "explanation": "Since f'(x) doesn't change from positive to negative at x=0, this is not a local maximum." },
+      { "label": "C", "text": "x=0 is a local minimum", "isCorrect": false, "explanation": "Since f'(x) doesn't change from negative to positive at x=0, this is not a local minimum." },
+      { "label": "D", "text": "f is not differentiable at x=0", "isCorrect": false, "explanation": "f(x)=x^3 is actually differentiable everywhere, including at x=0, where f'(0)=0." }
+    ],
+    "explanation": "f'(x)=3x^2 never changes sign, so x=0 is neither a local max nor min for f(x)=x^3.",
+    "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
+    "reviewed": false
+  }
+]

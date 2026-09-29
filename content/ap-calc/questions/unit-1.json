@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-calc-u1-mcq-1",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "easy",
+    "stem": "What does the notation $\\lim_{x \\to c} f(x) = L$ mean?",
+    "choices": [
+      { "label": "A", "text": "As x approaches c, f(x) approaches L", "isCorrect": true, "explanation": "A limit describes the value f(x) gets arbitrarily close to as x gets arbitrarily close to c." },
+      { "label": "B", "text": "f(c) = L exactly", "isCorrect": false, "explanation": "The limit describes behavior NEAR c, not necessarily the actual value AT c (which might be undefined or different)." },
+      { "label": "C", "text": "f is undefined at c", "isCorrect": false, "explanation": "A limit existing doesn't mean f is undefined at c; f could be defined or undefined there, the limit is about nearby behavior." },
+      { "label": "D", "text": "The derivative of f at c is L", "isCorrect": false, "explanation": "This describes a derivative, a different concept from a limit." }
+    ],
+    "explanation": "$\\lim_{x \\to c} f(x) = L$ means f(x) gets arbitrarily close to L as x gets arbitrarily close to c.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-2",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "medium",
+    "stem": "Based on a graph where f(x) approaches 3 from the left and approaches 3 from the right as x approaches 2 (regardless of f(2)'s actual value), what is $\\lim_{x \\to 2} f(x)$?",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": true, "explanation": "Since both one-sided limits agree on the value 3, the two-sided limit is 3." },
+      { "label": "B", "text": "2", "isCorrect": false, "explanation": "2 is the x-value being approached, not the limit value." },
+      { "label": "C", "text": "It does not exist", "isCorrect": false, "explanation": "Since both one-sided limits agree (both approach 3), the two-sided limit DOES exist." },
+      { "label": "D", "text": "f(2)", "isCorrect": false, "explanation": "The limit doesn't necessarily equal f(2); the limit only depends on nearby behavior, not the function's actual value at that point." }
+    ],
+    "explanation": "Since both one-sided limits equal 3, the two-sided limit $\\lim_{x \\to 2} f(x) = 3$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-3",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "medium",
+    "stem": "If $\\lim_{x \\to a^-} f(x) = 5$ and $\\lim_{x \\to a^+} f(x) = 7$, what can be concluded about $\\lim_{x \\to a} f(x)$?",
+    "choices": [
+      { "label": "A", "text": "It equals 5", "isCorrect": false, "explanation": "A two-sided limit requires both one-sided limits to be equal; since they differ, the limit isn't simply the left-hand value." },
+      { "label": "B", "text": "It equals 7", "isCorrect": false, "explanation": "Similarly, it isn't simply the right-hand value either." },
+      { "label": "C", "text": "It equals 6", "isCorrect": false, "explanation": "The limit is not the average of the two one-sided limits; when one-sided limits disagree, the two-sided limit simply doesn't exist." },
+      { "label": "D", "text": "It does not exist", "isCorrect": true, "explanation": "A two-sided limit exists only when both one-sided limits agree. Since 5 ≠ 7, the limit does not exist." }
+    ],
+    "explanation": "When the left-hand and right-hand limits disagree, the two-sided limit does not exist.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-4",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "hard",
+    "stem": "Let $f(x) = \\dfrac{x^2 - 4}{x - 2}$ for $x \\neq 2$, undefined at $x = 2$. What is $\\lim_{x \\to 2} f(x)$?",
+    "choices": [
+      { "label": "A", "text": "4", "isCorrect": true, "explanation": "Factoring gives (x-2)(x+2)/(x-2) = x+2 for x≠2. As x approaches 2, x+2 approaches 4." },
+      { "label": "B", "text": "0", "isCorrect": false, "explanation": "Factoring shows the limit is 4, not 0." },
+      { "label": "C", "text": "Undefined/does not exist", "isCorrect": false, "explanation": "Even though f(2) is undefined, the LIMIT still exists because the function simplifies to x+2 away from x=2, which has a well-defined limit." },
+      { "label": "D", "text": "2", "isCorrect": false, "explanation": "2 is the x-value being approached, not the limit value." }
+    ],
+    "explanation": "Factoring the numerator as a difference of squares gives $\\frac{(x-2)(x+2)}{x-2} = x+2$, so the limit is $2+2=4$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-5",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "medium",
+    "stem": "What is $\\lim_{x \\to 3} (2x + 5)$?",
+    "choices": [
+      { "label": "A", "text": "11", "isCorrect": true, "explanation": "Since 2x+5 is continuous everywhere, direct substitution gives 2(3)+5 = 11." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "This is just the constant term, not the full evaluated expression." },
+      { "label": "C", "text": "6", "isCorrect": false, "explanation": "This would be 2×3 alone, without adding 5." },
+      { "label": "D", "text": "3", "isCorrect": false, "explanation": "3 is the x-value being approached, not the value of the expression at that point." }
+    ],
+    "explanation": "For a continuous function like $2x+5$, the limit equals direct substitution: $2(3)+5=11$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-6",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "medium",
+    "stem": "Which statement correctly describes the relationship between one-sided limits and the existence of a two-sided limit at x=c?",
+    "choices": [
+      { "label": "A", "text": "A two-sided limit can exist even if the one-sided limits disagree", "isCorrect": false, "explanation": "This is false; if one-sided limits disagree, the two-sided limit does NOT exist." },
+      { "label": "B", "text": "The two-sided limit exists if and only if both one-sided limits exist and are equal to each other", "isCorrect": true, "explanation": "This is the precise condition for a two-sided limit to exist." },
+      { "label": "C", "text": "One-sided limits are irrelevant to two-sided limits", "isCorrect": false, "explanation": "One-sided limits are directly relevant; they are precisely what determines whether the two-sided limit exists." },
+      { "label": "D", "text": "A two-sided limit always exists regardless of one-sided behavior", "isCorrect": false, "explanation": "This is false; the two-sided limit can fail to exist, particularly when one-sided limits disagree or don't exist." }
+    ],
+    "explanation": "A two-sided limit exists exactly when both one-sided limits exist and are equal.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-7",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "easy",
+    "stem": "What technique is often useful for evaluating $\\lim_{x \\to c} f(x)/g(x)$ when direct substitution gives $0/0$?",
+    "choices": [
+      { "label": "A", "text": "Factoring and canceling common factors", "isCorrect": true, "explanation": "Factoring often reveals a common factor that cancels, resolving the 0/0 indeterminate form." },
+      { "label": "B", "text": "Immediately concluding the limit doesn't exist", "isCorrect": false, "explanation": "A 0/0 result is an \"indeterminate form,\" meaning further work (like factoring) is needed; it doesn't automatically mean the limit doesn't exist." },
+      { "label": "C", "text": "Setting the limit equal to infinity automatically", "isCorrect": false, "explanation": "0/0 doesn't automatically indicate infinity; the actual limit could be a finite number, as further algebraic work often reveals." },
+      { "label": "D", "text": "Ignoring the denominator entirely", "isCorrect": false, "explanation": "The denominator is essential to correctly evaluating the limit; it can't simply be ignored." }
+    ],
+    "explanation": "Factoring and canceling common factors is a standard technique for resolving 0/0 indeterminate forms.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-8",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "medium",
+    "stem": "Evaluate $\\lim_{x \\to 0} \\dfrac{\\sin(x)}{x}$.",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": true, "explanation": "This is a standard, well-known calculus limit: sin(x)/x approaches 1 as x approaches 0." },
+      { "label": "B", "text": "0", "isCorrect": false, "explanation": "While sin(0)/0 is indeterminate by direct substitution, the actual limit value is 1, a well-known standard result, not 0." },
+      { "label": "C", "text": "Undefined", "isCorrect": false, "explanation": "This limit does exist and equals 1, despite direct substitution giving an indeterminate form." },
+      { "label": "D", "text": "x", "isCorrect": false, "explanation": "The limit evaluates to a specific number (1), not a variable expression." }
+    ],
+    "explanation": "$\\lim_{x \\to 0} \\frac{\\sin(x)}{x} = 1$ is one of the fundamental standard limits in calculus.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-9",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "medium",
+    "stem": "Evaluate $\\lim_{x \\to 2} \\dfrac{x^2 - x - 2}{x - 2}$.",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": true, "explanation": "Factoring gives (x-2)(x+1)/(x-2) = x+1, so the limit is 2+1=3." },
+      { "label": "B", "text": "1", "isCorrect": false, "explanation": "This would be if only part of the expression were considered; the correct simplification gives x+1, which evaluates to 3 at x=2." },
+      { "label": "C", "text": "0", "isCorrect": false, "explanation": "After factoring and canceling, the expression simplifies to a well-defined nonzero value at x=2." },
+      { "label": "D", "text": "Undefined", "isCorrect": false, "explanation": "Although the ORIGINAL expression is undefined at x=2 (0/0 form), the limit still exists after simplification." }
+    ],
+    "explanation": "Factoring the numerator gives $\\frac{(x-2)(x+1)}{x-2}=x+1$, so the limit is $2+1=3$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-10",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "hard",
+    "stem": "Evaluate $\\lim_{x \\to 4} \\dfrac{\\sqrt{x} - 2}{x - 4}$. (Hint: multiply by the conjugate.)",
+    "choices": [
+      { "label": "A", "text": "1/4", "isCorrect": true, "explanation": "Multiplying by the conjugate (√x+2)/(√x+2) simplifies to 1/(√x+2), which evaluates to 1/(2+2) = 1/4 at x=4." },
+      { "label": "B", "text": "0", "isCorrect": false, "explanation": "After rationalizing with the conjugate, the expression simplifies to 1/(√x+2), which evaluates to a nonzero value at x=4." },
+      { "label": "C", "text": "4", "isCorrect": false, "explanation": "4 is the x-value being approached, not the value of the limit." },
+      { "label": "D", "text": "Undefined", "isCorrect": false, "explanation": "Despite the original 0/0 form, rationalizing the numerator reveals the limit does exist and equals 1/4." }
+    ],
+    "explanation": "Multiplying by the conjugate gives $\\frac{x-4}{(x-4)(\\sqrt{x}+2)} = \\frac{1}{\\sqrt{x}+2}$, which evaluates to $\\frac{1}{4}$ at $x=4$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-11",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "medium",
+    "stem": "What algebraic technique is typically used to resolve indeterminate forms involving radical expressions in a limit (like a difference of square roots)?",
+    "choices": [
+      { "label": "A", "text": "Multiplying by the conjugate", "isCorrect": true, "explanation": "Multiplying by the conjugate eliminates the radical from the numerator or denominator, often resolving the indeterminate form." },
+      { "label": "B", "text": "Taking the derivative immediately", "isCorrect": false, "explanation": "Taking a derivative is a different technique (related to L'Hopital's Rule, covered later); at this stage, algebraic manipulation is the appropriate tool." },
+      { "label": "C", "text": "Ignoring the radical", "isCorrect": false, "explanation": "The radical is central to the expression and can't simply be ignored." },
+      { "label": "D", "text": "Squaring both the numerator and denominator separately without justification", "isCorrect": false, "explanation": "Squaring the numerator and denominator SEPARATELY would change the value of the expression, which isn't a valid algebraic manipulation." }
+    ],
+    "explanation": "Multiplying by the conjugate is the standard technique for resolving indeterminate forms involving radicals.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-12",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "medium",
+    "stem": "Evaluate $\\lim_{x \\to -1} \\dfrac{x^3 + 1}{x + 1}$. (Hint: $x^3+1$ factors as a sum of cubes.)",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": true, "explanation": "x^3+1 factors as (x+1)(x^2-x+1), so the expression simplifies to x^2-x+1, which evaluates to 1+1+1=3 at x=-1." },
+      { "label": "B", "text": "0", "isCorrect": false, "explanation": "After factoring using the sum-of-cubes formula, the expression simplifies to a nonzero value at x=-1." },
+      { "label": "C", "text": "-1", "isCorrect": false, "explanation": "-1 is the x-value being approached, not the value of the limit." },
+      { "label": "D", "text": "1", "isCorrect": false, "explanation": "This doesn't correctly account for all three terms in the simplified expression x^2-x+1." }
+    ],
+    "explanation": "Factoring with the sum-of-cubes formula gives $\\frac{(x+1)(x^2-x+1)}{x+1}=x^2-x+1$, which evaluates to $3$ at $x=-1$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-13",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "easy",
+    "stem": "For a function f to be continuous at x=c, which THREE conditions must all be satisfied?",
+    "choices": [
+      { "label": "A", "text": "f(c) is defined, $\\lim_{x \\to c} f(x)$ exists, and $\\lim_{x \\to c} f(x) = f(c)$", "isCorrect": true, "explanation": "All three conditions together define continuity at a point." },
+      { "label": "B", "text": "Only that f(c) is defined", "isCorrect": false, "explanation": "f(c) being defined alone is not sufficient; the limit must also exist and match f(c)." },
+      { "label": "C", "text": "Only that the limit exists", "isCorrect": false, "explanation": "The limit existing alone is not sufficient; f(c) must also be defined and equal to that limit." },
+      { "label": "D", "text": "f must be a polynomial", "isCorrect": false, "explanation": "Continuity is a general property not restricted to polynomials; many non-polynomial functions can also be continuous." }
+    ],
+    "explanation": "Continuity at x=c requires f(c) to be defined, the limit to exist, and the two to be equal.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-14",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "medium",
+    "stem": "Given $f(x) = x^2$ for $x \\neq 3$ and $f(3) = 10$, is f continuous at x=3?",
+    "choices": [
+      { "label": "A", "text": "No, because the limit does not equal f(3)", "isCorrect": true, "explanation": "The limit as x approaches 3 is 9 (from x^2), but f(3) = 10, so they don't match." },
+      { "label": "B", "text": "Yes, because f(3) is defined", "isCorrect": false, "explanation": "f(3) being defined alone isn't sufficient for continuity; it must also match the limit's value." },
+      { "label": "C", "text": "Yes, because the limit exists", "isCorrect": false, "explanation": "The limit existing alone isn't sufficient; it must specifically equal f(3), which it does not here (9 ≠ 10)." },
+      { "label": "D", "text": "No, because f(3) is undefined", "isCorrect": false, "explanation": "f(3) is actually defined (it equals 10); the problem is that this defined value doesn't match the limit." }
+    ],
+    "explanation": "The limit as x approaches 3 is 9, but f(3) = 10, so f is not continuous at x=3.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-15",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "medium",
+    "stem": "What type of discontinuity occurs when $\\lim_{x \\to c} f(x)$ exists but does not equal f(c) (or f(c) is undefined), and can be \"fixed\" by redefining f(c)?",
+    "choices": [
+      { "label": "A", "text": "A removable discontinuity", "isCorrect": true, "explanation": "This is called a removable discontinuity because redefining f(c) to equal the limit removes the discontinuity." },
+      { "label": "B", "text": "A jump discontinuity", "isCorrect": false, "explanation": "A jump discontinuity occurs when the one-sided limits themselves disagree, which is a different, non-removable situation." },
+      { "label": "C", "text": "An infinite discontinuity", "isCorrect": false, "explanation": "An infinite discontinuity involves the function growing without bound near c, not this removable \"hole\" scenario." },
+      { "label": "D", "text": "f is actually continuous in this case", "isCorrect": false, "explanation": "This scenario specifically describes a discontinuity (the limit and function value disagree or f(c) is undefined), not continuity." }
+    ],
+    "explanation": "A removable discontinuity occurs when the limit exists but doesn't match f(c); redefining f(c) removes it.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-16",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "hard",
+    "stem": "A function g(x) is defined piecewise: $g(x) = x+1$ for $x<2$, and $g(x) = 3x-3$ for $x \\geq 2$. Is g continuous at x=2?",
+    "choices": [
+      { "label": "A", "text": "Yes, since both one-sided limits equal 3 and g(2) = 3", "isCorrect": true, "explanation": "The left limit (x+1 as x→2) is 3, g(2) = 3(2)-3 = 3, and the right limit is also 3 -- all three match." },
+      { "label": "B", "text": "No, since the two piece definitions are different formulas", "isCorrect": false, "explanation": "Having different formulas on each piece doesn't automatically create a discontinuity; what matters is whether the pieces \"meet up\" at the boundary, which they do here." },
+      { "label": "C", "text": "No, since x=2 is a boundary point and boundary points are never continuous", "isCorrect": false, "explanation": "Boundary points of piecewise functions CAN be continuous, as long as the one-sided limits match the function's value there, which is the case here." },
+      { "label": "D", "text": "Yes, but only because g is linear on both pieces", "isCorrect": false, "explanation": "Being linear on each piece isn't what makes this continuous; it's continuous specifically because the values match up at the boundary." }
+    ],
+    "explanation": "Both one-sided limits equal 3, and g(2) = 3(2)-3 = 3, so all three values match and g is continuous at x=2.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-17",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "medium",
+    "stem": "Which of these function types is guaranteed to be continuous everywhere on its entire domain (for all real numbers)?",
+    "choices": [
+      { "label": "A", "text": "A polynomial function", "isCorrect": true, "explanation": "Polynomial functions are continuous for all real numbers with no exceptions." },
+      { "label": "B", "text": "A rational function with a zero denominator somewhere", "isCorrect": false, "explanation": "A rational function is discontinuous wherever its denominator equals zero, so it's not necessarily continuous everywhere." },
+      { "label": "C", "text": "A piecewise function with mismatched pieces", "isCorrect": false, "explanation": "A piecewise function with pieces that don't match up at the boundary is specifically discontinuous there." },
+      { "label": "D", "text": "tan(x), for all real numbers", "isCorrect": false, "explanation": "tan(x) has vertical asymptotes (and is undefined) at values like x=π/2, so it is NOT continuous for all real numbers." }
+    ],
+    "explanation": "Polynomial functions are continuous everywhere on the real numbers.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-18",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "medium",
+    "stem": "If f is continuous on the closed interval [a, b], what can generally be said about f's behavior on that interval?",
+    "choices": [
+      { "label": "A", "text": "f has no breaks, jumps, or holes anywhere within [a, b]", "isCorrect": true, "explanation": "This is the intuitive meaning of continuity on an interval: the graph can be drawn without lifting your pencil." },
+      { "label": "B", "text": "f must be a straight line on [a, b]", "isCorrect": false, "explanation": "Continuity doesn't require a function to be linear; many continuous functions are curved, not straight." },
+      { "label": "C", "text": "f must be increasing on all of [a, b]", "isCorrect": false, "explanation": "Continuity doesn't require a function to be increasing; a continuous function can increase, decrease, or do both." },
+      { "label": "D", "text": "f is undefined at the endpoints a and b", "isCorrect": false, "explanation": "For f to be continuous on the CLOSED interval [a,b], f must actually be defined (and well-behaved) at the endpoints a and b." }
+    ],
+    "explanation": "Continuity on [a,b] means f has no breaks, jumps, or holes anywhere in that interval.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-19",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "easy",
+    "stem": "What does it mean when $\\lim_{x \\to c} f(x) = \\infty$?",
+    "choices": [
+      { "label": "A", "text": "f(x) increases without bound as x approaches c", "isCorrect": true, "explanation": "This is the meaning of an infinite limit: the function values grow arbitrarily large." },
+      { "label": "B", "text": "The limit exists and equals a specific finite number", "isCorrect": false, "explanation": "Technically, saying a limit \"equals infinity\" is a description of unbounded behavior, not the existence of a specific finite limit value." },
+      { "label": "C", "text": "f(c) = ∞ as an actual function value", "isCorrect": false, "explanation": "Infinity is not a real number; f(c) cannot actually equal infinity as a function value." },
+      { "label": "D", "text": "f is continuous at c", "isCorrect": false, "explanation": "This scenario (unbounded growth near c) is actually a form of discontinuity at c, not continuity." }
+    ],
+    "explanation": "An infinite limit describes f(x) growing without bound as x approaches c.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-20",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "medium",
+    "stem": "For the function $f(x) = \\dfrac{1}{x-3}$, what happens to f(x) as x approaches 3 from the right ($x \\to 3^+$)?",
+    "choices": [
+      { "label": "A", "text": "f(x) approaches positive infinity", "isCorrect": true, "explanation": "As x approaches 3 from the right, x-3 is a tiny positive number, so 1/(x-3) grows toward positive infinity." },
+      { "label": "B", "text": "f(x) approaches negative infinity", "isCorrect": false, "explanation": "Approaching from the right (x slightly greater than 3) makes the denominator a small POSITIVE number, giving positive infinity, not negative." },
+      { "label": "C", "text": "f(x) approaches 0", "isCorrect": false, "explanation": "As the denominator shrinks toward 0, the fraction grows unboundedly large, not toward 0." },
+      { "label": "D", "text": "f(x) approaches 3", "isCorrect": false, "explanation": "3 is the x-value being approached, not the behavior of f(x) itself." }
+    ],
+    "explanation": "As x approaches 3 from the right, the denominator is a small positive number, so f(x) approaches positive infinity.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-21",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "medium",
+    "stem": "A vertical asymptote of a function typically occurs at values of x where what condition is met (for a rational function in lowest terms)?",
+    "choices": [
+      { "label": "A", "text": "The denominator equals zero (and the numerator does not simultaneously equal zero there)", "isCorrect": true, "explanation": "A vertical asymptote occurs where the denominator is zero, causing the function to grow unboundedly, as long as the numerator isn't also zero there." },
+      { "label": "B", "text": "The numerator equals zero", "isCorrect": false, "explanation": "The numerator equaling zero (with a nonzero denominator) typically corresponds to a ZERO/root of the function, not a vertical asymptote." },
+      { "label": "C", "text": "The function is at its maximum value", "isCorrect": false, "explanation": "A vertical asymptote isn't about the function reaching a maximum value; it involves unbounded growth, not a peak." },
+      { "label": "D", "text": "x equals zero", "isCorrect": false, "explanation": "Vertical asymptotes can occur at any x-value where the denominator is zero, not specifically at x=0." }
+    ],
+    "explanation": "A vertical asymptote occurs where the denominator equals zero and the numerator does not.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-22",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "hard",
+    "stem": "What is $\\lim_{x \\to \\infty} \\dfrac{3x^2 + 2x}{x^2 - 5}$?",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": true, "explanation": "Since the numerator and denominator have the same degree (2), the limit equals the ratio of leading coefficients: 3/1 = 3." },
+      { "label": "B", "text": "0", "isCorrect": false, "explanation": "This would be the case only if the numerator's degree were LOWER than the denominator's, which isn't the case here (both are degree 2)." },
+      { "label": "C", "text": "∞", "isCorrect": false, "explanation": "This would be the case only if the numerator's degree were HIGHER than the denominator's, which isn't the case here." },
+      { "label": "D", "text": "1", "isCorrect": false, "explanation": "This ignores the actual leading coefficients (3 and 1); simply having equal degrees doesn't automatically make the limit exactly 1." }
+    ],
+    "explanation": "With equal degrees in numerator and denominator, the limit at infinity equals the ratio of leading coefficients: $3/1=3$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-23",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "medium",
+    "stem": "A horizontal asymptote of a function describes what kind of behavior?",
+    "choices": [
+      { "label": "A", "text": "The function's behavior as x approaches positive or negative infinity", "isCorrect": true, "explanation": "A horizontal asymptote describes the function's long-run (end) behavior as x grows very large or very negative." },
+      { "label": "B", "text": "The function's behavior at a single specific finite x-value", "isCorrect": false, "explanation": "This describes a vertical asymptote or a specific point's behavior, not a horizontal asymptote, which concerns end behavior." },
+      { "label": "C", "text": "Points where the function crosses the x-axis", "isCorrect": false, "explanation": "x-intercepts (where the function equals 0) are a different concept from horizontal asymptotes." },
+      { "label": "D", "text": "The function's maximum height", "isCorrect": false, "explanation": "A horizontal asymptote describes the function's long-run trend, not necessarily its highest point." }
+    ],
+    "explanation": "A horizontal asymptote describes a function's behavior as x approaches positive or negative infinity.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-24",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "medium",
+    "stem": "What is $\\lim_{x \\to \\infty} \\dfrac{5x}{x^2 + 1}$?",
+    "choices": [
+      { "label": "A", "text": "0", "isCorrect": true, "explanation": "The denominator's degree (2) is higher than the numerator's degree (1), so the fraction shrinks toward 0 as x grows." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "This would only be the coefficient ratio if the degrees were equal, but here the denominator's degree is higher." },
+      { "label": "C", "text": "∞", "isCorrect": false, "explanation": "This would occur only if the numerator's degree were higher than the denominator's, the opposite of the situation here." },
+      { "label": "D", "text": "1", "isCorrect": false, "explanation": "There's no valid reasoning that gives exactly 1 here; with the denominator dominating, the correct limit is 0." }
+    ],
+    "explanation": "Since the denominator's degree exceeds the numerator's, the limit as x approaches infinity is 0.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-25",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "intermediate-value-theorem",
+    "difficulty": "easy",
+    "stem": "What does the Intermediate Value Theorem (IVT) state, given a function f continuous on [a,b]?",
+    "choices": [
+      { "label": "A", "text": "For any value M between f(a) and f(b), there exists at least one c in [a,b] such that f(c) = M", "isCorrect": true, "explanation": "This is the precise statement of the Intermediate Value Theorem." },
+      { "label": "B", "text": "f must be increasing on [a,b]", "isCorrect": false, "explanation": "The IVT doesn't require f to be increasing; it applies to any continuous function regardless of monotonic behavior." },
+      { "label": "C", "text": "f(a) must equal f(b)", "isCorrect": false, "explanation": "The IVT doesn't require f(a) to equal f(b); it specifically discusses values BETWEEN f(a) and f(b), which are typically different." },
+      { "label": "D", "text": "f has no maximum or minimum on [a,b]", "isCorrect": false, "explanation": "This doesn't relate to the IVT's actual statement, which is about intermediate values, not extrema." }
+    ],
+    "explanation": "The IVT guarantees that a continuous function takes on every value between f(a) and f(b) at some point in [a,b].",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-26",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "intermediate-value-theorem",
+    "difficulty": "medium",
+    "stem": "What is the key requirement for the Intermediate Value Theorem to apply to a function on an interval [a,b]?",
+    "choices": [
+      { "label": "A", "text": "f must be continuous on the closed interval [a,b]", "isCorrect": true, "explanation": "Continuity on [a,b] is the sole requirement for the IVT to apply." },
+      { "label": "B", "text": "f must be differentiable everywhere", "isCorrect": false, "explanation": "Differentiability is a stronger condition not required by the IVT; only continuity is needed." },
+      { "label": "C", "text": "f must be a polynomial", "isCorrect": false, "explanation": "The IVT applies to any continuous function, not exclusively polynomials." },
+      { "label": "D", "text": "f must be linear", "isCorrect": false, "explanation": "The IVT applies to continuous functions generally, not just linear ones." }
+    ],
+    "explanation": "The IVT requires only that f be continuous on the closed interval [a,b].",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-27",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "intermediate-value-theorem",
+    "difficulty": "medium",
+    "stem": "Given f is continuous on [1,4], f(1) = -3, and f(4) = 5, what does the IVT guarantee about f on this interval?",
+    "choices": [
+      { "label": "A", "text": "There is at least one c in [1,4] where f(c) = 0", "isCorrect": true, "explanation": "Since 0 lies between f(1) = -3 and f(4) = 5, the IVT guarantees at least one c where f(c) = 0." },
+      { "label": "B", "text": "f(c) = 0 has no solutions in [1,4]", "isCorrect": false, "explanation": "Since 0 lies between f(1)=-3 and f(4)=5, the IVT specifically guarantees at least one solution exists, not zero solutions." },
+      { "label": "C", "text": "f is increasing throughout [1,4]", "isCorrect": false, "explanation": "The IVT doesn't guarantee monotonic (increasing) behavior; it only guarantees the existence of a value where f equals the target." },
+      { "label": "D", "text": "f(1) must equal f(4)", "isCorrect": false, "explanation": "f(1) and f(4) are given as different values (-3 and 5); the IVT doesn't require or imply they're equal." }
+    ],
+    "explanation": "Since 0 is between f(1) = -3 and f(4) = 5, the IVT guarantees some c in [1,4] with f(c) = 0.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-28",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "intermediate-value-theorem",
+    "difficulty": "hard",
+    "stem": "Using the IVT, how could you justify that the equation $x^3 - x - 1 = 0$ has a solution between x=1 and x=2?",
+    "choices": [
+      { "label": "A", "text": "f(1) = -1 and f(2) = 5, and since f is continuous and 0 lies between -1 and 5, the IVT guarantees a root exists in (1,2)", "isCorrect": true, "explanation": "f(x) = x^3-x-1 is a polynomial (hence continuous), f(1) = 1-1-1 = -1, and f(2) = 8-2-1 = 5; since these have opposite signs, IVT guarantees a root." },
+      { "label": "B", "text": "Because $x^3$ is always positive", "isCorrect": false, "explanation": "$x^3$ is not always positive (e.g., for negative x); more importantly, this doesn't correctly apply the IVT's actual reasoning." },
+      { "label": "C", "text": "Because the equation has degree 3", "isCorrect": false, "explanation": "The degree of the polynomial alone doesn't justify a root's existence in a specific interval; the sign change (via the IVT) is what does." },
+      { "label": "D", "text": "Because f(1) equals f(2)", "isCorrect": false, "explanation": "f(1) and f(2) are NOT equal here (-1 and 5 respectively); the IVT reasoning relies on the fact that they have opposite signs, not that they're equal." }
+    ],
+    "explanation": "f(1) = -1 and f(2) = 5 have opposite signs, so by the IVT (f being a continuous polynomial), a root exists between 1 and 2.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-29",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "intermediate-value-theorem",
+    "difficulty": "medium",
+    "stem": "Why is continuity specifically required for the IVT to apply (rather than allowing any function with a jump discontinuity)?",
+    "choices": [
+      { "label": "A", "text": "A function with a jump discontinuity might \"skip over\" the target value without ever actually equaling it", "isCorrect": true, "explanation": "Without continuity, a function could jump from one value to another without passing through every value in between." },
+      { "label": "B", "text": "Continuity has no real bearing on whether the IVT's conclusion holds", "isCorrect": false, "explanation": "Continuity is precisely what ensures the function doesn't skip over values, so it does have direct bearing on whether the IVT's guarantee holds." },
+      { "label": "C", "text": "Jump discontinuities always make functions equal every intermediate value automatically", "isCorrect": false, "explanation": "This is the opposite of the actual concern; jump discontinuities can cause a function to SKIP values rather than guarantee hitting them." },
+      { "label": "D", "text": "The IVT works identically whether or not a function is continuous", "isCorrect": false, "explanation": "The IVT's guarantee specifically depends on continuity; without it, a function could jump over the target value entirely." }
+    ],
+    "explanation": "Continuity ensures a function can't \"skip over\" intermediate values, which is essential to the IVT's guarantee.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-30",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "intermediate-value-theorem",
+    "difficulty": "medium",
+    "stem": "A student wants to use the IVT to show $f(x) = 1/x$ has a root (i.e., f(c)=0) somewhere between x=-1 and x=1. Why does this attempt fail?",
+    "choices": [
+      { "label": "A", "text": "f(x) = 1/x is not continuous on [-1,1] because it's undefined (and has a vertical asymptote) at x=0, so the IVT's continuity requirement is not met", "isCorrect": true, "explanation": "Since f is discontinuous at x=0 (within the interval), the IVT's continuity requirement fails, so it cannot be applied here." },
+      { "label": "B", "text": "f(-1) equals f(1), so no root can exist", "isCorrect": false, "explanation": "f(-1) = -1 and f(1) = 1, which are NOT equal; this isn't actually the issue with applying the IVT here." },
+      { "label": "C", "text": "1/x is always positive", "isCorrect": false, "explanation": "1/x is not always positive; for negative x it's negative, and for positive x it's positive, but this isn't the reason the IVT fails to apply here." },
+      { "label": "D", "text": "The IVT guarantees a root does exist here", "isCorrect": false, "explanation": "The IVT does NOT guarantee a root here, precisely because its continuity requirement fails at x=0, which lies within the interval [-1,1]." }
+    ],
+    "explanation": "f(x) = 1/x is discontinuous at x=0, which lies within [-1,1], so the IVT's continuity requirement is not satisfied.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
+    "reviewed": false
+  }
+]

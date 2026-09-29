@@ -1,0 +1,13 @@
+{
+  "slug": "unit-7-differential-equations",
+  "order": 7,
+  "name": "Differential Equations",
+  "weightingMin": 6,
+  "weightingMax": 12,
+  "topics": [
+    { "slug": "modeling-with-differential-equations", "order": 1, "name": "Modeling with Differential Equations" },
+    { "slug": "slope-fields", "order": 2, "name": "Slope Fields" },
+    { "slug": "separation-of-variables", "order": 3, "name": "Separation of Variables" },
+    { "slug": "exponential-growth-and-decay", "order": 4, "name": "Exponential Growth and Decay" }
+  ]
+}

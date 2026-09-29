@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-calc-u8-frq-1",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "prompt": "Let $f(x) = x^2+1$ on the interval $[0,3]$.\n\n**(a)** Find the average value of $f$ on $[0,3]$.\n\n**(b)** By the Mean Value Theorem for Integrals, there exists a value $c$ in $[0,3]$ such that $f(c)$ equals the average value found in part (a). Find the exact value of c.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly sets up the average value integral: (1/3)*integral from 0 to 3 of (x^2+1) dx" },
+      { "id": "r2", "points": 1, "description": "Correctly evaluates the integral to get an average value of 4" },
+      { "id": "r3", "points": 1, "description": "Correctly sets up c^2+1=4 to solve for c" },
+      { "id": "r4", "points": 1, "description": "Correctly solves and selects c=√3 (rejecting the negative root, since c must lie in [0,3])" }
+    ],
+    "sampleResponse": "(a) Average value = (1/3)*integral from 0 to 3 of (x^2+1) dx = (1/3)*[x^3/3+x] from 0 to 3 = (1/3)*(9+3) = (1/3)(12) = 4.\n(b) Setting f(c)=4: c^2+1=4, so c^2=3, c=±√3. Since c must lie in [0,3], c=√3.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-frq-2",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "prompt": "Consider the curves $y=x$ and $y=x^2-2x$.\n\n**(a)** Find the x-coordinates of the points where the two curves intersect.\n\n**(b)** Determine which curve is on top (greater y-value) between the two intersection points.\n\n**(c)** Find the area of the region enclosed by the two curves.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly sets x = x^2-2x and solves to find x=0 and x=3" },
+      { "id": "r2", "points": 1, "description": "Correctly determines y=x is on top (e.g. by testing a point like x=1: y=1 vs y=-1)" },
+      { "id": "r3", "points": 1, "description": "Correctly sets up the integral from 0 to 3 of [x - (x^2-2x)] dx = integral of (3x-x^2) dx" },
+      { "id": "r4", "points": 1, "description": "Correctly evaluates the integral to get an area of 9/2" }
+    ],
+    "sampleResponse": "(a) Setting x = x^2-2x: 0 = x^2-3x = x(x-3), so x=0 or x=3.\n(b) Testing x=1: y=x gives 1, y=x^2-2x gives 1-2=-1. Since 1>-1, y=x is on top between the intersection points.\n(c) Area = integral from 0 to 3 of [x-(x^2-2x)] dx = integral from 0 to 3 of (3x-x^2) dx = [3x^2/2 - x^3/3] from 0 to 3 = (27/2-9) - 0 = 9/2.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-frq-3",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "volume-by-cross-sections",
+    "prompt": "A solid has a base that is the region bounded by the upper semicircle $y=\\sqrt{4-x^2}$ and the x-axis, for $x \\in [-2,2]$. Cross-sections of the solid perpendicular to the x-axis are equilateral triangles, with one side of each triangle lying along the base region (so the side length is $2y = 2\\sqrt{4-x^2}$).\n\n**(a)** Write the area $A(x)$ of a cross-sectional equilateral triangle in terms of x. (Recall: an equilateral triangle with side length s has area $\\frac{\\sqrt{3}}{4}s^2$.)\n\n**(b)** Set up the definite integral that gives the volume of the solid.\n\n**(c)** Evaluate the integral to find the volume.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly finds A(x) = (√3/4)(2√(4-x^2))^2 = √3(4-x^2)" },
+      { "id": "r2", "points": 1, "description": "Correctly sets up V = integral from -2 to 2 of √3(4-x^2) dx" },
+      { "id": "r3", "points": 1, "description": "Correctly evaluates the antiderivative √3[4x-x^3/3] at the bounds" },
+      { "id": "r4", "points": 1, "description": "Correctly concludes V = 32√3/3" }
+    ],
+    "sampleResponse": "(a) Side length s = 2√(4-x^2), so A(x) = (√3/4)*s^2 = (√3/4)*4(4-x^2) = √3(4-x^2).\n(b) V = integral from -2 to 2 of √3(4-x^2) dx.\n(c) V = √3*[4x-x^3/3] from -2 to 2 = √3*[(8-8/3)-(-8+8/3)] = √3*[16-16/3] = √3*(32/3) = 32√3/3.",
+    "reviewed": false
+  }
+]

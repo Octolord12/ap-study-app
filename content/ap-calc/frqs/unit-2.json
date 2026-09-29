@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ap-calc-u2-frq-1",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "power-rule-and-basic-derivatives",
+    "prompt": "Let $f(x) = 2x^3 - 3x^2 + 4$.\n\n**(a)** Find $f'(x)$.\n\n**(b)** Evaluate $f'(1)$.\n\n**(c)** Find the equation of the tangent line to $f$ at $x=1$.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly finds f'(x) = 6x^2 - 6x using the power rule" },
+      { "id": "r2", "points": 1, "description": "Correctly evaluates f'(1) = 0" },
+      { "id": "r3", "points": 1, "description": "Correctly evaluates f(1) = 3 (needed as the point on the tangent line)" },
+      { "id": "r4", "points": 1, "description": "Correctly writes the tangent line equation as y = 3, recognizing the zero slope gives a horizontal line" }
+    ],
+    "sampleResponse": "(a) f'(x) = 6x^2 - 6x.\n(b) f'(1) = 6(1)^2 - 6(1) = 6 - 6 = 0.\n(c) Since f'(1) = 0, the tangent line is horizontal. f(1) = 2(1)^3 - 3(1)^2 + 4 = 2 - 3 + 4 = 3. The tangent line passes through (1, 3) with slope 0, so its equation is y = 3.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u2-frq-2",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivatives-of-trig-exponential-log",
+    "prompt": "Let $g(x) = 4e^x + 3\\sin(x) - 2\\ln(x)$.\n\n**(a)** Find $g'(x)$.\n\n**(b)** Evaluate $g'(1)$, leaving your answer in exact form.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly differentiates each term (4e^x stays 4e^x, 3sin(x) becomes 3cos(x), -2ln(x) becomes -2/x)" },
+      { "id": "r2", "points": 1, "description": "Correctly combines to get g'(x) = 4e^x + 3cos(x) - 2/x" },
+      { "id": "r3", "points": 1, "description": "Correctly evaluates g'(1) = 4e + 3cos(1) - 2" }
+    ],
+    "sampleResponse": "(a) g'(x) = 4e^x + 3cos(x) - 2/x.\n(b) g'(1) = 4e^1 + 3cos(1) - 2/1 = 4e + 3cos(1) - 2.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u2-frq-3",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "sum-difference-product-quotient-rules",
+    "prompt": "**(a)** Let $h(x) = x^2 e^x$. Find $h'(x)$ using the Product Rule.\n\n**(b)** Let $k(x) = \\dfrac{\\sin(x)}{x}$. Find $k'(x)$ using the Quotient Rule.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Sets up the Product Rule correctly: d/dx(x^2)*e^x + x^2*d/dx(e^x)" },
+      { "id": "r2", "points": 1, "description": "Correctly simplifies to h'(x) = 2xe^x + x^2e^x" },
+      { "id": "r3", "points": 1, "description": "Sets up the Quotient Rule correctly: [cos(x)*x - sin(x)*1] / x^2" },
+      { "id": "r4", "points": 1, "description": "Correctly simplifies to k'(x) = [x cos(x) - sin(x)] / x^2" }
+    ],
+    "sampleResponse": "(a) By the Product Rule: h'(x) = d/dx(x^2)*e^x + x^2*d/dx(e^x) = 2x*e^x + x^2*e^x.\n(b) By the Quotient Rule: k'(x) = [cos(x)*x - sin(x)*1] / x^2 = [x cos(x) - sin(x)] / x^2.",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "slug": "ap-calc",
+  "name": "AP Calculus AB",
+  "description": "An introduction to differential and integral calculus: limits, derivatives and their applications, integrals and their applications, and differential equations, aligned to the College Board Course and Exam Description.",
+  "colorTheme": "emerald",
+  "examFormat": {
+    "totalDurationMinutes": 190,
+    "sections": [
+      { "type": "MCQ", "questionCount": 42, "durationMinutes": 105, "scoreWeight": 0.5 },
+      { "type": "FRQ", "questionCount": 6, "durationMinutes": 85, "scoreWeight": 0.5, "calculatorAllowed": true }
+    ]
+  }
+}
