@@ -1,0 +1,15 @@
+{
+  "slug": "ap-world",
+  "name": "AP World History: Modern",
+  "description": "A survey of global historical developments from c. 1200 CE to the present: state-building, trade networks, empires, revolutions, industrialization, global conflict, decolonization, and globalization, aligned to the College Board Course and Exam Description.",
+  "colorTheme": "amber",
+  "examFormat": {
+    "totalDurationMinutes": 195,
+    "sections": [
+      { "type": "MCQ", "questionCount": 55, "durationMinutes": 55, "scoreWeight": 0.4 },
+      { "type": "SAQ", "questionCount": 1, "durationMinutes": 40, "scoreWeight": 0.2 },
+      { "type": "DBQ", "questionCount": 1, "durationMinutes": 60, "scoreWeight": 0.25 },
+      { "type": "LEQ", "questionCount": 1, "durationMinutes": 40, "scoreWeight": 0.15 }
+    ]
+  }
+}

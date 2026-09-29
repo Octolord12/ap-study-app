@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u9-saq-1",
+    "unit": "unit-9-globalization",
+    "topic": "technological-advances",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE technological development that significantly increased global interconnection in the late 20th century.\n\n**b)** Explain ONE way this technology affected global trade or communication.\n\n**c)** Describe ONE economic sector that grew as a result of new information/digital technologies.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes the internet, satellite technology, or container shipping" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that this technology reduced costs/time for shipping goods, or enabled instant global communication" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes the growth of information-based/digital economies" }
+    ],
+    "sampleResponse": "a) The development of standardized container shipping in the mid-20th century significantly increased global interconnection by transforming how goods moved between countries.\nb) Container shipping dramatically reduced the cost and time required to ship goods internationally, making complex global supply chains involving many countries economically practical.\nc) The rise of personal computers and the internet contributed to the growth of information-based and digital economic sectors, creating new industries built around software, data, and online services.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u9-saq-2",
+    "unit": "unit-9-globalization",
+    "topic": "economic-globalization",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE role multinational corporations played in economic globalization.\n\n**b)** Describe ONE international institution that promoted economic globalization.\n\n**c)** Explain ONE criticism of economic globalization related to inequality.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes multinational corporations expanding operations across multiple countries, contributing to global supply chains" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes the World Trade Organization (WTO), the International Monetary Fund (IMF), or the World Bank" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that critics argue the benefits and costs of globalization have been unevenly distributed, contributing to inequality within or between countries" }
+    ],
+    "sampleResponse": "a) Multinational corporations expanded their operations across many countries, building complex, integrated global supply chains that connected production and consumption across different regions.\nb) The World Trade Organization was established to help regulate and promote international trade among member nations, reflecting the growing institutionalization of global economic relationships.\nc) Critics argue that while economic globalization has driven overall economic growth, its benefits have often gone disproportionately to wealthier nations and individuals, while the costs, such as job displacement from offshoring, have sometimes fallen more heavily on workers in other places, contributing to rising inequality.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u9-saq-3",
+    "unit": "unit-9-globalization",
+    "topic": "rights-based-movements",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE rights-based movement that gained international attention during the late 20th century.\n\n**b)** Explain ONE way global communication helped this movement achieve its goals.\n\n**c)** Describe ONE way international organizations supported rights-based movements during this era.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes the global feminist movement, the anti-apartheid movement, or a similar rights-based movement" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that global communication let activists share ideas, strategies, and support across borders, building international pressure and solidarity" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes UN conferences or other international organizations providing platforms for coordinating advocacy and raising awareness" }
+    ],
+    "sampleResponse": "a) The global anti-apartheid movement, opposing South Africa's system of racial segregation, gained significant international attention during the late 20th century.\nb) Global communication let activists around the world share information about conditions in South Africa and coordinate strategies, such as international economic boycotts and divestment campaigns, building sustained international pressure on the South African government.\nc) The United Nations provided a platform through resolutions and conferences that helped raise global awareness of apartheid and coordinate international condemnation, adding diplomatic pressure alongside grassroots activism.",
+    "reviewed": false
+  }
+]

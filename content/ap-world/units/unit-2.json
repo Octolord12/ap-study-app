@@ -1,0 +1,14 @@
+{
+  "slug": "unit-2-networks-of-exchange",
+  "order": 2,
+  "name": "Networks of Exchange",
+  "weightingMin": 8,
+  "weightingMax": 10,
+  "topics": [
+    { "slug": "silk-roads", "order": 1, "name": "The Silk Roads" },
+    { "slug": "mongol-empire", "order": 2, "name": "The Mongol Empire and the Making of the Modern World" },
+    { "slug": "indian-ocean-trade", "order": 3, "name": "Exchange in the Indian Ocean" },
+    { "slug": "trans-saharan-trade", "order": 4, "name": "Trans-Saharan Trade Routes" },
+    { "slug": "effects-of-connectivity", "order": 5, "name": "Cultural and Environmental Effects of Connectivity" }
+  ]
+}

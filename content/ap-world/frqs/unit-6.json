@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u6-saq-1",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "rationales-for-imperialism",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE economic rationale used to justify European imperialism in the late 19th century.\n\n**b)** Describe ONE ideological/cultural rationale used to justify European imperialism during this period.\n\n**c)** Explain ONE way new technology contributed to European imperial expansion during this period.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes the need for raw materials and new markets for manufactured goods" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes Social Darwinism or the \"civilizing mission\" as an ideological/cultural rationale" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that advances in weaponry (e.g. the machine gun) and medicine (e.g. quinine) gave European powers military/logistical advantages, facilitating colonization" }
+    ],
+    "sampleResponse": "a) Industrializing European nations sought colonies to secure raw materials, such as rubber and cotton, needed for their factories, as well as new markets to sell their manufactured goods.\nb) The \"civilizing mission\" ideology framed colonization as a benevolent effort to bring European civilization, religion, and technology to peoples Europeans viewed as less advanced, masking the exploitative economic realities of colonial rule.\nc) Advances like the machine gun gave European forces a decisive military advantage over local resistance, while medicines like quinine allowed Europeans to survive and operate in tropical regions previously deadly to them due to diseases like malaria.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-saq-2",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "resistance-to-imperialism",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE example of armed resistance to European imperialism during this period.\n\n**b)** Explain ONE reason why many resistance efforts were ultimately unsuccessful in preventing colonization.\n\n**c)** Describe ONE way nationalist organizations responded to colonial rule.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes Ethiopia's resistance at the Battle of Adwa, or the Boxer Rebellion in China, as an example" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that European powers generally possessed superior military technology and could exploit regional/political divisions among colonized populations" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes organizations like the Indian National Congress organizing educated colonial subjects to advocate for greater rights and self-governance" }
+    ],
+    "sampleResponse": "a) Ethiopian forces defeated the invading Italian army at the Battle of Adwa in 1896, preserving Ethiopian independence in a rare successful case of armed resistance to European colonization.\nb) Most resistance movements faced European powers with significantly superior weaponry, such as machine guns, and European powers could also often exploit existing rivalries or divisions among local populations to weaken unified resistance.\nc) The Indian National Congress, founded in 1885, organized educated Indians to advocate for greater political rights and self-governance within, and eventually independence from, British colonial rule.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-saq-3",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "global-economic-development",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way colonial powers restructured colonized economies to serve their own interests.\n\n**b)** Explain ONE way migration patterns during this era reflected global economic inequalities.\n\n**c)** Describe ONE lasting economic consequence of imperialism for former colonies.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes cash-crop/export-oriented economies or railroad infrastructure built to extract and transport raw materials to ports" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that labor often flowed from poorer or colonized regions toward areas of greater economic opportunity or demand, such as indentured servitude to plantation regions" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes long-term economic dependency or underdevelopment as a legacy of colonial economic structures" }
+    ],
+    "sampleResponse": "a) Colonial powers often restructured colonized economies around producing a narrow set of cash crops or raw materials for export, and built railroads specifically to transport these goods efficiently from extraction sites to ports.\nb) Indentured laborers, especially from India, migrated in large numbers to plantation regions like the Caribbean and Fiji to work under contract, reflecting how labor flowed from poorer regions toward areas with strong demand created by colonial plantation economies.\nc) The narrow, export-oriented economic structures imposed during colonization often left former colonies with limited industrial development and continued economic dependency on former colonial powers even after gaining political independence.",
+    "reviewed": false
+  }
+]

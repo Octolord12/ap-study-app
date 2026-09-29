@@ -1,0 +1,14 @@
+{
+  "slug": "unit-9-globalization",
+  "order": 9,
+  "name": "Globalization",
+  "weightingMin": 8,
+  "weightingMax": 10,
+  "topics": [
+    { "slug": "technological-advances", "order": 1, "name": "Technological Advances" },
+    { "slug": "rights-based-movements", "order": 2, "name": "Growth of Rights-Based Movements" },
+    { "slug": "globalized-culture", "order": 3, "name": "Globalized Culture" },
+    { "slug": "environment-and-globalization", "order": 4, "name": "The Environment in the Global Age" },
+    { "slug": "economic-globalization", "order": 5, "name": "Economic Globalization" }
+  ]
+}

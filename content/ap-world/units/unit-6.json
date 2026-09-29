@@ -1,0 +1,14 @@
+{
+  "slug": "unit-6-consequences-of-industrialization",
+  "order": 6,
+  "name": "Consequences of Industrialization",
+  "weightingMin": 12,
+  "weightingMax": 15,
+  "topics": [
+    { "slug": "rationales-for-imperialism", "order": 1, "name": "Rationales for Imperialism" },
+    { "slug": "imperial-expansion", "order": 2, "name": "State Expansion and Colonial Empires" },
+    { "slug": "resistance-to-imperialism", "order": 3, "name": "Indigenous Responses to State Expansion" },
+    { "slug": "global-economic-development", "order": 4, "name": "Global Economic Development" },
+    { "slug": "migration-in-interconnected-world", "order": 5, "name": "Migration in an Interconnected World" }
+  ]
+}

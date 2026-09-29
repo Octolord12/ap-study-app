@@ -1,0 +1,14 @@
+{
+  "slug": "unit-8-cold-war-and-decolonization",
+  "order": 8,
+  "name": "Cold War and Decolonization",
+  "weightingMin": 12,
+  "weightingMax": 15,
+  "topics": [
+    { "slug": "origins-of-the-cold-war", "order": 1, "name": "Origins of the Cold War" },
+    { "slug": "the-cold-war", "order": 2, "name": "The Cold War" },
+    { "slug": "decolonization", "order": 3, "name": "Decolonization" },
+    { "slug": "newly-independent-states", "order": 4, "name": "Newly Independent States" },
+    { "slug": "end-of-the-cold-war", "order": 5, "name": "The End of the Cold War" }
+  ]
+}

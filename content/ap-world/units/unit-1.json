@@ -1,0 +1,14 @@
+{
+  "slug": "unit-1-global-tapestry",
+  "order": 1,
+  "name": "The Global Tapestry",
+  "weightingMin": 8,
+  "weightingMax": 10,
+  "topics": [
+    { "slug": "east-asian-states", "order": 1, "name": "Developments in East Asia" },
+    { "slug": "dar-al-islam", "order": 2, "name": "Developments in Dar al-Islam" },
+    { "slug": "south-and-southeast-asia", "order": 3, "name": "Developments in South and Southeast Asia" },
+    { "slug": "state-building-americas-africa", "order": 4, "name": "State Building in the Americas and Africa" },
+    { "slug": "european-christendom", "order": 5, "name": "Developments in Europe" }
+  ]
+}

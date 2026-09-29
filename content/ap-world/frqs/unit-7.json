@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u7-saq-1",
+    "unit": "unit-7-global-conflict",
+    "topic": "causes-of-world-war-one",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE long-term cause of World War I (other than the assassination of Archduke Franz Ferdinand).\n\n**b)** Describe the event that served as the immediate trigger for World War I.\n\n**c)** Explain ONE way the alliance system turned this event into a broader continental war.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes militarism, nationalism, or imperialism/colonial rivalry as a long-term cause" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes the assassination of Archduke Franz Ferdinand by a Serbian nationalist" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that mutual defense treaties obligated allied nations to join the conflict once one country declared war, cascading into a wider war" }
+    ],
+    "sampleResponse": "a) Intense nationalism across Europe, combined with a competitive arms race (militarism) among major powers, created a tense atmosphere in the years before the war.\nb) The assassination of Archduke Franz Ferdinand of Austria-Hungary by a Serbian nationalist in June 1914 served as the immediate trigger for the war.\nc) Because European powers were bound together by mutual defense alliances, Austria-Hungary's declaration of war on Serbia triggered Russia's obligation to defend Serbia, which in turn triggered Germany's obligation to support Austria-Hungary, rapidly pulling multiple nations into the conflict.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-saq-2",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-one-and-russian-revolution",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way World War I weakened the Tsarist government in Russia.\n\n**b)** Describe the outcome of the February Revolution of 1917.\n\n**c)** Explain ONE way the Bolsheviks' promises helped them gain power in the October Revolution.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes massive military casualties, food shortages, or general war-related hardship undermining support for the Tsar" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes Tsar Nicholas II's abdication and the establishment of a Provisional Government" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that the Bolsheviks' slogan \"Peace, Land, and Bread\" appealed to a population exhausted by war and economic hardship, helping them gain popular support to seize power" }
+    ],
+    "sampleResponse": "a) Massive Russian military casualties and severe food shortages on the home front, both worsened by the demands of the war, badly eroded popular support for Tsar Nicholas II's government.\nb) The February Revolution of 1917 forced Tsar Nicholas II to abdicate the throne, and a Provisional Government was established in his place.\nc) The Bolsheviks' slogan \"Peace, Land, and Bread\" directly addressed the exhaustion and hardship most Russians felt from the ongoing war and economic crisis, winning them significant popular support that helped them seize power in the October Revolution.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-saq-3",
+    "unit": "unit-7-global-conflict",
+    "topic": "causes-of-world-war-two",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way the Treaty of Versailles contributed to conditions that led to World War II.\n\n**b)** Describe ONE policy pursued by Britain and France toward Germany's expansion in the late 1930s.\n\n**c)** Explain ONE reason this policy ultimately failed to prevent war.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes resentment over the treaty's terms (reparations, territorial losses, war-guilt clause) fueling German nationalism that Hitler exploited" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes the policy of appeasement, exemplified by the 1938 Munich Agreement" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that appeasement emboldened Hitler to continue pursuing further territorial expansion, such as invading Poland, rather than satisfying his ambitions" }
+    ],
+    "sampleResponse": "a) The harsh terms of the Treaty of Versailles, including heavy reparations payments and the \"war guilt\" clause blaming Germany for the war, created widespread German resentment that Hitler later exploited to build nationalist support.\nb) Britain and France pursued a policy of appeasement, allowing Germany to annex the Sudetenland at the 1938 Munich Agreement in hopes of satisfying Hitler's territorial demands and avoiding a larger war.\nc) Rather than satisfying Hitler's ambitions, appeasement emboldened him to continue pursuing further territorial expansion, leading him to invade Poland in 1939 and directly triggering the outbreak of World War II.",
+    "reviewed": false
+  }
+]

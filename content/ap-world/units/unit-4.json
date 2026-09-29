@@ -1,0 +1,13 @@
+{
+  "slug": "unit-4-transoceanic-interconnections",
+  "order": 4,
+  "name": "Transoceanic Interconnections",
+  "weightingMin": 12,
+  "weightingMax": 15,
+  "topics": [
+    { "slug": "technology-and-exploration", "order": 1, "name": "Technological Innovations and Exploration" },
+    { "slug": "columbian-exchange", "order": 2, "name": "The Columbian Exchange" },
+    { "slug": "maritime-empires", "order": 3, "name": "Maritime Empires Established and Maintained" },
+    { "slug": "labor-systems-and-slave-trade", "order": 4, "name": "Labor Systems and the Slave Trade" }
+  ]
+}

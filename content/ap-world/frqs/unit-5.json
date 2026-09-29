@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u5-saq-1",
+    "unit": "unit-5-revolutions",
+    "topic": "atlantic-revolutions",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE Enlightenment idea that influenced revolutionary movements in this era.\n\n**b)** Describe ONE way the Haitian Revolution differed from the American Revolution in terms of its outcome regarding slavery.\n\n**c)** Explain ONE reason Latin American independence movements of the early 19th century were influenced by earlier Atlantic revolutions.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes an Enlightenment idea such as natural rights, government by consent, or popular sovereignty" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that the Haitian Revolution abolished slavery and was led by enslaved people, while the American Revolution did not abolish slavery and was led primarily by colonial elites" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that Latin American revolutionaries drew on Enlightenment ideals and the precedents set by earlier successful revolutions that demonstrated colonial or monarchical rule could be successfully challenged" }
+    ],
+    "sampleResponse": "a) Enlightenment thinkers like John Locke argued that legitimate government requires the consent of the governed, and that people have a right to overthrow governments that violate their natural rights, an idea that directly influenced revolutionary rhetoric.\nb) The Haitian Revolution was led primarily by enslaved people and resulted in the complete abolition of slavery in the new nation, while the American Revolution, led mainly by colonial elites, did not abolish slavery and left the institution intact in the new United States.\nc) Latin American independence leaders like Simon Bolivar were directly inspired by Enlightenment ideals and by the successful examples of the American, French, and Haitian revolutions, which demonstrated that colonial and monarchical rule could be overthrown in favor of new forms of government.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-saq-2",
+    "unit": "unit-5-revolutions",
+    "topic": "industrial-revolution-begins",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE factor that allowed Great Britain to industrialize first.\n\n**b)** Describe ONE technological innovation central to early industrialization.\n\n**c)** Explain ONE way the factory system changed the nature of work compared to earlier home-based production.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes a factor such as access to coal/iron resources, capital from colonial trade, or agricultural improvements freeing up labor" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes the steam engine (improved by James Watt) or mechanized textile machinery as a key innovation" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that the factory system concentrated workers and machinery in centralized locations with more rigid schedules and division of labor, unlike earlier decentralized home-based production" }
+    ],
+    "sampleResponse": "a) Britain had abundant deposits of coal and iron, essential raw materials for industrial machinery and steam power, giving it a resource advantage over many other regions.\nb) James Watt's improvements to the steam engine made it a practical, efficient power source that could drive factory machinery and later locomotives and ships.\nc) The factory system brought workers together under one roof with machinery, imposing standardized schedules and dividing tasks among specialized workers, a significant change from the earlier system where families produced goods at home on their own schedule.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-saq-3",
+    "unit": "unit-5-revolutions",
+    "topic": "effects-of-industrialization",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE negative social consequence of early industrialization for factory workers.\n\n**b)** Describe ONE way workers or reformers responded to the problems caused by industrialization.\n\n**c)** Explain ONE way industrialization affected global economic relationships between industrialized and non-industrialized regions.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes poor working conditions, low wages, long hours, or child labor as a negative consequence" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes labor unions organizing for better conditions, or socialist movements/ideology developing (e.g. Marx and Engels' critique of capitalism)" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that industrialized nations gained economic and military advantages that they used to dominate trade relationships with non-industrialized regions" }
+    ],
+    "sampleResponse": "a) Factory workers, including children, often faced long hours, low wages, and dangerous, unsafe working conditions in early industrial factories.\nb) Workers organized labor unions to collectively bargain for better wages, shorter hours, and safer working conditions from factory owners.\nc) Industrialized nations gained significant economic and military advantages from their new production capabilities, which they often used to dominate trade relationships with non-industrialized regions, extracting raw materials and controlling markets to their own benefit.",
+    "reviewed": false
+  }
+]

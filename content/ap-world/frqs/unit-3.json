@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u3-saq-1",
+    "unit": "unit-3-land-based-empires",
+    "topic": "comparing-empires",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE method the Ottoman Empire used to administer its diverse population.\n\n**b)** Describe ONE method the Mughal Empire used to administer its diverse population.\n\n**c)** Explain ONE similarity OR difference between these two empires' approaches to governing diverse subjects.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes the Ottoman millet system (allowing religious communities self-governance over internal affairs) or the devshirme system" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes Akbar's incorporation of Hindu elites (e.g. Rajput nobles) into the administration and/or his abolition of the jizya tax" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains a similarity (both empires incorporated non-ruling-religion elites or communities into governance to promote stability) or a difference (the millet system granted communities legal autonomy over internal affairs, while Akbar's approach focused more on individual political integration of elites into the imperial court)" }
+    ],
+    "sampleResponse": "a) The Ottoman millet system allowed non-Muslim religious communities, such as Christians and Jews, to govern many of their own internal legal and religious affairs rather than imposing uniform Islamic law on everyone.\nb) The Mughal emperor Akbar incorporated Hindu Rajput nobles into his administration and military, giving them meaningful positions of power and marrying into Rajput families to build political alliances.\nc) Both empires shared the strategy of incorporating non-ruling-religion elites and communities into their governance structures to build broader loyalty and stability, even though the Ottomans did this through community-level legal autonomy while the Mughals under Akbar did it more through individual political integration of elite families into the court.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-saq-2",
+    "unit": "unit-3-land-based-empires",
+    "topic": "religion-and-state-power",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way a land-based empire's ruler used religion to legitimize political authority during this period.\n\n**b)** Explain ONE way religious differences contributed to conflict between two land-based empires of this period.\n\n**c)** Describe ONE change in religious policy within a single empire (from one ruler to the next) during this period.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes a ruler's use of religion, such as the Ottoman sultan's claim to the caliphate, or the Chinese emperor's claim to the Mandate of Heaven" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that Sunni-Shia religious rivalry contributed to conflict between the Ottoman and Safavid empires, alongside territorial disputes" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes a shift such as Akbar's relative religious tolerance being reversed by Aurangzeb's stricter orthodoxy and reinstatement of the jizya tax" }
+    ],
+    "sampleResponse": "a) The Ottoman sultans claimed the title of caliph, positioning themselves as the political and religious leaders of the global Sunni Muslim community, which reinforced their political authority with religious legitimacy.\nb) The Ottoman Empire was Sunni Muslim while the Safavid Empire was Shia Muslim, and each saw itself as the rightful leader of the Islamic world, so this religious rivalry added to their territorial conflicts, such as disputes over Iraq.\nc) Under Akbar, the Mughal Empire abolished the jizya tax on non-Muslims and pursued religious tolerance, but later under Aurangzeb, the empire reinstated the jizya tax and pursued stricter Islamic orthodoxy, reversing Akbar's approach.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-saq-3",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-expand",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way gunpowder technology contributed to the expansion of a land-based empire during this period.\n\n**b)** Describe ONE non-military factor (such as trade or administration) that helped a land-based empire maintain its power once established.\n\n**c)** Explain ONE reason historians group empires such as the Ottoman, Safavid, and Mughal together as \"gunpowder empires.\"",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes gunpowder weapons (cannons, firearms) enabling conquest, e.g. the Ottoman conquest of Constantinople in 1453 using massive cannons to breach the city's walls" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes a non-military factor such as control of trade routes providing revenue, or administrative systems (bureaucracy, tax collection) sustaining the empire" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that these empires shared reliance on gunpowder weaponry combined with centralized administration and religious legitimacy to expand and maintain vast, diverse territories" }
+    ],
+    "sampleResponse": "a) The Ottomans used massive cannons to breach the previously impenetrable walls of Constantinople in 1453, allowing them to conquer the city and end the Byzantine Empire.\nb) The Ottoman Empire maintained its power in part through the millet system, which allowed diverse religious communities a degree of self-governance, reducing the likelihood of rebellion and helping the empire administer its vast, diverse territory.\nc) Historians group the Ottoman, Safavid, and Mughal empires together as \"gunpowder empires\" because all three relied on cannons and firearms to conquer and centralize control over their territories, combined with administrative systems and religious legitimacy to maintain that power.",
+    "reviewed": false
+  }
+]

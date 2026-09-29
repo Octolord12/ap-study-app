@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-world-u1-mcq-1",
+    "unit": "unit-1-global-tapestry",
+    "topic": "east-asian-states",
+    "difficulty": "easy",
+    "stem": "Which Song dynasty innovation used reusable, interchangeable characters to print books more efficiently than carving an entire page at once?",
+    "choices": [
+      { "label": "A", "text": "Movable type printing", "isCorrect": true, "explanation": "Song China developed movable type printing, arranging individual characters rather than carving a full new woodblock for each page." },
+      { "label": "B", "text": "The compass", "isCorrect": false, "explanation": "The magnetic compass was also refined during this era for navigation, but it's unrelated to printing text." },
+      { "label": "C", "text": "Gunpowder", "isCorrect": false, "explanation": "Gunpowder was developed for weapons and fireworks, not for printing." },
+      { "label": "D", "text": "Paper currency", "isCorrect": false, "explanation": "Paper currency (jiaozi) was a Song financial innovation, but it's unrelated to a printing method." }
+    ],
+    "explanation": "Movable type printing let Song printers rearrange individual characters for new texts instead of carving a new block for every page.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/east-asian-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-2",
+    "unit": "unit-1-global-tapestry",
+    "topic": "east-asian-states",
+    "difficulty": "medium",
+    "stem": "What allowed the Song dynasty's rulers to select government officials based on merit rather than only aristocratic birth?",
+    "choices": [
+      { "label": "A", "text": "The civil service examination system", "isCorrect": true, "explanation": "The examination system, open to men who could prepare for it, tested knowledge of Confucian classics and expanded significantly under the Song." },
+      { "label": "B", "text": "Hereditary succession", "isCorrect": false, "explanation": "Hereditary succession is based on birth, the opposite of merit-based selection." },
+      { "label": "C", "text": "Military conscription", "isCorrect": false, "explanation": "Military conscription compels soldiers to serve; it's unrelated to selecting civil officials." },
+      { "label": "D", "text": "Religious ordination", "isCorrect": false, "explanation": "Religious ordination relates to becoming clergy, not government office." }
+    ],
+    "explanation": "The civil service examination system let the Song government recruit officials based on demonstrated knowledge rather than noble birth alone.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/east-asian-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-3",
+    "unit": "unit-1-global-tapestry",
+    "topic": "east-asian-states",
+    "difficulty": "medium",
+    "stem": "The Mongols, under Kublai Khan, established which dynasty after conquering the Song?",
+    "choices": [
+      { "label": "A", "text": "Yuan", "isCorrect": true, "explanation": "Kublai Khan founded the Yuan dynasty, ruling China as part of the broader Mongol Empire." },
+      { "label": "B", "text": "Ming", "isCorrect": false, "explanation": "The Ming dynasty later overthrew the Mongol-led dynasty; it wasn't established by the Mongols." },
+      { "label": "C", "text": "Qing", "isCorrect": false, "explanation": "The Qing dynasty was established centuries later by the Manchus, not the Mongols." },
+      { "label": "D", "text": "Han", "isCorrect": false, "explanation": "The Han dynasty existed many centuries earlier, long before the Mongol conquests." }
+    ],
+    "explanation": "Kublai Khan completed the conquest of Song China and founded the Yuan dynasty.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/east-asian-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-4",
+    "unit": "unit-1-global-tapestry",
+    "topic": "east-asian-states",
+    "difficulty": "medium",
+    "stem": "Why is the Mongol-led Yuan dynasty notable in the history of Chinese governance?",
+    "choices": [
+      { "label": "A", "text": "It was the first dynasty to unify China", "isCorrect": false, "explanation": "China had already been unified by earlier dynasties well before the Yuan." },
+      { "label": "B", "text": "It was ruled by a foreign (non-Han Chinese) ethnic group", "isCorrect": true, "explanation": "The Yuan was ruled by ethnic Mongols, who favored Mongols and other non-Han officials for top government posts." },
+      { "label": "C", "text": "It relied on a hereditary aristocracy instead of any bureaucratic administration", "isCorrect": false, "explanation": "The Yuan retained much of the existing bureaucratic administrative structure, even while restricting top positions to non-Han officials." },
+      { "label": "D", "text": "It was isolated from trade and contact with the rest of Eurasia", "isCorrect": false, "explanation": "The Yuan, part of the broader Mongol Empire, actively facilitated overland trade across Eurasia -- the opposite of isolation." }
+    ],
+    "explanation": "The Yuan dynasty's defining feature was Mongol (foreign) rule over a predominantly Han Chinese population.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/east-asian-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-5",
+    "unit": "unit-1-global-tapestry",
+    "topic": "east-asian-states",
+    "difficulty": "hard",
+    "stem": "What was a key policy of the Ming dynasty (which followed the Yuan) regarding Mongol/foreign influence?",
+    "choices": [
+      { "label": "A", "text": "Continuing to favor Mongols in high government positions", "isCorrect": false, "explanation": "This describes Yuan policy; the Ming reversed this rather than continuing it." },
+      { "label": "B", "text": "Restoring Han Chinese cultural and administrative traditions, including the civil service exam system", "isCorrect": true, "explanation": "The Ming deliberately reasserted Han Chinese traditions and fully restored the examination system after the Yuan period." },
+      { "label": "C", "text": "Adopting Mongol as the empire's official language", "isCorrect": false, "explanation": "The Ming restored the use of Chinese literary traditions, not the Mongol language, as central to administration." },
+      { "label": "D", "text": "Abolishing the emperor and establishing a republic", "isCorrect": false, "explanation": "The Ming maintained the imperial system with an emperor; it did not establish a republic." }
+    ],
+    "explanation": "The Ming dynasty reasserted Han Chinese governance traditions, including fully restoring the civil service examination system.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/east-asian-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-6",
+    "unit": "unit-1-global-tapestry",
+    "topic": "east-asian-states",
+    "difficulty": "medium",
+    "stem": "The Ming dynasty's naval expeditions led by admiral Zheng He during the early 1400s primarily served what purpose?",
+    "choices": [
+      { "label": "A", "text": "To establish permanent Chinese colonies overseas", "isCorrect": false, "explanation": "Zheng He's voyages did not aim to found permanent overseas colonies." },
+      { "label": "B", "text": "To project Chinese power and prestige and collect tribute from foreign states across the Indian Ocean", "isCorrect": true, "explanation": "The voyages were diplomatic and tribute-collecting missions demonstrating Ming naval and political power." },
+      { "label": "C", "text": "To wage religious wars against non-Buddhist states", "isCorrect": false, "explanation": "These expeditions were not primarily religious conquest missions." },
+      { "label": "D", "text": "To transport enslaved people from Africa to China", "isCorrect": false, "explanation": "This mischaracterizes the purpose of the voyages, which were not centered on a slave trade." }
+    ],
+    "explanation": "Zheng He's treasure fleets were diplomatic and tribute-collecting missions meant to display Ming power and prestige abroad.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/east-asian-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-7",
+    "unit": "unit-1-global-tapestry",
+    "topic": "dar-al-islam",
+    "difficulty": "easy",
+    "stem": "What does the term \"Dar al-Islam\" broadly refer to?",
+    "choices": [
+      { "label": "A", "text": "A specific Islamic empire", "isCorrect": false, "explanation": "It's not one specific empire, but a broader conceptual term for the whole Muslim world." },
+      { "label": "B", "text": "The territories where Islamic rule and culture predominated", "isCorrect": true, "explanation": "\"Dar al-Islam\" (\"house/abode of Islam\") refers broadly to lands under Muslim rule or where Islamic culture was dominant." },
+      { "label": "C", "text": "A single Islamic holy city", "isCorrect": false, "explanation": "It's not a single city; it refers to a broad set of lands." },
+      { "label": "D", "text": "An Islamic legal code", "isCorrect": false, "explanation": "This describes something like sharia, not \"Dar al-Islam.\"" }
+    ],
+    "explanation": "\"Dar al-Islam\" is a broad term for the collective territories where Islamic rule and culture predominated.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/dar-al-islam",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-8",
+    "unit": "unit-1-global-tapestry",
+    "topic": "dar-al-islam",
+    "difficulty": "medium",
+    "stem": "Which trade routes connected the Islamic world to sub-Saharan Africa, facilitating the exchange of goods like gold and salt?",
+    "choices": [
+      { "label": "A", "text": "The Silk Roads", "isCorrect": false, "explanation": "The Silk Roads primarily connected East Asia to Central Asia, the Middle East, and Europe, not primarily sub-Saharan Africa." },
+      { "label": "B", "text": "The Trans-Saharan trade routes", "isCorrect": true, "explanation": "These overland routes crossed the Sahara desert, linking North African Muslim merchants with West African kingdoms." },
+      { "label": "C", "text": "The Grand Canal", "isCorrect": false, "explanation": "The Grand Canal was a Chinese internal waterway, unrelated to trans-Saharan trade." },
+      { "label": "D", "text": "The Hanseatic League routes", "isCorrect": false, "explanation": "The Hanseatic League was a network of merchant guilds in northern Europe, unrelated to trans-Saharan trade." }
+    ],
+    "explanation": "The Trans-Saharan trade routes linked North Africa's Islamic states with West African kingdoms, exchanging goods like salt and gold.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/dar-al-islam",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-9",
+    "unit": "unit-1-global-tapestry",
+    "topic": "dar-al-islam",
+    "difficulty": "medium",
+    "stem": "What role did Sufi missionaries play in the spread of Islam during this period?",
+    "choices": [
+      { "label": "A", "text": "They enforced Islam through military conquest exclusively", "isCorrect": false, "explanation": "Sufi missionaries relied significantly on peaceful, mystical, and syncretic approaches, not solely military conquest." },
+      { "label": "B", "text": "They spread Islam partly through mysticism and adaptability to local customs, aiding conversion in regions like South and Southeast Asia", "isCorrect": true, "explanation": "Sufi mysticism's flexibility and openness to blending with local traditions made it an effective vehicle for peaceful conversion." },
+      { "label": "C", "text": "They rejected all forms of trade or travel", "isCorrect": false, "explanation": "Sufi traders and missionaries often traveled along trade routes, engaging in commerce as they spread their faith." },
+      { "label": "D", "text": "They had no role in religious conversion", "isCorrect": false, "explanation": "Sufi missionaries played a significant, well-documented role in religious conversion in various regions." }
+    ],
+    "explanation": "Sufi missionaries spread Islam through mystical practice and willingness to adapt to local customs, aiding conversion far from the Islamic heartland.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/dar-al-islam",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-10",
+    "unit": "unit-1-global-tapestry",
+    "topic": "dar-al-islam",
+    "difficulty": "hard",
+    "stem": "How did various Islamic states of this era (such as the Delhi Sultanate) generally treat non-Muslim subjects, such as Hindus in South Asia?",
+    "choices": [
+      { "label": "A", "text": "All non-Muslims were forcibly converted immediately upon conquest", "isCorrect": false, "explanation": "Forced immediate mass conversion was not the general policy; tolerance with a special tax was more typical." },
+      { "label": "B", "text": "Non-Muslims were typically permitted to practice their religion, often subject to a special tax (jizya)", "isCorrect": true, "explanation": "Non-Muslim subjects generally retained the right to practice their faith while paying the jizya, a tax specific to non-Muslims." },
+      { "label": "C", "text": "Non-Muslims were entirely exempt from any taxation", "isCorrect": false, "explanation": "Non-Muslims were generally required to pay the jizya tax specifically because of their religious status, not exempted from taxation altogether." },
+      { "label": "D", "text": "Non-Muslims were banned from all forms of employment", "isCorrect": false, "explanation": "Non-Muslims continued to participate in various occupations and often retained significant roles in administration and commerce." }
+    ],
+    "explanation": "Islamic states typically permitted non-Muslims to practice their religion in exchange for a special tax (jizya), rather than forcing conversion.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/dar-al-islam",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-11",
+    "unit": "unit-1-global-tapestry",
+    "topic": "dar-al-islam",
+    "difficulty": "medium",
+    "stem": "What was a significant intellectual contribution associated with cities like Baghdad and Cairo within Dar al-Islam during this era?",
+    "choices": [
+      { "label": "A", "text": "The invention of the printing press", "isCorrect": false, "explanation": "The printing press (movable type in Europe) is a later, separate development, not centered in Baghdad or Cairo during this era." },
+      { "label": "B", "text": "The preservation and expansion of classical Greek and Roman knowledge alongside new advances in mathematics, medicine, and astronomy", "isCorrect": true, "explanation": "Scholars in cities like Baghdad translated and built upon classical texts while making original advances in numerous fields." },
+      { "label": "C", "text": "The first circumnavigation of the globe", "isCorrect": false, "explanation": "Circumnavigation of the globe is associated with a later European voyage (Magellan's expedition)." },
+      { "label": "D", "text": "The founding of the first parliamentary democracy", "isCorrect": false, "explanation": "This doesn't describe Islamic intellectual centers of this period; parliamentary democracy developed elsewhere and later." }
+    ],
+    "explanation": "Islamic intellectual centers preserved classical knowledge while advancing mathematics, medicine, and astronomy.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/dar-al-islam",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-12",
+    "unit": "unit-1-global-tapestry",
+    "topic": "dar-al-islam",
+    "difficulty": "medium",
+    "stem": "Which of these best describes the political structure of Dar al-Islam by this period (c. 1200-1450)?",
+    "choices": [
+      { "label": "A", "text": "A single unified caliphate ruling all Muslim territories", "isCorrect": false, "explanation": "By this period the Muslim world had already fragmented into multiple competing states and dynasties." },
+      { "label": "B", "text": "Multiple separate and often competing states/dynasties, despite a shared religious and cultural identity", "isCorrect": true, "explanation": "Dar al-Islam by this era consisted of numerous distinct, sometimes rival, political states unified more by religion and culture than by a single government." },
+      { "label": "C", "text": "Direct rule by the Mongol Empire over the entire Islamic world", "isCorrect": false, "explanation": "While the Mongols conquered and destroyed the Abbasid capital of Baghdad, they did not rule the entirety of the Islamic world." },
+      { "label": "D", "text": "Complete absence of any centralized political authority anywhere", "isCorrect": false, "explanation": "Various states had centralized authority within their own realms, even if the wider Islamic world was politically fragmented." }
+    ],
+    "explanation": "By this era, Dar al-Islam consisted of multiple competing states and dynasties, unified more by shared religion and culture than by one government.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/dar-al-islam",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-13",
+    "unit": "unit-1-global-tapestry",
+    "topic": "south-and-southeast-asia",
+    "difficulty": "easy",
+    "stem": "Which major religion, originating in South Asia, spread widely to Southeast Asia through trade and cultural contact during this period, along with Hinduism?",
+    "choices": [
+      { "label": "A", "text": "Buddhism", "isCorrect": true, "explanation": "Buddhism spread from South Asia into Southeast Asia via trade routes and missionary activity, alongside Hinduism." },
+      { "label": "B", "text": "Christianity", "isCorrect": false, "explanation": "Christianity's spread to Southeast Asia during this era was much more limited compared to Buddhism and Hinduism." },
+      { "label": "C", "text": "Judaism", "isCorrect": false, "explanation": "Judaism did not spread significantly to Southeast Asia during this period." },
+      { "label": "D", "text": "Shinto", "isCorrect": false, "explanation": "Shinto is indigenous to Japan, not South Asia, and did not spread to Southeast Asia this way." }
+    ],
+    "explanation": "Buddhism, alongside Hinduism, spread from South Asia into Southeast Asia through trade and cultural contact.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/south-and-southeast-asia",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-14",
+    "unit": "unit-1-global-tapestry",
+    "topic": "south-and-southeast-asia",
+    "difficulty": "medium",
+    "stem": "The kingdom of Majapahit, a significant power in maritime Southeast Asia during this period, was centered on which island?",
+    "choices": [
+      { "label": "A", "text": "Java", "isCorrect": true, "explanation": "Majapahit was a Javanese kingdom, one of the last major Hindu-Buddhist states in the Indonesian archipelago." },
+      { "label": "B", "text": "Sumatra", "isCorrect": false, "explanation": "Sumatra was home to other significant states like Srivijaya, but Majapahit was centered on Java." },
+      { "label": "C", "text": "Borneo", "isCorrect": false, "explanation": "Borneo was not the center of the Majapahit kingdom." },
+      { "label": "D", "text": "Luzon", "isCorrect": false, "explanation": "Luzon is in the Philippines, a different region from Majapahit's core territory." }
+    ],
+    "explanation": "Majapahit was centered on the island of Java in what is now Indonesia.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/south-and-southeast-asia",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-15",
+    "unit": "unit-1-global-tapestry",
+    "topic": "south-and-southeast-asia",
+    "difficulty": "medium",
+    "stem": "What role did Southeast Asian port cities like Malacca play in this era's trade networks?",
+    "choices": [
+      { "label": "A", "text": "They were isolated from international trade", "isCorrect": false, "explanation": "These ports were deeply connected to trade, not isolated from it." },
+      { "label": "B", "text": "They served as crucial hubs connecting Indian Ocean and East Asian trade routes", "isCorrect": true, "explanation": "Malacca's location on the strait between the Indian Ocean and South China Sea made it a vital link between these trade zones." },
+      { "label": "C", "text": "They exclusively traded with European nations", "isCorrect": false, "explanation": "During this era, European trade contact in the region hadn't yet begun; these ports primarily connected Asian trade networks." },
+      { "label": "D", "text": "They were primarily agricultural centers with no maritime trade", "isCorrect": false, "explanation": "These were maritime trading hubs, not primarily agricultural centers." }
+    ],
+    "explanation": "Port cities like Malacca connected Indian Ocean and East Asian trade routes, becoming vital commercial hubs.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/south-and-southeast-asia",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-16",
+    "unit": "unit-1-global-tapestry",
+    "topic": "south-and-southeast-asia",
+    "difficulty": "hard",
+    "stem": "How did Hindu and Buddhist influences typically interact with local Southeast Asian cultures and belief systems during this period?",
+    "choices": [
+      { "label": "A", "text": "They completely replaced all existing local traditions and beliefs", "isCorrect": false, "explanation": "Local traditions were not entirely erased; blending with indigenous beliefs was common." },
+      { "label": "B", "text": "They were syncretized, or blended, with existing local traditions rather than wholly replacing them", "isCorrect": true, "explanation": "Southeast Asian societies typically adapted Hindu and Buddhist ideas alongside, rather than in place of, indigenous beliefs and practices." },
+      { "label": "C", "text": "They were violently rejected and never took hold", "isCorrect": false, "explanation": "Hindu and Buddhist influences were widely and successfully adopted (with adaptation), not violently rejected." },
+      { "label": "D", "text": "They had no lasting cultural impact", "isCorrect": false, "explanation": "These influences had substantial, lasting cultural impact across the region, from temple architecture to court traditions." }
+    ],
+    "explanation": "Hindu and Buddhist ideas were syncretized with existing local traditions across Southeast Asia rather than replacing them outright.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/south-and-southeast-asia",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-17",
+    "unit": "unit-1-global-tapestry",
+    "topic": "south-and-southeast-asia",
+    "difficulty": "medium",
+    "stem": "The Delhi Sultanate, established in South Asia during this period, was primarily ruled by leaders of what religious/cultural background?",
+    "choices": [
+      { "label": "A", "text": "Hindu", "isCorrect": false, "explanation": "The Delhi Sultanate's rulers were Muslim, even though most of the population they ruled over remained Hindu." },
+      { "label": "B", "text": "Muslim", "isCorrect": true, "explanation": "The Delhi Sultanate was founded and ruled by Muslim dynasties over a largely Hindu population." },
+      { "label": "C", "text": "Buddhist", "isCorrect": false, "explanation": "Buddhism was not the ruling tradition of the Delhi Sultanate." },
+      { "label": "D", "text": "Christian", "isCorrect": false, "explanation": "Christianity was not connected to the Delhi Sultanate's rulers." }
+    ],
+    "explanation": "The Delhi Sultanate was ruled by a succession of Muslim dynasties governing a predominantly Hindu population.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/south-and-southeast-asia",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-18",
+    "unit": "unit-1-global-tapestry",
+    "topic": "south-and-southeast-asia",
+    "difficulty": "medium",
+    "stem": "Why were South and Southeast Asian states like the Delhi Sultanate and Majapahit economically significant during this era?",
+    "choices": [
+      { "label": "A", "text": "They had no connection to any wider trade networks", "isCorrect": false, "explanation": "These states were, in fact, deeply integrated into wider regional and interregional trade networks." },
+      { "label": "B", "text": "Their locations along key maritime and overland trade routes made them centers of commerce connecting distant regions", "isCorrect": true, "explanation": "Their strategic positions along major trade routes let them profit from and facilitate long-distance commerce." },
+      { "label": "C", "text": "They banned all foreign merchants from entering their territory", "isCorrect": false, "explanation": "Foreign merchants were generally welcomed, since trade was central to these states' prosperity." },
+      { "label": "D", "text": "They relied solely on subsistence agriculture with no surplus production", "isCorrect": false, "explanation": "These states produced agricultural and craft surpluses that supported substantial trade and urban centers." }
+    ],
+    "explanation": "These states' strategic locations along major trade routes made them significant centers connecting distant trading regions.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/south-and-southeast-asia",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-19",
+    "unit": "unit-1-global-tapestry",
+    "topic": "state-building-americas-africa",
+    "difficulty": "easy",
+    "stem": "Which large-scale urban civilization flourished in the Mississippi River valley of North America, notably at the site of Cahokia, before European contact?",
+    "choices": [
+      { "label": "A", "text": "The Aztec Empire", "isCorrect": false, "explanation": "The Aztec Empire was centered in central Mexico (Mesoamerica), not the Mississippi River valley." },
+      { "label": "B", "text": "The Mississippian culture", "isCorrect": true, "explanation": "The Mississippian culture built large mound-centered cities, including Cahokia, in the Mississippi River valley." },
+      { "label": "C", "text": "The Inca Empire", "isCorrect": false, "explanation": "The Inca Empire was centered in the Andes of South America, not North America." },
+      { "label": "D", "text": "The Maya civilization (at its height)", "isCorrect": false, "explanation": "The Maya civilization was centered in Mesoamerica, and its classic-era peak predates this culture in the Mississippi valley." }
+    ],
+    "explanation": "The Mississippian culture, centered at sites like Cahokia, built large mound-centered urban settlements in the Mississippi River valley.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/state-building-americas-africa",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-20",
+    "unit": "unit-1-global-tapestry",
+    "topic": "state-building-americas-africa",
+    "difficulty": "medium",
+    "stem": "What evidence suggests Cahokia was a major urban center around 1200 CE?",
+    "choices": [
+      { "label": "A", "text": "It had no residents at all", "isCorrect": false, "explanation": "Cahokia had a substantial population, likely among the largest urban centers in North America at the time." },
+      { "label": "B", "text": "Large earthen mounds, a substantial population, and evidence of long-distance trade networks", "isCorrect": true, "explanation": "Archaeological evidence at Cahokia shows monumental earthworks, dense settlement, and goods traded from distant regions." },
+      { "label": "C", "text": "It was a small village with fewer than ten residents", "isCorrect": false, "explanation": "Cahokia was a major population center, not a tiny village." },
+      { "label": "D", "text": "It had no agricultural production of any kind", "isCorrect": false, "explanation": "Cahokia's population was supported significantly by agriculture, particularly maize farming." }
+    ],
+    "explanation": "Cahokia's monumental mounds, dense population, and long-distance trade goods mark it as a major urban center.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/state-building-americas-africa",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-21",
+    "unit": "unit-1-global-tapestry",
+    "topic": "state-building-americas-africa",
+    "difficulty": "medium",
+    "stem": "The kingdom of Mali, in West Africa, grew wealthy primarily through control of trade in which two key commodities?",
+    "choices": [
+      { "label": "A", "text": "Tea and silk", "isCorrect": false, "explanation": "Tea and silk were significant in East Asian trade, not the primary basis of Mali's wealth." },
+      { "label": "B", "text": "Gold and salt", "isCorrect": true, "explanation": "Mali controlled key points in the trans-Saharan trade of gold (from the south) and salt (from the north)." },
+      { "label": "C", "text": "Ivory and spices", "isCorrect": false, "explanation": "While ivory was traded in parts of Africa, gold and salt were the commodities most central to Mali's trans-Saharan trade wealth." },
+      { "label": "D", "text": "Sugar and tobacco", "isCorrect": false, "explanation": "Sugar and tobacco became significant commodities later, associated with the Americas and the Atlantic system, not medieval Mali." }
+    ],
+    "explanation": "Mali's wealth came primarily from controlling the trans-Saharan trade in gold and salt.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/state-building-americas-africa",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-22",
+    "unit": "unit-1-global-tapestry",
+    "topic": "state-building-americas-africa",
+    "difficulty": "hard",
+    "stem": "Mansa Musa, a ruler of the Mali Empire, became famous in part because of what event during his reign?",
+    "choices": [
+      { "label": "A", "text": "His military defeat by a rival African kingdom", "isCorrect": false, "explanation": "Mansa Musa is not primarily remembered for a military defeat; his fame stems chiefly from his famous hajj." },
+      { "label": "B", "text": "His pilgrimage (hajj) to Mecca, during which his extensive gold spending drew significant international attention", "isCorrect": true, "explanation": "Mansa Musa's hajj across North Africa and the Middle East, with his lavish gold spending, made Mali's wealth famous abroad." },
+      { "label": "C", "text": "His conversion of Mali to Christianity", "isCorrect": false, "explanation": "Mansa Musa was Muslim (his hajj to Mecca reflects this), not a promoter of Christianity." },
+      { "label": "D", "text": "His establishment of a trade agreement with the Aztec Empire", "isCorrect": false, "explanation": "The Aztec Empire, in Mesoamerica, had no documented contact or trade agreement with Mali in West Africa." }
+    ],
+    "explanation": "Mansa Musa's hajj to Mecca, marked by extravagant gold spending, brought international fame to Mali's wealth.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/state-building-americas-africa",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-23",
+    "unit": "unit-1-global-tapestry",
+    "topic": "state-building-americas-africa",
+    "difficulty": "medium",
+    "stem": "The Swahili Coast of East Africa developed as a major trading region primarily due to its connections with which trade network?",
+    "choices": [
+      { "label": "A", "text": "The Trans-Saharan trade routes", "isCorrect": false, "explanation": "The Trans-Saharan routes connected North and West Africa, a different network than the Swahili Coast's primary trade connections." },
+      { "label": "B", "text": "The Indian Ocean trade network", "isCorrect": true, "explanation": "Swahili Coast city-states traded directly with Arabia, Persia, India, and beyond via Indian Ocean monsoon-driven shipping routes." },
+      { "label": "C", "text": "The Silk Roads exclusively", "isCorrect": false, "explanation": "While some goods might have eventually connected to Silk Road networks, the Swahili Coast's direct, defining trade connections were via the Indian Ocean." },
+      { "label": "D", "text": "The Atlantic trade system", "isCorrect": false, "explanation": "The Atlantic trade system developed later and connected different regions (Europe, West Africa, and the Americas)." }
+    ],
+    "explanation": "The Swahili Coast's prosperity came from its direct participation in Indian Ocean trade networks.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/state-building-americas-africa",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-24",
+    "unit": "unit-1-global-tapestry",
+    "topic": "state-building-americas-africa",
+    "difficulty": "medium",
+    "stem": "What common feature characterized the Swahili Coast's city-states (such as Kilwa and Mombasa) during this period?",
+    "choices": [
+      { "label": "A", "text": "They were entirely isolated, agricultural-only communities", "isCorrect": false, "explanation": "These city-states were deeply engaged in maritime trade, not isolated or purely agricultural." },
+      { "label": "B", "text": "They blended African, Arab, and Persian cultural influences, reflected in language (Swahili) and Islamic religious practice", "isCorrect": true, "explanation": "The Swahili language and culture emerged from this blending of Bantu African roots with Arab and Persian trade contact and Islam." },
+      { "label": "C", "text": "They rejected all foreign trade and cultural contact", "isCorrect": false, "explanation": "Foreign trade and cultural exchange, especially with Arab and Persian merchants, were central to these city-states' character." },
+      { "label": "D", "text": "They were ruled directly by the Mali Empire", "isCorrect": false, "explanation": "The Swahili Coast city-states were politically independent, not governed by the Mali Empire, which was located in a different region of Africa." }
+    ],
+    "explanation": "Swahili Coast city-states blended African, Arab, and Persian influences, visible in their language and Islamic religious practice.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/state-building-americas-africa",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-25",
+    "unit": "unit-1-global-tapestry",
+    "topic": "european-christendom",
+    "difficulty": "easy",
+    "stem": "What was the dominant religious institution shaping political and cultural life in medieval Western Europe during this period?",
+    "choices": [
+      { "label": "A", "text": "The Roman Catholic Church", "isCorrect": true, "explanation": "The Roman Catholic Church was the central religious and cultural institution across medieval Western Europe." },
+      { "label": "B", "text": "The Ottoman Sultanate", "isCorrect": false, "explanation": "The Ottoman Sultanate was an Islamic political entity centered in Anatolia, not the dominant institution in Western Europe." },
+      { "label": "C", "text": "The Eastern Orthodox Patriarchate of Constantinople exclusively", "isCorrect": false, "explanation": "The Eastern Orthodox Church was centered in the Byzantine Empire, distinct from Western Europe's Roman Catholic Church." },
+      { "label": "D", "text": "Confucian scholarly institutions", "isCorrect": false, "explanation": "Confucian institutions were centered in East Asia, unrelated to medieval Western Europe." }
+    ],
+    "explanation": "The Roman Catholic Church was the dominant religious and cultural force shaping medieval Western Europe.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/european-christendom",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-26",
+    "unit": "unit-1-global-tapestry",
+    "topic": "european-christendom",
+    "difficulty": "medium",
+    "stem": "What was feudalism, as it developed in medieval Western Europe?",
+    "choices": [
+      { "label": "A", "text": "A centralized bureaucratic system similar to China's civil service", "isCorrect": false, "explanation": "Feudalism was notably decentralized, unlike China's centralized bureaucratic examination system." },
+      { "label": "B", "text": "A decentralized political and economic system based on land-holding relationships between lords and vassals", "isCorrect": true, "explanation": "Feudalism organized political and military obligations around grants of land from lords to vassals in exchange for service." },
+      { "label": "C", "text": "A form of direct democracy", "isCorrect": false, "explanation": "Feudalism involved hierarchical lord-vassal relationships, not democratic participation." },
+      { "label": "D", "text": "A trade-based economic system with no relationship to land ownership", "isCorrect": false, "explanation": "Feudalism was fundamentally tied to land-holding and the obligations attached to that land, not an independent trade-based system." }
+    ],
+    "explanation": "Feudalism was a decentralized system organizing political and military life around land-holding relationships between lords and vassals.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/european-christendom",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-27",
+    "unit": "unit-1-global-tapestry",
+    "topic": "european-christendom",
+    "difficulty": "medium",
+    "stem": "The Byzantine Empire, centered at Constantinople, served as a continuation of which earlier empire?",
+    "choices": [
+      { "label": "A", "text": "The Roman Empire (its eastern half)", "isCorrect": true, "explanation": "The Byzantine Empire developed directly from the Eastern Roman Empire after the western half fell." },
+      { "label": "B", "text": "The Persian Empire", "isCorrect": false, "explanation": "The Byzantine Empire developed from the Eastern Roman Empire, not the Persian Empire, though the two frequently interacted and fought." },
+      { "label": "C", "text": "The Mongol Empire", "isCorrect": false, "explanation": "The Mongol Empire arose centuries later and in a different region, unrelated to Byzantine origins." },
+      { "label": "D", "text": "The Umayyad Caliphate", "isCorrect": false, "explanation": "The Umayyad Caliphate was an Islamic empire, a rival and neighbor of Byzantium, not its origin." }
+    ],
+    "explanation": "The Byzantine Empire was the continuation of the Eastern Roman Empire, centered at Constantinople.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/european-christendom",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-28",
+    "unit": "unit-1-global-tapestry",
+    "topic": "european-christendom",
+    "difficulty": "hard",
+    "stem": "What was a significant consequence of the split between the Roman Catholic Church (Western Europe) and the Eastern Orthodox Church (Byzantine Empire), formalized in 1054 CE?",
+    "choices": [
+      { "label": "A", "text": "Complete religious unification of Christianity worldwide", "isCorrect": false, "explanation": "This event (the Great Schism) represented a division, the opposite of unification." },
+      { "label": "B", "text": "A lasting religious and cultural division between Western and Eastern Christendom", "isCorrect": true, "explanation": "The Great Schism formalized a division between Catholic and Orthodox Christianity that has persisted for centuries." },
+      { "label": "C", "text": "The immediate end of Christianity as a religion", "isCorrect": false, "explanation": "Christianity continued to thrive and expand in both traditions after this split." },
+      { "label": "D", "text": "The conversion of both churches to Islam", "isCorrect": false, "explanation": "Neither church converted to Islam as a result of this internal Christian schism." }
+    ],
+    "explanation": "The Great Schism of 1054 formalized a lasting division between Roman Catholic and Eastern Orthodox Christianity.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/european-christendom",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-29",
+    "unit": "unit-1-global-tapestry",
+    "topic": "european-christendom",
+    "difficulty": "medium",
+    "stem": "Which of these was a major cultural/intellectual development in medieval Western Europe during this period?",
+    "choices": [
+      { "label": "A", "text": "The founding of the first universities, such as those at Bologna and Paris", "isCorrect": true, "explanation": "Medieval Western Europe saw the emergence of universities as centers of formal higher learning." },
+      { "label": "B", "text": "The invention of gunpowder", "isCorrect": false, "explanation": "Gunpowder's development and early use is associated with China, not medieval European universities." },
+      { "label": "C", "text": "The completion of the Great Wall of China", "isCorrect": false, "explanation": "The Great Wall of China is a separate development in a different civilization." },
+      { "label": "D", "text": "The construction of the Taj Mahal", "isCorrect": false, "explanation": "The Taj Mahal was built much later (17th century) by the Mughal Empire in South Asia, unrelated to medieval European university founding." }
+    ],
+    "explanation": "The founding of universities like Bologna and Paris was a major intellectual development of medieval Western Europe.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/european-christendom",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-mcq-30",
+    "unit": "unit-1-global-tapestry",
+    "topic": "european-christendom",
+    "difficulty": "medium",
+    "stem": "How did the Catholic Church's influence extend beyond purely religious matters in medieval Western Europe?",
+    "choices": [
+      { "label": "A", "text": "It had no influence beyond church services", "isCorrect": false, "explanation": "The Church's influence extended far beyond religious services into political, educational, and legal spheres." },
+      { "label": "B", "text": "It played significant roles in politics, education, and law, including crowning monarchs and operating most schools", "isCorrect": true, "explanation": "The Church's authority extended into political legitimacy, education, and legal matters across medieval Europe." },
+      { "label": "C", "text": "It was entirely separate from and uninvolved in any political affairs", "isCorrect": false, "explanation": "The Church was deeply involved in political affairs, such as papal influence over kings and church-state conflicts." },
+      { "label": "D", "text": "It was banned from owning any property or land", "isCorrect": false, "explanation": "The Church was one of medieval Europe's largest landowners, not banned from property ownership." }
+    ],
+    "explanation": "The Catholic Church's influence extended well beyond religious services into politics, education, and law.",
+    "conceptLink": "ap-world/unit-1-global-tapestry/european-christendom",
+    "reviewed": false
+  }
+]

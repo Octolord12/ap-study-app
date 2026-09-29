@@ -379,9 +379,10 @@ each with a nested `topics` array) match `CourseSchema`/`UnitSchema` in
 `src/lib/content/schema.ts` — see that file for the exact shape, including
 `examFormat` (why this must stay data, not hardcoded, is explained below).
 
-**Sample bank seeded so far**: AP CSA is fully authored (all 10 units, 300
-MCQs + 30 FRQs) — see the Milestone 7 section below. AP World History:
-Modern, AP Calculus AB, and AP Physics 1 have no content yet.
+**Sample bank seeded so far**: AP CSA (10 units, 300 MCQs + 30 FRQs) and
+AP World History: Modern (9 units, 270 MCQs + 35 FRQs) are fully authored —
+see the Milestone 7 section below. AP Calculus AB and AP Physics 1 have no
+content yet.
 
 ### Content generation at scale (Milestone 7, in progress)
 
@@ -400,10 +401,43 @@ tested primitive types only (`int`/`double`/`boolean`/`char`/`String` —
 Correctness approach for a CS course (the spec's "verify programmatically
 where possible" is really aimed at Calc/Physics numerics): every Java
 snippet was hand-traced before writing the "correct" answer and distractor
-explanations, rather than trusting a plausible-looking trace. Not yet
-started: AP World History: Modern, AP Calculus AB, AP Physics 1 — each is
-its own pass through this same process, one at a time, pausing for review
-after each.
+explanations, rather than trusting a plausible-looking trace.
+
+**AP World History: Modern — done.** All 9 units of the stable CED (The
+Global Tapestry → Networks of Exchange → Land-Based Empires → Transoceanic
+Interconnections → Revolutions → Consequences of Industrialization → Global
+Conflict → Cold War and Decolonization → Globalization), each with 30 MCQs +
+3 SAQs (270 MCQs + 27 SAQs total), plus a separate course-level pool of 4
+DBQs + 4 LEQs (`content/ap-world/frqs/dbq-leq-pool.json`) not tied to a
+single unit's narrow time period — 35 FRQ-type items total. Unlike CSA,
+this course's exam has three distinct non-MCQ item types (SAQ/DBQ/LEQ), not
+one uniform FRQ, so this was an explicit scope decision (asked the owner via
+AskUserQuestion before writing 9 units' worth of content): SAQs are
+per-unit since they're naturally unit-scoped on the real exam, while DBQs
+and LEQs — which typically synthesize across broader time periods rather
+than fitting one unit — got their own pool, each still tagged to whichever
+unit its theme most centers on (a required FK, since `FRQPrompt.unitId` is
+non-optional). DBQ documents are original, invented-but-plausible excerpts
+with realistic attributions (not verbatim quotes from real historical
+sources or from any College Board exam) to stay clearly original while
+still exercising the document-analysis skill. `examFormat` in
+`content/ap-world/course.json` reflects the *current* (pre-May-2027) exam
+structure per the table below, not the upcoming change.
+
+**Known gap this surfaced**: `FRQPrompt` has no field distinguishing
+SAQ/DBQ/LEQ (or, for CSA, there was never a need to distinguish types at
+all). The exam simulator (Milestone 4) picks `questionCount` FRQPrompts at
+random from a course's whole pool to fill a section — for CSA that's fine
+(one homogeneous type), but for AP World History it means an exam sim run
+could hand a student 3 SAQs and no DBQ/LEQ, or any other mix, rather than
+reliably the 1 SAQ + 1 DBQ + 1 LEQ the real exam gives. Fixing this would
+mean adding an item-type field to the schema/model and updating the exam
+selection logic — an app-engine change, out of scope for a content-only
+milestone. Flagging it here rather than either silently building it
+unasked or silently shipping content that won't exercise correctly.
+
+Not yet started: AP Calculus AB, AP Physics 1 — each is its own pass
+through this same process, one at a time, pausing for review after each.
 
 **Review workflow** (the spec's "simple admin/review view" requirement):
 `/admin/review` (`src/app/admin/review/`), gated by `src/lib/admin/session.ts`'s
@@ -496,12 +530,16 @@ in app logic — updating them should be a data edit.
       out actually removes a user from the leaderboard (not just visually)
       while leaving them in the friends list.
 - [ ] **Milestone 7 — Content at scale (in progress).** Full starter banks
-      (~30 MCQ + 3 FRQ per unit), validated, plus a review workflow. Scope
-      decision: one course at a time, pausing for owner review after each
-      (see the Content generation section above). **AP CSA done**: 10/10
-      units, 300 MCQs + 30 FRQs, seeded and validated. Admin review UI built
-      (`/admin/review`). Still to do: AP World History: Modern, AP Calculus
-      AB, AP Physics 1 (each its own pass, same process).
+      (~30 MCQ + 3 FRQ-type items per unit), validated, plus a review
+      workflow. Scope decision: one course at a time, pausing for owner
+      review after each (see the Content generation section above).
+      **AP CSA done**: 10/10 units, 300 MCQs + 30 FRQs, seeded and
+      validated. **AP World History: Modern done**: 9/9 units, 270 MCQs +
+      27 SAQs, plus a separate course-level pool of 4 DBQs + 4 LEQs (35 FRQ-
+      type items total), seeded and validated — see the known exam-engine
+      gap (no SAQ/DBQ/LEQ type field on `FRQPrompt`) noted above. Admin
+      review UI built (`/admin/review`), now covering both courses. Still
+      to do: AP Calculus AB, AP Physics 1 (each its own pass, same process).
 - [ ] **Milestone 8 — Polish and launch prep.** Accessibility, mobile testing,
       performance, error handling, deployment, README.
 

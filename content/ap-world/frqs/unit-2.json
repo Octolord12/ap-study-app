@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u2-saq-1",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "mongol-empire",
+    "prompt": "Historians often describe the 13th and 14th centuries as a period of increased connectivity across Eurasia due to Mongol conquests.\n\nUsing your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way that Mongol rule facilitated increased trade across Eurasia.\n\n**b)** Explain ONE negative consequence of this increased connectivity for populations across Eurasia.\n\n**c)** Describe ONE example of a specific khanate or successor state that emerged from the division of the Mongol Empire.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes Mongol facilitation of trade, such as unifying vast territories under one system of control and providing relative safety along trade routes (Pax Mongolica)" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that increased travel and trade connectivity contributed to the rapid spread of the bubonic plague (Black Death) across Eurasia" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes a specific successor khanate, such as the Yuan dynasty in China, the Golden Horde in Russia/Eastern Europe, or the Ilkhanate in Persia/the Middle East" }
+    ],
+    "sampleResponse": "a) By conquering and unifying a vast stretch of territory from China to Eastern Europe, the Mongols reduced banditry and political fragmentation along overland routes, making long-distance trade safer and more predictable for merchants.\nb) This same connectivity that helped trade also allowed disease to travel farther and faster than before; the bubonic plague spread along these Mongol-secured routes from Asia into the Middle East and Europe, causing devastating population loss.\nc) The Golden Horde, a Mongol khanate that ruled over much of Russia and parts of Eastern Europe, was one of the successor states that emerged after the Mongol Empire divided.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-saq-2",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "indian-ocean-trade",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE feature that made Indian Ocean trade during this period different from trans-Saharan trade.\n\n**b)** Explain ONE reason monsoon winds were important to merchants participating in Indian Ocean trade.\n\n**c)** Describe ONE way port cities along the Indian Ocean developed as a result of sustained international trade contact.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes a difference such as Indian Ocean trade relying on maritime, ship-based transport across open water, while trans-Saharan trade relied on overland camel caravans crossing a desert" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that the predictable seasonal reversal of monsoon winds allowed sailors to plan voyages, sailing in one direction during one season and returning in the opposite direction during another" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes port cities developing cosmopolitan, culturally blended characteristics (e.g. adopting Islam, blending local and foreign architectural or cultural styles) due to sustained contact with diverse merchants" }
+    ],
+    "sampleResponse": "a) Indian Ocean trade was conducted by ships sailing across open water between coastal ports, while trans-Saharan trade relied on camel caravans crossing overland through the desert.\nb) Monsoon winds blew reliably in one direction for part of the year and reversed for the rest of the year, so merchants could plan to sail outward on one monsoon and return home on the opposite one.\nc) Port cities like those on the Swahili Coast developed a cosmopolitan blend of African, Arab, and Persian cultural influences, including widespread adoption of Islam and the emergence of the Swahili language, as a direct result of sustained trade contact.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-saq-3",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "trans-saharan-trade",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE commodity that was central to trans-Saharan trade.\n\n**b)** Explain ONE way trans-Saharan trade contributed to religious change in West Africa.\n\n**c)** Describe ONE way a specific West African state (such as Mali) benefited economically from its position along trans-Saharan trade routes.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes gold, salt, or enslaved people as a central trans-Saharan trade commodity" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that sustained contact with Muslim North African merchants gradually spread Islam to West African rulers and elites" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes Mali's control and taxation of trade routes carrying gold and salt as a source of wealth and political power (e.g. Mansa Musa's famous hajj demonstrating this wealth)" }
+    ],
+    "sampleResponse": "a) Gold, mined in West Africa, was one of the central commodities carried north across the Sahara in exchange for goods like salt.\nb) Muslim merchants from North Africa traveled these trade routes regularly and brought their religion with them, gradually leading West African rulers and elites to adopt Islam through sustained commercial and cultural contact.\nc) Mali taxed the gold and salt passing through its territory along the trans-Saharan routes, and this wealth was famously displayed when Mansa Musa's lavish spending of gold during his hajj to Mecca drew international attention to the empire's riches.",
+    "reviewed": false
+  }
+]

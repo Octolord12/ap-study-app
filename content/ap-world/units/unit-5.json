@@ -1,0 +1,14 @@
+{
+  "slug": "unit-5-revolutions",
+  "order": 5,
+  "name": "Revolutions",
+  "weightingMin": 12,
+  "weightingMax": 15,
+  "topics": [
+    { "slug": "enlightenment-thought", "order": 1, "name": "The Enlightenment" },
+    { "slug": "atlantic-revolutions", "order": 2, "name": "Nationalism and Atlantic Revolutions" },
+    { "slug": "industrial-revolution-begins", "order": 3, "name": "The Industrial Revolution Begins" },
+    { "slug": "reactions-to-industrialization", "order": 4, "name": "Economic and Political Reactions to Industrialization" },
+    { "slug": "effects-of-industrialization", "order": 5, "name": "Societal Effects of Industrialization" }
+  ]
+}

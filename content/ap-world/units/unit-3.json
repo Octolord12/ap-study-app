@@ -1,0 +1,13 @@
+{
+  "slug": "unit-3-land-based-empires",
+  "order": 3,
+  "name": "Land-Based Empires",
+  "weightingMin": 12,
+  "weightingMax": 15,
+  "topics": [
+    { "slug": "empires-expand", "order": 1, "name": "Empires Expand" },
+    { "slug": "empires-administration", "order": 2, "name": "Empires: Administration" },
+    { "slug": "religion-and-state-power", "order": 3, "name": "Belief Systems and Political Power" },
+    { "slug": "comparing-empires", "order": 4, "name": "Comparing Land-Based Empires" }
+  ]
+}

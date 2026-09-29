@@ -1,0 +1,14 @@
+{
+  "slug": "unit-7-global-conflict",
+  "order": 7,
+  "name": "Global Conflict",
+  "weightingMin": 12,
+  "weightingMax": 15,
+  "topics": [
+    { "slug": "causes-of-world-war-one", "order": 1, "name": "Causes of World War I" },
+    { "slug": "world-war-one-and-russian-revolution", "order": 2, "name": "World War I and the Russian Revolution" },
+    { "slug": "interwar-period", "order": 3, "name": "The Interwar Period" },
+    { "slug": "causes-of-world-war-two", "order": 4, "name": "Causes of World War II" },
+    { "slug": "world-war-two-and-mass-atrocities", "order": 5, "name": "World War II and Mass Atrocities" }
+  ]
+}

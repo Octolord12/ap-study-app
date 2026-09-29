@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-world-u8-mcq-1",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "origins-of-the-cold-war",
+    "difficulty": "easy",
+    "stem": "The Cold War was primarily a period of geopolitical tension between which two superpowers following World War II?",
+    "choices": [
+      { "label": "A", "text": "The United States and the Soviet Union", "isCorrect": true, "explanation": "The Cold War was primarily a decades-long tension between the United States and the Soviet Union." },
+      { "label": "B", "text": "Germany and Japan", "isCorrect": false, "explanation": "Germany and Japan were defeated Axis powers after WWII, not the two Cold War superpowers." },
+      { "label": "C", "text": "Britain and France", "isCorrect": false, "explanation": "Britain and France, while significant powers, were not the two primary Cold War superpowers." },
+      { "label": "D", "text": "China and India", "isCorrect": false, "explanation": "China and India were not the two primary Cold War superpowers, though China became significant later in Cold War dynamics." }
+    ],
+    "explanation": "The Cold War was primarily a geopolitical rivalry between the United States and the Soviet Union.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/origins-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-2",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "origins-of-the-cold-war",
+    "difficulty": "medium",
+    "stem": "What fundamental ideological difference between the United States and the Soviet Union fueled Cold War tensions?",
+    "choices": [
+      { "label": "A", "text": "Capitalism/democracy versus communism", "isCorrect": true, "explanation": "The fundamental ideological divide between American capitalism/democracy and Soviet communism fueled decades of Cold War tension." },
+      { "label": "B", "text": "Both nations shared identical political and economic systems", "isCorrect": false, "explanation": "This contradicts the fundamental ideological divide; the two nations had significantly different political/economic systems." },
+      { "label": "C", "text": "A dispute over ancient historical territorial claims", "isCorrect": false, "explanation": "Cold War tensions were rooted in contemporary ideological and geopolitical competition, not ancient historical territorial claims." },
+      { "label": "D", "text": "A religious disagreement exclusively", "isCorrect": false, "explanation": "While various factors existed, the core division was primarily ideological (capitalism/democracy vs. communism), not fundamentally religious." }
+    ],
+    "explanation": "The fundamental ideological divide between capitalism/democracy and communism fueled Cold War tensions.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/origins-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-3",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "origins-of-the-cold-war",
+    "difficulty": "medium",
+    "stem": "The term \"Iron Curtain,\" popularized by Winston Churchill, referred to what?",
+    "choices": [
+      { "label": "A", "text": "A literal iron wall built by the Soviet Union", "isCorrect": false, "explanation": "This was a metaphorical term, not a literal iron wall, though the later Berlin Wall was a literal physical barrier within this broader context." },
+      { "label": "B", "text": "The ideological and physical divide separating Soviet-controlled Eastern Europe from Western Europe", "isCorrect": true, "explanation": "\"Iron Curtain\" described the ideological and physical division between Soviet-controlled Eastern Europe and the democratic West." },
+      { "label": "C", "text": "A trade agreement between the US and USSR", "isCorrect": false, "explanation": "The \"Iron Curtain\" was not a trade agreement; it described ideological/political division." },
+      { "label": "D", "text": "A type of Cold War-era weapon", "isCorrect": false, "explanation": "This term did not refer to a type of weapon." }
+    ],
+    "explanation": "The \"Iron Curtain\" described the ideological and physical divide separating Soviet-controlled Eastern Europe from Western Europe.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/origins-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-4",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "origins-of-the-cold-war",
+    "difficulty": "hard",
+    "stem": "How did differing visions for post-World War II Europe contribute to the emerging Cold War tensions between the US and USSR?",
+    "choices": [
+      { "label": "A", "text": "Both powers had identical visions with no disagreement", "isCorrect": false, "explanation": "Significant, well-documented disagreements existed between the two powers' postwar visions." },
+      { "label": "B", "text": "The Soviet Union sought to establish friendly, communist-aligned governments in Eastern Europe for security, while the US and its allies promoted democratic governments and market economies, leading to mutual distrust", "isCorrect": true, "explanation": "These fundamentally different visions for postwar Europe created deep mutual distrust that fueled Cold War tensions." },
+      { "label": "C", "text": "Neither power had any interest in postwar Europe", "isCorrect": false, "explanation": "Both powers had substantial, well-documented interests in the postwar European order." },
+      { "label": "D", "text": "The US and USSR immediately agreed on every aspect of postwar governance", "isCorrect": false, "explanation": "The two powers had significant disagreements, not immediate agreement, on postwar governance." }
+    ],
+    "explanation": "Differing visions for postwar Europe -- Soviet-aligned governments in the East versus democratic/market economies promoted by the US -- fueled Cold War distrust.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/origins-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-5",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "origins-of-the-cold-war",
+    "difficulty": "medium",
+    "stem": "The Truman Doctrine (1947) established what U.S. Cold War policy?",
+    "choices": [
+      { "label": "A", "text": "Complete isolationism with no international involvement", "isCorrect": false, "explanation": "The Truman Doctrine represented increased, not decreased, U.S. international involvement." },
+      { "label": "B", "text": "A commitment to \"contain\" the spread of communism by providing support to countries resisting it", "isCorrect": true, "explanation": "The Truman Doctrine committed the US to supporting countries resisting communist expansion, establishing the policy of containment." },
+      { "label": "C", "text": "An alliance with the Soviet Union against all other nations", "isCorrect": false, "explanation": "The Truman Doctrine specifically positioned the U.S. in opposition to, not alliance with, Soviet-aligned communist expansion." },
+      { "label": "D", "text": "Unconditional surrender to Soviet demands", "isCorrect": false, "explanation": "This policy represented active U.S. resistance to Soviet influence, not surrender to Soviet demands." }
+    ],
+    "explanation": "The Truman Doctrine established a U.S. policy of \"containing\" the spread of communism by supporting countries resisting it.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/origins-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-6",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "origins-of-the-cold-war",
+    "difficulty": "medium",
+    "stem": "The Marshall Plan (1948) was a U.S. initiative that aimed to do what?",
+    "choices": [
+      { "label": "A", "text": "Provide economic aid to help rebuild Western European economies, partly to prevent the spread of communism", "isCorrect": true, "explanation": "The Marshall Plan provided substantial economic aid to rebuild Western European economies, partly as a strategy to prevent communist influence." },
+      { "label": "B", "text": "Fund Soviet economic recovery exclusively", "isCorrect": false, "explanation": "The Marshall Plan specifically aimed to help Western European (non-Soviet-aligned) economies, not fund Soviet recovery." },
+      { "label": "C", "text": "Establish a new U.S. colony in Europe", "isCorrect": false, "explanation": "The Marshall Plan was an aid program, not an act of establishing colonial control." },
+      { "label": "D", "text": "End all trade between the US and Europe", "isCorrect": false, "explanation": "The Marshall Plan actually increased, rather than ended, economic engagement and trade connections between the US and Europe." }
+    ],
+    "explanation": "The Marshall Plan provided economic aid to rebuild Western European economies, partly to prevent the spread of communism.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/origins-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-7",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "the-cold-war",
+    "difficulty": "easy",
+    "stem": "What term describes the tense military standoff between the US and USSR during the Cold War, in which direct large-scale military conflict between the two superpowers was avoided?",
+    "choices": [
+      { "label": "A", "text": "\"Total war\"", "isCorrect": false, "explanation": "\"Total war\" describes full mobilization for a direct/hot war, which is distinct from the specific avoidance-of-direct-conflict dynamic described here." },
+      { "label": "B", "text": "\"Cold War\" (avoiding direct \"hot\" conflict)", "isCorrect": true, "explanation": "The term \"Cold War\" itself describes this tense standoff in which direct military conflict between the superpowers was avoided." },
+      { "label": "C", "text": "\"World War III\"", "isCorrect": false, "explanation": "\"World War III\" did not formally occur; the very point of the Cold War dynamic was the avoidance of this kind of direct global hot war." },
+      { "label": "D", "text": "\"Civil war\"", "isCorrect": false, "explanation": "\"Civil war\" describes internal conflict within a single country, not this specific type of superpower standoff." }
+    ],
+    "explanation": "The term \"Cold War\" itself describes this tense standoff in which direct large-scale military conflict between the superpowers was avoided.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-8",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "the-cold-war",
+    "difficulty": "medium",
+    "stem": "The Cuban Missile Crisis (1962) brought the US and USSR to the brink of what?",
+    "choices": [
+      { "label": "A", "text": "Immediate, friendly reconciliation with no tension", "isCorrect": false, "explanation": "This crisis represented a moment of extreme tension and danger, not reconciliation." },
+      { "label": "B", "text": "Direct nuclear war, following the Soviet placement of missiles in Cuba", "isCorrect": true, "explanation": "The discovery of Soviet nuclear missiles in Cuba brought the US and USSR dangerously close to direct nuclear conflict." },
+      { "label": "C", "text": "A joint moon landing mission", "isCorrect": false, "explanation": "This crisis had no connection to a joint moon landing mission." },
+      { "label": "D", "text": "A trade agreement benefiting both nations equally", "isCorrect": false, "explanation": "This crisis was a dangerous confrontation, not a cooperative trade agreement." }
+    ],
+    "explanation": "The Cuban Missile Crisis brought the US and USSR to the brink of direct nuclear war.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-9",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "the-cold-war",
+    "difficulty": "medium",
+    "stem": "How did the Cold War manifest in \"proxy wars,\" such as the Korean War and the Vietnam War?",
+    "choices": [
+      { "label": "A", "text": "These wars had no connection to US-Soviet Cold War tensions", "isCorrect": false, "explanation": "These wars had very significant, well-documented connections to broader US-Soviet Cold War dynamics." },
+      { "label": "B", "text": "The US and USSR (and China) supported opposing sides in these regional conflicts without engaging in direct large-scale military conflict with each other", "isCorrect": true, "explanation": "In proxy wars, superpowers backed opposing sides in regional conflicts while avoiding direct war with each other." },
+      { "label": "C", "text": "The US and USSR fought each other directly in these specific wars", "isCorrect": false, "explanation": "A defining feature of these \"proxy wars\" was that the superpowers avoided direct large-scale conflict with each other, instead supporting opposing sides." },
+      { "label": "D", "text": "These wars occurred long before the Cold War began", "isCorrect": false, "explanation": "These wars occurred during the Cold War era, not before it began." }
+    ],
+    "explanation": "In proxy wars like Korea and Vietnam, the US and USSR supported opposing sides without engaging in direct conflict with each other.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-10",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "the-cold-war",
+    "difficulty": "hard",
+    "stem": "What was the strategic concept of \"Mutually Assured Destruction\" (MAD) during the Cold War nuclear arms race?",
+    "choices": [
+      { "label": "A", "text": "The idea that neither side would ever develop nuclear weapons", "isCorrect": false, "explanation": "MAD specifically assumed both sides possessed significant nuclear arsenals, not the absence of nuclear development." },
+      { "label": "B", "text": "The idea that both superpowers possessed enough nuclear weapons to destroy each other completely, theoretically deterring either from initiating a first nuclear strike", "isCorrect": true, "explanation": "MAD held that the guaranteed mutual destruction from a nuclear exchange deterred either superpower from striking first." },
+      { "label": "C", "text": "A plan for one-sided nuclear disarmament", "isCorrect": false, "explanation": "MAD was based on mutual possession and threat, not one-sided disarmament." },
+      { "label": "D", "text": "A joint plan to use nuclear weapons together against a third country", "isCorrect": false, "explanation": "MAD was fundamentally about mutual deterrence between the two rival superpowers, not joint action against a third party." }
+    ],
+    "explanation": "\"Mutually Assured Destruction\" held that both superpowers' massive nuclear arsenals deterred either from initiating a first strike.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-11",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "the-cold-war",
+    "difficulty": "medium",
+    "stem": "The Berlin Wall, constructed in 1961, became a powerful symbol of what?",
+    "choices": [
+      { "label": "A", "text": "Cold War cooperation and unity", "isCorrect": false, "explanation": "The Berlin Wall symbolized division and tension, not cooperation and unity." },
+      { "label": "B", "text": "The division between communist East Germany/Eastern Bloc and democratic West Germany/Western Europe", "isCorrect": true, "explanation": "The Berlin Wall became the most visible physical symbol of the ideological division between East and West during the Cold War." },
+      { "label": "C", "text": "A joint US-Soviet engineering project", "isCorrect": false, "explanation": "The wall was built by East Germany, with Soviet backing, specifically to prevent emigration to the West, not as a joint project." },
+      { "label": "D", "text": "The end of the Cold War", "isCorrect": false, "explanation": "The wall's construction in 1961 represented an intensification of Cold War division; its later fall in 1989, not construction, is associated with the Cold War's end." }
+    ],
+    "explanation": "The Berlin Wall became a powerful symbol of the division between communist East Germany and democratic West Germany.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-12",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "the-cold-war",
+    "difficulty": "medium",
+    "stem": "The Space Race, a notable aspect of Cold War competition, included which significant milestone achieved by the Soviet Union in 1957?",
+    "choices": [
+      { "label": "A", "text": "The first human landing on the Moon", "isCorrect": false, "explanation": "The first human Moon landing was achieved by the United States (Apollo 11) in 1969, not the USSR in 1957." },
+      { "label": "B", "text": "The launch of Sputnik, the first artificial satellite", "isCorrect": true, "explanation": "The Soviet Union launched Sputnik in 1957, the first artificial satellite, marking a major early Space Race milestone." },
+      { "label": "C", "text": "The first crewed mission to Mars", "isCorrect": false, "explanation": "A crewed mission to Mars has not occurred within this Cold War Space Race timeframe or since." },
+      { "label": "D", "text": "The invention of the airplane", "isCorrect": false, "explanation": "The airplane was invented much earlier (early 20th century, Wright brothers), unrelated to this specific 1957 Cold War Space Race milestone." }
+    ],
+    "explanation": "The Soviet Union launched Sputnik in 1957, the first artificial satellite, a major Cold War Space Race milestone.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-13",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "decolonization",
+    "difficulty": "easy",
+    "stem": "Following World War II, many European colonial powers experienced what significant trend regarding their overseas colonies?",
+    "choices": [
+      { "label": "A", "text": "Increased colonial expansion with no independence movements", "isCorrect": false, "explanation": "The post-WWII era saw significant decolonization, the opposite of increased colonial expansion." },
+      { "label": "B", "text": "A wave of decolonization, as many colonies gained independence", "isCorrect": true, "explanation": "The decades after WWII saw a major wave of decolonization as colonies across Africa and Asia gained independence." },
+      { "label": "C", "text": "No change in colonial relationships whatsoever", "isCorrect": false, "explanation": "This era saw very substantial, well-documented change in colonial relationships, not no change." },
+      { "label": "D", "text": "Colonies being sold to other colonial powers", "isCorrect": false, "explanation": "This doesn't accurately describe the primary post-WWII trend, which was colonies gaining independence, not being sold between colonial powers." }
+    ],
+    "explanation": "Following World War II, a major wave of decolonization saw many colonies gain independence from European powers.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/decolonization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-14",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "decolonization",
+    "difficulty": "medium",
+    "stem": "What combination of factors contributed to the wave of decolonization following World War II?",
+    "choices": [
+      { "label": "A", "text": "No factors contributed; it happened randomly", "isCorrect": false, "explanation": "Historians have identified specific, well-documented factors contributing to this wave of decolonization." },
+      { "label": "B", "text": "Weakened European powers (economically and militarily strained by WWII), growing nationalist movements in colonies, and pressure from new international bodies like the United Nations", "isCorrect": true, "explanation": "This combination of weakened colonial powers, nationalist movements, and international pressure drove the wave of decolonization." },
+      { "label": "C", "text": "Colonial powers voluntarily gave up power with no external pressure or internal movements involved", "isCorrect": false, "explanation": "This significantly understates the role of nationalist movements and pressure; it wasn't simply unprompted voluntary action." },
+      { "label": "D", "text": "The complete absence of any nationalist sentiment in colonies", "isCorrect": false, "explanation": "Nationalist sentiment was, in fact, a very significant driving force in many decolonization movements." }
+    ],
+    "explanation": "Weakened European colonial powers, growing nationalist movements, and international pressure together drove the wave of post-WWII decolonization.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/decolonization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-15",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "decolonization",
+    "difficulty": "medium",
+    "stem": "India's independence from Britain in 1947 was achieved partly through what significant nonviolent resistance movement, associated with leaders like Mohandas Gandhi?",
+    "choices": [
+      { "label": "A", "text": "Complete military conquest of Britain", "isCorrect": false, "explanation": "India's independence movement did not involve military conquest of Britain itself." },
+      { "label": "B", "text": "Civil disobedience and nonviolent resistance", "isCorrect": true, "explanation": "Gandhi's leadership centered on civil disobedience and nonviolent resistance as a strategy for achieving Indian independence." },
+      { "label": "C", "text": "A purely violent armed insurrection with no diplomatic component", "isCorrect": false, "explanation": "While some violence did occur in India's independence era more broadly, Gandhi's approach centered on nonviolent civil disobedience, not primarily violent insurrection." },
+      { "label": "D", "text": "No resistance movement was involved; independence was simply granted unprompted", "isCorrect": false, "explanation": "India's independence was achieved substantially through organized resistance and negotiation, not simply granted with no prior movement." }
+    ],
+    "explanation": "Gandhi's civil disobedience and nonviolent resistance movement was central to achieving India's independence from Britain.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/decolonization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-16",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "decolonization",
+    "difficulty": "hard",
+    "stem": "How did the process of decolonization sometimes lead to violence or conflict, even as colonies gained formal independence?",
+    "choices": [
+      { "label": "A", "text": "Decolonization was always completely peaceful everywhere with no conflict", "isCorrect": false, "explanation": "While some decolonization was relatively peaceful, other instances involved significant violence, contrary to this universal claim." },
+      { "label": "B", "text": "Some decolonization processes involved violent conflict, such as wars of independence, or subsequent ethnic/religious/political conflicts (e.g., the violence surrounding India's Partition)", "isCorrect": true, "explanation": "Decolonization sometimes led to armed independence struggles or serious internal conflicts, such as the violence during India's Partition." },
+      { "label": "C", "text": "No decolonization process ever involved any hardship", "isCorrect": false, "explanation": "Many decolonization processes involved substantial hardship and conflict, contrary to this claim." },
+      { "label": "D", "text": "Colonial powers always left in complete cooperation with new governments, with no tension", "isCorrect": false, "explanation": "Many decolonization processes involved significant tension and conflict with departing colonial powers, not complete cooperation." }
+    ],
+    "explanation": "Some decolonization processes involved significant violence, such as wars of independence or conflicts like the violence surrounding India's Partition.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/decolonization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-17",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "decolonization",
+    "difficulty": "medium",
+    "stem": "The Algerian War of Independence (1954-1962) against France is a notable example of what kind of decolonization process?",
+    "choices": [
+      { "label": "A", "text": "A completely peaceful, negotiated transition with no violence", "isCorrect": false, "explanation": "The Algerian War involved extensive, well-documented violence, not a peaceful negotiated transition." },
+      { "label": "B", "text": "A prolonged, violent armed conflict between Algerian independence fighters and French colonial forces", "isCorrect": true, "explanation": "The Algerian War was a prolonged and violent struggle between Algerian independence fighters and French colonial forces." },
+      { "label": "C", "text": "A process with no connection to broader decolonization trends", "isCorrect": false, "explanation": "This conflict was very much connected to the broader wave of post-WWII decolonization." },
+      { "label": "D", "text": "An independence movement that ultimately failed completely", "isCorrect": false, "explanation": "Algeria did ultimately achieve independence from France in 1962, contrary to this claim of complete failure." }
+    ],
+    "explanation": "The Algerian War of Independence was a prolonged, violent armed conflict between Algerian independence fighters and French colonial forces.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/decolonization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-18",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "decolonization",
+    "difficulty": "medium",
+    "stem": "What role did the United Nations play in the broader decolonization process following World War II?",
+    "choices": [
+      { "label": "A", "text": "It had no role or influence on decolonization", "isCorrect": false, "explanation": "The UN had a meaningful, though not singularly decisive, role and influence on the broader decolonization movement and discourse." },
+      { "label": "B", "text": "It provided a forum for newly independent nations and promoted principles of self-determination, which some nationalist movements invoked in their independence efforts", "isCorrect": true, "explanation": "The UN's principles of self-determination provided nationalist movements with an international framework to invoke in their independence efforts." },
+      { "label": "C", "text": "It actively worked to prevent all decolonization", "isCorrect": false, "explanation": "The UN's charter and various resolutions generally supported principles like self-determination, rather than actively working to prevent decolonization." },
+      { "label": "D", "text": "It required all colonies to remain under colonial rule permanently", "isCorrect": false, "explanation": "This significantly mischaracterizes the UN's stance; it did not require permanent colonial rule." }
+    ],
+    "explanation": "The United Nations promoted principles of self-determination, which nationalist movements invoked in their independence efforts.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/decolonization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-19",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "newly-independent-states",
+    "difficulty": "easy",
+    "stem": "Newly independent nations following decolonization often faced what kind of challenges in establishing stable governments and economies?",
+    "choices": [
+      { "label": "A", "text": "No challenges of any kind; transitions were always smooth and immediate", "isCorrect": false, "explanation": "Many newly independent nations faced very significant, well-documented challenges, not smooth immediate transitions." },
+      { "label": "B", "text": "Challenges including artificial colonial-era borders that didn't align with ethnic/cultural groups, limited infrastructure, and economic dependency on former colonial powers", "isCorrect": true, "explanation": "Many newly independent nations grappled with these colonial-era legacies as they worked to establish stable governance and economies." },
+      { "label": "C", "text": "Complete economic self-sufficiency from the moment of independence", "isCorrect": false, "explanation": "Many newly independent nations continued to face economic dependency issues, rather than achieving complete immediate self-sufficiency." },
+      { "label": "D", "text": "No connection to their colonial past whatsoever", "isCorrect": false, "explanation": "Many newly independent nations' challenges were directly connected to their colonial history and legacies." }
+    ],
+    "explanation": "Newly independent nations often faced challenges from artificial colonial borders, limited infrastructure, and economic dependency on former colonial powers.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/newly-independent-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-20",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "newly-independent-states",
+    "difficulty": "medium",
+    "stem": "The \"Non-Aligned Movement,\" which included many newly independent nations, aimed to do what during the Cold War?",
+    "choices": [
+      { "label": "A", "text": "Fully align with the United States against the Soviet Union", "isCorrect": false, "explanation": "This contradicts the fundamental \"non-aligned\" principle of avoiding full alignment with either superpower bloc." },
+      { "label": "B", "text": "Fully align with the Soviet Union against the United States", "isCorrect": false, "explanation": "This also contradicts the fundamental \"non-aligned\" principle of avoiding full alignment with either superpower bloc." },
+      { "label": "C", "text": "Maintain independence from formal alliance with either major Cold War superpower bloc", "isCorrect": true, "explanation": "The Non-Aligned Movement sought to chart an independent path for newly independent nations, avoiding formal alliance with either Cold War superpower bloc." },
+      { "label": "D", "text": "Reestablish colonial rule voluntarily", "isCorrect": false, "explanation": "This movement was about newly independent nations charting their own path, not voluntarily returning to colonial rule." }
+    ],
+    "explanation": "The Non-Aligned Movement aimed to help newly independent nations maintain independence from formal alliance with either Cold War superpower bloc.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/newly-independent-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-21",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "newly-independent-states",
+    "difficulty": "medium",
+    "stem": "Artificial colonial-era borders, often drawn without regard to existing ethnic, linguistic, or cultural groups, sometimes contributed to what challenge in post-colonial nations, particularly in Africa?",
+    "choices": [
+      { "label": "A", "text": "No challenges resulted from these borders", "isCorrect": false, "explanation": "These artificial borders had substantial, well-documented effects contributing to various internal tensions and conflicts." },
+      { "label": "B", "text": "Internal ethnic or regional tensions and conflicts, as diverse groups with different interests were combined within single national borders", "isCorrect": true, "explanation": "Colonial-era borders often grouped together diverse ethnic and cultural communities in ways that fueled internal tensions after independence." },
+      { "label": "C", "text": "Complete ethnic homogeneity in every new nation", "isCorrect": false, "explanation": "This significantly mischaracterizes the actual outcome, which often involved substantial internal diversity and tension rather than homogeneity." },
+      { "label": "D", "text": "Immediate and total unification of all cultural groups with no tension", "isCorrect": false, "explanation": "Many newly independent nations experienced significant internal social/political tension, not immediate total unification with no tension." }
+    ],
+    "explanation": "Artificial colonial-era borders often contributed to internal ethnic or regional tensions and conflicts in post-colonial nations.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/newly-independent-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-22",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "newly-independent-states",
+    "difficulty": "hard",
+    "stem": "How did Cold War superpower rivalry sometimes affect newly independent nations, even those attempting to remain non-aligned?",
+    "choices": [
+      { "label": "A", "text": "The Cold War had no effect on newly independent nations whatsoever", "isCorrect": false, "explanation": "The Cold War had very significant, well-documented effects on many newly independent nations." },
+      { "label": "B", "text": "The US and USSR sometimes competed for influence in newly independent nations through economic aid, military support, or political interference, hoping to gain allies in the broader Cold War competition", "isCorrect": true, "explanation": "Both superpowers often competed for influence over newly independent nations, even those officially non-aligned, through aid and other means." },
+      { "label": "C", "text": "Newly independent nations had no interactions with either superpower", "isCorrect": false, "explanation": "Many newly independent nations had substantial interactions, economic, political, and sometimes military, with one or both superpowers." },
+      { "label": "D", "text": "Both superpowers immediately granted complete independence to these nations with no further involvement", "isCorrect": false, "explanation": "These nations were already independent; this doesn't accurately describe ongoing superpower involvement and competition for influence." }
+    ],
+    "explanation": "The US and USSR often competed for influence in newly independent nations through aid, support, or interference, even those attempting to remain non-aligned.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/newly-independent-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-23",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "newly-independent-states",
+    "difficulty": "medium",
+    "stem": "What economic development strategy did some newly independent nations pursue in an attempt to reduce dependency on former colonial powers?",
+    "choices": [
+      { "label": "A", "text": "Complete economic isolation with no international trade whatsoever", "isCorrect": false, "explanation": "While some nations sought greater self-sufficiency, complete total economic isolation doesn't accurately describe the common strategies pursued." },
+      { "label": "B", "text": "Import substitution industrialization (developing domestic industries to reduce reliance on imported manufactured goods)", "isCorrect": true, "explanation": "Import substitution industrialization aimed to build domestic manufacturing capacity, reducing dependency on imported goods from former colonial powers." },
+      { "label": "C", "text": "Voluntary return to colonial-era economic structures with no changes", "isCorrect": false, "explanation": "Many newly independent nations specifically sought to change, rather than voluntarily maintain unchanged, colonial-era economic structures." },
+      { "label": "D", "text": "Abandoning all forms of economic planning", "isCorrect": false, "explanation": "Many newly independent nations actually pursued significant economic planning as part of their development strategies, not abandoning it." }
+    ],
+    "explanation": "Some newly independent nations pursued import substitution industrialization to reduce economic dependency on former colonial powers.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/newly-independent-states",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-24",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "end-of-the-cold-war",
+    "difficulty": "easy",
+    "stem": "The Cold War formally came to an end around which year, associated with the fall of the Berlin Wall and subsequent collapse of Soviet-aligned governments in Eastern Europe?",
+    "choices": [
+      { "label": "A", "text": "1989-1991", "isCorrect": true, "explanation": "The Cold War ended around 1989-1991, marked by the fall of the Berlin Wall and the collapse of the Soviet Union." },
+      { "label": "B", "text": "1945", "isCorrect": false, "explanation": "1945 marks the end of World War II and roughly the beginning of Cold War tensions, not its end." },
+      { "label": "C", "text": "1914", "isCorrect": false, "explanation": "1914 marks the beginning of World War I, over 70 years before the Cold War's end." },
+      { "label": "D", "text": "2001", "isCorrect": false, "explanation": "2001 is over a decade after the Cold War had already ended." }
+    ],
+    "explanation": "The Cold War formally came to an end around 1989-1991, marked by the fall of the Berlin Wall and the Soviet Union's collapse.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/end-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-25",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "end-of-the-cold-war",
+    "difficulty": "medium",
+    "stem": "Mikhail Gorbachev, the Soviet leader in the mid-to-late 1980s, introduced what reform policies that contributed to significant changes within the Soviet Union?",
+    "choices": [
+      { "label": "A", "text": "Increased totalitarian control with no reforms whatsoever", "isCorrect": false, "explanation": "Gorbachev specifically introduced reform policies, the opposite of increased totalitarian control with no reforms." },
+      { "label": "B", "text": "\"Glasnost\" (openness) and \"Perestroika\" (economic restructuring)", "isCorrect": true, "explanation": "Gorbachev's reforms, glasnost and perestroika, introduced greater openness and economic restructuring that reshaped the Soviet Union." },
+      { "label": "C", "text": "A return to strict Stalinist policies", "isCorrect": false, "explanation": "Gorbachev's reforms moved away from, rather than returned to, strict earlier Stalinist-style policies." },
+      { "label": "D", "text": "Complete rejection of any communist ideology from the very start of his leadership", "isCorrect": false, "explanation": "Gorbachev's initial reforms were intended to improve and reform the existing communist system, not immediately and completely reject communist ideology from the outset." }
+    ],
+    "explanation": "Gorbachev introduced \"glasnost\" (openness) and \"perestroika\" (economic restructuring), significant reform policies within the Soviet Union.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/end-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-26",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "end-of-the-cold-war",
+    "difficulty": "medium",
+    "stem": "The fall of the Berlin Wall in 1989 symbolized what broader historical development?",
+    "choices": [
+      { "label": "A", "text": "The strengthening of Soviet control over Eastern Europe", "isCorrect": false, "explanation": "This event represented the weakening and collapse, not strengthening, of Soviet-aligned control over Eastern Europe." },
+      { "label": "B", "text": "The collapse of communist authority in Eastern Europe and the beginning of German reunification", "isCorrect": true, "explanation": "The fall of the Berlin Wall symbolized the collapse of communist authority in Eastern Europe and paved the way for German reunification." },
+      { "label": "C", "text": "The start of a new Cold War", "isCorrect": false, "explanation": "This event is associated with the end of the Cold War, not the start of a new one." },
+      { "label": "D", "text": "A purely local, insignificant event with no broader meaning", "isCorrect": false, "explanation": "The fall of the Berlin Wall had enormous, well-documented broader historical significance, far beyond a purely local event." }
+    ],
+    "explanation": "The fall of the Berlin Wall symbolized the collapse of communist authority in Eastern Europe and the beginning of German reunification.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/end-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-27",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "end-of-the-cold-war",
+    "difficulty": "hard",
+    "stem": "What combination of internal and external factors contributed to the eventual collapse of the Soviet Union in 1991?",
+    "choices": [
+      { "label": "A", "text": "A single, simple cause with no complexity", "isCorrect": false, "explanation": "Historians identify multiple interconnected factors contributing to this collapse, not a single simple cause." },
+      { "label": "B", "text": "A combination of factors including economic stagnation, the costs of the arms race and the Afghanistan war, Gorbachev's reform policies leading to greater openness/dissent, and nationalist movements within Soviet republics", "isCorrect": true, "explanation": "This combination of economic, military, political, and nationalist factors together contributed to the Soviet Union's eventual collapse." },
+      { "label": "C", "text": "The Soviet Union collapsed for no identifiable reason", "isCorrect": false, "explanation": "Historians have identified substantial, well-documented factors contributing to this collapse." },
+      { "label": "D", "text": "Complete external military conquest by the United States", "isCorrect": false, "explanation": "The Soviet Union's collapse was primarily driven by internal political/economic/social factors, not a direct military conquest by the United States." }
+    ],
+    "explanation": "Economic stagnation, costly military commitments, Gorbachev's reforms, and nationalist movements together contributed to the Soviet Union's 1991 collapse.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/end-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-28",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "end-of-the-cold-war",
+    "difficulty": "medium",
+    "stem": "Following the collapse of the Soviet Union in 1991, what happened to its constituent republics?",
+    "choices": [
+      { "label": "A", "text": "They remained unified as a single country with no changes", "isCorrect": false, "explanation": "The Soviet Union's dissolution specifically resulted in separation into independent nations, not continued unified single-country status." },
+      { "label": "B", "text": "They became independent nations, including Russia and various other former Soviet republics", "isCorrect": true, "explanation": "The Soviet Union's collapse resulted in its constituent republics becoming independent nations, including Russia, Ukraine, and many others." },
+      { "label": "C", "text": "They were immediately absorbed into the United States", "isCorrect": false, "explanation": "These former Soviet republics became independent nations, not territories absorbed into the United States." },
+      { "label": "D", "text": "They ceased to exist entirely with no successor states", "isCorrect": false, "explanation": "These former Soviet republics did continue to exist as successor states (as independent nations), contrary to this claim." }
+    ],
+    "explanation": "Following the Soviet Union's collapse, its constituent republics became independent nations, including Russia and many others.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/end-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-29",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "end-of-the-cold-war",
+    "difficulty": "medium",
+    "stem": "How is the end of the Cold War generally understood to have affected global geopolitics in the years immediately following 1991?",
+    "choices": [
+      { "label": "A", "text": "It had no significant effect on global geopolitics", "isCorrect": false, "explanation": "The end of the Cold War had very significant, well-documented effects on global geopolitics." },
+      { "label": "B", "text": "It contributed to a shift away from a bipolar (two-superpower) world order, with the United States emerging as the primary global superpower for a period", "isCorrect": true, "explanation": "The Cold War's end shifted the world away from a bipolar order, with the United States emerging as the primary global superpower for a period." },
+      { "label": "C", "text": "It immediately created a new bipolar conflict with different superpowers", "isCorrect": false, "explanation": "This doesn't accurately describe the widely recognized shift toward US unipolarity/primacy in the years immediately following the Cold War's end, rather than a new bipolar conflict." },
+      { "label": "D", "text": "It resulted in the immediate reunification of all world nations into a single government", "isCorrect": false, "explanation": "No such single world government was created; nations remained separate sovereign states." }
+    ],
+    "explanation": "The end of the Cold War shifted the world away from a bipolar order, with the United States emerging as the primary global superpower for a period.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/end-of-the-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-mcq-30",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "newly-independent-states",
+    "difficulty": "medium",
+    "stem": "The Bandung Conference (1955) was significant because it did what?",
+    "choices": [
+      { "label": "A", "text": "Brought together newly independent Asian and African nations to promote solidarity and discuss shared challenges, laying groundwork for the Non-Aligned Movement", "isCorrect": true, "explanation": "The Bandung Conference gathered newly independent Asian and African nations to discuss shared concerns and promote cooperation, helping lay the groundwork for the later Non-Aligned Movement." },
+      { "label": "B", "text": "Established a formal military alliance between the US and USSR", "isCorrect": false, "explanation": "This conference was among newly independent Asian/African nations, not an alliance between the US and USSR." },
+      { "label": "C", "text": "Ended all newly independent nations' sovereignty", "isCorrect": false, "explanation": "This conference actually promoted the sovereignty and solidarity of newly independent nations, not ending it." },
+      { "label": "D", "text": "Had no connection to decolonization or the Cold War", "isCorrect": false, "explanation": "This conference had a very direct connection to both decolonization and Cold War-era international relations." }
+    ],
+    "explanation": "The Bandung Conference brought together newly independent Asian and African nations, helping lay the groundwork for the Non-Aligned Movement.",
+    "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/newly-independent-states",
+    "reviewed": false
+  }
+]

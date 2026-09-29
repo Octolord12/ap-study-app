@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u8-saq-1",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "origins-of-the-cold-war",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE ideological difference between the United States and the Soviet Union that contributed to Cold War tensions.\n\n**b)** Describe ONE U.S. policy developed in the late 1940s to counter Soviet influence.\n\n**c)** Explain ONE way differing visions for postwar Europe contributed to mutual distrust between the two superpowers.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes the divide between capitalism/democracy and communism" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes the Truman Doctrine (containment) or the Marshall Plan" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that the Soviet Union sought friendly/communist-aligned governments in Eastern Europe for security, while the US promoted democratic governments and market economies, creating suspicion on both sides" }
+    ],
+    "sampleResponse": "a) The United States championed capitalism and democracy, while the Soviet Union championed communism and one-party rule, a fundamental ideological divide that fueled decades of mutual suspicion.\nb) The Truman Doctrine committed the United States to a policy of \"containing\" the spread of communism by supporting nations resisting it, such as Greece and Turkey.\nc) The Soviet Union sought to install friendly, communist-aligned governments across Eastern Europe to create a security buffer against future invasion, while the United States and its allies promoted democratic governments and market economies in Western Europe, and each side viewed the other's actions as threatening, deepening mutual distrust.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-saq-2",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "decolonization",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE factor that contributed to the wave of decolonization following World War II.\n\n**b)** Describe ONE example of a nonviolent independence movement during this era.\n\n**c)** Explain ONE way decolonization processes sometimes led to conflict, even as colonies gained independence.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes weakened European powers after WWII, growing nationalist movements, or UN pressure/self-determination principles" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes Gandhi's civil disobedience movement leading to Indian independence" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that artificial colonial borders or ethnic/religious divisions sometimes led to violence, e.g. the violence surrounding India's Partition, or armed independence wars like Algeria's" }
+    ],
+    "sampleResponse": "a) European colonial powers were economically and militarily exhausted by World War II, weakening their ability to maintain control over distant colonies against growing nationalist movements.\nb) Mohandas Gandhi led a movement of civil disobedience and nonviolent resistance that was central to India achieving independence from Britain in 1947.\nc) India's independence was accompanied by Partition into India and Pakistan, and the resulting mass displacement along religious lines led to significant violence between Hindu, Muslim, and Sikh communities, illustrating how decolonization could still produce serious conflict even as formal independence was achieved.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-saq-3",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "end-of-the-cold-war",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE reform policy introduced by Mikhail Gorbachev in the Soviet Union during the 1980s.\n\n**b)** Describe ONE event symbolizing the end of Cold War division in Europe.\n\n**c)** Explain ONE consequence of the Soviet Union's collapse for global geopolitics.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes glasnost (openness) or perestroika (economic restructuring)" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes the fall of the Berlin Wall in 1989" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that the Soviet collapse contributed to a shift away from a bipolar world order, with the US emerging as the primary global superpower for a period" }
+    ],
+    "sampleResponse": "a) Gorbachev introduced perestroika, a policy of economic restructuring intended to revitalize the stagnant Soviet economy by introducing limited market-oriented reforms.\nb) The fall of the Berlin Wall in 1989 symbolized the collapse of communist authority in Eastern Europe and became one of the most visible signs that Cold War division was ending.\nc) The Soviet Union's collapse in 1991 shifted the world away from the bipolar Cold War order, with the United States emerging as the primary global superpower for a period afterward.",
+    "reviewed": false
+  }
+]

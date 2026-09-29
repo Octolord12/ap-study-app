@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u4-saq-1",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "columbian-exchange",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way the Columbian Exchange affected agriculture in Afro-Eurasia.\n\n**b)** Describe ONE way the Columbian Exchange affected Indigenous populations in the Americas.\n\n**c)** Explain ONE reason the effects of the Columbian Exchange were so different for these two regions.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes new American crops (e.g. maize, potatoes) spreading to Afro-Eurasia and supporting population growth" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes massive Indigenous population decline due to Old World diseases (e.g. smallpox) to which they had no immunity" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that Afro-Eurasian populations had long histories of exposure to shared diseases through extensive prior interconnection, while Indigenous Americans had been isolated from these diseases and had no acquired immunity" }
+    ],
+    "sampleResponse": "a) New American crops like the potato and maize spread to Afro-Eurasia and, being calorie-dense and adaptable to different climates, helped support population growth in regions like Europe and China.\nb) Indigenous American populations suffered catastrophic population decline as diseases like smallpox, introduced by Europeans, spread rapidly through communities with no prior exposure or immunity.\nc) Afro-Eurasian populations had been interconnected for centuries through networks like the Silk Roads, gradually building up immunity to shared diseases over generations, while Indigenous Americans had been isolated from these diseases entirely, leaving them with no biological defense when contact began.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-saq-2",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "labor-systems-and-slave-trade",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE labor system used by European colonizers to extract labor from Indigenous populations in the Americas.\n\n**b)** Explain ONE reason European colonizers increasingly relied on enslaved African labor instead.\n\n**c)** Describe ONE lasting effect of the transatlantic slave trade on societies in the Americas.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes the encomienda system (granting colonizers rights to Indigenous labor/tribute) or a similar coercive labor system" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that massive Indigenous population decline from disease, combined with growing plantation labor demand, drove colonizers to increasingly rely on enslaved Africans" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes the lasting cultural or demographic influence of African diasporic communities (culture, music, religion, cuisine) throughout the Americas" }
+    ],
+    "sampleResponse": "a) Spanish colonizers used the encomienda system, which granted colonizers the right to demand forced labor and tribute from Indigenous people living in a designated area.\nb) As Indigenous populations collapsed due to disease and harsh treatment, colonizers faced a severe labor shortage just as demand for plantation labor (for crops like sugar) was growing, so they increasingly turned to forcibly importing enslaved Africans to meet this demand.\nc) The forced migration of enslaved Africans created large African-descended populations throughout the Americas whose musical, culinary, religious, and cultural traditions have had a lasting and profound influence on the societies of the region.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-saq-3",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "technology-and-exploration",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE technological development that enabled European maritime exploration during this period.\n\n**b)** Describe ONE motivation that drove European powers to seek new maritime trade routes.\n\n**c)** Explain ONE way European maritime exploration led to lasting changes in global trade patterns.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes a technology such as the caravel, the magnetic compass, or improved navigational instruments/charts" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes the motivation of bypassing overland Middle Eastern intermediaries to access the lucrative spice trade directly" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that new sea routes shifted global trade toward Atlantic-facing European powers and created direct connections between Europe, Africa, Asia, and the Americas, rather than relying on overland intermediaries" }
+    ],
+    "sampleResponse": "a) The caravel, a maneuverable ship design that could sail effectively against the wind, allowed Portuguese and Spanish sailors to undertake longer exploratory voyages than earlier ship designs permitted.\nb) European powers wanted to bypass the Middle Eastern and Italian merchants who controlled and profited from overland trade in Asian spices, seeking a direct sea route to access these goods more cheaply.\nc) These new sea routes shifted the center of global trade toward Atlantic-facing European powers like Spain, Portugal, and later the Dutch, English, and French, who established direct maritime connections between Europe, Africa, Asia, and the newly-contacted Americas, rather than relying on overland intermediaries controlling the flow of goods.",
+    "reviewed": false
+  }
+]

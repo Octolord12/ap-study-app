@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-world-u1-saq-1",
+    "unit": "unit-1-global-tapestry",
+    "topic": "dar-al-islam",
+    "prompt": "Historians have argued that the expansion of Dar al-Islam between 1200 and 1450 relied as much on merchants and mystics as on conquering armies.\n\nUsing your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way that trade networks contributed to the spread of Islam during this period.\n\n**b)** Explain ONE reason why Sufi missionaries were often successful in converting local populations to Islam.\n\n**c)** Describe ONE example of a state or region (other than the Arabian Peninsula) where Islam became a majority or dominant religion by 1450.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes a trade network (e.g. Indian Ocean trade, Trans-Saharan routes) that carried Muslim merchants who introduced Islam to new regions as they traded" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that Sufi missionaries' willingness to blend Islamic practice with local customs and traditions (syncretism) made conversion more appealing or accessible" },
+      { "id": "r3", "points": 1, "description": "Part C: Describes a specific example (e.g. the Delhi Sultanate in South Asia, the Mali Empire in West Africa, or the Swahili Coast city-states in East Africa) where Islam became dominant or prominent by 1450" }
+    ],
+    "sampleResponse": "a) Muslim merchants traveling the Indian Ocean trade network settled in port cities across South and Southeast Asia, and as they conducted business over generations, local elites and communities gradually adopted Islam through this sustained contact.\nb) Sufi mysticism emphasized a personal, emotional connection to God and was flexible about blending with existing local religious practices, making conversion feel less like abandoning old traditions and more like adding a new spiritual layer to them.\nc) The Delhi Sultanate in South Asia was established by Muslim rulers, and by 1450 Islam had become the religion of the ruling class and a significant portion of the population, even though Hindus remained the majority overall.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-saq-2",
+    "unit": "unit-1-global-tapestry",
+    "topic": "east-asian-states",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE feature of the Song dynasty's system of government.\n\n**b)** Explain ONE way the Yuan dynasty's approach to governing China differed from the Song dynasty's approach.\n\n**c)** Explain ONE reason the Ming dynasty, which followed the Yuan, sought to restore Song-era Chinese traditions.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes a feature of Song government, such as the merit-based civil service examination system or a centralized Confucian bureaucracy" },
+      { "id": "r2", "points": 1, "description": "Part B: Explains that the Yuan, ruled by Mongols, restricted top administrative posts to Mongols and other non-Han officials and did not initially rely on the examination system the way the Song had" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains that the Ming sought to reassert Han Chinese identity and political legitimacy after a period of foreign (Mongol) rule, restoring traditions like the examination system to signal a return to native governance" }
+    ],
+    "sampleResponse": "a) The Song dynasty relied on a civil service examination system that selected government officials based on their demonstrated knowledge of Confucian texts rather than solely on noble birth.\nb) The Yuan dynasty, ruled by ethnic Mongols, favored Mongols and other non-Han foreigners for the highest government positions and did not fully restore the Confucian examination system until late in its rule, unlike the Song's reliance on Han Chinese scholar-officials.\nc) The Ming rulers wanted to demonstrate a clear break from foreign Mongol rule and reassert Han Chinese cultural legitimacy, so they fully restored the examination system and other Confucian administrative traditions associated with earlier native dynasties like the Song.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-saq-3",
+    "unit": "unit-1-global-tapestry",
+    "topic": "state-building-americas-africa",
+    "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE piece of evidence that Cahokia (in the Mississippi River valley) was a significant urban center around 1200 CE.\n\n**b)** Describe ONE way the Mali Empire built and maintained its wealth and political power in West Africa.\n\n**c)** Explain ONE similarity OR difference between how these two societies organized their economies.",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Part A: Describes evidence such as Cahokia's large earthen mounds, substantial population, or long-distance trade goods found at the site" },
+      { "id": "r2", "points": 1, "description": "Part B: Describes Mali's control of trans-Saharan trade routes (particularly the gold and salt trade) as a basis for its wealth and power" },
+      { "id": "r3", "points": 1, "description": "Part C: Explains a similarity (e.g. both societies relied on long-distance trade networks to accumulate wealth and resources) or a difference (e.g. Mali's wealth was tied to controlling a specific interregional trade commodity, while Cahokia's economy relied more on regional agricultural surplus and exchange) between the two" }
+    ],
+    "sampleResponse": "a) Archaeologists have found large earthen mounds and evidence of a substantial population at Cahokia, along with goods originating from distant regions, indicating it was a major hub of trade and political power in the Mississippi valley.\nb) The Mali Empire controlled key points along the trans-Saharan trade routes, taxing and profiting from the exchange of gold (from sources to the south) and salt (from sources to the north).\nc) Both societies relied heavily on long-distance trade networks to accumulate wealth: Mali's rulers taxed the flow of gold and salt across the Sahara, while Cahokia's elite benefited from regional exchange networks that brought goods like copper and shells from distant parts of North America.",
+    "reviewed": false
+  }
+]
