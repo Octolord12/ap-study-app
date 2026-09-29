@@ -5,6 +5,7 @@ import Link from "next/link";
 import { recordAttempt } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { RewardToast, hasReward, type Reward } from "@/components/gamification/reward-toast";
 import type { AttemptSource } from "@/generated/prisma/client";
 
 export interface RenderedChoice {
@@ -40,13 +41,20 @@ export function QuizRunner({
   const [revealed, setRevealed] = useState(false);
   const [results, setResults] = useState<{ questionId: string; correct: boolean }[]>([]);
   const [startedAt, setStartedAt] = useState(() => Date.now());
+  const [reward, setReward] = useState<Reward | null>(null);
+  const [rewardKey, setRewardKey] = useState(0);
+  // Deliberately not derived from results.length === questions.length: that
+  // would go true the instant the last answer is recorded, before the
+  // student has seen its reveal/explanation. finished is set explicitly by
+  // handleNext, only after they've clicked past the last question.
+  const [finished, setFinished] = useState(false);
 
-  const done = results.length === questions.length;
-
-  if (done) {
+  if (finished) {
     const correctCount = results.filter((r) => r.correct).length;
     return (
-      <Card>
+      <>
+        {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
+        <Card>
         <CardContent className="space-y-4 py-10 text-center">
           <h2 className="text-xl font-bold">
             {correctCount} / {questions.length} correct
@@ -55,14 +63,15 @@ export function QuizRunner({
             {backLabel}
           </Button>
         </CardContent>
-      </Card>
+        </Card>
+      </>
     );
   }
 
   const question = questions[index];
   const isLast = index === questions.length - 1;
 
-  function handleSubmit() {
+  async function handleSubmit() {
     if (!selectedLabel) return;
     const chosen = question.choices.find((c) => c.label === selectedLabel);
     const correct = chosen?.isCorrect ?? false;
@@ -70,18 +79,33 @@ export function QuizRunner({
     setResults((prev) => [...prev, { questionId: question.id, correct }]);
     setRevealed(true);
 
-    // Fire-and-forget: the UI already reflects correctness from the (already
-    // fetched, trusted) choice data. The persisted attempt log is what needs
-    // the server's own lookup -- see recordAttempt.
-    void recordAttempt({
+    // The reveal above already happened using the (already fetched, trusted)
+    // choice data -- this call is purely for the persisted attempt log and
+    // whatever XP/streak/badges the server decides it earned, which we await
+    // only to show the reward toast, not to gate the reveal.
+    const result = await recordAttempt({
       questionId: question.id,
       chosenLabel: selectedLabel,
       timeSpentMs: Date.now() - startedAt,
       source,
     });
+    const nextReward: Reward = {
+      xpAwarded: result.xpAwarded,
+      leveledUp: result.leveledUp,
+      newLevel: result.newLevel,
+      newBadges: result.newBadges,
+    };
+    if (hasReward(nextReward)) {
+      setReward(nextReward);
+      setRewardKey((k) => k + 1);
+    }
   }
 
   function handleNext() {
+    if (isLast) {
+      setFinished(true);
+      return;
+    }
     setIndex((i) => i + 1);
     setSelectedLabel(null);
     setRevealed(false);
@@ -89,7 +113,9 @@ export function QuizRunner({
   }
 
   return (
-    <Card>
+    <>
+      {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
+      <Card>
       <CardContent className="space-y-4 py-6">
         <p className="text-xs text-muted-foreground">
           Question {index + 1} of {questions.length} ·{" "}
@@ -154,6 +180,7 @@ export function QuizRunner({
           )}
         </div>
       </CardContent>
-    </Card>
+      </Card>
+    </>
   );
 }

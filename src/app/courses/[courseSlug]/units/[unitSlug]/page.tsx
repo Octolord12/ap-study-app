@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
+import { getDb } from "@/lib/db";
 import { getUnitWithQuestions, getUserQuestionState } from "@/lib/study/queries";
 import { UnitQuestionBrowser, type QuestionRow } from "@/components/study/unit-question-browser";
+import { Button } from "@/components/ui/button";
 
 export default async function UnitPage({
   params,
@@ -19,10 +21,13 @@ export default async function UnitPage({
   if (!result) notFound();
   const { course, unit } = result;
 
-  const { bookmarkedIds, latestCorrectByQuestion } = await getUserQuestionState(
-    userId,
-    unit.questions.map((q) => q.id),
-  );
+  const [{ bookmarkedIds, latestCorrectByQuestion }, bossBattle] = await Promise.all([
+    getUserQuestionState(
+      userId,
+      unit.questions.map((q) => q.id),
+    ),
+    getDb().bossBattleAttempt.findUnique({ where: { userId_unitId: { userId, unitId: unit.id } } }),
+  ]);
 
   const questionRows: QuestionRow[] = unit.questions.map((q) => ({
     id: q.id,
@@ -52,6 +57,22 @@ export default async function UnitPage({
           </span>
         ))}
       </div>
+
+      {unit.questions.length > 0 ? (
+        <div className="mb-8 flex items-center justify-between rounded-lg border border-border p-4">
+          <div>
+            <p className="text-sm font-semibold">{bossBattle?.passed ? "🏆 Unit conquered" : "⚔️ Unit boss battle"}</p>
+            <p className="text-xs text-muted-foreground">
+              {bossBattle?.passed
+                ? `Defeated in ${bossBattle.attemptsCount} attempt${bossBattle.attemptsCount === 1 ? "" : "s"}`
+                : "Answer 70% correctly to conquer this unit"}
+            </p>
+          </div>
+          <Button render={<Link href={`/courses/${course.slug}/units/${unit.slug}/boss`} />} nativeButton={false}>
+            {bossBattle?.passed ? "Battle again" : "Fight"}
+          </Button>
+        </div>
+      ) : null}
 
       <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Questions</h2>
       <UnitQuestionBrowser

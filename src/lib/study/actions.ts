@@ -8,6 +8,9 @@ import { computeNextReview } from "@/lib/study/spaced-repetition";
 import { pickQuestionIdsForCustomQuiz } from "@/lib/study/queries";
 import { estimateApScoreRange } from "@/lib/study/exam-scoring";
 import { SelfGradingStrategy, type RubricLine } from "@/lib/scoring/grading";
+import { grantXpForActivity } from "@/lib/gamification/activity";
+import { xpForCorrectAnswer, xpForFrqPoints } from "@/lib/gamification/xp";
+import { checkAndAwardBadges, type BadgeDefinition } from "@/lib/gamification/badges";
 import type { AttemptSource, Difficulty } from "@/generated/prisma/client";
 import type { Course as ContentCourse } from "@/lib/content/schema";
 
@@ -52,11 +55,21 @@ interface RecordAttemptInput {
   source?: AttemptSource;
 }
 
+export interface RecordAttemptResult {
+  correct: boolean;
+  xpAwarded: number;
+  leveledUp: boolean;
+  newLevel: number;
+  currentStreak: number;
+  newBadges: BadgeDefinition[];
+}
+
 // Correctness is always looked up fresh from the DB here, never taken from the
 // client -- the client already knows the answer (it renders the explanation),
 // but the persisted attempt log has to be trustworthy regardless of what the
-// client claims.
-export async function recordAttempt(input: RecordAttemptInput): Promise<{ correct: boolean }> {
+// client claims. XP/streak/badges follow the same rule: computed here, from
+// what was just looked up, never from anything the client sent.
+export async function recordAttempt(input: RecordAttemptInput): Promise<RecordAttemptResult> {
   const userId = await requireUserId();
   const db = getDb();
 
@@ -93,8 +106,20 @@ export async function recordAttempt(input: RecordAttemptInput): Promise<{ correc
     update: nextReview,
   });
 
+  const xpResult = correct
+    ? await grantXpForActivity(userId, (streak) => xpForCorrectAnswer(question.difficulty, streak))
+    : null;
+  const newBadges = await checkAndAwardBadges(userId);
+
   revalidatePath("/dashboard");
-  return { correct };
+  return {
+    correct,
+    xpAwarded: xpResult?.xpAwarded ?? 0,
+    leveledUp: xpResult?.leveledUp ?? false,
+    newLevel: xpResult?.newLevel ?? 0,
+    currentStreak: xpResult?.currentStreak ?? 0,
+    newBadges,
+  };
 }
 
 const VALID_DIFFICULTIES: Difficulty[] = ["EASY", "MEDIUM", "HARD"];
@@ -130,6 +155,17 @@ export async function startCustomQuiz(formData: FormData): Promise<void> {
 interface FrqGradeResult {
   pointsAwarded: number;
   maxPoints: number;
+  xpAwarded: number;
+  leveledUp: boolean;
+  newLevel: number;
+  newBadges: BadgeDefinition[];
+}
+
+// A zero-credit response earns no XP/streak/badge credit -- otherwise
+// submitting blank responses would be a free way to farm all three.
+async function grantFrqXpIfEarned(userId: string, pointsAwarded: number) {
+  if (pointsAwarded <= 0) return { xpAwarded: 0, leveledUp: false, newLevel: 0 };
+  return grantXpForActivity(userId, (streak) => xpForFrqPoints(pointsAwarded, streak));
 }
 
 // Standalone FRQ practice: response and self-grade happen in one sitting, so
@@ -160,8 +196,11 @@ export async function submitFrqAttempt(input: {
     },
   });
 
+  const xpResult = await grantFrqXpIfEarned(userId, result.pointsAwarded);
+  const newBadges = await checkAndAwardBadges(userId);
+
   revalidatePath("/dashboard");
-  return { pointsAwarded: result.pointsAwarded, maxPoints: result.maxPoints };
+  return { pointsAwarded: result.pointsAwarded, maxPoints: result.maxPoints, ...xpResult, newBadges };
 }
 
 // Exam flow: the response was already written and saved (ungraded) when the
@@ -191,8 +230,14 @@ export async function updateFrqGrade(input: {
     data: { selfGradedPoints: result.pointsAwarded },
   });
 
+  // Only award XP the first time this attempt goes from ungraded to graded --
+  // revisiting the results page and re-saving a grade shouldn't re-farm XP.
+  const alreadyGraded = attempt.selfGradedPoints > 0;
+  const xpResult = alreadyGraded ? { xpAwarded: 0, leveledUp: false, newLevel: 0 } : await grantFrqXpIfEarned(userId, result.pointsAwarded);
+  const newBadges = await checkAndAwardBadges(userId);
+
   revalidatePath("/dashboard");
-  return { pointsAwarded: result.pointsAwarded, maxPoints: result.maxPoints };
+  return { pointsAwarded: result.pointsAwarded, maxPoints: result.maxPoints, ...xpResult, newBadges };
 }
 
 export async function startExam(courseId: string, courseSlug: string): Promise<void> {
@@ -261,6 +306,10 @@ export async function submitExamAttempt(input: SubmitExamInput): Promise<void> {
           source: "EXAM",
         },
       });
+
+      if (correct) {
+        await grantXpForActivity(userId, (streak) => xpForCorrectAnswer(question.difficulty, streak));
+      }
     }
 
     // FRQs are graded afterward on the results page (self-grading needs the
@@ -288,8 +337,50 @@ export async function submitExamAttempt(input: SubmitExamInput): Promise<void> {
         estimatedScore: estimateApScoreRange(mcqAccuracy),
       },
     });
+
+    await checkAndAwardBadges(userId); // covers "exam_finisher"; picked up next time the header/dashboard renders
   }
 
   revalidatePath("/dashboard");
   redirect(`/courses/${input.courseSlug}/exam/${attempt.id}/results`);
+}
+
+const BOSS_BATTLE_PASS_THRESHOLD = 0.7;
+
+interface SubmitBossBattleResult {
+  passed: boolean;
+  newBadges: BadgeDefinition[];
+}
+
+// The per-question answers were already scored via recordAttempt as the
+// student went (same XP/spaced-repetition path as any other quiz) -- this
+// just records the unit-level pass/fail once the battle's over.
+export async function submitBossBattle(input: {
+  unitId: string;
+  correctCount: number;
+  total: number;
+}): Promise<SubmitBossBattleResult> {
+  const userId = await requireUserId();
+  const db = getDb();
+
+  const passed = input.total > 0 && input.correctCount / input.total >= BOSS_BATTLE_PASS_THRESHOLD;
+
+  const existing = await db.bossBattleAttempt.findUnique({
+    where: { userId_unitId: { userId, unitId: input.unitId } },
+  });
+
+  await db.bossBattleAttempt.upsert({
+    where: { userId_unitId: { userId, unitId: input.unitId } },
+    create: { userId, unitId: input.unitId, passed, attemptsCount: 1, bestScore: input.correctCount },
+    update: {
+      passed: passed || (existing?.passed ?? false), // once conquered, stays conquered
+      attemptsCount: (existing?.attemptsCount ?? 0) + 1,
+      bestScore: Math.max(existing?.bestScore ?? 0, input.correctCount),
+    },
+  });
+
+  const newBadges = passed ? await checkAndAwardBadges(userId) : [];
+
+  revalidatePath("/dashboard");
+  return { passed, newBadges };
 }

@@ -2,12 +2,13 @@ import Link from "next/link";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { computeUnitMastery } from "@/lib/study/mastery";
+import { getAllBadgeStatuses, getUserGamificationStats } from "@/lib/gamification/queries";
 
 export default async function DashboardPage() {
   const userId = await requireUserId();
   const db = getDb();
 
-  const [enrollments, attempts] = await Promise.all([
+  const [enrollments, attempts, stats, badges] = await Promise.all([
     db.enrollment.findMany({
       where: { userId },
       include: { course: { include: { units: { orderBy: { order: "asc" } } } } },
@@ -16,6 +17,8 @@ export default async function DashboardPage() {
       where: { userId },
       select: { questionId: true, correct: true, createdAt: true, question: { select: { unitId: true } } },
     }),
+    getUserGamificationStats(userId),
+    getAllBadgeStatuses(userId),
   ]);
 
   const mastery = computeUnitMastery(
@@ -31,6 +34,48 @@ export default async function DashboardPage() {
   return (
     <div className="mx-auto w-full max-w-3xl px-6 py-10">
       <h1 className="mb-6 text-2xl font-bold tracking-tight">Dashboard</h1>
+
+      <section className="mb-8 rounded-xl border border-border p-5">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <p className="text-lg font-semibold">🎓 Level {stats.level}</p>
+            <p className="text-xs text-muted-foreground">
+              {stats.xpIntoLevel} / {stats.xpForNextLevel} XP to level {stats.level + 1} · {stats.totalXp} XP total
+            </p>
+          </div>
+          <div className="text-right">
+            <p className="text-lg font-semibold">🔥 {stats.currentStreak}-day streak</p>
+            <p className="text-xs text-muted-foreground">
+              Longest: {stats.longestStreak} · {stats.streakFreezesAvailable} streak freeze
+              {stats.streakFreezesAvailable === 1 ? "" : "s"} left
+            </p>
+          </div>
+        </div>
+        <div className="h-2 overflow-hidden rounded-full bg-muted">
+          <div
+            className="h-full bg-primary transition-all"
+            style={{ width: `${Math.round((stats.xpIntoLevel / stats.xpForNextLevel) * 100)}%` }}
+          />
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Badges</h2>
+        <div className="grid grid-cols-3 gap-3 sm:grid-cols-6">
+          {badges.map((badge) => (
+            <div
+              key={badge.slug}
+              title={badge.description}
+              className={`flex flex-col items-center gap-1 rounded-lg border p-3 text-center ${
+                badge.earned ? "border-border bg-card" : "border-dashed border-border opacity-40"
+              }`}
+            >
+              <span className="text-2xl">{badge.icon}</span>
+              <span className="text-xs font-medium">{badge.name}</span>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {enrollments.length === 0 ? (
         <p className="text-muted-foreground">

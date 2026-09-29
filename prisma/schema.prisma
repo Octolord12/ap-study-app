@@ -26,6 +26,14 @@ model User {
 
   leaderboardOptOut Boolean @default(false)
 
+  // Updated incrementally on each day's first activity (src/lib/gamification/streak.ts),
+  // not recomputed from scratch -- avoids ambiguity about which historical gaps a
+  // freeze already covered. See the gotcha in CLAUDE.md before changing this.
+  currentStreak          Int       @default(0)
+  longestStreak          Int       @default(0)
+  lastActiveDate         DateTime?
+  streakFreezesAvailable Int       @default(1)
+
   accounts Account[]
   sessions Session[]
 

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { submitFrqAttempt, updateFrqGrade } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { RewardToast, hasReward, type Reward } from "@/components/gamification/reward-toast";
 
 export interface RubricLineView {
   id: string;
@@ -36,6 +37,7 @@ export function FrqSelfGrade({
   const [revealed, setRevealed] = useState(false);
   const [checkedLineIds, setCheckedLineIds] = useState<Set<string>>(new Set());
   const [saved, setSaved] = useState<{ pointsAwarded: number; maxPoints: number } | null>(null);
+  const [reward, setReward] = useState<Reward | null>(null);
   const readOnlyResponse = existingResponseText !== undefined;
 
   const pointsSoFar = rubric.filter((line) => checkedLineIds.has(line.id)).reduce((sum, line) => sum + line.points, 0);
@@ -55,10 +57,19 @@ export function FrqSelfGrade({
       : await submitFrqAttempt({ frqPromptId, responseText, checkedLineIds: Array.from(checkedLineIds) });
     setSaved(result);
     onGraded?.(result);
+
+    const nextReward: Reward = {
+      xpAwarded: result.xpAwarded,
+      leveledUp: result.leveledUp,
+      newLevel: result.newLevel,
+      newBadges: result.newBadges,
+    };
+    if (hasReward(nextReward)) setReward(nextReward);
   }
 
   return (
     <div className="space-y-4">
+      {reward ? <RewardToast reward={reward} onDismiss={() => setReward(null)} /> : null}
       {readOnlyResponse ? (
         <div className="rounded-lg border border-border bg-muted p-4 text-sm whitespace-pre-wrap">
           {responseText || <span className="text-muted-foreground">(no response written)</span>}

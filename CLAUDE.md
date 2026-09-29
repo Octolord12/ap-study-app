@@ -22,8 +22,8 @@ AB, AP Physics 1.
 | UI primitives | Base UI (via shadcn) | shadcn's default base for this project's registry version. Polymorphic rendering uses a `render` prop (`<Button render={<Link .../>} />`), **not** Radix's `asChild` — see the gotcha below. |
 | Math rendering | KaTeX via `rehype-katex` / `remark-math` | Renders `$...$` / `$$...$$` written directly in content. |
 | Code highlighting | Shiki via `rehype-pretty-code` | Same engine as VS Code. **Loads its highlighter asynchronously** — see the gotcha below. |
-| Client state | Zustand | Minimal boilerplate for streak/mute/boss-battle-health UI state. |
-| Animations/sound | Framer Motion, canvas-confetti, Howler.js | Level-up/badge/correct-answer feedback, with a mute toggle. |
+| Client state | Zustand | The mute preference (`src/lib/gamification/sound-store.ts`, localStorage-persisted); boss-battle/quiz UI state is plain `useState`. |
+| Animations/sound | Framer Motion, canvas-confetti | Level-up/badge/boss-defeat feedback, with a mute toggle. Sound is synthesized Web Audio tones, not Howler/audio files — see the gotcha below. |
 | Testing | Vitest + React Testing Library | Fast, Jest-compatible, first-class Next.js support. |
 
 ### Gotcha: `ContentRenderer` can't use `react-markdown` directly
@@ -101,6 +101,18 @@ wrapper-child pattern. When the target isn't a real `<button>` (e.g. it's a
 link), also pass `nativeButton={false}`, or Base UI logs a console warning
 about losing native button semantics.
 
+### Gotcha: sound effects are synthesized, not audio files
+
+`howler` was in the original stack plan but we never added actual sound
+assets (no files to source/license this way). `src/lib/gamification/sound.ts`
+generates simple tones with the raw Web Audio API instead -- a correct-answer
+ding, a level-up arpeggio, a badge fanfare. If real sound design ever gets
+added (actual audio files), Howler is the natural place to bring in, but for
+now it's an unused dependency; don't be surprised it's not wired to anything.
+The mute check lives inside `sound.ts` itself (reads `useSoundStore.getState()`
+directly, works outside React), so every call site is automatically silent
+when muted -- no need to check `muted` before calling these.
+
 ## Conventions
 
 - Server Components by default; add `"use client"` only where interactivity
@@ -149,9 +161,12 @@ Full schema: `prisma/schema.prisma`. Summary:
   `ExamAttempt` (`questionIds`/`frqPromptIds` JSON arrays fix the exam's content
   at start time so a reload doesn't reshuffle it mid-exam; `sectionScores`/
   `estimatedScore` are null until submitted).
-- **Gamification**: `XPEvent` (append-only ledger — level/streak/totals are
-  always *derived* from this, never stored/trusted directly), `Badge`,
-  `UserBadge`, `BossBattleAttempt`.
+- **Gamification**: `XPEvent` (append-only ledger — level is always *derived*
+  from this, never stored), `Badge`, `UserBadge`, `BossBattleAttempt`. Streak
+  state (`currentStreak`/`longestStreak`/`lastActiveDate`/`streakFreezesAvailable`)
+  lives directly on `User`, updated incrementally rather than derived — see
+  the Gamification section below for why that's different from the XP/level
+  philosophy.
 - **Social**: `Class`, `ClassMembership`, `Friendship`, `User.leaderboardOptOut`.
 
 There's no dedicated topic-detail route: "browse by topic" is the unit page's
@@ -196,6 +211,67 @@ is shared between two contexts: standalone practice (write + grade in one
 sitting, `submitFrqAttempt` creates the attempt already graded) and exam
 results (the response was already saved un-graded at submission time, so
 `updateFrqGrade` grades the existing `FRQAttempt` instead of creating a new one).
+
+### Gamification (Milestone 5)
+
+XP, levels, and streaks are pure, unit-tested functions wired into one
+DB-touching entry point:
+
+- `src/lib/gamification/xp.ts` — `xpForCorrectAnswer(difficulty, streak)` and
+  `xpForFrqPoints(points, streak)`, both difficulty/point-scaled plus a capped
+  streak bonus.
+- `src/lib/gamification/level.ts` — `computeLevel(totalXp)`. Cost to clear
+  level *n* is `100n` XP (level 1→2 costs 100, 2→3 costs 200, ...); level is
+  *always derived* from the `XPEvent` sum, never stored, matching the XP
+  ledger's own append-only philosophy.
+- `src/lib/gamification/streak.ts` — `updateStreakOnActivity(state, today)`.
+  Updates `User.currentStreak`/`longestStreak`/`lastActiveDate`/
+  `streakFreezesAvailable` *incrementally*, once per day's first activity, not
+  recomputed from full history -- see the schema comment on `User` before
+  changing this. A single skipped day auto-consumes a freeze (starts at 1, no
+  replenishment yet); a longer gap breaks the streak regardless.
+- `src/lib/gamification/activity.ts` — `grantXpForActivity(userId, xpFormula)`
+  ties the above together: updates the streak if this is the day's first
+  activity, computes XP using the (possibly just-updated) streak, writes the
+  `XPEvent`, and detects a level-up by comparing `computeLevel()` before/after.
+  Called from every scoring path (`recordAttempt`, `submitFrqAttempt`,
+  `updateFrqGrade`, `submitExamAttempt`'s MCQ loop) in `src/lib/study/actions.ts`.
+  A zero-point FRQ grade earns no XP/streak credit (see `grantFrqXpIfEarned`),
+  and re-grading an already-graded FRQ attempt (revisiting exam results) can't
+  re-farm XP -- both guard against the obvious ways to game a system that's
+  otherwise "any correct answer earns something."
+- `src/lib/gamification/badges.ts` — a fixed catalog (`BADGE_DEFINITIONS`) and
+  `checkAndAwardBadges(userId)`, called after every scoring action. It checks
+  *all* not-yet-earned badges against current state each time (small, indexed
+  queries against a 6-badge catalog -- cheap enough not to need an event-driven
+  system at this scale), so a badge whose criteria were already met by past
+  activity gets awarded retroactively the first time this runs, not just on
+  the specific action that would have triggered it live. "Perfect score" is
+  approximated as `perfect_ten` (10 correct in a row, since there's no
+  quiz-session entity to check a single quiz's score against) and "unit
+  mastery" as 100% correct on every attempted question in some unit.
+- **Boss battles** (`src/components/study/boss-battle-runner.tsx`,
+  `/courses/[courseSlug]/units/[unitSlug]/boss`) reuse `recordAttempt` per
+  question (same XP/streak/badge path as any quiz, `source: "QUIZ"` -- no
+  dedicated `AttemptSource` variant) and add `submitBossBattle` on completion,
+  which upserts `BossBattleAttempt` (pass threshold: 70% correct; once
+  conquered, `passed` never reverts even if a later attempt does worse).
+
+`RewardToast` (`src/components/gamification/reward-toast.tsx`) is the shared
+UI for all of this -- XP/level-up/badge feedback, sound, and confetti in one
+component, rendered by `QuizRunner`, `FrqSelfGrade`, and `BossBattleRunner`
+after each scoring server action returns. It respects `prefers-reduced-motion`
+via `useReducedMotion()`.
+
+**Bug found and fixed while wiring this in**: `QuizRunner`'s "done" screen was
+derived from `results.length === questions.length`, which goes true the
+instant the *last* question's answer is recorded -- before the student ever
+saw its reveal/explanation. Practice mode was silently skipping the final
+question's explanation for every quiz. Fixed by tracking `finished` as its own
+state, set only when the student clicks past the last question, not inferred
+from the results array. If you're touching quiz-completion logic, keep this
+distinction (an array reaching its final length is not the same event as "the
+user has seen the last item").
 
 ### Content pipeline (Milestone 2)
 
@@ -303,8 +379,21 @@ in app logic — updating them should be a data edit.
       rubric lines against a deliberately-buggy response, got a partial score),
       and a full exam run (timer, no-reveal MCQs, empty-FRQ handling, results
       page scoring/estimate/review, dashboard reflecting the exam's attempts).
-- [ ] **Milestone 5 — Gamification.** XP, levels, streaks, badges, boss battles,
-      animations.
+- [x] **Milestone 5 — Gamification.** XP (difficulty + capped streak bonus),
+      levels (derived from the XP ledger), streaks with single-day freeze
+      bridging, a 6-badge catalog checked retroactively after every scoring
+      action, unit boss battles (health-bar UI, 70% pass threshold, "conquered"
+      never reverts), synthesized-tone sound effects with a mute toggle, and
+      reduced-motion-aware reward toasts (XP/level-up/badge). Found and fixed a
+      real pre-existing bug while wiring this in: `QuizRunner` was skipping the
+      last question's explanation reveal (see the gotcha above). 15 tests added
+      (44 total). Verified end-to-end in-browser: XP toast on a correct answer,
+      streak going from 0→1 with the header updating live, two badges awarded
+      *retroactively* from Milestone 4's leftover activity (proving the "check
+      all criteria against current state" design works, not just live triggers),
+      a full 7-question boss battle (health bar draining, level-up mid-battle,
+      victory screen, "Unit conquered" on the unit page, Boss Slayer + Unit
+      Master badges), and the mute toggle.
 - [ ] **Milestone 6 — Social.** Friends, classes, leaderboards, anti-abuse checks.
 - [ ] **Milestone 7 — Content at scale.** Full starter banks (~30 MCQ + 3 FRQ
       per unit) for all four courses, validated, review workflow.
