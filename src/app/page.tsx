@@ -1,41 +1,32 @@
+import Link from "next/link";
+import { auth } from "@/lib/auth/config";
 import { Button } from "@/components/ui/button";
-import { ContentRenderer } from "@/components/content-renderer";
 
-// Milestone 1 smoke-test page: proves Tailwind/shadcn, KaTeX math rendering, and
-// Shiki code highlighting all work together. Replaced by the real dashboard/course
-// browser in Milestone 3.
-const SAMPLE_STEM = `
-What is printed after the following code runs?
+export default async function Home() {
+  const session = await auth();
 
-\`\`\`java
-int total = 0;
-for (int i = 1; i <= 4; i++) {
-  total += i;
-}
-System.out.println(total);
-\`\`\`
-
-This tests the same idea as the closed-form sum $\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}$.
-`;
-
-export default function Home() {
   return (
-    <div className="mx-auto flex min-h-screen max-w-2xl flex-col gap-8 px-6 py-16">
-      <header className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight">AP Study App</h1>
-        <p className="text-muted-foreground">
-          Milestone 1 scaffold — Next.js, Tailwind/shadcn, Prisma + Neon, KaTeX, and Shiki all wired up.
-        </p>
-      </header>
-
-      <section className="rounded-xl border border-border bg-card p-6 shadow-sm">
-        <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-          Sample question stem (math + code rendering)
-        </h2>
-        <ContentRenderer>{SAMPLE_STEM}</ContentRenderer>
-      </section>
-
-      <Button>shadcn/ui button works</Button>
+    <div className="mx-auto flex max-w-2xl flex-1 flex-col items-center justify-center gap-6 px-6 text-center">
+      <h1 className="text-4xl font-bold tracking-tight">Study smarter for your AP exams</h1>
+      <p className="max-w-md text-muted-foreground">
+        Quizzes, timed practice, and FRQ practice with streaks, XP, and leaderboards to keep you going.
+      </p>
+      <div className="flex gap-3">
+        {session?.user ? (
+          <Button render={<Link href="/courses" />} nativeButton={false} size="lg">
+            Go to courses
+          </Button>
+        ) : (
+          <>
+            <Button render={<Link href="/signup" />} nativeButton={false} size="lg">
+              Get started
+            </Button>
+            <Button render={<Link href="/login" />} nativeButton={false} size="lg" variant="outline">
+              Log in
+            </Button>
+          </>
+        )}
+      </div>
     </div>
   );
 }

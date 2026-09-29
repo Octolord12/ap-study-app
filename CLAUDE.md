@@ -19,6 +19,7 @@ AB, AP Physics 1.
 | Database | Postgres via Neon (Vercel Marketplace) | Serverless, scales to zero, free tier, relational data fits the course→unit→topic→question hierarchy. |
 | ORM | Prisma 7 (with `@prisma/adapter-neon` driver adapter) | Gentlest learning curve for a solo maintainer; declarative schema + migrations. Prisma 7's generated client *requires* a driver adapter now (no more bare `new PrismaClient()` reading `DATABASE_URL` implicitly) — see `src/lib/db/index.ts`. |
 | Auth | Auth.js (NextAuth v5 beta), Credentials provider, self-hosted | No third party holding user emails (some users may be minors); free; full control. Chosen over Clerk for privacy, per project decision. |
+| UI primitives | Base UI (via shadcn) | shadcn's default base for this project's registry version. Polymorphic rendering uses a `render` prop (`<Button render={<Link .../>} />`), **not** Radix's `asChild` — see the gotcha below. |
 | Math rendering | KaTeX via `rehype-katex` / `remark-math` | Renders `$...$` / `$$...$$` written directly in content. |
 | Code highlighting | Shiki via `rehype-pretty-code` | Same engine as VS Code. **Loads its highlighter asynchronously** — see the gotcha below. |
 | Client state | Zustand | Minimal boilerplate for streak/mute/boss-battle-health UI state. |
@@ -59,14 +60,56 @@ convention), but Prisma's CLI only auto-loads `.env` by default. `prisma7.config
 explicitly loads `.env.local` to bridge this — don't add a separate `.env`
 with real values, it'll get out of sync.
 
+### Gotcha: `session.user.id` needs explicit callbacks
+
+Auth.js's default JWT session only carries `name`/`email`/`image` on
+`session.user` -- **not `id`**, even though `authorize()` returns one. Every
+`requireUserId()` call and Server Action reads `session.user.id`, so without
+the `jwt`/`session` callbacks in `src/lib/auth/config.ts` that copy it from
+the token, auth silently looks broken: `auth()` returns a real, truthy session,
+so surface-level checks (`session?.user`, displaying the name in the header)
+work fine, while anything checking `.id` specifically redirects to `/login` in
+a loop. This is exactly what happened building Milestone 3 and cost real time
+to track down -- don't remove those callbacks. The type augmentation for
+`session.user.id` lives in `src/lib/auth/types.d.ts`.
+
+One more wrinkle if you hit this again: fixing the callbacks doesn't fix
+*already-issued* session cookies (the old JWT was encoded without `id` in the
+first place) -- you have to log out and back in to get a token minted under
+the fixed callbacks.
+
+### Gotcha: no middleware/proxy.ts for route protection
+
+We tried protecting `/courses` and `/dashboard` with `proxy.ts` (Next.js 16's
+renamed `middleware.ts`) wrapping Auth.js's `auth()` HOF, the standard v5
+pattern. It consistently redirected *authenticated* users away (`req.auth` was
+falsy in the proxy context even though `auth()` elsewhere on the same request
+found a valid session) -- reproducible, and `trustHost: true` didn't fix it.
+Rather than debug a next-auth-v5-beta × Next-16-proxy.ts interaction further,
+we removed proxy.ts: every protected page already calls `requireUserId()`
+itself (`src/lib/auth/session.ts`), which works correctly and is sufficient
+protection on its own. If you want edge-level protection back, treat this as
+an open bug to isolate, not a config tweak -- confirm what `req.auth` actually
+contains at the proxy boundary before assuming it's fixed.
+
+### Gotcha: Base UI's `render` prop, not `asChild`
+
+This shadcn setup uses Base UI, not Radix. To render a component as a
+different element (e.g. a `Button` as a `Link`), use `render={<Link href="..." />}`
+with the children staying on the outer component -- not Radix's `asChild`
+wrapper-child pattern. When the target isn't a real `<button>` (e.g. it's a
+link), also pass `nativeButton={false}`, or Base UI logs a console warning
+about losing native button semantics.
+
 ## Conventions
 
 - Server Components by default; add `"use client"` only where interactivity
   requires it (gamification UI, forms).
 - Node.js runtime everywhere (never `export const runtime = "edge"`) — Prisma
   and bcrypt need it, and Fluid Compute makes edge unnecessary anyway.
-- Next.js 16: middleware is `proxy.ts`, not `middleware.ts`; `params`/`searchParams`/
-  `cookies()`/`headers()` are all `async`.
+- Next.js 16: `params`/`searchParams`/`cookies()`/`headers()` are all `async`.
+  Route protection is per-page via `requireUserId()`, not middleware/proxy.ts
+  (see the gotcha above).
 - No comments explaining *what* code does; only *why*, when it's non-obvious
   (see the gotchas above for examples).
 - All XP/score-affecting writes happen in server-side route handlers, computed
@@ -106,6 +149,11 @@ Full schema: `prisma/schema.prisma`. Summary:
   always *derived* from this, never stored/trusted directly), `Badge`,
   `UserBadge`, `BossBattleAttempt`.
 - **Social**: `Class`, `ClassMembership`, `Friendship`, `User.leaderboardOptOut`.
+
+There's no dedicated topic-detail route: "browse by topic" is the unit page's
+topic filter (`?topic=<slug>`), which is also what a question's "review this
+concept" link points at. Revisit only if topics need their own content beyond
+filtering (e.g. topic-level notes).
 
 ### Content pipeline (Milestone 2)
 
@@ -190,8 +238,17 @@ in app logic — updating them should be a data edit.
       sample AP CSA bank (2 units, 14 MCQs, 2 FRQs) authored, validated, and
       seeded into Neon — confirmed idempotent and checked directly against the
       DB. 13 tests added (16 total), all clean.
-- [ ] **Milestone 3 — Core study loop.** Auth UI, course/unit/topic browsing,
-      MCQ quizzes with explanations, filters, bookmarks, progress tracking.
+- [x] **Milestone 3 — Core study loop.** Email/password signup+login (Server
+      Actions + `useActionState`), session-aware header, per-page
+      `requireUserId()` route protection. Course list → course detail (units,
+      enroll) → unit detail (topics, filterable question list: topic/
+      difficulty/bookmarked/missed) → quiz (full explanations per choice, the
+      concept-review link, results screen). Bookmarks and attempts persist to
+      Postgres; dashboard shows per-unit mastery derived from attempt history.
+      5 tests added (21 total). Verified end-to-end in-browser: signup, login,
+      logout, enroll, filter, take a 7-question quiz, bookmark persistence
+      across reload, dashboard accuracy matching the quiz result, and
+      logged-out users correctly bounced from protected pages.
 - [ ] **Milestone 4 — Practice modes.** Custom quizzes, exam simulation, daily
       challenge, weak-spot review, FRQ self-grading.
 - [ ] **Milestone 5 — Gamification.** XP, levels, streaks, badges, boss battles,
@@ -217,6 +274,6 @@ in app logic — updating them should be a data edit.
   `latest` on npm) with a materially different CLI (`prisma.config.ts`, no more
   traditional `schema.prisma`-only flow). We deliberately pinned to the last
   stable release, **Prisma 7.10.0**. Don't `npm update` Prisma casually.
-- Auth.js is wired (provider, adapter, session strategy) but there's no
-  login/signup UI yet — that's Milestone 3. Don't build features that assume a
-  logged-in user until then.
+- **No middleware-level route protection** — see the proxy.ts gotcha above.
+  Every protected page must call `requireUserId()` itself; there's no fallback
+  if one forgets to.
