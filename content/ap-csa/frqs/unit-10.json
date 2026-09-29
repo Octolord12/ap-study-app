@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ap-csa-u10-frq-1",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "prompt": "Write a recursive method named `factorial` that takes a non-negative `int` parameter `n` and returns `n!` (n factorial). For example, `factorial(4)` should return `24`. Do not use any loops.\n\nComplete the method below.\n\n```java\npublic int factorial(int n) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly implements the base case (n == 0, returning 1)" },
+      { "id": "r2", "points": 1, "description": "Correctly implements the recursive case (n * factorial(n - 1))" },
+      { "id": "r3", "points": 1, "description": "Returns the correct value for the given base and recursive cases" }
+    ],
+    "sampleResponse": "```java\npublic int factorial(int n) {\n    if (n == 0) {\n        return 1;\n    }\n    return n * factorial(n - 1);\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-frq-2",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "prompt": "Write a recursive method named `reverseString` that takes a `String` parameter `s` and returns it reversed, without using any loops. For example, `reverseString(\"hello\")` should return `\"olleh\"`.\n\nComplete the method below.\n\n```java\npublic String reverseString(String s) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares a base case for when s has length 0 or 1, returning it directly" },
+      { "id": "r2", "points": 1, "description": "Correctly makes the recursive call on the substring excluding the first character (e.g. s.substring(1))" },
+      { "id": "r3", "points": 1, "description": "Correctly appends the first character (s.charAt(0)) after the recursive result" },
+      { "id": "r4", "points": 1, "description": "Returns the correctly reversed string" }
+    ],
+    "sampleResponse": "```java\npublic String reverseString(String s) {\n    if (s.length() <= 1) {\n        return s;\n    }\n    return reverseString(s.substring(1)) + s.charAt(0);\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-frq-3",
+    "unit": "unit-10-recursion",
+    "topic": "recursive-searching-sorting",
+    "prompt": "Write a recursive method named `binarySearch` that takes a sorted `int[]` parameter `arr`, an `int` parameter `target`, and `int` parameters `low` and `high` marking the current search bounds. It should return the index of `target` in `arr` if found, or `-1` if it is not present within `arr[low..high]`.\n\nComplete the method below.\n\n```java\npublic int binarySearch(int[] arr, int target, int low, int high) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares the base case (low > high), returning -1" },
+      { "id": "r2", "points": 1, "description": "Correctly computes mid as (low + high) / 2" },
+      { "id": "r3", "points": 1, "description": "Correctly handles the case where arr[mid] equals target, returning mid" },
+      { "id": "r4", "points": 1, "description": "Correctly recurses on the appropriate half depending on whether arr[mid] is less than or greater than target" }
+    ],
+    "sampleResponse": "```java\npublic int binarySearch(int[] arr, int target, int low, int high) {\n    if (low > high) {\n        return -1;\n    }\n    int mid = (low + high) / 2;\n    if (arr[mid] == target) {\n        return mid;\n    } else if (arr[mid] < target) {\n        return binarySearch(arr, target, mid + 1, high);\n    } else {\n        return binarySearch(arr, target, low, mid - 1);\n    }\n}\n```",
+    "reviewed": false
+  }
+]

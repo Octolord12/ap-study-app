@@ -110,5 +110,373 @@
     "explanation": "Informally analyzing nested loops that each run n times: the total work is n (outer) times n (inner) = n-squared, not a sum of the two bounds.",
     "conceptLink": "ap-csa/unit-4-iteration/informal-code-analysis",
     "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-8",
+    "unit": "unit-4-iteration",
+    "topic": "while-loops",
+    "difficulty": "easy",
+    "stem": "What does this code print?\n\n```java\nint count = 1;\nwhile (count <= 4) {\n  System.out.print(count + \" \");\n  count++;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "1 2 3 4", "isCorrect": true, "explanation": "count starts at 1 and prints on each pass while count <= 4, covering 1, 2, 3, 4 before count becomes 5." },
+      { "label": "B", "text": "1 2 3", "isCorrect": false, "explanation": "This undercounts; count = 4 still satisfies count <= 4, so it prints before the loop exits." },
+      { "label": "C", "text": "0 1 2 3", "isCorrect": false, "explanation": "count starts at 1, not 0, so 0 is never printed." },
+      { "label": "D", "text": "1 2 3 4 5", "isCorrect": false, "explanation": "Once count becomes 5, the condition count <= 4 is false, so 5 is never printed." }
+    ],
+    "explanation": "The loop prints count and then increments it, continuing while count <= 4, giving 1 2 3 4.",
+    "conceptLink": "ap-csa/unit-4-iteration/while-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-9",
+    "unit": "unit-4-iteration",
+    "topic": "while-loops",
+    "difficulty": "medium",
+    "stem": "How many times does the loop body execute?\n\n```java\nint i = 10;\nwhile (i > 0) {\n  i -= 3;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "This undercounts -- i visits 10, 7, 4, and 1 (all greater than 0) before the loop stops." },
+      { "label": "B", "text": "4", "isCorrect": true, "explanation": "i takes the values 10, 7, 4, 1, each greater than 0, then becomes -2, which fails the condition -- 4 iterations total." },
+      { "label": "C", "text": "5", "isCorrect": false, "explanation": "This overcounts; after i = 1, subtracting 3 gives -2, which is not greater than 0, so the loop stops without a fifth iteration." },
+      { "label": "D", "text": "Infinite", "isCorrect": false, "explanation": "i decreases by 3 every iteration, so it eventually becomes 0 or negative, ending the loop." }
+    ],
+    "explanation": "Starting at 10 and subtracting 3 each time, i takes the values 10, 7, 4, 1 while positive, then goes to -2 and stops -- 4 iterations.",
+    "conceptLink": "ap-csa/unit-4-iteration/while-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-10",
+    "unit": "unit-4-iteration",
+    "topic": "while-loops",
+    "difficulty": "medium",
+    "stem": "What is the value of `total` after this code runs?\n\n```java\nint total = 0;\nint n = 1;\nwhile (n <= 4) {\n  total += n * n;\n  n++;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "30", "isCorrect": true, "explanation": "n takes the values 1, 2, 3, 4, and total accumulates their squares: 1 + 4 + 9 + 16 = 30." },
+      { "label": "B", "text": "10", "isCorrect": false, "explanation": "10 is the sum of 1 + 2 + 3 + 4 (n itself), not the sum of their squares (n * n)." },
+      { "label": "C", "text": "16", "isCorrect": false, "explanation": "This is only the last term (4 squared), not the accumulated total across all four iterations." },
+      { "label": "D", "text": "20", "isCorrect": false, "explanation": "This doesn't match the sum of squares 1 + 4 + 9 + 16." }
+    ],
+    "explanation": "Each iteration adds n * n to total for n = 1, 2, 3, 4, giving 1 + 4 + 9 + 16 = 30.",
+    "conceptLink": "ap-csa/unit-4-iteration/while-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-11",
+    "unit": "unit-4-iteration",
+    "topic": "while-loops",
+    "difficulty": "hard",
+    "stem": "What does this code print?\n\n```java\nint x = 1;\nwhile (x < 20) {\n  x *= 2;\n}\nSystem.out.println(x);\n```",
+    "choices": [
+      { "label": "A", "text": "16", "isCorrect": false, "explanation": "16 is still less than 20, so the loop would run once more, doubling 16 to 32." },
+      { "label": "B", "text": "32", "isCorrect": true, "explanation": "x doubles each pass: 1, 2, 4, 8, 16, 32. Once x reaches 32, 32 < 20 is false, so the loop stops and 32 is printed." },
+      { "label": "C", "text": "20", "isCorrect": false, "explanation": "The loop doesn't stop exactly at 20; doubling from 16 overshoots straight to 32." },
+      { "label": "D", "text": "8", "isCorrect": false, "explanation": "This undercounts the number of doublings; 8 is still less than 20, so the loop would continue." }
+    ],
+    "explanation": "x doubles each iteration (1, 2, 4, 8, 16, 32), stopping once x is no longer less than 20 -- which happens right after it becomes 32.",
+    "conceptLink": "ap-csa/unit-4-iteration/while-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-12",
+    "unit": "unit-4-iteration",
+    "topic": "while-loops",
+    "difficulty": "easy",
+    "stem": "Which is true about a `while` loop's condition?",
+    "choices": [
+      { "label": "A", "text": "It's checked only once, before the loop starts", "isCorrect": false, "explanation": "It's checked before every iteration, not just once." },
+      { "label": "B", "text": "It's checked before each iteration, including the first", "isCorrect": true, "explanation": "A while loop always tests its condition before running the body, every single time, including before the first run." },
+      { "label": "C", "text": "It's checked only after the loop body runs at least once", "isCorrect": false, "explanation": "That describes a do-while loop, not a standard while loop." },
+      { "label": "D", "text": "It's never checked if the body is empty", "isCorrect": false, "explanation": "The condition is always checked before attempting to run the body, regardless of what the body contains." }
+    ],
+    "explanation": "A `while` loop is a pre-test loop: it evaluates its condition before every iteration, including the very first one.",
+    "conceptLink": "ap-csa/unit-4-iteration/while-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-13",
+    "unit": "unit-4-iteration",
+    "topic": "while-loops",
+    "difficulty": "medium",
+    "stem": "What does this code print?\n\n```java\nint a = 5;\nwhile (a > 0) {\n  System.out.print(a + \" \");\n  a -= 2;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "5 3 1", "isCorrect": true, "explanation": "a takes the values 5, 3, 1 (all > 0), printing each before subtracting 2, then becomes -1 and the loop stops." },
+      { "label": "B", "text": "5 3 1 -1", "isCorrect": false, "explanation": "The loop's condition is checked before printing again -- once a becomes -1, the condition fails and -1 is never printed." },
+      { "label": "C", "text": "5 4 3 2 1", "isCorrect": false, "explanation": "a decreases by 2 each time, not 1, so 4 and 2 are skipped." },
+      { "label": "D", "text": "5 3", "isCorrect": false, "explanation": "This undercounts; a = 1 still satisfies a > 0, so it prints before the loop exits." }
+    ],
+    "explanation": "a decreases by 2 each pass (5, 3, 1), printing while a > 0, and stops once a becomes -1.",
+    "conceptLink": "ap-csa/unit-4-iteration/while-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-14",
+    "unit": "unit-4-iteration",
+    "topic": "for-loops",
+    "difficulty": "easy",
+    "stem": "What does this code print?\n\n```java\nfor (int i = 0; i < 5; i++) {\n  System.out.print(i + \" \");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "0 1 2 3 4", "isCorrect": true, "explanation": "i starts at 0 and the loop continues while i < 5, covering 0 through 4." },
+      { "label": "B", "text": "1 2 3 4 5", "isCorrect": false, "explanation": "i starts at 0, not 1, so this shifts every value up by one incorrectly." },
+      { "label": "C", "text": "0 1 2 3 4 5", "isCorrect": false, "explanation": "The loop stops once i reaches 5, since 5 < 5 is false -- 5 is never printed." },
+      { "label": "D", "text": "1 2 3 4", "isCorrect": false, "explanation": "This misses printing i = 0 and also stops one iteration early." }
+    ],
+    "explanation": "The loop starts at i = 0 and runs while i < 5, printing 0 1 2 3 4.",
+    "conceptLink": "ap-csa/unit-4-iteration/for-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-15",
+    "unit": "unit-4-iteration",
+    "topic": "for-loops",
+    "difficulty": "medium",
+    "stem": "How many times does this loop execute?\n\n```java\nfor (int i = 5; i >= 1; i--) {\n  // body\n}\n```",
+    "choices": [
+      { "label": "A", "text": "4", "isCorrect": false, "explanation": "This undercounts; i takes the values 5, 4, 3, 2, and 1 -- five values, not four." },
+      { "label": "B", "text": "5", "isCorrect": true, "explanation": "i takes the values 5, 4, 3, 2, 1, each satisfying i >= 1, giving 5 iterations." },
+      { "label": "C", "text": "6", "isCorrect": false, "explanation": "This overcounts; once i becomes 0, 0 >= 1 is false, so there's no sixth iteration." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "The initial condition 5 >= 1 is true, so the loop does run." }
+    ],
+    "explanation": "Counting down from 5 to 1 (inclusive) while i >= 1 gives exactly 5 iterations.",
+    "conceptLink": "ap-csa/unit-4-iteration/for-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-16",
+    "unit": "unit-4-iteration",
+    "topic": "for-loops",
+    "difficulty": "medium",
+    "stem": "What is the value of `sum` after this code runs?\n\n```java\nint sum = 0;\nfor (int i = 1; i <= 10; i += 2) {\n  sum += i;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "25", "isCorrect": true, "explanation": "i takes the values 1, 3, 5, 7, 9 (stepping by 2, staying <= 10), and their sum is 1+3+5+7+9 = 25." },
+      { "label": "B", "text": "30", "isCorrect": false, "explanation": "This doesn't match the sum of just the odd values 1 through 9 that this loop actually visits." },
+      { "label": "C", "text": "55", "isCorrect": false, "explanation": "55 is the sum of every integer 1 through 10, but this loop skips every other value (stepping by 2)." },
+      { "label": "D", "text": "20", "isCorrect": false, "explanation": "This doesn't correspond to the correct set of terms visited by the loop." }
+    ],
+    "explanation": "Stepping by 2 from 1 while i <= 10 visits 1, 3, 5, 7, 9. Their sum is 25.",
+    "conceptLink": "ap-csa/unit-4-iteration/for-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-17",
+    "unit": "unit-4-iteration",
+    "topic": "for-loops",
+    "difficulty": "hard",
+    "stem": "What does this code print?\n\n```java\nfor (int i = 10; i > 0; i /= 2) {\n  System.out.print(i + \" \");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "10 5 2 1", "isCorrect": true, "explanation": "i takes the values 10, then 10/2=5, then 5/2=2 (integer division truncates), then 2/2=1, then 1/2=0 which stops the loop." },
+      { "label": "B", "text": "10 5 2 1 0", "isCorrect": false, "explanation": "The loop stops once i becomes 0, since 0 > 0 is false -- 0 is never printed." },
+      { "label": "C", "text": "10 5 3 2 1", "isCorrect": false, "explanation": "Integer division truncates: 5 / 2 is 2, not 3." },
+      { "label": "D", "text": "10 8 6 4 2", "isCorrect": false, "explanation": "This describes subtracting a fixed amount each time, not dividing by 2." }
+    ],
+    "explanation": "Each pass divides i by 2 using integer division, which truncates: 10, 5, 2, 1, then 0 stops the loop.",
+    "conceptLink": "ap-csa/unit-4-iteration/for-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-18",
+    "unit": "unit-4-iteration",
+    "topic": "for-loops",
+    "difficulty": "easy",
+    "stem": "In the for-loop header `for (int i = 0; i < n; i++)`, which part runs exactly once, before the loop begins?",
+    "choices": [
+      { "label": "A", "text": "i < n", "isCorrect": false, "explanation": "The condition is checked before every iteration, not just once." },
+      { "label": "B", "text": "i++", "isCorrect": false, "explanation": "The update runs after every iteration, not just at the start." },
+      { "label": "C", "text": "int i = 0", "isCorrect": true, "explanation": "The initialization clause runs a single time, before the loop's first condition check." },
+      { "label": "D", "text": "the loop body", "isCorrect": false, "explanation": "The body can run multiple times (or zero times) -- it isn't guaranteed to run exactly once." }
+    ],
+    "explanation": "A for loop's initialization clause executes exactly once, before anything else in the loop.",
+    "conceptLink": "ap-csa/unit-4-iteration/for-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-19",
+    "unit": "unit-4-iteration",
+    "topic": "for-loops",
+    "difficulty": "medium",
+    "stem": "What does this code print?\n\n```java\nfor (int i = 0; i < 3; i++) {\n  for (int j = 0; j < 1; j++) {\n    System.out.print(i);\n  }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "012", "isCorrect": true, "explanation": "The inner loop runs exactly once each time (j < 1 allows only j = 0), so each outer value of i (0, 1, 2) is printed once." },
+      { "label": "B", "text": "001122", "isCorrect": false, "explanation": "The inner loop only runs once per outer iteration (j < 1), not twice." },
+      { "label": "C", "text": "0123", "isCorrect": false, "explanation": "The outer loop only reaches i = 0, 1, 2 (i < 3); i = 3 is never reached." },
+      { "label": "D", "text": "000", "isCorrect": false, "explanation": "i does change each outer iteration -- this would only happen if i never updated." }
+    ],
+    "explanation": "The inner loop runs exactly once per outer pass, so it just prints the current value of i once for each of i = 0, 1, 2.",
+    "conceptLink": "ap-csa/unit-4-iteration/for-loops",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-20",
+    "unit": "unit-4-iteration",
+    "topic": "nested-iteration",
+    "difficulty": "easy",
+    "stem": "How many total times does the inner loop body execute?\n\n```java\nfor (int i = 0; i < 4; i++) {\n  for (int j = 0; j < 2; j++) {\n    // body\n  }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "6", "isCorrect": false, "explanation": "This doesn't match 4 times 2." },
+      { "label": "B", "text": "8", "isCorrect": true, "explanation": "The inner loop runs 2 times for each of the outer loop's 4 iterations: 4 x 2 = 8." },
+      { "label": "C", "text": "4", "isCorrect": false, "explanation": "This is just the outer loop's iteration count, not the total inner executions." },
+      { "label": "D", "text": "2", "isCorrect": false, "explanation": "This is just the inner loop's count for a single pass, not the total across all outer iterations." }
+    ],
+    "explanation": "Nested loops multiply: the inner loop runs 2 times for each of the 4 outer iterations, for 8 total.",
+    "conceptLink": "ap-csa/unit-4-iteration/nested-iteration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-21",
+    "unit": "unit-4-iteration",
+    "topic": "nested-iteration",
+    "difficulty": "medium",
+    "stem": "What is the value of `count` after this code runs?\n\n```java\nint count = 0;\nfor (int row = 1; row <= 3; row++) {\n  for (int col = 1; col <= row; col++) {\n    count++;\n  }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "6", "isCorrect": true, "explanation": "row=1 gives 1 inner iteration, row=2 gives 2, row=3 gives 3, totaling 1+2+3 = 6." },
+      { "label": "B", "text": "9", "isCorrect": false, "explanation": "9 would be 3x3, but the inner loop doesn't always run 3 times -- it runs row times, forming a triangular pattern." },
+      { "label": "C", "text": "3", "isCorrect": false, "explanation": "This is just the number of outer iterations, not the total inner executions." },
+      { "label": "D", "text": "12", "isCorrect": false, "explanation": "This overcounts the triangular total of 1+2+3." }
+    ],
+    "explanation": "Because the inner loop's bound depends on row, it runs 1, then 2, then 3 times as row increases, for a total of 1+2+3 = 6.",
+    "conceptLink": "ap-csa/unit-4-iteration/nested-iteration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-22",
+    "unit": "unit-4-iteration",
+    "topic": "nested-iteration",
+    "difficulty": "medium",
+    "stem": "What does this code print?\n\n```java\nfor (int i = 1; i <= 2; i++) {\n  for (int j = 1; j <= 3; j++) {\n    System.out.print(i + \"\" + j + \" \");\n  }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "11 12 13 21 22 23", "isCorrect": true, "explanation": "For i=1, j runs 1,2,3 giving 11 12 13; for i=2, j runs 1,2,3 again giving 21 22 23." },
+      { "label": "B", "text": "11 21 12 22 13 23", "isCorrect": false, "explanation": "This ordering would result if the loops were swapped (j as the outer loop, i as the inner), but here i is outer." },
+      { "label": "C", "text": "12 13 21 22 23", "isCorrect": false, "explanation": "This is missing the very first pair, 11." },
+      { "label": "D", "text": "11 12 13", "isCorrect": false, "explanation": "This stops after only the first outer iteration (i=1), never reaching i=2." }
+    ],
+    "explanation": "For each value of i, the inner loop runs through all values of j, concatenating them: 11 12 13, then 21 22 23.",
+    "conceptLink": "ap-csa/unit-4-iteration/nested-iteration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-23",
+    "unit": "unit-4-iteration",
+    "topic": "nested-iteration",
+    "difficulty": "hard",
+    "stem": "How many times does `\"*\"` get printed?\n\n```java\nfor (int i = 0; i < 3; i++) {\n  for (int j = i; j < 3; j++) {\n    System.out.print(\"*\");\n  }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "6", "isCorrect": true, "explanation": "i=0 gives j=0,1,2 (3 stars); i=1 gives j=1,2 (2 stars); i=2 gives j=2 (1 star). Total: 3+2+1=6." },
+      { "label": "B", "text": "9", "isCorrect": false, "explanation": "9 would be 3x3, but the inner loop's starting point depends on i, so it doesn't always run 3 times." },
+      { "label": "C", "text": "3", "isCorrect": false, "explanation": "This is just the outer loop's iteration count." },
+      { "label": "D", "text": "5", "isCorrect": false, "explanation": "This doesn't match the correct triangular sum 3+2+1." }
+    ],
+    "explanation": "Because the inner loop starts at j = i, it runs fewer times as i grows: 3, then 2, then 1 -- a total of 6.",
+    "conceptLink": "ap-csa/unit-4-iteration/nested-iteration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-24",
+    "unit": "unit-4-iteration",
+    "topic": "nested-iteration",
+    "difficulty": "medium",
+    "stem": "What is the value of `product` after this code runs?\n\n```java\nint product = 1;\nfor (int i = 1; i <= 2; i++) {\n  for (int j = 1; j <= 2; j++) {\n    product *= 2;\n  }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "16", "isCorrect": true, "explanation": "The inner statement runs 2 x 2 = 4 times, each doubling product: 1 -> 2 -> 4 -> 8 -> 16." },
+      { "label": "B", "text": "8", "isCorrect": false, "explanation": "This would follow if the body ran only 3 times, but it runs 2 x 2 = 4 times." },
+      { "label": "C", "text": "4", "isCorrect": false, "explanation": "This is the number of multiplications, not the resulting product." },
+      { "label": "D", "text": "2", "isCorrect": false, "explanation": "This is the result after only one multiplication, not all four." }
+    ],
+    "explanation": "The nested loops run the doubling statement 2 x 2 = 4 times, taking product from 1 to 16.",
+    "conceptLink": "ap-csa/unit-4-iteration/nested-iteration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-25",
+    "unit": "unit-4-iteration",
+    "topic": "nested-iteration",
+    "difficulty": "easy",
+    "stem": "In a nested loop, how does the inner loop's condition get checked, relative to the outer loop?",
+    "choices": [
+      { "label": "A", "text": "Once per outer iteration, and nothing more", "isCorrect": false, "explanation": "The inner loop runs its full course -- potentially many condition checks -- during each outer iteration, not just a single check." },
+      { "label": "B", "text": "Only once total, regardless of the outer loop", "isCorrect": false, "explanation": "The inner loop restarts and is checked again for every outer iteration, not just once overall." },
+      { "label": "C", "text": "Repeatedly, in full, during every single outer iteration", "isCorrect": true, "explanation": "Each time the outer loop body runs, the inner loop restarts from its initialization and runs its full course again." },
+      { "label": "D", "text": "Never, unless the outer loop finishes first", "isCorrect": false, "explanation": "The inner loop runs during each outer iteration, not after the outer loop is already done." }
+    ],
+    "explanation": "The inner loop is a complete loop in its own right that restarts and runs fully each time the outer loop body executes.",
+    "conceptLink": "ap-csa/unit-4-iteration/nested-iteration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-26",
+    "unit": "unit-4-iteration",
+    "topic": "informal-code-analysis",
+    "difficulty": "medium",
+    "stem": "In terms of `n`, about how many times does the loop body run?\n\n```java\nfor (int i = 0; i < n; i++) {\n  // body\n}\n```",
+    "choices": [
+      { "label": "A", "text": "n", "isCorrect": true, "explanation": "The loop runs once for every value of i from 0 to n-1, which is n times." },
+      { "label": "B", "text": "n / 2", "isCorrect": false, "explanation": "This would apply if the loop skipped every other value, but it increments by 1 each time and covers all n values." },
+      { "label": "C", "text": "n^2", "isCorrect": false, "explanation": "n-squared describes a nested loop with two loops each running n times -- this is a single loop." },
+      { "label": "D", "text": "1", "isCorrect": false, "explanation": "The body runs n times (assuming n > 0), not just once." }
+    ],
+    "explanation": "A single loop from 0 to n-1 runs its body n times.",
+    "conceptLink": "ap-csa/unit-4-iteration/informal-code-analysis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-27",
+    "unit": "unit-4-iteration",
+    "topic": "informal-code-analysis",
+    "difficulty": "hard",
+    "stem": "Which best describes the number of times `\"*\"` is printed, in terms of `n`?\n\n```java\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < n; j++) {\n    System.out.print(\"*\");\n  }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "n", "isCorrect": false, "explanation": "This only accounts for one loop's iterations, ignoring that the inner loop also runs n times for each outer iteration." },
+      { "label": "B", "text": "2n", "isCorrect": false, "explanation": "This would follow if the two loops' counts were added, but nested loops multiply, not add." },
+      { "label": "C", "text": "n^2", "isCorrect": true, "explanation": "The inner loop runs n times for each of the n outer iterations, so the total is n x n = n-squared." },
+      { "label": "D", "text": "n + 2", "isCorrect": false, "explanation": "This doesn't correspond to the multiplicative relationship between two loops that both run n times." }
+    ],
+    "explanation": "Two nested loops that each run n times produce n-squared total executions of the innermost statement.",
+    "conceptLink": "ap-csa/unit-4-iteration/informal-code-analysis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-28",
+    "unit": "unit-4-iteration",
+    "topic": "informal-code-analysis",
+    "difficulty": "medium",
+    "stem": "Which loop runs a number of times that does NOT depend on `n`?",
+    "choices": [
+      { "label": "A", "text": "for (int i = 0; i < n; i++)", "isCorrect": false, "explanation": "This loop's iteration count is exactly n, which depends on n." },
+      { "label": "B", "text": "for (int i = 0; i < 10; i++)", "isCorrect": true, "explanation": "This loop always runs exactly 10 times, regardless of what n is -- its bound is a fixed constant." },
+      { "label": "C", "text": "for (int i = 0; i < n * 2; i++)", "isCorrect": false, "explanation": "This loop's iteration count is 2n, which depends on n." },
+      { "label": "D", "text": "while (i < n) { i++; }", "isCorrect": false, "explanation": "This loop's iteration count depends on n (and i's starting value)." }
+    ],
+    "explanation": "A loop bounded by a fixed constant like 10 always runs the same number of times no matter what n is.",
+    "conceptLink": "ap-csa/unit-4-iteration/informal-code-analysis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-29",
+    "unit": "unit-4-iteration",
+    "topic": "informal-code-analysis",
+    "difficulty": "hard",
+    "stem": "Which best describes the number of times the inner loop body runs, in terms of `n`?\n\n```java\nfor (int i = 0; i < n; i++) {\n  for (int j = 0; j < 5; j++) {\n    // body\n  }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "n", "isCorrect": false, "explanation": "This ignores that the inner loop runs 5 times for every single outer iteration." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "This is only the inner loop's count for one pass, not the total across all n outer iterations." },
+      { "label": "C", "text": "5n", "isCorrect": true, "explanation": "The inner loop always runs a fixed 5 times, and that happens once for each of the n outer iterations: 5 x n." },
+      { "label": "D", "text": "n^2", "isCorrect": false, "explanation": "n-squared would apply if the inner loop also ran n times, but here it always runs a fixed 5 times, regardless of n." }
+    ],
+    "explanation": "The inner loop's fixed count (5) times the outer loop's count (n) gives the total: 5n.",
+    "conceptLink": "ap-csa/unit-4-iteration/informal-code-analysis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-mcq-30",
+    "unit": "unit-4-iteration",
+    "topic": "informal-code-analysis",
+    "difficulty": "medium",
+    "stem": "As `n` grows very large, which of these executes its innermost body the MOST times?",
+    "choices": [
+      { "label": "A", "text": "for (int i = 0; i < n; i++)", "isCorrect": false, "explanation": "This runs about n times, which grows much slower than n-squared as n gets large." },
+      { "label": "B", "text": "for (int i = 0; i < n; i += 2)", "isCorrect": false, "explanation": "This runs about n / 2 times, even fewer than option A." },
+      { "label": "C", "text": "for (int i = 0; i < n; i++) { for (int j = 0; j < n; j++) { } }", "isCorrect": true, "explanation": "This nested loop's innermost body runs n x n = n-squared times, which grows faster than any of the single loops as n increases." },
+      { "label": "D", "text": "for (int i = 0; i < 100; i++)", "isCorrect": false, "explanation": "This always runs exactly 100 times no matter how large n gets -- the slowest-growing of all the options." }
+    ],
+    "explanation": "The nested loop's n-squared growth eventually outpaces every option that only grows linearly (or stays constant) as n increases.",
+    "conceptLink": "ap-csa/unit-4-iteration/informal-code-analysis",
+    "reviewed": false
   }
 ]

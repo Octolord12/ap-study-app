@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-csa-u6-mcq-1",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "easy",
+    "stem": "Which correctly creates an array of 5 ints, all initialized to 0?",
+    "choices": [
+      { "label": "A", "text": "int[] arr = new int[5];", "isCorrect": true, "explanation": "This creates a new int array with 5 elements, each defaulting to 0." },
+      { "label": "B", "text": "int arr[5];", "isCorrect": false, "explanation": "This isn't valid Java array declaration/creation syntax; the size can't be specified this way." },
+      { "label": "C", "text": "int[] arr = new int(5);", "isCorrect": false, "explanation": "Array creation uses square brackets, new int[5], not parentheses." },
+      { "label": "D", "text": "array arr = new int[5];", "isCorrect": false, "explanation": "\"array\" is not a valid type keyword in Java." }
+    ],
+    "explanation": "`new int[5]` creates an array of 5 ints, each defaulting to 0.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-2",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "easy",
+    "stem": "What is the index of the first element in a Java array?",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": false, "explanation": "Java arrays are zero-indexed, so the first element is at index 0, not 1." },
+      { "label": "B", "text": "0", "isCorrect": true, "explanation": "Java array indices start at 0 for the first element." },
+      { "label": "C", "text": "-1", "isCorrect": false, "explanation": "Negative indices are not valid for accessing Java array elements." },
+      { "label": "D", "text": "It depends on the array's size", "isCorrect": false, "explanation": "The first index is always 0, regardless of the array's size." }
+    ],
+    "explanation": "Java arrays are zero-indexed: the first element is always at index 0.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-3",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint[] arr = {10, 20, 30};\nSystem.out.println(arr[1]);\n```",
+    "choices": [
+      { "label": "A", "text": "10", "isCorrect": false, "explanation": "Index 0 holds 10, but this accesses index 1." },
+      { "label": "B", "text": "20", "isCorrect": true, "explanation": "Index 1 in {10, 20, 30} holds the value 20." },
+      { "label": "C", "text": "30", "isCorrect": false, "explanation": "Index 2 holds 30, but this accesses index 1." },
+      { "label": "D", "text": "ArrayIndexOutOfBoundsException", "isCorrect": false, "explanation": "Index 1 is a valid index for a 3-element array (valid indices are 0, 1, and 2)." }
+    ],
+    "explanation": "`arr[1]` accesses the second element (index 1), which is `20`.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-4",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "medium",
+    "stem": "What is `arr.length` for `int[] arr = new int[7];`?",
+    "choices": [
+      { "label": "A", "text": "6", "isCorrect": false, "explanation": "length gives the total number of elements (7), not the highest valid index (6)." },
+      { "label": "B", "text": "7", "isCorrect": true, "explanation": "The array was created with 7 elements, so its length field is 7." },
+      { "label": "C", "text": "8", "isCorrect": false, "explanation": "The array has exactly 7 elements, no more." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "length refers to the total number of elements, not how many have been explicitly assigned a nonzero value." }
+    ],
+    "explanation": "`arr.length` reports the total number of elements the array holds, which is `7`.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-5",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[] arr = new int[4];\narr[0] = 5;\narr[3] = 9;\nSystem.out.println(arr[1] + arr[2]);\n```",
+    "choices": [
+      { "label": "A", "text": "0", "isCorrect": true, "explanation": "arr[1] and arr[2] were never assigned, so they default to 0; 0 + 0 = 0." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "arr[1] was never assigned, so it defaults to 0, not 5 (arr[0] is 5)." },
+      { "label": "C", "text": "9", "isCorrect": false, "explanation": "arr[2] was never assigned, so it defaults to 0, not 9 (arr[3] is 9)." },
+      { "label": "D", "text": "14", "isCorrect": false, "explanation": "This would be arr[0] + arr[3] (5 + 9), but the code sums arr[1] + arr[2], which are both 0." }
+    ],
+    "explanation": "Unassigned int array elements default to 0, so `arr[1] + arr[2]` is `0 + 0 = 0`.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-6",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "medium",
+    "stem": "What happens when you try to access `arr[5]` for an array declared as `int[] arr = new int[5];`?",
+    "choices": [
+      { "label": "A", "text": "It returns 0", "isCorrect": false, "explanation": "Accessing an invalid index doesn't return a default value -- it throws an exception." },
+      { "label": "B", "text": "It returns the last valid element", "isCorrect": false, "explanation": "Java does not silently substitute the last valid element for an out-of-bounds access." },
+      { "label": "C", "text": "It throws an ArrayIndexOutOfBoundsException", "isCorrect": true, "explanation": "Valid indices for a 5-element array are 0-4; index 5 is out of bounds, causing this runtime exception." },
+      { "label": "D", "text": "It automatically resizes the array", "isCorrect": false, "explanation": "Java arrays have a fixed size and never resize automatically." }
+    ],
+    "explanation": "Accessing an index equal to or beyond an array's length throws an `ArrayIndexOutOfBoundsException`.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-7",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "easy",
+    "stem": "Which correctly declares and initializes an array of 3 Strings with the values \"a\", \"b\", \"c\"?",
+    "choices": [
+      { "label": "A", "text": "String[] arr = {\"a\", \"b\", \"c\"};", "isCorrect": true, "explanation": "Curly braces are used for array literal initialization in Java, listing the elements directly." },
+      { "label": "B", "text": "String arr[] = new String(3);", "isCorrect": false, "explanation": "This uses parentheses to try to create the array, which isn't valid array-creation syntax." },
+      { "label": "C", "text": "String[] arr = [\"a\", \"b\", \"c\"];", "isCorrect": false, "explanation": "Square brackets are not used for array literals in Java; curly braces {} are used instead." },
+      { "label": "D", "text": "String arr = {\"a\", \"b\", \"c\"};", "isCorrect": false, "explanation": "String arr (without []) declares a single String variable, not an array." }
+    ],
+    "explanation": "An array literal is written with curly braces: `String[] arr = {\"a\", \"b\", \"c\"};`.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-8",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[] arr = {1, 2, 3};\narr[1] = arr[0] + arr[2];\nSystem.out.println(arr[1]);\n```",
+    "choices": [
+      { "label": "A", "text": "2", "isCorrect": false, "explanation": "This is the original value of arr[1] before it was reassigned." },
+      { "label": "B", "text": "3", "isCorrect": false, "explanation": "This is the value of arr[2], not the sum used to update arr[1]." },
+      { "label": "C", "text": "4", "isCorrect": true, "explanation": "arr[0] is 1 and arr[2] is 3, so arr[1] is reassigned to 1 + 3 = 4." },
+      { "label": "D", "text": "6", "isCorrect": false, "explanation": "This would be 1 + 2 + 3, but only arr[0] and arr[2] are summed to update arr[1]." }
+    ],
+    "explanation": "`arr[1] = arr[0] + arr[2]` computes `1 + 3 = 4`, which overwrites the original value at index 1.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-9",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "easy",
+    "stem": "Which loop correctly prints every element of `int[] arr`?",
+    "choices": [
+      { "label": "A", "text": "for (int i = 0; i < arr.length; i++) { System.out.println(arr[i]); }", "isCorrect": true, "explanation": "This correctly starts at index 0 and stops just before arr.length, covering every valid index exactly once." },
+      { "label": "B", "text": "for (int i = 1; i <= arr.length; i++) { System.out.println(arr[i]); }", "isCorrect": false, "explanation": "Starting at 1 skips index 0, and going up to and including arr.length causes an out-of-bounds access." },
+      { "label": "C", "text": "for (int i = 0; i <= arr.length; i++) { System.out.println(arr[i]); }", "isCorrect": false, "explanation": "Using <= arr.length causes an out-of-bounds access on the final iteration, since i == arr.length is not a valid index." },
+      { "label": "D", "text": "for (int i = 0; i < arr; i++) { System.out.println(arr[i]); }", "isCorrect": false, "explanation": "arr is the array itself, not a valid bound for comparison -- it should be arr.length." }
+    ],
+    "explanation": "The standard traversal pattern is `for (int i = 0; i < arr.length; i++)`.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-10",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint[] arr = {2, 4, 6};\nint sum = 0;\nfor (int i = 0; i < arr.length; i++) {\n    sum += arr[i];\n}\nSystem.out.println(sum);\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "This is the number of elements, but sum should be the total of their values." },
+      { "label": "B", "text": "6", "isCorrect": false, "explanation": "This is just the last element's value, not the running total across all elements." },
+      { "label": "C", "text": "12", "isCorrect": true, "explanation": "sum accumulates 2 + 4 + 6 = 12 across the loop's iterations." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "sum starts at 0 but is updated on every iteration, ending at 12, not staying at 0." }
+    ],
+    "explanation": "The loop accumulates the sum of all elements: `2 + 4 + 6 = 12`.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-11",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint[] arr = {5, 10, 15, 20};\nint count = 0;\nfor (int i = 0; i < arr.length; i++) {\n    if (arr[i] > 10) {\n        count++;\n    }\n}\nSystem.out.println(count);\n```",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": false, "explanation": "Two elements (15 and 20) are greater than 10, not just one." },
+      { "label": "B", "text": "2", "isCorrect": true, "explanation": "Only 15 and 20 are strictly greater than 10, so count ends at 2." },
+      { "label": "C", "text": "3", "isCorrect": false, "explanation": "10 itself is not greater than 10, so it doesn't count -- only 15 and 20 do." },
+      { "label": "D", "text": "4", "isCorrect": false, "explanation": "Not all elements exceed 10; 5 and 10 do not." }
+    ],
+    "explanation": "Only `15` and `20` are strictly greater than `10`, so `count` ends at `2`.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-12",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[] arr = {1, 2, 3, 4};\nfor (int i = arr.length - 1; i >= 0; i--) {\n    System.out.print(arr[i]);\n}\n```",
+    "choices": [
+      { "label": "A", "text": "1234", "isCorrect": false, "explanation": "This loop iterates backward from the last index to the first, printing values in reverse order, not forward order." },
+      { "label": "B", "text": "4321", "isCorrect": true, "explanation": "Starting at index 3 and decrementing to 0 visits the elements in reverse: 4, 3, 2, 1." },
+      { "label": "C", "text": "432", "isCorrect": false, "explanation": "The loop condition i >= 0 includes index 0, so all 4 elements print, not just 3." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid, well-formed Java code for traversing an array backward." }
+    ],
+    "explanation": "Starting at the last index and decrementing to 0 traverses the array in reverse, printing `4321`.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-13",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "medium",
+    "stem": "What is wrong with this loop, intended to print every element of `arr`?\n\n```java\nint[] arr = {1, 2, 3};\nfor (int i = 0; i < arr.length; i--) {\n    System.out.println(arr[i]);\n}\n```",
+    "choices": [
+      { "label": "A", "text": "Nothing, it works correctly", "isCorrect": false, "explanation": "The update statement i-- moves i away from the exit condition, so this loop does not work correctly." },
+      { "label": "B", "text": "The loop update uses i-- instead of i++, so i never reaches arr.length and the loop misbehaves", "isCorrect": true, "explanation": "Decrementing i means the condition i < arr.length remains true indefinitely (or i becomes negative, causing an exception), instead of properly advancing through the array." },
+      { "label": "C", "text": "The starting value of i is wrong", "isCorrect": false, "explanation": "Starting i at 0 is correct; the update statement is the actual bug." },
+      { "label": "D", "text": "arr.length should be arr.size()", "isCorrect": false, "explanation": "length is a field on arrays in Java, not a method called size(); size() is used for classes like ArrayList, not arrays." }
+    ],
+    "explanation": "Using `i--` as the update statement moves `i` in the wrong direction, breaking the intended forward traversal.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-14",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "medium",
+    "stem": "What does this loop compute?\n\n```java\nint[] arr = {3, 7, 2, 9, 4};\nint max = arr[0];\nfor (int i = 1; i < arr.length; i++) {\n    if (arr[i] > max) {\n        max = arr[i];\n    }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "The sum of all elements", "isCorrect": false, "explanation": "The loop never adds elements together; it compares and conditionally reassigns max." },
+      { "label": "B", "text": "The maximum value in the array", "isCorrect": true, "explanation": "max starts at the first element and is updated whenever a larger element is found, ending up as the overall maximum." },
+      { "label": "C", "text": "The minimum value in the array", "isCorrect": false, "explanation": "The comparison arr[i] > max looks for larger values, which finds the maximum, not the minimum." },
+      { "label": "D", "text": "The index of the largest element", "isCorrect": false, "explanation": "max stores the largest VALUE found, not its index." }
+    ],
+    "explanation": "This is the standard running-maximum pattern: `max` ends up holding the largest value in the array (9).",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-15",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[] arr = {4, 8, 15, 16};\nint total = 0;\nfor (int i = 0; i < arr.length - 1; i++) {\n    total += arr[i];\n}\nSystem.out.println(total);\n```",
+    "choices": [
+      { "label": "A", "text": "27", "isCorrect": true, "explanation": "The loop runs for i = 0, 1, 2 (stopping before length - 1 = 3), summing arr[0] + arr[1] + arr[2] = 4 + 8 + 15 = 27." },
+      { "label": "B", "text": "43", "isCorrect": false, "explanation": "This would include all 4 elements (4+8+15+16), but the condition i < arr.length - 1 excludes the last element." },
+      { "label": "C", "text": "16", "isCorrect": false, "explanation": "This is just the last element's value, which is actually excluded from the sum entirely." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "total is updated across 3 iterations of the loop, so it doesn't stay at 0." }
+    ],
+    "explanation": "`i < arr.length - 1` stops the loop one element early, so only `arr[0]`, `arr[1]`, and `arr[2]` (4+8+15=27) are summed.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-16",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "medium",
+    "stem": "Why might a loop use the condition `i < arr.length - 1` instead of `i < arr.length`?",
+    "choices": [
+      { "label": "A", "text": "It's always a mistake and never intentional", "isCorrect": false, "explanation": "This pattern is often intentional, not always a mistake -- e.g. when comparing adjacent elements." },
+      { "label": "B", "text": "To intentionally stop one element early, often to safely compare arr[i] with arr[i+1] without going out of bounds", "isCorrect": true, "explanation": "This pattern is common when each iteration looks ahead to the next element, since arr[arr.length] would be out of bounds." },
+      { "label": "C", "text": "It makes the loop faster", "isCorrect": false, "explanation": "This has nothing to do with speed; it changes which elements are visited by the loop." },
+      { "label": "D", "text": "arr.length - 1 always equals 0", "isCorrect": false, "explanation": "arr.length - 1 depends on the array's size and is not always 0." }
+    ],
+    "explanation": "Stopping at `arr.length - 1` is often intentional, allowing safe access to `arr[i + 1]` within the loop body.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-17",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "easy",
+    "stem": "Which correctly uses an enhanced for-loop (for-each) to print every element of `int[] arr`?",
+    "choices": [
+      { "label": "A", "text": "for (int x : arr) { System.out.println(x); }", "isCorrect": true, "explanation": "This is the correct enhanced for-loop syntax: a variable, a colon, and the array to iterate over." },
+      { "label": "B", "text": "for (int x = arr) { System.out.println(x); }", "isCorrect": false, "explanation": "This isn't the correct enhanced for-loop syntax; it needs a colon, not an equals sign." },
+      { "label": "C", "text": "for (int i = 0 : arr.length) { System.out.println(arr[i]); }", "isCorrect": false, "explanation": "This mixes traditional and enhanced for-loop syntax incorrectly." },
+      { "label": "D", "text": "for (arr : int x) { System.out.println(x); }", "isCorrect": false, "explanation": "This has the type/variable and array reversed compared to correct enhanced for-loop syntax." }
+    ],
+    "explanation": "The enhanced for-loop syntax is `for (type variable : array) { ... }`.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-18",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint[] arr = {1, 2, 3};\nint sum = 0;\nfor (int x : arr) {\n    sum += x;\n}\nSystem.out.println(sum);\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "This is the number of elements, not their sum." },
+      { "label": "B", "text": "6", "isCorrect": true, "explanation": "The enhanced for-loop visits each element (1, 2, 3), and sum accumulates their total: 6." },
+      { "label": "C", "text": "123", "isCorrect": false, "explanation": "sum += x performs numeric addition here, not string concatenation, since sum and x are both ints." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is a valid, correctly formed enhanced for-loop." }
+    ],
+    "explanation": "The loop visits each element and accumulates the sum: `1 + 2 + 3 = 6`.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-19",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "hard",
+    "stem": "What is the key limitation of an enhanced for-loop compared to a traditional indexed for-loop when traversing an array?",
+    "choices": [
+      { "label": "A", "text": "It cannot read array elements at all", "isCorrect": false, "explanation": "An enhanced for-loop does read every element -- that's exactly what it's for." },
+      { "label": "B", "text": "It doesn't give you access to the index of each element as it iterates", "isCorrect": true, "explanation": "The enhanced for-loop only exposes each element's value, not its position in the array." },
+      { "label": "C", "text": "It only works on arrays of Strings", "isCorrect": false, "explanation": "Enhanced for-loops work on arrays of any type, not just Strings." },
+      { "label": "D", "text": "It always traverses the array backward", "isCorrect": false, "explanation": "An enhanced for-loop traverses forward, from the first element to the last." }
+    ],
+    "explanation": "The enhanced for-loop gives you each element's value but not its index, which a traditional indexed loop provides.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-20",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nString[] words = {\"cat\", \"dog\", \"bird\"};\nfor (String w : words) {\n    System.out.print(w + \" \");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "cat dog bird ", "isCorrect": true, "explanation": "Each word is printed followed by a space, in order: \"cat \", \"dog \", \"bird \"." },
+      { "label": "B", "text": "catdogbird", "isCorrect": false, "explanation": "The loop body includes a space after each word (w + \" \"), so the words are not printed without separation." },
+      { "label": "C", "text": "words", "isCorrect": false, "explanation": "This prints each element's actual value, not the literal variable name \"words\"." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is a valid enhanced for-loop over a String array." }
+    ],
+    "explanation": "The loop prints each String followed by a space: `\"cat dog bird \"`.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-21",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "medium",
+    "stem": "Why can't you use an enhanced for-loop to modify the elements of an array, like doubling every value?",
+    "choices": [
+      { "label": "A", "text": "Enhanced for-loops are read-only in every situation and cannot be used at all with arrays", "isCorrect": false, "explanation": "Enhanced for-loops can absolutely be used with arrays for reading purposes; the issue is specifically with modification." },
+      { "label": "B", "text": "The loop variable holds a copy of each element's value; reassigning it does not change the array itself", "isCorrect": true, "explanation": "Since the loop variable is a separate copy, changing it has no effect on the array's actual stored data." },
+      { "label": "C", "text": "Arrays cannot be traversed with a for-each loop", "isCorrect": false, "explanation": "Arrays can be traversed with a for-each loop -- that's a primary use case for it." },
+      { "label": "D", "text": "It always throws a runtime exception", "isCorrect": false, "explanation": "No exception is thrown; the loop variable is just reassigned harmlessly without affecting the array." }
+    ],
+    "explanation": "The enhanced for-loop's variable holds a copy of each value, so reassigning it does not update the underlying array.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-22",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint[] nums = {10, 20, 30};\nfor (int n : nums) {\n    n = n * 2;\n}\nSystem.out.println(nums[0]);\n```",
+    "choices": [
+      { "label": "A", "text": "10", "isCorrect": true, "explanation": "n = n * 2 only changes the local loop variable n; it never writes back into the nums array, so nums[0] stays 10." },
+      { "label": "B", "text": "20", "isCorrect": false, "explanation": "While n itself becomes 20 during that iteration, that change never propagates back to nums[0], which stays 10." },
+      { "label": "C", "text": "30", "isCorrect": false, "explanation": "nums[0] was never 30 -- this confuses it with a different element." },
+      { "label": "D", "text": "60", "isCorrect": false, "explanation": "Doubling only affects the local copy n, not the actual array element nums[0]." }
+    ],
+    "explanation": "Reassigning the enhanced for-loop's variable `n` does not affect the underlying array, so `nums[0]` remains `10`.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-23",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "easy",
+    "stem": "When is an enhanced for-loop generally preferred over a traditional indexed for-loop?",
+    "choices": [
+      { "label": "A", "text": "When you need to modify array elements as you go", "isCorrect": false, "explanation": "Modifying elements requires index-based access, which the enhanced for-loop doesn't provide." },
+      { "label": "B", "text": "When you simply need to read/process every element in order and don't need the index", "isCorrect": true, "explanation": "The enhanced for-loop's simpler syntax is ideal when you just need each value, without tracking position." },
+      { "label": "C", "text": "When you need to traverse the array backward", "isCorrect": false, "explanation": "Enhanced for-loops always go forward; backward traversal requires a traditional indexed loop." },
+      { "label": "D", "text": "When you need to skip every other element", "isCorrect": false, "explanation": "Skipping elements requires manual control over the index, which enhanced for-loops don't give you." }
+    ],
+    "explanation": "The enhanced for-loop is ideal for simple, forward, read-only traversal where the index isn't needed.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-24",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "medium",
+    "stem": "What does this method compute?\n\n```java\npublic int countNegatives(int[] arr) {\n    int count = 0;\n    for (int i = 0; i < arr.length; i++) {\n        if (arr[i] < 0) {\n            count++;\n        }\n    }\n    return count;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "The sum of all negative numbers", "isCorrect": false, "explanation": "count is incremented by 1 each time (count++), not accumulated with the actual negative values." },
+      { "label": "B", "text": "The number of negative elements in the array", "isCorrect": true, "explanation": "count is incremented once for every element that is less than 0, giving the total count of negatives." },
+      { "label": "C", "text": "The index of the first negative element", "isCorrect": false, "explanation": "count tracks a running total of how many negatives were found, not a specific index." },
+      { "label": "D", "text": "The largest negative number", "isCorrect": false, "explanation": "This method never compares or tracks the magnitude of the negative numbers, only counts them." }
+    ],
+    "explanation": "This method counts how many elements in the array are negative.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-25",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What is returned by `findMax` when called with `{3, 9, 1, 9, 5}`?\n\n```java\npublic int findMax(int[] arr) {\n    int max = arr[0];\n    for (int i = 1; i < arr.length; i++) {\n        if (arr[i] > max) {\n            max = arr[i];\n        }\n    }\n    return max;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "This is only the first element, but a larger element (9) appears later and updates max." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "5 is the last element, but it's smaller than the max already found (9)." },
+      { "label": "C", "text": "9", "isCorrect": true, "explanation": "Tracing max: starts at 3, updates to 9 at index 1, stays 9 (1 and 9 don't exceed it, and the second 9 isn't strictly greater), ending at 9." },
+      { "label": "D", "text": "1", "isCorrect": false, "explanation": "1 is smaller than the running max at every point, so it never becomes the new max." }
+    ],
+    "explanation": "Tracing `max` through the array {3, 9, 1, 9, 5}: it becomes 9 at index 1 and never gets replaced by anything larger, so `findMax` returns 9.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-26",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "medium",
+    "stem": "What does this method compute for `arr = {4, 8, 15, 16, 23}`?\n\n```java\npublic double average(int[] arr) {\n    int sum = 0;\n    for (int i = 0; i < arr.length; i++) {\n        sum += arr[i];\n    }\n    return (double) sum / arr.length;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "66", "isCorrect": false, "explanation": "66 is the sum, but the method divides by the count to compute an average, not just returning the sum." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "5 is the number of elements (arr.length), not the average value." },
+      { "label": "C", "text": "13.2", "isCorrect": true, "explanation": "sum is 4+8+15+16+23=66, and (double) sum / arr.length gives 66.0 / 5 = 13.2." },
+      { "label": "D", "text": "13", "isCorrect": false, "explanation": "The cast to double before dividing ensures a precise result of 13.2, not truncated to 13." }
+    ],
+    "explanation": "`sum` is `66`, and casting to `double` before dividing by `5` gives the precise average `13.2`.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-27",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What does this method search for, and what does it return if the target isn't found?\n\n```java\npublic int linearSearch(int[] arr, int target) {\n    for (int i = 0; i < arr.length; i++) {\n        if (arr[i] == target) {\n            return i;\n        }\n    }\n    return -1;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "It returns the value of target; -1 if not found", "isCorrect": false, "explanation": "The method returns i, the index where target was found, not the target value itself." },
+      { "label": "B", "text": "It returns the index of the first occurrence of target; -1 if not found", "isCorrect": true, "explanation": "The loop returns i as soon as a match is found; if the loop finishes without a match, it returns -1." },
+      { "label": "C", "text": "It returns true or false; false if not found", "isCorrect": false, "explanation": "The return type is int, not boolean, and it returns an index or -1, not true/false." },
+      { "label": "D", "text": "It returns the count of matches; 0 if not found", "isCorrect": false, "explanation": "This method returns as soon as it finds the FIRST match; it doesn't count all matches." }
+    ],
+    "explanation": "This is a linear search: it returns the index of the first matching element, or `-1` if `target` is never found.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-28",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "medium",
+    "stem": "What is wrong with this attempt to reverse an array in place?\n\n```java\npublic void reverse(int[] arr) {\n    for (int i = 0; i < arr.length; i++) {\n        int temp = arr[i];\n        arr[i] = arr[arr.length - 1 - i];\n        arr[arr.length - 1 - i] = temp;\n    }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "Nothing is wrong; it correctly reverses the array", "isCorrect": false, "explanation": "Running through the entire array causes each pair to be swapped twice, which restores the original order." },
+      { "label": "B", "text": "The loop runs through the whole array, so each pair gets swapped twice, undoing the reversal (should loop only to arr.length / 2)", "isCorrect": true, "explanation": "Swapping every index against its mirror, and then swapping again when i reaches that mirror index, cancels out the reversal." },
+      { "label": "C", "text": "arr.length - 1 - i is an invalid index", "isCorrect": false, "explanation": "arr.length - 1 - i is a valid, correctly computed index for the mirrored position." },
+      { "label": "D", "text": "temp should be declared outside the loop", "isCorrect": false, "explanation": "Declaring temp inside the loop is fine and doesn't cause the bug; the real issue is the loop's range." }
+    ],
+    "explanation": "Looping through every index swaps each pair twice, undoing the reversal; the loop should only run to `arr.length / 2`.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-29",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "medium",
+    "stem": "What does this method return for `arr = {2, 4, 6, 8}`?\n\n```java\npublic boolean allEven(int[] arr) {\n    for (int i = 0; i < arr.length; i++) {\n        if (arr[i] % 2 != 0) {\n            return false;\n        }\n    }\n    return true;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "Every element in this array is even, so the condition arr[i] % 2 != 0 is never true, and the loop completes, returning true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "Every element in this array is even, so the loop never returns false; true is returned at the end instead." },
+      { "label": "C", "text": "4", "isCorrect": false, "explanation": "This method returns a boolean, not the count of elements." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid, well-formed Java code." }
+    ],
+    "explanation": "Since every element is even, the loop never returns `false`, so it falls through to `return true;`.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-30",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What does this method return when called with `arr = {1, 3, 5, 7}`?\n\n```java\npublic boolean allEven(int[] arr) {\n    for (int i = 0; i < arr.length; i++) {\n        if (arr[i] % 2 != 0) {\n            return false;\n        }\n    }\n    return true;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": false, "explanation": "The very first element, 1, is odd, so the method returns false immediately -- it never reaches the final return true." },
+      { "label": "B", "text": "false", "isCorrect": true, "explanation": "At i = 0, arr[0] is 1, and 1 % 2 != 0 is true, so the method immediately returns false." },
+      { "label": "C", "text": "It checks all elements before deciding", "isCorrect": false, "explanation": "The method returns immediately as soon as it finds ONE odd element; it doesn't need to check the rest." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid, well-formed Java code." }
+    ],
+    "explanation": "The first element, 1, is odd, so the method returns `false` immediately without checking the rest of the array.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "slug": "unit-7-arraylist",
+  "order": 7,
+  "name": "ArrayList",
+  "weightingMin": 2,
+  "weightingMax": 7,
+  "topics": [
+    { "slug": "arraylist-intro", "order": 1, "name": "Introduction to ArrayList" },
+    { "slug": "arraylist-methods", "order": 2, "name": "ArrayList Methods" },
+    { "slug": "traversing-arraylists", "order": 3, "name": "Traversing ArrayLists" },
+    { "slug": "arraylist-algorithms", "order": 4, "name": "Developing Algorithms Using ArrayLists" }
+  ]
+}

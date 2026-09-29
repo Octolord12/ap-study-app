@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ap-csa-u3-frq-1",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "prompt": "Write a method named `letterGrade` that takes an `int` parameter `score` (0 to 100) and returns a `String` letter grade: `\"A\"` if `score` is 90 or above, `\"B\"` if 80 or above, `\"C\"` if 70 or above, and `\"F\"` otherwise.\n\nComplete the method below.\n\n```java\npublic String letterGrade(int score) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses an if/else-if/else chain that checks the conditions in order from highest to lowest" },
+      { "id": "r2", "points": 1, "description": "Correctly tests score >= 90 for \"A\" and score >= 80 for \"B\"" },
+      { "id": "r3", "points": 1, "description": "Correctly tests score >= 70 for \"C\"" },
+      { "id": "r4", "points": 1, "description": "Returns \"F\" as the default when none of the above conditions are true" }
+    ],
+    "sampleResponse": "```java\npublic String letterGrade(int score) {\n    if (score >= 90) {\n        return \"A\";\n    } else if (score >= 80) {\n        return \"B\";\n    } else if (score >= 70) {\n        return \"C\";\n    } else {\n        return \"F\";\n    }\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-frq-2",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "prompt": "Write a method named `canVote` that takes an `int` parameter `age` and a `boolean` parameter `isCitizen`, and returns `true` if the person is at least 18 years old AND is a citizen, and `false` otherwise.\n\nComplete the method below.\n\n```java\npublic boolean canVote(int age, boolean isCitizen) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly tests age >= 18" },
+      { "id": "r2", "points": 1, "description": "Combines the age check with isCitizen using the logical AND operator (&&)" },
+      { "id": "r3", "points": 1, "description": "Returns the correct boolean result" }
+    ],
+    "sampleResponse": "```java\npublic boolean canVote(int age, boolean isCitizen) {\n    return (age >= 18) && isCitizen;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-frq-3",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "prompt": "Write a method named `startsWithVowel` that takes a non-empty `String` parameter `word` and returns `true` if the first character of `word` is a vowel (`a`, `e`, `i`, `o`, or `u`), ignoring case, and `false` otherwise.\n\nComplete the method below.\n\n```java\npublic boolean startsWithVowel(String word) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Extracts the first character of word correctly (e.g. charAt(0))" },
+      { "id": "r2", "points": 1, "description": "Converts the extracted character to a consistent case for comparison (e.g. Character.toLowerCase)" },
+      { "id": "r3", "points": 1, "description": "Correctly checks the character against all five vowels using a compound boolean expression with ||" },
+      { "id": "r4", "points": 1, "description": "Returns the correct boolean result" }
+    ],
+    "sampleResponse": "```java\npublic boolean startsWithVowel(String word) {\n    char first = Character.toLowerCase(word.charAt(0));\n    return (first == 'a' || first == 'e' || first == 'i' || first == 'o' || first == 'u');\n}\n```",
+    "reviewed": false
+  }
+]

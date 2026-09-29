@@ -110,5 +110,373 @@
     "explanation": "Java casts a value by writing the target type in parentheses directly before the expression: `(double) count`.",
     "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
     "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-8",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "easy",
+    "stem": "Which of the following is a valid Java variable name?",
+    "choices": [
+      { "label": "A", "text": "2ndValue", "isCorrect": false, "explanation": "Java identifiers cannot start with a digit." },
+      { "label": "B", "text": "total_score", "isCorrect": true, "explanation": "Identifiers can contain letters, digits, and underscores, as long as they don't start with a digit -- this is valid." },
+      { "label": "C", "text": "class", "isCorrect": false, "explanation": "\"class\" is a reserved keyword in Java and can't be used as an identifier." },
+      { "label": "D", "text": "my-value", "isCorrect": false, "explanation": "Hyphens aren't allowed in identifiers; Java would try to parse this as subtraction (my minus value)." }
+    ],
+    "explanation": "Java identifiers must start with a letter, underscore, or dollar sign, contain only letters/digits/underscores afterward, and can't be a reserved keyword.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-9",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "easy",
+    "stem": "What is the data type of the literal `3.14` in Java, unless declared otherwise?",
+    "choices": [
+      { "label": "A", "text": "int", "isCorrect": false, "explanation": "int can't hold a fractional value like .14." },
+      { "label": "B", "text": "double", "isCorrect": true, "explanation": "Java treats unsuffixed decimal literals as double by default." },
+      { "label": "C", "text": "float", "isCorrect": false, "explanation": "A literal is only float if explicitly suffixed with f or F, e.g. 3.14f -- without it, decimals default to double." },
+      { "label": "D", "text": "String", "isCorrect": false, "explanation": "3.14 isn't in quotes, so it's a numeric literal, not a String." }
+    ],
+    "explanation": "Decimal literals in Java are double by default; float requires an explicit f/F suffix.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-10",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "medium",
+    "stem": "What is printed by the following code?\n\n```java\nboolean flag = 5 > 3;\nSystem.out.println(flag);\n```",
+    "choices": [
+      { "label": "A", "text": "5", "isCorrect": false, "explanation": "5 > 3 is a boolean expression, not the numeric value 5 -- the comparison itself is what gets evaluated and stored." },
+      { "label": "B", "text": "true", "isCorrect": true, "explanation": "5 > 3 evaluates to the boolean true, which is stored in flag and printed as true." },
+      { "label": "C", "text": "\"true\"", "isCorrect": false, "explanation": "Booleans print as true/false without quotes -- this isn't a String value." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid Java; comparison operators like > produce boolean values that can directly initialize a boolean variable." }
+    ],
+    "explanation": "Relational operators like > evaluate to a boolean, so `flag` correctly holds and prints `true`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-11",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "medium",
+    "stem": "Which statement about `char` in Java is true?",
+    "choices": [
+      { "label": "A", "text": "A char literal is written in double quotes", "isCorrect": false, "explanation": "char literals use single quotes, like 'a'. Double quotes are for String literals." },
+      { "label": "B", "text": "A char can store a single Unicode character", "isCorrect": true, "explanation": "char is a primitive type that holds exactly one character (technically one UTF-16 code unit)." },
+      { "label": "C", "text": "A char is the same type as a one-character String", "isCorrect": false, "explanation": "char is a primitive type; String is a class. They aren't interchangeable, even for a single character." },
+      { "label": "D", "text": "A char cannot be compared using ==", "isCorrect": false, "explanation": "char is a primitive type, and primitives compare correctly with ==." }
+    ],
+    "explanation": "`char` is a primitive type that stores one character, written with single quotes: `'a'`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-12",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "hard",
+    "stem": "What is printed by the following code?\n\n```java\nint x = 5;\nint y = x++;\nSystem.out.println(x + \" \" + y);\n```",
+    "choices": [
+      { "label": "A", "text": "6 5", "isCorrect": true, "explanation": "Postfix x++ returns x's value BEFORE incrementing (5, stored in y), then increments x to 6." },
+      { "label": "B", "text": "5 6", "isCorrect": false, "explanation": "This swaps the order -- y receives the value before the increment (5), not after." },
+      { "label": "C", "text": "6 6", "isCorrect": false, "explanation": "y is fixed at the pre-increment value (5) the moment it's assigned; it doesn't update when x changes afterward." },
+      { "label": "D", "text": "5 5", "isCorrect": false, "explanation": "x++ does increment x to 6 -- x doesn't stay unchanged." }
+    ],
+    "explanation": "Postfix increment (`x++`) evaluates to the current value first, then increments. So `y` gets 5, and `x` becomes 6.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-13",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "easy",
+    "stem": "Which correctly declares two `int` variables, `a` and `b`, in a single statement?",
+    "choices": [
+      { "label": "A", "text": "int a, b;", "isCorrect": true, "explanation": "A comma-separated list after a single type keyword declares multiple variables of that type." },
+      { "label": "B", "text": "int a; b;", "isCorrect": false, "explanation": "This only declares a as an int; \"b;\" on its own has no type and won't compile." },
+      { "label": "C", "text": "int a & int b;", "isCorrect": false, "explanation": "& is the bitwise AND operator -- it can't be used to combine two declarations." },
+      { "label": "D", "text": "int (a, b);", "isCorrect": false, "explanation": "Wrapping variable names in parentheses like this isn't valid declaration syntax." }
+    ],
+    "explanation": "Java lets you declare multiple variables of the same type in one statement with a comma-separated list: `int a, b;`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-14",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "medium",
+    "stem": "Which is the correct way to declare a constant (unchangeable) `int` in Java?",
+    "choices": [
+      { "label": "A", "text": "const int x = 5;", "isCorrect": false, "explanation": "const is a reserved word in Java but is not used for this purpose -- it isn't valid here." },
+      { "label": "B", "text": "final int x = 5;", "isCorrect": true, "explanation": "final is Java's keyword for declaring a variable whose value can't be reassigned after initialization." },
+      { "label": "C", "text": "static int x = 5;", "isCorrect": false, "explanation": "static controls whether a field belongs to the class rather than an instance -- it doesn't prevent reassignment." },
+      { "label": "D", "text": "int final x = 5;", "isCorrect": false, "explanation": "The keyword order is wrong; final must come before the type, not between the type and the name." }
+    ],
+    "explanation": "`final` marks a variable as a constant -- once assigned, its value can't change.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-15",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "medium",
+    "stem": "What is the value of `result` after this code runs?\n\n```java\nint result = 2 + 3 * 4;\n```",
+    "choices": [
+      { "label": "A", "text": "20", "isCorrect": false, "explanation": "This would follow if addition happened before multiplication (2+3=5, then *4), but * has higher precedence than +." },
+      { "label": "B", "text": "14", "isCorrect": true, "explanation": "Multiplication runs first: 3 * 4 = 12, then 2 + 12 = 14." },
+      { "label": "C", "text": "9", "isCorrect": false, "explanation": "This doesn't follow standard operator precedence rules for this expression." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is entirely valid Java with no ambiguity -- standard precedence rules apply." }
+    ],
+    "explanation": "Java follows standard mathematical operator precedence: `*` before `+`. So `3 * 4` evaluates first, giving `2 + 12 = 14`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-16",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "easy",
+    "stem": "What is the value of `z` after this code runs?\n\n```java\nint x = 2;\nint y = 3;\nint z = x * y + 1;\n```",
+    "choices": [
+      { "label": "A", "text": "6", "isCorrect": false, "explanation": "This is just x * y without adding 1." },
+      { "label": "B", "text": "7", "isCorrect": true, "explanation": "Multiplication happens before addition: 2 * 3 = 6, then 6 + 1 = 7." },
+      { "label": "C", "text": "9", "isCorrect": false, "explanation": "This doesn't match the standard order of operations here (* before +)." },
+      { "label": "D", "text": "5", "isCorrect": false, "explanation": "This doesn't match either the operand values or the operation being performed." }
+    ],
+    "explanation": "`*` has higher precedence than `+`, so `x * y` (6) is computed before adding 1, giving 7.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-17",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "medium",
+    "stem": "What is the result of `10 % 3` in Java?",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "That's the quotient of 10 / 3, not the remainder." },
+      { "label": "B", "text": "1", "isCorrect": true, "explanation": "10 = 3 * 3 + 1, so the remainder (%) is 1." },
+      { "label": "C", "text": "3.33", "isCorrect": false, "explanation": "% computes the remainder, not division -- it never produces a decimal result on int operands." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "10 is not evenly divisible by 3, so the remainder isn't 0." }
+    ],
+    "explanation": "The `%` operator returns the remainder of division. `10 % 3` is `1`, since `3 * 3 = 9` with `1` left over.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-18",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "medium",
+    "stem": "What is the value of `x` after this code runs?\n\n```java\nint x = 10;\nx -= 3;\nx *= 2;\n```",
+    "choices": [
+      { "label": "A", "text": "14", "isCorrect": true, "explanation": "x -= 3 makes x 7, then x *= 2 makes x 14." },
+      { "label": "B", "text": "17", "isCorrect": false, "explanation": "This stops after the first operation and ignores the x *= 2 step." },
+      { "label": "C", "text": "7", "isCorrect": false, "explanation": "This doesn't match the correct order of the two compound statements." },
+      { "label": "D", "text": "20", "isCorrect": false, "explanation": "This would follow if -=3 were applied after *=2 instead of before -- but the statements execute in the order they're written." }
+    ],
+    "explanation": "Compound assignments execute in sequence: `x -= 3` gives 7, then `x *= 2` gives 14.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-19",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "easy",
+    "stem": "What is printed by the following code?\n\n```java\nSystem.out.println(\"5\" + 3);\n```",
+    "choices": [
+      { "label": "A", "text": "8", "isCorrect": false, "explanation": "This would be true if both operands were numeric, but \"5\" is a String literal, so + performs concatenation, not addition." },
+      { "label": "B", "text": "\"53\"", "isCorrect": true, "explanation": "Since the left operand is a String, + concatenates: \"5\" followed by 3 becomes the text 53." },
+      { "label": "C", "text": "Compile error", "isCorrect": false, "explanation": "This is valid Java -- String concatenation with + is well-defined for mixing Strings and numbers." },
+      { "label": "D", "text": "5", "isCorrect": false, "explanation": "This ignores the 3 entirely." }
+    ],
+    "explanation": "When either operand of `+` is a String, Java performs concatenation. `\"5\" + 3` produces the String `\"53\"`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-20",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "hard",
+    "stem": "What is printed by the following code?\n\n```java\nSystem.out.println(3 + 4 + \"7\");\n```",
+    "choices": [
+      { "label": "A", "text": "\"77\"", "isCorrect": true, "explanation": "Java evaluates left to right: 3 + 4 = 7 (both ints, numeric addition), then 7 + \"7\" concatenates to \"77\"." },
+      { "label": "B", "text": "\"347\"", "isCorrect": false, "explanation": "This treats every + as concatenation, but the first + is between two ints, so it's numeric addition first." },
+      { "label": "C", "text": "\"34\"", "isCorrect": false, "explanation": "This drops the final \"7\" entirely." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This expression is completely valid -- mixing numeric addition and then string concatenation, evaluated left to right, is legal." }
+    ],
+    "explanation": "Operators evaluate left to right at the same precedence level. `3 + 4` is numeric (7), then `7 + \"7\"` concatenates because the right operand is now a String, giving `\"77\"`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-21",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "medium",
+    "stem": "What is the value of `average` after this code runs?\n\n```java\nint sum = 17;\nint count = 5;\ndouble average = sum / count;\n```",
+    "choices": [
+      { "label": "A", "text": "3.4", "isCorrect": false, "explanation": "This is the true decimal average, but sum / count performs integer division and truncates before ever becoming a double." },
+      { "label": "B", "text": "3.0", "isCorrect": true, "explanation": "sum / count truncates to 3 (integer division), and that 3 is then widened to the double 3.0 for storage in average." },
+      { "label": "C", "text": "4.0", "isCorrect": false, "explanation": "Java truncates toward zero -- it doesn't round up." },
+      { "label": "D", "text": "3", "isCorrect": false, "explanation": "average is declared as double, so it must display with a decimal point (3.0), not as a bare int." }
+    ],
+    "explanation": "Since `sum` and `count` are both int, `sum / count` truncates to 3 before being widened to `3.0` for the double variable.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-22",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "hard",
+    "stem": "What is printed by the following code?\n\n```java\ndouble x = 7;\nint y = (int) (x / 2);\nSystem.out.println(y);\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": true, "explanation": "x is 7.0 (a double), so x / 2 performs double division: 3.5. Casting that to int truncates to 3." },
+      { "label": "B", "text": "4", "isCorrect": false, "explanation": "Truncation rounds toward zero, not to the nearest integer -- 3.5 truncates to 3, not 4." },
+      { "label": "C", "text": "3.5", "isCorrect": false, "explanation": "The (int) cast removes the fractional part entirely; y is an int and can't hold .5." },
+      { "label": "D", "text": "3.0", "isCorrect": false, "explanation": "y is declared as int, so it prints without a decimal point." }
+    ],
+    "explanation": "Since x is a double, `x / 2` is double division (3.5), and the `(int)` cast then truncates it to `3`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-23",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "easy",
+    "stem": "Which operator has the lowest precedence among these?",
+    "choices": [
+      { "label": "A", "text": "*", "isCorrect": false, "explanation": "Multiplication is evaluated before addition and before assignment." },
+      { "label": "B", "text": "+", "isCorrect": false, "explanation": "Addition is evaluated before assignment, though after multiplication." },
+      { "label": "C", "text": "=", "isCorrect": true, "explanation": "Assignment happens last -- Java fully evaluates the right-hand side (respecting * and + precedence) before assigning the result." },
+      { "label": "D", "text": "( )", "isCorrect": false, "explanation": "Parenthesized expressions are evaluated first, before any operator outside them." }
+    ],
+    "explanation": "Assignment (`=`) has lower precedence than arithmetic operators -- the entire right-hand expression is evaluated first.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-24",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "easy",
+    "stem": "Which of these is equivalent to `x = x + 1;`?",
+    "choices": [
+      { "label": "A", "text": "x++;", "isCorrect": true, "explanation": "The increment operator adds 1 to x and stores the result back in x -- exactly what x = x + 1 does." },
+      { "label": "B", "text": "x =+ 1;", "isCorrect": false, "explanation": "\"=+\" is parsed as assigning positive 1 (x = +1), not as a compound addition operator -- this is a classic typo trap, not equivalent." },
+      { "label": "C", "text": "x + 1;", "isCorrect": false, "explanation": "This computes x + 1 but never stores it anywhere, so x is unchanged." },
+      { "label": "D", "text": "++ x + 1;", "isCorrect": false, "explanation": "This increments x and then adds 1 to the result as a standalone expression, but doesn't assign anything back to x in the way x = x + 1 does." }
+    ],
+    "explanation": "`x++` is shorthand for incrementing x by 1 and storing the result back in x, same as `x = x + 1;`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-25",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "medium",
+    "stem": "What is the value of `x` after this code runs?\n\n```java\nint x = 20;\nx /= 3;\nx %= 4;\n```",
+    "choices": [
+      { "label": "A", "text": "2", "isCorrect": true, "explanation": "x /= 3 gives 6 (integer division: 20/3=6), then x %= 4 gives 6 % 4 = 2." },
+      { "label": "B", "text": "6", "isCorrect": false, "explanation": "This stops after the first operation and ignores the x %= 4 step." },
+      { "label": "C", "text": "5", "isCorrect": false, "explanation": "This doesn't match the correct order of operations for these two compound statements." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "6 is not evenly divisible by 4, so the remainder isn't 0." }
+    ],
+    "explanation": "`x /= 3` truncates 20/3 to 6, then `x %= 4` computes 6 % 4, which is 2.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-26",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "medium",
+    "stem": "Given `int a = 7, b = 2;`, which expression evaluates to `3.5`?",
+    "choices": [
+      { "label": "A", "text": "(double) a / b", "isCorrect": true, "explanation": "Casting a to double first forces double division: 7.0 / 2 = 3.5." },
+      { "label": "B", "text": "(double) (a / b)", "isCorrect": false, "explanation": "The parentheses force integer division (a / b = 3) to complete first; casting that already-truncated 3 to double gives 3.0, not 3.5." },
+      { "label": "C", "text": "a / b", "isCorrect": false, "explanation": "With no cast, this is plain integer division, giving the int 3, not 3.5." },
+      { "label": "D", "text": "(int) (a / (double) b)", "isCorrect": false, "explanation": "Casting b to double does force double division (7 / 2.0 = 3.5), but the outer (int) cast then truncates the whole result back to 3." }
+    ],
+    "explanation": "Casting one operand to double before the division forces the whole division to be done as doubles, avoiding integer truncation: `(double) a / b` gives `3.5`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-27",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed by the following code?\n\n```java\nint x = 5;\ndouble y = x;\ny += 0.5;\nSystem.out.println(y);\n```",
+    "choices": [
+      { "label": "A", "text": "5.5", "isCorrect": true, "explanation": "x widens to 5.0 when assigned to the double y, then y += 0.5 gives 5.5." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "y is a double and the += 0.5 does take effect -- this ignores that step." },
+      { "label": "C", "text": "5.0", "isCorrect": false, "explanation": "This ignores the += 0.5 addition entirely, leaving y at its initial widened value." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is entirely valid; int widens to double implicitly with no cast needed." }
+    ],
+    "explanation": "Assigning an int to a double widens it automatically (5 becomes 5.0), and `+= 0.5` then gives `5.5`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-28",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "easy",
+    "stem": "Which statement about casting in Java is true?",
+    "choices": [
+      { "label": "A", "text": "Casting a double to an int can lose data", "isCorrect": true, "explanation": "Narrowing from double to int discards the fractional part, which is a real loss of information." },
+      { "label": "B", "text": "Casting an int to a double can lose data", "isCorrect": false, "explanation": "Widening from int to double never loses data -- every int value can be represented exactly as a double." },
+      { "label": "C", "text": "Casting is required to store an int in a double variable", "isCorrect": false, "explanation": "Widening conversions like int to double happen automatically; no explicit cast is required." },
+      { "label": "D", "text": "Casting always rounds to the nearest value", "isCorrect": false, "explanation": "Narrowing casts like (int) truncate toward zero -- they discard the fractional part rather than rounding." }
+    ],
+    "explanation": "A `(int)` cast on a double discards the fractional part, which is a genuine, irreversible loss of information.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-29",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "medium",
+    "stem": "What is the value of `z` after this code runs?\n\n```java\nint x = 9;\nint y = 4;\ndouble z = (double) x / y;\n```",
+    "choices": [
+      { "label": "A", "text": "2.25", "isCorrect": true, "explanation": "Casting x to double before dividing forces double division: 9.0 / 4 = 2.25." },
+      { "label": "B", "text": "2.0", "isCorrect": false, "explanation": "This would result from truncating integer division first, but casting x to double before dividing avoids that truncation." },
+      { "label": "C", "text": "2", "isCorrect": false, "explanation": "z is declared double and this division is genuinely fractional, not a whole number." },
+      { "label": "D", "text": "2.5", "isCorrect": false, "explanation": "This doesn't match the actual arithmetic: 9 / 4 is 2.25, not 2.5." }
+    ],
+    "explanation": "`(double) x` forces the division to happen in double precision: `9.0 / 4 = 2.25`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-30",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed by the following code?\n\n```java\nint x = 3;\nx = x * x + (int) (2.9);\nSystem.out.println(x);\n```",
+    "choices": [
+      { "label": "A", "text": "11", "isCorrect": true, "explanation": "x * x is 9, and (int) (2.9) truncates to 2, so x becomes 9 + 2 = 11." },
+      { "label": "B", "text": "11.9", "isCorrect": false, "explanation": "x is an int; the (int) cast on 2.9 discards the decimal before the addition, so no fractional part ever reaches x." },
+      { "label": "C", "text": "12", "isCorrect": false, "explanation": "Truncation does not round up -- (int) 2.9 is 2, not 3." },
+      { "label": "D", "text": "9", "isCorrect": false, "explanation": "This omits the + (int)(2.9) term entirely." }
+    ],
+    "explanation": "`x * x` is `9`, and `(int) (2.9)` truncates to `2`, giving `9 + 2 = 11`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
   }
 ]

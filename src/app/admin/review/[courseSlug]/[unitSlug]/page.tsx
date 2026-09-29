@@ -1,0 +1,125 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { requireAdminUserId } from "@/lib/admin/session";
+import { getUnitUnreviewedContent } from "@/lib/admin/queries";
+import { markFrqReviewed, markQuestionReviewed } from "@/lib/admin/actions";
+import { ContentRenderer } from "@/components/content-renderer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import type { RubricLine } from "@/lib/scoring/grading";
+
+export default async function AdminReviewUnitPage({
+  params,
+}: {
+  params: Promise<{ courseSlug: string; unitSlug: string }>;
+}) {
+  await requireAdminUserId();
+  const { courseSlug, unitSlug } = await params;
+
+  const result = await getUnitUnreviewedContent(courseSlug, unitSlug);
+  if (!result) notFound();
+  const { course, unit } = result;
+
+  return (
+    <div className="mx-auto w-full max-w-3xl px-6 py-10">
+      <p className="mb-1 text-sm text-muted-foreground">
+        <Link href="/admin/review" className="hover:text-foreground">
+          Content review
+        </Link>{" "}
+        /{" "}
+        <Link href={`/admin/review/${course.slug}`} className="hover:text-foreground">
+          {course.name}
+        </Link>
+      </p>
+      <h1 className="mb-6 text-2xl font-bold tracking-tight">{unit.name}</h1>
+
+      {unit.questions.length === 0 && unit.frqPrompts.length === 0 ? (
+        <p className="text-sm text-muted-foreground">Everything in this unit has been reviewed.</p>
+      ) : null}
+
+      {unit.questions.length > 0 ? (
+        <>
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+            Questions ({unit.questions.length})
+          </h2>
+          <div className="mb-8 grid gap-4">
+            {unit.questions.map((question) => (
+              <Card key={question.id}>
+                <CardHeader>
+                  <p className="text-xs text-muted-foreground">
+                    {question.topic.name} · {question.difficulty}
+                  </p>
+                </CardHeader>
+                <CardContent>
+                  <ContentRenderer>{question.stem}</ContentRenderer>
+                  <ul className="mt-3 space-y-1">
+                    {question.choices.map((choice) => (
+                      <li
+                        key={choice.id}
+                        className={
+                          choice.isCorrect
+                            ? "rounded border border-primary/40 bg-primary/5 px-2 py-1 text-sm"
+                            : "px-2 py-1 text-sm text-muted-foreground"
+                        }
+                      >
+                        <span className="font-medium">{choice.label}.</span> {choice.text}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-3 text-sm text-muted-foreground">
+                    <ContentRenderer>{question.explanation}</ContentRenderer>
+                  </div>
+                  <form action={markQuestionReviewed.bind(null, question.id)} className="mt-4">
+                    <Button type="submit" size="sm">
+                      Approve
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </>
+      ) : null}
+
+      {unit.frqPrompts.length > 0 ? (
+        <>
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+            Free response ({unit.frqPrompts.length})
+          </h2>
+          <div className="grid gap-4">
+            {unit.frqPrompts.map((frq) => {
+              const rubric = frq.rubric as unknown as RubricLine[];
+              return (
+                <Card key={frq.id}>
+                  <CardHeader>
+                    <p className="text-xs text-muted-foreground">
+                      {frq.topic.name} · {frq.pointValue} pts
+                    </p>
+                  </CardHeader>
+                  <CardContent>
+                    <ContentRenderer>{frq.prompt}</ContentRenderer>
+                    <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-muted-foreground">
+                      {rubric.map((line) => (
+                        <li key={line.id}>
+                          ({line.points} pt{line.points === 1 ? "" : "s"}) {line.description}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-3 text-sm text-muted-foreground">
+                      <ContentRenderer>{frq.sampleResponse}</ContentRenderer>
+                    </div>
+                    <form action={markFrqReviewed.bind(null, frq.id)} className="mt-4">
+                      <Button type="submit" size="sm">
+                        Approve
+                      </Button>
+                    </form>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </>
+      ) : null}
+    </div>
+  );
+}

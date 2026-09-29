@@ -379,9 +379,45 @@ each with a nested `topics` array) match `CourseSchema`/`UnitSchema` in
 `src/lib/content/schema.ts` — see that file for the exact shape, including
 `examFormat` (why this must stay data, not hardcoded, is explained below).
 
-**Sample bank seeded so far**: AP CSA, Units 1 and 4 only (14 MCQs, 2 FRQs) —
-enough to prove the model end-to-end. The other 8 units and the other three
-courses are Milestone 7.
+**Sample bank seeded so far**: AP CSA is fully authored (all 10 units, 300
+MCQs + 30 FRQs) — see the Milestone 7 section below. AP World History:
+Modern, AP Calculus AB, and AP Physics 1 have no content yet.
+
+### Content generation at scale (Milestone 7, in progress)
+
+Scope decision (asked the owner directly given the volume — ~1,050 MCQs +
+105 FRQs across all four courses): generate **one course at a time, full
+scope, pause for review** rather than a thin pass across all four courses.
+AP CSA went first since 2 of its 10 units already existed from Milestone 2.
+
+**AP CSA — done.** All 10 units (official, stable CED: Primitive Types →
+Using Objects → Boolean Expressions/if → Iteration → Writing Classes → Array
+→ ArrayList → 2D Array → Inheritance → Recursion), each with 30 MCQs + 3 FRQs
+(300 MCQs + 30 FRQs total), validated and seeded. Every question/FRQ was
+authored with `reviewed: false` per the spec. Deliberately scoped to CSA's
+tested primitive types only (`int`/`double`/`boolean`/`char`/`String` —
+`byte`/`short`/`long`/`float` are out of the CED and don't appear anywhere).
+Correctness approach for a CS course (the spec's "verify programmatically
+where possible" is really aimed at Calc/Physics numerics): every Java
+snippet was hand-traced before writing the "correct" answer and distractor
+explanations, rather than trusting a plausible-looking trace. Not yet
+started: AP World History: Modern, AP Calculus AB, AP Physics 1 — each is
+its own pass through this same process, one at a time, pausing for review
+after each.
+
+**Review workflow** (the spec's "simple admin/review view" requirement):
+`/admin/review` (`src/app/admin/review/`), gated by `src/lib/admin/session.ts`'s
+`requireAdminUserId()` — `requireUserId()` plus a `User.role === "ADMIN"` DB
+check (role isn't on the session; see the gotcha above about what *is*).
+Non-admins get a 404 (`notFound()`), matching this codebase's existing
+authorization-failure convention rather than a dedicated 403 page. Drill-down
+mirrors the student-facing course→unit structure: course list with pending
+counts → unit list with pending counts → actual unreviewed questions/FRQs
+with an "Approve" button (`markQuestionReviewed`/`markFrqReviewed` in
+`src/lib/admin/actions.ts`, simple `reviewed: true` updates). No user has
+`role: ADMIN` yet — promote one via `db:studio` or a one-off script (ask
+before running anything that writes to the DB directly, per the safety
+rules this session operates under).
 
 ## Verified AP course info (2026-27)
 
@@ -459,8 +495,13 @@ in app logic — updating them should be a data edit.
       sent/accepted a friend request across accounts, and confirmed opting
       out actually removes a user from the leaderboard (not just visually)
       while leaving them in the friends list.
-- [ ] **Milestone 7 — Content at scale.** Full starter banks (~30 MCQ + 3 FRQ
-      per unit) for all four courses, validated, review workflow.
+- [ ] **Milestone 7 — Content at scale (in progress).** Full starter banks
+      (~30 MCQ + 3 FRQ per unit), validated, plus a review workflow. Scope
+      decision: one course at a time, pausing for owner review after each
+      (see the Content generation section above). **AP CSA done**: 10/10
+      units, 300 MCQs + 30 FRQs, seeded and validated. Admin review UI built
+      (`/admin/review`). Still to do: AP World History: Modern, AP Calculus
+      AB, AP Physics 1 (each its own pass, same process).
 - [ ] **Milestone 8 — Polish and launch prep.** Accessibility, mobile testing,
       performance, error handling, deployment, README.
 
@@ -482,3 +523,7 @@ in app logic — updating them should be a data edit.
 - **No middleware-level route protection** — see the proxy.ts gotcha above.
   Every protected page must call `requireUserId()` itself; there's no fallback
   if one forgets to.
+- **No user has `role: ADMIN` yet**, so `/admin/review` (Milestone 7) isn't
+  actually reachable by anyone right now. Promote a user via `db:studio` or
+  ask Claude to run a one-off script — this is a direct DB write, so it needs
+  explicit sign-off first, same as any other mutating action.

@@ -1,0 +1,13 @@
+{
+  "slug": "unit-9-inheritance",
+  "order": 9,
+  "name": "Inheritance",
+  "weightingMin": 5,
+  "weightingMax": 10,
+  "topics": [
+    { "slug": "superclasses-and-subclasses", "order": 1, "name": "Creating Superclasses and Subclasses" },
+    { "slug": "subclass-constructors", "order": 2, "name": "Writing Constructors for Subclasses" },
+    { "slug": "overriding-methods", "order": 3, "name": "Overriding Methods and the super Keyword" },
+    { "slug": "polymorphism", "order": 4, "name": "Polymorphism and Inheritance Hierarchies" }
+  ]
+}

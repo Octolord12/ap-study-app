@@ -1,0 +1,45 @@
+[
+  {
+    "id": "ap-csa-u7-frq-1",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "prompt": "Write a method named `sumList` that takes an `ArrayList<Integer>` parameter `list` and returns the sum of all its elements. For example, if `list` contains `3, 5, 2`, the method should return `10`.\n\nComplete the method below.\n\n```java\npublic int sumList(ArrayList<Integer> list) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses a loop that traverses every element of list" },
+      { "id": "r2", "points": 1, "description": "Correctly accumulates the running sum (Integer values auto-unbox correctly for the addition)" },
+      { "id": "r3", "points": 1, "description": "Returns the correct total" }
+    ],
+    "sampleResponse": "```java\npublic int sumList(ArrayList<Integer> list) {\n    int sum = 0;\n    for (int i = 0; i < list.size(); i++) {\n        sum += list.get(i);\n    }\n    return sum;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-frq-2",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "prompt": "Write a method named `removeNegatives` that takes an `ArrayList<Integer>` parameter `list` and removes every negative value from it, modifying `list` in place. Traverse the list backward to safely remove elements without skipping any.\n\nComplete the method below.\n\n```java\npublic void removeNegatives(ArrayList<Integer> list) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses a loop that starts at list.size() - 1" },
+      { "id": "r2", "points": 1, "description": "The loop correctly decrements down to and including index 0" },
+      { "id": "r3", "points": 1, "description": "Correctly checks whether the element at each index is negative" },
+      { "id": "r4", "points": 1, "description": "Correctly removes the element when it is negative" }
+    ],
+    "sampleResponse": "```java\npublic void removeNegatives(ArrayList<Integer> list) {\n    for (int i = list.size() - 1; i >= 0; i--) {\n        if (list.get(i) < 0) {\n            list.remove(i);\n        }\n    }\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-frq-3",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "prompt": "Write a method named `doubleAll` that takes an `ArrayList<Integer>` parameter `list` and replaces each element with double its original value, modifying `list` in place. For example, if `list` contains `3, 5, 2`, after calling `doubleAll(list)` it should contain `6, 10, 4`.\n\nComplete the method below.\n\n```java\npublic void doubleAll(ArrayList<Integer> list) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses a loop that traverses every index of list" },
+      { "id": "r2", "points": 1, "description": "Correctly computes double the value at each index" },
+      { "id": "r3", "points": 1, "description": "Uses set() to replace the element at that index with the doubled value (not add())" }
+    ],
+    "sampleResponse": "```java\npublic void doubleAll(ArrayList<Integer> list) {\n    for (int i = 0; i < list.size(); i++) {\n        list.set(i, list.get(i) * 2);\n    }\n}\n```",
+    "reviewed": false
+  }
+]

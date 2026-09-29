@@ -1,0 +1,14 @@
+{
+  "slug": "unit-2-using-objects",
+  "order": 2,
+  "name": "Using Objects",
+  "weightingMin": 5,
+  "weightingMax": 7,
+  "topics": [
+    { "slug": "object-oriented-programming", "order": 1, "name": "Objects: Instances of Classes" },
+    { "slug": "creating-and-storing-objects", "order": 2, "name": "Creating and Storing Objects" },
+    { "slug": "calling-methods", "order": 3, "name": "Calling Methods (void and non-void, with parameters)" },
+    { "slug": "string-objects", "order": 4, "name": "String Objects: Concatenation, Literals, and Methods" },
+    { "slug": "wrapper-classes-and-math", "order": 5, "name": "Wrapper Classes and the Math Class" }
+  ]
+}

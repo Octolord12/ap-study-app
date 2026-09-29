@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-csa-u3-mcq-1",
+    "unit": "unit-3-boolean-if",
+    "topic": "boolean-expressions",
+    "difficulty": "easy",
+    "stem": "What are the only two possible values of a `boolean` expression?",
+    "choices": [
+      { "label": "A", "text": "0 and 1", "isCorrect": false, "explanation": "0 and 1 are int values -- boolean in Java is a distinct type with its own two values." },
+      { "label": "B", "text": "true and false", "isCorrect": true, "explanation": "A boolean expression always evaluates to exactly one of these two values." },
+      { "label": "C", "text": "yes and no", "isCorrect": false, "explanation": "\"yes\" and \"no\" are not valid Java boolean literals." },
+      { "label": "D", "text": "positive and negative", "isCorrect": false, "explanation": "These describe numeric sign, not boolean values." }
+    ],
+    "explanation": "Java's `boolean` type has exactly two possible values: `true` and `false`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-2",
+    "unit": "unit-3-boolean-if",
+    "topic": "boolean-expressions",
+    "difficulty": "easy",
+    "stem": "What does `7 > 3` evaluate to?",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "7 is greater than 3, so this relational expression evaluates to true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "7 is indeed greater than 3, so this is not false." },
+      { "label": "C", "text": "1", "isCorrect": false, "explanation": "Relational expressions in Java produce boolean values (true/false), not integers." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is a perfectly valid relational expression." }
+    ],
+    "explanation": "`7 > 3` is a relational expression that evaluates to the boolean value `true`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-3",
+    "unit": "unit-3-boolean-if",
+    "topic": "boolean-expressions",
+    "difficulty": "medium",
+    "stem": "What is the value of `x` after this code runs?\n\n```java\nint a = 5;\nint b = 8;\nboolean x = (a != b);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "5 is not equal to 8, so a != b evaluates to true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "Since a and b have different values, a != b is true, not false." },
+      { "label": "C", "text": "5", "isCorrect": false, "explanation": "!= produces a boolean result, not one of the operand's numeric values." },
+      { "label": "D", "text": "Compile error, because x should be an int", "isCorrect": false, "explanation": "x is declared as boolean, which correctly matches the boolean result of a != b." }
+    ],
+    "explanation": "`!=` checks for inequality; since `a` (5) and `b` (8) differ, the expression is `true`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-4",
+    "unit": "unit-3-boolean-if",
+    "topic": "boolean-expressions",
+    "difficulty": "medium",
+    "stem": "Which operator checks whether two `int` values are equal?",
+    "choices": [
+      { "label": "A", "text": "=", "isCorrect": false, "explanation": "A single = is the assignment operator, not a comparison." },
+      { "label": "B", "text": "==", "isCorrect": true, "explanation": "== compares two values for equality and produces a boolean result." },
+      { "label": "C", "text": "equals()", "isCorrect": false, "explanation": ".equals() is a method used for comparing objects (like Strings), not a valid way to compare primitive ints directly with this syntax." },
+      { "label": "D", "text": "===", "isCorrect": false, "explanation": "=== is not a valid Java operator (it's used in some other languages like JavaScript)." }
+    ],
+    "explanation": "`==` is Java's equality operator for comparing primitive values like `int`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-5",
+    "unit": "unit-3-boolean-if",
+    "topic": "boolean-expressions",
+    "difficulty": "hard",
+    "stem": "What is the value of `result`?\n\n```java\nint x = 4;\nboolean result = (x * 2 >= 8) == (x < 10);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "x*2 = 8, so 8 >= 8 is true; x < 10 is also true (4 < 10). true == true evaluates to true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "Both sides of the == comparison evaluate to true, so the overall result is true, not false." },
+      { "label": "C", "text": "8", "isCorrect": false, "explanation": "This expression produces a boolean, not the numeric value 8." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "Comparing two boolean values with == is valid Java." }
+    ],
+    "explanation": "`x * 2 >= 8` is `8 >= 8` = true. `x < 10` is `4 < 10` = true. `true == true` is `true`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-6",
+    "unit": "unit-3-boolean-if",
+    "topic": "boolean-expressions",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nboolean flag = false;\nSystem.out.println(!flag);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "! is the logical NOT operator, which flips false to true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "!flag inverts flag's value; since flag is false, !flag is true, not false." },
+      { "label": "C", "text": "!false", "isCorrect": false, "explanation": "This is evaluated to a boolean value, not printed as literal source text." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "! is a valid operator to apply to a boolean value." }
+    ],
+    "explanation": "The `!` (NOT) operator inverts a boolean value: `!false` is `true`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-7",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "difficulty": "easy",
+    "stem": "What is printed?\n\n```java\nint x = 10;\nif (x > 5) {\n    System.out.println(\"big\");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "big", "isCorrect": true, "explanation": "x (10) is greater than 5, so the condition is true and the println executes." },
+      { "label": "B", "text": "Nothing is printed", "isCorrect": false, "explanation": "The condition x > 5 is true, so the code inside the if block does run." },
+      { "label": "C", "text": "10", "isCorrect": false, "explanation": "The code prints the literal string \"big\", not the value of x." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid, correctly formed if statement syntax." }
+    ],
+    "explanation": "Since `x > 5` is true, the code inside the `if` block runs, printing `\"big\"`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-8",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint x = 3;\nif (x > 5) {\n    System.out.println(\"big\");\n}\nSystem.out.println(\"done\");\n```",
+    "choices": [
+      { "label": "A", "text": "big\\ndone", "isCorrect": false, "explanation": "x (3) is NOT greater than 5, so \"big\" is never printed." },
+      { "label": "B", "text": "done", "isCorrect": true, "explanation": "The if condition is false, so its block is skipped; only \"done\" prints, since it's outside the if block." },
+      { "label": "C", "text": "Nothing is printed", "isCorrect": false, "explanation": "\"done\" is not inside the if block, so it always executes regardless of the condition." },
+      { "label": "D", "text": "big", "isCorrect": false, "explanation": "The if condition is false, so \"big\" never prints, but \"done\" still does since it's unconditional." }
+    ],
+    "explanation": "Since `x > 5` is false, the if block is skipped, but the unconditional `println(\"done\")` still executes.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-9",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "difficulty": "medium",
+    "stem": "In Java, what determines which statements are considered part of an `if` block when no curly braces `{}` are used?",
+    "choices": [
+      { "label": "A", "text": "All statements indented at the same level as the if", "isCorrect": false, "explanation": "Indentation is just a formatting convention in Java -- it has no effect on which statements belong to the if." },
+      { "label": "B", "text": "Only the single statement immediately following the if condition", "isCorrect": true, "explanation": "Without braces, only the very next single statement is controlled by the if; anything after that runs unconditionally." },
+      { "label": "C", "text": "All statements until the next blank line", "isCorrect": false, "explanation": "Blank lines have no syntactic meaning in Java." },
+      { "label": "D", "text": "All statements until the end of the method", "isCorrect": false, "explanation": "This would make the rest of the method conditional, which is not how Java's if statement works without braces." }
+    ],
+    "explanation": "Without braces, only the single statement immediately after the `if` condition is conditional; this is a common source of bugs.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-10",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint x = 2;\nif (x > 5)\n    System.out.println(\"A\");\n    System.out.println(\"B\");\n```",
+    "choices": [
+      { "label": "A", "text": "A\\nB", "isCorrect": false, "explanation": "The if condition is false, so \"A\" is not printed -- but note that without braces, only \"A\" would have been conditional anyway." },
+      { "label": "B", "text": "B", "isCorrect": true, "explanation": "Without braces, only the println(\"A\") line is controlled by the if. Since x > 5 is false, \"A\" is skipped, but println(\"B\") always runs regardless of indentation." },
+      { "label": "C", "text": "Nothing is printed", "isCorrect": false, "explanation": "println(\"B\") is NOT part of the if block (indentation doesn't matter in Java), so it always executes." },
+      { "label": "D", "text": "A", "isCorrect": false, "explanation": "The if condition is false, so println(\"A\") does not execute at all." }
+    ],
+    "explanation": "Indentation is misleading here: without braces, only `println(\"A\")` belongs to the `if`. Since the condition is false, only `println(\"B\")` -- which is unconditional -- runs.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-11",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint score = 75;\nif (score >= 60) {\n    System.out.println(\"pass\");\n}\nif (score >= 90) {\n    System.out.println(\"A grade\");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "pass\\nA grade", "isCorrect": false, "explanation": "score (75) is not >= 90, so \"A grade\" is never printed." },
+      { "label": "B", "text": "pass", "isCorrect": true, "explanation": "75 >= 60 is true, so \"pass\" prints. 75 >= 90 is false, so the second if's block is skipped." },
+      { "label": "C", "text": "A grade", "isCorrect": false, "explanation": "This is backwards -- the first condition is true and prints \"pass\", while the second condition is false." },
+      { "label": "D", "text": "Nothing is printed", "isCorrect": false, "explanation": "The first if's condition (score >= 60) is true, so \"pass\" does print." }
+    ],
+    "explanation": "These are two independent if statements. The first condition is true (prints \"pass\"); the second is false (nothing printed).",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-12",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "easy",
+    "stem": "What is printed?\n\n```java\nint x = 4;\nif (x % 2 == 0) {\n    System.out.println(\"even\");\n} else {\n    System.out.println(\"odd\");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "even", "isCorrect": true, "explanation": "4 % 2 is 0, so the condition x % 2 == 0 is true, and the if block runs." },
+      { "label": "B", "text": "odd", "isCorrect": false, "explanation": "4 is even (4 % 2 == 0 is true), so the else branch does not execute." },
+      { "label": "C", "text": "even\\nodd", "isCorrect": false, "explanation": "Only one branch of an if-else ever executes, never both." },
+      { "label": "D", "text": "Nothing is printed", "isCorrect": false, "explanation": "Exactly one of the two branches always executes in an if-else statement." }
+    ],
+    "explanation": "Since `4 % 2 == 0` is true, the `if` branch runs, printing `\"even\"`; the `else` branch is skipped.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-13",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint score = 85;\nif (score >= 90) {\n    System.out.println(\"A\");\n} else if (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "A", "isCorrect": false, "explanation": "score (85) is not >= 90, so this branch is skipped." },
+      { "label": "B", "text": "B", "isCorrect": true, "explanation": "85 >= 90 is false, so Java checks the next condition: 85 >= 80 is true, so \"B\" prints and no further branches run." },
+      { "label": "C", "text": "C", "isCorrect": false, "explanation": "The else-if condition (score >= 80) is true, so the final else branch is never reached." },
+      { "label": "D", "text": "A\\nB", "isCorrect": false, "explanation": "In an if/else-if/else chain, only one branch ever executes." }
+    ],
+    "explanation": "Java checks conditions top to bottom; since `score >= 90` is false but `score >= 80` is true, `\"B\"` prints and the chain stops there.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-14",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint x = 50;\nif (x > 10) {\n    System.out.println(\"A\");\n} else if (x > 30) {\n    System.out.println(\"B\");\n} else if (x > 5) {\n    System.out.println(\"C\");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "A", "isCorrect": true, "explanation": "x (50) > 10 is true, so \"A\" prints and Java skips the rest of the chain entirely -- it never even checks x > 30." },
+      { "label": "B", "text": "B", "isCorrect": false, "explanation": "Once the first condition (x > 10) is true, none of the later else-if conditions are even evaluated -- \"B\" would only print if the first condition were false." },
+      { "label": "C", "text": "C", "isCorrect": false, "explanation": "This branch is never reached, since the very first condition (x > 10) is already true." },
+      { "label": "D", "text": "A\\nB\\nC", "isCorrect": false, "explanation": "Only the first matching branch in an if/else-if chain runs -- the rest are skipped entirely, even if their conditions would also be true." }
+    ],
+    "explanation": "An if/else-if chain stops at the first true condition. Since `x > 10` is true, `\"A\"` prints and later conditions are never checked, even though `x > 30` is also true.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-15",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint x = 7;\nif (x < 0) {\n    System.out.println(\"negative\");\n} else if (x == 0) {\n    System.out.println(\"zero\");\n} else {\n    System.out.println(\"positive\");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "negative", "isCorrect": false, "explanation": "x (7) is not less than 0." },
+      { "label": "B", "text": "zero", "isCorrect": false, "explanation": "x (7) is not equal to 0." },
+      { "label": "C", "text": "positive", "isCorrect": true, "explanation": "x < 0 is false and x == 0 is false, so the final else branch runs, printing \"positive\"." },
+      { "label": "D", "text": "Nothing is printed", "isCorrect": false, "explanation": "The else branch always runs if no earlier condition in the chain is true." }
+    ],
+    "explanation": "Since `x` (7) is neither negative nor zero, the final `else` branch executes, printing `\"positive\"`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-16",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nboolean isMember = true;\ndouble price = 20.0;\nif (isMember) {\n    price = price * 0.9;\n}\nSystem.out.println(price);\n```",
+    "choices": [
+      { "label": "A", "text": "20.0", "isCorrect": false, "explanation": "isMember is true, so the discount IS applied -- price changes from 20.0." },
+      { "label": "B", "text": "18.0", "isCorrect": true, "explanation": "isMember is true, so price becomes 20.0 * 0.9 = 18.0." },
+      { "label": "C", "text": "2.0", "isCorrect": false, "explanation": "This would result from 20.0 * 0.1, not the 10% discount calculation actually performed." },
+      { "label": "D", "text": "true", "isCorrect": false, "explanation": "The code prints the double value price, not the boolean isMember." }
+    ],
+    "explanation": "Since `isMember` is true, `price` is updated to `20.0 * 0.9 = 18.0`, which is then printed.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-17",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "easy",
+    "stem": "What does `&&` represent in a boolean expression?",
+    "choices": [
+      { "label": "A", "text": "Logical OR -- true if either operand is true", "isCorrect": false, "explanation": "This describes ||, the OR operator, not &&." },
+      { "label": "B", "text": "Logical AND -- true only if both operands are true", "isCorrect": true, "explanation": "&& (AND) requires both sides to be true for the whole expression to be true." },
+      { "label": "C", "text": "Logical NOT -- inverts a boolean value", "isCorrect": false, "explanation": "This describes !, the NOT operator, not &&." },
+      { "label": "D", "text": "Bitwise addition", "isCorrect": false, "explanation": "&& is a logical operator for booleans, not an arithmetic or bitwise addition operator." }
+    ],
+    "explanation": "`&&` is the logical AND operator: the combined expression is true only when both operands are true.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-18",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "medium",
+    "stem": "What is the value of this expression?\n\n```java\nint x = 5;\nboolean result = (x > 0) && (x < 10);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "x (5) > 0 is true, and x (5) < 10 is also true, so true && true is true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "Both individual conditions are true, so the AND of them is also true, not false." },
+      { "label": "C", "text": "5", "isCorrect": false, "explanation": "This is a boolean expression, so it evaluates to true or false, not a number." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is a valid, properly parenthesized compound boolean expression." }
+    ],
+    "explanation": "Both `x > 0` and `x < 10` are true for `x = 5`, so the `&&` expression evaluates to `true`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-19",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "medium",
+    "stem": "What is the value of this expression?\n\n```java\nint age = 15;\nboolean canRide = (age >= 18) || (age >= 12);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "age >= 18 is false, but age >= 12 is true; with ||, only one side needs to be true, so the result is true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "Since age >= 12 is true, and || only requires one true operand, the overall result is true, not false." },
+      { "label": "C", "text": "15", "isCorrect": false, "explanation": "This compound expression evaluates to a boolean, not the numeric value of age." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is a valid compound boolean expression using ||." }
+    ],
+    "explanation": "`||` (OR) only needs one operand to be true. Since `age >= 12` is true, the whole expression is `true`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-20",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "hard",
+    "stem": "What is the value of this expression?\n\n```java\nint x = 6;\nint y = 2;\nboolean result = !(x > 5 && y > 5);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "x > 5 is true but y > 5 is false, so (x > 5 && y > 5) is false. Applying ! to false gives true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "The inner && expression is false (since y > 5 is false), and !false is true, not false." },
+      { "label": "C", "text": "6", "isCorrect": false, "explanation": "This compound expression with ! and && evaluates to a boolean, not a numeric value." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid Java: ! can be applied to a parenthesized boolean expression." }
+    ],
+    "explanation": "`x > 5 && y > 5` is `true && false` = `false`. Applying `!` gives `true`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-21",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint x = 0;\nint[] arr = {1, 2, 3};\nif (x < arr.length && arr[x] == 1) {\n    System.out.println(\"match\");\n} else {\n    System.out.println(\"no match\");\n}\n```\n\nJava's `&&` uses short-circuit evaluation: the right side is only checked if the left side is true.",
+    "choices": [
+      { "label": "A", "text": "match", "isCorrect": true, "explanation": "x (0) < arr.length (3) is true, so Java checks arr[0] == 1, which is also true (arr[0] is 1). Both conditions are true, so \"match\" prints." },
+      { "label": "B", "text": "no match", "isCorrect": false, "explanation": "Both parts of the && are actually true here: 0 < 3 is true, and arr[0] == 1 is true." },
+      { "label": "C", "text": "ArrayIndexOutOfBoundsException", "isCorrect": false, "explanation": "x (0) is a valid index for a 3-element array, so no exception occurs." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid, well-formed Java code." }
+    ],
+    "explanation": "Both conditions are true: `0 < 3` and `arr[0] == 1`, so the `if` branch runs and prints `\"match\"`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-22",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "medium",
+    "stem": "Why is short-circuit evaluation of `&&` and `||` useful when the left operand is `x != 0` and the right operand involves dividing by `x`?",
+    "choices": [
+      { "label": "A", "text": "It makes the division happen faster", "isCorrect": false, "explanation": "Short-circuiting is about whether an operand is evaluated at all, not about making evaluated code run faster." },
+      { "label": "B", "text": "If x != 0 is false, Java skips evaluating the division, avoiding a divide-by-zero error", "isCorrect": true, "explanation": "With &&, if the left operand is false, the right operand is never evaluated -- so checking x != 0 first safely guards the division." },
+      { "label": "C", "text": "It guarantees the division will always be evaluated first", "isCorrect": false, "explanation": "This is backwards -- with &&, the left operand is evaluated first, and the right side may be skipped entirely." },
+      { "label": "D", "text": "It has no effect on whether the division is evaluated", "isCorrect": false, "explanation": "Short-circuiting directly determines whether the right-hand operand gets evaluated at all." }
+    ],
+    "explanation": "With `&&`, if the left operand is false, Java skips the right operand entirely -- so `x != 0 && 10 / x > 1` safely avoids division by zero.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-23",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nString a = new String(\"cat\");\nString b = new String(\"cat\");\nSystem.out.println(a == b);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": false, "explanation": "Even though a and b have the same characters, new String(...) creates two separate objects, so == (which compares object identity) is false." },
+      { "label": "B", "text": "false", "isCorrect": true, "explanation": "a and b are two distinct String objects created with new, even though their content is identical -- == compares references, so this is false." },
+      { "label": "C", "text": "cat", "isCorrect": false, "explanation": "This code prints a boolean (from ==), not the String content." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "Comparing two String references with == is valid Java, even if it doesn't do what a beginner might expect." }
+    ],
+    "explanation": "`new String(...)` always creates a new object, so even with identical content, `a == b` compares references and is `false`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-24",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nString a = new String(\"cat\");\nString b = new String(\"cat\");\nSystem.out.println(a.equals(b));\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "equals() compares the actual character content of the Strings, which is identical (\"cat\" and \"cat\"), so it returns true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "a and b have the same character content, so equals() correctly returns true, regardless of whether they're the same object." },
+      { "label": "C", "text": "cat", "isCorrect": false, "explanation": "equals() returns a boolean, not the String content itself." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "equals() is a valid method to call on any String object." }
+    ],
+    "explanation": "Unlike `==`, `.equals()` compares the actual character content, so it correctly returns `true` for two Strings with identical text.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-25",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nString a = \"cat\";\nString b = \"cat\";\nSystem.out.println(a == b);\n```\n\nString literals in Java are typically stored in a shared pool, so identical literals often refer to the same object -- unlike Strings created with `new`.",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "String literals with identical content are typically shared from a common pool, so a and b end up referencing the same object here." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "Unlike Strings created with new, identical String literals typically reference the same pooled object, making == true in this case." },
+      { "label": "C", "text": "cat", "isCorrect": false, "explanation": "This prints a boolean result from ==, not the String's content." },
+      { "label": "D", "text": "It is undefined and could be either true or false", "isCorrect": false, "explanation": "While this relies on an implementation detail (string interning), it reliably prints true for simple literals like this in practice, unlike Strings built with new." }
+    ],
+    "explanation": "String literals are interned (pooled), so `a` and `b` here typically reference the same object, making `a == b` true -- this is precisely why `.equals()` is preferred for String comparisons regardless.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-26",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "easy",
+    "stem": "Which is the recommended way to compare the content of two String objects, regardless of how they were created?",
+    "choices": [
+      { "label": "A", "text": "Using ==", "isCorrect": false, "explanation": "== is unreliable for comparing String content, since it depends on whether the Strings happen to be the same object." },
+      { "label": "B", "text": "Using .equals()", "isCorrect": true, "explanation": ".equals() always compares actual character content, regardless of how the String objects were created." },
+      { "label": "C", "text": "Using .length()", "isCorrect": false, "explanation": "length() only tells you how many characters a String has, not whether two Strings have the same content." },
+      { "label": "D", "text": "Using +", "isCorrect": false, "explanation": "+ concatenates Strings; it doesn't compare them." }
+    ],
+    "explanation": "`.equals()` reliably compares String content and should be used instead of `==` for this purpose.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-27",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nString a = null;\nSystem.out.println(a == null);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "a was explicitly assigned null, so comparing it to null with == correctly returns true." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "a holds the value null, so a == null is true, not false." },
+      { "label": "C", "text": "NullPointerException", "isCorrect": false, "explanation": "Comparing a reference to null with == never throws an exception -- it's calling a method (like a.length()) on a null reference that would." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "Comparing any object reference to null with == is valid Java." }
+    ],
+    "explanation": "`==` can safely check whether a reference is `null` -- this never throws an exception, unlike calling a method on a null reference.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-28",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "hard",
+    "stem": "What is wrong with this code, given that `name` might be `null`?\n\n```java\nString name = null;\nif (name.equals(\"Alex\")) {\n    System.out.println(\"found\");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "Nothing; it correctly prints nothing since name is null", "isCorrect": false, "explanation": "This code doesn't just print nothing -- calling a method on a null reference throws a runtime exception, crashing the program." },
+      { "label": "B", "text": "It throws a NullPointerException, because you cannot call .equals() on a null reference", "isCorrect": true, "explanation": "Calling any method, including .equals(), on a reference that is null throws a NullPointerException at runtime." },
+      { "label": "C", "text": "It is a compile error", "isCorrect": false, "explanation": "This compiles fine; the problem only appears when the code actually runs and tries to call .equals() on null." },
+      { "label": "D", "text": "It always prints \"found\"", "isCorrect": false, "explanation": "The program crashes with an exception before it could ever print \"found\"." }
+    ],
+    "explanation": "Calling `.equals()` on a `null` reference throws a `NullPointerException` at runtime. A safer pattern is `\"Alex\".equals(name)`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-29",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "medium",
+    "stem": "Which rewrite of `name.equals(\"Alex\")` avoids a `NullPointerException` even if `name` is `null`, while still checking the same thing?",
+    "choices": [
+      { "label": "A", "text": "\"Alex\".equals(name)", "isCorrect": true, "explanation": "\"Alex\" is never null, so calling .equals() on it is always safe -- it correctly returns false if name is null, instead of throwing." },
+      { "label": "B", "text": "name == \"Alex\"", "isCorrect": false, "explanation": "== compares references, not content, so this doesn't reliably check whether name's text is \"Alex\" the way .equals() does." },
+      { "label": "C", "text": "name.equals(\"Alex\")", "isCorrect": false, "explanation": "This is the original code, which still throws a NullPointerException if name is null." },
+      { "label": "D", "text": "name.toString().equals(\"Alex\")", "isCorrect": false, "explanation": "Calling .toString() on a null reference still throws a NullPointerException, so this doesn't fix the problem." }
+    ],
+    "explanation": "Calling `.equals()` on the known non-null literal (`\"Alex\".equals(name)`) avoids the exception, since a String literal is never null.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-30",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint temp = 32;\nif (temp <= 32) {\n    System.out.println(\"freezing\");\n}\nif (temp > 32) {\n    System.out.println(\"not freezing\");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "freezing", "isCorrect": true, "explanation": "temp (32) <= 32 is true, so the first if prints \"freezing\". The second condition (temp > 32) is false, so it's skipped." },
+      { "label": "B", "text": "not freezing", "isCorrect": false, "explanation": "temp (32) is not greater than 32, so this branch does not execute; the first if's condition is the one that's true." },
+      { "label": "C", "text": "freezing\\nnot freezing", "isCorrect": false, "explanation": "Only the first if's condition (temp <= 32) is true; the second if's condition (temp > 32) is false, so only one line prints." },
+      { "label": "D", "text": "Nothing is printed", "isCorrect": false, "explanation": "The first if's condition (temp <= 32) is true, so \"freezing\" does print." }
+    ],
+    "explanation": "`temp <= 32` is true (prints \"freezing\"); `temp > 32` is false (nothing printed from the second if).",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
+    "reviewed": false
+  }
+]

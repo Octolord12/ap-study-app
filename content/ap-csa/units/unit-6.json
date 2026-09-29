@@ -1,0 +1,13 @@
+{
+  "slug": "unit-6-array",
+  "order": 6,
+  "name": "Array",
+  "weightingMin": 10,
+  "weightingMax": 14,
+  "topics": [
+    { "slug": "array-creation-and-access", "order": 1, "name": "Array Creation and Access" },
+    { "slug": "traversing-arrays", "order": 2, "name": "Traversing Arrays" },
+    { "slug": "enhanced-for-arrays", "order": 3, "name": "Enhanced for Loop for Arrays" },
+    { "slug": "array-algorithms", "order": 4, "name": "Developing Algorithms Using Arrays" }
+  ]
+}

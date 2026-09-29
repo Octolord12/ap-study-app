@@ -1,0 +1,11 @@
+{
+  "slug": "unit-10-recursion",
+  "order": 10,
+  "name": "Recursion",
+  "weightingMin": 5,
+  "weightingMax": 7,
+  "topics": [
+    { "slug": "recursion-basics", "order": 1, "name": "Recursion" },
+    { "slug": "recursive-searching-sorting", "order": 2, "name": "Recursive Searching and Sorting" }
+  ]
+}

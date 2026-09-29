@@ -1,0 +1,14 @@
+{
+  "slug": "unit-3-boolean-if",
+  "order": 3,
+  "name": "Boolean Expressions and if Statements",
+  "weightingMin": 15,
+  "weightingMax": 17,
+  "topics": [
+    { "slug": "boolean-expressions", "order": 1, "name": "Boolean Expressions" },
+    { "slug": "if-statements", "order": 2, "name": "if Statements and Control Flow" },
+    { "slug": "if-else-statements", "order": 3, "name": "if-else and else-if Statements" },
+    { "slug": "compound-boolean-expressions", "order": 4, "name": "Compound Boolean Expressions" },
+    { "slug": "comparing-objects", "order": 5, "name": "Equivalent Boolean Expressions and Comparing Objects" }
+  ]
+}

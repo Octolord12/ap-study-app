@@ -1,0 +1,15 @@
+{
+  "slug": "unit-5-writing-classes",
+  "order": 5,
+  "name": "Writing Classes",
+  "weightingMin": 5,
+  "weightingMax": 7,
+  "topics": [
+    { "slug": "anatomy-of-a-class", "order": 1, "name": "Anatomy of a Class" },
+    { "slug": "constructors", "order": 2, "name": "Constructors" },
+    { "slug": "accessor-and-mutator-methods", "order": 3, "name": "Accessor and Mutator Methods" },
+    { "slug": "writing-methods", "order": 4, "name": "Writing Methods" },
+    { "slug": "static-variables-and-methods", "order": 5, "name": "Static Variables and Methods" },
+    { "slug": "scope-and-this", "order": 6, "name": "Scope, Access, and the this Keyword" }
+  ]
+}

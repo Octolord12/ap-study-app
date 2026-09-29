@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-csa-u2-mcq-1",
+    "unit": "unit-2-using-objects",
+    "topic": "object-oriented-programming",
+    "difficulty": "easy",
+    "stem": "What is an object in Java?",
+    "choices": [
+      { "label": "A", "text": "A primitive value like int or double", "isCorrect": false, "explanation": "Primitives are not objects; they're a separate category of value in Java, distinct from the object system." },
+      { "label": "B", "text": "An instance of a class", "isCorrect": true, "explanation": "An object is created from a class, which acts as its blueprint, defining its fields and methods." },
+      { "label": "C", "text": "A method definition", "isCorrect": false, "explanation": "A method defines behavior inside a class -- it isn't an object itself." },
+      { "label": "D", "text": "A loop construct", "isCorrect": false, "explanation": "Loops are control structures for repetition, unrelated to objects." }
+    ],
+    "explanation": "An object is a concrete instance created from a class, with its own data based on the class's fields.",
+    "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-2",
+    "unit": "unit-2-using-objects",
+    "topic": "object-oriented-programming",
+    "difficulty": "easy",
+    "stem": "Which best describes the relationship between a class and an object?",
+    "choices": [
+      { "label": "A", "text": "A class is an instance of an object", "isCorrect": false, "explanation": "This reverses the relationship -- objects are instances of classes, not the other way around." },
+      { "label": "B", "text": "An object is an instance of a class", "isCorrect": true, "explanation": "A class acts as a blueprint; an object is a concrete instance created from that blueprint." },
+      { "label": "C", "text": "Classes and objects are the same thing", "isCorrect": false, "explanation": "A class is a template/definition; an object is a distinct, concrete instance created from it." },
+      { "label": "D", "text": "An object can exist without any class", "isCorrect": false, "explanation": "Every object in Java is created from, and belongs to, some class." }
+    ],
+    "explanation": "A class defines the structure and behavior that its objects will have; each object is one instance built from that class.",
+    "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-3",
+    "unit": "unit-2-using-objects",
+    "topic": "object-oriented-programming",
+    "difficulty": "medium",
+    "stem": "What does a class define for the objects created from it?",
+    "choices": [
+      { "label": "A", "text": "Only the object's methods, not its data", "isCorrect": false, "explanation": "A class defines fields (data) in addition to methods." },
+      { "label": "B", "text": "Only the object's data, not its methods", "isCorrect": false, "explanation": "A class defines methods (behavior) in addition to fields." },
+      { "label": "C", "text": "Both the data (fields) and behavior (methods) of its objects", "isCorrect": true, "explanation": "A class bundles together the fields that store an object's state and the methods that define its behavior." },
+      { "label": "D", "text": "Nothing; objects define their own structure independently", "isCorrect": false, "explanation": "Objects get their structure from the class that creates them, not independently." }
+    ],
+    "explanation": "A class is the combined definition of both an object's data (fields) and its behavior (methods).",
+    "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-4",
+    "unit": "unit-2-using-objects",
+    "topic": "object-oriented-programming",
+    "difficulty": "medium",
+    "stem": "If `Dog` is a class, which of these correctly declares a variable that can reference a `Dog` object?",
+    "choices": [
+      { "label": "A", "text": "Dog myDog;", "isCorrect": true, "explanation": "This declares myDog as a variable capable of referencing a Dog object -- the type name comes first, then the variable name." },
+      { "label": "B", "text": "object myDog = Dog;", "isCorrect": false, "explanation": "\"object\" isn't a valid type keyword here, and this isn't valid declaration syntax." },
+      { "label": "C", "text": "new myDog = Dog();", "isCorrect": false, "explanation": "\"new\" must come immediately before a constructor call, and this line has no type declaration for myDog." },
+      { "label": "D", "text": "myDog Dog;", "isCorrect": false, "explanation": "The type name must come before the variable name, not after." }
+    ],
+    "explanation": "A reference variable declaration puts the class name (type) first, followed by the variable name: `Dog myDog;`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-5",
+    "unit": "unit-2-using-objects",
+    "topic": "object-oriented-programming",
+    "difficulty": "hard",
+    "stem": "Two `Dog` objects, `dog1` and `dog2`, are created separately with `new`. Which statement is true?",
+    "choices": [
+      { "label": "A", "text": "They automatically share the same field values", "isCorrect": false, "explanation": "Separately created objects do not automatically share field values; each has its own independent state." },
+      { "label": "B", "text": "Each has its own independent copy of the fields defined in the Dog class", "isCorrect": true, "explanation": "Every object created with new gets its own separate storage for the fields defined by its class." },
+      { "label": "C", "text": "Changing dog1's fields always changes dog2's fields too", "isCorrect": false, "explanation": "Modifying one object's fields has no effect on a separate object's fields, since they aren't the same object." },
+      { "label": "D", "text": "Only one Dog object can exist in a program at a time", "isCorrect": false, "explanation": "A program can create as many Dog objects as memory allows." }
+    ],
+    "explanation": "Each call to `new Dog()` creates a distinct object with its own independent copy of the class's fields.",
+    "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-6",
+    "unit": "unit-2-using-objects",
+    "topic": "object-oriented-programming",
+    "difficulty": "medium",
+    "stem": "What best describes \"abstraction\" as it applies to using objects?",
+    "choices": [
+      { "label": "A", "text": "Making all fields and methods public", "isCorrect": false, "explanation": "Abstraction is about hiding complexity, which often relies on restricting access, not exposing everything." },
+      { "label": "B", "text": "Hiding implementation details behind a simpler interface, like calling a method without knowing exactly how it works internally", "isCorrect": true, "explanation": "Abstraction lets you use an object's methods (like .length() on a String) without needing to know how they're implemented." },
+      { "label": "C", "text": "Compiling code faster", "isCorrect": false, "explanation": "Abstraction is a design concept about managing complexity -- it's unrelated to compilation speed." },
+      { "label": "D", "text": "Removing all comments from code", "isCorrect": false, "explanation": "Comments are documentation and unrelated to abstraction as a programming concept." }
+    ],
+    "explanation": "Abstraction means you can use an object through its methods without needing to understand its internal implementation.",
+    "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-7",
+    "unit": "unit-2-using-objects",
+    "topic": "creating-and-storing-objects",
+    "difficulty": "easy",
+    "stem": "Which statement correctly creates a new `Dog` object and stores a reference to it in `myDog`?",
+    "choices": [
+      { "label": "A", "text": "Dog myDog = new Dog();", "isCorrect": true, "explanation": "This declares myDog as a Dog reference and initializes it with a newly created Dog object." },
+      { "label": "B", "text": "Dog myDog = Dog();", "isCorrect": false, "explanation": "This is missing the new keyword, which is required to instantiate an object." },
+      { "label": "C", "text": "new Dog myDog();", "isCorrect": false, "explanation": "The syntax order is wrong -- new must come immediately before the constructor call, not before the variable name." },
+      { "label": "D", "text": "myDog = new Dog;", "isCorrect": false, "explanation": "This is missing the type declaration for myDog, and the constructor call needs parentheses: new Dog()." }
+    ],
+    "explanation": "Creating an object requires the `new` keyword followed by a constructor call: `Dog myDog = new Dog();`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/creating-and-storing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-8",
+    "unit": "unit-2-using-objects",
+    "topic": "creating-and-storing-objects",
+    "difficulty": "medium",
+    "stem": "What does the `new` keyword do when creating an object?",
+    "choices": [
+      { "label": "A", "text": "Declares a variable's type", "isCorrect": false, "explanation": "Declaring a variable's type happens separately (e.g. writing Dog myDog); new is about allocation and construction." },
+      { "label": "B", "text": "Allocates memory for a new object and calls its constructor", "isCorrect": true, "explanation": "new sets aside memory for the object's fields and runs the constructor to initialize it." },
+      { "label": "C", "text": "Deletes an existing object", "isCorrect": false, "explanation": "Java doesn't require manual deletion; new creates objects, it doesn't remove them." },
+      { "label": "D", "text": "Converts a primitive to an object", "isCorrect": false, "explanation": "new is for instantiating classes, not for converting primitive values." }
+    ],
+    "explanation": "`new` allocates space for the object and invokes its constructor to set up its initial state.",
+    "conceptLink": "ap-csa/unit-2-using-objects/creating-and-storing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-9",
+    "unit": "unit-2-using-objects",
+    "topic": "creating-and-storing-objects",
+    "difficulty": "medium",
+    "stem": "What is stored in the variable `myDog` after this code runs?\n\n```java\nDog myDog = new Dog();\n```",
+    "choices": [
+      { "label": "A", "text": "The actual Dog object itself, stored directly in myDog", "isCorrect": false, "explanation": "Object variables in Java hold references (addresses) to objects, not the object's data directly." },
+      { "label": "B", "text": "A reference pointing to the Dog object in memory", "isCorrect": true, "explanation": "myDog holds a reference to the newly created Dog object, not the object's data itself." },
+      { "label": "C", "text": "A copy of the Dog class's source code", "isCorrect": false, "explanation": "Source code isn't stored in variables at runtime -- this describes something unrelated to how object variables work." },
+      { "label": "D", "text": "Nothing -- this line only declares the type", "isCorrect": false, "explanation": "This line both declares and initializes myDog with a newly created object in one statement." }
+    ],
+    "explanation": "Object reference variables hold a reference (essentially an address) to the object, not the object's data itself.",
+    "conceptLink": "ap-csa/unit-2-using-objects/creating-and-storing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-10",
+    "unit": "unit-2-using-objects",
+    "topic": "creating-and-storing-objects",
+    "difficulty": "hard",
+    "stem": "What is printed by this code?\n\n```java\nDog dog1 = new Dog();\nDog dog2 = dog1;\ndog2 = new Dog();\nSystem.out.println(dog1 == dog2);\n```",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": false, "explanation": "After dog2 is reassigned to a brand-new Dog object, dog1 and dog2 no longer refer to the same object." },
+      { "label": "B", "text": "false", "isCorrect": true, "explanation": "dog2 initially shares dog1's reference, but reassigning dog2 = new Dog() makes it point to a different object -- so == is now false." },
+      { "label": "C", "text": "Compile error", "isCorrect": false, "explanation": "This is valid, well-formed Java code." },
+      { "label": "D", "text": "It depends on the Dog class's fields", "isCorrect": false, "explanation": "== on object references compares whether they point to the same object, not their field contents -- so field values don't matter here." }
+    ],
+    "explanation": "dog2 is reassigned to a newly created Dog object partway through, so by the final line, dog1 and dog2 reference two different objects.",
+    "conceptLink": "ap-csa/unit-2-using-objects/creating-and-storing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-11",
+    "unit": "unit-2-using-objects",
+    "topic": "creating-and-storing-objects",
+    "difficulty": "medium",
+    "stem": "Which best describes what happens with `Dog dog2 = dog1;` (where dog1 already references a Dog object)?",
+    "choices": [
+      { "label": "A", "text": "A brand-new, independent Dog object is created for dog2", "isCorrect": false, "explanation": "No new object is created; this statement only copies the reference, not the object itself." },
+      { "label": "B", "text": "dog2 now refers to the same object that dog1 refers to", "isCorrect": true, "explanation": "Assigning one reference variable to another copies the reference (address), so both variables point to the same object." },
+      { "label": "C", "text": "dog1's data is copied field-by-field into a new object referenced by dog2", "isCorrect": false, "explanation": "This describes a manual or deep copy, which doesn't happen automatically with simple assignment." },
+      { "label": "D", "text": "This causes a compile error", "isCorrect": false, "explanation": "This is entirely valid Java, assuming dog1 was already declared as a Dog." }
+    ],
+    "explanation": "Assigning `dog2 = dog1` copies the reference, so dog1 and dog2 both point to the same underlying object.",
+    "conceptLink": "ap-csa/unit-2-using-objects/creating-and-storing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-12",
+    "unit": "unit-2-using-objects",
+    "topic": "creating-and-storing-objects",
+    "difficulty": "easy",
+    "stem": "Before an object reference instance field is assigned a value, what is its default value?",
+    "choices": [
+      { "label": "A", "text": "0", "isCorrect": false, "explanation": "0 is the default for numeric primitive fields like int, not object references." },
+      { "label": "B", "text": "null", "isCorrect": true, "explanation": "An unassigned object reference field defaults to null, meaning it refers to no object." },
+      { "label": "C", "text": "An empty object", "isCorrect": false, "explanation": "Java doesn't automatically create an \"empty\" object; an unassigned reference points to nothing at all." },
+      { "label": "D", "text": "false", "isCorrect": false, "explanation": "false is the default for boolean fields, not object references." }
+    ],
+    "explanation": "Object reference fields default to `null` until explicitly assigned an object.",
+    "conceptLink": "ap-csa/unit-2-using-objects/creating-and-storing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-13",
+    "unit": "unit-2-using-objects",
+    "topic": "calling-methods",
+    "difficulty": "easy",
+    "stem": "Which correctly calls a void method named `bark` on an object `myDog`, with no parameters?",
+    "choices": [
+      { "label": "A", "text": "myDog.bark();", "isCorrect": true, "explanation": "This is Java's standard method-call syntax: object, dot, method name, parentheses." },
+      { "label": "B", "text": "bark(myDog);", "isCorrect": false, "explanation": "This is function-call syntax from other languages -- Java calls a method through the object with dot notation." },
+      { "label": "C", "text": "myDog->bark();", "isCorrect": false, "explanation": "-> is not used for method calls in Java; that's C/C++ pointer syntax." },
+      { "label": "D", "text": "myDog.bark;", "isCorrect": false, "explanation": "This is missing parentheses -- without them, the method is never actually called." }
+    ],
+    "explanation": "Java calls a method on an object with `object.methodName(arguments)`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/calling-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-14",
+    "unit": "unit-2-using-objects",
+    "topic": "calling-methods",
+    "difficulty": "medium",
+    "stem": "A method `setName` takes one `String` parameter and returns nothing. Which correctly calls it on `myDog` with the argument \"Rex\"?",
+    "choices": [
+      { "label": "A", "text": "myDog.setName(\"Rex\");", "isCorrect": true, "explanation": "This correctly calls setName on myDog, passing the String literal \"Rex\" as the argument." },
+      { "label": "B", "text": "myDog.setName(Rex);", "isCorrect": false, "explanation": "Without quotes, Rex would be interpreted as a variable name, not the String literal \"Rex\"." },
+      { "label": "C", "text": "String myDog.setName(\"Rex\");", "isCorrect": false, "explanation": "setName is void, so it doesn't return anything -- writing a type before the call doesn't make sense and isn't valid syntax." },
+      { "label": "D", "text": "myDog.setName() = \"Rex\";", "isCorrect": false, "explanation": "This isn't valid method-call syntax in Java." }
+    ],
+    "explanation": "A method call passes its arguments inside the parentheses: `myDog.setName(\"Rex\");`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/calling-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-15",
+    "unit": "unit-2-using-objects",
+    "topic": "calling-methods",
+    "difficulty": "medium",
+    "stem": "A method `getAge` returns an `int` and takes no parameters. Which correctly stores its result in a variable `age`?",
+    "choices": [
+      { "label": "A", "text": "int age = myDog.getAge();", "isCorrect": true, "explanation": "This calls getAge on myDog and stores the returned int in age." },
+      { "label": "B", "text": "int age = getAge(myDog);", "isCorrect": false, "explanation": "This is function-call syntax from other languages, not how Java calls a method on an object." },
+      { "label": "C", "text": "myDog.getAge() = age;", "isCorrect": false, "explanation": "This backwards syntax attempts to assign TO a method call, which isn't valid." },
+      { "label": "D", "text": "int age = myDog.getAge;", "isCorrect": false, "explanation": "Missing parentheses after getAge means this doesn't actually call the method." }
+    ],
+    "explanation": "Calling a non-void method and storing its result follows the pattern: `type variable = object.method();`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/calling-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-16",
+    "unit": "unit-2-using-objects",
+    "topic": "calling-methods",
+    "difficulty": "hard",
+    "stem": "What is the key difference between a void method and a non-void method?",
+    "choices": [
+      { "label": "A", "text": "Void methods can't take parameters", "isCorrect": false, "explanation": "Void methods can take parameters -- e.g. setName(String name) is void but still takes a parameter." },
+      { "label": "B", "text": "A void method performs an action but returns no value; a non-void method returns a value that can be used", "isCorrect": true, "explanation": "This is the defining difference -- a non-void method's return value can be stored, printed, or used in an expression." },
+      { "label": "C", "text": "Non-void methods can only be called once", "isCorrect": false, "explanation": "Non-void methods can be called as many times as needed, just like void methods." },
+      { "label": "D", "text": "There is no difference; the terms are interchangeable", "isCorrect": false, "explanation": "There's a real, meaningful difference in whether a usable value comes back from the call." }
+    ],
+    "explanation": "A non-void method's declared return type indicates it produces a value the caller can use; void means no value comes back.",
+    "conceptLink": "ap-csa/unit-2-using-objects/calling-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-17",
+    "unit": "unit-2-using-objects",
+    "topic": "calling-methods",
+    "difficulty": "medium",
+    "stem": "Which of these correctly calls a method `add` that takes two `int` parameters and returns their sum, storing the result in `total`?",
+    "choices": [
+      { "label": "A", "text": "int total = add(3, 4);", "isCorrect": true, "explanation": "This calls add with both arguments inside one set of parentheses, separated by a comma, and stores the result." },
+      { "label": "B", "text": "int total = add(3)(4);", "isCorrect": false, "explanation": "This isn't valid Java method-call syntax." },
+      { "label": "C", "text": "int total = add[3, 4];", "isCorrect": false, "explanation": "Square brackets are for arrays, not method calls." },
+      { "label": "D", "text": "int total add(3, 4);", "isCorrect": false, "explanation": "This is missing the assignment operator (=) between the declaration and the method call." }
+    ],
+    "explanation": "Multiple arguments go inside one set of parentheses, separated by commas: `add(3, 4)`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/calling-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-18",
+    "unit": "unit-2-using-objects",
+    "topic": "calling-methods",
+    "difficulty": "hard",
+    "stem": "What happens if you try to use the return value of a `void` method, like `int x = myDog.bark();` where `bark` is declared void?",
+    "choices": [
+      { "label": "A", "text": "x is assigned 0", "isCorrect": false, "explanation": "There's no automatic default value assigned -- this simply doesn't compile." },
+      { "label": "B", "text": "x is assigned null", "isCorrect": false, "explanation": "null applies to object references, not primitives like int, and this still wouldn't compile regardless." },
+      { "label": "C", "text": "This is a compile error, since void methods don't produce a usable value", "isCorrect": true, "explanation": "The compiler rejects any attempt to use a void method's \"return value,\" since there isn't one." },
+      { "label": "D", "text": "The program compiles but crashes at runtime", "isCorrect": false, "explanation": "This is caught by the compiler before the program would ever run." }
+    ],
+    "explanation": "A void method produces no value, so trying to assign its call to a variable is a compile-time error.",
+    "conceptLink": "ap-csa/unit-2-using-objects/calling-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-19",
+    "unit": "unit-2-using-objects",
+    "topic": "string-objects",
+    "difficulty": "easy",
+    "stem": "What does the `+` operator do when used between two String values?",
+    "choices": [
+      { "label": "A", "text": "Adds their lengths together as a number", "isCorrect": false, "explanation": "This describes numeric addition -- that's not what + does with Strings." },
+      { "label": "B", "text": "Concatenates them into a single new String", "isCorrect": true, "explanation": "+ joins the two Strings end to end, producing one combined String." },
+      { "label": "C", "text": "Compares them for equality", "isCorrect": false, "explanation": "Comparison is done with .equals(), not +." },
+      { "label": "D", "text": "Causes a compile error", "isCorrect": false, "explanation": "String concatenation with + is entirely valid Java." }
+    ],
+    "explanation": "The `+` operator concatenates Strings, joining them into a single new String.",
+    "conceptLink": "ap-csa/unit-2-using-objects/string-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-20",
+    "unit": "unit-2-using-objects",
+    "topic": "string-objects",
+    "difficulty": "medium",
+    "stem": "What does `\"Hello\".length()` return?",
+    "choices": [
+      { "label": "A", "text": "4", "isCorrect": false, "explanation": "\"Hello\" has 5 characters (H-e-l-l-o), not 4." },
+      { "label": "B", "text": "5", "isCorrect": true, "explanation": "\"Hello\" has exactly 5 characters, so length() returns 5." },
+      { "label": "C", "text": "6", "isCorrect": false, "explanation": "This overcounts -- there's no extra character being counted." },
+      { "label": "D", "text": "\"Hello\".length()", "isCorrect": false, "explanation": "This is evaluated to a number, not returned as literal source code text." }
+    ],
+    "explanation": "`length()` returns the number of characters in the String -- \"Hello\" has 5.",
+    "conceptLink": "ap-csa/unit-2-using-objects/string-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-21",
+    "unit": "unit-2-using-objects",
+    "topic": "string-objects",
+    "difficulty": "medium",
+    "stem": "What is printed by this code?\n\n```java\nString s = \"programming\";\nSystem.out.println(s.substring(0, 4));\n```",
+    "choices": [
+      { "label": "A", "text": "\"prog\"", "isCorrect": true, "explanation": "substring(0, 4) returns characters at indices 0 through 3 (4 characters): p-r-o-g." },
+      { "label": "B", "text": "\"progr\"", "isCorrect": false, "explanation": "substring(0, 4) stops before index 4, giving only 4 characters, not 5." },
+      { "label": "C", "text": "\"rogr\"", "isCorrect": false, "explanation": "This starts from index 1 instead of index 0." },
+      { "label": "D", "text": "\"gram\"", "isCorrect": false, "explanation": "This doesn't correspond to the substring starting at index 0." }
+    ],
+    "explanation": "`substring(0, 4)` returns the characters from index 0 up to (but not including) index 4: `\"prog\"`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/string-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-22",
+    "unit": "unit-2-using-objects",
+    "topic": "string-objects",
+    "difficulty": "hard",
+    "stem": "What is printed by this code?\n\n```java\nString s = \"hello\";\nSystem.out.println(s.indexOf('l'));\n```",
+    "choices": [
+      { "label": "A", "text": "2", "isCorrect": true, "explanation": "In \"hello\" (indices h=0, e=1, l=2, l=3, o=4), the FIRST occurrence of 'l' is at index 2." },
+      { "label": "B", "text": "3", "isCorrect": false, "explanation": "Index 3 is the second 'l', but indexOf returns the first occurrence." },
+      { "label": "C", "text": "4", "isCorrect": false, "explanation": "Index 4 is 'o', not 'l'." },
+      { "label": "D", "text": "-1", "isCorrect": false, "explanation": "-1 would only be returned if 'l' didn't appear in the string at all, but it does." }
+    ],
+    "explanation": "`indexOf` returns the index of the first occurrence of the character, which is 2 for 'l' in \"hello\".",
+    "conceptLink": "ap-csa/unit-2-using-objects/string-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-23",
+    "unit": "unit-2-using-objects",
+    "topic": "string-objects",
+    "difficulty": "medium",
+    "stem": "Which correctly checks whether two String variables, `a` and `b`, have the same character content?",
+    "choices": [
+      { "label": "A", "text": "a == b", "isCorrect": false, "explanation": "== on String objects compares whether they're the exact same object in memory, not whether their contents match." },
+      { "label": "B", "text": "a.equals(b)", "isCorrect": true, "explanation": "equals() compares the actual character content of two Strings, regardless of whether they're the same object." },
+      { "label": "C", "text": "a = b", "isCorrect": false, "explanation": "This is assignment, not comparison, and would overwrite a's reference with b's." },
+      { "label": "D", "text": "a.same(b)", "isCorrect": false, "explanation": "\"same\" is not a method defined on String." }
+    ],
+    "explanation": "`.equals()` compares String content; `==` compares whether two references point to the exact same object.",
+    "conceptLink": "ap-csa/unit-2-using-objects/string-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-24",
+    "unit": "unit-2-using-objects",
+    "topic": "string-objects",
+    "difficulty": "easy",
+    "stem": "Which of these correctly converts the String `\"42\"` to an `int`?",
+    "choices": [
+      { "label": "A", "text": "Integer.parseInt(\"42\")", "isCorrect": true, "explanation": "Integer.parseInt converts a String containing digits into the corresponding int value." },
+      { "label": "B", "text": "(int) \"42\"", "isCorrect": false, "explanation": "You cannot cast a String directly to a primitive int with a simple cast." },
+      { "label": "C", "text": "\"42\".toInt()", "isCorrect": false, "explanation": "String does not have a toInt() method in Java." },
+      { "label": "D", "text": "int(\"42\")", "isCorrect": false, "explanation": "This isn't valid Java syntax for type conversion." }
+    ],
+    "explanation": "`Integer.parseInt(String)` is the standard way to convert a numeric String into an int.",
+    "conceptLink": "ap-csa/unit-2-using-objects/string-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-25",
+    "unit": "unit-2-using-objects",
+    "topic": "wrapper-classes-and-math",
+    "difficulty": "easy",
+    "stem": "What is the purpose of a wrapper class like `Integer` in Java?",
+    "choices": [
+      { "label": "A", "text": "It replaces the int primitive type entirely", "isCorrect": false, "explanation": "The int primitive still exists and is used constantly; Integer is a companion class, not a replacement." },
+      { "label": "B", "text": "It lets a primitive value like int be used as an object where an object is needed", "isCorrect": true, "explanation": "Wrapper classes let primitives participate in places that require objects, like certain collection types." },
+      { "label": "C", "text": "It only exists for backward compatibility and is never used", "isCorrect": false, "explanation": "Wrapper classes are actively used, for example when a class requires objects rather than primitives." },
+      { "label": "D", "text": "It makes arithmetic faster", "isCorrect": false, "explanation": "Using wrapper objects generally adds overhead compared to primitives -- it doesn't speed up arithmetic." }
+    ],
+    "explanation": "Wrapper classes like `Integer` and `Double` let primitive values be treated as objects when needed.",
+    "conceptLink": "ap-csa/unit-2-using-objects/wrapper-classes-and-math",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-26",
+    "unit": "unit-2-using-objects",
+    "topic": "wrapper-classes-and-math",
+    "difficulty": "medium",
+    "stem": "What does `Math.abs(-7)` return?",
+    "choices": [
+      { "label": "A", "text": "-7", "isCorrect": false, "explanation": "Math.abs returns the absolute (non-negative) value, not the original negative value." },
+      { "label": "B", "text": "7", "isCorrect": true, "explanation": "The absolute value of -7 is 7." },
+      { "label": "C", "text": "0", "isCorrect": false, "explanation": "The absolute value of -7 is 7, not 0." },
+      { "label": "D", "text": "7.0", "isCorrect": false, "explanation": "Math.abs(int) returns an int when given an int argument, not a double." }
+    ],
+    "explanation": "`Math.abs` returns the non-negative magnitude of its argument: `Math.abs(-7)` is `7`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/wrapper-classes-and-math",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-27",
+    "unit": "unit-2-using-objects",
+    "topic": "wrapper-classes-and-math",
+    "difficulty": "medium",
+    "stem": "What does `Math.pow(2, 3)` return?",
+    "choices": [
+      { "label": "A", "text": "5.0", "isCorrect": false, "explanation": "This would be 2+3, but Math.pow computes exponentiation, not addition." },
+      { "label": "B", "text": "6.0", "isCorrect": false, "explanation": "This would be 2*3, but Math.pow computes exponentiation, not multiplication." },
+      { "label": "C", "text": "8.0", "isCorrect": true, "explanation": "Math.pow(base, exponent) computes base raised to the exponent: 2 cubed (2^3) is 8." },
+      { "label": "D", "text": "9.0", "isCorrect": false, "explanation": "This would be 3 squared, but the arguments are (2, 3) meaning 2 raised to the power 3." }
+    ],
+    "explanation": "`Math.pow(2, 3)` computes `2^3 = 8.0` (Math.pow always returns a double).",
+    "conceptLink": "ap-csa/unit-2-using-objects/wrapper-classes-and-math",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-28",
+    "unit": "unit-2-using-objects",
+    "topic": "wrapper-classes-and-math",
+    "difficulty": "hard",
+    "stem": "What is printed by this code?\n\n```java\ndouble x = Math.sqrt(16);\nSystem.out.println(x);\n```",
+    "choices": [
+      { "label": "A", "text": "4", "isCorrect": false, "explanation": "Math.sqrt returns a double, which prints with a decimal point (4.0), not as a bare int." },
+      { "label": "B", "text": "4.0", "isCorrect": true, "explanation": "The square root of 16 is 4, and since Math.sqrt returns a double, it prints as 4.0." },
+      { "label": "C", "text": "16.0", "isCorrect": false, "explanation": "This is the input value, not the square root of it." },
+      { "label": "D", "text": "2.0", "isCorrect": false, "explanation": "The square root of 16 is 4, not 2 (2 would be the fourth root of 16)." }
+    ],
+    "explanation": "`Math.sqrt(16)` returns the double `4.0`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/wrapper-classes-and-math",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-29",
+    "unit": "unit-2-using-objects",
+    "topic": "wrapper-classes-and-math",
+    "difficulty": "medium",
+    "stem": "What does `Integer.parseInt(\"42\") + 8` evaluate to?",
+    "choices": [
+      { "label": "A", "text": "\"428\"", "isCorrect": false, "explanation": "parseInt converts \"42\" to the actual int 42, so + performs numeric addition, not string concatenation." },
+      { "label": "B", "text": "50", "isCorrect": true, "explanation": "Integer.parseInt(\"42\") produces the int 42, and 42 + 8 is 50." },
+      { "label": "C", "text": "\"50\"", "isCorrect": false, "explanation": "The result is a numeric int value (50), not a String." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid; parseInt correctly converts the String to an int usable in arithmetic." }
+    ],
+    "explanation": "`Integer.parseInt(\"42\")` returns the int `42`, and `42 + 8` is `50`.",
+    "conceptLink": "ap-csa/unit-2-using-objects/wrapper-classes-and-math",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-mcq-30",
+    "unit": "unit-2-using-objects",
+    "topic": "wrapper-classes-and-math",
+    "difficulty": "easy",
+    "stem": "Which Math method would you use to round a double DOWN to the nearest integer value (as a double)?",
+    "choices": [
+      { "label": "A", "text": "Math.round()", "isCorrect": false, "explanation": "Math.round rounds to the NEAREST integer (could round up or down), not specifically downward." },
+      { "label": "B", "text": "Math.ceil()", "isCorrect": false, "explanation": "Math.ceil rounds UP to the nearest integer -- the opposite of what's needed." },
+      { "label": "C", "text": "Math.floor()", "isCorrect": true, "explanation": "Math.floor rounds down to the nearest integer value, returned as a double." },
+      { "label": "D", "text": "Math.abs()", "isCorrect": false, "explanation": "Math.abs returns the absolute value, unrelated to rounding." }
+    ],
+    "explanation": "`Math.floor` always rounds toward negative infinity (downward) to the nearest whole number.",
+    "conceptLink": "ap-csa/unit-2-using-objects/wrapper-classes-and-math",
+    "reviewed": false
+  }
+]

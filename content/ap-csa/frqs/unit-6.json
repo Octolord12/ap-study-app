@@ -1,0 +1,45 @@
+[
+  {
+    "id": "ap-csa-u6-frq-1",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "prompt": "Write a method named `sumArray` that takes an `int[]` parameter `arr` and returns the sum of all its elements. For example, `sumArray(new int[]{3, 5, 2})` should return `10`.\n\nComplete the method below.\n\n```java\npublic int sumArray(int[] arr) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses a loop that traverses every element of arr" },
+      { "id": "r2", "points": 1, "description": "Correctly accumulates the running sum of the elements" },
+      { "id": "r3", "points": 1, "description": "Returns the correct total" }
+    ],
+    "sampleResponse": "```java\npublic int sumArray(int[] arr) {\n    int sum = 0;\n    for (int i = 0; i < arr.length; i++) {\n        sum += arr[i];\n    }\n    return sum;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-frq-2",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "prompt": "Write a method named `countOccurrences` that takes an `int[]` parameter `arr` and an `int` parameter `target`, and returns the number of times `target` appears in `arr`. For example, `countOccurrences(new int[]{4, 2, 4, 4, 1}, 4)` should return `3`.\n\nComplete the method below.\n\n```java\npublic int countOccurrences(int[] arr, int target) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses a loop that examines every element of arr" },
+      { "id": "r2", "points": 1, "description": "Correctly compares each element to target (e.g. arr[i] == target)" },
+      { "id": "r3", "points": 1, "description": "Returns the correct final count" }
+    ],
+    "sampleResponse": "```java\npublic int countOccurrences(int[] arr, int target) {\n    int count = 0;\n    for (int i = 0; i < arr.length; i++) {\n        if (arr[i] == target) {\n            count++;\n        }\n    }\n    return count;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-frq-3",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "prompt": "Write a method named `secondLargest` that takes an `int[]` parameter `arr`, guaranteed to have at least 2 elements with no duplicate values, and returns the second-largest value in `arr`. For example, `secondLargest(new int[]{3, 9, 1, 7})` should return `7`.\n\nComplete the method below.\n\n```java\npublic int secondLargest(int[] arr) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Initializes tracking variables for the largest and second-largest values using the first two elements, in the correct relative order" },
+      { "id": "r2", "points": 1, "description": "Uses a loop to examine the remaining elements (e.g. starting from index 2)" },
+      { "id": "r3", "points": 1, "description": "Correctly updates both the largest and second-largest trackers when a new overall largest is found (shifting the old largest into second)" },
+      { "id": "r4", "points": 1, "description": "Correctly updates the second-largest tracker when an element falls between it and the largest, and returns the correct final value" }
+    ],
+    "sampleResponse": "```java\npublic int secondLargest(int[] arr) {\n    int largest = Math.max(arr[0], arr[1]);\n    int second = Math.min(arr[0], arr[1]);\n    for (int i = 2; i < arr.length; i++) {\n        if (arr[i] > largest) {\n            second = largest;\n            largest = arr[i];\n        } else if (arr[i] > second) {\n            second = arr[i];\n        }\n    }\n    return second;\n}\n```",
+    "reviewed": false
+  }
+]

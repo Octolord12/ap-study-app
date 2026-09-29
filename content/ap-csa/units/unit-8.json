@@ -1,0 +1,11 @@
+{
+  "slug": "unit-8-2d-array",
+  "order": 8,
+  "name": "2D Array",
+  "weightingMin": 7,
+  "weightingMax": 10,
+  "topics": [
+    { "slug": "2d-array-creation", "order": 1, "name": "2D Array Creation and Access" },
+    { "slug": "traversing-2d-arrays", "order": 2, "name": "Traversing 2D Arrays" }
+  ]
+}

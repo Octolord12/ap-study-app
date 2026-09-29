@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-csa-u2-frq-1",
+    "unit": "unit-2-using-objects",
+    "topic": "wrapper-classes-and-math",
+    "prompt": "Write a method named `distanceFromOrigin` that takes two `double` parameters, `x` and `y`, and returns the straight-line distance from the point (x, y) to the origin (0, 0), using the formula `sqrt(x^2 + y^2)`.\n\nComplete the method below.\n\n```java\npublic double distanceFromOrigin(double x, double y) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes x squared and y squared (e.g. x * x or Math.pow(x, 2))" },
+      { "id": "r2", "points": 1, "description": "Sums the two squared values and applies Math.sqrt to the sum" },
+      { "id": "r3", "points": 1, "description": "Returns the computed distance" }
+    ],
+    "sampleResponse": "```java\npublic double distanceFromOrigin(double x, double y) {\n    double distance = Math.sqrt(x * x + y * y);\n    return distance;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-frq-2",
+    "unit": "unit-2-using-objects",
+    "topic": "string-objects",
+    "prompt": "Write a method named `getInitials` that takes two non-empty `String` parameters, `firstName` and `lastName`, and returns a two-character `String` containing the uppercase first letter of `firstName` followed by the uppercase first letter of `lastName`. For example, `getInitials(\"john\", \"doe\")` should return `\"JD\"`.\n\nComplete the method below.\n\n```java\npublic String getInitials(String firstName, String lastName) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly extracts the first character of firstName (e.g. charAt(0) or substring(0, 1))" },
+      { "id": "r2", "points": 1, "description": "Correctly extracts the first character of lastName and converts both extracted characters to uppercase" },
+      { "id": "r3", "points": 1, "description": "Returns the two uppercase characters concatenated in the correct order" }
+    ],
+    "sampleResponse": "```java\npublic String getInitials(String firstName, String lastName) {\n    String first = firstName.substring(0, 1).toUpperCase();\n    String last = lastName.substring(0, 1).toUpperCase();\n    return first + last;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-frq-3",
+    "unit": "unit-2-using-objects",
+    "topic": "wrapper-classes-and-math",
+    "prompt": "Write a method named `roundToNearestTen` that takes an `int` parameter `n` and returns `n` rounded to the nearest multiple of 10. For example, `roundToNearestTen(24)` should return `20`, and `roundToNearestTen(27)` should return `30`.\n\nComplete the method below.\n\n```java\npublic int roundToNearestTen(int n) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Divides n by 10 using floating-point division (e.g. n / 10.0), not integer division" },
+      { "id": "r2", "points": 1, "description": "Uses Math.round to round the quotient to the nearest whole number" },
+      { "id": "r3", "points": 1, "description": "Multiplies the rounded value by 10 and returns the correct int result (with a cast if needed)" }
+    ],
+    "sampleResponse": "```java\npublic int roundToNearestTen(int n) {\n    return (int) (Math.round(n / 10.0) * 10);\n}\n```",
+    "reviewed": false
+  }
+]

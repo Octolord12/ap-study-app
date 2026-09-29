@@ -1,0 +1,45 @@
+[
+  {
+    "id": "ap-csa-u5-frq-1",
+    "unit": "unit-5-writing-classes",
+    "topic": "constructors",
+    "prompt": "Given the class below, write a constructor for `Rectangle` that takes two `double` parameters, `width` and `height`, and initializes the corresponding fields.\n\n```java\npublic class Rectangle {\n    private double width;\n    private double height;\n\n    /* your constructor code here */\n\n    public double getArea() {\n        return width * height;\n    }\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares a constructor named Rectangle with two double parameters" },
+      { "id": "r2", "points": 1, "description": "Correctly assigns the width parameter to the width field (e.g. this.width = width)" },
+      { "id": "r3", "points": 1, "description": "Correctly assigns the height parameter to the height field" }
+    ],
+    "sampleResponse": "```java\npublic Rectangle(double width, double height) {\n    this.width = width;\n    this.height = height;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-frq-2",
+    "unit": "unit-5-writing-classes",
+    "topic": "accessor-and-mutator-methods",
+    "prompt": "Given the class below, write two methods: an accessor `getBalance` that returns the current balance, and a mutator `deposit` that takes a `double` parameter `amount` and adds it to the balance only if `amount` is positive.\n\n```java\npublic class BankAccount {\n    private double balance;\n\n    public BankAccount(double balance) {\n        this.balance = balance;\n    }\n\n    /* your getBalance and deposit methods here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares getBalance as a public method returning double, and correctly returns balance" },
+      { "id": "r2", "points": 1, "description": "Declares deposit as a public void method taking a double parameter" },
+      { "id": "r3", "points": 1, "description": "Checks that amount is positive (e.g. if (amount > 0)) before modifying the balance" },
+      { "id": "r4", "points": 1, "description": "Correctly adds amount to balance when the check passes" }
+    ],
+    "sampleResponse": "```java\npublic double getBalance() {\n    return balance;\n}\n\npublic void deposit(double amount) {\n    if (amount > 0) {\n        balance += amount;\n    }\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-frq-3",
+    "unit": "unit-5-writing-classes",
+    "topic": "static-variables-and-methods",
+    "prompt": "Write a `static` method named `average`, belonging to a utility class `MathUtils`, that takes two `double` parameters `a` and `b` and returns their average.\n\nComplete the method below.\n\n```java\npublic static double average(double a, double b) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares the method with the static keyword and correct signature" },
+      { "id": "r2", "points": 1, "description": "Correctly computes the average of a and b (e.g. (a + b) / 2)" },
+      { "id": "r3", "points": 1, "description": "Returns the computed average" }
+    ],
+    "sampleResponse": "```java\npublic static double average(double a, double b) {\n    return (a + b) / 2;\n}\n```",
+    "reviewed": false
+  }
+]

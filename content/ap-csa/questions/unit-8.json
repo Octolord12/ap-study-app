@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-csa-u8-mcq-1",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "easy",
+    "stem": "Which correctly creates a 2D array of ints with 3 rows and 4 columns?",
+    "choices": [
+      { "label": "A", "text": "int[][] arr = new int[3][4];", "isCorrect": true, "explanation": "This creates a 2D int array with 3 rows and 4 columns using separate bracket pairs for each dimension." },
+      { "label": "B", "text": "int[] arr = new int[3, 4];", "isCorrect": false, "explanation": "This declares a 1D array and uses invalid comma syntax for dimensions." },
+      { "label": "C", "text": "int[][] arr = new int[3, 4];", "isCorrect": false, "explanation": "Java uses separate bracket pairs for each dimension, not a comma inside one bracket." },
+      { "label": "D", "text": "int arr[3][4];", "isCorrect": false, "explanation": "This isn't valid array creation syntax; it's missing \"new\" and the type placement is wrong." }
+    ],
+    "explanation": "A 2D array is created with `new type[rows][columns]`, using a separate bracket pair for each dimension.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-2",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "easy",
+    "stem": "In `int[][] arr = new int[3][4];`, what do the 3 and 4 represent?",
+    "choices": [
+      { "label": "A", "text": "3 columns and 4 rows", "isCorrect": false, "explanation": "This reverses the convention; the first dimension is rows, the second is columns." },
+      { "label": "B", "text": "3 rows and 4 columns", "isCorrect": true, "explanation": "By convention, the first bracket specifies rows and the second specifies columns." },
+      { "label": "C", "text": "The total number of elements (3+4)", "isCorrect": false, "explanation": "The total number of elements is 3*4=12, not 3+4." },
+      { "label": "D", "text": "The minimum and maximum values allowed", "isCorrect": false, "explanation": "These numbers specify array dimensions/sizes, not value constraints." }
+    ],
+    "explanation": "`new int[3][4]` creates an array with 3 rows and 4 columns.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-3",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "How many total elements does `int[][] arr = new int[3][5];` contain?",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "3 is just the number of rows, not the total element count." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "5 is just the number of columns, not the total element count." },
+      { "label": "C", "text": "8", "isCorrect": false, "explanation": "3+5=8 is not how total elements in a 2D array are calculated; it's rows times columns." },
+      { "label": "D", "text": "15", "isCorrect": true, "explanation": "The total number of elements is rows times columns: 3 * 5 = 15." }
+    ],
+    "explanation": "A 2D array's total element count is rows times columns: `3 * 5 = 15`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-4",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "What is `arr.length` for `int[][] arr = new int[3][5];`?",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": true, "explanation": "arr.length gives the number of rows, which is 3." },
+      { "label": "B", "text": "5", "isCorrect": false, "explanation": "arr.length gives the number of ROWS (the first dimension), not columns." },
+      { "label": "C", "text": "15", "isCorrect": false, "explanation": "15 is the total number of elements, but arr.length only reflects the first dimension (rows)." },
+      { "label": "D", "text": "8", "isCorrect": false, "explanation": "8 doesn't correspond to any meaningful measurement of this array." }
+    ],
+    "explanation": "`arr.length` gives the number of rows in a 2D array, which is `3`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-5",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "What is `arr[0].length` for `int[][] arr = new int[3][5];`?",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "3 is the number of rows (arr.length), not the length of a single row." },
+      { "label": "B", "text": "5", "isCorrect": true, "explanation": "arr[0] is the first row, which has 5 elements (columns)." },
+      { "label": "C", "text": "0", "isCorrect": false, "explanation": "arr[0] is a valid, non-empty row with 5 elements, not 0." },
+      { "label": "D", "text": "15", "isCorrect": false, "explanation": "15 is the total elements across the whole 2D array, not the length of one row." }
+    ],
+    "explanation": "`arr[0]` is a 1D array (the first row) with `5` elements, matching the second dimension.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-6",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[][] arr = {{1, 2}, {3, 4}, {5, 6}};\nSystem.out.println(arr[1][0]);\n```",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": false, "explanation": "This is arr[0][0], not arr[1][0]." },
+      { "label": "B", "text": "2", "isCorrect": false, "explanation": "This is arr[0][1], not arr[1][0]." },
+      { "label": "C", "text": "3", "isCorrect": true, "explanation": "arr[1] is the row {3, 4}, and arr[1][0] is its first element, 3." },
+      { "label": "D", "text": "4", "isCorrect": false, "explanation": "This is arr[1][1], not arr[1][0]." }
+    ],
+    "explanation": "`arr[1]` is the row `{3, 4}`, so `arr[1][0]` is `3`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-7",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint[][] arr = {{1, 2}, {3, 4}, {5, 6}};\nSystem.out.println(arr.length);\n```",
+    "choices": [
+      { "label": "A", "text": "2", "isCorrect": false, "explanation": "2 is the number of columns in each row, not the number of rows." },
+      { "label": "B", "text": "3", "isCorrect": true, "explanation": "There are 3 rows in this array literal: {1,2}, {3,4}, and {5,6}." },
+      { "label": "C", "text": "6", "isCorrect": false, "explanation": "6 is the total number of elements, not the row count." },
+      { "label": "D", "text": "1", "isCorrect": false, "explanation": "There are 3 rows in this array, not 1." }
+    ],
+    "explanation": "This array literal has 3 rows, so `arr.length` is `3`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-8",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[][] arr = {{1, 2, 3}, {4, 5}, {6}};\nSystem.out.println(arr[1].length);\n```",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": false, "explanation": "arr[2] has length 1, but arr[1] is {4, 5}, which has length 2." },
+      { "label": "B", "text": "2", "isCorrect": true, "explanation": "arr[1] is the row {4, 5}, which has 2 elements." },
+      { "label": "C", "text": "3", "isCorrect": false, "explanation": "arr[0] has length 3, but arr[1] is {4, 5}, which has length 2." },
+      { "label": "D", "text": "They must all be the same length, so this is a compile error", "isCorrect": false, "explanation": "Java allows \"jagged\" 2D arrays where rows have different lengths; this is valid." }
+    ],
+    "explanation": "Java allows jagged arrays: `arr[1]` is `{4, 5}`, so its length is `2`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-9",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "What does `arr[2][1] = 9;` do, given `int[][] arr = new int[3][3];`?",
+    "choices": [
+      { "label": "A", "text": "Sets the element in row 2, column 1, to 9", "isCorrect": true, "explanation": "The first index is the row (2), and the second index is the column (1)." },
+      { "label": "B", "text": "Sets the element in row 1, column 2, to 9", "isCorrect": false, "explanation": "The first index specifies the row, the second specifies the column, so this reverses row 2, column 1." },
+      { "label": "C", "text": "Creates a new row", "isCorrect": false, "explanation": "This modifies an existing element; it doesn't create any new rows." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid syntax, since row 2 and column 1 are both within bounds for a 3x3 array." }
+    ],
+    "explanation": "`arr[row][column]`, so `arr[2][1] = 9;` sets the element in row 2, column 1.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-10",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[][] arr = new int[2][2];\narr[0][0] = 1;\narr[0][1] = 2;\narr[1][0] = 3;\narr[1][1] = 4;\nSystem.out.println(arr[0][1] + arr[1][0]);\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "This is just arr[1][0] alone, not the full sum." },
+      { "label": "B", "text": "4", "isCorrect": false, "explanation": "This is just arr[1][1] alone, which isn't part of this sum." },
+      { "label": "C", "text": "5", "isCorrect": true, "explanation": "arr[0][1] is 2 and arr[1][0] is 3, so their sum is 5." },
+      { "label": "D", "text": "10", "isCorrect": false, "explanation": "10 is the sum of all four elements (1+2+3+4), but only two specific elements are added here." }
+    ],
+    "explanation": "`arr[0][1]` is `2` and `arr[1][0]` is `3`, so their sum is `5`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-11",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "Which loop structure is typically used to initialize/traverse every element of a 2D array?",
+    "choices": [
+      { "label": "A", "text": "A single for loop", "isCorrect": false, "explanation": "A single loop can't easily reach every row-and-column combination in a 2D structure." },
+      { "label": "B", "text": "A while loop only", "isCorrect": false, "explanation": "While loops CAN be used, but nesting is the key structural idea needed, not specifically \"a while loop only\"." },
+      { "label": "C", "text": "Nested for loops (one for rows, one for columns)", "isCorrect": true, "explanation": "An outer loop over rows and an inner loop over columns together visit every element exactly once." },
+      { "label": "D", "text": "A do-while loop only", "isCorrect": false, "explanation": "Do-while loops aren't the standard/required pattern for this; nested loops are the key structural idea, not the specific loop type." }
+    ],
+    "explanation": "Traversing a 2D array typically uses nested loops: an outer loop for rows and an inner loop for columns.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-12",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "What does `new int[4][4]` initialize each element to by default?",
+    "choices": [
+      { "label": "A", "text": "null", "isCorrect": false, "explanation": "null is the default for object references, not for int, which is a primitive." },
+      { "label": "B", "text": "1", "isCorrect": false, "explanation": "1 is not Java's default value for numeric primitives; 0 is." },
+      { "label": "C", "text": "0", "isCorrect": true, "explanation": "Every element of a newly created int array (1D or 2D) defaults to 0." },
+      { "label": "D", "text": "Random values", "isCorrect": false, "explanation": "Java always initializes primitive array elements to a predictable default (0 for int), never random values." }
+    ],
+    "explanation": "Newly created `int` array elements default to `0`, whether the array is 1D or 2D.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-13",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[][] grid = new int[2][3];\nSystem.out.println(grid[1][2]);\n```",
+    "choices": [
+      { "label": "A", "text": "0", "isCorrect": true, "explanation": "grid[1][2] is a valid position that was never explicitly assigned, so it holds the default int value, 0." },
+      { "label": "B", "text": "null", "isCorrect": false, "explanation": "null applies to object references, not int, which defaults to 0." },
+      { "label": "C", "text": "ArrayIndexOutOfBoundsException", "isCorrect": false, "explanation": "grid[1][2] is valid: rows 0-1, columns 0-2 are all valid indices for a 2x3 array." },
+      { "label": "D", "text": "6", "isCorrect": false, "explanation": "No value was ever assigned to compute 6; unassigned int elements simply default to 0." }
+    ],
+    "explanation": "`grid[1][2]` is a valid, unassigned position in a `2x3` int array, so it defaults to `0`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-14",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "Can the rows of a 2D array in Java have different lengths (a \"jagged\" array)?",
+    "choices": [
+      { "label": "A", "text": "No, all rows must always have the exact same length", "isCorrect": false, "explanation": "Java's 2D arrays are actually implemented as arrays of arrays, which permits differing row lengths." },
+      { "label": "B", "text": "Yes, Java allows jagged arrays where each row can have a different length", "isCorrect": true, "explanation": "Since a 2D array is an array of 1D arrays, each row can independently have its own length." },
+      { "label": "C", "text": "Only if declared with the keyword \"jagged\"", "isCorrect": false, "explanation": "There is no \"jagged\" keyword in Java; jagged arrays are just a natural consequence of how 2D arrays work." },
+      { "label": "D", "text": "Only for arrays of Strings", "isCorrect": false, "explanation": "Jagged arrays work for any element type, not just Strings." }
+    ],
+    "explanation": "Java 2D arrays are arrays of arrays, so rows can have different lengths -- these are called jagged arrays.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-15",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint[][] jagged = new int[3][];\njagged[0] = new int[]{1};\njagged[1] = new int[]{2, 3};\njagged[2] = new int[]{4, 5, 6};\nSystem.out.println(jagged[2].length);\n```",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": false, "explanation": "This is the length of jagged[0], not jagged[2]." },
+      { "label": "B", "text": "2", "isCorrect": false, "explanation": "This is the length of jagged[1], not jagged[2]." },
+      { "label": "C", "text": "3", "isCorrect": true, "explanation": "jagged[2] is {4, 5, 6}, which has 3 elements." },
+      { "label": "D", "text": "6", "isCorrect": false, "explanation": "6 is the last VALUE in jagged[2], not its length." }
+    ],
+    "explanation": "`jagged[2]` holds `{4, 5, 6}`, which has a length of `3`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-16",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "easy",
+    "stem": "Which nested loop correctly visits every element of `int[][] arr` with `R` rows and `C` columns?",
+    "choices": [
+      { "label": "A", "text": "for (int r = 0; r < R; r++) { for (int c = 0; c < C; c++) { /* use arr[r][c] */ } }", "isCorrect": true, "explanation": "This correctly iterates r from 0 to R-1 and, for each row, c from 0 to C-1, visiting every element exactly once." },
+      { "label": "B", "text": "for (int r = 0; r < C; r++) { for (int c = 0; c < R; c++) { /* use arr[r][c] */ } }", "isCorrect": false, "explanation": "This swaps R and C in the loop bounds, meaning it would use the wrong limits for rows vs. columns." },
+      { "label": "C", "text": "for (int r = 0; r <= R; r++) { for (int c = 0; c <= C; c++) { /* use arr[r][c] */ } }", "isCorrect": false, "explanation": "Using <= for both bounds causes out-of-bounds access on both the last row and last column." },
+      { "label": "D", "text": "for (int c = 0; c < C; c++) { for (int r = 0; r < R; r++) { /* use arr[c][r] */ } }", "isCorrect": false, "explanation": "This swaps the roles of r and c in arr[c][r], accessing elements with reversed row/column indices." }
+    ],
+    "explanation": "The standard nested-loop traversal uses `r < R` for rows and `c < C` for columns, indexing as `arr[r][c]`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-17",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nint[][] arr = {{1, 2}, {3, 4}};\nint sum = 0;\nfor (int r = 0; r < arr.length; r++) {\n    for (int c = 0; c < arr[r].length; c++) {\n        sum += arr[r][c];\n    }\n}\nSystem.out.println(sum);\n```",
+    "choices": [
+      { "label": "A", "text": "4", "isCorrect": false, "explanation": "This is the total number of elements, not their sum." },
+      { "label": "B", "text": "6", "isCorrect": false, "explanation": "This would be summing only one row (e.g. 2+4), not all elements." },
+      { "label": "C", "text": "10", "isCorrect": true, "explanation": "The nested loop visits all 4 elements: 1 + 2 + 3 + 4 = 10." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "sum is updated across all 4 elements in the nested loop, so it doesn't stay at 0." }
+    ],
+    "explanation": "The nested loop sums every element: `1 + 2 + 3 + 4 = 10`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-18",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "Using `arr[r].length` instead of a fixed number for the inner loop bound is especially important when:",
+    "choices": [
+      { "label": "A", "text": "The array is never going to be used", "isCorrect": false, "explanation": "This doesn't relate to the reasoning behind using arr[r].length." },
+      { "label": "B", "text": "The 2D array is jagged, since each row may have a different length", "isCorrect": true, "explanation": "For a jagged array, each row's actual length can differ, so arr[r].length correctly adapts to each row." },
+      { "label": "C", "text": "The array only has one row", "isCorrect": false, "explanation": "With only one row, using a fixed number might happen to work, but that's a special case, not the general reason." },
+      { "label": "D", "text": "It never matters; a fixed number always works fine", "isCorrect": false, "explanation": "For a jagged array, using a fixed column count could cause out-of-bounds errors or miss elements on shorter/longer rows." }
+    ],
+    "explanation": "`arr[r].length` correctly adapts to each row's actual size, which matters most for jagged arrays.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-19",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[][] arr = {{1, 2, 3}, {4, 5, 6}};\nfor (int r = 0; r < arr.length; r++) {\n    for (int c = 0; c < arr[r].length; c++) {\n        System.out.print(arr[r][c] + \" \");\n    }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "1 2 3 4 5 6 ", "isCorrect": true, "explanation": "This traverses row 0 fully (1, 2, 3), then row 1 fully (4, 5, 6), in row-major order." },
+      { "label": "B", "text": "1 4 2 5 3 6 ", "isCorrect": false, "explanation": "This would be column-major order (traversing by column first), but the outer loop iterates rows first here." },
+      { "label": "C", "text": "6 5 4 3 2 1 ", "isCorrect": false, "explanation": "This is the reverse order; the loop traverses forward, from the first row/column to the last." },
+      { "label": "D", "text": "1 2 3\\n4 5 6 (with newline)", "isCorrect": false, "explanation": "The code uses print (not println) with a space separator, so there's no newline between rows." }
+    ],
+    "explanation": "With rows as the outer loop, elements print in row-major order: `1 2 3 4 5 6`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-20",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "What does this nested loop compute for `arr = {{1, 2}, {3, 4}, {5, 6}}`?\n\n```java\nint count = 0;\nfor (int r = 0; r < arr.length; r++) {\n    for (int c = 0; c < arr[r].length; c++) {\n        if (arr[r][c] % 2 == 0) {\n            count++;\n        }\n    }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "2", "isCorrect": false, "explanation": "There are three even elements (2, 4, 6), not two." },
+      { "label": "B", "text": "3", "isCorrect": true, "explanation": "The even elements are 2, 4, and 6, giving a count of 3." },
+      { "label": "C", "text": "6", "isCorrect": false, "explanation": "6 is the total number of elements, but only half of them (3) are even." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "count is incremented for each even element found, so it doesn't stay 0." }
+    ],
+    "explanation": "The even elements in the grid are `2`, `4`, and `6`, so `count` ends at `3`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-21",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[][] arr = {{1, 2}, {3, 4}, {5, 6}};\nint total = 0;\nfor (int c = 0; c < arr[0].length; c++) {\n    for (int r = 0; r < arr.length; r++) {\n        total += arr[r][c];\n    }\n}\nSystem.out.println(total);\n```",
+    "choices": [
+      { "label": "A", "text": "9", "isCorrect": false, "explanation": "This doesn't correspond to summing all the elements correctly." },
+      { "label": "B", "text": "12", "isCorrect": false, "explanation": "This doesn't match summing all 6 elements (1 through 6), which total 21." },
+      { "label": "C", "text": "21", "isCorrect": true, "explanation": "Swapping the loop order (columns outer, rows inner) still visits every element exactly once: 1+2+3+4+5+6=21." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "Swapping the loop order (columns outer, rows inner) is valid Java, as long as the bounds are correct." }
+    ],
+    "explanation": "Even with columns as the outer loop, every element is still visited exactly once, so the total is `1+2+3+4+5+6=21`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-22",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "Given a 2D array representing a grid, which nested loop structure prints it row by row, with each row on its own line?",
+    "choices": [
+      { "label": "A", "text": "for (int r = 0; r < arr.length; r++) { for (int c = 0; c < arr[r].length; c++) { System.out.print(arr[r][c] + \" \"); } System.out.println(); }", "isCorrect": true, "explanation": "The println() is placed after the inner loop finishes, so a newline is printed once per completed row." },
+      { "label": "B", "text": "for (int r = 0; r < arr.length; r++) { for (int c = 0; c < arr[r].length; c++) { System.out.print(arr[r][c] + \" \"); System.out.println(); } }", "isCorrect": false, "explanation": "Placing println() inside the inner loop prints a newline after every single element, not after every row." },
+      { "label": "C", "text": "for (int r = 0; r < arr.length; r++) { System.out.println(); for (int c = 0; c < arr[r].length; c++) { System.out.print(arr[r][c] + \" \"); } }", "isCorrect": false, "explanation": "Placing println() before the inner loop starts prints an extra blank line before each row, rather than after it." },
+      { "label": "D", "text": "System.out.println(arr);", "isCorrect": false, "explanation": "Printing a 2D array directly like this doesn't print its contents in a readable grid format; it prints internal reference/type info." }
+    ],
+    "explanation": "Printing a newline after the inner loop completes (but inside the outer loop) puts each row on its own line.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-23",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "What does this method check for a 2D array `grid`?\n\n```java\npublic boolean containsValue(int[][] grid, int target) {\n    for (int r = 0; r < grid.length; r++) {\n        for (int c = 0; c < grid[r].length; c++) {\n            if (grid[r][c] == target) {\n                return true;\n            }\n        }\n    }\n    return false;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "Whether every element equals target", "isCorrect": false, "explanation": "The method returns true as soon as ONE match is found; it doesn't require every element to match." },
+      { "label": "B", "text": "Whether at least one element anywhere in the grid equals target", "isCorrect": true, "explanation": "The method returns true immediately upon finding any matching element, and false only if none are ever found." },
+      { "label": "C", "text": "The number of times target appears", "isCorrect": false, "explanation": "The method returns a boolean (true/false) as soon as a match is found; it doesn't count occurrences." },
+      { "label": "D", "text": "The position of target", "isCorrect": false, "explanation": "The method returns a boolean, not a row/column position." }
+    ],
+    "explanation": "This method searches the whole grid and returns `true` as soon as it finds any element equal to `target`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-24",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is returned by `containsValue` (from the previous question) when called with `grid = {{1, 2}, {3, 4}}` and `target = 5`?",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": false, "explanation": "5 doesn't appear anywhere in the grid, so the method never returns true; it falls through to the final return false." },
+      { "label": "B", "text": "false", "isCorrect": true, "explanation": "Since 5 is not found anywhere in the grid, the loops complete without returning true, so false is returned." },
+      { "label": "C", "text": "-1", "isCorrect": false, "explanation": "This method returns a boolean, not an int like -1." },
+      { "label": "D", "text": "It throws an exception", "isCorrect": false, "explanation": "Searching for a value that isn't present doesn't cause an exception; the loops simply complete and false is returned." }
+    ],
+    "explanation": "Since `5` is not present anywhere in the grid, `containsValue` returns `false`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-25",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "What does this method compute for `grid = {{1, 2, 3}, {4, 5, 6}}`?\n\n```java\npublic int[] rowSums(int[][] grid) {\n    int[] sums = new int[grid.length];\n    for (int r = 0; r < grid.length; r++) {\n        int rowSum = 0;\n        for (int c = 0; c < grid[r].length; c++) {\n            rowSum += grid[r][c];\n        }\n        sums[r] = rowSum;\n    }\n    return sums;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "{1, 2}", "isCorrect": false, "explanation": "This is just the number of columns in each row, not the sum of the row's values." },
+      { "label": "B", "text": "{6, 15}", "isCorrect": true, "explanation": "Row 0 sums to 1+2+3=6, and row 1 sums to 4+5+6=15." },
+      { "label": "C", "text": "{21}", "isCorrect": false, "explanation": "This is the grand total of all elements combined, but the method returns one sum PER ROW, not a single combined total." },
+      { "label": "D", "text": "{3, 3}", "isCorrect": false, "explanation": "This is the number of elements in each row (both rows have 3 elements), not the sum of their values." }
+    ],
+    "explanation": "`rowSums` computes one total per row: `{1+2+3, 4+5+6} = {6, 15}`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-26",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "In the `rowSums` method above, why is `sums` created with `new int[grid.length]`?",
+    "choices": [
+      { "label": "A", "text": "grid.length gives the total number of elements in the grid", "isCorrect": false, "explanation": "grid.length specifically gives the number of ROWS, not the total element count across the whole 2D array." },
+      { "label": "B", "text": "grid.length gives the number of rows, and we need exactly one sum per row", "isCorrect": true, "explanation": "Since one sum is computed per row, the sums array needs exactly as many slots as there are rows." },
+      { "label": "C", "text": "It's an arbitrary, unrelated size choice", "isCorrect": false, "explanation": "The size is deliberately chosen to match the number of rows, since one sum is computed per row." },
+      { "label": "D", "text": "grid.length gives the number of columns", "isCorrect": false, "explanation": "grid.length gives the number of rows (the first dimension), not columns (which would be grid[r].length)." }
+    ],
+    "explanation": "`sums` needs one slot per row, and `grid.length` gives exactly the number of rows.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-27",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What does this method compute for `grid = {{5, 1}, {3, 8}, {2, 9}}`?\n\n```java\npublic int findMax(int[][] grid) {\n    int max = grid[0][0];\n    for (int r = 0; r < grid.length; r++) {\n        for (int c = 0; c < grid[r].length; c++) {\n            if (grid[r][c] > max) {\n                max = grid[r][c];\n            }\n        }\n    }\n    return max;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "5", "isCorrect": false, "explanation": "This is only the very first element checked (grid[0][0]); a larger value (9) appears later." },
+      { "label": "B", "text": "8", "isCorrect": false, "explanation": "8 is not the largest value in the grid; 9, found later, is larger." },
+      { "label": "C", "text": "9", "isCorrect": true, "explanation": "Tracing through the grid values (5, 1, 3, 8, 2, 9), the largest is 9." },
+      { "label": "D", "text": "2", "isCorrect": false, "explanation": "2 is smaller than the running max at every point, so it never becomes the new max." }
+    ],
+    "explanation": "Scanning all values (5, 1, 3, 8, 2, 9), the maximum is `9`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-28",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "What does this nested loop print for `grid = {{1, 0}, {0, 1}}`?\n\n```java\nfor (int r = 0; r < grid.length; r++) {\n    for (int c = 0; c < grid[r].length; c++) {\n        if (r == c) {\n            System.out.print(grid[r][c] + \" \");\n        }\n    }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "1 0 0 1 ", "isCorrect": false, "explanation": "The condition r == c restricts printing to only the diagonal elements, not every element in the grid." },
+      { "label": "B", "text": "1 1 ", "isCorrect": true, "explanation": "The diagonal elements are grid[0][0]=1 and grid[1][1]=1, both of which get printed." },
+      { "label": "C", "text": "0 0 ", "isCorrect": false, "explanation": "The diagonal elements here (grid[0][0] and grid[1][1]) are both 1, not 0." },
+      { "label": "D", "text": "1 0 ", "isCorrect": false, "explanation": "This would only include one diagonal element, but the loop checks the condition r == c at both diagonal positions." }
+    ],
+    "explanation": "The condition `r == c` selects only the diagonal elements: `grid[0][0]` and `grid[1][1]`, both `1`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-29",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "medium",
+    "stem": "What is the purpose of checking `r == c` when traversing a 2D array, as in the previous example?",
+    "choices": [
+      { "label": "A", "text": "It has no particular meaning", "isCorrect": false, "explanation": "Checking r == c is a well-known, meaningful pattern in 2D array processing, not an arbitrary check." },
+      { "label": "B", "text": "It isolates the elements along the main diagonal of the grid", "isCorrect": true, "explanation": "Elements where the row index equals the column index lie exactly on the main diagonal." },
+      { "label": "C", "text": "It checks whether the grid is empty", "isCorrect": false, "explanation": "Checking r == c doesn't test whether the grid has any elements at all." },
+      { "label": "D", "text": "It counts the total number of rows", "isCorrect": false, "explanation": "r == c doesn't relate to counting rows; it's about selecting specific positions." }
+    ],
+    "explanation": "`r == c` identifies exactly the elements on the grid's main diagonal.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-30",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nint[][] grid = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\nint sum = 0;\nfor (int r = 0; r < grid.length; r++) {\n    sum += grid[r][r];\n}\nSystem.out.println(sum);\n```",
+    "choices": [
+      { "label": "A", "text": "6", "isCorrect": false, "explanation": "This doesn't correspond to summing the correct diagonal elements." },
+      { "label": "B", "text": "15", "isCorrect": true, "explanation": "The diagonal elements are grid[0][0]=1, grid[1][1]=5, and grid[2][2]=9, summing to 15." },
+      { "label": "C", "text": "45", "isCorrect": false, "explanation": "45 is the sum of ALL elements in the grid, but this loop only adds the diagonal elements (grid[r][r])." },
+      { "label": "D", "text": "9", "isCorrect": false, "explanation": "9 is just the last diagonal element, not the total of all three diagonal elements." }
+    ],
+    "explanation": "This single loop sums only the diagonal elements: `1 + 5 + 9 = 15`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  }
+]

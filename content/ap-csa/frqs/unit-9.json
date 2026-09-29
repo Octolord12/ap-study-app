@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ap-csa-u9-frq-1",
+    "unit": "unit-9-inheritance",
+    "topic": "subclass-constructors",
+    "prompt": "Given the classes below, write a constructor for `Dog` that takes two `String` parameters, `name` and `breed`, calls the superclass constructor to initialize `name`, and sets the `breed` field.\n\n```java\npublic class Animal {\n    protected String name;\n\n    public Animal(String name) {\n        this.name = name;\n    }\n}\n\npublic class Dog extends Animal {\n    private String breed;\n\n    /* your constructor code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares a constructor named Dog with two String parameters (name and breed)" },
+      { "id": "r2", "points": 1, "description": "Calls super(name) as the first statement, passing the name parameter to the superclass constructor" },
+      { "id": "r3", "points": 1, "description": "Correctly assigns the breed parameter to the breed field" }
+    ],
+    "sampleResponse": "```java\npublic Dog(String name, String breed) {\n    super(name);\n    this.breed = breed;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u9-frq-2",
+    "unit": "unit-9-inheritance",
+    "topic": "overriding-methods",
+    "prompt": "Given the classes below, override `getArea` in `Circle` so that it correctly returns the circle's area (`pi * radius^2`), rather than inheriting `Shape`'s default of `0`.\n\n```java\npublic class Shape {\n    public double getArea() {\n        return 0;\n    }\n}\n\npublic class Circle extends Shape {\n    private double radius;\n\n    public Circle(double radius) {\n        this.radius = radius;\n    }\n\n    /* your getArea override here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares getArea with the correct matching signature (public double getArea()), overriding the superclass method" },
+      { "id": "r2", "points": 1, "description": "Correctly computes the area using Math.PI * radius * radius" },
+      { "id": "r3", "points": 1, "description": "Returns the computed area" }
+    ],
+    "sampleResponse": "```java\n@Override\npublic double getArea() {\n    return Math.PI * radius * radius;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u9-frq-3",
+    "unit": "unit-9-inheritance",
+    "topic": "polymorphism",
+    "prompt": "Write a method named `totalArea` that takes an array of `Shape` objects (the array may contain a mix of any Shape subclasses, such as Circle or Square) and returns the sum of all their areas, relying on polymorphism to call each object's own `getArea()`.\n\nComplete the method below.\n\n```java\npublic double totalArea(Shape[] shapes) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses a loop that traverses every element of shapes" },
+      { "id": "r2", "points": 1, "description": "Calls getArea() on each Shape element, relying on polymorphism/dynamic dispatch to invoke the correct subclass's implementation" },
+      { "id": "r3", "points": 1, "description": "Correctly accumulates and returns the total area" }
+    ],
+    "sampleResponse": "```java\npublic double totalArea(Shape[] shapes) {\n    double total = 0;\n    for (Shape s : shapes) {\n        total += s.getArea();\n    }\n    return total;\n}\n```",
+    "reviewed": false
+  }
+]

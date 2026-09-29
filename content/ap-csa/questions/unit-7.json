@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-csa-u7-mcq-1",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "easy",
+    "stem": "Which import statement is needed to use ArrayList in Java?",
+    "choices": [
+      { "label": "A", "text": "import java.util.ArrayList;", "isCorrect": true, "explanation": "ArrayList is part of the java.util package and must be imported from there." },
+      { "label": "B", "text": "import java.io.ArrayList;", "isCorrect": false, "explanation": "java.io is for input/output classes, not collections like ArrayList." },
+      { "label": "C", "text": "import java.lang.ArrayList;", "isCorrect": false, "explanation": "java.lang is automatically imported but does not contain ArrayList." },
+      { "label": "D", "text": "No import is needed", "isCorrect": false, "explanation": "ArrayList must be explicitly imported from java.util unless you use its fully qualified name." }
+    ],
+    "explanation": "`ArrayList` lives in `java.util`, so it must be imported with `import java.util.ArrayList;`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-2",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "easy",
+    "stem": "Which correctly creates an empty ArrayList of Strings?",
+    "choices": [
+      { "label": "A", "text": "ArrayList<String> list = new ArrayList<String>();", "isCorrect": true, "explanation": "This declares list as an ArrayList of Strings and initializes it with a new, empty ArrayList." },
+      { "label": "B", "text": "ArrayList list = new String();", "isCorrect": false, "explanation": "This reverses the type/constructor, using String's constructor instead of ArrayList's." },
+      { "label": "C", "text": "String list = new ArrayList();", "isCorrect": false, "explanation": "This assigns an ArrayList to a String-typed variable, which is backwards and a type mismatch." },
+      { "label": "D", "text": "ArrayList<String> list = new String[10];", "isCorrect": false, "explanation": "This attempts to assign an array to an ArrayList variable, which is a type mismatch." }
+    ],
+    "explanation": "`ArrayList<String> list = new ArrayList<String>();` correctly declares and creates an empty ArrayList of Strings.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-3",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "medium",
+    "stem": "Why can't an ArrayList store primitive types like int directly?",
+    "choices": [
+      { "label": "A", "text": "ArrayLists can only ever be empty", "isCorrect": false, "explanation": "ArrayLists can certainly hold elements; this doesn't explain the primitive/object distinction." },
+      { "label": "B", "text": "ArrayLists store objects, so primitives are automatically autoboxed into their wrapper class (e.g. int becomes Integer)", "isCorrect": true, "explanation": "ArrayList is a generic class designed to hold objects, so Java automatically converts primitives to their wrapper type." },
+      { "label": "C", "text": "It's not true; ArrayLists store primitives directly with no conversion", "isCorrect": false, "explanation": "ArrayLists genuinely only store objects; primitives are converted (autoboxed) into wrapper objects." },
+      { "label": "D", "text": "ArrayLists are only for Strings", "isCorrect": false, "explanation": "ArrayLists can hold any object type, not just Strings." }
+    ],
+    "explanation": "`ArrayList` only stores objects, so primitives like `int` are autoboxed into their wrapper class (`Integer`).",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-4",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "medium",
+    "stem": "What does `list.size()` return for an ArrayList?",
+    "choices": [
+      { "label": "A", "text": "The maximum capacity of the list", "isCorrect": false, "explanation": "ArrayLists grow dynamically and don't expose a fixed \"capacity\" this way; size() reflects actual contents." },
+      { "label": "B", "text": "The number of elements currently in the list", "isCorrect": true, "explanation": "size() returns a count of how many elements are actually stored in the list right now." },
+      { "label": "C", "text": "The index of the last element", "isCorrect": false, "explanation": "size() gives the COUNT of elements, which is one more than the last valid index." },
+      { "label": "D", "text": "Always 0", "isCorrect": false, "explanation": "size() reflects the actual number of elements currently stored, not always 0." }
+    ],
+    "explanation": "`size()` returns the current number of elements stored in the ArrayList.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-5",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nArrayList<Integer> list = new ArrayList<Integer>();\nSystem.out.println(list.size());\n```",
+    "choices": [
+      { "label": "A", "text": "0", "isCorrect": true, "explanation": "A newly created ArrayList has no elements, so size() returns 0." },
+      { "label": "B", "text": "1", "isCorrect": false, "explanation": "A newly created, empty ArrayList has no elements, so size() is 0, not 1." },
+      { "label": "C", "text": "null", "isCorrect": false, "explanation": "size() returns an int, never null." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid Java code that compiles and runs correctly." }
+    ],
+    "explanation": "A freshly created, empty ArrayList has `size()` equal to `0`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-6",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nArrayList<String> list = new ArrayList<String>();\nlist.add(\"a\");\nlist.add(\"b\");\nSystem.out.println(list);\n```",
+    "choices": [
+      { "label": "A", "text": "[a, b]", "isCorrect": true, "explanation": "ArrayList's default toString format lists elements comma-separated inside square brackets." },
+      { "label": "B", "text": "a, b", "isCorrect": false, "explanation": "ArrayList's default toString format wraps elements in square brackets: [a, b]." },
+      { "label": "C", "text": "{a, b}", "isCorrect": false, "explanation": "Curly braces are not the format ArrayList uses when printed." },
+      { "label": "D", "text": "ab", "isCorrect": false, "explanation": "Elements are separated by \", \" and enclosed in brackets, not concatenated directly." }
+    ],
+    "explanation": "Printing an ArrayList directly uses its built-in `toString()`, which produces `[a, b]`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-7",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "medium",
+    "stem": "Which type parameter correctly declares an ArrayList meant to hold `double` values?",
+    "choices": [
+      { "label": "A", "text": "ArrayList<double> list;", "isCorrect": false, "explanation": "Generic type parameters must be reference types (classes), not primitives like double." },
+      { "label": "B", "text": "ArrayList<Double> list;", "isCorrect": true, "explanation": "Double is the wrapper class for double, and generics require a reference type like this." },
+      { "label": "C", "text": "ArrayList<Decimal> list;", "isCorrect": false, "explanation": "\"Decimal\" is not the wrapper class for double in Java; \"Double\" is." },
+      { "label": "D", "text": "double[] list;", "isCorrect": false, "explanation": "This declares a primitive array, not an ArrayList." }
+    ],
+    "explanation": "Generics require a reference type, so an ArrayList of doubles uses the wrapper class: `ArrayList<Double>`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-8",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "easy",
+    "stem": "Which method adds an element to the end of an ArrayList?",
+    "choices": [
+      { "label": "A", "text": "add()", "isCorrect": true, "explanation": "Calling add(element) with a single argument appends that element to the end of the list." },
+      { "label": "B", "text": "insert()", "isCorrect": false, "explanation": "\"insert\" is not the ArrayList method name for adding to the end (though add(index, element) exists for inserting at a position)." },
+      { "label": "C", "text": "push()", "isCorrect": false, "explanation": "\"push\" is not a standard ArrayList method (that's associated with Stack/Deque)." },
+      { "label": "D", "text": "append()", "isCorrect": false, "explanation": "\"append\" is not the ArrayList method name; \"add\" is standard." }
+    ],
+    "explanation": "`add(element)` appends an element to the end of the ArrayList.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-9",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nArrayList<String> list = new ArrayList<String>();\nlist.add(\"x\");\nlist.add(\"y\");\nlist.add(\"z\");\nSystem.out.println(list.get(1));\n```",
+    "choices": [
+      { "label": "A", "text": "x", "isCorrect": false, "explanation": "Index 0 is \"x\", but get(1) accesses index 1." },
+      { "label": "B", "text": "y", "isCorrect": true, "explanation": "Index 1 in [\"x\", \"y\", \"z\"] holds \"y\"." },
+      { "label": "C", "text": "z", "isCorrect": false, "explanation": "Index 2 is \"z\", but get(1) accesses index 1." },
+      { "label": "D", "text": "IndexOutOfBoundsException", "isCorrect": false, "explanation": "Index 1 is a valid index for a list with 3 elements (valid indices are 0, 1, 2)." }
+    ],
+    "explanation": "`list.get(1)` retrieves the element at index 1, which is `\"y\"`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-10",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "medium",
+    "stem": "What does `list.remove(1)` do, given `list` is an `ArrayList<Integer>`?",
+    "choices": [
+      { "label": "A", "text": "Removes the element with the value 1", "isCorrect": false, "explanation": "remove(int index) removes by POSITION, not by value, when given an int argument." },
+      { "label": "B", "text": "Removes the element at index 1", "isCorrect": true, "explanation": "Passing an int to remove() treats it as an index and removes the element found there." },
+      { "label": "C", "text": "Removes the last element", "isCorrect": false, "explanation": "remove(1) removes the element at index 1 specifically, not necessarily the last element." },
+      { "label": "D", "text": "Removes all elements", "isCorrect": false, "explanation": "remove(1) only removes a single element, not the entire list." }
+    ],
+    "explanation": "`remove(int index)` removes the element at the given position, so `remove(1)` removes the element at index 1.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-11",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nArrayList<Integer> list = new ArrayList<Integer>();\nlist.add(10);\nlist.add(20);\nlist.add(30);\nlist.remove(1);\nSystem.out.println(list);\n```",
+    "choices": [
+      { "label": "A", "text": "[10, 20, 30]", "isCorrect": false, "explanation": "remove(1) does remove an element, so the list is no longer the original 3 elements." },
+      { "label": "B", "text": "[10, 30]", "isCorrect": true, "explanation": "remove(1) removes the element at index 1, which is 20, leaving [10, 30]." },
+      { "label": "C", "text": "[20, 30]", "isCorrect": false, "explanation": "This would remove 10 (index 0) rather than 20 (index 1), which is not what happened." },
+      { "label": "D", "text": "[10, 20]", "isCorrect": false, "explanation": "This would remove 30 (the last element) rather than 20 (index 1)." }
+    ],
+    "explanation": "`remove(1)` removes the element at index 1 (the value `20`), leaving `[10, 30]`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-12",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "medium",
+    "stem": "What does `list.set(0, \"new\")` do?",
+    "choices": [
+      { "label": "A", "text": "Adds \"new\" at the beginning, shifting other elements", "isCorrect": false, "explanation": "set() REPLACES an existing element; it does not shift other elements (add(index, element) inserts and shifts)." },
+      { "label": "B", "text": "Replaces the element at index 0 with \"new\"", "isCorrect": true, "explanation": "set(index, element) overwrites the element already at the given index with the new value." },
+      { "label": "C", "text": "Removes the element at index 0", "isCorrect": false, "explanation": "set() replaces a value; it does not remove an element." },
+      { "label": "D", "text": "Adds \"new\" to the end", "isCorrect": false, "explanation": "set() replaces the element at the SPECIFIED index, not the end." }
+    ],
+    "explanation": "`set(index, element)` replaces the element already at the given index with a new value.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-13",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nArrayList<String> list = new ArrayList<String>();\nlist.add(\"a\");\nlist.add(\"b\");\nlist.set(1, \"c\");\nSystem.out.println(list);\n```",
+    "choices": [
+      { "label": "A", "text": "[a, b]", "isCorrect": false, "explanation": "set(1, \"c\") does replace the element at index 1, so the list is no longer [a, b]." },
+      { "label": "B", "text": "[a, c]", "isCorrect": true, "explanation": "set(1, \"c\") replaces the element at index 1 (\"b\") with \"c\", giving [a, c]." },
+      { "label": "C", "text": "[a, b, c]", "isCorrect": false, "explanation": "set() replaces an existing element rather than adding a new one, so the list size stays at 2, not 3." },
+      { "label": "D", "text": "[c, b]", "isCorrect": false, "explanation": "set(1, \"c\") modifies index 1 (\"b\"), not index 0 (\"a\")." }
+    ],
+    "explanation": "`set(1, \"c\")` replaces `\"b\"` at index 1 with `\"c\"`, resulting in `[a, c]`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-14",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "medium",
+    "stem": "What does `list.contains(\"apple\")` return if `list` is an `ArrayList<String>` that does not include \"apple\"?",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": false, "explanation": "contains() only returns true if the specified element is actually present in the list." },
+      { "label": "B", "text": "false", "isCorrect": true, "explanation": "Since \"apple\" is not in the list, contains() correctly returns false." },
+      { "label": "C", "text": "-1", "isCorrect": false, "explanation": "contains() returns a boolean, not an index; indexOf() would return -1 for a missing element." },
+      { "label": "D", "text": "null", "isCorrect": false, "explanation": "contains() never returns null; it always returns a boolean." }
+    ],
+    "explanation": "`contains()` returns `false` when the specified element is not found in the list.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-15",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "medium",
+    "stem": "What does `list.indexOf(\"z\")` return if \"z\" is not found in `list`?",
+    "choices": [
+      { "label": "A", "text": "0", "isCorrect": false, "explanation": "0 would be a valid index, incorrectly implying \"z\" is the first element when it isn't present at all." },
+      { "label": "B", "text": "-1", "isCorrect": true, "explanation": "indexOf returns -1 as a sentinel value to indicate the element was not found." },
+      { "label": "C", "text": "null", "isCorrect": false, "explanation": "indexOf returns an int, never null." },
+      { "label": "D", "text": "It throws an exception", "isCorrect": false, "explanation": "indexOf does not throw an exception for a missing element; it simply returns -1." }
+    ],
+    "explanation": "`indexOf()` returns `-1` when the element is not present in the list.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-16",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "easy",
+    "stem": "Which loop correctly prints every element of `ArrayList<String> list`?",
+    "choices": [
+      { "label": "A", "text": "for (int i = 0; i < list.size(); i++) { System.out.println(list.get(i)); }", "isCorrect": true, "explanation": "This correctly uses size() as the bound and get(i) to access each element from index 0 up to (not including) size()." },
+      { "label": "B", "text": "for (int i = 0; i < list.length; i++) { System.out.println(list.get(i)); }", "isCorrect": false, "explanation": "ArrayList uses size(), not a length field (that's for arrays); list.length causes a compile error." },
+      { "label": "C", "text": "for (int i = 0; i <= list.size(); i++) { System.out.println(list.get(i)); }", "isCorrect": false, "explanation": "Using <= list.size() causes an IndexOutOfBoundsException on the final iteration, since index == size() is invalid." },
+      { "label": "D", "text": "for (String s : list.size()) { System.out.println(s); }", "isCorrect": false, "explanation": "The enhanced for-loop should iterate directly over \"list\", not \"list.size()\"." }
+    ],
+    "explanation": "The standard traversal pattern for an ArrayList is `for (int i = 0; i < list.size(); i++)` with `list.get(i)`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-17",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nArrayList<Integer> list = new ArrayList<Integer>();\nlist.add(1);\nlist.add(2);\nlist.add(3);\nint sum = 0;\nfor (int i = 0; i < list.size(); i++) {\n    sum += list.get(i);\n}\nSystem.out.println(sum);\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "This is the number of elements, but sum should total their values." },
+      { "label": "B", "text": "6", "isCorrect": true, "explanation": "The loop accumulates 1 + 2 + 3 = 6, with each Integer auto-unboxing to int for the addition." },
+      { "label": "C", "text": "123", "isCorrect": false, "explanation": "sum += performs numeric addition here since sum and list.get(i) are numeric (Integer auto-unboxes), not string concatenation." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid Java code, with Integer auto-unboxing to int for the addition." }
+    ],
+    "explanation": "The loop sums the Integer elements (auto-unboxed to int): `1 + 2 + 3 = 6`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-18",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "medium",
+    "stem": "Which correctly uses an enhanced for-loop to print every element of `ArrayList<String> list`?",
+    "choices": [
+      { "label": "A", "text": "for (String s : list) { System.out.println(s); }", "isCorrect": true, "explanation": "This is the correct enhanced for-loop syntax: a variable, a colon, and the ArrayList to iterate over." },
+      { "label": "B", "text": "for (String s : list.get()) { System.out.println(s); }", "isCorrect": false, "explanation": "list.get() requires an index argument and isn't used this way in an enhanced for-loop; you iterate over \"list\" directly." },
+      { "label": "C", "text": "for (list : String s) { System.out.println(s); }", "isCorrect": false, "explanation": "This has the type/variable and list reversed compared to correct enhanced for-loop syntax." },
+      { "label": "D", "text": "for (String s = list) { System.out.println(s); }", "isCorrect": false, "explanation": "This isn't the correct enhanced for-loop syntax; it needs a colon, not an equals sign." }
+    ],
+    "explanation": "The enhanced for-loop iterates directly over the ArrayList: `for (String s : list)`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-19",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nArrayList<String> list = new ArrayList<String>();\nlist.add(\"cat\");\nlist.add(\"dog\");\nfor (int i = list.size() - 1; i >= 0; i--) {\n    System.out.print(list.get(i) + \" \");\n}\n```",
+    "choices": [
+      { "label": "A", "text": "cat dog ", "isCorrect": false, "explanation": "This loop iterates backward, from the last index to the first, so \"dog\" (last) prints before \"cat\"." },
+      { "label": "B", "text": "dog cat ", "isCorrect": true, "explanation": "Starting at index 1 (\"dog\") and going down to index 0 (\"cat\") prints them in reverse order." },
+      { "label": "C", "text": "catdog", "isCorrect": false, "explanation": "The loop body includes a space after each element, so words are not printed without separation." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid, well-formed Java code." }
+    ],
+    "explanation": "Traversing from `list.size() - 1` down to `0` visits the elements in reverse: `\"dog cat \"`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-20",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "medium",
+    "stem": "Why is removing elements from an ArrayList while traversing it with a forward indexed loop (`i++`) risky?",
+    "choices": [
+      { "label": "A", "text": "It's never risky and always works correctly", "isCorrect": false, "explanation": "This pattern is a well-known source of subtle bugs, specifically skipped elements." },
+      { "label": "B", "text": "Removing an element shifts all later elements down by one index, so the loop can skip the element that shifted into the removed spot", "isCorrect": true, "explanation": "After a removal, the element that shifts into the current index is never checked, since i still advances forward." },
+      { "label": "C", "text": "ArrayLists cannot have elements removed during a loop; it always crashes", "isCorrect": false, "explanation": "It doesn't necessarily crash (that depends on specifics); the more common issue is silently skipping elements." },
+      { "label": "D", "text": "It only works with ArrayLists of Strings", "isCorrect": false, "explanation": "This issue applies to ArrayLists of any type, not just Strings." }
+    ],
+    "explanation": "Removing an element shifts subsequent elements down by one, so a forward loop can skip an element that shifts into the just-vacated index.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-21",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nArrayList<Integer> list = new ArrayList<Integer>();\nlist.add(1);\nlist.add(2);\nlist.add(3);\nlist.add(4);\nfor (int i = 0; i < list.size(); i++) {\n    if (list.get(i) % 2 == 0) {\n        list.remove(i);\n    }\n}\nSystem.out.println(list);\n```",
+    "choices": [
+      { "label": "A", "text": "[1, 3]", "isCorrect": true, "explanation": "Tracing it: i=0 (1, odd, skip); i=1 (2, even, remove -> [1,3,4]); i=2 (now 4, even, remove -> [1,3]); i=3, loop ends since 3 >= list.size() (2). The 3 at index 1 is never re-checked, but it happens to be odd anyway, leaving [1, 3]." },
+      { "label": "B", "text": "[1, 3, 4]", "isCorrect": false, "explanation": "4 is even and does get removed in this trace once i reaches its shifted position, so it isn't simply left behind." },
+      { "label": "C", "text": "[]", "isCorrect": false, "explanation": "Not everything gets removed; specifically, 1 and 3 remain since they are odd and never satisfy the removal condition." },
+      { "label": "D", "text": "[2, 4]", "isCorrect": false, "explanation": "This is backwards -- the even numbers are the ones being removed, not kept." }
+    ],
+    "explanation": "Removing while traversing forward causes index-shifting: after removing 2 and then 4, the loop ends with `[1, 3]` -- a classic bug pattern.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-22",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "medium",
+    "stem": "What is printed?\n\n```java\nArrayList<Integer> list = new ArrayList<Integer>();\nlist.add(5);\nlist.add(10);\nlist.add(15);\nint count = 0;\nfor (int num : list) {\n    if (num > 8) {\n        count++;\n    }\n}\nSystem.out.println(count);\n```",
+    "choices": [
+      { "label": "A", "text": "1", "isCorrect": false, "explanation": "Two elements (10 and 15) are greater than 8, not just one." },
+      { "label": "B", "text": "2", "isCorrect": true, "explanation": "10 and 15 are both greater than 8, while 5 is not, so count ends at 2." },
+      { "label": "C", "text": "3", "isCorrect": false, "explanation": "Only 10 and 15 exceed 8; 5 does not." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "count is incremented for each qualifying element, so it doesn't stay 0." }
+    ],
+    "explanation": "Only `10` and `15` are greater than `8`, so `count` ends at `2`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-23",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "medium",
+    "stem": "What does this method compute?\n\n```java\npublic int countValue(ArrayList<Integer> list, int target) {\n    int count = 0;\n    for (int i = 0; i < list.size(); i++) {\n        if (list.get(i) == target) {\n            count++;\n        }\n    }\n    return count;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "The sum of all elements equal to target", "isCorrect": false, "explanation": "count is incremented by 1 (count++), not accumulated with the target's value." },
+      { "label": "B", "text": "The number of times target appears in list", "isCorrect": true, "explanation": "count tracks how many elements match target, incrementing once per match." },
+      { "label": "C", "text": "The index of target in list", "isCorrect": false, "explanation": "count tracks how many matches were found, not a specific position." },
+      { "label": "D", "text": "Whether target is in list", "isCorrect": false, "explanation": "This method returns an int count, not a boolean presence check." }
+    ],
+    "explanation": "This method counts how many elements in `list` are equal to `target`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-24",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "hard",
+    "stem": "What does `list.get(i) == target` risk when `list` is `ArrayList<Integer>` and the values might be outside the range -128 to 127?",
+    "choices": [
+      { "label": "A", "text": "Nothing; == always works correctly for comparing Integer content", "isCorrect": false, "explanation": "For Integer objects outside Java's small-integer cache range, == compares references, which can give surprising results." },
+      { "label": "B", "text": "For Integer values outside the cached range, == may compare object references instead of values, giving incorrect results", "isCorrect": true, "explanation": "Java caches small Integer objects, so == can happen to work for small values but fails to reliably compare content for larger ones -- .equals() should be used instead." },
+      { "label": "C", "text": "It always throws a compile error", "isCorrect": false, "explanation": "This is valid, compiling code; the concern is a runtime behavior nuance, not a compile error." },
+      { "label": "D", "text": "It only works for ArrayLists of Strings", "isCorrect": false, "explanation": "This concern relates to Integer autoboxing/caching specifically, unrelated to Strings." }
+    ],
+    "explanation": "Comparing boxed `Integer` values with `==` risks comparing object references rather than numeric content outside the cached range; `.equals()` is the safe choice.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-25",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "medium",
+    "stem": "What does this method compute for `list = [3, 7, 2, 9]`?\n\n```java\npublic int findMax(ArrayList<Integer> list) {\n    int max = list.get(0);\n    for (int i = 1; i < list.size(); i++) {\n        if (list.get(i) > max) {\n            max = list.get(i);\n        }\n    }\n    return max;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "This is only the first element; a larger element (9) appears later and updates max." },
+      { "label": "B", "text": "7", "isCorrect": false, "explanation": "7 is not the largest value; 9 is larger and replaces it as max." },
+      { "label": "C", "text": "9", "isCorrect": true, "explanation": "Tracing max through [3, 7, 2, 9]: it updates to 7, then stays 7 at index 2, then updates to 9 at the last index." },
+      { "label": "D", "text": "2", "isCorrect": false, "explanation": "2 is smaller than the running max at every point, so it never becomes the new max." }
+    ],
+    "explanation": "This is the standard running-maximum pattern applied to an ArrayList; `max` ends at `9`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-26",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "medium",
+    "stem": "What does this method do?\n\n```java\npublic void removeAllNegatives(ArrayList<Integer> list) {\n    for (int i = list.size() - 1; i >= 0; i--) {\n        if (list.get(i) < 0) {\n            list.remove(i);\n        }\n    }\n}\n```",
+    "choices": [
+      { "label": "A", "text": "Removes all negative numbers safely, because it traverses backward, avoiding the index-shifting bug", "isCorrect": true, "explanation": "Since removing an element only shifts elements AFTER the removed index, traversing backward means already-visited positions are unaffected." },
+      { "label": "B", "text": "Crashes every time it finds a negative number", "isCorrect": false, "explanation": "This method doesn't crash; removing while traversing backward is actually the safe pattern that avoids skipped elements." },
+      { "label": "C", "text": "Removes only the first negative number found", "isCorrect": false, "explanation": "The loop continues checking every remaining index, so it removes ALL negatives, not just the first." },
+      { "label": "D", "text": "Removes all elements regardless of sign", "isCorrect": false, "explanation": "The if condition specifically checks list.get(i) < 0, so only negative elements are removed." }
+    ],
+    "explanation": "Traversing backward while removing elements is the standard safe pattern, since each removal only affects indices after the current one.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-27",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "hard",
+    "stem": "Why does traversing backward (from `list.size() - 1` down to `0`) avoid the index-shifting bug that occurs when removing elements while traversing forward?",
+    "choices": [
+      { "label": "A", "text": "It doesn't actually avoid the bug", "isCorrect": false, "explanation": "Backward traversal genuinely does avoid this specific bug, which is why it's a recommended pattern." },
+      { "label": "B", "text": "Removing an element only shifts elements AFTER it; traversing backward means already-visited indices (before the removed one) are unaffected", "isCorrect": true, "explanation": "Since the loop is moving toward lower indices, any shifting caused by a removal only affects positions the loop hasn't reached yet or has already passed correctly." },
+      { "label": "C", "text": "Backward traversal never actually visits every element", "isCorrect": false, "explanation": "Backward traversal, done correctly (i from size()-1 down to 0), does visit every element exactly once." },
+      { "label": "D", "text": "ArrayLists cannot be traversed backward", "isCorrect": false, "explanation": "ArrayLists can absolutely be traversed backward using a decrementing indexed loop." }
+    ],
+    "explanation": "Removing an element only shifts later elements, so decrementing the index during backward traversal never skips an element.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-28",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "medium",
+    "stem": "What does this method compute for `list = [\"a\", \"bb\", \"ccc\"]`?\n\n```java\npublic int totalLength(ArrayList<String> list) {\n    int total = 0;\n    for (String s : list) {\n        total += s.length();\n    }\n    return total;\n}\n```",
+    "choices": [
+      { "label": "A", "text": "3", "isCorrect": false, "explanation": "3 is the number of elements, but total should be the sum of their lengths." },
+      { "label": "B", "text": "6", "isCorrect": true, "explanation": "The lengths are 1, 2, and 3, summing to 6." },
+      { "label": "C", "text": "\"abbccc\"", "isCorrect": false, "explanation": "This method returns a numeric total (int), not a concatenated String." },
+      { "label": "D", "text": "0", "isCorrect": false, "explanation": "total is updated inside the loop across all 3 elements, so it doesn't stay at 0." }
+    ],
+    "explanation": "The lengths of `\"a\"`, `\"bb\"`, and `\"ccc\"` sum to `1 + 2 + 3 = 6`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-29",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed?\n\n```java\nArrayList<String> list = new ArrayList<String>();\nlist.add(\"apple\");\nlist.add(\"kiwi\");\nlist.add(\"banana\");\nString longest = list.get(0);\nfor (String s : list) {\n    if (s.length() > longest.length()) {\n        longest = s;\n    }\n}\nSystem.out.println(longest);\n```",
+    "choices": [
+      { "label": "A", "text": "apple", "isCorrect": false, "explanation": "\"apple\" (5 letters) is shorter than \"banana\" (6 letters), which replaces it as the longest." },
+      { "label": "B", "text": "kiwi", "isCorrect": false, "explanation": "\"kiwi\" (4 letters) is the shortest of the three and never becomes longest." },
+      { "label": "C", "text": "banana", "isCorrect": true, "explanation": "\"banana\" has 6 letters, more than \"apple\" (5) or \"kiwi\" (4), so it ends up as the longest." },
+      { "label": "D", "text": "Compile error", "isCorrect": false, "explanation": "This is valid, well-formed Java code." }
+    ],
+    "explanation": "`\"banana\"` (6 characters) is longer than both `\"apple\"` (5) and `\"kiwi\"` (4), so it ends up stored in `longest`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-30",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "medium",
+    "stem": "What does `list.isEmpty()` return for an `ArrayList` with 0 elements?",
+    "choices": [
+      { "label": "A", "text": "true", "isCorrect": true, "explanation": "isEmpty() returns true when the list contains no elements, which is the case here." },
+      { "label": "B", "text": "false", "isCorrect": false, "explanation": "isEmpty() returns true specifically when the list has no elements, which is the case here." },
+      { "label": "C", "text": "0", "isCorrect": false, "explanation": "isEmpty() returns a boolean, not a numeric count." },
+      { "label": "D", "text": "null", "isCorrect": false, "explanation": "isEmpty() never returns null; it always returns a boolean." }
+    ],
+    "explanation": "`isEmpty()` returns `true` for a list containing zero elements.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  }
+]

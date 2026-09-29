@@ -12,5 +12,33 @@
     ],
     "sampleResponse": "```java\npublic double celsiusToFahrenheit(double celsius) {\n    double fahrenheit = celsius * 9.0 / 5.0 + 32;\n    return fahrenheit;\n}\n```",
     "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-frq-2",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "prompt": "Write a method named `averageOfThree` that takes three `int` parameters `a`, `b`, and `c` and returns their average as a `double`.\n\nComplete the method below.\n\n```java\npublic double averageOfThree(int a, int b, int c) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Sums all three parameters" },
+      { "id": "r2", "points": 1, "description": "Divides the sum using floating-point division (e.g. by 3.0), not integer division by 3" },
+      { "id": "r3", "points": 1, "description": "Returns the computed average" }
+    ],
+    "sampleResponse": "```java\npublic double averageOfThree(int a, int b, int c) {\n    double average = (a + b + c) / 3.0;\n    return average;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-frq-3",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "prompt": "Write a method named `computeTotalCost` that takes an `int` parameter `quantity` and a `double` parameter `unitPrice`, and returns the total cost as a `double` (quantity times unitPrice).\n\nComplete the method below.\n\n```java\npublic double computeTotalCost(int quantity, double unitPrice) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses both parameters in the calculation" },
+      { "id": "r2", "points": 1, "description": "Multiplies quantity by unitPrice (int * double widens automatically to double)" },
+      { "id": "r3", "points": 1, "description": "Returns the computed total cost" }
+    ],
+    "sampleResponse": "```java\npublic double computeTotalCost(int quantity, double unitPrice) {\n    double totalCost = quantity * unitPrice;\n    return totalCost;\n}\n```",
+    "reviewed": false
   }
 ]

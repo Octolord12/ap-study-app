@@ -1,0 +1,45 @@
+[
+  {
+    "id": "ap-csa-u8-frq-1",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "prompt": "Write a method named `sumGrid` that takes a 2D `int` array parameter `grid` and returns the sum of all its elements. For example, `sumGrid` called on `{{1, 2}, {3, 4}}` should return `10`.\n\nComplete the method below.\n\n```java\npublic int sumGrid(int[][] grid) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses nested loops to traverse every row and column of grid" },
+      { "id": "r2", "points": 1, "description": "Correctly accesses grid[r][c] and accumulates the running sum" },
+      { "id": "r3", "points": 1, "description": "Returns the correct total sum" }
+    ],
+    "sampleResponse": "```java\npublic int sumGrid(int[][] grid) {\n    int sum = 0;\n    for (int r = 0; r < grid.length; r++) {\n        for (int c = 0; c < grid[r].length; c++) {\n            sum += grid[r][c];\n        }\n    }\n    return sum;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-frq-2",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "prompt": "Write a method named `rowWithMaxSum` that takes a rectangular 2D `int` array parameter `grid` and returns the index of the row whose elements have the largest sum. For example, for `{{1, 2}, {10, 10}, {0, 1}}`, row 1 has the largest sum (20), so the method should return `1`.\n\nComplete the method below.\n\n```java\npublic int rowWithMaxSum(int[][] grid) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses nested loops to compute the sum of each row" },
+      { "id": "r2", "points": 1, "description": "Correctly resets and accumulates the running sum for the current row" },
+      { "id": "r3", "points": 1, "description": "Compares the current row's sum to the maximum found so far, updating both the max sum and the max row index when a larger sum is found" },
+      { "id": "r4", "points": 1, "description": "Returns the correct row index" }
+    ],
+    "sampleResponse": "```java\npublic int rowWithMaxSum(int[][] grid) {\n    int maxRow = 0;\n    int maxSum = Integer.MIN_VALUE;\n    for (int r = 0; r < grid.length; r++) {\n        int rowSum = 0;\n        for (int c = 0; c < grid[r].length; c++) {\n            rowSum += grid[r][c];\n        }\n        if (rowSum > maxSum) {\n            maxSum = rowSum;\n            maxRow = r;\n        }\n    }\n    return maxRow;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-frq-3",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "prompt": "Write a method named `diagonalSum` that takes a square 2D `int` array parameter `grid` (the same number of rows and columns) and returns the sum of the elements on its main diagonal (where the row index equals the column index). For example, `diagonalSum` called on `{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}` should return `15` (1 + 5 + 9).\n\nComplete the method below.\n\n```java\npublic int diagonalSum(int[][] grid) {\n    /* your code here */\n}\n```",
+    "pointValue": 3,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Uses a single loop from 0 to grid.length" },
+      { "id": "r2", "points": 1, "description": "Correctly accesses grid[i][i] for each i in the loop" },
+      { "id": "r3", "points": 1, "description": "Returns the correct sum" }
+    ],
+    "sampleResponse": "```java\npublic int diagonalSum(int[][] grid) {\n    int sum = 0;\n    for (int i = 0; i < grid.length; i++) {\n        sum += grid[i][i];\n    }\n    return sum;\n}\n```",
+    "reviewed": false
+  }
+]

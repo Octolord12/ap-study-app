@@ -13,5 +13,35 @@
     ],
     "sampleResponse": "```java\npublic int countMultiples(int limit, int factor) {\n    int count = 0;\n    for (int i = 1; i < limit; i++) {\n        if (i % factor == 0) {\n            count++;\n        }\n    }\n    return count;\n}\n```",
     "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-frq-2",
+    "unit": "unit-4-iteration",
+    "topic": "while-loops",
+    "prompt": "Write a method named `sumDigits` that takes a positive `int` parameter `n` and returns the sum of its digits, using a `while` loop. For example, `sumDigits(273)` should return `12` (2 + 7 + 3).\n\nComplete the method below.\n\n```java\npublic int sumDigits(int n) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares and initializes a sum accumulator to 0" },
+      { "id": "r2", "points": 1, "description": "Uses a while loop that continues while n > 0" },
+      { "id": "r3", "points": 1, "description": "Correctly extracts the last digit (e.g. n % 10) and adds it to the sum" },
+      { "id": "r4", "points": 1, "description": "Correctly removes the last digit each iteration (e.g. n /= 10) and returns the sum" }
+    ],
+    "sampleResponse": "```java\npublic int sumDigits(int n) {\n    int sum = 0;\n    while (n > 0) {\n        sum += n % 10;\n        n /= 10;\n    }\n    return sum;\n}\n```",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-frq-3",
+    "unit": "unit-4-iteration",
+    "topic": "nested-iteration",
+    "prompt": "Write a method named `countPairs` that takes an `int` parameter `n` and returns the number of pairs `(i, j)` where `1 <= i < j <= n`. For example, `countPairs(4)` should return `6`, for the pairs (1,2), (1,3), (1,4), (2,3), (2,4), and (3,4).\n\nComplete the method below.\n\n```java\npublic int countPairs(int n) {\n    /* your code here */\n}\n```",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Declares and initializes a counter variable to 0" },
+      { "id": "r2", "points": 1, "description": "Uses nested loops, an outer loop for i and an inner loop for j" },
+      { "id": "r3", "points": 1, "description": "The inner loop starts at i + 1 (or equivalent) so that i < j always holds, avoiding double-counting" },
+      { "id": "r4", "points": 1, "description": "Returns the correct final count" }
+    ],
+    "sampleResponse": "```java\npublic int countPairs(int n) {\n    int count = 0;\n    for (int i = 1; i <= n; i++) {\n        for (int j = i + 1; j <= n; j++) {\n            count++;\n        }\n    }\n    return count;\n}\n```",
+    "reviewed": false
   }
 ]
