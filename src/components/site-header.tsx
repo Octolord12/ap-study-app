@@ -15,7 +15,7 @@ export async function SiteHeader() {
         <Link href="/" className="font-bold tracking-tight">
           AP Study App
         </Link>
-        <nav className="flex items-center gap-4 text-sm">
+        <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm">
           {session?.user && stats ? (
             <>
               <Link href="/courses" className="text-muted-foreground hover:text-foreground">
@@ -24,6 +24,15 @@ export async function SiteHeader() {
               <Link href="/dashboard" className="text-muted-foreground hover:text-foreground">
                 Dashboard
               </Link>
+              <Link href="/friends" className="text-muted-foreground hover:text-foreground">
+                Friends
+              </Link>
+              <Link href="/classes" className="text-muted-foreground hover:text-foreground">
+                Classes
+              </Link>
+              <Link href="/settings" className="text-muted-foreground hover:text-foreground">
+                Settings
+              </Link>
               <span className="hidden items-center gap-2 text-xs font-medium text-muted-foreground sm:flex">
                 <span title={`Level ${stats.level}`}>🎓 Lvl {stats.level}</span>
                 {stats.currentStreak > 0 ? (
@@ -31,7 +40,7 @@ export async function SiteHeader() {
                 ) : null}
               </span>
               <SoundToggle />
-              <span className="text-muted-foreground">{session.user.name}</span>
+              <span className="hidden text-muted-foreground md:inline">{session.user.name}</span>
               <form action={logoutAction}>
                 <Button type="submit" variant="outline" size="sm">
                   Log out

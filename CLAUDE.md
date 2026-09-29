@@ -273,6 +273,60 @@ from the results array. If you're touching quiz-completion logic, keep this
 distinction (an array reaching its final length is not the same event as "the
 user has seen the last item").
 
+### Social (Milestone 6)
+
+`Class`/`ClassMembership`/`Friendship`/`User.leaderboardOptOut` were all
+already in the schema from Milestone 1 -- this milestone is pure feature work,
+no migration.
+
+- `src/lib/social/leaderboard.ts` — `rankLeaderboard(candidates)`, pure and
+  unit-tested: filters out opted-out users *entirely* (they don't occupy a
+  rank, they're not just hidden) and sorts by XP descending. The DB
+  aggregation that produces candidates (`src/lib/social/queries.ts`,
+  `computeLeaderboard`) is a thin wrapper — sums `XPEvent.amount` via Prisma's
+  `groupBy`, windowed to the last 7 days for "weekly" or unwindowed for
+  "all time." "Weekly" is a rolling 7-day window ending now, not a
+  calendar week — simpler than getting timezone/week-start right for a
+  one-family app at this scale.
+- `src/lib/social/invite-code.ts` — 6-character codes, alphabet deliberately
+  excludes `0/O/1/I/L` (visually ambiguous when read aloud or copied by hand).
+  `createClass` retries a few times on a collision before giving up.
+- **Both leaderboard scopes reuse the same query + `LeaderboardTable`
+  component**: `getFriendsLeaderboard` sums XP across the user + their
+  accepted friends, `getClassLeaderboard` across a class's members. The
+  week/all-time toggle is two plain `?period=` links, not client state — the
+  whole page is a Server Component.
+- Privacy default: leaderboards and member/friend lists always show
+  `username`, never `displayName` (which the signup form's "Your name" field
+  lets a student fill with anything, including a real name) — see the
+  `/settings` copy, which says this explicitly so it's not just an implicit
+  behavior.
+- **Anti-abuse**: `respondToFriendRequest` checks the *current* session user
+  is actually the request's addressee before accepting/declining (not just
+  "some logged-in user") — the obvious authorization hole to get right here.
+  `sendFriendRequest` blocks self-requests and duplicate requests in either
+  direction. Beyond that, the main anti-abuse property was already true
+  before this milestone and doesn't need anything new: XP is always computed
+  server-side from stored attempts (never trusted from the client — see
+  Milestone 5's `grantXpForActivity`), so leaderboard standings can't be
+  faked by a client sending a bogus XP number, because no such number is ever
+  accepted from a client anywhere in the app.
+
+**Not built**: unfriending, deleting/renaming a class, removing a member, or
+transferring class ownership. `leaveClass` exists for members but explicitly
+refuses to let an `OWNER` leave (would orphan the class) — noted in that
+function rather than silently allowed.
+
+**Compliance note for the owner** (not legally binding, just what to look
+into before this leaves the family): now that there's cross-user visibility
+(leaderboards, class rosters, friend requests by username), review COPPA
+before adding anyone under 13 as a user — friend requests and class rosters
+that expose a minor's chosen username to other users may count as
+"collection" under COPPA depending on what's visible to whom, even though no
+real names or contact info are shown. If a class is ever used in an actual
+school setting, FERPA and state student-privacy laws (e.g. California's
+SOPIPA) may also apply to how member lists and progress data are handled.
+
 ### Content pipeline (Milestone 2)
 
 `/content/<course-slug>/{course.json, units/*.json, questions/*.json, frqs/*.json}`
@@ -394,7 +448,17 @@ in app logic — updating them should be a data edit.
       a full 7-question boss battle (health bar draining, level-up mid-battle,
       victory screen, "Unit conquered" on the unit page, Boss Slayer + Unit
       Master badges), and the mute toggle.
-- [ ] **Milestone 6 — Social.** Friends, classes, leaderboards, anti-abuse checks.
+- [x] **Milestone 6 — Social.** Friend requests (send/accept/decline, with
+      server-side authorization on who can respond), classes with
+      generated invite codes, weekly (rolling 7-day) and all-time leaderboards
+      shared between friends/class scopes, a `/settings` page for the
+      leaderboard opt-out. No schema changes needed -- the models existed
+      since Milestone 1. 8 tests added (52 total). Verified end-to-end with
+      two real accounts: created a class and got an invite code, joined it
+      from the second account and saw the leaderboard rank both correctly,
+      sent/accepted a friend request across accounts, and confirmed opting
+      out actually removes a user from the leaderboard (not just visually)
+      while leaving them in the friends list.
 - [ ] **Milestone 7 — Content at scale.** Full starter banks (~30 MCQ + 3 FRQ
       per unit) for all four courses, validated, review workflow.
 - [ ] **Milestone 8 — Polish and launch prep.** Accessibility, mobile testing,
