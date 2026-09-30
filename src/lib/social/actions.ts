@@ -86,7 +86,10 @@ export async function sendFriendRequest(formData: FormData): Promise<void> {
   const username = (formData.get("username") as string)?.trim();
   if (!username) redirect("/friends?error=missing-username");
 
-  const target = await db.user.findUnique({ where: { username } });
+  // Case-insensitive: usernames are stored case-preserved (see auth/schema.ts),
+  // so an exact-case findUnique here would fail to find "JohnDoe" when someone
+  // searches "johndoe" -- a real bug caught during testing.
+  const target = await db.user.findFirst({ where: { username: { equals: username, mode: "insensitive" } } });
   if (!target) redirect(`/friends?error=not-found&username=${encodeURIComponent(username)}`);
   if (target.id === userId) redirect("/friends?error=self");
 

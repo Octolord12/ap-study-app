@@ -23,8 +23,12 @@ export async function signUpAction(_prevState: string | undefined, formData: For
   const { displayName, username, email, password } = parsed.data;
   const db = getDb();
 
+  // Username uniqueness is checked case-insensitively so two accounts can't
+  // register case-variant usernames (e.g. "JohnDoe" and "johndoe") -- that
+  // would make the friend-search lookup in social/actions.ts, which is
+  // deliberately case-insensitive, ambiguous.
   const existing = await db.user.findFirst({
-    where: { OR: [{ email }, { username }] },
+    where: { OR: [{ email }, { username: { equals: username, mode: "insensitive" } }] },
     select: { email: true, username: true },
   });
   if (existing) {

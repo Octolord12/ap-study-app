@@ -317,6 +317,20 @@ transferring class ownership. `leaveClass` exists for members but explicitly
 refuses to let an `OWNER` leave (would orphan the class) — noted in that
 function rather than silently allowed.
 
+**Bug found and fixed post-launch**: `sendFriendRequest` looked up the target
+by exact-case `username` (`findUnique`), but signup (`auth/schema.ts`) never
+normalizes case, so searching `johndoe` silently failed to find an account
+registered as `JohnDoe` ("No user found with that username" even though it
+exists) — reported by the owner while testing. Fixed by switching the lookup
+to `findFirst` with `mode: "insensitive"` (`src/lib/social/actions.ts`).
+Signup's own username-uniqueness check (`src/lib/auth/actions.ts`) got the
+same case-insensitive treatment, so two accounts can't register case-variant
+usernames (e.g. `JohnDoe` and `johndoe`) that would make the now-insensitive
+friend search ambiguous. Verified end-to-end with two scratch accounts
+(mixed-case and lowercase usernames, both cleaned up after): case-insensitive
+search found the target, request sent/appeared/accepted correctly, and both
+users showed up in each other's friends list and leaderboard.
+
 **Compliance note for the owner** (not legally binding, just what to look
 into before this leaves the family): now that there's cross-user visibility
 (leaderboards, class rosters, friend requests by username), review COPPA
