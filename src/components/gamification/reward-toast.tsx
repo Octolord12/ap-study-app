@@ -46,7 +46,7 @@ export function RewardToast({ reward, onDismiss }: { reward: Reward; onDismiss: 
       initial={shouldReduceMotion ? false : { opacity: 0, y: -12, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -12 }}
-      className="fixed top-4 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center gap-2"
+      className="fixed top-4 left-1/2 z-50 flex w-[calc(100vw-2rem)] max-w-xs -translate-x-1/2 flex-col items-center gap-2"
     >
       {reward.xpAwarded > 0 ? (
         <div className="rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background shadow-lg">

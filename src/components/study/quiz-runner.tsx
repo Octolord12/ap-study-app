@@ -2,10 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { recordAttempt } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { RewardToast, hasReward, type Reward } from "@/components/gamification/reward-toast";
+import { hasReward, type Reward } from "@/components/gamification/reward-toast";
+
+// framer-motion (RewardToast's only real dependency beyond React) is
+// dead weight on every quiz page load until a reward actually fires --
+// deferred here instead of bundled into this much more common code path.
+const RewardToast = dynamic(
+  () => import("@/components/gamification/reward-toast").then((m) => m.RewardToast),
+  { ssr: false },
+);
 import type { AttemptSource } from "@/generated/prisma/client";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";

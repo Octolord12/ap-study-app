@@ -1,10 +1,20 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { submitFrqAttempt, updateFrqGrade } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { RewardToast, hasReward, type Reward } from "@/components/gamification/reward-toast";
+import { hasReward, type Reward } from "@/components/gamification/reward-toast";
+
+// framer-motion (RewardToast's only real dependency beyond React) is
+// dead weight on every FRQ practice page load until a reward actually
+// fires -- deferred here instead of bundled into this much more common
+// code path.
+const RewardToast = dynamic(
+  () => import("@/components/gamification/reward-toast").then((m) => m.RewardToast),
+  { ssr: false },
+);
 
 export interface RubricLineView {
   id: string;

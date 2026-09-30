@@ -36,6 +36,16 @@ function formatTime(totalSeconds: number): string {
   return `${minutes}:${String(seconds).padStart(2, "0")}`;
 }
 
+// Only whole checkpoints get a message (null everywhere else) -- an
+// aria-live region that updated every second would spam screen readers with
+// the ticking countdown.
+function checkpointAnnouncement(secondsLeft: number): string | null {
+  if (secondsLeft <= 0) return "Time is up.";
+  if (secondsLeft <= 60 && secondsLeft % 10 === 0) return `${secondsLeft} seconds remaining.`;
+  if (secondsLeft > 60 && secondsLeft % 60 === 0) return `${Math.floor(secondsLeft / 60)} minutes remaining.`;
+  return null;
+}
+
 export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mcqItems, frqItems }: ExamRunnerProps) {
   const [index, setIndex] = useState(0);
   const [mcqAnswers, setMcqAnswers] = useState<Record<string, string>>({});
@@ -43,6 +53,7 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
   const [secondsLeft, setSecondsLeft] = useState(totalDurationMinutes * 60);
   const [submitting, setSubmitting] = useState(false);
   const submittingRef = useRef(false);
+  const [timeAnnouncement, setTimeAnnouncement] = useState("");
 
   const items = [...mcqItems, ...frqItems];
   const total = items.length;
@@ -78,6 +89,14 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
 
   const lowTime = secondsLeft <= 300; // last 5 minutes
 
+  // Render-phase state adjustment (React-sanctioned, not an effect): only
+  // updates when secondsLeft actually hits a checkpoint, so it doesn't
+  // cascade every second.
+  const checkpoint = checkpointAnnouncement(secondsLeft);
+  if (checkpoint !== null && checkpoint !== timeAnnouncement) {
+    setTimeAnnouncement(checkpoint);
+  }
+
   if (total === 0) {
     return (
       <Card>
@@ -94,6 +113,9 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
 
   return (
     <div className="space-y-3">
+      <span role="status" aria-live="polite" className="sr-only">
+        {timeAnnouncement}
+      </span>
       <div className="flex items-center justify-between text-sm">
         <span className="text-muted-foreground">
           {isFrq ? "FRQ" : "MCQ"} · Question {index + 1} of {total}

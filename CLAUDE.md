@@ -561,6 +561,99 @@ with an "Approve" button (`markQuestionReviewed`/`markFrqReviewed` in
 before running anything that writes to the DB directly, per the safety
 rules this session operates under).
 
+### Polish and launch prep (Milestone 8, in progress)
+
+Before scoping this milestone, investigated the actual current state of each
+area (two Explore agents plus direct verification) rather than assuming what
+was missing — several things that looked necessary turned out fine (viewport
+meta is already correct, Next injects it by default even with no explicit
+`viewport` export), while a few real gaps and two live bugs surfaced during
+manual testing.
+
+**Error handling**: `src/app/error.tsx`, `not-found.tsx`, and
+`global-error.tsx` added — none existed before, so any uncaught error (a
+failed Prisma call, an unauthenticated Server Action) fell through to
+Next's default, unstyled pages. `global-error.tsx` renders its own
+`<html>`/`<body>` per Next's convention (it replaces the root layout when
+the error originates there) and deliberately avoids the shared `Button`/
+`SiteHeader` — anything that could itself be part of what crashed.
+Investigated whether the duplicated `requireUserId()` in
+`study/actions.ts`/`social/actions.ts` (throws `Error("Not authenticated")`
+instead of the canonical `redirect("/login")` in `auth/session.ts`) was an
+accidental bug — it isn't: the comment in `auth/session.ts` documents this
+as deliberate ("redirect() isn't the right tool mid-mutation"). Left it
+alone; `error.tsx` now gives whatever it throws a graceful fallback instead
+of Next's raw default, without relitigating that decision.
+
+**Accessibility**: skip-to-content link in `layout.tsx` (`sr-only
+focus:not-sr-only`, jumps to a new `id="main-content"` on `<main>`). The
+exam countdown timer (`exam-runner.tsx`) gained a visually-hidden
+`aria-live="polite"` region -- deliberately *not* wired to update every
+second (would spam screen readers with the ticking countdown); a
+`checkpointAnnouncement()` helper only returns a message at whole-minute
+marks, then every 10s in the final minute, and the state update happens
+during render (comparing against the last announcement) rather than in a
+`useEffect`, to satisfy the `react-hooks/set-state-in-effect` lint rule
+without cascading renders.
+
+**Mobile testing**: walked the golden path (signup → courses → dashboard →
+unit → quiz → exam → friends → classes) at the Browser pane's mobile
+preset (375px) and found two real bugs, not just theoretical risks:
+1. The header (`site-header.tsx`) had no mobile nav pattern at all -- at
+   375px the "AP Study App" wordmark wrapped onto 3 lines and the 5 nav
+   links wrapped ungracefully, since the only mobile handling was
+   `flex-wrap`. Fixed with a proper hamburger menu
+   (`site-header-mobile-nav.tsx`, a small client component using
+   `lucide-react`'s `Menu`/`X` icons, already an installed-but-unused
+   dependency) that shows a vertical dropdown below `sm:`, and keeps the
+   original row layout at `sm:` and above.
+2. The mobile menu didn't auto-close after tapping a nav link, since
+   `SiteHeader` lives in the persistent root layout and doesn't remount on
+   client-side navigation -- the menu would stay open, covering the page
+   just navigated to. Fixed by comparing `usePathname()` against the last-
+   seen pathname and closing the menu when it changes -- again during
+   render (not a `useEffect`) for the same lint reason as the exam timer.
+
+Also found the level/streak badge and username were needlessly hidden below
+`sm:`/`md:` (`hidden ... sm:flex` etc.) -- leftover from when the only
+mobile handling was wrapping in a cramped single row. Now that there's a
+proper dropdown with room to show everything, removed those hides.
+
+Preventive (not empirically triggered, but a real gap on inspection):
+`RewardToast`'s badge-earned card has no width constraint, and the longest
+badge description ("Get every attempted question in a unit correct", 46
+chars at `text-xs`) sits right at the edge of a 375px viewport with no
+margin for smaller phones. Added `w-[calc(100vw-2rem)] max-w-xs` to the
+toast's outer container so it can never exceed the viewport regardless of
+future badge copy.
+
+**Performance**: `renderContentToHtml` (`src/lib/content/render.ts`, the
+Shiki/KaTeX pipeline) wrapped in React's `cache()` for per-request
+memoization -- `render-quiz.ts` calls it once per stem, explanation, and
+choice explanation, per question, every request, and the same markdown
+always produces the same HTML, so re-running the full pipeline on a cache
+hit was pure waste. Cross-request caching (`unstable_cache`) would be a
+bigger win but needs invalidation handling on content re-seed; not pursued,
+consistent with not over-engineering for this app's scale. `RewardToast`
+(and its only real dependency, `framer-motion`) is now `next/dynamic`-
+imported with `ssr: false` from `quiz-runner.tsx` and `frq-self-grade.tsx`
+-- the two shared, high-traffic components that only pulled it in
+transitively (unlike `boss-battle-runner.tsx`, which uses `framer-motion`
+directly for its own health-bar animation and so gets no benefit from this).
+
+**README**: expanded from a stub deferring everything to CLAUDE.md into a
+proper feature list + tech stack summary + setup steps, while still
+pointing to CLAUDE.md as the single source of deep architecture/data-model
+detail.
+
+**Deployment**: investigated via `vercel env ls` / `vercel project
+inspect` before touching anything -- the Vercel project is linked but has
+never been deployed to production, `AUTH_SECRET` is not set in any Vercel
+environment (would break Auth.js in production), and no GitHub repo is
+connected (pushes don't auto-deploy). Each of these needs explicit
+owner sign-off before acting, since they touch the live Vercel project or
+change deploy behavior going forward -- not yet done as of this write-up.
+
 ## Verified AP course info (2026-27)
 
 Exam formats change almost every year — 3 of our 4 launch courses have had a
@@ -581,8 +674,9 @@ in app logic — updating them should be a data edit.
       Next.js/Tailwind/shadcn scaffold, Prisma schema, Neon Postgres provisioned
       and migrated, Auth.js wired (no UI yet), KaTeX + Shiki content rendering
       proven end-to-end, Vitest configured with passing tests, `next build`/`lint`/
-      `tsc` all clean. Vercel project linked (`ap-study-app`). GitHub repo not
-      yet created (see Known issues).
+      `tsc` all clean. Vercel project linked (`ap-study-app`). GitHub repo
+      created at [github.com/Octolord12/ap-study-app](https://github.com/Octolord12/ap-study-app)
+      (Milestone 7).
 - [x] **Milestone 2 — Content foundation.** Zod schema + pure, unit-tested
       validation rules (`src/lib/content/`), `validate-content`/`seed` scripts,
       sample AP CSA bank (2 units, 14 MCQs, 2 FRQs) authored, validated, and
@@ -657,10 +751,6 @@ in app logic — updating them should be a data edit.
 
 ## Known issues / follow-ups
 
-- **GitHub repo not yet created.** Neither `gh` nor Homebrew is installed on
-  this machine, so the repo couldn't be created non-interactively. Local git
-  history exists (`git log`); create the repo on github.com and add it as a
-  remote, or install `gh`/Homebrew and ask to retry.
 - **`npm audit` reports vulnerabilities** in `hono`/`mysql2` — both transitive
   dev dependencies of the `prisma` CLI itself (bundled tooling for databases/
   features we don't use), not runtime/production code. `npm audit fix --force`
