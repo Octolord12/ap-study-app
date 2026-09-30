@@ -3,6 +3,7 @@ import { getDb } from "@/lib/db";
 import { updateLeaderboardOptOut } from "@/lib/social/actions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ThemeSettings } from "@/components/theme/theme-settings";
 
 export default async function SettingsPage() {
   const userId = await requireUserId();
@@ -16,6 +17,8 @@ export default async function SettingsPage() {
   return (
     <div className="mx-auto w-full max-w-2xl px-6 py-10">
       <h1 className="mb-6 text-2xl font-bold tracking-tight">Settings</h1>
+
+      <ThemeSettings />
 
       <Card>
         <CardHeader>

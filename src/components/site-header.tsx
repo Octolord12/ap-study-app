@@ -4,6 +4,7 @@ import { logoutAction } from "@/lib/auth/actions";
 import { getUserGamificationStats } from "@/lib/gamification/queries";
 import { Button } from "@/components/ui/button";
 import { SoundToggle } from "@/components/gamification/sound-toggle";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { SiteHeaderMobileNav } from "@/components/site-header-mobile-nav";
 
 export async function SiteHeader() {
@@ -41,6 +42,7 @@ export async function SiteHeader() {
                 ) : null}
               </span>
               <SoundToggle />
+              <ThemeToggle />
               <span className="text-muted-foreground">{session.user.name}</span>
               <form action={logoutAction}>
                 <Button type="submit" variant="outline" size="sm">

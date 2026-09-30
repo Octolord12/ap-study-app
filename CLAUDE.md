@@ -677,6 +677,57 @@ created one real test account (`deploy-smoketest@example.com` / username
 `deploy_smoketest`) in the shared Neon database -- harmless, but worth
 knowing it's there if the user list ever looks unfamiliar.
 
+## Appearance: color themes and dark mode (post-launch)
+
+The original UI shipped in the shadcn default grayscale palette (`--primary`
+etc. all `oklch(... 0 0)`, zero chroma). The owner asked for color, reviewed 4
+mockups (a Design canvas Artifact), and picked all 4 to ship as
+user-selectable themes, plus a light/dark toggle -- **Fresh Mint, light** is
+the product default (not the old grayscale, which no longer exists).
+
+- **4 themes × 2 modes = 8 palettes**, defined as CSS custom properties in
+  `globals.css`: Fresh Mint (teal/coral, the default -- lives directly in
+  `:root`/`.dark` rather than behind an attribute selector, so the app still
+  renders correctly before the theme store hydrates or with JS disabled),
+  Sunrise (warm coral/amber), Deep Study (navy/gold), Playground
+  (violet/pink) -- the latter 3 override via `[data-color-theme="..."]` /
+  `.dark[data-color-theme="..."]` on `<html>`.
+- **State**: `src/lib/theme/theme-store.ts`, a zustand `persist` store
+  (`colorTheme`, `mode`), same pattern and same reasoning as
+  `sound-store.ts` -- per-device localStorage preference, never server
+  state, key `ap-study-app:theme`.
+- **No flash of the wrong theme on load**: a `next/script`
+  `strategy="beforeInteractive"` tag in `layout.tsx`
+  (`src/lib/theme/inline-script.ts`) reads that same localStorage key and
+  paints `<html>`'s `class`/`data-color-theme` before hydration; `<html>`
+  needs `suppressHydrationWarning` since this is an intentional DOM mutation
+  React didn't render. `src/components/theme/theme-sync.tsx` (mounted once
+  in the root layout) takes over from there, applying the store's state to
+  `<html>` on every subsequent change (toggle, settings picker) -- gated on
+  a `hasHydrated` flag so it never overwrites the inline script's correct
+  initial paint with the store's not-yet-rehydrated default.
+- **UI**: a header icon toggle (`theme-toggle.tsx`, next to the existing
+  `SoundToggle`) for quick light/dark switching, and a full "Appearance"
+  card on `/settings` (`theme-settings.tsx`) with a mode segmented control
+  and 4 theme swatches -- this is the "settings menu" the owner asked for.
+- **Bug found and fixed while building this**: `onRehydrateStorage`'s
+  callback threw `ReferenceError: Cannot access 'useThemeStore' before
+  initialization` every time -- it referenced the outer `useThemeStore`
+  const to call `.setState()`, but for synchronous storage (localStorage),
+  zustand's persist rehydration completes *inside* the `create()` call
+  itself, before that `const` assignment finishes. Net effect: `hasHydrated`
+  silently never became `true`, so `ThemeSync` never applied any live
+  change -- the toggle/settings picker updated localStorage correctly but
+  the page didn't visually update until a hard reload. Only surfaced by
+  checking actual DOM state after a click, not just the screenshot (which
+  looked unchanged either way) or localStorage (which was already correct).
+  Fixed by following zustand's own documented pattern: a `setHasHydrated`
+  store action, called via the live store instance zustand passes as
+  `onRehydrateStorage`'s callback argument, never the outer const.
+  Verified end-to-end after the fix: fresh page load in each of the 8
+  palettes (no flash), the header toggle and the settings picker both
+  updating the page live, and the choice persisting across a hard reload.
+
 ## Verified AP course info (2026-27)
 
 Exam formats change almost every year — 3 of our 4 launch courses have had a
