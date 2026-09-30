@@ -561,7 +561,7 @@ with an "Approve" button (`markQuestionReviewed`/`markFrqReviewed` in
 before running anything that writes to the DB directly, per the safety
 rules this session operates under).
 
-### Polish and launch prep (Milestone 8, in progress)
+### Polish and launch prep (Milestone 8, done)
 
 Before scoping this milestone, investigated the actual current state of each
 area (two Explore agents plus direct verification) rather than assuming what
@@ -646,13 +646,22 @@ proper feature list + tech stack summary + setup steps, while still
 pointing to CLAUDE.md as the single source of deep architecture/data-model
 detail.
 
-**Deployment**: investigated via `vercel env ls` / `vercel project
-inspect` before touching anything -- the Vercel project is linked but has
-never been deployed to production, `AUTH_SECRET` is not set in any Vercel
-environment (would break Auth.js in production), and no GitHub repo is
-connected (pushes don't auto-deploy). Each of these needs explicit
-owner sign-off before acting, since they touch the live Vercel project or
-change deploy behavior going forward -- not yet done as of this write-up.
+**Deployment — done.** Investigated via `vercel env ls` / `vercel project
+inspect` before touching anything (see above), then got explicit owner
+sign-off before each Vercel-touching step: generated a real `AUTH_SECRET`
+and added it to all three Vercel environments (`vercel env add ... --value`,
+non-interactive), connected the GitHub repo (`vercel git connect`, pushes to
+`main` now auto-deploy), and triggered the first production deployment
+(`vercel deploy --prod`). Live at
+[ap-study-app-pi.vercel.app](https://ap-study-app-pi.vercel.app). Smoke-tested
+end-to-end on the production URL itself (not just locally): signup, session
+cookie/`session.user.id` (the exact thing the `jwt`/`session` callbacks
+gotcha above is about), reading the seeded course/unit/question data,
+answering and submitting a quiz question, and the XP/badge/reward-toast path
+all confirmed working against the real production build and database. This
+created one real test account (`deploy-smoketest@example.com` / username
+`deploy_smoketest`) in the shared Neon database -- harmless, but worth
+knowing it's there if the user list ever looks unfamiliar.
 
 ## Verified AP course info (2026-27)
 
@@ -746,8 +755,25 @@ in app logic — updating them should be a data edit.
       and free-body diagrams the markdown pipeline couldn't render. All four
       courses seeded and validated. Admin review UI built (`/admin/review`),
       covering all four courses.
-- [ ] **Milestone 8 — Polish and launch prep.** Accessibility, mobile testing,
-      performance, error handling, deployment, README.
+- [x] **Milestone 8 — Polish and launch prep.** Investigated actual current
+      state before scoping rather than assuming (viewport meta was already
+      correct; the duplicated `requireUserId()` in Server Actions turned out
+      to be a deliberate design decision, not a bug). Error handling
+      (`error.tsx`/`not-found.tsx`/`global-error.tsx`, none existed before).
+      Accessibility (skip-to-content link, checkpoint-based `aria-live` on
+      the exam timer). Mobile testing found and fixed two real bugs during a
+      golden-path walkthrough at 375px (no mobile nav pattern at all; the
+      new mobile menu not auto-closing after navigation) plus a defensive
+      reward-toast width fix. Performance (`renderContentToHtml` wrapped in
+      React's `cache()`; `RewardToast`/`framer-motion` `next/dynamic`-
+      imported from its two transitive-only consumers). README expanded
+      from a stub into a proper feature list + setup guide. Deployed to
+      production on Vercel (`AUTH_SECRET` generated and set, GitHub repo
+      connected for auto-deploy, first deploy triggered) and smoke-tested
+      end-to-end on the live URL itself — signup, session, seeded content,
+      a full quiz question with XP/badge/reward-toast, all confirmed
+      working against the real production build and database. Live at
+      [ap-study-app-pi.vercel.app](https://ap-study-app-pi.vercel.app).
 
 ## Known issues / follow-ups
 

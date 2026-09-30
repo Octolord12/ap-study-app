@@ -4,6 +4,8 @@ A mobile-first, gamified web app for studying AP exams — built as a tool for
 one family, with four full launch courses (AP Computer Science A, AP World
 History: Modern, AP Calculus AB, AP Physics 1).
 
+**Live:** [ap-study-app-pi.vercel.app](https://ap-study-app-pi.vercel.app)
+
 ## Features
 
 - **Practice modes**: unit quizzes, custom quizzes (pick units/difficulty/
