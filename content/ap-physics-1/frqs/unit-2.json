@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-phys1-u2-frq-1",
+    "unit": "unit-2-dynamics",
+    "topic": "applications-of-newtons-second-law",
+    "prompt": "A 4 kg block sits on a frictionless incline angled at 30° above horizontal ($g=9.8\\text{ m/s}^2$).\n\n**(a)** List the forces acting on the block, and state the direction each one points relative to the incline.\n\n**(b)** Calculate the block's acceleration along the incline.\n\n**(c)** Calculate the normal force on the block.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly identifies the two forces (Normal force, perpendicular to the incline surface; Weight, straight down) with no friction (frictionless)" },
+      { "id": "r2", "points": 1, "description": "Correctly sets up a = g sin(θ) for the acceleration along a frictionless incline" },
+      { "id": "r3", "points": 1, "description": "Correctly computes the acceleration as approximately 4.9 m/s^2" },
+      { "id": "r4", "points": 1, "description": "Correctly computes the normal force as N = mg cos(θ) ≈ 33.9 N" }
+    ],
+    "sampleResponse": "(a) Two forces act on the block: the Normal force, perpendicular to (pointing away from) the incline surface, and the Weight, pointing straight down. Since the incline is frictionless, there is no friction force.\n(b) Along the incline, only the component of weight parallel to the surface matters: a = g sin(30°) = 9.8(0.5) = 4.9 m/s^2, directed down the incline.\n(c) Perpendicular to the incline, the block doesn't accelerate, so N = mg cos(30°) = (4)(9.8)(0.866) ≈ 33.9 N.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u2-frq-2",
+    "unit": "unit-2-dynamics",
+    "topic": "applications-of-newtons-second-law",
+    "prompt": "Two blocks, $m_1 = 6$ kg and $m_2 = 4$ kg, are connected by a light string over a frictionless, massless pulley (an Atwood machine), with $m_1$ hanging on one side and $m_2$ on the other ($g=9.8\\text{ m/s}^2$).\n\n**(a)** Calculate the magnitude of the system's acceleration.\n\n**(b)** Calculate the tension in the string.\n\n**(c)** Verify your tension from part (b) by applying Newton's Second Law to the other block ($m_1$) separately.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly sets up a = (m1-m2)g/(m1+m2) and computes a ≈ 1.96 m/s^2" },
+      { "id": "r2", "points": 1, "description": "Correctly applies Newton's Second Law to m2 (T - m2g = m2a, since m2 accelerates upward) to solve for T" },
+      { "id": "r3", "points": 1, "description": "Correctly computes T ≈ 47.0 N" },
+      { "id": "r4", "points": 1, "description": "Correctly verifies T using m1 (m1g - T = m1a, since m1 accelerates downward), arriving at the same T ≈ 47.0 N" }
+    ],
+    "sampleResponse": "(a) a = (m1-m2)g/(m1+m2) = (6-4)(9.8)/(6+4) = 19.6/10 = 1.96 m/s^2.\n(b) For m2 (accelerating upward): T - m2g = m2a, so T = m2(g+a) = 4(9.8+1.96) = 4(11.76) = 47.04 N.\n(c) For m1 (accelerating downward): m1g - T = m1a, so T = m1(g-a) = 6(9.8-1.96) = 6(7.84) = 47.04 N, matching part (b).",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u2-frq-3",
+    "unit": "unit-2-dynamics",
+    "topic": "applications-of-newtons-second-law",
+    "prompt": "A 5 kg box on a horizontal surface is pulled by a constant horizontal force of 25 N. The coefficient of kinetic friction between the box and surface is 0.25 ($g=9.8\\text{ m/s}^2$). The box starts from rest.\n\n**(a)** Calculate the normal force and the friction force on the box.\n\n**(b)** Calculate the box's acceleration.\n\n**(c)** Calculate the box's velocity after 4 seconds.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes N = mg = 49 N and friction f = μN = 12.25 N" },
+      { "id": "r2", "points": 1, "description": "Correctly computes the net force (25-12.25=12.75 N) and divides by mass to get a" },
+      { "id": "r3", "points": 1, "description": "Correctly computes a = 2.55 m/s^2" },
+      { "id": "r4", "points": 1, "description": "Correctly uses v=v0+at (v0=0) to find v = 10.2 m/s at t=4s" }
+    ],
+    "sampleResponse": "(a) N = mg = (5)(9.8) = 49 N. Friction: f = μN = (0.25)(49) = 12.25 N.\n(b) Net force = 25 - 12.25 = 12.75 N. a = F_net/m = 12.75/5 = 2.55 m/s^2.\n(c) v = v0 + at = 0 + (2.55)(4) = 10.2 m/s.",
+    "reviewed": false
+  }
+]

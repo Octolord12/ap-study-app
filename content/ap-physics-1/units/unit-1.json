@@ -1,0 +1,13 @@
+{
+  "slug": "unit-1-kinematics",
+  "order": 1,
+  "name": "Kinematics",
+  "weightingMin": 10,
+  "weightingMax": 15,
+  "topics": [
+    { "slug": "position-velocity-acceleration", "order": 1, "name": "Position, Velocity, and Acceleration" },
+    { "slug": "representations-of-motion", "order": 2, "name": "Graphical Representations of Motion" },
+    { "slug": "kinematic-equations", "order": 3, "name": "Kinematic Equations for Constant Acceleration" },
+    { "slug": "projectile-motion", "order": 4, "name": "Projectile Motion" }
+  ]
+}

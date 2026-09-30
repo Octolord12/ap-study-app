@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-phys1-u8-mcq-1",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "easy",
+    "stem": "What is the definition of density?",
+    "choices": [
+      { "label": "A", "text": "Mass per unit volume: $\\rho = m/V$", "isCorrect": true, "explanation": "Density is defined as mass divided by volume." },
+      { "label": "B", "text": "Weight per unit area", "isCorrect": false, "explanation": "This describes something closer to pressure due to weight, not density -- density is specifically mass per unit VOLUME." },
+      { "label": "C", "text": "Volume per unit mass", "isCorrect": false, "explanation": "This is the inverse of density (specific volume), not density itself." },
+      { "label": "D", "text": "Force per unit mass", "isCorrect": false, "explanation": "This describes something like gravitational field strength, not density." }
+    ],
+    "explanation": "Density is mass per unit volume: ρ = m/V.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-2",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "medium",
+    "stem": "A sample of liquid has a mass of 500 g and a volume of 200 cm³. What is its density?",
+    "choices": [
+      { "label": "A", "text": "2.5 g/cm^3", "isCorrect": true, "explanation": "ρ = m/V = 500/200 = 2.5 g/cm³." },
+      { "label": "B", "text": "0.4 g/cm^3", "isCorrect": false, "explanation": "This incorrectly divides volume by mass rather than mass by volume." },
+      { "label": "C", "text": "700 g/cm^3", "isCorrect": false, "explanation": "This adds mass and volume rather than dividing them." },
+      { "label": "D", "text": "100,000 g/cm^3", "isCorrect": false, "explanation": "This incorrectly multiplies mass and volume rather than dividing them." }
+    ],
+    "explanation": "ρ = m/V = 500/200 = 2.5 g/cm³.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-3",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "easy",
+    "stem": "What is the definition of pressure?",
+    "choices": [
+      { "label": "A", "text": "Force per unit area: $P = F/A$", "isCorrect": true, "explanation": "Pressure is defined as force divided by the area over which it's applied." },
+      { "label": "B", "text": "Mass per unit volume", "isCorrect": false, "explanation": "This is the definition of DENSITY, not pressure." },
+      { "label": "C", "text": "Force multiplied by area", "isCorrect": false, "explanation": "Pressure is force DIVIDED by area, not multiplied by it." },
+      { "label": "D", "text": "Force per unit time", "isCorrect": false, "explanation": "This isn't a standard physical quantity relevant here -- pressure specifically relates force to area, not time." }
+    ],
+    "explanation": "Pressure is P = F/A, force per unit area.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-4",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "medium",
+    "stem": "A force of 200 N is applied over an area of 0.5 m². What is the resulting pressure?",
+    "choices": [
+      { "label": "A", "text": "400 Pa", "isCorrect": true, "explanation": "P = F/A = 200/0.5 = 400 Pa." },
+      { "label": "B", "text": "100 Pa", "isCorrect": false, "explanation": "This incorrectly multiplies force and area rather than dividing force by area." },
+      { "label": "C", "text": "0.0025 Pa", "isCorrect": false, "explanation": "This incorrectly divides area by force rather than force by area." },
+      { "label": "D", "text": "200.5 Pa", "isCorrect": false, "explanation": "This adds force and area rather than dividing them." }
+    ],
+    "explanation": "P = F/A = 200/0.5 = 400 Pa.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-5",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "medium",
+    "stem": "How does pressure in a fluid relate to depth?",
+    "choices": [
+      { "label": "A", "text": "$P = P_0 + \\rho g h$, where $P_0$ is the pressure at the surface, ρ is the fluid's density, and h is the depth", "isCorrect": true, "explanation": "This is the standard hydrostatic pressure formula, accounting for the weight of fluid above a given depth." },
+      { "label": "B", "text": "Pressure is the same at every depth in a fluid", "isCorrect": false, "explanation": "Pressure increases with depth, due to the added weight of fluid above -- it is NOT constant with depth." },
+      { "label": "C", "text": "Pressure decreases with increasing depth", "isCorrect": false, "explanation": "This is backward -- pressure INCREASES (not decreases) with depth, due to the weight of fluid above pressing down." },
+      { "label": "D", "text": "Pressure depends only on the total volume of fluid, not depth", "isCorrect": false, "explanation": "Pressure at a point specifically depends on the depth (and fluid density), not simply the total volume of the fluid container." }
+    ],
+    "explanation": "Hydrostatic pressure: P = P0 + ρgh, increasing with depth.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-6",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "hard",
+    "stem": "What is the gauge pressure (pressure above atmospheric) at a depth of 5 m in water ($\\rho=1000\\text{ kg/m}^3$, $g=9.8\\text{ m/s}^2$)?",
+    "choices": [
+      { "label": "A", "text": "49,000 Pa", "isCorrect": true, "explanation": "Gauge pressure = ρgh = (1000)(9.8)(5) = 49,000 Pa." },
+      { "label": "B", "text": "5,000 Pa", "isCorrect": false, "explanation": "This doesn't correctly multiply density, g, and depth together." },
+      { "label": "C", "text": "9,800 Pa", "isCorrect": false, "explanation": "This is just ρg, without multiplying by the depth h=5m." },
+      { "label": "D", "text": "1,000 Pa", "isCorrect": false, "explanation": "This is just the density value, not the correctly computed pressure." }
+    ],
+    "explanation": "Gauge pressure = ρgh = (1000)(9.8)(5) = 49,000 Pa.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-7",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "medium",
+    "stem": "Why does pressure increase with depth in a fluid?",
+    "choices": [
+      { "label": "A", "text": "Because at greater depth, there is more fluid weighing down from above, adding to the pressure", "isCorrect": true, "explanation": "The additional fluid above a given depth contributes its weight, increasing the pressure at that depth." },
+      { "label": "B", "text": "Because fluid becomes denser automatically at greater depths", "isCorrect": false, "explanation": "For most simple problems, fluid density is treated as constant -- the pressure increase comes from the WEIGHT of fluid above, not the fluid becoming denser." },
+      { "label": "C", "text": "Because temperature increases with depth", "isCorrect": false, "explanation": "Temperature changes aren't the reason for this pressure relationship -- it's specifically due to the weight of fluid above a given point." },
+      { "label": "D", "text": "There is no real reason -- it's simply an arbitrary rule", "isCorrect": false, "explanation": "There IS a clear physical reason: the added weight of fluid above a given depth directly causes the pressure increase." }
+    ],
+    "explanation": "Pressure increases with depth because more fluid (and its weight) lies above at greater depths.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-8",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "hard",
+    "stem": "Two containers of different shapes (one wide, one narrow) are filled with water to the same height. How do the pressures at the bottom of each container compare?",
+    "choices": [
+      { "label": "A", "text": "The pressures are equal, since pressure at a given depth depends only on the fluid's density, g, and depth -- not on the container's shape or width", "isCorrect": true, "explanation": "This is the \"hydrostatic paradox\": pressure at a given depth (P=P0+ρgh) depends only on depth, not the container's shape or total volume of fluid." },
+      { "label": "B", "text": "The wider container has greater pressure at the bottom, since it holds more total water", "isCorrect": false, "explanation": "Total amount of water (volume) doesn't determine the pressure at a specific depth -- only the height of fluid above that point matters." },
+      { "label": "C", "text": "The narrower container has greater pressure at the bottom", "isCorrect": false, "explanation": "Container width doesn't affect pressure at a given depth -- pressure depends only on depth, density, and g." },
+      { "label": "D", "text": "It's impossible to compare pressures between differently shaped containers", "isCorrect": false, "explanation": "The comparison IS possible, and the pressures turn out to be EQUAL, since pressure at a given depth is independent of container shape." }
+    ],
+    "explanation": "Pressure at a given depth depends only on depth, density, and g -- not on the container's shape (the \"hydrostatic paradox\").",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-9",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "easy",
+    "stem": "What does Pascal's Principle state?",
+    "choices": [
+      { "label": "A", "text": "A change in pressure applied to an enclosed fluid is transmitted equally to every point in the fluid and to the walls of its container", "isCorrect": true, "explanation": "This is the standard statement of Pascal's Principle." },
+      { "label": "B", "text": "Pressure only affects the point where a force is directly applied", "isCorrect": false, "explanation": "This is the OPPOSITE of Pascal's Principle -- pressure in an enclosed fluid is transmitted equally throughout, not confined to just the point of application." },
+      { "label": "C", "text": "Fluids cannot transmit pressure at all", "isCorrect": false, "explanation": "Fluids very much CAN and DO transmit pressure -- this is the entire basis of Pascal's Principle and hydraulic systems." },
+      { "label": "D", "text": "Pressure decreases as it moves through a fluid", "isCorrect": false, "explanation": "Pascal's Principle states pressure is transmitted EQUALLY (undiminished), not that it decreases as it moves through the fluid." }
+    ],
+    "explanation": "Pascal's Principle: pressure applied to an enclosed fluid is transmitted equally throughout the fluid.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-10",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "medium",
+    "stem": "In a hydraulic lift with two pistons of different areas, what relationship holds between the forces and areas at each piston?",
+    "choices": [
+      { "label": "A", "text": "$F_1/A_1 = F_2/A_2$ -- the pressure is the same at both pistons", "isCorrect": true, "explanation": "Since pressure is transmitted equally (Pascal's Principle), P1=P2, which gives F1/A1=F2/A2." },
+      { "label": "B", "text": "$F_1 = F_2$, regardless of the areas", "isCorrect": false, "explanation": "The FORCES are generally different (that's the whole point of a hydraulic lift) -- it's the PRESSURES (F/A) that are equal." },
+      { "label": "C", "text": "$A_1 = A_2$, regardless of the forces", "isCorrect": false, "explanation": "The hydraulic lift's two pistons typically have DIFFERENT areas -- that's what allows force multiplication." },
+      { "label": "D", "text": "There is no consistent relationship between force and area in a hydraulic system", "isCorrect": false, "explanation": "There IS a precise, consistent relationship (F1/A1=F2/A2), which is the entire basis for how hydraulic lifts work." }
+    ],
+    "explanation": "By Pascal's Principle, pressure is equal at both pistons: F1/A1 = F2/A2.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-11",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "hard",
+    "stem": "A hydraulic lift has a small piston of area $0.01\\text{ m}^2$ and a large piston of area $0.5\\text{ m}^2$. A force of 100 N is applied to the small piston. What force is produced at the large piston?",
+    "choices": [
+      { "label": "A", "text": "5000 N", "isCorrect": true, "explanation": "F2 = F1(A2/A1) = 100(0.5/0.01) = 100(50) = 5000 N." },
+      { "label": "B", "text": "100 N", "isCorrect": false, "explanation": "This ignores the area ratio entirely, assuming the forces are equal, which isn't the case in a hydraulic lift." },
+      { "label": "C", "text": "2 N", "isCorrect": false, "explanation": "This incorrectly inverts the area ratio (using A1/A2 instead of A2/A1)." },
+      { "label": "D", "text": "50 N", "isCorrect": false, "explanation": "This doesn't correctly compute the full force multiplication using both piston areas." }
+    ],
+    "explanation": "F2 = F1(A2/A1) = 100(0.5/0.01) = 5000 N.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-12",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "hard",
+    "stem": "A hydraulic lift multiplies force by a factor of 20 (large piston area is 20 times the small piston area). Does this mean the hydraulic lift produces \"free\" extra energy?",
+    "choices": [
+      { "label": "A", "text": "No -- while force is multiplied, the small piston must move 20 times farther than the large piston, so the work input still equals the work output (conservation of energy)", "isCorrect": true, "explanation": "Hydraulic lifts trade force for distance: the small piston moves a much larger distance to move the large piston a small distance, keeping work (Fd) equal on both sides." },
+      { "label": "B", "text": "Yes -- hydraulic lifts genuinely create extra energy from nothing", "isCorrect": false, "explanation": "This would violate conservation of energy -- hydraulic lifts don't create energy; they trade force for distance moved." },
+      { "label": "C", "text": "The lift produces extra energy, but only for very heavy loads", "isCorrect": false, "explanation": "Regardless of load size, hydraulic lifts never create net extra energy -- conservation of energy always holds." },
+      { "label": "D", "text": "Energy conservation doesn't apply to hydraulic systems", "isCorrect": false, "explanation": "Conservation of energy applies universally, including to hydraulic systems -- the force multiplication comes at the cost of increased distance moved on the input side." }
+    ],
+    "explanation": "No -- the small piston moves proportionally farther, so work input equals work output; force is gained at the cost of distance, not free energy.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-13",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "hard",
+    "stem": "In a hydraulic lift, the small piston (area $0.02\\text{ m}^2$) is pushed down 1 m. If the large piston has an area of $0.4\\text{ m}^2$, how far does the large piston move?",
+    "choices": [
+      { "label": "A", "text": "0.05 m", "isCorrect": true, "explanation": "Volume displaced is conserved: A1d1=A2d2, so d2 = A1d1/A2 = (0.02)(1)/0.4 = 0.05 m." },
+      { "label": "B", "text": "1 m", "isCorrect": false, "explanation": "This assumes the distances are equal, ignoring the different piston areas entirely." },
+      { "label": "C", "text": "20 m", "isCorrect": false, "explanation": "This inverts the correct ratio -- the large piston should move LESS (not more) than the small piston." },
+      { "label": "D", "text": "0.02 m", "isCorrect": false, "explanation": "This doesn't correctly apply A1d1=A2d2 using the given areas and distance." }
+    ],
+    "explanation": "By volume conservation: A1d1=A2d2, so d2 = (0.02)(1)/0.4 = 0.05 m -- the large piston moves much less than the small piston.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-14",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "medium",
+    "stem": "Why do hydraulic brake systems apply equal braking force to all four wheels of a car from a single pedal press?",
+    "choices": [
+      { "label": "A", "text": "Because the brake fluid is enclosed, and by Pascal's Principle the pressure applied at the pedal is transmitted equally through the fluid to each wheel's brake piston", "isCorrect": true, "explanation": "This is a direct, practical application of Pascal's Principle -- pressure transmitted equally through the enclosed brake fluid reaches every wheel." },
+      { "label": "B", "text": "Because each wheel has its own separate, unrelated braking mechanism", "isCorrect": false, "explanation": "The wheels' brakes are connected through a shared, enclosed hydraulic fluid system -- they aren't unrelated, independent mechanisms." },
+      { "label": "C", "text": "Because the car's computer calculates and sends an equal electronic signal to each wheel", "isCorrect": false, "explanation": "Traditional hydraulic brakes work through fluid pressure transmission (Pascal's Principle), not primarily through electronic computer signals." },
+      { "label": "D", "text": "It's a coincidence that braking force ends up equal at each wheel", "isCorrect": false, "explanation": "This isn't a coincidence -- it's a direct, reliable, and predictable consequence of Pascal's Principle applied to the enclosed hydraulic fluid." }
+    ],
+    "explanation": "Pascal's Principle: pressure from the pedal is transmitted equally through the enclosed brake fluid to every wheel.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-15",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "medium",
+    "stem": "A hydraulic system requires a mechanical advantage (force multiplication) of 10. If the small (input) piston has an area of $0.01\\text{ m}^2$, what must the large (output) piston's area be?",
+    "choices": [
+      { "label": "A", "text": "0.1 m^2", "isCorrect": true, "explanation": "The mechanical advantage equals A2/A1, so A2 = 10 × A1 = 10 × 0.01 = 0.1 m²." },
+      { "label": "B", "text": "0.001 m^2", "isCorrect": false, "explanation": "This divides rather than multiplies A1 by the desired mechanical advantage." },
+      { "label": "C", "text": "10 m^2", "isCorrect": false, "explanation": "This doesn't correctly scale A1 (0.01 m²) by the mechanical advantage factor of 10." },
+      { "label": "D", "text": "0.011 m^2", "isCorrect": false, "explanation": "This adds rather than multiplies A1 by the mechanical advantage." }
+    ],
+    "explanation": "Mechanical advantage = A2/A1, so A2 = 10 × 0.01 = 0.1 m².",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-16",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "easy",
+    "stem": "What does Archimedes' Principle state?",
+    "choices": [
+      { "label": "A", "text": "The buoyant force on a submerged (or floating) object equals the weight of the fluid it displaces", "isCorrect": true, "explanation": "This is the standard statement of Archimedes' Principle." },
+      { "label": "B", "text": "All objects float in any fluid, regardless of density", "isCorrect": false, "explanation": "Not all objects float -- whether an object floats or sinks depends on its density relative to the fluid's density." },
+      { "label": "C", "text": "The buoyant force equals the object's own weight, always", "isCorrect": false, "explanation": "Buoyant force equals the weight of DISPLACED FLUID, not necessarily the object's own weight (these are only equal for a floating object in equilibrium)." },
+      { "label": "D", "text": "Buoyant force only applies to objects made of wood", "isCorrect": false, "explanation": "Buoyant force applies to ANY object submerged in or floating on a fluid, regardless of material." }
+    ],
+    "explanation": "Archimedes' Principle: buoyant force equals the weight of fluid displaced by the object.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-17",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "medium",
+    "stem": "An object displaces $0.02\\text{ m}^3$ of water ($\\rho=1000\\text{ kg/m}^3$, $g=9.8\\text{ m/s}^2$). What is the buoyant force on the object?",
+    "choices": [
+      { "label": "A", "text": "196 N", "isCorrect": true, "explanation": "F_b = ρ_fluid·g·V_displaced = (1000)(9.8)(0.02) = 196 N." },
+      { "label": "B", "text": "19.6 N", "isCorrect": false, "explanation": "This is 10 times too small -- likely from a decimal placement error." },
+      { "label": "C", "text": "20 N", "isCorrect": false, "explanation": "This is just 1000×0.02=20, omitting the factor of g=9.8." },
+      { "label": "D", "text": "1960 N", "isCorrect": false, "explanation": "This is 10 times too large -- likely from a decimal placement error." }
+    ],
+    "explanation": "F_b = ρgV = (1000)(9.8)(0.02) = 196 N.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-18",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "medium",
+    "stem": "An object's average density is LESS than the fluid it's placed in. What happens to the object?",
+    "choices": [
+      { "label": "A", "text": "It floats, with only part of its volume submerged", "isCorrect": true, "explanation": "When average density is less than the fluid's density, the object floats, displacing just enough fluid so the buoyant force equals its weight." },
+      { "label": "B", "text": "It sinks completely to the bottom", "isCorrect": false, "explanation": "An object LESS dense than the fluid floats -- sinking happens when the object's density is GREATER than the fluid's." },
+      { "label": "C", "text": "It remains perfectly suspended at any random depth", "isCorrect": false, "explanation": "An object less dense than the fluid rises to the surface and floats, rather than staying suspended at an arbitrary depth." },
+      { "label": "D", "text": "Density has no effect on whether an object floats or sinks", "isCorrect": false, "explanation": "The relative density between the object and fluid is EXACTLY what determines whether it floats or sinks." }
+    ],
+    "explanation": "An object less dense than the surrounding fluid floats, partially submerged.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-19",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "medium",
+    "stem": "An object's average density is GREATER than the fluid it's placed in. What happens to the object?",
+    "choices": [
+      { "label": "A", "text": "It sinks, since the buoyant force is not enough to support its full weight", "isCorrect": true, "explanation": "When average density is greater than the fluid's, the maximum possible buoyant force (fully submerged) is still less than the object's weight, so it sinks." },
+      { "label": "B", "text": "It floats on the surface", "isCorrect": false, "explanation": "An object MORE dense than the fluid sinks -- floating happens when the object's density is LESS than the fluid's." },
+      { "label": "C", "text": "It explodes", "isCorrect": false, "explanation": "This isn't a physically meaningful outcome related to density comparison and buoyancy." },
+      { "label": "D", "text": "It experiences zero buoyant force", "isCorrect": false, "explanation": "The object still experiences a nonzero buoyant force (equal to the weight of fluid it displaces) -- it's just not enough to keep it from sinking." }
+    ],
+    "explanation": "An object denser than the fluid sinks, since the maximum buoyant force can't support its full weight.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-20",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "medium",
+    "stem": "An object has a density of $600\\text{ kg/m}^3$, and it is placed in water ($\\rho=1000\\text{ kg/m}^3$). Does it float or sink?",
+    "choices": [
+      { "label": "A", "text": "It floats, since its density is less than water's density", "isCorrect": true, "explanation": "600 kg/m³ < 1000 kg/m³, so the object is less dense than water and will float." },
+      { "label": "B", "text": "It sinks, since its density is less than water's density", "isCorrect": false, "explanation": "An object with LOWER density than the fluid floats, not sinks -- this reverses the correct relationship." },
+      { "label": "C", "text": "It sinks, since its density is greater than water's density", "isCorrect": false, "explanation": "600 kg/m³ is actually LESS than water's 1000 kg/m³, not greater, so this comparison is incorrect." },
+      { "label": "D", "text": "It's impossible to determine without knowing the object's exact shape", "isCorrect": false, "explanation": "For determining float vs. sink, only the DENSITY comparison matters -- exact shape isn't needed for this basic determination." }
+    ],
+    "explanation": "Since the object's density (600 kg/m³) is less than water's (1000 kg/m³), it floats.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-21",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "hard",
+    "stem": "An iceberg has a density of $920\\text{ kg/m}^3$, floating in seawater with density $1025\\text{ kg/m}^3$. What fraction of the iceberg's volume is submerged?",
+    "choices": [
+      { "label": "A", "text": "≈ 0.898 (about 90%)", "isCorrect": true, "explanation": "For a floating object, the submerged fraction equals ρ_object/ρ_fluid = 920/1025 ≈ 0.898." },
+      { "label": "B", "text": "≈ 0.102 (about 10%)", "isCorrect": false, "explanation": "This is roughly 1 minus the correct fraction -- it describes the portion ABOVE water, not submerged." },
+      { "label": "C", "text": "≈ 1.114 (over 100%)", "isCorrect": false, "explanation": "This incorrectly inverts the ratio (ρ_fluid/ρ_object instead of ρ_object/ρ_fluid); a submerged fraction can never exceed 1 (100%)." },
+      { "label": "D", "text": "0.5 (50%)", "isCorrect": false, "explanation": "This doesn't correctly compute the density ratio using the given values." }
+    ],
+    "explanation": "Submerged fraction = ρ_object/ρ_fluid = 920/1025 ≈ 0.898, or about 90% -- consistent with the famous \"tip of the iceberg\" phenomenon.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-22",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "medium",
+    "stem": "Why does an object feel \"lighter\" when submerged in water compared to being weighed in air?",
+    "choices": [
+      { "label": "A", "text": "The buoyant force from the water partially supports the object's weight, reducing the apparent weight measured (e.g., on a scale)", "isCorrect": true, "explanation": "The upward buoyant force offsets part of gravity's downward pull, so less force is needed (e.g., from a scale or your hand) to support the object -- it \"feels\" lighter." },
+      { "label": "B", "text": "The object's actual mass decreases when submerged in water", "isCorrect": false, "explanation": "The object's mass doesn't change at all -- only the APPARENT weight (as measured by a scale) decreases, due to the buoyant force." },
+      { "label": "C", "text": "Gravity is weaker underwater", "isCorrect": false, "explanation": "Gravity's strength is unaffected by being underwater -- the apparent weight change is due to the buoyant force, not a change in gravity." },
+      { "label": "D", "text": "This is purely a psychological effect with no physical basis", "isCorrect": false, "explanation": "This has a clear, real physical basis -- the buoyant force genuinely reduces the net supporting force needed, which is measurable (e.g., on a scale)." }
+    ],
+    "explanation": "The buoyant force partially supports the object's weight, reducing the apparent weight measured while submerged.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-23",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "hard",
+    "stem": "An object weighs 300 N in air. When fully submerged in water, it experiences a buoyant force of 80 N. What is its apparent weight while submerged?",
+    "choices": [
+      { "label": "A", "text": "220 N", "isCorrect": true, "explanation": "Apparent weight = actual weight - buoyant force = 300 - 80 = 220 N." },
+      { "label": "B", "text": "380 N", "isCorrect": false, "explanation": "This incorrectly adds the buoyant force rather than subtracting it -- buoyant force reduces (not increases) apparent weight." },
+      { "label": "C", "text": "80 N", "isCorrect": false, "explanation": "This is just the buoyant force value, not the correctly computed apparent weight." },
+      { "label": "D", "text": "300 N", "isCorrect": false, "explanation": "This ignores the buoyant force's effect entirely, using the object's weight in air unchanged." }
+    ],
+    "explanation": "Apparent weight = actual weight - buoyant force = 300 - 80 = 220 N.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-24",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "easy",
+    "stem": "What does the continuity equation ($A_1v_1=A_2v_2$) describe for fluid flow through a pipe?",
+    "choices": [
+      { "label": "A", "text": "For an incompressible fluid, the flow rate (cross-sectional area times speed) must be the same at every point along the pipe", "isCorrect": true, "explanation": "The continuity equation expresses conservation of mass for an incompressible fluid: the volume flow rate is constant throughout the pipe." },
+      { "label": "B", "text": "The pressure is the same at every point along the pipe", "isCorrect": false, "explanation": "The continuity equation relates AREA and SPEED, not pressure directly -- pressure relationships come from Bernoulli's equation instead." },
+      { "label": "C", "text": "The fluid's density changes as it flows through different sections of pipe", "isCorrect": false, "explanation": "The continuity equation (in this form) assumes an INCOMPRESSIBLE fluid, meaning density stays constant throughout." },
+      { "label": "D", "text": "Fluid speed is always the same throughout a pipe of varying width", "isCorrect": false, "explanation": "This is the OPPOSITE of the continuity equation's implication -- speed actually CHANGES (inversely with area) as pipe width varies." }
+    ],
+    "explanation": "The continuity equation states the flow rate (A×v) is constant along a pipe for an incompressible fluid.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-25",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "medium",
+    "stem": "Water flows through a pipe with cross-sectional area $0.02\\text{ m}^2$ at a speed of 3 m/s. The pipe narrows to an area of $0.01\\text{ m}^2$. What is the water's speed in the narrower section?",
+    "choices": [
+      { "label": "A", "text": "6 m/s", "isCorrect": true, "explanation": "By continuity: A1v1=A2v2, so v2 = A1v1/A2 = (0.02)(3)/0.01 = 6 m/s." },
+      { "label": "B", "text": "1.5 m/s", "isCorrect": false, "explanation": "This incorrectly halves the speed, when the narrower area should actually INCREASE the speed." },
+      { "label": "C", "text": "3 m/s", "isCorrect": false, "explanation": "This assumes speed is unaffected by the change in pipe area, contradicting the continuity equation." },
+      { "label": "D", "text": "0.06 m/s", "isCorrect": false, "explanation": "This doesn't correctly apply A1v1=A2v2 to solve for v2." }
+    ],
+    "explanation": "By continuity: v2 = A1v1/A2 = (0.02)(3)/0.01 = 6 m/s.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-26",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "medium",
+    "stem": "Why does fluid speed up when flowing from a wider section of pipe into a narrower section?",
+    "choices": [
+      { "label": "A", "text": "Because the flow rate (A×v) must remain constant (continuity), so a smaller area requires a proportionally larger speed", "isCorrect": true, "explanation": "This is a direct consequence of the continuity equation -- to keep A×v constant, decreasing A requires increasing v." },
+      { "label": "B", "text": "Because the fluid becomes less dense in the narrower section", "isCorrect": false, "explanation": "For an incompressible fluid (the standard assumption here), density stays constant -- the speed increase comes from the continuity relationship, not density changes." },
+      { "label": "C", "text": "Because gravity pulls the fluid faster in narrower pipes", "isCorrect": false, "explanation": "Gravity's effect isn't the reason here -- the speed change follows directly from area conservation (continuity), regardless of orientation." },
+      { "label": "D", "text": "There is no actual change in speed between different pipe widths", "isCorrect": false, "explanation": "There IS a real, predictable speed change (increase) in narrower sections, as described by the continuity equation." }
+    ],
+    "explanation": "The continuity equation requires A×v to stay constant, so a narrower area (smaller A) requires a proportionally higher speed.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-27",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "medium",
+    "stem": "What does Bernoulli's Equation express, physically?",
+    "choices": [
+      { "label": "A", "text": "Conservation of energy for a flowing fluid, relating pressure, kinetic energy (from speed), and potential energy (from height) along a streamline", "isCorrect": true, "explanation": "Bernoulli's Equation is essentially conservation of energy applied to fluid flow, combining pressure, kinetic, and potential energy terms." },
+      { "label": "B", "text": "Conservation of mass for a flowing fluid", "isCorrect": false, "explanation": "Conservation of MASS is expressed by the continuity equation, not Bernoulli's Equation, which is about energy." },
+      { "label": "C", "text": "The relationship between an object's mass and its weight", "isCorrect": false, "explanation": "This isn't related to Bernoulli's Equation at all -- Bernoulli's Equation concerns fluid flow, pressure, and energy." },
+      { "label": "D", "text": "The total force acting on a submerged object", "isCorrect": false, "explanation": "This describes something closer to buoyancy (Archimedes' Principle), not Bernoulli's Equation." }
+    ],
+    "explanation": "Bernoulli's Equation expresses conservation of energy for fluid flow, relating pressure, kinetic energy, and potential energy.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-28",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "hard",
+    "stem": "According to Bernoulli's Equation, how does fluid pressure change in a region where fluid speed is higher (at the same height)?",
+    "choices": [
+      { "label": "A", "text": "Pressure is lower where speed is higher", "isCorrect": true, "explanation": "Bernoulli's Equation shows an inverse relationship between speed and pressure (at constant height): faster flow corresponds to lower pressure." },
+      { "label": "B", "text": "Pressure is higher where speed is higher", "isCorrect": false, "explanation": "This is backward -- Bernoulli's Equation shows pressure DECREASES where speed increases (at the same height)." },
+      { "label": "C", "text": "Pressure and speed are completely unrelated", "isCorrect": false, "explanation": "Bernoulli's Equation establishes a direct, specific relationship between pressure and speed -- they are not unrelated." },
+      { "label": "D", "text": "Pressure depends only on height, never on speed", "isCorrect": false, "explanation": "Bernoulli's Equation explicitly includes a speed-dependent term (kinetic energy per volume) alongside the height-dependent term." }
+    ],
+    "explanation": "By Bernoulli's Equation, pressure is lower where fluid speed is higher (at the same height) -- this explains phenomena like airplane wing lift.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-29",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "hard",
+    "stem": "How does the Bernoulli effect help explain lift on an airplane wing?",
+    "choices": [
+      { "label": "A", "text": "Air flows faster over the curved top of the wing than under the flatter bottom, creating lower pressure above the wing and higher pressure below, resulting in a net upward force", "isCorrect": true, "explanation": "This is the standard (simplified) Bernoulli-based explanation for wing lift: faster flow over the top means lower pressure there, and the pressure difference produces lift." },
+      { "label": "B", "text": "Air flows slower over the top of the wing, creating higher pressure there that pushes the wing up", "isCorrect": false, "explanation": "This has the airflow speed backward -- air flows FASTER (not slower) over the curved top, resulting in LOWER pressure there, not higher." },
+      { "label": "C", "text": "The wing's weight alone determines lift, with no role for airflow", "isCorrect": false, "explanation": "Airflow over the wing's shape is central to generating lift -- the wing's weight is what lift must overcome, not what generates it." },
+      { "label": "D", "text": "Lift has nothing to do with air pressure or speed", "isCorrect": false, "explanation": "Lift is directly explained (at least in simplified terms) by the pressure difference created by differing airflow speeds above and below the wing." }
+    ],
+    "explanation": "Faster airflow over the wing's curved top creates lower pressure there (Bernoulli), while higher pressure below produces net upward lift.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-30",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "medium",
+    "stem": "Why is Bernoulli's Equation considered analogous to the work-energy theorem or conservation of mechanical energy from earlier in the course?",
+    "choices": [
+      { "label": "A", "text": "Because it expresses that the total \"energy per unit volume\" of a fluid (pressure + kinetic energy density + potential energy density) remains constant along a streamline, just as total mechanical energy is conserved for a particle", "isCorrect": true, "explanation": "Bernoulli's Equation is fundamentally an energy conservation statement, adapted for fluid flow, paralleling the mechanical energy conservation used for point particles." },
+      { "label": "B", "text": "Because both equations involve exactly the same variables with no differences", "isCorrect": false, "explanation": "While conceptually analogous, Bernoulli's Equation specifically involves pressure and fluid-specific terms not present in the particle mechanical energy equation -- they aren't identical." },
+      { "label": "C", "text": "There is no real analogy between the two -- they're unrelated concepts", "isCorrect": false, "explanation": "There IS a strong, well-recognized conceptual analogy -- both express a form of energy conservation, just applied to different physical situations (particles vs. fluids)." },
+      { "label": "D", "text": "Bernoulli's Equation is only used for solid objects, not fluids", "isCorrect": false, "explanation": "Bernoulli's Equation is specifically a FLUID mechanics equation -- it doesn't apply to solid objects in the way described here." }
+    ],
+    "explanation": "Bernoulli's Equation expresses conservation of energy per unit volume along a streamline, paralleling mechanical energy conservation for particles.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  }
+]

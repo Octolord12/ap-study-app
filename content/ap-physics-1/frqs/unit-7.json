@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-phys1-u7-frq-1",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-equilibrium",
+    "prompt": "A 6 m uniform plank is balanced on a pivot at its center. A 50 N weight hangs 2 m to the left of the pivot, and a 30 N weight hangs 1 m to the left of the pivot.\n\n**(a)** Calculate the total torque produced by the two weights on the left side.\n\n**(b)** A third weight of 40 N is to be hung somewhere to the right of the pivot to balance the plank. Calculate how far from the pivot it must be placed.\n\n**(c)** Explain why the specific length of the plank (6 m) was not needed to solve this problem.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes the total left-side torque: (50)(2)+(30)(1) = 130 N·m" },
+      { "id": "r2", "points": 1, "description": "Correctly sets up the balance condition: left torque = right torque, 130 = (40)(d)" },
+      { "id": "r3", "points": 1, "description": "Correctly solves for d = 3.25 m" },
+      { "id": "r4", "points": 1, "description": "Correctly explains that torque only depends on the distance from the pivot to each force, not on the plank's total length, as long as all placements are within the plank's extent" }
+    ],
+    "sampleResponse": "(a) Left torque = (50)(2) + (30)(1) = 100 + 30 = 130 N·m.\n(b) For rotational equilibrium, left torque = right torque: 130 = (40)(d), so d = 130/40 = 3.25 m.\n(c) The plank's total length doesn't enter the torque-balance equation at all -- torque depends only on each individual force's distance from the pivot, not on the overall size of the object. (The 3.25 m answer does happen to fit within a 6 m plank measured from the center, but the calculation itself never used the 6 m figure.)",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-frq-2",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "moment-of-inertia-and-rotational-kinetic-energy",
+    "prompt": "A uniform solid disk has mass 4 kg and radius 0.5 m, and is spinning about its central axis at 6 rad/s.\n\n**(a)** Calculate the disk's moment of inertia.\n\n**(b)** Calculate the disk's rotational kinetic energy at this angular velocity.\n\n**(c)** Starting from rest, a constant torque of 2 N·m is applied to the disk. Calculate the angular velocity the disk reaches after 3 seconds.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes I = (1/2)MR^2 = 0.5 kg·m^2" },
+      { "id": "r2", "points": 1, "description": "Correctly computes KE_rot = (1/2)Iω^2 = 9 J" },
+      { "id": "r3", "points": 1, "description": "Correctly applies τ=Iα to find α = τ/I = 4 rad/s^2" },
+      { "id": "r4", "points": 1, "description": "Correctly uses ω=ω0+αt to find ω = 12 rad/s at t=3s" }
+    ],
+    "sampleResponse": "(a) I = (1/2)MR^2 = (0.5)(4)(0.5^2) = (0.5)(4)(0.25) = 0.5 kg·m^2.\n(b) KE_rot = (1/2)Iω^2 = (0.5)(0.5)(6^2) = (0.5)(0.5)(36) = 9 J.\n(c) α = τ/I = 2/0.5 = 4 rad/s^2. Then ω = ω0 + αt = 0 + (4)(3) = 12 rad/s.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-frq-3",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "angular-momentum",
+    "prompt": "A person stands at the edge of a rotating merry-go-round, giving the system a moment of inertia of $250\\text{ kg}\\cdot\\text{m}^2$ and an angular velocity of 1 rad/s. The person then walks toward the center, reducing the system's moment of inertia to $100\\text{ kg}\\cdot\\text{m}^2$.\n\n**(a)** Calculate the system's angular momentum before the person moves.\n\n**(b)** Using conservation of angular momentum, calculate the system's new angular velocity after the person moves toward the center.\n\n**(c)** Explain, in terms of angular momentum, why the merry-go-round speeds up as the person walks inward.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes L = Iω = (250)(1) = 250 kg·m^2/s" },
+      { "id": "r2", "points": 1, "description": "Correctly sets up I1ω1 = I2ω2 to solve for the new angular velocity" },
+      { "id": "r3", "points": 1, "description": "Correctly computes ω2 = 2.5 rad/s" },
+      { "id": "r4", "points": 1, "description": "Correctly explains that with no external torque, angular momentum is conserved, so a decrease in moment of inertia (person moving inward) must be compensated by an increase in angular velocity" }
+    ],
+    "sampleResponse": "(a) L = Iω = (250)(1) = 250 kg·m^2/s.\n(b) By conservation of angular momentum: I1ω1 = I2ω2, so 250 = (100)ω2, giving ω2 = 2.5 rad/s.\n(c) Since there's no external torque acting on the system, angular momentum L=Iω must stay constant. As the person walks toward the center, the system's moment of inertia decreases; for L to remain the same, the angular velocity ω must increase proportionally -- this is why the merry-go-round speeds up.",
+    "reviewed": false
+  }
+]

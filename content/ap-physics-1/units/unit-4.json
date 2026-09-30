@@ -1,0 +1,13 @@
+{
+  "slug": "unit-4-energy",
+  "order": 4,
+  "name": "Energy",
+  "weightingMin": 14,
+  "weightingMax": 17,
+  "topics": [
+    { "slug": "work-and-the-work-energy-theorem", "order": 1, "name": "Work and the Work-Energy Theorem" },
+    { "slug": "potential-energy", "order": 2, "name": "Gravitational and Elastic Potential Energy" },
+    { "slug": "conservation-of-energy", "order": 3, "name": "Conservation of Energy" },
+    { "slug": "power", "order": 4, "name": "Power" }
+  ]
+}

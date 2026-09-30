@@ -379,12 +379,12 @@ each with a nested `topics` array) match `CourseSchema`/`UnitSchema` in
 `src/lib/content/schema.ts` — see that file for the exact shape, including
 `examFormat` (why this must stay data, not hardcoded, is explained below).
 
-**Sample bank seeded so far**: AP CSA (10 units, 300 MCQs + 30 FRQs), AP World
-History: Modern (9 units, 270 MCQs + 35 FRQs), and AP Calculus AB (8 units,
-240 MCQs + 24 FRQs) are fully authored — see the Milestone 7 section below.
-AP Physics 1 has no content yet.
+**Sample bank seeded so far**: all four launch courses are fully authored —
+AP CSA (10 units, 300 MCQs + 30 FRQs), AP World History: Modern (9 units,
+270 MCQs + 35 FRQs), AP Calculus AB (8 units, 240 MCQs + 24 FRQs), and AP
+Physics 1 (8 units, 240 MCQs + 24 FRQs). See the Milestone 7 section below.
 
-### Content generation at scale (Milestone 7, in progress)
+### Content generation at scale (Milestone 7, done)
 
 Scope decision (asked the owner directly given the volume — ~1,050 MCQs +
 105 FRQs across all four courses): generate **one course at a time, full
@@ -509,9 +509,43 @@ that diagram, plus `textAnchorForAngle()` so a label anchors away from its
 point (not centered on it) when offset mostly left/right — both pure,
 unit-tested functions, not a one-off tweak to this test case.
 
-Not yet started: the actual AP Physics 1 content pass (8 units, Kinematics →
-Fluids per the redesigned CED) — the next, separate, full-scope unit of work
-now that this infra is built and verified.
+**AP Physics 1 — content done.** All 8 units of the redesigned (2024-25) CED
+(Kinematics → Dynamics → Circular Motion and Gravitation → Energy → Momentum
+→ Simple Harmonic Motion → Torque and Rotational Motion → Fluids), each with
+30 MCQs + 3 FRQs (240 MCQs + 24 FRQs total), validated and seeded. `g=9.8
+m/s²` used throughout (not the g=10 shortcut), with realistic decimal
+answers rounded to 2-3 significant figures — unlike Calc AB's exact symbolic
+answers, this matches how real AP Physics 1 problems are conventionally
+solved and graded. Every non-trivial computed answer (kinematics, forces,
+energy, momentum, circular motion, gravitation, SHM periods, torque,
+rotational inertia, fluids) was checked with a Python arithmetic/sympy
+script before being written into the question/choice/explanation text, same
+verification discipline as Calc AB. A handful of "nice-angle" problems use
+the standard AP approximation sin37°≈0.6/cos37°≈0.8 (3-4-5 triangle),
+flagged explicitly in the stem rather than left implicit.
+
+The new diagram infrastructure (`xy-graph`/`force-diagram`, see above) is
+used where it's the natural fit per the scope boundary already
+established — motion graphs in Unit 1's representations-of-motion topic and
+free-body diagrams in Unit 2's free-body-diagrams topic, plus a few FRQs
+elsewhere (Unit 1 motion graph, Unit 2 incline FBD). Not overused: the large
+majority of MCQs/FRQs across all 8 units are still plain word problems,
+since most physics content (kinematics equations, force calculations, energy
+conservation, circular motion, gravitation, SHM, torque, fluids) is fully
+expressible in prose without a diagram — matching the deliberately narrow
+scope decided before building the diagram feature.
+
+**Caught and fixed a real content bug during authoring**: Unit 4's roller
+coaster MCQ (`ap-phys1-u4-mcq-18`) initially had the correct numeric answer
+(≈16.6 m/s, from Δh=14m via v=√(2gΔh)) written into the wrong choice's
+`isCorrect` flag, with a garbled self-correcting explanation left in the
+"correct" choice. Caught by re-verifying the computation against the
+Python-checked value before moving on, not by a later pass — rewrote the
+question's choices/explanations cleanly rather than leaving the contradiction
+in place.
+
+This completes Milestone 7 — all four launch courses now have full content
+banks (see the Milestone status table below).
 
 **Review workflow** (the spec's "simple admin/review view" requirement):
 `/admin/review` (`src/app/admin/review/`), gated by `src/lib/admin/session.ts`'s
@@ -603,19 +637,21 @@ in app logic — updating them should be a data edit.
       sent/accepted a friend request across accounts, and confirmed opting
       out actually removes a user from the leaderboard (not just visually)
       while leaving them in the friends list.
-- [ ] **Milestone 7 — Content at scale (in progress).** Full starter banks
-      (~30 MCQ + 3 FRQ-type items per unit), validated, plus a review
-      workflow. Scope decision: one course at a time, pausing for owner
-      review after each (see the Content generation section above).
-      **AP CSA done**: 10/10 units, 300 MCQs + 30 FRQs, seeded and
-      validated. **AP World History: Modern done**: 9/9 units, 270 MCQs +
+- [x] **Milestone 7 — Content at scale.** Full starter banks (~30 MCQ + 3
+      FRQ-type items per unit), validated, plus a review workflow. Scope
+      decision: one course at a time, pausing for owner review after each
+      (see the Content generation section above). **AP CSA**: 10/10 units,
+      300 MCQs + 30 FRQs. **AP World History: Modern**: 9/9 units, 270 MCQs +
       27 SAQs, plus a separate course-level pool of 4 DBQs + 4 LEQs (35 FRQ-
-      type items total), seeded and validated — see the known exam-engine
-      gap (no SAQ/DBQ/LEQ type field on `FRQPrompt`) noted above. **AP
-      Calculus AB done**: 8/8 units, 240 MCQs + 24 FRQs, seeded and
-      validated, every computed answer sympy-verified (see above). Admin
-      review UI built (`/admin/review`), now covering all three courses.
-      Still to do: AP Physics 1 (its own pass, same process).
+      type items total) — see the known exam-engine gap (no SAQ/DBQ/LEQ type
+      field on `FRQPrompt`) noted above. **AP Calculus AB**: 8/8 units, 240
+      MCQs + 24 FRQs, every computed answer sympy-verified. **AP Physics 1**:
+      8/8 units, 240 MCQs + 24 FRQs, every computed answer Python-verified;
+      required building minimal SVG diagram support first (its own
+      app-engine change, see above) since this course leans on motion graphs
+      and free-body diagrams the markdown pipeline couldn't render. All four
+      courses seeded and validated. Admin review UI built (`/admin/review`),
+      covering all four courses.
 - [ ] **Milestone 8 — Polish and launch prep.** Accessibility, mobile testing,
       performance, error handling, deployment, README.
 

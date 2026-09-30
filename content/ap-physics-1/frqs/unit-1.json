@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ap-phys1-u1-frq-1",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "prompt": "A car traveling at 15 m/s begins braking with a constant deceleration of $3 \\text{ m/s}^2$.\n\n**(a)** Calculate the time it takes for the car to come to a complete stop.\n\n**(b)** Calculate the distance the car travels while braking.\n\n**(c)** Verify your answer to (b) using a different kinematic equation than the one you used to derive it.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly sets up v=v0+at with v=0 and solves for t=5 s" },
+      { "id": "r2", "points": 1, "description": "Correctly uses a kinematic equation (e.g. x=v0t+(1/2)at^2 with a=-3) to find the stopping distance" },
+      { "id": "r3", "points": 1, "description": "Correctly computes the stopping distance as 37.5 m" },
+      { "id": "r4", "points": 1, "description": "Correctly re-derives 37.5 m using a second, different kinematic equation (e.g. v^2=v0^2+2aΔx)" }
+    ],
+    "sampleResponse": "(a) Using v=v0+at with v=0, a=-3: 0 = 15 + (-3)t, so t = 15/3 = 5 s.\n(b) Using x=v0t+(1/2)at^2: x = (15)(5) + (0.5)(-3)(25) = 75 - 37.5 = 37.5 m.\n(c) Using v^2=v0^2+2aΔx with v=0, v0=15, a=-3: 0 = 225 + 2(-3)Δx, so Δx = 225/6 = 37.5 m, matching part (b).",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-frq-2",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "prompt": "A ball rolls off the edge of a cliff of height 78.4 m with a horizontal velocity of 15 m/s ($g = 9.8 \\text{ m/s}^2$).\n\n**(a)** Calculate the time it takes the ball to reach the ground.\n\n**(b)** Calculate the horizontal distance (range) the ball travels before landing.\n\n**(c)** Calculate the vertical component of the ball's velocity the instant before it lands.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly uses h=(1/2)gt^2 (vertical motion only) to find t=4 s" },
+      { "id": "r2", "points": 1, "description": "Correctly computes the horizontal range using x=v0x·t" },
+      { "id": "r3", "points": 1, "description": "Correctly finds the range to be 60 m" },
+      { "id": "r4", "points": 1, "description": "Correctly computes the vertical velocity at impact as vy=gt=39.2 m/s" }
+    ],
+    "sampleResponse": "(a) The fall time depends only on vertical motion: h=(1/2)gt^2, so 78.4=(0.5)(9.8)t^2, t^2=16, t=4 s.\n(b) Horizontal motion is at constant velocity: x = v0x·t = (15)(4) = 60 m.\n(c) vy = gt = (9.8)(4) = 39.2 m/s.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-frq-3",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "prompt": "The velocity-time graph below shows an object's motion from t=0 to t=6 s.\n\n**(a)** Calculate the object's acceleration between t=0 s and t=3 s.\n\n**(b)** Calculate the object's total displacement between t=0 s and t=6 s.\n\n**(c)** Describe, in words, what the object is doing between t=3 s and t=6 s.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes acceleration between t=0 and t=3s as (12-0)/3 = 4 m/s^2" },
+      { "id": "r2", "points": 1, "description": "Correctly computes the total area under the graph (triangle from 0-3s plus rectangle from 3-6s)" },
+      { "id": "r3", "points": 1, "description": "Correctly finds the total displacement to be 54 m" },
+      { "id": "r4", "points": 1, "description": "Correctly describes the object as moving at a constant velocity of 12 m/s (zero acceleration) between t=3s and t=6s" }
+    ],
+    "sampleResponse": "(a) Acceleration = slope = (12-0)/(3-0) = 4 m/s^2.\n(b) Displacement = area under the graph = triangle (0 to 3s: (1/2)(3)(12)=18 m) + rectangle (3 to 6s: (3)(12)=36 m) = 54 m.\n(c) Between t=3s and t=6s, the graph is flat at v=12 m/s, meaning the object moves at a constant velocity of 12 m/s (zero acceleration) during this interval.",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Velocity-time graph rising from 0 to 12 meters per second between t=0 and t=3 seconds, then flat at 12 meters per second from t=3 to t=6 seconds",
+      "xLabel": "t (s)",
+      "yLabel": "v (m/s)",
+      "xMin": 0,
+      "xMax": 6,
+      "yMin": 0,
+      "yMax": 14,
+      "series": [{ "points": [{ "x": 0, "y": 0 }, { "x": 3, "y": 12 }, { "x": 6, "y": 12 }], "color": "blue" }]
+    }
+  }
+]

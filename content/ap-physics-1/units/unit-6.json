@@ -1,0 +1,12 @@
+{
+  "slug": "unit-6-simple-harmonic-motion",
+  "order": 6,
+  "name": "Simple Harmonic Motion",
+  "weightingMin": 5,
+  "weightingMax": 8,
+  "topics": [
+    { "slug": "restoring-forces-and-shm", "order": 1, "name": "Restoring Forces and SHM" },
+    { "slug": "period-of-springs-and-pendulums", "order": 2, "name": "Period of Springs and Pendulums" },
+    { "slug": "energy-in-shm", "order": 3, "name": "Energy in Simple Harmonic Motion" }
+  ]
+}

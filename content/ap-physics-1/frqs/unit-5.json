@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-phys1-u5-frq-1",
+    "unit": "unit-5-momentum",
+    "topic": "momentum-and-impulse",
+    "prompt": "A 1000 kg car traveling at 20 m/s crashes head-on and comes to a complete stop. Consider two scenarios: (1) the car has an airbag, extending the collision time to 0.1 s, and (2) the car has no airbag, and the collision time is only 0.02 s.\n\n**(a)** Calculate the impulse delivered to the car during the crash. (Note: this value is the same in both scenarios.)\n\n**(b)** Calculate the average force on the car in Scenario 1 (with the airbag).\n\n**(c)** Calculate the average force on the car in Scenario 2 (without the airbag), and compare it to your answer from part (b).",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes the impulse J = Δp = mΔv = 20,000 N·s" },
+      { "id": "r2", "points": 1, "description": "Correctly applies F=J/Δt with Δt=0.1s to get F=200,000 N" },
+      { "id": "r3", "points": 1, "description": "Correctly applies F=J/Δt with Δt=0.02s to get F=1,000,000 N" },
+      { "id": "r4", "points": 1, "description": "Correctly notes that the force without the airbag is 5 times larger, illustrating why extending collision time (with an airbag) reduces the force for the same impulse" }
+    ],
+    "sampleResponse": "(a) J = Δp = mΔv = (1000)(20-0) = 20,000 N·s.\n(b) F = J/Δt = 20,000/0.1 = 200,000 N.\n(c) F = J/Δt = 20,000/0.02 = 1,000,000 N. This is 5 times larger than the airbag scenario -- since the impulse (change in momentum) is the same in both cases, spreading it over a longer time (with the airbag) results in a much smaller average force.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-frq-2",
+    "unit": "unit-5-momentum",
+    "topic": "collisions",
+    "prompt": "A 5 kg cart moving at 8 m/s collides with a stationary 3 kg cart. The two carts stick together (perfectly inelastic collision).\n\n**(a)** Calculate the combined velocity of the two carts after the collision.\n\n**(b)** Calculate the total kinetic energy of the system before the collision.\n\n**(c)** Calculate the total kinetic energy of the system after the collision, and determine how much kinetic energy was lost.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly applies conservation of momentum to find v_f = 5 m/s" },
+      { "id": "r2", "points": 1, "description": "Correctly computes KE before the collision as 160 J" },
+      { "id": "r3", "points": 1, "description": "Correctly computes KE after the collision as 100 J" },
+      { "id": "r4", "points": 1, "description": "Correctly computes the kinetic energy lost as 60 J" }
+    ],
+    "sampleResponse": "(a) Momentum conservation: (5)(8)+(3)(0) = (5+3)v_f, so 40 = 8v_f, giving v_f = 5 m/s.\n(b) KE_before = (1/2)(5)(8^2) = (1/2)(5)(64) = 160 J.\n(c) KE_after = (1/2)(8)(5^2) = (1/2)(8)(25) = 100 J. Kinetic energy lost = 160 - 100 = 60 J (converted to heat/sound/deformation during the collision).",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-frq-3",
+    "unit": "unit-5-momentum",
+    "topic": "center-of-mass",
+    "prompt": "Two objects lie on the x-axis: $m_1 = 3$ kg at $x=0$ m, and $m_2 = 5$ kg at $x=8$ m.\n\n**(a)** Calculate the x-coordinate of the system's center of mass.\n\n**(b)** Explain, without recalculating, whether the center of mass would be closer to $m_1$ or farther from $m_1$ if $m_2$'s mass were increased (with positions unchanged).\n\n**(c)** If the two objects are connected by a spring and pushed apart (with no external horizontal force on the system), what happens to the position of the center of mass as they move? Explain your reasoning.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes x_cm = (3(0)+5(8))/(3+5) = 5 m" },
+      { "id": "r2", "points": 1, "description": "Correctly reasons that increasing m2's mass would shift the center of mass farther from m1 (closer to m2), since the weighted average shifts toward the larger mass" },
+      { "id": "r3", "points": 1, "description": "Correctly states that the center of mass stays at the same position (x=5 m) as the objects move apart" },
+      { "id": "r4", "points": 1, "description": "Correctly explains this using the fact that the spring force is internal to the system, and with no external horizontal force, the center of mass cannot accelerate" }
+    ],
+    "sampleResponse": "(a) x_cm = (m1x1+m2x2)/(m1+m2) = (3(0)+5(8))/(3+5) = 40/8 = 5 m.\n(b) Increasing m2's mass would shift the center of mass farther from m1 (closer to m2, i.e., to a larger x-value), since the center of mass formula weights each position by its mass -- a larger m2 pulls the weighted average more strongly toward x2.\n(c) The center of mass remains at x=5 m as the objects move apart. The spring force pushing them apart is internal to the system (an action-reaction pair), and with no external horizontal force acting on the system, the center of mass cannot accelerate -- it stays fixed even as the two masses move in opposite directions.",
+    "reviewed": false
+  }
+]

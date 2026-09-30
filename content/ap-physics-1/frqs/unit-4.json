@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-phys1-u4-frq-1",
+    "unit": "unit-4-energy",
+    "topic": "work-and-the-work-energy-theorem",
+    "prompt": "A 4 kg box, initially at rest on a frictionless horizontal surface, is pushed by a constant horizontal force of 25 N over a distance of 8 m.\n\n**(a)** Calculate the work done on the box by the applied force.\n\n**(b)** Using the work-energy theorem, calculate the box's final kinetic energy.\n\n**(c)** Calculate the box's final speed.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes W = Fd = (25)(8) = 200 J" },
+      { "id": "r2", "points": 1, "description": "Correctly applies the work-energy theorem to state that the final kinetic energy equals the work done (200 J), since the box started at rest" },
+      { "id": "r3", "points": 1, "description": "Correctly sets up 200 = (1/2)(4)v^2 to solve for v" },
+      { "id": "r4", "points": 1, "description": "Correctly computes v = 10 m/s" }
+    ],
+    "sampleResponse": "(a) W = Fd = (25)(8) = 200 J.\n(b) By the work-energy theorem, W_net = ΔKE. Since the box started at rest, KE_final = W = 200 J.\n(c) 200 = (1/2)(4)v^2, so v^2 = 100, giving v = 10 m/s.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-frq-2",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "prompt": "A 2 kg block starts from rest at the top of a frictionless curved ramp, at a height of 15 m above the ground ($g=9.8\\text{ m/s}^2$).\n\n**(a)** Calculate the block's kinetic energy when it reaches the ground.\n\n**(b)** Calculate the block's speed when it reaches the ground.\n\n**(c)** If, after reaching the ground, the block travels up a second frictionless ramp of a completely different shape, what maximum height will it reach on this second ramp? Explain your reasoning using conservation of energy.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes KE at the ground using conservation of energy: KE = mgh = 294 J" },
+      { "id": "r2", "points": 1, "description": "Correctly solves for v using KE=(1/2)mv^2, getting v ≈ 17.1 m/s" },
+      { "id": "r3", "points": 1, "description": "Correctly states the block will reach the same height, 15 m, on the second ramp" },
+      { "id": "r4", "points": 1, "description": "Correctly explains this using conservation of energy: since both ramps are frictionless, all of the kinetic energy at the ground must convert back to potential energy at the same original height, regardless of the ramp's shape (the path taken doesn't matter, only the total energy)" }
+    ],
+    "sampleResponse": "(a) By conservation of energy, all of the initial PE converts to KE at the ground: KE = mgh = (2)(9.8)(15) = 294 J.\n(b) 294 = (1/2)(2)v^2, so v^2=294, v ≈ 17.1 m/s.\n(c) The block will reach a maximum height of 15 m again on the second ramp. Since both ramps are frictionless, no mechanical energy is lost to heat; all of the kinetic energy at the ground must convert back into potential energy at the block's highest point. Since PE=mgh depends only on height (not the shape of the path), the block must rise to exactly the same height, 15 m, regardless of the second ramp's shape.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-frq-3",
+    "unit": "unit-4-energy",
+    "topic": "power",
+    "prompt": "An elevator (including passengers) has a total mass of 800 kg. A motor lifts the elevator at a constant velocity of 2 m/s ($g=9.8\\text{ m/s}^2$).\n\n**(a)** Calculate the force the motor's cable must exert on the elevator to lift it at constant velocity.\n\n**(b)** Calculate the power the motor must deliver.\n\n**(c)** Express your answer to part (b) in kilowatts (kW).",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly reasons that at constant velocity, the cable force must equal the elevator's weight: F = mg = 7840 N" },
+      { "id": "r2", "points": 1, "description": "Correctly applies P = Fv to compute the required power" },
+      { "id": "r3", "points": 1, "description": "Correctly computes P = 15680 W" },
+      { "id": "r4", "points": 1, "description": "Correctly converts to 15.68 kW" }
+    ],
+    "sampleResponse": "(a) At constant velocity, the net force is zero, so the cable's upward force must exactly balance gravity: F = mg = (800)(9.8) = 7840 N.\n(b) P = Fv = (7840)(2) = 15680 W.\n(c) 15680 W = 15.68 kW.",
+    "reviewed": false
+  }
+]

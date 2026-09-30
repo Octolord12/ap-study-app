@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-phys1-u8-frq-1",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "prompt": "A hydraulic lift has a small piston of area $0.005\\text{ m}^2$ and a large piston of area $0.3\\text{ m}^2$. A force of 150 N is applied to the small piston.\n\n**(a)** Calculate the pressure created at the small piston.\n\n**(b)** Using Pascal's Principle, calculate the force produced at the large piston.\n\n**(c)** Explain why this force multiplication does not violate conservation of energy.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes P = F/A = 150/0.005 = 30,000 Pa" },
+      { "id": "r2", "points": 1, "description": "Correctly applies P1=P2 (Pascal's Principle) to solve for F2" },
+      { "id": "r3", "points": 1, "description": "Correctly computes F2 = 9000 N" },
+      { "id": "r4", "points": 1, "description": "Correctly explains that the small piston must move a proportionally greater distance than the large piston, so the work done (force × distance) is the same on both sides" }
+    ],
+    "sampleResponse": "(a) P = F1/A1 = 150/0.005 = 30,000 Pa.\n(b) Since pressure is transmitted equally (Pascal's Principle), P2=P1=30,000 Pa. F2 = P2·A2 = (30,000)(0.3) = 9000 N.\n(c) This doesn't violate conservation of energy because the small piston must be pushed a much greater distance than the large piston moves (in proportion to the area ratio). Since work = force × distance, the smaller force acting over a larger distance on the input side equals the larger force acting over a smaller distance on the output side -- the total work (energy) is conserved, not multiplied.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-frq-2",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "prompt": "A block with a mass of 8 kg and a total volume of $0.01\\text{ m}^3$ floats in water ($\\rho_{water}=1000\\text{ kg/m}^3$, $g=9.8\\text{ m/s}^2$).\n\n**(a)** Calculate the block's density.\n\n**(b)** Calculate the volume of water the block displaces while floating (using the fact that the buoyant force must equal the block's weight).\n\n**(c)** Calculate what fraction of the block's total volume is submerged, and verify it matches the ratio of the block's density to water's density.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes the block's density as ρ=m/V=800 kg/m^3" },
+      { "id": "r2", "points": 1, "description": "Correctly sets up ρ_water·g·V_sub = mg (buoyant force equals weight) and solves for V_sub" },
+      { "id": "r3", "points": 1, "description": "Correctly computes V_sub = 0.008 m^3" },
+      { "id": "r4", "points": 1, "description": "Correctly computes the submerged fraction as 0.008/0.01=0.8 (80%) and verifies it matches ρ_block/ρ_water = 800/1000 = 0.8" }
+    ],
+    "sampleResponse": "(a) ρ = m/V = 8/0.01 = 800 kg/m^3.\n(b) At equilibrium, buoyant force equals weight: ρ_water·g·V_sub = mg. The g's cancel: V_sub = m/ρ_water = 8/1000 = 0.008 m^3.\n(c) Submerged fraction = V_sub/V_total = 0.008/0.01 = 0.8 (80%). This matches ρ_block/ρ_water = 800/1000 = 0.8, confirming that the submerged fraction of a floating object always equals the ratio of its density to the fluid's density.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-frq-3",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "prompt": "Water ($\\rho=1000\\text{ kg/m}^3$) flows through a horizontal pipe. In the wide section, the cross-sectional area is $0.01\\text{ m}^2$, the speed is 4 m/s, and the pressure is 200,000 Pa. The pipe narrows to a cross-sectional area of $0.0025\\text{ m}^2$.\n\n**(a)** Using the continuity equation, calculate the water's speed in the narrow section.\n\n**(b)** Using Bernoulli's Equation (noting the pipe is horizontal, so height doesn't change), calculate the pressure in the narrow section.\n\n**(c)** Explain, conceptually, why the pressure decreased in the narrower section even though the pipe is horizontal (so gravity's contribution didn't change).",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly applies A1v1=A2v2 to find v2 = 16 m/s" },
+      { "id": "r2", "points": 1, "description": "Correctly sets up Bernoulli's equation with equal heights: P1+(1/2)ρv1^2 = P2+(1/2)ρv2^2" },
+      { "id": "r3", "points": 1, "description": "Correctly computes P2 = 80,000 Pa" },
+      { "id": "r4", "points": 1, "description": "Correctly explains that the increase in kinetic energy per unit volume (from the faster speed) must be balanced by a decrease in pressure, since the total energy per unit volume is conserved (Bernoulli) and height/potential energy didn't change" }
+    ],
+    "sampleResponse": "(a) A1v1=A2v2: v2 = (0.01)(4)/0.0025 = 16 m/s.\n(b) Since height is constant, Bernoulli's equation simplifies to P1+(1/2)ρv1^2 = P2+(1/2)ρv2^2. Solving for P2: P2 = 200,000 + (0.5)(1000)(4^2) - (0.5)(1000)(16^2) = 200,000 + 8,000 - 128,000 = 80,000 Pa.\n(c) Since the pipe is horizontal, the gravitational potential energy term in Bernoulli's equation doesn't change. But the water speeds up in the narrower section (by continuity), increasing its kinetic energy per unit volume. Since total energy per unit volume must be conserved, this increase in kinetic energy must be offset by a decrease in pressure -- exactly what Bernoulli's equation predicts.",
+    "reviewed": false
+  }
+]

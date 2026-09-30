@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-phys1-u7-mcq-1",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-kinematics",
+    "difficulty": "easy",
+    "stem": "What are the rotational analogs of linear position, velocity, and acceleration?",
+    "choices": [
+      { "label": "A", "text": "Angular position (θ), angular velocity (ω), and angular acceleration (α)", "isCorrect": true, "explanation": "These are the standard rotational quantities that parallel linear position, velocity, and acceleration." },
+      { "label": "B", "text": "Mass, force, and torque", "isCorrect": false, "explanation": "These aren't kinematic quantities describing rotational motion itself -- torque and force relate to causing rotation, not describing it directly." },
+      { "label": "C", "text": "Momentum, energy, and power", "isCorrect": false, "explanation": "These are dynamic/energy quantities, not the direct rotational analogs of position, velocity, and acceleration." },
+      { "label": "D", "text": "There are no rotational analogs to linear kinematics", "isCorrect": false, "explanation": "Rotational motion has well-established analogs (θ, ω, α) that directly parallel linear kinematics (x, v, a)." }
+    ],
+    "explanation": "Angular position (θ), angular velocity (ω), and angular acceleration (α) are the rotational analogs of linear position, velocity, and acceleration.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-kinematics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-2",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-kinematics",
+    "difficulty": "medium",
+    "stem": "A wheel starts from rest and undergoes angular acceleration of $2\\text{ rad/s}^2$ for 5 seconds. What is its final angular velocity?",
+    "choices": [
+      { "label": "A", "text": "10 rad/s", "isCorrect": true, "explanation": "ω = ω0 + αt = 0 + (2)(5) = 10 rad/s." },
+      { "label": "B", "text": "2 rad/s", "isCorrect": false, "explanation": "This is just the angular acceleration value, not multiplied by the time elapsed." },
+      { "label": "C", "text": "7 rad/s", "isCorrect": false, "explanation": "This doesn't correctly compute ω0+αt using the given acceleration and time." },
+      { "label": "D", "text": "2.5 rad/s", "isCorrect": false, "explanation": "This incorrectly divides time by acceleration rather than multiplying acceleration by time." }
+    ],
+    "explanation": "ω = ω0 + αt = 0 + (2)(5) = 10 rad/s.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-kinematics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-3",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-kinematics",
+    "difficulty": "medium",
+    "stem": "A wheel starts from rest and undergoes angular acceleration of $4\\text{ rad/s}^2$. What angle has it rotated through after 3 seconds?",
+    "choices": [
+      { "label": "A", "text": "18 rad", "isCorrect": true, "explanation": "θ = ω0t + (1/2)αt² = 0 + (0.5)(4)(3²) = (0.5)(4)(9) = 18 rad." },
+      { "label": "B", "text": "12 rad", "isCorrect": false, "explanation": "This omits the (1/2) factor and doesn't correctly square the time." },
+      { "label": "C", "text": "36 rad", "isCorrect": false, "explanation": "This is double the correct value -- omitting the (1/2) factor in the kinematic equation." },
+      { "label": "D", "text": "4 rad", "isCorrect": false, "explanation": "This is just the angular acceleration value, not the correctly computed angular displacement." }
+    ],
+    "explanation": "θ = (1/2)αt² = (0.5)(4)(9) = 18 rad.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-kinematics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-4",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-kinematics",
+    "difficulty": "hard",
+    "stem": "A wheel starts from rest and accelerates at $3\\text{ rad/s}^2$. Using $\\omega^2=\\omega_0^2+2\\alpha\\theta$, what is its angular velocity after rotating through 24 radians?",
+    "choices": [
+      { "label": "A", "text": "12 rad/s", "isCorrect": true, "explanation": "ω² = 0 + 2(3)(24) = 144, so ω = √144 = 12 rad/s." },
+      { "label": "B", "text": "144 rad/s", "isCorrect": false, "explanation": "This is ω² itself, not the square root needed to find ω." },
+      { "label": "C", "text": "72 rad/s", "isCorrect": false, "explanation": "This doesn't correctly compute 2αθ before taking the square root." },
+      { "label": "D", "text": "6 rad/s", "isCorrect": false, "explanation": "This doesn't correctly apply the rotational kinematic equation with the given values." }
+    ],
+    "explanation": "ω² = 2αθ = 2(3)(24) = 144, so ω = 12 rad/s.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-kinematics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-5",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-kinematics",
+    "difficulty": "medium",
+    "stem": "How is the linear (tangential) speed $v$ of a point on a rotating object related to the object's angular velocity $\\omega$?",
+    "choices": [
+      { "label": "A", "text": "$v = r\\omega$, where r is the point's distance from the rotation axis", "isCorrect": true, "explanation": "This is the standard relationship between linear (tangential) speed and angular velocity." },
+      { "label": "B", "text": "$v = \\omega/r$", "isCorrect": false, "explanation": "This incorrectly divides ω by r; the correct relationship is the product v=rω." },
+      { "label": "C", "text": "$v = \\omega$, independent of r", "isCorrect": false, "explanation": "Linear speed depends on BOTH ω and the radius r -- points farther from the axis move faster (linearly) for the same ω." },
+      { "label": "D", "text": "$v = r + \\omega$", "isCorrect": false, "explanation": "This is not a sum -- v is the PRODUCT of r and ω, not their sum." }
+    ],
+    "explanation": "Linear (tangential) speed relates to angular velocity by v=rω.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-kinematics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-6",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-kinematics",
+    "difficulty": "medium",
+    "stem": "A point on a spinning wheel is 0.5 m from the axis, and the wheel has an angular velocity of 4 rad/s. What is the point's linear (tangential) speed?",
+    "choices": [
+      { "label": "A", "text": "2 m/s", "isCorrect": true, "explanation": "v = rω = (0.5)(4) = 2 m/s." },
+      { "label": "B", "text": "4.5 m/s", "isCorrect": false, "explanation": "This adds r and ω rather than multiplying them." },
+      { "label": "C", "text": "8 m/s", "isCorrect": false, "explanation": "This incorrectly divides ω by r rather than multiplying them." },
+      { "label": "D", "text": "0.125 m/s", "isCorrect": false, "explanation": "This incorrectly divides r by ω rather than multiplying them." }
+    ],
+    "explanation": "v = rω = (0.5)(4) = 2 m/s.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-kinematics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-7",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "torque",
+    "difficulty": "easy",
+    "stem": "What is the formula for the magnitude of torque produced by a force?",
+    "choices": [
+      { "label": "A", "text": "$\\tau = rF\\sin\\theta$, where r is the distance from the pivot to where the force is applied, F is the force magnitude, and θ is the angle between them", "isCorrect": true, "explanation": "This is the standard formula for torque magnitude." },
+      { "label": "B", "text": "$\\tau = F/r$", "isCorrect": false, "explanation": "Torque is not force divided by distance -- it involves the product rF (scaled by sinθ)." },
+      { "label": "C", "text": "$\\tau = ma$", "isCorrect": false, "explanation": "This is Newton's Second Law for linear force, not the formula for torque." },
+      { "label": "D", "text": "$\\tau = r + F$", "isCorrect": false, "explanation": "Torque is not a sum of r and F -- it's their product, scaled by sinθ." }
+    ],
+    "explanation": "Torque magnitude is τ = rF·sin(θ).",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/torque",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-8",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "torque",
+    "difficulty": "medium",
+    "stem": "A force of 20 N is applied perpendicular to a wrench at a distance of 0.3 m from the bolt (pivot). What is the resulting torque?",
+    "choices": [
+      { "label": "A", "text": "6 N·m", "isCorrect": true, "explanation": "Since the force is perpendicular (sin90°=1): τ = rF = (0.3)(20) = 6 N·m." },
+      { "label": "B", "text": "20.3 N·m", "isCorrect": false, "explanation": "This adds r and F rather than multiplying them." },
+      { "label": "C", "text": "66.7 N·m", "isCorrect": false, "explanation": "This incorrectly divides F by r rather than multiplying them." },
+      { "label": "D", "text": "0.015 N·m", "isCorrect": false, "explanation": "This incorrectly divides r by F rather than multiplying them." }
+    ],
+    "explanation": "With the force perpendicular: τ = rF = (0.3)(20) = 6 N·m.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/torque",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-9",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "torque",
+    "difficulty": "hard",
+    "stem": "A force of 10 N is applied at a distance of 0.4 m from a pivot, at an angle of 30° from the lever arm. What is the resulting torque?",
+    "choices": [
+      { "label": "A", "text": "2 N·m", "isCorrect": true, "explanation": "τ = rF·sin(θ) = (0.4)(10)sin(30°) = (0.4)(10)(0.5) = 2 N·m." },
+      { "label": "B", "text": "4 N·m", "isCorrect": false, "explanation": "This omits the sin(30°)=0.5 factor entirely, using the full rF product instead." },
+      { "label": "C", "text": "3.46 N·m", "isCorrect": false, "explanation": "This uses cos(30°) instead of sin(30°) -- torque uses the sine of the angle between the force and the lever arm, not the cosine." },
+      { "label": "D", "text": "10 N·m", "isCorrect": false, "explanation": "This doesn't correctly multiply by both the distance and sin(30°)." }
+    ],
+    "explanation": "τ = rF·sin(θ) = (0.4)(10)(0.5) = 2 N·m.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/torque",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-10",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "torque",
+    "difficulty": "medium",
+    "stem": "Why is it easier to open a door by pushing near the doorknob (far from the hinge) than by pushing near the hinge itself?",
+    "choices": [
+      { "label": "A", "text": "Because torque is proportional to the distance from the pivot (lever arm), so the same force produces more torque at a greater distance", "isCorrect": true, "explanation": "τ=rF·sinθ shows torque increases with r; pushing farther from the hinge produces more torque for the same applied force." },
+      { "label": "B", "text": "Because pushing near the hinge requires more force due to friction", "isCorrect": false, "explanation": "Friction isn't the primary reason here -- the key factor is the geometric relationship between torque and the lever arm distance r." },
+      { "label": "C", "text": "There is no actual difference in difficulty based on where you push", "isCorrect": false, "explanation": "There IS a real, significant difference -- pushing farther from the hinge produces much more torque for the same force, making the door easier to open." },
+      { "label": "D", "text": "Because the door is heavier near the hinge", "isCorrect": false, "explanation": "A door's mass distribution isn't the reason for this effect -- it's specifically about the lever-arm distance in the torque formula." }
+    ],
+    "explanation": "Torque is proportional to the lever arm distance r, so pushing farther from the hinge produces more torque for the same force.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/torque",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-11",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "torque",
+    "difficulty": "medium",
+    "stem": "For a given force magnitude and lever arm distance, at what angle between the force and lever arm is the resulting torque maximized?",
+    "choices": [
+      { "label": "A", "text": "90° (force perpendicular to the lever arm)", "isCorrect": true, "explanation": "Since τ=rF·sinθ, torque is maximized when sinθ=1, which occurs at θ=90°." },
+      { "label": "B", "text": "0° (force parallel to the lever arm)", "isCorrect": false, "explanation": "At θ=0°, sinθ=0, giving ZERO torque -- this is the minimum, not the maximum." },
+      { "label": "C", "text": "45°", "isCorrect": false, "explanation": "While torque is nonzero at 45°, sin(45°)≈0.707 is less than sin(90°)=1, so 45° doesn't maximize torque." },
+      { "label": "D", "text": "Torque doesn't depend on the angle at all", "isCorrect": false, "explanation": "Torque explicitly depends on the angle via the sinθ factor in τ=rF·sinθ." }
+    ],
+    "explanation": "Torque is maximized when the force is perpendicular (90°) to the lever arm, since sin(90°)=1.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/torque",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-12",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "torque",
+    "difficulty": "medium",
+    "stem": "A torque of 15 N·m is needed to loosen a bolt, and a wrench allows force to be applied 0.5 m from the bolt (perpendicular). What force must be applied?",
+    "choices": [
+      { "label": "A", "text": "30 N", "isCorrect": true, "explanation": "τ = rF, so F = τ/r = 15/0.5 = 30 N." },
+      { "label": "B", "text": "7.5 N", "isCorrect": false, "explanation": "This incorrectly multiplies τ and r rather than dividing τ by r." },
+      { "label": "C", "text": "15.5 N", "isCorrect": false, "explanation": "This adds τ and r rather than dividing them." },
+      { "label": "D", "text": "0.033 N", "isCorrect": false, "explanation": "This incorrectly divides r by τ rather than τ by r." }
+    ],
+    "explanation": "F = τ/r = 15/0.5 = 30 N.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/torque",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-13",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-equilibrium",
+    "difficulty": "easy",
+    "stem": "What condition must be true for an object to be in rotational equilibrium?",
+    "choices": [
+      { "label": "A", "text": "The net torque acting on it must be zero", "isCorrect": true, "explanation": "Rotational equilibrium requires the sum of all torques to be zero, analogous to net force being zero for translational equilibrium." },
+      { "label": "B", "text": "The net force acting on it must be zero", "isCorrect": false, "explanation": "This is the condition for TRANSLATIONAL equilibrium, not rotational equilibrium specifically." },
+      { "label": "C", "text": "The object must not be rotating at all", "isCorrect": false, "explanation": "Rotational equilibrium means net torque is zero, which allows for either no rotation OR constant angular velocity -- not necessarily zero rotation." },
+      { "label": "D", "text": "The object's moment of inertia must be zero", "isCorrect": false, "explanation": "Moment of inertia being zero isn't the condition for rotational equilibrium -- net torque being zero is." }
+    ],
+    "explanation": "Rotational equilibrium requires the net torque on the object to be zero.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-equilibrium",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-14",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-equilibrium",
+    "difficulty": "hard",
+    "stem": "A 40 kg child sits 2 m from the pivot of a seesaw. How far from the pivot must a 20 kg child sit on the other side to balance the seesaw?",
+    "choices": [
+      { "label": "A", "text": "4 m", "isCorrect": true, "explanation": "For torque balance: m1gd1 = m2gd2 (g cancels), so d2 = m1d1/m2 = (40)(2)/20 = 4 m." },
+      { "label": "B", "text": "2 m", "isCorrect": false, "explanation": "This ignores the difference in mass between the two children -- the lighter child must sit farther away, not the same distance." },
+      { "label": "C", "text": "1 m", "isCorrect": false, "explanation": "This has the relationship backward -- the LIGHTER child needs to sit FARTHER (not closer) to balance the torque." },
+      { "label": "D", "text": "8 m", "isCorrect": false, "explanation": "This doesn't correctly solve the torque-balance equation for the required distance." }
+    ],
+    "explanation": "Balancing torques: m1d1 = m2d2, so d2 = (40)(2)/20 = 4 m.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-equilibrium",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-15",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-equilibrium",
+    "difficulty": "hard",
+    "stem": "Can an object be in translational equilibrium (net force = 0) but NOT in rotational equilibrium (net torque ≠ 0)?",
+    "choices": [
+      { "label": "A", "text": "Yes -- for example, two equal and opposite forces applied at different points on an object can have zero net force but still produce a nonzero net torque (causing it to spin)", "isCorrect": true, "explanation": "This is a classic example (a \"force couple\"): equal, opposite, non-collinear forces sum to zero net force but produce a nonzero net torque." },
+      { "label": "B", "text": "No -- translational equilibrium always guarantees rotational equilibrium too", "isCorrect": false, "explanation": "This isn't guaranteed -- forces can sum to zero (translational equilibrium) while still producing a net torque if they're applied at different points (not collinear)." },
+      { "label": "C", "text": "No -- if net force is zero, the object cannot be experiencing any forces at all", "isCorrect": false, "explanation": "Net force being zero doesn't mean no forces are acting -- multiple nonzero forces can still sum to a net force of zero." },
+      { "label": "D", "text": "This situation is physically impossible", "isCorrect": false, "explanation": "This situation is not only possible, but a well-known and important scenario in rotational mechanics -- a \"force couple.\"" }
+    ],
+    "explanation": "Yes -- equal, opposite, non-collinear forces (a \"force couple\") can have zero net force but a nonzero net torque.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-equilibrium",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-16",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-equilibrium",
+    "difficulty": "medium",
+    "stem": "A beam experiences a clockwise torque of 30 N·m and a counterclockwise torque of 30 N·m from two different forces. What is the net torque, and is the beam in rotational equilibrium?",
+    "choices": [
+      { "label": "A", "text": "Net torque = 0; the beam IS in rotational equilibrium", "isCorrect": true, "explanation": "Since the clockwise and counterclockwise torques are equal in magnitude, they cancel, giving a net torque of zero -- rotational equilibrium." },
+      { "label": "B", "text": "Net torque = 60 N·m; the beam is not in rotational equilibrium", "isCorrect": false, "explanation": "This incorrectly adds the two torques rather than recognizing they act in OPPOSITE rotational directions and should be subtracted (canceling)." },
+      { "label": "C", "text": "Net torque = 30 N·m; the beam is not in rotational equilibrium", "isCorrect": false, "explanation": "This doesn't correctly account for both torques canceling since they're equal in magnitude but opposite in rotational direction." },
+      { "label": "D", "text": "The net torque cannot be determined from this information", "isCorrect": false, "explanation": "The net torque CAN be determined: since the two torques are equal magnitude and opposite in rotational sense, they cancel to zero." }
+    ],
+    "explanation": "Equal and opposite (clockwise vs counterclockwise) torques cancel, giving a net torque of zero -- rotational equilibrium.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-equilibrium",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-17",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-equilibrium",
+    "difficulty": "medium",
+    "stem": "How does an object's \"center of gravity\" relate to its stability?",
+    "choices": [
+      { "label": "A", "text": "An object is more stable (less likely to tip over) when its center of gravity is lower and positioned over its base of support", "isCorrect": true, "explanation": "A lower center of gravity, positioned within the base of support, means gravity's torque about the tipping edge is less likely to cause the object to topple." },
+      { "label": "B", "text": "Center of gravity has no relationship to stability", "isCorrect": false, "explanation": "Center of gravity position is actually THE key factor determining an object's rotational stability against tipping." },
+      { "label": "C", "text": "An object is more stable when its center of gravity is higher", "isCorrect": false, "explanation": "This is backward -- a HIGHER center of gravity generally makes an object LESS stable (more prone to tipping), not more." },
+      { "label": "D", "text": "Stability only depends on an object's mass, not its center of gravity's position", "isCorrect": false, "explanation": "Stability depends heavily on the POSITION of the center of gravity relative to the base of support, not simply on total mass." }
+    ],
+    "explanation": "An object is more stable when its center of gravity is lower and positioned over its base of support.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-equilibrium",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-18",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-equilibrium",
+    "difficulty": "hard",
+    "stem": "A uniform 4 m beam is balanced on a pivot at its center, with a 30 N weight hung 1.5 m to the left of the pivot. Where must a 45 N weight be hung on the right side to keep the beam in rotational equilibrium?",
+    "choices": [
+      { "label": "A", "text": "1 m from the pivot", "isCorrect": true, "explanation": "Balancing torques: (30)(1.5) = (45)(d), so d = 45/45 = 1 m." },
+      { "label": "B", "text": "1.5 m from the pivot", "isCorrect": false, "explanation": "This ignores the fact that the second weight is heavier, so it needs to be placed CLOSER to the pivot, not the same distance." },
+      { "label": "C", "text": "2 m from the pivot", "isCorrect": false, "explanation": "This doesn't correctly solve the torque-balance equation using both given weights." },
+      { "label": "D", "text": "2.25 m from the pivot", "isCorrect": false, "explanation": "This doesn't correctly divide the torque (45 N·m) by the second weight's force (45 N)." }
+    ],
+    "explanation": "Balancing torques: (30)(1.5) = 45 N·m = (45)(d), so d = 1 m.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-equilibrium",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-19",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "moment-of-inertia-and-rotational-kinetic-energy",
+    "difficulty": "easy",
+    "stem": "What does \"moment of inertia\" (rotational inertia) describe?",
+    "choices": [
+      { "label": "A", "text": "An object's resistance to changes in its rotational motion, analogous to how mass resists changes in linear motion", "isCorrect": true, "explanation": "Moment of inertia is the rotational analog of mass -- it quantifies resistance to angular acceleration." },
+      { "label": "B", "text": "The total mass of an object", "isCorrect": false, "explanation": "Moment of inertia depends on both mass AND how that mass is distributed relative to the rotation axis, not just total mass alone." },
+      { "label": "C", "text": "An object's angular velocity", "isCorrect": false, "explanation": "Moment of inertia is a property of the object's mass distribution, not a measure of how fast it's currently rotating." },
+      { "label": "D", "text": "The force required to lift an object", "isCorrect": false, "explanation": "Moment of inertia relates to ROTATIONAL motion resistance, not the force needed to lift an object against gravity." }
+    ],
+    "explanation": "Moment of inertia describes an object's resistance to changes in rotational motion, analogous to mass for linear motion.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-20",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "moment-of-inertia-and-rotational-kinetic-energy",
+    "difficulty": "medium",
+    "stem": "Two objects have the same total mass, but Object A has its mass concentrated close to the rotation axis, while Object B has its mass spread farther from the axis. How do their moments of inertia compare?",
+    "choices": [
+      { "label": "A", "text": "Object B has a greater moment of inertia, since moment of inertia increases with distance from the axis (I∝r² for a point mass)", "isCorrect": true, "explanation": "Since I=mr² for a point mass (and similarly for extended distributions), mass farther from the axis contributes more to the moment of inertia." },
+      { "label": "B", "text": "Object A has a greater moment of inertia", "isCorrect": false, "explanation": "This is backward -- mass CLOSER to the axis contributes LESS to moment of inertia, not more." },
+      { "label": "C", "text": "Their moments of inertia are equal, since they have the same total mass", "isCorrect": false, "explanation": "Moment of inertia depends on the DISTRIBUTION of mass (not just total mass), so these two objects have different moments of inertia despite equal mass." },
+      { "label": "D", "text": "Moment of inertia doesn't depend on how mass is distributed", "isCorrect": false, "explanation": "Moment of inertia depends critically on mass distribution relative to the axis -- this is a defining feature distinguishing it from simple mass." }
+    ],
+    "explanation": "Since I∝r² for distributed mass, mass farther from the axis (Object B) results in a greater moment of inertia.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-21",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "moment-of-inertia-and-rotational-kinetic-energy",
+    "difficulty": "medium",
+    "stem": "A 2 kg point mass is located 0.5 m from a rotation axis. What is its moment of inertia about that axis?",
+    "choices": [
+      { "label": "A", "text": "0.5 kg·m^2", "isCorrect": true, "explanation": "I = mr² = (2)(0.5²) = (2)(0.25) = 0.5 kg·m²." },
+      { "label": "B", "text": "1 kg·m^2", "isCorrect": false, "explanation": "This is mr (not mr²) -- the radius must be SQUARED in the moment of inertia formula." },
+      { "label": "C", "text": "4 kg·m^2", "isCorrect": false, "explanation": "This doesn't correctly square r=0.5 before multiplying by m." },
+      { "label": "D", "text": "2.5 kg·m^2", "isCorrect": false, "explanation": "This adds m and r² rather than multiplying them." }
+    ],
+    "explanation": "I = mr² = (2)(0.25) = 0.5 kg·m².",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-22",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "moment-of-inertia-and-rotational-kinetic-energy",
+    "difficulty": "medium",
+    "stem": "What is the moment of inertia formula for a uniform solid disk (or cylinder) of mass $M$ and radius $R$, rotating about its central axis?",
+    "choices": [
+      { "label": "A", "text": "$I = \\frac{1}{2}MR^2$", "isCorrect": true, "explanation": "This is the standard moment of inertia for a uniform solid disk/cylinder about its central axis." },
+      { "label": "B", "text": "$I = MR^2$", "isCorrect": false, "explanation": "This is the formula for a thin RING or HOOP (mass concentrated at the rim), not a solid disk." },
+      { "label": "C", "text": "$I = \\frac{2}{5}MR^2$", "isCorrect": false, "explanation": "This is the formula for a SOLID SPHERE, not a disk/cylinder." },
+      { "label": "D", "text": "$I = \\frac{1}{12}MR^2$", "isCorrect": false, "explanation": "This resembles the formula for a rod about its center (with length, not radius), not a disk." }
+    ],
+    "explanation": "A uniform solid disk/cylinder has I=(1/2)MR² about its central axis.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-23",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "moment-of-inertia-and-rotational-kinetic-energy",
+    "difficulty": "medium",
+    "stem": "An object with moment of inertia $I=4\\text{ kg}\\cdot\\text{m}^2$ rotates at an angular velocity of 3 rad/s. What is its rotational kinetic energy?",
+    "choices": [
+      { "label": "A", "text": "18 J", "isCorrect": true, "explanation": "KE_rot = (1/2)Iω² = (0.5)(4)(3²) = (0.5)(4)(9) = 18 J." },
+      { "label": "B", "text": "12 J", "isCorrect": false, "explanation": "This omits the (1/2) factor and doesn't correctly square ω." },
+      { "label": "C", "text": "36 J", "isCorrect": false, "explanation": "This is double the correct value -- omitting the (1/2) factor in the kinetic energy formula." },
+      { "label": "D", "text": "6 J", "isCorrect": false, "explanation": "This doesn't correctly apply (1/2)Iω² using the given moment of inertia and angular velocity." }
+    ],
+    "explanation": "KE_rot = (1/2)Iω² = (0.5)(4)(9) = 18 J.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-24",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "moment-of-inertia-and-rotational-kinetic-energy",
+    "difficulty": "hard",
+    "stem": "Does a uniform rod have the same moment of inertia when rotated about its center versus about one of its ends?",
+    "choices": [
+      { "label": "A", "text": "No -- the moment of inertia about an end is 4 times larger than about the center ($\\frac{1}{3}ML^2$ vs $\\frac{1}{12}ML^2$), since more mass is, on average, farther from the end axis", "isCorrect": true, "explanation": "Moment of inertia depends on the specific axis chosen; for a rod, rotating about an end (where mass is, on average, farther away) gives a larger moment of inertia than about the center." },
+      { "label": "B", "text": "Yes -- moment of inertia is always the same for a given object, regardless of the axis chosen", "isCorrect": false, "explanation": "Moment of inertia explicitly DEPENDS on the choice of rotation axis -- the same object has different I values for different axes." },
+      { "label": "C", "text": "No -- the moment of inertia about the center is larger", "isCorrect": false, "explanation": "This is backward -- the moment of inertia about the END (1/3 ML²) is LARGER than about the center (1/12 ML²), not smaller." },
+      { "label": "D", "text": "Moment of inertia isn't defined for rods, only for disks and spheres", "isCorrect": false, "explanation": "Moment of inertia is well-defined for rods (and any rigid object) -- rods have standard formulas for different axes." }
+    ],
+    "explanation": "A rod's moment of inertia depends on the axis: 1/3 ML² about an end (larger) vs 1/12 ML² about the center (smaller).",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-25",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "angular-momentum",
+    "difficulty": "easy",
+    "stem": "What is the formula for angular momentum?",
+    "choices": [
+      { "label": "A", "text": "$L = I\\omega$, where I is the moment of inertia and ω is the angular velocity", "isCorrect": true, "explanation": "This is the standard formula for angular momentum, analogous to linear momentum p=mv." },
+      { "label": "B", "text": "$L = mv$", "isCorrect": false, "explanation": "This is the formula for LINEAR momentum, not angular momentum." },
+      { "label": "C", "text": "$L = \\tau/t$", "isCorrect": false, "explanation": "This isn't the direct formula for angular momentum -- L=Iω is the standard definition." },
+      { "label": "D", "text": "$L = I/\\omega$", "isCorrect": false, "explanation": "Angular momentum is the PRODUCT of I and ω, not their quotient." }
+    ],
+    "explanation": "Angular momentum is L = Iω.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/angular-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-26",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "angular-momentum",
+    "difficulty": "medium",
+    "stem": "An object has a moment of inertia of $2\\text{ kg}\\cdot\\text{m}^2$ and rotates at 5 rad/s. What is its angular momentum?",
+    "choices": [
+      { "label": "A", "text": "10 kg·m^2/s", "isCorrect": true, "explanation": "L = Iω = (2)(5) = 10 kg·m²/s." },
+      { "label": "B", "text": "7 kg·m^2/s", "isCorrect": false, "explanation": "This adds I and ω rather than multiplying them." },
+      { "label": "C", "text": "2.5 kg·m^2/s", "isCorrect": false, "explanation": "This incorrectly divides I by ω rather than multiplying them." },
+      { "label": "D", "text": "0.4 kg·m^2/s", "isCorrect": false, "explanation": "This incorrectly divides ω by I rather than multiplying them." }
+    ],
+    "explanation": "L = Iω = (2)(5) = 10 kg·m²/s.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/angular-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-27",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "angular-momentum",
+    "difficulty": "medium",
+    "stem": "Under what condition is angular momentum conserved?",
+    "choices": [
+      { "label": "A", "text": "When there is no net external torque acting on the system", "isCorrect": true, "explanation": "Conservation of angular momentum requires zero net external torque, analogous to how linear momentum conservation requires zero net external force." },
+      { "label": "B", "text": "When there is no net external force acting on the system", "isCorrect": false, "explanation": "This is the condition for LINEAR momentum conservation; angular momentum conservation specifically requires zero net external TORQUE." },
+      { "label": "C", "text": "Angular momentum is never conserved under any circumstances", "isCorrect": false, "explanation": "Angular momentum IS conserved under the right conditions (no net external torque) -- this is a fundamental conservation law." },
+      { "label": "D", "text": "Angular momentum is always conserved, regardless of external torques", "isCorrect": false, "explanation": "Angular momentum conservation specifically REQUIRES the absence of net external torque -- an external torque WOULD change it." }
+    ],
+    "explanation": "Angular momentum is conserved when there is no net external torque acting on the system.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/angular-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-28",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "angular-momentum",
+    "difficulty": "medium",
+    "stem": "A figure skater spinning with arms extended pulls her arms in close to her body. What happens to her angular velocity, and why?",
+    "choices": [
+      { "label": "A", "text": "Her angular velocity increases, because pulling her arms in decreases her moment of inertia, and angular momentum (L=Iω) must stay constant", "isCorrect": true, "explanation": "With no external torque, L=Iω is conserved; decreasing I (arms pulled in) requires ω to increase proportionally." },
+      { "label": "B", "text": "Her angular velocity decreases, because her moment of inertia increases", "isCorrect": false, "explanation": "Pulling her arms IN decreases (not increases) her moment of inertia, which by conservation of L means her angular velocity INCREASES, not decreases." },
+      { "label": "C", "text": "Her angular velocity stays the same, since her mass doesn't change", "isCorrect": false, "explanation": "Even though total mass is unchanged, the DISTRIBUTION of that mass (and thus moment of inertia) changes significantly, which does affect angular velocity via conservation of L." },
+      { "label": "D", "text": "Her angular momentum increases as she pulls her arms in", "isCorrect": false, "explanation": "Her angular momentum stays CONSTANT (conserved) throughout, since there's no external torque -- it's her angular velocity that changes, not her angular momentum." }
+    ],
+    "explanation": "By conservation of angular momentum (L=Iω constant), decreasing moment of inertia (arms pulled in) increases angular velocity.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/angular-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-29",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "angular-momentum",
+    "difficulty": "hard",
+    "stem": "A figure skater has a moment of inertia of $4\\text{ kg}\\cdot\\text{m}^2$ while spinning at 2 rad/s with arms extended. She pulls her arms in, reducing her moment of inertia to $2\\text{ kg}\\cdot\\text{m}^2$. What is her new angular velocity?",
+    "choices": [
+      { "label": "A", "text": "4 rad/s", "isCorrect": true, "explanation": "By conservation of angular momentum: I1ω1 = I2ω2, so (4)(2) = (2)ω2, giving ω2 = 8/2 = 4 rad/s." },
+      { "label": "B", "text": "2 rad/s", "isCorrect": false, "explanation": "This assumes angular velocity is unaffected by the change in moment of inertia, which contradicts conservation of angular momentum." },
+      { "label": "C", "text": "1 rad/s", "isCorrect": false, "explanation": "This has the relationship backward -- DECREASING moment of inertia should INCREASE (not decrease) angular velocity." },
+      { "label": "D", "text": "8 rad/s", "isCorrect": false, "explanation": "This doesn't correctly divide the initial angular momentum (8 kg·m²/s) by the new moment of inertia (2 kg·m²)." }
+    ],
+    "explanation": "Conservation of angular momentum: (4)(2) = (2)ω2, so ω2 = 4 rad/s.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/angular-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-mcq-30",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "angular-momentum",
+    "difficulty": "medium",
+    "stem": "How is conservation of angular momentum similar to conservation of linear momentum?",
+    "choices": [
+      { "label": "A", "text": "Both are conserved in the absence of an external influence -- linear momentum requires no net external force, while angular momentum requires no net external torque", "isCorrect": true, "explanation": "This is the direct rotational-linear analogy: force↔torque, and momentum conservation in both cases requires the absence of the corresponding external influence." },
+      { "label": "B", "text": "They are exactly the same quantity, just with different names", "isCorrect": false, "explanation": "Linear momentum (p=mv) and angular momentum (L=Iω) are distinct quantities describing different types of motion (straight-line vs rotational), even though the conservation principles are analogous." },
+      { "label": "C", "text": "Angular momentum conservation requires no external force, just like linear momentum", "isCorrect": false, "explanation": "Angular momentum conservation specifically requires no net external TORQUE, not force -- force and torque are different (though related) quantities." },
+      { "label": "D", "text": "There is no meaningful similarity between the two conservation laws", "isCorrect": false, "explanation": "There IS a strong, direct analogy between the two -- both are conservation laws requiring the absence of a corresponding external influence (force vs torque)." }
+    ],
+    "explanation": "Both are conserved absent an external influence: linear momentum needs no net external force, angular momentum needs no net external torque.",
+    "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/angular-momentum",
+    "reviewed": false
+  }
+]

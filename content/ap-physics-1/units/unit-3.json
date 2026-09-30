@@ -1,0 +1,12 @@
+{
+  "slug": "unit-3-circular-motion-and-gravitation",
+  "order": 3,
+  "name": "Circular Motion and Gravitation",
+  "weightingMin": 8,
+  "weightingMax": 13,
+  "topics": [
+    { "slug": "uniform-circular-motion", "order": 1, "name": "Uniform Circular Motion" },
+    { "slug": "gravitational-force", "order": 2, "name": "Newton's Law of Gravitation" },
+    { "slug": "gravitational-fields-and-orbits", "order": 3, "name": "Gravitational Fields and Orbits" }
+  ]
+}

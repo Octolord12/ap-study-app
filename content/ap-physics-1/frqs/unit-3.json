@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-phys1-u3-frq-1",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "prompt": "A 1000 kg car rounds a flat (unbanked) curve of radius 20 m at a constant speed of 14 m/s ($g=9.8\\text{ m/s}^2$).\n\n**(a)** Calculate the centripetal force required to keep the car on the curve.\n\n**(b)** What force provides this centripetal force?\n\n**(c)** Calculate the minimum coefficient of static friction between the tires and the road needed for the car to make the turn without skidding.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes Fc = mv^2/r = 9800 N" },
+      { "id": "r2", "points": 1, "description": "Correctly identifies static friction between the tires and road as the source of the centripetal force" },
+      { "id": "r3", "points": 1, "description": "Correctly sets up μN = Fc with N=mg to solve for μ" },
+      { "id": "r4", "points": 1, "description": "Correctly computes μ_min = v^2/(rg) = 1.0" }
+    ],
+    "sampleResponse": "(a) Fc = mv^2/r = (1000)(14^2)/20 = (1000)(196)/20 = 9800 N.\n(b) Static friction between the tires and the road provides this centripetal force.\n(c) The maximum available friction force is μN = μmg. Setting this equal to the required centripetal force: μmg = mv^2/r, so μ = v^2/(rg) = 196/(20)(9.8) = 196/196 = 1.0.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-frq-2",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "prompt": "Two small spheres, with masses $m_1 = 8$ kg and $m_2 = 2$ kg, have their centers separated by 0.5 m ($G=6.674\\times10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2$).\n\n**(a)** Calculate the gravitational force between the spheres.\n\n**(b)** If the distance between the spheres is doubled to 1.0 m, calculate the new gravitational force.\n\n**(c)** Express the ratio of the original force (part a) to the new force (part b), and explain why this ratio makes sense given the inverse-square nature of gravity.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes F = Gm1m2/r^2 ≈ 4.27×10^-9 N at r=0.5 m" },
+      { "id": "r2", "points": 1, "description": "Correctly recomputes F at r=1.0 m, getting ≈ 1.07×10^-9 N" },
+      { "id": "r3", "points": 1, "description": "Correctly computes the ratio of the two forces as 4:1 (or 4)" },
+      { "id": "r4", "points": 1, "description": "Correctly explains the ratio using the inverse-square law: doubling distance reduces force by a factor of 2^2=4" }
+    ],
+    "sampleResponse": "(a) F = Gm1m2/r^2 = (6.674×10^-11)(8)(2)/(0.5)^2 = (6.674×10^-11)(16)/0.25 ≈ 4.27×10^-9 N.\n(b) At r=1.0 m: F = (6.674×10^-11)(16)/(1.0)^2 ≈ 1.07×10^-9 N.\n(c) The ratio is 4.27×10^-9/1.07×10^-9 = 4. This makes sense because gravity follows an inverse-square law (F ∝ 1/r^2); doubling the distance should reduce the force by a factor of 2^2 = 4, which matches.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-frq-3",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "prompt": "A satellite orbits Earth (mass $M = 5.97\\times10^{24}$ kg) in a circular orbit of radius $6.8\\times10^6$ m ($G=6.674\\times10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2$).\n\n**(a)** Derive an expression for the orbital speed $v$ in terms of $G$, $M$, and $r$, by setting the gravitational force equal to the required centripetal force.\n\n**(b)** Calculate the satellite's orbital speed.\n\n**(c)** Calculate the satellite's orbital period, in minutes.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly sets GMm/r^2 = mv^2/r and simplifies (canceling the satellite's mass m) to get v = sqrt(GM/r)" },
+      { "id": "r2", "points": 1, "description": "Correctly computes v ≈ 7650 m/s" },
+      { "id": "r3", "points": 1, "description": "Correctly computes the orbital period using T = 2πr/v" },
+      { "id": "r4", "points": 1, "description": "Correctly converts to get T ≈ 93 minutes" }
+    ],
+    "sampleResponse": "(a) Setting gravitational force equal to centripetal force: GMm/r^2 = mv^2/r. The satellite's mass m cancels from both sides: GM/r = v^2, so v = sqrt(GM/r).\n(b) v = sqrt[(6.674×10^-11)(5.97×10^24)/(6.8×10^6)] ≈ 7650 m/s.\n(c) T = 2πr/v = 2π(6.8×10^6)/7650 ≈ 5582 s. Converting to minutes: 5582/60 ≈ 93 minutes.",
+    "reviewed": false
+  }
+]

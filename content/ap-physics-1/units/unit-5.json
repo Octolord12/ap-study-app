@@ -1,0 +1,13 @@
+{
+  "slug": "unit-5-momentum",
+  "order": 5,
+  "name": "Momentum",
+  "weightingMin": 8,
+  "weightingMax": 13,
+  "topics": [
+    { "slug": "momentum-and-impulse", "order": 1, "name": "Momentum and Impulse" },
+    { "slug": "conservation-of-momentum", "order": 2, "name": "Conservation of Momentum" },
+    { "slug": "collisions", "order": 3, "name": "Elastic and Inelastic Collisions" },
+    { "slug": "center-of-mass", "order": 4, "name": "Center of Mass" }
+  ]
+}

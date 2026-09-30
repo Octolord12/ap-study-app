@@ -1,0 +1,482 @@
+[
+  {
+    "id": "ap-phys1-u3-mcq-1",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "easy",
+    "stem": "In uniform circular motion, in what direction does the centripetal acceleration point?",
+    "choices": [
+      { "label": "A", "text": "Toward the center of the circle", "isCorrect": true, "explanation": "Centripetal acceleration always points toward the center of the circular path -- that's what \"centripetal\" means." },
+      { "label": "B", "text": "Tangent to the circle, in the direction of motion", "isCorrect": false, "explanation": "This describes the direction of the velocity vector, not the centripetal acceleration." },
+      { "label": "C", "text": "Away from the center of the circle", "isCorrect": false, "explanation": "This describes a (fictitious) \"centrifugal\" direction, not the real centripetal acceleration, which points inward." },
+      { "label": "D", "text": "It has no fixed direction and constantly reverses", "isCorrect": false, "explanation": "The centripetal acceleration continuously points toward the (moving) center location, but it does not \"reverse\" -- it consistently points radially inward." }
+    ],
+    "explanation": "Centripetal acceleration always points toward the center of the circular path.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-2",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "medium",
+    "stem": "An object moves in a circle at constant speed. Why does it still have a nonzero acceleration?",
+    "choices": [
+      { "label": "A", "text": "Because its velocity's direction is constantly changing, even though its speed (magnitude) stays constant", "isCorrect": true, "explanation": "Acceleration depends on the change in the VELOCITY VECTOR, not just speed -- and direction is constantly changing in circular motion." },
+      { "label": "B", "text": "It doesn't -- constant speed always means zero acceleration", "isCorrect": false, "explanation": "This confuses speed (a scalar) with velocity (a vector); constant SPEED doesn't imply constant VELOCITY if direction is changing." },
+      { "label": "C", "text": "Because gravity is pulling it downward at all times", "isCorrect": false, "explanation": "While gravity may act on the object, the acceleration described here (centripetal) is due to the changing DIRECTION of circular motion, not specifically gravity." },
+      { "label": "D", "text": "Because the object's mass is changing", "isCorrect": false, "explanation": "Mass isn't changing in this scenario -- the acceleration arises purely from the continuously changing direction of the velocity vector." }
+    ],
+    "explanation": "Even at constant speed, an object in circular motion accelerates because its velocity's DIRECTION continuously changes.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-3",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "medium",
+    "stem": "An object moves in a circle of radius 3 m at a constant speed of 6 m/s. What is its centripetal acceleration?",
+    "choices": [
+      { "label": "A", "text": "12 m/s^2", "isCorrect": true, "explanation": "a_c = v²/r = 6²/3 = 36/3 = 12 m/s²." },
+      { "label": "B", "text": "2 m/s^2", "isCorrect": false, "explanation": "This incorrectly divides v by r rather than v² by r." },
+      { "label": "C", "text": "18 m/s^2", "isCorrect": false, "explanation": "This doesn't correctly compute v²/r using the given speed and radius." },
+      { "label": "D", "text": "36 m/s^2", "isCorrect": false, "explanation": "This is v² alone, without dividing by the radius r." }
+    ],
+    "explanation": "a_c = v²/r = 36/3 = 12 m/s².",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-4",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "medium",
+    "stem": "A 2 kg object moves in a circle of radius 2 m at a constant speed of 4 m/s. What is the magnitude of the centripetal force acting on it?",
+    "choices": [
+      { "label": "A", "text": "16 N", "isCorrect": true, "explanation": "F_c = mv²/r = (2)(4²)/2 = (2)(16)/2 = 16 N." },
+      { "label": "B", "text": "8 N", "isCorrect": false, "explanation": "This doesn't correctly square the velocity before dividing by r and multiplying by m." },
+      { "label": "C", "text": "4 N", "isCorrect": false, "explanation": "This doesn't correctly apply the F=mv²/r formula using the given values." },
+      { "label": "D", "text": "32 N", "isCorrect": false, "explanation": "This is double the correct value, from an error in the division by r." }
+    ],
+    "explanation": "F_c = mv²/r = (2)(16)/2 = 16 N.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-5",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "hard",
+    "stem": "An object moves in a circle of radius 5 m, completing one full revolution every 2 s. What is its speed?",
+    "choices": [
+      { "label": "A", "text": "≈ 15.7 m/s", "isCorrect": true, "explanation": "Speed = circumference/period = 2πr/T = 2π(5)/2 = 5π ≈ 15.7 m/s." },
+      { "label": "B", "text": "2.5 m/s", "isCorrect": false, "explanation": "This is just r/T, missing the factor of 2π needed to convert radius/period into speed around the circumference." },
+      { "label": "C", "text": "10 m/s", "isCorrect": false, "explanation": "This is 2r/T, omitting the factor of π needed for the circumference." },
+      { "label": "D", "text": "31.4 m/s", "isCorrect": false, "explanation": "This is double the correct speed -- possibly from using diameter's circumference formula incorrectly." }
+    ],
+    "explanation": "Speed = 2πr/T = 2π(5)/2 = 5π ≈ 15.7 m/s.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-6",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "medium",
+    "stem": "What provides the centripetal force for a car rounding a flat, unbanked curve?",
+    "choices": [
+      { "label": "A", "text": "Static friction between the tires and the road", "isCorrect": true, "explanation": "On a flat curve, static friction between the tires and road provides the inward (centripetal) force needed to keep the car turning." },
+      { "label": "B", "text": "The car's engine directly", "isCorrect": false, "explanation": "The engine provides forward driving force, not the inward centripetal force needed for turning." },
+      { "label": "C", "text": "Air resistance", "isCorrect": false, "explanation": "Air resistance opposes motion; it doesn't provide the inward force that keeps the car on a curved path." },
+      { "label": "D", "text": "The normal force alone", "isCorrect": false, "explanation": "On a FLAT curve, the normal force is vertical (balancing weight) and has no horizontal (centripetal) component; friction supplies that instead." }
+    ],
+    "explanation": "On a flat curve, static friction between tires and road provides the centripetal force.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-7",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "hard",
+    "stem": "A centripetal force of 20 N acts on a 2 kg object moving in a circle of radius 4 m. What is the object's speed?",
+    "choices": [
+      { "label": "A", "text": "≈ 6.32 m/s", "isCorrect": true, "explanation": "From F=mv²/r: v = √(Fr/m) = √((20)(4)/2) = √40 ≈ 6.32 m/s." },
+      { "label": "B", "text": "10 m/s", "isCorrect": false, "explanation": "This is F/m alone, without taking the square root of the full Fr/m expression." },
+      { "label": "C", "text": "40 m/s", "isCorrect": false, "explanation": "This is Fr/m without taking the square root." },
+      { "label": "D", "text": "2.5 m/s", "isCorrect": false, "explanation": "This doesn't correctly solve F=mv²/r for v using the given values." }
+    ],
+    "explanation": "Solving F=mv²/r for v: v = √(Fr/m) = √40 ≈ 6.32 m/s.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-8",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "medium",
+    "stem": "If an object's speed in circular motion is doubled while the radius stays the same, how does the required centripetal force change?",
+    "choices": [
+      { "label": "A", "text": "It quadruples (increases by a factor of 4)", "isCorrect": true, "explanation": "Since F_c = mv²/r, and force depends on v SQUARED, doubling v quadruples the required force." },
+      { "label": "B", "text": "It doubles", "isCorrect": false, "explanation": "Force depends on v², not v directly -- doubling v quadruples the force, not just doubles it." },
+      { "label": "C", "text": "It stays the same", "isCorrect": false, "explanation": "Since F_c depends on v² (with radius constant), changing v does change the required force -- it doesn't stay the same." },
+      { "label": "D", "text": "It is cut in half", "isCorrect": false, "explanation": "Increasing speed increases (not decreases) the required centripetal force, since F_c is proportional to v²." }
+    ],
+    "explanation": "Since F_c=mv²/r depends on v², doubling v quadruples the required centripetal force.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-9",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "medium",
+    "stem": "If the radius of an object's circular path is doubled while its speed stays the same, how does its centripetal acceleration change?",
+    "choices": [
+      { "label": "A", "text": "It is cut in half", "isCorrect": true, "explanation": "Since a_c = v²/r, and a_c is inversely proportional to r, doubling r halves the centripetal acceleration (with v constant)." },
+      { "label": "B", "text": "It doubles", "isCorrect": false, "explanation": "a_c is INVERSELY proportional to r, so increasing r decreases (not increases) the acceleration." },
+      { "label": "C", "text": "It quadruples", "isCorrect": false, "explanation": "This would be the result of doubling v (since a_c depends on v²), not doubling r (which a_c is only inversely, linearly related to)." },
+      { "label": "D", "text": "It stays the same", "isCorrect": false, "explanation": "Since a_c=v²/r explicitly depends on r, changing r (with v fixed) does change the acceleration." }
+    ],
+    "explanation": "Since a_c=v²/r is inversely proportional to r, doubling r halves the centripetal acceleration.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-10",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "difficulty": "hard",
+    "stem": "A ball on a string moves in a vertical circle. At the TOP of the circle, what forces contribute to the centripetal force (directed downward, toward the center)?",
+    "choices": [
+      { "label": "A", "text": "Both the string tension and the ball's weight point toward the center (downward) at the top, so both contribute to the centripetal force", "isCorrect": true, "explanation": "At the top of a vertical circle, both gravity and tension point downward (toward the center), so both add together to provide the net centripetal force." },
+      { "label": "B", "text": "Only tension contributes; gravity has no effect at the top of the circle", "isCorrect": false, "explanation": "At the top, gravity points straight down -- exactly toward the center -- so it DOES contribute to the centripetal force, alongside tension." },
+      { "label": "C", "text": "Only gravity contributes; tension is zero at the top of the circle", "isCorrect": false, "explanation": "Tension is not necessarily zero at the top -- it depends on the ball's speed; at typical speeds above the minimum, both forces contribute." },
+      { "label": "D", "text": "Gravity and tension act in opposite directions at the top, partially canceling", "isCorrect": false, "explanation": "At the top of the circle, both tension (pulling toward the center) and gravity act in the SAME (downward, toward-center) direction, not opposite directions." }
+    ],
+    "explanation": "At the top of a vertical circle, both tension and gravity point toward the center (downward), so both contribute to the centripetal force.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-11",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "easy",
+    "stem": "What does Newton's Law of Universal Gravitation state about the gravitational force between two masses?",
+    "choices": [
+      { "label": "A", "text": "It is proportional to the product of the two masses and inversely proportional to the square of the distance between their centers", "isCorrect": true, "explanation": "This is the standard statement of Newton's Law of Gravitation: F = Gm1m2/r²." },
+      { "label": "B", "text": "It is proportional to the sum of the two masses and independent of distance", "isCorrect": false, "explanation": "Gravitational force depends on the PRODUCT (not sum) of the masses, and it strongly depends on distance (inverse square)." },
+      { "label": "C", "text": "It only depends on distance, not on either mass", "isCorrect": false, "explanation": "Gravitational force depends directly on both masses, not on distance alone." },
+      { "label": "D", "text": "It is constant regardless of mass or distance", "isCorrect": false, "explanation": "Gravitational force varies significantly with both the masses involved and their separation distance -- it is not constant." }
+    ],
+    "explanation": "Newton's Law of Gravitation: F = Gm1m2/r², proportional to the product of masses and inversely proportional to distance squared.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-12",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "medium",
+    "stem": "If the distance between two masses is doubled, how does the gravitational force between them change?",
+    "choices": [
+      { "label": "A", "text": "It becomes 1/4 of its original value", "isCorrect": true, "explanation": "Since F ∝ 1/r², doubling r reduces F by a factor of 1/2² = 1/4." },
+      { "label": "B", "text": "It becomes 1/2 of its original value", "isCorrect": false, "explanation": "Gravitational force follows an INVERSE SQUARE law, not a simple inverse law -- doubling distance reduces force by 1/4, not 1/2." },
+      { "label": "C", "text": "It stays the same", "isCorrect": false, "explanation": "Distance strongly affects gravitational force via the inverse-square relationship -- it does not stay the same." },
+      { "label": "D", "text": "It doubles", "isCorrect": false, "explanation": "Increasing distance DECREASES gravitational force (inverse square), it doesn't increase it." }
+    ],
+    "explanation": "Since F ∝ 1/r², doubling the distance reduces the force to 1/4 of its original value.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-13",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "medium",
+    "stem": "If one of two masses in a gravitational interaction is doubled while distance stays the same, how does the gravitational force change?",
+    "choices": [
+      { "label": "A", "text": "It doubles", "isCorrect": true, "explanation": "Since F ∝ m1·m2, doubling one mass (with the other and distance held fixed) directly doubles the force." },
+      { "label": "B", "text": "It quadruples", "isCorrect": false, "explanation": "Force is proportional to each mass to the FIRST power (not squared), so doubling just one mass only doubles the force, not quadruples it." },
+      { "label": "C", "text": "It stays the same", "isCorrect": false, "explanation": "Gravitational force does depend directly on each mass -- doubling one mass changes the force." },
+      { "label": "D", "text": "It is cut in half", "isCorrect": false, "explanation": "Doubling a mass INCREASES the gravitational force, since force is directly proportional to each mass." }
+    ],
+    "explanation": "Since F ∝ m1·m2, doubling one mass directly doubles the gravitational force.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-14",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "hard",
+    "stem": "Two masses, $m_1=5$ kg and $m_2=10$ kg, are separated by a distance of 2 m ($G=6.674\\times10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2$). What is the magnitude of the gravitational force between them?",
+    "choices": [
+      { "label": "A", "text": "≈ $8.34\\times10^{-10}$ N", "isCorrect": true, "explanation": "F = Gm1m2/r² = (6.674×10⁻¹¹)(5)(10)/(2²) = (6.674×10⁻¹¹)(50)/4 ≈ 8.34×10⁻¹⁰ N." },
+      { "label": "B", "text": "≈ $3.34\\times10^{-9}$ N", "isCorrect": false, "explanation": "This is 4 times too large -- likely from forgetting to divide by r²=4." },
+      { "label": "C", "text": "≈ $1.67\\times10^{-9}$ N", "isCorrect": false, "explanation": "This is double the correct value -- likely from dividing by r=2 instead of r²=4." },
+      { "label": "D", "text": "≈ $6.674\\times10^{-11}$ N", "isCorrect": false, "explanation": "This is just the gravitational constant G itself, without multiplying by the masses and dividing by r²." }
+    ],
+    "explanation": "F = Gm1m2/r² = (6.674×10⁻¹¹)(50)/4 ≈ 8.34×10⁻¹⁰ N -- an extremely small force, illustrating why gravity between everyday objects is undetectable.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-15",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "easy",
+    "stem": "The gravitational force between two masses is always:",
+    "choices": [
+      { "label": "A", "text": "Attractive -- gravity always pulls masses toward each other, never pushes them apart", "isCorrect": true, "explanation": "Gravitational force is always attractive; unlike some other fundamental forces, there is no repulsive gravity between masses." },
+      { "label": "B", "text": "Repulsive -- gravity always pushes masses apart", "isCorrect": false, "explanation": "Gravity is attractive, not repulsive -- masses are always pulled toward, not pushed away from, each other." },
+      { "label": "C", "text": "Sometimes attractive and sometimes repulsive, depending on the masses", "isCorrect": false, "explanation": "Gravitational force is always attractive regardless of the specific masses involved; there's no scenario where it becomes repulsive." },
+      { "label": "D", "text": "Zero unless the masses are touching", "isCorrect": false, "explanation": "Gravitational force acts at any distance (weakening with distance, per the inverse-square law), not only when objects are in direct contact." }
+    ],
+    "explanation": "Gravitational force is always attractive between any two masses.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-16",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "hard",
+    "stem": "According to Newton's Third Law, how does the gravitational force the Earth exerts on you compare to the gravitational force you exert on the Earth?",
+    "choices": [
+      { "label": "A", "text": "They are exactly equal in magnitude (and opposite in direction), regardless of the huge difference in mass", "isCorrect": true, "explanation": "Newton's Third Law applies to gravity too: the force you exert on the Earth is exactly equal in magnitude to the force the Earth exerts on you, just opposite in direction." },
+      { "label": "B", "text": "The Earth exerts a much larger force on you than you exert on it, because the Earth is so much more massive", "isCorrect": false, "explanation": "Despite the mass difference, Newton's Third Law guarantees the force pair is exactly EQUAL in magnitude -- mass difference affects resulting ACCELERATION, not the force itself." },
+      { "label": "C", "text": "You exert a much larger force on the Earth than it exerts on you", "isCorrect": false, "explanation": "This is backward -- the forces are equal in magnitude by Newton's Third Law, regardless of mass." },
+      { "label": "D", "text": "There is no force from you on the Earth at all", "isCorrect": false, "explanation": "By Newton's Third Law, if the Earth exerts a force on you, you must exert an equal and opposite force on the Earth." }
+    ],
+    "explanation": "By Newton's Third Law, the gravitational force you exert on Earth is exactly equal in magnitude to the force Earth exerts on you.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-17",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "medium",
+    "stem": "How does an object's \"weight\" differ from its \"mass\"?",
+    "choices": [
+      { "label": "A", "text": "Mass is an intrinsic, invariant property of an object; weight is the force of gravity on it, which depends on location (e.g., different on the Moon than on Earth)", "isCorrect": true, "explanation": "Mass doesn't change based on location, but weight (a force, W=mg) depends on the local gravitational field strength." },
+      { "label": "B", "text": "Mass and weight are exactly the same thing, just with different names", "isCorrect": false, "explanation": "Mass and weight are physically distinct: mass is invariant, while weight (a force) depends on the local gravitational acceleration." },
+      { "label": "C", "text": "Weight is intrinsic to the object; mass depends on location", "isCorrect": false, "explanation": "This reverses the correct relationship -- mass is the intrinsic property, while weight is what varies with location." },
+      { "label": "D", "text": "Weight is always exactly zero in space, and mass is always exactly zero in space too", "isCorrect": false, "explanation": "Mass never becomes zero in space; weight can become negligible in the absence of a nearby gravitational source, but this isn't the same as mass disappearing." }
+    ],
+    "explanation": "Mass is an object's intrinsic amount of matter (invariant); weight is the gravitational force on it, which depends on location.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-18",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "medium",
+    "stem": "If the distance between two masses is tripled, by what factor does the gravitational force change?",
+    "choices": [
+      { "label": "A", "text": "It becomes 1/9 of its original value", "isCorrect": true, "explanation": "Since F ∝ 1/r², tripling r reduces F by a factor of 1/3² = 1/9." },
+      { "label": "B", "text": "It becomes 1/3 of its original value", "isCorrect": false, "explanation": "Gravitational force follows an inverse SQUARE law, so tripling distance reduces force by 1/9, not simply 1/3." },
+      { "label": "C", "text": "It becomes 3 times larger", "isCorrect": false, "explanation": "Increasing distance decreases (not increases) gravitational force." },
+      { "label": "D", "text": "It becomes 9 times larger", "isCorrect": false, "explanation": "This has the correct factor (9) but the wrong direction -- increasing distance DECREASES the force by this factor, it doesn't increase it." }
+    ],
+    "explanation": "Since F ∝ 1/r², tripling the distance reduces the gravitational force to 1/9 of its original value.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-19",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "medium",
+    "stem": "Why don't we notice the gravitational attraction between everyday objects, like two people standing near each other?",
+    "choices": [
+      { "label": "A", "text": "Because the gravitational constant G is extremely small, making the force between ordinary (low-mass) objects negligibly tiny compared to forces like the Earth's gravity on them", "isCorrect": true, "explanation": "G ≈ 6.674×10⁻¹¹ is so small that even at close range, the gravitational force between two people is far too small to detect or feel." },
+      { "label": "B", "text": "Because there is no gravitational force between everyday objects at all", "isCorrect": false, "explanation": "Gravity acts between ANY two masses -- the force is real, just extremely small for everyday-sized objects." },
+      { "label": "C", "text": "Because gravity only acts on objects larger than a planet", "isCorrect": false, "explanation": "Gravity acts between any two masses regardless of size; it's simply far too weak to notice for ordinary-sized objects." },
+      { "label": "D", "text": "Because the objects are moving too fast for gravity to act", "isCorrect": false, "explanation": "The speed of the objects isn't the relevant factor here; the force is just extremely small due to the tiny value of G combined with everyday-sized masses." }
+    ],
+    "explanation": "The gravitational constant G is so small that gravity between ordinary-sized objects is far too weak to detect.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-20",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-force",
+    "difficulty": "hard",
+    "stem": "If both masses in a gravitational interaction are doubled (and distance stays the same), by what factor does the gravitational force change?",
+    "choices": [
+      { "label": "A", "text": "It becomes 4 times larger", "isCorrect": true, "explanation": "Since F ∝ m1·m2, doubling BOTH masses multiplies the force by 2×2=4." },
+      { "label": "B", "text": "It becomes 2 times larger", "isCorrect": false, "explanation": "This would be correct if only ONE mass were doubled; doubling BOTH masses multiplies the force by 2×2=4, not just 2." },
+      { "label": "C", "text": "It stays the same", "isCorrect": false, "explanation": "Gravitational force is directly proportional to each mass, so doubling both masses definitely increases the force." },
+      { "label": "D", "text": "It becomes 8 times larger", "isCorrect": false, "explanation": "This would apply if the masses were cubed in the formula; the actual relationship is F ∝ m1·m2, giving a factor of 4, not 8." }
+    ],
+    "explanation": "Since F ∝ m1·m2, doubling both masses multiplies the force by 2×2 = 4.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-21",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "medium",
+    "stem": "A planet has mass $6\\times10^{24}$ kg and radius $6.4\\times10^6$ m ($G=6.674\\times10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2$). What is the gravitational acceleration $g$ at its surface?",
+    "choices": [
+      { "label": "A", "text": "≈ 9.78 m/s^2", "isCorrect": true, "explanation": "g = GM/R² = (6.674×10⁻¹¹)(6×10²⁴)/(6.4×10⁶)² ≈ 9.78 m/s²." },
+      { "label": "B", "text": "≈ 6.674×10⁻¹¹ m/s^2", "isCorrect": false, "explanation": "This is just the gravitational constant G, without multiplying by the planet's mass and dividing by radius squared." },
+      { "label": "C", "text": "≈ 0.94 m/s^2", "isCorrect": false, "explanation": "This doesn't correctly apply g=GM/R² with the given mass and radius." },
+      { "label": "D", "text": "≈ 97.8 m/s^2", "isCorrect": false, "explanation": "This is 10 times too large -- likely from an error in the radius-squared term." }
+    ],
+    "explanation": "g = GM/R² = (6.674×10⁻¹¹)(6×10²⁴)/(6.4×10⁶)² ≈ 9.78 m/s² (close to Earth's actual surface gravity).",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-22",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "medium",
+    "stem": "For a satellite in a stable circular orbit around a planet, what force provides the centripetal force keeping it in orbit?",
+    "choices": [
+      { "label": "A", "text": "The gravitational force from the planet", "isCorrect": true, "explanation": "For orbiting satellites, gravity itself is the centripetal force -- there's no separate \"orbit\" force." },
+      { "label": "B", "text": "The satellite's own engines, continuously firing", "isCorrect": false, "explanation": "A stable orbit doesn't require continuous engine thrust; gravity alone provides the necessary centripetal force." },
+      { "label": "C", "text": "Air resistance", "isCorrect": false, "explanation": "Satellites orbit largely outside the atmosphere, where air resistance is negligible; it isn't what keeps them in orbit." },
+      { "label": "D", "text": "A repulsive \"centrifugal\" force pushing outward", "isCorrect": false, "explanation": "Centrifugal force is a fictitious, non-real force in this context -- the real force keeping the satellite in orbit is gravity, pulling it inward." }
+    ],
+    "explanation": "Gravity itself provides the centripetal force that keeps a satellite in orbit.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-23",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "hard",
+    "stem": "A satellite orbits a planet of mass $6\\times10^{24}$ kg at a radius of $7\\times10^6$ m ($G=6.674\\times10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2$). What is its orbital speed?",
+    "choices": [
+      { "label": "A", "text": "≈ 7560 m/s", "isCorrect": true, "explanation": "Setting gravity equal to centripetal force: GMm/r² = mv²/r, which simplifies to v=√(GM/r) = √[(6.674×10⁻¹¹)(6×10²⁴)/(7×10⁶)] ≈ 7560 m/s." },
+      { "label": "B", "text": "≈ 57.2 million m/s", "isCorrect": false, "explanation": "This doesn't correctly take the square root of GM/r -- it appears to use GM/r directly without the square root." },
+      { "label": "C", "text": "≈ 3780 m/s", "isCorrect": false, "explanation": "This is roughly half the correct value." },
+      { "label": "D", "text": "≈ 9.8 m/s", "isCorrect": false, "explanation": "This resembles the value of g, not the orbital velocity formula v=√(GM/r)." }
+    ],
+    "explanation": "Setting gravitational force equal to centripetal force gives v=√(GM/r) ≈ 7560 m/s.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-24",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "hard",
+    "stem": "If a satellite orbits at a higher altitude (larger orbital radius), how does its required orbital speed change, compared to a satellite at a lower altitude?",
+    "choices": [
+      { "label": "A", "text": "It is slower, since $v=\\sqrt{GM/r}$ decreases as $r$ increases", "isCorrect": true, "explanation": "Since orbital speed v=√(GM/r) is inversely related to the square root of r, a larger orbital radius means a smaller (slower) required orbital speed." },
+      { "label": "B", "text": "It is faster, since higher orbits require more speed to maintain", "isCorrect": false, "explanation": "This is backward -- higher orbits (larger r) actually require LESS orbital speed, not more, per v=√(GM/r)." },
+      { "label": "C", "text": "Orbital speed is completely independent of orbital radius", "isCorrect": false, "explanation": "Orbital speed does depend on radius, via v=√(GM/r) -- it is not independent of r." },
+      { "label": "D", "text": "Orbital speed depends only on the satellite's own mass, not on orbital radius", "isCorrect": false, "explanation": "Orbital speed is actually independent of the SATELLITE's mass, but it does depend on the orbital radius r and the central body's mass M." }
+    ],
+    "explanation": "Since v=√(GM/r), a larger orbital radius corresponds to a smaller (slower) required orbital speed.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-25",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "hard",
+    "stem": "Kepler's Third Law states that the square of a planet's (or satellite's) orbital period is proportional to the cube of its orbital radius: $T^2 \\propto r^3$. If Planet B orbits at 4 times the radius of Planet A (same central star), how does Planet B's orbital period compare to Planet A's?",
+    "choices": [
+      { "label": "A", "text": "Planet B's period is 8 times longer than Planet A's", "isCorrect": true, "explanation": "T ∝ r^1.5, so if r increases by a factor of 4, T increases by a factor of 4^1.5 = 8." },
+      { "label": "B", "text": "Planet B's period is 4 times longer", "isCorrect": false, "explanation": "This would be true if T were directly proportional to r, but the actual relationship is T ∝ r^1.5, giving a factor of 8, not 4." },
+      { "label": "C", "text": "Planet B's period is 16 times longer", "isCorrect": false, "explanation": "This would be true if T were proportional to r² directly, but T² ∝ r³ gives T ∝ r^1.5, so the factor is 8, not 16." },
+      { "label": "D", "text": "Planet B's period is the same as Planet A's", "isCorrect": false, "explanation": "Since T depends on r via Kepler's Third Law, a fourfold increase in r does change (increase) the orbital period." }
+    ],
+    "explanation": "From T² ∝ r³, T ∝ r^1.5. With r increased by 4x: T increases by 4^1.5 = 8x.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-26",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "hard",
+    "stem": "Why do astronauts in the International Space Station (ISS) experience \"weightlessness,\" even though Earth's gravity at that altitude is still nearly as strong as at the surface?",
+    "choices": [
+      { "label": "A", "text": "The ISS (and everything in it) is in continuous free fall around the Earth -- gravity is still acting, but there's no normal force from a floor to create a sensation of weight", "isCorrect": true, "explanation": "Orbiting is a state of continuous free fall; astronauts feel \"weightless\" because there's no supporting surface pushing back on them, not because gravity has disappeared." },
+      { "label": "B", "text": "Gravity doesn't exist at that altitude", "isCorrect": false, "explanation": "Gravity is still nearly as strong at the ISS's altitude as at Earth's surface -- it's what keeps the ISS in orbit at all." },
+      { "label": "C", "text": "The ISS actively cancels out gravity using onboard equipment", "isCorrect": false, "explanation": "There is no such gravity-canceling equipment; the weightless sensation is purely due to the state of continuous free fall." },
+      { "label": "D", "text": "Astronauts' mass becomes zero in orbit", "isCorrect": false, "explanation": "Mass is invariant and does NOT become zero in orbit -- only the sensation of weight (normal force) is absent." }
+    ],
+    "explanation": "Astronauts feel weightless because they (and the ISS) are in continuous free fall, not because gravity is absent.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-27",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "medium",
+    "stem": "Does the orbital period of a satellite depend on the satellite's own mass?",
+    "choices": [
+      { "label": "A", "text": "No -- orbital period depends only on the orbital radius and the mass of the central body being orbited, not the satellite's own mass", "isCorrect": true, "explanation": "In T=2π√(r³/GM), M refers to the CENTRAL body's mass; the orbiting satellite's own mass cancels out of the equation entirely." },
+      { "label": "B", "text": "Yes -- a more massive satellite always orbits faster", "isCorrect": false, "explanation": "The orbiting object's own mass cancels out of the derivation (from setting gravitational force equal to required centripetal force), so it has no effect on orbital period." },
+      { "label": "C", "text": "Yes -- a more massive satellite always orbits slower", "isCorrect": false, "explanation": "The satellite's own mass does not affect its orbital period at all, in either direction." },
+      { "label": "D", "text": "It depends on the shape of the satellite, not its mass", "isCorrect": false, "explanation": "This question is about mass, and mass genuinely doesn't affect orbital period; shape isn't relevant to this idealized point-mass model either." }
+    ],
+    "explanation": "The satellite's own mass cancels out of the orbital equations; only the central body's mass and the orbital radius matter.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-28",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "medium",
+    "stem": "What is meant by \"gravitational field strength\" at a point in space?",
+    "choices": [
+      { "label": "A", "text": "The gravitational force per unit mass that would be experienced by an object placed at that point", "isCorrect": true, "explanation": "Gravitational field strength, g = F/m, describes the force per unit mass a test object would feel at a given location." },
+      { "label": "B", "text": "The total gravitational force on every object in the universe", "isCorrect": false, "explanation": "Field strength is a LOCAL, per-unit-mass quantity at a specific point, not a total summed over every object." },
+      { "label": "C", "text": "The distance from the center of a planet", "isCorrect": false, "explanation": "Distance is a separate quantity used to CALCULATE field strength, but field strength itself represents force per unit mass, not distance." },
+      { "label": "D", "text": "A quantity that has no relationship to force", "isCorrect": false, "explanation": "Gravitational field strength is directly defined in terms of force (per unit mass), so it's fundamentally related to force." }
+    ],
+    "explanation": "Gravitational field strength is the gravitational force per unit mass (g = F/m) at a given point.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-29",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "hard",
+    "stem": "How does gravitational field strength ($g$) at a planet's surface change if you double the planet's radius while keeping its mass the same?",
+    "choices": [
+      { "label": "A", "text": "It becomes 1/4 of its original value", "isCorrect": true, "explanation": "Since g=GM/R², and g is inversely proportional to R², doubling R (with M fixed) reduces g by a factor of 1/4." },
+      { "label": "B", "text": "It becomes 1/2 of its original value", "isCorrect": false, "explanation": "g depends on R SQUARED (inverse square), so doubling R reduces g by 1/4, not simply 1/2." },
+      { "label": "C", "text": "It doubles", "isCorrect": false, "explanation": "Increasing radius DECREASES (not increases) surface gravity, since g is inversely related to R²." },
+      { "label": "D", "text": "It stays the same, since mass didn't change", "isCorrect": false, "explanation": "Even though mass is unchanged, g=GM/R² also depends on radius -- changing R alone does change g." }
+    ],
+    "explanation": "Since g=GM/R² is inversely proportional to R², doubling R (with M fixed) reduces g to 1/4 of its original value.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-mcq-30",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "difficulty": "medium",
+    "stem": "Two planets orbit the same star. Planet X has a shorter orbital period than Planet Y. What can you conclude about their orbital radii?",
+    "choices": [
+      { "label": "A", "text": "Planet X has a smaller orbital radius than Planet Y", "isCorrect": true, "explanation": "By Kepler's Third Law (T² ∝ r³), a shorter period corresponds to a smaller orbital radius." },
+      { "label": "B", "text": "Planet X has a larger orbital radius than Planet Y", "isCorrect": false, "explanation": "This is backward -- a SHORTER period corresponds to a SMALLER orbital radius, not larger, per Kepler's Third Law." },
+      { "label": "C", "text": "Their orbital radii must be equal", "isCorrect": false, "explanation": "If their periods differ, their orbital radii must also differ (per Kepler's Third Law), since T is a monotonic function of r for a fixed central mass." },
+      { "label": "D", "text": "Orbital period and orbital radius are unrelated", "isCorrect": false, "explanation": "Kepler's Third Law establishes a direct, specific relationship (T² ∝ r³) between orbital period and radius." }
+    ],
+    "explanation": "By Kepler's Third Law, a shorter orbital period corresponds to a smaller orbital radius.",
+    "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
+    "reviewed": false
+  }
+]

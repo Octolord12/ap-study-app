@@ -1,0 +1,14 @@
+{
+  "slug": "unit-7-torque-and-rotational-motion",
+  "order": 7,
+  "name": "Torque and Rotational Motion",
+  "weightingMin": 8,
+  "weightingMax": 13,
+  "topics": [
+    { "slug": "rotational-kinematics", "order": 1, "name": "Rotational Kinematics" },
+    { "slug": "torque", "order": 2, "name": "Torque" },
+    { "slug": "rotational-equilibrium", "order": 3, "name": "Rotational Equilibrium" },
+    { "slug": "moment-of-inertia-and-rotational-kinetic-energy", "order": 4, "name": "Moment of Inertia and Rotational Kinetic Energy" },
+    { "slug": "angular-momentum", "order": 5, "name": "Angular Momentum and Its Conservation" }
+  ]
+}

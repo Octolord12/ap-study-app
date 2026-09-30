@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ap-phys1-u6-frq-1",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "restoring-forces-and-shm",
+    "prompt": "A 5 kg mass is attached to a horizontal spring with spring constant $k=20\\text{ N/m}$ and displaced 0.4 m from equilibrium.\n\n**(a)** Calculate the magnitude of the restoring force on the mass at this displacement.\n\n**(b)** Calculate the period of oscillation.\n\n**(c)** Calculate the angular frequency $\\omega$, and verify that it is consistent with your answer to part (b) using $\\omega = 2\\pi/T$.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes |F|=kx=8 N" },
+      { "id": "r2", "points": 1, "description": "Correctly computes T=2π√(m/k)≈3.14 s" },
+      { "id": "r3", "points": 1, "description": "Correctly computes ω=√(k/m)=2 rad/s" },
+      { "id": "r4", "points": 1, "description": "Correctly verifies ω=2π/T also gives 2 rad/s, matching part (c)'s direct calculation" }
+    ],
+    "sampleResponse": "(a) |F| = kx = (20)(0.4) = 8 N.\n(b) T = 2π√(m/k) = 2π√(5/20) = 2π√0.25 = 2π(0.5) = π ≈ 3.14 s.\n(c) ω = √(k/m) = √(20/5) = √4 = 2 rad/s. Checking: ω = 2π/T = 2π/π = 2 rad/s, which matches.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-frq-2",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "prompt": "A pendulum clock needs a period of exactly 2 s to keep accurate time ($g=9.8\\text{ m/s}^2$).\n\n**(a)** Starting from the pendulum period formula, solve for the required length $L$ in terms of $T$ and $g$.\n\n**(b)** Calculate the numerical value of $L$ needed.\n\n**(c)** If the clock is accidentally built with a pendulum that is too long, will the period be longer or shorter than 2 s? Explain using the period formula.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly rearranges T=2π√(L/g) to get L=g(T/2π)^2" },
+      { "id": "r2", "points": 1, "description": "Correctly substitutes T=2 and g=9.8 into the rearranged formula" },
+      { "id": "r3", "points": 1, "description": "Correctly computes L ≈ 0.993 m" },
+      { "id": "r4", "points": 1, "description": "Correctly explains that a longer pendulum has a longer period, since T is proportional to √L (an increasing function of L)" }
+    ],
+    "sampleResponse": "(a) Starting from T=2π√(L/g): T/(2π) = √(L/g), so (T/(2π))^2 = L/g, giving L = g(T/(2π))^2.\n(b) L = (9.8)(2/(2π))^2 = (9.8)(1/π)^2 ≈ (9.8)(0.1013) ≈ 0.993 m.\n(c) A pendulum that is too long will have a LONGER period than 2 s. Since T=2π√(L/g) is an increasing function of L (T grows as L grows), a larger L produces a larger T.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-frq-3",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "energy-in-shm",
+    "prompt": "A 2 kg mass oscillates on a spring with spring constant $k=18\\text{ N/m}$ and amplitude $A=0.4$ m.\n\n**(a)** Calculate the total mechanical energy of the system.\n\n**(b)** Calculate the maximum speed of the mass.\n\n**(c)** Calculate the mass's kinetic energy at the moment its displacement is $x=0.2$ m.",
+    "pointValue": 4,
+    "rubric": [
+      { "id": "r1", "points": 1, "description": "Correctly computes E = (1/2)kA^2 = 1.44 J" },
+      { "id": "r2", "points": 1, "description": "Correctly computes v_max using either ωA (with ω=√(k/m)) or √(2E/m), getting 1.2 m/s" },
+      { "id": "r3", "points": 1, "description": "Correctly computes the potential energy at x=0.2 m: PE=(1/2)kx^2=0.36 J" },
+      { "id": "r4", "points": 1, "description": "Correctly uses E=KE+PE to find KE = 1.44-0.36 = 1.08 J" }
+    ],
+    "sampleResponse": "(a) E = (1/2)kA^2 = (0.5)(18)(0.4^2) = (0.5)(18)(0.16) = 1.44 J.\n(b) ω = √(k/m) = √(18/2) = √9 = 3 rad/s. v_max = ωA = (3)(0.4) = 1.2 m/s.\n(c) PE at x=0.2 m: PE = (1/2)kx^2 = (0.5)(18)(0.04) = 0.36 J. By conservation of energy: KE = E-PE = 1.44-0.36 = 1.08 J.",
+    "reviewed": false
+  }
+]

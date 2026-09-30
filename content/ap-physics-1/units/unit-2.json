@@ -1,0 +1,14 @@
+{
+  "slug": "unit-2-dynamics",
+  "order": 2,
+  "name": "Dynamics",
+  "weightingMin": 14,
+  "weightingMax": 18,
+  "topics": [
+    { "slug": "newtons-third-law-and-systems", "order": 1, "name": "Systems and Newton's Third Law" },
+    { "slug": "free-body-diagrams", "order": 2, "name": "Free-Body Diagrams" },
+    { "slug": "newtons-first-law", "order": 3, "name": "Newton's First Law and Equilibrium" },
+    { "slug": "newtons-second-law", "order": 4, "name": "Newton's Second Law" },
+    { "slug": "applications-of-newtons-second-law", "order": 5, "name": "Applications: Friction, Inclines, and Pulleys" }
+  ]
+}

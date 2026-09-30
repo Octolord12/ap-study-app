@@ -1,0 +1,13 @@
+{
+  "slug": "unit-8-fluids",
+  "order": 8,
+  "name": "Fluids",
+  "weightingMin": 8,
+  "weightingMax": 13,
+  "topics": [
+    { "slug": "density-and-pressure", "order": 1, "name": "Density and Pressure" },
+    { "slug": "pascals-principle", "order": 2, "name": "Pascal's Principle" },
+    { "slug": "buoyancy", "order": 3, "name": "Buoyancy" },
+    { "slug": "fluid-dynamics", "order": 4, "name": "Fluids in Motion: Continuity and Bernoulli's Equation" }
+  ]
+}

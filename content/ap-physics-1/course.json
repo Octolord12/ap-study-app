@@ -1,0 +1,13 @@
+{
+  "slug": "ap-physics-1",
+  "name": "AP Physics 1",
+  "description": "An algebra-based introduction to mechanics: kinematics, dynamics, circular motion and gravitation, energy, momentum, simple harmonic motion, torque and rotational motion, and fluids, aligned to the redesigned (2024-25) College Board Course and Exam Description.",
+  "colorTheme": "orange",
+  "examFormat": {
+    "totalDurationMinutes": 150,
+    "sections": [
+      { "type": "MCQ", "questionCount": 40, "durationMinutes": 80, "scoreWeight": 0.5 },
+      { "type": "FRQ", "questionCount": 4, "durationMinutes": 70, "scoreWeight": 0.5, "calculatorAllowed": true }
+    ]
+  }
+}

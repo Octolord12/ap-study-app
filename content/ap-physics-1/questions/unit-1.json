@@ -1,0 +1,526 @@
+[
+  {
+    "id": "ap-phys1-u1-mcq-1",
+    "unit": "unit-1-kinematics",
+    "topic": "position-velocity-acceleration",
+    "difficulty": "easy",
+    "stem": "What is the difference between \"distance\" and \"displacement\"?",
+    "choices": [
+      { "label": "A", "text": "Distance is the total length of path traveled (scalar); displacement is the straight-line change in position from start to end (vector)", "isCorrect": true, "explanation": "Distance is a scalar measuring total path length; displacement is a vector measuring the net change in position." },
+      { "label": "B", "text": "They are always exactly the same value", "isCorrect": false, "explanation": "They are equal only when motion is in a straight line with no reversal in direction; in general they differ." },
+      { "label": "C", "text": "Distance is a vector and displacement is a scalar", "isCorrect": false, "explanation": "This reverses the correct classification -- distance is the scalar, displacement is the vector." },
+      { "label": "D", "text": "Displacement is always greater than distance", "isCorrect": false, "explanation": "Displacement's magnitude is never greater than distance traveled; it can be equal to or less than it." }
+    ],
+    "explanation": "Distance is the total scalar path length traveled; displacement is the vector representing the net change in position.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-2",
+    "unit": "unit-1-kinematics",
+    "topic": "position-velocity-acceleration",
+    "difficulty": "medium",
+    "stem": "A runner jogs 300 m east, then turns around and jogs 100 m west. What is the magnitude of the runner's total displacement?",
+    "choices": [
+      { "label": "A", "text": "200 m", "isCorrect": true, "explanation": "Net displacement = 300 m east - 100 m west = 200 m east; magnitude is 200 m." },
+      { "label": "B", "text": "400 m", "isCorrect": false, "explanation": "This is the total distance traveled (300+100), not the net displacement." },
+      { "label": "C", "text": "300 m", "isCorrect": false, "explanation": "This ignores the 100 m walked back west, which partially cancels the eastward displacement." },
+      { "label": "D", "text": "100 m", "isCorrect": false, "explanation": "This only accounts for the return leg, not the net effect of both legs of the trip." }
+    ],
+    "explanation": "Displacement is a vector sum: 300 m east minus 100 m west leaves a net 200 m east.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-3",
+    "unit": "unit-1-kinematics",
+    "topic": "position-velocity-acceleration",
+    "difficulty": "medium",
+    "stem": "An object's position changes from $x = 2$ m to $x = 10$ m over a time interval of 4 s. What is its average velocity?",
+    "choices": [
+      { "label": "A", "text": "2 m/s", "isCorrect": true, "explanation": "Average velocity = Δx/Δt = (10-2)/4 = 8/4 = 2 m/s." },
+      { "label": "B", "text": "8 m/s", "isCorrect": false, "explanation": "This is the displacement (8 m) alone, not divided by the time interval." },
+      { "label": "C", "text": "0.5 m/s", "isCorrect": false, "explanation": "This incorrectly divides the time by the displacement rather than displacement by time." },
+      { "label": "D", "text": "4 m/s", "isCorrect": false, "explanation": "This doesn't correctly compute Δx/Δt using the given position and time values." }
+    ],
+    "explanation": "Average velocity is the displacement divided by the elapsed time: (10-2)/4 = 2 m/s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-4",
+    "unit": "unit-1-kinematics",
+    "topic": "position-velocity-acceleration",
+    "difficulty": "hard",
+    "stem": "A car drives 100 m east, then immediately 100 m west, in a total time of 20 s. What are the car's average speed and average velocity, respectively?",
+    "choices": [
+      { "label": "A", "text": "Average speed = 10 m/s; average velocity = 0 m/s", "isCorrect": true, "explanation": "Average speed = total distance/time = 200/20 = 10 m/s. Average velocity = net displacement/time = 0/20 = 0 m/s, since the car returns to its starting point." },
+      { "label": "B", "text": "Average speed = 0 m/s; average velocity = 10 m/s", "isCorrect": false, "explanation": "This swaps the two results -- speed (using total distance) is 10 m/s, while velocity (using net displacement) is 0." },
+      { "label": "C", "text": "Average speed = 5 m/s; average velocity = 5 m/s", "isCorrect": false, "explanation": "Neither of these matches the correct total-distance or net-displacement calculation." },
+      { "label": "D", "text": "Average speed = 10 m/s; average velocity = 10 m/s", "isCorrect": false, "explanation": "The average velocity is not 10 m/s; since the car returns to where it started, its net displacement -- and thus average velocity -- is zero." }
+    ],
+    "explanation": "Average speed uses total distance (200 m/20 s = 10 m/s); average velocity uses net displacement (0 m/20 s = 0 m/s).",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-5",
+    "unit": "unit-1-kinematics",
+    "topic": "position-velocity-acceleration",
+    "difficulty": "medium",
+    "stem": "What does \"instantaneous velocity\" refer to?",
+    "choices": [
+      { "label": "A", "text": "The velocity of an object at a single specific moment in time", "isCorrect": true, "explanation": "Instantaneous velocity is the velocity at one specific instant, as opposed to averaged over an interval." },
+      { "label": "B", "text": "The velocity averaged over the entire trip", "isCorrect": false, "explanation": "This describes average velocity, not instantaneous velocity." },
+      { "label": "C", "text": "The maximum velocity reached during the motion", "isCorrect": false, "explanation": "Instantaneous velocity refers to velocity at a given moment, not specifically the maximum value reached." },
+      { "label": "D", "text": "The velocity only at the very end of the motion", "isCorrect": false, "explanation": "Instantaneous velocity can be evaluated at any moment, not just the final one." }
+    ],
+    "explanation": "Instantaneous velocity is an object's velocity at one specific moment in time.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-6",
+    "unit": "unit-1-kinematics",
+    "topic": "position-velocity-acceleration",
+    "difficulty": "medium",
+    "stem": "An object's velocity changes from 5 m/s to 15 m/s over a time interval of 4 s. What is its average acceleration?",
+    "choices": [
+      { "label": "A", "text": "2.5 m/s^2", "isCorrect": true, "explanation": "Average acceleration = Δv/Δt = (15-5)/4 = 10/4 = 2.5 m/s²." },
+      { "label": "B", "text": "10 m/s^2", "isCorrect": false, "explanation": "This is the change in velocity (10 m/s) alone, not divided by the time interval." },
+      { "label": "C", "text": "0.4 m/s^2", "isCorrect": false, "explanation": "This incorrectly divides the time by the velocity change rather than velocity change by time." },
+      { "label": "D", "text": "20 m/s^2", "isCorrect": false, "explanation": "This doesn't correctly compute Δv/Δt using the given velocity and time values." }
+    ],
+    "explanation": "Average acceleration is Δv/Δt: (15-5)/4 = 2.5 m/s².",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-7",
+    "unit": "unit-1-kinematics",
+    "topic": "position-velocity-acceleration",
+    "difficulty": "hard",
+    "stem": "Can an object have a negative acceleration while speeding up?",
+    "choices": [
+      { "label": "A", "text": "Yes -- if the object is moving in the negative direction, a negative acceleration (in the same direction as the velocity) increases its speed", "isCorrect": true, "explanation": "Sign only indicates direction; acceleration in the same direction as velocity always increases speed, regardless of the sign convention chosen." },
+      { "label": "B", "text": "No -- negative acceleration always means the object is slowing down", "isCorrect": false, "explanation": "This is a common misconception -- \"negative\" just means the acceleration vector points in the negative direction, which speeds up an object already moving in that direction." },
+      { "label": "C", "text": "No -- acceleration can never be negative under any circumstances", "isCorrect": false, "explanation": "Acceleration is a vector and its sign simply reflects direction relative to the chosen positive axis; it can absolutely be negative." },
+      { "label": "D", "text": "Yes, but only if the object is momentarily at rest", "isCorrect": false, "explanation": "This isn't a necessary condition -- an object already moving in the negative direction speeds up under negative acceleration regardless of whether it was ever at rest." }
+    ],
+    "explanation": "An object speeds up whenever its acceleration points in the same direction as its velocity -- regardless of whether that direction is labeled positive or negative.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-8",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "difficulty": "easy",
+    "stem": "On a position-vs-time graph, what does the slope at any point represent?",
+    "choices": [
+      { "label": "A", "text": "The instantaneous velocity at that point", "isCorrect": true, "explanation": "The slope of a position-time graph, dx/dt, is by definition the instantaneous velocity." },
+      { "label": "B", "text": "The instantaneous acceleration at that point", "isCorrect": false, "explanation": "Acceleration is the slope of a VELOCITY-time graph, not a position-time graph." },
+      { "label": "C", "text": "The total distance traveled", "isCorrect": false, "explanation": "Total distance isn't read directly from the slope of a position-time graph." },
+      { "label": "D", "text": "The object's mass", "isCorrect": false, "explanation": "Mass has no relationship to the slope of a position-time graph." }
+    ],
+    "explanation": "The slope of a position-time graph represents instantaneous velocity.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-9",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "difficulty": "easy",
+    "stem": "On a velocity-vs-time graph, what does the slope at any point represent?",
+    "choices": [
+      { "label": "A", "text": "The instantaneous acceleration at that point", "isCorrect": true, "explanation": "The slope of a velocity-time graph, dv/dt, is by definition the instantaneous acceleration." },
+      { "label": "B", "text": "The instantaneous velocity at that point", "isCorrect": false, "explanation": "Velocity is read directly from the vertical axis value, not the slope, of a velocity-time graph." },
+      { "label": "C", "text": "The displacement", "isCorrect": false, "explanation": "Displacement is the AREA under a velocity-time graph, not its slope." },
+      { "label": "D", "text": "The object's position", "isCorrect": false, "explanation": "Position isn't directly represented by the slope of a velocity-time graph." }
+    ],
+    "explanation": "The slope of a velocity-time graph represents instantaneous acceleration.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-10",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "difficulty": "medium",
+    "stem": "On a velocity-vs-time graph, what does the area under the curve between two times represent?",
+    "choices": [
+      { "label": "A", "text": "The displacement of the object during that time interval", "isCorrect": true, "explanation": "The area under a velocity-time graph equals the definite integral of velocity, which is displacement." },
+      { "label": "B", "text": "The acceleration of the object", "isCorrect": false, "explanation": "Acceleration is the SLOPE of a velocity-time graph, not the area under it." },
+      { "label": "C", "text": "The mass of the object", "isCorrect": false, "explanation": "Mass has no relationship to the area under a velocity-time graph." },
+      { "label": "D", "text": "The maximum velocity reached", "isCorrect": false, "explanation": "The maximum velocity would be read directly from the graph's peak height, not the area under it." }
+    ],
+    "explanation": "The area under a velocity-time graph equals the object's displacement over that interval.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-11",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "difficulty": "medium",
+    "stem": "The position-time graph below shows an object's motion. During which time interval is the object's velocity zero?",
+    "choices": [
+      { "label": "A", "text": "t = 2 s to t = 5 s", "isCorrect": true, "explanation": "The graph is flat (zero slope) from t=2s to t=5s, meaning velocity is zero -- the object is at rest during this interval." },
+      { "label": "B", "text": "t = 0 s to t = 2 s", "isCorrect": false, "explanation": "The graph has a positive, nonzero slope during this interval (position rises from 0 to 10 m), so velocity is nonzero here." },
+      { "label": "C", "text": "The object's velocity is never zero", "isCorrect": false, "explanation": "The flat segment from t=2s to t=5s does have zero slope, meaning the velocity is zero during that interval." },
+      { "label": "D", "text": "The object's velocity is zero for the entire graph", "isCorrect": false, "explanation": "The velocity is nonzero (positive) during the first segment, t=0 to t=2s, where position is increasing." }
+    ],
+    "explanation": "The flat segment (zero slope) from t=2s to t=5s indicates the object's velocity is zero -- it has stopped moving.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Position-time graph rising from 0 to 10 meters between t=0 and t=2 seconds, then flat at 10 meters from t=2 to t=5 seconds",
+      "xLabel": "t (s)",
+      "yLabel": "x (m)",
+      "xMin": 0,
+      "xMax": 5,
+      "yMin": 0,
+      "yMax": 12,
+      "series": [{ "points": [{ "x": 0, "y": 0 }, { "x": 2, "y": 10 }, { "x": 5, "y": 10 }], "color": "blue" }]
+    },
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-12",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "difficulty": "medium",
+    "stem": "The velocity-time graph below shows an object accelerating uniformly from rest. What is the object's total displacement between t=0 and t=4 s?",
+    "choices": [
+      { "label": "A", "text": "16 m", "isCorrect": true, "explanation": "Displacement = area under the graph = area of the triangle = (1/2)(base)(height) = (1/2)(4)(8) = 16 m." },
+      { "label": "B", "text": "8 m", "isCorrect": false, "explanation": "This is the final velocity value, not the area under the graph (displacement)." },
+      { "label": "C", "text": "32 m", "isCorrect": false, "explanation": "This is double the correct area -- forgetting the (1/2) factor for a triangular region." },
+      { "label": "D", "text": "2 m", "isCorrect": false, "explanation": "This is the acceleration (slope), not the displacement (area)." }
+    ],
+    "explanation": "Displacement equals the area under the v-t graph: a triangle with base 4 s and height 8 m/s, giving (1/2)(4)(8) = 16 m.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Velocity-time graph rising in a straight line from 0 to 8 meters per second between t=0 and t=4 seconds",
+      "xLabel": "t (s)",
+      "yLabel": "v (m/s)",
+      "xMin": 0,
+      "xMax": 4,
+      "yMin": 0,
+      "yMax": 10,
+      "series": [{ "points": [{ "x": 0, "y": 0 }, { "x": 4, "y": 8 }], "color": "blue" }]
+    },
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-13",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "difficulty": "medium",
+    "stem": "The velocity-time graph below shows an object's motion. What is the object's acceleration between t=2 s and t=5 s?",
+    "choices": [
+      { "label": "A", "text": "0 m/s^2", "isCorrect": true, "explanation": "The graph is flat (zero slope) from t=2s to t=5s, meaning velocity is constant at 6 m/s -- so acceleration is zero." },
+      { "label": "B", "text": "3 m/s^2", "isCorrect": false, "explanation": "This is the acceleration during the FIRST segment (t=0 to t=2s), not the flat segment asked about." },
+      { "label": "C", "text": "6 m/s^2", "isCorrect": false, "explanation": "This is the constant velocity value during that interval, not the acceleration (slope)." },
+      { "label": "D", "text": "2 m/s^2", "isCorrect": false, "explanation": "This doesn't correctly read the slope of the flat segment, which is zero." }
+    ],
+    "explanation": "From t=2s to t=5s the graph is flat (constant velocity), so the slope -- and thus the acceleration -- is zero.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Velocity-time graph rising from 0 to 6 meters per second between t=0 and t=2 seconds, then flat at 6 meters per second from t=2 to t=5 seconds",
+      "xLabel": "t (s)",
+      "yLabel": "v (m/s)",
+      "xMin": 0,
+      "xMax": 5,
+      "yMin": 0,
+      "yMax": 8,
+      "series": [{ "points": [{ "x": 0, "y": 0 }, { "x": 2, "y": 6 }, { "x": 5, "y": 6 }], "color": "blue" }]
+    },
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-14",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "difficulty": "easy",
+    "stem": "A velocity-time graph shows a horizontal line at $v = 0$ for a time interval. What does this indicate about the object during that interval?",
+    "choices": [
+      { "label": "A", "text": "The object is at rest (not moving)", "isCorrect": true, "explanation": "A velocity of zero means the object isn't moving during that interval -- it's stationary." },
+      { "label": "B", "text": "The object is moving at constant, nonzero speed", "isCorrect": false, "explanation": "A horizontal line at v=0 specifically indicates zero velocity, not a nonzero constant speed." },
+      { "label": "C", "text": "The object is accelerating rapidly", "isCorrect": false, "explanation": "A horizontal (flat) line indicates zero acceleration (no change in velocity), not rapid acceleration." },
+      { "label": "D", "text": "The object's position is changing rapidly", "isCorrect": false, "explanation": "With zero velocity, the object's position is NOT changing at all during this interval." }
+    ],
+    "explanation": "A horizontal line at v=0 on a velocity-time graph means the object is at rest during that interval.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-15",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "difficulty": "hard",
+    "stem": "The position-time graph below shows an object's motion from t=0 to t=4 s. What does this graph indicate about the object's motion?",
+    "choices": [
+      { "label": "A", "text": "The object moves at a constant velocity of -2 m/s (in the negative direction)", "isCorrect": true, "explanation": "The graph is a straight line with constant negative slope: (2-10)/(4-0) = -8/4 = -2 m/s, indicating constant velocity in the negative direction." },
+      { "label": "B", "text": "The object is speeding up in the positive direction", "isCorrect": false, "explanation": "The position is DECREASING (not increasing), and the slope is constant (not curving), so this doesn't describe the motion shown." },
+      { "label": "C", "text": "The object is at rest for the entire interval", "isCorrect": false, "explanation": "The position changes continuously from 10 m to 2 m, so the object is clearly moving, not at rest." },
+      { "label": "D", "text": "The object's velocity is increasing over time", "isCorrect": false, "explanation": "The graph is a straight line, meaning the slope (velocity) is CONSTANT throughout, not increasing." }
+    ],
+    "explanation": "The straight-line graph has a constant slope of -2 m/s, indicating constant velocity in the negative direction.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Position-time graph falling in a straight line from 10 meters to 2 meters between t=0 and t=4 seconds",
+      "xLabel": "t (s)",
+      "yLabel": "x (m)",
+      "xMin": 0,
+      "xMax": 4,
+      "yMin": 0,
+      "yMax": 12,
+      "series": [{ "points": [{ "x": 0, "y": 10 }, { "x": 4, "y": 2 }], "color": "blue" }]
+    },
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-16",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "difficulty": "easy",
+    "stem": "An object starts from rest and accelerates at $3 \\text{ m/s}^2$ for 4 seconds. What is its final velocity?",
+    "choices": [
+      { "label": "A", "text": "12 m/s", "isCorrect": true, "explanation": "v = v0 + at = 0 + (3)(4) = 12 m/s." },
+      { "label": "B", "text": "3 m/s", "isCorrect": false, "explanation": "This is just the acceleration value, not multiplied by the time elapsed." },
+      { "label": "C", "text": "7 m/s", "isCorrect": false, "explanation": "This doesn't correctly compute v0+at using the given acceleration and time." },
+      { "label": "D", "text": "1.33 m/s", "isCorrect": false, "explanation": "This incorrectly divides time by acceleration rather than multiplying acceleration by time." }
+    ],
+    "explanation": "Using v = v0 + at: v = 0 + (3)(4) = 12 m/s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/kinematic-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-17",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "difficulty": "medium",
+    "stem": "A car moving at 10 m/s decelerates at $2 \\text{ m/s}^2$ for 3 seconds. What is its velocity at the end of this time?",
+    "choices": [
+      { "label": "A", "text": "4 m/s", "isCorrect": true, "explanation": "v = v0 + at = 10 + (-2)(3) = 10 - 6 = 4 m/s." },
+      { "label": "B", "text": "6 m/s", "isCorrect": false, "explanation": "This doesn't correctly subtract the full (2)(3)=6 m/s velocity change from the initial 10 m/s." },
+      { "label": "C", "text": "16 m/s", "isCorrect": false, "explanation": "This incorrectly ADDS the velocity change rather than subtracting it, despite the car decelerating." },
+      { "label": "D", "text": "-4 m/s", "isCorrect": false, "explanation": "This overshoots into a reversed direction; the car hasn't decelerated enough to actually reverse direction in this scenario." }
+    ],
+    "explanation": "Using v = v0 + at with a=-2 m/s²: v = 10 + (-2)(3) = 4 m/s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/kinematic-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-18",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "difficulty": "medium",
+    "stem": "An object starts at $x_0 = 0$ with an initial velocity of 5 m/s and accelerates at $2 \\text{ m/s}^2$. What is its position after 3 seconds?",
+    "choices": [
+      { "label": "A", "text": "24 m", "isCorrect": true, "explanation": "x = x0 + v0t + (1/2)at^2 = 0 + (5)(3) + (0.5)(2)(9) = 15 + 9 = 24 m." },
+      { "label": "B", "text": "15 m", "isCorrect": false, "explanation": "This only accounts for the constant-velocity term (v0t), omitting the acceleration term entirely." },
+      { "label": "C", "text": "9 m", "isCorrect": false, "explanation": "This only accounts for the acceleration term, omitting the initial-velocity contribution (v0t)." },
+      { "label": "D", "text": "33 m", "isCorrect": false, "explanation": "This doesn't correctly apply the (1/2) factor in the acceleration term of the kinematic equation." }
+    ],
+    "explanation": "x = x0 + v0t + (1/2)at² = 0 + (5)(3) + (0.5)(2)(3²) = 15 + 9 = 24 m.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/kinematic-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-19",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "difficulty": "medium",
+    "stem": "An object starts from rest and accelerates uniformly at $4 \\text{ m/s}^2$. How far has it traveled after 5 seconds?",
+    "choices": [
+      { "label": "A", "text": "50 m", "isCorrect": true, "explanation": "x = (1/2)at^2 = (0.5)(4)(25) = 50 m (v0=0 removes the first term)." },
+      { "label": "B", "text": "20 m", "isCorrect": false, "explanation": "This omits the (1/2) factor and doesn't correctly square the time." },
+      { "label": "C", "text": "100 m", "isCorrect": false, "explanation": "This is double the correct value -- omitting the (1/2) factor in the kinematic equation." },
+      { "label": "D", "text": "10 m", "isCorrect": false, "explanation": "This doesn't correctly apply x=(1/2)at² with the given acceleration and time." }
+    ],
+    "explanation": "With v0=0: x = (1/2)at² = (0.5)(4)(5²) = 50 m.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/kinematic-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-20",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "difficulty": "medium",
+    "stem": "A car traveling at 20 m/s brakes with a constant deceleration of $4 \\text{ m/s}^2$. How long does it take to stop?",
+    "choices": [
+      { "label": "A", "text": "5 s", "isCorrect": true, "explanation": "Using v=v0+at with v=0: 0 = 20 + (-4)t, so t = 20/4 = 5 s." },
+      { "label": "B", "text": "4 s", "isCorrect": false, "explanation": "This doesn't correctly divide the initial velocity by the magnitude of deceleration." },
+      { "label": "C", "text": "16 s", "isCorrect": false, "explanation": "This doesn't correctly apply v=v0+at to solve for the stopping time." },
+      { "label": "D", "text": "80 s", "isCorrect": false, "explanation": "This incorrectly multiplies rather than divides the given values." }
+    ],
+    "explanation": "Setting v=0 in v=v0+at: 0 = 20 - 4t, so t = 5 s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/kinematic-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-21",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "difficulty": "hard",
+    "stem": "An object starts from rest and accelerates at $2 \\text{ m/s}^2$. Using $v^2 = v_0^2 + 2a\\Delta x$, how far has it traveled once it reaches a velocity of 10 m/s?",
+    "choices": [
+      { "label": "A", "text": "25 m", "isCorrect": true, "explanation": "Solving for Δx: Δx = (v²-v0²)/(2a) = (100-0)/(2)(2) = 100/4 = 25 m." },
+      { "label": "B", "text": "50 m", "isCorrect": false, "explanation": "This is double the correct answer -- omitting the factor of 2 in the denominator (2a)." },
+      { "label": "C", "text": "5 m", "isCorrect": false, "explanation": "This doesn't correctly square the velocity or divide by 2a." },
+      { "label": "D", "text": "10 m", "isCorrect": false, "explanation": "This is just the velocity value, not the correctly computed distance." }
+    ],
+    "explanation": "Solving v²=v0²+2aΔx for Δx: Δx = 100/(2·2) = 25 m.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/kinematic-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-22",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "difficulty": "medium",
+    "stem": "An object is dropped from rest and falls freely under gravity ($g = 9.8 \\text{ m/s}^2$). What is its velocity after falling for 2 seconds?",
+    "choices": [
+      { "label": "A", "text": "19.6 m/s", "isCorrect": true, "explanation": "v = v0 + gt = 0 + (9.8)(2) = 19.6 m/s." },
+      { "label": "B", "text": "9.8 m/s", "isCorrect": false, "explanation": "This is just g itself, not multiplied by the 2-second fall time." },
+      { "label": "C", "text": "4.9 m/s", "isCorrect": false, "explanation": "This incorrectly divides g by the time rather than multiplying." },
+      { "label": "D", "text": "39.2 m/s", "isCorrect": false, "explanation": "This is double the correct velocity, likely from multiplying by 4 instead of 2." }
+    ],
+    "explanation": "v = gt = (9.8)(2) = 19.6 m/s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/kinematic-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-23",
+    "unit": "unit-1-kinematics",
+    "topic": "kinematic-equations",
+    "difficulty": "hard",
+    "stem": "An object is dropped from rest from a height of 44.1 m ($g = 9.8 \\text{ m/s}^2$). How long does it take to hit the ground?",
+    "choices": [
+      { "label": "A", "text": "3 s", "isCorrect": true, "explanation": "Using h=(1/2)gt^2: 44.1=(0.5)(9.8)t^2, so t^2=44.1/4.9=9, giving t=3 s." },
+      { "label": "B", "text": "4.5 s", "isCorrect": false, "explanation": "This doesn't correctly solve h=(1/2)gt² for t using the given height." },
+      { "label": "C", "text": "9 s", "isCorrect": false, "explanation": "This is t² itself, not the square root needed to find t." },
+      { "label": "D", "text": "6 s", "isCorrect": false, "explanation": "This doesn't correctly apply the free-fall height equation to solve for time." }
+    ],
+    "explanation": "Solving h=(1/2)gt² for t: t² = 2(44.1)/9.8 = 9, so t = 3 s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/kinematic-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-24",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "difficulty": "medium",
+    "stem": "For a projectile launched with some horizontal velocity (ignoring air resistance), how are its horizontal and vertical motions related?",
+    "choices": [
+      { "label": "A", "text": "They are independent of each other -- horizontal velocity stays constant while vertical motion undergoes free-fall acceleration", "isCorrect": true, "explanation": "In projectile motion, horizontal and vertical motions are independent: horizontal velocity is constant (no horizontal force), while vertical motion accelerates due to gravity." },
+      { "label": "B", "text": "They are always equal in magnitude", "isCorrect": false, "explanation": "The horizontal and vertical velocity components are generally different and change independently over the course of the flight." },
+      { "label": "C", "text": "Horizontal motion also accelerates due to gravity", "isCorrect": false, "explanation": "Gravity acts only vertically (ignoring air resistance); it does not affect horizontal motion, which stays at constant velocity." },
+      { "label": "D", "text": "Vertical motion stops as soon as horizontal motion begins", "isCorrect": false, "explanation": "Both motions occur simultaneously throughout the flight; vertical motion doesn't stop when horizontal motion is present." }
+    ],
+    "explanation": "Horizontal and vertical motions in projectile motion are independent: horizontal velocity is constant, vertical motion accelerates under gravity.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/projectile-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-25",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "difficulty": "medium",
+    "stem": "A ball rolls off a table with a horizontal velocity of 10 m/s and falls a height of 19.6 m to the ground ($g=9.8\\text{ m/s}^2$). How long does it take to hit the ground?",
+    "choices": [
+      { "label": "A", "text": "2 s", "isCorrect": true, "explanation": "Using h=(1/2)gt^2 (vertical motion only): 19.6=(0.5)(9.8)t^2, so t^2=4, t=2 s." },
+      { "label": "B", "text": "1.96 s", "isCorrect": false, "explanation": "This doesn't correctly solve the free-fall height equation for time." },
+      { "label": "C", "text": "1 s", "isCorrect": false, "explanation": "This doesn't correctly account for the full 19.6 m height in the free-fall equation." },
+      { "label": "D", "text": "4 s", "isCorrect": false, "explanation": "This is double the correct time -- likely from an error taking the square root of t²=4." }
+    ],
+    "explanation": "The fall time depends only on the vertical motion: t² = 2(19.6)/9.8 = 4, so t = 2 s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/projectile-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-26",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "difficulty": "medium",
+    "stem": "Using the same scenario -- a ball rolls off a table with a horizontal velocity of 10 m/s and takes 2 s to hit the ground -- how far horizontally does the ball travel before landing?",
+    "choices": [
+      { "label": "A", "text": "20 m", "isCorrect": true, "explanation": "Horizontal motion is at constant velocity: x = v0x·t = (10)(2) = 20 m." },
+      { "label": "B", "text": "10 m", "isCorrect": false, "explanation": "This is just the horizontal velocity, not multiplied by the 2-second flight time." },
+      { "label": "C", "text": "19.6 m", "isCorrect": false, "explanation": "This is the given fall height, not the horizontal distance traveled." },
+      { "label": "D", "text": "5 m", "isCorrect": false, "explanation": "This incorrectly divides rather than multiplies the horizontal velocity by the flight time." }
+    ],
+    "explanation": "Horizontal distance = horizontal velocity × time = (10)(2) = 20 m.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/projectile-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-27",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "difficulty": "hard",
+    "stem": "A ball is launched at 25 m/s at an angle of 37° above the horizontal ($\\sin 37° \\approx 0.6$, $\\cos 37° \\approx 0.8$). What are the horizontal and vertical components of its initial velocity?",
+    "choices": [
+      { "label": "A", "text": "$v_{0x} = 20$ m/s, $v_{0y} = 15$ m/s", "isCorrect": true, "explanation": "v0x = v0·cos(37°) = 25(0.8) = 20 m/s; v0y = v0·sin(37°) = 25(0.6) = 15 m/s." },
+      { "label": "B", "text": "$v_{0x} = 15$ m/s, $v_{0y} = 20$ m/s", "isCorrect": false, "explanation": "This swaps the sine and cosine components -- the horizontal component uses cosine (0.8), giving 20, not 15." },
+      { "label": "C", "text": "$v_{0x} = 25$ m/s, $v_{0y} = 25$ m/s", "isCorrect": false, "explanation": "This doesn't apply the sine/cosine decomposition at all -- both components can't equal the full magnitude." },
+      { "label": "D", "text": "$v_{0x} = 12.5$ m/s, $v_{0y} = 12.5$ m/s", "isCorrect": false, "explanation": "This assumes a 45° angle (equal components), not the actual 37° angle given." }
+    ],
+    "explanation": "v0x = v0cos(θ) = 25(0.8) = 20 m/s; v0y = v0sin(θ) = 25(0.6) = 15 m/s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/projectile-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-28",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "difficulty": "hard",
+    "stem": "Using the same launch as before ($v_{0x}=20$ m/s, $v_{0y}=15$ m/s, $g=9.8\\text{ m/s}^2$), and assuming the ball lands at the same height it was launched from, what is its total time of flight?",
+    "choices": [
+      { "label": "A", "text": "≈ 3.06 s", "isCorrect": true, "explanation": "Time of flight (level launch/landing) = 2v0y/g = 2(15)/9.8 ≈ 3.06 s." },
+      { "label": "B", "text": "≈ 1.53 s", "isCorrect": false, "explanation": "This is half the correct time -- it's the time to reach maximum height only, not the full time of flight." },
+      { "label": "C", "text": "≈ 2.04 s", "isCorrect": false, "explanation": "This doesn't correctly apply the time-of-flight formula 2v0y/g." },
+      { "label": "D", "text": "≈ 6.12 s", "isCorrect": false, "explanation": "This is double the correct time of flight." }
+    ],
+    "explanation": "Time of flight = 2v0y/g = 2(15)/9.8 ≈ 3.06 s.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/projectile-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-29",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "difficulty": "hard",
+    "stem": "Using the same launch ($v_{0y}=15$ m/s, $g=9.8\\text{ m/s}^2$), what is the maximum height reached by the ball?",
+    "choices": [
+      { "label": "A", "text": "≈ 11.5 m", "isCorrect": true, "explanation": "Max height = v0y²/(2g) = 15²/(2×9.8) = 225/19.6 ≈ 11.5 m." },
+      { "label": "B", "text": "≈ 15 m", "isCorrect": false, "explanation": "This is just the initial vertical velocity value, not the correctly computed max height." },
+      { "label": "C", "text": "≈ 22.96 m", "isCorrect": false, "explanation": "This is double the correct max height -- omitting the factor of 2 in the denominator." },
+      { "label": "D", "text": "≈ 4.9 m", "isCorrect": false, "explanation": "This doesn't correctly square the vertical velocity component in the max-height formula." }
+    ],
+    "explanation": "Max height = v0y²/(2g) = 225/19.6 ≈ 11.5 m.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/projectile-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-mcq-30",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "difficulty": "hard",
+    "stem": "Using the same launch ($v_{0x}=20$ m/s, time of flight ≈ 3.06 s), what is the ball's horizontal range?",
+    "choices": [
+      { "label": "A", "text": "≈ 61.2 m", "isCorrect": true, "explanation": "Range = v0x × time of flight = 20 × 3.06 ≈ 61.2 m." },
+      { "label": "B", "text": "≈ 30.6 m", "isCorrect": false, "explanation": "This is half the correct range." },
+      { "label": "C", "text": "≈ 20 m", "isCorrect": false, "explanation": "This is just the horizontal velocity, not multiplied by the time of flight." },
+      { "label": "D", "text": "≈ 122.4 m", "isCorrect": false, "explanation": "This is double the correct range." }
+    ],
+    "explanation": "Range = v0x × time of flight = 20 × 3.06 ≈ 61.2 m.",
+    "conceptLink": "ap-physics-1/unit-1-kinematics/projectile-motion",
+    "reviewed": false
+  }
+]
