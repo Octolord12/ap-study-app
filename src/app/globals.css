@@ -351,3 +351,47 @@
 pre {
   @apply overflow-x-auto rounded-lg border border-border bg-muted p-4 text-sm;
 }
+
+/*
+ * A ruled-notebook-paper look for math-heavy question cards -- applied only
+ * to AP Calculus AB and AP Physics 1 (see isPaperLinedCourse() in
+ * src/lib/content/paper-lined.ts), approved by the owner after a preview.
+ * Plain CSS gradients, unlayered (like `pre` above) so it wins over
+ * Tailwind's `bg-card` utility regardless of class order -- see Tailwind
+ * v4's cascade-layer priority. No images/assets.
+ */
+.paper-lined {
+  /* Real left inset for content, well past the margin line below -- the
+     line sits at 18-20px (in the padding gutter itself), text starts at
+     28px (this padding) + CardContent's own ~16px = ~44px, leaving ~24px
+     of clear daylight between the line and anything written. */
+  padding-left: 28px;
+  background-color: #fdf9ef;
+  background-image:
+    linear-gradient(to right, transparent 18px, rgba(196, 90, 90, 0.4) 18px, rgba(196, 90, 90, 0.4) 20px, transparent 20px),
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 27px,
+      rgba(90, 120, 170, 0.3) 27px,
+      rgba(90, 120, 170, 0.3) 28px
+    );
+  background-size: 100% 100%, 100% 28px;
+  background-position: 0 0, 0 10px;
+  background-repeat: no-repeat, repeat;
+  color: #2b2620;
+}
+
+.dark .paper-lined {
+  background-color: #1d1912;
+  background-image:
+    linear-gradient(to right, transparent 18px, rgba(214, 120, 110, 0.3) 18px, rgba(214, 120, 110, 0.3) 20px, transparent 20px),
+    repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 27px,
+      rgba(255, 255, 255, 0.07) 27px,
+      rgba(255, 255, 255, 0.07) 28px
+    );
+  color: #ece6d9;
+}

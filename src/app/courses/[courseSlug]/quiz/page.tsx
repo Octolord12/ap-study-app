@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { QuizRunner } from "@/components/study/quiz-runner";
+import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 import type { AttemptSource } from "@/generated/prisma/client";
 
 const VALID_SOURCES: AttemptSource[] = ["PRACTICE", "QUIZ", "DAILY", "WEAK_SPOT"];
@@ -38,6 +39,7 @@ export default async function CourseQuizPage({
         backHref={backHref}
         backLabel={backLabel || "Back to course"}
         source={attemptSource}
+        paperLined={isPaperLinedCourse(courseSlug)}
       />
     </div>
   );

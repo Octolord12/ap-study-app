@@ -8,6 +8,7 @@ import { FrqSelfGrade, type RubricLineView } from "@/components/study/frq-self-g
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
+import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 export default async function ExamResultsPage({
   params,
@@ -17,6 +18,7 @@ export default async function ExamResultsPage({
   const userId = await requireUserId();
   const { courseSlug, examAttemptId } = await params;
   const db = getDb();
+  const paperLined = isPaperLinedCourse(courseSlug);
 
   const attempt = await db.examAttempt.findUnique({ where: { id: examAttemptId } });
   if (!attempt || attempt.userId !== userId) notFound();
@@ -90,7 +92,7 @@ export default async function ExamResultsPage({
           </h2>
           <div className="space-y-6">
             {frqSections.map(({ frq, promptHtml, sampleResponseHtml, diagram, rubric, existingAttempt }) => (
-              <Card key={frq.id}>
+              <Card key={frq.id} className={paperLined ? "paper-lined" : undefined}>
                 <CardContent className="space-y-4 py-6">
                   <div
                     className="prose prose-sm prose-neutral dark:prose-invert max-w-none"
@@ -116,7 +118,11 @@ export default async function ExamResultsPage({
         <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           Multiple choice review
         </h2>
-        <ExamMcqReview questions={renderedQuestions} chosenLabelByQuestionId={chosenLabelByQuestionId} />
+        <ExamMcqReview
+          questions={renderedQuestions}
+          chosenLabelByQuestionId={chosenLabelByQuestionId}
+          paperLined={paperLined}
+        />
       </div>
     </div>
   );

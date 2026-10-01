@@ -10,6 +10,7 @@ import { RewardToast, hasReward, type Reward } from "@/components/gamification/r
 import { playBossDefeatedSound, playBossHitSound } from "@/lib/gamification/sound";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
+import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 const PASS_THRESHOLD = 0.7;
 
@@ -40,6 +41,7 @@ export function BossBattleRunner({
   const total = questions.length;
   const healthPct = Math.max(0, 100 - Math.round((correctCount / total) * 100));
   const question = questions[index];
+  const paperLined = isPaperLinedCourse(courseSlug);
   const isLast = index === total - 1;
 
   async function handleAttack() {
@@ -141,7 +143,7 @@ export function BossBattleRunner({
         </div>
       </div>
 
-      <Card>
+      <Card className={paperLined ? "paper-lined" : undefined}>
         <CardContent className="space-y-4 py-6">
           <p className="text-xs text-muted-foreground">
             Question {index + 1} of {total}

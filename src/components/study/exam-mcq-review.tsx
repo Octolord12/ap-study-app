@@ -8,16 +8,21 @@ import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 export function ExamMcqReview({
   questions,
   chosenLabelByQuestionId,
+  paperLined = false,
 }: {
   questions: RenderedQuestion[];
   chosenLabelByQuestionId: Map<string, string>;
+  paperLined?: boolean;
 }) {
   return (
     <div className="space-y-4">
       {questions.map((question, index) => {
         const chosenLabel = chosenLabelByQuestionId.get(question.id);
         return (
-          <div key={question.id} className="rounded-lg border border-border p-4">
+          <div
+            key={question.id}
+            className={paperLined ? "paper-lined rounded-lg border border-border p-4" : "rounded-lg border border-border p-4"}
+          >
             <p className="mb-2 text-xs text-muted-foreground">Question {index + 1}</p>
             <div
               className="prose prose-sm prose-neutral dark:prose-invert mb-3 max-w-none"

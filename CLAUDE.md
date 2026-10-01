@@ -728,6 +728,53 @@ the product default (not the old grayscale, which no longer exists).
   palettes (no flash), the header toggle and the settings picker both
   updating the page live, and the choice persisting across a hard reload.
 
+### "Paper-lined" question cards for Calc AB / Physics 1
+
+A ruled-notebook-paper background for question cards, requested by the
+owner specifically for the two math-heavy courses -- shown as a live
+preview on a real Calc AB question first (not a mockup, since this reskins
+an existing component rather than proposing a new one), iterated once on
+feedback (the margin line originally overlapped the question text -- fixed
+by moving the line into the card's own padding and giving the actual
+content real left inset, ~24px of daylight between the line and anything
+written), then approved and wired in everywhere.
+
+- **The look**: `.paper-lined` in `globals.css` -- cream background, blue
+  horizontal rule lines, a red margin line (a muted rust tone in dark mode,
+  on a dark "chalkboard-ledger" background), all plain CSS gradients, no
+  images. Unlayered (like the existing `pre` rule) so it wins over
+  Tailwind's `bg-card` utility by cascade-layer priority, not specificity.
+- **Scope**: `isPaperLinedCourse()` (`src/lib/content/paper-lined.ts`, a
+  pure function checking `courseSlug` against `["ap-calc",
+  "ap-physics-1"]`) -- AP CSA and AP World History stay on the plain card
+  background. Computed once per page (every call site is already under
+  `/courses/[courseSlug]/...` or `/admin/review/[courseSlug]/...`, so
+  `courseSlug` is always available) and threaded in as either a
+  `paperLined` prop or, for `BossBattleRunner`/`ExamRunner` (which already
+  received `courseSlug` as a prop), computed internally.
+- **Wired into every question-rendering surface**, matching how the
+  diagram feature (Milestone 7) was wired in rather than just the one
+  component the owner happened to test: `QuizRunner` (unit/custom/
+  weak-spot/daily quizzes), `BossBattleRunner`, `ExamRunner`,
+  `ExamMcqReview` (exam results' MCQ section), `FrqSelfGrade` (standalone
+  FRQ practice and exam results), and `/admin/review`'s question/FRQ
+  cards. Non-question cards (quiz "done" screen, boss battle result
+  screen, exam's empty state) deliberately stay plain -- the ask was for
+  question cards, not every surface in these components.
+- **Gotcha if you touch `FrqSelfGrade` again**: it has no `<Card>` of its
+  own (bare `<div>`) and is used two different ways -- standalone FRQ
+  practice renders it as a sibling *after* its own separately-boxed prompt,
+  while the exam results page nests it *inside* the same `<Card>` as the
+  prompt. Its `paperLined` prop only self-wraps (adds the class to its own
+  root div) for the standalone case; the exam results page instead
+  paper-lines the shared outer `Card` and leaves `FrqSelfGrade`'s own prop
+  at its `false` default. Passing `paperLined` to `FrqSelfGrade` in the
+  exam-results nested case would paint the ruled-line pattern twice,
+  independently, from two different coordinate origins -- the join between
+  the prompt area and the self-grade area would show a visible seam where
+  the lines don't align. Decide per call site which one owns the
+  background, never both.
+
 ## Verified AP course info (2026-27)
 
 Exam formats change almost every year — 3 of our 4 launch courses have had a

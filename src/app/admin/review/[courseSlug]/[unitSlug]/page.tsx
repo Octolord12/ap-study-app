@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import type { RubricLine } from "@/lib/scoring/grading";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
+import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 export default async function AdminReviewUnitPage({
   params,
@@ -21,6 +22,7 @@ export default async function AdminReviewUnitPage({
   const result = await getUnitUnreviewedContent(courseSlug, unitSlug);
   if (!result) notFound();
   const { course, unit } = result;
+  const paperLined = isPaperLinedCourse(courseSlug);
 
   return (
     <div className="mx-auto w-full max-w-3xl px-6 py-10">
@@ -46,7 +48,7 @@ export default async function AdminReviewUnitPage({
           </h2>
           <div className="mb-8 grid gap-4">
             {unit.questions.map((question) => (
-              <Card key={question.id}>
+              <Card key={question.id} className={paperLined ? "paper-lined" : undefined}>
                 <CardHeader>
                   <p className="text-xs text-muted-foreground">
                     {question.topic.name} · {question.difficulty}
@@ -93,7 +95,7 @@ export default async function AdminReviewUnitPage({
             {unit.frqPrompts.map((frq) => {
               const rubric = frq.rubric as unknown as RubricLine[];
               return (
-                <Card key={frq.id}>
+                <Card key={frq.id} className={paperLined ? "paper-lined" : undefined}>
                   <CardHeader>
                     <p className="text-xs text-muted-foreground">
                       {frq.topic.name} · {frq.pointValue} pts

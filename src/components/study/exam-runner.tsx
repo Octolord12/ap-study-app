@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
+import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 export interface ExamMcqItem {
   id: string;
@@ -57,6 +58,7 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
 
   const items = [...mcqItems, ...frqItems];
   const total = items.length;
+  const paperLined = isPaperLinedCourse(courseSlug);
 
   async function handleSubmit() {
     if (submittingRef.current) return;
@@ -125,7 +127,7 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
         </span>
       </div>
 
-      <Card>
+      <Card className={paperLined ? "paper-lined" : undefined}>
         <CardContent className="space-y-4 py-6">
           {mcqItem ? (
             <>

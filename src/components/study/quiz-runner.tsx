@@ -42,11 +42,13 @@ export function QuizRunner({
   backHref,
   backLabel,
   source = "PRACTICE",
+  paperLined = false,
 }: {
   questions: RenderedQuestion[];
   backHref: string;
   backLabel: string;
   source?: AttemptSource;
+  paperLined?: boolean;
 }) {
   const [index, setIndex] = useState(0);
   const [selectedLabel, setSelectedLabel] = useState<string | null>(null);
@@ -127,7 +129,7 @@ export function QuizRunner({
   return (
     <>
       {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
-      <Card>
+      <Card className={paperLined ? "paper-lined" : undefined}>
       <CardContent className="space-y-4 py-6">
         <p className="text-xs text-muted-foreground">
           Question {index + 1} of {questions.length} ·{" "}

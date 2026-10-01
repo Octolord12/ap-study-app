@@ -6,6 +6,7 @@ import { renderContentToHtml } from "@/lib/content/render";
 import { FrqSelfGrade, type RubricLineView } from "@/components/study/frq-self-grade";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
+import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 export default async function FrqPracticePage({
   params,
@@ -24,6 +25,7 @@ export default async function FrqPracticePage({
   ]);
   const rubric = frq.rubric as unknown as RubricLineView[];
   const diagram = (frq.diagram as Diagram | null) ?? null;
+  const paperLined = isPaperLinedCourse(courseSlug);
 
   return (
     <div className="mx-auto w-full max-w-2xl px-6 py-10">
@@ -33,7 +35,7 @@ export default async function FrqPracticePage({
         </Link>
       </p>
 
-      <div className="mb-6 rounded-lg border border-border p-6">
+      <div className={paperLined ? "paper-lined mb-6 rounded-lg border border-border p-6" : "mb-6 rounded-lg border border-border p-6"}>
         <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           Free response -- {frq.pointValue} point{frq.pointValue === 1 ? "" : "s"}
         </p>
@@ -49,6 +51,7 @@ export default async function FrqPracticePage({
         pointValue={frq.pointValue}
         rubric={rubric}
         sampleResponseHtml={sampleResponseHtml}
+        paperLined={paperLined}
       />
     </div>
   );

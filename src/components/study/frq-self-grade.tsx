@@ -32,6 +32,15 @@ interface FrqSelfGradeProps {
   /** Set alongside existingResponseText: grades that attempt in place instead of creating a new one. */
   existingAttemptId?: string;
   onGraded?: (result: { pointsAwarded: number; maxPoints: number }) => void;
+  /**
+   * Wraps this component's own root in the paper-lined card chrome (border,
+   * padding, notebook background). Only pass this when the caller ISN'T
+   * already nesting this component inside its own paper-lined container
+   * (e.g. the exam results page shares one Card with the prompt above it) --
+   * two paper-lined boxes nested inside each other makes the ruled lines
+   * visibly discontinuous where the inner box's background restarts.
+   */
+  paperLined?: boolean;
 }
 
 export function FrqSelfGrade({
@@ -42,6 +51,7 @@ export function FrqSelfGrade({
   existingResponseText,
   existingAttemptId,
   onGraded,
+  paperLined = false,
 }: FrqSelfGradeProps) {
   const [responseText, setResponseText] = useState(existingResponseText ?? "");
   const [revealed, setRevealed] = useState(false);
@@ -78,7 +88,7 @@ export function FrqSelfGrade({
   }
 
   return (
-    <div className="space-y-4">
+    <div className={paperLined ? "paper-lined space-y-4 rounded-lg border border-border p-6" : "space-y-4"}>
       {reward ? <RewardToast reward={reward} onDismiss={() => setReward(null)} /> : null}
       {readOnlyResponse ? (
         <div className="rounded-lg border border-border bg-muted p-4 text-sm whitespace-pre-wrap">

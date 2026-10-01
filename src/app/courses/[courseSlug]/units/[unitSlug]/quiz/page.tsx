@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { QuizRunner } from "@/components/study/quiz-runner";
+import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 export default async function UnitQuizPage({
   params,
@@ -26,6 +27,7 @@ export default async function UnitQuizPage({
         questions={rendered}
         backHref={`/courses/${courseSlug}/units/${unitSlug}`}
         backLabel="Back to unit"
+        paperLined={isPaperLinedCourse(courseSlug)}
       />
     </div>
   );
