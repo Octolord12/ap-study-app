@@ -41,7 +41,9 @@ export default async function ExamRunnerPage({
         id: q.id,
         stemHtml: await renderContentToHtml(q.stem),
         diagram: (q.diagram as Diagram | null) ?? null,
-        choices: q.choices.map((c) => ({ id: c.id, label: c.label, text: c.text })),
+        choices: await Promise.all(
+          q.choices.map(async (c) => ({ id: c.id, label: c.label, textHtml: await renderContentToHtml(c.text) })),
+        ),
       })),
   );
 

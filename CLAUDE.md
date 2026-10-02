@@ -775,6 +775,46 @@ written), then approved and wired in everywhere.
   the lines don't align. Decide per call site which one owns the
   background, never both.
 
+### Bug fix: MCQ answer choices never rendered LaTeX/markdown
+
+Spotted live while smoke-testing the paper-lined cards on a Calc AB exam
+question: choices showed raw `$\lim_{h \to 0} \dfrac{f(a+h) - f(a)}{h}$`
+instead of typeset math. Root cause: `stem`/`explanation`/FRQ `prompt`/
+`sampleResponse` always went through `renderContentToHtml` (the Shiki/KaTeX
+pipeline), but choice `text` never did, in either data path -- silently
+inconsistent since launch, not something the paper-lined work introduced.
+
+- **`src/lib/study/render-quiz.ts`** (feeds `QuizRunner`, `BossBattleRunner`,
+  and `ExamMcqReview`, which all share the `RenderedQuestion`/`RenderedChoice`
+  types from `quiz-runner.tsx`) and **the exam-attempt start page**
+  (`courses/[courseSlug]/exam/[examAttemptId]/page.tsx`, which builds
+  `ExamMcqItem` independently -- it reads straight from the DB, not through
+  `renderQuizQuestions`) both now render `c.text` through
+  `renderContentToHtml`. `RenderedChoice.text` / `ExamMcqItem.choices[].text`
+  renamed to `textHtml` everywhere to match the `stemHtml`/`explanationHtml`
+  convention and make "this is pre-rendered HTML" explicit at the type level.
+- Also fixed in `/admin/review` (same bug, separate code path -- raw DB rows
+  rendered via `ContentRenderer` for stem/explanation but plain `{choice.text}`
+  for choices). Pre-renders each unit's questions' choices via `Promise.all`
+  before the JSX return, same pattern the exam-results page already used for
+  FRQ sections.
+- **Rendering gotcha**: `renderContentToHtml`'s output is always wrapped in a
+  block-level `<p>` (remark-rehype's default for any paragraph, even a
+  one-line string), but choice text needs to sit inline next to the "A."
+  label on one line. Fixed with a `[&_p]:m-0 [&_p]:inline` Tailwind arbitrary
+  variant on the wrapping span rather than restructuring to a two-line
+  layout -- keeps the existing compact look. Watch for this if choice text
+  content ever needs block math (`$$...$$`) or a code fence; neither appears
+  in any authored content today, so it wasn't specifically handled.
+- **Caught while fixing, not initially**: the first pass separated the "A."
+  label and the rendered-HTML span into two flex children for layout, which
+  silently dropped the implicit space JSX had been inserting between them
+  (`<span>A.</span> {text}` -- that's a real space text node). Choice
+  `textContent` read as `"A.5"` instead of `"A. 5"`, confirmed via direct DOM
+  inspection (not the screenshot, which looked identical either way) --
+  harmless visually but a real degradation for screen readers. Fixed with an
+  explicit `{" "}` between the two spans in all five render sites.
+
 ## Verified AP course info (2026-27)
 
 Exam formats change almost every year — 3 of our 4 launch courses have had a

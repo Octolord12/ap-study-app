@@ -22,7 +22,7 @@ import type { Diagram } from "@/lib/content/diagram-schema";
 export interface RenderedChoice {
   id: string;
   label: string;
-  text: string;
+  textHtml: string;
   isCorrect: boolean;
   explanationHtml: string;
 }
@@ -160,7 +160,13 @@ export function QuizRunner({
                   wrongHighlight ? "border-destructive bg-red-50 dark:bg-red-950" : "",
                 ].join(" ")}
               >
-                <span className="font-medium">{choice.label}.</span> {choice.text}
+                <span className="flex items-start gap-1.5">
+                  <span className="font-medium">{choice.label}.</span>{" "}
+                  <span
+                    className="[&_p]:m-0 [&_p]:inline"
+                    dangerouslySetInnerHTML={{ __html: choice.textHtml }}
+                  />
+                </span>
                 {revealed ? (
                   <div
                     className="prose prose-sm prose-neutral dark:prose-invert mt-2 max-w-none"

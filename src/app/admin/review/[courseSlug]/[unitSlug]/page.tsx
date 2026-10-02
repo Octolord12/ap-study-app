@@ -4,6 +4,7 @@ import { requireAdminUserId } from "@/lib/admin/session";
 import { getUnitUnreviewedContent } from "@/lib/admin/queries";
 import { markFrqReviewed, markQuestionReviewed } from "@/lib/admin/actions";
 import { ContentRenderer } from "@/components/content-renderer";
+import { renderContentToHtml } from "@/lib/content/render";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import type { RubricLine } from "@/lib/scoring/grading";
@@ -23,6 +24,14 @@ export default async function AdminReviewUnitPage({
   if (!result) notFound();
   const { course, unit } = result;
   const paperLined = isPaperLinedCourse(courseSlug);
+  const questions = await Promise.all(
+    unit.questions.map(async (question) => ({
+      ...question,
+      choices: await Promise.all(
+        question.choices.map(async (choice) => ({ ...choice, textHtml: await renderContentToHtml(choice.text) })),
+      ),
+    })),
+  );
 
   return (
     <div className="mx-auto w-full max-w-3xl px-6 py-10">
@@ -47,7 +56,7 @@ export default async function AdminReviewUnitPage({
             Questions ({unit.questions.length})
           </h2>
           <div className="mb-8 grid gap-4">
-            {unit.questions.map((question) => (
+            {questions.map((question) => (
               <Card key={question.id} className={paperLined ? "paper-lined" : undefined}>
                 <CardHeader>
                   <p className="text-xs text-muted-foreground">
@@ -67,7 +76,13 @@ export default async function AdminReviewUnitPage({
                             : "px-2 py-1 text-sm text-muted-foreground"
                         }
                       >
-                        <span className="font-medium">{choice.label}.</span> {choice.text}
+                        <span className="flex items-start gap-1.5">
+                          <span className="font-medium">{choice.label}.</span>{" "}
+                          <span
+                            className="[&_p]:m-0 [&_p]:inline"
+                            dangerouslySetInnerHTML={{ __html: choice.textHtml }}
+                          />
+                        </span>
                       </li>
                     ))}
                   </ul>

@@ -28,7 +28,7 @@ export async function renderQuizQuestions(questionIds: string[], courseSlug: str
           q.choices.map(async (c) => ({
             id: c.id,
             label: c.label,
-            text: c.text,
+            textHtml: await renderContentToHtml(c.text),
             isCorrect: c.isCorrect,
             explanationHtml: await renderContentToHtml(c.explanation),
           })),

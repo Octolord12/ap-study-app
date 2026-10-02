@@ -13,7 +13,7 @@ export interface ExamMcqItem {
   id: string;
   stemHtml: string;
   diagram: Diagram | null;
-  choices: { id: string; label: string; text: string }[];
+  choices: { id: string; label: string; textHtml: string }[];
 }
 
 export interface ExamFrqItem {
@@ -147,7 +147,13 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
                       mcqAnswers[mcqItem.id] === choice.label ? "border-foreground bg-muted" : "border-border",
                     ].join(" ")}
                   >
-                    <span className="font-medium">{choice.label}.</span> {choice.text}
+                    <span className="flex items-start gap-1.5">
+                      <span className="font-medium">{choice.label}.</span>{" "}
+                      <span
+                        className="[&_p]:m-0 [&_p]:inline"
+                        dangerouslySetInnerHTML={{ __html: choice.textHtml }}
+                      />
+                    </span>
                   </button>
                 ))}
               </div>

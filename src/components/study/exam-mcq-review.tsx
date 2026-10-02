@@ -42,8 +42,14 @@ export function ExamMcqReview({
                       !choice.isCorrect && !wasChosen ? "border-border" : "",
                     ].join(" ")}
                   >
-                    <span className="font-medium">{choice.label}.</span> {choice.text}
-                    {wasChosen ? <span className="ml-2 text-xs text-muted-foreground">(your answer)</span> : null}
+                    <span className="flex flex-wrap items-start gap-1.5">
+                      <span className="font-medium">{choice.label}.</span>{" "}
+                      <span
+                        className="[&_p]:m-0 [&_p]:inline"
+                        dangerouslySetInnerHTML={{ __html: choice.textHtml }}
+                      />
+                      {wasChosen ? <span className="text-xs text-muted-foreground">(your answer)</span> : null}
+                    </span>
                   </div>
                 );
               })}
