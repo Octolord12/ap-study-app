@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
@@ -5,6 +6,9 @@ import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/rende
 import { ExamRunner, type ExamFrqItem, type ExamMcqItem } from "@/components/study/exam-runner";
 import type { Course as ContentCourse } from "@/lib/content/schema";
 import type { Diagram } from "@/lib/content/diagram-schema";
+import { Page } from "@/components/ui/page";
+
+export const metadata: Metadata = { title: "Exam in progress" };
 
 export default async function ExamRunnerPage({
   params,
@@ -64,7 +68,7 @@ export default async function ExamRunnerPage({
   );
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
+    <Page>
       <ExamRunner
         examAttemptId={attempt.id}
         courseSlug={courseSlug}
@@ -72,6 +76,6 @@ export default async function ExamRunnerPage({
         mcqItems={mcqItems}
         frqItems={frqItems}
       />
-    </div>
+    </Page>
   );
 }

@@ -1,6 +1,9 @@
 import Link from "next/link";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
+import { ChoiceList, ChoiceRow } from "@/components/ui/choice";
+import { Html } from "@/components/ui/html";
+import { Sheet } from "@/components/ui/sheet";
 
 // Static, always-revealed version of the quiz runner's per-question review --
 // the exam is already over, so there's no interactivity left, just the
@@ -15,54 +18,43 @@ export function ExamMcqReview({
   paperLined?: boolean;
 }) {
   return (
-    <div className="space-y-4">
+    <div className="space-y-6">
       {questions.map((question, index) => {
         const chosenLabel = chosenLabelByQuestionId.get(question.id);
         return (
-          <div
-            key={question.id}
-            className={paperLined ? "paper-lined rounded-lg border border-border p-4" : "rounded-lg border border-border p-4"}
-          >
-            <p className="mb-2 text-xs text-muted-foreground">Question {index + 1}</p>
-            <div
-              className="prose prose-sm prose-neutral dark:prose-invert mb-3 max-w-none"
-              dangerouslySetInnerHTML={{ __html: question.stemHtml }}
-            />
+          <Sheet key={question.id} lined={paperLined}>
+            <p className="eyebrow">Question {index + 1}</p>
+            <Html html={question.stemHtml} className="mt-2" />
             {question.diagram && <DiagramRenderer diagram={question.diagram} />}
-            <div className="space-y-2">
-              {question.choices.map((choice) => {
-                const wasChosen = chosenLabel === choice.label;
-                return (
-                  <div
-                    key={choice.id}
-                    className={[
-                      "rounded-lg border px-3 py-2 text-sm",
-                      choice.isCorrect ? "border-green-600 bg-green-50 dark:bg-green-950" : "",
-                      wasChosen && !choice.isCorrect ? "border-destructive bg-red-50 dark:bg-red-950" : "",
-                      !choice.isCorrect && !wasChosen ? "border-border" : "",
-                    ].join(" ")}
-                  >
-                    <span className="flex flex-wrap items-start gap-1.5">
-                      <span className="font-medium">{choice.label}.</span>{" "}
-                      <span
-                        className="[&_p]:m-0 [&_p]:inline"
-                        dangerouslySetInnerHTML={{ __html: choice.textHtml }}
-                      />
-                      {wasChosen ? <span className="text-xs text-muted-foreground">(your answer)</span> : null}
-                    </span>
-                  </div>
-                );
-              })}
-              {!chosenLabel ? <p className="text-xs text-muted-foreground">You didn&apos;t answer this one.</p> : null}
+            <div className="mt-4">
+              <ChoiceList legend={`Question ${index + 1} answer choices`}>
+                {question.choices.map((choice) => {
+                  const wasChosen = chosenLabel === choice.label;
+                  return (
+                    <ChoiceRow
+                      key={choice.id}
+                      label={choice.label}
+                      textHtml={choice.textHtml}
+                      explanationHtml={choice.explanationHtml}
+                      state={choice.isCorrect ? "correct" : wasChosen ? "wrong" : "idle"}
+                      verdict={choice.isCorrect ? (wasChosen ? "Correct, your answer" : "Correct answer") : wasChosen ? "Your answer" : undefined}
+                    />
+                  );
+                })}
+              </ChoiceList>
             </div>
-            <div
-              className="prose prose-sm prose-neutral dark:prose-invert mt-3 max-w-none"
-              dangerouslySetInnerHTML={{ __html: question.explanationHtml }}
-            />
-            <Link href={question.conceptHref} className="mt-1 inline-block text-xs font-medium underline underline-offset-4">
-              Review this concept
-            </Link>
-          </div>
+            {!chosenLabel ? <p className="mt-3 text-sm font-medium">You didn&apos;t answer this one.</p> : null}
+            <div className="mt-5 border-t-2 border-current pt-4">
+              <p className="eyebrow !text-current">Explanation</p>
+              <Html html={question.explanationHtml} size="sm" className="mt-1.5" />
+              <Link
+                href={question.conceptHref}
+                className="mt-3 inline-block text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
+              >
+                Review this concept
+              </Link>
+            </div>
+          </Sheet>
         );
       })}
     </div>

@@ -5,8 +5,11 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { recordAttempt } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Choice, ChoiceList } from "@/components/ui/choice";
+import { Html } from "@/components/ui/html";
+import { Sheet } from "@/components/ui/sheet";
 import { hasReward, type Reward } from "@/components/gamification/reward-toast";
+import { QuizProgress } from "@/components/study/quiz-progress";
 
 // framer-motion (RewardToast's only real dependency beyond React) is
 // dead weight on every quiz page load until a reward actually fires --
@@ -68,16 +71,16 @@ export function QuizRunner({
     return (
       <>
         {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
-        <Card>
-        <CardContent className="space-y-4 py-10 text-center">
-          <h2 className="text-xl font-bold">
-            {correctCount} / {questions.length} correct
-          </h2>
-          <Button render={<Link href={backHref} />} nativeButton={false}>
+        <div className="border-t-2 border-foreground pt-6">
+          <p className="eyebrow">Finished</p>
+          <p className="numeral mt-2 text-[clamp(4rem,14vw,8rem)]">
+            {correctCount} / {questions.length}
+          </p>
+          <p className="reading mt-2 text-lg">correct</p>
+          <Button render={<Link href={backHref} />} nativeButton={false} size="lg" className="mt-8">
             {backLabel}
           </Button>
-        </CardContent>
-        </Card>
+        </div>
       </>
     );
   }
@@ -129,79 +132,67 @@ export function QuizRunner({
   return (
     <>
       {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
-      <Card className={paperLined ? "paper-lined" : undefined}>
-      <CardContent className="space-y-4 py-6">
-        <p className="text-xs text-muted-foreground">
-          Question {index + 1} of {questions.length} ·{" "}
-          <span className="capitalize">{question.difficulty.toLowerCase()}</span>
-        </p>
-        <div
-          className="prose prose-neutral dark:prose-invert max-w-none"
-          dangerouslySetInnerHTML={{ __html: question.stemHtml }}
-        />
-        {question.diagram && <DiagramRenderer diagram={question.diagram} />}
-
-        <div className="space-y-2">
-          {question.choices.map((choice) => {
-            const isSelected = selectedLabel === choice.label;
-            const correctHighlight = revealed && choice.isCorrect;
-            const wrongHighlight = revealed && isSelected && !choice.isCorrect;
-
-            return (
-              <button
-                key={choice.id}
-                type="button"
-                disabled={revealed}
-                onClick={() => setSelectedLabel(choice.label)}
-                className={[
-                  "w-full rounded-lg border px-4 py-2 text-left text-sm transition-colors disabled:cursor-default",
-                  isSelected && !revealed ? "border-foreground" : "border-border",
-                  correctHighlight ? "border-green-600 bg-green-50 dark:bg-green-950" : "",
-                  wrongHighlight ? "border-destructive bg-red-50 dark:bg-red-950" : "",
-                ].join(" ")}
-              >
-                <span className="flex items-start gap-1.5">
-                  <span className="font-medium">{choice.label}.</span>{" "}
-                  <span
-                    className="[&_p]:m-0 [&_p]:inline"
-                    dangerouslySetInnerHTML={{ __html: choice.textHtml }}
-                  />
-                </span>
-                {revealed ? (
-                  <div
-                    className="prose prose-sm prose-neutral dark:prose-invert mt-2 max-w-none"
-                    dangerouslySetInnerHTML={{ __html: choice.explanationHtml }}
-                  />
-                ) : null}
-              </button>
-            );
-          })}
+      <div className="grid gap-x-10 gap-y-3 md:grid-cols-[10.5rem_minmax(0,1fr)]">
+        <div className="space-y-3 md:pt-1">
+          <p className="eyebrow !text-foreground">
+            Question {index + 1} of {questions.length}
+          </p>
+          <p className="eyebrow">{question.difficulty.toLowerCase()}</p>
+          <QuizProgress total={questions.length} current={index} className="hidden md:flex" />
+          <Link href={backHref} className="eyebrow hidden underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline md:inline-block">
+            Leave quiz
+          </Link>
         </div>
 
-        {revealed ? (
-          <div className="rounded-lg bg-muted p-4">
-            <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Explanation</p>
-            <div
-              className="prose prose-sm prose-neutral dark:prose-invert max-w-none"
-              dangerouslySetInnerHTML={{ __html: question.explanationHtml }}
-            />
-            <Link href={question.conceptHref} className="mt-2 inline-block text-xs font-medium underline underline-offset-4">
-              Review this concept
-            </Link>
+        <Sheet lined={paperLined} className="min-w-0">
+          <Html html={question.stemHtml} className="text-[1.1875rem]" />
+          {question.diagram && <DiagramRenderer diagram={question.diagram} />}
+
+          <div className="mt-5">
+            <ChoiceList legend="Answer choices">
+              {question.choices.map((choice) => (
+                <Choice
+                  key={choice.id}
+                  name={`question-${question.id}`}
+                  label={choice.label}
+                  textHtml={choice.textHtml}
+                  explanationHtml={choice.explanationHtml}
+                  checked={selectedLabel === choice.label}
+                  disabled={revealed}
+                  revealed={revealed}
+                  state={revealed ? (choice.isCorrect ? "correct" : selectedLabel === choice.label ? "wrong" : "idle") : "idle"}
+                  onSelect={() => setSelectedLabel(choice.label)}
+                />
+              ))}
+            </ChoiceList>
           </div>
-        ) : null}
 
-        <div className="flex justify-end">
-          {!revealed ? (
-            <Button onClick={handleSubmit} disabled={!selectedLabel}>
-              Submit
-            </Button>
-          ) : (
-            <Button onClick={handleNext}>{isLast ? "See results" : "Next question"}</Button>
-          )}
-        </div>
-      </CardContent>
-      </Card>
+          {revealed ? (
+            <div className="mt-6 border-t-2 border-current pt-4">
+              <p className="eyebrow !text-current">Explanation</p>
+              <Html html={question.explanationHtml} size="sm" className="mt-1.5" />
+              <Link
+                href={question.conceptHref}
+                className="mt-3 inline-block text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
+              >
+                Review this concept
+              </Link>
+            </div>
+          ) : null}
+
+          <div className="mt-6 flex justify-end">
+            {!revealed ? (
+              <Button onClick={handleSubmit} disabled={!selectedLabel} size="lg">
+                Submit
+              </Button>
+            ) : (
+              <Button onClick={handleNext} size="lg">
+                {isLast ? "See results" : "Next question"}
+              </Button>
+            )}
+          </div>
+        </Sheet>
+      </div>
     </>
   );
 }

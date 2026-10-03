@@ -5,7 +5,11 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { recordAttempt, submitBossBattle } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Choice, ChoiceList } from "@/components/ui/choice";
+import { Html } from "@/components/ui/html";
+import { Sheet } from "@/components/ui/sheet";
+import { BadgeStamp } from "@/components/ui/stamp";
+import { QuizProgress } from "@/components/study/quiz-progress";
 import { RewardToast, hasReward, type Reward } from "@/components/gamification/reward-toast";
 import { playBossDefeatedSound, playBossHitSound } from "@/lib/gamification/sound";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
@@ -95,108 +99,114 @@ export function BossBattleRunner({
 
   if (battleResult) {
     return (
-      <Card>
-        <CardContent className="space-y-4 py-10 text-center">
-          <div className="text-4xl">{battleResult.passed ? "🏆" : "💀"}</div>
-          <h2 className="text-xl font-bold">
-            {battleResult.passed ? `${unitName} Boss defeated!` : "The boss survives... this time"}
+      <div className="border-t-2 border-foreground pt-6">
+        <p className="eyebrow">{unitName}</p>
+        <div className="mt-3 flex items-center gap-5">
+          {battleResult.passed ? <BadgeStamp slug="boss_slayer" className="size-20 shrink-0" /> : null}
+          <h2 className="display text-[clamp(2.5rem,8vw,4.5rem)]">
+            {battleResult.passed ? "Boss defeated." : "The boss survives. This time."}
           </h2>
-          <p className="text-sm text-muted-foreground">
-            {correctCount} / {total} correct
-            {!battleResult.passed ? ` -- need ${Math.ceil(total * PASS_THRESHOLD)} to win` : ""}
-          </p>
-          <div className="flex justify-center gap-2">
-            {!battleResult.passed ? (
-              <Button render={<Link href={`/courses/${courseSlug}/units/${unitSlug}/boss`} />} nativeButton={false}>
-                Try again
-              </Button>
-            ) : null}
-            <Button
-              render={<Link href={`/courses/${courseSlug}/units/${unitSlug}`} />}
-              nativeButton={false}
-              variant="outline"
-            >
-              Back to unit
+        </div>
+        <p className="numeral mt-6 text-5xl">
+          {correctCount} / {total}
+        </p>
+        <p className="reading mt-1 text-lg">
+          correct{!battleResult.passed ? `. You need ${Math.ceil(total * PASS_THRESHOLD)} to win.` : "."}
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          {!battleResult.passed ? (
+            <Button render={<Link href={`/courses/${courseSlug}/units/${unitSlug}/boss`} />} nativeButton={false} size="lg">
+              Try again
             </Button>
-          </div>
-        </CardContent>
-      </Card>
+          ) : null}
+          <Button
+            render={<Link href={`/courses/${courseSlug}/units/${unitSlug}`} />}
+            nativeButton={false}
+            variant={battleResult.passed ? "default" : "outline"}
+            size="lg"
+          >
+            Back to unit
+          </Button>
+        </div>
+      </div>
     );
   }
 
   return (
-    <div className="space-y-4">
+    <div className="grid gap-x-10 gap-y-3 md:grid-cols-[10.5rem_minmax(0,1fr)]">
       {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
 
-      <div>
-        <div className="mb-1 flex items-center justify-between text-sm">
-          <span className="font-semibold">{unitName} Boss</span>
-          <span className="text-muted-foreground">{healthPct}% HP</span>
-        </div>
-        <div className="h-4 overflow-hidden rounded-full bg-muted">
-          <motion.div
-            className="h-full bg-destructive"
-            initial={false}
-            animate={{ width: `${healthPct}%` }}
-            transition={shouldReduceMotion ? { duration: 0 } : { type: "spring", stiffness: 120, damping: 20 }}
-          />
-        </div>
+      <div className="space-y-3 md:pt-1">
+        <p className="eyebrow !text-foreground">
+          Question {index + 1} of {total}
+        </p>
+        <QuizProgress total={total} current={index} className="hidden md:flex" />
+        <Link
+          href={`/courses/${courseSlug}/units/${unitSlug}`}
+          className="eyebrow hidden underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline md:inline-block"
+        >
+          Leave battle
+        </Link>
       </div>
 
-      <Card className={paperLined ? "paper-lined" : undefined}>
-        <CardContent className="space-y-4 py-6">
-          <p className="text-xs text-muted-foreground">
-            Question {index + 1} of {total}
-          </p>
+      <div className="min-w-0 space-y-4">
+        <div>
+          <div className="mb-1.5 flex items-baseline justify-between gap-4">
+            <p className="heading text-lg">{unitName} boss</p>
+            <p className="eyebrow !text-foreground tabular-nums">{healthPct}% HP</p>
+          </div>
           <div
-            className="prose prose-neutral dark:prose-invert max-w-none"
-            dangerouslySetInnerHTML={{ __html: question.stemHtml }}
-          />
+            role="progressbar"
+            aria-label="Boss health"
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={healthPct}
+            className="h-4 overflow-hidden border-2 border-foreground bg-card"
+          >
+            <motion.div
+              className="h-full bg-incorrect"
+              initial={false}
+              animate={{ width: `${healthPct}%` }}
+              transition={shouldReduceMotion ? { duration: 0 } : { type: "spring", stiffness: 120, damping: 20 }}
+            />
+          </div>
+        </div>
+
+        <Sheet lined={paperLined}>
+          <Html html={question.stemHtml} className="text-[1.1875rem]" />
           {question.diagram && <DiagramRenderer diagram={question.diagram} />}
 
-          <div className="space-y-2">
-            {question.choices.map((choice) => {
-              const isSelected = selectedLabel === choice.label;
-              const correctHighlight = revealed && choice.isCorrect;
-              const wrongHighlight = revealed && isSelected && !choice.isCorrect;
-              return (
-                <button
+          <div className="mt-5">
+            <ChoiceList legend="Answer choices">
+              {question.choices.map((choice) => (
+                <Choice
                   key={choice.id}
-                  type="button"
+                  name={`boss-question-${question.id}`}
+                  label={choice.label}
+                  textHtml={choice.textHtml}
+                  checked={selectedLabel === choice.label}
                   disabled={revealed}
-                  onClick={() => setSelectedLabel(choice.label)}
-                  className={[
-                    "w-full rounded-lg border px-4 py-2 text-left text-sm transition-colors disabled:cursor-default",
-                    isSelected && !revealed ? "border-foreground" : "border-border",
-                    correctHighlight ? "border-green-600 bg-green-50 dark:bg-green-950" : "",
-                    wrongHighlight ? "border-destructive bg-red-50 dark:bg-red-950" : "",
-                  ].join(" ")}
-                >
-                  <span className="flex items-start gap-1.5">
-                    <span className="font-medium">{choice.label}.</span>{" "}
-                    <span
-                      className="[&_p]:m-0 [&_p]:inline"
-                      dangerouslySetInnerHTML={{ __html: choice.textHtml }}
-                    />
-                  </span>
-                </button>
-              );
-            })}
+                  revealed={revealed}
+                  state={revealed ? (choice.isCorrect ? "correct" : selectedLabel === choice.label ? "wrong" : "idle") : "idle"}
+                  onSelect={() => setSelectedLabel(choice.label)}
+                />
+              ))}
+            </ChoiceList>
           </div>
 
-          <div className="flex justify-end">
+          <div className="mt-6 flex justify-end">
             {!revealed ? (
-              <Button onClick={handleAttack} disabled={!selectedLabel}>
-                Attack!
+              <Button onClick={handleAttack} disabled={!selectedLabel} size="lg">
+                Attack
               </Button>
             ) : (
-              <Button onClick={handleNext} disabled={submitting}>
+              <Button onClick={handleNext} disabled={submitting} size="lg">
                 {isLast ? "Finish battle" : "Next question"}
               </Button>
             )}
           </div>
-        </CardContent>
-      </Card>
+        </Sheet>
+      </div>
     </div>
   );
 }

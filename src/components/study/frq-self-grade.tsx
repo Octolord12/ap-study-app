@@ -4,6 +4,9 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 import { submitFrqAttempt, updateFrqGrade } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
+import { Html } from "@/components/ui/html";
+import { Label } from "@/components/ui/label";
+import { Sheet } from "@/components/ui/sheet";
 import { Textarea } from "@/components/ui/textarea";
 import { hasReward, type Reward } from "@/components/gamification/reward-toast";
 
@@ -88,66 +91,80 @@ export function FrqSelfGrade({
     if (hasReward(nextReward)) setReward(nextReward);
   }
 
-  return (
-    <div className={paperLined ? "paper-lined space-y-4 rounded-lg border border-border p-6" : "space-y-4"}>
+  const content = (
+    <div className="space-y-6">
       {reward ? <RewardToast reward={reward} onDismiss={() => setReward(null)} /> : null}
       {readOnlyResponse ? (
-        <div className="rounded-lg border border-border bg-muted p-4 text-sm whitespace-pre-wrap">
-          {responseText || <span className="text-muted-foreground">(no response written)</span>}
+        <div>
+          <p className="eyebrow !text-current">Your response</p>
+          <div className="mt-2 border border-current/30 bg-muted/50 p-4 text-sm leading-relaxed whitespace-pre-wrap text-foreground">
+            {responseText || <span className="text-muted-foreground">(no response written)</span>}
+          </div>
         </div>
       ) : (
-        <Textarea
-          value={responseText}
-          onChange={(e) => setResponseText(e.target.value)}
-          disabled={revealed}
-          placeholder="Write your response..."
-          rows={8}
-        />
+        <div className="space-y-1.5">
+          <Label htmlFor={`frq-response-${frqPromptId}`}>Your response</Label>
+          <Textarea
+            id={`frq-response-${frqPromptId}`}
+            value={responseText}
+            onChange={(e) => setResponseText(e.target.value)}
+            disabled={revealed}
+            placeholder="Write your response here."
+            rows={8}
+          />
+        </div>
       )}
 
       {!revealed ? (
-        <Button onClick={() => setRevealed(true)} disabled={!readOnlyResponse && responseText.trim().length === 0}>
-          Reveal rubric &amp; sample response
+        <Button size="lg" onClick={() => setRevealed(true)} disabled={!readOnlyResponse && responseText.trim().length === 0}>
+          Reveal rubric and sample response
         </Button>
       ) : (
-        <div className="space-y-4">
+        <div className="space-y-6">
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              Rubric ({pointValue} point{pointValue === 1 ? "" : "s"} total) -- check what your response did
+            <p className="eyebrow !text-current">
+              Rubric · {pointValue} point{pointValue === 1 ? "" : "s"} total
             </p>
-            <div className="space-y-2">
+            <p className="mt-1 text-sm">Check each line your response earned.</p>
+            <ul className="mt-3 border-b border-current/25 [&>li]:border-t [&>li]:border-current/25">
               {rubric.map((line) => (
-                <label key={line.id} className="flex items-start gap-2 text-sm">
-                  <input
-                    type="checkbox"
-                    className="mt-0.5"
-                    checked={checkedLineIds.has(line.id)}
-                    onChange={() => toggleLine(line.id)}
-                    disabled={saved !== null}
-                  />
-                  <span>
-                    <span className="font-medium">({line.points} pt{line.points === 1 ? "" : "s"})</span>{" "}
-                    <span className="[&_p]:m-0 [&_p]:inline" dangerouslySetInnerHTML={{ __html: line.descriptionHtml }} />
-                  </span>
-                </label>
+                <li key={line.id}>
+                  <label className="flex cursor-pointer items-start gap-3 py-3 text-sm">
+                    <input
+                      type="checkbox"
+                      className="check mt-0.5"
+                      checked={checkedLineIds.has(line.id)}
+                      onChange={() => toggleLine(line.id)}
+                      disabled={saved !== null}
+                    />
+                    <span className="min-w-0">
+                      <span className="font-semibold tabular-nums">
+                        {line.points} pt{line.points === 1 ? "" : "s"}
+                      </span>{" "}
+                      <Html html={line.descriptionHtml} inline size="sm" className="inline" />
+                    </span>
+                  </label>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
-          <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Sample response</p>
-            <div
-              className="prose prose-sm prose-neutral dark:prose-invert max-w-none rounded-lg border border-border p-4"
-              dangerouslySetInnerHTML={{ __html: sampleResponseHtml }}
-            />
+          <div className="border-t-2 border-current pt-4">
+            <p className="eyebrow !text-current">Sample response</p>
+            <Html html={sampleResponseHtml} size="sm" className="mt-2" />
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-4">
             {saved === null ? (
-              <Button onClick={handleSave}>Save my grade ({pointsSoFar} pts so far)</Button>
+              <Button size="lg" onClick={handleSave}>
+                Save my grade ({pointsSoFar} {pointsSoFar === 1 ? "pt" : "pts"} so far)
+              </Button>
             ) : (
-              <p className="text-sm font-medium">
-                Saved: {saved.pointsAwarded} / {saved.maxPoints} points
+              <p className="flex items-baseline gap-3">
+                <span className="numeral text-4xl">
+                  {saved.pointsAwarded} / {saved.maxPoints}
+                </span>
+                <span className="text-sm font-semibold">points saved</span>
               </p>
             )}
           </div>
@@ -155,4 +172,6 @@ export function FrqSelfGrade({
       )}
     </div>
   );
+
+  return paperLined ? <Sheet lined>{content}</Sheet> : content;
 }

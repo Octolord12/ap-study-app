@@ -1,10 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import { submitExamAttempt } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Choice, ChoiceList } from "@/components/ui/choice";
+import { Html } from "@/components/ui/html";
+import { Label } from "@/components/ui/label";
+import { Sheet } from "@/components/ui/sheet";
 import { Textarea } from "@/components/ui/textarea";
+import { cn } from "cn";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
@@ -32,9 +36,11 @@ interface ExamRunnerProps {
 }
 
 function formatTime(totalSeconds: number): string {
-  const minutes = Math.floor(totalSeconds / 60);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
-  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+  const ss = String(seconds).padStart(2, "0");
+  return hours > 0 ? `${hours}:${String(minutes).padStart(2, "0")}:${ss}` : `${minutes}:${ss}`;
 }
 
 // Only whole checkpoints get a message (null everywhere else) -- an
@@ -55,6 +61,7 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
   const [submitting, setSubmitting] = useState(false);
   const submittingRef = useRef(false);
   const [timeAnnouncement, setTimeAnnouncement] = useState("");
+  const [confirming, setConfirming] = useState(false);
 
   const items = [...mcqItems, ...frqItems];
   const total = items.length;
@@ -100,95 +107,158 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
   }
 
   if (total === 0) {
-    return (
-      <Card>
-        <CardContent className="py-10 text-center text-sm text-muted-foreground">
-          No questions available for this exam.
-        </CardContent>
-      </Card>
-    );
+    return <p className="reading border-t-2 border-foreground pt-6 text-lg">No questions are available for this exam.</p>;
   }
 
   const isFrq = index >= mcqItems.length;
   const mcqItem = !isFrq ? mcqItems[index] : null;
   const frqItem = isFrq ? frqItems[index - mcqItems.length] : null;
 
+  const isAnswered = (i: number) =>
+    i < mcqItems.length ? Boolean(mcqAnswers[mcqItems[i].id]) : (frqResponses[frqItems[i - mcqItems.length].id] ?? "").trim().length > 0;
+  const unanswered = items.filter((_, i) => !isAnswered(i)).length;
+  const sectionLabel = isFrq ? "Free response" : "Multiple choice";
+
+  const grid = (
+    <div className="flex flex-wrap gap-1" role="group" aria-label="Jump to a question">
+      {items.map((item, i) => (
+        <Fragment key={item.id}>
+          {i === mcqItems.length && mcqItems.length > 0 ? <span aria-hidden className="h-0 basis-full" /> : null}
+        <button
+          type="button"
+          onClick={() => setIndex(i)}
+          aria-label={`Question ${i + 1}${i >= mcqItems.length ? " (free response)" : ""}, ${isAnswered(i) ? "answered" : "not answered"}`}
+          aria-current={i === index ? "step" : undefined}
+          className={cn(
+            "grid size-9 place-items-center border-[1.5px] border-foreground text-xs font-semibold tabular-nums hover:bg-mark hover:text-on-mark",
+            isAnswered(i) && "bg-foreground text-background",
+            i === index && "bg-mark text-on-mark outline-2 outline-offset-1 outline-foreground",
+            i === mcqItems.length && mcqItems.length > 0 && "mt-1"
+          )}
+        >
+          {i + 1}
+        </button>
+        </Fragment>
+      ))}
+    </div>
+  );
+
+  const timer = (
+    <p className={cn("numeral text-4xl", lowTime && "text-incorrect")}>{formatTime(secondsLeft)}</p>
+  );
+
   return (
-    <div className="space-y-3">
+    <div className="grid gap-x-10 gap-y-4 md:grid-cols-[10.5rem_minmax(0,1fr)]">
       <span role="status" aria-live="polite" className="sr-only">
         {timeAnnouncement}
       </span>
-      <div className="flex items-center justify-between text-sm">
-        <span className="text-muted-foreground">
-          {isFrq ? "FRQ" : "MCQ"} · Question {index + 1} of {total}
+
+      {/* Phones: a thin sticky strip, so the clock is always in view. */}
+      <div className="sticky top-0 z-30 -mx-4 flex items-baseline justify-between border-b border-border bg-background px-4 py-2 md:hidden">
+        <span className="eyebrow !text-foreground">
+          {sectionLabel} · {index + 1} of {total}
         </span>
-        <span className={lowTime ? "font-semibold text-destructive" : "text-muted-foreground"}>
-          {formatTime(secondsLeft)}
-        </span>
+        <span className={cn("numeral text-xl", lowTime && "text-incorrect")}>{formatTime(secondsLeft)}</span>
       </div>
 
-      <Card className={paperLined ? "paper-lined" : undefined}>
-        <CardContent className="space-y-4 py-6">
+      {/* Desktop: the margin column is the answer sheet's header. */}
+      <div className="hidden space-y-4 md:sticky md:top-4 md:block md:self-start">
+        <div>
+          {timer}
+          <p className="eyebrow mt-1">{lowTime ? "Under 5 minutes" : "Time left"}</p>
+        </div>
+        <p className="eyebrow !text-foreground">
+          {sectionLabel}
+          <br />
+          Question {index + 1} of {total}
+        </p>
+        {grid}
+      </div>
+
+      <div className="min-w-0 space-y-4">
+        <details className="md:hidden">
+          <summary className="cursor-pointer text-sm font-semibold underline-offset-4 hover:underline">
+            Jump to a question ({unanswered} unanswered)
+          </summary>
+          <div className="mt-3">{grid}</div>
+        </details>
+
+        <Sheet lined={paperLined}>
           {mcqItem ? (
             <>
-              <div
-                className="prose prose-neutral dark:prose-invert max-w-none"
-                dangerouslySetInnerHTML={{ __html: mcqItem.stemHtml }}
-              />
+              <Html html={mcqItem.stemHtml} className="text-[1.1875rem]" />
               {mcqItem.diagram && <DiagramRenderer diagram={mcqItem.diagram} />}
-              <div className="space-y-2">
-                {mcqItem.choices.map((choice) => (
-                  <button
-                    key={choice.id}
-                    type="button"
-                    onClick={() => setMcqAnswers((prev) => ({ ...prev, [mcqItem.id]: choice.label }))}
-                    className={[
-                      "w-full rounded-lg border px-4 py-2 text-left text-sm transition-colors",
-                      mcqAnswers[mcqItem.id] === choice.label ? "border-foreground bg-muted" : "border-border",
-                    ].join(" ")}
-                  >
-                    <span className="flex items-start gap-1.5">
-                      <span className="font-medium">{choice.label}.</span>{" "}
-                      <span
-                        className="[&_p]:m-0 [&_p]:inline"
-                        dangerouslySetInnerHTML={{ __html: choice.textHtml }}
-                      />
-                    </span>
-                  </button>
-                ))}
+              <div className="mt-5">
+                <ChoiceList legend="Answer choices">
+                  {mcqItem.choices.map((choice) => (
+                    <Choice
+                      key={choice.id}
+                      name={`exam-question-${mcqItem.id}`}
+                      label={choice.label}
+                      textHtml={choice.textHtml}
+                      checked={mcqAnswers[mcqItem.id] === choice.label}
+                      revealed={false}
+                      onSelect={() => setMcqAnswers((prev) => ({ ...prev, [mcqItem.id]: choice.label }))}
+                    />
+                  ))}
+                </ChoiceList>
               </div>
             </>
           ) : null}
 
           {frqItem ? (
             <>
-              <div
-                className="prose prose-neutral dark:prose-invert max-w-none"
-                dangerouslySetInnerHTML={{ __html: frqItem.promptHtml }}
-              />
+              <p className="eyebrow mb-2">
+                {frqItem.pointValue} point{frqItem.pointValue === 1 ? "" : "s"}
+              </p>
+              <Html html={frqItem.promptHtml} />
               {frqItem.diagram && <DiagramRenderer diagram={frqItem.diagram} />}
-              <Textarea
-                value={frqResponses[frqItem.id] ?? ""}
-                onChange={(e) => setFrqResponses((prev) => ({ ...prev, [frqItem.id]: e.target.value }))}
-                placeholder="Write your response..."
-                rows={10}
-              />
+              <div className="mt-5 space-y-1.5">
+                <Label htmlFor={`frq-${frqItem.id}`}>Your response</Label>
+                <Textarea
+                  id={`frq-${frqItem.id}`}
+                  value={frqResponses[frqItem.id] ?? ""}
+                  onChange={(e) => setFrqResponses((prev) => ({ ...prev, [frqItem.id]: e.target.value }))}
+                  placeholder="Write your response here."
+                  rows={10}
+                />
+              </div>
             </>
           ) : null}
-        </CardContent>
-      </Card>
+        </Sheet>
 
-      <div className="flex items-center justify-between">
-        <Button variant="outline" onClick={() => setIndex((i) => Math.max(0, i - 1))} disabled={index === 0}>
-          Previous
-        </Button>
-        <div className="flex gap-2">
-          <Button variant="outline" onClick={() => void handleSubmit()} disabled={submitting}>
-            Submit exam
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <Button variant="outline" size="lg" onClick={() => setIndex((i) => Math.max(0, i - 1))} disabled={index === 0}>
+            Previous
           </Button>
           {index < total - 1 ? (
-            <Button onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}>Next</Button>
+            <Button size="lg" onClick={() => setIndex((i) => Math.min(total - 1, i + 1))}>
+              Next
+            </Button>
           ) : null}
+        </div>
+
+        <div className="border-t-2 border-foreground pt-4">
+          {confirming ? (
+            <div role="alertdialog" aria-label="Confirm submit" className="space-y-3">
+              <p className="text-sm font-medium">
+                Submit the exam now?{" "}
+                {unanswered > 0 ? `${unanswered} of ${total} questions are unanswered.` : "Every question has an answer."}
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Button size="lg" onClick={() => void handleSubmit()} disabled={submitting}>
+                  {submitting ? "Submitting…" : "Yes, submit"}
+                </Button>
+                <Button size="lg" variant="outline" onClick={() => setConfirming(false)} disabled={submitting}>
+                  Keep working
+                </Button>
+              </div>
+            </div>
+          ) : (
+            <Button variant="outline" onClick={() => setConfirming(true)} disabled={submitting}>
+              Submit exam
+            </Button>
+          )}
         </div>
       </div>
     </div>

@@ -1,8 +1,12 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getUnitWithQuestions } from "@/lib/study/queries";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { BossBattleRunner } from "@/components/study/boss-battle-runner";
+import { Page } from "@/components/ui/page";
+
+export const metadata: Metadata = { title: "Boss battle" };
 
 export default async function BossBattlePage({
   params,
@@ -23,7 +27,7 @@ export default async function BossBattlePage({
   );
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
+    <Page>
       <BossBattleRunner
         unitId={unit.id}
         unitName={unit.name}
@@ -31,6 +35,6 @@ export default async function BossBattlePage({
         unitSlug={unit.slug}
         questions={questions}
       />
-    </div>
+    </Page>
   );
 }

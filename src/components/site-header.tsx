@@ -51,7 +51,9 @@ export async function SiteHeader() {
                 <span className="flex items-center gap-2">
                   <Tally count={stats.currentStreak} className="hidden h-6 w-auto lg:block" />
                   <span className="numeral text-xl">{stats.currentStreak}</span>
-                  <span className="eyebrow hidden sm:inline">day streak</span>
+                  <span className="eyebrow">
+                      day<span className="hidden sm:inline"> streak</span>
+                    </span>
                 </span>
               ) : null}
               <span className="flex items-baseline gap-1.5">

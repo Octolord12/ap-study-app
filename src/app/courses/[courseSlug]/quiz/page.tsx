@@ -1,9 +1,13 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { QuizRunner } from "@/components/study/quiz-runner";
+import { Page } from "@/components/ui/page";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 import type { AttemptSource } from "@/generated/prisma/client";
+
+export const metadata: Metadata = { title: "Quiz" };
 
 const VALID_SOURCES: AttemptSource[] = ["PRACTICE", "QUIZ", "DAILY", "WEAK_SPOT"];
 
@@ -33,7 +37,7 @@ export default async function CourseQuizPage({
   const backHref = back && back.startsWith("/") ? back : `/courses/${courseSlug}`;
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
+    <Page>
       <QuizRunner
         questions={rendered}
         backHref={backHref}
@@ -41,6 +45,6 @@ export default async function CourseQuizPage({
         source={attemptSource}
         paperLined={isPaperLinedCourse(courseSlug)}
       />
-    </div>
+    </Page>
   );
 }

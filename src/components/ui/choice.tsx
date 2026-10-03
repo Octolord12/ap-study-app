@@ -87,7 +87,9 @@ export function Choice({
         state={state}
         verdict={verdictFor(state, verdict)}
         input={
-          <input type="radio" name={name} value={label} checked={checked} disabled={disabled} onChange={onSelect} />
+          // onClick as well as onChange: a tap that lands before hydration leaves the
+          // radio natively checked, and re-tapping it fires no change event.
+          <input type="radio" name={name} value={label} checked={checked} disabled={disabled} onChange={onSelect} onClick={onSelect} />
         }
       />
     </label>

@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import confetti from "canvas-confetti";
 import { playBadgeSound, playCorrectSound, playLevelUpSound } from "@/lib/gamification/sound";
 import type { BadgeDefinition } from "@/lib/gamification/badges";
+import { BadgeStamp } from "@/components/ui/stamp";
 
 export interface Reward {
   xpAwarded: number;
@@ -43,26 +44,35 @@ export function RewardToast({ reward, onDismiss }: { reward: Reward; onDismiss: 
 
   return (
     <motion.div
-      initial={shouldReduceMotion ? false : { opacity: 0, y: -12, scale: 0.95 }}
+      initial={shouldReduceMotion ? false : { opacity: 0, y: -12, scale: 0.97 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -12 }}
-      className="fixed top-4 left-1/2 z-50 flex w-[calc(100vw-2rem)] max-w-xs -translate-x-1/2 flex-col items-center gap-2"
+      role="status"
+      className="fixed top-4 left-1/2 z-50 flex w-[calc(100vw-2rem)] max-w-xs -translate-x-1/2 flex-col items-stretch gap-2"
     >
       {reward.xpAwarded > 0 ? (
-        <div className="rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background shadow-lg">
-          +{reward.xpAwarded} XP
+        <div className="flex items-baseline justify-center gap-2 bg-foreground px-4 py-2 text-background">
+          <span className="numeral text-2xl">+{reward.xpAwarded}</span>
+          <span className="eyebrow !text-background">XP</span>
         </div>
       ) : null}
       {reward.leveledUp ? (
-        <div className="rounded-lg bg-primary px-4 py-3 text-center text-sm font-bold text-primary-foreground shadow-lg">
-          🎉 Level up! You&apos;re now level {reward.newLevel}
+        <div className="border-2 border-foreground bg-mark px-4 py-3 text-on-mark">
+          <p className="eyebrow !text-on-mark">Level up</p>
+          <p className="mt-1 flex items-baseline gap-2">
+            <span className="numeral text-4xl">{reward.newLevel}</span>
+            <span className="text-sm font-semibold">You&apos;re now level {reward.newLevel}.</span>
+          </p>
         </div>
       ) : null}
       {reward.newBadges.map((badge) => (
-        <div key={badge.slug} className="rounded-lg border border-border bg-card px-4 py-3 text-center shadow-lg">
-          <div className="text-2xl">{badge.icon}</div>
-          <div className="text-sm font-semibold">{badge.name}</div>
-          <div className="text-xs text-muted-foreground">{badge.description}</div>
+        <div key={badge.slug} className="flex items-center gap-3 border-2 border-foreground bg-card p-3 text-card-foreground">
+          <BadgeStamp slug={badge.slug} className="size-14 shrink-0" />
+          <div className="min-w-0">
+            <p className="eyebrow">Badge earned</p>
+            <p className="heading text-lg">{badge.name}</p>
+            <p className="text-xs text-muted-foreground">{badge.description}</p>
+          </div>
         </div>
       ))}
     </motion.div>

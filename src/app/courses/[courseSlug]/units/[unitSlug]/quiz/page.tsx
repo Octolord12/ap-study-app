@@ -1,8 +1,12 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { QuizRunner } from "@/components/study/quiz-runner";
+import { Page } from "@/components/ui/page";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
+
+export const metadata: Metadata = { title: "Unit quiz" };
 
 export default async function UnitQuizPage({
   params,
@@ -22,13 +26,13 @@ export default async function UnitQuizPage({
   if (rendered.length === 0) notFound();
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
+    <Page>
       <QuizRunner
         questions={rendered}
         backHref={`/courses/${courseSlug}/units/${unitSlug}`}
         backLabel="Back to unit"
         paperLined={isPaperLinedCourse(courseSlug)}
       />
-    </div>
+    </Page>
   );
 }
