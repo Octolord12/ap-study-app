@@ -32,9 +32,9 @@ export function XpBar({ value, max, label, className }: { value: number; max: nu
 }
 
 // Share of the exam, as a bar on a rule. Used for unit weighting.
-export function WeightBar({ min, max, label }: { min: number; max: number; label: string }) {
+export function WeightBar({ min, max, label, className }: { min: number; max: number; label: string; className?: string }) {
   return (
-    <div role="img" aria-label={label} className="relative h-2 w-full max-w-40 bg-border">
+    <div role="img" aria-label={label} className={cn("relative h-2 w-full max-w-40 bg-border", className)}>
       <i
         className="absolute inset-y-0 block bg-foreground"
         style={{ left: `${Math.min(100, min * 4)}%`, width: `${Math.max(2, (max - min) * 4)}%` }}

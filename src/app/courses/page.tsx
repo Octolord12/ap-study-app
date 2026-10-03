@@ -1,8 +1,11 @@
-import Link from "next/link";
+import type { Metadata } from "next";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { listCourses } from "@/lib/study/queries";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CourseRow } from "@/components/study/course-row";
+import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
+
+export const metadata: Metadata = { title: "Courses" };
 
 export default async function CoursesPage() {
   const userId = await requireUserId();
@@ -11,28 +14,30 @@ export default async function CoursesPage() {
     listCourses(),
     getDb().enrollment.findMany({ where: { userId }, select: { courseId: true } }),
   ]);
-  const enrolledCourseIds = new Set(enrollments.map((e) => e.courseId));
+  const enrolledIds = new Set(enrollments.map((e) => e.courseId));
+  const mine = courses.filter((c) => enrolledIds.has(c.id));
+  const others = courses.filter((c) => !enrolledIds.has(c.id));
+
+  const rows = (list: typeof courses) => (
+    <RuledList>
+      {list.map((course) => (
+        <CourseRow
+          key={course.id}
+          slug={course.slug}
+          name={course.name}
+          description={course.description}
+          examFormat={course.examFormat}
+          enrolled={enrolledIds.has(course.id)}
+        />
+      ))}
+    </RuledList>
+  );
 
   return (
-    <div className="mx-auto w-full max-w-3xl px-6 py-10">
-      <h1 className="mb-6 text-2xl font-bold tracking-tight">Courses</h1>
-      <div className="grid gap-4 sm:grid-cols-2">
-        {courses.map((course) => (
-          <Link key={course.id} href={`/courses/${course.slug}`}>
-            <Card className="h-full transition-colors hover:border-foreground/30">
-              <CardHeader>
-                <CardTitle>{course.name}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">{course.description}</p>
-                {enrolledCourseIds.has(course.id) ? (
-                  <p className="mt-3 text-xs font-medium text-primary">Enrolled</p>
-                ) : null}
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
-    </div>
+    <Page>
+      <PageHeader eyebrow="Courses" title="Four exams. Pick one." description="Open a course to see its units, then practice by unit, by weak spot, or under exam conditions." />
+      {mine.length > 0 ? <Section label="Your courses">{rows(mine)}</Section> : null}
+      {others.length > 0 ? <Section label={mine.length > 0 ? "More courses" : "All courses"}>{rows(others)}</Section> : null}
+    </Page>
   );
 }

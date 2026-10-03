@@ -1,11 +1,21 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { getCourseTree } from "@/lib/study/queries";
 import { enrollInCourse } from "@/lib/study/actions";
+import { computeUnitMastery } from "@/lib/study/mastery";
+import { describeExamFormat, formatDuration } from "@/lib/content/exam-format";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Bubbles, WeightBar } from "@/components/ui/meter";
+import { Breadcrumb, Page, PageHeader, RuledList, Section } from "@/components/ui/page";
+
+export async function generateMetadata({ params }: { params: Promise<{ courseSlug: string }> }): Promise<Metadata> {
+  const { courseSlug } = await params;
+  const course = await getDb().course.findUnique({ where: { slug: courseSlug }, select: { name: true } });
+  return { title: course?.name ?? "Course" };
+}
 
 export default async function CoursePage({ params }: { params: Promise<{ courseSlug: string }> }) {
   const { courseSlug } = await params;
@@ -14,49 +24,90 @@ export default async function CoursePage({ params }: { params: Promise<{ courseS
   const course = await getCourseTree(courseSlug);
   if (!course) notFound();
 
-  const enrollment = await getDb().enrollment.findUnique({
-    where: { userId_courseId: { userId, courseId: course.id } },
-  });
+  const [enrollment, attempts] = await Promise.all([
+    getDb().enrollment.findUnique({ where: { userId_courseId: { userId, courseId: course.id } } }),
+    getDb().questionAttempt.findMany({
+      where: { userId, question: { courseId: course.id } },
+      select: { questionId: true, correct: true, createdAt: true, question: { select: { unitId: true } } },
+    }),
+  ]);
+  const masteryByUnitId = new Map(
+    computeUnitMastery(
+      attempts.map((a) => ({ questionId: a.questionId, unitId: a.question.unitId, correct: a.correct, createdAt: a.createdAt })),
+    ).map((m) => [m.unitId, m]),
+  );
 
+  const format = course.examFormat as unknown as Parameters<typeof describeExamFormat>[0];
   const enrollAction = enrollInCourse.bind(null, course.id);
 
   return (
-    <div className="mx-auto w-full max-w-3xl px-6 py-10">
-      <div className="mb-6 flex items-start justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight">{course.name}</h1>
-          <p className="mt-1 text-sm text-muted-foreground">{course.description}</p>
-        </div>
-        <div className="flex shrink-0 gap-2">
-          {enrollment ? (
-            <Button render={<Link href={`/courses/${course.slug}/practice`} />} nativeButton={false} variant="outline">
+    <Page>
+      <PageHeader
+        eyebrow={<Breadcrumb items={[{ label: "Courses", href: "/courses" }, { label: course.name }]} />}
+        title={course.name}
+        description={course.description}
+        actions={
+          enrollment ? (
+            <Button render={<Link href={`/courses/${course.slug}/practice`} />} nativeButton={false} size="lg">
               Practice
             </Button>
           ) : (
             <form action={enrollAction}>
-              <Button type="submit">Start studying</Button>
+              <Button type="submit" size="lg">
+                Start studying
+              </Button>
             </form>
-          )}
-        </div>
-      </div>
+          )
+        }
+      />
 
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Units</h2>
-      <div className="space-y-3">
-        {course.units.map((unit) => (
-          <Link key={unit.id} href={`/courses/${course.slug}/units/${unit.slug}`}>
-            <Card className="transition-colors hover:border-foreground/30">
-              <CardHeader>
-                <CardTitle className="text-base">{unit.name}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-xs text-muted-foreground">
-                  {unit.weightingMin}–{unit.weightingMax}% of exam · {unit.topics.length} topics
-                </p>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
-      </div>
-    </div>
+      <Section label="Units" note="Weight is the share of the exam each unit makes up.">
+        <RuledList>
+          {course.units.map((unit, index) => {
+            const m = masteryByUnitId.get(unit.id);
+            const attempted = m?.questionsAttempted ?? 0;
+            const percent = m && attempted > 0 ? Math.round((m.questionsCorrect / attempted) * 100) : null;
+            return (
+              <li key={unit.id}>
+                <Link
+                  href={`/courses/${course.slug}/units/${unit.slug}`}
+                  className="group grid gap-x-6 gap-y-3 py-5 sm:grid-cols-[3rem_minmax(0,1fr)_auto]"
+                >
+                  <span className="numeral hidden text-3xl text-muted-foreground sm:block">{String(index + 1).padStart(2, "0")}</span>
+                  <div className="min-w-0">
+                    <p className="eyebrow sm:hidden">Unit {String(index + 1).padStart(2, "0")}</p>
+                    <h3 className="heading text-xl underline-offset-4 decoration-2 group-hover:underline">{unit.name}</h3>
+                    <p className="mt-1.5 text-sm text-muted-foreground">
+                      {unit.weightingMin}–{unit.weightingMax}% of exam · {unit.topics.length} topics
+                    </p>
+                    <WeightBar
+                      min={unit.weightingMin}
+                      max={unit.weightingMax}
+                      label={`${unit.weightingMin} to ${unit.weightingMax} percent of the exam`}
+                      className="mt-2"
+                    />
+                  </div>
+                  <div className="flex items-center gap-3 sm:flex-col sm:items-end sm:gap-1.5">
+                    <Bubbles percent={percent} />
+                    <span className="eyebrow">{percent === null ? "Not started" : `${percent}% of ${attempted}`}</span>
+                  </div>
+                </Link>
+              </li>
+            );
+          })}
+        </RuledList>
+      </Section>
+
+      <Section label="The exam" note="Format as of 2026-27.">
+        <p className="reading max-w-[56ch]">
+          {describeExamFormat(format)}, in {formatDuration(format.totalDurationMinutes)}.
+        </p>
+        {enrollment ? (
+          <Button render={<Link href={`/courses/${course.slug}/exam`} />} nativeButton={false} variant="outline" className="mt-4">
+            Take a practice exam
+          </Button>
+        ) : null}
+      </Section>
+    </Page>
   );
 }

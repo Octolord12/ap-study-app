@@ -1,10 +1,14 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { startExam } from "@/lib/study/actions";
+import { formatDuration, SECTION_NAMES } from "@/lib/content/exam-format";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Breadcrumb, Page, PageHeader, RuledList, Section } from "@/components/ui/page";
 import type { Course as ContentCourse } from "@/lib/content/schema";
+
+export const metadata: Metadata = { title: "Exam simulation" };
 
 export default async function ExamIntroPage({ params }: { params: Promise<{ courseSlug: string }> }) {
   await requireUserId();
@@ -21,36 +25,58 @@ export default async function ExamIntroPage({ params }: { params: Promise<{ cour
     getDb().question.count({ where: { courseId: course.id } }),
     getDb().fRQPrompt.count({ where: { courseId: course.id } }),
   ]);
+  const short =
+    availableQuestions < (mcqSection?.questionCount ?? 0) || availableFrqs < (frqSection?.questionCount ?? 0);
 
   const startExamAction = startExam.bind(null, course.id, course.slug);
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
-      <Card>
-        <CardHeader>
-          <CardTitle>Exam simulation</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <p className="text-sm text-muted-foreground">
-            The real {course.name} exam is {mcqSection?.questionCount ?? "?"} MCQ +{" "}
-            {frqSection?.questionCount ?? "?"} FRQ in {examFormat.totalDurationMinutes} minutes, with no explanations
-            until you&apos;re done.
+    <Page>
+      <PageHeader
+        eyebrow={
+          <Breadcrumb
+            items={[
+              { label: course.name, href: `/courses/${course.slug}` },
+              { label: "Practice", href: `/courses/${course.slug}/practice` },
+              { label: "Exam" },
+            ]}
+          />
+        }
+        title="Exam simulation"
+        description={`The real ${course.name} exam runs ${formatDuration(examFormat.totalDurationMinutes)}. This one is timed the same way and shows no explanations until you submit.`}
+      />
+
+      <Section label="Sections">
+        <RuledList>
+          {examFormat.sections.map((section) => (
+            <li key={section.type} className="grid gap-x-6 gap-y-1 py-4 sm:grid-cols-[minmax(0,1fr)_auto]">
+              <p className="heading text-xl capitalize">{SECTION_NAMES[section.type] ?? section.type}</p>
+              <p className="eyebrow sm:text-right">
+                {section.type === "MCQ" || section.type === "FRQ" ? `${section.questionCount} questions · ` : ""}
+                {formatDuration(section.durationMinutes)} · {Math.round(section.scoreWeight * 100)}% of score
+              </p>
+            </li>
+          ))}
+        </RuledList>
+        {short ? (
+          <p className="reading mt-5 max-w-[56ch]">
+            This course has {availableQuestions} multiple-choice questions and {availableFrqs} free-response prompts
+            available, fewer than the real exam, so the simulation uses all of them.
           </p>
-          {(availableQuestions < (mcqSection?.questionCount ?? 0) ||
-            availableFrqs < (frqSection?.questionCount ?? 0)) && (
-            <p className="rounded-lg bg-muted p-3 text-sm text-muted-foreground">
-              This course&apos;s question bank is still small ({availableQuestions} MCQ, {availableFrqs} FRQ
-              available) -- today&apos;s simulation will use everything available rather than the full count. More
-              content lands in a later milestone.
-            </p>
-          )}
-          <form action={startExamAction}>
-            <Button type="submit" className="w-full">
-              Start exam
-            </Button>
-          </form>
-        </CardContent>
-      </Card>
-    </div>
+        ) : null}
+      </Section>
+
+      <Section label="Start">
+        <form action={startExamAction}>
+          <Button type="submit" size="lg">
+            Start exam
+          </Button>
+        </form>
+        <p className="mt-3 max-w-[52ch] text-sm text-muted-foreground">
+          You get an estimated AP score range at the end. It comes from multiple-choice accuracy only, so treat it as a
+          rough guide.
+        </p>
+      </Section>
+    </Page>
   );
 }

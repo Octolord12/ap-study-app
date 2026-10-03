@@ -7,7 +7,7 @@ interface ExamFormatLike {
   sections: { type: string; questionCount: number }[];
 }
 
-const NAMES: Record<string, string> = {
+export const SECTION_NAMES: Record<string, string> = {
   MCQ: "multiple choice",
   FRQ: "free response",
   SAQ: "short answer",
@@ -17,7 +17,7 @@ const NAMES: Record<string, string> = {
 
 export function describeExamFormat(format: ExamFormatLike): string {
   return format.sections
-    .map((s) => (s.type === "MCQ" || s.type === "FRQ" ? `${s.questionCount} ${NAMES[s.type]}` : (NAMES[s.type] ?? s.type)))
+    .map((s) => (s.type === "MCQ" || s.type === "FRQ" ? `${s.questionCount} ${SECTION_NAMES[s.type]}` : (SECTION_NAMES[s.type] ?? s.type)))
     .join(", ");
 }
 

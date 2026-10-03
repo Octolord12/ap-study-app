@@ -2,8 +2,11 @@
 
 import { useMemo, useState, useTransition } from "react";
 import Link from "next/link";
+import { Bookmark } from "lucide-react";
 import { toggleBookmark } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
+import { Select } from "@/components/ui/select";
+import { cn } from "cn";
 
 export interface QuestionRow {
   id: string;
@@ -58,17 +61,16 @@ export function UnitQuestionBrowser({
     });
   }
 
-  const selectClass = "rounded-md border border-input bg-background px-2 py-1 text-sm";
   const quizHref = `/courses/${courseSlug}/units/${unitSlug}/quiz?ids=${filtered.map((q) => q.id).join(",")}`;
 
   return (
     <div>
-      <div className="mb-4 flex flex-wrap items-center gap-3">
-        <select
+      <div className="mb-5 flex flex-wrap items-center gap-x-5 gap-y-3">
+        <Select
           value={topicFilter}
           onChange={(e) => setTopicFilter(e.target.value)}
-          className={selectClass}
           aria-label="Filter by topic"
+          className="sm:w-auto sm:min-w-52"
         >
           <option value="all">All topics</option>
           {topics.map(([slug, name]) => (
@@ -76,52 +78,53 @@ export function UnitQuestionBrowser({
               {name}
             </option>
           ))}
-        </select>
-        <select
+        </Select>
+        <Select
           value={difficultyFilter}
           onChange={(e) => setDifficultyFilter(e.target.value)}
-          className={selectClass}
           aria-label="Filter by difficulty"
+          className="sm:w-auto"
         >
           <option value="all">All difficulties</option>
           <option value="EASY">Easy</option>
           <option value="MEDIUM">Medium</option>
           <option value="HARD">Hard</option>
-        </select>
-        <label className="flex items-center gap-1.5 text-sm">
-          <input type="checkbox" checked={bookmarkedOnly} onChange={(e) => setBookmarkedOnly(e.target.checked)} />
+        </Select>
+        <label className="flex items-center gap-2 text-sm font-medium">
+          <input type="checkbox" className="check" checked={bookmarkedOnly} onChange={(e) => setBookmarkedOnly(e.target.checked)} />
           Bookmarked
         </label>
-        <label className="flex items-center gap-1.5 text-sm">
-          <input type="checkbox" checked={missedOnly} onChange={(e) => setMissedOnly(e.target.checked)} />
+        <label className="flex items-center gap-2 text-sm font-medium">
+          <input type="checkbox" className="check" checked={missedOnly} onChange={(e) => setMissedOnly(e.target.checked)} />
           Missed
         </label>
       </div>
 
-      <ul className="mb-4 divide-y divide-border rounded-lg border border-border">
+      <ul className="mb-6 border-b border-border [&>li]:border-t [&>li]:border-border">
         {filtered.map((q, index) => (
-          <li key={q.id} className="flex items-center justify-between px-4 py-2 text-sm">
-            <span>
-              Q{index + 1} · {q.topicName} · <span className="capitalize">{q.difficulty.toLowerCase()}</span>
-              {q.missed === true ? <span className="ml-2 text-destructive">missed last time</span> : null}
+          <li key={q.id} className="flex items-center justify-between gap-3 py-1.5 text-sm">
+            <span className="flex min-w-0 flex-wrap items-baseline gap-x-3">
+              <span className="eyebrow w-9 shrink-0 !text-foreground">Q{index + 1}</span>
+              <span className="min-w-0">{q.topicName}</span>
+              <span className="eyebrow">{q.difficulty.toLowerCase()}</span>
+              {q.missed === true ? <span className="eyebrow !text-incorrect">missed last time</span> : null}
             </span>
             <button
               type="button"
               onClick={() => handleToggleBookmark(q.id)}
-              className="text-muted-foreground hover:text-foreground"
+              aria-pressed={bookmarks.has(q.id)}
               aria-label={bookmarks.has(q.id) ? "Remove bookmark" : "Add bookmark"}
+              className={cn("grid size-11 shrink-0 place-items-center hover:bg-mark hover:text-on-mark", bookmarks.has(q.id) && "text-foreground")}
             >
-              {bookmarks.has(q.id) ? "★" : "☆"}
+              <Bookmark className="size-5" fill={bookmarks.has(q.id) ? "currentColor" : "none"} strokeWidth={1.75} aria-hidden />
             </button>
           </li>
         ))}
-        {filtered.length === 0 ? (
-          <li className="px-4 py-6 text-center text-sm text-muted-foreground">No questions match these filters.</li>
-        ) : null}
+        {filtered.length === 0 ? <li className="py-6 text-sm text-muted-foreground">No questions match these filters.</li> : null}
       </ul>
 
       {filtered.length > 0 ? (
-        <Button render={<Link href={quizHref} />} nativeButton={false}>
+        <Button render={<Link href={quizHref} />} nativeButton={false} size="lg">
           Practice {filtered.length} question{filtered.length === 1 ? "" : "s"}
         </Button>
       ) : null}

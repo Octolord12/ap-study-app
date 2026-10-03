@@ -1,10 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { hasCompletedDailyChallengeToday, pickDailyChallengeQuestionIds } from "@/lib/study/queries";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ActionRow, Breadcrumb, Page, PageHeader, Section } from "@/components/ui/page";
+
+export const metadata: Metadata = { title: "Daily challenge" };
 
 export default async function DailyChallengePage({ params }: { params: Promise<{ courseSlug: string }> }) {
   const { courseSlug } = await params;
@@ -12,6 +15,26 @@ export default async function DailyChallengePage({ params }: { params: Promise<{
 
   const course = await getDb().course.findUnique({ where: { slug: courseSlug } });
   if (!course) notFound();
+
+  const header = (
+    <PageHeader
+      eyebrow={
+        <Breadcrumb
+          items={[
+            { label: course.name, href: `/courses/${course.slug}` },
+            { label: "Practice", href: `/courses/${course.slug}/practice` },
+            { label: "Daily challenge" },
+          ]}
+        />
+      }
+      title="Daily challenge"
+    />
+  );
+  const backButton = (
+    <Button render={<Link href={`/courses/${course.slug}/practice`} />} nativeButton={false} variant="outline" size="lg">
+      Back to practice
+    </Button>
+  );
 
   const done = await hasCompletedDailyChallengeToday(userId, course.id);
 
@@ -24,21 +47,17 @@ export default async function DailyChallengePage({ params }: { params: Promise<{
     const correctCount = todaysAttempts.filter((a) => a.correct).length;
 
     return (
-      <div className="mx-auto w-full max-w-2xl px-6 py-10">
-        <Card>
-          <CardHeader>
-            <CardTitle>Daily challenge</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-sm text-muted-foreground">
-              Done for today: {correctCount} / {todaysAttempts.length} correct. Come back tomorrow for a new set.
+      <Page>
+        {header}
+        <Section label="Today's result">
+          <ActionRow action={backButton}>
+            <p className="numeral text-6xl">
+              {correctCount} / {todaysAttempts.length}
             </p>
-            <Button render={<Link href={`/courses/${course.slug}/practice`} />} nativeButton={false} variant="outline">
-              Back to practice
-            </Button>
-          </CardContent>
-        </Card>
-      </div>
+            <p className="reading mt-2">correct. Come back tomorrow for a new set.</p>
+          </ActionRow>
+        </Section>
+      </Page>
     );
   }
 
@@ -46,18 +65,14 @@ export default async function DailyChallengePage({ params }: { params: Promise<{
 
   if (ids.length === 0) {
     return (
-      <div className="mx-auto w-full max-w-2xl px-6 py-10">
-        <Card>
-          <CardHeader>
-            <CardTitle>Daily challenge</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground">
-              No questions available yet for this course&apos;s daily challenge.
-            </p>
-          </CardContent>
-        </Card>
-      </div>
+      <Page>
+        {header}
+        <Section>
+          <ActionRow action={backButton}>
+            <p className="reading">This course has no questions for a daily set yet.</p>
+          </ActionRow>
+        </Section>
+      </Page>
     );
   }
 
@@ -69,20 +84,20 @@ export default async function DailyChallengePage({ params }: { params: Promise<{
   });
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
-      <Card>
-        <CardHeader>
-          <CardTitle>Daily challenge</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <p className="text-sm text-muted-foreground">
-            Today&apos;s set: {ids.length} questions, prioritizing what you&apos;re due to review.
-          </p>
-          <Button render={<Link href={`/courses/${course.slug}/quiz?${quizParams.toString()}`} />} nativeButton={false}>
-            Start today&apos;s challenge
-          </Button>
-        </CardContent>
-      </Card>
-    </div>
+    <Page>
+      {header}
+      <Section>
+        <ActionRow
+          action={
+            <Button render={<Link href={`/courses/${course.slug}/quiz?${quizParams.toString()}`} />} nativeButton={false} size="lg">
+              Start today&apos;s set
+            </Button>
+          }
+        >
+          <p className="numeral text-5xl">{ids.length}</p>
+          <p className="reading mt-2">questions, with anything due for review first.</p>
+        </ActionRow>
+      </Section>
+    </Page>
   );
 }

@@ -402,3 +402,34 @@ pre {
     scroll-behavior: auto !important;
   }
 }
+
+/* Square checkbox, filled with ink when on. Native input, so keyboard and form
+   behavior are untouched. */
+.check {
+  appearance: none;
+  display: inline-grid;
+  place-content: center;
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1.5px solid var(--foreground);
+  border-radius: 2px;
+  background: var(--card);
+  cursor: pointer;
+}
+.check:checked {
+  background: var(--foreground);
+}
+.check:checked::after {
+  content: "";
+  width: 0.7rem;
+  height: 0.38rem;
+  margin-top: -0.12rem;
+  border-left: 2px solid var(--background);
+  border-bottom: 2px solid var(--background);
+  transform: rotate(-45deg);
+}
+.check:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
