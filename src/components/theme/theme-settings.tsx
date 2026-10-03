@@ -1,79 +1,44 @@
 "use client";
 
-import { COLOR_THEMES } from "@/lib/theme/constants";
 import { useThemeStore } from "@/lib/theme/theme-store";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import type { ThemeMode } from "@/lib/theme/constants";
+import { cn } from "cn";
+
+const OPTIONS: { value: ThemeMode; label: string; hint: string }[] = [
+  { value: "light", label: "Light", hint: "Paper background" },
+  { value: "dark", label: "Dark", hint: "For late sessions" },
+  { value: "system", label: "Match device", hint: "Follows your phone or laptop" },
+];
 
 export function ThemeSettings() {
-  const colorTheme = useThemeStore((s) => s.colorTheme);
   const mode = useThemeStore((s) => s.mode);
-  const setColorTheme = useThemeStore((s) => s.setColorTheme);
   const setMode = useThemeStore((s) => s.setMode);
 
   return (
-    <Card className="mb-8">
-      <CardHeader>
-        <CardTitle className="text-base">Appearance</CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-5">
-        <div>
-          <p className="mb-2 text-sm font-medium">Mode</p>
-          <div className="inline-flex rounded-lg border border-border p-1">
-            <Button
-              type="button"
-              size="sm"
-              variant={mode === "light" ? "default" : "ghost"}
-              nativeButton
-              onClick={() => setMode("light")}
-              aria-pressed={mode === "light"}
-            >
-              Light
-            </Button>
-            <Button
-              type="button"
-              size="sm"
-              variant={mode === "dark" ? "default" : "ghost"}
-              nativeButton
-              onClick={() => setMode("dark")}
-              aria-pressed={mode === "dark"}
-            >
-              Dark
-            </Button>
-          </div>
-        </div>
-
-        <div>
-          <p className="mb-2 text-sm font-medium">Color theme</p>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {COLOR_THEMES.map((theme) => {
-              const selected = colorTheme === theme.id;
-              return (
-                <button
-                  key={theme.id}
-                  type="button"
-                  onClick={() => setColorTheme(theme.id)}
-                  aria-pressed={selected}
-                  className={`flex flex-col items-center gap-2 rounded-lg border p-3 text-xs font-medium transition-colors ${
-                    selected ? "border-foreground" : "border-border hover:border-foreground/40"
-                  }`}
-                >
-                  <span
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10"
-                    style={{ background: theme.swatch.bg }}
-                  >
-                    <span
-                      className="h-4 w-4 rounded-full border border-black/10"
-                      style={{ background: theme.swatch.primary }}
-                    />
-                  </span>
-                  {theme.label}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </CardContent>
-    </Card>
+    <fieldset className="m-0 min-w-0 border-0 p-0">
+      <legend className="sr-only">Appearance</legend>
+      <div className="grid max-w-xl gap-0 border border-foreground sm:grid-cols-3">
+        {OPTIONS.map((option) => (
+          <label
+            key={option.value}
+            className={cn(
+              "flex cursor-pointer flex-col gap-0.5 border-b border-foreground px-4 py-3 last:border-b-0 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-ring sm:border-r sm:border-b-0 sm:last:border-r-0",
+              mode === option.value ? "bg-mark text-on-mark" : "hover:bg-muted"
+            )}
+          >
+            <input
+              type="radio"
+              name="appearance"
+              value={option.value}
+              checked={mode === option.value}
+              onChange={() => setMode(option.value)}
+              className="sr-only"
+            />
+            <span className="text-sm font-semibold">{option.label}</span>
+            <span className={cn("text-xs", mode === option.value ? "text-on-mark" : "text-muted-foreground")}>{option.hint}</span>
+          </label>
+        ))}
+      </div>
+    </fieldset>
   );
 }

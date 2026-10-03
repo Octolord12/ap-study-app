@@ -6,356 +6,255 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * One identity: graphite on cool paper, with a single highlighter accent.
+ * The semantic names (background, foreground, muted, ...) are the shadcn
+ * contract that the UI primitives are written against; the design names
+ * (paper, ink, mark, ...) are aliases onto them so pages can say what they
+ * mean. Light is the default; .dark is applied to <html> by the theme store
+ * (src/components/theme/theme-sync.tsx, src/lib/theme/inline-script.ts).
+ *
+ * The highlighter is a background, never a text color: every use pairs it
+ * with --on-mark (ink). Correct / incorrect always travel with an icon and a
+ * word, never color alone.
+ */
 @theme inline {
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-heading: var(--font-sans);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-mark: var(--mark);
+  --color-on-mark: var(--on-mark);
+  --color-correct: var(--correct);
+  --color-incorrect: var(--incorrect);
+
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-xl: 6px;
 }
 
-/*
- * Color themes: 4 palettes (fresh-mint, sunrise, deep-study, playground)
- * each with a light and dark mode -- picked in Settings > Appearance
- * (src/components/theme/theme-settings.tsx), applied via a `data-color-theme`
- * attribute + `.dark` class on <html> (src/lib/theme/theme-store.ts /
- * theme-sync.tsx). Fresh Mint light is the product default, so it lives
- * directly in :root/.dark rather than behind an attribute selector -- that
- * way a first-ever visit (or any moment before the theme store hydrates)
- * still renders the right theme instead of a 5th "no theme" fallback. The
- * other 3 themes override those tokens via [data-color-theme="..."].
- */
-
 :root {
-  --background: #f3fbf9;
-  --foreground: #16302b;
+  color-scheme: light;
+  --background: #f7f8f6;
+  --foreground: #1f2328;
   --card: #ffffff;
-  --card-foreground: #16302b;
+  --card-foreground: #1f2328;
   --popover: #ffffff;
-  --popover-foreground: #16302b;
-  --primary: #0f9488;
-  --primary-foreground: #ffffff;
-  --secondary: #e4f5f1;
-  --secondary-foreground: #16302b;
-  --muted: #e4f5f1;
-  --muted-foreground: #4e6f68;
-  --accent: #dcf2ec;
-  --accent-foreground: #0f5147;
-  --destructive: #e05a4e;
-  --border: #dcefea;
-  --input: #dcefea;
-  --ring: #0f9488;
-  --chart-1: #0f9488;
-  --chart-2: #ff6b5d;
-  --chart-3: #e3a008;
-  --chart-4: #4c63d2;
-  --chart-5: #16302b;
-  --radius: 0.625rem;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #16302b;
-  --sidebar-primary: #0f9488;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #dcf2ec;
-  --sidebar-accent-foreground: #0f5147;
-  --sidebar-border: #dcefea;
-  --sidebar-ring: #0f9488;
+  --popover-foreground: #1f2328;
+  --primary: #1f2328;
+  --primary-foreground: #f7f8f6;
+  --secondary: #eceeea;
+  --secondary-foreground: #1f2328;
+  --muted: #eceeea;
+  --muted-foreground: #59606a;
+  --accent: #ffe24a;
+  --accent-foreground: #1f2328;
+  --destructive: #c62828;
+  --border: rgb(31 35 40 / 0.16);
+  --input: #1f2328;
+  --ring: #1f2328;
+
+  --mark: #ffe24a;
+  --on-mark: #1f2328;
+  --correct: #157347;
+  --incorrect: #c62828;
+
+  --nb-paper: #fdf9ef;
+  --nb-ink: #2b2620;
+  --nb-line: rgb(90 120 170 / 0.3);
+  --nb-margin: rgb(196 90 90 / 0.4);
 }
 
 .dark {
-  --background: #0e1a18;
-  --foreground: #e7f5f1;
-  --card: #14211f;
-  --card-foreground: #e7f5f1;
-  --popover: #14211f;
-  --popover-foreground: #e7f5f1;
-  --primary: #2dd4c4;
-  --primary-foreground: #06201c;
-  --secondary: #1b2c29;
-  --secondary-foreground: #e7f5f1;
-  --muted: #1b2c29;
-  --muted-foreground: #8fb3ac;
-  --accent: #1f3733;
-  --accent-foreground: #7fe3d3;
-  --destructive: #f2786c;
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: #2dd4c4;
-  --chart-1: #2dd4c4;
-  --chart-2: #ff8a7c;
-  --chart-3: #f0c04a;
-  --chart-4: #7c93f0;
-  --chart-5: #e7f5f1;
-  --sidebar: #14211f;
-  --sidebar-foreground: #e7f5f1;
-  --sidebar-primary: #2dd4c4;
-  --sidebar-primary-foreground: #06201c;
-  --sidebar-accent: #1f3733;
-  --sidebar-accent-foreground: #7fe3d3;
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: #2dd4c4;
-}
+  color-scheme: dark;
+  --background: #14161a;
+  --foreground: #eceef0;
+  --card: #1c1f24;
+  --card-foreground: #eceef0;
+  --popover: #1c1f24;
+  --popover-foreground: #eceef0;
+  --primary: #eceef0;
+  --primary-foreground: #14161a;
+  --secondary: #23272d;
+  --secondary-foreground: #eceef0;
+  --muted: #23272d;
+  --muted-foreground: #a0a7b0;
+  --accent: #ffd93d;
+  --accent-foreground: #14161a;
+  --destructive: #ff8a80;
+  --border: rgb(236 238 240 / 0.16);
+  --input: rgb(236 238 240 / 0.7);
+  --ring: #eceef0;
 
-:root[data-color-theme="sunrise"] {
-  --background: #fff9f2;
-  --foreground: #2b2115;
-  --card: #ffffff;
-  --card-foreground: #2b2115;
-  --popover: #ffffff;
-  --popover-foreground: #2b2115;
-  --primary: #f2622e;
-  --primary-foreground: #ffffff;
-  --secondary: #fbeee1;
-  --secondary-foreground: #2b2115;
-  --muted: #fbeee1;
-  --muted-foreground: #8a7a68;
-  --accent: #fce3d3;
-  --accent-foreground: #a5401a;
-  --destructive: #d64545;
-  --border: #f0e3d2;
-  --input: #f0e3d2;
-  --ring: #f2622e;
-  --chart-1: #f2622e;
-  --chart-2: #16a34a;
-  --chart-3: #d97706;
-  --chart-4: #2563eb;
-  --chart-5: #2b2115;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #2b2115;
-  --sidebar-primary: #f2622e;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #fce3d3;
-  --sidebar-accent-foreground: #a5401a;
-  --sidebar-border: #f0e3d2;
-  --sidebar-ring: #f2622e;
-}
+  --mark: #ffd93d;
+  --on-mark: #14161a;
+  --correct: #5fcb8a;
+  --incorrect: #ff8a80;
 
-.dark[data-color-theme="sunrise"] {
-  --background: #201811;
-  --foreground: #fbe9d8;
-  --card: #2a2018;
-  --card-foreground: #fbe9d8;
-  --popover: #2a2018;
-  --popover-foreground: #fbe9d8;
-  --primary: #ff8a5c;
-  --primary-foreground: #241207;
-  --secondary: #362a1e;
-  --secondary-foreground: #fbe9d8;
-  --muted: #362a1e;
-  --muted-foreground: #c2a98d;
-  --accent: #402d1e;
-  --accent-foreground: #ffb088;
-  --destructive: #e9776a;
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: #ff8a5c;
-  --chart-1: #ff8a5c;
-  --chart-2: #6bd394;
-  --chart-3: #eab35c;
-  --chart-4: #7ea6f2;
-  --chart-5: #fbe9d8;
-  --sidebar: #2a2018;
-  --sidebar-foreground: #fbe9d8;
-  --sidebar-primary: #ff8a5c;
-  --sidebar-primary-foreground: #241207;
-  --sidebar-accent: #402d1e;
-  --sidebar-accent-foreground: #ffb088;
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: #ff8a5c;
-}
-
-:root[data-color-theme="deep-study"] {
-  --background: #f6f4ee;
-  --foreground: #1b2438;
-  --card: #ffffff;
-  --card-foreground: #1b2438;
-  --popover: #ffffff;
-  --popover-foreground: #1b2438;
-  --primary: #1f3a5f;
-  --primary-foreground: #ffffff;
-  --secondary: #edeadc;
-  --secondary-foreground: #1b2438;
-  --muted: #edeadc;
-  --muted-foreground: #5b6472;
-  --accent: #e7d9b8;
-  --accent-foreground: #6b4e17;
-  --destructive: #b3442b;
-  --border: #e4e0d3;
-  --input: #e4e0d3;
-  --ring: #1f3a5f;
-  --chart-1: #1f3a5f;
-  --chart-2: #2f7d52;
-  --chart-3: #c08a2e;
-  --chart-4: #c1622a;
-  --chart-5: #2c4a7c;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #1b2438;
-  --sidebar-primary: #1f3a5f;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #e7d9b8;
-  --sidebar-accent-foreground: #6b4e17;
-  --sidebar-border: #e4e0d3;
-  --sidebar-ring: #1f3a5f;
-}
-
-.dark[data-color-theme="deep-study"] {
-  --background: #12161f;
-  --foreground: #e7e9f0;
-  --card: #191e2a;
-  --card-foreground: #e7e9f0;
-  --popover: #191e2a;
-  --popover-foreground: #e7e9f0;
-  --primary: #6c93c2;
-  --primary-foreground: #101826;
-  --secondary: #232a38;
-  --secondary-foreground: #e7e9f0;
-  --muted: #232a38;
-  --muted-foreground: #9ba4b5;
-  --accent: #2b2413;
-  --accent-foreground: #e0b865;
-  --destructive: #d4735c;
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: #6c93c2;
-  --chart-1: #6c93c2;
-  --chart-2: #6fbf94;
-  --chart-3: #e0b865;
-  --chart-4: #e0916a;
-  --chart-5: #8fa8d6;
-  --sidebar: #191e2a;
-  --sidebar-foreground: #e7e9f0;
-  --sidebar-primary: #6c93c2;
-  --sidebar-primary-foreground: #101826;
-  --sidebar-accent: #2b2413;
-  --sidebar-accent-foreground: #e0b865;
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: #6c93c2;
-}
-
-:root[data-color-theme="playground"] {
-  --background: #fbf8ff;
-  --foreground: #241b3a;
-  --card: #ffffff;
-  --card-foreground: #241b3a;
-  --popover: #ffffff;
-  --popover-foreground: #241b3a;
-  --primary: #7c3aed;
-  --primary-foreground: #ffffff;
-  --secondary: #f1eafc;
-  --secondary-foreground: #241b3a;
-  --muted: #f1eafc;
-  --muted-foreground: #6a6190;
-  --accent: #fce4f0;
-  --accent-foreground: #9d1857;
-  --destructive: #e11d48;
-  --border: #eae1fb;
-  --input: #eae1fb;
-  --ring: #7c3aed;
-  --chart-1: #7c3aed;
-  --chart-2: #ec4899;
-  --chart-3: #f5a623;
-  --chart-4: #3b82f6;
-  --chart-5: #16a34a;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #241b3a;
-  --sidebar-primary: #7c3aed;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #fce4f0;
-  --sidebar-accent-foreground: #9d1857;
-  --sidebar-border: #eae1fb;
-  --sidebar-ring: #7c3aed;
-}
-
-.dark[data-color-theme="playground"] {
-  --background: #180f2b;
-  --foreground: #ede7fa;
-  --card: #1f1538;
-  --card-foreground: #ede7fa;
-  --popover: #1f1538;
-  --popover-foreground: #ede7fa;
-  --primary: #a879f5;
-  --primary-foreground: #1b0f33;
-  --secondary: #2a1f47;
-  --secondary-foreground: #ede7fa;
-  --muted: #2a1f47;
-  --muted-foreground: #b3a6d6;
-  --accent: #3a1c2c;
-  --accent-foreground: #f98bc0;
-  --destructive: #f0577a;
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: #a879f5;
-  --chart-1: #a879f5;
-  --chart-2: #f98bc0;
-  --chart-3: #f0c04a;
-  --chart-4: #7ea6f2;
-  --chart-5: #6fbf94;
-  --sidebar: #1f1538;
-  --sidebar-foreground: #ede7fa;
-  --sidebar-primary: #a879f5;
-  --sidebar-primary-foreground: #1b0f33;
-  --sidebar-accent: #3a1c2c;
-  --sidebar-accent-foreground: #f98bc0;
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: #a879f5;
+  --nb-paper: #1d1912;
+  --nb-ink: #ece6d9;
+  --nb-line: rgb(255 255 255 / 0.07);
+  --nb-margin: rgb(214 120 110 / 0.3);
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
+    @apply border-border;
   }
   html {
     @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: var(--mark);
+    color: var(--on-mark);
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
   }
 }
 
-/* rehype-pretty-code emits <pre><code>; it inlines token colors itself, this just gives the block shape */
-pre {
-  @apply overflow-x-auto rounded-lg border border-border bg-muted p-4 text-sm;
+/*
+ * Type roles. Archivo carries display and UI (width axis: 75% for display
+ * numerals and headlines), Source Serif 4 carries everything a student reads
+ * at length (stems, explanations), IBM Plex Mono carries labels and code.
+ */
+@layer components {
+  .display {
+    font-weight: 800;
+    font-stretch: 75%;
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+  }
+  .heading {
+    font-weight: 700;
+    font-stretch: 85%;
+    line-height: 1.1;
+  }
+  .numeral {
+    font-weight: 800;
+    font-stretch: 75%;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted-foreground);
+  }
+  .hl {
+    background: linear-gradient(transparent 14%, var(--mark) 14% 90%, transparent 90%);
+    color: var(--on-mark);
+    padding-inline: 0.08em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  .rule {
+    border-top: 1px solid var(--border);
+  }
+  .rule-strong {
+    border-top: 2px solid var(--foreground);
+  }
 }
 
 /*
- * A ruled-notebook-paper look for math-heavy question cards -- applied only
+ * Long-form reading: question stems, explanations, FRQ prompts. Rendered HTML
+ * from renderContentToHtml, so the typography plugin's elements are all that
+ * appear. Unlayered on purpose (like pre / .paper-lined) so it wins over the
+ * plugin's own variable defaults.
+ */
+.reading {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--foreground);
+}
+.reading.prose {
+  --tw-prose-body: var(--foreground);
+  --tw-prose-headings: var(--foreground);
+  --tw-prose-lead: var(--foreground);
+  --tw-prose-links: var(--foreground);
+  --tw-prose-bold: var(--foreground);
+  --tw-prose-counters: var(--muted-foreground);
+  --tw-prose-bullets: var(--muted-foreground);
+  --tw-prose-hr: var(--border);
+  --tw-prose-quotes: var(--foreground);
+  --tw-prose-quote-borders: var(--border);
+  --tw-prose-captions: var(--muted-foreground);
+  --tw-prose-code: var(--foreground);
+  --tw-prose-pre-code: inherit;
+  --tw-prose-pre-bg: transparent;
+  --tw-prose-th-borders: var(--border);
+  --tw-prose-td-borders: var(--border);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+.reading.reading-sm,
+.reading.prose.reading-sm {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.reading code,
+.reading.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.reading.prose :not(pre) > code {
+  background: var(--muted);
+  border-radius: 2px;
+  padding: 0.1em 0.3em;
+}
+.reading.prose code::before,
+.reading.prose code::after {
+  content: none;
+}
+
+/* rehype-pretty-code emits <pre><code> and inlines token colors itself; this just gives the block its shape. */
+pre {
+  @apply overflow-x-auto rounded-sm border border-border p-4 text-sm;
+  font-family: var(--font-mono);
+}
+
+/*
+ * A ruled-notebook-paper look for math-heavy question sheets -- applied only
  * to AP Calculus AB and AP Physics 1 (see isPaperLinedCourse() in
- * src/lib/content/paper-lined.ts), approved by the owner after a preview.
+ * src/lib/content/paper-lined.ts), approved by the owner after a preview. It
+ * is the one warm object on a cool page: the notebook the student works in.
  * Plain CSS gradients, unlayered (like `pre` above) so it wins over
  * Tailwind's `bg-card` utility regardless of class order -- see Tailwind
  * v4's cascade-layer priority. No images/assets.
@@ -363,35 +262,145 @@ pre {
 .paper-lined {
   /* Real left inset for content, well past the margin line below -- the
      line sits at 18-20px (in the padding gutter itself), text starts at
-     28px (this padding) + CardContent's own ~16px = ~44px, leaving ~24px
-     of clear daylight between the line and anything written. */
+     28px (this padding) + the sheet body's own padding, leaving clear
+     daylight between the line and anything written. */
   padding-left: 28px;
-  background-color: #fdf9ef;
+  background-color: var(--nb-paper);
   background-image:
-    linear-gradient(to right, transparent 18px, rgba(196, 90, 90, 0.4) 18px, rgba(196, 90, 90, 0.4) 20px, transparent 20px),
+    linear-gradient(to right, transparent 18px, var(--nb-margin) 18px, var(--nb-margin) 20px, transparent 20px),
     repeating-linear-gradient(
       to bottom,
       transparent,
       transparent 27px,
-      rgba(90, 120, 170, 0.3) 27px,
-      rgba(90, 120, 170, 0.3) 28px
+      var(--nb-line) 27px,
+      var(--nb-line) 28px
     );
   background-size: 100% 100%, 100% 28px;
   background-position: 0 0, 0 10px;
   background-repeat: no-repeat, repeat;
-  color: #2b2620;
+  color: var(--nb-ink);
+}
+.paper-lined .reading,
+.paper-lined .reading.prose {
+  --tw-prose-body: var(--nb-ink);
+  --tw-prose-headings: var(--nb-ink);
+  --tw-prose-bold: var(--nb-ink);
+  --tw-prose-links: var(--nb-ink);
+  --tw-prose-code: var(--nb-ink);
+  color: var(--nb-ink);
 }
 
-.dark .paper-lined {
-  background-color: #1d1912;
-  background-image:
-    linear-gradient(to right, transparent 18px, rgba(214, 120, 110, 0.3) 18px, rgba(214, 120, 110, 0.3) 20px, transparent 20px),
-    repeating-linear-gradient(
-      to bottom,
-      transparent,
-      transparent 27px,
-      rgba(255, 255, 255, 0.07) 27px,
-      rgba(255, 255, 255, 0.07) 28px
-    );
-  color: #ece6d9;
+/*
+ * Answer choices: a bubble-sheet row. A native radio does the work (arrow
+ * keys, form semantics); everything else is styling driven by :has().
+ * Borders use currentColor so the same rule reads on a plain sheet and on
+ * notebook paper.
+ */
+.choice {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  column-gap: 0.75rem;
+  align-items: start;
+  padding: 0.75rem 0.625rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  cursor: pointer;
+}
+.choice:last-of-type {
+  border-bottom: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+}
+.choice > input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.choice-bubble {
+  display: grid;
+  place-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: 1.5px solid currentColor;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.choice-verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 1.875rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.choice:hover .choice-bubble {
+  background: var(--mark);
+  border-color: var(--on-mark);
+  color: var(--on-mark);
+}
+.choice:has(> input:checked) {
+  background: var(--mark);
+  color: var(--on-mark);
+}
+.choice:has(> input:checked) .choice-bubble {
+  background: var(--on-mark);
+  border-color: var(--on-mark);
+  color: var(--mark);
+}
+.choice:has(> input:focus-visible) {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.choice[data-revealed="true"] {
+  cursor: default;
+  background: none;
+  color: inherit;
+}
+.choice[data-revealed="true"]:hover .choice-bubble {
+  background: none;
+  border-color: currentColor;
+  color: inherit;
+}
+.choice[data-state="correct"] .choice-bubble {
+  background: var(--correct);
+  border-color: var(--correct);
+  color: var(--card);
+}
+.choice[data-state="correct"] .choice-verdict {
+  color: var(--correct);
+}
+.choice[data-state="wrong"] .choice-bubble {
+  background: var(--incorrect);
+  border-color: var(--incorrect);
+  color: var(--card);
+}
+.choice[data-state="wrong"] .choice-verdict {
+  color: var(--incorrect);
+}
+.choice[data-revealed="true"] .choice-bubble svg {
+  animation: stamp-in 120ms ease-out;
+}
+@keyframes stamp-in {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
