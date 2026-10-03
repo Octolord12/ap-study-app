@@ -40,7 +40,7 @@
     "choices": [
       { "label": "A", "text": "$\\lim_{h \\to 0} \\dfrac{f(a+h) - f(a)}{h}$", "isCorrect": true, "explanation": "This is the standard difference-quotient definition of the instantaneous rate of change (the derivative) at x=a." },
       { "label": "B", "text": "$\\lim_{h \\to 0} [f(a) + h]$", "isCorrect": false, "explanation": "This doesn't represent a rate of change formula at all; it's just adding h to f(a)." },
-      { "label": "C", "text": "f(a)/a", "isCorrect": false, "explanation": "Dividing the function value by the x-value is unrelated to the definition of instantaneous rate of change." },
+      { "label": "C", "text": "$\\dfrac{f(a)}{a}$", "isCorrect": false, "explanation": "Dividing the function value by the x-value is unrelated to the definition of instantaneous rate of change." },
       { "label": "D", "text": "$\\lim_{h \\to \\infty} \\dfrac{f(a+h) - f(a)}{h}$", "isCorrect": false, "explanation": "Instantaneous rate of change involves h approaching 0 (an infinitesimally small interval), not h approaching infinity." }
     ],
     "explanation": "The instantaneous rate of change at x=a is defined as $\\lim_{h \\to 0} \\frac{f(a+h)-f(a)}{h}$.",
@@ -103,8 +103,8 @@
     "stem": "What is the standard limit definition of the derivative f'(x)?",
     "choices": [
       { "label": "A", "text": "$f'(x) = \\lim_{h \\to 0} \\dfrac{f(x+h) - f(x)}{h}$", "isCorrect": true, "explanation": "This is the standard difference-quotient definition of the derivative." },
-      { "label": "B", "text": "f'(x) = f(x+1) - f(x)", "isCorrect": false, "explanation": "This uses a fixed step of 1, not a limit approaching an infinitesimally small change, so it doesn't represent the true instantaneous derivative." },
-      { "label": "C", "text": "f'(x) = f(x)/x", "isCorrect": false, "explanation": "Dividing the function by x is unrelated to the derivative's definition." },
+      { "label": "B", "text": "$f'(x) = f(x+1) - f(x)$", "isCorrect": false, "explanation": "This uses a fixed step of 1, not a limit approaching an infinitesimally small change, so it doesn't represent the true instantaneous derivative." },
+      { "label": "C", "text": "$f'(x) = \\dfrac{f(x)}{x}$", "isCorrect": false, "explanation": "Dividing the function by x is unrelated to the derivative's definition." },
       { "label": "D", "text": "$f'(x) = \\lim_{x \\to 0} f(x)$", "isCorrect": false, "explanation": "This isn't a valid derivative formula; it doesn't involve the difference quotient or the variable h at all." }
     ],
     "explanation": "The derivative is defined as $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h}$.",

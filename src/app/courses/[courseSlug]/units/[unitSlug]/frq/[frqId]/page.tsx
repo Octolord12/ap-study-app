@@ -20,8 +20,8 @@ export default async function FrqPracticePage({
   if (!frq) notFound();
 
   const [promptHtml, sampleResponseHtml] = await Promise.all([
-    renderContentToHtml(frq.prompt),
-    renderContentToHtml(frq.sampleResponse),
+    renderContentToHtml(frq.prompt, courseSlug),
+    renderContentToHtml(frq.sampleResponse, courseSlug),
   ]);
   const rubric = frq.rubric as unknown as RubricLineView[];
   const diagram = (frq.diagram as Diagram | null) ?? null;

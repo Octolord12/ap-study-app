@@ -11,8 +11,8 @@ import { renderContentToHtml } from "@/lib/content/render";
 //
 // The HTML is only ever built from our own authored content (never end-user
 // input), so dangerouslySetInnerHTML here doesn't open an XSS hole.
-export async function ContentRenderer({ children }: { children: string }) {
-  const html = await renderContentToHtml(children);
+export async function ContentRenderer({ children, courseSlug }: { children: string; courseSlug?: string }) {
+  const html = await renderContentToHtml(children, courseSlug);
 
   return <div className="prose prose-neutral dark:prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: html }} />;
 }

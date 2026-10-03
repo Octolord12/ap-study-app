@@ -4,7 +4,7 @@ import { requireAdminUserId } from "@/lib/admin/session";
 import { getUnitUnreviewedContent } from "@/lib/admin/queries";
 import { markFrqReviewed, markQuestionReviewed } from "@/lib/admin/actions";
 import { ContentRenderer } from "@/components/content-renderer";
-import { renderContentToHtml } from "@/lib/content/render";
+import { renderChoiceTextToHtml } from "@/lib/content/render";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import type { RubricLine } from "@/lib/scoring/grading";
@@ -28,7 +28,7 @@ export default async function AdminReviewUnitPage({
     unit.questions.map(async (question) => ({
       ...question,
       choices: await Promise.all(
-        question.choices.map(async (choice) => ({ ...choice, textHtml: await renderContentToHtml(choice.text) })),
+        question.choices.map(async (choice) => ({ ...choice, textHtml: await renderChoiceTextToHtml(choice.text, courseSlug) })),
       ),
     })),
   );
@@ -64,7 +64,7 @@ export default async function AdminReviewUnitPage({
                   </p>
                 </CardHeader>
                 <CardContent>
-                  <ContentRenderer>{question.stem}</ContentRenderer>
+                  <ContentRenderer courseSlug={courseSlug}>{question.stem}</ContentRenderer>
                   {question.diagram && <DiagramRenderer diagram={question.diagram as unknown as Diagram} />}
                   <ul className="mt-3 space-y-1">
                     {question.choices.map((choice) => (
@@ -87,7 +87,7 @@ export default async function AdminReviewUnitPage({
                     ))}
                   </ul>
                   <div className="mt-3 text-sm text-muted-foreground">
-                    <ContentRenderer>{question.explanation}</ContentRenderer>
+                    <ContentRenderer courseSlug={courseSlug}>{question.explanation}</ContentRenderer>
                   </div>
                   <form action={markQuestionReviewed.bind(null, question.id)} className="mt-4">
                     <Button type="submit" size="sm">
@@ -117,7 +117,7 @@ export default async function AdminReviewUnitPage({
                     </p>
                   </CardHeader>
                   <CardContent>
-                    <ContentRenderer>{frq.prompt}</ContentRenderer>
+                    <ContentRenderer courseSlug={courseSlug}>{frq.prompt}</ContentRenderer>
                     {frq.diagram && <DiagramRenderer diagram={frq.diagram as unknown as Diagram} />}
                     <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-muted-foreground">
                       {rubric.map((line) => (
@@ -127,7 +127,7 @@ export default async function AdminReviewUnitPage({
                       ))}
                     </ul>
                     <div className="mt-3 text-sm text-muted-foreground">
-                      <ContentRenderer>{frq.sampleResponse}</ContentRenderer>
+                      <ContentRenderer courseSlug={courseSlug}>{frq.sampleResponse}</ContentRenderer>
                     </div>
                     <form action={markFrqReviewed.bind(null, frq.id)} className="mt-4">
                       <Button type="submit" size="sm">

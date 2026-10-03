@@ -58,8 +58,8 @@ export default async function ExamResultsPage({
   const frqSections = await Promise.all(
     frqPrompts.map(async (frq) => ({
       frq,
-      promptHtml: await renderContentToHtml(frq.prompt),
-      sampleResponseHtml: await renderContentToHtml(frq.sampleResponse),
+      promptHtml: await renderContentToHtml(frq.prompt, courseSlug),
+      sampleResponseHtml: await renderContentToHtml(frq.sampleResponse, courseSlug),
       diagram: (frq.diagram as Diagram | null) ?? null,
       rubric: frq.rubric as unknown as RubricLineView[],
       existingAttempt: frqAttemptByPromptId.get(frq.id),

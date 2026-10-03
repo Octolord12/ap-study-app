@@ -1,4 +1,4 @@
-import { renderContentToHtml } from "@/lib/content/render";
+import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { getQuestionsByIds } from "@/lib/study/queries";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -20,17 +20,17 @@ export async function renderQuizQuestions(questionIds: string[], courseSlug: str
       return {
         id: q.id,
         difficulty: q.difficulty,
-        stemHtml: await renderContentToHtml(q.stem),
-        explanationHtml: await renderContentToHtml(q.explanation),
+        stemHtml: await renderContentToHtml(q.stem, courseSlug),
+        explanationHtml: await renderContentToHtml(q.explanation, courseSlug),
         diagram: (q.diagram as Diagram | null) ?? null,
         conceptHref: `/courses/${courseSlug}/units/${unitPart}?topic=${topicPart}`,
         choices: await Promise.all(
           q.choices.map(async (c) => ({
             id: c.id,
             label: c.label,
-            textHtml: await renderContentToHtml(c.text),
+            textHtml: await renderChoiceTextToHtml(c.text, courseSlug),
             isCorrect: c.isCorrect,
-            explanationHtml: await renderContentToHtml(c.explanation),
+            explanationHtml: await renderContentToHtml(c.explanation, courseSlug),
           })),
         ),
       };

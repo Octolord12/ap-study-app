@@ -391,9 +391,9 @@
     "stem": "A bacteria population starts at 500 and grows according to $dP/dt = 0.1P$ (t in hours). What is the population after 10 hours?",
     "choices": [
       { "label": "A", "text": "$500e \\approx 1359$", "isCorrect": true, "explanation": "P(t)=500e^(0.1t). At t=10: P(10)=500e^(0.1*10)=500e^1=500e." },
-      { "label": "B", "text": "500(0.1)(10) = 500", "isCorrect": false, "explanation": "This incorrectly applies a LINEAR calculation rather than correctly using the exponential solution formula." },
-      { "label": "C", "text": "5000", "isCorrect": false, "explanation": "This doesn't correctly apply the exponential growth formula with the given rate constant and time." },
-      { "label": "D", "text": "500 + e", "isCorrect": false, "explanation": "This incorrectly ADDS e to 500 rather than correctly MULTIPLYING 500 by e^(kt)." }
+      { "label": "B", "text": "$500(0.1)(10) = 500$", "isCorrect": false, "explanation": "This incorrectly applies a LINEAR calculation rather than correctly using the exponential solution formula." },
+      { "label": "C", "text": "$5000$", "isCorrect": false, "explanation": "This doesn't correctly apply the exponential growth formula with the given rate constant and time." },
+      { "label": "D", "text": "$500 + e$", "isCorrect": false, "explanation": "This incorrectly ADDS e to 500 rather than correctly MULTIPLYING 500 by e^(kt)." }
     ],
     "explanation": "$P(10) = 500e^{0.1(10)} = 500e \\approx 1359$.",
     "conceptLink": "ap-calc/unit-7-differential-equations/exponential-growth-and-decay",

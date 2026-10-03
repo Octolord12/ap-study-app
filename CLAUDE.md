@@ -815,6 +815,54 @@ inconsistent since launch, not something the paper-lined work introduced.
   harmless visually but a real degradation for screen readers. Fixed with an
   explicit `{" "}` between the two spans in all five render sites.
 
+**Follow-up: "typewriter math" outside `$...$`** (the owner pushed back that
+the choices still weren't *readable*, not just rendered). Piping choices
+through KaTeX only fixes content that was authored with `$...$`. A full
+audit of every authored string (10,726 across all four courses) found a
+second, much larger class that was never wrapped in math delimiters at all:
+`m/s^2` in 60 Physics answer choices, and `x^3`, `e^(2x)`, `F_net`,
+`sqrt(...)`, `->` throughout the explanations, FRQ samples, and so on.
+Markdown showed all of that literally.
+
+- **`src/lib/content/plain-math.ts`** -- `normalizePlainMath(markdown,
+  { mathCourse })`, pure and unit-tested (`tests/plain-math.test.ts`), run
+  inside `renderContentToHtml` before the markdown pipeline, so it applies
+  to every field (stem, explanation, choices, choice explanations, FRQ
+  prompt/sample) with no per-call-site work and **no database change**. It
+  only rewrites text outside `$...$`, `$$...$$`, inline code, and fenced
+  code, so it's idempotent and safe on already-correct content. Digit
+  exponents become plain unicode superscripts (`x^2` -> `x²`, `m/s^2` ->
+  `m/s²`) -- matching what much of the content already hand-wrote and
+  staying in the body font; everything needing real typesetting (`e^(2x)`,
+  `F_net`, `sqrt(...)`, `lim_{x->3}`, `->`) is wrapped in `$...$` for KaTeX.
+- **Only the digit-exponent rule runs for AP CSA / World History.** The rest
+  is gated on `isMathCourse()` (`src/lib/content/math-courses.ts`, also what
+  `isPaperLinedCourse` now delegates to -- one list, not two) because in
+  CSA an underscore is an identifier (`total_score`) and `->` is code
+  (`myDog->bark()`), not math. `renderContentToHtml` therefore now takes an
+  optional `courseSlug`; every call site passes it.
+- **Verified by rendering everything, not by sampling**: all 10,726 strings
+  through the converter + KaTeX -- 311 rewritten, 0 KaTeX errors, 0 raw
+  notation left in the math courses' pipeline fields. The first pass left 12
+  (subscripts attached to a coefficient like `5v_f`, long subscripts like
+  `KE_before`, a `lim_{x->3^-}`), caught only because the audit re-checked
+  its own output instead of stopping at "no errors".
+- **Choice-only: `renderChoiceTextToHtml`** also turns a literal `\n` into a
+  line break, since AP CSA writes multi-line program output as `A\nB` (19
+  choices) -- shown as the separate lines a student would see printed.
+- **Six Calc choices were plain text sitting next to typeset siblings**
+  (e.g. `f(a)/a` beside three `$\lim...$` choices). A render-time heuristic
+  to catch those would also mangle Physics unit choices like `20 m/s`, so
+  they were fixed in the content JSON instead (6 strings across
+  `unit-2.json`/`unit-7.json`). **Content is read from the database, so
+  these 6 only show up after a reseed** (`npm run content:seed`); the
+  render-time fixes above need no reseed.
+- **Not covered**: FRQ *rubric* descriptions and the admin page's rubric
+  list are rendered as plain React text, not through the markdown pipeline,
+  so `x^2`-style notation there (~66 Calc/Physics lines) still shows
+  literally. Fixing it means pre-rendering rubric lines to HTML in the two
+  FRQ pages and `FrqSelfGrade`.
+
 ## Verified AP course info (2026-27)
 
 Exam formats change almost every year — 3 of our 4 launch courses have had a

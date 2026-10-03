@@ -1,7 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
-import { renderContentToHtml } from "@/lib/content/render";
+import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { ExamRunner, type ExamFrqItem, type ExamMcqItem } from "@/components/study/exam-runner";
 import type { Course as ContentCourse } from "@/lib/content/schema";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -39,10 +39,14 @@ export default async function ExamRunnerPage({
       .filter((q): q is NonNullable<typeof q> => q !== undefined)
       .map(async (q) => ({
         id: q.id,
-        stemHtml: await renderContentToHtml(q.stem),
+        stemHtml: await renderContentToHtml(q.stem, courseSlug),
         diagram: (q.diagram as Diagram | null) ?? null,
         choices: await Promise.all(
-          q.choices.map(async (c) => ({ id: c.id, label: c.label, textHtml: await renderContentToHtml(c.text) })),
+          q.choices.map(async (c) => ({
+            id: c.id,
+            label: c.label,
+            textHtml: await renderChoiceTextToHtml(c.text, courseSlug),
+          })),
         ),
       })),
   );
@@ -53,7 +57,7 @@ export default async function ExamRunnerPage({
       .filter((f): f is NonNullable<typeof f> => f !== undefined)
       .map(async (f) => ({
         id: f.id,
-        promptHtml: await renderContentToHtml(f.prompt),
+        promptHtml: await renderContentToHtml(f.prompt, courseSlug),
         diagram: (f.diagram as Diagram | null) ?? null,
         pointValue: f.pointValue,
       })),
