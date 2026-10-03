@@ -3,64 +3,84 @@ import { auth } from "@/lib/auth/config";
 import { logoutAction } from "@/lib/auth/actions";
 import { getUserGamificationStats } from "@/lib/gamification/queries";
 import { Button } from "@/components/ui/button";
-import { SoundToggle } from "@/components/gamification/sound-toggle";
+import { Tally } from "@/components/ui/tally";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
-import { SiteHeaderMobileNav } from "@/components/site-header-mobile-nav";
+import { NavLink } from "@/components/nav/nav-link";
+import { AccountMenu } from "@/components/nav/account-menu";
+
+export function Wordmark() {
+  return (
+    <Link href="/" className="display flex items-center gap-2 text-[1.375rem] uppercase">
+      <span aria-hidden className="block size-3.5 rounded-full border-2 border-foreground bg-mark" />
+      AP Study App
+    </Link>
+  );
+}
 
 export async function SiteHeader() {
   const session = await auth();
   const stats = session?.user?.id ? await getUserGamificationStats(session.user.id) : null;
+  const signedIn = Boolean(session?.user && stats);
 
   return (
-    <header className="relative border-b border-border">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
-        <Link href="/" className="shrink-0 font-bold tracking-tight whitespace-nowrap">
-          AP Study App
-        </Link>
-        <SiteHeaderMobileNav>
-          {session?.user && stats ? (
-            <>
-              <Link href="/courses" className="text-muted-foreground hover:text-foreground">
-                Courses
-              </Link>
-              <Link href="/dashboard" className="text-muted-foreground hover:text-foreground">
-                Dashboard
-              </Link>
-              <Link href="/friends" className="text-muted-foreground hover:text-foreground">
-                Friends
-              </Link>
-              <Link href="/classes" className="text-muted-foreground hover:text-foreground">
-                Classes
-              </Link>
-              <Link href="/settings" className="text-muted-foreground hover:text-foreground">
-                Settings
-              </Link>
-              <span className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
-                <span title={`Level ${stats.level}`}>🎓 Lvl {stats.level}</span>
-                {stats.currentStreak > 0 ? (
-                  <span title={`${stats.currentStreak}-day streak`}>🔥 {stats.currentStreak}</span>
-                ) : null}
+    <header className="border-b-2 border-foreground bg-background">
+      <div className="mx-auto flex h-14 w-full max-w-[67.5rem] items-center justify-between gap-4 px-4 sm:px-6">
+        <div className="flex items-center gap-8">
+          <Wordmark />
+          {signedIn ? (
+            <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
+              <NavLink href="/" exact>
+                Today
+              </NavLink>
+              <NavLink href="/courses">Courses</NavLink>
+              <NavLink href="/dashboard">Progress</NavLink>
+              <NavLink href="/friends">Friends</NavLink>
+              <NavLink href="/classes">Classes</NavLink>
+            </nav>
+          ) : null}
+        </div>
+
+        {signedIn && stats ? (
+          <div className="flex items-center gap-3 sm:gap-5">
+            <Link
+              href="/dashboard"
+              aria-label={`Level ${stats.level}, ${stats.currentStreak}-day streak. Open progress`}
+              className="flex items-center gap-3 sm:gap-4"
+            >
+              {stats.currentStreak > 0 ? (
+                <span className="flex items-center gap-2">
+                  <Tally count={stats.currentStreak} className="hidden h-6 w-auto lg:block" />
+                  <span className="numeral text-xl">{stats.currentStreak}</span>
+                  <span className="eyebrow hidden sm:inline">day streak</span>
+                </span>
+              ) : null}
+              <span className="flex items-baseline gap-1.5">
+                <span className="eyebrow">Lvl</span>
+                <span className="numeral text-2xl">{stats.level}</span>
               </span>
-              <SoundToggle />
-              <ThemeToggle />
-              <span className="text-muted-foreground">{session.user.name}</span>
+            </Link>
+            <AccountMenu name={session?.user?.name ?? "Account"}>
               <form action={logoutAction}>
-                <Button type="submit" variant="outline" size="sm">
+                <button
+                  type="submit"
+                  className="flex min-h-11 w-full items-center px-3 text-left text-sm font-semibold hover:bg-mark hover:text-on-mark"
+                >
                   Log out
-                </Button>
+                </button>
               </form>
-            </>
-          ) : (
-            <>
-              <Link href="/login" className="text-muted-foreground hover:text-foreground">
-                Log in
-              </Link>
-              <Button render={<Link href="/signup" />} nativeButton={false} size="sm">
-                Sign up
-              </Button>
-            </>
-          )}
-        </SiteHeaderMobileNav>
+            </AccountMenu>
+          </div>
+        ) : (
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Link href="/login" className="px-2 text-sm font-semibold underline-offset-4 hover:underline">
+              Log in
+            </Link>
+            <Button render={<Link href="/signup" />} nativeButton={false} size="sm">
+              Sign up
+            </Button>
+          </div>
+        )}
       </div>
     </header>
   );

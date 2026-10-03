@@ -2,20 +2,24 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Page } from "@/components/ui/page";
 
 export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
   return (
-    <div className="mx-auto flex max-w-2xl flex-1 flex-col items-center justify-center gap-6 px-6 text-center">
-      <h1 className="text-2xl font-bold tracking-tight">Something went wrong</h1>
-      <p className="max-w-md text-muted-foreground">
-        An unexpected error occurred. Try again, or head back to the dashboard.
+    <Page className="flex flex-col justify-center">
+      <p className="eyebrow">Something broke</p>
+      <h1 className="display mt-3 max-w-[14ch] text-[clamp(2.75rem,8vw,5rem)]">That page didn&apos;t load.</h1>
+      <p className="reading mt-4 max-w-[48ch] text-lg">
+        Try it again. If it keeps happening, go back to the start and open the page from there.
       </p>
-      <div className="flex gap-3">
-        <Button onClick={() => reset()}>Try again</Button>
-        <Button render={<Link href="/" />} nativeButton={false} variant="outline">
-          Go home
+      <div className="mt-8 flex flex-wrap gap-3">
+        <Button onClick={() => reset()} size="lg">
+          Try again
+        </Button>
+        <Button render={<Link href="/" />} nativeButton={false} size="lg" variant="outline">
+          Back to the start
         </Button>
       </div>
-    </div>
+    </Page>
   );
 }
