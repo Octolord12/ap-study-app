@@ -1,17 +1,21 @@
+import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { auth } from "@/lib/auth/config";
 import { SignupForm } from "@/components/auth/signup-form";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Page, PageHeader, Section } from "@/components/ui/page";
 
-export default function SignupPage() {
+export const metadata: Metadata = { title: "Create an account" };
+
+export default async function SignupPage() {
+  const session = await auth();
+  if (session?.user?.id) redirect("/");
+
   return (
-    <div className="flex min-h-screen items-center justify-center px-6">
-      <Card className="w-full max-w-sm">
-        <CardHeader>
-          <CardTitle className="text-2xl">Create your account</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <SignupForm />
-        </CardContent>
-      </Card>
-    </div>
+    <Page>
+      <PageHeader eyebrow="Account" title="Create your account" description="It takes a minute. Then pick the exam you're studying for." />
+      <Section>
+        <SignupForm />
+      </Section>
+    </Page>
   );
 }

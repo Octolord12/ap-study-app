@@ -10,7 +10,7 @@ import { AccountMenu } from "@/components/nav/account-menu";
 
 export function Wordmark() {
   return (
-    <Link href="/" className="display flex items-center gap-2 text-[1.375rem] uppercase">
+    <Link href="/" className="display flex shrink-0 items-center gap-2 text-lg whitespace-nowrap uppercase sm:text-[1.375rem]">
       <span aria-hidden className="block size-3.5 rounded-full border-2 border-foreground bg-mark" />
       AP Study App
     </Link>
@@ -72,8 +72,10 @@ export async function SiteHeader() {
           </div>
         ) : (
           <div className="flex items-center gap-2">
-            <ThemeToggle />
-            <Link href="/login" className="px-2 text-sm font-semibold underline-offset-4 hover:underline">
+            <span className="hidden sm:block">
+              <ThemeToggle />
+            </span>
+            <Link href="/login" className="px-2 text-sm font-semibold whitespace-nowrap underline-offset-4 hover:underline">
               Log in
             </Link>
             <Button render={<Link href="/signup" />} nativeButton={false} size="sm">

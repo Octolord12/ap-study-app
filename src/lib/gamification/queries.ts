@@ -1,12 +1,14 @@
 import { getDb } from "@/lib/db";
 import { computeLevel, type LevelProgress } from "@/lib/gamification/level";
 import { BADGE_DEFINITIONS, type BadgeDefinition } from "@/lib/gamification/badges";
+import { displayStreak, wasActiveToday } from "@/lib/gamification/streak";
 
 export interface UserGamificationStats extends LevelProgress {
   totalXp: number;
   currentStreak: number;
   longestStreak: number;
   streakFreezesAvailable: number;
+  studiedToday: boolean;
 }
 
 export async function getUserGamificationStats(userId: string): Promise<UserGamificationStats> {
@@ -15,19 +17,22 @@ export async function getUserGamificationStats(userId: string): Promise<UserGami
   const [user, xpResult] = await Promise.all([
     db.user.findUnique({
       where: { id: userId },
-      select: { currentStreak: true, longestStreak: true, streakFreezesAvailable: true },
+      select: { currentStreak: true, longestStreak: true, streakFreezesAvailable: true, lastActiveDate: true },
     }),
     db.xPEvent.aggregate({ where: { userId }, _sum: { amount: true } }),
   ]);
 
   const totalXp = xpResult._sum.amount ?? 0;
+  const now = new Date();
 
   return {
     totalXp,
     ...computeLevel(totalXp),
-    currentStreak: user?.currentStreak ?? 0,
+    // Live value, not the stored one -- see displayStreak.
+    currentStreak: user ? displayStreak(user, now) : 0,
     longestStreak: user?.longestStreak ?? 0,
     streakFreezesAvailable: user?.streakFreezesAvailable ?? 0,
+    studiedToday: wasActiveToday(user?.lastActiveDate ?? null, now),
   };
 }
 

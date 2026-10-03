@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { updateStreakOnActivity, type StreakState } from "@/lib/gamification/streak";
+import { displayStreak, updateStreakOnActivity, wasActiveToday, type StreakState } from "@/lib/gamification/streak";
 
 const day = (n: number) => new Date(`2026-01-${String(n).padStart(2, "0")}T12:00:00Z`);
 
@@ -57,5 +57,41 @@ describe("updateStreakOnActivity", () => {
     state = updateStreakOnActivity({ ...state, streakFreezesAvailable: 0 }, day(10)); // big gap, breaks
     expect(state.currentStreak).toBe(1);
     expect(state.longestStreak).toBe(3);
+  });
+});
+
+describe("displayStreak", () => {
+  const run = (lastActiveDate: Date | null, streakFreezesAvailable = 1): StreakState => ({
+    currentStreak: 12,
+    longestStreak: 12,
+    lastActiveDate,
+    streakFreezesAvailable,
+  });
+
+  it("shows the stored streak on the day of activity and the day after", () => {
+    expect(displayStreak(run(day(5)), day(5))).toBe(12);
+    expect(displayStreak(run(day(5)), day(6))).toBe(12);
+  });
+
+  it("keeps showing the streak across a single missed day only while a freeze is left", () => {
+    expect(displayStreak(run(day(5), 1), day(7))).toBe(12);
+    expect(displayStreak(run(day(5), 0), day(7))).toBe(0);
+  });
+
+  it("shows nothing once the run is broken, even though the stored value is unchanged", () => {
+    expect(displayStreak(run(day(5)), day(9))).toBe(0);
+  });
+
+  it("shows nothing for a student who never started", () => {
+    expect(displayStreak(FRESH, day(1))).toBe(0);
+    expect(displayStreak({ ...FRESH, currentStreak: 3 }, day(1))).toBe(0);
+  });
+});
+
+describe("wasActiveToday", () => {
+  it("is true only for the same calendar day", () => {
+    expect(wasActiveToday(day(5), day(5))).toBe(true);
+    expect(wasActiveToday(day(5), day(6))).toBe(false);
+    expect(wasActiveToday(null, day(6))).toBe(false);
   });
 });

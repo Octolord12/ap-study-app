@@ -55,7 +55,7 @@ export async function loginAction(_prevState: string | undefined, formData: Form
   }
 
   try {
-    await signIn("credentials", { ...parsed.data, redirectTo: "/courses" });
+    await signIn("credentials", { ...parsed.data, redirectTo: "/" });
   } catch (error) {
     // AuthError covers bad credentials; anything else (including the redirect
     // Next.js throws on success) must propagate, not be swallowed here.

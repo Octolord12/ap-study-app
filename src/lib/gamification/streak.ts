@@ -70,3 +70,20 @@ export function updateStreakOnActivity(state: StreakState, today: Date): StreakU
     freezeUsed: false,
   };
 }
+
+// What to *show* as the streak right now. currentStreak is only rewritten
+// when the student next does something, so after a long gap it still holds
+// the old run -- showing it would claim a streak that the next activity is
+// about to reset. Mirrors updateStreakOnActivity: a one-day gap continues the
+// run, and a two-day gap continues it only if a freeze is available to spend.
+export function displayStreak(state: StreakState, now: Date): number {
+  if (!state.lastActiveDate || state.currentStreak <= 0) return 0;
+  const gap = daysBetween(state.lastActiveDate, now);
+  if (gap <= 1) return state.currentStreak;
+  if (gap === 2 && state.streakFreezesAvailable > 0) return state.currentStreak;
+  return 0;
+}
+
+export function wasActiveToday(lastActiveDate: Date | null, now: Date): boolean {
+  return lastActiveDate !== null && daysBetween(lastActiveDate, now) === 0;
+}

@@ -4,40 +4,39 @@ import { useActionState } from "react";
 import Link from "next/link";
 import { signUpAction } from "@/lib/auth/actions";
 import { Button } from "@/components/ui/button";
+import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 
 export function SignupForm() {
   const [error, formAction, isPending] = useActionState(signUpAction, undefined);
 
   return (
-    <form action={formAction} className="space-y-4">
-      <div className="space-y-2">
-        <Label htmlFor="displayName">Your name</Label>
+    <form action={formAction} className="max-w-sm space-y-5">
+      <Field id="displayName" label="Your name">
         <Input id="displayName" name="displayName" required autoComplete="name" />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="username">Username</Label>
-        <Input id="username" name="username" required autoComplete="username" placeholder="letters, numbers, underscore" />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="email">Email</Label>
+      </Field>
+      <Field id="username" label="Username" hint="3 to 24 letters, numbers or underscores. Friends and leaderboards show this, never your name.">
+        <Input id="username" name="username" required autoComplete="username" minLength={3} maxLength={24} pattern="[a-zA-Z0-9_]+" />
+      </Field>
+      <Field id="email" label="Email">
         <Input id="email" name="email" type="email" required autoComplete="email" />
-      </div>
-      <div className="space-y-2">
-        <Label htmlFor="password">Password</Label>
+      </Field>
+      <Field id="password" label="Password" hint="At least 8 characters.">
         <Input id="password" name="password" type="password" required autoComplete="new-password" minLength={8} />
-      </div>
-      {error ? <p className="text-sm text-destructive">{error}</p> : null}
-      <Button type="submit" className="w-full" disabled={isPending}>
-        {isPending ? "Creating account..." : "Create account"}
-      </Button>
-      <p className="text-center text-sm text-muted-foreground">
-        Already have an account?{" "}
-        <Link href="/login" className="font-medium text-foreground underline underline-offset-4">
-          Log in
+      </Field>
+      {error ? (
+        <p role="alert" className="text-sm font-medium text-incorrect">
+          {error}
+        </p>
+      ) : null}
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-1">
+        <Button type="submit" size="lg" disabled={isPending}>
+          {isPending ? "Creating account…" : "Create account"}
+        </Button>
+        <Link href="/login" className="text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline">
+          I already have an account
         </Link>
-      </p>
+      </div>
     </form>
   );
 }
