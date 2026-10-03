@@ -1,12 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { requireUserId } from "@/lib/auth/session";
 import { listCourses } from "@/lib/study/queries";
 import { getMyClasses } from "@/lib/social/queries";
 import { createClass, joinClass } from "@/lib/social/actions";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Select } from "@/components/ui/select";
+import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
+
+export const metadata: Metadata = { title: "Classes" };
 
 const ERROR_MESSAGES: Record<string, string> = {
   "missing-code": "Enter an invite code.",
@@ -20,83 +24,67 @@ export default async function ClassesPage({ searchParams }: { searchParams: Prom
   const [classes, courses] = await Promise.all([getMyClasses(userId), listCourses()]);
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
-      <h1 className="mb-6 text-2xl font-bold tracking-tight">Classes</h1>
+    <Page>
+      <PageHeader eyebrow="Classes" title="Classes" description="A class is a shared leaderboard for a group, joined with a six-character invite code." />
 
-      {classes.length > 0 ? (
-        <div className="mb-8 space-y-3">
-          {classes.map((c) => (
-            <Link key={c.id} href={`/classes/${c.id}`}>
-              <Card className="transition-colors hover:border-foreground/30">
-                <CardHeader>
-                  <CardTitle className="text-base">{c.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-xs text-muted-foreground">
+      <Section label="Your classes">
+        {classes.length > 0 ? (
+          <RuledList>
+            {classes.map((c) => (
+              <li key={c.id}>
+                <Link href={`/classes/${c.id}`} className="group flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4">
+                  <span className="heading text-xl underline-offset-4 decoration-2 group-hover:underline">{c.name}</span>
+                  <span className="eyebrow">
                     {c._count.memberships} member{c._count.memberships === 1 ? "" : "s"}
                     {c.course ? ` · ${c.course.name}` : ""} · {c.myRole === "OWNER" ? "You own this class" : "Member"}
-                  </p>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
-      ) : (
-        <p className="mb-8 text-sm text-muted-foreground">You&apos;re not in any classes yet.</p>
-      )}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </RuledList>
+        ) : (
+          <p className="reading max-w-[52ch]">You&apos;re not in any classes yet. Join one with a code, or create your own.</p>
+        )}
+      </Section>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-base">Create a class</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <form action={createClass} className="space-y-3">
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" name="name" required placeholder="Period 3 AP CSA" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="courseId">Course (optional)</Label>
-                <select
-                  id="courseId"
-                  name="courseId"
-                  defaultValue=""
-                  className="w-full rounded-md border border-input bg-background px-2 py-1.5 text-sm"
-                >
-                  <option value="">Any</option>
-                  {courses.map((course) => (
-                    <option key={course.id} value={course.id}>
-                      {course.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <Button type="submit" className="w-full">
-                Create
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
+      <Section label="Join a class">
+        <form action={joinClass} className="flex max-w-md flex-wrap items-end gap-3">
+          <Field id="inviteCode" label="Invite code" className="min-w-40 flex-1">
+            <Input id="inviteCode" name="inviteCode" required autoComplete="off" autoCapitalize="characters" maxLength={6} className="font-mono tracking-widest uppercase" />
+          </Field>
+          <Button type="submit" size="lg">
+            Join
+          </Button>
+        </form>
+        {error ? (
+          <p role="alert" className="mt-3 text-sm font-medium text-incorrect">
+            {ERROR_MESSAGES[error] ?? "Something went wrong."}
+          </p>
+        ) : null}
+      </Section>
 
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-base">Join a class</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <form action={joinClass} className="space-y-3">
-              <div className="space-y-2">
-                <Label htmlFor="inviteCode">Invite code</Label>
-                <Input id="inviteCode" name="inviteCode" required placeholder="ABC123" className="uppercase" />
-              </div>
-              {error ? <p className="text-sm text-destructive">{ERROR_MESSAGES[error] ?? "Something went wrong."}</p> : null}
-              <Button type="submit" className="w-full">
-                Join
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
-      </div>
-    </div>
+      <Section label="Create a class">
+        <form action={createClass} className="grid max-w-sm gap-5">
+          <Field id="name" label="Name">
+            <Input id="name" name="name" required placeholder="Period 3 AP CSA" />
+          </Field>
+          <Field id="courseId" label="Course" hint="Optional.">
+            <Select id="courseId" name="courseId" defaultValue="">
+              <option value="">Any</option>
+              {courses.map((course) => (
+                <option key={course.id} value={course.id}>
+                  {course.name}
+                </option>
+              ))}
+            </Select>
+          </Field>
+          <div>
+            <Button type="submit" size="lg">
+              Create class
+            </Button>
+          </div>
+        </form>
+      </Section>
+    </Page>
   );
 }

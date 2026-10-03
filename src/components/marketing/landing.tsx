@@ -10,7 +10,7 @@ import { Page, RuledList, Section } from "@/components/ui/page";
 
 const HOW_IT_WORKS = [
   "Answer a question, then read why each choice is right or wrong, not only the one you picked.",
-  "Questions you miss come back on a schedule, so the app picks your weak spots for you.",
+  "Questions come back on a schedule, sooner when you miss them, so the app picks your weak spots for you.",
   "Work from a daily set of five, a timed full-length exam with an estimated score range, or a boss battle at the end of each unit.",
   "Free-response prompts come with a rubric and a sample answer. You grade your own work against them.",
   "A correct answer earns 10 to 25 XP by difficulty, plus up to 10 for your streak. Friends and classes get leaderboards, and you can opt out of them.",

@@ -1,11 +1,14 @@
+import type { Metadata } from "next";
 import { requireUserId } from "@/lib/auth/session";
 import { getFriendsLeaderboard, getFriendsList, getPendingFriendRequests } from "@/lib/social/queries";
 import { respondToFriendRequest, sendFriendRequest } from "@/lib/social/actions";
-import { LeaderboardTable } from "@/components/social/leaderboard-table";
+import { Ledger } from "@/components/ui/ledger";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
+
+export const metadata: Metadata = { title: "Friends" };
 
 const ERROR_MESSAGES: Record<string, string> = {
   "missing-username": "Enter a username.",
@@ -30,40 +33,39 @@ export default async function FriendsPage({
   ]);
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
-      <h1 className="mb-6 text-2xl font-bold tracking-tight">Friends</h1>
+    <Page>
+      <PageHeader eyebrow="Friends" title="Friends" description="See where you stand against people you know. Everyone appears by username." />
 
-      <Card className="mb-8">
-        <CardHeader>
-          <CardTitle className="text-base">Add a friend</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <form action={sendFriendRequest} className="flex gap-2">
-            <div className="flex-1 space-y-2">
-              <Label htmlFor="username" className="sr-only">
-                Username
-              </Label>
-              <Input id="username" name="username" required placeholder="Their username" />
-            </div>
-            <Button type="submit">Send request</Button>
-          </form>
-          {error ? <p className="mt-2 text-sm text-destructive">{ERROR_MESSAGES[error] ?? "Something went wrong."}</p> : null}
-          {sent ? <p className="mt-2 text-sm text-primary">Friend request sent.</p> : null}
-        </CardContent>
-      </Card>
+      <Section label="Add a friend">
+        <form action={sendFriendRequest} className="flex max-w-md flex-wrap items-end gap-3">
+          <Field id="username" label="Their username" className="min-w-52 flex-1">
+            <Input id="username" name="username" required autoComplete="off" autoCapitalize="none" />
+          </Field>
+          <Button type="submit" size="lg">
+            Send request
+          </Button>
+        </form>
+        {error ? (
+          <p role="alert" className="mt-3 text-sm font-medium text-incorrect">
+            {ERROR_MESSAGES[error] ?? "Something went wrong."}
+          </p>
+        ) : null}
+        {sent ? (
+          <p role="status" className="mt-3 text-sm font-medium">
+            Friend request sent.
+          </p>
+        ) : null}
+      </Section>
 
       {requests.incoming.length > 0 ? (
-        <div className="mb-8">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            Friend requests
-          </h2>
-          <ul className="divide-y divide-border rounded-lg border border-border">
+        <Section label="Requests" note="People who want to be your friend.">
+          <RuledList>
             {requests.incoming.map((r) => {
               const accept = respondToFriendRequest.bind(null, r.requesterId, true);
               const decline = respondToFriendRequest.bind(null, r.requesterId, false);
               return (
-                <li key={r.requesterId} className="flex items-center justify-between px-4 py-2 text-sm">
-                  <span>{r.requester.username}</span>
+                <li key={r.requesterId} className="flex flex-wrap items-center justify-between gap-3 py-3">
+                  <span className="font-mono text-sm">{r.requester.username}</span>
                   <div className="flex gap-2">
                     <form action={accept}>
                       <Button type="submit" size="sm">
@@ -79,44 +81,40 @@ export default async function FriendsPage({
                 </li>
               );
             })}
-          </ul>
-        </div>
+          </RuledList>
+        </Section>
       ) : null}
 
       {requests.outgoing.length > 0 ? (
-        <div className="mb-8">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            Sent requests
-          </h2>
-          <ul className="divide-y divide-border rounded-lg border border-border">
+        <Section label="Sent">
+          <RuledList>
             {requests.outgoing.map((r) => (
-              <li key={r.addresseeId} className="px-4 py-2 text-sm text-muted-foreground">
-                {r.addressee.username} · pending
+              <li key={r.addresseeId} className="flex items-baseline justify-between gap-3 py-3 text-sm">
+                <span className="font-mono">{r.addressee.username}</span>
+                <span className="eyebrow">Pending</span>
               </li>
             ))}
-          </ul>
-        </div>
+          </RuledList>
+        </Section>
       ) : null}
 
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Leaderboard</h2>
-      <div className="mb-8">
-        <LeaderboardTable entries={leaderboard} currentUserId={userId} period={period} basePath="/friends" />
-      </div>
+      <Section label="Leaderboard" note="You and your friends, by XP.">
+        <Ledger entries={leaderboard} currentUserId={userId} period={period} basePath="/friends" />
+      </Section>
 
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-        Friends ({friends.length})
-      </h2>
-      {friends.length === 0 ? (
-        <p className="text-sm text-muted-foreground">No friends yet -- send a request above.</p>
-      ) : (
-        <ul className="divide-y divide-border rounded-lg border border-border">
-          {friends.map((f) => (
-            <li key={f.id} className="px-4 py-2 text-sm">
-              {f.username}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+      <Section label={`Friends (${friends.length})`}>
+        {friends.length === 0 ? (
+          <p className="reading max-w-[52ch]">No friends yet. Send a request above using their username.</p>
+        ) : (
+          <RuledList>
+            {friends.map((f) => (
+              <li key={f.id} className="py-3 font-mono text-sm">
+                {f.username}
+              </li>
+            ))}
+          </RuledList>
+        )}
+      </Section>
+    </Page>
   );
 }

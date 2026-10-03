@@ -6,7 +6,7 @@ import type { Diagram } from "@/lib/content/diagram-schema";
 // Shared by every quiz entry point (unit practice, custom quiz, weak-spot
 // review, daily challenge). Rendering markdown -> HTML has to happen
 // server-side even though the quiz itself is a Client Component: see the
-// ContentRenderer gotcha in CLAUDE.md (async Shiki highlighter can't run
+// react-markdown gotcha in CLAUDE.md (async Shiki highlighter can't run
 // client-side).
 export async function renderQuizQuestions(questionIds: string[], courseSlug: string): Promise<RenderedQuestion[]> {
   const questions = await getQuestionsByIds(questionIds);

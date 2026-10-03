@@ -57,7 +57,7 @@ export async function TodayScreen({ userId }: { userId: string }) {
               <div>
                 <p className="heading text-xl">{course.name}</p>
                 <p className="mt-0.5 text-sm text-muted-foreground">
-                  {course.dailyDone ? "Done for today. A new set opens tomorrow." : "Five questions, about five minutes."}
+                  {course.dailyDone ? "Done for today. A new set opens tomorrow." : "Five questions."}
                 </p>
               </div>
               <Button
@@ -72,10 +72,10 @@ export async function TodayScreen({ userId }: { userId: string }) {
         </RuledList>
       </Section>
 
-      <Section label="Due for review" note="Questions you missed return on a schedule.">
+      <Section label="Due for review" note="Questions come back on a schedule.">
         {totalDue === 0 ? (
           <p className="reading max-w-[52ch]">
-            Nothing is due. When you miss a question it lands here a day or so later, so the reviews fit around the new work.
+            Nothing is due. Questions you answer come back on a schedule, sooner when you miss one.
           </p>
         ) : (
           <RuledList>

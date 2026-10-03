@@ -56,7 +56,7 @@ export default async function PracticeHubPage({ params }: { params: Promise<{ co
           <p className="reading">
             {dueIds.length > 0
               ? `${dueIds.length} question${dueIds.length === 1 ? " is" : "s are"} due for review.`
-              : "Nothing is due. Questions you miss show up here once it's time to see them again."}
+              : "Nothing is due. Answered questions come back on a schedule, sooner when you miss one."}
           </p>
         </ActionRow>
       </Section>

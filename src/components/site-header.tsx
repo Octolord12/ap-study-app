@@ -28,7 +28,7 @@ export async function SiteHeader() {
         <div className="flex items-center gap-8">
           <Wordmark />
           {signedIn ? (
-            <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
+            <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
               <NavLink href="/" exact>
                 Today
               </NavLink>

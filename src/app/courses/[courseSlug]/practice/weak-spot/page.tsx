@@ -38,7 +38,7 @@ export default async function WeakSpotReviewPage({ params }: { params: Promise<{
           />
         }
         title="Weak-spot review"
-        description="Questions you missed come back on a schedule, so you see them again right when they start to fade."
+        description="Questions come back on a schedule, sooner when you miss them, so you see them again as they start to fade."
       />
       <Section>
         {dueIds.length === 0 ? (
@@ -49,7 +49,7 @@ export default async function WeakSpotReviewPage({ params }: { params: Promise<{
               </Button>
             }
           >
-            <p className="reading">Nothing is due right now. Keep practicing, and missed questions will appear here when it&apos;s time to revisit them.</p>
+            <p className="reading">Nothing is due right now. Keep practicing, and questions will appear here when it&apos;s time to revisit them.</p>
           </ActionRow>
         ) : (
           <ActionRow
@@ -60,7 +60,7 @@ export default async function WeakSpotReviewPage({ params }: { params: Promise<{
             }
           >
             <p className="numeral text-5xl">{dueIds.length}</p>
-            <p className="reading mt-2">question{dueIds.length === 1 ? "" : "s"} due, picked from ones you&apos;ve missed before.</p>
+            <p className="reading mt-2">question{dueIds.length === 1 ? "" : "s"} due for review.</p>
           </ActionRow>
         )}
       </Section>

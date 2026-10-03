@@ -9,10 +9,10 @@ import rehypeStringify from "rehype-stringify";
 import { isMathCourse } from "@/lib/content/math-courses";
 import { normalizePlainMath } from "@/lib/content/plain-math";
 
-// Shared by ContentRenderer (Server Components) and anywhere that needs to
+// Shared by every Server Component that renders markdown, and anywhere that needs to
 // pre-render markdown to HTML before handing it to a Client Component (e.g.
 // the quiz runner, which needs client-side interactivity but can't run this
-// pipeline itself -- see the ContentRenderer gotcha in CLAUDE.md).
+// pipeline itself -- see the react-markdown gotcha in CLAUDE.md).
 //
 // Wrapped in React's cache() for per-request memoization: render-quiz.ts
 // calls this once per stem, explanation, and choice explanation, per

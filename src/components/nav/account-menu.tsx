@@ -63,16 +63,16 @@ export function AccountMenu({ name, children }: { name: string; children: React.
         aria-expanded={open}
         aria-controls="account-panel"
         onClick={() => setOpen((o) => !o)}
-        className="flex h-11 items-center gap-2 pr-1 text-sm font-semibold hover:bg-mark hover:text-on-mark md:pl-2"
+        className="flex h-11 items-center gap-2 pr-1 text-sm font-semibold hover:bg-mark hover:text-on-mark lg:pl-2"
       >
         <span className="sr-only">Account menu for {name}</span>
         <span aria-hidden className="grid size-9 place-items-center rounded-full border-[1.5px] border-current">
           {initial}
         </span>
-        <span aria-hidden className="hidden max-w-32 truncate md:block">
+        <span aria-hidden className="hidden max-w-32 truncate lg:block">
           {name}
         </span>
-        <ChevronDown aria-hidden className="hidden size-4 md:block" />
+        <ChevronDown aria-hidden className="hidden size-4 lg:block" />
       </button>
       {open ? (
         <div

@@ -1,11 +1,13 @@
-import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getClassDetail, getClassLeaderboard } from "@/lib/social/queries";
 import { leaveClass } from "@/lib/social/actions";
-import { LeaderboardTable } from "@/components/social/leaderboard-table";
+import { Ledger } from "@/components/ui/ledger";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Breadcrumb, Page, PageHeader, RuledList, Section } from "@/components/ui/page";
+
+export const metadata: Metadata = { title: "Class" };
 
 export default async function ClassDetailPage({
   params,
@@ -30,52 +32,40 @@ export default async function ClassDetailPage({
   const leaveClassAction = leaveClass.bind(null, classId);
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-6 py-10">
-      <p className="mb-1 text-sm text-muted-foreground">
-        <Link href="/classes" className="hover:text-foreground">
-          Classes
-        </Link>
-      </p>
-      <div className="mb-6 flex items-start justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight">{classDetail.name}</h1>
-          {classDetail.course ? <p className="text-sm text-muted-foreground">{classDetail.course.name}</p> : null}
-        </div>
-        {myMembership?.role !== "OWNER" ? (
-          <form action={leaveClassAction}>
-            <Button type="submit" variant="outline" size="sm">
-              Leave class
-            </Button>
-          </form>
-        ) : null}
-      </div>
+    <Page>
+      <PageHeader
+        eyebrow={<Breadcrumb items={[{ label: "Classes", href: "/classes" }, { label: "Class" }]} />}
+        title={classDetail.name}
+        description={classDetail.course?.name}
+        actions={
+          myMembership?.role !== "OWNER" ? (
+            <form action={leaveClassAction}>
+              <Button type="submit" variant="outline">
+                Leave class
+              </Button>
+            </form>
+          ) : undefined
+        }
+      />
 
-      <Card className="mb-8">
-        <CardHeader>
-          <CardTitle className="text-sm">Invite code</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="font-mono text-2xl tracking-widest">{classDetail.inviteCode}</p>
-          <p className="mt-1 text-xs text-muted-foreground">Share this so others can join at /classes</p>
-        </CardContent>
-      </Card>
+      <Section label="Invite code" note="Share it so others can join from the Classes page.">
+        <p className="font-mono text-4xl tracking-[0.25em]">{classDetail.inviteCode}</p>
+      </Section>
 
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Leaderboard</h2>
-      <div className="mb-8">
-        <LeaderboardTable entries={leaderboard} currentUserId={userId} period={period} basePath={`/classes/${classId}`} />
-      </div>
+      <Section label="Leaderboard">
+        <Ledger entries={leaderboard} currentUserId={userId} period={period} basePath={`/classes/${classId}`} />
+      </Section>
 
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-        Members ({classDetail.memberships.length})
-      </h2>
-      <ul className="divide-y divide-border rounded-lg border border-border">
-        {classDetail.memberships.map((m) => (
-          <li key={m.userId} className="flex items-center justify-between px-4 py-2 text-sm">
-            <span>{m.user.username}</span>
-            <span className="text-xs text-muted-foreground">{m.role === "OWNER" ? "Owner" : "Member"}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <Section label={`Members (${classDetail.memberships.length})`}>
+        <RuledList>
+          {classDetail.memberships.map((m) => (
+            <li key={m.userId} className="flex items-baseline justify-between gap-3 py-3">
+              <span className="font-mono text-sm">{m.user.username}</span>
+              <span className="eyebrow">{m.role === "OWNER" ? "Owner" : "Member"}</span>
+            </li>
+          ))}
+        </RuledList>
+      </Section>
+    </Page>
   );
 }

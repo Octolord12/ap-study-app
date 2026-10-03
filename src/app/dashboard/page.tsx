@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { computeUnitMastery } from "@/lib/study/mastery";
 import { getAllBadgeStatuses, getUserGamificationStats } from "@/lib/gamification/queries";
+import { Bubbles, XpBar } from "@/components/ui/meter";
+import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
+import { BadgeStamp } from "@/components/ui/stamp";
+import { Tally } from "@/components/ui/tally";
+
+export const metadata: Metadata = { title: "Progress" };
 
 export default async function DashboardPage() {
   const userId = await requireUserId();
@@ -32,107 +39,105 @@ export default async function DashboardPage() {
   const masteryByUnitId = new Map(mastery.map((m) => [m.unitId, m]));
 
   return (
-    <div className="mx-auto w-full max-w-3xl px-6 py-10">
-      <h1 className="mb-6 text-2xl font-bold tracking-tight">Dashboard</h1>
+    <Page>
+      <PageHeader eyebrow="Progress" title="Your progress" />
 
-      <section className="mb-8 rounded-xl border border-border p-5">
-        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+      <Section label="Level">
+        <div className="flex max-w-lg items-end gap-5">
+          <span className="numeral text-[5rem]">{stats.level}</span>
+          <div className="min-w-0 flex-1 pb-2">
+            <p className="mb-2 text-sm text-muted-foreground">
+              {stats.xpIntoLevel} of {stats.xpForNextLevel} XP to level {stats.level + 1}
+            </p>
+            <XpBar value={stats.xpIntoLevel} max={stats.xpForNextLevel} label={`${stats.xpIntoLevel} of ${stats.xpForNextLevel} XP to the next level`} />
+            <p className="eyebrow mt-2">{stats.totalXp} XP total</p>
+          </div>
+        </div>
+      </Section>
+
+      <Section label="Streak" note="A streak freeze covers one missed day.">
+        <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+          <p className="numeral text-[5rem]">{stats.currentStreak}</p>
           <div>
-            <p className="text-lg font-semibold">🎓 Level {stats.level}</p>
-            <p className="text-xs text-muted-foreground">
-              {stats.xpIntoLevel} / {stats.xpForNextLevel} XP to level {stats.level + 1} · {stats.totalXp} XP total
-            </p>
-          </div>
-          <div className="text-right">
-            <p className="text-lg font-semibold">🔥 {stats.currentStreak}-day streak</p>
-            <p className="text-xs text-muted-foreground">
-              Longest: {stats.longestStreak} · {stats.streakFreezesAvailable} streak freeze
-              {stats.streakFreezesAvailable === 1 ? "" : "s"} left
+            <p className="heading text-xl">{stats.currentStreak === 1 ? "day in a row" : "days in a row"}</p>
+            {stats.currentStreak > 0 ? <Tally count={stats.currentStreak} className="mt-3 h-8 w-auto" /> : null}
+            <p className="eyebrow mt-3">
+              Longest {stats.longestStreak} · {stats.streakFreezesAvailable} freeze{stats.streakFreezesAvailable === 1 ? "" : "s"} left
             </p>
           </div>
         </div>
-        <div className="h-2 overflow-hidden rounded-full bg-muted">
-          <div
-            className="h-full bg-primary transition-all"
-            style={{ width: `${Math.round((stats.xpIntoLevel / stats.xpForNextLevel) * 100)}%` }}
-          />
-        </div>
-      </section>
+      </Section>
 
-      <section className="mb-8">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Badges</h2>
-        <div className="grid grid-cols-3 gap-3 sm:grid-cols-6">
+      <Section label="Badges">
+        <ul className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3">
           {badges.map((badge) => (
-            <div
-              key={badge.slug}
-              title={badge.description}
-              className={`flex flex-col items-center gap-1 rounded-lg border p-3 text-center ${
-                badge.earned ? "border-border bg-card" : "border-dashed border-border opacity-40"
-              }`}
-            >
-              <span className="text-2xl">{badge.icon}</span>
-              <span className="text-xs font-medium">{badge.name}</span>
-            </div>
+            <li key={badge.slug} className="flex items-start gap-3">
+              <BadgeStamp slug={badge.slug} earned={badge.earned} className="size-14 shrink-0" />
+              <div className="min-w-0">
+                <p className="text-sm font-semibold">{badge.name}</p>
+                <p className="mt-0.5 text-xs leading-snug text-muted-foreground">{badge.description}</p>
+                {!badge.earned ? <p className="eyebrow mt-1">Locked</p> : null}
+              </div>
+            </li>
           ))}
-        </div>
-      </section>
+        </ul>
+      </Section>
 
       {enrollments.length === 0 ? (
-        <p className="text-muted-foreground">
-          You haven&apos;t started any courses yet.{" "}
-          <Link href="/courses" className="underline underline-offset-4">
-            Browse courses
-          </Link>
-          .
-        </p>
+        <Section label="Courses">
+          <p className="reading">
+            You haven&apos;t started a course yet.{" "}
+            <Link href="/courses" className="font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline">
+              Browse courses
+            </Link>
+            .
+          </p>
+        </Section>
       ) : (
-        <div className="space-y-8">
-          {enrollments.map(({ course }) => {
-            const totalAttempted = course.units.reduce(
-              (sum, u) => sum + (masteryByUnitId.get(u.id)?.questionsAttempted ?? 0),
-              0,
-            );
-            const totalCorrect = course.units.reduce(
-              (sum, u) => sum + (masteryByUnitId.get(u.id)?.questionsCorrect ?? 0),
-              0,
-            );
+        enrollments.map(({ course }) => {
+          const totalAttempted = course.units.reduce(
+            (sum, u) => sum + (masteryByUnitId.get(u.id)?.questionsAttempted ?? 0),
+            0,
+          );
+          const totalCorrect = course.units.reduce(
+            (sum, u) => sum + (masteryByUnitId.get(u.id)?.questionsCorrect ?? 0),
+            0,
+          );
 
-            return (
-              <section key={course.id}>
-                <h2 className="mb-1 text-lg font-semibold">
-                  <Link href={`/courses/${course.slug}`} className="hover:underline">
-                    {course.name}
-                  </Link>
-                </h2>
-                <p className="mb-3 text-sm text-muted-foreground">
-                  {totalAttempted > 0
-                    ? `${Math.round((totalCorrect / totalAttempted) * 100)}% accuracy across ${totalAttempted} question${totalAttempted === 1 ? "" : "s"} attempted`
-                    : "No questions attempted yet"}
-                </p>
-                <div className="space-y-2">
-                  {course.units.map((unit) => {
-                    const m = masteryByUnitId.get(unit.id);
-                    const attempted = m?.questionsAttempted ?? 0;
-                    const pct = m && attempted > 0 ? Math.round((m.questionsCorrect / attempted) * 100) : null;
+          return (
+            <Section
+              key={course.id}
+              label={course.name}
+              note={
+                totalAttempted > 0
+                  ? `${Math.round((totalCorrect / totalAttempted) * 100)}% correct across ${totalAttempted} question${totalAttempted === 1 ? "" : "s"}.`
+                  : "No questions attempted yet."
+              }
+            >
+              <RuledList>
+                {course.units.map((unit) => {
+                  const m = masteryByUnitId.get(unit.id);
+                  const attempted = m?.questionsAttempted ?? 0;
+                  const pct = m && attempted > 0 ? Math.round((m.questionsCorrect / attempted) * 100) : null;
 
-                    return (
-                      <div key={unit.id} className="flex items-center gap-3 text-sm">
-                        <span className="w-48 shrink-0 truncate">{unit.name}</span>
-                        <div className="h-2 flex-1 overflow-hidden rounded-full bg-muted">
-                          {pct !== null ? <div className="h-full bg-primary" style={{ width: `${pct}%` }} /> : null}
-                        </div>
-                        <span className="w-28 shrink-0 text-right text-muted-foreground">
-                          {pct !== null ? `${pct}% (${attempted})` : "Not started"}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </section>
-            );
-          })}
-        </div>
+                  return (
+                    <li key={unit.id}>
+                      <Link
+                        href={`/courses/${course.slug}/units/${unit.slug}`}
+                        className="group grid gap-x-6 gap-y-2 py-3 sm:grid-cols-[minmax(0,1fr)_auto_6.5rem] sm:items-center"
+                      >
+                        <span className="text-sm font-medium underline-offset-4 decoration-2 group-hover:underline">{unit.name}</span>
+                        <Bubbles percent={pct} />
+                        <span className="eyebrow sm:text-right">{pct !== null ? `${pct}% of ${attempted}` : "Not started"}</span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </RuledList>
+            </Section>
+          );
+        })
       )}
-    </div>
+    </Page>
   );
 }

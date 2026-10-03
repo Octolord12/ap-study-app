@@ -15,25 +15,28 @@ AB, AP Physics 1.
 | Layer | Choice | Why |
 |---|---|---|
 | Framework | Next.js 16 (App Router, TypeScript), deployed on Vercel | One codebase for frontend + backend, mobile-first, best-documented React framework for a solo maintainer. |
-| Styling/UI | Tailwind CSS v4 + shadcn/ui | Components you own the code for (not a black box), easy to theme per-course. |
+| Styling/UI | Tailwind CSS v4 + shadcn/ui primitives, one custom design system on top | Components you own the code for (not a black box). The look (graphite on paper, one highlighter accent) lives in `globals.css` tokens and a small shared component set -- see "Visual design system" below. |
 | Database | Postgres via Neon (Vercel Marketplace) | Serverless, scales to zero, free tier, relational data fits the course→unit→topic→question hierarchy. |
 | ORM | Prisma 7 (with `@prisma/adapter-neon` driver adapter) | Gentlest learning curve for a solo maintainer; declarative schema + migrations. Prisma 7's generated client *requires* a driver adapter now (no more bare `new PrismaClient()` reading `DATABASE_URL` implicitly) — see `src/lib/db/index.ts`. |
 | Auth | Auth.js (NextAuth v5 beta), Credentials provider, self-hosted | No third party holding user emails (some users may be minors); free; full control. Chosen over Clerk for privacy, per project decision. |
 | UI primitives | Base UI (via shadcn) | shadcn's default base for this project's registry version. Polymorphic rendering uses a `render` prop (`<Button render={<Link .../>} />`), **not** Radix's `asChild` — see the gotcha below. |
 | Math rendering | KaTeX via `rehype-katex` / `remark-math` | Renders `$...$` / `$$...$$` written directly in content. |
 | Code highlighting | Shiki via `rehype-pretty-code` | Same engine as VS Code. **Loads its highlighter asynchronously** — see the gotcha below. |
-| Client state | Zustand | The mute preference (`src/lib/gamification/sound-store.ts`, localStorage-persisted); boss-battle/quiz UI state is plain `useState`. |
+| Client state | Zustand | The mute preference (`src/lib/gamification/sound-store.ts`) and the light/dark/system mode (`src/lib/theme/theme-store.ts`), both localStorage-persisted; boss-battle/quiz UI state is plain `useState`. |
 | Animations/sound | Framer Motion, canvas-confetti | Level-up/badge/boss-defeat feedback, with a mute toggle. Sound is synthesized Web Audio tones, not Howler/audio files — see the gotcha below. |
 | Testing | Vitest + React Testing Library | Fast, Jest-compatible, first-class Next.js support. |
 
-### Gotcha: `ContentRenderer` can't use `react-markdown` directly
+### Gotcha: markdown rendering can't use `react-markdown` directly
 
 `rehype-pretty-code` loads a Shiki highlighter asynchronously on first use.
 `react-markdown` renders synchronously. Combining them crashes Next's static
-prerender with `runSync finished async`. Fix: `src/components/content-renderer.tsx`
-runs the `unified` pipeline directly with `.process()` (awaited, since it's an
-async Server Component) instead of going through `react-markdown`. Don't swap
-it back to `react-markdown` without re-testing `next build`.
+prerender with `runSync finished async`. Fix: `src/lib/content/render.ts`
+(`renderContentToHtml`) runs the `unified` pipeline directly with
+`.process()` (awaited) instead of going through `react-markdown`. Server
+Components call it and hand the HTML string to `<Html>`
+(`src/components/ui/html.tsx`), or pass it down as a prop to a Client
+Component (which can't run the pipeline itself). Don't swap it back to
+`react-markdown` without re-testing `next build`.
 
 ### Gotcha: Prisma client needs a driver adapter
 
@@ -677,56 +680,134 @@ created one real test account (`deploy-smoketest@example.com` / username
 `deploy_smoketest`) in the shared Neon database -- harmless, but worth
 knowing it's there if the user list ever looks unfamiliar.
 
-## Appearance: color themes and dark mode (post-launch)
+## Visual design system (post-launch overhaul)
 
-The original UI shipped in the shadcn default grayscale palette (`--primary`
-etc. all `oklch(... 0 0)`, zero chroma). The owner asked for color, reviewed 4
-mockups (a Design canvas Artifact), and picked all 4 to ship as
-user-selectable themes, plus a light/dark toggle -- **Fresh Mint, light** is
-the product default (not the old grayscale, which no longer exists).
+The owner found the UI generic (shadcn defaults, a stock mint-teal palette,
+emoji icons, one centered column on every page) and asked for it to look like
+a person with a point of view designed it. Process: audit first, one proposed
+direction shown as a working specimen (an Artifact, "Graphite and
+Highlighter"), approved, then built in six committed steps (foundation, shell,
+landing/Today/auth, study pages, runners, social/settings/admin). The earlier
+four-palette theme picker (Fresh Mint / Sunrise / Deep Study / Playground)
+was **retired at the owner's request**: one identity reads as designed, four
+interchangeable palettes read as a template.
 
-- **4 themes × 2 modes = 8 palettes**, defined as CSS custom properties in
-  `globals.css`: Fresh Mint (teal/coral, the default -- lives directly in
-  `:root`/`.dark` rather than behind an attribute selector, so the app still
-  renders correctly before the theme store hydrates or with JS disabled),
-  Sunrise (warm coral/amber), Deep Study (navy/gold), Playground
-  (violet/pink) -- the latter 3 override via `[data-color-theme="..."]` /
-  `.dark[data-color-theme="..."]` on `<html>`.
-- **State**: `src/lib/theme/theme-store.ts`, a zustand `persist` store
-  (`colorTheme`, `mode`), same pattern and same reasoning as
-  `sound-store.ts` -- per-device localStorage preference, never server
-  state, key `ap-study-app:theme`.
-- **No flash of the wrong theme on load**: a `next/script`
-  `strategy="beforeInteractive"` tag in `layout.tsx`
-  (`src/lib/theme/inline-script.ts`) reads that same localStorage key and
-  paints `<html>`'s `class`/`data-color-theme` before hydration; `<html>`
-  needs `suppressHydrationWarning` since this is an intentional DOM mutation
-  React didn't render. `src/components/theme/theme-sync.tsx` (mounted once
-  in the root layout) takes over from there, applying the store's state to
-  `<html>` on every subsequent change (toggle, settings picker) -- gated on
-  a `hasHydrated` flag so it never overwrites the inline script's correct
-  initial paint with the store's not-yet-rehydrated default.
-- **UI**: a header icon toggle (`theme-toggle.tsx`, next to the existing
-  `SoundToggle`) for quick light/dark switching, and a full "Appearance"
-  card on `/settings` (`theme-settings.tsx`) with a mode segmented control
-  and 4 theme swatches -- this is the "settings menu" the owner asked for.
-- **Bug found and fixed while building this**: `onRehydrateStorage`'s
-  callback threw `ReferenceError: Cannot access 'useThemeStore' before
-  initialization` every time -- it referenced the outer `useThemeStore`
-  const to call `.setState()`, but for synchronous storage (localStorage),
-  zustand's persist rehydration completes *inside* the `create()` call
-  itself, before that `const` assignment finishes. Net effect: `hasHydrated`
-  silently never became `true`, so `ThemeSync` never applied any live
-  change -- the toggle/settings picker updated localStorage correctly but
-  the page didn't visually update until a hard reload. Only surfaced by
-  checking actual DOM state after a click, not just the screenshot (which
-  looked unchanged either way) or localStorage (which was already correct).
-  Fixed by following zustand's own documented pattern: a `setHasHydrated`
-  store action, called via the live store instance zustand passes as
-  `onRehydrateStorage`'s callback argument, never the outer const.
-  Verified end-to-end after the fix: fresh page load in each of the 8
-  palettes (no flash), the header toggle and the settings picker both
-  updating the page live, and the choice persisting across a hard reload.
+**The idea**: the objects around an exam -- bubble sheets, ruled notebook
+paper, a graphite pencil -- plus one accent, a highlighter yellow, that only
+ever marks what you are working on (the picked answer, the current nav item,
+today's streak). It is always a *background* behind ink text (`--mark` with
+`--on-mark`), never a text color, never a glow. Light is the default; dark is
+a user choice. Contrast: every text pair is >= 5.6:1 in both modes.
+
+- **Tokens** (`src/app/globals.css`): the shadcn semantic names
+  (`background`, `foreground`, `muted`, ...) are the contract the UI
+  primitives are written against; design names are Tailwind aliases onto them
+  (`bg-mark`, `text-on-mark`, `text-correct`, `text-incorrect`). `--background`
+  is paper `#f7f8f6`, `--foreground` ink `#1f2328`, `--muted-foreground`
+  graphite `#59606a`, `--mark` `#ffe24a`; `.dark` redefines all of them. Radius
+  is 2px everywhere (paper has square corners), borders are 1px rules, no
+  shadows. The `--nb-*` tokens drive the notebook-paper look (below).
+- **Type** (loaded in `layout.tsx` with `next/font/google`): Archivo (variable,
+  width axis) for display and UI, Source Serif 4 for everything read at length
+  (stems, explanations, descriptions), IBM Plex Mono for labels and code.
+  Roles are classes in `globals.css`: `.display` (800, 75% width), `.heading`,
+  `.numeral` (tabular, for scores/levels/timers), `.eyebrow` (mono caps
+  label), `.hl` (highlighter swipe), `.reading` (+ `.reading-sm`).
+  **Bug this replaced**: `--font-sans: var(--font-sans)` pointed at itself, so
+  `font-sans` resolved to nothing and the *entire app had rendered in the
+  browser's default Times since launch*. next/font variable names
+  (`--font-archivo`, ...) now differ from Tailwind's `--font-sans/serif/mono`
+  on purpose -- never alias a variable to itself.
+- **Layout components** (`src/components/ui/page.tsx`): `Page` (width and
+  gutters), `PageHeader` (breadcrumb/kicker in a left margin column, display
+  title, one sentence, actions), `Section` (mono label + optional note in the
+  margin column, content on the right; stacks on phones), `RuledList`,
+  `Breadcrumb`, `ActionRow`. Pages never hand-write container classes. The
+  margin column is `10.5rem`, the page max width `67.5rem`.
+- **Other shared pieces**: `Sheet` (the one boxed object; `lined` gives
+  notebook paper), `Field`/`Input`/`Select`/`Textarea`/`Label`, `.check` (a
+  square checkbox class), `Html` (renders `renderContentToHtml` output; `inline`
+  flattens the block `<p>` for choice text), `Choice`/`ChoiceRow`/
+  `ChoiceList`, `Bubbles` (unit mastery as ten bubbles), `XpBar`, `WeightBar`,
+  `Tally` (streak as tally marks), `BadgeStamp` (drawn SVG badges),
+  `Ledger` (leaderboards). `Button` hover is the highlighter on every variant.
+- **Answer choices** (`ui/choice.tsx` + `.choice` in `globals.css`) are one
+  component for quiz, boss battle, exam, exam review and admin: a native
+  radio (so arrow keys and form semantics work) styled as a bubble-sheet row.
+  Selected = highlighter row; revealed = `data-state="correct" | "wrong"`
+  with an icon *and* a word ("Correct", "Your answer"), never color alone.
+  Three gotchas, each found by testing in the browser: (1) the highlight
+  rules are scoped to `[data-revealed="false"]` because `:has(> input:checked)`
+  outranks a plain "revealed" reset and left the wrong pick yellow after
+  submit; (2) `.choice .reading { color: inherit }` because on notebook
+  paper in dark mode the sheet's light text color stayed on the yellow row and
+  vanished; (3) `Choice` handles `onClick` as well as `onChange`, because a tap
+  before hydration leaves the radio natively checked and a re-tap fires no
+  change event.
+- **Navigation**: `site-header.tsx` (wordmark, five links, streak + level, an
+  `AccountMenu` holding Settings / dark mode / sound / log out) and a phone
+  `TabBar` (Today, Courses, Progress, Friends, Classes) in place of the old
+  hamburger. The inline nav shows from `lg` (1024px), and the tab bar stays
+  through tablet widths: at 768px the inline nav plus status plus account
+  name overflowed the page by ~100px, found only by measuring
+  `scrollWidth` at each width, not by eye. The "Dashboard" route is labelled
+  "Progress" in the UI; the URL is unchanged.
+- **Theme** (`src/lib/theme/*`, `components/theme/*`): modes `light | dark |
+  system`, default **light** (a new account never starts dark just because the
+  device is). Zustand persist store (`mode`), a `beforeInteractive` inline
+  script paints `.dark` before hydration (no flash), `ThemeSync` keeps `<html>`
+  in step and follows the device in `system` mode. The same `hasHydrated`
+  pattern and TDZ caveat as before apply (see `theme-store.ts`). The old
+  `colorTheme` key in localStorage is ignored.
+- **Landing page and Today screen** (both at `/`, chosen by session):
+  signed out, `components/marketing/landing.tsx` -- a full-width headline,
+  counts read from the database (never hard-coded), exam formats from each
+  course's `examFormat` (`lib/content/exam-format.ts`), and a *working*
+  sample question (a real Calc AB item copied into
+  `lib/marketing/sample-question.ts`, local state only, nothing recorded).
+  Signed in, `components/today/today-screen.tsx` -- daily challenge and due
+  reviews per enrolled course, last unit, level; fed by `lib/study/today.ts`,
+  which reuses the practice hub's own queries so the two never disagree. Login
+  now lands on `/` (Today); signup still lands on `/courses`. `/login` and
+  `/signup` redirect signed-in visitors to `/`.
+- **Streak shown is the live value**: `getUserGamificationStats` now returns
+  `displayStreak()` (`lib/gamification/streak.ts`), not the stored
+  `currentStreak`. The stored value only changes on the next activity, so after
+  a long gap it still held the old run and the header claimed a streak the
+  next answer would reset. Same gap rules as `updateStreakOnActivity` (one
+  missed day counts only while a freeze is left). Unit-tested.
+- **Exam runner additions** (new behavior, not just restyling): a question
+  grid in the margin (jump anywhere, answered ones filled), a sticky clock on
+  phones, hours in the clock (`3:09:59`, not `189:59`), and a two-step submit
+  that states how many questions are unanswered -- before, one stray tap on
+  "Submit exam" ended the exam.
+- **Badges**: `BadgeStamp` draws all six by slug. The emoji in
+  `BADGE_DEFINITIONS[].icon` / the `Badge.icon` column are no longer displayed
+  anywhere (left in place to avoid a migration/reseed).
+- **Metadata**: title template `%s · AP Study App`, per-page titles, a
+  description, Open Graph + Twitter card, theme-color, `metadataBase`
+  (override with `NEXT_PUBLIC_SITE_URL`), and `icon.tsx` / `apple-icon.tsx` /
+  `opengraph-image.tsx` / `manifest.ts` generated in code with `next/og` (the
+  OG image uses ImageResponse's default font). The default Next favicon and
+  the five scaffold SVGs in `public/` were removed. `loading.tsx`,
+  `error.tsx`, `global-error.tsx` (inline styles only, since it replaces the
+  root layout) and `not-found.tsx` share the same voice.
+- **Footer disclaimer** (`site-footer.tsx`) says the site is not affiliated
+  with College Board and that questions have not been reviewed by College
+  Board. **TODO(owner): confirm the wording before launch.** It deliberately
+  says nothing about our own review status (all content is still
+  `reviewed: false`).
+- **Copy rules**: plain, concrete, no em dashes, no invented numbers. Counts
+  come from the database; the only hard-coded figures are the XP ranges and
+  exam formats, which come from `xp.ts` and `examFormat`. Spaced repetition is
+  described accurately: every answered question returns on a schedule (a miss
+  is due in a day), not only missed ones.
+- **Verification habit for UI work here**: test the real flows signed in
+  (answer, reveal, reward, exam, results), at 320 / 375 / 768 / 1024 / 1440,
+  in light and dark, and *measure* overflow (`scrollWidth > innerWidth`)
+  instead of eyeballing it. Four of this overhaul's bugs (the dark-mode
+  highlighted-row text, the stuck yellow after reveal, the pre-hydration tap,
+  the 768px header overflow) were invisible in a first screenshot.
 
 ### "Paper-lined" question cards for Calc AB / Physics 1
 
@@ -742,8 +823,11 @@ written), then approved and wired in everywhere.
 - **The look**: `.paper-lined` in `globals.css` -- cream background, blue
   horizontal rule lines, a red margin line (a muted rust tone in dark mode,
   on a dark "chalkboard-ledger" background), all plain CSS gradients, no
-  images. Unlayered (like the existing `pre` rule) so it wins over
-  Tailwind's `bg-card` utility by cascade-layer priority, not specificity.
+  images, driven by the `--nb-*` tokens. Unlayered (like the existing `pre`
+  rule) so it wins over Tailwind's `bg-card` utility by cascade-layer
+  priority, not specificity. After the design overhaul it is the one warm
+  object on a cool page -- the notebook the student works in -- and is applied
+  through `<Sheet lined>`.
 - **Scope**: `isPaperLinedCourse()` (`src/lib/content/paper-lined.ts`, a
   pure function checking `courseSlug` against `["ap-calc",
   "ap-physics-1"]`) -- AP CSA and AP World History stay on the plain card
@@ -761,14 +845,13 @@ written), then approved and wired in everywhere.
   cards. Non-question cards (quiz "done" screen, boss battle result
   screen, exam's empty state) deliberately stay plain -- the ask was for
   question cards, not every surface in these components.
-- **Gotcha if you touch `FrqSelfGrade` again**: it has no `<Card>` of its
-  own (bare `<div>`) and is used two different ways -- standalone FRQ
-  practice renders it as a sibling *after* its own separately-boxed prompt,
-  while the exam results page nests it *inside* the same `<Card>` as the
-  prompt. Its `paperLined` prop only self-wraps (adds the class to its own
-  root div) for the standalone case; the exam results page instead
-  paper-lines the shared outer `Card` and leaves `FrqSelfGrade`'s own prop
-  at its `false` default. Passing `paperLined` to `FrqSelfGrade` in the
+- **Gotcha if you touch `FrqSelfGrade` again**: it has no sheet of its own
+  by default and is used two different ways -- standalone FRQ practice
+  renders it as a sibling *after* its own separately-boxed prompt, while the
+  exam results page nests it *inside* the same `<Sheet>` as the prompt. Its
+  `paperLined` prop only self-wraps (in `<Sheet lined>`) for the standalone
+  case; the exam results page instead paper-lines the shared outer `Sheet`
+  and leaves `FrqSelfGrade`'s own prop at its `false` default. Passing `paperLined` to `FrqSelfGrade` in the
   exam-results nested case would paint the ruled-line pattern twice,
   independently, from two different coordinate origins -- the join between
   the prompt area and the self-grade area would show a visible seam where
@@ -776,6 +859,9 @@ written), then approved and wired in everywhere.
   background, never both.
 
 ### Bug fix: MCQ answer choices never rendered LaTeX/markdown
+
+*(Since the design overhaul, every render site below shares `ui/choice.tsx`;
+the data-path notes still apply.)*
 
 Spotted live while smoke-testing the paper-lined cards on a Calc AB exam
 question: choices showed raw `$\lim_{h \to 0} \dfrac{f(a+h) - f(a)}{h}$`
@@ -794,8 +880,7 @@ inconsistent since launch, not something the paper-lined work introduced.
   renamed to `textHtml` everywhere to match the `stemHtml`/`explanationHtml`
   convention and make "this is pre-rendered HTML" explicit at the type level.
 - Also fixed in `/admin/review` (same bug, separate code path -- raw DB rows
-  rendered via `ContentRenderer` for stem/explanation but plain `{choice.text}`
-  for choices). Pre-renders each unit's questions' choices via `Promise.all`
+  with plain `{choice.text}` for choices). Pre-renders each unit's questions' choices via `Promise.all`
   before the JSX return, same pattern the exam-results page already used for
   FRQ sections.
 - **Rendering gotcha**: `renderContentToHtml`'s output is always wrapped in a
@@ -994,6 +1079,12 @@ in app logic — updating them should be a data edit.
       working against the real production build and database. Live at
       [ap-study-app-pi.vercel.app](https://ap-study-app-pi.vercel.app).
 
+- [x] **Post-launch: visual design overhaul.** Audit, one approved direction
+      (graphite on paper with a highlighter accent), the four-theme picker
+      retired, and every page moved onto one token set and a shared component
+      set; new landing page with a working sample question and a Today screen
+      at `/`. See "Visual design system" above.
+
 ## Known issues / follow-ups
 
 - **`npm audit` reports vulnerabilities** in `hono`/`mysql2` — both transitive
@@ -1012,3 +1103,12 @@ in app logic — updating them should be a data edit.
   actually reachable by anyone right now. Promote a user via `db:studio` or
   ask Claude to run a one-off script — this is a direct DB write, so it needs
   explicit sign-off first, same as any other mutating action.
+- **The exam clock restarts on reload.** `ExamRunner` holds the countdown in
+  client state only, initialised to the full duration on every mount, so
+  reloading the exam page gives a student a fresh clock. Pre-existing, not
+  touched by the redesign; fixing it needs the start time stored on
+  `ExamAttempt` and the remaining time derived from it.
+- **Test accounts.** The design overhaul was verified signed in against the
+  shared Neon database with a scratch account (`design_scratch`,
+  `design-scratch@example.com`); it and everything it created are deleted when
+  the work finished. If that user ever appears in the list, it is leftover.
