@@ -7,7 +7,7 @@ import { ContentRenderer } from "@/components/content-renderer";
 import { renderChoiceTextToHtml } from "@/lib/content/render";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import type { RubricLine } from "@/lib/scoring/grading";
+import { renderRubric } from "@/lib/study/render-rubric";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
@@ -31,6 +31,9 @@ export default async function AdminReviewUnitPage({
         question.choices.map(async (choice) => ({ ...choice, textHtml: await renderChoiceTextToHtml(choice.text, courseSlug) })),
       ),
     })),
+  );
+  const frqPrompts = await Promise.all(
+    unit.frqPrompts.map(async (frq) => ({ ...frq, rubricLines: await renderRubric(frq.rubric, courseSlug) })),
   );
 
   return (
@@ -107,8 +110,7 @@ export default async function AdminReviewUnitPage({
             Free response ({unit.frqPrompts.length})
           </h2>
           <div className="grid gap-4">
-            {unit.frqPrompts.map((frq) => {
-              const rubric = frq.rubric as unknown as RubricLine[];
+            {frqPrompts.map((frq) => {
               return (
                 <Card key={frq.id} className={paperLined ? "paper-lined" : undefined}>
                   <CardHeader>
@@ -120,9 +122,10 @@ export default async function AdminReviewUnitPage({
                     <ContentRenderer courseSlug={courseSlug}>{frq.prompt}</ContentRenderer>
                     {frq.diagram && <DiagramRenderer diagram={frq.diagram as unknown as Diagram} />}
                     <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-muted-foreground">
-                      {rubric.map((line) => (
+                      {frq.rubricLines.map((line) => (
                         <li key={line.id}>
-                          ({line.points} pt{line.points === 1 ? "" : "s"}) {line.description}
+                          ({line.points} pt{line.points === 1 ? "" : "s"}){" "}
+                          <span className="[&_p]:m-0 [&_p]:inline" dangerouslySetInnerHTML={{ __html: line.descriptionHtml }} />
                         </li>
                       ))}
                     </ul>

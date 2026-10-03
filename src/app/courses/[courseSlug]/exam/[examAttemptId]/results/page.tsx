@@ -4,7 +4,8 @@ import { getDb } from "@/lib/db";
 import { renderContentToHtml } from "@/lib/content/render";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { ExamMcqReview } from "@/components/study/exam-mcq-review";
-import { FrqSelfGrade, type RubricLineView } from "@/components/study/frq-self-grade";
+import { FrqSelfGrade } from "@/components/study/frq-self-grade";
+import { renderRubric } from "@/lib/study/render-rubric";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -61,7 +62,7 @@ export default async function ExamResultsPage({
       promptHtml: await renderContentToHtml(frq.prompt, courseSlug),
       sampleResponseHtml: await renderContentToHtml(frq.sampleResponse, courseSlug),
       diagram: (frq.diagram as Diagram | null) ?? null,
-      rubric: frq.rubric as unknown as RubricLineView[],
+      rubric: await renderRubric(frq.rubric, courseSlug),
       existingAttempt: frqAttemptByPromptId.get(frq.id),
     })),
   );

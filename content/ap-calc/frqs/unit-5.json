@@ -39,7 +39,7 @@
       { "id": "r1", "points": 1, "description": "States that f is a polynomial, hence continuous on [0,2] and differentiable on (0,2), satisfying the MVT's hypotheses" },
       { "id": "r2", "points": 1, "description": "Correctly computes the average rate of change as 2" },
       { "id": "r3", "points": 1, "description": "Correctly sets up 3c^2-2=2 and solves to get c^2=4/3" },
-      { "id": "r4", "points": 1, "description": "Correctly identifies c = 2\\sqrt{3}/3 (rejecting the negative root since c must lie in (0,2))" }
+      { "id": "r4", "points": 1, "description": "Correctly identifies $c = \\dfrac{2\\sqrt{3}}{3}$ (rejecting the negative root since c must lie in (0,2))" }
     ],
     "sampleResponse": "(a) f(x) = x^3-2x is a polynomial, so it is continuous on [0,2] and differentiable on (0,2), satisfying the MVT's hypotheses.\n(b) Average rate of change = [f(2)-f(0)]/(2-0) = [(8-4)-0]/2 = 4/2 = 2. Setting f'(c) = 2: 3c^2-2=2, so 3c^2=4, c^2=4/3, c = ±2√3/3. Since c must be in (0,2), c = 2√3/3.",
     "reviewed": false

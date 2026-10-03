@@ -850,18 +850,37 @@ Markdown showed all of that literally.
 - **Choice-only: `renderChoiceTextToHtml`** also turns a literal `\n` into a
   line break, since AP CSA writes multi-line program output as `A\nB` (19
   choices) -- shown as the separate lines a student would see printed.
-- **Six Calc choices were plain text sitting next to typeset siblings**
-  (e.g. `f(a)/a` beside three `$\lim...$` choices). A render-time heuristic
-  to catch those would also mangle Physics unit choices like `20 m/s`, so
-  they were fixed in the content JSON instead (6 strings across
-  `unit-2.json`/`unit-7.json`). **Content is read from the database, so
-  these 6 only show up after a reseed** (`npm run content:seed`); the
-  render-time fixes above need no reseed.
-- **Not covered**: FRQ *rubric* descriptions and the admin page's rubric
-  list are rendered as plain React text, not through the markdown pipeline,
-  so `x^2`-style notation there (~66 Calc/Physics lines) still shows
-  literally. Fixing it means pre-rendering rubric lines to HTML in the two
-  FRQ pages and `FrqSelfGrade`.
+- **Seven authored strings fixed in the content JSON instead** -- six Calc
+  choices that were plain text next to typeset siblings (e.g. `f(a)/a`
+  beside three `$\lim...$` choices; a render-time heuristic for those would
+  also mangle Physics unit choices like `20 m/s`) and one rubric line with a
+  bare `\sqrt{3}` and no `$`. **Content is read from the database, so these
+  7 only show up after a reseed** (`npm run content:seed`); everything else
+  in this section is render-time and needs no reseed.
+- **FRQ rubric lines now go through the same pipeline.** They were plain
+  React text (`{line.description}`), so ~66 Calc/Physics lines showed `x^2`
+  literally. `renderRubric()` (`src/lib/study/render-rubric.ts`) pre-renders
+  each line server-side -- same reason as `renderQuizQuestions`, a Client
+  Component can't run Shiki -- and `RubricLineView` gained `descriptionHtml`
+  (`description` stays as the plain text). Used by `FrqSelfGrade` (practice
+  and exam results) and the admin review list.
+- **Bug found while doing that, and it was already live: bare `*` was being
+  eaten as markdown italics.** Authors write multiplication as `4*pi*r^2 *
+  dr/dt`; markdown pairs the asterisks into emphasis, drops them, and
+  italicizes `pi` -- in 32 existing explanations, before rubrics were
+  involved at all. Routing rubrics through markdown would have added more.
+  `fixAsterisks()` in `plain-math.ts` converts a bare `*` to `·` in the math
+  courses and escapes it (`\*`) elsewhere (AP CSA, where `*` is Java's
+  operator). **Intentional `**bold**` is preserved** -- confirmed by audit
+  that no content anywhere uses single-asterisk italics, only 247 bold
+  spans, and that count is identical before and after.
+- Final full-content audit (11,135 strings incl. rubrics, every course):
+  426 rewritten, 0 KaTeX errors, 0 raw notation left in the math courses,
+  accidental italics 32 -> 0, bold 247 -> 247. When changing
+  `plain-math.ts`, re-run an audit like that (render everything, count
+  `<strong>`/`<em>`/`katex-error`, re-scan the *output* for leftovers) --
+  unit tests alone missed the asterisk bug entirely, and a first-pass
+  audit that only counted errors missed 12 leftovers.
 
 ## Verified AP course info (2026-27)
 

@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { renderContentToHtml } from "@/lib/content/render";
-import { FrqSelfGrade, type RubricLineView } from "@/components/study/frq-self-grade";
+import { FrqSelfGrade } from "@/components/study/frq-self-grade";
+import { renderRubric } from "@/lib/study/render-rubric";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
@@ -23,7 +24,7 @@ export default async function FrqPracticePage({
     renderContentToHtml(frq.prompt, courseSlug),
     renderContentToHtml(frq.sampleResponse, courseSlug),
   ]);
-  const rubric = frq.rubric as unknown as RubricLineView[];
+  const rubric = await renderRubric(frq.rubric, courseSlug);
   const diagram = (frq.diagram as Diagram | null) ?? null;
   const paperLined = isPaperLinedCourse(courseSlug);
 

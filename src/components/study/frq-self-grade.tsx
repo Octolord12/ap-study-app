@@ -20,6 +20,7 @@ export interface RubricLineView {
   id: string;
   points: number;
   description: string;
+  descriptionHtml: string;
 }
 
 interface FrqSelfGradeProps {
@@ -125,7 +126,8 @@ export function FrqSelfGrade({
                     disabled={saved !== null}
                   />
                   <span>
-                    <span className="font-medium">({line.points} pt{line.points === 1 ? "" : "s"})</span> {line.description}
+                    <span className="font-medium">({line.points} pt{line.points === 1 ? "" : "s"})</span>{" "}
+                    <span className="[&_p]:m-0 [&_p]:inline" dangerouslySetInnerHTML={{ __html: line.descriptionHtml }} />
                   </span>
                 </label>
               ))}

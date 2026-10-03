@@ -35,8 +35,33 @@ function mapPlain(text: string, transform: (plain: string) => string): string {
     .join("");
 }
 
+const SUPERSCRIPT_TO_ASCII: Record<string, string> = Object.fromEntries(
+  Object.entries(SUPERSCRIPT).map(([ascii, sup]) => [sup, ascii]),
+);
+
 function toSuperscript(exponent: string): string {
   return [...exponent].map((ch) => SUPERSCRIPT[ch] ?? ch).join("");
+}
+
+// A base that already had its digit exponent turned into a unicode
+// superscript ("x²" in "x^2e^x") is about to go inside $...$; hand KaTeX
+// real LaTeX (x^{2}) rather than leaning on its unicode support.
+function superscriptsToLatex(base: string): string {
+  return base.replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁻]+/g, (run) => `^{${[...run].map((ch) => SUPERSCRIPT_TO_ASCII[ch]).join("")}}`);
+}
+
+// Authors write multiplication as a bare "*" ("4*pi*r^2 * dr/dt"), which
+// markdown reads as italic markers -- eating the asterisks and italicizing
+// whatever sits between them. Intentional **bold** pairs are left alone (no
+// content uses single-asterisk italics). In the math courses it becomes a
+// real multiplication dot; elsewhere (AP CSA, where * is Java's operator)
+// it's escaped so it stays a literal asterisk.
+const BOLD_PAIR = /(\*\*[^*\n]+\*\*)/;
+function fixAsterisks(plain: string, replacement: string): string {
+  return plain
+    .split(BOLD_PAIR)
+    .map((part, i) => (i % 2 === 1 ? part : part.replace(/(?<!\\)\*/g, replacement)))
+    .join("");
 }
 
 function unwrapGroup(exponent: string): string {
@@ -91,10 +116,14 @@ export function normalizePlainMath(markdown: string, { mathCourse }: { mathCours
     );
   }
   text = mapPlain(text, (plain) => plain.replace(DIGIT_EXPONENT, (_, exp: string) => toSuperscript(exp)));
+  text = mapPlain(text, (plain) => fixAsterisks(plain, mathCourse ? "·" : "\\*"));
   if (!mathCourse) return text;
 
   text = mapPlain(text, (plain) =>
-    plain.replace(GENERAL_EXPONENT, (_, base: string, exp: string) => `$${base}^{${unwrapGroup(exp)}}$`),
+    plain.replace(
+      GENERAL_EXPONENT,
+      (_, base: string, exp: string) => `$${superscriptsToLatex(base)}^{${unwrapGroup(exp)}}$`,
+    ),
   );
   text = mapPlain(text, (plain) => plain.replace(SUBSCRIPT, (_, base: string, sub: string) => `$${base}_{${sub}}$`));
   return mapPlain(text, (plain) => plain.replace(/\s->\s/g, " → "));

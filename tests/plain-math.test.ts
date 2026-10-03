@@ -13,9 +13,29 @@ describe("normalizePlainMath", () => {
   });
 
   it("typesets letter/expression exponents with KaTeX", () => {
-    expect(math("derivative of x^n is n*x^(n-1)")).toBe("derivative of $x^{n}$ is n*$x^{n-1}$");
-    expect(math("= e^(2x) * 2 = 2e^(2x)")).toBe("= $e^{2x}$ * 2 = $2e^{2x}$");
+    expect(math("derivative of x^n is n·x^(n-1)")).toBe("derivative of $x^{n}$ is n·$x^{n-1}$");
+    expect(math("= e^(2x) · 2 = 2e^(2x)")).toBe("= $e^{2x}$ · 2 = $2e^{2x}$");
     expect(math("x^2.5")).toBe("$x^{2.5}$");
+  });
+
+  it("gives KaTeX real LaTeX when a digit exponent shares a token with a letter exponent", () => {
+    expect(math("simplifies to 2xe^x + x^2e^x")).toBe("simplifies to $2xe^{x}$ + $x^{2}e^{x}$");
+  });
+
+  it("turns bare multiplication asterisks into dots instead of letting markdown italicize", () => {
+    expect(math("dV/dt = 4*pi*r^2 * dr/dt")).toBe("dV/dt = 4·pi·r² · dr/dt");
+    expect(math("d/dx(x^2)*e^x + x^2*d/dx(e^x)")).toBe("d/dx(x²)·$e^{x}$ + x²·d/dx($e^{x}$)");
+  });
+
+  it("keeps intentional **bold** and never touches asterisks inside code or math", () => {
+    expect(math("**(a)** Evaluate 2*3")).toBe("**(a)** Evaluate 2·3");
+    expect(math("`a*b` and $a*b$ and 2*3")).toBe("`a*b` and $a*b$ and 2·3");
+  });
+
+  it("escapes (rather than converts) asterisks outside the math courses, where * is an operator", () => {
+    expect(other("a*b = 6, so 2 * 3")).toBe("a\\*b = 6, so 2 \\* 3");
+    expect(other("**bold** stays")).toBe("**bold** stays");
+    expect(other("a\\*b")).toBe("a\\*b");
   });
 
   it("typesets square roots, including nested parens and exponents inside", () => {
@@ -60,5 +80,7 @@ describe("normalizePlainMath", () => {
   it("is idempotent", () => {
     const once = math("F_net = m*a, x^3 + e^(2x), sqrt(x), 4x^3 -> x^4, 9.8 m/s^2");
     expect(math(once)).toBe(once);
+    const escaped = other("a*b and n^2");
+    expect(other(escaped)).toBe(escaped);
   });
 });
