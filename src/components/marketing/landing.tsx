@@ -4,7 +4,10 @@ import { listCourses } from "@/lib/study/queries";
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { describeExamFormat, formatDuration } from "@/lib/content/exam-format";
 import { SAMPLE_COURSE_SLUG, SAMPLE_QUESTION } from "@/lib/marketing/sample-question";
+import { TESTIMONIALS } from "@/lib/marketing/testimonials";
+import { ComingSoon } from "@/components/marketing/coming-soon";
 import { SampleQuestion } from "@/components/marketing/sample-question";
+import { Testimonials } from "@/components/marketing/testimonials";
 import { Button } from "@/components/ui/button";
 import { Page, RuledList, Section } from "@/components/ui/page";
 
@@ -104,6 +107,10 @@ export async function Landing() {
             ))}
           </ul>
         </Section>
+
+        <Testimonials items={TESTIMONIALS} />
+
+        <ComingSoon />
       </div>
     </Page>
   );

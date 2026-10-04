@@ -2,7 +2,12 @@ import { Page } from "@/components/ui/page";
 
 // Shown while a route's data loads. Static rules and a mono label: the page
 // shape appears immediately, nothing shimmers or bounces.
-export default function Loading() {
+//
+// Each section's loading.tsx re-exports this. There is deliberately no
+// app/loading.tsx: it would wrap "/" too, and a crawler or link preview that
+// doesn't run JavaScript would then see this skeleton instead of the landing
+// page (the real content arrives later in a hidden block).
+export function PageSkeleton() {
   return (
     <Page aria-busy="true">
       <p role="status" className="eyebrow">

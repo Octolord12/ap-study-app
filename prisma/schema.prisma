@@ -391,3 +391,14 @@ model Friendship {
 
   @@id([requesterId, addresseeId])
 }
+
+// ---------- Marketing ----------
+
+// Email-only waitlist for subjects that don't exist yet. Deliberately not tied
+// to User: a signup here is not an account. `email` is stored lowercased
+// (src/lib/marketing/waitlist.ts) so the unique index catches case variants.
+model WaitlistSignup {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
