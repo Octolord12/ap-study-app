@@ -42,3 +42,25 @@ export function WeightBar({ min, max, label, className }: { min: number; max: nu
     </div>
   )
 }
+
+// Unit mastery as two strokes on one rule: how much of the unit has been tried
+// (light) and how much of it is currently answered correctly (ink). The ink
+// can never run past the light.
+export function MasteryBar({
+  correctPercent,
+  coveragePercent,
+  label,
+  className,
+}: {
+  correctPercent: number
+  coveragePercent: number
+  label: string
+  className?: string
+}) {
+  return (
+    <div role="img" aria-label={label} className={cn("relative h-3 w-full bg-border", className)}>
+      <i className="absolute inset-y-0 left-0 block bg-muted-foreground/35" style={{ width: `${coveragePercent}%` }} />
+      <i className="absolute inset-y-0 left-0 block bg-foreground" style={{ width: `${correctPercent}%` }} />
+    </div>
+  )
+}

@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
-import { computeUnitMastery } from "@/lib/study/mastery";
+import { computeUnitMastery, PROFICIENT_MIN_ACCURACY, PROFICIENT_MIN_COVERAGE } from "@/lib/study/mastery";
 import { getAllBadgeStatuses, getUserGamificationStats } from "@/lib/gamification/queries";
-import { Bubbles, XpBar } from "@/components/ui/meter";
-import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
+import { isCramModeOn } from "@/lib/study/cram-mode";
+import { CramToggle } from "@/components/study/cram-toggle";
+import { UnitMasteryList } from "@/components/study/unit-mastery-list";
+import { XpBar } from "@/components/ui/meter";
+import { Page, PageHeader, Section } from "@/components/ui/page";
 import { BadgeStamp } from "@/components/ui/stamp";
 import { Tally } from "@/components/ui/tally";
 
@@ -15,10 +18,12 @@ export default async function DashboardPage() {
   const userId = await requireUserId();
   const db = getDb();
 
-  const [enrollments, attempts, stats, badges] = await Promise.all([
+  const [enrollments, attempts, stats, badges, cramOn] = await Promise.all([
     db.enrollment.findMany({
       where: { userId },
-      include: { course: { include: { units: { orderBy: { order: "asc" } } } } },
+      include: {
+        course: { include: { units: { orderBy: { order: "asc" }, include: { _count: { select: { questions: true } } } } } },
+      },
     }),
     db.questionAttempt.findMany({
       where: { userId },
@@ -26,6 +31,7 @@ export default async function DashboardPage() {
     }),
     getUserGamificationStats(userId),
     getAllBadgeStatuses(userId),
+    isCramModeOn(userId),
   ]);
 
   const mastery = computeUnitMastery(
@@ -40,7 +46,15 @@ export default async function DashboardPage() {
 
   return (
     <Page>
-      <PageHeader eyebrow="Progress" title="Your progress" />
+      <PageHeader
+        eyebrow="Progress"
+        title="Your progress"
+        description={`In each unit's bar, the light stroke is how much you have tried and the dark stroke is what you currently answer correctly. Proficient means ${PROFICIENT_MIN_ACCURACY}% correct on at least ${PROFICIENT_MIN_COVERAGE}% of the unit.`}
+      />
+
+      <Section label="Cram mode" note="For the days before an exam.">
+        <CramToggle on={cramOn} />
+      </Section>
 
       <Section label="Level">
         <div className="flex max-w-lg items-end gap-5">
@@ -114,26 +128,17 @@ export default async function DashboardPage() {
                   : "No questions attempted yet."
               }
             >
-              <RuledList>
-                {course.units.map((unit) => {
-                  const m = masteryByUnitId.get(unit.id);
-                  const attempted = m?.questionsAttempted ?? 0;
-                  const pct = m && attempted > 0 ? Math.round((m.questionsCorrect / attempted) * 100) : null;
-
-                  return (
-                    <li key={unit.id}>
-                      <Link
-                        href={`/courses/${course.slug}/units/${unit.slug}`}
-                        className="group grid gap-x-6 gap-y-2 py-3 sm:grid-cols-[minmax(0,1fr)_auto_6.5rem] sm:items-center"
-                      >
-                        <span className="text-sm font-medium underline-offset-4 decoration-2 group-hover:underline">{unit.name}</span>
-                        <Bubbles percent={pct} />
-                        <span className="eyebrow sm:text-right">{pct !== null ? `${pct}% of ${attempted}` : "Not started"}</span>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </RuledList>
+              <UnitMasteryList
+                courseSlug={course.slug}
+                units={course.units.map((unit) => ({
+                  id: unit.id,
+                  slug: unit.slug,
+                  name: unit.name,
+                  total: unit._count.questions,
+                  attempted: masteryByUnitId.get(unit.id)?.questionsAttempted ?? 0,
+                  correct: masteryByUnitId.get(unit.id)?.questionsCorrect ?? 0,
+                }))}
+              />
             </Section>
           );
         })

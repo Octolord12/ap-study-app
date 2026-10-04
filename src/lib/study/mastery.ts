@@ -33,3 +33,39 @@ export function computeUnitMastery(attempts: AttemptRecord[]): UnitMastery[] {
 
   return Array.from(byUnit.values());
 }
+
+// "Proficient" needs both: a high score on what the student has tried, and
+// enough of the unit tried that the score means something (100% on two
+// questions is a start, not mastery). Compared on the rounded percentages the
+// student sees, so a unit never reads "80%" and yet is not proficient.
+export const PROFICIENT_MIN_ACCURACY = 80;
+export const PROFICIENT_MIN_COVERAGE = 50;
+
+export type MasteryLevel = "not-started" | "building" | "proficient";
+
+export interface UnitMasteryTotals {
+  total: number; // questions in the unit
+  attempted: number; // questions tried at least once
+  correct: number; // of those, currently answered correctly
+}
+
+export interface UnitMasteryRating {
+  level: MasteryLevel;
+  accuracyPercent: number | null; // correct / attempted
+  coveragePercent: number; // attempted / total
+  correctPercent: number; // correct / total: how much of the unit is currently solid
+}
+
+const pct = (part: number, whole: number) => (whole > 0 ? Math.round((part / whole) * 100) : 0);
+
+export function rateUnitMastery({ total, attempted, correct }: UnitMasteryTotals): UnitMasteryRating {
+  const accuracyPercent = attempted > 0 ? pct(correct, attempted) : null;
+  const coveragePercent = pct(attempted, total);
+  const correctPercent = pct(correct, total);
+
+  let level: MasteryLevel = "building";
+  if (attempted === 0) level = "not-started";
+  else if (accuracyPercent !== null && accuracyPercent >= PROFICIENT_MIN_ACCURACY && coveragePercent >= PROFICIENT_MIN_COVERAGE) level = "proficient";
+
+  return { level, accuracyPercent, coveragePercent, correctPercent };
+}

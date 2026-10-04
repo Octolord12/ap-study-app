@@ -1,5 +1,5 @@
 import { getDb } from "@/lib/db";
-import { hasCompletedDailyChallengeToday } from "@/lib/study/queries";
+import { getCramQuestionIds, hasCompletedDailyChallengeToday } from "@/lib/study/queries";
 
 export interface TodayCourse {
   id: string;
@@ -10,6 +10,7 @@ export interface TodayCourse {
 }
 
 export interface TodayOverview {
+  cram: boolean;
   courses: TodayCourse[];
   lastUnit: { courseSlug: string; courseName: string; unitSlug: string; unitName: string } | null;
 }
@@ -17,7 +18,7 @@ export interface TodayOverview {
 // Everything the Today screen needs beyond the XP/streak stats, assembled from
 // the same queries the practice hub already uses (daily-challenge status, the
 // due weak-spot queue) so the two can never disagree.
-export async function getTodayOverview(userId: string): Promise<TodayOverview> {
+export async function getTodayOverview(userId: string, cram: boolean): Promise<TodayOverview> {
   const db = getDb();
   const now = new Date();
 
@@ -46,14 +47,18 @@ export async function getTodayOverview(userId: string): Promise<TodayOverview> {
       .map(async (course) => ({
         ...course,
         dailyDone: await hasCompletedDailyChallengeToday(userId, course.id),
-        dueCount: await db.spacedRepetitionState.count({
-          where: { userId, dueAt: { lte: now }, question: { courseId: course.id } },
-        }),
+        // In cram mode the review button starts the cram queue, so that is the number to show.
+        dueCount: cram
+          ? (await getCramQuestionIds(userId, course.id)).length
+          : await db.spacedRepetitionState.count({
+              where: { userId, dueAt: { lte: now }, question: { courseId: course.id } },
+            }),
       })),
   );
 
   const unit = lastAttempt?.question.unit;
   return {
+    cram,
     courses,
     lastUnit: unit
       ? { courseSlug: unit.course.slug, courseName: unit.course.name, unitSlug: unit.slug, unitName: unit.name }

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getUserGamificationStats } from "@/lib/gamification/queries";
 import { getTodayOverview } from "@/lib/study/today";
+import { isCramModeOn } from "@/lib/study/cram-mode";
+import { CramNotice } from "@/components/study/cram-toggle";
 import { listCourses } from "@/lib/study/queries";
 import { Button } from "@/components/ui/button";
 import { XpBar } from "@/components/ui/meter";
@@ -16,8 +18,9 @@ function headline(streak: number, studiedToday: boolean) {
 // The signed-in home page: what is worth doing right now, in order. Reads the
 // same daily-challenge and due-review queries the practice hub uses.
 export async function TodayScreen({ userId }: { userId: string }) {
-  const [stats, overview] = await Promise.all([getUserGamificationStats(userId), getTodayOverview(userId)]);
-  const { courses, lastUnit } = overview;
+  const cramOn = await isCramModeOn(userId);
+  const [stats, overview] = await Promise.all([getUserGamificationStats(userId), getTodayOverview(userId, cramOn)]);
+  const { courses, lastUnit, cram } = overview;
 
   if (courses.length === 0) {
     const catalog = await listCourses();
@@ -50,6 +53,8 @@ export async function TodayScreen({ userId }: { userId: string }) {
         description={stats.currentStreak > 0 ? <Tally count={stats.currentStreak} className="mt-1 h-8 w-auto" /> : undefined}
       />
 
+      {cram ? <CramNotice className="mt-6" /> : null}
+
       <Section label="Daily challenge" note="Five questions. Reviews that are due come first.">
         <RuledList>
           {courses.map((course) => (
@@ -72,7 +77,10 @@ export async function TodayScreen({ userId }: { userId: string }) {
         </RuledList>
       </Section>
 
-      <Section label="Due for review" note="Questions come back on a schedule.">
+      <Section
+        label={cram ? "Cram" : "Due for review"}
+        note={cram ? "Most missed, then unseen. Due dates ignored." : "Questions come back on a schedule."}
+      >
         {totalDue === 0 ? (
           <p className="reading max-w-[52ch]">
             Nothing is due. Questions you answer come back on a schedule, sooner when you miss one.
@@ -86,11 +94,11 @@ export async function TodayScreen({ userId }: { userId: string }) {
                   <div>
                     <p className="heading text-xl">{course.name}</p>
                     <p className="mt-0.5 text-sm text-muted-foreground">
-                      {course.dueCount} question{course.dueCount === 1 ? "" : "s"} due
+                      {course.dueCount} question{course.dueCount === 1 ? "" : "s"} {cram ? "to cram" : "due"}
                     </p>
                   </div>
                   <Button render={<Link href={`/courses/${course.slug}/practice/weak-spot`} />} nativeButton={false} variant="outline">
-                    Review
+                    {cram ? "Start cram" : "Review"}
                   </Button>
                 </li>
               ))}

@@ -1,4 +1,5 @@
 import { getDb } from "@/lib/db";
+import { rankCramQuestions, type CramCandidate } from "@/lib/study/cram";
 
 export function listCourses() {
   return getDb().course.findMany({ orderBy: { name: "asc" } });
@@ -104,6 +105,36 @@ export async function getDueWeakSpotQuestionIds(userId: string, courseId: string
     select: { questionId: true },
   });
   return dueStates.map((s) => s.questionId);
+}
+
+// Cram mode's version of the review queue: the student's most-missed questions
+// and the ones they have never seen, whatever their spaced-repetition due
+// dates say. Scoped to one course, like every other practice flow.
+export async function getCramQuestionIds(userId: string, courseId: string): Promise<string[]> {
+  const db = getDb();
+  const [questions, attemptCounts] = await Promise.all([
+    db.question.findMany({ where: { courseId }, select: { id: true } }),
+    db.questionAttempt.groupBy({
+      by: ["questionId", "correct"],
+      where: { userId, question: { courseId } },
+      _count: { _all: true },
+    }),
+  ]);
+
+  const byId = new Map<string, CramCandidate>(questions.map((q) => [q.id, { id: q.id, attempts: 0, misses: 0 }]));
+  for (const row of attemptCounts) {
+    const candidate = byId.get(row.questionId);
+    if (!candidate) continue;
+    candidate.attempts += row._count._all;
+    if (!row.correct) candidate.misses += row._count._all;
+  }
+  return rankCramQuestions([...byId.values()]);
+}
+
+// The one place that decides what "review" means, so the practice hub, the
+// weak-spot page and the Today screen can't disagree about it.
+export function getReviewQueueIds(userId: string, courseId: string, cram: boolean): Promise<string[]> {
+  return cram ? getCramQuestionIds(userId, courseId) : getDueWeakSpotQuestionIds(userId, courseId);
 }
 
 const DAILY_CHALLENGE_SIZE = 5;
