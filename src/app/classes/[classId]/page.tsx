@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getClassDetail, getClassLeaderboard } from "@/lib/social/queries";
@@ -44,7 +45,11 @@ export default async function ClassDetailPage({
                 Leave class
               </Button>
             </form>
-          ) : undefined
+          ) : (
+            <Button render={<Link href={`/teacher?class=${classId}`} />} nativeButton={false} variant="outline">
+              Teacher view
+            </Button>
+          )
         }
       />
 

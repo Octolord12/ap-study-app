@@ -171,6 +171,8 @@ Full schema: `prisma/schema.prisma`. Summary:
   the Gamification section below for why that's different from the XP/level
   philosophy.
 - **Social**: `Class`, `ClassMembership`, `Friendship`, `User.leaderboardOptOut`.
+- **Marketing**: `WaitlistSignup` (`email` unique, stored lowercased; deliberately
+  not tied to `User`). Added by migration `20261004163500_add_waitlist_signup`.
 
 There's no dedicated topic-detail route: "browse by topic" is the unit page's
 topic filter (`?topic=<slug>`), which is also what a question's "review this
@@ -789,9 +791,13 @@ a user choice. Contrast: every text pair is >= 5.6:1 in both modes.
   (override with `NEXT_PUBLIC_SITE_URL`), and `icon.tsx` / `apple-icon.tsx` /
   `opengraph-image.tsx` / `manifest.ts` generated in code with `next/og` (the
   OG image uses ImageResponse's default font). The default Next favicon and
-  the five scaffold SVGs in `public/` were removed. `loading.tsx`,
-  `error.tsx`, `global-error.tsx` (inline styles only, since it replaces the
-  root layout) and `not-found.tsx` share the same voice.
+  the five scaffold SVGs in `public/` were removed. `error.tsx`,
+  `global-error.tsx` (inline styles only, since it replaces the root layout)
+  and `not-found.tsx` share the same voice. The loading skeleton is
+  `PageSkeleton` (`components/ui/page-skeleton.tsx`), re-exported by a
+  `loading.tsx` in each section (`courses`, `dashboard`, `friends`, `classes`,
+  `settings`, `admin`, `teacher`). **There is deliberately no
+  `app/loading.tsx`** -- see "Landing page renders finished HTML" below.
 - **Footer disclaimer** (`site-footer.tsx`) says the site is not affiliated
   with College Board and that questions have not been reviewed by College
   Board. **TODO(owner): confirm the wording before launch.** It deliberately
@@ -967,6 +973,116 @@ Markdown showed all of that literally.
   unit tests alone missed the asterisk bug entirely, and a first-pass
   audit that only counted errors missed 12 leftovers.
 
+## Post-launch growth features (Cram Mode, mastery, titles, waitlist, /teacher)
+
+Built from a product-feedback brief, one local commit per phase. Where the
+brief didn't match the code, the code won: the landing page was already
+server-rendered, mastery bars and a Boss Slayer badge already existed, and the
+app uses Server Actions everywhere, so the waitlist is one too, not an API route.
+
+### Landing page renders finished HTML
+
+A crawler or link preview that doesn't run JavaScript was seeing "Loading"
+(`aria-busy`) on `/`. Cause: a root `app/loading.tsx` wraps every page in
+`<Suspense>`, and `/` reads the session so it renders per request: the
+skeleton streamed first and the real page arrived later in a hidden block that
+JS swaps in (`<h1>` at byte ~51.5k, behind the skeleton at ~6.7k). Fix: no
+root `loading.tsx`; each section has its own; `/` shows the landing page
+unwrapped and only the signed-in Today screen sits in its own `<Suspense>`.
+Verified on a production build (`<h1>` at ~6.7k, no `aria-busy`, no hidden
+swap blocks). A fully *static* `/` isn't possible while the header and the home
+page read the session; don't spend time on that without a different design.
+**Don't add `app/loading.tsx` back.** One side effect worth knowing: under a
+`loading.tsx`, a `notFound()` thrown in the page returns status 200 (the
+status is already sent) with the not-found UI and a noindex meta, e.g.
+`/teacher` for a non-owner and `/admin/review` for a non-admin. The page
+content is not exposed.
+
+### Waitlist, "What's next", testimonials
+
+- `components/marketing/{coming-soon,waitlist-form,testimonials}.tsx`,
+  `lib/marketing/{actions,waitlist,testimonials}.ts`. `joinWaitlist` is a
+  Server Action: zod validates (trim + lowercase + max 254), a hidden
+  `website` honeypot field answers like a success, `createMany({ skipDuplicates })`
+  (ON CONFLICT DO NOTHING) so an existing address gets the same answer as a new
+  one, and failures log only the error *code*, never the email.
+- No rate limiting beyond that (no Redis here). If the table gets spammed, add
+  a Vercel Firewall rate-limit rule on `POST /`.
+- The waitlist collects emails and there is no age gate: see the COPPA note in
+  the Social section before promoting this to under-13s.
+- Subjects listed under "What's next" are the owner's examples (AP U.S. History,
+  AP Biology, AP Calculus BC), marked "Planned", no dates.
+- **Testimonials ship empty on purpose.** `lib/marketing/testimonials.ts` is an
+  empty list and the section renders nothing until it has real quotes, added
+  with the student's (and a parent's, if under 18) permission, worded as they
+  wrote them. No invented testimonials: nobody has scored anything with this app
+  yet, and fabricated ones are deceptive (and the FTC's 2024 rule covers them).
+  `tests/testimonials.test.tsx` asserts the list is empty.
+
+### Cram Mode
+
+Toggle on the Progress page. While on, "review" ignores spaced-repetition due
+dates and serves, per course, the student's most-missed questions (most misses
+first, then worst miss rate), then questions never seen, then the rest, 20 at a
+time (`lib/study/cram.ts`, pure and tested; ties are shuffled).
+
+- One function decides what review means everywhere: `getReviewQueueIds`
+  (`lib/study/queries.ts`), used by the weak-spot page, the practice hub and the
+  Today screen, so their counts can't disagree. Today's count in cram mode is the
+  cram queue's length.
+- State is an **HTTP-only cookie** (`ap-cram`), not a column: no migration, and
+  "temporary" is literal (it lapses after 7 days). Its value is the **user id**,
+  so on a shared device a second student doesn't inherit the first's cram mode.
+  `isCramModeOn(userId)` reads it; `setCramMode` (Server Action) writes it.
+- Cram attempts still use `source: WEAK_SPOT` and update spaced-repetition state
+  normally, so turning cram off leaves nothing inconsistent.
+
+### Unit mastery
+
+`rateUnitMastery` (`lib/study/mastery.ts`): **Proficient = at least 80% correct
+on what you've tried AND at least half the unit tried**, compared on the rounded
+percentages shown (a unit never reads "80%" and yet isn't proficient). Below that
+it's Building; no attempts is Not started. The thresholds are exported constants:
+tune them there. `UnitMasteryList` draws a two-stroke bar (light = tried, dark =
+currently correct, both as a share of the whole unit) so 100% on two questions
+no longer looks like mastery. Bars, not donut charts, to match the design system.
+
+### Boss battle titles
+
+Defeating a unit's boss battle earns "Unit N Conqueror" (N = `Unit.order`).
+**Titles aren't stored**: they're derived from `BossBattleAttempt.passed`, which
+already persists and never reverts, so there's no table and no migration
+(`lib/gamification/titles.ts`, `getUserUnitTitles`). Shown on Progress, grouped
+by course, with a `TitleStamp` (the unit number on the highlighter), and
+announced once, the first time a unit is conquered, via `RewardToast` and a
+"New title" line on the result screen (`submitBossBattle` returns `newTitle`).
+
+**Bug fixed with it**: the boss result screen returned early and never rendered
+`RewardToast`, so anything awarded at submission time (Boss Slayer included)
+was never shown. It's rendered on the result screen now.
+
+### /teacher (skeleton)
+
+`/teacher` is gated to **anyone who owns a class** (`requireOwnedClasses`;
+everyone else gets `notFound()`). There is **no teacher role**: classes are open
+to every student, so "owns a class" is the only distinction that exists. Before
+real student data goes in here, replace this with an explicit role. It's
+reached from the "Teacher view" button on a class page you own, not the nav.
+The "Class-wide weaknesses" panel takes `ClassWeakness[]` and shows an honest
+empty state (no invented numbers) until an aggregation exists; "Assign Daily 5
+set" is a disabled button that says it isn't built. FERPA/COPPA considerations
+(see the Social section) apply the moment per-student data appears here.
+
+### Applying migrations here
+
+`npm run db:migrate` is `prisma migrate dev` (needs a shadow database, awkward on
+Neon). What worked: generate the SQL offline with
+`npx prisma migrate diff --config prisma7.config.ts --from-schema <old schema from git> --to-schema prisma/schema.prisma --script`,
+save it as `prisma/migrations/<timestamp>_<name>/migration.sql`, review it, then
+`npx prisma migrate deploy --config prisma7.config.ts` (applies only pending
+migrations; never resets). Vercel does **not** run migrations on deploy, so
+apply a migration *before* pushing code that needs it.
+
 ## Verified AP course info (2026-27)
 
 Exam formats change almost every year — 3 of our 4 launch courses have had a
@@ -1084,6 +1200,11 @@ in app logic — updating them should be a data edit.
       retired, and every page moved onto one token set and a shared component
       set; new landing page with a working sample question and a Today screen
       at `/`. See "Visual design system" above.
+- [x] **Post-launch: growth features.** Landing page now ships finished HTML
+      (root skeleton removed), waitlist + "What's next" + an empty-by-design
+      testimonials scaffold, Cram Mode, proficiency-rated mastery bars, boss
+      battle titles (and a missing boss-result toast fixed), and a `/teacher`
+      skeleton for class owners. See "Post-launch growth features" above.
 
 ## Known issues / follow-ups
 
@@ -1108,7 +1229,34 @@ in app logic — updating them should be a data edit.
   reloading the exam page gives a student a fresh clock. Pre-existing, not
   touched by the redesign; fixing it needs the start time stored on
   `ExamAttempt` and the remaining time derived from it.
+- **The correct answer is almost always "A" (content bug, high priority).**
+  Authored position of the correct choice, counted from `/content`: AP Calculus
+  AB 238 of 240 are A; AP Physics 1 240 of 240; AP CSA 30% A / 56% B / 12% C;
+  AP World 26% A / 72% B; overall C is correct 3% of the time and D under 1%.
+  Nothing shuffles choices at render time, so always picking A scores ~99-100%
+  in Calc and Physics, and everything built on correctness (XP, mastery,
+  proficiency, boss titles, exam estimates) is easy to game. Only ~28 of 1,050
+  questions mention a choice letter in their text, so a fix is tractable:
+  either permute and relabel choices when seeding/authoring (needs a reseed =
+  DB write, and the 28 label references fixed), or shuffle per question at
+  render time with a stable per-(user, question) seed and relabel A-D. Not done;
+  needs the owner's call.
+- **Boss battle pass/fail is decided from a client-sent `correctCount`.**
+  `submitBossBattle` trusts `correctCount`/`total` from the browser, so the
+  `passed` flag (and now the title derived from it) can be forged by a crafted
+  request. XP is unaffected (computed server-side from stored attempts). Fix by
+  deriving the score from the stored `QuestionAttempt` rows for that battle.
+- **Dev/testing gotchas.** (1) This folder produces duplicate "`<name> 2`"
+  files (seen in `.next/` and `node_modules/next/dist/docs/`): Turbopack then
+  refuses to start ("Unexpected file in persistence directory") and `tsc` reports
+  duplicate identifiers. `rm -rf .next` fixes it. (2) In the desktop app's
+  Browser pane, a hidden pane never fires `requestAnimationFrame`, so streamed
+  Suspense content stays behind its skeleton; to test a page that streams,
+  temporarily move that section's `loading.tsx` aside (then `git checkout` it).
 - **Test accounts.** The design overhaul was verified signed in against the
   shared Neon database with a scratch account (`design_scratch`,
   `design-scratch@example.com`); it and everything it created are deleted when
   the work finished. If that user ever appears in the list, it is leftover.
+  The growth-features work used `scratch_phase2` / `scratch-phase2@example.com`
+  the same way; deleted afterwards and row counts compared to a pre-test
+  baseline (identical).
