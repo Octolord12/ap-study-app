@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Choice, ChoiceList } from "@/components/ui/choice";
 import { Html } from "@/components/ui/html";
 import { Sheet } from "@/components/ui/sheet";
-import { BadgeStamp } from "@/components/ui/stamp";
+import { BadgeStamp, TitleStamp } from "@/components/ui/stamp";
 import { QuizProgress } from "@/components/study/quiz-progress";
 import { RewardToast, hasReward, type Reward } from "@/components/gamification/reward-toast";
 import { playBossDefeatedSound, playBossHitSound } from "@/lib/gamification/sound";
@@ -39,7 +39,7 @@ export function BossBattleRunner({
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [reward, setReward] = useState<Reward | null>(null);
   const [rewardKey, setRewardKey] = useState(0);
-  const [battleResult, setBattleResult] = useState<{ passed: boolean } | null>(null);
+  const [battleResult, setBattleResult] = useState<{ passed: boolean; newTitle: Reward["newTitle"] } | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
   const total = questions.length;
@@ -88,10 +88,10 @@ export function BossBattleRunner({
 
     setSubmitting(true);
     const result = await submitBossBattle({ unitId, correctCount, total });
-    setBattleResult({ passed: result.passed });
+    setBattleResult({ passed: result.passed, newTitle: result.newTitle });
     if (result.passed) playBossDefeatedSound();
-    if (result.newBadges.length > 0) {
-      setReward({ xpAwarded: 0, leveledUp: false, newLevel: 0, newBadges: result.newBadges });
+    if (result.newBadges.length > 0 || result.newTitle) {
+      setReward({ xpAwarded: 0, leveledUp: false, newLevel: 0, newBadges: result.newBadges, newTitle: result.newTitle });
       setRewardKey((k) => k + 1);
     }
     setSubmitting(false);
@@ -100,9 +100,16 @@ export function BossBattleRunner({
   if (battleResult) {
     return (
       <div className="border-t-2 border-foreground pt-6">
+        {/* Badges and titles are awarded when the battle is submitted, which is
+            the moment this screen replaces the questions. */}
+        {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
         <p className="eyebrow">{unitName}</p>
         <div className="mt-3 flex items-center gap-5">
-          {battleResult.passed ? <BadgeStamp slug="boss_slayer" className="size-20 shrink-0" /> : null}
+          {battleResult.newTitle ? (
+            <TitleStamp unitNumber={battleResult.newTitle.unitNumber} className="size-20 shrink-0" />
+          ) : battleResult.passed ? (
+            <BadgeStamp slug="boss_slayer" className="size-20 shrink-0" />
+          ) : null}
           <h2 className="display text-[clamp(2.5rem,8vw,4.5rem)]">
             {battleResult.passed ? "Boss defeated." : "The boss survives. This time."}
           </h2>
@@ -113,6 +120,12 @@ export function BossBattleRunner({
         <p className="reading mt-1 text-lg">
           correct{!battleResult.passed ? `. You need ${Math.ceil(total * PASS_THRESHOLD)} to win.` : "."}
         </p>
+        {battleResult.newTitle ? (
+          <p className="mt-5 flex flex-wrap items-baseline gap-x-3">
+            <span className="eyebrow">New title</span>
+            <span className="heading text-2xl">{battleResult.newTitle.title}</span>
+          </p>
+        ) : null}
         <div className="mt-8 flex flex-wrap gap-3">
           {!battleResult.passed ? (
             <Button render={<Link href={`/courses/${courseSlug}/units/${unitSlug}/boss`} />} nativeButton={false} size="lg">

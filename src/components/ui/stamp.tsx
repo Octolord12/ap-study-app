@@ -89,3 +89,34 @@ export function BadgeStamp({ slug, earned = true, className }: { slug: string; e
     </svg>
   )
 }
+
+// The boss-battle title for one unit: a ring around the unit's number on the
+// highlighter. Drawn per number, so every unit's title has its own stamp.
+export function TitleStamp({ unitNumber, className }: { unitNumber: number; className?: string }) {
+  const label = String(unitNumber)
+  return (
+    <svg
+      viewBox="0 0 64 64"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2.5}
+      aria-hidden
+      className={cn("size-16", className)}
+    >
+      {RING}
+      <circle cx="32" cy="32" r="21" fill="var(--mark)" />
+      <text
+        x="32"
+        y={label.length > 1 ? 39.5 : 41}
+        textAnchor="middle"
+        fontSize={label.length > 1 ? 22 : 28}
+        fontWeight={800}
+        fill="var(--on-mark)"
+        stroke="none"
+        style={{ fontFamily: "var(--font-archivo), sans-serif" }}
+      >
+        {label}
+      </text>
+    </svg>
+  )
+}

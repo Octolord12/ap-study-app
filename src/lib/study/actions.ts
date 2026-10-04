@@ -11,6 +11,7 @@ import { SelfGradingStrategy, type RubricLine } from "@/lib/scoring/grading";
 import { grantXpForActivity } from "@/lib/gamification/activity";
 import { xpForCorrectAnswer, xpForFrqPoints } from "@/lib/gamification/xp";
 import { checkAndAwardBadges, type BadgeDefinition } from "@/lib/gamification/badges";
+import { unitConquerorTitle } from "@/lib/gamification/titles";
 import type { AttemptSource, Difficulty } from "@/generated/prisma/client";
 import type { Course as ContentCourse } from "@/lib/content/schema";
 
@@ -350,6 +351,8 @@ const BOSS_BATTLE_PASS_THRESHOLD = 0.7;
 interface SubmitBossBattleResult {
   passed: boolean;
   newBadges: BadgeDefinition[];
+  // Set only the first time this unit is conquered, not on a rematch.
+  newTitle: { title: string; unitNumber: number } | null;
 }
 
 // The per-question answers were already scored via recordAttempt as the
@@ -381,6 +384,12 @@ export async function submitBossBattle(input: {
 
   const newBadges = passed ? await checkAndAwardBadges(userId) : [];
 
+  let newTitle: SubmitBossBattleResult["newTitle"] = null;
+  if (passed && !existing?.passed) {
+    const unit = await db.unit.findUnique({ where: { id: input.unitId }, select: { order: true } });
+    if (unit) newTitle = { title: unitConquerorTitle(unit.order), unitNumber: unit.order };
+  }
+
   revalidatePath("/dashboard");
-  return { passed, newBadges };
+  return { passed, newBadges, newTitle };
 }

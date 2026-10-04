@@ -3,13 +3,14 @@ import Link from "next/link";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { computeUnitMastery, PROFICIENT_MIN_ACCURACY, PROFICIENT_MIN_COVERAGE } from "@/lib/study/mastery";
-import { getAllBadgeStatuses, getUserGamificationStats } from "@/lib/gamification/queries";
+import { getAllBadgeStatuses, getUserGamificationStats, getUserUnitTitles } from "@/lib/gamification/queries";
+import { groupTitlesByCourse } from "@/lib/gamification/titles";
 import { isCramModeOn } from "@/lib/study/cram-mode";
 import { CramToggle } from "@/components/study/cram-toggle";
 import { UnitMasteryList } from "@/components/study/unit-mastery-list";
 import { XpBar } from "@/components/ui/meter";
 import { Page, PageHeader, Section } from "@/components/ui/page";
-import { BadgeStamp } from "@/components/ui/stamp";
+import { BadgeStamp, TitleStamp } from "@/components/ui/stamp";
 import { Tally } from "@/components/ui/tally";
 
 export const metadata: Metadata = { title: "Progress" };
@@ -18,7 +19,7 @@ export default async function DashboardPage() {
   const userId = await requireUserId();
   const db = getDb();
 
-  const [enrollments, attempts, stats, badges, cramOn] = await Promise.all([
+  const [enrollments, attempts, stats, badges, cramOn, titles] = await Promise.all([
     db.enrollment.findMany({
       where: { userId },
       include: {
@@ -32,6 +33,7 @@ export default async function DashboardPage() {
     getUserGamificationStats(userId),
     getAllBadgeStatuses(userId),
     isCramModeOn(userId),
+    getUserUnitTitles(userId),
   ]);
 
   const mastery = computeUnitMastery(
@@ -95,6 +97,40 @@ export default async function DashboardPage() {
             </li>
           ))}
         </ul>
+      </Section>
+
+      <Section
+        label="Titles"
+        note={titles.length > 0 ? `${titles.length} unit${titles.length === 1 ? "" : "s"} conquered.` : "Earned in boss battles."}
+      >
+        {titles.length === 0 ? (
+          <p className="reading max-w-[52ch]">
+            None yet. Defeat the boss battle at the end of a unit to earn its title.{" "}
+            <Link href="/courses" className="font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline">
+              Browse courses
+            </Link>
+            .
+          </p>
+        ) : (
+          <div className="space-y-8">
+            {groupTitlesByCourse(titles).map((group) => (
+              <div key={group.courseSlug}>
+                <p className="eyebrow">{group.courseName}</p>
+                <ul className="mt-4 grid gap-x-6 gap-y-5 sm:grid-cols-2">
+                  {group.titles.map((t) => (
+                    <li key={t.unitId} className="flex items-center gap-3">
+                      <TitleStamp unitNumber={t.unitNumber} className="size-14 shrink-0" />
+                      <div className="min-w-0">
+                        <p className="heading text-lg">{t.title}</p>
+                        <p className="mt-0.5 text-xs leading-snug text-muted-foreground">{t.unitName}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
       </Section>
 
       {enrollments.length === 0 ? (

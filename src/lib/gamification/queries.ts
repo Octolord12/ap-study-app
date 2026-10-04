@@ -2,6 +2,7 @@ import { getDb } from "@/lib/db";
 import { computeLevel, type LevelProgress } from "@/lib/gamification/level";
 import { BADGE_DEFINITIONS, type BadgeDefinition } from "@/lib/gamification/badges";
 import { displayStreak, wasActiveToday } from "@/lib/gamification/streak";
+import { sortUnitTitles, unitConquerorTitle, type UnitTitle } from "@/lib/gamification/titles";
 
 export interface UserGamificationStats extends LevelProgress {
   totalXp: number;
@@ -55,4 +56,23 @@ export async function getAllBadgeStatuses(userId: string): Promise<BadgeStatus[]
     earned: earnedBySlug.has(def.slug),
     earnedAt: earnedBySlug.get(def.slug) ?? null,
   }));
+}
+
+export async function getUserUnitTitles(userId: string): Promise<UnitTitle[]> {
+  const conquered = await getDb().bossBattleAttempt.findMany({
+    where: { userId, passed: true },
+    select: { unit: { select: { id: true, slug: true, name: true, order: true, course: { select: { slug: true, name: true } } } } },
+  });
+
+  return sortUnitTitles(
+    conquered.map(({ unit }) => ({
+      unitId: unit.id,
+      unitSlug: unit.slug,
+      unitName: unit.name,
+      unitNumber: unit.order,
+      courseSlug: unit.course.slug,
+      courseName: unit.course.name,
+      title: unitConquerorTitle(unit.order),
+    })),
+  );
 }
