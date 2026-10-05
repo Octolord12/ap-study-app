@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MINIMUM_AGE } from "@/lib/age";
 import { privacyMailto } from "@/lib/site-contact";
 import { Page, PageHeader, Section } from "@/components/ui/page";
 
@@ -30,6 +31,14 @@ export default function PrivacyPage() {
         title="What this site keeps"
         description={`What we collect, who can see it, and how to ask about it. Last updated ${UPDATED}.`}
       />
+
+      <Section label="Who it's for">
+        <p className="reading max-w-[64ch]">
+          This site is for people who are {MINIMUM_AGE} or older, and signing up asks you to confirm that. We don&apos;t ask for your birth
+          date, and we don&apos;t knowingly keep information about anyone under {MINIMUM_AGE}. If you think someone under {MINIMUM_AGE} has an
+          account or is on the waitlist, write to us and we will delete it.
+        </p>
+      </Section>
 
       <Section label="What we collect">
         <Points

@@ -17,6 +17,11 @@ describe("ComingSoon", () => {
     expect(screen.getByRole("button", { name: "Join the list" })).toBeInTheDocument();
   });
 
+  it("tells people the minimum age for the waitlist", () => {
+    render(<ComingSoon />);
+    expect(screen.getByText(/You must be 13 or older/)).toBeInTheDocument();
+  });
+
   it("does not refer to other parts of the page, since it appears on two different pages", () => {
     const { container } = render(<ComingSoon />);
     expect(container.textContent).not.toMatch(/\babove\b|\bbelow\b/i);

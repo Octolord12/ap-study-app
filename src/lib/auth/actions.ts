@@ -14,6 +14,7 @@ export async function signUpAction(_prevState: string | undefined, formData: For
     username: formData.get("username"),
     email: formData.get("email"),
     password: formData.get("password"),
+    ageConfirmed: formData.get("ageConfirmed"),
   });
 
   if (!parsed.success) {

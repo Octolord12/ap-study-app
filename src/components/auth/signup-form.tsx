@@ -6,6 +6,7 @@ import { signUpAction } from "@/lib/auth/actions";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { MINIMUM_AGE } from "@/lib/age";
 
 export function SignupForm() {
   const [error, formAction, isPending] = useActionState(signUpAction, undefined);
@@ -24,6 +25,10 @@ export function SignupForm() {
       <Field id="password" label="Password" hint="At least 8 characters.">
         <Input id="password" name="password" type="password" required autoComplete="new-password" minLength={8} />
       </Field>
+      <label className="flex items-center gap-3 text-sm font-medium">
+        <input type="checkbox" className="check" name="ageConfirmed" value="yes" required />
+        <span>I am {MINIMUM_AGE} or older.</span>
+      </label>
       {error ? (
         <p role="alert" className="text-sm font-medium text-incorrect">
           {error}

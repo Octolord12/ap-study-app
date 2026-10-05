@@ -348,6 +348,8 @@ real names or contact info are shown. If a class is ever used in an actual
 school setting, FERPA and state student-privacy laws (e.g. California's
 SOPIPA) may also apply to how member lists and progress data are handled.
 
+**Update 2026-10-04:** the minimum age is now 13 and signup enforces a confirmation; see "Footer, contact and privacy". That is a self-declaration, not a COPPA compliance program.
+
 ### Content pipeline (Milestone 2)
 
 `/content/<course-slug>/{course.json, units/*.json, questions/*.json, frqs/*.json}`
@@ -1193,10 +1195,19 @@ answers are refused, a conquered unit stays conquered).
 - **Commitments the page makes on the owner's behalf**, to honor or edit: account
   and data deletion, access/correction, and waitlist removal *by request* (there is
   no self-serve button), and "we don't sell your information".
-- **Not decided yet**: a minimum age / what to do about under-13 users (the site has
-  no age gate; see the COPPA note in the Social section), and a lawyer's review of
-  the privacy page before this goes beyond family and friends. The page is silent
-  on children for now; that is a gap, not a statement.
+- **Minimum age: 13 (owner decision, 2026-10-04).** `MINIMUM_AGE` in `lib/age.ts` is
+  the single source. Signup requires a checked "I am 13 or older" box
+  (`ageConfirmed`, value `yes`), enforced **server-side** in `SignUpSchema`, so
+  omitting the field from a hand-made request doesn't skip it (tested in
+  `tests/signup-age-gate.test.ts`, which also checks no user is created and nothing
+  is stored). The waitlist form says it, and `/privacy` has a "Who it's for"
+  section: no birth date is asked for, no knowing retention of under-13 data,
+  deletion on request. This is a self-declaration, not verification: we
+  deliberately don't collect a birth date, since that would mean storing more
+  personal data. It does not cover accounts created before 2026-10-04 (none are
+  known to be under 13, but nothing checked).
+- **Still open**: a lawyer's review of the privacy page before this goes beyond
+  family and friends.
 - Test setup note: `tests/setup.ts` now runs Testing Library's `cleanup()` after each
   test (vitest runs without globals, so it wasn't happening, and `getBy*` found
   duplicates left over from earlier renders in the same file).
@@ -1363,6 +1374,11 @@ in app logic — updating them should be a data edit.
   owner raises cheating (leaderboards, titles, classes) as a problem. Browsers
   can't be stopped from showing page data, so "block dev tools" tricks are not an
   option either.
+- **Auth forms clear what you typed after a server-side error.** React 19 resets an
+  uncontrolled `<form action={fn}>` when the action finishes, so a rejected signup
+  ("That username is taken", the age message) or a failed login empties the fields.
+  Pre-existing, seen while testing the age check. Fix by returning the submitted
+  values from the action and using them as `defaultValue`s.
 - **Dev/testing gotchas.** (1) This folder produces duplicate "`<name> 2`"
   files (seen in `.next/` and `node_modules/next/dist/docs/`): Turbopack then
   refuses to start ("Unexpected file in persistence directory") and `tsc` reports

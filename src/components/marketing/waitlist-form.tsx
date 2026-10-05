@@ -6,6 +6,7 @@ import { WAITLIST_IDLE } from "@/lib/marketing/waitlist";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { MINIMUM_AGE } from "@/lib/age";
 
 export function WaitlistForm() {
   const [state, formAction, isPending] = useActionState(joinWaitlist, WAITLIST_IDLE);
@@ -24,7 +25,7 @@ export function WaitlistForm() {
         <Field
           id="waitlist-email"
           label="Email"
-          hint="One email when a new subject launches. Nothing else."
+          hint={`One email when a new subject launches. Nothing else. You must be ${MINIMUM_AGE} or older.`}
           error={state.status === "error" ? state.message : undefined}
           className="min-w-56 flex-1"
         >

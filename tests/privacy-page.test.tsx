@@ -3,6 +3,7 @@ import path from "node:path";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import PrivacyPage from "@/app/privacy/page";
+import { MINIMUM_AGE } from "@/lib/age";
 import { CRAM_COOKIE, CRAM_DAYS } from "@/lib/study/cram-mode";
 
 describe("privacy page", () => {
@@ -14,6 +15,13 @@ describe("privacy page", () => {
     const link = screen.getByRole("link", { name: "Write to us about privacy" });
     expect(link.getAttribute("href")).toMatch(/^mailto:/);
     expect(container.textContent).not.toMatch(/@|gmail/i);
+  });
+
+  it("states the minimum age that signup enforces, and that no birth date is collected", () => {
+    const { container } = render(<PrivacyPage />);
+    expect(screen.getByText("Who it's for")).toBeInTheDocument();
+    expect(container.textContent).toContain(`${MINIMUM_AGE} or older`);
+    expect(container.textContent).toMatch(/don't ask for your birth\s+date/);
   });
 
   it("describes the cookie the app really sets, and for as long as it really lasts", () => {
