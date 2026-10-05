@@ -56,9 +56,9 @@ export async function Landing() {
   return (
     <Page className="md:pt-14">
       <h1 className="display text-[clamp(2.75rem,8.4vw,6.25rem)]">
-        Practice for four AP exams.
+        Practice for AP exams.
         <br />
-        <span className="hl">Every wrong answer</span> explained.
+        <span className="hl">Every incorrect answer</span> analyzed.
       </h1>
 
       <div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-14">

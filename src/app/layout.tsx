@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
-    title: "Practice for four AP exams. Every wrong answer explained.",
+    title: "Practice for AP exams. Every incorrect answer analyzed.",
     description: DESCRIPTION,
   },
   twitter: { card: "summary_large_image" },

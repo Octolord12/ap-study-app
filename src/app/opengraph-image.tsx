@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { ImageResponse } from "next/og";
 
-export const alt = "AP Study App: practice for four AP exams, every wrong answer explained";
+export const alt = "AP Study App: practice for AP exams, every incorrect answer analyzed";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -54,11 +54,11 @@ export default async function OpengraphImage() {
           <Tally />
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={line}>Practice for four AP exams.</div>
+          <div style={line}>Practice for AP exams.</div>
           <div style={{ display: "flex", marginTop: 6 }}>
-            <div style={{ ...line, background: MARK, padding: "0 16px 0 0", marginLeft: -2 }}>Every wrong answer</div>
+            <div style={{ ...line, background: MARK, padding: "0 16px 0 0", marginLeft: -2 }}>Every incorrect answer</div>
           </div>
-          <div style={line}>explained.</div>
+          <div style={line}>analyzed.</div>
         </div>
         <div style={{ display: "flex", fontSize: 28, color: GRAPHITE, gap: 32 }}>
           <div>Calculus AB</div>
