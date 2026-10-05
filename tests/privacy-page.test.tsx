@@ -24,6 +24,11 @@ describe("privacy page", () => {
     expect(container.textContent).toMatch(/don't ask for your birth\s+date/);
   });
 
+  it("lists the exam date among what is collected, since it is stored", () => {
+    const { container } = render(<PrivacyPage />);
+    expect(container.textContent).toMatch(/set an exam date for a course: that date/);
+  });
+
   it("says that a timed exam's answers are kept on the device, since they are", () => {
     const { container } = render(<PrivacyPage />);
     expect(container.textContent).toMatch(/timed exam it also keeps your answers/);

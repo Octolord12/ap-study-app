@@ -1,5 +1,7 @@
 import { getDb } from "@/lib/db";
 import { getCramQuestionIds, hasCompletedDailyChallengeToday } from "@/lib/study/queries";
+import { getCourseCoverage, type CourseCoverage } from "@/lib/study/coverage";
+import { toIsoDate } from "@/lib/study/exam-plan";
 
 export interface TodayCourse {
   id: string;
@@ -7,6 +9,8 @@ export interface TodayCourse {
   name: string;
   dailyDone: boolean;
   dueCount: number;
+  examDateIso: string | null;
+  coverage: CourseCoverage;
 }
 
 export interface TodayOverview {
@@ -25,7 +29,7 @@ export async function getTodayOverview(userId: string, cram: boolean): Promise<T
   const [enrollments, lastAttempt] = await Promise.all([
     db.enrollment.findMany({
       where: { userId },
-      select: { course: { select: { id: true, slug: true, name: true } } },
+      select: { examDate: true, course: { select: { id: true, slug: true, name: true } } },
     }),
     db.questionAttempt.findFirst({
       where: { userId },
@@ -42,10 +46,11 @@ export async function getTodayOverview(userId: string, cram: boolean): Promise<T
 
   const courses = await Promise.all(
     enrollments
-      .map((e) => e.course)
+      .map((e) => ({ ...e.course, examDateIso: e.examDate ? toIsoDate(e.examDate, "utc") : null }))
       .sort((a, b) => a.name.localeCompare(b.name))
       .map(async (course) => ({
         ...course,
+        coverage: await getCourseCoverage(userId, course.id),
         dailyDone: await hasCompletedDailyChallengeToday(userId, course.id),
         // In cram mode the review button starts the cram queue, so that is the number to show.
         dueCount: cram

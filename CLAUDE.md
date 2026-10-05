@@ -184,6 +184,7 @@ Full schema: `prisma/schema.prisma`. Summary:
   the Gamification section below for why that's different from the XP/level
   philosophy.
 - **Social**: `Class`, `ClassMembership`, `Friendship`, `User.leaderboardOptOut`.
+- `Enrollment.examDate` (optional, date only): see "Exam date and study plan".
 - **Marketing**: `WaitlistSignup` (`email` unique, stored lowercased; deliberately
   not tied to `User`). Added by migration `20261004163500_add_waitlist_signup`.
 
@@ -1244,6 +1245,33 @@ From a parent's-eye review of the app (2026-10-05).
   resume after reload, auto-submit at zero carrying the saved answers, the Progress sections,
   and the exam breakdown link. The About page and part-2 components have unit tests and were
   checked in the browser; no full `next build` was run after part 2 (run it before deploying).
+
+## Exam date and study plan
+
+Each student can set an exam date per course; the app counts down and paces them.
+
+- **Data**: `Enrollment.examDate DateTime? @db.Date`, a calendar date with no time, so no
+  timezone can shift it. Migration `20261005200000_add_enrollment_exam_date` adds one
+  nullable column (`ALTER TABLE "Enrollment" ADD COLUMN "examDate" DATE`). **Apply it before
+  deploying code that reads it** (the old code is unaffected by the extra column).
+- **Where**: a form + countdown on the course page (`#exam-date`, enrolled students only) and a
+  countdown per course on the Today screen. `setExamDate` (Server Action) updates only the
+  signed-in student's own enrollment (keyed on the session, never on form fields), validates
+  server-side (real date; not in the past, tolerating the server being a timezone behind;
+  within ~2 years), and can clear the date. Past dates are refused, but a stored date can still
+  pass later, and the UI then says so.
+- **The plan** (`lib/study/exam-plan.ts`, pure and tested): days left = exam date minus the
+  viewer's *local* date (UTC calendar arithmetic, so DST/timezones can't skew it); today counts
+  as a study day, the exam day doesn't. New questions per day = untried / days left, rounded up;
+  minutes = that x `PLAN_SECONDS_PER_QUESTION` (90 s, answering plus reading the explanation;
+  an assumption, tune it there). Pace compares the last 7 days' *first-time* questions per day
+  (`getCourseCoverage`) with what's needed: "on pace" / "behind", and "not started" is
+  encouraged rather than judged. In the last 14 days it points at Cram Mode.
+- Worked out **in the browser** (`ExamCountdown`), because only the browser knows the student's
+  date; the server renders the date and a placeholder.
+- The exam date is stored personal data, so the privacy page lists it.
+- The AP exam dates themselves are **not** looked up or stored: the student enters their own
+  (their school or the College Board's schedule has it).
 
 ## Footer, contact and privacy
 

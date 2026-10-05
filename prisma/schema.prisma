@@ -208,6 +208,10 @@ model Enrollment {
   userId    String
   courseId  String
   createdAt DateTime @default(now())
+  // The student's own exam date for this course, a calendar date with no time of day
+  // (so no timezone can shift it). Null until they set one. Drives the countdown and
+  // study plan; see src/lib/study/exam-plan.ts.
+  examDate  DateTime? @db.Date
 
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
   course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)

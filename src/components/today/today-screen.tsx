@@ -4,6 +4,7 @@ import { getTodayOverview } from "@/lib/study/today";
 import { isCramModeOn } from "@/lib/study/cram-mode";
 import { CramNotice } from "@/components/study/cram-toggle";
 import { ComingSoon } from "@/components/marketing/coming-soon";
+import { ExamCountdown } from "@/components/study/exam-countdown";
 import { listCourses } from "@/lib/study/queries";
 import { Button } from "@/components/ui/button";
 import { XpBar } from "@/components/ui/meter";
@@ -106,6 +107,42 @@ export async function TodayScreen({ userId }: { userId: string }) {
               ))}
           </RuledList>
         )}
+      </Section>
+
+      <Section label="Exam date" note="Counted in your own timezone.">
+        <div className="space-y-8">
+          {courses
+            .filter((c) => c.examDateIso)
+            .map((course) => (
+              <div key={course.id}>
+                <p className="heading mb-2 text-xl">{course.name}</p>
+                <ExamCountdown
+                  examDateIso={course.examDateIso!}
+                  total={course.coverage.total}
+                  tried={course.coverage.tried}
+                  newPerDay={course.coverage.newPerDayLast7}
+                  cramOn={cram}
+                  changeHref={`/courses/${course.slug}#exam-date`}
+                />
+              </div>
+            ))}
+          {courses.some((c) => !c.examDateIso) ? (
+            <ul className="space-y-2 text-sm">
+              {courses
+                .filter((c) => !c.examDateIso)
+                .map((course) => (
+                  <li key={course.id}>
+                    <Link
+                      href={`/courses/${course.slug}#exam-date`}
+                      className="font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
+                    >
+                      Set the exam date for {course.name}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          ) : null}
+        </div>
       </Section>
 
       {lastUnit ? (

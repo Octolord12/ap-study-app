@@ -46,6 +46,7 @@ export default function PrivacyPage() {
             "When you sign up: your name, a username, your email address and a password. The password is stored only as a salted hash, so nobody can read it.",
             "As you study: the questions you answer and the choice you made, how long each answer took, and your XP, level, streak, badges, boss battle results and timed exams.",
             "Free-response work: the answers you type and the points you give yourself.",
+            "If you set an exam date for a course: that date.",
             "If you use friends or classes: who your friends are, and the classes you created or joined.",
             "If you join the waitlist: your email address, and nothing else. It is used once, to tell you when a new subject is ready.",
             "Our host keeps ordinary server logs, which include things like your IP address and the pages you request.",

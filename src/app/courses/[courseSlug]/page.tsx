@@ -6,6 +6,11 @@ import { getDb } from "@/lib/db";
 import { getCourseTree } from "@/lib/study/queries";
 import { enrollInCourse } from "@/lib/study/actions";
 import { computeUnitMastery } from "@/lib/study/mastery";
+import { getCourseCoverage } from "@/lib/study/coverage";
+import { isCramModeOn } from "@/lib/study/cram-mode";
+import { toIsoDate } from "@/lib/study/exam-plan";
+import { ExamCountdown } from "@/components/study/exam-countdown";
+import { ExamDateForm } from "@/components/study/exam-date-form";
 import { describeExamFormat, formatDuration } from "@/lib/content/exam-format";
 import { Button } from "@/components/ui/button";
 import { Bubbles, WeightBar } from "@/components/ui/meter";
@@ -31,6 +36,8 @@ export default async function CoursePage({ params }: { params: Promise<{ courseS
       select: { questionId: true, correct: true, createdAt: true, question: { select: { unitId: true } } },
     }),
   ]);
+  const [coverage, cramOn] = enrollment ? await Promise.all([getCourseCoverage(userId, course.id), isCramModeOn(userId)]) : [null, false];
+  const examDateIso = enrollment?.examDate ? toIsoDate(enrollment.examDate, "utc") : null;
   const masteryByUnitId = new Map(
     computeUnitMastery(
       attempts.map((a) => ({ questionId: a.questionId, unitId: a.question.unitId, correct: a.correct, createdAt: a.createdAt })),
@@ -60,6 +67,21 @@ export default async function CoursePage({ params }: { params: Promise<{ courseS
           )
         }
       />
+
+      {enrollment && coverage ? (
+        <Section label="Exam date" note="Set it and the app paces you.">
+          <div id="exam-date" className="grid gap-x-12 gap-y-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
+            <ExamDateForm courseId={course.id} currentIso={examDateIso} />
+            {examDateIso ? (
+              <ExamCountdown examDateIso={examDateIso} total={coverage.total} tried={coverage.tried} newPerDay={coverage.newPerDayLast7} cramOn={cramOn} />
+            ) : (
+              <p className="reading max-w-[48ch]">
+                With a date, this page and Today show the days left, how many new questions a day it takes to try them all, and whether you are on pace.
+              </p>
+            )}
+          </div>
+        </Section>
+      ) : null}
 
       <Section label="Units" note="Weight is the share of the exam each unit makes up.">
         <RuledList>
