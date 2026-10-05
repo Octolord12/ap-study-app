@@ -998,7 +998,7 @@ status is already sent) with the not-found UI and a noindex meta, e.g.
 `/teacher` for a non-owner and `/admin/review` for a non-admin. The page
 content is not exposed.
 
-### Waitlist, "What's next", testimonials
+### Waitlist, "Coming soon", testimonials
 
 - `components/marketing/{coming-soon,waitlist-form,testimonials}.tsx`,
   `lib/marketing/{actions,waitlist,testimonials}.ts`. `joinWaitlist` is a
@@ -1010,7 +1010,10 @@ content is not exposed.
   a Vercel Firewall rate-limit rule on `POST /`.
 - The waitlist collects emails and there is no age gate: see the COPPA note in
   the Social section before promoting this to under-13s.
-- Subjects listed under "What's next" are the owner's examples (AP U.S. History,
+- The "Coming soon" section (`ComingSoon`) is shown in two places: the bottom of
+  the signed-out landing page and the bottom of the signed-in Today screen (both
+  its first-course picker and its main view), so its copy must not refer to
+  anything else on the page. Subjects listed in it are the owner's examples (AP U.S. History,
   AP Biology, AP Calculus BC), marked "Planned", no dates.
 - **Testimonials ship empty on purpose.** `lib/marketing/testimonials.ts` is an
   empty list and the section renders nothing until it has real quotes, added
@@ -1241,7 +1244,7 @@ in app logic — updating them should be a data edit.
       set; new landing page with a working sample question and a Today screen
       at `/`. See "Visual design system" above.
 - [x] **Post-launch: growth features.** Landing page now ships finished HTML
-      (root skeleton removed), waitlist + "What's next" + an empty-by-design
+      (root skeleton removed), waitlist + "Coming soon" + an empty-by-design
       testimonials scaffold, Cram Mode, proficiency-rated mastery bars, boss
       battle titles (and a missing boss-result toast fixed), and a `/teacher`
       skeleton for class owners. See "Post-launch growth features" above.

@@ -3,6 +3,7 @@ import { getUserGamificationStats } from "@/lib/gamification/queries";
 import { getTodayOverview } from "@/lib/study/today";
 import { isCramModeOn } from "@/lib/study/cram-mode";
 import { CramNotice } from "@/components/study/cram-toggle";
+import { ComingSoon } from "@/components/marketing/coming-soon";
 import { listCourses } from "@/lib/study/queries";
 import { Button } from "@/components/ui/button";
 import { XpBar } from "@/components/ui/meter";
@@ -39,6 +40,7 @@ export async function TodayScreen({ userId }: { userId: string }) {
             ))}
           </RuledList>
         </Section>
+        <ComingSoon />
       </Page>
     );
   }
@@ -131,6 +133,8 @@ export async function TodayScreen({ userId }: { userId: string }) {
           </div>
         </div>
       </Section>
+
+      <ComingSoon />
     </Page>
   );
 }
