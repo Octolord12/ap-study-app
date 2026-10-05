@@ -3,17 +3,22 @@
 import { useActionState } from "react";
 import Link from "next/link";
 import { loginAction } from "@/lib/auth/actions";
+import type { LoginFormState } from "@/lib/auth/schema";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 
 export function LoginForm() {
-  const [error, formAction, isPending] = useActionState(loginAction, undefined);
+  // `values` refills the email after a failed login: React empties an
+  // uncontrolled form when its action finishes. The password is never sent back.
+  // The field's key is its refilled value: Base UI warns if the default of a
+  // mounted input changes, so a new value mounts a fresh input instead.
+  const [{ error, values }, formAction, isPending] = useActionState(loginAction, {} as LoginFormState);
 
   return (
     <form action={formAction} className="max-w-sm space-y-5">
       <Field id="email" label="Email">
-        <Input id="email" name="email" type="email" required autoComplete="email" />
+        <Input key={values?.email ?? ""} id="email" name="email" type="email" required autoComplete="email" defaultValue={values?.email} />
       </Field>
       <Field id="password" label="Password">
         <Input id="password" name="password" type="password" required autoComplete="current-password" />

@@ -48,19 +48,19 @@ describe("signUpAction", () => {
   beforeEach(() => vi.clearAllMocks());
 
   it("creates no account, and signs nobody in, when the age box is not checked", async () => {
-    const result = await signUpAction(undefined, form({ ...valid }));
-    expect(result).toBe("You must be 13 or older to create an account.");
+    const result = await signUpAction({}, form({ ...valid }));
+    expect(result.error).toBe("You must be 13 or older to create an account.");
     expect(mocks.db.user.create).not.toHaveBeenCalled();
     expect(mocks.signIn).not.toHaveBeenCalled();
   });
 
   it("is not fooled by a different value for the field", async () => {
-    await signUpAction(undefined, form({ ...valid, ageConfirmed: "off" }));
+    await signUpAction({}, form({ ...valid, ageConfirmed: "off" }));
     expect(mocks.db.user.create).not.toHaveBeenCalled();
   });
 
   it("creates the account when the age is confirmed", async () => {
-    await signUpAction(undefined, form({ ...valid, ageConfirmed: "yes" }));
+    await signUpAction({}, form({ ...valid, ageConfirmed: "yes" }));
     expect(mocks.db.user.create).toHaveBeenCalledTimes(1);
     expect(mocks.db.user.create).toHaveBeenCalledWith({
       data: expect.objectContaining({ email: "test@example.com", username: "test_student" }),
@@ -69,7 +69,7 @@ describe("signUpAction", () => {
   });
 
   it("does not store the age confirmation on the user", async () => {
-    await signUpAction(undefined, form({ ...valid, ageConfirmed: "yes" }));
+    await signUpAction({}, form({ ...valid, ageConfirmed: "yes" }));
     const data = (mocks.db.user.create.mock.calls[0] as unknown as [{ data: Record<string, unknown> }])[0].data;
     expect(Object.keys(data)).not.toContain("ageConfirmed");
   });

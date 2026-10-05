@@ -25,3 +25,17 @@ export const LoginSchema = z.object({
 
 export type SignUpInput = z.infer<typeof SignUpSchema>;
 export type LoginInput = z.infer<typeof LoginSchema>;
+
+// What the auth actions hand back to their forms. After a rejected submission the
+// form needs the values again: React empties an uncontrolled <form action>
+// once its action finishes, so without them everything typed would vanish. The
+// password is deliberately never part of this.
+export interface SignUpFormState {
+  error?: string;
+  values?: { displayName: string; username: string; email: string; ageConfirmed: boolean };
+}
+
+export interface LoginFormState {
+  error?: string;
+  values?: { email: string };
+}

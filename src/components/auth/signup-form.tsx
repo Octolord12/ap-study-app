@@ -3,30 +3,35 @@
 import { useActionState } from "react";
 import Link from "next/link";
 import { signUpAction } from "@/lib/auth/actions";
+import type { SignUpFormState } from "@/lib/auth/schema";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { MINIMUM_AGE } from "@/lib/age";
 
 export function SignupForm() {
-  const [error, formAction, isPending] = useActionState(signUpAction, undefined);
+  // `values` refills the fields after a rejected submit: React empties an
+  // uncontrolled form when its action finishes, and resets to these defaults.
+  // Each field's key is its refilled value: Base UI warns if the default of a
+  // mounted input changes, so a new value mounts a fresh input instead.
+  const [{ error, values }, formAction, isPending] = useActionState(signUpAction, {} as SignUpFormState);
 
   return (
     <form action={formAction} className="max-w-sm space-y-5">
       <Field id="displayName" label="Your name">
-        <Input id="displayName" name="displayName" required autoComplete="name" />
+        <Input key={values?.displayName ?? ""} id="displayName" name="displayName" required autoComplete="name" defaultValue={values?.displayName} />
       </Field>
       <Field id="username" label="Username" hint="3 to 24 letters, numbers or underscores. Friends and leaderboards show this, never your name.">
-        <Input id="username" name="username" required autoComplete="username" minLength={3} maxLength={24} pattern="[a-zA-Z0-9_]+" />
+        <Input key={values?.username ?? ""} id="username" name="username" required autoComplete="username" minLength={3} maxLength={24} pattern="[a-zA-Z0-9_]+" defaultValue={values?.username} />
       </Field>
       <Field id="email" label="Email">
-        <Input id="email" name="email" type="email" required autoComplete="email" />
+        <Input key={values?.email ?? ""} id="email" name="email" type="email" required autoComplete="email" defaultValue={values?.email} />
       </Field>
       <Field id="password" label="Password" hint="At least 8 characters.">
         <Input id="password" name="password" type="password" required autoComplete="new-password" minLength={8} />
       </Field>
       <label className="flex items-center gap-3 text-sm font-medium">
-        <input type="checkbox" className="check" name="ageConfirmed" value="yes" required />
+        <input type="checkbox" className="check" name="ageConfirmed" value="yes" required defaultChecked={values?.ageConfirmed} />
         <span>I am {MINIMUM_AGE} or older.</span>
       </label>
       {error ? (

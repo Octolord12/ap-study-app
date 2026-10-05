@@ -1212,6 +1212,21 @@ answers are refused, a conquered unit stays conquered).
   test (vitest runs without globals, so it wasn't happening, and `getBy*` found
   duplicates left over from earlier renders in the same file).
 
+### Auth forms keep what you typed after a rejected submit
+
+React 19 empties an uncontrolled `<form action={fn}>` when its action finishes, so
+a rejected signup or failed login used to wipe every field. Now `signUpAction` and
+`loginAction` return `{ error, values }` (`SignUpFormState` / `LoginFormState` in
+`lib/auth/schema.ts`), and the forms use `values` as each field's `defaultValue`, so
+the automatic reset puts the same text back. **The password is never part of
+`values`** (a test asserts the response doesn't contain it), so it is emptied on
+every error, as it should be. Echoed values are capped at 254 characters. Each
+refilled `<Input>` has `key={its value}`: Base UI's `Input` logs a dev-console
+error if the `defaultValue` of an already-mounted field changes, and a changed key
+mounts a fresh field instead. Keep both when adding fields to these forms.
+`tests/auth-forms.test.tsx` runs the real forms through React's reset (it fails
+without the fix) and `tests/auth-form-state.test.ts` covers the actions.
+
 ## Verified AP course info (2026-27)
 
 Exam formats change almost every year — 3 of our 4 launch courses have had a
@@ -1374,11 +1389,6 @@ in app logic — updating them should be a data edit.
   owner raises cheating (leaderboards, titles, classes) as a problem. Browsers
   can't be stopped from showing page data, so "block dev tools" tricks are not an
   option either.
-- **Auth forms clear what you typed after a server-side error.** React 19 resets an
-  uncontrolled `<form action={fn}>` when the action finishes, so a rejected signup
-  ("That username is taken", the age message) or a failed login empties the fields.
-  Pre-existing, seen while testing the age check. Fix by returning the submitted
-  values from the action and using them as `defaultValue`s.
 - **Dev/testing gotchas.** (1) This folder produces duplicate "`<name> 2`"
   files (seen in `.next/` and `node_modules/next/dist/docs/`): Turbopack then
   refuses to start ("Unexpected file in persistence directory") and `tsc` reports
