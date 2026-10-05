@@ -9,8 +9,18 @@ describe("Testimonials", () => {
     expect(container).toBeEmptyDOMElement();
   });
 
-  it("ships with no testimonials until real ones are added", () => {
-    expect(TESTIMONIALS).toEqual([]);
+  it("only ships testimonials that have a quote and a name", () => {
+    for (const t of TESTIMONIALS) {
+      expect(t.quote.trim().length).toBeGreaterThan(0);
+      expect(t.name.trim().length).toBeGreaterThan(0);
+    }
+  });
+
+  it("shows a real quote exactly as given, with no invented score or course", () => {
+    const quote = TESTIMONIALS.find((t) => t.name === "Phu Vo");
+    expect(quote?.quote).toBe("Wait this is actually tuff. I actually might use it later.");
+    expect(quote?.apScore).toBeUndefined();
+    expect(quote?.course).toBeUndefined();
   });
 
   it("shows the quote and attribution, and the score only when one is given", () => {
