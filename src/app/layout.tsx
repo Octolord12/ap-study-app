@@ -35,11 +35,11 @@ const plexMono = IBM_Plex_Mono({
 
 const SITE_NAME = "AP Study App";
 const DESCRIPTION =
-  "Practice for AP Calculus AB, Physics 1, Computer Science A and World History. Multiple-choice questions that explain every answer choice, timed exams, and free-response practice.";
+  "Practice for AP Calculus AB, Physics 1, Computer Science A and World History. Multiple-choice questions that analyze every answer choice, timed exams, and free-response practice.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://ap-study-app-pi.vercel.app"),
-  title: { default: `${SITE_NAME}: AP practice that explains the wrong answers`, template: `%s · ${SITE_NAME}` },
+  title: { default: `${SITE_NAME}: AP practice that analyzes incorrect answers`, template: `%s · ${SITE_NAME}` },
   description: DESCRIPTION,
   applicationName: SITE_NAME,
   openGraph: {
