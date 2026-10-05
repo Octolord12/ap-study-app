@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { feedbackMailto, privacyMailto } from "@/lib/site-contact";
+import { feedbackMailto, privacyMailto, reportMailto } from "@/lib/site-contact";
 
 function parts(url: string) {
   const [scheme, rest] = url.split(":");
@@ -29,5 +29,24 @@ describe("contact links", () => {
       expect(parts(url).query).not.toContain("+");
       expect(parts(url).query).toContain("%20");
     }
+  });
+});
+
+describe("per-item report link", () => {
+  it("puts the question's id in the subject and the body, so the report says which one", () => {
+    const r = parts(reportMailto("question", "ap-calc-u1-mcq-4"));
+    expect(r.address).toBe("virajrpoddar@gmail.com");
+    expect(r.subject).toBe("AP Study App: problem with question ap-calc-u1-mcq-4");
+    expect(r.body).toContain("Question ID: ap-calc-u1-mcq-4");
+  });
+
+  it("works for free-response prompts too", () => {
+    const r = parts(reportMailto("free-response prompt", "ap-calc-u1-frq-1"));
+    expect(r.subject).toBe("AP Study App: problem with free-response prompt ap-calc-u1-frq-1");
+    expect(r.body).toContain("Prompt ID: ap-calc-u1-frq-1");
+  });
+
+  it("encodes spaces as %20", () => {
+    expect(parts(reportMailto("question", "x")).query).not.toContain("+");
   });
 });

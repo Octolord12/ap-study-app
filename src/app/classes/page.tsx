@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
+import { SOCIAL_SAFETY_NOTE } from "@/lib/social/copy";
 import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
 
 export const metadata: Metadata = { title: "Classes" };
@@ -25,7 +26,7 @@ export default async function ClassesPage({ searchParams }: { searchParams: Prom
 
   return (
     <Page>
-      <PageHeader eyebrow="Classes" title="Classes" description="A class is a shared leaderboard for a group, joined with a six-character invite code." />
+      <PageHeader eyebrow="Classes" title="Classes" description={`A class is a shared leaderboard for a group, joined with a six-character invite code. ${SOCIAL_SAFETY_NOTE}`} />
 
       <Section label="Your classes">
         {classes.length > 0 ? (

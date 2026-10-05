@@ -7,6 +7,7 @@ import { FrqSelfGrade } from "@/components/study/frq-self-grade";
 import { renderRubric } from "@/lib/study/render-rubric";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import { Html } from "@/components/ui/html";
+import { ReportProblem } from "@/components/study/report-problem";
 import { Page } from "@/components/ui/page";
 import { Sheet } from "@/components/ui/sheet";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -49,6 +50,8 @@ export default async function FrqPracticePage({
           >
             Back to unit
           </Link>
+          <br />
+          <ReportProblem id={frq.id} kind="free-response prompt" className="!text-xs" />
         </div>
 
         <div className="min-w-0 space-y-6">

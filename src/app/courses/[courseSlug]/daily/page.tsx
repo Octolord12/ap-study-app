@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { hasCompletedDailyChallengeToday, pickDailyChallengeQuestionIds } from "@/lib/study/queries";
@@ -83,21 +83,7 @@ export default async function DailyChallengePage({ params }: { params: Promise<{
     backLabel: "Back to practice",
   });
 
-  return (
-    <Page>
-      {header}
-      <Section>
-        <ActionRow
-          action={
-            <Button render={<Link href={`/courses/${course.slug}/quiz?${quizParams.toString()}`} />} nativeButton={false} size="lg">
-              Start today&apos;s set
-            </Button>
-          }
-        >
-          <p className="numeral text-5xl">{ids.length}</p>
-          <p className="reading mt-2">questions, with anything due for review first.</p>
-        </ActionRow>
-      </Section>
-    </Page>
-  );
+  // "Start" goes straight into the questions: a page that only said "5 questions"
+  // and asked for a second click added nothing.
+  redirect(`/courses/${course.slug}/quiz?${quizParams.toString()}`);
 }

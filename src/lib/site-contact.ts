@@ -20,3 +20,13 @@ export function feedbackMailto(): string {
 export function privacyMailto(): string {
   return mailto("AP Study App: privacy question", "What would you like to ask or have changed?\n\n");
 }
+
+// A mistake report about one question or free-response prompt. The id is in the
+// subject and the body so it is clear which one, without the student having to
+// describe where it was; it contains nothing personal.
+export function reportMailto(kind: "question" | "free-response prompt", id: string): string {
+  return mailto(
+    `AP Study App: problem with ${kind} ${id}`,
+    `What is wrong with it?\n\n\n(Please leave the line below, it tells us which one.)\n${kind === "question" ? "Question" : "Prompt"} ID: ${id}\n`,
+  );
+}

@@ -3,6 +3,7 @@ import type { RenderedQuestion } from "@/components/study/quiz-runner";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import { ChoiceList, ChoiceRow } from "@/components/ui/choice";
 import { Html } from "@/components/ui/html";
+import { ReportProblem } from "@/components/study/report-problem";
 import { Sheet } from "@/components/ui/sheet";
 
 // Static, always-revealed version of the quiz runner's per-question review --
@@ -48,12 +49,15 @@ export function ExamMcqReview({
             <div className="mt-5 border-t-2 border-current pt-4">
               <p className="eyebrow !text-current">Explanation</p>
               <Html html={question.explanationHtml} size="sm" className="mt-1.5" />
-              <Link
-                href={question.conceptHref}
-                className="mt-3 inline-block text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
-              >
-                Review this concept
-              </Link>
+              <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2">
+                <Link
+                  href={question.conceptHref}
+                  className="text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
+                >
+                  Review this concept
+                </Link>
+                <ReportProblem id={question.id} />
+              </div>
             </div>
           </Sheet>
         );

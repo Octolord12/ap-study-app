@@ -6,6 +6,7 @@ import { Ledger } from "@/components/ui/ledger";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { SOCIAL_SAFETY_NOTE } from "@/lib/social/copy";
 import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
 
 export const metadata: Metadata = { title: "Friends" };
@@ -34,7 +35,7 @@ export default async function FriendsPage({
 
   return (
     <Page>
-      <PageHeader eyebrow="Friends" title="Friends" description="See where you stand against people you know. Everyone appears by username." />
+      <PageHeader eyebrow="Friends" title="Friends" description={`See where you stand against people you know. ${SOCIAL_SAFETY_NOTE}`} />
 
       <Section label="Add a friend">
         <form action={sendFriendRequest} className="flex max-w-md flex-wrap items-end gap-3">

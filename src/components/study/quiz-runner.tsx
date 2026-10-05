@@ -7,6 +7,7 @@ import { recordAttempt } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
 import { Choice, ChoiceList } from "@/components/ui/choice";
 import { Html } from "@/components/ui/html";
+import { ReportProblem } from "@/components/study/report-problem";
 import { Sheet } from "@/components/ui/sheet";
 import { hasReward, type Reward } from "@/components/gamification/reward-toast";
 import { QuizProgress } from "@/components/study/quiz-progress";
@@ -174,12 +175,15 @@ export function QuizRunner({
             <div className="mt-6 border-t-2 border-current pt-4">
               <p className="eyebrow !text-current">Explanation</p>
               <Html html={question.explanationHtml} size="sm" className="mt-1.5" />
-              <Link
-                href={question.conceptHref}
-                className="mt-3 inline-block text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
-              >
-                Review this concept
-              </Link>
+              <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2">
+                <Link
+                  href={question.conceptHref}
+                  className="text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
+                >
+                  Review this concept
+                </Link>
+                <ReportProblem id={question.id} />
+              </div>
             </div>
           ) : null}
 
