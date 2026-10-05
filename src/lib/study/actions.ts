@@ -12,6 +12,8 @@ import { grantXpForActivity } from "@/lib/gamification/activity";
 import { xpForCorrectAnswer, xpForFrqPoints } from "@/lib/gamification/xp";
 import { checkAndAwardBadges, type BadgeDefinition } from "@/lib/gamification/badges";
 import { unitConquerorTitle } from "@/lib/gamification/titles";
+import { hasPassedBossBattle, scoreBossBattle } from "@/lib/study/boss-battle-rules";
+import { bossBattleSecret, verifyBossBattle } from "@/lib/study/boss-battle-token";
 import type { AttemptSource, Difficulty } from "@/generated/prisma/client";
 import type { Course as ContentCourse } from "@/lib/content/schema";
 
@@ -346,50 +348,67 @@ export async function submitExamAttempt(input: SubmitExamInput): Promise<void> {
   redirect(`/courses/${input.courseSlug}/exam/${attempt.id}/results`);
 }
 
-const BOSS_BATTLE_PASS_THRESHOLD = 0.7;
+export type SubmitBossBattleResult =
+  | {
+      status: "ok";
+      passed: boolean;
+      correctCount: number;
+      total: number;
+      newBadges: BadgeDefinition[];
+      // Set only the first time this unit is conquered, not on a rematch.
+      newTitle: { title: string; unitNumber: number } | null;
+    }
+  | { status: "expired" | "invalid" };
 
-interface SubmitBossBattleResult {
-  passed: boolean;
-  newBadges: BadgeDefinition[];
-  // Set only the first time this unit is conquered, not on a rematch.
-  newTitle: { title: string; unitNumber: number } | null;
-}
-
-// The per-question answers were already scored via recordAttempt as the
-// student went (same XP/spaced-repetition path as any other quiz) -- this
-// just records the unit-level pass/fail once the battle's over.
-export async function submitBossBattle(input: {
-  unitId: string;
-  correctCount: number;
-  total: number;
-}): Promise<SubmitBossBattleResult> {
+// The per-question answers were already graded on the server by recordAttempt
+// as the student went (same XP/spaced-repetition path as any other quiz). This
+// records the unit-level result once the battle's over, and the result is
+// *counted here from those stored attempts*, never taken from the browser: the
+// token (signed when the boss page loaded) fixes whose battle it is and when it
+// started, and only answers given since then count. A battle that wasn't played
+// scores 0, whatever the client claims.
+export async function submitBossBattle(input: { battleToken: string }): Promise<SubmitBossBattleResult> {
   const userId = await requireUserId();
   const db = getDb();
 
-  const passed = input.total > 0 && input.correctCount / input.total >= BOSS_BATTLE_PASS_THRESHOLD;
+  const check = verifyBossBattle(input.battleToken, bossBattleSecret());
+  if (!check.ok) return { status: check.reason };
+  const { unitId, startedAtMs } = check.start;
+  if (check.start.userId !== userId) return { status: "invalid" };
+
+  const questions = await db.question.findMany({ where: { unitId }, select: { id: true } });
+  const questionIds = questions.map((q) => q.id);
+  const attempts = await db.questionAttempt.findMany({
+    where: { userId, questionId: { in: questionIds }, createdAt: { gte: new Date(startedAtMs) } },
+    select: { questionId: true, correct: true, createdAt: true },
+  });
+
+  const total = questionIds.length;
+  const correctCount = scoreBossBattle(questionIds, attempts, startedAtMs);
+  const passed = hasPassedBossBattle(correctCount, total);
 
   const existing = await db.bossBattleAttempt.findUnique({
-    where: { userId_unitId: { userId, unitId: input.unitId } },
+    where: { userId_unitId: { userId, unitId } },
   });
 
   await db.bossBattleAttempt.upsert({
-    where: { userId_unitId: { userId, unitId: input.unitId } },
-    create: { userId, unitId: input.unitId, passed, attemptsCount: 1, bestScore: input.correctCount },
+    where: { userId_unitId: { userId, unitId } },
+    create: { userId, unitId, passed, attemptsCount: 1, bestScore: correctCount },
     update: {
       passed: passed || (existing?.passed ?? false), // once conquered, stays conquered
       attemptsCount: (existing?.attemptsCount ?? 0) + 1,
-      bestScore: Math.max(existing?.bestScore ?? 0, input.correctCount),
+      bestScore: Math.max(existing?.bestScore ?? 0, correctCount),
     },
   });
 
   const newBadges = passed ? await checkAndAwardBadges(userId) : [];
 
-  let newTitle: SubmitBossBattleResult["newTitle"] = null;
+  let newTitle: { title: string; unitNumber: number } | null = null;
   if (passed && !existing?.passed) {
-    const unit = await db.unit.findUnique({ where: { id: input.unitId }, select: { order: true } });
+    const unit = await db.unit.findUnique({ where: { id: unitId }, select: { order: true } });
     if (unit) newTitle = { title: unitConquerorTitle(unit.order), unitNumber: unit.order };
   }
 
   revalidatePath("/dashboard");
-  return { passed, newBadges, newTitle };
+  return { status: "ok", passed, correctCount, total, newBadges, newTitle };
 }

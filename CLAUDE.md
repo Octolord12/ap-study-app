@@ -260,7 +260,9 @@ DB-touching entry point:
   question (same XP/streak/badge path as any quiz, `source: "QUIZ"` -- no
   dedicated `AttemptSource` variant) and add `submitBossBattle` on completion,
   which upserts `BossBattleAttempt` (pass threshold: 70% correct; once
-  conquered, `passed` never reverts even if a later attempt does worse).
+  conquered, `passed` never reverts even if a later attempt does worse). **The
+  score is counted on the server, never sent by the browser** -- see "Boss
+  battle scoring is server-side" below.
 
 `RewardToast` (`src/components/gamification/reward-toast.tsx`) is the shared
 UI for all of this -- XP/level-up/badge feedback, sound, and confetti in one
@@ -1015,12 +1017,15 @@ content is not exposed.
   its first-course picker and its main view), so its copy must not refer to
   anything else on the page. Subjects listed in it are the owner's examples (AP U.S. History,
   AP Biology, AP Calculus BC), marked "Planned", no dates.
-- **Testimonials ship empty on purpose.** `lib/marketing/testimonials.ts` is an
-  empty list and the section renders nothing until it has real quotes, added
-  with the student's (and a parent's, if under 18) permission, worded as they
-  wrote them. No invented testimonials: nobody has scored anything with this app
-  yet, and fabricated ones are deceptive (and the FTC's 2024 rule covers them).
-  `tests/testimonials.test.tsx` asserts the list is empty.
+- **Testimonials are real quotes only.** `lib/marketing/testimonials.ts` renders
+  nothing while empty. It started empty, and now holds one quote the owner
+  supplied (Phu Vo, 2026-10-04, verbatim, no course or score because none was
+  given). Add more only with the student's (and a parent's, if under 18)
+  permission, worded as they wrote them, and never add an AP score or course
+  the student didn't state. No invented testimonials: nobody had scored anything
+  with this app, and fabricated ones are deceptive (and the FTC's 2024 rule
+  covers them). `tests/testimonials.test.tsx` checks shape, and that this quote
+  has no invented score or course.
 
 ### Cram Mode
 
@@ -1125,6 +1130,46 @@ questions, so always picking A would have scored almost perfectly.
   answer across slots, remap rules), `tests/render-quiz-shuffle.test.ts` (label,
   correctness and text stay together; the right answer reaches every slot),
   `tests/choice.test.tsx` (shown letter vs submitted label).
+
+## Boss battle scoring is server-side
+
+`submitBossBattle` used to take `{ unitId, correctCount, total }` from the
+browser, so a crafted request could claim a perfect score and win the battle
+(`passed`, `bestScore`, the Boss Slayer badge and the unit title all followed
+from those two numbers). Now it takes only a **signed battle token** and counts
+the result itself:
+
+1. When the boss page renders, `startBossBattle(userId, unitId)`
+   (`lib/study/boss-battle-token.ts`) returns an HMAC-signed token holding the
+   user, the unit and the start time. The secret is `AUTH_SECRET`, domain-separated
+   (`boss-battle:v1:`) from Auth.js's use of it. Tokens expire after 4 hours.
+   The page therefore **needs `AUTH_SECRET` at runtime** (it is set in Vercel and
+   in `.env.local`); without it the boss page throws.
+2. Each answer is already graded server-side by `recordAttempt`. On submit the
+   server verifies the token (and that it belongs to the signed-in user), takes
+   the unit's questions from the database, and counts those whose *latest*
+   attempt **at or after the start time** is correct (`scoreBossBattle`,
+   `lib/study/boss-battle-rules.ts`, pure). Earlier practice doesn't count, an
+   unanswered question counts as not correct, and nothing the client says about
+   its own score is read. `total` is the unit's question count.
+3. The result screen shows the *server's* `correctCount` / `total`. A bad or
+   expired token returns `{ status: "invalid" | "expired" }` and the runner offers
+   "Start a new battle"; the answers were still saved as ordinary practice.
+
+The runner keeps the token in `useState` so a re-render with a newer token can't
+move the start time mid-battle. The pass threshold is integer math
+(`hasPassedBossBattle`), not `correct / total >= 0.7`.
+
+**What this does not fix**: a student can still read the correct answers out of
+the page payload (see "The correct answer is in the page payload" in known
+issues) and answer correctly through the real action. That costs answering every
+question, and each answer is graded and recorded; it is a different, larger
+problem than forging a score.
+
+Tests: `tests/boss-battle.test.ts` (rule, scoring, token tampering/expiry/skew) and
+`tests/submit-boss-battle.test.ts` (the action with a faked DB: the old
+`{ correctCount: 30, total: 30 }` forgery scores 0, other users' tokens and
+answers are refused, a conquered unit stays conquered).
 
 ## Verified AP course info (2026-27)
 
@@ -1283,11 +1328,6 @@ in app logic — updating them should be a data edit.
   to reveal instantly), so someone who opens the browser's dev tools can read it.
   Shuffling stops position-guessing, not inspection. Pre-existing; fixing it
   means asking the server to reveal after each answer.
-- **Boss battle pass/fail is decided from a client-sent `correctCount`.**
-  `submitBossBattle` trusts `correctCount`/`total` from the browser, so the
-  `passed` flag (and now the title derived from it) can be forged by a crafted
-  request. XP is unaffected (computed server-side from stored attempts). Fix by
-  deriving the score from the stored `QuestionAttempt` rows for that battle.
 - **Dev/testing gotchas.** (1) This folder produces duplicate "`<name> 2`"
   files (seen in `.next/` and `node_modules/next/dist/docs/`): Turbopack then
   refuses to start ("Unexpected file in persistence directory") and `tsc` reports

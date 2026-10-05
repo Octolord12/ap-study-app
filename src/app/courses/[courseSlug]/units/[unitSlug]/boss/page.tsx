@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getUnitWithQuestions } from "@/lib/study/queries";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
+import { startBossBattle } from "@/lib/study/boss-battle-token";
 import { BossBattleRunner } from "@/components/study/boss-battle-runner";
 import { Page } from "@/components/ui/page";
 
@@ -13,7 +14,7 @@ export default async function BossBattlePage({
 }: {
   params: Promise<{ courseSlug: string; unitSlug: string }>;
 }) {
-  await requireUserId();
+  const userId = await requireUserId();
   const { courseSlug, unitSlug } = await params;
 
   const result = await getUnitWithQuestions(courseSlug, unitSlug);
@@ -29,7 +30,7 @@ export default async function BossBattlePage({
   return (
     <Page>
       <BossBattleRunner
-        unitId={unit.id}
+        battleToken={startBossBattle(userId, unit.id)}
         unitName={unit.name}
         courseSlug={course.slug}
         unitSlug={unit.slug}

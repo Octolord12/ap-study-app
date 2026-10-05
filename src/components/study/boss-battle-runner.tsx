@@ -15,17 +15,19 @@ import { playBossDefeatedSound, playBossHitSound } from "@/lib/gamification/soun
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
-
-const PASS_THRESHOLD = 0.7;
+import { bossBattleNeeded } from "@/lib/study/boss-battle-rules";
 
 export function BossBattleRunner({
-  unitId,
+  battleToken,
   unitName,
   courseSlug,
   unitSlug,
   questions,
 }: {
-  unitId: string;
+  // Signed by the server when this page loaded; says whose battle this is and
+  // when it started. The score is counted server-side from the answers recorded
+  // since then, so nothing about the result is sent from here.
+  battleToken: string;
   unitName: string;
   courseSlug: string;
   unitSlug: string;
@@ -39,7 +41,15 @@ export function BossBattleRunner({
   const [startedAt, setStartedAt] = useState(() => Date.now());
   const [reward, setReward] = useState<Reward | null>(null);
   const [rewardKey, setRewardKey] = useState(0);
-  const [battleResult, setBattleResult] = useState<{ passed: boolean; newTitle: Reward["newTitle"] } | null>(null);
+  // Kept in state so a re-render with a newer token can't move the start time mid-battle.
+  const [token] = useState(battleToken);
+  const [battleResult, setBattleResult] = useState<{
+    passed: boolean;
+    correctCount: number;
+    total: number;
+    newTitle: Reward["newTitle"];
+  } | null>(null);
+  const [submitError, setSubmitError] = useState<"expired" | "invalid" | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
   const total = questions.length;
@@ -87,8 +97,14 @@ export function BossBattleRunner({
     }
 
     setSubmitting(true);
-    const result = await submitBossBattle({ unitId, correctCount, total });
-    setBattleResult({ passed: result.passed, newTitle: result.newTitle });
+    setSubmitError(null);
+    const result = await submitBossBattle({ battleToken: token });
+    if (result.status !== "ok") {
+      setSubmitError(result.status);
+      setSubmitting(false);
+      return;
+    }
+    setBattleResult({ passed: result.passed, correctCount: result.correctCount, total: result.total, newTitle: result.newTitle });
     if (result.passed) playBossDefeatedSound();
     if (result.newBadges.length > 0 || result.newTitle) {
       setReward({ xpAwarded: 0, leveledUp: false, newLevel: 0, newBadges: result.newBadges, newTitle: result.newTitle });
@@ -115,10 +131,10 @@ export function BossBattleRunner({
           </h2>
         </div>
         <p className="numeral mt-6 text-5xl">
-          {correctCount} / {total}
+          {battleResult.correctCount} / {battleResult.total}
         </p>
         <p className="reading mt-1 text-lg">
-          correct{!battleResult.passed ? `. You need ${Math.ceil(total * PASS_THRESHOLD)} to win.` : "."}
+          correct{!battleResult.passed ? `. You need ${bossBattleNeeded(battleResult.total)} to win.` : "."}
         </p>
         {battleResult.newTitle ? (
           <p className="mt-5 flex flex-wrap items-baseline gap-x-3">
@@ -207,6 +223,19 @@ export function BossBattleRunner({
               ))}
             </ChoiceList>
           </div>
+
+          {submitError ? (
+            <div role="alert" className="mt-6 border-2 border-foreground p-4">
+              <p className="text-sm font-semibold">
+                {submitError === "expired"
+                  ? "This battle was open too long to count. Your answers were saved as practice."
+                  : "This battle couldn't be submitted. Your answers were saved as practice."}
+              </p>
+              <Button render={<Link href={`/courses/${courseSlug}/units/${unitSlug}/boss`} />} nativeButton={false} className="mt-3">
+                Start a new battle
+              </Button>
+            </div>
+          ) : null}
 
           <div className="mt-6 flex justify-end">
             {!revealed ? (
