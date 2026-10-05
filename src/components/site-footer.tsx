@@ -16,6 +16,9 @@ export function SiteFooter() {
           <a href={feedbackMailto()} className={LINK}>
             Report a mistake or send a suggestion
           </a>
+          <Link href="/about" className={LINK}>
+            About
+          </Link>
           <Link href="/privacy" className={LINK}>
             Privacy
           </Link>

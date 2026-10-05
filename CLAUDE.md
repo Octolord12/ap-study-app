@@ -1220,6 +1220,31 @@ From a parent's-eye review of the app (2026-10-05).
   stated on the Friends and Classes pages. Keep it true: if chat or any messaging is ever
   added, change that sentence first.
 
+## Progress over time, exam breakdown, About page (review follow-ups, part 2)
+
+- **Progress** gets "Last 7 days" (days studied, questions answered, % correct, time
+  answering, 7 bars) and "Weakest topics" (latest answer per question, at least 3 questions
+  tried, under the 80% proficiency line, with a Practice link). No database change. The week
+  is bucketed **in the browser** (`WeekActivity`, `lib/study/week-activity.ts`) because "today"
+  is the student's local day, not the server's; the server sends raw timestamps for eight days.
+  Time = seconds spent choosing answers (each capped at 10 min) plus completed exams' length
+  (capped at 4 h); reading explanations isn't measured, and the page says so.
+- **Exam results** gets "Where you lost points": units ranked by questions missed or skipped,
+  each with a quiz (max 20) of exactly those questions (`lib/study/exam-breakdown.ts`).
+- **/about** ("About and FAQ", linked from the footer): one-person, no name, and **no pricing**
+  (owner's choices, 2026-10-05). It states the questions were written with AI help and, for
+  math/physics, calculated answers were checked with software. The "checked by a person" count
+  is read from the `reviewed` flags, so it stays true on its own. **Owner: confirm you are happy
+  with the AI-disclosure sentence.**
+- Not done from the review (needs decisions or something other than code): exam date and study
+  plan (small migration), read-only parent link (new table), self-serve change password / delete
+  account, forgot password and parent email (need an email service), real teacher review,
+  testimonials, a real `/teacher` role, refresher notes/video, an AI check for free-response answers.
+- Verified signed in end to end on 2026-10-05 with a scratch account (deleted afterwards): exam
+  resume after reload, auto-submit at zero carrying the saved answers, the Progress sections,
+  and the exam breakdown link. The About page and part-2 components have unit tests and were
+  checked in the browser; no full `next build` was run after part 2 (run it before deploying).
+
 ## Footer, contact and privacy
 
 - **Contact is a prefilled `mailto:` link, never a printed address.**

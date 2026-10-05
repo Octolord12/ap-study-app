@@ -18,6 +18,11 @@ describe("SiteFooter", () => {
     expect(container.textContent).not.toMatch(/@|gmail/i);
   });
 
+  it("links to the about page", () => {
+    render(<SiteFooter />);
+    expect(screen.getByRole("link", { name: "About" })).toHaveAttribute("href", "/about");
+  });
+
   it("links to the privacy page", () => {
     render(<SiteFooter />);
     expect(screen.getByRole("link", { name: "Privacy" })).toHaveAttribute("href", "/privacy");

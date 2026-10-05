@@ -6,6 +6,8 @@ import { renderContentToHtml } from "@/lib/content/render";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { ClearExamDraft } from "@/components/study/clear-exam-draft";
 import { ExamMcqReview } from "@/components/study/exam-mcq-review";
+import { ExamWeakUnits } from "@/components/study/exam-weak-units";
+import { examWeakUnits, type ExamQuestionResult } from "@/lib/study/exam-breakdown";
 import { FrqSelfGrade } from "@/components/study/frq-self-grade";
 import { renderRubric } from "@/lib/study/render-rubric";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
@@ -35,7 +37,7 @@ export default async function ExamResultsPage({
   const frqPromptIds = attempt.frqPromptIds as string[];
   const sectionScores = attempt.sectionScores as unknown as { mcqCorrect: number; mcqTotal: number };
 
-  const [renderedQuestions, chosenAttempts, frqPrompts, existingFrqAttempts, course] = await Promise.all([
+  const [renderedQuestions, chosenAttempts, frqPrompts, existingFrqAttempts, course, questionUnits] = await Promise.all([
     renderQuizQuestions(questionIds, courseSlug),
     db.questionAttempt.findMany({
       where: { userId, questionId: { in: questionIds }, source: "EXAM" },
@@ -48,6 +50,7 @@ export default async function ExamResultsPage({
       orderBy: { createdAt: "desc" },
     }),
     db.course.findUnique({ where: { slug: courseSlug }, select: { name: true } }),
+    db.question.findMany({ where: { id: { in: questionIds } }, select: { id: true, unit: { select: { slug: true, name: true, order: true } } } }),
   ]);
 
   // Latest EXAM-sourced attempt per question, within this exam's window --
@@ -58,6 +61,16 @@ export default async function ExamResultsPage({
   for (const a of chosenAttempts) {
     if (!chosenLabelByQuestionId.has(a.questionId)) chosenLabelByQuestionId.set(a.questionId, a.chosenLabel);
   }
+  const unitByQuestionId = new Map(questionUnits.map((q) => [q.id, q.unit]));
+  const weakUnits = examWeakUnits(
+    renderedQuestions.flatMap((q): ExamQuestionResult[] => {
+      const unit = unitByQuestionId.get(q.id);
+      if (!unit) return [];
+      const chosen = chosenLabelByQuestionId.get(q.id);
+      const correctLabel = q.choices.find((c) => c.isCorrect)?.label;
+      return [{ questionId: q.id, unitSlug: unit.slug, unitName: unit.name, unitOrder: unit.order, answered: Boolean(chosen), correct: chosen !== undefined && chosen === correctLabel }];
+    }),
+  );
   const frqAttemptByPromptId = new Map<string, (typeof existingFrqAttempts)[number]>();
   for (const a of existingFrqAttempts) {
     if (!frqAttemptByPromptId.has(a.frqPromptId)) frqAttemptByPromptId.set(a.frqPromptId, a);
@@ -106,6 +119,12 @@ export default async function ExamResultsPage({
           The estimate comes from multiple-choice accuracy only, so treat it as a rough guide and not a prediction.
         </p>
       </Section>
+
+      {renderedQuestions.length > 0 ? (
+        <Section label="Where you lost points" note="Multiple choice, by unit. Skipped questions count as missed.">
+          <ExamWeakUnits units={weakUnits} courseSlug={courseSlug} backHref={`/courses/${courseSlug}/exam/${examAttemptId}/results`} />
+        </Section>
+      ) : null}
 
       {frqSections.length > 0 ? (
         <Section label="Free response" note="Grade your own responses against each rubric.">

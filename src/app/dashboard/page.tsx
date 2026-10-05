@@ -8,6 +8,10 @@ import { groupTitlesByCourse } from "@/lib/gamification/titles";
 import { isCramModeOn } from "@/lib/study/cram-mode";
 import { CramToggle } from "@/components/study/cram-toggle";
 import { UnitMasteryList } from "@/components/study/unit-mastery-list";
+import { WeakTopicsList } from "@/components/study/weak-topics-list";
+import { WeekActivity } from "@/components/study/week-activity";
+import { daysAgo, toActivityEntries } from "@/lib/study/week-activity";
+import { weakTopics } from "@/lib/study/weak-topics";
 import { XpBar } from "@/components/ui/meter";
 import { Page, PageHeader, Section } from "@/components/ui/page";
 import { BadgeStamp, TitleStamp } from "@/components/ui/stamp";
@@ -19,7 +23,9 @@ export default async function DashboardPage() {
   const userId = await requireUserId();
   const db = getDb();
 
-  const [enrollments, attempts, stats, badges, cramOn, titles] = await Promise.all([
+  // Eight days back, so the browser can pick out its own last seven local days.
+  const since = daysAgo(8);
+  const [enrollments, attempts, stats, badges, cramOn, titles, weekQuestions, weekFrqs, weekExams] = await Promise.all([
     db.enrollment.findMany({
       where: { userId },
       include: {
@@ -28,13 +34,46 @@ export default async function DashboardPage() {
     }),
     db.questionAttempt.findMany({
       where: { userId },
-      select: { questionId: true, correct: true, createdAt: true, question: { select: { unitId: true } } },
+      select: {
+        questionId: true,
+        correct: true,
+        createdAt: true,
+        question: {
+          select: {
+            unitId: true,
+            topic: { select: { id: true, name: true, slug: true } },
+            unit: { select: { slug: true, name: true, course: { select: { slug: true, name: true } } } },
+          },
+        },
+      },
     }),
     getUserGamificationStats(userId),
     getAllBadgeStatuses(userId),
     isCramModeOn(userId),
     getUserUnitTitles(userId),
+    db.questionAttempt.findMany({ where: { userId, createdAt: { gte: since } }, select: { createdAt: true, correct: true, timeSpentMs: true } }),
+    db.fRQAttempt.findMany({ where: { userId, createdAt: { gte: since } }, select: { createdAt: true } }),
+    db.examAttempt.findMany({ where: { userId, completedAt: { gte: since } }, select: { startedAt: true, completedAt: true } }),
   ]);
+  const weekEntries = toActivityEntries({
+    questions: weekQuestions,
+    frqs: weekFrqs,
+    exams: weekExams.flatMap((e) => (e.completedAt ? [{ startedAt: e.startedAt, completedAt: e.completedAt }] : [])),
+  });
+  const weakest = weakTopics(
+    attempts.map((a) => ({
+      questionId: a.questionId,
+      topicId: a.question.topic.id,
+      topicName: a.question.topic.name,
+      topicSlug: a.question.topic.slug,
+      unitSlug: a.question.unit.slug,
+      unitName: a.question.unit.name,
+      courseSlug: a.question.unit.course.slug,
+      courseName: a.question.unit.course.name,
+      correct: a.correct,
+      createdAt: a.createdAt,
+    })),
+  );
 
   const mastery = computeUnitMastery(
     attempts.map((a) => ({
@@ -82,6 +121,14 @@ export default async function DashboardPage() {
             </p>
           </div>
         </div>
+      </Section>
+
+      <Section label="Last 7 days" note="Days follow your own clock.">
+        <WeekActivity entries={weekEntries} />
+      </Section>
+
+      <Section label="Weakest topics" note="Judged on your latest answer to each question.">
+        <WeakTopicsList topics={weakest} />
       </Section>
 
       <Section label="Badges">
