@@ -1204,10 +1204,13 @@ answers are refused, a conquered unit stays conquered).
   section: no birth date is asked for, no knowing retention of under-13 data,
   deletion on request. This is a self-declaration, not verification: we
   deliberately don't collect a birth date, since that would mean storing more
-  personal data. It does not cover accounts created before 2026-10-04 (none are
-  known to be under 13, but nothing checked).
-- **Still open**: a lawyer's review of the privacy page before this goes beyond
-  family and friends.
+  personal data. Accounts created before the check existed were not asked; the
+  owner confirmed on 2026-10-04 that all of them belong to people over 13 (their
+  statement, not something the app can verify).
+- **Privacy page reviewed**: the owner reported on 2026-10-04 that it has been
+  reviewed. Nothing is open on it now; re-review it if the site starts collecting or
+  sharing anything new (the page's `UPDATED` date and the guard tests in
+  `tests/privacy-page.test.tsx` are the reminders).
 - Test setup note: `tests/setup.ts` now runs Testing Library's `cleanup()` after each
   test (vitest runs without globals, so it wasn't happening, and `getBy*` found
   duplicates left over from earlier renders in the same file).
