@@ -3,6 +3,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const actions = vi.hoisted(() => ({ changePasswordAction: vi.fn(), deleteAccountAction: vi.fn() }));
 vi.mock("@/lib/auth/account-actions", () => actions);
+const nextAuthReact = vi.hoisted(() => ({ signIn: vi.fn() }));
+vi.mock("next-auth/react", () => nextAuthReact);
 
 import { ChangePasswordForm } from "@/components/account/change-password-form";
 import { DeleteAccountForm } from "@/components/account/delete-account-form";
@@ -31,11 +33,42 @@ describe("ChangePasswordForm", () => {
     for (const label of ["Current password", "New password", "New password again"]) expect((screen.getByLabelText(label) as HTMLInputElement).value).toBe("");
   });
 
-  it("confirms a change", async () => {
-    actions.changePasswordAction.mockResolvedValue({ message: "Password changed." });
-    render(<ChangePasswordForm />);
+  const fillAndSubmit = (newPassword = "brand-new-pass") => {
+    fireEvent.change(screen.getByLabelText("Current password"), { target: { value: "old-password" } });
+    fireEvent.change(screen.getByLabelText("New password"), { target: { value: newPassword } });
+    fireEvent.change(screen.getByLabelText("New password again"), { target: { value: newPassword } });
     fireEvent.submit(screen.getByLabelText("Current password").closest("form")!);
-    await waitFor(() => expect(screen.getByRole("status")).toHaveTextContent("Password changed."));
+  };
+
+  it("signs this device back in with the new password, then says other devices were signed out", async () => {
+    actions.changePasswordAction.mockResolvedValue({ message: "Password changed.", signInAs: "sam@example.com" });
+    nextAuthReact.signIn.mockResolvedValue({ ok: true, error: undefined });
+    render(<ChangePasswordForm />);
+    fillAndSubmit("brand-new-pass");
+
+    await waitFor(() => expect(screen.getByRole("status")).toHaveTextContent("Password changed. Any other device you were signed in on has been signed out."));
+    expect(nextAuthReact.signIn).toHaveBeenCalledWith("credentials", { email: "sam@example.com", password: "brand-new-pass", redirect: false });
+  });
+
+  it("asks for a fresh sign-in if signing this device back in fails, instead of claiming success", async () => {
+    actions.changePasswordAction.mockResolvedValue({ message: "Password changed.", signInAs: "sam@example.com" });
+    nextAuthReact.signIn.mockResolvedValue({ ok: false, error: "CredentialsSignin" });
+    render(<ChangePasswordForm />);
+    fillAndSubmit();
+    await waitFor(() => expect(screen.getByRole("status")).toHaveTextContent("Password changed. Sign in again with the new one."));
+
+    nextAuthReact.signIn.mockRejectedValue(new Error("network"));
+    fillAndSubmit();
+    await waitFor(() => expect(nextAuthReact.signIn).toHaveBeenCalledTimes(2));
+    expect(screen.getByRole("status")).toHaveTextContent("Password changed. Sign in again with the new one.");
+  });
+
+  it("doesn't sign in again when the server refused the change", async () => {
+    actions.changePasswordAction.mockResolvedValue({ error: "That isn't your current password." });
+    render(<ChangePasswordForm />);
+    fillAndSubmit();
+    await waitFor(() => expect(screen.getByRole("alert")).toBeInTheDocument());
+    expect(nextAuthReact.signIn).not.toHaveBeenCalled();
   });
 });
 

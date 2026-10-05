@@ -65,6 +65,9 @@ export const DeleteAccountSchema = z.object({
 export interface PasswordFormState {
   error?: string;
   message?: string;
+  // Set on success: the email to sign this device back in with (the form already holds
+  // the new password). See ChangePasswordForm.
+  signInAs?: string;
 }
 
 export interface DeleteAccountFormState {

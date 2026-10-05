@@ -11,8 +11,16 @@ declare module "next-auth" {
   }
 }
 
+declare module "next-auth" {
+  // Returned by authorize() and copied into the token; see credentials-stamp.ts.
+  interface User {
+    stamp?: string;
+  }
+}
+
 declare module "next-auth/jwt" {
   interface JWT {
     id?: string;
+    stamp?: string;
   }
 }

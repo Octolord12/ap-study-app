@@ -48,7 +48,7 @@ export default async function SettingsPage() {
         </ActionRow>
       </Section>
 
-      <Section label="Password" note="You'll need your current one.">
+      <Section label="Password" note="You'll need your current one. Changing it signs out your other devices.">
         <ChangePasswordForm />
       </Section>
 

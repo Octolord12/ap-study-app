@@ -1295,12 +1295,32 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
   owner can't leave one, so blocking would trap the owner. The form names each owned class
   and how many other students it affects before they confirm. If class ownership transfer
   or a delete-class feature is ever built, revisit this.
-- **Limits, known**: (1) sessions are stateless JWTs, so after a password change **other
-  signed-in devices stay signed in** until their token expires (Auth.js default, 30 days);
-  fixing it needs a `passwordChangedAt` column checked in the jwt callback. (2) There is no
-  rate limit on password attempts (the form re-checks the current password with bcrypt's
-  ~250 ms cost as the only brake). (3) No email is sent about a password change or deletion
-  (there is no email service), and there is **no forgot-password**: it needs one.
+- **Sign-in tokens die with the password.** Sessions are stateless JWTs, so on their own
+  they stayed valid on other devices after a password change (and after the account was
+  deleted). Now each token carries a **stamp**, a fingerprint of the account's password hash
+  (`lib/auth/credentials-stamp.ts`), and the `jwt` callback in `lib/auth/config.ts` compares
+  it with the database on every session read: a different stamp, or no such account, returns
+  `null`, which signs the token out and clears its cookie. **No migration**: bcrypt re-salts
+  every hash, so even re-saving the same password retires old tokens. Costs one primary-key
+  read per `auth()` call (deduped within a request by `cache()`, keyed by user *and* stamp so a
+  change inside one request isn't answered from before it).
+  - **The device that changed the password signs itself in again from the browser**
+    (`ChangePasswordForm` calls `next-auth/react`'s `signIn` with the new password it still
+    holds; the action returns `signInAs` = the email). **Don't move that into the Server
+    Action**: setting a cookie there makes Next re-render the page in the same request from the
+    *old* cookie header, which redirected the student to /login (found by testing in the browser).
+  - **The `jwt` callback ignores `trigger: "update"` on purpose.** A client can post that to
+    `/api/auth/session` itself, so letting it refresh the stamp would let a stale token revive
+    itself. Don't use `unstable_update` for this.
+  - Tokens issued before this shipped have no stamp; they are accepted and stamped on first
+    use (so nobody was signed out by the deploy). A device signed in *before* the deploy is
+    therefore only covered once its token has been refreshed.
+  - A database error while checking keeps the person signed in (logged by error name only)
+    instead of signing everyone out; the pages that need the database fail on their own.
+- **Limits, known**: (1) there is no rate limit on password attempts (the form re-checks the
+  current password with bcrypt's ~250 ms cost as the only brake). (2) No email is sent about a
+  password change or deletion (there is no email service), and there is **no forgot-password**:
+  it needs one.
 - The privacy page says deletion and password change are in Settings; it also still
   promises access/correction and waitlist removal without an account by request.
 

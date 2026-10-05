@@ -47,8 +47,21 @@ beforeEach(() => {
 
 describe("changePasswordAction", () => {
   it("stores the new password, hashed, on the signed-in student's own account only", async () => {
-    expect(await changePasswordAction({}, change())).toEqual({ message: "Password changed." });
+    const result = await changePasswordAction({}, change());
+    expect(result.error).toBeUndefined();
+    expect(result.message).toBe("Password changed.");
     expect(mocks.db.user.update).toHaveBeenCalledWith({ where: { id: "user-1" }, data: { passwordHash: "hashed:brand-new-pass" } });
+  });
+
+  it("tells the form which account to sign this device back in as, and nothing secret", async () => {
+    const result = await changePasswordAction({}, change());
+    expect(result.signInAs).toBe("Sam@Example.com");
+    expect(Object.keys(result).sort()).toEqual(["message", "signInAs"]);
+  });
+
+  it("doesn't ask the form to sign in again when nothing was changed", async () => {
+    expect(await changePasswordAction({}, change({ currentPassword: "not-it" }))).not.toHaveProperty("signInAs");
+    expect(await changePasswordAction({}, change({ confirmPassword: "different" }))).not.toHaveProperty("signInAs");
   });
 
   it("refuses a wrong current password and changes nothing", async () => {

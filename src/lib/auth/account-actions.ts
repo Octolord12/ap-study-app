@@ -32,12 +32,18 @@ export async function changePasswordAction(_prev: PasswordFormState, formData: F
   if (!parsed.success) return { error: parsed.error.issues[0]?.message ?? "Invalid input." };
 
   const db = getDb();
-  const user = await db.user.findUnique({ where: { id: userId }, select: { passwordHash: true } });
+  const user = await db.user.findUnique({ where: { id: userId }, select: { email: true, passwordHash: true } });
   if (!user?.passwordHash) return { error: "This account doesn't use a password." };
   if (!(await bcrypt.compare(parsed.data.currentPassword, user.passwordHash))) return { error: "That isn't your current password." };
 
   await db.user.update({ where: { id: userId }, data: { passwordHash: await bcrypt.hash(parsed.data.newPassword, BCRYPT_ROUNDS) } });
-  return { message: "Password changed." };
+
+  // Every sign-in token issued before this moment is now void (credentials-stamp.ts),
+  // this device's included. This device is signed in again by the form, from the browser,
+  // through Auth.js's own login endpoint, and not here: setting a cookie in a Server Action
+  // makes Next re-render the page in the same request from the *old* cookie header, which
+  // bounced the student to /login and lost this confirmation.
+  return { message: "Password changed.", signInAs: user.email };
 }
 
 export async function deleteAccountAction(_prev: DeleteAccountFormState, formData: FormData): Promise<DeleteAccountFormState> {
