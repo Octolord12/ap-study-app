@@ -4,9 +4,8 @@ import bcrypt from "bcryptjs";
 import { AuthError } from "next-auth";
 import { getDb } from "@/lib/db";
 import { signIn, signOut } from "@/lib/auth/config";
+import { BCRYPT_ROUNDS } from "@/lib/auth/password";
 import { LoginSchema, SignUpSchema, type LoginFormState, type SignUpFormState } from "@/lib/auth/schema";
-
-const BCRYPT_ROUNDS = 12;
 
 // What the person typed, echoed back so the form can refill itself (capped, since
 // it is the request's own input).

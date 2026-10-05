@@ -5,15 +5,18 @@ import { updateLeaderboardOptOut } from "@/lib/social/actions";
 import { Button } from "@/components/ui/button";
 import { ActionRow, Page, PageHeader, Section } from "@/components/ui/page";
 import { ThemeSettings } from "@/components/theme/theme-settings";
+import { ChangePasswordForm } from "@/components/account/change-password-form";
+import { DeleteAccountForm } from "@/components/account/delete-account-form";
 
 export const metadata: Metadata = { title: "Settings" };
 
 export default async function SettingsPage() {
   const userId = await requireUserId();
-  const user = await getDb().user.findUniqueOrThrow({
-    where: { id: userId },
-    select: { leaderboardOptOut: true, username: true, displayName: true },
-  });
+  const db = getDb();
+  const [user, ownedClasses] = await Promise.all([
+    db.user.findUniqueOrThrow({ where: { id: userId }, select: { leaderboardOptOut: true, username: true, displayName: true } }),
+    db.class.findMany({ where: { ownerId: userId }, orderBy: { name: "asc" }, select: { id: true, name: true, _count: { select: { memberships: true } } } }),
+  ]);
 
   const setOptOut = updateLeaderboardOptOut.bind(null, !user.leaderboardOptOut);
 
@@ -43,6 +46,14 @@ export default async function SettingsPage() {
             Leaderboards show your username ({user.username}), never your name ({user.displayName}).
           </p>
         </ActionRow>
+      </Section>
+
+      <Section label="Password" note="You'll need your current one.">
+        <ChangePasswordForm />
+      </Section>
+
+      <Section label="Delete account" note="Permanent.">
+        <DeleteAccountForm ownedClasses={ownedClasses.map((c) => ({ id: c.id, name: c.name, otherMembers: Math.max(0, c._count.memberships - 1) }))} />
       </Section>
     </Page>
   );

@@ -1273,6 +1273,37 @@ Each student can set an exam date per course; the app counts down and paces them
 - The AP exam dates themselves are **not** looked up or stored: the student enters their own
   (their school or the College Board's schedule has it).
 
+## Settings: change password and delete account
+
+Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
+`lib/auth/account-actions.ts`.
+
+- Both act only on the **session's own account** (never on a form field) and both **re-ask
+  for the password**, so a session left open on a shared computer isn't enough to lock
+  someone out or erase them. Neither returns any password to the browser (tested), so the
+  fields always come back empty.
+- **Change password**: current + new + confirm; the new one is held to the signup rules
+  (min 8, and now **at most 72 bytes**, since bcrypt silently ignores anything past that;
+  `lib/auth/password.ts` is the single source, applied to signup too), must differ from
+  the current one, and is hashed with bcrypt (12 rounds).
+- **Delete account**: needs the password and a confirmation tick (checked server-side).
+  One transaction deletes the user, which removes everything tied to it through the schema's
+  cascades (answers, spaced repetition, XP, badges, boss results, exams, free-response work,
+  friendships, memberships, **and any class they own**), plus the `WaitlistSignup` row with
+  the same email (it isn't tied to a user). Then `signOut` redirects to `/account-deleted`.
+- **Owned classes are deleted for everyone in them.** Classes can't be handed over, and an
+  owner can't leave one, so blocking would trap the owner. The form names each owned class
+  and how many other students it affects before they confirm. If class ownership transfer
+  or a delete-class feature is ever built, revisit this.
+- **Limits, known**: (1) sessions are stateless JWTs, so after a password change **other
+  signed-in devices stay signed in** until their token expires (Auth.js default, 30 days);
+  fixing it needs a `passwordChangedAt` column checked in the jwt callback. (2) There is no
+  rate limit on password attempts (the form re-checks the current password with bcrypt's
+  ~250 ms cost as the only brake). (3) No email is sent about a password change or deletion
+  (there is no email service), and there is **no forgot-password**: it needs one.
+- The privacy page says deletion and password change are in Settings; it also still
+  promises access/correction and waitlist removal without an account by request.
+
 ## Footer, contact and privacy
 
 - **Contact is a prefilled `mailto:` link, never a printed address.**
@@ -1293,9 +1324,10 @@ Each student can set an exam date per course; the app counts down and paces them
   lifetime to `cram-mode.ts` and fails if an analytics/tracking package is added
   to `package.json`. Update the page and its `UPDATED` date whenever you add
   tracking, a cookie, or a new kind of stored data.
-- **Commitments the page makes on the owner's behalf**, to honor or edit: account
-  and data deletion, access/correction, and waitlist removal *by request* (there is
-  no self-serve button), and "we don't sell your information".
+- **Commitments the page makes on the owner's behalf**, to honor or edit: access and
+  correction *by request*, waitlist removal for someone *without an account* by request,
+  deleting an under-13's data if one turns up, and "we don't sell your information".
+  Deleting your own account and changing your password are now self-serve in Settings.
 - **Minimum age: 13 (owner decision, 2026-10-04).** `MINIMUM_AGE` in `lib/age.ts` is
   the single source. Signup requires a checked "I am 13 or older" box
   (`ageConfirmed`, value `yes`), enforced **server-side** in `SignUpSchema`, so

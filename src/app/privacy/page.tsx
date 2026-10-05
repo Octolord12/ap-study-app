@@ -93,7 +93,7 @@ export default function PrivacyPage() {
         <Points
           items={[
             "Leave leaderboards in Settings. Sound and dark mode are in the account menu. You can log out at any time.",
-            "To see what we hold about you, correct it, delete your account and its data, or be removed from the waitlist, write to us. There is no button for this yet, so it is done by request.",
+            "Change your password, or delete your account and everything tied to it, in Settings. To see what we hold about you, have it corrected, or be removed from the waitlist without an account, write to us.",
           ]}
         />
         <p className="reading mt-6 max-w-[64ch]">

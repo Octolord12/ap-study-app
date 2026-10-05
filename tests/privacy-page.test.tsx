@@ -24,6 +24,12 @@ describe("privacy page", () => {
     expect(container.textContent).toMatch(/don't ask for your birth\s+date/);
   });
 
+  it("says a student can change their password and delete their account in Settings, and no longer says it is by request", () => {
+    const { container } = render(<PrivacyPage />);
+    expect(container.textContent).toMatch(/Change your password, or delete your account and everything tied to it, in Settings/);
+    expect(container.textContent).not.toMatch(/There is no button/);
+  });
+
   it("lists the exam date among what is collected, since it is stored", () => {
     const { container } = render(<PrivacyPage />);
     expect(container.textContent).toMatch(/set an exam date for a course: that date/);

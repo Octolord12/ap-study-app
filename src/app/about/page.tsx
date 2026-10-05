@@ -82,7 +82,7 @@ export default async function AboutPage() {
       <Section label="Data">
         <p className="reading max-w-[64ch]">
           We keep the account details a student gives us and their study activity. We don&apos;t run ads or tracking scripts and we don&apos;t sell
-          information. Everything, including how to ask for an account to be deleted, is on the{" "}
+          information. Everything, including how to delete an account, is on the{" "}
           <Link href="/privacy" className={LINK}>
             Privacy page
           </Link>
