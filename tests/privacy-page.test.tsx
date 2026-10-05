@@ -1,0 +1,32 @@
+import fs from "node:fs";
+import path from "node:path";
+import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import PrivacyPage from "@/app/privacy/page";
+import { CRAM_COOKIE, CRAM_DAYS } from "@/lib/study/cram-mode";
+
+describe("privacy page", () => {
+  it("renders its sections and a contact link that doesn't print the address", () => {
+    const { container } = render(<PrivacyPage />);
+    for (const label of ["What we collect", "Who can see it", "What we don't do", "Cookies and storage", "Your choices"]) {
+      expect(screen.getByText(label)).toBeInTheDocument();
+    }
+    const link = screen.getByRole("link", { name: "Write to us about privacy" });
+    expect(link.getAttribute("href")).toMatch(/^mailto:/);
+    expect(container.textContent).not.toMatch(/@|gmail/i);
+  });
+
+  it("describes the cookie the app really sets, and for as long as it really lasts", () => {
+    const { container } = render(<PrivacyPage />);
+    expect(container.textContent).toContain(CRAM_COOKIE);
+    expect(container.textContent).toContain(`${CRAM_DAYS} days`);
+  });
+
+  // The page says there is no tracking. If you add one, update the page first.
+  it("is still true that no analytics or tracking package is installed", () => {
+    const pkg = JSON.parse(fs.readFileSync(path.resolve(import.meta.dirname, "../package.json"), "utf8"));
+    const installed = Object.keys({ ...pkg.dependencies, ...pkg.devDependencies });
+    const tracking = ["@vercel/analytics", "@vercel/speed-insights", "posthog-js", "react-ga4", "react-ga", "@sentry/nextjs", "@sentry/browser", "mixpanel-browser", "@segment/analytics-next", "@amplitude/analytics-browser", "logrocket", "hotjar"];
+    expect(installed.filter((name) => tracking.includes(name))).toEqual([]);
+  });
+});

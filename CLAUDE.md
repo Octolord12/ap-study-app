@@ -800,11 +800,10 @@ a user choice. Contrast: every text pair is >= 5.6:1 in both modes.
   `loading.tsx` in each section (`courses`, `dashboard`, `friends`, `classes`,
   `settings`, `admin`, `teacher`). **There is deliberately no
   `app/loading.tsx`** -- see "Landing page renders finished HTML" below.
-- **Footer disclaimer** (`site-footer.tsx`) says the site is not affiliated
-  with College Board and that questions have not been reviewed by College
-  Board. **TODO(owner): confirm the wording before launch.** It deliberately
-  says nothing about our own review status (all content is still
-  `reviewed: false`).
+- **Footer** (`site-footer.tsx`): trademark and non-affiliation notice
+  (confirmed by the owner), plus "may contain mistakes" (all content is still
+  `reviewed: false`, so this is true and protective), a "Report a mistake or send
+  a suggestion" mail link, and a Privacy link. See "Footer, contact and privacy".
 - **Copy rules**: plain, concrete, no em dashes, no invented numbers. Counts
   come from the database; the only hard-coded figures are the XP ranges and
   exam formats, which come from `xp.ts` and `examFormat`. Spaced repetition is
@@ -1170,6 +1169,37 @@ Tests: `tests/boss-battle.test.ts` (rule, scoring, token tampering/expiry/skew) 
 `tests/submit-boss-battle.test.ts` (the action with a faked DB: the old
 `{ correctCount: 30, total: 30 }` forgery scores 0, other users' tokens and
 answers are refused, a conquered unit stays conquered).
+
+## Footer, contact and privacy
+
+- **Contact is a prefilled `mailto:` link, never a printed address.**
+  `lib/site-contact.ts` (`feedbackMailto`, `privacyMailto`) builds
+  `mailto:<owner address>?subject=...&body=...` with `encodeURIComponent` (not
+  `URLSearchParams`: mail apps read `+` literally). The visitor sees "Report a
+  mistake or send a suggestion"; their mail app opens addressed to the owner with
+  a subject and a prompt for what to write. The address *is* in the link's `href`,
+  so it isn't hidden from someone viewing the source or from scrapers; a contact
+  form would hide it but needs an email service this app doesn't have. The owner's
+  choice, 2026-10-04; tests assert the address never appears as visible text.
+- **`/privacy` (`app/privacy/page.tsx`) states only what the code does**: what is
+  collected (account, study activity, FRQ text, friends/classes, waitlist email,
+  host server logs), who sees it (usernames and XP, never names or email), no ads,
+  no analytics or tracking scripts, the sign-in cookie, the `ap-cram` cookie
+  (7 days, holds the user id), local storage for theme and sound, Neon (US) and
+  Vercel. **Keep it true:** `tests/privacy-page.test.tsx` ties the cookie name and
+  lifetime to `cram-mode.ts` and fails if an analytics/tracking package is added
+  to `package.json`. Update the page and its `UPDATED` date whenever you add
+  tracking, a cookie, or a new kind of stored data.
+- **Commitments the page makes on the owner's behalf**, to honor or edit: account
+  and data deletion, access/correction, and waitlist removal *by request* (there is
+  no self-serve button), and "we don't sell your information".
+- **Not decided yet**: a minimum age / what to do about under-13 users (the site has
+  no age gate; see the COPPA note in the Social section), and a lawyer's review of
+  the privacy page before this goes beyond family and friends. The page is silent
+  on children for now; that is a gap, not a statement.
+- Test setup note: `tests/setup.ts` now runs Testing Library's `cleanup()` after each
+  test (vitest runs without globals, so it wasn't happening, and `getBy*` found
+  duplicates left over from earlier renders in the same file).
 
 ## Verified AP course info (2026-27)
 
