@@ -1611,9 +1611,9 @@ in app logic — updating them should be a data edit.
       skeleton for class owners. See "Post-launch growth features" above.
 - [x] **Post-launch: hard question sets.** 15 hard MCQs + 2 hard FRQs per unit in all four
       courses (Calc AB 120 + 16, CSA 150 + 20, World 135 + 18, Physics 1 120 + 16), added
-      alongside the originals. Calc AB is seeded and deployed. **CSA, World and Physics are
-      authored, validated and committed but not yet seeded into the database or deployed** (as of
-      2026-10-05); update this line once they are. See "Hard sets" above.
+      alongside the originals. All four are seeded into the database and deployed (2026-10-05;
+      row counts and per-question correct-answer/difficulty/diagram checked against the files after
+      seeding). See "Hard sets" above.
 
 ## Known issues / follow-ups
 
