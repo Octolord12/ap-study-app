@@ -38,6 +38,19 @@ Components call it and hand the HTML string to `<Html>`
 Component (which can't run the pipeline itself). Don't swap it back to
 `react-markdown` without re-testing `next build`.
 
+### Gotcha: the KaTeX we import must be the KaTeX that renders
+
+Math is drawn by the KaTeX that `rehype-katex` / `micromark-extension-math` depend
+on (0.16.x), but the stylesheet and fonts come from *our* `katex` dependency
+(`@import "katex/dist/katex.min.css"` in `globals.css`). KaTeX renames CSS classes
+between versions (`.inner` became `.katex-inner`), so with `katex@0.18` installed
+beside a 0.16 renderer, every symbol built from an overlay (`\neq`, `\ne`, `\not`)
+lost its positioning and showed as **"x /= 2"**. A reviewer caught it; it had been
+live since launch. `katex` is therefore pinned to the renderer's line (`^0.16.47`,
+deduped to one copy: `npm ls katex` should show a single version). **Don't bump
+`katex` on its own**; move it together with `rehype-katex`. `tests/katex-consistency.test.ts`
+fails if the versions differ or the stylesheet lacks the rule for the rendered HTML.
+
 ### Gotcha: Prisma client needs a driver adapter
 
 Prisma 7's generated client (`src/generated/prisma/`, gitignored — regenerated
@@ -1172,6 +1185,41 @@ Tests: `tests/boss-battle.test.ts` (rule, scoring, token tampering/expiry/skew) 
 `{ correctCount: 30, total: 30 }` forgery scores 0, other users' tokens and
 answers are refused, a conquered unit stays conquered).
 
+## Exam resume, daily challenge, reporting problems (review follow-ups)
+
+From a parent's-eye review of the app (2026-10-05).
+
+- **Exam clock and saved answers.** The clock is derived from the attempt's own
+  `ExamAttempt.startedAt` (`lib/study/exam-clock.ts`), computed on the server and passed
+  as `initialSecondsLeft`; no migration was needed (the column already existed, and the
+  old note saying it didn't was wrong). The client counts down against a fixed
+  wall-clock deadline, so a throttled tab can't drift. A reload therefore resumes the real
+  clock. Answers and the current question are saved **on the student's device**
+  (`lib/study/exam-draft.ts`, localStorage `ap-study-app:exam-draft:<attempt>`, never sent
+  to the server until submit), keyed by the choice's *authored label*, so the right bubble
+  is refilled even though choices reshuffle on reload. Drafts are validated on read
+  (only this exam's questions, sane values), expire after a day, stale ones are purged,
+  and the results page clears the submitted one. The runner shows a "Welcome back" note
+  when it restored something. The privacy page says answers are kept on the device.
+- **Fixed in passing, serious:** the auto-submit when the clock hit zero ran from an
+  interval created once at mount, whose `handleSubmit` had closed over the *initial empty*
+  answers, so **a timed-out exam was submitted with no answers at all**. The interval now
+  calls a ref that is refreshed every render. `tests/exam-runner.test.tsx` pins it (and
+  fails against the old code), including under StrictMode, which runs effects twice and
+  is what makes the "don't save before restoring" guard necessary.
+- A reload while the clock is at zero submits whatever was saved. An exam left open for
+  days therefore submits itself when reopened; that follows the clock, not a bug.
+- **Daily challenge** goes straight into the questions (`/daily` redirects when there is a
+  set to start) instead of showing a "5 questions" page that asked for a second click. It
+  still renders for "done today" and "no questions".
+- **Per-question "Report a problem"** (`ReportProblem`, `reportMailto` in `lib/site-contact.ts`):
+  a mail link whose subject and body carry the question or prompt id, shown after answering
+  a question, in the exam review, and on the FRQ page. Like the footer link it never prints
+  the owner's address.
+- **"Only usernames are shown... no chat and no messaging"** (`lib/social/copy.ts`) is
+  stated on the Friends and Classes pages. Keep it true: if chat or any messaging is ever
+  added, change that sentence first.
+
 ## Footer, contact and privacy
 
 - **Contact is a prefilled `mailto:` link, never a printed address.**
@@ -1371,11 +1419,6 @@ in app logic — updating them should be a data edit.
   actually reachable by anyone right now. Promote a user via `db:studio` or
   ask Claude to run a one-off script — this is a direct DB write, so it needs
   explicit sign-off first, same as any other mutating action.
-- **The exam clock restarts on reload.** `ExamRunner` holds the countdown in
-  client state only, initialised to the full duration on every mount, so
-  reloading the exam page gives a student a fresh clock. Pre-existing, not
-  touched by the redesign; fixing it needs the start time stored on
-  `ExamAttempt` and the remaining time derived from it.
 - **The authored content still has the correct answer in slot A ~60% of the
   time** (Calc 99%, Physics 100%, CSA 30% A / 56% B, World 26% A / 72% B). It no
   longer matters to students because choices are shuffled on every showing (see
