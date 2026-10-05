@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-calc-u8-frq-4",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "area-between-curves",
+    "prompt": "Let $R$ be the region in the first quadrant bounded by the graphs of $y=x^2$ and $y=6-x$ and the $y$-axis.\n\n**(a)** Find the $x$-coordinate of the point where the two graphs intersect, and find the area of $R$.\n\n**(b)** The region $R$ is the base of a solid. Cross-sections of the solid perpendicular to the $x$-axis are squares. Write an integral expression for the volume of the solid, and find its value.\n\n**(c)** Region $R$ is rotated about the $x$-axis. Write an integral expression for the volume of the solid, and find its value.\n\n**(d)** Find the average value of the vertical distance between the two graphs, $(6-x)-x^2$, on the interval $0\\le x\\le2$.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Solves $x^2=6-x$ to get $x=2$ (rejecting $x=-3$)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Computes the area $\\int_0^2(6-x-x^2)\\,dx=\\frac{22}3$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Writes $\\int_0^2(6-x-x^2)^2\\,dx$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Evaluates it correctly"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Writes a washer integral with outer radius $6-x$ and inner radius $x^2$: $\\pi\\int_0^2\\left[(6-x)^2-(x^2)^2\\right]dx$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(c) Evaluates it correctly"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(d) Uses the average value formula $\\frac1{2-0}\\int_0^2(6-x-x^2)\\,dx=\\frac{11}{3}$"
+      }
+    ],
+    "sampleResponse": "(a) $x^2=6-x$ gives $x^2+x-6=(x+3)(x-2)=0$; in the first quadrant $x=2$. Area $=\\int_0^2(6-x-x^2)\\,dx=\\left[6x-\\frac{x^2}2-\\frac{x^3}3\\right]_0^2=12-2-\\frac83=\\frac{22}3$.\n(b) The side of each square is the vertical distance $6-x-x^2$, so $V=\\int_0^2(6-x-x^2)^2\\,dx=\\frac{496}{15}$.\n(c) On $[0,2]$, $6-x\\ge x^2$. Using washers, $V=\\pi\\int_0^2\\left[(6-x)^2-(x^2)^2\\right]dx=\\frac{664 \\pi}{15}$.\n(d) Average value $=\\frac{1}{2}\\int_0^2(6-x-x^2)\\,dx=\\frac12\\cdot\\frac{22}{3}=\\frac{11}3$.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u8-frq-5",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "average-value-of-a-function",
+    "prompt": "Water is pumped into a tank at a rate of $F(t)=12t-t^2$ cubic feet per hour for $0\\le t\\le12$, where $t$ is measured in hours. The tank contains 10 cubic feet of water at time $t=0$.\n\n**(a)** How much water is in the tank at $t=12$? Show the work that leads to your answer.\n\n**(b)** Find the average rate at which water is pumped into the tank over the 12 hours.\n\n**(c)** At what time $t$ is the pumping rate greatest? What is the greatest rate?\n\n**(d)** Find the amount of water in the tank at $t=6$.\n\n**(e)** Find all times $t$ in $(0,12)$ at which the pumping rate equals the average rate from part (b).",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Sets up $10+\\int_0^{12}(12t-t^2)\\,dt$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Evaluates to 298 cubic feet"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Uses $\\frac1{12}\\int_0^{12}F(t)\\,dt$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Gets 24 cubic feet per hour"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Finds $F'(t)=12-2t=0$ at $t=6$ and $F(6)=36$, with justification of a maximum"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Computes $10+\\int_0^6F(t)\\,dt=154$ cubic feet"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(e) Solves $12t-t^2=24$ to get $t=6\\pm2\\sqrt3$, and confirms both are in $(0,12)$"
+      }
+    ],
+    "sampleResponse": "(a) Amount $=10+\\int_0^{12}(12t-t^2)\\,dt=10+\\left[6t^2-\\frac{t^3}3\\right]_0^{12}=10+(864-576)=298$ cubic feet.\n(b) Average rate $=\\frac1{12}\\int_0^{12}F(t)\\,dt=\\frac{288}{12}=24$ cubic feet per hour.\n(c) $F'(t)=12-2t=0$ at $t=6$. $F'$ changes from positive to negative there (and $F(0)=F(12)=0$), so the maximum rate occurs at $t=6$. $F(6)=72-36=36$ cubic feet per hour.\n(d) Amount at $t=6$: $10+\\int_0^6(12t-t^2)\\,dt=10+\\left[6t^2-\\frac{t^3}3\\right]_0^6=10+(216-72)=154$ cubic feet.\n(e) $12t-t^2=24$ gives $t^2-12t+24=0$, so $t=\\frac{12\\pm\\sqrt{144-96}}{2}=6\\pm2\\sqrt3$. Both are in $(0,12)$ since $2\\sqrt3\\approx3.46$.",
+    "reviewed": false
+  }
+]

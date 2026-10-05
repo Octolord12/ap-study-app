@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-calc-u7-mcq-31",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "hard",
+    "stem": "The function $y=f(x)$ is the solution of $\\dfrac{dy}{dx}=xy^2$ with $f(0)=-1$. What is $f(2)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$- \\frac{1}{3}$",
+        "isCorrect": true,
+        "explanation": "Separate: $\\frac{dy}{y^2}=x\\,dx$, so $-\\frac1y=\\frac{x^2}{2}+C$. With $y(0)=-1$: $1=C$. Then $y=-\\frac{1}{x^2/2+1}=-\\frac{2}{x^2+2}$, and $f(2)=-\\frac26=-\\frac13$."
+      },
+      {
+        "label": "B",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "This writes $\\frac1y=\\frac{x^2}2+C$, dropping the negative sign from $\\int y^{-2}dy=-\\frac1y$. That gives $y(0)=-1\\Rightarrow C=-1$ and $y(2)=1$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "The sign is lost: $\\int y^{-2}dy=-y^{-1}$, so the solution is negative here (it also starts at $-1$ and cannot change sign)."
+      },
+      {
+        "label": "D",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "This uses $C=-1$ in $-\\frac1y=\\frac{x^2}2+C$. The initial condition gives $-\\frac1{-1}=1=C$."
+      }
+    ],
+    "explanation": "Separate variables, integrate both sides (including the constant), and use the initial condition before solving for $y$.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-32",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "hard",
+    "stem": "The function $y=f(x)$ satisfies $\\dfrac{dy}{dx}=\\dfrac{x+1}{y}$ with $f(1)=2$. What is $f(3)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-4$",
+        "isCorrect": false,
+        "explanation": "$y^2=(x+1)^2$ has two roots, but the initial condition $f(1)=2>0$ selects the positive one, $y=x+1$."
+      },
+      {
+        "label": "B",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "This has $y=x+2$, which fails the initial condition: $f(1)=3\\neq2$."
+      },
+      {
+        "label": "C",
+        "text": "$4$",
+        "isCorrect": true,
+        "explanation": "$y\\,dy=(x+1)\\,dx$ gives $\\frac{y^2}{2}=\\frac{x^2}{2}+x+C$. At $(1,2)$: $2=\\frac12+1+C$, so $C=\\frac12$ and $y^2=x^2+2x+1=(x+1)^2$. Since $f(1)=2>0$, $y=x+1$, and $f(3)=4$."
+      },
+      {
+        "label": "D",
+        "text": "$\\sqrt{15}$",
+        "isCorrect": false,
+        "explanation": "This drops the constant: $y^2=x^2+2x$ gives $y(3)=\\sqrt{15}$. But then $y(1)=\\sqrt3\\neq2$, so the initial condition has not been used."
+      }
+    ],
+    "explanation": "After integrating, use the initial condition to find $C$, then take the square root with the sign the initial condition requires.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-33",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "hard",
+    "stem": "A slope field for a differential equation $\\dfrac{dy}{dx}=g(x,y)$ has horizontal segments at every point on the $y$-axis and at every point on the line $y=-2$. The segments have positive slope at every point with $x>0$ and $y>0$. Which differential equation could produce it?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{dy}{dx}=y(x+2)$",
+        "isCorrect": false,
+        "explanation": "The slope is 0 along the $x$-axis ($y=0$) and the line $x=-2$, not along the $y$-axis and $y=-2$."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{dy}{dx}=(x+2)(y+2)$",
+        "isCorrect": false,
+        "explanation": "The slope is 0 along $x=-2$ and $y=-2$, but the $y$-axis ($x=0$) has slope $2(y+2)$, not 0."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac{dy}{dx}=x(y+2)$",
+        "isCorrect": true,
+        "explanation": "The slope is 0 when $x=0$ (the $y$-axis) or $y=-2$. For $x>0$ and $y>0$, both factors are positive, so the slope is positive."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac{dy}{dx}=x(y-2)$",
+        "isCorrect": false,
+        "explanation": "The slope is 0 along $y=2$, not $y=-2$."
+      }
+    ],
+    "explanation": "Find where each candidate has slope 0, and check the sign in the first quadrant.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-34",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "hard",
+    "stem": "The solution $y=f(x)$ of $\\dfrac{dy}{dx}=x^2-y$ passes through the point $(2,1)$. The line tangent to the graph of $f$ at $x=2$ is used to approximate $f(2.1)$. Which is the approximation, and is it an overestimate or an underestimate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1.03, an underestimate",
+        "isCorrect": false,
+        "explanation": "This uses a slope of 0.3, as if $f'(2)=0.3$. The slope is $2^2-1=3$ and the step is $0.1$."
+      },
+      {
+        "label": "B",
+        "text": "4, an overestimate",
+        "isCorrect": false,
+        "explanation": "This adds the whole slope, $1+3=4$, instead of slope times step. The change in $y$ over a step of $0.1$ is $3\\cdot0.1=0.3$."
+      },
+      {
+        "label": "C",
+        "text": "1.3, an overestimate",
+        "isCorrect": false,
+        "explanation": "$f''(2)=2x-y'=4-3=1>0$ means concave up, so the graph lies above the tangent line. The estimate is too low."
+      },
+      {
+        "label": "D",
+        "text": "1.3, an underestimate",
+        "isCorrect": true,
+        "explanation": "$f'(2)=2^2-1=3$, so $L(2.1)=1+3(0.1)=1.3$. Differentiating the equation: $y''=2x-y'$, so $f''(2)=4-3=1>0$. The graph is concave up and lies above its tangent line, so 1.3 is an underestimate."
+      }
+    ],
+    "explanation": "Compute the slope from the differential equation, build the tangent line, and find the concavity by differentiating the differential equation implicitly.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-35",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "hard",
+    "stem": "A population $P$ satisfies $\\dfrac{dP}{dt}=kP$. The population is 400 at $t=0$ and 900 at $t=2$ (in years). What is the population at $t=4$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2700$",
+        "isCorrect": false,
+        "explanation": "This multiplies 900 by 3. The factor per two years is 2.25, so $900\\times2.25=2025$."
+      },
+      {
+        "label": "B",
+        "text": "$1350$",
+        "isCorrect": false,
+        "explanation": "This multiplies 900 by 1.5. The factor over two years is $\\frac{900}{400}=2.25$, not 1.5."
+      },
+      {
+        "label": "C",
+        "text": "$2025$",
+        "isCorrect": true,
+        "explanation": "$P(t)=400e^{kt}$ and $\\frac{900}{400}=e^{2k}=\\frac94$. At $t=4$, $e^{4k}=\\left(\\frac94\\right)^2$, so $P(4)=400\\cdot\\frac{81}{16}=2025$."
+      },
+      {
+        "label": "D",
+        "text": "$1400$",
+        "isCorrect": false,
+        "explanation": "This is linear growth (adding 500 every two years). A population with $\\frac{dP}{dt}=kP$ grows by a constant factor each two years, not a constant amount."
+      }
+    ],
+    "explanation": "Exponential growth multiplies by a constant factor in equal time intervals. The factor over the first 2 years is $\\frac{900}{400}$.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-36",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "hard",
+    "stem": "A radioactive substance has a half-life of 6 years. What fraction of an initial sample remains after 15 years?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac14$",
+        "isCorrect": false,
+        "explanation": "This is the fraction after 12 years (two half-lives). 15 years is $2.5$ half-lives."
+      },
+      {
+        "label": "B",
+        "text": "$e^{-5/2}$",
+        "isCorrect": false,
+        "explanation": "This replaces the base $\\frac12$ with $e$. The decay factor per half-life is $\\frac12$, so the amount is $\\left(\\frac12\\right)^{5/2}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac18$",
+        "isCorrect": false,
+        "explanation": "This is the fraction after 18 years (three half-lives)."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac{1}{4\\sqrt2}$",
+        "isCorrect": true,
+        "explanation": "The amount is $A_0\\left(\\frac12\\right)^{t/6}$. At $t=15$: $\\left(\\frac12\\right)^{5/2}=\\frac{1}{4\\sqrt2}\\approx0.177$."
+      }
+    ],
+    "explanation": "Express the amount as $A_0\\left(\\tfrac12\\right)^{t/\\text{half-life}}$.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-37",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "hard",
+    "stem": "A cup of tea cools in a room kept at 20°C according to $\\dfrac{dT}{dt}=-k(T-20)$ for a positive constant $k$. The tea is 80°C at $t=0$ and 50°C at $t=10$ minutes. What is its temperature at $t=30$ minutes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "27.5°C",
+        "isCorrect": true,
+        "explanation": "$T-20=60e^{-kt}$. At $t=10$: $30=60e^{-10k}$, so $e^{-10k}=\\frac12$. At $t=30$: $T-20=60\\left(\\frac12\\right)^3=7.5$, so $T=27.5$."
+      },
+      {
+        "label": "B",
+        "text": "23.75°C",
+        "isCorrect": false,
+        "explanation": "This is the temperature at $t=40$ ($20+60\\cdot\\frac1{16}$). At $t=30$ the difference has halved three times, not four."
+      },
+      {
+        "label": "C",
+        "text": "20°C",
+        "isCorrect": false,
+        "explanation": "The tea approaches 20°C but never reaches it in finite time. The difference $T-20$ decays exponentially."
+      },
+      {
+        "label": "D",
+        "text": "35°C",
+        "isCorrect": false,
+        "explanation": "This is the temperature at $t=20$ ($20+60\\cdot\\frac14=35$). At $t=30$ there have been three halvings of the difference."
+      }
+    ],
+    "explanation": "The difference $T-20$ decays exponentially. It halved in the first 10 minutes, so it halves every 10 minutes.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-38",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "hard",
+    "stem": "A population $P(t)$ satisfies the logistic differential equation $\\dfrac{dP}{dt}=0.02P\\left(1-\\dfrac{P}{500}\\right)$. What is the greatest possible value of $\\dfrac{dP}{dt}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$10$",
+        "isCorrect": false,
+        "explanation": "This is $0.02\\times500$. At $P=500$ the factor $(1-\\frac P{500})$ is 0 and the growth rate is 0."
+      },
+      {
+        "label": "B",
+        "text": "$250$",
+        "isCorrect": false,
+        "explanation": "250 is the population at which the growth rate is greatest, not the growth rate itself."
+      },
+      {
+        "label": "C",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "This is $0.02\\cdot250$, the first factor alone. The second factor $1-\\frac{250}{500}=\\frac12$ halves it."
+      },
+      {
+        "label": "D",
+        "text": "$2.5$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dP}{dt}=0.02P-0.00004P^2$ is a downward parabola in $P$ with its vertex at $P=250$ (half the carrying capacity). There $\\frac{dP}{dt}=0.02(250)\\left(\\frac12\\right)=2.5$."
+      }
+    ],
+    "explanation": "Treat $\\frac{dP}{dt}$ as a function of $P$ and maximize it, either with calculus or by recognizing the vertex of the parabola.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-39",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "hard",
+    "stem": "For what positive value of $k$ does $y=e^{kx}$ satisfy $y''-y'-6y=0$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$6$",
+        "isCorrect": false,
+        "explanation": "$6^2-6-6=24\\neq0$. The constant term $-6$ is the product of the roots, not a root."
+      },
+      {
+        "label": "B",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "$y'=ke^{kx}$ and $y''=k^2e^{kx}$. Substituting: $(k^2-k-6)e^{kx}=0$, so $(k-3)(k+2)=0$. The positive solution is $k=3$."
+      },
+      {
+        "label": "C",
+        "text": "$-2$",
+        "isCorrect": false,
+        "explanation": "$k=-2$ also satisfies the equation, but the question asks for a positive value."
+      },
+      {
+        "label": "D",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "$2^2-2-6=-4\\neq0$. The factorization is $(k-3)(k+2)$."
+      }
+    ],
+    "explanation": "Substitute $y$, $y'$ and $y''$ into the differential equation and solve the resulting quadratic in $k$.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-40",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "hard",
+    "stem": "The solution of $\\dfrac{dy}{dx}=y^2$ with $y(0)=2$ is defined on the largest interval containing $x=0$ on which the solution exists. What is that interval?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$x<\\dfrac12$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{y^2}=dx$ gives $-\\frac1y=x+C$, and $y(0)=2$ gives $C=-\\frac12$. So $y=\\frac{1}{\\frac12-x}=\\frac{2}{1-2x}$, which blows up at $x=\\frac12$. The interval containing 0 is $x<\\frac12$."
+      },
+      {
+        "label": "B",
+        "text": "$x>\\dfrac12$",
+        "isCorrect": false,
+        "explanation": "This interval does not contain $x=0$, where the initial condition is given."
+      },
+      {
+        "label": "C",
+        "text": "All real numbers",
+        "isCorrect": false,
+        "explanation": "The solution $y=\\frac{2}{1-2x}$ has a vertical asymptote at $x=\\frac12$, so it is not defined for all $x$."
+      },
+      {
+        "label": "D",
+        "text": "$-\\dfrac12<x<\\dfrac12$",
+        "isCorrect": false,
+        "explanation": "Nothing goes wrong at $x=-\\frac12$: the denominator is $1-2(-\\frac12)=2$. The solution exists for all $x<\\frac12$."
+      }
+    ],
+    "explanation": "Solve the equation, then find where the solution is undefined and keep the interval that contains the initial point.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-41",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "hard",
+    "stem": "The function $y=f(x)$ satisfies $\\dfrac{dy}{dx}=\\dfrac{y}{x^2+1}$ and $f(0)=2$. What is $f(1)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2e^{\\pi/2}$",
+        "isCorrect": false,
+        "explanation": "$\\arctan1=\\frac\\pi4$, not $\\frac\\pi2$."
+      },
+      {
+        "label": "B",
+        "text": "$2e^{\\pi/4}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{y}=\\frac{dx}{x^2+1}$ gives $\\ln|y|=\\arctan x+C$. $y(0)=2$ gives $C=\\ln2$, so $y=2e^{\\arctan x}$, and $f(1)=2e^{\\pi/4}$."
+      },
+      {
+        "label": "C",
+        "text": "$e^{\\pi/4}$",
+        "isCorrect": false,
+        "explanation": "This drops the factor 2 that comes from the initial condition. $e^C=2$."
+      },
+      {
+        "label": "D",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "This integrates $\\frac{1}{x^2+1}$ as $\\ln(x^2+1)$. The antiderivative of $\\frac{1}{x^2+1}$ is $\\arctan x$."
+      }
+    ],
+    "explanation": "Separate, integrate using $\\int\\frac{dx}{x^2+1}=\\arctan x$, and apply the initial condition.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-42",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "hard",
+    "stem": "A substance decays at a rate proportional to the amount present. If 20% of it decays in the first 3 days, what fraction of the original amount remains after 9 days?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.488",
+        "isCorrect": false,
+        "explanation": "This is $1-0.512$, the fraction that has decayed, not the fraction that remains."
+      },
+      {
+        "label": "B",
+        "text": "0.4",
+        "isCorrect": false,
+        "explanation": "This subtracts 20% three times from the original amount. Decay by a fixed proportion compounds: each period applies to what remains."
+      },
+      {
+        "label": "C",
+        "text": "0.64",
+        "isCorrect": false,
+        "explanation": "This is $0.8^2$, the fraction after 6 days (two periods)."
+      },
+      {
+        "label": "D",
+        "text": "0.512",
+        "isCorrect": true,
+        "explanation": "Each 3-day period multiplies the amount by 0.8. After 9 days (three periods): $0.8^3=0.512$."
+      }
+    ],
+    "explanation": "A constant proportional decay multiplies the amount by a constant factor over equal time intervals.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-43",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "hard",
+    "stem": "The solution curve of $\\dfrac{dy}{dx}=y-x$ passes through the point $(1,1)$. Which statement is true about the graph at that point?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Nothing can be concluded because the slope is 0",
+        "isCorrect": false,
+        "explanation": "The Second Derivative Test applies: $y''=-1<0$, found by differentiating the differential equation implicitly."
+      },
+      {
+        "label": "B",
+        "text": "It has a local maximum",
+        "isCorrect": true,
+        "explanation": "At $(1,1)$, $\\frac{dy}{dx}=1-1=0$. Differentiating, $\\frac{d^2y}{dx^2}=\\frac{dy}{dx}-1$, which is $0-1=-1<0$ at that point. A critical point with negative second derivative is a local maximum."
+      },
+      {
+        "label": "C",
+        "text": "It has a point of inflection",
+        "isCorrect": false,
+        "explanation": "An inflection point needs $y''=0$ with a sign change. Here $y''=-1\\neq0$."
+      },
+      {
+        "label": "D",
+        "text": "It has a local minimum",
+        "isCorrect": false,
+        "explanation": "The second derivative is $-1<0$, not positive."
+      }
+    ],
+    "explanation": "Differentiate $\\frac{dy}{dx}=y-x$ with respect to $x$ to get $\\frac{d^2y}{dx^2}=\\frac{dy}{dx}-1$, then evaluate at the point.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-44",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "hard",
+    "stem": "The amount $A(t)$ of salt, in grams, in a tank satisfies $\\dfrac{dA}{dt}=4-\\dfrac{A}{25}$ with $A(0)=20$, where $t$ is in minutes. What is $A(25)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$100-\\dfrac{100}{e}$",
+        "isCorrect": false,
+        "explanation": "This uses $A(0)=0$. The initial amount here is 20, so $100-A(0)=80$."
+      },
+      {
+        "label": "B",
+        "text": "$20+\\dfrac{80}{e}$",
+        "isCorrect": false,
+        "explanation": "The amount increases toward 100: $100-A$ decays from 80, so $A=100-80e^{-t/25}$, not $20+80e^{-t/25}$."
+      },
+      {
+        "label": "C",
+        "text": "$100-\\dfrac{80}{e^2}$",
+        "isCorrect": false,
+        "explanation": "$t=25$ gives the exponent $-\\frac{25}{25}=-1$. The exponent $-2$ would occur at $t=50$."
+      },
+      {
+        "label": "D",
+        "text": "$100-\\dfrac{80}{e}$",
+        "isCorrect": true,
+        "explanation": "Separate: $\\frac{dA}{100-A}=\\frac{dt}{25}$, so $-\\ln|100-A|=\\frac t{25}+C$. With $A(0)=20$: $100-A=80e^{-t/25}$. At $t=25$: $A=100-80e^{-1}$."
+      }
+    ],
+    "explanation": "Write $\\frac{dA}{dt}=\\frac{100-A}{25}$, separate the variables, and use the initial amount to fix the constant.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-mcq-45",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "hard",
+    "stem": "The function $y=f(t)$ satisfies $\\dfrac{dy}{dt}=-2ty^2$ and $f(0)=\\dfrac12$. What is $f(1)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "This has the sign error $\\frac1y=-t^2+C$. Starting from $-\\frac1y=-t^2+C$, multiply by $-1$ to get $\\frac1y=t^2-C$."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{1}{2e}$",
+        "isCorrect": false,
+        "explanation": "This treats the equation as $\\frac{dy}{dt}=-2ty$ (without the square), giving $y=\\frac12e^{-t^2}$. Here $y$ is squared, so integrating $y^{-2}$ gives $-\\frac1y$, not a logarithm."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{y^2}=-2t\\,dt$ gives $-\\frac1y=-t^2+C$. At $t=0$: $-2=C$. So $\\frac1y=t^2+2$ and $f(1)=\\frac13$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "$\\frac12$ is the initial value $f(0)$. The function decreases because $\\frac{dy}{dt}<0$ for $t>0$."
+      }
+    ],
+    "explanation": "Separate, integrate both sides, apply $f(0)=\\frac12$, and solve for $y$.",
+    "conceptLink": "ap-calc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  }
+]

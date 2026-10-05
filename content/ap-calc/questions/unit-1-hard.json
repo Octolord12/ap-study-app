@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-calc-u1-mcq-31",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "hard",
+    "stem": "Evaluate $\\lim_{x \\to 4} \\frac{\\sqrt{x + 5} - 3}{x - 4}$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "This uses $\\frac{1}{\\sqrt{9}}$ and forgets the $+3$ that the conjugate puts back in the denominator: it is $\\frac{1}{3+3}$, not $\\frac13$."
+      },
+      {
+        "label": "B",
+        "text": "$6$",
+        "isCorrect": false,
+        "explanation": "This is the reciprocal of the correct value. After the factor $x-4$ cancels, the remaining factor $\\sqrt{x+5}+3$ is in the denominator."
+      },
+      {
+        "label": "C",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The numerator does go to 0, but so does the denominator. Direct substitution gives $\\frac{0}{0}$, which says nothing about the value, so the limit is not automatically 0."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": true,
+        "explanation": "Multiply by the conjugate: $\\dfrac{(x+5)-9}{(x-4)(\\sqrt{x+5}+3)} = \\dfrac{1}{\\sqrt{x+5}+3}$, which approaches $\\dfrac{1}{6}$."
+      }
+    ],
+    "explanation": "The expression gives $\\frac00$ at $x=4$. Rationalize the numerator, cancel $x-4$, then substitute: $\\lim_{x\\to4}\\frac{1}{\\sqrt{x+5}+3}=\\frac16$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-32",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "hard",
+    "stem": "Evaluate $\\lim_{x \\to 0} \\frac{1 - \\cos{\\left(2 x \\right)}}{x \\sin{\\left(x \\right)}}$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "Use $1-\\cos 2x = 2\\sin^2 x$. Then $\\dfrac{2\\sin^2 x}{x\\sin x}=2\\cdot\\dfrac{\\sin x}{x}\\to 2\\cdot 1 = 2$."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "Numerator and denominator both go to 0 at the same rate here. The limit of a quotient is not 0 just because the numerator goes to 0."
+      },
+      {
+        "label": "C",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "The factor 2 from $2\\sin^2x$ appears once. Squaring it, or doubling it again for the $2x$ inside the cosine, overcounts."
+      },
+      {
+        "label": "D",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "This would be the value of $\\frac{\\sin x}{x}$ alone. The identity $1-\\cos 2x=2\\sin^2x$ contributes a factor of 2."
+      }
+    ],
+    "explanation": "Rewrite $1-\\cos2x$ as $2\\sin^2x$ so the quotient simplifies to $2\\frac{\\sin x}{x}$, and use $\\lim_{x\\to0}\\frac{\\sin x}{x}=1$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-33",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "hard",
+    "stem": "Let $f(x)=\\dfrac{x^2+ax-6}{x-2}$ for $x\\neq 2$ and $f(2)=c$, where $a$ and $c$ are constants. For which values of $a$ and $c$ is $f$ continuous at $x=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$a=1,\\ c=5$",
+        "isCorrect": true,
+        "explanation": "Continuity needs a finite limit, so the numerator must vanish at 2: $4+2a-6=0$ gives $a=1$. Then $f(x)=\\frac{(x-2)(x+3)}{x-2}=x+3\\to5$, so $c=5$."
+      },
+      {
+        "label": "B",
+        "text": "$a=1,\\ c=0$",
+        "isCorrect": false,
+        "explanation": "$a=1$ is right, but the limit as $x\\to2$ is 5, so $f(2)$ must be 5, not 0."
+      },
+      {
+        "label": "C",
+        "text": "$a=-1,\\ c=-5$",
+        "isCorrect": false,
+        "explanation": "With $a=-1$ the numerator at $x=2$ is $4-2-6=-4\\neq0$, so the limit does not exist as a number. The numerator must be 0 at $x=2$."
+      },
+      {
+        "label": "D",
+        "text": "$a=3,\\ c=5$",
+        "isCorrect": false,
+        "explanation": "With $a=3$ the numerator at $x=2$ is $4+6-6=4\\neq0$, so $f$ has a vertical asymptote at 2 and no value of $c$ can fix it."
+      }
+    ],
+    "explanation": "Two conditions: the limit must exist (numerator zero at 2, giving $a=1$) and $f(2)$ must equal that limit ($c=5$).",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-34",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "hard",
+    "stem": "Evaluate $\\lim_{x \\to \\infty} \\sqrt{4x^2+3x}-2x$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\infty$",
+        "isCorrect": false,
+        "explanation": "Each term is unbounded, but the difference is not. Rationalizing shows it is bounded and tends to a finite number."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{3}{4}$",
+        "isCorrect": true,
+        "explanation": "Multiply by the conjugate: $\\dfrac{3x}{\\sqrt{4x^2+3x}+2x}$. Divide by $x$: $\\dfrac{3}{\\sqrt{4+3/x}+2}\\to\\dfrac{3}{2+2}=\\dfrac34$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{3}{2}$",
+        "isCorrect": false,
+        "explanation": "This forgets that the denominator $\\sqrt{4x^2+3x}+2x$ behaves like $2x+2x=4x$, not $2x$."
+      },
+      {
+        "label": "D",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "This treats $\\infty-\\infty$ as cancelling. The two terms grow at the same rate but their difference settles at a nonzero value."
+      }
+    ],
+    "explanation": "The form is $\\infty-\\infty$. Rationalize, then divide numerator and denominator by $x$ (for $x>0$, $\\sqrt{4x^2+3x}/x=\\sqrt{4+3/x}$).",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-35",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "hard",
+    "stem": "How many vertical and horizontal asymptotes does the graph of $f(x)=\\frac{2 x^{2} - 8}{x^{2} - x - 2}$ have?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "One vertical asymptote ($x=-1$) and no horizontal asymptote",
+        "isCorrect": false,
+        "explanation": "The degrees of numerator and denominator are equal (both 2), so $f(x)\\to\\frac{2}{1}=2$ as $x\\to\\pm\\infty$. There is a horizontal asymptote at $y=2$."
+      },
+      {
+        "label": "B",
+        "text": "Two vertical asymptotes ($x=-1$ and $x=2$) and one horizontal asymptote ($y=2$)",
+        "isCorrect": false,
+        "explanation": "The denominator is zero at $x=2$, but so is the numerator. That factor cancels, so $x=2$ is a removable discontinuity (a hole), not a vertical asymptote."
+      },
+      {
+        "label": "C",
+        "text": "One vertical asymptote ($x=2$) and one horizontal asymptote ($y=2$)",
+        "isCorrect": false,
+        "explanation": "This keeps the wrong zero of the denominator. $x=2$ cancels; the surviving factor of the denominator is $x+1$, so the asymptote is at $x=-1$."
+      },
+      {
+        "label": "D",
+        "text": "One vertical asymptote ($x=-1$) and one horizontal asymptote ($y=2$)",
+        "isCorrect": true,
+        "explanation": "Factor: $f(x)=\\frac{2(x-2)(x+2)}{(x-2)(x+1)}$. The factor $x-2$ cancels, leaving a hole at $x=2$ (at height $\\frac83$), not an asymptote. $x=-1$ is a vertical asymptote and the limit at $\\pm\\infty$ is 2."
+      }
+    ],
+    "explanation": "Cancel the common factor first: the cancelled zero is a hole, the remaining zero of the denominator is a vertical asymptote, and equal degrees give a horizontal asymptote at the ratio of leading coefficients.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-36",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "intermediate-value-theorem",
+    "difficulty": "hard",
+    "stem": "The function $g$ is continuous on $[1,5]$ with $g(1)=-2$, $g(3)=4$ and $g(5)=-1$. Which statement does the Intermediate Value Theorem guarantee?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$g(x)=0$ has at least two solutions in $(1,5)$",
+        "isCorrect": true,
+        "explanation": "$g$ changes sign between $x=1$ and $x=3$ and again between $x=3$ and $x=5$, and each interval contains a zero by the IVT. These intervals do not overlap, so there are at least two zeros."
+      },
+      {
+        "label": "B",
+        "text": "$g(x)=0$ has at least three solutions in $(1,5)$",
+        "isCorrect": false,
+        "explanation": "There are only two sign changes among the three given values. The IVT cannot guarantee a third zero from this information."
+      },
+      {
+        "label": "C",
+        "text": "$g(x)=0$ has exactly one solution in $(1,5)$",
+        "isCorrect": false,
+        "explanation": "The IVT gives a zero in $(1,3)$ (values $-2$ and $4$) and another in $(3,5)$ (values $4$ and $-1$). Two different zeros exist, so exactly one is impossible."
+      },
+      {
+        "label": "D",
+        "text": "$g(x)=0$ has exactly two solutions in $(1,5)$",
+        "isCorrect": false,
+        "explanation": "The IVT only guarantees existence. There could be more zeros (the graph might wiggle across the axis several times); it does not say there are exactly two."
+      }
+    ],
+    "explanation": "Apply the IVT separately on $[1,3]$ and $[3,5]$: $0$ lies between $-2$ and $4$, and between $4$ and $-1$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-37",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "hard",
+    "stem": "What is $\\lim_{x \\to -3} \\frac{\\left|{x + 3}\\right|}{x^{2} - 9}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "This is only the left-hand limit. The right-hand limit is $-\\frac16$, so the two-sided limit does not exist."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The numerator $|x+3|$ goes to 0, but so does $x^2-9$. After cancelling, the quotient is $\\pm\\frac{1}{x-3}$, which is not near 0."
+      },
+      {
+        "label": "C",
+        "text": "$- \\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "This is only the right-hand limit. The left-hand limit is $+\\frac16$, so the two-sided limit does not exist."
+      },
+      {
+        "label": "D",
+        "text": "The limit does not exist",
+        "isCorrect": true,
+        "explanation": "For $x<-3$, $|x+3|=-(x+3)$, so the quotient is $\\frac{-1}{x-3}\\to\\frac16$. For $x>-3$ it is $\\frac{1}{x-3}\\to-\\frac16$. The one-sided limits differ, so the two-sided limit does not exist."
+      }
+    ],
+    "explanation": "Split at $x=-3$: the absolute value changes the sign of the numerator on the two sides, giving limits $\\frac16$ and $-\\frac16$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-38",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "hard",
+    "stem": "What is $\\lim_{x \\to 0} x^{2} \\sin{\\left(\\frac{5}{x} \\right)}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The limit does not exist, because $\\sin(5/x)$ oscillates as $x\\to0$",
+        "isCorrect": false,
+        "explanation": "$\\sin(5/x)$ does oscillate, but it is multiplied by $x^2\\to0$, which shrinks the oscillations to nothing. The product is squeezed to 0."
+      },
+      {
+        "label": "B",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "This confuses the pattern with $\\frac{\\sin(5x)}{x}\\to5$. Here the argument of the sine goes to infinity rather than to 0."
+      },
+      {
+        "label": "C",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "Nothing here approaches 1. The sine stays between $-1$ and $1$, and the factor $x^2$ forces the product to 0."
+      },
+      {
+        "label": "D",
+        "text": "$0$",
+        "isCorrect": true,
+        "explanation": "Since $-1\\le\\sin(5/x)\\le1$, we have $-x^2\\le x^2\\sin(5/x)\\le x^2$, and both bounds go to 0. By the Squeeze Theorem the limit is 0."
+      }
+    ],
+    "explanation": "A bounded oscillating factor times a factor that tends to 0 tends to 0. Prove it with $-x^2\\le x^2\\sin(5/x)\\le x^2$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-39",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "hard",
+    "stem": "Let $f(x)=\\frac{x^{2} - 9}{x^{2} - 5 x + 6}$. Which statement correctly describes the discontinuities of $f$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Jump at $x=3$, infinite at $x=2$",
+        "isCorrect": false,
+        "explanation": "A jump needs unequal finite one-sided limits. At $x=3$ both one-sided limits equal 6, so the discontinuity is removable."
+      },
+      {
+        "label": "B",
+        "text": "Removable at $x=2$, infinite at $x=3$",
+        "isCorrect": false,
+        "explanation": "This swaps the two points. The factor that cancels is $x-3$, not $x-2$."
+      },
+      {
+        "label": "C",
+        "text": "Removable at both $x=2$ and $x=3$",
+        "isCorrect": false,
+        "explanation": "Only a factor that cancels between numerator and denominator gives a removable discontinuity. $x-2$ remains in the denominator."
+      },
+      {
+        "label": "D",
+        "text": "Removable at $x=3$, infinite (vertical asymptote) at $x=2$",
+        "isCorrect": true,
+        "explanation": "Factor: $f(x)=\\frac{(x-3)(x+3)}{(x-2)(x-3)}$. The factor $x-3$ cancels, so the limit at 3 exists ($\\frac{3+3}{3-2}=6$) but $f(3)$ is undefined: removable. At $x=2$ the denominator goes to 0 with a nonzero numerator: infinite."
+      }
+    ],
+    "explanation": "Factor and cancel. A canceled factor gives a removable discontinuity; a surviving factor in the denominator gives an infinite one.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-40",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "limit-definition-and-notation",
+    "difficulty": "hard",
+    "stem": "Suppose $\\lim_{x\\to2}g(x)=1$ and $g(x)>1$ for all $x$ near 2 with $x\\neq2$. Suppose also $\\lim_{u\\to1^+}f(u)=7$, $\\lim_{u\\to1^-}f(u)=3$ and $f(1)=5$. What is $\\lim_{x\\to2}f(g(x))$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$7$",
+        "isCorrect": true,
+        "explanation": "As $x\\to2$, $g(x)$ approaches 1 from above, so $f(g(x))$ approaches $\\lim_{u\\to1^+}f(u)=7$."
+      },
+      {
+        "label": "B",
+        "text": "The limit does not exist",
+        "isCorrect": false,
+        "explanation": "$f$ does have different one-sided limits at 1, but $g$ only approaches 1 from one side. The composite limit uses only the right-hand limit."
+      },
+      {
+        "label": "C",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "That is the limit of $f$ from the left. $g(x)$ approaches 1 from the right (values above 1)."
+      },
+      {
+        "label": "D",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "$f(1)=5$ is the value at the point, but $g(x)$ never equals 1 near 2 (it stays above 1), so $f(1)$ is never used."
+      }
+    ],
+    "explanation": "For a composite, track the side from which the inner function approaches the value. Here that side is the right.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-41",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "hard",
+    "stem": "Evaluate $\\lim_{x \\to -2} \\frac{x^{3} + 8}{x^{2} + x - 2}$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "The numerator $x^2-2x+4$ is 12 at $x=-2$ and the denominator $x-1$ is $-3$, so the quotient is negative."
+      },
+      {
+        "label": "B",
+        "text": "$-4$",
+        "isCorrect": true,
+        "explanation": "$x^3+8=(x+2)(x^2-2x+4)$ and $x^2+x-2=(x+2)(x-1)$. After cancelling $x+2$: $\\dfrac{x^2-2x+4}{x-1}\\to\\dfrac{4+4+4}{-3}=-4$."
+      },
+      {
+        "label": "C",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The $\\frac00$ form does not mean the limit is 0. Factor out $x+2$ from both parts first."
+      },
+      {
+        "label": "D",
+        "text": "$12$",
+        "isCorrect": false,
+        "explanation": "This evaluates $x^2-2x+4$ at $-2$ but forgets to divide by the remaining factor $x-1=-3$."
+      }
+    ],
+    "explanation": "Factor the sum of cubes and the quadratic, cancel the common factor $x+2$, then substitute.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-42",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "hard",
+    "stem": "Evaluate $\\lim_{x \\to -\\infty} \\frac{3 x^{3} - x}{\\sqrt{x^{6} + 4}}$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The degrees match (both behave like $x^3$), so the limit is a nonzero ratio of leading coefficients, not 0."
+      },
+      {
+        "label": "B",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "This treats $\\sqrt{x^6}$ as $x^3$. For negative $x$, $x^3<0$ but the square root is positive, so $\\sqrt{x^6}=-x^3$."
+      },
+      {
+        "label": "C",
+        "text": "$-3$",
+        "isCorrect": true,
+        "explanation": "For $x<0$, $\\sqrt{x^6}=|x|^3=-x^3$. Dividing top and bottom by $x^3$ (which is negative) gives $\\dfrac{3-1/x^2}{-\\sqrt{1+4/x^6}}\\to\\dfrac{3}{-1}=-3$."
+      },
+      {
+        "label": "D",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "The numerator's leading term is $3x^3$, not $x^3$. The ratio of leading behaviors is $\\frac{3x^3}{-x^3}$."
+      }
+    ],
+    "explanation": "The radical's sign is the trap. For $x\\to-\\infty$, $\\sqrt{x^6}=-x^3$, so the quotient tends to $\\frac{3}{-1}$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-43",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "difficulty": "hard",
+    "stem": "Let $f(x)=\\begin{cases}\\dfrac{1-\\cos 6x}{x^2} & x<0\\\\[2mm] 3k-x & x\\ge0\\end{cases}$. For what value of $k$ is $f$ continuous at $x=0$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$6$",
+        "isCorrect": true,
+        "explanation": "From the left, $\\frac{1-\\cos 6x}{x^2}=36\\cdot\\frac{1-\\cos6x}{(6x)^2}\\to36\\cdot\\frac12=18$. From the right, $f(0)=3k$. Continuity needs $3k=18$, so $k=6$."
+      },
+      {
+        "label": "B",
+        "text": "$18$",
+        "isCorrect": false,
+        "explanation": "18 is the left-hand limit, but $f(0)=3k$. Setting $3k=18$ gives $k=6$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "This uses $\\frac12$ for the left-hand limit, forgetting the factor $6^2=36$ that comes from the argument $6x$."
+      },
+      {
+        "label": "D",
+        "text": "$12$",
+        "isCorrect": false,
+        "explanation": "This takes $36$ as the left-hand limit. The standard limit is $\\frac{1-\\cos u}{u^2}\\to\\frac12$, so the left-hand limit is $36\\cdot\\frac12=18$."
+      }
+    ],
+    "explanation": "Continuity at 0 requires left limit $=$ right limit $=f(0)$. Use $\\frac{1-\\cos u}{u^2}\\to\\frac12$ with $u=6x$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-44",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "infinite-limits-and-asymptotes",
+    "difficulty": "hard",
+    "stem": "What is $\\lim_{x \\to -\\infty} \\frac{5 e^{2 x} + 1}{e^{2 x} - 3 e^{x}}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-\\infty$",
+        "isCorrect": true,
+        "explanation": "As $x\\to-\\infty$, the numerator $5e^{2x}+1\\to1$. The denominator $e^x(e^x-3)$ tends to $0\\cdot(-3)=0$ through negative values. A positive number over a tiny negative number is $-\\infty$."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The exponential terms do vanish, but the denominator vanishes too, while the numerator tends to 1. A nonzero number over something tending to 0 is unbounded."
+      },
+      {
+        "label": "C",
+        "text": "$- \\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "This divides the dominant-looking terms $\\frac{1}{-3e^x}$ and forgets that $e^x\\to0$ as $x\\to-\\infty$. The magnitude grows without bound."
+      },
+      {
+        "label": "D",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "$5$ is the limit as $x\\to+\\infty$ (leading terms $\\frac{5e^{2x}}{e^{2x}}$). As $x\\to-\\infty$ every exponential term goes to 0 and the behavior is different."
+      }
+    ],
+    "explanation": "Check what each piece does at $-\\infty$ separately: numerator tends to 1, denominator tends to 0 from below, so the quotient is $-\\infty$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u1-mcq-45",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "algebraic-limit-techniques",
+    "difficulty": "hard",
+    "stem": "Evaluate $\\lim_{x \\to 3} \\frac{x^{2} - 9}{\\sqrt{x + 13} - 4}$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$6$",
+        "isCorrect": false,
+        "explanation": "This keeps only the factor $x+3=6$. The conjugate factor $\\sqrt{x+13}+4$ equals 8 at $x=3$ and multiplies it."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The numerator goes to 0, but so does the denominator, so this is a $\\frac00$ form that has to be resolved algebraically."
+      },
+      {
+        "label": "C",
+        "text": "$48$",
+        "isCorrect": true,
+        "explanation": "Multiply by $\\frac{\\sqrt{x+13}+4}{\\sqrt{x+13}+4}$: the denominator becomes $(x+13)-16=x-3$. Then $\\frac{(x-3)(x+3)(\\sqrt{x+13}+4)}{x-3}\\to6\\cdot8=48$."
+      },
+      {
+        "label": "D",
+        "text": "$24$",
+        "isCorrect": false,
+        "explanation": "This evaluates the conjugate factor as $4+0=4$ instead of $\\sqrt{16}+4=8$, giving $6\\cdot4$."
+      }
+    ],
+    "explanation": "Rationalize the denominator, cancel $x-3$, then substitute $x=3$: $(3+3)(\\sqrt{16}+4)=48$.",
+    "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
+    "reviewed": false
+  }
+]

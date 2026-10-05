@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-calc-u6-frq-4",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "riemann-sums-and-definite-integrals",
+    "prompt": "Water flows into a tank at a rate $R(t)$ gallons per minute, where $R$ is a differentiable function of $t$. Selected values are in the table. At time $t=0$ the tank holds 40 gallons.\n\n| $t$ (minutes) | 0 | 3 | 6 | 9 | 12 |\n|---|---|---|---|---|---|\n| $R(t)$ (gal/min) | 8 | 12 | 10 | 6 | 4 |\n\n**(a)** Use a trapezoidal sum with the four subintervals in the table to approximate $\\int_0^{12}R(t)\\,dt$. Show the computations.\n\n**(b)** Using your answer to (a), approximate the amount of water in the tank at $t=12$. Include units.\n\n**(c)** Explain the meaning of $\\frac1{12}\\int_0^{12}R(t)\\,dt$ in the context of the problem, and use your answer to (a) to approximate its value.\n\n**(d)** Is there a time $t$ with $0<t<3$ at which $R(t)=9$? Is there a time $t$ with $3<t<9$ at which $R'(t)=-1$? Justify each answer using a named theorem.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Sets up the trapezoids with widths 3: $3\\cdot\\frac{8+12}2+3\\cdot\\frac{12+10}2+3\\cdot\\frac{10+6}2+3\\cdot\\frac{6+4}2$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Evaluates to 102"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Adds the initial 40 gallons: about 142 gallons"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Interprets it as the average rate at which water flows in over the 12 minutes, in gallons per minute"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Approximates it as $\\frac{102}{12}=8.5$ gallons per minute"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) For $R(t)=9$: states $R$ is continuous with $R(0)=8<9<12=R(3)$ and applies the Intermediate Value Theorem"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(d) For $R'(t)=-1$: states $R$ is differentiable, computes $\\frac{R(9)-R(3)}{9-3}=\\frac{6-12}{6}=-1$, and applies the Mean Value Theorem"
+      }
+    ],
+    "sampleResponse": "(a) $\\int_0^{12}R(t)\\,dt\\approx3\\cdot\\frac{8+12}{2}+3\\cdot\\frac{12+10}{2}+3\\cdot\\frac{10+6}{2}+3\\cdot\\frac{6+4}{2}=30+33+24+15=102$.\n(b) Amount at $t=12$ is the initial amount plus the net change: $40+102=142$ gallons.\n(c) $\\frac1{12}\\int_0^{12}R(t)\\,dt$ is the average value of $R$ on $[0,12]$: the average rate, in gallons per minute, at which water flows into the tank during the 12 minutes. It is approximately $\\frac{102}{12}=8.5$ gallons per minute.\n(d) $R$ is differentiable, so it is continuous. $R(0)=8<9<12=R(3)$, so by the Intermediate Value Theorem there is a $t$ in $(0,3)$ with $R(t)=9$. On $[3,9]$ $R$ is continuous and differentiable, with $\\frac{R(9)-R(3)}{9-3}=\\frac{6-12}{6}=-1$, so by the Mean Value Theorem there is a $t$ in $(3,9)$ with $R'(t)=-1$.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u6-frq-5",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "fundamental-theorem-of-calculus",
+    "prompt": "**(a)** The function $f$ satisfies $f'(x)=3x^2-2x$ and $f(1)=4$. Find $f(x)$, and find $f(2)$.\n\n**(b)** Use the substitution $u=x^2$ to evaluate $\\displaystyle\\int_0^2xe^{x^2}\\,dx$. Show how the limits of integration change.\n\n**(c)** Let $G(x)=\\displaystyle\\int_1^{x^2}\\left(t^2-t\\right)dt$. Find $G'(x)$.\n\n**(d)** Find the $x$-coordinate of each local extremum of $G$, and classify each as a local maximum or a local minimum. Justify your answer.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Antidifferentiates to $f(x)=x^3-x^2+C$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Uses $f(1)=4$ to find $C=4$ and computes $f(2)=8$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Substitutes $u=x^2$, $du=2x\\,dx$ and changes the limits to $u=0$ and $u=4$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Evaluates $\\frac12\\int_0^4e^u\\,du=\\frac{e^4-1}2$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Applies the Fundamental Theorem with the chain rule: $G'(x)=\\left((x^2)^2-x^2\\right)\\cdot2x=2x^5-2x^3$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Solves $G'(x)=2x^3(x^2-1)=0$ for $x=-1,0,1$"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(d) Uses the sign of $G'$ to classify: local minimum at $x=-1$ and $x=1$, local maximum at $x=0$"
+      }
+    ],
+    "sampleResponse": "(a) $f(x)=x^3-x^2+C$. $f(1)=0+C=4$, so $C=4$ and $f(x)=x^3-x^2+4$. Then $f(2)=8-4+4=8$.\n(b) With $u=x^2$, $du=2x\\,dx$, so $x\\,dx=\\frac12du$. When $x=0$, $u=0$; when $x=2$, $u=4$. $\\int_0^2xe^{x^2}dx=\\frac12\\int_0^4e^u\\,du=\\frac12(e^4-1)$.\n(c) $G'(x)=\\left((x^2)^2-x^2\\right)\\cdot2x=2x^5-2x^3$.\n(d) $G'(x)=2x^3(x^2-1)=0$ at $x=-1,0,1$. For $x<-1$, $G'<0$; on $(-1,0)$, $G'>0$; on $(0,1)$, $G'<0$; for $x>1$, $G'>0$. $G'$ changes from negative to positive at $x=-1$ and $x=1$ (local minima) and from positive to negative at $x=0$ (local maximum).",
+    "reviewed": false
+  }
+]

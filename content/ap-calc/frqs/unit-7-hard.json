@@ -1,0 +1,99 @@
+[
+  {
+    "id": "ap-calc-u7-frq-4",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "prompt": "Consider the differential equation $\\dfrac{dy}{dx}=x(y-2)$.\n\n**(a)** Find the slope of the solution curve at each of the points $(-1,0)$, $(0,3)$, $(1,3)$ and $(2,1)$.\n\n**(b)** Find $\\dfrac{d^2y}{dx^2}$ in terms of $x$ and $y$. Determine whether a solution curve through $(1,3)$ is concave up or concave down at that point.\n\n**(c)** Find the particular solution $y=f(x)$ with $f(0)=5$.\n\n**(d)** Explain why the horizontal line $y=2$ is a solution curve of the differential equation.",
+    "pointValue": 8,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Slopes at $(-1,0)$ and $(0,3)$: $2$ and $0$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Slopes at $(1,3)$ and $(2,1)$: $1$ and $-2$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Uses implicit differentiation: $\\frac{d^2y}{dx^2}=(y-2)+x\\frac{dy}{dx}=(y-2)(1+x^2)$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Evaluates $\\frac{d^2y}{dx^2}=2>0$ at $(1,3)$ and concludes concave up"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Separates variables: $\\frac{dy}{y-2}=x\\,dx$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(c) Antidifferentiates both sides: $\\ln|y-2|=\\frac{x^2}2+C$"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(c) Uses $f(0)=5$ to get $y=2+3e^{x^2/2}$"
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "(d) Notes that $y=2$ makes the right side 0, and the left side 0 for a constant function"
+      }
+    ],
+    "sampleResponse": "(a) The slope at $(x,y)$ is $x(y-2)$. At $(-1,0)$: $(-1)(-2)=2$. At $(0,3)$: $0$. At $(1,3)$: $1$. At $(2,1)$: $2(-1)=-2$.\n(b) $\\frac{d^2y}{dx^2}=(y-2)+x\\frac{dy}{dx}=(y-2)+x\\cdot x(y-2)=(y-2)(1+x^2)$. At $(1,3)$: $(1)(2)=2>0$, so the solution curve is concave up there.\n(c) $\\frac{dy}{y-2}=x\\,dx$, so $\\ln|y-2|=\\frac{x^2}2+C$ and $y-2=Ke^{x^2/2}$. From $f(0)=5$: $K=3$. So $f(x)=2+3e^{x^2/2}$.\n(d) If $y=2$ then $\\frac{dy}{dx}=0$ and $x(y-2)=0$, so both sides of the differential equation are 0 for every $x$. The constant function $y=2$ satisfies the equation.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calc-u7-frq-5",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "prompt": "A cup of coffee at 90°C is placed in a room whose temperature is a constant 20°C. The temperature $T(t)$ of the coffee, in °C, satisfies $\\dfrac{dT}{dt}=-k(T-20)$ for a positive constant $k$, where $t$ is in minutes. At $t=0$ the coffee is cooling at a rate of 3.5°C per minute.\n\n**(a)** Find the value of $k$.\n\n**(b)** Find the particular solution $T=T(t)$ with $T(0)=90$. Show the steps of the separation of variables.\n\n**(c)** Find the time at which the coffee reaches 40°C. Give an exact answer.\n\n**(d)** Find $\\dfrac{dT}{dt}$ at the moment the coffee reaches 40°C.\n\n**(e)** Does the coffee ever reach exactly 20°C? Justify your answer.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses $\\frac{dT}{dt}=-3.5$ at $T=90$: $-3.5=-k(70)$, so $k=\\frac1{20}$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Separates variables: $\\frac{dT}{T-20}=-\\frac1{20}dt$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Antidifferentiates: $\\ln|T-20|=-\\frac t{20}+C$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Uses $T(0)=90$ to get $T=20+70e^{-t/20}$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Solves $20=70e^{-t/20}$ to get $t=20\\ln\\frac72$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Evaluates $\\frac{dT}{dt}=-\\frac1{20}(40-20)=-1$ °C per minute"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(e) Says no: $T-20=70e^{-t/20}>0$ for all $t$, so $T$ approaches 20 but never equals it"
+      }
+    ],
+    "sampleResponse": "(a) At $t=0$: $-3.5=-k(90-20)=-70k$, so $k=\\frac{1}{20}$.\n(b) $\\frac{dT}{T-20}=-\\frac1{20}dt$. Integrating: $\\ln|T-20|=-\\frac t{20}+C$, so $T-20=Ae^{-t/20}$. From $T(0)=90$: $A=70$. $T(t)=20+70e^{-t/20}$.\n(c) $40=20+70e^{-t/20}$ gives $e^{-t/20}=\\frac27$, so $t=20\\ln\\frac72$ minutes.\n(d) $\\frac{dT}{dt}=-\\frac1{20}(T-20)=-\\frac1{20}(20)=-1$ °C per minute.\n(e) No. $T(t)-20=70e^{-t/20}>0$ for every $t$, so $T(t)>20$ always. The temperature approaches 20°C as $t\\to\\infty$ but never reaches it.",
+    "reviewed": false
+  }
+]

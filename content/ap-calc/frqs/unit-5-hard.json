@@ -1,0 +1,123 @@
+[
+  {
+    "id": "ap-calc-u5-frq-4",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "curve-sketching",
+    "prompt": "The function $f$ is differentiable on $[0,8]$. The graph of $f'$, the derivative of $f$, is shown. It consists of line segments, with $f(3)=6$.\n\n**(a)** On what intervals is $f$ increasing? Justify your answer.\n\n**(b)** Find the $x$-coordinate of each local extremum of $f$ on $(0,8)$, and classify each as a local maximum or a local minimum. Justify your answer.\n\n**(c)** On what intervals is the graph of $f$ concave up? Find the $x$-coordinates of all points of inflection and justify your answer.\n\n**(d)** Find an equation of the line tangent to the graph of $f$ at $x=3$. Is the $y$-value of this line at $x=3.2$ greater than or less than $f(3.2)$? Justify your answer.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Finds where $f'>0$ using the graph: $f'$ crosses zero at $x=1$ and $x=4$, so $f$ is increasing on $(1,4)$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Identifies a local minimum at $x=1$ ($f'$ changes from negative to positive)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Identifies a local maximum at $x=4$ ($f'$ changes from positive to negative) and notes $f'$ has no other sign changes on $(0,8)$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) States concave up where $f'$ is increasing: $(0,2)$ and $(6,8)$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Gives inflection points at $x=2$ and $x=6$ because $f'$ changes from increasing to decreasing and back"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Finds $f'(3)=1.5$ and the tangent line $y-6=1.5(x-3)$"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(d) Concludes the tangent value is greater, since $f'$ is decreasing near $x=3$ so $f$ is concave down"
+      }
+    ],
+    "sampleResponse": "(a) $f'>0$ when its graph is above the axis. The segment from $(0,-3)$ to $(2,3)$ crosses the axis at $x=1$, and the segment from $(2,3)$ to $(6,-3)$ crosses at $x=4$. So $f'>0$ on $(1,4)$ and $f$ is increasing on $[1,4]$.\n(b) $f'$ changes from negative to positive at $x=1$, so $f$ has a local minimum there. $f'$ changes from positive to negative at $x=4$, so $f$ has a local maximum there. $f'$ is negative on $(4,8)$, so there are no other sign changes.\n(c) $f$ is concave up where $f'$ is increasing: on $(0,2)$ and $(6,8)$. $f'$ changes from increasing to decreasing at $x=2$ and from decreasing to increasing at $x=6$, so the inflection points are at $x=2$ and $x=6$.\n(d) The slope of $f'$ between $x=2$ and $x=6$ is $\\frac{-3-3}{4}=-1.5$, so $f'(3)=3-1.5=1.5$. The tangent line is $y-6=1.5(x-3)$. At $x=3.2$ it gives $6.3$. Since $f'$ is decreasing near $x=3$, $f$ is concave down there, so the graph lies below its tangent line: the tangent line value is greater than $f(3.2)$.",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Graph of f prime made of line segments through (0,-3), (2,3), (6,-3) and (8,-1).",
+      "xLabel": "x",
+      "yLabel": "f'(x)",
+      "xMin": 0,
+      "xMax": 8,
+      "yMin": -4,
+      "yMax": 4,
+      "series": [
+        {
+          "points": [
+            {
+              "x": 0,
+              "y": -3
+            },
+            {
+              "x": 2,
+              "y": 3
+            },
+            {
+              "x": 6,
+              "y": -3
+            },
+            {
+              "x": 8,
+              "y": -1
+            }
+          ],
+          "color": "blue",
+          "label": "f'"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-calc-u5-frq-5",
+    "unit": "unit-5-analytical-applications-of-differentiation",
+    "topic": "optimization",
+    "prompt": "A window is made in the shape of a rectangle of width $2r$ and height $h$, topped by a semicircle of radius $r$ (the semicircle's diameter is the top side of the rectangle). The perimeter of the whole window, including the bottom side of the rectangle, is 24 feet.\n\n**(a)** Show that $h=\\dfrac{24-(2+\\pi)r}{2}$.\n\n**(b)** Write the area $A(r)$ of the window in terms of $r$ only.\n\n**(c)** Find the value of $r$ that maximizes the area. Justify that this value gives an absolute maximum.\n\n**(d)** Find the maximum area.\n\n**(e)** Show that, for the window of maximum area, $h=r$.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Writes the perimeter $2r+2h+\\pi r=24$ and solves for $h$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Writes $A=2rh+\\frac12\\pi r^2$ and substitutes to get $A(r)=24r-2r^2-\\frac{\\pi}{2}r^2$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Finds $A'(r)=24-(4+\\pi)r=0$, so $r=\\frac{24}{4+\\pi}$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Justifies a maximum, for example $A''(r)=-(4+\\pi)<0$, or that $A$ is a downward parabola, and checks $h>0$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Gives $A_{\\max}=\\frac{288}{4+\\pi}$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(e) Substitutes $r=\\frac{24}{4+\\pi}$ into the formula for $h$ and simplifies to $h=r$"
+      }
+    ],
+    "sampleResponse": "(a) The perimeter is the bottom ($2r$), two sides ($2h$) and the semicircular arc ($\\pi r$): $2r+2h+\\pi r=24$, so $h=\\frac{24-2r-\\pi r}{2}=\\frac{24-(2+\\pi)r}{2}$.\n(b) $A=2rh+\\frac12\\pi r^2=r\\left(24-(2+\\pi)r\\right)+\\frac\\pi2r^2=24r-2r^2-\\frac\\pi2r^2$.\n(c) $A'(r)=24-4r-\\pi r=24-(4+\\pi)r$, which is 0 at $r=\\frac{24}{4+\\pi}$. $A''(r)=-(4+\\pi)<0$ for all $r$, so $A$ is concave down everywhere and the critical number gives the absolute maximum on the domain. At this $r$, $h>0$ (see (e)), so it is a valid window.\n(d) $A=24r-\\frac{4+\\pi}{2}r^2$. With $(4+\\pi)r=24$: $A=24r-12r=12r=\\frac{288}{4+\\pi}$ square feet.\n(e) $h=\\frac{24-(2+\\pi)r}{2}$ with $r=\\frac{24}{4+\\pi}$: $24-(2+\\pi)\\frac{24}{4+\\pi}=\\frac{24(4+\\pi)-24(2+\\pi)}{4+\\pi}=\\frac{48}{4+\\pi}$, so $h=\\frac{24}{4+\\pi}=r$.",
+    "reviewed": false
+  }
+]

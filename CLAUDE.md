@@ -418,7 +418,7 @@ each with a nested `topics` array) match `CourseSchema`/`UnitSchema` in
 
 **Sample bank seeded so far**: all four launch courses are fully authored —
 AP CSA (10 units, 300 MCQs + 30 FRQs), AP World History: Modern (9 units,
-270 MCQs + 35 FRQs), AP Calculus AB (8 units, 240 MCQs + 24 FRQs), and AP
+270 MCQs + 35 FRQs), AP Calculus AB (8 units, 240 MCQs + 24 FRQs, plus a hard set, see "Hard Calc AB set"), and AP
 Physics 1 (8 units, 240 MCQs + 24 FRQs). See the Milestone 7 section below.
 
 ### Content generation at scale (Milestone 7, done)
@@ -1323,6 +1323,42 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
   it needs one.
 - The privacy page says deletion and password change are in Settings; it also still
   promises access/correction and waitlist removal without an account by request.
+
+## Hard Calc AB set (harder questions, added alongside)
+
+The owner found the existing banks too easy (the items tagged `hard` were things like "find
+f'(3) for x² from the difference quotient") and supplied three pages of a real Calc AB
+class's quizzes as the *difficulty* reference (questions only; student work and marks were
+ignored on purpose). The new items are **additional**, not replacements, so no existing
+question id, attempt or history changed.
+
+- **Size and files**: per unit, 15 MCQs (`ap-calc-uN-mcq-31..45`) and 2 FRQs
+  (`ap-calc-uN-frq-4..5`), tagged `difficulty: "hard"`, in `questions/unit-N-hard.json` and
+  `frqs/unit-N-hard.json`. 120 MCQs + 16 FRQs in all, all `reviewed: false`. The Calc AB
+  bank is now 360 MCQs + 40 FRQs.
+- **What "hard" means here** (the reference's style): several steps, a trap, a justification.
+  Simplify then differentiate; tangent *and normal* lines; give the *point*, not just the
+  x-value; a double root is a zero but not a sign change; continuous does not mean
+  differentiable (one-sided derivatives); a limit-definition derivation; L'Hôpital that does
+  not apply; "exactly" versus "at least" in the IVT; setup-only washer integrals. No
+  calculator needed. Several use the diagram support (a graph of f' or f).
+- **How correctness is established**: the items are *generated* by
+  `scripts/content-authoring/ap-calc-hard/u1.py..u8.py` (see its README). Each answer is
+  computed in sympy from the same objects the stem is printed from, every wrong choice is
+  a named mistake whose value is also computed, and asserts fail if two choices coincide
+  or the keyed answer is wrong. Also verified: `content:validate`, the letter-reference
+  audit (`tests/choice-letters-audit.test.ts`), and all 1,342 new strings rendered through the
+  real KaTeX pipeline with 0 errors and no raw LaTeX left visible. **Hand-written parts** (the
+  explanation of why each wrong choice is wrong, and the FRQ rubrics and sample responses)
+  were proofread but are not machine-checked; they are the likeliest place for a slip, which
+  is why the flag stays `reviewed: false` until a person approves them in `/admin/review`.
+- **Editing**: re-running a script overwrites its output, so change the script, not the
+  JSON. The other three courses still have only the original (easy) banks; the same
+  `lib.py` can be reused once the owner has judged the Calc AB difficulty.
+- **Effects to know**: exam simulations draw from the whole pool, so about a third of an
+  exam's Calc AB questions are now from the hard set. Hard items earn the highest XP tier.
+  The landing page and course pages read counts from the database, so they change when
+  the content is seeded (`npm run content:seed`; a direct database write, ask first).
 
 ## Footer, contact and privacy
 
