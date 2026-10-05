@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-world-u3-mcq-31",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-expand",
+    "difficulty": "hard",
+    "stem": "> “The great cannon of the Sultan's foundry hurled stones that no wall could withstand. After weeks of bombardment the defenders could no longer hold the breach, and the city that had stood for a thousand years was taken.”\n>\n> *Source: A court historian's account of the siege of Constantinople, 1453*\n\nWhich statement best explains the Ottoman success described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Byzantine emperor surrendered because of a popular revolution inside the city.",
+        "isCorrect": false,
+        "explanation": "The city fell to a military assault after a siege; there was no revolution."
+      },
+      {
+        "label": "B",
+        "text": "The Ottomans combined gunpowder artillery with a disciplined professional army to overcome strong fortifications.",
+        "isCorrect": true,
+        "explanation": "Large cannon and the sultan's organized forces, including the Janissaries, allowed Mehmed II to capture a city whose walls had resisted attackers for centuries."
+      },
+      {
+        "label": "C",
+        "text": "The Ottomans used steam-powered ships to break the blockade.",
+        "isCorrect": false,
+        "explanation": "Steam power came centuries later."
+      },
+      {
+        "label": "D",
+        "text": "The Ottomans captured the city after an alliance with the Mongol Empire.",
+        "isCorrect": false,
+        "explanation": "The Mongol Empire had divided centuries before and was not the Ottomans' ally in 1453."
+      }
+    ],
+    "explanation": "The passage emphasizes cannon and bombardment, which together with a professional army explain the victory.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-32",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-administration",
+    "difficulty": "hard",
+    "stem": "The Ottoman devshirme system, in which boys from Christian villages in the Balkans were taken into state service, most directly served which purpose?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It created a loyal professional military and administrative class, such as the Janissaries, whose members depended on the sultan rather than on hereditary nobility.",
+        "isCorrect": true,
+        "explanation": "Boys were raised as Muslims and trained for the army and administration, giving the sultan servants with no independent family power base."
+      },
+      {
+        "label": "B",
+        "text": "It enforced the conversion of all Muslims to Christianity.",
+        "isCorrect": false,
+        "explanation": "The system converted the drafted boys to Islam, not the reverse."
+      },
+      {
+        "label": "C",
+        "text": "It supplied enslaved labor for plantations in the Americas.",
+        "isCorrect": false,
+        "explanation": "The devshirme served the Ottoman state's military and administration, not American plantations."
+      },
+      {
+        "label": "D",
+        "text": "It selected scholars by written examinations to staff a Confucian-style bureaucracy.",
+        "isCorrect": false,
+        "explanation": "The devshirme drafted boys; it was not an examination system and was not Confucian."
+      }
+    ],
+    "explanation": "The devshirme created a loyal, professional elite directly dependent on the sultan.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-33",
+    "unit": "unit-3-land-based-empires",
+    "topic": "religion-and-state-power",
+    "difficulty": "hard",
+    "stem": "> “Let no man be molested on account of his religion, and let anyone be free to follow the faith he prefers. The special tax on those who are not Muslims is abolished, for all my subjects are alike under my protection.”\n>\n> *Source: Edict of a Mughal emperor, late sixteenth century*\n\nThe policy described in the passage is best understood as which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A response to a Hindu revolt that was meant to force all subjects to convert to Islam.",
+        "isCorrect": false,
+        "explanation": "The passage promotes religious freedom, not forced conversion."
+      },
+      {
+        "label": "B",
+        "text": "A requirement that all subjects follow the same state religion.",
+        "isCorrect": false,
+        "explanation": "The edict allows each person to follow his own faith."
+      },
+      {
+        "label": "C",
+        "text": "An effort to win the loyalty of a diverse population, most of which was not Muslim, by tolerating religious differences.",
+        "isCorrect": true,
+        "explanation": "Akbar governed a mostly Hindu population and strengthened Mughal rule by tolerance, abolishing the jizya and including Hindus in the administration."
+      },
+      {
+        "label": "D",
+        "text": "A rejection of Islam by the Mughal court in favor of Christianity.",
+        "isCorrect": false,
+        "explanation": "The Mughal rulers remained Muslim; the policy concerned toleration."
+      }
+    ],
+    "explanation": "The passage reflects a policy of toleration that helped the Mughals rule a religiously diverse empire.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-34",
+    "unit": "unit-3-land-based-empires",
+    "topic": "religion-and-state-power",
+    "difficulty": "hard",
+    "stem": "Which statement describes a major consequence of the rise of the Safavid dynasty in Persia in the early sixteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Safavids made Twelver Shi'a Islam the state religion, which deepened the religious division between Persia and its Sunni Ottoman neighbors.",
+        "isCorrect": true,
+        "explanation": "Shah Ismail's establishment of Shi'ism as the state faith shaped Persian identity and added a religious dimension to the Safavid-Ottoman rivalry."
+      },
+      {
+        "label": "B",
+        "text": "The Safavids adopted Sunni Islam in order to ally with the Ottomans.",
+        "isCorrect": false,
+        "explanation": "The Safavids were rivals of the Ottomans and promoted Shi'ism, not Sunni Islam."
+      },
+      {
+        "label": "C",
+        "text": "The Safavids abolished the influence of religion in government and law.",
+        "isCorrect": false,
+        "explanation": "Religion was central to Safavid rule, which relied on Shi'a clergy and religious legitimacy."
+      },
+      {
+        "label": "D",
+        "text": "The Safavids converted Persia to Christianity.",
+        "isCorrect": false,
+        "explanation": "Persia remained Muslim under the Safavids."
+      }
+    ],
+    "explanation": "The Safavids' promotion of Shi'a Islam shaped Persia's identity and its conflicts with the Sunni Ottomans.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-35",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-expand",
+    "difficulty": "hard",
+    "stem": "Which statement best explains Russian expansion across Siberia in the sixteenth and seventeenth centuries?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Russian rulers, using military force and fortified outposts, extended their authority over a vast, thinly populated region in search of furs and other resources.",
+        "isCorrect": true,
+        "explanation": "Cossacks and other expeditions pushed east for the lucrative fur trade, building forts and collecting tribute from native peoples."
+      },
+      {
+        "label": "B",
+        "text": "Russia reached Siberia by sea power in the Pacific Ocean.",
+        "isCorrect": false,
+        "explanation": "Russian expansion into Siberia was overland, by rivers and land routes."
+      },
+      {
+        "label": "C",
+        "text": "Russia conquered Siberia from the Ottoman Empire.",
+        "isCorrect": false,
+        "explanation": "The Ottoman Empire did not control Siberia."
+      },
+      {
+        "label": "D",
+        "text": "Russia expanded into Siberia at the request of the Ming dynasty.",
+        "isCorrect": false,
+        "explanation": "The Ming did not invite Russian expansion."
+      }
+    ],
+    "explanation": "Russian expansion was an overland drive for resources, especially furs.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-36",
+    "unit": "unit-3-land-based-empires",
+    "topic": "comparing-empires",
+    "difficulty": "hard",
+    "stem": "> “All men within the realm shall shave their foreheads and wear the queue as the Manchu do. Those who comply are loyal subjects; those who refuse are rebels and shall be punished.”\n>\n> *Source: Decree of the Qing court, 1645*\n\nThis policy is best understood as which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "An attempt by the Ming dynasty to preserve Han Chinese traditions.",
+        "isCorrect": false,
+        "explanation": "The decree was issued by the Qing, who replaced the Ming."
+      },
+      {
+        "label": "B",
+        "text": "A symbolic demand intended to enforce acceptance of Manchu rule over the Han Chinese majority.",
+        "isCorrect": true,
+        "explanation": "The queue order made hairstyle a sign of submission to the new dynasty, and resistance to it was treated as rebellion."
+      },
+      {
+        "label": "C",
+        "text": "A fashion that spread voluntarily among Chinese merchants through trade with Europe.",
+        "isCorrect": false,
+        "explanation": "The decree required compliance and punished refusal."
+      },
+      {
+        "label": "D",
+        "text": "A reform that gave Han Chinese full political equality with the Manchus.",
+        "isCorrect": false,
+        "explanation": "The Qing maintained a distinction between Manchus and Han Chinese."
+      }
+    ],
+    "explanation": "The queue order enforced acceptance of Manchu authority.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-37",
+    "unit": "unit-3-land-based-empires",
+    "topic": "comparing-empires",
+    "difficulty": "hard",
+    "stem": "Which statement best compares the Ottoman and Mughal empires in the sixteenth and seventeenth centuries?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Neither used gunpowder weapons, relying instead on traditional cavalry.",
+        "isCorrect": false,
+        "explanation": "Both used cannon and muskets as important elements of their military power."
+      },
+      {
+        "label": "B",
+        "text": "The Ottomans ruled a mostly Hindu population and the Mughals ruled the Balkans.",
+        "isCorrect": false,
+        "explanation": "The Mughals ruled northern India and the Ottomans ruled Anatolia, the Balkans and the Arab lands."
+      },
+      {
+        "label": "C",
+        "text": "Both were governed by Confucian bureaucracies chosen through examinations.",
+        "isCorrect": false,
+        "explanation": "Neither used a Confucian examination system."
+      },
+      {
+        "label": "D",
+        "text": "Both used gunpowder weapons and governed religiously diverse populations; the Mughals ruled a mostly Hindu population, while the Ottomans allowed religious minorities to manage their own communal affairs through the millet system.",
+        "isCorrect": true,
+        "explanation": "Both were Muslim-ruled gunpowder empires with diverse subjects, but their circumstances differed in the religious composition of their populations."
+      }
+    ],
+    "explanation": "The two empires shared gunpowder warfare and diversity but governed different religious populations.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-38",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-administration",
+    "difficulty": "hard",
+    "stem": "The Tokugawa shogunate's requirement that regional lords (daimyo) spend alternate years in the capital Edo, leaving their families there, most directly helped the shogunate to do which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Control powerful regional lords by keeping their families as hostages and draining their resources through the cost of travel and maintaining two residences.",
+        "isCorrect": true,
+        "explanation": "Alternate attendance (sankin-kotai) reduced the daimyo's capacity to rebel and kept them under the shogun's observation."
+      },
+      {
+        "label": "B",
+        "text": "Encourage the daimyo to found overseas colonies.",
+        "isCorrect": false,
+        "explanation": "Tokugawa policy limited overseas contacts and did not support colonization."
+      },
+      {
+        "label": "C",
+        "text": "Build a unified national army of conscripts from every region.",
+        "isCorrect": false,
+        "explanation": "The system controlled the lords; it did not create a conscript national army."
+      },
+      {
+        "label": "D",
+        "text": "Enforce the adoption of Christianity in the domains.",
+        "isCorrect": false,
+        "explanation": "The shogunate suppressed Christianity."
+      }
+    ],
+    "explanation": "Alternate attendance kept the daimyo under Tokugawa control.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-39",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-administration",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the Ottoman millet system?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It allowed religious minority communities such as Christians and Jews to manage their own religious and communal affairs under their own leaders, in return for loyalty and taxes.",
+        "isCorrect": true,
+        "explanation": "The millet system gave recognized religious communities a degree of self-government, which helped the sultans rule a diverse empire."
+      },
+      {
+        "label": "B",
+        "text": "It banned non-Muslims from trading and owning property.",
+        "isCorrect": false,
+        "explanation": "Non-Muslims took part in trade and other economic activity."
+      },
+      {
+        "label": "C",
+        "text": "It required all subjects to convert to Islam to remain in the empire.",
+        "isCorrect": false,
+        "explanation": "The Ottomans generally did not require conversion; non-Muslims paid special taxes and kept their faiths."
+      },
+      {
+        "label": "D",
+        "text": "It guaranteed non-Muslims equal political power in the sultan's government.",
+        "isCorrect": false,
+        "explanation": "Non-Muslims were protected subjects but were not equal in political rights."
+      }
+    ],
+    "explanation": "The millet system gave religious minorities limited self-government.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-40",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-expand",
+    "difficulty": "hard",
+    "stem": "A historian argues that gunpowder weapons were important to the rise of the Ottoman, Safavid and Mughal empires. Which evidence would best support this argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Evidence that all three empires banned firearms in their armies.",
+        "isCorrect": false,
+        "explanation": "These empires embraced firearms, so a ban would contradict the claim."
+      },
+      {
+        "label": "B",
+        "text": "Evidence that all three empires were quickly defeated by nomadic cavalry.",
+        "isCorrect": false,
+        "explanation": "Such evidence would undermine the argument rather than support it."
+      },
+      {
+        "label": "C",
+        "text": "Evidence that all three empires used steam engines in their factories.",
+        "isCorrect": false,
+        "explanation": "Steam engines are an eighteenth-century and later development."
+      },
+      {
+        "label": "D",
+        "text": "Evidence that rulers used cannon in sieges and musket-armed infantry, which strengthened central authority by making fortified strongholds and local armies less effective.",
+        "isCorrect": true,
+        "explanation": "Gunpowder weapons favored states with the resources to produce and organize them, helping rulers defeat rivals and fortifications."
+      }
+    ],
+    "explanation": "The best evidence shows gunpowder weapons actually strengthening rulers' military and political power.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-41",
+    "unit": "unit-3-land-based-empires",
+    "topic": "religion-and-state-power",
+    "difficulty": "hard",
+    "stem": "> “It has come to our notice that the tax on those who are not Muslims, abolished in a former reign, shall be collected again, and the officers of the treasury shall see that none escape it.”\n>\n> *Source: Order issued by a Mughal emperor, 1679*\n\nThe policy described in the passage was most likely to have which effect?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Ended the need for any other taxation in the empire.",
+        "isCorrect": false,
+        "explanation": "The jizya did not replace other taxes."
+      },
+      {
+        "label": "B",
+        "text": "Led to the immediate conversion of the whole population to Islam.",
+        "isCorrect": false,
+        "explanation": "Most people remained non-Muslim, and the policy increased opposition."
+      },
+      {
+        "label": "C",
+        "text": "Strengthened the loyalty of non-Muslim subjects to the emperor.",
+        "isCorrect": false,
+        "explanation": "A new tax on non-Muslims was more likely to cause resentment than loyalty."
+      },
+      {
+        "label": "D",
+        "text": "Increased tension with Hindu and other non-Muslim subjects, contributing to unrest and revolts.",
+        "isCorrect": true,
+        "explanation": "Aurangzeb's reimposition of the jizya reversed the earlier policy of toleration and was resented, adding to opposition within the empire."
+      }
+    ],
+    "explanation": "Reimposing the tax reversed earlier toleration and increased resentment.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-42",
+    "unit": "unit-3-land-based-empires",
+    "topic": "comparing-empires",
+    "difficulty": "hard",
+    "stem": "How did Qing rulers legitimize their rule over China?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They adopted the Confucian bureaucracy and examination system while preserving Manchu identity and military institutions.",
+        "isCorrect": true,
+        "explanation": "The Qing kept the traditional imperial bureaucracy and Confucian ideology, which helped win elite support, while keeping Manchu military organization and distinct status."
+      },
+      {
+        "label": "B",
+        "text": "They allowed Han Chinese governors to rule independent states.",
+        "isCorrect": false,
+        "explanation": "The Qing ruled a centralized empire."
+      },
+      {
+        "label": "C",
+        "text": "They abolished Confucianism and examinations and governed only through Manchu officers.",
+        "isCorrect": false,
+        "explanation": "The Qing continued the examinations and used Confucian ideology."
+      },
+      {
+        "label": "D",
+        "text": "They abolished the emperor's title and adopted a republic.",
+        "isCorrect": false,
+        "explanation": "China remained an empire under the Qing until 1912."
+      }
+    ],
+    "explanation": "The Qing combined the existing Chinese system of rule with Manchu military and ethnic distinctions.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-43",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-expand",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the rise of the Songhai Empire in West Africa in the fifteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Songhai was created by the Mongol Empire as a province.",
+        "isCorrect": false,
+        "explanation": "The Mongols never ruled West Africa."
+      },
+      {
+        "label": "B",
+        "text": "Songhai defeated the Portuguese navy in the middle of the fifteenth century and took over the Atlantic trade.",
+        "isCorrect": false,
+        "explanation": "Songhai was an inland Sahel empire, and it did not defeat the Portuguese navy."
+      },
+      {
+        "label": "C",
+        "text": "Songhai rulers captured trade centers such as Timbuktu and Gao, which gave them control of Saharan commerce, and used cavalry and river fleets to build a large empire after Mali weakened.",
+        "isCorrect": true,
+        "explanation": "Sunni Ali and later rulers built a large state from control of the trans-Saharan trade and the Niger River."
+      },
+      {
+        "label": "D",
+        "text": "Songhai expanded because it had gunpowder weapons that the Moroccans lacked in 1591.",
+        "isCorrect": false,
+        "explanation": "In 1591 it was the Moroccans, armed with gunpowder weapons, who defeated Songhai."
+      }
+    ],
+    "explanation": "Control of Saharan trade centers and military strength built the Songhai Empire.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-44",
+    "unit": "unit-3-land-based-empires",
+    "topic": "comparing-empires",
+    "difficulty": "hard",
+    "stem": "> “No Japanese ship shall leave for foreign lands, and no Japanese who has gone abroad shall return on pain of death. Foreign traders shall be confined to the port of Nagasaki, and the teaching of the foreign religion is strictly forbidden.”\n>\n> *Source: Edict of the Tokugawa shogunate, 1630s*\n\nWhich purpose is most strongly suggested by the edict?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "To convert the Japanese people to Christianity.",
+        "isCorrect": false,
+        "explanation": "The edict forbids the teaching of the foreign religion."
+      },
+      {
+        "label": "B",
+        "text": "To expand free trade with all European states.",
+        "isCorrect": false,
+        "explanation": "Foreign trade was confined to Nagasaki."
+      },
+      {
+        "label": "C",
+        "text": "To restrict foreign influence, including Christianity, and preserve the stability of Tokugawa rule.",
+        "isCorrect": true,
+        "explanation": "The shogunate controlled contacts with outsiders in order to prevent challenges to its authority, which included suppressing Christianity."
+      },
+      {
+        "label": "D",
+        "text": "To encourage the growth of overseas colonies.",
+        "isCorrect": false,
+        "explanation": "The edict restricts foreign travel and contact."
+      }
+    ],
+    "explanation": "The edict reflects a policy of controlling foreign contact to preserve Tokugawa stability.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-mcq-45",
+    "unit": "unit-3-land-based-empires",
+    "topic": "empires-administration",
+    "difficulty": "hard",
+    "stem": "The Ottoman timar system granted cavalrymen the right to collect taxes from peasants on state land in return for military service. This system is most similar to which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The exchange of land revenues for military service in medieval European feudal systems.",
+        "isCorrect": true,
+        "explanation": "Both systems rewarded soldiers with income from land in exchange for armed service."
+      },
+      {
+        "label": "B",
+        "text": "The Chinese civil service examination system.",
+        "isCorrect": false,
+        "explanation": "The examination system selected bureaucrats and was unrelated to land grants for military service."
+      },
+      {
+        "label": "C",
+        "text": "The Inca mit'a labor tax.",
+        "isCorrect": false,
+        "explanation": "The mit'a was a labor obligation of subjects, not a grant of land revenue for soldiers."
+      },
+      {
+        "label": "D",
+        "text": "The use of railroads to move troops.",
+        "isCorrect": false,
+        "explanation": "Railroads did not exist in the Ottoman Empire's early period."
+      }
+    ],
+    "explanation": "The timar resembled the exchange of land revenue for military service in European feudalism.",
+    "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ap-phys1-u6-frq-4",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "energy-in-shm",
+    "prompt": "A 0.40 kg block is attached to a horizontal spring of spring constant 160 N/m. The block oscillates on a frictionless surface with an amplitude of 0.15 m.\n\n**(a)** Calculate the period of the oscillation.\n\n**(b)** Calculate the maximum speed of the block.\n\n**(c)** Calculate the kinetic energy of the block, and its speed, when it is 0.09 m from the equilibrium position.\n\n**(d)** The block is now made to oscillate with an amplitude of 0.30 m. State how the period changes, and calculate the new total mechanical energy.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses $T=2\\pi\\sqrt{\\frac mk}\\approx0.31$ s"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Uses energy conservation or $v_{max}=A\\sqrt{\\frac km}=3.0$ m/s"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Finds the kinetic energy $\\frac12k(A^2-x^2)=1.15$ J"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Finds the speed $\\sqrt{\\frac{2KE}{m}}=2.4$ m/s"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) States the period does not change, and finds the new energy $\\frac12k(0.30)^2=7.2$ J (four times the original 1.8 J)"
+      }
+    ],
+    "sampleResponse": "(a) $T=2\\pi\\sqrt{\\frac{m}{k}}=2\\pi\\sqrt{\\frac{0.40}{160}}=2\\pi(0.050)\\approx0.31$ s.\n(b) $\\frac12kA^2=\\frac12mv_{max}^2$, so $v_{max}=A\\sqrt{\\frac km}=(0.15)(20)=3.0$ m/s.\n(c) $KE=E-PE=\\frac12k(A^2-x^2)=\\frac12(160)(0.0225-0.0081)=1.15$ J. Then $v=\\sqrt{\\frac{2(1.152)}{0.40}}=2.4$ m/s.\n(d) The period does not depend on the amplitude, so it is unchanged. The original energy is $\\frac12(160)(0.15)^2=1.8$ J. With twice the amplitude the energy is four times larger: $\\frac12(160)(0.30)^2=7.2$ J.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-frq-5",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "prompt": "A student measures the period $T$ of a simple pendulum for several lengths $L$ and records the data in the table. The oscillations are small.\n\n| $L$ (m) | 0.25 | 0.50 | 1.00 | 2.00 |\n|---|---|---|---|---|\n| $T$ (s) | 1.00 | 1.42 | 2.01 | 2.84 |\n\n**(a)** Explain why a graph of $T^2$ versus $L$ is expected to be a straight line, and state what the slope represents.\n\n**(b)** Use the first and last data points to calculate the slope of the line of $T^2$ versus $L$, and use it to determine the experimental value of $g$.\n\n**(c)** The student repeats the experiment with a bob of twice the mass. Predict how the periods would change.\n\n**(d)** The student realizes that each length was measured from the pivot to the *top* of the bob, rather than to its center, so each recorded length is smaller than the true length by the same constant amount. Describe how this affects the graph of $T^2$ versus $L$ and the value of $g$ obtained from the slope.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) From $T=2\\pi\\sqrt{\\frac Lg}$, $T^2=\\frac{4\\pi^2}{g}L$, which is linear in $L$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) States the slope is $\\frac{4\\pi^2}{g}$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Computes $T^2$ values and the slope $\\approx4.0$ s^2/m"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Calculates $g=\\frac{4\\pi^2}{\\text{slope}}\\approx9.8$ m/s^2"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) States the periods would not change, since the period does not depend on the mass"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Explains the graph is shifted (nonzero intercept) but keeps the same slope, so $g$ is not affected"
+      }
+    ],
+    "sampleResponse": "(a) $T=2\\pi\\sqrt{\\frac Lg}$ gives $T^2=\\frac{4\\pi^2}{g}L$, so $T^2$ is proportional to $L$ and the graph is a straight line through the origin. The slope is $\\frac{4\\pi^2}{g}$.\n(b) $T^2$ is $1.00$ s^2 at $L=0.25$ m and $8.07$ s^2 at $L=2.00$ m. Slope $=\\frac{8.07-1.00}{2.00-0.25}\\approx4.04$ s^2/m. $g=\\frac{4\\pi^2}{\\text{slope}}=\\frac{39.5}{4.04}\\approx9.8$ m/s^2.\n(c) The periods would not change: the period of a simple pendulum does not depend on the mass of the bob.\n(d) The true length is $L+c$ for a constant $c$, so $T^2=\\frac{4\\pi^2}{g}(L+c)$. The graph of $T^2$ versus the measured $L$ is still a straight line with the same slope $\\frac{4\\pi^2}{g}$, but it no longer passes through the origin (the intercept is $\\frac{4\\pi^2}{g}c$). Since $g$ comes from the slope, the value of $g$ is not affected.",
+    "reviewed": false
+  }
+]

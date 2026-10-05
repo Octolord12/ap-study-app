@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ap-csa-u8-frq-4",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "prompt": "A `Grid` object stores a rectangular array of integers in a two-dimensional array instance variable named `cells`. The array has at least one row and at least one column.\n\n```java\npublic class Grid {\n    private int[][] cells;\n\n    /** Returns the sum of the values in row r of cells. Precondition: 0 <= r < cells.length */\n    public int rowSum(int r)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns the index of the row of cells with the greatest row sum. If more than one row\n     *  has the greatest sum, returns the smallest such index.\n     *  Precondition: cells has at least one row */\n    public int largestRow()\n    { /* to be implemented in part (b) */ }\n\n    /** Returns a new array in which element c is the sum of the values in column c of cells. */\n    public int[] columnSums()\n    { /* to be implemented in part (c) */ }\n}\n```\n\n**(a)** Write the method `rowSum`.\n\n**(b)** Write the method `largestRow`, using `rowSum` as appropriate.\n\n**(c)** Write the method `columnSums`. For example, if `cells` is {{4, 1, 7}, {2, 9, 0}, {5, 5, 5}, {1, 1, 1}}, then `columnSums` returns {12, 16, 13}.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Traverses the elements of the given row and accumulates the sum"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Returns the correct sum"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Calls `rowSum` for the rows and compares the sums"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Tracks the index (not the sum) of the greatest row and uses a strict comparison so that ties keep the smaller index"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Returns the correct row index"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(c) Creates a new array whose length is the number of columns"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(c) Traverses all elements and adds each one to the correct column total, then returns the array"
+      }
+    ],
+    "sampleResponse": "```java\npublic int rowSum(int r) {\n    int sum = 0;\n    for (int value : cells[r]) {\n        sum += value;\n    }\n    return sum;\n}\n\npublic int largestRow() {\n    int best = 0;\n    for (int r = 1; r < cells.length; r++) {\n        if (rowSum(r) > rowSum(best)) {\n            best = r;\n        }\n    }\n    return best;\n}\n\npublic int[] columnSums() {\n    int[] sums = new int[cells[0].length];\n    for (int r = 0; r < cells.length; r++) {\n        for (int c = 0; c < cells[r].length; c++) {\n            sums[c] += cells[r][c];\n        }\n    }\n    return sums;\n}\n```\nIn `largestRow`, the strict `>` means that a later row with an equal sum does not replace the earlier one, which gives the smallest index for ties.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-frq-5",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "prompt": "A `Board` object stores the contents of a rectangular game board in a two-dimensional `int` array named `spots`. Each element is 0 for an empty spot or the number of the player (1 or 2) who occupies it.\n\n```java\npublic class Board {\n    private int[][] spots;\n\n    /** Returns true if every spot in at least one row of spots is occupied by player;\n     *  otherwise returns false. */\n    public boolean hasFullRow(int player)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns the number of spots adjacent to the spot at (row, col), including diagonal\n     *  neighbors, that are occupied by player. The spot (row, col) itself is not counted.\n     *  Spots outside the board are not counted.\n     *  Precondition: (row, col) is a valid position in spots. */\n    public int countNeighbors(int row, int col, int player)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `hasFullRow`.\n\n**(b)** Write the method `countNeighbors`. For example, if `spots` is {{1, 2, 1}, {1, 1, 1}, {2, 1, 0}}, then `countNeighbors(1, 1, 1)` returns 5 and `countNeighbors(0, 0, 1)` returns 2.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Traverses the rows and, within each row, examines every element"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Determines correctly whether all elements of a row equal `player`"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Returns true as soon as a full row is found and false otherwise"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Visits the (up to) eight positions around the spot"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Excludes positions outside the array (checks both row and column bounds before accessing)"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Excludes the spot itself and counts only spots equal to `player`, returning the count"
+      }
+    ],
+    "sampleResponse": "```java\npublic boolean hasFullRow(int player) {\n    for (int r = 0; r < spots.length; r++) {\n        boolean full = true;\n        for (int c = 0; c < spots[r].length; c++) {\n            if (spots[r][c] != player) {\n                full = false;\n            }\n        }\n        if (full) {\n            return true;\n        }\n    }\n    return false;\n}\n\npublic int countNeighbors(int row, int col, int player) {\n    int count = 0;\n    for (int r = row - 1; r <= row + 1; r++) {\n        for (int c = col - 1; c <= col + 1; c++) {\n            if (r >= 0 && r < spots.length && c >= 0 && c < spots[0].length\n                    && !(r == row && c == col) && spots[r][c] == player) {\n                count++;\n            }\n        }\n    }\n    return count;\n}\n```\nThe bounds tests come first in the condition, so `spots[r][c]` is evaluated only for valid positions (short-circuit evaluation).",
+    "reviewed": false
+  }
+]

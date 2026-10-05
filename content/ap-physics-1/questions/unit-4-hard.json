@@ -1,0 +1,608 @@
+[
+  {
+    "id": "ap-phys1-u4-mcq-31",
+    "unit": "unit-4-energy",
+    "topic": "work-and-the-work-energy-theorem",
+    "difficulty": "hard",
+    "stem": "A force acts on an object along the $x$-axis. The graph shows the force as a function of position from $x=0$ to $x=6$ m. How much work does the force do on the object over this displacement?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "37 J",
+        "isCorrect": false,
+        "explanation": "This counts only the positive area (up to the point where the force crosses zero) and ignores the negative area, which subtracts from the total work."
+      },
+      {
+        "label": "B",
+        "text": "40 J",
+        "isCorrect": false,
+        "explanation": "This is $(10\\text{ N})(4\\text{ m})$, treating the force as 10 N over the first 4 m and ignoring the rise from zero at the start and the last segment."
+      },
+      {
+        "label": "C",
+        "text": "35 J",
+        "isCorrect": true,
+        "explanation": "Work is the area under the $F$-$x$ graph, with area below the axis counting negative. From 0 to 2 m: $\\frac12(2)(10)=10$ J. From 2 to 4 m: $(2)(10)=20$ J. From 4 to 6 m the force falls from $+10$ to $-5$ N: the signed area is $\\frac{10+(-5)}{2}(2)=5$ J. Total: $35$ J."
+      },
+      {
+        "label": "D",
+        "text": "30 J",
+        "isCorrect": false,
+        "explanation": "This leaves out the last 2 m of the displacement. The force still does work (a net positive 5 J) there."
+      }
+    ],
+    "explanation": "Work $=\\int F\\,dx$ is the signed area under the graph: split it into a triangle, a rectangle and a trapezoid that crosses the axis.",
+    "conceptLink": "ap-physics-1/unit-4-energy/work-and-the-work-energy-theorem",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Force versus position: rises from 0 to 10 N at x=2 m, stays at 10 N until x=4 m, then falls to -5 N at x=6 m.",
+      "xLabel": "x (m)",
+      "yLabel": "F (N)",
+      "xMin": 0,
+      "xMax": 6,
+      "yMin": -6,
+      "yMax": 12,
+      "series": [
+        {
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 2,
+              "y": 10
+            },
+            {
+              "x": 4,
+              "y": 10
+            },
+            {
+              "x": 6,
+              "y": -5
+            }
+          ],
+          "color": "blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-phys1-u4-mcq-32",
+    "unit": "unit-4-energy",
+    "topic": "work-and-the-work-energy-theorem",
+    "difficulty": "hard",
+    "stem": "A 2.0 kg block slides along a rough horizontal surface. Its speed is 8.0 m/s at one point. The coefficient of kinetic friction is 0.40. What is its speed after sliding 5.0 m farther? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "6.7 m/s",
+        "isCorrect": false,
+        "explanation": "This uses $v^2=v_0^2-\\mu gd$, leaving out the factor 2. With kinetic energy $\\frac12mv^2$ the change gives $v^2=v_0^2-2\\mu gd$."
+      },
+      {
+        "label": "B",
+        "text": "3.5 m/s",
+        "isCorrect": false,
+        "explanation": "This halves $v^2$ after finding it ($\\sqrt{24.8/2}$). The work-energy equation already gives $v^2=24.8$ m^2/s^2."
+      },
+      {
+        "label": "C",
+        "text": "8.0 m/s",
+        "isCorrect": false,
+        "explanation": "Friction does negative work on the block, so it slows down. The speed cannot stay the same."
+      },
+      {
+        "label": "D",
+        "text": "5.0 m/s",
+        "isCorrect": true,
+        "explanation": "Friction does work $-\\mu_kmg\\,d=-(0.40)(2.0)(9.8)(5.0)=-39.2$ J. Then $\\frac12mv^2=\\frac12(2.0)(64)-39.2=24.8$ J, so $v=\\sqrt{24.8}\\approx5.0$ m/s."
+      }
+    ],
+    "explanation": "Apply the work-energy theorem: the work done by friction equals the change in kinetic energy. The mass cancels.",
+    "conceptLink": "ap-physics-1/unit-4-energy/work-and-the-work-energy-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-33",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "difficulty": "hard",
+    "stem": "A roller coaster car is released from rest at the top of a 25 m high hill on a frictionless track. What is its speed at the top of a 10 m high hill farther along the track? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "12.1 m/s",
+        "isCorrect": false,
+        "explanation": "This is $\\sqrt{gh}$ with $h=15$ m, which leaves out the factor 2 from $\\frac12mv^2=mgh$."
+      },
+      {
+        "label": "B",
+        "text": "17.1 m/s",
+        "isCorrect": true,
+        "explanation": "The car has dropped $25-10=15$ m: $\\frac12mv^2=mg(15)$, so $v=\\sqrt{2g(15)}=\\sqrt{294}\\approx17.1$ m/s."
+      },
+      {
+        "label": "C",
+        "text": "9.9 m/s",
+        "isCorrect": false,
+        "explanation": "This is $\\sqrt{2g(5)}$, using a drop of 5 m. The drop between the two hilltops is $25-10=15$ m."
+      },
+      {
+        "label": "D",
+        "text": "22.1 m/s",
+        "isCorrect": false,
+        "explanation": "This is $\\sqrt{2g(25)}$, the speed after a 25 m drop (the speed at ground level). The car is still 10 m above the ground."
+      }
+    ],
+    "explanation": "Only the change in height matters. Use $\\frac12mv^2=mg\\,\\Delta h$.",
+    "conceptLink": "ap-physics-1/unit-4-energy/conservation-of-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-34",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "difficulty": "hard",
+    "stem": "A spring with spring constant 200 N/m is compressed 0.30 m and used to launch a 0.50 kg ball straight up from the compressed position. Ignoring friction and air resistance, how high above the launch position does the ball rise? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "6.1 m",
+        "isCorrect": false,
+        "explanation": "This uses $\\frac12kx=30$ J: the compression is squared in $\\frac12kx^2$."
+      },
+      {
+        "label": "B",
+        "text": "1.84 m",
+        "isCorrect": true,
+        "explanation": "The stored spring energy $\\frac12kx^2=\\frac12(200)(0.30)^2=9.0$ J becomes gravitational potential energy $mgh$ at the top: $h=\\frac{9.0}{(0.50)(9.8)}\\approx1.84$ m."
+      },
+      {
+        "label": "C",
+        "text": "3.7 m",
+        "isCorrect": false,
+        "explanation": "This omits the factor of $\\frac12$ in the spring energy ($kx^2=18$ J)."
+      },
+      {
+        "label": "D",
+        "text": "0.92 m",
+        "isCorrect": false,
+        "explanation": "This halves the correct height, for example by using $\\frac14kx^2$ or by dividing by $2mg$."
+      }
+    ],
+    "explanation": "Spring potential energy at the launch becomes gravitational potential energy at the highest point (kinetic energy is zero at both).",
+    "conceptLink": "ap-physics-1/unit-4-energy/conservation-of-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-35",
+    "unit": "unit-4-energy",
+    "topic": "power",
+    "difficulty": "hard",
+    "stem": "A motor lifts an 800 kg elevator. At one instant the elevator is moving upward at 2.5 m/s and accelerating upward at 1.0 m/s^2. What power does the motor supply to the elevator at that instant? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "21.6 kW",
+        "isCorrect": true,
+        "explanation": "The cable force satisfies $F-mg=ma$, so $F=m(g+a)=800(10.8)=8640$ N. Then $P=Fv=(8640)(2.5)=21\\,600$ W."
+      },
+      {
+        "label": "B",
+        "text": "19.6 kW",
+        "isCorrect": false,
+        "explanation": "This is $mgv$, the power at constant speed. The elevator also accelerates, so the cable force is larger."
+      },
+      {
+        "label": "C",
+        "text": "43 kW",
+        "isCorrect": false,
+        "explanation": "This doubles the correct value, for example by using $F=2mg$ or by counting the acceleration term twice."
+      },
+      {
+        "label": "D",
+        "text": "2.0 kW",
+        "isCorrect": false,
+        "explanation": "This is $mav$, the extra power for the acceleration only. The motor also has to supply $mgv$ to lift the weight."
+      }
+    ],
+    "explanation": "Power is $P=Fv$. First find the force from Newton's second law, with the weight and acceleration both included.",
+    "conceptLink": "ap-physics-1/unit-4-energy/power",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-36",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "difficulty": "hard",
+    "stem": "A 3.0 kg block is released from rest at the top of a $30^\\circ$ incline whose top is 2.0 m above its bottom. The coefficient of kinetic friction is 0.20. What is the block's kinetic energy when it reaches the bottom? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "59 J",
+        "isCorrect": false,
+        "explanation": "This is all of the gravitational potential energy, $mgh$, with no loss to friction."
+      },
+      {
+        "label": "B",
+        "text": "79 J",
+        "isCorrect": false,
+        "explanation": "This adds the energy lost to friction to $mgh$. Friction removes mechanical energy."
+      },
+      {
+        "label": "C",
+        "text": "20 J",
+        "isCorrect": false,
+        "explanation": "This is the energy dissipated by friction, not the kinetic energy that remains."
+      },
+      {
+        "label": "D",
+        "text": "38 J",
+        "isCorrect": true,
+        "explanation": "The incline is $\\frac{2.0}{\\sin30^\\circ}=4.0$ m long. Friction does $-\\mu mg\\cos30^\\circ\\,L=-(0.20)(3.0)(9.8)(0.866)(4.0)\\approx-20$ J. The gravitational potential energy lost is $mgh=58.8$ J. So $KE=58.8-20.4\\approx38$ J."
+      }
+    ],
+    "explanation": "$KE_{bottom}=mgh-|W_f|$ where the friction work uses the length along the incline and the normal force $mg\\cos\\theta$.",
+    "conceptLink": "ap-physics-1/unit-4-energy/conservation-of-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-37",
+    "unit": "unit-4-energy",
+    "topic": "work-and-the-work-energy-theorem",
+    "difficulty": "hard",
+    "stem": "A person carries a 20 kg box horizontally at constant velocity for 10 m across a level floor. How much work does the person do on the box? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1960 J",
+        "isCorrect": false,
+        "explanation": "This is $mgd$, treating the lifting force as if it acted along the motion. It is perpendicular to the displacement."
+      },
+      {
+        "label": "B",
+        "text": "196 J",
+        "isCorrect": false,
+        "explanation": "This is the weight $(196\\text{ N})$ times 1, not a work value. Work requires the force component along the displacement."
+      },
+      {
+        "label": "C",
+        "text": "200 J",
+        "isCorrect": false,
+        "explanation": "This is $(20\\text{ kg})(10\\text{ m})$, which has no physical meaning as a work value."
+      },
+      {
+        "label": "D",
+        "text": "0 J",
+        "isCorrect": true,
+        "explanation": "The upward force that supports the box is perpendicular to the horizontal displacement, so it does no work: $W=Fd\\cos90^\\circ=0$. With constant velocity there is no horizontal force either."
+      }
+    ],
+    "explanation": "Work depends on the component of force along the displacement. A force perpendicular to the motion does no work.",
+    "conceptLink": "ap-physics-1/unit-4-energy/work-and-the-work-energy-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-38",
+    "unit": "unit-4-energy",
+    "topic": "power",
+    "difficulty": "hard",
+    "stem": "A car traveling at 15 m/s on a level road requires an engine power of 20 kW to overcome air resistance. Assume that air resistance is proportional to the square of the speed and that it is the only resisting force. What power is needed to travel at a constant 30 m/s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "80 kW",
+        "isCorrect": false,
+        "explanation": "This multiplies the power by 4, which accounts for the drag force ($v^2$) but not the faster rate at which the force acts ($v$)."
+      },
+      {
+        "label": "B",
+        "text": "40 kW",
+        "isCorrect": false,
+        "explanation": "This doubles the power, treating it as proportional to the speed. The drag force also increases with speed."
+      },
+      {
+        "label": "C",
+        "text": "160 kW",
+        "isCorrect": true,
+        "explanation": "If the drag force is proportional to $v^2$, then at constant speed $P=F_{drag}v\\propto v^3$. Doubling the speed multiplies the power by $2^3=8$: $8\\times20=160$ kW."
+      },
+      {
+        "label": "D",
+        "text": "320 kW",
+        "isCorrect": false,
+        "explanation": "This multiplies by 16, as if the power were proportional to $v^4$."
+      }
+    ],
+    "explanation": "$P=Fv$. With $F\\propto v^2$, the power is proportional to $v^3$.",
+    "conceptLink": "ap-physics-1/unit-4-energy/power",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-39",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "difficulty": "hard",
+    "stem": "A pendulum bob on a light string of length 2.0 m is released from rest with the string making an angle of $60^\\circ$ with the vertical. What is the speed of the bob at the lowest point of its swing? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3.1 m/s",
+        "isCorrect": false,
+        "explanation": "This uses a drop of 0.50 m, half of the true drop. The drop is $L-L\\cos60^\\circ=1.0$ m."
+      },
+      {
+        "label": "B",
+        "text": "6.3 m/s",
+        "isCorrect": false,
+        "explanation": "This uses a drop of 2.0 m (the full length of the string). The vertical drop is $L(1-\\cos\\theta)=1.0$ m."
+      },
+      {
+        "label": "C",
+        "text": "4.4 m/s",
+        "isCorrect": true,
+        "explanation": "The bob drops $L(1-\\cos60^\\circ)=2.0(0.50)=1.0$ m. Then $v=\\sqrt{2g(1.0)}\\approx4.4$ m/s."
+      },
+      {
+        "label": "D",
+        "text": "8.9 m/s",
+        "isCorrect": false,
+        "explanation": "This uses a drop of 4.0 m. The bob cannot fall farther than the string length allows."
+      }
+    ],
+    "explanation": "Find the height lost from the geometry: the bob starts $L\\cos\\theta$ below the pivot and ends $L$ below it.",
+    "conceptLink": "ap-physics-1/unit-4-energy/conservation-of-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-40",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "difficulty": "hard",
+    "stem": "A 1.0 kg block is pressed against a spring (spring constant 400 N/m), compressing it 0.10 m on a rough horizontal surface. The block is released. The coefficient of kinetic friction is 0.20. What is the total distance the block travels, counting from its starting position, before it stops? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.51 m",
+        "isCorrect": false,
+        "explanation": "This halves the distance, for example by dividing by $2\\mu mg$."
+      },
+      {
+        "label": "B",
+        "text": "0.20 m",
+        "isCorrect": false,
+        "explanation": "This uses $\\mu$ as if it were a distance. The distance is the energy lost divided by the friction force."
+      },
+      {
+        "label": "C",
+        "text": "1.0 m",
+        "isCorrect": true,
+        "explanation": "The stored energy $\\frac12kx^2=2.0$ J is all dissipated by friction: $\\mu mg\\,d=(0.20)(1.0)(9.8)d=1.96\\,d$. So $d\\approx1.0$ m."
+      },
+      {
+        "label": "D",
+        "text": "2.0 m",
+        "isCorrect": false,
+        "explanation": "2.0 is the stored energy in joules. The distance is the energy divided by the friction force, $\\frac{2.0}{1.96}$."
+      }
+    ],
+    "explanation": "All of the initial spring energy ends up as thermal energy: $\\frac12kx^2=\\mu mg\\,d$.",
+    "conceptLink": "ap-physics-1/unit-4-energy/conservation-of-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-41",
+    "unit": "unit-4-energy",
+    "topic": "potential-energy",
+    "difficulty": "hard",
+    "stem": "A particle moves along the $x$-axis under the influence of a conservative force. The graph shows its potential energy $U$ as a function of position. The particle's total mechanical energy is 8 J. What is its kinetic energy at $x=4$ m?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "6 J",
+        "isCorrect": false,
+        "explanation": "6 J is the potential energy at $x=4$ m (and the kinetic energy at $x=2$ m). Kinetic energy is the total minus the potential energy."
+      },
+      {
+        "label": "B",
+        "text": "2 J",
+        "isCorrect": true,
+        "explanation": "$KE=E-U$. At $x=4$ m, $U=6$ J, so $KE=8-6=2$ J."
+      },
+      {
+        "label": "C",
+        "text": "4 J",
+        "isCorrect": false,
+        "explanation": "4 J is the difference between the potential energies at $x=2$ m and $x=4$ m. The kinetic energy is $E-U(4)$."
+      },
+      {
+        "label": "D",
+        "text": "8 J",
+        "isCorrect": false,
+        "explanation": "8 J is the total mechanical energy. Some of it is potential energy at this position."
+      }
+    ],
+    "explanation": "Mechanical energy is conserved: $KE=E_{total}-U(x)$.",
+    "conceptLink": "ap-physics-1/unit-4-energy/potential-energy",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Potential energy versus position: falls from 10 J at x=0 to 2 J at x=2 m, rises to 6 J at x=4 m and to 10 J at x=6 m.",
+      "xLabel": "x (m)",
+      "yLabel": "U (J)",
+      "xMin": 0,
+      "xMax": 6,
+      "yMin": 0,
+      "yMax": 12,
+      "series": [
+        {
+          "points": [
+            {
+              "x": 0,
+              "y": 10
+            },
+            {
+              "x": 2,
+              "y": 2
+            },
+            {
+              "x": 4,
+              "y": 6
+            },
+            {
+              "x": 6,
+              "y": 10
+            }
+          ],
+          "color": "blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-phys1-u4-mcq-42",
+    "unit": "unit-4-energy",
+    "topic": "work-and-the-work-energy-theorem",
+    "difficulty": "hard",
+    "stem": "A 2.0 kg block is pushed up a rough ramp that is 5.0 m long and rises 3.0 m vertically, from the bottom to the top. What is the work done by gravity on the block during this motion? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-39$ J",
+        "isCorrect": false,
+        "explanation": "This uses $\\Delta h=2.0$ m. The vertical rise is 3.0 m."
+      },
+      {
+        "label": "B",
+        "text": "$+59$ J",
+        "isCorrect": false,
+        "explanation": "The block moves up while gravity pulls down, so gravity does *negative* work."
+      },
+      {
+        "label": "C",
+        "text": "$-59$ J",
+        "isCorrect": true,
+        "explanation": "Gravity is a conservative force: its work depends only on the change in height, $W_g=-mg\\,\\Delta h=-(2.0)(9.8)(3.0)=-58.8$ J. The negative sign shows that gravity opposes the upward motion."
+      },
+      {
+        "label": "D",
+        "text": "$-98$ J",
+        "isCorrect": false,
+        "explanation": "This uses the length of the ramp (5.0 m) instead of the vertical rise. Only the vertical displacement matters for gravity's work."
+      }
+    ],
+    "explanation": "Work by gravity is $-mg\\,\\Delta h$, independent of the path.",
+    "conceptLink": "ap-physics-1/unit-4-energy/work-and-the-work-energy-theorem",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-43",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "difficulty": "hard",
+    "stem": "A 2.0 kg block and a 3.0 kg block are connected by a light string over a light, frictionless pulley and released from rest. What is the speed of the blocks after the heavier block has descended 1.0 m? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4.4 m/s",
+        "isCorrect": false,
+        "explanation": "This uses only the net energy 9.8 J with a single 1.0 kg mass, $\\frac12(1.0)v^2$. Both blocks move at the same speed, so the total mass is 5.0 kg."
+      },
+      {
+        "label": "B",
+        "text": "1.4 m/s",
+        "isCorrect": false,
+        "explanation": "This leaves out the factor of 2 in solving $\\frac12(5.0)v^2=9.8$, giving $v^2=\\frac{9.8}{5}$."
+      },
+      {
+        "label": "C",
+        "text": "2.0 m/s",
+        "isCorrect": true,
+        "explanation": "Energy conservation: the heavier block loses $3gh$ and the lighter block gains $2gh$, so $(3-2)(9.8)(1.0)=9.8$ J goes into the kinetic energy of both: $\\frac12(2+3)v^2=9.8$, so $v^2=3.92$ and $v\\approx2.0$ m/s."
+      },
+      {
+        "label": "D",
+        "text": "3.4 m/s",
+        "isCorrect": false,
+        "explanation": "This ignores the potential energy gained by the lighter block: $3gh=29.4$ J into $\\frac12(5.0)v^2$."
+      }
+    ],
+    "explanation": "The system's kinetic energy gain equals the net loss of gravitational potential energy: $\\frac12(m_1+m_2)v^2=(m_2-m_1)gh$.",
+    "conceptLink": "ap-physics-1/unit-4-energy/conservation-of-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-44",
+    "unit": "unit-4-energy",
+    "topic": "power",
+    "difficulty": "hard",
+    "stem": "An electric motor with an input power of 500 W lifts a 40 kg load straight up at a constant speed of 0.80 m/s. What is the efficiency of the motor? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "160%",
+        "isCorrect": false,
+        "explanation": "This inverts the ratio ($\\frac{500}{314}$). No real machine has an efficiency above 100%."
+      },
+      {
+        "label": "B",
+        "text": "63%",
+        "isCorrect": true,
+        "explanation": "The output power is the rate at which the load gains potential energy: $mgv=(40)(9.8)(0.80)=314$ W. Efficiency $=\\frac{314}{500}\\approx63\\%$."
+      },
+      {
+        "label": "C",
+        "text": "31%",
+        "isCorrect": false,
+        "explanation": "This divides the output power by 1000 W rather than 500 W."
+      },
+      {
+        "label": "D",
+        "text": "37%",
+        "isCorrect": false,
+        "explanation": "This is the fraction of the input power that is wasted ($100\\%-63\\%$). Efficiency is the useful output over the input."
+      }
+    ],
+    "explanation": "Efficiency $=\\frac{P_{out}}{P_{in}}$ with $P_{out}=mgv$ for lifting at constant speed.",
+    "conceptLink": "ap-physics-1/unit-4-energy/power",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-mcq-45",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "difficulty": "hard",
+    "stem": "A 0.50 kg ball is dropped from a height of 2.0 m onto a hard floor and rebounds to a height of 1.5 m. How much mechanical energy is lost in the collision with the floor? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4.9 J",
+        "isCorrect": false,
+        "explanation": "This uses a height difference of 1.0 m. The ball fell from 2.0 m and rose to 1.5 m, a difference of 0.50 m."
+      },
+      {
+        "label": "B",
+        "text": "9.8 J",
+        "isCorrect": false,
+        "explanation": "This is the energy the ball had at its starting height ($mg\\cdot2.0$), not the energy lost."
+      },
+      {
+        "label": "C",
+        "text": "7.4 J",
+        "isCorrect": false,
+        "explanation": "This is the energy at the rebound height ($mg\\cdot1.5$), which the ball still has."
+      },
+      {
+        "label": "D",
+        "text": "2.5 J",
+        "isCorrect": true,
+        "explanation": "The mechanical energy lost is the difference in gravitational potential energy at the two turning points: $mg(2.0-1.5)=(0.50)(9.8)(0.50)=2.45$ J."
+      }
+    ],
+    "explanation": "Compare the mechanical energy just before and just after the bounce; at the highest points all of it is potential energy.",
+    "conceptLink": "ap-physics-1/unit-4-energy/conservation-of-energy",
+    "reviewed": false
+  }
+]

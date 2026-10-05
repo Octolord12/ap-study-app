@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u5-frq-4",
+    "unit": "unit-5-revolutions",
+    "topic": "industrial-revolution-begins",
+    "prompt": "Use the passage to answer parts A, B and C.\n\n> “In the mills I found children of nine and ten years working twelve hours a day among dangerous machinery. Many were deformed and sickly, and none had received any schooling.”\n>\n> *Source: Report of a government factory inspector, Britain, 1830s*\n\n**a)** Identify ONE working condition described in the passage.\n\n**b)** Explain ONE way reformers or governments responded to conditions like those described.\n\n**c)** Explain ONE way that industrialization affected a society outside Europe in the nineteenth century.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a condition such as long hours, child labor, dangerous machinery or lack of schooling"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a response such as factory acts limiting child labor and hours, the growth of labor unions, or reformers' campaigns for education and safety"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect outside Europe, such as Japan's state-led industrialization, Egypt's reforms under Muhammad Ali, India's textile industry being undermined by British manufactured goods, or the growth of plantation or mining economies serving industrial demand"
+      }
+    ],
+    "sampleResponse": "a) The passage describes children as young as nine working twelve-hour days among dangerous machinery.\nb) Reformers and the British government responded with factory acts that limited the hours and ages of child workers and set up inspections, and workers also organized unions to seek better conditions.\nc) In India, cheap factory-made British textiles undermined traditional handloom weavers, while the colony supplied raw cotton to British mills, so industrialization in Britain reshaped India's economy.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-frq-5",
+    "unit": "unit-5-revolutions",
+    "topic": "reactions-to-industrialization",
+    "prompt": "**Long Essay Question**\n\nCompare the responses to industrialization in TWO of the following societies in the period 1750-1900: Great Britain, Japan, Egypt, the Ottoman Empire.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that makes a comparative claim about the two societies' responses to industrialization"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Describes broader context, such as the spread of industrial technology and the growth of European economic and military power"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate examples for each society (1 point for addressing the topic, 2nd point for using specific evidence to support the comparison)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses comparison to structure the argument (1 point), and demonstrates complexity by explaining reasons for the similarities and differences or by qualifying the argument (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a thesis about similarities and differences (for example that Japan and Egypt both used state-led modernization, but Japan's was more sustained and successful, while in Britain private enterprise led the way and workers' movements and reformers shaped the response). It places the topic in the context of the spread of industrial technology and growing European power, and uses specific evidence (the Meiji Restoration, Muhammad Ali's army and factories, the factory acts, trade unions and socialist ideas, the Tanzimat reforms) and explains the reasons for similarities and differences.",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ap-phys1-u8-frq-4",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "prompt": "A uniform rectangular block of mass 0.60 kg floats in fresh water (density 1000 kg/m^3) with three-quarters of its volume submerged. Use $g=9.8$ m/s^2.\n\n**(a)** Calculate the density of the block.\n\n**(b)** Calculate the volume of the block and the buoyant force on it.\n\n**(c)** A small object is placed on top of the block so that the block is just completely submerged (with its top surface at the water level). Calculate the mass of the small object.\n\n**(d)** The original block (without the small object) is now placed in a liquid of density 1200 kg/m^3. Determine the fraction of its volume that is submerged.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses the floating condition $\\rho_{block}=\\frac34\\rho_w=750$ kg/m^3"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Finds the volume $V=\\frac{m}{\\rho}=8.0\\times10^{-4}$ m^3"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) States the buoyant force equals the weight, $mg=5.9$ N"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Finds the buoyant force when fully submerged, $\\rho_wVg=7.84$ N"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Finds the extra weight $7.84-5.88=1.96$ N, so the mass is 0.20 kg"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Finds the submerged fraction $\\frac{750}{1200}=0.625$"
+      }
+    ],
+    "sampleResponse": "(a) A floating block displaces its own weight: $\\rho_{block}Vg=\\rho_w\\left(\\frac34V\\right)g$, so $\\rho_{block}=0.75(1000)=750$ kg/m^3.\n(b) $V=\\frac{m}{\\rho}=\\frac{0.60}{750}=8.0\\times10^{-4}$ m^3. The block floats, so $F_B=mg=(0.60)(9.8)=5.9$ N.\n(c) Fully submerged, the buoyant force is $\\rho_wVg=(1000)(8.0\\times10^{-4})(9.8)=7.84$ N. The weight of the block plus the object must equal this: $5.88+m_{obj}g=7.84$, so $m_{obj}g=1.96$ N and $m_{obj}=0.20$ kg.\n(d) The submerged fraction is $\\frac{\\rho_{block}}{\\rho_{liquid}}=\\frac{750}{1200}=0.625$.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-frq-5",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "prompt": "Water (density 1000 kg/m^3) flows steadily through a horizontal pipe that narrows. In the wide section the diameter is 10 cm, the water speed is 1.5 m/s and the pressure is $2.0\\times10^5$ Pa. In the narrow section the diameter is 5.0 cm. Use $g=9.8$ m/s^2.\n\n**(a)** Calculate the water speed in the narrow section.\n\n**(b)** Calculate the pressure in the narrow section.\n\n**(c)** Calculate the volume of water that passes through the pipe each second.\n\n**(d)** The narrow section is raised so that it is 2.0 m higher than the wide section (the speeds are unchanged). Calculate the new pressure in the narrow section.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses continuity with the areas proportional to the diameters squared to get $v_2=6.0$ m/s"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Writes Bernoulli's equation $P_1+\\frac12\\rho v_1^2=P_2+\\frac12\\rho v_2^2$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Evaluates $P_2\\approx1.8\\times10^5$ Pa"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Computes the flow rate $Av=\\pi(0.050)^2(1.5)\\approx1.2\\times10^{-2}$ m^3/s"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Includes the height term $\\rho gh=1.96\\times10^4$ Pa to get about $1.6\\times10^5$ Pa"
+      }
+    ],
+    "sampleResponse": "(a) $A_1v_1=A_2v_2$ with $A\\propto d^2$: $v_2=v_1\\left(\\frac{10}{5.0}\\right)^2=(1.5)(4)=6.0$ m/s.\n(b) $P_1+\\frac12\\rho v_1^2=P_2+\\frac12\\rho v_2^2$, so $P_2=2.0\\times10^5+\\frac12(1000)(1.5^2-6.0^2)=2.0\\times10^5-1.7\\times10^4\\approx1.8\\times10^5$ Pa.\n(c) $Q=A_1v_1=\\pi(0.050)^2(1.5)\\approx1.2\\times10^{-2}$ m^3/s.\n(d) With the height difference, $P_1+\\frac12\\rho v_1^2=P_2+\\frac12\\rho v_2^2+\\rho gh$, so the pressure is reduced by $\\rho gh=(1000)(9.8)(2.0)=1.96\\times10^4$ Pa: $P_2\\approx1.83\\times10^5-0.20\\times10^5\\approx1.6\\times10^5$ Pa.",
+    "reviewed": false
+  }
+]

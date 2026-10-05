@@ -1,0 +1,84 @@
+[
+  {
+    "id": "ap-phys1-u3-frq-4",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "uniform-circular-motion",
+    "prompt": "A 0.40 kg ball is attached to a light string of length 0.80 m and swung in a vertical circle. At the lowest point of the circle the ball's speed is 6.0 m/s. Use $g=9.8$ m/s^2.\n\n**(a)** Calculate the tension in the string when the ball is at the lowest point.\n\n**(b)** Using conservation of energy, calculate the value of $v^2$ the ball would have at the highest point of the circle.\n\n**(c)** What is the smallest value of $v^2$ that the ball can have at the highest point while the string stays taut? Use your answers to show whether the ball can complete the circle with a speed of 6.0 m/s at the bottom.\n\n**(d)** Find the minimum speed at the bottom that allows the ball to complete the circle.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses $T-mg=\\frac{mv^2}{r}$ and finds about 21.9 N"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Sets up energy conservation $\\frac12mv_b^2=\\frac12mv_t^2+mg(2r)$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Finds $v_t^2=36-4gr=4.64$ m^2/s^2"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) States that at the minimum the tension is zero at the top, $mg=\\frac{mv^2}{r}$, so $v^2_{min}=gr=7.84$ m^2/s^2"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Compares $4.64<7.84$ and concludes the ball cannot complete the circle (the string goes slack)"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Combines the two conditions to get $v_b^2=5gr$ and $v_b\\approx6.26$ m/s"
+      }
+    ],
+    "sampleResponse": "(a) At the bottom the net force toward the center (up) is $T-mg=\\frac{mv^2}{r}$, so $T=0.40\\left(9.8+\\frac{36}{0.80}\\right)=0.40(54.8)\\approx21.9$ N.\n(b) Energy conservation between the bottom and the top, a height $2r=1.6$ m higher: $\\frac12mv_b^2=\\frac12mv_t^2+mg(2r)$, so $v_t^2=v_b^2-4gr=36-31.36=4.64$ m^2/s^2.\n(c) At the top the string tension and weight both point toward the center: $T+mg=\\frac{mv^2}{r}$. The string just stays taut when $T=0$, which requires $v^2=gr=(9.8)(0.80)=7.84$ m^2/s^2. The ball would have only $4.64$ m^2/s^2, which is less than 7.84, so the string would go slack and the ball cannot complete the circle.\n(d) Requiring $v_t^2\\ge gr$ and $v_t^2=v_b^2-4gr$ gives $v_b^2\\ge5gr=39.2$ m^2/s^2, so $v_b\\ge6.26$ m/s.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u3-frq-5",
+    "unit": "unit-3-circular-motion-and-gravitation",
+    "topic": "gravitational-fields-and-orbits",
+    "prompt": "A satellite of mass $m$ orbits Earth (mass $M=6.0\\times10^{24}$ kg) in a circular orbit of radius $7.0\\times10^6$ m. Use $G=6.67\\times10^{-11}$ N$\\cdot$m^2/kg^2.\n\n**(a)** Starting from Newton's law of gravitation and the expression for centripetal force, derive an expression for the satellite's orbital speed $v$ in terms of $G$, $M$ and the orbital radius $r$.\n\n**(b)** Calculate the satellite's orbital speed.\n\n**(c)** Calculate the satellite's period.\n\n**(d)** The satellite is moved to a circular orbit of radius $1.4\\times10^7$ m (twice the original radius). Determine by what factor the orbital speed and the period change.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Sets $\\frac{GMm}{r^2}=\\frac{mv^2}{r}$ and shows the mass $m$ cancels"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Solves to get $v=\\sqrt{\\frac{GM}{r}}$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Substitutes and calculates $v\\approx7.6\\times10^3$ m/s"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Uses $T=\\frac{2\\pi r}{v}$ to get about $5.8\\times10^3$ s"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) States the speed is multiplied by $\\frac1{\\sqrt2}\\approx0.71$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) States the period is multiplied by $2\\sqrt2\\approx2.8$ (from $T\\propto r^{3/2}$)"
+      }
+    ],
+    "sampleResponse": "(a) The gravitational force provides the centripetal force: $\\frac{GMm}{r^2}=\\frac{mv^2}{r}$. The mass $m$ cancels, so $v^2=\\frac{GM}{r}$ and $v=\\sqrt{\\frac{GM}{r}}$.\n(b) $v=\\sqrt{\\frac{(6.67\\times10^{-11})(6.0\\times10^{24})}{7.0\\times10^6}}=\\sqrt{5.7\\times10^7}\\approx7.6\\times10^3$ m/s.\n(c) $T=\\frac{2\\pi r}{v}=\\frac{2\\pi(7.0\\times10^6)}{7.56\\times10^3}\\approx5.8\\times10^3$ s (about 97 minutes).\n(d) $v\\propto\\frac{1}{\\sqrt r}$, so doubling $r$ multiplies $v$ by $\\frac{1}{\\sqrt2}\\approx0.71$ (to about $5.3\\times10^3$ m/s). $T^2\\propto r^3$, so $T$ is multiplied by $2^{3/2}=2\\sqrt2\\approx2.8$ (to about $1.6\\times10^4$ s).",
+    "reviewed": false
+  }
+]

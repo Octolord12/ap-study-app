@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-csa-u6-frq-4",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "prompt": "The class `ArrayTools` contains the two methods described below.\n\n```java\npublic class ArrayTools {\n    /** Returns the value that occurs most often in a. If more than one value occurs the\n     *  greatest number of times, returns the smallest of those values.\n     *  Precondition: a.length > 0\n     *  Example: mostFrequent(new int[] {4, 1, 4, 2, 1, 4}) returns 4 and\n     *           mostFrequent(new int[] {3, 5, 3, 5}) returns 3. */\n    public static int mostFrequent(int[] a)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns a new array of the same length as a in which the elements are those of a\n     *  moved k positions to the left. Elements that move off the front are placed at the\n     *  end, in order. The array a is not changed.\n     *  Preconditions: a.length > 0, k >= 0 (k may be larger than a.length)\n     *  Example: if a is {1, 2, 3, 4, 5}, then rotateLeft(a, 2) returns {3, 4, 5, 1, 2},\n     *           and rotateLeft(a, 7) also returns {3, 4, 5, 1, 2}. */\n    public static int[] rotateLeft(int[] a, int k)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `mostFrequent`.\n\n**(b)** Write the method `rotateLeft`.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Counts occurrences of each value (for example with a nested loop)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Keeps track of the value with the greatest count"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Resolves a tie by choosing the smaller value"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(a) Returns the correct value"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Creates a new array of the same length and does not modify `a`"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Computes the source index for each position with correct wraparound (for example `(i + k) % n`)"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Handles `k` larger than `a.length` and returns the new array"
+      }
+    ],
+    "sampleResponse": "```java\npublic static int mostFrequent(int[] a) {\n    int best = a[0];\n    int bestCount = 0;\n    for (int i = 0; i < a.length; i++) {\n        int count = 0;\n        for (int j = 0; j < a.length; j++) {\n            if (a[j] == a[i]) {\n                count++;\n            }\n        }\n        if (count > bestCount || (count == bestCount && a[i] < best)) {\n            best = a[i];\n            bestCount = count;\n        }\n    }\n    return best;\n}\n\npublic static int[] rotateLeft(int[] a, int k) {\n    int n = a.length;\n    int[] result = new int[n];\n    for (int i = 0; i < n; i++) {\n        result[i] = a[(i + k) % n];\n    }\n    return result;\n}\n```\nIn `rotateLeft`, the element that ends up at index `i` came from index `(i + k) % n`, and the remainder makes the index wrap around, including when `k` is larger than the array.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-frq-5",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "prompt": "The class `ArrayTools2` contains the two methods described below.\n\n```java\npublic class ArrayTools2 {\n    /** Returns the length of the longest sequence of consecutive elements of a that are all\n     *  equal, or 0 if a is empty.\n     *  Example: if a is {1, 3, 3, 3, 2, 2}, longestPlateau(a) returns 3. */\n    public static int longestPlateau(int[] a)\n    { /* to be implemented in part (a) */ }\n\n    /** Rearranges the elements of a so that all of the nonzero values come first, in their\n     *  original order, followed by all of the zeros. No other array is created.\n     *  Example: if a is {0, 3, 0, 5, 7, 0}, after the call a is {3, 5, 7, 0, 0, 0}. */\n    public static void shiftZerosToEnd(int[] a)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `longestPlateau`.\n\n**(b)** Write the method `shiftZerosToEnd`. You may not create another array or use any `ArrayList`.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Traverses the array comparing each element with the previous one without going out of bounds"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Maintains the length of the current plateau, resetting to 1 when a different value occurs"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Tracks and returns the longest length (0 for an empty array)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Traverses the array and moves each nonzero value forward to the next open position, preserving order"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Does not overwrite a nonzero value before it has been copied"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Fills the remaining positions with zeros"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Modifies the array in place without creating another array"
+      }
+    ],
+    "sampleResponse": "```java\npublic static int longestPlateau(int[] a) {\n    int best = 0;\n    int run = 0;\n    for (int i = 0; i < a.length; i++) {\n        if (i > 0 && a[i] == a[i - 1]) {\n            run++;\n        } else {\n            run = 1;\n        }\n        if (run > best) {\n            best = run;\n        }\n    }\n    return best;\n}\n\npublic static void shiftZerosToEnd(int[] a) {\n    int next = 0;\n    for (int i = 0; i < a.length; i++) {\n        if (a[i] != 0) {\n            a[next] = a[i];\n            next++;\n        }\n    }\n    while (next < a.length) {\n        a[next] = 0;\n        next++;\n    }\n}\n```\nIn `shiftZerosToEnd`, `next` is never ahead of `i`, so copying `a[i]` to `a[next]` cannot overwrite a nonzero value that has not been read yet.",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u6-frq-4",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "imperial-expansion",
+    "prompt": "Use the passage to answer parts A, B and C.\n\n> “The foreigners have demanded that our ports be opened to their ships and that their subjects be tried only by their own officers. Having lost the war, we must pay a great sum of silver and give up the island, and we are unable to refuse.”\n>\n> *Source: Memorial of a Qing official after the First Opium War, 1840s*\n\n**a)** Identify ONE concession that the passage says China was forced to make.\n\n**b)** Explain ONE reason that Britain pressed for greater access to the Chinese market in this period.\n\n**c)** Explain ONE way that Chinese people or the Qing government responded to foreign pressure in the second half of the nineteenth century.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a concession such as opening ports, extraterritoriality (trial by foreign officers), paying an indemnity or ceding an island (Hong Kong)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a reason such as the trade imbalance in Britain's trade with China, the demand for Chinese tea and silk, the desire for new markets for industrial goods, or the profits of the opium trade"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a response such as the Self-Strengthening Movement, the Taiping Rebellion, the Boxer Uprising, or the reform proposals of the Hundred Days"
+      }
+    ],
+    "sampleResponse": "a) The passage says that China had to open its ports to foreign ships, to allow foreigners to be tried by their own officers, to pay a large indemnity and to give up an island (Hong Kong).\nb) Britain bought large amounts of Chinese tea and silk while China wanted little from Britain, creating a trade imbalance. British merchants therefore sold opium to China, and Britain wanted to open the Chinese market to its goods and protect this trade.\nc) Some Qing officials began the Self-Strengthening Movement, which adopted Western weapons and industries to strengthen the state, while others and popular groups responded with rebellions such as the Boxer Uprising, which attacked foreign influence.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-frq-5",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "migration-in-interconnected-world",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which industrialization changed patterns of global migration in the period 1750-1900.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent of change in migration patterns"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Describes broader context such as population growth, urbanization or the abolition of the slave trade and slavery"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate examples of migration (such as indentured labor, European migration to settler societies, Irish famine migration, or rural-to-urban migration) and uses them to support the argument"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and shows complexity by explaining varying causes or by noting restrictions and differing experiences of migrants (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response takes a position (for example that industrialization greatly increased the scale of migration through population growth, new transportation and demand for labor, while some earlier patterns such as forced migration and labor migration continued). It places the topic in context (population growth, urbanization, the end of the Atlantic slave trade) and uses specific evidence such as migration from Europe to the Americas and Australia, Irish migration during the famine, Indian and Chinese indentured laborers, rural-to-urban migration, and restrictions such as the Chinese Exclusion Act. It analyzes continuity and change and considers causes such as steamships, railroads and the abolition of slavery.",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u8-frq-4",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "decolonization",
+    "prompt": "Use the passage to answer parts A, B and C.\n\n> “At long last the battle has ended, and our beloved country is free forever. We have awakened. We shall show the world that the African is capable of managing his own affairs.”\n>\n> *Source: Speech by a nationalist leader on the day of his country's independence, 1957*\n\n**a)** Identify ONE belief or goal expressed by the speaker.\n\n**b)** Explain ONE way in which World War II contributed to the growth of independence movements in Asia and Africa.\n\n**c)** Explain ONE challenge that newly independent states commonly faced.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a goal or belief such as national self-rule, freedom from colonial control, or the capacity of Africans to govern themselves"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a contribution such as the weakening of European powers, colonial soldiers' wartime experience, the example of Japan's defeat of European forces in Asia, or the war's rhetoric of self-determination"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a challenge such as economic dependence on former colonial powers or foreign firms (neocolonialism), ethnic divisions created by colonial borders, building political institutions, or Cold War pressure to align with a superpower"
+      }
+    ],
+    "sampleResponse": "a) The speaker expresses the belief that the country is free and that Africans are capable of governing themselves.\nb) World War II weakened Britain and France economically and militarily, so they were less able to hold their colonies, and colonial soldiers who fought in the war returned with new skills and expectations. The war's language of freedom and self-determination also encouraged nationalists.\nc) Many new states had economies that were dependent on exporting a few raw materials to former colonial powers or on foreign-owned companies, which limited their real independence.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u8-frq-5",
+    "unit": "unit-8-cold-war-and-decolonization",
+    "topic": "newly-independent-states",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the Cold War shaped the process of decolonization and the development of newly independent states in Asia and Africa between 1945 and 1991.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which the Cold War shaped decolonization and the new states"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Describes broader context, such as the end of World War II, weakened European empires and the superpower rivalry"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate examples (such as non-alignment, proxy wars, superpower aid, the Suez Crisis, partition) and uses them to support the argument"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses causation to structure the argument (1 point), and shows complexity by weighing the Cold War against other factors such as nationalist movements, colonial borders or economic dependence (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response takes a position (for example that the Cold War shaped the choices and conflicts of new states, but that the main drivers of independence were nationalist movements and the weakening of European powers). It places the topic in context (the end of World War II and the rivalry of the superpowers) and uses specific evidence such as the Bandung Conference and non-alignment, superpower aid and proxy wars (Korea, Vietnam, the Congo, Angola), the Suez Crisis, India and Pakistan, and Ghana. It analyzes causation and continuity and change, and considers how colonial borders and economic dependence also shaped the new states.",
+    "reviewed": false
+  }
+]

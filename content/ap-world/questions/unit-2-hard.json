@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-world-u2-mcq-31",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "mongol-empire",
+    "difficulty": "hard",
+    "stem": "> “In the capital I found people of many nations: Christians, Muslims and worshippers of idols, each permitted to keep his own faith, so long as he paid tribute and obeyed the Khan's officers.”\n>\n> *Source: Report of a European envoy to the Mongol capital, 1250s*\n\nThe passage best illustrates which characteristic of Mongol rule?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Strict segregation of foreigners, who were barred from the Mongol capital.",
+        "isCorrect": false,
+        "explanation": "The envoy describes many nations living in the capital."
+      },
+      {
+        "label": "B",
+        "text": "A requirement that all subjects convert to a single state religion.",
+        "isCorrect": false,
+        "explanation": "The passage shows a variety of faiths being practiced freely."
+      },
+      {
+        "label": "C",
+        "text": "The adoption of Christianity as the official faith of the Mongol court.",
+        "isCorrect": false,
+        "explanation": "The Mongol court did not adopt Christianity as an official faith, and the passage describes several religions side by side."
+      },
+      {
+        "label": "D",
+        "text": "Religious toleration combined with the use of diverse peoples in the service of the empire.",
+        "isCorrect": true,
+        "explanation": "Mongol rulers generally allowed subject peoples to practice their own religions while demanding loyalty and tribute, and they employed administrators and specialists from many cultures."
+      }
+    ],
+    "explanation": "The passage shows a policy of toleration paired with demands for obedience and tribute.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/mongol-empire",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-32",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "mongol-empire",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the increase in long-distance trade across Eurasia in the thirteenth and fourteenth centuries?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mongol rule linked much of Eurasia under one authority, providing relative security and relay stations for merchants and envoys.",
+        "isCorrect": true,
+        "explanation": "The Mongol conquests unified overland routes, and measures such as the postal-relay system and safe-conduct passes helped make travel safer, an era often called the Pax Mongolica."
+      },
+      {
+        "label": "B",
+        "text": "Chinese emperors closed the borders to protect domestic silk production.",
+        "isCorrect": false,
+        "explanation": "Under the Yuan dynasty China was part of the Mongol system and was open to foreign merchants."
+      },
+      {
+        "label": "C",
+        "text": "The Mongols banned long-distance trade in order to protect the economy of the steppe.",
+        "isCorrect": false,
+        "explanation": "The Mongols encouraged and taxed trade, and many Mongol rulers patronized merchants."
+      },
+      {
+        "label": "D",
+        "text": "The collapse of every Eurasian state left the routes open and unregulated.",
+        "isCorrect": false,
+        "explanation": "Trade grew because large political authority provided security, not because authority disappeared."
+      }
+    ],
+    "explanation": "The security created by Mongol rule encouraged merchants and travelers.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/mongol-empire",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-33",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "mongol-empire",
+    "difficulty": "hard",
+    "stem": "Which statement best explains why the Mongol Empire did not remain a single state after the thirteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It was destroyed by a united alliance of Song China and the Abbasid caliphate.",
+        "isCorrect": false,
+        "explanation": "The Mongols themselves ended the Song dynasty (1279), and they destroyed the Abbasid caliphate's capital in 1258."
+      },
+      {
+        "label": "B",
+        "text": "It was too vast to rule as one state, and it divided into regional khanates whose rulers adopted local religions and customs.",
+        "isCorrect": true,
+        "explanation": "Rivalries among Genghis Khan's descendants and the empire's size led to separate successor states such as the Yuan dynasty, the Ilkhanate, the Chagatai Khanate and the Golden Horde."
+      },
+      {
+        "label": "C",
+        "text": "It was conquered in the 1250s by the Ottoman Empire.",
+        "isCorrect": false,
+        "explanation": "The Ottoman state did not yet exist as a major power in the 1250s, and it did not conquer the Mongols."
+      },
+      {
+        "label": "D",
+        "text": "Its rulers voluntarily abolished the empire to restore the previous kingdoms.",
+        "isCorrect": false,
+        "explanation": "The empire fragmented through succession disputes and distance, not voluntary abolition."
+      }
+    ],
+    "explanation": "Succession struggles and the size of the empire led to separate khanates.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/mongol-empire",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-34",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "silk-roads",
+    "difficulty": "hard",
+    "stem": "> “Ships arriving from the Black Sea brought sailors already marked by the sickness. Within weeks the pestilence had spread from the harbor into the town, and neighbors fled from neighbors.”\n>\n> *Source: Account by a notary of a Genoese trading port, 1347*\n\nThe spread of the disease described in the passage is best explained by which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The movement of merchants and goods along interconnected land and sea trade routes.",
+        "isCorrect": true,
+        "explanation": "The Black Death traveled from Asia along trade routes, including those of the Mongol era, and reached Mediterranean ports by ship."
+      },
+      {
+        "label": "B",
+        "text": "The cutting off of all trade between Asia and Europe.",
+        "isCorrect": false,
+        "explanation": "The disease spread precisely because trade connections existed, not because they were cut."
+      },
+      {
+        "label": "C",
+        "text": "The Mongol conquest of Italy.",
+        "isCorrect": false,
+        "explanation": "The Mongols did not conquer Italy."
+      },
+      {
+        "label": "D",
+        "text": "The return of Crusader armies from the Holy Land.",
+        "isCorrect": false,
+        "explanation": "The major crusades had ended long before the 1340s, and the plague came by trade routes, not armies."
+      }
+    ],
+    "explanation": "The plague traveled the same routes that carried commerce between Asia and Europe.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/silk-roads",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-35",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "effects-of-connectivity",
+    "difficulty": "hard",
+    "stem": "Which was a long-term consequence of the Black Death in western Europe?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A sudden increase in population that supplied lords with cheap labor.",
+        "isCorrect": false,
+        "explanation": "The plague reduced the population by a large share; labor became scarcer and more valuable."
+      },
+      {
+        "label": "B",
+        "text": "The immediate end of the Catholic Church's influence in Europe.",
+        "isCorrect": false,
+        "explanation": "The Church lost some prestige because it could not stop the plague, but it remained very influential."
+      },
+      {
+        "label": "C",
+        "text": "Labor shortages gave surviving peasants and workers more bargaining power and contributed to the decline of serfdom.",
+        "isCorrect": true,
+        "explanation": "With so many workers dead, laborers could demand higher wages and better terms, weakening the manorial system in much of western Europe."
+      },
+      {
+        "label": "D",
+        "text": "The strengthening of the manorial system and of peasants' obligations to their lords.",
+        "isCorrect": false,
+        "explanation": "The manorial system weakened; some lords tried to enforce old obligations, which led to revolts."
+      }
+    ],
+    "explanation": "Fewer workers meant better terms for those who survived.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-36",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "indian-ocean-trade",
+    "difficulty": "hard",
+    "stem": "Which combination best explains why the Indian Ocean was an active trading zone before 1450?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A single empire that controlled all the ports and fixed all prices.",
+        "isCorrect": false,
+        "explanation": "The Indian Ocean trade was open and diverse, with many competing states and city-states rather than one controlling empire."
+      },
+      {
+        "label": "B",
+        "text": "Steam-powered ships that could travel against the wind.",
+        "isCorrect": false,
+        "explanation": "Steamships were a nineteenth-century development."
+      },
+      {
+        "label": "C",
+        "text": "European navies that protected merchant ships beginning in 1200.",
+        "isCorrect": false,
+        "explanation": "European naval power came to the Indian Ocean only after about 1500."
+      },
+      {
+        "label": "D",
+        "text": "Predictable monsoon winds, sailing technologies such as the lateen sail and the astrolabe, and a network of port cities linking East Africa, Arabia, India and Southeast Asia.",
+        "isCorrect": true,
+        "explanation": "Merchants could time voyages with the seasonal monsoons, use navigational tools, and rely on ports where goods were exchanged."
+      }
+    ],
+    "explanation": "Monsoons, navigation technology and port cities supported Indian Ocean trade.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/indian-ocean-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-37",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "indian-ocean-trade",
+    "difficulty": "hard",
+    "stem": "How did the voyages of the Ming dynasty admiral Zheng He (1405-1433) differ from the European voyages of exploration that began later in the fifteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They were financed by joint-stock companies seeking profit.",
+        "isCorrect": false,
+        "explanation": "Joint-stock companies were a European institution of the seventeenth century; Zheng He's voyages were sponsored by the Ming emperor."
+      },
+      {
+        "label": "B",
+        "text": "They were meant to find a sea route to Europe.",
+        "isCorrect": false,
+        "explanation": "The Ming voyages were directed toward Southeast Asia, India, Arabia and East Africa, not toward finding a route to Europe."
+      },
+      {
+        "label": "C",
+        "text": "The Chinese expeditions were state-sponsored projects that displayed Ming power and extended the tribute system, and they did not establish permanent colonies.",
+        "isCorrect": true,
+        "explanation": "Zheng He's large fleets visited ports around the Indian Ocean to receive tribute and promote trade for the Ming court, and the voyages ended without colonial settlement."
+      },
+      {
+        "label": "D",
+        "text": "They established Chinese colonies along the East African coast.",
+        "isCorrect": false,
+        "explanation": "The voyages visited East Africa, but China did not establish colonies there."
+      }
+    ],
+    "explanation": "Zheng He's voyages were state-sponsored demonstrations of power, not colonizing ventures.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/indian-ocean-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-38",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "indian-ocean-trade",
+    "difficulty": "hard",
+    "stem": "> “The city is built of stone, and its people are devout Muslims. Gold comes to its markets from the south, and its merchants send it across the sea to Arabia and India in exchange for cloth and porcelain.”\n>\n> *Source: Account by a North African traveler of a visit to the East African coast, 1330s*\n\nThe passage best illustrates which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The importance of Islam and Indian Ocean commerce to the prosperity of East African city-states.",
+        "isCorrect": true,
+        "explanation": "Swahili city-states such as Kilwa became wealthy by trading African gold and ivory for goods from across the Indian Ocean, and their culture was strongly influenced by Islam."
+      },
+      {
+        "label": "B",
+        "text": "The dominance of Portuguese merchants over the East African coast.",
+        "isCorrect": false,
+        "explanation": "The Portuguese arrived in the region in the late fifteenth and early sixteenth centuries, after this passage."
+      },
+      {
+        "label": "C",
+        "text": "The isolation of the East African coast from long-distance trade.",
+        "isCorrect": false,
+        "explanation": "The passage describes active trade with Arabia and India."
+      },
+      {
+        "label": "D",
+        "text": "The reliance of East African cities on trans-Saharan caravans.",
+        "isCorrect": false,
+        "explanation": "East African ports traded across the Indian Ocean, not across the Sahara."
+      }
+    ],
+    "explanation": "The passage shows an Islamic, trade-based city linked to the Indian Ocean.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/indian-ocean-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-39",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "trans-saharan-trade",
+    "difficulty": "hard",
+    "stem": "Which development best explains the growth of trans-Saharan trade in the first millennium CE?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The construction of paved roads across the desert by the Mali Empire.",
+        "isCorrect": false,
+        "explanation": "The Sahara was crossed by caravan tracks, not paved roads."
+      },
+      {
+        "label": "B",
+        "text": "The use of horse-drawn wagons suited to loose sand.",
+        "isCorrect": false,
+        "explanation": "Wagons are poorly suited to deep sand; camels made desert crossings practical."
+      },
+      {
+        "label": "C",
+        "text": "The use of domesticated camels, which were well suited to carrying goods across the desert in caravans.",
+        "isCorrect": true,
+        "explanation": "Camels can go long distances without water, allowing regular caravans to cross the Sahara."
+      },
+      {
+        "label": "D",
+        "text": "The invention of the steam locomotive.",
+        "isCorrect": false,
+        "explanation": "Steam locomotives were a nineteenth-century invention."
+      }
+    ],
+    "explanation": "Camel caravans made regular crossings of the Sahara possible.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/trans-saharan-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-40",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "trans-saharan-trade",
+    "difficulty": "hard",
+    "stem": "Which statement best explains why the exchange of Saharan salt for West African gold was profitable for both sides?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Both commodities were used as the main currency in China.",
+        "isCorrect": false,
+        "explanation": "The trade centered on the Sahara, West Africa and the Mediterranean, not China."
+      },
+      {
+        "label": "B",
+        "text": "Salt was scarce in the forests and savannas to the south but available in the Sahara, while gold was plentiful in West Africa and highly valued in North Africa and the Mediterranean world.",
+        "isCorrect": true,
+        "explanation": "Each product was abundant at one end of the route and scarce at the other, so traders profited from carrying them in both directions."
+      },
+      {
+        "label": "C",
+        "text": "European governments set fixed prices for salt and gold to encourage the trade.",
+        "isCorrect": false,
+        "explanation": "The trade was organized by African and North African merchants and states, and European governments did not set prices."
+      },
+      {
+        "label": "D",
+        "text": "Salt was available everywhere in West Africa but gold was available only in North Africa.",
+        "isCorrect": false,
+        "explanation": "This reverses the actual distribution: gold came from West Africa and salt from Saharan deposits."
+      }
+    ],
+    "explanation": "The trade worked because each commodity was scarce where the other was plentiful.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/trans-saharan-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-41",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "silk-roads",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the effect of exchange along Eurasian trade routes on technology between 600 and 1450?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Only religions were exchanged, because merchants did not carry inventions.",
+        "isCorrect": false,
+        "explanation": "Inventions such as paper and gunpowder show that technological knowledge also spread."
+      },
+      {
+        "label": "B",
+        "text": "Chinese rulers adopted the European printing press and spread it eastward.",
+        "isCorrect": false,
+        "explanation": "Printing began in China before the European printing press of the 1400s."
+      },
+      {
+        "label": "C",
+        "text": "Technologies such as paper, printing and gunpowder spread from China westward, eventually influencing Islamic and European societies.",
+        "isCorrect": true,
+        "explanation": "Chinese inventions traveled along the trade routes and were adopted and adapted in other regions."
+      },
+      {
+        "label": "D",
+        "text": "Technologies did not travel, because trade routes carried only luxury goods.",
+        "isCorrect": false,
+        "explanation": "Along with goods, ideas and technologies were transmitted by merchants, travelers and conquerors."
+      }
+    ],
+    "explanation": "Chinese inventions diffused westward along trade routes.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/silk-roads",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-42",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "effects-of-connectivity",
+    "difficulty": "hard",
+    "stem": "> “The road to Cathay is perfectly safe, by day and by night, according to merchants who have used it, provided that the merchant travels with a guide and a handful of servants.”\n>\n> *Source: A merchant's handbook, Florence, about 1340*\n\nWhich condition most directly explains the claim made in the handbook?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chinese naval patrols protected overland caravans.",
+        "isCorrect": false,
+        "explanation": "Naval patrols could not protect overland routes, and the security came from Mongol authority."
+      },
+      {
+        "label": "B",
+        "text": "Mongol rule had brought relative political stability and security to the overland routes across Asia.",
+        "isCorrect": true,
+        "explanation": "The Mongol Empire policed trade routes and protected merchants, which is why European merchants could describe travel across Asia as safe."
+      },
+      {
+        "label": "C",
+        "text": "The Roman Empire still maintained the roads across Central Asia.",
+        "isCorrect": false,
+        "explanation": "The Roman Empire had long since ended in the west and never controlled the routes across Central Asia."
+      },
+      {
+        "label": "D",
+        "text": "The collapse of long-distance trade made the roads nearly empty.",
+        "isCorrect": false,
+        "explanation": "The passage describes merchants using the route, and trade was active in this period."
+      }
+    ],
+    "explanation": "The handbook's claim reflects the security created by Mongol rule.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-43",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "mongol-empire",
+    "difficulty": "hard",
+    "stem": "How did the Mongol rulers of the Yuan dynasty (1271-1368) govern China?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They retained many Chinese administrative practices but gave important posts to foreigners and ranked Mongols highest in the social order.",
+        "isCorrect": true,
+        "explanation": "Yuan rulers used Chinese bureaucratic forms but relied on Mongols and foreigners, including Muslims and Europeans, in key positions and distrusted the Chinese elite."
+      },
+      {
+        "label": "B",
+        "text": "They withdrew to the steppe and allowed Chinese governors to rule independently.",
+        "isCorrect": false,
+        "explanation": "The Yuan court ruled China directly from its capital, Khanbaliq (Beijing)."
+      },
+      {
+        "label": "C",
+        "text": "They abolished all Chinese institutions and governed by tribal law alone.",
+        "isCorrect": false,
+        "explanation": "Yuan rulers kept much of the existing administration and many institutions."
+      },
+      {
+        "label": "D",
+        "text": "They restored the civil service examinations immediately and recruited officials only by examination.",
+        "isCorrect": false,
+        "explanation": "The examinations were suspended for decades and restored only in 1315, and officials were not recruited only by examination."
+      }
+    ],
+    "explanation": "The Yuan combined Chinese administration with Mongol and foreign dominance.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/mongol-empire",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-44",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "effects-of-connectivity",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the economic role of Italian city-states such as Venice and Genoa in the thirteenth and fourteenth centuries?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They controlled the overland routes across Central Asia.",
+        "isCorrect": false,
+        "explanation": "These routes were controlled by the Mongols and their successors; Italian merchants traveled them as visitors."
+      },
+      {
+        "label": "B",
+        "text": "They were governed by Mongol officials who collected tribute.",
+        "isCorrect": false,
+        "explanation": "Venice and Genoa were independent maritime republics."
+      },
+      {
+        "label": "C",
+        "text": "They served as intermediaries between Asian and Middle Eastern markets and European consumers, and their commercial wealth supported art and civic life.",
+        "isCorrect": true,
+        "explanation": "The Italian cities carried goods across the Mediterranean from the Islamic world and Black Sea ports, and the profits helped finance the culture of the Renaissance."
+      },
+      {
+        "label": "D",
+        "text": "They had no merchant class and depended on subsistence agriculture.",
+        "isCorrect": false,
+        "explanation": "Their wealth and power rested on commerce, not subsistence farming."
+      }
+    ],
+    "explanation": "Venice and Genoa profited as the middlemen of Mediterranean commerce.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-mcq-45",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "silk-roads",
+    "difficulty": "hard",
+    "stem": "Which pairing correctly links a belief system with its main route of diffusion before 1450?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Christianity: to East Africa across the Sahara by Mongol armies.",
+        "isCorrect": false,
+        "explanation": "Mongol armies did not spread Christianity across the Sahara."
+      },
+      {
+        "label": "B",
+        "text": "Buddhism: from India to China and other parts of East Asia along the Silk Roads and by missionaries and merchants.",
+        "isCorrect": true,
+        "explanation": "Buddhist teachings traveled with monks and merchants along Central Asian trade routes, then adapted to Chinese culture."
+      },
+      {
+        "label": "C",
+        "text": "Islam: to Southeast Asia mainly through conquest by Spanish armies.",
+        "isCorrect": false,
+        "explanation": "Spanish forces did not spread Islam; it reached Southeast Asia through Muslim merchants and Sufis."
+      },
+      {
+        "label": "D",
+        "text": "Hinduism: to Europe by the Mongols along the Volga.",
+        "isCorrect": false,
+        "explanation": "Hinduism did not spread to Europe through the Mongols."
+      }
+    ],
+    "explanation": "Buddhism spread from India to East Asia along trade routes.",
+    "conceptLink": "ap-world/unit-2-networks-of-exchange/silk-roads",
+    "reviewed": false
+  }
+]

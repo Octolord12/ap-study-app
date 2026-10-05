@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-world-u5-mcq-31",
+    "unit": "unit-5-revolutions",
+    "topic": "enlightenment-thought",
+    "difficulty": "hard",
+    "stem": "> “In every state there are three kinds of power: the power to make laws, the power to carry them out, and the power to judge. When the power to make the laws and the power to carry them out are joined in one person or one body, there can be no liberty.”\n>\n> *Source: A French political treatise, 1748*\n\nThe idea expressed in the passage most directly influenced which later development?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The division of government into separate legislative, executive and judicial branches in the United States Constitution.",
+        "isCorrect": true,
+        "explanation": "The principle of the separation of powers, associated with Montesquieu, was a model for constitutional design in the revolutionary era."
+      },
+      {
+        "label": "B",
+        "text": "The principle that a strong sovereign must have all power to prevent disorder.",
+        "isCorrect": false,
+        "explanation": "This is closer to Hobbes; the passage warns against uniting powers."
+      },
+      {
+        "label": "C",
+        "text": "The belief that monarchs rule by divine right and need no checks.",
+        "isCorrect": false,
+        "explanation": "The passage argues for limits on concentrated power, the opposite of divine-right absolutism."
+      },
+      {
+        "label": "D",
+        "text": "The call for workers to seize the means of production.",
+        "isCorrect": false,
+        "explanation": "This is a nineteenth-century socialist idea unrelated to the passage."
+      }
+    ],
+    "explanation": "The passage describes the separation of powers, which shaped later constitutions.",
+    "conceptLink": "ap-world/unit-5-revolutions/enlightenment-thought",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-32",
+    "unit": "unit-5-revolutions",
+    "topic": "enlightenment-thought",
+    "difficulty": "hard",
+    "stem": "Which statement best contrasts the political ideas of Thomas Hobbes and John Locke?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Both argued that government should be abolished because people are naturally good.",
+        "isCorrect": false,
+        "explanation": "Neither argued for abolishing government."
+      },
+      {
+        "label": "B",
+        "text": "Hobbes argued that governments could be overthrown at will, while Locke supported absolute monarchy.",
+        "isCorrect": false,
+        "explanation": "This reverses their positions."
+      },
+      {
+        "label": "C",
+        "text": "Both argued that kings rule by divine right.",
+        "isCorrect": false,
+        "explanation": "Neither defended the divine right of kings in the way traditional monarchists did, and Locke explicitly rejected it."
+      },
+      {
+        "label": "D",
+        "text": "Hobbes argued that people needed a powerful sovereign to prevent chaos, while Locke argued that government exists to protect natural rights and may be replaced if it fails to do so.",
+        "isCorrect": true,
+        "explanation": "Hobbes supported strong authority and Locke supported government by consent, with a right of revolution against abuse."
+      }
+    ],
+    "explanation": "Hobbes favored strong authority; Locke favored consent and natural rights.",
+    "conceptLink": "ap-world/unit-5-revolutions/enlightenment-thought",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-33",
+    "unit": "unit-5-revolutions",
+    "topic": "enlightenment-thought",
+    "difficulty": "hard",
+    "stem": "Mary Wollstonecraft's argument that the apparent inferiority of women resulted from their lack of education is best understood as which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A defense of absolute monarchy.",
+        "isCorrect": false,
+        "explanation": "Her argument was about education and rights, not defending absolutism."
+      },
+      {
+        "label": "B",
+        "text": "A conservative reaction to the French Revolution.",
+        "isCorrect": false,
+        "explanation": "She supported the rights ideals of the revolutionary era."
+      },
+      {
+        "label": "C",
+        "text": "An application of Enlightenment ideas about reason and natural rights to women.",
+        "isCorrect": true,
+        "explanation": "Wollstonecraft used Enlightenment principles to argue that women should be educated and share rights."
+      },
+      {
+        "label": "D",
+        "text": "A rejection of all Enlightenment ideas in favor of traditional authority.",
+        "isCorrect": false,
+        "explanation": "She used Enlightenment reasoning to challenge traditional views."
+      }
+    ],
+    "explanation": "Wollstonecraft extended Enlightenment reasoning to the question of women's rights.",
+    "conceptLink": "ap-world/unit-5-revolutions/enlightenment-thought",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-34",
+    "unit": "unit-5-revolutions",
+    "topic": "atlantic-revolutions",
+    "difficulty": "hard",
+    "stem": "> “We who have been treated as beasts of burden know as well as any Frenchman what liberty and equality mean, for we have paid dearly to learn what their absence is. We claim our rights as men, and will not lay down our arms until slavery is ended.”\n>\n> *Source: Proclamation attributed to a leader of the enslaved rebels in Saint-Domingue, 1791-1793*\n\nWhich statement best explains how the revolution described in the passage differed from the American Revolution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It was led by wealthy planters who wanted to keep slavery.",
+        "isCorrect": false,
+        "explanation": "The passage describes enslaved people fighting to end slavery."
+      },
+      {
+        "label": "B",
+        "text": "It was led by enslaved people, attacked slavery itself, and created a state in which slavery was abolished.",
+        "isCorrect": true,
+        "explanation": "The Haitian Revolution was the only successful slave revolt to produce an independent state, and it abolished slavery, whereas the United States preserved slavery after independence."
+      },
+      {
+        "label": "C",
+        "text": "It was unaffected by Enlightenment ideas of liberty and equality.",
+        "isCorrect": false,
+        "explanation": "The passage uses the language of liberty and equality that the rebels drew from the French revolutionary era."
+      },
+      {
+        "label": "D",
+        "text": "It ended with the colony's return to Spanish rule.",
+        "isCorrect": false,
+        "explanation": "Saint-Domingue was a French colony and became independent Haiti in 1804."
+      }
+    ],
+    "explanation": "The Haitian Revolution was a revolt of the enslaved that ended slavery and colonial rule.",
+    "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-35",
+    "unit": "unit-5-revolutions",
+    "topic": "atlantic-revolutions",
+    "difficulty": "hard",
+    "stem": "Which group led the independence movements in Spanish America in the early nineteenth century, and what was one of their main grievances?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Enslaved Africans, who wanted to restore African kingdoms.",
+        "isCorrect": false,
+        "explanation": "Enslaved people took part in some campaigns but did not lead the independence movements overall."
+      },
+      {
+        "label": "B",
+        "text": "The Catholic Church, which wanted to separate from Rome.",
+        "isCorrect": false,
+        "explanation": "The Church was not the leading force of independence movements and did not seek to separate from Rome."
+      },
+      {
+        "label": "C",
+        "text": "Creole elites, who resented the dominance of Spanish-born officials in high offices and the trade restrictions imposed by Spain.",
+        "isCorrect": true,
+        "explanation": "Creoles, born in the Americas of European descent, were excluded from top positions and wanted political and economic control, influenced by Enlightenment ideas and by events in Spain."
+      },
+      {
+        "label": "D",
+        "text": "Spanish-born officials, who wanted to abolish Spanish rule.",
+        "isCorrect": false,
+        "explanation": "Spanish-born officials generally supported the colonial system."
+      }
+    ],
+    "explanation": "Creole elites led the independence movements, seeking political and economic power.",
+    "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-36",
+    "unit": "unit-5-revolutions",
+    "topic": "atlantic-revolutions",
+    "difficulty": "hard",
+    "stem": "Which statement best describes a long-term effect of the French Revolution and the Napoleonic era on Europe?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Monarchy was permanently abolished throughout Europe.",
+        "isCorrect": false,
+        "explanation": "Monarchies remained in most European states for generations."
+      },
+      {
+        "label": "B",
+        "text": "A European union with a common government was created in 1800.",
+        "isCorrect": false,
+        "explanation": "No such union existed at that time."
+      },
+      {
+        "label": "C",
+        "text": "The Catholic Church became the sole legal authority in France.",
+        "isCorrect": false,
+        "explanation": "The revolution had reduced the Church's power."
+      },
+      {
+        "label": "D",
+        "text": "Ideas such as nationalism, legal equality and constitutional government spread widely, even though conservative rulers tried to restore the old order after 1815.",
+        "isCorrect": true,
+        "explanation": "The revolution and Napoleon's conquests spread new political ideas, and the Congress of Vienna tried to restore monarchies but could not erase those ideas."
+      }
+    ],
+    "explanation": "New ideas spread despite conservative efforts to restore the old order.",
+    "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-37",
+    "unit": "unit-5-revolutions",
+    "topic": "industrial-revolution-begins",
+    "difficulty": "hard",
+    "stem": "Which combination of factors best explains why the Industrial Revolution began in Great Britain?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Strong guild restrictions that required all production to remain in small workshops.",
+        "isCorrect": false,
+        "explanation": "Guild restrictions were weaker in Britain than elsewhere, and the factory system developed."
+      },
+      {
+        "label": "B",
+        "text": "Abundant coal and iron ore, capital from overseas trade and colonies, agricultural improvements that freed labor for other work, and a stable government that supported commerce.",
+        "isCorrect": true,
+        "explanation": "These conditions together encouraged innovation in textiles, mining and metallurgy."
+      },
+      {
+        "label": "C",
+        "text": "The absence of overseas markets and colonies.",
+        "isCorrect": false,
+        "explanation": "Britain's colonies and trade provided capital, raw materials and markets."
+      },
+      {
+        "label": "D",
+        "text": "A lack of coal and iron, which forced Britain to turn to machines.",
+        "isCorrect": false,
+        "explanation": "Britain had large coal and iron resources."
+      }
+    ],
+    "explanation": "Resources, capital, labor and a supportive state explain Britain's lead.",
+    "conceptLink": "ap-world/unit-5-revolutions/industrial-revolution-begins",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-38",
+    "unit": "unit-5-revolutions",
+    "topic": "industrial-revolution-begins",
+    "difficulty": "hard",
+    "stem": "> “In the mills I found children of nine and ten years working twelve hours a day among dangerous machinery. Many were deformed and sickly, and none had received any schooling.”\n>\n> *Source: Report of a government factory inspector, Britain, 1830s*\n\nThe conditions described in the passage most directly contributed to which development?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The abolition of the factory system and a return to guild production.",
+        "isCorrect": false,
+        "explanation": "The factory system continued to expand."
+      },
+      {
+        "label": "B",
+        "text": "A government order that required all children to work in mills.",
+        "isCorrect": false,
+        "explanation": "Reforms limited, rather than required, child labor."
+      },
+      {
+        "label": "C",
+        "text": "An end to industrialization in Britain.",
+        "isCorrect": false,
+        "explanation": "Industrialization continued."
+      },
+      {
+        "label": "D",
+        "text": "Reform movements and laws that limited child labor and regulated working conditions in factories.",
+        "isCorrect": true,
+        "explanation": "Reports like this one helped bring about factory acts that restricted child labor and set standards in the nineteenth century."
+      }
+    ],
+    "explanation": "Investigations of factory conditions spurred reform laws.",
+    "conceptLink": "ap-world/unit-5-revolutions/industrial-revolution-begins",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-39",
+    "unit": "unit-5-revolutions",
+    "topic": "reactions-to-industrialization",
+    "difficulty": "hard",
+    "stem": "> “In every age the many who labor have been ruled by the few who own. The workers of the factories have nothing to lose but their chains, and the day will come when they take the means of production into their own hands.”\n>\n> *Source: A European pamphlet, 1848*\n\nThe pamphlet reflects which response to industrialization?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A statement of support for absolute monarchy.",
+        "isCorrect": false,
+        "explanation": "The passage concerns class conflict."
+      },
+      {
+        "label": "B",
+        "text": "A defense of laissez-faire capitalism as set out by Adam Smith.",
+        "isCorrect": false,
+        "explanation": "The passage criticizes owners and calls for workers to take over production."
+      },
+      {
+        "label": "C",
+        "text": "Socialist ideas that criticized capitalism and predicted a workers' revolution.",
+        "isCorrect": true,
+        "explanation": "Marx and Engels and other socialists argued that industrial workers would overthrow the owners of capital."
+      },
+      {
+        "label": "D",
+        "text": "A call to return to feudal obligations and rule by nobles.",
+        "isCorrect": false,
+        "explanation": "The passage looks toward workers' control, not feudal rule."
+      }
+    ],
+    "explanation": "The pamphlet expresses socialist criticism of industrial capitalism.",
+    "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-40",
+    "unit": "unit-5-revolutions",
+    "topic": "reactions-to-industrialization",
+    "difficulty": "hard",
+    "stem": "Which statement best describes laissez-faire capitalism, as advocated by economists such as Adam Smith?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Economic growth is best promoted by free markets with little government interference.",
+        "isCorrect": true,
+        "explanation": "Laissez-faire economists argued that competition and markets guide economic activity better than government control."
+      },
+      {
+        "label": "B",
+        "text": "The government should set all prices and wages.",
+        "isCorrect": false,
+        "explanation": "Laissez-faire opposes such control."
+      },
+      {
+        "label": "C",
+        "text": "Overseas colonies should be closed to trade with all other nations.",
+        "isCorrect": false,
+        "explanation": "This is a mercantilist idea that Smith criticized."
+      },
+      {
+        "label": "D",
+        "text": "The government should own all factories and farms.",
+        "isCorrect": false,
+        "explanation": "This describes socialism or communism."
+      }
+    ],
+    "explanation": "Laissez-faire favors free markets and limited government.",
+    "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-41",
+    "unit": "unit-5-revolutions",
+    "topic": "effects-of-industrialization",
+    "difficulty": "hard",
+    "stem": "Which was a social effect of industrialization in nineteenth-century Britain?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A decline in the size of cities as people returned to farming.",
+        "isCorrect": false,
+        "explanation": "Cities grew rapidly."
+      },
+      {
+        "label": "B",
+        "text": "The disappearance of class distinctions.",
+        "isCorrect": false,
+        "explanation": "Industrialization produced new class divisions."
+      },
+      {
+        "label": "C",
+        "text": "The return of feudal lords to political power.",
+        "isCorrect": false,
+        "explanation": "Industrialization weakened old landed power and created new classes."
+      },
+      {
+        "label": "D",
+        "text": "Rapid urbanization, as workers moved to crowded industrial cities, and the growth of a larger middle class and an industrial working class.",
+        "isCorrect": true,
+        "explanation": "Factory jobs drew people from the countryside and created new social classes."
+      }
+    ],
+    "explanation": "Industrialization led to urban growth and new social classes.",
+    "conceptLink": "ap-world/unit-5-revolutions/effects-of-industrialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-42",
+    "unit": "unit-5-revolutions",
+    "topic": "reactions-to-industrialization",
+    "difficulty": "hard",
+    "stem": "> “We must send students abroad to learn the arts of the West, build railways and factories, and raise a modern army, so that our country may stand equal to the great powers and not be reduced like the lands of China to the will of foreigners.”\n>\n> *Source: Memorial of a Japanese official, 1870s*\n\nThe approach described in the passage is best explained as which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "State-led industrialization and modernization intended to prevent domination by Western powers.",
+        "isCorrect": true,
+        "explanation": "The Meiji government used borrowed Western technology and institutions to strengthen Japan, as the passage proposes."
+      },
+      {
+        "label": "B",
+        "text": "A continuation of the Tokugawa policy of closing the country to outsiders.",
+        "isCorrect": false,
+        "explanation": "The Tokugawa policy of isolation was ended and replaced by active modernization."
+      },
+      {
+        "label": "C",
+        "text": "A rejection of all Western technology and ideas in favor of isolation.",
+        "isCorrect": false,
+        "explanation": "The passage urges learning from the West."
+      },
+      {
+        "label": "D",
+        "text": "A proposal to colonize Europe.",
+        "isCorrect": false,
+        "explanation": "The passage concerns strengthening Japan, not colonizing Europe."
+      }
+    ],
+    "explanation": "The passage reflects the state-sponsored modernization of Meiji Japan.",
+    "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-43",
+    "unit": "unit-5-revolutions",
+    "topic": "effects-of-industrialization",
+    "difficulty": "hard",
+    "stem": "Which of the following contributed to the abolition of the Atlantic slave trade by Britain and other states in the early nineteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A single worldwide agreement that all slave-holding states signed in 1750.",
+        "isCorrect": false,
+        "explanation": "Abolition occurred gradually, in different countries, over many decades."
+      },
+      {
+        "label": "B",
+        "text": "A sudden collapse in European demand for sugar.",
+        "isCorrect": false,
+        "explanation": "Demand for sugar remained strong."
+      },
+      {
+        "label": "C",
+        "text": "Enlightenment ideas, humanitarian campaigns, resistance by the enslaved (including the Haitian Revolution), and changing economic interests.",
+        "isCorrect": true,
+        "explanation": "Many factors, including moral campaigns and enslaved people's own resistance, led Britain to abolish the trade in 1807 and slavery itself in its empire in 1833."
+      },
+      {
+        "label": "D",
+        "text": "Orders from African kings forbidding any sales of captives.",
+        "isCorrect": false,
+        "explanation": "African states did not control the end of the trade."
+      }
+    ],
+    "explanation": "Abolition came about through several interacting factors.",
+    "conceptLink": "ap-world/unit-5-revolutions/effects-of-industrialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-44",
+    "unit": "unit-5-revolutions",
+    "topic": "reactions-to-industrialization",
+    "difficulty": "hard",
+    "stem": "The reforms of Muhammad Ali in Egypt and the Tanzimat reforms in the Ottoman Empire in the early and mid-nineteenth century were similar in that both",
+    "choices": [
+      {
+        "label": "A",
+        "text": "rejected all European technology and ideas.",
+        "isCorrect": false,
+        "explanation": "Both reformers borrowed European models."
+      },
+      {
+        "label": "B",
+        "text": "were led by Christian missionaries.",
+        "isCorrect": false,
+        "explanation": "The reforms were led by Muslim rulers and officials."
+      },
+      {
+        "label": "C",
+        "text": "attempted to strengthen the state by adopting Western-style military, administrative and economic reforms in response to European power.",
+        "isCorrect": true,
+        "explanation": "Both sets of reformers tried to modernize armies and administration so their states could resist European pressure."
+      },
+      {
+        "label": "D",
+        "text": "ended Muslim rule in their regions.",
+        "isCorrect": false,
+        "explanation": "Muslim rule continued."
+      }
+    ],
+    "explanation": "Both reform programs imitated Western methods to strengthen the state.",
+    "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u5-mcq-45",
+    "unit": "unit-5-revolutions",
+    "topic": "atlantic-revolutions",
+    "difficulty": "hard",
+    "stem": "> “Sovereignty resides in the nation. All citizens are equal before the law and are equally eligible for public office, according to their abilities.”\n>\n> *Source: Declaration of a revolutionary assembly, 1789*\n\nWhich statement best describes a limitation of these principles in practice during the French Revolution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Women and enslaved people in the French colonies were largely excluded from the rights the declaration proclaimed.",
+        "isCorrect": true,
+        "explanation": "Although it proclaimed universal rights, women did not gain political equality, and slavery continued in the colonies until its abolition in 1794 (later reversed by Napoleon)."
+      },
+      {
+        "label": "B",
+        "text": "The principles were never written into any law.",
+        "isCorrect": false,
+        "explanation": "Many of the principles were incorporated into laws and constitutions."
+      },
+      {
+        "label": "C",
+        "text": "The principles applied only to members of the nobility.",
+        "isCorrect": false,
+        "explanation": "The declaration was meant to apply to all citizens, and it challenged noble privilege."
+      },
+      {
+        "label": "D",
+        "text": "The principles protected the Church's property from any taxation.",
+        "isCorrect": false,
+        "explanation": "The revolution took Church lands and reduced its privileges."
+      }
+    ],
+    "explanation": "The universal language of rights was applied unevenly.",
+    "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
+    "reviewed": false
+  }
+]

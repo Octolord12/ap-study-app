@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-world-u7-mcq-31",
+    "unit": "unit-7-global-conflict",
+    "topic": "causes-of-world-war-one",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the role of the European alliance system in the outbreak of World War I?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The alliances were created by the League of Nations to keep peace.",
+        "isCorrect": false,
+        "explanation": "The League of Nations was created after the war."
+      },
+      {
+        "label": "B",
+        "text": "The alliances prevented conflict by making every state friendly with every other.",
+        "isCorrect": false,
+        "explanation": "The system divided Europe into opposing blocs and increased the chance that a local crisis would spread."
+      },
+      {
+        "label": "C",
+        "text": "Germany and France were allies against Russia from the beginning.",
+        "isCorrect": false,
+        "explanation": "Germany and France were on opposite sides."
+      },
+      {
+        "label": "D",
+        "text": "Rival alliances committed the major powers to support their partners, so a regional crisis after the assassination in Sarajevo expanded into a general war.",
+        "isCorrect": true,
+        "explanation": "Austria-Hungary's conflict with Serbia drew in Russia, Germany, France and Britain through alliance obligations and mobilization plans."
+      }
+    ],
+    "explanation": "Rival alliances turned a regional conflict into a world war.",
+    "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-one",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-32",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-one-and-russian-revolution",
+    "difficulty": "hard",
+    "stem": "> “We have been under shell fire for six days. The dead lie in the wire between the lines, and after all the attacks the front has moved only a few hundred yards. They tell us the next push will break through.”\n>\n> *Source: A soldier's letter from the Western Front, 1916*\n\nWhich statement best explains the situation described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Neither army had artillery, so both relied on rifles alone.",
+        "isCorrect": false,
+        "explanation": "Artillery was extensively used on the Western Front."
+      },
+      {
+        "label": "B",
+        "text": "Machine guns, barbed wire and artillery gave defenders a major advantage, so frontal assaults were extremely costly and produced trench warfare.",
+        "isCorrect": true,
+        "explanation": "New weapons favored defense, and neither side could achieve a breakthrough without heavy casualties."
+      },
+      {
+        "label": "C",
+        "text": "The war was ended by an armistice that was in effect in 1916.",
+        "isCorrect": false,
+        "explanation": "The armistice came in November 1918."
+      },
+      {
+        "label": "D",
+        "text": "Cavalry charges had proven to be the decisive weapon for attackers.",
+        "isCorrect": false,
+        "explanation": "Cavalry was largely ineffective against machine guns and artillery."
+      }
+    ],
+    "explanation": "Defensive technology produced a deadlock and heavy casualties.",
+    "conceptLink": "ap-world/unit-7-global-conflict/world-war-one-and-russian-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-33",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-one-and-russian-revolution",
+    "difficulty": "hard",
+    "stem": "> “Peace, land and bread.”\n>\n> *Source: A slogan used by the Bolsheviks in Russia, 1917*\n\nWhich factor best explains the appeal of the slogan to many Russians in 1917?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Widespread discontent with Russia's costly war, shortages of food, and peasants' hunger for land under the Provisional Government.",
+        "isCorrect": true,
+        "explanation": "The slogan addressed the main grievances of soldiers, workers and peasants."
+      },
+      {
+        "label": "B",
+        "text": "A desire to continue the war with greater effort.",
+        "isCorrect": false,
+        "explanation": "The slogan called for peace."
+      },
+      {
+        "label": "C",
+        "text": "Support for the restoration of the tsar.",
+        "isCorrect": false,
+        "explanation": "The slogan promised change after the tsar's fall."
+      },
+      {
+        "label": "D",
+        "text": "Gratitude for German help with the harvest.",
+        "isCorrect": false,
+        "explanation": "Germany was an enemy and had not helped the harvest."
+      }
+    ],
+    "explanation": "The slogan responded to war weariness, hunger and land hunger.",
+    "conceptLink": "ap-world/unit-7-global-conflict/world-war-one-and-russian-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-34",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-one-and-russian-revolution",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the effect of World War I on the home fronts of the combatant nations?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Governments reduced their control over the economy in order to promote free enterprise.",
+        "isCorrect": false,
+        "explanation": "Governments expanded control during the war."
+      },
+      {
+        "label": "B",
+        "text": "Civilians were separated from the war and their lives were unchanged.",
+        "isCorrect": false,
+        "explanation": "Civilians were deeply affected by shortages, labor demands and sometimes direct attack."
+      },
+      {
+        "label": "C",
+        "text": "Industries shut down because they were not needed for the war.",
+        "isCorrect": false,
+        "explanation": "Industries expanded to produce war materials."
+      },
+      {
+        "label": "D",
+        "text": "Governments mobilized economies and populations by rationing, controlling industry and using propaganda, and women took jobs in factories and other work.",
+        "isCorrect": true,
+        "explanation": "Total war involved the whole society and increased the power of the state."
+      }
+    ],
+    "explanation": "Total war increased state control and changed work for women.",
+    "conceptLink": "ap-world/unit-7-global-conflict/world-war-one-and-russian-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-35",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-one-and-russian-revolution",
+    "difficulty": "hard",
+    "stem": "> “The Allied governments affirm, and Germany accepts, that Germany and her allies are responsible for causing all the loss and damage suffered by the Allied governments and their peoples as a result of the war imposed upon them.”\n>\n> *Source: A summary of a clause of the Treaty of Versailles, 1919*\n\nWhich development was most directly connected to the clause described?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Widespread German resentment over blame and reparations, which later nationalist and Nazi propaganda exploited.",
+        "isCorrect": true,
+        "explanation": "Many Germans considered the treaty humiliating, and extremist movements used that resentment."
+      },
+      {
+        "label": "B",
+        "text": "The immediate entry of the United States into the League of Nations.",
+        "isCorrect": false,
+        "explanation": "The United States Senate refused to ratify the treaty and did not join the League."
+      },
+      {
+        "label": "C",
+        "text": "German gratitude toward the Allies for the generous terms.",
+        "isCorrect": false,
+        "explanation": "Many Germans felt the terms were harsh and unfair."
+      },
+      {
+        "label": "D",
+        "text": "The restoration of the German monarchy.",
+        "isCorrect": false,
+        "explanation": "The German monarchy had fallen at the end of the war."
+      }
+    ],
+    "explanation": "The war guilt clause and reparations fueled German resentment.",
+    "conceptLink": "ap-world/unit-7-global-conflict/world-war-one-and-russian-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-36",
+    "unit": "unit-7-global-conflict",
+    "topic": "interwar-period",
+    "difficulty": "hard",
+    "stem": "Which factor best explains why the Great Depression that began in 1929 spread around the world?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Interconnected economies, including international trade, loans and investment, meant that the collapse of the American economy and credit spread to other countries.",
+        "isCorrect": true,
+        "explanation": "The financial and trade links among industrial economies carried the crisis across borders."
+      },
+      {
+        "label": "B",
+        "text": "The collapse of the Soviet Union in 1929.",
+        "isCorrect": false,
+        "explanation": "The Soviet Union existed until 1991."
+      },
+      {
+        "label": "C",
+        "text": "Only the United States was affected, because other economies were isolated.",
+        "isCorrect": false,
+        "explanation": "Many countries suffered high unemployment and falling trade."
+      },
+      {
+        "label": "D",
+        "text": "A sudden discovery of new gold supplies raised prices everywhere.",
+        "isCorrect": false,
+        "explanation": "The Depression was marked by falling prices and production."
+      }
+    ],
+    "explanation": "Links among national economies carried the crisis worldwide.",
+    "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-37",
+    "unit": "unit-7-global-conflict",
+    "topic": "interwar-period",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the appeal of fascist movements in Italy and Germany in the 1920s and 1930s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They offered a democratic socialist program based on international cooperation.",
+        "isCorrect": false,
+        "explanation": "Fascists rejected democracy and internationalism."
+      },
+      {
+        "label": "B",
+        "text": "They opposed all forms of nationalism.",
+        "isCorrect": false,
+        "explanation": "Nationalism was central to fascism."
+      },
+      {
+        "label": "C",
+        "text": "They promised national revival, order and economic recovery in societies shaken by wartime defeat or disappointment, depression and fear of communism, and they used propaganda and violence.",
+        "isCorrect": true,
+        "explanation": "Fascists appealed to nationalism and to people seeking strong leadership in a period of crisis."
+      },
+      {
+        "label": "D",
+        "text": "They advocated that the League of Nations should govern the world.",
+        "isCorrect": false,
+        "explanation": "Fascist regimes opposed and ignored the League."
+      }
+    ],
+    "explanation": "Fascism combined extreme nationalism, authoritarian leadership and promises of recovery.",
+    "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-38",
+    "unit": "unit-7-global-conflict",
+    "topic": "interwar-period",
+    "difficulty": "hard",
+    "stem": "Stalin's policies of collectivization and the Five-Year Plans in the Soviet Union aimed primarily to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "focus the economy on consumer goods rather than heavy industry.",
+        "isCorrect": false,
+        "explanation": "The Five-Year Plans emphasized heavy industry and military goods."
+      },
+      {
+        "label": "B",
+        "text": "rapidly industrialize the country and put agriculture under state control, at enormous human cost.",
+        "isCorrect": true,
+        "explanation": "The policies sought to build heavy industry and control food production, and they caused famine and repression."
+      },
+      {
+        "label": "C",
+        "text": "reduce state control and encourage small business.",
+        "isCorrect": false,
+        "explanation": "State control increased."
+      },
+      {
+        "label": "D",
+        "text": "restore private farms and a market economy.",
+        "isCorrect": false,
+        "explanation": "The policies abolished private farms and market incentives."
+      }
+    ],
+    "explanation": "Stalin's plans were meant to industrialize rapidly under state control.",
+    "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-39",
+    "unit": "unit-7-global-conflict",
+    "topic": "interwar-period",
+    "difficulty": "hard",
+    "stem": "> “We shall march to the sea and take salt from its shores in defiance of the law that forbids it. We shall use no violence, but we shall refuse to obey a law that is unjust.”\n>\n> *Source: Statement by an Indian nationalist leader announcing a protest, 1930*\n\nWhich statement best describes the strategy of the movement described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It used nonviolent civil disobedience to challenge British authority and win popular support.",
+        "isCorrect": true,
+        "explanation": "Gandhi's Salt March was a nonviolent act of civil disobedience that mobilized Indians across social groups."
+      },
+      {
+        "label": "B",
+        "text": "It was an armed insurrection against the British army.",
+        "isCorrect": false,
+        "explanation": "The passage rejects violence."
+      },
+      {
+        "label": "C",
+        "text": "It was an alliance with Japan against the British.",
+        "isCorrect": false,
+        "explanation": "The passage does not mention any alliance."
+      },
+      {
+        "label": "D",
+        "text": "It was a campaign to encourage emigration from India.",
+        "isCorrect": false,
+        "explanation": "The passage concerns protest within India."
+      }
+    ],
+    "explanation": "The passage describes nonviolent civil disobedience.",
+    "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-40",
+    "unit": "unit-7-global-conflict",
+    "topic": "causes-of-world-war-two",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the policy of appeasement toward Nazi Germany in the 1930s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Britain and France formed a military alliance to invade Germany immediately.",
+        "isCorrect": false,
+        "explanation": "They avoided military confrontation until Germany invaded Poland in 1939."
+      },
+      {
+        "label": "B",
+        "text": "Britain and France supported Germany's war against Poland.",
+        "isCorrect": false,
+        "explanation": "Britain and France declared war on Germany after the invasion of Poland."
+      },
+      {
+        "label": "C",
+        "text": "Britain and France enforced strict military sanctions through the League of Nations.",
+        "isCorrect": false,
+        "explanation": "The League's sanctions were weak and appeasement involved concessions."
+      },
+      {
+        "label": "D",
+        "text": "Britain and France made concessions to Hitler, such as accepting the German takeover of the Sudetenland at Munich in 1938, in the hope of avoiding war.",
+        "isCorrect": true,
+        "explanation": "Appeasement was an attempt to satisfy Hitler's demands to preserve peace, and it was not successful."
+      }
+    ],
+    "explanation": "Appeasement meant making concessions to avoid war.",
+    "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-two",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-41",
+    "unit": "unit-7-global-conflict",
+    "topic": "causes-of-world-war-two",
+    "difficulty": "hard",
+    "stem": "Which statement best explains Japan's expansion in East Asia in the 1930s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Japan was a member of the Allies and was defending against Germany.",
+        "isCorrect": false,
+        "explanation": "Japan joined the Axis powers."
+      },
+      {
+        "label": "B",
+        "text": "Japan was the colony of a European power seeking independence.",
+        "isCorrect": false,
+        "explanation": "Japan was an independent imperial power."
+      },
+      {
+        "label": "C",
+        "text": "Japan was fulfilling an obligation to the League of Nations to protect China.",
+        "isCorrect": false,
+        "explanation": "The League criticized Japan's actions in Manchuria, and Japan left the League."
+      },
+      {
+        "label": "D",
+        "text": "Japanese leaders, increasingly influenced by the military, sought raw materials, markets and regional dominance, and invaded Manchuria in 1931 and China in 1937.",
+        "isCorrect": true,
+        "explanation": "Japan's expansion was driven by resource needs, nationalism and militarist influence."
+      }
+    ],
+    "explanation": "Japan's expansion was motivated by resources, nationalism and militarism.",
+    "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-two",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-42",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-two-and-mass-atrocities",
+    "difficulty": "hard",
+    "stem": "Which statement best describes how the Holocaust differed from earlier episodes of religious or ethnic persecution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It was carried out by the Soviet Union against its own population.",
+        "isCorrect": false,
+        "explanation": "The Holocaust was carried out by Nazi Germany and its collaborators."
+      },
+      {
+        "label": "B",
+        "text": "It was directed only against soldiers in wartime.",
+        "isCorrect": false,
+        "explanation": "The victims were mostly civilians."
+      },
+      {
+        "label": "C",
+        "text": "It used the state's bureaucracy, modern technology and a racial ideology to carry out systematic mass murder.",
+        "isCorrect": true,
+        "explanation": "The Nazi regime organized the identification, transport and killing of about six million Jews, along with millions of other victims, through state institutions."
+      },
+      {
+        "label": "D",
+        "text": "It was a spontaneous series of riots without government involvement.",
+        "isCorrect": false,
+        "explanation": "The persecution was planned and carried out by the state."
+      }
+    ],
+    "explanation": "The Holocaust was an organized, state-run genocide using modern bureaucracy and technology.",
+    "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-43",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-two-and-mass-atrocities",
+    "difficulty": "hard",
+    "stem": "The use of atomic bombs on Hiroshima and Nagasaki in August 1945 most directly contributed to which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The end of the war in Europe.",
+        "isCorrect": false,
+        "explanation": "The war in Europe had ended in May 1945."
+      },
+      {
+        "label": "B",
+        "text": "Japan's surrender, which ended World War II, and the beginning of the nuclear age and the arms race.",
+        "isCorrect": true,
+        "explanation": "The bombings were followed by Japan's surrender and shaped later rivalry between the superpowers."
+      },
+      {
+        "label": "C",
+        "text": "The beginning of World War II.",
+        "isCorrect": false,
+        "explanation": "The war began in 1939."
+      },
+      {
+        "label": "D",
+        "text": "The immediate surrender of the Soviet Union.",
+        "isCorrect": false,
+        "explanation": "The Soviet Union was an Allied power."
+      }
+    ],
+    "explanation": "The bombs were followed by Japan's surrender and ushered in the nuclear age.",
+    "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-44",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-two-and-mass-atrocities",
+    "difficulty": "hard",
+    "stem": "The Armenian Genocide of 1915 is best understood as which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A Russian campaign against the Ottoman people.",
+        "isCorrect": false,
+        "explanation": "It was carried out by the Ottoman government against Armenians."
+      },
+      {
+        "label": "B",
+        "text": "A battle between the Ottoman and Russian armies.",
+        "isCorrect": false,
+        "explanation": "The genocide targeted a civilian population."
+      },
+      {
+        "label": "C",
+        "text": "A peaceful population exchange agreed by the Ottoman and Armenian leaders.",
+        "isCorrect": false,
+        "explanation": "It was a campaign of forced deportation and killing."
+      },
+      {
+        "label": "D",
+        "text": "The deportation and mass killing of Armenians by the Ottoman government during World War I, an example of mass violence linked to nationalism and wartime fears.",
+        "isCorrect": true,
+        "explanation": "Ottoman authorities deported and killed large numbers of Armenians in 1915 and afterwards."
+      }
+    ],
+    "explanation": "The Armenian Genocide was a government-led campaign of deportation and killing during World War I.",
+    "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-mcq-45",
+    "unit": "unit-7-global-conflict",
+    "topic": "interwar-period",
+    "difficulty": "hard",
+    "stem": "The mandate system created after World War I is best described as",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a system in which the United States governed the former German colonies in Africa.",
+        "isCorrect": false,
+        "explanation": "The mandatory powers were mainly Britain, France and Japan."
+      },
+      {
+        "label": "B",
+        "text": "a plan for the former colonies to rejoin the German Empire.",
+        "isCorrect": false,
+        "explanation": "Germany lost its colonies in the peace settlement."
+      },
+      {
+        "label": "C",
+        "text": "an immediate grant of independence to all former colonies of the defeated powers.",
+        "isCorrect": false,
+        "explanation": "Most mandated territories were not independent, and nationalists continued their struggle."
+      },
+      {
+        "label": "D",
+        "text": "the League of Nations' assignment of former Ottoman and German territories to Britain and France and other powers, which governed them as mandates while local nationalists sought independence.",
+        "isCorrect": true,
+        "explanation": "The mandates were a new form of imperial control, justified as preparation for self-government."
+      }
+    ],
+    "explanation": "Mandates transferred defeated powers' territories to the victors under League authority.",
+    "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
+    "reviewed": false
+  }
+]

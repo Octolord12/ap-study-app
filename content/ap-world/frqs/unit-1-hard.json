@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u1-frq-4",
+    "unit": "unit-1-global-tapestry",
+    "topic": "state-building-americas-africa",
+    "prompt": "Use the passage to answer parts A, B and C.\n\n> “When the king of Mali came to Cairo on pilgrimage, he gave out so much gold that its value fell in the markets and did not recover for many years. His followers numbered in the thousands.”\n>\n> *Source: A Cairo official, early fourteenth century*\n\n**a)** Identify ONE piece of evidence in the passage that shows Mali was connected to the wider Islamic world.\n\n**b)** Explain ONE historical development that helps explain why Mali's rulers had so much gold.\n\n**c)** Explain ONE way that Mali's connections to the Islamic world affected West African societies in this period.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies the king's pilgrimage to Mecca through Cairo (or the presence of the king in Cairo) as evidence of connection to the Islamic world"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains that Mali controlled or taxed gold production and the trans-Saharan trade, in which gold was exchanged for salt and other goods"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as the spread of Islam, the growth of centers of Islamic learning such as Timbuktu, or increased trade and contact with the Mediterranean world"
+      }
+    ],
+    "sampleResponse": "a) The passage describes the king of Mali traveling to Cairo on pilgrimage, showing Mali's rulers were Muslims connected to the wider Islamic world.\nb) Mali's rulers controlled the trans-Saharan trade in gold from West African goldfields, which they exchanged for goods such as salt, and they taxed the traders who passed through their territory.\nc) Contact with the Islamic world encouraged the growth of centers of Islamic learning such as Timbuktu, where scholars, mosques and libraries flourished, and spread Islamic practice and literacy in Arabic through the region.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u1-frq-5",
+    "unit": "unit-1-global-tapestry",
+    "topic": "european-christendom",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which religion shaped the political authority of states in TWO of the following regions between about 1200 and 1450: East Asia, West Africa, South Asia, western Europe.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which religion shaped political authority in two regions"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as the spread of Islam, Christianity and Neo-Confucian thought and the growth of trade and states in 1200-1450"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to each region (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses comparison, causation or continuity and change to structure the argument (1 point), and demonstrates complex understanding, such as qualifying the argument or noting that religion interacted with trade, military power or administration (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that religion shaped political authority powerfully in West Africa and western Europe but less decisively than administration and military power in East Asia. It describes the broader context (such as the spread of universal religions along trade routes), uses specific evidence (such as Mansa Musa's pilgrimage and Mali's Muslim rulers; the Catholic Church's influence over European kings and the Crusades; Neo-Confucian ideology and the Song examination system; the Sufis and the Delhi Sultanate), and analyzes similarity and difference in how religion legitimized rulers or competed with other sources of authority.",
+    "reviewed": false
+  }
+]

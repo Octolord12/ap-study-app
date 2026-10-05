@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-world-u4-mcq-31",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "technology-and-exploration",
+    "difficulty": "hard",
+    "stem": "> “The prince sent his ships south along the coast to learn what lands lay beyond, to find the sources of gold, to carry the faith to those who had not heard it, and to trade directly with the peoples of the south and east, without paying tribute to the Muslim merchants who stand between us and those markets.”\n>\n> *Source: Account by a Portuguese court chronicler, fifteenth century*\n\nWhich statement best explains the motivations described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They were responding to a ban on foreign ships issued by the Mongol Empire.",
+        "isCorrect": false,
+        "explanation": "The passage does not mention a Mongol ban, and the motivations described are commercial and religious."
+      },
+      {
+        "label": "B",
+        "text": "Portuguese rulers sought direct access to African and Asian trade and wealth, and wanted to spread Christianity, by bypassing Muslim and Italian intermediaries.",
+        "isCorrect": true,
+        "explanation": "Portugal's voyages combined economic motives, such as gold and the spice trade, with religious aims and rivalry with the merchants who controlled existing routes."
+      },
+      {
+        "label": "C",
+        "text": "They hoped to establish colonies in Australia to relieve overpopulation.",
+        "isCorrect": false,
+        "explanation": "The passage concerns Africa and Asian trade; European contact with Australia came much later."
+      },
+      {
+        "label": "D",
+        "text": "They intended purely to gather scientific information without any commercial purpose.",
+        "isCorrect": false,
+        "explanation": "The passage explicitly mentions gold and trade as goals."
+      }
+    ],
+    "explanation": "The passage shows both economic and religious motives for the voyages.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-32",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "technology-and-exploration",
+    "difficulty": "hard",
+    "stem": "Which combination best explains how European sailors in the fifteenth century were able to make long voyages across the Atlantic and around Africa?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The caravel, which combined square and lateen sails, together with navigational tools such as the compass and astrolabe that came to Europe from Asia and the Islamic world.",
+        "isCorrect": true,
+        "explanation": "Europeans adopted and improved ship designs and instruments from earlier traditions, enabling them to sail against the wind and to find their position at sea."
+      },
+      {
+        "label": "B",
+        "text": "Radar and the satellite-based position system.",
+        "isCorrect": false,
+        "explanation": "These are twentieth-century technologies."
+      },
+      {
+        "label": "C",
+        "text": "Treasure ships purchased from Ming China.",
+        "isCorrect": false,
+        "explanation": "The Portuguese and Spanish used their own caravels and later carracks."
+      },
+      {
+        "label": "D",
+        "text": "Steam engines and iron-hulled ships.",
+        "isCorrect": false,
+        "explanation": "Steamships developed in the nineteenth century."
+      }
+    ],
+    "explanation": "Improved ships and borrowed navigational instruments enabled long ocean voyages.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-33",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "columbian-exchange",
+    "difficulty": "hard",
+    "stem": "> “The natives began to die in heaps from a sickness of pustules, so many that the living could not bury the dead. Whole villages were emptied, and the survivors were too weak to work their fields.”\n>\n> *Source: Report of a Spanish missionary in central Mexico, 1520s*\n\nThe situation described is best explained by which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A famine caused by the sudden arrival of European crops.",
+        "isCorrect": false,
+        "explanation": "The passage describes a disease, and European crops did not cause such a catastrophe."
+      },
+      {
+        "label": "B",
+        "text": "Native Americans had no previous exposure to diseases such as smallpox that Europeans brought with them.",
+        "isCorrect": true,
+        "explanation": "Populations without immunity to Old World diseases suffered catastrophic mortality, which also weakened their ability to resist conquest."
+      },
+      {
+        "label": "C",
+        "text": "Deliberate massacres by Spanish soldiers that explain nearly all of the deaths.",
+        "isCorrect": false,
+        "explanation": "Violence and forced labor killed many, but disease was the main cause of the population collapse."
+      },
+      {
+        "label": "D",
+        "text": "The spread of the Black Death from Asia through Mongol trade routes.",
+        "isCorrect": false,
+        "explanation": "The Black Death of the fourteenth century was in Afro-Eurasia, not Mexico in the 1520s."
+      }
+    ],
+    "explanation": "The passage describes epidemic disease among populations lacking immunity.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-34",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "columbian-exchange",
+    "difficulty": "hard",
+    "stem": "Which statement best describes an effect of the Columbian Exchange on Afro-Eurasian societies?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "European farmers began to grow wheat for the first time, introduced from the Americas.",
+        "isCorrect": false,
+        "explanation": "Wheat is an Old World crop that Europeans brought to the Americas."
+      },
+      {
+        "label": "B",
+        "text": "Sugarcane was first introduced to Europe from the Americas.",
+        "isCorrect": false,
+        "explanation": "Sugarcane came from the Old World and was later grown in the Americas."
+      },
+      {
+        "label": "C",
+        "text": "American crops such as potatoes and maize increased food supplies and contributed to population growth in parts of Europe, Africa and China.",
+        "isCorrect": true,
+        "explanation": "High-yielding American crops adapted to many environments, supporting population growth in Afro-Eurasia."
+      },
+      {
+        "label": "D",
+        "text": "Horses were introduced to Europe from the Americas.",
+        "isCorrect": false,
+        "explanation": "Horses were domesticated in Eurasia and were brought to the Americas by Europeans."
+      }
+    ],
+    "explanation": "American crops expanded food supplies in Afro-Eurasia.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-35",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "maritime-empires",
+    "difficulty": "hard",
+    "stem": "Which factor best explains why large amounts of Spanish American silver flowed to China in the sixteenth and seventeenth centuries?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "China had banned the use of silver and sought to remove it from its economy.",
+        "isCorrect": false,
+        "explanation": "The opposite was true: China's economy increasingly used silver."
+      },
+      {
+        "label": "B",
+        "text": "Ming China's commercial economy and tax system created strong demand for silver, which paid for Chinese goods such as silk and porcelain.",
+        "isCorrect": true,
+        "explanation": "China needed silver for taxes and trade, and Europeans could pay for Chinese manufactured goods with silver from Potosi and Mexico."
+      },
+      {
+        "label": "C",
+        "text": "Spain used silver only to pay Native American workers, who then sent it to China.",
+        "isCorrect": false,
+        "explanation": "Silver was shipped to Europe and across the Pacific through Manila to buy Chinese goods."
+      },
+      {
+        "label": "D",
+        "text": "Europeans wanted Chinese silver mines to be turned over to Spanish rule.",
+        "isCorrect": false,
+        "explanation": "China was not conquered, and the silver flowed from the Americas."
+      }
+    ],
+    "explanation": "Chinese demand for silver connected the American mines to Asian markets.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-36",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "maritime-empires",
+    "difficulty": "hard",
+    "stem": "Which feature of the Dutch East India Company (the VOC, founded in 1602) helped the Dutch raise capital and spread the financial risk of long voyages?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It used only barter and did not raise capital.",
+        "isCorrect": false,
+        "explanation": "The VOC raised substantial capital from investors."
+      },
+      {
+        "label": "B",
+        "text": "It operated as a medieval craft guild limited to local artisans.",
+        "isCorrect": false,
+        "explanation": "The VOC was a large commercial company, not a guild."
+      },
+      {
+        "label": "C",
+        "text": "It was a joint-stock company that sold shares to many investors.",
+        "isCorrect": true,
+        "explanation": "Investors could pool their money and share profits and losses, which allowed large-scale, high-risk overseas ventures."
+      },
+      {
+        "label": "D",
+        "text": "It was funded entirely by a Dutch king who owned all of its ships.",
+        "isCorrect": false,
+        "explanation": "The Dutch Republic was governed by merchants and regents, and the VOC raised funds from many investors."
+      }
+    ],
+    "explanation": "Joint-stock financing allowed investors to share risk and profit.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-37",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "maritime-empires",
+    "difficulty": "hard",
+    "stem": "The Treaty of Tordesillas (1494) is best understood as evidence of which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Competition between European monarchies for overseas empires, with the Catholic Church's authority used to divide claims.",
+        "isCorrect": true,
+        "explanation": "Spain and Portugal agreed, with papal involvement, on a line dividing their claims in the newly reached lands outside Europe."
+      },
+      {
+        "label": "B",
+        "text": "A treaty negotiated with the rulers of Native American empires.",
+        "isCorrect": false,
+        "explanation": "Native rulers were not parties to the treaty."
+      },
+      {
+        "label": "C",
+        "text": "An agreement between Britain and France to divide North America.",
+        "isCorrect": false,
+        "explanation": "The treaty was between Spain and Portugal."
+      },
+      {
+        "label": "D",
+        "text": "The end of rivalry between Spain and Portugal.",
+        "isCorrect": false,
+        "explanation": "The agreement was an attempt to manage rivalry, which continued."
+      }
+    ],
+    "explanation": "The treaty shows European rivalry for empire and its Catholic framework.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-38",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "labor-systems-and-slave-trade",
+    "difficulty": "hard",
+    "stem": "> “A plantation cannot prosper without at least a hundred slaves, for the mill must run day and night in the season, and the cane must be cut before it spoils. The price of sugar in London is high, and every year more land is planted.”\n>\n> *Source: Letter of a Caribbean sugar planter, 1680s*\n\nWhich economic factor does the passage most directly connect to the expansion of the Atlantic slave trade?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "New laws abolishing the use of enslaved labor in Europe.",
+        "isCorrect": false,
+        "explanation": "Abolition came later; the passage shows demand for enslaved workers."
+      },
+      {
+        "label": "B",
+        "text": "Rising European demand for sugar and other plantation crops, which created a large demand for forced labor in the Americas.",
+        "isCorrect": true,
+        "explanation": "Plantation agriculture producing sugar for European markets required large amounts of labor, which planters obtained by importing enslaved Africans."
+      },
+      {
+        "label": "C",
+        "text": "The need for soldiers to defend the colonies against Spain.",
+        "isCorrect": false,
+        "explanation": "The passage concerns plantation labor, not military needs."
+      },
+      {
+        "label": "D",
+        "text": "A decline in European demand for sugar.",
+        "isCorrect": false,
+        "explanation": "The passage reports high prices and expanding planting, not declining demand."
+      }
+    ],
+    "explanation": "Demand for sugar in Europe drove plantation expansion and the demand for enslaved labor.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-39",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "labor-systems-and-slave-trade",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the role of West African states and merchants in the Atlantic slave trade?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "African states took no part in the trade, and Europeans captured all enslaved people inland by themselves.",
+        "isCorrect": false,
+        "explanation": "Europeans usually bought captives at coastal trading posts from African rulers and merchants."
+      },
+      {
+        "label": "B",
+        "text": "Some African states and merchants captured and sold enslaved people to Europeans in exchange for goods such as firearms and textiles, which affected warfare and political power in the region.",
+        "isCorrect": true,
+        "explanation": "African rulers and traders took part on their own terms in many places; the trade changed regional politics and fueled conflict."
+      },
+      {
+        "label": "C",
+        "text": "The Atlantic slave trade involved only the movement of captives between African kingdoms.",
+        "isCorrect": false,
+        "explanation": "The Atlantic trade carried millions of people across the ocean to the Americas."
+      },
+      {
+        "label": "D",
+        "text": "All African states banned the sale of captives to Europeans.",
+        "isCorrect": false,
+        "explanation": "Some states participated extensively, and others resisted; there was no universal ban."
+      }
+    ],
+    "explanation": "Some African elites participated and gained from the trade, while its effects were devastating for many African societies.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-40",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "labor-systems-and-slave-trade",
+    "difficulty": "hard",
+    "stem": "The Spanish encomienda and mita systems in the Americas were similar in that both",
+    "choices": [
+      {
+        "label": "A",
+        "text": "paid Native workers market wages in silver.",
+        "isCorrect": false,
+        "explanation": "Workers under both systems were coerced and poorly paid."
+      },
+      {
+        "label": "B",
+        "text": "relied on the labor of Native Americans under the control of the colonial authorities and settlers.",
+        "isCorrect": true,
+        "explanation": "The encomienda granted settlers the right to Native labor and tribute, and the mita adapted the Inca labor draft for mines and other projects."
+      },
+      {
+        "label": "C",
+        "text": "relied exclusively on enslaved Africans.",
+        "isCorrect": false,
+        "explanation": "These systems used Native American labor; African slavery was a separate system."
+      },
+      {
+        "label": "D",
+        "text": "were ended by the Spanish crown in the early sixteenth century.",
+        "isCorrect": false,
+        "explanation": "Both systems lasted for generations, in modified forms."
+      }
+    ],
+    "explanation": "Both systems extracted forced labor from Native Americans.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-41",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "labor-systems-and-slave-trade",
+    "difficulty": "hard",
+    "stem": "The casta system of Spanish America was primarily based on which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Examination results in a colonial civil service.",
+        "isCorrect": false,
+        "explanation": "The system was not based on examinations."
+      },
+      {
+        "label": "B",
+        "text": "Religious conversion only.",
+        "isCorrect": false,
+        "explanation": "Religion mattered, but the categories centered on ancestry."
+      },
+      {
+        "label": "C",
+        "text": "Birth and ancestry, which shaped a person's legal and social status.",
+        "isCorrect": true,
+        "explanation": "People were classified by ancestry and mixture (Spaniards born in Europe, creoles, mestizos, mulattoes, Native Americans and Africans), and these categories affected rights and opportunities."
+      },
+      {
+        "label": "D",
+        "text": "Wealth alone, regardless of ancestry.",
+        "isCorrect": false,
+        "explanation": "Wealth mattered but ancestry formally shaped status."
+      }
+    ],
+    "explanation": "Ancestry was the foundation of the colonial hierarchy.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-42",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "maritime-empires",
+    "difficulty": "hard",
+    "stem": "Which statement best compares the Spanish and Dutch overseas empires in the seventeenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Neither empire was involved in the Atlantic slave trade.",
+        "isCorrect": false,
+        "explanation": "Both took part in the trade in some form."
+      },
+      {
+        "label": "B",
+        "text": "The Dutch conquered large territories in Mexico and Peru, while the Spanish relied on trading posts alone.",
+        "isCorrect": false,
+        "explanation": "This reverses the characteristics of the two empires."
+      },
+      {
+        "label": "C",
+        "text": "Spain governed large territories in the Americas and drew great wealth from silver mining, while the Dutch relied more on trading posts, fleets and chartered companies to control commerce.",
+        "isCorrect": true,
+        "explanation": "The Spanish empire was territorial, with administrative control over Native populations and mines; the Dutch emphasized maritime trade networks."
+      },
+      {
+        "label": "D",
+        "text": "Both were governed by hereditary monarchs who owned all trading companies.",
+        "isCorrect": false,
+        "explanation": "The Dutch Republic had no king and its companies were chartered private enterprises."
+      }
+    ],
+    "explanation": "Spain built a territorial empire based on mining, while the Dutch built a commercial maritime empire.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-43",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "technology-and-exploration",
+    "difficulty": "hard",
+    "stem": "Which factor best helps explain why European states rather than Ming China led overseas expansion after 1450?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "China did not have ships capable of crossing the ocean.",
+        "isCorrect": false,
+        "explanation": "Ming ships of the early fifteenth century were among the largest in the world."
+      },
+      {
+        "label": "B",
+        "text": "China had no interest in silver or foreign trade.",
+        "isCorrect": false,
+        "explanation": "Chinese demand for silver and trade was strong and was a major force in global exchange."
+      },
+      {
+        "label": "C",
+        "text": "European ships were far more advanced than Chinese ships in 1405.",
+        "isCorrect": false,
+        "explanation": "Chinese treasure ships were larger and in many ways comparable to or more advanced than European vessels at that time."
+      },
+      {
+        "label": "D",
+        "text": "The Ming court ended state-sponsored treasure fleet expeditions after 1433, while competing European monarchies sponsored voyages to gain trade and wealth.",
+        "isCorrect": true,
+        "explanation": "Chinese policy turned away from large maritime expeditions, while rivalry among European states motivated them to seek new routes."
+      }
+    ],
+    "explanation": "Policy choices and competition among states help explain the difference.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-44",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "columbian-exchange",
+    "difficulty": "hard",
+    "stem": "Which was an effect of the reintroduction of horses and the introduction of European livestock to the Americas?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Horses transformed hunting and warfare for some Plains peoples, and livestock such as cattle and pigs changed land use and diets.",
+        "isCorrect": true,
+        "explanation": "Horses spread through Native societies and changed life on the Plains; European animals also altered environments."
+      },
+      {
+        "label": "B",
+        "text": "Livestock were introduced to Europe from the Americas, increasing the European food supply.",
+        "isCorrect": false,
+        "explanation": "Cattle, pigs, sheep and horses came from the Old World to the Americas."
+      },
+      {
+        "label": "C",
+        "text": "The animals had no effect on Native American societies.",
+        "isCorrect": false,
+        "explanation": "The animals had major effects on many societies."
+      },
+      {
+        "label": "D",
+        "text": "Horses had been native to the Americas in 1492 and the arrival of Europeans changed nothing.",
+        "isCorrect": false,
+        "explanation": "Horses had disappeared from the Americas thousands of years earlier and were reintroduced by Europeans."
+      }
+    ],
+    "explanation": "The introduction of horses and livestock altered Native American societies and environments.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-mcq-45",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "maritime-empires",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the economic policy of mercantilism in early modern Europe?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Governments sought to increase national wealth by accumulating precious metals and maintaining favorable trade balances, using colonies as sources of raw materials and markets.",
+        "isCorrect": true,
+        "explanation": "Mercantilism treated colonies and trade as instruments to strengthen the state."
+      },
+      {
+        "label": "B",
+        "text": "States redistributed land and wealth equally among peasants.",
+        "isCorrect": false,
+        "explanation": "Mercantilism was concerned with state power and trade, not equality."
+      },
+      {
+        "label": "C",
+        "text": "States banned overseas colonies to protect domestic industries.",
+        "isCorrect": false,
+        "explanation": "Colonies were central to mercantilist policy."
+      },
+      {
+        "label": "D",
+        "text": "States promoted free trade with little government involvement.",
+        "isCorrect": false,
+        "explanation": "Mercantilism involved extensive government regulation, tariffs and monopolies."
+      }
+    ],
+    "explanation": "Mercantilism used regulation and colonies to build national wealth.",
+    "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
+    "reviewed": false
+  }
+]

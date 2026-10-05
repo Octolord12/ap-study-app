@@ -1,0 +1,575 @@
+[
+  {
+    "id": "ap-phys1-u5-mcq-31",
+    "unit": "unit-5-momentum",
+    "topic": "momentum-and-impulse",
+    "difficulty": "hard",
+    "stem": "A 2.0 kg object is initially at rest on a frictionless surface. The graph shows the net horizontal force on it as a function of time. What is the object's speed at $t=5$ s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "42 m/s",
+        "isCorrect": false,
+        "explanation": "42 is the impulse in N$\\cdot$s, which equals the change in momentum, not the change in speed. Divide by the mass."
+      },
+      {
+        "label": "B",
+        "text": "8.4 m/s",
+        "isCorrect": false,
+        "explanation": "This divides the impulse by the duration (5 s), which gives an average force of 8.4 N, not a speed."
+      },
+      {
+        "label": "C",
+        "text": "84 m/s",
+        "isCorrect": false,
+        "explanation": "This multiplies the impulse by the mass. The speed is $\\frac{J}{m}$."
+      },
+      {
+        "label": "D",
+        "text": "21 m/s",
+        "isCorrect": true,
+        "explanation": "The impulse is the area under the graph: $\\frac12(2)(12)+(2)(12)+\\frac12(1)(12)=12+24+6=42$ N$\\cdot$s. Since $J=\\Delta p=m\\,\\Delta v$ and the object starts at rest, $v=\\frac{42}{2.0}=21$ m/s."
+      }
+    ],
+    "explanation": "The area under an $F$-$t$ graph is the impulse, which equals the change in momentum $m\\,\\Delta v$.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/momentum-and-impulse",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Force versus time: rises from 0 to 12 N at t=2 s, stays at 12 N until t=4 s, then falls to 0 at t=5 s.",
+      "xLabel": "t (s)",
+      "yLabel": "F (N)",
+      "xMin": 0,
+      "xMax": 5,
+      "yMin": 0,
+      "yMax": 14,
+      "series": [
+        {
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 2,
+              "y": 12
+            },
+            {
+              "x": 4,
+              "y": 12
+            },
+            {
+              "x": 5,
+              "y": 0
+            }
+          ],
+          "color": "blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-phys1-u5-mcq-32",
+    "unit": "unit-5-momentum",
+    "topic": "collisions",
+    "difficulty": "hard",
+    "stem": "A 3.0 kg cart moving at 4.0 m/s collides with a stationary 5.0 kg cart. The carts stick together. How much kinetic energy is lost in the collision?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9 J",
+        "isCorrect": false,
+        "explanation": "This is the kinetic energy that remains after the collision, not the amount lost."
+      },
+      {
+        "label": "B",
+        "text": "24 J",
+        "isCorrect": false,
+        "explanation": "This is the initial kinetic energy. Some kinetic energy remains after the collision because the carts still move together."
+      },
+      {
+        "label": "C",
+        "text": "15 J",
+        "isCorrect": true,
+        "explanation": "Momentum conservation: $v_f=\\frac{(3.0)(4.0)}{8.0}=1.5$ m/s. Initial $KE=\\frac12(3.0)(4.0)^2=24$ J. Final $KE=\\frac12(8.0)(1.5)^2=9$ J. Lost: $24-9=15$ J."
+      },
+      {
+        "label": "D",
+        "text": "12 J",
+        "isCorrect": false,
+        "explanation": "12 is the initial momentum in kg$\\cdot$m/s. It is not an energy."
+      }
+    ],
+    "explanation": "Find the final velocity from momentum conservation, then compare the kinetic energies before and after.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-33",
+    "unit": "unit-5-momentum",
+    "topic": "collisions",
+    "difficulty": "hard",
+    "stem": "A 1.0 kg cart moving at 6.0 m/s collides head-on and elastically with a stationary 3.0 kg cart. What is the velocity of the 1.0 kg cart immediately after the collision? (Take the initial direction of motion as positive.)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0 m/s",
+        "isCorrect": false,
+        "explanation": "The lighter cart would stop only if the two masses were equal. Here the heavier cart is 3 times as massive."
+      },
+      {
+        "label": "B",
+        "text": "$-3.0$ m/s",
+        "isCorrect": true,
+        "explanation": "For an elastic collision both momentum and kinetic energy are conserved. Solving gives $v_{1f}=\\frac{m_1-m_2}{m_1+m_2}v_1=\\frac{1-3}{4}(6.0)=-3.0$ m/s: the lighter cart rebounds. The 3.0 kg cart moves off at $+3.0$ m/s."
+      },
+      {
+        "label": "C",
+        "text": "$+3.0$ m/s",
+        "isCorrect": false,
+        "explanation": "$+3.0$ m/s is the velocity of the heavier cart after the collision. A light object that hits a heavier stationary object bounces back."
+      },
+      {
+        "label": "D",
+        "text": "$-6.0$ m/s",
+        "isCorrect": false,
+        "explanation": "This would be the result of bouncing off an immovable wall. The 3.0 kg cart is free to move and takes some momentum."
+      }
+    ],
+    "explanation": "Use conservation of momentum together with conservation of kinetic energy (equivalently, relative speed of approach equals relative speed of separation).",
+    "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-34",
+    "unit": "unit-5-momentum",
+    "topic": "conservation-of-momentum",
+    "difficulty": "hard",
+    "stem": "Two ice skaters, initially at rest on frictionless ice, push off each other. Skater 1 has a mass of 60 kg and moves away at 2.0 m/s. Skater 2 has a mass of 40 kg. What is the ratio $\\frac{KE_1}{KE_2}$ of their kinetic energies after the push?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac49$",
+        "isCorrect": false,
+        "explanation": "This is the ratio of the *speeds* squared, $\\left(\\frac23\\right)^2$, applied without the masses."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac23$",
+        "isCorrect": true,
+        "explanation": "Momentum is conserved from rest, so skater 2 moves at $\\frac{(60)(2.0)}{40}=3.0$ m/s. $KE_1=\\frac12(60)(2)^2=120$ J and $KE_2=\\frac12(40)(3)^2=180$ J, so the ratio is $\\frac{120}{180}=\\frac23$."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac32$",
+        "isCorrect": false,
+        "explanation": "This is the reciprocal. The lighter skater moves faster and has the *larger* kinetic energy."
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false,
+        "explanation": "The momenta have equal magnitudes but the kinetic energies do not: $KE=\\frac{p^2}{2m}$ is larger for the smaller mass."
+      }
+    ],
+    "explanation": "Find the second skater's speed from conservation of momentum, then compute each kinetic energy. Equivalently, $KE=\\frac{p^2}{2m}$.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/conservation-of-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-35",
+    "unit": "unit-5-momentum",
+    "topic": "momentum-and-impulse",
+    "difficulty": "hard",
+    "stem": "A 0.15 kg ball strikes a wall horizontally at 20 m/s and rebounds horizontally at 15 m/s. The contact lasts 0.010 s. What is the magnitude of the average force the wall exerts on the ball?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "300 N",
+        "isCorrect": false,
+        "explanation": "This uses only the initial momentum, $\\frac{(0.15)(20)}{0.010}$. The ball also leaves with momentum in the opposite direction."
+      },
+      {
+        "label": "B",
+        "text": "225 N",
+        "isCorrect": false,
+        "explanation": "This uses only the final momentum, $\\frac{(0.15)(15)}{0.010}$. The change in momentum includes both the initial and final values."
+      },
+      {
+        "label": "C",
+        "text": "525 N",
+        "isCorrect": true,
+        "explanation": "Take the initial direction as positive: $\\Delta p=m(-15)-m(20)=-(0.15)(35)=-5.25$ kg$\\cdot$m/s. The magnitude of the average force is $\\frac{5.25}{0.010}=525$ N."
+      },
+      {
+        "label": "D",
+        "text": "75 N",
+        "isCorrect": false,
+        "explanation": "This uses $\\Delta v=20-15=5$ m/s. The velocity *reverses*, so the change is $20+15=35$ m/s."
+      }
+    ],
+    "explanation": "The impulse equals the change in momentum, with the velocity signs taken into account, and $F_{avg}=\\frac{J}{\\Delta t}$.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/momentum-and-impulse",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-36",
+    "unit": "unit-5-momentum",
+    "topic": "center-of-mass",
+    "difficulty": "hard",
+    "stem": "Three small objects lie on the $x$-axis: 2.0 kg at $x=0$, 3.0 kg at $x=5.0$ m and 5.0 kg at $x=8.0$ m. What is the $x$-coordinate of the system's center of mass?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "6.9 m",
+        "isCorrect": false,
+        "explanation": "This leaves out the 2.0 kg object: $\\frac{(3)(5)+(5)(8)}{8}$. The mass at $x=0$ contributes no moment but still counts in the total mass."
+      },
+      {
+        "label": "B",
+        "text": "2.8 m",
+        "isCorrect": false,
+        "explanation": "This divides the sum by 20 instead of the total mass 10 kg."
+      },
+      {
+        "label": "C",
+        "text": "4.3 m",
+        "isCorrect": false,
+        "explanation": "This is the simple average of the three positions, $\\frac{0+5+8}{3}$. The center of mass weights each position by its mass."
+      },
+      {
+        "label": "D",
+        "text": "5.5 m",
+        "isCorrect": true,
+        "explanation": "$x_{cm}=\\frac{\\sum m_ix_i}{\\sum m_i}=\\frac{(2)(0)+(3)(5)+(5)(8)}{10}=\\frac{55}{10}=5.5$ m."
+      }
+    ],
+    "explanation": "Use $x_{cm}=\\frac{\\sum m_ix_i}{\\sum m_i}$, including every object in the total mass.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/center-of-mass",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-37",
+    "unit": "unit-5-momentum",
+    "topic": "conservation-of-momentum",
+    "difficulty": "hard",
+    "stem": "A 2.0 kg cart moving east at 3.0 m/s and a 2.0 kg cart moving north at 4.0 m/s collide on a frictionless horizontal surface and stick together. What is the speed of the combined carts?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3.5 m/s",
+        "isCorrect": false,
+        "explanation": "This is the average of the two speeds. Momenta add as vectors, and the carts are not moving along the same line."
+      },
+      {
+        "label": "B",
+        "text": "5.0 m/s",
+        "isCorrect": false,
+        "explanation": "This is $\\sqrt{3^2+4^2}$, the magnitude of the *velocity* sum, which ignores that the two carts' masses now move together (total mass 4.0 kg)."
+      },
+      {
+        "label": "C",
+        "text": "2.5 m/s",
+        "isCorrect": true,
+        "explanation": "The momenta are perpendicular: east $6.0$, north $8.0$ kg$\\cdot$m/s. The magnitude is $\\sqrt{6^2+8^2}=10$ kg$\\cdot$m/s. Divided by the combined mass 4.0 kg: $2.5$ m/s."
+      },
+      {
+        "label": "D",
+        "text": "1.75 m/s",
+        "isCorrect": false,
+        "explanation": "This adds the components of momentum as scalars, $\\frac{6+8}{4}\\cdot\\frac12$, or divides $7$ by 4. Perpendicular components must be combined with the Pythagorean theorem."
+      }
+    ],
+    "explanation": "Conservation of momentum applies to each component separately. Combine the final components with the Pythagorean theorem.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/conservation-of-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-38",
+    "unit": "unit-5-momentum",
+    "topic": "conservation-of-momentum",
+    "difficulty": "hard",
+    "stem": "Two carts of mass $m$ and $3m$ are initially at rest on a frictionless track with a compressed spring between them. When the spring is released the carts move apart. Which statement is correct just after the spring has finished expanding?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The lighter cart has three times the speed and three times the kinetic energy of the heavier cart",
+        "isCorrect": true,
+        "explanation": "The momenta have equal magnitude: $mv_1=3mv_2$, so $v_1=3v_2$. Then $KE_1=\\frac12m(3v_2)^2=4.5mv_2^2$ and $KE_2=\\frac12(3m)v_2^2=1.5mv_2^2$: a ratio of 3."
+      },
+      {
+        "label": "B",
+        "text": "The heavier cart has more momentum because it has more mass",
+        "isCorrect": false,
+        "explanation": "The total momentum was zero and is conserved, so the two momenta are equal in magnitude and opposite in direction."
+      },
+      {
+        "label": "C",
+        "text": "The carts have the same speed and the same kinetic energy",
+        "isCorrect": false,
+        "explanation": "Equal speeds would give the heavier cart more momentum, but the total momentum starts at zero, so the two momenta must be equal and opposite."
+      },
+      {
+        "label": "D",
+        "text": "The carts have the same kinetic energy, and the lighter cart is faster",
+        "isCorrect": false,
+        "explanation": "Equal momentum magnitudes mean equal kinetic energies only when the masses are equal. Since $KE=\\frac{p^2}{2m}$, the lighter cart has more kinetic energy."
+      }
+    ],
+    "explanation": "Total momentum stays zero, so $m_1v_1=m_2v_2$. Then use $KE=\\frac{p^2}{2m}$.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/conservation-of-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-39",
+    "unit": "unit-5-momentum",
+    "topic": "momentum-and-impulse",
+    "difficulty": "hard",
+    "stem": "Object A has mass $m$ and speed $2v$. Object B has mass $4m$ and speed $v$. Which statement correctly compares them?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "B has twice the momentum of A, and they have equal kinetic energy",
+        "isCorrect": true,
+        "explanation": "$p_A=m(2v)=2mv$ and $p_B=4mv$, so B has twice the momentum. $KE_A=\\frac12m(2v)^2=2mv^2$ and $KE_B=\\frac12(4m)v^2=2mv^2$: equal."
+      },
+      {
+        "label": "B",
+        "text": "B has twice the momentum of A, and four times the kinetic energy",
+        "isCorrect": false,
+        "explanation": "Kinetic energy is proportional to the mass and to the *square* of the speed: $\\frac12(4m)v^2=2mv^2$, the same as A's."
+      },
+      {
+        "label": "C",
+        "text": "A and B have equal momentum and equal kinetic energy",
+        "isCorrect": false,
+        "explanation": "$p_A=2mv$ but $p_B=4mv$, so the momenta differ."
+      },
+      {
+        "label": "D",
+        "text": "A has more momentum because it is faster, and more kinetic energy",
+        "isCorrect": false,
+        "explanation": "Momentum is proportional to speed *and* mass: $p_B=4mv>p_A=2mv$. The kinetic energies are equal."
+      }
+    ],
+    "explanation": "Momentum is $mv$ and kinetic energy is $\\frac12mv^2$; compute each for both objects.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/momentum-and-impulse",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-40",
+    "unit": "unit-5-momentum",
+    "topic": "collisions",
+    "difficulty": "hard",
+    "stem": "A 0.020 kg bullet is fired horizontally into a 1.98 kg wooden block hanging from strings. The bullet embeds in the block, and the block and bullet swing up to a maximum height of 0.20 m above the starting position. What was the bullet's speed just before it hit the block? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2.0\\times10^2$ m/s",
+        "isCorrect": true,
+        "explanation": "After the collision the combined 2.0 kg swings up: $v_c=\\sqrt{2gh}=\\sqrt{2(9.8)(0.20)}\\approx1.98$ m/s. Momentum is conserved in the collision: $(0.020)v=(2.0)(1.98)$, so $v\\approx2.0\\times10^2$ m/s."
+      },
+      {
+        "label": "B",
+        "text": "2.0 m/s",
+        "isCorrect": false,
+        "explanation": "This is the speed of the block and bullet just after the collision. The bullet was moving about 100 times faster before it embedded in the block."
+      },
+      {
+        "label": "C",
+        "text": "20 m/s",
+        "isCorrect": false,
+        "explanation": "This is off by a factor of 10: the mass ratio is $\\frac{2.0}{0.020}=100$, not 10."
+      },
+      {
+        "label": "D",
+        "text": "$4.0\\times10^2$ m/s",
+        "isCorrect": false,
+        "explanation": "This doubles the correct answer, for example by using the kinetic energy of the bullet equal to the final potential energy, which ignores the energy lost in the collision."
+      }
+    ],
+    "explanation": "Use two steps: momentum conservation during the (inelastic) collision, then energy conservation during the swing.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-41",
+    "unit": "unit-5-momentum",
+    "topic": "collisions",
+    "difficulty": "hard",
+    "stem": "A 2.0 kg cart moving at 3.0 m/s collides head-on with a stationary 1.0 kg cart. Which of the following outcomes is impossible?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The 2.0 kg cart moves at 1.0 m/s and the 1.0 kg cart moves at 4.0 m/s",
+        "isCorrect": false,
+        "explanation": "Momentum: $2.0+4.0=6.0$. Kinetic energy: $1+8=9$ J, unchanged. This is the elastic outcome and is allowed."
+      },
+      {
+        "label": "B",
+        "text": "Both carts move together at 2.0 m/s",
+        "isCorrect": false,
+        "explanation": "Momentum: $(2.0+1.0)(2.0)=6.0$ kg$\\cdot$m/s, equal to the initial $6.0$. Kinetic energy falls from 9 J to 6 J. A perfectly inelastic collision is allowed."
+      },
+      {
+        "label": "C",
+        "text": "The 2.0 kg cart stops, and the 1.0 kg cart moves off at 6.0 m/s",
+        "isCorrect": true,
+        "explanation": "Momentum is conserved ($6.0$ kg$\\cdot$m/s before and after), but the kinetic energy would increase from $9$ J to $\\frac12(1.0)(6.0)^2=18$ J. A collision cannot create mechanical energy."
+      },
+      {
+        "label": "D",
+        "text": "The 2.0 kg cart moves at 1.5 m/s and the 1.0 kg cart moves at 3.0 m/s",
+        "isCorrect": false,
+        "explanation": "Momentum: $3.0+3.0=6.0$. Kinetic energy: $2.25+4.5=6.75$ J, which is less than 9 J. A partially inelastic collision is allowed."
+      }
+    ],
+    "explanation": "A possible outcome must conserve momentum and cannot increase the total kinetic energy (and the carts cannot pass through each other).",
+    "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-42",
+    "unit": "unit-5-momentum",
+    "topic": "center-of-mass",
+    "difficulty": "hard",
+    "stem": "A projectile launched from level ground would land at a distance $R$. At the highest point of its flight it explodes into two fragments of equal mass. One fragment falls straight down with no horizontal velocity. Where does the other fragment land, measured from the launch point? Ignore air resistance.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0.75R$",
+        "isCorrect": false,
+        "explanation": "This treats the second fragment as if its horizontal speed were halved ($\\frac R2+\\frac R4$). It must double: the fragment that stops horizontally gives all of its horizontal momentum to the other."
+      },
+      {
+        "label": "B",
+        "text": "$R$",
+        "isCorrect": false,
+        "explanation": "$R$ is where the *center of mass* of the two fragments lands. The fragments themselves land at $\\frac R2$ and $1.5R$, whose average is $R$."
+      },
+      {
+        "label": "C",
+        "text": "$1.5R$",
+        "isCorrect": true,
+        "explanation": "The explosion's forces are internal, so horizontal momentum is conserved: $mv_x=\\frac m2(0)+\\frac m2v_B$, so $v_B=2v_x$. The highest point is $\\frac R2$ from the launch point, and the fall from there takes $t=\\frac{R}{2v_x}$. The second fragment moves $2v_xt=R$ farther, landing at $\\frac R2+R=1.5R$."
+      },
+      {
+        "label": "D",
+        "text": "$2R$",
+        "isCorrect": false,
+        "explanation": "This would require the second fragment to travel $\\frac32R$ after the explosion. At speed $2v_x$ for the fall time $\\frac{R}{2v_x}$ it travels $R$."
+      }
+    ],
+    "explanation": "Momentum conservation fixes the second fragment's horizontal speed at twice the original. The fall time from the top is unchanged.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/center-of-mass",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-43",
+    "unit": "unit-5-momentum",
+    "topic": "momentum-and-impulse",
+    "difficulty": "hard",
+    "stem": "A passenger in a car is brought from a fixed speed to rest in a crash. With an airbag, the stopping time is 0.50 s; without one, it is 0.10 s. How does the average force on the passenger with the airbag compare with the average force without it?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is 5 times as large",
+        "isCorrect": false,
+        "explanation": "A longer stopping time *reduces* the average force for the same momentum change."
+      },
+      {
+        "label": "B",
+        "text": "It is one-fifth as large",
+        "isCorrect": true,
+        "explanation": "The change in momentum is the same, so $F_{avg}=\\frac{\\Delta p}{\\Delta t}$ is inversely proportional to the stopping time. A time 5 times longer gives a force one-fifth as large."
+      },
+      {
+        "label": "C",
+        "text": "It is the same, since the momentum change is the same",
+        "isCorrect": false,
+        "explanation": "The *impulse* is the same, but the average force is the impulse divided by the time over which it acts."
+      },
+      {
+        "label": "D",
+        "text": "It is 25 times smaller",
+        "isCorrect": false,
+        "explanation": "The force is inversely proportional to the time, not to its square."
+      }
+    ],
+    "explanation": "For a fixed change in momentum, $F_{avg}=\\frac{\\Delta p}{\\Delta t}$.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/momentum-and-impulse",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-44",
+    "unit": "unit-5-momentum",
+    "topic": "conservation-of-momentum",
+    "difficulty": "hard",
+    "stem": "A 5.0 kg cart moving east at 4.0 m/s collides head-on with a 3.0 kg cart moving west at 6.0 m/s. The carts stick together. What is their velocity just after the collision?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4.75 m/s east",
+        "isCorrect": false,
+        "explanation": "This adds the magnitudes of the two momenta, $\\frac{20+18}{8}$, as if both carts moved east. The westward momentum is negative."
+      },
+      {
+        "label": "B",
+        "text": "0.25 m/s east",
+        "isCorrect": true,
+        "explanation": "Take east as positive: $(5.0)(4.0)+(3.0)(-6.0)=(8.0)v$, so $v=\\frac{20-18}{8.0}=+0.25$ m/s: east."
+      },
+      {
+        "label": "C",
+        "text": "1.0 m/s west",
+        "isCorrect": false,
+        "explanation": "This is the average of the velocities, $\\frac{4-6}{2}$. Momentum conservation weights each velocity by its mass."
+      },
+      {
+        "label": "D",
+        "text": "0.25 m/s west",
+        "isCorrect": false,
+        "explanation": "The total momentum is $20-18=+2$ kg$\\cdot$m/s, which is positive (east), because the 5.0 kg cart has the larger momentum."
+      }
+    ],
+    "explanation": "Choose a positive direction and keep the signs of the velocities in the momentum equation.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/conservation-of-momentum",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-mcq-45",
+    "unit": "unit-5-momentum",
+    "topic": "momentum-and-impulse",
+    "difficulty": "hard",
+    "stem": "A 0.20 kg ball strikes a smooth horizontal floor with a speed of 10 m/s. Its velocity makes an angle of $60^\\circ$ with the vertical. It rebounds with the same speed and the same angle with the vertical. What is the magnitude of the impulse the floor exerts on the ball?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3.5 N$\\cdot$s",
+        "isCorrect": false,
+        "explanation": "This uses $\\sin60^\\circ$ for the component. The angle is measured from the vertical, so the vertical component is $v\\cos60^\\circ$."
+      },
+      {
+        "label": "B",
+        "text": "4.0 N$\\cdot$s",
+        "isCorrect": false,
+        "explanation": "This is $2mv$, which would be the impulse for a head-on bounce straight back. Here only the vertical component of the velocity reverses."
+      },
+      {
+        "label": "C",
+        "text": "2.0 N$\\cdot$s",
+        "isCorrect": true,
+        "explanation": "The horizontal velocity component is unchanged. The vertical component reverses, so $\\Delta p_y=2mv\\cos60^\\circ=2(0.20)(10)(0.50)=2.0$ N$\\cdot$s, directed upward."
+      },
+      {
+        "label": "D",
+        "text": "0 N$\\cdot$s",
+        "isCorrect": false,
+        "explanation": "The speed is unchanged, but the *velocity* (a vector) is not, so the momentum changes."
+      }
+    ],
+    "explanation": "Resolve the velocity into components. A smooth floor exerts a force only in the vertical direction, so only the vertical component of momentum changes.",
+    "conceptLink": "ap-physics-1/unit-5-momentum/momentum-and-impulse",
+    "reviewed": false
+  }
+]

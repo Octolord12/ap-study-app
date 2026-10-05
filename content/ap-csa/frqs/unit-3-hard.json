@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ap-csa-u3-frq-4",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "prompt": "A year is a leap year if it is divisible by 4, except that years divisible by 100 are not leap years unless they are also divisible by 400. For example, 2024 and 2000 are leap years, but 1900 and 2023 are not.\n\nThe class `Calendar` contains the two methods described below.\n\n```java\npublic class Calendar {\n    /** Returns true if year is a leap year and false otherwise. */\n    public static boolean isLeapYear(int year)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns the number of days in the given month (1 = January through 12 = December)\n     *  of the given year, or -1 if month is not between 1 and 12. */\n    public static int daysInMonth(int month, int year)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `isLeapYear`.\n\n**(b)** Write the method `daysInMonth`, using `isLeapYear` as appropriate. For example, `daysInMonth(2, 2024)` returns 29, `daysInMonth(4, 2023)` returns 30, and `daysInMonth(13, 2023)` returns -1.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Tests divisibility by 4 and excludes multiples of 100"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Makes multiples of 400 leap years, with correct grouping of `&&` and `||`, and returns a `boolean`"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Returns -1 for a month that is not between 1 and 12"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Returns 30 for April, June, September and November"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Returns 31 for the remaining months"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Calls `isLeapYear` to return 29 or 28 for February"
+      }
+    ],
+    "sampleResponse": "```java\npublic static boolean isLeapYear(int year) {\n    return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;\n}\n\npublic static int daysInMonth(int month, int year) {\n    if (month < 1 || month > 12) {\n        return -1;\n    }\n    if (month == 2) {\n        if (isLeapYear(year)) {\n            return 29;\n        }\n        return 28;\n    }\n    if (month == 4 || month == 6 || month == 9 || month == 11) {\n        return 30;\n    }\n    return 31;\n}\n```\nThe parentheses in `isLeapYear` matter: `&&` binds tighter than `||`, so a year divisible by 400 is a leap year even though it is also divisible by 100.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-frq-5",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "prompt": "Three positive side lengths form a triangle only if the sum of any two of them is greater than the third. For example, 3, 4 and 5 form a triangle, but 1, 2 and 3 do not.\n\nThe class `TriangleTools` contains the two methods described below.\n\n```java\npublic class TriangleTools {\n    /** Returns true if a, b and c are all positive and form a triangle; false otherwise. */\n    public static boolean isTriangle(int a, int b, int c)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns \"invalid\" if a, b and c do not form a triangle. Otherwise returns\n     *  \"equilateral\" if all three sides are equal, \"isosceles\" if exactly two sides are equal,\n     *  and \"scalene\" if no two sides are equal. */\n    public static String typeOf(int a, int b, int c)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `isTriangle`.\n\n**(b)** Write the method `typeOf`, using `isTriangle` as appropriate. For example, `typeOf(3, 3, 3)` returns `\"equilateral\"`, `typeOf(8, 5, 5)` returns `\"isosceles\"`, `typeOf(3, 4, 5)` returns `\"scalene\"` and `typeOf(1, 2, 3)` returns `\"invalid\"`.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Checks that all three sides are positive"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Checks all three triangle inequalities (not only one)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Combines the conditions with the correct logical operators and returns a `boolean`"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Calls `isTriangle` and returns \"invalid\" when it is false"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Tests for equilateral before isosceles, so that three equal sides are not classified as isosceles"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Tests for isosceles by comparing all three pairs of sides"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Returns \"scalene\" otherwise"
+      }
+    ],
+    "sampleResponse": "```java\npublic static boolean isTriangle(int a, int b, int c) {\n    return a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a;\n}\n\npublic static String typeOf(int a, int b, int c) {\n    if (!isTriangle(a, b, c)) {\n        return \"invalid\";\n    }\n    if (a == b && b == c) {\n        return \"equilateral\";\n    }\n    if (a == b || b == c || a == c) {\n        return \"isosceles\";\n    }\n    return \"scalene\";\n}\n```\nThe equilateral test must come before the isosceles test: a triangle with three equal sides also has two equal sides, and the first matching `if` wins.",
+    "reviewed": false
+  }
+]

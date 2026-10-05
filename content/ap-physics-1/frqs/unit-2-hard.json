@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ap-phys1-u2-frq-4",
+    "unit": "unit-2-dynamics",
+    "topic": "applications-of-newtons-second-law",
+    "prompt": "A 4.0 kg block rests on a horizontal table. The coefficient of kinetic friction between the block and the table is 0.25. A light string connects the block over a light, frictionless pulley at the table's edge to a 6.0 kg block that hangs vertically. The blocks are released from rest. Use $g=9.8$ m/s^2.\n\n**(a)** Draw free-body diagrams for each block (describe each force and its direction), and write Newton's second law for each block.\n\n**(b)** Calculate the acceleration of the blocks.\n\n**(c)** Calculate the tension in the string.\n\n**(d)** After the hanging block has descended 2.0 m from rest, the string is cut. How far does the 4.0 kg block slide on the table after the string is cut before it stops?",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Lists the forces on the table block (weight, normal, tension, friction) and on the hanging block (weight, tension)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Writes the equations $T-\\mu m_tg=m_ta$ and $m_hg-T=m_ha$ with a common acceleration"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Adds the equations to find $a=\\frac{m_hg-\\mu m_tg}{m_t+m_h}=4.9$ m/s^2"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Finds $T=m_h(g-a)=29.4$ N"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Finds the speed when the string is cut, $v^2=2a(2.0)=19.6$ m^2/s^2"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Uses the deceleration $\\mu g=2.45$ m/s^2 to find the stopping distance $\\frac{v^2}{2\\mu g}=4.0$ m"
+      }
+    ],
+    "sampleResponse": "(a) Table block: weight $m_tg$ down, normal force up, tension $T$ toward the pulley, kinetic friction $\\mu m_tg$ opposite its motion. Hanging block: weight $m_hg$ down, tension $T$ up. Taking the direction of motion as positive: $T-\\mu m_tg=m_ta$ and $m_hg-T=m_ha$.\n(b) Adding: $m_hg-\\mu m_tg=(m_t+m_h)a$, so $a=\\frac{58.8-9.8}{10}=4.9$ m/s^2.\n(c) $T=m_h(g-a)=6.0(9.8-4.9)=29.4$ N.\n(d) After 2.0 m, $v^2=2(4.9)(2.0)=19.6$ m^2/s^2. Once the string is cut, only friction acts: $a=-\\mu g=-2.45$ m/s^2. The distance is $d=\\frac{v^2}{2\\mu g}=\\frac{19.6}{4.9}=4.0$ m.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u2-frq-5",
+    "unit": "unit-2-dynamics",
+    "topic": "free-body-diagrams",
+    "prompt": "A 10 kg box is pulled up a rough $37^\\circ$ incline by a rope parallel to the incline. The coefficient of kinetic friction between the box and the incline is 0.25. Use $\\sin37^\\circ=0.60$, $\\cos37^\\circ=0.80$ and $g=9.8$ m/s^2.\n\n**(a)** Draw a free-body diagram of the box while it moves up the incline (describe each force and its direction).\n\n**(b)** Calculate the normal force exerted on the box by the incline.\n\n**(c)** Calculate the tension in the rope when the box moves up the incline at constant speed.\n\n**(d)** The tension is increased to 100 N. Calculate the box's acceleration.\n\n**(e)** The rope breaks while the box is moving up the incline. Calculate the magnitude and direction of the box's acceleration immediately afterward.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Shows weight, normal force perpendicular to the incline, tension up the incline, and kinetic friction down the incline"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Finds $N=mg\\cos37^\\circ=78.4$ N"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Sets $T=mg\\sin37^\\circ+\\mu N$ and finds 78.4 N"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(d) Finds $a=\\frac{100-78.4}{10}=2.16$ m/s^2 up the incline"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(e) Finds the net force with no rope: $mg\\sin37^\\circ+\\mu N=78.4$ N down the incline, so $a=7.84$ m/s^2 directed down the incline"
+      }
+    ],
+    "sampleResponse": "(a) Weight $mg$ straight down; normal force $N$ perpendicular to and away from the incline; tension $T$ parallel to and up the incline; kinetic friction $f_k$ parallel to the incline and down it (opposing the upward motion).\n(b) Perpendicular to the incline there is no acceleration: $N=mg\\cos37^\\circ=(10)(9.8)(0.80)=78.4$ N.\n(c) At constant speed the net force is zero: $T=mg\\sin37^\\circ+\\mu_kN=58.8+0.25(78.4)=78.4$ N.\n(d) $a=\\frac{T-mg\\sin37^\\circ-\\mu_kN}{m}=\\frac{100-78.4}{10}=2.16$ m/s^2 up the incline.\n(e) Without the rope, both the weight component and friction act down the incline (the box is still moving up): $a=\\frac{58.8+19.6}{10}=7.84$ m/s^2, directed down the incline (the box slows down).",
+    "reviewed": false
+  }
+]

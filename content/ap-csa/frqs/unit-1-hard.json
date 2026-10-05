@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-csa-u1-frq-4",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "prompt": "A *Harshad number* is a positive integer that is evenly divisible by the sum of its digits. For example, 18 is a Harshad number because its digit sum is $1+8=9$ and 18 is divisible by 9, while 19 is not (its digit sum is 10).\n\nThe class `DigitTools` contains the two methods below. You may not use `String` methods in either part.\n\n```java\npublic class DigitTools {\n    /** Returns the sum of the digits of n. Precondition: n >= 0 */\n    public static int digitSum(int n)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns true if n > 0 and n is evenly divisible by digitSum(n); false otherwise. */\n    public static boolean isHarshad(int n)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `digitSum`. For example, `digitSum(4083)` returns 15 and `digitSum(0)` returns 0.\n\n**(b)** Write the method `isHarshad`, using `digitSum` as appropriate. For example, `isHarshad(18)` returns `true`, `isHarshad(19)` and `isHarshad(0)` return `false`.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses a loop that continues while digits remain"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Extracts the last digit with `n % 10`"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Removes the last digit with `n / 10`"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(a) Accumulates the sum correctly and returns it (returns 0 for input 0)"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Returns false when `n <= 0` (and does not divide by zero)"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Calls `digitSum(n)`"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Tests divisibility with `%` and returns the correct boolean"
+      }
+    ],
+    "sampleResponse": "```java\npublic static int digitSum(int n) {\n    int sum = 0;\n    while (n > 0) {\n        sum += n % 10;\n        n /= 10;\n    }\n    return sum;\n}\n\npublic static boolean isHarshad(int n) {\n    if (n <= 0) {\n        return false;\n    }\n    return n % digitSum(n) == 0;\n}\n```\nIn `digitSum`, `n % 10` is the last digit and `n /= 10` drops it, so the loop visits every digit. In `isHarshad`, the `n <= 0` test must come first, because `digitSum(0)` is 0 and `n % 0` would throw an `ArithmeticException`.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-frq-5",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "prompt": "The class `TimeTools` contains the two methods described below. Use only integer arithmetic and `String` concatenation in your solutions.\n\n```java\npublic class TimeTools {\n    /** Returns a clock-style String for a duration of totalSeconds seconds,\n     *  in the form h:mm:ss. The hours have no leading zero; the minutes and\n     *  seconds are always two digits. Precondition: totalSeconds >= 0 */\n    public static String clock(int totalSeconds)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns the multiple of unit that is closest to value. If value is exactly halfway\n     *  between two multiples, returns the larger one.\n     *  Preconditions: value >= 0, unit > 0 */\n    public static int roundToMultiple(int value, int unit)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `clock`. For example, `clock(3725)` returns `\"1:02:05\"`, `clock(59)` returns `\"0:00:59\"` and `clock(36000)` returns `\"10:00:00\"`.\n\n**(b)** Write the method `roundToMultiple`. For example, `roundToMultiple(47, 5)` returns 45, `roundToMultiple(48, 5)` returns 50 and `roundToMultiple(45, 10)` returns 50.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Computes hours using integer division by 3600"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Computes minutes using the remainder after hours, divided by 60"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Computes seconds using `totalSeconds % 60`"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(a) Adds a leading zero for minutes and seconds that are less than 10"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(a) Builds and returns the string in the form h:mm:ss"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Uses integer division and multiplication by `unit` to produce a multiple of `unit`"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Adds half of `unit` before dividing so that values are rounded to the nearest multiple, with exact ties going up"
+      }
+    ],
+    "sampleResponse": "```java\npublic static String clock(int totalSeconds) {\n    int hours = totalSeconds / 3600;\n    int minutes = (totalSeconds % 3600) / 60;\n    int seconds = totalSeconds % 60;\n    String result = hours + \":\";\n    if (minutes < 10) {\n        result += \"0\";\n    }\n    result += minutes + \":\";\n    if (seconds < 10) {\n        result += \"0\";\n    }\n    return result + seconds;\n}\n\npublic static int roundToMultiple(int value, int unit) {\n    return (value + unit / 2) / unit * unit;\n}\n```\nIn (b), adding `unit / 2` moves values that are at least halfway to the next multiple past it, and integer division then truncates down to a multiple of `unit`. For an exact tie such as 45 with a unit of 10, `(45 + 5) / 10 * 10` is 50, the larger multiple.",
+    "reviewed": false
+  }
+]

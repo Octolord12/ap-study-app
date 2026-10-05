@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u7-frq-4",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-one-and-russian-revolution",
+    "prompt": "Use the passage to answer parts A, B and C.\n\n> “The Allied governments affirm, and Germany accepts, that Germany and her allies are responsible for causing all the loss and damage suffered by the Allied governments and their peoples as a result of the war imposed upon them.”\n>\n> *Source: A summary of a clause of the Treaty of Versailles, 1919*\n\n**a)** Identify ONE obligation or burden the treaty placed on Germany, based on the passage or your knowledge of the treaty.\n\n**b)** Explain ONE way in which the treaty contributed to political instability in Germany in the 1920s and 1930s.\n\n**c)** Explain ONE way in which the postwar settlement affected the Middle East or Africa.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies an obligation such as accepting responsibility for the war, paying reparations, losing territory and colonies, or limits on the German military"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains that resentment of the treaty, economic hardship from reparations, or the perceived humiliation helped weaken the Weimar Republic and strengthened extremist movements such as the Nazis"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as the mandate system placing former Ottoman and German territories under British and French control, or the redrawing of borders without regard to local wishes, which fueled nationalism and later conflicts"
+      }
+    ],
+    "sampleResponse": "a) The passage says Germany had to accept responsibility for all of the loss and damage caused by the war (the war guilt clause), and the treaty also required reparations and limited the German army.\nb) Many Germans resented the treaty as a humiliating dictated peace, and the burden of reparations contributed to economic hardship. This weakened support for the Weimar Republic and helped extremist parties such as the Nazis win followers.\nc) The mandate system placed former Ottoman territories such as Syria, Lebanon, Iraq and Palestine under French or British control. Borders were drawn without regard to local wishes, which strengthened nationalist movements.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u7-frq-5",
+    "unit": "unit-7-global-conflict",
+    "topic": "world-war-two-and-mass-atrocities",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the experience of total war in the first half of the twentieth century changed the role of governments in society.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which total war changed the role of governments"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Describes broader context, such as industrial warfare, mass armies or the effects of the Great Depression"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate examples (such as rationing, conscription, propaganda, controlled economies, mobilization of women) and uses them to support the argument"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and shows complexity by comparing democratic and authoritarian states or by noting what changed after the wars (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response takes a position (for example that total war significantly expanded state power over economies and societies, though some governments rolled back controls after the wars). It places the topic in context (industrial warfare and mass armies) and uses specific evidence such as rationing, propaganda, conscription, the mobilization of women's labor, state-run economies in the Soviet Union, the Nazi state's control of society and the economy, and wartime mobilization in Britain or the United States. It analyzes continuity and change and may consider differences between democratic and authoritarian states.",
+    "reviewed": false
+  }
+]

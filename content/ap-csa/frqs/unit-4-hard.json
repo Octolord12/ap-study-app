@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-csa-u4-frq-4",
+    "unit": "unit-4-iteration",
+    "topic": "while-loops",
+    "prompt": "The class `RunTools` contains the two methods described below. In both methods, a *run* is a sequence of one or more identical consecutive characters.\n\n```java\npublic class RunTools {\n    /** Returns a String in which each run in s is replaced by the character followed by\n     *  the length of the run. For example, compress(\"aaabcc\") returns \"a3b1c2\".\n     *  compress(\"\") returns \"\". */\n    public static String compress(String s)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns the length of the longest run in s, or 0 if s is empty.\n     *  For example, longestRun(\"aaabccddddd\") returns 5. */\n    public static int longestRun(String s)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `compress`.\n\n**(b)** Write the method `longestRun`.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Traverses the whole string with a loop that handles one run at a time"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Counts the length of each run correctly, including the last run"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Appends each character followed by its count to the result"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(a) Returns the correct String, including `\"\"` for an empty string"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Traverses the string and compares each character with the previous one without going out of bounds"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Maintains the length of the current run, restarting it at 1 when a new run begins"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Tracks and returns the maximum run length (0 for an empty string)"
+      }
+    ],
+    "sampleResponse": "```java\npublic static String compress(String s) {\n    String result = \"\";\n    int i = 0;\n    while (i < s.length()) {\n        char c = s.charAt(i);\n        int count = 0;\n        while (i < s.length() && s.charAt(i) == c) {\n            count++;\n            i++;\n        }\n        result += c + \"\" + count;\n    }\n    return result;\n}\n\npublic static int longestRun(String s) {\n    int best = 0;\n    int run = 0;\n    for (int i = 0; i < s.length(); i++) {\n        if (i > 0 && s.charAt(i) == s.charAt(i - 1)) {\n            run++;\n        } else {\n            run = 1;\n        }\n        if (run > best) {\n            best = run;\n        }\n    }\n    return best;\n}\n```\nIn `compress`, the inner loop's first test `i < s.length()` prevents an out-of-bounds access at the end of the string, and `c + \"\" + count` forces string concatenation.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u4-frq-5",
+    "unit": "unit-4-iteration",
+    "topic": "nested-iteration",
+    "prompt": "A *proper divisor* of a positive integer `n` is a positive integer less than `n` that divides `n` evenly. For example, the proper divisors of 12 are 1, 2, 3, 4 and 6. A positive integer is *perfect* if it is greater than 1 and equals the sum of its proper divisors. For example, 6 is perfect because $1+2+3=6$.\n\nThe class `NumberTools` contains the three methods described below.\n\n```java\npublic class NumberTools {\n    /** Returns the sum of the proper divisors of n. Precondition: n >= 1.\n     *  For example, sumProperDivisors(12) returns 16 and sumProperDivisors(1) returns 0. */\n    public static int sumProperDivisors(int n)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns true if n is perfect and false otherwise. */\n    public static boolean isPerfect(int n)\n    { /* to be implemented in part (b) */ }\n\n    /** Returns the number of perfect numbers from low through high, inclusive.\n     *  Precondition: 1 <= low <= high */\n    public static int countPerfect(int low, int high)\n    { /* to be implemented in part (c) */ }\n}\n```\n\n**(a)** Write the method `sumProperDivisors`.\n\n**(b)** Write the method `isPerfect`, using `sumProperDivisors` as appropriate. For example, `isPerfect(28)` returns `true`, and `isPerfect(12)` and `isPerfect(1)` return `false`.\n\n**(c)** Write the method `countPerfect`, using `isPerfect` as appropriate. For example, `countPerfect(1, 100)` returns 2 (the perfect numbers 6 and 28).",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Loops over the candidate divisors from 1 up to but not including n"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Tests divisibility with `%` and accumulates the sum"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Returns the sum (0 for n = 1)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Calls `sumProperDivisors` and compares the result with n"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Returns the correct boolean for every n, including 1"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(c) Loops through every value from `low` through `high` inclusive"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(c) Calls `isPerfect`, counts the true results and returns the count"
+      }
+    ],
+    "sampleResponse": "```java\npublic static int sumProperDivisors(int n) {\n    int sum = 0;\n    for (int d = 1; d < n; d++) {\n        if (n % d == 0) {\n            sum += d;\n        }\n    }\n    return sum;\n}\n\npublic static boolean isPerfect(int n) {\n    return sumProperDivisors(n) == n;\n}\n\npublic static int countPerfect(int low, int high) {\n    int count = 0;\n    for (int n = low; n <= high; n++) {\n        if (isPerfect(n)) {\n            count++;\n        }\n    }\n    return count;\n}\n```\nNo special case is needed for 1: its proper divisor sum is 0, which is not equal to 1, so `isPerfect(1)` is already false.",
+    "reviewed": false
+  }
+]

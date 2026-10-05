@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-csa-u9-frq-4",
+    "unit": "unit-9-inheritance",
+    "topic": "overriding-methods",
+    "prompt": "The class `Account` models a simple bank account. A checking account charges a fixed fee for each successful withdrawal.\n\n```java\npublic class Account {\n    private double balance;\n\n    public Account(double initial)\n    { /* implementation not shown */ }\n\n    public double getBalance()\n    { /* implementation not shown */ }\n\n    public void deposit(double amt)\n    { /* implementation not shown */ }\n\n    /** Removes amt from the balance and returns true if amt <= balance.\n     *  Otherwise leaves the balance unchanged and returns false. */\n    public boolean withdraw(double amt)\n    { /* implementation not shown */ }\n}\n```\n\n**(a)** Write the complete class `CheckingAccount`, a subclass of `Account`. A `CheckingAccount` has the following behavior.\n\n- The constructor `CheckingAccount(double initial, double fee)` creates an account with the given starting balance that charges `fee` for each successful withdrawal.\n- The method `withdraw(double amt)` is overridden. A withdrawal succeeds only if the account holds at least `amt + fee`; in that case `amt + fee` is removed from the balance and the method returns true. Otherwise the balance is unchanged and the method returns false.\n- The method `getWithdrawals()` returns the number of successful withdrawals made so far.\n\nFor example, for `new CheckingAccount(100, 2)`, `withdraw(50)` returns true and leaves a balance of 48.0; `withdraw(48)` then returns false because 50.0 is needed.\n\n**(b)** Write the method `processAll`, which attempts to withdraw `amt` from every account in `accounts` (some of which are `CheckingAccount` objects) and returns the number of withdrawals that succeeded.\n\n```java\npublic static int processAll(ArrayList<Account> accounts, double amt)\n```",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Class header declares `CheckingAccount extends Account` and has instance variables for the fee and the withdrawal count"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Constructor calls `super(initial)` and initializes the fee (and the count)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Overrides `withdraw` with the same signature (`public boolean withdraw(double amt)`)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(a) Decides success using `amt + fee` and removes `amt + fee` from the balance (for example with `super.withdraw(amt + fee)`) without accessing `balance` directly"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(a) Increments the withdrawal count only on a successful withdrawal and returns the correct boolean; `getWithdrawals` returns the count"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Traverses all accounts and calls `withdraw(amt)` on each one (no type tests or casts needed)"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Counts the successful withdrawals and returns the count"
+      }
+    ],
+    "sampleResponse": "```java\npublic class CheckingAccount extends Account {\n    private double fee;\n    private int withdrawals;\n\n    public CheckingAccount(double initial, double fee) {\n        super(initial);\n        this.fee = fee;\n        withdrawals = 0;\n    }\n\n    public boolean withdraw(double amt) {\n        if (super.withdraw(amt + fee)) {\n            withdrawals++;\n            return true;\n        }\n        return false;\n    }\n\n    public int getWithdrawals() {\n        return withdrawals;\n    }\n}\n\npublic static int processAll(ArrayList<Account> accounts, double amt) {\n    int count = 0;\n    for (Account a : accounts) {\n        if (a.withdraw(amt)) {\n            count++;\n        }\n    }\n    return count;\n}\n```\nThe subclass cannot use `balance` directly because it is `private`; calling `super.withdraw(amt + fee)` reuses the superclass's check and update. In `processAll`, each call to `withdraw` runs the version belonging to the actual object.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u9-frq-5",
+    "unit": "unit-9-inheritance",
+    "topic": "superclasses-and-subclasses",
+    "prompt": "The class `Item` represents a product in a store.\n\n```java\npublic class Item {\n    private String name;\n    private double price;\n\n    public Item(String name, double price)\n    { /* implementation not shown */ }\n\n    public String getName()\n    { /* implementation not shown */ }\n\n    public double getPrice()\n    { return price; }\n\n    /** Returns the name, a colon, a space, and the price, e.g. \"Pen: 1.5\" */\n    public String toString()\n    { return name + \": \" + getPrice(); }\n}\n```\n\n**(a)** Write the complete class `Perishable`, a subclass of `Item`. A `Perishable` item also has a number of days left before it spoils.\n\n- The constructor `Perishable(String name, double price, int daysLeft)` sets the item's name, regular price and days left.\n- The method `getPrice` is overridden: when 2 or fewer days are left, the price is half the regular price; otherwise it is the regular price.\n- The method `toString` is overridden to return the text produced by the `Item` version followed by a space and the number of days left in parentheses, for example `\"Milk: 2.0 (2 days)\"` for an item named Milk with a regular price of 4.0 and 2 days left.\n\n**(b)** Write the method `cheapest`, which returns the `Item` in the list with the lowest value of `getPrice()`. If more than one item has the lowest price, return the one that appears first. Precondition: the list contains at least one item.\n\n```java\npublic static Item cheapest(ArrayList<Item> items)\n```",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Class header declares `Perishable extends Item` and declares an instance variable for the days left"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Constructor calls `super(name, price)` and initializes the days left"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) `getPrice` overrides with the same signature and returns half the regular price when `daysLeft <= 2`"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(a) `getPrice` otherwise returns the regular price, obtained with `super.getPrice()` (no direct access to the private field)"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(a) `toString` overrides and uses `super.toString()` followed by the days left in the required format"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Traverses the list and compares prices using `getPrice()` (not a field), so discounts apply"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Keeps track of the item (not just the price) with the lowest price, keeps the first on ties, and returns it"
+      }
+    ],
+    "sampleResponse": "```java\npublic class Perishable extends Item {\n    private int daysLeft;\n\n    public Perishable(String name, double price, int daysLeft) {\n        super(name, price);\n        this.daysLeft = daysLeft;\n    }\n\n    public double getPrice() {\n        if (daysLeft <= 2) {\n            return super.getPrice() / 2;\n        }\n        return super.getPrice();\n    }\n\n    public String toString() {\n        return super.toString() + \" (\" + daysLeft + \" days)\";\n    }\n}\n\npublic static Item cheapest(ArrayList<Item> items) {\n    Item best = items.get(0);\n    for (Item it : items) {\n        if (it.getPrice() < best.getPrice()) {\n            best = it;\n        }\n    }\n    return best;\n}\n```\n`Item.toString()` calls `getPrice()` on the actual object, so a discounted `Perishable` prints its discounted price. The strict `<` keeps the first item when prices tie.",
+    "reviewed": false
+  }
+]

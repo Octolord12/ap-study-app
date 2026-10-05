@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-csa-u3-mcq-31",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "hard",
+    "stem": "Which of the following expressions is equivalent to `!(a > 5 || b <= 3)`?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "`a < 5 && b < 3`",
+        "isCorrect": false,
+        "explanation": "This negates the comparisons incorrectly: the negation of `a > 5` is `a <= 5`, not `a < 5`, and the negation of `b <= 3` is `b > 3`."
+      },
+      {
+        "label": "B",
+        "text": "`a > 5 && b <= 3`",
+        "isCorrect": false,
+        "explanation": "This changes `||` to `&&` but leaves the comparisons un-negated."
+      },
+      {
+        "label": "C",
+        "text": "`a <= 5 && b > 3`",
+        "isCorrect": true,
+        "explanation": "De Morgan's law: `!(P || Q)` is `!P && !Q`. The negation of `a > 5` is `a <= 5` and the negation of `b <= 3` is `b > 3`."
+      },
+      {
+        "label": "D",
+        "text": "`a <= 5 || b > 3`",
+        "isCorrect": false,
+        "explanation": "This negates each comparison but keeps the `||`. De Morgan's law also changes `||` to `&&`."
+      }
+    ],
+    "explanation": "Apply De Morgan's laws: negating a compound condition negates each part and swaps `&&` and `||`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-32",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint x = 0;\nboolean r = (x++ > 0) && (x++ > 0);\nboolean s = (x++ >= 0) || (x++ > 0);\nSystem.out.println(x + \" \" + r + \" \" + s);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1 false true",
+        "isCorrect": false,
+        "explanation": "This counts only one increment. The first `x++` leaves `x` at 1, and the second statement's first `x++` makes it 2."
+      },
+      {
+        "label": "B",
+        "text": "3 false true",
+        "isCorrect": false,
+        "explanation": "This assumes the right operand of `&&` is always evaluated. Because `x++ > 0` is false (0 > 0), the `&&` skips its right operand, so `x` is incremented only once there."
+      },
+      {
+        "label": "C",
+        "text": "2 false true",
+        "isCorrect": true,
+        "explanation": "In the first statement, `x++ > 0` compares 0 > 0 (false) and leaves `x` at 1; the `&&` is short-circuited, so `r` is false. In the second, `x++ >= 0` compares 1 >= 0 (true) and leaves `x` at 2; the `||` is short-circuited, so `s` is true."
+      },
+      {
+        "label": "D",
+        "text": "4 false true",
+        "isCorrect": false,
+        "explanation": "This assumes both operands of both `&&` and `||` are always evaluated. Each operator skips its right operand when the left operand already decides the result."
+      }
+    ],
+    "explanation": "`&&` skips its right operand when the left is false and `||` skips it when the left is true, so side effects in the right operand may never happen.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-33",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint a = 4, b = 6, c = 0, d = 0;\nif (a > 3)\n    if (b > 7)\n        c = 1;\n    else\n        c = 2;\nif (a > 5)\n    if (b > 7)\n        d = 1;\n    else\n        d = 2;\nSystem.out.println(c + \" \" + d);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1 0",
+        "isCorrect": false,
+        "explanation": "This assumes `b > 7` is true. Here `b` is 6, so the `else` branch runs when `a > 3`."
+      },
+      {
+        "label": "B",
+        "text": "0 0",
+        "isCorrect": false,
+        "explanation": "This pairs the `else` with the outer `if (a > 3)`, as the indentation of some code might suggest. In Java an `else` always belongs to the nearest unmatched `if`."
+      },
+      {
+        "label": "C",
+        "text": "0 2",
+        "isCorrect": false,
+        "explanation": "This pairs each `else` with its outer `if`. An `else` belongs to the nearest `if`, which is `if (b > 7)` in both statements."
+      },
+      {
+        "label": "D",
+        "text": "2 0",
+        "isCorrect": true,
+        "explanation": "The `else` belongs to the inner `if (b > 7)`. In the first statement `a > 3` is true and `b > 7` is false, so the `else` runs: c = 2. In the second, `a > 5` is false, so nothing in that statement runs and d stays 0."
+      }
+    ],
+    "explanation": "An `else` is matched with the nearest preceding `if` that has no `else`; indentation does not matter.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-34",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static String f(int n) {\n    String s = \"\";\n    if (n % 3 == 0) s += \"Fizz\";\n    if (n % 5 == 0) s += \"Buzz\";\n    else s += n;\n    return s;\n}\n```\n\n```java\nSystem.out.println(f(15) + \",\" + f(10) + \",\" + f(9));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "FizzBuzz15,Buzz,Fizz9",
+        "isCorrect": false,
+        "explanation": "This adds the number even when the `Buzz` branch ran. The `else` belongs to the second `if`, so `n` is appended only when `n % 5 != 0`."
+      },
+      {
+        "label": "B",
+        "text": "Fizz,Buzz,Fizz",
+        "isCorrect": false,
+        "explanation": "This treats the two tests as one `if`/`else if` chain. The second `if` is independent of the first, so both \"Fizz\" and \"Buzz\" can be added."
+      },
+      {
+        "label": "C",
+        "text": "FizzBuzz,Buzz10,Fizz",
+        "isCorrect": false,
+        "explanation": "This pairs the `else` with the first `if`. In the code, the `else` follows the second `if`, so for 9 the `else` appends 9."
+      },
+      {
+        "label": "D",
+        "text": "FizzBuzz,Buzz,Fizz9",
+        "isCorrect": true,
+        "explanation": "For 15 both `if` statements add text (\"FizzBuzz\"); the `else` is skipped. For 10, only the second `if` is true: \"Buzz\". For 9, the first `if` adds \"Fizz\", and the second `if` is false, so its `else` appends 9: \"Fizz9\"."
+      }
+    ],
+    "explanation": "Consecutive `if` statements are independent; only the `else` that directly follows an `if` is tied to that `if`.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-35",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint x = 7;\nboolean b1 = x > 5 && x < 10 || x == 12 && x > 20;\nboolean b2 = x > 5 && (x < 10 || x == 12) && x > 20;\nboolean b3 = !(x > 5) || x < 10 && x != 7;\nSystem.out.println(b1 + \" \" + b2 + \" \" + b3);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "true true false",
+        "isCorrect": false,
+        "explanation": "This overlooks `x > 20` in `b2`. All three parts must be true for the `&&` chain, and `7 > 20` is false."
+      },
+      {
+        "label": "B",
+        "text": "true false false",
+        "isCorrect": true,
+        "explanation": "`&&` binds tighter than `||`. `b1` is `(7 > 5 && 7 < 10) || (...)`, which is true. `b2` requires `7 > 20`, so it is false. `b3` is `false || (7 < 10 && 7 != 7)`, which is false."
+      },
+      {
+        "label": "C",
+        "text": "false false false",
+        "isCorrect": false,
+        "explanation": "This evaluates `||` before `&&` in `b1`. `&&` has higher precedence, so `b1` is `(x > 5 && x < 10) || (x == 12 && x > 20)`, which is true."
+      },
+      {
+        "label": "D",
+        "text": "true false true",
+        "isCorrect": false,
+        "explanation": "This overlooks `x != 7` in `b3`. The right side is `x < 10 && x != 7`, which is false for 7."
+      }
+    ],
+    "explanation": "`!` is evaluated first, then `&&`, then `||`. Use parentheses to be sure of the grouping.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-36",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Person {\n    private String name;\n    private int age;\n    public Person(String n, int a) { name = n; age = a; }\n    public boolean equals(Object o) {\n        if (!(o instanceof Person)) return false;\n        Person p = (Person) o;\n        return name.equals(p.name);\n    }\n}\n```\n\n```java\nPerson a = new Person(\"Ann\", 20);\nPerson b = new Person(\"Ann\", 31);\nPerson c = a;\nPerson d = new Person(\"Bob\", 20);\nSystem.out.println(a.equals(b) + \" \" + (a == b) + \" \" + (a == c) + \" \" + a.equals(d) + \" \" + a.equals(\"Ann\"));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "true false true false false",
+        "isCorrect": true,
+        "explanation": "`equals` compares only names, so `a.equals(b)` is true. `a == b` is false (different objects). `a == c` is true (the same object). `a.equals(d)` is false (different names), and `a.equals(\"Ann\")` is false because a `String` is not a `Person`."
+      },
+      {
+        "label": "B",
+        "text": "false false false false false",
+        "isCorrect": false,
+        "explanation": "This assumes the default `Object.equals`, which compares references. `Person` overrides `equals` to compare names, so `a.equals(b)` is true."
+      },
+      {
+        "label": "C",
+        "text": "false false true false false",
+        "isCorrect": false,
+        "explanation": "This assumes `equals` compares both fields. The class's `equals` compares only the names, so two people with the same name are equal even when their ages differ."
+      },
+      {
+        "label": "D",
+        "text": "true true true false false",
+        "isCorrect": false,
+        "explanation": "`==` always compares references and never calls `equals`, so `a == b` is false: they are two different objects."
+      }
+    ],
+    "explanation": "`==` compares references, whatever `equals` does. An overridden `equals` defines what it means for two different objects to be equal.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-37",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nboolean done = false;\nif (done = true)\n    System.out.println(\"A\");\nelse\n    System.out.println(\"B\");\nSystem.out.println(done);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "B\nfalse",
+        "isCorrect": false,
+        "explanation": "This reads the condition as a comparison. A single `=` assigns, and the value of an assignment expression is the value assigned (`true`)."
+      },
+      {
+        "label": "B",
+        "text": "A\ntrue",
+        "isCorrect": true,
+        "explanation": "`done = true` assigns true to `done` and evaluates to true, so the `if` branch prints A, and `done` is true afterward."
+      },
+      {
+        "label": "C",
+        "text": "A\nfalse",
+        "isCorrect": false,
+        "explanation": "The assignment `done = true` does change `done`, so the second statement prints `true`."
+      },
+      {
+        "label": "D",
+        "text": "The code does not compile.",
+        "isCorrect": false,
+        "explanation": "A condition must be a `boolean` expression, and `done = true` is one (an assignment of a `boolean` value has type `boolean`), so this compiles."
+      }
+    ],
+    "explanation": "An assignment is an expression whose value is the assigned value. With `boolean`, `if (flag = true)` compiles but is almost always a bug.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-38",
+    "unit": "unit-3-boolean-if",
+    "topic": "boolean-expressions",
+    "difficulty": "hard",
+    "stem": "Which of the following is equivalent to `(a && b) || (!a && !b)`, where `a` and `b` are `boolean` variables?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "`a != b`",
+        "isCorrect": false,
+        "explanation": "This is true when exactly one of them is true, the opposite."
+      },
+      {
+        "label": "B",
+        "text": "`a || b`",
+        "isCorrect": false,
+        "explanation": "This is also true when only one is true, which the original expression rejects."
+      },
+      {
+        "label": "C",
+        "text": "`a == b`",
+        "isCorrect": true,
+        "explanation": "The expression is true exactly when `a` and `b` are both true or both false, which is when they have the same value."
+      },
+      {
+        "label": "D",
+        "text": "`a && b`",
+        "isCorrect": false,
+        "explanation": "This is true only when both are true. The original is also true when both are false."
+      }
+    ],
+    "explanation": "A truth table shows that the expression is true when `a` and `b` agree.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-39",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-statements",
+    "difficulty": "hard",
+    "stem": "Assume `n` is an `int` variable. For which values of `n` does the following code segment assign \"B\" to `g`?\n\n```java\nString g = \"\";\nif (n >= 90)\n    g = \"A\";\nelse if (n >= 80)\n    g = \"B\";\nif (n >= 70 && n < 80)\n    g = \"C\";\nif (n < 70)\n    g = \"F\";\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "70 through 89, inclusive",
+        "isCorrect": false,
+        "explanation": "For 70 through 79 the next `if` assigns \"C\", and values below 80 never satisfy `n >= 80`."
+      },
+      {
+        "label": "B",
+        "text": "80 through 100, inclusive",
+        "isCorrect": false,
+        "explanation": "For `n >= 90` the first branch assigns \"A\", so the `else if` is skipped."
+      },
+      {
+        "label": "C",
+        "text": "80 through 89, inclusive",
+        "isCorrect": true,
+        "explanation": "\"B\" is assigned when `n >= 80` and `n < 90` (the `else if` runs only when `n >= 90` is false). None of the later `if` statements reassigns `g` for those values."
+      },
+      {
+        "label": "D",
+        "text": "80 through 90, inclusive",
+        "isCorrect": false,
+        "explanation": "At `n = 90` the first condition `n >= 90` is true, so \"A\" is assigned and the `else if` is skipped."
+      }
+    ],
+    "explanation": "Track the later `if` statements as well: separate `if` statements can overwrite earlier assignments, while an `else if` runs only when the previous condition was false.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-40",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "hard",
+    "stem": "Consider the following method.\n\n```java\npublic static int sign(int n) {\n    if (n > 0)\n        return 1;\n    else if (n < 0)\n        return -1;\n}\n```\n\nWhich of the following best describes the result of compiling this method?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The method compiles, but it throws an exception when `n` is 0.",
+        "isCorrect": false,
+        "explanation": "The compiler rejects the method; it never gets a chance to throw anything."
+      },
+      {
+        "label": "B",
+        "text": "The method does not compile, because there is a path (when `n` is 0) that reaches the end without returning a value.",
+        "isCorrect": true,
+        "explanation": "The compiler requires every path through a non-`void` method to return a value. Here the case `n == 0` falls through both conditions, which is a compile-time error (missing return statement)."
+      },
+      {
+        "label": "C",
+        "text": "The method compiles and returns -1 for every value of `n` that is not positive.",
+        "isCorrect": false,
+        "explanation": "The `else if (n < 0)` only returns -1 for negative values, and 0 reaches no return statement."
+      },
+      {
+        "label": "D",
+        "text": "The method compiles and returns 0 when `n` is 0.",
+        "isCorrect": false,
+        "explanation": "A method does not return a default value; if no `return` runs, it is a compile-time error."
+      }
+    ],
+    "explanation": "Every path through a method with a return type must end in a `return` (or a thrown exception).",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-41",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "hard",
+    "stem": "The variable `str` is a `String` that may be `null`. Which of the following conditions evaluates to `true` when `str` refers to a non-empty string, and to `false` (without throwing an exception) when `str` is `null`?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "`str != null && str.length() > 0`",
+        "isCorrect": true,
+        "explanation": "When `str` is `null`, `str != null` is false and `&&` skips the right operand, so `str.length()` is never called. For a non-empty string both parts are true."
+      },
+      {
+        "label": "B",
+        "text": "`str.length() > 0 || str != null`",
+        "isCorrect": false,
+        "explanation": "The left operand `str.length() > 0` is evaluated first and throws when `str` is `null`."
+      },
+      {
+        "label": "C",
+        "text": "`str == null && str.length() > 0`",
+        "isCorrect": false,
+        "explanation": "When `str` is `null` the left operand is true, so `&&` evaluates `str.length()`, which throws. For a non-null string it is false even if the string is non-empty."
+      },
+      {
+        "label": "D",
+        "text": "`str.length() > 0 && str != null`",
+        "isCorrect": false,
+        "explanation": "The `length()` call is evaluated first, so it throws a `NullPointerException` when `str` is `null`."
+      }
+    ],
+    "explanation": "Put the `null` check first so that short-circuit evaluation protects the method call.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-42",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "hard",
+    "stem": "Assume `x` is an `int` variable. For which values of `x` does the following code segment assign 2 to `r`?\n\n```java\nint r;\nif (x > 0)\n    r = 1;\nelse if (x > 10)\n    r = 2;\nelse\n    r = 3;\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Every `x` that is greater than 0 and also greater than 10",
+        "isCorrect": false,
+        "explanation": "The `else if` is evaluated only if `x > 0` is false, so it can never be reached by such a value."
+      },
+      {
+        "label": "B",
+        "text": "Every `x` greater than 10",
+        "isCorrect": false,
+        "explanation": "These values satisfy `x > 0`, so `r` is assigned 1 and the `else if` is skipped."
+      },
+      {
+        "label": "C",
+        "text": "Every `x` from 1 through 10",
+        "isCorrect": false,
+        "explanation": "These values also satisfy `x > 0`, so `r` is assigned 1; and `x > 10` is false for them anyway."
+      },
+      {
+        "label": "D",
+        "text": "There is no such value of `x`.",
+        "isCorrect": true,
+        "explanation": "Any `x` greater than 10 is also greater than 0, so the first condition is true and the `else if` is never reached. The second condition can only be tested when `x <= 0`, and then `x > 10` is false."
+      }
+    ],
+    "explanation": "An `else if` condition is evaluated only when every earlier condition was false. Here the order makes the second branch unreachable.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-43",
+    "unit": "unit-3-boolean-if",
+    "topic": "compound-boolean-expressions",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint n = 12;\nint score = 0;\nif (n % 2 == 0) score += 1;\nif (n % 3 == 0) score += 2;\nelse if (n % 4 == 0) score += 4;\nif (n % 4 == 0 && n % 6 == 0) score += 8;\nif (!(n % 5 == 0) || n > 10) score += 16;\nSystem.out.println(score);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "11",
+        "isCorrect": false,
+        "explanation": "This moves the negation to the whole condition. In the code the `!` applies only to `n % 5 == 0`, which is true for 12 (12 is not a multiple of 5)."
+      },
+      {
+        "label": "B",
+        "text": "31",
+        "isCorrect": false,
+        "explanation": "This treats `else if (n % 4 == 0)` as a separate `if`. Since `n % 3 == 0` is true, the `else if` is skipped and 4 is not added."
+      },
+      {
+        "label": "C",
+        "text": "27",
+        "isCorrect": true,
+        "explanation": "12 is even: +1. 12 % 3 == 0: +2 (and the `else if` is skipped). 12 is divisible by 4 and 6: +8. 12 is not a multiple of 5: +16. The total is 27."
+      },
+      {
+        "label": "D",
+        "text": "19",
+        "isCorrect": false,
+        "explanation": "This treats `n % 4 == 0 && n % 6 == 0` as false. 12 is divisible by both 4 and 6, so 8 is added."
+      }
+    ],
+    "explanation": "Independent `if` statements each add their own amount, while an `else if` is skipped when the previous condition is true.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-44",
+    "unit": "unit-3-boolean-if",
+    "topic": "comparing-objects",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nString a = \"Banana\", b = \"apple\", c = \"apple\";\nSystem.out.println((a.compareTo(b) < 0) + \" \" + (b.compareTo(c) == 0) + \" \" + (b == c) + \" \" + a.equalsIgnoreCase(\"BANANA\") + \" \" + (a.toLowerCase().compareTo(b) > 0));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "true true true false true",
+        "isCorrect": false,
+        "explanation": "`equalsIgnoreCase` ignores case, so \"Banana\" and \"BANANA\" are equal."
+      },
+      {
+        "label": "B",
+        "text": "true true true true true",
+        "isCorrect": true,
+        "explanation": "'B' (66) is less than 'a' (97), so `\"Banana\".compareTo(\"apple\")` is negative. `b.compareTo(c)` is 0 and `b == c` is true because the two literals are the same object. `equalsIgnoreCase` is true, and lowercase \"banana\" comes after \"apple\"."
+      },
+      {
+        "label": "C",
+        "text": "true true false true true",
+        "isCorrect": false,
+        "explanation": "This assumes two string literals with the same characters are different objects. Identical literals refer to the same `String` object, so `b == c` is true."
+      },
+      {
+        "label": "D",
+        "text": "false true true true true",
+        "isCorrect": false,
+        "explanation": "This assumes alphabetical order ignoring case, so \"Banana\" would come after \"apple\". `compareTo` compares character codes, and uppercase letters have smaller codes than lowercase ones."
+      }
+    ],
+    "explanation": "`compareTo` is case-sensitive and orders by character code; `equalsIgnoreCase` ignores case.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u3-mcq-45",
+    "unit": "unit-3-boolean-if",
+    "topic": "if-else-statements",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static String g(int x) {\n    if (x > 10)\n        return \"A\";\n    else if (x >= 10)\n        return \"B\";\n    else if (x > 5)\n        return \"C\";\n    else\n        return \"D\";\n}\n```\n\n```java\nSystem.out.println(g(11) + g(10) + g(6) + g(5));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "AACD",
+        "isCorrect": false,
+        "explanation": "This treats the first condition as `x >= 10`, so 10 returns \"A\" instead of falling through to the second test."
+      },
+      {
+        "label": "B",
+        "text": "ABCD",
+        "isCorrect": true,
+        "explanation": "11 > 10: \"A\". 10 is not greater than 10 but is >= 10: \"B\". 6 > 5: \"C\". 5 is not > 5, so it reaches the `else`: \"D\"."
+      },
+      {
+        "label": "C",
+        "text": "ABCC",
+        "isCorrect": false,
+        "explanation": "This treats the third condition as `x >= 5`, so 5 returns \"C\". The code tests `x > 5`, so 5 reaches the `else`."
+      },
+      {
+        "label": "D",
+        "text": "AACC",
+        "isCorrect": false,
+        "explanation": "This makes both boundary mistakes: 10 is treated as greater than 10, and 5 is treated as greater than 5."
+      }
+    ],
+    "explanation": "Check each boundary value against `>` and `>=` carefully; the chain is evaluated top to bottom, and the first true condition wins.",
+    "conceptLink": "ap-csa/unit-3-boolean-if/if-else-statements",
+    "reviewed": false
+  }
+]

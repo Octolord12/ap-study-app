@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-csa-u6-mcq-31",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = new int[4];\nString[] s = new String[2];\nboolean[] b = new boolean[2];\na[1] = 5;\na[a.length - 1] = a[1] + 1;\nSystem.out.println(a[0] + \" \" + a[1] + \" \" + a[3] + \" \" + a.length + \" \" + s[0] + \" \" + b[1]);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0 5 6 4 null false",
+        "isCorrect": true,
+        "explanation": "A new `int` array is filled with 0s, `String` arrays with `null` and `boolean` arrays with `false`. Then a[1] = 5 and a[3] = 6, and `a.length` is 4."
+      },
+      {
+        "label": "B",
+        "text": "0 5 6 4 null true",
+        "isCorrect": false,
+        "explanation": "A `boolean` array is created with every element `false`."
+      },
+      {
+        "label": "C",
+        "text": "0 5 0 4 null false",
+        "isCorrect": false,
+        "explanation": "`a[a.length - 1]` is `a[3]`, so the 6 is stored in the last element, and printing `a[3]` shows 6."
+      },
+      {
+        "label": "D",
+        "text": "0 5 6 3 null false",
+        "isCorrect": false,
+        "explanation": "`a.length` is the number of elements (4), not the index of the last element. The last index is 3, which is where 6 is stored."
+      }
+    ],
+    "explanation": "Array elements get default values when the array is created. The length is the number of elements, and the last index is one less.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-32",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {4, 7, 1};\nint sum = 0;\ntry {\n    for (int i = 0; i <= a.length; i++)\n        sum += a[i];\n    System.out.println(\"done \" + sum);\n} catch (ArrayIndexOutOfBoundsException e) {\n    System.out.println(\"caught \" + sum);\n}\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "caught 12",
+        "isCorrect": true,
+        "explanation": "The first three passes add 4, 7 and 1 (sum 12). When `i` is 3, `a[3]` throws an `ArrayIndexOutOfBoundsException`, so \"done\" is skipped and the handler prints the sum so far."
+      },
+      {
+        "label": "B",
+        "text": "The code does not compile.",
+        "isCorrect": false,
+        "explanation": "`<=` with `a.length` compiles; the problem appears only at run time, when `i` equals 3."
+      },
+      {
+        "label": "C",
+        "text": "caught 0",
+        "isCorrect": false,
+        "explanation": "This assumes the exception happens before anything is added. The first three passes (i = 0, 1, 2) succeed, so `sum` is 12 when `a[3]` throws."
+      },
+      {
+        "label": "D",
+        "text": "done 12",
+        "isCorrect": false,
+        "explanation": "This assumes the loop stays within the array. The condition `i <= a.length` lets `i` reach 3, and `a[3]` is out of bounds for an array of length 3."
+      }
+    ],
+    "explanation": "Valid indexes are 0 through `length - 1`. The condition `i <= a.length` goes one past the end.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-33",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {1, 2, 3};\nfor (int x : a)\n    x *= 2;\nint s1 = 0;\nfor (int x : a)\n    s1 += x;\nfor (int i = 0; i < a.length; i++)\n    a[i] *= 2;\nint s2 = 0;\nfor (int x : a)\n    s2 += x;\nSystem.out.println(s1 + \" \" + s2);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "12 24",
+        "isCorrect": false,
+        "explanation": "This assumes the enhanced `for` changes the array's elements. The loop variable `x` is a copy of each element, so `x *= 2` does not change the array."
+      },
+      {
+        "label": "B",
+        "text": "6 12",
+        "isCorrect": true,
+        "explanation": "In the first loop, `x` is a copy of each element, so the array is unchanged: its sum `s1` is 1 + 2 + 3 = 6. The indexed loop doubles the elements to 2, 4, 6, so `s2` is 12."
+      },
+      {
+        "label": "C",
+        "text": "6 6",
+        "isCorrect": false,
+        "explanation": "This assumes the indexed loop does not change the array. `a[i] *= 2` changes the elements themselves, so their sum doubles."
+      },
+      {
+        "label": "D",
+        "text": "12 12",
+        "isCorrect": false,
+        "explanation": "Both loops change the array differently from this: the enhanced `for` leaves it alone (sum 6), and the indexed loop doubles every element (sum 12)."
+      }
+    ],
+    "explanation": "An enhanced `for` loop variable holds a copy of a primitive element. To change the elements, use an indexed loop.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-34",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {10, 20, 30, 40, 50};\nint idx = 1;\nfor (int i = idx; i < a.length - 1; i++)\n    a[i] = a[i + 1];\na[a.length - 1] = 0;\nString s = \"\";\nfor (int x : a)\n    s += x + \" \";\nSystem.out.println(s.trim());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "10 20 30 40 0",
+        "isCorrect": false,
+        "explanation": "This removes the last element instead of the one at index 1. The loop starts at `idx`, so `a[1]` is overwritten by `a[2]`."
+      },
+      {
+        "label": "B",
+        "text": "10 20 20 20 0",
+        "isCorrect": false,
+        "explanation": "This copies each element to the right, so the value at the removal index spreads along the array. To delete an element, elements to its right move *left*."
+      },
+      {
+        "label": "C",
+        "text": "10 30 40 50 0",
+        "isCorrect": true,
+        "explanation": "Starting at index 1, each element is replaced by its right neighbor: 20 is overwritten by 30, 30 by 40, 40 by 50. The last element is then set to 0, giving 10 30 40 50 0."
+      },
+      {
+        "label": "D",
+        "text": "10 30 40 50 50",
+        "isCorrect": false,
+        "explanation": "This leaves the last element unchanged. The statement `a[a.length - 1] = 0;` clears the now-duplicated last element."
+      }
+    ],
+    "explanation": "Deleting an element from an array by shifting moves the later elements left and leaves the last position to be cleared.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-35",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {1, 2, 3, 4, 5};\nfor (int i = 0; i < a.length / 2; i++) {\n    int t = a[i];\n    a[i] = a[a.length - 1 - i];\n    a[a.length - 1 - i] = t;\n}\nString s = \"\";\nfor (int x : a)\n    s += x;\nSystem.out.println(s);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "52341",
+        "isCorrect": false,
+        "explanation": "This stops one swap early. For length 5, `a.length / 2` is 2, so both the swap of positions 0 and 4 and the swap of positions 1 and 3 happen."
+      },
+      {
+        "label": "B",
+        "text": "54345",
+        "isCorrect": false,
+        "explanation": "This describes a swap without the temporary variable `t`. With the temporary, the old value is saved and written to the other position."
+      },
+      {
+        "label": "C",
+        "text": "12345",
+        "isCorrect": false,
+        "explanation": "This swaps every pair twice, so the array ends up back in its original order. The loop must stop at the middle."
+      },
+      {
+        "label": "D",
+        "text": "54321",
+        "isCorrect": true,
+        "explanation": "Two swaps are done (i = 0 and i = 1): positions 0 and 4, and positions 1 and 3. The middle element stays, giving 5 4 3 2 1."
+      }
+    ],
+    "explanation": "Reversing in place swaps symmetric pairs and stops at the middle; going all the way would undo the work.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-36",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {1, 2, 3};\nint[] b = a;\nint[] c = a.clone();\nb[0] = 99;\nc[1] = -5;\nSystem.out.println(a[0] + \" \" + a[1] + \" \" + b[1] + \" \" + c[0] + \" \" + (a == b) + \" \" + (a == c));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "99 2 2 1 true true",
+        "isCorrect": false,
+        "explanation": "`a == c` is false: `clone()` creates a different array object, even though its contents were equal at that moment."
+      },
+      {
+        "label": "B",
+        "text": "99 -5 -5 99 true true",
+        "isCorrect": false,
+        "explanation": "This assumes `clone()` returns the same array. It creates a new, independent array whose elements are copied, so `c[1] = -5` does not affect `a`."
+      },
+      {
+        "label": "C",
+        "text": "1 2 2 1 false false",
+        "isCorrect": false,
+        "explanation": "This assumes `b = a` copies the array. It copies the *reference*, so `b` and `a` are the same array, and `a == b` is true."
+      },
+      {
+        "label": "D",
+        "text": "99 2 2 1 true false",
+        "isCorrect": true,
+        "explanation": "`b` and `a` refer to one array, so `b[0] = 99` changes `a[0]` too, and `a == b` is true. `c` is a separate copy made before the changes: c[0] is still 1, and the change `c[1] = -5` does not affect `a`. `a == c` is false."
+      }
+    ],
+    "explanation": "Assigning an array variable copies the reference; `clone()` copies the elements into a new array.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-37",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {3, 7, 2, 8, 5, 5};\nint count = 0;\nfor (int i = 0; i < a.length; i++)\n    for (int j = i + 1; j < a.length; j++)\n        if (a[i] + a[j] == 10)\n            count++;\nSystem.out.println(count);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2",
+        "isCorrect": false,
+        "explanation": "This leaves out the last element as a partner, so the pair (5, 5) is missed."
+      },
+      {
+        "label": "B",
+        "text": "8",
+        "isCorrect": false,
+        "explanation": "This lets `j` start at 0, so each pair is counted twice and a value can be paired with itself (5 + 5, 5 + 5 for each 5)."
+      },
+      {
+        "label": "C",
+        "text": "5",
+        "isCorrect": false,
+        "explanation": "This lets each element pair with itself, so each 5 counts (5 + 5 = 10) in addition to the pair of 5s."
+      },
+      {
+        "label": "D",
+        "text": "3",
+        "isCorrect": true,
+        "explanation": "Pairs summing to 10: 3 + 7, 2 + 8, and 5 + 5 (the two 5s). Starting `j` at `i + 1` counts each pair once and never pairs an element with itself. The count is 3."
+      }
+    ],
+    "explanation": "A nested loop with `j = i + 1` visits each pair of positions exactly once.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-38",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {5, 9, 9, 3, 7};\nint max = a[0], second = Integer.MIN_VALUE;\nfor (int i = 1; i < a.length; i++) {\n    if (a[i] > max) {\n        second = max;\n        max = a[i];\n    } else if (a[i] > second)\n        second = a[i];\n}\nSystem.out.println(max + \" \" + second);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9 7",
+        "isCorrect": false,
+        "explanation": "This reports the second largest *distinct* value. When the second 9 is reached, `a[i] > max` is false, but `a[i] > second` (9 > 5) is true, so `second` becomes 9."
+      },
+      {
+        "label": "B",
+        "text": "9 3",
+        "isCorrect": false,
+        "explanation": "This takes the smallest of the values after the maximum. `second` is raised, never lowered, so later smaller values do not replace it."
+      },
+      {
+        "label": "C",
+        "text": "9 9",
+        "isCorrect": true,
+        "explanation": "The first 9 makes `max` 9 and `second` 5. The second 9 is not greater than `max`, but it is greater than `second`, so `second` becomes 9. The 3 and 7 are smaller than 9, so nothing changes."
+      },
+      {
+        "label": "D",
+        "text": "9 5",
+        "isCorrect": false,
+        "explanation": "This keeps the value that `max` had before. The second 9 also updates `second` through the `else if`."
+      }
+    ],
+    "explanation": "This algorithm finds the second largest element counting duplicates; with a repeated maximum, both equal the maximum.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-39",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nString[] w = {\"kiwi\", \"banana\", \"fig\", \"cherry\", \"plum\"};\nString best = w[0];\nfor (int i = 1; i < w.length; i++)\n    if (w[i].length() > best.length())\n        best = w[i];\nSystem.out.println(best + \" \" + best.length());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "banana 5",
+        "isCorrect": false,
+        "explanation": "\"banana\" has 6 letters: b, a, n, a, n, a."
+      },
+      {
+        "label": "B",
+        "text": "cherry 6",
+        "isCorrect": false,
+        "explanation": "This replaces the current best on a tie. \"cherry\" has the same length as \"banana\", and with `>` the first one found is kept."
+      },
+      {
+        "label": "C",
+        "text": "kiwi 4",
+        "isCorrect": false,
+        "explanation": "This assumes `best` never changes. The test `w[i].length() > best.length()` is true for \"banana\" (6 > 4)."
+      },
+      {
+        "label": "D",
+        "text": "banana 6",
+        "isCorrect": true,
+        "explanation": "`best` starts as \"kiwi\" (4). \"banana\" (6) is longer, so it replaces it. \"fig\" is shorter, \"cherry\" (6) is not longer than 6, and \"plum\" is shorter. The result is banana 6."
+      }
+    ],
+    "explanation": "With a strict `>` comparison, the first of several longest elements is the one kept.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-40",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static void doubleAll(int[] arr) {\n    for (int i = 0; i < arr.length; i++)\n        arr[i] *= 2;\n}\npublic static void reset(int[] arr) {\n    arr = new int[arr.length];\n    arr[0] = -1;\n}\n```\n\n```java\nint[] a = {1, 2, 3};\ndoubleAll(a);\nreset(a);\nSystem.out.println(a[0] + \" \" + a[1] + \" \" + a[2]);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "-1 0 0",
+        "isCorrect": false,
+        "explanation": "This assumes `reset` replaces the caller's array. Assigning a new array to the parameter `arr` changes only the local copy of the reference."
+      },
+      {
+        "label": "B",
+        "text": "0 0 0",
+        "isCorrect": false,
+        "explanation": "This replaces `reset`'s body with a loop that zeroes the *elements* of the caller's array. In the original, `arr` is a copy of the reference, so the new array is seen only inside `reset`."
+      },
+      {
+        "label": "C",
+        "text": "2 4 6",
+        "isCorrect": true,
+        "explanation": "`doubleAll` changes the elements of the caller's array: 2, 4, 6. In `reset`, `arr = new int[...]` makes the *parameter* refer to a new array, so the caller's array is unchanged."
+      },
+      {
+        "label": "D",
+        "text": "1 2 3",
+        "isCorrect": false,
+        "explanation": "`doubleAll` changes the elements of the array that the caller passed, so the doubling is visible afterward."
+      }
+    ],
+    "explanation": "A method can change an array's contents through its reference, but reassigning the parameter has no effect on the caller.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-41",
+    "unit": "unit-6-array",
+    "topic": "enhanced-for-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Counter {\n    private int n = 0;\n    public void inc() { n++; }\n    public int get() { return n; }\n}\n```\n\n```java\nCounter[] cs = new Counter[3];\nfor (int i = 0; i < cs.length; i++)\n    cs[i] = new Counter();\nfor (Counter c : cs)\n    c.inc();\nfor (Counter c : cs)\n    c = new Counter();\ncs[0].inc();\nSystem.out.println(cs[0].get() + \" \" + cs[1].get() + \" \" + cs[2].get());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1 0 0",
+        "isCorrect": false,
+        "explanation": "This replaces the array elements with new objects. In the original, `c = new Counter()` changes only the loop variable, so the elements still refer to the old objects."
+      },
+      {
+        "label": "B",
+        "text": "2 2 2",
+        "isCorrect": false,
+        "explanation": "This applies the last increment to every counter. `cs[0].inc()` is called only on the first element."
+      },
+      {
+        "label": "C",
+        "text": "1 1 1",
+        "isCorrect": false,
+        "explanation": "This leaves out the final `cs[0].inc()`. That call increments the first counter a second time."
+      },
+      {
+        "label": "D",
+        "text": "2 1 1",
+        "isCorrect": true,
+        "explanation": "The first enhanced `for` calls `inc()` on each object (each count is 1). The second only reassigns the loop variable `c`, so the array is unchanged. Finally `cs[0].inc()` makes the first count 2."
+      }
+    ],
+    "explanation": "In an enhanced `for`, the loop variable is a copy of the reference: calling methods on it affects the object, but assigning to it does not change the array.",
+    "conceptLink": "ap-csa/unit-6-array/enhanced-for-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-42",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {2, 4, 1, 3};\nint[] p = new int[a.length];\np[0] = a[0];\nfor (int i = 1; i < a.length; i++)\n    p[i] = p[i - 1] + a[i];\nString s = \"\";\nfor (int x : p)\n    s += x + \" \";\nSystem.out.println(s.trim());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2 6 7 10",
+        "isCorrect": true,
+        "explanation": "The array `p` holds running totals: 2, 2 + 4 = 6, 6 + 1 = 7, 7 + 3 = 10."
+      },
+      {
+        "label": "B",
+        "text": "0 4 5 8",
+        "isCorrect": false,
+        "explanation": "This leaves out the initialization `p[0] = a[0]`. A new `int` array contains zeros, so every running total is missing the first element."
+      },
+      {
+        "label": "C",
+        "text": "2 4 8 9",
+        "isCorrect": false,
+        "explanation": "This adds the previous element of `a` instead of the current one, so each running total lags behind."
+      },
+      {
+        "label": "D",
+        "text": "The code throws an `ArrayIndexOutOfBoundsException`.",
+        "isCorrect": false,
+        "explanation": "The loop starts at `i = 1`, so `p[i - 1]` is `p[0]` at the first pass, which is valid; no index is out of range."
+      }
+    ],
+    "explanation": "A prefix-sum array stores, at each index, the sum of the elements up to and including that index.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-43",
+    "unit": "unit-6-array",
+    "topic": "traversing-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {1, 1, 2, 2, 2, 1, 3, 3};\nint runs = 1;\nfor (int i = 1; i < a.length; i++)\n    if (a[i] != a[i - 1])\n        runs++;\nSystem.out.println(runs);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5",
+        "isCorrect": false,
+        "explanation": "This counts positions that repeat the previous value, not the places where a new run starts."
+      },
+      {
+        "label": "B",
+        "text": "3",
+        "isCorrect": false,
+        "explanation": "This starts the count at 0, missing the first run. A non-empty array always has at least one run."
+      },
+      {
+        "label": "C",
+        "text": "8",
+        "isCorrect": false,
+        "explanation": "This is the number of elements. The code counts a new run only where an element differs from the one before it."
+      },
+      {
+        "label": "D",
+        "text": "4",
+        "isCorrect": true,
+        "explanation": "The runs are 1 1 | 2 2 2 | 1 | 3 3. A new run begins at each change of value: the count starts at 1 and the code adds one for each of the 3 changes, giving 4."
+      }
+    ],
+    "explanation": "The number of runs is one more than the number of adjacent positions where the value changes.",
+    "conceptLink": "ap-csa/unit-6-array/traversing-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-44",
+    "unit": "unit-6-array",
+    "topic": "array-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[] a = {1, 2, 3, 4};\nint last = a[a.length - 1];\nfor (int i = a.length - 1; i > 0; i--)\n    a[i] = a[i - 1];\na[0] = last;\nString s = \"\";\nfor (int x : a)\n    s += x;\nSystem.out.println(s);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4111",
+        "isCorrect": false,
+        "explanation": "This shifts in the wrong order. Going forward, each element is overwritten before it is copied, so the first value spreads across the array."
+      },
+      {
+        "label": "B",
+        "text": "2341",
+        "isCorrect": false,
+        "explanation": "This rotates left. The code moves each element one position to the *right* and puts the last element in front."
+      },
+      {
+        "label": "C",
+        "text": "4123",
+        "isCorrect": true,
+        "explanation": "The last element 4 is saved. Going from the end, each element is copied one position right: 1 2 3 3, 1 2 2 3, 1 1 2 3. Then a[0] is set to 4: 4 1 2 3."
+      },
+      {
+        "label": "D",
+        "text": "1234",
+        "isCorrect": false,
+        "explanation": "The loop and the final assignment do change the array: the last element moves to index 0."
+      }
+    ],
+    "explanation": "When shifting elements right in place, move from the end of the array toward the front so no value is overwritten before it has been copied.",
+    "conceptLink": "ap-csa/unit-6-array/array-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u6-mcq-45",
+    "unit": "unit-6-array",
+    "topic": "array-creation-and-access",
+    "difficulty": "hard",
+    "stem": "Which of the following code segments compiles without error?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "`int[] a = {1, 2, 3}; int len = a.length();`",
+        "isCorrect": false,
+        "explanation": "For an array, `length` is a field, so the parentheses make this a compile-time error (for a `String`, `length()` is a method)."
+      },
+      {
+        "label": "B",
+        "text": "`int[] a = new int[3]; a = {1, 2, 3};`",
+        "isCorrect": false,
+        "explanation": "An initializer list `{1, 2, 3}` can be used only in the declaration of the array. A later assignment needs `new int[] {1, 2, 3}`."
+      },
+      {
+        "label": "C",
+        "text": "`int[] e = new int[3.0];`",
+        "isCorrect": false,
+        "explanation": "The size of an array must be an `int`. A `double` is not accepted without a cast."
+      },
+      {
+        "label": "D",
+        "text": "`int[] c = {1, 2, 3}; int n = c.length;`",
+        "isCorrect": true,
+        "explanation": "`length` is a field of an array, not a method, so it is written without parentheses, and an initializer list may be used in the declaration."
+      }
+    ],
+    "explanation": "Array `length` has no parentheses, and an initializer list is allowed only in a declaration.",
+    "conceptLink": "ap-csa/unit-6-array/array-creation-and-access",
+    "reviewed": false
+  }
+]

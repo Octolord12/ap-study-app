@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-csa-u5-mcq-31",
+    "unit": "unit-5-writing-classes",
+    "topic": "static-variables-and-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Item {\n    private static int count = 0;\n    private int id;\n    public Item() {\n        count++;\n        id = count;\n    }\n    public int getId() { return id; }\n    public static int getCount() { return count; }\n}\n```\n\n```java\nItem a = new Item();\nItem b = new Item();\nItem c = new Item();\nSystem.out.println(a.getId() + \" \" + b.getId() + \" \" + c.getId() + \" \" + Item.getCount());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1 2 3 3",
+        "isCorrect": true,
+        "explanation": "`count` is shared by all `Item` objects, so it becomes 1, 2 and 3 as the objects are created. Each constructor copies the current `count` into that object's own `id`: 1, 2, 3. The final count is 3."
+      },
+      {
+        "label": "B",
+        "text": "3 3 3 3",
+        "isCorrect": false,
+        "explanation": "This assumes `id` is shared by all objects. `id` is an instance variable, so each object keeps the value of `count` at the time it was created."
+      },
+      {
+        "label": "C",
+        "text": "1 1 1 3",
+        "isCorrect": false,
+        "explanation": "This assumes each object starts counting from 0. `count` is `static`, so it is shared and keeps increasing across all the objects."
+      },
+      {
+        "label": "D",
+        "text": "10 20 30 3",
+        "isCorrect": false,
+        "explanation": "This multiplies the id by 10. In the code `id` is set directly to the current value of the shared counter."
+      }
+    ],
+    "explanation": "A `static` variable belongs to the class and is shared; an instance variable belongs to each object.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/static-variables-and-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-32",
+    "unit": "unit-5-writing-classes",
+    "topic": "static-variables-and-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Tally {\n    private static int total = 0;\n    private int local = 0;\n    public void add(int n) {\n        local += n;\n        total += n;\n    }\n    public int getLocal() { return local; }\n    public static int getTotal() { return total; }\n}\n```\n\n```java\nTally a = new Tally();\nTally b = new Tally();\na.add(5);\nb.add(3);\na.add(2);\nSystem.out.println(a.getLocal() + \" \" + b.getLocal() + \" \" + Tally.getTotal());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "7 3 7",
+        "isCorrect": false,
+        "explanation": "This ignores the amounts added through `b`. `total` is shared, so every `add` on any `Tally` contributes to it: 5 + 3 + 2 = 10."
+      },
+      {
+        "label": "B",
+        "text": "10 10 10",
+        "isCorrect": false,
+        "explanation": "This assumes every variable is shared. `local` is an instance variable, so `a` and `b` each keep their own sum."
+      },
+      {
+        "label": "C",
+        "text": "7 3 10",
+        "isCorrect": true,
+        "explanation": "`a.local` gets 5 and 2 (total 7); `b.local` gets 3. The shared `total` accumulates every call: 5 + 3 + 2 = 10."
+      },
+      {
+        "label": "D",
+        "text": "7 3 3",
+        "isCorrect": false,
+        "explanation": "This assumes the shared variable holds only the most recent addition. `total += n` accumulates."
+      }
+    ],
+    "explanation": "Instance variables are separate for each object; a `static` variable is a single value shared by the class.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/static-variables-and-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-33",
+    "unit": "unit-5-writing-classes",
+    "topic": "scope-and-this",
+    "difficulty": "hard",
+    "stem": "Consider the following class.\n\n```java\npublic class Box {\n    private int width;\n\n    public Box(int width) {\n        width = width;\n    }\n\n    public int getWidth() {\n        return width;\n    }\n}\n```\n\nWhat is the value returned by `getWidth()` for the object created with `new Box(5)`?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The class does not compile.",
+        "isCorrect": false,
+        "explanation": "The statement `width = width;` is legal (a self-assignment of the parameter), so the class compiles."
+      },
+      {
+        "label": "B",
+        "text": "A `NullPointerException` is thrown.",
+        "isCorrect": false,
+        "explanation": "`width` is an `int`, which is never `null`; the field simply keeps its default value 0."
+      },
+      {
+        "label": "C",
+        "text": "0",
+        "isCorrect": true,
+        "explanation": "Inside the constructor, the parameter `width` hides the instance variable `width`, so `width = width;` assigns the parameter to itself. The instance variable keeps its default value, 0. The fix is `this.width = width;`."
+      },
+      {
+        "label": "D",
+        "text": "5",
+        "isCorrect": false,
+        "explanation": "This would be correct if the constructor used `this.width = width;`. Without `this`, both sides of the assignment refer to the parameter."
+      }
+    ],
+    "explanation": "A parameter or local variable with the same name as an instance variable hides it. Use `this.` to refer to the field.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/scope-and-this",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-34",
+    "unit": "unit-5-writing-classes",
+    "topic": "scope-and-this",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Gauge {\n    private int level = 10;\n    public int read(int x) {\n        int level = x * 2;\n        level += 1;\n        return level;\n    }\n    public int getLevel() { return level; }\n}\n```\n\n```java\nGauge g = new Gauge();\nSystem.out.println(g.read(7) + \" \" + g.getLevel());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "15 10",
+        "isCorrect": true,
+        "explanation": "Inside `read`, the local variable `level` is 7 * 2 = 14, then 15, and that is returned. The instance variable `level` is untouched, so `getLevel()` returns 10."
+      },
+      {
+        "label": "B",
+        "text": "15 15",
+        "isCorrect": false,
+        "explanation": "This assumes `read` changes the instance variable. The declaration `int level` creates a local variable that hides the field, so the field is never modified."
+      },
+      {
+        "label": "C",
+        "text": "10 10",
+        "isCorrect": false,
+        "explanation": "This returns the field's value from `read`. The local `level` hides the field, so `read` returns the local value, 15."
+      },
+      {
+        "label": "D",
+        "text": "14 10",
+        "isCorrect": false,
+        "explanation": "This leaves out the `level += 1` update. The method returns the local variable, which is 14 + 1 = 15."
+      }
+    ],
+    "explanation": "A local variable declared with the same name as a field hides the field inside that method; changes to it do not affect the field.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/scope-and-this",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-35",
+    "unit": "unit-5-writing-classes",
+    "topic": "constructors",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Person {\n    private String name;\n    private int age;\n    public Person() {\n        this(\"Unknown\");\n    }\n    public Person(String name) {\n        this(name, 18);\n    }\n    public Person(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n    public String toString() { return name + \":\" + age; }\n}\n```\n\n```java\nPerson p = new Person();\nPerson q = new Person(\"Zed\");\nPerson r = new Person(\"Amy\", 30);\nSystem.out.println(p + \"|\" + q + \"|\" + r);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "null:0|Zed:18|Amy:30",
+        "isCorrect": false,
+        "explanation": "This assumes the no-argument constructor does nothing. It calls `this(\"Unknown\")`, which in turn calls `this(name, 18)`."
+      },
+      {
+        "label": "B",
+        "text": "Unknown:18|Zed:18|Amy:18",
+        "isCorrect": false,
+        "explanation": "This assumes the age is always 18. The three-argument constructor stores the age it receives, 30 for Amy."
+      },
+      {
+        "label": "C",
+        "text": "Unknown:0|Zed:0|Amy:30",
+        "isCorrect": false,
+        "explanation": "This assumes the one- and no-argument constructors leave `age` unset. Each of them calls another constructor with `this(...)`, which supplies 18."
+      },
+      {
+        "label": "D",
+        "text": "Unknown:18|Zed:18|Amy:30",
+        "isCorrect": true,
+        "explanation": "`new Person()` calls `this(\"Unknown\")`, which calls `this(name, 18)`, giving Unknown:18. `new Person(\"Zed\")` gives Zed:18. `new Person(\"Amy\", 30)` gives Amy:30. `toString` is called implicitly in the concatenation."
+      }
+    ],
+    "explanation": "`this(...)` calls another constructor of the same class; the chain ends in the constructor that assigns the fields.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/constructors",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-36",
+    "unit": "unit-5-writing-classes",
+    "topic": "writing-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Calc {\n    public int add(int a, int b) { return a + b; }\n    public double add(double a, double b) { return a + b + 0.5; }\n}\n```\n\n```java\nCalc c = new Calc();\nSystem.out.println(c.add(2, 3) + \" \" + c.add(2, 3.5) + \" \" + c.add(2.0, 3) + \" \" + c.add('a', 1));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5 6.0 6.0 98",
+        "isCorrect": false,
+        "explanation": "In `c.add(2.0, 3)`, the sum is 2.0 + 3.0 + 0.5 = 5.5, not 6.0."
+      },
+      {
+        "label": "B",
+        "text": "5 5.5 5.0 98",
+        "isCorrect": false,
+        "explanation": "This ignores the `+ 0.5` in the `double` version. `c.add(2, 3.5)` and `c.add(2.0, 3)` both use `add(double, double)`, which returns the sum plus 0.5."
+      },
+      {
+        "label": "C",
+        "text": "5 6.0 5.5 a1",
+        "isCorrect": false,
+        "explanation": "This treats `'a'` as text. A `char` argument is widened to `int` and `add(int, int)` is used: 97 + 1 = 98."
+      },
+      {
+        "label": "D",
+        "text": "5 6.0 5.5 98",
+        "isCorrect": true,
+        "explanation": "`add(2, 3)` matches the `int` version: 5. `add(2, 3.5)` and `add(2.0, 3)` have a `double` argument, so the `double` version runs: 2 + 3.5 + 0.5 = 6.0 and 2.0 + 3 + 0.5 = 5.5. A `char` widens to `int`: 97 + 1 = 98."
+      }
+    ],
+    "explanation": "Overload resolution looks at the argument types: an exact `int` match is preferred, and a `char` widens to `int`.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/writing-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-37",
+    "unit": "unit-5-writing-classes",
+    "topic": "accessor-and-mutator-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Scores {\n    private int[] data = {10, 20, 30};\n    public int[] getData() { return data; }\n    public int first() { return data[0]; }\n    public int copyFirst() {\n        int[] copy = data.clone();\n        copy[0] = -1;\n        return data[0];\n    }\n}\n```\n\n```java\nScores s = new Scores();\nint[] d = s.getData();\nd[0] = 99;\nSystem.out.println(s.first() + \" \" + s.copyFirst());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "10 -1",
+        "isCorrect": false,
+        "explanation": "Both mistakes: `getData` returns the actual array (so the 99 is stored), and the clone is independent of it."
+      },
+      {
+        "label": "B",
+        "text": "10 10",
+        "isCorrect": false,
+        "explanation": "This assumes `getData` returns a copy. It returns the reference to the object's own array, so `d[0] = 99` changes the private data."
+      },
+      {
+        "label": "C",
+        "text": "99 99",
+        "isCorrect": true,
+        "explanation": "`getData()` returns a reference to the private array itself, so `d[0] = 99` changes the object's data: `first()` is 99. In `copyFirst`, `clone()` creates an independent copy, so setting `copy[0]` does not change `data`, and `data[0]` is still 99."
+      },
+      {
+        "label": "D",
+        "text": "99 -1",
+        "isCorrect": false,
+        "explanation": "This assumes `clone()` shares the array. `clone` makes a separate copy, so `copy[0] = -1` does not change `data`."
+      }
+    ],
+    "explanation": "Returning a reference to a private mutable object lets callers change it. A defensive copy protects the data.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/accessor-and-mutator-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-38",
+    "unit": "unit-5-writing-classes",
+    "topic": "anatomy-of-a-class",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Point {\n    private int x, y;\n    public Point(int x, int y) { this.x = x; this.y = y; }\n    public String toString() { return \"(\" + x + \",\" + y + \")\"; }\n}\n```\n\n```java\nPoint p = new Point(3, -4);\nPoint q = null;\nString s = \"P=\" + p + \" Q=\" + q;\nSystem.out.println(s);\nSystem.out.println(p);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A `NullPointerException` is thrown.",
+        "isCorrect": false,
+        "explanation": "Concatenating a `null` reference with a string does not throw: it appends the text \"null\". An exception would occur only if a method were called on `q`."
+      },
+      {
+        "label": "B",
+        "text": "P=(3,-4) Q=(null)\n(3,-4)",
+        "isCorrect": false,
+        "explanation": "A `null` reference is converted to the text `null`, with no parentheses; `toString` is not called on `null`."
+      },
+      {
+        "label": "C",
+        "text": "P=(3,-4) Q=null\n(3,-4)",
+        "isCorrect": true,
+        "explanation": "In `\"P=\" + p`, `p.toString()` is called implicitly, giving (3,-4). A `null` reference is converted to the text \"null\". `println(p)` also uses `toString`."
+      },
+      {
+        "label": "D",
+        "text": "P=(3,-4) Q=null",
+        "isCorrect": false,
+        "explanation": "This leaves out the second line. `System.out.println(p)` also calls `p.toString()` and prints `(3,-4)`."
+      }
+    ],
+    "explanation": "Concatenation and `println` call `toString()` on objects automatically, and print `null` for a null reference.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/anatomy-of-a-class",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-39",
+    "unit": "unit-5-writing-classes",
+    "topic": "static-variables-and-methods",
+    "difficulty": "hard",
+    "stem": "Consider the following class.\n\n```java\npublic class T {\n    private int n = 3;\n\n    public static int get() {\n        return n;\n    }\n}\n```\n\nWhich of the following best describes the result of compiling this class?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It does not compile, because a `static` method cannot refer to an instance variable.",
+        "isCorrect": true,
+        "explanation": "A `static` method belongs to the class and runs without any particular object, so it has no `n` to refer to. The compiler reports that a non-static variable cannot be referenced from a static context."
+      },
+      {
+        "label": "B",
+        "text": "It compiles, and `T.get()` returns 3.",
+        "isCorrect": false,
+        "explanation": "There is no object whose `n` could be returned; the compiler rejects the code."
+      },
+      {
+        "label": "C",
+        "text": "It compiles, and `T.get()` returns 0.",
+        "isCorrect": false,
+        "explanation": "The method does not compile, so it can't return anything."
+      },
+      {
+        "label": "D",
+        "text": "It does not compile, because `n` is `private` and cannot be accessed within the class.",
+        "isCorrect": false,
+        "explanation": "A `private` member is accessible anywhere inside its own class. The problem is the `static` context."
+      }
+    ],
+    "explanation": "Instance variables belong to objects; a `static` method has no object to read them from.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/static-variables-and-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-40",
+    "unit": "unit-5-writing-classes",
+    "topic": "anatomy-of-a-class",
+    "difficulty": "hard",
+    "stem": "Consider the following class.\n\n```java\npublic class T {\n    private final int x;\n\n    public T(int x) {\n        this.x = x;\n    }\n\n    public void bump() {\n        x++;\n    }\n}\n```\n\nWhich of the following best describes the result of compiling this class?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It does not compile, because the `final` variable `x` is modified in `bump`.",
+        "isCorrect": true,
+        "explanation": "A `final` instance variable can be assigned only once, in its declaration or in a constructor. `x++` assigns it again, which is a compile-time error."
+      },
+      {
+        "label": "B",
+        "text": "It does not compile, because the constructor assigns `x`.",
+        "isCorrect": false,
+        "explanation": "Assigning a `final` instance variable in the constructor is allowed; it is the standard way to initialize it."
+      },
+      {
+        "label": "C",
+        "text": "It compiles, and `bump` increments `x`.",
+        "isCorrect": false,
+        "explanation": "`final` means that the variable cannot be reassigned after it has been given a value."
+      },
+      {
+        "label": "D",
+        "text": "It compiles, but `bump` throws an exception when it is called.",
+        "isCorrect": false,
+        "explanation": "The error is detected at compile time, not at run time."
+      }
+    ],
+    "explanation": "A `final` instance variable may be assigned only when the object is constructed.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/anatomy-of-a-class",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-41",
+    "unit": "unit-5-writing-classes",
+    "topic": "writing-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Pair {\n    private int first, second;\n    public Pair(int f, int s) { first = f; second = s; }\n    public int getFirst() { return first; }\n    public int getSecond() { return second; }\n    public void set(int f, int s) { first = f; second = s; }\n}\n\npublic static void swap(int x, int y) { int t = x; x = y; y = t; }\npublic static void swap(Pair p) { int t = p.getFirst(); p.set(p.getSecond(), t); }\n```\n\n```java\nint a = 3, b = 8;\nswap(a, b);\nPair p = new Pair(3, 8);\nswap(p);\nSystem.out.println(a + \" \" + b + \" \" + p.getFirst() + \" \" + p.getSecond());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "8 3 8 3",
+        "isCorrect": false,
+        "explanation": "This assumes the `int` version swaps the caller's variables. Parameters are copies of the values, so `swap(a, b)` leaves `a` and `b` unchanged."
+      },
+      {
+        "label": "B",
+        "text": "3 8 8 3",
+        "isCorrect": true,
+        "explanation": "`swap(int, int)` swaps only its own parameter copies, so `a` and `b` stay 3 and 8. `swap(Pair)` changes the fields of the shared object through its reference, so the pair becomes (8, 3)."
+      },
+      {
+        "label": "C",
+        "text": "8 3 3 8",
+        "isCorrect": false,
+        "explanation": "This reverses the effects. The `int` swap changes only local copies, and the `Pair` swap changes the object."
+      },
+      {
+        "label": "D",
+        "text": "3 8 3 8",
+        "isCorrect": false,
+        "explanation": "This assumes the `Pair` version has no effect. `swap(Pair)` calls `set` on the object the caller passed, which changes the object itself."
+      }
+    ],
+    "explanation": "Primitive arguments are copied; object arguments are references, so a method can change the object they refer to.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/writing-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-42",
+    "unit": "unit-5-writing-classes",
+    "topic": "writing-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Date {\n    private int month, day;\n    public Date(int m, int d) { month = m; day = d; }\n    public boolean isBefore(Date other) {\n        return month < other.month || day < other.day;\n    }\n}\n```\n\n```java\nDate a = new Date(3, 15);\nDate b = new Date(5, 10);\nSystem.out.println(a.isBefore(b) + \" \" + b.isBefore(a));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "true true",
+        "isCorrect": true,
+        "explanation": "`a.isBefore(b)`: 3 < 5 is true. `b.isBefore(a)`: 5 < 3 is false, but `day < other.day` is 10 < 15, which is true, so the result is true. The method wrongly reports each date as before the other."
+      },
+      {
+        "label": "B",
+        "text": "false true",
+        "isCorrect": false,
+        "explanation": "March 15 is before May 10, and the `month < other.month` test is true for `a.isBefore(b)`, so that call is true."
+      },
+      {
+        "label": "C",
+        "text": "true false",
+        "isCorrect": false,
+        "explanation": "This is what a correct `isBefore` would print. The code compares the days even when the months differ, so it is wrong: `b.isBefore(a)` is true because 10 < 15."
+      },
+      {
+        "label": "D",
+        "text": "false false",
+        "isCorrect": false,
+        "explanation": "Both calls are true: `a.isBefore(b)` because 3 < 5, and `b.isBefore(a)` because the second test, `day < other.day`, compares 10 < 15."
+      }
+    ],
+    "explanation": "A date comparison must compare the days only when the months are equal.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/writing-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-43",
+    "unit": "unit-5-writing-classes",
+    "topic": "constructors",
+    "difficulty": "hard",
+    "stem": "Consider the following class and statement.\n\n```java\npublic class Foo {\n    private int v;\n\n    public Foo(int v) {\n        this.v = v;\n    }\n}\n```\n\n```java\nFoo f = new Foo();\n```\n\nWhich of the following best describes the result of the statement?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It compiles but throws an exception at run time.",
+        "isCorrect": false,
+        "explanation": "The problem is detected at compile time."
+      },
+      {
+        "label": "B",
+        "text": "It does not compile, because the class has no constructor with no parameters.",
+        "isCorrect": true,
+        "explanation": "Java supplies a default no-argument constructor only when a class declares no constructors at all. `Foo` declares one with a parameter, so `new Foo()` has no matching constructor."
+      },
+      {
+        "label": "C",
+        "text": "It compiles, and `v` is set to `null`.",
+        "isCorrect": false,
+        "explanation": "`v` is an `int`, and the code does not compile in any case."
+      },
+      {
+        "label": "D",
+        "text": "It compiles, and `v` is set to 0.",
+        "isCorrect": false,
+        "explanation": "There is no default constructor to run, since the class has declared its own constructor."
+      }
+    ],
+    "explanation": "The default constructor exists only when no constructor is written.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/constructors",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-44",
+    "unit": "unit-5-writing-classes",
+    "topic": "anatomy-of-a-class",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Defaults {\n    int a;\n    double b;\n    boolean c;\n    String d;\n    int[] e;\n}\n```\n\n```java\nDefaults d = new Defaults();\nSystem.out.println(d.a + \" \" + d.b + \" \" + d.c + \" \" + d.d + \" \" + d.e);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0 0.0 false  null",
+        "isCorrect": false,
+        "explanation": "An uninitialized `String` is `null`, not an empty string, so the output contains the text \"null\"."
+      },
+      {
+        "label": "B",
+        "text": "0 0.0 true null null",
+        "isCorrect": false,
+        "explanation": "A `boolean` instance variable defaults to `false`."
+      },
+      {
+        "label": "C",
+        "text": "0 0 false null null",
+        "isCorrect": false,
+        "explanation": "A `double` instance variable is initialized to 0.0, which is printed with its decimal point."
+      },
+      {
+        "label": "D",
+        "text": "0 0.0 false null null",
+        "isCorrect": true,
+        "explanation": "Instance variables get default values: 0 for `int`, 0.0 for `double`, `false` for `boolean`, and `null` for every reference type (`String`, arrays)."
+      }
+    ],
+    "explanation": "Unlike local variables, instance variables are given default values when an object is created.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/anatomy-of-a-class",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-mcq-45",
+    "unit": "unit-5-writing-classes",
+    "topic": "writing-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass Counter {\n    private int n = 0;\n    public Counter inc() { n++; return this; }\n    public Counter add(int k) { n += k; return this; }\n    public int get() { return n; }\n}\n```\n\n```java\nCounter c = new Counter();\nint r = c.inc().inc().add(5).get();\nCounter d = c.inc();\nSystem.out.println(r + \" \" + c.get() + \" \" + (c == d));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1 1 false",
+        "isCorrect": false,
+        "explanation": "Each method modifies and returns the same object, so the calls accumulate: 1 + 1 + 5 = 7."
+      },
+      {
+        "label": "B",
+        "text": "7 8 false",
+        "isCorrect": false,
+        "explanation": "`inc` returns `this`, the same object, so `d` and `c` are references to one object and `c == d` is true."
+      },
+      {
+        "label": "C",
+        "text": "7 7 true",
+        "isCorrect": false,
+        "explanation": "`d = c.inc()` increments `c` too (it returns the same object), so `c.get()` is 8."
+      },
+      {
+        "label": "D",
+        "text": "7 8 true",
+        "isCorrect": true,
+        "explanation": "Every call changes the same object and returns it, so the chain gives 0 + 1 + 1 + 5 = 7, which is stored in `r`. Then `c.inc()` makes the count 8 and returns `this`, so `d` is the same object as `c`."
+      }
+    ],
+    "explanation": "A method that returns `this` allows chaining; all the calls act on the same object.",
+    "conceptLink": "ap-csa/unit-5-writing-classes/writing-methods",
+    "reviewed": false
+  }
+]

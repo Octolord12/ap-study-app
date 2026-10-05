@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ap-csa-u2-frq-4",
+    "unit": "unit-2-using-objects",
+    "topic": "string-objects",
+    "prompt": "The class `TextTools` contains the two methods described below.\n\n```java\npublic class TextTools {\n    /** Returns a String containing the characters of str, in their original order,\n     *  with every vowel (a, e, i, o, u, in either upper or lower case) removed. */\n    public static String removeVowels(String str)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns the number of times sub appears in str. Occurrences may overlap.\n     *  Precondition: sub.length() > 0 */\n    public static int countSub(String str, String sub)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `removeVowels`. For example, `removeVowels(\"Programming\")` returns `\"Prgrmmng\"`, and `removeVowels(\"AEIOU\")` returns the empty string.\n\n**(b)** Write the method `countSub`. The only `String` methods you may use are `length`, `substring`, `indexOf` (either form) and `equals`. For example, `countSub(\"banana\", \"ana\")` returns 2 (the occurrences start at indexes 1 and 3), `countSub(\"aaaa\", \"aa\")` returns 3 and `countSub(\"abc\", \"x\")` returns 0.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Traverses every character (index) of `str`"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Isolates each character correctly (`charAt` or `substring(i, i + 1)`)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Tests for a vowel in either case"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(a) Builds the result with only the non-vowels, in order, and returns it"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Finds an occurrence with `indexOf` and loops until none is found (`-1`)"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Searches again from an index that allows overlapping matches (`pos + 1`, not `pos + sub.length()`)"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Counts each match and returns the count"
+      }
+    ],
+    "sampleResponse": "```java\npublic static String removeVowels(String str) {\n    String result = \"\";\n    for (int i = 0; i < str.length(); i++) {\n        String ch = str.substring(i, i + 1);\n        if (\"aeiouAEIOU\".indexOf(ch) < 0) {\n            result += ch;\n        }\n    }\n    return result;\n}\n\npublic static int countSub(String str, String sub) {\n    int count = 0;\n    int pos = str.indexOf(sub);\n    while (pos >= 0) {\n        count++;\n        pos = str.indexOf(sub, pos + 1);\n    }\n    return count;\n}\n```\nIn (b), searching again from `pos + 1` (not `pos + sub.length()`) is what lets overlapping matches be counted.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u2-frq-5",
+    "unit": "unit-2-using-objects",
+    "topic": "calling-methods",
+    "prompt": "The `Rectangle` class is shown below. You may assume it is already written and works as described.\n\n```java\npublic class Rectangle {\n    public Rectangle(double w, double h)      // creates a w by h rectangle\n    public double getWidth()\n    public double getHeight()\n    public double area()                      // width times height\n    public Rectangle scaled(double factor)    // returns a NEW rectangle whose width and\n                                              // height are each multiplied by factor\n}\n```\n\nThe class `RectTools` contains the three static methods described below. You may not change any `Rectangle` object that is passed to a method.\n\n```java\npublic class RectTools {\n    /** Returns whichever of a and b has the greater area. If the areas are equal, returns a. */\n    public static Rectangle larger(Rectangle a, Rectangle b)\n    { /* to be implemented in part (a) */ }\n\n    /** Returns a new Rectangle that could hold a on top of b: its width is the greater\n     *  of the two widths and its height is the sum of the two heights. */\n    public static Rectangle stacked(Rectangle a, Rectangle b)\n    { /* to be implemented in part (b) */ }\n\n    /** Returns a new Rectangle with the same shape as r (the same ratio of width to height)\n     *  whose area is targetArea. Precondition: r.area() > 0 and targetArea > 0 */\n    public static Rectangle scaleToArea(Rectangle r, double targetArea)\n    { /* to be implemented in part (c) */ }\n}\n```\n\n**(a)** Write the method `larger`.\n\n**(b)** Write the method `stacked`.\n\n**(c)** Write the method `scaleToArea`. For example, if `r` is a 2 by 3 rectangle, then `scaleToArea(r, 24)` returns a 4 by 6 rectangle.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Compares the areas by calling `area()` on both rectangles"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Returns the correct rectangle reference, `a` when the areas are equal"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Creates and returns a new `Rectangle` with the `Rectangle` constructor"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Uses the greater width (`Math.max` or equivalent) and the sum of the heights"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Computes the scale factor as the square root of `targetArea / r.area()`"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(c) Returns a new scaled rectangle (using `scaled` or the constructor) without modifying `r`"
+      }
+    ],
+    "sampleResponse": "```java\npublic static Rectangle larger(Rectangle a, Rectangle b) {\n    if (b.area() > a.area()) {\n        return b;\n    }\n    return a;\n}\n\npublic static Rectangle stacked(Rectangle a, Rectangle b) {\n    return new Rectangle(Math.max(a.getWidth(), b.getWidth()), a.getHeight() + b.getHeight());\n}\n\npublic static Rectangle scaleToArea(Rectangle r, double targetArea) {\n    return r.scaled(Math.sqrt(targetArea / r.area()));\n}\n```\nScaling both sides by a factor `k` multiplies the area by $k^2$, so to reach `targetArea` the factor is $k=\\sqrt{\\text{targetArea}/\\text{area}}$.",
+    "reviewed": false
+  }
+]

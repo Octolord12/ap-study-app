@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-csa-u7-mcq-31",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<Integer> list = new ArrayList<Integer>();\nint[] vals = {1, 2, 2, 3, 2, 4, 2, 2};\nfor (int v : vals)\n    list.add(v);\nfor (int i = 0; i < list.size(); i++) {\n    if (list.get(i) == 2)\n        list.remove(i);\n}\nSystem.out.println(list);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[1, 2, 3, 4, 2]",
+        "isCorrect": true,
+        "explanation": "After a removal the later elements shift one position to the left, but `i` still increments, so the element that moved into position `i` is skipped. Consecutive 2s are therefore not all removed: the list ends as [1, 2, 3, 4, 2]."
+      },
+      {
+        "label": "B",
+        "text": "[1, 3, 4, 2, 2]",
+        "isCorrect": false,
+        "explanation": "This assumes that each removal deletes the *first* 2 in the list. The code calls `remove(int index)`, which removes the element at position `i`."
+      },
+      {
+        "label": "C",
+        "text": "[1, 3, 4, 2]",
+        "isCorrect": false,
+        "explanation": "This assumes only the last 2 survives. After each removal the elements shift left, and the loop then moves on to the next index, skipping the element that moved into position `i`."
+      },
+      {
+        "label": "D",
+        "text": "[1, 3, 4]",
+        "isCorrect": false,
+        "explanation": "This is what you get by traversing from the end. Going backward, a removal shifts only elements that have already been checked, so every 2 is removed."
+      }
+    ],
+    "explanation": "When removing while traversing forward, either decrement the index after a removal or traverse the list from the end.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-32",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<String> a = new ArrayList<String>();\na.add(\"A\");\na.add(\"B\");\na.add(1, \"C\");\nString old = a.set(0, \"D\");\na.add(a.size(), \"E\");\nString gone = a.remove(2);\nSystem.out.println(a + \" \" + old + \" \" + gone + \" \" + a.size());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[D, C, E] A B 3",
+        "isCorrect": true,
+        "explanation": "After the adds, the list is [A, C, B] (C is inserted at index 1). `set(0, \"D\")` replaces A and returns it: [D, C, B]. `add(3, \"E\")` appends. `remove(2)` removes and returns B, leaving [D, C, E]."
+      },
+      {
+        "label": "B",
+        "text": "[D, C, E] D B 3",
+        "isCorrect": false,
+        "explanation": "`set(0, \"D\")` returns the value that was replaced, \"A\", not the new value."
+      },
+      {
+        "label": "C",
+        "text": "[D, B, E] A C 3",
+        "isCorrect": false,
+        "explanation": "This removes index 1 instead of index 2. After the earlier operations the list is [D, C, B, E], so index 2 is \"B\"."
+      },
+      {
+        "label": "D",
+        "text": "[D, C] A E 2",
+        "isCorrect": false,
+        "explanation": "This treats `add(1, \"C\")` as a replacement. `add(index, element)` inserts and shifts the later elements to the right, so the list grows."
+      }
+    ],
+    "explanation": "`add(i, x)` inserts and shifts, `set` replaces and returns the old value, and `remove(i)` removes and returns the element.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-33",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<Integer> a = new ArrayList<Integer>();\nfor (int v : new int[] {10, 20, 30, 1, 2})\n    a.add(v);\na.remove(1);\na.remove(Integer.valueOf(1));\nSystem.out.println(a + \" \" + a.indexOf(30) + \" \" + a.contains(20));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[10, 30, 1, 2] 1 false",
+        "isCorrect": false,
+        "explanation": "This stops after the first removal. The second call, `remove(Integer.valueOf(1))`, also removes the value 1."
+      },
+      {
+        "label": "B",
+        "text": "[10, 20, 30, 2] 2 true",
+        "isCorrect": false,
+        "explanation": "This reads `a.remove(1)` as removing the value 1. With an `int` argument, `remove` removes the element at *index* 1 (the 20), not the value 1."
+      },
+      {
+        "label": "C",
+        "text": "[10, 30, 2] 1 false",
+        "isCorrect": true,
+        "explanation": "`a.remove(1)` removes the element at index 1 (20), leaving [10, 30, 1, 2]. `a.remove(Integer.valueOf(1))` removes the value 1, leaving [10, 30, 2]. Then 30 is at index 1, and 20 is no longer in the list."
+      },
+      {
+        "label": "D",
+        "text": "[10, 1, 2] -1 false",
+        "isCorrect": false,
+        "explanation": "This makes both calls remove by index. The second call passes an `Integer` object, which removes the first element equal to 1."
+      }
+    ],
+    "explanation": "On an `ArrayList<Integer>`, `remove(int)` removes by index and `remove(Object)` removes by value; an `Integer` argument selects the second.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-34",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<String> a = new ArrayList<String>();\nArrayList<String> b = a;\nb.add(\"x\");\nArrayList<String> c = new ArrayList<String>(a);\nc.add(\"y\");\na.add(\"z\");\nSystem.out.println(a.size() + \" \" + b.size() + \" \" + c.size() + \" \" + (a == b) + \" \" + a.equals(c) + \" \" + c);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2 2 2 true false [x, y]",
+        "isCorrect": true,
+        "explanation": "`b` refers to the same list as `a`, so `b.add(\"x\")` is seen through `a`. `new ArrayList<String>(a)` makes an independent copy [x]; adding \"y\" to `c` does not affect `a`, and adding \"z\" to `a` does not affect `c`. `a` and `b` have size 2, `c` is [x, y], and `a.equals(c)` is false because [x, z] differs from [x, y]."
+      },
+      {
+        "label": "B",
+        "text": "2 2 2 true true [x, y]",
+        "isCorrect": false,
+        "explanation": "`a` is [x, z] and `c` is [x, y]; they have the same size but different contents, so `a.equals(c)` is false."
+      },
+      {
+        "label": "C",
+        "text": "2 1 2 true false [x, y]",
+        "isCorrect": false,
+        "explanation": "`b = a` copies the reference, so `a` and `b` are one list and always have the same size."
+      },
+      {
+        "label": "D",
+        "text": "1 1 2 true false [x, y]",
+        "isCorrect": false,
+        "explanation": "This leaves out `a.add(\"z\")`. `a` and `b` are the same list, so after the last statement both have size 2."
+      }
+    ],
+    "explanation": "Assigning a list variable copies the reference; the copy constructor creates an independent list.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-35",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<Integer> a = new ArrayList<Integer>();\nfor (int v : new int[] {2, 5, 9, 12})\n    a.add(v);\nint x = 7;\nint i = 0;\nwhile (i < a.size() && a.get(i) < x)\n    i++;\na.add(i, x);\nint y = 1;\ni = 0;\nwhile (i < a.size() && a.get(i) < y)\n    i++;\na.add(i, y);\nSystem.out.println(a);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[2, 5, 7, 9, 12, 1]",
+        "isCorrect": false,
+        "explanation": "This inserts 7 correctly but puts 1 at the end. For 1, the `while` loop stops immediately at index 0, because 2 is not less than 1, so 1 is inserted at the front."
+      },
+      {
+        "label": "B",
+        "text": "[1, 2, 5, 9, 7, 12]",
+        "isCorrect": false,
+        "explanation": "This inserts 7 one position too late. The loop stops at the first element that is not less than 7, which is 9 at index 3, so 7 goes before it."
+      },
+      {
+        "label": "C",
+        "text": "[2, 5, 9, 12, 7, 1]",
+        "isCorrect": false,
+        "explanation": "This appends both values. The loops find the position where each value belongs, and `add(i, value)` inserts it there."
+      },
+      {
+        "label": "D",
+        "text": "[1, 2, 5, 7, 9, 12]",
+        "isCorrect": true,
+        "explanation": "For 7 the loop advances past 2 and 5 and stops at index 2 (9 is not less than 7), so 7 is inserted there: [2, 5, 7, 9, 12]. For 1 the loop stops at index 0, so 1 is inserted first: [1, 2, 5, 7, 9, 12]."
+      }
+    ],
+    "explanation": "Walk the sorted list until the first element that is not smaller than the new value, and insert at that index. The `i < a.size()` test comes first to avoid going past the end.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-36",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<String> w = new ArrayList<String>();\nfor (String s : new String[] {\"a\", \"a\", \"b\", \"b\", \"b\", \"c\", \"a\"})\n    w.add(s);\nfor (int i = w.size() - 1; i > 0; i--) {\n    if (w.get(i).equals(w.get(i - 1)))\n        w.remove(i);\n}\nSystem.out.println(w);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[a, a, b, b, b, c, a]",
+        "isCorrect": false,
+        "explanation": "The loop does remove consecutive duplicates; the list does not stay unchanged."
+      },
+      {
+        "label": "B",
+        "text": "[a, b, c]",
+        "isCorrect": false,
+        "explanation": "This removes *every* duplicate, including the last \"a\". The code compares each element only with the one just before it, so the final \"a\" (next to \"c\") stays."
+      },
+      {
+        "label": "C",
+        "text": "[a, b, c, a]",
+        "isCorrect": true,
+        "explanation": "Going backward, each element equal to the one before it is removed: the repeated \"b\"s collapse to one and the repeated \"a\" collapses to one. The last \"a\" follows a \"c\", so it stays: [a, b, c, a]."
+      },
+      {
+        "label": "D",
+        "text": "[a, b, b, c, a]",
+        "isCorrect": false,
+        "explanation": "This traverses forward, so after a removal the next element is skipped, and one duplicate \"b\" survives. The original loop goes backward."
+      }
+    ],
+    "explanation": "Removing duplicates of adjacent elements is safest when traversing from the end, because removals shift only elements that have already been examined.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-37",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<Integer> a = new ArrayList<Integer>();\nfor (int v : new int[] {1, 2, 3, 4, 5})\n    a.add(v);\nfor (int i = 0; i < a.size() / 2; i++) {\n    int t = a.get(i);\n    a.set(i, a.get(a.size() - 1 - i));\n    a.set(a.size() - 1 - i, t);\n}\nSystem.out.println(a);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[5, 2, 3, 4, 1]",
+        "isCorrect": false,
+        "explanation": "This stops after one swap. For size 5, `a.size() / 2` is 2, so the positions 1 and 3 are swapped as well."
+      },
+      {
+        "label": "B",
+        "text": "[5, 4, 3, 4, 5]",
+        "isCorrect": false,
+        "explanation": "This leaves out the temporary variable. Without `t`, the first `set` overwrites a value before it can be copied to the other position."
+      },
+      {
+        "label": "C",
+        "text": "[1, 2, 3, 4, 5]",
+        "isCorrect": false,
+        "explanation": "This swaps every pair twice, which restores the original order. The loop must stop at the middle."
+      },
+      {
+        "label": "D",
+        "text": "[5, 4, 3, 2, 1]",
+        "isCorrect": true,
+        "explanation": "Two swaps (i = 0 and i = 1) exchange positions 0 and 4, and positions 1 and 3; the middle element stays: [5, 4, 3, 2, 1]."
+      }
+    ],
+    "explanation": "Reversing a list in place swaps symmetric pairs and uses a temporary variable (or the value returned by `set`).",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-38",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<Integer> a = new ArrayList<Integer>();\na.add(4); a.add(5); a.add(6);\nString out = \"\";\ntry { a.add(3, 7); out += \"A\" + a.size(); } catch (IndexOutOfBoundsException e) { out += \"X\"; }\ntry { a.add(5, 8); out += \"B\" + a.size(); } catch (IndexOutOfBoundsException e) { out += \"Y\"; }\ntry { a.get(a.size()); out += \"C\"; } catch (IndexOutOfBoundsException e) { out += \"Z\"; }\ntry { a.set(a.size() - 1, 0); out += \"D\"; } catch (IndexOutOfBoundsException e) { out += \"W\"; }\nSystem.out.println(out);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A4YZD",
+        "isCorrect": true,
+        "explanation": "`add(3, 7)` on a list of size 3 is allowed (index equal to the size), so the list has size 4 and the first block prints A4. `add(5, 8)` is beyond the size, so Y. `get(4)` is out of bounds on a list of size 4: Z. `set(3, 0)` is the last valid index, so D."
+      },
+      {
+        "label": "B",
+        "text": "XYZD",
+        "isCorrect": false,
+        "explanation": "`add(index, element)` allows an index equal to the size (it appends), so `a.add(3, 7)` on a list of size 3 succeeds."
+      },
+      {
+        "label": "C",
+        "text": "A4YCD",
+        "isCorrect": false,
+        "explanation": "`get(a.size())` is out of bounds. For `get` and `set`, valid indexes are 0 through size - 1."
+      },
+      {
+        "label": "D",
+        "text": "A4B5ZD",
+        "isCorrect": false,
+        "explanation": "`add(5, 8)` on a list of size 4 is out of range: valid indexes for `add` are 0 through the size."
+      }
+    ],
+    "explanation": "`add(i, x)` accepts 0 through `size()`; `get(i)`, `set(i, x)` and `remove(i)` accept 0 through `size() - 1`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-39",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<Integer> in = new ArrayList<Integer>();\nfor (int v : new int[] {5, 12, 7, 20, 3, 18})\n    in.add(v);\nArrayList<Integer> out = new ArrayList<Integer>();\nfor (int i = 0; i < in.size(); i++)\n    if (in.get(i) % 2 == 0 || i == 0)\n        out.add(in.get(i) / 2);\nin.set(0, -1);\nSystem.out.println(out + \" \" + in);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[5, 12, 20, 18] [-1, 12, 7, 20, 3, 18]",
+        "isCorrect": false,
+        "explanation": "This leaves out the division by 2. The code adds `in.get(i) / 2`, which for the first element 5 is integer division, 2."
+      },
+      {
+        "label": "B",
+        "text": "[2, 6, 10, 9] [5, 12, 7, 20, 3, 18]",
+        "isCorrect": false,
+        "explanation": "This assumes `set` has no effect. `in.set(0, -1)` replaces the first element of `in`."
+      },
+      {
+        "label": "C",
+        "text": "[2, 6, 10, 9] [-1, 12, 7, 20, 3, 18]",
+        "isCorrect": true,
+        "explanation": "Indexes 1 (12), 3 (20) and 5 (18) are even, and index 0 is included by `i == 0`; halved with integer division they give 2, 6, 10, 9. The later `in.set(0, -1)` changes only `in`, not `out`."
+      },
+      {
+        "label": "D",
+        "text": "[6, 10, 9] [-1, 12, 7, 20, 3, 18]",
+        "isCorrect": false,
+        "explanation": "This leaves out the first element. The condition has `|| i == 0`, so index 0 is included even though 5 is odd."
+      }
+    ],
+    "explanation": "Values added to a second list are independent of later changes to the first list when the elements are immutable `Integer` objects.",
+    "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-40",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<Integer> a = new ArrayList<Integer>();\nArrayList<Integer> b = new ArrayList<Integer>();\nfor (int v : new int[] {1, 4, 6}) a.add(v);\nfor (int v : new int[] {2, 3, 7, 9}) b.add(v);\nArrayList<Integer> m = new ArrayList<Integer>();\nint i = 0, j = 0;\nwhile (i < a.size() && j < b.size()) {\n    if (a.get(i) <= b.get(j)) { m.add(a.get(i)); i++; }\n    else { m.add(b.get(j)); j++; }\n}\nwhile (i < a.size()) { m.add(a.get(i)); i++; }\nSystem.out.println(m + \" \" + i + \" \" + j);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[1, 2, 3, 4, 6] 3 2",
+        "isCorrect": true,
+        "explanation": "The merge loop takes 1, 2, 3, 4, 6 in order and ends when `a` is exhausted (i = 3, j = 2). The remaining loop copies leftovers of `a`, but `a` has none; the leftovers of `b` (7 and 9) are never copied."
+      },
+      {
+        "label": "B",
+        "text": "[1, 2, 3, 4, 6] 3 4",
+        "isCorrect": false,
+        "explanation": "`j` is 2 when the loop ends, because the loop stops as soon as `a` is exhausted, before 7 and 9 are examined."
+      },
+      {
+        "label": "C",
+        "text": "[1, 2, 3, 4, 6, 7, 9] 3 4",
+        "isCorrect": false,
+        "explanation": "This assumes the leftover elements of `b` (7 and 9) are appended. The code has a loop for the leftover elements of `a` only, so they are never added to `m`."
+      },
+      {
+        "label": "D",
+        "text": "[1, 2, 3, 4] 2 2",
+        "isCorrect": false,
+        "explanation": "The first loop continues until one list is exhausted. It stops only when `a` is used up (i = 3), so 6 is added too."
+      }
+    ],
+    "explanation": "A merge needs a final loop for the leftovers of *each* list; this code has only one, so elements are lost.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-41",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<String> words = new ArrayList<String>();\nfor (String s : new String[] {\"to\", \"be\", \"or\", \"not\", \"to\", \"be\"})\n    words.add(s);\nArrayList<String> seen = new ArrayList<String>();\nint dup = 0;\nfor (String w : words) {\n    if (seen.contains(w))\n        dup++;\n    else\n        seen.add(w);\n}\nSystem.out.println(seen + \" \" + dup);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[to, be, or, not] 6",
+        "isCorrect": false,
+        "explanation": "This counts every word as a duplicate. In the original, `dup++` is only the `if` branch, which runs when the word has been seen."
+      },
+      {
+        "label": "B",
+        "text": "[to, be, or, not] 2",
+        "isCorrect": true,
+        "explanation": "`seen` collects each word the first time it appears: to, be, or, not. The second \"to\" and the second \"be\" are already in `seen`, so `dup` is 2."
+      },
+      {
+        "label": "C",
+        "text": "[to, be, or, not, to, be] 0",
+        "isCorrect": false,
+        "explanation": "This assumes `seen.contains(w)` is always false. After \"to\" and \"be\" are added to `seen`, their second occurrences are found."
+      },
+      {
+        "label": "D",
+        "text": "[to, be, or, not] 4",
+        "isCorrect": false,
+        "explanation": "There are only two repeated words (\"to\" and \"be\"), so `dup` is 2."
+      }
+    ],
+    "explanation": "`contains` uses `equals` to look for a matching element, so identical strings are found.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-42",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nclass P {\n    private int x;\n    public P(int x) { this.x = x; }\n}\nclass Q {\n    private int x;\n    public Q(int x) { this.x = x; }\n    public boolean equals(Object o) { return o instanceof Q && ((Q) o).x == x; }\n}\n```\n\n```java\nArrayList<P> ps = new ArrayList<P>();\nps.add(new P(1));\nArrayList<Q> qs = new ArrayList<Q>();\nqs.add(new Q(1));\nP keep = new P(2);\nps.add(keep);\nSystem.out.println(ps.contains(new P(1)) + \" \" + qs.contains(new Q(1)) + \" \" + ps.contains(keep) + \" \" + ps.indexOf(keep) + \" \" + qs.indexOf(new Q(9)));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "false false true 1 -1",
+        "isCorrect": false,
+        "explanation": "`Q` overrides `equals` to compare the field `x`, so a different `Q(1)` object is found by `contains`."
+      },
+      {
+        "label": "B",
+        "text": "false true false 1 -1",
+        "isCorrect": false,
+        "explanation": "`ps.contains(keep)` is true: the list holds the same object that was added (the reference is equal)."
+      },
+      {
+        "label": "C",
+        "text": "true true true 1 -1",
+        "isCorrect": false,
+        "explanation": "`P` does not override `equals`, so `contains` and `indexOf` compare references. A new `P(1)` is a different object from the one in the list."
+      },
+      {
+        "label": "D",
+        "text": "false true true 1 -1",
+        "isCorrect": true,
+        "explanation": "`ArrayList.contains` and `indexOf` use `equals`. `P` does not override it, so a new `P(1)` is not found, but the same object `keep` is. `Q` overrides `equals` to compare `x`, so `new Q(1)` is found, and `new Q(9)` is not (-1)."
+      }
+    ],
+    "explanation": "`contains` and `indexOf` rely on `equals`; without an override, objects are equal only if they are the same object.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-43",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-methods",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static void add2(ArrayList<String> l) {\n    l.add(\"y\");\n    l.add(\"z\");\n}\npublic static void reset(ArrayList<String> l) {\n    l = new ArrayList<String>();\n    l.add(\"new\");\n}\n```\n\n```java\nArrayList<String> list = new ArrayList<String>();\nlist.add(\"x\");\nadd2(list);\nreset(list);\nSystem.out.println(list + \" \" + list.size());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[x] 1",
+        "isCorrect": false,
+        "explanation": "`add2` changes the list that the caller passed, so the elements \"y\" and \"z\" are added."
+      },
+      {
+        "label": "B",
+        "text": "[x, y, z, new] 4",
+        "isCorrect": false,
+        "explanation": "`reset` creates a *new* list for its parameter, so \"new\" is added to that new list, not to the caller's."
+      },
+      {
+        "label": "C",
+        "text": "[new] 1",
+        "isCorrect": false,
+        "explanation": "This assumes `reset` replaces the caller's list. Assigning a new list to the parameter `l` changes only the local copy of the reference."
+      },
+      {
+        "label": "D",
+        "text": "[x, y, z] 3",
+        "isCorrect": true,
+        "explanation": "`add2` adds to the caller's list: [x, y, z]. In `reset`, the parameter `l` is made to refer to a new list, so the caller's list is unchanged."
+      }
+    ],
+    "explanation": "A method can modify the list it is passed, but reassigning the parameter does not change the caller's variable.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-methods",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-44",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nArrayList<Integer> a = new ArrayList<Integer>();\nfor (int v : new int[] {3, 1, 4, 1, 5})\n    a.add(v);\nfor (int i = 1; i < a.size(); i++)\n    a.set(i, a.get(i) + a.get(i - 1));\nfor (int i = a.size() - 1; i > 0; i--)\n    a.set(i, a.get(i) - a.get(i - 1));\na.add(0, a.remove(a.size() - 1));\nSystem.out.println(a);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "[1, 4, 1, 5, 3]",
+        "isCorrect": false,
+        "explanation": "This moves the *first* element to the end. The code removes the last element and inserts it at index 0, which rotates the list to the right."
+      },
+      {
+        "label": "B",
+        "text": "[5, 3, 1, 4, 1]",
+        "isCorrect": true,
+        "explanation": "The first loop turns the list into running totals [3, 4, 8, 9, 14]. The second loop, working from the end, subtracts each previous total to recover [3, 1, 4, 1, 5]. Finally the last element, 5, is removed and inserted at index 0: [5, 3, 1, 4, 1]."
+      },
+      {
+        "label": "C",
+        "text": "[3, 1, 4, 1, 5]",
+        "isCorrect": false,
+        "explanation": "The last statement rotates the list: the final 5 is removed and inserted at index 0, so the output does not match the original order."
+      },
+      {
+        "label": "D",
+        "text": "[12, 3, 1, 7, 2]",
+        "isCorrect": false,
+        "explanation": "This undoes the running totals from the front. Each subtraction then uses an element that has already been changed, so the original values are not recovered; the code works from the end."
+      }
+    ],
+    "explanation": "Prefix sums can be undone by subtracting from the end of the list. Removing the last element and inserting it at index 0 rotates the list right.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-mcq-45",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-intro",
+    "difficulty": "hard",
+    "stem": "Which of the following code segments compiles without error?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "`ArrayList<int> a = new ArrayList<int>();`",
+        "isCorrect": false,
+        "explanation": "The type argument must be a class: use the wrapper class `Integer` rather than the primitive type `int`."
+      },
+      {
+        "label": "B",
+        "text": "`ArrayList<Integer> a = new ArrayList<Integer>(); int n = a.length();`",
+        "isCorrect": false,
+        "explanation": "`length()` is a method of `String`. For an `ArrayList`, use `size()`."
+      },
+      {
+        "label": "C",
+        "text": "`ArrayList<Integer> a = new ArrayList<Integer>(); int n = a.size();`",
+        "isCorrect": true,
+        "explanation": "The number of elements in an `ArrayList` is given by the method `size()`, and `Integer` is the wrapper type used for `int` values in a list."
+      },
+      {
+        "label": "D",
+        "text": "`ArrayList<Integer> a = new ArrayList<Integer>(); int n = a.length;`",
+        "isCorrect": false,
+        "explanation": "`length` (without parentheses) belongs to arrays. An `ArrayList` has no `length` field."
+      }
+    ],
+    "explanation": "Array: `length`; `String`: `length()`; `ArrayList`: `size()`. An `ArrayList` holds objects, so `int` values use `Integer`.",
+    "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-csa-u8-mcq-31",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = new int[3][4];\ng[1][2] = 7;\ng[2][3] = g[1][2] + 1;\nSystem.out.println(g.length + \" \" + g[0].length + \" \" + g[1][2] + \" \" + g[2][3] + \" \" + g[0][0]);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3 3 7 8 0",
+        "isCorrect": false,
+        "explanation": "`g[0].length` is the length of a row, which is the number of columns, 4."
+      },
+      {
+        "label": "B",
+        "text": "3 4 7 7 0",
+        "isCorrect": false,
+        "explanation": "`g[2][3]` is set to `g[1][2] + 1`, which is 8."
+      },
+      {
+        "label": "C",
+        "text": "3 4 7 8 0",
+        "isCorrect": true,
+        "explanation": "`new int[3][4]` creates 3 rows with 4 columns each, so `g.length` is 3 and `g[0].length` is 4. `g[1][2]` is 7 and `g[2][3]` is 8. The untouched element `g[0][0]` is 0."
+      },
+      {
+        "label": "D",
+        "text": "4 3 7 8 0",
+        "isCorrect": false,
+        "explanation": "`g.length` is the number of rows (3) and `g[0].length` is the number of columns (4). `new int[3][4]` makes 3 rows of 4 elements."
+      }
+    ],
+    "explanation": "A 2D array is an array of rows: `g.length` counts rows, and `g[r].length` counts the columns in row `r`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-32",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\nint sum = 0;\nfor (int r = 0; r < g.length; r++)\n    for (int c = 0; c < g[r].length; c++)\n        if ((r + c) % 2 == 0)\n            sum += g[r][c] * (r + 1);\nSystem.out.println(sum);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "62",
+        "isCorrect": true,
+        "explanation": "The cells with r + c even are g[0][0]=1, g[0][2]=3, g[1][1]=5, g[2][0]=7 and g[2][2]=9. With weights r + 1: 1(1) + 3(1) + 5(2) + 7(3) + 9(3) = 1 + 3 + 10 + 21 + 27 = 62."
+      },
+      {
+        "label": "B",
+        "text": "25",
+        "isCorrect": false,
+        "explanation": "This leaves out the weights. Each element is multiplied by (r + 1): 1*1 + 3*1 + 5*2 + 7*3 + 9*3."
+      },
+      {
+        "label": "C",
+        "text": "54",
+        "isCorrect": false,
+        "explanation": "This weights each element by its column number. The weight in the code is the row number plus 1."
+      },
+      {
+        "label": "D",
+        "text": "46",
+        "isCorrect": false,
+        "explanation": "This sums the cells where r + c is odd. The code adds the cells where r + c is even: (0,0), (0,2), (1,1), (2,0) and (2,2)."
+      }
+    ],
+    "explanation": "Evaluate the condition for each (row, column) pair and apply the weight that depends on the row.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-33",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\nString s = \"\";\nfor (int c = 0; c < g[0].length; c++) {\n    for (int r = g.length - 1; r >= 0; r--)\n        s += g[r][c];\n    s += \"|\";\n}\nSystem.out.println(s);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "147|258|369|",
+        "isCorrect": false,
+        "explanation": "This reads each column from top to bottom. The inner loop starts at the last row and moves up."
+      },
+      {
+        "label": "B",
+        "text": "741|852|963|",
+        "isCorrect": true,
+        "explanation": "The outer loop chooses a column (0, 1, 2). The inner loop reads that column from the bottom row up: column 0 gives 7, 4, 1; column 1 gives 8, 5, 2; column 2 gives 9, 6, 3."
+      },
+      {
+        "label": "C",
+        "text": "321|654|987|",
+        "isCorrect": false,
+        "explanation": "This swaps the roles of the row and column indexes, so each group reads a row (backward) instead of a column."
+      },
+      {
+        "label": "D",
+        "text": "123|456|789|",
+        "isCorrect": false,
+        "explanation": "This reads the grid row by row. The outer loop here is over the columns, so each group is one column, read from the bottom up."
+      }
+    ],
+    "explanation": "In column-major traversal the outer loop is over columns and the inner loop is over rows.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-34",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] m = new int[4][4];\nfor (int r = 0; r < 4; r++)\n    for (int c = 0; c < 4; c++)\n        m[r][c] = r + 2 * c + r * c;\nint d1 = 0, d2 = 0;\nfor (int i = 0; i < 4; i++) {\n    d1 += m[i][i];\n    d2 += m[i][3 - i];\n}\nSystem.out.println(d1 + \" \" + d2);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "32 26",
+        "isCorrect": false,
+        "explanation": "The anti-diagonal elements are m[0][3] = 6, m[1][2] = 7, m[2][1] = 6 and m[3][0] = 3, which sum to 22."
+      },
+      {
+        "label": "B",
+        "text": "32 32",
+        "isCorrect": false,
+        "explanation": "This adds the main diagonal twice. The second sum uses the anti-diagonal, `m[i][3 - i]`."
+      },
+      {
+        "label": "C",
+        "text": "22 32",
+        "isCorrect": false,
+        "explanation": "This swaps the two sums. `d1` is the main diagonal (m[0][0], m[1][1], ...), which is 0 + 4 + 10 + 18 = 32, and `d2` is the anti-diagonal, 6 + 7 + 6 + 3 = 22."
+      },
+      {
+        "label": "D",
+        "text": "32 22",
+        "isCorrect": true,
+        "explanation": "The array holds r + 2c + rc. The main diagonal is 0, 4, 10, 18 (sum 32). The anti-diagonal elements m[i][3 - i] are 6, 7, 6, 3 (sum 22)."
+      }
+    ],
+    "explanation": "The main diagonal has `col == row`; the anti-diagonal of an n-by-n array has `col == n - 1 - row`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-35",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] j = new int[3][];\nfor (int i = 0; i < j.length; i++)\n    j[i] = new int[i + 1];\nj[2][1] = 5;\nint total = 0;\nfor (int[] row : j)\n    total += row.length;\nSystem.out.println(total + \" \" + j[0].length + \" \" + j[2].length + \" \" + j[2][1]);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "6 1 3 0",
+        "isCorrect": false,
+        "explanation": "`j[2][1] = 5` sets an element of row 2 (valid, because row 2 has 3 elements), so it prints 5."
+      },
+      {
+        "label": "B",
+        "text": "6 1 3 5",
+        "isCorrect": true,
+        "explanation": "Row `i` is created with `i + 1` elements: lengths 1, 2 and 3 (total 6). `j[0].length` is 1, `j[2].length` is 3, and `j[2][1]` was set to 5."
+      },
+      {
+        "label": "C",
+        "text": "6 3 1 5",
+        "isCorrect": false,
+        "explanation": "Row `i` has length `i + 1`, so `j[0].length` is 1 and `j[2].length` is 3."
+      },
+      {
+        "label": "D",
+        "text": "9 3 3 5",
+        "isCorrect": false,
+        "explanation": "This assumes a rectangular array. The rows were created with lengths 1, 2 and 3, so `j[0].length` is 1 and the total is 6."
+      }
+    ],
+    "explanation": "In a 2D array, each row is its own array and may have a different length.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-36",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = {{4, 1, 7}, {2, 9}, {5, 5, 5, 1}};\nint best = -1, bestSum = -1;\nfor (int r = 0; r < g.length; r++) {\n    int s = 0;\n    for (int x : g[r])\n        s += x;\n    if (s > bestSum) {\n        bestSum = s;\n        best = r;\n    }\n}\nSystem.out.println(best + \" \" + bestSum);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2 21",
+        "isCorrect": false,
+        "explanation": "This adds elements that do not exist. Row 2 has four elements, summing to 16, and the array is not rectangular."
+      },
+      {
+        "label": "B",
+        "text": "1 11",
+        "isCorrect": false,
+        "explanation": "Row 1 ({2, 9}) sums to 11, which is less than 16."
+      },
+      {
+        "label": "C",
+        "text": "2 16",
+        "isCorrect": true,
+        "explanation": "The row sums are 12, 11 and 16. The row with the largest sum is row 2, with 16."
+      },
+      {
+        "label": "D",
+        "text": "0 12",
+        "isCorrect": false,
+        "explanation": "This keeps the first row. Row 0 sums to 12, but row 2 sums to 5 + 5 + 5 + 1 = 16, which is larger."
+      }
+    ],
+    "explanation": "Each row can have a different length, so use `g[r].length` (or an enhanced `for` over the row) rather than a fixed number of columns.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-37",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\nfor (int r = 0; r < 3; r++)\n    for (int c = 0; c < 3; c++) {\n        int t = g[r][c];\n        g[r][c] = g[c][r];\n        g[c][r] = t;\n    }\nSystem.out.println(g[0][1] + \" \" + g[1][0] + \" \" + g[0][2] + \" \" + g[2][0]);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4 2 7 3",
+        "isCorrect": false,
+        "explanation": "This transposes the array by swapping each pair only once (for c > r). The code visits every pair twice, which swaps each pair back."
+      },
+      {
+        "label": "B",
+        "text": "2 4 7 3",
+        "isCorrect": false,
+        "explanation": "The elements g[0][2] and g[2][0] are also swapped twice, so they keep their original values 3 and 7."
+      },
+      {
+        "label": "C",
+        "text": "4 2 3 7",
+        "isCorrect": false,
+        "explanation": "The loops visit every (r, c) pair, so each pair is swapped twice and nothing changes; g[0][2] and g[2][0] are not changed either."
+      },
+      {
+        "label": "D",
+        "text": "2 4 3 7",
+        "isCorrect": true,
+        "explanation": "Each off-diagonal pair is swapped twice: once as (r, c) and once as (c, r). The array ends in its original order, so g[0][1] is 2, g[1][0] is 4, g[0][2] is 3 and g[2][0] is 7."
+      }
+    ],
+    "explanation": "To transpose in place, swap only the pairs above the diagonal (for example, `c > r`).",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-38",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = new int[2][2];\nint[] row = g[0];\nrow[1] = 5;\ng[1] = row;\ng[1][0] = 9;\nint[][] h = new int[2][];\nh[0] = g[0];\nh[1] = new int[] {g[0][0], g[0][1]};\nh[1][1] = -1;\nSystem.out.println(g[0][0] + \" \" + g[0][1] + \" \" + g[1][1] + \" \" + h[0][0] + \" \" + h[1][1]);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9 5 5 9 -1",
+        "isCorrect": true,
+        "explanation": "`row` is `g[0]`. After `row[1] = 5` and `g[1] = row`, rows 0 and 1 of `g` are the same array, so `g[1][0] = 9` makes `g[0][0]` 9 as well, and `g[1][1]` is 5. `h[0]` also refers to that array (9). `h[1]` is a separate array whose second element is set to -1."
+      },
+      {
+        "label": "B",
+        "text": "0 5 0 9 -1",
+        "isCorrect": false,
+        "explanation": "`g[1] = row` makes row 1 refer to the same array as row 0, so `g[1][0] = 9` also changes `g[0][0]` and `g[1][1]` is 5."
+      },
+      {
+        "label": "C",
+        "text": "9 5 5 9 5",
+        "isCorrect": false,
+        "explanation": "`h[1]` is a *new* array (a copy of the values), so `h[1][1] = -1` does not change `g`, and `h[1][1]` is -1."
+      },
+      {
+        "label": "D",
+        "text": "9 5 5 0 -1",
+        "isCorrect": false,
+        "explanation": "`h[0] = g[0]` makes `h`'s first row the same array as `g`'s first row, so `h[0][0]` is 9."
+      }
+    ],
+    "explanation": "A row of a 2D array is a reference to an array; assigning rows makes them share the same data.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-39",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = new int[2][3];\nString out = \"\";\nint[][] pairs = {{1, 2}, {2, 0}, {0, 3}, {1, 3}};\nfor (int[] p : pairs) {\n    try {\n        g[p[0]][p[1]] = 1;\n        out += \"ok \";\n    } catch (ArrayIndexOutOfBoundsException e) {\n        out += \"bad \";\n    }\n}\nSystem.out.println(out.trim());\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ok ok bad bad",
+        "isCorrect": false,
+        "explanation": "`g` has only 2 rows (indexes 0 and 1), so `g[2][0]` is out of bounds."
+      },
+      {
+        "label": "B",
+        "text": "ok bad bad bad",
+        "isCorrect": true,
+        "explanation": "The array has 2 rows (indexes 0, 1) and 3 columns (0, 1, 2). `g[1][2]` is valid; `g[2][0]` has a bad row index; `g[0][3]` and `g[1][3]` have a bad column index."
+      },
+      {
+        "label": "C",
+        "text": "ok bad ok bad",
+        "isCorrect": false,
+        "explanation": "`g[0][3]` is out of bounds: each row has 3 elements (indexes 0 through 2)."
+      },
+      {
+        "label": "D",
+        "text": "ok bad bad ok",
+        "isCorrect": false,
+        "explanation": "`g[1][3]` is out of bounds because column 3 does not exist in a row of length 3."
+      }
+    ],
+    "explanation": "Check the row index against `g.length` and the column index against `g[r].length`.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-40",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = {{5, 2, 9}, {1, 6, 3}, {8, 4, 7}};\nint r = 1, c = 1, greater = 0;\nfor (int dr = -1; dr <= 1; dr++)\n    for (int dc = -1; dc <= 1; dc++) {\n        if (dr == 0 && dc == 0) continue;\n        int nr = r + dr, nc = c + dc;\n        if (nr >= 0 && nr < g.length && nc >= 0 && nc < g[0].length && g[nr][nc] > g[r][c])\n            greater++;\n    }\nSystem.out.println(greater);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3",
+        "isCorrect": true,
+        "explanation": "The center cell holds 6. Its eight neighbors are 5, 2, 9, 1, 3, 8, 4, 7. Those greater than 6 are 9, 8 and 7, so `greater` is 3."
+      },
+      {
+        "label": "B",
+        "text": "8",
+        "isCorrect": false,
+        "explanation": "This counts all eight neighbors. Only the ones greater than the center value 6 are counted."
+      },
+      {
+        "label": "C",
+        "text": "5",
+        "isCorrect": false,
+        "explanation": "This counts the neighbors that are *smaller* than 6 (5, 2, 1, 3, 4). The condition is `g[nr][nc] > g[r][c]`, which counts the larger ones."
+      },
+      {
+        "label": "D",
+        "text": "1",
+        "isCorrect": false,
+        "explanation": "This looks at the corner cell (value 5), which has only three neighbors; the code examines the center cell, value 6."
+      }
+    ],
+    "explanation": "Examine each neighbor, and check that its row and column are inside the array before reading it.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-41",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = new int[3][4];\nfor (int r = 0; r < g.length; r++)\n    for (int c = 0; c < g[r].length; c++)\n        g[r][c] = (r * c) % 3;\nfor (int[] row : g) {\n    String s = \"\";\n    for (int x : row)\n        s += x;\n    System.out.println(s);\n}\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0000\n0120\n0210",
+        "isCorrect": true,
+        "explanation": "Row 0 is all 0 (0 * c). Row 1 is c % 3: 0 1 2 0. Row 2 is 2c % 3: 0 2 1 0."
+      },
+      {
+        "label": "B",
+        "text": "0000\n0120\n0120",
+        "isCorrect": false,
+        "explanation": "In row 2, the products are 0, 2, 4, 6, which modulo 3 are 0, 2, 1, 0."
+      },
+      {
+        "label": "C",
+        "text": "0120\n1201\n2012",
+        "isCorrect": false,
+        "explanation": "This fills each cell with `(r + c) % 3`. The code uses the product `r * c`, so the first row and first column are all 0."
+      },
+      {
+        "label": "D",
+        "text": "0000\n0123\n0246",
+        "isCorrect": false,
+        "explanation": "This leaves out the `% 3`. The values are r * c reduced modulo 3, so 3 becomes 0, 4 becomes 1 and 6 becomes 0."
+      }
+    ],
+    "explanation": "Compute each cell from its row and column index. The first loop fills the array; the second prints it row by row.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-42",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = {{3, 8, 1}, {8, 2, 9}, {4, 8, 6}};\nint rr = -1, cc = -1;\nfor (int r = 0; r < 3 && rr == -1; r++)\n    for (int c = 0; c < 3; c++)\n        if (g[r][c] == 8 && rr == -1) {\n            rr = r;\n            cc = c;\n        }\nint r2 = -1, c2 = -1;\nfor (int c = 0; c < 3 && c2 == -1; c++)\n    for (int r = 0; r < 3; r++)\n        if (g[r][c] == 8 && c2 == -1) {\n            r2 = r;\n            c2 = c;\n        }\nSystem.out.println(rr + \",\" + cc + \" \" + r2 + \",\" + c2);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0,1 1,0",
+        "isCorrect": true,
+        "explanation": "Row by row, the first 8 is at row 0, column 1. Column by column, column 0 contains 3, 8, 4, so the first 8 found is at row 1, column 0."
+      },
+      {
+        "label": "B",
+        "text": "1,0 0,1",
+        "isCorrect": false,
+        "explanation": "This swaps the two results. Row-major order finds the 8 at (0, 1) first; column-major order finds the 8 at (1, 0) first."
+      },
+      {
+        "label": "C",
+        "text": "0,1 2,1",
+        "isCorrect": false,
+        "explanation": "Column 0 contains an 8 (at row 1), so the column-major search stops there, before reaching column 1."
+      },
+      {
+        "label": "D",
+        "text": "0,1 0,1",
+        "isCorrect": false,
+        "explanation": "The second search goes column by column. Column 0 is checked first, and the first 8 in column 0 is at row 1."
+      }
+    ],
+    "explanation": "The first match depends on the traversal order: row-major and column-major can find different elements first.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-43",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] a = new int[3][];\nString out = \"\";\ntry {\n    a[0][0] = 1;\n    out += \"A\";\n} catch (NullPointerException e) {\n    out += \"N\";\n}\na[1] = new int[2];\ntry {\n    a[1][2] = 1;\n    out += \"B\";\n} catch (ArrayIndexOutOfBoundsException e) {\n    out += \"I\";\n}\nSystem.out.println(out + a.length + a[1].length);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "NB32",
+        "isCorrect": false,
+        "explanation": "Row 1 has 2 elements (indexes 0 and 1), so `a[1][2]` is out of bounds and throws `ArrayIndexOutOfBoundsException`."
+      },
+      {
+        "label": "B",
+        "text": "AI32",
+        "isCorrect": false,
+        "explanation": "`a[0]` is `null`: `new int[3][]` leaves the rows unassigned, so `a[0][0] = 1` throws a `NullPointerException`."
+      },
+      {
+        "label": "C",
+        "text": "NI32",
+        "isCorrect": true,
+        "explanation": "`new int[3][]` creates 3 `null` rows, so `a[0][0] = 1` throws `NullPointerException` (N). After `a[1] = new int[2]`, `a[1][2]` is out of bounds (I). Then `a.length` is 3 and `a[1].length` is 2."
+      },
+      {
+        "label": "D",
+        "text": "AB32",
+        "isCorrect": false,
+        "explanation": "`new int[3][]` creates only the outer array; the rows are `null`, so `a[0][0] = 1` throws a `NullPointerException`. And `a[1]` has only 2 elements, so `a[1][2]` is out of bounds."
+      }
+    ],
+    "explanation": "With `new int[3][]`, only the outer array exists. Each row must be created before its elements can be used.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-44",
+    "unit": "unit-8-2d-array",
+    "topic": "2d-array-creation",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = {{1, 2}, {3, 4}, {5, 6}};\nint[] t = g[0];\ng[0] = g[2];\ng[2] = t;\nint[] row = g[1];\nfor (int c = 0; c < 2; c++) {\n    int tmp = g[0][c];\n    g[0][c] = row[c];\n    row[c] = tmp;\n}\nSystem.out.println(g[0][0] + \" \" + g[1][0] + \" \" + g[2][0] + \" \" + g[0][1]);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3 5 1 6",
+        "isCorrect": false,
+        "explanation": "The loop swaps both columns, not only the first: after the loop, row 0 is {3, 4}, so `g[0][1]` is 4."
+      },
+      {
+        "label": "B",
+        "text": "3 5 1 4",
+        "isCorrect": true,
+        "explanation": "The first swap exchanges the row references of rows 0 and 2: {{5, 6}, {3, 4}, {1, 2}}. The loop then swaps the contents of row 0 and row 1: row 0 is {3, 4} and row 1 is {5, 6}. So g[0][0] = 3, g[1][0] = 5, g[2][0] = 1 and g[0][1] = 4."
+      },
+      {
+        "label": "C",
+        "text": "5 3 1 6",
+        "isCorrect": false,
+        "explanation": "This ignores the loop. The row swap alone gives g = {{5, 6}, {3, 4}, {1, 2}}, but the loop then swaps the *contents* of row 0 and row 1."
+      },
+      {
+        "label": "D",
+        "text": "1 3 5 2",
+        "isCorrect": false,
+        "explanation": "This is the original array. Rows 0 and 2 are exchanged first, and then the contents of rows 0 and 1 are exchanged, so the array does change."
+      }
+    ],
+    "explanation": "Swapping two row references exchanges whole rows; swapping element by element exchanges their contents.",
+    "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u8-mcq-45",
+    "unit": "unit-8-2d-array",
+    "topic": "traversing-2d-arrays",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint[][] g = {{1, 2, 3}, {4, 5, 6}};\nint[] cs = new int[g[0].length];\nfor (int r = 0; r < g.length; r++)\n    for (int c = 0; c < g[r].length; c++)\n        cs[c] += g[r][c] * (r + 1);\nSystem.out.println(cs[0] + \" \" + cs[1] + \" \" + cs[2]);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9 12 15",
+        "isCorrect": true,
+        "explanation": "Column 0 is 1(1) + 4(2) = 9, column 1 is 2(1) + 5(2) = 12, and column 2 is 3(1) + 6(2) = 15."
+      },
+      {
+        "label": "B",
+        "text": "6 30 0",
+        "isCorrect": false,
+        "explanation": "This accumulates into `cs[r]`, so the totals are per row rather than per column."
+      },
+      {
+        "label": "C",
+        "text": "4 5 6",
+        "isCorrect": false,
+        "explanation": "The weight is r + 1 (1 for row 0 and 2 for row 1), not r. Column 0 is 1 * 1 + 4 * 2 = 9."
+      },
+      {
+        "label": "D",
+        "text": "5 7 9",
+        "isCorrect": false,
+        "explanation": "This leaves out the weight (r + 1). Row 1's values are multiplied by 2: column 0 is 1 + 4 * 2 = 9."
+      }
+    ],
+    "explanation": "A column total accumulates one element from every row, so the index of the totals array is the column.",
+    "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
+    "reviewed": false
+  }
+]

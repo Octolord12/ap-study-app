@@ -418,8 +418,11 @@ each with a nested `topics` array) match `CourseSchema`/`UnitSchema` in
 
 **Sample bank seeded so far**: all four launch courses are fully authored —
 AP CSA (10 units, 300 MCQs + 30 FRQs), AP World History: Modern (9 units,
-270 MCQs + 35 FRQs), AP Calculus AB (8 units, 240 MCQs + 24 FRQs, plus a hard set, see "Hard Calc AB set"), and AP
-Physics 1 (8 units, 240 MCQs + 24 FRQs). See the Milestone 7 section below.
+270 MCQs + 35 FRQs), AP Calculus AB (8 units, 240 MCQs + 24 FRQs), and AP
+Physics 1 (8 units, 240 MCQs + 24 FRQs). Each course has since gained a second, harder
+set added alongside (see "Hard sets" below): the files named `unit-N-hard.json`. Totals
+now: CSA 450 MCQs + 50 FRQs, World 405 + 53, Calc AB 360 + 40, Physics 1 360 + 40.
+See the Milestone 7 section below.
 
 ### Content generation at scale (Milestone 7, done)
 
@@ -1324,7 +1327,15 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 - The privacy page says deletion and password change are in Settings; it also still
   promises access/correction and waitlist removal without an account by request.
 
-## Hard Calc AB set (harder questions, added alongside)
+## Hard sets (harder questions, added alongside)
+
+All four courses have one: 15 MCQs and 2 FRQs per unit in `questions/unit-N-hard.json` and
+`frqs/unit-N-hard.json`, ids `<course>-uN-mcq-31..45` and `-frq-4..5`, tagged
+`difficulty: "hard"`, all `reviewed: false`. Calc AB first (below), then CSA, World History
+and Physics 1 (sections after it). Generators live in `scripts/content-authoring/<course>-hard/`
+(see its README); re-running one overwrites its output, so **edit the script, not the JSON**.
+
+### Hard Calc AB set
 
 The owner found the existing banks too easy (the items tagged `hard` were things like "find
 f'(3) for x² from the difference quotient") and supplied three pages of a real Calc AB
@@ -1353,12 +1364,69 @@ question id, attempt or history changed.
   were proofread but are not machine-checked; they are the likeliest place for a slip, which
   is why the flag stays `reviewed: false` until a person approves them in `/admin/review`.
 - **Editing**: re-running a script overwrites its output, so change the script, not the
-  JSON. The other three courses still have only the original (easy) banks; the same
-  `lib.py` can be reused once the owner has judged the Calc AB difficulty.
+  JSON. The owner judged the Calc AB difficulty and asked for the other three courses to
+  follow (next sections).
 - **Effects to know**: exam simulations draw from the whole pool, so about a third of an
   exam's Calc AB questions are now from the hard set. Hard items earn the highest XP tier.
   The landing page and course pages read counts from the database, so they change when
   the content is seeded (`npm run content:seed`; a direct database write, ask first).
+
+### Hard AP CSA set
+
+150 MCQs + 20 FRQs (`scripts/content-authoring/ap-csa-hard/u1.py..u10.py`, shared `common.py`).
+Same standard as Calc: multi-step traces with a trap (aliasing, `String` immutability and `==`,
+integer division and casting, short-circuiting, off-by-one loops, removal while traversing an
+`ArrayList`, row/column order in 2D arrays, constructor chaining, field initializers running
+after `super()`, overload versus override, `static` shared state, recursion call trees).
+
+- **Correctness is established by running real Java.** Each output shown in a question is what
+  a JDK printed when the displayed program was compiled and run; each wrong choice is the real
+  output of a *mutated* copy of that program (or, where a mistake can't be produced by one
+  small edit, a named "manual" mistake that the script asserts differs from every real output).
+  Compile-error questions are checked with `javac` (exactly one option fails to compile), and
+  every FRQ sample solution was compiled and run against tests (`verify()`), so the sample
+  responses are known to work.
+- **A JDK is not a project dependency.** The scripts look for `JAVA_HOME`, else a Temurin JDK
+  unpacked in the session scratch folder (`common.py`, `SCRATCH`); to regenerate, download a
+  JDK 21 and set `JAVA_HOME`. The generated JSON is what the app uses, so nothing needs Java
+  at build or run time.
+- Code-in-stem convention: fenced ```java blocks, class definitions first and the run segment
+  second (`shown()` dedents methods). Choice text that is multi-line program output uses real
+  newlines. `$` is avoided in prompts (the content validator counts it as unclosed LaTeX even
+  inside inline code).
+- **Not machine-checked**: the hand-written explanations of why each wrong choice is wrong and
+  the FRQ rubrics. Proofread, but `reviewed: false` until approved in `/admin/review`.
+
+### Hard AP World History set
+
+135 MCQs + 18 FRQs (`scripts/content-authoring/ap-world-hard/`): per unit, 15 MCQs
+(a mix of passage-based items and "which best explains" causation/comparison items) and two FRQs:
+a **3-part SAQ on a passage** (3 points) and a **6-point LEQ** (thesis 1, contextualization 1,
+evidence 2, analysis and reasoning 2). Sources are *original* passages with generic
+attributions, not quotations from real documents or from any College Board exam. **Historical facts cannot be machine-verified**; they were written from
+well-established, CED-level knowledge and kept to claims that are not disputed, but a human
+reviewer should check them (the sets are `reviewed: false`). The known exam-engine gap still
+applies: `FRQPrompt` has no SAQ/DBQ/LEQ type field, so an exam simulation draws from a mixed pool
+(the pool now has 9 more SAQs, 9 more LEQs, and still the same 4 DBQs).
+
+### Hard AP Physics 1 set
+
+120 MCQs + 16 FRQs (`scripts/content-authoring/ap-physics-1-hard/`). Multi-step problems
+(impulse from a force graph, sticking and elastic collisions, center of mass, a hinged beam held
+by a cable, rolling races, angular momentum on a rotating stool, the minimum speed at the top of
+a loop, orbits and gravity on other planets). `g = 9.8 m/s^2`; each computed answer is produced by
+Python arithmetic in the script, with `assert`s for the keyed answer and for distinct choices, and
+each wrong choice is a specific mistake (a missing factor, the wrong quantity). Eight items use the
+diagram support (motion graphs and free-body diagrams); the rest are word problems.
+
+### Effects of all four hard sets
+
+Exam simulations draw from the whole pool, so roughly a third of the questions are now from the
+hard set in every course, and hard items earn the top XP tier. The landing page and course pages
+read counts from the database, so they change when the content is seeded. Seeding is
+`npm run content:seed` (a direct database write; ask first). It is **slow** (the whole bank takes
+10+ minutes) and **stops at the first connection error**, so run it in the background and check the
+row counts against the files afterwards (an interrupted run is safe to repeat: it upserts).
 
 ## Footer, contact and privacy
 
@@ -1541,6 +1609,11 @@ in app logic — updating them should be a data edit.
       testimonials scaffold, Cram Mode, proficiency-rated mastery bars, boss
       battle titles (and a missing boss-result toast fixed), and a `/teacher`
       skeleton for class owners. See "Post-launch growth features" above.
+- [x] **Post-launch: hard question sets.** 15 hard MCQs + 2 hard FRQs per unit in all four
+      courses (Calc AB 120 + 16, CSA 150 + 20, World 135 + 18, Physics 1 120 + 16), added
+      alongside the originals. Calc AB is seeded and deployed. **CSA, World and Physics are
+      authored, validated and committed but not yet seeded into the database or deployed** (as of
+      2026-10-05); update this line once they are. See "Hard sets" above.
 
 ## Known issues / follow-ups
 

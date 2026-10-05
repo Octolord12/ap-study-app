@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ap-phys1-u5-frq-4",
+    "unit": "unit-5-momentum",
+    "topic": "collisions",
+    "prompt": "A 0.60 kg cart moving at 2.0 m/s on a frictionless track collides head-on with a stationary 0.20 kg cart.\n\n**(a)** Suppose the carts stick together after the collision. Calculate their common speed and the kinetic energy lost.\n\n**(b)** Suppose instead that the collision is elastic. Write two equations that must be satisfied, and calculate the velocity of each cart after the collision.\n\n**(c)** Use your answers to (b) to verify that kinetic energy is conserved in the elastic collision.\n\n**(d)** In the elastic collision the carts are in contact for 0.020 s. Calculate the magnitude of the average force that the 0.60 kg cart exerts on the 0.20 kg cart.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses momentum conservation to find $v=1.5$ m/s"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Finds the kinetic energy lost: $1.20-0.90=0.30$ J"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Writes conservation of momentum and conservation of kinetic energy (or the relative-speed condition)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Finds $v_1=1.0$ m/s and $v_2=3.0$ m/s, both in the original direction"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Shows $\\frac12(0.60)(1.0)^2+\\frac12(0.20)(3.0)^2=1.20$ J equals the initial kinetic energy"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Finds the impulse on the small cart, $(0.20)(3.0)=0.60$ N$\\cdot$s, and $F=\\frac{0.60}{0.020}=30$ N"
+      }
+    ],
+    "sampleResponse": "(a) $m_1v_1=(m_1+m_2)v$: $(0.60)(2.0)=(0.80)v$, so $v=1.5$ m/s. Initial $KE=\\frac12(0.60)(2.0)^2=1.20$ J; final $KE=\\frac12(0.80)(1.5)^2=0.90$ J. The energy lost is $0.30$ J.\n(b) Momentum: $m_1v_1=m_1v_{1f}+m_2v_{2f}$. Kinetic energy: $\\frac12m_1v_1^2=\\frac12m_1v_{1f}^2+\\frac12m_2v_{2f}^2$. Solving, $v_{1f}=\\frac{m_1-m_2}{m_1+m_2}v_1=1.0$ m/s and $v_{2f}=\\frac{2m_1}{m_1+m_2}v_1=3.0$ m/s, both in the original direction of motion.\n(c) $KE_f=\\frac12(0.60)(1.0)^2+\\frac12(0.20)(3.0)^2=0.30+0.90=1.20$ J, equal to the initial 1.20 J.\n(d) The impulse on the 0.20 kg cart is its change in momentum: $(0.20)(3.0)-0=0.60$ N$\\cdot$s. $F_{avg}=\\frac{J}{\\Delta t}=\\frac{0.60}{0.020}=30$ N.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u5-frq-5",
+    "unit": "unit-5-momentum",
+    "topic": "momentum-and-impulse",
+    "prompt": "A tennis racket strikes a stationary 0.057 kg ball. The graph shows the force that the racket exerts on the ball as a function of time during the contact. The force is horizontal.\n\n**(a)** Determine the magnitude of the impulse delivered to the ball.\n\n**(b)** Calculate the speed of the ball just after it leaves the racket.\n\n**(c)** Calculate the magnitude of the average force exerted on the ball during the 12 ms contact.\n\n**(d)** The ball then strikes a vertical wall head-on and rebounds in the opposite direction at 40 m/s. Calculate the magnitude of the impulse the wall exerts on the ball.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Finds the area under the graph, $0.8+1.6+0.8=3.2$ N$\\cdot$s (with the time axis converted from ms to s)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Uses $J=m\\,\\Delta v$ with the ball starting at rest: $v\\approx56$ m/s"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Computes $F_{avg}=\\frac{J}{\\Delta t}=\\frac{3.2}{0.012}\\approx270$ N"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(d) Takes opposite directions into account: $\\Delta v=56+40$ m/s"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Finds $J=m\\,\\Delta v\\approx5.5$ N$\\cdot$s"
+      }
+    ],
+    "sampleResponse": "(a) The area under the graph (time in seconds): triangle $\\frac12(0.004)(400)=0.8$, rectangle $(0.004)(400)=1.6$, triangle $0.8$. Total: $3.2$ N$\\cdot$s.\n(b) $J=m\\,\\Delta v$ with $v_i=0$: $v=\\frac{3.2}{0.057}\\approx56$ m/s.\n(c) $F_{avg}=\\frac{J}{\\Delta t}=\\frac{3.2}{0.012}\\approx2.7\\times10^2$ N.\n(d) The velocity reverses, so the change in velocity is $56+40=96$ m/s. $J=(0.057)(96)\\approx5.5$ N$\\cdot$s.",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Force versus time: rises from 0 to 400 N at t=4 ms, stays at 400 N until t=8 ms, then falls to 0 at t=12 ms.",
+      "xLabel": "t (ms)",
+      "yLabel": "F (N)",
+      "xMin": 0,
+      "xMax": 12,
+      "yMin": 0,
+      "yMax": 500,
+      "series": [
+        {
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 4,
+              "y": 400
+            },
+            {
+              "x": 8,
+              "y": 400
+            },
+            {
+              "x": 12,
+              "y": 0
+            }
+          ],
+          "color": "blue"
+        }
+      ]
+    }
+  }
+]

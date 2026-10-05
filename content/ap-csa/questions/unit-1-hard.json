@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-csa-u1-mcq-31",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint a = 17, b = 5;\nSystem.out.println(a / b * b + a % b);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "17",
+        "isCorrect": true,
+        "explanation": "`a / b` is integer division: 3. Then `3 * b` is 15, and `a % b` is the remainder 2. 15 + 2 = 17."
+      },
+      {
+        "label": "B",
+        "text": "2",
+        "isCorrect": false,
+        "explanation": "This groups the division as `a / (b * b)`. Division and multiplication have equal precedence and are evaluated left to right, so it is `(a / b) * b`."
+      },
+      {
+        "label": "C",
+        "text": "15",
+        "isCorrect": false,
+        "explanation": "This leaves out the remainder term: `a / b * b` is 15 with integer division, and the remainder 2 is then missing."
+      },
+      {
+        "label": "D",
+        "text": "19.0",
+        "isCorrect": false,
+        "explanation": "This treats the division as exact (3.4) instead of integer division (3), and so does not recover `a` exactly."
+      }
+    ],
+    "explanation": "Integer division truncates, `*` and `/` associate left to right, and the remainder is added last. For positive values, `a / b * b + a % b` always equals `a`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-32",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\ndouble d = 7 / 2;\nint n = (int) 3.9 + (int) (2.6 + 1.6);\nSystem.out.println(d + \" \" + n);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3.0 8",
+        "isCorrect": false,
+        "explanation": "This applies a single cast to the whole sum. In the original, `(int) 3.9` truncates to 3 and `(int) (2.6 + 1.6)` truncates 4.2 to 4 separately."
+      },
+      {
+        "label": "B",
+        "text": "3.0 7",
+        "isCorrect": true,
+        "explanation": "`7 / 2` is integer division, 3, stored in `d` as 3.0. `(int) 3.9` is 3 and `(int) (2.6 + 1.6)` is `(int) 4.2`, which is 4. So `n` is 7."
+      },
+      {
+        "label": "C",
+        "text": "3.5 7",
+        "isCorrect": false,
+        "explanation": "The initial value uses integer division because both operands are `int`; it happens before the result is stored in the `double`. With `2.0` it would be 3.5."
+      },
+      {
+        "label": "D",
+        "text": "3.5 8",
+        "isCorrect": false,
+        "explanation": "This makes both mistakes: it treats `7 / 2` as exact division, and it applies one cast to the whole sum or rounds 3.9 up. A cast truncates toward zero, it does not round."
+      }
+    ],
+    "explanation": "A cast truncates toward zero and applies only to the expression directly after it. Integer division happens before the assignment converts the result to `double`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-33",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint x = Integer.MAX_VALUE;\nint y = x + 1;\nlong z = x + 1;\nlong w = x + 1L;\nSystem.out.println(y + \" \" + z + \" \" + w);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "-2147483648 2147483648 2147483648",
+        "isCorrect": false,
+        "explanation": "This assumes that storing the sum in a `long` avoids the overflow. The addition `x + 1` is done with `int` arithmetic first, so it overflows before the assignment."
+      },
+      {
+        "label": "B",
+        "text": "2147483648 2147483648 2147483648",
+        "isCorrect": false,
+        "explanation": "This assumes that Java integers never overflow. An `int` cannot hold 2147483648, so `x + 1` wraps around."
+      },
+      {
+        "label": "C",
+        "text": "-2147483648 -2147483648 2147483648",
+        "isCorrect": true,
+        "explanation": "`x + 1` overflows in `int` arithmetic and wraps to Integer.MIN_VALUE, -2147483648. `y` and `z` both hold that value (for `z` the overflowed `int` is only then widened to `long`). `x + 1L` is computed as a `long`, so `w` is 2147483648."
+      },
+      {
+        "label": "D",
+        "text": "2147483647 2147483647 2147483648",
+        "isCorrect": false,
+        "explanation": "This assumes the value stops at the largest `int` (saturates). Java's `int` arithmetic wraps around instead."
+      }
+    ],
+    "explanation": "Overflow happens in the type of the arithmetic, not in the type of the variable that receives the result. Widening to `long` after an `int` operation does not recover lost information.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-34",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint x = 10;\nx *= 2.5;\nx -= 0.9;\nSystem.out.println(x);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "24",
+        "isCorrect": true,
+        "explanation": "`x *= 2.5` means `x = (int) (x * 2.5)`, so x is 25. Then `x -= 0.9` means `x = (int) (x - 0.9)`, which is `(int) 24.1`, or 24."
+      },
+      {
+        "label": "B",
+        "text": "19",
+        "isCorrect": false,
+        "explanation": "This truncates the operand 2.5 to 2 before multiplying. The cast is applied to the *result* of the whole operation, so `10 * 2.5` is 25.0 first."
+      },
+      {
+        "label": "C",
+        "text": "24.1",
+        "isCorrect": false,
+        "explanation": "This treats `x` as a `double`. Because `x` is an `int`, each compound assignment casts its result back to `int`."
+      },
+      {
+        "label": "D",
+        "text": "25",
+        "isCorrect": false,
+        "explanation": "This assumes `x -= 0.9` has no effect because 0.9 truncates to 0. The cast applies to the result, `(int) (25 - 0.9)`, which is `(int) 24.1`, or 24."
+      }
+    ],
+    "explanation": "A compound assignment performs the operation in the wider type, then casts the result back to the type of the variable (truncating). It does not truncate the right-hand operand first.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-35",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint i = 3;\nint j = i++ + ++i;\nSystem.out.println(i + \" \" + j);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3 6",
+        "isCorrect": false,
+        "explanation": "This ignores the side effects of the increments, which change `i` twice."
+      },
+      {
+        "label": "B",
+        "text": "5 7",
+        "isCorrect": false,
+        "explanation": "This treats `++i` like `i++`. The second operand, `++i`, increments first and then yields the new value (5), not the old value (4)."
+      },
+      {
+        "label": "C",
+        "text": "5 9",
+        "isCorrect": false,
+        "explanation": "This treats `i++` like `++i`. The first operand, `i++`, yields the old value (3) before incrementing."
+      },
+      {
+        "label": "D",
+        "text": "5 8",
+        "isCorrect": true,
+        "explanation": "`i++` yields 3 and makes `i` 4. `++i` makes `i` 5 and yields 5. So `j` is 3 + 5 = 8, and `i` ends as 5."
+      }
+    ],
+    "explanation": "Post-increment yields the old value and then increments; pre-increment increments and then yields the new value. Operands are evaluated left to right.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-36",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nchar c = 'a';\nc += 2;\nint n = c + 1;\nSystem.out.println(c + \" \" + n + \" \" + (char) n);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "c 100 d",
+        "isCorrect": true,
+        "explanation": "`'a'` has code 97, and `c += 2` makes it `'c'` (99). `n = c + 1` is the `int` 100. Concatenation prints the char `c`, then 100, then `(char) 100`, which is `d`."
+      },
+      {
+        "label": "B",
+        "text": "c 100 100",
+        "isCorrect": false,
+        "explanation": "This leaves out the cast, so the last item is printed as a number. `(char) n` converts 100 back to the character `d`."
+      },
+      {
+        "label": "C",
+        "text": "c 99 c",
+        "isCorrect": false,
+        "explanation": "This forgets the `+ 1`: `c + 1` is the int 100, since `c` has code 99."
+      },
+      {
+        "label": "D",
+        "text": "99 100 d",
+        "isCorrect": false,
+        "explanation": "This prints the numeric code of `c`. Concatenating a `char` with a string appends the character itself, `c`."
+      }
+    ],
+    "explanation": "A `char` is a numeric code. Arithmetic on it produces an `int`, and a cast converts it back to a character.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-37",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nSystem.out.println(1 + 2 + \"3\" + 4 + 5);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "339",
+        "isCorrect": false,
+        "explanation": "This adds 4 and 5 first. Without parentheses, once the expression has become a `String`, each `+` appends text."
+      },
+      {
+        "label": "B",
+        "text": "12345",
+        "isCorrect": false,
+        "explanation": "This starts the expression with a string, so every `+` is concatenation. The original begins with two numbers, so `1 + 2` is added first."
+      },
+      {
+        "label": "C",
+        "text": "3345",
+        "isCorrect": true,
+        "explanation": "`+` is evaluated left to right. `1 + 2` is 3 (an int). `3 + \"3\"` is the string \"33\", and then `4` and `5` are appended one at a time, giving \"3345\"."
+      },
+      {
+        "label": "D",
+        "text": "15",
+        "isCorrect": false,
+        "explanation": "This adds all the numbers. As soon as a `String` operand is reached, the rest of the expression is concatenation."
+      }
+    ],
+    "explanation": "Operators of equal precedence evaluate left to right. The first `+` that has a `String` operand switches the rest of the chain to concatenation.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-38",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nSystem.out.println(-7 % 3 + \" \" + 7 % -3 + \" \" + -7 / 2);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "-1 1 -3",
+        "isCorrect": true,
+        "explanation": "Java's `%` takes the sign of the left operand: `-7 % 3` is -1 and `7 % -3` is 1. Integer division truncates toward zero: `-7 / 2` is -3."
+      },
+      {
+        "label": "B",
+        "text": "-1 1 -4",
+        "isCorrect": false,
+        "explanation": "This rounds -3.5 down to -4. Java's integer division truncates toward zero, giving -3."
+      },
+      {
+        "label": "C",
+        "text": "-1 -2 -3",
+        "isCorrect": false,
+        "explanation": "This takes the sign from the divisor. In Java the sign of `%` follows the dividend, so `7 % -3` is 1."
+      },
+      {
+        "label": "D",
+        "text": "2 1 -3",
+        "isCorrect": false,
+        "explanation": "This uses a mathematical modulus that is never negative for a positive divisor. In Java the sign of `%` follows the dividend, so `-7 % 3` is -1."
+      }
+    ],
+    "explanation": "In Java, `a % b` has the sign of `a`, and integer division truncates toward zero, so `(a / b) * b + a % b == a` always holds.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-39",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint r = (int) Math.round(2.5) + (int) Math.round(-2.5) + (int) Math.pow(2, 3);\nSystem.out.println(r);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9",
+        "isCorrect": true,
+        "explanation": "`Math.round(2.5)` is 3. `Math.round(-2.5)` rounds half up toward positive infinity, giving -2. `Math.pow(2, 3)` is 8.0, which casts to 8. The sum is 3 - 2 + 8 = 9."
+      },
+      {
+        "label": "B",
+        "text": "10",
+        "isCorrect": false,
+        "explanation": "This swaps the base and exponent: `Math.pow(2, 3)` is 2 cubed, which is 8, not 9."
+      },
+      {
+        "label": "C",
+        "text": "8",
+        "isCorrect": false,
+        "explanation": "This truncates 2.5 to 2 instead of rounding it to 3. `Math.round(2.5)` rounds half up, giving 3."
+      },
+      {
+        "label": "D",
+        "text": "14",
+        "isCorrect": false,
+        "explanation": "This ignores the sign. `Math.round(-2.5)` rounds toward positive infinity (half up), giving -2, not 3."
+      }
+    ],
+    "explanation": "`Math.round` rounds ties up (toward positive infinity), so -2.5 becomes -2. `Math.pow` returns a `double`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-40",
+    "unit": "unit-1-primitive-types",
+    "topic": "expressions-and-assignment",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint a = 5;\ndouble b = a / 2;\ndouble c = a / 2.0;\nboolean t = (b == 2) && (c == 2.5);\nSystem.out.println(t + \" \" + (a / 2 * 2.0));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "true 4.0",
+        "isCorrect": true,
+        "explanation": "`a / 2` is integer division: 2, so `b` is 2.0. `c` is 2.5. Both comparisons are true. In `a / 2 * 2.0`, `a / 2` is 2 and `2 * 2.0` is 4.0."
+      },
+      {
+        "label": "B",
+        "text": "true 5.0",
+        "isCorrect": false,
+        "explanation": "This evaluates the division in `double`. In `a / 2 * 2.0` the division is performed first with two `int` operands, giving 2, and only then multiplied by 2.0."
+      },
+      {
+        "label": "C",
+        "text": "false 4.0",
+        "isCorrect": false,
+        "explanation": "This treats `a / 2` as exact. Both operands are `int`, so the division is integer division and `b` holds 2.0."
+      },
+      {
+        "label": "D",
+        "text": "false 5.0",
+        "isCorrect": false,
+        "explanation": "Both mistakes: `b` holds 2.0 (integer division), and `a / 2 * 2.0` is 4.0, not 5.0."
+      }
+    ],
+    "explanation": "The type of a division depends only on its operands. Where the result is stored does not change how it is computed.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/expressions-and-assignment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-41",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "hard",
+    "stem": "Which of the following statements compiles without error?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "`double d = 'x' * 2;`",
+        "isCorrect": true,
+        "explanation": "`'x' * 2` is an `int` (the char is promoted to its numeric code), and an `int` can be assigned to a `double` by widening."
+      },
+      {
+        "label": "B",
+        "text": "`int a = 7 / 2.0;`",
+        "isCorrect": false,
+        "explanation": "`7 / 2.0` is a `double`. Assigning a `double` to an `int` is a narrowing conversion and needs an explicit cast, such as `(int) (7 / 2.0)`."
+      },
+      {
+        "label": "C",
+        "text": "`float f = 3.14;`",
+        "isCorrect": false,
+        "explanation": "`3.14` is a `double` literal. Assigning it to a `float` is a narrowing conversion; the literal would need an `f` suffix (`3.14f`)."
+      },
+      {
+        "label": "D",
+        "text": "`long m = 3000000000;`",
+        "isCorrect": false,
+        "explanation": "The literal `3000000000` is an `int` literal that is too large for an `int`, which is a compile-time error. It needs an `L` suffix."
+      }
+    ],
+    "explanation": "Widening conversions (`int` to `double`) are automatic, but narrowing conversions need a cast, and a literal is an `int` or `double` unless its suffix says otherwise.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-42",
+    "unit": "unit-1-primitive-types",
+    "topic": "variables-and-data-types",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint total = 7 + 8 + 10;\ndouble avg = total / 3;\ndouble avg2 = total / 3.0;\ndouble avg3 = (double) (total / 3);\ndouble avg4 = (double) total / 3;\nSystem.out.println(avg + \" \" + avg2 + \" \" + avg3 + \" \" + avg4);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "8.333333333333334 8.333333333333334 8.333333333333334 8.333333333333334",
+        "isCorrect": false,
+        "explanation": "This assumes that storing the quotient in a `double` makes the division exact. For `avg` and `avg3` the division is between two `int` values, so it truncates first."
+      },
+      {
+        "label": "B",
+        "text": "8.0 8.333333333333334 8.333333333333334 8.333333333333334",
+        "isCorrect": false,
+        "explanation": "This treats `(double) (total / 3)` like `(double) total / 3`. In the original, the division is done in integer arithmetic before the cast, so the cast happens too late."
+      },
+      {
+        "label": "C",
+        "text": "8.0 8.0 8.0 8.0",
+        "isCorrect": false,
+        "explanation": "This assumes that dividing by `3.0` or casting `total` to `double` still truncates. A `double` operand makes the division a `double` division."
+      },
+      {
+        "label": "D",
+        "text": "8.0 8.333333333333334 8.0 8.333333333333334",
+        "isCorrect": true,
+        "explanation": "`total / 3` is integer division (25 / 3 = 8), so `avg` is 8.0. `total / 3.0` is a `double` division, 8.333333333333334. `(double) (total / 3)` casts the already-truncated 8 to 8.0. `(double) total / 3` casts `total` first, so the division is exact."
+      }
+    ],
+    "explanation": "A cast applies only to the expression immediately after it. To get an exact quotient, a cast must happen before the division.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/variables-and-data-types",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-43",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint x = 5;\nx = x++ * 2 + x;\nSystem.out.println(x);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "16",
+        "isCorrect": true,
+        "explanation": "Operands are evaluated left to right: `x++` yields 5 and makes `x` 6, then `5 * 2` is 10, and the final `x` is already 6, so 10 + 6 = 16. This value is then assigned to `x`."
+      },
+      {
+        "label": "B",
+        "text": "15",
+        "isCorrect": false,
+        "explanation": "This reads `x` before the increment for the final `+ x`. In the original, the increment from `x++` has already happened by the time the right operand `x` is evaluated."
+      },
+      {
+        "label": "C",
+        "text": "10",
+        "isCorrect": false,
+        "explanation": "This forgets the final `+ x` term. The expression is `x++ * 2 + x`, with the new value of `x` (6) added at the end."
+      },
+      {
+        "label": "D",
+        "text": "18",
+        "isCorrect": false,
+        "explanation": "This treats `x++` as `++x`. The post-increment yields the old value, 5, so the product is 10, not 12."
+      }
+    ],
+    "explanation": "Side effects take place during evaluation. The incremented value is visible to later operands in the same expression, but the final assignment overwrites `x`.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-44",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nSystem.out.println((int) (0.29 * 100) + \" \" + (0.1 + 0.2 == 0.3) + \" \" + Math.round(0.29 * 100));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "28 true 29",
+        "isCorrect": false,
+        "explanation": "This assumes `0.1 + 0.2` is exactly 0.3. In `double` arithmetic the sum is 0.30000000000000004, so the `==` test is false."
+      },
+      {
+        "label": "B",
+        "text": "29 true 29",
+        "isCorrect": false,
+        "explanation": "Both mistakes: `0.29 * 100` evaluates to 28.999999999999996, which truncates to 28, and `0.1 + 0.2 == 0.3` is false."
+      },
+      {
+        "label": "C",
+        "text": "28 false 29",
+        "isCorrect": true,
+        "explanation": "`0.29 * 100` is 28.999999999999996, which `(int)` truncates to 28, while `Math.round` rounds it to 29. And `0.1 + 0.2` is 0.30000000000000004, so it does not equal 0.3."
+      },
+      {
+        "label": "D",
+        "text": "29 false 29",
+        "isCorrect": false,
+        "explanation": "This rounds before casting. The original truncates 0.29 * 100, which is not exactly 29 because 0.29 cannot be stored exactly."
+      }
+    ],
+    "explanation": "Many decimal fractions cannot be stored exactly in binary, so `double` results can be slightly off. Compare with a tolerance and use `Math.round` rather than a cast to round.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u1-mcq-45",
+    "unit": "unit-1-primitive-types",
+    "topic": "compound-assignment-and-casting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nint a = 7;\na /= 2;\na *= 3.5;\na %= 4;\nSystem.out.println(a);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1",
+        "isCorrect": false,
+        "explanation": "This truncates the operand 3.5 to 3 before multiplying. The result of `3 * 3.5` is truncated: `(int) 10.5` is 10."
+      },
+      {
+        "label": "B",
+        "text": "10",
+        "isCorrect": false,
+        "explanation": "This skips the last statement. After `a *= 3.5`, `a` is 10, and then `a %= 4` leaves the remainder 2."
+      },
+      {
+        "label": "C",
+        "text": "2",
+        "isCorrect": true,
+        "explanation": "`a /= 2` gives 3 (integer division). `a *= 3.5` means `a = (int) (3 * 3.5)`, which is `(int) 10.5`, or 10. Then `a %= 4` gives 10 % 4, which is 2."
+      },
+      {
+        "label": "D",
+        "text": "0.25",
+        "isCorrect": false,
+        "explanation": "This treats `a` as a `double`. Because `a` is an `int`, `a /= 2` is integer division (3) and `a *= 3.5` truncates its result."
+      }
+    ],
+    "explanation": "Each compound assignment truncates its result to the variable's type before the next statement runs.",
+    "conceptLink": "ap-csa/unit-1-primitive-types/compound-assignment-and-casting",
+    "reviewed": false
+  }
+]

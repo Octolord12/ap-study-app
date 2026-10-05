@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-phys1-u6-mcq-31",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "difficulty": "hard",
+    "stem": "A block oscillates on a horizontal spring with period $T$. The block is replaced by one with four times the mass, and the amplitude is doubled. What is the new period?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$8T$",
+        "isCorrect": false,
+        "explanation": "This multiplies by 4 for the mass and by 2 for the amplitude. The period does not depend on the amplitude, and depends on $\\sqrt m$."
+      },
+      {
+        "label": "B",
+        "text": "$4T$",
+        "isCorrect": false,
+        "explanation": "The period is proportional to the *square root* of the mass, not to the mass."
+      },
+      {
+        "label": "C",
+        "text": "$T$",
+        "isCorrect": false,
+        "explanation": "The amplitude does not change the period, but the mass does: $T\\propto\\sqrt m$."
+      },
+      {
+        "label": "D",
+        "text": "$2T$",
+        "isCorrect": true,
+        "explanation": "For a spring, $T=2\\pi\\sqrt{\\frac mk}$. Four times the mass multiplies the period by $\\sqrt4=2$. The period does not depend on the amplitude."
+      }
+    ],
+    "explanation": "$T=2\\pi\\sqrt{m/k}$ for a mass on a spring: independent of amplitude, proportional to $\\sqrt m$.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-32",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "difficulty": "hard",
+    "stem": "What is the length of a simple pendulum that has a period of 2.0 s for small oscillations? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4.0 m",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{gT^2}{\\pi^2}$, leaving out a factor of 4 (the $2\\pi$ must be squared: $4\\pi^2$)."
+      },
+      {
+        "label": "B",
+        "text": "0.25 m",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{T^2}{16}$, which does not follow from the period formula. Use $T=2\\pi\\sqrt{L/g}$."
+      },
+      {
+        "label": "C",
+        "text": "2.0 m",
+        "isCorrect": false,
+        "explanation": "This sets the length equal to the period, which mixes units. The length comes from $L=\\frac{gT^2}{4\\pi^2}$."
+      },
+      {
+        "label": "D",
+        "text": "0.99 m",
+        "isCorrect": true,
+        "explanation": "$T=2\\pi\\sqrt{\\frac Lg}$, so $L=\\frac{gT^2}{4\\pi^2}=\\frac{(9.8)(4.0)}{39.5}\\approx0.99$ m."
+      }
+    ],
+    "explanation": "Solve $T=2\\pi\\sqrt{L/g}$ for $L$.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-33",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "energy-in-shm",
+    "difficulty": "hard",
+    "stem": "A 0.50 kg block on a horizontal spring (spring constant 100 N/m) oscillates with an amplitude of 0.20 m on a frictionless surface. What is the block's speed when it is 0.10 m from the equilibrium position?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.8 m/s",
+        "isCorrect": false,
+        "explanation": "This is the maximum speed, which occurs at the equilibrium position."
+      },
+      {
+        "label": "B",
+        "text": "3.2 m/s",
+        "isCorrect": false,
+        "explanation": "This uses $A^2+x^2$. The energy in the spring at position $x$ reduces the kinetic energy: $A^2-x^2$."
+      },
+      {
+        "label": "C",
+        "text": "1.4 m/s",
+        "isCorrect": false,
+        "explanation": "This halves the maximum speed, $\\frac{2.83}{2}$. The speed at half the amplitude is not half the maximum speed: it is $\\frac{\\sqrt3}{2}$ of it."
+      },
+      {
+        "label": "D",
+        "text": "2.4 m/s",
+        "isCorrect": true,
+        "explanation": "Energy conservation: $\\frac12kA^2=\\frac12mv^2+\\frac12kx^2$, so $v=\\sqrt{\\frac km(A^2-x^2)}=\\sqrt{200(0.04-0.01)}=\\sqrt{6.0}\\approx2.4$ m/s."
+      }
+    ],
+    "explanation": "Total energy is constant: $\\frac12kA^2=\\frac12mv^2+\\frac12kx^2$.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/energy-in-shm",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-34",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "restoring-forces-and-shm",
+    "difficulty": "hard",
+    "stem": "The position of an oscillating object is given by $x(t)=0.15\\cos(8\\pi t)$, where $x$ is in meters and $t$ is in seconds. What is the magnitude of the object's maximum acceleration?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3.8 m/s^2",
+        "isCorrect": false,
+        "explanation": "This is $A\\omega\\approx3.8$ m/s, the maximum *speed*. The maximum acceleration has an extra factor of $\\omega$."
+      },
+      {
+        "label": "B",
+        "text": "95 m/s^2",
+        "isCorrect": true,
+        "explanation": "The angular frequency is $\\omega=8\\pi$ rad/s and the amplitude is 0.15 m. The maximum acceleration is $A\\omega^2=(0.15)(8\\pi)^2\\approx95$ m/s^2."
+      },
+      {
+        "label": "C",
+        "text": "9.6 m/s^2",
+        "isCorrect": false,
+        "explanation": "This uses $\\omega=8$ and drops the $\\pi$. The factor in the cosine is $8\\pi$."
+      },
+      {
+        "label": "D",
+        "text": "2.4 m/s^2",
+        "isCorrect": false,
+        "explanation": "This uses $\\omega=f=4$ Hz in $A\\omega^2$. The angular frequency in the expression $\\cos(\\omega t)$ is $8\\pi$ rad/s."
+      }
+    ],
+    "explanation": "For $x=A\\cos(\\omega t)$, the maximum speed is $A\\omega$ and the maximum acceleration is $A\\omega^2$.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/restoring-forces-and-shm",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-35",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "difficulty": "hard",
+    "stem": "A mass hanging from a light vertical spring stretches the spring 0.20 m beyond its unstretched length when it hangs at rest. The mass is pulled down slightly and released, so that it oscillates vertically. What is the period of the oscillation? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.90 s",
+        "isCorrect": true,
+        "explanation": "At equilibrium $kx_0=mg$, so $\\frac mk=\\frac{x_0}{g}$. Then $T=2\\pi\\sqrt{\\frac mk}=2\\pi\\sqrt{\\frac{0.20}{9.8}}\\approx0.90$ s."
+      },
+      {
+        "label": "B",
+        "text": "1.8 s",
+        "isCorrect": false,
+        "explanation": "This doubles the correct value."
+      },
+      {
+        "label": "C",
+        "text": "0.20 s",
+        "isCorrect": false,
+        "explanation": "This is the stretch of the spring in meters, which is not a time."
+      },
+      {
+        "label": "D",
+        "text": "0.45 s",
+        "isCorrect": false,
+        "explanation": "This is half the correct value, as if $T=\\pi\\sqrt{x_0/g}$."
+      }
+    ],
+    "explanation": "Use the static equilibrium $kx_0=mg$ to find $\\frac mk$ without knowing either quantity separately.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-36",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "difficulty": "hard",
+    "stem": "A block attached to a single spring oscillates with period $T$. The same block is instead attached to two identical springs, each identical to the original, connected end to end (in series). What is the new period of oscillation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2T$",
+        "isCorrect": false,
+        "explanation": "This would require the effective spring constant to be $\\frac k4$. In series it is $\\frac k2$."
+      },
+      {
+        "label": "B",
+        "text": "$\\sqrt2\\,T$",
+        "isCorrect": true,
+        "explanation": "Two identical springs in series have an effective spring constant $\\frac k2$ (the combination stretches twice as far for the same force). Then $T'=2\\pi\\sqrt{\\frac{m}{k/2}}=\\sqrt2\\,T$."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac{T}{\\sqrt2}$",
+        "isCorrect": false,
+        "explanation": "This is the result for two springs in *parallel* (effective spring constant $2k$), not in series."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac T2$",
+        "isCorrect": false,
+        "explanation": "This would require an effective spring constant of $4k$."
+      }
+    ],
+    "explanation": "In series the extensions add, so the effective spring constant is smaller; $T\\propto\\frac{1}{\\sqrt{k}}$.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-37",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "energy-in-shm",
+    "difficulty": "hard",
+    "stem": "A block on a spring oscillates with amplitude $A$. At what positions is the kinetic energy of the block equal to the elastic potential energy stored in the spring?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$x=\\pm A$",
+        "isCorrect": false,
+        "explanation": "At the extremes the kinetic energy is zero and all the energy is potential."
+      },
+      {
+        "label": "B",
+        "text": "$x=0$",
+        "isCorrect": false,
+        "explanation": "At the equilibrium position the potential energy is zero and all the energy is kinetic."
+      },
+      {
+        "label": "C",
+        "text": "$x=\\pm\\dfrac A2$",
+        "isCorrect": false,
+        "explanation": "At half the amplitude the potential energy is $\\frac14$ of the total, since $PE\\propto x^2$, not $\\frac12$."
+      },
+      {
+        "label": "D",
+        "text": "$x=\\pm\\dfrac{A}{\\sqrt2}\\approx\\pm0.71A$",
+        "isCorrect": true,
+        "explanation": "The total energy is $\\frac12kA^2$. When $KE=PE$, each is half the total: $\\frac12kx^2=\\frac12\\left(\\frac12kA^2\\right)$, so $x^2=\\frac{A^2}{2}$ and $x=\\pm\\frac{A}{\\sqrt2}$."
+      }
+    ],
+    "explanation": "Elastic potential energy is $\\frac12kx^2$, proportional to $x^2$. Set it equal to half of $\\frac12kA^2$.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/energy-in-shm",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-38",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "difficulty": "hard",
+    "stem": "A simple pendulum oscillates through small angles with period $T$. The string is replaced by one four times as long, the bob is replaced by one twice as massive, and the amplitude is halved. What is the new period?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2\\sqrt2\\,T$",
+        "isCorrect": false,
+        "explanation": "This includes a factor of $\\sqrt2$ for the doubled mass. The period of a pendulum does not depend on the mass."
+      },
+      {
+        "label": "B",
+        "text": "$2T$",
+        "isCorrect": true,
+        "explanation": "$T=2\\pi\\sqrt{\\frac Lg}$ depends only on the length (and $g$). Quadrupling $L$ doubles $T$. The mass and the amplitude (for small angles) have no effect."
+      },
+      {
+        "label": "C",
+        "text": "$4T$",
+        "isCorrect": false,
+        "explanation": "The period is proportional to the *square root* of the length."
+      },
+      {
+        "label": "D",
+        "text": "$T$",
+        "isCorrect": false,
+        "explanation": "The mass and amplitude do not affect the period, but the length does: $T\\propto\\sqrt L$."
+      }
+    ],
+    "explanation": "A pendulum's period is $2\\pi\\sqrt{L/g}$: independent of mass and (for small angles) of amplitude.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-39",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "restoring-forces-and-shm",
+    "difficulty": "hard",
+    "stem": "A 2.0 kg block on a horizontal frictionless surface is attached to a spring of spring constant 80 N/m. The block oscillates with an amplitude of 0.25 m. What is the magnitude of the block's acceleration when it is 0.10 m from the equilibrium position?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.0 m/s^2",
+        "isCorrect": false,
+        "explanation": "This divides the force by 4: the mass is 2.0 kg, and the force is 8.0 N."
+      },
+      {
+        "label": "B",
+        "text": "10 m/s^2",
+        "isCorrect": false,
+        "explanation": "This is the acceleration at the maximum displacement ($\\frac{kA}{m}=\\frac{20}{2}$). At $x=0.10$ m the force is smaller."
+      },
+      {
+        "label": "C",
+        "text": "4.0 m/s^2",
+        "isCorrect": true,
+        "explanation": "The spring force at $x=0.10$ m is $kx=(80)(0.10)=8.0$ N. The acceleration is $\\frac{F}{m}=\\frac{8.0}{2.0}=4.0$ m/s^2, toward the equilibrium position."
+      },
+      {
+        "label": "D",
+        "text": "8.0 m/s^2",
+        "isCorrect": false,
+        "explanation": "This is the *force* in newtons. Divide by the mass to get the acceleration."
+      }
+    ],
+    "explanation": "Hooke's law gives the force at that position, and Newton's second law gives the acceleration.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/restoring-forces-and-shm",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-40",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "energy-in-shm",
+    "difficulty": "hard",
+    "stem": "A block oscillates on a spring with amplitude $A$, maximum speed $v_{max}$ and total mechanical energy $E$. If the block is made to oscillate on the same spring with amplitude $2A$, what are the new maximum speed and total energy?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2v_{max}$ and $4E$",
+        "isCorrect": true,
+        "explanation": "$E=\\frac12kA^2$, so doubling $A$ quadruples $E$. The maximum speed is $A\\omega$ with the same $\\omega$, so it doubles. (Equivalently $\\frac12mv_{max}^2=4E$ gives $v_{max}\\to2v_{max}$.)"
+      },
+      {
+        "label": "B",
+        "text": "$v_{max}$ and $4E$",
+        "isCorrect": false,
+        "explanation": "The maximum speed grows with the amplitude, $v_{max}=A\\omega$, because the block must cover a larger distance in the same period."
+      },
+      {
+        "label": "C",
+        "text": "$4v_{max}$ and $4E$",
+        "isCorrect": false,
+        "explanation": "The maximum speed is proportional to $A$ (with fixed $\\omega$). Kinetic energy is proportional to $v^2$, so the energy quadruples when the speed doubles."
+      },
+      {
+        "label": "D",
+        "text": "$2v_{max}$ and $2E$",
+        "isCorrect": false,
+        "explanation": "The energy is proportional to $A^2$, not $A$."
+      }
+    ],
+    "explanation": "Energy scales with $A^2$; the maximum speed scales with $A$ because the period is fixed.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/energy-in-shm",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-41",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "difficulty": "hard",
+    "stem": "A mass hangs from a vertical spring and oscillates up and down with period $T$ on Earth. The same mass and spring are taken to the Moon, where the gravitational acceleration is about one-sixth as large, and set oscillating vertically. What is the period on the Moon?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$6T$",
+        "isCorrect": false,
+        "explanation": "Nothing in the formula $T=2\\pi\\sqrt{m/k}$ involves gravity."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{T}{\\sqrt6}$",
+        "isCorrect": false,
+        "explanation": "This inverts the pendulum result. In any case, the period of a spring oscillator does not depend on $g$."
+      },
+      {
+        "label": "C",
+        "text": "$\\sqrt6\\,T$",
+        "isCorrect": false,
+        "explanation": "This is the pendulum result, $T\\propto\\frac1{\\sqrt g}$. The period of a mass on a spring does not depend on $g$."
+      },
+      {
+        "label": "D",
+        "text": "$T$ (unchanged)",
+        "isCorrect": true,
+        "explanation": "The period of a mass on a spring is $2\\pi\\sqrt{\\frac mk}$ and does not depend on $g$. Gravity shifts the equilibrium position but not the restoring-force-per-displacement."
+      }
+    ],
+    "explanation": "For a vertical spring, gravity only shifts the equilibrium position. The net restoring force is still $-kx$ measured from that position.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-42",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "energy-in-shm",
+    "difficulty": "hard",
+    "stem": "A block oscillates on a horizontal spring with amplitude $A$. When the block is at position $x=\\frac A2$, what fraction of the total mechanical energy is kinetic energy?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac34$",
+        "isCorrect": true,
+        "explanation": "The elastic potential energy is $\\frac12kx^2=\\frac12k\\frac{A^2}{4}=\\frac14$ of the total $\\frac12kA^2$. The remaining $\\frac34$ is kinetic."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac14$",
+        "isCorrect": false,
+        "explanation": "$\\frac14$ is the fraction that is *potential* energy at $x=\\frac A2$."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac18$",
+        "isCorrect": false,
+        "explanation": "This cubes the ratio $\\left(\\frac12\\right)^3$. Potential energy varies as $x^2$."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac12$",
+        "isCorrect": false,
+        "explanation": "The energy is shared equally at $x=\\frac{A}{\\sqrt2}$, not at $\\frac A2$."
+      }
+    ],
+    "explanation": "Use $PE\\propto x^2$: at half the amplitude the spring holds one quarter of the total energy.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/energy-in-shm",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-43",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "restoring-forces-and-shm",
+    "difficulty": "hard",
+    "stem": "A block oscillates on a spring with period $T$ and amplitude $A$. At $t=0$ it is at $x=A$ and at rest. How long does it take to first reach $x=\\frac A2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac T8$",
+        "isCorrect": false,
+        "explanation": "This assumes constant speed, which is false: the block moves slower near the ends, so it takes longer than $\\frac T8$ to cover the first half."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac T4$",
+        "isCorrect": false,
+        "explanation": "The block takes $\\frac T4$ to travel the whole way from $x=A$ to $x=0$, which is twice the distance."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac T6$",
+        "isCorrect": true,
+        "explanation": "With $x=A\\cos\\left(\\frac{2\\pi t}{T}\\right)$, setting $x=\\frac A2$ gives $\\frac{2\\pi t}{T}=\\frac\\pi3$, so $t=\\frac T6$. (The block then needs only another $\\frac T{12}$ to reach $x=0$, because it moves fastest near the center.)"
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac T{12}$",
+        "isCorrect": false,
+        "explanation": "$\\frac{T}{12}$ is the time to travel from $x=\\frac A2$ to $x=0$. The first half of the way takes longer because the speed is lower there."
+      }
+    ],
+    "explanation": "Write $x=A\\cos(\\omega t)$ and solve $\\cos(\\omega t)=\\frac12$.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/restoring-forces-and-shm",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-44",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "period-of-springs-and-pendulums",
+    "difficulty": "hard",
+    "stem": "A pendulum clock keeps correct time at a location where $g=9.80$ m/s^2. It is moved to a location where $g$ is 1.0% smaller. Which statement is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The clock keeps correct time, because the period of a pendulum does not depend on $g$",
+        "isCorrect": false,
+        "explanation": "$T=2\\pi\\sqrt{L/g}$ does depend on $g$."
+      },
+      {
+        "label": "B",
+        "text": "The clock runs slow, because its period is about 1.0% longer",
+        "isCorrect": false,
+        "explanation": "The period is proportional to $g^{-1/2}$, so a 1.0% change in $g$ gives about half that change in the period."
+      },
+      {
+        "label": "C",
+        "text": "The clock runs slow, because its period is about 0.5% longer",
+        "isCorrect": true,
+        "explanation": "$T=2\\pi\\sqrt{\\frac Lg}\\propto g^{-1/2}$, so a 1.0% decrease in $g$ increases $T$ by about 0.5%. Each tick takes longer, so the clock runs slow."
+      },
+      {
+        "label": "D",
+        "text": "The clock runs fast, because its period is about 0.5% shorter",
+        "isCorrect": false,
+        "explanation": "A smaller $g$ means a weaker restoring force, so the pendulum swings more slowly and the period gets longer."
+      }
+    ],
+    "explanation": "Small fractional changes: if $T\\propto g^{-1/2}$, then $\\frac{\\Delta T}{T}\\approx-\\frac12\\frac{\\Delta g}{g}$.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u6-mcq-45",
+    "unit": "unit-6-simple-harmonic-motion",
+    "topic": "energy-in-shm",
+    "difficulty": "hard",
+    "stem": "A 1.0 kg block oscillates on a horizontal frictionless surface attached to a spring of constant 100 N/m, with amplitude 0.10 m. At the instant the block passes through the equilibrium position, a 1.0 kg lump of clay is dropped vertically onto it and sticks. What is the new amplitude of the oscillation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.071 m",
+        "isCorrect": true,
+        "explanation": "Just before the clay lands, $v=A\\sqrt{\\frac km}=1.0$ m/s. The horizontal momentum is conserved while the clay sticks: $v'=\\frac{(1.0)(1.0)}{2.0}=0.50$ m/s. At equilibrium all the energy is kinetic: $\\frac12(2.0)(0.50)^2=0.25$ J $=\\frac12kA'^2$, so $A'=\\sqrt{\\frac{2(0.25)}{100}}\\approx0.071$ m."
+      },
+      {
+        "label": "B",
+        "text": "0.10 m",
+        "isCorrect": false,
+        "explanation": "The amplitude changes: the clay slows the block (momentum conservation) and reduces its kinetic energy at equilibrium."
+      },
+      {
+        "label": "C",
+        "text": "0.050 m",
+        "isCorrect": false,
+        "explanation": "This halves the amplitude. The speed halves, but the mass doubles, so the energy falls to half and the amplitude falls by a factor of $\\sqrt2$."
+      },
+      {
+        "label": "D",
+        "text": "0.035 m",
+        "isCorrect": false,
+        "explanation": "This divides by 2 twice. The amplitude falls to $\\frac{0.10}{\\sqrt2}$, not $\\frac{0.10}{2\\sqrt2}$."
+      }
+    ],
+    "explanation": "Use momentum conservation for the (perfectly inelastic) sticking, then energy conservation to find the new amplitude.",
+    "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/energy-in-shm",
+    "reviewed": false
+  }
+]

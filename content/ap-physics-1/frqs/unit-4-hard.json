@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ap-phys1-u4-frq-4",
+    "unit": "unit-4-energy",
+    "topic": "conservation-of-energy",
+    "prompt": "A 0.50 kg block is pressed against a spring of spring constant 300 N/m on a horizontal, frictionless surface, compressing the spring by 0.20 m. The block is released. After leaving the spring, it slides across a rough section of the surface 1.0 m long (coefficient of kinetic friction 0.30), and then up a frictionless ramp. Use $g=9.8$ m/s^2.\n\n**(a)** Calculate the speed of the block as it leaves the spring.\n\n**(b)** Calculate the amount of mechanical energy converted to thermal energy as the block crosses the rough section.\n\n**(c)** Calculate the speed of the block when it leaves the rough section.\n\n**(d)** Calculate the maximum height above the horizontal surface that the block reaches on the ramp.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Equates the spring energy $\\frac12kx^2=6.0$ J to the kinetic energy $\\frac12mv^2$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Finds $v\\approx4.9$ m/s"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Uses $\\mu mg\\,d=(0.30)(0.50)(9.8)(1.0)=1.47$ J"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Finds the remaining kinetic energy $6.0-1.47=4.53$ J and the speed $\\approx4.3$ m/s"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Equates the remaining kinetic energy to $mgh$ and finds $h\\approx0.92$ m"
+      }
+    ],
+    "sampleResponse": "(a) $\\frac12kx^2=\\frac12mv^2$: $\\frac12(300)(0.20)^2=6.0$ J $=\\frac12(0.50)v^2$, so $v=\\sqrt{24}\\approx4.9$ m/s.\n(b) The friction force is $\\mu mg=(0.30)(0.50)(9.8)=1.47$ N over 1.0 m, so 1.47 J becomes thermal energy.\n(c) $KE=6.0-1.47=4.53$ J, so $\\frac12(0.50)v^2=4.53$ and $v=\\sqrt{18.1}\\approx4.3$ m/s.\n(d) At the top of the ramp all of the remaining kinetic energy is potential energy: $mgh=4.53$ J, so $h=\\frac{4.53}{(0.50)(9.8)}\\approx0.92$ m.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u4-frq-5",
+    "unit": "unit-4-energy",
+    "topic": "power",
+    "prompt": "A 1000 kg car on a level road accelerates uniformly from 10 m/s to 25 m/s in 6.0 s. Ignore friction and air resistance.\n\n**(a)** Calculate the change in the car's kinetic energy.\n\n**(b)** Calculate the average power delivered to the car by the engine during this time.\n\n**(c)** Calculate the distance traveled by the car during the 6.0 s, and use it to find the average net force on the car.\n\n**(d)** Calculate the instantaneous power the engine delivers at the end of the 6.0 s, and explain why it is greater than the average power.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Computes $\\Delta KE=\\frac12m(v_f^2-v_i^2)=2.6\\times10^5$ J (262,500 J)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Uses $P=\\frac{\\Delta KE}{t}\\approx4.4\\times10^4$ W"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Finds the distance $\\frac{10+25}{2}(6.0)=105$ m"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Finds the average force $\\frac{\\Delta KE}{d}=2500$ N"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Computes $P=Fv=(2500)(25)=6.25\\times10^4$ W and explains that the speed (and so the power for a constant force) is increasing"
+      }
+    ],
+    "sampleResponse": "(a) $\\Delta KE=\\frac12(1000)(25^2-10^2)=\\frac12(1000)(525)=2.6\\times10^5$ J.\n(b) $P_{avg}=\\frac{\\Delta KE}{t}=\\frac{262\\,500}{6.0}\\approx4.4\\times10^4$ W (44 kW).\n(c) With uniform acceleration the average speed is $\\frac{10+25}{2}=17.5$ m/s, so the distance is $(17.5)(6.0)=105$ m. $F_{net}=\\frac{\\Delta KE}{d}=\\frac{262\\,500}{105}=2500$ N (which equals $ma=1000\\times2.5$).\n(d) With a constant force of 2500 N, $P=Fv=(2500)(25)=6.25\\times10^4$ W. The power $Fv$ increases as the car speeds up, so at the end it is larger than the average over the interval, which includes the slower speeds near the start.",
+    "reviewed": false
+  }
+]

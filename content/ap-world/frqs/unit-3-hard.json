@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u3-frq-4",
+    "unit": "unit-3-land-based-empires",
+    "topic": "religion-and-state-power",
+    "prompt": "Use the passages to answer parts A, B and C.\n\n> “Let no man be molested on account of his religion, and let anyone follow the faith he prefers. The special tax on those who are not Muslims is abolished.”\n>\n> *Source: Edict of a Mughal emperor, late sixteenth century*\n\n> “The tax on those who are not Muslims, abolished in a former reign, shall be collected again.”\n>\n> *Source: Order issued by a Mughal emperor, 1679*\n\n**a)** Identify ONE difference between the policies described in the two passages.\n\n**b)** Explain ONE reason the first policy helped the Mughal rulers govern their empire.\n\n**c)** Explain ONE way in which another empire from this period, such as the Ottoman or Safavid Empire, dealt with religious diversity or religion as a source of state authority.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies that the first policy ended the tax on non-Muslims and promised religious tolerance, while the second reinstated the tax"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains that toleration won the loyalty or cooperation of the large non-Muslim (Hindu) majority and reduced rebellion"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains, for example, that the Ottomans used the millet system to let minorities govern their own religious affairs, or that the Safavids made Shi'a Islam the state religion to unify their state and distinguish it from the Sunni Ottomans"
+      }
+    ],
+    "sampleResponse": "a) The first passage abolishes the special tax on non-Muslims and allows freedom of religion, while the second reinstates that tax.\nb) The Mughals ruled a population that was mostly Hindu. Religious toleration and the abolition of the tax helped win the loyalty and cooperation of non-Muslim subjects and elites, reducing the likelihood of rebellion.\nc) The Ottomans used the millet system, which let religious minority communities such as Christians and Jews run their own religious and communal affairs under their own leaders in exchange for loyalty and taxes, helping the sultan govern a diverse empire.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u3-frq-5",
+    "unit": "unit-3-land-based-empires",
+    "topic": "comparing-empires",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which TWO of the following empires were similar in the methods they used to administer and maintain control of their territories between about 1450 and 1750: the Ottoman Empire, the Mughal Empire, the Qing Empire, the Russian Empire.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that evaluates the extent of similarity in the two empires' methods of administration and control"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Describes the broader context of the rise of centralized land empires in this period, such as the effects of gunpowder technology"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate examples for each of the two empires (1 point for addressing the topic, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses comparison to structure the argument (1 point), and demonstrates complexity by explaining reasons for similarities and differences or by qualifying the argument (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a thesis about the degree of similarity (for example that the Ottomans and Mughals were similar in using gunpowder weapons, military-service land grants and religious accommodation but different in the religious makeup of their subjects). It places the empires in the context of the rise of centralized, gunpowder-enabled land empires and uses specific evidence (the devshirme and Janissaries, timars and millets; Akbar's toleration, the mansabdari system, the jizya; the Qing examinations and banner system; Peter the Great's reforms). It compares methods and explains reasons for similarities and differences.",
+    "reviewed": false
+  }
+]

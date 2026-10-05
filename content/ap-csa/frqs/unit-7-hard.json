@@ -1,0 +1,84 @@
+[
+  {
+    "id": "ap-csa-u7-frq-4",
+    "unit": "unit-7-arraylist",
+    "topic": "traversing-arraylists",
+    "prompt": "A `Roster` object stores `Student` objects in an `ArrayList<Student>` instance variable named `students`. The `Student` class has the methods `String getName()` and `int getGrade()`.\n\n```java\npublic class Roster {\n    private ArrayList<Student> students;\n\n    /** Returns a new ArrayList containing the names of the students whose grade is at least\n     *  threshold, in the order the students appear in students. Does not change students.\n     *  Returns an empty list if no student qualifies. */\n    public ArrayList<String> namesAtOrAbove(int threshold)\n    { /* to be implemented in part (a) */ }\n\n    /** Removes from students every student whose grade is less than cutoff, keeping the\n     *  remaining students in their original order. Returns the number of students removed. */\n    public int removeBelow(int cutoff)\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `namesAtOrAbove`.\n\n**(b)** Write the method `removeBelow`. Be careful that every qualifying student is removed, including two such students in a row.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Creates a new `ArrayList<String>` and traverses `students`"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Compares each student's grade (using `getGrade`) with `threshold` correctly (at least)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Adds each qualifying student's name (using `getName`) and returns the list without modifying `students`"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Traverses `students` in a way that does not skip elements after a removal (for example from the end, or adjusting the index)"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Removes each student whose grade is less than `cutoff`"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Counts and returns the number of students removed"
+      }
+    ],
+    "sampleResponse": "```java\npublic ArrayList<String> namesAtOrAbove(int threshold) {\n    ArrayList<String> result = new ArrayList<String>();\n    for (Student s : students) {\n        if (s.getGrade() >= threshold) {\n            result.add(s.getName());\n        }\n    }\n    return result;\n}\n\npublic int removeBelow(int cutoff) {\n    int removed = 0;\n    for (int i = students.size() - 1; i >= 0; i--) {\n        if (students.get(i).getGrade() < cutoff) {\n            students.remove(i);\n            removed++;\n        }\n    }\n    return removed;\n}\n```\nIn `removeBelow`, traversing from the end means a removal shifts only elements that have already been examined. (Traversing forward also works if the index is decremented after each removal.)",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u7-frq-5",
+    "unit": "unit-7-arraylist",
+    "topic": "arraylist-algorithms",
+    "prompt": "An `Inventory` object stores `Item` objects in an `ArrayList<Item>` instance variable named `items`. The `Item` class has the following methods.\n\n```java\npublic class Item {\n    public Item(String name, int qty)   // creates an item with the given name and quantity\n    public String getName()\n    public int getQty()\n    public void setQty(int q)\n}\n```\n\nThe `Inventory` class contains the two methods described below.\n\n```java\npublic class Inventory {\n    private ArrayList<Item> items;\n\n    /** If an item named name is in items, adds amount to its quantity. Otherwise adds a new\n     *  Item with that name and the quantity amount to the end of items. At most one item\n     *  in items has any given name. */\n    public void restock(String name, int amount)\n    { /* to be implemented in part (a) */ }\n\n    /** Removes every item whose quantity is 0, keeping the other items in their original\n     *  order, and returns the number of items removed. */\n    public int removeEmpty()\n    { /* to be implemented in part (b) */ }\n}\n```\n\n**(a)** Write the method `restock`.\n\n**(b)** Write the method `removeEmpty`. Be careful that no item with quantity 0 is skipped.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Traverses `items` and compares names with `equals` (not `==`)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Updates the quantity of the matching item and stops without adding a new item"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Adds a new `Item` to the end of the list only when no item has that name"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Traverses `items` without skipping elements after a removal"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Removes each item whose quantity is 0 and keeps the others in order"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Counts and returns the number of items removed"
+      }
+    ],
+    "sampleResponse": "```java\npublic void restock(String name, int amount) {\n    for (Item it : items) {\n        if (it.getName().equals(name)) {\n            it.setQty(it.getQty() + amount);\n            return;\n        }\n    }\n    items.add(new Item(name, amount));\n}\n\npublic int removeEmpty() {\n    int count = 0;\n    int i = 0;\n    while (i < items.size()) {\n        if (items.get(i).getQty() == 0) {\n            items.remove(i);\n            count++;\n        } else {\n            i++;\n        }\n    }\n    return count;\n}\n```\nIn `restock`, the item is changed through its `setQty` method while the enhanced `for` loop is running; the loop only reads the list, so this is safe, and `return` ends the method before the new item is added. In `removeEmpty`, the index advances only when nothing was removed, so the element that shifts into position `i` is examined.",
+    "reviewed": false
+  }
+]

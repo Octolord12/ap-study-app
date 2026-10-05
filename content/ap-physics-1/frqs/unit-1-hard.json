@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ap-phys1-u1-frq-4",
+    "unit": "unit-1-kinematics",
+    "topic": "projectile-motion",
+    "prompt": "A ball is launched horizontally at 12 m/s from the top of a 44.1 m cliff. Use $g=9.8$ m/s^2 and ignore air resistance.\n\n**(a)** Calculate the time for the ball to reach the ground.\n\n**(b)** Calculate the horizontal distance from the base of the cliff at which the ball lands.\n\n**(c)** Calculate the speed of the ball just before it lands, and the angle its velocity makes below the horizontal.\n\n**(d)** A second ball is dropped from rest from the top of the cliff at the instant the first ball is launched. Compare the time it takes to land with your answer to (a), and justify your answer.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses $y=\\frac12gt^2$ with the vertical motion only and finds $t=3.0$ s"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Uses $x=v_xt=(12)(3.0)=36$ m"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Finds the vertical speed $v_y=gt=29.4$ m/s"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Combines the components to get a speed of about 31.8 m/s and an angle of about $67.8^\\circ$ below the horizontal"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) States that the times are equal, with the reasoning that vertical motion is independent of horizontal motion (both start with zero vertical velocity)"
+      }
+    ],
+    "sampleResponse": "(a) Vertically, $44.1=\\frac12(9.8)t^2$, so $t^2=9$ and $t=3.0$ s.\n(b) $x=v_xt=(12)(3.0)=36$ m.\n(c) $v_y=gt=(9.8)(3.0)=29.4$ m/s downward and $v_x=12$ m/s. The speed is $\\sqrt{12^2+29.4^2}\\approx31.8$ m/s, directed at $\\tan^{-1}(29.4/12)\\approx67.8^\\circ$ below the horizontal.\n(d) The dropped ball lands at the same time, 3.0 s. Both balls start with zero vertical velocity and fall the same height under the same acceleration, and the horizontal velocity of the first ball does not affect its vertical motion.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u1-frq-5",
+    "unit": "unit-1-kinematics",
+    "topic": "representations-of-motion",
+    "prompt": "The graph shows the velocity of a cart moving along a straight track. The cart is at $x=-4$ m at $t=0$.\n\n**(a)** Find the cart's acceleration from $t=0$ to $t=2$ s.\n\n**(b)** Find the cart's displacement from $t=0$ to $t=5$ s.\n\n**(c)** At what time does the cart reverse its direction of motion? Show how you determined this from the graph.\n\n**(d)** Find the cart's position at $t=7$ s.\n\n**(e)** Find the total distance the cart travels from $t=0$ to $t=7$ s.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Uses the slope $\\frac{6-0}{2-0}=3$ m/s^2"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Adds the triangle and rectangle areas: $6+18=24$ m"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Finds where the line from $(5,6)$ to $(7,-2)$ crosses $v=0$: slope $-4$ m/s^2 gives $t=6.5$ s"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(d) Net displacement from 0 to 7 s is $28.5-0.5=28$ m, so $x=-4+28=24$ m"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(e) Total distance $28.5+0.5=29$ m"
+      }
+    ],
+    "sampleResponse": "(a) $a=\\frac{\\Delta v}{\\Delta t}=\\frac{6-0}{2}=3$ m/s^2.\n(b) The displacement is the area under the graph: triangle $\\frac12(2)(6)=6$ m plus rectangle $(3)(6)=18$ m, so 24 m.\n(c) From $t=5$ s to $7$ s the velocity changes from $6$ to $-2$ m/s, a slope of $-4$ m/s^2. The velocity is zero at $t=5+\\frac{6}{4}=6.5$ s, where it changes sign: the cart reverses direction at 6.5 s.\n(d) From 5 s to 6.5 s the area is $\\frac12(1.5)(6)=4.5$ m (forward). From 6.5 s to 7 s the area is $\\frac12(0.5)(2)=0.5$ m (backward). The displacement from 0 to 7 s is $24+4.5-0.5=28$ m, so the position is $-4+28=24$ m.\n(e) Distance $=24+4.5+0.5=29$ m.",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Velocity-time graph of a cart: rises from 0 to 6 m/s at t=2 s, stays at 6 m/s until t=5 s, then falls to -2 m/s at t=7 s.",
+      "xLabel": "t (s)",
+      "yLabel": "v (m/s)",
+      "xMin": 0,
+      "xMax": 7,
+      "yMin": -3,
+      "yMax": 7,
+      "series": [
+        {
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 2,
+              "y": 6
+            },
+            {
+              "x": 5,
+              "y": 6
+            },
+            {
+              "x": 7,
+              "y": -2
+            }
+          ],
+          "color": "blue"
+        }
+      ]
+    }
+  }
+]

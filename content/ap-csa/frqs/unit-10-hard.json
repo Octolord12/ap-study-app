@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-csa-u10-frq-4",
+    "unit": "unit-10-recursion",
+    "topic": "recursive-searching-sorting",
+    "prompt": "This question involves recursive methods in a class named `StringAndSearch`. The methods must be recursive; a solution that uses a loop to do the work will not earn full credit.\n\n**(a)** Write the method `removeChar`, which returns a new string that contains the characters of `s` in their original order, with every occurrence of the character `c` removed.\n\n```java\npublic static String removeChar(String s, char c)\n```\n\nExamples:\n\n| Call | Returns |\n|---|---|\n| `removeChar(\"banana\", 'a')` | `\"bnn\"` |\n| `removeChar(\"xyz\", 'a')` | `\"xyz\"` |\n| `removeChar(\"aaa\", 'a')` | `\"\"` |\n\n**(b)** Write the method `findFirst`, which uses recursion to return the index of the **first** occurrence of `t` in the sorted (ascending) array `a` within the range `a[lo]` through `a[hi]`, inclusive, or -1 if `t` does not appear in that range. The array may contain duplicate values. The method should use a binary-search strategy (it should not examine every element).\n\n```java\n/** Precondition: a is sorted in ascending order; 0 <= lo and hi < a.length (but lo > hi is possible) */\npublic static int findFirst(int[] a, int t, int lo, int hi)\n```\n\nFor example, if `arr` is {1, 3, 3, 3, 5, 8, 8, 9}, then `findFirst(arr, 3, 0, 7)` returns 1, `findFirst(arr, 8, 0, 7)` returns 5, and `findFirst(arr, 4, 0, 7)` returns -1.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Base case: returns the empty string when `s` is empty"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) When the first character equals `c`, recurs on the rest of the string without that character"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Otherwise returns the first character concatenated with the result of the recursive call on the rest"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(a) Recursive calls make progress toward the base case (for example `s.substring(1)`), and no loops are used"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Base case: returns -1 when `lo > hi`"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Computes a middle index and recurs on the correct half when `a[mid]` is less than or greater than `t`"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) When `a[mid]` equals `t`, searches the left part for an earlier occurrence and returns that index if there is one, and otherwise returns `mid`"
+      }
+    ],
+    "sampleResponse": "```java\npublic static String removeChar(String s, char c) {\n    if (s.length() == 0) {\n        return \"\";\n    }\n    if (s.charAt(0) == c) {\n        return removeChar(s.substring(1), c);\n    }\n    return s.charAt(0) + removeChar(s.substring(1), c);\n}\n\npublic static int findFirst(int[] a, int t, int lo, int hi) {\n    if (lo > hi) {\n        return -1;\n    }\n    int mid = (lo + hi) / 2;\n    if (a[mid] < t) {\n        return findFirst(a, t, mid + 1, hi);\n    }\n    if (a[mid] > t) {\n        return findFirst(a, t, lo, mid - 1);\n    }\n    int left = findFirst(a, t, lo, mid - 1);\n    if (left != -1) {\n        return left;\n    }\n    return mid;\n}\n```\nWhen `a[mid]` equals `t`, the first occurrence is either `mid` itself or somewhere to its left, so the method searches `a[lo..mid - 1]` and falls back on `mid` if nothing is found there.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-frq-5",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "prompt": "This question involves two recursive methods. Both methods must be recursive; a solution that uses a loop to do the work will not earn full credit.\n\n**(a)** A hiker climbs a staircase and, on each move, climbs 1, 2 or 3 steps. Write the method `ways`, which returns the number of different sequences of moves that climb exactly `n` steps. A sequence is different if the numbers of steps in its moves are in a different order. Climbing zero steps can be done in exactly one way (making no moves), and a negative number of steps cannot be climbed at all.\n\n```java\npublic static int ways(int n)\n```\n\nFor example, `ways(3)` returns 4, since the possible sequences are 1+1+1, 1+2, 2+1 and 3. Also `ways(4)` returns 7 and `ways(5)` returns 13.\n\n**(b)** Write the method `canMake`, which returns true if some collection of the values in `vals[index]` through the end of the array (each value used at most once) adds up to exactly `target`, and false otherwise. A collection of no values has a sum of 0. All of the values in `vals` and the value of `target` are non-negative.\n\n```java\n/** Precondition: 0 <= index and target >= 0 */\npublic static boolean canMake(int[] vals, int index, int target)\n```\n\nFor example, if `v` is {3, 9, 8, 4}, then `canMake(v, 0, 12)` returns true (3 + 9, or 8 + 4), `canMake(v, 0, 5)` returns false, and `canMake(v, 2, 12)` returns true (8 + 4).",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Base cases: returns 0 for a negative argument and 1 for zero"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Makes recursive calls for `n - 1`, `n - 2` and `n - 3`"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Adds the results of the three calls and returns the sum"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Returns true when `target` is 0 (before checking whether values remain)"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Returns false when there are no values left (`index` is past the end), without accessing the array out of bounds"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Makes the recursive call that uses `vals[index]`: with `target - vals[index]` and `index + 1`"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(b) Makes the recursive call that skips `vals[index]` and combines the two results so that the method returns true if either one is true"
+      }
+    ],
+    "sampleResponse": "```java\npublic static int ways(int n) {\n    if (n < 0) {\n        return 0;\n    }\n    if (n == 0) {\n        return 1;\n    }\n    return ways(n - 1) + ways(n - 2) + ways(n - 3);\n}\n\npublic static boolean canMake(int[] vals, int index, int target) {\n    if (target == 0) {\n        return true;\n    }\n    if (index >= vals.length) {\n        return false;\n    }\n    return canMake(vals, index + 1, target - vals[index]) || canMake(vals, index + 1, target);\n}\n```\nIn `ways`, the last move is 1, 2 or 3 steps, so the number of ways to climb `n` steps is the sum of the numbers of ways to climb `n - 1`, `n - 2` and `n - 3` steps. In `canMake`, each value is either used (the target shrinks by that value) or skipped.",
+    "reviewed": false
+  }
+]

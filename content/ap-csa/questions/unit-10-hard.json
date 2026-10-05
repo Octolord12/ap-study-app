@@ -1,0 +1,560 @@
+[
+  {
+    "id": "ap-csa-u10-mcq-31",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static void f(int n) {\n    if (n <= 0) {\n        return;\n    }\n    System.out.print(n + \" \");\n    f(n - 2);\n    f(n - 1);\n    System.out.print(\"* \");\n}\n```\n\n```java\nf(3);\nSystem.out.println();\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3 2 1 * * 1 * *",
+        "isCorrect": false,
+        "explanation": "This calls `f(n - 1)` before `f(n - 2)`. The method makes the call with `n - 2` first."
+      },
+      {
+        "label": "B",
+        "text": "3 1 * 2 1 * * *",
+        "isCorrect": true,
+        "explanation": "`f(3)` prints 3, then `f(1)` prints 1 (its calls with -1 and 0 print nothing) and a star; then `f(2)` prints 2, calls `f(0)` (nothing) and `f(1)` (prints 1 and a star), and prints a star; finally `f(3)` prints a star. Output: 3 1 * 2 1 * * *."
+      },
+      {
+        "label": "C",
+        "text": "3 1 0 * * 2 0 * 1 0 * * * *",
+        "isCorrect": false,
+        "explanation": "This lets the call with `n` equal to 0 print a 0 and continue. The base case `n <= 0` returns immediately for 0."
+      },
+      {
+        "label": "D",
+        "text": "3 1 * *",
+        "isCorrect": false,
+        "explanation": "This stops after the first recursive call. After `f(n - 2)` returns, the method also calls `f(n - 1)`, and each call prints a star when both calls are finished."
+      }
+    ],
+    "explanation": "Output printed before a recursive call comes out in call order; output printed after it comes out as the calls return.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-32",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static int g(int n) {\n    if (n < 3) {\n        return n;\n    }\n    return g(n - 1) + g(n - 3);\n}\n```\n\n```java\nSystem.out.println(g(7));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "21",
+        "isCorrect": false,
+        "explanation": "This reads the second call as `g(n - 2)`, which gives a different recurrence. The method adds `g(n - 1)` and `g(n - 3)`."
+      },
+      {
+        "label": "B",
+        "text": "10",
+        "isCorrect": true,
+        "explanation": "g(0) = 0, g(1) = 1 and g(2) = 2 are base cases. Then g(3) = g(2) + g(0) = 2, g(4) = g(3) + g(1) = 3, g(5) = g(4) + g(2) = 5, g(6) = g(5) + g(3) = 7 and g(7) = g(6) + g(4) = 10."
+      },
+      {
+        "label": "C",
+        "text": "9",
+        "isCorrect": false,
+        "explanation": "This treats every base case as returning 1. For `n` less than 3, the method returns `n` itself: g(0) is 0, g(1) is 1 and g(2) is 2."
+      },
+      {
+        "label": "D",
+        "text": "13",
+        "isCorrect": false,
+        "explanation": "This returns 3 for g(3). The base case applies only to `n < 3`; g(3) is g(2) + g(0)."
+      }
+    ],
+    "explanation": "Evaluate a recurrence from the base cases upward, keeping a table of the values you have already found.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-33",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nstatic int calls = 0;\n\npublic static int fib(int n) {\n    calls++;\n    if (n <= 1) {\n        return n;\n    }\n    return fib(n - 1) + fib(n - 2);\n}\n```\n\n```java\nSystem.out.println(fib(5) + \" \" + calls);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5 8",
+        "isCorrect": false,
+        "explanation": "This counts only the calls that reach the base case. Every call is counted, including those that go on to make two more calls."
+      },
+      {
+        "label": "B",
+        "text": "5 5",
+        "isCorrect": false,
+        "explanation": "This counts one call for each value of `n` from 1 to 5. The same values are computed again and again: `fib(3)` runs twice and `fib(2)` three times."
+      },
+      {
+        "label": "C",
+        "text": "5 15",
+        "isCorrect": true,
+        "explanation": "`fib(5)` returns 5. Let c(n) be the number of calls made by `fib(n)`, including itself: c(0) = c(1) = 1 and c(n) = 1 + c(n - 1) + c(n - 2), which gives 3, 5, 9 and 15 for n = 2 to 5. So `calls` is 15."
+      },
+      {
+        "label": "D",
+        "text": "5 7",
+        "isCorrect": false,
+        "explanation": "7 is the number of calls that make further calls. The 8 calls that stop at the base case also increment `calls`."
+      }
+    ],
+    "explanation": "A recursive method that makes two calls recomputes the same values many times; count all calls in the tree, not just the distinct arguments.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-34",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static String weave(String a, String b) {\n    if (a.length() == 0) {\n        return b;\n    }\n    return a.charAt(0) + weave(b, a.substring(1));\n}\n```\n\n```java\nSystem.out.println(weave(\"abc\", \"XYZ\") + \" \" + weave(\"ab\", \"XYZ\") + \" [\" + weave(\"\", \"Q\") + \"]\");\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "aXbYcZ aXbYZ []",
+        "isCorrect": false,
+        "explanation": "`weave(\"\", \"Q\")` has an empty first string, so the base case returns the second string, \"Q\"."
+      },
+      {
+        "label": "B",
+        "text": "abcXYZ abXYZ [Q]",
+        "isCorrect": false,
+        "explanation": "This keeps the strings in the same order in each call, so the characters are not interleaved. The call swaps them: `weave(b, a.substring(1))`."
+      },
+      {
+        "label": "C",
+        "text": "aXbYcZ aXbYZ [Q]",
+        "isCorrect": true,
+        "explanation": "Each call takes the first letter of `a`, then swaps the roles of the strings. `weave(\"abc\", \"XYZ\")` gives a, X, b, Y, c, Z. For `weave(\"ab\", \"XYZ\")`: a, X, b, Y, and then `a` is empty (after the swap) with \"Z\" left, which the base case returns: aXbYZ. `weave(\"\", \"Q\")` returns \"Q\"."
+      },
+      {
+        "label": "D",
+        "text": "aXbYcZ aXbY []",
+        "isCorrect": false,
+        "explanation": "This drops the letters left in `b` when `a` is empty. The base case returns `b`, so the leftover letters are added to the end."
+      }
+    ],
+    "explanation": "When two arguments swap roles in each call, track which string is currently `a` and which is `b`, and remember what the base case returns.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-35",
+    "unit": "unit-10-recursion",
+    "topic": "recursive-searching-sorting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nstatic int calls = 0;\n\npublic static int bs(int[] a, int t, int lo, int hi) {\n    calls++;\n    if (lo > hi) {\n        return -1;\n    }\n    int mid = (lo + hi) / 2;\n    if (a[mid] == t) {\n        return mid;\n    }\n    if (a[mid] < t) {\n        return bs(a, t, mid + 1, hi);\n    }\n    return bs(a, t, lo, mid - 1);\n}\n```\n\n```java\nint[] a = {3, 8, 12, 15, 21, 27, 34, 40, 52};\nint x = bs(a, 27, 0, a.length - 1);\nint y = bs(a, 10, 0, a.length - 1);\nSystem.out.println(x + \" \" + y + \" \" + calls);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5 -1 3",
+        "isCorrect": false,
+        "explanation": "`calls` counts the calls for both searches, 3 for 27 and 4 for 10."
+      },
+      {
+        "label": "B",
+        "text": "5 -1 7",
+        "isCorrect": true,
+        "explanation": "Searching for 27 examines index 4 (21), then index 6 (34), then index 5 (27): found at index 5 after 3 calls. Searching for 10 examines index 4 (21), index 1 (8), index 2 (12), and then `lo` (2) is greater than `hi` (1): -1 after 4 calls. `calls` is 3 + 4 = 7."
+      },
+      {
+        "label": "C",
+        "text": "-1 -1 7",
+        "isCorrect": false,
+        "explanation": "This stops when `lo` equals `hi`, so a one-element range is never examined and 27 is not found. The method stops only when `lo > hi`."
+      },
+      {
+        "label": "D",
+        "text": "5 -1 8",
+        "isCorrect": false,
+        "explanation": "This rounds the midpoint up, which changes which elements are examined and adds a call. The method uses integer division, `(lo + hi) / 2`, which rounds down."
+      },
+      {
+        "label": "E",
+        "text": "5 -1 4",
+        "isCorrect": false,
+        "explanation": "`calls` is a static variable shared by both searches, so it also includes the 3 calls made for 27."
+      }
+    ],
+    "explanation": "Binary search halves the range each call; trace `lo`, `hi` and `mid` carefully, and note that a static counter accumulates across all searches.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-36",
+    "unit": "unit-10-recursion",
+    "topic": "recursive-searching-sorting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\nThe method `merge` merges the sorted ranges `a[lo..mid]` and `a[mid + 1..hi]` into one sorted range `a[lo..hi]`.\n\n```java\npublic static void sort(int[] a, int lo, int hi) {\n    if (lo >= hi) {\n        return;\n    }\n    int mid = (lo + hi) / 2;\n    sort(a, lo, mid);\n    sort(a, mid + 1, hi);\n    merge(a, lo, mid, hi);\n    String s = \"\";\n    for (int i = lo; i <= hi; i++) {\n        s += a[i];\n    }\n    System.out.print(s + \" \");\n}\n\npublic static void merge(int[] a, int lo, int mid, int hi) {\n    int[] t = new int[hi - lo + 1];\n    int i = lo, j = mid + 1, k = 0;\n    while (i <= mid && j <= hi) {\n        if (a[i] <= a[j]) {\n            t[k++] = a[i++];\n        } else {\n            t[k++] = a[j++];\n        }\n    }\n    while (i <= mid) {\n        t[k++] = a[i++];\n    }\n    while (j <= hi) {\n        t[k++] = a[j++];\n    }\n    for (k = 0; k < t.length; k++) {\n        a[lo + k] = t[k];\n    }\n}\n```\n\n```java\nint[] a = {5, 2, 4, 1, 3};\nsort(a, 0, a.length - 1);\nSystem.out.println();\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "245 13 12345",
+        "isCorrect": false,
+        "explanation": "This leaves out the range 0 to 1. The call `sort(a, 0, 2)` first sorts the range 0 to 1 (which merges 5 and 2 and prints 25) before merging in the element at index 2."
+      },
+      {
+        "label": "B",
+        "text": "25 245 13 12345",
+        "isCorrect": true,
+        "explanation": "`sort(a, 0, 4)` calls `sort(a, 0, 2)` first. That calls `sort(a, 0, 1)`, which merges 5 and 2 and prints 25; then it merges in 4 and prints 245. Next `sort(a, 3, 4)` merges 1 and 3 and prints 13. Finally the whole array is merged and prints 12345. Output: 25 245 13 12345."
+      },
+      {
+        "label": "C",
+        "text": "13 25 245 12345",
+        "isCorrect": false,
+        "explanation": "This sorts the right half before the left half. The method sorts `a[lo..mid]` first, so the ranges are reported from the left."
+      },
+      {
+        "label": "D",
+        "text": "52 254 13 24513",
+        "isCorrect": false,
+        "explanation": "This reports each range before it is merged, so the digits appear in their unsorted order. The method merges first and then prints the sorted range."
+      }
+    ],
+    "explanation": "Merge sort prints a range only after both of its halves are sorted and merged, so smaller ranges are reported before the ranges that contain them.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-37",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nstatic int calls = 0;\n\npublic static int pow(int b, int e) {\n    calls++;\n    if (e == 0) {\n        return 1;\n    }\n    if (e % 2 == 0) {\n        int h = pow(b, e / 2);\n        return h * h;\n    }\n    return b * pow(b, e - 1);\n}\n```\n\n```java\nSystem.out.println(pow(3, 10) + \" \" + calls);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "59049 5",
+        "isCorrect": false,
+        "explanation": "The call with `e` equal to 0 is also a call, and it increments `calls`; the calls are for 10, 5, 4, 2, 1 and 0."
+      },
+      {
+        "label": "B",
+        "text": "59049 6",
+        "isCorrect": true,
+        "explanation": "3 to the 10th power is 59049. The calls use the exponents 10 (even, halve), 5 (odd, subtract 1), 4, 2, 1 and 0, which is 6 calls."
+      },
+      {
+        "label": "C",
+        "text": "59049 11",
+        "isCorrect": false,
+        "explanation": "This would be the number of calls if the exponent went down by 1 each time. For an even exponent the method halves it, so the exponents are 10, 5, 4, 2, 1 and 0."
+      },
+      {
+        "label": "D",
+        "text": "72 6",
+        "isCorrect": false,
+        "explanation": "This adds the half-power to itself instead of squaring it. The method multiplies, `h * h`."
+      }
+    ],
+    "explanation": "Using the exponent's parity, the method needs only about log2 of the exponent calls instead of one per unit.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-38",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static String conv(int n, int base) {\n    if (n < base) {\n        return \"\" + n;\n    }\n    return conv(n / base, base) + n % base;\n}\n```\n\n```java\nSystem.out.println(conv(37, 3) + \" \" + conv(37, 2) + \" \" + conv(2, 3));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1101 20101 2",
+        "isCorrect": false,
+        "explanation": "This treats `n` equal to the base as a single digit, which gives a digit that is not valid in that base. The base case is `n < base`."
+      },
+      {
+        "label": "B",
+        "text": "1011 101001 2",
+        "isCorrect": false,
+        "explanation": "This puts each remainder in front of the result of the recursive call, so the digits come out reversed. The remainder is appended after it."
+      },
+      {
+        "label": "C",
+        "text": "112 118 2",
+        "isCorrect": false,
+        "explanation": "This swaps `/` and `%`. The recursive call is on the quotient, `n / base`, and the remainder `n % base` is appended."
+      },
+      {
+        "label": "D",
+        "text": "1101 100101 2",
+        "isCorrect": true,
+        "explanation": "37 = 1 * 27 + 1 * 9 + 0 * 3 + 1, so `conv(37, 3)` is 1101. 37 in base 2 is 100101. `conv(2, 3)`: 2 < 3, so it returns \"2\". Each recursive call computes the digits of the quotient first, and the remainder is appended last."
+      }
+    ],
+    "explanation": "Appending the remainder after the recursive result gives digits in the correct order (most significant first).",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-39",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "Consider the following method.\n\n```java\npublic static int f(int n) {\n    if (n == 0) {\n        return 0;\n    }\n    return n + f(n - 3);\n}\n```\n\nWhich of the following calls will return a value without causing a `StackOverflowError`?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "`f(16)`",
+        "isCorrect": false,
+        "explanation": "The argument goes 16, 13, 10, 7, 4, 1, -2, ... It skips 0, so the base case is never reached."
+      },
+      {
+        "label": "B",
+        "text": "`f(14)`",
+        "isCorrect": false,
+        "explanation": "The argument goes 14, 11, 8, 5, 2, -1, -4, ... It skips 0, so the base case is never reached and the recursion continues until the stack overflows."
+      },
+      {
+        "label": "C",
+        "text": "`f(22)`",
+        "isCorrect": false,
+        "explanation": "The argument goes 22, 19, 16, 13, 10, 7, 4, 1, -2, ... It skips 0, so the base case is never reached."
+      },
+      {
+        "label": "D",
+        "text": "`f(20)`",
+        "isCorrect": false,
+        "explanation": "The argument goes 20, 17, 14, 11, 8, 5, 2, -1, ... It skips 0, so the base case is never reached."
+      },
+      {
+        "label": "E",
+        "text": "`f(18)`",
+        "isCorrect": true,
+        "explanation": "The argument goes 18, 15, 12, 9, 6, 3, 0, so it reaches the base case, and the method returns 18 + 15 + 12 + 9 + 6 + 3 = 63."
+      }
+    ],
+    "explanation": "The base case `n == 0` is reached only when the argument is a multiple of 3, since each call subtracts 3; otherwise the argument passes 0 and keeps decreasing.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-40",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static boolean isPal(String s) {\n    if (s.length() == 0) {\n        return true;\n    }\n    if (s.charAt(0) != s.charAt(s.length() - 1)) {\n        return false;\n    }\n    return isPal(s.substring(1, s.length() - 1));\n}\n```\n\n```java\nString out = \"\";\nString[] words = {\"abba\", \"abca\", \"aba\"};\nfor (String w : words) {\n    try {\n        out += isPal(w) + \" \";\n    } catch (StringIndexOutOfBoundsException e) {\n        out += \"error \";\n    }\n}\nSystem.out.println(out);\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "true false false",
+        "isCorrect": false,
+        "explanation": "\"aba\" is a palindrome, so no call returns false. But the recursion reaches the one-letter string \"b\", which is not an empty string, and then calls `substring(1, 0)`, which throws an exception."
+      },
+      {
+        "label": "B",
+        "text": "true false error",
+        "isCorrect": true,
+        "explanation": "\"abba\" reduces to \"bb\" and then \"\", which is the base case: true. \"abca\" reduces to \"bc\", whose first and last letters differ: false. \"aba\" reduces to \"b\"; the base case only covers the empty string, so the method compares the letter with itself and calls `substring(1, 0)`, which throws a `StringIndexOutOfBoundsException`, caught and recorded as error."
+      },
+      {
+        "label": "C",
+        "text": "true false true",
+        "isCorrect": false,
+        "explanation": "This is the result if a one-letter string were also a base case. Here the only base case is the empty string, so for \"aba\" the recursion reaches \"b\" and then calls `substring(1, 0)`, which throws an exception."
+      },
+      {
+        "label": "D",
+        "text": "true true error",
+        "isCorrect": false,
+        "explanation": "For \"abca\", the first and last letters match, but the call on \"bc\" compares `b` and `c`, which differ, so the result is false."
+      }
+    ],
+    "explanation": "A recursive method that removes two characters per call needs a base case for both even and odd lengths (length 0 and length 1).",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-41",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static void move(int n, char from, char to, char spare) {\n    if (n == 0) {\n        return;\n    }\n    move(n - 1, from, spare, to);\n    System.out.print(from + \"\" + to + \" \");\n    move(n - 1, spare, to, from);\n}\n```\n\n```java\nmove(3, 'A', 'C', 'B');\nSystem.out.println();\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "AC AB CB AC BA BC AC",
+        "isCorrect": true,
+        "explanation": "`move(3, A, C, B)` first moves two disks from A to B (using C as the spare): AC, AB, CB. Then it prints AC for the largest disk. Then it moves the two disks from B to C (using A as the spare): BA, BC, AC. Output: AC AB CB AC BA BC AC."
+      },
+      {
+        "label": "B",
+        "text": "AC AB AB AC AB AC AC",
+        "isCorrect": false,
+        "explanation": "This moves the smaller stack from the original peg again. The second recursive call moves the stack from the spare peg onto the target: `move(n - 1, spare, to, from)`."
+      },
+      {
+        "label": "C",
+        "text": "AC CB AB BA AC BC AC",
+        "isCorrect": false,
+        "explanation": "This prints the move for the largest disk after the smaller stack has been moved on top of it. The move is printed between the two recursive calls."
+      },
+      {
+        "label": "D",
+        "text": "AC AC BC AC BC BC AC",
+        "isCorrect": false,
+        "explanation": "This moves the smaller stack to the target instead of the spare peg first. The first recursive call uses the spare peg as its destination: `move(n - 1, from, spare, to)`."
+      }
+    ],
+    "explanation": "In the towers of Hanoi recursion, the roles of the three pegs (`from`, `to`, `spare`) change with each recursive call, so trace each call's parameters carefully.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-42",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\nstatic boolean[][] blocked = {\n    {false, false, false},\n    {false, true, false},\n    {false, false, false}\n};\n\npublic static int paths(int r, int c) {\n    if (r < 0 || c < 0 || blocked[r][c]) {\n        return 0;\n    }\n    if (r == 0 && c == 0) {\n        return 1;\n    }\n    return paths(r - 1, c) + paths(r, c - 1);\n}\n```\n\n```java\nSystem.out.println(paths(2, 2) + \" \" + paths(1, 2) + \" \" + paths(0, 2) + \" \" + paths(1, 1));\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "6 3 1 2",
+        "isCorrect": false,
+        "explanation": "This ignores the blocked cell in the middle of the grid, so more paths are counted. A blocked cell returns 0."
+      },
+      {
+        "label": "B",
+        "text": "2 2 1 0",
+        "isCorrect": false,
+        "explanation": "`paths(1, 2)` is `paths(0, 2) + paths(1, 1)`, that is 1 + 0, because the cell (1, 1) is blocked."
+      },
+      {
+        "label": "C",
+        "text": "2 1 1 2",
+        "isCorrect": false,
+        "explanation": "`paths(1, 1)` is the blocked cell, so it returns 0 even though its neighbors can be reached."
+      },
+      {
+        "label": "D",
+        "text": "2 1 1 0",
+        "isCorrect": true,
+        "explanation": "Paths can only reach (r, c) from above or from the left, and (1, 1) is blocked. `paths(0, 2)` = 1 (straight along the top row), `paths(1, 1)` = 0 (blocked), `paths(1, 2)` = 1 + 0 = 1, and `paths(2, 2)` = `paths(1, 2)` + `paths(2, 1)` = 1 + 1 = 2."
+      }
+    ],
+    "explanation": "A recursive count of paths adds the counts from each neighboring cell, with 0 for a cell that is off the grid or blocked.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-43",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static void permute(String prefix, String rest) {\n    if (rest.length() == 0) {\n        System.out.print(prefix + \" \");\n        return;\n    }\n    for (int i = 0; i < rest.length(); i++) {\n        permute(prefix + rest.charAt(i), rest.substring(i + 1) + rest.substring(0, i));\n    }\n}\n```\n\n```java\npermute(\"\", \"abc\");\nSystem.out.println();\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "abc acb bac bca cab cba",
+        "isCorrect": false,
+        "explanation": "This is the usual order, which removes the chosen letter and keeps the others in their original order. This method puts the letters after the chosen one first, so the remaining letters are rotated."
+      },
+      {
+        "label": "B",
+        "text": "abc acb bca bac cba cab",
+        "isCorrect": false,
+        "explanation": "In `permute(\"c\", \"ab\")`, the loop takes the letters of \"ab\" in order: `a` first (cab) and then `b` (cba)."
+      },
+      {
+        "label": "C",
+        "text": "abc acb bca bac cab cba",
+        "isCorrect": true,
+        "explanation": "Each call tries every letter of `rest` as the next letter, passing on the other letters rotated so that the letters after the chosen one come first. From the empty prefix: a with \"bc\" gives abc and acb; b with \"ca\" gives bca and bac; c with \"ab\" gives cab and cba."
+      },
+      {
+        "label": "D",
+        "text": "abc ac bc c",
+        "isCorrect": false,
+        "explanation": "This drops the letters before the chosen one. The method keeps them by adding `rest.substring(0, i)` at the end."
+      }
+    ],
+    "explanation": "Trace the recursion tree with the exact string passed in each call; the order of the output depends on how the remaining letters are arranged.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-44",
+    "unit": "unit-10-recursion",
+    "topic": "recursion-basics",
+    "difficulty": "hard",
+    "stem": "The method `sumDigits` is intended to return the sum of the digits of a non-negative integer. For example, `sumDigits(4821)` should return 15.\n\n```java\npublic static int sumDigits(int n) {\n    if (n < 10) {\n        return n;\n    }\n    /* missing code */\n}\n```\n\nWhich of the following statements, when used to replace `/* missing code */`, will make the method work as intended?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "`return sumDigits(n / 10);`",
+        "isCorrect": false,
+        "explanation": "This discards the last digit in every call without adding it, so only the first digit remains. `sumDigits(4821)` returns 4."
+      },
+      {
+        "label": "B",
+        "text": "`return n % 10 * sumDigits(n / 10);`",
+        "isCorrect": false,
+        "explanation": "This multiplies the digits instead of adding them. `sumDigits(4821)` returns 64."
+      },
+      {
+        "label": "C",
+        "text": "`return n / 10 + sumDigits(n % 10);`",
+        "isCorrect": false,
+        "explanation": "This adds the number without its last digit (482) to the digit sum of only the last digit, and `sumDigits(4821)` returns 483."
+      },
+      {
+        "label": "D",
+        "text": "`return n % 10 + sumDigits(n % 10);`",
+        "isCorrect": false,
+        "explanation": "The recursive call uses the last digit again instead of the remaining digits, so the other digits are never added. `sumDigits(4821)` returns 2."
+      },
+      {
+        "label": "E",
+        "text": "`return n % 10 + sumDigits(n / 10);`",
+        "isCorrect": true,
+        "explanation": "`n % 10` is the last digit and `n / 10` removes it, so the method adds the last digit to the sum of the digits of the rest. For 4821: 1 + (2 + (8 + 4)) = 15."
+      }
+    ],
+    "explanation": "A recursive digit method splits `n` into its last digit (`n % 10`) and the rest (`n / 10`), combines the last digit with the result for the rest, and has a base case for a single digit.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u10-mcq-45",
+    "unit": "unit-10-recursion",
+    "topic": "recursive-searching-sorting",
+    "difficulty": "hard",
+    "stem": "What is printed as a result of executing the following code segment?\n\n```java\npublic static void selSort(int[] a, int start) {\n    if (start >= a.length - 1) {\n        return;\n    }\n    int min = start;\n    for (int i = start + 1; i < a.length; i++) {\n        if (a[i] < a[min]) {\n            min = i;\n        }\n    }\n    int t = a[start];\n    a[start] = a[min];\n    a[min] = t;\n    String s = \"\";\n    for (int v : a) {\n        s += v;\n    }\n    System.out.print(s + \" \");\n    selSort(a, start + 1);\n}\n```\n\n```java\nint[] a = {4, 3, 1, 5, 2};\nselSort(a, 0);\nSystem.out.println();\n```",
+    "choices": [
+      {
+        "label": "A",
+        "text": "13452 12453 12354",
+        "isCorrect": false,
+        "explanation": "This stops one level early and omits the last print. The recursion continues while `start` is less than `a.length - 1`, so it runs for `start` values 0 to 3."
+      },
+      {
+        "label": "B",
+        "text": "12345 12354 12453 13452",
+        "isCorrect": false,
+        "explanation": "This prints after the recursive call, so the states come out in reverse order. The method prints the array before making the recursive call."
+      },
+      {
+        "label": "C",
+        "text": "13452 12453 12354 12345",
+        "isCorrect": true,
+        "explanation": "Each call moves the smallest remaining element to position `start` and prints the array. Start 0: swap 1 into place: 13452. Start 1: swap 2 into place: 12453. Start 2: swap 3 into place: 12354. Start 3: swap 4 into place: 12345. For `start` equal to 4 the base case returns."
+      },
+      {
+        "label": "D",
+        "text": "53142 54132 54312 54321",
+        "isCorrect": false,
+        "explanation": "This selects the largest remaining element instead of the smallest, which gives a descending order. The method looks for the smallest with `<`."
+      }
+    ],
+    "explanation": "Recursive selection sort places one element per call; the output shows the array after each placement, from the first call to the last.",
+    "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
+    "reviewed": false
+  }
+]

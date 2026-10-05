@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-csa-u5-frq-4",
+    "unit": "unit-5-writing-classes",
+    "topic": "anatomy-of-a-class",
+    "prompt": "Write a complete class named `Account` that models a simple bank account. The class must have the following behavior.\n\n- A private `String` instance variable for the owner's name and a private `double` instance variable for the balance.\n- A constructor `Account(String owner, double initialDeposit)` that sets the owner and sets the balance to `initialDeposit`, or to 0 if `initialDeposit` is not positive.\n- Accessor methods `getOwner` and `getBalance`.\n- A method `deposit(double amount)` that adds `amount` to the balance. If `amount` is not positive, the balance is unchanged.\n- A method `boolean withdraw(double amount)` that, if `amount` is positive and not greater than the balance, subtracts it from the balance and returns `true`. Otherwise the balance is unchanged and the method returns `false`.\n- A `static` method `getAccountCount` that returns the total number of `Account` objects that have been created.\n\nThe following code segment shows an example of the class in use.\n\n```java\nAccount a = new Account(\"Ann\", 100);\na.deposit(50);\na.deposit(-20);                      // ignored\nboolean w1 = a.withdraw(30);         // true; balance is now 120.0\nboolean w2 = a.withdraw(500);        // false; balance is unchanged\nboolean w3 = a.withdraw(0);          // false; balance is unchanged\nSystem.out.println(a.getBalance() + \" \" + Account.getAccountCount());   // 120.0 1\n```",
+    "pointValue": 8,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Declares the class with private instance variables for the owner and the balance, and a `static` counter"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Constructor assigns the owner and sets the balance correctly (0 if the deposit is not positive)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Constructor increments the static counter"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "Provides correct accessor methods `getOwner` and `getBalance`"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "`deposit` adds only positive amounts"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "`withdraw` tests that the amount is positive and not greater than the balance"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "`withdraw` subtracts and returns `true` on success; returns `false` with no change otherwise"
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "`getAccountCount` is declared `static` and returns the counter"
+      }
+    ],
+    "sampleResponse": "```java\npublic class Account {\n    private static int accountCount = 0;\n    private String owner;\n    private double balance;\n\n    public Account(String owner, double initialDeposit) {\n        this.owner = owner;\n        if (initialDeposit > 0) {\n            balance = initialDeposit;\n        } else {\n            balance = 0;\n        }\n        accountCount++;\n    }\n\n    public String getOwner() { return owner; }\n\n    public double getBalance() { return balance; }\n\n    public void deposit(double amount) {\n        if (amount > 0) {\n            balance += amount;\n        }\n    }\n\n    public boolean withdraw(double amount) {\n        if (amount <= 0 || amount > balance) {\n            return false;\n        }\n        balance -= amount;\n        return true;\n    }\n\n    public static int getAccountCount() { return accountCount; }\n}\n```\nThe counter is `static` so that it is shared by every `Account`; the constructor increments it once for each object created.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-csa-u5-frq-5",
+    "unit": "unit-5-writing-classes",
+    "topic": "constructors",
+    "prompt": "Write a complete class named `Fraction` that represents a rational number. The class must have the following behavior.\n\n- Private `int` instance variables for the numerator and the denominator.\n- A constructor `Fraction(int numerator, int denominator)`, where the denominator is not 0. The fraction is stored in lowest terms, and if it is negative the negative sign is stored in the numerator (so the denominator is always positive). For example, `new Fraction(2, 4)` is stored as 1/2, `new Fraction(1, -2)` is stored as -1/2 and `new Fraction(-3, -6)` is stored as 1/2. You may write a helper method to find the greatest common divisor of two nonnegative integers.\n- A method `Fraction add(Fraction other)` that returns a new `Fraction`, in lowest terms, that is the sum of this fraction and `other`. Neither fraction is changed. For example, 1/2 plus 1/3 is 5/6.\n- A method `toString` that returns the fraction as a `String` in the form `numerator/denominator`, except that when the denominator is 1 it returns only the numerator. For example, the `String` for 6/3 is `\"2\"`, and for 1/-2 it is `\"-1/2\"`.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Declares a class with private numerator and denominator variables"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Constructor reduces the fraction using a correct greatest-common-divisor computation"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Constructor stores the sign in the numerator so that the denominator is positive"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "`add` uses a common denominator (or cross multiplication) to compute the sum"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "`add` returns a new reduced `Fraction` and does not modify either operand"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "`toString` returns \"numerator/denominator\", or only the numerator when the denominator is 1"
+      }
+    ],
+    "sampleResponse": "```java\npublic class Fraction {\n    private int num;\n    private int den;\n\n    public Fraction(int numerator, int denominator) {\n        int g = gcd(Math.abs(numerator), Math.abs(denominator));\n        if (g == 0) {\n            g = 1;\n        }\n        num = numerator / g;\n        den = denominator / g;\n        if (den < 0) {\n            num = -num;\n            den = -den;\n        }\n    }\n\n    private static int gcd(int a, int b) {\n        while (b != 0) {\n            int t = a % b;\n            a = b;\n            b = t;\n        }\n        return a;\n    }\n\n    public Fraction add(Fraction other) {\n        return new Fraction(num * other.den + other.num * den, den * other.den);\n    }\n\n    public String toString() {\n        if (den == 1) {\n            return \"\" + num;\n        }\n        return num + \"/\" + den;\n    }\n}\n```\nThe constructor does all of the reducing, so `add` can build the unreduced sum $\\frac{a}{b}+\\frac{c}{d}=\\frac{ad+cb}{bd}$ and pass it to the constructor.",
+    "reviewed": false
+  }
+]

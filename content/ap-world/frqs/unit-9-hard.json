@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u9-frq-4",
+    "unit": "unit-9-globalization",
+    "topic": "globalized-culture",
+    "prompt": "Use the passage to answer parts A, B and C.\n\n> “Wherever you travel, you find the same fast-food chains, the same Hollywood films and the same pop songs on the radio. Local traditions are being swept away by a single global culture.”\n>\n> *Source: A cultural critic, 1990s*\n\n**a)** Identify ONE concern expressed by the critic.\n\n**b)** Explain ONE development since 1950 that helped spread the global cultural products described in the passage.\n\n**c)** Explain ONE way in which local cultures have responded to or influenced global culture.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a concern such as the loss of local traditions or the dominance of a single global culture"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as satellite television and the internet, cheaper air travel, multinational corporations and advertising, or trade agreements that opened markets"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a response or influence such as adapting global products to local tastes, the global popularity of local forms (such as Bollywood films or K-pop), or movements to protect local languages and traditions"
+      }
+    ],
+    "sampleResponse": "a) The critic is concerned that local traditions are being replaced by a uniform global culture dominated by a few brands and industries.\nb) Satellite television, the internet and cheaper travel and communication, along with the global advertising and distribution networks of multinational corporations, made it easy to spread products such as American films and fast food worldwide.\nc) Local cultures often adapt global products to local tastes, such as restaurant chains offering regional menu items, and some local forms of culture, such as Bollywood films or Korean pop music, have gained audiences around the world.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u9-frq-5",
+    "unit": "unit-9-globalization",
+    "topic": "rights-based-movements",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which rights-based movements changed societies in TWO of the following regions between 1900 and the present: the United States, South Africa, India, the Middle East.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent of change brought by rights-based movements in two regions"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Describes broader context, such as decolonization, the Cold War or the spread of human rights ideas"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate examples for each region (1 point for addressing the topic, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and shows complexity by noting remaining inequalities or the role of international pressure (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response takes a position (for example that rights-based movements brought major legal changes in the United States and South Africa but that social and economic inequalities persisted). It places the topic in context (decolonization, the Cold War and the spread of human rights ideas) and uses specific evidence such as the civil rights movement and the Civil Rights Act, the Universal Declaration of Human Rights, the anti-apartheid struggle and the 1994 elections, women's suffrage, or the Arab Spring. It analyzes change and continuity and the role of international influences.",
+    "reviewed": false
+  }
+]

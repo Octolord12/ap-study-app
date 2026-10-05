@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-phys1-u8-mcq-31",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "hard",
+    "stem": "A diver is 12 m below the surface of a freshwater lake. The density of the water is 1000 kg/m^3 and atmospheric pressure is $1.01\\times10^5$ Pa. What is the absolute pressure at the diver's depth? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1.1\\times10^6$ Pa",
+        "isCorrect": false,
+        "explanation": "This is off by a factor of 10: $\\rho gh=(1000)(9.8)(12)=1.2\\times10^5$ Pa, not $10^6$."
+      },
+      {
+        "label": "B",
+        "text": "$1.2\\times10^5$ Pa",
+        "isCorrect": false,
+        "explanation": "This is the *gauge* pressure, $\\rho gh$ alone. The absolute pressure also includes the atmosphere pressing on the water's surface."
+      },
+      {
+        "label": "C",
+        "text": "$1.0\\times10^5$ Pa",
+        "isCorrect": false,
+        "explanation": "This is just atmospheric pressure. The water adds $\\rho gh$."
+      },
+      {
+        "label": "D",
+        "text": "$2.2\\times10^5$ Pa",
+        "isCorrect": true,
+        "explanation": "$P=P_0+\\rho gh=1.01\\times10^5+(1000)(9.8)(12)=1.01\\times10^5+1.18\\times10^5\\approx2.2\\times10^5$ Pa."
+      }
+    ],
+    "explanation": "Absolute pressure is atmospheric pressure plus the pressure due to the depth of the fluid, $\\rho gh$.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-32",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "hard",
+    "stem": "In a hydraulic lift, the small piston has an area of $0.0020$ m^2 and the large piston has an area of $0.050$ m^2. The small piston is pushed down 0.50 m. How far does the large piston rise? (The fluid is incompressible.)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.020 m",
+        "isCorrect": true,
+        "explanation": "The fluid volume moved is the same on both sides: $A_1d_1=A_2d_2$, so $d_2=\\frac{(0.0020)(0.50)}{0.050}=0.020$ m. The force is multiplied by 25, and the distance is divided by 25."
+      },
+      {
+        "label": "B",
+        "text": "0.50 m",
+        "isCorrect": false,
+        "explanation": "The large piston cannot move as far as the small one: the volume of fluid displaced is equal, and its area is 25 times as large."
+      },
+      {
+        "label": "C",
+        "text": "12.5 m",
+        "isCorrect": false,
+        "explanation": "This multiplies by the area ratio instead of dividing. A hydraulic lift trades distance for force."
+      },
+      {
+        "label": "D",
+        "text": "0.0040 m",
+        "isCorrect": false,
+        "explanation": "This divides the distance by an area ratio of 125. The areas are in the ratio $\\frac{0.050}{0.0020}=25$."
+      }
+    ],
+    "explanation": "An incompressible fluid transmits volume: the volume pushed down on one side equals the volume pushed up on the other, $A_1d_1=A_2d_2$.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-33",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "hard",
+    "stem": "A uniform block of density 600 kg/m^3 floats in water (density 1000 kg/m^3). The same block is placed in oil of density 800 kg/m^3 and floats. What fraction of the block's volume is submerged in the oil?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.80",
+        "isCorrect": false,
+        "explanation": "This is the density of the oil in g/cm^3, which is not the fraction submerged."
+      },
+      {
+        "label": "B",
+        "text": "0.45",
+        "isCorrect": false,
+        "explanation": "This multiplies $0.60\\times0.75$. The submerged fraction is the ratio of the densities, $\\frac{\\rho_{block}}{\\rho_{oil}}$."
+      },
+      {
+        "label": "C",
+        "text": "0.75",
+        "isCorrect": true,
+        "explanation": "A floating object displaces its own weight of fluid: $\\rho_{block}V=\\rho_{fluid}V_{sub}$, so $\\frac{V_{sub}}{V}=\\frac{\\rho_{block}}{\\rho_{fluid}}=\\frac{600}{800}=0.75$."
+      },
+      {
+        "label": "D",
+        "text": "0.60",
+        "isCorrect": false,
+        "explanation": "0.60 is the fraction submerged in *water*. Oil is less dense than water, so more of the block must be submerged to displace its weight."
+      }
+    ],
+    "explanation": "For a floating object, the buoyant force equals the weight, so the submerged fraction is $\\frac{\\rho_{object}}{\\rho_{fluid}}$.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-34",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "hard",
+    "stem": "An object weighs 50 N in air and has an apparent weight of 30 N when completely submerged in water (density 1000 kg/m^3). What is the density of the object? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2.5\\times10^3$ kg/m^3",
+        "isCorrect": true,
+        "explanation": "The buoyant force is $50-30=20$ N $=\\rho_wV g$, so $V=\\frac{20}{(1000)(9.8)}=2.04\\times10^{-3}$ m^3. The mass is $\\frac{50}{9.8}=5.1$ kg. Density $=\\frac{5.1}{2.04\\times10^{-3}}=2.5\\times10^3$ kg/m^3. (Equivalently, $\\rho=\\rho_w\\frac{W_{air}}{F_B}$.)"
+      },
+      {
+        "label": "B",
+        "text": "$1.0\\times10^3$ kg/m^3",
+        "isCorrect": false,
+        "explanation": "This is the density of the water, not of the object."
+      },
+      {
+        "label": "C",
+        "text": "$1.7\\times10^3$ kg/m^3",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{50}{30}\\times1000$, using the apparent weight in place of the buoyant force."
+      },
+      {
+        "label": "D",
+        "text": "$5.0\\times10^3$ kg/m^3",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{50}{10}\\times1000$. The buoyant force is $20$ N, so the weight is 2.5 times the buoyant force."
+      }
+    ],
+    "explanation": "The weight lost in the fluid equals the buoyant force, which equals the weight of the displaced water.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-35",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "hard",
+    "stem": "Water flows steadily through a horizontal pipe. In a section with a diameter of 6.0 cm the water speed is 2.0 m/s. The pipe narrows to a diameter of 3.0 cm. What is the water speed in the narrow section?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1.0 m/s",
+        "isCorrect": false,
+        "explanation": "The water must speed up in the narrow section to keep the same volume flow rate."
+      },
+      {
+        "label": "B",
+        "text": "4.0 m/s",
+        "isCorrect": false,
+        "explanation": "This uses the ratio of diameters (2), not areas. The cross-sectional area scales as the *square* of the diameter."
+      },
+      {
+        "label": "C",
+        "text": "8.0 m/s",
+        "isCorrect": true,
+        "explanation": "Continuity: $A_1v_1=A_2v_2$. The area is proportional to the diameter squared: $A_2=\\frac14A_1$, so $v_2=4v_1=8.0$ m/s."
+      },
+      {
+        "label": "D",
+        "text": "16 m/s",
+        "isCorrect": false,
+        "explanation": "This squares the area ratio again, $2^4$. The area ratio is $2^2=4$."
+      }
+    ],
+    "explanation": "The volume flow rate $A\\,v$ is the same in every section of an incompressible steady flow.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-36",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "hard",
+    "stem": "Water (density 1000 kg/m^3) flows through a horizontal pipe. In the wide section the speed is 2.0 m/s, and in the narrow section it is 8.0 m/s. By how much is the pressure in the wide section greater than in the narrow section?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3.0\\times10^4$ Pa",
+        "isCorrect": true,
+        "explanation": "Bernoulli's equation for a horizontal pipe: $P_1-P_2=\\frac12\\rho(v_2^2-v_1^2)=\\frac12(1000)(64-4)=3.0\\times10^4$ Pa."
+      },
+      {
+        "label": "B",
+        "text": "$3.2\\times10^4$ Pa",
+        "isCorrect": false,
+        "explanation": "This uses only the speed in the narrow section, $\\frac12\\rho v_2^2$, and ignores the kinetic-energy density in the wide section."
+      },
+      {
+        "label": "C",
+        "text": "$6.0\\times10^4$ Pa",
+        "isCorrect": false,
+        "explanation": "This leaves out the factor $\\frac12$ in $\\frac12\\rho v^2$."
+      },
+      {
+        "label": "D",
+        "text": "$1.8\\times10^4$ Pa",
+        "isCorrect": false,
+        "explanation": "This squares the difference of the speeds, $\\frac12\\rho(v_2-v_1)^2$. The equation uses the difference of the *squares*."
+      }
+    ],
+    "explanation": "Apply Bernoulli's equation between the two sections at the same height: $P_1+\\frac12\\rho v_1^2=P_2+\\frac12\\rho v_2^2$.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-37",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "hard",
+    "stem": "A large open tank of water has a small hole in its side, 1.8 m below the water surface. With what speed does the water leave the hole? ($g=9.8$ m/s^2; neglect viscosity and the change of the water level.)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "8.4 m/s",
+        "isCorrect": false,
+        "explanation": "This is $\\sqrt{4gh}$, doubling the correct square."
+      },
+      {
+        "label": "B",
+        "text": "18 m/s",
+        "isCorrect": false,
+        "explanation": "This is $gh=17.6$, without the square root or the factor 2."
+      },
+      {
+        "label": "C",
+        "text": "4.2 m/s",
+        "isCorrect": false,
+        "explanation": "This is $\\sqrt{gh}$, leaving out the factor 2 from $\\frac12v^2=gh$."
+      },
+      {
+        "label": "D",
+        "text": "5.9 m/s",
+        "isCorrect": true,
+        "explanation": "Bernoulli's equation between the surface (speed $\\approx0$, pressure atmospheric) and the hole (pressure atmospheric) gives $\\frac12v^2=gh$, so $v=\\sqrt{2gh}=\\sqrt{2(9.8)(1.8)}\\approx5.9$ m/s."
+      }
+    ],
+    "explanation": "Water leaving the hole has the same speed as an object falling freely through the depth $h$: $v=\\sqrt{2gh}$.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-38",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "hard",
+    "stem": "Ice has a density of 920 kg/m^3 and seawater has a density of 1025 kg/m^3. What percentage of the volume of a floating iceberg is above the surface of the sea?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "About 90%",
+        "isCorrect": false,
+        "explanation": "This is the fraction that is *below* the surface."
+      },
+      {
+        "label": "B",
+        "text": "About 20%",
+        "isCorrect": false,
+        "explanation": "A floating object displaces its weight in fluid, so the fractions follow from the density ratio, giving about 10%."
+      },
+      {
+        "label": "C",
+        "text": "About 8%",
+        "isCorrect": false,
+        "explanation": "This is $1-\\frac{920}{1000}$, which would be the exposed fraction in fresh water. Seawater is denser, so more of the iceberg floats above the surface."
+      },
+      {
+        "label": "D",
+        "text": "About 10%",
+        "isCorrect": true,
+        "explanation": "The submerged fraction is $\\frac{\\rho_{ice}}{\\rho_{sea}}=\\frac{920}{1025}\\approx0.90$. The fraction above the surface is $1-0.90\\approx0.10$, or about 10%."
+      }
+    ],
+    "explanation": "The submerged fraction of a floating object is $\\frac{\\rho_{object}}{\\rho_{fluid}}$.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-39",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "hard",
+    "stem": "A solid steel ball is completely submerged in a deep lake and lowered from a depth of 1 m to a depth of 5 m. Which statement correctly describes the change?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The buoyant force on the ball increases, because the pressure increases",
+        "isCorrect": false,
+        "explanation": "Pressure increases on all sides of the ball. The *difference* between the pressure on the bottom and top, which gives the net upward force, stays the same."
+      },
+      {
+        "label": "B",
+        "text": "The buoyant force on the ball stays the same, and the pressure on the ball increases",
+        "isCorrect": true,
+        "explanation": "The buoyant force equals the weight of the displaced water, $\\rho_wVg$, which is the same at any depth (water is nearly incompressible). The pressure $P_0+\\rho gh$ increases with depth."
+      },
+      {
+        "label": "C",
+        "text": "The buoyant force on the ball decreases, because the ball is farther from the surface",
+        "isCorrect": false,
+        "explanation": "The buoyant force does not depend on how far the object is from the surface, only on the volume of fluid displaced."
+      },
+      {
+        "label": "D",
+        "text": "The buoyant force and the pressure both stay the same",
+        "isCorrect": false,
+        "explanation": "The pressure at the ball's location increases with depth: $P=P_0+\\rho gh$."
+      }
+    ],
+    "explanation": "The buoyant force depends on the displaced volume and the fluid density, not the depth. Pressure depends on depth.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-40",
+    "unit": "unit-8-fluids",
+    "topic": "density-and-pressure",
+    "difficulty": "hard",
+    "stem": "At what depth in a freshwater lake (density 1000 kg/m^3) is the absolute pressure equal to 3.0 atmospheres? (1 atm $=1.01\\times10^5$ Pa; $g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "41 m",
+        "isCorrect": false,
+        "explanation": "This is the depth for an absolute pressure of 5 atm, twice the extra pressure needed."
+      },
+      {
+        "label": "B",
+        "text": "31 m",
+        "isCorrect": false,
+        "explanation": "This sets $\\rho gh=3.0$ atm, which ignores the 1.0 atm already present at the surface. The water adds the *additional* 2.0 atm."
+      },
+      {
+        "label": "C",
+        "text": "21 m",
+        "isCorrect": true,
+        "explanation": "The pressure from the water must be $3.0-1.0=2.0$ atm $=2.02\\times10^5$ Pa. $h=\\frac{2.02\\times10^5}{(1000)(9.8)}\\approx21$ m."
+      },
+      {
+        "label": "D",
+        "text": "10 m",
+        "isCorrect": false,
+        "explanation": "This is the depth at which the absolute pressure reaches 2 atm (an extra 1 atm)."
+      }
+    ],
+    "explanation": "Absolute pressure is $P_0+\\rho gh$. For 3.0 atm the water must supply 2.0 atm.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-41",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "hard",
+    "stem": "A piece of ice with a small steel ball frozen inside floats in a glass of water that is filled exactly to the brim. After the ice melts completely, the steel ball sinks to the bottom of the glass. What happens to the water level?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The water level stays at the brim",
+        "isCorrect": false,
+        "explanation": "A floating piece of ice alone leaves the level unchanged when it melts. The steel ball sinks, however, displacing less water than its weight would while it was supported by the ice."
+      },
+      {
+        "label": "B",
+        "text": "The water overflows",
+        "isCorrect": false,
+        "explanation": "The sunken ball displaces less water than it did while floating inside the ice (where it displaced its full weight of water), so the level cannot rise."
+      },
+      {
+        "label": "C",
+        "text": "The water level falls (the glass is no longer full)",
+        "isCorrect": true,
+        "explanation": "While the ice floats, the ice-and-ball system displaces its total weight of water. After melting, the melted ice adds the same volume as the ice displaced, but the sunken steel ball displaces only its own volume, which is less than the volume of water that equals its weight. So less water is displaced and the level falls."
+      },
+      {
+        "label": "D",
+        "text": "The water level rises, because the ball adds to the volume",
+        "isCorrect": false,
+        "explanation": "While frozen in the ice, the ball is supported by the buoyant force, which equals the weight of the water displaced by the ball and ice together. Sinking lets the ball displace only its own (smaller) volume."
+      }
+    ],
+    "explanation": "Compare the volume of water displaced before (the weight of the ice and ball divided by $\\rho_w g$) and after (the melt-water plus the ball's own volume).",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-42",
+    "unit": "unit-8-fluids",
+    "topic": "buoyancy",
+    "difficulty": "hard",
+    "stem": "A wooden block of density 400 kg/m^3 and volume $2.0\\times10^{-3}$ m^3 is held completely under water (density 1000 kg/m^3) by a vertical string attached to the bottom of the container. What is the tension in the string? ($g=9.8$ m/s^2)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "12 N",
+        "isCorrect": true,
+        "explanation": "The buoyant force is $\\rho_wVg=(1000)(2.0\\times10^{-3})(9.8)=19.6$ N upward. The weight is $\\rho_bVg=7.84$ N downward. The string must pull down with $T=19.6-7.84\\approx12$ N."
+      },
+      {
+        "label": "B",
+        "text": "7.8 N",
+        "isCorrect": false,
+        "explanation": "This is the block's weight alone. The string must balance the *difference* between the buoyant force and the weight."
+      },
+      {
+        "label": "C",
+        "text": "27 N",
+        "isCorrect": false,
+        "explanation": "This adds the weight and the buoyant force. The weight acts opposite to the buoyant force, so they subtract."
+      },
+      {
+        "label": "D",
+        "text": "20 N",
+        "isCorrect": false,
+        "explanation": "This is the buoyant force alone. The block's own weight offsets part of it."
+      }
+    ],
+    "explanation": "Balance the forces on the block: buoyant force up equals weight plus tension down.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-43",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "hard",
+    "stem": "Water flows at 3.0 m/s through a pipe with a cross-sectional area of 4.0 cm^2. The pipe splits into two identical pipes, each with a cross-sectional area of 1.0 cm^2. If the flow divides equally, what is the speed of the water in each of the smaller pipes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1.5 m/s",
+        "isCorrect": false,
+        "explanation": "This divides the speed by 2 for the split. Flow rate, not speed, divides between the pipes."
+      },
+      {
+        "label": "B",
+        "text": "6.0 m/s",
+        "isCorrect": true,
+        "explanation": "Continuity: the flow rate before the split equals the sum afterward: $(4.0)(3.0)=2(1.0)v$, so $v=6.0$ m/s."
+      },
+      {
+        "label": "C",
+        "text": "12 m/s",
+        "isCorrect": false,
+        "explanation": "This ignores that the flow divides between two pipes; one pipe of 1.0 cm^2 would carry the full flow at $\\frac{(4.0)(3.0)}{1.0}=12$ m/s."
+      },
+      {
+        "label": "D",
+        "text": "3.0 m/s",
+        "isCorrect": false,
+        "explanation": "The total cross-sectional area of the smaller pipes (2.0 cm^2) is only half the area of the larger pipe, so the water must move faster."
+      }
+    ],
+    "explanation": "The total volume flow rate $Av$ is conserved when the pipe branches: $A_1v_1=A_2v_2+A_3v_3$.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-44",
+    "unit": "unit-8-fluids",
+    "topic": "pascals-principle",
+    "difficulty": "hard",
+    "stem": "A force of 60 N is applied to a small piston of radius 2.0 cm in a hydraulic system. The force is transmitted to a large piston of radius 10 cm. What force is exerted on the large piston?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "12 N",
+        "isCorrect": false,
+        "explanation": "This divides by the ratio of the radii. The large piston receives a larger force."
+      },
+      {
+        "label": "B",
+        "text": "300 N",
+        "isCorrect": false,
+        "explanation": "This multiplies by the ratio of the radii (5) rather than the ratio of the areas (25)."
+      },
+      {
+        "label": "C",
+        "text": "1500 N",
+        "isCorrect": true,
+        "explanation": "The pressure is the same on both pistons: $\\frac{F_1}{A_1}=\\frac{F_2}{A_2}$. The area ratio is $\\left(\\frac{10}{2.0}\\right)^2=25$, so $F_2=25(60)=1500$ N."
+      },
+      {
+        "label": "D",
+        "text": "750 N",
+        "isCorrect": false,
+        "explanation": "This multiplies by 12.5, as if the ratio of areas were half the correct value."
+      }
+    ],
+    "explanation": "Equal pressure on the two pistons: $F\\propto A\\propto r^2$.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u8-mcq-45",
+    "unit": "unit-8-fluids",
+    "topic": "fluid-dynamics",
+    "difficulty": "hard",
+    "stem": "Air (density 1.2 kg/m^3) flows over the top of an airplane wing at 70 m/s and under it at 60 m/s. The wing has an area of 16 m^2. Use Bernoulli's equation to estimate the upward force on the wing due to this pressure difference.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$6.2\\times10^3$ N",
+        "isCorrect": false,
+        "explanation": "This halves the correct answer, for example by applying the factor $\\frac12$ twice."
+      },
+      {
+        "label": "B",
+        "text": "$2.5\\times10^4$ N",
+        "isCorrect": false,
+        "explanation": "This leaves out the factor $\\frac12$ in $\\frac12\\rho v^2$."
+      },
+      {
+        "label": "C",
+        "text": "$7.8\\times10^2$ N",
+        "isCorrect": false,
+        "explanation": "$780$ is the pressure difference in pascals. The force is the pressure difference times the wing area."
+      },
+      {
+        "label": "D",
+        "text": "$1.2\\times10^4$ N",
+        "isCorrect": true,
+        "explanation": "$\\Delta P=\\frac12\\rho(v_{top}^2-v_{bottom}^2)=\\frac12(1.2)(4900-3600)=780$ Pa. The force is $\\Delta P\\cdot A=(780)(16)\\approx1.2\\times10^4$ N."
+      }
+    ],
+    "explanation": "The pressure difference is $\\frac12\\rho\\left(v_{top}^2-v_{bottom}^2\\right)$ (the faster air has lower pressure); multiply by the area.",
+    "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
+    "reviewed": false
+  }
+]

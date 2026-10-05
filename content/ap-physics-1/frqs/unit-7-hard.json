@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ap-phys1-u7-frq-4",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "moment-of-inertia-and-rotational-kinetic-energy",
+    "prompt": "A 3.0 kg block hangs from a light string that is wrapped around the rim of a uniform solid disk of mass 2.0 kg and radius 0.10 m. The disk can rotate without friction about a fixed horizontal axle through its center. The block is released from rest. (The rotational inertia of a solid disk is $\\frac12MR^2$; use $g=9.8$ m/s^2.)\n\n**(a)** Write Newton's second law for the block, and the rotational form of Newton's second law for the disk, in terms of the tension $T$ in the string.\n\n**(b)** Calculate the acceleration of the block.\n\n**(c)** Calculate the tension in the string.\n\n**(d)** Calculate the speed of the block after it has descended 2.0 m, and the angular acceleration of the disk.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Block: $mg-T=ma$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Disk: $TR=I\\alpha$ with $I=\\frac12MR^2$ and $\\alpha=\\frac aR$, so $T=\\frac12Ma$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Solves for $a=\\frac{mg}{m+M/2}=7.35$ m/s^2"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Finds $T=\\frac12Ma=7.35$ N (or $m(g-a)$)"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Finds $v=\\sqrt{2a\\,\\Delta y}\\approx5.4$ m/s and $\\alpha=\\frac aR=73.5$ rad/s^2"
+      }
+    ],
+    "sampleResponse": "(a) Taking downward as positive for the block: $mg-T=ma$. For the disk, the string's tension supplies the torque: $TR=I\\alpha=\\frac12MR^2\\alpha$.\n(b) The string does not slip, so $\\alpha=\\frac aR$ and $T=\\frac12Ma$. Substituting: $mg-\\frac12Ma=ma$, so $a=\\frac{mg}{m+\\frac M2}=\\frac{(3.0)(9.8)}{3.0+1.0}=7.35$ m/s^2.\n(c) $T=\\frac12Ma=\\frac12(2.0)(7.35)=7.35$ N. (Check: $m(g-a)=3.0(2.45)=7.35$ N.)\n(d) From rest, $v=\\sqrt{2a\\,\\Delta y}=\\sqrt{2(7.35)(2.0)}\\approx5.4$ m/s. $\\alpha=\\frac aR=\\frac{7.35}{0.10}=73.5$ rad/s^2.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-phys1-u7-frq-5",
+    "unit": "unit-7-torque-and-rotational-motion",
+    "topic": "rotational-equilibrium",
+    "prompt": "A uniform horizontal beam of length 6.0 m and mass 30 kg is attached to a vertical wall by a hinge at its left end. A light cable connects the right end of the beam to the wall above the hinge and makes an angle of $37^\\circ$ with the beam. A 20 kg load hangs from the beam 4.5 m from the hinge. The system is in equilibrium. Use $\\sin37^\\circ=0.60$, $\\cos37^\\circ=0.80$ and $g=9.8$ m/s^2.\n\n**(a)** Write the equation for rotational equilibrium about the hinge.\n\n**(b)** Calculate the tension in the cable.\n\n**(c)** Calculate the horizontal and vertical components of the force the hinge exerts on the beam, and state the direction of each.\n\n**(d)** Calculate the magnitude of the total force the hinge exerts on the beam.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Takes torques about the hinge: $T\\sin37^\\circ(6.0)=(30g)(3.0)+(20g)(4.5)$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Solves for $T=490$ N"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Horizontal hinge component equals $T\\cos37^\\circ=392$ N, directed away from the wall (opposing the cable's horizontal pull)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Vertical hinge component $=50g-T\\sin37^\\circ=196$ N upward"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Combines the components: $\\sqrt{392^2+196^2}\\approx438$ N"
+      }
+    ],
+    "sampleResponse": "(a) About the hinge, the clockwise torques from the beam's weight (at the center, 3.0 m) and the load (4.5 m) balance the counterclockwise torque of the vertical component of the tension (acting at 6.0 m): $T\\sin37^\\circ(6.0)=(30)(9.8)(3.0)+(20)(9.8)(4.5)$.\n(b) $T(0.60)(6.0)=882+882=1764$ N$\\cdot$m, so $T=490$ N.\n(c) Horizontal: the cable pulls toward the wall with $T\\cos37^\\circ=392$ N, so the hinge force must be 392 N directed away from the wall. Vertical: $T\\sin37^\\circ=294$ N upward from the cable, and the total weight is $(50)(9.8)=490$ N downward, so the hinge must supply 196 N upward.\n(d) $F=\\sqrt{392^2+196^2}\\approx438$ N.",
+    "reviewed": false
+  }
+]

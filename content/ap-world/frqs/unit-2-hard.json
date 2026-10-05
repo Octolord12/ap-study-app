@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u2-frq-4",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "silk-roads",
+    "prompt": "Use the passage to answer parts A, B and C.\n\n> “Ships arriving from the Black Sea brought sailors already marked by the sickness. Within weeks the pestilence had spread from the harbor into the town, and neighbors fled from neighbors.”\n>\n> *Source: Account by a notary of a Genoese trading port, 1347*\n\n**a)** Identify ONE way the passage shows that regions of Eurasia were connected by trade.\n\n**b)** Explain ONE historical development between 1200 and 1350 that made such connections possible.\n\n**c)** Explain ONE long-term consequence of the plague described in the passage for European society.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies that the disease arrived on ships from the Black Sea, showing that goods and people moved between regions"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as the Mongol conquests creating stable overland routes (the Pax Mongolica), the growth of Italian maritime trade, or improvements in shipping"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a consequence such as labor shortages that improved workers' bargaining power and weakened serfdom, or a decline in the prestige of the Church"
+      }
+    ],
+    "sampleResponse": "a) The passage describes ships arriving from the Black Sea carrying sailors who were already sick, which shows that people and goods regularly moved between regions and that disease traveled with them.\nb) The Mongol conquests united much of Eurasia, creating relatively secure overland routes (the Pax Mongolica) that connected China, Central Asia, the Black Sea and the Mediterranean, along with growing Italian commercial shipping.\nc) The Black Death killed a large share of Europe's population, creating labor shortages. Surviving peasants and workers could demand higher wages and more freedom, which weakened serfdom and manorial obligations in much of western Europe.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u2-frq-5",
+    "unit": "unit-2-networks-of-exchange",
+    "topic": "mongol-empire",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the Mongol Empire transformed trade and cultural exchange across Eurasia in the period 1200-1450.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent of the Mongol transformation"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Describes broader context such as the existing Silk Road trade, the growth of commerce in the Islamic world and China, or the decline of earlier states"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate examples (such as the relay system, safe-conduct passes, the spread of paper, gunpowder and printing, European travelers to Asia, or the Black Death) and uses them to support the argument"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and shows complexity, such as balancing the security of Mongol rule with the destruction of the conquests or the spread of disease (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response takes a position, for example that the Mongols intensified and secured existing networks more than they created new ones. It places the topic in context (the existing Silk Roads, the growth of Muslim and Chinese commerce) and uses specific evidence such as the postal relay system and safe-conduct passes, the movement of Chinese inventions westward, the movement of European and Muslim merchants and envoys into Asia, and the spread of the Black Death. It analyzes change and continuity, weighing the benefits of Mongol security against the destruction caused by the conquests and the diseases that traveled the same routes.",
+    "reviewed": false
+  }
+]

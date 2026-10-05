@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-world-u6-mcq-31",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "rationales-for-imperialism",
+    "difficulty": "hard",
+    "stem": "> “It is our duty to carry civilization, Christianity and commerce to the dark places of the earth. The races that cannot yet govern themselves must be guided by those that can, and it is for their own good that we do so.”\n>\n> *Source: Speech by a British politician, 1890s*\n\nThe ideas expressed in the passage were most directly shaped by which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Social Darwinism and the belief that Europeans had a duty to spread their culture to peoples considered less advanced.",
+        "isCorrect": true,
+        "explanation": "Many imperialists justified expansion with a claimed civilizing mission supported by racial theories and ideas about the survival of the fittest applied to societies."
+      },
+      {
+        "label": "B",
+        "text": "The Enlightenment argument that all peoples have equal rights to self-government.",
+        "isCorrect": false,
+        "explanation": "The passage says some peoples cannot govern themselves, which contradicts that argument."
+      },
+      {
+        "label": "C",
+        "text": "Marxist ideas about the overthrow of capitalism.",
+        "isCorrect": false,
+        "explanation": "Marxists criticized imperialism; the passage defends it."
+      },
+      {
+        "label": "D",
+        "text": "A conviction that colonies were costly and should be abandoned.",
+        "isCorrect": false,
+        "explanation": "The passage promotes expansion, not abandonment."
+      }
+    ],
+    "explanation": "The passage reflects a civilizing mission justified by racial and Social Darwinist ideas.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-32",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "rationales-for-imperialism",
+    "difficulty": "hard",
+    "stem": "Which economic factor most directly motivated European imperial expansion in Africa and Asia in the late nineteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Industrial economies needed raw materials such as rubber, cotton and minerals, and sought new markets and investment opportunities for their goods and capital.",
+        "isCorrect": true,
+        "explanation": "Industrialization increased demand for resources and markets, which encouraged states and companies to seek colonies."
+      },
+      {
+        "label": "B",
+        "text": "A desire to protect European farmers by closing off all trade.",
+        "isCorrect": false,
+        "explanation": "Imperialism expanded trade and investment overseas."
+      },
+      {
+        "label": "C",
+        "text": "A shortage of land in Europe that required moving the population to Africa.",
+        "isCorrect": false,
+        "explanation": "Economic goals focused on resources and markets, and few Europeans settled in most African colonies."
+      },
+      {
+        "label": "D",
+        "text": "The need for new sources of enslaved labor for plantations in the Americas.",
+        "isCorrect": false,
+        "explanation": "The Atlantic slave trade had largely been abolished by this period."
+      }
+    ],
+    "explanation": "Industrial demand for raw materials and markets motivated imperialism.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-33",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "imperial-expansion",
+    "difficulty": "hard",
+    "stem": "The Berlin Conference of 1884-1885 is best understood as which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The creation of the League of Nations.",
+        "isCorrect": false,
+        "explanation": "The League of Nations was created after World War I."
+      },
+      {
+        "label": "B",
+        "text": "A negotiation in which African rulers won their independence from Europe.",
+        "isCorrect": false,
+        "explanation": "African rulers were not represented and independence was not granted."
+      },
+      {
+        "label": "C",
+        "text": "An agreement among all nations to end the slave trade in the Americas.",
+        "isCorrect": false,
+        "explanation": "The conference concerned partition and trade in Africa."
+      },
+      {
+        "label": "D",
+        "text": "A meeting at which European powers established rules for dividing African territory among themselves, without African participation.",
+        "isCorrect": true,
+        "explanation": "The conference set guidelines for claiming territory in Africa, which accelerated the Scramble for Africa."
+      }
+    ],
+    "explanation": "The conference helped European powers divide Africa without consulting Africans.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/imperial-expansion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-34",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "imperial-expansion",
+    "difficulty": "hard",
+    "stem": "> “The foreigners have demanded that our ports be opened to their ships and that their subjects be tried only by their own officers. Having lost the war, we must pay a great sum of silver and give up the island, and we are unable to refuse.”\n>\n> *Source: Memorial of a Qing official after the First Opium War, 1840s*\n\nThe situation described in the passage is best understood as which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The reforms of the Meiji government in Japan.",
+        "isCorrect": false,
+        "explanation": "The passage concerns China and its defeat."
+      },
+      {
+        "label": "B",
+        "text": "The tribute system by which foreign states paid tribute to China.",
+        "isCorrect": false,
+        "explanation": "The passage describes China giving concessions, not receiving tribute."
+      },
+      {
+        "label": "C",
+        "text": "The imposition of unequal treaties that forced Qing China to open ports and grant privileges to Western powers after a military defeat.",
+        "isCorrect": true,
+        "explanation": "The Treaty of Nanjing and later agreements opened ports, ceded Hong Kong, required indemnities and granted extraterritorial rights."
+      },
+      {
+        "label": "D",
+        "text": "A voluntary free-trade agreement among equal partners.",
+        "isCorrect": false,
+        "explanation": "The passage says the Qing officials were unable to refuse."
+      }
+    ],
+    "explanation": "The passage describes unequal treaties imposed after the Opium War.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/imperial-expansion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-35",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "imperial-expansion",
+    "difficulty": "hard",
+    "stem": "Which statement best compares British rule in India with the Belgian Congo Free State under Leopold II?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "British rule in India was run as the personal possession of a single monarch, while the Congo was governed by a trading company.",
+        "isCorrect": false,
+        "explanation": "This reverses the situation: the Congo was Leopold's personal possession."
+      },
+      {
+        "label": "B",
+        "text": "Neither colony produced goods for the European market.",
+        "isCorrect": false,
+        "explanation": "Both were exploited for resources and goods: Indian cotton and tea, Congo rubber and ivory."
+      },
+      {
+        "label": "C",
+        "text": "Both extracted resources for European economies, but the Congo Free State was Leopold's personal possession and became notorious for the brutality of forced labor in rubber collection, which led to an international outcry.",
+        "isCorrect": true,
+        "explanation": "Leopold's regime in the Congo was exceptionally harsh and was widely condemned, leading Belgium to take over the colony in 1908."
+      },
+      {
+        "label": "D",
+        "text": "Both were granted self-government in the nineteenth century.",
+        "isCorrect": false,
+        "explanation": "Neither was self-governing in the nineteenth century."
+      }
+    ],
+    "explanation": "The Congo Free State was a personal possession of Leopold II, and its brutal rule caused an outcry.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/imperial-expansion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-36",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "imperial-expansion",
+    "difficulty": "hard",
+    "stem": "The Sepoy Rebellion of 1857 in India led most directly to which of the following changes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The British government took direct control of India from the East India Company.",
+        "isCorrect": true,
+        "explanation": "After the rebellion, the Crown ended Company rule and established the British Raj."
+      },
+      {
+        "label": "B",
+        "text": "The British abolished their rule and returned authority to Mughal emperors.",
+        "isCorrect": false,
+        "explanation": "The last Mughal emperor was deposed, and British rule was strengthened."
+      },
+      {
+        "label": "C",
+        "text": "The East India Company expanded its control over the entire subcontinent.",
+        "isCorrect": false,
+        "explanation": "The Company was dissolved as a ruling power."
+      },
+      {
+        "label": "D",
+        "text": "India gained independence in the same year.",
+        "isCorrect": false,
+        "explanation": "India did not become independent until 1947."
+      }
+    ],
+    "explanation": "The rebellion led to direct Crown rule.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/imperial-expansion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-37",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "resistance-to-imperialism",
+    "difficulty": "hard",
+    "stem": "> “The army of the Emperor, well led and armed with modern rifles bought abroad, has destroyed the Italian column in the mountains. The conquest of the empire, so confidently announced, has failed.”\n>\n> *Source: A European newspaper report, 1896*\n\nWhich factor best explains the outcome described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Ethiopia was a colony of Britain and was defended by British troops.",
+        "isCorrect": false,
+        "explanation": "Ethiopia was independent and won with its own army."
+      },
+      {
+        "label": "B",
+        "text": "The Italian army was defeated because it had no firearms.",
+        "isCorrect": false,
+        "explanation": "The Italian army was armed with modern weapons."
+      },
+      {
+        "label": "C",
+        "text": "Ethiopia had a strong centralized leadership, acquired modern weapons and used military organization and diplomacy effectively.",
+        "isCorrect": true,
+        "explanation": "Under Emperor Menelik II, Ethiopia secured firearms and unified its forces, defeating Italy at Adwa and preserving its independence."
+      },
+      {
+        "label": "D",
+        "text": "The Italians were fighting in their own homeland.",
+        "isCorrect": false,
+        "explanation": "The battle occurred in Ethiopia."
+      }
+    ],
+    "explanation": "Ethiopia's modern weapons, leadership and organization defeated Italy.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-38",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "resistance-to-imperialism",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the causes of the Boxer Uprising (1899-1901) in China?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It was a campaign of Qing officials to open more ports to Western trade.",
+        "isCorrect": false,
+        "explanation": "The Boxers opposed foreign privileges."
+      },
+      {
+        "label": "B",
+        "text": "It was a movement to support Western modernization led by the Meiji emperor.",
+        "isCorrect": false,
+        "explanation": "The Boxers were anti-foreign, and the Meiji emperor ruled Japan."
+      },
+      {
+        "label": "C",
+        "text": "It grew out of resentment of foreign influence, Christian missionary activity and the privileges of Western powers, combined with the weakness of the Qing state.",
+        "isCorrect": true,
+        "explanation": "Boxers attacked foreigners and Chinese Christians in response to foreign domination and economic distress."
+      },
+      {
+        "label": "D",
+        "text": "It was a revolt by Mughal nobles who wanted to restore Mughal rule in China.",
+        "isCorrect": false,
+        "explanation": "The Mughals ruled in India, not China."
+      }
+    ],
+    "explanation": "The Boxers reacted against foreign influence and domination.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-39",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "resistance-to-imperialism",
+    "difficulty": "hard",
+    "stem": "Which statement best compares the responses of Japan and China to Western pressure in the second half of the nineteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Both countries rejected Western technology completely.",
+        "isCorrect": false,
+        "explanation": "Japan embraced Western technology and China's reformers adopted some Western methods."
+      },
+      {
+        "label": "B",
+        "text": "After the Meiji Restoration, Japan pursued rapid state-sponsored industrialization and military modernization and became an imperial power itself, while the Qing government struggled to carry out reforms and lost control over important rights to foreign powers.",
+        "isCorrect": true,
+        "explanation": "Japan's centralized reforms strengthened it, while China was hindered by internal rebellions and foreign pressure."
+      },
+      {
+        "label": "C",
+        "text": "China industrialized more quickly than Japan under Qing leadership.",
+        "isCorrect": false,
+        "explanation": "Japan industrialized more quickly and thoroughly."
+      },
+      {
+        "label": "D",
+        "text": "Both countries became colonies of Britain.",
+        "isCorrect": false,
+        "explanation": "Neither Japan nor China became a British colony."
+      }
+    ],
+    "explanation": "Japan modernized and became an imperial power; China struggled and faced foreign domination.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-40",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "migration-in-interconnected-world",
+    "difficulty": "hard",
+    "stem": "> “The laborer agrees to work for the planter for a period of five years in return for passage across the sea, a fixed wage, and food and lodging. If the laborer leaves before the end of the term, he shall be returned and punished.”\n>\n> *Source: Terms of a labor contract, 1860s*\n\nThe labor system described in the passage most directly developed because of which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Mongol conquest of Southeast Asia.",
+        "isCorrect": false,
+        "explanation": "Mongol conquests were centuries earlier."
+      },
+      {
+        "label": "B",
+        "text": "The decline of plantation agriculture.",
+        "isCorrect": false,
+        "explanation": "Plantation agriculture was expanding and needed workers."
+      },
+      {
+        "label": "C",
+        "text": "The abolition of slavery in many places, which created a demand for cheap contract labor drawn from India and China.",
+        "isCorrect": true,
+        "explanation": "Planters replaced enslaved workers with indentured laborers, often under harsh conditions."
+      },
+      {
+        "label": "D",
+        "text": "The rise of medieval guilds that regulated labor.",
+        "isCorrect": false,
+        "explanation": "Guilds belonged to an earlier period and did not recruit overseas indentured workers."
+      }
+    ],
+    "explanation": "Indentured labor developed as a substitute after the abolition of slavery.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-41",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "global-economic-development",
+    "difficulty": "hard",
+    "stem": "Which combination of technological developments most directly helped integrate the world economy in the later nineteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The printing press, the caravel and the compass.",
+        "isCorrect": false,
+        "explanation": "These were earlier developments."
+      },
+      {
+        "label": "B",
+        "text": "Airplanes, television and the internet.",
+        "isCorrect": false,
+        "explanation": "These came in the twentieth century."
+      },
+      {
+        "label": "C",
+        "text": "Sailing galleons and horse-drawn caravans.",
+        "isCorrect": false,
+        "explanation": "These had been in use for centuries and did not mark a new level of integration."
+      },
+      {
+        "label": "D",
+        "text": "Steamships, railroads, the telegraph and canals such as the Suez Canal.",
+        "isCorrect": true,
+        "explanation": "These innovations lowered the cost and time of moving goods, people and information across the world."
+      }
+    ],
+    "explanation": "Steam transport, railroads, the telegraph and canals tied the global economy together.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/global-economic-development",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-42",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "migration-in-interconnected-world",
+    "difficulty": "hard",
+    "stem": "The Chinese Exclusion Act (1882) in the United States and similar laws in other settler societies reflect which broader trend?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A ban on emigration issued by the Chinese emperor.",
+        "isCorrect": false,
+        "explanation": "The act was passed by the United States."
+      },
+      {
+        "label": "B",
+        "text": "An agreement to open all borders to free migration.",
+        "isCorrect": false,
+        "explanation": "The act did the opposite."
+      },
+      {
+        "label": "C",
+        "text": "Governments competing to recruit large numbers of Chinese workers.",
+        "isCorrect": false,
+        "explanation": "The laws restricted and excluded Chinese immigrants."
+      },
+      {
+        "label": "D",
+        "text": "Growing restrictions on Asian immigration, driven by racial prejudice and fears of competition for jobs.",
+        "isCorrect": true,
+        "explanation": "Settler societies passed laws to limit Chinese and other Asian immigration."
+      }
+    ],
+    "explanation": "The act is an example of restrictions on Asian immigration.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-43",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "migration-in-interconnected-world",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the large-scale migration of Europeans to the Americas, Australia and southern Africa in the nineteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Mongols forced Europeans to relocate.",
+        "isCorrect": false,
+        "explanation": "The Mongols were not involved."
+      },
+      {
+        "label": "B",
+        "text": "Population growth, poverty and famine (such as the Irish famine) pushed people to leave, while opportunities for land and work and cheaper steamship travel drew them to the new lands.",
+        "isCorrect": true,
+        "explanation": "Both push and pull factors shaped these migrations."
+      },
+      {
+        "label": "C",
+        "text": "Europe had a labor shortage, so workers moved to find more laborers.",
+        "isCorrect": false,
+        "explanation": "Europe had a growing population and, in many areas, a surplus of workers."
+      },
+      {
+        "label": "D",
+        "text": "European governments prohibited all emigration, so people left illegally.",
+        "isCorrect": false,
+        "explanation": "Most European states allowed emigration, which grew substantially."
+      }
+    ],
+    "explanation": "Push and pull factors, including cheaper transport, explain mass migration.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-44",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "global-economic-development",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the economic relationship between Latin America and the industrialized nations in the late nineteenth century?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Latin American economies were isolated from world trade.",
+        "isCorrect": false,
+        "explanation": "They were closely linked to world trade."
+      },
+      {
+        "label": "B",
+        "text": "Latin American countries led the world in industrial production.",
+        "isCorrect": false,
+        "explanation": "Industrial production was concentrated in Europe and the United States."
+      },
+      {
+        "label": "C",
+        "text": "Latin America was the leading exporter of manufactured goods to Europe.",
+        "isCorrect": false,
+        "explanation": "Europe exported manufactured goods to Latin America."
+      },
+      {
+        "label": "D",
+        "text": "Latin American economies exported raw materials and agricultural products such as coffee, beef and nitrates, and depended on foreign investment and imported manufactured goods.",
+        "isCorrect": true,
+        "explanation": "Many Latin American economies were oriented toward exports for industrial markets and were financed by foreign capital."
+      }
+    ],
+    "explanation": "Latin American economies were export-oriented suppliers of raw materials.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/global-economic-development",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u6-mcq-45",
+    "unit": "unit-6-consequences-of-industrialization",
+    "topic": "rationales-for-imperialism",
+    "difficulty": "hard",
+    "stem": "> “We have built railways and schools, and the people of this colony have never been so prosperous. They should be grateful for the benefits of our rule.”\n>\n> *Source: Report of a colonial administrator, 1900s*\n\nWhich perspective would most likely challenge the claim made in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A European settler who held land in the colony.",
+        "isCorrect": false,
+        "explanation": "A settler would likely support colonial rule."
+      },
+      {
+        "label": "B",
+        "text": "A government minister who wanted the colony to remain under imperial control.",
+        "isCorrect": false,
+        "explanation": "A supporter of imperial control would be likely to agree with the claim."
+      },
+      {
+        "label": "C",
+        "text": "A shareholder in a company that profited from the colony's exports.",
+        "isCorrect": false,
+        "explanation": "This person would be likely to support the administrator's claim."
+      },
+      {
+        "label": "D",
+        "text": "A nationalist from the colony who argued that the railways mainly served to extract resources and strengthen colonial control.",
+        "isCorrect": true,
+        "explanation": "Anti-colonial writers often argued that colonial infrastructure was built to serve the colonizer's economy rather than local needs."
+      }
+    ],
+    "explanation": "A colonized person's perspective would most likely challenge the administrator's claim.",
+    "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
+    "reviewed": false
+  }
+]

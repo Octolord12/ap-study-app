@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ap-world-u4-frq-4",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "labor-systems-and-slave-trade",
+    "prompt": "Use the passage to answer parts A, B and C.\n\n> “A plantation cannot prosper without at least a hundred slaves, for the mill must run day and night in the season, and the cane must be cut before it spoils. The price of sugar in London is high, and every year more land is planted.”\n>\n> *Source: Letter of a Caribbean sugar planter, 1680s*\n\n**a)** Identify ONE economic factor in the passage that contributed to the use of enslaved labor.\n\n**b)** Explain ONE way in which the plantation labor system described differed from the Spanish mita or encomienda systems.\n\n**c)** Explain ONE effect of the Atlantic slave trade on societies in West or Central Africa.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies high European demand and prices for sugar, or the labor-intensive nature of sugar production"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains that plantation labor relied on enslaved Africans bought and owned as property and transported across the Atlantic, whereas the mita and encomienda relied on Native American labor drafts or tribute"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as population loss, increased warfare and slave raiding, or the rise of states that gained power through the trade"
+      }
+    ],
+    "sampleResponse": "a) The passage notes that the price of sugar in London is high and that more land is planted every year, showing that European demand for sugar made plantations profitable and increased the demand for labor.\nb) Plantations relied on enslaved Africans who were bought, owned and transported across the Atlantic, while the mita and encomienda relied on forced labor drafted from Native American communities.\nc) The slave trade removed millions of people from West and Central Africa, and it encouraged warfare and raiding to capture people, while some states gained power and firearms by participating in it.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-world-u4-frq-5",
+    "unit": "unit-4-transoceanic-interconnections",
+    "topic": "maritime-empires",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the flow of silver transformed the global economy in the period 1450-1750.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which silver transformed the global economy"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Describes broader context, such as European exploration and the creation of colonial empires or China's commercialized economy"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate examples (such as Potosi, the Manila galleons, China's silver-based tax system, inflation in Europe) and uses them to support the argument"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses causation or change and continuity over time to structure the argument (1 point), and shows complexity by weighing other factors or by considering the varying effects on different regions (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response takes a position, for example that silver substantially connected and reshaped economies but that other factors also mattered, such as European competition and the demand for labor. It places the topic in context (the voyages of exploration and the creation of colonial empires) and uses specific evidence such as the mines at Potosi, the Manila galleons, Chinese demand for silver and its tax system, the price revolution in Europe, and the effects on Native American labor (the mita). It analyzes causation, continuity and change, and the extent of the impact.",
+    "reviewed": false
+  }
+]
