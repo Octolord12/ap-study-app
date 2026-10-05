@@ -24,6 +24,12 @@ describe("privacy page", () => {
     expect(container.textContent).toMatch(/don't ask for your birth\s+date/);
   });
 
+  it("says that a timed exam's answers are kept on the device, since they are", () => {
+    const { container } = render(<PrivacyPage />);
+    expect(container.textContent).toMatch(/timed exam it also keeps your answers/);
+    expect(container.textContent).toMatch(/removed when you submit/);
+  });
+
   it("describes the cookie the app really sets, and for as long as it really lasts", () => {
     const { container } = render(<PrivacyPage />);
     expect(container.textContent).toContain(CRAM_COOKIE);

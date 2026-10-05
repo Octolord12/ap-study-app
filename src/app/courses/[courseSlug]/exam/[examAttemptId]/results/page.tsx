@@ -4,6 +4,7 @@ import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { renderContentToHtml } from "@/lib/content/render";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
+import { ClearExamDraft } from "@/components/study/clear-exam-draft";
 import { ExamMcqReview } from "@/components/study/exam-mcq-review";
 import { FrqSelfGrade } from "@/components/study/frq-self-grade";
 import { renderRubric } from "@/lib/study/render-rubric";
@@ -75,6 +76,7 @@ export default async function ExamResultsPage({
 
   return (
     <Page>
+      <ClearExamDraft examAttemptId={examAttemptId} />
       <PageHeader
         eyebrow={
           <Breadcrumb

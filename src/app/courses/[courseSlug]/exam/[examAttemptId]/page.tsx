@@ -4,6 +4,7 @@ import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { displayLabelMap, remapChoiceLetters, shuffleChoices } from "@/lib/study/shuffle-choices";
+import { examSecondsLeft } from "@/lib/study/exam-clock";
 import { ExamRunner, type ExamFrqItem, type ExamMcqItem } from "@/components/study/exam-runner";
 import type { Course as ContentCourse } from "@/lib/content/schema";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -80,7 +81,7 @@ export default async function ExamRunnerPage({
       <ExamRunner
         examAttemptId={attempt.id}
         courseSlug={courseSlug}
-        totalDurationMinutes={examFormat.totalDurationMinutes}
+        initialSecondsLeft={examSecondsLeft(attempt.startedAt, examFormat.totalDurationMinutes)}
         mcqItems={mcqItems}
         frqItems={frqItems}
       />

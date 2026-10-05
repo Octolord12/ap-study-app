@@ -12,6 +12,7 @@ import { cn } from "cn";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
+import { examDraftKey, parseExamDraft, purgeStaleExamDrafts, serializeExamDraft } from "@/lib/study/exam-draft";
 
 export interface ExamMcqItem {
   id: string;
@@ -30,7 +31,8 @@ export interface ExamFrqItem {
 interface ExamRunnerProps {
   examAttemptId: string;
   courseSlug: string;
-  totalDurationMinutes: number;
+  // Computed on the server from ExamAttempt.startedAt, so a reload resumes the real clock.
+  initialSecondsLeft: number;
   mcqItems: ExamMcqItem[];
   frqItems: ExamFrqItem[];
 }
@@ -53,11 +55,16 @@ function checkpointAnnouncement(secondsLeft: number): string | null {
   return null;
 }
 
-export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mcqItems, frqItems }: ExamRunnerProps) {
+export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqItems, frqItems }: ExamRunnerProps) {
   const [index, setIndex] = useState(0);
   const [mcqAnswers, setMcqAnswers] = useState<Record<string, string>>({});
   const [frqResponses, setFrqResponses] = useState<Record<string, string>>({});
-  const [secondsLeft, setSecondsLeft] = useState(totalDurationMinutes * 60);
+  const [secondsLeft, setSecondsLeft] = useState(initialSecondsLeft);
+  // Fixed once, so the countdown is wall-clock time rather than "number of ticks": a
+  // throttled background tab or a long main-thread pause can't make it drift.
+  const [deadlineMs] = useState(() => Date.now() + initialSecondsLeft * 1000);
+  const [restored, setRestored] = useState(false);
+  const [resumed, setResumed] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const submittingRef = useRef(false);
   const [timeAnnouncement, setTimeAnnouncement] = useState("");
@@ -81,20 +88,59 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
     });
   }
 
+  // The interval is created once, but must submit the answers as they are when time
+  // runs out, not as they were at mount (it used to submit an empty exam). Hence a
+  // ref to the latest handleSubmit, refreshed after every render.
+  const submitRef = useRef(handleSubmit);
+  useEffect(() => {
+    submitRef.current = handleSubmit;
+  });
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setSecondsLeft((s) => {
-        if (s <= 1) {
-          clearInterval(interval);
-          void handleSubmit();
-          return 0;
-        }
-        return s - 1;
-      });
+      const left = Math.max(0, Math.ceil((deadlineMs - Date.now()) / 1000));
+      setSecondsLeft(left);
+      if (left <= 0) {
+        clearInterval(interval);
+        void submitRef.current();
+      }
     }, 1000);
     return () => clearInterval(interval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- handleSubmit closes over state that changes every render; only want the interval set up once.
-  }, []);
+  }, [deadlineMs]);
+
+  // Answers come back from this device's storage after a reload. It can only be read
+  // after mount (the server render has no storage), so it is an effect, not an initialiser.
+  useEffect(() => {
+    try {
+      purgeStaleExamDrafts(localStorage, Date.now());
+      const draft = parseExamDraft(localStorage.getItem(examDraftKey(examAttemptId)), Date.now(), {
+        mcqIds: mcqItems.map((q) => q.id),
+        frqIds: frqItems.map((f) => f.id),
+        total: mcqItems.length + frqItems.length,
+      });
+      if (draft) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time restore from localStorage on mount
+        setMcqAnswers(draft.mcq);
+        setFrqResponses(draft.frq);
+        setIndex(draft.index);
+        setResumed(Object.keys(draft.mcq).length + Object.keys(draft.frq).length > 0);
+      }
+    } catch {
+      // Storage can be blocked (private mode); the exam still works, it just can't resume.
+    }
+    setRestored(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- restore once per attempt; the items are fixed for it.
+  }, [examAttemptId]);
+
+  // Not before the restore above: saving the empty initial state would overwrite the draft.
+  useEffect(() => {
+    if (!restored) return;
+    try {
+      localStorage.setItem(examDraftKey(examAttemptId), serializeExamDraft({ mcq: mcqAnswers, frq: frqResponses, index }, Date.now()));
+    } catch {
+      // Out of space or blocked: nothing to do, the exam carries on.
+    }
+  }, [restored, examAttemptId, mcqAnswers, frqResponses, index]);
 
   const lowTime = secondsLeft <= 300; // last 5 minutes
 
@@ -152,6 +198,13 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
       <span role="status" aria-live="polite" className="sr-only">
         {timeAnnouncement}
       </span>
+
+      {resumed ? (
+        <p role="note" className="border-2 border-foreground p-3 text-sm font-medium md:col-span-2">
+          Welcome back. Your answers were kept on this device and the clock kept running. The choices may be in a different
+          order.
+        </p>
+      ) : null}
 
       {/* Phones: a thin sticky strip, so the clock is always in view. */}
       <div className="sticky top-0 z-30 -mx-4 flex items-baseline justify-between border-b border-border bg-background px-4 py-2 md:hidden">

@@ -77,7 +77,7 @@ export default function PrivacyPage() {
               A cookie named <code>ap-cram</code> is set only if you turn on Cram Mode. It lasts 7 days and holds your account ID, so a
               different student on the same device does not get your setting.
             </>,
-            "Your browser's local storage remembers your light or dark choice and whether sound is muted. These stay on your device.",
+            "Your browser's local storage remembers your light or dark choice and whether sound is muted. During a timed exam it also keeps your answers, so a reload doesn't lose them; they are removed when you submit. These stay on your device.",
           ]}
         />
       </Section>
