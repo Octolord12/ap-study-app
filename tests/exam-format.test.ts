@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { describeExamFormat, formatDuration } from "@/lib/content/exam-format";
+import { describeExamFormat, formatDuration, frqTitle } from "@/lib/content/exam-format";
 
 describe("describeExamFormat", () => {
   it("counts MCQ and FRQ sections", () => {
@@ -14,18 +14,28 @@ describe("describeExamFormat", () => {
     ).toBe("42 multiple choice, 6 free response");
   });
 
-  it("names the World History item types without printing their slot counts", () => {
+  it("counts every World History section, now that the simulator uses the counts", () => {
     expect(
       describeExamFormat({
         totalDurationMinutes: 195,
         sections: [
           { type: "MCQ", questionCount: 55 },
-          { type: "SAQ", questionCount: 1 },
+          { type: "SAQ", questionCount: 3 },
           { type: "DBQ", questionCount: 1 },
           { type: "LEQ", questionCount: 1 },
         ],
       }),
-    ).toBe("55 multiple choice, short answer, document-based question, long essay");
+    ).toBe("55 multiple choice, 3 short answer, 1 document-based question, 1 long essay");
+  });
+});
+
+describe("frqTitle", () => {
+  it("names each free-response kind and falls back to plain free response", () => {
+    expect(frqTitle("SAQ")).toBe("Short answer");
+    expect(frqTitle("DBQ")).toBe("Document-based question");
+    expect(frqTitle("LEQ")).toBe("Long essay");
+    expect(frqTitle("FRQ")).toBe("Free response");
+    expect(frqTitle("anything else")).toBe("Free response");
   });
 });
 

@@ -168,7 +168,8 @@ Full schema: `prisma/schema.prisma`. Summary:
 
 - **Content** (authored in `/content` as JSON → validated → seeded here; the
   app only reads from the DB at runtime): `Course` → `Unit` → `Topic` →
-  `Question` (+ `Choice`) / `FRQPrompt`.
+  `Question` (+ `Choice`) / `FRQPrompt` (with a `type`: `FRQ`, `SAQ`, `DBQ` or `LEQ`, see
+  "Exam simulation" below).
 - **Auth.js tables**: `User`, `Account`, `Session`, `VerificationToken` (shapes
   fixed by `@auth/prisma-adapter`, don't rename fields).
 - **Progress**: `Enrollment`, `QuestionAttempt`, `FRQAttempt`, `Bookmark`,
@@ -223,6 +224,21 @@ page's "what did you pick on this exam" lookup matches `QuestionAttempt` rows
 by user+question+`source: EXAM` (there's no FK from `QuestionAttempt` to a
 specific `ExamAttempt`), so it can't perfectly disambiguate two attempts at
 the same course's exam close together. Fine for now; revisit if that matters.
+
+**Which free-response prompts an exam gets** (`pickExamFrqIds`, `lib/study/exam-selection.ts`,
+pure and tested): for each non-MCQ section of the course's `examFormat`, in the order listed,
+`questionCount` prompts drawn at random from the prompts whose `FRQPrompt.type` equals the
+section's type. CSA, Calc and Physics have one `FRQ` section (4, 6, 4 prompts); World History
+has `SAQ` 3, `DBQ` 1, `LEQ` 1, so every World simulation is 55 MCQ + 3 SAQ + 1 DBQ + 1 LEQ in
+that order. The runner and results page label each prompt ("Short answer 2 of 3",
+"Document-based question", "Long essay"). A type with too few prompts gives a short exam rather
+than an error, and `validate-content` fails if a shipped course would be short.
+**Bug this replaced (found 2026-10-05, never hit by a student)**: the old code looked only for a
+section named `FRQ`; World History has none, so the target was undefined and it fell back to
+"use every prompt", which would have been all 53 in one exam. The MCQ draw also used
+`sort(() => Math.random() - 0.5)`, which is biased; both draws now use the uniform `shuffled()`.
+Still true: one 195-minute clock for the whole exam (sections are not timed separately), no
+choice among LEQ prompts, and the score estimate uses MCQ accuracy only.
 
 **FRQ self-grading** (`src/components/study/frq-self-grade.tsx`) finally puts
 Milestone 1's `SelfGradingStrategy` (`src/lib/scoring/grading.ts`) to use, and
@@ -405,7 +421,10 @@ reviewed (bool, default false)
 
 **FRQ Prompt** (`content/<course>/frqs/*.json`)
 ```
-id, unit, topic, prompt, pointValue,
+id, unit, topic,
+type (optional: FRQ | SAQ | DBQ | LEQ; omitted means FRQ. Must be one of the course's exam
+      section types, so every World History prompt has to say SAQ, DBQ or LEQ),
+prompt, pointValue,
 rubric: [{ id, points, description }]  (points must sum to pointValue),
 sampleResponse,
 reviewed (bool, default false)
@@ -464,17 +483,13 @@ still exercising the document-analysis skill. `examFormat` in
 `content/ap-world/course.json` reflects the *current* (pre-May-2027) exam
 structure per the table below, not the upcoming change.
 
-**Known gap this surfaced**: `FRQPrompt` has no field distinguishing
-SAQ/DBQ/LEQ (or, for CSA, there was never a need to distinguish types at
-all). The exam simulator (Milestone 4) picks `questionCount` FRQPrompts at
-random from a course's whole pool to fill a section — for CSA that's fine
-(one homogeneous type), but for AP World History it means an exam sim run
-could hand a student 3 SAQs and no DBQ/LEQ, or any other mix, rather than
-reliably the 1 SAQ + 1 DBQ + 1 LEQ the real exam gives. Fixing this would
-mean adding an item-type field to the schema/model and updating the exam
-selection logic — an app-engine change, out of scope for a content-only
-milestone. Flagging it here rather than either silently building it
-unasked or silently shipping content that won't exercise correctly.
+**Known gap this surfaced (fixed 2026-10-05)**: `FRQPrompt` had no field distinguishing
+SAQ/DBQ/LEQ, so the exam simulator could not give World History the 3 SAQ + 1 DBQ + 1 LEQ the
+real exam has (in fact it would have given every prompt). Now `FRQPrompt.type` exists
+(migration `20261006000000_add_frq_type`), every World prompt is typed (36 SAQ, 4 DBQ, 13 LEQ),
+and exam selection draws by section type; see "Exam simulation" above. The World course's
+`SAQ` section is `questionCount: 3` (it was a placeholder 1 while nothing read it), and
+`describeExamFormat` now prints every section's count.
 
 **AP Calculus AB — done.** All 8 units of the current (pre-May-2027) CED
 (Limits and Continuity → Differentiation: Definition and Fundamental
@@ -1109,6 +1124,10 @@ save it as `prisma/migrations/<timestamp>_<name>/migration.sql`, review it, then
 migrations; never resets). Vercel does **not** run migrations on deploy, so
 apply a migration *before* pushing code that needs it.
 
+Order for a change that adds a column *and* needs content re-seeded (the `FRQPrompt.type` change
+was one): migrate, then `npm run content:seed`, then push. The new column has a default, so the
+old code keeps working in between; the new code must never see rows the seed hasn't typed yet.
+
 ## Answer choices are shuffled on every showing
 
 Every time a question is shown, in every course and every mode (practice quiz,
@@ -1405,9 +1424,9 @@ a **3-part SAQ on a passage** (3 points) and a **6-point LEQ** (thesis 1, contex
 evidence 2, analysis and reasoning 2). Sources are *original* passages with generic
 attributions, not quotations from real documents or from any College Board exam. **Historical facts cannot be machine-verified**; they were written from
 well-established, CED-level knowledge and kept to claims that are not disputed, but a human
-reviewer should check them (the sets are `reviewed: false`). The known exam-engine gap still
-applies: `FRQPrompt` has no SAQ/DBQ/LEQ type field, so an exam simulation draws from a mixed pool
-(the pool now has 9 more SAQs, 9 more LEQs, and still the same 4 DBQs).
+reviewer should check them (the sets are `reviewed: false`). These items are typed `SAQ`
+and `LEQ` (the generator helpers `saq()`/`leq()` set it), so exam simulations draw from them
+correctly (the pool is now 36 SAQs, 4 DBQs, 13 LEQs).
 
 ### Hard AP Physics 1 set
 
@@ -1570,8 +1589,8 @@ in app logic — updating them should be a data edit.
       (see the Content generation section above). **AP CSA**: 10/10 units,
       300 MCQs + 30 FRQs. **AP World History: Modern**: 9/9 units, 270 MCQs +
       27 SAQs, plus a separate course-level pool of 4 DBQs + 4 LEQs (35 FRQ-
-      type items total) — see the known exam-engine gap (no SAQ/DBQ/LEQ type
-      field on `FRQPrompt`) noted above. **AP Calculus AB**: 8/8 units, 240
+      type items total; typed SAQ/DBQ/LEQ since 2026-10-05 so the exam sim draws the
+      right mix). **AP Calculus AB**: 8/8 units, 240
       MCQs + 24 FRQs, every computed answer sympy-verified. **AP Physics 1**:
       8/8 units, 240 MCQs + 24 FRQs, every computed answer Python-verified;
       required building minimal SVG diagram support first (its own

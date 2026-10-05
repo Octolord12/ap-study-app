@@ -8,6 +8,7 @@ import { ClearExamDraft } from "@/components/study/clear-exam-draft";
 import { ExamMcqReview } from "@/components/study/exam-mcq-review";
 import { ExamWeakUnits } from "@/components/study/exam-weak-units";
 import { examWeakUnits, type ExamQuestionResult } from "@/lib/study/exam-breakdown";
+import { frqTitle } from "@/lib/content/exam-format";
 import { FrqSelfGrade } from "@/components/study/frq-self-grade";
 import { renderRubric } from "@/lib/study/render-rubric";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
@@ -76,8 +77,12 @@ export default async function ExamResultsPage({
     if (!frqAttemptByPromptId.has(a.frqPromptId)) frqAttemptByPromptId.set(a.frqPromptId, a);
   }
 
+  // The database returns them in its own order; show them as the exam gave them (SAQs, then DBQ, then LEQ).
+  const examOrder = new Map(frqPromptIds.map((id, i) => [id, i]));
+  const frqInExamOrder = [...frqPrompts].sort((a, b) => (examOrder.get(a.id) ?? 0) - (examOrder.get(b.id) ?? 0));
+
   const frqSections = await Promise.all(
-    frqPrompts.map(async (frq) => ({
+    frqInExamOrder.map(async (frq) => ({
       frq,
       promptHtml: await renderContentToHtml(frq.prompt, courseSlug),
       sampleResponseHtml: await renderContentToHtml(frq.sampleResponse, courseSlug),
@@ -134,7 +139,7 @@ export default async function ExamResultsPage({
                 <div className="space-y-6">
                   <div>
                     <p className="eyebrow mb-2">
-                      {frq.pointValue} point{frq.pointValue === 1 ? "" : "s"}
+                      {frqTitle(frq.type)} · {frq.pointValue} point{frq.pointValue === 1 ? "" : "s"}
                     </p>
                     <Html html={promptHtml} />
                     {diagram && <DiagramRenderer diagram={diagram} />}

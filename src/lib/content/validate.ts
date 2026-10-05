@@ -63,8 +63,15 @@ export function validateQuestion(question: Question, courseSlug: string, knownTo
   return problems;
 }
 
-export function validateFRQ(frq: FRQ, knownTopicKeys: Set<string>): Problem[] {
+export function validateFRQ(frq: FRQ, knownTopicKeys: Set<string>, examSectionTypes?: readonly string[]): Problem[] {
   const problems: Problem[] = [];
+
+  const type = frq.type ?? "FRQ";
+  if (examSectionTypes && !examSectionTypes.includes(type)) {
+    problems.push({
+      message: `type "${type}" is not a section of this course's exam (${examSectionTypes.filter((t) => t !== "MCQ").join(", ")}); set "type" on the prompt`,
+    });
+  }
 
   if (!knownTopicKeys.has(`${frq.unit}/${frq.topic}`)) {
     problems.push({ message: `unit/topic "${frq.unit}/${frq.topic}" is not defined for this course` });
@@ -131,5 +138,19 @@ export function checkMarkdownBalance(text: string, fieldName: string): Problem[]
     problems.push({ message: `${fieldName}: odd number of "\`\`\`" -- unclosed code fence` });
   }
 
+  return problems;
+}
+
+// Every non-multiple-choice exam section must have at least as many prompts of its type as it asks
+// for, or the exam simulator would hand out a short exam without anyone noticing.
+export function checkExamSupply(sections: readonly { type: string; questionCount: number }[], promptTypes: readonly string[]): Problem[] {
+  const problems: Problem[] = [];
+  for (const section of sections) {
+    if (section.type === "MCQ") continue;
+    const have = promptTypes.filter((t) => t === section.type).length;
+    if (have < section.questionCount) {
+      problems.push({ message: `exam section ${section.type} needs ${section.questionCount} prompt(s) of that type, but the course has ${have}` });
+    }
+  }
   return problems;
 }

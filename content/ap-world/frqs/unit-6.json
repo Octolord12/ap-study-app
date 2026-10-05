@@ -3,6 +3,7 @@
     "id": "ap-world-u6-saq-1",
     "unit": "unit-6-consequences-of-industrialization",
     "topic": "rationales-for-imperialism",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE economic rationale used to justify European imperialism in the late 19th century.\n\n**b)** Describe ONE ideological/cultural rationale used to justify European imperialism during this period.\n\n**c)** Explain ONE way new technology contributed to European imperial expansion during this period.",
     "pointValue": 3,
     "rubric": [
@@ -17,6 +18,7 @@
     "id": "ap-world-u6-saq-2",
     "unit": "unit-6-consequences-of-industrialization",
     "topic": "resistance-to-imperialism",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE example of armed resistance to European imperialism during this period.\n\n**b)** Explain ONE reason why many resistance efforts were ultimately unsuccessful in preventing colonization.\n\n**c)** Describe ONE way nationalist organizations responded to colonial rule.",
     "pointValue": 3,
     "rubric": [
@@ -31,6 +33,7 @@
     "id": "ap-world-u6-saq-3",
     "unit": "unit-6-consequences-of-industrialization",
     "topic": "global-economic-development",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way colonial powers restructured colonized economies to serve their own interests.\n\n**b)** Explain ONE way migration patterns during this era reflected global economic inequalities.\n\n**c)** Describe ONE lasting economic consequence of imperialism for former colonies.",
     "pointValue": 3,
     "rubric": [

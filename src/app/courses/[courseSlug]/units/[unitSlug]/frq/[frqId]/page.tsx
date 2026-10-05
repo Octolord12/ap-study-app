@@ -5,6 +5,7 @@ import { getDb } from "@/lib/db";
 import { renderContentToHtml } from "@/lib/content/render";
 import { FrqSelfGrade } from "@/components/study/frq-self-grade";
 import { renderRubric } from "@/lib/study/render-rubric";
+import { frqTitle } from "@/lib/content/exam-format";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import { Html } from "@/components/ui/html";
 import { ReportProblem } from "@/components/study/report-problem";
@@ -40,7 +41,7 @@ export default async function FrqPracticePage({
       <div className="grid gap-x-10 gap-y-3 md:grid-cols-[10.5rem_minmax(0,1fr)]">
         <div className="space-y-3 md:pt-1">
           <p className="eyebrow !text-foreground">
-            Free response
+            {frqTitle(frq.type)}
             <br />
             {frq.pointValue} point{frq.pointValue === 1 ? "" : "s"}
           </p>

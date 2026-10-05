@@ -183,11 +183,21 @@ model Choice {
   @@unique([questionId, label])
 }
 
+// Which exam section a free-response prompt belongs to. Courses with a single
+// free-response section (CSA, Calc, Physics) use FRQ; World History has three kinds.
+enum FrqType {
+  FRQ
+  SAQ
+  DBQ
+  LEQ
+}
+
 model FRQPrompt {
   id             String   @id @default(cuid())
   courseId       String
   unitId         String
   topicId        String
+  type           FrqType  @default(FRQ)
   prompt         String   @db.Text
   pointValue     Int
   rubric         Json // itemized: [{ points, description }]

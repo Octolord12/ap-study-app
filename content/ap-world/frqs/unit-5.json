@@ -3,6 +3,7 @@
     "id": "ap-world-u5-saq-1",
     "unit": "unit-5-revolutions",
     "topic": "atlantic-revolutions",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE Enlightenment idea that influenced revolutionary movements in this era.\n\n**b)** Describe ONE way the Haitian Revolution differed from the American Revolution in terms of its outcome regarding slavery.\n\n**c)** Explain ONE reason Latin American independence movements of the early 19th century were influenced by earlier Atlantic revolutions.",
     "pointValue": 3,
     "rubric": [
@@ -17,6 +18,7 @@
     "id": "ap-world-u5-saq-2",
     "unit": "unit-5-revolutions",
     "topic": "industrial-revolution-begins",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE factor that allowed Great Britain to industrialize first.\n\n**b)** Describe ONE technological innovation central to early industrialization.\n\n**c)** Explain ONE way the factory system changed the nature of work compared to earlier home-based production.",
     "pointValue": 3,
     "rubric": [
@@ -31,6 +33,7 @@
     "id": "ap-world-u5-saq-3",
     "unit": "unit-5-revolutions",
     "topic": "effects-of-industrialization",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE negative social consequence of early industrialization for factory workers.\n\n**b)** Describe ONE way workers or reformers responded to the problems caused by industrialization.\n\n**c)** Explain ONE way industrialization affected global economic relationships between industrialized and non-industrialized regions.",
     "pointValue": 3,
     "rubric": [

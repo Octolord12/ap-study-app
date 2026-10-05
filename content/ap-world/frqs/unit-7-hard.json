@@ -3,6 +3,7 @@
     "id": "ap-world-u7-frq-4",
     "unit": "unit-7-global-conflict",
     "topic": "world-war-one-and-russian-revolution",
+    "type": "SAQ",
     "prompt": "Use the passage to answer parts A, B and C.\n\n> “The Allied governments affirm, and Germany accepts, that Germany and her allies are responsible for causing all the loss and damage suffered by the Allied governments and their peoples as a result of the war imposed upon them.”\n>\n> *Source: A summary of a clause of the Treaty of Versailles, 1919*\n\n**a)** Identify ONE obligation or burden the treaty placed on Germany, based on the passage or your knowledge of the treaty.\n\n**b)** Explain ONE way in which the treaty contributed to political instability in Germany in the 1920s and 1930s.\n\n**c)** Explain ONE way in which the postwar settlement affected the Middle East or Africa.",
     "pointValue": 3,
     "rubric": [
@@ -29,6 +30,7 @@
     "id": "ap-world-u7-frq-5",
     "unit": "unit-7-global-conflict",
     "topic": "world-war-two-and-mass-atrocities",
+    "type": "LEQ",
     "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the experience of total war in the first half of the twentieth century changed the role of governments in society.",
     "pointValue": 6,
     "rubric": [

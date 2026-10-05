@@ -3,6 +3,7 @@
     "id": "ap-world-u1-frq-4",
     "unit": "unit-1-global-tapestry",
     "topic": "state-building-americas-africa",
+    "type": "SAQ",
     "prompt": "Use the passage to answer parts A, B and C.\n\n> “When the king of Mali came to Cairo on pilgrimage, he gave out so much gold that its value fell in the markets and did not recover for many years. His followers numbered in the thousands.”\n>\n> *Source: A Cairo official, early fourteenth century*\n\n**a)** Identify ONE piece of evidence in the passage that shows Mali was connected to the wider Islamic world.\n\n**b)** Explain ONE historical development that helps explain why Mali's rulers had so much gold.\n\n**c)** Explain ONE way that Mali's connections to the Islamic world affected West African societies in this period.",
     "pointValue": 3,
     "rubric": [
@@ -29,6 +30,7 @@
     "id": "ap-world-u1-frq-5",
     "unit": "unit-1-global-tapestry",
     "topic": "european-christendom",
+    "type": "LEQ",
     "prompt": "**Long Essay Question**\n\nEvaluate the extent to which religion shaped the political authority of states in TWO of the following regions between about 1200 and 1450: East Asia, West Africa, South Asia, western Europe.",
     "pointValue": 6,
     "rubric": [

@@ -3,6 +3,7 @@
     "id": "ap-world-u6-frq-4",
     "unit": "unit-6-consequences-of-industrialization",
     "topic": "imperial-expansion",
+    "type": "SAQ",
     "prompt": "Use the passage to answer parts A, B and C.\n\n> “The foreigners have demanded that our ports be opened to their ships and that their subjects be tried only by their own officers. Having lost the war, we must pay a great sum of silver and give up the island, and we are unable to refuse.”\n>\n> *Source: Memorial of a Qing official after the First Opium War, 1840s*\n\n**a)** Identify ONE concession that the passage says China was forced to make.\n\n**b)** Explain ONE reason that Britain pressed for greater access to the Chinese market in this period.\n\n**c)** Explain ONE way that Chinese people or the Qing government responded to foreign pressure in the second half of the nineteenth century.",
     "pointValue": 3,
     "rubric": [
@@ -29,6 +30,7 @@
     "id": "ap-world-u6-frq-5",
     "unit": "unit-6-consequences-of-industrialization",
     "topic": "migration-in-interconnected-world",
+    "type": "LEQ",
     "prompt": "**Long Essay Question**\n\nEvaluate the extent to which industrialization changed patterns of global migration in the period 1750-1900.",
     "pointValue": 6,
     "rubric": [

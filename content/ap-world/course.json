@@ -7,7 +7,7 @@
     "totalDurationMinutes": 195,
     "sections": [
       { "type": "MCQ", "questionCount": 55, "durationMinutes": 55, "scoreWeight": 0.4 },
-      { "type": "SAQ", "questionCount": 1, "durationMinutes": 40, "scoreWeight": 0.2 },
+      { "type": "SAQ", "questionCount": 3, "durationMinutes": 40, "scoreWeight": 0.2 },
       { "type": "DBQ", "questionCount": 1, "durationMinutes": 60, "scoreWeight": 0.25 },
       { "type": "LEQ", "questionCount": 1, "durationMinutes": 40, "scoreWeight": 0.15 }
     ]

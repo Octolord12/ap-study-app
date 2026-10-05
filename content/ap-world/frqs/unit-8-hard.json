@@ -3,6 +3,7 @@
     "id": "ap-world-u8-frq-4",
     "unit": "unit-8-cold-war-and-decolonization",
     "topic": "decolonization",
+    "type": "SAQ",
     "prompt": "Use the passage to answer parts A, B and C.\n\n> “At long last the battle has ended, and our beloved country is free forever. We have awakened. We shall show the world that the African is capable of managing his own affairs.”\n>\n> *Source: Speech by a nationalist leader on the day of his country's independence, 1957*\n\n**a)** Identify ONE belief or goal expressed by the speaker.\n\n**b)** Explain ONE way in which World War II contributed to the growth of independence movements in Asia and Africa.\n\n**c)** Explain ONE challenge that newly independent states commonly faced.",
     "pointValue": 3,
     "rubric": [
@@ -29,6 +30,7 @@
     "id": "ap-world-u8-frq-5",
     "unit": "unit-8-cold-war-and-decolonization",
     "topic": "newly-independent-states",
+    "type": "LEQ",
     "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the Cold War shaped the process of decolonization and the development of newly independent states in Asia and Africa between 1945 and 1991.",
     "pointValue": 6,
     "rubric": [

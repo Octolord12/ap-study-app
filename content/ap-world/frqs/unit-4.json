@@ -3,6 +3,7 @@
     "id": "ap-world-u4-saq-1",
     "unit": "unit-4-transoceanic-interconnections",
     "topic": "columbian-exchange",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way the Columbian Exchange affected agriculture in Afro-Eurasia.\n\n**b)** Describe ONE way the Columbian Exchange affected Indigenous populations in the Americas.\n\n**c)** Explain ONE reason the effects of the Columbian Exchange were so different for these two regions.",
     "pointValue": 3,
     "rubric": [
@@ -17,6 +18,7 @@
     "id": "ap-world-u4-saq-2",
     "unit": "unit-4-transoceanic-interconnections",
     "topic": "labor-systems-and-slave-trade",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE labor system used by European colonizers to extract labor from Indigenous populations in the Americas.\n\n**b)** Explain ONE reason European colonizers increasingly relied on enslaved African labor instead.\n\n**c)** Describe ONE lasting effect of the transatlantic slave trade on societies in the Americas.",
     "pointValue": 3,
     "rubric": [
@@ -31,6 +33,7 @@
     "id": "ap-world-u4-saq-3",
     "unit": "unit-4-transoceanic-interconnections",
     "topic": "technology-and-exploration",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE technological development that enabled European maritime exploration during this period.\n\n**b)** Describe ONE motivation that drove European powers to seek new maritime trade routes.\n\n**c)** Explain ONE way European maritime exploration led to lasting changes in global trade patterns.",
     "pointValue": 3,
     "rubric": [

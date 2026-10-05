@@ -12,6 +12,7 @@ import { cn } from "cn";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
+import { frqTitle } from "@/lib/content/exam-format";
 import { examDraftKey, parseExamDraft, purgeStaleExamDrafts, serializeExamDraft } from "@/lib/study/exam-draft";
 
 export interface ExamMcqItem {
@@ -23,6 +24,7 @@ export interface ExamMcqItem {
 
 export interface ExamFrqItem {
   id: string;
+  type: string; // FRQ, SAQ, DBQ or LEQ
   promptHtml: string;
   diagram: Diagram | null;
   pointValue: number;
@@ -163,7 +165,13 @@ export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqI
   const isAnswered = (i: number) =>
     i < mcqItems.length ? Boolean(mcqAnswers[mcqItems[i].id]) : (frqResponses[frqItems[i - mcqItems.length].id] ?? "").trim().length > 0;
   const unanswered = items.filter((_, i) => !isAnswered(i)).length;
-  const sectionLabel = isFrq ? "Free response" : "Multiple choice";
+  // "Short answer 2 of 3" when the exam has several prompts of the kind, just the kind when it has one.
+  const sameKind = frqItem ? frqItems.filter((f) => f.type === frqItem.type) : [];
+  const sectionLabel = frqItem
+    ? sameKind.length > 1
+      ? `${frqTitle(frqItem.type)} ${sameKind.indexOf(frqItem) + 1} of ${sameKind.length}`
+      : frqTitle(frqItem.type)
+    : "Multiple choice";
 
   const grid = (
     <div className="flex flex-wrap gap-1" role="group" aria-label="Jump to a question">
@@ -173,7 +181,7 @@ export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqI
         <button
           type="button"
           onClick={() => setIndex(i)}
-          aria-label={`Question ${i + 1}${i >= mcqItems.length ? " (free response)" : ""}, ${isAnswered(i) ? "answered" : "not answered"}`}
+          aria-label={`Question ${i + 1}${i >= mcqItems.length ? ` (${frqTitle(frqItems[i - mcqItems.length].type).toLowerCase()})` : ""}, ${isAnswered(i) ? "answered" : "not answered"}`}
           aria-current={i === index ? "step" : undefined}
           className={cn(
             "grid size-9 place-items-center border-[1.5px] border-foreground text-xs font-semibold tabular-nums hover:bg-mark hover:text-on-mark",

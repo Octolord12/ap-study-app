@@ -1,7 +1,5 @@
 // Plain-language description of a course's examFormat JSON (the same data the
-// exam simulator reads), for course lists and the landing page. Only MCQ and
-// FRQ sections get a count: for the World History item types (SAQ/DBQ/LEQ)
-// the count in the data is a slot count, not something worth printing.
+// exam simulator reads), for course lists and the landing page.
 interface ExamFormatLike {
   totalDurationMinutes: number;
   sections: { type: string; questionCount: number }[];
@@ -15,10 +13,21 @@ export const SECTION_NAMES: Record<string, string> = {
   LEQ: "long essay",
 };
 
+export type FrqKind = "FRQ" | "SAQ" | "DBQ" | "LEQ";
+
+const FRQ_TITLES: Record<FrqKind, string> = {
+  FRQ: "Free response",
+  SAQ: "Short answer",
+  DBQ: "Document-based question",
+  LEQ: "Long essay",
+};
+
+export function frqTitle(type: string): string {
+  return FRQ_TITLES[type as FrqKind] ?? "Free response";
+}
+
 export function describeExamFormat(format: ExamFormatLike): string {
-  return format.sections
-    .map((s) => (s.type === "MCQ" || s.type === "FRQ" ? `${s.questionCount} ${SECTION_NAMES[s.type]}` : (SECTION_NAMES[s.type] ?? s.type)))
-    .join(", ");
+  return format.sections.map((s) => `${s.questionCount} ${SECTION_NAMES[s.type] ?? s.type}`).join(", ");
 }
 
 export function formatDuration(minutes: number): string {

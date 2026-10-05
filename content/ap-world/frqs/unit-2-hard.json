@@ -3,6 +3,7 @@
     "id": "ap-world-u2-frq-4",
     "unit": "unit-2-networks-of-exchange",
     "topic": "silk-roads",
+    "type": "SAQ",
     "prompt": "Use the passage to answer parts A, B and C.\n\n> “Ships arriving from the Black Sea brought sailors already marked by the sickness. Within weeks the pestilence had spread from the harbor into the town, and neighbors fled from neighbors.”\n>\n> *Source: Account by a notary of a Genoese trading port, 1347*\n\n**a)** Identify ONE way the passage shows that regions of Eurasia were connected by trade.\n\n**b)** Explain ONE historical development between 1200 and 1350 that made such connections possible.\n\n**c)** Explain ONE long-term consequence of the plague described in the passage for European society.",
     "pointValue": 3,
     "rubric": [
@@ -29,6 +30,7 @@
     "id": "ap-world-u2-frq-5",
     "unit": "unit-2-networks-of-exchange",
     "topic": "mongol-empire",
+    "type": "LEQ",
     "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the Mongol Empire transformed trade and cultural exchange across Eurasia in the period 1200-1450.",
     "pointValue": 6,
     "rubric": [

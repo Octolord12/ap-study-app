@@ -3,6 +3,7 @@
     "id": "ap-world-u2-saq-1",
     "unit": "unit-2-networks-of-exchange",
     "topic": "mongol-empire",
+    "type": "SAQ",
     "prompt": "Historians often describe the 13th and 14th centuries as a period of increased connectivity across Eurasia due to Mongol conquests.\n\nUsing your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE way that Mongol rule facilitated increased trade across Eurasia.\n\n**b)** Explain ONE negative consequence of this increased connectivity for populations across Eurasia.\n\n**c)** Describe ONE example of a specific khanate or successor state that emerged from the division of the Mongol Empire.",
     "pointValue": 3,
     "rubric": [
@@ -17,6 +18,7 @@
     "id": "ap-world-u2-saq-2",
     "unit": "unit-2-networks-of-exchange",
     "topic": "indian-ocean-trade",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE feature that made Indian Ocean trade during this period different from trans-Saharan trade.\n\n**b)** Explain ONE reason monsoon winds were important to merchants participating in Indian Ocean trade.\n\n**c)** Describe ONE way port cities along the Indian Ocean developed as a result of sustained international trade contact.",
     "pointValue": 3,
     "rubric": [
@@ -31,6 +33,7 @@
     "id": "ap-world-u2-saq-3",
     "unit": "unit-2-networks-of-exchange",
     "topic": "trans-saharan-trade",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE commodity that was central to trans-Saharan trade.\n\n**b)** Explain ONE way trans-Saharan trade contributed to religious change in West Africa.\n\n**c)** Describe ONE way a specific West African state (such as Mali) benefited economically from its position along trans-Saharan trade routes.",
     "pointValue": 3,
     "rubric": [

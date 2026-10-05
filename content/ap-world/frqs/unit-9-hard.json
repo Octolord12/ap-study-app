@@ -3,6 +3,7 @@
     "id": "ap-world-u9-frq-4",
     "unit": "unit-9-globalization",
     "topic": "globalized-culture",
+    "type": "SAQ",
     "prompt": "Use the passage to answer parts A, B and C.\n\n> “Wherever you travel, you find the same fast-food chains, the same Hollywood films and the same pop songs on the radio. Local traditions are being swept away by a single global culture.”\n>\n> *Source: A cultural critic, 1990s*\n\n**a)** Identify ONE concern expressed by the critic.\n\n**b)** Explain ONE development since 1950 that helped spread the global cultural products described in the passage.\n\n**c)** Explain ONE way in which local cultures have responded to or influenced global culture.",
     "pointValue": 3,
     "rubric": [
@@ -29,6 +30,7 @@
     "id": "ap-world-u9-frq-5",
     "unit": "unit-9-globalization",
     "topic": "rights-based-movements",
+    "type": "LEQ",
     "prompt": "**Long Essay Question**\n\nEvaluate the extent to which rights-based movements changed societies in TWO of the following regions between 1900 and the present: the United States, South Africa, India, the Middle East.",
     "pointValue": 6,
     "rubric": [

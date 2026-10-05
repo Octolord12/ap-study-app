@@ -70,6 +70,7 @@ export default async function ExamRunnerPage({
       .filter((f): f is NonNullable<typeof f> => f !== undefined)
       .map(async (f) => ({
         id: f.id,
+        type: f.type,
         promptHtml: await renderContentToHtml(f.prompt, courseSlug),
         diagram: (f.diagram as Diagram | null) ?? null,
         pointValue: f.pointValue,

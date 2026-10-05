@@ -3,6 +3,7 @@
     "id": "ap-world-u8-saq-1",
     "unit": "unit-8-cold-war-and-decolonization",
     "topic": "origins-of-the-cold-war",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE ideological difference between the United States and the Soviet Union that contributed to Cold War tensions.\n\n**b)** Describe ONE U.S. policy developed in the late 1940s to counter Soviet influence.\n\n**c)** Explain ONE way differing visions for postwar Europe contributed to mutual distrust between the two superpowers.",
     "pointValue": 3,
     "rubric": [
@@ -17,6 +18,7 @@
     "id": "ap-world-u8-saq-2",
     "unit": "unit-8-cold-war-and-decolonization",
     "topic": "decolonization",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE factor that contributed to the wave of decolonization following World War II.\n\n**b)** Describe ONE example of a nonviolent independence movement during this era.\n\n**c)** Explain ONE way decolonization processes sometimes led to conflict, even as colonies gained independence.",
     "pointValue": 3,
     "rubric": [
@@ -31,6 +33,7 @@
     "id": "ap-world-u8-saq-3",
     "unit": "unit-8-cold-war-and-decolonization",
     "topic": "end-of-the-cold-war",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE reform policy introduced by Mikhail Gorbachev in the Soviet Union during the 1980s.\n\n**b)** Describe ONE event symbolizing the end of Cold War division in Europe.\n\n**c)** Explain ONE consequence of the Soviet Union's collapse for global geopolitics.",
     "pointValue": 3,
     "rubric": [

@@ -7,6 +7,7 @@ import { getDb } from "@/lib/db";
 import { computeNextReview } from "@/lib/study/spaced-repetition";
 import { pickQuestionIdsForCustomQuiz } from "@/lib/study/queries";
 import { estimateApScoreRange } from "@/lib/study/exam-scoring";
+import { pickExamFrqIds, shuffled } from "@/lib/study/exam-selection";
 import { SelfGradingStrategy, type RubricLine } from "@/lib/scoring/grading";
 import { grantXpForActivity } from "@/lib/gamification/activity";
 import { xpForCorrectAnswer, xpForFrqPoints } from "@/lib/gamification/xp";
@@ -16,10 +17,6 @@ import { hasPassedBossBattle, scoreBossBattle } from "@/lib/study/boss-battle-ru
 import { bossBattleSecret, verifyBossBattle } from "@/lib/study/boss-battle-token";
 import type { AttemptSource, Difficulty } from "@/generated/prisma/client";
 import type { Course as ContentCourse } from "@/lib/content/schema";
-
-function shuffle<T>(items: T[]): T[] {
-  return [...items].sort(() => Math.random() - 0.5);
-}
 
 async function requireUserId(): Promise<string> {
   const session = await auth();
@@ -252,18 +249,16 @@ export async function startExam(courseId: string, courseSlug: string): Promise<v
 
   const examFormat = course.examFormat as unknown as ContentCourse["examFormat"];
   const mcqTarget = examFormat.sections.find((s) => s.type === "MCQ")?.questionCount;
-  const frqTarget = examFormat.sections.find((s) => s.type === "FRQ")?.questionCount;
 
   const [availableQuestions, availableFrqs] = await Promise.all([
     db.question.findMany({ where: { courseId }, select: { id: true } }),
-    db.fRQPrompt.findMany({ where: { courseId }, select: { id: true } }),
+    db.fRQPrompt.findMany({ where: { courseId }, select: { id: true, type: true } }),
   ]);
 
-  // We rarely have anywhere near the real exam's question count yet (content
-  // is seeded incrementally, full banks are Milestone 7) -- use whatever's
-  // available rather than failing, and say so on the intro screen.
-  const questionIds = shuffle(availableQuestions.map((q) => q.id)).slice(0, mcqTarget ?? availableQuestions.length);
-  const frqPromptIds = shuffle(availableFrqs.map((f) => f.id)).slice(0, frqTarget ?? availableFrqs.length);
+  // If a bank is ever smaller than the real exam, use whatever is there rather
+  // than failing, and say so on the intro screen.
+  const questionIds = shuffled(availableQuestions.map((q) => q.id)).slice(0, mcqTarget ?? availableQuestions.length);
+  const frqPromptIds = pickExamFrqIds(examFormat.sections, availableFrqs);
 
   const attempt = await db.examAttempt.create({
     data: { userId, courseId, questionIds, frqPromptIds },

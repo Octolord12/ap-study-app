@@ -3,6 +3,7 @@
     "id": "ap-world-u3-frq-4",
     "unit": "unit-3-land-based-empires",
     "topic": "religion-and-state-power",
+    "type": "SAQ",
     "prompt": "Use the passages to answer parts A, B and C.\n\n> “Let no man be molested on account of his religion, and let anyone follow the faith he prefers. The special tax on those who are not Muslims is abolished.”\n>\n> *Source: Edict of a Mughal emperor, late sixteenth century*\n\n> “The tax on those who are not Muslims, abolished in a former reign, shall be collected again.”\n>\n> *Source: Order issued by a Mughal emperor, 1679*\n\n**a)** Identify ONE difference between the policies described in the two passages.\n\n**b)** Explain ONE reason the first policy helped the Mughal rulers govern their empire.\n\n**c)** Explain ONE way in which another empire from this period, such as the Ottoman or Safavid Empire, dealt with religious diversity or religion as a source of state authority.",
     "pointValue": 3,
     "rubric": [
@@ -29,6 +30,7 @@
     "id": "ap-world-u3-frq-5",
     "unit": "unit-3-land-based-empires",
     "topic": "comparing-empires",
+    "type": "LEQ",
     "prompt": "**Long Essay Question**\n\nEvaluate the extent to which TWO of the following empires were similar in the methods they used to administer and maintain control of their territories between about 1450 and 1750: the Ottoman Empire, the Mughal Empire, the Qing Empire, the Russian Empire.",
     "pointValue": 6,
     "rubric": [

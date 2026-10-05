@@ -3,6 +3,7 @@
     "id": "ap-world-u5-frq-4",
     "unit": "unit-5-revolutions",
     "topic": "industrial-revolution-begins",
+    "type": "SAQ",
     "prompt": "Use the passage to answer parts A, B and C.\n\n> “In the mills I found children of nine and ten years working twelve hours a day among dangerous machinery. Many were deformed and sickly, and none had received any schooling.”\n>\n> *Source: Report of a government factory inspector, Britain, 1830s*\n\n**a)** Identify ONE working condition described in the passage.\n\n**b)** Explain ONE way reformers or governments responded to conditions like those described.\n\n**c)** Explain ONE way that industrialization affected a society outside Europe in the nineteenth century.",
     "pointValue": 3,
     "rubric": [
@@ -29,6 +30,7 @@
     "id": "ap-world-u5-frq-5",
     "unit": "unit-5-revolutions",
     "topic": "reactions-to-industrialization",
+    "type": "LEQ",
     "prompt": "**Long Essay Question**\n\nCompare the responses to industrialization in TWO of the following societies in the period 1750-1900: Great Britain, Japan, Egypt, the Ottoman Empire.",
     "pointValue": 6,
     "rubric": [

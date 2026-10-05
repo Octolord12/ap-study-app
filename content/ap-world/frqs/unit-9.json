@@ -3,6 +3,7 @@
     "id": "ap-world-u9-saq-1",
     "unit": "unit-9-globalization",
     "topic": "technological-advances",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE technological development that significantly increased global interconnection in the late 20th century.\n\n**b)** Explain ONE way this technology affected global trade or communication.\n\n**c)** Describe ONE economic sector that grew as a result of new information/digital technologies.",
     "pointValue": 3,
     "rubric": [
@@ -17,6 +18,7 @@
     "id": "ap-world-u9-saq-2",
     "unit": "unit-9-globalization",
     "topic": "economic-globalization",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE role multinational corporations played in economic globalization.\n\n**b)** Describe ONE international institution that promoted economic globalization.\n\n**c)** Explain ONE criticism of economic globalization related to inequality.",
     "pointValue": 3,
     "rubric": [
@@ -31,6 +33,7 @@
     "id": "ap-world-u9-saq-3",
     "unit": "unit-9-globalization",
     "topic": "rights-based-movements",
+    "type": "SAQ",
     "prompt": "Using your knowledge of world history, answer parts A, B, and C.\n\n**a)** Describe ONE rights-based movement that gained international attention during the late 20th century.\n\n**b)** Explain ONE way global communication helped this movement achieve its goals.\n\n**c)** Describe ONE way international organizations supported rights-based movements during this era.",
     "pointValue": 3,
     "rubric": [

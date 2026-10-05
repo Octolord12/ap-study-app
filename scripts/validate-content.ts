@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { CourseSchema, FRQSchema, QuestionSchema, UnitSchema } from "../src/lib/content/schema";
-import { validateFRQ, validateQuestion, validateUnit } from "../src/lib/content/validate";
+import { checkExamSupply, validateFRQ, validateQuestion, validateUnit } from "../src/lib/content/validate";
 
 const CONTENT_DIR = path.join(__dirname, "../content");
 
@@ -98,6 +98,9 @@ function validateCourse(courseSlug: string) {
 
   // --- FRQs ---
   const frqsDir = path.join(courseDir, "frqs");
+  const examFormat = courseResult.data.examFormat;
+  const sectionTypes = examFormat.sections.map((s) => s.type);
+  const promptTypes: string[] = [];
 
   if (existsSync(frqsDir)) {
     for (const file of readdirSync(frqsDir)) {
@@ -119,10 +122,14 @@ function validateCourse(courseSlug: string) {
         if (seenIds.has(frq.id)) fail(label, `duplicate id "${frq.id}" (MCQs and FRQs share one id space)`);
         seenIds.add(frq.id);
 
-        for (const problem of validateFRQ(frq, topicKeys)) fail(label, problem.message);
+        promptTypes.push(frq.type ?? "FRQ");
+
+        for (const problem of validateFRQ(frq, topicKeys, sectionTypes)) fail(label, problem.message);
       });
     }
   }
+
+  for (const problem of checkExamSupply(examFormat.sections, promptTypes)) fail(courseFile, problem.message);
 }
 
 function main() {

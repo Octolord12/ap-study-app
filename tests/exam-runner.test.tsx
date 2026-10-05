@@ -16,7 +16,7 @@ const mcqItems: ExamMcqItem[] = [
   { id: "q1", stemHtml: "<p>First question</p>", diagram: null, choices: choices("q1") },
   { id: "q2", stemHtml: "<p>Second question</p>", diagram: null, choices: choices("q2") },
 ];
-const frqItems: ExamFrqItem[] = [{ id: "f1", promptHtml: "<p>Explain it</p>", diagram: null, pointValue: 4 }];
+const frqItems: ExamFrqItem[] = [{ id: "f1", type: "FRQ", promptHtml: "<p>Explain it</p>", diagram: null, pointValue: 4 }];
 const KEY = examDraftKey("exam-1");
 
 function renderRunner(initialSecondsLeft: number) {
@@ -140,5 +140,30 @@ describe("ExamRunner keeps answers across a reload", () => {
     localStorage.setItem(KEY, "something");
     render(<ClearExamDraft examAttemptId="exam-1" />);
     expect(localStorage.getItem(KEY)).toBeNull();
+  });
+});
+
+describe("labels for several kinds of free response", () => {
+  const worldFrqs: ExamFrqItem[] = [
+    { id: "s1", type: "SAQ", promptHtml: "<p>SAQ one</p>", diagram: null, pointValue: 3 },
+    { id: "s2", type: "SAQ", promptHtml: "<p>SAQ two</p>", diagram: null, pointValue: 3 },
+    { id: "d1", type: "DBQ", promptHtml: "<p>The DBQ</p>", diagram: null, pointValue: 7 },
+    { id: "l1", type: "LEQ", promptHtml: "<p>The LEQ</p>", diagram: null, pointValue: 6 },
+  ];
+
+  it("names each prompt's kind, numbering only kinds that have several", () => {
+    render(<ExamRunner examAttemptId="exam-2" courseSlug="ap-world" initialSecondsLeft={3600} mcqItems={mcqItems} frqItems={worldFrqs} />);
+    const label = (name: RegExp) => fireEvent.click(screen.getAllByRole("button", { name })[0]);
+    expect(screen.getAllByText(/Multiple choice/).length).toBeGreaterThan(0);
+
+    label(/^Question 3 \(short answer\)/);
+    expect(screen.getAllByText(/Short answer 1 of 2/).length).toBeGreaterThan(0);
+    label(/^Question 4 \(short answer\)/);
+    expect(screen.getAllByText(/Short answer 2 of 2/).length).toBeGreaterThan(0);
+    label(/^Question 5 \(document-based question\)/);
+    expect(screen.getAllByText(/Document-based question/).length).toBeGreaterThan(0);
+    label(/^Question 6 \(long essay\)/);
+    expect(screen.getAllByText(/Long essay/).length).toBeGreaterThan(0);
+    expect(screen.queryByText(/Free response/)).toBeNull();
   });
 });

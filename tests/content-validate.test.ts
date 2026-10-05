@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { checkMarkdownBalance, validateDiagram, validateFRQ, validateQuestion, validateUnit } from "@/lib/content/validate";
+import { checkExamSupply, checkMarkdownBalance, validateDiagram, validateFRQ, validateQuestion, validateUnit } from "@/lib/content/validate";
 import type { Choice, FRQ, Question, Unit } from "@/lib/content/schema";
 import type { ForceDiagram, XYGraphDiagram } from "@/lib/content/diagram-schema";
 
@@ -99,6 +99,44 @@ describe("validateFRQ", () => {
     const frq = makeFRQ({ pointValue: 5 });
     const problems = validateFRQ(frq, KNOWN_TOPICS);
     expect(problems.some((p) => p.message.includes("rubric points sum to"))).toBe(true);
+  });
+
+  it("treats a missing type as FRQ and accepts it where the exam has a free-response section", () => {
+    expect(validateFRQ(makeFRQ(), KNOWN_TOPICS, ["MCQ", "FRQ"])).toEqual([]);
+  });
+
+  it("flags an untyped prompt in a course whose exam has only SAQ, DBQ and LEQ sections", () => {
+    const problems = validateFRQ(makeFRQ(), KNOWN_TOPICS, ["MCQ", "SAQ", "DBQ", "LEQ"]);
+    expect(problems.some((p) => p.message.includes('type "FRQ" is not a section'))).toBe(true);
+  });
+
+  it("accepts a typed prompt that matches a section and flags one that does not", () => {
+    expect(validateFRQ(makeFRQ({ type: "SAQ" }), KNOWN_TOPICS, ["MCQ", "SAQ", "LEQ"])).toEqual([]);
+    expect(validateFRQ(makeFRQ({ type: "DBQ" }), KNOWN_TOPICS, ["MCQ", "FRQ"]).length).toBe(1);
+  });
+});
+
+describe("checkExamSupply", () => {
+  const sections = [
+    { type: "MCQ", questionCount: 55 },
+    { type: "SAQ", questionCount: 3 },
+    { type: "LEQ", questionCount: 1 },
+  ];
+
+  it("passes when every non-MCQ section has enough prompts of its type", () => {
+    expect(checkExamSupply(sections, ["SAQ", "SAQ", "SAQ", "SAQ", "LEQ"])).toEqual([]);
+  });
+
+  it("flags a section that has too few prompts, naming the type", () => {
+    const problems = checkExamSupply(sections, ["SAQ", "SAQ", "FRQ"]);
+    expect(problems.map((p) => p.message)).toEqual([
+      "exam section SAQ needs 3 prompt(s) of that type, but the course has 2",
+      "exam section LEQ needs 1 prompt(s) of that type, but the course has 0",
+    ]);
+  });
+
+  it("does not count multiple choice, which is not drawn from the prompts", () => {
+    expect(checkExamSupply([{ type: "MCQ", questionCount: 40 }], [])).toEqual([]);
   });
 });
 

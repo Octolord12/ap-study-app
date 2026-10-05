@@ -144,6 +144,7 @@ async function seedCourse(courseSlug: string) {
             courseId: dbCourse.id,
             unitId,
             topicId,
+            type: frq.type ?? "FRQ",
             prompt: frq.prompt,
             pointValue: frq.pointValue,
             rubric: frq.rubric,
@@ -154,6 +155,7 @@ async function seedCourse(courseSlug: string) {
           update: {
             unitId,
             topicId,
+            type: frq.type ?? "FRQ",
             prompt: frq.prompt,
             pointValue: frq.pointValue,
             rubric: frq.rubric,

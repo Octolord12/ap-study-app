@@ -62,11 +62,15 @@ class Bank:
             q["diagram"] = diagram
         self.mcqs.append(q)
 
-    def frq(self, topic, prompt, rubric, sample, diagram=None):
+    def frq(self, topic, prompt, rubric, sample, diagram=None, ftype=None):
+        """ftype: SAQ, DBQ or LEQ for a course whose exam has those sections; leave None for a plain FRQ."""
         fid = f"{self.prefix}-u{self.n}-frq-{self.frq_start + len(self.frqs)}"
-        f = {"id": fid, "unit": self.unit, "topic": topic, "prompt": prompt, "pointValue": sum(p for p, _ in rubric),
+        f = {"id": fid, "unit": self.unit, "topic": topic}
+        if ftype:
+            f["type"] = ftype
+        f.update({"prompt": prompt, "pointValue": sum(p for p, _ in rubric),
              "rubric": [{"id": f"r{i + 1}", "points": p, "description": d} for i, (p, d) in enumerate(rubric)],
-             "sampleResponse": sample, "reviewed": False}
+             "sampleResponse": sample, "reviewed": False})
         if diagram:
             f["diagram"] = diagram
         self.frqs.append(f)

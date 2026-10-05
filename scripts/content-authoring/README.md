@@ -29,7 +29,8 @@ helper (`Bank`, `ch`, `LIM`, `graph`) and is reusable for another course.
 - `ap-physics-1-hard/u1.py..u8.py`: plain Python. Each computed answer comes from the arithmetic
   in the script, with `assert`s on the keyed answer.
 - `ap-world-hard/common.py, u1.py..u9.py`: hand-written history items (nothing to compute).
-  Passages are original, with generic attributions.
+  Passages are original, with generic attributions. `saq()` and `leq()` set the prompt's `type`
+  (`Bank.frq(..., ftype=)`); a course whose exam has SAQ/DBQ/LEQ sections needs every prompt typed.
 - `ap-csa-hard/common.py, u1.py..u10.py`: **needs a JDK** (`JAVA_HOME`, or edit `SCRATCH` in
   `common.py`). `trace()` compiles and runs the displayed program for the correct output and runs
   mutated copies for the wrong choices; `compile_error()` checks compile-error questions;

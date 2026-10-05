@@ -33,10 +33,15 @@ export const RubricLineSchema = z.object({
   description: z.string().min(1),
 });
 
+// Which exam section a prompt is drawn for. Left out, it means plain "FRQ", the one
+// free-response section CSA, Calc and Physics have; World History must say SAQ, DBQ or LEQ.
+export const FrqTypeSchema = z.enum(["FRQ", "SAQ", "DBQ", "LEQ"]);
+
 export const FRQSchema = z.object({
   id: z.string().min(1),
   unit: z.string().min(1),
   topic: z.string().min(1),
+  type: FrqTypeSchema.optional(),
   prompt: z.string().min(1),
   pointValue: z.number().int().positive(),
   rubric: z.array(RubricLineSchema).min(1),
@@ -83,6 +88,7 @@ export type Choice = z.infer<typeof ChoiceSchema>;
 export type Question = z.infer<typeof QuestionSchema>;
 export type RubricLine = z.infer<typeof RubricLineSchema>;
 export type FRQ = z.infer<typeof FRQSchema>;
+export type FrqType = z.infer<typeof FrqTypeSchema>;
 export type Topic = z.infer<typeof TopicSchema>;
 export type Unit = z.infer<typeof UnitSchema>;
 export type Course = z.infer<typeof CourseSchema>;

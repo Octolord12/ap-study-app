@@ -19,14 +19,16 @@ export default async function ExamIntroPage({ params }: { params: Promise<{ cour
 
   const examFormat = course.examFormat as unknown as ContentCourse["examFormat"];
   const mcqSection = examFormat.sections.find((s) => s.type === "MCQ");
-  const frqSection = examFormat.sections.find((s) => s.type === "FRQ");
 
-  const [availableQuestions, availableFrqs] = await Promise.all([
+  const [availableQuestions, frqSupply] = await Promise.all([
     getDb().question.count({ where: { courseId: course.id } }),
-    getDb().fRQPrompt.count({ where: { courseId: course.id } }),
+    getDb().fRQPrompt.groupBy({ by: ["type"], where: { courseId: course.id }, _count: { _all: true } }),
   ]);
-  const short =
-    availableQuestions < (mcqSection?.questionCount ?? 0) || availableFrqs < (frqSection?.questionCount ?? 0);
+  const availableFrqs = frqSupply.reduce((sum, row) => sum + row._count._all, 0);
+  const frqShort = examFormat.sections.some(
+    (s) => s.type !== "MCQ" && (frqSupply.find((row) => row.type === s.type)?._count._all ?? 0) < s.questionCount,
+  );
+  const short = availableQuestions < (mcqSection?.questionCount ?? 0) || frqShort;
 
   const startExamAction = startExam.bind(null, course.id, course.slug);
 
@@ -52,7 +54,7 @@ export default async function ExamIntroPage({ params }: { params: Promise<{ cour
             <li key={section.type} className="grid gap-x-6 gap-y-1 py-4 sm:grid-cols-[minmax(0,1fr)_auto]">
               <p className="heading text-xl capitalize">{SECTION_NAMES[section.type] ?? section.type}</p>
               <p className="eyebrow sm:text-right">
-                {section.type === "MCQ" || section.type === "FRQ" ? `${section.questionCount} questions · ` : ""}
+                {section.questionCount} question{section.questionCount === 1 ? "" : "s"} ·{" "}
                 {formatDuration(section.durationMinutes)} · {Math.round(section.scoreWeight * 100)}% of score
               </p>
             </li>
