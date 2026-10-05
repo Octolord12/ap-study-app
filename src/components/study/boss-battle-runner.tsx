@@ -196,6 +196,7 @@ export function BossBattleRunner({
                   key={choice.id}
                   name={`boss-question-${question.id}`}
                   label={choice.label}
+                  displayLabel={choice.displayLabel}
                   textHtml={choice.textHtml}
                   checked={selectedLabel === choice.label}
                   disabled={revealed}

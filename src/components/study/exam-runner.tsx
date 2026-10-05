@@ -17,7 +17,7 @@ export interface ExamMcqItem {
   id: string;
   stemHtml: string;
   diagram: Diagram | null;
-  choices: { id: string; label: string; textHtml: string }[];
+  choices: { id: string; label: string; displayLabel: string; textHtml: string }[];
 }
 
 export interface ExamFrqItem {
@@ -195,6 +195,7 @@ export function ExamRunner({ examAttemptId, courseSlug, totalDurationMinutes, mc
                       key={choice.id}
                       name={`exam-question-${mcqItem.id}`}
                       label={choice.label}
+                      displayLabel={choice.displayLabel}
                       textHtml={choice.textHtml}
                       checked={mcqAnswers[mcqItem.id] === choice.label}
                       revealed={false}

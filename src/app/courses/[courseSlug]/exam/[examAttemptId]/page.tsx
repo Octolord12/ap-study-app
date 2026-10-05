@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
+import { displayLabelMap, remapChoiceLetters, shuffleChoices } from "@/lib/study/shuffle-choices";
 import { ExamRunner, type ExamFrqItem, type ExamMcqItem } from "@/components/study/exam-runner";
 import type { Course as ContentCourse } from "@/lib/content/schema";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -41,18 +42,25 @@ export default async function ExamRunnerPage({
     questionIds
       .map((id) => questionById.get(id))
       .filter((q): q is NonNullable<typeof q> => q !== undefined)
-      .map(async (q) => ({
-        id: q.id,
-        stemHtml: await renderContentToHtml(q.stem, courseSlug),
-        diagram: (q.diagram as Diagram | null) ?? null,
-        choices: await Promise.all(
-          q.choices.map(async (c) => ({
-            id: c.id,
-            label: c.label,
-            textHtml: await renderChoiceTextToHtml(c.text, courseSlug),
-          })),
-        ),
-      })),
+      .map(async (q) => {
+        // The exam's questions are fixed at start, but their choices are
+        // shuffled each time the page is shown, like everywhere else.
+        const choices = shuffleChoices(q.choices);
+        const letters = displayLabelMap(choices);
+        return {
+          id: q.id,
+          stemHtml: await renderContentToHtml(remapChoiceLetters(q.stem, letters), courseSlug),
+          diagram: (q.diagram as Diagram | null) ?? null,
+          choices: await Promise.all(
+            choices.map(async (c) => ({
+              id: c.id,
+              label: c.label,
+              displayLabel: c.displayLabel,
+              textHtml: await renderChoiceTextToHtml(remapChoiceLetters(c.text, letters), courseSlug),
+            })),
+          ),
+        };
+      }),
   );
 
   const frqItems: ExamFrqItem[] = await Promise.all(

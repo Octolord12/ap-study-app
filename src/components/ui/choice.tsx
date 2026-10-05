@@ -21,7 +21,9 @@ export function ChoiceList({ legend, children }: { legend: string; children: Rea
 }
 
 interface FaceProps {
-  label: string
+  // The letter shown. The row's identity (the radio's value) is `label`, which
+  // can differ because choices are shuffled; see lib/study/shuffle-choices.ts.
+  shown: string
   textHtml: string
   explanationHtml?: string
   revealed: boolean
@@ -30,15 +32,15 @@ interface FaceProps {
   input?: React.ReactNode
 }
 
-function ChoiceFace({ label, textHtml, explanationHtml, revealed, state, verdict, input }: FaceProps) {
+function ChoiceFace({ shown, textHtml, explanationHtml, revealed, state, verdict, input }: FaceProps) {
   const icon = state === "correct" ? <Check className="size-4" strokeWidth={2.5} aria-hidden /> : state === "wrong" ? <X className="size-4" strokeWidth={2.5} aria-hidden /> : null
 
   return (
     <>
       {input}
-      <span className="sr-only">{label}.</span>
+      <span className="sr-only">{shown}.</span>
       <span className="choice-bubble" aria-hidden>
-        {icon ?? label}
+        {icon ?? shown}
       </span>
       <span className="min-w-0">
         <Html html={textHtml} inline className={state === "correct" ? "font-semibold" : undefined} />
@@ -57,6 +59,7 @@ function verdictFor(state: ChoiceState, override?: string) {
 export function Choice({
   name,
   label,
+  displayLabel,
   textHtml,
   explanationHtml,
   checked,
@@ -68,6 +71,7 @@ export function Choice({
 }: {
   name: string
   label: string
+  displayLabel?: string
   textHtml: string
   explanationHtml?: string
   checked: boolean
@@ -80,7 +84,7 @@ export function Choice({
   return (
     <label className="choice" data-revealed={revealed} data-state={state}>
       <ChoiceFace
-        label={label}
+        shown={displayLabel ?? label}
         textHtml={textHtml}
         explanationHtml={explanationHtml}
         revealed={revealed}
@@ -98,12 +102,14 @@ export function Choice({
 
 export function ChoiceRow({
   label,
+  displayLabel,
   textHtml,
   explanationHtml,
   state = "idle",
   verdict,
 }: {
   label: string
+  displayLabel?: string
   textHtml: string
   explanationHtml?: string
   state?: ChoiceState
@@ -112,7 +118,7 @@ export function ChoiceRow({
   return (
     <div className="choice cursor-default" data-revealed="true" data-state={state}>
       <ChoiceFace
-        label={label}
+        shown={displayLabel ?? label}
         textHtml={textHtml}
         explanationHtml={explanationHtml}
         revealed

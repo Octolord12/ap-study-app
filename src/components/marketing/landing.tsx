@@ -4,6 +4,7 @@ import { listCourses } from "@/lib/study/queries";
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { describeExamFormat, formatDuration } from "@/lib/content/exam-format";
 import { SAMPLE_COURSE_SLUG, SAMPLE_QUESTION } from "@/lib/marketing/sample-question";
+import { displayLabelMap, remapChoiceLetters, shuffleChoices } from "@/lib/study/shuffle-choices";
 import { TESTIMONIALS } from "@/lib/marketing/testimonials";
 import { ComingSoon } from "@/components/marketing/coming-soon";
 import { SampleQuestion } from "@/components/marketing/sample-question";
@@ -34,15 +35,20 @@ export async function Landing() {
   const totalMcq = mcqCounts.reduce((sum, r) => sum + r._count._all, 0);
   const totalFrq = frqCounts.reduce((sum, r) => sum + r._count._all, 0);
 
+  // The demo question is shuffled on every visit, like the real ones.
+  const shuffled = shuffleChoices(SAMPLE_QUESTION.choices);
+  const letters = displayLabelMap(shuffled);
+  const shown = (text: string) => remapChoiceLetters(text, letters);
   const [stemHtml, explanationHtml, choices] = await Promise.all([
-    renderContentToHtml(SAMPLE_QUESTION.stem, SAMPLE_COURSE_SLUG),
-    renderContentToHtml(SAMPLE_QUESTION.explanation, SAMPLE_COURSE_SLUG),
+    renderContentToHtml(shown(SAMPLE_QUESTION.stem), SAMPLE_COURSE_SLUG),
+    renderContentToHtml(shown(SAMPLE_QUESTION.explanation), SAMPLE_COURSE_SLUG),
     Promise.all(
-      SAMPLE_QUESTION.choices.map(async (c) => ({
+      shuffled.map(async (c) => ({
         label: c.label,
+        displayLabel: c.displayLabel,
         isCorrect: c.isCorrect,
-        textHtml: await renderChoiceTextToHtml(c.text, SAMPLE_COURSE_SLUG),
-        explanationHtml: await renderContentToHtml(c.explanation, SAMPLE_COURSE_SLUG),
+        textHtml: await renderChoiceTextToHtml(shown(c.text), SAMPLE_COURSE_SLUG),
+        explanationHtml: await renderContentToHtml(shown(c.explanation), SAMPLE_COURSE_SLUG),
       })),
     ),
   ]);

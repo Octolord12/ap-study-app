@@ -34,6 +34,7 @@ export function ExamMcqReview({
                     <ChoiceRow
                       key={choice.id}
                       label={choice.label}
+                      displayLabel={choice.displayLabel}
                       textHtml={choice.textHtml}
                       explanationHtml={choice.explanationHtml}
                       state={choice.isCorrect ? "correct" : wasChosen ? "wrong" : "idle"}

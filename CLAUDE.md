@@ -1083,6 +1083,46 @@ save it as `prisma/migrations/<timestamp>_<name>/migration.sql`, review it, then
 migrations; never resets). Vercel does **not** run migrations on deploy, so
 apply a migration *before* pushing code that needs it.
 
+## Answer choices are shuffled on every showing
+
+Every time a question is shown, in every course and every mode (practice quiz,
+custom, weak-spot, daily, boss battle, exam, exam review, the landing page's
+sample), its choices are shuffled and re-lettered A, B, C, D (E). Reload, retry,
+or see it again later and the order is different. Added because the authored
+content put the right answer in slot A for ~99% of Calculus and 100% of Physics
+questions, so always picking A would have scored almost perfectly.
+
+- **Identity vs display.** A choice keeps its authored `label` as its identity:
+  it's the radio's value, what the runners send as `chosenLabel`, what is stored
+  on `QuestionAttempt.chosenLabel`, and what the server grades against
+  `Choice.label` (so `recordAttempt`, `submitExamAttempt`, spaced repetition,
+  mastery and the exam results lookup are all unchanged). Only the *order* and
+  `displayLabel` (the letter drawn for the slot) change. `Choice`/`ChoiceRow`
+  take `label` and `displayLabel`; **never use `displayLabel` for logic**.
+- **Where it happens.** Server-side, per request, in `renderQuizQuestions`
+  (`lib/study/render-quiz.ts`: quiz, boss, exam review), the exam attempt page,
+  and the landing page. Not in a client component: a client-side random shuffle
+  would differ between server render and hydration. `shuffleChoices` is a
+  uniform Fisher-Yates (`lib/study/shuffle-choices.ts`); it can return the
+  authored order by chance (1 in 24), on purpose, since forcing a change would
+  bias it. A page re-render on the server (a manual refresh) reshuffles, which is
+  the intended "every time".
+- **Letters inside text.** One authored string points at a choice by letter
+  ("even fewer than option A", `ap-csa-u4-mcq-30`). `remapChoiceLetters`
+  rewrites "choice/option/answer/response/statement/letter X" to the letter now
+  on screen, in the stem, explanations and choice text. It deliberately ignores a
+  bare "A" or "(a)", which in this content is math or code (`f(a)`,
+  `a.equals(b)`). `tests/choice-letters-audit.test.ts` reads all of `/content`
+  and fails if any text uses another way of pointing at a choice ("(B)", "both A
+  and B", "all of the above"), or a letter the question doesn't have. **When
+  authoring: don't refer to choices by letter** (or use "option X"), and don't
+  write "all/none of the above" (it would break under shuffling; no existing
+  question has one).
+- Tests: `tests/shuffle-choices.test.ts` (permutation, even spread of the correct
+  answer across slots, remap rules), `tests/render-quiz-shuffle.test.ts` (label,
+  correctness and text stay together; the right answer reaches every slot),
+  `tests/choice.test.tsx` (shown letter vs submitted label).
+
 ## Verified AP course info (2026-27)
 
 Exam formats change almost every year — 3 of our 4 launch courses have had a
@@ -1229,18 +1269,17 @@ in app logic — updating them should be a data edit.
   reloading the exam page gives a student a fresh clock. Pre-existing, not
   touched by the redesign; fixing it needs the start time stored on
   `ExamAttempt` and the remaining time derived from it.
-- **The correct answer is almost always "A" (content bug, high priority).**
-  Authored position of the correct choice, counted from `/content`: AP Calculus
-  AB 238 of 240 are A; AP Physics 1 240 of 240; AP CSA 30% A / 56% B / 12% C;
-  AP World 26% A / 72% B; overall C is correct 3% of the time and D under 1%.
-  Nothing shuffles choices at render time, so always picking A scores ~99-100%
-  in Calc and Physics, and everything built on correctness (XP, mastery,
-  proficiency, boss titles, exam estimates) is easy to game. Only ~28 of 1,050
-  questions mention a choice letter in their text, so a fix is tractable:
-  either permute and relabel choices when seeding/authoring (needs a reseed =
-  DB write, and the 28 label references fixed), or shuffle per question at
-  render time with a stable per-(user, question) seed and relabel A-D. Not done;
-  needs the owner's call.
+- **The authored content still has the correct answer in slot A ~60% of the
+  time** (Calc 99%, Physics 100%, CSA 30% A / 56% B, World 26% A / 72% B). It no
+  longer matters to students because choices are shuffled on every showing (see
+  "Answer choices are shuffled" above), but don't read the JSON's order as
+  meaningful, and `/admin/review` deliberately shows the *authored* order so a
+  reviewer can compare it with the content files.
+- **The correct answer is in the page payload.** `RenderedChoice.isCorrect` goes
+  to the client for every choice before the student answers (the runners need it
+  to reveal instantly), so someone who opens the browser's dev tools can read it.
+  Shuffling stops position-guessing, not inspection. Pre-existing; fixing it
+  means asking the server to reveal after each answer.
 - **Boss battle pass/fail is decided from a client-sent `correctCount`.**
   `submitBossBattle` trusts `correctCount`/`total` from the browser, so the
   `passed` flag (and now the title derived from it) can be forged by a crafted

@@ -1,5 +1,6 @@
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { getQuestionsByIds } from "@/lib/study/queries";
+import { displayLabelMap, remapChoiceLetters, shuffleChoices } from "@/lib/study/shuffle-choices";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
 import type { Diagram } from "@/lib/content/diagram-schema";
 
@@ -8,6 +9,10 @@ import type { Diagram } from "@/lib/content/diagram-schema";
 // server-side even though the quiz itself is a Client Component: see the
 // react-markdown gotcha in CLAUDE.md (async Shiki highlighter can't run
 // client-side).
+//
+// Choices are shuffled here, on every call, so each showing of a question has
+// its own order. `label` stays the authored label (what is sent back, stored
+// and graded); `displayLabel` is the letter shown. See shuffle-choices.ts.
 export async function renderQuizQuestions(questionIds: string[], courseSlug: string): Promise<RenderedQuestion[]> {
   const questions = await getQuestionsByIds(questionIds);
 
@@ -17,20 +22,24 @@ export async function renderQuizQuestions(questionIds: string[], courseSlug: str
       // content-authoring time); there's no dedicated topic page, so this
       // points back to the unit page pre-filtered to that topic.
       const [, unitPart, topicPart] = q.conceptLink.split("/");
+      const choices = shuffleChoices(q.choices);
+      const letters = displayLabelMap(choices);
+      const withShownLetters = (text: string) => remapChoiceLetters(text, letters);
       return {
         id: q.id,
         difficulty: q.difficulty,
-        stemHtml: await renderContentToHtml(q.stem, courseSlug),
-        explanationHtml: await renderContentToHtml(q.explanation, courseSlug),
+        stemHtml: await renderContentToHtml(withShownLetters(q.stem), courseSlug),
+        explanationHtml: await renderContentToHtml(withShownLetters(q.explanation), courseSlug),
         diagram: (q.diagram as Diagram | null) ?? null,
         conceptHref: `/courses/${courseSlug}/units/${unitPart}?topic=${topicPart}`,
         choices: await Promise.all(
-          q.choices.map(async (c) => ({
+          choices.map(async (c) => ({
             id: c.id,
             label: c.label,
-            textHtml: await renderChoiceTextToHtml(c.text, courseSlug),
+            displayLabel: c.displayLabel,
+            textHtml: await renderChoiceTextToHtml(withShownLetters(c.text), courseSlug),
             isCorrect: c.isCorrect,
-            explanationHtml: await renderContentToHtml(c.explanation, courseSlug),
+            explanationHtml: await renderContentToHtml(withShownLetters(c.explanation), courseSlug),
           })),
         ),
       };

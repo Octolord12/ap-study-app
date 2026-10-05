@@ -9,6 +9,7 @@ import { Sheet } from "@/components/ui/sheet";
 
 export interface SampleChoiceView {
   label: string;
+  displayLabel: string;
   textHtml: string;
   explanationHtml: string;
   isCorrect: boolean;
@@ -48,6 +49,7 @@ export function SampleQuestion({
               key={c.label}
               name="sample-question"
               label={c.label}
+              displayLabel={c.displayLabel}
               textHtml={c.textHtml}
               explanationHtml={c.explanationHtml}
               checked={selected === c.label}
@@ -76,7 +78,7 @@ export function SampleQuestion({
 
       <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
         <p aria-live="polite" className="text-sm font-medium">
-          {revealed ? (picked?.isCorrect ? "Correct." : "Not quite. Read why each choice is right or wrong.") : selected ? `Answer ${selected} selected.` : "Pick one answer."}
+          {revealed ? (picked?.isCorrect ? "Correct." : "Not quite. Read why each choice is right or wrong.") : selected ? `Answer ${picked?.displayLabel ?? selected} selected.` : "Pick one answer."}
         </p>
         {revealed ? (
           <Button onClick={reset} variant="outline">

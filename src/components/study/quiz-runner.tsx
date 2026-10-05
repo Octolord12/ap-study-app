@@ -24,7 +24,9 @@ import type { Diagram } from "@/lib/content/diagram-schema";
 
 export interface RenderedChoice {
   id: string;
+  // The authored label: sent to the server and graded. Not the letter shown.
   label: string;
+  displayLabel: string;
   textHtml: string;
   isCorrect: boolean;
   explanationHtml: string;
@@ -155,6 +157,7 @@ export function QuizRunner({
                   key={choice.id}
                   name={`question-${question.id}`}
                   label={choice.label}
+                  displayLabel={choice.displayLabel}
                   textHtml={choice.textHtml}
                   explanationHtml={choice.explanationHtml}
                   checked={selectedLabel === choice.label}
