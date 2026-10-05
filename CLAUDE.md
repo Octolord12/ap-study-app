@@ -1356,8 +1356,13 @@ in app logic — updating them should be a data edit.
 - **The correct answer is in the page payload.** `RenderedChoice.isCorrect` goes
   to the client for every choice before the student answers (the runners need it
   to reveal instantly), so someone who opens the browser's dev tools can read it.
-  Shuffling stops position-guessing, not inspection. Pre-existing; fixing it
-  means asking the server to reveal after each answer.
+  Shuffling stops position-guessing, not inspection. Pre-existing. The fix would
+  be a server-side reveal (ship choices without correctness/explanations; have
+  `recordAttempt` return the correct label and explanations after each answer).
+  **Owner decision, 2026-10-04: not wanted. Don't propose it again** unless the
+  owner raises cheating (leaderboards, titles, classes) as a problem. Browsers
+  can't be stopped from showing page data, so "block dev tools" tricks are not an
+  option either.
 - **Dev/testing gotchas.** (1) This folder produces duplicate "`<name> 2`"
   files (seen in `.next/` and `node_modules/next/dist/docs/`): Turbopack then
   refuses to start ("Unexpected file in persistence directory") and `tsc` reports
