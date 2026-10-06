@@ -8,25 +8,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "They were responding to a ban on foreign ships issued by the Mongol Empire.",
+        "text": "They were responding to a ban on foreign ships issued by the Mongol Empire, which had closed the Mediterranean to merchants",
         "isCorrect": false,
         "explanation": "The passage does not mention a Mongol ban, and the motivations described are commercial and religious."
       },
       {
         "label": "B",
-        "text": "Portuguese rulers sought direct access to African and Asian trade and wealth, and wanted to spread Christianity, by bypassing Muslim and Italian intermediaries.",
+        "text": "Portuguese rulers wanted direct access to African and Asian trade, and to spread Christianity, bypassing Muslim and Italian middlemen.",
         "isCorrect": true,
         "explanation": "Portugal's voyages combined economic motives, such as gold and the spice trade, with religious aims and rivalry with the merchants who controlled existing routes."
       },
       {
         "label": "C",
-        "text": "They hoped to establish colonies in Australia to relieve overpopulation.",
+        "text": "They hoped to establish colonies in Australia to relieve overpopulation in Portugal, Spain and the Italian city-states",
         "isCorrect": false,
         "explanation": "The passage concerns Africa and Asian trade; European contact with Australia came much later."
       },
       {
         "label": "D",
-        "text": "They intended purely to gather scientific information without any commercial purpose.",
+        "text": "They intended purely to gather scientific information about geography and astronomy without any commercial or religious purpose",
         "isCorrect": false,
         "explanation": "The passage explicitly mentions gold and trade as goals."
       }
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The caravel, which combined square and lateen sails, together with navigational tools such as the compass and astrolabe that came to Europe from Asia and the Islamic world.",
+        "text": "The caravel, with its square and lateen sails, plus the compass and astrolabe from Asia and the Islamic world.",
         "isCorrect": true,
         "explanation": "Europeans adopted and improved ship designs and instruments from earlier traditions, enabling them to sail against the wind and to find their position at sea."
       },
       {
         "label": "B",
-        "text": "Radar and the satellite-based position system.",
+        "text": "Radar and the satellite-based position system, which Portuguese engineers had adapted from earlier Chinese designs",
         "isCorrect": false,
         "explanation": "These are twentieth-century technologies."
       },
       {
         "label": "C",
-        "text": "Treasure ships purchased from Ming China.",
+        "text": "Treasure ships purchased from Ming China, whose rulers sold their largest fleets to Portugal and Spain in 1433",
         "isCorrect": false,
         "explanation": "The Portuguese and Spanish used their own caravels and later carracks."
       },
       {
         "label": "D",
-        "text": "Steam engines and iron-hulled ships.",
+        "text": "Steam engines and iron-hulled ships, which gave European sailors enough power to cross the Atlantic against the wind",
         "isCorrect": false,
         "explanation": "Steamships developed in the nineteenth century."
       }
@@ -80,7 +80,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "A famine caused by the sudden arrival of European crops.",
+        "text": "A famine caused by the sudden arrival of European crops, which failed in American soil and starved villages",
         "isCorrect": false,
         "explanation": "The passage describes a disease, and European crops did not cause such a catastrophe."
       },
@@ -92,13 +92,13 @@
       },
       {
         "label": "C",
-        "text": "Deliberate massacres by Spanish soldiers that explain nearly all of the deaths.",
+        "text": "Deliberate massacres by Spanish soldiers that explain nearly all of the deaths described in the region",
         "isCorrect": false,
         "explanation": "Violence and forced labor killed many, but disease was the main cause of the population collapse."
       },
       {
         "label": "D",
-        "text": "The spread of the Black Death from Asia through Mongol trade routes.",
+        "text": "The spread of the Black Death from Asia through Mongol trade routes into the Caribbean islands by 1500",
         "isCorrect": false,
         "explanation": "The Black Death of the fourteenth century was in Afro-Eurasia, not Mexico in the 1520s."
       }
@@ -116,25 +116,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "European farmers began to grow wheat for the first time, introduced from the Americas.",
+        "text": "European farmers began to grow wheat for the first time, introduced from the Americas by returning Spanish ships",
         "isCorrect": false,
         "explanation": "Wheat is an Old World crop that Europeans brought to the Americas."
       },
       {
         "label": "B",
-        "text": "Sugarcane was first introduced to Europe from the Americas.",
+        "text": "Sugarcane was first introduced to Europe from the Americas and quickly spread to India and the Middle East",
         "isCorrect": false,
         "explanation": "Sugarcane came from the Old World and was later grown in the Americas."
       },
       {
         "label": "C",
-        "text": "American crops such as potatoes and maize increased food supplies and contributed to population growth in parts of Europe, Africa and China.",
+        "text": "American crops such as potatoes and maize increased food supplies and population in Europe, Africa and China.",
         "isCorrect": true,
         "explanation": "High-yielding American crops adapted to many environments, supporting population growth in Afro-Eurasia."
       },
       {
         "label": "D",
-        "text": "Horses were introduced to Europe from the Americas.",
+        "text": "Horses were introduced to Europe from the Americas and soon transformed European warfare and farming",
         "isCorrect": false,
         "explanation": "Horses were domesticated in Eurasia and were brought to the Americas by Europeans."
       }
@@ -152,25 +152,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "China had banned the use of silver and sought to remove it from its economy.",
+        "text": "China had banned the use of silver and sought to remove it from its economy by selling it to foreigners",
         "isCorrect": false,
         "explanation": "The opposite was true: China's economy increasingly used silver."
       },
       {
         "label": "B",
-        "text": "Ming China's commercial economy and tax system created strong demand for silver, which paid for Chinese goods such as silk and porcelain.",
+        "text": "Ming China's commercial economy and tax system created strong demand for silver, which paid for silk and porcelain.",
         "isCorrect": true,
         "explanation": "China needed silver for taxes and trade, and Europeans could pay for Chinese manufactured goods with silver from Potosi and Mexico."
       },
       {
         "label": "C",
-        "text": "Spain used silver only to pay Native American workers, who then sent it to China.",
+        "text": "Spain used silver only to pay Native American workers, who then sent it across the Pacific to China as tribute each year",
         "isCorrect": false,
         "explanation": "Silver was shipped to Europe and across the Pacific through Manila to buy Chinese goods."
       },
       {
         "label": "D",
-        "text": "Europeans wanted Chinese silver mines to be turned over to Spanish rule.",
+        "text": "Europeans wanted Chinese silver mines to be turned over to Spanish rule after a military conquest of the coast",
         "isCorrect": false,
         "explanation": "China was not conquered, and the silver flowed from the Americas."
       }
@@ -188,25 +188,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "It used only barter and did not raise capital.",
+        "text": "It used only barter and never raised any capital from investors, relying on bullion",
         "isCorrect": false,
         "explanation": "The VOC raised substantial capital from investors."
       },
       {
         "label": "B",
-        "text": "It operated as a medieval craft guild limited to local artisans.",
+        "text": "It operated as a medieval craft guild limited to local artisans and their apprentices in each city",
         "isCorrect": false,
         "explanation": "The VOC was a large commercial company, not a guild."
       },
       {
         "label": "C",
-        "text": "It was a joint-stock company that sold shares to many investors.",
+        "text": "It was a joint-stock company that sold shares to many investors and shared the risks.",
         "isCorrect": true,
         "explanation": "Investors could pool their money and share profits and losses, which allowed large-scale, high-risk overseas ventures."
       },
       {
         "label": "D",
-        "text": "It was funded entirely by a Dutch king who owned all of its ships.",
+        "text": "It was funded entirely by a Dutch king who owned all of its ships and warehouses",
         "isCorrect": false,
         "explanation": "The Dutch Republic was governed by merchants and regents, and the VOC raised funds from many investors."
       }
@@ -224,25 +224,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Competition between European monarchies for overseas empires, with the Catholic Church's authority used to divide claims.",
+        "text": "Competition between European monarchies for overseas empires, with Church authority used to divide claims.",
         "isCorrect": true,
         "explanation": "Spain and Portugal agreed, with papal involvement, on a line dividing their claims in the newly reached lands outside Europe."
       },
       {
         "label": "B",
-        "text": "A treaty negotiated with the rulers of Native American empires.",
+        "text": "A treaty negotiated with the rulers of the Native American empires to share the lands and rivers of the Americas",
         "isCorrect": false,
         "explanation": "Native rulers were not parties to the treaty."
       },
       {
         "label": "C",
-        "text": "An agreement between Britain and France to divide North America.",
+        "text": "An agreement between Britain and France to divide North America along the line of the Mississippi River",
         "isCorrect": false,
         "explanation": "The treaty was between Spain and Portugal."
       },
       {
         "label": "D",
-        "text": "The end of rivalry between Spain and Portugal.",
+        "text": "The end of rivalry between Spain and Portugal, who agreed to share every overseas colony and trading post equally",
         "isCorrect": false,
         "explanation": "The agreement was an attempt to manage rivalry, which continued."
       }
@@ -260,25 +260,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "New laws abolishing the use of enslaved labor in Europe.",
+        "text": "New laws abolishing the use of enslaved labor in Europe, which pushed planters to hire free workers instead",
         "isCorrect": false,
         "explanation": "Abolition came later; the passage shows demand for enslaved workers."
       },
       {
         "label": "B",
-        "text": "Rising European demand for sugar and other plantation crops, which created a large demand for forced labor in the Americas.",
+        "text": "Rising European demand for sugar and other plantation crops, which created demand for forced labor in the Americas.",
         "isCorrect": true,
         "explanation": "Plantation agriculture producing sugar for European markets required large amounts of labor, which planters obtained by importing enslaved Africans."
       },
       {
         "label": "C",
-        "text": "The need for soldiers to defend the colonies against Spain.",
+        "text": "The need for soldiers to defend the colonies against Spain, which often attacked the plantation ports directly",
         "isCorrect": false,
         "explanation": "The passage concerns plantation labor, not military needs."
       },
       {
         "label": "D",
-        "text": "A decline in European demand for sugar.",
+        "text": "A decline in European demand for sugar, which left planters with too many workers and large unsold crops",
         "isCorrect": false,
         "explanation": "The passage reports high prices and expanding planting, not declining demand."
       }
@@ -296,25 +296,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "African states took no part in the trade, and Europeans captured all enslaved people inland by themselves.",
+        "text": "African states took no part in the trade, and Europeans captured nearly all enslaved people in the interior by themselves",
         "isCorrect": false,
         "explanation": "Europeans usually bought captives at coastal trading posts from African rulers and merchants."
       },
       {
         "label": "B",
-        "text": "Some African states and merchants captured and sold enslaved people to Europeans in exchange for goods such as firearms and textiles, which affected warfare and political power in the region.",
+        "text": "Some African states and merchants sold captives to Europeans for goods such as firearms and textiles, affecting regional warfare and power.",
         "isCorrect": true,
         "explanation": "African rulers and traders took part on their own terms in many places; the trade changed regional politics and fueled conflict."
       },
       {
         "label": "C",
-        "text": "The Atlantic slave trade involved only the movement of captives between African kingdoms.",
+        "text": "The Atlantic slave trade involved only the movement of captives between African kingdoms and across the Sahara",
         "isCorrect": false,
         "explanation": "The Atlantic trade carried millions of people across the ocean to the Americas."
       },
       {
         "label": "D",
-        "text": "All African states banned the sale of captives to Europeans.",
+        "text": "All African states banned the sale of captives to Europeans, who were forced to capture them without any local help",
         "isCorrect": false,
         "explanation": "Some states participated extensively, and others resisted; there was no universal ban."
       }
@@ -332,7 +332,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "paid Native workers market wages in silver.",
+        "text": "paid Native workers market wages in silver and allowed them to choose their employers and leave at will",
         "isCorrect": false,
         "explanation": "Workers under both systems were coerced and poorly paid."
       },
@@ -344,13 +344,13 @@
       },
       {
         "label": "C",
-        "text": "relied exclusively on enslaved Africans.",
+        "text": "relied exclusively on enslaved Africans brought across the Atlantic in Spanish and Portuguese merchant ships",
         "isCorrect": false,
         "explanation": "These systems used Native American labor; African slavery was a separate system."
       },
       {
         "label": "D",
-        "text": "were ended by the Spanish crown in the early sixteenth century.",
+        "text": "were ended by the Spanish crown in the early sixteenth century after protests from the Catholic Church",
         "isCorrect": false,
         "explanation": "Both systems lasted for generations, in modified forms."
       }
@@ -368,13 +368,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "Examination results in a colonial civil service.",
+        "text": "Examination results in a colonial civil service open to all subjects",
         "isCorrect": false,
         "explanation": "The system was not based on examinations."
       },
       {
         "label": "B",
-        "text": "Religious conversion only.",
+        "text": "Religious conversion only, regardless of a person's birth or ancestry",
         "isCorrect": false,
         "explanation": "Religion mattered, but the categories centered on ancestry."
       },
@@ -386,7 +386,7 @@
       },
       {
         "label": "D",
-        "text": "Wealth alone, regardless of ancestry.",
+        "text": "Wealth alone, regardless of a person's birth or ancestry in the colony",
         "isCorrect": false,
         "explanation": "Wealth mattered but ancestry formally shaped status."
       }
@@ -404,25 +404,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Neither empire was involved in the Atlantic slave trade.",
+        "text": "Neither empire was involved in the Atlantic slave trade, since both relied only on paid free workers from Europe",
         "isCorrect": false,
         "explanation": "Both took part in the trade in some form."
       },
       {
         "label": "B",
-        "text": "The Dutch conquered large territories in Mexico and Peru, while the Spanish relied on trading posts alone.",
+        "text": "The Dutch conquered large territories in Mexico and Peru, while the Spanish relied on trading posts alone in Asia",
         "isCorrect": false,
         "explanation": "This reverses the characteristics of the two empires."
       },
       {
         "label": "C",
-        "text": "Spain governed large territories in the Americas and drew great wealth from silver mining, while the Dutch relied more on trading posts, fleets and chartered companies to control commerce.",
+        "text": "Spain ruled large American territories and mined silver, while the Dutch used trading posts, fleets and chartered companies.",
         "isCorrect": true,
         "explanation": "The Spanish empire was territorial, with administrative control over Native populations and mines; the Dutch emphasized maritime trade networks."
       },
       {
         "label": "D",
-        "text": "Both were governed by hereditary monarchs who owned all trading companies.",
+        "text": "Both were governed by hereditary monarchs who owned all trading companies and chartered no private firms at all",
         "isCorrect": false,
         "explanation": "The Dutch Republic had no king and its companies were chartered private enterprises."
       }
@@ -440,25 +440,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "China did not have ships capable of crossing the ocean.",
+        "text": "China did not have ships capable of crossing the ocean, so its merchants and sailors never left the coast",
         "isCorrect": false,
         "explanation": "Ming ships of the early fifteenth century were among the largest in the world."
       },
       {
         "label": "B",
-        "text": "China had no interest in silver or foreign trade.",
+        "text": "China had no interest in silver or foreign trade and banned all contact with Southeast Asia and India",
         "isCorrect": false,
         "explanation": "Chinese demand for silver and trade was strong and was a major force in global exchange."
       },
       {
         "label": "C",
-        "text": "European ships were far more advanced than Chinese ships in 1405.",
+        "text": "European ships were far more advanced than Chinese ships in 1405, when Zheng He sailed in small coastal boats",
         "isCorrect": false,
         "explanation": "Chinese treasure ships were larger and in many ways comparable to or more advanced than European vessels at that time."
       },
       {
         "label": "D",
-        "text": "The Ming court ended state-sponsored treasure fleet expeditions after 1433, while competing European monarchies sponsored voyages to gain trade and wealth.",
+        "text": "The Ming court ended its treasure fleet voyages after 1433, while competing European monarchs sponsored voyages for trade and wealth.",
         "isCorrect": true,
         "explanation": "Chinese policy turned away from large maritime expeditions, while rivalry among European states motivated them to seek new routes."
       }
@@ -476,25 +476,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Horses transformed hunting and warfare for some Plains peoples, and livestock such as cattle and pigs changed land use and diets.",
+        "text": "Horses transformed hunting and warfare for some Plains peoples, and cattle and pigs changed land use and diets.",
         "isCorrect": true,
         "explanation": "Horses spread through Native societies and changed life on the Plains; European animals also altered environments."
       },
       {
         "label": "B",
-        "text": "Livestock were introduced to Europe from the Americas, increasing the European food supply.",
+        "text": "Livestock were introduced to Europe from the Americas, increasing the European food supply and farming output",
         "isCorrect": false,
         "explanation": "Cattle, pigs, sheep and horses came from the Old World to the Americas."
       },
       {
         "label": "C",
-        "text": "The animals had no effect on Native American societies.",
+        "text": "The animals had no effect on Native American societies, which refused to adopt them for any purpose at all",
         "isCorrect": false,
         "explanation": "The animals had major effects on many societies."
       },
       {
         "label": "D",
-        "text": "Horses had been native to the Americas in 1492 and the arrival of Europeans changed nothing.",
+        "text": "Horses had been native to the Americas in 1492, and the arrival of Europeans changed nothing for them",
         "isCorrect": false,
         "explanation": "Horses had disappeared from the Americas thousands of years earlier and were reintroduced by Europeans."
       }
@@ -512,25 +512,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Governments sought to increase national wealth by accumulating precious metals and maintaining favorable trade balances, using colonies as sources of raw materials and markets.",
+        "text": "Governments sought wealth through precious metals and favorable trade balances, using colonies for raw materials and markets.",
         "isCorrect": true,
         "explanation": "Mercantilism treated colonies and trade as instruments to strengthen the state."
       },
       {
         "label": "B",
-        "text": "States redistributed land and wealth equally among peasants.",
+        "text": "States redistributed land and wealth equally among peasants and abolished all private trading companies in Europe",
         "isCorrect": false,
         "explanation": "Mercantilism was concerned with state power and trade, not equality."
       },
       {
         "label": "C",
-        "text": "States banned overseas colonies to protect domestic industries.",
+        "text": "States banned overseas colonies to protect domestic industries and keep every coin inside their own kingdoms",
         "isCorrect": false,
         "explanation": "Colonies were central to mercantilist policy."
       },
       {
         "label": "D",
-        "text": "States promoted free trade with little government involvement.",
+        "text": "States promoted free trade with little government involvement and abolished all tariffs, monopolies and trading charters",
         "isCorrect": false,
         "explanation": "Mercantilism involved extensive government regulation, tariffs and monopolies."
       }

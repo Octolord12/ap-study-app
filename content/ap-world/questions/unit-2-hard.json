@@ -8,19 +8,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "Strict segregation of foreigners, who were barred from the Mongol capital.",
+        "text": "Strict segregation of foreigners, who were barred from entering the Mongol capital and its markets",
         "isCorrect": false,
         "explanation": "The envoy describes many nations living in the capital."
       },
       {
         "label": "B",
-        "text": "A requirement that all subjects convert to a single state religion.",
+        "text": "A requirement that all subjects convert to a single state religion in order to hold office",
         "isCorrect": false,
         "explanation": "The passage shows a variety of faiths being practiced freely."
       },
       {
         "label": "C",
-        "text": "The adoption of Christianity as the official faith of the Mongol court.",
+        "text": "The adoption of Christianity as the official faith of the Mongol court after the khan's baptism",
         "isCorrect": false,
         "explanation": "The Mongol court did not adopt Christianity as an official faith, and the passage describes several religions side by side."
       },
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Mongol rule linked much of Eurasia under one authority, providing relative security and relay stations for merchants and envoys.",
+        "text": "Mongol rule linked much of Eurasia under one authority, providing security and relay stations for merchants.",
         "isCorrect": true,
         "explanation": "The Mongol conquests unified overland routes, and measures such as the postal-relay system and safe-conduct passes helped make travel safer, an era often called the Pax Mongolica."
       },
       {
         "label": "B",
-        "text": "Chinese emperors closed the borders to protect domestic silk production.",
+        "text": "Chinese emperors closed the borders to protect domestic silk production and to raise tax revenues from caravans",
         "isCorrect": false,
         "explanation": "Under the Yuan dynasty China was part of the Mongol system and was open to foreign merchants."
       },
       {
         "label": "C",
-        "text": "The Mongols banned long-distance trade in order to protect the economy of the steppe.",
+        "text": "The Mongols banned long-distance trade in order to protect the herding economy of the steppe and its tribes",
         "isCorrect": false,
         "explanation": "The Mongols encouraged and taxed trade, and many Mongol rulers patronized merchants."
       },
       {
         "label": "D",
-        "text": "The collapse of every Eurasian state left the routes open and unregulated.",
+        "text": "The collapse of every Eurasian state left the routes open and unregulated, so merchants traveled in complete freedom",
         "isCorrect": false,
         "explanation": "Trade grew because large political authority provided security, not because authority disappeared."
       }
@@ -80,25 +80,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "It was destroyed by a united alliance of Song China and the Abbasid caliphate.",
+        "text": "It was destroyed by a united military alliance of Song China, the Abbasid caliphate and Japan in the 1260s",
         "isCorrect": false,
         "explanation": "The Mongols themselves ended the Song dynasty (1279), and they destroyed the Abbasid caliphate's capital in 1258."
       },
       {
         "label": "B",
-        "text": "It was too vast to rule as one state, and it divided into regional khanates whose rulers adopted local religions and customs.",
+        "text": "It was too vast to rule as one state and divided into regional khanates whose rulers adopted local customs.",
         "isCorrect": true,
         "explanation": "Rivalries among Genghis Khan's descendants and the empire's size led to separate successor states such as the Yuan dynasty, the Ilkhanate, the Chagatai Khanate and the Golden Horde."
       },
       {
         "label": "C",
-        "text": "It was conquered in the 1250s by the Ottoman Empire.",
+        "text": "It was conquered in the 1250s by the Ottoman Empire, which seized its capital at Karakorum and its treasury",
         "isCorrect": false,
         "explanation": "The Ottoman state did not yet exist as a major power in the 1250s, and it did not conquer the Mongols."
       },
       {
         "label": "D",
-        "text": "Its rulers voluntarily abolished the empire to restore the previous kingdoms.",
+        "text": "Its rulers voluntarily abolished the empire to restore the previous kingdoms and return home to the steppe",
         "isCorrect": false,
         "explanation": "The empire fragmented through succession disputes and distance, not voluntary abolition."
       }
@@ -122,19 +122,19 @@
       },
       {
         "label": "B",
-        "text": "The cutting off of all trade between Asia and Europe.",
+        "text": "The cutting off of all trade between Asia and Europe, which isolated Italian ports from the East",
         "isCorrect": false,
         "explanation": "The disease spread precisely because trade connections existed, not because they were cut."
       },
       {
         "label": "C",
-        "text": "The Mongol conquest of Italy.",
+        "text": "The Mongol conquest of Italy and the destruction of its coastal trading cities by the khan's armies",
         "isCorrect": false,
         "explanation": "The Mongols did not conquer Italy."
       },
       {
         "label": "D",
-        "text": "The return of Crusader armies from the Holy Land.",
+        "text": "The return of Crusader armies from the Holy Land, who carried disease across the Mediterranean",
         "isCorrect": false,
         "explanation": "The major crusades had ended long before the 1340s, and the plague came by trade routes, not armies."
       }
@@ -152,25 +152,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A sudden increase in population that supplied lords with cheap labor.",
+        "text": "A sudden increase in population that supplied lords with cheap labor and kept peasants' wages low for decades",
         "isCorrect": false,
         "explanation": "The plague reduced the population by a large share; labor became scarcer and more valuable."
       },
       {
         "label": "B",
-        "text": "The immediate end of the Catholic Church's influence in Europe.",
+        "text": "The immediate end of the Catholic Church's influence in Europe, as people abandoned the clergy for plague victims",
         "isCorrect": false,
         "explanation": "The Church lost some prestige because it could not stop the plague, but it remained very influential."
       },
       {
         "label": "C",
-        "text": "Labor shortages gave surviving peasants and workers more bargaining power and contributed to the decline of serfdom.",
+        "text": "Labor shortages gave surviving peasants more bargaining power and contributed to the decline of serfdom.",
         "isCorrect": true,
         "explanation": "With so many workers dead, laborers could demand higher wages and better terms, weakening the manorial system in much of western Europe."
       },
       {
         "label": "D",
-        "text": "The strengthening of the manorial system and of peasants' obligations to their lords.",
+        "text": "The strengthening of the manorial system and of peasants' obligations to their lords after the plague years",
         "isCorrect": false,
         "explanation": "The manorial system weakened; some lords tried to enforce old obligations, which led to revolts."
       }
@@ -188,25 +188,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A single empire that controlled all the ports and fixed all prices.",
+        "text": "A single empire that controlled all the ports and fixed all prices for goods, taxes and shipping across the entire ocean",
         "isCorrect": false,
         "explanation": "The Indian Ocean trade was open and diverse, with many competing states and city-states rather than one controlling empire."
       },
       {
         "label": "B",
-        "text": "Steam-powered ships that could travel against the wind.",
+        "text": "Steam-powered ships that could travel against the wind, together with telegraph lines linking every port on the ocean",
         "isCorrect": false,
         "explanation": "Steamships were a nineteenth-century development."
       },
       {
         "label": "C",
-        "text": "European navies that protected merchant ships beginning in 1200.",
+        "text": "European navies that protected merchant ships beginning in 1200, patrolling the whole ocean from bases in Lisbon and Genoa",
         "isCorrect": false,
         "explanation": "European naval power came to the Indian Ocean only after about 1500."
       },
       {
         "label": "D",
-        "text": "Predictable monsoon winds, sailing technologies such as the lateen sail and the astrolabe, and a network of port cities linking East Africa, Arabia, India and Southeast Asia.",
+        "text": "Predictable monsoon winds, the lateen sail and astrolabe, and port cities linking East Africa, Arabia, India and Southeast Asia.",
         "isCorrect": true,
         "explanation": "Merchants could time voyages with the seasonal monsoons, use navigational tools, and rely on ports where goods were exchanged."
       }
@@ -224,25 +224,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "They were financed by joint-stock companies seeking profit.",
+        "text": "They were financed by joint-stock companies seeking profit, with merchants sending ships on private commercial ventures",
         "isCorrect": false,
         "explanation": "Joint-stock companies were a European institution of the seventeenth century; Zheng He's voyages were sponsored by the Ming emperor."
       },
       {
         "label": "B",
-        "text": "They were meant to find a sea route to Europe.",
+        "text": "They were meant to find a sea route to Europe, which the Ming court hoped to conquer and trade with directly",
         "isCorrect": false,
         "explanation": "The Ming voyages were directed toward Southeast Asia, India, Arabia and East Africa, not toward finding a route to Europe."
       },
       {
         "label": "C",
-        "text": "The Chinese expeditions were state-sponsored projects that displayed Ming power and extended the tribute system, and they did not establish permanent colonies.",
+        "text": "The Chinese voyages were state projects that displayed Ming power and extended tribute, without founding colonies.",
         "isCorrect": true,
         "explanation": "Zheng He's large fleets visited ports around the Indian Ocean to receive tribute and promote trade for the Ming court, and the voyages ended without colonial settlement."
       },
       {
         "label": "D",
-        "text": "They established Chinese colonies along the East African coast.",
+        "text": "They established Chinese colonies along the East African coast, with permanent garrisons in Kilwa and Mombasa",
         "isCorrect": false,
         "explanation": "The voyages visited East Africa, but China did not establish colonies there."
       }
@@ -266,19 +266,19 @@
       },
       {
         "label": "B",
-        "text": "The dominance of Portuguese merchants over the East African coast.",
+        "text": "The dominance of Portuguese merchants over the trade of the East African coast during the 1330s",
         "isCorrect": false,
         "explanation": "The Portuguese arrived in the region in the late fifteenth and early sixteenth centuries, after this passage."
       },
       {
         "label": "C",
-        "text": "The isolation of the East African coast from long-distance trade.",
+        "text": "The isolation of the East African coast from long-distance trade and from the wider Muslim world",
         "isCorrect": false,
         "explanation": "The passage describes active trade with Arabia and India."
       },
       {
         "label": "D",
-        "text": "The reliance of East African cities on trans-Saharan caravans.",
+        "text": "The reliance of East African cities on trans-Saharan caravans for their gold, ivory and other goods",
         "isCorrect": false,
         "explanation": "East African ports traded across the Indian Ocean, not across the Sahara."
       }
@@ -296,25 +296,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The construction of paved roads across the desert by the Mali Empire.",
+        "text": "The construction of paved roads across the desert by the Mali Empire, linking oasis towns to the coast",
         "isCorrect": false,
         "explanation": "The Sahara was crossed by caravan tracks, not paved roads."
       },
       {
         "label": "B",
-        "text": "The use of horse-drawn wagons suited to loose sand.",
+        "text": "The use of horse-drawn wagons suited to loose sand, which replaced pack animals on the desert routes",
         "isCorrect": false,
         "explanation": "Wagons are poorly suited to deep sand; camels made desert crossings practical."
       },
       {
         "label": "C",
-        "text": "The use of domesticated camels, which were well suited to carrying goods across the desert in caravans.",
+        "text": "The use of domesticated camels, which were well suited to carrying goods across the desert.",
         "isCorrect": true,
         "explanation": "Camels can go long distances without water, allowing regular caravans to cross the Sahara."
       },
       {
         "label": "D",
-        "text": "The invention of the steam locomotive.",
+        "text": "The invention of the steam locomotive, which carried goods and travelers along rails across the Sahara",
         "isCorrect": false,
         "explanation": "Steam locomotives were a nineteenth-century invention."
       }
@@ -332,25 +332,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Both commodities were used as the main currency in China.",
+        "text": "Both commodities were used as the main currency in China, which paid for them with silk, tea and porcelain from the south",
         "isCorrect": false,
         "explanation": "The trade centered on the Sahara, West Africa and the Mediterranean, not China."
       },
       {
         "label": "B",
-        "text": "Salt was scarce in the forests and savannas to the south but available in the Sahara, while gold was plentiful in West Africa and highly valued in North Africa and the Mediterranean world.",
+        "text": "Salt was scarce south of the desert but common in the Sahara, while West African gold was prized in the Mediterranean world.",
         "isCorrect": true,
         "explanation": "Each product was abundant at one end of the route and scarce at the other, so traders profited from carrying them in both directions."
       },
       {
         "label": "C",
-        "text": "European governments set fixed prices for salt and gold to encourage the trade.",
+        "text": "European governments set fixed prices for salt and gold to encourage the trade and collected a tax on every caravan",
         "isCorrect": false,
         "explanation": "The trade was organized by African and North African merchants and states, and European governments did not set prices."
       },
       {
         "label": "D",
-        "text": "Salt was available everywhere in West Africa but gold was available only in North Africa.",
+        "text": "Salt was available everywhere in West Africa but gold was available only in North Africa, so merchants carried gold south",
         "isCorrect": false,
         "explanation": "This reverses the actual distribution: gold came from West Africa and salt from Saharan deposits."
       }
@@ -368,13 +368,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "Only religions were exchanged, because merchants did not carry inventions.",
+        "text": "Only religions were exchanged, because merchants did not carry inventions and governments banned foreign tools",
         "isCorrect": false,
         "explanation": "Inventions such as paper and gunpowder show that technological knowledge also spread."
       },
       {
         "label": "B",
-        "text": "Chinese rulers adopted the European printing press and spread it eastward.",
+        "text": "Chinese rulers adopted the European printing press and spread it eastward to Korea and Japan during the Song era",
         "isCorrect": false,
         "explanation": "Printing began in China before the European printing press of the 1400s."
       },
@@ -386,7 +386,7 @@
       },
       {
         "label": "D",
-        "text": "Technologies did not travel, because trade routes carried only luxury goods.",
+        "text": "Technologies did not travel, because trade routes carried only luxury goods such as silk, spices and jewels for kings",
         "isCorrect": false,
         "explanation": "Along with goods, ideas and technologies were transmitted by merchants, travelers and conquerors."
       }
@@ -404,7 +404,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Chinese naval patrols protected overland caravans.",
+        "text": "Chinese naval patrols protected overland caravans, which traveled in large convoys along the coast of Asia",
         "isCorrect": false,
         "explanation": "Naval patrols could not protect overland routes, and the security came from Mongol authority."
       },
@@ -416,13 +416,13 @@
       },
       {
         "label": "C",
-        "text": "The Roman Empire still maintained the roads across Central Asia.",
+        "text": "The Roman Empire still maintained the roads across Central Asia, with garrisons at every major oasis",
         "isCorrect": false,
         "explanation": "The Roman Empire had long since ended in the west and never controlled the routes across Central Asia."
       },
       {
         "label": "D",
-        "text": "The collapse of long-distance trade made the roads nearly empty.",
+        "text": "The collapse of long-distance trade made the roads nearly empty, so bandits had few travelers to rob",
         "isCorrect": false,
         "explanation": "The passage describes merchants using the route, and trade was active in this period."
       }
@@ -440,19 +440,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "They retained many Chinese administrative practices but gave important posts to foreigners and ranked Mongols highest in the social order.",
+        "text": "They kept many Chinese administrative practices but gave key posts to foreigners and ranked Mongols highest.",
         "isCorrect": true,
         "explanation": "Yuan rulers used Chinese bureaucratic forms but relied on Mongols and foreigners, including Muslims and Europeans, in key positions and distrusted the Chinese elite."
       },
       {
         "label": "B",
-        "text": "They withdrew to the steppe and allowed Chinese governors to rule independently.",
+        "text": "They withdrew to the steppe and allowed Chinese governors to rule independently as tributary kings of the khan",
         "isCorrect": false,
         "explanation": "The Yuan court ruled China directly from its capital, Khanbaliq (Beijing)."
       },
       {
         "label": "C",
-        "text": "They abolished all Chinese institutions and governed by tribal law alone.",
+        "text": "They abolished all Chinese institutions and governed by tribal law alone, using Mongol officials from the steppe",
         "isCorrect": false,
         "explanation": "Yuan rulers kept much of the existing administration and many institutions."
       },
@@ -476,25 +476,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "They controlled the overland routes across Central Asia.",
+        "text": "They controlled the overland routes across Central Asia and taxed every caravan that crossed the steppe to Persia",
         "isCorrect": false,
         "explanation": "These routes were controlled by the Mongols and their successors; Italian merchants traveled them as visitors."
       },
       {
         "label": "B",
-        "text": "They were governed by Mongol officials who collected tribute.",
+        "text": "They were governed by Mongol officials who collected tribute for the khan and kept the merchants poor and weak",
         "isCorrect": false,
         "explanation": "Venice and Genoa were independent maritime republics."
       },
       {
         "label": "C",
-        "text": "They served as intermediaries between Asian and Middle Eastern markets and European consumers, and their commercial wealth supported art and civic life.",
+        "text": "They linked Asian and Middle Eastern markets with European consumers, and their wealth supported art and civic life.",
         "isCorrect": true,
         "explanation": "The Italian cities carried goods across the Mediterranean from the Islamic world and Black Sea ports, and the profits helped finance the culture of the Renaissance."
       },
       {
         "label": "D",
-        "text": "They had no merchant class and depended on subsistence agriculture.",
+        "text": "They had no merchant class and depended on subsistence agriculture, with little trade outside their own region",
         "isCorrect": false,
         "explanation": "Their wealth and power rested on commerce, not subsistence farming."
       }
@@ -512,25 +512,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Christianity: to East Africa across the Sahara by Mongol armies.",
+        "text": "Christianity: to East Africa across the Sahara by Mongol armies, who converted the kingdoms they conquered",
         "isCorrect": false,
         "explanation": "Mongol armies did not spread Christianity across the Sahara."
       },
       {
         "label": "B",
-        "text": "Buddhism: from India to China and other parts of East Asia along the Silk Roads and by missionaries and merchants.",
+        "text": "Buddhism: from India to China and East Asia along the Silk Roads, by missionaries and merchants.",
         "isCorrect": true,
         "explanation": "Buddhist teachings traveled with monks and merchants along Central Asian trade routes, then adapted to Chinese culture."
       },
       {
         "label": "C",
-        "text": "Islam: to Southeast Asia mainly through conquest by Spanish armies.",
+        "text": "Islam: to Southeast Asia mainly through conquest by Spanish armies, who forced the rulers to convert",
         "isCorrect": false,
         "explanation": "Spanish forces did not spread Islam; it reached Southeast Asia through Muslim merchants and Sufis."
       },
       {
         "label": "D",
-        "text": "Hinduism: to Europe by the Mongols along the Volga.",
+        "text": "Hinduism: to Europe by the Mongols along the Volga River, where it spread among the Slavic towns",
         "isCorrect": false,
         "explanation": "Hinduism did not spread to Europe through the Mongols."
       }

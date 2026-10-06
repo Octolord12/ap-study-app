@@ -26,7 +26,7 @@
       },
       {
         "label": "D",
-        "text": "Non-alignment, the refusal to take sides in a rivalry between powers.",
+        "text": "Non-alignment, the refusal to take sides in a rivalry between great powers and their blocs.",
         "isCorrect": false,
         "explanation": "The passage commits the United States to leading one side."
       }
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The Soviet Union had joined the Axis powers during the war.",
+        "text": "The Soviet Union had joined the Axis powers during the war and then attacked the Allies in 1945.",
         "isCorrect": false,
         "explanation": "The Soviet Union was an Allied power in World War II."
       },
       {
         "label": "B",
-        "text": "They shared the same ideology but competed for markets.",
+        "text": "They shared the same ideology but competed for markets and for access to oil supplies, and their quarrel was purely commercial in nature.",
         "isCorrect": false,
         "explanation": "Their ideologies were opposed."
       },
       {
         "label": "C",
-        "text": "They disagreed mainly about the borders of the Pacific islands.",
+        "text": "They disagreed mainly about the borders of the Pacific islands and about fishing rights in the North Atlantic.",
         "isCorrect": false,
         "explanation": "The rivalry was centered on ideology and the postwar order in Europe and elsewhere."
       },
       {
         "label": "D",
-        "text": "They had opposed ideologies (capitalist democracy and communism), disagreed about the future of Germany and Eastern Europe, and mistrusted each other's intentions.",
+        "text": "They had opposed ideologies (capitalist democracy and communism), disagreed about Germany and Eastern Europe, and mistrusted each other's intentions.",
         "isCorrect": true,
         "explanation": "Their wartime alliance had been based on the defeat of Germany, and once it ended their conflicting systems and interests led to confrontation."
       }
@@ -80,13 +80,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "The creation of the European Union.",
+        "text": "The creation of the European Union as a single political and economic body, with a common parliament and a shared currency.",
         "isCorrect": false,
         "explanation": "The European Union was established later and is an economic and political union."
       },
       {
         "label": "B",
-        "text": "The end of the Cold War and the reunification of Germany.",
+        "text": "The end of the Cold War and the reunification of Germany under a single government.",
         "isCorrect": false,
         "explanation": "The alliances were products of the early Cold War."
       },
@@ -98,7 +98,7 @@
       },
       {
         "label": "D",
-        "text": "A plan to disband all national armies.",
+        "text": "A plan to disband all national armies in Europe under a single joint command.",
         "isCorrect": false,
         "explanation": "The alliances were military blocs."
       }
@@ -116,25 +116,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A conflict in which the United States and United Nations forces supported South Korea, while China and the Soviet Union supported North Korea, ending in a stalemate and the continued division of Korea.",
+        "text": "A conflict in which the United States and UN forces supported South Korea, while China and the Soviet Union backed North Korea, ending in stalemate and the division of Korea.",
         "isCorrect": true,
         "explanation": "The war was a regional conflict with superpower involvement that ended with an armistice near the original dividing line."
       },
       {
         "label": "B",
-        "text": "A conflict fought only between the Soviet Union and the United States armies.",
+        "text": "A conflict fought directly and only between the armies of the Soviet Union and the United States, with no other nations or Koreans taking part on either side of the fighting at any stage.",
         "isCorrect": false,
         "explanation": "The main combatants were Korean, Chinese and UN forces, with the Soviets providing support."
       },
       {
         "label": "C",
-        "text": "A war that ended with the unification of Korea under communist rule.",
+        "text": "A war that ended with the unification of Korea under communist rule and the withdrawal of all foreign troops.",
         "isCorrect": false,
         "explanation": "Korea remained divided."
       },
       {
         "label": "D",
-        "text": "A war to end colonial rule by Japan, won by the Korean colonial administration.",
+        "text": "A war to end colonial rule by Japan, won by the Korean colonial administration with help from the League of Nations.",
         "isCorrect": false,
         "explanation": "Japanese rule had ended in 1945."
       }
@@ -152,25 +152,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The United States invaded Cuba and overthrew the government.",
+        "text": "The United States invaded Cuba, overthrew the government and installed a pro-American regime that ruled the island for decades afterward under a treaty with Washington signed in 1963.",
         "isCorrect": false,
         "explanation": "The United States did not invade Cuba."
       },
       {
         "label": "B",
-        "text": "The Soviet Union attacked the United States with nuclear weapons.",
+        "text": "The Soviet Union attacked the United States with nuclear weapons and a short but devastating nuclear war followed in the Atlantic.",
         "isCorrect": false,
         "explanation": "No nuclear weapons were used."
       },
       {
         "label": "C",
-        "text": "It brought the superpowers close to nuclear war and ended with the Soviet withdrawal of its missiles from Cuba, a United States pledge not to invade Cuba, and later efforts to reduce tensions.",
+        "text": "It brought the superpowers close to nuclear war and ended when the Soviets withdrew their missiles from Cuba, the US pledged not to invade Cuba, and tensions later eased.",
         "isCorrect": true,
         "explanation": "The crisis was resolved by negotiation, and afterward the superpowers established better communication."
       },
       {
         "label": "D",
-        "text": "The crisis ended the Cold War.",
+        "text": "The crisis ended the Cold War, as both superpowers agreed to dismantle all their nuclear weapons and open their borders to inspection.",
         "isCorrect": false,
         "explanation": "The Cold War continued for nearly three more decades."
       }
@@ -188,7 +188,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "A return to private farming and free markets.",
+        "text": "A return to private farming and free markets, which raised living standards across the countryside.",
         "isCorrect": false,
         "explanation": "It extended state and collective control."
       },
@@ -200,13 +200,13 @@
       },
       {
         "label": "C",
-        "text": "A military campaign to conquer Taiwan.",
+        "text": "A military campaign to conquer Taiwan, which ended with the capture of the island by the army.",
         "isCorrect": false,
         "explanation": "It was an economic campaign, not a military one."
       },
       {
         "label": "D",
-        "text": "A successful program that doubled grain production and ended poverty.",
+        "text": "A successful program that doubled grain production and ended poverty across the countryside within five years, according to later government reports.",
         "isCorrect": false,
         "explanation": "The campaign led to famine."
       }
@@ -224,7 +224,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Colonial reforms intended to preserve European rule permanently.",
+        "text": "Colonial reforms intended to preserve European rule permanently in Asia and Africa by granting limited rights to local elites.",
         "isCorrect": false,
         "explanation": "The speech celebrates the end of colonial rule."
       },
@@ -236,13 +236,13 @@
       },
       {
         "label": "C",
-        "text": "The expansion of the Ottoman Empire into Africa.",
+        "text": "The expansion of the Ottoman Empire into Africa in the nineteenth century.",
         "isCorrect": false,
         "explanation": "The Ottoman Empire had been dissolved by the 1920s."
       },
       {
         "label": "D",
-        "text": "The establishment of the Warsaw Pact.",
+        "text": "The establishment of the Warsaw Pact as a military alliance in Eastern Europe.",
         "isCorrect": false,
         "explanation": "The speech concerns independence from colonial rule, not a military alliance."
       }
@@ -260,25 +260,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Political and religious tensions between Hindu and Muslim leaders led to the creation of the separate states of India and Pakistan, accompanied by mass migration and violence.",
+        "text": "Political and religious tensions between Hindu and Muslim leaders led to the creation of India and Pakistan, accompanied by mass migration and violence.",
         "isCorrect": true,
         "explanation": "The British withdrew and the subcontinent was divided along religious lines, causing displacement of millions."
       },
       {
         "label": "B",
-        "text": "The Soviet Union invaded and divided India.",
+        "text": "The Soviet Union invaded and divided India, creating two Soviet-aligned states that were governed from Moscow for the next decade.",
         "isCorrect": false,
         "explanation": "The partition was carried out under British authority."
       },
       {
         "label": "C",
-        "text": "The British decided to keep India united and rejected demands for independence.",
+        "text": "The British decided to keep India united and rejected all demands for independence, which led to a long colonial war.",
         "isCorrect": false,
         "explanation": "India became independent and was divided."
       },
       {
         "label": "D",
-        "text": "The Mughal Empire was restored in the north.",
+        "text": "The Mughal Empire was restored in the north, with its capital at Delhi under a restored emperor.",
         "isCorrect": false,
         "explanation": "The Mughal Empire had ended in the nineteenth century."
       }
@@ -296,25 +296,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Both became independent in 1914.",
+        "text": "Both became independent in 1914, after joint negotiations led by the League of Nations in Geneva and a vote of all the colonial powers in Europe.",
         "isCorrect": false,
         "explanation": "India became independent in 1947 and Algeria in 1962."
       },
       {
         "label": "B",
-        "text": "India's movement relied largely on mass nonviolent mobilization and negotiation with Britain, while Algeria's required a long, violent war against France (1954-1962), partly because of a large French settler population.",
+        "text": "India's movement relied largely on mass nonviolent mobilization and negotiation with Britain, while Algeria needed a long, violent war against France (1954-1962), partly because of its large French settler population.",
         "isCorrect": true,
         "explanation": "Different colonial situations produced different routes to independence."
       },
       {
         "label": "C",
-        "text": "India fought a long war against France, while Algeria negotiated with Britain.",
+        "text": "India fought a long and violent war of independence against France, while Algeria negotiated its independence peacefully and without conflict with Britain's government in London.",
         "isCorrect": false,
         "explanation": "India was a British colony and Algeria a French colony."
       },
       {
         "label": "D",
-        "text": "Both won independence without any political organization or protest.",
+        "text": "Both won independence without any political organization or protest, because the colonial powers simply decided to leave after the Second World War.",
         "isCorrect": false,
         "explanation": "Both involved organized nationalist movements."
       }
@@ -332,25 +332,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "To avoid formal alignment with either superpower bloc and to promote solidarity and independence among Asian and African nations.",
+        "text": "To avoid alignment with either superpower bloc and to promote solidarity among Asian and African nations.",
         "isCorrect": true,
         "explanation": "Leaders of newly independent states sought to maintain independence and cooperation outside the Cold War alliances."
       },
       {
         "label": "B",
-        "text": "To join NATO as full members.",
+        "text": "To join NATO as full members and take part in its military planning against the Soviet Union.",
         "isCorrect": false,
         "explanation": "The movement aimed at nonalignment, not membership in NATO."
       },
       {
         "label": "C",
-        "text": "To restore European colonial rule.",
+        "text": "To restore European colonial rule in their territories and invite the former rulers to return as governors.",
         "isCorrect": false,
         "explanation": "The movement opposed colonialism."
       },
       {
         "label": "D",
-        "text": "To adopt the constitution of the Soviet Union.",
+        "text": "To adopt the constitution of the Soviet Union as the model for their own governments and economic planning.",
         "isCorrect": false,
         "explanation": "Nonaligned states did not formally adopt the Soviet system."
       }
@@ -374,19 +374,19 @@
       },
       {
         "label": "B",
-        "text": "The threat of a return to feudalism.",
+        "text": "The threat of a return to feudalism, in which landowners would rule the countryside.",
         "isCorrect": false,
         "explanation": "The passage describes foreign economic control."
       },
       {
         "label": "C",
-        "text": "The failure of the Soviet Union to provide military aid.",
+        "text": "The failure of the Soviet Union to provide military aid to the new government.",
         "isCorrect": false,
         "explanation": "The passage concerns economic ownership, not military aid."
       },
       {
         "label": "D",
-        "text": "The danger of too much government ownership of industry.",
+        "text": "The danger of too much government ownership of industry, which had discouraged foreign investors from the colony.",
         "isCorrect": false,
         "explanation": "The passage criticizes foreign ownership."
       }
@@ -404,25 +404,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "It restored British control of Egypt.",
+        "text": "It restored British control of Egypt and returned the canal to its original owners, strengthening the British Empire in the Middle East.",
         "isCorrect": false,
         "explanation": "Egypt kept control of the canal."
       },
       {
         "label": "B",
-        "text": "The failure of the British, French and Israeli attack after Egypt nationalized the canal showed the decline of British and French power and the growing influence of the United States and the Soviet Union.",
+        "text": "The failure of the British, French and Israeli attack after Egypt nationalized the canal showed the decline of British and French power and the rising influence of the US and USSR.",
         "isCorrect": true,
         "explanation": "Pressure from the superpowers forced the attackers to withdraw, and Egypt kept control of the canal."
       },
       {
         "label": "C",
-        "text": "It led to the immediate collapse of the Soviet Union.",
+        "text": "It led to the immediate collapse of the Soviet Union, which lost its allies in the Middle East and could no longer afford its armies.",
         "isCorrect": false,
         "explanation": "The Soviet Union lasted until 1991."
       },
       {
         "label": "D",
-        "text": "It was a victory for the colonial powers that strengthened their empires.",
+        "text": "It was a victory for the colonial powers that strengthened their empires, discouraged nationalist movements and convinced other colonies not to seek independence.",
         "isCorrect": false,
         "explanation": "The crisis was a humiliation for Britain and France."
       }
@@ -440,13 +440,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "A policy of equal rights for all races that began in 1948.",
+        "text": "A policy of equal rights for all races that began in 1948 and was supported by the government, the churches, most of the country's business leaders and the leaders of the main African political parties in the country.",
         "isCorrect": false,
         "explanation": "Apartheid enforced racial inequality."
       },
       {
         "label": "B",
-        "text": "A system that ended in 1948 when South Africa left the British Empire.",
+        "text": "A system that ended in 1948 when South Africa left the British Empire and adopted a constitution guaranteeing the rights of every citizen.",
         "isCorrect": false,
         "explanation": "Apartheid began in 1948."
       },
@@ -458,7 +458,7 @@
       },
       {
         "label": "D",
-        "text": "A system imposed by the Soviet Union on South Africa.",
+        "text": "A system imposed by the Soviet Union on South Africa during the Cold War and ended when the Soviet Union itself collapsed.",
         "isCorrect": false,
         "explanation": "Apartheid was established by the South African government."
       }
@@ -476,25 +476,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Lenin's New Economic Policy of the 1920s.",
+        "text": "Lenin's New Economic Policy of the 1920s, which allowed small private businesses to operate under state supervision after the end of the Russian civil war and famine.",
         "isCorrect": false,
         "explanation": "The passage refers to the late Soviet period."
       },
       {
         "label": "B",
-        "text": "Gorbachev's reforms of glasnost (openness) and perestroika (restructuring), intended to revive the Soviet system but which contributed to its collapse.",
+        "text": "Gorbachev's reforms of glasnost (openness) and perestroika (restructuring), meant to revive the Soviet system but which contributed to its collapse.",
         "isCorrect": true,
         "explanation": "The reforms loosened controls and encouraged criticism, which weakened the Communist Party's authority."
       },
       {
         "label": "C",
-        "text": "Stalin's Five-Year Plans for rapid industrialization.",
+        "text": "Stalin's Five-Year Plans for rapid industrialization, which collectivized farms and built heavy industry.",
         "isCorrect": false,
         "explanation": "Stalin centralized economic planning; the passage criticizes rigid central planning."
       },
       {
         "label": "D",
-        "text": "A plan to expand Soviet control over Western Europe.",
+        "text": "A plan to expand Soviet control over Western Europe by means of political parties and covert military action.",
         "isCorrect": false,
         "explanation": "The reforms focused on internal change."
       }
@@ -512,19 +512,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "Chinese military support for the protesters.",
+        "text": "Chinese military support for the protesters in Poland, Hungary and East Germany.",
         "isCorrect": false,
         "explanation": "China did not intervene in Eastern Europe."
       },
       {
         "label": "B",
-        "text": "A Soviet reinvasion that restored order in every country.",
+        "text": "A Soviet reinvasion that restored order in every country, ended the protests and kept the communist parties in power until 1995.",
         "isCorrect": false,
         "explanation": "The Soviet Union did not use force to save the governments."
       },
       {
         "label": "C",
-        "text": "A NATO invasion of Eastern Europe.",
+        "text": "A NATO invasion of Eastern Europe that overthrew the communist governments by force.",
         "isCorrect": false,
         "explanation": "NATO did not invade."
       },

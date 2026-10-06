@@ -6,10 +6,10 @@
     "difficulty": "easy",
     "stem": "Which navigational technology, adopted and improved by European sailors (originally developed in China), helped enable long-distance ocean voyages during this era?",
     "choices": [
-      { "label": "A", "text": "The magnetic compass", "isCorrect": true, "explanation": "The magnetic compass, developed earlier in China, was adopted and refined by European sailors, aiding long-distance navigation." },
-      { "label": "B", "text": "The telegraph", "isCorrect": false, "explanation": "The telegraph is a 19th-century invention, far too late for this era's exploration." },
-      { "label": "C", "text": "The steam engine", "isCorrect": false, "explanation": "The steam engine is an Industrial Revolution-era invention, too late for this era." },
-      { "label": "D", "text": "Radar", "isCorrect": false, "explanation": "Radar is a 20th-century invention, far too late for this era." }
+      { "label": "A", "text": "The magnetic compass for navigation", "isCorrect": true, "explanation": "The magnetic compass, developed earlier in China, was adopted and refined by European sailors, aiding long-distance navigation." },
+      { "label": "B", "text": "The electric telegraph for signals", "isCorrect": false, "explanation": "The telegraph is a 19th-century invention, far too late for this era's exploration." },
+      { "label": "C", "text": "The steam engine for ocean ships", "isCorrect": false, "explanation": "The steam engine is an Industrial Revolution-era invention, too late for this era." },
+      { "label": "D", "text": "Radar for finding ships at sea", "isCorrect": false, "explanation": "Radar is a 20th-century invention, far too late for this era." }
     ],
     "explanation": "European sailors adopted and improved the magnetic compass, originally developed in China, to aid long-distance ocean navigation.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
@@ -22,10 +22,10 @@
     "difficulty": "medium",
     "stem": "What was the caravel, and why was it significant for European exploration?",
     "choices": [
-      { "label": "A", "text": "A type of large land vehicle", "isCorrect": false, "explanation": "The caravel was a ship, not a land vehicle." },
-      { "label": "B", "text": "A maneuverable sailing ship design that could travel against the wind, enabling long ocean voyages", "isCorrect": true, "explanation": "The caravel's design let it sail more effectively against the wind, making longer and more flexible ocean voyages possible." },
-      { "label": "C", "text": "A type of map used only for land navigation", "isCorrect": false, "explanation": "Maps like the portolan chart were also important navigational tools, but the caravel itself was a ship design, not a map." },
-      { "label": "D", "text": "A weapon used in naval battles exclusively", "isCorrect": false, "explanation": "Caravels could carry weapons, but their primary significance was as a versatile, maneuverable exploration vessel, not specifically as a weapon." }
+      { "label": "A", "text": "A heavy wheeled land vehicle pulled by teams of oxen along European trade roads", "isCorrect": false, "explanation": "The caravel was a ship, not a land vehicle." },
+      { "label": "B", "text": "A maneuverable sailing ship that could sail against the wind, enabling long ocean voyages", "isCorrect": true, "explanation": "The caravel's design let it sail more effectively against the wind, making longer and more flexible ocean voyages possible." },
+      { "label": "C", "text": "A type of map used only for land navigation by merchants traveling the Silk Roads", "isCorrect": false, "explanation": "Maps like the portolan chart were also important navigational tools, but the caravel itself was a ship design, not a map." },
+      { "label": "D", "text": "A heavy weapon used exclusively in naval battles, firing stone and iron shot at enemy ships", "isCorrect": false, "explanation": "Caravels could carry weapons, but their primary significance was as a versatile, maneuverable exploration vessel, not specifically as a weapon." }
     ],
     "explanation": "The caravel was a maneuverable ship design that could sail against the wind, making it well-suited for long exploratory voyages.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
@@ -38,10 +38,10 @@
     "difficulty": "medium",
     "stem": "Prince Henry \"the Navigator\" of Portugal played what role in this era's maritime exploration?",
     "choices": [
-      { "label": "A", "text": "He personally sailed to the Americas", "isCorrect": false, "explanation": "Prince Henry himself did not personally lead major long-distance voyages; his role was as a sponsor and organizer." },
+      { "label": "A", "text": "He personally sailed to the Americas and claimed Brazil and the Caribbean for Portugal", "isCorrect": false, "explanation": "Prince Henry himself did not personally lead major long-distance voyages; his role was as a sponsor and organizer." },
       { "label": "B", "text": "He sponsored and organized Portuguese voyages of exploration along the African coast", "isCorrect": true, "explanation": "Prince Henry funded and organized expeditions that gradually mapped and explored the West African coastline." },
-      { "label": "C", "text": "He had no connection to exploration", "isCorrect": false, "explanation": "Prince Henry had a very significant, well-documented connection to sponsoring Portuguese exploration." },
-      { "label": "D", "text": "He was a Spanish explorer", "isCorrect": false, "explanation": "Prince Henry was Portuguese, not Spanish." }
+      { "label": "C", "text": "He had no connection to exploration and spent his life as a soldier in the wars of Castile", "isCorrect": false, "explanation": "Prince Henry had a very significant, well-documented connection to sponsoring Portuguese exploration." },
+      { "label": "D", "text": "He was a Spanish explorer who sponsored the first voyage across the Pacific for Castile", "isCorrect": false, "explanation": "Prince Henry was Portuguese, not Spanish." }
     ],
     "explanation": "Prince Henry the Navigator sponsored and organized Portuguese voyages exploring the West African coast.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
@@ -54,10 +54,10 @@
     "difficulty": "hard",
     "stem": "What combination of factors most directly motivated European powers to seek new maritime trade routes to Asia during this period?",
     "choices": [
-      { "label": "A", "text": "A desire to avoid overland Middle Eastern intermediaries controlling the lucrative spice trade, combined with technological advances in shipbuilding and navigation", "isCorrect": true, "explanation": "European powers sought direct sea routes to bypass costly overland intermediaries, made possible by new navigational and shipbuilding technology." },
-      { "label": "B", "text": "A complete lack of any prior knowledge that Asia existed", "isCorrect": false, "explanation": "Europeans were well aware of Asia and its valuable goods through existing, though costly, overland trade routes." },
-      { "label": "C", "text": "A religious ban on all trade with Asia", "isCorrect": false, "explanation": "There was no such religious ban preventing trade with Asia; the motivation was economic and strategic." },
-      { "label": "D", "text": "The total absence of any European interest in spices or luxury goods", "isCorrect": false, "explanation": "European interest in Asian spices and luxury goods was a major driving motivation, not an absence of interest." }
+      { "label": "A", "text": "A wish to bypass Middle Eastern intermediaries in the spice trade, plus advances in shipbuilding and navigation", "isCorrect": true, "explanation": "European powers sought direct sea routes to bypass costly overland intermediaries, made possible by new navigational and shipbuilding technology." },
+      { "label": "B", "text": "A complete lack of any prior knowledge that Asia existed, so explorers searched the oceans blindly for it", "isCorrect": false, "explanation": "Europeans were well aware of Asia and its valuable goods through existing, though costly, overland trade routes." },
+      { "label": "C", "text": "A religious ban on all trade with Asia issued by the pope, which sent merchants to search for new lands", "isCorrect": false, "explanation": "There was no such religious ban preventing trade with Asia; the motivation was economic and strategic." },
+      { "label": "D", "text": "The total absence of any European interest in spices, silks or other luxury goods from the East", "isCorrect": false, "explanation": "European interest in Asian spices and luxury goods was a major driving motivation, not an absence of interest." }
     ],
     "explanation": "European powers sought new sea routes to bypass costly overland intermediaries controlling the spice trade, enabled by advances in shipbuilding and navigation.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
@@ -68,14 +68,14 @@
     "unit": "unit-4-transoceanic-interconnections",
     "topic": "technology-and-exploration",
     "difficulty": "medium",
-    "stem": "Which explorer, sailing for Portugal, was the first European to round the southern tip of Africa (the Cape of Good Hope) and reach India by sea?",
+    "stem": "Which explorer, sailing for Portugal, was the first European to reach India by sea, sailing around the southern tip of Africa (the Cape of Good Hope)?",
     "choices": [
       { "label": "A", "text": "Christopher Columbus", "isCorrect": false, "explanation": "Christopher Columbus sailed westward across the Atlantic and did not reach India via this African route." },
       { "label": "B", "text": "Vasco da Gama", "isCorrect": true, "explanation": "Vasco da Gama's voyage around Africa's southern tip reached India by sea, opening a direct maritime route." },
       { "label": "C", "text": "Ferdinand Magellan", "isCorrect": false, "explanation": "Ferdinand Magellan's expedition circumnavigated the globe later, via a different route around South America." },
       { "label": "D", "text": "Marco Polo", "isCorrect": false, "explanation": "Marco Polo traveled overland to Asia centuries earlier, not by this maritime route around Africa." }
     ],
-    "explanation": "Vasco da Gama was the first European to round Africa's southern tip and reach India by sea.",
+    "explanation": "Vasco da Gama was the first European to reach India by sea, sailing around Africa's southern tip; Bartolomeu Dias had first rounded the Cape in 1488 but turned back before India.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
     "reviewed": false
   },
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "Christopher Columbus's 1492 voyage, though he was seeking a westward route to Asia, instead resulted in what significant outcome?",
     "choices": [
-      { "label": "A", "text": "He successfully reached Asia as intended", "isCorrect": false, "explanation": "Columbus did not reach Asia; he encountered the Americas instead, though he initially believed otherwise." },
-      { "label": "B", "text": "He encountered the Americas, previously unknown to most Europeans, initiating sustained transatlantic contact", "isCorrect": true, "explanation": "Columbus's voyage initiated sustained contact between Afro-Eurasia and the Americas, with enormous historical consequences." },
-      { "label": "C", "text": "He discovered nothing of significance", "isCorrect": false, "explanation": "His voyage had enormous historical significance, initiating sustained contact between Afro-Eurasia and the Americas." },
-      { "label": "D", "text": "He circumnavigated the entire globe", "isCorrect": false, "explanation": "Circumnavigating the globe was later achieved by Magellan's expedition, not Columbus's 1492 voyage." }
+      { "label": "A", "text": "He successfully reached Asia as intended and returned to Spain with a cargo of spices and silk", "isCorrect": false, "explanation": "Columbus did not reach Asia; he encountered the Americas instead, though he initially believed otherwise." },
+      { "label": "B", "text": "He reached the Americas, unknown to most Europeans, beginning sustained transatlantic contact", "isCorrect": true, "explanation": "Columbus's voyage initiated sustained contact between Afro-Eurasia and the Americas, with enormous historical consequences." },
+      { "label": "C", "text": "He discovered nothing of significance, and the voyage was soon forgotten across Spain and Portugal", "isCorrect": false, "explanation": "His voyage had enormous historical significance, initiating sustained contact between Afro-Eurasia and the Americas." },
+      { "label": "D", "text": "He circumnavigated the entire globe in three ships and proved that the Earth was round", "isCorrect": false, "explanation": "Circumnavigating the globe was later achieved by Magellan's expedition, not Columbus's 1492 voyage." }
     ],
     "explanation": "Columbus's 1492 voyage encountered the Americas, initiating sustained transatlantic contact rather than reaching Asia as intended.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
@@ -103,9 +103,9 @@
     "stem": "Ferdinand Magellan's expedition (1519-1522) achieved what significant first, even though Magellan himself died during the voyage?",
     "choices": [
       { "label": "A", "text": "The first successful circumnavigation of the globe by a European-led expedition", "isCorrect": true, "explanation": "Although Magellan died partway through, his expedition completed the first circumnavigation of the globe." },
-      { "label": "B", "text": "The first European contact with China", "isCorrect": false, "explanation": "European contact with China had occurred earlier via other routes, including overland Silk Road contact." },
-      { "label": "C", "text": "The first crossing of the Atlantic Ocean", "isCorrect": false, "explanation": "The Atlantic had already been crossed earlier, notably by Columbus in 1492." },
-      { "label": "D", "text": "The first European settlement in North America", "isCorrect": false, "explanation": "Magellan's expedition is significant for circumnavigation, not for founding a settlement in North America." }
+      { "label": "B", "text": "The first European contact with China by a fleet sailing around the African cape", "isCorrect": false, "explanation": "European contact with China had occurred earlier via other routes, including overland Silk Road contact." },
+      { "label": "C", "text": "The first crossing of the Atlantic Ocean by a Spanish-sponsored European expedition", "isCorrect": false, "explanation": "The Atlantic had already been crossed earlier, notably by Columbus in 1492." },
+      { "label": "D", "text": "The first European settlement in North America, founded on the coast of Florida", "isCorrect": false, "explanation": "Magellan's expedition is significant for circumnavigation, not for founding a settlement in North America." }
     ],
     "explanation": "Magellan's expedition achieved the first circumnavigation of the globe, even though he died before its completion.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
@@ -134,10 +134,10 @@
     "difficulty": "medium",
     "stem": "Which crop, originally from the Americas, became a major staple food crop in parts of Europe, Africa, and Asia after the Columbian Exchange?",
     "choices": [
-      { "label": "A", "text": "Wheat", "isCorrect": false, "explanation": "Wheat originated in the Middle East/Eurasia, not the Americas." },
-      { "label": "B", "text": "Rice", "isCorrect": false, "explanation": "Rice originated in Asia, not the Americas." },
+      { "label": "A", "text": "Winter wheat", "isCorrect": false, "explanation": "Wheat originated in the Middle East/Eurasia, not the Americas." },
+      { "label": "B", "text": "Paddy rice", "isCorrect": false, "explanation": "Rice originated in Asia, not the Americas." },
       { "label": "C", "text": "The potato", "isCorrect": true, "explanation": "The potato, native to the Andes, became a major staple crop across Europe and beyond after the Columbian Exchange." },
-      { "label": "D", "text": "Barley", "isCorrect": false, "explanation": "Barley originated in the Middle East/Eurasia, not the Americas." }
+      { "label": "D", "text": "Hulled barley", "isCorrect": false, "explanation": "Barley originated in the Middle East/Eurasia, not the Americas." }
     ],
     "explanation": "The potato, native to the Americas, became a major staple food crop across Europe, Africa, and Asia.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
@@ -150,10 +150,10 @@
     "difficulty": "medium",
     "stem": "What devastating consequence did the Columbian Exchange have on Indigenous American populations?",
     "choices": [
-      { "label": "A", "text": "No significant effect on population", "isCorrect": false, "explanation": "The Columbian Exchange had catastrophic, well-documented demographic effects on Indigenous populations." },
-      { "label": "B", "text": "Massive population decline due to diseases (such as smallpox) introduced by Europeans, to which Indigenous peoples had no prior immunity", "isCorrect": true, "explanation": "Diseases like smallpox, to which Indigenous Americans had no prior immunity, caused catastrophic population decline." },
-      { "label": "C", "text": "A significant population increase due to new diseases", "isCorrect": false, "explanation": "New diseases caused massive population decline, not increase." },
-      { "label": "D", "text": "Complete immunity to all new diseases", "isCorrect": false, "explanation": "The opposite occurred; Indigenous peoples had no prior immunity, making the diseases especially devastating." }
+      { "label": "A", "text": "No significant effect on population, since Indigenous peoples quickly built immunity to every disease", "isCorrect": false, "explanation": "The Columbian Exchange had catastrophic, well-documented demographic effects on Indigenous populations." },
+      { "label": "B", "text": "Massive population decline from diseases like smallpox that Indigenous peoples had no immunity to", "isCorrect": true, "explanation": "Diseases like smallpox, to which Indigenous Americans had no prior immunity, caused catastrophic population decline." },
+      { "label": "C", "text": "A significant population increase due to new diseases that strengthened Indigenous immune systems", "isCorrect": false, "explanation": "New diseases caused massive population decline, not increase." },
+      { "label": "D", "text": "Complete immunity to all new diseases, thanks to earlier contact with Viking and Asian travelers", "isCorrect": false, "explanation": "The opposite occurred; Indigenous peoples had no prior immunity, making the diseases especially devastating." }
     ],
     "explanation": "European diseases like smallpox, to which Indigenous Americans had no prior immunity, caused catastrophic population decline.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
@@ -166,10 +166,10 @@
     "difficulty": "hard",
     "stem": "Why were European diseases like smallpox so particularly devastating to Indigenous American populations, compared to their effects in Afro-Eurasia?",
     "choices": [
-      { "label": "A", "text": "Indigenous Americans had been isolated from these diseases for millennia and had no acquired immunity, unlike populations in Afro-Eurasia with longer exposure histories", "isCorrect": true, "explanation": "Long isolation from these diseases meant Indigenous Americans had no acquired immunity, unlike populations that had experienced repeated exposure over centuries in Afro-Eurasia." },
-      { "label": "B", "text": "These diseases were actually less severe in the Americas", "isCorrect": false, "explanation": "These diseases were, if anything, more severe in their effects in the Americas, not less." },
-      { "label": "C", "text": "Indigenous Americans had stronger immune systems than Europeans", "isCorrect": false, "explanation": "The issue was a lack of prior exposure and immunity, not weaker immune systems in a general biological sense." },
-      { "label": "D", "text": "There was no difference in disease impact between the Americas and Afro-Eurasia", "isCorrect": false, "explanation": "There was a dramatic, well-documented difference in disease impact between these regions, precisely due to differing exposure histories." }
+      { "label": "A", "text": "Indigenous Americans had been isolated from these diseases for millennia and lacked the acquired immunity of Afro-Eurasians", "isCorrect": true, "explanation": "Long isolation from these diseases meant Indigenous Americans had no acquired immunity, unlike populations that had experienced repeated exposure over centuries in Afro-Eurasia." },
+      { "label": "B", "text": "These diseases were actually less severe in the Americas, where the climate was cooler and healthier for people", "isCorrect": false, "explanation": "These diseases were, if anything, more severe in their effects in the Americas, not less." },
+      { "label": "C", "text": "Indigenous Americans had stronger immune systems than Europeans because of their diet, lifestyle and medicines", "isCorrect": false, "explanation": "The issue was a lack of prior exposure and immunity, not weaker immune systems in a general biological sense." },
+      { "label": "D", "text": "There was no difference in disease impact between the Americas and Afro-Eurasia, where all peoples fell ill alike", "isCorrect": false, "explanation": "There was a dramatic, well-documented difference in disease impact between these regions, precisely due to differing exposure histories." }
     ],
     "explanation": "Long isolation from Afro-Eurasian diseases left Indigenous Americans with no acquired immunity, making diseases like smallpox especially devastating.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
@@ -198,10 +198,10 @@
     "difficulty": "medium",
     "stem": "What was one significant consequence of new American crops (like maize and potatoes) spreading to Afro-Eurasia?",
     "choices": [
-      { "label": "A", "text": "They had no effect on population or agriculture", "isCorrect": false, "explanation": "These new crops had substantial, well-documented effects on agriculture and population." },
-      { "label": "B", "text": "They contributed to population growth in various regions by providing new, calorie-dense food sources", "isCorrect": true, "explanation": "Crops like maize and potatoes provided reliable, calorie-dense food sources that supported population growth in various regions." },
-      { "label": "C", "text": "They caused widespread famine everywhere they were introduced", "isCorrect": false, "explanation": "These crops generally supported, rather than caused, famine, by providing additional reliable food sources." },
-      { "label": "D", "text": "They were universally rejected and never adopted", "isCorrect": false, "explanation": "These crops were widely adopted in various regions, such as the potato in Europe and maize in parts of Africa and Asia, not universally rejected." }
+      { "label": "A", "text": "They had no effect on population or agriculture, since farmers rejected every foreign crop", "isCorrect": false, "explanation": "These new crops had substantial, well-documented effects on agriculture and population." },
+      { "label": "B", "text": "They supported population growth in many regions by providing new calorie-dense foods", "isCorrect": true, "explanation": "Crops like maize and potatoes provided reliable, calorie-dense food sources that supported population growth in various regions." },
+      { "label": "C", "text": "They caused widespread famine everywhere they were introduced, as the new crops failed", "isCorrect": false, "explanation": "These crops generally supported, rather than caused, famine, by providing additional reliable food sources." },
+      { "label": "D", "text": "They were universally rejected and never adopted outside the Americas by any farmers", "isCorrect": false, "explanation": "These crops were widely adopted in various regions, such as the potato in Europe and maize in parts of Africa and Asia, not universally rejected." }
     ],
     "explanation": "New American crops like maize and potatoes supported population growth across Afro-Eurasia by providing calorie-dense food sources.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "Besides plants and diseases, what else was part of the Columbian Exchange in terms of forced human migration?",
     "choices": [
-      { "label": "A", "text": "No human migration was involved", "isCorrect": false, "explanation": "The Columbian Exchange era saw substantial and increasingly significant human migration, both voluntary and forced." },
-      { "label": "B", "text": "The beginning of the transatlantic slave trade, forcibly transporting enslaved Africans to the Americas", "isCorrect": true, "explanation": "The forced transport of enslaved Africans to the Americas became a central, devastating component of this era's exchange." },
-      { "label": "C", "text": "Only voluntary European migration", "isCorrect": false, "explanation": "This understates the exchange, which crucially included the forced migration of enslaved Africans, not just voluntary European movement." },
-      { "label": "D", "text": "Only voluntary Indigenous American migration", "isCorrect": false, "explanation": "This doesn't accurately describe the primary large-scale forced migration pattern of this era, which centered on the transatlantic slave trade." }
+      { "label": "A", "text": "No human migration was involved, since only plants, animals and diseases crossed the Atlantic", "isCorrect": false, "explanation": "The Columbian Exchange era saw substantial and increasingly significant human migration, both voluntary and forced." },
+      { "label": "B", "text": "The start of the transatlantic slave trade, forcibly carrying enslaved Africans to the Americas", "isCorrect": true, "explanation": "The forced transport of enslaved Africans to the Americas became a central, devastating component of this era's exchange." },
+      { "label": "C", "text": "Only voluntary European migration to the new colonies of North America, Brazil and the Caribbean", "isCorrect": false, "explanation": "This understates the exchange, which crucially included the forced migration of enslaved Africans, not just voluntary European movement." },
+      { "label": "D", "text": "Only voluntary Indigenous American migration to Europe and Africa across the Atlantic Ocean", "isCorrect": false, "explanation": "This doesn't accurately describe the primary large-scale forced migration pattern of this era, which centered on the transatlantic slave trade." }
     ],
     "explanation": "The Columbian Exchange era included the forced transatlantic migration of enslaved Africans to the Americas.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
@@ -246,10 +246,10 @@
     "difficulty": "medium",
     "stem": "The Treaty of Tordesillas (1494) attempted to do what?",
     "choices": [
-      { "label": "A", "text": "End all European exploration permanently", "isCorrect": false, "explanation": "The treaty didn't end exploration; it was about dividing territorial claims between two specific powers." },
+      { "label": "A", "text": "End all European exploration permanently by banning ships from sailing west of Africa", "isCorrect": false, "explanation": "The treaty didn't end exploration; it was about dividing territorial claims between two specific powers." },
       { "label": "B", "text": "Divide newly claimed lands outside Europe between Spain and Portugal along a designated line", "isCorrect": true, "explanation": "The treaty drew a line dividing newly claimed non-European lands between Spanish and Portuguese control." },
-      { "label": "C", "text": "Establish peace between all European nations", "isCorrect": false, "explanation": "The treaty was specifically between Spain and Portugal, not a general peace agreement among all European nations." },
-      { "label": "D", "text": "Grant independence to Indigenous American nations", "isCorrect": false, "explanation": "The treaty divided colonial claims between European powers; it had nothing to do with granting independence to Indigenous nations." }
+      { "label": "C", "text": "Establish peace between all European nations and end the wars between their ruling families", "isCorrect": false, "explanation": "The treaty was specifically between Spain and Portugal, not a general peace agreement among all European nations." },
+      { "label": "D", "text": "Grant independence to Indigenous American nations and protect their territory from European settlers", "isCorrect": false, "explanation": "The treaty divided colonial claims between European powers; it had nothing to do with granting independence to Indigenous nations." }
     ],
     "explanation": "The Treaty of Tordesillas divided newly claimed lands outside Europe between Spain and Portugal along a designated line.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "The Spanish conquest of the Aztec and Inca Empires was achieved through a combination of which factors?",
     "choices": [
-      { "label": "A", "text": "Superior numbers of Spanish soldiers alone", "isCorrect": false, "explanation": "Spanish forces were actually vastly outnumbered by Aztec and Inca populations; superior numbers was not the factor." },
-      { "label": "B", "text": "Advanced weaponry, alliances with rival Indigenous groups, and the devastating effects of European diseases", "isCorrect": true, "explanation": "This combination of factors, rather than any single cause, explains the Spanish conquests of these large empires." },
-      { "label": "C", "text": "Peaceful negotiation exclusively", "isCorrect": false, "explanation": "The conquests involved significant violence and conflict, not peaceful negotiation exclusively." },
-      { "label": "D", "text": "Overwhelming Aztec and Inca military technology compared to the Spanish", "isCorrect": false, "explanation": "This reverses the actual technological relationship; the Spanish had more advanced weaponry compared to Aztec/Inca forces." }
+      { "label": "A", "text": "Superior numbers of Spanish soldiers alone, who far outnumbered the Aztec and Inca armies", "isCorrect": false, "explanation": "Spanish forces were actually vastly outnumbered by Aztec and Inca populations; superior numbers was not the factor." },
+      { "label": "B", "text": "Advanced weapons, alliances with rival Indigenous groups and the effects of European diseases", "isCorrect": true, "explanation": "This combination of factors, rather than any single cause, explains the Spanish conquests of these large empires." },
+      { "label": "C", "text": "Peaceful negotiation exclusively, since both empires voluntarily surrendered to the Spanish crown", "isCorrect": false, "explanation": "The conquests involved significant violence and conflict, not peaceful negotiation exclusively." },
+      { "label": "D", "text": "Overwhelming Aztec and Inca military technology compared to the Spanish, who relied on luck", "isCorrect": false, "explanation": "This reverses the actual technological relationship; the Spanish had more advanced weaponry compared to Aztec/Inca forces." }
     ],
     "explanation": "A combination of advanced weaponry, alliances with rival Indigenous groups, and devastating disease enabled the Spanish conquests.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
@@ -278,10 +278,10 @@
     "difficulty": "hard",
     "stem": "How did the Dutch, English, and French maritime empires generally differ in their early colonial approach from the Spanish/Portuguese model in the Americas?",
     "choices": [
-      { "label": "A", "text": "They were identical in every way", "isCorrect": false, "explanation": "There were meaningful differences in approach and structure between these colonial powers." },
-      { "label": "B", "text": "They often relied more heavily on chartered trading companies and, in North America, included more permanent settler colonization, compared to Spain/Portugal's emphasis on resource extraction and administrative conquest", "isCorrect": true, "explanation": "Dutch, English, and French colonial approaches often centered on chartered companies and settler colonization, differing from the Spanish/Portuguese focus on extraction and conquest." },
-      { "label": "C", "text": "They had no colonial presence anywhere", "isCorrect": false, "explanation": "The Dutch, English, and French all established significant colonial presences in the Americas." },
-      { "label": "D", "text": "They focused exclusively on Asia and never colonized any part of the Americas", "isCorrect": false, "explanation": "While these powers did also pursue Asian trade extensively, they also colonized significant portions of the Americas." }
+      { "label": "A", "text": "They were identical in every way, with the same laws, religion, economic systems and colonial offices as Spain and Portugal", "isCorrect": false, "explanation": "There were meaningful differences in approach and structure between these colonial powers." },
+      { "label": "B", "text": "They relied more on chartered companies and, in North America, on settler colonies, while Spain and Portugal stressed extraction and conquest", "isCorrect": true, "explanation": "Dutch, English, and French colonial approaches often centered on chartered companies and settler colonization, differing from the Spanish/Portuguese focus on extraction and conquest." },
+      { "label": "C", "text": "They had no colonial presence anywhere in the Americas, Africa or Asia until the end of the eighteenth century, long after Spain", "isCorrect": false, "explanation": "The Dutch, English, and French all established significant colonial presences in the Americas." },
+      { "label": "D", "text": "They focused exclusively on Asia and never colonized any part of the Americas, leaving the entire hemisphere to Spain and Portugal", "isCorrect": false, "explanation": "While these powers did also pursue Asian trade extensively, they also colonized significant portions of the Americas." }
     ],
     "explanation": "The Dutch, English, and French often relied on chartered companies and settler colonization, differing from the Spanish/Portuguese focus on extraction and conquest.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
@@ -294,10 +294,10 @@
     "difficulty": "medium",
     "stem": "The Dutch East India Company (VOC) is notable in world history as an early example of what type of institution?",
     "choices": [
-      { "label": "A", "text": "A modern nation-state", "isCorrect": false, "explanation": "The VOC was a company, not a nation-state, though it wielded substantial governmental-like powers." },
-      { "label": "B", "text": "A powerful chartered trading company with quasi-governmental powers (its own military, ability to negotiate treaties)", "isCorrect": true, "explanation": "The VOC operated with extraordinary powers for a private company, including maintaining its own military forces and negotiating treaties." },
-      { "label": "C", "text": "A religious missionary organization exclusively", "isCorrect": false, "explanation": "The VOC's primary identity and purpose was as a commercial trading company, not a missionary organization." },
-      { "label": "D", "text": "A purely charitable organization", "isCorrect": false, "explanation": "The VOC was fundamentally a profit-seeking commercial enterprise, not a charitable organization." }
+      { "label": "A", "text": "A modern nation-state with a written constitution and an elected parliament of merchants", "isCorrect": false, "explanation": "The VOC was a company, not a nation-state, though it wielded substantial governmental-like powers." },
+      { "label": "B", "text": "A chartered trading company with government-like powers, including its own army and treaty-making", "isCorrect": true, "explanation": "The VOC operated with extraordinary powers for a private company, including maintaining its own military forces and negotiating treaties." },
+      { "label": "C", "text": "A religious missionary organization exclusively, funded and run by the Dutch Reformed Church", "isCorrect": false, "explanation": "The VOC's primary identity and purpose was as a commercial trading company, not a missionary organization." },
+      { "label": "D", "text": "A purely charitable organization that provided food and relief to the poor of Amsterdam and Batavia", "isCorrect": false, "explanation": "The VOC was fundamentally a profit-seeking commercial enterprise, not a charitable organization." }
     ],
     "explanation": "The Dutch East India Company was an early example of a chartered trading company wielding quasi-governmental powers.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "What role did Portuguese trading posts (feitorias) established along coasts of Africa and Asia typically serve?",
     "choices": [
-      { "label": "A", "text": "They were massive settler colonies with millions of Portuguese residents", "isCorrect": false, "explanation": "Portuguese overseas presence in Africa/Asia was generally centered on smaller trading posts, not massive settler populations." },
-      { "label": "B", "text": "They served primarily as fortified trading posts to control and profit from commerce, rather than large-scale settlement colonies", "isCorrect": true, "explanation": "These fortified posts let Portugal control and profit from key trade routes without large-scale settlement." },
-      { "label": "C", "text": "They had no economic purpose", "isCorrect": false, "explanation": "These posts had a very clear, central economic purpose: controlling and profiting from trade." },
-      { "label": "D", "text": "They were exclusively military bases with no trade function", "isCorrect": false, "explanation": "These posts did have military/defensive functions, but they were fundamentally trade-oriented, not purely military bases." }
+      { "label": "A", "text": "They were massive settler colonies with millions of Portuguese residents, farms and cities", "isCorrect": false, "explanation": "Portuguese overseas presence in Africa/Asia was generally centered on smaller trading posts, not massive settler populations." },
+      { "label": "B", "text": "They were fortified trading posts that controlled commerce rather than settlement colonies", "isCorrect": true, "explanation": "These fortified posts let Portugal control and profit from key trade routes without large-scale settlement." },
+      { "label": "C", "text": "They had no economic purpose and were used only as prisons for convicted Portuguese sailors", "isCorrect": false, "explanation": "These posts had a very clear, central economic purpose: controlling and profiting from trade." },
+      { "label": "D", "text": "They were exclusively military bases with no trade function, housing only soldiers and cannon", "isCorrect": false, "explanation": "These posts did have military/defensive functions, but they were fundamentally trade-oriented, not purely military bases." }
     ],
     "explanation": "Portuguese feitorias served primarily as fortified trading posts controlling and profiting from commerce, rather than large-scale settlements.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
@@ -326,10 +326,10 @@
     "difficulty": "medium",
     "stem": "How did access to overseas colonial wealth (such as silver from the Americas) affect Spain's role in the European economy during this period?",
     "choices": [
-      { "label": "A", "text": "It had no economic effect on Spain", "isCorrect": false, "explanation": "This colonial wealth had substantial, well-documented economic effects on Spain and the broader European economy." },
-      { "label": "B", "text": "It made Spain, for a time, one of the wealthiest and most powerful states in Europe, fueling significant inflation across Europe as silver flooded markets", "isCorrect": true, "explanation": "American silver dramatically boosted Spanish wealth and power while also flooding European markets and contributing to inflation." },
-      { "label": "C", "text": "It caused immediate economic collapse with no benefits", "isCorrect": false, "explanation": "While later economic challenges did emerge, including inflation, this wealth initially brought Spain immense economic power, not immediate collapse." },
-      { "label": "D", "text": "Spain refused to use any of this wealth", "isCorrect": false, "explanation": "Spain very much utilized this wealth, funding military campaigns, luxury consumption, and other expenditures." }
+      { "label": "A", "text": "It had no economic effect on Spain, which sent nearly all of its silver directly to Asia and Africa", "isCorrect": false, "explanation": "This colonial wealth had substantial, well-documented economic effects on Spain and the broader European economy." },
+      { "label": "B", "text": "It made Spain for a time one of Europe's richest powers, and the flood of silver fueled inflation", "isCorrect": true, "explanation": "American silver dramatically boosted Spanish wealth and power while also flooding European markets and contributing to inflation." },
+      { "label": "C", "text": "It caused immediate economic collapse with no benefits, since the silver mines were soon exhausted", "isCorrect": false, "explanation": "While later economic challenges did emerge, including inflation, this wealth initially brought Spain immense economic power, not immediate collapse." },
+      { "label": "D", "text": "Spain refused to use any of this wealth and kept all of the silver locked away in royal vaults for decades", "isCorrect": false, "explanation": "Spain very much utilized this wealth, funding military campaigns, luxury consumption, and other expenditures." }
     ],
     "explanation": "American silver made Spain, for a time, one of Europe's wealthiest and most powerful states, while also contributing to broader European inflation.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
@@ -342,10 +342,10 @@
     "difficulty": "medium",
     "stem": "What common goal did most major European maritime empires of this era (Spanish, Portuguese, Dutch, English, French) share in establishing overseas colonies/trading posts?",
     "choices": [
-      { "label": "A", "text": "Purely religious conversion with no economic interest", "isCorrect": false, "explanation": "Religious conversion was a genuine motivation for some powers, but it was combined with strong economic interests, not purely religious motivation alone." },
-      { "label": "B", "text": "Economic gain through resource extraction, trade monopolies, and access to valuable goods, though often combined with religious and political motivations", "isCorrect": true, "explanation": "Economic gain was a shared core motivation across these empires, even as it combined with religious and political goals." },
-      { "label": "C", "text": "No shared goals of any kind", "isCorrect": false, "explanation": "These empires shared substantial common economic motivations despite their different specific approaches." },
-      { "label": "D", "text": "Exclusively scientific research", "isCorrect": false, "explanation": "Scientific research was not the primary driving goal of these colonial ventures; economic gain was central." }
+      { "label": "A", "text": "Purely religious conversion with no economic interest, since the churches forbade all colonial profit", "isCorrect": false, "explanation": "Religious conversion was a genuine motivation for some powers, but it was combined with strong economic interests, not purely religious motivation alone." },
+      { "label": "B", "text": "Economic gain through extraction, trade monopolies and valuable goods, often combined with religious motives", "isCorrect": true, "explanation": "Economic gain was a shared core motivation across these empires, even as it combined with religious and political goals." },
+      { "label": "C", "text": "No shared goals of any kind, since each empire pursued entirely different aims and shared no ideas", "isCorrect": false, "explanation": "These empires shared substantial common economic motivations despite their different specific approaches." },
+      { "label": "D", "text": "Exclusively scientific research into the geography, plants and peoples of every land they reached", "isCorrect": false, "explanation": "Scientific research was not the primary driving goal of these colonial ventures; economic gain was central." }
     ],
     "explanation": "Economic gain through resource extraction and trade monopolies was a shared core motivation across these European maritime empires.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/maritime-empires",
@@ -374,10 +374,10 @@
     "difficulty": "medium",
     "stem": "Enslaved Africans were primarily forced to work in which economic sector in the Americas?",
     "choices": [
-      { "label": "A", "text": "Government administration exclusively", "isCorrect": false, "explanation": "Enslaved people were generally excluded from formal government administrative roles, not employed there." },
+      { "label": "A", "text": "Government administration exclusively, serving as clerks and tax collectors", "isCorrect": false, "explanation": "Enslaved people were generally excluded from formal government administrative roles, not employed there." },
       { "label": "B", "text": "Plantation agriculture (such as sugar, tobacco, and later cotton) and mining", "isCorrect": true, "explanation": "Enslaved Africans were forced primarily into labor-intensive plantation agriculture and mining operations." },
-      { "label": "C", "text": "Higher education", "isCorrect": false, "explanation": "Enslaved people were denied access to higher education; this contradicts the reality of their forced labor conditions." },
-      { "label": "D", "text": "Religious leadership positions", "isCorrect": false, "explanation": "Enslaved people were excluded from religious leadership positions in these colonial societies." }
+      { "label": "C", "text": "Higher education at the new colonial universities in Mexico City and Lima", "isCorrect": false, "explanation": "Enslaved people were denied access to higher education; this contradicts the reality of their forced labor conditions." },
+      { "label": "D", "text": "Religious leadership positions in the Catholic missions of Spanish America", "isCorrect": false, "explanation": "Enslaved people were excluded from religious leadership positions in these colonial societies." }
     ],
     "explanation": "Enslaved Africans were primarily forced into plantation agriculture and mining labor in the Americas.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
@@ -390,10 +390,10 @@
     "difficulty": "medium",
     "stem": "What was the \"Middle Passage\"?",
     "choices": [
-      { "label": "A", "text": "A land route through the Middle East", "isCorrect": false, "explanation": "The \"Middle Passage\" specifically refers to a transatlantic sea voyage, not a Middle Eastern land route." },
-      { "label": "B", "text": "The brutal, often deadly transatlantic sea voyage transporting enslaved Africans to the Americas", "isCorrect": true, "explanation": "The Middle Passage was the notoriously brutal sea crossing that transported enslaved Africans to the Americas, with high mortality rates." },
-      { "label": "C", "text": "A peaceful negotiation process between Europeans and Africans", "isCorrect": false, "explanation": "The Middle Passage was a brutal, often fatal ocean crossing, not a peaceful negotiation." },
-      { "label": "D", "text": "A specific trade agreement about textiles", "isCorrect": false, "explanation": "The term refers to the human transport voyage itself, not a textile trade agreement." }
+      { "label": "A", "text": "A land route through the Middle East used by caravans carrying silk, spices and enslaved people", "isCorrect": false, "explanation": "The \"Middle Passage\" specifically refers to a transatlantic sea voyage, not a Middle Eastern land route." },
+      { "label": "B", "text": "The brutal, often deadly Atlantic voyage that transported enslaved Africans to the Americas", "isCorrect": true, "explanation": "The Middle Passage was the notoriously brutal sea crossing that transported enslaved Africans to the Americas, with high mortality rates." },
+      { "label": "C", "text": "A peaceful negotiation process between Europeans and Africans over fair trade and prices", "isCorrect": false, "explanation": "The Middle Passage was a brutal, often fatal ocean crossing, not a peaceful negotiation." },
+      { "label": "D", "text": "A specific trade agreement about textiles between Dutch merchants and Indian weavers", "isCorrect": false, "explanation": "The term refers to the human transport voyage itself, not a textile trade agreement." }
     ],
     "explanation": "The Middle Passage was the brutal, often deadly transatlantic voyage transporting enslaved Africans to the Americas.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
@@ -406,10 +406,10 @@
     "difficulty": "hard",
     "stem": "How did some existing African political/economic structures interact with the developing transatlantic slave trade?",
     "choices": [
-      { "label": "A", "text": "African societies had no involvement whatsoever in the slave trade", "isCorrect": false, "explanation": "This significantly understates documented African involvement in various aspects of this trade." },
-      { "label": "B", "text": "Some African states and merchants participated in capturing and selling captives to European traders, often to gain wealth, weapons, or political advantage", "isCorrect": true, "explanation": "Some African states and merchants participated in the trade to gain wealth, firearms, or political advantage over rivals." },
-      { "label": "C", "text": "All African societies universally and uniformly opposed the slave trade from the very beginning", "isCorrect": false, "explanation": "Responses varied significantly; while some resisted, others participated for various strategic reasons, so this wasn't universal opposition." },
-      { "label": "D", "text": "The slave trade was entirely organized and carried out by Europeans without any African involvement", "isCorrect": false, "explanation": "The trade involved a complex system with significant African participation, alongside European demand and transport, not one carried out entirely without African involvement." }
+      { "label": "A", "text": "African societies had no involvement whatsoever in the slave trade, which Europeans ran entirely by themselves", "isCorrect": false, "explanation": "This significantly understates documented African involvement in various aspects of this trade." },
+      { "label": "B", "text": "Some African states and merchants captured and sold captives to Europeans, often for wealth, weapons or power", "isCorrect": true, "explanation": "Some African states and merchants participated in the trade to gain wealth, firearms, or political advantage over rivals." },
+      { "label": "C", "text": "All African societies universally and uniformly opposed the slave trade from its very beginning and refused to trade", "isCorrect": false, "explanation": "Responses varied significantly; while some resisted, others participated for various strategic reasons, so this wasn't universal opposition." },
+      { "label": "D", "text": "The slave trade was entirely organized and carried out by Europeans without any African involvement or consent", "isCorrect": false, "explanation": "The trade involved a complex system with significant African participation, alongside European demand and transport, not one carried out entirely without African involvement." }
     ],
     "explanation": "Some African states and merchants participated in the slave trade, often to gain wealth, weapons, or political advantage.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "What was the encomienda system, used by Spanish colonizers in the Americas?",
     "choices": [
-      { "label": "A", "text": "A system granting colonizers the right to demand labor and tribute from Indigenous populations in a designated area", "isCorrect": true, "explanation": "The encomienda system granted Spanish colonizers the right to extract forced labor and tribute from Indigenous people in a given area." },
-      { "label": "B", "text": "A democratic voting system", "isCorrect": false, "explanation": "The encomienda was a coercive labor/tribute system, not a democratic institution." },
-      { "label": "C", "text": "A trade agreement exclusively about silk", "isCorrect": false, "explanation": "The encomienda system was about labor and tribute extraction from Indigenous populations, not specifically about silk trade." },
-      { "label": "D", "text": "A system of paid, voluntary labor with full worker rights", "isCorrect": false, "explanation": "This system involved coerced, not voluntary, labor, and did not grant meaningful rights to those subjected to it." }
+      { "label": "A", "text": "A system granting colonizers the right to demand labor and tribute from Native people", "isCorrect": true, "explanation": "The encomienda system granted Spanish colonizers the right to extract forced labor and tribute from Indigenous people in a given area." },
+      { "label": "B", "text": "A democratic voting system in which colonists elected their own governors and judges", "isCorrect": false, "explanation": "The encomienda was a coercive labor/tribute system, not a democratic institution." },
+      { "label": "C", "text": "A trade agreement exclusively about silk between Spain and the Ming dynasty of China", "isCorrect": false, "explanation": "The encomienda system was about labor and tribute extraction from Indigenous populations, not specifically about silk trade." },
+      { "label": "D", "text": "A system of paid, voluntary labor with full worker rights, written contracts and unions", "isCorrect": false, "explanation": "This system involved coerced, not voluntary, labor, and did not grant meaningful rights to those subjected to it." }
     ],
     "explanation": "The encomienda system granted Spanish colonizers the right to demand forced labor and tribute from Indigenous populations.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
@@ -438,10 +438,10 @@
     "difficulty": "medium",
     "stem": "Why did the demand for enslaved African labor increase in the Americas over time, especially as Indigenous labor sources declined?",
     "choices": [
-      { "label": "A", "text": "There was no relationship between Indigenous population decline and African slave labor demand", "isCorrect": false, "explanation": "Historians have identified a very clear, well-documented relationship between these factors." },
-      { "label": "B", "text": "Massive Indigenous population decline (from disease and exploitation) combined with growing demand for plantation labor led European colonizers to increasingly rely on forced African labor", "isCorrect": true, "explanation": "As Indigenous labor sources collapsed, European colonizers increasingly turned to forced African labor to meet growing plantation demands." },
-      { "label": "C", "text": "European colonizers had no need for labor of any kind", "isCorrect": false, "explanation": "European colonizers had a very strong ongoing demand for labor to work plantations and mines." },
-      { "label": "D", "text": "African labor was entirely voluntary and had nothing to do with Indigenous population changes", "isCorrect": false, "explanation": "This labor was coerced, not voluntary, and was directly related to the labor shortage caused by Indigenous population decline." }
+      { "label": "A", "text": "There was no relationship between Indigenous population decline and African slave labor demand, which grew independently", "isCorrect": false, "explanation": "Historians have identified a very clear, well-documented relationship between these factors." },
+      { "label": "B", "text": "Indigenous population decline plus growing plantation demand led colonizers to rely more on forced African labor", "isCorrect": true, "explanation": "As Indigenous labor sources collapsed, European colonizers increasingly turned to forced African labor to meet growing plantation demands." },
+      { "label": "C", "text": "European colonizers had no need for labor of any kind, since steam-powered machines did all of the plantation work", "isCorrect": false, "explanation": "European colonizers had a very strong ongoing demand for labor to work plantations and mines." },
+      { "label": "D", "text": "African labor was entirely voluntary and had nothing to do with Indigenous population changes or plantations", "isCorrect": false, "explanation": "This labor was coerced, not voluntary, and was directly related to the labor shortage caused by Indigenous population decline." }
     ],
     "explanation": "Massive Indigenous population decline combined with growing plantation labor demand led colonizers to increasingly rely on forced African labor.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
@@ -454,10 +454,10 @@
     "difficulty": "medium",
     "stem": "What long-term demographic and cultural consequence did the transatlantic slave trade have on the Americas?",
     "choices": [
-      { "label": "A", "text": "No lasting demographic or cultural impact", "isCorrect": false, "explanation": "The transatlantic slave trade had profound, lasting demographic and cultural consequences across the Americas." },
-      { "label": "B", "text": "It created large populations of African descent throughout the Americas, whose cultural, culinary, musical, and religious traditions significantly shaped the societies they lived in", "isCorrect": true, "explanation": "African diasporic communities profoundly shaped the culture, cuisine, music, and religion of societies throughout the Americas." },
-      { "label": "C", "text": "It had impact only in Africa, not in the Americas", "isCorrect": false, "explanation": "The impact was very much felt in the Americas as well as Africa, not exclusively in one region." },
-      { "label": "D", "text": "It resulted in the complete disappearance of African cultural influence", "isCorrect": false, "explanation": "African cultural influence persisted and significantly shaped societies throughout the Americas, rather than disappearing." }
+      { "label": "A", "text": "No lasting demographic or cultural impact, since nearly all enslaved Africans were soon freed and returned to Africa", "isCorrect": false, "explanation": "The transatlantic slave trade had profound, lasting demographic and cultural consequences across the Americas." },
+      { "label": "B", "text": "It created large populations of African descent in the Americas, whose cultural and religious traditions shaped society", "isCorrect": true, "explanation": "African diasporic communities profoundly shaped the culture, cuisine, music, and religion of societies throughout the Americas." },
+      { "label": "C", "text": "It had impact only in Africa, not in the Americas, where enslaved people left almost no descendants or traditions", "isCorrect": false, "explanation": "The impact was very much felt in the Americas as well as Africa, not exclusively in one region." },
+      { "label": "D", "text": "It resulted in the complete disappearance of African cultural influence in the Americas within a single generation", "isCorrect": false, "explanation": "African cultural influence persisted and significantly shaped societies throughout the Americas, rather than disappearing." }
     ],
     "explanation": "The transatlantic slave trade created large African-descended populations throughout the Americas whose traditions profoundly shaped these societies.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "How does the transatlantic slave trade fit into the broader concept of the \"Columbian Exchange\" and transoceanic interconnection during this era?",
     "choices": [
-      { "label": "A", "text": "It was completely unrelated to the Columbian Exchange", "isCorrect": false, "explanation": "The slave trade is very much considered part of this broader era of transoceanic connection and exchange." },
-      { "label": "B", "text": "It represented a devastating, forced component of the broader web of transoceanic connections and exchanges (alongside crops, diseases, and voluntary migration) linking Africa, Europe, and the Americas", "isCorrect": true, "explanation": "The forced migration of enslaved Africans was a devastating but integral part of the broader transoceanic exchange linking these three regions." },
-      { "label": "C", "text": "It only involved the exchange of goods, never people", "isCorrect": false, "explanation": "The transatlantic slave trade specifically involved the forced transport of people, not merely goods." },
-      { "label": "D", "text": "It happened in a completely separate time period from other transoceanic interconnections", "isCorrect": false, "explanation": "The slave trade developed concurrently with and as part of this broader era of transoceanic interconnection, not in a separate time period." }
+      { "label": "A", "text": "It was completely unrelated to the Columbian Exchange, since it involved only ports in Africa and Asia in a separate system", "isCorrect": false, "explanation": "The slave trade is very much considered part of this broader era of transoceanic connection and exchange." },
+      { "label": "B", "text": "It was a forced, devastating component of the web of transoceanic exchanges linking Africa, Europe and the Americas", "isCorrect": true, "explanation": "The forced migration of enslaved Africans was a devastating but integral part of the broader transoceanic exchange linking these three regions." },
+      { "label": "C", "text": "It only involved the exchange of goods, never people, and was organized entirely by African merchants and kings", "isCorrect": false, "explanation": "The transatlantic slave trade specifically involved the forced transport of people, not merely goods." },
+      { "label": "D", "text": "It happened in a completely separate time period from the other transoceanic interconnections, several centuries later", "isCorrect": false, "explanation": "The slave trade developed concurrently with and as part of this broader era of transoceanic interconnection, not in a separate time period." }
     ],
     "explanation": "The transatlantic slave trade was a devastating, forced component of the broader web of transoceanic exchange linking Africa, Europe, and the Americas.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/labor-systems-and-slave-trade",

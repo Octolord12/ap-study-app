@@ -8,25 +8,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The alliances were created by the League of Nations to keep peace.",
+        "text": "The alliances were created by the League of Nations to keep the peace, and they prevented each government from mobilizing.",
         "isCorrect": false,
         "explanation": "The League of Nations was created after the war."
       },
       {
         "label": "B",
-        "text": "The alliances prevented conflict by making every state friendly with every other.",
+        "text": "The alliances prevented conflict by making every state friendly with every other, so no government had reason to arm or mobilize.",
         "isCorrect": false,
         "explanation": "The system divided Europe into opposing blocs and increased the chance that a local crisis would spread."
       },
       {
         "label": "C",
-        "text": "Germany and France were allies against Russia from the beginning.",
+        "text": "Germany and France were allies against Russia from the beginning of the crisis, and Britain stayed neutral until the war ended in 1918.",
         "isCorrect": false,
         "explanation": "Germany and France were on opposite sides."
       },
       {
         "label": "D",
-        "text": "Rival alliances committed the major powers to support their partners, so a regional crisis after the assassination in Sarajevo expanded into a general war.",
+        "text": "Rival alliances committed the major powers to support their partners, so a regional crisis after the Sarajevo assassination grew into a general war.",
         "isCorrect": true,
         "explanation": "Austria-Hungary's conflict with Serbia drew in Russia, Germany, France and Britain through alliance obligations and mobilization plans."
       }
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Neither army had artillery, so both relied on rifles alone.",
+        "text": "Neither army had artillery, so both relied on rifles alone and on massed infantry charges across open fields.",
         "isCorrect": false,
         "explanation": "Artillery was extensively used on the Western Front."
       },
       {
         "label": "B",
-        "text": "Machine guns, barbed wire and artillery gave defenders a major advantage, so frontal assaults were extremely costly and produced trench warfare.",
+        "text": "Machine guns, barbed wire and artillery favored defenders, so frontal assaults were extremely costly and produced trench warfare.",
         "isCorrect": true,
         "explanation": "New weapons favored defense, and neither side could achieve a breakthrough without heavy casualties."
       },
       {
         "label": "C",
-        "text": "The war was ended by an armistice that was in effect in 1916.",
+        "text": "The war was ended by an armistice that was in effect in 1916, and soldiers stayed in the trenches as guards.",
         "isCorrect": false,
         "explanation": "The armistice came in November 1918."
       },
       {
         "label": "D",
-        "text": "Cavalry charges had proven to be the decisive weapon for attackers.",
+        "text": "Cavalry charges had proven to be the decisive weapon for attackers, and the generals relied on them to break the line.",
         "isCorrect": false,
         "explanation": "Cavalry was largely ineffective against machine guns and artillery."
       }
@@ -80,25 +80,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Widespread discontent with Russia's costly war, shortages of food, and peasants' hunger for land under the Provisional Government.",
+        "text": "Widespread discontent with the costly war, shortages of food, and peasants' hunger for land under the Provisional Government.",
         "isCorrect": true,
         "explanation": "The slogan addressed the main grievances of soldiers, workers and peasants."
       },
       {
         "label": "B",
-        "text": "A desire to continue the war with greater effort.",
+        "text": "A desire to continue the war with greater effort until the Central Powers were defeated, which most soldiers and workers wanted by 1917.",
         "isCorrect": false,
         "explanation": "The slogan called for peace."
       },
       {
         "label": "C",
-        "text": "Support for the restoration of the tsar.",
+        "text": "Support for the restoration of the tsar, whom many Russians hoped would return from exile.",
         "isCorrect": false,
         "explanation": "The slogan promised change after the tsar's fall."
       },
       {
         "label": "D",
-        "text": "Gratitude for German help with the harvest.",
+        "text": "Gratitude for German help with the harvest, which had been organized by a treaty with the Provisional Government.",
         "isCorrect": false,
         "explanation": "Germany was an enemy and had not helped the harvest."
       }
@@ -116,25 +116,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Governments reduced their control over the economy in order to promote free enterprise.",
+        "text": "Governments reduced their control over the economy in order to promote free enterprise, and ended rationing, censorship and military conscription for the duration of the war.",
         "isCorrect": false,
         "explanation": "Governments expanded control during the war."
       },
       {
         "label": "B",
-        "text": "Civilians were separated from the war and their lives were unchanged.",
+        "text": "Civilians were separated from the war and their daily lives were unchanged by the fighting abroad.",
         "isCorrect": false,
         "explanation": "Civilians were deeply affected by shortages, labor demands and sometimes direct attack."
       },
       {
         "label": "C",
-        "text": "Industries shut down because they were not needed for the war.",
+        "text": "Industries shut down because they were not needed for the war, and most workers were sent home.",
         "isCorrect": false,
         "explanation": "Industries expanded to produce war materials."
       },
       {
         "label": "D",
-        "text": "Governments mobilized economies and populations by rationing, controlling industry and using propaganda, and women took jobs in factories and other work.",
+        "text": "Governments mobilized economies and populations through rationing, controlling industry and propaganda, and women took jobs in factories.",
         "isCorrect": true,
         "explanation": "Total war involved the whole society and increased the power of the state."
       }
@@ -158,19 +158,19 @@
       },
       {
         "label": "B",
-        "text": "The immediate entry of the United States into the League of Nations.",
+        "text": "The immediate entry of the United States into the League of Nations as a founding member, which strengthened the treaty.",
         "isCorrect": false,
         "explanation": "The United States Senate refused to ratify the treaty and did not join the League."
       },
       {
         "label": "C",
-        "text": "German gratitude toward the Allies for the generous terms.",
+        "text": "German gratitude toward the Allies for the generous terms of the settlement.",
         "isCorrect": false,
         "explanation": "Many Germans felt the terms were harsh and unfair."
       },
       {
         "label": "D",
-        "text": "The restoration of the German monarchy.",
+        "text": "The restoration of the German monarchy under the Kaiser's grandson.",
         "isCorrect": false,
         "explanation": "The German monarchy had fallen at the end of the war."
       }
@@ -188,25 +188,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Interconnected economies, including international trade, loans and investment, meant that the collapse of the American economy and credit spread to other countries.",
+        "text": "Interconnected economies, with international trade, loans and investment, meant the collapse of the American economy and credit spread to other countries.",
         "isCorrect": true,
         "explanation": "The financial and trade links among industrial economies carried the crisis across borders."
       },
       {
         "label": "B",
-        "text": "The collapse of the Soviet Union in 1929.",
+        "text": "The collapse of the Soviet Union in 1929, which disrupted trade with every European power.",
         "isCorrect": false,
         "explanation": "The Soviet Union existed until 1991."
       },
       {
         "label": "C",
-        "text": "Only the United States was affected, because other economies were isolated.",
+        "text": "Only the United States was affected by the crash, because other economies were isolated from American banks, trade and lending and kept their own currencies.",
         "isCorrect": false,
         "explanation": "Many countries suffered high unemployment and falling trade."
       },
       {
         "label": "D",
-        "text": "A sudden discovery of new gold supplies raised prices everywhere.",
+        "text": "A sudden discovery of new gold supplies raised prices everywhere and led to a wave of speculation.",
         "isCorrect": false,
         "explanation": "The Depression was marked by falling prices and production."
       }
@@ -224,25 +224,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "They offered a democratic socialist program based on international cooperation.",
+        "text": "They offered a democratic socialist program based on international cooperation, free elections, and the protection of minority rights in every country.",
         "isCorrect": false,
         "explanation": "Fascists rejected democracy and internationalism."
       },
       {
         "label": "B",
-        "text": "They opposed all forms of nationalism.",
+        "text": "They opposed all forms of nationalism and wanted to dissolve the existing states of Europe.",
         "isCorrect": false,
         "explanation": "Nationalism was central to fascism."
       },
       {
         "label": "C",
-        "text": "They promised national revival, order and economic recovery in societies shaken by wartime defeat or disappointment, depression and fear of communism, and they used propaganda and violence.",
+        "text": "They promised national revival, order and recovery in societies shaken by defeat, depression and fear of communism, and they used propaganda and violence.",
         "isCorrect": true,
         "explanation": "Fascists appealed to nationalism and to people seeking strong leadership in a period of crisis."
       },
       {
         "label": "D",
-        "text": "They advocated that the League of Nations should govern the world.",
+        "text": "They advocated that the League of Nations should govern the world through a single international army.",
         "isCorrect": false,
         "explanation": "Fascist regimes opposed and ignored the League."
       }
@@ -260,7 +260,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "focus the economy on consumer goods rather than heavy industry.",
+        "text": "focus the economy on consumer goods rather than heavy industry, so that workers could buy more clothing, food and household goods.",
         "isCorrect": false,
         "explanation": "The Five-Year Plans emphasized heavy industry and military goods."
       },
@@ -272,13 +272,13 @@
       },
       {
         "label": "C",
-        "text": "reduce state control and encourage small business.",
+        "text": "reduce state control and encourage small business and foreign investment in the villages.",
         "isCorrect": false,
         "explanation": "State control increased."
       },
       {
         "label": "D",
-        "text": "restore private farms and a market economy.",
+        "text": "restore private farms and a market economy to feed the cities.",
         "isCorrect": false,
         "explanation": "The policies abolished private farms and market incentives."
       }
@@ -302,19 +302,19 @@
       },
       {
         "label": "B",
-        "text": "It was an armed insurrection against the British army.",
+        "text": "It was an armed insurrection against the British army, aimed at seizing the arsenals of the empire.",
         "isCorrect": false,
         "explanation": "The passage rejects violence."
       },
       {
         "label": "C",
-        "text": "It was an alliance with Japan against the British.",
+        "text": "It was an alliance with Japan against the British, signed before the outbreak of the war.",
         "isCorrect": false,
         "explanation": "The passage does not mention any alliance."
       },
       {
         "label": "D",
-        "text": "It was a campaign to encourage emigration from India.",
+        "text": "It was a campaign to encourage emigration from India to colonies elsewhere in the British Empire.",
         "isCorrect": false,
         "explanation": "The passage concerns protest within India."
       }
@@ -332,25 +332,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Britain and France formed a military alliance to invade Germany immediately.",
+        "text": "Britain and France formed a military alliance with the Soviet Union to invade Germany immediately after the Anschluss, forcing Hitler to retreat.",
         "isCorrect": false,
         "explanation": "They avoided military confrontation until Germany invaded Poland in 1939."
       },
       {
         "label": "B",
-        "text": "Britain and France supported Germany's war against Poland.",
+        "text": "Britain and France openly supported Germany's war against Poland and sent it arms and supplies.",
         "isCorrect": false,
         "explanation": "Britain and France declared war on Germany after the invasion of Poland."
       },
       {
         "label": "C",
-        "text": "Britain and France enforced strict military sanctions through the League of Nations.",
+        "text": "Britain and France enforced strict military sanctions through the League of Nations, which halted every German advance.",
         "isCorrect": false,
         "explanation": "The League's sanctions were weak and appeasement involved concessions."
       },
       {
         "label": "D",
-        "text": "Britain and France made concessions to Hitler, such as accepting the German takeover of the Sudetenland at Munich in 1938, in the hope of avoiding war.",
+        "text": "Britain and France made concessions to Hitler, such as accepting the German takeover of the Sudetenland at Munich in 1938, hoping to avoid war.",
         "isCorrect": true,
         "explanation": "Appeasement was an attempt to satisfy Hitler's demands to preserve peace, and it was not successful."
       }
@@ -368,25 +368,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Japan was a member of the Allies and was defending against Germany.",
+        "text": "Japan was a member of the Allies and was defending its Pacific territories against a German invasion fleet.",
         "isCorrect": false,
         "explanation": "Japan joined the Axis powers."
       },
       {
         "label": "B",
-        "text": "Japan was the colony of a European power seeking independence.",
+        "text": "Japan was a colony of a European power and was seeking independence by attacking its mainland neighbors.",
         "isCorrect": false,
         "explanation": "Japan was an independent imperial power."
       },
       {
         "label": "C",
-        "text": "Japan was fulfilling an obligation to the League of Nations to protect China.",
+        "text": "Japan was fulfilling an obligation to the League of Nations to protect China from warlords, and withdrew its forces from Manchuria as soon as order was restored.",
         "isCorrect": false,
         "explanation": "The League criticized Japan's actions in Manchuria, and Japan left the League."
       },
       {
         "label": "D",
-        "text": "Japanese leaders, increasingly influenced by the military, sought raw materials, markets and regional dominance, and invaded Manchuria in 1931 and China in 1937.",
+        "text": "Japanese leaders, increasingly influenced by the military, sought raw materials, markets and regional dominance, invading Manchuria in 1931 and China in 1937.",
         "isCorrect": true,
         "explanation": "Japan's expansion was driven by resource needs, nationalism and militarist influence."
       }
@@ -404,13 +404,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "It was carried out by the Soviet Union against its own population.",
+        "text": "It was carried out by the Soviet Union against its own population during the 1930s.",
         "isCorrect": false,
         "explanation": "The Holocaust was carried out by Nazi Germany and its collaborators."
       },
       {
         "label": "B",
-        "text": "It was directed only against soldiers in wartime.",
+        "text": "It was directed only against soldiers in wartime, and followed the rules of war on prisoners.",
         "isCorrect": false,
         "explanation": "The victims were mostly civilians."
       },
@@ -422,7 +422,7 @@
       },
       {
         "label": "D",
-        "text": "It was a spontaneous series of riots without government involvement.",
+        "text": "It was a spontaneous series of riots without any government involvement, led by local mobs in a handful of towns and ending within a few weeks.",
         "isCorrect": false,
         "explanation": "The persecution was planned and carried out by the state."
       }
@@ -440,7 +440,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "The end of the war in Europe.",
+        "text": "The end of the war in Europe, which had already ended in May of that year.",
         "isCorrect": false,
         "explanation": "The war in Europe had ended in May 1945."
       },
@@ -452,13 +452,13 @@
       },
       {
         "label": "C",
-        "text": "The beginning of World War II.",
+        "text": "The beginning of World War II, in the same year as the invasion of Poland.",
         "isCorrect": false,
         "explanation": "The war began in 1939."
       },
       {
         "label": "D",
-        "text": "The immediate surrender of the Soviet Union.",
+        "text": "The immediate surrender of the Soviet Union, which had been fighting Japan in Manchuria and Korea since August.",
         "isCorrect": false,
         "explanation": "The Soviet Union was an Allied power."
       }
@@ -476,25 +476,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A Russian campaign against the Ottoman people.",
+        "text": "A Russian campaign against the Ottoman people, carried out by the Tsar's armies on the Caucasus front.",
         "isCorrect": false,
         "explanation": "It was carried out by the Ottoman government against Armenians."
       },
       {
         "label": "B",
-        "text": "A battle between the Ottoman and Russian armies.",
+        "text": "A battle between the Ottoman and Russian armies, fought on the Caucasus front during the winter of 1915.",
         "isCorrect": false,
         "explanation": "The genocide targeted a civilian population."
       },
       {
         "label": "C",
-        "text": "A peaceful population exchange agreed by the Ottoman and Armenian leaders.",
+        "text": "A peaceful population exchange agreed by the Ottoman and Armenian leaders, with compensation for lost property and safe passage for all.",
         "isCorrect": false,
         "explanation": "It was a campaign of forced deportation and killing."
       },
       {
         "label": "D",
-        "text": "The deportation and mass killing of Armenians by the Ottoman government during World War I, an example of mass violence linked to nationalism and wartime fears.",
+        "text": "The deportation and mass killing of Armenians by the Ottoman government during World War I, linked to nationalism and wartime fears.",
         "isCorrect": true,
         "explanation": "Ottoman authorities deported and killed large numbers of Armenians in 1915 and afterwards."
       }
@@ -512,25 +512,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "a system in which the United States governed the former German colonies in Africa.",
+        "text": "a system in which the United States governed the former German colonies in Africa as mandates, under a charter from the Senate that lasted until the end of the Second World War.",
         "isCorrect": false,
         "explanation": "The mandatory powers were mainly Britain, France and Japan."
       },
       {
         "label": "B",
-        "text": "a plan for the former colonies to rejoin the German Empire.",
+        "text": "a plan for the former colonies to rejoin the German Empire, with the consent of the League of Nations.",
         "isCorrect": false,
         "explanation": "Germany lost its colonies in the peace settlement."
       },
       {
         "label": "C",
-        "text": "an immediate grant of independence to all former colonies of the defeated powers.",
+        "text": "an immediate grant of independence to all former colonies of the defeated powers, with free elections held under League supervision in every territory.",
         "isCorrect": false,
         "explanation": "Most mandated territories were not independent, and nationalists continued their struggle."
       },
       {
         "label": "D",
-        "text": "the League of Nations' assignment of former Ottoman and German territories to Britain and France and other powers, which governed them as mandates while local nationalists sought independence.",
+        "text": "the League of Nations' assignment of former Ottoman and German territories to Britain, France and other powers, which governed them as mandates while nationalists sought independence.",
         "isCorrect": true,
         "explanation": "The mandates were a new form of imperial control, justified as preparation for self-government."
       }

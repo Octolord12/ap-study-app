@@ -6,10 +6,10 @@
     "difficulty": "easy",
     "stem": "What were the Silk Roads?",
     "choices": [
-      { "label": "A", "text": "A single paved road connecting China to Rome", "isCorrect": false, "explanation": "It wasn't a single road but a network of many interconnected routes." },
-      { "label": "B", "text": "A network of overland and maritime trade routes connecting East Asia, Central Asia, the Middle East, and Europe", "isCorrect": true, "explanation": "The Silk Roads were a web of routes linking distant regions of Afro-Eurasia for trade and exchange." },
-      { "label": "C", "text": "A canal system built by the Mongols", "isCorrect": false, "explanation": "It wasn't a canal system; the Mongols later helped secure overland routes but didn't build them as canals." },
-      { "label": "D", "text": "A religious pilgrimage route exclusively for Buddhists", "isCorrect": false, "explanation": "Buddhism did spread along these routes, but they weren't exclusively religious pilgrimage routes; they primarily carried trade." }
+      { "label": "A", "text": "A single paved imperial road connecting China to Rome, with relay stations for official couriers", "isCorrect": false, "explanation": "It wasn't a single road but a network of many interconnected routes." },
+      { "label": "B", "text": "A network of trade routes by land and sea linking East Asia, the Middle East and Europe", "isCorrect": true, "explanation": "The Silk Roads were a web of routes linking distant regions of Afro-Eurasia for trade and exchange." },
+      { "label": "C", "text": "A canal system built by the Mongols to carry grain from southern China to their capital", "isCorrect": false, "explanation": "It wasn't a canal system; the Mongols later helped secure overland routes but didn't build them as canals." },
+      { "label": "D", "text": "A religious pilgrimage route used exclusively by Buddhist monks traveling between China and India", "isCorrect": false, "explanation": "Buddhism did spread along these routes, but they weren't exclusively religious pilgrimage routes; they primarily carried trade." }
     ],
     "explanation": "The Silk Roads were a network of overland and maritime routes linking East Asia, Central Asia, the Middle East, and Europe.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/silk-roads",
@@ -40,8 +40,8 @@
     "choices": [
       { "label": "A", "text": "Nothing besides physical goods ever spread along these routes", "isCorrect": false, "explanation": "These routes were significant conduits for far more than just goods." },
       { "label": "B", "text": "Religions, technologies, and diseases (such as the bubonic plague)", "isCorrect": true, "explanation": "The Silk Roads carried religious ideas, technological innovations, and, unfortunately, disease alongside trade goods." },
-      { "label": "C", "text": "Only military technology", "isCorrect": false, "explanation": "Military technology did spread, but this undersells the much broader range of things exchanged, including religion and disease." },
-      { "label": "D", "text": "Only currency", "isCorrect": false, "explanation": "Currency exchange happened, but this is too narrow given the wide range of things that spread." }
+      { "label": "C", "text": "Only military technology and weapons used by Mongol cavalry armies", "isCorrect": false, "explanation": "Military technology did spread, but this undersells the much broader range of things exchanged, including religion and disease." },
+      { "label": "D", "text": "Only gold and silver currency used by merchants to settle debts", "isCorrect": false, "explanation": "Currency exchange happened, but this is too narrow given the wide range of things that spread." }
     ],
     "explanation": "Religions, technologies, and diseases all spread alongside trade goods along the Silk Roads.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/silk-roads",
@@ -54,10 +54,10 @@
     "difficulty": "hard",
     "stem": "How did the Mongol conquests of the 13th century affect Silk Road trade?",
     "choices": [
-      { "label": "A", "text": "They completely destroyed all trade along the routes permanently", "isCorrect": false, "explanation": "Mongol conquests were often violent, but the resulting unified control ultimately increased trade, rather than destroying it permanently." },
-      { "label": "B", "text": "By unifying much of Eurasia under Mongol control, they increased safety and facilitated greater trade and exchange along the routes (\"Pax Mongolica\")", "isCorrect": true, "explanation": "Mongol control over vast Eurasian territory reduced banditry and political fragmentation, increasing the safety and volume of trade." },
-      { "label": "C", "text": "They had no effect on trade whatsoever", "isCorrect": false, "explanation": "The Mongol conquests had a very significant, well-documented effect on trade patterns." },
-      { "label": "D", "text": "They redirected all trade exclusively to maritime routes", "isCorrect": false, "explanation": "Overland Silk Road trade continued and even flourished under Mongol control; it wasn't redirected away entirely." }
+      { "label": "A", "text": "They completely destroyed all trade along the routes permanently, ending all contact between East and West", "isCorrect": false, "explanation": "Mongol conquests were often violent, but the resulting unified control ultimately increased trade, rather than destroying it permanently." },
+      { "label": "B", "text": "By unifying much of Eurasia under Mongol control, they made the routes safer and increased trade", "isCorrect": true, "explanation": "Mongol control over vast Eurasian territory reduced banditry and political fragmentation, increasing the safety and volume of trade." },
+      { "label": "C", "text": "They had no effect on trade whatsoever, since merchants had already used the routes safely for centuries", "isCorrect": false, "explanation": "The Mongol conquests had a very significant, well-documented effect on trade patterns." },
+      { "label": "D", "text": "They redirected all trade exclusively to maritime routes, leaving the overland roads empty and abandoned", "isCorrect": false, "explanation": "Overland Silk Road trade continued and even flourished under Mongol control; it wasn't redirected away entirely." }
     ],
     "explanation": "Mongol unification of Eurasia increased trade safety and volume along the Silk Roads, a period known as the Pax Mongolica.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/silk-roads",
@@ -70,10 +70,10 @@
     "difficulty": "medium",
     "stem": "What was one significant cultural consequence of the Silk Roads' exchange of ideas?",
     "choices": [
-      { "label": "A", "text": "The spread of Buddhism from South Asia into Central and East Asia", "isCorrect": true, "explanation": "Buddhism traveled along the Silk Roads from its South Asian origins into Central Asia and China." },
-      { "label": "B", "text": "The end of all religious diversity across Eurasia", "isCorrect": false, "explanation": "The Silk Roads facilitated the spread and interaction of multiple religions, increasing religious diversity, not ending it." },
-      { "label": "C", "text": "The disappearance of local artistic traditions everywhere", "isCorrect": false, "explanation": "Local artistic traditions often blended with new influences rather than disappearing." },
-      { "label": "D", "text": "The isolation of China from the rest of Eurasia", "isCorrect": false, "explanation": "The Silk Roads connected, rather than isolated, China with the rest of Eurasia." }
+      { "label": "A", "text": "The spread of Buddhism from South Asia into Central Asia, China and East Asia", "isCorrect": true, "explanation": "Buddhism traveled along the Silk Roads from its South Asian origins into Central Asia and China." },
+      { "label": "B", "text": "The end of all religious diversity across Eurasia as one faith replaced the rest", "isCorrect": false, "explanation": "The Silk Roads facilitated the spread and interaction of multiple religions, increasing religious diversity, not ending it." },
+      { "label": "C", "text": "The disappearance of local artistic traditions everywhere as foreign styles took over", "isCorrect": false, "explanation": "Local artistic traditions often blended with new influences rather than disappearing." },
+      { "label": "D", "text": "The isolation of China from the rest of Eurasia behind a wall of closed borders", "isCorrect": false, "explanation": "The Silk Roads connected, rather than isolated, China with the rest of Eurasia." }
     ],
     "explanation": "Buddhism spread from South Asia into Central and East Asia along the Silk Roads, a major cultural consequence of this exchange.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/silk-roads",
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "Why were oasis towns in Central Asia (such as Samarkand) important to Silk Road trade?",
     "choices": [
-      { "label": "A", "text": "They had no role in trade at all", "isCorrect": false, "explanation": "Oasis towns played a crucial, well-documented role in facilitating trade across difficult terrain." },
-      { "label": "B", "text": "They served as essential rest stops and marketplaces for merchants and caravans crossing arid regions", "isCorrect": true, "explanation": "Oasis towns provided water, supplies, and marketplaces for caravans making long desert crossings." },
-      { "label": "C", "text": "They were exclusively religious centers with no economic activity", "isCorrect": false, "explanation": "Some oasis towns did have religious significance, but their primary Silk Road role was as commercial waypoints." },
-      { "label": "D", "text": "They only traded with local farmers and never with distant merchants", "isCorrect": false, "explanation": "Oasis towns were connected to distant, long-range trade, not just local farming exchange." }
+      { "label": "A", "text": "They had no role in trade at all because caravans avoided the oases and crossed the desert", "isCorrect": false, "explanation": "Oasis towns played a crucial, well-documented role in facilitating trade across difficult terrain." },
+      { "label": "B", "text": "They served as rest stops and marketplaces for merchants and caravans crossing arid regions", "isCorrect": true, "explanation": "Oasis towns provided water, supplies, and marketplaces for caravans making long desert crossings." },
+      { "label": "C", "text": "They were exclusively religious centers with no economic activity, serving only pilgrims", "isCorrect": false, "explanation": "Some oasis towns did have religious significance, but their primary Silk Road role was as commercial waypoints." },
+      { "label": "D", "text": "They only traded with local farmers and never with distant merchants or caravan travelers", "isCorrect": false, "explanation": "Oasis towns were connected to distant, long-range trade, not just local farming exchange." }
     ],
     "explanation": "Oasis towns like Samarkand served as vital rest stops and marketplaces for caravans crossing Central Asia's arid terrain.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/silk-roads",
@@ -118,9 +118,9 @@
     "difficulty": "medium",
     "stem": "What military/tactical advantages helped the Mongols conquer such a vast territory?",
     "choices": [
-      { "label": "A", "text": "Massive naval fleets", "isCorrect": false, "explanation": "The Mongols were a land-based, steppe cavalry power; naval fleets were not their primary military strength." },
+      { "label": "A", "text": "Massive naval fleets that dominated the seas around Asia and Europe", "isCorrect": false, "explanation": "The Mongols were a land-based, steppe cavalry power; naval fleets were not their primary military strength." },
       { "label": "B", "text": "Highly skilled, mobile cavalry archers and effective siege tactics", "isCorrect": true, "explanation": "Mongol horseback archers combined speed and mobility with effective tactics for besieging fortified cities." },
-      { "label": "C", "text": "Exclusively defensive fortifications", "isCorrect": false, "explanation": "The Mongols were famous for aggressive, offensive campaigns, not defensive fortifications." },
+      { "label": "C", "text": "Exclusively defensive fortifications built along their frontier borders", "isCorrect": false, "explanation": "The Mongols were famous for aggressive, offensive campaigns, not defensive fortifications." },
       { "label": "D", "text": "Alliances with every neighboring civilization, avoiding all conflict", "isCorrect": false, "explanation": "The Mongols conquered vast territories through military conquest, not by avoiding conflict through universal alliances." }
     ],
     "explanation": "Mobile cavalry archers and effective siege tactics were key to the Mongols' rapid, wide-ranging conquests.",
@@ -150,10 +150,10 @@
     "difficulty": "hard",
     "stem": "How did the Mongol Empire's vast size and connectivity contribute to the spread of the Black Death (bubonic plague) to Europe?",
     "choices": [
-      { "label": "A", "text": "The Mongols had no connection to trade routes at all", "isCorrect": false, "explanation": "The Mongol Empire was deeply connected to and facilitated trade routes across Eurasia." },
-      { "label": "B", "text": "Mongol-facilitated overland trade routes allowed disease to spread more easily between Asia and Europe", "isCorrect": true, "explanation": "Increased trade and travel across Mongol territory allowed the plague to spread rapidly from Asia toward Europe." },
-      { "label": "C", "text": "The plague originated in Europe and spread to Asia via Mongol routes", "isCorrect": false, "explanation": "Historical evidence points to the plague originating in Asia and spreading westward, not the reverse." },
-      { "label": "D", "text": "The Mongol Empire actively worked to prevent any disease spread", "isCorrect": false, "explanation": "The Mongols did not have the means or intention to prevent disease spread; trade connectivity inadvertently facilitated it." }
+      { "label": "A", "text": "The Mongols had no connection to trade routes at all and campaigned only in Central Asia", "isCorrect": false, "explanation": "The Mongol Empire was deeply connected to and facilitated trade routes across Eurasia." },
+      { "label": "B", "text": "Mongol-protected overland trade routes let disease spread more easily between Asia and Europe", "isCorrect": true, "explanation": "Increased trade and travel across Mongol territory allowed the plague to spread rapidly from Asia toward Europe." },
+      { "label": "C", "text": "The plague originated in Europe and spread to Asia along routes controlled by the Mongols", "isCorrect": false, "explanation": "Historical evidence points to the plague originating in Asia and spreading westward, not the reverse." },
+      { "label": "D", "text": "The Mongol Empire actively worked to prevent any disease spread by closing its borders to travelers", "isCorrect": false, "explanation": "The Mongols did not have the means or intention to prevent disease spread; trade connectivity inadvertently facilitated it." }
     ],
     "explanation": "Mongol-facilitated trade routes connecting Asia and Europe inadvertently helped the Black Death spread westward.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/mongol-empire",
@@ -166,10 +166,10 @@
     "difficulty": "medium",
     "stem": "What was a notable feature of Mongol rule over conquered territories, in terms of religious policy?",
     "choices": [
-      { "label": "A", "text": "Forced conversion of all subjects to Mongol shamanism", "isCorrect": false, "explanation": "The Mongols did not force their own traditional beliefs onto conquered populations." },
-      { "label": "B", "text": "General religious tolerance, allowing conquered peoples to continue practicing their own religions", "isCorrect": true, "explanation": "Mongol rulers generally permitted conquered populations to continue their existing religious practices." },
-      { "label": "C", "text": "Complete destruction of all religious buildings and practices", "isCorrect": false, "explanation": "Some destruction occurred during conquest, but ongoing Mongol rule was generally characterized by tolerance." },
-      { "label": "D", "text": "Mandatory conversion to Christianity", "isCorrect": false, "explanation": "Christianity was not the state-mandated religion for Mongol-ruled territories." }
+      { "label": "A", "text": "Forced conversion of all conquered subjects to Mongol shamanism under threat of execution", "isCorrect": false, "explanation": "The Mongols did not force their own traditional beliefs onto conquered populations." },
+      { "label": "B", "text": "General religious tolerance, letting conquered peoples keep practicing their religions", "isCorrect": true, "explanation": "Mongol rulers generally permitted conquered populations to continue their existing religious practices." },
+      { "label": "C", "text": "Complete destruction of all religious buildings and the banning of every religious practice", "isCorrect": false, "explanation": "Some destruction occurred during conquest, but ongoing Mongol rule was generally characterized by tolerance." },
+      { "label": "D", "text": "Mandatory conversion to Christianity under the authority of European bishops sent to the court", "isCorrect": false, "explanation": "Christianity was not the state-mandated religion for Mongol-ruled territories." }
     ],
     "explanation": "Mongol rulers were generally religiously tolerant, allowing conquered populations to continue practicing their own faiths.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/mongol-empire",
@@ -182,10 +182,10 @@
     "difficulty": "medium",
     "stem": "How did the division of the Mongol Empire after Genghis Khan's death affect its governance?",
     "choices": [
-      { "label": "A", "text": "It remained a single unified empire forever, never dividing", "isCorrect": false, "explanation": "The empire did eventually divide into separate khanates rather than remaining permanently unified." },
-      { "label": "B", "text": "It eventually split into several khanates (regional empires), each ruled somewhat independently", "isCorrect": true, "explanation": "The empire fractured into khanates such as the Yuan dynasty, the Golden Horde, and the Ilkhanate." },
-      { "label": "C", "text": "It was immediately and completely dissolved with no successor states", "isCorrect": false, "explanation": "Successor states (khanates) did persist and continued to rule significant territories for generations." },
-      { "label": "D", "text": "It merged permanently into the Roman Empire", "isCorrect": false, "explanation": "This has no historical basis; the Mongol Empire and Roman Empire were unrelated and existed in different eras." }
+      { "label": "A", "text": "It remained a single unified empire forever, never dividing into separate states", "isCorrect": false, "explanation": "The empire did eventually divide into separate khanates rather than remaining permanently unified." },
+      { "label": "B", "text": "It eventually split into several khanates, each ruled somewhat independently", "isCorrect": true, "explanation": "The empire fractured into khanates such as the Yuan dynasty, the Golden Horde, and the Ilkhanate." },
+      { "label": "C", "text": "It was immediately and completely dissolved with no successor states or regional rulers", "isCorrect": false, "explanation": "Successor states (khanates) did persist and continued to rule significant territories for generations." },
+      { "label": "D", "text": "It merged permanently into the Roman Empire after the death of the first great khan", "isCorrect": false, "explanation": "This has no historical basis; the Mongol Empire and Roman Empire were unrelated and existed in different eras." }
     ],
     "explanation": "After Genghis Khan's death, the Mongol Empire eventually divided into several independently ruled khanates.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/mongol-empire",
@@ -198,10 +198,10 @@
     "difficulty": "easy",
     "stem": "What natural phenomenon did sailors in the Indian Ocean trade network rely on to time their voyages?",
     "choices": [
-      { "label": "A", "text": "Ocean currents exclusively", "isCorrect": false, "explanation": "Currents mattered, but the defining, predictable feature sailors relied on for seasonal timing was the monsoon wind pattern." },
+      { "label": "A", "text": "Ocean currents exclusively, which never changed direction", "isCorrect": false, "explanation": "Currents mattered, but the defining, predictable feature sailors relied on for seasonal timing was the monsoon wind pattern." },
       { "label": "B", "text": "Monsoon winds, which shifted direction seasonally", "isCorrect": true, "explanation": "Sailors timed voyages to take advantage of predictable seasonal monsoon wind shifts across the Indian Ocean." },
-      { "label": "C", "text": "Random weather patterns with no predictability", "isCorrect": false, "explanation": "Monsoon winds were actually quite predictable and seasonal, not random." },
-      { "label": "D", "text": "Tides exclusively", "isCorrect": false, "explanation": "Tides are a coastal phenomenon, not the primary factor determining long-distance Indian Ocean voyage timing." }
+      { "label": "C", "text": "Random weather patterns with no predictability at all", "isCorrect": false, "explanation": "Monsoon winds were actually quite predictable and seasonal, not random." },
+      { "label": "D", "text": "Tides exclusively, which rose and fell twice every day", "isCorrect": false, "explanation": "Tides are a coastal phenomenon, not the primary factor determining long-distance Indian Ocean voyage timing." }
     ],
     "explanation": "Sailors relied on the predictable seasonal shifts of monsoon winds to time their Indian Ocean voyages.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/indian-ocean-trade",
@@ -214,9 +214,9 @@
     "difficulty": "medium",
     "stem": "Which of these regions was NOT directly connected by Indian Ocean trade during this period?",
     "choices": [
-      { "label": "A", "text": "East Africa", "isCorrect": false, "explanation": "East African coastal city-states were deeply connected to Indian Ocean trade." },
-      { "label": "B", "text": "South Asia", "isCorrect": false, "explanation": "South Asia (particularly India's coasts) was a central hub of Indian Ocean trade." },
-      { "label": "C", "text": "Southeast Asia", "isCorrect": false, "explanation": "Southeast Asia was connected to Indian Ocean trade routes, especially via port cities like Malacca." },
+      { "label": "A", "text": "The Swahili coast of East Africa", "isCorrect": false, "explanation": "East African coastal city-states were deeply connected to Indian Ocean trade." },
+      { "label": "B", "text": "The Malabar coast of South Asia", "isCorrect": false, "explanation": "South Asia (particularly India's coasts) was a central hub of Indian Ocean trade." },
+      { "label": "C", "text": "The Strait of Malacca in Southeast Asia", "isCorrect": false, "explanation": "Southeast Asia was connected to Indian Ocean trade routes, especially via port cities like Malacca." },
       { "label": "D", "text": "The interior of North America", "isCorrect": true, "explanation": "The interior of North America had no connection to the Indian Ocean trade network during this period." }
     ],
     "explanation": "The interior of North America was entirely disconnected from the Indian Ocean trade network, unlike East Africa, South Asia, and Southeast Asia.",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "What role did the city of Calicut, on India's coast, play in Indian Ocean trade?",
     "choices": [
-      { "label": "A", "text": "It was a landlocked city with no maritime trade", "isCorrect": false, "explanation": "Calicut was very much a coastal port city, not landlocked." },
+      { "label": "A", "text": "It was a landlocked city with no maritime trade and no contact with foreign merchants", "isCorrect": false, "explanation": "Calicut was very much a coastal port city, not landlocked." },
       { "label": "B", "text": "It served as a major port and trading hub, especially for the spice trade", "isCorrect": true, "explanation": "Calicut was a key spice-trading port connecting South Asia to merchants from across the Indian Ocean world." },
-      { "label": "C", "text": "It exclusively traded with the Americas", "isCorrect": false, "explanation": "During this era, there was no established trade connection with the Americas." },
-      { "label": "D", "text": "It banned all foreign merchants", "isCorrect": false, "explanation": "Calicut, like other Indian Ocean ports, generally welcomed foreign merchants as central to its economy." }
+      { "label": "C", "text": "It exclusively traded with the Americas by ships crossing the Pacific Ocean", "isCorrect": false, "explanation": "During this era, there was no established trade connection with the Americas." },
+      { "label": "D", "text": "It banned all foreign merchants and traded only with nearby inland villages", "isCorrect": false, "explanation": "Calicut, like other Indian Ocean ports, generally welcomed foreign merchants as central to its economy." }
     ],
     "explanation": "Calicut was a major Indian Ocean port and trading hub, particularly known for the spice trade.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/indian-ocean-trade",
@@ -246,10 +246,10 @@
     "difficulty": "hard",
     "stem": "Why is Indian Ocean trade during this period often described as relatively peaceful/cooperative compared to later European-dominated trade in the same region?",
     "choices": [
-      { "label": "A", "text": "There was no trade happening at all during this period", "isCorrect": false, "explanation": "This era saw extensive, well-documented Indian Ocean trade activity." },
-      { "label": "B", "text": "Multiple merchant communities of different religions and origins generally traded cooperatively without one power militarily dominating the entire network", "isCorrect": true, "explanation": "Diverse merchant communities coexisted and traded across the Indian Ocean without a single power enforcing military control over the whole network." },
-      { "label": "C", "text": "A single empire violently controlled the entire Indian Ocean", "isCorrect": false, "explanation": "No single empire held total military control over the Indian Ocean network during this period, unlike later European attempts." },
-      { "label": "D", "text": "All merchants were required to convert to the same religion before trading", "isCorrect": false, "explanation": "Merchants of many different religions participated without a religious conversion requirement." }
+      { "label": "A", "text": "There was no trade happening at all during this period, so historians have no records of conflict", "isCorrect": false, "explanation": "This era saw extensive, well-documented Indian Ocean trade activity." },
+      { "label": "B", "text": "Merchant communities of different religions traded cooperatively, with no single power dominating the network", "isCorrect": true, "explanation": "Diverse merchant communities coexisted and traded across the Indian Ocean without a single power enforcing military control over the whole network." },
+      { "label": "C", "text": "A single empire violently controlled the entire Indian Ocean and forced every merchant to pay tribute", "isCorrect": false, "explanation": "No single empire held total military control over the Indian Ocean network during this period, unlike later European attempts." },
+      { "label": "D", "text": "All merchants were required to convert to the same religion before they could trade in any port city", "isCorrect": false, "explanation": "Merchants of many different religions participated without a religious conversion requirement." }
     ],
     "explanation": "Indian Ocean trade during this period involved diverse merchant communities cooperating without a single dominant military power controlling the network.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/indian-ocean-trade",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "What types of goods were commonly exchanged via Indian Ocean trade routes?",
     "choices": [
-      { "label": "A", "text": "Only weapons", "isCorrect": false, "explanation": "Weapons had some military uses, but they weren't the primary trade commodity in this network." },
+      { "label": "A", "text": "Only weapons and armor for the armies of coastal kingdoms", "isCorrect": false, "explanation": "Weapons had some military uses, but they weren't the primary trade commodity in this network." },
       { "label": "B", "text": "Spices, textiles, and precious goods like ivory and gems", "isCorrect": true, "explanation": "The Indian Ocean network was famous for trading spices, textiles, and valuable goods across its many connected ports." },
-      { "label": "C", "text": "Only enslaved people", "isCorrect": false, "explanation": "Some human trafficking occurred within broader Indian Ocean networks, but this drastically understates the primarily commercial exchange of spices, textiles, and other valuable goods." },
-      { "label": "D", "text": "Only agricultural tools", "isCorrect": false, "explanation": "Agricultural tools weren't a defining commodity of this long-distance luxury and commodity trade." }
+      { "label": "C", "text": "Only enslaved people sold by merchants in the ports of the region", "isCorrect": false, "explanation": "Some human trafficking occurred within broader Indian Ocean networks, but this drastically understates the primarily commercial exchange of spices, textiles, and other valuable goods." },
+      { "label": "D", "text": "Only agricultural tools and farm animals for local villages", "isCorrect": false, "explanation": "Agricultural tools weren't a defining commodity of this long-distance luxury and commodity trade." }
     ],
     "explanation": "Spices, textiles, and precious goods like ivory and gems were the defining commodities of Indian Ocean trade.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/indian-ocean-trade",
@@ -278,10 +278,10 @@
     "difficulty": "medium",
     "stem": "How did port cities along the Indian Ocean trade network typically develop culturally?",
     "choices": [
-      { "label": "A", "text": "They remained completely isolated from foreign cultural influence", "isCorrect": false, "explanation": "These cities were deeply shaped by ongoing contact with foreign merchants and cultures, not isolated from it." },
-      { "label": "B", "text": "They often became cosmopolitan centers, blending local cultures with those of visiting foreign merchants", "isCorrect": true, "explanation": "Sustained contact with diverse foreign merchants gave many Indian Ocean port cities a cosmopolitan, blended character." },
-      { "label": "C", "text": "They uniformly rejected all foreign religions", "isCorrect": false, "explanation": "Many port cities incorporated elements of foreign religions, such as Islam, through sustained trade contact rather than rejecting them." },
-      { "label": "D", "text": "They had no distinct culture of their own", "isCorrect": false, "explanation": "These port cities often developed distinctive, blended local cultures rather than lacking culture altogether." }
+      { "label": "A", "text": "They remained completely isolated from foreign cultural influence despite their busy harbors", "isCorrect": false, "explanation": "These cities were deeply shaped by ongoing contact with foreign merchants and cultures, not isolated from it." },
+      { "label": "B", "text": "They often became cosmopolitan centers blending local cultures with those of foreign merchants", "isCorrect": true, "explanation": "Sustained contact with diverse foreign merchants gave many Indian Ocean port cities a cosmopolitan, blended character." },
+      { "label": "C", "text": "They uniformly rejected all foreign religions and expelled visiting merchants from the ports", "isCorrect": false, "explanation": "Many port cities incorporated elements of foreign religions, such as Islam, through sustained trade contact rather than rejecting them." },
+      { "label": "D", "text": "They had no distinct culture of their own and simply copied the customs of their foreign rulers", "isCorrect": false, "explanation": "These port cities often developed distinctive, blended local cultures rather than lacking culture altogether." }
     ],
     "explanation": "Indian Ocean port cities often became cosmopolitan centers, blending local cultures with those of visiting foreign merchants.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/indian-ocean-trade",
@@ -342,10 +342,10 @@
     "difficulty": "hard",
     "stem": "How did trans-Saharan trade contribute to the spread of Islam into West Africa?",
     "choices": [
-      { "label": "A", "text": "It had no connection to religious spread whatsoever", "isCorrect": false, "explanation": "Trans-Saharan trade played a well-documented role in facilitating religious as well as commercial exchange." },
-      { "label": "B", "text": "Muslim North African and Berber merchants carried their faith along trade routes, gradually influencing West African rulers and elites", "isCorrect": true, "explanation": "Sustained trade contact with Muslim merchants gradually introduced Islam to West African societies, especially their ruling elites." },
-      { "label": "C", "text": "It spread Islam by military conquest exclusively", "isCorrect": false, "explanation": "Islam's spread into West Africa via these trade routes occurred largely through peaceful commercial and cultural contact, not primarily military conquest." },
-      { "label": "D", "text": "It spread Christianity instead of Islam", "isCorrect": false, "explanation": "Trans-Saharan trade contact spread Islam, not Christianity, into West Africa." }
+      { "label": "A", "text": "It had no connection to religious spread whatsoever, since merchants never spoke of their beliefs abroad", "isCorrect": false, "explanation": "Trans-Saharan trade played a well-documented role in facilitating religious as well as commercial exchange." },
+      { "label": "B", "text": "Muslim merchants from North Africa carried their faith along trade routes, influencing West African rulers", "isCorrect": true, "explanation": "Sustained trade contact with Muslim merchants gradually introduced Islam to West African societies, especially their ruling elites." },
+      { "label": "C", "text": "It spread Islam by military conquest exclusively, as Arab armies crossed the desert and seized every kingdom", "isCorrect": false, "explanation": "Islam's spread into West Africa via these trade routes occurred largely through peaceful commercial and cultural contact, not primarily military conquest." },
+      { "label": "D", "text": "It spread Christianity instead of Islam, carried across the desert by Byzantine merchants and missionaries", "isCorrect": false, "explanation": "Trans-Saharan trade contact spread Islam, not Christianity, into West Africa." }
     ],
     "explanation": "Muslim merchants traveling trans-Saharan trade routes gradually spread Islam to West African rulers and elites through sustained contact.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/trans-saharan-trade",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "Timbuktu, a significant trading city connected to trans-Saharan trade, became especially notable for what additional role?",
     "choices": [
-      { "label": "A", "text": "A center of naval shipbuilding", "isCorrect": false, "explanation": "Timbuktu was landlocked, deep in West Africa, unrelated to naval shipbuilding." },
+      { "label": "A", "text": "A center of naval shipbuilding, with large shipyards and a major port on the Niger", "isCorrect": false, "explanation": "Timbuktu was landlocked, deep in West Africa, unrelated to naval shipbuilding." },
       { "label": "B", "text": "A center of Islamic scholarship and learning, with notable libraries and a university", "isCorrect": true, "explanation": "Timbuktu became renowned for its mosques, libraries, and centers of Islamic scholarship." },
-      { "label": "C", "text": "The capital of the Byzantine Empire", "isCorrect": false, "explanation": "The Byzantine Empire's capital was Constantinople, entirely unrelated to Timbuktu." },
-      { "label": "D", "text": "A major Pacific Ocean port", "isCorrect": false, "explanation": "Timbuktu was landlocked in West Africa, nowhere near the Pacific Ocean." }
+      { "label": "C", "text": "The capital of the Byzantine Empire and the seat of the Eastern Orthodox patriarch", "isCorrect": false, "explanation": "The Byzantine Empire's capital was Constantinople, entirely unrelated to Timbuktu." },
+      { "label": "D", "text": "A major Pacific Ocean port for trade between Asia and the Americas in the Middle Ages", "isCorrect": false, "explanation": "Timbuktu was landlocked in West Africa, nowhere near the Pacific Ocean." }
     ],
     "explanation": "Timbuktu became a renowned center of Islamic scholarship, with notable libraries alongside its role as a trading city.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/trans-saharan-trade",
@@ -375,9 +375,9 @@
     "stem": "What was a key economic dynamic of the trans-Saharan gold-salt trade?",
     "choices": [
       { "label": "A", "text": "Gold flowed north from West Africa while salt flowed south from Saharan mines", "isCorrect": true, "explanation": "West African gold moved north across the desert, while Saharan salt moved south, each valuable where it was scarce." },
-      { "label": "B", "text": "Both gold and salt originated exclusively in North Africa", "isCorrect": false, "explanation": "Gold's primary sources were in West Africa, not North Africa." },
-      { "label": "C", "text": "Neither gold nor salt was ever traded across the Sahara", "isCorrect": false, "explanation": "This trade was extensive and well-documented; both goods were indeed traded across the Sahara." },
-      { "label": "D", "text": "Salt was more valuable than gold everywhere in the world", "isCorrect": false, "explanation": "The relative value of salt, while high in the salt-scarce West African interior, was not universally higher than gold everywhere in the world." }
+      { "label": "B", "text": "Both gold and salt originated exclusively in North Africa and were sold only there", "isCorrect": false, "explanation": "Gold's primary sources were in West Africa, not North Africa." },
+      { "label": "C", "text": "Neither gold nor salt was ever traded across the Sahara, which merchants avoided", "isCorrect": false, "explanation": "This trade was extensive and well-documented; both goods were indeed traded across the Sahara." },
+      { "label": "D", "text": "Salt was more valuable than gold everywhere in the world, so West Africa sold only salt", "isCorrect": false, "explanation": "The relative value of salt, while high in the salt-scarce West African interior, was not universally higher than gold everywhere in the world." }
     ],
     "explanation": "Gold moved north from West Africa while salt moved south from Saharan sources, each valuable where scarce.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/trans-saharan-trade",
@@ -390,10 +390,10 @@
     "difficulty": "easy",
     "stem": "What is a \"cultural consequence\" of increased trade connectivity during this era, as seen along networks like the Silk Roads?",
     "choices": [
-      { "label": "A", "text": "The complete disappearance of all local cultures", "isCorrect": false, "explanation": "Local cultures generally blended with new influences rather than disappearing entirely." },
+      { "label": "A", "text": "The complete disappearance of all local cultures as one universal culture replaced them everywhere", "isCorrect": false, "explanation": "Local cultures generally blended with new influences rather than disappearing entirely." },
       { "label": "B", "text": "The spread and blending of religions, artistic styles, and technologies across regions", "isCorrect": true, "explanation": "Increased connectivity allowed religions, art, and technology to spread and blend across previously separate regions." },
-      { "label": "C", "text": "Total cultural isolation of connected regions", "isCorrect": false, "explanation": "Increased connectivity is the opposite of isolation; it directly connected previously separate regions." },
-      { "label": "D", "text": "The elimination of all trade goods", "isCorrect": false, "explanation": "Trade connectivity increased the exchange of goods, not eliminated it." }
+      { "label": "C", "text": "Total cultural isolation of connected regions despite constant trade and travel between them", "isCorrect": false, "explanation": "Increased connectivity is the opposite of isolation; it directly connected previously separate regions." },
+      { "label": "D", "text": "The elimination of all trade goods as merchants switched to carrying only ideas and religions", "isCorrect": false, "explanation": "Trade connectivity increased the exchange of goods, not eliminated it." }
     ],
     "explanation": "Increased trade connectivity spread and blended religions, artistic styles, and technologies across connected regions.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
@@ -407,9 +407,9 @@
     "stem": "What was a significant environmental consequence of increased long-distance trade and travel during this era?",
     "choices": [
       { "label": "A", "text": "The spread of diseases like the bubonic plague across previously separate populations", "isCorrect": true, "explanation": "Increased travel and trade connectivity allowed diseases like the bubonic plague to spread across vast distances." },
-      { "label": "B", "text": "The complete end of all agriculture worldwide", "isCorrect": false, "explanation": "Trade actually often supported agricultural specialization and exchange of crops, not ending agriculture." },
-      { "label": "C", "text": "The disappearance of all domesticated animals", "isCorrect": false, "explanation": "Domesticated animals like camels and horses were essential to and unaffected by this trade, not eliminated." },
-      { "label": "D", "text": "A worldwide decrease in human population growth for the following centuries with no recovery", "isCorrect": false, "explanation": "While the Black Death caused massive short-term population loss, human population did recover and continue growing over subsequent centuries." }
+      { "label": "B", "text": "The complete end of all agriculture worldwide as farmers became full-time merchants and sailors", "isCorrect": false, "explanation": "Trade actually often supported agricultural specialization and exchange of crops, not ending agriculture." },
+      { "label": "C", "text": "The disappearance of all domesticated animals from every region along the trade routes", "isCorrect": false, "explanation": "Domesticated animals like camels and horses were essential to and unaffected by this trade, not eliminated." },
+      { "label": "D", "text": "A worldwide decrease in population growth for the following centuries with no recovery", "isCorrect": false, "explanation": "While the Black Death caused massive short-term population loss, human population did recover and continue growing over subsequent centuries." }
     ],
     "explanation": "Increased connectivity had the environmental consequence of spreading disease, such as the bubonic plague, across previously separate populations.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "How did the exchange of agricultural knowledge and crops along trade networks affect various regions?",
     "choices": [
-      { "label": "A", "text": "It had no effect on agriculture anywhere", "isCorrect": false, "explanation": "The exchange of agricultural knowledge had substantial, well-documented effects on farming practices." },
-      { "label": "B", "text": "It allowed new crops and farming techniques to spread, sometimes increasing food production and supporting population growth", "isCorrect": true, "explanation": "The spread of new crops and techniques across trade networks could boost food production and support larger populations." },
-      { "label": "C", "text": "It caused agriculture to disappear entirely in connected regions", "isCorrect": false, "explanation": "Increased exchange generally supported and diversified agriculture, rather than eliminating it." },
-      { "label": "D", "text": "It only affected regions that had no trade connections", "isCorrect": false, "explanation": "This describes the opposite of what actually happened; it was connected regions that experienced this agricultural exchange." }
+      { "label": "A", "text": "It had no effect on agriculture anywhere because farmers refused to plant any foreign crop", "isCorrect": false, "explanation": "The exchange of agricultural knowledge had substantial, well-documented effects on farming practices." },
+      { "label": "B", "text": "New crops and farming techniques spread, sometimes raising food production and population", "isCorrect": true, "explanation": "The spread of new crops and techniques across trade networks could boost food production and support larger populations." },
+      { "label": "C", "text": "It caused agriculture to disappear entirely in connected regions as farmers turned to trade", "isCorrect": false, "explanation": "Increased exchange generally supported and diversified agriculture, rather than eliminating it." },
+      { "label": "D", "text": "It only affected regions that had no trade connections with their neighbors or the coast", "isCorrect": false, "explanation": "This describes the opposite of what actually happened; it was connected regions that experienced this agricultural exchange." }
     ],
     "explanation": "Exchange of crops and farming knowledge along trade networks could increase food production and support population growth.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
@@ -438,10 +438,10 @@
     "difficulty": "hard",
     "stem": "Why might historians compare the economic exchange networks of the Silk Roads, Indian Ocean trade, and trans-Saharan trade as having similar broader historical significance, despite their different geographic contexts?",
     "choices": [
-      { "label": "A", "text": "They had no significant similarities at all", "isCorrect": false, "explanation": "Historians commonly identify meaningful shared patterns across these networks, which is why they're studied together." },
-      { "label": "B", "text": "Each network facilitated long-distance exchange of goods, ideas, religions, and sometimes diseases, connecting previously separate regions into broader systems of interaction", "isCorrect": true, "explanation": "Despite their different geographic settings, all three networks shared this core function of connecting distant regions through exchange." },
-      { "label": "C", "text": "They were all located in exactly the same geographic region", "isCorrect": false, "explanation": "These three networks were located in distinctly different geographic regions: Central Asia, the Indian Ocean, and the Sahara respectively." },
-      { "label": "D", "text": "They all began and ended in the exact same centuries with no variation", "isCorrect": false, "explanation": "These networks had different origins, peaks, and declines across varying, overlapping timeframes, not identical chronologies." }
+      { "label": "A", "text": "They had no significant similarities at all, since each network carried completely different goods and was run by a different empire", "isCorrect": false, "explanation": "Historians commonly identify meaningful shared patterns across these networks, which is why they're studied together." },
+      { "label": "B", "text": "Each network exchanged goods, ideas, religions and sometimes diseases, linking previously separate regions into broader systems", "isCorrect": true, "explanation": "Despite their different geographic settings, all three networks shared this core function of connecting distant regions through exchange." },
+      { "label": "C", "text": "They were all located in exactly the same geographic region and passed through the same ports, cities and deserts", "isCorrect": false, "explanation": "These three networks were located in distinctly different geographic regions: Central Asia, the Indian Ocean, and the Sahara respectively." },
+      { "label": "D", "text": "They all began and ended in the exact same centuries, with no variation in the goods, peoples or religions involved", "isCorrect": false, "explanation": "These networks had different origins, peaks, and declines across varying, overlapping timeframes, not identical chronologies." }
     ],
     "explanation": "Despite different geographic contexts, all three networks shared the core historical significance of connecting distant regions through long-distance exchange.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
@@ -454,10 +454,10 @@
     "difficulty": "medium",
     "stem": "What role did diasporic merchant communities (merchants living long-term in foreign trading cities) play in these exchange networks?",
     "choices": [
-      { "label": "A", "text": "They had no lasting impact on local societies", "isCorrect": false, "explanation": "Diasporic merchant communities often had substantial, lasting cultural and economic impacts on host societies." },
-      { "label": "B", "text": "They often facilitated cultural exchange and sometimes introduced their own religious or cultural practices to host communities", "isCorrect": true, "explanation": "Long-term foreign merchant communities often served as bridges for cultural and religious exchange with their host societies." },
-      { "label": "C", "text": "They were universally banned from settling in foreign trade cities", "isCorrect": false, "explanation": "Many trade networks actively hosted long-term foreign merchant communities rather than banning them." },
-      { "label": "D", "text": "They only interacted with merchants from their own home region", "isCorrect": false, "explanation": "These communities frequently interacted with diverse local and foreign populations, not just merchants from their own home region." }
+      { "label": "A", "text": "They had no lasting impact on local societies, because they never interacted with townspeople or rulers", "isCorrect": false, "explanation": "Diasporic merchant communities often had substantial, lasting cultural and economic impacts on host societies." },
+      { "label": "B", "text": "They often encouraged cultural exchange and sometimes introduced their own practices to host communities", "isCorrect": true, "explanation": "Long-term foreign merchant communities often served as bridges for cultural and religious exchange with their host societies." },
+      { "label": "C", "text": "They were universally banned from settling in foreign trade cities by the rulers of every kingdom and empire", "isCorrect": false, "explanation": "Many trade networks actively hosted long-term foreign merchant communities rather than banning them." },
+      { "label": "D", "text": "They only interacted with merchants from their own home region and never learned the local language or customs", "isCorrect": false, "explanation": "These communities frequently interacted with diverse local and foreign populations, not just merchants from their own home region." }
     ],
     "explanation": "Diasporic merchant communities often facilitated cultural exchange, introducing their own practices to host communities.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "Which best summarizes the overall historical significance of these interconnected trade networks (Silk Roads, Indian Ocean, trans-Saharan) between c. 1200 and 1450?",
     "choices": [
-      { "label": "A", "text": "They had minimal impact on world history", "isCorrect": false, "explanation": "These networks had substantial, transformative impacts on world history, not minimal ones." },
-      { "label": "B", "text": "They fostered significant economic, cultural, and biological exchange that connected distant regions of Afro-Eurasia into an increasingly interlinked world", "isCorrect": true, "explanation": "These networks collectively wove distant regions of Afro-Eurasia into an increasingly interconnected system of exchange." },
-      { "label": "C", "text": "They existed in complete isolation from one another with no overlapping connections", "isCorrect": false, "explanation": "These networks often intersected and overlapped, such as goods moving from the Indian Ocean network into Silk Road routes, rather than existing in total isolation." },
-      { "label": "D", "text": "They only involved the exchange of military technology", "isCorrect": false, "explanation": "Military technology did spread, but this drastically understates the vast range of goods, ideas, religions, and biological exchange also involved." }
+      { "label": "A", "text": "They had minimal impact on world history because they carried only small amounts of luxury goods for kings", "isCorrect": false, "explanation": "These networks had substantial, transformative impacts on world history, not minimal ones." },
+      { "label": "B", "text": "They fostered economic, cultural and biological exchange that connected distant regions of Afro-Eurasia", "isCorrect": true, "explanation": "These networks collectively wove distant regions of Afro-Eurasia into an increasingly interconnected system of exchange." },
+      { "label": "C", "text": "They existed in complete isolation from one another, with no overlapping merchants, ports or connections", "isCorrect": false, "explanation": "These networks often intersected and overlapped, such as goods moving from the Indian Ocean network into Silk Road routes, rather than existing in total isolation." },
+      { "label": "D", "text": "They only involved the exchange of military technology among the great empires of Eurasia and Africa", "isCorrect": false, "explanation": "Military technology did spread, but this drastically understates the vast range of goods, ideas, religions, and biological exchange also involved." }
     ],
     "explanation": "These interconnected networks fostered significant economic, cultural, and biological exchange, linking distant regions of Afro-Eurasia together.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",

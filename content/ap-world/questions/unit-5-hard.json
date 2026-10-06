@@ -8,25 +8,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The division of government into separate legislative, executive and judicial branches in the United States Constitution.",
+        "text": "The division of government into legislative, executive and judicial branches in the United States Constitution.",
         "isCorrect": true,
         "explanation": "The principle of the separation of powers, associated with Montesquieu, was a model for constitutional design in the revolutionary era."
       },
       {
         "label": "B",
-        "text": "The principle that a strong sovereign must have all power to prevent disorder.",
+        "text": "The principle that a strong sovereign must hold all power in order to prevent disorder, civil war and invasion",
         "isCorrect": false,
         "explanation": "This is closer to Hobbes; the passage warns against uniting powers."
       },
       {
         "label": "C",
-        "text": "The belief that monarchs rule by divine right and need no checks.",
+        "text": "The belief that monarchs rule by divine right and need no checks from nobles, courts, parliaments or assemblies of any kind",
         "isCorrect": false,
         "explanation": "The passage argues for limits on concentrated power, the opposite of divine-right absolutism."
       },
       {
         "label": "D",
-        "text": "The call for workers to seize the means of production.",
+        "text": "The call for workers to seize the means of production and abolish private ownership of factories and farms",
         "isCorrect": false,
         "explanation": "This is a nineteenth-century socialist idea unrelated to the passage."
       }
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Both argued that government should be abolished because people are naturally good.",
+        "text": "Both argued that government should be abolished entirely because people are naturally good, peaceful and cooperative",
         "isCorrect": false,
         "explanation": "Neither argued for abolishing government."
       },
       {
         "label": "B",
-        "text": "Hobbes argued that governments could be overthrown at will, while Locke supported absolute monarchy.",
+        "text": "Hobbes argued that governments could be overthrown at will, while Locke supported absolute monarchy and the divine right of kings in all circumstances",
         "isCorrect": false,
         "explanation": "This reverses their positions."
       },
       {
         "label": "C",
-        "text": "Both argued that kings rule by divine right.",
+        "text": "Both argued that kings rule by divine right and that subjects have a duty to obey them without question or resistance",
         "isCorrect": false,
         "explanation": "Neither defended the divine right of kings in the way traditional monarchists did, and Locke explicitly rejected it."
       },
       {
         "label": "D",
-        "text": "Hobbes argued that people needed a powerful sovereign to prevent chaos, while Locke argued that government exists to protect natural rights and may be replaced if it fails to do so.",
+        "text": "Hobbes said people needed a powerful sovereign to prevent chaos; Locke said government protects natural rights and may be replaced.",
         "isCorrect": true,
         "explanation": "Hobbes supported strong authority and Locke supported government by consent, with a right of revolution against abuse."
       }
@@ -80,13 +80,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "A defense of absolute monarchy.",
+        "text": "A defense of absolute monarchy and the traditional legal and social status of women",
         "isCorrect": false,
         "explanation": "Her argument was about education and rights, not defending absolutism."
       },
       {
         "label": "B",
-        "text": "A conservative reaction to the French Revolution.",
+        "text": "A conservative reaction to the French Revolution and its radical demands for rights",
         "isCorrect": false,
         "explanation": "She supported the rights ideals of the revolutionary era."
       },
@@ -98,7 +98,7 @@
       },
       {
         "label": "D",
-        "text": "A rejection of all Enlightenment ideas in favor of traditional authority.",
+        "text": "A rejection of all Enlightenment ideas in favor of church and traditional authority",
         "isCorrect": false,
         "explanation": "She used Enlightenment reasoning to challenge traditional views."
       }
@@ -116,25 +116,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "It was led by wealthy planters who wanted to keep slavery.",
+        "text": "It was led by wealthy planters who wanted to keep slavery and win independence from France",
         "isCorrect": false,
         "explanation": "The passage describes enslaved people fighting to end slavery."
       },
       {
         "label": "B",
-        "text": "It was led by enslaved people, attacked slavery itself, and created a state in which slavery was abolished.",
+        "text": "It was led by enslaved people, attacked slavery itself and created a state that abolished it.",
         "isCorrect": true,
         "explanation": "The Haitian Revolution was the only successful slave revolt to produce an independent state, and it abolished slavery, whereas the United States preserved slavery after independence."
       },
       {
         "label": "C",
-        "text": "It was unaffected by Enlightenment ideas of liberty and equality.",
+        "text": "It was unaffected by Enlightenment ideas of liberty and equality, which Haitians had never heard of",
         "isCorrect": false,
         "explanation": "The passage uses the language of liberty and equality that the rebels drew from the French revolutionary era."
       },
       {
         "label": "D",
-        "text": "It ended with the colony's return to Spanish rule.",
+        "text": "It ended with the colony's return to Spanish rule and the restoration of the old plantation order",
         "isCorrect": false,
         "explanation": "Saint-Domingue was a French colony and became independent Haiti in 1804."
       }
@@ -152,25 +152,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Enslaved Africans, who wanted to restore African kingdoms.",
+        "text": "Enslaved Africans, who wanted to restore African kingdoms in the Americas and end Spanish rule",
         "isCorrect": false,
         "explanation": "Enslaved people took part in some campaigns but did not lead the independence movements overall."
       },
       {
         "label": "B",
-        "text": "The Catholic Church, which wanted to separate from Rome.",
+        "text": "The Catholic Church, which wanted to separate from Rome and form an independent national church under its own king",
         "isCorrect": false,
         "explanation": "The Church was not the leading force of independence movements and did not seek to separate from Rome."
       },
       {
         "label": "C",
-        "text": "Creole elites, who resented the dominance of Spanish-born officials in high offices and the trade restrictions imposed by Spain.",
+        "text": "Creole elites, who resented Spanish-born officials in high offices and Spain's trade restrictions.",
         "isCorrect": true,
         "explanation": "Creoles, born in the Americas of European descent, were excluded from top positions and wanted political and economic control, influenced by Enlightenment ideas and by events in Spain."
       },
       {
         "label": "D",
-        "text": "Spanish-born officials, who wanted to abolish Spanish rule.",
+        "text": "Spanish-born officials, who wanted to abolish Spanish rule and take the colonies for themselves",
         "isCorrect": false,
         "explanation": "Spanish-born officials generally supported the colonial system."
       }
@@ -188,25 +188,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Monarchy was permanently abolished throughout Europe.",
+        "text": "Monarchy was permanently abolished throughout Europe after Napoleon's defeat at Waterloo and the Congress of Vienna",
         "isCorrect": false,
         "explanation": "Monarchies remained in most European states for generations."
       },
       {
         "label": "B",
-        "text": "A European union with a common government was created in 1800.",
+        "text": "A European union with a common government and a shared army was created in 1800 under Napoleon and the Pope",
         "isCorrect": false,
         "explanation": "No such union existed at that time."
       },
       {
         "label": "C",
-        "text": "The Catholic Church became the sole legal authority in France.",
+        "text": "The Catholic Church became the sole legal authority in France, replacing all civil courts, codes and assemblies",
         "isCorrect": false,
         "explanation": "The revolution had reduced the Church's power."
       },
       {
         "label": "D",
-        "text": "Ideas such as nationalism, legal equality and constitutional government spread widely, even though conservative rulers tried to restore the old order after 1815.",
+        "text": "Nationalism, legal equality and constitutional government spread, though conservative rulers tried to restore the old order after 1815.",
         "isCorrect": true,
         "explanation": "The revolution and Napoleon's conquests spread new political ideas, and the Congress of Vienna tried to restore monarchies but could not erase those ideas."
       }
@@ -224,25 +224,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Strong guild restrictions that required all production to remain in small workshops.",
+        "text": "Strong guild restrictions that required all production to remain in small workshops, which strongly encouraged innovation",
         "isCorrect": false,
         "explanation": "Guild restrictions were weaker in Britain than elsewhere, and the factory system developed."
       },
       {
         "label": "B",
-        "text": "Abundant coal and iron ore, capital from overseas trade and colonies, agricultural improvements that freed labor for other work, and a stable government that supported commerce.",
+        "text": "Coal and iron ore, capital from trade and colonies, farm improvements freeing labor, and a stable government supporting commerce.",
         "isCorrect": true,
         "explanation": "These conditions together encouraged innovation in textiles, mining and metallurgy."
       },
       {
         "label": "C",
-        "text": "The absence of overseas markets and colonies.",
+        "text": "The absence of overseas markets and colonies, which forced Britain to build factories to supply its own population",
         "isCorrect": false,
         "explanation": "Britain's colonies and trade provided capital, raw materials and markets."
       },
       {
         "label": "D",
-        "text": "A lack of coal and iron, which forced Britain to turn to machines.",
+        "text": "A lack of coal and iron, which forced Britain to turn to labor-saving machines and to borrow heavily from Spain",
         "isCorrect": false,
         "explanation": "Britain had large coal and iron resources."
       }
@@ -260,19 +260,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "The abolition of the factory system and a return to guild production.",
+        "text": "The abolition of the factory system and a return to guild production in the towns and villages of Britain",
         "isCorrect": false,
         "explanation": "The factory system continued to expand."
       },
       {
         "label": "B",
-        "text": "A government order that required all children to work in mills.",
+        "text": "A government order that required all children over the age of five to work in mills for twelve hours",
         "isCorrect": false,
         "explanation": "Reforms limited, rather than required, child labor."
       },
       {
         "label": "C",
-        "text": "An end to industrialization in Britain.",
+        "text": "An end to industrialization in Britain after the government banned the use of steam power in mills",
         "isCorrect": false,
         "explanation": "Industrialization continued."
       },
@@ -296,13 +296,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "A statement of support for absolute monarchy.",
+        "text": "A statement of support for absolute monarchy and the privileges of the nobility",
         "isCorrect": false,
         "explanation": "The passage concerns class conflict."
       },
       {
         "label": "B",
-        "text": "A defense of laissez-faire capitalism as set out by Adam Smith.",
+        "text": "A defense of laissez-faire capitalism as set out by the economist Adam Smith",
         "isCorrect": false,
         "explanation": "The passage criticizes owners and calls for workers to take over production."
       },
@@ -314,7 +314,7 @@
       },
       {
         "label": "D",
-        "text": "A call to return to feudal obligations and rule by nobles.",
+        "text": "A call to return to feudal obligations and rule by hereditary nobles and bishops",
         "isCorrect": false,
         "explanation": "The passage looks toward workers' control, not feudal rule."
       }
@@ -338,19 +338,19 @@
       },
       {
         "label": "B",
-        "text": "The government should set all prices and wages.",
+        "text": "The government should set all prices and wages in order to protect workers and consumers",
         "isCorrect": false,
         "explanation": "Laissez-faire opposes such control."
       },
       {
         "label": "C",
-        "text": "Overseas colonies should be closed to trade with all other nations.",
+        "text": "Overseas colonies should be closed to trade with all other nations to enrich the mother country",
         "isCorrect": false,
         "explanation": "This is a mercantilist idea that Smith criticized."
       },
       {
         "label": "D",
-        "text": "The government should own all factories and farms.",
+        "text": "The government should own all factories and farms and direct production through plans",
         "isCorrect": false,
         "explanation": "This describes socialism or communism."
       }
@@ -368,25 +368,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A decline in the size of cities as people returned to farming.",
+        "text": "A decline in the size of cities as people returned to farming when the factories closed in the 1840s and 1850s",
         "isCorrect": false,
         "explanation": "Cities grew rapidly."
       },
       {
         "label": "B",
-        "text": "The disappearance of class distinctions.",
+        "text": "The disappearance of class distinctions as factory owners and workers came to share equal wealth, rights and status",
         "isCorrect": false,
         "explanation": "Industrialization produced new class divisions."
       },
       {
         "label": "C",
-        "text": "The return of feudal lords to political power.",
+        "text": "The return of feudal lords to political power as factory owners were driven out of Parliament by the old landed nobility",
         "isCorrect": false,
         "explanation": "Industrialization weakened old landed power and created new classes."
       },
       {
         "label": "D",
-        "text": "Rapid urbanization, as workers moved to crowded industrial cities, and the growth of a larger middle class and an industrial working class.",
+        "text": "Rapid urbanization as workers moved to crowded industrial cities, and the growth of a middle class and a working class.",
         "isCorrect": true,
         "explanation": "Factory jobs drew people from the countryside and created new social classes."
       }
@@ -410,19 +410,19 @@
       },
       {
         "label": "B",
-        "text": "A continuation of the Tokugawa policy of closing the country to outsiders.",
+        "text": "A continuation of the Tokugawa policy of closing the country to all outsiders, trade and foreign ideas",
         "isCorrect": false,
         "explanation": "The Tokugawa policy of isolation was ended and replaced by active modernization."
       },
       {
         "label": "C",
-        "text": "A rejection of all Western technology and ideas in favor of isolation.",
+        "text": "A rejection of all Western technology and ideas in favor of isolation and strict traditional ways",
         "isCorrect": false,
         "explanation": "The passage urges learning from the West."
       },
       {
         "label": "D",
-        "text": "A proposal to colonize Europe.",
+        "text": "A proposal to colonize Europe and challenge the Western powers in their own territories with a new fleet",
         "isCorrect": false,
         "explanation": "The passage concerns strengthening Japan, not colonizing Europe."
       }
@@ -440,25 +440,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A single worldwide agreement that all slave-holding states signed in 1750.",
+        "text": "A single worldwide agreement that all slave-holding states signed in 1750 after a global conference in Paris",
         "isCorrect": false,
         "explanation": "Abolition occurred gradually, in different countries, over many decades."
       },
       {
         "label": "B",
-        "text": "A sudden collapse in European demand for sugar.",
+        "text": "A sudden collapse in European demand for sugar, which made every Caribbean plantation unprofitable almost overnight",
         "isCorrect": false,
         "explanation": "Demand for sugar remained strong."
       },
       {
         "label": "C",
-        "text": "Enlightenment ideas, humanitarian campaigns, resistance by the enslaved (including the Haitian Revolution), and changing economic interests.",
+        "text": "Enlightenment ideas, humanitarian campaigns, resistance by the enslaved, including in Haiti, and changing economic interests.",
         "isCorrect": true,
         "explanation": "Many factors, including moral campaigns and enslaved people's own resistance, led Britain to abolish the trade in 1807 and slavery itself in its empire in 1833."
       },
       {
         "label": "D",
-        "text": "Orders from African kings forbidding any sales of captives.",
+        "text": "Orders from African kings forbidding any sales of captives to European merchants anywhere along the West African coast",
         "isCorrect": false,
         "explanation": "African states did not control the end of the trade."
       }
@@ -476,25 +476,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "rejected all European technology and ideas.",
+        "text": "rejected all European technology and ideas and sought to return to the older practices of the early Islamic state during the nineteenth century",
         "isCorrect": false,
         "explanation": "Both reformers borrowed European models."
       },
       {
         "label": "B",
-        "text": "were led by Christian missionaries.",
+        "text": "were led by Christian missionaries from Europe and America who wanted to convert the Muslim peoples of the region",
         "isCorrect": false,
         "explanation": "The reforms were led by Muslim rulers and officials."
       },
       {
         "label": "C",
-        "text": "attempted to strengthen the state by adopting Western-style military, administrative and economic reforms in response to European power.",
+        "text": "tried to strengthen the state with Western-style military, administrative and economic reforms in response to Europe.",
         "isCorrect": true,
         "explanation": "Both sets of reformers tried to modernize armies and administration so their states could resist European pressure."
       },
       {
         "label": "D",
-        "text": "ended Muslim rule in their regions.",
+        "text": "ended Muslim rule in their regions and handed power to European governors appointed by their kings and navies",
         "isCorrect": false,
         "explanation": "Muslim rule continued."
       }
@@ -512,25 +512,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Women and enslaved people in the French colonies were largely excluded from the rights the declaration proclaimed.",
+        "text": "Women and enslaved people in the French colonies were largely excluded from the rights it proclaimed.",
         "isCorrect": true,
         "explanation": "Although it proclaimed universal rights, women did not gain political equality, and slavery continued in the colonies until its abolition in 1794 (later reversed by Napoleon)."
       },
       {
         "label": "B",
-        "text": "The principles were never written into any law.",
+        "text": "The principles were never written into any law and remained only a statement of political hopes",
         "isCorrect": false,
         "explanation": "Many of the principles were incorporated into laws and constitutions."
       },
       {
         "label": "C",
-        "text": "The principles applied only to members of the nobility.",
+        "text": "The principles applied only to members of the nobility and the high clergy of the Catholic Church",
         "isCorrect": false,
         "explanation": "The declaration was meant to apply to all citizens, and it challenged noble privilege."
       },
       {
         "label": "D",
-        "text": "The principles protected the Church's property from any taxation.",
+        "text": "The principles protected the Church's property from any taxation and guaranteed the clergy's privileges",
         "isCorrect": false,
         "explanation": "The revolution took Church lands and reduced its privileges."
       }

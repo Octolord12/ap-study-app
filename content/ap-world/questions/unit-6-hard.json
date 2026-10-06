@@ -8,25 +8,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Social Darwinism and the belief that Europeans had a duty to spread their culture to peoples considered less advanced.",
+        "text": "Social Darwinism and the belief that Europeans had a duty to spread their culture to supposedly less advanced peoples.",
         "isCorrect": true,
         "explanation": "Many imperialists justified expansion with a claimed civilizing mission supported by racial theories and ideas about the survival of the fittest applied to societies."
       },
       {
         "label": "B",
-        "text": "The Enlightenment argument that all peoples have equal rights to self-government.",
+        "text": "The Enlightenment argument that all peoples have equal natural rights, including a right to self-government and to resist foreign rule.",
         "isCorrect": false,
         "explanation": "The passage says some peoples cannot govern themselves, which contradicts that argument."
       },
       {
         "label": "C",
-        "text": "Marxist ideas about the overthrow of capitalism.",
+        "text": "Marxist ideas about the overthrow of capitalism and the rise of a classless society of workers.",
         "isCorrect": false,
         "explanation": "Marxists criticized imperialism; the passage defends it."
       },
       {
         "label": "D",
-        "text": "A conviction that colonies were costly and should be abandoned.",
+        "text": "A conviction that colonies were costly and should be abandoned by European governments as soon as possible.",
         "isCorrect": false,
         "explanation": "The passage promotes expansion, not abandonment."
       }
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Industrial economies needed raw materials such as rubber, cotton and minerals, and sought new markets and investment opportunities for their goods and capital.",
+        "text": "Industrial economies needed raw materials such as rubber, cotton and minerals, and sought new markets for their goods and capital.",
         "isCorrect": true,
         "explanation": "Industrialization increased demand for resources and markets, which encouraged states and companies to seek colonies."
       },
       {
         "label": "B",
-        "text": "A desire to protect European farmers by closing off all trade.",
+        "text": "A desire to protect European farmers by closing off all trade with Africa and Asia and keeping out foreign grain and cotton.",
         "isCorrect": false,
         "explanation": "Imperialism expanded trade and investment overseas."
       },
       {
         "label": "C",
-        "text": "A shortage of land in Europe that required moving the population to Africa.",
+        "text": "A shortage of land in Europe that required moving most of the population to Africa and Asia permanently.",
         "isCorrect": false,
         "explanation": "Economic goals focused on resources and markets, and few Europeans settled in most African colonies."
       },
       {
         "label": "D",
-        "text": "The need for new sources of enslaved labor for plantations in the Americas.",
+        "text": "The need for new sources of enslaved labor for plantations in the Americas, which Europeans still depended on.",
         "isCorrect": false,
         "explanation": "The Atlantic slave trade had largely been abolished by this period."
       }
@@ -80,25 +80,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The creation of the League of Nations.",
+        "text": "The creation of the League of Nations to settle disputes among all the countries of the world.",
         "isCorrect": false,
         "explanation": "The League of Nations was created after World War I."
       },
       {
         "label": "B",
-        "text": "A negotiation in which African rulers won their independence from Europe.",
+        "text": "A negotiation in which African rulers won their independence and secured recognition of their borders from Europe.",
         "isCorrect": false,
         "explanation": "African rulers were not represented and independence was not granted."
       },
       {
         "label": "C",
-        "text": "An agreement among all nations to end the slave trade in the Americas.",
+        "text": "An international agreement to end the slave trade in the Americas and to make every colonial government abolish slavery at once.",
         "isCorrect": false,
         "explanation": "The conference concerned partition and trade in Africa."
       },
       {
         "label": "D",
-        "text": "A meeting at which European powers established rules for dividing African territory among themselves, without African participation.",
+        "text": "A meeting where European powers set rules for dividing African territory among themselves, without African participation.",
         "isCorrect": true,
         "explanation": "The conference set guidelines for claiming territory in Africa, which accelerated the Scramble for Africa."
       }
@@ -116,25 +116,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The reforms of the Meiji government in Japan.",
+        "text": "The reforms of the Meiji government in Japan, which modernized the army, the economy and the schools of the nation.",
         "isCorrect": false,
         "explanation": "The passage concerns China and its defeat."
       },
       {
         "label": "B",
-        "text": "The tribute system by which foreign states paid tribute to China.",
+        "text": "The tribute system by which foreign states paid tribute to China and recognized the emperor.",
         "isCorrect": false,
         "explanation": "The passage describes China giving concessions, not receiving tribute."
       },
       {
         "label": "C",
-        "text": "The imposition of unequal treaties that forced Qing China to open ports and grant privileges to Western powers after a military defeat.",
+        "text": "Unequal treaties that forced Qing China to open ports and grant privileges to Western powers after military defeat.",
         "isCorrect": true,
         "explanation": "The Treaty of Nanjing and later agreements opened ports, ceded Hong Kong, required indemnities and granted extraterritorial rights."
       },
       {
         "label": "D",
-        "text": "A voluntary free-trade agreement among equal partners.",
+        "text": "A voluntary free-trade agreement among equal partners, negotiated by Chinese and European diplomats in Beijing.",
         "isCorrect": false,
         "explanation": "The passage says the Qing officials were unable to refuse."
       }
@@ -152,25 +152,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "British rule in India was run as the personal possession of a single monarch, while the Congo was governed by a trading company.",
+        "text": "British rule in India was run as the personal possession of a single monarch, while the Congo was governed by a private trading company whose directors answered to shareholders and to no government at all.",
         "isCorrect": false,
         "explanation": "This reverses the situation: the Congo was Leopold's personal possession."
       },
       {
         "label": "B",
-        "text": "Neither colony produced goods for the European market.",
+        "text": "Neither colony produced goods for the European market, and both were ruled to benefit only local farmers and merchants.",
         "isCorrect": false,
         "explanation": "Both were exploited for resources and goods: Indian cotton and tea, Congo rubber and ivory."
       },
       {
         "label": "C",
-        "text": "Both extracted resources for European economies, but the Congo Free State was Leopold's personal possession and became notorious for the brutality of forced labor in rubber collection, which led to an international outcry.",
+        "text": "Both extracted resources for Europe, but the Congo Free State was Leopold's personal possession, notorious for the brutal forced labor in rubber collection that caused an international outcry.",
         "isCorrect": true,
         "explanation": "Leopold's regime in the Congo was exceptionally harsh and was widely condemned, leading Belgium to take over the colony in 1908."
       },
       {
         "label": "D",
-        "text": "Both were granted self-government in the nineteenth century.",
+        "text": "Both were granted self-government in the nineteenth century, and both were run by elected local assemblies from the start.",
         "isCorrect": false,
         "explanation": "Neither was self-governing in the nineteenth century."
       }
@@ -224,25 +224,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Ethiopia was a colony of Britain and was defended by British troops.",
+        "text": "Ethiopia was a colony of Britain and was defended by British troops sent from Egypt and Sudan.",
         "isCorrect": false,
         "explanation": "Ethiopia was independent and won with its own army."
       },
       {
         "label": "B",
-        "text": "The Italian army was defeated because it had no firearms.",
+        "text": "The Italian army was defeated because it had no firearms and fought with spears and swords alone.",
         "isCorrect": false,
         "explanation": "The Italian army was armed with modern weapons."
       },
       {
         "label": "C",
-        "text": "Ethiopia had a strong centralized leadership, acquired modern weapons and used military organization and diplomacy effectively.",
+        "text": "Ethiopia had strong centralized leadership, acquired modern weapons and used military organization and diplomacy well.",
         "isCorrect": true,
         "explanation": "Under Emperor Menelik II, Ethiopia secured firearms and unified its forces, defeating Italy at Adwa and preserving its independence."
       },
       {
         "label": "D",
-        "text": "The Italians were fighting in their own homeland.",
+        "text": "The Italians were fighting in their own homeland and knew the terrain far better than the Ethiopian forces who had come from the highlands to meet them.",
         "isCorrect": false,
         "explanation": "The battle occurred in Ethiopia."
       }
@@ -260,25 +260,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "It was a campaign of Qing officials to open more ports to Western trade.",
+        "text": "It was a campaign by Qing officials to open more ports to Western trade and to welcome foreign missionaries.",
         "isCorrect": false,
         "explanation": "The Boxers opposed foreign privileges."
       },
       {
         "label": "B",
-        "text": "It was a movement to support Western modernization led by the Meiji emperor.",
+        "text": "It was a movement to support Western-style modernization of Chinese schools and armies, led by the Meiji emperor of Japan.",
         "isCorrect": false,
         "explanation": "The Boxers were anti-foreign, and the Meiji emperor ruled Japan."
       },
       {
         "label": "C",
-        "text": "It grew out of resentment of foreign influence, Christian missionary activity and the privileges of Western powers, combined with the weakness of the Qing state.",
+        "text": "It grew out of resentment of foreign influence, missionary activity and Western privileges, combined with the weakness of the Qing state.",
         "isCorrect": true,
         "explanation": "Boxers attacked foreigners and Chinese Christians in response to foreign domination and economic distress."
       },
       {
         "label": "D",
-        "text": "It was a revolt by Mughal nobles who wanted to restore Mughal rule in China.",
+        "text": "It was a revolt by Mughal nobles who wanted to restore Mughal rule in China and drive the Qing dynasty and all foreigners out of Beijing.",
         "isCorrect": false,
         "explanation": "The Mughals ruled in India, not China."
       }
@@ -296,25 +296,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Both countries rejected Western technology completely.",
+        "text": "Both countries rejected Western technology completely, closed their ports to every foreign ship and forbade their subjects from studying Western languages, science or military methods for the rest of the century.",
         "isCorrect": false,
         "explanation": "Japan embraced Western technology and China's reformers adopted some Western methods."
       },
       {
         "label": "B",
-        "text": "After the Meiji Restoration, Japan pursued rapid state-sponsored industrialization and military modernization and became an imperial power itself, while the Qing government struggled to carry out reforms and lost control over important rights to foreign powers.",
+        "text": "After the Meiji Restoration, Japan industrialized rapidly under state sponsorship and became an imperial power, while the Qing government struggled to reform and lost key rights to foreign powers.",
         "isCorrect": true,
         "explanation": "Japan's centralized reforms strengthened it, while China was hindered by internal rebellions and foreign pressure."
       },
       {
         "label": "C",
-        "text": "China industrialized more quickly than Japan under Qing leadership.",
+        "text": "China industrialized more quickly than Japan under Qing leadership, building a modern navy and railway network that Japan later copied when it began its own reforms in the 1870s.",
         "isCorrect": false,
         "explanation": "Japan industrialized more quickly and thoroughly."
       },
       {
         "label": "D",
-        "text": "Both countries became colonies of Britain.",
+        "text": "Both countries became colonies of Britain, which ruled them directly through governors-general and abolished their imperial courts and armies before the turn of the century.",
         "isCorrect": false,
         "explanation": "Neither Japan nor China became a British colony."
       }
@@ -332,25 +332,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The Mongol conquest of Southeast Asia.",
+        "text": "The Mongol conquest of Southeast Asia, which left many farms without workers and plantations without owners.",
         "isCorrect": false,
         "explanation": "Mongol conquests were centuries earlier."
       },
       {
         "label": "B",
-        "text": "The decline of plantation agriculture.",
+        "text": "The decline of plantation agriculture, which left landowners without any need for more workers in the fields.",
         "isCorrect": false,
         "explanation": "Plantation agriculture was expanding and needed workers."
       },
       {
         "label": "C",
-        "text": "The abolition of slavery in many places, which created a demand for cheap contract labor drawn from India and China.",
+        "text": "The abolition of slavery in many places, which created demand for cheap contract labor from India and China.",
         "isCorrect": true,
         "explanation": "Planters replaced enslaved workers with indentured laborers, often under harsh conditions."
       },
       {
         "label": "D",
-        "text": "The rise of medieval guilds that regulated labor.",
+        "text": "The rise of medieval guilds that regulated labor in towns and set the wages of skilled craftsmen.",
         "isCorrect": false,
         "explanation": "Guilds belonged to an earlier period and did not recruit overseas indentured workers."
       }
@@ -368,19 +368,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "The printing press, the caravel and the compass.",
+        "text": "The printing press, the caravel and the compass, which were used in the fifteenth century.",
         "isCorrect": false,
         "explanation": "These were earlier developments."
       },
       {
         "label": "B",
-        "text": "Airplanes, television and the internet.",
+        "text": "Airplanes, television and the internet, which appeared only later.",
         "isCorrect": false,
         "explanation": "These came in the twentieth century."
       },
       {
         "label": "C",
-        "text": "Sailing galleons and horse-drawn caravans.",
+        "text": "Sailing galleons and horse-drawn caravans, which were the main carriers of freight in the period.",
         "isCorrect": false,
         "explanation": "These had been in use for centuries and did not mark a new level of integration."
       },
@@ -404,19 +404,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "A ban on emigration issued by the Chinese emperor.",
+        "text": "A ban on emigration issued by the Chinese emperor to keep workers at home.",
         "isCorrect": false,
         "explanation": "The act was passed by the United States."
       },
       {
         "label": "B",
-        "text": "An agreement to open all borders to free migration.",
+        "text": "An agreement to open all borders to free migration for workers of every nationality.",
         "isCorrect": false,
         "explanation": "The act did the opposite."
       },
       {
         "label": "C",
-        "text": "Governments competing to recruit large numbers of Chinese workers.",
+        "text": "Governments competing to recruit large numbers of Chinese workers by offering free land, free passage and citizenship.",
         "isCorrect": false,
         "explanation": "The laws restricted and excluded Chinese immigrants."
       },
@@ -440,25 +440,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The Mongols forced Europeans to relocate.",
+        "text": "The Mongols conquered most of Europe and forced Europeans to relocate to the Americas and Australia.",
         "isCorrect": false,
         "explanation": "The Mongols were not involved."
       },
       {
         "label": "B",
-        "text": "Population growth, poverty and famine (such as the Irish famine) pushed people to leave, while opportunities for land and work and cheaper steamship travel drew them to the new lands.",
+        "text": "Population growth, poverty and famine pushed people to leave, while cheap steamship travel and opportunities for land and work drew them to new lands.",
         "isCorrect": true,
         "explanation": "Both push and pull factors shaped these migrations."
       },
       {
         "label": "C",
-        "text": "Europe had a labor shortage, so workers moved to find more laborers.",
+        "text": "Europe had a labor shortage, so workers moved to colonies to find more laborers for European farms and mines.",
         "isCorrect": false,
         "explanation": "Europe had a growing population and, in many areas, a surplus of workers."
       },
       {
         "label": "D",
-        "text": "European governments prohibited all emigration, so people left illegally.",
+        "text": "European governments prohibited all emigration and punished it harshly, so every person who left did so illegally, in secret, and on the cargo ships of smugglers.",
         "isCorrect": false,
         "explanation": "Most European states allowed emigration, which grew substantially."
       }
@@ -476,25 +476,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Latin American economies were isolated from world trade.",
+        "text": "Latin American economies were isolated from world trade and relied on local barter among villages.",
         "isCorrect": false,
         "explanation": "They were closely linked to world trade."
       },
       {
         "label": "B",
-        "text": "Latin American countries led the world in industrial production.",
+        "text": "Latin American countries led the world in industrial production and exported steel and machinery to Europe.",
         "isCorrect": false,
         "explanation": "Industrial production was concentrated in Europe and the United States."
       },
       {
         "label": "C",
-        "text": "Latin America was the leading exporter of manufactured goods to Europe.",
+        "text": "Latin America was the leading exporter of manufactured goods to Europe, while Europe sent back only raw materials such as cotton, coffee and timber.",
         "isCorrect": false,
         "explanation": "Europe exported manufactured goods to Latin America."
       },
       {
         "label": "D",
-        "text": "Latin American economies exported raw materials and agricultural products such as coffee, beef and nitrates, and depended on foreign investment and imported manufactured goods.",
+        "text": "Latin American economies exported raw materials and agricultural goods such as coffee, beef and nitrates, and relied on foreign investment and manufactured imports.",
         "isCorrect": true,
         "explanation": "Many Latin American economies were oriented toward exports for industrial markets and were financed by foreign capital."
       }
@@ -512,25 +512,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A European settler who held land in the colony.",
+        "text": "A European settler who held land in the colony and benefited from the railways.",
         "isCorrect": false,
         "explanation": "A settler would likely support colonial rule."
       },
       {
         "label": "B",
-        "text": "A government minister who wanted the colony to remain under imperial control.",
+        "text": "A government minister who wanted the colony to remain under imperial control and had approved the railway plans.",
         "isCorrect": false,
         "explanation": "A supporter of imperial control would be likely to agree with the claim."
       },
       {
         "label": "C",
-        "text": "A shareholder in a company that profited from the colony's exports.",
+        "text": "A shareholder in a railway company that profited from carrying the colony's exports to the coast.",
         "isCorrect": false,
         "explanation": "This person would be likely to support the administrator's claim."
       },
       {
         "label": "D",
-        "text": "A nationalist from the colony who argued that the railways mainly served to extract resources and strengthen colonial control.",
+        "text": "A nationalist from the colony who argued that the railways mainly served to extract resources and strengthen control.",
         "isCorrect": true,
         "explanation": "Anti-colonial writers often argued that colonial infrastructure was built to serve the colonizer's economy rather than local needs."
       }

@@ -7,9 +7,9 @@
     "stem": "What economic motivation drove many European powers to pursue imperialism in Africa and Asia during the late 19th century?",
     "choices": [
       { "label": "A", "text": "Access to raw materials and new markets for manufactured goods", "isCorrect": true, "explanation": "Industrializing powers sought colonies to secure raw materials for factories and new markets to sell manufactured goods." },
-      { "label": "B", "text": "A complete lack of interest in economic gain", "isCorrect": false, "explanation": "Economic gain was a very significant, well-documented motivation for imperial expansion, not an absence of interest." },
-      { "label": "C", "text": "A desire to give away resources to other nations", "isCorrect": false, "explanation": "Imperialism was about extracting and controlling resources for the colonizing power's benefit, not \"giving away\" resources." },
-      { "label": "D", "text": "Avoiding all foreign trade", "isCorrect": false, "explanation": "Imperialism was fundamentally about expanding trade and economic control, not avoiding foreign trade." }
+      { "label": "B", "text": "A complete lack of interest in economic gain or profit", "isCorrect": false, "explanation": "Economic gain was a very significant, well-documented motivation for imperial expansion, not an absence of interest." },
+      { "label": "C", "text": "A desire to give away resources to other nations as a form of aid and goodwill", "isCorrect": false, "explanation": "Imperialism was about extracting and controlling resources for the colonizing power's benefit, not \"giving away\" resources." },
+      { "label": "D", "text": "Avoiding all foreign trade to protect domestic industry", "isCorrect": false, "explanation": "Imperialism was fundamentally about expanding trade and economic control, not avoiding foreign trade." }
     ],
     "explanation": "European imperial expansion was significantly driven by the desire for raw materials and new markets for manufactured goods.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
@@ -22,10 +22,10 @@
     "difficulty": "medium",
     "stem": "\"Social Darwinism,\" a pseudo-scientific ideology used to justify imperialism, misapplied what biological concept to human societies?",
     "choices": [
-      { "label": "A", "text": "Photosynthesis", "isCorrect": false, "explanation": "Photosynthesis is unrelated to Social Darwinism's misapplication of evolutionary concepts to society." },
+      { "label": "A", "text": "Photosynthesis in plants, which turns light into energy", "isCorrect": false, "explanation": "Photosynthesis is unrelated to Social Darwinism's misapplication of evolutionary concepts to society." },
       { "label": "B", "text": "\"Survival of the fittest\" and natural selection", "isCorrect": true, "explanation": "Social Darwinism misapplied evolutionary ideas about natural selection to justify racial and social hierarchies among human societies." },
-      { "label": "C", "text": "Genetic mutation", "isCorrect": false, "explanation": "While mutation is part of evolutionary biology, Social Darwinism specifically misapplied the \"survival of the fittest\" concept to justify social/racial hierarchies." },
-      { "label": "D", "text": "Cellular respiration", "isCorrect": false, "explanation": "Cellular respiration is unrelated to Social Darwinism's misapplication of evolutionary concepts." }
+      { "label": "C", "text": "Genetic mutation inside individual cells", "isCorrect": false, "explanation": "While mutation is part of evolutionary biology, Social Darwinism specifically misapplied the \"survival of the fittest\" concept to justify social/racial hierarchies." },
+      { "label": "D", "text": "Cellular respiration in animal cells", "isCorrect": false, "explanation": "Cellular respiration is unrelated to Social Darwinism's misapplication of evolutionary concepts." }
     ],
     "explanation": "Social Darwinism misapplied \"survival of the fittest\" and natural selection to justify imperial and racial hierarchies.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
@@ -38,10 +38,10 @@
     "difficulty": "medium",
     "stem": "What role did the concept of the \"civilizing mission\" (or \"mission civilisatrice\") play in justifying European imperialism?",
     "choices": [
-      { "label": "A", "text": "It had no connection to imperialism", "isCorrect": false, "explanation": "This concept had a very significant, well-documented connection to justifying imperial expansion." },
-      { "label": "B", "text": "It framed colonization as a supposedly benevolent effort to bring European civilization, religion, and technology to \"less advanced\" peoples", "isCorrect": true, "explanation": "This ideology presented colonization as a benevolent, uplifting mission, obscuring its exploitative economic realities." },
-      { "label": "C", "text": "It argued against any form of colonization", "isCorrect": false, "explanation": "The civilizing mission concept was used to justify colonization, not argue against it." },
-      { "label": "D", "text": "It promoted complete non-interference in colonized societies", "isCorrect": false, "explanation": "The civilizing mission ideology promoted active intervention and cultural transformation, not non-interference." }
+      { "label": "A", "text": "It had no connection to imperialism, since the ideas were only used in domestic politics", "isCorrect": false, "explanation": "This concept had a very significant, well-documented connection to justifying imperial expansion." },
+      { "label": "B", "text": "It framed colonization as a benevolent effort to bring European civilization and religion to supposedly less advanced peoples", "isCorrect": true, "explanation": "This ideology presented colonization as a benevolent, uplifting mission, obscuring its exploitative economic realities." },
+      { "label": "C", "text": "It argued against any form of colonization, calling it unjust to rule other peoples", "isCorrect": false, "explanation": "The civilizing mission concept was used to justify colonization, not argue against it." },
+      { "label": "D", "text": "It promoted complete non-interference in colonized societies, with European officials forbidden to alter local laws, schools or religion", "isCorrect": false, "explanation": "The civilizing mission ideology promoted active intervention and cultural transformation, not non-interference." }
     ],
     "explanation": "The \"civilizing mission\" ideology justified colonization as a supposedly benevolent effort to bring European civilization to colonized peoples.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
@@ -54,10 +54,10 @@
     "difficulty": "hard",
     "stem": "How did industrialization's need for raw materials directly connect to the rationale for imperial expansion?",
     "choices": [
-      { "label": "A", "text": "Industrialization required no raw materials from colonies", "isCorrect": false, "explanation": "Industrialization required substantial raw materials, many of which colonial powers sought to secure through imperial expansion." },
-      { "label": "B", "text": "Industrializing nations sought colonies partly to secure reliable access to raw materials (like rubber, cotton, and minerals) needed for their factories", "isCorrect": true, "explanation": "Colonies provided a reliable supply of raw materials that fed the growing demands of industrial factories back home." },
-      { "label": "C", "text": "Colonies were sought exclusively for their scenic beauty", "isCorrect": false, "explanation": "While some other motivations existed, economic and resource access was the primary driver, not scenic beauty." },
-      { "label": "D", "text": "There was no relationship between industrialization and imperial expansion", "isCorrect": false, "explanation": "There was a very significant, well-documented relationship between industrialization's resource needs and imperial expansion." }
+      { "label": "A", "text": "Industrialization required no raw materials from colonies, because European farms and mines supplied everything factories needed", "isCorrect": false, "explanation": "Industrialization required substantial raw materials, many of which colonial powers sought to secure through imperial expansion." },
+      { "label": "B", "text": "Industrializing nations sought colonies partly to secure raw materials such as rubber, cotton and minerals for their factories", "isCorrect": true, "explanation": "Colonies provided a reliable supply of raw materials that fed the growing demands of industrial factories back home." },
+      { "label": "C", "text": "Colonies were sought exclusively for their scenic beauty and as places for European aristocrats to take vacations", "isCorrect": false, "explanation": "While some other motivations existed, economic and resource access was the primary driver, not scenic beauty." },
+      { "label": "D", "text": "There was no relationship between industrialization and imperial expansion, since the two developed independently of each other", "isCorrect": false, "explanation": "There was a very significant, well-documented relationship between industrialization's resource needs and imperial expansion." }
     ],
     "explanation": "Industrializing nations sought colonies to secure reliable access to raw materials needed for their factories.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
@@ -71,9 +71,9 @@
     "stem": "Along with economic motivations, what political/strategic factor also drove European imperial competition during this era?",
     "choices": [
       { "label": "A", "text": "National prestige and competition among European powers for global influence and strategic territory", "isCorrect": true, "explanation": "European powers competed for colonies partly to enhance national prestige and secure strategic advantages over rivals." },
-      { "label": "B", "text": "A complete absence of rivalry between European nations", "isCorrect": false, "explanation": "There was significant, well-documented rivalry and competition among European powers during this era of imperial expansion." },
-      { "label": "C", "text": "Random chance with no strategic considerations", "isCorrect": false, "explanation": "Imperial expansion involved substantial strategic planning and calculation, not random chance." },
-      { "label": "D", "text": "Exclusively religious considerations with no political motivation", "isCorrect": false, "explanation": "While religious motivations did play some role, political/strategic competition was a significant additional factor, not the exclusive one." }
+      { "label": "B", "text": "A complete absence of rivalry between European nations, which cooperated peacefully on every colonial question", "isCorrect": false, "explanation": "There was significant, well-documented rivalry and competition among European powers during this era of imperial expansion." },
+      { "label": "C", "text": "Random chance, with no strategic considerations guiding where governments chose to claim territory", "isCorrect": false, "explanation": "Imperial expansion involved substantial strategic planning and calculation, not random chance." },
+      { "label": "D", "text": "Exclusively religious considerations with no political motivation, as governments acted only for their churches", "isCorrect": false, "explanation": "While religious motivations did play some role, political/strategic competition was a significant additional factor, not the exclusive one." }
     ],
     "explanation": "National prestige and strategic competition among European powers also drove imperial expansion, alongside economic motivations.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "New technologies, such as advances in weaponry (like the machine gun) and medicine (like quinine to treat malaria), affected imperialism in what way?",
     "choices": [
-      { "label": "A", "text": "They had no effect on imperial expansion", "isCorrect": false, "explanation": "These technologies had substantial, well-documented effects on facilitating imperial expansion." },
-      { "label": "B", "text": "They gave European powers significant military and logistical advantages, facilitating conquest and colonization of previously difficult-to-control regions", "isCorrect": true, "explanation": "Weapons like the machine gun and medicines like quinine let European powers overcome previous military and health obstacles to colonization." },
-      { "label": "C", "text": "They made colonization completely impossible", "isCorrect": false, "explanation": "These technologies actually facilitated, rather than prevented, colonization." },
-      { "label": "D", "text": "They were used exclusively for peaceful purposes with no military application", "isCorrect": false, "explanation": "Technologies like the machine gun had clear and significant military applications in this context." }
+      { "label": "A", "text": "They had no effect on imperial expansion, since African and Asian armies were already equally well armed", "isCorrect": false, "explanation": "These technologies had substantial, well-documented effects on facilitating imperial expansion." },
+      { "label": "B", "text": "They gave European powers military and logistical advantages, making conquest of previously difficult regions easier", "isCorrect": true, "explanation": "Weapons like the machine gun and medicines like quinine let European powers overcome previous military and health obstacles to colonization." },
+      { "label": "C", "text": "They made colonization completely impossible, because European soldiers could not use the new weapons", "isCorrect": false, "explanation": "These technologies actually facilitated, rather than prevented, colonization." },
+      { "label": "D", "text": "They were used exclusively for peaceful purposes with no military application, such as in hospitals and schools", "isCorrect": false, "explanation": "Technologies like the machine gun had clear and significant military applications in this context." }
     ],
     "explanation": "Advances in weaponry and medicine gave European powers significant military and logistical advantages, facilitating imperial expansion.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/rationales-for-imperialism",
@@ -102,10 +102,10 @@
     "difficulty": "easy",
     "stem": "The \"Scramble for Africa\" refers to what historical process during the late 19th century?",
     "choices": [
-      { "label": "A", "text": "African nations rapidly colonizing Europe", "isCorrect": false, "explanation": "This reverses the actual direction of colonization during this specific historical process." },
+      { "label": "A", "text": "African nations rapidly colonizing Europe and dividing its territory among themselves", "isCorrect": false, "explanation": "This reverses the actual direction of colonization during this specific historical process." },
       { "label": "B", "text": "European powers rapidly dividing and colonizing most of the African continent among themselves", "isCorrect": true, "explanation": "European powers competitively divided and colonized nearly the entire African continent within a few decades." },
-      { "label": "C", "text": "A peaceful trade agreement with no territorial claims", "isCorrect": false, "explanation": "The \"Scramble for Africa\" involved competitive territorial claims and colonization, not simply peaceful trade with no territorial ambitions." },
-      { "label": "D", "text": "African unification into a single independent state", "isCorrect": false, "explanation": "This process resulted in African territory being divided among European colonial powers, not African unification into one independent state." }
+      { "label": "C", "text": "A peaceful trade agreement in which European and African states exchanged goods without making territorial claims", "isCorrect": false, "explanation": "The \"Scramble for Africa\" involved competitive territorial claims and colonization, not simply peaceful trade with no territorial ambitions." },
+      { "label": "D", "text": "African unification into a single independent state under a continental government", "isCorrect": false, "explanation": "This process resulted in African territory being divided among European colonial powers, not African unification into one independent state." }
     ],
     "explanation": "The \"Scramble for Africa\" describes European powers rapidly dividing and colonizing most of the African continent among themselves.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/imperial-expansion",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "The Berlin Conference (1884-1885) was significant because it did what?",
     "choices": [
-      { "label": "A", "text": "Granted independence to all African nations", "isCorrect": false, "explanation": "This conference was about European division of African territory, not African independence." },
-      { "label": "B", "text": "Established rules among European powers for dividing and claiming African territory, without African representation", "isCorrect": true, "explanation": "European powers met to set rules for claiming African territory among themselves, with no African representatives present." },
-      { "label": "C", "text": "Ended all European interest in Africa", "isCorrect": false, "explanation": "This conference actually intensified, rather than ended, European interest in dividing and colonizing Africa." },
-      { "label": "D", "text": "Was organized and led by African leaders", "isCorrect": false, "explanation": "This conference was organized and attended by European powers, without African representation, not led by African leaders." }
+      { "label": "A", "text": "Granted independence to all African nations and recognized their existing borders at the end of the conference", "isCorrect": false, "explanation": "This conference was about European division of African territory, not African independence." },
+      { "label": "B", "text": "Set rules for European powers to divide and claim African territory without African representation", "isCorrect": true, "explanation": "European powers met to set rules for claiming African territory among themselves, with no African representatives present." },
+      { "label": "C", "text": "Ended all European interest in Africa and withdrew European troops from the continent", "isCorrect": false, "explanation": "This conference actually intensified, rather than ended, European interest in dividing and colonizing Africa." },
+      { "label": "D", "text": "Was organized and led by African leaders to resist European expansion", "isCorrect": false, "explanation": "This conference was organized and attended by European powers, without African representation, not led by African leaders." }
     ],
     "explanation": "The Berlin Conference established rules among European powers for dividing African territory, without any African representation.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/imperial-expansion",
@@ -150,10 +150,10 @@
     "difficulty": "hard",
     "stem": "How did British colonization of India evolve from primarily commercial control (via the British East India Company) to direct government rule?",
     "choices": [
-      { "label": "A", "text": "It never changed from commercial control", "isCorrect": false, "explanation": "This control did significantly change over time, moving from company rule to direct government rule." },
-      { "label": "B", "text": "Following events like the Indian Rebellion of 1857, the British government took direct control of India from the East India Company, establishing the British Raj", "isCorrect": true, "explanation": "After the 1857 rebellion, the British government dissolved the East India Company's rule and took direct control, establishing the British Raj." },
-      { "label": "C", "text": "India gained full independence at this point", "isCorrect": false, "explanation": "India did not gain independence at this point; instead, direct British government control (the Raj) was established." },
-      { "label": "D", "text": "The East India Company retained exclusive control throughout this entire era with no government involvement", "isCorrect": false, "explanation": "Company control specifically ended, transitioning to direct British government administration (the Raj), not remaining unchanged." }
+      { "label": "A", "text": "It never changed from commercial control, since the East India Company kept its private army and tax powers", "isCorrect": false, "explanation": "This control did significantly change over time, moving from company rule to direct government rule." },
+      { "label": "B", "text": "After the Indian Rebellion of 1857, the British government took direct control of India from the East India Company (the British Raj)", "isCorrect": true, "explanation": "After the 1857 rebellion, the British government dissolved the East India Company's rule and took direct control, establishing the British Raj." },
+      { "label": "C", "text": "India gained full independence at this point and the East India Company was dissolved by Indian leaders", "isCorrect": false, "explanation": "India did not gain independence at this point; instead, direct British government control (the Raj) was established." },
+      { "label": "D", "text": "The East India Company retained exclusive control throughout this entire era, with no involvement or oversight from the British government", "isCorrect": false, "explanation": "Company control specifically ended, transitioning to direct British government administration (the Raj), not remaining unchanged." }
     ],
     "explanation": "Following the Indian Rebellion of 1857, the British government took direct control of India from the East India Company, establishing the British Raj.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/imperial-expansion",
@@ -167,9 +167,9 @@
     "stem": "European imperial powers also expanded significantly into which Asian region during this era, competing for spheres of influence and colonial territory?",
     "choices": [
       { "label": "A", "text": "Southeast Asia (e.g. French Indochina, British Burma/Malaya, Dutch East Indies)", "isCorrect": true, "explanation": "European powers competed extensively for territory and influence across Southeast Asia during this era." },
-      { "label": "B", "text": "Antarctica exclusively", "isCorrect": false, "explanation": "Antarctica was not a site of this type of colonial economic/territorial competition during this era." },
-      { "label": "C", "text": "The uninhabited regions of the Sahara exclusively", "isCorrect": false, "explanation": "While North Africa was involved in broader imperial competition, this doesn't describe the significant Asian expansion referenced in the question." },
-      { "label": "D", "text": "No Asian expansion occurred during this era", "isCorrect": false, "explanation": "Significant European imperial expansion into Asia did occur during this era, contradicting this claim." }
+      { "label": "B", "text": "Antarctica exclusively, where powers set up settler colonies", "isCorrect": false, "explanation": "Antarctica was not a site of this type of colonial economic/territorial competition during this era." },
+      { "label": "C", "text": "The uninhabited regions of the Sahara exclusively, where powers competed for desert oases", "isCorrect": false, "explanation": "While North Africa was involved in broader imperial competition, this doesn't describe the significant Asian expansion referenced in the question." },
+      { "label": "D", "text": "No Asian expansion occurred during this era, as European powers focused on Africa only", "isCorrect": false, "explanation": "Significant European imperial expansion into Asia did occur during this era, contradicting this claim." }
     ],
     "explanation": "European powers expanded significantly into Southeast Asia during this era, establishing colonies like French Indochina and the Dutch East Indies.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/imperial-expansion",
@@ -198,10 +198,10 @@
     "difficulty": "easy",
     "stem": "How did colonized peoples typically respond to European imperial expansion and control?",
     "choices": [
-      { "label": "A", "text": "With universal, complete passive acceptance and no resistance whatsoever", "isCorrect": false, "explanation": "Resistance took many forms across different colonized societies; universal passive acceptance does not accurately describe this varied history." },
+      { "label": "A", "text": "With universal, complete passive acceptance and no resistance whatsoever, even where colonial rulers seized their land and taxed them", "isCorrect": false, "explanation": "Resistance took many forms across different colonized societies; universal passive acceptance does not accurately describe this varied history." },
       { "label": "B", "text": "With varied responses, including armed resistance, diplomatic negotiation, and cultural/religious revitalization movements", "isCorrect": true, "explanation": "Colonized peoples responded to imperialism through a wide range of strategies, from armed resistance to diplomacy and cultural revival movements." },
-      { "label": "C", "text": "By immediately adopting all aspects of European culture with no resistance", "isCorrect": false, "explanation": "While some cultural adaptation did occur in various contexts, this vastly overstates uniform, uncontested cultural adoption, ignoring substantial resistance." },
-      { "label": "D", "text": "They had no ability to respond in any way", "isCorrect": false, "explanation": "Colonized peoples did have and exercise various forms of agency and response, contrary to this claim." }
+      { "label": "C", "text": "By immediately adopting every aspect of European culture and abandoning their own traditions", "isCorrect": false, "explanation": "While some cultural adaptation did occur in various contexts, this vastly overstates uniform, uncontested cultural adoption, ignoring substantial resistance." },
+      { "label": "D", "text": "They had no ability to respond in any way, since colonial governments controlled all communication", "isCorrect": false, "explanation": "Colonized peoples did have and exercise various forms of agency and response, contrary to this claim." }
     ],
     "explanation": "Colonized peoples responded to imperialism through varied strategies, including armed resistance, diplomacy, and cultural revitalization.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "The Ethiopian victory over Italian colonial forces at the Battle of Adwa (1896) is historically significant because it represents what?",
     "choices": [
-      { "label": "A", "text": "A complete European conquest of Ethiopia", "isCorrect": false, "explanation": "This battle actually resulted in Ethiopian victory and preserved independence, the opposite of European conquest." },
-      { "label": "B", "text": "A rare successful African military resistance that preserved Ethiopian independence from European colonization", "isCorrect": true, "explanation": "Ethiopia's victory at Adwa was a rare and significant example of successful African resistance preserving independence during this era of imperial expansion." },
-      { "label": "C", "text": "Ethiopia's surrender to Italy", "isCorrect": false, "explanation": "Ethiopia won this battle, rather than surrendering to Italy." },
-      { "label": "D", "text": "An event with no lasting historical significance", "isCorrect": false, "explanation": "This battle has significant, well-documented historical significance as a rare successful resistance to European colonization." }
+      { "label": "A", "text": "A complete European conquest of Ethiopia that ended its ancient monarchy", "isCorrect": false, "explanation": "This battle actually resulted in Ethiopian victory and preserved independence, the opposite of European conquest." },
+      { "label": "B", "text": "A rare African military victory that preserved Ethiopian independence from European colonization", "isCorrect": true, "explanation": "Ethiopia's victory at Adwa was a rare and significant example of successful African resistance preserving independence during this era of imperial expansion." },
+      { "label": "C", "text": "Ethiopia's surrender to Italy after a brief and one-sided campaign", "isCorrect": false, "explanation": "Ethiopia won this battle, rather than surrendering to Italy." },
+      { "label": "D", "text": "An event with no lasting historical significance, soon forgotten by Europeans and Africans alike across the continent", "isCorrect": false, "explanation": "This battle has significant, well-documented historical significance as a rare successful resistance to European colonization." }
     ],
     "explanation": "The Battle of Adwa was a rare successful African military resistance that preserved Ethiopian independence from European colonization.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "The Boxer Rebellion (1899-1901) in China was a resistance movement primarily directed against what?",
     "choices": [
-      { "label": "A", "text": "Chinese internal politics exclusively, with no foreign connection", "isCorrect": false, "explanation": "The Boxer Rebellion was specifically and significantly directed against foreign influence, not purely internal Chinese politics without foreign connection." },
+      { "label": "A", "text": "Chinese internal politics exclusively, with no connection to foreign powers, missionaries or the unequal treaties", "isCorrect": false, "explanation": "The Boxer Rebellion was specifically and significantly directed against foreign influence, not purely internal Chinese politics without foreign connection." },
       { "label": "B", "text": "Foreign (especially European, American, and Japanese) influence, missionaries, and economic domination in China", "isCorrect": true, "explanation": "The Boxer Rebellion targeted foreign influence, missionaries, and economic domination that many Chinese resented." },
-      { "label": "C", "text": "A movement supporting increased foreign control", "isCorrect": false, "explanation": "This movement opposed, rather than supported, foreign control, the opposite of this claim." },
-      { "label": "D", "text": "An uprising with no connection to imperialism", "isCorrect": false, "explanation": "The Boxer Rebellion had a very direct, significant connection to resisting foreign imperial influence in China." }
+      { "label": "C", "text": "A movement that supported greater foreign control over Chinese ports and trade", "isCorrect": false, "explanation": "This movement opposed, rather than supported, foreign control, the opposite of this claim." },
+      { "label": "D", "text": "An uprising with no connection to imperialism, driven only by a bad harvest in one province", "isCorrect": false, "explanation": "The Boxer Rebellion had a very direct, significant connection to resisting foreign imperial influence in China." }
     ],
     "explanation": "The Boxer Rebellion was directed against foreign influence, missionaries, and economic domination in China.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
@@ -246,10 +246,10 @@
     "difficulty": "hard",
     "stem": "How did some resistance movements against imperialism combine traditional/religious elements with anti-colonial goals?",
     "choices": [
-      { "label": "A", "text": "Resistance movements never incorporated any religious or traditional elements", "isCorrect": false, "explanation": "Many resistance movements meaningfully incorporated religious/traditional elements, contrary to this claim." },
-      { "label": "B", "text": "Some movements, drawing on religious or traditional cultural authority, mobilized populations against foreign imperial control by framing resistance in spiritual or culturally significant terms", "isCorrect": true, "explanation": "Some resistance movements used religious or traditional cultural authority to mobilize and unify populations against colonial control." },
-      { "label": "C", "text": "All resistance movements were purely secular and modern with no traditional elements", "isCorrect": false, "explanation": "Many resistance movements were not purely secular; they often drew significantly on traditional/religious frameworks." },
-      { "label": "D", "text": "Religious and traditional elements always supported colonial powers, never resistance", "isCorrect": false, "explanation": "Religious/traditional elements were frequently mobilized in opposition to colonial powers, not always in their support." }
+      { "label": "A", "text": "Resistance movements never incorporated any religious or traditional elements and relied only on modern ideas", "isCorrect": false, "explanation": "Many resistance movements meaningfully incorporated religious/traditional elements, contrary to this claim." },
+      { "label": "B", "text": "Some movements drew on religious or traditional authority to mobilize people against foreign rule, framing resistance in spiritual terms", "isCorrect": true, "explanation": "Some resistance movements used religious or traditional cultural authority to mobilize and unify populations against colonial control." },
+      { "label": "C", "text": "All resistance movements were purely secular and modern, with no traditional elements in their leadership or ideas", "isCorrect": false, "explanation": "Many resistance movements were not purely secular; they often drew significantly on traditional/religious frameworks." },
+      { "label": "D", "text": "Religious and traditional elements always supported the colonial powers, and no leader or movement ever used faith to oppose foreign rule anywhere in Africa or Asia", "isCorrect": false, "explanation": "Religious/traditional elements were frequently mobilized in opposition to colonial powers, not always in their support." }
     ],
     "explanation": "Some resistance movements drew on religious or traditional cultural authority to mobilize populations against colonial control.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "What role did emerging nationalist movements and organizations (such as the Indian National Congress, founded in 1885) play in responding to colonial rule?",
     "choices": [
-      { "label": "A", "text": "They had no significant role or influence", "isCorrect": false, "explanation": "Organizations like the Indian National Congress had substantial, well-documented roles and influence in anti-colonial movements." },
-      { "label": "B", "text": "They organized educated colonial subjects to advocate for greater rights, self-governance, and eventually independence from colonial rule", "isCorrect": true, "explanation": "Nationalist organizations mobilized educated colonial subjects to push for greater rights and, eventually, independence." },
-      { "label": "C", "text": "They exclusively supported continued colonial rule with no reform demands", "isCorrect": false, "explanation": "Such organizations generally advocated for greater self-governance and eventual independence, not continued unchanged colonial rule." },
-      { "label": "D", "text": "They had no connection to any independence movements", "isCorrect": false, "explanation": "These organizations had very direct, significant connections to later independence movements." }
+      { "label": "A", "text": "They had no significant role or influence, since colonial governments banned every political organization", "isCorrect": false, "explanation": "Organizations like the Indian National Congress had substantial, well-documented roles and influence in anti-colonial movements." },
+      { "label": "B", "text": "They organized educated colonial subjects to press for greater rights, self-government and eventually independence", "isCorrect": true, "explanation": "Nationalist organizations mobilized educated colonial subjects to push for greater rights and, eventually, independence." },
+      { "label": "C", "text": "They exclusively supported continued colonial rule, making no demands for reform of any kind and urging members to obey officials", "isCorrect": false, "explanation": "Such organizations generally advocated for greater self-governance and eventual independence, not continued unchanged colonial rule." },
+      { "label": "D", "text": "They had no connection to any independence movements and focused solely on social clubs and charity", "isCorrect": false, "explanation": "These organizations had very direct, significant connections to later independence movements." }
     ],
     "explanation": "Nationalist organizations like the Indian National Congress organized colonial subjects to advocate for greater rights and eventual independence.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
@@ -278,10 +278,10 @@
     "difficulty": "medium",
     "stem": "Why were some resistance efforts against European imperialism ultimately unsuccessful in preventing colonization, despite significant local resistance?",
     "choices": [
-      { "label": "A", "text": "Local resistance movements had no motivation to resist", "isCorrect": false, "explanation": "Resistance movements had substantial, well-documented motivation to resist colonization." },
-      { "label": "B", "text": "European powers often possessed superior military technology and could sometimes exploit existing regional or political divisions among colonized populations", "isCorrect": true, "explanation": "Superior weaponry combined with the ability to exploit local political divisions often gave European powers a decisive advantage over resistance efforts." },
-      { "label": "C", "text": "European powers had no military advantages of any kind", "isCorrect": false, "explanation": "European powers, especially by this era, typically possessed substantial, often decisive, military and technological advantages." },
-      { "label": "D", "text": "All resistance efforts were completely successful with no colonization occurring anywhere", "isCorrect": false, "explanation": "While there were some notable resistance successes, like Ethiopia, the overall historical pattern involved extensive European colonization succeeding across much of Africa and Asia." }
+      { "label": "A", "text": "Local resistance movements had no motivation to resist foreign rule, since they benefited from it", "isCorrect": false, "explanation": "Resistance movements had substantial, well-documented motivation to resist colonization." },
+      { "label": "B", "text": "European powers often had superior military technology and could exploit divisions among colonized populations", "isCorrect": true, "explanation": "Superior weaponry combined with the ability to exploit local political divisions often gave European powers a decisive advantage over resistance efforts." },
+      { "label": "C", "text": "European powers had no military advantages of any kind, and lost nearly every battle they fought", "isCorrect": false, "explanation": "European powers, especially by this era, typically possessed substantial, often decisive, military and technological advantages." },
+      { "label": "D", "text": "All resistance efforts were completely successful with no colonization occurring anywhere in Africa or Asia during the century", "isCorrect": false, "explanation": "While there were some notable resistance successes, like Ethiopia, the overall historical pattern involved extensive European colonization succeeding across much of Africa and Asia." }
     ],
     "explanation": "Superior European military technology and the ability to exploit local political divisions often overcame local resistance efforts.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/resistance-to-imperialism",
@@ -294,10 +294,10 @@
     "difficulty": "easy",
     "stem": "How did imperialism affect the global economy during this era, in terms of the relationship between colonizing and colonized regions?",
     "choices": [
-      { "label": "A", "text": "It had no economic effect on either colonizers or colonized regions", "isCorrect": false, "explanation": "Imperialism had very substantial, well-documented economic effects on both colonizing and colonized regions." },
-      { "label": "B", "text": "It typically restructured colonized economies to primarily serve the economic interests of the colonizing power (e.g., through raw material extraction and cash crop production)", "isCorrect": true, "explanation": "Colonial economies were typically reorganized around extracting raw materials and cash crops that primarily benefited the colonizing power." },
-      { "label": "C", "text": "It made colonized economies completely independent of the colonizing power", "isCorrect": false, "explanation": "Imperial economic structures typically deepened, rather than reduced, the economic dependence of colonies on the colonizing power." },
-      { "label": "D", "text": "Colonized regions became wealthier than colonizing powers as a direct universal result", "isCorrect": false, "explanation": "This reverses the general historical economic pattern; colonizing powers generally extracted wealth and resources from colonies." }
+      { "label": "A", "text": "It had no economic effect on either colonizers or colonized regions, which traded only with themselves", "isCorrect": false, "explanation": "Imperialism had very substantial, well-documented economic effects on both colonizing and colonized regions." },
+      { "label": "B", "text": "It restructured colonized economies to serve the colonizing power, through raw material extraction and cash crop production", "isCorrect": true, "explanation": "Colonial economies were typically reorganized around extracting raw materials and cash crops that primarily benefited the colonizing power." },
+      { "label": "C", "text": "It made colonized economies completely independent of the colonizing power and ended all trade between them", "isCorrect": false, "explanation": "Imperial economic structures typically deepened, rather than reduced, the economic dependence of colonies on the colonizing power." },
+      { "label": "D", "text": "Colonized regions became far wealthier than colonizing powers as a direct and universal result of imperial rule over them", "isCorrect": false, "explanation": "This reverses the general historical economic pattern; colonizing powers generally extracted wealth and resources from colonies." }
     ],
     "explanation": "Imperialism typically restructured colonized economies around raw material extraction and cash crop production serving the colonizing power's interests.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/global-economic-development",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "What term describes an economic system where a colony's economy is restructured to focus on producing a limited number of raw materials or cash crops primarily for export to the colonizing power?",
     "choices": [
-      { "label": "A", "text": "A self-sufficient economy", "isCorrect": false, "explanation": "This describes the opposite; these colonial economies were typically not self-sufficient, being restructured around export to the colonizer instead." },
+      { "label": "A", "text": "A self-sufficient subsistence economy", "isCorrect": false, "explanation": "This describes the opposite; these colonial economies were typically not self-sufficient, being restructured around export to the colonizer instead." },
       { "label": "B", "text": "A cash-crop/export-oriented colonial economy", "isCorrect": true, "explanation": "This system focused colonial production on a narrow set of raw materials or cash crops destined primarily for export to the colonizer." },
       { "label": "C", "text": "A completely isolated, closed economic system", "isCorrect": false, "explanation": "This type of colonial economy was deeply connected to, not isolated from, international trade with the colonizing power." },
-      { "label": "D", "text": "A purely industrial, manufacturing-based economy with no agricultural component", "isCorrect": false, "explanation": "This type of colonial economy typically focused on raw material or agricultural production for export, not primarily manufacturing." }
+      { "label": "D", "text": "A purely industrial, manufacturing-based economy", "isCorrect": false, "explanation": "This type of colonial economy typically focused on raw material or agricultural production for export, not primarily manufacturing." }
     ],
     "explanation": "A cash-crop/export-oriented colonial economy restructures a colony's production around a limited set of raw materials or crops for export.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/global-economic-development",
@@ -327,9 +327,9 @@
     "stem": "How did the development of railroads and other infrastructure in colonized territories often primarily serve the interests of the colonizing power?",
     "choices": [
       { "label": "A", "text": "Infrastructure was built exclusively for the benefit of colonized populations, with no connection to colonial economic interests", "isCorrect": false, "explanation": "Infrastructure development significantly and primarily served colonial economic interests, particularly resource extraction and export." },
-      { "label": "B", "text": "Railroads were often built to efficiently transport raw materials from resource-extraction areas to ports for export, benefiting colonial economic interests", "isCorrect": true, "explanation": "Colonial railroad networks were typically designed to move raw materials from extraction sites to ports for shipment, serving the colonizer's economic interests." },
-      { "label": "C", "text": "No infrastructure was ever built in colonized territories", "isCorrect": false, "explanation": "Significant infrastructure, especially railroads, was built in various colonized territories during this era." },
-      { "label": "D", "text": "Infrastructure development had no economic purpose whatsoever", "isCorrect": false, "explanation": "Infrastructure development had a very clear economic purpose connected to resource extraction and export." }
+      { "label": "B", "text": "Railroads were often built to carry raw materials from extraction areas to ports for export, serving colonial economic interests", "isCorrect": true, "explanation": "Colonial railroad networks were typically designed to move raw materials from extraction sites to ports for shipment, serving the colonizer's economic interests." },
+      { "label": "C", "text": "No infrastructure was ever built in colonized territories, since colonial governments refused to spend money there", "isCorrect": false, "explanation": "Significant infrastructure, especially railroads, was built in various colonized territories during this era." },
+      { "label": "D", "text": "Infrastructure development had no economic purpose whatsoever and was built only for decoration and ceremony", "isCorrect": false, "explanation": "Infrastructure development had a very clear economic purpose connected to resource extraction and export." }
     ],
     "explanation": "Colonial railroads were typically built to efficiently transport raw materials to ports for export, primarily serving the colonizer's economic interests.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/global-economic-development",
@@ -342,10 +342,10 @@
     "difficulty": "hard",
     "stem": "How did imperialism contribute to global economic inequality that persisted beyond the formal colonial era?",
     "choices": [
-      { "label": "A", "text": "It had no lasting economic effects beyond the colonial period itself", "isCorrect": false, "explanation": "Colonial-era economic structures had substantial, well-documented lasting effects beyond the formal colonial period." },
-      { "label": "B", "text": "The economic structures imposed during colonization (e.g., reliance on raw material export, limited industrial development) often left long-term legacies of economic dependency and underdevelopment in former colonies", "isCorrect": true, "explanation": "Colonial economic structures often left lasting legacies of dependency and limited industrial development that persisted after independence." },
-      { "label": "C", "text": "Former colonies became immediately wealthier than former colonial powers after independence", "isCorrect": false, "explanation": "This does not accurately describe the general historical pattern of persistent economic disparities many former colonies faced." },
-      { "label": "D", "text": "There is no historical connection between colonial-era economic structures and later global economic patterns", "isCorrect": false, "explanation": "Historians and economists have identified significant, well-documented connections between colonial-era structures and later global economic patterns." }
+      { "label": "A", "text": "It had no lasting economic effects beyond the colonial period itself, since former colonies quickly restored their pre-colonial economies", "isCorrect": false, "explanation": "Colonial-era economic structures had substantial, well-documented lasting effects beyond the formal colonial period." },
+      { "label": "B", "text": "The economic structures imposed during colonization, such as reliance on raw material exports and limited industry, often left legacies of dependency and underdevelopment", "isCorrect": true, "explanation": "Colonial economic structures often left lasting legacies of dependency and limited industrial development that persisted after independence." },
+      { "label": "C", "text": "Former colonies became immediately wealthier than former colonial powers after independence, as they kept all export profits", "isCorrect": false, "explanation": "This does not accurately describe the general historical pattern of persistent economic disparities many former colonies faced." },
+      { "label": "D", "text": "There is no historical connection between colonial-era economic structures and later global economic patterns, which historians explain entirely by differences in climate and geography", "isCorrect": false, "explanation": "Historians and economists have identified significant, well-documented connections between colonial-era structures and later global economic patterns." }
     ],
     "explanation": "Colonial-era economic structures often left lasting legacies of economic dependency and underdevelopment in former colonies.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/global-economic-development",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "What role did European and American investment/banking capital play in the global economy during this era of imperialism?",
     "choices": [
-      { "label": "A", "text": "No investment or banking activity occurred during this era", "isCorrect": false, "explanation": "Significant investment and banking activity occurred and played a substantial role during this era." },
-      { "label": "B", "text": "Capital flowed from industrialized nations into colonial and developing economies, often funding infrastructure and resource extraction projects that served the investing nations' interests", "isCorrect": true, "explanation": "Investment capital from industrialized nations funded infrastructure and extraction projects that primarily benefited the investing nations." },
-      { "label": "C", "text": "All investment flowed exclusively from colonies to colonizing powers with no capital output from industrialized nations", "isCorrect": false, "explanation": "This reverses the actual capital flow pattern; industrialized nations invested capital into colonial and developing economies, often for extractive purposes." },
-      { "label": "D", "text": "Banking had no connection to imperial economic activity", "isCorrect": false, "explanation": "Banking and finance had significant, well-documented connections to imperial economic activity during this era." }
+      { "label": "A", "text": "No investment or banking activity occurred during this era, because governments forbade the export of capital", "isCorrect": false, "explanation": "Significant investment and banking activity occurred and played a substantial role during this era." },
+      { "label": "B", "text": "Capital flowed from industrialized nations into colonial economies, often funding infrastructure and resource extraction that served investors", "isCorrect": true, "explanation": "Investment capital from industrialized nations funded infrastructure and extraction projects that primarily benefited the investing nations." },
+      { "label": "C", "text": "All investment flowed exclusively from colonies to colonizing powers, and no capital at all was exported by banks in industrialized nations", "isCorrect": false, "explanation": "This reverses the actual capital flow pattern; industrialized nations invested capital into colonial and developing economies, often for extractive purposes." },
+      { "label": "D", "text": "Banking had no connection to imperial economic activity, since banks refused to lend money to colonial governments or to fund any projects overseas", "isCorrect": false, "explanation": "Banking and finance had significant, well-documented connections to imperial economic activity during this era." }
     ],
     "explanation": "Investment capital flowed from industrialized nations into colonial economies, funding infrastructure and extraction projects that served investors' interests.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/global-economic-development",
@@ -374,10 +374,10 @@
     "difficulty": "easy",
     "stem": "What was \"indentured servitude,\" a labor system that grew significantly following the decline of slavery in many parts of the British Empire?",
     "choices": [
-      { "label": "A", "text": "A completely voluntary system with no obligations of any kind", "isCorrect": false, "explanation": "Indentured servitude involved binding contractual obligations, not simply unconstrained voluntary work with no obligations." },
-      { "label": "B", "text": "A system where workers signed contracts to work for a set period (often under harsh conditions) in exchange for passage, wages, or other compensation", "isCorrect": true, "explanation": "Indentured laborers were bound by contract to work for a set term, often under harsh conditions, in exchange for compensation like passage or wages." },
-      { "label": "C", "text": "A system exclusively for European workers", "isCorrect": false, "explanation": "Indentured servitude notably involved large numbers of workers from regions like India and China, not exclusively European workers." },
-      { "label": "D", "text": "A system with no historical significance", "isCorrect": false, "explanation": "Indentured servitude had significant historical significance in shaping migration patterns and labor systems during this era." }
+      { "label": "A", "text": "A completely voluntary system with no obligations of any kind, in which workers could quit and leave their employers whenever they chose", "isCorrect": false, "explanation": "Indentured servitude involved binding contractual obligations, not simply unconstrained voluntary work with no obligations." },
+      { "label": "B", "text": "A system in which workers signed contracts to work for a set period, often under harsh conditions, in exchange for passage or wages", "isCorrect": true, "explanation": "Indentured laborers were bound by contract to work for a set term, often under harsh conditions, in exchange for compensation like passage or wages." },
+      { "label": "C", "text": "A system exclusively for European workers, who signed contracts in order to farm land in North America", "isCorrect": false, "explanation": "Indentured servitude notably involved large numbers of workers from regions like India and China, not exclusively European workers." },
+      { "label": "D", "text": "A system with no historical significance, used only briefly and only in a handful of small villages", "isCorrect": false, "explanation": "Indentured servitude had significant historical significance in shaping migration patterns and labor systems during this era." }
     ],
     "explanation": "Indentured servitude bound workers by contract to labor for a set period, often under harsh conditions, in exchange for compensation.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
@@ -390,10 +390,10 @@
     "difficulty": "medium",
     "stem": "Following the abolition of slavery in various British colonies, where did many indentured laborers (particularly from India) migrate to work on plantations?",
     "choices": [
-      { "label": "A", "text": "Nowhere; no such migration occurred", "isCorrect": false, "explanation": "Significant indentured labor migration from India to various plantation regions did occur during this era." },
+      { "label": "A", "text": "Nowhere; no such migration occurred, since indentured contracts were illegal throughout the British Empire and its colonies", "isCorrect": false, "explanation": "Significant indentured labor migration from India to various plantation regions did occur during this era." },
       { "label": "B", "text": "Regions like the Caribbean, Fiji, and parts of Africa, working on plantations previously reliant on enslaved labor", "isCorrect": true, "explanation": "Indentured Indian laborers migrated to plantation regions like the Caribbean, Fiji, and parts of Africa to replace formerly enslaved labor." },
-      { "label": "C", "text": "Exclusively to Antarctica", "isCorrect": false, "explanation": "Antarctica was not a destination for indentured plantation labor migration." },
-      { "label": "D", "text": "Exclusively back to pre-colonial African kingdoms", "isCorrect": false, "explanation": "This migration flow specifically involved Indian laborers moving to various plantation regions, not a return migration to African kingdoms." }
+      { "label": "C", "text": "Exclusively to Antarctica, where they worked in research stations and whaling camps", "isCorrect": false, "explanation": "Antarctica was not a destination for indentured plantation labor migration." },
+      { "label": "D", "text": "Exclusively back to pre-colonial African kingdoms, where they rebuilt the empires of their ancestors", "isCorrect": false, "explanation": "This migration flow specifically involved Indian laborers moving to various plantation regions, not a return migration to African kingdoms." }
     ],
     "explanation": "Many indentured Indian laborers migrated to plantation regions like the Caribbean and Fiji, replacing formerly enslaved labor.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
@@ -406,10 +406,10 @@
     "difficulty": "medium",
     "stem": "What motivated many European emigrants to leave their home countries and migrate to the Americas, Australia, and other regions during the 19th century?",
     "choices": [
-      { "label": "A", "text": "No emigration occurred during this era", "isCorrect": false, "explanation": "Significant European emigration did occur during this era, driven by various motivations." },
-      { "label": "B", "text": "A combination of factors including economic opportunity, population pressure, and in some cases, fleeing famine or political turmoil", "isCorrect": true, "explanation": "European emigrants were driven by a mix of economic opportunity, population pressure, and, in some cases, famine or political instability at home." },
-      { "label": "C", "text": "Emigrants were forced exclusively by direct government mandate with no personal motivation", "isCorrect": false, "explanation": "While some government policies did encourage emigration, this significantly overstates direct mandate as the exclusive driving force, ignoring personal and economic motivations." },
-      { "label": "D", "text": "There was no connection between emigration and economic conditions", "isCorrect": false, "explanation": "There was a very significant, well-documented connection between economic conditions and emigration patterns." }
+      { "label": "A", "text": "No emigration occurred during this era, since European governments forbade citizens from leaving", "isCorrect": false, "explanation": "Significant European emigration did occur during this era, driven by various motivations." },
+      { "label": "B", "text": "A mix of factors including economic opportunity, population pressure, and for some, fleeing famine or political turmoil", "isCorrect": true, "explanation": "European emigrants were driven by a mix of economic opportunity, population pressure, and, in some cases, famine or political instability at home." },
+      { "label": "C", "text": "Emigrants were forced exclusively by direct government mandate, with no personal or economic motivation of their own", "isCorrect": false, "explanation": "While some government policies did encourage emigration, this significantly overstates direct mandate as the exclusive driving force, ignoring personal and economic motivations." },
+      { "label": "D", "text": "There was no connection between emigration and economic conditions, which played no part in any decision", "isCorrect": false, "explanation": "There was a very significant, well-documented connection between economic conditions and emigration patterns." }
     ],
     "explanation": "European emigration during the 19th century was driven by economic opportunity, population pressure, and, in some cases, famine or political turmoil.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
@@ -422,10 +422,10 @@
     "difficulty": "hard",
     "stem": "How did migration patterns during this era of imperialism and industrialization reflect broader global economic inequalities?",
     "choices": [
-      { "label": "A", "text": "Migration had no connection to economic conditions or inequality", "isCorrect": false, "explanation": "Migration patterns had substantial, well-documented connections to economic conditions and global inequality during this era." },
-      { "label": "B", "text": "Labor often flowed from poorer or colonized regions toward areas with greater economic opportunity or demand for labor (such as plantations or industrializing nations), reflecting global economic power imbalances", "isCorrect": true, "explanation": "Migration patterns often followed global economic power imbalances, with labor flowing toward regions of greater demand or opportunity." },
-      { "label": "C", "text": "All migration flowed equally in every direction with no discernible pattern", "isCorrect": false, "explanation": "Migration patterns during this era showed identifiable, well-documented directional flows connected to economic opportunity and demand, not random equal distribution." },
-      { "label": "D", "text": "Migration exclusively involved wealthy individuals moving for leisure purposes", "isCorrect": false, "explanation": "This significantly mischaracterizes migration during this era, which was substantially driven by labor needs and economic necessity, not primarily leisure travel by wealthy individuals." }
+      { "label": "A", "text": "Migration had no connection to economic conditions or inequality, since people moved only to be near family", "isCorrect": false, "explanation": "Migration patterns had substantial, well-documented connections to economic conditions and global inequality during this era." },
+      { "label": "B", "text": "Labor often flowed from poorer or colonized regions toward areas with greater demand for labor, such as plantations or industrializing nations", "isCorrect": true, "explanation": "Migration patterns often followed global economic power imbalances, with labor flowing toward regions of greater demand or opportunity." },
+      { "label": "C", "text": "All migration flowed equally in every direction with no discernible pattern, regardless of wages or opportunity", "isCorrect": false, "explanation": "Migration patterns during this era showed identifiable, well-documented directional flows connected to economic opportunity and demand, not random equal distribution." },
+      { "label": "D", "text": "Migration exclusively involved wealthy individuals moving abroad for leisure and tourism, such as extended holidays in seaside resort towns and spas", "isCorrect": false, "explanation": "This significantly mischaracterizes migration during this era, which was substantially driven by labor needs and economic necessity, not primarily leisure travel by wealthy individuals." }
     ],
     "explanation": "Migration patterns during this era often reflected global economic inequalities, with labor flowing toward regions of greater economic opportunity or demand.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
@@ -438,10 +438,10 @@
     "difficulty": "medium",
     "stem": "What social/cultural consequence often resulted from large-scale migration during this era, as people from different regions came into sustained contact in new destinations?",
     "choices": [
-      { "label": "A", "text": "No cultural interaction or consequence occurred", "isCorrect": false, "explanation": "Significant cultural interaction and consequences did result from this large-scale migration." },
-      { "label": "B", "text": "The formation of diverse, multicultural communities, sometimes accompanied by cultural blending as well as social tensions or discrimination", "isCorrect": true, "explanation": "Large-scale migration created diverse communities, sometimes fostering cultural blending alongside tensions and discrimination." },
-      { "label": "C", "text": "Complete cultural uniformity with no diversity anywhere", "isCorrect": false, "explanation": "This migration era generally increased, rather than eliminated, cultural diversity in destination regions." },
-      { "label": "D", "text": "Migration had no effect on the cultural composition of destination regions", "isCorrect": false, "explanation": "Migration had substantial, well-documented effects on the cultural composition of destination regions." }
+      { "label": "A", "text": "No cultural interaction or consequence occurred, since migrants always lived in isolated and self-contained camps", "isCorrect": false, "explanation": "Significant cultural interaction and consequences did result from this large-scale migration." },
+      { "label": "B", "text": "The formation of diverse, multicultural communities, sometimes with cultural blending as well as social tensions or discrimination", "isCorrect": true, "explanation": "Large-scale migration created diverse communities, sometimes fostering cultural blending alongside tensions and discrimination." },
+      { "label": "C", "text": "Complete cultural uniformity with no diversity anywhere, as every immigrant quickly adopted a single common culture", "isCorrect": false, "explanation": "This migration era generally increased, rather than eliminated, cultural diversity in destination regions." },
+      { "label": "D", "text": "Migration had no effect on the cultural composition of destination regions, which stayed exactly as they had been before migrants arrived there", "isCorrect": false, "explanation": "Migration had substantial, well-documented effects on the cultural composition of destination regions." }
     ],
     "explanation": "Large-scale migration created diverse, multicultural communities, sometimes accompanied by both cultural blending and social tensions.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
@@ -454,10 +454,10 @@
     "difficulty": "medium",
     "stem": "How did migration during this era connect to the broader theme of increasing global interconnection discussed throughout this course?",
     "choices": [
-      { "label": "A", "text": "Migration was completely disconnected from broader patterns of global exchange and interconnection", "isCorrect": false, "explanation": "Migration during this era was very much connected to broader patterns of global exchange and interconnection, not disconnected from them." },
-      { "label": "B", "text": "Migration represented another significant form of the increasing movement of people, alongside goods, ideas, and diseases, that connected different world regions ever more closely", "isCorrect": true, "explanation": "Migration was another dimension of the increasing global movement of people, goods, ideas, and diseases connecting world regions." },
-      { "label": "C", "text": "Migration only occurred within a single country with no international component", "isCorrect": false, "explanation": "Migration during this era had a very significant international component, moving people across national and continental boundaries." },
-      { "label": "D", "text": "There is no relationship between migration and global economic systems", "isCorrect": false, "explanation": "There was a very significant, well-documented relationship between migration patterns and the broader global economic systems of this era." }
+      { "label": "A", "text": "Migration was completely disconnected from broader patterns of global exchange and interconnection, and moved against every trend of the period", "isCorrect": false, "explanation": "Migration during this era was very much connected to broader patterns of global exchange and interconnection, not disconnected from them." },
+      { "label": "B", "text": "Migration was another form of increasing movement of people, alongside goods, ideas and diseases, that connected world regions more closely", "isCorrect": true, "explanation": "Migration was another dimension of the increasing global movement of people, goods, ideas, and diseases connecting world regions." },
+      { "label": "C", "text": "Migration only occurred within a single country, with no international component and no movement across oceans", "isCorrect": false, "explanation": "Migration during this era had a very significant international component, moving people across national and continental boundaries." },
+      { "label": "D", "text": "There is no relationship between migration and global economic systems, since migrants never sent money home", "isCorrect": false, "explanation": "There was a very significant, well-documented relationship between migration patterns and the broader global economic systems of this era." }
     ],
     "explanation": "Migration represented another significant form of increasing global interconnection, alongside the movement of goods, ideas, and diseases.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "Considering the various forms of migration during this era (voluntary emigration, indentured servitude, and the lingering effects of earlier forced migration systems), what broader historical pattern do they collectively illustrate?",
     "choices": [
-      { "label": "A", "text": "Migration during this era was entirely voluntary and free for all participants", "isCorrect": false, "explanation": "Migration during this era included significant elements of coercion, such as indentured servitude, not entirely voluntary and free movement for all participants." },
-      { "label": "B", "text": "This era's migration patterns varied widely in their degree of coercion and voluntariness, but collectively contributed to reshaping the demographic and economic makeup of many regions worldwide", "isCorrect": true, "explanation": "This era's diverse migration patterns, ranging from voluntary to coerced, together reshaped the demographic and economic composition of many world regions." },
-      { "label": "C", "text": "No significant migration occurred during this era", "isCorrect": false, "explanation": "Significant, well-documented migration did occur during this era across multiple systems and patterns." },
-      { "label": "D", "text": "Migration had no lasting demographic effects anywhere", "isCorrect": false, "explanation": "This era's migration patterns had substantial, lasting demographic effects on many regions worldwide." }
+      { "label": "A", "text": "Migration during this era was entirely voluntary and free for all participants, with no coercion of any kind", "isCorrect": false, "explanation": "Migration during this era included significant elements of coercion, such as indentured servitude, not entirely voluntary and free movement for all participants." },
+      { "label": "B", "text": "Migration varied widely in its degree of coercion and voluntariness, but collectively reshaped the demographic and economic makeup of many regions", "isCorrect": true, "explanation": "This era's diverse migration patterns, ranging from voluntary to coerced, together reshaped the demographic and economic composition of many world regions." },
+      { "label": "C", "text": "No significant migration occurred during this era, since travel was too slow and expensive for ordinary people", "isCorrect": false, "explanation": "Significant, well-documented migration did occur during this era across multiple systems and patterns." },
+      { "label": "D", "text": "Migration had no lasting demographic effects anywhere, because nearly all migrants soon returned to their homelands and left destination regions unchanged", "isCorrect": false, "explanation": "This era's migration patterns had substantial, lasting demographic effects on many regions worldwide." }
     ],
     "explanation": "This era's varied migration patterns, spanning voluntary and coerced movement, collectively reshaped the demographic and economic makeup of many regions worldwide.",
     "conceptLink": "ap-world/unit-6-consequences-of-industrialization/migration-in-interconnected-world",

@@ -23,9 +23,9 @@
     "stem": "What event is widely considered the immediate trigger (\"spark\") that set off the chain of events leading to World War I?",
     "choices": [
       { "label": "A", "text": "The assassination of Archduke Franz Ferdinand of Austria-Hungary", "isCorrect": true, "explanation": "This assassination set off the diplomatic crisis and alliance obligations that rapidly escalated into full-scale war." },
-      { "label": "B", "text": "The sinking of the Lusitania", "isCorrect": false, "explanation": "The sinking of the Lusitania occurred during WWI and influenced later American involvement, but it was not the initial trigger event." },
-      { "label": "C", "text": "The bombing of Pearl Harbor", "isCorrect": false, "explanation": "The bombing of Pearl Harbor is a World War II event, not related to WWI's outbreak." },
-      { "label": "D", "text": "The fall of the Berlin Wall", "isCorrect": false, "explanation": "The fall of the Berlin Wall is a late-20th-century Cold War-era event, unrelated to WWI's outbreak." }
+      { "label": "B", "text": "The sinking of the Lusitania by a German submarine in 1915", "isCorrect": false, "explanation": "The sinking of the Lusitania occurred during WWI and influenced later American involvement, but it was not the initial trigger event." },
+      { "label": "C", "text": "The bombing of Pearl Harbor by Japanese aircraft, which brought the United States into the war", "isCorrect": false, "explanation": "The bombing of Pearl Harbor is a World War II event, not related to WWI's outbreak." },
+      { "label": "D", "text": "The fall of the Berlin Wall and the end of the Cold War", "isCorrect": false, "explanation": "The fall of the Berlin Wall is a late-20th-century Cold War-era event, unrelated to WWI's outbreak." }
     ],
     "explanation": "The assassination of Archduke Franz Ferdinand is widely considered the immediate trigger that set off the chain of events leading to World War I.",
     "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-one",
@@ -38,10 +38,10 @@
     "difficulty": "medium",
     "stem": "Besides the alliance system, what other long-term factor is often cited as contributing to the tensions leading to World War I?",
     "choices": [
-      { "label": "A", "text": "Complete global peace with no international competition", "isCorrect": false, "explanation": "This describes the opposite of the actual tense international environment leading up to WWI." },
+      { "label": "A", "text": "Complete global peace, with no international competition or arms spending of any kind", "isCorrect": false, "explanation": "This describes the opposite of the actual tense international environment leading up to WWI." },
       { "label": "B", "text": "Militarism (arms races) and intense nationalism among European powers", "isCorrect": true, "explanation": "Growing arms races and intense nationalist sentiment among European powers heightened tensions in the years before WWI." },
-      { "label": "C", "text": "A worldwide economic depression exclusively", "isCorrect": false, "explanation": "While economic factors existed, a \"worldwide economic depression\" is not the standard characterization of the pre-WWI economic climate; the Great Depression came later, after WWI." },
-      { "label": "D", "text": "The absence of any colonial rivalries", "isCorrect": false, "explanation": "Colonial rivalries and competition were, in fact, significant contributing tensions among European powers before WWI." }
+      { "label": "C", "text": "A worldwide economic depression, which was the only cause of the tensions", "isCorrect": false, "explanation": "While economic factors existed, a \"worldwide economic depression\" is not the standard characterization of the pre-WWI economic climate; the Great Depression came later, after WWI." },
+      { "label": "D", "text": "The absence of any colonial rivalries between the great powers", "isCorrect": false, "explanation": "Colonial rivalries and competition were, in fact, significant contributing tensions among European powers before WWI." }
     ],
     "explanation": "Militarism and intense nationalism among European powers were significant long-term factors contributing to the tensions leading to World War I.",
     "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-one",
@@ -54,10 +54,10 @@
     "difficulty": "hard",
     "stem": "How did the complex system of European alliances contribute to turning a regional conflict (between Austria-Hungary and Serbia) into a broader, continent-wide war?",
     "choices": [
-      { "label": "A", "text": "The alliance system prevented any other countries from becoming involved", "isCorrect": false, "explanation": "The alliance system, in fact, did lead to other countries becoming involved, rather than preventing this outcome." },
-      { "label": "B", "text": "Because various countries were bound by mutual defense treaties, one country's declaration of war triggered a cascading series of obligations pulling multiple other nations into the conflict", "isCorrect": true, "explanation": "Mutual defense obligations meant that as one power declared war, its allies were drawn in too, rapidly escalating a regional dispute into a continental war." },
-      { "label": "C", "text": "No other European countries had any alliances during this period", "isCorrect": false, "explanation": "Extensive alliance networks did exist among European powers during this period, contrary to this claim." },
-      { "label": "D", "text": "The alliances only applied to countries outside of Europe", "isCorrect": false, "explanation": "These alliances were specifically among European powers themselves, not primarily countries outside Europe." }
+      { "label": "A", "text": "The alliance system prevented any other countries from becoming involved, since each treaty required its members to stay neutral in any dispute between two states", "isCorrect": false, "explanation": "The alliance system, in fact, did lead to other countries becoming involved, rather than preventing this outcome." },
+      { "label": "B", "text": "Because countries were bound by mutual defense treaties, one country's declaration of war triggered a cascade of obligations that pulled other nations in", "isCorrect": true, "explanation": "Mutual defense obligations meant that as one power declared war, its allies were drawn in too, rapidly escalating a regional dispute into a continental war." },
+      { "label": "C", "text": "No other European countries had any alliances during this period, so the conflict stayed between two states", "isCorrect": false, "explanation": "Extensive alliance networks did exist among European powers during this period, contrary to this claim." },
+      { "label": "D", "text": "The alliances only applied to countries outside of Europe, so the great powers were never bound to act", "isCorrect": false, "explanation": "These alliances were specifically among European powers themselves, not primarily countries outside Europe." }
     ],
     "explanation": "Mutual defense treaties among European powers triggered a cascading series of obligations, turning a regional conflict into a continent-wide war.",
     "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-one",
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "World War I is sometimes described by historians as a \"total war.\" What does this term generally mean?",
     "choices": [
-      { "label": "A", "text": "A war involving no civilian population or economic mobilization whatsoever", "isCorrect": false, "explanation": "\"Total war\" specifically refers to widespread civilian and economic mobilization, the opposite of no civilian/economic involvement." },
+      { "label": "A", "text": "A war involving no civilian population or economic mobilization whatsoever, fought only on distant battlefields", "isCorrect": false, "explanation": "\"Total war\" specifically refers to widespread civilian and economic mobilization, the opposite of no civilian/economic involvement." },
       { "label": "B", "text": "A war requiring the full mobilization of a nation's population, economy, and resources toward the war effort", "isCorrect": true, "explanation": "\"Total war\" describes a conflict where an entire nation's society and economy are mobilized to support the war effort." },
-      { "label": "C", "text": "A war fought exclusively by professional soldiers with no broader societal involvement", "isCorrect": false, "explanation": "\"Total war\" specifically involves broader societal mobilization beyond just professional soldiers, not exclusively professional soldiers." },
-      { "label": "D", "text": "A very brief conflict lasting only a few days", "isCorrect": false, "explanation": "World War I was a prolonged, multi-year conflict, not a brief few-day war." }
+      { "label": "C", "text": "A war fought exclusively by professional soldiers with no broader societal involvement in the life of the nation or its economy", "isCorrect": false, "explanation": "\"Total war\" specifically involves broader societal mobilization beyond just professional soldiers, not exclusively professional soldiers." },
+      { "label": "D", "text": "A very brief conflict lasting only a few days, which ended before most nations could mobilize", "isCorrect": false, "explanation": "World War I was a prolonged, multi-year conflict, not a brief few-day war." }
     ],
     "explanation": "\"Total war\" describes a conflict requiring the full mobilization of a nation's population, economy, and resources toward the war effort.",
     "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-one",
@@ -102,7 +102,7 @@
     "difficulty": "easy",
     "stem": "What new military technology, associated with trench warfare on the Western Front, characterized much of World War I's fighting in Europe?",
     "choices": [
-      { "label": "A", "text": "Nuclear weapons", "isCorrect": false, "explanation": "Nuclear weapons were not developed or used until World War II, not World War I." },
+      { "label": "A", "text": "Nuclear weapons and missiles", "isCorrect": false, "explanation": "Nuclear weapons were not developed or used until World War II, not World War I." },
       { "label": "B", "text": "Machine guns, poison gas, and tanks", "isCorrect": true, "explanation": "These new technologies defined much of World War I's brutal trench warfare on the Western Front." },
       { "label": "C", "text": "Only traditional cavalry charges with no new technology", "isCorrect": false, "explanation": "WWI saw the introduction of significant new military technologies, not exclusively traditional cavalry tactics." },
       { "label": "D", "text": "Space-based satellite technology", "isCorrect": false, "explanation": "Satellite technology is a mid-20th-century, and later, development, far outside WWI's timeframe." }
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "What economic and social strains within Russia, worsened by World War I, contributed to the outbreak of the Russian Revolution in 1917?",
     "choices": [
-      { "label": "A", "text": "Russia experienced no strain or hardship connected to the war", "isCorrect": false, "explanation": "Russia experienced very significant, well-documented strain and hardship connected to its participation in WWI." },
-      { "label": "B", "text": "Massive military casualties, food shortages, and widespread discontent with the Tsarist government's handling of the war effort", "isCorrect": true, "explanation": "These combined strains created widespread popular discontent that helped fuel revolutionary conditions in Russia." },
-      { "label": "C", "text": "A complete absence of any political opposition to the Tsar", "isCorrect": false, "explanation": "Significant political opposition to the Tsar existed and grew during this period, contributing to revolutionary conditions." },
-      { "label": "D", "text": "Russia's early withdrawal from the war prevented any strain", "isCorrect": false, "explanation": "Russia did not withdraw early in a way that avoided strain; the war's continuation under Tsarist rule significantly worsened conditions before the revolution." }
+      { "label": "A", "text": "Russia experienced no strain or hardship connected to the war, since its armies won every major battle", "isCorrect": false, "explanation": "Russia experienced very significant, well-documented strain and hardship connected to its participation in WWI." },
+      { "label": "B", "text": "Massive military casualties, food shortages, and widespread discontent with the Tsarist government's handling of the war", "isCorrect": true, "explanation": "These combined strains created widespread popular discontent that helped fuel revolutionary conditions in Russia." },
+      { "label": "C", "text": "A complete absence of any political opposition to the Tsar, who was widely loved by workers and soldiers", "isCorrect": false, "explanation": "Significant political opposition to the Tsar existed and grew during this period, contributing to revolutionary conditions." },
+      { "label": "D", "text": "Russia's early withdrawal from the war in 1914 prevented any strain on its economy, army, railways or food supply", "isCorrect": false, "explanation": "Russia did not withdraw early in a way that avoided strain; the war's continuation under Tsarist rule significantly worsened conditions before the revolution." }
     ],
     "explanation": "Massive casualties, food shortages, and discontent with the Tsar's handling of the war contributed to the outbreak of the Russian Revolution.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-one-and-russian-revolution",
@@ -134,9 +134,9 @@
     "difficulty": "medium",
     "stem": "The February Revolution of 1917 resulted in what immediate outcome for Russia's government?",
     "choices": [
-      { "label": "A", "text": "The Tsar's power was strengthened", "isCorrect": false, "explanation": "This event actually weakened, and ultimately ended, the Tsar's power, the opposite of strengthening it." },
+      { "label": "A", "text": "The Tsar's power was strengthened, and he took command of the army", "isCorrect": false, "explanation": "This event actually weakened, and ultimately ended, the Tsar's power, the opposite of strengthening it." },
       { "label": "B", "text": "Tsar Nicholas II abdicated, and a Provisional Government was established", "isCorrect": true, "explanation": "The February Revolution forced Tsar Nicholas II's abdication and led to the establishment of a Provisional Government." },
-      { "label": "C", "text": "The Bolsheviks immediately took power", "isCorrect": false, "explanation": "The Bolsheviks took power later, in the October Revolution of 1917, not immediately during the February Revolution." },
+      { "label": "C", "text": "The Bolsheviks immediately took power and ended the war", "isCorrect": false, "explanation": "The Bolsheviks took power later, in the October Revolution of 1917, not immediately during the February Revolution." },
       { "label": "D", "text": "Russia immediately became a monarchy-free democracy with no further upheaval", "isCorrect": false, "explanation": "Russia experienced significant further upheaval, including the subsequent October Revolution and civil war, not a smooth, uncontested transition." }
     ],
     "explanation": "The February Revolution forced Tsar Nicholas II's abdication, leading to the establishment of a Provisional Government.",
@@ -150,10 +150,10 @@
     "difficulty": "hard",
     "stem": "How did Vladimir Lenin and the Bolsheviks come to power in Russia later in 1917 (the October Revolution)?",
     "choices": [
-      { "label": "A", "text": "Through a peaceful, universally supported democratic election with no opposition", "isCorrect": false, "explanation": "The Bolshevik seizure of power was not a peaceful, universally supported democratic process; it involved a coup against the existing Provisional Government." },
-      { "label": "B", "text": "The Bolsheviks, promising \"Peace, Land, and Bread,\" led a coup that overthrew the Provisional Government, establishing Soviet/Communist rule", "isCorrect": true, "explanation": "The Bolsheviks capitalized on popular discontent with their appealing slogan to seize power from the Provisional Government." },
-      { "label": "C", "text": "The Tsar personally appointed Lenin as his successor", "isCorrect": false, "explanation": "The Tsar had already abdicated earlier in 1917 and had no role in appointing Lenin." },
-      { "label": "D", "text": "A foreign invasion installed the Bolsheviks in power", "isCorrect": false, "explanation": "This was fundamentally an internal Russian political/revolutionary event, not a foreign-imposed installation." }
+      { "label": "A", "text": "Through a peaceful and universally supported democratic election in which every party and class backed Lenin's program and no group opposed it", "isCorrect": false, "explanation": "The Bolshevik seizure of power was not a peaceful, universally supported democratic process; it involved a coup against the existing Provisional Government." },
+      { "label": "B", "text": "The Bolsheviks, promising \"Peace, Land, and Bread,\" overthrew the Provisional Government in a coup and established Soviet rule", "isCorrect": true, "explanation": "The Bolsheviks capitalized on popular discontent with their appealing slogan to seize power from the Provisional Government." },
+      { "label": "C", "text": "The Tsar personally appointed Lenin as his successor before leaving for exile", "isCorrect": false, "explanation": "The Tsar had already abdicated earlier in 1917 and had no role in appointing Lenin." },
+      { "label": "D", "text": "A foreign invasion by German armies installed the Bolsheviks in power in Petrograd", "isCorrect": false, "explanation": "This was fundamentally an internal Russian political/revolutionary event, not a foreign-imposed installation." }
     ],
     "explanation": "The Bolsheviks, promising \"Peace, Land, and Bread,\" led a coup that overthrew the Provisional Government, establishing Soviet rule.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-one-and-russian-revolution",
@@ -166,10 +166,10 @@
     "difficulty": "medium",
     "stem": "Following the Bolshevik seizure of power, Russia signed the Treaty of Brest-Litovsk (1918) with the Central Powers, resulting in what outcome?",
     "choices": [
-      { "label": "A", "text": "Russia's continued full participation in World War I", "isCorrect": false, "explanation": "This treaty specifically ended, rather than continued, Russia's participation in WWI." },
+      { "label": "A", "text": "Russia's continued full participation in World War I alongside the Allies", "isCorrect": false, "explanation": "This treaty specifically ended, rather than continued, Russia's participation in WWI." },
       { "label": "B", "text": "Russia's exit from World War I, ceding significant territory to the Central Powers", "isCorrect": true, "explanation": "The treaty ended Russian participation in WWI, at the cost of significant territorial concessions to the Central Powers." },
-      { "label": "C", "text": "An immediate end to all of World War I for every combatant nation", "isCorrect": false, "explanation": "This treaty was specifically between Russia and the Central Powers; the broader war continued among other combatants until 1918." },
-      { "label": "D", "text": "Russia's annexation of Germany", "isCorrect": false, "explanation": "This treaty involved Russia ceding territory to the Central Powers, not Russia annexing Germany." }
+      { "label": "C", "text": "An immediate end to all of World War I for every combatant nation, including Britain and France", "isCorrect": false, "explanation": "This treaty was specifically between Russia and the Central Powers; the broader war continued among other combatants until 1918." },
+      { "label": "D", "text": "Russia's annexation of Germany and Austria-Hungary", "isCorrect": false, "explanation": "This treaty involved Russia ceding territory to the Central Powers, not Russia annexing Germany." }
     ],
     "explanation": "The Treaty of Brest-Litovsk ended Russia's participation in World War I, ceding significant territory to the Central Powers.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-one-and-russian-revolution",
@@ -182,10 +182,10 @@
     "difficulty": "medium",
     "stem": "What broader ideological significance did the Russian Revolution and the establishment of the Soviet Union hold for 20th-century world history?",
     "choices": [
-      { "label": "A", "text": "It had no lasting global significance", "isCorrect": false, "explanation": "This event had very substantial, well-documented lasting global significance throughout the 20th century." },
-      { "label": "B", "text": "It established the world's first major communist state, inspiring both revolutionary movements and ideological opposition (particularly during the later Cold War)", "isCorrect": true, "explanation": "The Soviet Union's establishment as the first major communist state had profound, lasting effects on 20th-century global politics." },
-      { "label": "C", "text": "It led to the immediate spread of capitalism worldwide", "isCorrect": false, "explanation": "The Russian Revolution established a communist state, the opposite of spreading capitalism." },
-      { "label": "D", "text": "It had no connection to later 20th-century political developments", "isCorrect": false, "explanation": "This event had very direct, significant connections to later 20th-century political developments, particularly the Cold War." }
+      { "label": "A", "text": "It had no lasting global significance, since the Soviet state collapsed within a few years of its founding and left no mark on other countries", "isCorrect": false, "explanation": "This event had very substantial, well-documented lasting global significance throughout the 20th century." },
+      { "label": "B", "text": "It created the first major communist state, inspiring revolutionary movements and ideological opposition, especially during the Cold War", "isCorrect": true, "explanation": "The Soviet Union's establishment as the first major communist state had profound, lasting effects on 20th-century global politics." },
+      { "label": "C", "text": "It led to the immediate spread of capitalism worldwide, as every country abandoned socialist ideas", "isCorrect": false, "explanation": "The Russian Revolution established a communist state, the opposite of spreading capitalism." },
+      { "label": "D", "text": "It had no connection to later 20th-century political developments, such as decolonization or the Cold War", "isCorrect": false, "explanation": "This event had very direct, significant connections to later 20th-century political developments, particularly the Cold War." }
     ],
     "explanation": "The Russian Revolution established the world's first major communist state, profoundly shaping 20th-century global politics.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-one-and-russian-revolution",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "What economic hardship, resulting partly from the Treaty of Versailles's reparations demands and other factors, significantly affected Germany during the interwar period?",
     "choices": [
-      { "label": "A", "text": "No economic hardship affected Germany during this period", "isCorrect": false, "explanation": "Germany experienced very significant, well-documented economic hardship during this period." },
+      { "label": "A", "text": "No economic hardship of any kind affected Germany during this period of recovery", "isCorrect": false, "explanation": "Germany experienced very significant, well-documented economic hardship during this period." },
       { "label": "B", "text": "Severe economic instability, including a period of hyperinflation in the early 1920s", "isCorrect": true, "explanation": "Germany experienced severe hyperinflation in the early 1920s, part of broader economic instability during the interwar period." },
       { "label": "C", "text": "Germany experienced continuous, uninterrupted economic prosperity throughout this entire period", "isCorrect": false, "explanation": "This significantly mischaracterizes Germany's actual economic experience, which involved serious instability, not continuous prosperity." },
-      { "label": "D", "text": "Germany's economy had no connection to the war's aftermath", "isCorrect": false, "explanation": "Germany's economic troubles during this period were, in fact, significantly connected to the war's aftermath and treaty terms." }
+      { "label": "D", "text": "Germany's economy had no connection to the war's aftermath or the treaty", "isCorrect": false, "explanation": "Germany's economic troubles during this period were, in fact, significantly connected to the war's aftermath and treaty terms." }
     ],
     "explanation": "Germany experienced severe economic instability, including hyperinflation in the early 1920s, partly stemming from Treaty of Versailles reparations.",
     "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "The Great Depression, beginning with the 1929 U.S. stock market crash, had what kind of global economic impact during the interwar period?",
     "choices": [
-      { "label": "A", "text": "It had no effect outside the United States", "isCorrect": false, "explanation": "The Great Depression had very significant, well-documented effects far beyond just the United States." },
+      { "label": "A", "text": "It had no economic effect outside the United States, where banks and farms alone were hit", "isCorrect": false, "explanation": "The Great Depression had very significant, well-documented effects far beyond just the United States." },
       { "label": "B", "text": "It triggered a severe worldwide economic downturn, contributing to political instability in various countries", "isCorrect": true, "explanation": "The Great Depression's effects rippled across the globe, contributing to economic hardship and political instability in many countries." },
-      { "label": "C", "text": "It only affected a small, isolated region with no international consequences", "isCorrect": false, "explanation": "The Great Depression had substantial, widespread international consequences, not confined to one small isolated region." },
-      { "label": "D", "text": "It immediately resolved all previous economic problems worldwide", "isCorrect": false, "explanation": "The Great Depression worsened economic conditions significantly worldwide, rather than resolving previous problems." }
+      { "label": "C", "text": "It only affected a small, isolated region of the world, with no international consequences or effects on politics anywhere else", "isCorrect": false, "explanation": "The Great Depression had substantial, widespread international consequences, not confined to one small isolated region." },
+      { "label": "D", "text": "It immediately resolved all previous economic problems worldwide and raised wages in every country", "isCorrect": false, "explanation": "The Great Depression worsened economic conditions significantly worldwide, rather than resolving previous problems." }
     ],
     "explanation": "The Great Depression triggered a severe worldwide economic downturn, contributing to political instability in various countries.",
     "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
@@ -246,10 +246,10 @@
     "difficulty": "hard",
     "stem": "How did the economic and political instability of the interwar period contribute to the rise of authoritarian and fascist movements in countries like Germany and Italy?",
     "choices": [
-      { "label": "A", "text": "Economic instability had no connection to political extremism", "isCorrect": false, "explanation": "Historians have identified very significant, well-documented connections between economic instability and the rise of political extremism during this period." },
-      { "label": "B", "text": "Severe economic hardship and political dissatisfaction created conditions in which authoritarian leaders promising stability and national revival gained significant popular support", "isCorrect": true, "explanation": "Economic desperation and political frustration made authoritarian promises of stability and national renewal appealing to many people." },
-      { "label": "C", "text": "These countries experienced no economic or political problems during this period", "isCorrect": false, "explanation": "These countries experienced substantial, well-documented economic and political problems during this period." },
-      { "label": "D", "text": "Fascist movements arose randomly with no connection to broader conditions", "isCorrect": false, "explanation": "The rise of these movements is generally understood as connected to specific, identifiable underlying conditions, not random or unconnected occurrence." }
+      { "label": "A", "text": "Economic instability had no connection to political extremism, which arose solely from foreign propaganda and had no appeal to ordinary voters in the affected countries", "isCorrect": false, "explanation": "Historians have identified very significant, well-documented connections between economic instability and the rise of political extremism during this period." },
+      { "label": "B", "text": "Severe hardship and political dissatisfaction created conditions in which authoritarian leaders promising stability and national revival gained popular support", "isCorrect": true, "explanation": "Economic desperation and political frustration made authoritarian promises of stability and national renewal appealing to many people." },
+      { "label": "C", "text": "These countries experienced no economic or political problems during this period, so extremists had no support", "isCorrect": false, "explanation": "These countries experienced substantial, well-documented economic and political problems during this period." },
+      { "label": "D", "text": "Fascist movements arose randomly with no connection to broader conditions, and drew support only from soldiers", "isCorrect": false, "explanation": "The rise of these movements is generally understood as connected to specific, identifiable underlying conditions, not random or unconnected occurrence." }
     ],
     "explanation": "Severe economic hardship and political dissatisfaction created conditions in which authoritarian leaders promising stability gained popular support.",
     "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "Benito Mussolini's Fascist movement, which took power in Italy in 1922, emphasized what key political characteristics?",
     "choices": [
-      { "label": "A", "text": "Democratic pluralism and individual rights above all else", "isCorrect": false, "explanation": "Fascism specifically opposed, rather than emphasized, democratic pluralism and individual rights." },
+      { "label": "A", "text": "Democratic pluralism, free elections and individual rights above all else", "isCorrect": false, "explanation": "Fascism specifically opposed, rather than emphasized, democratic pluralism and individual rights." },
       { "label": "B", "text": "Extreme nationalism, authoritarian one-party rule, and suppression of political opposition", "isCorrect": true, "explanation": "Fascist Italy under Mussolini centered on extreme nationalism, one-party authoritarian control, and the suppression of dissent." },
-      { "label": "C", "text": "Complete pacifism and rejection of military power", "isCorrect": false, "explanation": "Fascist Italy notably emphasized military strength and expansion, not pacifism." },
-      { "label": "D", "text": "International cooperation with no emphasis on national identity", "isCorrect": false, "explanation": "Fascism placed extreme emphasis on national identity and nationalism, the opposite of rejecting it in favor of international cooperation." }
+      { "label": "C", "text": "Complete pacifism and rejection of military power in favor of disarmament", "isCorrect": false, "explanation": "Fascist Italy notably emphasized military strength and expansion, not pacifism." },
+      { "label": "D", "text": "International cooperation among workers of every country, with no emphasis on national identity, pride or loyalty to the state", "isCorrect": false, "explanation": "Fascism placed extreme emphasis on national identity and nationalism, the opposite of rejecting it in favor of international cooperation." }
     ],
     "explanation": "Mussolini's Fascist movement emphasized extreme nationalism, authoritarian one-party rule, and suppression of political opposition.",
     "conceptLink": "ap-world/unit-7-global-conflict/interwar-period",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "What policy did Britain and France initially pursue toward Nazi Germany's territorial expansion in the late 1930s, exemplified by the 1938 Munich Agreement?",
     "choices": [
-      { "label": "A", "text": "Immediate military confrontation", "isCorrect": false, "explanation": "This policy specifically avoided, rather than pursued, immediate military confrontation." },
+      { "label": "A", "text": "Immediate military confrontation, with a declaration of war after each German move", "isCorrect": false, "explanation": "This policy specifically avoided, rather than pursued, immediate military confrontation." },
       { "label": "B", "text": "Appeasement, allowing some German territorial expansion in hopes of avoiding a larger war", "isCorrect": true, "explanation": "Britain and France pursued appeasement, permitting some German territorial gains in hopes of preventing a larger conflict." },
-      { "label": "C", "text": "Complete economic blockade with no diplomatic engagement", "isCorrect": false, "explanation": "This doesn't accurately describe the diplomatic engagement, like the Munich Agreement negotiations, that characterized this policy." },
-      { "label": "D", "text": "Formal military alliance with Germany against all other nations", "isCorrect": false, "explanation": "Britain and France did not form a military alliance with Germany; they attempted to manage tensions through appeasement instead." }
+      { "label": "C", "text": "A complete economic blockade of Germany, with no diplomatic engagement of any kind", "isCorrect": false, "explanation": "This doesn't accurately describe the diplomatic engagement, like the Munich Agreement negotiations, that characterized this policy." },
+      { "label": "D", "text": "A formal military alliance with Germany against all other nations, including the Soviet Union and the United States", "isCorrect": false, "explanation": "Britain and France did not form a military alliance with Germany; they attempted to manage tensions through appeasement instead." }
     ],
     "explanation": "Britain and France initially pursued appeasement, allowing some German territorial expansion in hopes of avoiding a larger war.",
     "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-two",
@@ -342,10 +342,10 @@
     "difficulty": "hard",
     "stem": "How did the Treaty of Versailles's harsh treatment of Germany after World War I contribute to conditions that later enabled Hitler's rise and World War II?",
     "choices": [
-      { "label": "A", "text": "The treaty had no connection to later events", "isCorrect": false, "explanation": "Historians have identified very significant, well-documented connections between the treaty's terms and later conditions enabling Hitler's rise." },
-      { "label": "B", "text": "Resentment over the treaty's terms (territorial losses, reparations, \"war guilt\" clause) fueled German nationalism and resentment that Hitler exploited in his rise to power", "isCorrect": true, "explanation": "Widespread German resentment over the treaty's punitive terms provided fertile ground for Hitler's nationalist appeals." },
-      { "label": "C", "text": "The treaty was extremely lenient and had no lasting negative effects on Germany", "isCorrect": false, "explanation": "The treaty is generally characterized as harsh and punitive toward Germany, not extremely lenient with no negative effects." },
-      { "label": "D", "text": "Germany fully embraced and had no objections to the treaty's terms", "isCorrect": false, "explanation": "Germany widely resented and objected to the treaty's terms, rather than fully embracing them." }
+      { "label": "A", "text": "The treaty had no connection to later events, because Germany accepted its terms and quickly forgot the dispute over reparations", "isCorrect": false, "explanation": "Historians have identified very significant, well-documented connections between the treaty's terms and later conditions enabling Hitler's rise." },
+      { "label": "B", "text": "Resentment over the treaty's terms (territorial losses, reparations, the \"war guilt\" clause) fueled German nationalism that Hitler exploited", "isCorrect": true, "explanation": "Widespread German resentment over the treaty's punitive terms provided fertile ground for Hitler's nationalist appeals." },
+      { "label": "C", "text": "The treaty was extremely lenient and had no lasting negative effects on Germany, which kept its colonies, its army and all of its territory", "isCorrect": false, "explanation": "The treaty is generally characterized as harsh and punitive toward Germany, not extremely lenient with no negative effects." },
+      { "label": "D", "text": "Germany fully embraced and had no objections to the treaty's terms, including the loss of territory and reparations", "isCorrect": false, "explanation": "Germany widely resented and objected to the treaty's terms, rather than fully embracing them." }
     ],
     "explanation": "Resentment over the Treaty of Versailles's harsh terms fueled German nationalism that Hitler exploited in his rise to power.",
     "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-two",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "The Molotov-Ribbentrop Pact (1939), a non-aggression agreement between Germany and the Soviet Union, included what secretive provision?",
     "choices": [
-      { "label": "A", "text": "A joint plan to defend against all other European powers together", "isCorrect": false, "explanation": "This doesn't accurately describe the pact's actual secret territorial division provisions." },
+      { "label": "A", "text": "A joint plan to defend against all other European powers together, with a shared military command and a common border force", "isCorrect": false, "explanation": "This doesn't accurately describe the pact's actual secret territorial division provisions." },
       { "label": "B", "text": "A secret agreement to divide Eastern Europe (including Poland) into spheres of influence between the two powers", "isCorrect": true, "explanation": "The pact's secret protocol divided Eastern Europe, including Poland, into German and Soviet spheres of influence." },
-      { "label": "C", "text": "A promise never to go to war with each other under any future circumstances", "isCorrect": false, "explanation": "Despite this pact, Germany later broke it and invaded the Soviet Union in 1941, showing this wasn't an unbreakable \"never\" promise." },
-      { "label": "D", "text": "An agreement to jointly invade the United States", "isCorrect": false, "explanation": "This pact had no connection to a joint invasion of the United States." }
+      { "label": "C", "text": "A promise never to go to war with each other under any future circumstances, even if attacked", "isCorrect": false, "explanation": "Despite this pact, Germany later broke it and invaded the Soviet Union in 1941, showing this wasn't an unbreakable \"never\" promise." },
+      { "label": "D", "text": "An agreement to jointly invade the United States and Britain in 1940", "isCorrect": false, "explanation": "This pact had no connection to a joint invasion of the United States." }
     ],
     "explanation": "The Molotov-Ribbentrop Pact secretly divided Eastern Europe, including Poland, into German and Soviet spheres of influence.",
     "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-two",
@@ -374,10 +374,10 @@
     "difficulty": "medium",
     "stem": "What combination of factors is generally cited by historians as leading to the outbreak of World War II?",
     "choices": [
-      { "label": "A", "text": "A single, simple cause with no complexity", "isCorrect": false, "explanation": "Historians generally identify multiple interconnected factors, not a single simple cause." },
-      { "label": "B", "text": "A combination of factors including unresolved WWI grievances, the Great Depression's economic instability, the rise of fascist/aggressive expansionist regimes, and the failure of collective security efforts like the League of Nations", "isCorrect": true, "explanation": "These interconnected factors together created the conditions that led to the outbreak of World War II." },
-      { "label": "C", "text": "World War II had no identifiable causes", "isCorrect": false, "explanation": "Historians have identified substantial, well-documented causes and contributing factors for this conflict." },
-      { "label": "D", "text": "The war began completely randomly with no historical context", "isCorrect": false, "explanation": "This conflict had significant identifiable historical context and causes, not random occurrence." }
+      { "label": "A", "text": "A single, simple cause with no real complexity, which historians agree was the Treaty of Versailles alone, with no role for economics, ideology or diplomacy", "isCorrect": false, "explanation": "Historians generally identify multiple interconnected factors, not a single simple cause." },
+      { "label": "B", "text": "A combination of factors including unresolved WWI grievances, the Great Depression, the rise of aggressive fascist regimes, and the failure of collective security efforts like the League of Nations", "isCorrect": true, "explanation": "These interconnected factors together created the conditions that led to the outbreak of World War II." },
+      { "label": "C", "text": "World War II had no identifiable causes, and historians have found no connection between it and events of the preceding two decades", "isCorrect": false, "explanation": "Historians have identified substantial, well-documented causes and contributing factors for this conflict." },
+      { "label": "D", "text": "The war began completely at random, with no historical context, when a minor border incident spiraled beyond anyone's control or expectation, and no leader had any plan for conquest", "isCorrect": false, "explanation": "This conflict had significant identifiable historical context and causes, not random occurrence." }
     ],
     "explanation": "A combination of unresolved WWI grievances, economic instability, fascist expansionism, and failed collective security led to World War II.",
     "conceptLink": "ap-world/unit-7-global-conflict/causes-of-world-war-two",
@@ -406,10 +406,10 @@
     "difficulty": "medium",
     "stem": "What was the Holocaust?",
     "choices": [
-      { "label": "A", "text": "A natural disaster unrelated to World War II", "isCorrect": false, "explanation": "The Holocaust was a deliberate, human-caused genocide, not a natural disaster." },
-      { "label": "B", "text": "The systematic, state-sponsored genocide of six million Jews, along with other targeted groups, by Nazi Germany and its collaborators", "isCorrect": true, "explanation": "The Holocaust was the systematic genocide of six million Jews and other targeted groups by Nazi Germany and its collaborators during World War II." },
-      { "label": "C", "text": "A minor, insignificant historical event", "isCorrect": false, "explanation": "The Holocaust was a massive, historically significant atrocity, not a minor or insignificant event." },
-      { "label": "D", "text": "A peaceful resettlement program with no violence involved", "isCorrect": false, "explanation": "The Holocaust involved systematic mass murder and extreme violence, not a peaceful process." }
+      { "label": "A", "text": "A natural disaster unrelated to World War II, caused by famine and crop failure in several occupied regions", "isCorrect": false, "explanation": "The Holocaust was a deliberate, human-caused genocide, not a natural disaster." },
+      { "label": "B", "text": "The systematic, state-sponsored genocide of six million Jews, along with other groups, by Nazi Germany and its collaborators", "isCorrect": true, "explanation": "The Holocaust was the systematic genocide of six million Jews and other targeted groups by Nazi Germany and its collaborators during World War II." },
+      { "label": "C", "text": "A minor, insignificant historical event that affected only a few families in a single Polish town", "isCorrect": false, "explanation": "The Holocaust was a massive, historically significant atrocity, not a minor or insignificant event." },
+      { "label": "D", "text": "A peaceful resettlement program with no violence involved, in which families moved voluntarily to new homes in the east", "isCorrect": false, "explanation": "The Holocaust involved systematic mass murder and extreme violence, not a peaceful process." }
     ],
     "explanation": "The Holocaust was the systematic, state-sponsored genocide of six million Jews and other targeted groups by Nazi Germany and its collaborators.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "Besides Jewish people, which other groups were also targeted for persecution and/or mass murder by the Nazi regime during the Holocaust era?",
     "choices": [
-      { "label": "A", "text": "No other groups were targeted besides Jewish people", "isCorrect": false, "explanation": "Historical evidence documents that multiple other groups were also targeted, not exclusively Jewish people." },
+      { "label": "A", "text": "No other groups were targeted besides Jewish people, who were the only victims of the regime and its collaborators in any country", "isCorrect": false, "explanation": "Historical evidence documents that multiple other groups were also targeted, not exclusively Jewish people." },
       { "label": "B", "text": "Roma people, disabled individuals, political dissidents, and others deemed \"undesirable\" by Nazi ideology", "isCorrect": true, "explanation": "Nazi persecution and mass murder also targeted Roma people, disabled individuals, political dissidents, and other groups deemed \"undesirable.\"" },
-      { "label": "C", "text": "Only wealthy business owners", "isCorrect": false, "explanation": "This does not accurately describe the groups targeted by Nazi persecution." },
-      { "label": "D", "text": "Only members of the Nazi Party itself", "isCorrect": false, "explanation": "This significantly mischaracterizes Nazi persecution, which targeted groups the regime deemed \"undesirable,\" not its own party members." }
+      { "label": "C", "text": "Only wealthy business owners, whose factories were seized by the state", "isCorrect": false, "explanation": "This does not accurately describe the groups targeted by Nazi persecution." },
+      { "label": "D", "text": "Only members of the Nazi Party itself, who were purged by their own leaders", "isCorrect": false, "explanation": "This significantly mischaracterizes Nazi persecution, which targeted groups the regime deemed \"undesirable,\" not its own party members." }
     ],
     "explanation": "Nazi persecution during the Holocaust also targeted Roma people, disabled individuals, political dissidents, and other groups deemed \"undesirable.\"",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",
@@ -438,10 +438,10 @@
     "difficulty": "hard",
     "stem": "How did the attack on Pearl Harbor (December 7, 1941) by Japan affect United States involvement in World War II?",
     "choices": [
-      { "label": "A", "text": "It had no effect on U.S. involvement", "isCorrect": false, "explanation": "This attack had a very direct, significant, well-documented effect on U.S. entry into the war." },
-      { "label": "B", "text": "It directly led the United States to formally enter World War II, declaring war on Japan and subsequently on Germany and Italy", "isCorrect": true, "explanation": "The attack on Pearl Harbor directly led to the U.S. declaring war on Japan, followed by war with Germany and Italy." },
-      { "label": "C", "text": "It caused the United States to withdraw entirely from all international affairs", "isCorrect": false, "explanation": "This event led to increased, not decreased, U.S. international military involvement." },
-      { "label": "D", "text": "It resulted in immediate peace between Japan and the United States", "isCorrect": false, "explanation": "This attack led to war between the U.S. and Japan, not immediate peace." }
+      { "label": "A", "text": "It had no effect on U.S. involvement, because the country had joined the war in Europe two years earlier", "isCorrect": false, "explanation": "This attack had a very direct, significant, well-documented effect on U.S. entry into the war." },
+      { "label": "B", "text": "It led the United States to enter World War II, declaring war on Japan and later on Germany and Italy", "isCorrect": true, "explanation": "The attack on Pearl Harbor directly led to the U.S. declaring war on Japan, followed by war with Germany and Italy." },
+      { "label": "C", "text": "It caused the United States to withdraw entirely from all international affairs and to close its ports", "isCorrect": false, "explanation": "This event led to increased, not decreased, U.S. international military involvement." },
+      { "label": "D", "text": "It resulted in immediate peace between Japan and the United States, ending hostilities in the Pacific", "isCorrect": false, "explanation": "This attack led to war between the U.S. and Japan, not immediate peace." }
     ],
     "explanation": "The attack on Pearl Harbor directly led the United States to formally enter World War II.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",
@@ -455,9 +455,9 @@
     "stem": "What significant new weapon did the United States use against Japan in August 1945, contributing to Japan's eventual surrender and the end of World War II?",
     "choices": [
       { "label": "A", "text": "Atomic bombs (dropped on Hiroshima and Nagasaki)", "isCorrect": true, "explanation": "The atomic bombs dropped on Hiroshima and Nagasaki in August 1945 contributed to Japan's eventual surrender, ending World War II." },
-      { "label": "B", "text": "Biological weapons", "isCorrect": false, "explanation": "Biological weapons were not the weapon used in this specific, historically significant instance." },
-      { "label": "C", "text": "Chemical weapons exclusively", "isCorrect": false, "explanation": "Chemical weapons were not the primary weapon used in this specific instance; atomic bombs were used." },
-      { "label": "D", "text": "Conventional naval blockade only", "isCorrect": false, "explanation": "While naval blockade was part of the broader war effort, this question specifically references the new, historically significant atomic weapon used in August 1945." }
+      { "label": "B", "text": "Biological weapons used against its cities", "isCorrect": false, "explanation": "Biological weapons were not the weapon used in this specific, historically significant instance." },
+      { "label": "C", "text": "Chemical weapons used exclusively on its cities", "isCorrect": false, "explanation": "Chemical weapons were not the primary weapon used in this specific instance; atomic bombs were used." },
+      { "label": "D", "text": "A conventional naval blockade only, with no new weapons", "isCorrect": false, "explanation": "While naval blockade was part of the broader war effort, this question specifically references the new, historically significant atomic weapon used in August 1945." }
     ],
     "explanation": "The United States used atomic bombs on Hiroshima and Nagasaki in August 1945, contributing to Japan's eventual surrender.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "What long-term global consequence did World War II, including the devastating loss of life and the atrocities committed, have on international institutions and law?",
     "choices": [
-      { "label": "A", "text": "No lasting institutional changes resulted from World War II", "isCorrect": false, "explanation": "World War II had very substantial, well-documented lasting institutional consequences." },
-      { "label": "B", "text": "It contributed to the establishment of new international institutions (like the United Nations) and legal concepts (like prosecuting genocide/crimes against humanity), aimed at preventing future atrocities and conflicts", "isCorrect": true, "explanation": "The devastation of World War II directly motivated new international institutions and legal frameworks aimed at preventing future atrocities." },
-      { "label": "C", "text": "All existing international institutions were immediately abolished with nothing replacing them", "isCorrect": false, "explanation": "While some prior structures like the League of Nations were replaced, this was through establishing new institutions like the UN, not simply abolishing everything with no replacement." },
-      { "label": "D", "text": "It had no connection to any subsequent international law or diplomacy", "isCorrect": false, "explanation": "World War II had very direct, significant connections to subsequent international law and diplomatic institutions." }
+      { "label": "A", "text": "No lasting institutional changes resulted from World War II, since the Allies quickly returned to the prewar order", "isCorrect": false, "explanation": "World War II had very substantial, well-documented lasting institutional consequences." },
+      { "label": "B", "text": "It contributed to new international institutions such as the United Nations and legal concepts such as prosecuting genocide and crimes against humanity, aimed at preventing future atrocities", "isCorrect": true, "explanation": "The devastation of World War II directly motivated new international institutions and legal frameworks aimed at preventing future atrocities." },
+      { "label": "C", "text": "All existing international institutions were immediately abolished at the end of the war, and the victorious powers agreed that nothing should replace them for the next fifty years", "isCorrect": false, "explanation": "While some prior structures like the League of Nations were replaced, this was through establishing new institutions like the UN, not simply abolishing everything with no replacement." },
+      { "label": "D", "text": "It had no connection to any subsequent international law or diplomacy, which developed solely from earlier treaties", "isCorrect": false, "explanation": "World War II had very direct, significant connections to subsequent international law and diplomatic institutions." }
     ],
     "explanation": "World War II contributed to the establishment of new international institutions and legal concepts aimed at preventing future atrocities and conflicts.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",

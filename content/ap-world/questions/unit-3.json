@@ -7,9 +7,9 @@
     "stem": "Which technological development, involving gunpowder weapons, helped several land-based empires expand their territories during this period (c. 1450-1750)?",
     "choices": [
       { "label": "A", "text": "Cannons and gunpowder-based weaponry", "isCorrect": true, "explanation": "Cannons and gunpowder weapons gave empires like the Ottomans and Mughals a decisive military advantage in expansion and siege warfare." },
-      { "label": "B", "text": "Steam engines", "isCorrect": false, "explanation": "Steam engines are a much later (Industrial Revolution era) technology, not relevant to this period's empire expansion." },
-      { "label": "C", "text": "Electric telegraphs", "isCorrect": false, "explanation": "The electric telegraph is a 19th-century invention, far outside this timeframe." },
-      { "label": "D", "text": "Automobiles", "isCorrect": false, "explanation": "Automobiles are a modern invention, centuries after this period." }
+      { "label": "B", "text": "Steam engines for ships and mills", "isCorrect": false, "explanation": "Steam engines are a much later (Industrial Revolution era) technology, not relevant to this period's empire expansion." },
+      { "label": "C", "text": "Electric telegraph networks", "isCorrect": false, "explanation": "The electric telegraph is a 19th-century invention, far outside this timeframe." },
+      { "label": "D", "text": "Early automobiles and trucks", "isCorrect": false, "explanation": "Automobiles are a modern invention, centuries after this period." }
     ],
     "explanation": "Gunpowder weapons like cannons gave several land-based empires a decisive military advantage during this era's territorial expansion.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
@@ -40,7 +40,7 @@
     "choices": [
       { "label": "A", "text": "Sunni Islam", "isCorrect": false, "explanation": "The Safavids specifically established Shia Islam, distinguishing themselves from Sunni neighbors like the Ottomans." },
       { "label": "B", "text": "Shia Islam", "isCorrect": true, "explanation": "The Safavids made Shia Islam the state religion of Persia, a defining and lasting feature of the empire." },
-      { "label": "C", "text": "Sufism as the sole official practice", "isCorrect": false, "explanation": "Sufi origins influenced the dynasty's founding, but the Safavids established Shia Islam broadly, not Sufism specifically as an exclusive official practice." },
+      { "label": "C", "text": "Sufism as the sole official faith", "isCorrect": false, "explanation": "Sufi origins influenced the dynasty's founding, but the Safavids established Shia Islam broadly, not Sufism specifically as an exclusive official practice." },
       { "label": "D", "text": "Zoroastrianism", "isCorrect": false, "explanation": "Zoroastrianism was Persia's ancient pre-Islamic religion, not what the Safavids established as their state religion." }
     ],
     "explanation": "The Safavid Empire established Shia Islam as Persia's state religion, distinguishing it from its Sunni neighbors.",
@@ -70,10 +70,10 @@
     "difficulty": "hard",
     "stem": "What role did gunpowder weapons play in enabling the Mughal Empire's conquest and control of South Asia?",
     "choices": [
-      { "label": "A", "text": "They played no role at all", "isCorrect": false, "explanation": "Gunpowder weapons played a substantial, well-documented role in Mughal military success." },
-      { "label": "B", "text": "They gave Mughal forces a significant military advantage over rival regional powers lacking similar technology", "isCorrect": true, "explanation": "Mughal use of artillery and firearms helped defeat regional rivals who lacked comparable gunpowder technology." },
-      { "label": "C", "text": "They were used exclusively for ceremonial purposes", "isCorrect": false, "explanation": "These weapons were used for actual warfare and conquest, not merely ceremonial display." },
-      { "label": "D", "text": "They were banned by Mughal rulers", "isCorrect": false, "explanation": "Mughal rulers actively used and relied on gunpowder weapons, rather than banning them." }
+      { "label": "A", "text": "They played no role at all in the Mughal conquest, which relied only on elephants", "isCorrect": false, "explanation": "Gunpowder weapons played a substantial, well-documented role in Mughal military success." },
+      { "label": "B", "text": "They gave Mughal forces a military advantage over rival powers lacking similar technology", "isCorrect": true, "explanation": "Mughal use of artillery and firearms helped defeat regional rivals who lacked comparable gunpowder technology." },
+      { "label": "C", "text": "They were used exclusively for ceremonial purposes at the imperial court and in parades", "isCorrect": false, "explanation": "These weapons were used for actual warfare and conquest, not merely ceremonial display." },
+      { "label": "D", "text": "They were banned by Mughal rulers as dishonorable weapons unsuited to a warrior's code", "isCorrect": false, "explanation": "Mughal rulers actively used and relied on gunpowder weapons, rather than banning them." }
     ],
     "explanation": "Gunpowder weapons gave the Mughals a significant military edge over regional rivals lacking similar technology.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
@@ -87,9 +87,9 @@
     "stem": "The Ming dynasty in China (and later the Qing) expanded and defended its territory partly through what large-scale defensive construction project?",
     "choices": [
       { "label": "A", "text": "The Great Wall of China", "isCorrect": true, "explanation": "The Ming significantly rebuilt and extended the Great Wall to defend against northern nomadic incursions." },
-      { "label": "B", "text": "The Suez Canal", "isCorrect": false, "explanation": "The Suez Canal is a much later (19th-century) engineering project in Egypt, unrelated to Ming/Qing China." },
+      { "label": "B", "text": "The Suez Canal in Egypt", "isCorrect": false, "explanation": "The Suez Canal is a much later (19th-century) engineering project in Egypt, unrelated to Ming/Qing China." },
       { "label": "C", "text": "The Great Pyramid of Giza", "isCorrect": false, "explanation": "The Great Pyramid of Giza is an ancient Egyptian structure, unrelated to Ming/Qing China." },
-      { "label": "D", "text": "Hadrian's Wall", "isCorrect": false, "explanation": "Hadrian's Wall was a Roman defensive structure in Britain, unrelated to Ming/Qing China." }
+      { "label": "D", "text": "Hadrian's Wall in Britain", "isCorrect": false, "explanation": "Hadrian's Wall was a Roman defensive structure in Britain, unrelated to Ming/Qing China." }
     ],
     "explanation": "The Ming dynasty significantly rebuilt and extended the Great Wall of China as part of its territorial defense.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
@@ -102,10 +102,10 @@
     "difficulty": "medium",
     "stem": "The Songhai Empire, a major West African land-based empire during this period, grew powerful in part by controlling what type of trade?",
     "choices": [
-      { "label": "A", "text": "Atlantic slave trade with Europe exclusively", "isCorrect": false, "explanation": "The Atlantic slave trade later became significant in West Africa, but Songhai's initial rise to power was rooted in trans-Saharan trade, similar to Mali before it." },
+      { "label": "A", "text": "The Atlantic slave trade with Europe exclusively", "isCorrect": false, "explanation": "The Atlantic slave trade later became significant in West Africa, but Songhai's initial rise to power was rooted in trans-Saharan trade, similar to Mali before it." },
       { "label": "B", "text": "Trans-Saharan trade routes, similar to earlier Mali", "isCorrect": true, "explanation": "Songhai, like Mali before it, built its wealth and power on controlling trans-Saharan trade in gold and salt." },
-      { "label": "C", "text": "Indian Ocean spice trade exclusively", "isCorrect": false, "explanation": "Songhai's core economic base was trans-Saharan trade, not the Indian Ocean network on the opposite side of the continent." },
-      { "label": "D", "text": "Trade with the Aztec Empire", "isCorrect": false, "explanation": "There's no documented direct trade relationship between Songhai in West Africa and the Aztec Empire in Mesoamerica." }
+      { "label": "C", "text": "The Indian Ocean spice trade with Arabia exclusively", "isCorrect": false, "explanation": "Songhai's core economic base was trans-Saharan trade, not the Indian Ocean network on the opposite side of the continent." },
+      { "label": "D", "text": "Trade with the Aztec Empire across the Atlantic Ocean", "isCorrect": false, "explanation": "There's no documented direct trade relationship between Songhai in West Africa and the Aztec Empire in Mesoamerica." }
     ],
     "explanation": "The Songhai Empire, like Mali before it, built its power on controlling trans-Saharan trade routes.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "Russia, under rulers like Ivan the Terrible, expanded significantly eastward during this period into which vast region?",
     "choices": [
-      { "label": "A", "text": "Siberia", "isCorrect": true, "explanation": "Russian expansion during this period pushed eastward across the vast territory of Siberia." },
-      { "label": "B", "text": "Western Europe", "isCorrect": false, "explanation": "Russian expansion during this period was primarily eastward into Siberia, not westward into Western Europe." },
-      { "label": "C", "text": "North America's Pacific coast exclusively", "isCorrect": false, "explanation": "Russia did eventually reach parts of North America's Pacific coast much later, but the primary early expansion during this period was into Siberia." },
-      { "label": "D", "text": "The Arabian Peninsula", "isCorrect": false, "explanation": "The Arabian Peninsula was not a target of Russian territorial expansion during this period." }
+      { "label": "A", "text": "The vast region of Siberia", "isCorrect": true, "explanation": "Russian expansion during this period pushed eastward across the vast territory of Siberia." },
+      { "label": "B", "text": "The plains of Western Europe", "isCorrect": false, "explanation": "Russian expansion during this period was primarily eastward into Siberia, not westward into Western Europe." },
+      { "label": "C", "text": "The Pacific coast of North America", "isCorrect": false, "explanation": "Russia did eventually reach parts of North America's Pacific coast much later, but the primary early expansion during this period was into Siberia." },
+      { "label": "D", "text": "The deserts of the Arabian Peninsula", "isCorrect": false, "explanation": "The Arabian Peninsula was not a target of Russian territorial expansion during this period." }
     ],
     "explanation": "Russian expansion during this period pushed eastward across the vast Siberian territory.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-expand",
@@ -135,9 +135,9 @@
     "stem": "How did large land-based empires like the Ottoman, Safavid, and Mughal typically manage their vast, diverse territories?",
     "choices": [
       { "label": "A", "text": "Through complex bureaucracies and administrative systems", "isCorrect": true, "explanation": "These empires developed sophisticated administrative structures, often blending central authority with regional accommodation." },
-      { "label": "B", "text": "They had no administrative systems at all", "isCorrect": false, "explanation": "These empires developed sophisticated administrative structures to manage their territories." },
-      { "label": "C", "text": "Through completely decentralized systems with no central authority", "isCorrect": false, "explanation": "While some regional autonomy existed, these empires maintained meaningful central authority through administrative systems." },
-      { "label": "D", "text": "By ignoring all regional differences", "isCorrect": false, "explanation": "Many of these empires developed nuanced approaches that did account for regional and religious diversity, such as the Ottoman millet system." }
+      { "label": "B", "text": "They had no administrative systems at all and ruled by custom", "isCorrect": false, "explanation": "These empires developed sophisticated administrative structures to manage their territories." },
+      { "label": "C", "text": "Through decentralized systems with no central authority", "isCorrect": false, "explanation": "While some regional autonomy existed, these empires maintained meaningful central authority through administrative systems." },
+      { "label": "D", "text": "By ignoring all regional differences among their subjects", "isCorrect": false, "explanation": "Many of these empires developed nuanced approaches that did account for regional and religious diversity, such as the Ottoman millet system." }
     ],
     "explanation": "These land-based empires managed their vast territories through complex, often sophisticated administrative bureaucracies.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
@@ -150,10 +150,10 @@
     "difficulty": "medium",
     "stem": "What was the Ottoman \"millet\" system?",
     "choices": [
-      { "label": "A", "text": "A system organizing non-Muslim religious communities with a degree of self-governance over their own internal affairs", "isCorrect": true, "explanation": "The millet system let religious communities (such as Christians and Jews) manage many of their own internal legal and religious affairs under Ottoman rule." },
-      { "label": "B", "text": "A type of gunpowder weapon", "isCorrect": false, "explanation": "\"Millet\" refers to an administrative system for governing religious communities, not a weapon." },
-      { "label": "C", "text": "A system of universal, mandatory military conscription for all subjects", "isCorrect": false, "explanation": "The millet system was about religious community administration, not universal military conscription." },
-      { "label": "D", "text": "A currency used exclusively for foreign trade", "isCorrect": false, "explanation": "The millet system wasn't a currency; it was an administrative and governance structure." }
+      { "label": "A", "text": "A system letting non-Muslim religious communities govern their own internal affairs", "isCorrect": true, "explanation": "The millet system let religious communities (such as Christians and Jews) manage many of their own internal legal and religious affairs under Ottoman rule." },
+      { "label": "B", "text": "A type of gunpowder weapon used by Ottoman artillery units in sieges of cities", "isCorrect": false, "explanation": "\"Millet\" refers to an administrative system for governing religious communities, not a weapon." },
+      { "label": "C", "text": "A system of universal, mandatory military conscription for all adult male subjects", "isCorrect": false, "explanation": "The millet system was about religious community administration, not universal military conscription." },
+      { "label": "D", "text": "A currency used exclusively for foreign trade with Venice and other European states in the sixteenth century", "isCorrect": false, "explanation": "The millet system wasn't a currency; it was an administrative and governance structure." }
     ],
     "explanation": "The millet system let non-Muslim religious communities in the Ottoman Empire govern many of their own internal affairs.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
@@ -166,10 +166,10 @@
     "difficulty": "medium",
     "stem": "The Ottoman \"devshirme\" system involved what practice?",
     "choices": [
-      { "label": "A", "text": "Recruiting and training young non-Muslim boys (often Christian) for military and administrative service to the state", "isCorrect": true, "explanation": "The devshirme system recruited and trained boys, often becoming loyal soldiers (Janissaries) or administrators directly serving the sultan." },
-      { "label": "B", "text": "Electing officials through popular vote", "isCorrect": false, "explanation": "Devshirme was not an electoral system; it involved a specific recruitment and training practice." },
-      { "label": "C", "text": "Granting hereditary noble titles based on birth alone", "isCorrect": false, "explanation": "Devshirme specifically recruited based on selection from non-Muslim populations, not hereditary noble birth." },
-      { "label": "D", "text": "Banning non-Muslims from any government service", "isCorrect": false, "explanation": "Devshirme actually created a pathway for non-Muslims, through conversion and training, to serve in significant roles, rather than banning their participation." }
+      { "label": "A", "text": "Recruiting and training young non-Muslim boys, often Christian, for military and state service", "isCorrect": true, "explanation": "The devshirme system recruited and trained boys, often becoming loyal soldiers (Janissaries) or administrators directly serving the sultan." },
+      { "label": "B", "text": "Electing local officials through popular vote among free male citizens of each province", "isCorrect": false, "explanation": "Devshirme was not an electoral system; it involved a specific recruitment and training practice." },
+      { "label": "C", "text": "Granting hereditary noble titles based on birth alone to the families of old Turkish clans", "isCorrect": false, "explanation": "Devshirme specifically recruited based on selection from non-Muslim populations, not hereditary noble birth." },
+      { "label": "D", "text": "Banning non-Muslims from any government service and from serving in the sultan's army", "isCorrect": false, "explanation": "Devshirme actually created a pathway for non-Muslims, through conversion and training, to serve in significant roles, rather than banning their participation." }
     ],
     "explanation": "The devshirme system recruited and trained young non-Muslim boys for military and administrative service to the Ottoman state.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
@@ -182,10 +182,10 @@
     "difficulty": "hard",
     "stem": "How did the Mughal emperor Akbar attempt to maintain stability and loyalty across his religiously diverse empire (with a Muslim ruling class governing a majority-Hindu population)?",
     "choices": [
-      { "label": "A", "text": "By forcing all subjects to convert to Islam immediately", "isCorrect": false, "explanation": "Akbar notably did NOT pursue forced mass conversion; he's known for relative religious tolerance." },
-      { "label": "B", "text": "Through policies of religious tolerance, including abolishing a tax on non-Muslims and incorporating Hindu elites into the administration", "isCorrect": true, "explanation": "Akbar abolished the jizya tax on non-Muslims and brought Hindu nobles, especially Rajputs, into significant administrative and military roles." },
-      { "label": "C", "text": "By banning all Hindu religious practices", "isCorrect": false, "explanation": "Akbar's policies moved toward greater tolerance and inclusion of Hindu practices and culture, not banning them." },
-      { "label": "D", "text": "By completely excluding Hindus from any government role", "isCorrect": false, "explanation": "Akbar specifically incorporated Hindu elites, such as Rajput nobles, into his administration rather than excluding them." }
+      { "label": "A", "text": "By forcing all subjects to convert to Islam immediately and destroying every Hindu temple in the empire within a single generation", "isCorrect": false, "explanation": "Akbar notably did NOT pursue forced mass conversion; he's known for relative religious tolerance." },
+      { "label": "B", "text": "Through religious tolerance, abolishing a tax on non-Muslims and including Hindu elites in the administration", "isCorrect": true, "explanation": "Akbar abolished the jizya tax on non-Muslims and brought Hindu nobles, especially Rajputs, into significant administrative and military roles." },
+      { "label": "C", "text": "By banning all Hindu religious practices and imprisoning the priests who still performed them", "isCorrect": false, "explanation": "Akbar's policies moved toward greater tolerance and inclusion of Hindu practices and culture, not banning them." },
+      { "label": "D", "text": "By completely excluding Hindus from any government role, the army and the royal court", "isCorrect": false, "explanation": "Akbar specifically incorporated Hindu elites, such as Rajput nobles, into his administration rather than excluding them." }
     ],
     "explanation": "Akbar pursued religious tolerance, abolishing a tax on non-Muslims and incorporating Hindu elites into his administration.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
@@ -199,9 +199,9 @@
     "stem": "What administrative tool did land-based empires like the Ming/Qing dynasty use to select and organize officials efficiently across a vast bureaucracy?",
     "choices": [
       { "label": "A", "text": "A centralized bureaucracy staffed partly through merit-based examinations", "isCorrect": true, "explanation": "The examination system helped staff the vast Chinese bureaucracy with officials selected on demonstrated merit." },
-      { "label": "B", "text": "Random selection of officials by lottery", "isCorrect": false, "explanation": "Official selection was based on the examination system, not random lottery." },
-      { "label": "C", "text": "No taxation or administrative system of any kind", "isCorrect": false, "explanation": "These empires maintained organized taxation and administrative systems to fund and run their governments." },
-      { "label": "D", "text": "Complete reliance on foreign administrators", "isCorrect": false, "explanation": "The core administration typically relied on trained officials from within the empire, not complete reliance on foreigners." }
+      { "label": "B", "text": "Random selection of officials by lottery among the landowners of every province", "isCorrect": false, "explanation": "Official selection was based on the examination system, not random lottery." },
+      { "label": "C", "text": "No taxation or administrative system of any kind, relying on tribute alone", "isCorrect": false, "explanation": "These empires maintained organized taxation and administrative systems to fund and run their governments." },
+      { "label": "D", "text": "Complete reliance on foreign administrators sent from the Ottoman court", "isCorrect": false, "explanation": "The core administration typically relied on trained officials from within the empire, not complete reliance on foreigners." }
     ],
     "explanation": "The Ming/Qing dynasties relied on a centralized bureaucracy staffed in part through merit-based examinations.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
@@ -216,7 +216,7 @@
     "choices": [
       { "label": "A", "text": "Ghilman", "isCorrect": true, "explanation": "The Safavids used ghilman, slave-soldiers converted and trained to be loyal directly to the shah, reducing dependence on tribal chiefs." },
       { "label": "B", "text": "Samurai", "isCorrect": false, "explanation": "Samurai were a Japanese warrior class, unrelated to Safavid Persia." },
-      { "label": "C", "text": "Janissaries (an Ottoman institution)", "isCorrect": false, "explanation": "Janissaries were a similar but distinctly Ottoman institution, not the Safavid equivalent." },
+      { "label": "C", "text": "The Janissaries", "isCorrect": false, "explanation": "Janissaries were a similar but distinctly Ottoman institution, not the Safavid equivalent." },
       { "label": "D", "text": "Conquistadors", "isCorrect": false, "explanation": "Conquistadors were Spanish conquerors in the Americas, unrelated to the Safavid Empire." }
     ],
     "explanation": "The Safavids relied on ghilman, converted slave-soldiers loyal directly to the shah, to reduce dependence on tribal nobility.",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "Why did land-based empires such as the Ottoman and Mughal empires often rely on administrators recruited from diverse ethnic/religious backgrounds rather than exclusively from one group?",
     "choices": [
-      { "label": "A", "text": "To reduce reliance on potentially rival hereditary nobility and increase loyalty directly to the ruler", "isCorrect": true, "explanation": "Recruiting outside the traditional hereditary nobility helped rulers build administrators and soldiers whose loyalty was owed directly to them." },
-      { "label": "B", "text": "Because they had no other subjects available", "isCorrect": false, "explanation": "These empires had large, diverse populations from which they could have drawn administrators in many ways; this was a deliberate strategy, not a lack of alternatives." },
-      { "label": "C", "text": "Because it was required by international law", "isCorrect": false, "explanation": "There was no such \"international law\" governing administrative recruitment in this era." },
-      { "label": "D", "text": "Because these empires had no ruling elite of their own", "isCorrect": false, "explanation": "These empires certainly had a ruling elite; this diverse recruitment practice was a strategic supplement, not a sign of lacking elites." }
+      { "label": "A", "text": "To reduce reliance on rival hereditary nobles and increase loyalty directly to the ruler", "isCorrect": true, "explanation": "Recruiting outside the traditional hereditary nobility helped rulers build administrators and soldiers whose loyalty was owed directly to them." },
+      { "label": "B", "text": "Because they had no other subjects available to serve in the army or the court", "isCorrect": false, "explanation": "These empires had large, diverse populations from which they could have drawn administrators in many ways; this was a deliberate strategy, not a lack of alternatives." },
+      { "label": "C", "text": "Because it was required by international law and treaties with European states", "isCorrect": false, "explanation": "There was no such \"international law\" governing administrative recruitment in this era." },
+      { "label": "D", "text": "Because these empires had no ruling elite of their own and needed foreign experts", "isCorrect": false, "explanation": "These empires certainly had a ruling elite; this diverse recruitment practice was a strategic supplement, not a sign of lacking elites." }
     ],
     "explanation": "Recruiting diverse administrators helped rulers reduce reliance on rival hereditary nobility, building loyalty directly to themselves.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
@@ -246,10 +246,10 @@
     "difficulty": "medium",
     "stem": "How did the Qing dynasty (Manchu rulers of China) manage the tension between being ethnic outsiders and ruling a majority Han Chinese population?",
     "choices": [
-      { "label": "A", "text": "They completely rejected all Chinese traditions and imposed Manchu culture exclusively", "isCorrect": false, "explanation": "The Qing largely adopted and continued Chinese administrative traditions rather than rejecting them." },
-      { "label": "B", "text": "They adopted and continued many existing Chinese administrative practices (like the civil service exam) while maintaining certain distinct Manchu identities/practices", "isCorrect": true, "explanation": "The Qing balanced continuing Chinese administrative traditions with preserving distinct Manchu identity and military organization." },
-      { "label": "C", "text": "They immediately relocated the entire population out of China", "isCorrect": false, "explanation": "This has no historical basis; there was no mass population relocation like this." },
-      { "label": "D", "text": "They abolished the office of emperor", "isCorrect": false, "explanation": "The Qing rulers themselves became emperors and maintained the imperial system, rather than abolishing it." }
+      { "label": "A", "text": "They completely rejected all Chinese traditions and imposed Manchu culture exclusively on every province", "isCorrect": false, "explanation": "The Qing largely adopted and continued Chinese administrative traditions rather than rejecting them." },
+      { "label": "B", "text": "They continued Chinese administrative practices like the civil service exam while keeping a distinct Manchu identity", "isCorrect": true, "explanation": "The Qing balanced continuing Chinese administrative traditions with preserving distinct Manchu identity and military organization." },
+      { "label": "C", "text": "They immediately relocated the entire Han population out of China and replaced it with Manchu settlers", "isCorrect": false, "explanation": "This has no historical basis; there was no mass population relocation like this." },
+      { "label": "D", "text": "They abolished the office of emperor and ruled the country through a council of Manchu tribal generals", "isCorrect": false, "explanation": "The Qing rulers themselves became emperors and maintained the imperial system, rather than abolishing it." }
     ],
     "explanation": "The Qing balanced continuing existing Chinese administrative practices with maintaining distinct Manchu identity and institutions.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
@@ -263,9 +263,9 @@
     "stem": "How did rulers of land-based empires during this period often use religion to legitimize their political authority?",
     "choices": [
       { "label": "A", "text": "By claiming divine sanction or special religious status for their rule", "isCorrect": true, "explanation": "Rulers across many of these empires linked their political authority to religious legitimacy, such as claiming divine favor or religious titles." },
-      { "label": "B", "text": "Religion had no connection to political legitimacy in this era", "isCorrect": false, "explanation": "Religion was deeply intertwined with political legitimacy across nearly all these empires during this era." },
-      { "label": "C", "text": "By banning all religious practice entirely", "isCorrect": false, "explanation": "Banning religious practice entirely would undermine, not support, the common strategy of using religion to legitimize rule." },
-      { "label": "D", "text": "By outsourcing all religious matters to foreign powers", "isCorrect": false, "explanation": "These empires typically maintained direct control over religious institutions and legitimacy claims rather than outsourcing them to foreign powers." }
+      { "label": "B", "text": "Religion had no connection to political legitimacy in this era at all", "isCorrect": false, "explanation": "Religion was deeply intertwined with political legitimacy across nearly all these empires during this era." },
+      { "label": "C", "text": "By banning all religious practice entirely within the empire's borders", "isCorrect": false, "explanation": "Banning religious practice entirely would undermine, not support, the common strategy of using religion to legitimize rule." },
+      { "label": "D", "text": "By outsourcing all religious matters to foreign powers and their clergy", "isCorrect": false, "explanation": "These empires typically maintained direct control over religious institutions and legitimacy claims rather than outsourcing them to foreign powers." }
     ],
     "explanation": "Rulers of land-based empires often claimed divine sanction or special religious status to legitimize their political authority.",
     "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
@@ -278,10 +278,10 @@
     "difficulty": "medium",
     "stem": "The Ottoman sultans claimed the title of \"caliph,\" which carried what significance?",
     "choices": [
-      { "label": "A", "text": "It gave them no religious significance whatsoever", "isCorrect": false, "explanation": "The caliph title carried substantial religious significance, connecting the sultan's political rule to Islamic religious leadership." },
-      { "label": "B", "text": "It positioned them as leaders of the global Muslim (Sunni) community, blending religious and political authority", "isCorrect": true, "explanation": "Claiming the caliphate let Ottoman sultans present themselves as the foremost religious authority for Sunni Muslims, alongside their political rule." },
-      { "label": "C", "text": "It was a purely ceremonial military rank", "isCorrect": false, "explanation": "The caliph title was fundamentally a religious-political title, not a purely military rank." },
-      { "label": "D", "text": "It indicated subservience to the Safavid shah", "isCorrect": false, "explanation": "The Ottomans and Safavids were rivals, not in a relationship where the Ottoman sultan's title indicated subservience to the Safavid shah." }
+      { "label": "A", "text": "It gave them no religious significance whatsoever and was used only in ceremonies at court", "isCorrect": false, "explanation": "The caliph title carried substantial religious significance, connecting the sultan's political rule to Islamic religious leadership." },
+      { "label": "B", "text": "It made them leaders of the global Sunni Muslim community, blending religious and political authority", "isCorrect": true, "explanation": "Claiming the caliphate let Ottoman sultans present themselves as the foremost religious authority for Sunni Muslims, alongside their political rule." },
+      { "label": "C", "text": "It was a purely ceremonial military rank given to generals who had won a major siege", "isCorrect": false, "explanation": "The caliph title was fundamentally a religious-political title, not a purely military rank." },
+      { "label": "D", "text": "It indicated subservience to the Safavid shah and acceptance of his religious authority", "isCorrect": false, "explanation": "The Ottomans and Safavids were rivals, not in a relationship where the Ottoman sultan's title indicated subservience to the Safavid shah." }
     ],
     "explanation": "The Ottoman sultans' claim to the caliphate positioned them as leaders of the Sunni Muslim community, blending religious and political authority.",
     "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
@@ -294,10 +294,10 @@
     "difficulty": "medium",
     "stem": "Why did religious differences (Sunni vs. Shia Islam) contribute to conflict between the Ottoman and Safavid empires?",
     "choices": [
-      { "label": "A", "text": "Religion played no role in their conflicts", "isCorrect": false, "explanation": "Religious identity was significantly intertwined with their political rivalry, not irrelevant to it." },
-      { "label": "B", "text": "Each empire saw itself as the legitimate leader of a particular branch of Islam, fueling political and military rivalry alongside territorial disputes", "isCorrect": true, "explanation": "Sunni Ottoman and Shia Safavid religious identities reinforced their political rivalry over territory and religious leadership." },
-      { "label": "C", "text": "They were actually the same religion with no differences", "isCorrect": false, "explanation": "Sunni and Shia Islam are distinct branches with real theological and political differences." },
-      { "label": "D", "text": "They had no territorial disputes of any kind", "isCorrect": false, "explanation": "The two empires did have significant territorial disputes, such as over regions like Iraq/Mesopotamia, in addition to religious rivalry." }
+      { "label": "A", "text": "Religion played no role in their conflicts, which were fought purely over control of trade routes and valuable farmland", "isCorrect": false, "explanation": "Religious identity was significantly intertwined with their political rivalry, not irrelevant to it." },
+      { "label": "B", "text": "Each empire saw itself as the rightful leader of one branch of Islam, adding to territorial disputes", "isCorrect": true, "explanation": "Sunni Ottoman and Shia Safavid religious identities reinforced their political rivalry over territory and religious leadership." },
+      { "label": "C", "text": "They were actually followers of the same religion with no differences in doctrine or practice", "isCorrect": false, "explanation": "Sunni and Shia Islam are distinct branches with real theological and political differences." },
+      { "label": "D", "text": "They had no territorial disputes of any kind and shared a long, peaceful border for centuries", "isCorrect": false, "explanation": "The two empires did have significant territorial disputes, such as over regions like Iraq/Mesopotamia, in addition to religious rivalry." }
     ],
     "explanation": "Sunni-Shia religious rivalry reinforced political and territorial conflict between the Ottoman and Safavid empires.",
     "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
@@ -310,10 +310,10 @@
     "difficulty": "hard",
     "stem": "The Mughal emperor Aurangzeb, in contrast to earlier rulers like Akbar, pursued policies that were generally described as what, regarding religious tolerance?",
     "choices": [
-      { "label": "A", "text": "More religiously tolerant than his predecessors", "isCorrect": false, "explanation": "Aurangzeb is generally understood to have moved away from Akbar's relative tolerance, not toward greater tolerance." },
+      { "label": "A", "text": "More religiously tolerant than his predecessors, extending Akbar's policies to new groups", "isCorrect": false, "explanation": "Aurangzeb is generally understood to have moved away from Akbar's relative tolerance, not toward greater tolerance." },
       { "label": "B", "text": "More stringently orthodox and less tolerant, including reinstating a tax on non-Muslims", "isCorrect": true, "explanation": "Aurangzeb reinstated the jizya tax on non-Muslims and pursued stricter religious orthodoxy, reversing some of Akbar's tolerant policies." },
-      { "label": "C", "text": "Completely identical to Akbar's policies with no changes", "isCorrect": false, "explanation": "Aurangzeb's policies represented a notable shift from Akbar's approach, not an identical continuation." },
-      { "label": "D", "text": "Focused entirely on promoting Hinduism over Islam", "isCorrect": false, "explanation": "Aurangzeb promoted stricter Islamic orthodoxy, not Hinduism, in contrast to earlier Mughal approaches." }
+      { "label": "C", "text": "Completely identical to Akbar's policies, with no changes in taxes or religious law", "isCorrect": false, "explanation": "Aurangzeb's policies represented a notable shift from Akbar's approach, not an identical continuation." },
+      { "label": "D", "text": "Focused entirely on promoting Hinduism over Islam throughout the empire and its courts", "isCorrect": false, "explanation": "Aurangzeb promoted stricter Islamic orthodoxy, not Hinduism, in contrast to earlier Mughal approaches." }
     ],
     "explanation": "Aurangzeb pursued stricter religious orthodoxy than his predecessors, including reinstating the jizya tax on non-Muslims.",
     "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
@@ -342,10 +342,10 @@
     "difficulty": "medium",
     "stem": "How did the concept of the \"Mandate of Heaven\" function in Chinese political thought during this period?",
     "choices": [
-      { "label": "A", "text": "It had no political function at all", "isCorrect": false, "explanation": "The Mandate of Heaven had a very significant political function, legitimizing (and potentially delegitimizing) imperial rule." },
-      { "label": "B", "text": "It provided ideological justification for imperial rule, suggesting that a just ruler had heaven's approval, which could be lost through misrule", "isCorrect": true, "explanation": "This concept legitimized dynastic rule while also justifying dynastic change if a ruler was seen as unjust." },
-      { "label": "C", "text": "It was exclusively a Buddhist concept unrelated to imperial governance", "isCorrect": false, "explanation": "The Mandate of Heaven is rooted in earlier Chinese political philosophy, not specifically a Buddhist concept." },
-      { "label": "D", "text": "It gave ultimate authority to the pope in Rome", "isCorrect": false, "explanation": "This concept is entirely about Chinese imperial legitimacy, with no connection to the pope or Roman Catholicism." }
+      { "label": "A", "text": "It had no political function at all and was only a folk belief among Chinese peasants", "isCorrect": false, "explanation": "The Mandate of Heaven had a very significant political function, legitimizing (and potentially delegitimizing) imperial rule." },
+      { "label": "B", "text": "It justified imperial rule: a just ruler had heaven's approval, which misrule could cost him", "isCorrect": true, "explanation": "This concept legitimized dynastic rule while also justifying dynastic change if a ruler was seen as unjust." },
+      { "label": "C", "text": "It was exclusively a Buddhist concept unrelated to imperial governance and the examinations", "isCorrect": false, "explanation": "The Mandate of Heaven is rooted in earlier Chinese political philosophy, not specifically a Buddhist concept." },
+      { "label": "D", "text": "It gave ultimate authority to the pope in Rome over the emperors of China and Japan", "isCorrect": false, "explanation": "This concept is entirely about Chinese imperial legitimacy, with no connection to the pope or Roman Catholicism." }
     ],
     "explanation": "The Mandate of Heaven legitimized imperial rule by tying it to heaven's approval, which could be forfeited through unjust rule.",
     "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "Why might historians describe religion as both a unifying and a divisive force within and between land-based empires of this era?",
     "choices": [
-      { "label": "A", "text": "Religion had no significant social or political effects", "isCorrect": false, "explanation": "Religion had substantial, well-documented social and political effects during this era." },
-      { "label": "B", "text": "Shared religious identity could unify subjects under a ruler's legitimacy, while religious differences between empires or communities could fuel conflict", "isCorrect": true, "explanation": "Religion simultaneously legitimized rulers' authority within their realms and fueled rivalry with religiously different neighbors." },
-      { "label": "C", "text": "All empires of this era shared identical religious beliefs with no variation", "isCorrect": false, "explanation": "Empires of this era had notably different religious identities, such as Sunni Ottomans, Shia Safavids, and a Hindu-majority Mughal population, not identical beliefs." },
-      { "label": "D", "text": "Religion was completely separate from any political considerations", "isCorrect": false, "explanation": "Religion was deeply intertwined with political considerations throughout this era, not separate from them." }
+      { "label": "A", "text": "Religion had no significant social or political effects in any of these large empires", "isCorrect": false, "explanation": "Religion had substantial, well-documented social and political effects during this era." },
+      { "label": "B", "text": "Shared religion could unify subjects behind a ruler, while religious differences could fuel conflict", "isCorrect": true, "explanation": "Religion simultaneously legitimized rulers' authority within their realms and fueled rivalry with religiously different neighbors." },
+      { "label": "C", "text": "All empires of this era shared identical religious beliefs with no variation among their subjects", "isCorrect": false, "explanation": "Empires of this era had notably different religious identities, such as Sunni Ottomans, Shia Safavids, and a Hindu-majority Mughal population, not identical beliefs." },
+      { "label": "D", "text": "Religion was completely separate from any political considerations in the governing of the empires", "isCorrect": false, "explanation": "Religion was deeply intertwined with political considerations throughout this era, not separate from them." }
     ],
     "explanation": "Religion could unify subjects under a ruler's legitimacy while also fueling conflict between empires with different religious identities.",
     "conceptLink": "ap-world/unit-3-land-based-empires/religion-and-state-power",
@@ -375,9 +375,9 @@
     "stem": "Which of these empires is generally classified among the major \"gunpowder empires\" of this era (c. 1450-1750), known for using gunpowder weapons to expand and maintain centralized rule?",
     "choices": [
       { "label": "A", "text": "The Ottoman, Safavid, and Mughal empires", "isCorrect": true, "explanation": "These three empires are commonly grouped as \"gunpowder empires\" for their shared reliance on firearms and artillery to expand and centralize power." },
-      { "label": "B", "text": "The ancient Roman Empire", "isCorrect": false, "explanation": "The Roman Empire existed many centuries earlier, well before gunpowder weapons existed." },
-      { "label": "C", "text": "The classical Maya civilization", "isCorrect": false, "explanation": "The classical Maya civilization predates gunpowder weapons and this era." },
-      { "label": "D", "text": "The early Sumerian city-states", "isCorrect": false, "explanation": "The Sumerian city-states existed thousands of years earlier, long before gunpowder." }
+      { "label": "B", "text": "The ancient Roman and Byzantine empires", "isCorrect": false, "explanation": "The Roman Empire existed many centuries earlier, well before gunpowder weapons existed." },
+      { "label": "C", "text": "The classical Maya and Aztec civilizations", "isCorrect": false, "explanation": "The classical Maya civilization predates gunpowder weapons and this era." },
+      { "label": "D", "text": "The early Sumerian and Akkadian city-states", "isCorrect": false, "explanation": "The Sumerian city-states existed thousands of years earlier, long before gunpowder." }
     ],
     "explanation": "The Ottoman, Safavid, and Mughal empires are commonly grouped together as \"gunpowder empires\" of this era.",
     "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
@@ -390,10 +390,10 @@
     "difficulty": "medium",
     "stem": "What common feature did the Ottoman, Safavid, and Mughal empires share, despite their religious and regional differences?",
     "choices": [
-      { "label": "A", "text": "They were all democratic republics", "isCorrect": false, "explanation": "These were monarchies, not democratic republics." },
-      { "label": "B", "text": "They were all centralized, land-based empires ruled by a single monarch who used gunpowder weapons and religious legitimacy to maintain power", "isCorrect": true, "explanation": "Despite their differences, all three empires shared this basic structure of centralized monarchical rule backed by gunpowder military power and religious legitimacy." },
-      { "label": "C", "text": "They all rejected any form of bureaucratic administration", "isCorrect": false, "explanation": "All three empires developed substantial bureaucratic administrative systems." },
-      { "label": "D", "text": "They had no military forces of any kind", "isCorrect": false, "explanation": "These empires maintained significant military forces, especially given their reliance on gunpowder weaponry for expansion." }
+      { "label": "A", "text": "They were all democratic republics governed by elected assemblies of landowning men and merchants", "isCorrect": false, "explanation": "These were monarchies, not democratic republics." },
+      { "label": "B", "text": "They were centralized land empires ruled by a monarch using gunpowder weapons and religious legitimacy", "isCorrect": true, "explanation": "Despite their differences, all three empires shared this basic structure of centralized monarchical rule backed by gunpowder military power and religious legitimacy." },
+      { "label": "C", "text": "They all rejected any form of bureaucratic administration and ruled entirely through tribal chiefs and clan councils", "isCorrect": false, "explanation": "All three empires developed substantial bureaucratic administrative systems." },
+      { "label": "D", "text": "They had no military forces of any kind and relied entirely on neighboring states for defense", "isCorrect": false, "explanation": "These empires maintained significant military forces, especially given their reliance on gunpowder weaponry for expansion." }
     ],
     "explanation": "Despite their differences, the Ottoman, Safavid, and Mughal empires all shared centralized monarchical rule backed by gunpowder weapons and religious legitimacy.",
     "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
@@ -406,10 +406,10 @@
     "difficulty": "medium",
     "stem": "How did the Ming/Qing dynasties in China differ from the Ottoman, Safavid, and Mughal empires in terms of religious diversity within their core territory?",
     "choices": [
-      { "label": "A", "text": "China's core population was religiously identical to the Ottoman Empire's", "isCorrect": false, "explanation": "China's core religious traditions were quite different from the Ottoman Empire's Islamic/multi-religious context." },
-      { "label": "B", "text": "China's core population was more religiously homogeneous (predominantly following Confucian, Buddhist, and Daoist traditions) compared to the more religiously mixed populations the Ottoman/Mughal empires governed", "isCorrect": true, "explanation": "China's core population shared a more unified religious/philosophical tradition than the more religiously diverse populations under Ottoman or Mughal rule." },
-      { "label": "C", "text": "China had no religious traditions at all", "isCorrect": false, "explanation": "China had substantial religious and philosophical traditions, including Confucianism, Buddhism, and Daoism." },
-      { "label": "D", "text": "The Ottoman Empire had no religious diversity whatsoever", "isCorrect": false, "explanation": "The Ottoman Empire governed a notably diverse population, including many Christian and Jewish subjects alongside Muslims." }
+      { "label": "A", "text": "China's core population was religiously identical to the Ottoman Empire's, with the same faiths, sects and holy places", "isCorrect": false, "explanation": "China's core religious traditions were quite different from the Ottoman Empire's Islamic/multi-religious context." },
+      { "label": "B", "text": "China's core population was more religiously uniform than the mixed populations ruled by the Ottomans and Mughals", "isCorrect": true, "explanation": "China's core population shared a more unified religious/philosophical tradition than the more religiously diverse populations under Ottoman or Mughal rule." },
+      { "label": "C", "text": "China had no religious traditions at all, while the Ottoman and Mughal empires were entirely Muslim in faith", "isCorrect": false, "explanation": "China had substantial religious and philosophical traditions, including Confucianism, Buddhism, and Daoism." },
+      { "label": "D", "text": "The Ottoman Empire had no religious diversity whatsoever, since every one of its subjects belonged to a single Muslim sect", "isCorrect": false, "explanation": "The Ottoman Empire governed a notably diverse population, including many Christian and Jewish subjects alongside Muslims." }
     ],
     "explanation": "China's core population was more religiously homogeneous compared to the more religiously mixed populations governed by the Ottoman and Mughal empires.",
     "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
@@ -422,10 +422,10 @@
     "difficulty": "hard",
     "stem": "Comparing the Mughal Empire under Akbar and the Ottoman Empire under Suleiman the Magnificent, what similarity can be drawn regarding their approaches to governing diverse populations?",
     "choices": [
-      { "label": "A", "text": "Both rulers pursued religious tolerance policies that helped incorporate diverse populations into their administrations", "isCorrect": true, "explanation": "Akbar's Hindu-Muslim integration and the Ottoman millet system for non-Muslims both reflect strategies for incorporating religiously diverse populations." },
-      { "label": "B", "text": "Both rulers had no diverse populations to manage", "isCorrect": false, "explanation": "Both empires governed substantially diverse populations, which is precisely why comparing their approaches is meaningful." },
-      { "label": "C", "text": "Both rulers completely rejected all religious minorities from any role in government", "isCorrect": false, "explanation": "Both rulers, in different ways, incorporated religious minorities into aspects of governance rather than completely excluding them." },
-      { "label": "D", "text": "Neither ruler expanded his empire's territory", "isCorrect": false, "explanation": "Both Akbar and Suleiman are noted for significant territorial expansion during their reigns." }
+      { "label": "A", "text": "Both rulers used religious tolerance to bring diverse populations into their administrations", "isCorrect": true, "explanation": "Akbar's Hindu-Muslim integration and the Ottoman millet system for non-Muslims both reflect strategies for incorporating religiously diverse populations." },
+      { "label": "B", "text": "Both rulers had no diverse populations to manage, since each empire was ethnically uniform", "isCorrect": false, "explanation": "Both empires governed substantially diverse populations, which is precisely why comparing their approaches is meaningful." },
+      { "label": "C", "text": "Both rulers rejected all religious minorities from any role in government and the army", "isCorrect": false, "explanation": "Both rulers, in different ways, incorporated religious minorities into aspects of governance rather than completely excluding them." },
+      { "label": "D", "text": "Neither ruler expanded his empire's territory, fought a major war or captured a city", "isCorrect": false, "explanation": "Both Akbar and Suleiman are noted for significant territorial expansion during their reigns." }
     ],
     "explanation": "Both Akbar and Suleiman pursued policies that incorporated religiously diverse populations into their administrations.",
     "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
@@ -438,10 +438,10 @@
     "difficulty": "medium",
     "stem": "What role did trade and economic prosperity play in supporting the power of land-based empires like the Ottoman, Safavid, and Mughal empires?",
     "choices": [
-      { "label": "A", "text": "None; these empires had no significant trade", "isCorrect": false, "explanation": "These empires benefited substantially from trade, contradicting this claim of no significant trade." },
-      { "label": "B", "text": "Control over lucrative trade routes and agricultural production provided crucial revenue that funded administration and military forces", "isCorrect": true, "explanation": "Trade revenue and agricultural taxation funded the large bureaucracies and militaries these empires needed to maintain power." },
-      { "label": "C", "text": "They relied entirely on foreign aid", "isCorrect": false, "explanation": "These empires were largely self-funded through internal trade, taxation, and production, not dependent on foreign aid." },
-      { "label": "D", "text": "They actively destroyed all trade within their territories", "isCorrect": false, "explanation": "These empires generally promoted and profited from trade rather than destroying it." }
+      { "label": "A", "text": "None; these empires had no significant trade and lived mostly on subsistence farming alone", "isCorrect": false, "explanation": "These empires benefited substantially from trade, contradicting this claim of no significant trade." },
+      { "label": "B", "text": "Control of trade routes and farmland provided revenue that funded administration and armies", "isCorrect": true, "explanation": "Trade revenue and agricultural taxation funded the large bureaucracies and militaries these empires needed to maintain power." },
+      { "label": "C", "text": "They relied entirely on foreign aid from European kingdoms and the trading companies", "isCorrect": false, "explanation": "These empires were largely self-funded through internal trade, taxation, and production, not dependent on foreign aid." },
+      { "label": "D", "text": "They actively destroyed all trade within their territories in order to keep their subjects poor", "isCorrect": false, "explanation": "These empires generally promoted and profited from trade rather than destroying it." }
     ],
     "explanation": "Trade and agricultural revenue provided the crucial funding these empires needed to maintain their administrations and militaries.",
     "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
@@ -454,10 +454,10 @@
     "difficulty": "medium",
     "stem": "Despite being major land-based empires of the same general era, why did the Ottoman and Safavid empires frequently go to war with one another?",
     "choices": [
-      { "label": "A", "text": "They had no significant differences motivating conflict", "isCorrect": false, "explanation": "There were substantial religious and territorial factors motivating their conflicts." },
-      { "label": "B", "text": "A combination of religious rivalry (Sunni vs. Shia) and competition over strategic territory (such as Iraq) fueled repeated conflicts", "isCorrect": true, "explanation": "Religious and territorial rivalry together drove repeated wars between these two neighboring empires." },
-      { "label": "C", "text": "They were formal allies who never fought", "isCorrect": false, "explanation": "The Ottoman and Safavid empires were significant rivals, not allies." },
-      { "label": "D", "text": "Neither empire had any military capability", "isCorrect": false, "explanation": "Both empires possessed significant, well-documented gunpowder-based military capabilities." }
+      { "label": "A", "text": "They had no significant differences motivating conflict and fought only over small border incidents", "isCorrect": false, "explanation": "There were substantial religious and territorial factors motivating their conflicts." },
+      { "label": "B", "text": "Sunni-Shia religious rivalry and competition over territory such as Iraq fueled repeated wars", "isCorrect": true, "explanation": "Religious and territorial rivalry together drove repeated wars between these two neighboring empires." },
+      { "label": "C", "text": "They were formal allies who never fought and shared the same Sunni religious leaders and courts", "isCorrect": false, "explanation": "The Ottoman and Safavid empires were significant rivals, not allies." },
+      { "label": "D", "text": "Neither empire had any military capability and both relied entirely on mercenaries from Europe", "isCorrect": false, "explanation": "Both empires possessed significant, well-documented gunpowder-based military capabilities." }
     ],
     "explanation": "Religious rivalry (Sunni vs. Shia) combined with territorial competition fueled repeated Ottoman-Safavid conflicts.",
     "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "When comparing land-based empires of this era globally, what is a key reason historians group empires like the Ottoman, Safavid, Mughal, and Qing together for study, despite their distinct religions and regions?",
     "choices": [
-      { "label": "A", "text": "They shared no meaningful similarities and shouldn't be compared at all", "isCorrect": false, "explanation": "Historians do find meaningful comparative value, which is why this grouping is commonly used." },
-      { "label": "B", "text": "They each represent large, centralized states that used military technology, administrative systems, and religious/ideological legitimacy to control vast, diverse territories during a similar era", "isCorrect": true, "explanation": "This shared structural pattern -- centralized, technologically-enabled, ideologically-legitimized rule over diverse territory -- is why historians compare these empires." },
-      { "label": "C", "text": "They were all located on the same continent", "isCorrect": false, "explanation": "These empires span multiple continents -- the Ottoman Empire across parts of Europe, the Middle East, and North Africa; the Mughal Empire in South Asia; the Qing in East Asia -- not a single continent." },
-      { "label": "D", "text": "They all had identical forms of government with no variation", "isCorrect": false, "explanation": "Despite some structural similarities, these empires had distinct governmental variations, including differing administrative traditions, religious contexts, and succession practices." }
+      { "label": "A", "text": "They shared no meaningful similarities and shouldn't be compared at all, because each was entirely unique in form and function", "isCorrect": false, "explanation": "Historians do find meaningful comparative value, which is why this grouping is commonly used." },
+      { "label": "B", "text": "Each was a large centralized state using military technology, bureaucracy and religious legitimacy to rule diverse lands", "isCorrect": true, "explanation": "This shared structural pattern -- centralized, technologically-enabled, ideologically-legitimized rule over diverse territory -- is why historians compare these empires." },
+      { "label": "C", "text": "They were all located on the same continent and had been founded by members of the same royal dynasty", "isCorrect": false, "explanation": "These empires span multiple continents -- the Ottoman Empire across parts of Europe, the Middle East, and North Africa; the Mughal Empire in South Asia; the Qing in East Asia -- not a single continent." },
+      { "label": "D", "text": "They all had identical forms of government, with no variation in laws, taxes, officials or courts at all", "isCorrect": false, "explanation": "Despite some structural similarities, these empires had distinct governmental variations, including differing administrative traditions, religious contexts, and succession practices." }
     ],
     "explanation": "Historians group these empires together for their shared pattern of centralized, technologically-enabled, ideologically-legitimized rule over vast, diverse territories.",
     "conceptLink": "ap-world/unit-3-land-based-empires/comparing-empires",

@@ -8,7 +8,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "The Byzantine emperor surrendered because of a popular revolution inside the city.",
+        "text": "The Byzantine emperor surrendered because of a popular revolution inside the city and a mutiny of his troops, which opened the gates to the sultan's army",
         "isCorrect": false,
         "explanation": "The city fell to a military assault after a siege; there was no revolution."
       },
@@ -20,13 +20,13 @@
       },
       {
         "label": "C",
-        "text": "The Ottomans used steam-powered ships to break the blockade.",
+        "text": "The Ottomans used steam-powered ships to break the Byzantine blockade and land troops inside the city walls",
         "isCorrect": false,
         "explanation": "Steam power came centuries later."
       },
       {
         "label": "D",
-        "text": "The Ottomans captured the city after an alliance with the Mongol Empire.",
+        "text": "The Ottomans captured the city after an alliance with the Mongol Empire, whose cavalry stormed the walls",
         "isCorrect": false,
         "explanation": "The Mongol Empire had divided centuries before and was not the Ottomans' ally in 1453."
       }
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "It created a loyal professional military and administrative class, such as the Janissaries, whose members depended on the sultan rather than on hereditary nobility.",
+        "text": "It created a loyal professional military and administrative class, such as the Janissaries, dependent on the sultan.",
         "isCorrect": true,
         "explanation": "Boys were raised as Muslims and trained for the army and administration, giving the sultan servants with no independent family power base."
       },
       {
         "label": "B",
-        "text": "It enforced the conversion of all Muslims to Christianity.",
+        "text": "It enforced the conversion of all Muslims in the Balkans to Christianity and the end of Islamic law",
         "isCorrect": false,
         "explanation": "The system converted the drafted boys to Islam, not the reverse."
       },
       {
         "label": "C",
-        "text": "It supplied enslaved labor for plantations in the Americas.",
+        "text": "It supplied enslaved labor for sugar plantations in the Americas and the Caribbean islands under Ottoman control, which was the empire's main source of income",
         "isCorrect": false,
         "explanation": "The devshirme served the Ottoman state's military and administration, not American plantations."
       },
       {
         "label": "D",
-        "text": "It selected scholars by written examinations to staff a Confucian-style bureaucracy.",
+        "text": "It selected scholars by written examinations to staff a Confucian-style bureaucracy at Istanbul",
         "isCorrect": false,
         "explanation": "The devshirme drafted boys; it was not an examination system and was not Confucian."
       }
@@ -80,25 +80,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A response to a Hindu revolt that was meant to force all subjects to convert to Islam.",
+        "text": "A response to a Hindu revolt that was meant to force all subjects to convert to Islam at once throughout the empire",
         "isCorrect": false,
         "explanation": "The passage promotes religious freedom, not forced conversion."
       },
       {
         "label": "B",
-        "text": "A requirement that all subjects follow the same state religion.",
+        "text": "A requirement that all subjects follow the same state religion or pay a heavy tax each year",
         "isCorrect": false,
         "explanation": "The edict allows each person to follow his own faith."
       },
       {
         "label": "C",
-        "text": "An effort to win the loyalty of a diverse population, most of which was not Muslim, by tolerating religious differences.",
+        "text": "An effort to win the loyalty of a mostly non-Muslim population by tolerating religious differences.",
         "isCorrect": true,
         "explanation": "Akbar governed a mostly Hindu population and strengthened Mughal rule by tolerance, abolishing the jizya and including Hindus in the administration."
       },
       {
         "label": "D",
-        "text": "A rejection of Islam by the Mughal court in favor of Christianity.",
+        "text": "A rejection of Islam by the Mughal court in favor of Christianity and the Jesuit missionaries",
         "isCorrect": false,
         "explanation": "The Mughal rulers remained Muslim; the policy concerned toleration."
       }
@@ -116,25 +116,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The Safavids made Twelver Shi'a Islam the state religion, which deepened the religious division between Persia and its Sunni Ottoman neighbors.",
+        "text": "The Safavids made Twelver Shi'a Islam the state religion, deepening the divide with their Sunni Ottoman neighbors.",
         "isCorrect": true,
         "explanation": "Shah Ismail's establishment of Shi'ism as the state faith shaped Persian identity and added a religious dimension to the Safavid-Ottoman rivalry."
       },
       {
         "label": "B",
-        "text": "The Safavids adopted Sunni Islam in order to ally with the Ottomans.",
+        "text": "The Safavids adopted Sunni Islam in order to ally with the Ottomans against the Uzbek khanate and Russia",
         "isCorrect": false,
         "explanation": "The Safavids were rivals of the Ottomans and promoted Shi'ism, not Sunni Islam."
       },
       {
         "label": "C",
-        "text": "The Safavids abolished the influence of religion in government and law.",
+        "text": "The Safavids abolished the influence of religion in government and law and adopted a fully secular legal code in the early sixteenth century",
         "isCorrect": false,
         "explanation": "Religion was central to Safavid rule, which relied on Shi'a clergy and religious legitimacy."
       },
       {
         "label": "D",
-        "text": "The Safavids converted Persia to Christianity.",
+        "text": "The Safavids converted Persia to Christianity after an alliance with the Catholic kings of Europe and Armenia",
         "isCorrect": false,
         "explanation": "Persia remained Muslim under the Safavids."
       }
@@ -152,25 +152,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Russian rulers, using military force and fortified outposts, extended their authority over a vast, thinly populated region in search of furs and other resources.",
+        "text": "Russian rulers used force and fortified outposts to extend their authority over a thinly populated region rich in furs.",
         "isCorrect": true,
         "explanation": "Cossacks and other expeditions pushed east for the lucrative fur trade, building forts and collecting tribute from native peoples."
       },
       {
         "label": "B",
-        "text": "Russia reached Siberia by sea power in the Pacific Ocean.",
+        "text": "Russia reached Siberia by sea power in the Pacific Ocean, using large fleets built at Vladivostok in the 1500s",
         "isCorrect": false,
         "explanation": "Russian expansion into Siberia was overland, by rivers and land routes."
       },
       {
         "label": "C",
-        "text": "Russia conquered Siberia from the Ottoman Empire.",
+        "text": "Russia conquered Siberia from the Ottoman Empire after a long series of wars along the Black Sea and the Volga",
         "isCorrect": false,
         "explanation": "The Ottoman Empire did not control Siberia."
       },
       {
         "label": "D",
-        "text": "Russia expanded into Siberia at the request of the Ming dynasty.",
+        "text": "Russia expanded into Siberia at the request of the Ming dynasty, which sought allies against the Mongol raiders along its northern frontier",
         "isCorrect": false,
         "explanation": "The Ming did not invite Russian expansion."
       }
@@ -188,7 +188,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "An attempt by the Ming dynasty to preserve Han Chinese traditions.",
+        "text": "An attempt by the Ming dynasty to preserve Han Chinese traditions against foreign Manchu customs",
         "isCorrect": false,
         "explanation": "The decree was issued by the Qing, who replaced the Ming."
       },
@@ -200,13 +200,13 @@
       },
       {
         "label": "C",
-        "text": "A fashion that spread voluntarily among Chinese merchants through trade with Europe.",
+        "text": "A fashion that spread voluntarily among Chinese merchants through trade with Europe and Japan",
         "isCorrect": false,
         "explanation": "The decree required compliance and punished refusal."
       },
       {
         "label": "D",
-        "text": "A reform that gave Han Chinese full political equality with the Manchus.",
+        "text": "A reform that gave Han Chinese full political equality with the Manchus in the imperial court",
         "isCorrect": false,
         "explanation": "The Qing maintained a distinction between Manchus and Han Chinese."
       }
@@ -224,25 +224,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Neither used gunpowder weapons, relying instead on traditional cavalry.",
+        "text": "Neither used gunpowder weapons, relying instead on traditional cavalry and the old feudal levies raised by powerful nobles",
         "isCorrect": false,
         "explanation": "Both used cannon and muskets as important elements of their military power."
       },
       {
         "label": "B",
-        "text": "The Ottomans ruled a mostly Hindu population and the Mughals ruled the Balkans.",
+        "text": "The Ottomans ruled a mostly Hindu population, while the Mughals ruled the Balkans from a capital at Istanbul",
         "isCorrect": false,
         "explanation": "The Mughals ruled northern India and the Ottomans ruled Anatolia, the Balkans and the Arab lands."
       },
       {
         "label": "C",
-        "text": "Both were governed by Confucian bureaucracies chosen through examinations.",
+        "text": "Both were governed by Confucian bureaucracies chosen through competitive examinations, as in the Ming and Qing dynasties",
         "isCorrect": false,
         "explanation": "Neither used a Confucian examination system."
       },
       {
         "label": "D",
-        "text": "Both used gunpowder weapons and governed religiously diverse populations; the Mughals ruled a mostly Hindu population, while the Ottomans allowed religious minorities to manage their own communal affairs through the millet system.",
+        "text": "Both used gunpowder and ruled diverse peoples; the Mughals ruled a mostly Hindu population, while the Ottomans used the millet system.",
         "isCorrect": true,
         "explanation": "Both were Muslim-ruled gunpowder empires with diverse subjects, but their circumstances differed in the religious composition of their populations."
       }
@@ -260,25 +260,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Control powerful regional lords by keeping their families as hostages and draining their resources through the cost of travel and maintaining two residences.",
+        "text": "Control regional lords by holding their families as hostages and draining their resources through travel and two residences.",
         "isCorrect": true,
         "explanation": "Alternate attendance (sankin-kotai) reduced the daimyo's capacity to rebel and kept them under the shogun's observation."
       },
       {
         "label": "B",
-        "text": "Encourage the daimyo to found overseas colonies.",
+        "text": "Encourage the daimyo to found overseas colonies in Southeast Asia that would pay tribute to the shogun",
         "isCorrect": false,
         "explanation": "Tokugawa policy limited overseas contacts and did not support colonization."
       },
       {
         "label": "C",
-        "text": "Build a unified national army of conscripts from every region.",
+        "text": "Build a unified national army of conscripts from every region, trained and housed together at the capital",
         "isCorrect": false,
         "explanation": "The system controlled the lords; it did not create a conscript national army."
       },
       {
         "label": "D",
-        "text": "Enforce the adoption of Christianity in the domains.",
+        "text": "Enforce the adoption of Christianity in the domains by sending Portuguese missionaries to every lord",
         "isCorrect": false,
         "explanation": "The shogunate suppressed Christianity."
       }
@@ -296,25 +296,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "It allowed religious minority communities such as Christians and Jews to manage their own religious and communal affairs under their own leaders, in return for loyalty and taxes.",
+        "text": "It let minorities such as Christians and Jews run their own communal affairs under their own leaders, in return for loyalty and taxes.",
         "isCorrect": true,
         "explanation": "The millet system gave recognized religious communities a degree of self-government, which helped the sultans rule a diverse empire."
       },
       {
         "label": "B",
-        "text": "It banned non-Muslims from trading and owning property.",
+        "text": "It banned non-Muslims from trading and owning property and forced them to live in segregated villages outside the cities",
         "isCorrect": false,
         "explanation": "Non-Muslims took part in trade and other economic activity."
       },
       {
         "label": "C",
-        "text": "It required all subjects to convert to Islam to remain in the empire.",
+        "text": "It required all subjects to convert to Islam to remain in the empire, on pain of exile or death within a year",
         "isCorrect": false,
         "explanation": "The Ottomans generally did not require conversion; non-Muslims paid special taxes and kept their faiths."
       },
       {
         "label": "D",
-        "text": "It guaranteed non-Muslims equal political power in the sultan's government.",
+        "text": "It guaranteed non-Muslims equal political power in the sultan's government, the army and the religious courts",
         "isCorrect": false,
         "explanation": "Non-Muslims were protected subjects but were not equal in political rights."
       }
@@ -332,25 +332,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Evidence that all three empires banned firearms in their armies.",
+        "text": "Evidence that all three empires banned firearms in their armies as dishonorable weapons unfit for warriors",
         "isCorrect": false,
         "explanation": "These empires embraced firearms, so a ban would contradict the claim."
       },
       {
         "label": "B",
-        "text": "Evidence that all three empires were quickly defeated by nomadic cavalry.",
+        "text": "Evidence that all three empires were quickly defeated by nomadic cavalry armed only with bows and swords",
         "isCorrect": false,
         "explanation": "Such evidence would undermine the argument rather than support it."
       },
       {
         "label": "C",
-        "text": "Evidence that all three empires used steam engines in their factories.",
+        "text": "Evidence that all three empires used steam engines in their factories and shipyards by the 1500s",
         "isCorrect": false,
         "explanation": "Steam engines are an eighteenth-century and later development."
       },
       {
         "label": "D",
-        "text": "Evidence that rulers used cannon in sieges and musket-armed infantry, which strengthened central authority by making fortified strongholds and local armies less effective.",
+        "text": "Evidence that rulers used cannon in sieges and musket-armed infantry, which made fortified strongholds less effective.",
         "isCorrect": true,
         "explanation": "Gunpowder weapons favored states with the resources to produce and organize them, helping rulers defeat rivals and fortifications."
       }
@@ -368,19 +368,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "Ended the need for any other taxation in the empire.",
+        "text": "Ended the need for any other taxation in the empire and made the treasury extremely wealthy",
         "isCorrect": false,
         "explanation": "The jizya did not replace other taxes."
       },
       {
         "label": "B",
-        "text": "Led to the immediate conversion of the whole population to Islam.",
+        "text": "Led to the immediate conversion of the whole population to Islam and ended all unrest in the realm",
         "isCorrect": false,
         "explanation": "Most people remained non-Muslim, and the policy increased opposition."
       },
       {
         "label": "C",
-        "text": "Strengthened the loyalty of non-Muslim subjects to the emperor.",
+        "text": "Strengthened the loyalty of non-Muslim subjects to the emperor and increased the empire's tax revenue",
         "isCorrect": false,
         "explanation": "A new tax on non-Muslims was more likely to cause resentment than loyalty."
       },
@@ -404,25 +404,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "They adopted the Confucian bureaucracy and examination system while preserving Manchu identity and military institutions.",
+        "text": "They adopted the Confucian bureaucracy and exams while preserving Manchu identity and military institutions.",
         "isCorrect": true,
         "explanation": "The Qing kept the traditional imperial bureaucracy and Confucian ideology, which helped win elite support, while keeping Manchu military organization and distinct status."
       },
       {
         "label": "B",
-        "text": "They allowed Han Chinese governors to rule independent states.",
+        "text": "They allowed Han Chinese governors to rule independent states as tributary kingdoms of the Manchu emperor",
         "isCorrect": false,
         "explanation": "The Qing ruled a centralized empire."
       },
       {
         "label": "C",
-        "text": "They abolished Confucianism and examinations and governed only through Manchu officers.",
+        "text": "They abolished Confucianism and examinations and governed only through Manchu military officers and generals in the seventeenth century",
         "isCorrect": false,
         "explanation": "The Qing continued the examinations and used Confucian ideology."
       },
       {
         "label": "D",
-        "text": "They abolished the emperor's title and adopted a republic.",
+        "text": "They abolished the emperor's title and adopted a republic with elected provincial assemblies and a president",
         "isCorrect": false,
         "explanation": "China remained an empire under the Qing until 1912."
       }
@@ -440,7 +440,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Songhai was created by the Mongol Empire as a province.",
+        "text": "Songhai was created by the Mongol Empire as a province and ruled through governors sent from Karakorum",
         "isCorrect": false,
         "explanation": "The Mongols never ruled West Africa."
       },
@@ -452,13 +452,13 @@
       },
       {
         "label": "C",
-        "text": "Songhai rulers captured trade centers such as Timbuktu and Gao, which gave them control of Saharan commerce, and used cavalry and river fleets to build a large empire after Mali weakened.",
+        "text": "Songhai rulers seized Timbuktu and Gao, controlling Saharan trade, and used cavalry and river fleets as Mali weakened.",
         "isCorrect": true,
         "explanation": "Sunni Ali and later rulers built a large state from control of the trans-Saharan trade and the Niger River."
       },
       {
         "label": "D",
-        "text": "Songhai expanded because it had gunpowder weapons that the Moroccans lacked in 1591.",
+        "text": "Songhai expanded because it had gunpowder weapons that the Moroccans lacked in 1591, when they were defeated",
         "isCorrect": false,
         "explanation": "In 1591 it was the Moroccans, armed with gunpowder weapons, who defeated Songhai."
       }
@@ -476,13 +476,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "To convert the Japanese people to Christianity.",
+        "text": "To convert the Japanese people to Christianity and open the country to Portuguese missionaries and merchants",
         "isCorrect": false,
         "explanation": "The edict forbids the teaching of the foreign religion."
       },
       {
         "label": "B",
-        "text": "To expand free trade with all European states.",
+        "text": "To expand free trade with all European states and encourage Japanese merchants to travel and settle abroad",
         "isCorrect": false,
         "explanation": "Foreign trade was confined to Nagasaki."
       },
@@ -494,7 +494,7 @@
       },
       {
         "label": "D",
-        "text": "To encourage the growth of overseas colonies.",
+        "text": "To encourage the growth of overseas colonies and the spread of Japanese power across Southeast Asia",
         "isCorrect": false,
         "explanation": "The edict restricts foreign travel and contact."
       }
@@ -518,19 +518,19 @@
       },
       {
         "label": "B",
-        "text": "The Chinese civil service examination system.",
+        "text": "The Chinese civil service examination system used in the Song and Ming dynasties",
         "isCorrect": false,
         "explanation": "The examination system selected bureaucrats and was unrelated to land grants for military service."
       },
       {
         "label": "C",
-        "text": "The Inca mit'a labor tax.",
+        "text": "The Inca mit'a labor tax, in which villages supplied workers and soldiers to the Sapa Inca",
         "isCorrect": false,
         "explanation": "The mit'a was a labor obligation of subjects, not a grant of land revenue for soldiers."
       },
       {
         "label": "D",
-        "text": "The use of railroads to move troops.",
+        "text": "The use of railroads to move troops and supplies across the empire's frontier provinces",
         "isCorrect": false,
         "explanation": "Railroads did not exist in the Ottoman Empire's early period."
       }

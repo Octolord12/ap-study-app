@@ -62,3 +62,16 @@ python3 u1_base.py && python3 u1_hard.py     # rewrites unit 1's JSON (do this f
 python3 pool.py                              # rewrites the DBQ/LEQ pool
 python3 stats.py && python3 facts.py
 ```
+
+## AP World History answer lengths
+
+`ap-world-pad/` evens out choice lengths in the existing World History JSON (see "Hard AP World History set"
+in CLAUDE.md). `pad_u1.py..pad_u9.py` are the overlays (`PAD`, `PADC`, `PADW`); `apply.py` writes them into
+`content/ap-world/questions/unit-N.json` and `unit-N-hard.json`, changing only each choice's `text`.
+
+```bash
+cd scripts/content-authoring/ap-world-pad
+python3 apply.py        # all units (idempotent); run it again after regenerating an ap-world-hard script
+python3 stats.py        # how often the right answer is the longest / shortest
+python3 flag.py 5       # questions in unit 5 where it is still the longest
+```

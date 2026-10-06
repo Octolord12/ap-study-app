@@ -1461,6 +1461,25 @@ reviewer should check them (the owner has since approved them in `/admin/review`
 and `LEQ` (the generator helpers `saq()`/`leq()` set it), so exam simulations draw from them
 correctly (the pool is now 36 SAQs, 4 DBQs, 13 LEQs).
 
+**Answer lengths were evened out afterwards (2026-10-06).** The right answer was the longest choice in 87%
+of the 405 questions (core 81%, hard 99%; median length ratio 2.19), so always picking the longest scored
+well without knowing any history. `scripts/content-authoring/ap-world-pad/` holds `pad_u1.py..pad_u9.py`
+(`PAD` = the wrong choices' new text in file order, `PADC` = the right one, `PADW` = single wrong choices,
+matched by text) and `apply.py`, which writes them into `content/ap-world/questions/` (the core files line
+by line, since they keep one choice per line and don't round-trip through `json.dump`; the `-hard` files
+through json). Only a choice's `text` changed: labels, which choice is correct and every explanation are
+as before (checked against `git HEAD` for all 405 questions; 1,298 choice texts changed). Result: the
+right answer is the longest in 26% of questions (chance is 25%), the shortest in 13%, median ratio 1.04.
+`python3 stats.py` measures it, `python3 flag.py <unit>` lists the questions where it is still the
+longest, and `extend_longest.py` was the second-pass helper. **Re-run `python3 apply.py` after
+regenerating an `ap-world-hard` script** (it rewrites that file from scratch and would undo the padding;
+the overlay is idempotent).
+- One factual slip was fixed on the way: `ap-world-u4-mcq-5` credited da Gama where the question is
+  about Dias rounding the Cape (stem and explanation corrected).
+- **The edit resets the owner's approvals** for every changed question when World is next seeded (see
+  "Approvals survive a re-seed unless the content changed"), so after a seed the unit pages in
+  `/admin/review` need their "Approve all" buttons again. The 53 free-response prompts are unchanged.
+
 ### Hard AP Physics 1 set
 
 120 MCQs + 16 FRQs (`scripts/content-authoring/ap-physics-1-hard/`). Multi-step problems
@@ -1767,12 +1786,11 @@ in app logic — updating them should be a data edit.
   blank lines in the DBQ prompts (a content edit and a reseed of those prompts) or a renderer that keeps
   line breaks (which would also change the `a)` / `b)` lines of every sample answer, probably for the better).
 
-- **The right answer is the longest choice far too often in the older courses.** Measured
-  2026-10-05 (share of questions where it is the longest of four; chance is 25%): World History 87%,
-  Calc AB 55%, Physics 1 51%, CSA 36% (U.S. History 29% after the fix described in "AP U.S. History").
-  A student can raise a World History score by always picking the longest answer. Not fixed; the same
-  overlay approach (`pad_uN.py`) would work for World History, whose generators are in
-  `scripts/content-authoring/ap-world-hard/` (the 270 core questions were written straight to JSON).
+- **The right answer is still the longest choice too often in Calc AB, Physics 1 and CSA.** Measured
+  2026-10-05 (share of questions where it is the longest of four; chance is 25%): Calc AB 55%,
+  Physics 1 51%, CSA 36%. Fixed since: U.S. History (29%) and World History (87% -> 26%, see "Hard AP
+  World History set"). The same overlay approach works for the remaining three; their generators are in
+  `scripts/content-authoring/<course>-hard/` and the core sets were written straight to JSON.
 
 - **`npm audit` reports vulnerabilities** in `hono`/`mysql2` — both transitive
   dev dependencies of the `prisma` CLI itself (bundled tooling for databases/

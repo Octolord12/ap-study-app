@@ -6,10 +6,10 @@
     "difficulty": "easy",
     "stem": "The Enlightenment was an intellectual movement, primarily centered in Europe during the 17th-18th centuries, that emphasized what?",
     "choices": [
-      { "label": "A", "text": "Blind adherence to traditional religious authority", "isCorrect": false, "explanation": "The Enlightenment specifically challenged, rather than emphasized blind adherence to, traditional religious authority." },
+      { "label": "A", "text": "Blind adherence to traditional religious authority and church tradition", "isCorrect": false, "explanation": "The Enlightenment specifically challenged, rather than emphasized blind adherence to, traditional religious authority." },
       { "label": "B", "text": "Reason, individual rights, and skepticism toward traditional authority", "isCorrect": true, "explanation": "Enlightenment thinkers championed reason, natural rights, and questioning of inherited political and religious authority." },
-      { "label": "C", "text": "The divine right of kings as absolute and unquestionable", "isCorrect": false, "explanation": "Enlightenment thinkers often specifically challenged the divine right of kings, rather than upholding it as unquestionable." },
-      { "label": "D", "text": "Complete rejection of science", "isCorrect": false, "explanation": "The Enlightenment embraced and celebrated scientific reasoning, not rejected it." }
+      { "label": "C", "text": "The divine right of kings as absolute and unquestionable by their subjects", "isCorrect": false, "explanation": "Enlightenment thinkers often specifically challenged the divine right of kings, rather than upholding it as unquestionable." },
+      { "label": "D", "text": "Complete rejection of science in favor of ancient scriptures and legends", "isCorrect": false, "explanation": "The Enlightenment embraced and celebrated scientific reasoning, not rejected it." }
     ],
     "explanation": "The Enlightenment emphasized reason, individual rights, and skepticism toward traditional political and religious authority.",
     "conceptLink": "ap-world/unit-5-revolutions/enlightenment-thought",
@@ -38,9 +38,9 @@
     "difficulty": "medium",
     "stem": "Baron de Montesquieu's Enlightenment ideas influenced what later political concept, involving the division of government into separate branches?",
     "choices": [
-      { "label": "A", "text": "Absolute monarchy", "isCorrect": false, "explanation": "Montesquieu's ideas were specifically used to argue against unchecked, absolute monarchical power." },
+      { "label": "A", "text": "Rule by a theocracy", "isCorrect": false, "explanation": "Montesquieu's ideas were specifically used to argue against unchecked, absolute monarchical power." },
       { "label": "B", "text": "Separation of powers", "isCorrect": true, "explanation": "Montesquieu advocated dividing government into separate branches to prevent any one part from gaining excessive power." },
-      { "label": "C", "text": "Theocracy", "isCorrect": false, "explanation": "Theocracy (religious rule) is unrelated to Montesquieu's argument for dividing government into separate branches." },
+      { "label": "C", "text": "A feudal system", "isCorrect": false, "explanation": "Theocracy (religious rule) is unrelated to Montesquieu's argument for dividing government into separate branches." },
       { "label": "D", "text": "Feudalism", "isCorrect": false, "explanation": "Feudalism is a much earlier medieval system, unrelated to Montesquieu's Enlightenment-era political theory." }
     ],
     "explanation": "Montesquieu's ideas influenced the concept of separation of powers, dividing government into distinct branches.",
@@ -54,10 +54,10 @@
     "difficulty": "hard",
     "stem": "How did Enlightenment ideas about natural rights and government by consent challenge traditional political structures in 18th-century Europe?",
     "choices": [
-      { "label": "A", "text": "They reinforced the existing power of absolute monarchs", "isCorrect": false, "explanation": "Enlightenment ideas generally challenged, rather than reinforced, the legitimacy of absolute monarchical power." },
-      { "label": "B", "text": "They provided intellectual justification for challenging absolute monarchy and divine-right rule, influencing revolutionary movements", "isCorrect": true, "explanation": "These ideas gave revolutionaries a philosophical basis for challenging existing monarchical structures and demanding new forms of government." },
-      { "label": "C", "text": "They had no political implications whatsoever", "isCorrect": false, "explanation": "These ideas had profound, well-documented political implications, directly inspiring revolutionary movements." },
-      { "label": "D", "text": "They supported the expansion of feudal serfdom", "isCorrect": false, "explanation": "Enlightenment thought generally opposed, rather than supported, systems like feudal serfdom that restricted individual rights." }
+      { "label": "A", "text": "They reinforced the existing power of absolute monarchs and the nobility in every European state", "isCorrect": false, "explanation": "Enlightenment ideas generally challenged, rather than reinforced, the legitimacy of absolute monarchical power." },
+      { "label": "B", "text": "They justified challenging absolute monarchy and divine-right rule, influencing revolutionary movements", "isCorrect": true, "explanation": "These ideas gave revolutionaries a philosophical basis for challenging existing monarchical structures and demanding new forms of government." },
+      { "label": "C", "text": "They had no political implications whatsoever, since they concerned only science, art and manners", "isCorrect": false, "explanation": "These ideas had profound, well-documented political implications, directly inspiring revolutionary movements." },
+      { "label": "D", "text": "They supported the expansion of feudal serfdom and the traditional privileges of the landed nobility", "isCorrect": false, "explanation": "Enlightenment thought generally opposed, rather than supported, systems like feudal serfdom that restricted individual rights." }
     ],
     "explanation": "Enlightenment ideas about natural rights and consent-based government provided intellectual justification for challenging absolute monarchy.",
     "conceptLink": "ap-world/unit-5-revolutions/enlightenment-thought",
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "How did Enlightenment ideas spread across Europe and eventually to the Americas during the 18th century?",
     "choices": [
-      { "label": "A", "text": "They had no means of spreading and remained isolated to one country", "isCorrect": false, "explanation": "Enlightenment ideas spread widely and had significant, well-documented cross-border influence." },
-      { "label": "B", "text": "Through printed books, pamphlets, salons, and correspondence among intellectuals across national borders", "isCorrect": true, "explanation": "Print culture and intellectual networks let Enlightenment ideas circulate widely across Europe and eventually the Americas." },
-      { "label": "C", "text": "Only through direct royal decree", "isCorrect": false, "explanation": "Enlightenment ideas often spread despite, rather than because of, royal endorsement, since they frequently challenged royal authority." },
-      { "label": "D", "text": "Exclusively through religious sermons promoting the ideas", "isCorrect": false, "explanation": "The primary means of spread was through printed material and intellectual exchange, not religious sermons." }
+      { "label": "A", "text": "They had no means of spreading and remained isolated within one country and its universities", "isCorrect": false, "explanation": "Enlightenment ideas spread widely and had significant, well-documented cross-border influence." },
+      { "label": "B", "text": "Through printed books, pamphlets, salons and correspondence among intellectuals across borders", "isCorrect": true, "explanation": "Print culture and intellectual networks let Enlightenment ideas circulate widely across Europe and eventually the Americas." },
+      { "label": "C", "text": "Only through direct royal decree issued by the absolute monarchs of France and Prussia", "isCorrect": false, "explanation": "Enlightenment ideas often spread despite, rather than because of, royal endorsement, since they frequently challenged royal authority." },
+      { "label": "D", "text": "Exclusively through religious sermons promoting the ideas from pulpits across the continent", "isCorrect": false, "explanation": "The primary means of spread was through printed material and intellectual exchange, not religious sermons." }
     ],
     "explanation": "Enlightenment ideas spread through printed books, pamphlets, salons, and correspondence among intellectuals across borders.",
     "conceptLink": "ap-world/unit-5-revolutions/enlightenment-thought",
@@ -102,10 +102,10 @@
     "difficulty": "easy",
     "stem": "The American Revolution (1775-1783) resulted in what major outcome?",
     "choices": [
-      { "label": "A", "text": "The Thirteen Colonies remaining under British rule permanently", "isCorrect": false, "explanation": "The colonies successfully achieved independence, the opposite of remaining permanently under British rule." },
-      { "label": "B", "text": "The Thirteen Colonies gaining independence from Britain, forming the United States", "isCorrect": true, "explanation": "The revolution resulted in the Thirteen Colonies gaining independence and forming the United States." },
-      { "label": "C", "text": "France gaining control of the colonies", "isCorrect": false, "explanation": "France provided crucial support to the American revolutionaries, but France did not gain control of the colonies as a result." },
-      { "label": "D", "text": "Spain gaining control of the colonies", "isCorrect": false, "explanation": "Spain was not the power that gained control as a result of this revolution." }
+      { "label": "A", "text": "The Thirteen Colonies remaining under British rule permanently as a self-governing dominion", "isCorrect": false, "explanation": "The colonies successfully achieved independence, the opposite of remaining permanently under British rule." },
+      { "label": "B", "text": "The Thirteen Colonies won independence from Britain and formed the United States", "isCorrect": true, "explanation": "The revolution resulted in the Thirteen Colonies gaining independence and forming the United States." },
+      { "label": "C", "text": "France gaining control of the colonies after defeating the British in a long war", "isCorrect": false, "explanation": "France provided crucial support to the American revolutionaries, but France did not gain control of the colonies as a result." },
+      { "label": "D", "text": "Spain gaining control of the colonies after the peace treaty was signed at Paris in 1783", "isCorrect": false, "explanation": "Spain was not the power that gained control as a result of this revolution." }
     ],
     "explanation": "The American Revolution resulted in the Thirteen Colonies gaining independence from Britain and forming the United States.",
     "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "How did Enlightenment ideas influence the American Revolution?",
     "choices": [
-      { "label": "A", "text": "They had no influence whatsoever", "isCorrect": false, "explanation": "Enlightenment ideas had a very significant, well-documented influence on revolutionary rhetoric and justification." },
-      { "label": "B", "text": "Ideas like natural rights and government by consent (echoed in documents like the Declaration of Independence) provided ideological justification for independence", "isCorrect": true, "explanation": "The Declaration of Independence directly echoes Enlightenment ideas about natural rights and government by consent." },
-      { "label": "C", "text": "They argued exclusively for continued loyalty to the British crown", "isCorrect": false, "explanation": "Enlightenment ideas, as applied by American revolutionaries, argued for independence and against unchecked monarchical authority, not for continued loyalty." },
-      { "label": "D", "text": "They promoted a return to strict religious theocracy", "isCorrect": false, "explanation": "The Enlightenment generally promoted reason and individual rights, not a return to religious theocracy." }
+      { "label": "A", "text": "They had no influence whatsoever, since the colonists were motivated only by their taxes on tea and paper", "isCorrect": false, "explanation": "Enlightenment ideas had a very significant, well-documented influence on revolutionary rhetoric and justification." },
+      { "label": "B", "text": "Natural rights and government by consent, echoed in the Declaration of Independence, justified independence", "isCorrect": true, "explanation": "The Declaration of Independence directly echoes Enlightenment ideas about natural rights and government by consent." },
+      { "label": "C", "text": "They argued exclusively for continued loyalty to the British crown and Parliament, opposing independence", "isCorrect": false, "explanation": "Enlightenment ideas, as applied by American revolutionaries, argued for independence and against unchecked monarchical authority, not for continued loyalty." },
+      { "label": "D", "text": "They promoted a return to strict religious theocracy and church rule over every colony's government", "isCorrect": false, "explanation": "The Enlightenment generally promoted reason and individual rights, not a return to religious theocracy." }
     ],
     "explanation": "Enlightenment ideas about natural rights and government by consent, echoed in the Declaration of Independence, justified American independence.",
     "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
@@ -134,10 +134,10 @@
     "difficulty": "medium",
     "stem": "The French Revolution (beginning in 1789) was driven in part by what economic and social grievances?",
     "choices": [
-      { "label": "A", "text": "No grievances existed; the revolution was entirely random", "isCorrect": false, "explanation": "The French Revolution had substantial, well-documented underlying causes and grievances." },
-      { "label": "B", "text": "Financial crisis, unequal taxation burdening the common people, and resentment of the privileges of the nobility and clergy", "isCorrect": true, "explanation": "These combined economic and social grievances drove widespread discontent that erupted into revolution." },
-      { "label": "C", "text": "Universal satisfaction with the existing government", "isCorrect": false, "explanation": "Widespread dissatisfaction, not satisfaction, with the existing government was a central driving factor." },
-      { "label": "D", "text": "A sudden foreign invasion", "isCorrect": false, "explanation": "The revolution was driven primarily by internal social, economic, and political factors, not a sudden foreign invasion." }
+      { "label": "A", "text": "No grievances existed; the revolution was entirely random and had no social or economic causes at all", "isCorrect": false, "explanation": "The French Revolution had substantial, well-documented underlying causes and grievances." },
+      { "label": "B", "text": "Financial crisis, unequal taxation burdening commoners, and resentment of the privileges of nobles and clergy", "isCorrect": true, "explanation": "These combined economic and social grievances drove widespread discontent that erupted into revolution." },
+      { "label": "C", "text": "Universal satisfaction with the existing government, which had lowered taxes on commoners and clergy alike", "isCorrect": false, "explanation": "Widespread dissatisfaction, not satisfaction, with the existing government was a central driving factor." },
+      { "label": "D", "text": "A sudden foreign invasion by Prussia and Austria, which occupied Paris before the revolution began in 1789", "isCorrect": false, "explanation": "The revolution was driven primarily by internal social, economic, and political factors, not a sudden foreign invasion." }
     ],
     "explanation": "Financial crisis, unequal taxation, and resentment of noble/clergy privileges drove the French Revolution's outbreak.",
     "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
@@ -150,10 +150,10 @@
     "difficulty": "hard",
     "stem": "The Haitian Revolution (1791-1804) is historically significant as what kind of event?",
     "choices": [
-      { "label": "A", "text": "A revolution led by colonial elites seeking independence while maintaining slavery", "isCorrect": false, "explanation": "This mischaracterizes the revolution, which was led by enslaved people and explicitly abolished slavery, not maintained it." },
-      { "label": "B", "text": "A successful revolution led primarily by enslaved people, resulting in the establishment of the first Black-led republic and the abolition of slavery in the territory", "isCorrect": true, "explanation": "The Haitian Revolution was a landmark event: a successful slave revolt that created the first Black-led republic and abolished slavery there." },
-      { "label": "C", "text": "A revolution that had no connection to slavery whatsoever", "isCorrect": false, "explanation": "The Haitian Revolution was fundamentally and directly connected to the institution of slavery and its abolition." },
-      { "label": "D", "text": "A revolution that resulted in continued French colonial control", "isCorrect": false, "explanation": "The revolution successfully ended French colonial control, resulting in Haitian independence, not continued French control." }
+      { "label": "A", "text": "A revolution led by colonial elites seeking independence from France while keeping the plantation system and slavery", "isCorrect": false, "explanation": "This mischaracterizes the revolution, which was led by enslaved people and explicitly abolished slavery, not maintained it." },
+      { "label": "B", "text": "A successful revolution led largely by enslaved people, creating the first Black-led republic and abolishing slavery", "isCorrect": true, "explanation": "The Haitian Revolution was a landmark event: a successful slave revolt that created the first Black-led republic and abolished slavery there." },
+      { "label": "C", "text": "A revolution that had no connection to slavery whatsoever and was fought entirely over taxes and trade tariffs", "isCorrect": false, "explanation": "The Haitian Revolution was fundamentally and directly connected to the institution of slavery and its abolition." },
+      { "label": "D", "text": "A revolution that resulted in continued French colonial control and a stronger plantation economy on the island", "isCorrect": false, "explanation": "The revolution successfully ended French colonial control, resulting in Haitian independence, not continued French control." }
     ],
     "explanation": "The Haitian Revolution was led primarily by enslaved people and resulted in the first Black-led republic and the abolition of slavery there.",
     "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
@@ -166,10 +166,10 @@
     "difficulty": "medium",
     "stem": "How did the Latin American independence movements of the early 19th century (led by figures like Simon Bolivar) relate to earlier Atlantic revolutions?",
     "choices": [
-      { "label": "A", "text": "They had no connection to or influence from earlier revolutions", "isCorrect": false, "explanation": "These movements were substantially influenced by earlier revolutionary examples and Enlightenment ideas." },
-      { "label": "B", "text": "They were partly inspired by Enlightenment ideas and the examples of the American, French, and Haitian revolutions", "isCorrect": true, "explanation": "Latin American independence leaders drew on Enlightenment ideals and earlier revolutionary precedents." },
-      { "label": "C", "text": "They occurred before any other Atlantic revolutions", "isCorrect": false, "explanation": "The Latin American independence movements occurred after, not before, the American, French, and Haitian revolutions, drawing on their precedents." },
-      { "label": "D", "text": "They resulted in continued Spanish colonial rule", "isCorrect": false, "explanation": "These movements largely succeeded in ending Spanish colonial rule across much of Latin America, not continuing it." }
+      { "label": "A", "text": "They had no connection to or influence from earlier revolutions or from Enlightenment writers", "isCorrect": false, "explanation": "These movements were substantially influenced by earlier revolutionary examples and Enlightenment ideas." },
+      { "label": "B", "text": "They were partly inspired by Enlightenment ideas and by the American, French and Haitian revolutions", "isCorrect": true, "explanation": "Latin American independence leaders drew on Enlightenment ideals and earlier revolutionary precedents." },
+      { "label": "C", "text": "They occurred before any other Atlantic revolutions and served as the model for the French rebels", "isCorrect": false, "explanation": "The Latin American independence movements occurred after, not before, the American, French, and Haitian revolutions, drawing on their precedents." },
+      { "label": "D", "text": "They resulted in continued Spanish colonial rule over every colony in the Americas until the late 1800s", "isCorrect": false, "explanation": "These movements largely succeeded in ending Spanish colonial rule across much of Latin America, not continuing it." }
     ],
     "explanation": "Latin American independence movements were partly inspired by Enlightenment ideas and the precedents of earlier Atlantic revolutions.",
     "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
@@ -182,10 +182,10 @@
     "difficulty": "medium",
     "stem": "What common Enlightenment-influenced theme connected the American, French, Haitian, and Latin American revolutions, despite their different specific contexts?",
     "choices": [
-      { "label": "A", "text": "None; they were entirely unrelated events", "isCorrect": false, "explanation": "Historians identify significant, well-documented connections and shared themes across these revolutions." },
-      { "label": "B", "text": "Appeals to natural rights, popular sovereignty, and resistance to what revolutionaries viewed as illegitimate or oppressive authority", "isCorrect": true, "explanation": "Despite their different specific contexts, these revolutions shared a common grounding in Enlightenment appeals to rights and resistance to oppressive authority." },
-      { "label": "C", "text": "A shared goal of restoring absolute monarchy", "isCorrect": false, "explanation": "These revolutions generally sought to reduce or eliminate absolute monarchical/colonial power, not restore it." },
-      { "label": "D", "text": "A shared rejection of all Enlightenment philosophy", "isCorrect": false, "explanation": "These revolutions were substantially influenced by, not in rejection of, Enlightenment philosophy." }
+      { "label": "A", "text": "None; they were entirely unrelated events with different causes, leaders, goals and ideas", "isCorrect": false, "explanation": "Historians identify significant, well-documented connections and shared themes across these revolutions." },
+      { "label": "B", "text": "Appeals to natural rights and popular sovereignty and resistance to authority seen as illegitimate", "isCorrect": true, "explanation": "Despite their different specific contexts, these revolutions shared a common grounding in Enlightenment appeals to rights and resistance to oppressive authority." },
+      { "label": "C", "text": "A shared goal of restoring absolute monarchy in their colonies and in the home countries of Europe", "isCorrect": false, "explanation": "These revolutions generally sought to reduce or eliminate absolute monarchical/colonial power, not restore it." },
+      { "label": "D", "text": "A shared rejection of all Enlightenment philosophy in favor of the traditional authority of the church", "isCorrect": false, "explanation": "These revolutions were substantially influenced by, not in rejection of, Enlightenment philosophy." }
     ],
     "explanation": "These revolutions shared a common theme of appealing to natural rights and resisting oppressive authority, rooted in Enlightenment thought.",
     "conceptLink": "ap-world/unit-5-revolutions/atlantic-revolutions",
@@ -199,9 +199,9 @@
     "stem": "The Industrial Revolution, beginning in the late 18th century, first emerged prominently in which country?",
     "choices": [
       { "label": "A", "text": "Great Britain", "isCorrect": true, "explanation": "Great Britain is widely recognized as the birthplace of the Industrial Revolution in the late 18th century." },
-      { "label": "B", "text": "Japan", "isCorrect": false, "explanation": "Japan's industrialization occurred later, in the mid-to-late 19th century, not as the origin point." },
-      { "label": "C", "text": "Russia", "isCorrect": false, "explanation": "Russia's industrialization occurred significantly later and more gradually than Britain's." },
-      { "label": "D", "text": "Brazil", "isCorrect": false, "explanation": "Brazil's industrialization occurred much later, not as the origin point of this revolution." }
+      { "label": "B", "text": "Tokugawa Japan", "isCorrect": false, "explanation": "Japan's industrialization occurred later, in the mid-to-late 19th century, not as the origin point." },
+      { "label": "C", "text": "Tsarist Russia", "isCorrect": false, "explanation": "Russia's industrialization occurred significantly later and more gradually than Britain's." },
+      { "label": "D", "text": "Colonial Brazil", "isCorrect": false, "explanation": "Brazil's industrialization occurred much later, not as the origin point of this revolution." }
     ],
     "explanation": "Great Britain is widely recognized as the birthplace of the Industrial Revolution.",
     "conceptLink": "ap-world/unit-5-revolutions/industrial-revolution-begins",
@@ -215,9 +215,9 @@
     "stem": "Which industry is most closely associated with the earliest phases of Britain's Industrial Revolution?",
     "choices": [
       { "label": "A", "text": "Textile manufacturing (particularly cotton)", "isCorrect": true, "explanation": "Cotton textile manufacturing, mechanized with new machinery, was central to the earliest phase of British industrialization." },
-      { "label": "B", "text": "Space exploration", "isCorrect": false, "explanation": "Space exploration is a 20th-century development, centuries after the early Industrial Revolution." },
-      { "label": "C", "text": "Computer technology", "isCorrect": false, "explanation": "Computer technology is a 20th-century development, centuries after the early Industrial Revolution." },
-      { "label": "D", "text": "Automobile manufacturing", "isCorrect": false, "explanation": "Automobile manufacturing became significant later (late 19th/early 20th century), after this earliest industrial phase." }
+      { "label": "B", "text": "Space exploration and rocket building", "isCorrect": false, "explanation": "Space exploration is a 20th-century development, centuries after the early Industrial Revolution." },
+      { "label": "C", "text": "Computer technology and electronics", "isCorrect": false, "explanation": "Computer technology is a 20th-century development, centuries after the early Industrial Revolution." },
+      { "label": "D", "text": "Automobile and aircraft manufacturing", "isCorrect": false, "explanation": "Automobile manufacturing became significant later (late 19th/early 20th century), after this earliest industrial phase." }
     ],
     "explanation": "Cotton textile manufacturing was central to the earliest phase of Britain's Industrial Revolution.",
     "conceptLink": "ap-world/unit-5-revolutions/industrial-revolution-begins",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "What technological innovation, improved significantly by James Watt, became a key power source driving early industrial machinery and transportation?",
     "choices": [
-      { "label": "A", "text": "The steam engine", "isCorrect": true, "explanation": "James Watt's improvements to the steam engine made it a practical, efficient power source for factories and transportation." },
-      { "label": "B", "text": "The internal combustion engine", "isCorrect": false, "explanation": "The internal combustion engine became significant later, in the 19th/20th centuries, after the early Industrial Revolution's steam-powered phase." },
-      { "label": "C", "text": "Solar panels", "isCorrect": false, "explanation": "Solar panels are a modern (20th-century) technology, far outside this era." },
-      { "label": "D", "text": "Nuclear reactors", "isCorrect": false, "explanation": "Nuclear reactors are a 20th-century technology, far outside this era." }
+      { "label": "A", "text": "The steam engine, which powered factories", "isCorrect": true, "explanation": "James Watt's improvements to the steam engine made it a practical, efficient power source for factories and transportation." },
+      { "label": "B", "text": "The internal combustion engine for cars", "isCorrect": false, "explanation": "The internal combustion engine became significant later, in the 19th/20th centuries, after the early Industrial Revolution's steam-powered phase." },
+      { "label": "C", "text": "Solar energy panels for factories", "isCorrect": false, "explanation": "Solar panels are a modern (20th-century) technology, far outside this era." },
+      { "label": "D", "text": "Nuclear power reactors for factories", "isCorrect": false, "explanation": "Nuclear reactors are a 20th-century technology, far outside this era." }
     ],
     "explanation": "James Watt's improved steam engine became a key power source driving early industrial machinery and transportation.",
     "conceptLink": "ap-world/unit-5-revolutions/industrial-revolution-begins",
@@ -246,10 +246,10 @@
     "difficulty": "hard",
     "stem": "Why did Great Britain, specifically, become the first country to industrialize?",
     "choices": [
-      { "label": "A", "text": "It had no particular advantages compared to other regions", "isCorrect": false, "explanation": "Historians identify several specific, meaningful advantages Britain held that contributed to its early industrialization." },
-      { "label": "B", "text": "A combination of factors including access to coal and iron resources, capital from trade/colonial wealth, a stable government, and agricultural improvements freeing up labor", "isCorrect": true, "explanation": "This combination of resources, capital, political stability, and available labor gave Britain a distinctive advantage in early industrialization." },
-      { "label": "C", "text": "It had no colonial trade connections whatsoever", "isCorrect": false, "explanation": "Britain's extensive colonial and trade connections provided significant capital and resources that supported industrialization." },
-      { "label": "D", "text": "It deliberately avoided all technological innovation", "isCorrect": false, "explanation": "Britain was, in fact, a center of significant technological innovation during this era, not one that avoided it." }
+      { "label": "A", "text": "It had no particular advantages compared to other regions and industrialized purely by luck and accident", "isCorrect": false, "explanation": "Historians identify several specific, meaningful advantages Britain held that contributed to its early industrialization." },
+      { "label": "B", "text": "Coal and iron resources, capital from trade and colonies, a stable government and farm improvements freeing labor", "isCorrect": true, "explanation": "This combination of resources, capital, political stability, and available labor gave Britain a distinctive advantage in early industrialization." },
+      { "label": "C", "text": "It had no colonial trade connections whatsoever, so it turned inward and built factories to replace imports", "isCorrect": false, "explanation": "Britain's extensive colonial and trade connections provided significant capital and resources that supported industrialization." },
+      { "label": "D", "text": "It deliberately avoided all technological innovation and relied entirely on traditional craftsmen and guilds", "isCorrect": false, "explanation": "Britain was, in fact, a center of significant technological innovation during this era, not one that avoided it." }
     ],
     "explanation": "A combination of coal/iron resources, colonial trade capital, political stability, and freed-up agricultural labor gave Britain its early industrial advantage.",
     "conceptLink": "ap-world/unit-5-revolutions/industrial-revolution-begins",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "How did the factory system, emerging during the early Industrial Revolution, change the nature of work compared to earlier home-based/artisanal production?",
     "choices": [
-      { "label": "A", "text": "It had no effect on how work was organized", "isCorrect": false, "explanation": "The factory system represented a substantial, well-documented change in how work was organized." },
-      { "label": "B", "text": "It concentrated workers and machinery in centralized locations, with more rigid schedules and division of labor", "isCorrect": true, "explanation": "Factories brought workers together under one roof with standardized hours and specialized, divided tasks, unlike earlier home-based production." },
-      { "label": "C", "text": "It eliminated the need for any human labor entirely", "isCorrect": false, "explanation": "The factory system still required substantial human labor operating and tending machinery, not eliminating human labor." },
-      { "label": "D", "text": "It returned production entirely to individual home workshops", "isCorrect": false, "explanation": "The factory system moved away from home-based production, concentrating work in centralized factories, the opposite of this claim." }
+      { "label": "A", "text": "It had no effect on how work was organized, which stayed in small family workshops and farms", "isCorrect": false, "explanation": "The factory system represented a substantial, well-documented change in how work was organized." },
+      { "label": "B", "text": "It concentrated workers and machinery in central locations, with rigid schedules and division of labor", "isCorrect": true, "explanation": "Factories brought workers together under one roof with standardized hours and specialized, divided tasks, unlike earlier home-based production." },
+      { "label": "C", "text": "It eliminated the need for any human labor entirely, as machines ran themselves without supervision", "isCorrect": false, "explanation": "The factory system still required substantial human labor operating and tending machinery, not eliminating human labor." },
+      { "label": "D", "text": "It returned production entirely to individual home workshops and ended all wage labor in cities", "isCorrect": false, "explanation": "The factory system moved away from home-based production, concentrating work in centralized factories, the opposite of this claim." }
     ],
     "explanation": "The factory system concentrated workers and machinery in centralized locations with rigid schedules and divided labor, unlike earlier home-based production.",
     "conceptLink": "ap-world/unit-5-revolutions/industrial-revolution-begins",
@@ -278,10 +278,10 @@
     "difficulty": "medium",
     "stem": "What role did agricultural improvements (sometimes called the Agricultural Revolution) play in enabling industrialization?",
     "choices": [
-      { "label": "A", "text": "They had no connection to industrialization", "isCorrect": false, "explanation": "Agricultural improvements had a significant, documented connection to enabling industrialization." },
-      { "label": "B", "text": "Increased agricultural productivity freed up labor from farming, providing workers for growing urban factories, while also supporting a growing population", "isCorrect": true, "explanation": "More efficient farming meant fewer farmworkers were needed, freeing up labor for factories while feeding a growing population." },
-      { "label": "C", "text": "They caused a decrease in overall food production", "isCorrect": false, "explanation": "These agricultural improvements increased, not decreased, food production and productivity." },
-      { "label": "D", "text": "They eliminated the need for any industrial workers", "isCorrect": false, "explanation": "These improvements freed up labor to become available for industrial work, rather than eliminating the need for such workers." }
+      { "label": "A", "text": "They had no connection to industrialization, which began in factories staffed by city dwellers", "isCorrect": false, "explanation": "Agricultural improvements had a significant, documented connection to enabling industrialization." },
+      { "label": "B", "text": "Higher farm productivity freed labor for urban factories while supporting a growing population", "isCorrect": true, "explanation": "More efficient farming meant fewer farmworkers were needed, freeing up labor for factories while feeding a growing population." },
+      { "label": "C", "text": "They caused a decrease in overall food production and drove many workers back onto the land", "isCorrect": false, "explanation": "These agricultural improvements increased, not decreased, food production and productivity." },
+      { "label": "D", "text": "They eliminated the need for any industrial workers by letting farms produce all manufactured goods", "isCorrect": false, "explanation": "These improvements freed up labor to become available for industrial work, rather than eliminating the need for such workers." }
     ],
     "explanation": "Agricultural improvements freed up labor from farming for factory work while supporting a growing population, enabling industrialization.",
     "conceptLink": "ap-world/unit-5-revolutions/industrial-revolution-begins",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "Karl Marx, along with Friedrich Engels, developed what influential critique of industrial capitalism?",
     "choices": [
-      { "label": "A", "text": "They argued capitalism was a perfect system with no flaws", "isCorrect": false, "explanation": "Marx and Engels were sharply critical of capitalism, the opposite of viewing it as flawless." },
-      { "label": "B", "text": "They argued that capitalism inherently exploited workers and predicted eventual worker revolution leading to a classless society", "isCorrect": true, "explanation": "Marx and Engels argued capitalism's structure inherently exploited workers, predicting this would eventually lead to revolution." },
-      { "label": "C", "text": "They had no interest in economic systems", "isCorrect": false, "explanation": "Marx and Engels were deeply engaged with economic systems and critique, central to their work." },
-      { "label": "D", "text": "They promoted strengthening the power of factory owners exclusively", "isCorrect": false, "explanation": "Marx and Engels's work specifically criticized and sought to challenge, not strengthen, the power of factory owners over workers." }
+      { "label": "A", "text": "They argued capitalism was a perfect system with no flaws and needed no reform or regulation at all", "isCorrect": false, "explanation": "Marx and Engels were sharply critical of capitalism, the opposite of viewing it as flawless." },
+      { "label": "B", "text": "They argued capitalism exploited workers and predicted a revolution leading to a classless society", "isCorrect": true, "explanation": "Marx and Engels argued capitalism's structure inherently exploited workers, predicting this would eventually lead to revolution." },
+      { "label": "C", "text": "They had no interest in economic systems and wrote only about art, music and religion in Europe", "isCorrect": false, "explanation": "Marx and Engels were deeply engaged with economic systems and critique, central to their work." },
+      { "label": "D", "text": "They promoted strengthening the power of factory owners exclusively and abolishing trade unions", "isCorrect": false, "explanation": "Marx and Engels's work specifically criticized and sought to challenge, not strengthen, the power of factory owners over workers." }
     ],
     "explanation": "Marx and Engels argued that capitalism inherently exploited workers and predicted this would eventually lead to a worker revolution.",
     "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
@@ -326,10 +326,10 @@
     "difficulty": "medium",
     "stem": "What were early labor unions formed in response to during the Industrial Revolution?",
     "choices": [
-      { "label": "A", "text": "A desire to eliminate all industrial jobs", "isCorrect": false, "explanation": "Labor unions sought to improve conditions within industrial work, not eliminate industrial jobs altogether." },
+      { "label": "A", "text": "A desire to eliminate all industrial jobs and send workers back to farming", "isCorrect": false, "explanation": "Labor unions sought to improve conditions within industrial work, not eliminate industrial jobs altogether." },
       { "label": "B", "text": "Poor working conditions, low wages, and long hours faced by factory workers", "isCorrect": true, "explanation": "Workers organized unions to collectively address poor conditions, low pay, and long hours in factories." },
-      { "label": "C", "text": "A surplus of high-paying jobs with excellent conditions", "isCorrect": false, "explanation": "Labor unions formed specifically in response to poor conditions, not in a context of surplus high-paying, excellent jobs." },
-      { "label": "D", "text": "Government mandates requiring their formation", "isCorrect": false, "explanation": "Unions generally formed from worker organizing efforts, not because governments mandated their creation." }
+      { "label": "C", "text": "A surplus of high-paying jobs with excellent conditions in the new mills", "isCorrect": false, "explanation": "Labor unions formed specifically in response to poor conditions, not in a context of surplus high-paying, excellent jobs." },
+      { "label": "D", "text": "Government mandates requiring their formation in every large factory and mine", "isCorrect": false, "explanation": "Unions generally formed from worker organizing efforts, not because governments mandated their creation." }
     ],
     "explanation": "Early labor unions formed in response to poor working conditions, low wages, and long hours faced by factory workers.",
     "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
@@ -342,10 +342,10 @@
     "difficulty": "hard",
     "stem": "How did governments and reformers in industrializing nations sometimes respond to the social problems caused by rapid industrialization (such as child labor and unsafe working conditions)?",
     "choices": [
-      { "label": "A", "text": "They universally ignored all such problems with no response whatsoever", "isCorrect": false, "explanation": "Over time, various reform efforts and legislative responses did emerge, even if change was often gradual and contested." },
-      { "label": "B", "text": "Some governments eventually passed reform legislation (such as regulating child labor or working hours), influenced by public pressure and reform movements", "isCorrect": true, "explanation": "Public pressure and reform movements eventually led some governments to pass legislation addressing the worst abuses of early industrialization." },
-      { "label": "C", "text": "They immediately eliminated capitalism entirely", "isCorrect": false, "explanation": "Governments generally reformed aspects of industrial capitalism rather than eliminating the system entirely." },
-      { "label": "D", "text": "They banned all industrial production", "isCorrect": false, "explanation": "Governments generally sought to regulate, not entirely ban, industrial production." }
+      { "label": "A", "text": "They universally ignored all such problems with no response whatsoever until the twentieth century", "isCorrect": false, "explanation": "Over time, various reform efforts and legislative responses did emerge, even if change was often gradual and contested." },
+      { "label": "B", "text": "Some governments eventually passed reform laws, such as limits on child labor, under public pressure", "isCorrect": true, "explanation": "Public pressure and reform movements eventually led some governments to pass legislation addressing the worst abuses of early industrialization." },
+      { "label": "C", "text": "They immediately eliminated capitalism entirely and nationalized every factory, mine and farm", "isCorrect": false, "explanation": "Governments generally reformed aspects of industrial capitalism rather than eliminating the system entirely." },
+      { "label": "D", "text": "They banned all industrial production and ordered all factories closed and demolished by law", "isCorrect": false, "explanation": "Governments generally sought to regulate, not entirely ban, industrial production." }
     ],
     "explanation": "Public pressure and reform movements eventually led some governments to pass legislation regulating child labor and working conditions.",
     "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "The Luddite movement in early 19th-century Britain is historically known for what type of protest?",
     "choices": [
-      { "label": "A", "text": "Supporting the rapid expansion of new industrial machinery without any concerns", "isCorrect": false, "explanation": "The Luddites were specifically concerned about and opposed to the effects of new machinery, not supportive of it without concern." },
+      { "label": "A", "text": "Supporting the rapid expansion of new industrial machinery without any concerns for workers", "isCorrect": false, "explanation": "The Luddites were specifically concerned about and opposed to the effects of new machinery, not supportive of it without concern." },
       { "label": "B", "text": "Protesting and sometimes destroying machinery that workers believed threatened their livelihoods", "isCorrect": true, "explanation": "Luddites protested and sometimes destroyed new textile machinery they believed threatened their jobs and skilled trades." },
-      { "label": "C", "text": "Advocating for increased use of child labor", "isCorrect": false, "explanation": "The Luddites were not advocating for increased child labor; this mischaracterizes their movement's focus." },
-      { "label": "D", "text": "Promoting free trade agreements exclusively", "isCorrect": false, "explanation": "The Luddite movement centered on opposition to machinery threatening jobs, not specifically free trade policy." }
+      { "label": "C", "text": "Advocating for increased use of child labor in the textile mills of northern England and Scotland", "isCorrect": false, "explanation": "The Luddites were not advocating for increased child labor; this mischaracterizes their movement's focus." },
+      { "label": "D", "text": "Promoting free trade agreements exclusively between Britain, its colonies and its European allies", "isCorrect": false, "explanation": "The Luddite movement centered on opposition to machinery threatening jobs, not specifically free trade policy." }
     ],
     "explanation": "The Luddites protested and sometimes destroyed machinery they believed threatened their livelihoods.",
     "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
@@ -374,10 +374,10 @@
     "difficulty": "medium",
     "stem": "What was one significant difference between socialist responses to industrialization and labor union responses?",
     "choices": [
-      { "label": "A", "text": "There is no meaningful difference; they are identical", "isCorrect": false, "explanation": "While related, these represented meaningfully different approaches and goals, not identical strategies." },
-      { "label": "B", "text": "Socialism generally sought broader systemic/political change (such as collective ownership), while labor unions often focused on more immediate, practical workplace improvements (wages, hours, conditions) through collective bargaining", "isCorrect": true, "explanation": "Socialism aimed at transforming the broader economic system, while unions typically focused on winning concrete improvements within existing workplaces." },
-      { "label": "C", "text": "Labor unions sought to abolish all private property", "isCorrect": false, "explanation": "This describes a socialist goal more than a typical labor union's primary immediate focus on workplace-level improvements." },
-      { "label": "D", "text": "Socialism had no interest in workers' conditions", "isCorrect": false, "explanation": "Socialism was significantly concerned with workers' conditions, even as it pursued broader systemic change beyond individual workplaces." }
+      { "label": "A", "text": "There is no meaningful difference; they are identical in their goals, methods, leaders, membership and organization", "isCorrect": false, "explanation": "While related, these represented meaningfully different approaches and goals, not identical strategies." },
+      { "label": "B", "text": "Socialists sought broad political change such as collective ownership, while unions mainly pursued workplace gains in wages and hours", "isCorrect": true, "explanation": "Socialism aimed at transforming the broader economic system, while unions typically focused on winning concrete improvements within existing workplaces." },
+      { "label": "C", "text": "Labor unions sought to abolish all private property, while socialists were interested only in modest wage increases", "isCorrect": false, "explanation": "This describes a socialist goal more than a typical labor union's primary immediate focus on workplace-level improvements." },
+      { "label": "D", "text": "Socialism had no interest in workers' conditions and focused exclusively on foreign policy, tariffs and colonial trade", "isCorrect": false, "explanation": "Socialism was significantly concerned with workers' conditions, even as it pursued broader systemic change beyond individual workplaces." }
     ],
     "explanation": "Socialism generally sought broader systemic change, while labor unions typically focused on immediate, practical workplace improvements.",
     "conceptLink": "ap-world/unit-5-revolutions/reactions-to-industrialization",
@@ -390,9 +390,9 @@
     "difficulty": "easy",
     "stem": "What major demographic shift accompanied industrialization in many countries, as people moved from rural areas to cities for factory work?",
     "choices": [
-      { "label": "A", "text": "Urbanization", "isCorrect": true, "explanation": "Industrialization drove significant urbanization as people moved from rural areas to growing industrial cities." },
-      { "label": "B", "text": "Complete rural depopulation with no urban growth", "isCorrect": false, "explanation": "This is an extreme, inaccurate exaggeration; urban areas grew substantially as a result of this migration." },
-      { "label": "C", "text": "Mass emigration to space colonies", "isCorrect": false, "explanation": "This is not a real historical phenomenon relevant to this era." },
+      { "label": "A", "text": "Urbanization, the growth of cities", "isCorrect": true, "explanation": "Industrialization drove significant urbanization as people moved from rural areas to growing industrial cities." },
+      { "label": "B", "text": "Complete rural depopulation", "isCorrect": false, "explanation": "This is an extreme, inaccurate exaggeration; urban areas grew substantially as a result of this migration." },
+      { "label": "C", "text": "Mass migration back to farms", "isCorrect": false, "explanation": "This is not a real historical phenomenon relevant to this era." },
       { "label": "D", "text": "A decrease in overall population", "isCorrect": false, "explanation": "Industrialization was generally associated with significant population growth in many regions, not decrease." }
     ],
     "explanation": "Industrialization drove significant urbanization as people moved from rural areas to growing industrial cities.",
@@ -406,10 +406,10 @@
     "difficulty": "medium",
     "stem": "What environmental consequence often accompanied industrialization during this period?",
     "choices": [
-      { "label": "A", "text": "No environmental effects of any kind", "isCorrect": false, "explanation": "Industrialization had substantial, well-documented environmental consequences." },
-      { "label": "B", "text": "Increased pollution from factories and coal burning, along with resource extraction and environmental degradation", "isCorrect": true, "explanation": "Coal-burning factories and expanded resource extraction significantly increased pollution and environmental degradation." },
-      { "label": "C", "text": "A dramatic decrease in all pollution", "isCorrect": false, "explanation": "Industrialization generally increased pollution from coal burning and factory emissions, the opposite of a decrease." },
-      { "label": "D", "text": "The complete elimination of any environmental resource use", "isCorrect": false, "explanation": "Industrialization significantly increased resource use and extraction, rather than eliminating it." }
+      { "label": "A", "text": "No environmental effects of any kind, since factories used only clean, renewable power from rivers", "isCorrect": false, "explanation": "Industrialization had substantial, well-documented environmental consequences." },
+      { "label": "B", "text": "More pollution from factories and coal burning, along with resource extraction and environmental damage", "isCorrect": true, "explanation": "Coal-burning factories and expanded resource extraction significantly increased pollution and environmental degradation." },
+      { "label": "C", "text": "A dramatic decrease in all pollution as cities adopted cleaner fuels and smokeless factories everywhere", "isCorrect": false, "explanation": "Industrialization generally increased pollution from coal burning and factory emissions, the opposite of a decrease." },
+      { "label": "D", "text": "The complete elimination of any environmental resource use, since factories recycled all of their materials", "isCorrect": false, "explanation": "Industrialization significantly increased resource use and extraction, rather than eliminating it." }
     ],
     "explanation": "Industrialization brought increased pollution from factories and coal burning, along with expanded resource extraction and environmental degradation.",
     "conceptLink": "ap-world/unit-5-revolutions/effects-of-industrialization",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "How did industrialization affect traditional family and social structures in industrializing societies?",
     "choices": [
-      { "label": "A", "text": "It had no effect on family or social structures", "isCorrect": false, "explanation": "Industrialization had substantial, well-documented effects on family and social structures." },
-      { "label": "B", "text": "It often shifted work away from home-based family production toward wage labor in factories, changing family economic roles and daily life", "isCorrect": true, "explanation": "The shift to factory wage labor reorganized family economic roles and daily routines compared to earlier home-based production." },
-      { "label": "C", "text": "It strengthened traditional rural agricultural family structures exclusively with no change", "isCorrect": false, "explanation": "Industrialization generally moved away from traditional rural agricultural family structures for many people, not strengthened them unchanged." },
-      { "label": "D", "text": "It eliminated the concept of family entirely", "isCorrect": false, "explanation": "Industrialization changed family structures and roles, but it did not eliminate the concept of family." }
+      { "label": "A", "text": "It had no effect on family or social structures, which stayed exactly as they had been for centuries", "isCorrect": false, "explanation": "Industrialization had substantial, well-documented effects on family and social structures." },
+      { "label": "B", "text": "It often moved work from home-based family production to wage labor in factories, changing family economic roles", "isCorrect": true, "explanation": "The shift to factory wage labor reorganized family economic roles and daily routines compared to earlier home-based production." },
+      { "label": "C", "text": "It strengthened traditional rural agricultural family structures exclusively, with no change at all", "isCorrect": false, "explanation": "Industrialization generally moved away from traditional rural agricultural family structures for many people, not strengthened them unchanged." },
+      { "label": "D", "text": "It eliminated the concept of family entirely as children were raised by the state in factory schools", "isCorrect": false, "explanation": "Industrialization changed family structures and roles, but it did not eliminate the concept of family." }
     ],
     "explanation": "Industrialization shifted work from home-based family production to factory wage labor, changing family economic roles and daily life.",
     "conceptLink": "ap-world/unit-5-revolutions/effects-of-industrialization",
@@ -438,10 +438,10 @@
     "difficulty": "hard",
     "stem": "How did industrialization contribute to shifting global economic power and inequality between industrializing and non-industrializing regions during this era?",
     "choices": [
-      { "label": "A", "text": "It had no effect on global economic relationships", "isCorrect": false, "explanation": "Industrialization had a very significant, well-documented effect on global economic power relationships." },
-      { "label": "B", "text": "Industrializing nations (like Britain) gained significant economic and military advantages, which they sometimes used to dominate trade relationships with non-industrialized regions", "isCorrect": true, "explanation": "Industrialized nations gained substantial economic and military advantages that they leveraged in trade and colonial relationships with non-industrialized regions." },
-      { "label": "C", "text": "All regions of the world industrialized at exactly the same pace with no resulting inequality", "isCorrect": false, "explanation": "Industrialization occurred very unevenly across different world regions during this era, creating meaningful gaps, not simultaneous equal development." },
-      { "label": "D", "text": "Non-industrialized regions gained more power than industrialized ones", "isCorrect": false, "explanation": "This reverses the general historical pattern; industrialized regions generally gained more economic/military power relative to non-industrialized ones." }
+      { "label": "A", "text": "It had no effect on global economic relationships, which stayed unchanged from the mid-eighteenth century until 1900", "isCorrect": false, "explanation": "Industrialization had a very significant, well-documented effect on global economic power relationships." },
+      { "label": "B", "text": "Industrializing nations like Britain gained economic and military advantages they used to dominate non-industrial regions", "isCorrect": true, "explanation": "Industrialized nations gained substantial economic and military advantages that they leveraged in trade and colonial relationships with non-industrialized regions." },
+      { "label": "C", "text": "All regions of the world industrialized at exactly the same pace, with no resulting inequality between rich and poor nations", "isCorrect": false, "explanation": "Industrialization occurred very unevenly across different world regions during this era, creating meaningful gaps, not simultaneous equal development." },
+      { "label": "D", "text": "Non-industrialized regions gained more power than industrialized ones by controlling the supply of raw materials", "isCorrect": false, "explanation": "This reverses the general historical pattern; industrialized regions generally gained more economic/military power relative to non-industrialized ones." }
     ],
     "explanation": "Industrialized nations gained significant economic and military advantages, which they often used to dominate trade relationships with non-industrialized regions.",
     "conceptLink": "ap-world/unit-5-revolutions/effects-of-industrialization",
@@ -455,9 +455,9 @@
     "stem": "What new social class emerged or grew significantly as a result of industrialization, associated with owning factories and industrial capital?",
     "choices": [
       { "label": "A", "text": "The industrial/bourgeois middle class", "isCorrect": true, "explanation": "A growing bourgeois middle class of factory owners and industrialists emerged as a significant new social class due to industrialization." },
-      { "label": "B", "text": "Feudal serfs exclusively", "isCorrect": false, "explanation": "Feudal serfs represent an earlier medieval social category, not a class that grew as a result of industrialization." },
-      { "label": "C", "text": "Hunter-gatherer societies", "isCorrect": false, "explanation": "Hunter-gatherer societies are unrelated to this industrial-era class development." },
-      { "label": "D", "text": "Absolute monarchs exclusively", "isCorrect": false, "explanation": "Absolute monarchs represent political rulers, not a new class that specifically emerged or grew due to industrial capital ownership." }
+      { "label": "B", "text": "Feudal serfs and peasants exclusively", "isCorrect": false, "explanation": "Feudal serfs represent an earlier medieval social category, not a class that grew as a result of industrialization." },
+      { "label": "C", "text": "Hunter-gatherer societies in cities", "isCorrect": false, "explanation": "Hunter-gatherer societies are unrelated to this industrial-era class development." },
+      { "label": "D", "text": "Absolute monarchs and nobles exclusively", "isCorrect": false, "explanation": "Absolute monarchs represent political rulers, not a new class that specifically emerged or grew due to industrial capital ownership." }
     ],
     "explanation": "A growing bourgeois middle class of factory owners and industrialists emerged as a significant new social class due to industrialization.",
     "conceptLink": "ap-world/unit-5-revolutions/effects-of-industrialization",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "Considering the broader effects of industrialization discussed in this unit, which best summarizes its overall historical significance?",
     "choices": [
-      { "label": "A", "text": "It had minimal lasting impact on global history", "isCorrect": false, "explanation": "Industrialization had transformative, far-reaching historical significance, not minimal impact." },
-      { "label": "B", "text": "It fundamentally transformed economic production, social structures, urbanization patterns, and global power relationships, with effects still shaping the world today", "isCorrect": true, "explanation": "Industrialization's transformation of production, social life, urbanization, and global power remains foundational to the modern world." },
-      { "label": "C", "text": "It only affected a small, insignificant industry with no broader consequences", "isCorrect": false, "explanation": "Industrialization had sweeping effects across many sectors and societies, not confined to one small insignificant industry." },
-      { "label": "D", "text": "It had no connection to any social or political movements", "isCorrect": false, "explanation": "Industrialization was deeply connected to social and political movements, such as socialism and labor organizing, discussed throughout this unit." }
+      { "label": "A", "text": "It had minimal lasting impact on global history, since most factories closed within a few decades", "isCorrect": false, "explanation": "Industrialization had transformative, far-reaching historical significance, not minimal impact." },
+      { "label": "B", "text": "It transformed production, society, cities and global power, with effects still shaping the world", "isCorrect": true, "explanation": "Industrialization's transformation of production, social life, urbanization, and global power remains foundational to the modern world." },
+      { "label": "C", "text": "It only affected a small, insignificant industry with no broader consequences for society or trade", "isCorrect": false, "explanation": "Industrialization had sweeping effects across many sectors and societies, not confined to one small insignificant industry." },
+      { "label": "D", "text": "It had no connection to any social or political movements, which arose from entirely unrelated causes", "isCorrect": false, "explanation": "Industrialization was deeply connected to social and political movements, such as socialism and labor organizing, discussed throughout this unit." }
     ],
     "explanation": "Industrialization fundamentally transformed economic production, social structures, urbanization, and global power relationships, with effects still shaping the world today.",
     "conceptLink": "ap-world/unit-5-revolutions/effects-of-industrialization",

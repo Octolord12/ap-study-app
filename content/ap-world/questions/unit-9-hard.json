@@ -8,25 +8,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The use of high-yield crop varieties, fertilizers and irrigation to increase food production in parts of Asia and Latin America, which also brought environmental and social costs.",
+        "text": "The use of high-yield crop varieties, fertilizers and irrigation to raise food production in parts of Asia and Latin America, with environmental and social costs.",
         "isCorrect": true,
         "explanation": "The Green Revolution raised crop yields and helped feed growing populations, but it depended on costly inputs and had environmental consequences."
       },
       {
         "label": "B",
-        "text": "The development of nuclear power plants for farming.",
+        "text": "The development of nuclear power plants for farming, which supplied cheap electricity to farms across Europe, North America and Asia after the war and replaced the use of fertilizers.",
         "isCorrect": false,
         "explanation": "The Green Revolution was not about nuclear power."
       },
       {
         "label": "C",
-        "text": "A return to traditional farming methods without fertilizers or machinery.",
+        "text": "A return to traditional farming methods without fertilizers or machinery, promoted by governments in Asia and Latin America.",
         "isCorrect": false,
         "explanation": "It involved modern inputs, not traditional methods alone."
       },
       {
         "label": "D",
-        "text": "A political movement to restore forests in Europe.",
+        "text": "A political movement to restore forests in Europe, led by environmental parties and farmers' unions in the 1960s.",
         "isCorrect": false,
         "explanation": "The term refers to agricultural technology, not a forest-protection movement."
       }
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A return to local self-sufficiency in production.",
+        "text": "A return to local self-sufficiency in production, as firms relied only on suppliers and workers who lived nearby.",
         "isCorrect": false,
         "explanation": "The passage describes production spread across countries."
       },
       {
         "label": "B",
-        "text": "Communication and transport technologies reduced the importance of distance and enabled the global organization of production and services.",
+        "text": "Communication and transport technologies reduced the importance of distance and enabled global organization of production and services.",
         "isCorrect": true,
         "explanation": "New technologies let firms coordinate across borders, supporting outsourcing and global supply chains."
       },
       {
         "label": "C",
-        "text": "The closing of national borders to trade.",
+        "text": "The closing of national borders to trade, as governments restricted the activities of foreign firms and workers.",
         "isCorrect": false,
         "explanation": "The passage describes cross-border activity."
       },
       {
         "label": "D",
-        "text": "A decline in the role of multinational firms.",
+        "text": "A decline in the role of multinational firms, which lost ground to small local businesses in every country and ceased to operate abroad.",
         "isCorrect": false,
         "explanation": "The passage describes firms operating internationally."
       }
@@ -86,19 +86,19 @@
       },
       {
         "label": "B",
-        "text": "A document written by the League of Nations in 1919.",
+        "text": "A document written by the League of Nations in 1919 to settle claims after the war.",
         "isCorrect": false,
         "explanation": "It was adopted by the United Nations in 1948."
       },
       {
         "label": "C",
-        "text": "A statement that rights depend on a person's nationality and social class.",
+        "text": "A statement that rights depend on a person's nationality, religion and social class rather than on any shared humanity or common dignity.",
         "isCorrect": false,
         "explanation": "The passage states that all human beings are born free and equal."
       },
       {
         "label": "D",
-        "text": "A binding treaty that created an international police force to enforce human rights.",
+        "text": "A binding treaty that created an international police force to enforce human rights in every country.",
         "isCorrect": false,
         "explanation": "The declaration was not a binding treaty and did not create such a force."
       }
@@ -122,19 +122,19 @@
       },
       {
         "label": "B",
-        "text": "All countries gave women full legal equality by 1900.",
+        "text": "All countries gave women full legal equality by 1900, so no further campaigns were needed.",
         "isCorrect": false,
         "explanation": "Full equality was not achieved by 1900, and it is still an ongoing goal in many places."
       },
       {
         "label": "C",
-        "text": "Women's rights movements disappeared after World War II.",
+        "text": "Women's rights movements disappeared after World War II, as their goals had been achieved everywhere and no group continued to campaign.",
         "isCorrect": false,
         "explanation": "Women's movements continued and grew in the later twentieth century."
       },
       {
         "label": "D",
-        "text": "No country allowed women to vote until the twenty-first century.",
+        "text": "No country allowed women to vote until the twenty-first century, when the first laws were passed.",
         "isCorrect": false,
         "explanation": "Women won the vote in many countries in the early twentieth century."
       }
@@ -152,25 +152,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The civil rights movement took place in South Africa and the anti-apartheid movement in the United States.",
+        "text": "The civil rights movement took place in South Africa and the anti-apartheid movement in the United States, and neither received any international attention, sanctions or foreign support from governments.",
         "isCorrect": false,
         "explanation": "The locations are the reverse."
       },
       {
         "label": "B",
-        "text": "Neither movement used nonviolent methods.",
+        "text": "Neither movement used nonviolent methods, relying only on armed rebellion against the government and its army.",
         "isCorrect": false,
         "explanation": "Nonviolent protest was central to the American movement and used by many in the South African struggle."
       },
       {
         "label": "C",
-        "text": "Both movements aimed to establish racial segregation.",
+        "text": "Both movements aimed to establish racial segregation in law and to expand the powers of the state.",
         "isCorrect": false,
         "explanation": "Both opposed segregation."
       },
       {
         "label": "D",
-        "text": "Both challenged legal racial discrimination through protests, boycotts and appeals to public opinion, and the anti-apartheid movement also relied on international sanctions and pressure.",
+        "text": "Both challenged legal racial discrimination through protests, boycotts and appeals to public opinion, and the anti-apartheid movement also relied on international sanctions.",
         "isCorrect": true,
         "explanation": "Both movements fought laws that enforced racial inequality, and external pressure played a notable role in South Africa."
       }
@@ -188,25 +188,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Evidence that the same fast-food chains operate in many countries.",
+        "text": "Evidence that the same fast-food chains, clothing brands and coffee shops operate in many countries and in the largest cities of every continent, from Lagos to Tokyo.",
         "isCorrect": false,
         "explanation": "This supports the critic's claim."
       },
       {
         "label": "B",
-        "text": "Evidence that Hollywood films are shown around the world.",
+        "text": "Evidence that Hollywood films are shown in theaters and on streaming services around the world.",
         "isCorrect": false,
         "explanation": "This also supports the critic."
       },
       {
         "label": "C",
-        "text": "Evidence that local languages are disappearing in many places.",
+        "text": "Evidence that local languages are disappearing in many places as children learn global languages instead.",
         "isCorrect": false,
         "explanation": "This supports the claim that local traditions are declining."
       },
       {
         "label": "D",
-        "text": "Evidence that people often adapt global cultural products to local tastes, and that local music and film industries, such as Bollywood, have also found global audiences.",
+        "text": "Evidence that people adapt global cultural products to local tastes, and that local music and film industries, such as Bollywood, have found global audiences.",
         "isCorrect": true,
         "explanation": "Cultural exchange runs in several directions, and local cultures often blend or reinterpret global influences."
       }
@@ -224,13 +224,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "Only developing countries produce greenhouse gases.",
+        "text": "Only developing countries produce greenhouse gases, so only they need to change their policies and industries.",
         "isCorrect": false,
         "explanation": "Industrialized and developing countries both produce emissions."
       },
       {
         "label": "B",
-        "text": "Climate change is unaffected by human activity and industrialization.",
+        "text": "Climate change is unaffected by human activity and industrialization, so no cooperation is needed.",
         "isCorrect": false,
         "explanation": "Scientific evidence links industrial emissions to climate change."
       },
@@ -242,7 +242,7 @@
       },
       {
         "label": "D",
-        "text": "International agreements can compel every nation to act through a world government.",
+        "text": "International agreements can compel every nation to act, because they are enforced by a world government.",
         "isCorrect": false,
         "explanation": "No world government exists, and agreements depend on states' voluntary participation."
       }
@@ -260,25 +260,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The establishment of the League of Nations.",
+        "text": "The establishment of the League of Nations after the First World War, which was meant to settle disputes and prevent future wars through collective security.",
         "isCorrect": false,
         "explanation": "The League of Nations was created after World War I."
       },
       {
         "label": "B",
-        "text": "The Treaty of Versailles.",
+        "text": "The Treaty of Versailles, which ended the First World War.",
         "isCorrect": false,
         "explanation": "The Treaty of Versailles ended World War I."
       },
       {
         "label": "C",
-        "text": "The Montreal Protocol (1987), an agreement to phase out substances that deplete the ozone layer, often cited as a successful example of international environmental cooperation.",
+        "text": "The Montreal Protocol (1987), an agreement to phase out substances that deplete the ozone layer, often cited as a successful example of cooperation.",
         "isCorrect": true,
         "explanation": "States agreed to reduce and eliminate ozone-depleting chemicals, and the ozone layer has begun to recover."
       },
       {
         "label": "D",
-        "text": "The Kyoto Protocol, which dealt with the destruction of the rainforests in Brazil.",
+        "text": "The Kyoto Protocol, which dealt mainly with the destruction of the rainforests in Brazil and Indonesia.",
         "isCorrect": false,
         "explanation": "The Kyoto Protocol (1997) dealt with greenhouse gas emissions."
       }
@@ -302,13 +302,13 @@
       },
       {
         "label": "B",
-        "text": "A movement to end all international trade.",
+        "text": "A movement to end all international trade and make every country self-sufficient.",
         "isCorrect": false,
         "explanation": "They promoted trade."
       },
       {
         "label": "C",
-        "text": "A plan to make all countries adopt the same currency immediately.",
+        "text": "A plan to make all countries adopt the same currency and the same laws immediately.",
         "isCorrect": false,
         "explanation": "These agreements did not create a single currency."
       },
@@ -332,25 +332,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Labor costs were much higher in developing countries.",
+        "text": "Labor costs were much higher in developing countries, which attracted corporations seeking skilled workers.",
         "isCorrect": false,
         "explanation": "Lower labor costs were a primary reason."
       },
       {
         "label": "B",
-        "text": "Lower labor costs and fewer regulations, together with improvements in transportation and communications, made it profitable to produce goods abroad.",
+        "text": "Lower labor costs and fewer regulations, with better transportation and communications, made it profitable to produce goods abroad.",
         "isCorrect": true,
         "explanation": "Companies could reduce costs and coordinate production across long distances."
       },
       {
         "label": "C",
-        "text": "Governments in developing countries banned all foreign trade.",
+        "text": "Governments in developing countries banned all foreign trade, which forced firms to build factories there.",
         "isCorrect": false,
         "explanation": "Many developing countries welcomed foreign investment."
       },
       {
         "label": "D",
-        "text": "The invention of the steam engine made overseas production possible for the first time.",
+        "text": "The invention of the steam engine made overseas production possible for the first time in history, in the eighteenth century, in Britain and France.",
         "isCorrect": false,
         "explanation": "The shift followed late twentieth-century developments in transport and communication."
       }
@@ -368,7 +368,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "It reduces all trade and isolates economies.",
+        "text": "It reduces all trade and isolates national economies from the rest of the world's markets and investors.",
         "isCorrect": false,
         "explanation": "The passage criticizes the free movement of capital, not isolation."
       },
@@ -380,13 +380,13 @@
       },
       {
         "label": "C",
-        "text": "It eliminates the gap between rich and poor.",
+        "text": "It eliminates the gap between rich and poor in every country that adopts it, which benefits all workers.",
         "isCorrect": false,
         "explanation": "The passage claims the gap is growing."
       },
       {
         "label": "D",
-        "text": "It strengthens governments' control over corporations.",
+        "text": "It strengthens governments' control over corporations, giving workers higher wages and better protections.",
         "isCorrect": false,
         "explanation": "The passage argues that corporations gain power."
       }
@@ -410,19 +410,19 @@
       },
       {
         "label": "B",
-        "text": "Medical research stopped in the twentieth century.",
+        "text": "Medical research stopped in the twentieth century and no new vaccines or treatments were developed for any disease at all.",
         "isCorrect": false,
         "explanation": "Medical research advanced, although it did not prevent every pandemic."
       },
       {
         "label": "C",
-        "text": "Countries had become more isolated from one another.",
+        "text": "Countries had become more isolated from one another, with fewer flights and shipments.",
         "isCorrect": false,
         "explanation": "Greater connectivity, not isolation, accelerated the spread."
       },
       {
         "label": "D",
-        "text": "Diseases spread only through wars between nations.",
+        "text": "Diseases spread only through wars between nations, carried by armies on the march.",
         "isCorrect": false,
         "explanation": "Disease spread through travel and trade as well as through conflict."
       }
@@ -440,25 +440,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "A single election in one country that changed the region.",
+        "text": "A single election held in one country that changed the region and led to the spread of democracy to all its neighbors within a year.",
         "isCorrect": false,
         "explanation": "The Arab Spring was a series of protest movements across several countries."
       },
       {
         "label": "B",
-        "text": "A series of revolts led by the Soviet Union against Ottoman rule.",
+        "text": "A series of revolts led by the Soviet Union against Ottoman rule in the Middle East and North Africa during the 1950s.",
         "isCorrect": false,
         "explanation": "The Soviet Union and the Ottoman Empire were not involved in these events."
       },
       {
         "label": "C",
-        "text": "A wave of protests against authoritarian governments in the Middle East and North Africa, aided by social media, which led to varied outcomes in different countries.",
+        "text": "A wave of protests against authoritarian governments in the Middle East and North Africa, aided by social media, with varied outcomes in different countries.",
         "isCorrect": true,
         "explanation": "The protests began in Tunisia and spread to other countries, with some governments falling, others surviving and some countries suffering civil war."
       },
       {
         "label": "D",
-        "text": "A movement that produced democracy in every country where it occurred.",
+        "text": "A movement that produced democracy in every country where it occurred and ended all authoritarian rule across the Middle East and North Africa within five years.",
         "isCorrect": false,
         "explanation": "Outcomes varied widely, and many countries did not become democracies."
       }
@@ -476,25 +476,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "All immigrants moved from Europe to Asia.",
+        "text": "All immigrants moved from Europe to Asia, where wages were higher and land was cheaper, so few people arrived in Europe or North America.",
         "isCorrect": false,
         "explanation": "Large movements went from Asia, Africa and Latin America to Europe and North America."
       },
       {
         "label": "B",
-        "text": "Immigration was caused by the collapse of the global economy in 1950.",
+        "text": "Immigration was caused by the collapse of the global economy in 1950, which forced millions of workers to leave their homelands and look for work abroad in other countries.",
         "isCorrect": false,
         "explanation": "Postwar economic growth increased the demand for workers."
       },
       {
         "label": "C",
-        "text": "Migration from former colonies and developing countries, where people sought economic opportunity or fled conflict, and the demand for labor in industrialized countries.",
+        "text": "Migration from former colonies and developing countries, by people seeking economic opportunity or fleeing conflict, and demand for labor in industrialized countries.",
         "isCorrect": true,
         "explanation": "Both economic and political factors encouraged migration to wealthier countries."
       },
       {
         "label": "D",
-        "text": "Governments in Europe and North America forbade all immigration after World War II.",
+        "text": "Governments in Europe and North America forbade all immigration after World War II, so no immigrant communities could form in those regions.",
         "isCorrect": false,
         "explanation": "Many governments allowed or recruited immigrant workers."
       }
@@ -512,25 +512,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "China abandoned all trade and returned to complete self-sufficiency.",
+        "text": "China abandoned all trade and returned to complete self-sufficiency, closing its ports and factories to foreigners and foreign goods.",
         "isCorrect": false,
         "explanation": "China opened to foreign trade and investment."
       },
       {
         "label": "B",
-        "text": "China ended Communist Party rule and became a multiparty democracy.",
+        "text": "China ended Communist Party rule and became a multiparty democracy with free elections, a free press and an independent judiciary.",
         "isCorrect": false,
         "explanation": "The Communist Party retained power."
       },
       {
         "label": "C",
-        "text": "China collectivized all agriculture and banned private enterprise.",
+        "text": "China collectivized all agriculture and banned private enterprise, following the earlier Soviet model of central planning, state ownership and five-year plans.",
         "isCorrect": false,
         "explanation": "The reforms ended collectivization and permitted private enterprise."
       },
       {
         "label": "D",
-        "text": "The government introduced market-oriented reforms and opened the country to foreign investment while maintaining Communist Party political control, leading to rapid economic growth.",
+        "text": "The government introduced market-oriented reforms and opened the country to foreign investment while keeping Communist Party control, producing rapid growth.",
         "isCorrect": true,
         "explanation": "China combined economic liberalization with one-party rule."
       }

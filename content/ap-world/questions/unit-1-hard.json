@@ -8,13 +8,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "The state barred landowners from taking the examinations in order to prevent corruption.",
+        "text": "The state barred landowners from taking the examinations in order to prevent corruption and bribery",
         "isCorrect": false,
         "explanation": "Landowning families were not excluded; the passage shows they were the main group passing the examinations."
       },
       {
         "label": "B",
-        "text": "Buddhist monasteries controlled which candidates were allowed to take the examinations.",
+        "text": "Buddhist monasteries controlled which candidates were allowed to take the examinations for the court",
         "isCorrect": false,
         "explanation": "The examinations were run by the imperial government and tested Confucian learning; monasteries had no such control."
       },
@@ -26,7 +26,7 @@
       },
       {
         "label": "D",
-        "text": "The examinations created a scholar-official class chosen by testing rather than birth, although wealth gave candidates a major advantage.",
+        "text": "The exams chose scholar-officials by testing rather than birth, though wealth gave candidates a major advantage.",
         "isCorrect": true,
         "explanation": "The examinations were open in principle and produced officials whose status came from learning, but the cost of preparation meant that landowning families dominated success, as the magistrate reports."
       }
@@ -44,25 +44,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Neither society had a distinct warrior class, because both depended on conscript peasant armies.",
+        "text": "Neither society had a distinct warrior class, because both depended on large conscript peasant armies drawn from villages and towns",
         "isCorrect": false,
         "explanation": "Both societies were dominated by a warrior aristocracy: samurai in Japan and knights in Europe."
       },
       {
         "label": "B",
-        "text": "In Japan, power was concentrated in a strong emperor, whereas in Europe it was divided among local lords.",
+        "text": "In Japan, power was concentrated in a strong emperor, whereas in Europe it was divided among many local lords",
         "isCorrect": false,
         "explanation": "This reverses the situation: in Kamakura Japan the emperor was a figurehead and the shogun's government (the bakufu) held military and political power."
       },
       {
         "label": "C",
-        "text": "Both relied on a bureaucracy of officials chosen by examination to govern the countryside.",
+        "text": "Both relied on a bureaucracy of officials chosen by examination to govern the countryside and collect taxes",
         "isCorrect": false,
         "explanation": "Examination-selected bureaucracies characterized China, not feudal Japan or feudal Europe."
       },
       {
         "label": "D",
-        "text": "In both, regional warrior elites held power through bonds of land and military service, while the nominal supreme ruler had limited direct authority.",
+        "text": "In both, regional warrior elites held power through land and military service, while the nominal ruler had limited authority.",
         "isCorrect": true,
         "explanation": "In Japan the emperor remained in the background while the shogun and warrior vassals (samurai) held real power; in western Europe kings relied on nobles and vassals who held land in return for military service."
       }
@@ -80,25 +80,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The Mongol conquest of Egypt and the whole of North Africa.",
+        "text": "The Mongol conquest of Egypt and the whole of North Africa, which became a Mongol khanate",
         "isCorrect": false,
         "explanation": "The Mongols did not conquer Egypt; the passage describes their advance being broken."
       },
       {
         "label": "B",
-        "text": "The collapse of Mongol rule in China.",
+        "text": "The collapse of Mongol rule in China and the immediate return of Song-era institutions",
         "isCorrect": false,
         "explanation": "The Yuan dynasty of the Mongols ruled China until 1368; this battle in the Middle East did not end it."
       },
       {
         "label": "C",
-        "text": "The survival of the Mamluk Sultanate in Egypt as a leading Islamic power, and a limit on Mongol expansion westward.",
+        "text": "The survival of the Mamluk Sultanate in Egypt as a leading Islamic power, and a check on Mongol expansion.",
         "isCorrect": true,
         "explanation": "The Mamluks defeated a Mongol force at Ain Jalut in 1260, protecting Egypt and halting the Mongol advance in the eastern Mediterranean."
       },
       {
         "label": "D",
-        "text": "The immediate conversion of the Mongol rulers of Persia to Christianity.",
+        "text": "The immediate conversion of the Mongol rulers of Persia to Christianity and their alliance with the kings of Europe",
         "isCorrect": false,
         "explanation": "The Ilkhanate rulers in Persia eventually converted to Islam, not Christianity, and not as a direct result of this battle."
       }
@@ -116,25 +116,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Islam spread mainly because the Gupta Empire adopted it as its state religion.",
+        "text": "Islam spread mainly because the Gupta Empire adopted it as its state religion and spread it by royal decree to all of its subjects and tribute states",
         "isCorrect": false,
         "explanation": "The Gupta Empire had declined by about 550 CE, long before this period, and was Hindu."
       },
       {
         "label": "B",
-        "text": "Muslim rulers forced the entire population of the subcontinent to convert.",
+        "text": "Muslim rulers forced the entire population of the subcontinent to convert within a few generations, ending Hinduism",
         "isCorrect": false,
         "explanation": "Conversion was gradual and partial; most people in South Asia stayed Hindu, and many rulers relied on non-Muslim subjects."
       },
       {
         "label": "C",
-        "text": "The political power of Muslim rulers, together with the work of Sufi mystics and merchants, led many people to convert gradually, while most of the population remained non-Muslim.",
+        "text": "Muslim rulers' political power and the work of Sufis and merchants led many to convert gradually, while most people stayed non-Muslim.",
         "isCorrect": true,
         "explanation": "Muslim states such as the Delhi Sultanate provided political backing, and Sufi teachers and traders spread the religion over time, but Hindus remained the majority."
       },
       {
         "label": "D",
-        "text": "Hindu kings of the powerful Vijayanagara Empire adopted Islam as their official religion.",
+        "text": "Hindu kings of the powerful Vijayanagara Empire adopted Islam as their official religion and spread it to the south",
         "isCorrect": false,
         "explanation": "Vijayanagara (founded 1336) was a Hindu kingdom in southern India that resisted Muslim sultanates."
       }
@@ -152,13 +152,13 @@
     "choices": [
       {
         "label": "A",
-        "text": "Its rulers had adopted Christianity after contact with Ethiopian traders.",
+        "text": "Its rulers had adopted Christianity after sustained contact with Ethiopian and Egyptian traders",
         "isCorrect": false,
         "explanation": "Mali's rulers were Muslim, which is why the king made the pilgrimage described."
       },
       {
         "label": "B",
-        "text": "Its economy depended mainly on maritime trade across the Indian Ocean.",
+        "text": "Its economy depended mainly on maritime trade across the Indian Ocean from East African ports",
         "isCorrect": false,
         "explanation": "Mali was in the West African Sahel; its wealth depended on gold and salt trade across the Sahara, not on Indian Ocean shipping."
       },
@@ -170,7 +170,7 @@
       },
       {
         "label": "D",
-        "text": "Its armies had recently been defeated by Moroccan forces armed with gunpowder weapons.",
+        "text": "Its armies had recently been defeated by Moroccan forces armed with gunpowder weapons and cannon",
         "isCorrect": false,
         "explanation": "The Moroccan conquest of the Songhai Empire, which succeeded Mali, came in 1591, much later than this passage."
       }
@@ -188,19 +188,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "Great Zimbabwe was built by Arab architects working for the Mali Empire.",
+        "text": "Great Zimbabwe was built by Arab architects and engineers working for the rulers of the Mali Empire",
         "isCorrect": false,
         "explanation": "The stone city was built by Shona-speaking people, and Mali was in West Africa."
       },
       {
         "label": "B",
-        "text": "Great Zimbabwe was a colony ruled by Portuguese merchants.",
+        "text": "Great Zimbabwe was a colony ruled by Portuguese merchants and missionaries",
         "isCorrect": false,
         "explanation": "The Portuguese arrived on the East African coast only around 1500, after Great Zimbabwe's peak."
       },
       {
         "label": "C",
-        "text": "Great Zimbabwe controlled the trans-Saharan caravan routes.",
+        "text": "Great Zimbabwe controlled the trans-Saharan caravan routes to West Africa",
         "isCorrect": false,
         "explanation": "Great Zimbabwe lay in southeastern Africa, far from the Sahara; its trade ran toward the Indian Ocean coast."
       },
@@ -224,25 +224,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Both extracted resources from conquered peoples, the Aztecs mainly through tribute payments and the Inca through a labor-service system called the mit'a.",
+        "text": "Both drew resources from conquered peoples, the Aztecs through tribute and the Inca through the mit'a labor system.",
         "isCorrect": true,
         "explanation": "The Aztec Triple Alliance demanded tribute in goods, while the Inca required subject peoples to supply labor for state projects such as roads and terraces."
       },
       {
         "label": "B",
-        "text": "Both recorded their laws and histories in an alphabetic script.",
+        "text": "Both recorded their laws and histories in an alphabetic script modeled on Spanish writing",
         "isCorrect": false,
         "explanation": "The Aztecs used pictographic codices and the Inca used knotted cords (quipu); neither used an alphabet."
       },
       {
         "label": "C",
-        "text": "Both were overthrown by Portuguese expeditions in the early sixteenth century.",
+        "text": "Both were overthrown by Portuguese expeditions during the early sixteenth century after long wars of conquest and rebellion",
         "isCorrect": false,
         "explanation": "Both empires fell to Spanish conquistadors, in 1521 (Aztec) and in the 1530s (Inca)."
       },
       {
         "label": "D",
-        "text": "Both moved goods across their empires using wheeled carts pulled by draft animals.",
+        "text": "Both moved goods across their empires using wheeled carts pulled by draft animals on paved roads",
         "isCorrect": false,
         "explanation": "Neither empire used wheeled transport for goods; the Inca used llamas and porters along their road system."
       }
@@ -260,25 +260,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Weak central authority after the decline of Roman rule, which left local lords providing protection in exchange for peasants' labor.",
+        "text": "Weak central authority after Roman decline, which left local lords offering protection in exchange for labor.",
         "isCorrect": true,
         "explanation": "Manorialism developed in a decentralized Europe where lords offered protection and land in exchange for peasants' labor and loyalty."
       },
       {
         "label": "B",
-        "text": "The labor shortages caused by the Black Death, which gave lords more power over peasants.",
+        "text": "The labor shortages caused by the Black Death, which gave lords much more power over peasants and tenants on the manor",
         "isCorrect": false,
         "explanation": "The Black Death (mid-1300s) came after this thirteenth-century document, and the labor shortage it caused tended to improve peasants' bargaining position."
       },
       {
         "label": "C",
-        "text": "The growth of long-distance trade, which had made most peasants wealthy and mobile.",
+        "text": "The growth of long-distance trade, which had made most peasants wealthy, literate and mobile",
         "isCorrect": false,
         "explanation": "The passage shows peasants tied to the land; mobility and wealth for peasants came later, with towns and trade."
       },
       {
         "label": "D",
-        "text": "The conquest of Europe by the Mongols, who imposed the system.",
+        "text": "The conquest of Europe by the Mongols, who imposed the manorial system on conquered villages",
         "isCorrect": false,
         "explanation": "The Mongols did not conquer western Europe, and manorialism developed locally."
       }
@@ -296,25 +296,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The end of all trade between Europe and Muslim lands.",
+        "text": "The end of all trade between Europe and Muslim lands, which isolated the Italian trading cities for centuries afterward",
         "isCorrect": false,
         "explanation": "Trade continued and grew; the Crusades did not end it."
       },
       {
         "label": "B",
-        "text": "The collapse of the Byzantine Empire in the twelfth century.",
+        "text": "The collapse of the Byzantine Empire in the twelfth century, which opened the Balkans to Europe",
         "isCorrect": false,
         "explanation": "The Byzantine Empire survived, though weakened (including by the Fourth Crusade in 1204), until 1453."
       },
       {
         "label": "C",
-        "text": "Greater European demand for Asian goods and increased contact with the Islamic world, which helped Italian trading cities such as Venice and Genoa.",
+        "text": "Greater European demand for Asian goods and contact with the Islamic world, which helped Venice and Genoa.",
         "isCorrect": true,
         "explanation": "The Crusades stimulated trade and exposed Europeans to goods and knowledge from the eastern Mediterranean, enriching the Italian city-states that carried the trade."
       },
       {
         "label": "D",
-        "text": "Permanent Christian control of the Holy Land.",
+        "text": "Permanent Christian control of the Holy Land and of the main Mediterranean trade routes to Asia",
         "isCorrect": false,
         "explanation": "The crusader states were eventually reconquered by Muslim forces, ending in 1291."
       }
@@ -332,25 +332,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Europe had larger cities and more advanced technology than China.",
+        "text": "Europe had larger cities and more advanced technology than China, which had entered a long decline by 1200",
         "isCorrect": false,
         "explanation": "In this period Chinese cities and technology generally exceeded Europe's."
       },
       {
         "label": "B",
-        "text": "China was divided into many feudal kingdoms while Europe was a single unified state.",
+        "text": "China was divided into many feudal kingdoms, while Europe was a single unified state ruled by one emperor",
         "isCorrect": false,
         "explanation": "This reverses the situation: China had a centralized state and Europe was fragmented."
       },
       {
         "label": "C",
-        "text": "Song China had a centralized government, large commercial cities and technologies such as printing and gunpowder, while western Europe was politically fragmented and less urbanized.",
+        "text": "Song China had a centralized government, large commercial cities and printing, while western Europe was fragmented and less urban.",
         "isCorrect": true,
         "explanation": "The Song state governed through a bureaucracy and had some of the world's largest cities and advanced technologies, whereas Europe was divided into many feudal lordships."
       },
       {
         "label": "D",
-        "text": "Both were ruled by centralized governments that selected officials through examinations.",
+        "text": "Both were ruled by strong centralized governments that selected all of their officials through competitive written examinations",
         "isCorrect": false,
         "explanation": "Only China used an examination system; western Europe was decentralized."
       }
@@ -368,25 +368,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The adaptation of Indian religious and political ideas by Southeast Asian rulers through trade and cultural contact.",
+        "text": "The adaptation of Indian religious and political ideas by Southeast Asian rulers through trade.",
         "isCorrect": true,
         "explanation": "Southeast Asian rulers adopted Hindu and Buddhist ideas and symbols from India, adapting them to legitimize their own power."
       },
       {
         "label": "B",
-        "text": "The military conquest of mainland Southeast Asia by Indian empires.",
+        "text": "The military conquest of mainland Southeast Asia by Indian empires in the eleventh century",
         "isCorrect": false,
         "explanation": "Indian religious influence spread mainly through trade and cultural exchange, not conquest by Indian states."
       },
       {
         "label": "C",
-        "text": "The spread of Islam into mainland Southeast Asia by Arab merchants.",
+        "text": "The spread of Islam into mainland Southeast Asia by Arab merchants and Sufi teachers during the twelfth century",
         "isCorrect": false,
         "explanation": "Angkor Wat is a Hindu temple of the twelfth century; Islam became prominent in maritime Southeast Asia later."
       },
       {
         "label": "D",
-        "text": "A rejection of outside influences in favor of purely local religious traditions.",
+        "text": "A rejection of outside influences in favor of purely local religious traditions and rulers",
         "isCorrect": false,
         "explanation": "The temple's Hindu dedication shows the opposite: outside religious ideas were adopted."
       }
@@ -404,19 +404,19 @@
     "choices": [
       {
         "label": "A",
-        "text": "It dominated the interior of the Indian subcontinent through conquest.",
+        "text": "It dominated the interior of the Indian subcontinent through military conquest and tribute",
         "isCorrect": false,
         "explanation": "Srivijaya was a maritime state based in Sumatra, not a conqueror of India's interior."
       },
       {
         "label": "B",
-        "text": "It controlled the caravan routes of the Sahara.",
+        "text": "It controlled the caravan routes of the Sahara and the gold trade of West Africa",
         "isCorrect": false,
         "explanation": "The Sahara is in Africa and unrelated to Srivijaya's maritime location."
       },
       {
         "label": "C",
-        "text": "It monopolized silk production for European markets.",
+        "text": "It monopolized silk production for European markets and Mediterranean merchants",
         "isCorrect": false,
         "explanation": "Silk production was centered in China, and the passage concerns shipping fees."
       },
@@ -440,25 +440,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "The adoption of Legalism as the state's governing philosophy.",
+        "text": "The adoption of Legalism as the state's governing philosophy in place of Confucian ideals",
         "isCorrect": false,
         "explanation": "Legalism was associated with the Qin dynasty centuries earlier, and the passage emphasizes moral self-cultivation instead."
       },
       {
         "label": "B",
-        "text": "The replacement of Confucianism by Buddhism as the official state philosophy.",
+        "text": "The replacement of Confucianism by Buddhism as the official state philosophy of the empire",
         "isCorrect": false,
         "explanation": "The passage criticizes withdrawal from the world and stresses Confucian duties; Confucian thought grew stronger in this period."
       },
       {
         "label": "C",
-        "text": "The rise of Neo-Confucianism, which revived Confucian ethics while responding to Buddhist and Daoist ideas.",
+        "text": "The rise of Neo-Confucianism, which revived Confucian ethics in response to Buddhism and Daoism.",
         "isCorrect": true,
         "explanation": "Neo-Confucian thinkers emphasized moral cultivation and social duty, partly in response to Buddhism's emphasis on withdrawal."
       },
       {
         "label": "D",
-        "text": "The introduction of Christianity to the imperial court.",
+        "text": "The introduction of Christianity to the imperial court by European missionaries and traders arriving by sea",
         "isCorrect": false,
         "explanation": "Christianity did not become influential at the Song court."
       }
@@ -476,25 +476,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "They rejected all foreign learning as contrary to Islamic teaching.",
+        "text": "They rejected all foreign learning as contrary to Islamic teaching and destroyed its libraries",
         "isCorrect": false,
         "explanation": "Abbasid rulers sponsored the translation of foreign works."
       },
       {
         "label": "B",
-        "text": "Their work was unknown outside the Muslim world until the twentieth century.",
+        "text": "Their work was unknown outside the Muslim world until the twentieth century, when it was finally rediscovered by scholars",
         "isCorrect": false,
         "explanation": "Muslim scholarship was translated into Latin and strongly influenced medieval and Renaissance Europe."
       },
       {
         "label": "C",
-        "text": "They invented the printing press that was later copied in Europe.",
+        "text": "They invented the printing press, which Europeans later copied from Baghdad's workshops",
         "isCorrect": false,
         "explanation": "Printing developed in China, and the European printing press came in the 1400s; it was not an Abbasid invention."
       },
       {
         "label": "D",
-        "text": "They translated and built on Greek, Persian and Indian works, and results such as algebra and Hindu-Arabic numerals later reached Europe.",
+        "text": "They translated and extended Greek, Persian and Indian works, and algebra and numerals reached Europe.",
         "isCorrect": true,
         "explanation": "Scholars in centers such as Baghdad preserved and extended earlier knowledge and added their own advances, which were later transmitted to Europe."
       }
@@ -512,25 +512,25 @@
     "choices": [
       {
         "label": "A",
-        "text": "Both were tributary provinces of the Mongol Empire.",
+        "text": "Both were tributary provinces of the Mongol Empire and paid annual taxes to the Great Khan in gold",
         "isCorrect": false,
         "explanation": "Neither the Swahili coast nor West Africa was ruled by the Mongols."
       },
       {
         "label": "B",
-        "text": "Both were influenced by Islam and gained wealth from long-distance trade, but the Swahili states were independent coastal cities while Mali was a large territorial empire.",
+        "text": "Both were shaped by Islam and long-distance trade, but the Swahili states were coastal cities and Mali a large empire.",
         "isCorrect": true,
         "explanation": "Swahili ports such as Kilwa traded across the Indian Ocean and Mali profited from the Sahara trade; their political structures differed."
       },
       {
         "label": "C",
-        "text": "Neither had any trade contact with Muslim merchants.",
+        "text": "Neither had any trade contact with Muslim merchants, and both retained only local religious traditions",
         "isCorrect": false,
         "explanation": "Both had extensive contact with Muslim merchants, and Islam was influential in both."
       },
       {
         "label": "D",
-        "text": "The Swahili states depended on trans-Saharan trade, while Mali depended on Indian Ocean trade.",
+        "text": "The Swahili states depended on trans-Saharan trade, while Mali depended on Indian Ocean trade and its coastal ports",
         "isCorrect": false,
         "explanation": "This reverses their trade orientations."
       }

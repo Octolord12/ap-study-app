@@ -23,9 +23,9 @@
     "stem": "The \"Green Revolution,\" involving new agricultural technologies and high-yield crop varieties, primarily aimed to address what global challenge?",
     "choices": [
       { "label": "A", "text": "Increasing global food production to address hunger and support growing populations", "isCorrect": true, "explanation": "The Green Revolution introduced high-yield crops and new farming technologies to boost global food production and address hunger." },
-      { "label": "B", "text": "Reducing all agricultural production worldwide", "isCorrect": false, "explanation": "The Green Revolution aimed to increase, not reduce, agricultural production." },
-      { "label": "C", "text": "Eliminating all forms of technology in farming", "isCorrect": false, "explanation": "The Green Revolution specifically introduced new technologies to farming, not eliminated technology." },
-      { "label": "D", "text": "Decreasing global population growth directly", "isCorrect": false, "explanation": "The Green Revolution's primary aim was increasing food production, not directly targeting population growth reduction." }
+      { "label": "B", "text": "Reducing all agricultural production worldwide to protect natural habitats", "isCorrect": false, "explanation": "The Green Revolution aimed to increase, not reduce, agricultural production." },
+      { "label": "C", "text": "Eliminating all forms of technology in farming and returning to hand tools and animal power", "isCorrect": false, "explanation": "The Green Revolution specifically introduced new technologies to farming, not eliminated technology." },
+      { "label": "D", "text": "Decreasing global population growth directly through public health programs", "isCorrect": false, "explanation": "The Green Revolution's primary aim was increasing food production, not directly targeting population growth reduction." }
     ],
     "explanation": "The Green Revolution aimed to increase global food production to address hunger and support growing populations.",
     "conceptLink": "ap-world/unit-9-globalization/technological-advances",
@@ -38,10 +38,10 @@
     "difficulty": "medium",
     "stem": "How did advances in transportation technology (such as commercial jet air travel) during the mid-to-late 20th century affect global interconnection?",
     "choices": [
-      { "label": "A", "text": "They had no effect on global travel or trade", "isCorrect": false, "explanation": "These advances had very significant, well-documented effects on global travel and trade." },
-      { "label": "B", "text": "They significantly reduced travel times between distant regions, facilitating increased international trade, tourism, and cultural exchange", "isCorrect": true, "explanation": "Faster air travel dramatically shortened distances between world regions, boosting trade, tourism, and cultural exchange." },
-      { "label": "C", "text": "They made international travel completely impossible", "isCorrect": false, "explanation": "These advances actually made international travel more accessible, not impossible." },
-      { "label": "D", "text": "They eliminated the need for any international trade", "isCorrect": false, "explanation": "These advances facilitated, rather than eliminated the need for, international trade." }
+      { "label": "A", "text": "They had no effect on global travel or trade, since most people and goods still crossed the oceans by ship in the same number of weeks", "isCorrect": false, "explanation": "These advances had very significant, well-documented effects on global travel and trade." },
+      { "label": "B", "text": "They significantly reduced travel times between distant regions, facilitating more international trade, tourism and cultural exchange", "isCorrect": true, "explanation": "Faster air travel dramatically shortened distances between world regions, boosting trade, tourism, and cultural exchange." },
+      { "label": "C", "text": "They made international travel completely impossible, because airlines were banned from crossing borders", "isCorrect": false, "explanation": "These advances actually made international travel more accessible, not impossible." },
+      { "label": "D", "text": "They eliminated the need for any international trade, since every country became self-sufficient", "isCorrect": false, "explanation": "These advances facilitated, rather than eliminated the need for, international trade." }
     ],
     "explanation": "Advances in air travel significantly reduced travel times between distant regions, facilitating increased trade, tourism, and cultural exchange.",
     "conceptLink": "ap-world/unit-9-globalization/technological-advances",
@@ -54,10 +54,10 @@
     "difficulty": "hard",
     "stem": "How did the development of container shipping in the mid-20th century transform global trade?",
     "choices": [
-      { "label": "A", "text": "It had no effect on global trade", "isCorrect": false, "explanation": "Container shipping had very significant, well-documented effects on global trade." },
-      { "label": "B", "text": "It dramatically reduced the cost and time of shipping goods internationally, facilitating the growth of complex global supply chains", "isCorrect": true, "explanation": "Standardized shipping containers made international freight dramatically cheaper and faster, enabling complex global supply chains." },
-      { "label": "C", "text": "It made international shipping impossible", "isCorrect": false, "explanation": "Container shipping made international shipping more efficient and accessible, not impossible." },
-      { "label": "D", "text": "It was used exclusively for passenger travel, not goods", "isCorrect": false, "explanation": "Container shipping was specifically developed for transporting goods and cargo, not passengers." }
+      { "label": "A", "text": "It had no effect on global trade, since cargo was still loaded by hand in the same way", "isCorrect": false, "explanation": "Container shipping had very significant, well-documented effects on global trade." },
+      { "label": "B", "text": "It dramatically reduced the cost and time of shipping goods internationally, enabling complex global supply chains", "isCorrect": true, "explanation": "Standardized shipping containers made international freight dramatically cheaper and faster, enabling complex global supply chains." },
+      { "label": "C", "text": "It made international shipping impossible, because the standard boxes could not be stacked on a ship", "isCorrect": false, "explanation": "Container shipping made international shipping more efficient and accessible, not impossible." },
+      { "label": "D", "text": "It was used exclusively for passenger travel and not for goods, carrying tourists and migrants across the oceans on regular scheduled voyages", "isCorrect": false, "explanation": "Container shipping was specifically developed for transporting goods and cargo, not passengers." }
     ],
     "explanation": "Container shipping dramatically reduced the cost and time of shipping goods internationally, enabling complex global supply chains.",
     "conceptLink": "ap-world/unit-9-globalization/technological-advances",
@@ -70,7 +70,7 @@
     "difficulty": "medium",
     "stem": "What role did satellite technology play in advancing globalization during the late 20th century?",
     "choices": [
-      { "label": "A", "text": "No role; satellites had no connection to globalization", "isCorrect": false, "explanation": "Satellite technology had a very significant, well-documented role in advancing global connectivity." },
+      { "label": "A", "text": "No role; satellites had no connection to globalization, and all international communication still ran through undersea cables and shortwave radio", "isCorrect": false, "explanation": "Satellite technology had a very significant, well-documented role in advancing global connectivity." },
       { "label": "B", "text": "Satellites enabled instant global communication, television broadcasting, and later, GPS navigation and internet connectivity", "isCorrect": true, "explanation": "Satellites enabled instant global communication, broadcasting, navigation, and later internet connectivity, all central to globalization." },
       { "label": "C", "text": "Satellites were used exclusively for military purposes with no civilian applications", "isCorrect": false, "explanation": "Satellites have substantial civilian applications, including communication, broadcasting, and navigation, not exclusively military ones." },
       { "label": "D", "text": "Satellites eliminated the need for any other forms of communication technology", "isCorrect": false, "explanation": "Satellite technology worked alongside, rather than eliminated the need for, other communication technologies." }
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "The rise of personal computers and eventually the internet in the late 20th century contributed to what broader global economic shift?",
     "choices": [
-      { "label": "A", "text": "A complete decline in all economic activity worldwide", "isCorrect": false, "explanation": "This technology contributed to significant economic growth in various new sectors, not a complete decline in economic activity." },
-      { "label": "B", "text": "The growth of information-based and digital economies, alongside traditional manufacturing and agricultural sectors", "isCorrect": true, "explanation": "Personal computers and the internet enabled the growth of information-based and digital economic sectors alongside traditional industries." },
-      { "label": "C", "text": "The elimination of all traditional industries", "isCorrect": false, "explanation": "Traditional industries continued to exist alongside, rather than being completely eliminated by, new digital/information sectors." },
-      { "label": "D", "text": "No significant economic shift occurred", "isCorrect": false, "explanation": "This technological shift had very significant, well-documented economic effects." }
+      { "label": "A", "text": "A complete decline in all economic activity worldwide, as computers replaced human labor", "isCorrect": false, "explanation": "This technology contributed to significant economic growth in various new sectors, not a complete decline in economic activity." },
+      { "label": "B", "text": "The growth of information-based and digital economies, alongside traditional manufacturing and agriculture", "isCorrect": true, "explanation": "Personal computers and the internet enabled the growth of information-based and digital economic sectors alongside traditional industries." },
+      { "label": "C", "text": "The elimination of all traditional industries, which were replaced by digital services and online retail within a single decade", "isCorrect": false, "explanation": "Traditional industries continued to exist alongside, rather than being completely eliminated by, new digital/information sectors." },
+      { "label": "D", "text": "No significant economic shift occurred, since computers were used only by hobbyists and researchers", "isCorrect": false, "explanation": "This technological shift had very significant, well-documented economic effects." }
     ],
     "explanation": "Personal computers and the internet contributed to the growth of information-based and digital economies alongside traditional sectors.",
     "conceptLink": "ap-world/unit-9-globalization/technological-advances",
@@ -103,9 +103,9 @@
     "stem": "The global spread of ideas and communication during the late 20th century helped facilitate the growth of what type of social/political movements, advocating for expanded rights for various groups?",
     "choices": [
       { "label": "A", "text": "Rights-based movements (e.g., civil rights, women's rights, LGBTQ+ rights movements)", "isCorrect": true, "explanation": "Global communication helped connect and inspire rights-based movements advocating for expanded rights for various groups across many countries." },
-      { "label": "B", "text": "Movements exclusively opposing any form of human rights", "isCorrect": false, "explanation": "This significantly mischaracterizes the nature of these movements, which generally advocated for, rather than opposed, expanded rights." },
-      { "label": "C", "text": "Movements with no international connections whatsoever", "isCorrect": false, "explanation": "Many of these movements had significant international connections and mutual influence, contrary to this claim." },
-      { "label": "D", "text": "Movements focused exclusively on restricting rights", "isCorrect": false, "explanation": "These movements generally sought to expand, not restrict, rights for various groups." }
+      { "label": "B", "text": "Movements exclusively opposing any form of human rights or of equality before the law", "isCorrect": false, "explanation": "This significantly mischaracterizes the nature of these movements, which generally advocated for, rather than opposed, expanded rights." },
+      { "label": "C", "text": "Movements with no international connections whatsoever, confined to a single village", "isCorrect": false, "explanation": "Many of these movements had significant international connections and mutual influence, contrary to this claim." },
+      { "label": "D", "text": "Movements focused exclusively on restricting the rights of minorities and women", "isCorrect": false, "explanation": "These movements generally sought to expand, not restrict, rights for various groups." }
     ],
     "explanation": "Global communication facilitated the growth of rights-based movements advocating for expanded rights for various groups.",
     "conceptLink": "ap-world/unit-9-globalization/rights-based-movements",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "The global feminist movement of the late 20th century advocated for what kinds of changes?",
     "choices": [
-      { "label": "A", "text": "No changes of any kind", "isCorrect": false, "explanation": "This movement had substantial, well-documented advocacy goals and effects." },
-      { "label": "B", "text": "Expanded rights and opportunities for women, including in areas like education, employment, political participation, and legal equality", "isCorrect": true, "explanation": "The global feminist movement advocated for expanded rights and opportunities for women across many areas of life." },
-      { "label": "C", "text": "Exclusively restricting women's rights", "isCorrect": false, "explanation": "This movement generally sought to expand, not restrict, women's rights and opportunities." },
-      { "label": "D", "text": "A movement with no international dimension", "isCorrect": false, "explanation": "The feminist movement had a very significant international dimension, connecting activists and ideas across many countries." }
+      { "label": "A", "text": "No changes of any kind, since the movement only wanted to preserve existing laws and customs in each country", "isCorrect": false, "explanation": "This movement had substantial, well-documented advocacy goals and effects." },
+      { "label": "B", "text": "Expanded rights and opportunities for women, including in education, employment, political participation and legal equality", "isCorrect": true, "explanation": "The global feminist movement advocated for expanded rights and opportunities for women across many areas of life." },
+      { "label": "C", "text": "Exclusively restricting women's rights, especially in education, employment and public life", "isCorrect": false, "explanation": "This movement generally sought to expand, not restrict, women's rights and opportunities." },
+      { "label": "D", "text": "A movement with no international dimension, which never spread beyond a single country or influenced any other", "isCorrect": false, "explanation": "The feminist movement had a very significant international dimension, connecting activists and ideas across many countries." }
     ],
     "explanation": "The global feminist movement advocated for expanded rights and opportunities for women in education, employment, politics, and legal equality.",
     "conceptLink": "ap-world/unit-9-globalization/rights-based-movements",
@@ -134,9 +134,9 @@
     "difficulty": "medium",
     "stem": "How did international connections and global communication contribute to the spread of human rights movements during this era?",
     "choices": [
-      { "label": "A", "text": "They had no connection to the spread of these movements", "isCorrect": false, "explanation": "Global communication and connections had a very significant, well-documented role in facilitating these movements' spread." },
-      { "label": "B", "text": "Activists could share ideas, strategies, and support across national borders more easily, contributing to a more globally connected human rights movement", "isCorrect": true, "explanation": "Global communication let activists across different countries share strategies and support, strengthening interconnected rights movements." },
-      { "label": "C", "text": "They made international cooperation between movements completely impossible", "isCorrect": false, "explanation": "These developments actually facilitated, rather than made impossible, international cooperation between movements." },
+      { "label": "A", "text": "They had no connection to the spread of these movements, which grew only through local newspapers and spoken word", "isCorrect": false, "explanation": "Global communication and connections had a very significant, well-documented role in facilitating these movements' spread." },
+      { "label": "B", "text": "Activists could share ideas, strategies and support across borders more easily, contributing to a more connected human rights movement", "isCorrect": true, "explanation": "Global communication let activists across different countries share strategies and support, strengthening interconnected rights movements." },
+      { "label": "C", "text": "They made international cooperation between movements completely impossible, because of censorship laws", "isCorrect": false, "explanation": "These developments actually facilitated, rather than made impossible, international cooperation between movements." },
       { "label": "D", "text": "Global communication only spread ideas within a single country with no international reach", "isCorrect": false, "explanation": "Global communication technology specifically enabled international, not merely single-country, reach for these movements." }
     ],
     "explanation": "Global communication let activists share ideas and strategies across borders, contributing to a more globally connected human rights movement.",
@@ -150,10 +150,10 @@
     "difficulty": "hard",
     "stem": "The global anti-apartheid movement, which opposed South Africa's system of racial segregation, is an example of what broader trend in this era?",
     "choices": [
-      { "label": "A", "text": "A purely localized movement with no international involvement or impact", "isCorrect": false, "explanation": "The anti-apartheid movement had very significant, well-documented international involvement and impact, not a purely localized one." },
-      { "label": "B", "text": "International solidarity and pressure (including economic sanctions and global activism) contributing to significant political change within a specific nation", "isCorrect": true, "explanation": "Global activism, economic sanctions, and international solidarity contributed significantly to the end of apartheid in South Africa." },
-      { "label": "C", "text": "A movement that had no connection to broader human rights themes", "isCorrect": false, "explanation": "This movement was very much connected to broader global human rights themes and discourse." },
-      { "label": "D", "text": "A movement that ultimately achieved no meaningful change", "isCorrect": false, "explanation": "This movement did achieve significant meaningful change, notably contributing to the end of apartheid in South Africa in the early 1990s." }
+      { "label": "A", "text": "A purely localized movement with no international involvement, sanctions or impact outside South Africa, and with no help from foreign governments", "isCorrect": false, "explanation": "The anti-apartheid movement had very significant, well-documented international involvement and impact, not a purely localized one." },
+      { "label": "B", "text": "International solidarity and pressure (including economic sanctions and global activism) contributing to major political change within one nation", "isCorrect": true, "explanation": "Global activism, economic sanctions, and international solidarity contributed significantly to the end of apartheid in South Africa." },
+      { "label": "C", "text": "A movement that had no connection to broader human rights themes or to other struggles", "isCorrect": false, "explanation": "This movement was very much connected to broader global human rights themes and discourse." },
+      { "label": "D", "text": "A movement that ultimately achieved no meaningful change in South African law or society", "isCorrect": false, "explanation": "This movement did achieve significant meaningful change, notably contributing to the end of apartheid in South Africa in the early 1990s." }
     ],
     "explanation": "The anti-apartheid movement exemplifies international solidarity and pressure contributing to significant political change within a nation.",
     "conceptLink": "ap-world/unit-9-globalization/rights-based-movements",
@@ -166,10 +166,10 @@
     "difficulty": "medium",
     "stem": "Various international organizations and conferences (such as UN world conferences on women) during this era served what purpose related to rights-based movements?",
     "choices": [
-      { "label": "A", "text": "They had no purpose or effect", "isCorrect": false, "explanation": "These international organizations and conferences had a substantial, well-documented purpose and effect." },
-      { "label": "B", "text": "They provided platforms for coordinating international advocacy, setting shared goals, and raising global awareness about various rights issues", "isCorrect": true, "explanation": "These platforms helped coordinate international advocacy efforts, set shared goals, and raise global awareness about rights issues." },
-      { "label": "C", "text": "They exclusively opposed all rights-based movements", "isCorrect": false, "explanation": "These organizations and conferences generally supported, rather than opposed, various rights-based movements and their goals." },
-      { "label": "D", "text": "They had no connection to any real-world political or social change", "isCorrect": false, "explanation": "These platforms had meaningful connections to real-world advocacy and, in various cases, contributed to actual political and social change." }
+      { "label": "A", "text": "They had no purpose or effect, and the delegates rarely met, voted or issued any joint statements", "isCorrect": false, "explanation": "These international organizations and conferences had a substantial, well-documented purpose and effect." },
+      { "label": "B", "text": "They provided platforms for coordinating international advocacy, setting shared goals and raising global awareness of rights issues", "isCorrect": true, "explanation": "These platforms helped coordinate international advocacy efforts, set shared goals, and raise global awareness about rights issues." },
+      { "label": "C", "text": "They exclusively opposed all rights-based movements and campaigned for governments to restrict reform in every country", "isCorrect": false, "explanation": "These organizations and conferences generally supported, rather than opposed, various rights-based movements and their goals." },
+      { "label": "D", "text": "They had no connection to any real-world political or social change, and their resolutions were ignored", "isCorrect": false, "explanation": "These platforms had meaningful connections to real-world advocacy and, in various cases, contributed to actual political and social change." }
     ],
     "explanation": "International organizations and conferences provided platforms for coordinating advocacy, setting shared goals, and raising awareness about rights issues.",
     "conceptLink": "ap-world/unit-9-globalization/rights-based-movements",
@@ -183,9 +183,9 @@
     "stem": "What broader historical pattern do rights-based movements of this era (civil rights, women's rights, LGBTQ+ rights, anti-apartheid, etc.) collectively illustrate about globalization?",
     "choices": [
       { "label": "A", "text": "Globalization only involved economic and technological changes, with no connection to social/political movements", "isCorrect": false, "explanation": "This significantly understates globalization's scope; it had substantial connections to social and political movements as well." },
-      { "label": "B", "text": "Globalization facilitated the spread of ideas about rights and justice across borders, contributing to interconnected global movements for social change", "isCorrect": true, "explanation": "These movements collectively illustrate how globalization facilitated the cross-border spread of ideas about rights and justice." },
-      { "label": "C", "text": "These movements had no connection to increasing global interconnection", "isCorrect": false, "explanation": "These movements did have significant connections to increasing global interconnection, contrary to this claim." },
-      { "label": "D", "text": "Globalization exclusively restricted the spread of any new ideas", "isCorrect": false, "explanation": "Globalization generally facilitated, rather than restricted, the spread of new ideas across borders." }
+      { "label": "B", "text": "Globalization spread ideas about rights and justice across borders, contributing to interconnected global movements for social change", "isCorrect": true, "explanation": "These movements collectively illustrate how globalization facilitated the cross-border spread of ideas about rights and justice." },
+      { "label": "C", "text": "These movements had no connection to increasing global interconnection, and began independently in each country", "isCorrect": false, "explanation": "These movements did have significant connections to increasing global interconnection, contrary to this claim." },
+      { "label": "D", "text": "Globalization exclusively restricted the spread of any new ideas, since governments controlled every network", "isCorrect": false, "explanation": "Globalization generally facilitated, rather than restricted, the spread of new ideas across borders." }
     ],
     "explanation": "Rights-based movements illustrate how globalization facilitated the cross-border spread of ideas about rights and justice.",
     "conceptLink": "ap-world/unit-9-globalization/rights-based-movements",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "How has mass media (such as television, film, and later the internet/social media) contributed to the spread of globalized culture?",
     "choices": [
-      { "label": "A", "text": "Mass media has had no effect on cultural exchange", "isCorrect": false, "explanation": "Mass media has had very significant, well-documented effects on cultural exchange." },
-      { "label": "B", "text": "It has allowed cultural products and ideas to reach global audiences quickly, contributing to shared cultural references and trends across different countries", "isCorrect": true, "explanation": "Mass media let cultural products and ideas reach global audiences rapidly, fostering shared cultural references and trends worldwide." },
+      { "label": "A", "text": "Mass media has had no effect on cultural exchange, since audiences everywhere watch only local programs in their own languages and dialects", "isCorrect": false, "explanation": "Mass media has had very significant, well-documented effects on cultural exchange." },
+      { "label": "B", "text": "It allowed cultural products and ideas to reach global audiences quickly, creating shared references and trends across countries", "isCorrect": true, "explanation": "Mass media let cultural products and ideas reach global audiences rapidly, fostering shared cultural references and trends worldwide." },
       { "label": "C", "text": "Mass media exclusively promotes local, national culture with no international content", "isCorrect": false, "explanation": "Mass media has significantly facilitated international cultural content and exchange, not exclusively local or national content." },
-      { "label": "D", "text": "Mass media has eliminated all cultural diversity worldwide", "isCorrect": false, "explanation": "While some homogenization concerns exist, this significantly overstates the claim; cultural diversity has persisted alongside shared global trends." }
+      { "label": "D", "text": "Mass media has eliminated all cultural diversity worldwide, replacing every local tradition", "isCorrect": false, "explanation": "While some homogenization concerns exist, this significantly overstates the claim; cultural diversity has persisted alongside shared global trends." }
     ],
     "explanation": "Mass media has allowed cultural products and ideas to reach global audiences quickly, fostering shared cultural references and trends across countries.",
     "conceptLink": "ap-world/unit-9-globalization/globalized-culture",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "What concern have some critics raised regarding the spread of globalized culture, particularly regarding the influence of dominant media-producing countries (such as the United States)?",
     "choices": [
-      { "label": "A", "text": "No concerns have ever been raised about this topic", "isCorrect": false, "explanation": "Significant, well-documented concerns and debates have arisen regarding this topic." },
-      { "label": "B", "text": "Concerns about cultural homogenization, where dominant cultural influences might overshadow or diminish local/traditional cultural practices", "isCorrect": true, "explanation": "Critics have raised concerns that dominant global media influences might overshadow or diminish local and traditional cultural practices." },
-      { "label": "C", "text": "Concerns that globalized culture has had no effect on any local traditions", "isCorrect": false, "explanation": "This significantly understates the actual concern, which is specifically about globalized culture's potential effects on local traditions." },
-      { "label": "D", "text": "Concerns that too many distinct cultures are emerging worldwide", "isCorrect": false, "explanation": "This reverses the actual concern, which is about potential cultural homogenization (reduction of diversity), not an increase in distinct cultures." }
+      { "label": "A", "text": "No concerns have ever been raised about this topic by scholars, governments or communities, since all cultures welcomed the changes", "isCorrect": false, "explanation": "Significant, well-documented concerns and debates have arisen regarding this topic." },
+      { "label": "B", "text": "Concerns about cultural homogenization, in which dominant influences might overshadow or diminish local and traditional practices", "isCorrect": true, "explanation": "Critics have raised concerns that dominant global media influences might overshadow or diminish local and traditional cultural practices." },
+      { "label": "C", "text": "Concerns that globalized culture has had no effect on any local traditions, which have stayed unchanged", "isCorrect": false, "explanation": "This significantly understates the actual concern, which is specifically about globalized culture's potential effects on local traditions." },
+      { "label": "D", "text": "Concerns that too many distinct cultures are emerging worldwide, making the world too diverse", "isCorrect": false, "explanation": "This reverses the actual concern, which is about potential cultural homogenization (reduction of diversity), not an increase in distinct cultures." }
     ],
     "explanation": "Critics have raised concerns about cultural homogenization, where dominant cultural influences might overshadow local traditions.",
     "conceptLink": "ap-world/unit-9-globalization/globalized-culture",
@@ -246,10 +246,10 @@
     "difficulty": "hard",
     "stem": "How might \"cultural globalization\" involve both homogenization and the persistence/blending of local traditions simultaneously?",
     "choices": [
-      { "label": "A", "text": "These are mutually exclusive processes that could never occur together", "isCorrect": false, "explanation": "Historians and sociologists often note that these processes can and do occur simultaneously, rather than being mutually exclusive." },
-      { "label": "B", "text": "While some shared global cultural trends spread widely, local communities often also adapt, blend, or reinterpret these influences alongside preserving their own distinct traditions, creating diverse outcomes", "isCorrect": true, "explanation": "Cultural globalization can involve both widespread shared trends and local adaptation, blending, and preservation happening simultaneously." },
-      { "label": "C", "text": "Cultural globalization always results in complete uniformity with no local variation whatsoever", "isCorrect": false, "explanation": "Outcomes have varied significantly, with substantial local adaptation and blending occurring alongside broader trends, not complete uniform homogenization." },
-      { "label": "D", "text": "Cultural globalization has no relationship to local traditions in any way", "isCorrect": false, "explanation": "Cultural globalization has a very significant, well-documented relationship to local traditions, whether through blending, adaptation, or tension." }
+      { "label": "A", "text": "These are mutually exclusive processes that could never occur together in the same society or even in the same historical period", "isCorrect": false, "explanation": "Historians and sociologists often note that these processes can and do occur simultaneously, rather than being mutually exclusive." },
+      { "label": "B", "text": "While some shared global trends spread widely, local communities often adapt, blend or reinterpret these influences while preserving distinct traditions, creating diverse outcomes", "isCorrect": true, "explanation": "Cultural globalization can involve both widespread shared trends and local adaptation, blending, and preservation happening simultaneously." },
+      { "label": "C", "text": "Cultural globalization always results in complete uniformity with no local variation whatsoever, because every society adopts the same foreign culture within a single generation of the first contact", "isCorrect": false, "explanation": "Outcomes have varied significantly, with substantial local adaptation and blending occurring alongside broader trends, not complete uniform homogenization." },
+      { "label": "D", "text": "Cultural globalization has no relationship to local traditions in any way, since the two operate in separate spheres", "isCorrect": false, "explanation": "Cultural globalization has a very significant, well-documented relationship to local traditions, whether through blending, adaptation, or tension." }
     ],
     "explanation": "Cultural globalization can involve both widespread shared global trends and simultaneous local adaptation, blending, and preservation of distinct traditions.",
     "conceptLink": "ap-world/unit-9-globalization/globalized-culture",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "What role did international sporting events (such as the Olympics or the FIFA World Cup) play in globalized culture during this era?",
     "choices": [
-      { "label": "A", "text": "No role; these events had no international significance", "isCorrect": false, "explanation": "These events had very significant, well-documented international significance and global audiences." },
-      { "label": "B", "text": "They brought together participants and audiences from around the world, fostering shared global cultural experiences and international attention", "isCorrect": true, "explanation": "These international sporting events brought together global participants and audiences, fostering shared cultural experiences worldwide." },
-      { "label": "C", "text": "They were exclusively local events with no international participation", "isCorrect": false, "explanation": "These events specifically involve international participation, not exclusively local involvement." },
-      { "label": "D", "text": "They had no connection to broader themes of global interconnection", "isCorrect": false, "explanation": "These events have substantial, well-documented connections to broader themes of global cultural interconnection." }
+      { "label": "A", "text": "No role; these events had no international significance, and few people outside the host country watched", "isCorrect": false, "explanation": "These events had very significant, well-documented international significance and global audiences." },
+      { "label": "B", "text": "They brought together participants and audiences from around the world, creating shared global cultural experiences and attention", "isCorrect": true, "explanation": "These international sporting events brought together global participants and audiences, fostering shared cultural experiences worldwide." },
+      { "label": "C", "text": "They were exclusively local events with no international participation, played only between nearby towns", "isCorrect": false, "explanation": "These events specifically involve international participation, not exclusively local involvement." },
+      { "label": "D", "text": "They had no connection to broader themes of global interconnection, and were run only by national governments", "isCorrect": false, "explanation": "These events have substantial, well-documented connections to broader themes of global cultural interconnection." }
     ],
     "explanation": "International sporting events brought together participants and audiences worldwide, fostering shared global cultural experiences.",
     "conceptLink": "ap-world/unit-9-globalization/globalized-culture",
@@ -278,10 +278,10 @@
     "difficulty": "medium",
     "stem": "The global spread of English as a common language for international business, science, and diplomacy during this era reflects what broader trend?",
     "choices": [
-      { "label": "A", "text": "No broader trend; this is an isolated, insignificant phenomenon", "isCorrect": false, "explanation": "This phenomenon reflects a significant, well-documented broader historical trend, not an isolated insignificant one." },
-      { "label": "B", "text": "The increasing need for shared means of communication as global interconnection (in trade, science, diplomacy, and culture) increased", "isCorrect": true, "explanation": "English's spread as a common language reflects the growing need for shared communication as global interconnection increased across many fields." },
-      { "label": "C", "text": "A trend toward eliminating all other languages worldwide", "isCorrect": false, "explanation": "Other languages have persisted and continued to thrive alongside English's role in certain international contexts, rather than being eliminated." },
-      { "label": "D", "text": "A trend with no connection to globalization", "isCorrect": false, "explanation": "This phenomenon has a very direct, significant connection to broader processes of globalization." }
+      { "label": "A", "text": "No broader trend; this is an isolated, insignificant phenomenon limited to a few universities and diplomats", "isCorrect": false, "explanation": "This phenomenon reflects a significant, well-documented broader historical trend, not an isolated insignificant one." },
+      { "label": "B", "text": "The increasing need for shared means of communication as global interconnection in trade, science, diplomacy and culture grew", "isCorrect": true, "explanation": "English's spread as a common language reflects the growing need for shared communication as global interconnection increased across many fields." },
+      { "label": "C", "text": "A trend toward eliminating all other languages worldwide, as governments banned their use in schools and offices", "isCorrect": false, "explanation": "Other languages have persisted and continued to thrive alongside English's role in certain international contexts, rather than being eliminated." },
+      { "label": "D", "text": "A trend with no connection to globalization, caused only by the popularity of a few songs and television shows", "isCorrect": false, "explanation": "This phenomenon has a very direct, significant connection to broader processes of globalization." }
     ],
     "explanation": "The spread of English as a common international language reflects the growing need for shared communication amid increasing global interconnection.",
     "conceptLink": "ap-world/unit-9-globalization/globalized-culture",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "How has increased global economic interconnection and industrial production contributed to environmental challenges during this era?",
     "choices": [
-      { "label": "A", "text": "Globalization has had no environmental effects whatsoever", "isCorrect": false, "explanation": "Globalization has had very significant, well-documented environmental effects." },
-      { "label": "B", "text": "Increased production, resource extraction, and consumption associated with globalization have contributed to pollution, resource depletion, and climate change", "isCorrect": true, "explanation": "The increased production, extraction, and consumption driven by globalization have contributed significantly to various environmental challenges." },
-      { "label": "C", "text": "Globalization has eliminated all environmental problems worldwide", "isCorrect": false, "explanation": "Globalization has, if anything, contributed to certain environmental challenges rather than eliminating environmental problems entirely." },
-      { "label": "D", "text": "Global trade has had no connection to industrial production", "isCorrect": false, "explanation": "Global trade is very significantly connected to industrial production patterns worldwide." }
+      { "label": "A", "text": "Globalization has had no environmental effects whatsoever, since trade moves only information and services, not goods or raw materials that could pollute the air or water", "isCorrect": false, "explanation": "Globalization has had very significant, well-documented environmental effects." },
+      { "label": "B", "text": "Increased production, resource extraction and consumption associated with globalization have contributed to pollution, resource depletion and climate change", "isCorrect": true, "explanation": "The increased production, extraction, and consumption driven by globalization have contributed significantly to various environmental challenges." },
+      { "label": "C", "text": "Globalization has eliminated all environmental problems worldwide, because shared technology made every industry clean", "isCorrect": false, "explanation": "Globalization has, if anything, contributed to certain environmental challenges rather than eliminating environmental problems entirely." },
+      { "label": "D", "text": "Global trade has had no connection to industrial production, which has remained purely local to each country", "isCorrect": false, "explanation": "Global trade is very significantly connected to industrial production patterns worldwide." }
     ],
     "explanation": "Increased production, resource extraction, and consumption associated with globalization have contributed to pollution, resource depletion, and climate change.",
     "conceptLink": "ap-world/unit-9-globalization/environment-and-globalization",
@@ -342,10 +342,10 @@
     "difficulty": "hard",
     "stem": "Why do some critics argue that the environmental costs of globalization have been unevenly distributed between wealthier and poorer nations?",
     "choices": [
-      { "label": "A", "text": "There is no meaningful disparity in how environmental costs are distributed globally", "isCorrect": false, "explanation": "This critique and debate has significant, well-documented basis and discussion among scholars and critics." },
-      { "label": "B", "text": "Some critics argue that wealthier nations have often benefited economically from global production while environmental costs (such as pollution from manufacturing) have sometimes been concentrated in poorer nations where much production occurs", "isCorrect": true, "explanation": "This critique highlights how the benefits and environmental burdens of globalized production have often been unevenly distributed between wealthier and poorer nations." },
-      { "label": "C", "text": "Wealthier nations have experienced all environmental costs while poorer nations have experienced none", "isCorrect": false, "explanation": "This significantly mischaracterizes the actual argument, which is about uneven and disproportionate distribution, not a complete one-sided absence of costs for poorer nations." },
-      { "label": "D", "text": "This is not a real debate or concern that has been raised by anyone", "isCorrect": false, "explanation": "This is, in fact, a real and significant debate and concern that has been raised and discussed extensively." }
+      { "label": "A", "text": "There is no meaningful disparity in how environmental costs are distributed globally, because pollution is spread evenly across all the countries involved in production", "isCorrect": false, "explanation": "This critique and debate has significant, well-documented basis and discussion among scholars and critics." },
+      { "label": "B", "text": "Some critics argue that wealthier nations benefited economically from global production, while environmental costs such as manufacturing pollution were concentrated in poorer nations where much production occurs", "isCorrect": true, "explanation": "This critique highlights how the benefits and environmental burdens of globalized production have often been unevenly distributed between wealthier and poorer nations." },
+      { "label": "C", "text": "Wealthier nations have experienced all of the environmental costs of global production, while poorer nations have experienced none and have kept all of the profits", "isCorrect": false, "explanation": "This significantly mischaracterizes the actual argument, which is about uneven and disproportionate distribution, not a complete one-sided absence of costs for poorer nations." },
+      { "label": "D", "text": "This is not a real debate or concern that has been raised by anyone, including scientists, governments, international agencies or citizens of any country in the world", "isCorrect": false, "explanation": "This is, in fact, a real and significant debate and concern that has been raised and discussed extensively." }
     ],
     "explanation": "Critics argue that wealthier nations have often benefited from global production while environmental costs have been concentrated in poorer nations.",
     "conceptLink": "ap-world/unit-9-globalization/environment-and-globalization",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "What role have international environmental organizations and global environmental movements played in response to globalization-related environmental challenges?",
     "choices": [
-      { "label": "A", "text": "No role; these organizations have had no effect on environmental policy or awareness", "isCorrect": false, "explanation": "These organizations have had substantial, well-documented effects on environmental policy and awareness." },
-      { "label": "B", "text": "They have raised global awareness, advocated for policy changes, and sometimes influenced international agreements aimed at addressing environmental challenges", "isCorrect": true, "explanation": "International environmental organizations have raised awareness, advocated for policy, and influenced international agreements addressing environmental challenges." },
-      { "label": "C", "text": "They have exclusively opposed any environmental protection measures", "isCorrect": false, "explanation": "This significantly mischaracterizes these organizations' actual goals, which generally support, rather than oppose, environmental protection measures." },
-      { "label": "D", "text": "They have had no international dimension whatsoever", "isCorrect": false, "explanation": "These organizations and movements have had a very significant international dimension, connecting activists and efforts across many countries." }
+      { "label": "A", "text": "No role; these organizations have had no effect on environmental policy or public awareness anywhere in the world", "isCorrect": false, "explanation": "These organizations have had substantial, well-documented effects on environmental policy and awareness." },
+      { "label": "B", "text": "They raised global awareness, advocated for policy changes, and sometimes influenced international agreements on environmental challenges", "isCorrect": true, "explanation": "International environmental organizations have raised awareness, advocated for policy, and influenced international agreements addressing environmental challenges." },
+      { "label": "C", "text": "They have exclusively opposed any environmental protection measures and lobbied for fewer regulations", "isCorrect": false, "explanation": "This significantly mischaracterizes these organizations' actual goals, which generally support, rather than oppose, environmental protection measures." },
+      { "label": "D", "text": "They have had no international dimension whatsoever, operating only in the towns where they were founded", "isCorrect": false, "explanation": "These organizations and movements have had a very significant international dimension, connecting activists and efforts across many countries." }
     ],
     "explanation": "International environmental organizations have raised global awareness, advocated for policy changes, and influenced international agreements on environmental challenges.",
     "conceptLink": "ap-world/unit-9-globalization/environment-and-globalization",
@@ -390,10 +390,10 @@
     "difficulty": "medium",
     "stem": "What role did multinational corporations play in the process of economic globalization during this era?",
     "choices": [
-      { "label": "A", "text": "No role; multinational corporations had no connection to globalization", "isCorrect": false, "explanation": "Multinational corporations had a very significant, well-documented role in driving economic globalization." },
-      { "label": "B", "text": "They expanded operations across multiple countries, contributing to increased international trade, investment, and integrated global supply chains", "isCorrect": true, "explanation": "Multinational corporations expanded operations across many countries, driving increased international trade, investment, and integrated supply chains." },
+      { "label": "A", "text": "No role; multinational corporations had no connection to globalization or to international trade", "isCorrect": false, "explanation": "Multinational corporations had a very significant, well-documented role in driving economic globalization." },
+      { "label": "B", "text": "They expanded operations across several countries, increasing international trade, investment and integrated supply chains", "isCorrect": true, "explanation": "Multinational corporations expanded operations across many countries, driving increased international trade, investment, and integrated supply chains." },
       { "label": "C", "text": "They operated exclusively within a single country with no international operations", "isCorrect": false, "explanation": "By definition, multinational corporations operate across multiple countries, not exclusively within one." },
-      { "label": "D", "text": "They had no economic significance whatsoever", "isCorrect": false, "explanation": "Multinational corporations have had substantial, well-documented economic significance during this era." }
+      { "label": "D", "text": "They had no economic significance whatsoever, employing almost no workers in any country", "isCorrect": false, "explanation": "Multinational corporations have had substantial, well-documented economic significance during this era." }
     ],
     "explanation": "Multinational corporations expanded operations across multiple countries, driving increased international trade, investment, and integrated global supply chains.",
     "conceptLink": "ap-world/unit-9-globalization/economic-globalization",
@@ -406,10 +406,10 @@
     "difficulty": "medium",
     "stem": "International organizations like the World Trade Organization (WTO), established to help regulate and promote international trade, reflect what broader trend?",
     "choices": [
-      { "label": "A", "text": "A trend toward eliminating all international trade", "isCorrect": false, "explanation": "These organizations aimed to regulate and promote, not eliminate, international trade." },
-      { "label": "B", "text": "The increasing institutionalization and coordination of global economic relationships during the era of economic globalization", "isCorrect": true, "explanation": "Organizations like the WTO reflect the increasing institutionalization and coordination of global economic relationships during this era." },
-      { "label": "C", "text": "A trend with no connection to economic globalization", "isCorrect": false, "explanation": "These organizations have a very direct, significant connection to broader economic globalization trends." },
-      { "label": "D", "text": "A purely regional, non-global organizational effort", "isCorrect": false, "explanation": "Organizations like the WTO specifically aim for broad global and international coordination, not merely limited regional scope." }
+      { "label": "A", "text": "A trend toward eliminating all international trade, as members closed their borders", "isCorrect": false, "explanation": "These organizations aimed to regulate and promote, not eliminate, international trade." },
+      { "label": "B", "text": "The increasing institutionalization and coordination of global economic relationships during economic globalization", "isCorrect": true, "explanation": "Organizations like the WTO reflect the increasing institutionalization and coordination of global economic relationships during this era." },
+      { "label": "C", "text": "A trend with no connection to economic globalization, since it regulated only local markets", "isCorrect": false, "explanation": "These organizations have a very direct, significant connection to broader economic globalization trends." },
+      { "label": "D", "text": "A purely regional, non-global organizational effort limited to a few neighboring countries in one continent of the world", "isCorrect": false, "explanation": "Organizations like the WTO specifically aim for broad global and international coordination, not merely limited regional scope." }
     ],
     "explanation": "Organizations like the WTO reflect the increasing institutionalization and coordination of global economic relationships during the era of economic globalization.",
     "conceptLink": "ap-world/unit-9-globalization/economic-globalization",
@@ -422,10 +422,10 @@
     "difficulty": "hard",
     "stem": "How has economic globalization contributed to both economic growth and rising inequality concerns in various countries during this era?",
     "choices": [
-      { "label": "A", "text": "Economic globalization has had no effect on either economic growth or inequality", "isCorrect": false, "explanation": "Economic globalization has had very significant, well-documented effects on both economic growth and inequality patterns." },
-      { "label": "B", "text": "While economic globalization has contributed to overall global economic growth and integration, critics note it has also sometimes been associated with rising inequality within and between countries, as benefits and costs have been unevenly distributed", "isCorrect": true, "explanation": "Economic globalization has contributed to overall growth while also, according to critics, sometimes deepening inequality due to uneven distribution of benefits and costs." },
-      { "label": "C", "text": "Economic globalization has eliminated all forms of economic inequality worldwide", "isCorrect": false, "explanation": "This significantly overstates the actual outcome; inequality concerns have persisted and, in various analyses, worsened in certain contexts, rather than being eliminated." },
-      { "label": "D", "text": "Economic globalization has had no connection to economic growth", "isCorrect": false, "explanation": "Economic globalization has a very direct, significant connection to overall economic growth patterns." }
+      { "label": "A", "text": "Economic globalization has had no effect on either economic growth or inequality, since national economies remained separate from one another and unconnected to world markets", "isCorrect": false, "explanation": "Economic globalization has had very significant, well-documented effects on both economic growth and inequality patterns." },
+      { "label": "B", "text": "While economic globalization has contributed to global growth and integration, critics note it has also been associated with rising inequality within and between countries, as benefits and costs were unevenly distributed", "isCorrect": true, "explanation": "Economic globalization has contributed to overall growth while also, according to critics, sometimes deepening inequality due to uneven distribution of benefits and costs." },
+      { "label": "C", "text": "Economic globalization has eliminated all forms of economic inequality worldwide, because wages and living standards have become identical in every country", "isCorrect": false, "explanation": "This significantly overstates the actual outcome; inequality concerns have persisted and, in various analyses, worsened in certain contexts, rather than being eliminated." },
+      { "label": "D", "text": "Economic globalization has had no connection to economic growth, which has depended entirely on each country's own natural resources and climate", "isCorrect": false, "explanation": "Economic globalization has a very direct, significant connection to overall economic growth patterns." }
     ],
     "explanation": "Economic globalization has contributed to overall economic growth while also, according to critics, sometimes deepening inequality due to unevenly distributed benefits and costs.",
     "conceptLink": "ap-world/unit-9-globalization/economic-globalization",
@@ -438,10 +438,10 @@
     "difficulty": "medium",
     "stem": "What is \"offshoring\" or \"outsourcing,\" a practice associated with economic globalization?",
     "choices": [
-      { "label": "A", "text": "A practice of keeping all production exclusively within a company's home country", "isCorrect": false, "explanation": "Offshoring/outsourcing specifically involves moving operations to other countries, the opposite of keeping everything exclusively domestic." },
-      { "label": "B", "text": "The practice of relocating certain business operations or production processes to other countries, often to reduce labor costs", "isCorrect": true, "explanation": "Offshoring/outsourcing involves relocating business operations or production to other countries, often to take advantage of lower labor costs." },
-      { "label": "C", "text": "A practice with no connection to international trade", "isCorrect": false, "explanation": "This practice has a very direct, significant connection to international trade and global economic integration." },
-      { "label": "D", "text": "A ban on any international business operations", "isCorrect": false, "explanation": "This practice specifically involves international business operations, rather than banning them." }
+      { "label": "A", "text": "A practice of keeping all production exclusively within a company's home country, to protect domestic jobs", "isCorrect": false, "explanation": "Offshoring/outsourcing specifically involves moving operations to other countries, the opposite of keeping everything exclusively domestic." },
+      { "label": "B", "text": "The practice of relocating business operations or production to other countries, often to reduce labor costs", "isCorrect": true, "explanation": "Offshoring/outsourcing involves relocating business operations or production to other countries, often to take advantage of lower labor costs." },
+      { "label": "C", "text": "A practice with no connection to international trade, referring only to closing a business that has failed or gone bankrupt", "isCorrect": false, "explanation": "This practice has a very direct, significant connection to international trade and global economic integration." },
+      { "label": "D", "text": "A ban on any international business operations by companies in wealthy countries, imposed by the WTO", "isCorrect": false, "explanation": "This practice specifically involves international business operations, rather than banning them." }
     ],
     "explanation": "Offshoring/outsourcing involves relocating business operations or production to other countries, often to reduce labor costs.",
     "conceptLink": "ap-world/unit-9-globalization/economic-globalization",
@@ -454,10 +454,10 @@
     "difficulty": "medium",
     "stem": "How did international financial institutions, such as the International Monetary Fund (IMF) and World Bank, contribute to economic globalization during this era?",
     "choices": [
-      { "label": "A", "text": "They had no role or influence on the global economy", "isCorrect": false, "explanation": "These institutions have had substantial, well-documented roles and influence on the global economy." },
-      { "label": "B", "text": "They provided loans, financial assistance, and economic policy guidance to countries, influencing economic development and integration into the global economy", "isCorrect": true, "explanation": "The IMF and World Bank provided loans, financial assistance, and policy guidance, shaping economic development and integration into the global economy." },
-      { "label": "C", "text": "They exclusively opposed any international economic cooperation", "isCorrect": false, "explanation": "These institutions' fundamental purpose involves promoting, not opposing, various forms of international economic cooperation." },
-      { "label": "D", "text": "They had no connection to any developing nations' economies", "isCorrect": false, "explanation": "These institutions have had very significant, well-documented connections to developing nations' economies specifically." }
+      { "label": "A", "text": "They had no role or influence on the global economy, and no country ever borrowed from them or followed their advice on policy", "isCorrect": false, "explanation": "These institutions have had substantial, well-documented roles and influence on the global economy." },
+      { "label": "B", "text": "They provided loans, financial assistance and economic policy guidance to countries, influencing development and integration into the global economy", "isCorrect": true, "explanation": "The IMF and World Bank provided loans, financial assistance, and policy guidance, shaping economic development and integration into the global economy." },
+      { "label": "C", "text": "They exclusively opposed any international economic cooperation, urging countries to close their borders", "isCorrect": false, "explanation": "These institutions' fundamental purpose involves promoting, not opposing, various forms of international economic cooperation." },
+      { "label": "D", "text": "They had no connection to any developing nations' economies, which relied only on local savings", "isCorrect": false, "explanation": "These institutions have had very significant, well-documented connections to developing nations' economies specifically." }
     ],
     "explanation": "The IMF and World Bank provided loans, financial assistance, and policy guidance, shaping countries' economic development and integration into the global economy.",
     "conceptLink": "ap-world/unit-9-globalization/economic-globalization",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "Considering the various dimensions of globalization discussed in this unit (technological, cultural, environmental, and economic), what broader historical conclusion can be drawn about this era?",
     "choices": [
-      { "label": "A", "text": "Globalization has had minimal impact on world history", "isCorrect": false, "explanation": "Globalization has had transformative, far-reaching historical significance, not minimal impact." },
-      { "label": "B", "text": "Globalization represents a complex, multidimensional process that has significantly increased global interconnection across technology, culture, environment, and economics, with both benefits and challenges/critiques associated with these changes", "isCorrect": true, "explanation": "Globalization is best understood as a complex, multidimensional process with significant effects across technology, culture, environment, and economics, bringing both benefits and challenges." },
-      { "label": "C", "text": "Globalization has only affected a small, isolated group of countries with no broader significance", "isCorrect": false, "explanation": "Globalization has had substantial, well-documented effects across many countries and regions worldwide, not confined to a small isolated group." },
-      { "label": "D", "text": "Globalization has had no connection to any of the historical themes discussed throughout this course", "isCorrect": false, "explanation": "Globalization has very significant, well-documented connections to the broader historical themes of increasing global interconnection discussed throughout this course." }
+      { "label": "A", "text": "Globalization has had minimal impact on world history, which remains best explained by the local developments of each separate region and nation", "isCorrect": false, "explanation": "Globalization has had transformative, far-reaching historical significance, not minimal impact." },
+      { "label": "B", "text": "Globalization is a complex, multidimensional process that has greatly increased global interconnection across technology, culture, environment and economics, with both benefits and critiques", "isCorrect": true, "explanation": "Globalization is best understood as a complex, multidimensional process with significant effects across technology, culture, environment, and economics, bringing both benefits and challenges." },
+      { "label": "C", "text": "Globalization has only affected a small, isolated group of countries, with no broader significance for the rest of the world or for later historical developments", "isCorrect": false, "explanation": "Globalization has had substantial, well-documented effects across many countries and regions worldwide, not confined to a small isolated group." },
+      { "label": "D", "text": "Globalization has had no connection to any of the historical themes discussed throughout this course, which are all explained by earlier causes", "isCorrect": false, "explanation": "Globalization has very significant, well-documented connections to the broader historical themes of increasing global interconnection discussed throughout this course." }
     ],
     "explanation": "Globalization represents a complex, multidimensional process that has significantly increased global interconnection, with both benefits and challenges.",
     "conceptLink": "ap-world/unit-9-globalization/economic-globalization",
