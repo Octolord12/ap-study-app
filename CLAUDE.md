@@ -1756,4 +1756,9 @@ in app logic — updating them should be a data edit.
   `scratch-frqtype@example.com`: one real World History exam in the browser (60 items: 55 MCQ,
   3 short answer, 1 document-based, 1 long essay, labelled and listed in order on the results
   page), then deleted; all 12 table counts matched the baseline afterwards. With other students
-  using the app, compare counts per user, not just totals.
+  using the app, compare counts per user, not just totals. The forgot-password work used
+  `scratch_reset` / `scratch-reset@example.com` (2026-10-05) and was verified end to end in the browser against
+  the shared database: a second session made before the reset was signed out by it, the old password stopped
+  working and the new one worked, a same-minute repeat sent no second email, an unregistered address got the
+  identical page and no email, the link refused a second use, and the stored token was a 64-character hash.
+  Deleted afterwards (its reset row cascaded); every table count matched the baseline.
