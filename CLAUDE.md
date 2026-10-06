@@ -1681,4 +1681,8 @@ in app logic — updating them should be a data edit.
   the work finished. If that user ever appears in the list, it is leftover.
   The growth-features work used `scratch_phase2` / `scratch-phase2@example.com`
   the same way; deleted afterwards and row counts compared to a pre-test
-  baseline (identical).
+  baseline (identical). The exam-mix fix used `scratch_frqtype` /
+  `scratch-frqtype@example.com`: one real World History exam in the browser (60 items: 55 MCQ,
+  3 short answer, 1 document-based, 1 long essay, labelled and listed in order on the results
+  page), then deleted; all 12 table counts matched the baseline afterwards. With other students
+  using the app, compare counts per user, not just totals.
