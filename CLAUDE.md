@@ -630,6 +630,13 @@ when the seed would change it. The seed prints `approvals kept: N, reset because
 changed: M` per course. A file that says `reviewed: true` always wins. So editing a question
 and re-seeding sends it back for review, which is the point.
 
+**Review status (2026-10-05): the owner approved everything** in `/admin/review`: all 1,758
+items (1,575 questions + 183 free-response prompts), checked directly in the database
+afterwards (0 unreviewed, the About page reads "1,758 of 1,758 have been checked by a person").
+The JSON files still say `reviewed: false` (they are the authored state); the approval lives only
+in the database and survives re-seeds as described above. Anything new or edited starts
+unreviewed again, so the About page count will drop below 100% until it is approved.
+
 ### Polish and launch prep (Milestone 8, done)
 
 Before scoping this milestone, investigated the actual current state of each
@@ -849,8 +856,9 @@ a user choice. Contrast: every text pair is >= 5.6:1 in both modes.
   `settings`, `admin`, `teacher`). **There is deliberately no
   `app/loading.tsx`** -- see "Landing page renders finished HTML" below.
 - **Footer** (`site-footer.tsx`): trademark and non-affiliation notice
-  (confirmed by the owner), plus "may contain mistakes" (all content is still
-  `reviewed: false`, so this is true and protective), a "Report a mistake or send
+  (confirmed by the owner), plus "may contain mistakes" (still true and protective: the
+  questions are practice material not reviewed by College Board, and the owner's review in
+  `/admin/review` is a person's check, not a guarantee), a "Report a mistake or send
   a suggestion" mail link, and a Privacy link. See "Footer, contact and privacy".
 - **Copy rules**: plain, concrete, no em dashes, no invented numbers. Counts
   come from the database; the only hard-coded figures are the XP ranges and
@@ -1364,7 +1372,7 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 
 All four courses have one: 15 MCQs and 2 FRQs per unit in `questions/unit-N-hard.json` and
 `frqs/unit-N-hard.json`, ids `<course>-uN-mcq-31..45` and `-frq-4..5`, tagged
-`difficulty: "hard"`, all `reviewed: false`. Calc AB first (below), then CSA, World History
+`difficulty: "hard"`, authored `reviewed: false` (approved in the database since, see below). Calc AB first (below), then CSA, World History
 and Physics 1 (sections after it). Generators live in `scripts/content-authoring/<course>-hard/`
 (see its README); re-running one overwrites its output, so **edit the script, not the JSON**.
 
@@ -1395,7 +1403,7 @@ question id, attempt or history changed.
   real KaTeX pipeline with 0 errors and no raw LaTeX left visible. **Hand-written parts** (the
   explanation of why each wrong choice is wrong, and the FRQ rubrics and sample responses)
   were proofread but are not machine-checked; they are the likeliest place for a slip, which
-  is why the flag stays `reviewed: false` until a person approves them in `/admin/review`.
+  is why the files say `reviewed: false` and a person approves them in `/admin/review`.
 - **Editing**: re-running a script overwrites its output, so change the script, not the
   JSON. The owner judged the Calc AB difficulty and asked for the other three courses to
   follow (next sections).
@@ -1428,7 +1436,7 @@ after `super()`, overload versus override, `static` shared state, recursion call
   newlines. `$` is avoided in prompts (the content validator counts it as unclosed LaTeX even
   inside inline code).
 - **Not machine-checked**: the hand-written explanations of why each wrong choice is wrong and
-  the FRQ rubrics. Proofread, but `reviewed: false` until approved in `/admin/review`.
+  the FRQ rubrics. Proofread by the generator's author, then approved by the owner in `/admin/review`.
 
 ### Hard AP World History set
 
@@ -1438,7 +1446,7 @@ a **3-part SAQ on a passage** (3 points) and a **6-point LEQ** (thesis 1, contex
 evidence 2, analysis and reasoning 2). Sources are *original* passages with generic
 attributions, not quotations from real documents or from any College Board exam. **Historical facts cannot be machine-verified**; they were written from
 well-established, CED-level knowledge and kept to claims that are not disputed, but a human
-reviewer should check them (the sets are `reviewed: false`). These items are typed `SAQ`
+reviewer should check them (the owner has since approved them in `/admin/review`). These items are typed `SAQ`
 and `LEQ` (the generator helpers `saq()`/`leq()` set it), so exam simulations draw from them
 correctly (the pool is now 36 SAQs, 4 DBQs, 13 LEQs).
 
