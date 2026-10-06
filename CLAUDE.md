@@ -1476,9 +1476,12 @@ regenerating an `ap-world-hard` script** (it rewrites that file from scratch and
 the overlay is idempotent).
 - One factual slip was fixed on the way: `ap-world-u4-mcq-5` credited da Gama where the question is
   about Dias rounding the Cape (stem and explanation corrected).
-- **The edit resets the owner's approvals** for every changed question when World is next seeded (see
-  "Approvals survive a re-seed unless the content changed"), so after a seed the unit pages in
-  `/admin/review` need their "Approve all" buttons again. The 53 free-response prompts are unchanged.
+- **Seeded and pushed 2026-10-06** (`0a65b34`). The seed kept 91 approvals and reset 367 (the questions
+  whose text changed; see "Approvals survive a re-seed unless the content changed"), so the World unit
+  pages in `/admin/review` need their "Approve all" buttons again until the About page's "checked by a
+  person" count is back to 100%. The 53 free-response prompts are unchanged and stay approved. Checked
+  afterwards: all 405 database questions equal the files, and every per-user and per-table count matched
+  the pre-seed snapshot.
 
 ### Hard AP Physics 1 set
 
