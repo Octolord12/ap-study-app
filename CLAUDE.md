@@ -738,8 +738,8 @@ gotcha above is about), reading the seeded course/unit/question data,
 answering and submitting a quiz question, and the XP/badge/reward-toast path
 all confirmed working against the real production build and database. This
 created one real test account (`deploy-smoketest@example.com` / username
-`deploy_smoketest`) in the shared Neon database -- harmless, but worth
-knowing it's there if the user list ever looks unfamiliar.
+`deploy_smoketest`) in the shared Neon database. It and the other early test
+accounts were deleted on 2026-10-05 (see "Test accounts" in known issues).
 
 ## Visual design system (post-launch overhaul)
 
@@ -1762,3 +1762,11 @@ in app logic — updating them should be a data edit.
   working and the new one worked, a same-minute repeat sent no second email, an unregistered address got the
   identical page and no email, the link refused a second use, and the stored token was a 64-character hash.
   Deleted afterwards (its reset row cascaded); every table count matched the baseline.
+  **Old test accounts deleted 2026-10-05** (owner's request): `viraj_test`, `alex_test`,
+  `deploy_smoketest`, `latex_verify_tmp`, `finalscopecheck` (all `@example.com` students). Checked first
+  that nothing a real student owned hung off them: the one class they owned ("Period 3 AP CSA") had only
+  those accounts as members, and their one friendship was between two of them. The delete removed 5 users,
+  1 class, 2 memberships, 1 friendship and their 26 answers, 3 free-response attempts, 17 XP events, 3 exams,
+  3 enrollments, 1 boss result, 1 bookmark, 12 review states and 7 badges; content tables were untouched, and
+  every per-user count for the four real accounts (`viraj1`, `brian`, `Arjun1`, `queenshaheen`) was identical
+  before and after. Anyone not listed here that shows up as an `@example.com` user is leftover.
