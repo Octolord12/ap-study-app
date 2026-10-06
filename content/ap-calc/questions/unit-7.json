@@ -7,9 +7,9 @@
     "stem": "What is a \"differential equation\"?",
     "choices": [
       { "label": "A", "text": "An equation that involves a function and one or more of its derivatives", "isCorrect": true, "explanation": "A differential equation relates a function to one or more of its derivatives." },
-      { "label": "B", "text": "An equation with no variables at all", "isCorrect": false, "explanation": "Differential equations specifically involve functions/derivatives, not an absence of variables." },
-      { "label": "C", "text": "An equation that only involves constants", "isCorrect": false, "explanation": "Differential equations involve variable functions and their rates of change, not merely constants." },
-      { "label": "D", "text": "An equation describing a straight line only", "isCorrect": false, "explanation": "Differential equations can describe a vast range of relationships, not exclusively straight lines." }
+      { "label": "B", "text": "An equation with no variables at all, only numbers and operations", "isCorrect": false, "explanation": "Differential equations specifically involve functions/derivatives, not an absence of variables." },
+      { "label": "C", "text": "An equation that only involves constants and arithmetic, with no unknown function in it", "isCorrect": false, "explanation": "Differential equations involve variable functions and their rates of change, not merely constants." },
+      { "label": "D", "text": "An equation describing a straight line only, like y = mx + b with a constant slope", "isCorrect": false, "explanation": "Differential equations can describe a vast range of relationships, not exclusively straight lines." }
     ],
     "explanation": "A differential equation involves a function and one or more of its derivatives.",
     "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
@@ -23,9 +23,9 @@
     "stem": "What does $dy/dx = ky$ (where k is a constant) model, in general terms?",
     "choices": [
       { "label": "A", "text": "A quantity y whose rate of change is proportional to its current value", "isCorrect": true, "explanation": "This equation states that the rate of change of y is directly proportional to y itself." },
-      { "label": "B", "text": "A quantity that never changes", "isCorrect": false, "explanation": "dy/dx=ky describes ACTIVE change (proportional to y), not a quantity that stays constant." },
-      { "label": "C", "text": "A quantity whose rate of change is constant, regardless of its value", "isCorrect": false, "explanation": "This describes dy/dx=k (a constant rate), different from dy/dx=ky (a rate depending on y's current value)." },
-      { "label": "D", "text": "A quantity with no relationship between its rate and its value", "isCorrect": false, "explanation": "This equation specifically establishes a direct, proportional relationship between the rate of change and the current value." }
+      { "label": "B", "text": "A quantity that never changes over time, whatever its initial value", "isCorrect": false, "explanation": "dy/dx=ky describes ACTIVE change (proportional to y), not a quantity that stays constant." },
+      { "label": "C", "text": "A quantity whose rate of change is constant, regardless of its current value or the time", "isCorrect": false, "explanation": "This describes dy/dx=k (a constant rate), different from dy/dx=ky (a rate depending on y's current value)." },
+      { "label": "D", "text": "A quantity with no relationship between its rate and its value at any moment in time", "isCorrect": false, "explanation": "This equation specifically establishes a direct, proportional relationship between the rate of change and the current value." }
     ],
     "explanation": "$dy/dx=ky$ models a quantity whose rate of change is proportional to its current value.",
     "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
@@ -54,10 +54,10 @@
     "difficulty": "hard",
     "stem": "What is the \"order\" of a differential equation, and what order is $dy/dx + 3y = x^2$?",
     "choices": [
-      { "label": "A", "text": "The order is determined by the highest derivative present; this equation, involving only dy/dx (a first derivative), is first-order", "isCorrect": true, "explanation": "The order of a differential equation is the highest-order derivative appearing in it; here that's dy/dx, so it's first-order." },
-      { "label": "B", "text": "The order is the highest power the variable y is raised to; this is order 2 (from x²)", "isCorrect": false, "explanation": "\"Order\" specifically refers to the HIGHEST DERIVATIVE present, not the highest power of y or x." },
-      { "label": "C", "text": "The order refers to how many terms are in the equation; this is order 3", "isCorrect": false, "explanation": "\"Order\" doesn't refer to counting terms; it specifically refers to the highest derivative present." },
-      { "label": "D", "text": "There is no such thing as the \"order\" of a differential equation", "isCorrect": false, "explanation": "\"Order\" is indeed a well-defined, standard classification concept for differential equations." }
+      { "label": "A", "text": "The order is the highest derivative present; this equation has only dy/dx (a first derivative), so it is first-order", "isCorrect": true, "explanation": "The order of a differential equation is the highest-order derivative appearing in it; here that's dy/dx, so it's first-order." },
+      { "label": "B", "text": "The order is the highest power the variable y is raised to; this equation is order 2, because of the x² term in the equation", "isCorrect": false, "explanation": "\"Order\" specifically refers to the HIGHEST DERIVATIVE present, not the highest power of y or x." },
+      { "label": "C", "text": "The order refers to how many terms are in the equation; this one has three terms, so it is order 3", "isCorrect": false, "explanation": "\"Order\" doesn't refer to counting terms; it specifically refers to the highest derivative present." },
+      { "label": "D", "text": "There is no such thing as the \"order\" of a differential equation, since all of them are alike", "isCorrect": false, "explanation": "\"Order\" is indeed a well-defined, standard classification concept for differential equations." }
     ],
     "explanation": "The order is the highest derivative present; this equation is first-order since it only involves dy/dx.",
     "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
@@ -70,10 +70,10 @@
     "difficulty": "medium",
     "stem": "Why are differential equations useful for modeling real-world phenomena (such as population growth, radioactive decay, or cooling)?",
     "choices": [
-      { "label": "A", "text": "They can describe how a quantity's rate of change relates to the quantity itself or other variables, capturing dynamic processes over time", "isCorrect": true, "explanation": "Differential equations excel at capturing how quantities change dynamically in relation to themselves or other variables." },
-      { "label": "B", "text": "They can only describe static, unchanging quantities", "isCorrect": false, "explanation": "Differential equations are specifically useful for describing DYNAMIC, CHANGING quantities, not static ones." },
-      { "label": "C", "text": "They have no real-world applications", "isCorrect": false, "explanation": "Differential equations have extensive, well-documented real-world applications across many fields." },
-      { "label": "D", "text": "They only apply to purely abstract mathematical concepts with no connection to reality", "isCorrect": false, "explanation": "Differential equations are widely used to model real, concrete physical/biological/economic phenomena." }
+      { "label": "A", "text": "They describe how a quantity's rate of change relates to the quantity itself or other variables, capturing dynamic processes over time", "isCorrect": true, "explanation": "Differential equations excel at capturing how quantities change dynamically in relation to themselves or other variables." },
+      { "label": "B", "text": "They can only describe static, unchanging quantities, never anything that varies over time or responds to its surroundings or to any outside influence", "isCorrect": false, "explanation": "Differential equations are specifically useful for describing DYNAMIC, CHANGING quantities, not static ones." },
+      { "label": "C", "text": "They have no real-world applications, since every real process is modeled by a plain formula", "isCorrect": false, "explanation": "Differential equations have extensive, well-documented real-world applications across many fields." },
+      { "label": "D", "text": "They only apply to purely abstract mathematical concepts with no connection to reality or to any physical process", "isCorrect": false, "explanation": "Differential equations are widely used to model real, concrete physical/biological/economic phenomena." }
     ],
     "explanation": "Differential equations describe how a quantity's rate of change relates to the quantity itself, capturing dynamic real-world processes.",
     "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "What is meant by a \"solution\" to a differential equation?",
     "choices": [
-      { "label": "A", "text": "A function that satisfies the differential equation when substituted in (along with its derivative(s))", "isCorrect": true, "explanation": "A solution is a function that, along with its derivatives, makes the differential equation true." },
-      { "label": "B", "text": "A single specific numerical value", "isCorrect": false, "explanation": "A solution to a differential equation is generally a FUNCTION, not a single specific numerical value." },
-      { "label": "C", "text": "A graph with no mathematical meaning", "isCorrect": false, "explanation": "While solutions CAN be represented graphically, the solution itself is a meaningful mathematical function." },
-      { "label": "D", "text": "An equation with no y or x terms at all", "isCorrect": false, "explanation": "This doesn't describe a meaningful mathematical solution at all." }
+      { "label": "A", "text": "A function that satisfies the differential equation when it and its derivatives are substituted in", "isCorrect": true, "explanation": "A solution is a function that, along with its derivatives, makes the differential equation true." },
+      { "label": "B", "text": "A single specific numerical value of x for which both sides of the equation are equal at one particular input", "isCorrect": false, "explanation": "A solution to a differential equation is generally a FUNCTION, not a single specific numerical value." },
+      { "label": "C", "text": "A graph with no mathematical meaning, drawn only to illustrate the equation's general shape", "isCorrect": false, "explanation": "While solutions CAN be represented graphically, the solution itself is a meaningful mathematical function." },
+      { "label": "D", "text": "An equation with no y or x terms at all, obtained by cancelling every variable from both sides and leaving only constants behind", "isCorrect": false, "explanation": "This doesn't describe a meaningful mathematical solution at all." }
     ],
     "explanation": "A solution to a differential equation is a function that satisfies the equation when substituted in.",
     "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
@@ -102,10 +102,10 @@
     "difficulty": "medium",
     "stem": "What distinguishes a \"general solution\" from a \"particular solution\" to a differential equation?",
     "choices": [
-      { "label": "A", "text": "A general solution includes an arbitrary constant (like +C), while a particular solution has a specific value of that constant determined by an initial condition", "isCorrect": true, "explanation": "The general solution represents a whole family of solutions; a particular solution is one specific member of that family." },
-      { "label": "B", "text": "They are always exactly identical", "isCorrect": false, "explanation": "A general solution and a particular solution are NOT always identical; the particular solution is a specific case of the general family." },
-      { "label": "C", "text": "A particular solution never satisfies the differential equation", "isCorrect": false, "explanation": "A particular solution absolutely DOES satisfy the differential equation; it's one specific member of the general solution family." },
-      { "label": "D", "text": "A general solution can never be found", "isCorrect": false, "explanation": "General solutions CAN typically be found for many differential equations, especially the types covered in this course." }
+      { "label": "A", "text": "A general solution includes an arbitrary constant (like +C), while a particular solution fixes that constant using an initial condition", "isCorrect": true, "explanation": "The general solution represents a whole family of solutions; a particular solution is one specific member of that family." },
+      { "label": "B", "text": "They are always exactly identical, differing only in the notation used to write the constant of integration", "isCorrect": false, "explanation": "A general solution and a particular solution are NOT always identical; the particular solution is a specific case of the general family." },
+      { "label": "C", "text": "A particular solution never satisfies the differential equation, so it is only an approximation of the general one and never an exact function", "isCorrect": false, "explanation": "A particular solution absolutely DOES satisfy the differential equation; it's one specific member of the general solution family." },
+      { "label": "D", "text": "A general solution can never be found, while a particular solution is always easy to compute from the equation", "isCorrect": false, "explanation": "General solutions CAN typically be found for many differential equations, especially the types covered in this course." }
     ],
     "explanation": "A general solution includes an arbitrary constant, while a particular solution has that constant fixed by an initial condition.",
     "conceptLink": "ap-calc/unit-7-differential-equations/modeling-with-differential-equations",
@@ -119,9 +119,9 @@
     "stem": "What is a \"slope field\" (or \"direction field\") used for?",
     "choices": [
       { "label": "A", "text": "To visually represent the slope of solutions to a differential equation at various points in the plane", "isCorrect": true, "explanation": "A slope field shows small line segments indicating the slope of solution curves at many points." },
-      { "label": "B", "text": "To calculate exact numerical solutions with perfect precision", "isCorrect": false, "explanation": "Slope fields provide a VISUAL, qualitative representation, not a method for calculating exact numerical solutions." },
-      { "label": "C", "text": "To find the antiderivative of a function", "isCorrect": false, "explanation": "Antiderivatives are a separate, unrelated concept from slope fields." },
-      { "label": "D", "text": "To graph a single specific function with no connection to differential equations", "isCorrect": false, "explanation": "Slope fields are directly and specifically connected to visualizing solutions of differential equations." }
+      { "label": "B", "text": "To calculate exact numerical solutions with perfect precision at every point", "isCorrect": false, "explanation": "Slope fields provide a VISUAL, qualitative representation, not a method for calculating exact numerical solutions." },
+      { "label": "C", "text": "To find the antiderivative of a function by reading off its slope", "isCorrect": false, "explanation": "Antiderivatives are a separate, unrelated concept from slope fields." },
+      { "label": "D", "text": "To graph a single specific function with no connection to differential equations, such as a polynomial", "isCorrect": false, "explanation": "Slope fields are directly and specifically connected to visualizing solutions of differential equations." }
     ],
     "explanation": "A slope field visually represents the slope of solutions to a differential equation at various points.",
     "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
@@ -135,9 +135,9 @@
     "stem": "In a slope field for $dy/dx = f(x,y)$, what does each small line segment drawn at a point $(x,y)$ represent?",
     "choices": [
       { "label": "A", "text": "The slope of the solution curve passing through that particular point, calculated as f(x,y)", "isCorrect": true, "explanation": "Each segment shows the local slope of a solution curve at that specific point." },
-      { "label": "B", "text": "The y-intercept of the solution", "isCorrect": false, "explanation": "Each segment represents a LOCAL SLOPE at that specific point, not a y-intercept." },
-      { "label": "C", "text": "The x-intercept of the solution", "isCorrect": false, "explanation": "This doesn't represent an x-intercept; it represents the local slope value." },
-      { "label": "D", "text": "A random, arbitrary slope with no connection to the differential equation", "isCorrect": false, "explanation": "Each segment's slope is specifically determined by evaluating f(x,y) at that point, not randomly assigned." }
+      { "label": "B", "text": "The y-intercept of the solution curve that passes through the point (x,y)", "isCorrect": false, "explanation": "Each segment represents a LOCAL SLOPE at that specific point, not a y-intercept." },
+      { "label": "C", "text": "The x-intercept of the solution curve that passes through the point (x,y)", "isCorrect": false, "explanation": "This doesn't represent an x-intercept; it represents the local slope value." },
+      { "label": "D", "text": "A random, arbitrary slope with no connection to the differential equation or to the solution curve", "isCorrect": false, "explanation": "Each segment's slope is specifically determined by evaluating f(x,y) at that point, not randomly assigned." }
     ],
     "explanation": "Each line segment represents the local slope f(x,y) of the solution curve at that point.",
     "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
@@ -151,9 +151,9 @@
     "stem": "For the differential equation $dy/dx = x$, what would the slope field segments look like at points where x=0?",
     "choices": [
       { "label": "A", "text": "Horizontal segments (slope = 0), since dy/dx = 0 when x = 0", "isCorrect": true, "explanation": "Substituting x=0 into dy/dx=x gives a slope of 0, meaning horizontal segments." },
-      { "label": "B", "text": "Vertical segments (undefined slope)", "isCorrect": false, "explanation": "dy/dx=x evaluated at x=0 gives 0, a well-defined (horizontal) slope, not an undefined vertical one." },
-      { "label": "C", "text": "Segments with a slope of 1", "isCorrect": false, "explanation": "dy/dx=x at x=0 specifically gives 0, not 1." },
-      { "label": "D", "text": "Segments with a slope of -1", "isCorrect": false, "explanation": "dy/dx=x at x=0 specifically gives 0, not -1." }
+      { "label": "B", "text": "Vertical segments (undefined slope), since the slope blows up", "isCorrect": false, "explanation": "dy/dx=x evaluated at x=0 gives 0, a well-defined (horizontal) slope, not an undefined vertical one." },
+      { "label": "C", "text": "Segments with a slope of 1, since dy/dx = 1 there along the line x=0", "isCorrect": false, "explanation": "dy/dx=x at x=0 specifically gives 0, not 1." },
+      { "label": "D", "text": "Segments with a slope of -1, since dy/dx = -1 there", "isCorrect": false, "explanation": "dy/dx=x at x=0 specifically gives 0, not -1." }
     ],
     "explanation": "At x=0, dy/dx=0, so the slope field segments would be horizontal.",
     "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
@@ -167,9 +167,9 @@
     "stem": "For the differential equation $dy/dx = y$, what pattern would you observe in the slope field as y increases (for y>0)?",
     "choices": [
       { "label": "A", "text": "The slopes become steeper (larger positive values) as y increases, since dy/dx = y grows with y", "isCorrect": true, "explanation": "Since the slope equals y itself, larger y values directly produce steeper slopes." },
-      { "label": "B", "text": "The slopes stay exactly the same everywhere, regardless of y", "isCorrect": false, "explanation": "The slopes DO change with y in this particular differential equation, rather than staying constant everywhere." },
-      { "label": "C", "text": "The slopes become flatter (closer to zero) as y increases", "isCorrect": false, "explanation": "This is the OPPOSITE of the actual pattern; slopes get STEEPER (not flatter) as y grows larger for y>0." },
-      { "label": "D", "text": "The slopes become negative as y increases", "isCorrect": false, "explanation": "For y>0, dy/dx=y remains POSITIVE (not negative), since y itself is positive in this scenario." }
+      { "label": "B", "text": "The slopes stay exactly the same everywhere, regardless of y, since the slope depends only on x", "isCorrect": false, "explanation": "The slopes DO change with y in this particular differential equation, rather than staying constant everywhere." },
+      { "label": "C", "text": "The slopes become flatter (closer to zero) as y increases, since the rate falls with y", "isCorrect": false, "explanation": "This is the OPPOSITE of the actual pattern; slopes get STEEPER (not flatter) as y grows larger for y>0." },
+      { "label": "D", "text": "The slopes become negative as y increases, since the solution curves bend downward toward the axis", "isCorrect": false, "explanation": "For y>0, dy/dx=y remains POSITIVE (not negative), since y itself is positive in this scenario." }
     ],
     "explanation": "Since dy/dx=y, slopes become steeper as y increases for y>0.",
     "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
@@ -182,10 +182,10 @@
     "difficulty": "medium",
     "stem": "How can a slope field help you sketch an approximate solution curve to a differential equation, given a specific initial point?",
     "choices": [
-      { "label": "A", "text": "By following the direction indicated by the line segments starting from the initial point, tracing a curve that stays tangent to the local slopes throughout", "isCorrect": true, "explanation": "Following the slope segments from the initial point produces an approximate solution curve tangent to the field throughout." },
-      { "label": "B", "text": "Slope fields cannot help sketch solution curves at all", "isCorrect": false, "explanation": "Slope fields are specifically a very useful, standard visual tool for sketching approximate solution curves." },
-      { "label": "C", "text": "By ignoring the initial point entirely and drawing any curve", "isCorrect": false, "explanation": "The initial point is essential; the solution curve must specifically pass through this given starting point." },
-      { "label": "D", "text": "By only looking at segments far away from the initial point", "isCorrect": false, "explanation": "The curve should be traced by following NEARBY segments consistently from the starting point, not segments far removed from it." }
+      { "label": "A", "text": "By following the direction of the segments from the initial point, tracing a curve that stays tangent to the local slopes throughout", "isCorrect": true, "explanation": "Following the slope segments from the initial point produces an approximate solution curve tangent to the field throughout." },
+      { "label": "B", "text": "Slope fields cannot help sketch solution curves at all, since they only show isolated segments that never connect into a curve, so no solution can be sketched from them", "isCorrect": false, "explanation": "Slope fields are specifically a very useful, standard visual tool for sketching approximate solution curves." },
+      { "label": "C", "text": "By ignoring the initial point entirely and drawing any curve that looks smooth", "isCorrect": false, "explanation": "The initial point is essential; the solution curve must specifically pass through this given starting point." },
+      { "label": "D", "text": "By only looking at segments far away from the initial point, where the field is simplest", "isCorrect": false, "explanation": "The curve should be traced by following NEARBY segments consistently from the starting point, not segments far removed from it." }
     ],
     "explanation": "A solution curve is sketched by following the slope field segments starting from the given initial point.",
     "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
@@ -199,9 +199,9 @@
     "stem": "What can slope fields reveal about a differential equation's behavior, even without solving it explicitly (i.e., without finding a formula)?",
     "choices": [
       { "label": "A", "text": "Qualitative behavior of solutions, such as whether they increase, decrease, approach certain values, or exhibit other patterns", "isCorrect": true, "explanation": "Slope fields provide valuable qualitative insight into how solutions behave, without needing an explicit formula." },
-      { "label": "B", "text": "The exact numerical value of any specific solution at any point, with complete precision", "isCorrect": false, "explanation": "Slope fields provide qualitative, visual insight, not exact numerical precision for a specific solution's value." },
-      { "label": "C", "text": "Nothing useful; slope fields provide no meaningful insight", "isCorrect": false, "explanation": "Slope fields DO provide meaningful, useful qualitative insight into a differential equation's behavior." },
-      { "label": "D", "text": "Only the color of the resulting graph", "isCorrect": false, "explanation": "Slope fields are mathematical diagrams that reveal actual behavioral information, not merely decorative colors." }
+      { "label": "B", "text": "The exact numerical value of any specific solution at any point, with complete precision and no approximation of any kind, even for equations with no formula", "isCorrect": false, "explanation": "Slope fields provide qualitative, visual insight, not exact numerical precision for a specific solution's value." },
+      { "label": "C", "text": "Nothing useful; slope fields provide no meaningful insight about any differential equation", "isCorrect": false, "explanation": "Slope fields DO provide meaningful, useful qualitative insight into a differential equation's behavior." },
+      { "label": "D", "text": "Only the color of the resulting graph and its overall shading", "isCorrect": false, "explanation": "Slope fields are mathematical diagrams that reveal actual behavioral information, not merely decorative colors." }
     ],
     "explanation": "Slope fields reveal qualitative behavior of solutions without requiring an explicit formula.",
     "conceptLink": "ap-calc/unit-7-differential-equations/slope-fields",
@@ -214,10 +214,10 @@
     "difficulty": "easy",
     "stem": "What is the general strategy behind \"separation of variables\" for solving a differential equation?",
     "choices": [
-      { "label": "A", "text": "Rearranging the equation so all y-terms (with dy) are on one side and all x-terms (with dx) are on the other, then integrating both sides", "isCorrect": true, "explanation": "This is the core technique of separation of variables." },
-      { "label": "B", "text": "Never separating any terms at all", "isCorrect": false, "explanation": "Separating the terms is precisely the core strategy of this method, not avoiding separation." },
-      { "label": "C", "text": "Immediately guessing a solution with no algebraic work", "isCorrect": false, "explanation": "This method involves careful, systematic algebraic rearrangement and integration, not simply guessing." },
-      { "label": "D", "text": "Setting all variables equal to zero", "isCorrect": false, "explanation": "Setting variables to zero doesn't represent the actual, meaningful algebraic process involved in this technique." }
+      { "label": "A", "text": "Rearranging so all y-terms (with dy) are on one side and all x-terms (with dx) are on the other, then integrating both sides", "isCorrect": true, "explanation": "This is the core technique of separation of variables." },
+      { "label": "B", "text": "Never separating any terms at all, and integrating the whole equation in one step with respect to x, then solving for the constant at the end of the process", "isCorrect": false, "explanation": "Separating the terms is precisely the core strategy of this method, not avoiding separation." },
+      { "label": "C", "text": "Immediately guessing a solution with no algebraic work, then checking it by substitution", "isCorrect": false, "explanation": "This method involves careful, systematic algebraic rearrangement and integration, not simply guessing." },
+      { "label": "D", "text": "Setting all variables equal to zero and solving for the constant that remains", "isCorrect": false, "explanation": "Setting variables to zero doesn't represent the actual, meaningful algebraic process involved in this technique." }
     ],
     "explanation": "Separation of variables rearranges the equation so y-terms and x-terms are separated, then integrates both sides.",
     "conceptLink": "ap-calc/unit-7-differential-equations/separation-of-variables",
@@ -295,9 +295,9 @@
     "stem": "What condition must a differential equation $dy/dx = f(x,y)$ satisfy for the \"separation of variables\" technique to be applicable?",
     "choices": [
       { "label": "A", "text": "f(x,y) must be expressible as a product (or quotient) of a function of x alone and a function of y alone", "isCorrect": true, "explanation": "This structural condition is what allows the variables to be algebraically separated onto opposite sides." },
-      { "label": "B", "text": "f(x,y) must always be a constant", "isCorrect": false, "explanation": "f(x,y) being constant is a very restrictive special case, not the general condition required for this technique." },
-      { "label": "C", "text": "The equation must have no y term at all", "isCorrect": false, "explanation": "Many separable equations DO include y terms (like dy/dx=y or dy/dx=x/y); the key requirement is how x and y terms combine." },
-      { "label": "D", "text": "Separation of variables works for absolutely any differential equation, with no restrictions", "isCorrect": false, "explanation": "Separation of variables requires this particular structural condition; it is NOT applicable to every possible differential equation." }
+      { "label": "B", "text": "f(x,y) must always be a constant, so the right-hand side contains neither x nor y at all", "isCorrect": false, "explanation": "f(x,y) being constant is a very restrictive special case, not the general condition required for this technique." },
+      { "label": "C", "text": "The equation must have no y term at all, so that only x remains on the right-hand side", "isCorrect": false, "explanation": "Many separable equations DO include y terms (like dy/dx=y or dy/dx=x/y); the key requirement is how x and y terms combine." },
+      { "label": "D", "text": "Separation of variables works for absolutely any differential equation, with no restrictions, which makes the technique a universal method", "isCorrect": false, "explanation": "Separation of variables requires this particular structural condition; it is NOT applicable to every possible differential equation." }
     ],
     "explanation": "Separation of variables requires f(x,y) to be expressible as a product/quotient of functions of x alone and y alone.",
     "conceptLink": "ap-calc/unit-7-differential-equations/separation-of-variables",
@@ -311,9 +311,9 @@
     "stem": "After separating variables and integrating both sides of a differential equation, what is typically the next step to find the specific solution (given an initial condition)?",
     "choices": [
       { "label": "A", "text": "Substitute the initial condition's x and y values into the general solution to solve for the constant C", "isCorrect": true, "explanation": "This substitution determines the specific value of C, yielding the particular solution." },
-      { "label": "B", "text": "Ignore the initial condition entirely", "isCorrect": false, "explanation": "The initial condition is essential; it's specifically used to determine the exact particular solution from the general family." },
-      { "label": "C", "text": "Immediately conclude no solution exists", "isCorrect": false, "explanation": "A valid particular solution generally CAN be found using the given initial condition and this substitution process." },
-      { "label": "D", "text": "Multiply both sides by zero", "isCorrect": false, "explanation": "This doesn't represent any meaningful step in solving these problems." }
+      { "label": "B", "text": "Ignore the initial condition entirely, since the general solution is already complete", "isCorrect": false, "explanation": "The initial condition is essential; it's specifically used to determine the exact particular solution from the general family." },
+      { "label": "C", "text": "Immediately conclude no solution exists, since the initial condition has not yet been used in the integration", "isCorrect": false, "explanation": "A valid particular solution generally CAN be found using the given initial condition and this substitution process." },
+      { "label": "D", "text": "Multiply both sides by zero to remove the constant from the equation", "isCorrect": false, "explanation": "This doesn't represent any meaningful step in solving these problems." }
     ],
     "explanation": "Substituting the initial condition into the general solution determines the constant C, yielding the particular solution.",
     "conceptLink": "ap-calc/unit-7-differential-equations/separation-of-variables",
@@ -454,10 +454,10 @@
     "difficulty": "medium",
     "stem": "In Newton's Law of Cooling, $dT/dt = -k(T-T_a)$, why is there a negative sign in front of k (assuming k>0)?",
     "choices": [
-      { "label": "A", "text": "Because if T > T_a (object warmer than surroundings), the object should be COOLING DOWN (T decreasing), requiring a negative rate of change", "isCorrect": true, "explanation": "The negative sign ensures the temperature moves toward, not away from, the ambient temperature." },
-      { "label": "B", "text": "The negative sign has no particular meaning or purpose", "isCorrect": false, "explanation": "The negative sign has a very specific, meaningful purpose: ensuring the temperature moves toward the ambient temperature." },
-      { "label": "C", "text": "Because temperature can never be positive", "isCorrect": false, "explanation": "Temperature values can certainly be positive in most practical unit systems; this doesn't relate to the reason for the negative sign." },
-      { "label": "D", "text": "Because k must always be negative for this to make sense", "isCorrect": false, "explanation": "The problem specifies k as a POSITIVE constant; the negative sign is placed explicitly in front of it, rather than requiring k itself to be negative." }
+      { "label": "A", "text": "Because if T > T_a (object warmer than surroundings), the object should be COOLING (T decreasing), requiring a negative rate", "isCorrect": true, "explanation": "The negative sign ensures the temperature moves toward, not away from, the ambient temperature." },
+      { "label": "B", "text": "The negative sign has no particular meaning or purpose; it is only a convention of notation that could be dropped without changing the meaning of the equation", "isCorrect": false, "explanation": "The negative sign has a very specific, meaningful purpose: ensuring the temperature moves toward the ambient temperature." },
+      { "label": "C", "text": "Because temperature can never be positive in this model, so the rate must carry a minus sign to compensate", "isCorrect": false, "explanation": "Temperature values can certainly be positive in most practical unit systems; this doesn't relate to the reason for the negative sign." },
+      { "label": "D", "text": "Because k must always be negative for this to make sense, so the minus sign is part of the constant", "isCorrect": false, "explanation": "The problem specifies k as a POSITIVE constant; the negative sign is placed explicitly in front of it, rather than requiring k itself to be negative." }
     ],
     "explanation": "The negative sign ensures that if T > T_a, the temperature decreases (cools) toward T_a, matching physical intuition.",
     "conceptLink": "ap-calc/unit-7-differential-equations/exponential-growth-and-decay",

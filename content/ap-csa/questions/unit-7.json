@@ -38,10 +38,10 @@
     "difficulty": "medium",
     "stem": "Why can't an ArrayList store primitive types like int directly?",
     "choices": [
-      { "label": "A", "text": "ArrayLists can only ever be empty", "isCorrect": false, "explanation": "ArrayLists can certainly hold elements; this doesn't explain the primitive/object distinction." },
-      { "label": "B", "text": "ArrayLists store objects, so primitives are automatically autoboxed into their wrapper class (e.g. int becomes Integer)", "isCorrect": true, "explanation": "ArrayList is a generic class designed to hold objects, so Java automatically converts primitives to their wrapper type." },
-      { "label": "C", "text": "It's not true; ArrayLists store primitives directly with no conversion", "isCorrect": false, "explanation": "ArrayLists genuinely only store objects; primitives are converted (autoboxed) into wrapper objects." },
-      { "label": "D", "text": "ArrayLists are only for Strings", "isCorrect": false, "explanation": "ArrayLists can hold any object type, not just Strings." }
+      { "label": "A", "text": "ArrayLists can only ever be empty, and so no type of value can ever be stored in one", "isCorrect": false, "explanation": "ArrayLists can certainly hold elements; this doesn't explain the primitive/object distinction." },
+      { "label": "B", "text": "ArrayLists store objects, so primitives are autoboxed into their wrapper class (e.g. int becomes Integer)", "isCorrect": true, "explanation": "ArrayList is a generic class designed to hold objects, so Java automatically converts primitives to their wrapper type." },
+      { "label": "C", "text": "It's not true; ArrayLists store primitives directly with no conversion, as arrays do", "isCorrect": false, "explanation": "ArrayLists genuinely only store objects; primitives are converted (autoboxed) into wrapper objects." },
+      { "label": "D", "text": "ArrayLists are only for Strings, so int values cannot be stored in them, though other objects can", "isCorrect": false, "explanation": "ArrayLists can hold any object type, not just Strings." }
     ],
     "explanation": "`ArrayList` only stores objects, so primitives like `int` are autoboxed into their wrapper class (`Integer`).",
     "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
@@ -54,10 +54,10 @@
     "difficulty": "medium",
     "stem": "What does `list.size()` return for an ArrayList?",
     "choices": [
-      { "label": "A", "text": "The maximum capacity of the list", "isCorrect": false, "explanation": "ArrayLists grow dynamically and don't expose a fixed \"capacity\" this way; size() reflects actual contents." },
+      { "label": "A", "text": "The maximum capacity of the list, before it must grow", "isCorrect": false, "explanation": "ArrayLists grow dynamically and don't expose a fixed \"capacity\" this way; size() reflects actual contents." },
       { "label": "B", "text": "The number of elements currently in the list", "isCorrect": true, "explanation": "size() returns a count of how many elements are actually stored in the list right now." },
-      { "label": "C", "text": "The index of the last element", "isCorrect": false, "explanation": "size() gives the COUNT of elements, which is one more than the last valid index." },
-      { "label": "D", "text": "Always 0", "isCorrect": false, "explanation": "size() reflects the actual number of elements currently stored, not always 0." }
+      { "label": "C", "text": "The index of the last element in the list", "isCorrect": false, "explanation": "size() gives the COUNT of elements, which is one more than the last valid index." },
+      { "label": "D", "text": "Always 0, for any list that has been created", "isCorrect": false, "explanation": "size() reflects the actual number of elements currently stored, not always 0." }
     ],
     "explanation": "`size()` returns the current number of elements stored in the ArrayList.",
     "conceptLink": "ap-csa/unit-7-arraylist/arraylist-intro",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "Why is removing elements from an ArrayList while traversing it with a forward indexed loop (`i++`) risky?",
     "choices": [
-      { "label": "A", "text": "It's never risky and always works correctly", "isCorrect": false, "explanation": "This pattern is a well-known source of subtle bugs, specifically skipped elements." },
-      { "label": "B", "text": "Removing an element shifts all later elements down by one index, so the loop can skip the element that shifted into the removed spot", "isCorrect": true, "explanation": "After a removal, the element that shifts into the current index is never checked, since i still advances forward." },
-      { "label": "C", "text": "ArrayLists cannot have elements removed during a loop; it always crashes", "isCorrect": false, "explanation": "It doesn't necessarily crash (that depends on specifics); the more common issue is silently skipping elements." },
-      { "label": "D", "text": "It only works with ArrayLists of Strings", "isCorrect": false, "explanation": "This issue applies to ArrayLists of any type, not just Strings." }
+      { "label": "A", "text": "It's never risky and always works correctly, because ArrayList adjusts the loop index automatically after each removal", "isCorrect": false, "explanation": "This pattern is a well-known source of subtle bugs, specifically skipped elements." },
+      { "label": "B", "text": "Removing an element shifts all later elements down one index, so the loop can skip the element that moved into the removed spot", "isCorrect": true, "explanation": "After a removal, the element that shifts into the current index is never checked, since i still advances forward." },
+      { "label": "C", "text": "ArrayLists cannot have elements removed during a loop, and it always crashes the program at once", "isCorrect": false, "explanation": "It doesn't necessarily crash (that depends on specifics); the more common issue is silently skipping elements." },
+      { "label": "D", "text": "It only works with ArrayLists of Strings, because other element types cannot be shifted down", "isCorrect": false, "explanation": "This issue applies to ArrayLists of any type, not just Strings." }
     ],
     "explanation": "Removing an element shifts subsequent elements down by one, so a forward loop can skip an element that shifts into the just-vacated index.",
     "conceptLink": "ap-csa/unit-7-arraylist/traversing-arraylists",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "What does this method compute?\n\n```java\npublic int countValue(ArrayList<Integer> list, int target) {\n    int count = 0;\n    for (int i = 0; i < list.size(); i++) {\n        if (list.get(i) == target) {\n            count++;\n        }\n    }\n    return count;\n}\n```",
     "choices": [
-      { "label": "A", "text": "The sum of all elements equal to target", "isCorrect": false, "explanation": "count is incremented by 1 (count++), not accumulated with the target's value." },
+      { "label": "A", "text": "The sum of all of the elements equal to target", "isCorrect": false, "explanation": "count is incremented by 1 (count++), not accumulated with the target's value." },
       { "label": "B", "text": "The number of times target appears in list", "isCorrect": true, "explanation": "count tracks how many elements match target, incrementing once per match." },
-      { "label": "C", "text": "The index of target in list", "isCorrect": false, "explanation": "count tracks how many matches were found, not a specific position." },
-      { "label": "D", "text": "Whether target is in list", "isCorrect": false, "explanation": "This method returns an int count, not a boolean presence check." }
+      { "label": "C", "text": "The index of target in list, or -1 if absent", "isCorrect": false, "explanation": "count tracks how many matches were found, not a specific position." },
+      { "label": "D", "text": "Whether target is in list at least once", "isCorrect": false, "explanation": "This method returns an int count, not a boolean presence check." }
     ],
     "explanation": "This method counts how many elements in `list` are equal to `target`.",
     "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
@@ -374,10 +374,10 @@
     "difficulty": "hard",
     "stem": "What does `list.get(i) == target` risk when `list` is `ArrayList<Integer>` and the values might be outside the range -128 to 127?",
     "choices": [
-      { "label": "A", "text": "Nothing; == always works correctly for comparing Integer content", "isCorrect": false, "explanation": "For Integer objects outside Java's small-integer cache range, == compares references, which can give surprising results." },
-      { "label": "B", "text": "For Integer values outside the cached range, == may compare object references instead of values, giving incorrect results", "isCorrect": true, "explanation": "Java caches small Integer objects, so == can happen to work for small values but fails to reliably compare content for larger ones -- .equals() should be used instead." },
-      { "label": "C", "text": "It always throws a compile error", "isCorrect": false, "explanation": "This is valid, compiling code; the concern is a runtime behavior nuance, not a compile error." },
-      { "label": "D", "text": "It only works for ArrayLists of Strings", "isCorrect": false, "explanation": "This concern relates to Integer autoboxing/caching specifically, unrelated to Strings." }
+      { "label": "A", "text": "Nothing; == always works correctly for comparing Integer content, whatever the values, because Java unboxes both", "isCorrect": false, "explanation": "For Integer objects outside Java's small-integer cache range, == compares references, which can give surprising results." },
+      { "label": "B", "text": "For Integer values outside the cached range, == may compare object references instead of values, giving wrong results", "isCorrect": true, "explanation": "Java caches small Integer objects, so == can happen to work for small values but fails to reliably compare content for larger ones -- .equals() should be used instead." },
+      { "label": "C", "text": "It always throws a compile error, since the == operator cannot be used with Integer objects at all", "isCorrect": false, "explanation": "This is valid, compiling code; the concern is a runtime behavior nuance, not a compile error." },
+      { "label": "D", "text": "It only works for ArrayLists of Strings, because other object types cannot be compared with ==", "isCorrect": false, "explanation": "This concern relates to Integer autoboxing/caching specifically, unrelated to Strings." }
     ],
     "explanation": "Comparing boxed `Integer` values with `==` risks comparing object references rather than numeric content outside the cached range; `.equals()` is the safe choice.",
     "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
@@ -406,10 +406,10 @@
     "difficulty": "medium",
     "stem": "What does this method do?\n\n```java\npublic void removeAllNegatives(ArrayList<Integer> list) {\n    for (int i = list.size() - 1; i >= 0; i--) {\n        if (list.get(i) < 0) {\n            list.remove(i);\n        }\n    }\n}\n```",
     "choices": [
-      { "label": "A", "text": "Removes all negative numbers safely, because it traverses backward, avoiding the index-shifting bug", "isCorrect": true, "explanation": "Since removing an element only shifts elements AFTER the removed index, traversing backward means already-visited positions are unaffected." },
-      { "label": "B", "text": "Crashes every time it finds a negative number", "isCorrect": false, "explanation": "This method doesn't crash; removing while traversing backward is actually the safe pattern that avoids skipped elements." },
-      { "label": "C", "text": "Removes only the first negative number found", "isCorrect": false, "explanation": "The loop continues checking every remaining index, so it removes ALL negatives, not just the first." },
-      { "label": "D", "text": "Removes all elements regardless of sign", "isCorrect": false, "explanation": "The if condition specifically checks list.get(i) < 0, so only negative elements are removed." }
+      { "label": "A", "text": "Safely removes all negative numbers, because it traverses backward and avoids the index-shifting bug", "isCorrect": true, "explanation": "Since removing an element only shifts elements AFTER the removed index, traversing backward means already-visited positions are unaffected." },
+      { "label": "B", "text": "Crashes every time it finds a negative number, since removal breaks the loop index and the program stops", "isCorrect": false, "explanation": "This method doesn't crash; removing while traversing backward is actually the safe pattern that avoids skipped elements." },
+      { "label": "C", "text": "Removes only the first negative number found, then stops", "isCorrect": false, "explanation": "The loop continues checking every remaining index, so it removes ALL negatives, not just the first." },
+      { "label": "D", "text": "Removes all elements regardless of sign, leaving an empty list", "isCorrect": false, "explanation": "The if condition specifically checks list.get(i) < 0, so only negative elements are removed." }
     ],
     "explanation": "Traversing backward while removing elements is the standard safe pattern, since each removal only affects indices after the current one.",
     "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",
@@ -422,10 +422,10 @@
     "difficulty": "hard",
     "stem": "Why does traversing backward (from `list.size() - 1` down to `0`) avoid the index-shifting bug that occurs when removing elements while traversing forward?",
     "choices": [
-      { "label": "A", "text": "It doesn't actually avoid the bug", "isCorrect": false, "explanation": "Backward traversal genuinely does avoid this specific bug, which is why it's a recommended pattern." },
-      { "label": "B", "text": "Removing an element only shifts elements AFTER it; traversing backward means already-visited indices (before the removed one) are unaffected", "isCorrect": true, "explanation": "Since the loop is moving toward lower indices, any shifting caused by a removal only affects positions the loop hasn't reached yet or has already passed correctly." },
-      { "label": "C", "text": "Backward traversal never actually visits every element", "isCorrect": false, "explanation": "Backward traversal, done correctly (i from size()-1 down to 0), does visit every element exactly once." },
-      { "label": "D", "text": "ArrayLists cannot be traversed backward", "isCorrect": false, "explanation": "ArrayLists can absolutely be traversed backward using a decrementing indexed loop." }
+      { "label": "A", "text": "It doesn't actually avoid the bug; backward and forward traversal behave identically when elements are removed from the list", "isCorrect": false, "explanation": "Backward traversal genuinely does avoid this specific bug, which is why it's a recommended pattern." },
+      { "label": "B", "text": "Removing an element only shifts elements AFTER it, so going backward leaves the already-visited indices before it unaffected", "isCorrect": true, "explanation": "Since the loop is moving toward lower indices, any shifting caused by a removal only affects positions the loop hasn't reached yet or has already passed correctly." },
+      { "label": "C", "text": "Backward traversal never actually visits every element, so it skips the first one", "isCorrect": false, "explanation": "Backward traversal, done correctly (i from size()-1 down to 0), does visit every element exactly once." },
+      { "label": "D", "text": "ArrayLists cannot be traversed backward, since the index cannot be decremented", "isCorrect": false, "explanation": "ArrayLists can absolutely be traversed backward using a decrementing indexed loop." }
     ],
     "explanation": "Removing an element only shifts later elements, so decrementing the index during backward traversal never skips an element.",
     "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",

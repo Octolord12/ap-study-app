@@ -7,9 +7,9 @@
     "stem": "What does the Mean Value Theorem (MVT) state for a function f continuous on [a,b] and differentiable on (a,b)?",
     "choices": [
       { "label": "A", "text": "There exists at least one c in (a,b) such that f'(c) = [f(b)-f(a)]/(b-a)", "isCorrect": true, "explanation": "This is the precise statement of the Mean Value Theorem." },
-      { "label": "B", "text": "f'(x) = 0 for all x in (a,b)", "isCorrect": false, "explanation": "The MVT doesn't require the derivative to be zero everywhere; it guarantees the derivative equals the average rate of change at some specific point." },
-      { "label": "C", "text": "f(a) must equal f(b)", "isCorrect": false, "explanation": "The MVT doesn't require f(a) to equal f(b) (that additional condition describes Rolle's Theorem, a special case)." },
-      { "label": "D", "text": "f has no maximum on [a,b]", "isCorrect": false, "explanation": "This doesn't relate to the MVT's actual statement, which is about matching instantaneous and average rates of change." }
+      { "label": "B", "text": "f'(x) = 0 for every x in (a,b), so the function is constant on the interval", "isCorrect": false, "explanation": "The MVT doesn't require the derivative to be zero everywhere; it guarantees the derivative equals the average rate of change at some specific point." },
+      { "label": "C", "text": "f(a) must equal f(b), so the function returns to its start", "isCorrect": false, "explanation": "The MVT doesn't require f(a) to equal f(b) (that additional condition describes Rolle's Theorem, a special case)." },
+      { "label": "D", "text": "f has no maximum on [a,b], since f keeps rising", "isCorrect": false, "explanation": "This doesn't relate to the MVT's actual statement, which is about matching instantaneous and average rates of change." }
     ],
     "explanation": "The MVT guarantees some c in (a,b) where the instantaneous rate of change equals the average rate of change over [a,b].",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
@@ -23,9 +23,9 @@
     "stem": "What is required for the MVT to apply to a function f on [a,b]?",
     "choices": [
       { "label": "A", "text": "f must be continuous on [a,b] and differentiable on (a,b)", "isCorrect": true, "explanation": "These are the precise conditions required for the MVT to apply." },
-      { "label": "B", "text": "f must be a polynomial function only", "isCorrect": false, "explanation": "The MVT applies to any function meeting the continuity/differentiability conditions, not exclusively polynomials." },
-      { "label": "C", "text": "f(a) must equal f(b)", "isCorrect": false, "explanation": "f(a) equaling f(b) is not required for the general MVT (that specific case is Rolle's Theorem)." },
-      { "label": "D", "text": "f must be increasing throughout [a,b]", "isCorrect": false, "explanation": "The MVT doesn't require f to be increasing; it applies regardless of whether f is increasing, decreasing, or neither." }
+      { "label": "B", "text": "f must be a polynomial function only, with no other types allowed", "isCorrect": false, "explanation": "The MVT applies to any function meeting the continuity/differentiability conditions, not exclusively polynomials." },
+      { "label": "C", "text": "f(a) must equal f(b), so the endpoints have the same height", "isCorrect": false, "explanation": "f(a) equaling f(b) is not required for the general MVT (that specific case is Rolle's Theorem)." },
+      { "label": "D", "text": "f must be increasing throughout [a,b], with positive slope", "isCorrect": false, "explanation": "The MVT doesn't require f to be increasing; it applies regardless of whether f is increasing, decreasing, or neither." }
     ],
     "explanation": "The MVT requires f to be continuous on [a,b] and differentiable on (a,b).",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
@@ -71,9 +71,9 @@
     "stem": "If f(a) = f(b) for a function satisfying Rolle's Theorem's conditions, what does the theorem guarantee?",
     "choices": [
       { "label": "A", "text": "There exists at least one c in (a,b) where f'(c) = 0", "isCorrect": true, "explanation": "Rolle's Theorem guarantees at least one point in (a,b) where the derivative is zero." },
-      { "label": "B", "text": "f'(x) = 0 for every x in (a,b)", "isCorrect": false, "explanation": "Rolle's Theorem guarantees the existence of AT LEAST ONE such point, not that the derivative is zero EVERYWHERE." },
-      { "label": "C", "text": "f(x) = 0 for every x in [a,b]", "isCorrect": false, "explanation": "Rolle's Theorem says nothing about the function's VALUE being zero; it's about the derivative being zero at some point." },
-      { "label": "D", "text": "There is no critical point in (a,b)", "isCorrect": false, "explanation": "This is the opposite of Rolle's Theorem's actual guarantee, which specifically ensures a critical point DOES exist." }
+      { "label": "B", "text": "f'(x) = 0 for every x in (a,b), not just at one point", "isCorrect": false, "explanation": "Rolle's Theorem guarantees the existence of AT LEAST ONE such point, not that the derivative is zero EVERYWHERE." },
+      { "label": "C", "text": "f(x) = 0 for every x in [a,b], so the graph lies on the axis", "isCorrect": false, "explanation": "Rolle's Theorem says nothing about the function's VALUE being zero; it's about the derivative being zero at some point." },
+      { "label": "D", "text": "There is no critical point in (a,b), so f is monotonic", "isCorrect": false, "explanation": "This is the opposite of Rolle's Theorem's actual guarantee, which specifically ensures a critical point DOES exist." }
     ],
     "explanation": "Rolle's Theorem guarantees at least one point c in (a,b) where f'(c) = 0.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
@@ -87,9 +87,9 @@
     "stem": "What is a practical, real-world interpretation of the Mean Value Theorem, in the context of a car's motion?",
     "choices": [
       { "label": "A", "text": "At some moment during a trip, the car's instantaneous speed must equal its average speed for the entire trip", "isCorrect": true, "explanation": "This is the classic real-world interpretation of the MVT applied to motion." },
-      { "label": "B", "text": "The car must travel at a constant speed for the entire trip", "isCorrect": false, "explanation": "The MVT doesn't require CONSTANT speed throughout; it guarantees the average speed is matched at some particular instant." },
-      { "label": "C", "text": "The car's average speed must always be zero", "isCorrect": false, "explanation": "There's no reason to assume the average speed is zero in this generic interpretation." },
-      { "label": "D", "text": "The MVT has no real-world applications", "isCorrect": false, "explanation": "The MVT has this very practical, intuitive real-world interpretation regarding matching instantaneous and average rates in motion." }
+      { "label": "B", "text": "The car must travel at a constant speed for the entire trip, never speeding up or slowing down", "isCorrect": false, "explanation": "The MVT doesn't require CONSTANT speed throughout; it guarantees the average speed is matched at some particular instant." },
+      { "label": "C", "text": "The car's average speed must always be zero, because it ends up where it started", "isCorrect": false, "explanation": "There's no reason to assume the average speed is zero in this generic interpretation." },
+      { "label": "D", "text": "The MVT has no real-world applications, since it describes only abstract functions and never actual motion", "isCorrect": false, "explanation": "The MVT has this very practical, intuitive real-world interpretation regarding matching instantaneous and average rates in motion." }
     ],
     "explanation": "The MVT implies that at some moment, a car's instantaneous speed must equal its average speed for the trip.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/mean-value-theorem",
@@ -103,9 +103,9 @@
     "stem": "What is a \"critical point\" of a function f?",
     "choices": [
       { "label": "A", "text": "A point where f'(x) = 0 or f'(x) is undefined (within f's domain)", "isCorrect": true, "explanation": "This is the precise definition of a critical point." },
-      { "label": "B", "text": "Any point where f(x) = 0", "isCorrect": false, "explanation": "f(x)=0 describes a ROOT/zero of the function, a different concept from a critical point." },
-      { "label": "C", "text": "The highest point on the entire graph", "isCorrect": false, "explanation": "A critical point isn't necessarily the highest point on the whole graph; it's a candidate location for a local extremum." },
-      { "label": "D", "text": "A point where f is discontinuous", "isCorrect": false, "explanation": "Critical points are generally about differentiability within the function's domain, not about points of discontinuity." }
+      { "label": "B", "text": "Any point where f(x) = 0, such as an x-intercept of the graph", "isCorrect": false, "explanation": "f(x)=0 describes a ROOT/zero of the function, a different concept from a critical point." },
+      { "label": "C", "text": "The highest point on the entire graph, over the whole domain of the function", "isCorrect": false, "explanation": "A critical point isn't necessarily the highest point on the whole graph; it's a candidate location for a local extremum." },
+      { "label": "D", "text": "A point where f is discontinuous, such as a jump or hole in its graph", "isCorrect": false, "explanation": "Critical points are generally about differentiability within the function's domain, not about points of discontinuity." }
     ],
     "explanation": "A critical point is where f'(x) = 0 or f'(x) is undefined.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/extrema-and-first-derivative-test",
@@ -166,10 +166,10 @@
     "difficulty": "medium",
     "stem": "What is the difference between a \"local\" extremum and a \"global\" (absolute) extremum?",
     "choices": [
-      { "label": "A", "text": "A local extremum is the highest/lowest value in some neighborhood of that point, while a global extremum is the highest/lowest value over the entire domain being considered", "isCorrect": true, "explanation": "This correctly distinguishes the two: local extrema are about nearby behavior, global extrema are about the entire domain." },
-      { "label": "B", "text": "They are always exactly the same thing with no distinction", "isCorrect": false, "explanation": "These are NOT always exactly the same; a local extremum might not be the highest/lowest value considering the entire domain." },
-      { "label": "C", "text": "A local extremum only applies to linear functions", "isCorrect": false, "explanation": "The concept of a local extremum applies broadly to many types of functions, not exclusively linear ones." },
-      { "label": "D", "text": "A global extremum can never also be a local extremum", "isCorrect": false, "explanation": "A global extremum, in fact, generally also qualifies AS a local extremum at that same point." }
+      { "label": "A", "text": "A local extremum is the highest or lowest value in some neighborhood of that point, while a global extremum is the highest or lowest value over the whole domain", "isCorrect": true, "explanation": "This correctly distinguishes the two: local extrema are about nearby behavior, global extrema are about the entire domain." },
+      { "label": "B", "text": "They are always exactly the same thing with no distinction between them, since every extremum is global on its own and no function ever has more than one such point on its domain", "isCorrect": false, "explanation": "These are NOT always exactly the same; a local extremum might not be the highest/lowest value considering the entire domain." },
+      { "label": "C", "text": "A local extremum only applies to linear functions, while a global extremum applies only to curves with a maximum", "isCorrect": false, "explanation": "The concept of a local extremum applies broadly to many types of functions, not exclusively linear ones." },
+      { "label": "D", "text": "A global extremum can never also be a local extremum, because the two kinds exclude each other on any interval", "isCorrect": false, "explanation": "A global extremum, in fact, generally also qualifies AS a local extremum at that same point." }
     ],
     "explanation": "A local extremum is the highest/lowest value nearby, while a global extremum is the highest/lowest over the entire domain.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/extrema-and-first-derivative-test",
@@ -183,7 +183,7 @@
     "stem": "On a closed interval [a,b], where should you check for the absolute (global) maximum and minimum of a continuous function f?",
     "choices": [
       { "label": "A", "text": "At the critical points within (a,b) AND at the endpoints a and b", "isCorrect": true, "explanation": "This is the standard Extreme Value Theorem procedure: check both critical points and endpoints." },
-      { "label": "B", "text": "Only at the critical points, never at the endpoints", "isCorrect": false, "explanation": "Endpoints must ALSO be checked, since the absolute extremum on a closed interval could occur at an endpoint." },
+      { "label": "B", "text": "Only at the critical points, never at the endpoints of the closed interval", "isCorrect": false, "explanation": "Endpoints must ALSO be checked, since the absolute extremum on a closed interval could occur at an endpoint." },
       { "label": "C", "text": "Only at the endpoints, never at the critical points", "isCorrect": false, "explanation": "Critical points within the interval must ALSO be checked, since the absolute extremum could occur at an interior point." },
       { "label": "D", "text": "Nowhere in particular; absolute extrema cannot be found this way", "isCorrect": false, "explanation": "This is precisely the correct, standard method for finding absolute extrema on a closed interval." }
     ],
@@ -199,9 +199,9 @@
     "stem": "What does it mean for a function's graph to be \"concave up\" on an interval?",
     "choices": [
       { "label": "A", "text": "The graph curves upward, like a cup (f''(x) > 0 on that interval)", "isCorrect": true, "explanation": "Concave up means the graph curves upward, corresponding to a positive second derivative." },
-      { "label": "B", "text": "The graph is a straight line", "isCorrect": false, "explanation": "A straight line has ZERO concavity (f''(x)=0), a distinct, \"neutral\" case from concave up." },
-      { "label": "C", "text": "The graph curves downward, like a frown", "isCorrect": false, "explanation": "This describes CONCAVE DOWN, the opposite of concave up." },
-      { "label": "D", "text": "The function is always positive on that interval", "isCorrect": false, "explanation": "Concavity is about the SHAPE of the graph, not about whether the function's values are positive or negative." }
+      { "label": "B", "text": "The graph is a straight line with constant slope", "isCorrect": false, "explanation": "A straight line has ZERO concavity (f''(x)=0), a distinct, \"neutral\" case from concave up." },
+      { "label": "C", "text": "The graph curves downward, like a frown (f''(x) < 0 on that interval)", "isCorrect": false, "explanation": "This describes CONCAVE DOWN, the opposite of concave up." },
+      { "label": "D", "text": "The function is always positive on that interval, above the x-axis", "isCorrect": false, "explanation": "Concavity is about the SHAPE of the graph, not about whether the function's values are positive or negative." }
     ],
     "explanation": "Concave up means the graph curves upward, corresponding to $f''(x) > 0$.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
@@ -231,9 +231,9 @@
     "stem": "According to the Second Derivative Test, what happens if f'(c) = 0 but f''(c) = 0 as well?",
     "choices": [
       { "label": "A", "text": "The test is inconclusive; another method (like the First Derivative Test) must be used", "isCorrect": true, "explanation": "When f''(c)=0, the Second Derivative Test cannot determine whether c is a max, min, or neither." },
-      { "label": "B", "text": "f definitely has a local maximum at x=c", "isCorrect": false, "explanation": "f''(c)=0 does NOT definitively indicate a maximum; the test simply fails to give a conclusive answer." },
-      { "label": "C", "text": "f definitely has a local minimum at x=c", "isCorrect": false, "explanation": "f''(c)=0 does NOT definitively indicate a minimum either." },
-      { "label": "D", "text": "f is definitely not differentiable at x=c", "isCorrect": false, "explanation": "f''(c)=0 actually confirms that f IS twice differentiable at c, the opposite of non-differentiability." }
+      { "label": "B", "text": "f definitely has a local maximum at x=c, because the slope is zero and the concavity is flat there", "isCorrect": false, "explanation": "f''(c)=0 does NOT definitively indicate a maximum; the test simply fails to give a conclusive answer." },
+      { "label": "C", "text": "f definitely has a local minimum at x=c, because the slope is zero and the concavity is flat there", "isCorrect": false, "explanation": "f''(c)=0 does NOT definitively indicate a minimum either." },
+      { "label": "D", "text": "f is definitely not differentiable at x=c, since the second derivative is zero at that point as well", "isCorrect": false, "explanation": "f''(c)=0 actually confirms that f IS twice differentiable at c, the opposite of non-differentiability." }
     ],
     "explanation": "When f''(c)=0, the Second Derivative Test is inconclusive, and another method must be used.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
@@ -263,9 +263,9 @@
     "stem": "What is an \"inflection point\" of a function?",
     "choices": [
       { "label": "A", "text": "A point where the concavity of the function changes (from concave up to concave down, or vice versa)", "isCorrect": true, "explanation": "This is the precise definition of an inflection point." },
-      { "label": "B", "text": "A point where the function equals zero", "isCorrect": false, "explanation": "A function equaling zero describes a ROOT, a different concept from an inflection point." },
-      { "label": "C", "text": "A point where the function is undefined", "isCorrect": false, "explanation": "An inflection point is generally a point where the function IS defined and differentiable." },
-      { "label": "D", "text": "The highest point on the entire graph", "isCorrect": false, "explanation": "An inflection point isn't necessarily the highest point on the graph; it's specifically about a change in curvature." }
+      { "label": "B", "text": "A point where the function equals zero and crosses the x-axis, changing from positive to negative or the reverse", "isCorrect": false, "explanation": "A function equaling zero describes a ROOT, a different concept from an inflection point." },
+      { "label": "C", "text": "A point where the function is undefined, such as a vertical asymptote", "isCorrect": false, "explanation": "An inflection point is generally a point where the function IS defined and differentiable." },
+      { "label": "D", "text": "The highest point on the entire graph, where the slope is zero", "isCorrect": false, "explanation": "An inflection point isn't necessarily the highest point on the graph; it's specifically about a change in curvature." }
     ],
     "explanation": "An inflection point is where the concavity of the function changes.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/concavity-and-second-derivative-test",
@@ -295,9 +295,9 @@
     "stem": "What is the general goal of an \"optimization\" problem in calculus?",
     "choices": [
       { "label": "A", "text": "To find the maximum or minimum value of some quantity, often subject to a constraint", "isCorrect": true, "explanation": "Optimization problems seek the maximum or minimum value of some quantity, typically within given constraints." },
-      { "label": "B", "text": "To find the derivative of a function with no further purpose", "isCorrect": false, "explanation": "While derivatives are often a TOOL used in optimization, the actual GOAL is to find a maximum or minimum value." },
-      { "label": "C", "text": "To find the limit of a function as x approaches infinity", "isCorrect": false, "explanation": "This describes a different type of calculus problem (limits at infinity), unrelated to optimization's actual goal." },
-      { "label": "D", "text": "To determine whether a function is continuous", "isCorrect": false, "explanation": "Continuity is a separate concept; optimization problems focus on finding extrema." }
+      { "label": "B", "text": "To find the derivative of a function for its own sake, with no further purpose or application in mind", "isCorrect": false, "explanation": "While derivatives are often a TOOL used in optimization, the actual GOAL is to find a maximum or minimum value." },
+      { "label": "C", "text": "To find the limit of a function as x approaches infinity, whatever its domain", "isCorrect": false, "explanation": "This describes a different type of calculus problem (limits at infinity), unrelated to optimization's actual goal." },
+      { "label": "D", "text": "To determine whether a function is continuous at every point of its domain, and nothing more", "isCorrect": false, "explanation": "Continuity is a separate concept; optimization problems focus on finding extrema." }
     ],
     "explanation": "Optimization problems seek the maximum or minimum value of a quantity, often subject to a constraint.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/optimization",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "In a typical optimization word problem, what is generally the first key step?",
     "choices": [
-      { "label": "A", "text": "Identify the quantity to be maximized or minimized, and express it as a function of one variable (using any given constraints)", "isCorrect": true, "explanation": "Setting up the function to be optimized, using given constraints, is the essential first step." },
-      { "label": "B", "text": "Immediately take the second derivative before doing anything else", "isCorrect": false, "explanation": "Jumping straight to a second derivative without first setting up the function to optimize skips essential steps." },
-      { "label": "C", "text": "Ignore any given constraints entirely", "isCorrect": false, "explanation": "Constraints are CRUCIAL for correctly setting up an optimization problem's equation." },
-      { "label": "D", "text": "Guess a reasonable-sounding final answer", "isCorrect": false, "explanation": "Optimization problems require careful, systematic mathematical work, not guessing." }
+      { "label": "A", "text": "Identify the quantity to be maximized or minimized, and write it as a function of one variable (using any given constraints)", "isCorrect": true, "explanation": "Setting up the function to be optimized, using given constraints, is the essential first step." },
+      { "label": "B", "text": "Immediately take the second derivative before doing anything else, since concavity decides which quantity matters", "isCorrect": false, "explanation": "Jumping straight to a second derivative without first setting up the function to optimize skips essential steps." },
+      { "label": "C", "text": "Ignore any given constraints entirely, since they only complicate the algebra of the problem", "isCorrect": false, "explanation": "Constraints are CRUCIAL for correctly setting up an optimization problem's equation." },
+      { "label": "D", "text": "Guess a reasonable-sounding final answer, then test it against the information in the problem", "isCorrect": false, "explanation": "Optimization problems require careful, systematic mathematical work, not guessing." }
     ],
     "explanation": "The first step is identifying the quantity to optimize and expressing it as a function of one variable using constraints.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/optimization",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "Why is it important to verify that a critical point found in an optimization problem actually corresponds to a maximum (or minimum, as appropriate), rather than just assuming it does?",
     "choices": [
-      { "label": "A", "text": "A critical point could be a maximum, a minimum, or neither, so verification via the First or Second Derivative Test is necessary", "isCorrect": true, "explanation": "Critical points require verification since they could represent a maximum, minimum, or neither." },
-      { "label": "B", "text": "All critical points are automatically maximums by definition", "isCorrect": false, "explanation": "Critical points are NOT automatically maximums; they could just as easily be minimums or neither." },
-      { "label": "C", "text": "Verification is never actually necessary in optimization problems", "isCorrect": false, "explanation": "Verification IS an important, standard step in properly solving optimization problems." },
-      { "label": "D", "text": "Critical points can never correspond to minimums", "isCorrect": false, "explanation": "Critical points absolutely CAN correspond to minimums; this claim incorrectly rules out a very common, valid case." }
+      { "label": "A", "text": "A critical point could be a maximum, a minimum, or neither, so the First or Second Derivative Test is needed to verify it", "isCorrect": true, "explanation": "Critical points require verification since they could represent a maximum, minimum, or neither." },
+      { "label": "B", "text": "All critical points are automatically maximums by definition, so no extra check is ever needed in these problems", "isCorrect": false, "explanation": "Critical points are NOT automatically maximums; they could just as easily be minimums or neither." },
+      { "label": "C", "text": "Verification is never actually necessary in optimization problems, since any critical point gives the correct answer", "isCorrect": false, "explanation": "Verification IS an important, standard step in properly solving optimization problems." },
+      { "label": "D", "text": "Critical points can never correspond to minimums, only to maximums or to inflection points", "isCorrect": false, "explanation": "Critical points absolutely CAN correspond to minimums; this claim incorrectly rules out a very common, valid case." }
     ],
     "explanation": "Critical points must be verified since they could be a maximum, minimum, or neither.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/optimization",
@@ -375,9 +375,9 @@
     "stem": "What key pieces of information from calculus (derivatives) are typically used together to sketch an accurate graph of a function?",
     "choices": [
       { "label": "A", "text": "Critical points, intervals of increase/decrease, concavity, and inflection points", "isCorrect": true, "explanation": "These calculus-derived pieces of information together allow for an accurate, systematic curve sketch." },
-      { "label": "B", "text": "Only the function's y-intercept", "isCorrect": false, "explanation": "The y-intercept alone provides very limited information; a complete sketch requires more thorough calculus-based analysis." },
+      { "label": "B", "text": "Only the function's y-intercept and its value at x=0", "isCorrect": false, "explanation": "The y-intercept alone provides very limited information; a complete sketch requires more thorough calculus-based analysis." },
       { "label": "C", "text": "Only the function's domain, with no other calculus information", "isCorrect": false, "explanation": "Domain alone is insufficient; a full curve-sketching approach draws on additional derivative-based information." },
-      { "label": "D", "text": "Random guessing of points on the graph", "isCorrect": false, "explanation": "Proper curve sketching is a systematic, calculus-based process, not random guessing." }
+      { "label": "D", "text": "Random guessing of points on the graph, then connecting them", "isCorrect": false, "explanation": "Proper curve sketching is a systematic, calculus-based process, not random guessing." }
     ],
     "explanation": "Critical points, intervals of increase/decrease, concavity, and inflection points together enable accurate curve sketching.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
@@ -438,10 +438,10 @@
     "difficulty": "medium",
     "stem": "Why is it useful to combine information from both the first AND second derivatives when sketching a curve, rather than using just one?",
     "choices": [
-      { "label": "A", "text": "The first derivative reveals where the function is increasing/decreasing and locates extrema, while the second derivative reveals concavity and inflection points -- together they give a much fuller picture", "isCorrect": true, "explanation": "Each derivative provides distinct, complementary information essential for an accurate sketch." },
-      { "label": "B", "text": "The first and second derivatives always give exactly the same information", "isCorrect": false, "explanation": "These derivatives provide DIFFERENT types of information (increase/decrease vs. concavity), not the same information." },
-      { "label": "C", "text": "Only the second derivative is ever useful; the first derivative can be ignored", "isCorrect": false, "explanation": "The first derivative is essential for identifying increasing/decreasing behavior and extrema, information the second derivative alone doesn't provide." },
-      { "label": "D", "text": "Combining them serves no additional purpose beyond using just one", "isCorrect": false, "explanation": "Combining both derivatives provides meaningfully more complete information than using just one alone." }
+      { "label": "A", "text": "The first derivative shows where f is increasing or decreasing and locates extrema, while the second shows concavity and inflection points -- together they give a fuller picture", "isCorrect": true, "explanation": "Each derivative provides distinct, complementary information essential for an accurate sketch." },
+      { "label": "B", "text": "The first and second derivatives always give exactly the same information about the graph, so combining them is redundant and only wastes time", "isCorrect": false, "explanation": "These derivatives provide DIFFERENT types of information (increase/decrease vs. concavity), not the same information." },
+      { "label": "C", "text": "Only the second derivative is ever useful; the first derivative can be ignored, since concavity alone determines the whole graph", "isCorrect": false, "explanation": "The first derivative is essential for identifying increasing/decreasing behavior and extrema, information the second derivative alone doesn't provide." },
+      { "label": "D", "text": "Combining them serves no additional purpose beyond using just one of them, because each describes the whole curve alone", "isCorrect": false, "explanation": "Combining both derivatives provides meaningfully more complete information than using just one alone." }
     ],
     "explanation": "The first derivative reveals increasing/decreasing behavior and extrema, while the second reveals concavity and inflection points.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",
@@ -455,8 +455,8 @@
     "stem": "What does it mean if a function has a critical point where f'(x) does NOT change sign on either side (e.g., f'(x) > 0 both before and after the critical point)?",
     "choices": [
       { "label": "A", "text": "The critical point is neither a local maximum nor a local minimum", "isCorrect": true, "explanation": "If the sign of f' doesn't change, the function continues increasing (or decreasing) through that point, so it's not a local extremum." },
-      { "label": "B", "text": "The critical point must be a local maximum", "isCorrect": false, "explanation": "A local maximum requires f' to change from positive to negative; if the sign never changes, this isn't a maximum." },
-      { "label": "C", "text": "The critical point must be a local minimum", "isCorrect": false, "explanation": "A local minimum requires f' to change from negative to positive; if the sign never changes, this isn't a minimum." },
+      { "label": "B", "text": "The critical point must be a local maximum, since the slope is zero there", "isCorrect": false, "explanation": "A local maximum requires f' to change from positive to negative; if the sign never changes, this isn't a maximum." },
+      { "label": "C", "text": "The critical point must be a local minimum, since the slope is zero there", "isCorrect": false, "explanation": "A local minimum requires f' to change from negative to positive; if the sign never changes, this isn't a minimum." },
       { "label": "D", "text": "This situation can never actually occur", "isCorrect": false, "explanation": "This situation can and does occur, for example at a critical point of a function like x^3 at x=0." }
     ],
     "explanation": "If f' doesn't change sign at a critical point, that point is neither a local maximum nor minimum.",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "For $f(x) = x^3$, what happens at the critical point $x=0$?",
     "choices": [
-      { "label": "A", "text": "f'(x) = 3x^2 ≥ 0 everywhere, never changing sign, so x=0 is neither a local max nor min (it's a point of inflection with a horizontal tangent)", "isCorrect": true, "explanation": "f'(x)=3x^2 is non-negative everywhere and only zero at x=0, so the function is always increasing (or momentarily flat), making x=0 neither a max nor min." },
-      { "label": "B", "text": "x=0 is a local maximum", "isCorrect": false, "explanation": "Since f'(x) doesn't change from positive to negative at x=0, this is not a local maximum." },
-      { "label": "C", "text": "x=0 is a local minimum", "isCorrect": false, "explanation": "Since f'(x) doesn't change from negative to positive at x=0, this is not a local minimum." },
-      { "label": "D", "text": "f is not differentiable at x=0", "isCorrect": false, "explanation": "f(x)=x^3 is actually differentiable everywhere, including at x=0, where f'(0)=0." }
+      { "label": "A", "text": "f'(x) = 3x² ≥ 0 everywhere and never changes sign, so x=0 is neither a local max nor min (an inflection point with a horizontal tangent)", "isCorrect": true, "explanation": "f'(x)=3x^2 is non-negative everywhere and only zero at x=0, so the function is always increasing (or momentarily flat), making x=0 neither a max nor min." },
+      { "label": "B", "text": "x=0 is a local maximum, because f'(0)=0 and the graph turns around there as the sign of the slope changes", "isCorrect": false, "explanation": "Since f'(x) doesn't change from positive to negative at x=0, this is not a local maximum." },
+      { "label": "C", "text": "x=0 is a local minimum, because f'(0)=0 and the graph turns around there as the sign of the slope changes", "isCorrect": false, "explanation": "Since f'(x) doesn't change from negative to positive at x=0, this is not a local minimum." },
+      { "label": "D", "text": "f is not differentiable at x=0, because the graph has a sharp corner at the origin where the left and right slopes disagree", "isCorrect": false, "explanation": "f(x)=x^3 is actually differentiable everywhere, including at x=0, where f'(0)=0." }
     ],
     "explanation": "f'(x)=3x^2 never changes sign, so x=0 is neither a local max nor min for f(x)=x^3.",
     "conceptLink": "ap-calc/unit-5-analytical-applications-of-differentiation/curve-sketching",

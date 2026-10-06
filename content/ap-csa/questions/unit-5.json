@@ -6,9 +6,9 @@
     "difficulty": "easy",
     "stem": "What are the two main components typically found inside a Java class?",
     "choices": [
-      { "label": "A", "text": "Loops and conditionals", "isCorrect": false, "explanation": "Loops and conditionals are control structures used inside methods, not the main structural components of a class." },
+      { "label": "A", "text": "Loops and conditionals (control structures)", "isCorrect": false, "explanation": "Loops and conditionals are control structures used inside methods, not the main structural components of a class." },
       { "label": "B", "text": "Fields (instance variables) and methods", "isCorrect": true, "explanation": "A class typically bundles together its data (fields) and behavior (methods)." },
-      { "label": "C", "text": "Packages and imports", "isCorrect": false, "explanation": "Packages and imports organize and access code from outside the class, rather than being components defined within it." },
+      { "label": "C", "text": "Packages and imports (organizational lines)", "isCorrect": false, "explanation": "Packages and imports organize and access code from outside the class, rather than being components defined within it." },
       { "label": "D", "text": "Comments and whitespace", "isCorrect": false, "explanation": "Comments and whitespace aren't functional parts of a class's structure." }
     ],
     "explanation": "A class is built from fields, which store its objects' state, and methods, which define their behavior.",
@@ -22,10 +22,10 @@
     "difficulty": "medium",
     "stem": "What is the purpose of a field (instance variable) in a class?",
     "choices": [
-      { "label": "A", "text": "To store an action the object performs", "isCorrect": false, "explanation": "Actions/behaviors are represented by methods, not fields." },
+      { "label": "A", "text": "To store an action the object performs when called", "isCorrect": false, "explanation": "Actions/behaviors are represented by methods, not fields." },
       { "label": "B", "text": "To store part of the state/data of an object", "isCorrect": true, "explanation": "Fields hold the data that makes up an object's current state." },
-      { "label": "C", "text": "To import other classes", "isCorrect": false, "explanation": "Importing classes is done with import statements, unrelated to fields." },
-      { "label": "D", "text": "To define the name of the class", "isCorrect": false, "explanation": "The class's name is defined in the class declaration itself, not in a field." }
+      { "label": "C", "text": "To import other classes into the file", "isCorrect": false, "explanation": "Importing classes is done with import statements, unrelated to fields." },
+      { "label": "D", "text": "To define the name of the class itself", "isCorrect": false, "explanation": "The class's name is defined in the class declaration itself, not in a field." }
     ],
     "explanation": "Fields (instance variables) store the data that represents an object's state.",
     "conceptLink": "ap-csa/unit-5-writing-classes/anatomy-of-a-class",
@@ -38,10 +38,10 @@
     "difficulty": "medium",
     "stem": "Which is generally considered good practice for the access level of a class's fields?",
     "choices": [
-      { "label": "A", "text": "Declare them public so any code can directly modify them", "isCorrect": false, "explanation": "Making fields public breaks encapsulation, allowing uncontrolled external modification." },
+      { "label": "A", "text": "Declare them public so that any code in any class can directly read and modify them", "isCorrect": false, "explanation": "Making fields public breaks encapsulation, allowing uncontrolled external modification." },
       { "label": "B", "text": "Declare them private and provide public methods to access/modify them", "isCorrect": true, "explanation": "This encapsulation pattern lets the class control how its data is read and changed." },
-      { "label": "C", "text": "Declare them as methods instead of fields", "isCorrect": false, "explanation": "Fields and methods are different things; you can't simply replace one with the other." },
-      { "label": "D", "text": "Never initialize them", "isCorrect": false, "explanation": "Fields should be properly initialized, either via constructors or default values." }
+      { "label": "C", "text": "Declare them as methods instead of fields, so they can be called", "isCorrect": false, "explanation": "Fields and methods are different things; you can't simply replace one with the other." },
+      { "label": "D", "text": "Never initialize them, leaving them to the compiler's defaults", "isCorrect": false, "explanation": "Fields should be properly initialized, either via constructors or default values." }
     ],
     "explanation": "Best practice is to keep fields `private` and expose controlled access through public accessor/mutator methods.",
     "conceptLink": "ap-csa/unit-5-writing-classes/anatomy-of-a-class",
@@ -54,10 +54,10 @@
     "difficulty": "hard",
     "stem": "Given this class skeleton, what is `numWheels`?\n\n```java\npublic class Car {\n    private int numWheels;\n    private String color;\n\n    public Car(int numWheels, String color) {\n        this.numWheels = numWheels;\n        this.color = color;\n    }\n}\n```",
     "choices": [
-      { "label": "A", "text": "A local variable", "isCorrect": false, "explanation": "numWheels declared at the top of the class (outside any method) is a field, not a local variable." },
-      { "label": "B", "text": "A parameter only", "isCorrect": false, "explanation": "While numWheels is also used as a parameter name in the constructor, the class-level declaration `private int numWheels;` makes it a field." },
+      { "label": "A", "text": "A local variable inside the constructor", "isCorrect": false, "explanation": "numWheels declared at the top of the class (outside any method) is a field, not a local variable." },
+      { "label": "B", "text": "A parameter only, of the constructor", "isCorrect": false, "explanation": "While numWheels is also used as a parameter name in the constructor, the class-level declaration `private int numWheels;` makes it a field." },
       { "label": "C", "text": "An instance field (instance variable)", "isCorrect": true, "explanation": "It's declared directly inside the class body, outside any method, making it an instance field." },
-      { "label": "D", "text": "A static variable", "isCorrect": false, "explanation": "There's no static keyword, so this is an instance field, not a static (class-level) variable." }
+      { "label": "D", "text": "A static variable shared by all cars", "isCorrect": false, "explanation": "There's no static keyword, so this is an instance field, not a static (class-level) variable." }
     ],
     "explanation": "`numWheels` is declared at the class level with `private`, making it an instance field of `Car`.",
     "conceptLink": "ap-csa/unit-5-writing-classes/anatomy-of-a-class",
@@ -70,10 +70,10 @@
     "difficulty": "medium",
     "stem": "Why might a class have multiple constructors (constructor overloading)?",
     "choices": [
-      { "label": "A", "text": "Java requires every class to have exactly one constructor", "isCorrect": false, "explanation": "Java does not require exactly one constructor; a class can have zero (using the default), one, or many." },
-      { "label": "B", "text": "To let objects be created in different ways, with different sets of initial values", "isCorrect": true, "explanation": "Multiple constructors give callers flexibility in how they provide initial data when creating an object." },
-      { "label": "C", "text": "It's not possible to have multiple constructors", "isCorrect": false, "explanation": "Java explicitly supports multiple constructors via overloading, as long as their parameter lists differ." },
-      { "label": "D", "text": "To increase the class's file size", "isCorrect": false, "explanation": "File size is not a reason for design decisions like this." }
+      { "label": "A", "text": "Java requires every class to have exactly one constructor, and no more than that", "isCorrect": false, "explanation": "Java does not require exactly one constructor; a class can have zero (using the default), one, or many." },
+      { "label": "B", "text": "To let objects be created in different ways, with different initial values", "isCorrect": true, "explanation": "Multiple constructors give callers flexibility in how they provide initial data when creating an object." },
+      { "label": "C", "text": "It's not possible to have multiple constructors in a single class", "isCorrect": false, "explanation": "Java explicitly supports multiple constructors via overloading, as long as their parameter lists differ." },
+      { "label": "D", "text": "To increase the class's file size and make it harder to read", "isCorrect": false, "explanation": "File size is not a reason for design decisions like this." }
     ],
     "explanation": "Constructor overloading lets a class support multiple ways of initializing a new object.",
     "conceptLink": "ap-csa/unit-5-writing-classes/anatomy-of-a-class",
@@ -86,10 +86,10 @@
     "difficulty": "easy",
     "stem": "What is the primary purpose of a constructor?",
     "choices": [
-      { "label": "A", "text": "To destroy an object", "isCorrect": false, "explanation": "Java doesn't have manual object destruction; constructors are about creation, not destruction." },
+      { "label": "A", "text": "To destroy an object when it is no longer needed", "isCorrect": false, "explanation": "Java doesn't have manual object destruction; constructors are about creation, not destruction." },
       { "label": "B", "text": "To initialize a newly created object's fields", "isCorrect": true, "explanation": "A constructor sets up the initial state of an object's fields when it's created." },
-      { "label": "C", "text": "To define a class's methods", "isCorrect": false, "explanation": "Methods are defined separately from constructors, even though constructors resemble methods syntactically." },
-      { "label": "D", "text": "To import other classes", "isCorrect": false, "explanation": "Import statements handle bringing in other classes, unrelated to constructors." }
+      { "label": "C", "text": "To define a class's methods and their return types", "isCorrect": false, "explanation": "Methods are defined separately from constructors, even though constructors resemble methods syntactically." },
+      { "label": "D", "text": "To import other classes into the file", "isCorrect": false, "explanation": "Import statements handle bringing in other classes, unrelated to constructors." }
     ],
     "explanation": "A constructor runs when an object is created, setting up its initial field values.",
     "conceptLink": "ap-csa/unit-5-writing-classes/constructors",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "What return type does a constructor have?",
     "choices": [
-      { "label": "A", "text": "void", "isCorrect": false, "explanation": "A constructor doesn't even use \"void\"; writing any return type turns it into a regular method, not a constructor." },
-      { "label": "B", "text": "The same type as the class", "isCorrect": false, "explanation": "A constructor has no return type keyword at all -- it isn't declared as returning \"the class type.\"" },
+      { "label": "A", "text": "void, since it returns nothing", "isCorrect": false, "explanation": "A constructor doesn't even use \"void\"; writing any return type turns it into a regular method, not a constructor." },
+      { "label": "B", "text": "The same type as the class it constructs", "isCorrect": false, "explanation": "A constructor has no return type keyword at all -- it isn't declared as returning \"the class type.\"" },
       { "label": "C", "text": "No return type at all -- not even void", "isCorrect": true, "explanation": "Constructors are written without any return type, which is part of what distinguishes them from regular methods." },
-      { "label": "D", "text": "int", "isCorrect": false, "explanation": "Writing int as a return type would make this an ordinary method, not a constructor." }
+      { "label": "D", "text": "int, to signal success", "isCorrect": false, "explanation": "Writing int as a return type would make this an ordinary method, not a constructor." }
     ],
     "explanation": "Constructors have no return type at all -- not even `void` -- which distinguishes them from regular methods.",
     "conceptLink": "ap-csa/unit-5-writing-classes/constructors",
@@ -150,10 +150,10 @@
     "difficulty": "medium",
     "stem": "What happens if a class defines no constructors at all?",
     "choices": [
-      { "label": "A", "text": "The class cannot be instantiated", "isCorrect": false, "explanation": "A class with no explicit constructors can still be instantiated using the automatically provided default constructor." },
-      { "label": "B", "text": "Java automatically provides a no-argument default constructor that does nothing extra", "isCorrect": true, "explanation": "If a class defines no constructors, Java supplies an implicit no-arg constructor." },
-      { "label": "C", "text": "A compile error always occurs", "isCorrect": false, "explanation": "Omitting constructors doesn't cause a compile error -- Java handles it with a default constructor." },
-      { "label": "D", "text": "All fields become static automatically", "isCorrect": false, "explanation": "Omitting constructors has nothing to do with whether fields are static." }
+      { "label": "A", "text": "The class cannot be instantiated until you write a constructor yourself", "isCorrect": false, "explanation": "A class with no explicit constructors can still be instantiated using the automatically provided default constructor." },
+      { "label": "B", "text": "Java automatically provides a no-argument default constructor", "isCorrect": true, "explanation": "If a class defines no constructors, Java supplies an implicit no-arg constructor." },
+      { "label": "C", "text": "A compile error always occurs for the missing constructor", "isCorrect": false, "explanation": "Omitting constructors doesn't cause a compile error -- Java handles it with a default constructor." },
+      { "label": "D", "text": "All fields become static automatically, shared across objects", "isCorrect": false, "explanation": "Omitting constructors has nothing to do with whether fields are static." }
     ],
     "explanation": "Java automatically provides a no-argument constructor when a class doesn't declare any constructors itself.",
     "conceptLink": "ap-csa/unit-5-writing-classes/constructors",
@@ -166,10 +166,10 @@
     "difficulty": "easy",
     "stem": "What is the purpose of an accessor method (getter)?",
     "choices": [
-      { "label": "A", "text": "To change a field's value", "isCorrect": false, "explanation": "Changing a field's value is the role of a mutator (setter), not an accessor." },
+      { "label": "A", "text": "To change a field's value to something new", "isCorrect": false, "explanation": "Changing a field's value is the role of a mutator (setter), not an accessor." },
       { "label": "B", "text": "To return the current value of a field", "isCorrect": true, "explanation": "An accessor method exposes a field's current value to outside code, without letting that code change it directly." },
-      { "label": "C", "text": "To create a new object", "isCorrect": false, "explanation": "Creating objects is the role of constructors, not accessors." },
-      { "label": "D", "text": "To delete a field", "isCorrect": false, "explanation": "Java doesn't support deleting individual fields at runtime this way." }
+      { "label": "C", "text": "To create a new object of the class", "isCorrect": false, "explanation": "Creating objects is the role of constructors, not accessors." },
+      { "label": "D", "text": "To delete a field from the object", "isCorrect": false, "explanation": "Java doesn't support deleting individual fields at runtime this way." }
     ],
     "explanation": "An accessor (getter) method returns the current value of a field.",
     "conceptLink": "ap-csa/unit-5-writing-classes/accessor-and-mutator-methods",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "Why is it considered good practice to use accessor/mutator methods instead of making fields public directly?",
     "choices": [
-      { "label": "A", "text": "It makes the code run faster", "isCorrect": false, "explanation": "Accessor/mutator methods don't inherently make code run faster; the benefit is about control and encapsulation." },
-      { "label": "B", "text": "It lets the class control how its fields are read and modified, e.g. validating a new value in a setter", "isCorrect": true, "explanation": "Encapsulating fields behind methods lets the class enforce rules about how its data can change." },
-      { "label": "C", "text": "It is required by the Java compiler", "isCorrect": false, "explanation": "The Java compiler does not require accessor/mutator methods; public fields are legal, just not best practice." },
-      { "label": "D", "text": "It has no real benefit; it's purely stylistic", "isCorrect": false, "explanation": "There's a real, substantive benefit (encapsulation and validation), not just style." }
+      { "label": "A", "text": "It makes the code run faster, since the compiler optimizes access through methods", "isCorrect": false, "explanation": "Accessor/mutator methods don't inherently make code run faster; the benefit is about control and encapsulation." },
+      { "label": "B", "text": "It lets the class control how fields are read and modified, e.g., validating a new value in a setter", "isCorrect": true, "explanation": "Encapsulating fields behind methods lets the class enforce rules about how its data can change." },
+      { "label": "C", "text": "It is required by the Java compiler, which refuses to compile any class with public fields", "isCorrect": false, "explanation": "The Java compiler does not require accessor/mutator methods; public fields are legal, just not best practice." },
+      { "label": "D", "text": "It has no real benefit; it's purely stylistic and changes nothing about how the program behaves", "isCorrect": false, "explanation": "There's a real, substantive benefit (encapsulation and validation), not just style." }
     ],
     "explanation": "Accessor/mutator methods let a class control and validate how its data is read and changed, supporting encapsulation.",
     "conceptLink": "ap-csa/unit-5-writing-classes/accessor-and-mutator-methods",
@@ -246,10 +246,10 @@
     "difficulty": "easy",
     "stem": "What are the components of a method signature?",
     "choices": [
-      { "label": "A", "text": "Only the method name", "isCorrect": false, "explanation": "A signature includes parameter types too, not just the name." },
-      { "label": "B", "text": "The method's name and its parameter types (not the return type)", "isCorrect": true, "explanation": "A method's signature is defined by its name plus the number and types of its parameters." },
-      { "label": "C", "text": "Only the return type", "isCorrect": false, "explanation": "The return type alone doesn't identify a method -- and it isn't even part of the signature in Java." },
-      { "label": "D", "text": "The entire method body", "isCorrect": false, "explanation": "The method body (its implementation) is separate from the signature." }
+      { "label": "A", "text": "Only the method name together with its return type", "isCorrect": false, "explanation": "A signature includes parameter types too, not just the name." },
+      { "label": "B", "text": "The method's name and its parameter types, not the return type", "isCorrect": true, "explanation": "A method's signature is defined by its name plus the number and types of its parameters." },
+      { "label": "C", "text": "Only the return type and the access modifier", "isCorrect": false, "explanation": "The return type alone doesn't identify a method -- and it isn't even part of the signature in Java." },
+      { "label": "D", "text": "The entire method body along with its parameter types", "isCorrect": false, "explanation": "The method body (its implementation) is separate from the signature." }
     ],
     "explanation": "A method's signature consists of its name and parameter types; the return type is not part of the signature.",
     "conceptLink": "ap-csa/unit-5-writing-classes/writing-methods",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "What must every non-void method in Java include?",
     "choices": [
-      { "label": "A", "text": "A loop", "isCorrect": false, "explanation": "A loop isn't required for a method to compile; many valid methods have no loops." },
-      { "label": "B", "text": "At least one return statement that provides a value of the declared return type", "isCorrect": true, "explanation": "Every possible execution path through a non-void method must reach a return statement providing a value of the correct type." },
-      { "label": "C", "text": "A parameter", "isCorrect": false, "explanation": "A method can have zero parameters and still be a valid non-void method." },
-      { "label": "D", "text": "A static keyword", "isCorrect": false, "explanation": "static is unrelated to whether a method returns a value." }
+      { "label": "A", "text": "A loop that runs at least once before it returns", "isCorrect": false, "explanation": "A loop isn't required for a method to compile; many valid methods have no loops." },
+      { "label": "B", "text": "A return statement that provides a value of the declared type", "isCorrect": true, "explanation": "Every possible execution path through a non-void method must reach a return statement providing a value of the correct type." },
+      { "label": "C", "text": "A parameter of some kind, used in the return", "isCorrect": false, "explanation": "A method can have zero parameters and still be a valid non-void method." },
+      { "label": "D", "text": "A static keyword in its header, before the type", "isCorrect": false, "explanation": "static is unrelated to whether a method returns a value." }
     ],
     "explanation": "A non-void method must return a value of its declared type along every possible execution path.",
     "conceptLink": "ap-csa/unit-5-writing-classes/writing-methods",
@@ -326,10 +326,10 @@
     "difficulty": "easy",
     "stem": "What does the `static` keyword indicate about a field?",
     "choices": [
-      { "label": "A", "text": "The field belongs to each individual object separately", "isCorrect": false, "explanation": "This describes an ordinary (non-static) instance field, not a static one." },
+      { "label": "A", "text": "The field belongs to each individual object separately, with its own copy", "isCorrect": false, "explanation": "This describes an ordinary (non-static) instance field, not a static one." },
       { "label": "B", "text": "The field belongs to the class itself, shared by all instances", "isCorrect": true, "explanation": "A static field exists once per class, not once per object, so all instances share the same value." },
-      { "label": "C", "text": "The field cannot ever change its value", "isCorrect": false, "explanation": "Static fields can still be reassigned; static doesn't mean \"unchangeable\" (that would be final)." },
-      { "label": "D", "text": "The field is private by default", "isCorrect": false, "explanation": "static doesn't automatically make a field private; access level is a separate modifier." }
+      { "label": "C", "text": "The field cannot ever change its value once it is set", "isCorrect": false, "explanation": "Static fields can still be reassigned; static doesn't mean \"unchangeable\" (that would be final)." },
+      { "label": "D", "text": "The field is private by default, hidden from other classes", "isCorrect": false, "explanation": "static doesn't automatically make a field private; access level is a separate modifier." }
     ],
     "explanation": "A `static` field belongs to the class as a whole, shared across every instance, rather than existing separately per object.",
     "conceptLink": "ap-csa/unit-5-writing-classes/static-variables-and-methods",
@@ -390,10 +390,10 @@
     "difficulty": "medium",
     "stem": "What is a key difference between a static method and an instance method?",
     "choices": [
-      { "label": "A", "text": "A static method can access instance (non-static) fields directly, just like an instance method", "isCorrect": false, "explanation": "This is backwards -- static methods do NOT have direct access to instance fields, since there's no particular object they belong to." },
+      { "label": "A", "text": "A static method can access instance (non-static) fields directly, just like an instance method can", "isCorrect": false, "explanation": "This is backwards -- static methods do NOT have direct access to instance fields, since there's no particular object they belong to." },
       { "label": "B", "text": "A static method cannot access instance fields directly, since it isn't tied to any particular object", "isCorrect": true, "explanation": "Because a static method runs without an associated object, it has no implicit access to instance fields." },
-      { "label": "C", "text": "A static method must always return void", "isCorrect": false, "explanation": "Static methods can have any return type, not just void." },
-      { "label": "D", "text": "An instance method cannot take parameters", "isCorrect": false, "explanation": "Instance methods can absolutely take parameters, just like static methods." }
+      { "label": "C", "text": "A static method must always return void, never a value", "isCorrect": false, "explanation": "Static methods can have any return type, not just void." },
+      { "label": "D", "text": "An instance method cannot take parameters, only static ones can", "isCorrect": false, "explanation": "Instance methods can absolutely take parameters, just like static methods." }
     ],
     "explanation": "A static method has no implicit reference to any specific object, so it cannot directly access instance fields.",
     "conceptLink": "ap-csa/unit-5-writing-classes/static-variables-and-methods",
@@ -406,10 +406,10 @@
     "difficulty": "easy",
     "stem": "What does \"scope\" refer to in Java?",
     "choices": [
-      { "label": "A", "text": "The color scheme of the IDE", "isCorrect": false, "explanation": "IDE appearance is unrelated to the programming concept of scope." },
+      { "label": "A", "text": "The color scheme that the IDE uses to display Java code", "isCorrect": false, "explanation": "IDE appearance is unrelated to the programming concept of scope." },
       { "label": "B", "text": "The region of code where a variable is accessible/visible", "isCorrect": true, "explanation": "Scope defines exactly where in the code a given variable can be referenced." },
-      { "label": "C", "text": "The size of a file", "isCorrect": false, "explanation": "File size is unrelated to scope." },
-      { "label": "D", "text": "The speed of a program", "isCorrect": false, "explanation": "Program speed/performance is unrelated to scope." }
+      { "label": "C", "text": "The size of a source file measured in kilobytes", "isCorrect": false, "explanation": "File size is unrelated to scope." },
+      { "label": "D", "text": "The speed at which a program runs on a computer", "isCorrect": false, "explanation": "Program speed/performance is unrelated to scope." }
     ],
     "explanation": "Scope refers to the region of code within which a declared variable can be accessed.",
     "conceptLink": "ap-csa/unit-5-writing-classes/scope-and-this",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "What is the scope of a variable declared inside a method (a local variable)?",
     "choices": [
-      { "label": "A", "text": "It is accessible everywhere in the program", "isCorrect": false, "explanation": "Local variables are NOT accessible everywhere; their scope is limited to where they're declared." },
-      { "label": "B", "text": "It is accessible only within that method (or the block where it's declared)", "isCorrect": true, "explanation": "A local variable exists only for the duration of, and within, the method or block that declares it." },
-      { "label": "C", "text": "It is accessible in every class", "isCorrect": false, "explanation": "Local variables aren't visible outside their own method, let alone in other classes." },
-      { "label": "D", "text": "It becomes a field automatically", "isCorrect": false, "explanation": "A local variable stays local; it doesn't automatically become a field just by being declared inside a method." }
+      { "label": "A", "text": "It is accessible everywhere in the program, in every class", "isCorrect": false, "explanation": "Local variables are NOT accessible everywhere; their scope is limited to where they're declared." },
+      { "label": "B", "text": "It is accessible only within that method (or block where it's declared)", "isCorrect": true, "explanation": "A local variable exists only for the duration of, and within, the method or block that declares it." },
+      { "label": "C", "text": "It is accessible in every class, once the method has run", "isCorrect": false, "explanation": "Local variables aren't visible outside their own method, let alone in other classes." },
+      { "label": "D", "text": "It becomes a field automatically when the method ends", "isCorrect": false, "explanation": "A local variable stays local; it doesn't automatically become a field just by being declared inside a method." }
     ],
     "explanation": "A local variable's scope is limited to the method (or block) in which it is declared.",
     "conceptLink": "ap-csa/unit-5-writing-classes/scope-and-this",
@@ -438,10 +438,10 @@
     "difficulty": "hard",
     "stem": "Why is `this` needed in this constructor?\n\n```java\npublic class Dog {\n    private String name;\n\n    public Dog(String name) {\n        this.name = name;\n    }\n}\n```",
     "choices": [
-      { "label": "A", "text": "It isn't needed; it's just decorative", "isCorrect": false, "explanation": "Without this.name, `name = name;` would just assign the parameter to itself, never actually setting the field." },
+      { "label": "A", "text": "It isn't needed; it's just decorative and could be removed without changing what the constructor does", "isCorrect": false, "explanation": "Without this.name, `name = name;` would just assign the parameter to itself, never actually setting the field." },
       { "label": "B", "text": "The parameter name shadows the field name, so `this.name` distinguishes the field from the parameter", "isCorrect": true, "explanation": "Since the parameter and field share the name \"name\", this.name explicitly refers to the field, resolving the ambiguity." },
-      { "label": "C", "text": "It converts name to a String", "isCorrect": false, "explanation": "\"this\" has nothing to do with type conversion." },
-      { "label": "D", "text": "It creates a new Dog object", "isCorrect": false, "explanation": "\"this\" refers to the current object being constructed; it doesn't create a new one." }
+      { "label": "C", "text": "It converts name to a String before assigning it", "isCorrect": false, "explanation": "\"this\" has nothing to do with type conversion." },
+      { "label": "D", "text": "It creates a new Dog object each time the constructor runs", "isCorrect": false, "explanation": "\"this\" refers to the current object being constructed; it doesn't create a new one." }
     ],
     "explanation": "`this.name` distinguishes the field from the parameter of the same name, which would otherwise shadow it.",
     "conceptLink": "ap-csa/unit-5-writing-classes/scope-and-this",

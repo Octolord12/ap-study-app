@@ -7,9 +7,9 @@
     "stem": "What does the average rate of change of f(x) over [a,b] represent geometrically?",
     "choices": [
       { "label": "A", "text": "The slope of the secant line connecting (a, f(a)) and (b, f(b))", "isCorrect": true, "explanation": "The average rate of change is exactly the slope of the line connecting the two endpoints of the interval." },
-      { "label": "B", "text": "The slope of the tangent line at x=a", "isCorrect": false, "explanation": "The slope of the tangent line at a single point describes the INSTANTANEOUS rate of change, not the average rate of change over an interval." },
-      { "label": "C", "text": "The value of f at the midpoint of [a,b]", "isCorrect": false, "explanation": "Average rate of change is about the slope between two points, not the function's value at any particular point." },
-      { "label": "D", "text": "The area under the curve from a to b", "isCorrect": false, "explanation": "Area under the curve relates to integration, a completely different concept from rate of change." }
+      { "label": "B", "text": "The slope of the tangent line at x=a, at the left endpoint", "isCorrect": false, "explanation": "The slope of the tangent line at a single point describes the INSTANTANEOUS rate of change, not the average rate of change over an interval." },
+      { "label": "C", "text": "The value of f at the midpoint of [a,b], found by averaging f(a) and f(b)", "isCorrect": false, "explanation": "Average rate of change is about the slope between two points, not the function's value at any particular point." },
+      { "label": "D", "text": "The area under the curve from a to b, above the x-axis, which the secant does not measure", "isCorrect": false, "explanation": "Area under the curve relates to integration, a completely different concept from rate of change." }
     ],
     "explanation": "The average rate of change over [a,b] is the slope of the secant line connecting the interval's endpoints.",
     "conceptLink": "ap-calc/unit-2-differentiation-definition-and-properties/average-vs-instantaneous-rate-of-change",
@@ -54,7 +54,7 @@
     "difficulty": "hard",
     "stem": "For $f(x) = x^2$, use the difference quotient $\\dfrac{f(3+h)-f(3)}{h}$ to find the instantaneous rate of change at x=3.",
     "choices": [
-      { "label": "A", "text": "6, matching the exact derivative value 2(3)=6", "isCorrect": true, "explanation": "[(3+h)^2 - 9]/h = [6h+h^2]/h = 6+h, which approaches 6 as h approaches 0 -- matching the derivative 2x at x=3." },
+      { "label": "A", "text": "6", "isCorrect": true, "explanation": "[(3+h)^2 - 9]/h = [6h+h^2]/h = 6+h, which approaches 6 as h approaches 0 -- matching the derivative 2x at x=3." },
       { "label": "B", "text": "3", "isCorrect": false, "explanation": "This is just the x-value itself, not the correctly computed rate of change." },
       { "label": "C", "text": "9", "isCorrect": false, "explanation": "This is f(3) itself (the function's value), not its rate of change." },
       { "label": "D", "text": "0", "isCorrect": false, "explanation": "The rate of change is not zero; x^2 is actively increasing at x=3." }
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "Why does the instantaneous rate of change require a limit (as opposed to simply computing an average rate of change over a small interval)?",
     "choices": [
-      { "label": "A", "text": "Because we want the rate of change AT a single exact point, which requires shrinking the interval width to zero via a limit", "isCorrect": true, "explanation": "The limit process shrinks the interval to a single point, capturing the exact instantaneous rate rather than an approximation over a small interval." },
-      { "label": "B", "text": "Because limits are only used for infinite intervals", "isCorrect": false, "explanation": "Limits used in this context specifically involve the interval width SHRINKING to zero, not extending to infinity." },
-      { "label": "C", "text": "Because average rates of change are always more accurate", "isCorrect": false, "explanation": "Average rates of change describe a broader interval's overall trend, not necessarily a \"more accurate\" measure than the instantaneous rate at a single point." },
-      { "label": "D", "text": "There is no real distinction between the two concepts", "isCorrect": false, "explanation": "There is a very real, meaningful distinction: average rate of change is over an interval, while instantaneous rate is a limit at a single point." }
+      { "label": "A", "text": "Because we want the rate of change AT a single point, which requires shrinking the interval to zero width with a limit", "isCorrect": true, "explanation": "The limit process shrinks the interval to a single point, capturing the exact instantaneous rate rather than an approximation over a small interval." },
+      { "label": "B", "text": "Because limits are only used for infinite intervals, so a finite interval such as [a,b] can never require one", "isCorrect": false, "explanation": "Limits used in this context specifically involve the interval width SHRINKING to zero, not extending to infinity." },
+      { "label": "C", "text": "Because average rates of change are always more accurate than any limit-based calculation could be", "isCorrect": false, "explanation": "Average rates of change describe a broader interval's overall trend, not necessarily a \"more accurate\" measure than the instantaneous rate at a single point." },
+      { "label": "D", "text": "There is no real distinction between the two concepts, since a small interval gives the same answer", "isCorrect": false, "explanation": "There is a very real, meaningful distinction: average rate of change is over an interval, while instantaneous rate is a limit at a single point." }
     ],
     "explanation": "A limit is needed to shrink the interval width to zero, capturing the rate of change at a single exact point.",
     "conceptLink": "ap-calc/unit-2-differentiation-definition-and-properties/average-vs-instantaneous-rate-of-change",
@@ -135,9 +135,9 @@
     "stem": "Is the converse true -- does continuity at a point guarantee differentiability at that point?",
     "choices": [
       { "label": "A", "text": "No, a function can be continuous at a point without being differentiable there (e.g., a sharp corner)", "isCorrect": true, "explanation": "Continuity is necessary but not sufficient for differentiability; a function like |x| is continuous but not differentiable at x=0." },
-      { "label": "B", "text": "Yes, continuity always guarantees differentiability", "isCorrect": false, "explanation": "This reverses the true one-directional relationship; continuity alone does NOT guarantee differentiability." },
-      { "label": "C", "text": "Continuity and differentiability are always equivalent conditions", "isCorrect": false, "explanation": "These are NOT always equivalent; differentiability is the stronger of the two conditions." },
-      { "label": "D", "text": "Differentiability is a weaker condition than continuity", "isCorrect": false, "explanation": "This also reverses the relationship; differentiability is actually the STRONGER (more restrictive) condition, not weaker." }
+      { "label": "B", "text": "Yes, continuity always guarantees differentiability, since both describe the same smooth behavior at a point", "isCorrect": false, "explanation": "This reverses the true one-directional relationship; continuity alone does NOT guarantee differentiability." },
+      { "label": "C", "text": "Continuity and differentiability are always equivalent conditions for functions of one variable on any interval", "isCorrect": false, "explanation": "These are NOT always equivalent; differentiability is the stronger of the two conditions." },
+      { "label": "D", "text": "Differentiability is a weaker condition than continuity, so it is easier for a function to meet", "isCorrect": false, "explanation": "This also reverses the relationship; differentiability is actually the STRONGER (more restrictive) condition, not weaker." }
     ],
     "explanation": "Continuity does not guarantee differentiability; a function can have a sharp corner and be continuous but not differentiable there.",
     "conceptLink": "ap-calc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
@@ -150,10 +150,10 @@
     "difficulty": "hard",
     "stem": "The function f(x) = |x| is continuous at x=0 but not differentiable there. Why?",
     "choices": [
-      { "label": "A", "text": "The left-hand derivative and right-hand derivative at x=0 are not equal (they are -1 and 1 respectively), so the derivative doesn't exist there despite continuity", "isCorrect": true, "explanation": "Since the one-sided derivatives disagree, the two-sided derivative fails to exist, even though f is continuous at x=0." },
-      { "label": "B", "text": "|x| is not continuous at x=0", "isCorrect": false, "explanation": "|x| IS continuous at x=0 (the limit and function value both equal 0 there); the issue is specifically about differentiability, not continuity." },
-      { "label": "C", "text": "f(0) is undefined", "isCorrect": false, "explanation": "f(0) = |0| = 0 is perfectly well-defined." },
-      { "label": "D", "text": "|x| has no defined value anywhere", "isCorrect": false, "explanation": "|x| is defined and has clear values for every real number, including at x=0." }
+      { "label": "A", "text": "The left- and right-hand derivatives at x=0 are -1 and 1, so they are not equal and the derivative does not exist despite continuity", "isCorrect": true, "explanation": "Since the one-sided derivatives disagree, the two-sided derivative fails to exist, even though f is continuous at x=0." },
+      { "label": "B", "text": "|x| is not continuous at x=0, because the graph has a jump at the origin where the left and right branches meet", "isCorrect": false, "explanation": "|x| IS continuous at x=0 (the limit and function value both equal 0 there); the issue is specifically about differentiability, not continuity." },
+      { "label": "C", "text": "f(0) is undefined, so there is no value of the function at the origin from which a derivative could be computed", "isCorrect": false, "explanation": "f(0) = |0| = 0 is perfectly well-defined." },
+      { "label": "D", "text": "|x| has no defined value anywhere on the real line, so it cannot be differentiated at x=0 or at any other point", "isCorrect": false, "explanation": "|x| is defined and has clear values for every real number, including at x=0." }
     ],
     "explanation": "The left-hand and right-hand derivatives of |x| at x=0 are -1 and 1 respectively, so they disagree and the derivative doesn't exist there.",
     "conceptLink": "ap-calc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
@@ -167,8 +167,8 @@
     "stem": "What geometric feature of a function's graph typically indicates a point where the function is NOT differentiable (despite possibly being continuous there)?",
     "choices": [
       { "label": "A", "text": "A sharp corner, cusp, or vertical tangent line", "isCorrect": true, "explanation": "These features indicate the function's slope is not well-defined at that point, even if the function value itself is continuous." },
-      { "label": "B", "text": "A smooth, rounded curve", "isCorrect": false, "explanation": "A smooth, rounded curve is actually characteristic of a DIFFERENTIABLE function, not a non-differentiable one." },
-      { "label": "C", "text": "A straight line segment", "isCorrect": false, "explanation": "A straight line segment is smoothly differentiable throughout (its derivative is just the constant slope)." },
+      { "label": "B", "text": "A smooth, rounded curve with no breaks or sharp turns anywhere", "isCorrect": false, "explanation": "A smooth, rounded curve is actually characteristic of a DIFFERENTIABLE function, not a non-differentiable one." },
+      { "label": "C", "text": "A straight line segment with a constant, nonzero slope", "isCorrect": false, "explanation": "A straight line segment is smoothly differentiable throughout (its derivative is just the constant slope)." },
       { "label": "D", "text": "Any point where the function is positive", "isCorrect": false, "explanation": "Whether a function's value is positive has no bearing on differentiability; differentiability is about the shape/smoothness of the graph." }
     ],
     "explanation": "Sharp corners, cusps, and vertical tangent lines are geometric features that typically indicate non-differentiability.",
@@ -183,9 +183,9 @@
     "stem": "What does it mean for a function to be \"differentiable on an interval\"?",
     "choices": [
       { "label": "A", "text": "The function has a well-defined derivative at every point within that interval", "isCorrect": true, "explanation": "Differentiability on an interval means the derivative exists at every single point in that interval." },
-      { "label": "B", "text": "The function is defined at only one point in the interval", "isCorrect": false, "explanation": "Being differentiable \"on an interval\" means having a well-defined derivative at EVERY point in that interval, not just one point." },
-      { "label": "C", "text": "The function must be a straight line throughout the interval", "isCorrect": false, "explanation": "Differentiability doesn't require the function to be linear; many differentiable functions are curved." },
-      { "label": "D", "text": "The function's derivative is always zero throughout the interval", "isCorrect": false, "explanation": "The derivative existing doesn't mean it must be zero everywhere; it just needs to EXIST at each point (it can take any value)." }
+      { "label": "B", "text": "The function is defined at only one point in the interval and nowhere else on it", "isCorrect": false, "explanation": "Being differentiable \"on an interval\" means having a well-defined derivative at EVERY point in that interval, not just one point." },
+      { "label": "C", "text": "The function must be a straight line throughout the interval, with a constant slope", "isCorrect": false, "explanation": "Differentiability doesn't require the function to be linear; many differentiable functions are curved." },
+      { "label": "D", "text": "The function's derivative is always zero throughout the interval, so its graph is a flat line", "isCorrect": false, "explanation": "The derivative existing doesn't mean it must be zero everywhere; it just needs to EXIST at each point (it can take any value)." }
     ],
     "explanation": "Differentiable on an interval means the derivative exists at every point in that interval.",
     "conceptLink": "ap-calc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
@@ -471,9 +471,9 @@
     "stem": "Which differentiation rule would be most appropriate to differentiate $f(x) = (3x^2 + 1)(x^3 - 2x)$?",
     "choices": [
       { "label": "A", "text": "The Product Rule, since f(x) is a product of two separate functions", "isCorrect": true, "explanation": "f(x) is structured as a product of two polynomial expressions, so the Product Rule is the appropriate tool." },
-      { "label": "B", "text": "The Quotient Rule, since there is division involved", "isCorrect": false, "explanation": "There is no division in this expression; it's a product of two polynomial expressions, not a quotient." },
-      { "label": "C", "text": "The Power Rule alone, without needing any other rule", "isCorrect": false, "explanation": "While the Power Rule is used within the computation, the overall structure (a product of two non-constant expressions) specifically requires the Product Rule." },
-      { "label": "D", "text": "The Sum Rule, since there are multiple terms being added", "isCorrect": false, "explanation": "This expression is a PRODUCT of two factors, not a sum of separate terms at the top level; the Sum Rule wouldn't correctly handle this structure." }
+      { "label": "B", "text": "The Quotient Rule, since there is division involved in the expression", "isCorrect": false, "explanation": "There is no division in this expression; it's a product of two polynomial expressions, not a quotient." },
+      { "label": "C", "text": "The Power Rule alone, without needing any other rule or any expansion", "isCorrect": false, "explanation": "While the Power Rule is used within the computation, the overall structure (a product of two non-constant expressions) specifically requires the Product Rule." },
+      { "label": "D", "text": "The Sum Rule, since there are multiple terms being added together in the expression", "isCorrect": false, "explanation": "This expression is a PRODUCT of two factors, not a sum of separate terms at the top level; the Sum Rule wouldn't correctly handle this structure." }
     ],
     "explanation": "Since f(x) is a product of two polynomial factors, the Product Rule is the appropriate differentiation technique.",
     "conceptLink": "ap-calc/unit-2-differentiation-definition-and-properties/sum-difference-product-quotient-rules",

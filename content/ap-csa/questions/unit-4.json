@@ -390,10 +390,10 @@
     "difficulty": "easy",
     "stem": "In a nested loop, how does the inner loop's condition get checked, relative to the outer loop?",
     "choices": [
-      { "label": "A", "text": "Once per outer iteration, and nothing more", "isCorrect": false, "explanation": "The inner loop runs its full course -- potentially many condition checks -- during each outer iteration, not just a single check." },
-      { "label": "B", "text": "Only once total, regardless of the outer loop", "isCorrect": false, "explanation": "The inner loop restarts and is checked again for every outer iteration, not just once overall." },
+      { "label": "A", "text": "Once per outer iteration, and nothing more after that is checked", "isCorrect": false, "explanation": "The inner loop runs its full course -- potentially many condition checks -- during each outer iteration, not just a single check." },
+      { "label": "B", "text": "Only once total, regardless of the outer loop's behavior", "isCorrect": false, "explanation": "The inner loop restarts and is checked again for every outer iteration, not just once overall." },
       { "label": "C", "text": "Repeatedly, in full, during every single outer iteration", "isCorrect": true, "explanation": "Each time the outer loop body runs, the inner loop restarts from its initialization and runs its full course again." },
-      { "label": "D", "text": "Never, unless the outer loop finishes first", "isCorrect": false, "explanation": "The inner loop runs during each outer iteration, not after the outer loop is already done." }
+      { "label": "D", "text": "Never, unless the outer loop has already finished", "isCorrect": false, "explanation": "The inner loop runs during each outer iteration, not after the outer loop is already done." }
     ],
     "explanation": "The inner loop is a complete loop in its own right that restarts and runs fully each time the outer loop body executes.",
     "conceptLink": "ap-csa/unit-4-iteration/nested-iteration",

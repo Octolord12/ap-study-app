@@ -6,10 +6,10 @@
     "difficulty": "easy",
     "stem": "What is the difference between \"distance\" and \"displacement\"?",
     "choices": [
-      { "label": "A", "text": "Distance is the total length of path traveled (scalar); displacement is the straight-line change in position from start to end (vector)", "isCorrect": true, "explanation": "Distance is a scalar measuring total path length; displacement is a vector measuring the net change in position." },
-      { "label": "B", "text": "They are always exactly the same value", "isCorrect": false, "explanation": "They are equal only when motion is in a straight line with no reversal in direction; in general they differ." },
-      { "label": "C", "text": "Distance is a vector and displacement is a scalar", "isCorrect": false, "explanation": "This reverses the correct classification -- distance is the scalar, displacement is the vector." },
-      { "label": "D", "text": "Displacement is always greater than distance", "isCorrect": false, "explanation": "Displacement's magnitude is never greater than distance traveled; it can be equal to or less than it." }
+      { "label": "A", "text": "Distance is the total length of the path traveled (scalar); displacement is the straight-line change in position (vector)", "isCorrect": true, "explanation": "Distance is a scalar measuring total path length; displacement is a vector measuring the net change in position." },
+      { "label": "B", "text": "They are always exactly the same value, since both measure how far the object has moved along its path", "isCorrect": false, "explanation": "They are equal only when motion is in a straight line with no reversal in direction; in general they differ." },
+      { "label": "C", "text": "Distance is a vector and displacement is a scalar, so only distance has a direction attached to it", "isCorrect": false, "explanation": "This reverses the correct classification -- distance is the scalar, displacement is the vector." },
+      { "label": "D", "text": "Displacement is always greater than distance, since it includes the direction of motion as well as length", "isCorrect": false, "explanation": "Displacement's magnitude is never greater than distance traveled; it can be equal to or less than it." }
     ],
     "explanation": "Distance is the total scalar path length traveled; displacement is the vector representing the net change in position.",
     "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
@@ -71,9 +71,9 @@
     "stem": "What does \"instantaneous velocity\" refer to?",
     "choices": [
       { "label": "A", "text": "The velocity of an object at a single specific moment in time", "isCorrect": true, "explanation": "Instantaneous velocity is the velocity at one specific instant, as opposed to averaged over an interval." },
-      { "label": "B", "text": "The velocity averaged over the entire trip", "isCorrect": false, "explanation": "This describes average velocity, not instantaneous velocity." },
-      { "label": "C", "text": "The maximum velocity reached during the motion", "isCorrect": false, "explanation": "Instantaneous velocity refers to velocity at a given moment, not specifically the maximum value reached." },
-      { "label": "D", "text": "The velocity only at the very end of the motion", "isCorrect": false, "explanation": "Instantaneous velocity can be evaluated at any moment, not just the final one." }
+      { "label": "B", "text": "The velocity averaged over the entire trip, from start to finish", "isCorrect": false, "explanation": "This describes average velocity, not instantaneous velocity." },
+      { "label": "C", "text": "The maximum velocity reached at any time during the motion", "isCorrect": false, "explanation": "Instantaneous velocity refers to velocity at a given moment, not specifically the maximum value reached." },
+      { "label": "D", "text": "The velocity only at the very end of the motion, at the final instant", "isCorrect": false, "explanation": "Instantaneous velocity can be evaluated at any moment, not just the final one." }
     ],
     "explanation": "Instantaneous velocity is an object's velocity at one specific moment in time.",
     "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
@@ -102,10 +102,10 @@
     "difficulty": "hard",
     "stem": "Can an object have a negative acceleration while speeding up?",
     "choices": [
-      { "label": "A", "text": "Yes -- if the object is moving in the negative direction, a negative acceleration (in the same direction as the velocity) increases its speed", "isCorrect": true, "explanation": "Sign only indicates direction; acceleration in the same direction as velocity always increases speed, regardless of the sign convention chosen." },
-      { "label": "B", "text": "No -- negative acceleration always means the object is slowing down", "isCorrect": false, "explanation": "This is a common misconception -- \"negative\" just means the acceleration vector points in the negative direction, which speeds up an object already moving in that direction." },
-      { "label": "C", "text": "No -- acceleration can never be negative under any circumstances", "isCorrect": false, "explanation": "Acceleration is a vector and its sign simply reflects direction relative to the chosen positive axis; it can absolutely be negative." },
-      { "label": "D", "text": "Yes, but only if the object is momentarily at rest", "isCorrect": false, "explanation": "This isn't a necessary condition -- an object already moving in the negative direction speeds up under negative acceleration regardless of whether it was ever at rest." }
+      { "label": "A", "text": "Yes -- if the object moves in the negative direction, a negative acceleration (in the same direction as the velocity) increases its speed", "isCorrect": true, "explanation": "Sign only indicates direction; acceleration in the same direction as velocity always increases speed, regardless of the sign convention chosen." },
+      { "label": "B", "text": "No -- negative acceleration always means the object is slowing down, whatever the direction of its motion or the sign of its velocity in every case", "isCorrect": false, "explanation": "This is a common misconception -- \"negative\" just means the acceleration vector points in the negative direction, which speeds up an object already moving in that direction." },
+      { "label": "C", "text": "No -- acceleration can never be negative under any circumstances, because it measures only the size of a change", "isCorrect": false, "explanation": "Acceleration is a vector and its sign simply reflects direction relative to the chosen positive axis; it can absolutely be negative." },
+      { "label": "D", "text": "Yes, but only if the object is momentarily at rest at the moment the acceleration is measured", "isCorrect": false, "explanation": "This isn't a necessary condition -- an object already moving in the negative direction speeds up under negative acceleration regardless of whether it was ever at rest." }
     ],
     "explanation": "An object speeds up whenever its acceleration points in the same direction as its velocity -- regardless of whether that direction is labeled positive or negative.",
     "conceptLink": "ap-physics-1/unit-1-kinematics/position-velocity-acceleration",
@@ -135,9 +135,9 @@
     "stem": "On a velocity-vs-time graph, what does the slope at any point represent?",
     "choices": [
       { "label": "A", "text": "The instantaneous acceleration at that point", "isCorrect": true, "explanation": "The slope of a velocity-time graph, dv/dt, is by definition the instantaneous acceleration." },
-      { "label": "B", "text": "The instantaneous velocity at that point", "isCorrect": false, "explanation": "Velocity is read directly from the vertical axis value, not the slope, of a velocity-time graph." },
-      { "label": "C", "text": "The displacement", "isCorrect": false, "explanation": "Displacement is the AREA under a velocity-time graph, not its slope." },
-      { "label": "D", "text": "The object's position", "isCorrect": false, "explanation": "Position isn't directly represented by the slope of a velocity-time graph." }
+      { "label": "B", "text": "The instantaneous velocity at that point on the graph", "isCorrect": false, "explanation": "Velocity is read directly from the vertical axis value, not the slope, of a velocity-time graph." },
+      { "label": "C", "text": "The total displacement of the object", "isCorrect": false, "explanation": "Displacement is the AREA under a velocity-time graph, not its slope." },
+      { "label": "D", "text": "The object's position at that moment", "isCorrect": false, "explanation": "Position isn't directly represented by the slope of a velocity-time graph." }
     ],
     "explanation": "The slope of a velocity-time graph represents instantaneous acceleration.",
     "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
@@ -151,9 +151,9 @@
     "stem": "On a velocity-vs-time graph, what does the area under the curve between two times represent?",
     "choices": [
       { "label": "A", "text": "The displacement of the object during that time interval", "isCorrect": true, "explanation": "The area under a velocity-time graph equals the definite integral of velocity, which is displacement." },
-      { "label": "B", "text": "The acceleration of the object", "isCorrect": false, "explanation": "Acceleration is the SLOPE of a velocity-time graph, not the area under it." },
-      { "label": "C", "text": "The mass of the object", "isCorrect": false, "explanation": "Mass has no relationship to the area under a velocity-time graph." },
-      { "label": "D", "text": "The maximum velocity reached", "isCorrect": false, "explanation": "The maximum velocity would be read directly from the graph's peak height, not the area under it." }
+      { "label": "B", "text": "The acceleration of the object at the end of that interval", "isCorrect": false, "explanation": "Acceleration is the SLOPE of a velocity-time graph, not the area under it." },
+      { "label": "C", "text": "The mass of the object being measured", "isCorrect": false, "explanation": "Mass has no relationship to the area under a velocity-time graph." },
+      { "label": "D", "text": "The maximum velocity reached during the interval", "isCorrect": false, "explanation": "The maximum velocity would be read directly from the graph's peak height, not the area under it." }
     ],
     "explanation": "The area under a velocity-time graph equals the object's displacement over that interval.",
     "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
@@ -264,9 +264,9 @@
     "stem": "The position-time graph below shows an object's motion from t=0 to t=4 s. What does this graph indicate about the object's motion?",
     "choices": [
       { "label": "A", "text": "The object moves at a constant velocity of -2 m/s (in the negative direction)", "isCorrect": true, "explanation": "The graph is a straight line with constant negative slope: (2-10)/(4-0) = -8/4 = -2 m/s, indicating constant velocity in the negative direction." },
-      { "label": "B", "text": "The object is speeding up in the positive direction", "isCorrect": false, "explanation": "The position is DECREASING (not increasing), and the slope is constant (not curving), so this doesn't describe the motion shown." },
-      { "label": "C", "text": "The object is at rest for the entire interval", "isCorrect": false, "explanation": "The position changes continuously from 10 m to 2 m, so the object is clearly moving, not at rest." },
-      { "label": "D", "text": "The object's velocity is increasing over time", "isCorrect": false, "explanation": "The graph is a straight line, meaning the slope (velocity) is CONSTANT throughout, not increasing." }
+      { "label": "B", "text": "The object is speeding up in the positive direction as time passes, covering more distance each second", "isCorrect": false, "explanation": "The position is DECREASING (not increasing), and the slope is constant (not curving), so this doesn't describe the motion shown." },
+      { "label": "C", "text": "The object is at rest for the entire interval, at a fixed position", "isCorrect": false, "explanation": "The position changes continuously from 10 m to 2 m, so the object is clearly moving, not at rest." },
+      { "label": "D", "text": "The object's velocity is increasing over time, curving upward", "isCorrect": false, "explanation": "The graph is a straight line, meaning the slope (velocity) is CONSTANT throughout, not increasing." }
     ],
     "explanation": "The straight-line graph has a constant slope of -2 m/s, indicating constant velocity in the negative direction.",
     "conceptLink": "ap-physics-1/unit-1-kinematics/representations-of-motion",
@@ -418,10 +418,10 @@
     "difficulty": "medium",
     "stem": "For a projectile launched with some horizontal velocity (ignoring air resistance), how are its horizontal and vertical motions related?",
     "choices": [
-      { "label": "A", "text": "They are independent of each other -- horizontal velocity stays constant while vertical motion undergoes free-fall acceleration", "isCorrect": true, "explanation": "In projectile motion, horizontal and vertical motions are independent: horizontal velocity is constant (no horizontal force), while vertical motion accelerates due to gravity." },
-      { "label": "B", "text": "They are always equal in magnitude", "isCorrect": false, "explanation": "The horizontal and vertical velocity components are generally different and change independently over the course of the flight." },
-      { "label": "C", "text": "Horizontal motion also accelerates due to gravity", "isCorrect": false, "explanation": "Gravity acts only vertically (ignoring air resistance); it does not affect horizontal motion, which stays at constant velocity." },
-      { "label": "D", "text": "Vertical motion stops as soon as horizontal motion begins", "isCorrect": false, "explanation": "Both motions occur simultaneously throughout the flight; vertical motion doesn't stop when horizontal motion is present." }
+      { "label": "A", "text": "They are independent of each other: horizontal velocity stays constant while vertical motion has free-fall acceleration", "isCorrect": true, "explanation": "In projectile motion, horizontal and vertical motions are independent: horizontal velocity is constant (no horizontal force), while vertical motion accelerates due to gravity." },
+      { "label": "B", "text": "They are always equal in magnitude at every instant of the flight, so the two velocities match", "isCorrect": false, "explanation": "The horizontal and vertical velocity components are generally different and change independently over the course of the flight." },
+      { "label": "C", "text": "Horizontal motion also accelerates due to gravity, at the same rate as the vertical motion", "isCorrect": false, "explanation": "Gravity acts only vertically (ignoring air resistance); it does not affect horizontal motion, which stays at constant velocity." },
+      { "label": "D", "text": "Vertical motion stops as soon as horizontal motion begins, so the object moves in a straight line", "isCorrect": false, "explanation": "Both motions occur simultaneously throughout the flight; vertical motion doesn't stop when horizontal motion is present." }
     ],
     "explanation": "Horizontal and vertical motions in projectile motion are independent: horizontal velocity is constant, vertical motion accelerates under gravity.",
     "conceptLink": "ap-physics-1/unit-1-kinematics/projectile-motion",

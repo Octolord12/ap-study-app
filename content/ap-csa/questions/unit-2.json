@@ -38,8 +38,8 @@
     "difficulty": "medium",
     "stem": "What does a class define for the objects created from it?",
     "choices": [
-      { "label": "A", "text": "Only the object's methods, not its data", "isCorrect": false, "explanation": "A class defines fields (data) in addition to methods." },
-      { "label": "B", "text": "Only the object's data, not its methods", "isCorrect": false, "explanation": "A class defines methods (behavior) in addition to fields." },
+      { "label": "A", "text": "Only the object's methods, not its data, which each object stores elsewhere", "isCorrect": false, "explanation": "A class defines fields (data) in addition to methods." },
+      { "label": "B", "text": "Only the object's data, not its methods, which are defined separately", "isCorrect": false, "explanation": "A class defines methods (behavior) in addition to fields." },
       { "label": "C", "text": "Both the data (fields) and behavior (methods) of its objects", "isCorrect": true, "explanation": "A class bundles together the fields that store an object's state and the methods that define its behavior." },
       { "label": "D", "text": "Nothing; objects define their own structure independently", "isCorrect": false, "explanation": "Objects get their structure from the class that creates them, not independently." }
     ],
@@ -70,9 +70,9 @@
     "difficulty": "hard",
     "stem": "Two `Dog` objects, `dog1` and `dog2`, are created separately with `new`. Which statement is true?",
     "choices": [
-      { "label": "A", "text": "They automatically share the same field values", "isCorrect": false, "explanation": "Separately created objects do not automatically share field values; each has its own independent state." },
+      { "label": "A", "text": "They automatically share the same field values, since both come from one class", "isCorrect": false, "explanation": "Separately created objects do not automatically share field values; each has its own independent state." },
       { "label": "B", "text": "Each has its own independent copy of the fields defined in the Dog class", "isCorrect": true, "explanation": "Every object created with new gets its own separate storage for the fields defined by its class." },
-      { "label": "C", "text": "Changing dog1's fields always changes dog2's fields too", "isCorrect": false, "explanation": "Modifying one object's fields has no effect on a separate object's fields, since they aren't the same object." },
+      { "label": "C", "text": "Changing dog1's fields always changes dog2's fields too, because they share memory", "isCorrect": false, "explanation": "Modifying one object's fields has no effect on a separate object's fields, since they aren't the same object." },
       { "label": "D", "text": "Only one Dog object can exist in a program at a time", "isCorrect": false, "explanation": "A program can create as many Dog objects as memory allows." }
     ],
     "explanation": "Each call to `new Dog()` creates a distinct object with its own independent copy of the class's fields.",
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "What best describes \"abstraction\" as it applies to using objects?",
     "choices": [
-      { "label": "A", "text": "Making all fields and methods public", "isCorrect": false, "explanation": "Abstraction is about hiding complexity, which often relies on restricting access, not exposing everything." },
-      { "label": "B", "text": "Hiding implementation details behind a simpler interface, like calling a method without knowing exactly how it works internally", "isCorrect": true, "explanation": "Abstraction lets you use an object's methods (like .length() on a String) without needing to know how they're implemented." },
-      { "label": "C", "text": "Compiling code faster", "isCorrect": false, "explanation": "Abstraction is a design concept about managing complexity -- it's unrelated to compilation speed." },
-      { "label": "D", "text": "Removing all comments from code", "isCorrect": false, "explanation": "Comments are documentation and unrelated to abstraction as a programming concept." }
+      { "label": "A", "text": "Making all fields and methods public so that any other class can read or use them directly without restriction", "isCorrect": false, "explanation": "Abstraction is about hiding complexity, which often relies on restricting access, not exposing everything." },
+      { "label": "B", "text": "Hiding implementation details behind a simpler interface, like calling a method without knowing how it works inside", "isCorrect": true, "explanation": "Abstraction lets you use an object's methods (like .length() on a String) without needing to know how they're implemented." },
+      { "label": "C", "text": "Compiling code faster by skipping the steps that are not needed", "isCorrect": false, "explanation": "Abstraction is a design concept about managing complexity -- it's unrelated to compilation speed." },
+      { "label": "D", "text": "Removing all comments from code to make the program shorter", "isCorrect": false, "explanation": "Comments are documentation and unrelated to abstraction as a programming concept." }
     ],
     "explanation": "Abstraction means you can use an object through its methods without needing to understand its internal implementation.",
     "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "What does the `new` keyword do when creating an object?",
     "choices": [
-      { "label": "A", "text": "Declares a variable's type", "isCorrect": false, "explanation": "Declaring a variable's type happens separately (e.g. writing Dog myDog); new is about allocation and construction." },
+      { "label": "A", "text": "Declares a variable's type before any value is assigned to it", "isCorrect": false, "explanation": "Declaring a variable's type happens separately (e.g. writing Dog myDog); new is about allocation and construction." },
       { "label": "B", "text": "Allocates memory for a new object and calls its constructor", "isCorrect": true, "explanation": "new sets aside memory for the object's fields and runs the constructor to initialize it." },
-      { "label": "C", "text": "Deletes an existing object", "isCorrect": false, "explanation": "Java doesn't require manual deletion; new creates objects, it doesn't remove them." },
-      { "label": "D", "text": "Converts a primitive to an object", "isCorrect": false, "explanation": "new is for instantiating classes, not for converting primitive values." }
+      { "label": "C", "text": "Deletes an existing object and frees its memory for reuse", "isCorrect": false, "explanation": "Java doesn't require manual deletion; new creates objects, it doesn't remove them." },
+      { "label": "D", "text": "Converts a primitive to an object so that it can be passed around", "isCorrect": false, "explanation": "new is for instantiating classes, not for converting primitive values." }
     ],
     "explanation": "`new` allocates space for the object and invokes its constructor to set up its initial state.",
     "conceptLink": "ap-csa/unit-2-using-objects/creating-and-storing-objects",
@@ -246,10 +246,10 @@
     "difficulty": "hard",
     "stem": "What is the key difference between a void method and a non-void method?",
     "choices": [
-      { "label": "A", "text": "Void methods can't take parameters", "isCorrect": false, "explanation": "Void methods can take parameters -- e.g. setName(String name) is void but still takes a parameter." },
-      { "label": "B", "text": "A void method performs an action but returns no value; a non-void method returns a value that can be used", "isCorrect": true, "explanation": "This is the defining difference -- a non-void method's return value can be stored, printed, or used in an expression." },
-      { "label": "C", "text": "Non-void methods can only be called once", "isCorrect": false, "explanation": "Non-void methods can be called as many times as needed, just like void methods." },
-      { "label": "D", "text": "There is no difference; the terms are interchangeable", "isCorrect": false, "explanation": "There's a real, meaningful difference in whether a usable value comes back from the call." }
+      { "label": "A", "text": "Void methods can't take parameters, while non-void methods can take as many as the programmer chooses", "isCorrect": false, "explanation": "Void methods can take parameters -- e.g. setName(String name) is void but still takes a parameter." },
+      { "label": "B", "text": "A void method performs an action but returns no value; a non-void method returns a value you can use", "isCorrect": true, "explanation": "This is the defining difference -- a non-void method's return value can be stored, printed, or used in an expression." },
+      { "label": "C", "text": "Non-void methods can only be called once in a program, while void methods can be called repeatedly", "isCorrect": false, "explanation": "Non-void methods can be called as many times as needed, just like void methods." },
+      { "label": "D", "text": "There is no difference; the terms are interchangeable in Java, and the compiler treats them identically", "isCorrect": false, "explanation": "There's a real, meaningful difference in whether a usable value comes back from the call." }
     ],
     "explanation": "A non-void method's declared return type indicates it produces a value the caller can use; void means no value comes back.",
     "conceptLink": "ap-csa/unit-2-using-objects/calling-methods",
@@ -278,10 +278,10 @@
     "difficulty": "hard",
     "stem": "What happens if you try to use the return value of a `void` method, like `int x = myDog.bark();` where `bark` is declared void?",
     "choices": [
-      { "label": "A", "text": "x is assigned 0", "isCorrect": false, "explanation": "There's no automatic default value assigned -- this simply doesn't compile." },
-      { "label": "B", "text": "x is assigned null", "isCorrect": false, "explanation": "null applies to object references, not primitives like int, and this still wouldn't compile regardless." },
+      { "label": "A", "text": "x is assigned 0, the default value for an int", "isCorrect": false, "explanation": "There's no automatic default value assigned -- this simply doesn't compile." },
+      { "label": "B", "text": "x is assigned null, since no value was returned", "isCorrect": false, "explanation": "null applies to object references, not primitives like int, and this still wouldn't compile regardless." },
       { "label": "C", "text": "This is a compile error, since void methods don't produce a usable value", "isCorrect": true, "explanation": "The compiler rejects any attempt to use a void method's \"return value,\" since there isn't one." },
-      { "label": "D", "text": "The program compiles but crashes at runtime", "isCorrect": false, "explanation": "This is caught by the compiler before the program would ever run." }
+      { "label": "D", "text": "The program compiles but crashes at runtime, when the call to the void method finishes", "isCorrect": false, "explanation": "This is caught by the compiler before the program would ever run." }
     ],
     "explanation": "A void method produces no value, so trying to assign its call to a variable is a compile-time error.",
     "conceptLink": "ap-csa/unit-2-using-objects/calling-methods",
@@ -294,10 +294,10 @@
     "difficulty": "easy",
     "stem": "What does the `+` operator do when used between two String values?",
     "choices": [
-      { "label": "A", "text": "Adds their lengths together as a number", "isCorrect": false, "explanation": "This describes numeric addition -- that's not what + does with Strings." },
+      { "label": "A", "text": "Adds their lengths together as a number (an int)", "isCorrect": false, "explanation": "This describes numeric addition -- that's not what + does with Strings." },
       { "label": "B", "text": "Concatenates them into a single new String", "isCorrect": true, "explanation": "+ joins the two Strings end to end, producing one combined String." },
-      { "label": "C", "text": "Compares them for equality", "isCorrect": false, "explanation": "Comparison is done with .equals(), not +." },
-      { "label": "D", "text": "Causes a compile error", "isCorrect": false, "explanation": "String concatenation with + is entirely valid Java." }
+      { "label": "C", "text": "Compares them for equality and returns a boolean", "isCorrect": false, "explanation": "Comparison is done with .equals(), not +." },
+      { "label": "D", "text": "Causes a compile error, since + only works on numbers", "isCorrect": false, "explanation": "String concatenation with + is entirely valid Java." }
     ],
     "explanation": "The `+` operator concatenates Strings, joining them into a single new String.",
     "conceptLink": "ap-csa/unit-2-using-objects/string-objects",
@@ -390,10 +390,10 @@
     "difficulty": "easy",
     "stem": "What is the purpose of a wrapper class like `Integer` in Java?",
     "choices": [
-      { "label": "A", "text": "It replaces the int primitive type entirely", "isCorrect": false, "explanation": "The int primitive still exists and is used constantly; Integer is a companion class, not a replacement." },
+      { "label": "A", "text": "It replaces the int primitive type entirely, so int is no longer used", "isCorrect": false, "explanation": "The int primitive still exists and is used constantly; Integer is a companion class, not a replacement." },
       { "label": "B", "text": "It lets a primitive value like int be used as an object where an object is needed", "isCorrect": true, "explanation": "Wrapper classes let primitives participate in places that require objects, like certain collection types." },
-      { "label": "C", "text": "It only exists for backward compatibility and is never used", "isCorrect": false, "explanation": "Wrapper classes are actively used, for example when a class requires objects rather than primitives." },
-      { "label": "D", "text": "It makes arithmetic faster", "isCorrect": false, "explanation": "Using wrapper objects generally adds overhead compared to primitives -- it doesn't speed up arithmetic." }
+      { "label": "C", "text": "It only exists for backward compatibility and is never used in modern programs", "isCorrect": false, "explanation": "Wrapper classes are actively used, for example when a class requires objects rather than primitives." },
+      { "label": "D", "text": "It makes arithmetic faster than it would be with plain primitives", "isCorrect": false, "explanation": "Using wrapper objects generally adds overhead compared to primitives -- it doesn't speed up arithmetic." }
     ],
     "explanation": "Wrapper classes like `Integer` and `Double` let primitive values be treated as objects when needed.",
     "conceptLink": "ap-csa/unit-2-using-objects/wrapper-classes-and-math",

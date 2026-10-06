@@ -6,10 +6,10 @@
     "difficulty": "easy",
     "stem": "What is a recursive method?",
     "choices": [
-      { "label": "A", "text": "A method that never returns a value", "isCorrect": false, "explanation": "Recursion is unrelated to whether a method returns a value; a recursive method can very well have a return type." },
+      { "label": "A", "text": "A method that never returns a value to its caller", "isCorrect": false, "explanation": "Recursion is unrelated to whether a method returns a value; a recursive method can very well have a return type." },
       { "label": "B", "text": "A method that calls itself, directly or indirectly", "isCorrect": true, "explanation": "Recursion means a method's definition includes a call to itself (directly, or indirectly through another method)." },
-      { "label": "C", "text": "A method that runs in a loop", "isCorrect": false, "explanation": "A method running in a loop is not the same as recursion; recursion involves a method invoking itself." },
-      { "label": "D", "text": "A method with no parameters", "isCorrect": false, "explanation": "Recursion is unrelated to having no parameters; recursive methods often DO take parameters, especially to track progress." }
+      { "label": "C", "text": "A method that runs in a loop until a condition fails", "isCorrect": false, "explanation": "A method running in a loop is not the same as recursion; recursion involves a method invoking itself." },
+      { "label": "D", "text": "A method with no parameters of any kind", "isCorrect": false, "explanation": "Recursion is unrelated to having no parameters; recursive methods often DO take parameters, especially to track progress." }
     ],
     "explanation": "A recursive method is one that calls itself, either directly or through a chain of other calls.",
     "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
@@ -38,10 +38,10 @@
     "difficulty": "medium",
     "stem": "What is the \"base case\" of a recursive method?",
     "choices": [
-      { "label": "A", "text": "The case that causes infinite recursion", "isCorrect": false, "explanation": "A correct base case is what PREVENTS infinite recursion, not causes it." },
+      { "label": "A", "text": "The case that causes infinite recursion if it is ever reached, which is why it must be avoided", "isCorrect": false, "explanation": "A correct base case is what PREVENTS infinite recursion, not causes it." },
       { "label": "B", "text": "The condition under which the method stops calling itself and returns directly", "isCorrect": true, "explanation": "The base case is the simplest scenario, handled without any further recursive calls." },
-      { "label": "C", "text": "The very first time the method is ever called", "isCorrect": false, "explanation": "The base case is about a specific CONDITION reached during recursion, not merely the first invocation." },
-      { "label": "D", "text": "A case that always throws an exception", "isCorrect": false, "explanation": "A base case normally returns a value or performs an action directly; it doesn't need to throw an exception." }
+      { "label": "C", "text": "The very first time the method is ever called by the program", "isCorrect": false, "explanation": "The base case is about a specific CONDITION reached during recursion, not merely the first invocation." },
+      { "label": "D", "text": "A case that always throws an exception and ends the program", "isCorrect": false, "explanation": "A base case normally returns a value or performs an action directly; it doesn't need to throw an exception." }
     ],
     "explanation": "The base case is the condition under which a recursive method stops recursing and returns directly.",
     "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
@@ -54,10 +54,10 @@
     "difficulty": "medium",
     "stem": "What happens if a recursive method has no base case, or the base case is never reached?",
     "choices": [
-      { "label": "A", "text": "It runs once and returns immediately", "isCorrect": false, "explanation": "Without a base case ever being reached, the method keeps calling itself; it doesn't just run once." },
+      { "label": "A", "text": "It runs once and returns immediately with a default value, since there is nothing to repeat", "isCorrect": false, "explanation": "Without a base case ever being reached, the method keeps calling itself; it doesn't just run once." },
       { "label": "B", "text": "It results in infinite recursion, eventually causing a StackOverflowError", "isCorrect": true, "explanation": "Without a reachable base case, the method keeps calling itself until the call stack runs out of space." },
-      { "label": "C", "text": "It automatically stops after 100 calls", "isCorrect": false, "explanation": "There's no built-in 100-call limit; the recursion continues until the call stack is exhausted." },
-      { "label": "D", "text": "Java detects this at compile time and refuses to compile", "isCorrect": false, "explanation": "Java cannot generally detect infinite recursion at compile time; this is a runtime issue." }
+      { "label": "C", "text": "It automatically stops after 100 calls, whatever the method does", "isCorrect": false, "explanation": "There's no built-in 100-call limit; the recursion continues until the call stack is exhausted." },
+      { "label": "D", "text": "Java detects this at compile time and refuses to compile the class", "isCorrect": false, "explanation": "Java cannot generally detect infinite recursion at compile time; this is a runtime issue." }
     ],
     "explanation": "Without a reachable base case, recursion continues indefinitely, eventually causing a `StackOverflowError`.",
     "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "Why does each recursive call to `sum(n - 1)` eventually reach the base case?",
     "choices": [
-      { "label": "A", "text": "It doesn't always reach the base case", "isCorrect": false, "explanation": "As long as n starts non-negative, it reliably decreases toward the base case with each call." },
-      { "label": "B", "text": "The argument n decreases by 1 with each call, so it eventually reaches the base case condition (n <= 0)", "isCorrect": true, "explanation": "Each recursive call passes a strictly smaller value, guaranteeing progress toward the base case." },
-      { "label": "C", "text": "Java automatically stops after a fixed number of calls", "isCorrect": false, "explanation": "There's no fixed automatic call limit that causes this; it's the shrinking argument that leads to the base case." },
-      { "label": "D", "text": "The base case is reached randomly", "isCorrect": false, "explanation": "Reaching the base case is a deterministic consequence of the argument shrinking by 1 each time, not random chance." }
+      { "label": "A", "text": "It doesn't always reach the base case, and the method often recurses forever as a result of the argument", "isCorrect": false, "explanation": "As long as n starts non-negative, it reliably decreases toward the base case with each call." },
+      { "label": "B", "text": "The argument n decreases by 1 with each call, so it eventually reaches the base case (n <= 0)", "isCorrect": true, "explanation": "Each recursive call passes a strictly smaller value, guaranteeing progress toward the base case." },
+      { "label": "C", "text": "Java automatically stops after a fixed number of calls, whatever the argument", "isCorrect": false, "explanation": "There's no fixed automatic call limit that causes this; it's the shrinking argument that leads to the base case." },
+      { "label": "D", "text": "The base case is reached randomly, whatever the argument values are", "isCorrect": false, "explanation": "Reaching the base case is a deterministic consequence of the argument shrinking by 1 each time, not random chance." }
     ],
     "explanation": "Each call passes `n - 1`, so the argument steadily decreases until it satisfies the base case condition.",
     "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
@@ -150,10 +150,10 @@
     "difficulty": "medium",
     "stem": "What would happen if the recursive call in `countDown` were changed to `countDown(n)` instead of `countDown(n - 1)`?",
     "choices": [
-      { "label": "A", "text": "Nothing would change", "isCorrect": false, "explanation": "This change breaks the method significantly; without n decreasing, the base case is never reached." },
-      { "label": "B", "text": "Infinite recursion, since n never decreases toward the base case, eventually causing a StackOverflowError", "isCorrect": true, "explanation": "Without n shrinking, the base case condition (n <= 0) is never satisfied, so the recursion never terminates." },
-      { "label": "C", "text": "It would count down twice as fast", "isCorrect": false, "explanation": "This doesn't make it faster; it makes it never terminate, since n stays the same forever." },
-      { "label": "D", "text": "It would count up instead", "isCorrect": false, "explanation": "The method doesn't count up; it would just keep printing the same n value indefinitely until a stack overflow." }
+      { "label": "A", "text": "Nothing would change, since the call still passes the same kind of value on to the next level", "isCorrect": false, "explanation": "This change breaks the method significantly; without n decreasing, the base case is never reached." },
+      { "label": "B", "text": "Infinite recursion, since n never decreases toward the base case, causing a StackOverflowError", "isCorrect": true, "explanation": "Without n shrinking, the base case condition (n <= 0) is never satisfied, so the recursion never terminates." },
+      { "label": "C", "text": "It would count down twice as fast, since each call now skips one of the values", "isCorrect": false, "explanation": "This doesn't make it faster; it makes it never terminate, since n stays the same forever." },
+      { "label": "D", "text": "It would count up instead of down, ending at the largest value the int can hold", "isCorrect": false, "explanation": "The method doesn't count up; it would just keep printing the same n value indefinitely until a stack overflow." }
     ],
     "explanation": "Without decrementing `n`, the base case is never reached, causing infinite recursion and a `StackOverflowError`.",
     "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
@@ -198,10 +198,10 @@
     "difficulty": "medium",
     "stem": "In the `fibonacci` method above, how many base cases does it effectively have, and what are they?",
     "choices": [
-      { "label": "A", "text": "One base case: n == 0", "isCorrect": false, "explanation": "The condition n <= 1 covers BOTH n == 0 and n == 1, not just n == 0." },
+      { "label": "A", "text": "One base case: n == 0, which stops the recursion", "isCorrect": false, "explanation": "The condition n <= 1 covers BOTH n == 0 and n == 1, not just n == 0." },
       { "label": "B", "text": "Two base cases: n == 0 and n == 1 (covered by n <= 1)", "isCorrect": true, "explanation": "The condition n <= 1 handles both n == 0 and n == 1 without further recursion." },
-      { "label": "C", "text": "No base case; it's pure recursion", "isCorrect": false, "explanation": "This method does have a base case (n <= 1); without it, it would never terminate." },
-      { "label": "D", "text": "Three base cases", "isCorrect": false, "explanation": "There are exactly two values covered by the base case condition (0 and 1), not three." }
+      { "label": "C", "text": "No base case; it's pure recursion with nothing to stop it", "isCorrect": false, "explanation": "This method does have a base case (n <= 1); without it, it would never terminate." },
+      { "label": "D", "text": "Three base cases: n == 0, n == 1 and n == 2", "isCorrect": false, "explanation": "There are exactly two values covered by the base case condition (0 and 1), not three." }
     ],
     "explanation": "`n <= 1` covers two base values, `n == 0` and `n == 1`, both returned directly.",
     "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
@@ -214,10 +214,10 @@
     "difficulty": "hard",
     "stem": "What is wrong with this recursive method, intended to sum the digits of a positive number?\n\n```java\npublic int sumDigits(int n) {\n    return n % 10 + sumDigits(n / 10);\n}\n```",
     "choices": [
-      { "label": "A", "text": "Nothing is wrong; it works correctly", "isCorrect": false, "explanation": "This method is missing a base case entirely, which is a real, serious bug." },
-      { "label": "B", "text": "It has no base case, so it will recurse infinitely (eventually causing a StackOverflowError)", "isCorrect": true, "explanation": "Without a condition to stop the recursion once n reaches 0, the method keeps calling itself forever." },
-      { "label": "C", "text": "The modulo operator cannot be used in recursive methods", "isCorrect": false, "explanation": "Modulo works perfectly fine within recursive methods; that's not the issue here." },
-      { "label": "D", "text": "It should use a for loop instead", "isCorrect": false, "explanation": "The issue is a missing base case, not a fundamental requirement to avoid recursion altogether." }
+      { "label": "A", "text": "Nothing is wrong; it works correctly for every positive number that is passed to it", "isCorrect": false, "explanation": "This method is missing a base case entirely, which is a real, serious bug." },
+      { "label": "B", "text": "It has no base case, so it recurses infinitely (eventually causing a StackOverflowError)", "isCorrect": true, "explanation": "Without a condition to stop the recursion once n reaches 0, the method keeps calling itself forever." },
+      { "label": "C", "text": "The modulo operator cannot be used in recursive methods at all", "isCorrect": false, "explanation": "Modulo works perfectly fine within recursive methods; that's not the issue here." },
+      { "label": "D", "text": "It should use a for loop instead, because recursion is not allowed here", "isCorrect": false, "explanation": "The issue is a missing base case, not a fundamental requirement to avoid recursion altogether." }
     ],
     "explanation": "This method has no base case, so it recurses forever (since `n / 10` eventually reaches 0 and keeps dividing), causing a `StackOverflowError`.",
     "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
@@ -231,9 +231,9 @@
     "stem": "Which fix correctly adds a base case to the buggy `sumDigits` method from the previous question?",
     "choices": [
       { "label": "A", "text": "if (n == 0) { return 0; } before the recursive line", "isCorrect": true, "explanation": "This stops the recursion once n reaches 0, returning 0 directly instead of recursing further." },
-      { "label": "B", "text": "Adding a for loop inside the method", "isCorrect": false, "explanation": "Adding a for loop doesn't address the missing base case for the recursive approach." },
-      { "label": "C", "text": "Removing the % operator", "isCorrect": false, "explanation": "Removing % would break the digit-extraction logic itself; the actual issue is the missing base case." },
-      { "label": "D", "text": "Making the method private", "isCorrect": false, "explanation": "Access modifiers have no effect on whether a base case exists." }
+      { "label": "B", "text": "Adding a for loop inside the method before the return", "isCorrect": false, "explanation": "Adding a for loop doesn't address the missing base case for the recursive approach." },
+      { "label": "C", "text": "Removing the % operator from the return statement", "isCorrect": false, "explanation": "Removing % would break the digit-extraction logic itself; the actual issue is the missing base case." },
+      { "label": "D", "text": "Making the method private instead of public", "isCorrect": false, "explanation": "Access modifiers have no effect on whether a base case exists." }
     ],
     "explanation": "Adding `if (n == 0) { return 0; }` gives the method a base case that stops the recursion.",
     "conceptLink": "ap-csa/unit-10-recursion/recursion-basics",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "What is the general strategy of binary search?",
     "choices": [
-      { "label": "A", "text": "Check every element one by one from the start", "isCorrect": false, "explanation": "This describes linear search, which is a different, less efficient algorithm." },
+      { "label": "A", "text": "Check every element one by one from the start of the array until a match is found or the end is reached", "isCorrect": false, "explanation": "This describes linear search, which is a different, less efficient algorithm." },
       { "label": "B", "text": "Repeatedly divide the search range in half, comparing the middle element to the target", "isCorrect": true, "explanation": "Binary search narrows the search range by half with each comparison against the middle element." },
-      { "label": "C", "text": "Randomly guess indices until found", "isCorrect": false, "explanation": "Binary search follows a deterministic strategy based on comparisons, not random guessing." },
-      { "label": "D", "text": "Sort the array first, then use linear search", "isCorrect": false, "explanation": "Binary search doesn't re-sort the array or fall back to linear search; it relies on the array already being sorted." }
+      { "label": "C", "text": "Randomly guess indices until the target happens to be found", "isCorrect": false, "explanation": "Binary search follows a deterministic strategy based on comparisons, not random guessing." },
+      { "label": "D", "text": "Sort the array first, then use linear search on the sorted result", "isCorrect": false, "explanation": "Binary search doesn't re-sort the array or fall back to linear search; it relies on the array already being sorted." }
     ],
     "explanation": "Binary search repeatedly halves the search range by comparing the target to the middle element.",
     "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
@@ -278,10 +278,10 @@
     "difficulty": "hard",
     "stem": "Given a sorted array `{1, 3, 5, 7, 9, 11}` and target `7`, what does binary search check first?",
     "choices": [
-      { "label": "A", "text": "Index 0 (value 1)", "isCorrect": false, "explanation": "Binary search doesn't start at the beginning; that's linear search's approach." },
+      { "label": "A", "text": "Index 0 (value 1), the first element", "isCorrect": false, "explanation": "Binary search doesn't start at the beginning; that's linear search's approach." },
       { "label": "B", "text": "The middle index (around index 2 or 3)", "isCorrect": true, "explanation": "Binary search always begins by examining the middle element of the current search range." },
-      { "label": "C", "text": "The last index (value 11)", "isCorrect": false, "explanation": "Binary search doesn't start at the end either; it starts in the middle." },
-      { "label": "D", "text": "Every index in order", "isCorrect": false, "explanation": "Checking every index in order describes linear search, not binary search." }
+      { "label": "C", "text": "The last index (value 11), at the far end", "isCorrect": false, "explanation": "Binary search doesn't start at the end either; it starts in the middle." },
+      { "label": "D", "text": "Every index in order, from the first to the last", "isCorrect": false, "explanation": "Checking every index in order describes linear search, not binary search." }
     ],
     "explanation": "Binary search always begins by examining the middle element of the current range.",
     "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
@@ -342,10 +342,10 @@
     "difficulty": "medium",
     "stem": "Why is binary search generally much faster than linear search for large sorted arrays?",
     "choices": [
-      { "label": "A", "text": "It checks every element, just in a different order", "isCorrect": false, "explanation": "Binary search does NOT check every element; that's precisely what makes it faster than linear search." },
+      { "label": "A", "text": "It checks every element, just in a different order, and the order happens to be faster in practice", "isCorrect": false, "explanation": "Binary search does NOT check every element; that's precisely what makes it faster than linear search." },
       { "label": "B", "text": "It eliminates roughly half of the remaining elements from consideration with each comparison", "isCorrect": true, "explanation": "Each comparison against the middle element lets binary search discard half of the remaining search range." },
-      { "label": "C", "text": "It doesn't actually check any elements", "isCorrect": false, "explanation": "Binary search does check elements (specifically the middle element at each step); it's not skipping comparisons entirely." },
-      { "label": "D", "text": "It only works on arrays with fewer than 10 elements", "isCorrect": false, "explanation": "Binary search works on arrays of any size; its efficiency advantage actually grows for LARGER arrays." }
+      { "label": "C", "text": "It doesn't actually check any elements, so no comparisons are needed", "isCorrect": false, "explanation": "Binary search does check elements (specifically the middle element at each step); it's not skipping comparisons entirely." },
+      { "label": "D", "text": "It only works on arrays with fewer than 10 elements, so it is quicker", "isCorrect": false, "explanation": "Binary search works on arrays of any size; its efficiency advantage actually grows for LARGER arrays." }
     ],
     "explanation": "Binary search's speed comes from eliminating half of the remaining search space with every comparison.",
     "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "What is the general strategy of merge sort?",
     "choices": [
-      { "label": "A", "text": "Repeatedly find the smallest remaining element and move it to the front", "isCorrect": false, "explanation": "This describes selection sort, a different sorting strategy." },
-      { "label": "B", "text": "Recursively divide the array in half, sort each half, then merge the sorted halves back together", "isCorrect": true, "explanation": "Merge sort is a classic divide-and-conquer algorithm built around splitting, recursively sorting, and merging." },
-      { "label": "C", "text": "Check every possible ordering of the array", "isCorrect": false, "explanation": "Checking every possible ordering is wildly inefficient and not how merge sort (or any practical algorithm) works." },
-      { "label": "D", "text": "Pick a random element and only compare to that one", "isCorrect": false, "explanation": "This vaguely describes something like quicksort's pivot idea, not merge sort's divide-and-merge strategy." }
+      { "label": "A", "text": "Repeatedly find the smallest remaining element and move it to the front of the array", "isCorrect": false, "explanation": "This describes selection sort, a different sorting strategy." },
+      { "label": "B", "text": "Recursively divide the array in half, sort each half, then merge the sorted halves", "isCorrect": true, "explanation": "Merge sort is a classic divide-and-conquer algorithm built around splitting, recursively sorting, and merging." },
+      { "label": "C", "text": "Check every possible ordering of the array until a sorted one is found", "isCorrect": false, "explanation": "Checking every possible ordering is wildly inefficient and not how merge sort (or any practical algorithm) works." },
+      { "label": "D", "text": "Pick a random element and only compare every other element to that one", "isCorrect": false, "explanation": "This vaguely describes something like quicksort's pivot idea, not merge sort's divide-and-merge strategy." }
     ],
     "explanation": "Merge sort recursively splits the array in half, sorts each half, then merges the sorted halves.",
     "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
@@ -390,10 +390,10 @@
     "difficulty": "medium",
     "stem": "What is the base case for the recursive divide step in merge sort?",
     "choices": [
-      { "label": "A", "text": "When the array (or sub-array) has 0 or 1 elements, since it's already considered sorted", "isCorrect": true, "explanation": "An array with 0 or 1 elements is trivially sorted, requiring no further division." },
-      { "label": "B", "text": "When the array has exactly 100 elements", "isCorrect": false, "explanation": "There's no arbitrary fixed size like 100 that serves as the base case; it's specifically 0 or 1 elements." },
-      { "label": "C", "text": "When every element is the same value", "isCorrect": false, "explanation": "Merge sort's base case is about the SIZE of the (sub)array, not whether all its values happen to be equal." },
-      { "label": "D", "text": "There is no base case in merge sort", "isCorrect": false, "explanation": "Merge sort absolutely requires a base case to terminate its recursive splitting." }
+      { "label": "A", "text": "When the array (or sub-array) has 0 or 1 elements, since it's already sorted", "isCorrect": true, "explanation": "An array with 0 or 1 elements is trivially sorted, requiring no further division." },
+      { "label": "B", "text": "When the array has exactly 100 elements, since it is then large enough", "isCorrect": false, "explanation": "There's no arbitrary fixed size like 100 that serves as the base case; it's specifically 0 or 1 elements." },
+      { "label": "C", "text": "When every element is the same value as the one before it", "isCorrect": false, "explanation": "Merge sort's base case is about the SIZE of the (sub)array, not whether all its values happen to be equal." },
+      { "label": "D", "text": "There is no base case in merge sort, since it always halts by itself", "isCorrect": false, "explanation": "Merge sort absolutely requires a base case to terminate its recursive splitting." }
     ],
     "explanation": "Merge sort's base case is a (sub)array of 0 or 1 elements, which is already trivially sorted.",
     "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
@@ -406,10 +406,10 @@
     "difficulty": "hard",
     "stem": "What does \"merging\" two already-sorted arrays into one sorted array involve?",
     "choices": [
-      { "label": "A", "text": "Concatenating them and then sorting the combined result from scratch", "isCorrect": false, "explanation": "Merging is specifically designed to AVOID re-sorting from scratch, taking advantage of the fact both halves are already sorted." },
+      { "label": "A", "text": "Concatenating them and then sorting the combined result from scratch with a different algorithm", "isCorrect": false, "explanation": "Merging is specifically designed to AVOID re-sorting from scratch, taking advantage of the fact both halves are already sorted." },
       { "label": "B", "text": "Repeatedly comparing the front elements of each array and appending the smaller one to the result", "isCorrect": true, "explanation": "This comparison-based process efficiently combines two sorted sequences into one, without re-sorting." },
-      { "label": "C", "text": "Randomly interleaving their elements", "isCorrect": false, "explanation": "Merging follows a deterministic comparison-based process, not random interleaving." },
-      { "label": "D", "text": "Reversing both arrays first", "isCorrect": false, "explanation": "Reversing the arrays has no role in the standard merge step." }
+      { "label": "C", "text": "Randomly interleaving their elements until they appear sorted", "isCorrect": false, "explanation": "Merging follows a deterministic comparison-based process, not random interleaving." },
+      { "label": "D", "text": "Reversing both arrays first, then comparing their last elements", "isCorrect": false, "explanation": "Reversing the arrays has no role in the standard merge step." }
     ],
     "explanation": "Merging repeatedly compares the front elements of each sorted half, appending the smaller one to the result.",
     "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "Why must the two halves already be sorted before the \"merge\" step of merge sort can correctly combine them?",
     "choices": [
-      { "label": "A", "text": "It doesn't matter whether they're sorted first", "isCorrect": false, "explanation": "If the halves aren't sorted, comparing their front elements wouldn't reliably identify the next-smallest element overall." },
-      { "label": "B", "text": "Merging relies on comparing the front (smallest remaining) elements of each half; this only works correctly if each half is already in order", "isCorrect": true, "explanation": "The merge step assumes each half's front element is its smallest remaining value, which is only guaranteed if the halves are sorted." },
-      { "label": "C", "text": "Merging always re-sorts everything anyway, so it doesn't matter", "isCorrect": false, "explanation": "Merging does NOT re-sort from scratch; it's an efficient linear-time step that depends on the inputs already being sorted." },
-      { "label": "D", "text": "Only one of the two halves needs to be sorted", "isCorrect": false, "explanation": "BOTH halves must be sorted for the merge step's comparison logic to produce a correctly sorted result." }
+      { "label": "A", "text": "It doesn't matter whether they're sorted first, since the merge step sorts the elements as it combines them", "isCorrect": false, "explanation": "If the halves aren't sorted, comparing their front elements wouldn't reliably identify the next-smallest element overall." },
+      { "label": "B", "text": "Merging compares the front (smallest remaining) elements of each half; this only works if each half is already in order", "isCorrect": true, "explanation": "The merge step assumes each half's front element is its smallest remaining value, which is only guaranteed if the halves are sorted." },
+      { "label": "C", "text": "Merging always re-sorts everything anyway, so it doesn't matter whether they were sorted", "isCorrect": false, "explanation": "Merging does NOT re-sort from scratch; it's an efficient linear-time step that depends on the inputs already being sorted." },
+      { "label": "D", "text": "Only one of the two halves needs to be sorted, and the other can be in any order", "isCorrect": false, "explanation": "BOTH halves must be sorted for the merge step's comparison logic to produce a correctly sorted result." }
     ],
     "explanation": "Merging assumes each half's front element is its current smallest, which only holds if both halves are already sorted.",
     "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",
@@ -470,10 +470,10 @@
     "difficulty": "hard",
     "stem": "Why does binary search require the array to already be sorted, while linear search does not?",
     "choices": [
-      { "label": "A", "text": "Linear search is also faster when the array is sorted, so this doesn't really matter", "isCorrect": false, "explanation": "While linear search CAN be used on a sorted array, it doesn't need it to be sorted to function correctly, unlike binary search." },
-      { "label": "B", "text": "Binary search relies on comparing against the middle element to eliminate half the remaining elements -- this logic only works if the array's order lets it correctly infer which half the target is in", "isCorrect": true, "explanation": "Without a sorted order, comparing to the middle element gives no reliable information about which half might contain the target." },
-      { "label": "C", "text": "Sorting is required for all searching algorithms", "isCorrect": false, "explanation": "Sorting is specifically required by binary search's divide-and-eliminate logic, not by searching algorithms in general (linear search works on any array)." },
-      { "label": "D", "text": "Linear search cannot be used on sorted arrays", "isCorrect": false, "explanation": "Linear search works perfectly fine on both sorted and unsorted arrays; it just checks every element regardless of order." }
+      { "label": "A", "text": "Linear search is also faster when the array is sorted, so this doesn't really matter much in practice", "isCorrect": false, "explanation": "While linear search CAN be used on a sorted array, it doesn't need it to be sorted to function correctly, unlike binary search." },
+      { "label": "B", "text": "Binary search compares against the middle element to eliminate half the remaining elements; this only works if the order lets it infer which half holds the target", "isCorrect": true, "explanation": "Without a sorted order, comparing to the middle element gives no reliable information about which half might contain the target." },
+      { "label": "C", "text": "Sorting is required for all searching algorithms, including linear search, which would otherwise miss elements that sit out of order", "isCorrect": false, "explanation": "Sorting is specifically required by binary search's divide-and-eliminate logic, not by searching algorithms in general (linear search works on any array)." },
+      { "label": "D", "text": "Linear search cannot be used on sorted arrays, since it relies on the elements being in random order", "isCorrect": false, "explanation": "Linear search works perfectly fine on both sorted and unsorted arrays; it just checks every element regardless of order." }
     ],
     "explanation": "Binary search's half-elimination logic depends on the array's sorted order to correctly determine which half to search next.",
     "conceptLink": "ap-csa/unit-10-recursion/recursive-searching-sorting",

@@ -7,9 +7,9 @@
     "stem": "What is the definition of density?",
     "choices": [
       { "label": "A", "text": "Mass per unit volume: $\\rho = m/V$", "isCorrect": true, "explanation": "Density is defined as mass divided by volume." },
-      { "label": "B", "text": "Weight per unit area", "isCorrect": false, "explanation": "This describes something closer to pressure due to weight, not density -- density is specifically mass per unit VOLUME." },
-      { "label": "C", "text": "Volume per unit mass", "isCorrect": false, "explanation": "This is the inverse of density (specific volume), not density itself." },
-      { "label": "D", "text": "Force per unit mass", "isCorrect": false, "explanation": "This describes something like gravitational field strength, not density." }
+      { "label": "B", "text": "Weight per unit area, measured in pascals", "isCorrect": false, "explanation": "This describes something closer to pressure due to weight, not density -- density is specifically mass per unit VOLUME." },
+      { "label": "C", "text": "Volume per unit mass, the inverse quantity", "isCorrect": false, "explanation": "This is the inverse of density (specific volume), not density itself." },
+      { "label": "D", "text": "Force per unit mass, measured in N/kg", "isCorrect": false, "explanation": "This describes something like gravitational field strength, not density." }
     ],
     "explanation": "Density is mass per unit volume: ρ = m/V.",
     "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
@@ -70,10 +70,10 @@
     "difficulty": "medium",
     "stem": "How does pressure in a fluid relate to depth?",
     "choices": [
-      { "label": "A", "text": "$P = P_0 + \\rho g h$, where $P_0$ is the pressure at the surface, ρ is the fluid's density, and h is the depth", "isCorrect": true, "explanation": "This is the standard hydrostatic pressure formula, accounting for the weight of fluid above a given depth." },
-      { "label": "B", "text": "Pressure is the same at every depth in a fluid", "isCorrect": false, "explanation": "Pressure increases with depth, due to the added weight of fluid above -- it is NOT constant with depth." },
-      { "label": "C", "text": "Pressure decreases with increasing depth", "isCorrect": false, "explanation": "This is backward -- pressure INCREASES (not decreases) with depth, due to the weight of fluid above pressing down." },
-      { "label": "D", "text": "Pressure depends only on the total volume of fluid, not depth", "isCorrect": false, "explanation": "Pressure at a point specifically depends on the depth (and fluid density), not simply the total volume of the fluid container." }
+      { "label": "A", "text": "$P = P_0 + \\rho g h$, where $P_0$ is the surface pressure, ρ the fluid's density, and h the depth", "isCorrect": true, "explanation": "This is the standard hydrostatic pressure formula, accounting for the weight of fluid above a given depth." },
+      { "label": "B", "text": "Pressure is the same at every depth in a fluid, whatever its density or the depth of the container", "isCorrect": false, "explanation": "Pressure increases with depth, due to the added weight of fluid above -- it is NOT constant with depth." },
+      { "label": "C", "text": "Pressure decreases with increasing depth, since the fluid thins out as it gets farther from the surface", "isCorrect": false, "explanation": "This is backward -- pressure INCREASES (not decreases) with depth, due to the weight of fluid above pressing down." },
+      { "label": "D", "text": "Pressure depends only on the total volume of fluid, not on depth, so a larger tank always gives more", "isCorrect": false, "explanation": "Pressure at a point specifically depends on the depth (and fluid density), not simply the total volume of the fluid container." }
     ],
     "explanation": "Hydrostatic pressure: P = P0 + ρgh, increasing with depth.",
     "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
@@ -103,9 +103,9 @@
     "stem": "Why does pressure increase with depth in a fluid?",
     "choices": [
       { "label": "A", "text": "Because at greater depth, there is more fluid weighing down from above, adding to the pressure", "isCorrect": true, "explanation": "The additional fluid above a given depth contributes its weight, increasing the pressure at that depth." },
-      { "label": "B", "text": "Because fluid becomes denser automatically at greater depths", "isCorrect": false, "explanation": "For most simple problems, fluid density is treated as constant -- the pressure increase comes from the WEIGHT of fluid above, not the fluid becoming denser." },
-      { "label": "C", "text": "Because temperature increases with depth", "isCorrect": false, "explanation": "Temperature changes aren't the reason for this pressure relationship -- it's specifically due to the weight of fluid above a given point." },
-      { "label": "D", "text": "There is no real reason -- it's simply an arbitrary rule", "isCorrect": false, "explanation": "There IS a clear physical reason: the added weight of fluid above a given depth directly causes the pressure increase." }
+      { "label": "B", "text": "Because fluid becomes denser automatically at greater depths, since gravity compresses it, which raises the pressure", "isCorrect": false, "explanation": "For most simple problems, fluid density is treated as constant -- the pressure increase comes from the WEIGHT of fluid above, not the fluid becoming denser." },
+      { "label": "C", "text": "Because temperature increases with depth, and hotter fluid pushes harder", "isCorrect": false, "explanation": "Temperature changes aren't the reason for this pressure relationship -- it's specifically due to the weight of fluid above a given point." },
+      { "label": "D", "text": "There is no real reason -- it's simply an arbitrary rule of fluid statics", "isCorrect": false, "explanation": "There IS a clear physical reason: the added weight of fluid above a given depth directly causes the pressure increase." }
     ],
     "explanation": "Pressure increases with depth because more fluid (and its weight) lies above at greater depths.",
     "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
@@ -118,10 +118,10 @@
     "difficulty": "hard",
     "stem": "Two containers of different shapes (one wide, one narrow) are filled with water to the same height. How do the pressures at the bottom of each container compare?",
     "choices": [
-      { "label": "A", "text": "The pressures are equal, since pressure at a given depth depends only on the fluid's density, g, and depth -- not on the container's shape or width", "isCorrect": true, "explanation": "This is the \"hydrostatic paradox\": pressure at a given depth (P=P0+ρgh) depends only on depth, not the container's shape or total volume of fluid." },
-      { "label": "B", "text": "The wider container has greater pressure at the bottom, since it holds more total water", "isCorrect": false, "explanation": "Total amount of water (volume) doesn't determine the pressure at a specific depth -- only the height of fluid above that point matters." },
-      { "label": "C", "text": "The narrower container has greater pressure at the bottom", "isCorrect": false, "explanation": "Container width doesn't affect pressure at a given depth -- pressure depends only on depth, density, and g." },
-      { "label": "D", "text": "It's impossible to compare pressures between differently shaped containers", "isCorrect": false, "explanation": "The comparison IS possible, and the pressures turn out to be EQUAL, since pressure at a given depth is independent of container shape." }
+      { "label": "A", "text": "The pressures are equal, since pressure at a given depth depends only on the fluid's density, g and depth, not on the container's shape", "isCorrect": true, "explanation": "This is the \"hydrostatic paradox\": pressure at a given depth (P=P0+ρgh) depends only on depth, not the container's shape or total volume of fluid." },
+      { "label": "B", "text": "The wider container has greater pressure at the bottom, since it holds more total water above the bottom surface", "isCorrect": false, "explanation": "Total amount of water (volume) doesn't determine the pressure at a specific depth -- only the height of fluid above that point matters." },
+      { "label": "C", "text": "The narrower container has greater pressure at the bottom, since the water column is more concentrated", "isCorrect": false, "explanation": "Container width doesn't affect pressure at a given depth -- pressure depends only on depth, density, and g." },
+      { "label": "D", "text": "It's impossible to compare pressures between differently shaped containers, since the shapes differ", "isCorrect": false, "explanation": "The comparison IS possible, and the pressures turn out to be EQUAL, since pressure at a given depth is independent of container shape." }
     ],
     "explanation": "Pressure at a given depth depends only on depth, density, and g -- not on the container's shape (the \"hydrostatic paradox\").",
     "conceptLink": "ap-physics-1/unit-8-fluids/density-and-pressure",
@@ -134,10 +134,10 @@
     "difficulty": "easy",
     "stem": "What does Pascal's Principle state?",
     "choices": [
-      { "label": "A", "text": "A change in pressure applied to an enclosed fluid is transmitted equally to every point in the fluid and to the walls of its container", "isCorrect": true, "explanation": "This is the standard statement of Pascal's Principle." },
-      { "label": "B", "text": "Pressure only affects the point where a force is directly applied", "isCorrect": false, "explanation": "This is the OPPOSITE of Pascal's Principle -- pressure in an enclosed fluid is transmitted equally throughout, not confined to just the point of application." },
-      { "label": "C", "text": "Fluids cannot transmit pressure at all", "isCorrect": false, "explanation": "Fluids very much CAN and DO transmit pressure -- this is the entire basis of Pascal's Principle and hydraulic systems." },
-      { "label": "D", "text": "Pressure decreases as it moves through a fluid", "isCorrect": false, "explanation": "Pascal's Principle states pressure is transmitted EQUALLY (undiminished), not that it decreases as it moves through the fluid." }
+      { "label": "A", "text": "A pressure change applied to an enclosed fluid is transmitted equally to every point in the fluid and to the container walls", "isCorrect": true, "explanation": "This is the standard statement of Pascal's Principle." },
+      { "label": "B", "text": "Pressure only affects the point where a force is directly applied, and nowhere else in the fluid", "isCorrect": false, "explanation": "This is the OPPOSITE of Pascal's Principle -- pressure in an enclosed fluid is transmitted equally throughout, not confined to just the point of application." },
+      { "label": "C", "text": "Fluids cannot transmit pressure at all, since their molecules are free to move", "isCorrect": false, "explanation": "Fluids very much CAN and DO transmit pressure -- this is the entire basis of Pascal's Principle and hydraulic systems." },
+      { "label": "D", "text": "Pressure decreases as it moves through a fluid, falling off with distance from the source", "isCorrect": false, "explanation": "Pascal's Principle states pressure is transmitted EQUALLY (undiminished), not that it decreases as it moves through the fluid." }
     ],
     "explanation": "Pascal's Principle: pressure applied to an enclosed fluid is transmitted equally throughout the fluid.",
     "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
@@ -182,10 +182,10 @@
     "difficulty": "hard",
     "stem": "A hydraulic lift multiplies force by a factor of 20 (large piston area is 20 times the small piston area). Does this mean the hydraulic lift produces \"free\" extra energy?",
     "choices": [
-      { "label": "A", "text": "No -- while force is multiplied, the small piston must move 20 times farther than the large piston, so the work input still equals the work output (conservation of energy)", "isCorrect": true, "explanation": "Hydraulic lifts trade force for distance: the small piston moves a much larger distance to move the large piston a small distance, keeping work (Fd) equal on both sides." },
-      { "label": "B", "text": "Yes -- hydraulic lifts genuinely create extra energy from nothing", "isCorrect": false, "explanation": "This would violate conservation of energy -- hydraulic lifts don't create energy; they trade force for distance moved." },
-      { "label": "C", "text": "The lift produces extra energy, but only for very heavy loads", "isCorrect": false, "explanation": "Regardless of load size, hydraulic lifts never create net extra energy -- conservation of energy always holds." },
-      { "label": "D", "text": "Energy conservation doesn't apply to hydraulic systems", "isCorrect": false, "explanation": "Conservation of energy applies universally, including to hydraulic systems -- the force multiplication comes at the cost of increased distance moved on the input side." }
+      { "label": "A", "text": "No -- force is multiplied, but the small piston must move 20 times farther than the large piston, so work input equals work output (conservation of energy)", "isCorrect": true, "explanation": "Hydraulic lifts trade force for distance: the small piston moves a much larger distance to move the large piston a small distance, keeping work (Fd) equal on both sides." },
+      { "label": "B", "text": "Yes -- hydraulic lifts genuinely create extra energy from nothing, because the output force is larger than the input force and nothing is lost in the fluid", "isCorrect": false, "explanation": "This would violate conservation of energy -- hydraulic lifts don't create energy; they trade force for distance moved." },
+      { "label": "C", "text": "The lift produces extra energy, but only for very heavy loads, where the larger piston does more work", "isCorrect": false, "explanation": "Regardless of load size, hydraulic lifts never create net extra energy -- conservation of energy always holds." },
+      { "label": "D", "text": "Energy conservation doesn't apply to hydraulic systems, since the fluid can transfer energy freely", "isCorrect": false, "explanation": "Conservation of energy applies universally, including to hydraulic systems -- the force multiplication comes at the cost of increased distance moved on the input side." }
     ],
     "explanation": "No -- the small piston moves proportionally farther, so work input equals work output; force is gained at the cost of distance, not free energy.",
     "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "Why do hydraulic brake systems apply equal braking force to all four wheels of a car from a single pedal press?",
     "choices": [
-      { "label": "A", "text": "Because the brake fluid is enclosed, and by Pascal's Principle the pressure applied at the pedal is transmitted equally through the fluid to each wheel's brake piston", "isCorrect": true, "explanation": "This is a direct, practical application of Pascal's Principle -- pressure transmitted equally through the enclosed brake fluid reaches every wheel." },
-      { "label": "B", "text": "Because each wheel has its own separate, unrelated braking mechanism", "isCorrect": false, "explanation": "The wheels' brakes are connected through a shared, enclosed hydraulic fluid system -- they aren't unrelated, independent mechanisms." },
-      { "label": "C", "text": "Because the car's computer calculates and sends an equal electronic signal to each wheel", "isCorrect": false, "explanation": "Traditional hydraulic brakes work through fluid pressure transmission (Pascal's Principle), not primarily through electronic computer signals." },
-      { "label": "D", "text": "It's a coincidence that braking force ends up equal at each wheel", "isCorrect": false, "explanation": "This isn't a coincidence -- it's a direct, reliable, and predictable consequence of Pascal's Principle applied to the enclosed hydraulic fluid." }
+      { "label": "A", "text": "Because the brake fluid is enclosed, and by Pascal's Principle the pressure applied at the pedal is transmitted equally to each wheel's brake piston", "isCorrect": true, "explanation": "This is a direct, practical application of Pascal's Principle -- pressure transmitted equally through the enclosed brake fluid reaches every wheel." },
+      { "label": "B", "text": "Because each wheel has its own separate, unrelated braking mechanism that the driver cannot see", "isCorrect": false, "explanation": "The wheels' brakes are connected through a shared, enclosed hydraulic fluid system -- they aren't unrelated, independent mechanisms." },
+      { "label": "C", "text": "Because the car's computer calculates and sends an equal electronic signal to each wheel at the same instant the pedal is pressed", "isCorrect": false, "explanation": "Traditional hydraulic brakes work through fluid pressure transmission (Pascal's Principle), not primarily through electronic computer signals." },
+      { "label": "D", "text": "It's a coincidence that braking force ends up equal at each wheel, caused by luck in manufacturing", "isCorrect": false, "explanation": "This isn't a coincidence -- it's a direct, reliable, and predictable consequence of Pascal's Principle applied to the enclosed hydraulic fluid." }
     ],
     "explanation": "Pascal's Principle: pressure from the pedal is transmitted equally through the enclosed brake fluid to every wheel.",
     "conceptLink": "ap-physics-1/unit-8-fluids/pascals-principle",
@@ -247,9 +247,9 @@
     "stem": "What does Archimedes' Principle state?",
     "choices": [
       { "label": "A", "text": "The buoyant force on a submerged (or floating) object equals the weight of the fluid it displaces", "isCorrect": true, "explanation": "This is the standard statement of Archimedes' Principle." },
-      { "label": "B", "text": "All objects float in any fluid, regardless of density", "isCorrect": false, "explanation": "Not all objects float -- whether an object floats or sinks depends on its density relative to the fluid's density." },
-      { "label": "C", "text": "The buoyant force equals the object's own weight, always", "isCorrect": false, "explanation": "Buoyant force equals the weight of DISPLACED FLUID, not necessarily the object's own weight (these are only equal for a floating object in equilibrium)." },
-      { "label": "D", "text": "Buoyant force only applies to objects made of wood", "isCorrect": false, "explanation": "Buoyant force applies to ANY object submerged in or floating on a fluid, regardless of material." }
+      { "label": "B", "text": "All objects float in any fluid, regardless of density, because buoyancy always wins", "isCorrect": false, "explanation": "Not all objects float -- whether an object floats or sinks depends on its density relative to the fluid's density." },
+      { "label": "C", "text": "The buoyant force equals the object's own weight, always, even when the object sinks", "isCorrect": false, "explanation": "Buoyant force equals the weight of DISPLACED FLUID, not necessarily the object's own weight (these are only equal for a floating object in equilibrium)." },
+      { "label": "D", "text": "Buoyant force only applies to objects made of wood, since only wood is less dense than water", "isCorrect": false, "explanation": "Buoyant force applies to ANY object submerged in or floating on a fluid, regardless of material." }
     ],
     "explanation": "Archimedes' Principle: buoyant force equals the weight of fluid displaced by the object.",
     "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
@@ -295,9 +295,9 @@
     "stem": "An object's average density is GREATER than the fluid it's placed in. What happens to the object?",
     "choices": [
       { "label": "A", "text": "It sinks, since the buoyant force is not enough to support its full weight", "isCorrect": true, "explanation": "When average density is greater than the fluid's, the maximum possible buoyant force (fully submerged) is still less than the object's weight, so it sinks." },
-      { "label": "B", "text": "It floats on the surface", "isCorrect": false, "explanation": "An object MORE dense than the fluid sinks -- floating happens when the object's density is LESS than the fluid's." },
-      { "label": "C", "text": "It explodes", "isCorrect": false, "explanation": "This isn't a physically meaningful outcome related to density comparison and buoyancy." },
-      { "label": "D", "text": "It experiences zero buoyant force", "isCorrect": false, "explanation": "The object still experiences a nonzero buoyant force (equal to the weight of fluid it displaces) -- it's just not enough to keep it from sinking." }
+      { "label": "B", "text": "It floats on the surface, with part of it above the fluid", "isCorrect": false, "explanation": "An object MORE dense than the fluid sinks -- floating happens when the object's density is LESS than the fluid's." },
+      { "label": "C", "text": "It explodes, since the fluid pressure crushes it", "isCorrect": false, "explanation": "This isn't a physically meaningful outcome related to density comparison and buoyancy." },
+      { "label": "D", "text": "It experiences zero buoyant force, since it is denser", "isCorrect": false, "explanation": "The object still experiences a nonzero buoyant force (equal to the weight of fluid it displaces) -- it's just not enough to keep it from sinking." }
     ],
     "explanation": "An object denser than the fluid sinks, since the maximum buoyant force can't support its full weight.",
     "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
@@ -342,10 +342,10 @@
     "difficulty": "medium",
     "stem": "Why does an object feel \"lighter\" when submerged in water compared to being weighed in air?",
     "choices": [
-      { "label": "A", "text": "The buoyant force from the water partially supports the object's weight, reducing the apparent weight measured (e.g., on a scale)", "isCorrect": true, "explanation": "The upward buoyant force offsets part of gravity's downward pull, so less force is needed (e.g., from a scale or your hand) to support the object -- it \"feels\" lighter." },
-      { "label": "B", "text": "The object's actual mass decreases when submerged in water", "isCorrect": false, "explanation": "The object's mass doesn't change at all -- only the APPARENT weight (as measured by a scale) decreases, due to the buoyant force." },
-      { "label": "C", "text": "Gravity is weaker underwater", "isCorrect": false, "explanation": "Gravity's strength is unaffected by being underwater -- the apparent weight change is due to the buoyant force, not a change in gravity." },
-      { "label": "D", "text": "This is purely a psychological effect with no physical basis", "isCorrect": false, "explanation": "This has a clear, real physical basis -- the buoyant force genuinely reduces the net supporting force needed, which is measurable (e.g., on a scale)." }
+      { "label": "A", "text": "The buoyant force from the water partially supports the object's weight, reducing the apparent weight measured on a scale", "isCorrect": true, "explanation": "The upward buoyant force offsets part of gravity's downward pull, so less force is needed (e.g., from a scale or your hand) to support the object -- it \"feels\" lighter." },
+      { "label": "B", "text": "The object's actual mass decreases when submerged in water, since some of it dissolves away", "isCorrect": false, "explanation": "The object's mass doesn't change at all -- only the APPARENT weight (as measured by a scale) decreases, due to the buoyant force." },
+      { "label": "C", "text": "Gravity is weaker underwater, because the water screens the object from Earth's pull", "isCorrect": false, "explanation": "Gravity's strength is unaffected by being underwater -- the apparent weight change is due to the buoyant force, not a change in gravity." },
+      { "label": "D", "text": "This is purely a psychological effect with no physical basis, caused by the water's cool temperature", "isCorrect": false, "explanation": "This has a clear, real physical basis -- the buoyant force genuinely reduces the net supporting force needed, which is measurable (e.g., on a scale)." }
     ],
     "explanation": "The buoyant force partially supports the object's weight, reducing the apparent weight measured while submerged.",
     "conceptLink": "ap-physics-1/unit-8-fluids/buoyancy",
@@ -374,10 +374,10 @@
     "difficulty": "easy",
     "stem": "What does the continuity equation ($A_1v_1=A_2v_2$) describe for fluid flow through a pipe?",
     "choices": [
-      { "label": "A", "text": "For an incompressible fluid, the flow rate (cross-sectional area times speed) must be the same at every point along the pipe", "isCorrect": true, "explanation": "The continuity equation expresses conservation of mass for an incompressible fluid: the volume flow rate is constant throughout the pipe." },
-      { "label": "B", "text": "The pressure is the same at every point along the pipe", "isCorrect": false, "explanation": "The continuity equation relates AREA and SPEED, not pressure directly -- pressure relationships come from Bernoulli's equation instead." },
-      { "label": "C", "text": "The fluid's density changes as it flows through different sections of pipe", "isCorrect": false, "explanation": "The continuity equation (in this form) assumes an INCOMPRESSIBLE fluid, meaning density stays constant throughout." },
-      { "label": "D", "text": "Fluid speed is always the same throughout a pipe of varying width", "isCorrect": false, "explanation": "This is the OPPOSITE of the continuity equation's implication -- speed actually CHANGES (inversely with area) as pipe width varies." }
+      { "label": "A", "text": "For an incompressible fluid, the flow rate (area times speed) is the same at every point along the pipe", "isCorrect": true, "explanation": "The continuity equation expresses conservation of mass for an incompressible fluid: the volume flow rate is constant throughout the pipe." },
+      { "label": "B", "text": "The pressure is the same at every point along the pipe, whatever its width", "isCorrect": false, "explanation": "The continuity equation relates AREA and SPEED, not pressure directly -- pressure relationships come from Bernoulli's equation instead." },
+      { "label": "C", "text": "The fluid's density changes as it flows through different sections of pipe, to keep the speed fixed", "isCorrect": false, "explanation": "The continuity equation (in this form) assumes an INCOMPRESSIBLE fluid, meaning density stays constant throughout." },
+      { "label": "D", "text": "Fluid speed is always the same throughout a pipe of varying width, since the flow is steady", "isCorrect": false, "explanation": "This is the OPPOSITE of the continuity equation's implication -- speed actually CHANGES (inversely with area) as pipe width varies." }
     ],
     "explanation": "The continuity equation states the flow rate (A×v) is constant along a pipe for an incompressible fluid.",
     "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
@@ -406,10 +406,10 @@
     "difficulty": "medium",
     "stem": "Why does fluid speed up when flowing from a wider section of pipe into a narrower section?",
     "choices": [
-      { "label": "A", "text": "Because the flow rate (A×v) must remain constant (continuity), so a smaller area requires a proportionally larger speed", "isCorrect": true, "explanation": "This is a direct consequence of the continuity equation -- to keep A×v constant, decreasing A requires increasing v." },
-      { "label": "B", "text": "Because the fluid becomes less dense in the narrower section", "isCorrect": false, "explanation": "For an incompressible fluid (the standard assumption here), density stays constant -- the speed increase comes from the continuity relationship, not density changes." },
-      { "label": "C", "text": "Because gravity pulls the fluid faster in narrower pipes", "isCorrect": false, "explanation": "Gravity's effect isn't the reason here -- the speed change follows directly from area conservation (continuity), regardless of orientation." },
-      { "label": "D", "text": "There is no actual change in speed between different pipe widths", "isCorrect": false, "explanation": "There IS a real, predictable speed change (increase) in narrower sections, as described by the continuity equation." }
+      { "label": "A", "text": "Because the flow rate (A×v) must stay constant (continuity), so a smaller area requires a proportionally larger speed", "isCorrect": true, "explanation": "This is a direct consequence of the continuity equation -- to keep A×v constant, decreasing A requires increasing v." },
+      { "label": "B", "text": "Because the fluid becomes less dense in the narrower section, so it moves faster", "isCorrect": false, "explanation": "For an incompressible fluid (the standard assumption here), density stays constant -- the speed increase comes from the continuity relationship, not density changes." },
+      { "label": "C", "text": "Because gravity pulls the fluid faster in narrower pipes, where it falls more steeply", "isCorrect": false, "explanation": "Gravity's effect isn't the reason here -- the speed change follows directly from area conservation (continuity), regardless of orientation." },
+      { "label": "D", "text": "There is no actual change in speed between different pipe widths, since the flow rate is set by the pump", "isCorrect": false, "explanation": "There IS a real, predictable speed change (increase) in narrower sections, as described by the continuity equation." }
     ],
     "explanation": "The continuity equation requires A×v to stay constant, so a narrower area (smaller A) requires a proportionally higher speed.",
     "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "What does Bernoulli's Equation express, physically?",
     "choices": [
-      { "label": "A", "text": "Conservation of energy for a flowing fluid, relating pressure, kinetic energy (from speed), and potential energy (from height) along a streamline", "isCorrect": true, "explanation": "Bernoulli's Equation is essentially conservation of energy applied to fluid flow, combining pressure, kinetic, and potential energy terms." },
-      { "label": "B", "text": "Conservation of mass for a flowing fluid", "isCorrect": false, "explanation": "Conservation of MASS is expressed by the continuity equation, not Bernoulli's Equation, which is about energy." },
-      { "label": "C", "text": "The relationship between an object's mass and its weight", "isCorrect": false, "explanation": "This isn't related to Bernoulli's Equation at all -- Bernoulli's Equation concerns fluid flow, pressure, and energy." },
-      { "label": "D", "text": "The total force acting on a submerged object", "isCorrect": false, "explanation": "This describes something closer to buoyancy (Archimedes' Principle), not Bernoulli's Equation." }
+      { "label": "A", "text": "Conservation of energy for a flowing fluid, relating pressure, kinetic energy (speed) and potential energy (height) along a streamline", "isCorrect": true, "explanation": "Bernoulli's Equation is essentially conservation of energy applied to fluid flow, combining pressure, kinetic, and potential energy terms." },
+      { "label": "B", "text": "Conservation of mass for a flowing fluid, relating the density to the speed", "isCorrect": false, "explanation": "Conservation of MASS is expressed by the continuity equation, not Bernoulli's Equation, which is about energy." },
+      { "label": "C", "text": "The relationship between an object's mass and its weight, through the strength of the gravitational field at its location", "isCorrect": false, "explanation": "This isn't related to Bernoulli's Equation at all -- Bernoulli's Equation concerns fluid flow, pressure, and energy." },
+      { "label": "D", "text": "The total force acting on a submerged object, summed over its entire surface", "isCorrect": false, "explanation": "This describes something closer to buoyancy (Archimedes' Principle), not Bernoulli's Equation." }
     ],
     "explanation": "Bernoulli's Equation expresses conservation of energy for fluid flow, relating pressure, kinetic energy, and potential energy.",
     "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
@@ -454,10 +454,10 @@
     "difficulty": "hard",
     "stem": "How does the Bernoulli effect help explain lift on an airplane wing?",
     "choices": [
-      { "label": "A", "text": "Air flows faster over the curved top of the wing than under the flatter bottom, creating lower pressure above the wing and higher pressure below, resulting in a net upward force", "isCorrect": true, "explanation": "This is the standard (simplified) Bernoulli-based explanation for wing lift: faster flow over the top means lower pressure there, and the pressure difference produces lift." },
-      { "label": "B", "text": "Air flows slower over the top of the wing, creating higher pressure there that pushes the wing up", "isCorrect": false, "explanation": "This has the airflow speed backward -- air flows FASTER (not slower) over the curved top, resulting in LOWER pressure there, not higher." },
-      { "label": "C", "text": "The wing's weight alone determines lift, with no role for airflow", "isCorrect": false, "explanation": "Airflow over the wing's shape is central to generating lift -- the wing's weight is what lift must overcome, not what generates it." },
-      { "label": "D", "text": "Lift has nothing to do with air pressure or speed", "isCorrect": false, "explanation": "Lift is directly explained (at least in simplified terms) by the pressure difference created by differing airflow speeds above and below the wing." }
+      { "label": "A", "text": "Air flows faster over the curved top of the wing than under the flatter bottom, so pressure is lower above and higher below, giving a net upward force", "isCorrect": true, "explanation": "This is the standard (simplified) Bernoulli-based explanation for wing lift: faster flow over the top means lower pressure there, and the pressure difference produces lift." },
+      { "label": "B", "text": "Air flows slower over the top of the wing, creating higher pressure there that pushes the wing up, while the pressure under the wing is lower", "isCorrect": false, "explanation": "This has the airflow speed backward -- air flows FASTER (not slower) over the curved top, resulting in LOWER pressure there, not higher." },
+      { "label": "C", "text": "The wing's weight alone determines lift, with no role for airflow over the wing", "isCorrect": false, "explanation": "Airflow over the wing's shape is central to generating lift -- the wing's weight is what lift must overcome, not what generates it." },
+      { "label": "D", "text": "Lift has nothing to do with air pressure or speed, but only with the wing's angle", "isCorrect": false, "explanation": "Lift is directly explained (at least in simplified terms) by the pressure difference created by differing airflow speeds above and below the wing." }
     ],
     "explanation": "Faster airflow over the wing's curved top creates lower pressure there (Bernoulli), while higher pressure below produces net upward lift.",
     "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "Why is Bernoulli's Equation considered analogous to the work-energy theorem or conservation of mechanical energy from earlier in the course?",
     "choices": [
-      { "label": "A", "text": "Because it expresses that the total \"energy per unit volume\" of a fluid (pressure + kinetic energy density + potential energy density) remains constant along a streamline, just as total mechanical energy is conserved for a particle", "isCorrect": true, "explanation": "Bernoulli's Equation is fundamentally an energy conservation statement, adapted for fluid flow, paralleling the mechanical energy conservation used for point particles." },
-      { "label": "B", "text": "Because both equations involve exactly the same variables with no differences", "isCorrect": false, "explanation": "While conceptually analogous, Bernoulli's Equation specifically involves pressure and fluid-specific terms not present in the particle mechanical energy equation -- they aren't identical." },
-      { "label": "C", "text": "There is no real analogy between the two -- they're unrelated concepts", "isCorrect": false, "explanation": "There IS a strong, well-recognized conceptual analogy -- both express a form of energy conservation, just applied to different physical situations (particles vs. fluids)." },
-      { "label": "D", "text": "Bernoulli's Equation is only used for solid objects, not fluids", "isCorrect": false, "explanation": "Bernoulli's Equation is specifically a FLUID mechanics equation -- it doesn't apply to solid objects in the way described here." }
+      { "label": "A", "text": "Because it expresses that the total energy per unit volume of a fluid (pressure + kinetic energy density + potential energy density) is constant along a streamline, just as mechanical energy is conserved for a particle", "isCorrect": true, "explanation": "Bernoulli's Equation is fundamentally an energy conservation statement, adapted for fluid flow, paralleling the mechanical energy conservation used for point particles." },
+      { "label": "B", "text": "Because both equations involve exactly the same variables with no differences, so one can be substituted directly for the other in any problem", "isCorrect": false, "explanation": "While conceptually analogous, Bernoulli's Equation specifically involves pressure and fluid-specific terms not present in the particle mechanical energy equation -- they aren't identical." },
+      { "label": "C", "text": "There is no real analogy between the two -- they are unrelated concepts that happen to use some of the same letters in their formulas", "isCorrect": false, "explanation": "There IS a strong, well-recognized conceptual analogy -- both express a form of energy conservation, just applied to different physical situations (particles vs. fluids)." },
+      { "label": "D", "text": "Bernoulli's Equation is only used for solid objects, not fluids, so it describes sliding blocks and rolling balls", "isCorrect": false, "explanation": "Bernoulli's Equation is specifically a FLUID mechanics equation -- it doesn't apply to solid objects in the way described here." }
     ],
     "explanation": "Bernoulli's Equation expresses conservation of energy per unit volume along a streamline, paralleling mechanical energy conservation for particles.",
     "conceptLink": "ap-physics-1/unit-8-fluids/fluid-dynamics",

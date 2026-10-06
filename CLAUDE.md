@@ -1789,11 +1789,24 @@ in app logic — updating them should be a data edit.
   blank lines in the DBQ prompts (a content edit and a reseed of those prompts) or a renderer that keeps
   line breaks (which would also change the `a)` / `b)` lines of every sample answer, probably for the better).
 
-- **The right answer is still the longest choice too often in Calc AB, Physics 1 and CSA.** Measured
-  2026-10-05 (share of questions where it is the longest of four; chance is 25%): Calc AB 55%,
-  Physics 1 51%, CSA 36%. Fixed since: U.S. History (29%) and World History (87% -> 26%, see "Hard AP
-  World History set"). The same overlay approach works for the remaining three; their generators are in
-  `scripts/content-authoring/<course>-hard/` and the core sets were written straight to JSON.
+- **Answer lengths in Calc AB, Physics 1 and CSA (core sets) were evened out 2026-10-06**, with the same
+  overlay approach as World History (`scripts/content-authoring/ap-core-pad/`: `<course>/pad_uN.py` holding
+  `PAD` / `PADC` / `PADW`, `apply.py <course>`, `stats.py`, `flag.py`, `dump.py`, plus `extend_longest.py`
+  for second passes). Only a choice's `text` changed (921 texts in 280 questions; labels, correctness and
+  every explanation as before, checked against `git HEAD`). Before -> after, the right answer being the
+  longest of its choices: Calc AB 51% -> 22%, Physics 1 47% -> 19%, CSA 35% -> 17% (counting only
+  questions with prose choices, where length can be a tell: 76% -> 24%, 75% -> 28%, 66% -> 24%). The
+  hard sets (`unit-N-hard.json`) were generated with computed distractors and were already balanced (12%,
+  5%, 6%), so they were not touched. The core files were written straight to JSON, so unlike World's
+  hard set there is no generator to re-run. Short math and code choices (`$p = mv$`, a line of Java)
+  are left alone: their lengths mean nothing, except that a trailing "where m is mass..." on the right
+  formula was trimmed, since that was a tell on its own.
+  **Left as is, on purpose**: the right answer is rarely the *shortest* choice now (Calc 4%, Physics 10%,
+  CSA 5% of all questions; World and U.S. History are 12-13%), a small reverse tell. Lengthening the
+  shortest wrong choice in more questions would fix it if it ever matters.
+  **Reseed needed** (not done yet): `npm run content:seed -- ap-calc` (and `ap-physics-1`, `ap-csa`).
+  It resets the admin approval of the 280 changed questions, so the unit pages in `/admin/review` need
+  "Approve all" again.
 
 - **`npm audit` reports vulnerabilities** in `hono`/`mysql2` — both transitive
   dev dependencies of the `prisma` CLI itself (bundled tooling for databases/

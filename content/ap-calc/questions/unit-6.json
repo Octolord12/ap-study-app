@@ -7,9 +7,9 @@
     "stem": "What does a Riemann sum approximate?",
     "choices": [
       { "label": "A", "text": "The area under a curve (or between a curve and the x-axis) over an interval", "isCorrect": true, "explanation": "Riemann sums approximate the area under a curve using rectangles." },
-      { "label": "B", "text": "The slope of a tangent line", "isCorrect": false, "explanation": "Slope of a tangent line relates to derivatives, a different concept from Riemann sums." },
-      { "label": "C", "text": "The derivative of a function", "isCorrect": false, "explanation": "Riemann sums relate to accumulation/area, not to computing derivatives." },
-      { "label": "D", "text": "The domain of a function", "isCorrect": false, "explanation": "The domain of a function is a completely separate concept from Riemann sums." }
+      { "label": "B", "text": "The slope of a tangent line at a single point on the curve", "isCorrect": false, "explanation": "Slope of a tangent line relates to derivatives, a different concept from Riemann sums." },
+      { "label": "C", "text": "The derivative of a function, evaluated at several sample points along the interval", "isCorrect": false, "explanation": "Riemann sums relate to accumulation/area, not to computing derivatives." },
+      { "label": "D", "text": "The domain of a function, written as an interval of x-values", "isCorrect": false, "explanation": "The domain of a function is a completely separate concept from Riemann sums." }
     ],
     "explanation": "A Riemann sum approximates the area under a curve using a sum of rectangle areas.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
@@ -22,10 +22,10 @@
     "difficulty": "medium",
     "stem": "In a Riemann sum, what happens to the approximation's accuracy as the number of rectangles (subintervals) increases (with each individually getting narrower)?",
     "choices": [
-      { "label": "A", "text": "The approximation generally becomes more accurate, approaching the exact area as the number of rectangles approaches infinity", "isCorrect": true, "explanation": "This is the foundational idea connecting Riemann sums to the exact value of the definite integral." },
-      { "label": "B", "text": "The approximation becomes less accurate", "isCorrect": false, "explanation": "Using more (narrower) rectangles generally IMPROVES the approximation's accuracy, not worsens it." },
-      { "label": "C", "text": "The approximation stays exactly the same no matter how many rectangles are used", "isCorrect": false, "explanation": "The approximation's accuracy DOES change (typically improving) as the number of rectangles changes." },
-      { "label": "D", "text": "Increasing the number of rectangles has no logical connection to the process at all", "isCorrect": false, "explanation": "There is a very direct, meaningful connection; this is precisely the conceptual foundation connecting Riemann sums to the definite integral." }
+      { "label": "A", "text": "The approximation generally becomes more accurate, approaching the exact area as the number of rectangles grows without bound", "isCorrect": true, "explanation": "This is the foundational idea connecting Riemann sums to the exact value of the definite integral." },
+      { "label": "B", "text": "The approximation becomes less accurate, because every additional rectangle adds error to the total", "isCorrect": false, "explanation": "Using more (narrower) rectangles generally IMPROVES the approximation's accuracy, not worsens it." },
+      { "label": "C", "text": "The approximation stays exactly the same no matter how many rectangles are used, since the area is fixed", "isCorrect": false, "explanation": "The approximation's accuracy DOES change (typically improving) as the number of rectangles changes." },
+      { "label": "D", "text": "Increasing the number of rectangles has no logical connection to the process at all, so accuracy is unaffected", "isCorrect": false, "explanation": "There is a very direct, meaningful connection; this is precisely the conceptual foundation connecting Riemann sums to the definite integral." }
     ],
     "explanation": "As the number of rectangles increases (narrowing each), the Riemann sum approaches the exact area.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
@@ -39,9 +39,9 @@
     "stem": "What is the definite integral $\\int_a^b f(x)\\,dx$ defined as, in terms of Riemann sums?",
     "choices": [
       { "label": "A", "text": "The limit of Riemann sums as the number of rectangles approaches infinity (and rectangle width approaches 0)", "isCorrect": true, "explanation": "This is the formal definition of the definite integral." },
-      { "label": "B", "text": "The derivative of f at x=a", "isCorrect": false, "explanation": "This describes a completely different calculus concept, unrelated to how the definite integral is formally defined." },
-      { "label": "C", "text": "A single rectangle's area only", "isCorrect": false, "explanation": "A single rectangle would only give an approximation, not the full definite integral." },
-      { "label": "D", "text": "The value of f at x=b minus the value of f at x=a directly, with no limiting process", "isCorrect": false, "explanation": "This describes something different from the Riemann sum limit definition being asked about here." }
+      { "label": "B", "text": "The derivative of f at x=a, evaluated using the limit definition of the derivative", "isCorrect": false, "explanation": "This describes a completely different calculus concept, unrelated to how the definite integral is formally defined." },
+      { "label": "C", "text": "A single rectangle's area only, using the height at the midpoint of [a,b]", "isCorrect": false, "explanation": "A single rectangle would only give an approximation, not the full definite integral." },
+      { "label": "D", "text": "The value of f at x=b minus the value of f at x=a, computed directly with no limiting process involved at all", "isCorrect": false, "explanation": "This describes something different from the Riemann sum limit definition being asked about here." }
     ],
     "explanation": "The definite integral is defined as the limit of Riemann sums as the number of rectangles approaches infinity.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
@@ -87,9 +87,9 @@
     "stem": "What does a Right Riemann Sum use, compared to a Left Riemann Sum, to determine each rectangle's height?",
     "choices": [
       { "label": "A", "text": "The function's value at the RIGHT endpoint of each subinterval, rather than the left endpoint", "isCorrect": true, "explanation": "A right Riemann sum uses the function's value at the right endpoint of each subinterval." },
-      { "label": "B", "text": "The function's value at the exact midpoint of each subinterval", "isCorrect": false, "explanation": "Using the exact midpoint describes a MIDPOINT Riemann sum, a different method." },
-      { "label": "C", "text": "The function's minimum value over the entire interval", "isCorrect": false, "explanation": "Using the function's overall minimum value doesn't describe how a standard right Riemann sum's heights are determined." },
-      { "label": "D", "text": "The function's average value over the entire interval", "isCorrect": false, "explanation": "Using the function's overall average value isn't how right Riemann sum heights are determined either." }
+      { "label": "B", "text": "The function's value at the exact midpoint of each subinterval, which balances the over- and under-estimates", "isCorrect": false, "explanation": "Using the exact midpoint describes a MIDPOINT Riemann sum, a different method." },
+      { "label": "C", "text": "The function's minimum value over the entire interval, for a conservative estimate", "isCorrect": false, "explanation": "Using the function's overall minimum value doesn't describe how a standard right Riemann sum's heights are determined." },
+      { "label": "D", "text": "The function's average value over the entire interval, for a smoothed estimate", "isCorrect": false, "explanation": "Using the function's overall average value isn't how right Riemann sum heights are determined either." }
     ],
     "explanation": "A Right Riemann Sum uses the function's value at the right endpoint of each subinterval.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
@@ -102,9 +102,9 @@
     "difficulty": "medium",
     "stem": "What geometric interpretation does a definite integral $\\int_a^b f(x)\\,dx$ have when f(x) is negative on part of [a,b]?",
     "choices": [
-      { "label": "A", "text": "The integral represents signed area -- area above the x-axis counts positively, while area below counts negatively", "isCorrect": true, "explanation": "The definite integral computes signed area, with regions below the x-axis subtracting from the total." },
-      { "label": "B", "text": "The integral is always exactly zero whenever f is negative anywhere", "isCorrect": false, "explanation": "The integral isn't automatically zero just because f is negative somewhere; it depends on the specific balance of positive and negative areas." },
-      { "label": "C", "text": "The integral cannot be computed if f is ever negative", "isCorrect": false, "explanation": "Definite integrals CAN absolutely be computed even when f takes negative values on part of the interval." },
+      { "label": "A", "text": "The integral represents signed area: area above the x-axis counts positively, while area below counts negatively", "isCorrect": true, "explanation": "The definite integral computes signed area, with regions below the x-axis subtracting from the total." },
+      { "label": "B", "text": "The integral is always exactly zero whenever f is negative anywhere on the interval, because the positive and negative areas always cancel", "isCorrect": false, "explanation": "The integral isn't automatically zero just because f is negative somewhere; it depends on the specific balance of positive and negative areas." },
+      { "label": "C", "text": "The integral cannot be computed if f is ever negative, since negative area has no meaning", "isCorrect": false, "explanation": "Definite integrals CAN absolutely be computed even when f takes negative values on part of the interval." },
       { "label": "D", "text": "The integral only counts the positive-area portions, completely ignoring negative regions", "isCorrect": false, "explanation": "Negative-area portions are NOT ignored; they are specifically subtracted in the total signed area calculation." }
     ],
     "explanation": "The definite integral represents signed area: positive above the x-axis, negative below.",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "What are the units of a definite integral $\\int_a^b f(x)\\,dx$, if f(x) has units of \"meters/second\" (velocity) and x has units of \"seconds\" (time)?",
     "choices": [
-      { "label": "A", "text": "Meters (since integrating velocity with respect to time gives displacement/distance)", "isCorrect": true, "explanation": "Integrating velocity (meters/second) with respect to time (seconds) gives units of meters." },
-      { "label": "B", "text": "Meters/second (the same as f(x) itself)", "isCorrect": false, "explanation": "The integral's units are NOT simply the same as f(x)'s units; integration combines f(x)'s units with dx's units." },
-      { "label": "C", "text": "Seconds²", "isCorrect": false, "explanation": "This doesn't correctly represent the combination of \"meters/second\" with \"seconds\" via multiplication." },
-      { "label": "D", "text": "Meters/second²", "isCorrect": false, "explanation": "This describes units of acceleration, not the correct result of integrating velocity with respect to time." }
+      { "label": "A", "text": "Meters (integrating velocity over time gives displacement)", "isCorrect": true, "explanation": "Integrating velocity (meters/second) with respect to time (seconds) gives units of meters." },
+      { "label": "B", "text": "Meters/second (the same as f(x) itself, since the integrand's units are kept)", "isCorrect": false, "explanation": "The integral's units are NOT simply the same as f(x)'s units; integration combines f(x)'s units with dx's units." },
+      { "label": "C", "text": "Seconds² (the square of the time units)", "isCorrect": false, "explanation": "This doesn't correctly represent the combination of \"meters/second\" with \"seconds\" via multiplication." },
+      { "label": "D", "text": "Meters/second² (the units of acceleration)", "isCorrect": false, "explanation": "This describes units of acceleration, not the correct result of integrating velocity with respect to time." }
     ],
     "explanation": "Integrating velocity (meters/second) with respect to time (seconds) gives displacement in meters.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
@@ -135,9 +135,9 @@
     "stem": "What does the Fundamental Theorem of Calculus (Part 1) state, in essence, about the relationship between derivatives and integrals?",
     "choices": [
       { "label": "A", "text": "Differentiation and integration are, in a specific sense, inverse operations of each other", "isCorrect": true, "explanation": "This is the deep, central insight of the Fundamental Theorem of Calculus." },
-      { "label": "B", "text": "Derivatives and integrals are completely unrelated concepts", "isCorrect": false, "explanation": "The Fundamental Theorem specifically establishes a deep, direct connection between these two concepts." },
-      { "label": "C", "text": "Integration always gives a constant value", "isCorrect": false, "explanation": "A definite integral's value depends on the specific function/bounds, not always a fixed constant." },
-      { "label": "D", "text": "Differentiation always gives zero", "isCorrect": false, "explanation": "Differentiation certainly does not always give zero; this doesn't relate to the theorem's content." }
+      { "label": "B", "text": "Derivatives and integrals are completely unrelated concepts that happen to share the same notation", "isCorrect": false, "explanation": "The Fundamental Theorem specifically establishes a deep, direct connection between these two concepts." },
+      { "label": "C", "text": "Integration always gives a constant value, whatever the function", "isCorrect": false, "explanation": "A definite integral's value depends on the specific function/bounds, not always a fixed constant." },
+      { "label": "D", "text": "Differentiation always gives zero, whatever the function", "isCorrect": false, "explanation": "Differentiation certainly does not always give zero; this doesn't relate to the theorem's content." }
     ],
     "explanation": "The Fundamental Theorem of Calculus establishes that differentiation and integration are inverse operations.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/fundamental-theorem-of-calculus",
@@ -294,10 +294,10 @@
     "difficulty": "medium",
     "stem": "Why must a \"+C\" (constant of integration) always be included when writing a general indefinite integral/antiderivative?",
     "choices": [
-      { "label": "A", "text": "Because the derivative of any constant is 0, so infinitely many antiderivatives (differing only by a constant) all have the same derivative f(x)", "isCorrect": true, "explanation": "Since constants vanish under differentiation, any constant added to an antiderivative still yields a valid antiderivative." },
-      { "label": "B", "text": "Because \"+C\" makes the answer look more complete for no real mathematical reason", "isCorrect": false, "explanation": "\"+C\" has a very real, specific mathematical justification, not just cosmetic completeness." },
-      { "label": "C", "text": "Because C always equals zero", "isCorrect": false, "explanation": "C represents an ARBITRARY constant that could be any real number, not one that \"always equals zero.\"" },
-      { "label": "D", "text": "Because indefinite integrals never actually have a solution without it", "isCorrect": false, "explanation": "Indefinite integrals absolutely do have solutions; \"+C\" specifically accounts for the family of all valid antiderivatives." }
+      { "label": "A", "text": "Because the derivative of any constant is 0, so infinitely many antiderivatives (differing only by a constant) share the same derivative f(x)", "isCorrect": true, "explanation": "Since constants vanish under differentiation, any constant added to an antiderivative still yields a valid antiderivative." },
+      { "label": "B", "text": "Because \"+C\" makes the answer look more complete, even though it serves no real mathematical reason", "isCorrect": false, "explanation": "\"+C\" has a very real, specific mathematical justification, not just cosmetic completeness." },
+      { "label": "C", "text": "Because C always equals zero in the end, so the constant is a placeholder that drops out of the final answer", "isCorrect": false, "explanation": "C represents an ARBITRARY constant that could be any real number, not one that \"always equals zero.\"" },
+      { "label": "D", "text": "Because indefinite integrals never actually have a solution without it, since the antiderivative would be undefined at every point of the domain", "isCorrect": false, "explanation": "Indefinite integrals absolutely do have solutions; \"+C\" specifically accounts for the family of all valid antiderivatives." }
     ],
     "explanation": "\"+C\" is needed because constants vanish under differentiation, so infinitely many antiderivatives share the same derivative.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/antiderivatives-and-indefinite-integrals",
@@ -374,10 +374,10 @@
     "difficulty": "easy",
     "stem": "What is the general purpose of u-substitution when evaluating an integral?",
     "choices": [
-      { "label": "A", "text": "To simplify a complex integral by substituting a new variable u for part of the expression, making it easier to integrate", "isCorrect": true, "explanation": "U-substitution simplifies complex integrals by replacing a portion of the expression with a new variable." },
-      { "label": "B", "text": "To make an integral more complicated on purpose", "isCorrect": false, "explanation": "U-substitution is specifically used to SIMPLIFY an integral, not to make it more complicated." },
-      { "label": "C", "text": "To avoid ever needing an antiderivative", "isCorrect": false, "explanation": "U-substitution still requires finding an antiderivative; it simplifies the process of finding one." },
-      { "label": "D", "text": "To convert every integral into a derivative instead", "isCorrect": false, "explanation": "U-substitution is a technique for evaluating INTEGRALS, not for converting them into derivatives." }
+      { "label": "A", "text": "To simplify a complicated integral by replacing part of the expression with a new variable u, making it easier to integrate", "isCorrect": true, "explanation": "U-substitution simplifies complex integrals by replacing a portion of the expression with a new variable." },
+      { "label": "B", "text": "To make an integral more complicated on purpose, so that its structure is easier to see", "isCorrect": false, "explanation": "U-substitution is specifically used to SIMPLIFY an integral, not to make it more complicated." },
+      { "label": "C", "text": "To avoid ever needing an antiderivative, by turning the integral into a numerical estimate", "isCorrect": false, "explanation": "U-substitution still requires finding an antiderivative; it simplifies the process of finding one." },
+      { "label": "D", "text": "To convert every integral into a derivative instead, so that it can be evaluated by differentiation alone", "isCorrect": false, "explanation": "U-substitution is a technique for evaluating INTEGRALS, not for converting them into derivatives." }
     ],
     "explanation": "U-substitution simplifies a complex integral by substituting a new variable for part of the expression.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/u-substitution",
@@ -454,10 +454,10 @@
     "difficulty": "medium",
     "stem": "Why does u-substitution work as a valid technique for evaluating integrals?",
     "choices": [
-      { "label": "A", "text": "It is essentially the reverse of the Chain Rule, \"undoing\" a composite function's derivative structure to find the corresponding antiderivative", "isCorrect": true, "explanation": "U-substitution is grounded in reversing the Chain Rule used in differentiation." },
-      { "label": "B", "text": "It's just an arbitrary trick with no real mathematical justification", "isCorrect": false, "explanation": "U-substitution has a very real, well-established mathematical justification, being fundamentally connected to reversing the Chain Rule." },
-      { "label": "C", "text": "It only works for polynomial functions", "isCorrect": false, "explanation": "U-substitution is applicable to a wide variety of function types, not exclusively polynomials." },
-      { "label": "D", "text": "It works because all integrals are secretly the same", "isCorrect": false, "explanation": "This is a nonsensical claim; different integrals are NOT \"all secretly the same.\"" }
+      { "label": "A", "text": "It is essentially the reverse of the Chain Rule, undoing a composite function's derivative to find the antiderivative", "isCorrect": true, "explanation": "U-substitution is grounded in reversing the Chain Rule used in differentiation." },
+      { "label": "B", "text": "It's just an arbitrary trick with no real mathematical justification, which happens to give correct answers", "isCorrect": false, "explanation": "U-substitution has a very real, well-established mathematical justification, being fundamentally connected to reversing the Chain Rule." },
+      { "label": "C", "text": "It only works for polynomial functions, since other functions cannot be substituted", "isCorrect": false, "explanation": "U-substitution is applicable to a wide variety of function types, not exclusively polynomials." },
+      { "label": "D", "text": "It works because all integrals are secretly the same, once a suitable variable is chosen", "isCorrect": false, "explanation": "This is a nonsensical claim; different integrals are NOT \"all secretly the same.\"" }
     ],
     "explanation": "U-substitution works because it is essentially the reverse of the Chain Rule.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/u-substitution",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "For a DEFINITE integral evaluated using u-substitution, such as $\\int_0^2 2x(x^2+1)^5\\,dx$ with $u=x^2+1$, what must also be done to the bounds of integration?",
     "choices": [
-      { "label": "A", "text": "The bounds must be converted from x-values to the corresponding u-values (e.g., x=0 becomes u=1, and x=2 becomes u=5)", "isCorrect": true, "explanation": "When changing variables in a definite integral, the limits of integration must also be converted to match the new variable u." },
-      { "label": "B", "text": "The bounds should be left unchanged as x-values, even after switching to u", "isCorrect": false, "explanation": "Leaving the bounds as x-values while the integral is expressed in terms of u would be inconsistent and incorrect." },
-      { "label": "C", "text": "The bounds should always become 0 and 1, regardless of the original problem", "isCorrect": false, "explanation": "The new bounds depend on the SPECIFIC substitution and original bounds, not a fixed universal pair of values." },
-      { "label": "D", "text": "Bounds are irrelevant for u-substitution and can be ignored entirely", "isCorrect": false, "explanation": "Bounds remain essential for a definite integral; they must be correctly converted, not ignored." }
+      { "label": "A", "text": "The bounds must be converted from x-values to the matching u-values (here x=0 becomes u=1, and x=2 becomes u=5)", "isCorrect": true, "explanation": "When changing variables in a definite integral, the limits of integration must also be converted to match the new variable u." },
+      { "label": "B", "text": "The bounds should be left unchanged as x-values, even after switching the integrand to the variable u", "isCorrect": false, "explanation": "Leaving the bounds as x-values while the integral is expressed in terms of u would be inconsistent and incorrect." },
+      { "label": "C", "text": "The bounds should always become 0 and 1, regardless of the original problem or substitution", "isCorrect": false, "explanation": "The new bounds depend on the SPECIFIC substitution and original bounds, not a fixed universal pair of values." },
+      { "label": "D", "text": "Bounds are irrelevant for u-substitution and can be ignored entirely once u is defined", "isCorrect": false, "explanation": "Bounds remain essential for a definite integral; they must be correctly converted, not ignored." }
     ],
     "explanation": "When changing variables via u-substitution in a definite integral, the bounds must be converted to the corresponding u-values.",
     "conceptLink": "ap-calc/unit-6-integration-and-accumulation-of-change/u-substitution",

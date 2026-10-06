@@ -7,9 +7,9 @@
     "stem": "What does the Chain Rule allow you to differentiate?",
     "choices": [
       { "label": "A", "text": "Composite functions, such as f(g(x))", "isCorrect": true, "explanation": "The Chain Rule is specifically designed for differentiating composite functions." },
-      { "label": "B", "text": "Only polynomial functions", "isCorrect": false, "explanation": "Polynomials can be differentiated with the power rule alone in many cases; the Chain Rule specifically addresses composite functions." },
-      { "label": "C", "text": "Only sums of functions", "isCorrect": false, "explanation": "Sums of functions are handled by the Sum Rule, not specifically the Chain Rule." },
-      { "label": "D", "text": "Functions with no variables", "isCorrect": false, "explanation": "This doesn't describe any meaningful category of function relevant to the Chain Rule." }
+      { "label": "B", "text": "Only polynomial functions, never anything else", "isCorrect": false, "explanation": "Polynomials can be differentiated with the power rule alone in many cases; the Chain Rule specifically addresses composite functions." },
+      { "label": "C", "text": "Only sums of functions, such as f(x) + g(x) and nothing else", "isCorrect": false, "explanation": "Sums of functions are handled by the Sum Rule, not specifically the Chain Rule." },
+      { "label": "D", "text": "Functions with no variables in them at all", "isCorrect": false, "explanation": "This doesn't describe any meaningful category of function relevant to the Chain Rule." }
     ],
     "explanation": "The Chain Rule is used to differentiate composite functions, where one function is nested inside another.",
     "conceptLink": "ap-calc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "Why is the Chain Rule necessary when differentiating a composite function like f(g(x)), rather than just differentiating f and g separately and adding or multiplying the results directly?",
     "choices": [
-      { "label": "A", "text": "Because the \"inner\" function g(x) is itself changing with respect to x, and this rate of change must be accounted for alongside the \"outer\" function's sensitivity to that change", "isCorrect": true, "explanation": "The Chain Rule correctly accounts for both the inner function's rate of change and the outer function's sensitivity to it." },
-      { "label": "B", "text": "It isn't necessary; composite functions can be differentiated by any method", "isCorrect": false, "explanation": "The Chain Rule specifically IS necessary for correctly differentiating composite functions; other methods would give incorrect results." },
-      { "label": "C", "text": "Because composite functions have no derivatives", "isCorrect": false, "explanation": "Composite functions absolutely have derivatives, computable specifically via the Chain Rule." },
-      { "label": "D", "text": "Because f(g(x)) is always equal to f(x)·g(x)", "isCorrect": false, "explanation": "f(g(x)) is a COMPOSITION, not the same as the PRODUCT f(x)*g(x); these are fundamentally different operations." }
+      { "label": "A", "text": "Because the inner function g(x) is itself changing with respect to x, and that rate of change must be accounted for alongside the outer function's sensitivity", "isCorrect": true, "explanation": "The Chain Rule correctly accounts for both the inner function's rate of change and the outer function's sensitivity to it." },
+      { "label": "B", "text": "It isn't necessary; composite functions can be differentiated by any method, since every method gives the same result as the product of f'(x) and g'(x)", "isCorrect": false, "explanation": "The Chain Rule specifically IS necessary for correctly differentiating composite functions; other methods would give incorrect results." },
+      { "label": "C", "text": "Because composite functions have no derivatives, so the Chain Rule is used to approximate them instead", "isCorrect": false, "explanation": "Composite functions absolutely have derivatives, computable specifically via the Chain Rule." },
+      { "label": "D", "text": "Because f(g(x)) is always equal to f(x)·g(x), and the Chain Rule is a shortcut for the product rule", "isCorrect": false, "explanation": "f(g(x)) is a COMPOSITION, not the same as the PRODUCT f(x)*g(x); these are fundamentally different operations." }
     ],
     "explanation": "The Chain Rule accounts for both the inner function's rate of change and the outer function's sensitivity to that change.",
     "conceptLink": "ap-calc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
@@ -151,8 +151,8 @@
     "stem": "When applying implicit differentiation to a term involving y (like $y^2$), what extra factor must be included due to the Chain Rule?",
     "choices": [
       { "label": "A", "text": "dy/dx (since y is itself a function of x)", "isCorrect": true, "explanation": "Because y is treated as a function of x, differentiating any y-term requires multiplying by dy/dx via the chain rule." },
-      { "label": "B", "text": "dx/dy", "isCorrect": false, "explanation": "This reverses the correct derivative direction needed here; implicit differentiation with respect to x requires dy/dx, not dx/dy." },
-      { "label": "C", "text": "No extra factor is needed", "isCorrect": false, "explanation": "An extra factor (dy/dx) absolutely IS needed; this is the entire point of implicit differentiation for y-terms." },
+      { "label": "B", "text": "dx/dy (since x is a function of y) and must be multiplied in", "isCorrect": false, "explanation": "This reverses the correct derivative direction needed here; implicit differentiation with respect to x requires dy/dx, not dx/dy." },
+      { "label": "C", "text": "No extra factor is needed when y appears in a power", "isCorrect": false, "explanation": "An extra factor (dy/dx) absolutely IS needed; this is the entire point of implicit differentiation for y-terms." },
       { "label": "D", "text": "y itself, with no derivative notation", "isCorrect": false, "explanation": "Simply writing y without the dy/dx notation would incorrectly ignore that y itself depends on x." }
     ],
     "explanation": "Implicit differentiation requires multiplying by dy/dx whenever differentiating a term involving y, since y is a function of x.",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "What key insight distinguishes implicit differentiation from standard differentiation, in terms of how you treat y?",
     "choices": [
-      { "label": "A", "text": "Every time you differentiate a term containing y, you must multiply by dy/dx (applying the chain rule, since y is treated as a function of x)", "isCorrect": true, "explanation": "This is the central insight of implicit differentiation." },
-      { "label": "B", "text": "y is simply treated as a constant and ignored entirely", "isCorrect": false, "explanation": "y is NOT treated as a constant; it's treated as a function of x, which is why the extra dy/dx factor is needed." },
-      { "label": "C", "text": "x and y are swapped throughout the entire process", "isCorrect": false, "explanation": "x and y are not swapped; implicit differentiation still differentiates with respect to x throughout." },
-      { "label": "D", "text": "Implicit differentiation only works for equations with no y terms at all", "isCorrect": false, "explanation": "Implicit differentiation is specifically useful for equations that DO contain y terms not explicitly solved for." }
+      { "label": "A", "text": "Every time you differentiate a term containing y, you multiply by dy/dx (by the chain rule, since y is treated as a function of x)", "isCorrect": true, "explanation": "This is the central insight of implicit differentiation." },
+      { "label": "B", "text": "y is simply treated as a constant and ignored entirely, so any term containing y differentiates to zero and drops out of the equation", "isCorrect": false, "explanation": "y is NOT treated as a constant; it's treated as a function of x, which is why the extra dy/dx factor is needed." },
+      { "label": "C", "text": "x and y are swapped throughout the entire process, so the equation is solved for x first", "isCorrect": false, "explanation": "x and y are not swapped; implicit differentiation still differentiates with respect to x throughout." },
+      { "label": "D", "text": "Implicit differentiation only works for equations with no y terms at all, because y cannot be differentiated", "isCorrect": false, "explanation": "Implicit differentiation is specifically useful for equations that DO contain y terms not explicitly solved for." }
     ],
     "explanation": "Every y-term requires an extra dy/dx factor via the chain rule, since y is treated as a function of x.",
     "conceptLink": "ap-calc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
@@ -326,10 +326,10 @@
     "difficulty": "medium",
     "stem": "Why does the derivative of an inverse function formula involve dividing by $f'(g(x))$, rather than simply $f'(x)$?",
     "choices": [
-      { "label": "A", "text": "Because the inverse function's rate of change at x is related to the ORIGINAL function's rate of change at the corresponding point g(x), not at x itself", "isCorrect": true, "explanation": "The inverse function's derivative depends on the original function's behavior at the point that maps to x under the inverse relationship." },
-      { "label": "B", "text": "Because f'(x) is always zero for invertible functions", "isCorrect": false, "explanation": "f'(x) being zero would actually make a function NON-invertible at that point; it's not generally zero for invertible functions." },
-      { "label": "C", "text": "Because dividing is always required in calculus", "isCorrect": false, "explanation": "Division isn't a universal requirement across all of calculus; this formula's specific structure comes from the precise relationship between inverse functions." },
-      { "label": "D", "text": "There's no real reason; it's an arbitrary convention", "isCorrect": false, "explanation": "There is a specific, meaningful mathematical reason related to the geometric relationship between inverse functions, not an arbitrary convention." }
+      { "label": "A", "text": "Because the inverse function's rate of change at x depends on the ORIGINAL function's rate of change at the corresponding point g(x), not at x", "isCorrect": true, "explanation": "The inverse function's derivative depends on the original function's behavior at the point that maps to x under the inverse relationship." },
+      { "label": "B", "text": "Because f'(x) is always zero for invertible functions, so the formula needs a different point where the derivative is nonzero and defined", "isCorrect": false, "explanation": "f'(x) being zero would actually make a function NON-invertible at that point; it's not generally zero for invertible functions." },
+      { "label": "C", "text": "Because dividing is always required in calculus when two functions are composed with each other", "isCorrect": false, "explanation": "Division isn't a universal requirement across all of calculus; this formula's specific structure comes from the precise relationship between inverse functions." },
+      { "label": "D", "text": "There's no real reason; it's an arbitrary convention that textbooks adopted long ago", "isCorrect": false, "explanation": "There is a specific, meaningful mathematical reason related to the geometric relationship between inverse functions, not an arbitrary convention." }
     ],
     "explanation": "The inverse function's rate of change at x relates to the original function's rate of change at the corresponding point g(x).",
     "conceptLink": "ap-calc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
@@ -359,9 +359,9 @@
     "stem": "What does the \"second derivative\" of a function, f''(x), represent?",
     "choices": [
       { "label": "A", "text": "The derivative of the first derivative, f'(x)", "isCorrect": true, "explanation": "The second derivative is obtained by differentiating the first derivative once more." },
-      { "label": "B", "text": "The derivative taken twice as fast", "isCorrect": false, "explanation": "This doesn't describe a valid mathematical operation; the second derivative is differentiating the FIRST derivative, not \"twice as fast.\"" },
-      { "label": "C", "text": "f(x) divided by 2", "isCorrect": false, "explanation": "Dividing f(x) by 2 is unrelated to the concept of a second derivative." },
-      { "label": "D", "text": "The average of f(x) and f'(x)", "isCorrect": false, "explanation": "Averaging f(x) and f'(x) does not describe the second derivative at all." }
+      { "label": "B", "text": "The derivative taken twice as fast as the first", "isCorrect": false, "explanation": "This doesn't describe a valid mathematical operation; the second derivative is differentiating the FIRST derivative, not \"twice as fast.\"" },
+      { "label": "C", "text": "f(x) divided by 2, the half-value of the function", "isCorrect": false, "explanation": "Dividing f(x) by 2 is unrelated to the concept of a second derivative." },
+      { "label": "D", "text": "The average of f(x) and f'(x) at each input over the interval", "isCorrect": false, "explanation": "Averaging f(x) and f'(x) does not describe the second derivative at all." }
     ],
     "explanation": "The second derivative f''(x) is the derivative of the first derivative f'(x).",
     "conceptLink": "ap-calc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",

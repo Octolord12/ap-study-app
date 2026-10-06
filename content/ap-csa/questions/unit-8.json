@@ -166,10 +166,10 @@
     "difficulty": "medium",
     "stem": "Which loop structure is typically used to initialize/traverse every element of a 2D array?",
     "choices": [
-      { "label": "A", "text": "A single for loop", "isCorrect": false, "explanation": "A single loop can't easily reach every row-and-column combination in a 2D structure." },
-      { "label": "B", "text": "A while loop only", "isCorrect": false, "explanation": "While loops CAN be used, but nesting is the key structural idea needed, not specifically \"a while loop only\"." },
+      { "label": "A", "text": "A single for loop that runs once over every element of the array", "isCorrect": false, "explanation": "A single loop can't easily reach every row-and-column combination in a 2D structure." },
+      { "label": "B", "text": "A while loop only, with no counters", "isCorrect": false, "explanation": "While loops CAN be used, but nesting is the key structural idea needed, not specifically \"a while loop only\"." },
       { "label": "C", "text": "Nested for loops (one for rows, one for columns)", "isCorrect": true, "explanation": "An outer loop over rows and an inner loop over columns together visit every element exactly once." },
-      { "label": "D", "text": "A do-while loop only", "isCorrect": false, "explanation": "Do-while loops aren't the standard/required pattern for this; nested loops are the key structural idea, not the specific loop type." }
+      { "label": "D", "text": "A do-while loop only, never a for loop", "isCorrect": false, "explanation": "Do-while loops aren't the standard/required pattern for this; nested loops are the key structural idea, not the specific loop type." }
     ],
     "explanation": "Traversing a 2D array typically uses nested loops: an outer loop for rows and an inner loop for columns.",
     "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "Can the rows of a 2D array in Java have different lengths (a \"jagged\" array)?",
     "choices": [
-      { "label": "A", "text": "No, all rows must always have the exact same length", "isCorrect": false, "explanation": "Java's 2D arrays are actually implemented as arrays of arrays, which permits differing row lengths." },
-      { "label": "B", "text": "Yes, Java allows jagged arrays where each row can have a different length", "isCorrect": true, "explanation": "Since a 2D array is an array of 1D arrays, each row can independently have its own length." },
-      { "label": "C", "text": "Only if declared with the keyword \"jagged\"", "isCorrect": false, "explanation": "There is no \"jagged\" keyword in Java; jagged arrays are just a natural consequence of how 2D arrays work." },
-      { "label": "D", "text": "Only for arrays of Strings", "isCorrect": false, "explanation": "Jagged arrays work for any element type, not just Strings." }
+      { "label": "A", "text": "No, all rows must always have the exact same length, or the program will not compile", "isCorrect": false, "explanation": "Java's 2D arrays are actually implemented as arrays of arrays, which permits differing row lengths." },
+      { "label": "B", "text": "Yes, Java allows jagged arrays, where each row can have a different length", "isCorrect": true, "explanation": "Since a 2D array is an array of 1D arrays, each row can independently have its own length." },
+      { "label": "C", "text": "Only if declared with the keyword \"jagged\" in front of the array type", "isCorrect": false, "explanation": "There is no \"jagged\" keyword in Java; jagged arrays are just a natural consequence of how 2D arrays work." },
+      { "label": "D", "text": "Only for arrays of Strings, never for numbers", "isCorrect": false, "explanation": "Jagged arrays work for any element type, not just Strings." }
     ],
     "explanation": "Java 2D arrays are arrays of arrays, so rows can have different lengths -- these are called jagged arrays.",
     "conceptLink": "ap-csa/unit-8-2d-array/2d-array-creation",
@@ -278,10 +278,10 @@
     "difficulty": "medium",
     "stem": "Using `arr[r].length` instead of a fixed number for the inner loop bound is especially important when:",
     "choices": [
-      { "label": "A", "text": "The array is never going to be used", "isCorrect": false, "explanation": "This doesn't relate to the reasoning behind using arr[r].length." },
+      { "label": "A", "text": "The array is never going to be used again after the loop", "isCorrect": false, "explanation": "This doesn't relate to the reasoning behind using arr[r].length." },
       { "label": "B", "text": "The 2D array is jagged, since each row may have a different length", "isCorrect": true, "explanation": "For a jagged array, each row's actual length can differ, so arr[r].length correctly adapts to each row." },
-      { "label": "C", "text": "The array only has one row", "isCorrect": false, "explanation": "With only one row, using a fixed number might happen to work, but that's a special case, not the general reason." },
-      { "label": "D", "text": "It never matters; a fixed number always works fine", "isCorrect": false, "explanation": "For a jagged array, using a fixed column count could cause out-of-bounds errors or miss elements on shorter/longer rows." }
+      { "label": "C", "text": "The array only has one row and no columns", "isCorrect": false, "explanation": "With only one row, using a fixed number might happen to work, but that's a special case, not the general reason." },
+      { "label": "D", "text": "It never matters; a fixed number always works fine, whatever the shape", "isCorrect": false, "explanation": "For a jagged array, using a fixed column count could cause out-of-bounds errors or miss elements on shorter/longer rows." }
     ],
     "explanation": "`arr[r].length` correctly adapts to each row's actual size, which matters most for jagged arrays.",
     "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
@@ -358,10 +358,10 @@
     "difficulty": "medium",
     "stem": "What does this method check for a 2D array `grid`?\n\n```java\npublic boolean containsValue(int[][] grid, int target) {\n    for (int r = 0; r < grid.length; r++) {\n        for (int c = 0; c < grid[r].length; c++) {\n            if (grid[r][c] == target) {\n                return true;\n            }\n        }\n    }\n    return false;\n}\n```",
     "choices": [
-      { "label": "A", "text": "Whether every element equals target", "isCorrect": false, "explanation": "The method returns true as soon as ONE match is found; it doesn't require every element to match." },
+      { "label": "A", "text": "Whether every element equals target, in every row", "isCorrect": false, "explanation": "The method returns true as soon as ONE match is found; it doesn't require every element to match." },
       { "label": "B", "text": "Whether at least one element anywhere in the grid equals target", "isCorrect": true, "explanation": "The method returns true immediately upon finding any matching element, and false only if none are ever found." },
-      { "label": "C", "text": "The number of times target appears", "isCorrect": false, "explanation": "The method returns a boolean (true/false) as soon as a match is found; it doesn't count occurrences." },
-      { "label": "D", "text": "The position of target", "isCorrect": false, "explanation": "The method returns a boolean, not a row/column position." }
+      { "label": "C", "text": "The number of times target appears in the grid", "isCorrect": false, "explanation": "The method returns a boolean (true/false) as soon as a match is found; it doesn't count occurrences." },
+      { "label": "D", "text": "The position of target in the grid, as a row and column", "isCorrect": false, "explanation": "The method returns a boolean, not a row/column position." }
     ],
     "explanation": "This method searches the whole grid and returns `true` as soon as it finds any element equal to `target`.",
     "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
@@ -406,10 +406,10 @@
     "difficulty": "medium",
     "stem": "In the `rowSums` method above, why is `sums` created with `new int[grid.length]`?",
     "choices": [
-      { "label": "A", "text": "grid.length gives the total number of elements in the grid", "isCorrect": false, "explanation": "grid.length specifically gives the number of ROWS, not the total element count across the whole 2D array." },
+      { "label": "A", "text": "grid.length gives the total number of elements in the grid, one sum for each", "isCorrect": false, "explanation": "grid.length specifically gives the number of ROWS, not the total element count across the whole 2D array." },
       { "label": "B", "text": "grid.length gives the number of rows, and we need exactly one sum per row", "isCorrect": true, "explanation": "Since one sum is computed per row, the sums array needs exactly as many slots as there are rows." },
-      { "label": "C", "text": "It's an arbitrary, unrelated size choice", "isCorrect": false, "explanation": "The size is deliberately chosen to match the number of rows, since one sum is computed per row." },
-      { "label": "D", "text": "grid.length gives the number of columns", "isCorrect": false, "explanation": "grid.length gives the number of rows (the first dimension), not columns (which would be grid[r].length)." }
+      { "label": "C", "text": "It's an arbitrary, unrelated size choice that happens to work", "isCorrect": false, "explanation": "The size is deliberately chosen to match the number of rows, since one sum is computed per row." },
+      { "label": "D", "text": "grid.length gives the number of columns, and we need one sum per column", "isCorrect": false, "explanation": "grid.length gives the number of rows (the first dimension), not columns (which would be grid[r].length)." }
     ],
     "explanation": "`sums` needs one slot per row, and `grid.length` gives exactly the number of rows.",
     "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",
@@ -454,10 +454,10 @@
     "difficulty": "medium",
     "stem": "What is the purpose of checking `r == c` when traversing a 2D array, as in the previous example?",
     "choices": [
-      { "label": "A", "text": "It has no particular meaning", "isCorrect": false, "explanation": "Checking r == c is a well-known, meaningful pattern in 2D array processing, not an arbitrary check." },
+      { "label": "A", "text": "It has no particular meaning in the traversal", "isCorrect": false, "explanation": "Checking r == c is a well-known, meaningful pattern in 2D array processing, not an arbitrary check." },
       { "label": "B", "text": "It isolates the elements along the main diagonal of the grid", "isCorrect": true, "explanation": "Elements where the row index equals the column index lie exactly on the main diagonal." },
-      { "label": "C", "text": "It checks whether the grid is empty", "isCorrect": false, "explanation": "Checking r == c doesn't test whether the grid has any elements at all." },
-      { "label": "D", "text": "It counts the total number of rows", "isCorrect": false, "explanation": "r == c doesn't relate to counting rows; it's about selecting specific positions." }
+      { "label": "C", "text": "It checks whether the grid is empty before it is traversed", "isCorrect": false, "explanation": "Checking r == c doesn't test whether the grid has any elements at all." },
+      { "label": "D", "text": "It counts the total number of rows in the grid", "isCorrect": false, "explanation": "r == c doesn't relate to counting rows; it's about selecting specific positions." }
     ],
     "explanation": "`r == c` identifies exactly the elements on the grid's main diagonal.",
     "conceptLink": "ap-csa/unit-8-2d-array/traversing-2d-arrays",

@@ -6,10 +6,10 @@
     "difficulty": "easy",
     "stem": "What defines simple harmonic motion (SHM)?",
     "choices": [
-      { "label": "A", "text": "A restoring force that is proportional to displacement from equilibrium and always directed opposite to that displacement ($F=-kx$)", "isCorrect": true, "explanation": "This is the defining condition for SHM: the restoring force must be proportional to (and opposite in direction from) the displacement." },
-      { "label": "B", "text": "Any motion that repeats over time", "isCorrect": false, "explanation": "Not all repeating (periodic) motion is SHM -- SHM specifically requires the restoring force to be proportional to displacement, a stricter condition." },
-      { "label": "C", "text": "Motion with a constant, unchanging force", "isCorrect": false, "explanation": "SHM's restoring force is NOT constant -- it varies (proportionally) with displacement, unlike, say, free-fall's constant gravitational force." },
-      { "label": "D", "text": "Motion where velocity is always constant", "isCorrect": false, "explanation": "In SHM, velocity constantly changes (fastest at equilibrium, zero at extremes) -- it is not constant." }
+      { "label": "A", "text": "A restoring force proportional to the displacement from equilibrium and always opposite to it ($F=-kx$)", "isCorrect": true, "explanation": "This is the defining condition for SHM: the restoring force must be proportional to (and opposite in direction from) the displacement." },
+      { "label": "B", "text": "Any motion that repeats over time, such as a bouncing ball, a spinning wheel or a swinging door", "isCorrect": false, "explanation": "Not all repeating (periodic) motion is SHM -- SHM specifically requires the restoring force to be proportional to displacement, a stricter condition." },
+      { "label": "C", "text": "Motion with a constant, unchanging force acting along the path of travel", "isCorrect": false, "explanation": "SHM's restoring force is NOT constant -- it varies (proportionally) with displacement, unlike, say, free-fall's constant gravitational force." },
+      { "label": "D", "text": "Motion where the velocity is always constant, so the object never speeds up or slows down", "isCorrect": false, "explanation": "In SHM, velocity constantly changes (fastest at equilibrium, zero at extremes) -- it is not constant." }
     ],
     "explanation": "SHM is defined by a restoring force proportional to displacement and directed opposite to it: F=-kx.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/restoring-forces-and-shm",
@@ -22,10 +22,10 @@
     "difficulty": "medium",
     "stem": "What makes a mass-spring system exhibit simple harmonic motion?",
     "choices": [
-      { "label": "A", "text": "The spring's restoring force (Hooke's Law, F=-kx) is directly proportional to the displacement from equilibrium", "isCorrect": true, "explanation": "Hooke's Law gives exactly the F=-kx relationship required for SHM." },
-      { "label": "B", "text": "The spring has a constant force regardless of stretch", "isCorrect": false, "explanation": "An ideal spring's force is NOT constant -- it scales with displacement (Hooke's Law), which is exactly why it produces SHM." },
-      { "label": "C", "text": "The mass is moving at a constant velocity", "isCorrect": false, "explanation": "In SHM, the mass's velocity constantly changes -- it isn't constant." },
-      { "label": "D", "text": "Gravity alone causes the oscillation", "isCorrect": false, "explanation": "For a horizontal mass-spring system, gravity isn't the relevant restoring force -- the spring's own Hooke's Law force is." }
+      { "label": "A", "text": "The spring's restoring force (Hooke's Law, F=-kx) is proportional to displacement from equilibrium", "isCorrect": true, "explanation": "Hooke's Law gives exactly the F=-kx relationship required for SHM." },
+      { "label": "B", "text": "The spring has a constant force regardless of how far it is stretched or compressed from rest, however large the displacement", "isCorrect": false, "explanation": "An ideal spring's force is NOT constant -- it scales with displacement (Hooke's Law), which is exactly why it produces SHM." },
+      { "label": "C", "text": "The mass is moving at a constant velocity as it travels back and forth along the spring", "isCorrect": false, "explanation": "In SHM, the mass's velocity constantly changes -- it isn't constant." },
+      { "label": "D", "text": "Gravity alone causes the oscillation, with no help from the spring at all", "isCorrect": false, "explanation": "For a horizontal mass-spring system, gravity isn't the relevant restoring force -- the spring's own Hooke's Law force is." }
     ],
     "explanation": "A spring's Hooke's Law restoring force (F=-kx) is proportional to displacement, producing SHM.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/restoring-forces-and-shm",
@@ -102,10 +102,10 @@
     "difficulty": "hard",
     "stem": "A simple pendulum exhibits approximate SHM only under what condition?",
     "choices": [
-      { "label": "A", "text": "Small angular displacements (typically less than about 15°), where the restoring force is approximately proportional to angular displacement", "isCorrect": true, "explanation": "The small-angle approximation (sinθ≈θ) is what makes a pendulum's restoring force approximately proportional to displacement, satisfying the SHM condition." },
-      { "label": "B", "text": "Any angular displacement, no matter how large", "isCorrect": false, "explanation": "At large angles, the restoring force is no longer well-approximated as proportional to displacement, so the motion deviates from true SHM." },
-      { "label": "C", "text": "Only when the pendulum has zero mass", "isCorrect": false, "explanation": "The pendulum's mass doesn't need to be zero -- in fact, for a simple pendulum, mass cancels out of the period formula entirely." },
-      { "label": "D", "text": "Only when there is no gravity", "isCorrect": false, "explanation": "Gravity is exactly what PROVIDES the restoring force for a pendulum -- without gravity, there would be no oscillation at all." }
+      { "label": "A", "text": "Small angular displacements (typically under about 15°), where the restoring force is approximately proportional to angular displacement", "isCorrect": true, "explanation": "The small-angle approximation (sinθ≈θ) is what makes a pendulum's restoring force approximately proportional to displacement, satisfying the SHM condition." },
+      { "label": "B", "text": "Any angular displacement, no matter how large, since the restoring force is always proportional to it", "isCorrect": false, "explanation": "At large angles, the restoring force is no longer well-approximated as proportional to displacement, so the motion deviates from true SHM." },
+      { "label": "C", "text": "Only when the pendulum has zero mass, so that the string alone provides the restoring force", "isCorrect": false, "explanation": "The pendulum's mass doesn't need to be zero -- in fact, for a simple pendulum, mass cancels out of the period formula entirely." },
+      { "label": "D", "text": "Only when there is no gravity, so that no force acts on the bob except the string", "isCorrect": false, "explanation": "Gravity is exactly what PROVIDES the restoring force for a pendulum -- without gravity, there would be no oscillation at all." }
     ],
     "explanation": "A pendulum approximates SHM only for small angular displacements, where sinθ≈θ makes the restoring force approximately proportional to displacement.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/restoring-forces-and-shm",
@@ -118,10 +118,10 @@
     "difficulty": "hard",
     "stem": "For an ideal spring or pendulum undergoing SHM, how does the period depend on the amplitude of oscillation?",
     "choices": [
-      { "label": "A", "text": "It doesn't depend on amplitude at all -- the period is the same regardless of how large or small the oscillation is (for an ideal SHM system)", "isCorrect": true, "explanation": "This is a defining, notable property of ideal SHM: period is independent of amplitude." },
-      { "label": "B", "text": "A larger amplitude always results in a longer period", "isCorrect": false, "explanation": "For ideal SHM, the period is completely independent of amplitude -- it does not change with a larger oscillation." },
-      { "label": "C", "text": "A larger amplitude always results in a shorter period", "isCorrect": false, "explanation": "The period doesn't change with amplitude for ideal SHM -- it's neither shorter nor longer for larger oscillations." },
-      { "label": "D", "text": "The relationship is different for every different amplitude, with no pattern", "isCorrect": false, "explanation": "There IS a clear, simple pattern: the period is completely independent of amplitude, for ideal SHM systems." }
+      { "label": "A", "text": "It doesn't depend on amplitude at all: the period is the same however large or small the oscillation is (for an ideal SHM system)", "isCorrect": true, "explanation": "This is a defining, notable property of ideal SHM: period is independent of amplitude." },
+      { "label": "B", "text": "A larger amplitude always results in a longer period, because the object has farther to travel", "isCorrect": false, "explanation": "For ideal SHM, the period is completely independent of amplitude -- it does not change with a larger oscillation." },
+      { "label": "C", "text": "A larger amplitude always results in a shorter period, because the object moves faster", "isCorrect": false, "explanation": "The period doesn't change with amplitude for ideal SHM -- it's neither shorter nor longer for larger oscillations." },
+      { "label": "D", "text": "The relationship is different for every different amplitude, with no pattern that could be described by a formula", "isCorrect": false, "explanation": "There IS a clear, simple pattern: the period is completely independent of amplitude, for ideal SHM systems." }
     ],
     "explanation": "A defining property of ideal SHM: the period is independent of amplitude.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/restoring-forces-and-shm",
@@ -135,7 +135,7 @@
     "stem": "What does a graph of position vs. time look like for an object undergoing simple harmonic motion?",
     "choices": [
       { "label": "A", "text": "A smooth, repeating sinusoidal (sine or cosine) curve", "isCorrect": true, "explanation": "SHM position as a function of time follows a sinusoidal pattern, x(t)=A·cos(ωt) or similar, repeating periodically." },
-      { "label": "B", "text": "A straight line with constant slope", "isCorrect": false, "explanation": "A straight line would represent constant-velocity motion, not the oscillating, changing-velocity motion of SHM." },
+      { "label": "B", "text": "A straight line with constant slope, showing steady motion", "isCorrect": false, "explanation": "A straight line would represent constant-velocity motion, not the oscillating, changing-velocity motion of SHM." },
       { "label": "C", "text": "A single upward-curving parabola, with no repetition", "isCorrect": false, "explanation": "This describes constant-acceleration motion (like a single projectile's vertical position), not SHM's repeating oscillation." },
       { "label": "D", "text": "A series of disconnected, randomly placed points", "isCorrect": false, "explanation": "SHM position varies smoothly and predictably (sinusoidally) over time, not randomly." }
     ],
@@ -151,9 +151,9 @@
     "stem": "In SHM, how does the direction of acceleration relate to the direction of displacement from equilibrium?",
     "choices": [
       { "label": "A", "text": "Acceleration always points opposite to the displacement (toward equilibrium)", "isCorrect": true, "explanation": "Since F=-kx and a=F/m, acceleration is always directed opposite to displacement -- toward the equilibrium position." },
-      { "label": "B", "text": "Acceleration always points in the same direction as the displacement", "isCorrect": false, "explanation": "This is backward -- the negative sign in F=-kx means acceleration is always opposite to (not the same as) the displacement direction." },
-      { "label": "C", "text": "Acceleration is always zero", "isCorrect": false, "explanation": "Acceleration is zero only at equilibrium; away from equilibrium, it is nonzero and directed toward equilibrium." },
-      { "label": "D", "text": "There is no consistent relationship between the two", "isCorrect": false, "explanation": "There IS a very consistent relationship: acceleration always points opposite to displacement, toward equilibrium, throughout SHM." }
+      { "label": "B", "text": "Acceleration always points in the same direction as the displacement from equilibrium", "isCorrect": false, "explanation": "This is backward -- the negative sign in F=-kx means acceleration is always opposite to (not the same as) the displacement direction." },
+      { "label": "C", "text": "Acceleration is always zero at every point of the oscillation", "isCorrect": false, "explanation": "Acceleration is zero only at equilibrium; away from equilibrium, it is nonzero and directed toward equilibrium." },
+      { "label": "D", "text": "There is no consistent relationship between the two quantities", "isCorrect": false, "explanation": "There IS a very consistent relationship: acceleration always points opposite to displacement, toward equilibrium, throughout SHM." }
     ],
     "explanation": "Acceleration in SHM always points opposite to the displacement, toward the equilibrium position.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/restoring-forces-and-shm",
@@ -166,7 +166,7 @@
     "difficulty": "easy",
     "stem": "What is the formula for the period of a mass-spring system undergoing SHM?",
     "choices": [
-      { "label": "A", "text": "$T = 2\\pi\\sqrt{m/k}$, where m is the mass and k is the spring constant", "isCorrect": true, "explanation": "This is the standard formula for a mass-spring system's period." },
+      { "label": "A", "text": "$T = 2\\pi\\sqrt{m/k}$", "isCorrect": true, "explanation": "This is the standard formula for a mass-spring system's period." },
       { "label": "B", "text": "$T = 2\\pi\\sqrt{L/g}$", "isCorrect": false, "explanation": "This is the formula for a PENDULUM's period, not a mass-spring system's." },
       { "label": "C", "text": "$T = 2\\pi\\sqrt{k/m}$", "isCorrect": false, "explanation": "This inverts the ratio inside the square root -- the correct formula has m in the numerator and k in the denominator." },
       { "label": "D", "text": "$T = mk$", "isCorrect": false, "explanation": "This isn't the correct relationship at all -- the period depends on the square root of the ratio m/k, not the simple product mk." }
@@ -198,7 +198,7 @@
     "difficulty": "easy",
     "stem": "What is the formula for the period of a simple pendulum (small-angle approximation)?",
     "choices": [
-      { "label": "A", "text": "$T = 2\\pi\\sqrt{L/g}$, where L is the pendulum's length and g is gravitational acceleration", "isCorrect": true, "explanation": "This is the standard formula for a simple pendulum's period, under the small-angle approximation." },
+      { "label": "A", "text": "$T = 2\\pi\\sqrt{L/g}$", "isCorrect": true, "explanation": "This is the standard formula for a simple pendulum's period, under the small-angle approximation." },
       { "label": "B", "text": "$T = 2\\pi\\sqrt{m/k}$", "isCorrect": false, "explanation": "This is the formula for a MASS-SPRING system's period, not a pendulum's." },
       { "label": "C", "text": "$T = 2\\pi\\sqrt{g/L}$", "isCorrect": false, "explanation": "This inverts the ratio inside the square root -- the correct formula has L in the numerator and g in the denominator." },
       { "label": "D", "text": "$T = Lg$", "isCorrect": false, "explanation": "This isn't the correct relationship -- the period depends on the square root of L/g, not the simple product Lg." }
@@ -230,10 +230,10 @@
     "difficulty": "hard",
     "stem": "Does the period of a simple pendulum depend on the mass of the pendulum bob?",
     "choices": [
-      { "label": "A", "text": "No -- mass cancels out of the period formula entirely; only length and gravitational acceleration matter", "isCorrect": true, "explanation": "T=2π√(L/g) has no mass term -- it cancels out when deriving the pendulum's equation of motion (both gravitational force and inertia scale with mass equally)." },
-      { "label": "B", "text": "Yes -- a heavier bob always swings with a longer period", "isCorrect": false, "explanation": "Mass has no effect on a simple pendulum's period -- it cancels out entirely in the derivation." },
-      { "label": "C", "text": "Yes -- a heavier bob always swings with a shorter period", "isCorrect": false, "explanation": "Mass has no effect on a simple pendulum's period in either direction -- it cancels out completely." },
-      { "label": "D", "text": "It depends on both mass and length equally", "isCorrect": false, "explanation": "Only length (and g) affect a simple pendulum's period -- mass does not appear in the formula T=2π√(L/g) at all." }
+      { "label": "A", "text": "No -- mass cancels out of the period formula entirely; only length and g matter", "isCorrect": true, "explanation": "T=2π√(L/g) has no mass term -- it cancels out when deriving the pendulum's equation of motion (both gravitational force and inertia scale with mass equally)." },
+      { "label": "B", "text": "Yes -- a heavier bob always swings with a longer period, since it has more inertia", "isCorrect": false, "explanation": "Mass has no effect on a simple pendulum's period -- it cancels out entirely in the derivation." },
+      { "label": "C", "text": "Yes -- a heavier bob always swings with a shorter period, since gravity pulls on it harder", "isCorrect": false, "explanation": "Mass has no effect on a simple pendulum's period in either direction -- it cancels out completely." },
+      { "label": "D", "text": "It depends on both mass and length equally, according to the period formula", "isCorrect": false, "explanation": "Only length (and g) affect a simple pendulum's period -- mass does not appear in the formula T=2π√(L/g) at all." }
     ],
     "explanation": "A simple pendulum's period doesn't depend on mass -- only on length and gravitational acceleration.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
@@ -247,9 +247,9 @@
     "stem": "Does the period of a mass-spring system depend on the amplitude of its oscillation?",
     "choices": [
       { "label": "A", "text": "No -- the period T=2π√(m/k) depends only on mass and spring constant, not on amplitude", "isCorrect": true, "explanation": "Amplitude doesn't appear in the period formula T=2π√(m/k) at all -- period is independent of how far the spring is stretched or compressed." },
-      { "label": "B", "text": "Yes -- a larger amplitude always increases the period", "isCorrect": false, "explanation": "Amplitude has no effect on the period of an ideal mass-spring system -- the period formula doesn't include amplitude at all." },
-      { "label": "C", "text": "Yes -- a larger amplitude always decreases the period", "isCorrect": false, "explanation": "Amplitude has no effect on the period in either direction, for an ideal mass-spring system." },
-      { "label": "D", "text": "It depends on amplitude only if the mass is very large", "isCorrect": false, "explanation": "For an ideal SHM system, amplitude never affects period, regardless of the mass involved." }
+      { "label": "B", "text": "Yes -- a larger amplitude always increases the period, since the mass travels farther on its way out", "isCorrect": false, "explanation": "Amplitude has no effect on the period of an ideal mass-spring system -- the period formula doesn't include amplitude at all." },
+      { "label": "C", "text": "Yes -- a larger amplitude always decreases the period, since the spring pulls harder", "isCorrect": false, "explanation": "Amplitude has no effect on the period in either direction, for an ideal mass-spring system." },
+      { "label": "D", "text": "It depends on amplitude only if the mass is very large, and then only slightly", "isCorrect": false, "explanation": "For an ideal SHM system, amplitude never affects period, regardless of the mass involved." }
     ],
     "explanation": "The period T=2π√(m/k) depends only on mass and spring constant, not amplitude.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
@@ -295,9 +295,9 @@
     "stem": "If a spring's spring constant $k$ is increased (a stiffer spring), while mass stays the same, how does the period change?",
     "choices": [
       { "label": "A", "text": "The period decreases (the oscillation becomes faster)", "isCorrect": true, "explanation": "Since T=2π√(m/k), increasing k (in the denominator) decreases the period -- a stiffer spring oscillates faster." },
-      { "label": "B", "text": "The period increases", "isCorrect": false, "explanation": "This is backward -- increasing k DECREASES the period, since k is in the denominator of T=2π√(m/k)." },
-      { "label": "C", "text": "The period is unaffected by spring constant", "isCorrect": false, "explanation": "Spring constant directly affects the period, via T=2π√(m/k) -- it is not unaffected." },
-      { "label": "D", "text": "The period becomes undefined", "isCorrect": false, "explanation": "The period remains well-defined (and finite) for any positive spring constant -- it simply changes value." }
+      { "label": "B", "text": "The period increases (the oscillation becomes slower)", "isCorrect": false, "explanation": "This is backward -- increasing k DECREASES the period, since k is in the denominator of T=2π√(m/k)." },
+      { "label": "C", "text": "The period is unaffected by the spring constant, whatever its value", "isCorrect": false, "explanation": "Spring constant directly affects the period, via T=2π√(m/k) -- it is not unaffected." },
+      { "label": "D", "text": "The period becomes undefined for any stiffness", "isCorrect": false, "explanation": "The period remains well-defined (and finite) for any positive spring constant -- it simply changes value." }
     ],
     "explanation": "Since T=2π√(m/k), increasing k decreases the period -- a stiffer spring oscillates faster.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
@@ -311,9 +311,9 @@
     "stem": "A pendulum clock is moved from Earth to the Moon, where gravitational acceleration is about 1/6 of Earth's. How does the pendulum's period change (with the same length)?",
     "choices": [
       { "label": "A", "text": "The period increases, since $T=2\\pi\\sqrt{L/g}$ and a smaller g increases T", "isCorrect": true, "explanation": "Since g appears in the denominator inside the square root, a smaller g (Moon's gravity) results in a LARGER period -- the pendulum swings more slowly." },
-      { "label": "B", "text": "The period decreases", "isCorrect": false, "explanation": "This is backward -- a smaller g (weaker gravity) actually INCREASES the period, since g is in the denominator of T=2π√(L/g)." },
-      { "label": "C", "text": "The period is unaffected by the change in gravity", "isCorrect": false, "explanation": "The period explicitly depends on g, via T=2π√(L/g) -- moving to a location with different gravity does change it." },
-      { "label": "D", "text": "The pendulum stops swinging entirely on the Moon", "isCorrect": false, "explanation": "The pendulum still swings on the Moon (gravity, though weaker, is still present and nonzero) -- it just swings with a longer period." }
+      { "label": "B", "text": "The period decreases, since a smaller g makes the pendulum swing faster", "isCorrect": false, "explanation": "This is backward -- a smaller g (weaker gravity) actually INCREASES the period, since g is in the denominator of T=2π√(L/g)." },
+      { "label": "C", "text": "The period is unaffected by the change in gravity, since mass is unchanged", "isCorrect": false, "explanation": "The period explicitly depends on g, via T=2π√(L/g) -- moving to a location with different gravity does change it." },
+      { "label": "D", "text": "The pendulum stops swinging entirely on the Moon, where there is no air to carry it", "isCorrect": false, "explanation": "The pendulum still swings on the Moon (gravity, though weaker, is still present and nonzero) -- it just swings with a longer period." }
     ],
     "explanation": "Since T=2π√(L/g), a smaller g (Moon's gravity) results in a longer period -- the pendulum swings more slowly.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
@@ -359,9 +359,9 @@
     "stem": "How does the total mechanical energy of an SHM oscillator behave over time (in the absence of friction/damping)?",
     "choices": [
       { "label": "A", "text": "It remains constant, continuously converting between kinetic and potential energy", "isCorrect": true, "explanation": "Without damping, total mechanical energy is conserved -- it just shifts between kinetic and potential forms as the oscillator moves." },
-      { "label": "B", "text": "It continuously increases", "isCorrect": false, "explanation": "Without an external energy source, total mechanical energy cannot increase -- it stays constant (conservation of energy)." },
-      { "label": "C", "text": "It continuously decreases to zero", "isCorrect": false, "explanation": "Without damping (friction), energy is conserved and does NOT decrease -- this only happens in a REAL, damped oscillator." },
-      { "label": "D", "text": "It oscillates between positive and negative values", "isCorrect": false, "explanation": "Total mechanical energy is always non-negative and constant in ideal SHM -- it doesn't oscillate or become negative." }
+      { "label": "B", "text": "It continuously increases as the object oscillates", "isCorrect": false, "explanation": "Without an external energy source, total mechanical energy cannot increase -- it stays constant (conservation of energy)." },
+      { "label": "C", "text": "It continuously decreases to zero as the oscillations die away", "isCorrect": false, "explanation": "Without damping (friction), energy is conserved and does NOT decrease -- this only happens in a REAL, damped oscillator." },
+      { "label": "D", "text": "It oscillates between positive and negative values with each cycle", "isCorrect": false, "explanation": "Total mechanical energy is always non-negative and constant in ideal SHM -- it doesn't oscillate or become negative." }
     ],
     "explanation": "Without damping, total mechanical energy in SHM remains constant, converting between kinetic and potential forms.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/energy-in-shm",
@@ -375,9 +375,9 @@
     "stem": "At the equilibrium position of an SHM oscillator, what can be said about kinetic energy (KE) and potential energy (PE)?",
     "choices": [
       { "label": "A", "text": "KE is at its maximum, and PE is at its minimum (zero)", "isCorrect": true, "explanation": "At equilibrium, speed (and thus KE) is maximum, while displacement (and thus PE) is zero." },
-      { "label": "B", "text": "KE is zero, and PE is at its maximum", "isCorrect": false, "explanation": "This describes the situation at the EXTREMES of motion (maximum displacement), not at equilibrium." },
-      { "label": "C", "text": "Both KE and PE are zero", "isCorrect": false, "explanation": "KE is NOT zero at equilibrium -- it's actually at its MAXIMUM there, since speed is greatest at this point." },
-      { "label": "D", "text": "Both KE and PE are at their maximum simultaneously", "isCorrect": false, "explanation": "KE and PE trade off in SHM -- they cannot both be maximum at the same point, since total energy is constant." }
+      { "label": "B", "text": "KE is zero, and PE is at its maximum value", "isCorrect": false, "explanation": "This describes the situation at the EXTREMES of motion (maximum displacement), not at equilibrium." },
+      { "label": "C", "text": "Both KE and PE are zero at that position", "isCorrect": false, "explanation": "KE is NOT zero at equilibrium -- it's actually at its MAXIMUM there, since speed is greatest at this point." },
+      { "label": "D", "text": "Both KE and PE are at their maximum simultaneously, at that position", "isCorrect": false, "explanation": "KE and PE trade off in SHM -- they cannot both be maximum at the same point, since total energy is constant." }
     ],
     "explanation": "At equilibrium, KE is maximum (greatest speed) and PE is at its minimum (zero displacement).",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/energy-in-shm",
@@ -471,9 +471,9 @@
     "stem": "A pendulum swings from its highest point (momentarily at rest) down to its lowest point (equilibrium). How does its energy transform during this swing?",
     "choices": [
       { "label": "A", "text": "Gravitational potential energy converts into kinetic energy, reaching maximum kinetic energy at the lowest point", "isCorrect": true, "explanation": "As the pendulum descends, height (and thus PE) decreases while speed (and thus KE) increases, converting PE into KE." },
-      { "label": "B", "text": "Kinetic energy converts into potential energy during the downward swing", "isCorrect": false, "explanation": "This is backward -- during the DOWNWARD swing, the pendulum loses height (PE decreases) and gains speed (KE increases), the opposite conversion." },
-      { "label": "C", "text": "Both kinetic and potential energy remain constant throughout the swing", "isCorrect": false, "explanation": "Both KE and PE individually change substantially during the swing -- only their SUM (total mechanical energy) stays constant, not each one separately." },
-      { "label": "D", "text": "All energy is lost as heat during the swing", "isCorrect": false, "explanation": "For an idealized, frictionless pendulum, no significant energy is lost to heat -- the energy instead converts between PE and KE." }
+      { "label": "B", "text": "Kinetic energy converts into potential energy during the downward swing, reaching maximum potential energy at the lowest point", "isCorrect": false, "explanation": "This is backward -- during the DOWNWARD swing, the pendulum loses height (PE decreases) and gains speed (KE increases), the opposite conversion." },
+      { "label": "C", "text": "Both kinetic and potential energy remain constant throughout the whole swing, at every point", "isCorrect": false, "explanation": "Both KE and PE individually change substantially during the swing -- only their SUM (total mechanical energy) stays constant, not each one separately." },
+      { "label": "D", "text": "All energy is lost as heat during the swing, leaving none at the bottom", "isCorrect": false, "explanation": "For an idealized, frictionless pendulum, no significant energy is lost to heat -- the energy instead converts between PE and KE." }
     ],
     "explanation": "As the pendulum swings down, gravitational potential energy converts into kinetic energy, reaching maximum KE at the lowest point.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/energy-in-shm",

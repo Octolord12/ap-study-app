@@ -6,7 +6,7 @@
     "difficulty": "easy",
     "stem": "What is the formula for an object's linear momentum?",
     "choices": [
-      { "label": "A", "text": "$p = mv$, where m is mass and v is velocity", "isCorrect": true, "explanation": "Momentum is defined as mass times velocity." },
+      { "label": "A", "text": "$p = mv$", "isCorrect": true, "explanation": "Momentum is defined as mass times velocity." },
       { "label": "B", "text": "$p = \\frac{1}{2}mv^2$", "isCorrect": false, "explanation": "This is the formula for kinetic energy, not momentum." },
       { "label": "C", "text": "$p = ma$", "isCorrect": false, "explanation": "This is the formula for net force (Newton's Second Law), not momentum." },
       { "label": "D", "text": "$p = m/v$", "isCorrect": false, "explanation": "Momentum is the PRODUCT of mass and velocity, not their quotient." }
@@ -39,9 +39,9 @@
     "stem": "What does the Impulse-Momentum Theorem state?",
     "choices": [
       { "label": "A", "text": "Impulse (force times time) equals the change in momentum: $J = F\\Delta t = \\Delta p$", "isCorrect": true, "explanation": "This is the standard statement of the impulse-momentum theorem." },
-      { "label": "B", "text": "Impulse equals the object's total kinetic energy", "isCorrect": false, "explanation": "Impulse relates to the CHANGE IN MOMENTUM, not kinetic energy." },
-      { "label": "C", "text": "Impulse is always zero for any collision", "isCorrect": false, "explanation": "Impulse is generally nonzero whenever a force acts over some time interval, changing an object's momentum." },
-      { "label": "D", "text": "Impulse equals mass divided by time", "isCorrect": false, "explanation": "Impulse is force multiplied by time (J=FΔt), not mass divided by time." }
+      { "label": "B", "text": "Impulse equals the object's total kinetic energy at the moment of impact, measured in joules", "isCorrect": false, "explanation": "Impulse relates to the CHANGE IN MOMENTUM, not kinetic energy." },
+      { "label": "C", "text": "Impulse is always zero for any collision, since the forces cancel in pairs", "isCorrect": false, "explanation": "Impulse is generally nonzero whenever a force acts over some time interval, changing an object's momentum." },
+      { "label": "D", "text": "Impulse equals mass divided by time, a measure of how fast mass moves", "isCorrect": false, "explanation": "Impulse is force multiplied by time (J=FΔt), not mass divided by time." }
     ],
     "explanation": "The Impulse-Momentum Theorem: J = FΔt = Δp.",
     "conceptLink": "ap-physics-1/unit-5-momentum/momentum-and-impulse",
@@ -102,7 +102,7 @@
     "difficulty": "hard",
     "stem": "A 2 kg object moving at 5 m/s experiences a force of -10 N for 2 seconds (opposing its motion). What is its velocity after this force acts?",
     "choices": [
-      { "label": "A", "text": "-5 m/s (i.e., 5 m/s in the reversed direction)", "isCorrect": true, "explanation": "J = FΔt = (-10)(2) = -20 N·s = Δp. Δv = Δp/m = -20/2 = -10 m/s. Final velocity: v = v0 + Δv = 5 + (-10) = -5 m/s." },
+      { "label": "A", "text": "-5 m/s", "isCorrect": true, "explanation": "J = FΔt = (-10)(2) = -20 N·s = Δp. Δv = Δp/m = -20/2 = -10 m/s. Final velocity: v = v0 + Δv = 5 + (-10) = -5 m/s." },
       { "label": "B", "text": "0 m/s (the object comes to rest)", "isCorrect": false, "explanation": "The force is large enough to not just stop the object but actually reverse its direction of motion." },
       { "label": "C", "text": "15 m/s", "isCorrect": false, "explanation": "This incorrectly adds rather than accounts for the negative (opposing) impulse's effect on velocity." },
       { "label": "D", "text": "-10 m/s", "isCorrect": false, "explanation": "This is the CHANGE in velocity (Δv), not the final velocity (which is v0 + Δv)." }
@@ -118,10 +118,10 @@
     "difficulty": "medium",
     "stem": "Why do airbags and crumple zones in cars reduce the force experienced during a collision, even though the change in momentum (impulse) is the same?",
     "choices": [
-      { "label": "A", "text": "They increase the time (Δt) over which the momentum change occurs, and since $F=\\Delta p/\\Delta t$, a longer time means a smaller average force for the same Δp", "isCorrect": true, "explanation": "Since impulse (Δp) is fixed by the collision's physics, stretching out the time reduces the average force needed to produce that same impulse." },
-      { "label": "B", "text": "They reduce the total change in momentum", "isCorrect": false, "explanation": "The change in momentum (determined by the mass and how much the velocity changes) is essentially the same regardless of airbags -- what changes is the TIME over which it happens, not the momentum change itself." },
-      { "label": "C", "text": "They increase the mass of the car, reducing acceleration", "isCorrect": false, "explanation": "Airbags and crumple zones don't meaningfully change the car's mass -- they work by extending the collision TIME, not by adding mass." },
-      { "label": "D", "text": "They have no real effect on the force experienced", "isCorrect": false, "explanation": "Airbags and crumple zones do meaningfully reduce force, by extending the time over which the momentum change occurs." }
+      { "label": "A", "text": "They increase the time (Δt) over which the momentum changes, and since $F=\\Delta p/\\Delta t$, a longer time means a smaller average force", "isCorrect": true, "explanation": "Since impulse (Δp) is fixed by the collision's physics, stretching out the time reduces the average force needed to produce that same impulse." },
+      { "label": "B", "text": "They reduce the total change in momentum, so the impulse delivered to the passengers is smaller", "isCorrect": false, "explanation": "The change in momentum (determined by the mass and how much the velocity changes) is essentially the same regardless of airbags -- what changes is the TIME over which it happens, not the momentum change itself." },
+      { "label": "C", "text": "They increase the mass of the car, which reduces its acceleration and so the force on the occupants", "isCorrect": false, "explanation": "Airbags and crumple zones don't meaningfully change the car's mass -- they work by extending the collision TIME, not by adding mass." },
+      { "label": "D", "text": "They have no real effect on the force experienced, since the momentum change is identical in every collision", "isCorrect": false, "explanation": "Airbags and crumple zones do meaningfully reduce force, by extending the time over which the momentum change occurs." }
     ],
     "explanation": "Airbags/crumple zones extend the collision time Δt; since F=Δp/Δt and Δp is fixed, a longer Δt means a smaller average force.",
     "conceptLink": "ap-physics-1/unit-5-momentum/momentum-and-impulse",
@@ -135,9 +135,9 @@
     "stem": "What does the Law of Conservation of Momentum state?",
     "choices": [
       { "label": "A", "text": "In the absence of external forces, the total momentum of a system remains constant", "isCorrect": true, "explanation": "This is the standard statement of conservation of momentum -- total momentum before equals total momentum after, if no external force acts." },
-      { "label": "B", "text": "Momentum is always zero for any isolated system", "isCorrect": false, "explanation": "Momentum can be any nonzero constant value for an isolated system -- conservation means it stays CONSTANT, not that it's necessarily zero." },
-      { "label": "C", "text": "Momentum increases over time for any system", "isCorrect": false, "explanation": "Without external forces, momentum stays CONSTANT, it doesn't systematically increase." },
-      { "label": "D", "text": "Only kinetic energy is conserved, not momentum", "isCorrect": false, "explanation": "This is backwards for general collisions -- momentum is ALWAYS conserved in isolated systems, while kinetic energy is only conserved in elastic collisions." }
+      { "label": "B", "text": "Momentum is always zero for any isolated system, whatever its motion or the speeds of its parts", "isCorrect": false, "explanation": "Momentum can be any nonzero constant value for an isolated system -- conservation means it stays CONSTANT, not that it's necessarily zero." },
+      { "label": "C", "text": "Momentum increases over time for any system, as forces act on it", "isCorrect": false, "explanation": "Without external forces, momentum stays CONSTANT, it doesn't systematically increase." },
+      { "label": "D", "text": "Only kinetic energy is conserved, not momentum, in every collision", "isCorrect": false, "explanation": "This is backwards for general collisions -- momentum is ALWAYS conserved in isolated systems, while kinetic energy is only conserved in elastic collisions." }
     ],
     "explanation": "Conservation of momentum: in the absence of external forces, total momentum of a system stays constant.",
     "conceptLink": "ap-physics-1/unit-5-momentum/conservation-of-momentum",
@@ -182,10 +182,10 @@
     "difficulty": "medium",
     "stem": "Is momentum conserved in a collision even if kinetic energy is NOT conserved (i.e., an inelastic collision)?",
     "choices": [
-      { "label": "A", "text": "Yes -- momentum is conserved in ALL collisions (elastic or inelastic), as long as there's no external force; kinetic energy conservation is a separate, additional condition that only holds for elastic collisions", "isCorrect": true, "explanation": "Momentum conservation is a much more general principle than kinetic energy conservation -- it holds for all types of collisions, while KE conservation only holds for elastic collisions." },
-      { "label": "B", "text": "No -- momentum is only conserved when kinetic energy is also conserved", "isCorrect": false, "explanation": "This is a common misconception -- momentum conservation and kinetic energy conservation are independent conditions; momentum is conserved much more broadly." },
-      { "label": "C", "text": "Momentum is never conserved in any real collision", "isCorrect": false, "explanation": "Momentum IS conserved in essentially all collisions where no external force acts, regardless of whether they're elastic or inelastic." },
-      { "label": "D", "text": "Only kinetic energy is conserved; momentum is never relevant to collisions", "isCorrect": false, "explanation": "This has it backward -- momentum is the quantity that's always conserved in collisions (absent external forces), while KE conservation is the special, additional case." }
+      { "label": "A", "text": "Yes -- momentum is conserved in ALL collisions, as long as there's no external force; kinetic energy conservation is a separate condition that holds only for elastic collisions", "isCorrect": true, "explanation": "Momentum conservation is a much more general principle than kinetic energy conservation -- it holds for all types of collisions, while KE conservation only holds for elastic collisions." },
+      { "label": "B", "text": "No -- momentum is only conserved when kinetic energy is also conserved, so an inelastic collision loses some of its momentum to heat, sound and deformation of the objects in the process", "isCorrect": false, "explanation": "This is a common misconception -- momentum conservation and kinetic energy conservation are independent conditions; momentum is conserved much more broadly." },
+      { "label": "C", "text": "Momentum is never conserved in any real collision, because friction and sound always carry some of it away", "isCorrect": false, "explanation": "Momentum IS conserved in essentially all collisions where no external force acts, regardless of whether they're elastic or inelastic." },
+      { "label": "D", "text": "Only kinetic energy is conserved; momentum is never relevant to collisions of any kind, elastic or inelastic", "isCorrect": false, "explanation": "This has it backward -- momentum is the quantity that's always conserved in collisions (absent external forces), while KE conservation is the special, additional case." }
     ],
     "explanation": "Momentum is conserved in ALL collisions (given no external force), regardless of whether kinetic energy is also conserved.",
     "conceptLink": "ap-physics-1/unit-5-momentum/conservation-of-momentum",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "Why is momentum conserved during a collision between two objects that exert forces on each other, even though each object individually experiences a (possibly large) force during the collision?",
     "choices": [
-      { "label": "A", "text": "The forces the two objects exert on each other are internal to the system and form a Newton's Third Law pair (equal and opposite), so they cancel out when considering the system's total momentum", "isCorrect": true, "explanation": "Internal forces between colliding objects are Third Law pairs; when analyzing the combined system, these internal forces cancel, leaving total momentum unchanged (absent external forces)." },
-      { "label": "B", "text": "The forces during a collision are always zero", "isCorrect": false, "explanation": "Collision forces are often very large (not zero) -- but since they're internal (Third Law) pairs, they cancel for the SYSTEM's total momentum, even though they strongly affect each individual object." },
-      { "label": "C", "text": "Momentum conservation has nothing to do with the forces involved", "isCorrect": false, "explanation": "Momentum conservation is directly explained BY the internal-force cancellation (Newton's Third Law) -- the forces are very much relevant to why conservation holds." },
-      { "label": "D", "text": "The objects don't actually exert forces on each other during a collision", "isCorrect": false, "explanation": "The objects absolutely do exert (often large) forces on each other during a collision -- that's exactly what changes each object's individual momentum." }
+      { "label": "A", "text": "The forces the two objects exert on each other are internal to the system and form a Newton's Third Law pair (equal and opposite), so they cancel in the system's total momentum", "isCorrect": true, "explanation": "Internal forces between colliding objects are Third Law pairs; when analyzing the combined system, these internal forces cancel, leaving total momentum unchanged (absent external forces)." },
+      { "label": "B", "text": "The forces during a collision are always zero, since the objects only touch for an instant and cannot push on each other", "isCorrect": false, "explanation": "Collision forces are often very large (not zero) -- but since they're internal (Third Law) pairs, they cancel for the SYSTEM's total momentum, even though they strongly affect each individual object." },
+      { "label": "C", "text": "Momentum conservation has nothing to do with the forces involved, which are unrelated to the changes in each object's motion", "isCorrect": false, "explanation": "Momentum conservation is directly explained BY the internal-force cancellation (Newton's Third Law) -- the forces are very much relevant to why conservation holds." },
+      { "label": "D", "text": "The objects don't actually exert forces on each other during a collision; they pass through each other and merely exchange velocities because of a rule about collisions that doesn't involve forces at all", "isCorrect": false, "explanation": "The objects absolutely do exert (often large) forces on each other during a collision -- that's exactly what changes each object's individual momentum." }
     ],
     "explanation": "The collision forces between the two objects are an internal Newton's Third Law pair, which cancel out for the system's total momentum.",
     "conceptLink": "ap-physics-1/unit-5-momentum/conservation-of-momentum",
@@ -246,10 +246,10 @@
     "difficulty": "easy",
     "stem": "What distinguishes an \"elastic\" collision from an \"inelastic\" collision?",
     "choices": [
-      { "label": "A", "text": "In an elastic collision, kinetic energy is conserved; in an inelastic collision, some kinetic energy is converted to other forms (like heat or sound)", "isCorrect": true, "explanation": "This is the standard distinction: elastic collisions conserve KE, inelastic collisions don't (though momentum is conserved in both)." },
-      { "label": "B", "text": "In an elastic collision, momentum is conserved; in an inelastic collision, it is not", "isCorrect": false, "explanation": "Momentum is conserved in BOTH types of collisions (given no external force) -- the distinguishing factor is kinetic energy conservation, not momentum." },
-      { "label": "C", "text": "Elastic collisions only happen between identical objects", "isCorrect": false, "explanation": "Elastic collisions can happen between objects of any mass -- the defining feature is kinetic energy conservation, not the objects being identical." },
-      { "label": "D", "text": "Inelastic collisions never actually occur in nature", "isCorrect": false, "explanation": "Inelastic collisions are extremely common in the real world (e.g., car crashes, a ball of clay hitting a wall) -- perfectly elastic collisions are actually the idealized, rarer case." }
+      { "label": "A", "text": "In an elastic collision, kinetic energy is conserved; in an inelastic collision, some kinetic energy becomes other forms (like heat or sound)", "isCorrect": true, "explanation": "This is the standard distinction: elastic collisions conserve KE, inelastic collisions don't (though momentum is conserved in both)." },
+      { "label": "B", "text": "In an elastic collision, momentum is conserved; in an inelastic collision, it is not conserved, and the objects move apart", "isCorrect": false, "explanation": "Momentum is conserved in BOTH types of collisions (given no external force) -- the distinguishing factor is kinetic energy conservation, not momentum." },
+      { "label": "C", "text": "Elastic collisions only happen between identical objects, such as two equal steel balls", "isCorrect": false, "explanation": "Elastic collisions can happen between objects of any mass -- the defining feature is kinetic energy conservation, not the objects being identical." },
+      { "label": "D", "text": "Inelastic collisions never actually occur in nature, since all real collisions conserve kinetic energy", "isCorrect": false, "explanation": "Inelastic collisions are extremely common in the real world (e.g., car crashes, a ball of clay hitting a wall) -- perfectly elastic collisions are actually the idealized, rarer case." }
     ],
     "explanation": "Elastic collisions conserve kinetic energy; inelastic collisions convert some KE into other forms of energy.",
     "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
@@ -310,10 +310,10 @@
     "difficulty": "hard",
     "stem": "In a perfectly elastic, head-on collision between a moving object and an identical stationary object (equal masses), what happens to their velocities?",
     "choices": [
-      { "label": "A", "text": "The moving object comes to rest, and the previously stationary object moves off with the first object's original velocity (they \"exchange\" velocities)", "isCorrect": true, "explanation": "This is a well-known special case: for equal masses in an elastic collision, the velocities are completely exchanged." },
-      { "label": "B", "text": "Both objects move off together at half the original velocity", "isCorrect": false, "explanation": "This describes a perfectly INELASTIC collision (sticking together), not an elastic one." },
-      { "label": "C", "text": "Both objects continue at the original velocity, unaffected by the collision", "isCorrect": false, "explanation": "A collision necessarily changes at least one object's velocity -- they don't simply continue unaffected." },
-      { "label": "D", "text": "The moving object bounces straight back at the same speed, and the stationary object stays at rest", "isCorrect": false, "explanation": "This isn't consistent with momentum conservation for EQUAL masses -- the correct elastic-collision result is a full velocity exchange." }
+      { "label": "A", "text": "The moving object comes to rest, and the stationary object moves off with the first object's original velocity (they exchange velocities)", "isCorrect": true, "explanation": "This is a well-known special case: for equal masses in an elastic collision, the velocities are completely exchanged." },
+      { "label": "B", "text": "Both objects move off together at half the original velocity, sticking in a combined mass", "isCorrect": false, "explanation": "This describes a perfectly INELASTIC collision (sticking together), not an elastic one." },
+      { "label": "C", "text": "Both objects continue at the original velocity, unaffected by the collision, as if they passed through", "isCorrect": false, "explanation": "A collision necessarily changes at least one object's velocity -- they don't simply continue unaffected." },
+      { "label": "D", "text": "The moving object bounces straight back at the same speed, and the stationary object stays at rest, as in a collision with a wall", "isCorrect": false, "explanation": "This isn't consistent with momentum conservation for EQUAL masses -- the correct elastic-collision result is a full velocity exchange." }
     ],
     "explanation": "For an elastic collision between equal masses (one moving, one at rest), the velocities are exactly exchanged.",
     "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
@@ -327,9 +327,9 @@
     "stem": "Is momentum conserved in an elastic collision?",
     "choices": [
       { "label": "A", "text": "Yes -- momentum is conserved in ALL collisions, elastic or inelastic, as long as there's no external force", "isCorrect": true, "explanation": "Momentum conservation applies universally to isolated collisions, regardless of whether kinetic energy is also conserved (elastic) or not (inelastic)." },
-      { "label": "B", "text": "No -- only kinetic energy is conserved in elastic collisions, not momentum", "isCorrect": false, "explanation": "BOTH momentum and kinetic energy are conserved in elastic collisions -- momentum conservation isn't limited to inelastic collisions." },
-      { "label": "C", "text": "Momentum is only conserved in inelastic collisions", "isCorrect": false, "explanation": "Momentum is conserved in elastic collisions too -- it's a universal principle for isolated systems, regardless of collision type." },
-      { "label": "D", "text": "Momentum conservation doesn't apply to collisions at all", "isCorrect": false, "explanation": "Momentum conservation is one of the most fundamental principles used to analyze ALL types of collisions." }
+      { "label": "B", "text": "No -- only kinetic energy is conserved in elastic collisions, not momentum, which changes in every collision", "isCorrect": false, "explanation": "BOTH momentum and kinetic energy are conserved in elastic collisions -- momentum conservation isn't limited to inelastic collisions." },
+      { "label": "C", "text": "Momentum is only conserved in inelastic collisions, where the objects stick together", "isCorrect": false, "explanation": "Momentum is conserved in elastic collisions too -- it's a universal principle for isolated systems, regardless of collision type." },
+      { "label": "D", "text": "Momentum conservation doesn't apply to collisions at all, since the contact forces are too short-lived", "isCorrect": false, "explanation": "Momentum conservation is one of the most fundamental principles used to analyze ALL types of collisions." }
     ],
     "explanation": "Momentum is conserved in all collisions (elastic or inelastic) as long as there's no external force.",
     "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
@@ -342,10 +342,10 @@
     "difficulty": "medium",
     "stem": "A ball of clay is thrown at a wall and sticks to it. What type of collision is this, and what happens to the clay's kinetic energy?",
     "choices": [
-      { "label": "A", "text": "A perfectly inelastic collision -- the clay's kinetic energy is converted mostly into heat and deformation energy as it flattens against the wall", "isCorrect": true, "explanation": "Sticking upon impact is the hallmark of a perfectly inelastic collision; the KE is converted to other forms (heat, sound, deformation), not conserved." },
-      { "label": "B", "text": "A perfectly elastic collision -- all kinetic energy is conserved", "isCorrect": false, "explanation": "This is the opposite of what happens -- clay sticking to a wall is a classic example of a perfectly INELASTIC collision, where KE is NOT conserved." },
-      { "label": "C", "text": "No collision occurs since the wall doesn't move", "isCorrect": false, "explanation": "A collision absolutely occurs -- the wall not moving (much) doesn't mean there's no collision, just that the wall's effective mass is very large." },
-      { "label": "D", "text": "The clay's kinetic energy is unaffected by sticking to the wall", "isCorrect": false, "explanation": "The clay's kinetic energy essentially goes to zero (since it stops), converted into other forms of energy like heat and deformation." }
+      { "label": "A", "text": "A perfectly inelastic collision -- the clay's kinetic energy is converted mostly into heat and deformation as it flattens", "isCorrect": true, "explanation": "Sticking upon impact is the hallmark of a perfectly inelastic collision; the KE is converted to other forms (heat, sound, deformation), not conserved." },
+      { "label": "B", "text": "A perfectly elastic collision -- all kinetic energy is conserved, and the clay bounces back off the wall at its original speed", "isCorrect": false, "explanation": "This is the opposite of what happens -- clay sticking to a wall is a classic example of a perfectly INELASTIC collision, where KE is NOT conserved." },
+      { "label": "C", "text": "No collision occurs since the wall doesn't move, so the clay keeps all of its kinetic energy", "isCorrect": false, "explanation": "A collision absolutely occurs -- the wall not moving (much) doesn't mean there's no collision, just that the wall's effective mass is very large." },
+      { "label": "D", "text": "The clay's kinetic energy is unaffected by sticking to the wall, because the wall is much more massive", "isCorrect": false, "explanation": "The clay's kinetic energy essentially goes to zero (since it stops), converted into other forms of energy like heat and deformation." }
     ],
     "explanation": "This is a perfectly inelastic collision; the clay's kinetic energy converts mostly to heat and deformation energy.",
     "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
@@ -359,9 +359,9 @@
     "stem": "In real-world collisions (like most car crashes), are they typically closer to perfectly elastic or perfectly inelastic?",
     "choices": [
       { "label": "A", "text": "Closer to inelastic -- some kinetic energy is generally lost to heat, sound, and deformation in most real collisions", "isCorrect": true, "explanation": "Most real-world macroscopic collisions are at least partially inelastic; perfectly elastic collisions are an idealization more closely approximated by things like billiard balls or gas molecules." },
-      { "label": "B", "text": "Closer to elastic -- kinetic energy is almost perfectly conserved in most real collisions", "isCorrect": false, "explanation": "Most macroscopic real-world collisions (like car crashes) lose significant kinetic energy to deformation, heat, and sound -- they are NOT close to perfectly elastic." },
-      { "label": "C", "text": "It's impossible for a real collision to be either elastic or inelastic", "isCorrect": false, "explanation": "Real collisions can be reasonably well-approximated as elastic or inelastic; both categories are genuinely useful and applicable models." },
-      { "label": "D", "text": "All real collisions are perfectly elastic by definition", "isCorrect": false, "explanation": "This isn't correct -- most real-world collisions involve some energy loss (to heat, sound, deformation), making them at least partially inelastic." }
+      { "label": "B", "text": "Closer to elastic -- kinetic energy is almost perfectly conserved in most real collisions, apart from small losses during the impact", "isCorrect": false, "explanation": "Most macroscopic real-world collisions (like car crashes) lose significant kinetic energy to deformation, heat, and sound -- they are NOT close to perfectly elastic." },
+      { "label": "C", "text": "It's impossible for a real collision to be either elastic or inelastic, since all of them are in between", "isCorrect": false, "explanation": "Real collisions can be reasonably well-approximated as elastic or inelastic; both categories are genuinely useful and applicable models." },
+      { "label": "D", "text": "All real collisions are perfectly elastic by definition, since energy can never be lost", "isCorrect": false, "explanation": "This isn't correct -- most real-world collisions involve some energy loss (to heat, sound, deformation), making them at least partially inelastic." }
     ],
     "explanation": "Most real-world collisions (like car crashes) are closer to inelastic, losing kinetic energy to heat, sound, and deformation.",
     "conceptLink": "ap-physics-1/unit-5-momentum/collisions",
@@ -406,10 +406,10 @@
     "difficulty": "hard",
     "stem": "Why does a system's center of mass end up closer to the more massive object (when there are two objects of different mass)?",
     "choices": [
-      { "label": "A", "text": "Because the center of mass formula weights each object's position by its mass, so a larger mass \"pulls\" the average position toward itself", "isCorrect": true, "explanation": "The weighted-average nature of the center of mass formula means more massive objects have proportionally more influence on the resulting position." },
+      { "label": "A", "text": "Because the center of mass formula weights each object's position by its mass, so a larger mass pulls the average position toward itself", "isCorrect": true, "explanation": "The weighted-average nature of the center of mass formula means more massive objects have proportionally more influence on the resulting position." },
       { "label": "B", "text": "It doesn't -- the center of mass is always exactly at the geometric midpoint regardless of mass", "isCorrect": false, "explanation": "The center of mass generally is NOT at the simple geometric midpoint unless the masses happen to be equal -- it shifts toward the more massive object." },
-      { "label": "C", "text": "Because gravity pulls the center of mass toward the heavier object", "isCorrect": false, "explanation": "This isn't about gravitational attraction between the objects -- it's purely a mathematical consequence of the mass-weighted averaging formula." },
-      { "label": "D", "text": "Because the less massive object doesn't count in the calculation at all", "isCorrect": false, "explanation": "The less massive object DOES count -- it's just weighted less heavily than the more massive object, not excluded entirely." }
+      { "label": "C", "text": "Because gravity pulls the center of mass toward the heavier object, since it attracts more strongly", "isCorrect": false, "explanation": "This isn't about gravitational attraction between the objects -- it's purely a mathematical consequence of the mass-weighted averaging formula." },
+      { "label": "D", "text": "Because the less massive object doesn't count in the calculation at all, only the heavier one does", "isCorrect": false, "explanation": "The less massive object DOES count -- it's just weighted less heavily than the more massive object, not excluded entirely." }
     ],
     "explanation": "The center of mass formula weights each position by mass, so a larger mass shifts the average position toward itself.",
     "conceptLink": "ap-physics-1/unit-5-momentum/center-of-mass",
@@ -422,10 +422,10 @@
     "difficulty": "hard",
     "stem": "What determines how the center of mass of a system moves over time?",
     "choices": [
-      { "label": "A", "text": "Only the NET EXTERNAL force on the system -- internal forces (like those in a collision) don't affect the center of mass's motion", "isCorrect": true, "explanation": "Internal forces cancel by Newton's Third Law, so they can't accelerate the system's center of mass; only external forces can." },
-      { "label": "B", "text": "Both internal and external forces equally affect the center of mass's motion", "isCorrect": false, "explanation": "Internal forces cancel out (Newton's Third Law pairs) and have NO net effect on the center of mass's motion -- only external forces matter." },
-      { "label": "C", "text": "Only internal forces determine the center of mass's motion", "isCorrect": false, "explanation": "This is backward -- internal forces cancel out and don't affect the center of mass; only EXTERNAL forces do." },
-      { "label": "D", "text": "The center of mass never moves, regardless of any forces", "isCorrect": false, "explanation": "The center of mass absolutely can move, if there's a net EXTERNAL force acting on the system (e.g., gravity on a projectile)." }
+      { "label": "A", "text": "Only the NET EXTERNAL force on the system; internal forces (like those in a collision) don't affect the center of mass's motion", "isCorrect": true, "explanation": "Internal forces cancel by Newton's Third Law, so they can't accelerate the system's center of mass; only external forces can." },
+      { "label": "B", "text": "Both internal and external forces equally affect the center of mass's motion, in proportion to their size", "isCorrect": false, "explanation": "Internal forces cancel out (Newton's Third Law pairs) and have NO net effect on the center of mass's motion -- only external forces matter." },
+      { "label": "C", "text": "Only internal forces determine the center of mass's motion, since external forces cancel out", "isCorrect": false, "explanation": "This is backward -- internal forces cancel out and don't affect the center of mass; only EXTERNAL forces do." },
+      { "label": "D", "text": "The center of mass never moves, regardless of any forces acting on the system", "isCorrect": false, "explanation": "The center of mass absolutely can move, if there's a net EXTERNAL force acting on the system (e.g., gravity on a projectile)." }
     ],
     "explanation": "Only net external forces affect the center of mass's motion; internal forces cancel out (Newton's Third Law) and have no effect on it.",
     "conceptLink": "ap-physics-1/unit-5-momentum/center-of-mass",
@@ -438,10 +438,10 @@
     "difficulty": "medium",
     "stem": "A spinning wrench is thrown through the air, tumbling as it flies. What path does its center of mass follow?",
     "choices": [
-      { "label": "A", "text": "A smooth parabolic path, exactly as if it were a simple projectile (point mass) under gravity -- even though the rest of the wrench tumbles chaotically", "isCorrect": true, "explanation": "Regardless of how an extended object tumbles or rotates, its center of mass follows the same simple projectile-motion path a point mass would, under the net external force (gravity)." },
-      { "label": "B", "text": "A chaotic, tumbling path, mirroring the wrench's rotation", "isCorrect": false, "explanation": "While the rest of the wrench tumbles chaotically, the CENTER OF MASS specifically follows a smooth parabolic path -- rotation doesn't affect the center of mass's own trajectory." },
-      { "label": "C", "text": "A straight horizontal line", "isCorrect": false, "explanation": "Under gravity, the center of mass follows a curved (parabolic) path, not a straight horizontal line, just like ordinary projectile motion." },
-      { "label": "D", "text": "It cannot be determined for a tumbling object", "isCorrect": false, "explanation": "It CAN be determined -- the center of mass always follows simple projectile motion under the net external force, regardless of the object's internal rotation or tumbling." }
+      { "label": "A", "text": "A smooth parabolic path, exactly as if it were a point-mass projectile under gravity, even though the rest of the wrench tumbles", "isCorrect": true, "explanation": "Regardless of how an extended object tumbles or rotates, its center of mass follows the same simple projectile-motion path a point mass would, under the net external force (gravity)." },
+      { "label": "B", "text": "A chaotic, tumbling path that mirrors the wrench's rotation, so the center of mass changes direction as it spins in the air at every moment", "isCorrect": false, "explanation": "While the rest of the wrench tumbles chaotically, the CENTER OF MASS specifically follows a smooth parabolic path -- rotation doesn't affect the center of mass's own trajectory." },
+      { "label": "C", "text": "A straight horizontal line, since no horizontal forces act on the wrench", "isCorrect": false, "explanation": "Under gravity, the center of mass follows a curved (parabolic) path, not a straight horizontal line, just like ordinary projectile motion." },
+      { "label": "D", "text": "It cannot be determined for a tumbling object, since the motion is too complicated to analyze", "isCorrect": false, "explanation": "It CAN be determined -- the center of mass always follows simple projectile motion under the net external force, regardless of the object's internal rotation or tumbling." }
     ],
     "explanation": "Even for a tumbling extended object, its center of mass follows the same smooth parabolic path a simple point-mass projectile would.",
     "conceptLink": "ap-physics-1/unit-5-momentum/center-of-mass",
@@ -471,9 +471,9 @@
     "stem": "Two ice skaters, initially at rest and holding hands, push off from each other. What happens to the center of mass of the two-skater system (ignoring friction) after they push apart?",
     "choices": [
       { "label": "A", "text": "It stays in the same place, since there's no external horizontal force on the system", "isCorrect": true, "explanation": "The push-off force between the skaters is internal; with no external horizontal force (ignoring friction), the center of mass of the system doesn't move." },
-      { "label": "B", "text": "It moves toward whichever skater is more massive", "isCorrect": false, "explanation": "The center of mass doesn't shift toward either skater after they push apart -- it stays fixed, since the push-off is purely an internal force." },
-      { "label": "C", "text": "It moves in the direction both skaters end up moving", "isCorrect": false, "explanation": "The skaters move in OPPOSITE directions from each other (by momentum conservation) -- there's no single common direction for the center of mass to move toward." },
-      { "label": "D", "text": "It accelerates continuously outward", "isCorrect": false, "explanation": "With no external force, the center of mass cannot accelerate -- it remains exactly where it was." }
+      { "label": "B", "text": "It moves toward whichever skater is more massive, since that skater moves less", "isCorrect": false, "explanation": "The center of mass doesn't shift toward either skater after they push apart -- it stays fixed, since the push-off is purely an internal force." },
+      { "label": "C", "text": "It moves in the direction both skaters end up moving, following their average motion", "isCorrect": false, "explanation": "The skaters move in OPPOSITE directions from each other (by momentum conservation) -- there's no single common direction for the center of mass to move toward." },
+      { "label": "D", "text": "It accelerates continuously outward, since the push never stops", "isCorrect": false, "explanation": "With no external force, the center of mass cannot accelerate -- it remains exactly where it was." }
     ],
     "explanation": "Since the push-off is an internal force with no external horizontal force on the system, the center of mass remains stationary.",
     "conceptLink": "ap-physics-1/unit-5-momentum/center-of-mass",

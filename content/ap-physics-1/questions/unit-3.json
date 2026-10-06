@@ -22,10 +22,10 @@
     "difficulty": "medium",
     "stem": "An object moves in a circle at constant speed. Why does it still have a nonzero acceleration?",
     "choices": [
-      { "label": "A", "text": "Because its velocity's direction is constantly changing, even though its speed (magnitude) stays constant", "isCorrect": true, "explanation": "Acceleration depends on the change in the VELOCITY VECTOR, not just speed -- and direction is constantly changing in circular motion." },
-      { "label": "B", "text": "It doesn't -- constant speed always means zero acceleration", "isCorrect": false, "explanation": "This confuses speed (a scalar) with velocity (a vector); constant SPEED doesn't imply constant VELOCITY if direction is changing." },
-      { "label": "C", "text": "Because gravity is pulling it downward at all times", "isCorrect": false, "explanation": "While gravity may act on the object, the acceleration described here (centripetal) is due to the changing DIRECTION of circular motion, not specifically gravity." },
-      { "label": "D", "text": "Because the object's mass is changing", "isCorrect": false, "explanation": "Mass isn't changing in this scenario -- the acceleration arises purely from the continuously changing direction of the velocity vector." }
+      { "label": "A", "text": "Because its velocity's direction is constantly changing, even though its speed stays constant", "isCorrect": true, "explanation": "Acceleration depends on the change in the VELOCITY VECTOR, not just speed -- and direction is constantly changing in circular motion." },
+      { "label": "B", "text": "It doesn't -- constant speed always means zero acceleration, because the velocity vector does not change at all", "isCorrect": false, "explanation": "This confuses speed (a scalar) with velocity (a vector); constant SPEED doesn't imply constant VELOCITY if direction is changing." },
+      { "label": "C", "text": "Because gravity is pulling it downward on the object at every point of the circle", "isCorrect": false, "explanation": "While gravity may act on the object, the acceleration described here (centripetal) is due to the changing DIRECTION of circular motion, not specifically gravity." },
+      { "label": "D", "text": "Because the object's mass is changing as it moves around the circle", "isCorrect": false, "explanation": "Mass isn't changing in this scenario -- the acceleration arises purely from the continuously changing direction of the velocity vector." }
     ],
     "explanation": "Even at constant speed, an object in circular motion accelerates because its velocity's DIRECTION continuously changes.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
@@ -87,9 +87,9 @@
     "stem": "What provides the centripetal force for a car rounding a flat, unbanked curve?",
     "choices": [
       { "label": "A", "text": "Static friction between the tires and the road", "isCorrect": true, "explanation": "On a flat curve, static friction between the tires and road provides the inward (centripetal) force needed to keep the car turning." },
-      { "label": "B", "text": "The car's engine directly", "isCorrect": false, "explanation": "The engine provides forward driving force, not the inward centripetal force needed for turning." },
-      { "label": "C", "text": "Air resistance", "isCorrect": false, "explanation": "Air resistance opposes motion; it doesn't provide the inward force that keeps the car on a curved path." },
-      { "label": "D", "text": "The normal force alone", "isCorrect": false, "explanation": "On a FLAT curve, the normal force is vertical (balancing weight) and has no horizontal (centripetal) component; friction supplies that instead." }
+      { "label": "B", "text": "The car's engine directly pushing toward the center", "isCorrect": false, "explanation": "The engine provides forward driving force, not the inward centripetal force needed for turning." },
+      { "label": "C", "text": "Air resistance acting on the car's body", "isCorrect": false, "explanation": "Air resistance opposes motion; it doesn't provide the inward force that keeps the car on a curved path." },
+      { "label": "D", "text": "The normal force alone, with no friction needed", "isCorrect": false, "explanation": "On a FLAT curve, the normal force is vertical (balancing weight) and has no horizontal (centripetal) component; friction supplies that instead." }
     ],
     "explanation": "On a flat curve, static friction between tires and road provides the centripetal force.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
@@ -119,9 +119,9 @@
     "stem": "If an object's speed in circular motion is doubled while the radius stays the same, how does the required centripetal force change?",
     "choices": [
       { "label": "A", "text": "It quadruples (increases by a factor of 4)", "isCorrect": true, "explanation": "Since F_c = mv²/r, and force depends on v SQUARED, doubling v quadruples the required force." },
-      { "label": "B", "text": "It doubles", "isCorrect": false, "explanation": "Force depends on v², not v directly -- doubling v quadruples the force, not just doubles it." },
-      { "label": "C", "text": "It stays the same", "isCorrect": false, "explanation": "Since F_c depends on v² (with radius constant), changing v does change the required force -- it doesn't stay the same." },
-      { "label": "D", "text": "It is cut in half", "isCorrect": false, "explanation": "Increasing speed increases (not decreases) the required centripetal force, since F_c is proportional to v²." }
+      { "label": "B", "text": "It doubles (increases by a factor of 2)", "isCorrect": false, "explanation": "Force depends on v², not v directly -- doubling v quadruples the force, not just doubles it." },
+      { "label": "C", "text": "It stays the same (no change)", "isCorrect": false, "explanation": "Since F_c depends on v² (with radius constant), changing v does change the required force -- it doesn't stay the same." },
+      { "label": "D", "text": "It is cut in half (decreases by a factor of 2)", "isCorrect": false, "explanation": "Increasing speed increases (not decreases) the required centripetal force, since F_c is proportional to v²." }
     ],
     "explanation": "Since F_c=mv²/r depends on v², doubling v quadruples the required centripetal force.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
@@ -150,10 +150,10 @@
     "difficulty": "hard",
     "stem": "A ball on a string moves in a vertical circle. At the TOP of the circle, what forces contribute to the centripetal force (directed downward, toward the center)?",
     "choices": [
-      { "label": "A", "text": "Both the string tension and the ball's weight point toward the center (downward) at the top, so both contribute to the centripetal force", "isCorrect": true, "explanation": "At the top of a vertical circle, both gravity and tension point downward (toward the center), so both add together to provide the net centripetal force." },
-      { "label": "B", "text": "Only tension contributes; gravity has no effect at the top of the circle", "isCorrect": false, "explanation": "At the top, gravity points straight down -- exactly toward the center -- so it DOES contribute to the centripetal force, alongside tension." },
-      { "label": "C", "text": "Only gravity contributes; tension is zero at the top of the circle", "isCorrect": false, "explanation": "Tension is not necessarily zero at the top -- it depends on the ball's speed; at typical speeds above the minimum, both forces contribute." },
-      { "label": "D", "text": "Gravity and tension act in opposite directions at the top, partially canceling", "isCorrect": false, "explanation": "At the top of the circle, both tension (pulling toward the center) and gravity act in the SAME (downward, toward-center) direction, not opposite directions." }
+      { "label": "A", "text": "Both the string tension and the ball's weight point toward the center (downward) at the top, so both contribute", "isCorrect": true, "explanation": "At the top of a vertical circle, both gravity and tension point downward (toward the center), so both add together to provide the net centripetal force." },
+      { "label": "B", "text": "Only tension contributes; gravity has no effect on the ball at the top of the circle, where it moves horizontally", "isCorrect": false, "explanation": "At the top, gravity points straight down -- exactly toward the center -- so it DOES contribute to the centripetal force, alongside tension." },
+      { "label": "C", "text": "Only gravity contributes; tension is zero at the top of the circle because the string goes slack", "isCorrect": false, "explanation": "Tension is not necessarily zero at the top -- it depends on the ball's speed; at typical speeds above the minimum, both forces contribute." },
+      { "label": "D", "text": "Gravity and tension act in opposite directions at the top, partially canceling each other out", "isCorrect": false, "explanation": "At the top of the circle, both tension (pulling toward the center) and gravity act in the SAME (downward, toward-center) direction, not opposite directions." }
     ],
     "explanation": "At the top of a vertical circle, both tension and gravity point toward the center (downward), so both contribute to the centripetal force.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/uniform-circular-motion",
@@ -166,10 +166,10 @@
     "difficulty": "easy",
     "stem": "What does Newton's Law of Universal Gravitation state about the gravitational force between two masses?",
     "choices": [
-      { "label": "A", "text": "It is proportional to the product of the two masses and inversely proportional to the square of the distance between their centers", "isCorrect": true, "explanation": "This is the standard statement of Newton's Law of Gravitation: F = Gm1m2/r²." },
-      { "label": "B", "text": "It is proportional to the sum of the two masses and independent of distance", "isCorrect": false, "explanation": "Gravitational force depends on the PRODUCT (not sum) of the masses, and it strongly depends on distance (inverse square)." },
-      { "label": "C", "text": "It only depends on distance, not on either mass", "isCorrect": false, "explanation": "Gravitational force depends directly on both masses, not on distance alone." },
-      { "label": "D", "text": "It is constant regardless of mass or distance", "isCorrect": false, "explanation": "Gravitational force varies significantly with both the masses involved and their separation distance -- it is not constant." }
+      { "label": "A", "text": "It is proportional to the product of the masses and inversely proportional to the square of the distance between centers", "isCorrect": true, "explanation": "This is the standard statement of Newton's Law of Gravitation: F = Gm1m2/r²." },
+      { "label": "B", "text": "It is proportional to the sum of the two masses and independent of the distance between their centers or surfaces, whatever the size of either mass", "isCorrect": false, "explanation": "Gravitational force depends on the PRODUCT (not sum) of the masses, and it strongly depends on distance (inverse square)." },
+      { "label": "C", "text": "It only depends on distance, not on either mass, and increases as the distance grows", "isCorrect": false, "explanation": "Gravitational force depends directly on both masses, not on distance alone." },
+      { "label": "D", "text": "It is constant regardless of mass or distance, equal to a single universal value", "isCorrect": false, "explanation": "Gravitational force varies significantly with both the masses involved and their separation distance -- it is not constant." }
     ],
     "explanation": "Newton's Law of Gravitation: F = Gm1m2/r², proportional to the product of masses and inversely proportional to distance squared.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
@@ -231,9 +231,9 @@
     "stem": "The gravitational force between two masses is always:",
     "choices": [
       { "label": "A", "text": "Attractive -- gravity always pulls masses toward each other, never pushes them apart", "isCorrect": true, "explanation": "Gravitational force is always attractive; unlike some other fundamental forces, there is no repulsive gravity between masses." },
-      { "label": "B", "text": "Repulsive -- gravity always pushes masses apart", "isCorrect": false, "explanation": "Gravity is attractive, not repulsive -- masses are always pulled toward, not pushed away from, each other." },
-      { "label": "C", "text": "Sometimes attractive and sometimes repulsive, depending on the masses", "isCorrect": false, "explanation": "Gravitational force is always attractive regardless of the specific masses involved; there's no scenario where it becomes repulsive." },
-      { "label": "D", "text": "Zero unless the masses are touching", "isCorrect": false, "explanation": "Gravitational force acts at any distance (weakening with distance, per the inverse-square law), not only when objects are in direct contact." }
+      { "label": "B", "text": "Repulsive -- gravity always pushes masses apart from each other", "isCorrect": false, "explanation": "Gravity is attractive, not repulsive -- masses are always pulled toward, not pushed away from, each other." },
+      { "label": "C", "text": "Sometimes attractive and sometimes repulsive, depending on the sizes of the masses involved", "isCorrect": false, "explanation": "Gravitational force is always attractive regardless of the specific masses involved; there's no scenario where it becomes repulsive." },
+      { "label": "D", "text": "Zero unless the masses are touching one another directly", "isCorrect": false, "explanation": "Gravitational force acts at any distance (weakening with distance, per the inverse-square law), not only when objects are in direct contact." }
     ],
     "explanation": "Gravitational force is always attractive between any two masses.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "How does an object's \"weight\" differ from its \"mass\"?",
     "choices": [
-      { "label": "A", "text": "Mass is an intrinsic, invariant property of an object; weight is the force of gravity on it, which depends on location (e.g., different on the Moon than on Earth)", "isCorrect": true, "explanation": "Mass doesn't change based on location, but weight (a force, W=mg) depends on the local gravitational field strength." },
-      { "label": "B", "text": "Mass and weight are exactly the same thing, just with different names", "isCorrect": false, "explanation": "Mass and weight are physically distinct: mass is invariant, while weight (a force) depends on the local gravitational acceleration." },
-      { "label": "C", "text": "Weight is intrinsic to the object; mass depends on location", "isCorrect": false, "explanation": "This reverses the correct relationship -- mass is the intrinsic property, while weight is what varies with location." },
-      { "label": "D", "text": "Weight is always exactly zero in space, and mass is always exactly zero in space too", "isCorrect": false, "explanation": "Mass never becomes zero in space; weight can become negligible in the absence of a nearby gravitational source, but this isn't the same as mass disappearing." }
+      { "label": "A", "text": "Mass is an intrinsic property of an object; weight is the force of gravity on it, which depends on location (e.g., different on the Moon than on Earth)", "isCorrect": true, "explanation": "Mass doesn't change based on location, but weight (a force, W=mg) depends on the local gravitational field strength." },
+      { "label": "B", "text": "Mass and weight are exactly the same thing, just with different names, and both stay constant everywhere", "isCorrect": false, "explanation": "Mass and weight are physically distinct: mass is invariant, while weight (a force) depends on the local gravitational acceleration." },
+      { "label": "C", "text": "Weight is intrinsic to the object and never changes; mass depends on location, so it changes on the Moon", "isCorrect": false, "explanation": "This reverses the correct relationship -- mass is the intrinsic property, while weight is what varies with location." },
+      { "label": "D", "text": "Weight is always exactly zero in space, and mass is always exactly zero in space too, for every object and every distance from any planet", "isCorrect": false, "explanation": "Mass never becomes zero in space; weight can become negligible in the absence of a nearby gravitational source, but this isn't the same as mass disappearing." }
     ],
     "explanation": "Mass is an object's intrinsic amount of matter (invariant); weight is the gravitational force on it, which depends on location.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
@@ -294,10 +294,10 @@
     "difficulty": "medium",
     "stem": "Why don't we notice the gravitational attraction between everyday objects, like two people standing near each other?",
     "choices": [
-      { "label": "A", "text": "Because the gravitational constant G is extremely small, making the force between ordinary (low-mass) objects negligibly tiny compared to forces like the Earth's gravity on them", "isCorrect": true, "explanation": "G ≈ 6.674×10⁻¹¹ is so small that even at close range, the gravitational force between two people is far too small to detect or feel." },
-      { "label": "B", "text": "Because there is no gravitational force between everyday objects at all", "isCorrect": false, "explanation": "Gravity acts between ANY two masses -- the force is real, just extremely small for everyday-sized objects." },
-      { "label": "C", "text": "Because gravity only acts on objects larger than a planet", "isCorrect": false, "explanation": "Gravity acts between any two masses regardless of size; it's simply far too weak to notice for ordinary-sized objects." },
-      { "label": "D", "text": "Because the objects are moving too fast for gravity to act", "isCorrect": false, "explanation": "The speed of the objects isn't the relevant factor here; the force is just extremely small due to the tiny value of G combined with everyday-sized masses." }
+      { "label": "A", "text": "Because the gravitational constant G is extremely small, so the force between ordinary low-mass objects is negligible compared to forces like Earth's gravity on them", "isCorrect": true, "explanation": "G ≈ 6.674×10⁻¹¹ is so small that even at close range, the gravitational force between two people is far too small to detect or feel." },
+      { "label": "B", "text": "Because there is no gravitational force between everyday objects at all, since gravity is only produced by planets, stars and other objects of very large mass", "isCorrect": false, "explanation": "Gravity acts between ANY two masses -- the force is real, just extremely small for everyday-sized objects." },
+      { "label": "C", "text": "Because gravity only acts on objects larger than a planet, never on anything of human scale", "isCorrect": false, "explanation": "Gravity acts between any two masses regardless of size; it's simply far too weak to notice for ordinary-sized objects." },
+      { "label": "D", "text": "Because the objects are moving too fast for gravity to act on them in any noticeable way", "isCorrect": false, "explanation": "The speed of the objects isn't the relevant factor here; the force is just extremely small due to the tiny value of G combined with everyday-sized masses." }
     ],
     "explanation": "The gravitational constant G is so small that gravity between ordinary-sized objects is far too weak to detect.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-force",
@@ -406,10 +406,10 @@
     "difficulty": "hard",
     "stem": "Why do astronauts in the International Space Station (ISS) experience \"weightlessness,\" even though Earth's gravity at that altitude is still nearly as strong as at the surface?",
     "choices": [
-      { "label": "A", "text": "The ISS (and everything in it) is in continuous free fall around the Earth -- gravity is still acting, but there's no normal force from a floor to create a sensation of weight", "isCorrect": true, "explanation": "Orbiting is a state of continuous free fall; astronauts feel \"weightless\" because there's no supporting surface pushing back on them, not because gravity has disappeared." },
-      { "label": "B", "text": "Gravity doesn't exist at that altitude", "isCorrect": false, "explanation": "Gravity is still nearly as strong at the ISS's altitude as at Earth's surface -- it's what keeps the ISS in orbit at all." },
-      { "label": "C", "text": "The ISS actively cancels out gravity using onboard equipment", "isCorrect": false, "explanation": "There is no such gravity-canceling equipment; the weightless sensation is purely due to the state of continuous free fall." },
-      { "label": "D", "text": "Astronauts' mass becomes zero in orbit", "isCorrect": false, "explanation": "Mass is invariant and does NOT become zero in orbit -- only the sensation of weight (normal force) is absent." }
+      { "label": "A", "text": "The ISS and everything in it are in continuous free fall around the Earth -- gravity still acts, but no normal force from a floor creates a sensation of weight", "isCorrect": true, "explanation": "Orbiting is a state of continuous free fall; astronauts feel \"weightless\" because there's no supporting surface pushing back on them, not because gravity has disappeared." },
+      { "label": "B", "text": "Gravity doesn't exist at that altitude, because it fades to zero a few hundred kilometers above the ground", "isCorrect": false, "explanation": "Gravity is still nearly as strong at the ISS's altitude as at Earth's surface -- it's what keeps the ISS in orbit at all." },
+      { "label": "C", "text": "The ISS actively cancels out gravity using onboard equipment, which produces an equal and opposite force that cancels the pull of Earth on every object inside at that altitude", "isCorrect": false, "explanation": "There is no such gravity-canceling equipment; the weightless sensation is purely due to the state of continuous free fall." },
+      { "label": "D", "text": "Astronauts' mass becomes zero in orbit, so there is nothing left for gravity to act on", "isCorrect": false, "explanation": "Mass is invariant and does NOT become zero in orbit -- only the sensation of weight (normal force) is absent." }
     ],
     "explanation": "Astronauts feel weightless because they (and the ISS) are in continuous free fall, not because gravity is absent.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "Does the orbital period of a satellite depend on the satellite's own mass?",
     "choices": [
-      { "label": "A", "text": "No -- orbital period depends only on the orbital radius and the mass of the central body being orbited, not the satellite's own mass", "isCorrect": true, "explanation": "In T=2π√(r³/GM), M refers to the CENTRAL body's mass; the orbiting satellite's own mass cancels out of the equation entirely." },
-      { "label": "B", "text": "Yes -- a more massive satellite always orbits faster", "isCorrect": false, "explanation": "The orbiting object's own mass cancels out of the derivation (from setting gravitational force equal to required centripetal force), so it has no effect on orbital period." },
-      { "label": "C", "text": "Yes -- a more massive satellite always orbits slower", "isCorrect": false, "explanation": "The satellite's own mass does not affect its orbital period at all, in either direction." },
-      { "label": "D", "text": "It depends on the shape of the satellite, not its mass", "isCorrect": false, "explanation": "This question is about mass, and mass genuinely doesn't affect orbital period; shape isn't relevant to this idealized point-mass model either." }
+      { "label": "A", "text": "No -- orbital period depends only on the orbital radius and the mass of the central body, not on the satellite's own mass", "isCorrect": true, "explanation": "In T=2π√(r³/GM), M refers to the CENTRAL body's mass; the orbiting satellite's own mass cancels out of the equation entirely." },
+      { "label": "B", "text": "Yes -- a more massive satellite always orbits faster, because it carries more momentum along its path around the planet, covering each orbit sooner", "isCorrect": false, "explanation": "The orbiting object's own mass cancels out of the derivation (from setting gravitational force equal to required centripetal force), so it has no effect on orbital period." },
+      { "label": "C", "text": "Yes -- a more massive satellite always orbits slower, because it is harder to accelerate", "isCorrect": false, "explanation": "The satellite's own mass does not affect its orbital period at all, in either direction." },
+      { "label": "D", "text": "It depends on the shape of the satellite, not its mass, since drag varies with the shape", "isCorrect": false, "explanation": "This question is about mass, and mass genuinely doesn't affect orbital period; shape isn't relevant to this idealized point-mass model either." }
     ],
     "explanation": "The satellite's own mass cancels out of the orbital equations; only the central body's mass and the orbital radius matter.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
@@ -439,9 +439,9 @@
     "stem": "What is meant by \"gravitational field strength\" at a point in space?",
     "choices": [
       { "label": "A", "text": "The gravitational force per unit mass that would be experienced by an object placed at that point", "isCorrect": true, "explanation": "Gravitational field strength, g = F/m, describes the force per unit mass a test object would feel at a given location." },
-      { "label": "B", "text": "The total gravitational force on every object in the universe", "isCorrect": false, "explanation": "Field strength is a LOCAL, per-unit-mass quantity at a specific point, not a total summed over every object." },
-      { "label": "C", "text": "The distance from the center of a planet", "isCorrect": false, "explanation": "Distance is a separate quantity used to CALCULATE field strength, but field strength itself represents force per unit mass, not distance." },
-      { "label": "D", "text": "A quantity that has no relationship to force", "isCorrect": false, "explanation": "Gravitational field strength is directly defined in terms of force (per unit mass), so it's fundamentally related to force." }
+      { "label": "B", "text": "The total gravitational force exerted on every object in the universe at once, summed over all masses", "isCorrect": false, "explanation": "Field strength is a LOCAL, per-unit-mass quantity at a specific point, not a total summed over every object." },
+      { "label": "C", "text": "The distance from the center of a planet to the point in question", "isCorrect": false, "explanation": "Distance is a separate quantity used to CALCULATE field strength, but field strength itself represents force per unit mass, not distance." },
+      { "label": "D", "text": "A quantity that has no relationship to force or to mass at all", "isCorrect": false, "explanation": "Gravitational field strength is directly defined in terms of force (per unit mass), so it's fundamentally related to force." }
     ],
     "explanation": "Gravitational field strength is the gravitational force per unit mass (g = F/m) at a given point.",
     "conceptLink": "ap-physics-1/unit-3-circular-motion-and-gravitation/gravitational-fields-and-orbits",
@@ -472,7 +472,7 @@
     "choices": [
       { "label": "A", "text": "Planet X has a smaller orbital radius than Planet Y", "isCorrect": true, "explanation": "By Kepler's Third Law (T² ∝ r³), a shorter period corresponds to a smaller orbital radius." },
       { "label": "B", "text": "Planet X has a larger orbital radius than Planet Y", "isCorrect": false, "explanation": "This is backward -- a SHORTER period corresponds to a SMALLER orbital radius, not larger, per Kepler's Third Law." },
-      { "label": "C", "text": "Their orbital radii must be equal", "isCorrect": false, "explanation": "If their periods differ, their orbital radii must also differ (per Kepler's Third Law), since T is a monotonic function of r for a fixed central mass." },
+      { "label": "C", "text": "Their orbital radii must be exactly equal to one another", "isCorrect": false, "explanation": "If their periods differ, their orbital radii must also differ (per Kepler's Third Law), since T is a monotonic function of r for a fixed central mass." },
       { "label": "D", "text": "Orbital period and orbital radius are unrelated", "isCorrect": false, "explanation": "Kepler's Third Law establishes a direct, specific relationship (T² ∝ r³) between orbital period and radius." }
     ],
     "explanation": "By Kepler's Third Law, a shorter orbital period corresponds to a smaller orbital radius.",

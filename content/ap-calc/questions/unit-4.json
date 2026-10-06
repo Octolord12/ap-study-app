@@ -39,9 +39,9 @@
     "stem": "What does it mean when v(t) = 0 for a particle in straight-line motion?",
     "choices": [
       { "label": "A", "text": "The particle is momentarily at rest (though it may still be changing direction)", "isCorrect": true, "explanation": "v(t)=0 means the particle's instantaneous speed is zero at that moment." },
-      { "label": "B", "text": "The particle has infinite speed", "isCorrect": false, "explanation": "v(t)=0 means zero speed, the opposite of infinite speed." },
-      { "label": "C", "text": "The particle no longer exists", "isCorrect": false, "explanation": "Velocity being zero doesn't affect whether the particle \"exists\"; it simply describes its instantaneous motion." },
-      { "label": "D", "text": "The particle's position is always 0", "isCorrect": false, "explanation": "v(t)=0 describes the particle's velocity at that instant, not that its POSITION must be 0." }
+      { "label": "B", "text": "The particle has infinite speed at that moment, so it moves instantly", "isCorrect": false, "explanation": "v(t)=0 means zero speed, the opposite of infinite speed." },
+      { "label": "C", "text": "The particle no longer exists after that moment in time", "isCorrect": false, "explanation": "Velocity being zero doesn't affect whether the particle \"exists\"; it simply describes its instantaneous motion." },
+      { "label": "D", "text": "The particle's position is always 0 from then on, so it stays at the origin", "isCorrect": false, "explanation": "v(t)=0 describes the particle's velocity at that instant, not that its POSITION must be 0." }
     ],
     "explanation": "v(t) = 0 means the particle is momentarily at rest.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "How is total distance traveled by a particle different from its net displacement, in the context of straight-line motion?",
     "choices": [
-      { "label": "A", "text": "Total distance accounts for ALL movement (including back-and-forth motion), while displacement is just the net change in position from start to end", "isCorrect": true, "explanation": "Distance is the sum of all movement, while displacement is only the net change, which can be smaller if the particle reverses direction." },
-      { "label": "B", "text": "They are always exactly the same value", "isCorrect": false, "explanation": "These values are only the same when a particle moves in a single, non-reversing direction; in general, total distance is greater than or equal to displacement in magnitude." },
-      { "label": "C", "text": "Distance is always negative, while displacement is always positive", "isCorrect": false, "explanation": "Distance is a NON-NEGATIVE quantity (never negative), and displacement can be positive, negative, or zero depending on direction." },
-      { "label": "D", "text": "There is no meaningful difference between these two concepts", "isCorrect": false, "explanation": "There IS a meaningful, important difference between these two related but distinct quantities in kinematics." }
+      { "label": "A", "text": "Total distance counts ALL movement, including back-and-forth motion, while displacement is just the net change in position from start to end", "isCorrect": true, "explanation": "Distance is the sum of all movement, while displacement is only the net change, which can be smaller if the particle reverses direction." },
+      { "label": "B", "text": "They are always exactly the same value, no matter how many times the particle reverses direction or how far it travels along its winding path", "isCorrect": false, "explanation": "These values are only the same when a particle moves in a single, non-reversing direction; in general, total distance is greater than or equal to displacement in magnitude." },
+      { "label": "C", "text": "Distance is always negative, while displacement is always positive, regardless of which way the particle moves", "isCorrect": false, "explanation": "Distance is a NON-NEGATIVE quantity (never negative), and displacement can be positive, negative, or zero depending on direction." },
+      { "label": "D", "text": "There is no meaningful difference between these two concepts, since both measure how far the particle ends up", "isCorrect": false, "explanation": "There IS a meaningful, important difference between these two related but distinct quantities in kinematics." }
     ],
     "explanation": "Total distance accounts for all movement, while displacement is only the net change in position.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
@@ -103,9 +103,9 @@
     "stem": "A particle moves so that v(t) > 0 for $0 \\leq t < 3$, and v(t) < 0 for $t > 3$. What can be concluded about the particle's motion at $t=3$?",
     "choices": [
       { "label": "A", "text": "The particle changes direction at t=3 (moving from positive to negative direction)", "isCorrect": true, "explanation": "Since velocity goes from positive to negative through zero at t=3, the particle reverses direction there." },
-      { "label": "B", "text": "The particle's speed is maximum at t=3", "isCorrect": false, "explanation": "Since v(3)=0, the particle's speed is actually at a MINIMUM (zero) at this instant, not maximum." },
-      { "label": "C", "text": "The particle's acceleration is zero everywhere", "isCorrect": false, "explanation": "This scenario doesn't establish that acceleration is zero everywhere; it only describes velocity's sign change at one instant." },
-      { "label": "D", "text": "The particle stops permanently after t=3", "isCorrect": false, "explanation": "After t=3, the particle has negative velocity, meaning it continues moving (in the negative direction), not permanently stopping." }
+      { "label": "B", "text": "The particle's speed is maximum at t=3 and then decreases", "isCorrect": false, "explanation": "Since v(3)=0, the particle's speed is actually at a MINIMUM (zero) at this instant, not maximum." },
+      { "label": "C", "text": "The particle's acceleration is zero everywhere on the interval, so it moves at a constant velocity throughout", "isCorrect": false, "explanation": "This scenario doesn't establish that acceleration is zero everywhere; it only describes velocity's sign change at one instant." },
+      { "label": "D", "text": "The particle stops permanently after t=3 and never moves again", "isCorrect": false, "explanation": "After t=3, the particle has negative velocity, meaning it continues moving (in the negative direction), not permanently stopping." }
     ],
     "explanation": "Since velocity changes sign from positive to negative at t=3, the particle changes direction there.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
@@ -135,9 +135,9 @@
     "stem": "What type of problem does \"related rates\" typically address?",
     "choices": [
       { "label": "A", "text": "Finding how the rate of change of one quantity relates to the rate of change of another, connected quantity", "isCorrect": true, "explanation": "Related rates problems connect the rates of change of two or more related quantities through a shared equation." },
-      { "label": "B", "text": "Finding the maximum value of a function", "isCorrect": false, "explanation": "Finding maximum values relates to optimization, a different (though related) topic in calculus." },
-      { "label": "C", "text": "Finding the area under a curve", "isCorrect": false, "explanation": "Finding area under a curve relates to integration, a completely different topic." },
-      { "label": "D", "text": "Finding the limit of a sequence", "isCorrect": false, "explanation": "Finding limits of sequences is a different mathematical topic, unrelated to related rates problems." }
+      { "label": "B", "text": "Finding the maximum value of a function on a closed interval, using the Extreme Value Theorem", "isCorrect": false, "explanation": "Finding maximum values relates to optimization, a different (though related) topic in calculus." },
+      { "label": "C", "text": "Finding the area under a curve between two points", "isCorrect": false, "explanation": "Finding area under a curve relates to integration, a completely different topic." },
+      { "label": "D", "text": "Finding the limit of a sequence as n grows without bound", "isCorrect": false, "explanation": "Finding limits of sequences is a different mathematical topic, unrelated to related rates problems." }
     ],
     "explanation": "Related rates problems find how the rate of change of one quantity relates to another connected quantity's rate of change.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
@@ -198,10 +198,10 @@
     "difficulty": "medium",
     "stem": "In related rates problems, why is it important to differentiate the relating equation with respect to TIME (t), even if time doesn't explicitly appear in the original equation?",
     "choices": [
-      { "label": "A", "text": "Because all the variables in the equation are themselves functions of time, so their rates of change are with respect to t", "isCorrect": true, "explanation": "Each variable changes over time, so differentiating with respect to t captures how they're all changing together." },
-      { "label": "B", "text": "Time is irrelevant to related rates problems", "isCorrect": false, "explanation": "Time is actually central to related rates problems, since we're finding how quantities change OVER TIME." },
-      { "label": "C", "text": "The equation should be differentiated with respect to one of the OTHER variables instead, like x or y", "isCorrect": false, "explanation": "Differentiating with respect to x or y instead of t would not correctly capture how these quantities are CHANGING OVER TIME." },
-      { "label": "D", "text": "Differentiating with respect to time is optional and can be skipped", "isCorrect": false, "explanation": "Differentiating with respect to time is a REQUIRED step in related rates problems, not an optional one." }
+      { "label": "A", "text": "Because all the variables in the equation are functions of time, so their rates of change are with respect to t", "isCorrect": true, "explanation": "Each variable changes over time, so differentiating with respect to t captures how they're all changing together." },
+      { "label": "B", "text": "Time is irrelevant to related rates problems, which only compare the variables with each other", "isCorrect": false, "explanation": "Time is actually central to related rates problems, since we're finding how quantities change OVER TIME." },
+      { "label": "C", "text": "The equation should be differentiated with respect to one of the OTHER variables instead, like x or y, since time never appears", "isCorrect": false, "explanation": "Differentiating with respect to x or y instead of t would not correctly capture how these quantities are CHANGING OVER TIME." },
+      { "label": "D", "text": "Differentiating with respect to time is optional and can be skipped when the units already match", "isCorrect": false, "explanation": "Differentiating with respect to time is a REQUIRED step in related rates problems, not an optional one." }
     ],
     "explanation": "Since all variables are functions of time, differentiating with respect to t captures how they change together.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "Two cars start from the same point. Car A travels north at 60 mph, and Car B travels east at 80 mph. Using $z^2 = x^2 + y^2$ where x, y are the distances traveled and z is the distance between them, what is the general strategy to find $dz/dt$?",
     "choices": [
-      { "label": "A", "text": "Differentiate the equation z² = x² + y² with respect to time, then substitute known values of x, y, dx/dt, dy/dt to solve for dz/dt", "isCorrect": true, "explanation": "This is the standard related rates strategy: differentiate the relating equation, then substitute known values." },
-      { "label": "B", "text": "Simply add dx/dt and dy/dt together directly", "isCorrect": false, "explanation": "dz/dt cannot be found by SIMPLY ADDING the two rates directly; the relationship must be properly differentiated according to the given equation." },
-      { "label": "C", "text": "Take the square root of dx/dt and dy/dt separately", "isCorrect": false, "explanation": "Taking the square root of each rate separately doesn't correctly apply the related rates methodology to this Pythagorean relationship." },
-      { "label": "D", "text": "Ignore the Pythagorean relationship and use unrelated formulas", "isCorrect": false, "explanation": "The Pythagorean relationship IS the key equation connecting the relevant variables in this problem; it shouldn't be ignored." }
+      { "label": "A", "text": "Differentiate z² = x² + y² with respect to time, then substitute the known x, y, dx/dt, dy/dt to solve for dz/dt", "isCorrect": true, "explanation": "This is the standard related rates strategy: differentiate the relating equation, then substitute known values." },
+      { "label": "B", "text": "Simply add dx/dt and dy/dt together directly, since the two speeds combine linearly into the speed of separation", "isCorrect": false, "explanation": "dz/dt cannot be found by SIMPLY ADDING the two rates directly; the relationship must be properly differentiated according to the given equation." },
+      { "label": "C", "text": "Take the square root of dx/dt and dy/dt separately, then multiply the two results together to get dz/dt", "isCorrect": false, "explanation": "Taking the square root of each rate separately doesn't correctly apply the related rates methodology to this Pythagorean relationship." },
+      { "label": "D", "text": "Ignore the Pythagorean relationship and use unrelated formulas for speed and distance", "isCorrect": false, "explanation": "The Pythagorean relationship IS the key equation connecting the relevant variables in this problem; it shouldn't be ignored." }
     ],
     "explanation": "The strategy is to differentiate the relating equation with respect to time, then substitute known values to solve for dz/dt.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",
@@ -263,9 +263,9 @@
     "stem": "What is a \"local linearization\" (or \"tangent line approximation\") of a function f at a point x=a used for?",
     "choices": [
       { "label": "A", "text": "To approximate f(x) for values of x near a, using the tangent line at that point", "isCorrect": true, "explanation": "Local linearization uses the tangent line at x=a to approximate function values nearby." },
-      { "label": "B", "text": "To find the exact value of f(x) for ALL x", "isCorrect": false, "explanation": "Local linearization is specifically an APPROXIMATION technique, valid mainly for x NEAR a, not an exact method for all x values." },
-      { "label": "C", "text": "To find the area under f's curve", "isCorrect": false, "explanation": "Finding area under a curve relates to integration, a different concept." },
-      { "label": "D", "text": "To find the second derivative of f", "isCorrect": false, "explanation": "Local linearization relates to the tangent line (using the FIRST derivative), not to computing second derivatives." }
+      { "label": "B", "text": "To find the exact value of f(x) for ALL x, not just values of x near the point a", "isCorrect": false, "explanation": "Local linearization is specifically an APPROXIMATION technique, valid mainly for x NEAR a, not an exact method for all x values." },
+      { "label": "C", "text": "To find the area under f's curve between two chosen x-values", "isCorrect": false, "explanation": "Finding area under a curve relates to integration, a different concept." },
+      { "label": "D", "text": "To find the second derivative of f at the point x=a", "isCorrect": false, "explanation": "Local linearization relates to the tangent line (using the FIRST derivative), not to computing second derivatives." }
     ],
     "explanation": "Local linearization approximates f(x) near x=a using the tangent line at that point.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/local-linearization",
@@ -310,10 +310,10 @@
     "difficulty": "hard",
     "stem": "Why does local linearization tend to become less accurate as x moves farther away from the point a where the tangent line was computed?",
     "choices": [
-      { "label": "A", "text": "Because the tangent line is only guaranteed to closely match f(x) very near x=a; farther away, the curve's actual behavior (concavity, etc.) diverges more from the straight tangent line", "isCorrect": true, "explanation": "The tangent line is a straight-line approximation, while the actual curve can bend away from it as x moves further from a." },
-      { "label": "B", "text": "Local linearization is always perfectly accurate no matter how far x is from a", "isCorrect": false, "explanation": "This contradicts the fundamental nature of linear approximation, which is generally LESS accurate the farther x is from a." },
-      { "label": "C", "text": "The tangent line formula changes automatically for different x", "isCorrect": false, "explanation": "The tangent line formula does NOT change for different x-values; it's a fixed line, which is precisely why it diverges from the curve farther away." },
-      { "label": "D", "text": "f'(a) becomes undefined for x far from a", "isCorrect": false, "explanation": "f'(a) is a single computed value; it doesn't become \"undefined\" based on how far a different x is from a." }
+      { "label": "A", "text": "Because the tangent line only closely matches f(x) very near x=a; farther away, the curve's behavior (concavity, etc.) diverges from the straight tangent line", "isCorrect": true, "explanation": "The tangent line is a straight-line approximation, while the actual curve can bend away from it as x moves further from a." },
+      { "label": "B", "text": "Local linearization is always perfectly accurate no matter how far x is from a, since the tangent line equals the curve everywhere on its domain, including at points far from a", "isCorrect": false, "explanation": "This contradicts the fundamental nature of linear approximation, which is generally LESS accurate the farther x is from a." },
+      { "label": "C", "text": "The tangent line formula changes automatically for different x, so it no longer applies to the original point", "isCorrect": false, "explanation": "The tangent line formula does NOT change for different x-values; it's a fixed line, which is precisely why it diverges from the curve farther away." },
+      { "label": "D", "text": "f'(a) becomes undefined for x far from a, so the slope of the tangent line no longer exists", "isCorrect": false, "explanation": "f'(a) is a single computed value; it doesn't become \"undefined\" based on how far a different x is from a." }
     ],
     "explanation": "The tangent line is a fixed straight-line approximation, so it diverges from the curve's actual (possibly curving) behavior farther from a.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/local-linearization",
@@ -359,9 +359,9 @@
     "stem": "What condition must be met to apply L'Hopital's Rule to $\\lim_{x \\to c} f(x)/g(x)$?",
     "choices": [
       { "label": "A", "text": "Direct substitution gives an indeterminate form like 0/0 or ∞/∞", "isCorrect": true, "explanation": "L'Hopital's Rule specifically applies to resolve these indeterminate forms." },
-      { "label": "B", "text": "f(x) and g(x) must both be constant functions", "isCorrect": false, "explanation": "L'Hopital's Rule is used for functions that produce indeterminate forms, not constant functions." },
-      { "label": "C", "text": "The limit must already be a known finite number", "isCorrect": false, "explanation": "If the limit is ALREADY known to be a specific finite number through direct evaluation, there's no need for L'Hopital's Rule." },
-      { "label": "D", "text": "g(x) must never equal zero anywhere", "isCorrect": false, "explanation": "L'Hopital's Rule is specifically relevant in cases where direct substitution DOES cause an issue, like g(c)=0 leading to an indeterminate form." }
+      { "label": "B", "text": "f(x) and g(x) must both be constant functions on a neighborhood of c", "isCorrect": false, "explanation": "L'Hopital's Rule is used for functions that produce indeterminate forms, not constant functions." },
+      { "label": "C", "text": "The limit must already be a known finite number before starting", "isCorrect": false, "explanation": "If the limit is ALREADY known to be a specific finite number through direct evaluation, there's no need for L'Hopital's Rule." },
+      { "label": "D", "text": "g(x) must never equal zero anywhere on the number line, including at the limit point", "isCorrect": false, "explanation": "L'Hopital's Rule is specifically relevant in cases where direct substitution DOES cause an issue, like g(c)=0 leading to an indeterminate form." }
     ],
     "explanation": "L'Hopital's Rule requires direct substitution to give an indeterminate form like 0/0 or ∞/∞.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "Why can't L'Hopital's Rule be applied to $\\lim_{x \\to 2} \\dfrac{x+3}{x-1}$?",
     "choices": [
-      { "label": "A", "text": "Because direct substitution already gives a well-defined, non-indeterminate value (5), so L'Hopital's Rule isn't needed or applicable", "isCorrect": true, "explanation": "Direct substitution gives (2+3)/(2-1) = 5, a well-defined result, so no indeterminate form exists to resolve." },
-      { "label": "B", "text": "Because L'Hopital's Rule can never be used with linear functions", "isCorrect": false, "explanation": "L'Hopital's Rule CAN be used with linear functions in principle, when they produce an indeterminate form; the issue here is that no indeterminate form arises at all." },
-      { "label": "C", "text": "Because the denominator is never zero anywhere", "isCorrect": false, "explanation": "While it's true the denominator isn't zero at x=2 specifically, the real reason is that the limit isn't indeterminate in the first place." },
-      { "label": "D", "text": "Because L'Hopital's Rule only works for trigonometric functions", "isCorrect": false, "explanation": "L'Hopital's Rule is a general technique applicable to many types of functions producing indeterminate forms, not limited to trigonometric functions." }
+      { "label": "A", "text": "Because direct substitution already gives a well-defined, non-indeterminate value (5), so the rule is not needed or applicable", "isCorrect": true, "explanation": "Direct substitution gives (2+3)/(2-1) = 5, a well-defined result, so no indeterminate form exists to resolve." },
+      { "label": "B", "text": "Because L'Hopital's Rule can never be used with linear functions, only with polynomials of degree two or higher", "isCorrect": false, "explanation": "L'Hopital's Rule CAN be used with linear functions in principle, when they produce an indeterminate form; the issue here is that no indeterminate form arises at all." },
+      { "label": "C", "text": "Because the denominator is never zero anywhere on the real line, so the limit cannot be indeterminate", "isCorrect": false, "explanation": "While it's true the denominator isn't zero at x=2 specifically, the real reason is that the limit isn't indeterminate in the first place." },
+      { "label": "D", "text": "Because L'Hopital's Rule only works for trigonometric functions, never for rational functions like this one", "isCorrect": false, "explanation": "L'Hopital's Rule is a general technique applicable to many types of functions producing indeterminate forms, not limited to trigonometric functions." }
     ],
     "explanation": "Since direct substitution already gives a well-defined value (5), there's no indeterminate form, so L'Hopital's Rule isn't applicable or needed.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
@@ -439,9 +439,9 @@
     "stem": "What happens if you apply L'Hopital's Rule once, but the resulting limit is STILL an indeterminate form (0/0 or ∞/∞)?",
     "choices": [
       { "label": "A", "text": "You can apply L'Hopital's Rule again (differentiate numerator and denominator once more)", "isCorrect": true, "explanation": "L'Hopital's Rule can be applied repeatedly as long as each application still produces an indeterminate form." },
-      { "label": "B", "text": "You must immediately conclude the limit does not exist", "isCorrect": false, "explanation": "A repeated indeterminate form doesn't mean the limit doesn't exist; it just means you may need to apply the rule again to resolve it." },
-      { "label": "C", "text": "You must go back to using algebraic factoring exclusively", "isCorrect": false, "explanation": "While algebraic techniques are valid tools generally, L'Hopital's Rule specifically CAN be reapplied when the form remains indeterminate." },
-      { "label": "D", "text": "L'Hopital's Rule can only ever be applied exactly once, no matter what", "isCorrect": false, "explanation": "L'Hopital's Rule can indeed be applied multiple times in succession, as long as each application still produces an indeterminate form beforehand." }
+      { "label": "B", "text": "You must immediately conclude the limit does not exist, since the first attempt failed", "isCorrect": false, "explanation": "A repeated indeterminate form doesn't mean the limit doesn't exist; it just means you may need to apply the rule again to resolve it." },
+      { "label": "C", "text": "You must go back to using algebraic factoring exclusively, abandoning derivatives for the rest of the problem", "isCorrect": false, "explanation": "While algebraic techniques are valid tools generally, L'Hopital's Rule specifically CAN be reapplied when the form remains indeterminate." },
+      { "label": "D", "text": "L'Hopital's Rule can only ever be applied exactly once, no matter what form the new limit takes", "isCorrect": false, "explanation": "L'Hopital's Rule can indeed be applied multiple times in succession, as long as each application still produces an indeterminate form beforehand." }
     ],
     "explanation": "L'Hopital's Rule can be applied repeatedly as long as each application still yields an indeterminate form.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
@@ -471,9 +471,9 @@
     "stem": "Related rates problems are a direct application of which core calculus concept covered in earlier units?",
     "choices": [
       { "label": "A", "text": "The Chain Rule, since each variable is treated as a function of time and differentiated accordingly", "isCorrect": true, "explanation": "Related rates rely on the Chain Rule, since each variable is implicitly a function of time." },
-      { "label": "B", "text": "The Intermediate Value Theorem", "isCorrect": false, "explanation": "The IVT is about the existence of function values between two points, unrelated to related rates problems." },
-      { "label": "C", "text": "The definition of a limit", "isCorrect": false, "explanation": "While limits underlie all of calculus, related rates problems specifically rely on differentiation techniques (the Chain Rule), not directly on limit evaluation." },
-      { "label": "D", "text": "The Power Rule alone, with no other differentiation rules needed", "isCorrect": false, "explanation": "While the Power Rule is often used within these problems, the Chain Rule is essential for correctly differentiating expressions with respect to time." }
+      { "label": "B", "text": "The Intermediate Value Theorem, since continuity links the variables", "isCorrect": false, "explanation": "The IVT is about the existence of function values between two points, unrelated to related rates problems." },
+      { "label": "C", "text": "The definition of a limit, applied separately to each variable", "isCorrect": false, "explanation": "While limits underlie all of calculus, related rates problems specifically rely on differentiation techniques (the Chain Rule), not directly on limit evaluation." },
+      { "label": "D", "text": "The Power Rule alone, with no other differentiation rules needed, since every term is a simple power of one variable", "isCorrect": false, "explanation": "While the Power Rule is often used within these problems, the Chain Rule is essential for correctly differentiating expressions with respect to time." }
     ],
     "explanation": "Related rates problems rely on the Chain Rule, treating each variable as an implicit function of time.",
     "conceptLink": "ap-calc/unit-4-contextual-applications-of-differentiation/related-rates",

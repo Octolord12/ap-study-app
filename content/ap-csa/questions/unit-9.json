@@ -38,8 +38,8 @@
     "difficulty": "medium",
     "stem": "What does a subclass automatically inherit from its superclass?",
     "choices": [
-      { "label": "A", "text": "Only private fields", "isCorrect": false, "explanation": "Private fields are NOT directly accessible/inherited in the usual sense from outside the declaring class, even by subclasses." },
-      { "label": "B", "text": "Only the constructor", "isCorrect": false, "explanation": "A subclass does not inherit the superclass's constructors; it can only call them via super()." },
+      { "label": "A", "text": "Only private fields of the superclass, and none of its methods", "isCorrect": false, "explanation": "Private fields are NOT directly accessible/inherited in the usual sense from outside the declaring class, even by subclasses." },
+      { "label": "B", "text": "Only the constructor of the superclass, with none of its fields", "isCorrect": false, "explanation": "A subclass does not inherit the superclass's constructors; it can only call them via super()." },
       { "label": "C", "text": "Public and protected fields and methods (not private ones)", "isCorrect": true, "explanation": "Inheritance gives a subclass access to the superclass's non-private members." },
       { "label": "D", "text": "Nothing; inheritance is just naming", "isCorrect": false, "explanation": "Inheritance genuinely gives the subclass access to non-private members of the superclass." }
     ],
@@ -70,10 +70,10 @@
     "difficulty": "hard",
     "stem": "Can a Java class extend more than one class directly?",
     "choices": [
-      { "label": "A", "text": "Yes, using commas to list multiple superclasses", "isCorrect": false, "explanation": "Java does not allow a class to extend multiple classes using commas; that would be multiple inheritance, which Java doesn't support for classes." },
+      { "label": "A", "text": "Yes, using commas to list multiple superclasses after the extends keyword, as in C++", "isCorrect": false, "explanation": "Java does not allow a class to extend multiple classes using commas; that would be multiple inheritance, which Java doesn't support for classes." },
       { "label": "B", "text": "No, Java only supports single inheritance for classes (one direct superclass)", "isCorrect": true, "explanation": "Every Java class can extend at most one other class directly." },
-      { "label": "C", "text": "Yes, but only up to 3 classes", "isCorrect": false, "explanation": "There's no such \"up to 3\" rule; Java strictly allows exactly one direct superclass." },
-      { "label": "D", "text": "Only if the classes are in the same package", "isCorrect": false, "explanation": "Being in the same package doesn't change this rule; single inheritance applies universally to classes." }
+      { "label": "C", "text": "Yes, but only up to 3 classes at a time", "isCorrect": false, "explanation": "There's no such \"up to 3\" rule; Java strictly allows exactly one direct superclass." },
+      { "label": "D", "text": "Only if all of the classes are in the same package", "isCorrect": false, "explanation": "Being in the same package doesn't change this rule; single inheritance applies universally to classes." }
     ],
     "explanation": "Java supports only single inheritance for classes -- a class can extend exactly one direct superclass.",
     "conceptLink": "ap-csa/unit-9-inheritance/superclasses-and-subclasses",
@@ -102,10 +102,10 @@
     "difficulty": "medium",
     "stem": "If class `Animal` has a public field `name`, and `Dog extends Animal`, can code inside `Dog`'s methods directly access `name`?",
     "choices": [
-      { "label": "A", "text": "No, subclasses can never access superclass fields", "isCorrect": false, "explanation": "Subclasses absolutely can access inherited public (and protected) fields directly." },
-      { "label": "B", "text": "Yes, since name is public (and would also be accessible if it were protected)", "isCorrect": true, "explanation": "A public or protected field is directly accessible from subclass code." },
-      { "label": "C", "text": "Only if Dog redeclares the field itself", "isCorrect": false, "explanation": "Redeclaring the field would actually create a separate, shadowing field, not access the inherited one." },
-      { "label": "D", "text": "Only through a getter method", "isCorrect": false, "explanation": "A getter is one way to access it, but direct access is also possible for a public or protected field." }
+      { "label": "A", "text": "No, subclasses can never access superclass fields, even public ones", "isCorrect": false, "explanation": "Subclasses absolutely can access inherited public (and protected) fields directly." },
+      { "label": "B", "text": "Yes, since name is public (it would also work if it were protected)", "isCorrect": true, "explanation": "A public or protected field is directly accessible from subclass code." },
+      { "label": "C", "text": "Only if Dog redeclares the field itself first", "isCorrect": false, "explanation": "Redeclaring the field would actually create a separate, shadowing field, not access the inherited one." },
+      { "label": "D", "text": "Only through a getter method, never directly", "isCorrect": false, "explanation": "A getter is one way to access it, but direct access is also possible for a public or protected field." }
     ],
     "explanation": "Since `name` is public, `Dog`'s methods can access it directly through inheritance.",
     "conceptLink": "ap-csa/unit-9-inheritance/superclasses-and-subclasses",
@@ -134,10 +134,10 @@
     "difficulty": "medium",
     "stem": "If a subclass constructor doesn't explicitly call `super(...)`, what happens?",
     "choices": [
-      { "label": "A", "text": "A compile error always occurs", "isCorrect": false, "explanation": "This doesn't always cause a compile error; Java handles the common case automatically (an error only occurs if the superclass has no accessible no-arg constructor)." },
-      { "label": "B", "text": "Java automatically inserts a call to the superclass's no-argument constructor as the first statement", "isCorrect": true, "explanation": "Java implicitly adds a call to super() if the subclass constructor doesn't provide one explicitly." },
-      { "label": "C", "text": "The object is created without initializing any inherited fields", "isCorrect": false, "explanation": "The automatically inserted super() call does initialize the superclass's part of the object; it's not skipped." },
-      { "label": "D", "text": "The subclass cannot be instantiated", "isCorrect": false, "explanation": "The subclass can be instantiated normally in this case." }
+      { "label": "A", "text": "A compile error always occurs, since the call is missing", "isCorrect": false, "explanation": "This doesn't always cause a compile error; Java handles the common case automatically (an error only occurs if the superclass has no accessible no-arg constructor)." },
+      { "label": "B", "text": "Java automatically inserts a call to the superclass's no-argument constructor first", "isCorrect": true, "explanation": "Java implicitly adds a call to super() if the subclass constructor doesn't provide one explicitly." },
+      { "label": "C", "text": "The object is created without initializing any inherited fields, leaving them undefined", "isCorrect": false, "explanation": "The automatically inserted super() call does initialize the superclass's part of the object; it's not skipped." },
+      { "label": "D", "text": "The subclass cannot be instantiated until super is called", "isCorrect": false, "explanation": "The subclass can be instantiated normally in this case." }
     ],
     "explanation": "Java automatically inserts an implicit `super()` call as the first statement if the constructor doesn't provide one.",
     "conceptLink": "ap-csa/unit-9-inheritance/subclass-constructors",
@@ -182,10 +182,10 @@
     "difficulty": "medium",
     "stem": "Why must `super(...)`, if used, be the first statement in a subclass constructor?",
     "choices": [
-      { "label": "A", "text": "It's just a stylistic convention, not a real requirement", "isCorrect": false, "explanation": "This is a strict, enforced Java language rule, not just a style guideline." },
-      { "label": "B", "text": "The superclass portion of the object must be fully initialized before the subclass's own initialization code runs", "isCorrect": true, "explanation": "Initialization must proceed from the most general (superclass) to the most specific (subclass) part of the object." },
-      { "label": "C", "text": "It has no particular reason; it could be placed anywhere", "isCorrect": false, "explanation": "There is a specific, important reason: initialization order must proceed from superclass to subclass." },
-      { "label": "D", "text": "It only matters for static methods", "isCorrect": false, "explanation": "This rule is about constructors, unrelated to static methods." }
+      { "label": "A", "text": "It's just a stylistic convention, not a real requirement, and the compiler accepts it anywhere in the body", "isCorrect": false, "explanation": "This is a strict, enforced Java language rule, not just a style guideline." },
+      { "label": "B", "text": "The superclass part of the object must be fully initialized before the subclass's own initialization code runs", "isCorrect": true, "explanation": "Initialization must proceed from the most general (superclass) to the most specific (subclass) part of the object." },
+      { "label": "C", "text": "It has no particular reason; it could be placed anywhere in the constructor body", "isCorrect": false, "explanation": "There is a specific, important reason: initialization order must proceed from superclass to subclass." },
+      { "label": "D", "text": "It only matters for static methods that are called from constructors", "isCorrect": false, "explanation": "This rule is about constructors, unrelated to static methods." }
     ],
     "explanation": "Java enforces that `super(...)` be the first statement, ensuring the superclass part of the object is initialized before the subclass's own code runs.",
     "conceptLink": "ap-csa/unit-9-inheritance/subclass-constructors",
@@ -198,10 +198,10 @@
     "difficulty": "hard",
     "stem": "What happens if `Animal` (a superclass) has only a constructor that takes a `String` parameter, and `Dog extends Animal` provides no constructor at all?",
     "choices": [
-      { "label": "A", "text": "Nothing; Java provides a working default constructor for Dog automatically", "isCorrect": false, "explanation": "Java cannot provide a working automatic constructor here, since it would need to call a no-arg super() that doesn't exist." },
-      { "label": "B", "text": "It is a compile error, because Java's automatically inserted super() call needs a no-argument Animal constructor, which doesn't exist", "isCorrect": true, "explanation": "Since Animal has no no-arg constructor, the implicit super() call that Java would insert fails to compile." },
-      { "label": "C", "text": "Dog silently ignores Animal's constructor requirement", "isCorrect": false, "explanation": "The compiler does not silently ignore this; it raises an error at compile time." },
-      { "label": "D", "text": "It works fine at compile time but crashes at runtime", "isCorrect": false, "explanation": "This is a compile-time error, not a runtime crash; the code would never even successfully compile." }
+      { "label": "A", "text": "Nothing; Java provides a working default constructor for Dog automatically, and fills in a String for Animal", "isCorrect": false, "explanation": "Java cannot provide a working automatic constructor here, since it would need to call a no-arg super() that doesn't exist." },
+      { "label": "B", "text": "It is a compile error, because the automatic super() call needs a no-argument Animal constructor, which doesn't exist", "isCorrect": true, "explanation": "Since Animal has no no-arg constructor, the implicit super() call that Java would insert fails to compile." },
+      { "label": "C", "text": "Dog silently ignores Animal's constructor requirement and skips the call to the superclass", "isCorrect": false, "explanation": "The compiler does not silently ignore this; it raises an error at compile time." },
+      { "label": "D", "text": "It works fine at compile time but crashes at runtime, when the object is created", "isCorrect": false, "explanation": "This is a compile-time error, not a runtime crash; the code would never even successfully compile." }
     ],
     "explanation": "Without a no-arg constructor in `Animal`, Java's implicit `super()` call fails, causing a compile error.",
     "conceptLink": "ap-csa/unit-9-inheritance/subclass-constructors",
@@ -214,10 +214,10 @@
     "difficulty": "medium",
     "stem": "Given the scenario in the previous question (Animal only has a String constructor), what must Dog do to compile successfully?",
     "choices": [
-      { "label": "A", "text": "Nothing extra is needed", "isCorrect": false, "explanation": "Without an explicit constructor calling super with a String, the code won't compile." },
-      { "label": "B", "text": "Dog must explicitly define a constructor that calls super(someString) with an appropriate argument", "isCorrect": true, "explanation": "Providing an explicit constructor that calls the existing String-based superclass constructor resolves the issue." },
-      { "label": "C", "text": "Dog must be declared abstract", "isCorrect": false, "explanation": "Declaring Dog abstract doesn't resolve the missing no-arg superclass constructor issue." },
-      { "label": "D", "text": "Dog must not extend Animal", "isCorrect": false, "explanation": "The fix is to add a proper constructor, not to remove the inheritance relationship entirely." }
+      { "label": "A", "text": "Nothing extra is needed, because Java fills in the String", "isCorrect": false, "explanation": "Without an explicit constructor calling super with a String, the code won't compile." },
+      { "label": "B", "text": "Dog must explicitly define a constructor that calls super(someString) with a String argument", "isCorrect": true, "explanation": "Providing an explicit constructor that calls the existing String-based superclass constructor resolves the issue." },
+      { "label": "C", "text": "Dog must be declared abstract, so it is not instantiated", "isCorrect": false, "explanation": "Declaring Dog abstract doesn't resolve the missing no-arg superclass constructor issue." },
+      { "label": "D", "text": "Dog must not extend Animal at all, and should copy its fields and methods into its own class instead", "isCorrect": false, "explanation": "The fix is to add a proper constructor, not to remove the inheritance relationship entirely." }
     ],
     "explanation": "Dog must define a constructor that explicitly calls `super(someString)` to satisfy Animal's only available constructor.",
     "conceptLink": "ap-csa/unit-9-inheritance/subclass-constructors",
@@ -230,10 +230,10 @@
     "difficulty": "medium",
     "stem": "Can a subclass constructor use both `super(...)` and initialize its own additional fields?",
     "choices": [
-      { "label": "A", "text": "No, a constructor can only do one or the other", "isCorrect": false, "explanation": "A constructor can absolutely do both: initialize inherited state via super(), then its own additional state." },
+      { "label": "A", "text": "No, a constructor can only do one or the other, not both", "isCorrect": false, "explanation": "A constructor can absolutely do both: initialize inherited state via super(), then its own additional state." },
       { "label": "B", "text": "Yes -- call super(...) first, then initialize the subclass's own fields", "isCorrect": true, "explanation": "This is the standard pattern: initialize the superclass portion first, then the subclass's own additional fields." },
-      { "label": "C", "text": "Yes, but only if super() is called last", "isCorrect": false, "explanation": "super(), if called explicitly, must be the FIRST statement, not the last." },
-      { "label": "D", "text": "No, subclasses cannot have their own fields", "isCorrect": false, "explanation": "Subclasses can absolutely declare and initialize their own additional fields beyond what they inherit." }
+      { "label": "C", "text": "Yes, but only if super() is called last in the constructor", "isCorrect": false, "explanation": "super(), if called explicitly, must be the FIRST statement, not the last." },
+      { "label": "D", "text": "No, subclasses cannot have their own fields, only the ones that they inherit from the superclass", "isCorrect": false, "explanation": "Subclasses can absolutely declare and initialize their own additional fields beyond what they inherit." }
     ],
     "explanation": "A subclass constructor typically calls `super(...)` first, then initializes any additional fields it declares.",
     "conceptLink": "ap-csa/unit-9-inheritance/subclass-constructors",
@@ -246,10 +246,10 @@
     "difficulty": "easy",
     "stem": "What does it mean for a subclass to \"override\" a method?",
     "choices": [
-      { "label": "A", "text": "The subclass deletes the method from the superclass", "isCorrect": false, "explanation": "Overriding doesn't delete anything from the superclass; the original method still exists there." },
-      { "label": "B", "text": "The subclass provides a new implementation of a method that has the same signature as one in the superclass", "isCorrect": true, "explanation": "Overriding replaces the inherited behavior with a new implementation matching the same method signature." },
-      { "label": "C", "text": "The subclass renames the method", "isCorrect": false, "explanation": "Overriding keeps the exact same method name and signature; it doesn't rename anything." },
-      { "label": "D", "text": "The subclass calls the method twice", "isCorrect": false, "explanation": "Overriding is about providing a new implementation, not about how many times a method is called." }
+      { "label": "A", "text": "The subclass deletes the method from the superclass, so that other subclasses of it no longer have it", "isCorrect": false, "explanation": "Overriding doesn't delete anything from the superclass; the original method still exists there." },
+      { "label": "B", "text": "The subclass provides a new implementation of a method with the same signature as one in the superclass", "isCorrect": true, "explanation": "Overriding replaces the inherited behavior with a new implementation matching the same method signature." },
+      { "label": "C", "text": "The subclass renames the method so that it has a different name", "isCorrect": false, "explanation": "Overriding keeps the exact same method name and signature; it doesn't rename anything." },
+      { "label": "D", "text": "The subclass calls the method twice, once for itself and once for the parent", "isCorrect": false, "explanation": "Overriding is about providing a new implementation, not about how many times a method is called." }
     ],
     "explanation": "Overriding means a subclass provides its own implementation of a method matching a superclass method's signature.",
     "conceptLink": "ap-csa/unit-9-inheritance/overriding-methods",
@@ -278,10 +278,10 @@
     "difficulty": "medium",
     "stem": "For a method to properly override a superclass method, what must match between the two?",
     "choices": [
-      { "label": "A", "text": "Only the method name", "isCorrect": false, "explanation": "The name alone isn't sufficient; the parameter list must also match, or it becomes overloading instead of overriding." },
+      { "label": "A", "text": "Only the method name, and nothing else needs to match, even the number of parameters", "isCorrect": false, "explanation": "The name alone isn't sufficient; the parameter list must also match, or it becomes overloading instead of overriding." },
       { "label": "B", "text": "The method name and parameter list (the signature); the return type must also be compatible", "isCorrect": true, "explanation": "Overriding requires the method's name and parameters to match exactly, with a compatible return type." },
-      { "label": "C", "text": "Only the return type", "isCorrect": false, "explanation": "The return type alone doesn't determine overriding; the full signature (name + parameters) must match." },
-      { "label": "D", "text": "Nothing needs to match; any method in a subclass overrides any method in the superclass", "isCorrect": false, "explanation": "Overriding requires a specific matching signature; it's not just any method matching any other." }
+      { "label": "C", "text": "Only the return type, and nothing else needs to match, not even the name", "isCorrect": false, "explanation": "The return type alone doesn't determine overriding; the full signature (name + parameters) must match." },
+      { "label": "D", "text": "Nothing needs to match; any method in a subclass overrides any method in the superclass, whatever its name", "isCorrect": false, "explanation": "Overriding requires a specific matching signature; it's not just any method matching any other." }
     ],
     "explanation": "Overriding requires the method's name and parameter list to match, with a compatible return type.",
     "conceptLink": "ap-csa/unit-9-inheritance/overriding-methods",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "Why might a subclass use `super.methodName()` inside its own override of that method?",
     "choices": [
-      { "label": "A", "text": "It's required in every override", "isCorrect": false, "explanation": "Using super.methodName() is optional; many overrides fully replace the superclass's behavior with no such call." },
+      { "label": "A", "text": "It's required in every override, or the code will not compile", "isCorrect": false, "explanation": "Using super.methodName() is optional; many overrides fully replace the superclass's behavior with no such call." },
       { "label": "B", "text": "To reuse/extend the superclass's behavior rather than completely replacing it", "isCorrect": true, "explanation": "Calling super.methodName() lets the override build on top of the original behavior instead of discarding it." },
-      { "label": "C", "text": "It has no effect and is purely decorative", "isCorrect": false, "explanation": "super.methodName() actually executes the superclass's version and can affect the overall behavior." },
-      { "label": "D", "text": "It deletes the superclass's version of the method", "isCorrect": false, "explanation": "Calling super.methodName() does not delete anything; the superclass's version remains fully intact." }
+      { "label": "C", "text": "It has no effect and is purely decorative, like a comment", "isCorrect": false, "explanation": "super.methodName() actually executes the superclass's version and can affect the overall behavior." },
+      { "label": "D", "text": "It deletes the superclass's version of the method for all objects", "isCorrect": false, "explanation": "Calling super.methodName() does not delete anything; the superclass's version remains fully intact." }
     ],
     "explanation": "`super.methodName()` lets an override reuse and build upon the superclass's original behavior.",
     "conceptLink": "ap-csa/unit-9-inheritance/overriding-methods",
@@ -342,10 +342,10 @@
     "difficulty": "hard",
     "stem": "What is the benefit of using `@Override` on a method, even though it's optional?",
     "choices": [
-      { "label": "A", "text": "It makes the method run faster", "isCorrect": false, "explanation": "@Override has no effect on runtime performance." },
-      { "label": "B", "text": "The compiler checks that the method actually overrides a superclass method, catching typos (e.g. a misspelled method name) at compile time", "isCorrect": true, "explanation": "If the annotated method doesn't actually match a superclass method's signature, the compiler reports an error, catching mistakes early." },
-      { "label": "C", "text": "It automatically calls the superclass method too", "isCorrect": false, "explanation": "@Override doesn't automatically call anything; it's purely a compile-time check." },
-      { "label": "D", "text": "It changes the method's access level", "isCorrect": false, "explanation": "@Override doesn't affect a method's access modifier (public/private/etc.)." }
+      { "label": "A", "text": "It makes the method run faster, because the compiler can skip the dynamic lookup at runtime", "isCorrect": false, "explanation": "@Override has no effect on runtime performance." },
+      { "label": "B", "text": "The compiler checks that the method really overrides a superclass method, catching typos (e.g., a misspelled name) at compile time", "isCorrect": true, "explanation": "If the annotated method doesn't actually match a superclass method's signature, the compiler reports an error, catching mistakes early." },
+      { "label": "C", "text": "It automatically calls the superclass method too, before the override's own body runs", "isCorrect": false, "explanation": "@Override doesn't automatically call anything; it's purely a compile-time check." },
+      { "label": "D", "text": "It changes the method's access level to public, whatever it was before", "isCorrect": false, "explanation": "@Override doesn't affect a method's access modifier (public/private/etc.)." }
     ],
     "explanation": "`@Override` lets the compiler verify the method genuinely overrides a superclass method, catching mistakes like typos.",
     "conceptLink": "ap-csa/unit-9-inheritance/overriding-methods",
@@ -374,10 +374,10 @@
     "difficulty": "easy",
     "stem": "What is polymorphism, in the context of overriding methods?",
     "choices": [
-      { "label": "A", "text": "The ability of a variable to hold values of different, unrelated primitive types", "isCorrect": false, "explanation": "This describes something closer to type flexibility with primitives, which isn't what polymorphism means here." },
-      { "label": "B", "text": "The ability for a superclass-typed reference to call an overridden method and have the subclass's specific version execute", "isCorrect": true, "explanation": "Polymorphism lets code written against a superclass type automatically use each object's actual, more specific behavior." },
-      { "label": "C", "text": "The ability to have multiple classes with the same name", "isCorrect": false, "explanation": "Java doesn't allow multiple classes with the exact same name in the same context; that's unrelated to polymorphism." },
-      { "label": "D", "text": "The ability to delete methods at runtime", "isCorrect": false, "explanation": "Polymorphism doesn't involve deleting methods; it's about which implementation executes." }
+      { "label": "A", "text": "The ability of a variable to hold values of different, unrelated primitive types, such as int and boolean", "isCorrect": false, "explanation": "This describes something closer to type flexibility with primitives, which isn't what polymorphism means here." },
+      { "label": "B", "text": "A superclass-typed reference can call an overridden method and the subclass's specific version executes", "isCorrect": true, "explanation": "Polymorphism lets code written against a superclass type automatically use each object's actual, more specific behavior." },
+      { "label": "C", "text": "The ability to have multiple classes with the same name in one package", "isCorrect": false, "explanation": "Java doesn't allow multiple classes with the exact same name in the same context; that's unrelated to polymorphism." },
+      { "label": "D", "text": "The ability to delete methods at runtime, once they are no longer needed", "isCorrect": false, "explanation": "Polymorphism doesn't involve deleting methods; it's about which implementation executes." }
     ],
     "explanation": "Polymorphism allows a superclass-typed reference to invoke overridden methods, with the subclass's actual version running.",
     "conceptLink": "ap-csa/unit-9-inheritance/polymorphism",
@@ -406,10 +406,10 @@
     "difficulty": "hard",
     "stem": "In the previous example, why does `a.makeSound()` print \"Bark\" even though `a` is declared as type `Animal`?",
     "choices": [
-      { "label": "A", "text": "Java always uses the declared (compile-time) type to decide which method runs", "isCorrect": false, "explanation": "This is backwards; Java uses the actual runtime type of the object for overridden methods, not the declared compile-time type." },
-      { "label": "B", "text": "Java uses the actual (runtime) type of the object to decide which overridden method runs -- this is called dynamic method dispatch", "isCorrect": true, "explanation": "Overridden instance methods are resolved based on the object's actual type at runtime, not the reference's declared type." },
-      { "label": "C", "text": "It's a coincidence and unpredictable", "isCorrect": false, "explanation": "This is entirely predictable and well-defined behavior in Java, governed by dynamic dispatch, not chance." },
-      { "label": "D", "text": "The declared type is changed automatically when the object is assigned", "isCorrect": false, "explanation": "The declared type of the variable a remains Animal; it doesn't change, but the method call still resolves based on the object's actual type." }
+      { "label": "A", "text": "Java always uses the declared (compile-time) type to decide which method runs, never the type of the object itself", "isCorrect": false, "explanation": "This is backwards; Java uses the actual runtime type of the object for overridden methods, not the declared compile-time type." },
+      { "label": "B", "text": "Java uses the actual (runtime) type of the object to decide which overridden method runs: dynamic method dispatch", "isCorrect": true, "explanation": "Overridden instance methods are resolved based on the object's actual type at runtime, not the reference's declared type." },
+      { "label": "C", "text": "It's a coincidence and unpredictable, and could print something else on another run", "isCorrect": false, "explanation": "This is entirely predictable and well-defined behavior in Java, governed by dynamic dispatch, not chance." },
+      { "label": "D", "text": "The declared type is changed automatically when the object is assigned to the variable", "isCorrect": false, "explanation": "The declared type of the variable a remains Animal; it doesn't change, but the method call still resolves based on the object's actual type." }
     ],
     "explanation": "This is dynamic method dispatch: overridden methods are resolved using the object's actual runtime type.",
     "conceptLink": "ap-csa/unit-9-inheritance/polymorphism",
@@ -422,10 +422,10 @@
     "difficulty": "medium",
     "stem": "Given `Animal a = new Dog();`, which of the following can `a` be used to call?",
     "choices": [
-      { "label": "A", "text": "Only methods declared in Animal, but the actual behavior may come from Dog's overrides", "isCorrect": true, "explanation": "The compiler restricts a to Animal's interface, while dynamic dispatch determines which actual implementation runs." },
-      { "label": "B", "text": "Any method defined anywhere in Dog, including ones not in Animal", "isCorrect": false, "explanation": "A Dog-specific method not declared (or overridden) in Animal cannot be called through an Animal-typed reference without casting." },
-      { "label": "C", "text": "Only methods defined directly in Dog, not inherited ones", "isCorrect": false, "explanation": "This is backwards; a, being declared as Animal, is restricted to Animal's interface, though overridden behavior still comes from Dog." },
-      { "label": "D", "text": "No methods at all", "isCorrect": false, "explanation": "a can call any method that Animal declares (inherited or overridden); it's not restricted to zero methods." }
+      { "label": "A", "text": "Only methods declared in Animal, though the behavior may come from Dog's overrides", "isCorrect": true, "explanation": "The compiler restricts a to Animal's interface, while dynamic dispatch determines which actual implementation runs." },
+      { "label": "B", "text": "Any method defined anywhere in Dog, including ones that Animal does not declare at all", "isCorrect": false, "explanation": "A Dog-specific method not declared (or overridden) in Animal cannot be called through an Animal-typed reference without casting." },
+      { "label": "C", "text": "Only methods defined directly in Dog, not the inherited ones", "isCorrect": false, "explanation": "This is backwards; a, being declared as Animal, is restricted to Animal's interface, though overridden behavior still comes from Dog." },
+      { "label": "D", "text": "No methods at all, since the object type is unknown", "isCorrect": false, "explanation": "a can call any method that Animal declares (inherited or overridden); it's not restricted to zero methods." }
     ],
     "explanation": "The compiler restricts calls through `a` to methods declared in `Animal`, while the actual (possibly overridden) implementation comes from the runtime type.",
     "conceptLink": "ap-csa/unit-9-inheritance/polymorphism",
@@ -438,10 +438,10 @@
     "difficulty": "medium",
     "stem": "What is the benefit of writing code like `public void feedAll(Animal[] animals)` that operates on the superclass type, rather than writing separate methods for each subclass?",
     "choices": [
-      { "label": "A", "text": "It has no real benefit", "isCorrect": false, "explanation": "There's a substantial benefit: code reuse and flexibility across all current and future subclasses." },
-      { "label": "B", "text": "The single method can work with any subclass of Animal (Dog, Cat, etc.) without needing to know the specific subclass in advance", "isCorrect": true, "explanation": "Writing code against the superclass type lets it work polymorphically with any current or future subclass." },
-      { "label": "C", "text": "It makes the array store more elements", "isCorrect": false, "explanation": "Using a superclass type as the parameter doesn't affect how many elements an array can hold." },
-      { "label": "D", "text": "It prevents any subclass-specific behavior from ever running", "isCorrect": false, "explanation": "Subclass-specific overridden behavior still runs correctly via dynamic dispatch, even when using the superclass type." }
+      { "label": "A", "text": "It has no real benefit, since each subclass would still need its own method written separately", "isCorrect": false, "explanation": "There's a substantial benefit: code reuse and flexibility across all current and future subclasses." },
+      { "label": "B", "text": "One method can work with any subclass of Animal (Dog, Cat, etc.) without knowing the specific subclass in advance", "isCorrect": true, "explanation": "Writing code against the superclass type lets it work polymorphically with any current or future subclass." },
+      { "label": "C", "text": "It makes the array store more elements than it otherwise could, because the type is more general", "isCorrect": false, "explanation": "Using a superclass type as the parameter doesn't affect how many elements an array can hold." },
+      { "label": "D", "text": "It prevents any subclass-specific behavior from ever running, since it treats all as Animals", "isCorrect": false, "explanation": "Subclass-specific overridden behavior still runs correctly via dynamic dispatch, even when using the superclass type." }
     ],
     "explanation": "Writing code against the superclass type lets a single method work polymorphically with any subclass.",
     "conceptLink": "ap-csa/unit-9-inheritance/polymorphism",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "What does the `instanceof` operator check?",
     "choices": [
-      { "label": "A", "text": "Whether two objects have equal field values", "isCorrect": false, "explanation": "Comparing field values is done with methods like equals(), not instanceof." },
+      { "label": "A", "text": "Whether two objects have equal field values for every one of their fields", "isCorrect": false, "explanation": "Comparing field values is done with methods like equals(), not instanceof." },
       { "label": "B", "text": "Whether an object is an instance of a specified class (or subclass of it)", "isCorrect": true, "explanation": "instanceof checks whether an object's actual type matches (or is a subtype of) the given class." },
-      { "label": "C", "text": "Whether a variable has been initialized", "isCorrect": false, "explanation": "instanceof checks an object's type, not whether a variable happens to be initialized." },
-      { "label": "D", "text": "Whether a method has been overridden", "isCorrect": false, "explanation": "instanceof doesn't check anything about method overriding; it's purely about object type." }
+      { "label": "C", "text": "Whether a variable has been initialized before it is used", "isCorrect": false, "explanation": "instanceof checks an object's type, not whether a variable happens to be initialized." },
+      { "label": "D", "text": "Whether a method has been overridden by a subclass", "isCorrect": false, "explanation": "instanceof doesn't check anything about method overriding; it's purely about object type." }
     ],
     "explanation": "`instanceof` checks whether an object is an instance of a specified class or one of its subclasses.",
     "conceptLink": "ap-csa/unit-9-inheritance/polymorphism",

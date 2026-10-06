@@ -7,9 +7,9 @@
     "stem": "What does the notation $\\lim_{x \\to c} f(x) = L$ mean?",
     "choices": [
       { "label": "A", "text": "As x approaches c, f(x) approaches L", "isCorrect": true, "explanation": "A limit describes the value f(x) gets arbitrarily close to as x gets arbitrarily close to c." },
-      { "label": "B", "text": "f(c) = L exactly", "isCorrect": false, "explanation": "The limit describes behavior NEAR c, not necessarily the actual value AT c (which might be undefined or different)." },
-      { "label": "C", "text": "f is undefined at c", "isCorrect": false, "explanation": "A limit existing doesn't mean f is undefined at c; f could be defined or undefined there, the limit is about nearby behavior." },
-      { "label": "D", "text": "The derivative of f at c is L", "isCorrect": false, "explanation": "This describes a derivative, a different concept from a limit." }
+      { "label": "B", "text": "f(c) = L exactly, at the point x = c", "isCorrect": false, "explanation": "The limit describes behavior NEAR c, not necessarily the actual value AT c (which might be undefined or different)." },
+      { "label": "C", "text": "f is undefined at c, so L is only a placeholder", "isCorrect": false, "explanation": "A limit existing doesn't mean f is undefined at c; f could be defined or undefined there, the limit is about nearby behavior." },
+      { "label": "D", "text": "The derivative of f at c is L, the slope at that point", "isCorrect": false, "explanation": "This describes a derivative, a different concept from a limit." }
     ],
     "explanation": "$\\lim_{x \\to c} f(x) = L$ means f(x) gets arbitrarily close to L as x gets arbitrarily close to c.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
@@ -86,10 +86,10 @@
     "difficulty": "medium",
     "stem": "Which statement correctly describes the relationship between one-sided limits and the existence of a two-sided limit at x=c?",
     "choices": [
-      { "label": "A", "text": "A two-sided limit can exist even if the one-sided limits disagree", "isCorrect": false, "explanation": "This is false; if one-sided limits disagree, the two-sided limit does NOT exist." },
+      { "label": "A", "text": "A two-sided limit can exist even if the one-sided limits disagree, as long as one of them is defined", "isCorrect": false, "explanation": "This is false; if one-sided limits disagree, the two-sided limit does NOT exist." },
       { "label": "B", "text": "The two-sided limit exists if and only if both one-sided limits exist and are equal to each other", "isCorrect": true, "explanation": "This is the precise condition for a two-sided limit to exist." },
-      { "label": "C", "text": "One-sided limits are irrelevant to two-sided limits", "isCorrect": false, "explanation": "One-sided limits are directly relevant; they are precisely what determines whether the two-sided limit exists." },
-      { "label": "D", "text": "A two-sided limit always exists regardless of one-sided behavior", "isCorrect": false, "explanation": "This is false; the two-sided limit can fail to exist, particularly when one-sided limits disagree or don't exist." }
+      { "label": "C", "text": "One-sided limits are irrelevant to two-sided limits, which are computed separately", "isCorrect": false, "explanation": "One-sided limits are directly relevant; they are precisely what determines whether the two-sided limit exists." },
+      { "label": "D", "text": "A two-sided limit always exists regardless of one-sided behavior, as long as f is defined", "isCorrect": false, "explanation": "This is false; the two-sided limit can fail to exist, particularly when one-sided limits disagree or don't exist." }
     ],
     "explanation": "A two-sided limit exists exactly when both one-sided limits exist and are equal.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/limit-definition-and-notation",
@@ -199,9 +199,9 @@
     "stem": "For a function f to be continuous at x=c, which THREE conditions must all be satisfied?",
     "choices": [
       { "label": "A", "text": "f(c) is defined, $\\lim_{x \\to c} f(x)$ exists, and $\\lim_{x \\to c} f(x) = f(c)$", "isCorrect": true, "explanation": "All three conditions together define continuity at a point." },
-      { "label": "B", "text": "Only that f(c) is defined", "isCorrect": false, "explanation": "f(c) being defined alone is not sufficient; the limit must also exist and match f(c)." },
-      { "label": "C", "text": "Only that the limit exists", "isCorrect": false, "explanation": "The limit existing alone is not sufficient; f(c) must also be defined and equal to that limit." },
-      { "label": "D", "text": "f must be a polynomial", "isCorrect": false, "explanation": "Continuity is a general property not restricted to polynomials; many non-polynomial functions can also be continuous." }
+      { "label": "B", "text": "Only that f(c) is defined, since a value at the point is all that continuity requires", "isCorrect": false, "explanation": "f(c) being defined alone is not sufficient; the limit must also exist and match f(c)." },
+      { "label": "C", "text": "Only that the limit exists, since the value at the point itself does not matter", "isCorrect": false, "explanation": "The limit existing alone is not sufficient; f(c) must also be defined and equal to that limit." },
+      { "label": "D", "text": "f must be a polynomial, since only polynomials can be continuous at a point", "isCorrect": false, "explanation": "Continuity is a general property not restricted to polynomials; many non-polynomial functions can also be continuous." }
     ],
     "explanation": "Continuity at x=c requires f(c) to be defined, the limit to exist, and the two to be equal.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
@@ -215,9 +215,9 @@
     "stem": "Given $f(x) = x^2$ for $x \\neq 3$ and $f(3) = 10$, is f continuous at x=3?",
     "choices": [
       { "label": "A", "text": "No, because the limit does not equal f(3)", "isCorrect": true, "explanation": "The limit as x approaches 3 is 9 (from x^2), but f(3) = 10, so they don't match." },
-      { "label": "B", "text": "Yes, because f(3) is defined", "isCorrect": false, "explanation": "f(3) being defined alone isn't sufficient for continuity; it must also match the limit's value." },
-      { "label": "C", "text": "Yes, because the limit exists", "isCorrect": false, "explanation": "The limit existing alone isn't sufficient; it must specifically equal f(3), which it does not here (9 ≠ 10)." },
-      { "label": "D", "text": "No, because f(3) is undefined", "isCorrect": false, "explanation": "f(3) is actually defined (it equals 10); the problem is that this defined value doesn't match the limit." }
+      { "label": "B", "text": "Yes, because f(3) is defined and equals 10", "isCorrect": false, "explanation": "f(3) being defined alone isn't sufficient for continuity; it must also match the limit's value." },
+      { "label": "C", "text": "Yes, because the limit exists as x approaches 3", "isCorrect": false, "explanation": "The limit existing alone isn't sufficient; it must specifically equal f(3), which it does not here (9 ≠ 10)." },
+      { "label": "D", "text": "No, because f(3) is undefined at that point", "isCorrect": false, "explanation": "f(3) is actually defined (it equals 10); the problem is that this defined value doesn't match the limit." }
     ],
     "explanation": "The limit as x approaches 3 is 9, but f(3) = 10, so f is not continuous at x=3.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
@@ -280,8 +280,8 @@
     "choices": [
       { "label": "A", "text": "f has no breaks, jumps, or holes anywhere within [a, b]", "isCorrect": true, "explanation": "This is the intuitive meaning of continuity on an interval: the graph can be drawn without lifting your pencil." },
       { "label": "B", "text": "f must be a straight line on [a, b]", "isCorrect": false, "explanation": "Continuity doesn't require a function to be linear; many continuous functions are curved, not straight." },
-      { "label": "C", "text": "f must be increasing on all of [a, b]", "isCorrect": false, "explanation": "Continuity doesn't require a function to be increasing; a continuous function can increase, decrease, or do both." },
-      { "label": "D", "text": "f is undefined at the endpoints a and b", "isCorrect": false, "explanation": "For f to be continuous on the CLOSED interval [a,b], f must actually be defined (and well-behaved) at the endpoints a and b." }
+      { "label": "C", "text": "f must be increasing on all of [a, b], never turning around", "isCorrect": false, "explanation": "Continuity doesn't require a function to be increasing; a continuous function can increase, decrease, or do both." },
+      { "label": "D", "text": "f is undefined at the endpoints a and b, where the graph stops", "isCorrect": false, "explanation": "For f to be continuous on the CLOSED interval [a,b], f must actually be defined (and well-behaved) at the endpoints a and b." }
     ],
     "explanation": "Continuity on [a,b] means f has no breaks, jumps, or holes anywhere in that interval.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
@@ -327,9 +327,9 @@
     "stem": "A vertical asymptote of a function typically occurs at values of x where what condition is met (for a rational function in lowest terms)?",
     "choices": [
       { "label": "A", "text": "The denominator equals zero (and the numerator does not simultaneously equal zero there)", "isCorrect": true, "explanation": "A vertical asymptote occurs where the denominator is zero, causing the function to grow unboundedly, as long as the numerator isn't also zero there." },
-      { "label": "B", "text": "The numerator equals zero", "isCorrect": false, "explanation": "The numerator equaling zero (with a nonzero denominator) typically corresponds to a ZERO/root of the function, not a vertical asymptote." },
-      { "label": "C", "text": "The function is at its maximum value", "isCorrect": false, "explanation": "A vertical asymptote isn't about the function reaching a maximum value; it involves unbounded growth, not a peak." },
-      { "label": "D", "text": "x equals zero", "isCorrect": false, "explanation": "Vertical asymptotes can occur at any x-value where the denominator is zero, not specifically at x=0." }
+      { "label": "B", "text": "The numerator equals zero, so the whole fraction equals zero there", "isCorrect": false, "explanation": "The numerator equaling zero (with a nonzero denominator) typically corresponds to a ZERO/root of the function, not a vertical asymptote." },
+      { "label": "C", "text": "The function is at its maximum value, so the graph peaks there", "isCorrect": false, "explanation": "A vertical asymptote isn't about the function reaching a maximum value; it involves unbounded growth, not a peak." },
+      { "label": "D", "text": "x equals zero, since the function is undefined at the origin", "isCorrect": false, "explanation": "Vertical asymptotes can occur at any x-value where the denominator is zero, not specifically at x=0." }
     ],
     "explanation": "A vertical asymptote occurs where the denominator equals zero and the numerator does not.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
@@ -359,9 +359,9 @@
     "stem": "A horizontal asymptote of a function describes what kind of behavior?",
     "choices": [
       { "label": "A", "text": "The function's behavior as x approaches positive or negative infinity", "isCorrect": true, "explanation": "A horizontal asymptote describes the function's long-run (end) behavior as x grows very large or very negative." },
-      { "label": "B", "text": "The function's behavior at a single specific finite x-value", "isCorrect": false, "explanation": "This describes a vertical asymptote or a specific point's behavior, not a horizontal asymptote, which concerns end behavior." },
-      { "label": "C", "text": "Points where the function crosses the x-axis", "isCorrect": false, "explanation": "x-intercepts (where the function equals 0) are a different concept from horizontal asymptotes." },
-      { "label": "D", "text": "The function's maximum height", "isCorrect": false, "explanation": "A horizontal asymptote describes the function's long-run trend, not necessarily its highest point." }
+      { "label": "B", "text": "The function's behavior at a single specific finite x-value, such as x = 0", "isCorrect": false, "explanation": "This describes a vertical asymptote or a specific point's behavior, not a horizontal asymptote, which concerns end behavior." },
+      { "label": "C", "text": "Points where the function crosses the x-axis or touches it", "isCorrect": false, "explanation": "x-intercepts (where the function equals 0) are a different concept from horizontal asymptotes." },
+      { "label": "D", "text": "The function's maximum height over the whole domain", "isCorrect": false, "explanation": "A horizontal asymptote describes the function's long-run trend, not necessarily its highest point." }
     ],
     "explanation": "A horizontal asymptote describes a function's behavior as x approaches positive or negative infinity.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/infinite-limits-and-asymptotes",
@@ -391,9 +391,9 @@
     "stem": "What does the Intermediate Value Theorem (IVT) state, given a function f continuous on [a,b]?",
     "choices": [
       { "label": "A", "text": "For any value M between f(a) and f(b), there exists at least one c in [a,b] such that f(c) = M", "isCorrect": true, "explanation": "This is the precise statement of the Intermediate Value Theorem." },
-      { "label": "B", "text": "f must be increasing on [a,b]", "isCorrect": false, "explanation": "The IVT doesn't require f to be increasing; it applies to any continuous function regardless of monotonic behavior." },
-      { "label": "C", "text": "f(a) must equal f(b)", "isCorrect": false, "explanation": "The IVT doesn't require f(a) to equal f(b); it specifically discusses values BETWEEN f(a) and f(b), which are typically different." },
-      { "label": "D", "text": "f has no maximum or minimum on [a,b]", "isCorrect": false, "explanation": "This doesn't relate to the IVT's actual statement, which is about intermediate values, not extrema." }
+      { "label": "B", "text": "f must be increasing on [a,b], rising from f(a) to f(b)", "isCorrect": false, "explanation": "The IVT doesn't require f to be increasing; it applies to any continuous function regardless of monotonic behavior." },
+      { "label": "C", "text": "f(a) must equal f(b) at the two endpoints of the interval", "isCorrect": false, "explanation": "The IVT doesn't require f(a) to equal f(b); it specifically discusses values BETWEEN f(a) and f(b), which are typically different." },
+      { "label": "D", "text": "f has no maximum or minimum anywhere on [a,b], because a continuous function can never attain either", "isCorrect": false, "explanation": "This doesn't relate to the IVT's actual statement, which is about intermediate values, not extrema." }
     ],
     "explanation": "The IVT guarantees that a continuous function takes on every value between f(a) and f(b) at some point in [a,b].",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
@@ -407,9 +407,9 @@
     "stem": "What is the key requirement for the Intermediate Value Theorem to apply to a function on an interval [a,b]?",
     "choices": [
       { "label": "A", "text": "f must be continuous on the closed interval [a,b]", "isCorrect": true, "explanation": "Continuity on [a,b] is the sole requirement for the IVT to apply." },
-      { "label": "B", "text": "f must be differentiable everywhere", "isCorrect": false, "explanation": "Differentiability is a stronger condition not required by the IVT; only continuity is needed." },
-      { "label": "C", "text": "f must be a polynomial", "isCorrect": false, "explanation": "The IVT applies to any continuous function, not exclusively polynomials." },
-      { "label": "D", "text": "f must be linear", "isCorrect": false, "explanation": "The IVT applies to continuous functions generally, not just linear ones." }
+      { "label": "B", "text": "f must be differentiable everywhere on the interval and beyond", "isCorrect": false, "explanation": "Differentiability is a stronger condition not required by the IVT; only continuity is needed." },
+      { "label": "C", "text": "f must be a polynomial of degree at least two", "isCorrect": false, "explanation": "The IVT applies to any continuous function, not exclusively polynomials." },
+      { "label": "D", "text": "f must be linear, with a constant slope throughout the interval", "isCorrect": false, "explanation": "The IVT applies to continuous functions generally, not just linear ones." }
     ],
     "explanation": "The IVT requires only that f be continuous on the closed interval [a,b].",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
@@ -423,7 +423,7 @@
     "stem": "Given f is continuous on [1,4], f(1) = -3, and f(4) = 5, what does the IVT guarantee about f on this interval?",
     "choices": [
       { "label": "A", "text": "There is at least one c in [1,4] where f(c) = 0", "isCorrect": true, "explanation": "Since 0 lies between f(1) = -3 and f(4) = 5, the IVT guarantees at least one c where f(c) = 0." },
-      { "label": "B", "text": "f(c) = 0 has no solutions in [1,4]", "isCorrect": false, "explanation": "Since 0 lies between f(1)=-3 and f(4)=5, the IVT specifically guarantees at least one solution exists, not zero solutions." },
+      { "label": "B", "text": "f(c) = 0 has no solutions in [1,4], so f never reaches zero", "isCorrect": false, "explanation": "Since 0 lies between f(1)=-3 and f(4)=5, the IVT specifically guarantees at least one solution exists, not zero solutions." },
       { "label": "C", "text": "f is increasing throughout [1,4]", "isCorrect": false, "explanation": "The IVT doesn't guarantee monotonic (increasing) behavior; it only guarantees the existence of a value where f equals the target." },
       { "label": "D", "text": "f(1) must equal f(4)", "isCorrect": false, "explanation": "f(1) and f(4) are given as different values (-3 and 5); the IVT doesn't require or imply they're equal." }
     ],
@@ -439,9 +439,9 @@
     "stem": "Using the IVT, how could you justify that the equation $x^3 - x - 1 = 0$ has a solution between x=1 and x=2?",
     "choices": [
       { "label": "A", "text": "f(1) = -1 and f(2) = 5, and since f is continuous and 0 lies between -1 and 5, the IVT guarantees a root exists in (1,2)", "isCorrect": true, "explanation": "f(x) = x^3-x-1 is a polynomial (hence continuous), f(1) = 1-1-1 = -1, and f(2) = 8-2-1 = 5; since these have opposite signs, IVT guarantees a root." },
-      { "label": "B", "text": "Because $x^3$ is always positive", "isCorrect": false, "explanation": "$x^3$ is not always positive (e.g., for negative x); more importantly, this doesn't correctly apply the IVT's actual reasoning." },
-      { "label": "C", "text": "Because the equation has degree 3", "isCorrect": false, "explanation": "The degree of the polynomial alone doesn't justify a root's existence in a specific interval; the sign change (via the IVT) is what does." },
-      { "label": "D", "text": "Because f(1) equals f(2)", "isCorrect": false, "explanation": "f(1) and f(2) are NOT equal here (-1 and 5 respectively); the IVT reasoning relies on the fact that they have opposite signs, not that they're equal." }
+      { "label": "B", "text": "Because $x^3$ is always positive on [1,2], so no sign change can occur", "isCorrect": false, "explanation": "$x^3$ is not always positive (e.g., for negative x); more importantly, this doesn't correctly apply the IVT's actual reasoning." },
+      { "label": "C", "text": "Because the equation has degree 3, and every cubic polynomial has a root between any two consecutive integers", "isCorrect": false, "explanation": "The degree of the polynomial alone doesn't justify a root's existence in a specific interval; the sign change (via the IVT) is what does." },
+      { "label": "D", "text": "Because f(1) equals f(2), so the function must cross zero somewhere between them", "isCorrect": false, "explanation": "f(1) and f(2) are NOT equal here (-1 and 5 respectively); the IVT reasoning relies on the fact that they have opposite signs, not that they're equal." }
     ],
     "explanation": "f(1) = -1 and f(2) = 5 have opposite signs, so by the IVT (f being a continuous polynomial), a root exists between 1 and 2.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
@@ -455,9 +455,9 @@
     "stem": "Why is continuity specifically required for the IVT to apply (rather than allowing any function with a jump discontinuity)?",
     "choices": [
       { "label": "A", "text": "A function with a jump discontinuity might \"skip over\" the target value without ever actually equaling it", "isCorrect": true, "explanation": "Without continuity, a function could jump from one value to another without passing through every value in between." },
-      { "label": "B", "text": "Continuity has no real bearing on whether the IVT's conclusion holds", "isCorrect": false, "explanation": "Continuity is precisely what ensures the function doesn't skip over values, so it does have direct bearing on whether the IVT's guarantee holds." },
-      { "label": "C", "text": "Jump discontinuities always make functions equal every intermediate value automatically", "isCorrect": false, "explanation": "This is the opposite of the actual concern; jump discontinuities can cause a function to SKIP values rather than guarantee hitting them." },
-      { "label": "D", "text": "The IVT works identically whether or not a function is continuous", "isCorrect": false, "explanation": "The IVT's guarantee specifically depends on continuity; without it, a function could jump over the target value entirely." }
+      { "label": "B", "text": "Continuity has no real bearing on whether the IVT's conclusion holds for any function", "isCorrect": false, "explanation": "Continuity is precisely what ensures the function doesn't skip over values, so it does have direct bearing on whether the IVT's guarantee holds." },
+      { "label": "C", "text": "Jump discontinuities always make functions equal every intermediate value automatically, even across a gap", "isCorrect": false, "explanation": "This is the opposite of the actual concern; jump discontinuities can cause a function to SKIP values rather than guarantee hitting them." },
+      { "label": "D", "text": "The IVT works identically whether or not a function is continuous on the interval", "isCorrect": false, "explanation": "The IVT's guarantee specifically depends on continuity; without it, a function could jump over the target value entirely." }
     ],
     "explanation": "Continuity ensures a function can't \"skip over\" intermediate values, which is essential to the IVT's guarantee.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "A student wants to use the IVT to show $f(x) = 1/x$ has a root (i.e., f(c)=0) somewhere between x=-1 and x=1. Why does this attempt fail?",
     "choices": [
-      { "label": "A", "text": "f(x) = 1/x is not continuous on [-1,1] because it's undefined (and has a vertical asymptote) at x=0, so the IVT's continuity requirement is not met", "isCorrect": true, "explanation": "Since f is discontinuous at x=0 (within the interval), the IVT's continuity requirement fails, so it cannot be applied here." },
-      { "label": "B", "text": "f(-1) equals f(1), so no root can exist", "isCorrect": false, "explanation": "f(-1) = -1 and f(1) = 1, which are NOT equal; this isn't actually the issue with applying the IVT here." },
-      { "label": "C", "text": "1/x is always positive", "isCorrect": false, "explanation": "1/x is not always positive; for negative x it's negative, and for positive x it's positive, but this isn't the reason the IVT fails to apply here." },
-      { "label": "D", "text": "The IVT guarantees a root does exist here", "isCorrect": false, "explanation": "The IVT does NOT guarantee a root here, precisely because its continuity requirement fails at x=0, which lies within the interval [-1,1]." }
+      { "label": "A", "text": "f(x) = 1/x is not continuous on [-1,1] because it is undefined at x=0, so the IVT's continuity requirement is not met", "isCorrect": true, "explanation": "Since f is discontinuous at x=0 (within the interval), the IVT's continuity requirement fails, so it cannot be applied here." },
+      { "label": "B", "text": "f(-1) equals f(1), and a function with equal endpoint values can never have a root between them", "isCorrect": false, "explanation": "f(-1) = -1 and f(1) = 1, which are NOT equal; this isn't actually the issue with applying the IVT here." },
+      { "label": "C", "text": "1/x is always positive, so its graph stays above the x-axis and never reaches zero on any interval", "isCorrect": false, "explanation": "1/x is not always positive; for negative x it's negative, and for positive x it's positive, but this isn't the reason the IVT fails to apply here." },
+      { "label": "D", "text": "The IVT guarantees a root does exist here, because f(-1) and f(1) have opposite signs and f is a simple function", "isCorrect": false, "explanation": "The IVT does NOT guarantee a root here, precisely because its continuity requirement fails at x=0, which lies within the interval [-1,1]." }
     ],
     "explanation": "f(x) = 1/x is discontinuous at x=0, which lies within [-1,1], so the IVT's continuity requirement is not satisfied.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/intermediate-value-theorem",

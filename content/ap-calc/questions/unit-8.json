@@ -103,9 +103,9 @@
     "stem": "A car's velocity (in mph) over a 2-hour trip is given by $v(t)$. How would you interpret $\\dfrac{1}{2}\\int_0^2 v(t)\\,dt$ in this context?",
     "choices": [
       { "label": "A", "text": "The average velocity of the car over the 2-hour trip", "isCorrect": true, "explanation": "This is exactly the average value formula applied to velocity, giving the average velocity." },
-      { "label": "B", "text": "The car's total distance traveled", "isCorrect": false, "explanation": "Total distance would just be the integral of v(t) alone, without dividing by the time interval." },
-      { "label": "C", "text": "The car's maximum velocity during the trip", "isCorrect": false, "explanation": "This expression gives an AVERAGE, not the maximum value attained during the trip." },
-      { "label": "D", "text": "The car's acceleration", "isCorrect": false, "explanation": "Acceleration would involve a DERIVATIVE of velocity, not an integral of it." }
+      { "label": "B", "text": "The car's total distance traveled during the trip", "isCorrect": false, "explanation": "Total distance would just be the integral of v(t) alone, without dividing by the time interval." },
+      { "label": "C", "text": "The car's maximum velocity reached at any moment during the trip", "isCorrect": false, "explanation": "This expression gives an AVERAGE, not the maximum value attained during the trip." },
+      { "label": "D", "text": "The car's acceleration at the end of the trip, the rate its speed changes", "isCorrect": false, "explanation": "Acceleration would involve a DERIVATIVE of velocity, not an integral of it." }
     ],
     "explanation": "$\\frac{1}{2}\\int_0^2 v(t)\\,dt$ represents the average velocity over the trip.",
     "conceptLink": "ap-calc/unit-8-applications-of-integration/average-value-of-a-function",
@@ -198,10 +198,10 @@
     "difficulty": "medium",
     "stem": "When finding the area between two curves that cross each other within the interval of interest, what must you do differently than when one curve stays entirely above the other?",
     "choices": [
-      { "label": "A", "text": "Split the integral at the crossing point(s) and take the absolute value of (or swap the order of subtraction in) each piece, since which function is \"on top\" changes", "isCorrect": true, "explanation": "When curves cross, which function is greater switches, so the integral must be split at each crossing point to always subtract top minus bottom on each subinterval." },
-      { "label": "B", "text": "Nothing needs to change; you can always integrate f(x)-g(x) as a single integral regardless of crossings", "isCorrect": false, "explanation": "Integrating a single (f-g) across a crossing point without adjustment can give a smaller (or even zero) result that doesn't represent the true total area." },
-      { "label": "C", "text": "You should simply ignore the region past the crossing point entirely", "isCorrect": false, "explanation": "All regions between the curves should be accounted for, not ignored, even past a crossing point." },
-      { "label": "D", "text": "You must use only the far endpoints, disregarding the crossing point entirely", "isCorrect": false, "explanation": "The crossing point(s) ARE important and must be found and used to split the integral correctly." }
+      { "label": "A", "text": "Split the integral at each crossing point and take the absolute value of (or swap the subtraction in) each piece, since which function is \"on top\" changes", "isCorrect": true, "explanation": "When curves cross, which function is greater switches, so the integral must be split at each crossing point to always subtract top minus bottom on each subinterval." },
+      { "label": "B", "text": "Nothing needs to change; you can always integrate f(x)-g(x) as a single integral regardless of crossings, since the signed areas add up correctly on every interval", "isCorrect": false, "explanation": "Integrating a single (f-g) across a crossing point without adjustment can give a smaller (or even zero) result that doesn't represent the true total area." },
+      { "label": "C", "text": "You should simply ignore the region past the crossing point entirely, since it contributes no area to the total", "isCorrect": false, "explanation": "All regions between the curves should be accounted for, not ignored, even past a crossing point." },
+      { "label": "D", "text": "You must use only the far endpoints, disregarding the crossing point entirely, because only the ends matter", "isCorrect": false, "explanation": "The crossing point(s) ARE important and must be found and used to split the integral correctly." }
     ],
     "explanation": "When curves cross, split the integral at the crossing point(s) so you always subtract top minus bottom on each piece.",
     "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
@@ -216,7 +216,7 @@
     "choices": [
       { "label": "A", "text": "$\\displaystyle\\int_c^d [f(y)-g(y)]\\,dy$, integrating with respect to y, where f(y)≥g(y) (right minus left) on $[c,d]$", "isCorrect": true, "explanation": "When curves are naturally functions of y, integrating with respect to y (right minus left, in terms of x-values) is the appropriate approach." },
       { "label": "B", "text": "You cannot find area between curves expressed as functions of y", "isCorrect": false, "explanation": "Area between curves defined as functions of y absolutely CAN be found, using an integral with respect to y." },
-      { "label": "C", "text": "Always convert to functions of x first, since integrating with respect to y is never valid", "isCorrect": false, "explanation": "Integrating with respect to y is a perfectly valid and often more convenient approach for curves naturally expressed as x=f(y)." },
+      { "label": "C", "text": "Always convert to functions of x first, since integrating with respect to y is never valid, because only vertical slices can ever give an area", "isCorrect": false, "explanation": "Integrating with respect to y is a perfectly valid and often more convenient approach for curves naturally expressed as x=f(y)." },
       { "label": "D", "text": "$\\displaystyle\\int_c^d [f(y)+g(y)]\\,dy$", "isCorrect": false, "explanation": "This incorrectly adds rather than subtracts the two functions, which would not give the area between them." }
     ],
     "explanation": "For curves as functions of y, the area is $\\int_c^d [f(y)-g(y)]\\,dy$ (right minus left).",
@@ -230,10 +230,10 @@
     "difficulty": "easy",
     "stem": "What is the first step in finding the area of a region bounded by two curves $y=f(x)$ and $y=g(x)$ whose points of intersection aren't given?",
     "choices": [
-      { "label": "A", "text": "Set f(x)=g(x) and solve to find the x-coordinates of the points of intersection, which become the bounds of integration", "isCorrect": true, "explanation": "Finding the intersection points is essential to determine the correct bounds for the area integral." },
-      { "label": "B", "text": "Immediately integrate f(x)-g(x) from negative infinity to positive infinity", "isCorrect": false, "explanation": "Using infinite bounds is not the correct approach; specific finite intersection points must first be determined." },
-      { "label": "C", "text": "Assume the bounds are always 0 and 1", "isCorrect": false, "explanation": "The bounds depend on the actual intersection points of the specific curves, not a fixed assumption of 0 and 1." },
-      { "label": "D", "text": "Differentiate both functions", "isCorrect": false, "explanation": "Differentiating isn't the relevant first step; finding where the curves intersect (by setting them equal) is needed to establish bounds." }
+      { "label": "A", "text": "Set f(x)=g(x) and solve for the x-coordinates of the intersection points, which become the bounds of integration", "isCorrect": true, "explanation": "Finding the intersection points is essential to determine the correct bounds for the area integral." },
+      { "label": "B", "text": "Immediately integrate f(x)-g(x) from negative infinity to positive infinity, then divide by two to obtain the area between them", "isCorrect": false, "explanation": "Using infinite bounds is not the correct approach; specific finite intersection points must first be determined." },
+      { "label": "C", "text": "Assume the bounds are always 0 and 1, since the region is bounded by the axes", "isCorrect": false, "explanation": "The bounds depend on the actual intersection points of the specific curves, not a fixed assumption of 0 and 1." },
+      { "label": "D", "text": "Differentiate both functions to find where their slopes are equal", "isCorrect": false, "explanation": "Differentiating isn't the relevant first step; finding where the curves intersect (by setting them equal) is needed to establish bounds." }
     ],
     "explanation": "Setting $f(x)=g(x)$ and solving finds the intersection points, which serve as the bounds of integration.",
     "conceptLink": "ap-calc/unit-8-applications-of-integration/area-between-curves",
@@ -246,10 +246,10 @@
     "difficulty": "easy",
     "stem": "What is the \"disc method\" used for computing volumes of revolution?",
     "choices": [
-      { "label": "A", "text": "Finding the volume of a solid formed by rotating a region bounded by a single curve and an axis, around that axis, by integrating the area of circular cross-sections (discs)", "isCorrect": true, "explanation": "The disc method sums the volumes of thin circular discs (each with area πr²) to find the total volume of a solid of revolution." },
-      { "label": "B", "text": "Finding the area under a curve", "isCorrect": false, "explanation": "This describes basic definite integration for area, not the disc method (which computes VOLUME of a solid of revolution)." },
-      { "label": "C", "text": "Finding the slope of a tangent line", "isCorrect": false, "explanation": "This describes differentiation, an unrelated concept to the disc method for volumes." },
-      { "label": "D", "text": "Finding the length of a curve", "isCorrect": false, "explanation": "This describes arc length, a different application from the disc method for computing volumes." }
+      { "label": "A", "text": "Finding the volume of a solid formed by rotating a region bounded by a curve and an axis around that axis, by integrating the areas of circular cross-sections (discs)", "isCorrect": true, "explanation": "The disc method sums the volumes of thin circular discs (each with area πr²) to find the total volume of a solid of revolution." },
+      { "label": "B", "text": "Finding the area under a curve, by summing the areas of many thin rectangles of equal width across the interval", "isCorrect": false, "explanation": "This describes basic definite integration for area, not the disc method (which computes VOLUME of a solid of revolution)." },
+      { "label": "C", "text": "Finding the slope of a tangent line, by taking the limit of secant slopes as the interval shrinks", "isCorrect": false, "explanation": "This describes differentiation, an unrelated concept to the disc method for volumes." },
+      { "label": "D", "text": "Finding the length of a curve, by integrating the lengths of tiny straight-line segments approximating its path from start to end, a quantity measured in units of length rather than volume", "isCorrect": false, "explanation": "This describes arc length, a different application from the disc method for computing volumes." }
     ],
     "explanation": "The disc method finds the volume of a solid of revolution by integrating the area of circular cross-sections.",
     "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "What distinguishes the \"washer method\" from the basic \"disc method\"?",
     "choices": [
-      { "label": "A", "text": "The washer method is used when the solid of revolution has a hole through it (the region is bounded away from the axis of rotation by an inner curve), requiring subtraction of an inner radius", "isCorrect": true, "explanation": "The washer method accounts for a hollow center by subtracting the volume swept by an inner boundary curve from the volume swept by an outer boundary curve." },
-      { "label": "B", "text": "The washer method is used only for solids with no holes at all", "isCorrect": false, "explanation": "This describes the basic disc method, not the washer method, which specifically handles solids WITH a hole." },
-      { "label": "C", "text": "There is no difference between the two methods", "isCorrect": false, "explanation": "There IS a meaningful difference: the washer method subtracts an inner radius to account for a hole, unlike the basic disc method." },
-      { "label": "D", "text": "The washer method never involves integration", "isCorrect": false, "explanation": "The washer method absolutely still involves integration, just with an additional inner-radius term subtracted." }
+      { "label": "A", "text": "The washer method is used when the solid has a hole through it (the region is bounded away from the axis by an inner curve), so an inner radius is subtracted", "isCorrect": true, "explanation": "The washer method accounts for a hollow center by subtracting the volume swept by an inner boundary curve from the volume swept by an outer boundary curve." },
+      { "label": "B", "text": "The washer method is used only for solids with no holes at all, where every cross-section is a full disc and no inner radius is ever needed, in any problem or any region", "isCorrect": false, "explanation": "This describes the basic disc method, not the washer method, which specifically handles solids WITH a hole." },
+      { "label": "C", "text": "There is no difference between the two methods, since a washer is just a disc with a different name", "isCorrect": false, "explanation": "There IS a meaningful difference: the washer method subtracts an inner radius to account for a hole, unlike the basic disc method." },
+      { "label": "D", "text": "The washer method never involves integration, since it uses only the formula for a ring's area", "isCorrect": false, "explanation": "The washer method absolutely still involves integration, just with an additional inner-radius term subtracted." }
     ],
     "explanation": "The washer method handles solids with a hole by subtracting the inner radius squared from the outer radius squared.",
     "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-disc-washer",
@@ -390,10 +390,10 @@
     "difficulty": "easy",
     "stem": "In the \"volume by cross-sections\" method (not a solid of revolution), how is the volume of the solid computed?",
     "choices": [
-      { "label": "A", "text": "By integrating the area of the cross-sectional shape (perpendicular to a given axis) as a function of position along that axis", "isCorrect": true, "explanation": "This method sums (integrates) the areas of cross-sections perpendicular to an axis to find the total volume." },
-      { "label": "B", "text": "By finding the perimeter of the base region only", "isCorrect": false, "explanation": "Perimeter is unrelated to this method; the AREA of each cross-section is what must be integrated." },
-      { "label": "C", "text": "By always assuming the solid is a cylinder", "isCorrect": false, "explanation": "Cross-sections can be squares, semicircles, triangles, or many other shapes -- not always assumed to be a cylinder." },
-      { "label": "D", "text": "By differentiating the base area function", "isCorrect": false, "explanation": "Differentiation is the wrong operation; INTEGRATION of the cross-sectional area function is required." }
+      { "label": "A", "text": "By integrating the area of the cross-sectional shape (perpendicular to an axis) as a function of position along that axis", "isCorrect": true, "explanation": "This method sums (integrates) the areas of cross-sections perpendicular to an axis to find the total volume." },
+      { "label": "B", "text": "By finding the perimeter of the base region only, then multiplying it by the greatest height of the solid at each point in the base region", "isCorrect": false, "explanation": "Perimeter is unrelated to this method; the AREA of each cross-section is what must be integrated." },
+      { "label": "C", "text": "By always assuming the solid is a cylinder, whatever the shape of the cross-sections", "isCorrect": false, "explanation": "Cross-sections can be squares, semicircles, triangles, or many other shapes -- not always assumed to be a cylinder." },
+      { "label": "D", "text": "By differentiating the base area function with respect to position along the axis", "isCorrect": false, "explanation": "Differentiation is the wrong operation; INTEGRATION of the cross-sectional area function is required." }
     ],
     "explanation": "The volume is found by integrating the cross-sectional area as a function of position along the axis.",
     "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-cross-sections",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "When setting up a volume-by-cross-sections problem, why is it important to correctly identify the shape of each cross-section (square, semicircle, equilateral triangle, etc.) before integrating?",
     "choices": [
-      { "label": "A", "text": "Because each shape has a different area formula in terms of its \"side\" or \"radius\" (which is determined by the base region), and using the wrong formula gives an incorrect area function to integrate", "isCorrect": true, "explanation": "The area formula (e.g., side², (1/2)πr², (√3/4)side²) depends entirely on the cross-sectional shape, so misidentifying it leads to integrating the wrong function." },
-      { "label": "B", "text": "The shape of the cross-section never matters; all shapes have the same area formula", "isCorrect": false, "explanation": "Different shapes (square, semicircle, triangle) have genuinely DIFFERENT area formulas, so the shape absolutely matters." },
-      { "label": "C", "text": "Only square cross-sections are ever used in these problems", "isCorrect": false, "explanation": "AP Calculus problems commonly use semicircles, equilateral triangles, and other shapes, not exclusively squares." },
-      { "label": "D", "text": "The base region's boundaries are irrelevant once the shape is identified", "isCorrect": false, "explanation": "The base region's boundaries ARE essential, since they determine the side length/radius that feeds into the area formula at each x." }
+      { "label": "A", "text": "Because each shape has a different area formula in terms of its side or radius (set by the base region), and the wrong formula gives an incorrect area function to integrate", "isCorrect": true, "explanation": "The area formula (e.g., side², (1/2)πr², (√3/4)side²) depends entirely on the cross-sectional shape, so misidentifying it leads to integrating the wrong function." },
+      { "label": "B", "text": "The shape of the cross-section never matters; every shape has the same area formula, so any shape can be substituted into the integral without changing the volume of the solid being measured", "isCorrect": false, "explanation": "Different shapes (square, semicircle, triangle) have genuinely DIFFERENT area formulas, so the shape absolutely matters." },
+      { "label": "C", "text": "Only square cross-sections are ever used in these problems, so there is no shape to identify before integrating", "isCorrect": false, "explanation": "AP Calculus problems commonly use semicircles, equilateral triangles, and other shapes, not exclusively squares." },
+      { "label": "D", "text": "The base region's boundaries are irrelevant once the shape is identified, since only the shape matters for the area", "isCorrect": false, "explanation": "The base region's boundaries ARE essential, since they determine the side length/radius that feeds into the area formula at each x." }
     ],
     "explanation": "Each cross-sectional shape has a distinct area formula, so correctly identifying the shape is essential to integrating the right area function.",
     "conceptLink": "ap-calc/unit-8-applications-of-integration/volume-by-cross-sections",

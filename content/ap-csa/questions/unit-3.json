@@ -134,10 +134,10 @@
     "difficulty": "medium",
     "stem": "In Java, what determines which statements are considered part of an `if` block when no curly braces `{}` are used?",
     "choices": [
-      { "label": "A", "text": "All statements indented at the same level as the if", "isCorrect": false, "explanation": "Indentation is just a formatting convention in Java -- it has no effect on which statements belong to the if." },
+      { "label": "A", "text": "All statements indented at the same level as the if, regardless of braces", "isCorrect": false, "explanation": "Indentation is just a formatting convention in Java -- it has no effect on which statements belong to the if." },
       { "label": "B", "text": "Only the single statement immediately following the if condition", "isCorrect": true, "explanation": "Without braces, only the very next single statement is controlled by the if; anything after that runs unconditionally." },
-      { "label": "C", "text": "All statements until the next blank line", "isCorrect": false, "explanation": "Blank lines have no syntactic meaning in Java." },
-      { "label": "D", "text": "All statements until the end of the method", "isCorrect": false, "explanation": "This would make the rest of the method conditional, which is not how Java's if statement works without braces." }
+      { "label": "C", "text": "All statements until the next blank line in the source file", "isCorrect": false, "explanation": "Blank lines have no syntactic meaning in Java." },
+      { "label": "D", "text": "All statements until the end of the method, ignoring indentation", "isCorrect": false, "explanation": "This would make the rest of the method conditional, which is not how Java's if statement works without braces." }
     ],
     "explanation": "Without braces, only the single statement immediately after the `if` condition is conditional; this is a common source of bugs.",
     "conceptLink": "ap-csa/unit-3-boolean-if/if-statements",
@@ -262,10 +262,10 @@
     "difficulty": "easy",
     "stem": "What does `&&` represent in a boolean expression?",
     "choices": [
-      { "label": "A", "text": "Logical OR -- true if either operand is true", "isCorrect": false, "explanation": "This describes ||, the OR operator, not &&." },
+      { "label": "A", "text": "Logical OR -- true if either operand is true, or both", "isCorrect": false, "explanation": "This describes ||, the OR operator, not &&." },
       { "label": "B", "text": "Logical AND -- true only if both operands are true", "isCorrect": true, "explanation": "&& (AND) requires both sides to be true for the whole expression to be true." },
-      { "label": "C", "text": "Logical NOT -- inverts a boolean value", "isCorrect": false, "explanation": "This describes !, the NOT operator, not &&." },
-      { "label": "D", "text": "Bitwise addition", "isCorrect": false, "explanation": "&& is a logical operator for booleans, not an arithmetic or bitwise addition operator." }
+      { "label": "C", "text": "Logical NOT -- inverts a boolean value from true to false", "isCorrect": false, "explanation": "This describes !, the NOT operator, not &&." },
+      { "label": "D", "text": "Bitwise addition of two integers", "isCorrect": false, "explanation": "&& is a logical operator for booleans, not an arithmetic or bitwise addition operator." }
     ],
     "explanation": "`&&` is the logical AND operator: the combined expression is true only when both operands are true.",
     "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
@@ -342,10 +342,10 @@
     "difficulty": "medium",
     "stem": "Why is short-circuit evaluation of `&&` and `||` useful when the left operand is `x != 0` and the right operand involves dividing by `x`?",
     "choices": [
-      { "label": "A", "text": "It makes the division happen faster", "isCorrect": false, "explanation": "Short-circuiting is about whether an operand is evaluated at all, not about making evaluated code run faster." },
-      { "label": "B", "text": "If x != 0 is false, Java skips evaluating the division, avoiding a divide-by-zero error", "isCorrect": true, "explanation": "With &&, if the left operand is false, the right operand is never evaluated -- so checking x != 0 first safely guards the division." },
-      { "label": "C", "text": "It guarantees the division will always be evaluated first", "isCorrect": false, "explanation": "This is backwards -- with &&, the left operand is evaluated first, and the right side may be skipped entirely." },
-      { "label": "D", "text": "It has no effect on whether the division is evaluated", "isCorrect": false, "explanation": "Short-circuiting directly determines whether the right-hand operand gets evaluated at all." }
+      { "label": "A", "text": "It makes the division happen faster by running the check in parallel", "isCorrect": false, "explanation": "Short-circuiting is about whether an operand is evaluated at all, not about making evaluated code run faster." },
+      { "label": "B", "text": "If x != 0 is false, Java skips the division, avoiding a divide-by-zero error", "isCorrect": true, "explanation": "With &&, if the left operand is false, the right operand is never evaluated -- so checking x != 0 first safely guards the division." },
+      { "label": "C", "text": "It guarantees the division will always be evaluated first, before the check", "isCorrect": false, "explanation": "This is backwards -- with &&, the left operand is evaluated first, and the right side may be skipped entirely." },
+      { "label": "D", "text": "It has no effect on whether the division is evaluated at all", "isCorrect": false, "explanation": "Short-circuiting directly determines whether the right-hand operand gets evaluated at all." }
     ],
     "explanation": "With `&&`, if the left operand is false, Java skips the right operand entirely -- so `x != 0 && 10 / x > 1` safely avoids division by zero.",
     "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",
@@ -438,10 +438,10 @@
     "difficulty": "hard",
     "stem": "What is wrong with this code, given that `name` might be `null`?\n\n```java\nString name = null;\nif (name.equals(\"Alex\")) {\n    System.out.println(\"found\");\n}\n```",
     "choices": [
-      { "label": "A", "text": "Nothing; it correctly prints nothing since name is null", "isCorrect": false, "explanation": "This code doesn't just print nothing -- calling a method on a null reference throws a runtime exception, crashing the program." },
-      { "label": "B", "text": "It throws a NullPointerException, because you cannot call .equals() on a null reference", "isCorrect": true, "explanation": "Calling any method, including .equals(), on a reference that is null throws a NullPointerException at runtime." },
-      { "label": "C", "text": "It is a compile error", "isCorrect": false, "explanation": "This compiles fine; the problem only appears when the code actually runs and tries to call .equals() on null." },
-      { "label": "D", "text": "It always prints \"found\"", "isCorrect": false, "explanation": "The program crashes with an exception before it could ever print \"found\"." }
+      { "label": "A", "text": "Nothing; it correctly prints nothing since name is null and so the test is never true", "isCorrect": false, "explanation": "This code doesn't just print nothing -- calling a method on a null reference throws a runtime exception, crashing the program." },
+      { "label": "B", "text": "It throws a NullPointerException, since you cannot call .equals() on a null reference", "isCorrect": true, "explanation": "Calling any method, including .equals(), on a reference that is null throws a NullPointerException at runtime." },
+      { "label": "C", "text": "It is a compile error because the variable is assigned null", "isCorrect": false, "explanation": "This compiles fine; the problem only appears when the code actually runs and tries to call .equals() on null." },
+      { "label": "D", "text": "It always prints \"found\" because null matches any String", "isCorrect": false, "explanation": "The program crashes with an exception before it could ever print \"found\"." }
     ],
     "explanation": "Calling `.equals()` on a `null` reference throws a `NullPointerException` at runtime. A safer pattern is `\"Alex\".equals(name)`.",
     "conceptLink": "ap-csa/unit-3-boolean-if/comparing-objects",

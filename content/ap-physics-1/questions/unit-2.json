@@ -8,8 +8,8 @@
     "choices": [
       { "label": "A", "text": "For every action force, there is an equal and opposite reaction force", "isCorrect": true, "explanation": "Newton's Third Law: forces come in action-reaction pairs of equal magnitude and opposite direction." },
       { "label": "B", "text": "An object in motion stays in motion unless acted on by a net force", "isCorrect": false, "explanation": "This describes Newton's FIRST Law (inertia), not the Third Law." },
-      { "label": "C", "text": "Force equals mass times acceleration", "isCorrect": false, "explanation": "This describes Newton's SECOND Law (F=ma), not the Third Law." },
-      { "label": "D", "text": "Objects with greater mass always exert greater forces", "isCorrect": false, "explanation": "This isn't a correct statement of any of Newton's laws -- the Third Law is about action-reaction pairs, regardless of mass." }
+      { "label": "C", "text": "Force equals mass times acceleration for any object", "isCorrect": false, "explanation": "This describes Newton's SECOND Law (F=ma), not the Third Law." },
+      { "label": "D", "text": "Objects with greater mass always exert greater forces on other objects", "isCorrect": false, "explanation": "This isn't a correct statement of any of Newton's laws -- the Third Law is about action-reaction pairs, regardless of mass." }
     ],
     "explanation": "Newton's Third Law states that for every action force, there is an equal and opposite reaction force.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/newtons-third-law-and-systems",
@@ -22,10 +22,10 @@
     "difficulty": "hard",
     "stem": "Action-reaction force pairs (Newton's Third Law) act on which object(s)?",
     "choices": [
-      { "label": "A", "text": "Two different objects -- the action force acts on one object, the reaction force acts on the other", "isCorrect": true, "explanation": "Action-reaction pairs always act on two DIFFERENT objects, which is why they never cancel each other out for a single object's motion." },
-      { "label": "B", "text": "Both forces act on the same object", "isCorrect": false, "explanation": "This is a common misconception -- if both forces acted on the same object, they would always cancel out, making acceleration impossible." },
-      { "label": "C", "text": "Neither force acts on any physical object", "isCorrect": false, "explanation": "Both the action and reaction forces are real forces acting on real, physical objects." },
-      { "label": "D", "text": "Only the heavier of the two objects experiences a force", "isCorrect": false, "explanation": "Both objects experience a force of EQUAL magnitude, regardless of their relative masses." }
+      { "label": "A", "text": "Two different objects -- the action force acts on one object and the reaction force acts on the other", "isCorrect": true, "explanation": "Action-reaction pairs always act on two DIFFERENT objects, which is why they never cancel each other out for a single object's motion." },
+      { "label": "B", "text": "Both forces act on the same object, which is why they always cancel each other out completely", "isCorrect": false, "explanation": "This is a common misconception -- if both forces acted on the same object, they would always cancel out, making acceleration impossible." },
+      { "label": "C", "text": "Neither force acts on any physical object, since forces are only a bookkeeping device in diagrams drawn by physicists", "isCorrect": false, "explanation": "Both the action and reaction forces are real forces acting on real, physical objects." },
+      { "label": "D", "text": "Only the heavier of the two objects experiences a force, while the lighter one feels none", "isCorrect": false, "explanation": "Both objects experience a force of EQUAL magnitude, regardless of their relative masses." }
     ],
     "explanation": "Action-reaction pairs act on two different objects, which is why they don't cancel out within a single object's free-body diagram.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/newtons-third-law-and-systems",
@@ -39,9 +39,9 @@
     "stem": "A person pushes against a wall with a force of 50 N. What is the reaction force, according to Newton's Third Law?",
     "choices": [
       { "label": "A", "text": "The wall pushes back on the person with 50 N in the opposite direction", "isCorrect": true, "explanation": "The reaction force is equal in magnitude (50 N) and opposite in direction, exerted by the wall on the person." },
-      { "label": "B", "text": "The wall pushes back on the person with 25 N", "isCorrect": false, "explanation": "The reaction force must be EQUAL in magnitude to the action force (50 N), not half of it." },
-      { "label": "C", "text": "The person's own muscles create the reaction force", "isCorrect": false, "explanation": "The reaction force is exerted by the WALL on the person, not generated internally by the person's own body." },
-      { "label": "D", "text": "There is no reaction force since the wall doesn't move", "isCorrect": false, "explanation": "A reaction force exists regardless of whether the wall visibly moves -- the wall doesn't need to move for the force to be real." }
+      { "label": "B", "text": "The wall pushes back on the person with only 25 N, since the wall absorbs half", "isCorrect": false, "explanation": "The reaction force must be EQUAL in magnitude to the action force (50 N), not half of it." },
+      { "label": "C", "text": "The person's own muscles create the reaction force on the wall", "isCorrect": false, "explanation": "The reaction force is exerted by the WALL on the person, not generated internally by the person's own body." },
+      { "label": "D", "text": "There is no reaction force since the wall doesn't move at all", "isCorrect": false, "explanation": "A reaction force exists regardless of whether the wall visibly moves -- the wall doesn't need to move for the force to be real." }
     ],
     "explanation": "By Newton's Third Law, the wall exerts an equal (50 N) and opposite force back on the person.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/newtons-third-law-and-systems",
@@ -54,10 +54,10 @@
     "difficulty": "medium",
     "stem": "When analyzing a \"system\" of multiple objects together (e.g., two boxes connected by a string), what happens to the internal forces between the objects in the system?",
     "choices": [
-      { "label": "A", "text": "Internal forces (like the tension pulling the two boxes toward each other) cancel out when considering the system as a whole, by Newton's Third Law", "isCorrect": true, "explanation": "Internal action-reaction pairs between objects in the same system cancel out, since they act with equal magnitude in opposite directions." },
-      { "label": "B", "text": "Internal forces always add up to twice their individual value", "isCorrect": false, "explanation": "Internal forces cancel due to being equal and opposite (Third Law pairs), not double in magnitude." },
-      { "label": "C", "text": "Internal forces are irrelevant and were never present", "isCorrect": false, "explanation": "Internal forces are real and important for analyzing the individual objects -- they just cancel out for the system's overall (external) net force." },
-      { "label": "D", "text": "Internal forces only affect the more massive object in the system", "isCorrect": false, "explanation": "Internal forces affect both objects equally in magnitude (though possibly differently in resulting acceleration, due to differing masses)." }
+      { "label": "A", "text": "Internal forces (like the tension pulling the two boxes toward each other) cancel in pairs when the system is considered as a whole", "isCorrect": true, "explanation": "Internal action-reaction pairs between objects in the same system cancel out, since they act with equal magnitude in opposite directions." },
+      { "label": "B", "text": "Internal forces always add up to twice their individual value, so they double the net force on the system", "isCorrect": false, "explanation": "Internal forces cancel due to being equal and opposite (Third Law pairs), not double in magnitude." },
+      { "label": "C", "text": "Internal forces are irrelevant and were never present, since only external forces act on any objects", "isCorrect": false, "explanation": "Internal forces are real and important for analyzing the individual objects -- they just cancel out for the system's overall (external) net force." },
+      { "label": "D", "text": "Internal forces only affect the more massive object in the system, while the lighter one feels no force from its partner at all during the interaction", "isCorrect": false, "explanation": "Internal forces affect both objects equally in magnitude (though possibly differently in resulting acceleration, due to differing masses)." }
     ],
     "explanation": "Internal forces between objects in the same system are Newton's Third Law pairs and cancel out when analyzing the system as a whole.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/newtons-third-law-and-systems",
@@ -70,10 +70,10 @@
     "difficulty": "medium",
     "stem": "How does a person walking forward rely on Newton's Third Law?",
     "choices": [
-      { "label": "A", "text": "The person's foot pushes backward on the ground, and the ground pushes forward on the person's foot with an equal and opposite force, propelling them forward", "isCorrect": true, "explanation": "The forward reaction force from the ground (in response to the person's backward push) is what propels the person forward." },
-      { "label": "B", "text": "The person's muscles alone create forward motion with no external force needed", "isCorrect": false, "explanation": "Without an external reaction force from the ground (e.g., on ice with no friction), muscle contraction alone cannot produce forward motion." },
-      { "label": "C", "text": "Gravity pulls the person forward", "isCorrect": false, "explanation": "Gravity acts downward (vertically), not in the horizontal direction the person is walking." },
-      { "label": "D", "text": "Newton's Third Law has no relevance to walking", "isCorrect": false, "explanation": "Walking is actually a classic, direct application of Newton's Third Law via the ground-reaction force." }
+      { "label": "A", "text": "The person's foot pushes backward on the ground, and the ground pushes forward on the foot with an equal and opposite force", "isCorrect": true, "explanation": "The forward reaction force from the ground (in response to the person's backward push) is what propels the person forward." },
+      { "label": "B", "text": "The person's muscles alone create forward motion with no external force needed, since internal forces can accelerate a body", "isCorrect": false, "explanation": "Without an external reaction force from the ground (e.g., on ice with no friction), muscle contraction alone cannot produce forward motion." },
+      { "label": "C", "text": "Gravity pulls the person forward along the ground as they walk, so the foot never needs to push", "isCorrect": false, "explanation": "Gravity acts downward (vertically), not in the horizontal direction the person is walking." },
+      { "label": "D", "text": "Newton's Third Law has no relevance to walking, which depends only on the person's mass", "isCorrect": false, "explanation": "Walking is actually a classic, direct application of Newton's Third Law via the ground-reaction force." }
     ],
     "explanation": "Walking relies on the ground's reaction force: pushing backward on the ground results in the ground pushing forward on the person.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/newtons-third-law-and-systems",
@@ -86,10 +86,10 @@
     "difficulty": "easy",
     "stem": "What does a free-body diagram (FBD) show?",
     "choices": [
-      { "label": "A", "text": "All the forces acting ON a single object, represented as vectors from that object's center", "isCorrect": true, "explanation": "An FBD isolates one object and shows every force acting ON it (not forces it exerts on other things)." },
-      { "label": "B", "text": "All the forces the object exerts on other objects", "isCorrect": false, "explanation": "An FBD shows forces acting ON the object, not forces the object exerts outward on other things." },
-      { "label": "C", "text": "The object's velocity and acceleration vectors only", "isCorrect": false, "explanation": "An FBD specifically shows FORCES, not velocity or acceleration vectors directly (though acceleration can be inferred from the net force)." },
-      { "label": "D", "text": "A diagram of the object's internal structure", "isCorrect": false, "explanation": "An FBD is about external forces acting on the object as a whole, not its internal structure." }
+      { "label": "A", "text": "All the forces acting ON a single object, drawn as vectors from the object's center", "isCorrect": true, "explanation": "An FBD isolates one object and shows every force acting ON it (not forces it exerts on other things)." },
+      { "label": "B", "text": "All the forces that the object exerts on the other objects in its surroundings around it, rather than the forces on it", "isCorrect": false, "explanation": "An FBD shows forces acting ON the object, not forces the object exerts outward on other things." },
+      { "label": "C", "text": "The object's velocity and acceleration vectors only, drawn at a single instant", "isCorrect": false, "explanation": "An FBD specifically shows FORCES, not velocity or acceleration vectors directly (though acceleration can be inferred from the net force)." },
+      { "label": "D", "text": "A diagram of the object's internal structure, showing its parts", "isCorrect": false, "explanation": "An FBD is about external forces acting on the object as a whole, not its internal structure." }
     ],
     "explanation": "A free-body diagram shows all forces acting ON a single isolated object.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/free-body-diagrams",
@@ -102,10 +102,10 @@
     "difficulty": "medium",
     "stem": "The free-body diagram below shows a book resting motionless on a table. Why are the Normal force and Weight equal in magnitude?",
     "choices": [
-      { "label": "A", "text": "The book is in equilibrium (not accelerating), so by Newton's Second Law the net force -- and thus the sum of these two vertical forces -- must be zero", "isCorrect": true, "explanation": "Since the book isn't accelerating, the net force must be zero, requiring the upward Normal force to exactly balance the downward Weight." },
-      { "label": "B", "text": "Normal force and Weight are always equal for any object, regardless of its motion", "isCorrect": false, "explanation": "This is only true when the object is in vertical equilibrium (not accelerating vertically) -- e.g., in an accelerating elevator, they would NOT be equal." },
-      { "label": "C", "text": "The table pushes exactly as hard as the book weighs by definition, unrelated to Newton's laws", "isCorrect": false, "explanation": "This isn't just an arbitrary definition -- it's a direct consequence of Newton's Second Law applied to a non-accelerating object." },
-      { "label": "D", "text": "This is a coincidence specific to books", "isCorrect": false, "explanation": "This isn't a coincidence or specific to books -- it follows generally from Newton's Second Law for any object in vertical equilibrium." }
+      { "label": "A", "text": "The book is in equilibrium (not accelerating), so by Newton's Second Law the net force, and thus the sum of these two vertical forces, must be zero", "isCorrect": true, "explanation": "Since the book isn't accelerating, the net force must be zero, requiring the upward Normal force to exactly balance the downward Weight." },
+      { "label": "B", "text": "Normal force and Weight are always equal for any object, regardless of its motion or of the surface it rests on, because they are a Third Law pair, so one cancels the other", "isCorrect": false, "explanation": "This is only true when the object is in vertical equilibrium (not accelerating vertically) -- e.g., in an accelerating elevator, they would NOT be equal." },
+      { "label": "C", "text": "The table pushes exactly as hard as the book weighs by definition, unrelated to any of Newton's laws of motion", "isCorrect": false, "explanation": "This isn't just an arbitrary definition -- it's a direct consequence of Newton's Second Law applied to a non-accelerating object." },
+      { "label": "D", "text": "This is a coincidence specific to books, and it would not hold for other objects on tables", "isCorrect": false, "explanation": "This isn't a coincidence or specific to books -- it follows generally from Newton's Second Law for any object in vertical equilibrium." }
     ],
     "explanation": "Since the book isn't accelerating, Newton's Second Law requires the net force to be zero, so the Normal force must equal the Weight.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/free-body-diagrams",
@@ -128,9 +128,9 @@
     "stem": "The free-body diagram below shows a box being pulled to the right by an applied force, with friction opposing the motion. Based on the relative lengths of the vectors shown, what is the direction of the net force on the box?",
     "choices": [
       { "label": "A", "text": "To the right, since the applied force is larger than the friction force", "isCorrect": true, "explanation": "The applied force vector is drawn longer than the friction vector, so the net horizontal force points in the direction of the larger (applied) force -- to the right." },
-      { "label": "B", "text": "To the left, since friction always dominates", "isCorrect": false, "explanation": "Friction does not always dominate; here the applied force vector is clearly drawn longer, indicating it's the larger force." },
-      { "label": "C", "text": "There is no net force -- the box is in equilibrium", "isCorrect": false, "explanation": "The two horizontal vectors are drawn with different lengths (unequal magnitudes), so they don't cancel -- there IS a net force." },
-      { "label": "D", "text": "The net force direction cannot be determined from a free-body diagram", "isCorrect": false, "explanation": "A free-body diagram's vector lengths are specifically meant to convey relative force magnitudes, which do let you determine net force direction." }
+      { "label": "B", "text": "To the left, since friction always dominates over any applied force", "isCorrect": false, "explanation": "Friction does not always dominate; here the applied force vector is clearly drawn longer, indicating it's the larger force." },
+      { "label": "C", "text": "There is no net force -- the box is in equilibrium and moves at constant velocity", "isCorrect": false, "explanation": "The two horizontal vectors are drawn with different lengths (unequal magnitudes), so they don't cancel -- there IS a net force." },
+      { "label": "D", "text": "The net force direction cannot be determined from a free-body diagram alone", "isCorrect": false, "explanation": "A free-body diagram's vector lengths are specifically meant to convey relative force magnitudes, which do let you determine net force direction." }
     ],
     "explanation": "Since the applied force vector is longer (larger) than the friction vector, the net force points to the right, in the applied force's direction.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/free-body-diagrams",
@@ -169,9 +169,9 @@
     "stem": "An object falls through the air, and air resistance is negligible. What does the free-body diagram of the object look like during the fall?",
     "choices": [
       { "label": "A", "text": "A single downward vector representing the object's weight -- no other forces act on it", "isCorrect": true, "explanation": "With air resistance neglected, gravity (weight) is the only force acting on the falling object." },
-      { "label": "B", "text": "Two vectors: weight downward and a supporting normal force upward", "isCorrect": false, "explanation": "There is no surface in contact with the object while it's falling through the air, so there's no normal force." },
-      { "label": "C", "text": "Two equal and opposite vectors that cancel out completely", "isCorrect": false, "explanation": "If forces canceled out completely, the object wouldn't accelerate -- but a freely falling object DOES accelerate due to unbalanced weight." },
-      { "label": "D", "text": "No vectors at all, since the object is in the air", "isCorrect": false, "explanation": "Being in the air doesn't mean no forces act -- gravity (weight) still acts on the object throughout the fall." }
+      { "label": "B", "text": "Two vectors: weight downward and a supporting normal force upward from the air", "isCorrect": false, "explanation": "There is no surface in contact with the object while it's falling through the air, so there's no normal force." },
+      { "label": "C", "text": "Two equal and opposite vectors that cancel out completely, so there is no net force and the object floats", "isCorrect": false, "explanation": "If forces canceled out completely, the object wouldn't accelerate -- but a freely falling object DOES accelerate due to unbalanced weight." },
+      { "label": "D", "text": "No vectors at all, since the object is in the air and not touching anything", "isCorrect": false, "explanation": "Being in the air doesn't mean no forces act -- gravity (weight) still acts on the object throughout the fall." }
     ],
     "explanation": "With air resistance neglected, weight is the only force acting on a freely falling object.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/free-body-diagrams",
@@ -201,9 +201,9 @@
     "stem": "The free-body diagram below shows a block on a frictionless incline, with the Normal force perpendicular to the incline surface and Weight straight down. Which force (or component of a force) is responsible for the block accelerating down the incline?",
     "choices": [
       { "label": "A", "text": "The component of the Weight that points along the incline surface (parallel to it)", "isCorrect": true, "explanation": "The Normal force is entirely perpendicular to the incline and has no component along it; only Weight has a component along the incline's surface, which causes the block to accelerate down the slope." },
-      { "label": "B", "text": "The full Normal force vector", "isCorrect": false, "explanation": "The Normal force is entirely perpendicular to the incline surface and has zero component along it, so it cannot cause acceleration down the slope." },
-      { "label": "C", "text": "The full Weight vector, exactly as drawn (straight down)", "isCorrect": false, "explanation": "Only the COMPONENT of Weight along the incline surface matters for motion along the incline -- not the full straight-down vector." },
-      { "label": "D", "text": "Neither force has any component along the incline", "isCorrect": false, "explanation": "Weight does have a nonzero component along the incline (unless the incline is perfectly flat), which is exactly what accelerates the block." }
+      { "label": "B", "text": "The full Normal force vector, drawn perpendicular to the surface", "isCorrect": false, "explanation": "The Normal force is entirely perpendicular to the incline surface and has zero component along it, so it cannot cause acceleration down the slope." },
+      { "label": "C", "text": "The full Weight vector, exactly as drawn (straight down), with no resolving", "isCorrect": false, "explanation": "Only the COMPONENT of Weight along the incline surface matters for motion along the incline -- not the full straight-down vector." },
+      { "label": "D", "text": "Neither force has any component along the incline, since they are drawn at right angles", "isCorrect": false, "explanation": "Weight does have a nonzero component along the incline (unless the incline is perfectly flat), which is exactly what accelerates the block." }
     ],
     "explanation": "Only the component of Weight parallel to the incline surface contributes to acceleration along the incline; the Normal force is entirely perpendicular to it.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/free-body-diagrams",
@@ -226,10 +226,10 @@
     "difficulty": "easy",
     "stem": "What does Newton's First Law (the law of inertia) state?",
     "choices": [
-      { "label": "A", "text": "An object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted upon by a net external force", "isCorrect": true, "explanation": "This is the standard statement of Newton's First Law -- the law of inertia." },
-      { "label": "B", "text": "Force equals mass times acceleration", "isCorrect": false, "explanation": "This describes Newton's SECOND Law, not the First Law." },
-      { "label": "C", "text": "For every action there is an equal and opposite reaction", "isCorrect": false, "explanation": "This describes Newton's THIRD Law, not the First Law." },
-      { "label": "D", "text": "Objects always eventually come to rest due to their own inertia", "isCorrect": false, "explanation": "This misrepresents inertia -- inertia is the tendency to RESIST changes in motion, not a tendency to naturally slow down." }
+      { "label": "A", "text": "An object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted on by a net external force", "isCorrect": true, "explanation": "This is the standard statement of Newton's First Law -- the law of inertia." },
+      { "label": "B", "text": "Force equals mass times acceleration, so any net force on an object changes its motion in proportion to its mass", "isCorrect": false, "explanation": "This describes Newton's SECOND Law, not the First Law." },
+      { "label": "C", "text": "For every action there is an equal and opposite reaction, acting on two different objects", "isCorrect": false, "explanation": "This describes Newton's THIRD Law, not the First Law." },
+      { "label": "D", "text": "Objects always eventually come to rest due to their own inertia, even when no forces act on them at all in empty space", "isCorrect": false, "explanation": "This misrepresents inertia -- inertia is the tendency to RESIST changes in motion, not a tendency to naturally slow down." }
     ],
     "explanation": "Newton's First Law: an object's velocity stays constant unless acted upon by a net external force.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/newtons-first-law",
@@ -275,9 +275,9 @@
     "stem": "What is \"inertia\"?",
     "choices": [
       { "label": "A", "text": "An object's tendency to resist a change in its state of motion, proportional to its mass", "isCorrect": true, "explanation": "Inertia is the resistance to changes in motion, and it scales directly with an object's mass." },
-      { "label": "B", "text": "A type of force that pushes objects forward", "isCorrect": false, "explanation": "Inertia isn't a force at all -- it's a property (resistance to changes in motion) that objects possess due to their mass." },
-      { "label": "C", "text": "The speed at which an object naturally moves", "isCorrect": false, "explanation": "Inertia doesn't describe or determine a natural speed -- it describes resistance to changes in motion, regardless of what that motion currently is." },
-      { "label": "D", "text": "A force that only applies to moving objects, not stationary ones", "isCorrect": false, "explanation": "Inertia applies to ALL objects, whether at rest or in motion -- both resist changes to their current state." }
+      { "label": "B", "text": "A type of force that pushes objects forward along their path of motion", "isCorrect": false, "explanation": "Inertia isn't a force at all -- it's a property (resistance to changes in motion) that objects possess due to their mass." },
+      { "label": "C", "text": "The speed at which an object naturally moves when no force acts on it", "isCorrect": false, "explanation": "Inertia doesn't describe or determine a natural speed -- it describes resistance to changes in motion, regardless of what that motion currently is." },
+      { "label": "D", "text": "A force that only applies to moving objects, not stationary ones, and fades with time", "isCorrect": false, "explanation": "Inertia applies to ALL objects, whether at rest or in motion -- both resist changes to their current state." }
     ],
     "explanation": "Inertia is an object's tendency to resist changes in its motion, proportional to its mass.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/newtons-first-law",
@@ -291,9 +291,9 @@
     "stem": "A hockey puck slides across frictionless ice at constant velocity. According to Newton's First Law, what force is required to keep it moving?",
     "choices": [
       { "label": "A", "text": "No additional force is required -- the puck continues at constant velocity on its own due to inertia", "isCorrect": true, "explanation": "With no net force (frictionless surface), the puck's inertia keeps it moving at constant velocity indefinitely, with no force needed to sustain the motion." },
-      { "label": "B", "text": "A continuously applied force in the direction of motion is required", "isCorrect": false, "explanation": "This is a common misconception -- constant velocity requires ZERO net force, not a continuously applied force." },
-      { "label": "C", "text": "A force equal to the puck's weight is required", "isCorrect": false, "explanation": "The puck's weight is already balanced by the normal force from the ice; no additional horizontal force is needed to sustain constant velocity." },
-      { "label": "D", "text": "The puck will naturally slow down and stop even without friction", "isCorrect": false, "explanation": "Without friction (or any other force), the puck will NOT naturally slow down -- it continues at constant velocity by inertia." }
+      { "label": "B", "text": "A continuously applied force in the direction of motion is required to overcome the puck's inertia to keep it sliding", "isCorrect": false, "explanation": "This is a common misconception -- constant velocity requires ZERO net force, not a continuously applied force." },
+      { "label": "C", "text": "A force equal to the puck's weight is required, directed upward from the ice", "isCorrect": false, "explanation": "The puck's weight is already balanced by the normal force from the ice; no additional horizontal force is needed to sustain constant velocity." },
+      { "label": "D", "text": "The puck will naturally slow down and stop even without friction, since motion requires a cause", "isCorrect": false, "explanation": "Without friction (or any other force), the puck will NOT naturally slow down -- it continues at constant velocity by inertia." }
     ],
     "explanation": "No force is needed to sustain constant velocity motion; inertia keeps the puck moving in the absence of a net force.",
     "conceptLink": "ap-physics-1/unit-2-dynamics/newtons-first-law",

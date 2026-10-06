@@ -7,9 +7,9 @@
     "stem": "What are the rotational analogs of linear position, velocity, and acceleration?",
     "choices": [
       { "label": "A", "text": "Angular position (θ), angular velocity (ω), and angular acceleration (α)", "isCorrect": true, "explanation": "These are the standard rotational quantities that parallel linear position, velocity, and acceleration." },
-      { "label": "B", "text": "Mass, force, and torque", "isCorrect": false, "explanation": "These aren't kinematic quantities describing rotational motion itself -- torque and force relate to causing rotation, not describing it directly." },
-      { "label": "C", "text": "Momentum, energy, and power", "isCorrect": false, "explanation": "These are dynamic/energy quantities, not the direct rotational analogs of position, velocity, and acceleration." },
-      { "label": "D", "text": "There are no rotational analogs to linear kinematics", "isCorrect": false, "explanation": "Rotational motion has well-established analogs (θ, ω, α) that directly parallel linear kinematics (x, v, a)." }
+      { "label": "B", "text": "Mass, force, and torque, in that order of analogy", "isCorrect": false, "explanation": "These aren't kinematic quantities describing rotational motion itself -- torque and force relate to causing rotation, not describing it directly." },
+      { "label": "C", "text": "Momentum, energy, and power, in that order of analogy", "isCorrect": false, "explanation": "These are dynamic/energy quantities, not the direct rotational analogs of position, velocity, and acceleration." },
+      { "label": "D", "text": "There are no rotational analogs to linear kinematics, since rotation is unrelated", "isCorrect": false, "explanation": "Rotational motion has well-established analogs (θ, ω, α) that directly parallel linear kinematics (x, v, a)." }
     ],
     "explanation": "Angular position (θ), angular velocity (ω), and angular acceleration (α) are the rotational analogs of linear position, velocity, and acceleration.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-kinematics",
@@ -70,7 +70,7 @@
     "difficulty": "medium",
     "stem": "How is the linear (tangential) speed $v$ of a point on a rotating object related to the object's angular velocity $\\omega$?",
     "choices": [
-      { "label": "A", "text": "$v = r\\omega$, where r is the point's distance from the rotation axis", "isCorrect": true, "explanation": "This is the standard relationship between linear (tangential) speed and angular velocity." },
+      { "label": "A", "text": "$v = r\\omega$", "isCorrect": true, "explanation": "This is the standard relationship between linear (tangential) speed and angular velocity." },
       { "label": "B", "text": "$v = \\omega/r$", "isCorrect": false, "explanation": "This incorrectly divides ω by r; the correct relationship is the product v=rω." },
       { "label": "C", "text": "$v = \\omega$, independent of r", "isCorrect": false, "explanation": "Linear speed depends on BOTH ω and the radius r -- points farther from the axis move faster (linearly) for the same ω." },
       { "label": "D", "text": "$v = r + \\omega$", "isCorrect": false, "explanation": "This is not a sum -- v is the PRODUCT of r and ω, not their sum." }
@@ -102,7 +102,7 @@
     "difficulty": "easy",
     "stem": "What is the formula for the magnitude of torque produced by a force?",
     "choices": [
-      { "label": "A", "text": "$\\tau = rF\\sin\\theta$, where r is the distance from the pivot to where the force is applied, F is the force magnitude, and θ is the angle between them", "isCorrect": true, "explanation": "This is the standard formula for torque magnitude." },
+      { "label": "A", "text": "$\\tau = rF\\sin\\theta$", "isCorrect": true, "explanation": "This is the standard formula for torque magnitude." },
       { "label": "B", "text": "$\\tau = F/r$", "isCorrect": false, "explanation": "Torque is not force divided by distance -- it involves the product rF (scaled by sinθ)." },
       { "label": "C", "text": "$\\tau = ma$", "isCorrect": false, "explanation": "This is Newton's Second Law for linear force, not the formula for torque." },
       { "label": "D", "text": "$\\tau = r + F$", "isCorrect": false, "explanation": "Torque is not a sum of r and F -- it's their product, scaled by sinθ." }
@@ -150,10 +150,10 @@
     "difficulty": "medium",
     "stem": "Why is it easier to open a door by pushing near the doorknob (far from the hinge) than by pushing near the hinge itself?",
     "choices": [
-      { "label": "A", "text": "Because torque is proportional to the distance from the pivot (lever arm), so the same force produces more torque at a greater distance", "isCorrect": true, "explanation": "τ=rF·sinθ shows torque increases with r; pushing farther from the hinge produces more torque for the same applied force." },
-      { "label": "B", "text": "Because pushing near the hinge requires more force due to friction", "isCorrect": false, "explanation": "Friction isn't the primary reason here -- the key factor is the geometric relationship between torque and the lever arm distance r." },
-      { "label": "C", "text": "There is no actual difference in difficulty based on where you push", "isCorrect": false, "explanation": "There IS a real, significant difference -- pushing farther from the hinge produces much more torque for the same force, making the door easier to open." },
-      { "label": "D", "text": "Because the door is heavier near the hinge", "isCorrect": false, "explanation": "A door's mass distribution isn't the reason for this effect -- it's specifically about the lever-arm distance in the torque formula." }
+      { "label": "A", "text": "Because torque is proportional to the lever arm (distance from the pivot), so the same force gives more torque farther out", "isCorrect": true, "explanation": "τ=rF·sinθ shows torque increases with r; pushing farther from the hinge produces more torque for the same applied force." },
+      { "label": "B", "text": "Because pushing near the hinge requires more force due to friction in the hinge's bearings and the weight of the door", "isCorrect": false, "explanation": "Friction isn't the primary reason here -- the key factor is the geometric relationship between torque and the lever arm distance r." },
+      { "label": "C", "text": "There is no actual difference in difficulty based on where you push the door", "isCorrect": false, "explanation": "There IS a real, significant difference -- pushing farther from the hinge produces much more torque for the same force, making the door easier to open." },
+      { "label": "D", "text": "Because the door is heavier near the hinge, so it resists being moved there", "isCorrect": false, "explanation": "A door's mass distribution isn't the reason for this effect -- it's specifically about the lever-arm distance in the torque formula." }
     ],
     "explanation": "Torque is proportional to the lever arm distance r, so pushing farther from the hinge produces more torque for the same force.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/torque",
@@ -168,8 +168,8 @@
     "choices": [
       { "label": "A", "text": "90° (force perpendicular to the lever arm)", "isCorrect": true, "explanation": "Since τ=rF·sinθ, torque is maximized when sinθ=1, which occurs at θ=90°." },
       { "label": "B", "text": "0° (force parallel to the lever arm)", "isCorrect": false, "explanation": "At θ=0°, sinθ=0, giving ZERO torque -- this is the minimum, not the maximum." },
-      { "label": "C", "text": "45°", "isCorrect": false, "explanation": "While torque is nonzero at 45°, sin(45°)≈0.707 is less than sin(90°)=1, so 45° doesn't maximize torque." },
-      { "label": "D", "text": "Torque doesn't depend on the angle at all", "isCorrect": false, "explanation": "Torque explicitly depends on the angle via the sinθ factor in τ=rF·sinθ." }
+      { "label": "C", "text": "45° (halfway between parallel and perpendicular)", "isCorrect": false, "explanation": "While torque is nonzero at 45°, sin(45°)≈0.707 is less than sin(90°)=1, so 45° doesn't maximize torque." },
+      { "label": "D", "text": "Torque doesn't depend on the angle between them at all", "isCorrect": false, "explanation": "Torque explicitly depends on the angle via the sinθ factor in τ=rF·sinθ." }
     ],
     "explanation": "Torque is maximized when the force is perpendicular (90°) to the lever arm, since sin(90°)=1.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/torque",
@@ -230,10 +230,10 @@
     "difficulty": "hard",
     "stem": "Can an object be in translational equilibrium (net force = 0) but NOT in rotational equilibrium (net torque ≠ 0)?",
     "choices": [
-      { "label": "A", "text": "Yes -- for example, two equal and opposite forces applied at different points on an object can have zero net force but still produce a nonzero net torque (causing it to spin)", "isCorrect": true, "explanation": "This is a classic example (a \"force couple\"): equal, opposite, non-collinear forces sum to zero net force but produce a nonzero net torque." },
-      { "label": "B", "text": "No -- translational equilibrium always guarantees rotational equilibrium too", "isCorrect": false, "explanation": "This isn't guaranteed -- forces can sum to zero (translational equilibrium) while still producing a net torque if they're applied at different points (not collinear)." },
-      { "label": "C", "text": "No -- if net force is zero, the object cannot be experiencing any forces at all", "isCorrect": false, "explanation": "Net force being zero doesn't mean no forces are acting -- multiple nonzero forces can still sum to a net force of zero." },
-      { "label": "D", "text": "This situation is physically impossible", "isCorrect": false, "explanation": "This situation is not only possible, but a well-known and important scenario in rotational mechanics -- a \"force couple.\"" }
+      { "label": "A", "text": "Yes -- e.g., two equal and opposite forces applied at different points can have zero net force but a nonzero net torque (causing a spin)", "isCorrect": true, "explanation": "This is a classic example (a \"force couple\"): equal, opposite, non-collinear forces sum to zero net force but produce a nonzero net torque." },
+      { "label": "B", "text": "No -- translational equilibrium always guarantees rotational equilibrium too, because zero net force means no torque", "isCorrect": false, "explanation": "This isn't guaranteed -- forces can sum to zero (translational equilibrium) while still producing a net torque if they're applied at different points (not collinear)." },
+      { "label": "C", "text": "No -- if net force is zero, the object cannot be experiencing any forces at all, so there is no torque either", "isCorrect": false, "explanation": "Net force being zero doesn't mean no forces are acting -- multiple nonzero forces can still sum to a net force of zero." },
+      { "label": "D", "text": "This situation is physically impossible, since zero net force always implies zero net torque", "isCorrect": false, "explanation": "This situation is not only possible, but a well-known and important scenario in rotational mechanics -- a \"force couple.\"" }
     ],
     "explanation": "Yes -- equal, opposite, non-collinear forces (a \"force couple\") can have zero net force but a nonzero net torque.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-equilibrium",
@@ -262,10 +262,10 @@
     "difficulty": "medium",
     "stem": "How does an object's \"center of gravity\" relate to its stability?",
     "choices": [
-      { "label": "A", "text": "An object is more stable (less likely to tip over) when its center of gravity is lower and positioned over its base of support", "isCorrect": true, "explanation": "A lower center of gravity, positioned within the base of support, means gravity's torque about the tipping edge is less likely to cause the object to topple." },
-      { "label": "B", "text": "Center of gravity has no relationship to stability", "isCorrect": false, "explanation": "Center of gravity position is actually THE key factor determining an object's rotational stability against tipping." },
-      { "label": "C", "text": "An object is more stable when its center of gravity is higher", "isCorrect": false, "explanation": "This is backward -- a HIGHER center of gravity generally makes an object LESS stable (more prone to tipping), not more." },
-      { "label": "D", "text": "Stability only depends on an object's mass, not its center of gravity's position", "isCorrect": false, "explanation": "Stability depends heavily on the POSITION of the center of gravity relative to the base of support, not simply on total mass." }
+      { "label": "A", "text": "An object is more stable (less likely to tip) when its center of gravity is lower and positioned over its base of support", "isCorrect": true, "explanation": "A lower center of gravity, positioned within the base of support, means gravity's torque about the tipping edge is less likely to cause the object to topple." },
+      { "label": "B", "text": "Center of gravity has no relationship to stability, which depends only on an object's size", "isCorrect": false, "explanation": "Center of gravity position is actually THE key factor determining an object's rotational stability against tipping." },
+      { "label": "C", "text": "An object is more stable when its center of gravity is higher, because it is then farther from the ground", "isCorrect": false, "explanation": "This is backward -- a HIGHER center of gravity generally makes an object LESS stable (more prone to tipping), not more." },
+      { "label": "D", "text": "Stability only depends on an object's mass, not on the position of its center of gravity", "isCorrect": false, "explanation": "Stability depends heavily on the POSITION of the center of gravity relative to the base of support, not simply on total mass." }
     ],
     "explanation": "An object is more stable when its center of gravity is lower and positioned over its base of support.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/rotational-equilibrium",
@@ -294,10 +294,10 @@
     "difficulty": "easy",
     "stem": "What does \"moment of inertia\" (rotational inertia) describe?",
     "choices": [
-      { "label": "A", "text": "An object's resistance to changes in its rotational motion, analogous to how mass resists changes in linear motion", "isCorrect": true, "explanation": "Moment of inertia is the rotational analog of mass -- it quantifies resistance to angular acceleration." },
-      { "label": "B", "text": "The total mass of an object", "isCorrect": false, "explanation": "Moment of inertia depends on both mass AND how that mass is distributed relative to the rotation axis, not just total mass alone." },
-      { "label": "C", "text": "An object's angular velocity", "isCorrect": false, "explanation": "Moment of inertia is a property of the object's mass distribution, not a measure of how fast it's currently rotating." },
-      { "label": "D", "text": "The force required to lift an object", "isCorrect": false, "explanation": "Moment of inertia relates to ROTATIONAL motion resistance, not the force needed to lift an object against gravity." }
+      { "label": "A", "text": "An object's resistance to changes in its rotational motion, analogous to mass resisting changes in linear motion", "isCorrect": true, "explanation": "Moment of inertia is the rotational analog of mass -- it quantifies resistance to angular acceleration." },
+      { "label": "B", "text": "The total mass of an object, which determines how hard it is to lift", "isCorrect": false, "explanation": "Moment of inertia depends on both mass AND how that mass is distributed relative to the rotation axis, not just total mass alone." },
+      { "label": "C", "text": "An object's angular velocity, the rate at which its angle changes", "isCorrect": false, "explanation": "Moment of inertia is a property of the object's mass distribution, not a measure of how fast it's currently rotating." },
+      { "label": "D", "text": "The force required to lift an object against gravity at constant speed through a given height", "isCorrect": false, "explanation": "Moment of inertia relates to ROTATIONAL motion resistance, not the force needed to lift an object against gravity." }
     ],
     "explanation": "Moment of inertia describes an object's resistance to changes in rotational motion, analogous to mass for linear motion.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
@@ -310,10 +310,10 @@
     "difficulty": "medium",
     "stem": "Two objects have the same total mass, but Object A has its mass concentrated close to the rotation axis, while Object B has its mass spread farther from the axis. How do their moments of inertia compare?",
     "choices": [
-      { "label": "A", "text": "Object B has a greater moment of inertia, since moment of inertia increases with distance from the axis (I∝r² for a point mass)", "isCorrect": true, "explanation": "Since I=mr² for a point mass (and similarly for extended distributions), mass farther from the axis contributes more to the moment of inertia." },
-      { "label": "B", "text": "Object A has a greater moment of inertia", "isCorrect": false, "explanation": "This is backward -- mass CLOSER to the axis contributes LESS to moment of inertia, not more." },
-      { "label": "C", "text": "Their moments of inertia are equal, since they have the same total mass", "isCorrect": false, "explanation": "Moment of inertia depends on the DISTRIBUTION of mass (not just total mass), so these two objects have different moments of inertia despite equal mass." },
-      { "label": "D", "text": "Moment of inertia doesn't depend on how mass is distributed", "isCorrect": false, "explanation": "Moment of inertia depends critically on mass distribution relative to the axis -- this is a defining feature distinguishing it from simple mass." }
+      { "label": "A", "text": "Object B has a greater moment of inertia, since it increases with distance from the axis (I∝r² for a point mass)", "isCorrect": true, "explanation": "Since I=mr² for a point mass (and similarly for extended distributions), mass farther from the axis contributes more to the moment of inertia." },
+      { "label": "B", "text": "Object A has a greater moment of inertia, since its mass is gathered together", "isCorrect": false, "explanation": "This is backward -- mass CLOSER to the axis contributes LESS to moment of inertia, not more." },
+      { "label": "C", "text": "Their moments of inertia are equal, since they have the same total mass and the same shape", "isCorrect": false, "explanation": "Moment of inertia depends on the DISTRIBUTION of mass (not just total mass), so these two objects have different moments of inertia despite equal mass." },
+      { "label": "D", "text": "Moment of inertia doesn't depend on how mass is distributed about the axis, only on its total value", "isCorrect": false, "explanation": "Moment of inertia depends critically on mass distribution relative to the axis -- this is a defining feature distinguishing it from simple mass." }
     ],
     "explanation": "Since I∝r² for distributed mass, mass farther from the axis (Object B) results in a greater moment of inertia.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
@@ -374,10 +374,10 @@
     "difficulty": "hard",
     "stem": "Does a uniform rod have the same moment of inertia when rotated about its center versus about one of its ends?",
     "choices": [
-      { "label": "A", "text": "No -- the moment of inertia about an end is 4 times larger than about the center ($\\frac{1}{3}ML^2$ vs $\\frac{1}{12}ML^2$), since more mass is, on average, farther from the end axis", "isCorrect": true, "explanation": "Moment of inertia depends on the specific axis chosen; for a rod, rotating about an end (where mass is, on average, farther away) gives a larger moment of inertia than about the center." },
-      { "label": "B", "text": "Yes -- moment of inertia is always the same for a given object, regardless of the axis chosen", "isCorrect": false, "explanation": "Moment of inertia explicitly DEPENDS on the choice of rotation axis -- the same object has different I values for different axes." },
-      { "label": "C", "text": "No -- the moment of inertia about the center is larger", "isCorrect": false, "explanation": "This is backward -- the moment of inertia about the END (1/3 ML²) is LARGER than about the center (1/12 ML²), not smaller." },
-      { "label": "D", "text": "Moment of inertia isn't defined for rods, only for disks and spheres", "isCorrect": false, "explanation": "Moment of inertia is well-defined for rods (and any rigid object) -- rods have standard formulas for different axes." }
+      { "label": "A", "text": "No -- the moment of inertia about an end is 4 times larger than about the center ($\\frac{1}{3}ML^2$ vs $\\frac{1}{12}ML^2$), since more mass is farther from the end axis", "isCorrect": true, "explanation": "Moment of inertia depends on the specific axis chosen; for a rod, rotating about an end (where mass is, on average, farther away) gives a larger moment of inertia than about the center." },
+      { "label": "B", "text": "Yes -- moment of inertia is always the same for a given object, regardless of the axis chosen, since it depends only on the total mass of the object and not on how the mass is arranged", "isCorrect": false, "explanation": "Moment of inertia explicitly DEPENDS on the choice of rotation axis -- the same object has different I values for different axes." },
+      { "label": "C", "text": "No -- the moment of inertia about the center is larger, since the mass is concentrated near the middle of the rod", "isCorrect": false, "explanation": "This is backward -- the moment of inertia about the END (1/3 ML²) is LARGER than about the center (1/12 ML²), not smaller." },
+      { "label": "D", "text": "Moment of inertia isn't defined for rods, only for disks and spheres, which have circular symmetry", "isCorrect": false, "explanation": "Moment of inertia is well-defined for rods (and any rigid object) -- rods have standard formulas for different axes." }
     ],
     "explanation": "A rod's moment of inertia depends on the axis: 1/3 ML² about an end (larger) vs 1/12 ML² about the center (smaller).",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/moment-of-inertia-and-rotational-kinetic-energy",
@@ -390,7 +390,7 @@
     "difficulty": "easy",
     "stem": "What is the formula for angular momentum?",
     "choices": [
-      { "label": "A", "text": "$L = I\\omega$, where I is the moment of inertia and ω is the angular velocity", "isCorrect": true, "explanation": "This is the standard formula for angular momentum, analogous to linear momentum p=mv." },
+      { "label": "A", "text": "$L = I\\omega$", "isCorrect": true, "explanation": "This is the standard formula for angular momentum, analogous to linear momentum p=mv." },
       { "label": "B", "text": "$L = mv$", "isCorrect": false, "explanation": "This is the formula for LINEAR momentum, not angular momentum." },
       { "label": "C", "text": "$L = \\tau/t$", "isCorrect": false, "explanation": "This isn't the direct formula for angular momentum -- L=Iω is the standard definition." },
       { "label": "D", "text": "$L = I/\\omega$", "isCorrect": false, "explanation": "Angular momentum is the PRODUCT of I and ω, not their quotient." }
@@ -438,10 +438,10 @@
     "difficulty": "medium",
     "stem": "A figure skater spinning with arms extended pulls her arms in close to her body. What happens to her angular velocity, and why?",
     "choices": [
-      { "label": "A", "text": "Her angular velocity increases, because pulling her arms in decreases her moment of inertia, and angular momentum (L=Iω) must stay constant", "isCorrect": true, "explanation": "With no external torque, L=Iω is conserved; decreasing I (arms pulled in) requires ω to increase proportionally." },
-      { "label": "B", "text": "Her angular velocity decreases, because her moment of inertia increases", "isCorrect": false, "explanation": "Pulling her arms IN decreases (not increases) her moment of inertia, which by conservation of L means her angular velocity INCREASES, not decreases." },
-      { "label": "C", "text": "Her angular velocity stays the same, since her mass doesn't change", "isCorrect": false, "explanation": "Even though total mass is unchanged, the DISTRIBUTION of that mass (and thus moment of inertia) changes significantly, which does affect angular velocity via conservation of L." },
-      { "label": "D", "text": "Her angular momentum increases as she pulls her arms in", "isCorrect": false, "explanation": "Her angular momentum stays CONSTANT (conserved) throughout, since there's no external torque -- it's her angular velocity that changes, not her angular momentum." }
+      { "label": "A", "text": "Her angular velocity increases, because pulling her arms in decreases her moment of inertia, and angular momentum (L=Iω) stays constant", "isCorrect": true, "explanation": "With no external torque, L=Iω is conserved; decreasing I (arms pulled in) requires ω to increase proportionally." },
+      { "label": "B", "text": "Her angular velocity decreases, because her moment of inertia increases when her arms move inward", "isCorrect": false, "explanation": "Pulling her arms IN decreases (not increases) her moment of inertia, which by conservation of L means her angular velocity INCREASES, not decreases." },
+      { "label": "C", "text": "Her angular velocity stays the same, since her mass doesn't change when she moves her arms", "isCorrect": false, "explanation": "Even though total mass is unchanged, the DISTRIBUTION of that mass (and thus moment of inertia) changes significantly, which does affect angular velocity via conservation of L." },
+      { "label": "D", "text": "Her angular momentum increases as she pulls her arms in, which makes her spin faster", "isCorrect": false, "explanation": "Her angular momentum stays CONSTANT (conserved) throughout, since there's no external torque -- it's her angular velocity that changes, not her angular momentum." }
     ],
     "explanation": "By conservation of angular momentum (L=Iω constant), decreasing moment of inertia (arms pulled in) increases angular velocity.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/angular-momentum",
@@ -470,10 +470,10 @@
     "difficulty": "medium",
     "stem": "How is conservation of angular momentum similar to conservation of linear momentum?",
     "choices": [
-      { "label": "A", "text": "Both are conserved in the absence of an external influence -- linear momentum requires no net external force, while angular momentum requires no net external torque", "isCorrect": true, "explanation": "This is the direct rotational-linear analogy: force↔torque, and momentum conservation in both cases requires the absence of the corresponding external influence." },
-      { "label": "B", "text": "They are exactly the same quantity, just with different names", "isCorrect": false, "explanation": "Linear momentum (p=mv) and angular momentum (L=Iω) are distinct quantities describing different types of motion (straight-line vs rotational), even though the conservation principles are analogous." },
-      { "label": "C", "text": "Angular momentum conservation requires no external force, just like linear momentum", "isCorrect": false, "explanation": "Angular momentum conservation specifically requires no net external TORQUE, not force -- force and torque are different (though related) quantities." },
-      { "label": "D", "text": "There is no meaningful similarity between the two conservation laws", "isCorrect": false, "explanation": "There IS a strong, direct analogy between the two -- both are conservation laws requiring the absence of a corresponding external influence (force vs torque)." }
+      { "label": "A", "text": "Both are conserved in the absence of an external influence: linear momentum needs no net external force, angular momentum needs no net external torque", "isCorrect": true, "explanation": "This is the direct rotational-linear analogy: force↔torque, and momentum conservation in both cases requires the absence of the corresponding external influence." },
+      { "label": "B", "text": "They are exactly the same quantity, just with different names, and both are measured in kg·m/s", "isCorrect": false, "explanation": "Linear momentum (p=mv) and angular momentum (L=Iω) are distinct quantities describing different types of motion (straight-line vs rotational), even though the conservation principles are analogous." },
+      { "label": "C", "text": "Angular momentum conservation requires no external force, just like linear momentum, so a torque can never change it", "isCorrect": false, "explanation": "Angular momentum conservation specifically requires no net external TORQUE, not force -- force and torque are different (though related) quantities." },
+      { "label": "D", "text": "There is no meaningful similarity between the two conservation laws, which are unrelated principles", "isCorrect": false, "explanation": "There IS a strong, direct analogy between the two -- both are conservation laws requiring the absence of a corresponding external influence (force vs torque)." }
     ],
     "explanation": "Both are conserved absent an external influence: linear momentum needs no net external force, angular momentum needs no net external torque.",
     "conceptLink": "ap-physics-1/unit-7-torque-and-rotational-motion/angular-momentum",

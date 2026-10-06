@@ -75,3 +75,18 @@ python3 apply.py        # all units (idempotent); run it again after regeneratin
 python3 stats.py        # how often the right answer is the longest / shortest
 python3 flag.py 5       # questions in unit 5 where it is still the longest
 ```
+
+## Calc AB, Physics 1 and CSA answer lengths
+
+`ap-core-pad/` does the same for the core question sets of the other three courses (the hard sets were already
+balanced). `ap-core-pad/<course>/pad_uN.py` are the overlays; every script takes the course slug first.
+
+```bash
+cd scripts/content-authoring/ap-core-pad
+python3 apply.py ap-calc            # writes the overlays into content/ap-calc/questions/unit-N.json (idempotent)
+python3 stats.py ap-calc            # how often the right answer is the longest / shortest (all, and prose-choice questions)
+python3 dump.py ap-calc 5           # unit 5's questions that still show the tell, wrong choices in file order
+python3 flag.py ap-calc 5           # the same, one line each
+python3 extend_longest.py ap-calc 5 '{"13": ", since the areas add up"}'   # second-pass: lengthen one question's longest wrong choice
+```
+
