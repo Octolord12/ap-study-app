@@ -15,3 +15,20 @@ export async function markFrqReviewed(frqPromptId: string) {
   await getDb().fRQPrompt.update({ where: { id: frqPromptId }, data: { reviewed: true } });
   revalidatePath("/admin/review");
 }
+
+// "Approve all" approves exactly the items the admin was looking at (the ids the page rendered), not
+// "everything unreviewed in the unit" at click time, so a re-seed that lands while the page is open
+// can't get content approved that nobody saw. Only rows still in this unit and still unreviewed change.
+export async function approveUnitContent(unitId: string, questionIds: string[], frqPromptIds: string[]): Promise<{ approved: number }> {
+  await requireAdminUserId();
+  const MAX = 500;
+  if (questionIds.length > MAX || frqPromptIds.length > MAX) throw new Error("Too many items");
+
+  const db = getDb();
+  const [questions, frqs] = await Promise.all([
+    questionIds.length ? db.question.updateMany({ where: { id: { in: questionIds }, unitId, reviewed: false }, data: { reviewed: true } }) : { count: 0 },
+    frqPromptIds.length ? db.fRQPrompt.updateMany({ where: { id: { in: frqPromptIds }, unitId, reviewed: false }, data: { reviewed: true } }) : { count: 0 },
+  ]);
+  revalidatePath("/admin/review");
+  return { approved: questions.count + frqs.count };
+}

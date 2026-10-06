@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { requireAdminUserId } from "@/lib/admin/session";
 import { getUnitUnreviewedContent } from "@/lib/admin/queries";
-import { markFrqReviewed, markQuestionReviewed } from "@/lib/admin/actions";
+import { approveUnitContent, markFrqReviewed, markQuestionReviewed } from "@/lib/admin/actions";
+import { ApproveAllButton } from "@/components/admin/approve-all-button";
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { Button } from "@/components/ui/button";
 import { ChoiceList, ChoiceRow } from "@/components/ui/choice";
@@ -47,6 +48,20 @@ export default async function AdminReviewUnitPage({
     })),
   );
 
+  const pendingCount = unit.questions.length + unit.frqPrompts.length;
+  const approveAll =
+    pendingCount > 0 ? (
+      <ApproveAllButton
+        count={pendingCount}
+        action={approveUnitContent.bind(
+          null,
+          unit.id,
+          unit.questions.map((q) => q.id),
+          unit.frqPrompts.map((f) => f.id),
+        )}
+      />
+    ) : null;
+
   return (
     <Page>
       <PageHeader
@@ -61,6 +76,12 @@ export default async function AdminReviewUnitPage({
         title={unit.name}
         description={unit.questions.length === 0 && unit.frqPrompts.length === 0 ? "Everything in this unit has been reviewed." : undefined}
       />
+
+      {approveAll ? (
+        <Section label="Whole unit" note="Or read each item below and approve it one at a time.">
+          {approveAll}
+        </Section>
+      ) : null}
 
       {unit.questions.length > 0 ? (
         <Section label={`Questions (${unit.questions.length})`}>
@@ -133,6 +154,8 @@ export default async function AdminReviewUnitPage({
           </div>
         </Section>
       ) : null}
+
+      {approveAll ? <Section label="Whole unit">{approveAll}</Section> : null}
     </Page>
   );
 }

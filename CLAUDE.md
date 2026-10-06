@@ -611,10 +611,24 @@ authorization-failure convention rather than a dedicated 403 page. Drill-down
 mirrors the student-facing course→unit structure: course list with pending
 counts → unit list with pending counts → actual unreviewed questions/FRQs
 with an "Approve" button (`markQuestionReviewed`/`markFrqReviewed` in
-`src/lib/admin/actions.ts`, simple `reviewed: true` updates). No user has
-`role: ADMIN` yet — promote one via `db:studio` or a one-off script (ask
-before running anything that writes to the DB directly, per the safety
-rules this session operates under).
+`src/lib/admin/actions.ts`, simple `reviewed: true` updates). Each unit page also has an
+**"Approve all N in this unit"** button (top and bottom, `ApproveAllButton`, two steps: it asks
+first because approval is what the About page counts as "checked by a person").
+`approveUnitContent(unitId, questionIds, frqPromptIds)` approves exactly the ids the page
+rendered, only those still in that unit and still unreviewed, and is admin-gated; it does not
+mean "everything unreviewed at click time", so a seed that lands while the page is open can't get
+unseen content approved. There is deliberately no course-level approve-all (it would approve
+content nobody opened). **Promoting someone to admin** is a direct database write
+(`User.role = ADMIN`): ask first. `viraj1` (the owner's account) was promoted on 2026-10-05.
+
+**Approvals survive a re-seed unless the content changed.** Approvals live only in the
+database, and the seed used to write `reviewed: false` over every row. Now `scripts/seed.ts`
+reads what is stored first and `nextReviewedFlag` (`lib/content/review-state.ts`, pure and
+tested) keeps an approval while the stored content (stem/prompt, choices, explanations, rubric,
+diagram, difficulty, type, point value) is the same as the file's, and resets it to unreviewed
+when the seed would change it. The seed prints `approvals kept: N, reset because the content
+changed: M` per course. A file that says `reviewed: true` always wins. So editing a question
+and re-seeding sends it back for review, which is the point.
 
 ### Polish and launch prep (Milestone 8, done)
 
@@ -1648,10 +1662,8 @@ in app logic — updating them should be a data edit.
 - **No middleware-level route protection** — see the proxy.ts gotcha above.
   Every protected page must call `requireUserId()` itself; there's no fallback
   if one forgets to.
-- **No user has `role: ADMIN` yet**, so `/admin/review` (Milestone 7) isn't
-  actually reachable by anyone right now. Promote a user via `db:studio` or
-  ask Claude to run a one-off script — this is a direct DB write, so it needs
-  explicit sign-off first, same as any other mutating action.
+- **Only one admin** (`viraj1`, promoted 2026-10-05), so `/admin/review` is reachable by the
+  owner only. Promoting anyone else is a direct DB write: needs explicit sign-off first.
 - **The authored content still has the correct answer in slot A ~60% of the
   time** (Calc 99%, Physics 100%, CSA 30% A / 56% B, World 26% A / 72% B). It no
   longer matters to students because choices are shuffled on every showing (see

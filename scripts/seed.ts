@@ -3,6 +3,7 @@ import path from "node:path";
 import { getDb } from "../src/lib/db";
 import { Prisma, type Difficulty } from "../src/generated/prisma/client";
 import { CourseSchema, FRQSchema, QuestionSchema, UnitSchema } from "../src/lib/content/schema";
+import { frqContentChanged, nextReviewedFlag, questionContentChanged } from "../src/lib/content/review-state";
 
 const CONTENT_DIR = path.join(__dirname, "../content");
 
@@ -72,6 +73,15 @@ async function seedCourse(courseSlug: string) {
     }
   }
 
+  // Approvals made in /admin/review live only in the database, so a re-seed has to look at what is
+  // stored: an approved item stays approved unless this seed would change its content.
+  const storedQuestions = new Map(
+    (await db.question.findMany({ where: { courseId: dbCourse.id }, include: { choices: true } })).map((q) => [q.id, q]),
+  );
+  const storedFrqs = new Map((await db.fRQPrompt.findMany({ where: { courseId: dbCourse.id } })).map((f) => [f.id, f]));
+  let approvalsKept = 0;
+  let approvalsReset = 0;
+
   let questionCount = 0;
   const questionsDir = path.join(courseDir, "questions");
   if (existsSync(questionsDir)) {
@@ -83,6 +93,13 @@ async function seedCourse(courseSlug: string) {
         const topicId = topicIdByKey.get(`${q.unit}/${q.topic}`);
         if (!unitId || !topicId) {
           throw new Error(`${file}: question ${q.id} references unknown unit/topic "${q.unit}/${q.topic}"`);
+        }
+
+        const stored = storedQuestions.get(q.id) ?? null;
+        const reviewed = nextReviewedFlag(stored, stored ? questionContentChanged(stored, q) : false, q.reviewed);
+        if (stored?.reviewed) {
+          if (reviewed) approvalsKept++;
+          else approvalsReset++;
         }
 
         const choiceData = q.choices.map((c) => ({
@@ -104,7 +121,7 @@ async function seedCourse(courseSlug: string) {
             explanation: q.explanation,
             conceptLink: q.conceptLink,
             diagram: q.diagram ?? undefined,
-            reviewed: q.reviewed,
+            reviewed,
             choices: { create: choiceData },
           },
           update: {
@@ -115,7 +132,7 @@ async function seedCourse(courseSlug: string) {
             explanation: q.explanation,
             conceptLink: q.conceptLink,
             diagram: q.diagram ?? Prisma.JsonNull,
-            reviewed: q.reviewed,
+            reviewed,
             choices: { deleteMany: {}, create: choiceData },
           },
         });
@@ -137,6 +154,13 @@ async function seedCourse(courseSlug: string) {
           throw new Error(`${file}: FRQ ${frq.id} references unknown unit/topic "${frq.unit}/${frq.topic}"`);
         }
 
+        const storedFrq = storedFrqs.get(frq.id) ?? null;
+        const frqReviewed = nextReviewedFlag(storedFrq, storedFrq ? frqContentChanged(storedFrq, frq) : false, frq.reviewed);
+        if (storedFrq?.reviewed) {
+          if (frqReviewed) approvalsKept++;
+          else approvalsReset++;
+        }
+
         await db.fRQPrompt.upsert({
           where: { id: frq.id },
           create: {
@@ -150,7 +174,7 @@ async function seedCourse(courseSlug: string) {
             rubric: frq.rubric,
             sampleResponse: frq.sampleResponse,
             diagram: frq.diagram ?? undefined,
-            reviewed: frq.reviewed,
+            reviewed: frqReviewed,
           },
           update: {
             unitId,
@@ -161,7 +185,7 @@ async function seedCourse(courseSlug: string) {
             rubric: frq.rubric,
             sampleResponse: frq.sampleResponse,
             diagram: frq.diagram ?? Prisma.JsonNull,
-            reviewed: frq.reviewed,
+            reviewed: frqReviewed,
           },
         });
         frqCount++;
@@ -170,7 +194,8 @@ async function seedCourse(courseSlug: string) {
   }
 
   console.log(
-    `✓ ${course.name}: ${unitIdBySlug.size} units, ${topicIdByKey.size} topics, ${questionCount} questions, ${frqCount} FRQs`,
+    `✓ ${course.name}: ${unitIdBySlug.size} units, ${topicIdByKey.size} topics, ${questionCount} questions, ${frqCount} FRQs` +
+      (approvalsKept + approvalsReset > 0 ? ` (approvals kept: ${approvalsKept}, reset because the content changed: ${approvalsReset})` : ""),
   );
 }
 
