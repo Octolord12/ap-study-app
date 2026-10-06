@@ -228,6 +228,12 @@
   font-size: 0.9375rem;
   line-height: 1.6;
 }
+/* The typography plugin wraps a blockquote in typographic quotes. Our passages already carry their own
+   “ ”, so the plugin's pair doubled the opening mark and put the closing one after the Source line. */
+.reading.prose blockquote p::before,
+.reading.prose blockquote p::after {
+  content: none;
+}
 .reading code,
 .reading.prose code {
   font-family: var(--font-mono);

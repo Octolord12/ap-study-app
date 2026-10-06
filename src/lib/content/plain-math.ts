@@ -56,7 +56,9 @@ function superscriptsToLatex(base: string): string {
 // content uses single-asterisk italics). In the math courses it becomes a
 // real multiplication dot; elsewhere (AP CSA, where * is Java's operator)
 // it's escaped so it stays a literal asterisk.
-const BOLD_PAIR = /(\*\*[^*\n]+\*\*)/;
+// An attribution line under a source passage (`*Source: A Cairo chronicler, 1260*`) is intentional italics
+// too: escaping its asterisks printed them literally under every History passage.
+const BOLD_PAIR = /(\*\*[^*\n]+\*\*|\*Source: [^*\n]+\*)/;
 function fixAsterisks(plain: string, replacement: string): string {
   return plain
     .split(BOLD_PAIR)

@@ -38,6 +38,12 @@ describe("normalizePlainMath", () => {
     expect(other("a\\*b")).toBe("a\\*b");
   });
 
+  it("keeps the italic Source line under a passage, in every course", () => {
+    const passage = "> \u201cA passage 2*3.\u201d\n>\n> *Source: A Cairo chronicler, 1260*";
+    expect(other(passage)).toBe("> \u201cA passage 2\\*3.\u201d\n>\n> *Source: A Cairo chronicler, 1260*");
+    expect(math(passage)).toContain("*Source: A Cairo chronicler, 1260*");
+  });
+
   it("typesets square roots, including nested parens and exponents inside", () => {
     expect(math("z = sqrt(60^2+80^2) = sqrt(10000)")).toBe("z = $\\sqrt{60^2+80^2}$ = $\\sqrt{10000}$");
     expect(math("sqrt((x+1)/2)")).toBe("$\\sqrt{(x+1)/2}$");

@@ -1022,7 +1022,12 @@ Markdown showed all of that literally.
   involved at all. Routing rubrics through markdown would have added more.
   `fixAsterisks()` in `plain-math.ts` converts a bare `*` to `·` in the math
   courses and escapes it (`\*`) elsewhere (AP CSA, where `*` is Java's
-  operator). **Intentional `**bold**` is preserved** -- confirmed by audit
+  operator). **A passage's `*Source: ...*` attribution line is preserved too** (found 2026-10-06 while testing
+  AP U.S. History in the browser: it printed with literal asterisks under every History passage, World
+  History's hard set included, because non-math courses escape asterisks). Separately, the typography
+  plugin wrapped every blockquote in typographic quotes, doubling the opening mark of our own curly quotes
+  and putting a closing one after the Source line; `globals.css` now turns that off for `.reading.prose
+  blockquote`. Both are render-time fixes, no reseed. **Intentional `**bold**` is preserved** -- confirmed by audit
   that no content anywhere uses single-asterisk italics, only 247 bold
   spans, and that count is identical before and after.
 - Final full-content audit (11,135 strings incl. rubrics, every course):
@@ -1756,6 +1761,12 @@ in app logic — updating them should be a data edit.
 
 ## Known issues / follow-ups
 
+- **Document-based questions run each document's label, source and quotation together in one paragraph**
+  ("Document 1 Source: ... \"...\""), because the prompt text separates them with single newlines, which
+  markdown joins. It is readable and is the same in World History and U.S. History. Fixing it means either
+  blank lines in the DBQ prompts (a content edit and a reseed of those prompts) or a renderer that keeps
+  line breaks (which would also change the `a)` / `b)` lines of every sample answer, probably for the better).
+
 - **The right answer is the longest choice far too often in the older courses.** Measured
   2026-10-05 (share of questions where it is the longest of four; chance is 25%): World History 87%,
   Calc AB 55%, Physics 1 51%, CSA 36% (U.S. History 29% after the fix described in "AP U.S. History").
@@ -1816,6 +1827,11 @@ in app logic — updating them should be a data edit.
   working and the new one worked, a same-minute repeat sent no second email, an unregistered address got the
   identical page and no email, the link refused a second use, and the stored token was a 64-character hash.
   Deleted afterwards (its reset row cascaded); every table count matched the baseline.
+  The AP U.S. History seed was verified in the browser with `scratch_ush` / `scratch-ush@example.com`
+  (2026-10-06): signed up, enrolled, answered a quiz question (reveal, per-choice explanations, XP), started a
+  real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
+  3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
+  real student's, matched the post-seed snapshot.
   **Old test accounts deleted 2026-10-05** (owner's request): `viraj_test`, `alex_test`,
   `deploy_smoketest`, `latex_verify_tmp`, `finalscopecheck` (all `@example.com` students). Checked first
   that nothing a real student owned hung off them: the one class they owned ("Period 3 AP CSA") had only
