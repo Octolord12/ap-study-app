@@ -4,6 +4,7 @@ import bcrypt from "bcryptjs";
 import { auth, signOut } from "@/lib/auth/config";
 import { getDb } from "@/lib/db";
 import { BCRYPT_ROUNDS } from "@/lib/auth/password";
+import { notifyPasswordChanged } from "@/lib/email/notify";
 import {
   ChangePasswordSchema,
   DeleteAccountSchema,
@@ -43,6 +44,7 @@ export async function changePasswordAction(_prev: PasswordFormState, formData: F
   // through Auth.js's own login endpoint, and not here: setting a cookie in a Server Action
   // makes Next re-render the page in the same request from the *old* cookie header, which
   // bounced the student to /login and lost this confirmation.
+  notifyPasswordChanged(user.email);
   return { message: "Password changed.", signInAs: user.email };
 }
 

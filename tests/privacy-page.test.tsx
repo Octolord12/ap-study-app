@@ -30,6 +30,13 @@ describe("privacy page", () => {
     expect(container.textContent).not.toMatch(/There is no button/);
   });
 
+  it("says the password-reset email exists, that only a fingerprint of its code is kept, and who sends it", () => {
+    const { container } = render(<PrivacyPage />);
+    expect(container.textContent).toMatch(/ask to reset your password: your email address is used to send you a one-time link that works for an hour/);
+    expect(container.textContent).toMatch(/only a fingerprint of the link's code/);
+    expect(container.textContent).toContain("Resend");
+  });
+
   it("lists the exam date among what is collected, since it is stored", () => {
     const { container } = render(<PrivacyPage />);
     expect(container.textContent).toMatch(/set an exam date for a course: that date/);

@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Privacy" };
 // Every statement here has to stay true of the code. tests/privacy-page.test.tsx
 // ties the cookie name to the code and fails if an analytics package is added;
 // if you add tracking, a new cookie, or a new kind of stored data, update this.
-const UPDATED = "October 4, 2026";
+const UPDATED = "October 5, 2026";
 
 function Points({ items }: { items: React.ReactNode[] }) {
   return (
@@ -46,6 +46,7 @@ export default function PrivacyPage() {
             "When you sign up: your name, a username, your email address and a password. The password is stored only as a salted hash, so nobody can read it.",
             "As you study: the questions you answer and the choice you made, how long each answer took, and your XP, level, streak, badges, boss battle results and timed exams.",
             "Free-response work: the answers you type and the points you give yourself.",
+            "If you ask to reset your password: your email address is used to send you a one-time link that works for an hour. We keep only a fingerprint of the link's code, not the code, and that record goes away with your account. We also email you when your password changes.",
             "If you set an exam date for a course: that date.",
             "If you use friends or classes: who your friends are, and the classes you created or joined.",
             "If you join the waitlist: your email address, and nothing else. It is used once, to tell you when a new subject is ready.",
@@ -61,6 +62,7 @@ export default function PrivacyPage() {
             "Friends see your username. Members of a class, including its owner, see the usernames of the class's members.",
             "You can leave leaderboards in Settings. That removes you from them completely.",
             "Your answers and your free-response work are private to your account.",
+            "Our email service, Resend, handles the message when we send you a password reset link or a notice that your password changed.",
             "The person who runs this site can read the database.",
           ]}
         />

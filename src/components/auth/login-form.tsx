@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 
-export function LoginForm() {
+export function LoginForm({ showForgotPassword = false }: { showForgotPassword?: boolean }) {
   // `values` refills the email after a failed login: React empties an
   // uncontrolled form when its action finishes. The password is never sent back.
   // The field's key is its refilled value: Base UI warns if the default of a
@@ -35,6 +35,11 @@ export function LoginForm() {
         <Link href="/signup" className="text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline">
           Create an account
         </Link>
+        {showForgotPassword ? (
+          <Link href="/forgot-password" className="text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline">
+            Forgot your password?
+          </Link>
+        ) : null}
       </div>
     </form>
   );

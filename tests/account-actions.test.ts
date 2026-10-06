@@ -9,6 +9,7 @@ const mocks = vi.hoisted(() => ({
     $transaction: vi.fn(),
   },
   signOut: vi.fn(),
+  notifyPasswordChanged: vi.fn(),
 }));
 
 mocks.db.user.findUnique.mockImplementation(async () => mocks.row);
@@ -22,6 +23,7 @@ mocks.signOut.mockImplementation(async () => {
 
 vi.mock("@/lib/db", () => ({ getDb: () => mocks.db }));
 vi.mock("@/lib/auth/config", () => ({ auth: async () => (mocks.userId ? { user: { id: mocks.userId } } : null), signOut: mocks.signOut }));
+vi.mock("@/lib/email/notify", () => ({ notifyPasswordChanged: mocks.notifyPasswordChanged }));
 vi.mock("bcryptjs", () => ({
   default: {
     compare: vi.fn(async (pw: string, hash: string) => hash === `hashed:${pw}`),
@@ -51,6 +53,15 @@ describe("changePasswordAction", () => {
     expect(result.error).toBeUndefined();
     expect(result.message).toBe("Password changed.");
     expect(mocks.db.user.update).toHaveBeenCalledWith({ where: { id: "user-1" }, data: { passwordHash: "hashed:brand-new-pass" } });
+  });
+
+  it("sends the account's own address a notice that the password changed, and only then", async () => {
+    await changePasswordAction({}, change({ currentPassword: "not-it" }));
+    await changePasswordAction({}, change({ confirmPassword: "different" }));
+    expect(mocks.notifyPasswordChanged).not.toHaveBeenCalled();
+    await changePasswordAction({}, change());
+    expect(mocks.notifyPasswordChanged).toHaveBeenCalledTimes(1);
+    expect(mocks.notifyPasswordChanged).toHaveBeenCalledWith("Sam@Example.com");
   });
 
   it("tells the form which account to sign this device back in as, and nothing secret", async () => {

@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { auth } from "@/lib/auth/config";
 import { LoginForm } from "@/components/auth/login-form";
 import { Page, PageHeader, Section } from "@/components/ui/page";
+import { isPasswordResetAvailable } from "@/lib/email/config";
 
 export const metadata: Metadata = { title: "Log in" };
 
@@ -14,7 +15,7 @@ export default async function LoginPage() {
     <Page>
       <PageHeader eyebrow="Account" title="Log in" description="Pick up where you left off." />
       <Section>
-        <LoginForm />
+        <LoginForm showForgotPassword={isPasswordResetAvailable()} />
       </Section>
     </Page>
   );

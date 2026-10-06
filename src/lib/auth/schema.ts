@@ -73,3 +73,28 @@ export interface PasswordFormState {
 export interface DeleteAccountFormState {
   error?: string;
 }
+
+export const ForgotPasswordSchema = z.object({ email: z.email("Enter a valid email") });
+
+export const ResetPasswordSchema = z
+  .object({
+    token: z.string(),
+    newPassword: z
+      .string()
+      .min(PASSWORD_MIN_LENGTH, `At least ${PASSWORD_MIN_LENGTH} characters`)
+      .refine((p) => !isPasswordTooLong(p), "That password is too long. Use a shorter one."),
+    confirmPassword: z.string(),
+  })
+  .refine((d) => d.newPassword === d.confirmPassword, { path: ["confirmPassword"], message: "The new passwords don't match." });
+
+export interface ForgotPasswordFormState {
+  error?: string;
+  // The same answer whether or not the address has an account.
+  sent?: boolean;
+  values?: { email: string };
+}
+
+export interface ResetPasswordFormState {
+  error?: string;
+  done?: boolean;
+}

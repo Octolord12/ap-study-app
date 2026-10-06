@@ -186,6 +186,8 @@ Full schema: `prisma/schema.prisma`. Summary:
   philosophy.
 - **Social**: `Class`, `ClassMembership`, `Friendship`, `User.leaderboardOptOut`.
 - `Enrollment.examDate` (optional, date only): see "Exam date and study plan".
+- `PasswordResetToken` (hash of the emailed code, expiry, used-at, a per-minute slot that is unique
+  per user, cascades with the user): see "Forgot password and email".
 - **Marketing**: `WaitlistSignup` (`email` unique, stored lowercased; deliberately
   not tied to `User`). Added by migration `20261004163500_add_waitlist_signup`.
 
@@ -1361,10 +1363,11 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
     therefore only covered once its token has been refreshed.
   - A database error while checking keeps the person signed in (logged by error name only)
     instead of signing everyone out; the pages that need the database fail on their own.
-- **Limits, known**: (1) there is no rate limit on password attempts (the form re-checks the
-  current password with bcrypt's ~250 ms cost as the only brake). (2) No email is sent about a
-  password change or deletion (there is no email service), and there is **no forgot-password**:
-  it needs one.
+- **Limits, known**: there is no rate limit on password *attempts* (the form re-checks the
+  current password with bcrypt's ~250 ms cost as the only brake; a Vercel Firewall rule on
+  login/reset requests would add the per-IP limit the app can't do without Redis). A password change
+  sends a notice email once email is configured (see "Forgot password and email"); deleting an
+  account sends none.
 - The privacy page says deletion and password change are in Settings; it also still
   promises access/correction and waitlist removal without an account by request.
 
@@ -1468,6 +1471,54 @@ read counts from the database, so they change when the content is seeded. Seedin
 `npm run content:seed` (a direct database write; ask first). It is **slow** (the whole bank takes
 10+ minutes) and **stops at the first connection error**, so run it in the background and check the
 row counts against the files afterwards (an interrupted run is safe to repeat: it upserts).
+
+## Forgot password and email
+
+Built 2026-10-05 and **not live until a domain is verified** (see "Turning it on"). Resend is the
+only email integration on the Vercel Marketplace, so it is the provider; it is called with one
+`fetch` (`lib/email/send.ts`), no SDK.
+
+- **Flow**: `/forgot-password` (`requestPasswordResetAction`) -> email with
+  `<SITE_URL>/reset-password?token=<code>` -> `/reset-password` (`resetPasswordAction`) sets the new
+  password under the usual rules. The login page shows "Forgot your password?" only when
+  `isPasswordResetAvailable()` (email configured, or any non-production run); `/forgot-password` says
+  "isn't available yet" otherwise. After a reset the person logs in again; every other device is
+  already signed out because the password hash changed (`credentials-stamp.ts`).
+- **No account enumeration**: the request answers identically for every address, and everything that
+  depends on whether the address has an account (lookup, throttle, token, email) runs in
+  `afterResponse()` (`lib/after-response.ts`, Next's `after`), so neither the words nor the response time
+  differ. Tested (`tests/reset-actions.test.ts`).
+- **The token**: 32 random bytes as base64url (`lib/auth/reset-token.ts`); only its SHA-256 is stored,
+  valid 60 minutes, used once. Claiming it is one atomic `updateMany` on an unused, unexpired row, so
+  two simultaneous submissions can't both succeed. A wrong new password does not use the link up. A
+  newer request retires older links, but only after the new one is safely stored.
+- **Throttle**: at most 3 requests per account per hour *and* one per minute. The per-minute part is
+  `@@unique([userId, minuteSlot])` on `PasswordResetToken`: a count-then-insert limit lets a burst of
+  simultaneous requests all pass (a test caught exactly that), the unique index does not. Rows older
+  than a day are deleted opportunistically on the next request. Per-IP limiting would be a Vercel
+  Firewall rate-limit rule on `POST /forgot-password` (not set up).
+- **Links come from configuration, never the request**: `siteUrl()` (`SITE_URL`, else
+  `NEXT_PUBLIC_SITE_URL`, else the production URL). A link built from the Host header could be pointed
+  at an attacker's site. The reset page sets `referrer: no-referrer` and `noindex` because the secret is
+  in its address.
+- **Notice emails**: `notifyPasswordChanged` (`lib/email/notify.ts`) emails the account's own address
+  after a password change in Settings or a reset, only when email is configured, so a missing key never
+  turns a password change into an error.
+- **`"use server"` files may export only async functions** (Next fails the build otherwise, and anything
+  exported is callable from the browser). That is why `RESET_LINK_INVALID`, `RESET_TOKEN_MINUTES`
+  (`reset-constants.ts`, also kept apart from `reset-token.ts` because that imports `node:crypto` and
+  can't be bundled for the client) and `isResetLinkUsable` (`reset-queries.ts`) live outside
+  `reset-actions.ts`. `tsc` does not catch this; `npm run build` does.
+- **Env** (`.env.example`): `RESEND_API_KEY`, `EMAIL_FROM` (an address on a domain verified in Resend),
+  optional `EMAIL_REPLY_TO`, optional `SITE_URL`. Without the first two, development prints the email
+  (link included) to the server console instead of sending; production sends nothing and hides the link.
+- **Turning it on** (needs the owner): a domain (the Vercel account had none; `vercel.app` can't be
+  verified for sending, and without a verified domain Resend delivers only to its owner), the Resend
+  integration installed (`vercel integration add resend/resend-email`, which sets the env vars), and the
+  migration `20261006100000_add_password_reset_token` applied *before* pushing code that reads the table.
+- **Not built**: email verification at signup (anyone can register an address they don't own; a reset
+  only ever emails the stored address, so this can't take an account over, but it can squat an address),
+  and a notice when an account is deleted.
 
 ## Footer, contact and privacy
 

@@ -37,6 +37,8 @@ model User {
   accounts Account[]
   sessions Session[]
 
+  passwordResetTokens PasswordResetToken[]
+
   enrollments       Enrollment[]
   questionAttempts  QuestionAttempt[]
   frqAttempts       FRQAttempt[]
@@ -90,6 +92,27 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+// One row per "send me a reset link" request. Only the SHA-256 of the code in the emailed link is
+// stored, so reading this table is not enough to reset anyone's password. Rows are kept after use
+// (usedAt) so the per-hour request limit can count them; they cascade away with the user.
+// minuteSlot is the minute the request fell in (epoch minutes). Unique per user, it makes "at most one
+// link a minute" something the database enforces, so a burst of simultaneous requests can't all pass
+// a count-then-insert check.
+model PasswordResetToken {
+  id         String    @id @default(cuid())
+  userId     String
+  tokenHash  String    @unique
+  minuteSlot Int
+  expiresAt  DateTime
+  usedAt     DateTime?
+  createdAt  DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, minuteSlot])
+  @@index([userId, createdAt])
 }
 
 // ---------- Content: Course -> Unit -> Topic -> Question / FRQPrompt ----------
