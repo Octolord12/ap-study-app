@@ -1804,9 +1804,10 @@ in app logic — updating them should be a data edit.
   **Left as is, on purpose**: the right answer is rarely the *shortest* choice now (Calc 4%, Physics 10%,
   CSA 5% of all questions; World and U.S. History are 12-13%), a small reverse tell. Lengthening the
   shortest wrong choice in more questions would fix it if it ever matters.
-  **Reseed needed** (not done yet): `npm run content:seed -- ap-calc` (and `ap-physics-1`, `ap-csa`).
-  It resets the admin approval of the 280 changed questions, so the unit pages in `/admin/review` need
-  "Approve all" again.
+  **Seeded and pushed 2026-10-06** (`1d0acd0`). The seed reset the approval of the 280 changed questions
+  (Calc AB 91, Physics 1 104, CSA 85; the rest kept theirs), so those units' pages in `/admin/review` need
+  "Approve all" again. Checked afterwards: every database question equals its file, and every per-user and
+  per-table count matched the pre-seed snapshot.
 
 - **`npm audit` reports vulnerabilities** in `hono`/`mysql2` — both transitive
   dev dependencies of the `prisma` CLI itself (bundled tooling for databases/
