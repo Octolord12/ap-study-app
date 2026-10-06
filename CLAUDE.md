@@ -155,7 +155,7 @@ npx tsc --noEmit       # typecheck (route types need a prior dev/build run)
 npm run db:migrate     # prisma migrate dev
 npm run db:studio      # prisma studio (browse the DB)
 npm run content:validate # check /content against the schema (see below)
-npm run content:seed     # load validated /content into Postgres (idempotent)
+npm run content:seed     # load validated /content into Postgres (idempotent); add "-- <course-slug>" to seed one course
 npm run db:seed           # validate, then seed
 ```
 

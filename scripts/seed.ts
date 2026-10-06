@@ -200,9 +200,18 @@ async function seedCourse(courseSlug: string) {
 }
 
 async function main() {
-  const courseSlugs = readdirSync(CONTENT_DIR, { withFileTypes: true })
+  const allSlugs = readdirSync(CONTENT_DIR, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name);
+
+  // `npm run content:seed -- ap-us-history` seeds just that course (the whole bank takes 10+ minutes
+  // and rewrites rows that did not change); with no arguments every course is seeded.
+  const requested = process.argv.slice(2).filter((arg) => !arg.startsWith("-"));
+  const unknown = requested.filter((slug) => !allSlugs.includes(slug));
+  if (unknown.length > 0) {
+    throw new Error(`No such course folder in /content: ${unknown.join(", ")} (have: ${allSlugs.join(", ")})`);
+  }
+  const courseSlugs = requested.length > 0 ? allSlugs.filter((slug) => requested.includes(slug)) : allSlugs;
 
   for (const slug of courseSlugs) {
     await seedCourse(slug);
