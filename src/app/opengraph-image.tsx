@@ -60,11 +60,12 @@ export default async function OpengraphImage() {
           </div>
           <div style={line}>analyzed.</div>
         </div>
-        <div style={{ display: "flex", fontSize: 28, color: GRAPHITE, gap: 32 }}>
+        <div style={{ display: "flex", fontSize: 24, color: GRAPHITE, gap: 24 }}>
           <div>Calculus AB</div>
           <div>Physics 1</div>
           <div>Computer Science A</div>
           <div>World History</div>
+          <div>U.S. History</div>
         </div>
       </div>
     ),

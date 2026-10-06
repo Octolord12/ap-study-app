@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getDb } from "@/lib/db";
 import { listCourses } from "@/lib/study/queries";
+import { countWord } from "@/lib/count-word";
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { describeExamFormat, formatDuration } from "@/lib/content/exam-format";
 import { SAMPLE_COURSE_SLUG, SAMPLE_QUESTION } from "@/lib/marketing/sample-question";
@@ -64,7 +65,7 @@ export async function Landing() {
       <div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-14">
         <div>
           <p className="reading max-w-[46ch] text-lg">
-            {totalMcq.toLocaleString("en-US")} multiple-choice questions and {totalFrq} free-response prompts across four exams. Each
+            {totalMcq.toLocaleString("en-US")} multiple-choice questions and {totalFrq} free-response prompts across {countWord(courses.length)} exams. Each
             answer choice comes with the reason it is right or wrong, so a miss teaches you something. Try the one on this
             page.
           </p>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { listCourses } from "@/lib/study/queries";
+import { countWord } from "@/lib/count-word";
 import { CourseRow } from "@/components/study/course-row";
 import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
 
@@ -35,7 +36,7 @@ export default async function CoursesPage() {
 
   return (
     <Page>
-      <PageHeader eyebrow="Courses" title="Four exams. Pick one." description="Open a course to see its units, then practice by unit, by weak spot, or under exam conditions." />
+      <PageHeader eyebrow="Courses" title={`${countWord(courses.length, true)} exams. Pick one.`} description="Open a course to see its units, then practice by unit, by weak spot, or under exam conditions." />
       {mine.length > 0 ? <Section label="Your courses">{rows(mine)}</Section> : null}
       {others.length > 0 ? <Section label={mine.length > 0 ? "More courses" : "All courses"}>{rows(others)}</Section> : null}
     </Page>
