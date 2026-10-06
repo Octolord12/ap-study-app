@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u9-frq-4",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “We took a mortgage with a low starting rate that we could afford. When the rate rose and the house lost value, we owed more than it was worth, and we could not sell or refinance.”\n>\n> *Source: A homeowner's letter, 2009*\n\n**a)** Identify ONE cause of the financial crisis reflected in the excerpt.\n\n**b)** Explain ONE way in which the federal government responded to the financial crisis in the period 2008 to 2010.\n\n**c)** Explain ONE way in which the crisis and its aftermath affected American politics or society in the period 2008 to 2012.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a cause such as risky mortgage lending, adjustable-rate mortgages, or the fall in home values after the housing bubble"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a response such as the Troubled Asset Relief Program, the 2009 stimulus package or the Dodd-Frank financial regulation law"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as widespread job loss and foreclosures, the rise of movements such as the Tea Party and Occupy Wall Street, or debates over the role of government in the economy"
+      }
+    ],
+    "sampleResponse": "a) The letter describes an adjustable-rate mortgage whose payments rose as home values fell, showing how risky mortgage lending and falling prices contributed to the crisis.\nb) Congress passed the Troubled Asset Relief Program in 2008 to rescue banks, and in 2009 the government passed a stimulus package to boost the economy.\nc) The crisis led to widespread job losses and foreclosures and contributed to political movements such as the Tea Party and Occupy Wall Street, which expressed anger over government spending and Wall Street.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-frq-5",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which conservatism changed the role of government in American life in the period 1980 to 2000.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which conservatism changed government's role"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as the Great Society, stagflation or the backlash against 1960s liberalism"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and demonstrates complex understanding, such as showing that conservative goals were achieved in some areas but that large programs and defense spending continued (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that conservatism reduced taxes and regulation and changed the way Americans debated government's role, while major programs such as Social Security and Medicare remained and government continued to grow in some areas, such as defense. It places the topic in the context of the 1960s liberalism, stagflation and the backlash against federal expansion, uses specific evidence (the 1981 tax cuts, deregulation, the PATCO strike, the rise of the Religious Right, the 1994 elections and the Contract with America, the 1996 welfare reform, Clinton's New Democrat approach, deficits and defense spending), and uses continuity and change over time to weigh how far government's role actually changed.",
+    "reviewed": false
+  }
+]

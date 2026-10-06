@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u1-frq-4",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "spanish-colonial-system",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The governors shall see that the Indians are treated with kindness and instructed in the faith. They shall not be compelled to labor beyond what is just, and shall be paid for their work. Settlements shall be planned around a central plaza, with a church and the houses of the officials.”\n>\n> *Source: Royal instructions from the Spanish Crown on new settlements, 1570s*\n\n**a)** Identify ONE goal of the Spanish Crown that is reflected in the excerpt.\n\n**b)** Explain ONE way in which the actual practices of Spanish colonists in the Americas differed from the policy stated in the excerpt.\n\n**c)** Explain ONE way in which Spanish colonization differed from French colonization in North America in the period 1491 to 1607.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a goal such as spreading Christianity, regulating the treatment of Native peoples, or creating orderly, controlled settlements"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a difference such as colonists forcing Native labor beyond what was just, mistreating Native peoples under the encomienda, or failing to pay for labor"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a difference such as Spain building large colonial societies based on Native labor and tribute while the French emphasized the fur trade and small trading communities"
+      }
+    ],
+    "sampleResponse": "a) The Crown wanted to spread Christianity among Native peoples and to organize settlements in an orderly way under royal and church authority.\nb) Although the Crown said Native people should not be forced to work beyond what was just and should be paid, colonists in the encomienda system often forced them to labor in mines and fields under harsh conditions.\nc) Spain built large colonial societies that depended on Native labor and tribute, while the French in this period focused on a small-scale fur trade and relied on trading partnerships with Native peoples.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-frq-5",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "columbian-exchange",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which contact with Europeans transformed Native American societies in the period 1491 to 1607.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which contact transformed Native American societies"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as European exploration, competition among European states, or the Columbian Exchange"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses causation or continuity and change to structure the argument (1 point), and demonstrates complex understanding, such as showing that some Native societies adapted, kept political independence or shaped colonial relations (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that contact transformed Native societies profoundly through disease and demographic collapse, new animals, new labor systems and missions, while some Native political structures, trading roles and ways of life persisted or adapted. It places contact in context (European exploration and the Columbian Exchange), uses specific evidence (smallpox epidemics, horses on the Plains, the encomienda, Spanish missions, the fur trade and Native alliances), and uses causation or continuity and change to weigh transformation against adaptation.",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-ush-u6-mcq-31",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "hard",
+    "stem": "> “A handful of corporations now control the railroads, the oil and the steel of this country, and they use that power to fix prices, hold down wages and even shape the laws that are supposed to govern them.”\n>\n> *Source: A journalist, 1890*\n\nWhich of the following best supports the argument made in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thomas Edison invented the electric light bulb and built the first power station.",
+        "isCorrect": false,
+        "explanation": "An invention does not show control over prices or wages."
+      },
+      {
+        "label": "B",
+        "text": "Standard Oil used horizontal integration and trusts to buy out rivals and dominate oil.",
+        "isCorrect": true,
+        "explanation": "The company's consolidation of the oil industry shows how a single firm could control prices and markets."
+      },
+      {
+        "label": "C",
+        "text": "Farmers formed the Grange to cooperate against high railroad rates and grain elevators.",
+        "isCorrect": false,
+        "explanation": "That shows resistance to corporate power, not the power itself."
+      },
+      {
+        "label": "D",
+        "text": "Congress passed the Pendleton Civil Service Act to create a merit system for jobs.",
+        "isCorrect": false,
+        "explanation": "That law addressed federal hiring and patronage."
+      }
+    ],
+    "explanation": "Standard Oil's consolidation illustrates the concentration of corporate power.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-32",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "hard",
+    "stem": "Which of the following was a direct effect of the expansion of railroads on American business practices in the late 1800s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Railroads encouraged businesses to produce only for local markets and avoid distant sales.",
+        "isCorrect": false,
+        "explanation": "Railroads made national markets possible."
+      },
+      {
+        "label": "B",
+        "text": "Railroads helped create national markets and led to standard time zones in 1883.",
+        "isCorrect": true,
+        "explanation": "Railroad schedules required common time standards, and national markets supported large-scale business."
+      },
+      {
+        "label": "C",
+        "text": "Railroads reduced the need for telegraphs and mail service across the country.",
+        "isCorrect": false,
+        "explanation": "Railroads and the telegraph often worked together."
+      },
+      {
+        "label": "D",
+        "text": "Railroads weakened the power of large corporations by forcing them to share profits.",
+        "isCorrect": false,
+        "explanation": "Railroads helped large corporations grow."
+      }
+    ],
+    "explanation": "Railroads created national markets and led to standardized time.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-33",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "hard",
+    "stem": "In Munn v. Illinois (1877), the Supreme Court ruled that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Fourteenth Amendment prevented all state regulation of business and private contracts.",
+        "isCorrect": false,
+        "explanation": "The Court upheld regulation in this case."
+      },
+      {
+        "label": "B",
+        "text": "monopolies were protected from all regulation by the Constitution's contract clause.",
+        "isCorrect": false,
+        "explanation": "The Court allowed regulation."
+      },
+      {
+        "label": "C",
+        "text": "states could regulate businesses that served the public interest, such as grain elevators.",
+        "isCorrect": true,
+        "explanation": "The decision upheld state authority to regulate private businesses affecting the public, which later supported railroad regulation."
+      },
+      {
+        "label": "D",
+        "text": "only Congress could regulate railroads, and states had no power to set grain prices.",
+        "isCorrect": false,
+        "explanation": "The Court upheld a state law."
+      }
+    ],
+    "explanation": "Munn v. Illinois allowed states to regulate businesses affecting the public interest.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-34",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "hard",
+    "stem": "> “In the great labor disputes of the era, government at every level usually acted to protect property and to suppress strikes rather than to mediate between workers and owners.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Samuel Gompers organized skilled workers into craft unions within the AFL in 1886 and 1887.",
+        "isCorrect": false,
+        "explanation": "That shows union organization, not government response."
+      },
+      {
+        "label": "B",
+        "text": "Congress created the Interstate Commerce Commission in 1887 to regulate railroads.",
+        "isCorrect": false,
+        "explanation": "That law regulated railroad rates and was not about strikes."
+      },
+      {
+        "label": "C",
+        "text": "In 1877, President Hayes sent federal troops to help end a nationwide railroad strike.",
+        "isCorrect": true,
+        "explanation": "The use of troops against strikers shows the government acting to restore order for employers."
+      },
+      {
+        "label": "D",
+        "text": "The Knights of Labor called for the eight-hour day and an end to child labor.",
+        "isCorrect": false,
+        "explanation": "That shows a labor demand, not government action."
+      }
+    ],
+    "explanation": "Federal troops against the railroad strike support the claim that government sided against strikers.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-35",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "hard",
+    "stem": "Eugene Debs's role in the Pullman Strike and his later turn to socialism most directly illustrates which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A rejection of all labor organization in favor of direct bargaining with company owners.",
+        "isCorrect": false,
+        "explanation": "Debs remained committed to organizing workers."
+      },
+      {
+        "label": "B",
+        "text": "Some labor leaders turned to socialism after concluding that unions alone could not prevail.",
+        "isCorrect": true,
+        "explanation": "The government's use of an injunction and troops convinced Debs that political change was necessary."
+      },
+      {
+        "label": "C",
+        "text": "Support for the Gospel of Wealth and the belief that business leaders should guide society.",
+        "isCorrect": false,
+        "explanation": "Debs rejected the argument for business leadership."
+      },
+      {
+        "label": "D",
+        "text": "A belief that the government was always neutral in labor disputes between workers and owners.",
+        "isCorrect": false,
+        "explanation": "Debs experienced the government acting against the strikers."
+      }
+    ],
+    "explanation": "Debs's experience led him to look for political solutions.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-36",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "hard",
+    "stem": "Which best explains the decline of the Knights of Labor after 1886?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A merger with the Populist Party, which absorbed most of its members and its leaders.",
+        "isCorrect": false,
+        "explanation": "The Knights did not merge with the Populists."
+      },
+      {
+        "label": "B",
+        "text": "A backlash after Haymarket, failed strikes and competition from the narrower American Federation of Labor.",
+        "isCorrect": true,
+        "explanation": "Several setbacks combined to cause the Knights to lose members and influence."
+      },
+      {
+        "label": "C",
+        "text": "A federal law that banned the organization after a series of violent strikes in the West.",
+        "isCorrect": false,
+        "explanation": "No such law existed."
+      },
+      {
+        "label": "D",
+        "text": "The achievement of all of its main goals, such as the eight-hour day, which made the organization unnecessary by 1890.",
+        "isCorrect": false,
+        "explanation": "The Knights did not achieve their major goals."
+      }
+    ],
+    "explanation": "Haymarket, failed strikes and AFL competition weakened the Knights.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-37",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "hard",
+    "stem": "> “Immigrants did not simply abandon their old ways. They built ethnic neighborhoods, newspapers, churches and mutual aid societies that eased their adjustment while preserving their cultures.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Congress passed the Chinese Exclusion Act in 1882 to limit immigration from China and Asia.",
+        "isCorrect": false,
+        "explanation": "That law restricted immigration."
+      },
+      {
+        "label": "B",
+        "text": "Political machines traded jobs and services for votes in immigrant wards of large cities.",
+        "isCorrect": false,
+        "explanation": "That shows political incorporation, not cultural preservation."
+      },
+      {
+        "label": "C",
+        "text": "Skyscrapers changed the skylines of American cities as steel frames and elevators spread widely in the 1880s and 1890s.",
+        "isCorrect": false,
+        "explanation": "That concerns urban architecture."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhoods such as Little Italy and the Lower East Side supported foreign-language newspapers and churches.",
+        "isCorrect": true,
+        "explanation": "Such institutions let immigrants keep their cultures while adapting to the United States."
+      }
+    ],
+    "explanation": "Ethnic neighborhoods and institutions show immigrants preserving cultures.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-38",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "hard",
+    "stem": "Advocates of the Social Gospel, such as Walter Rauschenbusch, argued that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the government should have no role in reform and that churches and private charities should handle every problem.",
+        "isCorrect": false,
+        "explanation": "Many Social Gospel leaders supported reform, including by government."
+      },
+      {
+        "label": "B",
+        "text": "religion should stay entirely separate from social problems and focus on spiritual life.",
+        "isCorrect": false,
+        "explanation": "Social Gospel leaders wanted religious engagement."
+      },
+      {
+        "label": "C",
+        "text": "Christians had a duty to address poverty and poor housing by applying religious principles to reform.",
+        "isCorrect": true,
+        "explanation": "The Social Gospel connected religion to efforts to improve urban conditions."
+      },
+      {
+        "label": "D",
+        "text": "poverty was a sign of moral failure and was not society's concern in a Christian nation.",
+        "isCorrect": false,
+        "explanation": "The Social Gospel rejected that view."
+      }
+    ],
+    "explanation": "The Social Gospel applied Christian ethics to urban and industrial problems.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-39",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "hard",
+    "stem": "Jacob Riis's photographs and writings in How the Other Half Lives (1890) were significant because they",
+    "choices": [
+      {
+        "label": "A",
+        "text": "exposed conditions in crowded tenements and helped build support for urban reform.",
+        "isCorrect": true,
+        "explanation": "Riis brought attention to slum conditions in New York."
+      },
+      {
+        "label": "B",
+        "text": "defended conditions in the tenements as acceptable for newly arrived immigrants.",
+        "isCorrect": false,
+        "explanation": "Riis criticized those conditions."
+      },
+      {
+        "label": "C",
+        "text": "promoted the construction of skyscrapers and steel-frame housing for the poor.",
+        "isCorrect": false,
+        "explanation": "Skyscrapers were not the subject of the book."
+      },
+      {
+        "label": "D",
+        "text": "argued that immigrants should be excluded from the large cities and sent to farms.",
+        "isCorrect": false,
+        "explanation": "Riis's work was aimed at reform and not exclusion."
+      }
+    ],
+    "explanation": "Riis's work exposed urban poverty and encouraged reform.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-40",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "hard",
+    "stem": "> “The aim is to remove the Indian from the child and save the man. Taken from their villages, the children will learn English, wear our clothes and give up tribal ways, that they may take their place as citizens.”\n>\n> *Source: A school superintendent, 1880s*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Federal support for the preservation of Native languages and customs in government boarding schools.",
+        "isCorrect": false,
+        "explanation": "The passage calls for giving up tribal ways."
+      },
+      {
+        "label": "B",
+        "text": "Federal assimilation policy that tried to end Native cultures through boarding schools.",
+        "isCorrect": true,
+        "explanation": "The speaker describes removing children from their communities and teaching them to give up their customs."
+      },
+      {
+        "label": "C",
+        "text": "A treaty guaranteeing Native self-government and control of their own schools.",
+        "isCorrect": false,
+        "explanation": "The passage is about assimilation of children."
+      },
+      {
+        "label": "D",
+        "text": "Native efforts to create their own schools and teach children their languages.",
+        "isCorrect": false,
+        "explanation": "The speaker describes a government policy."
+      }
+    ],
+    "explanation": "The passage reflects the boarding school policy of forced assimilation.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-41",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "hard",
+    "stem": "The Wounded Knee massacre of 1890",
+    "choices": [
+      {
+        "label": "A",
+        "text": "led Congress to return land to the Lakota and restore their treaty rights in the Black Hills.",
+        "isCorrect": false,
+        "explanation": "Land was not returned."
+      },
+      {
+        "label": "B",
+        "text": "marked the end of armed Native resistance on the Plains, after troops killed many Lakota people.",
+        "isCorrect": true,
+        "explanation": "The event is often seen as the end of the Indian Wars."
+      },
+      {
+        "label": "C",
+        "text": "was a Native victory that expelled the army from the Great Plains and ended the Indian Wars.",
+        "isCorrect": false,
+        "explanation": "Many Lakota were killed by troops."
+      },
+      {
+        "label": "D",
+        "text": "occurred during the Civil War and was fought by Union troops against the Confederate-allied tribes.",
+        "isCorrect": false,
+        "explanation": "It occurred in 1890."
+      }
+    ],
+    "explanation": "Wounded Knee marked the end of major armed resistance on the Plains.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-42",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "hard",
+    "stem": "Which factors brought the era of open-range cattle ranching to an end by the late 1880s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Barbed wire, severe winters and overgrazing, and expanding farm settlement.",
+        "isCorrect": true,
+        "explanation": "Fencing, harsh weather and settlement closed the open range."
+      },
+      {
+        "label": "B",
+        "text": "A federal ban on cattle drives across state lines and public lands.",
+        "isCorrect": false,
+        "explanation": "No such ban was the main cause."
+      },
+      {
+        "label": "C",
+        "text": "The end of railroads in the West after the Panic of 1893 closed lines.",
+        "isCorrect": false,
+        "explanation": "Railroads expanded in the West."
+      },
+      {
+        "label": "D",
+        "text": "The decline in demand for beef in eastern cities and in European markets after 1885.",
+        "isCorrect": false,
+        "explanation": "Demand for beef remained strong."
+      }
+    ],
+    "explanation": "Fencing, harsh weather and settlement ended open-range ranching.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-43",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "hard",
+    "stem": "> “The election of 1896 marked the triumph of the industrial Northeast over the agrarian movements of the South and West and ushered in a long period of Republican dominance.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Congress passed the Sherman Antitrust Act in 1890 to limit monopolies and trusts.",
+        "isCorrect": false,
+        "explanation": "That concerns business regulation."
+      },
+      {
+        "label": "B",
+        "text": "The Supreme Court decided Plessy v. Ferguson in 1896, upholding segregated railway cars in Louisiana.",
+        "isCorrect": false,
+        "explanation": "That concerns segregation and not the election's political results."
+      },
+      {
+        "label": "C",
+        "text": "The Populist Party won several Southern and Western states in the election of 1892.",
+        "isCorrect": false,
+        "explanation": "That shows Populist strength earlier."
+      },
+      {
+        "label": "D",
+        "text": "McKinley defeated Bryan, and Republicans held the presidency for most of the next decades.",
+        "isCorrect": true,
+        "explanation": "The result and its aftermath fit the claim of lasting Republican dominance."
+      }
+    ],
+    "explanation": "McKinley's victory and later Republican control support the historian's claim.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-44",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "hard",
+    "stem": "In the Civil Rights Cases of 1883, the Supreme Court ruled that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the federal government could ban segregation in all public places and private businesses.",
+        "isCorrect": false,
+        "explanation": "The Court ruled against that reading."
+      },
+      {
+        "label": "B",
+        "text": "the Fourteenth Amendment did not bar private discrimination, striking down the Civil Rights Act of 1875.",
+        "isCorrect": true,
+        "explanation": "The Court limited federal power to prohibit private discrimination."
+      },
+      {
+        "label": "C",
+        "text": "separate but equal railway facilities were unconstitutional under the Fourteenth Amendment's equal protection clause.",
+        "isCorrect": false,
+        "explanation": "That was not the holding."
+      },
+      {
+        "label": "D",
+        "text": "states could not pass laws that restricted voting through poll taxes or literacy tests.",
+        "isCorrect": false,
+        "explanation": "The decision concerned private discrimination."
+      }
+    ],
+    "explanation": "The decision limited federal power over private discrimination.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-45",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "hard",
+    "stem": "Ida B. Wells's antilynching campaign in the 1890s",
+    "choices": [
+      {
+        "label": "A",
+        "text": "led Congress to pass a federal antilynching law in the 1890s and to prosecute offenders.",
+        "isCorrect": false,
+        "explanation": "No federal antilynching law was passed then."
+      },
+      {
+        "label": "B",
+        "text": "documented lynchings and challenged the claim that they punished crime, drawing wide attention.",
+        "isCorrect": true,
+        "explanation": "Wells's investigations exposed the use of lynching to enforce racial control."
+      },
+      {
+        "label": "C",
+        "text": "ended lynching throughout the South within a few years of her investigations, speeches and newspaper articles.",
+        "isCorrect": false,
+        "explanation": "Lynching continued for decades."
+      },
+      {
+        "label": "D",
+        "text": "persuaded the Supreme Court to overturn Plessy v. Ferguson and end segregated schools.",
+        "isCorrect": false,
+        "explanation": "Plessy was not overturned until much later."
+      }
+    ],
+    "explanation": "Wells documented lynching and challenged its justifications.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "slug": "unit-6-gilded-age",
+  "order": 6,
+  "name": "The Gilded Age (1865-1898)",
+  "weightingMin": 10,
+  "weightingMax": 17,
+  "topics": [
+    {
+      "slug": "industrialization-and-business",
+      "order": 1,
+      "name": "Industrialization and Big Business"
+    },
+    {
+      "slug": "labor-and-unions",
+      "order": 2,
+      "name": "Labor and Unions"
+    },
+    {
+      "slug": "immigration-and-urbanization",
+      "order": 3,
+      "name": "Immigration and Urbanization"
+    },
+    {
+      "slug": "western-settlement-and-native-americans",
+      "order": 4,
+      "name": "Western Settlement and Native Americans"
+    },
+    {
+      "slug": "politics-populism-and-jim-crow",
+      "order": 5,
+      "name": "Politics, Populism and Jim Crow"
+    }
+  ]
+}

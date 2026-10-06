@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u2-frq-1",
+    "unit": "unit-2-colonial-america",
+    "topic": "slavery-and-labor-systems",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “In the Chesapeake, the demand for labor in the tobacco fields was met first by indentured servants from England and later increasingly by enslaved Africans. The shift was not inevitable; it came as planters feared the unrest of poor freed servants and as the supply of English servants dwindled.”\n>\n> *Source: A historian, late twentieth century*\n\n**a)** Identify ONE argument made by the historian.\n\n**b)** Explain ONE historical development in the period 1607 to 1754 that contributed to the shift described in the excerpt.\n\n**c)** Explain ONE way in which the growth of slavery shaped colonial society in the period 1607 to 1754.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies an argument, such as that the shift to slavery was not inevitable, that planters feared unrest among poor freed servants, or that the supply of English servants fell"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as Bacon's Rebellion alarming elites, rising English wages reducing migration, or growing access to enslaved Africans through the Atlantic slave trade"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as slave codes creating hereditary, race-based slavery, the growth of a plantation economy in the South, or the development of a racial hierarchy in colonial law"
+      }
+    ],
+    "sampleResponse": "a) The historian argues that planters shifted from indentured servants to enslaved Africans in part because they feared the unrest of freed servants and the supply of English servants fell, and that the shift was not inevitable.\nb) Bacon's Rebellion in 1676 alarmed Virginia's elite about the danger of large numbers of poor, landless former servants, which contributed to a preference for enslaved African labor.\nc) Colonial assemblies passed slave codes that made slavery hereditary and race-based, creating a legal and social hierarchy that shaped the plantation economy of the Chesapeake and the lower South.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-frq-2",
+    "unit": "unit-2-colonial-america",
+    "topic": "english-colonies-founding",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “We must remember that the eyes of the world are upon us. If we keep covenant with God and with one another, we shall be an example to all peoples; if we fail, we shall be a warning to them.”\n>\n> *Source: A Massachusetts minister's sermon, 1630s*\n\n**a)** Identify ONE belief about the purpose of the colony reflected in the excerpt.\n\n**b)** Explain ONE way in which Puritan beliefs shaped New England society in the period 1630 to 1700.\n\n**c)** Explain ONE way in which the founding goals of ANOTHER English colony differed from those of Massachusetts Bay.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a belief such as that the colony should be a model for others or that its success depends on keeping a covenant with God and one another"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains an effect such as town-centered communities, a focus on education and literacy, church membership shaping political rights, or the punishment and banishment of dissenters"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a difference such as Virginia's commercial, profit-seeking purpose, Pennsylvania's toleration, Maryland's refuge for Catholics, or Rhode Island's separation of church and civil government"
+      }
+    ],
+    "sampleResponse": "a) The minister believed the colony should be a model Christian society whose success depended on keeping its covenant with God and with one another.\nb) Puritan beliefs led to town-centered communities, an emphasis on literacy so people could read scripture, and laws that tied political participation to church membership while punishing dissenters such as Anne Hutchinson.\nc) Virginia was founded as a commercial venture by a joint-stock company seeking profit, rather than as a religious model community like Massachusetts Bay.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-frq-3",
+    "unit": "unit-2-colonial-america",
+    "topic": "atlantic-economy-and-mercantilism",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE way in which the Navigation Acts were intended to benefit England.\n\n**b)** Identify ONE way in which colonists responded to or evaded the Navigation Acts in the period 1650 to 1750.\n\n**c)** Explain ONE reason that the British government enforced its trade regulations loosely in the early 1700s.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a benefit such as keeping colonial trade within the empire, increasing English shipping and customs revenue, or ensuring colonies supplied raw materials"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies a response such as smuggling, trading with the French West Indies, resisting the Dominion of New England, or ignoring customs officers"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a reason such as distance and weak enforcement, Britain's focus on wars in Europe, or the benefit Britain gained from colonial growth, often called salutary neglect"
+      }
+    ],
+    "sampleResponse": "a) The Navigation Acts forced colonial goods to travel through England and on English ships, which increased English shipping, customs revenue and control of raw materials.\nb) Colonial merchants smuggled goods and traded with the French West Indies to avoid restrictions and duties.\nc) Britain's government was distracted by wars and politics in Europe, and since the colonies were growing and profitable, officials allowed lax enforcement, a policy later called salutary neglect.",
+    "reviewed": false
+  }
+]

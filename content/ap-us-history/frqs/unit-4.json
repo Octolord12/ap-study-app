@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u4-frq-1",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The market revolution did not simply bring prosperity. It divided the nation by region and class: the Northeast into factory and commerce, the West into farms tied to eastern markets by canals and railroads, and the South into plantations that supplied cotton to the world.”\n>\n> *Source: A historian, early twenty-first century*\n\n**a)** Identify ONE claim made by the historian.\n\n**b)** Explain ONE development in the period 1800 to 1848 that supports the historian's argument.\n\n**c)** Explain ONE way in which the market revolution affected politics or society in the United States in the period 1800 to 1848.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a claim, such as that the market revolution divided the nation by region and class, or that each region specialized in a different economic activity"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as canals and railroads linking western farms to eastern markets, factory production in the Northeast, or the cotton boom increasing slavery in the South"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as the growth of cities and wage labor, the rise of nativism, changes in family roles, or political conflicts over tariffs, the bank and internal improvements"
+      }
+    ],
+    "sampleResponse": "a) The historian argues that the market revolution divided the country by region and class, with each region developing a distinct economy.\nb) The Erie Canal and later railroads linked western farms to eastern markets, while the cotton boom in the South expanded plantation slavery to supply textile mills.\nc) The market revolution fueled the growth of cities and wage labor, and debates over tariffs, the national bank and internal improvements became central to national politics.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-frq-2",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The bank gives special privileges to a few wealthy stockholders at the expense of farmers and laborers. Where the government grants favors to the rich, ordinary citizens have just cause to complain.”\n>\n> *Source: A president's veto message, 1832*\n\n**a)** Identify ONE perspective expressed in the excerpt about the Second Bank of the United States.\n\n**b)** Explain ONE way in which the excerpt reflects broader ideas of Jacksonian democracy.\n\n**c)** Explain ONE consequence of the conflict over the national bank in the 1830s.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies the view that the bank favored wealthy stockholders and harmed ordinary citizens"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains that Jacksonian democracy stressed the common man, opposed special privilege and expanded popular influence over government"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a consequence such as the removal of federal deposits to state banks, the rise of the Whig Party, inflation and the Panic of 1837, or the reelection of Jackson"
+      }
+    ],
+    "sampleResponse": "a) The president argues that the bank gave special privileges to wealthy stockholders at the expense of ordinary farmers and laborers.\nb) The message reflects Jacksonian democracy's emphasis on ordinary white men and its opposition to special privilege and concentrated economic power.\nc) After the veto, Jackson moved federal deposits to state banks, which encouraged speculation that contributed to the Panic of 1837, and opposition to Jackson helped form the Whig Party.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-frq-3",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE reform movement in the United States in the period 1820 to 1848.\n\n**b)** Identify a SECOND, DIFFERENT reform movement in the same period.\n\n**c)** Explain ONE way in which the Second Great Awakening influenced reform movements in the period 1820 to 1848.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a reform movement such as abolitionism, temperance, women's rights, public education reform or prison and asylum reform"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies a second, different reform movement from the same list"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains that the Second Great Awakening stressed individual responsibility and the possibility of moral improvement, which motivated people to reform society (for example, evangelical activism in abolitionism and temperance)"
+      }
+    ],
+    "sampleResponse": "a) The temperance movement sought to reduce or end the consumption of alcohol.\nb) The abolitionist movement sought to end slavery in the United States.\nc) The Second Great Awakening taught that individuals could improve themselves and that Christians had a duty to reform society, which inspired many evangelical Protestants to join movements such as abolitionism and temperance.",
+    "reviewed": false
+  }
+]

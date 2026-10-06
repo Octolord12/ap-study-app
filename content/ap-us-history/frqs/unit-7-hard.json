@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u7-frq-4",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "world-war-two",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “We are fighting for victory over fascism abroad and for victory over discrimination at home. A double victory is our aim.”\n>\n> *Source: A Black newspaper editorial, 1942*\n\n**a)** Identify ONE argument made in the excerpt.\n\n**b)** Explain ONE way in which World War II contributed to the civil rights movement.\n\n**c)** Explain ONE limit on wartime progress for racial equality in the United States.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies the argument that the fight against fascism abroad should be matched by a fight against racial discrimination at home"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a contribution such as Executive Order 8802 banning discrimination in defense industries, the growth of the NAACP and CORE, or Black migration to industrial cities increasing political influence"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a limit such as continued segregation in the armed forces, the internment of Japanese Americans, or race riots such as Detroit in 1943"
+      }
+    ],
+    "sampleResponse": "a) The editorial argues that the war against fascism abroad should also be a war against discrimination at home.\nb) Pressure from A. Philip Randolph led President Roosevelt to issue Executive Order 8802, which banned discrimination in defense industries and opened some jobs to Black workers.\nc) The armed forces remained segregated throughout the war, and racial tensions led to riots such as the one in Detroit in 1943.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-frq-5",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "depression-and-new-deal",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the New Deal changed the relationship between the federal government and the American people in the period 1933 to 1945.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which the New Deal changed the federal government's relationship with the people"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as the Great Depression, Hoover's limited response or earlier Progressive-era reform"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and demonstrates complex understanding, such as showing that the New Deal expanded government yet excluded some groups or failed to end the Depression before the war (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that the New Deal permanently expanded the government's responsibility for economic security and regulation while leaving some inequalities, including racial and gender inequalities, largely in place. It places the topic in the context of the Great Depression and earlier limited government, uses specific evidence (the FDIC and SEC, the Social Security Act, the Wagner Act, the WPA and CCC, the Agricultural Adjustment Act, critics such as Huey Long and the Supreme Court's rulings, and the continuing high unemployment until the war), and uses continuity and change over time to weigh transformation against limits.",
+    "reviewed": false
+  }
+]

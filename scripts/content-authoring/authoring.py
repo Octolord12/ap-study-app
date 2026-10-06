@@ -36,8 +36,9 @@ def force_diagram(vectors, altText, objectLabel=None, incline=None):
 
 
 class Bank:
-    def __init__(self, course, id_prefix, unit_num, unit_slug, mcq_start=31, frq_start=4):
+    def __init__(self, course, id_prefix, unit_num, unit_slug, mcq_start=31, frq_start=4, suffix="-hard"):
         self.course, self.prefix, self.n, self.unit = course, id_prefix, unit_num, unit_slug
+        self.suffix = suffix
         self.mcq_start, self.frq_start = mcq_start, frq_start
         self.mcqs, self.frqs = [], []
 
@@ -77,10 +78,10 @@ class Bank:
 
     def save(self):
         base = os.path.join(CONTENT, self.course)
-        with open(os.path.join(base, "questions", f"unit-{self.n}-hard.json"), "w") as fh:
+        with open(os.path.join(base, "questions", f"unit-{self.n}{self.suffix}.json"), "w") as fh:
             json.dump(self.mcqs, fh, indent=2, ensure_ascii=False)
             fh.write("\n")
-        with open(os.path.join(base, "frqs", f"unit-{self.n}-hard.json"), "w") as fh:
+        with open(os.path.join(base, "frqs", f"unit-{self.n}{self.suffix}.json"), "w") as fh:
             json.dump(self.frqs, fh, indent=2, ensure_ascii=False)
             fh.write("\n")
         print(f"{self.course} unit {self.n}: wrote {len(self.mcqs)} MCQs and {len(self.frqs)} FRQs")

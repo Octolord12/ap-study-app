@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u4-frq-4",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The removal of the Indians beyond the Mississippi will open fertile lands to our citizens, end a cause of conflict between the states and the tribes, and give the Indians a place to live undisturbed under the care of the government.”\n>\n> *Source: A president's message to Congress, 1830*\n\n**a)** Identify ONE argument made in the excerpt in support of Indian removal.\n\n**b)** Explain ONE way in which Native nations resisted removal in the 1830s.\n\n**c)** Explain ONE effect of the removal policy on Native peoples in the period 1830 to 1848.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies an argument such as opening land to white settlers, ending conflict between states and Native nations, or providing Native peoples a place to live under federal protection"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a form of resistance such as the Cherokee suing in the Supreme Court, petitioning Congress, or the Seminoles fighting a war in Florida"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as forced migration on the Trail of Tears with great loss of life, loss of homelands, or disruption of Native societies"
+      }
+    ],
+    "sampleResponse": "a) The president argues that removal would open fertile land for American citizens and end conflicts between states and Native nations.\nb) The Cherokee Nation challenged removal in the Supreme Court and won in Worcester v. Georgia, and the Seminoles fought the United States in Florida.\nc) Removal forced tens of thousands of Native people to leave their homelands, and many died on journeys such as the Trail of Tears, disrupting their societies and communities.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-frq-5",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which Jacksonian democracy expanded democratic participation and ideals in the United States in the period 1824 to 1848.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which democratic participation and ideals expanded"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as the end of the Era of Good Feelings, the market revolution or the rise of the second party system"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and demonstrates complex understanding, such as showing that expansion for some groups coincided with restrictions on others (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that Jacksonian democracy greatly expanded political participation among white men but did so while excluding or restricting Native peoples, free Black men, enslaved people and women. It places the topic in the context of the market revolution, the end of property requirements and the decline of the early party system, uses specific evidence (the elimination of property qualifications, party conventions and popular campaigns, the spoils system, the Bank War, the Indian Removal Act, restrictions on free Black voters, the gag rule), and uses continuity and change to weigh expansion against exclusion.",
+    "reviewed": false
+  }
+]

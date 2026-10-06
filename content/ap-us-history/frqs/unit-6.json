@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u6-frq-1",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The industrial boom of the late nineteenth century created both unprecedented wealth and unprecedented conflict. The same system that built fortunes for a few left many workers insecure and angry.”\n>\n> *Source: A historian, early twenty-first century*\n\n**a)** Identify ONE claim made by the historian.\n\n**b)** Explain ONE development in the period 1865 to 1898 that supports the historian's claim about the creation of great wealth.\n\n**c)** Explain ONE way in which workers or reformers responded to the conflicts described in the excerpt in the period 1865 to 1898.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a claim, such as that industrialization produced both great wealth and conflict, or that it left many workers insecure"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as the expansion of railroads, consolidation of industries such as steel and oil, or technological innovation that allowed a few industrialists to build vast fortunes"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a response such as the growth of unions like the Knights of Labor and the AFL, strikes such as Homestead and Pullman, or the Populist movement and political reform proposals"
+      }
+    ],
+    "sampleResponse": "a) The historian argues that industrialization created great wealth for some people and also created conflict because many workers felt insecure.\nb) Industrialists such as Carnegie and Rockefeller used railroads and consolidation of production to build enormous steel and oil businesses that produced huge fortunes.\nc) Workers formed unions such as the Knights of Labor and the American Federation of Labor and carried out strikes such as the Homestead Strike to demand better wages and conditions.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-frq-2",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “We believe that the money of the country should be expanded to relieve debtors, that the railroads should be owned by the people, and that senators should be chosen by direct vote of the people rather than by legislatures controlled by corporations.”\n>\n> *Source: A farmers' convention platform, 1892*\n\n**a)** Identify ONE grievance expressed in the excerpt.\n\n**b)** Explain ONE way in which the demands in the excerpt reflected economic conditions faced by farmers in the late 1800s.\n\n**c)** Explain ONE reason that the Populist movement declined after 1896.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a grievance such as debt, the power of railroads or corporate influence over legislatures"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a connection such as falling crop prices and deflation making debts harder to repay, so farmers wanted more money in circulation, or high railroad rates motivating a call for public ownership"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a reason such as the defeat of William Jennings Bryan in 1896, the Democratic Party absorbing the silver issue, or improving economic conditions and new gold discoveries"
+      }
+    ],
+    "sampleResponse": "a) The platform objects to the burden of debt on farmers and to corporate influence over government.\nb) Crop prices were falling, so farmers' debts became harder to repay, and they wanted an expanded money supply and public ownership of railroads whose rates they believed were unfair.\nc) Populism declined after Bryan, backed by the Populists and Democrats, lost the election of 1896, and the Democratic Party absorbed the silver issue.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-frq-3",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE reason that immigrants came to the United States in the period 1865 to 1900.\n\n**b)** Identify ONE challenge that immigrants faced in American cities in the same period.\n\n**c)** Explain ONE way in which nativists or the federal government responded to immigration in the period 1865 to 1900.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a reason such as economic opportunity, escape from poverty, or escape from religious persecution such as pogroms against Jews"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies a challenge such as crowded tenement housing, low wages, discrimination or cultural adjustment"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a response such as the Chinese Exclusion Act of 1882 limiting immigration, or nativist organizations calling for restrictions on immigration"
+      }
+    ],
+    "sampleResponse": "a) Many immigrants came to the United States seeking jobs in growing industries and cities.\nb) Many immigrants lived in crowded tenements with poor sanitation and worked for low wages.\nc) In 1882 Congress passed the Chinese Exclusion Act, which banned the immigration of Chinese laborers in response to anti-Chinese prejudice and economic competition fears.",
+    "reviewed": false
+  }
+]

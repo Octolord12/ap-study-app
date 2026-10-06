@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-ush-u8-mcq-1",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "easy",
+    "stem": "The GI Bill of 1944 helped expand the American middle class by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ending all taxes on corporations and small businesses that hired returning veterans.",
+        "isCorrect": false,
+        "explanation": "The GI Bill did not address corporate taxes."
+      },
+      {
+        "label": "B",
+        "text": "giving veterans education benefits, low-interest home loans and other aid.",
+        "isCorrect": true,
+        "explanation": "Many veterans attended college and bought homes with federal help."
+      },
+      {
+        "label": "C",
+        "text": "banning all unions in defense industries and limiting union membership for veterans.",
+        "isCorrect": false,
+        "explanation": "The GI Bill did not restrict unions."
+      },
+      {
+        "label": "D",
+        "text": "giving every citizen a guaranteed annual income and free public housing after the war.",
+        "isCorrect": false,
+        "explanation": "The benefits were targeted at veterans."
+      }
+    ],
+    "explanation": "The GI Bill provided education and housing benefits to veterans.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-2",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "medium",
+    "stem": "Which factors most encouraged the rapid growth of suburbs after World War II?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A decline in the birth rate that left many city neighborhoods nearly empty.",
+        "isCorrect": false,
+        "explanation": "The postwar years saw a baby boom."
+      },
+      {
+        "label": "B",
+        "text": "Federally backed mortgages, mass-produced housing such as Levittown, and highways.",
+        "isCorrect": true,
+        "explanation": "Government programs, building methods and cars made suburban homes widely available."
+      },
+      {
+        "label": "C",
+        "text": "Strict laws that forced families to leave the cities and settle on the urban edge.",
+        "isCorrect": false,
+        "explanation": "Suburban growth was largely voluntary."
+      },
+      {
+        "label": "D",
+        "text": "The elimination of the automobile industry and a boom in streetcar and rail travel.",
+        "isCorrect": false,
+        "explanation": "Automobiles were central to suburban growth."
+      }
+    ],
+    "explanation": "Mortgages, mass-produced housing and highways drove suburban growth.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-3",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "medium",
+    "stem": "> “I have a lovely house, a kind husband and three healthy children. Yet there are days I feel as if something is missing, as if my education and my talents are going to waste.”\n>\n> *Source: A housewife's letter to a magazine, 1960*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Support for the Equal Rights Amendment, which Congress had passed and sent to the states.",
+        "isCorrect": false,
+        "explanation": "The passage is from 1960 and expresses personal unease."
+      },
+      {
+        "label": "B",
+        "text": "A demand for women to be drafted into military service during the Korean War era.",
+        "isCorrect": false,
+        "explanation": "The passage does not discuss the draft."
+      },
+      {
+        "label": "C",
+        "text": "Growing dissatisfaction among middle-class women with domesticity, which helped inspire feminism.",
+        "isCorrect": true,
+        "explanation": "The writer describes an unease that works such as The Feminine Mystique helped to name."
+      },
+      {
+        "label": "D",
+        "text": "Satisfaction with the traditional roles of women in the 1950s and a defense of the home.",
+        "isCorrect": false,
+        "explanation": "The writer expresses dissatisfaction."
+      }
+    ],
+    "explanation": "The passage reflects the discontent that fueled second-wave feminism.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-4",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "medium",
+    "stem": "The Taft-Hartley Act of 1947",
+    "choices": [
+      {
+        "label": "A",
+        "text": "guaranteed workers the right to a closed shop in every industry and every state.",
+        "isCorrect": false,
+        "explanation": "The act restricted the closed shop."
+      },
+      {
+        "label": "B",
+        "text": "restricted practices such as the closed shop and allowed state right-to-work laws.",
+        "isCorrect": true,
+        "explanation": "The law limited union power."
+      },
+      {
+        "label": "C",
+        "text": "created the Social Security system and the national fund for unemployed workers.",
+        "isCorrect": false,
+        "explanation": "That was done in 1935."
+      },
+      {
+        "label": "D",
+        "text": "banned all strikes permanently in industries that were important to national defense.",
+        "isCorrect": false,
+        "explanation": "The act did not ban all strikes."
+      }
+    ],
+    "explanation": "Taft-Hartley limited the power of unions.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-5",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "hard",
+    "stem": "Which statement best describes how postwar prosperity affected African Americans and the poor?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Many were kept out of suburbs by redlining and stayed in declining cities or rural poverty.",
+        "isCorrect": true,
+        "explanation": "Prosperity was not shared equally."
+      },
+      {
+        "label": "B",
+        "text": "African Americans moved to the suburbs in large numbers and bought homes with federal loans.",
+        "isCorrect": false,
+        "explanation": "Discrimination limited their access to suburbs."
+      },
+      {
+        "label": "C",
+        "text": "All groups benefited equally from federal housing programs and mortgage insurance in suburbs.",
+        "isCorrect": false,
+        "explanation": "Many programs excluded minorities."
+      },
+      {
+        "label": "D",
+        "text": "Poverty was eliminated by the 1950s as wages rose across all regions and every group.",
+        "isCorrect": false,
+        "explanation": "Poverty remained."
+      }
+    ],
+    "explanation": "Discrimination limited access to prosperity.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-6",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "hard",
+    "stem": "The Federal-Aid Highway Act of 1956",
+    "choices": [
+      {
+        "label": "A",
+        "text": "created a national railroad system under federal ownership to replace the private lines.",
+        "isCorrect": false,
+        "explanation": "It created highways."
+      },
+      {
+        "label": "B",
+        "text": "banned automobile travel across state lines in order to save fuel and protect railroads.",
+        "isCorrect": false,
+        "explanation": "It promoted travel."
+      },
+      {
+        "label": "C",
+        "text": "ended federal spending on roads and left all highway construction to the individual states.",
+        "isCorrect": false,
+        "explanation": "The act greatly increased spending."
+      },
+      {
+        "label": "D",
+        "text": "funded the interstate highway system, partly for defense, which encouraged suburban growth.",
+        "isCorrect": true,
+        "explanation": "The law transformed American transportation and settlement."
+      }
+    ],
+    "explanation": "The highway act created the interstate system and encouraged suburbs.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-7",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "easy",
+    "stem": "The policy of containment aimed to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "encourage communist revolutions abroad in order to divide the Soviet bloc.",
+        "isCorrect": false,
+        "explanation": "Containment opposed communism's spread."
+      },
+      {
+        "label": "B",
+        "text": "withdraw American troops from Europe and avoid all military alliances there.",
+        "isCorrect": false,
+        "explanation": "The policy led to a stronger presence."
+      },
+      {
+        "label": "C",
+        "text": "invade the Soviet Union and overthrow its communist government by force.",
+        "isCorrect": false,
+        "explanation": "Containment did not seek direct invasion."
+      },
+      {
+        "label": "D",
+        "text": "stop the spread of communism rather than roll it back where it existed.",
+        "isCorrect": true,
+        "explanation": "Containment was the central strategy of early Cold War policy."
+      }
+    ],
+    "explanation": "Containment sought to limit communism's spread.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-8",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "medium",
+    "stem": "The Marshall Plan of 1948 sought to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "punish Germany with harsh reparations and the permanent loss of its industry.",
+        "isCorrect": false,
+        "explanation": "The plan aided recovery, including in West Germany."
+      },
+      {
+        "label": "B",
+        "text": "provide military aid only to Asia and the Pacific, not to any European nation.",
+        "isCorrect": false,
+        "explanation": "The plan was for Europe."
+      },
+      {
+        "label": "C",
+        "text": "rebuild Western European economies with American aid and limit communist influence.",
+        "isCorrect": true,
+        "explanation": "American aid helped European recovery."
+      },
+      {
+        "label": "D",
+        "text": "send American troops to occupy Western Europe and run its governments for a decade.",
+        "isCorrect": false,
+        "explanation": "The plan provided economic aid."
+      }
+    ],
+    "explanation": "The Marshall Plan aided European recovery to counter communism.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-9",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "medium",
+    "stem": "> “If one nation in Southeast Asia falls to communism, its neighbors will fall one after another, like a row of dominoes.”\n>\n> *Source: An administration spokesman, 1954*\n\nThe idea expressed in the passage was most often used to justify which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Marshall Plan for rebuilding Western Europe.",
+        "isCorrect": false,
+        "explanation": "The Marshall Plan was in 1948 and aimed at Europe."
+      },
+      {
+        "label": "B",
+        "text": "American isolationism and withdrawal from Asia.",
+        "isCorrect": false,
+        "explanation": "The theory justified involvement, not isolation."
+      },
+      {
+        "label": "C",
+        "text": "American involvement in Southeast Asia and Vietnam.",
+        "isCorrect": true,
+        "explanation": "The domino theory supported intervention to stop communism's spread in Asia."
+      },
+      {
+        "label": "D",
+        "text": "The creation of the League of Nations after World War I.",
+        "isCorrect": false,
+        "explanation": "The League was created after World War I."
+      }
+    ],
+    "explanation": "The domino theory justified American involvement in Vietnam.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-10",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "medium",
+    "stem": "The Cuban Missile Crisis of 1962 was resolved when",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cuba withdrew from the Western Hemisphere and asked the Soviet Union to take over its government.",
+        "isCorrect": false,
+        "explanation": "That is not what occurred."
+      },
+      {
+        "label": "B",
+        "text": "the Soviets removed their missiles in exchange for a pledge not to invade Cuba and a secret deal on Turkey.",
+        "isCorrect": true,
+        "explanation": "Both sides made concessions to avoid war."
+      },
+      {
+        "label": "C",
+        "text": "the United States invaded Cuba and overthrew the government that had accepted the Soviet missiles.",
+        "isCorrect": false,
+        "explanation": "The United States did not invade."
+      },
+      {
+        "label": "D",
+        "text": "the Soviet Union launched missiles at the United States after Kennedy's naval blockade failed.",
+        "isCorrect": false,
+        "explanation": "No missiles were launched."
+      }
+    ],
+    "explanation": "A negotiated settlement ended the crisis.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-11",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "hard",
+    "stem": "The Gulf of Tonkin Resolution of 1964",
+    "choices": [
+      {
+        "label": "A",
+        "text": "gave Johnson broad authority to use force in Vietnam without a formal declaration of war.",
+        "isCorrect": true,
+        "explanation": "The resolution became the basis for escalation."
+      },
+      {
+        "label": "B",
+        "text": "ended American involvement in Vietnam and withdrew all advisers and ships from the region.",
+        "isCorrect": false,
+        "explanation": "The resolution allowed escalation."
+      },
+      {
+        "label": "C",
+        "text": "declared war on North Vietnam and authorized a large draft of American men for the war.",
+        "isCorrect": false,
+        "explanation": "Congress did not declare war."
+      },
+      {
+        "label": "D",
+        "text": "required Johnson to seek congressional approval for each military action in Vietnam.",
+        "isCorrect": false,
+        "explanation": "It gave him broad authority."
+      }
+    ],
+    "explanation": "The resolution authorized broad presidential action in Vietnam.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-12",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "hard",
+    "stem": "President Nixon's policy of détente included",
+    "choices": [
+      {
+        "label": "A",
+        "text": "arms control with the Soviet Union, such as SALT I, and the opening of relations with China.",
+        "isCorrect": true,
+        "explanation": "Nixon eased tensions with both communist powers."
+      },
+      {
+        "label": "B",
+        "text": "the withdrawal of the United States from NATO and from its major alliances in Asia.",
+        "isCorrect": false,
+        "explanation": "The United States stayed in NATO."
+      },
+      {
+        "label": "C",
+        "text": "a ban on all trade with communist countries, including the Soviet Union, China and Cuba.",
+        "isCorrect": false,
+        "explanation": "Détente increased contact and trade."
+      },
+      {
+        "label": "D",
+        "text": "an immediate military attack on China to destroy its nuclear weapons program.",
+        "isCorrect": false,
+        "explanation": "Nixon opened relations with China."
+      }
+    ],
+    "explanation": "Détente involved arms control and the opening to China.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-13",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "easy",
+    "stem": "In Brown v. Board of Education (1954), the Supreme Court ruled that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "racial segregation in public schools was unconstitutional under the Fourteenth Amendment.",
+        "isCorrect": true,
+        "explanation": "The Court overturned the separate but equal doctrine in education."
+      },
+      {
+        "label": "B",
+        "text": "segregation in public schools was permitted as long as facilities were roughly equal.",
+        "isCorrect": false,
+        "explanation": "That was the rule of Plessy that Brown rejected."
+      },
+      {
+        "label": "C",
+        "text": "Congress could not pass civil rights laws that applied to the individual states or schools.",
+        "isCorrect": false,
+        "explanation": "The case concerned segregated schools."
+      },
+      {
+        "label": "D",
+        "text": "states could ban integration of public schools if local voters approved it.",
+        "isCorrect": false,
+        "explanation": "The Court ruled against segregation."
+      }
+    ],
+    "explanation": "Brown held that segregated public schools were unconstitutional.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-14",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "medium",
+    "stem": "The Montgomery Bus Boycott of 1955 and 1956",
+    "choices": [
+      {
+        "label": "A",
+        "text": "began after Rosa Parks's arrest, was led by Martin Luther King Jr. and ended bus segregation.",
+        "isCorrect": true,
+        "explanation": "The boycott showed the power of sustained nonviolent protest."
+      },
+      {
+        "label": "B",
+        "text": "was a boycott of stores by white Southerners opposed to the integration of the city's buses.",
+        "isCorrect": false,
+        "explanation": "The boycott was led by African Americans."
+      },
+      {
+        "label": "C",
+        "text": "began after the Civil Rights Act of 1964 and focused on enforcing its public accommodations rules.",
+        "isCorrect": false,
+        "explanation": "It occurred nearly a decade earlier."
+      },
+      {
+        "label": "D",
+        "text": "ended without any change to segregation after the city jailed the movement's leaders.",
+        "isCorrect": false,
+        "explanation": "Bus segregation was ruled unconstitutional."
+      }
+    ],
+    "explanation": "The boycott led to the end of segregated buses in Montgomery.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-15",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "medium",
+    "stem": "> “We have waited for more than three hundred years for our God-given rights. Injustice anywhere is a threat to justice everywhere. Those who break an unjust law openly, and accept the penalty, show the highest respect for law.”\n>\n> *Source: A minister's letter from jail, 1963*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A call for violent revolution against segregation and the state governments.",
+        "isCorrect": false,
+        "explanation": "The writer describes accepting the penalty."
+      },
+      {
+        "label": "B",
+        "text": "The strategy of nonviolent civil disobedience and acceptance of punishment.",
+        "isCorrect": true,
+        "explanation": "The writer justifies breaking unjust laws openly while accepting punishment."
+      },
+      {
+        "label": "C",
+        "text": "Opposition to protest of any kind in favor of quiet negotiation with officials.",
+        "isCorrect": false,
+        "explanation": "The writer defends protest."
+      },
+      {
+        "label": "D",
+        "text": "Support for gradual change over many generations through the courts alone.",
+        "isCorrect": false,
+        "explanation": "The writer criticizes waiting."
+      }
+    ],
+    "explanation": "The passage expresses nonviolent civil disobedience.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-16",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "medium",
+    "stem": "The Civil Rights Act of 1964",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ended literacy tests for voting and gave federal registrars power over Southern elections.",
+        "isCorrect": false,
+        "explanation": "That was the Voting Rights Act of 1965."
+      },
+      {
+        "label": "B",
+        "text": "banned discrimination in public places and jobs based on race, religion, sex or origin.",
+        "isCorrect": true,
+        "explanation": "The law was a major federal civil rights measure."
+      },
+      {
+        "label": "C",
+        "text": "created the Peace Corps and a national program for American volunteers overseas.",
+        "isCorrect": false,
+        "explanation": "That was established in 1961."
+      },
+      {
+        "label": "D",
+        "text": "outlawed segregation in the military and in every federal government workplace nationwide.",
+        "isCorrect": false,
+        "explanation": "Military desegregation came in 1948."
+      }
+    ],
+    "explanation": "The Civil Rights Act banned discrimination in public places and employment.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-17",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "hard",
+    "stem": "The Voting Rights Act of 1965",
+    "choices": [
+      {
+        "label": "A",
+        "text": "banned literacy tests and set federal oversight of voter registration where discrimination had occurred.",
+        "isCorrect": true,
+        "explanation": "The law enforced the Fifteenth Amendment."
+      },
+      {
+        "label": "B",
+        "text": "ended poll taxes in federal elections only and left all other voting tests in place in the South.",
+        "isCorrect": false,
+        "explanation": "The act addressed literacy tests and registration."
+      },
+      {
+        "label": "C",
+        "text": "gave women the right to vote and ended all property qualifications for voters nationwide.",
+        "isCorrect": false,
+        "explanation": "That was the Nineteenth Amendment."
+      },
+      {
+        "label": "D",
+        "text": "lowered the voting age to eighteen and ended residency requirements for all voters.",
+        "isCorrect": false,
+        "explanation": "That was the Twenty-sixth Amendment in 1971."
+      }
+    ],
+    "explanation": "The Voting Rights Act removed barriers to Black voting.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-18",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "hard",
+    "stem": "Black Power advocates such as Stokely Carmichael differed from earlier civil rights leaders in that they",
+    "choices": [
+      {
+        "label": "A",
+        "text": "stressed racial pride and self-determination over integration and strict nonviolence.",
+        "isCorrect": true,
+        "explanation": "Black Power marked a shift in emphasis within the movement."
+      },
+      {
+        "label": "B",
+        "text": "believed the movement should end now that the Civil Rights Act had been signed into law.",
+        "isCorrect": false,
+        "explanation": "They wanted to continue it in a different form."
+      },
+      {
+        "label": "C",
+        "text": "opposed all political activity and urged Black Americans to withdraw from public life.",
+        "isCorrect": false,
+        "explanation": "Black Power advocates were politically active."
+      },
+      {
+        "label": "D",
+        "text": "supported Jim Crow laws as a way to protect separate Black institutions in the South.",
+        "isCorrect": false,
+        "explanation": "They opposed segregation."
+      }
+    ],
+    "explanation": "Black Power emphasized pride, self-determination and self-defense.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-19",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "easy",
+    "stem": "Medicare and Medicaid, created in 1965,",
+    "choices": [
+      {
+        "label": "A",
+        "text": "replaced Social Security with a program of direct health benefits.",
+        "isCorrect": false,
+        "explanation": "Social Security continued."
+      },
+      {
+        "label": "B",
+        "text": "provided free college education to the children of poor families.",
+        "isCorrect": false,
+        "explanation": "They were health programs."
+      },
+      {
+        "label": "C",
+        "text": "provided health insurance for the elderly and for the poor.",
+        "isCorrect": true,
+        "explanation": "The programs expanded access to health care."
+      },
+      {
+        "label": "D",
+        "text": "banned private health insurance for workers and their families.",
+        "isCorrect": false,
+        "explanation": "Private insurance remained."
+      }
+    ],
+    "explanation": "Medicare covers the elderly and Medicaid covers the poor.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-20",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "medium",
+    "stem": "The Economic Opportunity Act of 1964, part of the War on Poverty, created programs such as",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Head Start and the Job Corps, aimed at fighting poverty through education and training.",
+        "isCorrect": true,
+        "explanation": "The programs aimed to give disadvantaged Americans opportunities."
+      },
+      {
+        "label": "B",
+        "text": "the Peace Corps and the Interstate Commerce Commission, which regulated railroads.",
+        "isCorrect": false,
+        "explanation": "These were not War on Poverty programs."
+      },
+      {
+        "label": "C",
+        "text": "the Marshall Plan and NATO, programs that gave economic aid to European nations.",
+        "isCorrect": false,
+        "explanation": "Those were foreign policy programs."
+      },
+      {
+        "label": "D",
+        "text": "the GI Bill and the Federal-Aid Highway Act, programs that helped veterans and drivers.",
+        "isCorrect": false,
+        "explanation": "Those were earlier programs."
+      }
+    ],
+    "explanation": "The act created Head Start and the Job Corps among other programs.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-21",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "medium",
+    "stem": "> “We are going to build a Great Society, a place where no child is denied an education because of poverty and no elderly citizen goes without care. The challenge is not just to grow rich but to improve the quality of our lives.”\n>\n> *Source: A president's commencement address, 1964*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A call for smaller government and lower taxes in order to expand private opportunity.",
+        "isCorrect": false,
+        "explanation": "The speaker promises expanded programs."
+      },
+      {
+        "label": "B",
+        "text": "The liberal belief that the federal government should reduce poverty and expand opportunity.",
+        "isCorrect": true,
+        "explanation": "The speaker promises federal action on education and care."
+      },
+      {
+        "label": "C",
+        "text": "Support for isolationism and a much smaller role for the nation in world affairs.",
+        "isCorrect": false,
+        "explanation": "The passage concerns domestic policy."
+      },
+      {
+        "label": "D",
+        "text": "Opposition to federal involvement in education, health care and local schools.",
+        "isCorrect": false,
+        "explanation": "The speaker supports it."
+      }
+    ],
+    "explanation": "The passage reflects the Great Society's liberal agenda.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-22",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "medium",
+    "stem": "The Warren Court's decisions in cases such as Gideon v. Wainwright (1963) and Miranda v. Arizona (1966)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "restricted freedom of speech for criminal suspects and for prisoners.",
+        "isCorrect": false,
+        "explanation": "The cases concerned defendants' rights."
+      },
+      {
+        "label": "B",
+        "text": "expanded the rights of criminal defendants in court and police custody.",
+        "isCorrect": true,
+        "explanation": "The Court strengthened protections in the legal process."
+      },
+      {
+        "label": "C",
+        "text": "ended the use of juries in felony trials and in federal courts nationwide.",
+        "isCorrect": false,
+        "explanation": "Juries continued."
+      },
+      {
+        "label": "D",
+        "text": "limited the rights of criminal defendants in court and police custody.",
+        "isCorrect": false,
+        "explanation": "The decisions expanded rights."
+      }
+    ],
+    "explanation": "The Warren Court expanded protections for defendants.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-23",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "hard",
+    "stem": "The Immigration and Nationality Act of 1965",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ended national origins quotas and favored family reunification, increasing immigration from Asia.",
+        "isCorrect": true,
+        "explanation": "The law reshaped immigration patterns."
+      },
+      {
+        "label": "B",
+        "text": "restored the quotas of the 1920s that had favored immigrants from northern Europe and Britain.",
+        "isCorrect": false,
+        "explanation": "The act ended the quota system."
+      },
+      {
+        "label": "C",
+        "text": "banned all immigration from Asia and set a strict ceiling for newcomers from Latin America.",
+        "isCorrect": false,
+        "explanation": "Immigration from Asia increased."
+      },
+      {
+        "label": "D",
+        "text": "limited immigration to northern Europe and to applicants with advanced degrees or capital.",
+        "isCorrect": false,
+        "explanation": "The act opened immigration more widely."
+      }
+    ],
+    "explanation": "The 1965 act ended national origins quotas.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-24",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "hard",
+    "stem": "Barry Goldwater's 1964 presidential campaign",
+    "choices": [
+      {
+        "label": "A",
+        "text": "won the election in a landslide and ended most Great Society programs soon after.",
+        "isCorrect": false,
+        "explanation": "He lost to Johnson."
+      },
+      {
+        "label": "B",
+        "text": "ended the Republican Party's influence in the South and the West for a generation.",
+        "isCorrect": false,
+        "explanation": "The party continued and changed."
+      },
+      {
+        "label": "C",
+        "text": "lost badly, but energized a conservative movement that opposed big government.",
+        "isCorrect": true,
+        "explanation": "His campaign helped launch a conservative revival."
+      },
+      {
+        "label": "D",
+        "text": "supported the expansion of the Great Society and of the War on Poverty.",
+        "isCorrect": false,
+        "explanation": "He opposed expanded federal programs."
+      }
+    ],
+    "explanation": "Goldwater's defeat nonetheless energized conservatives.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-25",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "easy",
+    "stem": "President Nixon resigned in 1974 because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Supreme Court ruled that he was ineligible to hold the office after the scandal.",
+        "isCorrect": false,
+        "explanation": "He resigned after the House Judiciary Committee voted articles of impeachment and tapes were released."
+      },
+      {
+        "label": "B",
+        "text": "Watergate revealed abuse of power and obstruction of justice, and impeachment seemed likely.",
+        "isCorrect": true,
+        "explanation": "The Watergate cover-up ended his presidency."
+      },
+      {
+        "label": "C",
+        "text": "the Vietnam War ended and he believed his presidency had met its main goal.",
+        "isCorrect": false,
+        "explanation": "The war was ending but this was not the cause."
+      },
+      {
+        "label": "D",
+        "text": "he lost the election of 1972 to the Democratic challenger George McGovern.",
+        "isCorrect": false,
+        "explanation": "He won reelection in 1972."
+      }
+    ],
+    "explanation": "Nixon resigned because of Watergate.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-26",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "medium",
+    "stem": "Which was a result of second-wave feminism in the 1960s and 1970s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Women gained the right to vote in federal elections and to serve on juries.",
+        "isCorrect": false,
+        "explanation": "That was won in 1920."
+      },
+      {
+        "label": "B",
+        "text": "The Equal Rights Amendment was ratified by the required three-fourths of the states.",
+        "isCorrect": false,
+        "explanation": "The ERA did not receive enough state ratifications."
+      },
+      {
+        "label": "C",
+        "text": "Title IX of 1972 prohibited sex discrimination in federally funded education.",
+        "isCorrect": true,
+        "explanation": "Feminists won new legal protections against sex discrimination."
+      },
+      {
+        "label": "D",
+        "text": "Women were barred from higher education by new federal rules on student loans.",
+        "isCorrect": false,
+        "explanation": "Title IX expanded educational equality."
+      }
+    ],
+    "explanation": "Title IX banned sex discrimination in educational programs receiving federal funds.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-27",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "medium",
+    "stem": "> “We are told to trust the government that sends us to fight a war we did not choose, in a country we do not understand. We refuse to be silent. Bring the troops home.”\n>\n> *Source: A student protest leaflet, 1968*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A call to expand the draft so that more young men and women would serve overseas.",
+        "isCorrect": false,
+        "explanation": "The leaflet opposes sending young people to fight."
+      },
+      {
+        "label": "B",
+        "text": "Widespread student support for the government's Vietnam policy and the military draft.",
+        "isCorrect": false,
+        "explanation": "The leaflet opposes the war."
+      },
+      {
+        "label": "C",
+        "text": "Support for the Gulf of Tonkin Resolution and for President Johnson's war aims.",
+        "isCorrect": false,
+        "explanation": "The leaflet challenges the war."
+      },
+      {
+        "label": "D",
+        "text": "The antiwar movement's challenge to government credibility and policy in Vietnam.",
+        "isCorrect": true,
+        "explanation": "Protesters questioned the war and the government's honesty."
+      }
+    ],
+    "explanation": "The leaflet reflects antiwar protest and distrust of government.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-28",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "medium",
+    "stem": "The 1973 oil embargo by Arab members of OPEC contributed to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a ban on automobile production until the nation could find a new source of oil.",
+        "isCorrect": false,
+        "explanation": "No such ban existed."
+      },
+      {
+        "label": "B",
+        "text": "a decade of falling fuel prices and rapid growth in American automobile sales.",
+        "isCorrect": false,
+        "explanation": "Prices rose."
+      },
+      {
+        "label": "C",
+        "text": "energy shortages, higher prices and an economy with both inflation and stagnation.",
+        "isCorrect": true,
+        "explanation": "The embargo worsened economic problems of the 1970s."
+      },
+      {
+        "label": "D",
+        "text": "lower inflation and rapid growth in manufacturing across the Northeast and Midwest.",
+        "isCorrect": false,
+        "explanation": "The economy suffered stagflation."
+      }
+    ],
+    "explanation": "The oil embargo worsened stagflation.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-29",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "hard",
+    "stem": "Rachel Carson's Silent Spring (1962) and the first Earth Day in 1970 contributed to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the repeal of environmental regulations and a new focus on industrial growth.",
+        "isCorrect": false,
+        "explanation": "Environmental regulation expanded."
+      },
+      {
+        "label": "B",
+        "text": "the end of the Cold War and a new era of arms control with the Soviet Union.",
+        "isCorrect": false,
+        "explanation": "These events were not related to the Cold War's end."
+      },
+      {
+        "label": "C",
+        "text": "a ban on all heavy industry in the Great Lakes region and the Northeast.",
+        "isCorrect": false,
+        "explanation": "No such ban existed."
+      },
+      {
+        "label": "D",
+        "text": "the growth of the environmental movement and the creation of the EPA.",
+        "isCorrect": true,
+        "explanation": "Public concern led to new environmental laws and agencies."
+      }
+    ],
+    "explanation": "Environmental activism led to new regulation and the EPA.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-30",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "hard",
+    "stem": "Which best describes the situation facing President Carter in the late 1970s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A peaceful world with no foreign crises and steady relations with every nation.",
+        "isCorrect": false,
+        "explanation": "The Iran crisis dominated his last year."
+      },
+      {
+        "label": "B",
+        "text": "A booming economy and near-universal popularity throughout his entire time in office.",
+        "isCorrect": false,
+        "explanation": "The economy struggled."
+      },
+      {
+        "label": "C",
+        "text": "The success of his energy policy in ending shortages and lowering fuel prices quickly.",
+        "isCorrect": false,
+        "explanation": "Energy problems persisted."
+      },
+      {
+        "label": "D",
+        "text": "Stagflation, energy problems and the Iran hostage crisis eroded confidence in his leadership.",
+        "isCorrect": true,
+        "explanation": "Economic and foreign policy troubles weakened his presidency."
+      }
+    ],
+    "explanation": "Economic troubles and the hostage crisis hurt Carter's presidency.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "slug": "unit-4-democratic-republic",
+  "order": 4,
+  "name": "The Democratic Republic (1800-1848)",
+  "weightingMin": 10,
+  "weightingMax": 17,
+  "topics": [
+    {
+      "slug": "jefferson-and-war-of-1812",
+      "order": 1,
+      "name": "Jefferson, Louisiana and the War of 1812"
+    },
+    {
+      "slug": "market-revolution",
+      "order": 2,
+      "name": "The Market Revolution"
+    },
+    {
+      "slug": "jacksonian-democracy",
+      "order": 3,
+      "name": "Jacksonian Democracy"
+    },
+    {
+      "slug": "religion-and-reform",
+      "order": 4,
+      "name": "Religion and Reform Movements"
+    },
+    {
+      "slug": "regional-economies-and-slavery",
+      "order": 5,
+      "name": "Regional Economies and Slavery"
+    }
+  ]
+}

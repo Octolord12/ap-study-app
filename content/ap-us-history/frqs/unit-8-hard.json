@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u8-frq-4",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “We have been compelled to create a permanent armaments industry of vast proportions. We must guard against the unwarranted influence of the military-industrial complex, whether sought or unsought.”\n>\n> *Source: A retiring president's farewell address, 1961*\n\n**a)** Identify ONE concern expressed in the excerpt.\n\n**b)** Explain ONE development in the 1950s that contributed to the growth of the military establishment described in the excerpt.\n\n**c)** Explain ONE way in which the Cold War shaped American society in the 1950s.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies the concern that a permanent, large armaments industry and its influence on government could threaten democratic government"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as the Korean War and NSC-68 leading to higher defense spending, the nuclear arms race, or competition with the Soviet Union after Sputnik"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as the Red Scare and McCarthyism, civil defense drills, the National Defense Education Act, or the interstate highway system's defense rationale"
+      }
+    ],
+    "sampleResponse": "a) The president worries that a permanent armaments industry and military establishment could gain too much influence over government.\nb) The Korean War and the policy outlined in NSC-68 led to large increases in defense spending, and the nuclear arms race with the Soviet Union created a permanent military industry.\nc) The Cold War produced a Red Scare in which people were investigated for supposed communist ties, and schools held civil defense drills to prepare for nuclear attack.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-frq-5",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the strategies of the civil rights movement changed over time in the period 1945 to 1980.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which the movement's strategies changed"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as the Cold War, the Great Migration or the legacy of Jim Crow"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and demonstrates complex understanding, such as showing that different strategies coexisted or that strategies responded to changing political conditions (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that the movement moved from legal and nonviolent direct action strategies in the 1950s and early 1960s toward political mobilization and, later, Black Power and broader coalitions, while retaining a commitment to protest and legal challenge throughout. It places the topic in the context of the postwar era and the Cold War, uses specific evidence (the NAACP's legal strategy and Brown v. Board, the Montgomery Bus Boycott, sit-ins and Freedom Rides, the March on Washington, Selma and the Voting Rights Act, Black Power, urban unrest, the Chicano movement and the American Indian Movement), and uses continuity and change over time to analyze the shifts.",
+    "reviewed": false
+  }
+]

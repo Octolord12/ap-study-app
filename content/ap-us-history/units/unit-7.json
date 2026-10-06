@@ -1,0 +1,39 @@
+{
+  "slug": "unit-7-imperialism-to-world-war-two",
+  "order": 7,
+  "name": "Imperialism, Progressivism and the World Wars (1890-1945)",
+  "weightingMin": 10,
+  "weightingMax": 17,
+  "topics": [
+    {
+      "slug": "imperialism-and-spanish-american-war",
+      "order": 1,
+      "name": "Imperialism and the Spanish-American War"
+    },
+    {
+      "slug": "progressive-era",
+      "order": 2,
+      "name": "The Progressive Era"
+    },
+    {
+      "slug": "world-war-one",
+      "order": 3,
+      "name": "World War I"
+    },
+    {
+      "slug": "twenties-and-culture",
+      "order": 4,
+      "name": "The 1920s"
+    },
+    {
+      "slug": "depression-and-new-deal",
+      "order": 5,
+      "name": "The Great Depression and the New Deal"
+    },
+    {
+      "slug": "world-war-two",
+      "order": 6,
+      "name": "World War II and the Home Front"
+    }
+  ]
+}

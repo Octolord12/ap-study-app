@@ -1,0 +1,34 @@
+{
+  "slug": "unit-1-contact-and-early-colonization",
+  "order": 1,
+  "name": "Contact and Early Colonization (1491-1607)",
+  "weightingMin": 4,
+  "weightingMax": 6,
+  "topics": [
+    {
+      "slug": "native-american-societies",
+      "order": 1,
+      "name": "Native American Societies Before Contact"
+    },
+    {
+      "slug": "european-exploration",
+      "order": 2,
+      "name": "European Exploration and Motives"
+    },
+    {
+      "slug": "columbian-exchange",
+      "order": 3,
+      "name": "The Columbian Exchange"
+    },
+    {
+      "slug": "spanish-colonial-system",
+      "order": 4,
+      "name": "The Spanish Empire in the Americas"
+    },
+    {
+      "slug": "early-english-and-french-efforts",
+      "order": 5,
+      "name": "Early English and French Efforts"
+    }
+  ]
+}

@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-ush-u9-mcq-1",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "easy",
+    "stem": "Supply-side economics, associated with the Reagan administration, argued that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "tariffs should be eliminated and replaced by a guaranteed federal income for families.",
+        "isCorrect": false,
+        "explanation": "That is not part of supply-side economics."
+      },
+      {
+        "label": "B",
+        "text": "raising taxes on all incomes would reduce inflation and balance the federal budget.",
+        "isCorrect": false,
+        "explanation": "That is the opposite of supply-side thinking."
+      },
+      {
+        "label": "C",
+        "text": "cutting taxes and regulation would stimulate investment and economic growth.",
+        "isCorrect": true,
+        "explanation": "Supporters argued that lower taxes would encourage business expansion and eventually benefit the whole economy."
+      },
+      {
+        "label": "D",
+        "text": "the government should take over major industries and set prices in them.",
+        "isCorrect": false,
+        "explanation": "Supply-side policy relied on private markets."
+      }
+    ],
+    "explanation": "Supply-side economics promoted tax cuts and deregulation to spur growth.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-2",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "medium",
+    "stem": "President Reagan's firing of striking air traffic controllers in 1981",
+    "choices": [
+      {
+        "label": "A",
+        "text": "was overturned by the Supreme Court, which ordered the workers rehired.",
+        "isCorrect": false,
+        "explanation": "The firings stood."
+      },
+      {
+        "label": "B",
+        "text": "led to a general strike across the nation's transportation industries.",
+        "isCorrect": false,
+        "explanation": "No general strike followed."
+      },
+      {
+        "label": "C",
+        "text": "weakened organized labor and signaled a tougher stance toward unions.",
+        "isCorrect": true,
+        "explanation": "The firing of the PATCO strikers encouraged employers to take harder positions against strikes."
+      },
+      {
+        "label": "D",
+        "text": "strengthened the power of public employee unions across the federal government.",
+        "isCorrect": false,
+        "explanation": "The action weakened unions."
+      }
+    ],
+    "explanation": "The PATCO firings weakened the labor movement.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-3",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "medium",
+    "stem": "> “In this present crisis, government is too often the cause of our troubles, not the cure. We must reduce its size and its reach and restore power to the states and the people.”\n>\n> *Source: A president's inaugural address, 1981*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A defense of New Deal liberalism and of the postwar welfare state it had created.",
+        "isCorrect": false,
+        "explanation": "The speaker questions government's role."
+      },
+      {
+        "label": "B",
+        "text": "The conservative critique of big government that grew after the 1960s and 1970s.",
+        "isCorrect": true,
+        "explanation": "The speaker argues that government should be smaller and that power should go back to the states and individuals."
+      },
+      {
+        "label": "C",
+        "text": "Support for expanding the Great Society programs and the federal role in the economy.",
+        "isCorrect": false,
+        "explanation": "The speaker criticizes large government."
+      },
+      {
+        "label": "D",
+        "text": "A call for greater federal control of the economy and of the nation's largest banks.",
+        "isCorrect": false,
+        "explanation": "The speaker wants to reduce government's reach."
+      }
+    ],
+    "explanation": "The passage expresses the conservative view that government had become too large.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-4",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "medium",
+    "stem": "The Moral Majority and other conservative Christian groups in the 1980s",
+    "choices": [
+      {
+        "label": "A",
+        "text": "mobilized evangelical voters on abortion and school prayer, becoming a force in the GOP.",
+        "isCorrect": true,
+        "explanation": "The Religious Right brought a large group of voters into conservative politics."
+      },
+      {
+        "label": "B",
+        "text": "supported the Equal Rights Amendment and expanded abortion access for women nationwide.",
+        "isCorrect": false,
+        "explanation": "They opposed these positions."
+      },
+      {
+        "label": "C",
+        "text": "were created by the Democratic Party to win Southern votes and rural voters.",
+        "isCorrect": false,
+        "explanation": "They aligned increasingly with Republicans."
+      },
+      {
+        "label": "D",
+        "text": "sought to end all religious involvement in politics and to separate church and state strictly.",
+        "isCorrect": false,
+        "explanation": "They sought a stronger role for religion in public life."
+      }
+    ],
+    "explanation": "The Religious Right became a major force in conservative politics.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-5",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "hard",
+    "stem": "The Iran-Contra affair revealed that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Reagan had been impeached by the House of Representatives for lying about the arms sales.",
+        "isCorrect": false,
+        "explanation": "He was not impeached."
+      },
+      {
+        "label": "B",
+        "text": "officials secretly sold arms to Iran and used the money to fund Nicaraguan rebels despite Congress.",
+        "isCorrect": true,
+        "explanation": "The scandal raised questions about presidential power and congressional oversight."
+      },
+      {
+        "label": "C",
+        "text": "Congress had secretly approved the arms sales and the funding of rebels in Nicaragua.",
+        "isCorrect": false,
+        "explanation": "The sales violated congressional restrictions on aid to the Contras."
+      },
+      {
+        "label": "D",
+        "text": "the United States had formally declared war on Nicaragua and sent troops to fight the Contras.",
+        "isCorrect": false,
+        "explanation": "There was no declaration of war."
+      }
+    ],
+    "explanation": "Iran-Contra involved secret arms sales and illegal funding of rebels.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-6",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "hard",
+    "stem": "The Personal Responsibility and Work Opportunity Act of 1996",
+    "choices": [
+      {
+        "label": "A",
+        "text": "expanded unlimited welfare benefits and removed work requirements for all recipients.",
+        "isCorrect": false,
+        "explanation": "The law limited benefits."
+      },
+      {
+        "label": "B",
+        "text": "abolished Social Security and replaced it with private retirement accounts.",
+        "isCorrect": false,
+        "explanation": "Social Security was not abolished."
+      },
+      {
+        "label": "C",
+        "text": "ended the federal welfare guarantee and set time limits and work requirements.",
+        "isCorrect": true,
+        "explanation": "The law reshaped the welfare system and moved responsibility toward the states."
+      },
+      {
+        "label": "D",
+        "text": "created Medicare and a national program of health insurance for the unemployed.",
+        "isCorrect": false,
+        "explanation": "Medicare was created in 1965."
+      }
+    ],
+    "explanation": "The 1996 law ended the federal entitlement to welfare.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-7",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "easy",
+    "stem": "The fall of the Berlin Wall in 1989",
+    "choices": [
+      {
+        "label": "A",
+        "text": "marked the start of the Cold War and the division of Europe into two blocs.",
+        "isCorrect": false,
+        "explanation": "The Cold War began in the late 1940s."
+      },
+      {
+        "label": "B",
+        "text": "was a Soviet victory over West Germany that expanded Soviet control over Berlin.",
+        "isCorrect": false,
+        "explanation": "It reflected communism's collapse."
+      },
+      {
+        "label": "C",
+        "text": "occurred during the Korean War and divided the city of Berlin permanently.",
+        "isCorrect": false,
+        "explanation": "It occurred in 1989."
+      },
+      {
+        "label": "D",
+        "text": "symbolized the collapse of communism in Eastern Europe and led to German reunification.",
+        "isCorrect": true,
+        "explanation": "The event was a turning point in the end of the Cold War."
+      }
+    ],
+    "explanation": "The fall of the Wall symbolized the end of communism in Eastern Europe.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-8",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "medium",
+    "stem": "Mikhail Gorbachev's policies of glasnost and perestroika",
+    "choices": [
+      {
+        "label": "A",
+        "text": "expanded Soviet control over Eastern Europe and strengthened the Warsaw Pact alliance.",
+        "isCorrect": false,
+        "explanation": "The reforms helped loosen control."
+      },
+      {
+        "label": "B",
+        "text": "restored Stalinist policies and tightened the Communist Party's control over daily life.",
+        "isCorrect": false,
+        "explanation": "The reforms moved away from Stalinist practices."
+      },
+      {
+        "label": "C",
+        "text": "opened Soviet politics and restructured its economy, helping end the Cold War.",
+        "isCorrect": true,
+        "explanation": "The reforms loosened controls and unleashed forces that Gorbachev could not contain."
+      },
+      {
+        "label": "D",
+        "text": "ended arms control negotiations with the United States and restarted the arms race.",
+        "isCorrect": false,
+        "explanation": "Gorbachev negotiated arms agreements."
+      }
+    ],
+    "explanation": "Gorbachev's reforms helped bring about the end of the Cold War.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-9",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "medium",
+    "stem": "> “The tide of freedom has swept across Eastern Europe, and now the Soviet Union itself has dissolved. The United States stands today as the world's leading power, with a responsibility to help build a peaceful order in a new age.”\n>\n> *Source: A president's address, 1991*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The start of an arms race with the Soviet Union and the revival of Cold War tensions.",
+        "isCorrect": false,
+        "explanation": "The passage describes the Soviet Union's dissolution."
+      },
+      {
+        "label": "B",
+        "text": "An argument for isolationism and a withdrawal of American forces from every region.",
+        "isCorrect": false,
+        "explanation": "The speaker speaks of responsibility in the world."
+      },
+      {
+        "label": "C",
+        "text": "The emergence of the United States as the sole superpower after the Soviet collapse.",
+        "isCorrect": true,
+        "explanation": "The speaker describes the United States as the leading power after the Cold War."
+      },
+      {
+        "label": "D",
+        "text": "The beginning of the Cold War and the formation of NATO and the Warsaw Pact.",
+        "isCorrect": false,
+        "explanation": "The passage describes its end."
+      }
+    ],
+    "explanation": "The passage reflects the new American role after the Soviet collapse.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-10",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "medium",
+    "stem": "The Persian Gulf War of 1991",
+    "choices": [
+      {
+        "label": "A",
+        "text": "was fought to overthrow the government of Iraq and install a new democratic regime there.",
+        "isCorrect": false,
+        "explanation": "The coalition's mission was limited to expelling Iraq from Kuwait."
+      },
+      {
+        "label": "B",
+        "text": "involved a UN-authorized, American-led coalition that expelled Iraqi forces from Kuwait.",
+        "isCorrect": true,
+        "explanation": "The coalition's goal was to liberate Kuwait."
+      },
+      {
+        "label": "C",
+        "text": "ended with the occupation of Iraq by American forces for more than a decade afterward.",
+        "isCorrect": false,
+        "explanation": "Iraq was not occupied after 1991."
+      },
+      {
+        "label": "D",
+        "text": "was a war between the United States and the Soviet Union over control of Middle Eastern oil.",
+        "isCorrect": false,
+        "explanation": "The Soviet Union did not fight the United States."
+      }
+    ],
+    "explanation": "The Gulf War liberated Kuwait.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-11",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "hard",
+    "stem": "Which factors contributed most to the end of the Cold War?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A nuclear exchange between the superpowers that destroyed Soviet military power for good.",
+        "isCorrect": false,
+        "explanation": "No nuclear exchange occurred."
+      },
+      {
+        "label": "B",
+        "text": "The success of communist economic planning in raising Soviet living standards rapidly.",
+        "isCorrect": false,
+        "explanation": "Soviet economic problems contributed to its collapse."
+      },
+      {
+        "label": "C",
+        "text": "Soviet economic stagnation, reform, Eastern European protest movements and the arms race.",
+        "isCorrect": true,
+        "explanation": "Several internal and external factors combined to end the Cold War."
+      },
+      {
+        "label": "D",
+        "text": "A Soviet military defeat in a direct war with the United States in Europe and Asia.",
+        "isCorrect": false,
+        "explanation": "There was no such war."
+      }
+    ],
+    "explanation": "Soviet economic problems, reforms, Eastern European movements and the arms race all contributed.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-12",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "hard",
+    "stem": "In the 1990s, United States foreign policy",
+    "choices": [
+      {
+        "label": "A",
+        "text": "included peacekeeping interventions in Somalia, Bosnia and Kosovo, often with NATO.",
+        "isCorrect": true,
+        "explanation": "The end of the Cold War led to new kinds of overseas involvement."
+      },
+      {
+        "label": "B",
+        "text": "focused solely on containing the Soviet Union and its remaining allies in Eastern Europe.",
+        "isCorrect": false,
+        "explanation": "The Soviet Union no longer existed."
+      },
+      {
+        "label": "C",
+        "text": "avoided all military interventions abroad in favor of trade and diplomacy alone.",
+        "isCorrect": false,
+        "explanation": "The United States intervened in several conflicts."
+      },
+      {
+        "label": "D",
+        "text": "withdrew from NATO and the United Nations to focus on the nation's domestic problems.",
+        "isCorrect": false,
+        "explanation": "The United States remained in both organizations."
+      }
+    ],
+    "explanation": "The 1990s saw interventions in Somalia, Bosnia and Kosovo.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-13",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "easy",
+    "stem": "Which technological developments most transformed the American economy in the 1990s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The personal computer and the Internet, which spread in the 1990s.",
+        "isCorrect": true,
+        "explanation": "Computers and the Internet changed communication, business and daily life."
+      },
+      {
+        "label": "B",
+        "text": "The steam engine and the railroad, which transformed the 1800s.",
+        "isCorrect": false,
+        "explanation": "Those were nineteenth-century innovations."
+      },
+      {
+        "label": "C",
+        "text": "The assembly line and the telegraph, which spread in earlier eras.",
+        "isCorrect": false,
+        "explanation": "Those developments came much earlier."
+      },
+      {
+        "label": "D",
+        "text": "The cotton gin and the telephone, which both appeared before 1900.",
+        "isCorrect": false,
+        "explanation": "Those were earlier inventions."
+      }
+    ],
+    "explanation": "The personal computer and the Internet reshaped the 1990s economy.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-14",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "medium",
+    "stem": "The North American Free Trade Agreement (NAFTA), which took effect in 1994, aimed to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "end trade between the United States and Asia in favor of regional commerce.",
+        "isCorrect": false,
+        "explanation": "NAFTA concerned North America."
+      },
+      {
+        "label": "B",
+        "text": "create a common currency for the United States, Canada and Mexico.",
+        "isCorrect": false,
+        "explanation": "NAFTA did not create a common currency."
+      },
+      {
+        "label": "C",
+        "text": "increase tariffs on goods from Canada and Mexico to protect American jobs.",
+        "isCorrect": false,
+        "explanation": "NAFTA reduced barriers."
+      },
+      {
+        "label": "D",
+        "text": "eliminate most trade barriers among the United States, Canada and Mexico.",
+        "isCorrect": true,
+        "explanation": "NAFTA created a large free-trade area."
+      }
+    ],
+    "explanation": "NAFTA reduced trade barriers among three countries.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-15",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "medium",
+    "stem": "> “They told us the plant was moving to Mexico where wages are lower. After twenty years on the line I was out of work and told to retrain for a computer job in a city two hundred miles away.”\n>\n> *Source: A factory worker's testimony, 2000*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The success of protectionist trade policy in keeping factories open in the Midwest.",
+        "isCorrect": false,
+        "explanation": "The passage describes the loss of jobs to a lower-wage country."
+      },
+      {
+        "label": "B",
+        "text": "Manufacturing jobs lost to outsourcing and globalization and the adjustment workers faced.",
+        "isCorrect": true,
+        "explanation": "The worker describes a plant moving abroad and the need to retrain."
+      },
+      {
+        "label": "C",
+        "text": "The growth of unions in manufacturing as workers won new job protections abroad.",
+        "isCorrect": false,
+        "explanation": "The worker lost a job."
+      },
+      {
+        "label": "D",
+        "text": "An increase in domestic factory employment as companies moved production back home.",
+        "isCorrect": false,
+        "explanation": "The plant moved away."
+      }
+    ],
+    "explanation": "The passage reflects job losses from outsourcing and globalization.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-16",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "medium",
+    "stem": "The financial crisis of 2008 was triggered in large part by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the collapse of the housing bubble and risky mortgage lending, which damaged major banks.",
+        "isCorrect": true,
+        "explanation": "Falling home values and mortgage defaults spread losses through the financial system."
+      },
+      {
+        "label": "B",
+        "text": "a sudden increase in tariffs that cut off American trade with Europe and Asia.",
+        "isCorrect": false,
+        "explanation": "Tariffs were not the cause."
+      },
+      {
+        "label": "C",
+        "text": "a surge in manufacturing exports that overheated the economy and raised wages.",
+        "isCorrect": false,
+        "explanation": "The crisis arose from housing and finance."
+      },
+      {
+        "label": "D",
+        "text": "the end of the gold standard, which destabilized the value of the dollar overseas.",
+        "isCorrect": false,
+        "explanation": "That occurred in the 1970s."
+      }
+    ],
+    "explanation": "The housing bubble and risky lending triggered the 2008 crisis.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-17",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "hard",
+    "stem": "The federal response to the 2008 financial crisis included",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the elimination of the Federal Reserve and a return to privately run clearinghouses.",
+        "isCorrect": false,
+        "explanation": "The Federal Reserve took an active role."
+      },
+      {
+        "label": "B",
+        "text": "TARP bank rescues under Bush, then a stimulus and new financial regulation under Obama.",
+        "isCorrect": true,
+        "explanation": "Both administrations took major steps to stabilize the economy."
+      },
+      {
+        "label": "C",
+        "text": "a return to the gold standard to restore confidence in the value of the dollar.",
+        "isCorrect": false,
+        "explanation": "The gold standard was not restored."
+      },
+      {
+        "label": "D",
+        "text": "a decision to take no federal action and let markets correct the crisis on their own.",
+        "isCorrect": false,
+        "explanation": "The government intervened extensively."
+      }
+    ],
+    "explanation": "TARP, a stimulus and new regulation were part of the response.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-18",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "hard",
+    "stem": "Which statement best describes economic trends in the decades after 1980?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Top incomes grew rapidly while wages for many other workers stagnated.",
+        "isCorrect": true,
+        "explanation": "Economists have documented a growing gap between high and middle incomes."
+      },
+      {
+        "label": "B",
+        "text": "Economic inequality fell sharply as middle-class wages rose with productivity.",
+        "isCorrect": false,
+        "explanation": "Inequality increased."
+      },
+      {
+        "label": "C",
+        "text": "Manufacturing employment rose steadily as factories expanded in the Midwest.",
+        "isCorrect": false,
+        "explanation": "Manufacturing employment declined."
+      },
+      {
+        "label": "D",
+        "text": "Incomes of the poorest households grew faster than those of the wealthiest groups.",
+        "isCorrect": false,
+        "explanation": "The gap widened in the other direction."
+      }
+    ],
+    "explanation": "Inequality widened after 1980.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-19",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "easy",
+    "stem": "The terrorist attacks of September 11, 2001",
+    "choices": [
+      {
+        "label": "A",
+        "text": "were carried out by al-Qaeda, killed nearly 3,000 people and led to war in Afghanistan.",
+        "isCorrect": true,
+        "explanation": "The attacks prompted the invasion of Afghanistan, where the Taliban sheltered al-Qaeda."
+      },
+      {
+        "label": "B",
+        "text": "were carried out by Iraq and led directly to the American invasion of Baghdad.",
+        "isCorrect": false,
+        "explanation": "The attacks were carried out by al-Qaeda, not by Iraq."
+      },
+      {
+        "label": "C",
+        "text": "occurred in 1991, soon after the end of the Gulf War, and killed hundreds.",
+        "isCorrect": false,
+        "explanation": "They occurred in 2001."
+      },
+      {
+        "label": "D",
+        "text": "caused a decline in federal security spending and in the powers of intelligence agencies.",
+        "isCorrect": false,
+        "explanation": "Security spending increased."
+      }
+    ],
+    "explanation": "The 9/11 attacks led to the war in Afghanistan.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-20",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "medium",
+    "stem": "The USA Patriot Act of 2001",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ended the war in Afghanistan and brought American troops home before the end of 2002.",
+        "isCorrect": false,
+        "explanation": "The war continued."
+      },
+      {
+        "label": "B",
+        "text": "limited the power of intelligence agencies and required warrants for all domestic searches.",
+        "isCorrect": false,
+        "explanation": "The law expanded their powers."
+      },
+      {
+        "label": "C",
+        "text": "expanded surveillance and police powers against terrorism, raising civil liberties concerns.",
+        "isCorrect": true,
+        "explanation": "The law increased investigative powers and sparked debate."
+      },
+      {
+        "label": "D",
+        "text": "guaranteed new rights for suspects and for detainees held on terrorism charges.",
+        "isCorrect": false,
+        "explanation": "The law drew criticism for weakening protections."
+      }
+    ],
+    "explanation": "The Patriot Act expanded surveillance and raised civil liberties debates.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-21",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "medium",
+    "stem": "> “We cannot wait for threats to fully materialize. America must be ready to act preemptively against terrorists and hostile regimes that seek weapons of mass destruction before they can strike.”\n>\n> *Source: A president's speech, 2002*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Truman Doctrine, which promised aid to nations resisting communism.",
+        "isCorrect": false,
+        "explanation": "The passage concerns a doctrine from 2002."
+      },
+      {
+        "label": "B",
+        "text": "The policy of containment, which guided Cold War strategy toward the Soviets.",
+        "isCorrect": false,
+        "explanation": "Containment was a Cold War approach and not preemptive."
+      },
+      {
+        "label": "C",
+        "text": "The doctrine of preemption, which was used to justify the invasion of Iraq.",
+        "isCorrect": true,
+        "explanation": "The speaker argues for acting before threats fully develop."
+      },
+      {
+        "label": "D",
+        "text": "A call for isolationism and a retreat from American commitments in the Middle East.",
+        "isCorrect": false,
+        "explanation": "The speaker calls for active measures."
+      }
+    ],
+    "explanation": "The passage expresses the doctrine of preemption.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-22",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "medium",
+    "stem": "The Department of Homeland Security was created in 2002 and 2003 to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "coordinate domestic security agencies in response to the 9/11 attacks.",
+        "isCorrect": true,
+        "explanation": "The department combined many agencies concerned with protecting the nation."
+      },
+      {
+        "label": "B",
+        "text": "oversee the Federal Reserve and regulate the largest banks in the nation.",
+        "isCorrect": false,
+        "explanation": "That is a separate institution."
+      },
+      {
+        "label": "C",
+        "text": "replace the Department of Defense and run the military's domestic missions.",
+        "isCorrect": false,
+        "explanation": "It did not replace Defense."
+      },
+      {
+        "label": "D",
+        "text": "manage the nation's public schools and enforce national security standards.",
+        "isCorrect": false,
+        "explanation": "It dealt with security."
+      }
+    ],
+    "explanation": "The department consolidated domestic security efforts.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-23",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "hard",
+    "stem": "The 2003 invasion of Iraq was justified mainly by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the claim that Iraq had weapons of mass destruction, though no stockpiles were later found.",
+        "isCorrect": true,
+        "explanation": "The WMD claim was central to the case for war."
+      },
+      {
+        "label": "B",
+        "text": "the fall of the Berlin Wall in 1989 and the spread of democracy across Europe.",
+        "isCorrect": false,
+        "explanation": "That occurred in 1989."
+      },
+      {
+        "label": "C",
+        "text": "Iraq's direct attack on the United States on September 11 and its support for al-Qaeda.",
+        "isCorrect": false,
+        "explanation": "Iraq did not carry out the 9/11 attacks."
+      },
+      {
+        "label": "D",
+        "text": "a request from the United Nations to occupy Iraq and rebuild its government after the Gulf War.",
+        "isCorrect": false,
+        "explanation": "The invasion lacked explicit United Nations authorization."
+      }
+    ],
+    "explanation": "The administration cited weapons of mass destruction, which were not found.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-24",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "hard",
+    "stem": "Debates over the Guantanamo Bay detention facility and National Security Agency surveillance reflected",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a dispute over tariffs and trade with the nations of the Middle East.",
+        "isCorrect": false,
+        "explanation": "The debates concerned security and rights."
+      },
+      {
+        "label": "B",
+        "text": "a plan to expand the draft to include women and older volunteers.",
+        "isCorrect": false,
+        "explanation": "These were not debates about the draft."
+      },
+      {
+        "label": "C",
+        "text": "agreement that civil liberties should never be limited for any reason.",
+        "isCorrect": false,
+        "explanation": "The debates were contested."
+      },
+      {
+        "label": "D",
+        "text": "tension between national security and individual civil liberties.",
+        "isCorrect": true,
+        "explanation": "Critics argued that security measures threatened individual rights."
+      }
+    ],
+    "explanation": "The debates centered on balancing security and civil liberties.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-25",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "easy",
+    "stem": "Since the 1970s, immigration to the United States has come largely from",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Middle East and Central Asia, especially Iran.",
+        "isCorrect": false,
+        "explanation": "These regions were not the largest sources of recent immigration."
+      },
+      {
+        "label": "B",
+        "text": "eastern Europe and the former Soviet republics.",
+        "isCorrect": false,
+        "explanation": "Immigration from these regions was far smaller than from Latin America and Asia."
+      },
+      {
+        "label": "C",
+        "text": "northern and western Europe, especially Britain.",
+        "isCorrect": false,
+        "explanation": "That described earlier periods."
+      },
+      {
+        "label": "D",
+        "text": "Latin America and Asia, especially Mexico and China.",
+        "isCorrect": true,
+        "explanation": "Immigration patterns shifted away from Europe."
+      }
+    ],
+    "explanation": "Most recent immigration has come from Latin America and Asia.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-26",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "medium",
+    "stem": "The Immigration Reform and Control Act of 1986",
+    "choices": [
+      {
+        "label": "A",
+        "text": "created national origins quotas that favored immigrants from northern Europe and Canada.",
+        "isCorrect": false,
+        "explanation": "Quotas were ended in 1965."
+      },
+      {
+        "label": "B",
+        "text": "legalized many immigrants present since 1982 and penalized employers who hired undocumented workers.",
+        "isCorrect": true,
+        "explanation": "The law combined legalization with enforcement."
+      },
+      {
+        "label": "C",
+        "text": "ended all legal immigration from Latin America and set strict national quotas for Asia.",
+        "isCorrect": false,
+        "explanation": "The law did not end legal immigration."
+      },
+      {
+        "label": "D",
+        "text": "deported all undocumented immigrants who had lived in the country for fewer than ten years.",
+        "isCorrect": false,
+        "explanation": "It granted legal status to many."
+      }
+    ],
+    "explanation": "IRCA combined legalization with employer sanctions.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-27",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "medium",
+    "stem": "> “No union is more profound than marriage. It embodies the highest ideals of love, fidelity, devotion and family. Same-sex couples seek equal dignity in the eyes of the law.”\n>\n> *Source: A Supreme Court opinion, 2015*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Court's recognition of same-sex marriage as a constitutional right in Obergefell.",
+        "isCorrect": true,
+        "explanation": "The opinion held that same-sex couples may not be denied the right to marry."
+      },
+      {
+        "label": "B",
+        "text": "A decision on school prayer and the role of religion in public school classrooms.",
+        "isCorrect": false,
+        "explanation": "The passage concerns marriage."
+      },
+      {
+        "label": "C",
+        "text": "A ruling that states could ban same-sex marriage within their borders if voters agreed.",
+        "isCorrect": false,
+        "explanation": "The Court ruled the opposite."
+      },
+      {
+        "label": "D",
+        "text": "The passage of the Equal Rights Amendment and its ratification by three-fourths of states.",
+        "isCorrect": false,
+        "explanation": "The passage concerns marriage."
+      }
+    ],
+    "explanation": "The passage reflects the Obergefell decision.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-28",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "medium",
+    "stem": "The election of Barack Obama in 2008 was significant because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "he became the first African American elected president of the United States.",
+        "isCorrect": true,
+        "explanation": "The election marked a milestone in American political history."
+      },
+      {
+        "label": "B",
+        "text": "he won the first election decided by the House of Representatives in a century.",
+        "isCorrect": false,
+        "explanation": "He won the Electoral College outright."
+      },
+      {
+        "label": "C",
+        "text": "he was the first president elected without a college degree in over a century.",
+        "isCorrect": false,
+        "explanation": "The significance of the election lay in his being the first African American president."
+      },
+      {
+        "label": "D",
+        "text": "he ended the two-party system by winning support from both major parties.",
+        "isCorrect": false,
+        "explanation": "The two-party system continued."
+      }
+    ],
+    "explanation": "Obama became the first African American president.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-29",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "hard",
+    "stem": "Which factor contributed to increasing political polarization in the late twentieth and early twenty-first centuries?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The abolition of political parties and the rise of independent candidates in Congress.",
+        "isCorrect": false,
+        "explanation": "Parties remained central."
+      },
+      {
+        "label": "B",
+        "text": "Party realignment along ideological lines, partisan media and divisions over cultural issues.",
+        "isCorrect": true,
+        "explanation": "Multiple developments reinforced partisan divisions."
+      },
+      {
+        "label": "C",
+        "text": "Agreement among the parties on major social issues and on the role of the federal government.",
+        "isCorrect": false,
+        "explanation": "Disagreements deepened."
+      },
+      {
+        "label": "D",
+        "text": "A decline in the role of the media in covering political campaigns and public affairs.",
+        "isCorrect": false,
+        "explanation": "Media options expanded."
+      }
+    ],
+    "explanation": "Party realignment, partisan media and cultural conflicts increased polarization.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-30",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "hard",
+    "stem": "Population trends in the United States since 1980 have included",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a steady move of population from the South to the Northeast and the Great Lakes.",
+        "isCorrect": false,
+        "explanation": "The movement was toward the South and West."
+      },
+      {
+        "label": "B",
+        "text": "a decline in racial and ethnic diversity as immigration fell sharply after 1980.",
+        "isCorrect": false,
+        "explanation": "Diversity increased."
+      },
+      {
+        "label": "C",
+        "text": "a falling average age of the population as birth rates rose in every region of the country.",
+        "isCorrect": false,
+        "explanation": "The population has been aging."
+      },
+      {
+        "label": "D",
+        "text": "continued growth of the South and West, an aging population and growing diversity.",
+        "isCorrect": true,
+        "explanation": "The census documents these patterns."
+      }
+    ],
+    "explanation": "Population growth in the South and West, aging and diversity characterized recent decades.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  }
+]

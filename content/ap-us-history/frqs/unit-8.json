@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u8-frq-1",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The Cold War shaped American life at home as much as abroad. Fear of communism justified both a vast military establishment and campaigns against supposed subversives.”\n>\n> *Source: A historian, early twenty-first century*\n\n**a)** Identify ONE claim made by the historian.\n\n**b)** Explain ONE development in the period 1945 to 1960 that supports the historian's claim.\n\n**c)** Explain ONE way in which the Cold War shaped domestic policy in the period 1945 to 1965 other than anticommunist campaigns.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a claim, such as that the Cold War shaped domestic life or that fear of communism justified military spending and campaigns against supposed subversives"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as loyalty programs, HUAC hearings, McCarthyism, or the military buildup under NSC-68"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as the National Defense Education Act after Sputnik, the interstate highway system's defense justification, or the argument that segregation hurt the nation's image abroad"
+      }
+    ],
+    "sampleResponse": "a) The historian claims that the Cold War influenced domestic life, as fear of communism justified military growth and investigations of supposed subversives.\nb) Senator McCarthy and the House Un-American Activities Committee investigated alleged communists, and many people lost jobs or reputations on the basis of accusations.\nc) After the Soviet launch of Sputnik in 1957, Congress passed the National Defense Education Act, which increased federal funding for science and education.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-frq-2",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “We sat at the counter and were refused service. We did not fight back. When we were arrested, others took our places. This movement has no leader but the conscience of the people.”\n>\n> *Source: A student activist's speech, 1961*\n\n**a)** Identify ONE strategy used by the movement described in the excerpt.\n\n**b)** Explain ONE way in which the sit-ins and similar protests contributed to the success of the civil rights movement.\n\n**c)** Explain ONE way in which the federal government responded to the civil rights movement in the period 1964 to 1965.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a strategy such as sit-ins, nonviolent direct action or accepting arrest"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains an effect such as drawing national attention, spreading the movement across the South, leading to the founding of SNCC, or desegregating lunch counters"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a response such as passage of the Civil Rights Act of 1964 or the Voting Rights Act of 1965"
+      }
+    ],
+    "sampleResponse": "a) The protesters used nonviolent sit-ins, refusing to fight back even when arrested.\nb) The sit-ins spread across the South, drew national media attention and led to the founding of the Student Nonviolent Coordinating Committee, which helped force the desegregation of many lunch counters.\nc) Congress passed the Civil Rights Act of 1964, which banned discrimination in public accommodations and employment, and the Voting Rights Act of 1965, which protected Black voting rights.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-frq-3",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE program or law of the Great Society.\n\n**b)** Identify a SECOND, DIFFERENT program or law of the Great Society.\n\n**c)** Explain ONE criticism or limitation of the Great Society in the period 1965 to 1975.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a program or law such as Medicare, Medicaid, Head Start, the Elementary and Secondary Education Act, or the Voting Rights Act"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies a second, different program or law from the same list"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a criticism or limit such as conservative opposition to big government, the diversion of funds and attention by the Vietnam War, or the unrest in cities showing that poverty and discrimination persisted"
+      }
+    ],
+    "sampleResponse": "a) Medicare provided health insurance for the elderly.\nb) Head Start provided early education for poor children.\nc) Conservatives criticized the Great Society as an expansion of government that was costly and ineffective, and the Vietnam War took money and attention away from its goals.",
+    "reviewed": false
+  }
+]

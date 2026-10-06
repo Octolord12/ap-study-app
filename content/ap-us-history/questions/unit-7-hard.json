@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-ush-u7-mcq-31",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "imperialism-and-spanish-american-war",
+    "difficulty": "hard",
+    "stem": "> “American expansion in the 1890s was driven less by a hunger for territory than by the search for markets, especially in Asia, and by the belief that a modern economy needed them.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Yellow journalism stirred public anger toward Spain with sensational stories from Cuba and Havana.",
+        "isCorrect": false,
+        "explanation": "That concerns public opinion and the war with Spain, not markets."
+      },
+      {
+        "label": "B",
+        "text": "The Maine exploded in Havana harbor in 1898, which helped bring on the war with Spain in April.",
+        "isCorrect": false,
+        "explanation": "That event is linked to the origins of the war with Spain, not to Asian markets."
+      },
+      {
+        "label": "C",
+        "text": "The Open Door notes sought equal access to Chinese markets, and the Philippines became a base in Asia.",
+        "isCorrect": true,
+        "explanation": "Both developments show commercial goals in Asia shaping American expansion."
+      },
+      {
+        "label": "D",
+        "text": "The Anti-Imperialist League opposed the annexation of the Philippines and the war that followed.",
+        "isCorrect": false,
+        "explanation": "That shows opposition to expansion, not its economic motives."
+      }
+    ],
+    "explanation": "The Open Door and the Philippines show economic interests in Asia.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/imperialism-and-spanish-american-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-32",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "imperialism-and-spanish-american-war",
+    "difficulty": "hard",
+    "stem": "The Platt Amendment of 1901, attached to Cuba's constitution,",
+    "choices": [
+      {
+        "label": "A",
+        "text": "annexed Cuba as an American territory governed by a military governor appointed in Washington.",
+        "isCorrect": false,
+        "explanation": "Cuba was not annexed."
+      },
+      {
+        "label": "B",
+        "text": "granted Cuba complete independence from all outside influence and ended the American occupation.",
+        "isCorrect": false,
+        "explanation": "The amendment limited Cuban independence."
+      },
+      {
+        "label": "C",
+        "text": "barred the United States from keeping troops in Cuba or interfering in its government at all.",
+        "isCorrect": false,
+        "explanation": "The amendment permitted American intervention."
+      },
+      {
+        "label": "D",
+        "text": "gave the United States the right to intervene in Cuba and keep a naval base at Guantanamo Bay.",
+        "isCorrect": true,
+        "explanation": "The amendment limited Cuban independence and ensured continued American influence."
+      }
+    ],
+    "explanation": "The Platt Amendment kept Cuba under American influence.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/imperialism-and-spanish-american-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-33",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "imperialism-and-spanish-american-war",
+    "difficulty": "hard",
+    "stem": "The Roosevelt Corollary to the Monroe Doctrine (1904) asserted that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Latin American nations should join the League of Nations and settle their debts by arbitration.",
+        "isCorrect": false,
+        "explanation": "The League did not yet exist in 1904."
+      },
+      {
+        "label": "B",
+        "text": "European nations had the right to collect debts in Latin America by force if necessary.",
+        "isCorrect": false,
+        "explanation": "The corollary aimed to prevent such intervention."
+      },
+      {
+        "label": "C",
+        "text": "the United States could act as a police power in the hemisphere to prevent European intervention.",
+        "isCorrect": true,
+        "explanation": "Roosevelt justified American intervention in Latin American affairs."
+      },
+      {
+        "label": "D",
+        "text": "the United States would stay out of all affairs in Latin America and respect its sovereignty fully.",
+        "isCorrect": false,
+        "explanation": "The corollary expanded American involvement."
+      }
+    ],
+    "explanation": "The corollary justified American intervention as a police power.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/imperialism-and-spanish-american-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-34",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "progressive-era",
+    "difficulty": "hard",
+    "stem": "> “Progressivism was largely a reform movement for white America. It expanded democracy for white women and workers while ignoring, and sometimes deepening, racial segregation.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Wilson's administration segregated federal workplaces, and Black activists founded the NAACP in 1909.",
+        "isCorrect": true,
+        "explanation": "Both show racial discrimination persisting and Black activists organizing against it during the Progressive Era."
+      },
+      {
+        "label": "B",
+        "text": "Theodore Roosevelt created national parks, forests and monuments across the western territories.",
+        "isCorrect": false,
+        "explanation": "Conservation did not address segregation."
+      },
+      {
+        "label": "C",
+        "text": "The Seventeenth Amendment provided for the direct election of senators in every state by popular vote.",
+        "isCorrect": false,
+        "explanation": "That reform expanded democracy but does not address race."
+      },
+      {
+        "label": "D",
+        "text": "The Meat Inspection Act regulated the meatpacking industry and required federal inspection of plants.",
+        "isCorrect": false,
+        "explanation": "That law concerned food safety."
+      }
+    ],
+    "explanation": "Federal segregation and the founding of the NAACP support the argument.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/progressive-era",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-35",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "progressive-era",
+    "difficulty": "hard",
+    "stem": "The Progressive conservation movement under Theodore Roosevelt led most directly to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the sale of most public lands to private developers, railroads and timber companies.",
+        "isCorrect": false,
+        "explanation": "Roosevelt protected land."
+      },
+      {
+        "label": "B",
+        "text": "the elimination of federal land agencies and the transfer of land to the states.",
+        "isCorrect": false,
+        "explanation": "Federal agencies expanded."
+      },
+      {
+        "label": "C",
+        "text": "a ban on all logging and mining in the West and on every acre of public land.",
+        "isCorrect": false,
+        "explanation": "Resources were managed, not banned."
+      },
+      {
+        "label": "D",
+        "text": "the creation of national forests, parks and monuments and federal management of resources.",
+        "isCorrect": true,
+        "explanation": "Roosevelt greatly expanded protected public lands."
+      }
+    ],
+    "explanation": "Conservation expanded federal protection and management of public lands.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/progressive-era",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-36",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "progressive-era",
+    "difficulty": "hard",
+    "stem": "Which statement best compares the tactics of the National American Woman Suffrage Association and Alice Paul's National Woman's Party?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Both groups opposed women's suffrage and worked together against the Nineteenth Amendment.",
+        "isCorrect": false,
+        "explanation": "Both supported suffrage."
+      },
+      {
+        "label": "B",
+        "text": "Only the NAWSA used public demonstrations, while the Woman's Party relied on private lobbying.",
+        "isCorrect": false,
+        "explanation": "The Woman's Party was known for pickets."
+      },
+      {
+        "label": "C",
+        "text": "Both groups relied only on court cases to win the vote and avoided public protests.",
+        "isCorrect": false,
+        "explanation": "Neither relied solely on court cases."
+      },
+      {
+        "label": "D",
+        "text": "NAWSA lobbied state by state, while the Woman's Party used pickets to push a federal amendment.",
+        "isCorrect": true,
+        "explanation": "The groups shared a goal but differed in methods."
+      }
+    ],
+    "explanation": "NAWSA used lobbying and state campaigns while the National Woman's Party used protests.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/progressive-era",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-37",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "world-war-one",
+    "difficulty": "hard",
+    "stem": "> “Wartime fear led the government to treat dissent as disloyalty, and many Americans who criticized the war found themselves silenced or imprisoned.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Women took jobs in war industries and in the offices that men had left for the army.",
+        "isCorrect": false,
+        "explanation": "That concerns the labor force, not dissent."
+      },
+      {
+        "label": "B",
+        "text": "The Committee on Public Information produced posters supporting the war.",
+        "isCorrect": false,
+        "explanation": "That shows promotion of the war, not punishment of critics."
+      },
+      {
+        "label": "C",
+        "text": "Congress established a draft with the Selective Service Act in 1917 for mobilization.",
+        "isCorrect": false,
+        "explanation": "The draft shows mobilization, not suppression of dissent."
+      },
+      {
+        "label": "D",
+        "text": "Eugene Debs was sentenced to prison under the Espionage Act for an antiwar speech.",
+        "isCorrect": true,
+        "explanation": "The prosecution of a prominent critic shows dissent being punished."
+      }
+    ],
+    "explanation": "Debs's imprisonment shows the government punishing wartime dissent.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/world-war-one",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-38",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "world-war-one",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the difference between Woodrow Wilson's goals and the Treaty of Versailles?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The treaty gave Germany control of the League of Nations and a seat on its council.",
+        "isCorrect": false,
+        "explanation": "Germany was not included in the League at first."
+      },
+      {
+        "label": "B",
+        "text": "The treaty exactly reflected all Fourteen Points and gave Wilson the peace he had proposed.",
+        "isCorrect": false,
+        "explanation": "Many of Wilson's points were not adopted."
+      },
+      {
+        "label": "C",
+        "text": "The Allies insisted on punishing Germany, unlike Wilson's hope for a peace without victory.",
+        "isCorrect": true,
+        "explanation": "The treaty was harsher on Germany than Wilson wanted."
+      },
+      {
+        "label": "D",
+        "text": "Wilson insisted on harsh reparations, which the Allies rejected in favor of a lenient peace.",
+        "isCorrect": false,
+        "explanation": "The Allies wanted harsher terms than Wilson."
+      }
+    ],
+    "explanation": "The treaty was more punitive than Wilson's vision.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/world-war-one",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-39",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "world-war-one",
+    "difficulty": "hard",
+    "stem": "The Red Scare of 1919 and 1920 was fueled by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the passage of the Nineteenth Amendment and public fear of women's new political power.",
+        "isCorrect": false,
+        "explanation": "The amendment did not cause the scare."
+      },
+      {
+        "label": "B",
+        "text": "a wave of immigration from northern Europe that raised fears of foreign influence on elections.",
+        "isCorrect": false,
+        "explanation": "The scare was about radicalism."
+      },
+      {
+        "label": "C",
+        "text": "fear of communism after the Russian Revolution, strikes and bombings, leading to the Palmer Raids.",
+        "isCorrect": true,
+        "explanation": "Anxiety about radicalism after the war led to arrests and deportations."
+      },
+      {
+        "label": "D",
+        "text": "the success of labor unions in winning major reforms, which alarmed the nation's business leaders.",
+        "isCorrect": false,
+        "explanation": "The Red Scare weakened radicals."
+      }
+    ],
+    "explanation": "Fear of communism after the Russian Revolution led to the Palmer Raids.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/world-war-one",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-40",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "twenties-and-culture",
+    "difficulty": "hard",
+    "stem": "> “The chief business of the American people is business. The government's duty is to keep taxes low and regulation light and to let enterprise do the rest.”\n>\n> *Source: A magazine editorial, 1926*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Progressive trust-busting of Theodore Roosevelt and his Square Deal reforms.",
+        "isCorrect": false,
+        "explanation": "Roosevelt's approach emphasized regulation."
+      },
+      {
+        "label": "B",
+        "text": "Populist demands for government ownership of railroads and a graduated income tax.",
+        "isCorrect": false,
+        "explanation": "The passage calls for light regulation."
+      },
+      {
+        "label": "C",
+        "text": "The New Deal's expansion of federal regulation of banks and the stock market.",
+        "isCorrect": false,
+        "explanation": "The New Deal came in the 1930s."
+      },
+      {
+        "label": "D",
+        "text": "The Republican policies of the 1920s that favored business and limited regulation.",
+        "isCorrect": true,
+        "explanation": "The editorial expresses a laissez-faire approach to government and business."
+      }
+    ],
+    "explanation": "The passage reflects 1920s laissez-faire policy toward business.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/twenties-and-culture",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-41",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "twenties-and-culture",
+    "difficulty": "hard",
+    "stem": "Marcus Garvey's Universal Negro Improvement Association appealed to many African Americans in the early 1920s because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "called for full assimilation into white culture and integrated schools.",
+        "isCorrect": false,
+        "explanation": "Garvey promoted racial pride and separatism."
+      },
+      {
+        "label": "B",
+        "text": "focused on persuading Congress to pass a federal civil rights bill.",
+        "isCorrect": false,
+        "explanation": "The group focused on self-help and nationalism."
+      },
+      {
+        "label": "C",
+        "text": "was supported by the federal government and funded by federal loans.",
+        "isCorrect": false,
+        "explanation": "The government investigated Garvey."
+      },
+      {
+        "label": "D",
+        "text": "promoted racial pride, economic self-sufficiency and Black nationalism.",
+        "isCorrect": true,
+        "explanation": "Garvey urged Black Americans to build their own institutions and take pride in their heritage."
+      }
+    ],
+    "explanation": "Garvey's movement promoted racial pride and self-sufficiency.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/twenties-and-culture",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-42",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "depression-and-new-deal",
+    "difficulty": "hard",
+    "stem": "President Franklin Roosevelt's 1937 proposal to add new justices to the Supreme Court",
+    "choices": [
+      {
+        "label": "A",
+        "text": "was supported by nearly all Democrats and Republicans in both houses of Congress.",
+        "isCorrect": false,
+        "explanation": "The plan was widely opposed."
+      },
+      {
+        "label": "B",
+        "text": "passed easily and gave Roosevelt control of the Court for the rest of his term.",
+        "isCorrect": false,
+        "explanation": "The plan failed."
+      },
+      {
+        "label": "C",
+        "text": "aimed to overcome Court rulings against New Deal laws but failed in Congress.",
+        "isCorrect": true,
+        "explanation": "Critics saw the plan as an attempt to pack the Court."
+      },
+      {
+        "label": "D",
+        "text": "ended the New Deal and returned federal power to the states and the courts.",
+        "isCorrect": false,
+        "explanation": "The New Deal continued."
+      }
+    ],
+    "explanation": "The court-packing plan failed to pass despite Roosevelt's aims.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/depression-and-new-deal",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-43",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "depression-and-new-deal",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the effect of the New Deal on American politics?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It eliminated federal involvement in the economy and returned most regulation to the states.",
+        "isCorrect": false,
+        "explanation": "It expanded federal involvement."
+      },
+      {
+        "label": "B",
+        "text": "It created a lasting Democratic coalition and expanded federal responsibility for economic security.",
+        "isCorrect": true,
+        "explanation": "The New Deal reshaped both party politics and the role of government."
+      },
+      {
+        "label": "C",
+        "text": "It ended the two-party system when the Republican Party stopped running national candidates.",
+        "isCorrect": false,
+        "explanation": "Both parties continued."
+      },
+      {
+        "label": "D",
+        "text": "It made the Republican Party dominant for decades as voters turned against Roosevelt's programs.",
+        "isCorrect": false,
+        "explanation": "The Democratic coalition was dominant for decades."
+      }
+    ],
+    "explanation": "The New Deal created a lasting Democratic coalition and expanded federal responsibility.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/depression-and-new-deal",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-44",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "world-war-two",
+    "difficulty": "hard",
+    "stem": "> “The order rests on the assumption that an entire group is disloyal because of its ancestry. Such an assumption is racial discrimination of the worst kind, and the Constitution does not permit it.”\n>\n> *Source: A Supreme Court dissent, 1944*\n\nThe author of the passage would most likely have agreed with which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Supreme Court had no authority to review military orders in wartime.",
+        "isCorrect": false,
+        "explanation": "The author is reviewing the order."
+      },
+      {
+        "label": "B",
+        "text": "Japanese Americans should have been drafted into segregated units only.",
+        "isCorrect": false,
+        "explanation": "The passage concerns internment."
+      },
+      {
+        "label": "C",
+        "text": "The internment was a justified wartime security measure for the coast.",
+        "isCorrect": false,
+        "explanation": "The author rejects the order."
+      },
+      {
+        "label": "D",
+        "text": "The internment of Japanese Americans was unconstitutional discrimination.",
+        "isCorrect": true,
+        "explanation": "The author condemns treating a whole group as disloyal because of ancestry."
+      }
+    ],
+    "explanation": "The dissent describes the internment order as unconstitutional racial discrimination.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/world-war-two",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-mcq-45",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "world-war-two",
+    "difficulty": "hard",
+    "stem": "The Allied invasion of Normandy in June 1944 was significant because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ended the war in the Pacific and forced Japan to surrender within a few weeks.",
+        "isCorrect": false,
+        "explanation": "The Pacific war ended in August 1945."
+      },
+      {
+        "label": "B",
+        "text": "was a Soviet operation on the Eastern Front that began the push toward Berlin.",
+        "isCorrect": false,
+        "explanation": "It was an Allied operation in France."
+      },
+      {
+        "label": "C",
+        "text": "opened a second front in Western Europe, helping to bring about the defeat of Germany.",
+        "isCorrect": true,
+        "explanation": "The invasion forced Germany to fight on two fronts."
+      },
+      {
+        "label": "D",
+        "text": "caused Italy to join the Axis and opened a new front in the Mediterranean.",
+        "isCorrect": false,
+        "explanation": "Italy had joined the Axis earlier."
+      }
+    ],
+    "explanation": "The invasion opened a second front and helped defeat Germany.",
+    "conceptLink": "ap-us-history/unit-7-imperialism-to-world-war-two/world-war-two",
+    "reviewed": false
+  }
+]

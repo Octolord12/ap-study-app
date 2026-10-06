@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-ush-u3-mcq-31",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "hard",
+    "stem": "> “The most important result of the British victory in 1763 was not the removal of French power but the removal of the colonists' reason to depend on Britain. Once the French threat was gone, the costs and restrictions of empire looked far less reasonable to those who paid them.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Britain's victory made it the leading naval power in the Atlantic and gave it control of Canada.",
+        "isCorrect": false,
+        "explanation": "That describes British strength but does not show colonial reasons for resentment."
+      },
+      {
+        "label": "B",
+        "text": "With the French threat gone, many colonists questioned the need for British troops and resented new taxes.",
+        "isCorrect": true,
+        "explanation": "Colonists saw less need for imperial protection and objected to paying for it."
+      },
+      {
+        "label": "C",
+        "text": "Colonial assemblies had long controlled their own internal taxation, a right they had enjoyed for decades.",
+        "isCorrect": false,
+        "explanation": "This explains why colonists resisted Parliament but does not address the effect of French defeat."
+      },
+      {
+        "label": "D",
+        "text": "The Treaty of Paris of 1763 transferred Florida from Spain to Britain and enlarged the empire.",
+        "isCorrect": false,
+        "explanation": "This is a territorial result and says nothing about colonial attitudes toward dependence."
+      }
+    ],
+    "explanation": "Colonial resentment grew once the French threat disappeared and the costs of empire remained.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-32",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "hard",
+    "stem": "Colonial boycotts of British goods in the 1760s were effective largely because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Parliament responded by granting the colonies representation in the House of Commons.",
+        "isCorrect": false,
+        "explanation": "Representation was never granted."
+      },
+      {
+        "label": "B",
+        "text": "British merchants who needed colonial markets lobbied Parliament to repeal the Stamp Act.",
+        "isCorrect": true,
+        "explanation": "Economic pressure on British merchants carried the colonial case to Parliament."
+      },
+      {
+        "label": "C",
+        "text": "The boycotts ended all trade with the West Indies, which ruined British sugar planters.",
+        "isCorrect": false,
+        "explanation": "Boycotts targeted British imports and did not end West Indies trade."
+      },
+      {
+        "label": "D",
+        "text": "The boycotts caused Parliament to repeal the Coercive Acts in 1774 and withdraw its troops.",
+        "isCorrect": false,
+        "explanation": "The Coercive Acts were not repealed in response to boycotts."
+      }
+    ],
+    "explanation": "Boycotts pressured British merchants, who pushed Parliament to repeal several measures.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-33",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "hard",
+    "stem": "The Declaratory Act of 1766 is best understood as",
+    "choices": [
+      {
+        "label": "A",
+        "text": "an assertion of Parliament's right to legislate for the colonies, passed as the Stamp Act ended.",
+        "isCorrect": true,
+        "explanation": "Parliament retreated on the Stamp Act but insisted on its supreme authority over the colonies."
+      },
+      {
+        "label": "B",
+        "text": "a treaty with Native nations over western land that limited settlement beyond the mountains.",
+        "isCorrect": false,
+        "explanation": "The act concerned Parliament's authority over the colonies."
+      },
+      {
+        "label": "C",
+        "text": "a declaration of war on France, issued after French ships attacked British colonial vessels.",
+        "isCorrect": false,
+        "explanation": "The act had nothing to do with declaring war."
+      },
+      {
+        "label": "D",
+        "text": "a concession granting colonial assemblies the sole power to tax their own residents in all cases.",
+        "isCorrect": false,
+        "explanation": "The act asserted parliamentary authority, not colonial taxing power."
+      }
+    ],
+    "explanation": "The Declaratory Act affirmed parliamentary supremacy even as the Stamp Act was repealed.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-34",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "hard",
+    "stem": "Lord Dunmore's Proclamation of 1775, which offered freedom to enslaved people of rebel owners who joined the British, most directly illustrates",
+    "choices": [
+      {
+        "label": "A",
+        "text": "an alliance between Britain and several Native nations against the colonies on the frontier.",
+        "isCorrect": false,
+        "explanation": "The proclamation addressed enslaved people, not Native alliances."
+      },
+      {
+        "label": "B",
+        "text": "unanimous Patriot support for ending slavery in every colony, including Virginia and South Carolina.",
+        "isCorrect": false,
+        "explanation": "Many Patriots were slaveholders and the proclamation angered them."
+      },
+      {
+        "label": "C",
+        "text": "how Britain tried to weaken the Patriots while exposing the contradiction between liberty and slavery.",
+        "isCorrect": true,
+        "explanation": "The offer drew many enslaved people to British lines and highlighted a tension in the Patriot cause."
+      },
+      {
+        "label": "D",
+        "text": "a British commitment to abolish slavery throughout the empire as soon as the war ended.",
+        "isCorrect": false,
+        "explanation": "The proclamation was a wartime measure aimed at rebels, not a general abolition."
+      }
+    ],
+    "explanation": "The proclamation was a military strategy that exposed contradictions in the Patriot cause.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-35",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the effect of the Revolutionary War and the Treaty of Paris (1783) on Native Americans?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The treaty guaranteed Native nations control of all land east of the Mississippi River and north.",
+        "isCorrect": false,
+        "explanation": "The treaty made no such guarantee."
+      },
+      {
+        "label": "B",
+        "text": "Native peoples gained full citizenship in the new nation and the right to vote in federal elections.",
+        "isCorrect": false,
+        "explanation": "Native peoples were not made citizens."
+      },
+      {
+        "label": "C",
+        "text": "Native nations were divided, and the treaty ignored their claims and opened more land to settlers.",
+        "isCorrect": true,
+        "explanation": "Native peoples were not consulted in the peace and faced growing pressure from settlers."
+      },
+      {
+        "label": "D",
+        "text": "Native nations united in support of the Patriots and were rewarded with recognized sovereignty.",
+        "isCorrect": false,
+        "explanation": "Native nations were divided and were not rewarded with recognition."
+      }
+    ],
+    "explanation": "The war divided Native nations and the peace left them vulnerable to expansion.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-36",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "hard",
+    "stem": "Which factor best explains why several states ended tax support for established churches after the Revolution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Constitution required every state to abolish its established church after ratification in 1788.",
+        "isCorrect": false,
+        "explanation": "The First Amendment limited the federal government, and some New England states kept established churches into the 1800s."
+      },
+      {
+        "label": "B",
+        "text": "A British order requiring the former colonies to end their religious establishments.",
+        "isCorrect": false,
+        "explanation": "Disestablishment occurred as states acted after independence."
+      },
+      {
+        "label": "C",
+        "text": "A sharp decline of religious belief across the new states, which left churches without members.",
+        "isCorrect": false,
+        "explanation": "Religious belief remained strong and grew in the early republic."
+      },
+      {
+        "label": "D",
+        "text": "Enlightenment ideas and growing religious diversity made official churches harder to defend.",
+        "isCorrect": true,
+        "explanation": "Revolutionary ideals and pressure from religious minorities led several states to disestablish churches, as in Virginia's Statute for Religious Freedom."
+      }
+    ],
+    "explanation": "Enlightenment ideas and religious diversity encouraged disestablishment.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-37",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "hard",
+    "stem": "The Three-Fifths Compromise at the Constitutional Convention reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "An agreement that enslaved people could vote in federal elections if their owners gave consent.",
+        "isCorrect": false,
+        "explanation": "Enslaved people had no political rights."
+      },
+      {
+        "label": "B",
+        "text": "A resolution that equalized representation in the Senate by giving each state two senators.",
+        "isCorrect": false,
+        "explanation": "Equal Senate representation resulted from the Great Compromise."
+      },
+      {
+        "label": "C",
+        "text": "A decision to abolish slavery gradually in all states, beginning with the end of the slave trade in 1808.",
+        "isCorrect": false,
+        "explanation": "The Constitution did not abolish slavery."
+      },
+      {
+        "label": "D",
+        "text": "A bargain that increased the representation of slaveholding states by counting enslaved people in part.",
+        "isCorrect": true,
+        "explanation": "Southern delegates wanted enslaved people counted for representation, and the compromise counted three-fifths of them."
+      }
+    ],
+    "explanation": "The compromise gave slaveholding states added power by counting three-fifths of enslaved people.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-38",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "hard",
+    "stem": "> “Ambition must be made to counteract ambition. The great security against a gradual concentration of power in one department is to give those who administer each department the means and the motives to resist encroachments by the others.”\n>\n> *Source: A Federalist essayist, 1788*\n\nThe approach described in the passage is best reflected in which feature of the Constitution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Bill of Rights, which protects individual liberties from the government.",
+        "isCorrect": false,
+        "explanation": "The Bill of Rights protects individual liberties and is not mainly about balancing branches."
+      },
+      {
+        "label": "B",
+        "text": "The Three-Fifths Compromise, which settled how to count enslaved people.",
+        "isCorrect": false,
+        "explanation": "That concerns representation and has nothing to do with checks between departments."
+      },
+      {
+        "label": "C",
+        "text": "The equal representation of states in the Senate, from the Great Compromise.",
+        "isCorrect": false,
+        "explanation": "That reflects the Great Compromise."
+      },
+      {
+        "label": "D",
+        "text": "The separation of powers among three branches, with checks and balances among them.",
+        "isCorrect": true,
+        "explanation": "The author describes giving each branch the means to resist the others, which is the idea behind checks and balances."
+      }
+    ],
+    "explanation": "The passage describes separation of powers and checks and balances.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-39",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "hard",
+    "stem": "The Bill of Rights was added to the Constitution in 1791 primarily to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "give the president authority to veto state laws that violated the Constitution.",
+        "isCorrect": false,
+        "explanation": "The Bill of Rights did not expand presidential power in that way."
+      },
+      {
+        "label": "B",
+        "text": "address Anti-Federalist demands for explicit protection of individual liberties.",
+        "isCorrect": true,
+        "explanation": "Several states ratified with the expectation that amendments protecting rights would follow."
+      },
+      {
+        "label": "C",
+        "text": "end slavery in the new nation by a gradual process controlled by Congress.",
+        "isCorrect": false,
+        "explanation": "The Bill of Rights did not address slavery."
+      },
+      {
+        "label": "D",
+        "text": "replace the Articles of Confederation with a new framework of government.",
+        "isCorrect": false,
+        "explanation": "The Articles had already been replaced by the Constitution."
+      }
+    ],
+    "explanation": "The Bill of Rights answered demands for protection of individual liberties.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-40",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "hard",
+    "stem": "> “Hamilton's financial plan was designed to bind wealthy creditors to the national government by giving them a direct stake in its success.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Jefferson and Madison formed the Democratic-Republican Party to oppose Hamilton's plan.",
+        "isCorrect": false,
+        "explanation": "This shows opposition to Hamilton, not support for the historian's claim."
+      },
+      {
+        "label": "B",
+        "text": "Washington warned against permanent foreign alliances in his farewell address of 1796.",
+        "isCorrect": false,
+        "explanation": "The warning concerns foreign policy, not Hamilton's financial plan."
+      },
+      {
+        "label": "C",
+        "text": "Assumption of state debts at full value benefited holders of government bonds, many of them wealthy.",
+        "isCorrect": true,
+        "explanation": "Repaying bondholders in full tied creditors' fortunes to the new government."
+      },
+      {
+        "label": "D",
+        "text": "The excise tax on whiskey angered farmers in western Pennsylvania, who protested the tax.",
+        "isCorrect": false,
+        "explanation": "This shows resistance to taxation, not the link between creditors and the national government."
+      }
+    ],
+    "explanation": "Assumption at full value benefited wealthy bondholders and linked them to the government.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-41",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "hard",
+    "stem": "President Washington's response to the Whiskey Rebellion of 1794 demonstrated that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "farmers in the West would be exempt from all federal taxes if they lived beyond the mountains.",
+        "isCorrect": false,
+        "explanation": "The taxes remained in force."
+      },
+      {
+        "label": "B",
+        "text": "the federal government was too weak to act without the permission of the state governments.",
+        "isCorrect": false,
+        "explanation": "The federal government acted on its own authority."
+      },
+      {
+        "label": "C",
+        "text": "the national government could enforce federal law, including the excise tax, with military force.",
+        "isCorrect": true,
+        "explanation": "Washington sent a large militia force, showing that the federal government could uphold its authority."
+      },
+      {
+        "label": "D",
+        "text": "states had the right to nullify federal taxes they believed were unjust or unconstitutional.",
+        "isCorrect": false,
+        "explanation": "The federal government rejected resistance to its laws."
+      }
+    ],
+    "explanation": "The government showed it could enforce federal law with force.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-42",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "hard",
+    "stem": "President John Adams's decision in 1799 and 1800 to seek a diplomatic settlement with France most directly",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ended the Quasi-War but divided the Federalists, whose Hamilton wing wanted a stronger response.",
+        "isCorrect": true,
+        "explanation": "The settlement avoided full war and angered Federalists who wanted a tougher policy."
+      },
+      {
+        "label": "B",
+        "text": "secured the Louisiana Territory for the United States and ended French claims in the West.",
+        "isCorrect": false,
+        "explanation": "The United States acquired Louisiana in 1803."
+      },
+      {
+        "label": "C",
+        "text": "led to a formal declaration of war on France and a vast expansion of the army and navy.",
+        "isCorrect": false,
+        "explanation": "Adams avoided a declaration of war."
+      },
+      {
+        "label": "D",
+        "text": "united Federalists and Democratic-Republicans behind Adams and ended party conflict.",
+        "isCorrect": false,
+        "explanation": "The decision deepened divisions among Federalists."
+      }
+    ],
+    "explanation": "Adams ended the Quasi-War at the cost of splitting his party.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-43",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "hard",
+    "stem": "The American victory at Fallen Timbers in 1794 led most directly to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Louisiana Purchase from France, which doubled the size of the United States.",
+        "isCorrect": false,
+        "explanation": "The purchase came in 1803 and was unrelated to this battle."
+      },
+      {
+        "label": "B",
+        "text": "the withdrawal of the United States from the Ohio Valley and the return of Native lands.",
+        "isCorrect": false,
+        "explanation": "The United States expanded into the Ohio country."
+      },
+      {
+        "label": "C",
+        "text": "the Treaty of Greenville of 1795, in which Native nations ceded much of present-day Ohio.",
+        "isCorrect": true,
+        "explanation": "After defeat, a Native confederacy gave up large territories in the Ohio country."
+      },
+      {
+        "label": "D",
+        "text": "the recognition of an independent Native nation north of the Ohio River by Congress.",
+        "isCorrect": false,
+        "explanation": "No such nation was recognized."
+      }
+    ],
+    "explanation": "Fallen Timbers led to the Treaty of Greenville and Native land cessions.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-44",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "hard",
+    "stem": "> “Shall we abandon the cause of liberty in the very hour when the French people have broken their chains? Our own revolution was fought for the same principles, and to turn our backs now would be ingratitude.”\n>\n> *Source: A Jeffersonian newspaper, 1793*\n\nThe view expressed in the passage most directly reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Anti-Federalist opposition to the Constitution, which they thought favored Britain's allies.",
+        "isCorrect": false,
+        "explanation": "The passage concerns foreign policy."
+      },
+      {
+        "label": "B",
+        "text": "Democratic-Republican sympathy for the French Revolution, unlike the Federalist preference for Britain.",
+        "isCorrect": true,
+        "explanation": "Jeffersonians tended to support revolutionary France, while Federalists leaned toward Britain for trade and order."
+      },
+      {
+        "label": "C",
+        "text": "A call for the United States to ally with Britain against the French Republic and its allies.",
+        "isCorrect": false,
+        "explanation": "The author sympathizes with France, not Britain."
+      },
+      {
+        "label": "D",
+        "text": "Federalist support for a policy of neutrality in the European war between Britain and France.",
+        "isCorrect": false,
+        "explanation": "The passage opposes abandoning the French cause."
+      }
+    ],
+    "explanation": "The passage reflects Democratic-Republican sympathy for revolutionary France.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-45",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "hard",
+    "stem": "Which provision of the Treaty of Paris of 1783 most directly shaped later westward expansion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Britain kept control of the land between the Appalachians and the Mississippi for twenty years.",
+        "isCorrect": false,
+        "explanation": "The treaty gave that land to the United States."
+      },
+      {
+        "label": "B",
+        "text": "Native nations were granted ownership of the Mississippi valley and the Ohio country by the treaty.",
+        "isCorrect": false,
+        "explanation": "The treaty did not recognize Native ownership."
+      },
+      {
+        "label": "C",
+        "text": "Britain recognized American independence and agreed to boundaries reaching the Mississippi River.",
+        "isCorrect": true,
+        "explanation": "The treaty set the western boundary at the Mississippi, opening the interior to American settlement."
+      },
+      {
+        "label": "D",
+        "text": "France received the Ohio Valley and the Great Lakes as a reward for its alliance with the Americans.",
+        "isCorrect": false,
+        "explanation": "France was not given the Ohio Valley."
+      }
+    ],
+    "explanation": "The treaty gave the United States claims to land east of the Mississippi.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  }
+]

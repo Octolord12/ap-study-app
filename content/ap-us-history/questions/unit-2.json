@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-ush-u2-mcq-1",
+    "unit": "unit-2-colonial-america",
+    "topic": "english-colonies-founding",
+    "difficulty": "easy",
+    "stem": "Jamestown, the first permanent English settlement in North America, was founded in 1607 by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Dutch West India Company, a trading firm based in the Netherlands.",
+        "isCorrect": false,
+        "explanation": "The Dutch founded New Netherland, not Jamestown."
+      },
+      {
+        "label": "B",
+        "text": "Puritans seeking to build a model Christian society in New England.",
+        "isCorrect": false,
+        "explanation": "Puritans founded Massachusetts Bay in 1630, not Jamestown."
+      },
+      {
+        "label": "C",
+        "text": "Quakers seeking religious freedom under the leadership of William Penn.",
+        "isCorrect": false,
+        "explanation": "Pennsylvania was founded in the 1680s."
+      },
+      {
+        "label": "D",
+        "text": "a joint-stock company that expected to earn profits for its investors.",
+        "isCorrect": true,
+        "explanation": "The Virginia Company of London raised money from investors who hoped the colony would return a profit."
+      }
+    ],
+    "explanation": "Jamestown was a commercial venture financed through a joint-stock company.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/english-colonies-founding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-2",
+    "unit": "unit-2-colonial-america",
+    "topic": "english-colonies-founding",
+    "difficulty": "medium",
+    "stem": "What most transformed the economy of the Chesapeake colonies by the 1620s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Large-scale textile manufacturing in water-powered mills.",
+        "isCorrect": false,
+        "explanation": "Textile manufacturing was not a major colonial industry at this time."
+      },
+      {
+        "label": "B",
+        "text": "The production of rice and indigo for markets in the West Indies.",
+        "isCorrect": false,
+        "explanation": "Rice and indigo became important later in South Carolina."
+      },
+      {
+        "label": "C",
+        "text": "The profitable cultivation of tobacco for export to Europe.",
+        "isCorrect": true,
+        "explanation": "Tobacco gave Virginia a cash crop, which increased demand for land and labor."
+      },
+      {
+        "label": "D",
+        "text": "A thriving fur trade with French and Native partners.",
+        "isCorrect": false,
+        "explanation": "The French, not the Chesapeake English, dominated the northern fur trade."
+      }
+    ],
+    "explanation": "Tobacco gave the Chesapeake a profitable export crop.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/english-colonies-founding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-3",
+    "unit": "unit-2-colonial-america",
+    "topic": "english-colonies-founding",
+    "difficulty": "medium",
+    "stem": "> “We who sign below, having come beyond the bounds of any grant we hold, bind ourselves together as a body of loyal subjects. We promise to make such laws and appoint such officers as the good of the colony shall require, and to give them all due obedience.”\n>\n> *Source: A founding agreement signed by male settlers aboard a ship, early 1620s*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Early self-government among English colonists through voluntary agreement.",
+        "isCorrect": true,
+        "explanation": "The signers create their own rules and officers by mutual consent, illustrating a colonial tradition of self-government."
+      },
+      {
+        "label": "B",
+        "text": "A rejection of English culture and a call for independence from the crown.",
+        "isCorrect": false,
+        "explanation": "The signers describe themselves as loyal subjects."
+      },
+      {
+        "label": "C",
+        "text": "The direct control of colonial affairs by Parliament through royal governors.",
+        "isCorrect": false,
+        "explanation": "The colonists, not Parliament, are creating the rules."
+      },
+      {
+        "label": "D",
+        "text": "A belief that political authority rests only on the absolute power of the king.",
+        "isCorrect": false,
+        "explanation": "The signers base their authority on an agreement among themselves."
+      }
+    ],
+    "explanation": "Voluntary compacts illustrate early self-government among English colonists.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/english-colonies-founding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-4",
+    "unit": "unit-2-colonial-america",
+    "topic": "english-colonies-founding",
+    "difficulty": "medium",
+    "stem": "The Puritan founders of Massachusetts Bay in 1630 primarily intended to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "grow tobacco for export to England and earn profits for investors.",
+        "isCorrect": false,
+        "explanation": "Tobacco was the cash crop of the Chesapeake."
+      },
+      {
+        "label": "B",
+        "text": "separate completely from the Church of England and withdraw from English society.",
+        "isCorrect": false,
+        "explanation": "That describes the Separatist Pilgrims at Plymouth more than the Massachusetts Bay Puritans."
+      },
+      {
+        "label": "C",
+        "text": "establish religious toleration for people of all faiths and denominations.",
+        "isCorrect": false,
+        "explanation": "Massachusetts Bay did not practice broad toleration and banished dissenters such as Roger Williams."
+      },
+      {
+        "label": "D",
+        "text": "create a godly community whose reformed society would serve as an example.",
+        "isCorrect": true,
+        "explanation": "Puritans hoped to purify the Church of England by building a model society."
+      }
+    ],
+    "explanation": "The Puritans sought a model of reformed Christian society, not toleration or tobacco profits.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/english-colonies-founding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-5",
+    "unit": "unit-2-colonial-america",
+    "topic": "english-colonies-founding",
+    "difficulty": "hard",
+    "stem": "Which statement best compares the New England and Chesapeake colonies in the 1600s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Chesapeake was settled by religious families in compact towns, while New England relied on plantation agriculture.",
+        "isCorrect": false,
+        "explanation": "This reverses the two regions."
+      },
+      {
+        "label": "B",
+        "text": "Neither region had a significant economy based on agriculture, relying only on trade and fishing.",
+        "isCorrect": false,
+        "explanation": "Agriculture was central in both, though in different forms."
+      },
+      {
+        "label": "C",
+        "text": "Both regions were settled mainly by Dutch merchants and Swedish farmers who sought trade profits.",
+        "isCorrect": false,
+        "explanation": "Both were English colonies."
+      },
+      {
+        "label": "D",
+        "text": "New England was settled by families in religious towns, the Chesapeake by single men seeking profit on scattered plantations.",
+        "isCorrect": true,
+        "explanation": "New England's families and towns contrasted with the Chesapeake's tobacco economy, many young male servants and scattered farms."
+      }
+    ],
+    "explanation": "Family-centered, religious New England differed from the profit-driven, male-dominated Chesapeake.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/english-colonies-founding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-6",
+    "unit": "unit-2-colonial-america",
+    "topic": "english-colonies-founding",
+    "difficulty": "medium",
+    "stem": "Pennsylvania, founded by William Penn in 1681, was distinctive among the English colonies because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "offered religious toleration and attracted settlers of many backgrounds.",
+        "isCorrect": true,
+        "explanation": "Penn's colony welcomed diverse settlers and practiced toleration."
+      },
+      {
+        "label": "B",
+        "text": "required all settlers to join the Church of England and pay taxes to it.",
+        "isCorrect": false,
+        "explanation": "Pennsylvania did not require membership in the Church of England."
+      },
+      {
+        "label": "C",
+        "text": "was governed only by members of a Puritan congregation, as in Massachusetts.",
+        "isCorrect": false,
+        "explanation": "Puritans governed Massachusetts, not Pennsylvania."
+      },
+      {
+        "label": "D",
+        "text": "banned immigration from outside England in order to keep the colony English.",
+        "isCorrect": false,
+        "explanation": "Pennsylvania attracted many Germans and others."
+      }
+    ],
+    "explanation": "Pennsylvania's toleration and diverse population set it apart.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/english-colonies-founding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-7",
+    "unit": "unit-2-colonial-america",
+    "topic": "slavery-and-labor-systems",
+    "difficulty": "easy",
+    "stem": "Indentured servants in the English colonies were people who",
+    "choices": [
+      {
+        "label": "A",
+        "text": "agreed to work for a fixed number of years in exchange for passage to America.",
+        "isCorrect": true,
+        "explanation": "Indentured servants paid for passage with several years of labor and were meant to be freed at the end of their terms."
+      },
+      {
+        "label": "B",
+        "text": "were enslaved for life and their children were enslaved after them.",
+        "isCorrect": false,
+        "explanation": "That describes chattel slavery."
+      },
+      {
+        "label": "C",
+        "text": "were Native Americans forced to work for English colonists on their farms.",
+        "isCorrect": false,
+        "explanation": "Indentured servants were mostly Europeans who contracted to serve."
+      },
+      {
+        "label": "D",
+        "text": "held large tracts of land granted by the Crown in return for service.",
+        "isCorrect": false,
+        "explanation": "Servants generally owned little or no land."
+      }
+    ],
+    "explanation": "Indentured servitude was a time-limited labor arrangement exchanged for passage.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/slavery-and-labor-systems",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-8",
+    "unit": "unit-2-colonial-america",
+    "topic": "slavery-and-labor-systems",
+    "difficulty": "medium",
+    "stem": "Which long-term development is associated with Bacon's Rebellion (1676) in Virginia?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Crown repealed the Navigation Acts and ended royal control of trade.",
+        "isCorrect": false,
+        "explanation": "The rebellion did not end the Navigation Acts."
+      },
+      {
+        "label": "B",
+        "text": "Planters feared landless former servants and turned increasingly to enslaved Africans.",
+        "isCorrect": true,
+        "explanation": "The rebellion alarmed elites about unrest among poor freedmen, contributing to a shift toward African slavery."
+      },
+      {
+        "label": "C",
+        "text": "Virginia abolished slavery and freed those who had been enslaved.",
+        "isCorrect": false,
+        "explanation": "Slavery expanded in Virginia after the rebellion."
+      },
+      {
+        "label": "D",
+        "text": "Native peoples recovered their lands in Virginia and drove out the settlers.",
+        "isCorrect": false,
+        "explanation": "Native peoples lost more land after the rebellion."
+      }
+    ],
+    "explanation": "Bacon's Rebellion encouraged planters to turn to African slavery rather than rely on indentured servants.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/slavery-and-labor-systems",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-9",
+    "unit": "unit-2-colonial-america",
+    "topic": "slavery-and-labor-systems",
+    "difficulty": "medium",
+    "stem": "> “Whereas some doubt has arisen whether a child born of an enslaved mother and a free father shall be bond or free, it is enacted that all children born in this colony shall be bond or free according to the condition of the mother.”\n>\n> *Source: A colonial assembly law, 1660s*\n\nThe law most directly contributed to which development?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The spread of slavery only to New England and the Middle Colonies.",
+        "isCorrect": false,
+        "explanation": "Slavery spread across many colonies and was not limited to New England."
+      },
+      {
+        "label": "B",
+        "text": "The expansion of political rights for free Black colonists.",
+        "isCorrect": false,
+        "explanation": "The law restricted freedom, it did not expand rights."
+      },
+      {
+        "label": "C",
+        "text": "The growth of hereditary, race-based slavery in the English colonies.",
+        "isCorrect": true,
+        "explanation": "Making children's status follow the mother's meant enslaved status passed down through generations."
+      },
+      {
+        "label": "D",
+        "text": "The end of indentured servitude in all of the English colonies.",
+        "isCorrect": false,
+        "explanation": "Indentured servitude continued for many years after this law."
+      }
+    ],
+    "explanation": "Hereditary slavery was written into law, helping entrench racial slavery.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/slavery-and-labor-systems",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-10",
+    "unit": "unit-2-colonial-america",
+    "topic": "slavery-and-labor-systems",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the growth of slavery in South Carolina in the late 1600s and early 1700s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Barbadian planters brought slave-based agriculture, and enslaved Africans' skills made rice profitable.",
+        "isCorrect": true,
+        "explanation": "Enslaved Africans' labor and skills in rice growing underpinned a plantation economy in which they became a majority along the coast."
+      },
+      {
+        "label": "B",
+        "text": "Slavery was introduced there only after the American Revolution, when cotton spread.",
+        "isCorrect": false,
+        "explanation": "Slavery was well established in South Carolina long before the Revolution."
+      },
+      {
+        "label": "C",
+        "text": "The colony's proprietors prohibited slavery, so planters relied on indentured servants.",
+        "isCorrect": false,
+        "explanation": "South Carolina permitted and expanded slavery."
+      },
+      {
+        "label": "D",
+        "text": "Enslaved Africans were used mainly in the fur trade with Native nations and the French, not on plantations.",
+        "isCorrect": false,
+        "explanation": "Enslaved Africans worked mainly on plantations and in related labor."
+      }
+    ],
+    "explanation": "Barbadian planters and the profitability of rice cultivated by enslaved Africans fueled slavery in the Carolinas.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/slavery-and-labor-systems",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-11",
+    "unit": "unit-2-colonial-america",
+    "topic": "slavery-and-labor-systems",
+    "difficulty": "medium",
+    "stem": "The Stono Rebellion of 1739 was",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a rebellion of frontier farmers in Virginia against the colony's governor.",
+        "isCorrect": false,
+        "explanation": "That describes Bacon's Rebellion in 1676."
+      },
+      {
+        "label": "B",
+        "text": "a revolt of Native peoples against Spanish missions and tribute in New Mexico.",
+        "isCorrect": false,
+        "explanation": "The Pueblo Revolt was in 1680."
+      },
+      {
+        "label": "C",
+        "text": "a protest by colonists against taxes imposed by Parliament on legal documents.",
+        "isCorrect": false,
+        "explanation": "That describes the later Stamp Act resistance."
+      },
+      {
+        "label": "D",
+        "text": "an uprising of enslaved Africans in South Carolina that led to harsher slave codes.",
+        "isCorrect": true,
+        "explanation": "The rebellion alarmed planters and was followed by stricter laws controlling enslaved people."
+      }
+    ],
+    "explanation": "Stono was a slave uprising that was followed by stricter control of enslaved people.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/slavery-and-labor-systems",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-12",
+    "unit": "unit-2-colonial-america",
+    "topic": "slavery-and-labor-systems",
+    "difficulty": "hard",
+    "stem": "Which statement best compares slavery in the northern and southern colonies by the mid-1700s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Slavery was more economically central in New England, where large farms and shipyards depended on enslaved labor, than in the Chesapeake or the Carolinas.",
+        "isCorrect": false,
+        "explanation": "It was more central to the Chesapeake and the lower South."
+      },
+      {
+        "label": "B",
+        "text": "Enslaved people in the North were mostly rice workers on large plantations, as in the South.",
+        "isCorrect": false,
+        "explanation": "Rice cultivation was concentrated in the South."
+      },
+      {
+        "label": "C",
+        "text": "Slavery was illegal in all of the northern colonies but legal in the South, where it was less common.",
+        "isCorrect": false,
+        "explanation": "Slavery was legal and practiced in the northern colonies."
+      },
+      {
+        "label": "D",
+        "text": "In the North enslaved people were fewer and worked mostly as servants and artisans, while in the South slavery was central to export agriculture.",
+        "isCorrect": true,
+        "explanation": "Slavery existed in both regions, but only the plantation South was built around it."
+      }
+    ],
+    "explanation": "Slavery was widespread but economically central mainly in the South.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/slavery-and-labor-systems",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-13",
+    "unit": "unit-2-colonial-america",
+    "topic": "atlantic-economy-and-mercantilism",
+    "difficulty": "easy",
+    "stem": "Mercantilism was an economic theory that held that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "colonies should develop economies fully independent of the home country and trade freely with any nation.",
+        "isCorrect": false,
+        "explanation": "Mercantilism aimed to keep colonies dependent."
+      },
+      {
+        "label": "B",
+        "text": "governments should leave trade entirely unregulated and let markets set prices.",
+        "isCorrect": false,
+        "explanation": "That describes free-market thinking, the opposite of mercantilism."
+      },
+      {
+        "label": "C",
+        "text": "wealth comes only from farming and never from trade, manufacturing or colonies.",
+        "isCorrect": false,
+        "explanation": "Mercantilists emphasized trade and a favorable balance of trade."
+      },
+      {
+        "label": "D",
+        "text": "a nation grows strong by exporting more than it imports and by using colonies for raw materials.",
+        "isCorrect": true,
+        "explanation": "Mercantilist thinking aimed to build national wealth through a favorable balance of trade and controlled colonial commerce."
+      }
+    ],
+    "explanation": "Mercantilism sought to enrich the home country through regulated trade and colonial supply.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/atlantic-economy-and-mercantilism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-14",
+    "unit": "unit-2-colonial-america",
+    "topic": "atlantic-economy-and-mercantilism",
+    "difficulty": "medium",
+    "stem": "The Navigation Acts of the mid-1600s required that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "colonies stop all trade with the West Indies and with Native nations.",
+        "isCorrect": false,
+        "explanation": "The West Indies trade was important and was not ended by the acts."
+      },
+      {
+        "label": "B",
+        "text": "colonial merchants trade freely and directly with France and the Netherlands.",
+        "isCorrect": false,
+        "explanation": "The acts restricted trade with other nations."
+      },
+      {
+        "label": "C",
+        "text": "colonists pay a direct tax to Parliament on every newspaper, playing card and legal document.",
+        "isCorrect": false,
+        "explanation": "That describes the later Stamp Act."
+      },
+      {
+        "label": "D",
+        "text": "certain colonial goods travel on English or colonial ships and pass through England.",
+        "isCorrect": true,
+        "explanation": "The acts regulated colonial trade to benefit England, directing enumerated goods such as tobacco through English ports."
+      }
+    ],
+    "explanation": "The Navigation Acts were mercantilist laws that regulated colonial shipping and trade.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/atlantic-economy-and-mercantilism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-15",
+    "unit": "unit-2-colonial-america",
+    "topic": "atlantic-economy-and-mercantilism",
+    "difficulty": "medium",
+    "stem": "> “The laws forbid us to carry our lumber and fish to any port but those of England and her islands. Yet the customs officers are few and poorly paid, and many a cargo goes to the French islands for molasses and returns with no questions asked. We trade where the price is best.”\n>\n> *Source: A Massachusetts merchant's letter, 1730s*\n\nThe passage best illustrates which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Full colonial compliance with the Navigation Acts and royal customs officers.",
+        "isCorrect": false,
+        "explanation": "The merchant describes evading the laws."
+      },
+      {
+        "label": "B",
+        "text": "A gap between mercantilist rules and their enforcement during salutary neglect.",
+        "isCorrect": true,
+        "explanation": "The merchant describes widespread evasion of trade laws because enforcement was weak."
+      },
+      {
+        "label": "C",
+        "text": "The repeal of the Navigation Acts by Parliament during the 1730s.",
+        "isCorrect": false,
+        "explanation": "The laws still existed; they were just poorly enforced."
+      },
+      {
+        "label": "D",
+        "text": "A colonial demand for independence from Britain, expressed in the merchant's letter.",
+        "isCorrect": false,
+        "explanation": "The merchant complains about regulations but does not call for independence."
+      }
+    ],
+    "explanation": "Weak enforcement allowed colonists to trade around mercantilist restrictions.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/atlantic-economy-and-mercantilism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-16",
+    "unit": "unit-2-colonial-america",
+    "topic": "atlantic-economy-and-mercantilism",
+    "difficulty": "medium",
+    "stem": "The Dominion of New England (1686) is best described as",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a Crown effort to unite northern colonies under royal control and enforce trade laws.",
+        "isCorrect": true,
+        "explanation": "Royal governor Edmund Andros ruled the Dominion, which curtailed colonial assemblies and was overthrown after the Glorious Revolution."
+      },
+      {
+        "label": "B",
+        "text": "a military alliance between the colonies and France against Spain.",
+        "isCorrect": false,
+        "explanation": "The Dominion was a political administrative unit, not an alliance with France."
+      },
+      {
+        "label": "C",
+        "text": "a Puritan plan to unite all of the New England colonies under a single church leadership.",
+        "isCorrect": false,
+        "explanation": "The Dominion was imposed by the Crown, not created by Puritan leaders."
+      },
+      {
+        "label": "D",
+        "text": "a Dutch trading company that controlled the fur trade in New York.",
+        "isCorrect": false,
+        "explanation": "The Dutch had lost New Netherland to England in 1664."
+      }
+    ],
+    "explanation": "The Dominion tried to centralize royal control and was resisted by colonists.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/atlantic-economy-and-mercantilism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-17",
+    "unit": "unit-2-colonial-america",
+    "topic": "atlantic-economy-and-mercantilism",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the Atlantic economy of the 1700s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Native American merchants controlled Atlantic trade between the colonies and Europe.",
+        "isCorrect": false,
+        "explanation": "European and colonial merchants controlled it."
+      },
+      {
+        "label": "B",
+        "text": "The northern colonies had no economic ties to slavery or the Caribbean, since they traded only with England and Scotland.",
+        "isCorrect": false,
+        "explanation": "Northern shipping, distilling and trade were closely tied to the slave economy."
+      },
+      {
+        "label": "C",
+        "text": "Colonial trade was limited to exchanges between neighboring colonies and with Native nations.",
+        "isCorrect": false,
+        "explanation": "The colonies were active in transatlantic and Caribbean trade."
+      },
+      {
+        "label": "D",
+        "text": "Northern shipping, Caribbean sugar and the slave trade were linked, so northern merchants profited from slavery.",
+        "isCorrect": true,
+        "explanation": "The Atlantic economy tied the northern and southern colonies and the West Indies together through trade connected to slavery."
+      }
+    ],
+    "explanation": "Atlantic trade connected colonial merchants to the slave economy.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/atlantic-economy-and-mercantilism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-18",
+    "unit": "unit-2-colonial-america",
+    "topic": "atlantic-economy-and-mercantilism",
+    "difficulty": "medium",
+    "stem": "Which statement best describes the economy of the Middle Colonies in the 1700s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The economy depended almost entirely on whaling, cod fishing and shipbuilding.",
+        "isCorrect": false,
+        "explanation": "That is more typical of New England."
+      },
+      {
+        "label": "B",
+        "text": "A plantation economy based on rice and indigo worked by enslaved labor dominated.",
+        "isCorrect": false,
+        "explanation": "That describes South Carolina and Georgia."
+      },
+      {
+        "label": "C",
+        "text": "Silver mining for the crown was the leading industry, as in Spanish America.",
+        "isCorrect": false,
+        "explanation": "Silver mining was a feature of Spanish America."
+      },
+      {
+        "label": "D",
+        "text": "Fertile farmland produced grain exported through ports such as Philadelphia and New York.",
+        "isCorrect": true,
+        "explanation": "The Middle Colonies were known as the bread colonies for their grain exports."
+      }
+    ],
+    "explanation": "The Middle Colonies exported grain and had diverse economies.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/atlantic-economy-and-mercantilism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-19",
+    "unit": "unit-2-colonial-america",
+    "topic": "religion-and-enlightenment",
+    "difficulty": "easy",
+    "stem": "The First Great Awakening was",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a Spanish campaign of the 1600s to convert Native peoples in Florida missions.",
+        "isCorrect": false,
+        "explanation": "The Awakening took place in the English colonies."
+      },
+      {
+        "label": "B",
+        "text": "a religious revival of the 1730s and 1740s stressing personal religious experience.",
+        "isCorrect": true,
+        "explanation": "Preachers such as Jonathan Edwards and George Whitefield encouraged emotional, individual conversion."
+      },
+      {
+        "label": "C",
+        "text": "an Enlightenment movement of scientists and printers that rejected religion altogether.",
+        "isCorrect": false,
+        "explanation": "The Awakening was a religious revival, not a rejection of religion."
+      },
+      {
+        "label": "D",
+        "text": "a Puritan law of the 1630s requiring church membership in order to vote.",
+        "isCorrect": false,
+        "explanation": "That was an earlier feature of Puritan Massachusetts, not the Great Awakening."
+      }
+    ],
+    "explanation": "The Great Awakening was an evangelical revival stressing personal faith.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/religion-and-enlightenment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-20",
+    "unit": "unit-2-colonial-america",
+    "topic": "religion-and-enlightenment",
+    "difficulty": "medium",
+    "stem": "Which was a result of the First Great Awakening?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It strengthened the authority of established churches in all of the colonies.",
+        "isCorrect": false,
+        "explanation": "The Awakening often undermined established clergy."
+      },
+      {
+        "label": "B",
+        "text": "It challenged established clergy and encouraged religious diversity across the colonies.",
+        "isCorrect": true,
+        "explanation": "Revivals divided congregations into New Lights and Old Lights and created common experiences among the colonies."
+      },
+      {
+        "label": "C",
+        "text": "It ended religious divisions among colonists and united them in one church.",
+        "isCorrect": false,
+        "explanation": "It created new divisions."
+      },
+      {
+        "label": "D",
+        "text": "It led the colonies to adopt a single official church supported by taxes.",
+        "isCorrect": false,
+        "explanation": "No single official church was adopted for the colonies."
+      }
+    ],
+    "explanation": "The Awakening challenged traditional authority and encouraged religious pluralism.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/religion-and-enlightenment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-21",
+    "unit": "unit-2-colonial-america",
+    "topic": "religion-and-enlightenment",
+    "difficulty": "medium",
+    "stem": "> “Reason is the gift of God to every person, and from it we may learn the laws of nature without need of any prince or priest. Government is a compact made for the safety of the governed, and when it fails of that end, the people may change it.”\n>\n> *Source: A colonial printer's essay, 1730s*\n\nThe passage most directly reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The belief in the divine right of kings to rule without the consent of the people.",
+        "isCorrect": false,
+        "explanation": "The author says people may change government."
+      },
+      {
+        "label": "B",
+        "text": "The Puritan belief that church leaders should govern society and the colony.",
+        "isCorrect": false,
+        "explanation": "The author rejects the need for prince or priest."
+      },
+      {
+        "label": "C",
+        "text": "The mercantilist view that colonies exist to serve the home country.",
+        "isCorrect": false,
+        "explanation": "The passage is about political theory, not trade."
+      },
+      {
+        "label": "D",
+        "text": "The Enlightenment emphasis on reason, natural rights and government based on consent.",
+        "isCorrect": true,
+        "explanation": "The author stresses human reason and government as a compact serving the governed, both Enlightenment ideas."
+      }
+    ],
+    "explanation": "The passage expresses Enlightenment political ideas.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/religion-and-enlightenment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-22",
+    "unit": "unit-2-colonial-america",
+    "topic": "religion-and-enlightenment",
+    "difficulty": "hard",
+    "stem": "The Half-Way Covenant of 1662 in New England is best understood as a response to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the arrival of large numbers of Catholic immigrants in Massachusetts.",
+        "isCorrect": false,
+        "explanation": "Catholic immigrants were not the issue here."
+      },
+      {
+        "label": "B",
+        "text": "a push to separate church and state in New England's town governments.",
+        "isCorrect": false,
+        "explanation": "The covenant kept church and community closely connected."
+      },
+      {
+        "label": "C",
+        "text": "concern about declining religious commitment among later generations of Puritans.",
+        "isCorrect": true,
+        "explanation": "It allowed the children of baptized members to be baptized even if they had not themselves had a conversion experience."
+      },
+      {
+        "label": "D",
+        "text": "growing toleration for Quakers and other dissenters in Massachusetts Bay.",
+        "isCorrect": false,
+        "explanation": "Puritans persecuted Quakers rather than tolerating them."
+      }
+    ],
+    "explanation": "The Half-Way Covenant addressed declining church membership among later generations.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/religion-and-enlightenment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-23",
+    "unit": "unit-2-colonial-america",
+    "topic": "religion-and-enlightenment",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the Salem witch trials of 1692?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Fear and social tension in a community strained by frontier war and political uncertainty.",
+        "isCorrect": true,
+        "explanation": "Historians link the accusations to local conflicts, anxiety about the frontier and the loss of Massachusetts's original charter."
+      },
+      {
+        "label": "B",
+        "text": "A Spanish naval attack on New England ports from bases in Florida.",
+        "isCorrect": false,
+        "explanation": "Spain did not attack New England in 1692."
+      },
+      {
+        "label": "C",
+        "text": "The revivals of the First Great Awakening, which swept through New England towns in the 1740s.",
+        "isCorrect": false,
+        "explanation": "The Great Awakening came decades later."
+      },
+      {
+        "label": "D",
+        "text": "A royal order to suppress Puritan dissent throughout New England colonies.",
+        "isCorrect": false,
+        "explanation": "The trials were carried out by colonial authorities, not ordered by the king."
+      }
+    ],
+    "explanation": "Salem reflected social strain and fear in a changing, anxious community.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/religion-and-enlightenment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-24",
+    "unit": "unit-2-colonial-america",
+    "topic": "religion-and-enlightenment",
+    "difficulty": "medium",
+    "stem": "The 1735 trial of the New York printer John Peter Zenger is significant in the history of freedom of the press because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "it established that colonial governors could jail their critics without trial.",
+        "isCorrect": false,
+        "explanation": "The verdict went against the governor's attempt to punish criticism."
+      },
+      {
+        "label": "B",
+        "text": "it established that the Crown could censor colonial newspapers before printing.",
+        "isCorrect": false,
+        "explanation": "The verdict worked against censorship."
+      },
+      {
+        "label": "C",
+        "text": "it led Parliament to pass the Stamp Act to tax colonial newspapers.",
+        "isCorrect": false,
+        "explanation": "The Stamp Act (1765) was unrelated to the Zenger trial."
+      },
+      {
+        "label": "D",
+        "text": "his acquittal supported the idea that printing the truth is not libel.",
+        "isCorrect": true,
+        "explanation": "The jury found Zenger not guilty of seditious libel, strengthening later press freedom."
+      }
+    ],
+    "explanation": "The Zenger verdict supported press freedom and the defense of truth.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/religion-and-enlightenment",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-25",
+    "unit": "unit-2-colonial-america",
+    "topic": "imperial-rivalry-and-borderlands",
+    "difficulty": "easy",
+    "stem": "What was the primary economic activity of New France?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Large cotton plantations worked by enslaved labor and exported to Britain.",
+        "isCorrect": false,
+        "explanation": "Cotton plantations became important later in the South."
+      },
+      {
+        "label": "B",
+        "text": "Commercial grain farming on large estates for export to Europe.",
+        "isCorrect": false,
+        "explanation": "New France's economy depended mainly on furs."
+      },
+      {
+        "label": "C",
+        "text": "The fur trade, conducted largely through trade with Native peoples.",
+        "isCorrect": true,
+        "explanation": "French colonists, traders and Native partners exchanged furs and European goods."
+      },
+      {
+        "label": "D",
+        "text": "Tobacco farming on dispersed plantations along rivers in the interior.",
+        "isCorrect": false,
+        "explanation": "Tobacco was a Chesapeake crop."
+      }
+    ],
+    "explanation": "New France's economy was built on the fur trade.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/imperial-rivalry-and-borderlands",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-26",
+    "unit": "unit-2-colonial-america",
+    "topic": "imperial-rivalry-and-borderlands",
+    "difficulty": "medium",
+    "stem": "King Philip's War (1675-1676) was",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a rebellion of Virginia frontier settlers against their governor and his Native policy.",
+        "isCorrect": false,
+        "explanation": "That was Bacon's Rebellion."
+      },
+      {
+        "label": "B",
+        "text": "a conflict between New England colonists and Native peoples led by Metacom that broke Native power in the region.",
+        "isCorrect": true,
+        "explanation": "The war caused heavy losses for colonists and Native peoples, and the Native nations of southern New England were left much weaker."
+      },
+      {
+        "label": "C",
+        "text": "a war between England and France over control of Canada, the Great Lakes region and the interior fur trade routes.",
+        "isCorrect": false,
+        "explanation": "That was a different type of conflict."
+      },
+      {
+        "label": "D",
+        "text": "a religious conflict between Puritans and Quakers over church membership and worship.",
+        "isCorrect": false,
+        "explanation": "King Philip's War was a conflict with Native peoples."
+      }
+    ],
+    "explanation": "King Philip's War was a bloody conflict that broke Native power in southern New England.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/imperial-rivalry-and-borderlands",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-27",
+    "unit": "unit-2-colonial-america",
+    "topic": "imperial-rivalry-and-borderlands",
+    "difficulty": "medium",
+    "stem": "> “Your people multiply and your cattle trample our corn. You build towns on the ground where our fathers hunted, and your courts judge our people by your laws. We have been patient, but our patience is ended.”\n>\n> *Source: A Native leader in southern New England, 1670s*\n\nWhich of the following was the most important cause of the conflict reflected in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A desire by Native people to join the Church of England and adopt its ways.",
+        "isCorrect": false,
+        "explanation": "The speaker is opposing English encroachment."
+      },
+      {
+        "label": "B",
+        "text": "The expansion of English settlement, which threatened Native land and independence.",
+        "isCorrect": true,
+        "explanation": "The speaker complains of towns on Native land, trampled crops and English control of justice."
+      },
+      {
+        "label": "C",
+        "text": "Disagreement over the use of enslaved labor in English households.",
+        "isCorrect": false,
+        "explanation": "The passage does not mention slavery."
+      },
+      {
+        "label": "D",
+        "text": "Competition with France over the fur trade and control of the interior.",
+        "isCorrect": false,
+        "explanation": "The passage concerns English settlers and not the French."
+      }
+    ],
+    "explanation": "English expansion onto Native land and authority over Native people drove the conflict.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/imperial-rivalry-and-borderlands",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-28",
+    "unit": "unit-2-colonial-america",
+    "topic": "imperial-rivalry-and-borderlands",
+    "difficulty": "medium",
+    "stem": "Which statement about the Pueblo Revolt of 1680 is accurate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Pueblo peoples united to drive the Spanish from New Mexico over forced labor and attacks on their religion, though Spain returned in 1692.",
+        "isCorrect": true,
+        "explanation": "The revolt briefly ended Spanish rule, but the Spanish reconquered the region in 1692."
+      },
+      {
+        "label": "B",
+        "text": "It was led by Spanish settlers who rebelled against the viceroy in Mexico City over taxes.",
+        "isCorrect": false,
+        "explanation": "It was a Native-led uprising."
+      },
+      {
+        "label": "C",
+        "text": "The Pueblo allied with English colonists from Virginia to drive out the Spanish.",
+        "isCorrect": false,
+        "explanation": "The revolt was led by Pueblo peoples without an English alliance."
+      },
+      {
+        "label": "D",
+        "text": "Spain permanently lost control of New Mexico after the revolt, and the territory never again came under Spanish rule or missions.",
+        "isCorrect": false,
+        "explanation": "Spain returned in the 1690s."
+      }
+    ],
+    "explanation": "The Pueblo Revolt briefly expelled the Spanish, who returned in 1692.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/imperial-rivalry-and-borderlands",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-29",
+    "unit": "unit-2-colonial-america",
+    "topic": "imperial-rivalry-and-borderlands",
+    "difficulty": "hard",
+    "stem": "The Iroquois Confederacy's policy of balancing between the English and the French in the early 1700s best illustrates which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The complete military dependence of Native nations on European allies.",
+        "isCorrect": false,
+        "explanation": "The Iroquois acted as an independent power."
+      },
+      {
+        "label": "B",
+        "text": "Native peoples used diplomacy and European rivalries to protect their own interests.",
+        "isCorrect": true,
+        "explanation": "The Iroquois often traded with and negotiated with both powers to maintain independence."
+      },
+      {
+        "label": "C",
+        "text": "The elimination of Native political independence by 1700 in the Northeast.",
+        "isCorrect": false,
+        "explanation": "The Iroquois remained politically important after 1700."
+      },
+      {
+        "label": "D",
+        "text": "The adoption of European political systems by Native nations in the Northeast.",
+        "isCorrect": false,
+        "explanation": "The Confederacy maintained its own council-based system."
+      }
+    ],
+    "explanation": "Native diplomacy played European powers against one another.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/imperial-rivalry-and-borderlands",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-mcq-30",
+    "unit": "unit-2-colonial-america",
+    "topic": "imperial-rivalry-and-borderlands",
+    "difficulty": "hard",
+    "stem": "King William's War, Queen Anne's War and King George's War are best understood as",
+    "choices": [
+      {
+        "label": "A",
+        "text": "civil wars within New France between Jesuit missionaries and fur traders.",
+        "isCorrect": false,
+        "explanation": "They involved England, France and Native allies."
+      },
+      {
+        "label": "B",
+        "text": "North American extensions of European power struggles, with Native allies on several sides.",
+        "isCorrect": true,
+        "explanation": "These conflicts began in Europe and spread to the colonies, with Native nations allied to both England and France."
+      },
+      {
+        "label": "C",
+        "text": "disputes among the English colonies over boundaries, charters and trade rights.",
+        "isCorrect": false,
+        "explanation": "They were imperial wars, not disputes among colonies."
+      },
+      {
+        "label": "D",
+        "text": "Native campaigns to expel all Europeans from the continent by joint attack.",
+        "isCorrect": false,
+        "explanation": "Native nations were participants and allies, not the sole actors."
+      }
+    ],
+    "explanation": "These wars were colonial theaters of European conflicts.",
+    "conceptLink": "ap-us-history/unit-2-colonial-america/imperial-rivalry-and-borderlands",
+    "reviewed": false
+  }
+]

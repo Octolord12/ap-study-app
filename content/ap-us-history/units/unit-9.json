@@ -1,0 +1,34 @@
+{
+  "slug": "unit-9-contemporary-america",
+  "order": 9,
+  "name": "Contemporary America (1980-present)",
+  "weightingMin": 4,
+  "weightingMax": 6,
+  "topics": [
+    {
+      "slug": "reagan-and-conservatism",
+      "order": 1,
+      "name": "The Reagan Era and Conservatism"
+    },
+    {
+      "slug": "end-of-cold-war",
+      "order": 2,
+      "name": "The End of the Cold War"
+    },
+    {
+      "slug": "economy-technology-globalization",
+      "order": 3,
+      "name": "Economy, Technology and Globalization"
+    },
+    {
+      "slug": "september-11-and-war-on-terror",
+      "order": 4,
+      "name": "September 11 and the War on Terror"
+    },
+    {
+      "slug": "demographic-and-cultural-change",
+      "order": 5,
+      "name": "Demographic and Cultural Change"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "ap-us-history",
+  "name": "AP U.S. History",
+  "description": "A survey of American history from first contact in 1491 to the present: colonization, the Revolution and the new nation, expansion and reform, the Civil War and Reconstruction, industrialization, the world wars, the Cold War and civil rights, and the contemporary United States, aligned to the College Board Course and Exam Description.",
+  "colorTheme": "rose",
+  "examFormat": {
+    "totalDurationMinutes": 195,
+    "sections": [
+      {
+        "type": "MCQ",
+        "questionCount": 55,
+        "durationMinutes": 55,
+        "scoreWeight": 0.4
+      },
+      {
+        "type": "SAQ",
+        "questionCount": 3,
+        "durationMinutes": 40,
+        "scoreWeight": 0.2
+      },
+      {
+        "type": "DBQ",
+        "questionCount": 1,
+        "durationMinutes": 60,
+        "scoreWeight": 0.25
+      },
+      {
+        "type": "LEQ",
+        "questionCount": 1,
+        "durationMinutes": 40,
+        "scoreWeight": 0.15
+      }
+    ]
+  }
+}

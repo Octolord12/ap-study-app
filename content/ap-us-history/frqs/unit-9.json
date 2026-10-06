@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u9-frq-1",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The conservative revival of the 1980s drew on a backlash against the liberalism of the 1960s and 1970s, uniting those who opposed taxes and regulation with those who wanted to restore traditional values.”\n>\n> *Source: A historian, early twenty-first century*\n\n**a)** Identify ONE claim made by the historian.\n\n**b)** Explain ONE development of the 1960s or 1970s that contributed to the conservative backlash.\n\n**c)** Explain ONE way in which the Reagan presidency reflected conservative goals.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a claim, such as that the conservative revival grew out of a backlash against 1960s and 1970s liberalism or that it united economic and cultural conservatives"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as the expansion of the federal government under the Great Society, rising taxes and stagflation, controversies over Roe v. Wade or school prayer, or opposition to busing"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an example such as tax cuts, deregulation, a military buildup, or support from the Religious Right"
+      }
+    ],
+    "sampleResponse": "a) The historian argues that the conservative revival was a reaction against 1960s and 1970s liberalism and united economic conservatives with cultural conservatives.\nb) Stagflation in the 1970s and frustration with higher taxes and the growth of government under the Great Society led many voters to support conservative candidates.\nc) Reagan carried out major tax cuts and reduced regulation, which reflected conservative beliefs in lower taxes and a smaller role for government in the economy.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-frq-2",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The old ways cannot continue. We need restructuring of our economy and openness in our society, for a country cannot remain strong when its people are not free to speak.”\n>\n> *Source: A Soviet leader's speech, 1987*\n\n**a)** Identify ONE reason for the reforms described in the excerpt.\n\n**b)** Explain ONE way in which United States policy in the 1980s contributed to the end of the Cold War.\n\n**c)** Explain ONE effect of the collapse of the Soviet Union on United States foreign policy in the 1990s.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a reason such as economic stagnation in the Soviet Union or the need for greater openness and restructuring"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a contribution such as the military buildup and the Strategic Defense Initiative pressuring the Soviet economy, or summit diplomacy and arms control such as the INF Treaty of 1987"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as the United States becoming the sole superpower, the expansion of NATO, or new humanitarian and peacekeeping interventions"
+      }
+    ],
+    "sampleResponse": "a) The speaker says the Soviet economy needed restructuring and that society needed more openness because the country could not stay strong without freedom of speech.\nb) The Reagan administration increased military spending and proposed the Strategic Defense Initiative, which added to the economic strain on the Soviet Union, while summit meetings led to the INF Treaty of 1987.\nc) With the collapse of the Soviet Union, the United States became the sole superpower and took part in new interventions such as those in Bosnia and Kosovo.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-frq-3",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE way in which the United States government responded abroad to the attacks of September 11, 2001.\n\n**b)** Identify ONE way in which the United States government responded at home to the attacks of September 11, 2001.\n\n**c)** Explain ONE controversy that arose from the American response to September 11 in the period 2001 to 2010.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a response such as the invasion of Afghanistan in 2001 or the invasion of Iraq in 2003"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies a response such as the USA Patriot Act, the creation of the Department of Homeland Security, or increased airport security"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a controversy such as the debate over the claim that Iraq had weapons of mass destruction, the detention of prisoners at Guantanamo Bay, or surveillance and civil liberties"
+      }
+    ],
+    "sampleResponse": "a) The United States invaded Afghanistan in 2001 to remove the Taliban government that sheltered al-Qaeda.\nb) Congress passed the USA Patriot Act, which expanded government surveillance and law enforcement powers.\nc) The invasion of Iraq in 2003 was controversial because the administration claimed Iraq had weapons of mass destruction, but none were found, and critics questioned the decision to go to war.",
+    "reviewed": false
+  }
+]

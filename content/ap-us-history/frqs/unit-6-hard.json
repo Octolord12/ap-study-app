@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u6-frq-4",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The problem of the twentieth century is the problem of the color line. To make a person a servant in the economic world while denying a voice in making the laws is to rob that person of the chance to rise.”\n>\n> *Source: A Black intellectual's essay, 1903*\n\n**a)** Identify ONE argument made in the excerpt.\n\n**b)** Explain ONE way in which the approach of Booker T. Washington differed from the view expressed in the excerpt.\n\n**c)** Explain ONE way in which Jim Crow laws in the period 1877 to 1900 limited the political or economic rights of African Americans.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies an argument such as that racial discrimination limited opportunity, that political rights are necessary for economic advancement, or that the color line was the major problem of the century"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains that Washington urged vocational education and economic self-improvement and accepted social segregation for the time being, while the author demanded political rights and full equality"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a limit such as poll taxes, literacy tests and grandfather clauses disfranchising Black voters, segregation laws separating public facilities, or sharecropping and convict leasing restricting economic opportunity"
+      }
+    ],
+    "sampleResponse": "a) The author argues that denying Black Americans a voice in making laws while limiting them economically robs them of opportunity.\nb) Booker T. Washington urged African Americans to focus on vocational training and economic progress and to accept segregation for the time being, while the author demanded political rights and equality.\nc) Southern states used poll taxes, literacy tests and grandfather clauses to prevent African Americans from voting, which took away their political power.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-frq-5",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which industrialization and urbanization changed American society and politics in the period 1865 to 1898.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which industrialization and urbanization changed society and politics"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as Reconstruction, technological change or the growth of national markets"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and demonstrates complex understanding, such as showing that economic change outpaced political reform or that change affected groups differently (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that industrialization and urbanization transformed the economy, labor and city life and produced new political movements, while older patterns of limited government and racial inequality persisted. It places the topic in the context of the end of the Civil War and the growth of national markets, uses specific evidence (railroads, Carnegie and Rockefeller, labor strikes and unions, immigration, tenements and political machines, the Populists, the Interstate Commerce Act and Sherman Act), and uses continuity and change over time to weigh the extent of transformation.",
+    "reviewed": false
+  }
+]

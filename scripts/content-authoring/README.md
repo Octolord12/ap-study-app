@@ -43,3 +43,22 @@ npm run content:validate
 npx tsx scripts/content-authoring/render-audit.ts <course-slug>   # KaTeX errors and raw LaTeX leaks
 npx vitest run --exclude ".claude/**" --exclude "node_modules/**"  # includes the choice-letter audit
 ```
+
+## AP U.S. History
+
+`ap-us-history/` is the fifth course and is written entirely by scripts (core set and hard set):
+`u1_base.py..u9_base.py` (30 MCQs + 3 SAQs per unit, `unit-N.json`), `u1_hard.py..u9_hard.py` (15 MCQs +
+an SAQ + an LEQ, `unit-N-hard.json`) and `pool.py` (4 DBQs + 4 LEQs). Passages and documents are original.
+
+- `pad_u1.py..pad_u9.py` hold overlays that even out answer lengths (see "AP U.S. History" in CLAUDE.md for
+  why): `PAD` replaces the wrong choices, `PADC` the right one, `PADW` single choices. `python3 stats.py`
+  prints how often the right answer is the longest; `python3 flag.py 5` lists the questions in unit 5 where
+  it still is; `DUMP=1 python3 u5_base.py` prints each question's choice lengths.
+- `python3 facts.py` checks every event-plus-year in the content against a date table.
+
+```bash
+cd scripts/content-authoring/ap-us-history
+python3 u1_base.py && python3 u1_hard.py     # rewrites unit 1's JSON (do this for any unit you edit)
+python3 pool.py                              # rewrites the DBQ/LEQ pool
+python3 stats.py && python3 facts.py
+```

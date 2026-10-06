@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-ush-u4-mcq-1",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "easy",
+    "stem": "The Supreme Court case Marbury v. Madison (1803) is significant because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "established judicial review, the Court's power to declare laws unconstitutional.",
+        "isCorrect": true,
+        "explanation": "Chief Justice Marshall's opinion asserted that the Court could strike down laws that conflict with the Constitution."
+      },
+      {
+        "label": "B",
+        "text": "ended the Bank of the United States and its branches in the states.",
+        "isCorrect": false,
+        "explanation": "The case did not concern the national bank."
+      },
+      {
+        "label": "C",
+        "text": "upheld the Alien and Sedition Acts passed by the Federalist Congress in 1798.",
+        "isCorrect": false,
+        "explanation": "Those acts were not the subject of the case."
+      },
+      {
+        "label": "D",
+        "text": "gave states the power to nullify federal laws they judged to be unconstitutional.",
+        "isCorrect": false,
+        "explanation": "The case strengthened the power of the federal judiciary."
+      }
+    ],
+    "explanation": "Marbury v. Madison established judicial review.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-2",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "medium",
+    "stem": "Jefferson's purchase of the Louisiana Territory in 1803 created a constitutional dilemma because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Constitution forbade treaties with France and required the Senate to reject any purchase.",
+        "isCorrect": false,
+        "explanation": "The Constitution does not prohibit such a treaty."
+      },
+      {
+        "label": "B",
+        "text": "Congress was unanimous in opposing any expansion of the nation's borders west of the Mississippi River at that time.",
+        "isCorrect": false,
+        "explanation": "Congress approved the treaty."
+      },
+      {
+        "label": "C",
+        "text": "the Constitution did not clearly let the president buy territory, and Jefferson favored strict readings.",
+        "isCorrect": true,
+        "explanation": "Jefferson set aside his strict interpretation because the opportunity to double the nation's size seemed too important to lose."
+      },
+      {
+        "label": "D",
+        "text": "France refused to sell any land to the United States, so Jefferson had to threaten force.",
+        "isCorrect": false,
+        "explanation": "France agreed to sell the entire territory."
+      }
+    ],
+    "explanation": "Jefferson, a strict constructionist, acted on a power not explicitly granted.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-3",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "medium",
+    "stem": "> “Our ships rot at the wharves and our sailors are without bread. The embargo, meant to punish the nations that molest our commerce, punishes none so severely as ourselves.”\n>\n> *Source: A New England merchant's petition to Congress, 1808*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The success of the embargo in forcing Britain to respect American neutrality at sea.",
+        "isCorrect": false,
+        "explanation": "The passage describes harm to Americans, not success."
+      },
+      {
+        "label": "B",
+        "text": "Support among New England merchants for a declaration of war against Britain and France over seized ships.",
+        "isCorrect": false,
+        "explanation": "The petition complains about the embargo, not a call for war."
+      },
+      {
+        "label": "C",
+        "text": "Opposition in New England to Jefferson's embargo, which hurt American trade more than Britain or France.",
+        "isCorrect": true,
+        "explanation": "The merchant complains that the embargo damaged American commerce."
+      },
+      {
+        "label": "D",
+        "text": "The growth of southern cotton exports to Britain and France during the embargo years.",
+        "isCorrect": false,
+        "explanation": "The passage concerns the effects on northern shipping."
+      }
+    ],
+    "explanation": "The embargo hurt American commerce and met strong opposition in New England.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-4",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "easy",
+    "stem": "Which of the following was a cause of the War of 1812?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A French naval attack on American ports in 1811 that killed hundreds of sailors.",
+        "isCorrect": false,
+        "explanation": "The war was fought against Britain."
+      },
+      {
+        "label": "B",
+        "text": "A British invasion of the Louisiana Territory and an attack on the port of New Orleans in 1811, before the war.",
+        "isCorrect": false,
+        "explanation": "Britain did not invade Louisiana before the war."
+      },
+      {
+        "label": "C",
+        "text": "The Hartford Convention of Federalists, which demanded changes to the Constitution.",
+        "isCorrect": false,
+        "explanation": "The Hartford Convention met during the war, not before it."
+      },
+      {
+        "label": "D",
+        "text": "British impressment of sailors, trade restrictions and support for Native resistance on the frontier.",
+        "isCorrect": true,
+        "explanation": "These grievances led Congress to declare war in 1812."
+      }
+    ],
+    "explanation": "Impressment, trade restrictions and frontier tensions brought war with Britain.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-5",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "hard",
+    "stem": "Which of the following was a result of the War of 1812?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A surge of nationalism and the discrediting of the Federalists after the Hartford Convention.",
+        "isCorrect": true,
+        "explanation": "The war ended with a sense of national pride, while Federalist opposition to the war damaged the party."
+      },
+      {
+        "label": "B",
+        "text": "The United States annexed Canada and the British lands in the Northwest.",
+        "isCorrect": false,
+        "explanation": "The treaty restored prewar boundaries and the United States did not gain Canada."
+      },
+      {
+        "label": "C",
+        "text": "The embargo became permanent law and ended trade with Britain for a generation.",
+        "isCorrect": false,
+        "explanation": "The embargo had ended before the war."
+      },
+      {
+        "label": "D",
+        "text": "Britain agreed to pay reparations for impressment and for seized American ships and cargoes after the war.",
+        "isCorrect": false,
+        "explanation": "The Treaty of Ghent did not provide reparations."
+      }
+    ],
+    "explanation": "The war encouraged nationalism and ruined the Federalists' reputation.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-6",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "medium",
+    "stem": "McCulloch v. Maryland (1819) established that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the national bank was unconstitutional because Congress lacked power to charter one.",
+        "isCorrect": false,
+        "explanation": "The Court upheld the bank."
+      },
+      {
+        "label": "B",
+        "text": "Congress could use only the powers explicitly listed in the Constitution, not implied ones.",
+        "isCorrect": false,
+        "explanation": "The Court affirmed implied powers."
+      },
+      {
+        "label": "C",
+        "text": "states could tax federal institutions such as the national bank within their borders.",
+        "isCorrect": false,
+        "explanation": "The Court ruled the opposite."
+      },
+      {
+        "label": "D",
+        "text": "Congress has implied powers, and federal law is supreme over conflicting state law.",
+        "isCorrect": true,
+        "explanation": "The Court upheld the national bank and ruled that Maryland could not tax it."
+      }
+    ],
+    "explanation": "McCulloch v. Maryland affirmed implied powers and federal supremacy.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-7",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "easy",
+    "stem": "The Erie Canal, completed in 1825, most directly",
+    "choices": [
+      {
+        "label": "A",
+        "text": "lowered shipping costs and linked the Great Lakes region to New York City and the Atlantic.",
+        "isCorrect": true,
+        "explanation": "The canal made it cheaper to move goods between the interior and the coast."
+      },
+      {
+        "label": "B",
+        "text": "connected the Mississippi River to the Pacific Ocean and opened trade with Asia.",
+        "isCorrect": false,
+        "explanation": "The canal ran across New York State."
+      },
+      {
+        "label": "C",
+        "text": "was financed entirely by the federal government, which owned and operated the canal.",
+        "isCorrect": false,
+        "explanation": "New York State financed it."
+      },
+      {
+        "label": "D",
+        "text": "was built mainly to ship cotton from the Deep South to textile mills in Britain.",
+        "isCorrect": false,
+        "explanation": "The canal served the northern interior."
+      }
+    ],
+    "explanation": "The Erie Canal sharply reduced transportation costs and linked regions.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-8",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "medium",
+    "stem": "Eli Whitney's cotton gin, invented in 1793, had which effect?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It ended Southern dependence on slavery by letting small farmers process their own cotton.",
+        "isCorrect": false,
+        "explanation": "It strengthened that dependence."
+      },
+      {
+        "label": "B",
+        "text": "It made cotton processing faster and more profitable, which increased demand for enslaved labor.",
+        "isCorrect": true,
+        "explanation": "Greater profitability encouraged planters to expand cotton acreage and the slave labor that worked it."
+      },
+      {
+        "label": "C",
+        "text": "It shifted the economy of the South toward manufacturing and away from agriculture.",
+        "isCorrect": false,
+        "explanation": "The South remained agricultural."
+      },
+      {
+        "label": "D",
+        "text": "It reduced demand for enslaved labor by automating the work of the cotton plantation.",
+        "isCorrect": false,
+        "explanation": "The gin sped up one step, while the planting and harvesting still required labor, which grew."
+      }
+    ],
+    "explanation": "The cotton gin made cotton more profitable and strengthened slavery.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-9",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "medium",
+    "stem": "> “I rise at five and the bell calls us to the looms until seven in the evening. The pay is good for a farm daughter, and I send part of it home. But the air is thick with lint, and I am not mistress of my own hours.”\n>\n> *Source: A young woman's letter from a textile mill, 1840s*\n\nThe passage best illustrates which of the following developments?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A decline in textile manufacturing as the mills closed and workers returned to farms.",
+        "isCorrect": false,
+        "explanation": "The passage describes active factory work."
+      },
+      {
+        "label": "B",
+        "text": "A shift in labor as factory work drew young women from farms into disciplined wage labor.",
+        "isCorrect": true,
+        "explanation": "The writer describes wage labor and strict schedules in a mill."
+      },
+      {
+        "label": "C",
+        "text": "The growth of slave labor in New England mills as the cotton trade expanded.",
+        "isCorrect": false,
+        "explanation": "The writer describes wage work, not slavery."
+      },
+      {
+        "label": "D",
+        "text": "A return to self-sufficient family farming as women left the mills to work at home.",
+        "isCorrect": false,
+        "explanation": "The writer left farm life for a mill."
+      }
+    ],
+    "explanation": "The passage reflects the growth of factory wage labor.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-10",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "medium",
+    "stem": "Which statement best describes a change in many middle-class northern families during the market revolution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Children stopped working entirely as families moved to cities and sent them to school.",
+        "isCorrect": false,
+        "explanation": "Children's labor continued in many settings."
+      },
+      {
+        "label": "B",
+        "text": "Work moved out of the household, and an ideal of separate spheres assigned women to the home.",
+        "isCorrect": true,
+        "explanation": "As production shifted away from home, the ideal that men worked outside and women managed the home spread."
+      },
+      {
+        "label": "C",
+        "text": "Families became more self-sufficient and produced nearly everything they needed at home.",
+        "isCorrect": false,
+        "explanation": "The market revolution made families more dependent on the market."
+      },
+      {
+        "label": "D",
+        "text": "Women gained the right to vote in most states, which strengthened their role in politics.",
+        "isCorrect": false,
+        "explanation": "Women did not have the right to vote in most states."
+      }
+    ],
+    "explanation": "The market revolution reshaped work and gender roles in middle-class families.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-11",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "hard",
+    "stem": "Which statement best describes regional economic specialization by the 1840s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Each region produced nearly all of its own goods and traded very little with the others, avoiding the market economy altogether.",
+        "isCorrect": false,
+        "explanation": "The regions specialized and traded."
+      },
+      {
+        "label": "B",
+        "text": "The Northeast industrialized and traded, the Midwest grew grain and livestock, and the South grew cotton with enslaved labor.",
+        "isCorrect": true,
+        "explanation": "Each region developed a distinctive economy tied together through trade."
+      },
+      {
+        "label": "C",
+        "text": "The West relied on large slave plantations producing cotton, which the Northeast then refused to buy.",
+        "isCorrect": false,
+        "explanation": "The Midwest relied mainly on family farms producing grain and livestock."
+      },
+      {
+        "label": "D",
+        "text": "The South led the nation in factory production, while the Northeast concentrated on growing grain.",
+        "isCorrect": false,
+        "explanation": "Industry was concentrated in the Northeast."
+      }
+    ],
+    "explanation": "Regional specialization linked North, West and South in a national market.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-12",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "hard",
+    "stem": "Large-scale Irish and German immigration in the 1840s contributed to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the disappearance of nativism as native-born workers welcomed the newcomers into the cities.",
+        "isCorrect": false,
+        "explanation": "Immigration increased nativism."
+      },
+      {
+        "label": "B",
+        "text": "growth of the urban labor force and rising nativist hostility toward immigrants.",
+        "isCorrect": true,
+        "explanation": "Many immigrants settled in cities and worked in growing industries, and nativists responded with prejudice and organizing."
+      },
+      {
+        "label": "C",
+        "text": "a decline in urbanization as most newcomers moved onto farms in the Midwest.",
+        "isCorrect": false,
+        "explanation": "Immigration helped cities grow."
+      },
+      {
+        "label": "D",
+        "text": "a large shift of immigrants into Southern plantation agriculture.",
+        "isCorrect": false,
+        "explanation": "Most immigrants settled in the North and Midwest."
+      }
+    ],
+    "explanation": "Immigration fueled urban growth and nativist reactions.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-13",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "easy",
+    "stem": "The spoils system associated with Andrew Jackson refers to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "distributing western land to war veterans and loyal supporters.",
+        "isCorrect": false,
+        "explanation": "This describes land bounties, not the spoils system."
+      },
+      {
+        "label": "B",
+        "text": "taxing imported goods to raise revenue for the federal government.",
+        "isCorrect": false,
+        "explanation": "That describes tariffs."
+      },
+      {
+        "label": "C",
+        "text": "the practice of rewarding political supporters with government jobs.",
+        "isCorrect": true,
+        "explanation": "Jackson's followers received appointments, which critics called the spoils system."
+      },
+      {
+        "label": "D",
+        "text": "punishing banks that refused to lend money to Jackson's supporters and to the Democratic Party.",
+        "isCorrect": false,
+        "explanation": "That has no connection to the spoils system."
+      }
+    ],
+    "explanation": "The spoils system gave government jobs to political loyalists.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-14",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "medium",
+    "stem": "Which development contributed most to the expansion of political participation among white men in the 1820s and 1830s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Federal law gave women the right to vote in national elections after the Seneca Falls meeting.",
+        "isCorrect": false,
+        "explanation": "Women gained the vote nationally in 1920."
+      },
+      {
+        "label": "B",
+        "text": "The Fifteenth Amendment guaranteed the vote to all men, which brought millions of new voters.",
+        "isCorrect": false,
+        "explanation": "That amendment was ratified in 1870."
+      },
+      {
+        "label": "C",
+        "text": "The Electoral College was abolished and presidents were chosen by direct popular vote.",
+        "isCorrect": false,
+        "explanation": "The Electoral College remained."
+      },
+      {
+        "label": "D",
+        "text": "States dropped property requirements for voting, and parties used conventions and popular campaigns.",
+        "isCorrect": true,
+        "explanation": "More white men could vote, and campaigns became more popular."
+      }
+    ],
+    "explanation": "Dropping property requirements and popular campaigning expanded white male participation.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-15",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "medium",
+    "stem": "> “We are a people with our own laws, our own schools and a written language. We have held these lands from time beyond memory. We ask only that treaties be kept and that we be left to live in peace.”\n>\n> *Source: A Cherokee leader's petition to Congress, 1830s*\n\nThe passage best illustrates which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A call for armed attack on the United States by allied Native nations.",
+        "isCorrect": false,
+        "explanation": "The petition appeals to treaties and peace."
+      },
+      {
+        "label": "B",
+        "text": "Support for the Indian Removal Act among Cherokee leaders and tribal elders.",
+        "isCorrect": false,
+        "explanation": "The petition opposes removal."
+      },
+      {
+        "label": "C",
+        "text": "Native resistance to removal through legal and political appeals.",
+        "isCorrect": true,
+        "explanation": "The Cherokee used petitions and lawsuits, appealing to treaties and their established institutions."
+      },
+      {
+        "label": "D",
+        "text": "Native acceptance of removal as a beneficial move to new western lands.",
+        "isCorrect": false,
+        "explanation": "The petition asks to be left in peace on their lands."
+      }
+    ],
+    "explanation": "The Cherokee resisted removal by legal and political means.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-16",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "medium",
+    "stem": "In Worcester v. Georgia (1832), the Supreme Court ruled that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Cherokee must move west of the Mississippi River within five years.",
+        "isCorrect": false,
+        "explanation": "The decision did not order removal."
+      },
+      {
+        "label": "B",
+        "text": "the Cherokee were citizens of Georgia and therefore subject to all of its laws.",
+        "isCorrect": false,
+        "explanation": "The Court did not rule that the Cherokee were citizens."
+      },
+      {
+        "label": "C",
+        "text": "states could remove Native peoples within their borders without any federal approval or treaty.",
+        "isCorrect": false,
+        "explanation": "The Court ruled against state authority over Cherokee territory."
+      },
+      {
+        "label": "D",
+        "text": "Georgia had no authority over Cherokee lands, but Jackson did not enforce the decision.",
+        "isCorrect": true,
+        "explanation": "The Court sided with the Cherokee, but the decision was not enforced."
+      }
+    ],
+    "explanation": "The Court supported Cherokee sovereignty but the ruling was not enforced.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-17",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "hard",
+    "stem": "How was the Nullification Crisis of 1832-1833 resolved?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The federal government accepted the right of states to nullify federal laws and repealed the tariff of 1832 entirely.",
+        "isCorrect": false,
+        "explanation": "Jackson rejected nullification."
+      },
+      {
+        "label": "B",
+        "text": "Congress passed a compromise tariff lowering rates and the Force Act, and South Carolina withdrew its nullification.",
+        "isCorrect": true,
+        "explanation": "A compromise tariff and a show of federal authority ended the standoff."
+      },
+      {
+        "label": "C",
+        "text": "The Supreme Court upheld nullification and ordered the federal government to end the tariff.",
+        "isCorrect": false,
+        "explanation": "The Court did not endorse nullification."
+      },
+      {
+        "label": "D",
+        "text": "South Carolina seceded from the Union, and other Southern states followed it out soon after.",
+        "isCorrect": false,
+        "explanation": "South Carolina did not secede in 1833."
+      }
+    ],
+    "explanation": "A compromise tariff and the Force Act ended the crisis.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-18",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "hard",
+    "stem": "Jackson vetoed the recharter of the Second Bank of the United States in 1832 mainly because he believed that the bank",
+    "choices": [
+      {
+        "label": "A",
+        "text": "was a privileged institution favoring wealthy elites over ordinary Americans.",
+        "isCorrect": true,
+        "explanation": "Jackson attacked the bank as a symbol of special privilege."
+      },
+      {
+        "label": "B",
+        "text": "was owned entirely by the federal government and run by its officials.",
+        "isCorrect": false,
+        "explanation": "Private investors owned most of the bank's stock."
+      },
+      {
+        "label": "C",
+        "text": "had too little power to manage the nation's currency and control state banks.",
+        "isCorrect": false,
+        "explanation": "Jackson thought the bank had too much power."
+      },
+      {
+        "label": "D",
+        "text": "had been declared illegal in McCulloch v. Maryland and should be closed.",
+        "isCorrect": false,
+        "explanation": "McCulloch v. Maryland upheld the bank."
+      }
+    ],
+    "explanation": "Jackson saw the bank as a privileged institution that favored the wealthy.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-19",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "easy",
+    "stem": "The Second Great Awakening encouraged",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a rejection of religion in public life and a turn toward science and reason.",
+        "isCorrect": false,
+        "explanation": "The Awakening increased religious participation."
+      },
+      {
+        "label": "B",
+        "text": "a belief in individual responsibility for salvation and inspired reform movements.",
+        "isCorrect": true,
+        "explanation": "Revivalists such as Charles Finney taught that individuals could improve themselves and society."
+      },
+      {
+        "label": "C",
+        "text": "strict control of religion by the federal government and the largest Protestant denominations.",
+        "isCorrect": false,
+        "explanation": "The federal government did not control religion."
+      },
+      {
+        "label": "D",
+        "text": "support for the Puritan ideal of an established church supported by taxes.",
+        "isCorrect": false,
+        "explanation": "The Awakening emphasized personal choice and voluntary churches."
+      }
+    ],
+    "explanation": "The Second Great Awakening inspired reform by emphasizing personal responsibility.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-20",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "medium",
+    "stem": "William Lloyd Garrison's newspaper The Liberator, begun in 1831, advocated",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a compromise that would preserve slavery in the South for the time being.",
+        "isCorrect": false,
+        "explanation": "Garrison refused to compromise."
+      },
+      {
+        "label": "B",
+        "text": "the immediate end of slavery without compensation to slaveholders.",
+        "isCorrect": true,
+        "explanation": "Garrison demanded immediate abolition and rejected gradual plans."
+      },
+      {
+        "label": "C",
+        "text": "gradual emancipation with colonization of freed people in Africa.",
+        "isCorrect": false,
+        "explanation": "That was the program of the American Colonization Society."
+      },
+      {
+        "label": "D",
+        "text": "the expansion of slavery into the western territories and new states.",
+        "isCorrect": false,
+        "explanation": "Garrison opposed slavery entirely."
+      }
+    ],
+    "explanation": "Garrison called for immediate abolition.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-21",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "medium",
+    "stem": "> “We hold that women are endowed with the same natural rights as men; that laws which deny them the vote and the control of their own property are unjust; and that we are entitled to a share in making the laws we are bound to obey.”\n>\n> *Source: A convention declaration, 1848*\n\nThe passage most directly reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The adaptation of Revolutionary ideas of natural rights to demand greater rights for women.",
+        "isCorrect": true,
+        "explanation": "The writers apply the language of natural rights and consent to women."
+      },
+      {
+        "label": "B",
+        "text": "Opposition to the abolition movement and to the political goals of its leaders.",
+        "isCorrect": false,
+        "explanation": "Many women's rights leaders were also abolitionists."
+      },
+      {
+        "label": "C",
+        "text": "The ideal of republican motherhood, which praised women's role in raising citizens.",
+        "isCorrect": false,
+        "explanation": "The passage demands political rights rather than a domestic role."
+      },
+      {
+        "label": "D",
+        "text": "Support for a national temperance law to ban alcohol and protect women in their homes.",
+        "isCorrect": false,
+        "explanation": "The passage concerns voting and property rights."
+      }
+    ],
+    "explanation": "The passage adapts natural rights ideas to women's rights.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-22",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "medium",
+    "stem": "Horace Mann's reforms in Massachusetts in the 1830s and 1840s promoted",
+    "choices": [
+      {
+        "label": "A",
+        "text": "private academies reserved for the children of wealthy families.",
+        "isCorrect": false,
+        "explanation": "Mann supported public schools."
+      },
+      {
+        "label": "B",
+        "text": "common public schools that would educate children from all backgrounds.",
+        "isCorrect": true,
+        "explanation": "Mann argued that public education would create informed citizens and reduce social divisions."
+      },
+      {
+        "label": "C",
+        "text": "the closure of schools for girls and the end of public support for them.",
+        "isCorrect": false,
+        "explanation": "Mann did not call for closing schools for girls."
+      },
+      {
+        "label": "D",
+        "text": "religious schools run by a state church and funded by local taxes.",
+        "isCorrect": false,
+        "explanation": "Mann promoted nonsectarian public schools."
+      }
+    ],
+    "explanation": "Mann advocated publicly funded common schools.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-23",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "hard",
+    "stem": "Transcendentalists such as Ralph Waldo Emerson and Henry David Thoreau",
+    "choices": [
+      {
+        "label": "A",
+        "text": "promoted strict obedience to church authorities and the Puritan creed.",
+        "isCorrect": false,
+        "explanation": "They stressed individual conscience over institutional authority."
+      },
+      {
+        "label": "B",
+        "text": "emphasized individualism and nature, and criticized materialism and conformity.",
+        "isCorrect": true,
+        "explanation": "They argued that people should trust their own conscience and experience."
+      },
+      {
+        "label": "C",
+        "text": "argued that industrial expansion should be the nation's top goal in life and in politics.",
+        "isCorrect": false,
+        "explanation": "They criticized materialism."
+      },
+      {
+        "label": "D",
+        "text": "championed the Puritan doctrine of predestination and church discipline.",
+        "isCorrect": false,
+        "explanation": "Transcendentalism departed from Puritan doctrine."
+      }
+    ],
+    "explanation": "Transcendentalists valued individualism and nature over conformity and materialism.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-24",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "hard",
+    "stem": "Which statement best explains why many northerners who supported reforms such as temperance and public education still opposed abolitionism?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Many feared abolition would threaten the Union and trade or bring job competition, and many held prejudice.",
+        "isCorrect": true,
+        "explanation": "Support for reform did not necessarily mean support for racial equality."
+      },
+      {
+        "label": "B",
+        "text": "Abolitionism was promoted mainly by Southern slaveholders and clergy who wanted gradual change.",
+        "isCorrect": false,
+        "explanation": "Abolitionism was led mainly by northerners, including free Black activists, and was condemned in the South."
+      },
+      {
+        "label": "C",
+        "text": "Free Black northerners opposed ending slavery because they feared losing jobs to freed workers.",
+        "isCorrect": false,
+        "explanation": "Free Black northerners were among the most active opponents of slavery."
+      },
+      {
+        "label": "D",
+        "text": "The Constitution explicitly forbade antislavery societies and gave the states the power to dissolve them by law.",
+        "isCorrect": false,
+        "explanation": "The Constitution did not forbid them."
+      }
+    ],
+    "explanation": "Fear for the Union, economic concerns and prejudice limited northern support for abolition.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-25",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "easy",
+    "stem": "By the 1830s the dominant export crop of the South was",
+    "choices": [
+      {
+        "label": "A",
+        "text": "indigo, a dye crop grown in colonial South Carolina",
+        "isCorrect": false,
+        "explanation": "Indigo was important in colonial South Carolina but declined."
+      },
+      {
+        "label": "B",
+        "text": "wheat, the main grain crop of the Midwest",
+        "isCorrect": false,
+        "explanation": "Wheat was a staple of the Middle Atlantic and Midwest."
+      },
+      {
+        "label": "C",
+        "text": "sugar beets, a crop grown mainly in the Northeast",
+        "isCorrect": false,
+        "explanation": "Sugar beets were not a major Southern export crop."
+      },
+      {
+        "label": "D",
+        "text": "cotton, grown largely by enslaved labor",
+        "isCorrect": true,
+        "explanation": "Cotton, grown largely by enslaved labor, was the nation's leading export."
+      }
+    ],
+    "explanation": "Cotton dominated Southern agriculture and exports.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-26",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "medium",
+    "stem": "The domestic slave trade in the early 1800s",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ended after the invention of the cotton gin, which made slave labor unnecessary.",
+        "isCorrect": false,
+        "explanation": "The cotton gin increased demand."
+      },
+      {
+        "label": "B",
+        "text": "forcibly moved hundreds of thousands of enslaved people from the Upper South to the Deep South.",
+        "isCorrect": true,
+        "explanation": "The expansion of cotton increased demand in the Deep South and fueled this internal trade."
+      },
+      {
+        "label": "C",
+        "text": "mostly moved enslaved people from the Deep South to the free states of the North.",
+        "isCorrect": false,
+        "explanation": "It moved people to the cotton-growing South."
+      },
+      {
+        "label": "D",
+        "text": "was banned by the Constitution in 1808, ending the sale of enslaved people entirely within the United States.",
+        "isCorrect": false,
+        "explanation": "The ban in 1808 applied to the importation of enslaved people from abroad."
+      }
+    ],
+    "explanation": "The domestic slave trade moved large numbers of people to the Deep South.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-27",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "medium",
+    "stem": "> “The enslaved are better provided for than the laborers of Northern factories, who are cast off when sick or old. Slavery is no evil but a positive good, resting upon the natural order of society.”\n>\n> *Source: A Southern writer, 1840s*\n\nThe passage reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The view of earlier generations that slavery was a necessary evil to be ended in time by law.",
+        "isCorrect": false,
+        "explanation": "The passage calls slavery a positive good, not an evil."
+      },
+      {
+        "label": "B",
+        "text": "The arguments of Northern abolitionists against the enslavement of Black Americans.",
+        "isCorrect": false,
+        "explanation": "The author is defending slavery."
+      },
+      {
+        "label": "C",
+        "text": "Support for gradual emancipation with compensation to slaveholders and colonization.",
+        "isCorrect": false,
+        "explanation": "The author defends slavery."
+      },
+      {
+        "label": "D",
+        "text": "The proslavery argument that slavery was a positive good, developed as abolitionism grew.",
+        "isCorrect": true,
+        "explanation": "Southern defenders increasingly called slavery a positive good."
+      }
+    ],
+    "explanation": "The passage expresses the proslavery positive good argument.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-28",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "medium",
+    "stem": "Nat Turner's rebellion of 1831 in Virginia",
+    "choices": [
+      {
+        "label": "A",
+        "text": "alarmed white Southerners and led to stricter laws controlling Black people.",
+        "isCorrect": true,
+        "explanation": "The uprising increased fear among slaveholders and led to harsher restrictions."
+      },
+      {
+        "label": "B",
+        "text": "was an uprising of poor white farmers against wealthy planters and the legislature.",
+        "isCorrect": false,
+        "explanation": "It was led by an enslaved man."
+      },
+      {
+        "label": "C",
+        "text": "was supported by the federal government and Northern abolitionist leaders.",
+        "isCorrect": false,
+        "explanation": "The federal government did not support the rebellion."
+      },
+      {
+        "label": "D",
+        "text": "led Virginia to abolish slavery after a long debate in the legislature.",
+        "isCorrect": false,
+        "explanation": "Virginia tightened controls instead."
+      }
+    ],
+    "explanation": "Turner's rebellion led to harsher slave codes.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-29",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "hard",
+    "stem": "Although most white Southerners did not own enslaved people, many supported slavery because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "slavery shaped the economy and racial hierarchy, and many yeoman farmers hoped to become slaveholders.",
+        "isCorrect": true,
+        "explanation": "The slave system structured Southern society beyond the planter class."
+      },
+      {
+        "label": "B",
+        "text": "nonslaveholding farmers earned most of their income from cotton plantations they managed.",
+        "isCorrect": false,
+        "explanation": "Many yeoman farmers practiced subsistence or small-scale farming."
+      },
+      {
+        "label": "C",
+        "text": "the Constitution required every white Southern family to own at least one enslaved person to qualify to vote.",
+        "isCorrect": false,
+        "explanation": "No such requirement existed."
+      },
+      {
+        "label": "D",
+        "text": "Southern law forced nonslaveholders to vote for proslavery candidates in every election.",
+        "isCorrect": false,
+        "explanation": "No such law existed."
+      }
+    ],
+    "explanation": "Slavery shaped the economy and social hierarchy, and many nonslaveholders hoped to gain from it.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-30",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "hard",
+    "stem": "Free Black communities in northern cities in the early 1800s",
+    "choices": [
+      {
+        "label": "A",
+        "text": "were barred from forming their own churches and schools in every northern state by law.",
+        "isCorrect": false,
+        "explanation": "They formed independent churches, such as the AME Church."
+      },
+      {
+        "label": "B",
+        "text": "enjoyed full legal and social equality with whites in the northern cities.",
+        "isCorrect": false,
+        "explanation": "They faced widespread discrimination."
+      },
+      {
+        "label": "C",
+        "text": "were mostly sent to Africa by state governments through colonization programs.",
+        "isCorrect": false,
+        "explanation": "Colonization attracted few free Black northerners and was largely opposed by them."
+      },
+      {
+        "label": "D",
+        "text": "built independent institutions such as the AME Church while facing discrimination.",
+        "isCorrect": true,
+        "explanation": "Free Black northerners created their own churches and organizations in response to exclusion."
+      }
+    ],
+    "explanation": "Free Black communities built institutions in response to discrimination.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u1-frq-1",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "columbian-exchange",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The voyages of 1492 began an exchange of plants, animals and microbes that remade the world. The animals and crops of the Old World spread across the Americas, but the greatest transfer was invisible: the diseases that cut Native populations by a staggering proportion within a few generations.”\n>\n> *Source: A historian's interpretation, late twentieth century*\n\n**a)** Identify ONE claim the historian makes about the effects of contact on the Americas.\n\n**b)** Explain ONE way in which an exchange of crops or animals changed economies or societies in the period 1491 to 1607.\n\n**c)** Explain ONE way in which the demographic changes described in the excerpt affected European colonization.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a claim from the excerpt, such as that diseases caused a staggering decline in Native populations or that the exchange of plants, animals and microbes remade the world"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains an effect such as horses transforming Plains societies, sugar and other crops enabling plantation economies, or American crops like maize and potatoes supporting population growth in the Old World"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as Native depopulation weakening resistance to conquest, reducing the Native labor force and leading colonists to turn to enslaved Africans, or opening land to European settlement"
+      }
+    ],
+    "sampleResponse": "a) The historian claims that disease was the greatest effect of contact, sharply reducing Native populations within a few generations.\nb) Horses brought by the Spanish gave Plains peoples greater mobility for hunting bison and warfare, changing their societies and economies.\nc) With Native populations devastated, Spanish colonists lost much of their labor force and increasingly turned to enslaved Africans, while depopulation also weakened Native resistance to conquest.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-frq-2",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "spanish-colonial-system",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “I have seen the Indians driven to the mines until they fall, and when they fall they are replaced. These men are not beasts but rational souls with rights of their own. If the Crown does not end these cruelties, we will have no Christians to save, only graves.”\n>\n> *Source: A Spanish Dominican friar, 1540s*\n\n**a)** Identify ONE point of view expressed in the excerpt about the treatment of Native peoples.\n\n**b)** Explain ONE way in which the encomienda system or Spanish colonial labor practices shaped relations between colonists and Native peoples.\n\n**c)** Explain ONE reason that some Spanish colonists opposed reform of their treatment of Native peoples.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies that the author condemns the cruel treatment of Native people, views them as rational beings with rights, or argues the Crown must end abuses"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains that the encomienda gave colonists control over Native labor and tribute, leading to exploitation, forced labor and demographic and cultural disruption"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains that colonists relied on Native labor for wealth from mining and agriculture, and reform would have reduced their profits and power"
+      }
+    ],
+    "sampleResponse": "a) The friar argues that Native peoples are rational souls with rights and that the Crown must end the cruelty of forced labor.\nb) The encomienda gave Spanish colonists the right to demand labor and tribute from Native communities, which led to forced labor in mines and fields and exploitation of Native peoples.\nc) Many colonists opposed reform because their wealth depended on Native labor in mining and farming, and limits on that labor would have cut their income and status.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-frq-3",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "native-american-societies",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE way in which the environment shaped the way of life of a Native American society in North America before 1492.\n\n**b)** Identify ONE way in which the environment shaped the way of life of a DIFFERENT Native American society in North America before 1492.\n\n**c)** Explain ONE reason that Native American societies in different regions developed different political and social structures.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies an accurate environmental adaptation of one society (for example, Pueblo irrigation farming in the arid Southwest, or bison hunting on the Plains)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies an accurate adaptation of a different society (for example, salmon fishing in the Pacific Northwest, or the farming villages of the Eastern Woodlands)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains that differences in climate, resources and food supply, together with agricultural surpluses or their absence, shaped population density, social organization and political structures"
+      }
+    ],
+    "sampleResponse": "a) Pueblo peoples of the Southwest used irrigation and careful water management to grow maize, beans and squash in permanent villages in an arid environment.\nb) Peoples of the Pacific Northwest relied on abundant salmon and other coastal resources, which let them build permanent villages without depending mainly on farming.\nc) Differences in climate, available food and farming surpluses affected how many people a region could support and how they organized, so densely settled farming societies developed larger political structures than small, mobile hunting groups.",
+    "reviewed": false
+  }
+]

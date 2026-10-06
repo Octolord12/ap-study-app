@@ -1,0 +1,34 @@
+{
+  "slug": "unit-5-civil-war-era",
+  "order": 5,
+  "name": "Expansion, Civil War and Reconstruction (1844-1877)",
+  "weightingMin": 10,
+  "weightingMax": 17,
+  "topics": [
+    {
+      "slug": "manifest-destiny",
+      "order": 1,
+      "name": "Manifest Destiny and the Mexican-American War"
+    },
+    {
+      "slug": "sectional-crisis",
+      "order": 2,
+      "name": "The Sectional Crisis"
+    },
+    {
+      "slug": "civil-war",
+      "order": 3,
+      "name": "The Civil War"
+    },
+    {
+      "slug": "reconstruction-plans-and-amendments",
+      "order": 4,
+      "name": "Reconstruction Plans and Amendments"
+    },
+    {
+      "slug": "end-of-reconstruction",
+      "order": 5,
+      "name": "The End of Reconstruction"
+    }
+  ]
+}

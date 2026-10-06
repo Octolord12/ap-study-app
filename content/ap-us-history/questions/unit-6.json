@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-ush-u6-mcq-1",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "easy",
+    "stem": "The completion of the first transcontinental railroad in 1869 most directly",
+    "choices": [
+      {
+        "label": "A",
+        "text": "was funded entirely by private investors, without federal land grants or loans.",
+        "isCorrect": false,
+        "explanation": "The federal government provided land grants and loans."
+      },
+      {
+        "label": "B",
+        "text": "linked eastern and western markets and encouraged settlement and a national economy.",
+        "isCorrect": true,
+        "explanation": "The railroad cut travel time and shipping costs across the continent."
+      },
+      {
+        "label": "C",
+        "text": "ended the need for canals and steamboats in the East and along the Great Lakes.",
+        "isCorrect": false,
+        "explanation": "Other forms of transportation continued to be used."
+      },
+      {
+        "label": "D",
+        "text": "connected the United States with Canada and Mexico by a single national rail network.",
+        "isCorrect": false,
+        "explanation": "The railroad crossed North America and did not connect the continents."
+      }
+    ],
+    "explanation": "The transcontinental railroad tied national markets together.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-2",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "medium",
+    "stem": "Andrew Carnegie's strategy of vertical integration meant that he",
+    "choices": [
+      {
+        "label": "A",
+        "text": "split his company into many small, independent businesses to avoid antitrust law.",
+        "isCorrect": false,
+        "explanation": "Carnegie consolidated rather than split."
+      },
+      {
+        "label": "B",
+        "text": "controlled every stage of steel production, from raw materials to manufacturing.",
+        "isCorrect": true,
+        "explanation": "Owning each stage lowered costs and increased control."
+      },
+      {
+        "label": "C",
+        "text": "bought up competing firms to control a single stage of production, such as refining.",
+        "isCorrect": false,
+        "explanation": "That describes horizontal integration, a strategy used by Rockefeller."
+      },
+      {
+        "label": "D",
+        "text": "placed his mills under government ownership in return for federal contracts.",
+        "isCorrect": false,
+        "explanation": "Carnegie's firms were privately owned."
+      }
+    ],
+    "explanation": "Vertical integration meant control of all stages of production.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-3",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "medium",
+    "stem": "> “The man who has gathered great wealth holds it as a trust for the community. Let him spend it in his lifetime on libraries, schools and parks, which help the worthy to help themselves, rather than on alms that encourage idleness.”\n>\n> *Source: An industrialist's essay, 1889*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The belief that wealthy people should use their fortunes for the public good, not direct charity.",
+        "isCorrect": true,
+        "explanation": "This was the Gospel of Wealth, which justified great fortunes alongside philanthropy."
+      },
+      {
+        "label": "B",
+        "text": "Socialist ideas calling for public ownership of industry and an end to private fortunes and large estates.",
+        "isCorrect": false,
+        "explanation": "The author defends private fortunes."
+      },
+      {
+        "label": "C",
+        "text": "A call for workers to form labor unions and bargain for a larger share of the profits.",
+        "isCorrect": false,
+        "explanation": "The passage does not discuss unions."
+      },
+      {
+        "label": "D",
+        "text": "Support for government redistribution of wealth through high taxes on large fortunes.",
+        "isCorrect": false,
+        "explanation": "The author wants individuals, not government, to spend wealth."
+      }
+    ],
+    "explanation": "The passage expresses the Gospel of Wealth.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-4",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "medium",
+    "stem": "The Sherman Antitrust Act of 1890 was intended to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "set up federal ownership of the railroads and telegraph lines to serve the public interest.",
+        "isCorrect": false,
+        "explanation": "The act did not provide federal ownership."
+      },
+      {
+        "label": "B",
+        "text": "break up all large corporations immediately and bar them from doing business across state lines.",
+        "isCorrect": false,
+        "explanation": "Large corporations continued to grow."
+      },
+      {
+        "label": "C",
+        "text": "prohibit monopolies and combinations that restrained trade, though it was weakly enforced.",
+        "isCorrect": true,
+        "explanation": "Congress responded to public fear of trusts, but courts and the government used the law cautiously."
+      },
+      {
+        "label": "D",
+        "text": "protect labor unions from legal action by guaranteeing their right to strike and organize.",
+        "isCorrect": false,
+        "explanation": "The act was often used against unions."
+      }
+    ],
+    "explanation": "The Sherman Act aimed to stop monopolies but was weakly enforced.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-5",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the federal government's role in the economy during the Gilded Age?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Government favored business with tariffs and land grants and regulated only cautiously.",
+        "isCorrect": true,
+        "explanation": "Laissez-faire attitudes dominated, with limited regulation."
+      },
+      {
+        "label": "B",
+        "text": "Government owned and operated most major industries, including the railroads and steel.",
+        "isCorrect": false,
+        "explanation": "Industry remained largely private."
+      },
+      {
+        "label": "C",
+        "text": "Government regulated wages and prices in every industry through new federal boards and courts.",
+        "isCorrect": false,
+        "explanation": "Government did not set wages and prices."
+      },
+      {
+        "label": "D",
+        "text": "Government forbade corporations from growing beyond a fixed size or controlling prices.",
+        "isCorrect": false,
+        "explanation": "No such rule existed."
+      }
+    ],
+    "explanation": "The government mostly supported business and regulated lightly.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-6",
+    "unit": "unit-6-gilded-age",
+    "topic": "industrialization-and-business",
+    "difficulty": "medium",
+    "stem": "The Interstate Commerce Act of 1887 was passed mainly in response to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a strike by railroad workers in Chicago that halted the nation's trains and mail.",
+        "isCorrect": false,
+        "explanation": "The act was not a response to a strike."
+      },
+      {
+        "label": "B",
+        "text": "a proposal to nationalize the steel industry that was then defeated in the Senate.",
+        "isCorrect": false,
+        "explanation": "The act dealt with the railroads."
+      },
+      {
+        "label": "C",
+        "text": "farmers' complaints about unfair railroad rates; it created the Interstate Commerce Commission.",
+        "isCorrect": true,
+        "explanation": "The law was the first federal attempt to regulate the railroads."
+      },
+      {
+        "label": "D",
+        "text": "a request by the railroads for lower taxes and for federal protection from competition by foreign shippers.",
+        "isCorrect": false,
+        "explanation": "The act regulated railroads."
+      }
+    ],
+    "explanation": "The act responded to complaints about railroad rates.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/industrialization-and-business",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-7",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "easy",
+    "stem": "The American Federation of Labor under Samuel Gompers focused mainly on",
+    "choices": [
+      {
+        "label": "A",
+        "text": "establishing government ownership of industry and a national labor party.",
+        "isCorrect": false,
+        "explanation": "The AFL did not seek government ownership."
+      },
+      {
+        "label": "B",
+        "text": "organizing skilled craft workers to win better wages and hours by bargaining.",
+        "isCorrect": true,
+        "explanation": "The AFL pursued practical, workplace goals rather than broad political change."
+      },
+      {
+        "label": "C",
+        "text": "organizing all unskilled workers into one large union open to all trades.",
+        "isCorrect": false,
+        "explanation": "That describes the Knights of Labor."
+      },
+      {
+        "label": "D",
+        "text": "overthrowing the capitalist system and replacing it with worker ownership of factories.",
+        "isCorrect": false,
+        "explanation": "Gompers rejected revolutionary goals."
+      }
+    ],
+    "explanation": "The AFL focused on skilled workers and bread-and-butter goals.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-8",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "medium",
+    "stem": "The Knights of Labor differed from the American Federation of Labor in that the Knights",
+    "choices": [
+      {
+        "label": "A",
+        "text": "organized only skilled craft workers and refused to join other unions.",
+        "isCorrect": false,
+        "explanation": "That describes the AFL."
+      },
+      {
+        "label": "B",
+        "text": "were created and funded by employers to keep workers from joining unions.",
+        "isCorrect": false,
+        "explanation": "They were a labor organization."
+      },
+      {
+        "label": "C",
+        "text": "tried to organize all workers, skilled and unskilled, and pursued broad reforms.",
+        "isCorrect": true,
+        "explanation": "The Knights had an inclusive approach and wide reform goals."
+      },
+      {
+        "label": "D",
+        "text": "avoided all political goals and focused only on bargaining with employers over wages.",
+        "isCorrect": false,
+        "explanation": "The Knights pursued political and social reforms."
+      }
+    ],
+    "explanation": "The Knights sought to unite all workers around broad goals.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-9",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "medium",
+    "stem": "> “The company cut our wages by a quarter but not the rent on its houses nor the price of its goods. We have asked to be heard and been refused. We will not move the trains for a company that treats its workers so.”\n>\n> *Source: A railway workers' leader, 1894*\n\nWhich of the following was the most direct result of the events described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The strike succeeded in winning union recognition and a new contract for workers.",
+        "isCorrect": false,
+        "explanation": "The strike was broken."
+      },
+      {
+        "label": "B",
+        "text": "Congress passed a law guaranteeing the right to strike and to organize unions.",
+        "isCorrect": false,
+        "explanation": "No such law was passed."
+      },
+      {
+        "label": "C",
+        "text": "A federal injunction and federal troops broke the strike, favoring the railroads.",
+        "isCorrect": true,
+        "explanation": "The government intervened to keep trains running and the strike collapsed."
+      },
+      {
+        "label": "D",
+        "text": "The company agreed to raise wages and lower rents in its company town after talks.",
+        "isCorrect": false,
+        "explanation": "The company refused concessions."
+      }
+    ],
+    "explanation": "The Pullman Strike was ended by an injunction and troops.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-10",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "medium",
+    "stem": "The Haymarket Affair of 1886 damaged the labor movement because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "workers turned against the idea of striking and left unions entirely after the bombing.",
+        "isCorrect": false,
+        "explanation": "The labor movement continued, though weakened."
+      },
+      {
+        "label": "B",
+        "text": "the government agreed to the eight-hour day, which strengthened the unions.",
+        "isCorrect": false,
+        "explanation": "The affair set back, not advanced, such demands."
+      },
+      {
+        "label": "C",
+        "text": "unions were made illegal by federal law, and leaders were then arrested.",
+        "isCorrect": false,
+        "explanation": "Unions were not outlawed."
+      },
+      {
+        "label": "D",
+        "text": "a bombing at a labor rally led to a backlash linking unions to anarchism and violence.",
+        "isCorrect": true,
+        "explanation": "The Knights of Labor in particular lost members and public support."
+      }
+    ],
+    "explanation": "The Haymarket bombing created a backlash against unions.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-11",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "hard",
+    "stem": "Which factor best explains why labor unions struggled to win lasting gains in the Gilded Age?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Workers had little interest in joining unions and preferred to bargain with employers alone for higher pay.",
+        "isCorrect": false,
+        "explanation": "Millions joined unions or took part in strikes."
+      },
+      {
+        "label": "B",
+        "text": "The Constitution banned unions, and state courts enforced that ban in nearly every industry.",
+        "isCorrect": false,
+        "explanation": "The Constitution did not ban unions."
+      },
+      {
+        "label": "C",
+        "text": "Employers used blacklists, strikebreakers and injunctions, and government often sided with business.",
+        "isCorrect": true,
+        "explanation": "Unions faced strong opposition from employers, courts and a plentiful supply of workers."
+      },
+      {
+        "label": "D",
+        "text": "Employers voluntarily raised wages and shortened hours to prevent strikes before they began.",
+        "isCorrect": false,
+        "explanation": "Employers more often resisted."
+      }
+    ],
+    "explanation": "Employer tactics, government support for business and abundant labor limited unions.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-12",
+    "unit": "unit-6-gilded-age",
+    "topic": "labor-and-unions",
+    "difficulty": "hard",
+    "stem": "The Homestead Strike of 1892 against Carnegie Steel ended with",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the defeat of the union after armed clashes with Pinkerton guards and the state militia.",
+        "isCorrect": true,
+        "explanation": "The company defeated the strike and unions lost ground in steel."
+      },
+      {
+        "label": "B",
+        "text": "the nationalization of the steel mills by the federal government after the armed clashes at the plant.",
+        "isCorrect": false,
+        "explanation": "The mills stayed in private hands."
+      },
+      {
+        "label": "C",
+        "text": "a federal law guaranteeing union recognition for steelworkers across the country.",
+        "isCorrect": false,
+        "explanation": "No such law was passed."
+      },
+      {
+        "label": "D",
+        "text": "a union victory and higher wages for all steelworkers at the Carnegie works.",
+        "isCorrect": false,
+        "explanation": "The union lost."
+      }
+    ],
+    "explanation": "The strike was broken and the steel union weakened.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/labor-and-unions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-13",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "easy",
+    "stem": "Ellis Island, opened in 1892, was",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the first capital of the United States under the Articles of Confederation.",
+        "isCorrect": false,
+        "explanation": "It was never the national capital."
+      },
+      {
+        "label": "B",
+        "text": "the main immigration station in New York Harbor for arriving immigrants.",
+        "isCorrect": true,
+        "explanation": "Millions of immigrants entered through Ellis Island."
+      },
+      {
+        "label": "C",
+        "text": "a military base for the Union army during the Civil War and after.",
+        "isCorrect": false,
+        "explanation": "It was not a military base."
+      },
+      {
+        "label": "D",
+        "text": "a prison for convicted criminals from the harbor's shipping companies.",
+        "isCorrect": false,
+        "explanation": "Ellis Island was an immigration station."
+      }
+    ],
+    "explanation": "Ellis Island was the main entry point for immigrants in the Northeast.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-14",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "medium",
+    "stem": "Compared with earlier immigrants, the so-called new immigrants who arrived after the 1880s came largely from",
+    "choices": [
+      {
+        "label": "A",
+        "text": "northern and western Europe, including Britain, Germany and Scandinavia.",
+        "isCorrect": false,
+        "explanation": "That describes earlier immigration."
+      },
+      {
+        "label": "B",
+        "text": "Latin America and the Caribbean, including Mexico and Cuba.",
+        "isCorrect": false,
+        "explanation": "Those were not the main sources of the new immigrants."
+      },
+      {
+        "label": "C",
+        "text": "southern and eastern Europe, including Italy, Poland and Russia.",
+        "isCorrect": true,
+        "explanation": "Many were Catholics and Jews who differed in language and religion from earlier arrivals."
+      },
+      {
+        "label": "D",
+        "text": "sub-Saharan Africa and the Middle East, including Egypt.",
+        "isCorrect": false,
+        "explanation": "Africa was not a major source of voluntary migration."
+      }
+    ],
+    "explanation": "New immigrants came largely from southern and eastern Europe.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-15",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "medium",
+    "stem": "> “The Chinese laborer, who works for wages no white man can live upon, threatens the American workman and cannot be assimilated to our institutions. Let this nation close its gates to him.”\n>\n> *Source: A congressman's speech, 1882*\n\nThe attitudes expressed in the passage most directly contributed to which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Chinese Exclusion Act, the first federal law to ban immigration based on nationality.",
+        "isCorrect": true,
+        "explanation": "Anti-Chinese sentiment led Congress to pass the Exclusion Act in 1882."
+      },
+      {
+        "label": "B",
+        "text": "The Homestead Act, which gave free western land to families who farmed it.",
+        "isCorrect": false,
+        "explanation": "That concerned western land."
+      },
+      {
+        "label": "C",
+        "text": "The Dawes Act, which divided reservation lands into individual plots for Native families.",
+        "isCorrect": false,
+        "explanation": "That concerned Native American land."
+      },
+      {
+        "label": "D",
+        "text": "The Pendleton Civil Service Act, which created a merit system for hiring federal workers.",
+        "isCorrect": false,
+        "explanation": "That concerned federal hiring."
+      }
+    ],
+    "explanation": "Anti-Chinese sentiment led to the Chinese Exclusion Act.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-16",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "medium",
+    "stem": "Political machines such as Tammany Hall gained power in cities by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "eliminating the use of patronage and relying on civil service examinations for city jobs.",
+        "isCorrect": false,
+        "explanation": "Machines depended on patronage."
+      },
+      {
+        "label": "B",
+        "text": "opposing all immigration and refusing to help newcomers find jobs or housing.",
+        "isCorrect": false,
+        "explanation": "Machines relied on immigrant votes."
+      },
+      {
+        "label": "C",
+        "text": "promoting civil service reform and a merit-based system for hiring city workers.",
+        "isCorrect": false,
+        "explanation": "Machines opposed civil service reform."
+      },
+      {
+        "label": "D",
+        "text": "giving immigrants jobs and services in exchange for votes, often through corruption.",
+        "isCorrect": true,
+        "explanation": "Machines built loyalty among immigrant voters through practical assistance."
+      }
+    ],
+    "explanation": "Machines exchanged services for votes and often practiced corruption.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-17",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "hard",
+    "stem": "Hull House, founded by Jane Addams in Chicago in 1889, was",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a factory that employed immigrant workers and housed them in company buildings.",
+        "isCorrect": false,
+        "explanation": "It was a social service center."
+      },
+      {
+        "label": "B",
+        "text": "a prison for juvenile offenders run by the city's reform leaders and churches.",
+        "isCorrect": false,
+        "explanation": "It was not a prison."
+      },
+      {
+        "label": "C",
+        "text": "a political machine that controlled Chicago's government and traded jobs and services for votes.",
+        "isCorrect": false,
+        "explanation": "Hull House was a reform institution, not a machine."
+      },
+      {
+        "label": "D",
+        "text": "a settlement house offering childcare, education and health care to immigrants and the poor.",
+        "isCorrect": true,
+        "explanation": "Settlement houses helped newcomers adjust to city life."
+      }
+    ],
+    "explanation": "Hull House was a settlement house for immigrants and the urban poor.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-18",
+    "unit": "unit-6-gilded-age",
+    "topic": "immigration-and-urbanization",
+    "difficulty": "hard",
+    "stem": "Which innovations most directly allowed American cities to grow upward and outward in the late 1800s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The telegraph and the printing press, which let cities share news and ideas quickly.",
+        "isCorrect": false,
+        "explanation": "These affected communication more than city form."
+      },
+      {
+        "label": "B",
+        "text": "The cotton gin and the steam engine, which powered the first large urban factories.",
+        "isCorrect": false,
+        "explanation": "These were earlier innovations tied to other industries."
+      },
+      {
+        "label": "C",
+        "text": "The automobile and the interstate highway system, which linked cities and suburbs.",
+        "isCorrect": false,
+        "explanation": "Those came much later."
+      },
+      {
+        "label": "D",
+        "text": "Steel frames and elevators for skyscrapers, and electric streetcars for commuting.",
+        "isCorrect": true,
+        "explanation": "New technology reshaped the urban landscape."
+      }
+    ],
+    "explanation": "Steel frames, elevators and electric streetcars reshaped cities.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/immigration-and-urbanization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-19",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "easy",
+    "stem": "The Homestead Act of 1862",
+    "choices": [
+      {
+        "label": "A",
+        "text": "required settlers to buy land at high prices set by railroad companies.",
+        "isCorrect": false,
+        "explanation": "The land was nearly free after five years of farming."
+      },
+      {
+        "label": "B",
+        "text": "granted 160 acres of public land to settlers who farmed it for five years.",
+        "isCorrect": true,
+        "explanation": "The act encouraged western settlement."
+      },
+      {
+        "label": "C",
+        "text": "banned settlement west of the Mississippi to protect Native hunting lands.",
+        "isCorrect": false,
+        "explanation": "It encouraged settlement."
+      },
+      {
+        "label": "D",
+        "text": "gave free land to former Confederates in the South as part of Reconstruction.",
+        "isCorrect": false,
+        "explanation": "The act did not target former Confederates."
+      }
+    ],
+    "explanation": "The Homestead Act offered public land to farmers.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-20",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "medium",
+    "stem": "The Dawes Act of 1887 aimed to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "return land to Native nations and restore their tribal governments across the Great Plains.",
+        "isCorrect": false,
+        "explanation": "The act reduced Native land."
+      },
+      {
+        "label": "B",
+        "text": "recognize tribal governments as sovereign nations with their own laws, courts and territory.",
+        "isCorrect": false,
+        "explanation": "The act aimed to dismantle tribal land systems."
+      },
+      {
+        "label": "C",
+        "text": "end the reservation system and give Native peoples full citizenship and voting rights at once, without conditions.",
+        "isCorrect": false,
+        "explanation": "Reservations continued."
+      },
+      {
+        "label": "D",
+        "text": "split reservations into individual plots to encourage farming and assimilation, which opened land to settlers.",
+        "isCorrect": true,
+        "explanation": "The policy undermined communal landholding and led to major land loss."
+      }
+    ],
+    "explanation": "The Dawes Act promoted assimilation and led to significant loss of Native land.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-21",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "medium",
+    "stem": "> “The buffalo are gone and our people are hungry. The soldiers have burned our camps and our children are cold. I am tired of fighting, and I will lead my people no further against you.”\n>\n> *Source: A Native leader at a surrender council, 1870s*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The success of Native armies in defeating the United States and holding their land.",
+        "isCorrect": false,
+        "explanation": "The speaker is surrendering."
+      },
+      {
+        "label": "B",
+        "text": "A voluntary agreement in which Native nations traded their land for goods and supplies from the government.",
+        "isCorrect": false,
+        "explanation": "The speaker describes defeat and hunger."
+      },
+      {
+        "label": "C",
+        "text": "Military force and the destruction of the buffalo, which confined Native peoples to reservations.",
+        "isCorrect": true,
+        "explanation": "Military campaigns and the loss of the buffalo broke Native resistance."
+      },
+      {
+        "label": "D",
+        "text": "A federal policy of protecting Native hunting rights and the great buffalo herds.",
+        "isCorrect": false,
+        "explanation": "The passage describes the destruction of the buffalo and camps."
+      }
+    ],
+    "explanation": "The passage shows how military force and loss of the buffalo ended Native resistance.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-22",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "medium",
+    "stem": "Frederick Jackson Turner's 1893 frontier thesis argued that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the frontier would never close because land in the West was practically unlimited in size.",
+        "isCorrect": false,
+        "explanation": "Turner pointed to the 1890 census announcing the end of a continuous frontier line."
+      },
+      {
+        "label": "B",
+        "text": "the frontier had shaped American democracy and individualism, and its closing marked a turning point.",
+        "isCorrect": true,
+        "explanation": "Turner linked American character to westward expansion."
+      },
+      {
+        "label": "C",
+        "text": "Native peoples were the main creators of American democracy and its political institutions, according to Turner.",
+        "isCorrect": false,
+        "explanation": "Turner did not make that argument."
+      },
+      {
+        "label": "D",
+        "text": "the frontier had no effect on American values or on the character of its politics.",
+        "isCorrect": false,
+        "explanation": "Turner argued the frontier was central."
+      }
+    ],
+    "explanation": "Turner's thesis connected the frontier to American democracy and individualism.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-23",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "hard",
+    "stem": "Which statement best describes farmers' economic problems in the late 1800s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Farmers were protected by strong federal price supports and by high tariffs.",
+        "isCorrect": false,
+        "explanation": "Price supports came later."
+      },
+      {
+        "label": "B",
+        "text": "Falling crop prices, high railroad rates and mortgage debt squeezed many farmers.",
+        "isCorrect": true,
+        "explanation": "Farmers faced deflation and debts that made it hard to profit."
+      },
+      {
+        "label": "C",
+        "text": "Railroads offered low rates and plentiful credit to farmers across the Plains and the South.",
+        "isCorrect": false,
+        "explanation": "Farmers complained of high rates."
+      },
+      {
+        "label": "D",
+        "text": "Rising crop prices made most farmers wealthy and ended their need for credit.",
+        "isCorrect": false,
+        "explanation": "Prices fell in this period."
+      }
+    ],
+    "explanation": "Falling prices, high rates and debt created widespread farm distress.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-24",
+    "unit": "unit-6-gilded-age",
+    "topic": "western-settlement-and-native-americans",
+    "difficulty": "hard",
+    "stem": "The Exodusters of 1879 were",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mormon settlers who moved to Utah in the 1840s to escape persecution.",
+        "isCorrect": false,
+        "explanation": "The Mormon migration was in the 1840s."
+      },
+      {
+        "label": "B",
+        "text": "Native Americans forced to leave their homelands for reservations in Oklahoma.",
+        "isCorrect": false,
+        "explanation": "They were African American migrants who left voluntarily."
+      },
+      {
+        "label": "C",
+        "text": "African Americans who moved from the South to Kansas to escape violence.",
+        "isCorrect": true,
+        "explanation": "Thousands left after the end of Reconstruction in search of land and safety."
+      },
+      {
+        "label": "D",
+        "text": "Chinese laborers who built the transcontinental railroad in the 1860s.",
+        "isCorrect": false,
+        "explanation": "The Exodusters were African American migrants."
+      }
+    ],
+    "explanation": "The Exodusters left the South for Kansas seeking safety and opportunity.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/western-settlement-and-native-americans",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-25",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "easy",
+    "stem": "The Pendleton Civil Service Act of 1883",
+    "choices": [
+      {
+        "label": "A",
+        "text": "abolished all federal jobs held by political appointees in the executive branch.",
+        "isCorrect": false,
+        "explanation": "The act reformed hiring."
+      },
+      {
+        "label": "B",
+        "text": "created the Interstate Commerce Commission to regulate railroad rates nationwide.",
+        "isCorrect": false,
+        "explanation": "That was done in 1887."
+      },
+      {
+        "label": "C",
+        "text": "created a merit system for hiring some federal workers after Garfield's death.",
+        "isCorrect": true,
+        "explanation": "The law began to reduce the spoils system."
+      },
+      {
+        "label": "D",
+        "text": "gave the president unlimited power to fire officials and fill every federal position.",
+        "isCorrect": false,
+        "explanation": "The act reduced patronage power."
+      }
+    ],
+    "explanation": "The Pendleton Act started civil service reform.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-26",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "medium",
+    "stem": "The Populist Party's Omaha Platform of 1892 called for",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the elimination of all income taxes, a gold standard and a national sales tax.",
+        "isCorrect": false,
+        "explanation": "Populists wanted an income tax on the wealthy."
+      },
+      {
+        "label": "B",
+        "text": "the repeal of the Fourteenth Amendment and a return to full state control of voting and citizenship.",
+        "isCorrect": false,
+        "explanation": "The platform did not call for that."
+      },
+      {
+        "label": "C",
+        "text": "free silver coinage, a graduated income tax, direct election of senators and public railroads.",
+        "isCorrect": true,
+        "explanation": "The platform aimed to relieve farmers and limit corporate power."
+      },
+      {
+        "label": "D",
+        "text": "a ban on labor unions and strikes, along with strict limits on immigration.",
+        "isCorrect": false,
+        "explanation": "Populists sought allies among workers."
+      }
+    ],
+    "explanation": "The Omaha Platform proposed economic and political reforms.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-27",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "medium",
+    "stem": "> “The farmer and the wage earner are the foundation of our prosperity. We will not allow them to be crushed beneath a gold standard that serves the banks of the East.”\n>\n> *Source: A presidential candidate's convention speech, 1896*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A call for the creation of a new national bank to regulate credit for farmers.",
+        "isCorrect": false,
+        "explanation": "The speaker does not call for a bank."
+      },
+      {
+        "label": "B",
+        "text": "Support for a stronger gold standard to protect the dollar's value.",
+        "isCorrect": false,
+        "explanation": "The speaker opposes the gold standard."
+      },
+      {
+        "label": "C",
+        "text": "Agrarian demands to expand the money supply through silver coinage to ease debt.",
+        "isCorrect": true,
+        "explanation": "The speaker attacks the gold standard on behalf of farmers and workers."
+      },
+      {
+        "label": "D",
+        "text": "A defense of high tariffs to protect manufacturers in the industrial Northeast and Midwest.",
+        "isCorrect": false,
+        "explanation": "The passage concerns the money supply."
+      }
+    ],
+    "explanation": "The speech attacked the gold standard and promoted silver coinage.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-28",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "medium",
+    "stem": "In Plessy v. Ferguson (1896), the Supreme Court",
+    "choices": [
+      {
+        "label": "A",
+        "text": "struck down segregation in public schools and on public transportation.",
+        "isCorrect": false,
+        "explanation": "That was Brown v. Board of Education in 1954."
+      },
+      {
+        "label": "B",
+        "text": "declared poll taxes and literacy tests unconstitutional across the South.",
+        "isCorrect": false,
+        "explanation": "The Court did not do that in this case."
+      },
+      {
+        "label": "C",
+        "text": "overturned the Fourteenth Amendment and returned civil rights to the states.",
+        "isCorrect": false,
+        "explanation": "The Court did not overturn the amendment."
+      },
+      {
+        "label": "D",
+        "text": "upheld racial segregation under the doctrine of separate but equal.",
+        "isCorrect": true,
+        "explanation": "The decision gave legal cover to Jim Crow laws."
+      }
+    ],
+    "explanation": "Plessy allowed segregation if facilities were called equal.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-29",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "hard",
+    "stem": "Southern states used poll taxes, literacy tests and grandfather clauses to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "encourage immigration to the South by lowering taxes on new settlers and businesses.",
+        "isCorrect": false,
+        "explanation": "They were aimed at limiting voters."
+      },
+      {
+        "label": "B",
+        "text": "comply with federal voting rights laws passed by Congress during Reconstruction.",
+        "isCorrect": false,
+        "explanation": "They were methods of evading the amendment."
+      },
+      {
+        "label": "C",
+        "text": "expand Black voting rights and bring more citizens into Southern politics, juries and courts.",
+        "isCorrect": false,
+        "explanation": "The measures reduced Black voting."
+      },
+      {
+        "label": "D",
+        "text": "prevent African Americans from voting without directly violating the Fifteenth Amendment.",
+        "isCorrect": true,
+        "explanation": "The measures looked race-neutral on paper but were applied to exclude Black voters."
+      }
+    ],
+    "explanation": "These devices disfranchised Black voters while avoiding direct mention of race.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u6-mcq-30",
+    "unit": "unit-6-gilded-age",
+    "topic": "politics-populism-and-jim-crow",
+    "difficulty": "hard",
+    "stem": "Booker T. Washington's Atlanta Compromise address of 1895 argued that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "African Americans should avoid all education beyond basic reading, writing and arithmetic.",
+        "isCorrect": false,
+        "explanation": "Washington promoted vocational education."
+      },
+      {
+        "label": "B",
+        "text": "African Americans should demand immediate political and social equality through the courts.",
+        "isCorrect": false,
+        "explanation": "That was closer to the position of W. E. B. Du Bois."
+      },
+      {
+        "label": "C",
+        "text": "African Americans should leave the United States and settle permanently in Africa and Haiti under federal sponsorship.",
+        "isCorrect": false,
+        "explanation": "Washington did not call for leaving."
+      },
+      {
+        "label": "D",
+        "text": "African Americans should seek economic progress and vocational training and accept segregation for now.",
+        "isCorrect": true,
+        "explanation": "Washington urged patience on civil rights in exchange for economic opportunity."
+      }
+    ],
+    "explanation": "Washington advocated economic advancement and accommodation to segregation.",
+    "conceptLink": "ap-us-history/unit-6-gilded-age/politics-populism-and-jim-crow",
+    "reviewed": false
+  }
+]

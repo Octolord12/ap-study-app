@@ -1,0 +1,34 @@
+{
+  "slug": "unit-8-cold-war-and-civil-rights",
+  "order": 8,
+  "name": "The Cold War and Civil Rights (1945-1980)",
+  "weightingMin": 10,
+  "weightingMax": 17,
+  "topics": [
+    {
+      "slug": "postwar-economy-and-society",
+      "order": 1,
+      "name": "Postwar Prosperity and Society"
+    },
+    {
+      "slug": "cold-war-foreign-policy",
+      "order": 2,
+      "name": "Cold War Foreign Policy"
+    },
+    {
+      "slug": "civil-rights-movement",
+      "order": 3,
+      "name": "The Civil Rights Movement"
+    },
+    {
+      "slug": "great-society-and-liberalism",
+      "order": 4,
+      "name": "The Great Society and Liberalism"
+    },
+    {
+      "slug": "protest-and-the-1970s",
+      "order": 5,
+      "name": "Protest Movements and the 1970s"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u5-frq-1",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “Reconstruction was a revolution in law and a failure in practice. The Constitution was rewritten to guarantee equality, but the nation lacked the will to enforce it once the North grew weary of the struggle.”\n>\n> *Source: A historian, late twentieth century*\n\n**a)** Identify ONE claim made by the historian.\n\n**b)** Explain ONE development in the period 1865 to 1877 that supports the claim that Reconstruction was a revolution in law.\n\n**c)** Explain ONE reason that the federal government did not fully enforce equal rights in the South by 1877.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a claim, such as that Reconstruction changed the law but failed to ensure equality in practice, or that the nation lacked the will to enforce the changes"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as the Thirteenth, Fourteenth and Fifteenth Amendments, the Civil Rights Act of 1866 or the Reconstruction Acts"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a reason such as Northern weariness, the Panic of 1873, the Compromise of 1877, violent resistance by groups like the Ku Klux Klan, or Supreme Court decisions limiting federal power"
+      }
+    ],
+    "sampleResponse": "a) The historian claims that Reconstruction changed the Constitution to guarantee equality but failed because the nation did not enforce it.\nb) The Thirteenth, Fourteenth and Fifteenth Amendments abolished slavery, defined citizenship and guaranteed equal protection, and barred denying the vote because of race.\nc) The Compromise of 1877 removed federal troops from the South, and the Panic of 1873 and Northern weariness reduced support for enforcing Reconstruction.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-frq-2",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “My first aim in this struggle is to save the Union, not to save or destroy slavery. If I could save the Union without freeing any enslaved person, I would do it; if by freeing all, I would do that; what I do about slavery, I do because it helps to save the Union.”\n>\n> *Source: A president's letter to a newspaper editor, 1862*\n\n**a)** Identify ONE priority expressed by the author of the excerpt.\n\n**b)** Explain ONE development between 1862 and 1863 that shifted Union war aims toward emancipation.\n\n**c)** Explain ONE effect of the Emancipation Proclamation on the course of the Civil War.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies the priority of saving the Union, or the view that policy toward slavery should serve that goal"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as the Confiscation Acts, enslaved people escaping to Union lines, pressure from abolitionists, or the Union victory at Antietam giving Lincoln a position of strength"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an effect such as allowing Black men to join the Union army, discouraging European recognition of the Confederacy, or encouraging enslaved people to flee to Union lines"
+      }
+    ],
+    "sampleResponse": "a) The author's priority is saving the Union, and he says his policy on slavery depends on what helps to do that.\nb) Enslaved people were escaping to Union lines and Congress passed Confiscation Acts, and after the victory at Antietam, Lincoln issued the preliminary Emancipation Proclamation to make emancipation a war goal.\nc) The proclamation allowed Black men to enlist in the Union army, which added tens of thousands of soldiers, and it made it harder for Britain and France to support the Confederacy.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-frq-3",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE way in which the Mexican-American War contributed to sectional tension in the period 1846 to 1860.\n\n**b)** Identify ONE other event or development of the 1850s that increased sectional tension.\n\n**c)** Explain ONE reason that the Kansas-Nebraska Act led to violent conflict in Kansas.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a way such as the acquisition of new territory raising the question of slavery's expansion, or the Wilmot Proviso debate"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies an event such as the Fugitive Slave Act, Uncle Tom's Cabin, the Dred Scott decision, John Brown's raid or the formation of the Republican Party"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains that popular sovereignty invited proslavery and antislavery settlers to compete to control the territory's government, leading to fraud, armed clashes and violence"
+      }
+    ],
+    "sampleResponse": "a) The land gained from Mexico raised the question of whether slavery would expand into new territory, and the Wilmot Proviso divided Congress along sectional lines.\nb) The Fugitive Slave Act of 1850 angered northerners by requiring them to help return escaped enslaved people.\nc) The Kansas-Nebraska Act let settlers decide the slavery question by popular sovereignty, so proslavery and antislavery groups rushed into Kansas, leading to fraud and armed conflict known as Bleeding Kansas.",
+    "reviewed": false
+  }
+]

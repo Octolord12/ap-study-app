@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u5-frq-4",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “Once the Black man has a uniform on his back and a rifle in his hands, no power can deny that he has earned the rights of a citizen.”\n>\n> *Source: A Black abolitionist's recruiting speech, 1863*\n\n**a)** Identify ONE argument made in the excerpt.\n\n**b)** Explain ONE way in which the service of Black soldiers affected the Union war effort.\n\n**c)** Explain ONE way in which Black military service shaped postwar demands for citizenship and political rights.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies the argument that military service earns the rights of citizenship"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains an effect such as adding about 180,000 soldiers to the Union army, strengthening its manpower, or turning the war toward emancipation"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains that Black service strengthened claims for equal rights, contributing to the Civil Rights Act of 1866 and the Fourteenth and Fifteenth Amendments"
+      }
+    ],
+    "sampleResponse": "a) The speaker argues that serving as soldiers earns Black men the rights of citizenship.\nb) Black soldiers added about 180,000 men to the Union army, giving it more manpower at a crucial stage of the war and tying the Union cause to emancipation.\nc) Their service gave Black Americans and their allies a powerful argument for equal rights, which supported the Civil Rights Act of 1866 and the Fourteenth and Fifteenth Amendments.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-frq-5",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the Civil War and Reconstruction changed the role of the federal government in the period 1860 to 1877.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which the federal government's role changed"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as the sectional crisis over slavery or antebellum limits on federal power"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and demonstrates complex understanding, such as showing that federal power expanded during the war and early Reconstruction but contracted after 1873 and 1877 (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that the war and Reconstruction greatly expanded federal power, through taxation, a national currency, the Homestead and land-grant acts, constitutional amendments and military enforcement of civil rights, but that the federal government largely withdrew from enforcing those rights by 1877. It places the topic in the context of the sectional crisis and slavery, uses specific evidence (the income tax and greenbacks, the Thirteenth, Fourteenth and Fifteenth Amendments, the Freedmen's Bureau, the Reconstruction Acts, the Enforcement Acts, the Compromise of 1877, Supreme Court decisions in the 1870s), and uses continuity and change to weigh expansion against retreat.",
+    "reviewed": false
+  }
+]

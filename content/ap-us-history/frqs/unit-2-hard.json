@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u2-frq-4",
+    "unit": "unit-2-colonial-america",
+    "topic": "religion-and-enlightenment",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The preacher spoke for two hours in the open field, and the people cried out and wept. Merchants stood beside servants, and enslaved men and women listened among the rest. Many who had never entered a church were moved to tears, and some declared that their own ministers had never preached to the heart.”\n>\n> *Source: An account of a revival meeting, 1740s*\n\n**a)** Identify ONE way in which the revival described in the excerpt differed from earlier religious practice in the colonies.\n\n**b)** Explain ONE way in which the Great Awakening affected colonial society in the period 1740 to 1754.\n\n**c)** Explain ONE way in which Enlightenment thinking differed from the ideas of the Great Awakening.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a difference such as emotional preaching in open fields, appeal across social ranks, or criticism of settled ministers"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains an effect such as challenging the authority of established clergy, creating new denominations or divisions between New Lights and Old Lights, or building shared colonial experiences"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains that the Enlightenment emphasized reason, science and natural rights, while the Great Awakening emphasized emotion, personal conversion and the authority of scripture"
+      }
+    ],
+    "sampleResponse": "a) The revival took place outdoors with emotional preaching that attracted people of all ranks, including servants and the enslaved, rather than being limited to church services led by settled ministers.\nb) The Awakening challenged the authority of established clergy, split congregations into New Lights and Old Lights, and created new, more diverse denominations while giving colonists a shared religious experience.\nc) Enlightenment thinkers emphasized reason, science and natural rights as the way to understand the world, while Awakening preachers emphasized emotion and personal conversion.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u2-frq-5",
+    "unit": "unit-2-colonial-america",
+    "topic": "english-colonies-founding",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which religious beliefs, rather than economic goals, shaped the development of the English colonies in North America in the period 1607 to 1754.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which religion rather than economics shaped colonial development"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as the Protestant Reformation, English religious conflict or the growth of the Atlantic economy"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses comparison or causation to structure the argument (1 point), and demonstrates complex understanding, such as noting that religion and economics interacted, or that motives varied by region and changed over time (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that religion shaped New England, Pennsylvania and Maryland most directly, while economic motives dominated the Chesapeake and the Carolinas and eventually shaped all regions through the Atlantic economy. It places the topic in the context of the Protestant Reformation and English expansion, uses specific evidence (Puritan Massachusetts Bay and the banishment of dissenters, Pennsylvania's toleration, Maryland's refuge for Catholics, Virginia's tobacco and the headright system, the Atlantic trade and slavery, the Great Awakening), and uses comparison or causation to weigh religion against economic goals.",
+    "reviewed": false
+  }
+]

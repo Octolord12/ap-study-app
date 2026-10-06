@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-ush-u9-mcq-31",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "hard",
+    "stem": "> “Despite campaigning against big government, the Reagan administration presided over rising federal deficits, as tax cuts and a defense buildup outpaced the spending cuts it achieved.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Iran-Contra affair was investigated by Congress and by an independent special prosecutor.",
+        "isCorrect": false,
+        "explanation": "That concerns a scandal, not budget policy."
+      },
+      {
+        "label": "B",
+        "text": "The Moral Majority mobilized evangelical voters around issues such as abortion and school prayer.",
+        "isCorrect": false,
+        "explanation": "That concerns political mobilization."
+      },
+      {
+        "label": "C",
+        "text": "The 1981 tax cuts and large increases in military spending coincided with growing deficits.",
+        "isCorrect": true,
+        "explanation": "Lower revenue and higher defense spending contributed to larger deficits."
+      },
+      {
+        "label": "D",
+        "text": "President Reagan fired striking air traffic controllers in 1981 and weakened organized labor.",
+        "isCorrect": false,
+        "explanation": "That concerned labor relations, not the deficit."
+      }
+    ],
+    "explanation": "Tax cuts and defense spending increases coincided with growing deficits.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-32",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "hard",
+    "stem": "The Republican victory in the 1994 midterm elections, associated with the Contract with America,",
+    "choices": [
+      {
+        "label": "A",
+        "text": "led to the impeachment of President Reagan for his role in the Iran-Contra scandal.",
+        "isCorrect": false,
+        "explanation": "Reagan had left office in 1989."
+      },
+      {
+        "label": "B",
+        "text": "gave Republicans control of both houses of Congress for the first time in decades.",
+        "isCorrect": true,
+        "explanation": "The election was a major shift in congressional power."
+      },
+      {
+        "label": "C",
+        "text": "ended the two-party system when independent candidates won control of both houses.",
+        "isCorrect": false,
+        "explanation": "The system continued."
+      },
+      {
+        "label": "D",
+        "text": "gave Democrats a larger majority in the House and Senate, supporting Clinton's agenda.",
+        "isCorrect": false,
+        "explanation": "Republicans gained control."
+      }
+    ],
+    "explanation": "The 1994 elections shifted control of Congress to the Republicans.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-33",
+    "unit": "unit-9-contemporary-america",
+    "topic": "reagan-and-conservatism",
+    "difficulty": "hard",
+    "stem": "President Bill Clinton's approach as a New Democrat is best illustrated by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a call to expand the Great Society programs without change and raise taxes on the middle class.",
+        "isCorrect": false,
+        "explanation": "Clinton moved away from traditional liberalism."
+      },
+      {
+        "label": "B",
+        "text": "his opposition to all free trade agreements and his strong support for higher tariffs.",
+        "isCorrect": false,
+        "explanation": "He supported NAFTA."
+      },
+      {
+        "label": "C",
+        "text": "his proposal to abolish the income tax and replace it with a national sales tax on goods.",
+        "isCorrect": false,
+        "explanation": "Clinton did not propose that."
+      },
+      {
+        "label": "D",
+        "text": "backing NAFTA, welfare reform and balanced budgets, which moved Democrats toward the center.",
+        "isCorrect": true,
+        "explanation": "Clinton adopted policies that appealed to moderates."
+      }
+    ],
+    "explanation": "Clinton's centrist policies included NAFTA and welfare reform.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/reagan-and-conservatism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-34",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "hard",
+    "stem": "> “Scholars disagree about why the Cold War ended. Some emphasize the pressure of American military spending and firm rhetoric; others argue that the internal weaknesses of the Soviet system and the reforms of Mikhail Gorbachev were decisive.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the second view described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The United States proposed the Strategic Defense Initiative in 1983 to defend against missiles.",
+        "isCorrect": false,
+        "explanation": "That supports the view stressing American pressure."
+      },
+      {
+        "label": "B",
+        "text": "The Soviet economy stagnated, and Gorbachev's reforms unleashed forces he could not control.",
+        "isCorrect": true,
+        "explanation": "Internal economic weakness and the effects of reform are the heart of the second view."
+      },
+      {
+        "label": "C",
+        "text": "NATO admitted several new members from Eastern Europe in the late 1990s and 2000s.",
+        "isCorrect": false,
+        "explanation": "That occurred after the Cold War ended."
+      },
+      {
+        "label": "D",
+        "text": "The United States increased defense spending in the early 1980s to pressure the Soviet economy.",
+        "isCorrect": false,
+        "explanation": "That also supports the first view."
+      }
+    ],
+    "explanation": "Soviet internal problems and Gorbachev's reforms support the second view.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-35",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "hard",
+    "stem": "The expansion of NATO in the 1990s to include former Warsaw Pact states",
+    "choices": [
+      {
+        "label": "A",
+        "text": "was opposed by every Eastern European government and by many Western European allies.",
+        "isCorrect": false,
+        "explanation": "Many Eastern European governments sought membership."
+      },
+      {
+        "label": "B",
+        "text": "extended NATO eastward, which backers said secured democracy and critics said provoked Russia.",
+        "isCorrect": true,
+        "explanation": "The expansion was controversial in Russia and in the West."
+      },
+      {
+        "label": "C",
+        "text": "ended NATO as an organization once the Warsaw Pact had dissolved in 1991 and its members left.",
+        "isCorrect": false,
+        "explanation": "NATO continued and grew."
+      },
+      {
+        "label": "D",
+        "text": "was a Soviet-led initiative meant to preserve Moscow's influence over its former allies.",
+        "isCorrect": false,
+        "explanation": "The Soviet Union no longer existed."
+      }
+    ],
+    "explanation": "NATO's expansion eastward was supported by many but criticized by others.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-36",
+    "unit": "unit-9-contemporary-america",
+    "topic": "end-of-cold-war",
+    "difficulty": "hard",
+    "stem": "President George H. W. Bush ended the Gulf War after liberating Kuwait rather than invading Iraq because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the coalition's mission was limited to freeing Kuwait, and he feared a long occupation.",
+        "isCorrect": true,
+        "explanation": "The administration wanted to keep the war's goals limited and the coalition united."
+      },
+      {
+        "label": "B",
+        "text": "American forces had been defeated by Iraqi troops and had to withdraw from the region.",
+        "isCorrect": false,
+        "explanation": "The coalition had won a decisive victory."
+      },
+      {
+        "label": "C",
+        "text": "Congress had declared the war illegal and ordered the president to end it at once.",
+        "isCorrect": false,
+        "explanation": "Congress had authorized force."
+      },
+      {
+        "label": "D",
+        "text": "the Soviet Union threatened to invade if the coalition advanced toward Baghdad.",
+        "isCorrect": false,
+        "explanation": "That was not the reason."
+      }
+    ],
+    "explanation": "Limited goals and coalition concerns led to the end of the war.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/end-of-cold-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-37",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "hard",
+    "stem": "> “Globalization lowered prices for consumers and created new export industries, but it also contributed to the decline of American manufacturing communities.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the second part of the historian's claim?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Midwestern factory closings and lost jobs as production moved overseas and to Mexico.",
+        "isCorrect": true,
+        "explanation": "The loss of factory jobs in particular regions illustrates the decline of manufacturing communities."
+      },
+      {
+        "label": "B",
+        "text": "The rise of the Silicon Valley technology industry and its high-paying jobs in California.",
+        "isCorrect": false,
+        "explanation": "That reflects growth in one region, not decline elsewhere."
+      },
+      {
+        "label": "C",
+        "text": "The growth of the Internet in the 1990s and the rise of online commerce and retail.",
+        "isCorrect": false,
+        "explanation": "That concerns technology rather than the decline of manufacturing communities."
+      },
+      {
+        "label": "D",
+        "text": "The expansion of cheap imported goods in stores and discount retail chains nationwide.",
+        "isCorrect": false,
+        "explanation": "That supports the claim about lower prices for consumers."
+      }
+    ],
+    "explanation": "Factory closings in Midwestern communities show the decline of manufacturing.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-38",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "hard",
+    "stem": "The dot-com boom and bust of the late 1990s and early 2000s",
+    "choices": [
+      {
+        "label": "A",
+        "text": "occurred during the Great Depression and caused a wave of bank failures across the nation.",
+        "isCorrect": false,
+        "explanation": "It occurred decades later."
+      },
+      {
+        "label": "B",
+        "text": "led to the end of personal computers as consumers turned instead to mobile phones.",
+        "isCorrect": false,
+        "explanation": "Computers continued to spread."
+      },
+      {
+        "label": "C",
+        "text": "reflected speculative investment in Internet companies that failed when the bubble burst.",
+        "isCorrect": true,
+        "explanation": "Overinvestment led to a market crash but did not end technological change."
+      },
+      {
+        "label": "D",
+        "text": "showed that the Internet had no lasting commercial value and would never be profitable.",
+        "isCorrect": false,
+        "explanation": "The Internet continued to grow."
+      }
+    ],
+    "explanation": "The dot-com bubble burst, yet the Internet continued to transform the economy.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-39",
+    "unit": "unit-9-contemporary-america",
+    "topic": "economy-technology-globalization",
+    "difficulty": "hard",
+    "stem": "The Dodd-Frank Act of 2010 sought to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "tighten financial regulation and create the Consumer Financial Protection Bureau.",
+        "isCorrect": true,
+        "explanation": "The law aimed to reduce the risk of another financial crisis."
+      },
+      {
+        "label": "B",
+        "text": "create the Social Security system, with pensions for retired and disabled workers.",
+        "isCorrect": false,
+        "explanation": "Social Security was created in 1935."
+      },
+      {
+        "label": "C",
+        "text": "abolish the Federal Reserve and return control of banking to the individual states.",
+        "isCorrect": false,
+        "explanation": "The Federal Reserve remained."
+      },
+      {
+        "label": "D",
+        "text": "end all regulation of banks and let the market alone govern all lending practices.",
+        "isCorrect": false,
+        "explanation": "The law increased regulation."
+      }
+    ],
+    "explanation": "Dodd-Frank expanded financial regulation after the 2008 crisis.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/economy-technology-globalization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-40",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "hard",
+    "stem": "> “After 2001, presidents of both parties asserted broad executive authority in national security matters, often without explicit new approval from Congress.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Department of Homeland Security was created in 2002 to coordinate dozens of security agencies.",
+        "isCorrect": false,
+        "explanation": "That shows institutional change but not an assertion of executive authority beyond congressional approval."
+      },
+      {
+        "label": "B",
+        "text": "Congress's 2001 military authorization was cited for years to justify action against terrorist groups.",
+        "isCorrect": true,
+        "explanation": "A single authorization was used to support a widening set of actions."
+      },
+      {
+        "label": "C",
+        "text": "Congress passed the Gulf of Tonkin Resolution in 1964, authorizing force in Vietnam without a declaration.",
+        "isCorrect": false,
+        "explanation": "That occurred decades earlier."
+      },
+      {
+        "label": "D",
+        "text": "The United States joined the United Nations in 1945 and helped write its charter in San Francisco.",
+        "isCorrect": false,
+        "explanation": "That occurred long before 2001."
+      }
+    ],
+    "explanation": "The 2001 authorization was used to justify broad executive action.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-41",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "hard",
+    "stem": "Which of the following best describes the aftermath of the 2003 invasion of Iraq?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The discovery of large stockpiles of chemical weapons and an active program to build nuclear arms.",
+        "isCorrect": false,
+        "explanation": "Such stockpiles were not found."
+      },
+      {
+        "label": "B",
+        "text": "Saddam Hussein's fall was followed by a long insurgency and sectarian violence that eroded public support.",
+        "isCorrect": true,
+        "explanation": "The occupation proved long and costly."
+      },
+      {
+        "label": "C",
+        "text": "An immediate withdrawal of American forces within months of Saddam Hussein's capture in 2003.",
+        "isCorrect": false,
+        "explanation": "American forces remained for years."
+      },
+      {
+        "label": "D",
+        "text": "A quick, peaceful transition to a stable democracy within a year or two of the invasion.",
+        "isCorrect": false,
+        "explanation": "Violence continued for years."
+      }
+    ],
+    "explanation": "A prolonged insurgency and violence followed the invasion.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-42",
+    "unit": "unit-9-contemporary-america",
+    "topic": "september-11-and-war-on-terror",
+    "difficulty": "hard",
+    "stem": "The Arab Spring of 2011 presented United States policymakers with",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a united Middle East aligned with Soviet power and opposed to the Western democracies.",
+        "isCorrect": false,
+        "explanation": "The Soviet Union no longer existed."
+      },
+      {
+        "label": "B",
+        "text": "a simple choice to support every government in the region against the protest movements.",
+        "isCorrect": false,
+        "explanation": "Responses varied by country."
+      },
+      {
+        "label": "C",
+        "text": "the challenge of responding to uprisings against authoritarian governments, some allies.",
+        "isCorrect": true,
+        "explanation": "American leaders had to balance support for democratic aspirations with alliances."
+      },
+      {
+        "label": "D",
+        "text": "an end to American involvement in the region once the uprisings had spread to many states.",
+        "isCorrect": false,
+        "explanation": "American involvement continued."
+      }
+    ],
+    "explanation": "The Arab Spring raised difficult questions about supporting allies and democracy.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/september-11-and-war-on-terror",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-43",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "hard",
+    "stem": "> “Our state spends millions on services for people who entered the country illegally. The voters are saying enough. We must end public benefits for those here illegally.”\n>\n> *Source: A governor's statement, 1994*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Growing political conflict over immigration, as in California's Proposition 187.",
+        "isCorrect": true,
+        "explanation": "The statement reflects efforts to restrict benefits for undocumented immigrants."
+      },
+      {
+        "label": "B",
+        "text": "Support for the Immigration Act of 1965 and its rules for family reunification.",
+        "isCorrect": false,
+        "explanation": "The statement reflects a restrictive position."
+      },
+      {
+        "label": "C",
+        "text": "A call for open borders and a pathway to citizenship for every resident.",
+        "isCorrect": false,
+        "explanation": "The statement calls for restrictions."
+      },
+      {
+        "label": "D",
+        "text": "The expansion of the Great Society and its programs for immigrants and poor families.",
+        "isCorrect": false,
+        "explanation": "The statement calls for ending benefits."
+      }
+    ],
+    "explanation": "The passage reflects the immigration debates of the 1990s.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-44",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "hard",
+    "stem": "The Deferred Action for Childhood Arrivals program of 2012",
+    "choices": [
+      {
+        "label": "A",
+        "text": "let some immigrants who arrived as children stay and work temporarily, without citizenship.",
+        "isCorrect": true,
+        "explanation": "The program offered temporary protection, not permanent status."
+      },
+      {
+        "label": "B",
+        "text": "granted citizenship to all undocumented immigrants who had lived in the country five years.",
+        "isCorrect": false,
+        "explanation": "It did not provide citizenship."
+      },
+      {
+        "label": "C",
+        "text": "was passed as a constitutional amendment and ratified by three-fourths of the states in 2012.",
+        "isCorrect": false,
+        "explanation": "It was an executive action."
+      },
+      {
+        "label": "D",
+        "text": "ended all deportations of undocumented immigrants and closed the nation's immigration courts.",
+        "isCorrect": false,
+        "explanation": "It applied to a limited group."
+      }
+    ],
+    "explanation": "DACA offered temporary relief without citizenship.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u9-mcq-45",
+    "unit": "unit-9-contemporary-america",
+    "topic": "demographic-and-cultural-change",
+    "difficulty": "hard",
+    "stem": "Which developments reflect the expansion of legal recognition of LGBTQ rights between 2003 and 2015?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lawrence v. Texas (2003), the repeal of Don't Ask, Don't Tell (2010) and Obergefell (2015).",
+        "isCorrect": true,
+        "explanation": "These events ended criminal penalties, allowed open military service and recognized same-sex marriage."
+      },
+      {
+        "label": "B",
+        "text": "Plessy v. Ferguson (1896), the Taft-Hartley Act (1947) and Roe v. Wade (1973).",
+        "isCorrect": false,
+        "explanation": "These concern other issues and time periods."
+      },
+      {
+        "label": "C",
+        "text": "The Chinese Exclusion Act (1882), the Dawes Act (1887) and the Sherman Act (1890).",
+        "isCorrect": false,
+        "explanation": "These are nineteenth-century laws."
+      },
+      {
+        "label": "D",
+        "text": "The Civil Rights Act of 1964, the Voting Rights Act of 1965 and the creation of Medicare.",
+        "isCorrect": false,
+        "explanation": "These are 1960s laws and are not about LGBTQ rights."
+      }
+    ],
+    "explanation": "Lawrence, the repeal of Don't Ask, Don't Tell and Obergefell expanded LGBTQ rights.",
+    "conceptLink": "ap-us-history/unit-9-contemporary-america/demographic-and-cultural-change",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-ush-u8-mcq-31",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "hard",
+    "stem": "> “Postwar suburbanization expanded the middle class, but mostly the white middle class, because federal mortgage programs and private practices steered Black families away from the new neighborhoods.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The GI Bill offered low-interest loans to veterans for homes and for college tuition costs.",
+        "isCorrect": false,
+        "explanation": "That describes the benefits available but not the exclusion of Black families."
+      },
+      {
+        "label": "B",
+        "text": "Television became common in American homes and shaped the tastes of suburban families.",
+        "isCorrect": false,
+        "explanation": "That concerns popular culture."
+      },
+      {
+        "label": "C",
+        "text": "Levittown barred Black buyers, and federal rules rated Black neighborhoods as poor risks.",
+        "isCorrect": true,
+        "explanation": "Both examples show how housing policy and private practice excluded Black families from suburban homeownership."
+      },
+      {
+        "label": "D",
+        "text": "The interstate highway system made commuting easier and opened large tracts of new land.",
+        "isCorrect": false,
+        "explanation": "That shows the growth of suburbs but not racial exclusion."
+      }
+    ],
+    "explanation": "Levittown's restrictions and redlining support the historian's claim about exclusion.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-32",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "hard",
+    "stem": "Beat writers and early rock and roll music in the 1950s",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ended racial segregation in music by uniting Black and white audiences in the South.",
+        "isCorrect": false,
+        "explanation": "They did not end segregation, though rock and roll mixed musical traditions."
+      },
+      {
+        "label": "B",
+        "text": "promoted the values of traditional suburban life, church and the nuclear family.",
+        "isCorrect": false,
+        "explanation": "They challenged those values."
+      },
+      {
+        "label": "C",
+        "text": "were supported by government cultural programs and by federal funds for the arts.",
+        "isCorrect": false,
+        "explanation": "They were often viewed with suspicion."
+      },
+      {
+        "label": "D",
+        "text": "challenged the conformity and materialism of mainstream culture, especially among youth.",
+        "isCorrect": true,
+        "explanation": "Both expressed discontent with the conformity of the postwar era."
+      }
+    ],
+    "explanation": "Beat writers and rock and roll challenged mainstream conformity.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-33",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "postwar-economy-and-society",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the slower growth of unions in the South and West after 1947?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The AFL-CIO decided not to organize outside the Northeast and the Great Lakes region.",
+        "isCorrect": false,
+        "explanation": "The AFL-CIO did organize elsewhere."
+      },
+      {
+        "label": "B",
+        "text": "Taft-Hartley let states adopt right-to-work laws, which many Southern and Western states did.",
+        "isCorrect": true,
+        "explanation": "Right-to-work laws weakened union organizing in those regions."
+      },
+      {
+        "label": "C",
+        "text": "A large majority of workers in the South and West were employed as farm laborers in 1947.",
+        "isCorrect": false,
+        "explanation": "The change reflects state law, not a farm-labor majority."
+      },
+      {
+        "label": "D",
+        "text": "The Wagner Act banned unions in those regions and in most large agricultural industries.",
+        "isCorrect": false,
+        "explanation": "The Wagner Act protected organizing."
+      }
+    ],
+    "explanation": "Right-to-work laws made union growth harder in many Southern and Western states.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/postwar-economy-and-society",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-34",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "hard",
+    "stem": "> “The Soviet government is committed to expansion and sees no permanent peace with the capitalist world. It is sensitive to force but not to reason. A policy of firm and patient resistance wherever it shows signs of pushing outward is required.”\n>\n> *Source: A diplomat's telegram, 1946*\n\nThe policy recommendation in the passage most directly led to which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A military alliance with the Soviet Union to maintain joint control of Eastern Europe.",
+        "isCorrect": false,
+        "explanation": "The author warns against Soviet expansion."
+      },
+      {
+        "label": "B",
+        "text": "The adoption of containment, as expressed in the Truman Doctrine and the Marshall Plan.",
+        "isCorrect": true,
+        "explanation": "The author's advice of firm resistance to Soviet expansion shaped early Cold War policy."
+      },
+      {
+        "label": "C",
+        "text": "A policy of isolationism from European affairs and the closing of American bases abroad.",
+        "isCorrect": false,
+        "explanation": "The author calls for resistance, not withdrawal."
+      },
+      {
+        "label": "D",
+        "text": "The immediate use of nuclear weapons against the Soviet Union to end its expansion.",
+        "isCorrect": false,
+        "explanation": "The author recommends firm and patient resistance, not immediate war."
+      }
+    ],
+    "explanation": "The telegram's advice became the basis of containment.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-35",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "hard",
+    "stem": "The Korean War ended in 1953 with",
+    "choices": [
+      {
+        "label": "A",
+        "text": "an armistice that left Korea divided near the 38th parallel, reinforcing containment.",
+        "isCorrect": true,
+        "explanation": "The war ended in a stalemate and a divided peninsula."
+      },
+      {
+        "label": "B",
+        "text": "a communist victory across the whole peninsula and the fall of the South Korean government.",
+        "isCorrect": false,
+        "explanation": "South Korea remained independent."
+      },
+      {
+        "label": "C",
+        "text": "a complete victory for the United States and the unification of Korea under South Korea.",
+        "isCorrect": false,
+        "explanation": "Korea remained divided."
+      },
+      {
+        "label": "D",
+        "text": "the withdrawal of the United States from East Asia and the end of its alliances there.",
+        "isCorrect": false,
+        "explanation": "American forces remained in South Korea."
+      }
+    ],
+    "explanation": "The war ended in stalemate and division.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-36",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "cold-war-foreign-policy",
+    "difficulty": "hard",
+    "stem": "The release of the Pentagon Papers in 1971 contributed most directly to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "public distrust of the government's honesty about Vietnam, the credibility gap.",
+        "isCorrect": true,
+        "explanation": "The documents showed that officials had misled the public about the war."
+      },
+      {
+        "label": "B",
+        "text": "a formal declaration of war on North Vietnam by a vote of both houses of Congress.",
+        "isCorrect": false,
+        "explanation": "Congress did not declare war."
+      },
+      {
+        "label": "C",
+        "text": "the immediate end of the draft and the withdrawal of all American troops from Asia.",
+        "isCorrect": false,
+        "explanation": "The draft ended later, in 1973."
+      },
+      {
+        "label": "D",
+        "text": "a surge in public support for the war and for President Nixon's policies.",
+        "isCorrect": false,
+        "explanation": "The release increased distrust."
+      }
+    ],
+    "explanation": "The Pentagon Papers deepened distrust of the government over Vietnam.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/cold-war-foreign-policy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-37",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "hard",
+    "stem": "> “The civil rights movement succeeded when local protest forced the federal government to act against the resistance of southern states.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Taft-Hartley Act restricted union power and allowed states to adopt right-to-work laws in 1947.",
+        "isCorrect": false,
+        "explanation": "That law concerned labor."
+      },
+      {
+        "label": "B",
+        "text": "The Supreme Court decided Plessy v. Ferguson in 1896, which allowed separate but equal facilities.",
+        "isCorrect": false,
+        "explanation": "That decision upheld segregation."
+      },
+      {
+        "label": "C",
+        "text": "The Marshall Plan rebuilt Europe and promoted economic recovery in more than a dozen countries.",
+        "isCorrect": false,
+        "explanation": "That concerned foreign policy."
+      },
+      {
+        "label": "D",
+        "text": "Eisenhower sent troops to Little Rock in 1957, and Johnson pushed the Voting Rights Act after Selma.",
+        "isCorrect": true,
+        "explanation": "Federal action followed local resistance and protest."
+      }
+    ],
+    "explanation": "Federal intervention in Little Rock and after Selma supports the claim.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-38",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "hard",
+    "stem": "The challenge by the Mississippi Freedom Democratic Party at the 1964 Democratic National Convention",
+    "choices": [
+      {
+        "label": "A",
+        "text": "highlighted the exclusion of Black Mississippians from politics and rejected a compromise.",
+        "isCorrect": true,
+        "explanation": "The challenge drew national attention to the denial of voting rights."
+      },
+      {
+        "label": "B",
+        "text": "was organized by Southern segregationists to oppose the national party's civil rights platform.",
+        "isCorrect": false,
+        "explanation": "It was organized by civil rights activists."
+      },
+      {
+        "label": "C",
+        "text": "won full recognition of the party's delegates and unseated the regular Mississippi group.",
+        "isCorrect": false,
+        "explanation": "The party was offered only a limited compromise."
+      },
+      {
+        "label": "D",
+        "text": "ended the Democratic Party's support for civil rights legislation in the following years.",
+        "isCorrect": false,
+        "explanation": "The challenge did not end that support."
+      }
+    ],
+    "explanation": "The challenge exposed political exclusion in Mississippi.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-39",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "civil-rights-movement",
+    "difficulty": "hard",
+    "stem": "Cesar Chavez and the United Farm Workers used which tactics in the 1960s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Armed uprisings against growers and the occupation of large farms in California.",
+        "isCorrect": false,
+        "explanation": "The union relied on nonviolent methods."
+      },
+      {
+        "label": "B",
+        "text": "Court-ordered integration of farm labor camps and of migrant schools in the West.",
+        "isCorrect": false,
+        "explanation": "The union relied on strikes, boycotts and marches rather than court-ordered integration."
+      },
+      {
+        "label": "C",
+        "text": "Strikes, boycotts and marches for farmworkers, drawing on civil rights methods.",
+        "isCorrect": true,
+        "explanation": "The union used nonviolent pressure and public support."
+      },
+      {
+        "label": "D",
+        "text": "A ban on all farm production in the Southwest until growers accepted union rules.",
+        "isCorrect": false,
+        "explanation": "The union used boycotts and strikes, not a ban."
+      }
+    ],
+    "explanation": "The UFW used nonviolent strikes and boycotts.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/civil-rights-movement",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-40",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "hard",
+    "stem": "> “The Great Society did not end poverty, but it sharply reduced poverty among the elderly and expanded access to health care and education.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Taft-Hartley Act limited union power and reduced the influence of labor unions in politics.",
+        "isCorrect": false,
+        "explanation": "That law concerned labor and not poverty among the elderly."
+      },
+      {
+        "label": "B",
+        "text": "The Marshall Plan rebuilt European economies and expanded American trade across the Atlantic.",
+        "isCorrect": false,
+        "explanation": "That concerns European recovery."
+      },
+      {
+        "label": "C",
+        "text": "Medicare and Social Security increases helped the incomes and health of older Americans.",
+        "isCorrect": true,
+        "explanation": "These programs targeted the elderly and reduced their poverty."
+      },
+      {
+        "label": "D",
+        "text": "The Gulf of Tonkin Resolution authorized force in Vietnam and shaped Johnson's agenda.",
+        "isCorrect": false,
+        "explanation": "That concerns foreign policy."
+      }
+    ],
+    "explanation": "Medicare and Social Security improvements reduced poverty among the elderly.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-41",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "hard",
+    "stem": "Richard Nixon's appeals to the silent majority in 1968 and 1972 were aimed at",
+    "choices": [
+      {
+        "label": "A",
+        "text": "voters, many of them white and working-class, who reacted against protest and urban unrest.",
+        "isCorrect": true,
+        "explanation": "Nixon built a coalition from voters who felt alienated by the changes of the 1960s."
+      },
+      {
+        "label": "B",
+        "text": "antiwar student activists and the civil rights leaders who organized marches in cities.",
+        "isCorrect": false,
+        "explanation": "They were not his target audience."
+      },
+      {
+        "label": "C",
+        "text": "civil rights leaders and Black Power organizers in northern cities and in the South.",
+        "isCorrect": false,
+        "explanation": "Those groups were not his main audience."
+      },
+      {
+        "label": "D",
+        "text": "members of the Democratic leadership who had split over Vietnam and civil rights legislation.",
+        "isCorrect": false,
+        "explanation": "He appealed to voters, not party leaders."
+      }
+    ],
+    "explanation": "The silent majority appeal targeted voters upset by protest and social change.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-42",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "great-society-and-liberalism",
+    "difficulty": "hard",
+    "stem": "The Supreme Court's decision in Engel v. Vitale (1962)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "upheld segregation in public schools as long as the facilities were equal in all respects.",
+        "isCorrect": false,
+        "explanation": "The case concerned prayer."
+      },
+      {
+        "label": "B",
+        "text": "banned religious groups from meeting at all on any public property or school grounds.",
+        "isCorrect": false,
+        "explanation": "The decision concerned school-sponsored prayer."
+      },
+      {
+        "label": "C",
+        "text": "required daily prayer in public schools and approved a standard nondenominational text for use.",
+        "isCorrect": false,
+        "explanation": "The Court ruled against it."
+      },
+      {
+        "label": "D",
+        "text": "ruled that organized school prayer violated the First Amendment, angering religious conservatives.",
+        "isCorrect": true,
+        "explanation": "The decision limited state-sponsored prayer in schools."
+      }
+    ],
+    "explanation": "Engel v. Vitale ended organized school prayer and fueled conservative reaction.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/great-society-and-liberalism",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-43",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "hard",
+    "stem": "> “We are people of this generation, raised in at least modest comfort, housed now in universities, looking uncomfortably at the world we inherit. We seek a democracy of individual participation, in which people share in the decisions that affect their lives.”\n>\n> *Source: A student group's manifesto, 1962*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A defense of the status quo and of the traditional authority of American universities.",
+        "isCorrect": false,
+        "explanation": "The authors question it."
+      },
+      {
+        "label": "B",
+        "text": "The New Left's emphasis on participatory democracy and its criticism of mainstream society.",
+        "isCorrect": true,
+        "explanation": "The authors call for greater direct participation and question the world they inherit."
+      },
+      {
+        "label": "C",
+        "text": "A call for a return to traditional values in family, church and community life today.",
+        "isCorrect": false,
+        "explanation": "The authors call for change."
+      },
+      {
+        "label": "D",
+        "text": "Support for the policy of containment and for the Cold War consensus on foreign policy.",
+        "isCorrect": false,
+        "explanation": "The passage criticizes society."
+      }
+    ],
+    "explanation": "The passage expresses the New Left's call for participatory democracy.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-44",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "hard",
+    "stem": "The Stonewall uprising of 1969 in New York City",
+    "choices": [
+      {
+        "label": "A",
+        "text": "led to the passage of the Equal Rights Amendment and Title IX.",
+        "isCorrect": false,
+        "explanation": "The ERA was not ratified."
+      },
+      {
+        "label": "B",
+        "text": "was a protest against the draft held outside a federal building.",
+        "isCorrect": false,
+        "explanation": "It concerned police raids on a bar."
+      },
+      {
+        "label": "C",
+        "text": "became a catalyst for the modern gay rights movement in the 1970s.",
+        "isCorrect": true,
+        "explanation": "The resistance to a police raid inspired activists to organize."
+      },
+      {
+        "label": "D",
+        "text": "ended the Vietnam War by prompting a change in national policy.",
+        "isCorrect": false,
+        "explanation": "It was not related to the war's end."
+      }
+    ],
+    "explanation": "Stonewall inspired the growth of the gay rights movement.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u8-mcq-45",
+    "unit": "unit-8-cold-war-and-civil-rights",
+    "topic": "protest-and-the-1970s",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the economic changes of the 1970s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The South and West lost population to the Midwest and Northeast as workers sought factory jobs.",
+        "isCorrect": false,
+        "explanation": "The Sun Belt gained population."
+      },
+      {
+        "label": "B",
+        "text": "Foreign competition and energy costs weakened industry in the Northeast as investment moved to the Sun Belt.",
+        "isCorrect": true,
+        "explanation": "Deindustrialization and migration reshaped regional economies."
+      },
+      {
+        "label": "C",
+        "text": "Energy prices fell sharply, which supported industry and encouraged new factories in the Northeast.",
+        "isCorrect": false,
+        "explanation": "Energy prices rose in the 1970s."
+      },
+      {
+        "label": "D",
+        "text": "American manufacturing expanded rapidly in the Northeast and Midwest as foreign imports declined sharply.",
+        "isCorrect": false,
+        "explanation": "Manufacturing declined there."
+      }
+    ],
+    "explanation": "Deindustrialization and the rise of the Sun Belt changed the economy.",
+    "conceptLink": "ap-us-history/unit-8-cold-war-and-civil-rights/protest-and-the-1970s",
+    "reviewed": false
+  }
+]

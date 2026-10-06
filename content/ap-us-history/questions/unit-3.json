@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-ush-u3-mcq-1",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "easy",
+    "stem": "Which was a major consequence of the French and Indian War for the British colonies?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "France gained control of the Ohio River valley and the lands north of it.",
+        "isCorrect": false,
+        "explanation": "France lost its North American empire east of the Mississippi in the Treaty of Paris of 1763."
+      },
+      {
+        "label": "B",
+        "text": "The colonies won independence from Britain and formed a new national government.",
+        "isCorrect": false,
+        "explanation": "Independence did not come until after the Revolution."
+      },
+      {
+        "label": "C",
+        "text": "Spain took over the thirteen colonies and ended British rule in America.",
+        "isCorrect": false,
+        "explanation": "Spain did not gain control of the British colonies."
+      },
+      {
+        "label": "D",
+        "text": "Britain's war debt led Parliament to impose new taxes and tighter controls.",
+        "isCorrect": true,
+        "explanation": "To pay for the war and for defending its enlarged empire, Britain turned to colonial taxation and stricter regulation."
+      }
+    ],
+    "explanation": "Britain's postwar debt and new imperial responsibilities led to new taxes and regulations.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-2",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "medium",
+    "stem": "The Proclamation of 1763 was intended to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "reduce conflict with Native peoples by limiting settlement west of the Appalachians.",
+        "isCorrect": true,
+        "explanation": "Britain wanted to avoid costly frontier wars after the French and Indian War by restricting settlement."
+      },
+      {
+        "label": "B",
+        "text": "punish Boston for the destruction of tea and close its harbor until it paid.",
+        "isCorrect": false,
+        "explanation": "That was the purpose of the Coercive Acts in 1774."
+      },
+      {
+        "label": "C",
+        "text": "encourage rapid settlement of the lands won from France by offering cheap land.",
+        "isCorrect": false,
+        "explanation": "The proclamation restricted settlement rather than encouraging it."
+      },
+      {
+        "label": "D",
+        "text": "end the transatlantic slave trade to the British colonies and the West Indies.",
+        "isCorrect": false,
+        "explanation": "The proclamation concerned western land, not the slave trade."
+      }
+    ],
+    "explanation": "The proclamation limited westward settlement to reduce frontier conflict.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-3",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "medium",
+    "stem": "> “Parliament may regulate our commerce, but the money in our purses is ours to give by the voice of our own assemblies. We have no representatives in the House of Commons, and what we have not consented to cannot lawfully be taken from us.”\n>\n> *Source: A colonial pamphlet, 1765*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Opposition to all British regulation of colonial trade, including the Navigation Acts.",
+        "isCorrect": false,
+        "explanation": "The author concedes Parliament may regulate commerce."
+      },
+      {
+        "label": "B",
+        "text": "A demand for immediate independence from Britain and a break with the crown.",
+        "isCorrect": false,
+        "explanation": "The author accepts Parliament's right to regulate trade and does not call for independence."
+      },
+      {
+        "label": "C",
+        "text": "Support for the British doctrine that Parliament virtually represented the colonists.",
+        "isCorrect": false,
+        "explanation": "The author rejects the idea that Parliament represents the colonists."
+      },
+      {
+        "label": "D",
+        "text": "Opposition to taxation by a legislature in which colonists had no elected representatives.",
+        "isCorrect": true,
+        "explanation": "The author argues that taxation requires the consent of representatives the colonists elect."
+      }
+    ],
+    "explanation": "The passage expresses the principle of no taxation without representation.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-4",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "medium",
+    "stem": "How did Parliament respond to the Boston Tea Party of 1773?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It passed the Coercive Acts, which closed Boston Harbor and limited self-government in Massachusetts.",
+        "isCorrect": true,
+        "explanation": "The acts punished Massachusetts and led other colonies to unite in support of Boston."
+      },
+      {
+        "label": "B",
+        "text": "It apologized to colonists for the tax and compensated Boston merchants for lost sales and shipping.",
+        "isCorrect": false,
+        "explanation": "Parliament demanded payment and imposed penalties."
+      },
+      {
+        "label": "C",
+        "text": "It repealed the Tea Act and the other taxes it had placed on the colonies as a gesture of peace.",
+        "isCorrect": false,
+        "explanation": "Parliament responded with punishment rather than repeal."
+      },
+      {
+        "label": "D",
+        "text": "It offered the colonies seats in the House of Commons if they would pay for the destroyed tea.",
+        "isCorrect": false,
+        "explanation": "Parliament did not offer colonial representation."
+      }
+    ],
+    "explanation": "Parliament punished Massachusetts with the Coercive Acts.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-5",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "hard",
+    "stem": "The British doctrine of virtual representation held that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "colonists should elect their own members to Parliament so that they could vote on taxes.",
+        "isCorrect": false,
+        "explanation": "That was the colonial demand, which Britain rejected."
+      },
+      {
+        "label": "B",
+        "text": "colonial assemblies could override acts of Parliament in matters affecting their own colonies.",
+        "isCorrect": false,
+        "explanation": "Britain claimed Parliament's authority was supreme."
+      },
+      {
+        "label": "C",
+        "text": "only property owners in the colonies should be taxed, since they alone had a stake in government.",
+        "isCorrect": false,
+        "explanation": "Virtual representation concerned who spoke for the colonists, not property qualifications for taxation."
+      },
+      {
+        "label": "D",
+        "text": "members of Parliament represented all British subjects, even colonists who had not voted for them.",
+        "isCorrect": true,
+        "explanation": "British officials argued that colonists were represented in Parliament even without electing members."
+      }
+    ],
+    "explanation": "Virtual representation was the British argument that Parliament spoke for all subjects.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-6",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "difficulty": "medium",
+    "stem": "Why did the Boston Massacre of 1770 matter in the growing conflict between the colonies and Britain?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It began the Revolutionary War with the first battle between colonists and British troops.",
+        "isCorrect": false,
+        "explanation": "Open warfare began at Lexington and Concord in 1775."
+      },
+      {
+        "label": "B",
+        "text": "It caused Parliament to repeal the Stamp Act and to withdraw all troops from Boston.",
+        "isCorrect": false,
+        "explanation": "The Stamp Act had been repealed in 1766, before the massacre."
+      },
+      {
+        "label": "C",
+        "text": "Patriots used it in speeches and prints to build opposition to British troops and policy.",
+        "isCorrect": true,
+        "explanation": "Accounts of the shooting, such as Paul Revere's engraving, shaped colonial opinion against British rule."
+      },
+      {
+        "label": "D",
+        "text": "British soldiers were convicted of murder and executed, which ended the crisis in Boston.",
+        "isCorrect": false,
+        "explanation": "Most of the soldiers were acquitted after being defended by John Adams."
+      }
+    ],
+    "explanation": "Patriots used the Boston Massacre to build colonial resistance.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/imperial-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-7",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "easy",
+    "stem": "Thomas Paine's pamphlet Common Sense (1776) argued that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the colonies should form a monarchy of their own under a native-born king.",
+        "isCorrect": false,
+        "explanation": "Paine rejected monarchy."
+      },
+      {
+        "label": "B",
+        "text": "Parliament should grant the colonies seats in the House of Commons and reduce taxes.",
+        "isCorrect": false,
+        "explanation": "Paine wanted independence, not representation within the British system."
+      },
+      {
+        "label": "C",
+        "text": "the colonies should declare independence and form a republic, not keep a monarchy.",
+        "isCorrect": true,
+        "explanation": "Paine's plain language made a powerful case for independence and against monarchy."
+      },
+      {
+        "label": "D",
+        "text": "the colonies should seek reconciliation with the king and keep their charters.",
+        "isCorrect": false,
+        "explanation": "Paine argued against reconciliation."
+      }
+    ],
+    "explanation": "Common Sense argued for independence and republican government.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-8",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "medium",
+    "stem": "> “We hold that all persons are born with equal claims to life, liberty and the pursuit of happiness; that governments are made to secure these rights; and that when a government becomes destructive of them, the people may alter or abolish it.”\n>\n> *Source: A declaration of rights, 1770s*\n\nThe passage most directly reflects the influence of which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Puritan belief in a covenant community led by godly church members.",
+        "isCorrect": false,
+        "explanation": "The passage does not mention religion or church membership."
+      },
+      {
+        "label": "B",
+        "text": "The doctrine of the divine right of kings to rule without any consent.",
+        "isCorrect": false,
+        "explanation": "The author argues that people may alter or abolish government."
+      },
+      {
+        "label": "C",
+        "text": "Mercantilist economic theory about the proper balance of trade with the colonies.",
+        "isCorrect": false,
+        "explanation": "The passage is about political rights, not trade."
+      },
+      {
+        "label": "D",
+        "text": "Enlightenment ideas of natural rights and government by the consent of the governed.",
+        "isCorrect": true,
+        "explanation": "The author uses natural rights, consent and a right to change government, all central ideas in Enlightenment political thought."
+      }
+    ],
+    "explanation": "The passage expresses Enlightenment natural rights ideas.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-9",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "medium",
+    "stem": "The American victory at Saratoga in 1777 was significant because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "it convinced Spain to cede Florida to the United States in return for peace.",
+        "isCorrect": false,
+        "explanation": "Spain did not give Florida to the United States at this time."
+      },
+      {
+        "label": "B",
+        "text": "it ended the war and forced Britain to recognize American independence at once.",
+        "isCorrect": false,
+        "explanation": "The war continued until 1781, and Britain recognized independence in 1783."
+      },
+      {
+        "label": "C",
+        "text": "it ended Loyalist support for Britain in the South and the Caribbean.",
+        "isCorrect": false,
+        "explanation": "Loyalist support in the South continued after Saratoga."
+      },
+      {
+        "label": "D",
+        "text": "it helped persuade France to ally with the United States and send aid.",
+        "isCorrect": true,
+        "explanation": "The victory showed that the Americans could win, which encouraged the French alliance of 1778."
+      }
+    ],
+    "explanation": "Saratoga was a turning point because it brought France into the war.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-10",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "medium",
+    "stem": "Which statement best describes the Loyalists during the American Revolution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They lived only in New England and had no presence in the Southern colonies.",
+        "isCorrect": false,
+        "explanation": "Loyalists were found in all regions."
+      },
+      {
+        "label": "B",
+        "text": "They quickly joined the Patriots when the war began and fought in the army.",
+        "isCorrect": false,
+        "explanation": "Many Loyalists stayed loyal to Britain throughout the war."
+      },
+      {
+        "label": "C",
+        "text": "They were a significant minority, and many left the United States after the war.",
+        "isCorrect": true,
+        "explanation": "Loyalists included many royal officials, merchants and others who remained loyal, and thousands emigrated afterward."
+      },
+      {
+        "label": "D",
+        "text": "They made up a clear majority of colonists, especially in the New England colonies.",
+        "isCorrect": false,
+        "explanation": "Patriots and Loyalists were both substantial groups, but Loyalists were a minority."
+      }
+    ],
+    "explanation": "Loyalists were a significant minority, and many departed after the war.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-11",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "hard",
+    "stem": "Which development most clearly shows revolutionary ideals leading to challenges to slavery in the late 1700s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Northern states, beginning with Vermont in 1777 and Pennsylvania in 1780, moved to end slavery.",
+        "isCorrect": true,
+        "explanation": "The language of liberty and rights led northern states to act against slavery, although slavery continued in the South."
+      },
+      {
+        "label": "B",
+        "text": "Southern states banned slavery in the 1780s after the war in order to rebuild their economies.",
+        "isCorrect": false,
+        "explanation": "Southern states kept slavery, and it grew."
+      },
+      {
+        "label": "C",
+        "text": "The Articles of Confederation banned slavery in all of the states, with compensation to owners.",
+        "isCorrect": false,
+        "explanation": "The Articles did not ban slavery."
+      },
+      {
+        "label": "D",
+        "text": "The Declaration of Independence abolished slavery in the new nation and freed enslaved people.",
+        "isCorrect": false,
+        "explanation": "The Declaration did not abolish slavery."
+      }
+    ],
+    "explanation": "Northern states moved against slavery, while the South kept and expanded it.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-12",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "difficulty": "hard",
+    "stem": "The ideal of republican motherhood that developed after the Revolution held that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "women should have the right to vote and hold office alongside men, just as citizens did.",
+        "isCorrect": false,
+        "explanation": "Republican motherhood did not extend political rights to women."
+      },
+      {
+        "label": "B",
+        "text": "women's main duty was to support the monarchy and the Church of England in the colonies.",
+        "isCorrect": false,
+        "explanation": "The idea concerned service to a republic, not a monarchy."
+      },
+      {
+        "label": "C",
+        "text": "women should have no education beyond household skills, since their role was in the home.",
+        "isCorrect": false,
+        "explanation": "The idea supported the education of girls and women."
+      },
+      {
+        "label": "D",
+        "text": "women could serve the republic by raising educated, virtuous citizens, supporting schooling for girls.",
+        "isCorrect": true,
+        "explanation": "The idea gave women a civic role through the family and encouraged more schooling."
+      }
+    ],
+    "explanation": "Republican motherhood gave women a civic role through raising citizens.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/revolution-and-ideals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-13",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "easy",
+    "stem": "A major weakness of the Articles of Confederation was that Congress",
+    "choices": [
+      {
+        "label": "A",
+        "text": "had the authority to draft citizens into the army whenever war required.",
+        "isCorrect": false,
+        "explanation": "Congress had to rely on state militias and requests for troops."
+      },
+      {
+        "label": "B",
+        "text": "held too much power over the states and could tax their citizens directly.",
+        "isCorrect": false,
+        "explanation": "The central government was weak, not too strong."
+      },
+      {
+        "label": "C",
+        "text": "lacked the power to levy taxes and to regulate trade between the states.",
+        "isCorrect": true,
+        "explanation": "Congress could request money from the states but could not tax or regulate commerce directly."
+      },
+      {
+        "label": "D",
+        "text": "was led by a strong president who could veto laws passed by the states.",
+        "isCorrect": false,
+        "explanation": "The Articles created no president."
+      }
+    ],
+    "explanation": "The Articles gave Congress too little power over taxes and trade.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-14",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "medium",
+    "stem": "The Northwest Ordinance of 1787 was significant because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "set up a process for admitting new states and banned slavery in the Northwest Territory.",
+        "isCorrect": true,
+        "explanation": "The ordinance created a path to statehood and prohibited slavery north of the Ohio River."
+      },
+      {
+        "label": "B",
+        "text": "created the first national bank and set up the federal system of taxation.",
+        "isCorrect": false,
+        "explanation": "The national bank was created in the 1790s."
+      },
+      {
+        "label": "C",
+        "text": "legalized slavery throughout the Northwest Territory and required the return of fugitives.",
+        "isCorrect": false,
+        "explanation": "It prohibited slavery there."
+      },
+      {
+        "label": "D",
+        "text": "gave Native peoples ownership of the territory and barred settlers from entering.",
+        "isCorrect": false,
+        "explanation": "The ordinance treated the land as open to American settlement."
+      }
+    ],
+    "explanation": "The ordinance set a precedent for orderly expansion and limited slavery in the territory.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-15",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "medium",
+    "stem": "> “We are taxed to pay the debts of the state, and when we cannot pay in hard money the sheriff takes our farms. The courts will not hear our petitions, and our families go hungry. We ask only that the government not ruin those who bore the war.”\n>\n> *Source: A Massachusetts farmer's petition, 1786*\n\nThe conditions described in the passage most directly contributed to which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Calls to strengthen the national government through a new constitution.",
+        "isCorrect": true,
+        "explanation": "Shays' Rebellion alarmed many leaders, who concluded that the Articles could not maintain order."
+      },
+      {
+        "label": "B",
+        "text": "The ratification of the Bill of Rights by the states in 1791.",
+        "isCorrect": false,
+        "explanation": "The Bill of Rights followed the Constitution in 1791."
+      },
+      {
+        "label": "C",
+        "text": "The passage of the Alien and Sedition Acts restricting criticism of the government.",
+        "isCorrect": false,
+        "explanation": "Those laws came in 1798."
+      },
+      {
+        "label": "D",
+        "text": "The Louisiana Purchase from France that doubled the size of the nation.",
+        "isCorrect": false,
+        "explanation": "That was a land purchase in 1803, unrelated to these grievances."
+      }
+    ],
+    "explanation": "Unrest such as Shays' Rebellion strengthened the argument for a stronger national government.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-16",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "medium",
+    "stem": "The Great Compromise at the Constitutional Convention resolved a dispute over",
+    "choices": [
+      {
+        "label": "A",
+        "text": "whether enslaved people would be counted for purposes of representation in the House.",
+        "isCorrect": false,
+        "explanation": "That was addressed in the Three-Fifths Compromise."
+      },
+      {
+        "label": "B",
+        "text": "how long the president could serve and whether he could be reelected by Congress.",
+        "isCorrect": false,
+        "explanation": "That was not the issue resolved by the Great Compromise."
+      },
+      {
+        "label": "C",
+        "text": "representation in Congress, by creating a House based on population and an equal-state Senate.",
+        "isCorrect": true,
+        "explanation": "Large and small states agreed to a two-house legislature that combined both principles."
+      },
+      {
+        "label": "D",
+        "text": "whether to include a bill of rights and what protections for speech it would contain.",
+        "isCorrect": false,
+        "explanation": "The Bill of Rights was added after ratification."
+      }
+    ],
+    "explanation": "The Great Compromise created a bicameral Congress.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-17",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "hard",
+    "stem": "> “A large republic, embracing many interests and parties, is less likely than a small one to be ruled by a single faction. The greater the variety of interests, the harder it is for a majority to unite to oppress the rest.”\n>\n> *Source: A Federalist essayist, 1787*\n\nThe argument in the passage was most often used to defend which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The sovereignty of the individual states under the Articles of Confederation.",
+        "isCorrect": false,
+        "explanation": "The argument supports a large republic, not small, sovereign states."
+      },
+      {
+        "label": "B",
+        "text": "A strong national government over a large and diverse republic of many interests.",
+        "isCorrect": true,
+        "explanation": "The author argues that a large republic is safer against faction, supporting the Constitution's stronger national government."
+      },
+      {
+        "label": "C",
+        "text": "A bill of rights added to the Constitution to protect individual liberties from Congress.",
+        "isCorrect": false,
+        "explanation": "The passage is about the size of the republic and factions, not a bill of rights."
+      },
+      {
+        "label": "D",
+        "text": "A direct democracy conducted in small town meetings, as in New England.",
+        "isCorrect": false,
+        "explanation": "The author argues that small republics are more at risk of faction."
+      }
+    ],
+    "explanation": "The argument supports a strong national government over a large republic.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-18",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "difficulty": "hard",
+    "stem": "The primary objection of the Anti-Federalists to the Constitution was that it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "created a central government that was too powerful and lacked a bill of rights.",
+        "isCorrect": true,
+        "explanation": "Anti-Federalists feared distant, concentrated power and demanded explicit protections for rights."
+      },
+      {
+        "label": "B",
+        "text": "gave the states too much power over national affairs, including taxes and the army.",
+        "isCorrect": false,
+        "explanation": "Anti-Federalists feared national power over the states."
+      },
+      {
+        "label": "C",
+        "text": "left the national government too weak to defend the country or raise money.",
+        "isCorrect": false,
+        "explanation": "That was the Federalist concern about the Articles."
+      },
+      {
+        "label": "D",
+        "text": "ended slavery in the new nation and gave Congress power to free enslaved people.",
+        "isCorrect": false,
+        "explanation": "The Constitution did not end slavery."
+      }
+    ],
+    "explanation": "Anti-Federalists feared a powerful central government without a bill of rights.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/articles-and-constitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-19",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "easy",
+    "stem": "Alexander Hamilton's financial program for the new nation included",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the elimination of all federal taxes in favor of voluntary state payments.",
+        "isCorrect": false,
+        "explanation": "Hamilton's plan relied on taxes, including tariffs and an excise tax."
+      },
+      {
+        "label": "B",
+        "text": "federal assumption of state debts and the creation of a national bank.",
+        "isCorrect": true,
+        "explanation": "Hamilton aimed to establish national credit and a stable financial system."
+      },
+      {
+        "label": "C",
+        "text": "a ban on all banking by the federal government and by the states.",
+        "isCorrect": false,
+        "explanation": "Hamilton favored a national bank."
+      },
+      {
+        "label": "D",
+        "text": "a default on the national debt to avoid paying wealthy bondholders.",
+        "isCorrect": false,
+        "explanation": "Hamilton wanted the debt honored to build credit."
+      }
+    ],
+    "explanation": "Hamilton's program assumed state debts and created a national bank.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-20",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "medium",
+    "stem": "The Democratic-Republican Party led by Jefferson and Madison opposed Federalist policies mainly because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "believed the United States should have a hereditary monarchy led by Washington.",
+        "isCorrect": false,
+        "explanation": "Jeffersonians favored republican government."
+      },
+      {
+        "label": "B",
+        "text": "favored a close alliance with Britain and its merchants against revolutionary France.",
+        "isCorrect": false,
+        "explanation": "Jeffersonians were generally more sympathetic to France."
+      },
+      {
+        "label": "C",
+        "text": "wanted a larger national bank, higher tariffs and a much stronger standing army.",
+        "isCorrect": false,
+        "explanation": "Those were Hamilton's positions."
+      },
+      {
+        "label": "D",
+        "text": "feared Hamilton's programs concentrated national power and favored commercial elites.",
+        "isCorrect": true,
+        "explanation": "Jeffersonians stressed limited national government and agrarian interests."
+      }
+    ],
+    "explanation": "Democratic-Republicans opposed concentrated national power and Hamilton's programs.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-21",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "medium",
+    "stem": "> “The spirit of party serves to distract the public councils and to inflame the passions of the people. As to foreign nations, let us extend our commercial relations but have as little political connection with them as possible, and let us steer clear of permanent alliances with any part of the world.”\n>\n> *Source: A retiring president's farewell address, 1796*\n\nWhich statement best describes the foreign policy advice in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The nation should aid republican revolutions around the world and in Europe.",
+        "isCorrect": false,
+        "explanation": "The author warns against political connections abroad."
+      },
+      {
+        "label": "B",
+        "text": "The nation should ally with France against Britain in the European war.",
+        "isCorrect": false,
+        "explanation": "The author advises against permanent alliances."
+      },
+      {
+        "label": "C",
+        "text": "The nation should trade widely but avoid permanent political alliances.",
+        "isCorrect": true,
+        "explanation": "The author recommends commerce with all nations and avoiding entangling alliances."
+      },
+      {
+        "label": "D",
+        "text": "The nation should expand its influence throughout Latin America.",
+        "isCorrect": false,
+        "explanation": "The passage does not call for expansion."
+      }
+    ],
+    "explanation": "The passage advises commercial ties without permanent alliances.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-22",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "medium",
+    "stem": "Jeffersonians criticized the Alien and Sedition Acts of 1798 because the laws",
+    "choices": [
+      {
+        "label": "A",
+        "text": "restricted criticism of the government and threatened free speech and press.",
+        "isCorrect": true,
+        "explanation": "The Sedition Act criminalized some criticism of the government, which opponents saw as a violation of the First Amendment."
+      },
+      {
+        "label": "B",
+        "text": "abolished the Federalist Party and banned all political organizations in the states.",
+        "isCorrect": false,
+        "explanation": "The acts targeted critics of the government, not the Federalists."
+      },
+      {
+        "label": "C",
+        "text": "authorized war against Britain over the impressment of American sailors.",
+        "isCorrect": false,
+        "explanation": "The acts did not authorize war against Britain."
+      },
+      {
+        "label": "D",
+        "text": "encouraged mass immigration from France by making citizenship easier to obtain.",
+        "isCorrect": false,
+        "explanation": "The acts made it harder for immigrants to become citizens."
+      }
+    ],
+    "explanation": "The acts were seen as an attack on free speech and press.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-23",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "hard",
+    "stem": "The Virginia and Kentucky Resolutions of 1798 and 1799 argued that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the president could set aside laws he considered unwise or unconstitutional.",
+        "isCorrect": false,
+        "explanation": "The resolutions concerned states' power, not presidential power."
+      },
+      {
+        "label": "B",
+        "text": "states should immediately secede from the union rather than obey the new federal laws.",
+        "isCorrect": false,
+        "explanation": "The resolutions did not call for secession."
+      },
+      {
+        "label": "C",
+        "text": "states could judge whether federal laws such as the Sedition Act were constitutional.",
+        "isCorrect": true,
+        "explanation": "Madison and Jefferson asserted state authority to judge federal overreach."
+      },
+      {
+        "label": "D",
+        "text": "the federal courts had the final say on all questions of constitutionality, not the states.",
+        "isCorrect": false,
+        "explanation": "The resolutions challenged national authority rather than affirming it."
+      }
+    ],
+    "explanation": "The resolutions claimed state power to judge federal laws.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-24",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "difficulty": "hard",
+    "stem": "The presidential election of 1800 is often called the Revolution of 1800 because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the election led to a civil war between the two parties in several states.",
+        "isCorrect": false,
+        "explanation": "The transfer of power was peaceful."
+      },
+      {
+        "label": "B",
+        "text": "a new constitution was adopted after the election to prevent a repeat of the tie.",
+        "isCorrect": false,
+        "explanation": "The Constitution remained in force."
+      },
+      {
+        "label": "C",
+        "text": "power passed peacefully from one political party to another after a bitter campaign.",
+        "isCorrect": true,
+        "explanation": "The Federalists yielded to the Democratic-Republicans without violence, demonstrating that the new system could transfer power peacefully."
+      },
+      {
+        "label": "D",
+        "text": "the Federalists seized control of the military to remain in office.",
+        "isCorrect": false,
+        "explanation": "The Federalists accepted the result."
+      }
+    ],
+    "explanation": "The election showed a peaceful transfer of power between parties.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/early-republic-politics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-25",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "medium",
+    "stem": "President Washington's Proclamation of Neutrality in 1793 was a response to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a Spanish invasion of Louisiana and the closing of the Mississippi to American farmers.",
+        "isCorrect": false,
+        "explanation": "Spain was not invading the United States."
+      },
+      {
+        "label": "B",
+        "text": "the outbreak of Shays' Rebellion and widespread fear of unrest in the western counties.",
+        "isCorrect": false,
+        "explanation": "Shays' Rebellion occurred in 1786 and 1787."
+      },
+      {
+        "label": "C",
+        "text": "a request from several Native nations for an alliance against British forts.",
+        "isCorrect": false,
+        "explanation": "The proclamation concerned war among European powers."
+      },
+      {
+        "label": "D",
+        "text": "the war between Britain and France and American divisions over which side to support.",
+        "isCorrect": true,
+        "explanation": "The proclamation declared that the United States would not take sides."
+      }
+    ],
+    "explanation": "The proclamation kept the United States neutral in the European war.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-26",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "medium",
+    "stem": "Jay's Treaty of 1795 was controversial because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "it settled disputes with Britain but was seen as favoring Britain and ignoring impressment.",
+        "isCorrect": true,
+        "explanation": "The treaty avoided war but was seen as favoring Britain."
+      },
+      {
+        "label": "B",
+        "text": "it repealed the Alien and Sedition Acts and ended all restrictions on the American press.",
+        "isCorrect": false,
+        "explanation": "Those acts were passed in 1798, after the treaty."
+      },
+      {
+        "label": "C",
+        "text": "it declared war on Britain over the impressment of American sailors and the western forts.",
+        "isCorrect": false,
+        "explanation": "The treaty helped avoid war."
+      },
+      {
+        "label": "D",
+        "text": "it gave the United States the Louisiana Territory in exchange for a large payment to France.",
+        "isCorrect": false,
+        "explanation": "The United States acquired Louisiana from France in 1803."
+      }
+    ],
+    "explanation": "Jay's Treaty avoided war with Britain but angered many Americans.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-27",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "medium",
+    "stem": "> “We have agreed to give up the lands north of the river and to keep the peace. We do not give them gladly. Our towns are burned and our young men have fallen, and we cannot stand against so many.”\n>\n> *Source: A Native leader, 1795*\n\nThe passage best reflects which of the following developments?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A voluntary sale of Native land to the United States in return for a fair payment in goods.",
+        "isCorrect": false,
+        "explanation": "The speaker says the land is not given gladly."
+      },
+      {
+        "label": "B",
+        "text": "The success of a Native confederacy in stopping American expansion into the Ohio Valley.",
+        "isCorrect": false,
+        "explanation": "The speaker says his people cannot stand against the Americans."
+      },
+      {
+        "label": "C",
+        "text": "The loss of Native land after military defeat as the United States expanded into Ohio.",
+        "isCorrect": true,
+        "explanation": "The speaker describes giving up land because of military defeat, as in the Treaty of Greenville of 1795."
+      },
+      {
+        "label": "D",
+        "text": "Native nations gaining recognition as independent allies of the United States.",
+        "isCorrect": false,
+        "explanation": "The speaker describes a forced concession."
+      }
+    ],
+    "explanation": "The passage reflects forced land cessions after military defeat in the Ohio Valley.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-28",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "hard",
+    "stem": "Pinckney's Treaty of 1795 benefited western farmers primarily because Spain",
+    "choices": [
+      {
+        "label": "A",
+        "text": "granted the United States control of Texas and the Spanish lands west of the river.",
+        "isCorrect": false,
+        "explanation": "Texas remained part of the Spanish empire."
+      },
+      {
+        "label": "B",
+        "text": "agreed to let Americans navigate the Mississippi River and store goods at New Orleans.",
+        "isCorrect": true,
+        "explanation": "Western farmers depended on the Mississippi to ship goods to market."
+      },
+      {
+        "label": "C",
+        "text": "closed the Mississippi River to American shipping and ended the right to store goods.",
+        "isCorrect": false,
+        "explanation": "The treaty opened the river."
+      },
+      {
+        "label": "D",
+        "text": "ceded Florida to the United States in return for American neutrality in its war with France.",
+        "isCorrect": false,
+        "explanation": "Spain did not cede Florida until 1819."
+      }
+    ],
+    "explanation": "Pinckney's Treaty gave Americans access to the Mississippi and New Orleans.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-29",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "hard",
+    "stem": "The XYZ Affair of 1797-1798 contributed to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a declaration of war against Spain over its claims in Florida and Louisiana.",
+        "isCorrect": false,
+        "explanation": "The affair involved France, not Spain."
+      },
+      {
+        "label": "B",
+        "text": "an undeclared naval conflict with France and anti-French feeling in the United States.",
+        "isCorrect": true,
+        "explanation": "French demands for bribes angered Americans and led to the Quasi-War."
+      },
+      {
+        "label": "C",
+        "text": "an alliance between the United States and France against the British in the Caribbean.",
+        "isCorrect": false,
+        "explanation": "The affair pushed the countries toward conflict."
+      },
+      {
+        "label": "D",
+        "text": "the purchase of Louisiana from France as a peace offering to end the dispute.",
+        "isCorrect": false,
+        "explanation": "The purchase came later, in 1803."
+      }
+    ],
+    "explanation": "The XYZ Affair led to the Quasi-War and anti-French sentiment.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-mcq-30",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "foreign-affairs-and-frontier",
+    "difficulty": "medium",
+    "stem": "Which development most encouraged American settlement west of the Appalachian Mountains in the 1780s and 1790s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A ban on all western migration written into the Constitution and the Land Ordinance.",
+        "isCorrect": false,
+        "explanation": "The Constitution did not ban migration."
+      },
+      {
+        "label": "B",
+        "text": "Policies that surveyed and sold land, along with military campaigns that took Native territory.",
+        "isCorrect": true,
+        "explanation": "The Land Ordinance and Northwest Ordinance, along with treaties after military defeat, opened the Ohio Valley to settlers."
+      },
+      {
+        "label": "C",
+        "text": "Spanish control of the Ohio River and the right to trade freely along it for settlers.",
+        "isCorrect": false,
+        "explanation": "Spain did not control the Ohio region."
+      },
+      {
+        "label": "D",
+        "text": "Recognition by Congress of Native nations' ownership of the Ohio Valley and their land.",
+        "isCorrect": false,
+        "explanation": "Congress treated Native land as available for American settlement."
+      }
+    ],
+    "explanation": "Land policy and military pressure on Native peoples encouraged western settlement.",
+    "conceptLink": "ap-us-history/unit-3-revolution-and-new-nation/foreign-affairs-and-frontier",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "slug": "unit-3-revolution-and-new-nation",
+  "order": 3,
+  "name": "The Revolution and the New Nation (1754-1800)",
+  "weightingMin": 10,
+  "weightingMax": 17,
+  "topics": [
+    {
+      "slug": "imperial-crisis",
+      "order": 1,
+      "name": "The Imperial Crisis"
+    },
+    {
+      "slug": "revolution-and-ideals",
+      "order": 2,
+      "name": "Independence and Revolutionary Ideals"
+    },
+    {
+      "slug": "articles-and-constitution",
+      "order": 3,
+      "name": "From the Articles to the Constitution"
+    },
+    {
+      "slug": "early-republic-politics",
+      "order": 4,
+      "name": "Parties and Politics in the Early Republic"
+    },
+    {
+      "slug": "foreign-affairs-and-frontier",
+      "order": 5,
+      "name": "Foreign Affairs and the Frontier"
+    }
+  ]
+}

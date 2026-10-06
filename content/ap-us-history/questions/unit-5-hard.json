@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-ush-u5-mcq-31",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "hard",
+    "stem": "> “The president says Mexico shed American blood on American soil, but the ground where our soldiers were attacked was disputed. This is a war for conquest, and its fruit will be more slave states.”\n>\n> *Source: A Whig congressman, 1847*\n\nThe argument in the passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Northern opposition to the war based on the belief that it was provoked to expand slavery.",
+        "isCorrect": true,
+        "explanation": "The speaker challenges the president's justification and links the war to the extension of slavery."
+      },
+      {
+        "label": "B",
+        "text": "Southern support for annexing all of Mexico in order to add many more slave states.",
+        "isCorrect": false,
+        "explanation": "The speaker opposes the war and fears slave states, a Northern argument."
+      },
+      {
+        "label": "C",
+        "text": "Approval of the president's reasons for going to war and for taking Mexican lands.",
+        "isCorrect": false,
+        "explanation": "The speaker disputes the president's claims."
+      },
+      {
+        "label": "D",
+        "text": "Support for popular sovereignty as a solution to the slavery question in the new territories.",
+        "isCorrect": false,
+        "explanation": "The passage criticizes the war and does not propose popular sovereignty."
+      }
+    ],
+    "explanation": "The speaker represents Northern opposition to a war seen as aimed at expanding slavery.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-32",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the effect of the Treaty of Guadalupe Hidalgo and American expansion on Mexican residents of the new territories?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The treaty promised citizenship and property rights, but many Mexican Americans lost land.",
+        "isCorrect": true,
+        "explanation": "Their formal protections were often not honored in practice."
+      },
+      {
+        "label": "B",
+        "text": "The United States deported Mexican residents from California and the rest of the Southwest.",
+        "isCorrect": false,
+        "explanation": "Mexican residents were not generally deported."
+      },
+      {
+        "label": "C",
+        "text": "All Mexican residents moved to Mexico after the treaty and abandoned all of their land.",
+        "isCorrect": false,
+        "explanation": "Many remained and became American citizens."
+      },
+      {
+        "label": "D",
+        "text": "The treaty gave Mexican residents full political control of the new territories.",
+        "isCorrect": false,
+        "explanation": "Control passed to the United States and to Anglo settlers."
+      }
+    ],
+    "explanation": "Promised protections were often not honored, and many lost land and influence.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-33",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "hard",
+    "stem": "Which statement best explains the role of racial ideas in the debate over Manifest Destiny?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The debate was entirely about economic costs and military risks, with no mention of race at all by either side.",
+        "isCorrect": false,
+        "explanation": "Racial arguments were prominent."
+      },
+      {
+        "label": "B",
+        "text": "Supporters cited Anglo-Saxon superiority, and some opponents objected to absorbing non-white populations.",
+        "isCorrect": true,
+        "explanation": "Racial assumptions shaped arguments on both sides of the expansion debate."
+      },
+      {
+        "label": "C",
+        "text": "Both supporters and opponents argued that all races were equal and should share political power.",
+        "isCorrect": false,
+        "explanation": "Racial hierarchy was assumed by many on both sides."
+      },
+      {
+        "label": "D",
+        "text": "Racial ideas played no role because the western territories were uninhabited by any settlers.",
+        "isCorrect": false,
+        "explanation": "The territories were inhabited by Native peoples and Mexicans."
+      }
+    ],
+    "explanation": "Racial ideas shaped arguments for and against expansion.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-34",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "hard",
+    "stem": "Harriet Beecher Stowe's novel Uncle Tom's Cabin (1852) most directly",
+    "choices": [
+      {
+        "label": "A",
+        "text": "won broad approval in the South as an accurate and balanced portrayal of plantation life and slavery.",
+        "isCorrect": false,
+        "explanation": "Many Southerners rejected it."
+      },
+      {
+        "label": "B",
+        "text": "persuaded Congress to repeal the Fugitive Slave Act in 1853 and to ban slavery in Kansas.",
+        "isCorrect": false,
+        "explanation": "The law was not repealed until 1864."
+      },
+      {
+        "label": "C",
+        "text": "increased northern antislavery feeling, while many Southerners condemned it as a distortion.",
+        "isCorrect": true,
+        "explanation": "The novel's wide readership deepened sectional feeling."
+      },
+      {
+        "label": "D",
+        "text": "caused southern states to secede in 1852 and to form a new national government.",
+        "isCorrect": false,
+        "explanation": "Secession began in 1860."
+      }
+    ],
+    "explanation": "The novel increased northern antislavery sentiment and southern resentment.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-35",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "hard",
+    "stem": "Which factor best explains the collapse of the Whig Party in the 1850s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Whigs were united in support of the Republican Party from its start and joined it as a single body in 1854.",
+        "isCorrect": false,
+        "explanation": "Whigs divided, with many northern Whigs joining the Republicans."
+      },
+      {
+        "label": "B",
+        "text": "Sectional divisions over slavery after the Kansas-Nebraska Act split northern and southern Whigs.",
+        "isCorrect": true,
+        "explanation": "The party could not hold together as the slavery issue dominated national politics."
+      },
+      {
+        "label": "C",
+        "text": "Whigs won so many elections that their opponents disappeared and the party then dissolved.",
+        "isCorrect": false,
+        "explanation": "Whigs were declining."
+      },
+      {
+        "label": "D",
+        "text": "The party was banned by the Compromise of 1850 and its leaders barred from public office.",
+        "isCorrect": false,
+        "explanation": "The compromise did not ban any party."
+      }
+    ],
+    "explanation": "Sectional conflict over slavery destroyed the Whig Party.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-36",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "hard",
+    "stem": "John Brown's raid on Harpers Ferry in 1859 most directly increased sectional tension because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "many Southerners feared northern support for slave revolts, while some northerners hailed Brown.",
+        "isCorrect": true,
+        "explanation": "The raid and its aftermath deepened mutual distrust."
+      },
+      {
+        "label": "B",
+        "text": "it led to the election of Stephen Douglas as president in 1860 by a wide margin.",
+        "isCorrect": false,
+        "explanation": "Douglas lost the election of 1860."
+      },
+      {
+        "label": "C",
+        "text": "it ended the Fugitive Slave Act and freed every person who had been captured under its terms.",
+        "isCorrect": false,
+        "explanation": "The raid had no such effect."
+      },
+      {
+        "label": "D",
+        "text": "it caused Congress to pass the Kansas-Nebraska Act and to repeal the Missouri Compromise line in 1854.",
+        "isCorrect": false,
+        "explanation": "That act was passed in 1854."
+      }
+    ],
+    "explanation": "Brown's raid deepened fear in the South and sympathy for him in parts of the North.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-37",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "hard",
+    "stem": "> “By 1864 the Union had adopted a strategy that targeted the South's economic resources and the morale of its civilians as well as its armies.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sherman's march through Georgia destroyed railroads, farms and supplies.",
+        "isCorrect": true,
+        "explanation": "The march deliberately damaged the Confederacy's economic capacity and civilian morale."
+      },
+      {
+        "label": "B",
+        "text": "The issuing of the Emancipation Proclamation in 1863 freeing enslaved people.",
+        "isCorrect": false,
+        "explanation": "That changed war aims but was not a strategy of economic destruction."
+      },
+      {
+        "label": "C",
+        "text": "The Union victory at Antietam in 1862, which ended Lee's invasion of Maryland.",
+        "isCorrect": false,
+        "explanation": "Antietam was a major battle, not a strategy aimed at civilian resources."
+      },
+      {
+        "label": "D",
+        "text": "Lincoln's address at Gettysburg in 1863 about the purpose of the war.",
+        "isCorrect": false,
+        "explanation": "The address was a speech about the war's purpose."
+      }
+    ],
+    "explanation": "Sherman's march is the clearest example of targeting economic resources and morale.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-38",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "hard",
+    "stem": "Which best explains the Confederate government's difficulty in waging war?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A larger industrial base than the Union, which let it outproduce the North in weapons and ships.",
+        "isCorrect": false,
+        "explanation": "The South had less industry than the North."
+      },
+      {
+        "label": "B",
+        "text": "States' rights commitments hindered centralized control, and shortages weakened the home front.",
+        "isCorrect": true,
+        "explanation": "The Confederacy faced political and economic obstacles in coordinating the war effort."
+      },
+      {
+        "label": "C",
+        "text": "A shortage of soldiers willing to fight, since most Southerners opposed the war from the start.",
+        "isCorrect": false,
+        "explanation": "The main issues concerned resources and organization, not a lack of volunteers early in the war."
+      },
+      {
+        "label": "D",
+        "text": "Complete control of the Union's railroads, which let it move troops faster than the North.",
+        "isCorrect": false,
+        "explanation": "The Union held the larger railroad network."
+      }
+    ],
+    "explanation": "States' rights commitments and economic shortages complicated the Confederate war effort.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-39",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "hard",
+    "stem": "The New York City draft riots of 1863 illustrate",
+    "choices": [
+      {
+        "label": "A",
+        "text": "universal northern enthusiasm for the draft and for the emancipation of enslaved people across the Union.",
+        "isCorrect": false,
+        "explanation": "The riots show strong resistance."
+      },
+      {
+        "label": "B",
+        "text": "northern resentment of a draft that let wealthy men pay for substitutes, along with racial tensions.",
+        "isCorrect": true,
+        "explanation": "Anger over class inequalities in the draft and hostility toward Black residents fueled the violence."
+      },
+      {
+        "label": "C",
+        "text": "support for the Emancipation Proclamation among New York's working class and immigrants.",
+        "isCorrect": false,
+        "explanation": "Many rioters resented the war's turn toward emancipation."
+      },
+      {
+        "label": "D",
+        "text": "a Confederate invasion of New York that was repelled by militias and federal troops.",
+        "isCorrect": false,
+        "explanation": "The riots were a domestic disturbance."
+      }
+    ],
+    "explanation": "The riots reflected class and racial tensions over the draft in the North.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-40",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "hard",
+    "stem": "> “Freedpeople were not passive recipients of rights handed down from Washington. They built churches and schools, organized politically, and pressed for land and suffrage.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Independent Black churches and schools and the election of Black officials such as Hiram Revels.",
+        "isCorrect": true,
+        "explanation": "These developments show freedpeople acting on their own initiative."
+      },
+      {
+        "label": "B",
+        "text": "The passage of the Black Codes, which restricted the movement and labor of Black Southerners.",
+        "isCorrect": false,
+        "explanation": "Those laws restricted Black people and show white efforts to control them."
+      },
+      {
+        "label": "C",
+        "text": "The impeachment of Andrew Johnson by the House of Representatives after his dispute with Congress.",
+        "isCorrect": false,
+        "explanation": "That concerned a political struggle in Washington."
+      },
+      {
+        "label": "D",
+        "text": "President Johnson's lenient pardons for former Confederates and wealthy plantation owners.",
+        "isCorrect": false,
+        "explanation": "That concerns white Southerners and federal policy, not freedpeople's initiative."
+      }
+    ],
+    "explanation": "Independent institutions and Black officeholders show freedpeople's initiative.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-41",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "hard",
+    "stem": "The Fifteenth Amendment (1870) divided the women's rights movement because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "guaranteed Black men the vote but not women, leading leaders such as Stanton and Anthony to oppose it.",
+        "isCorrect": true,
+        "explanation": "Some activists felt women's rights had been set aside."
+      },
+      {
+        "label": "B",
+        "text": "gave women the right to vote and so ended the suffrage movement in the northern states.",
+        "isCorrect": false,
+        "explanation": "Women did not gain the vote until 1920."
+      },
+      {
+        "label": "C",
+        "text": "ended the women's rights movement by granting its main goal and winning universal suffrage for all citizens.",
+        "isCorrect": false,
+        "explanation": "The movement continued."
+      },
+      {
+        "label": "D",
+        "text": "banned Black men from voting in the South and left voting rules elsewhere to the states.",
+        "isCorrect": false,
+        "explanation": "It protected Black men's voting rights."
+      }
+    ],
+    "explanation": "The amendment's omission of women split the women's rights movement.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-42",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "hard",
+    "stem": "The Enforcement Acts of 1870 and 1871 were passed in order to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "suppress violence by groups such as the Ku Klux Klan and protect Black voting rights.",
+        "isCorrect": true,
+        "explanation": "Congress authorized federal action against organized terrorism aimed at Black voters and officials."
+      },
+      {
+        "label": "B",
+        "text": "grant land to freedpeople and give each family a plot of forty acres and a mule.",
+        "isCorrect": false,
+        "explanation": "The acts did not distribute land."
+      },
+      {
+        "label": "C",
+        "text": "end military supervision of the South and return power to the state governments.",
+        "isCorrect": false,
+        "explanation": "The acts expanded federal enforcement."
+      },
+      {
+        "label": "D",
+        "text": "exempt Southern states from the Fourteenth Amendment in return for their readmission.",
+        "isCorrect": false,
+        "explanation": "The acts aimed to enforce the amendments."
+      }
+    ],
+    "explanation": "The Enforcement Acts aimed to suppress the Klan and protect voting rights.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-43",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "hard",
+    "stem": "> “They came at night, masked, and told us that if we voted we would be killed. Many of our people stayed home on election day. The sheriff would do nothing, and no one was punished.”\n>\n> *Source: A freedman's testimony to a congressional committee, 1870s*\n\nThe testimony best illustrates which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Widespread Black indifference to voting after the amendments had been ratified.",
+        "isCorrect": false,
+        "explanation": "The witness describes people being prevented by threats."
+      },
+      {
+        "label": "B",
+        "text": "The effectiveness of local law enforcement in protecting Black voters during elections.",
+        "isCorrect": false,
+        "explanation": "The witness says the sheriff did nothing."
+      },
+      {
+        "label": "C",
+        "text": "How violence and intimidation undermined Black political rights despite the amendments.",
+        "isCorrect": true,
+        "explanation": "The witness describes terror used to keep Black citizens from voting and the failure of local authorities to protect them."
+      },
+      {
+        "label": "D",
+        "text": "The success of federal troops in ending political violence in the Southern states.",
+        "isCorrect": false,
+        "explanation": "The testimony describes continuing violence."
+      }
+    ],
+    "explanation": "The testimony shows that terror undermined Black voting rights.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-44",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "hard",
+    "stem": "Which best explains why sharecropping persisted in the South after the Civil War?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Freedpeople lacked land and capital, planters lacked cash for wages, and credit created a cycle of debt.",
+        "isCorrect": true,
+        "explanation": "Poverty and credit arrangements trapped many farmers in the system."
+      },
+      {
+        "label": "B",
+        "text": "Former enslaved people had been given large plots of land by the Freedmen's Bureau and then sold them to planters.",
+        "isCorrect": false,
+        "explanation": "Most freedpeople did not receive land."
+      },
+      {
+        "label": "C",
+        "text": "Southern planters had switched to using farm machines and no longer needed many workers.",
+        "isCorrect": false,
+        "explanation": "Southern agriculture remained labor-intensive."
+      },
+      {
+        "label": "D",
+        "text": "The federal government required sharecropping in the Reconstruction Acts of 1867 and 1868.",
+        "isCorrect": false,
+        "explanation": "No federal law required it."
+      }
+    ],
+    "explanation": "Lack of land and capital and a cycle of debt kept sharecropping in place.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-45",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "hard",
+    "stem": "After Redeemer Democrats regained control of Southern state governments, they generally",
+    "choices": [
+      {
+        "label": "A",
+        "text": "asked the federal government to send more troops to protect their new state governments.",
+        "isCorrect": false,
+        "explanation": "Redeemers opposed federal intervention."
+      },
+      {
+        "label": "B",
+        "text": "redistributed land to freedpeople and gave them tax breaks to start independent farms.",
+        "isCorrect": false,
+        "explanation": "Land redistribution was not carried out."
+      },
+      {
+        "label": "C",
+        "text": "expanded public education and protected Black voting rights in the Southern states.",
+        "isCorrect": false,
+        "explanation": "They reduced spending on schools and limited Black rights."
+      },
+      {
+        "label": "D",
+        "text": "cut taxes and spending, including for schools, and limited Black rights.",
+        "isCorrect": true,
+        "explanation": "Redeemer governments reversed many Reconstruction-era policies."
+      }
+    ],
+    "explanation": "Redeemer governments cut spending and restricted Black rights.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  }
+]

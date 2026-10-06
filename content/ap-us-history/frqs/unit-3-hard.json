@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ap-ush-u3-frq-4",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "early-republic-politics",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The Constitution grants no power to charter a bank. If Congress may do whatever it thinks useful, then no limit remains on its power, and the states become mere provinces of a single government.”\n>\n> *Source: A Virginia congressman's speech, 1791*\n\n**a)** Identify ONE argument made in the excerpt about how the Constitution should be interpreted.\n\n**b)** Explain ONE way in which supporters of the national bank, such as Alexander Hamilton, answered this argument.\n\n**c)** Explain ONE way in which debates like this one contributed to the development of political parties in the 1790s.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies the argument that Congress may exercise only powers specifically granted in the Constitution (strict interpretation), or that a broad reading would remove limits on federal power"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains that Hamilton argued for implied powers under the Necessary and Proper Clause, so Congress could create a bank to carry out its financial responsibilities"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains that disagreement over the powers of the national government, the bank and Hamilton's financial program divided supporters into Federalists and Democratic-Republicans"
+      }
+    ],
+    "sampleResponse": "a) The speaker argues that Congress may do only what the Constitution specifically allows and that a bank is not among its powers, since a broad reading would leave Congress without limits.\nb) Hamilton argued that the Necessary and Proper Clause gave Congress implied powers to take actions, such as creating a bank, that helped carry out its authority over taxes, debt and commerce.\nc) Disputes over strict versus broad interpretation of the Constitution and over Hamilton's financial program divided leaders into Federalists, who favored a stronger national government, and Democratic-Republicans, who favored limited national power.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-frq-5",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "type": "LEQ",
+    "prompt": "**Long Essay Question**\n\nEvaluate the extent to which the American Revolution represented a break from colonial political and social traditions in the period 1763 to 1800.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Thesis: Presents a defensible thesis that responds to the prompt and evaluates the extent to which the Revolution broke with colonial traditions"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Contextualization: Places the topic in a broader context, such as British imperial reform after 1763, the colonial tradition of self-government or Enlightenment ideas"
+      },
+      {
+        "id": "r3",
+        "points": 2,
+        "description": "Evidence: Provides at least two specific, accurate pieces of evidence relevant to the prompt (1 point for addressing the topic with evidence, 2nd point for using specific evidence to support the argument)"
+      },
+      {
+        "id": "r4",
+        "points": 2,
+        "description": "Analysis and reasoning: Uses continuity and change over time to structure the argument (1 point), and demonstrates complex understanding, such as showing that the Revolution changed politics and religion more than slavery or the status of women (2nd point)"
+      }
+    ],
+    "sampleResponse": "A strong response states a defensible thesis, for example that the Revolution broke sharply with monarchy and aristocratic privilege in politics while leaving much of colonial social life, especially slavery and the limited rights of women, largely intact. It places the topic in the context of British imperial reform after 1763 and Enlightenment thought, uses specific evidence (republican state constitutions, the Declaration of Independence, disestablishment of churches, the Constitution, northern emancipation laws, the Three-Fifths Compromise, republican motherhood), and uses continuity and change over time to weigh the Revolution's radical and conservative effects.",
+    "reviewed": false
+  }
+]

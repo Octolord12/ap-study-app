@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-ush-u5-mcq-1",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "easy",
+    "stem": "The term Manifest Destiny, popular in the 1840s, expressed the belief that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the federal government should prohibit westward settlement beyond the Mississippi.",
+        "isCorrect": false,
+        "explanation": "Manifest Destiny supported settlement."
+      },
+      {
+        "label": "B",
+        "text": "the United States should avoid all foreign entanglements and stay out of European affairs.",
+        "isCorrect": false,
+        "explanation": "That describes neutrality and isolationist advice, not Manifest Destiny."
+      },
+      {
+        "label": "C",
+        "text": "the United States was destined to expand across the continent.",
+        "isCorrect": true,
+        "explanation": "Supporters argued that American expansion westward was natural and inevitable."
+      },
+      {
+        "label": "D",
+        "text": "the western territories should remain under Native control and be closed to settlers.",
+        "isCorrect": false,
+        "explanation": "Manifest Destiny supported American expansion into Native lands."
+      }
+    ],
+    "explanation": "Manifest Destiny was the belief in inevitable continental expansion.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-2",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "medium",
+    "stem": "The annexation of Texas in 1845 heightened sectional tensions primarily because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "many northerners feared it would add a large slave state and risk war with Mexico.",
+        "isCorrect": true,
+        "explanation": "Texas was a slaveholding republic, and its annexation worried opponents of slavery's expansion and angered Mexico."
+      },
+      {
+        "label": "B",
+        "text": "Texas had banned slavery, and many Southerners objected to joining a free territory.",
+        "isCorrect": false,
+        "explanation": "Texas permitted slavery."
+      },
+      {
+        "label": "C",
+        "text": "Britain threatened to annex Texas as a free state and block American expansion.",
+        "isCorrect": false,
+        "explanation": "Annexation was debated in the United States over slavery and war with Mexico."
+      },
+      {
+        "label": "D",
+        "text": "Texas was already a Union state, and the dispute was only over its boundary.",
+        "isCorrect": false,
+        "explanation": "Texas was an independent republic before annexation."
+      }
+    ],
+    "explanation": "Texas annexation raised fears of expanding slavery and led to war with Mexico.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-3",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "medium",
+    "stem": "> “No territory taken from Mexico in this war shall ever be open to slavery.”\n>\n> *Source: A congressman's proposed amendment to a war funding bill, 1846*\n\nWhich of the following was the most significant effect of the proposal described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It intensified the debate over slavery's expansion and divided Congress by region, not party.",
+        "isCorrect": true,
+        "explanation": "Northerners of both parties supported the proviso, while Southerners opposed it."
+      },
+      {
+        "label": "B",
+        "text": "It ended the war with Mexico by setting out the terms that Mexican leaders had to accept.",
+        "isCorrect": false,
+        "explanation": "The war continued until 1848."
+      },
+      {
+        "label": "C",
+        "text": "It became law after Senate approval and banned slavery in all territory acquired from Mexico.",
+        "isCorrect": false,
+        "explanation": "The House passed it more than once but the Senate did not."
+      },
+      {
+        "label": "D",
+        "text": "It resolved the status of slavery in Texas and ended the dispute over its annexation in 1845.",
+        "isCorrect": false,
+        "explanation": "The proposal concerned territory that might be taken from Mexico in the war."
+      }
+    ],
+    "explanation": "The Wilmot Proviso intensified the sectional debate over slavery in new territories.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-4",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "medium",
+    "stem": "Under the Treaty of Guadalupe Hidalgo (1848), Mexico",
+    "choices": [
+      {
+        "label": "A",
+        "text": "was annexed entirely by the United States, which absorbed the whole country.",
+        "isCorrect": false,
+        "explanation": "The United States did not annex all of Mexico."
+      },
+      {
+        "label": "B",
+        "text": "ceded California and much of the Southwest to the United States for a payment.",
+        "isCorrect": true,
+        "explanation": "The Mexican Cession greatly increased the size of the United States."
+      },
+      {
+        "label": "C",
+        "text": "agreed to pay damages to the United States for losses suffered in the border war.",
+        "isCorrect": false,
+        "explanation": "The United States paid Mexico."
+      },
+      {
+        "label": "D",
+        "text": "kept California and the Southwest but formally gave Texas to the United States.",
+        "isCorrect": false,
+        "explanation": "California was part of the cession."
+      }
+    ],
+    "explanation": "The treaty gave the United States the Mexican Cession.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-5",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "hard",
+    "stem": "The California Gold Rush that began in 1848 and 1849 most directly led to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "an immediate war with Britain over competing claims to the California gold fields.",
+        "isCorrect": false,
+        "explanation": "The gold rush did not cause a war with Britain."
+      },
+      {
+        "label": "B",
+        "text": "the end of the debate over slavery in the territories as settlers focused on gold instead of politics and statehood.",
+        "isCorrect": false,
+        "explanation": "The gold rush intensified the debate."
+      },
+      {
+        "label": "C",
+        "text": "a decline in westward migration as disappointed miners returned to the eastern states.",
+        "isCorrect": false,
+        "explanation": "Migration to the West increased."
+      },
+      {
+        "label": "D",
+        "text": "rapid growth that led California to seek statehood as a free state, intensifying the slavery debate.",
+        "isCorrect": true,
+        "explanation": "California's rapid growth forced Congress to decide whether to admit it as a free state."
+      }
+    ],
+    "explanation": "California's rapid growth brought the slavery question to a head.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-6",
+    "unit": "unit-5-civil-war-era",
+    "topic": "manifest-destiny",
+    "difficulty": "medium",
+    "stem": "The Oregon Treaty of 1846 between the United States and Britain",
+    "choices": [
+      {
+        "label": "A",
+        "text": "gave the United States all of Oregon as far north as 54 degrees 40 minutes.",
+        "isCorrect": false,
+        "explanation": "The slogan about that line was not achieved."
+      },
+      {
+        "label": "B",
+        "text": "divided the Oregon Country with Britain at the 49th parallel.",
+        "isCorrect": true,
+        "explanation": "The treaty settled the boundary peacefully."
+      },
+      {
+        "label": "C",
+        "text": "annexed Texas and settled its disputed boundary with Mexico.",
+        "isCorrect": false,
+        "explanation": "Texas was annexed in 1845, not in this treaty."
+      },
+      {
+        "label": "D",
+        "text": "gave Britain control of present-day Washington State and all of Oregon.",
+        "isCorrect": false,
+        "explanation": "The 49th parallel boundary placed that region in the United States."
+      }
+    ],
+    "explanation": "The Oregon Treaty set the boundary at the 49th parallel.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/manifest-destiny",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-7",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "easy",
+    "stem": "The Fugitive Slave Act, part of the Compromise of 1850, angered many northerners because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "banned slavery in all western territories and ended the slave trade in the capital.",
+        "isCorrect": false,
+        "explanation": "The act did not ban slavery in the territories."
+      },
+      {
+        "label": "B",
+        "text": "freed all enslaved people who reached the North and guaranteed them homes and land.",
+        "isCorrect": false,
+        "explanation": "The act did the opposite."
+      },
+      {
+        "label": "C",
+        "text": "ended the slave trade in the Deep South and compensated owners in the border states for their losses.",
+        "isCorrect": false,
+        "explanation": "The act concerned the return of fugitives."
+      },
+      {
+        "label": "D",
+        "text": "required citizens to help capture escaped enslaved people and denied them a jury trial.",
+        "isCorrect": true,
+        "explanation": "The law forced northerners to take part in enforcing slavery and gave accused people few protections."
+      }
+    ],
+    "explanation": "The Fugitive Slave Act forced northerners to help enforce slavery and denied fugitives due process.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-8",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "medium",
+    "stem": "The Kansas-Nebraska Act of 1854 was controversial because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "repealed the Missouri Compromise's ban on slavery in the northern territories.",
+        "isCorrect": true,
+        "explanation": "The act opened the possibility that slavery could spread into territories formerly closed to it."
+      },
+      {
+        "label": "B",
+        "text": "admitted California as a free state and banned slavery in the District of Columbia.",
+        "isCorrect": false,
+        "explanation": "California's admission was part of the Compromise of 1850."
+      },
+      {
+        "label": "C",
+        "text": "ended the Fugitive Slave Act and freed those who had been returned under its terms.",
+        "isCorrect": false,
+        "explanation": "The act did not affect the Fugitive Slave Act."
+      },
+      {
+        "label": "D",
+        "text": "banned slavery in the Louisiana Purchase north of the Missouri border and in Kansas.",
+        "isCorrect": false,
+        "explanation": "The act did the opposite by removing the ban."
+      }
+    ],
+    "explanation": "The act overturned the Missouri Compromise line and fueled sectional conflict.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-9",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "medium",
+    "stem": "> “Persons descended from Africans held in slavery are not citizens of the United States and cannot sue in its courts. Congress has no power to prohibit slavery in the territories, since enslaved people are property protected by the Constitution.”\n>\n> *Source: A Supreme Court opinion, 1857*\n\nWhich of the following was a result of the decision described in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It settled the dispute over slavery in the territories and calmed both sections of the nation.",
+        "isCorrect": false,
+        "explanation": "It deepened the conflict."
+      },
+      {
+        "label": "B",
+        "text": "It banned slavery in Kansas and ordered the proslavery settlers to leave the territory.",
+        "isCorrect": false,
+        "explanation": "The ruling opened the territories to slavery."
+      },
+      {
+        "label": "C",
+        "text": "It angered northerners and helped the Republicans by opening the territories to slavery.",
+        "isCorrect": true,
+        "explanation": "The ruling struck at the Republican goal of stopping slavery's expansion and increased sectional anger."
+      },
+      {
+        "label": "D",
+        "text": "It had no effect on national politics, since both parties chose to ignore the ruling.",
+        "isCorrect": false,
+        "explanation": "The decision was a major political event."
+      }
+    ],
+    "explanation": "The Dred Scott decision inflamed sectional tensions and helped the Republicans.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-10",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "medium",
+    "stem": "The Republican Party, formed in the mid-1850s, was organized primarily to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "support the annexation of Texas and the expansion of slavery into Cuba.",
+        "isCorrect": false,
+        "explanation": "That issue had been settled a decade earlier."
+      },
+      {
+        "label": "B",
+        "text": "promote nativism and oppose Catholic immigration into the northern cities.",
+        "isCorrect": false,
+        "explanation": "That describes the Know-Nothing movement."
+      },
+      {
+        "label": "C",
+        "text": "oppose the expansion of slavery into the western territories.",
+        "isCorrect": true,
+        "explanation": "Republicans united many former Whigs, Free Soilers and antislavery Democrats around keeping slavery out of the territories."
+      },
+      {
+        "label": "D",
+        "text": "defend the Fugitive Slave Act and the interests of Southern slaveholders.",
+        "isCorrect": false,
+        "explanation": "Republicans opposed the Act."
+      }
+    ],
+    "explanation": "The Republicans formed to stop the spread of slavery into the territories.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-11",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "hard",
+    "stem": "In the Freeport Doctrine (1858), Stephen Douglas argued that",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Fugitive Slave Act should be repealed, since it violated the rights of northern states.",
+        "isCorrect": false,
+        "explanation": "The Freeport Doctrine concerned the territories."
+      },
+      {
+        "label": "B",
+        "text": "Congress must protect slavery in every territory, and settlers could not vote to exclude it under any law.",
+        "isCorrect": false,
+        "explanation": "That was the position of many Southern Democrats."
+      },
+      {
+        "label": "C",
+        "text": "territories could exclude slavery by refusing to pass protective laws, angering Southern Democrats.",
+        "isCorrect": true,
+        "explanation": "Douglas tried to reconcile popular sovereignty with the Court's ruling and lost support in the South."
+      },
+      {
+        "label": "D",
+        "text": "slavery should be banned in all states, with compensation paid to Southern slaveholders.",
+        "isCorrect": false,
+        "explanation": "Douglas did not argue for nationwide abolition."
+      }
+    ],
+    "explanation": "The Freeport Doctrine tried to reconcile popular sovereignty with Dred Scott and split Democrats.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-12",
+    "unit": "unit-5-civil-war-era",
+    "topic": "sectional-crisis",
+    "difficulty": "hard",
+    "stem": "Which best explains why several southern states seceded after Abraham Lincoln's election in 1860?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lincoln had announced immediate abolition of slavery in the South and the end of the Fugitive Slave Act.",
+        "isCorrect": false,
+        "explanation": "Lincoln did not pledge to abolish slavery in the states where it existed."
+      },
+      {
+        "label": "B",
+        "text": "The Supreme Court ordered the Southern states to secede after the Dred Scott decision in 1857.",
+        "isCorrect": false,
+        "explanation": "No such order existed."
+      },
+      {
+        "label": "C",
+        "text": "Southern leaders believed that a Republican president threatened slavery and Southern political power.",
+        "isCorrect": true,
+        "explanation": "Lincoln's election showed that the South could be outvoted nationally, and secessionists feared the end of slavery's growth."
+      },
+      {
+        "label": "D",
+        "text": "Lincoln had won a majority of the electoral votes in the Deep South and appointed Southerners.",
+        "isCorrect": false,
+        "explanation": "Lincoln won no electoral votes from the Deep South, and he was not even on the ballot in most Southern states."
+      }
+    ],
+    "explanation": "Secessionists feared that a Republican president threatened slavery and Southern power.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/sectional-crisis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-13",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "easy",
+    "stem": "Which was an advantage of the Union at the start of the Civil War?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A war fought on its own territory, which made defense and supply easier.",
+        "isCorrect": false,
+        "explanation": "The Confederacy fought mostly a defensive war on its own soil."
+      },
+      {
+        "label": "B",
+        "text": "A large supply of cotton to sell to European nations and a powerful navy.",
+        "isCorrect": false,
+        "explanation": "Cotton was the South's export."
+      },
+      {
+        "label": "C",
+        "text": "A larger population, more industry and a more extensive railroad network.",
+        "isCorrect": true,
+        "explanation": "The North had greater manpower and productive capacity."
+      },
+      {
+        "label": "D",
+        "text": "A stronger tradition of military leadership and a more experienced officer corps.",
+        "isCorrect": false,
+        "explanation": "Many leading officers sided with the Confederacy at the start."
+      }
+    ],
+    "explanation": "The Union had advantages in population, industry and railroads.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-14",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "medium",
+    "stem": "The Emancipation Proclamation of 1863",
+    "choices": [
+      {
+        "label": "A",
+        "text": "abolished slavery by amending the Constitution and freeing all enslaved people in the country.",
+        "isCorrect": false,
+        "explanation": "The Thirteenth Amendment ended slavery in 1865."
+      },
+      {
+        "label": "B",
+        "text": "freed enslaved people in Confederate-held territory and let Black men join the Union army.",
+        "isCorrect": true,
+        "explanation": "The proclamation changed the purpose of the war and opened military service to Black men."
+      },
+      {
+        "label": "C",
+        "text": "freed all enslaved people everywhere in the United States, including those in the border states.",
+        "isCorrect": false,
+        "explanation": "It applied only to areas in rebellion."
+      },
+      {
+        "label": "D",
+        "text": "ended the war with the Confederacy and led the Southern states to rejoin the Union at once.",
+        "isCorrect": false,
+        "explanation": "The war continued until 1865."
+      }
+    ],
+    "explanation": "The proclamation freed enslaved people in Confederate territory and changed the war's aims.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-15",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "medium",
+    "stem": "> “We are here to honor those who gave their lives so that a nation conceived in liberty and dedicated to equality might endure. Their sacrifice calls us to finish the work they advanced, so that government of the people may not vanish from the earth.”\n>\n> *Source: A president's speech at a battlefield cemetery, 1863*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A call for a negotiated peace with the Confederacy in order to end the bloodshed quickly.",
+        "isCorrect": false,
+        "explanation": "The speaker calls for finishing the work."
+      },
+      {
+        "label": "B",
+        "text": "A statement that the war was fought only over states' rights and tariff policy, not slavery.",
+        "isCorrect": false,
+        "explanation": "The speaker emphasizes liberty and equality."
+      },
+      {
+        "label": "C",
+        "text": "The announcement of a plan for Reconstruction of the Southern states after the war.",
+        "isCorrect": false,
+        "explanation": "The passage does not describe a Reconstruction plan."
+      },
+      {
+        "label": "D",
+        "text": "Framing the war as a struggle to preserve the Union and fulfill ideals of equality.",
+        "isCorrect": true,
+        "explanation": "The speaker links the war's purpose to the nation's founding ideals."
+      }
+    ],
+    "explanation": "The speech linked the war to liberty and equality and to preserving the Union.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-16",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "medium",
+    "stem": "The Union victories at Gettysburg and Vicksburg in July 1863 were significant because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "they gave the Confederacy control of the Ohio River and forced the Union army to retreat.",
+        "isCorrect": false,
+        "explanation": "They gave the Union advantages."
+      },
+      {
+        "label": "B",
+        "text": "they ended the war and led directly to Lee's surrender at Appomattox later that same summer of 1863.",
+        "isCorrect": false,
+        "explanation": "Lee surrendered in April 1865."
+      },
+      {
+        "label": "C",
+        "text": "they led Britain and France to recognize the Confederacy and to break the Union blockade.",
+        "isCorrect": false,
+        "explanation": "Britain did not recognize the Confederacy."
+      },
+      {
+        "label": "D",
+        "text": "Gettysburg ended Lee's invasion of the North, and Vicksburg gave the Union the Mississippi River.",
+        "isCorrect": true,
+        "explanation": "Together the victories were a turning point in the war."
+      }
+    ],
+    "explanation": "The victories turned the war in the Union's favor.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-17",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the effect of the Civil War on the role of the federal government?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It transferred the power to coin money and to charter banks back to the individual states.",
+        "isCorrect": false,
+        "explanation": "The federal government created national currency."
+      },
+      {
+        "label": "B",
+        "text": "It expanded federal power through conscription, an income tax, paper currency and land grants.",
+        "isCorrect": true,
+        "explanation": "The war increased the government's role in the economy and in citizens' lives."
+      },
+      {
+        "label": "C",
+        "text": "It reduced the power of the federal government by returning most authority to the states.",
+        "isCorrect": false,
+        "explanation": "Federal power grew."
+      },
+      {
+        "label": "D",
+        "text": "It eliminated the need for federal taxes by relying on tariffs and voluntary payments from the states.",
+        "isCorrect": false,
+        "explanation": "The government introduced new taxes."
+      }
+    ],
+    "explanation": "The war expanded the powers of the federal government.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-18",
+    "unit": "unit-5-civil-war-era",
+    "topic": "civil-war",
+    "difficulty": "medium",
+    "stem": "African American soldiers in the Union army",
+    "choices": [
+      {
+        "label": "A",
+        "text": "numbered about 180,000, and their service strengthened arguments for equal rights.",
+        "isCorrect": true,
+        "explanation": "Black soldiers helped win the war and made a strong case for equal rights."
+      },
+      {
+        "label": "B",
+        "text": "numbered only a few hundred men, who served in separate units under white officers.",
+        "isCorrect": false,
+        "explanation": "Black soldiers numbered about 180,000."
+      },
+      {
+        "label": "C",
+        "text": "were barred from combat throughout the war and used only as laborers and cooks.",
+        "isCorrect": false,
+        "explanation": "Black soldiers fought in many battles."
+      },
+      {
+        "label": "D",
+        "text": "fought primarily for the Confederacy, which offered them land in return for service.",
+        "isCorrect": false,
+        "explanation": "Those who served in the Union army fought for the Union."
+      }
+    ],
+    "explanation": "Black soldiers served in large numbers and strengthened the case for rights.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/civil-war",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-19",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "easy",
+    "stem": "The Thirteenth Amendment, ratified in 1865,",
+    "choices": [
+      {
+        "label": "A",
+        "text": "banned the sale of alcohol throughout the United States and its territories.",
+        "isCorrect": false,
+        "explanation": "That was a later amendment."
+      },
+      {
+        "label": "B",
+        "text": "abolished slavery throughout the United States, except as punishment for crime.",
+        "isCorrect": true,
+        "explanation": "The amendment ended slavery except as punishment for a crime."
+      },
+      {
+        "label": "C",
+        "text": "guaranteed voting rights regardless of race, color or previous condition.",
+        "isCorrect": false,
+        "explanation": "That was the Fifteenth Amendment."
+      },
+      {
+        "label": "D",
+        "text": "gave citizenship to all persons born in the United States and guaranteed due process.",
+        "isCorrect": false,
+        "explanation": "That was the Fourteenth Amendment."
+      }
+    ],
+    "explanation": "The Thirteenth Amendment abolished slavery.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-20",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "medium",
+    "stem": "The Black Codes passed by southern states in 1865 and 1866 were intended to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "end racial discrimination in the South and open public offices to Black citizens.",
+        "isCorrect": false,
+        "explanation": "The codes enforced discrimination."
+      },
+      {
+        "label": "B",
+        "text": "restrict the freedom of formerly enslaved people and keep them as a cheap labor force.",
+        "isCorrect": true,
+        "explanation": "The laws limited Black people's rights, movement and labor choices."
+      },
+      {
+        "label": "C",
+        "text": "distribute plantation land to freedpeople and help them start independent farms.",
+        "isCorrect": false,
+        "explanation": "The codes did not provide land."
+      },
+      {
+        "label": "D",
+        "text": "give freedpeople equal civil rights and protect them from discrimination by employers.",
+        "isCorrect": false,
+        "explanation": "The codes restricted rights."
+      }
+    ],
+    "explanation": "The Black Codes tried to preserve white control over Black labor.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-21",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "medium",
+    "stem": "> “We ask for no special favors, only equal rights before the law. Give us the right to vote, to own land and to send our children to school, and we will prove ourselves loyal citizens.”\n>\n> *Source: A freedmen's convention petition, 1865*\n\nThe passage best reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "African Americans' demands for citizenship, land and education after emancipation.",
+        "isCorrect": true,
+        "explanation": "The petitioners ask for equal rights, land ownership, education and voting."
+      },
+      {
+        "label": "B",
+        "text": "Support for President Johnson's lenient plan for Reconstruction of the South.",
+        "isCorrect": false,
+        "explanation": "The petitioners ask for more rights than the Johnson plan provided."
+      },
+      {
+        "label": "C",
+        "text": "A request to remain under planter control in return for steady work and rations.",
+        "isCorrect": false,
+        "explanation": "The petitioners ask for independence and rights."
+      },
+      {
+        "label": "D",
+        "text": "A call for freedpeople to move to Africa and settle in Liberia under American protection.",
+        "isCorrect": false,
+        "explanation": "The petitioners ask for rights in the United States."
+      }
+    ],
+    "explanation": "Freedpeople demanded equal rights, land, education and the vote.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-22",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "medium",
+    "stem": "The Fourteenth Amendment, ratified in 1868, did which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Abolished slavery throughout the United States and gave Congress power to enforce abolition.",
+        "isCorrect": false,
+        "explanation": "That was the Thirteenth Amendment."
+      },
+      {
+        "label": "B",
+        "text": "Guaranteed that the right to vote could not be denied because of race, color or past slavery, nationwide.",
+        "isCorrect": false,
+        "explanation": "That was the Fifteenth Amendment."
+      },
+      {
+        "label": "C",
+        "text": "Limited presidents to two terms and fixed the rules for the succession of the office.",
+        "isCorrect": false,
+        "explanation": "That was a later amendment."
+      },
+      {
+        "label": "D",
+        "text": "Defined citizenship for all persons born in the United States and guaranteed equal protection.",
+        "isCorrect": true,
+        "explanation": "The amendment overturned Dred Scott and provided new protections against state actions."
+      }
+    ],
+    "explanation": "The Fourteenth Amendment defined citizenship and guaranteed equal protection.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-23",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "hard",
+    "stem": "Congressional Republicans passed the Reconstruction Acts of 1867 largely because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the Supreme Court had ordered Congress to act after a lawsuit brought by Southern freedpeople.",
+        "isCorrect": false,
+        "explanation": "No such order existed."
+      },
+      {
+        "label": "B",
+        "text": "President Johnson had asked Congress to impose military rule on the Southern states after the war ended.",
+        "isCorrect": false,
+        "explanation": "Johnson opposed Congressional Reconstruction."
+      },
+      {
+        "label": "C",
+        "text": "Southern states under Johnson's plan refused to protect freedpeople's rights, so Congress stepped in.",
+        "isCorrect": true,
+        "explanation": "Congress took control of Reconstruction after Southern governments passed Black Codes and rejected the Fourteenth Amendment."
+      },
+      {
+        "label": "D",
+        "text": "Southern states had fully accepted equal rights and asked Congress for help in enforcing them.",
+        "isCorrect": false,
+        "explanation": "Southern states had resisted equal rights."
+      }
+    ],
+    "explanation": "Congress acted when Southern governments refused to protect freedpeople.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-24",
+    "unit": "unit-5-civil-war-era",
+    "topic": "reconstruction-plans-and-amendments",
+    "difficulty": "hard",
+    "stem": "Andrew Johnson was impeached by the House of Representatives in 1868 after",
+    "choices": [
+      {
+        "label": "A",
+        "text": "he removed the Secretary of War despite the Tenure of Office Act; the Senate acquitted him by one vote.",
+        "isCorrect": true,
+        "explanation": "The impeachment grew out of a power struggle over Reconstruction policy."
+      },
+      {
+        "label": "B",
+        "text": "he was removed by the Senate in 1868 after a lengthy trial on the articles of impeachment.",
+        "isCorrect": false,
+        "explanation": "The Senate acquitted him."
+      },
+      {
+        "label": "C",
+        "text": "he vetoed the Thirteenth Amendment and refused to let the Southern states vote on ratification in 1865.",
+        "isCorrect": false,
+        "explanation": "Presidents do not veto constitutional amendments, and Johnson supported its ratification."
+      },
+      {
+        "label": "D",
+        "text": "he was convicted of treason for supporting the Confederacy during and after the war.",
+        "isCorrect": false,
+        "explanation": "Johnson was acquitted and was not convicted of treason."
+      }
+    ],
+    "explanation": "Johnson was impeached over a conflict with Congress but narrowly acquitted.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/reconstruction-plans-and-amendments",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-25",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "easy",
+    "stem": "Under the system of sharecropping that emerged after the Civil War, farmers",
+    "choices": [
+      {
+        "label": "A",
+        "text": "were paid high cash wages and could easily buy land of their own within a few years.",
+        "isCorrect": false,
+        "explanation": "Most sharecroppers were poor and indebted."
+      },
+      {
+        "label": "B",
+        "text": "worked land owned by others for a share of the crop, and many fell into debt.",
+        "isCorrect": true,
+        "explanation": "Sharecropping tied many freedpeople and poor whites to debt and to landowners."
+      },
+      {
+        "label": "C",
+        "text": "owned large plantations and hired workers for fixed cash wages each season.",
+        "isCorrect": false,
+        "explanation": "Sharecroppers did not own the land."
+      },
+      {
+        "label": "D",
+        "text": "received free land from the federal government under the Freedmen's Bureau.",
+        "isCorrect": false,
+        "explanation": "Most freedpeople did not receive land."
+      }
+    ],
+    "explanation": "Sharecropping kept many farmers poor and in debt.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-26",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "medium",
+    "stem": "The Compromise of 1877 resolved the disputed presidential election by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "giving the presidency to Samuel Tilden, who promised to keep federal troops in the South.",
+        "isCorrect": false,
+        "explanation": "Hayes became president."
+      },
+      {
+        "label": "B",
+        "text": "awarding the presidency to Rutherford B. Hayes in return for withdrawing federal troops from the South.",
+        "isCorrect": true,
+        "explanation": "Southern Democrats accepted Hayes's election in exchange for removing federal troops."
+      },
+      {
+        "label": "C",
+        "text": "passing new civil rights laws to protect Black voters in the three disputed Southern states and nationwide.",
+        "isCorrect": false,
+        "explanation": "The compromise ended federal enforcement efforts."
+      },
+      {
+        "label": "D",
+        "text": "sending more federal troops to the South to guard the polls in the disputed states.",
+        "isCorrect": false,
+        "explanation": "Troops were withdrawn."
+      }
+    ],
+    "explanation": "The Compromise of 1877 ended Reconstruction by removing federal troops.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-27",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "medium",
+    "stem": "> “The people of this state are determined to be governed by white men. The carpetbag governments, propped up by bayonets, have squandered the public money. We shall redeem this state by the ballot if we can, and by other means if we must.”\n>\n> *Source: A Southern newspaper, 1875*\n\nThe passage best illustrates which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The use of intimidation and violence by white Southerners to regain control of state governments.",
+        "isCorrect": true,
+        "explanation": "The writer threatens force alongside electoral methods to overturn Reconstruction governments."
+      },
+      {
+        "label": "B",
+        "text": "Northern support for Southern self-government and the removal of the occupying federal troops from the South.",
+        "isCorrect": false,
+        "explanation": "The passage is a Southern point of view, not Northern."
+      },
+      {
+        "label": "C",
+        "text": "The strength of federal protection for Black voters and officeholders in Southern states.",
+        "isCorrect": false,
+        "explanation": "The passage describes an effort to defeat federal-backed governments."
+      },
+      {
+        "label": "D",
+        "text": "White Southerners' peaceful acceptance of Black voting and officeholding after the war.",
+        "isCorrect": false,
+        "explanation": "The passage rejects Black political power."
+      }
+    ],
+    "explanation": "The passage reflects the Redeemers' use of intimidation to end Reconstruction governments.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-28",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "medium",
+    "stem": "Supreme Court decisions of the 1870s, such as the Slaughterhouse Cases and United States v. Cruikshank,",
+    "choices": [
+      {
+        "label": "A",
+        "text": "narrowed federal protection of Black citizens by reading the Fourteenth Amendment narrowly.",
+        "isCorrect": true,
+        "explanation": "The decisions limited the reach of federal civil rights enforcement."
+      },
+      {
+        "label": "B",
+        "text": "overturned the Thirteenth Amendment and allowed Southern states to reinstate slavery.",
+        "isCorrect": false,
+        "explanation": "The Court did not overturn the amendment."
+      },
+      {
+        "label": "C",
+        "text": "expanded federal power to prosecute racial violence and to protect the rights of Black voters.",
+        "isCorrect": false,
+        "explanation": "The decisions limited federal power."
+      },
+      {
+        "label": "D",
+        "text": "granted women the right to vote in federal elections and in the western territories.",
+        "isCorrect": false,
+        "explanation": "The decisions did not concern woman suffrage."
+      }
+    ],
+    "explanation": "The Court's narrow readings of the Fourteenth Amendment weakened federal protection.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-29",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "hard",
+    "stem": "Which factor contributed to declining Northern support for Reconstruction by the mid-1870s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A constitutional amendment ending Reconstruction and returning full power to the Southern states.",
+        "isCorrect": false,
+        "explanation": "No such amendment existed."
+      },
+      {
+        "label": "B",
+        "text": "A Confederate military victory in the war that restored its government in several Southern states.",
+        "isCorrect": false,
+        "explanation": "The Confederacy had been defeated in 1865."
+      },
+      {
+        "label": "C",
+        "text": "Widespread Northern belief that the Fourteenth Amendment was unnecessary after the war.",
+        "isCorrect": false,
+        "explanation": "The amendment had been ratified."
+      },
+      {
+        "label": "D",
+        "text": "Economic depression after the Panic of 1873, scandals and fatigue with conflict in the South.",
+        "isCorrect": true,
+        "explanation": "Many northerners turned their attention to economic problems and tired of Reconstruction."
+      }
+    ],
+    "explanation": "Economic troubles, scandals and fatigue weakened Northern support.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u5-mcq-30",
+    "unit": "unit-5-civil-war-era",
+    "topic": "end-of-reconstruction",
+    "difficulty": "hard",
+    "stem": "Reconstruction is sometimes described as an unfinished revolution because it",
+    "choices": [
+      {
+        "label": "A",
+        "text": "ended slavery without passing any constitutional amendments or protections for freedpeople.",
+        "isCorrect": false,
+        "explanation": "Three amendments were passed."
+      },
+      {
+        "label": "B",
+        "text": "had no lasting legal effects, since Congress repealed all three amendments soon after.",
+        "isCorrect": false,
+        "explanation": "The amendments remained as foundations for later civil rights work."
+      },
+      {
+        "label": "C",
+        "text": "achieved full racial equality by 1877 but was undone by a later court decision.",
+        "isCorrect": false,
+        "explanation": "Racial equality was not achieved."
+      },
+      {
+        "label": "D",
+        "text": "produced amendments guaranteeing freedom and rights that were not secured in practice.",
+        "isCorrect": true,
+        "explanation": "The legal changes were significant, but their enforcement was abandoned."
+      }
+    ],
+    "explanation": "Reconstruction changed the Constitution but did not secure rights in practice.",
+    "conceptLink": "ap-us-history/unit-5-civil-war-era/end-of-reconstruction",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u3-frq-1",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "imperial-crisis",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The conflict that led to independence did not begin with a settled love of liberty. It grew out of a quarrel over who held the authority to tax and govern the colonies, and out of a conviction among colonists that Britain was changing the rules after 1763.”\n>\n> *Source: A historian, late twentieth century*\n\n**a)** Identify ONE claim made by the historian.\n\n**b)** Explain ONE development between 1763 and 1775 that supports the historian's argument.\n\n**c)** Explain ONE way in which a factor other than the one emphasized by the historian contributed to the movement toward independence.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a claim, such as that the conflict began over authority to tax and govern or that colonists believed Britain was changing the rules after 1763"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as the Proclamation of 1763 or the Stamp Act and Townshend duties showing Parliament asserting new taxing authority, and colonial responses such as boycotts or the Stamp Act Congress"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains another factor such as Enlightenment ideas of natural rights, economic interests of merchants and planters, or the spread of Common Sense building support for independence"
+      }
+    ],
+    "sampleResponse": "a) The historian claims that the conflict grew out of a dispute over who had authority to tax and govern the colonies and over British changes to the rules after 1763.\nb) After the French and Indian War, Parliament passed the Stamp Act in 1765 and the Townshend duties in 1767, asserting its authority to tax the colonies directly, and colonists responded with boycotts and the Stamp Act Congress.\nc) Enlightenment ideas of natural rights and government by consent, spread through pamphlets such as Common Sense, gave colonists a justification for independence beyond disputes over taxes.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-frq-2",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "articles-and-constitution",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The proposed constitution gives Congress power to raise armies and lay taxes at will, yet it contains no declaration of the rights of the people. Liberty is safe only when government is close to the people and bound by written limits.”\n>\n> *Source: A Virginia farmer's letter, 1788*\n\n**a)** Identify ONE concern expressed in the excerpt about the proposed Constitution.\n\n**b)** Explain ONE way in which supporters of the Constitution responded to concerns such as those in the excerpt.\n\n**c)** Explain ONE outcome of the debate over ratification.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a concern such as the broad powers of Congress to raise armies and levy taxes or the lack of a bill of rights"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a response such as the Federalist Papers arguing that checks and balances and a large republic would protect liberty, or promises to add a bill of rights"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an outcome such as ratification of the Constitution in 1788, or the adoption of the Bill of Rights in 1791"
+      }
+    ],
+    "sampleResponse": "a) The writer is concerned that Congress has too much power to raise armies and levy taxes and that the Constitution lacks a declaration of individual rights.\nb) Supporters such as Madison, Hamilton and Jay argued in the Federalist Papers that separation of powers and checks and balances would prevent tyranny, and some promised to add a bill of rights after ratification.\nc) The Constitution was ratified in 1788, and in 1791 the first ten amendments, the Bill of Rights, were added to protect individual liberties.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u3-frq-3",
+    "unit": "unit-3-revolution-and-new-nation",
+    "topic": "revolution-and-ideals",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE way in which the ideals of the American Revolution led to political change in the new states and nation between 1776 and 1800.\n\n**b)** Identify ONE way in which the American Revolution had limited effects on the rights of enslaved people or women.\n\n**c)** Explain ONE way in which revolutionary ideals were used to challenge slavery in the period 1775 to 1800.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a change such as new state constitutions based on popular sovereignty, expanded voting rights in some states, or Virginia's Statute for Religious Freedom"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies a limit such as the Constitution protecting slavery through the Three-Fifths Compromise and the fugitive slave clause, or women's continued exclusion from voting and public office"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains an example such as northern states abolishing slavery or beginning gradual abolition, enslaved people petitioning for freedom using the language of rights, or the growth of antislavery societies"
+      }
+    ],
+    "sampleResponse": "a) The new states wrote constitutions that rested on the authority of the people, and Virginia passed a Statute for Religious Freedom separating church from state.\nb) Although revolutionary ideals spoke of liberty and equality, the Constitution protected slavery through the Three-Fifths Compromise and the fugitive slave clause, and women remained unable to vote or hold office.\nc) Enslaved people in Massachusetts petitioned for freedom using the language of natural rights, and several northern states, including Pennsylvania in 1780, passed laws that gradually ended slavery.",
+    "reviewed": false
+  }
+]

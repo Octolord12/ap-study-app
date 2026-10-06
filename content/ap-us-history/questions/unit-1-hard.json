@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-ush-u1-mcq-31",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "native-american-societies",
+    "difficulty": "hard",
+    "stem": "> “Europeans did not arrive in an empty continent. They landed amid confederacies, tributary empires, trading networks and farming towns, each with its own laws and diplomacy, and every European colony had to deal with those realities from its first day.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following developments from 1491 to 1607 best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Europeans introduced cattle, pigs and horses to the Americas, changing the landscape.",
+        "isCorrect": false,
+        "explanation": "The introduction of livestock concerns the Columbian Exchange, not the strength of Native political or trading systems."
+      },
+      {
+        "label": "B",
+        "text": "Spain and Portugal divided overseas claims between themselves in the Treaty of Tordesillas.",
+        "isCorrect": false,
+        "explanation": "That agreement ignored Native societies rather than showing that Europeans had to negotiate with them."
+      },
+      {
+        "label": "C",
+        "text": "French traders in the St. Lawrence region built alliances with Native partners such as the Huron to obtain furs.",
+        "isCorrect": true,
+        "explanation": "French access to furs depended on Native hunters, traders and diplomats, showing that Europeans had to work within existing Native networks."
+      },
+      {
+        "label": "D",
+        "text": "Epidemic diseases caused a sharp decline in Native populations after contact with Europeans.",
+        "isCorrect": false,
+        "explanation": "Disease is an important development, but it does not by itself show that Native political and trading systems shaped European colonies."
+      }
+    ],
+    "explanation": "The fur trade shows Europeans working within Native networks and diplomacy.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/native-american-societies",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-32",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "native-american-societies",
+    "difficulty": "hard",
+    "stem": "> “A burial mound dating to several centuries before 1492 held copper from the Lake Superior region, shell beads from the Gulf of Mexico, and mica from the southern Appalachian mountains, alongside locally made pottery and stone tools.”\n>\n> *Source: An archaeologist's excavation report, Ohio River valley*\n\nWhich of the following statements is best supported by the evidence in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Native societies were connected by long-distance exchange networks that moved valued goods across the continent before contact.",
+        "isCorrect": true,
+        "explanation": "Materials from the Great Lakes, the Gulf coast and the southern mountains were all found in one mound, which indicates extensive trade."
+      },
+      {
+        "label": "B",
+        "text": "A single empire controlled all of eastern North America by 1492 and organized all of its trade.",
+        "isCorrect": false,
+        "explanation": "Trade connections do not show political unification, and the passage describes no empire."
+      },
+      {
+        "label": "C",
+        "text": "Native trade before 1492 was limited to the food and tools needed for everyday survival in each region.",
+        "isCorrect": false,
+        "explanation": "The goods described, such as shell beads and mica, were valued for reasons beyond everyday survival."
+      },
+      {
+        "label": "D",
+        "text": "Native economies were already dependent on metal goods from Europe by the time the mound was built.",
+        "isCorrect": false,
+        "explanation": "The copper came from the Lake Superior region, and the passage dates the mound to before 1492."
+      }
+    ],
+    "explanation": "The distant origins of the materials show long-distance exchange among Native societies.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/native-american-societies",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-33",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "native-american-societies",
+    "difficulty": "hard",
+    "stem": "Which statement best describes how Spanish rule in central Mexico after 1521 related to the Aztec tributary system that came before it?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Spain abolished all tribute and labor obligations in order to win the loyalty of Native communities.",
+        "isCorrect": false,
+        "explanation": "Spanish rule kept and extended obligations such as tribute and labor."
+      },
+      {
+        "label": "B",
+        "text": "Spain moved its capital away from the former Aztec capital to avoid reminders of Native rule.",
+        "isCorrect": false,
+        "explanation": "Mexico City was built on the site of Tenochtitlan."
+      },
+      {
+        "label": "C",
+        "text": "Spanish colonists adapted the existing tribute and labor system, claiming what Native communities had paid to Aztec rulers.",
+        "isCorrect": true,
+        "explanation": "The conquerors built on the Aztec system of tribute and labor, redirecting it to benefit Spaniards."
+      },
+      {
+        "label": "D",
+        "text": "Spain removed every Native noble from authority and ruled only through officials sent from Spain.",
+        "isCorrect": false,
+        "explanation": "Spanish authorities often worked through surviving Native elites to collect tribute and organize labor."
+      }
+    ],
+    "explanation": "Spain exploited and adapted Aztec tributary structures rather than abolishing them.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/native-american-societies",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-34",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "european-exploration",
+    "difficulty": "hard",
+    "stem": "> “The people of these islands go naked and have no iron, and are of a gentle disposition. They would make good servants, and could easily be taught our faith. They tell me there is gold in the hills, and if Your Majesties grant me men and supplies I will bring back as much as you desire.”\n>\n> *Source: A Genoese captain in Spanish service, report to the Crown, 1493*\n\nWhich later Spanish colonial practice most directly reflected the attitudes expressed in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The encomienda, which compelled Native labor and tribute while requiring colonists to instruct Native people in Christianity.",
+        "isCorrect": true,
+        "explanation": "The captain combines labor, religion and the search for gold, which are the same elements that the encomienda system joined."
+      },
+      {
+        "label": "B",
+        "text": "The founding of joint-stock companies in which investors shared profits from colonial ventures.",
+        "isCorrect": false,
+        "explanation": "Joint-stock companies were an English financing method and are not a practice suggested by the passage."
+      },
+      {
+        "label": "C",
+        "text": "The creation of Native-governed communities free from Spanish authority and Spanish taxes.",
+        "isCorrect": false,
+        "explanation": "The passage assumes Native people will serve the Spanish, not govern themselves."
+      },
+      {
+        "label": "D",
+        "text": "The establishment of towns in which Native people and colonists voted together on laws.",
+        "isCorrect": false,
+        "explanation": "Nothing in the passage suggests shared political rights."
+      }
+    ],
+    "explanation": "The passage's mix of exploiting labor, conversion and gold seeking points toward the encomienda.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/european-exploration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-35",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "european-exploration",
+    "difficulty": "hard",
+    "stem": "Which development in the Iberian Peninsula most directly shaped Spain's approach to conquering the Americas?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Protestant Reformation, which divided Spain into Catholic and Protestant regions.",
+        "isCorrect": false,
+        "explanation": "Spain remained Catholic, and the Reformation began in 1517, after Spain's first American conquests were already underway."
+      },
+      {
+        "label": "B",
+        "text": "The Hundred Years' War, in which Spain defeated England and took control of the Channel.",
+        "isCorrect": false,
+        "explanation": "That war was fought between England and France."
+      },
+      {
+        "label": "C",
+        "text": "The Reconquista, completed in 1492, which tied conquest to religious mission and rewarded soldiers with land.",
+        "isCorrect": true,
+        "explanation": "Centuries of warfare against Muslim-ruled territory produced a military tradition linking conquest, Christianity and rewards for conquerors."
+      },
+      {
+        "label": "D",
+        "text": "The defeat of the Spanish Armada in 1588, which ended Spanish ambitions in the Atlantic.",
+        "isCorrect": false,
+        "explanation": "The Armada's defeat came much later and did not end Spanish colonization."
+      }
+    ],
+    "explanation": "The Reconquista shaped Spanish conquest by joining warfare, religion and rewards of land and authority.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/european-exploration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-36",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "european-exploration",
+    "difficulty": "hard",
+    "stem": "Portuguese voyages along the African coast and to Atlantic islands such as Madeira in the 1400s most directly influenced later European colonization of the Americas by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "creating an overland trade route to Asia that avoided the Atlantic and Muslim middlemen.",
+        "isCorrect": false,
+        "explanation": "Portuguese exploration was about sea routes, not an overland route."
+      },
+      {
+        "label": "B",
+        "text": "building sugar plantations worked by enslaved Africans that later served as a model.",
+        "isCorrect": true,
+        "explanation": "Atlantic island sugar plantations combined European investment, enslaved labor and export crops, a pattern later transferred to Brazil and the Caribbean."
+      },
+      {
+        "label": "C",
+        "text": "founding English joint-stock companies to settle North America and the Caribbean.",
+        "isCorrect": false,
+        "explanation": "English joint-stock colonization came later and did not grow out of Portuguese voyages."
+      },
+      {
+        "label": "D",
+        "text": "persuading the Catholic Church to prohibit all enslavement of Africans and Native peoples.",
+        "isCorrect": false,
+        "explanation": "Portuguese expansion was linked to the growth of the slave trade, not its prohibition."
+      }
+    ],
+    "explanation": "Atlantic island plantations provided the plantation-and-slavery model later applied in the Americas.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/european-exploration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-37",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "columbian-exchange",
+    "difficulty": "hard",
+    "stem": "> “Europeans carried with them more than ships and weapons. Their cattle, pigs, weeds and, above all, their germs went ahead of them and changed landscapes and peoples before the newcomers themselves arrived.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Spanish crown sent royal officials called viceroys to govern conquered territories.",
+        "isCorrect": false,
+        "explanation": "Administration shows political control and does not bear on biological change."
+      },
+      {
+        "label": "B",
+        "text": "Epidemics of smallpox swept through Native communities before or alongside Spanish expeditions, weakening resistance.",
+        "isCorrect": true,
+        "explanation": "Disease moving ahead of or with the Spanish illustrates how living things, not only weapons, altered the Americas."
+      },
+      {
+        "label": "C",
+        "text": "Missionaries built churches and schools in conquered towns across much of New Spain.",
+        "isCorrect": false,
+        "explanation": "Church building shows religious activity, not the spread of germs, plants or animals."
+      },
+      {
+        "label": "D",
+        "text": "Spain and Portugal divided overseas claims at Tordesillas in 1494 without consulting Native peoples.",
+        "isCorrect": false,
+        "explanation": "This was a diplomatic agreement, not evidence of biological change."
+      }
+    ],
+    "explanation": "Epidemics preceding or accompanying Spanish expeditions best support the claim about biological forces.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/columbian-exchange",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-38",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "columbian-exchange",
+    "difficulty": "hard",
+    "stem": "Which of the following was a consequence of the introduction of European livestock such as pigs and cattle into the Americas?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The disappearance of maize as Europeans replaced it entirely with wheat across the Americas.",
+        "isCorrect": false,
+        "explanation": "Maize survived and spread widely, including to Europe and Africa."
+      },
+      {
+        "label": "B",
+        "text": "The extinction of the bison on the Great Plains by 1600 because of European hunters.",
+        "isCorrect": false,
+        "explanation": "Bison remained abundant on the Plains long after 1600."
+      },
+      {
+        "label": "C",
+        "text": "Landscape changes and conflicts with Native farmers whose crops animals damaged.",
+        "isCorrect": true,
+        "explanation": "Livestock altered land use and sometimes trampled or ate Native crops, creating disputes between colonists and Native communities."
+      },
+      {
+        "label": "D",
+        "text": "The end of farming in Mesoamerica as farmers turned to herding the new animals.",
+        "isCorrect": false,
+        "explanation": "Farming continued in Mesoamerica, and Native crops remained important."
+      }
+    ],
+    "explanation": "Livestock changed the landscape and created conflict over crops and land.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/columbian-exchange",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-39",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "columbian-exchange",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the demographic result of the first century after 1492 in Spanish America?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Native populations fell dramatically, while a new, mixed population of Europeans, Africans and people of mixed descent grew.",
+        "isCorrect": true,
+        "explanation": "Disease, violence and forced labor reduced Native numbers, and new arrivals and intermarriage created a changing population."
+      },
+      {
+        "label": "B",
+        "text": "Native populations rose steadily because of new crops and animals while few Europeans came.",
+        "isCorrect": false,
+        "explanation": "Native populations declined sharply in most regions."
+      },
+      {
+        "label": "C",
+        "text": "Africans formed the largest group in the Spanish colonies by 1550, outnumbering all others.",
+        "isCorrect": false,
+        "explanation": "Native people and people of mixed descent still outnumbered Africans in most Spanish colonies."
+      },
+      {
+        "label": "D",
+        "text": "Native populations stayed about the same, with Europeans living only in a few port towns.",
+        "isCorrect": false,
+        "explanation": "Native populations fell sharply, and Europeans spread far beyond the ports."
+      }
+    ],
+    "explanation": "Native decline and the growth of mixed populations characterized Spanish America.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/columbian-exchange",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-40",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "spanish-colonial-system",
+    "difficulty": "hard",
+    "stem": "> “It is the nature of some peoples to be ruled by others who are wiser and more skilled in the arts of government and religion. These Indians, who lack letters and our laws, are fitted to labor under Christian guidance, and it is for their own good that they be so directed.”\n>\n> *Source: A Spanish scholar, mid-sixteenth century*\n\nThe author of the passage would most likely have supported which policy?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The return of Native lands to communities that had lost them to colonists.",
+        "isCorrect": false,
+        "explanation": "Nothing in the passage supports returning land to Native communities."
+      },
+      {
+        "label": "B",
+        "text": "A guarantee of freedom of religion for Native converts to Christianity.",
+        "isCorrect": false,
+        "explanation": "The passage concerns direction of Native people by Spaniards, not religious freedom."
+      },
+      {
+        "label": "C",
+        "text": "The New Laws of 1542, which limited the power of encomenderos over Native workers.",
+        "isCorrect": false,
+        "explanation": "The author defends Spanish control of Native labor, while the New Laws tried to restrict it."
+      },
+      {
+        "label": "D",
+        "text": "The continuation of compelled Native labor under the encomienda system.",
+        "isCorrect": true,
+        "explanation": "The author argues that Native people should work under Spanish direction, which is the premise of the encomienda."
+      }
+    ],
+    "explanation": "The author's argument justifies Spanish control of Native labor.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/spanish-colonial-system",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-41",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "spanish-colonial-system",
+    "difficulty": "hard",
+    "stem": "Spanish colonization of New Mexico, beginning with Juan de Oñate's expedition in 1598 and including missions, forced labor and efforts to suppress Pueblo religion, most directly led to which later event?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Pueblo Revolt of 1680, which drove the Spanish out of New Mexico.",
+        "isCorrect": true,
+        "explanation": "Resentment over forced labor, tribute and attacks on Native religion helped unite Pueblo communities against Spanish rule in 1680."
+      },
+      {
+        "label": "B",
+        "text": "Bacon's Rebellion in colonial Virginia, led by frontier settlers against the governor.",
+        "isCorrect": false,
+        "explanation": "Bacon's Rebellion concerned frontier policy and Native relations in Virginia in 1676."
+      },
+      {
+        "label": "C",
+        "text": "The French and Indian War, which began in the 1750s between Britain and France.",
+        "isCorrect": false,
+        "explanation": "That war was an imperial conflict between Britain and France in the 1750s, not a response to Spanish rule in New Mexico."
+      },
+      {
+        "label": "D",
+        "text": "The Stono Rebellion in South Carolina, an uprising of enslaved Africans in 1739.",
+        "isCorrect": false,
+        "explanation": "The Stono Rebellion was a 1739 uprising of enslaved Africans."
+      }
+    ],
+    "explanation": "Spanish colonial pressure on the Pueblo peoples led to a successful revolt in 1680.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/spanish-colonial-system",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-42",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "spanish-colonial-system",
+    "difficulty": "hard",
+    "stem": "Which statement best describes how the Spanish crown governed its American empire in the 1500s?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Through councils of Native leaders who held independent authority over their own communities.",
+        "isCorrect": false,
+        "explanation": "Native leaders could serve as intermediaries but did not hold independent sovereign authority."
+      },
+      {
+        "label": "B",
+        "text": "Through assemblies elected by colonists who passed their own local laws and set their own taxes.",
+        "isCorrect": false,
+        "explanation": "Spanish colonies were governed from above, not mainly by elected assemblies."
+      },
+      {
+        "label": "C",
+        "text": "Through royal charters that handed each colony to a private trading company in exchange for profits.",
+        "isCorrect": false,
+        "explanation": "That is a better description of English and Dutch methods."
+      },
+      {
+        "label": "D",
+        "text": "Through a centralized bureaucracy of royal officials, including viceroys, who were answerable to the Council of the Indies.",
+        "isCorrect": true,
+        "explanation": "The crown established viceroyalties and a supervising council to keep control over distant colonies."
+      }
+    ],
+    "explanation": "The Spanish empire relied on a centralized bureaucracy led by viceroys and the Council of the Indies.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/spanish-colonial-system",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-43",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "early-english-and-french-efforts",
+    "difficulty": "hard",
+    "stem": "> “If Her Majesty planted colonies upon that coast, the idle poor of our cities would be set to work, the Queen's customs would grow with the trade in timber and furs, and the Spaniard's treasure fleets would lie within easy reach of our ships. Nor should we forget the duty to bring the Indians from darkness to the Gospel.”\n>\n> *Source: An English promoter of colonization, 1580s*\n\nWhich combination of motives for colonization is reflected in the passage?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A wish to avoid conflict with Spain by settling far from Spanish territory.",
+        "isCorrect": false,
+        "explanation": "The author wants to bring colonies close enough to threaten Spanish ships."
+      },
+      {
+        "label": "B",
+        "text": "A desire for political independence from the crown and toleration for Catholics.",
+        "isCorrect": false,
+        "explanation": "The passage assumes royal sponsorship and does not mention independence or toleration for Catholics."
+      },
+      {
+        "label": "C",
+        "text": "Economic opportunity, rivalry with Spain and the desire to spread Christianity.",
+        "isCorrect": true,
+        "explanation": "The author cites jobs and trade, the chance to threaten Spanish treasure fleets, and religious conversion."
+      },
+      {
+        "label": "D",
+        "text": "A plan to create self-governing communities free of royal authority.",
+        "isCorrect": false,
+        "explanation": "The passage says the colonies would be planted by Her Majesty."
+      }
+    ],
+    "explanation": "The promoter combines economic, strategic and religious reasons.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/early-english-and-french-efforts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-44",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "early-english-and-french-efforts",
+    "difficulty": "hard",
+    "stem": "Which statement best explains why French traders generally maintained closer working alliances with Native peoples than the Spanish did?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "French traders depended on Native partners to supply furs and French settlers were few, while Spain relied on Native labor and tribute.",
+        "isCorrect": true,
+        "explanation": "French success depended on cooperation with Native trading partners, whereas Spanish systems such as the encomienda were based on control of labor."
+      },
+      {
+        "label": "B",
+        "text": "The French wanted to establish large farming colonies and needed Native advice on agriculture and local crops.",
+        "isCorrect": false,
+        "explanation": "The French colonies of this period were mainly trading posts, not large farming colonies."
+      },
+      {
+        "label": "C",
+        "text": "France had a far larger army in North America and could force Native peoples to trade on French terms.",
+        "isCorrect": false,
+        "explanation": "French settlement was small; the French generally relied on partnership rather than force."
+      },
+      {
+        "label": "D",
+        "text": "Catholic missionaries were forbidden in French colonies, so there was less conflict with Native peoples.",
+        "isCorrect": false,
+        "explanation": "French Catholic missionaries were active in North America."
+      }
+    ],
+    "explanation": "The French fur trade depended on Native partners, shaping a different relationship from Spain's.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/early-english-and-french-efforts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u1-mcq-45",
+    "unit": "unit-1-contact-and-early-colonization",
+    "topic": "early-english-and-french-efforts",
+    "difficulty": "hard",
+    "stem": "Which factor most contributed to the failure of the English colony at Roanoke?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A smallpox epidemic spread by the colonists killed all of them within a single winter.",
+        "isCorrect": false,
+        "explanation": "There is no evidence that an epidemic caused the colony's end."
+      },
+      {
+        "label": "B",
+        "text": "The colony was made unnecessary when Spain gave England a share of Florida in a treaty.",
+        "isCorrect": false,
+        "explanation": "Spain did not give England territory."
+      },
+      {
+        "label": "C",
+        "text": "A Spanish army sent from Florida destroyed the colony soon after it was founded in 1587.",
+        "isCorrect": false,
+        "explanation": "Spain searched for the English colony but did not destroy it."
+      },
+      {
+        "label": "D",
+        "text": "Poor supply and support from England, worsened by war with Spain, along with strained relations with nearby Native peoples.",
+        "isCorrect": true,
+        "explanation": "The colonists were isolated; relief ships were delayed in part by England's conflict with Spain, and tensions with local peoples added to their difficulties."
+      }
+    ],
+    "explanation": "Isolation, delayed support during the war with Spain and tension with Native peoples contributed to Roanoke's failure.",
+    "conceptLink": "ap-us-history/unit-1-contact-and-early-colonization/early-english-and-french-efforts",
+    "reviewed": false
+  }
+]

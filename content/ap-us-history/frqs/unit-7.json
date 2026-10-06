@@ -1,0 +1,83 @@
+[
+  {
+    "id": "ap-ush-u7-frq-1",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "progressive-era",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “Progressives believed that the problems of industrial society could be solved by expert regulation and an active government, but their reforms often reached only some Americans.”\n>\n> *Source: A historian, early twenty-first century*\n\n**a)** Identify ONE claim made by the historian.\n\n**b)** Explain ONE development in the period 1900 to 1920 that supports the claim that Progressives favored an active government.\n\n**c)** Explain ONE way in which Progressive-era reforms or attitudes excluded or limited the rights of some groups.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a claim, such as that Progressives favored regulation and an active government, or that their reforms did not reach all Americans"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains a development such as the Meat Inspection Act and Pure Food and Drug Act, trust-busting, the Federal Reserve Act, or the Federal Trade Commission"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a limit such as segregation continuing or expanding under Jim Crow and in the Wilson administration, immigration restriction, or the exclusion of Black women from major suffrage organizations"
+      }
+    ],
+    "sampleResponse": "a) The historian claims that Progressives wanted an active, expert-led government but that reform benefited only some Americans.\nb) The Meat Inspection Act and the Pure Food and Drug Act of 1906 gave the federal government authority to regulate food and drug safety.\nc) Jim Crow segregation continued in the South and was extended to federal workplaces under the Wilson administration, so many African Americans did not share in Progressive reforms.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-frq-2",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "world-war-one",
+    "type": "SAQ",
+    "prompt": "Use the excerpt to answer parts A, B and C.\n\n> “The world must be made safe for democracy. We have no quarrel with the German people, but with a government that has sunk our ships and sought to make allies against us.”\n>\n> *Source: A president's address to Congress, 1917*\n\n**a)** Identify ONE reason for American entry into World War I expressed or implied in the excerpt.\n\n**b)** Explain ONE way in which the war affected civil liberties in the United States.\n\n**c)** Explain ONE way in which Americans disagreed about the peace settlement after the war.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a reason such as German attacks on American ships, the Zimmermann Telegram or the goal of making the world safe for democracy"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Explains an effect such as the Espionage and Sedition Acts limiting dissent, the prosecution of critics such as Eugene Debs, or the Schenck decision allowing limits on speech"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a disagreement such as debates in the Senate over joining the League of Nations and whether it would limit Congress's power to declare war"
+      }
+    ],
+    "sampleResponse": "a) The speaker says Germany had sunk American ships and sought allies against the United States, which was part of the reason for entering the war.\nb) The Espionage and Sedition Acts limited dissent and led to prosecutions of antiwar critics such as Eugene Debs, and the Supreme Court allowed such limits in Schenck v. United States.\nc) Senators disagreed over the League of Nations, with some fearing it would limit Congress's power to declare war, which led the Senate to reject the Treaty of Versailles.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u7-frq-3",
+    "unit": "unit-7-imperialism-to-world-war-two",
+    "topic": "depression-and-new-deal",
+    "type": "SAQ",
+    "prompt": "Using your knowledge of United States history, answer parts A, B and C.\n\n**a)** Identify ONE New Deal program or law intended to provide relief or jobs.\n\n**b)** Identify ONE New Deal program or law intended to reform the financial system or regulate the economy.\n\n**c)** Explain ONE criticism of the New Deal made by opponents in the period 1933 to 1940.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Part A: Identifies a program such as the Civilian Conservation Corps, the Works Progress Administration or the Public Works Administration"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Part B: Identifies a law or agency such as the Federal Deposit Insurance Corporation, the Securities and Exchange Commission or the Glass-Steagall Act"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Part C: Explains a criticism such as conservatives like the American Liberty League arguing that the New Deal expanded government too much, or critics such as Huey Long and Father Coughlin arguing it did not do enough, or Supreme Court rulings that struck down parts of it"
+      }
+    ],
+    "sampleResponse": "a) The Civilian Conservation Corps gave jobs to young men to work on conservation projects.\nb) The Federal Deposit Insurance Corporation insured bank deposits to restore trust in banks.\nc) Conservative critics such as the American Liberty League argued that the New Deal expanded the power of the federal government too much and threatened individual liberty and free enterprise.",
+    "reviewed": false
+  }
+]

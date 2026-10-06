@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-ush-u4-mcq-31",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "hard",
+    "stem": "> “The debate over Missouri has alarmed me like a bell rung in the night. For now the danger is quieted, but I fear it is only a pause, and that the line drawn between the sections will be drawn again in anger.”\n>\n> *Source: A retired statesman's letter, 1820*\n\nThe concern expressed in the passage most directly reflects which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Satisfaction that the Missouri Compromise had permanently settled the slavery question.",
+        "isCorrect": false,
+        "explanation": "The author describes the calm as only a pause."
+      },
+      {
+        "label": "B",
+        "text": "Fear that disputes over slavery's expansion would produce lasting sectional conflict.",
+        "isCorrect": true,
+        "explanation": "The author expects that the Missouri crisis foreshadows deeper division over slavery between the North and South."
+      },
+      {
+        "label": "C",
+        "text": "Anxiety about a financial panic following the end of the War of 1812 and bank failures.",
+        "isCorrect": false,
+        "explanation": "The passage concerns the sectional debate over Missouri."
+      },
+      {
+        "label": "D",
+        "text": "Alarm that Britain might intervene in the dispute over Missouri and support the South.",
+        "isCorrect": false,
+        "explanation": "The passage concerns a division between sections, not a foreign threat."
+      }
+    ],
+    "explanation": "The author fears that the slavery dispute will return and divide the Union.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-32",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "hard",
+    "stem": "Which factor best explains why the Monroe Doctrine of 1823 could be enforced in practice?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Spain agreed to withdraw from all of its colonies in the hemisphere under American pressure.",
+        "isCorrect": false,
+        "explanation": "Spain did not agree to this."
+      },
+      {
+        "label": "B",
+        "text": "British naval power, since Britain also opposed new colonization to protect its own trade.",
+        "isCorrect": true,
+        "explanation": "The United States lacked a large navy, but Britain's interests in Latin American markets made it a de facto enforcer."
+      },
+      {
+        "label": "C",
+        "text": "The United States possessed the strongest navy in the world after the War of 1812.",
+        "isCorrect": false,
+        "explanation": "The United States had a small navy in the 1820s."
+      },
+      {
+        "label": "D",
+        "text": "Latin American nations formed a military alliance with the United States against Europe.",
+        "isCorrect": false,
+        "explanation": "No such alliance was formed."
+      }
+    ],
+    "explanation": "Britain's navy and trade interests made enforcement of the doctrine possible.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-33",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jefferson-and-war-of-1812",
+    "difficulty": "hard",
+    "stem": "Henry Clay's American System, proposed after the War of 1812, called for",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a protective tariff, a national bank and federal spending on internal improvements.",
+        "isCorrect": true,
+        "explanation": "Clay's program aimed to build an interdependent national economy."
+      },
+      {
+        "label": "B",
+        "text": "a ban on manufacturing in the Northeast to protect the farming economy.",
+        "isCorrect": false,
+        "explanation": "The program encouraged manufacturing."
+      },
+      {
+        "label": "C",
+        "text": "state control of all transportation projects, with no federal money for canals or roads.",
+        "isCorrect": false,
+        "explanation": "The program called for federal support for internal improvements."
+      },
+      {
+        "label": "D",
+        "text": "free trade with Britain and the abolition of the national bank and tariffs.",
+        "isCorrect": false,
+        "explanation": "The program favored protective tariffs and a national bank."
+      }
+    ],
+    "explanation": "The American System combined tariffs, a bank and internal improvements.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jefferson-and-war-of-1812",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-34",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "hard",
+    "stem": "> “Canals and railroads tied the farms of the Old Northwest to the Northeast rather than to the South, so that by the 1850s the region's economic connections had shifted away from the Mississippi River.”\n>\n> *Source: A historian, late twentieth century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cotton exports from the South to Britain increased sharply in the 1840s as mills expanded.",
+        "isCorrect": false,
+        "explanation": "That shows Southern trade patterns, not the Midwest's shift."
+      },
+      {
+        "label": "B",
+        "text": "Midwestern farm products increasingly traveled east by canal and railroad instead of down the Mississippi.",
+        "isCorrect": true,
+        "explanation": "Shifting trade routes tied the Midwest more closely to the Northeast."
+      },
+      {
+        "label": "C",
+        "text": "New England mills hired large numbers of immigrant workers from Ireland and Germany in the 1840s and 1850s.",
+        "isCorrect": false,
+        "explanation": "That concerns the labor force of northeastern mills."
+      },
+      {
+        "label": "D",
+        "text": "Congress passed the Missouri Compromise to settle the dispute over slavery in new states.",
+        "isCorrect": false,
+        "explanation": "That addressed slavery's expansion and not trade routes."
+      }
+    ],
+    "explanation": "The eastward shift of Midwestern trade supports the argument.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-35",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "hard",
+    "stem": "Which of the following best explains the Panic of 1837?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The passage of the Tariff of 1828, which sharply raised duties and cut off foreign trade.",
+        "isCorrect": false,
+        "explanation": "That tariff was a source of the Nullification Crisis, not the Panic of 1837."
+      },
+      {
+        "label": "B",
+        "text": "Land speculation and easy credit from state banks, then the Specie Circular's hard-money rule and falling cotton prices.",
+        "isCorrect": true,
+        "explanation": "A speculative boom and policies that tightened credit contributed to bank failures and depression."
+      },
+      {
+        "label": "C",
+        "text": "The recharter of the Second Bank of the United States in 1832, which greatly expanded its power over credit and over state banks.",
+        "isCorrect": false,
+        "explanation": "Jackson vetoed the recharter in 1832."
+      },
+      {
+        "label": "D",
+        "text": "The outbreak of the War of 1812, which disrupted trade and the nation's banking system.",
+        "isCorrect": false,
+        "explanation": "The war occurred in 1812-1815."
+      }
+    ],
+    "explanation": "Speculation, loose credit, hard-money policy and falling cotton prices contributed to the panic.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-36",
+    "unit": "unit-4-democratic-republic",
+    "topic": "market-revolution",
+    "difficulty": "hard",
+    "stem": "Early labor protests in the 1830s and 1840s, such as the strikes by Lowell mill workers, were most directly a response to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "a federal ban on women working in textile factories.",
+        "isCorrect": false,
+        "explanation": "No such ban existed."
+      },
+      {
+        "label": "B",
+        "text": "wage cuts, longer hours and strict factory discipline.",
+        "isCorrect": true,
+        "explanation": "Workers protested deteriorating conditions in textile mills."
+      },
+      {
+        "label": "C",
+        "text": "the elimination of the spoils system in federal jobs.",
+        "isCorrect": false,
+        "explanation": "The spoils system concerned government jobs, not factory conditions."
+      },
+      {
+        "label": "D",
+        "text": "the passage of the Embargo Act, which cut off foreign trade.",
+        "isCorrect": false,
+        "explanation": "The embargo was an earlier trade measure."
+      }
+    ],
+    "explanation": "Workers protested wage cuts and harsher conditions.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/market-revolution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-37",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "hard",
+    "stem": "The charge of a corrupt bargain in the presidential election of 1824 arose because",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Jackson was disqualified from the presidency because he was a career military officer and a slaveholder.",
+        "isCorrect": false,
+        "explanation": "Jackson was not disqualified."
+      },
+      {
+        "label": "B",
+        "text": "Adams won both the electoral and the popular vote but was accused of fraud by Jackson's supporters in Congress.",
+        "isCorrect": false,
+        "explanation": "Jackson led in both counts."
+      },
+      {
+        "label": "C",
+        "text": "the House chose Adams though Jackson had won more votes, and Adams then named Henry Clay Secretary of State.",
+        "isCorrect": true,
+        "explanation": "No candidate won an electoral majority, and Jackson's supporters believed Clay's support for Adams was rewarded."
+      },
+      {
+        "label": "D",
+        "text": "the Supreme Court decided the election after a legal dispute over the votes cast in several states.",
+        "isCorrect": false,
+        "explanation": "The House of Representatives decided it."
+      }
+    ],
+    "explanation": "The House's choice and Clay's appointment led Jackson's supporters to allege a corrupt bargain.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-38",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "hard",
+    "stem": "> “Jacksonian democracy widened the rights of white men while narrowing those of others. Even as property requirements fell, Native peoples were removed from their homelands, free Black men lost the vote in several states, and women remained excluded from politics.”\n>\n> *Source: A historian, early twenty-first century*\n\nWhich of the following best supports the historian's argument?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Pennsylvania limited the vote to white men, and the Indian Removal Act forced Native nations west.",
+        "isCorrect": true,
+        "explanation": "These developments show rights for some groups expanding while others lost ground."
+      },
+      {
+        "label": "B",
+        "text": "The Erie Canal lowered shipping costs between New York City and the Great Lakes region greatly.",
+        "isCorrect": false,
+        "explanation": "That concerns economic development, not political rights."
+      },
+      {
+        "label": "C",
+        "text": "The Second Great Awakening inspired temperance societies across New England and the Midwest.",
+        "isCorrect": false,
+        "explanation": "That concerns reform movements and not changes to political rights."
+      },
+      {
+        "label": "D",
+        "text": "Jackson vetoed the recharter of the Second Bank of the United States and defended his veto as populist.",
+        "isCorrect": false,
+        "explanation": "That concerned economic policy rather than the exclusion of groups."
+      }
+    ],
+    "explanation": "Restrictions on Black voters and the removal of Native nations support the historian's argument.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-39",
+    "unit": "unit-4-democratic-republic",
+    "topic": "jacksonian-democracy",
+    "difficulty": "hard",
+    "stem": "The Whig Party, formed in the 1830s, drew its support primarily from",
+    "choices": [
+      {
+        "label": "A",
+        "text": "opponents of Jackson who favored a national bank, tariffs and internal improvements and criticized executive tyranny.",
+        "isCorrect": true,
+        "explanation": "Whigs united those who objected to Jackson's use of presidential power and favored economic development."
+      },
+      {
+        "label": "B",
+        "text": "abolitionists who wanted the immediate end of slavery and equal political rights for free Black citizens in every state.",
+        "isCorrect": false,
+        "explanation": "The Whigs were not an abolitionist party."
+      },
+      {
+        "label": "C",
+        "text": "southern planters who wanted to annex Cuba and expand slavery into the Caribbean and Mexico.",
+        "isCorrect": false,
+        "explanation": "Whig support was not defined by that goal."
+      },
+      {
+        "label": "D",
+        "text": "supporters of Jackson who wanted a smaller federal government and the end of all internal improvements.",
+        "isCorrect": false,
+        "explanation": "Those supporters were Democrats."
+      }
+    ],
+    "explanation": "The Whigs opposed Jackson and favored an active national economic program.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/jacksonian-democracy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-40",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "hard",
+    "stem": "The migration of Mormons to what is now Utah in 1846-1847 was primarily a response to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "the discovery of gold in California, which drew thousands of settlers across the western trails.",
+        "isCorrect": false,
+        "explanation": "The gold rush began in 1848 and was not the reason for the migration."
+      },
+      {
+        "label": "B",
+        "text": "religious persecution and violence in Missouri and Illinois, which led Brigham Young to lead followers west.",
+        "isCorrect": true,
+        "explanation": "After the killing of Joseph Smith in 1844, Mormons sought a refuge far from their persecutors."
+      },
+      {
+        "label": "C",
+        "text": "a federal law requiring Mormons to move west of the Mississippi River and settle in the newly organized territory.",
+        "isCorrect": false,
+        "explanation": "No federal law required the migration."
+      },
+      {
+        "label": "D",
+        "text": "an order from the Church of England to leave the country and found a new colony in the West.",
+        "isCorrect": false,
+        "explanation": "Mormons were a distinct American religious movement."
+      }
+    ],
+    "explanation": "Persecution drove the Mormons west to Utah.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-41",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "hard",
+    "stem": "Utopian communities of the antebellum era, such as the Shakers and the Oneida Community, were similar in that they",
+    "choices": [
+      {
+        "label": "A",
+        "text": "rejected all forms of shared property in favor of strict private ownership.",
+        "isCorrect": false,
+        "explanation": "Both relied on shared property and communal organization."
+      },
+      {
+        "label": "B",
+        "text": "tried to create alternative societies based on communal living and shared ideals.",
+        "isCorrect": true,
+        "explanation": "Both groups experimented with communal organization and distinctive beliefs."
+      },
+      {
+        "label": "C",
+        "text": "were financed and managed by the federal government as models for new towns.",
+        "isCorrect": false,
+        "explanation": "These communities were private experiments."
+      },
+      {
+        "label": "D",
+        "text": "were founded mainly in the Deep South by wealthy planters and Protestant ministers.",
+        "isCorrect": false,
+        "explanation": "They were founded mainly in the North."
+      }
+    ],
+    "explanation": "Utopian groups sought to build alternative communal societies.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-42",
+    "unit": "unit-4-democratic-republic",
+    "topic": "religion-and-reform",
+    "difficulty": "hard",
+    "stem": "The autobiography and speeches of Frederick Douglass strengthened the antislavery movement primarily by",
+    "choices": [
+      {
+        "label": "A",
+        "text": "convincing most Southern states to end slavery by the end of the 1840s peacefully.",
+        "isCorrect": false,
+        "explanation": "Southern states did not end slavery because of his work."
+      },
+      {
+        "label": "B",
+        "text": "persuading Congress to repeal the Fugitive Slave Act and to end slavery throughout the 1840s.",
+        "isCorrect": false,
+        "explanation": "No such repeal occurred then."
+      },
+      {
+        "label": "C",
+        "text": "providing firsthand testimony of slavery's brutality from someone who had escaped it.",
+        "isCorrect": true,
+        "explanation": "Douglass's eloquence and personal experience gave abolitionists powerful evidence."
+      },
+      {
+        "label": "D",
+        "text": "leading a colonization movement to send freed people to Africa and the Caribbean.",
+        "isCorrect": false,
+        "explanation": "Douglass opposed colonization."
+      }
+    ],
+    "explanation": "Douglass's firsthand testimony countered proslavery arguments.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/religion-and-reform",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-43",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "hard",
+    "stem": "Which statement best describes the resistance of enslaved people in the antebellum South?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Resistance occurred only in the border states, where the Underground Railroad reached freedom.",
+        "isCorrect": false,
+        "explanation": "Resistance occurred throughout the slave states."
+      },
+      {
+        "label": "B",
+        "text": "Enslaved people did not resist, because most accepted slavery and the authority of their owners.",
+        "isCorrect": false,
+        "explanation": "Enslaved people resisted constantly in many ways."
+      },
+      {
+        "label": "C",
+        "text": "Armed rebellions were frequent and widespread across the South, and often forced owners to free the people they held.",
+        "isCorrect": false,
+        "explanation": "Armed rebellions were rare and harshly put down."
+      },
+      {
+        "label": "D",
+        "text": "Most resistance was everyday, such as slow work, broken tools, running away and keeping family and religious life.",
+        "isCorrect": true,
+        "explanation": "Enslaved people resisted in many ways and developed family and community life under slavery."
+      }
+    ],
+    "explanation": "Everyday resistance was widespread, while armed rebellions were rare.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-44",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "hard",
+    "stem": "The House of Representatives' gag rule of 1836 to 1844 was adopted in order to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "end the importation of enslaved people from Africa and the West Indies.",
+        "isCorrect": false,
+        "explanation": "That ban took effect in 1808."
+      },
+      {
+        "label": "B",
+        "text": "approve the annexation of Texas and its admission as a slave state in 1845.",
+        "isCorrect": false,
+        "explanation": "The gag rule concerned petitions."
+      },
+      {
+        "label": "C",
+        "text": "block antislavery petitions, which critics said violated the right of petition.",
+        "isCorrect": true,
+        "explanation": "Southern members tried to suppress debate on slavery, and opponents such as John Quincy Adams fought the rule."
+      },
+      {
+        "label": "D",
+        "text": "protect the rights of free Black voters in the northern states and territories.",
+        "isCorrect": false,
+        "explanation": "The rule was aimed at antislavery petitions."
+      }
+    ],
+    "explanation": "The gag rule tried to block petitions against slavery.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  },
+  {
+    "id": "ap-ush-u4-mcq-45",
+    "unit": "unit-4-democratic-republic",
+    "topic": "regional-economies-and-slavery",
+    "difficulty": "hard",
+    "stem": "The South's heavy dependence on cotton exports tied its economy most closely to",
+    "choices": [
+      {
+        "label": "A",
+        "text": "British textile mills and northern merchants, shippers and bankers, tying the region to a global economy.",
+        "isCorrect": true,
+        "explanation": "Cotton went to mills in Britain and the North, and Northern firms handled shipping and credit."
+      },
+      {
+        "label": "B",
+        "text": "French luxury industries, which traded wine and silk for most of the South's cotton.",
+        "isCorrect": false,
+        "explanation": "Southern cotton was not tied to wine production."
+      },
+      {
+        "label": "C",
+        "text": "Spanish silver mines and Latin American markets that bought most of the South's cotton crop for silver coin.",
+        "isCorrect": false,
+        "explanation": "Southern cotton was not tied to Spanish silver mining."
+      },
+      {
+        "label": "D",
+        "text": "Midwestern grain markets and Great Lakes shippers, who bought most of the South's cotton crop.",
+        "isCorrect": false,
+        "explanation": "Cotton was tied to textile markets, not grain."
+      }
+    ],
+    "explanation": "Cotton connected the South to British mills and northern commerce.",
+    "conceptLink": "ap-us-history/unit-4-democratic-republic/regional-economies-and-slavery",
+    "reviewed": false
+  }
+]

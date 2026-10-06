@@ -1,0 +1,34 @@
+{
+  "slug": "unit-2-colonial-america",
+  "order": 2,
+  "name": "Colonial America (1607-1754)",
+  "weightingMin": 6,
+  "weightingMax": 8,
+  "topics": [
+    {
+      "slug": "english-colonies-founding",
+      "order": 1,
+      "name": "Founding the English Colonies"
+    },
+    {
+      "slug": "slavery-and-labor-systems",
+      "order": 2,
+      "name": "Slavery and Labor Systems"
+    },
+    {
+      "slug": "atlantic-economy-and-mercantilism",
+      "order": 3,
+      "name": "The Atlantic Economy and Mercantilism"
+    },
+    {
+      "slug": "religion-and-enlightenment",
+      "order": 4,
+      "name": "Religion, the Great Awakening and the Enlightenment"
+    },
+    {
+      "slug": "imperial-rivalry-and-borderlands",
+      "order": 5,
+      "name": "Imperial Rivalry and the Borderlands"
+    }
+  ]
+}
