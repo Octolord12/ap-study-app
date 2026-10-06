@@ -8,7 +8,7 @@ a tool for one family; built so it can scale into a public product later
 without a rewrite, but not over-engineered for that future.
 
 Launch courses: AP Computer Science A, AP World History: Modern, AP Calculus
-AB, AP Physics 1.
+AB, AP Physics 1. AP U.S. History was added afterwards as a fifth course (see "AP U.S. History").
 
 ## Stack (and why)
 
@@ -442,8 +442,9 @@ AP CSA (10 units, 300 MCQs + 30 FRQs), AP World History: Modern (9 units,
 270 MCQs + 35 FRQs), AP Calculus AB (8 units, 240 MCQs + 24 FRQs), and AP
 Physics 1 (8 units, 240 MCQs + 24 FRQs). Each course has since gained a second, harder
 set added alongside (see "Hard sets" below): the files named `unit-N-hard.json`. Totals
-now: CSA 450 MCQs + 50 FRQs, World 405 + 53, Calc AB 360 + 40, Physics 1 360 + 40.
-See the Milestone 7 section below.
+now: CSA 450 MCQs + 50 FRQs, World 405 + 53, Calc AB 360 + 40, Physics 1 360 + 40. A fifth
+course, AP U.S. History (405 + 53), was written later, base and hard sets together (see
+"AP U.S. History"). See the Milestone 7 section below.
 
 ### Content generation at scale (Milestone 7, done)
 
@@ -1072,8 +1073,10 @@ content is not exposed.
 - The "Coming soon" section (`ComingSoon`) is shown in two places: the bottom of
   the signed-out landing page and the bottom of the signed-in Today screen (both
   its first-course picker and its main view), so its copy must not refer to
-  anything else on the page. Subjects listed in it are the owner's examples (AP U.S. History,
-  AP Biology, AP Calculus BC), marked "Planned", no dates.
+  anything else on the page. Subjects listed in it are the owner's examples (AP Biology, AP Calculus BC),
+  marked "Planned", no dates. AP U.S. History was on the list until it shipped. The copy states no
+  count of exams (the component has no data of its own); the landing page and the courses page
+  headline derive "five exams" from the course list (`countWord`, `lib/count-word.ts`).
 - **Testimonials are real quotes only.** `lib/marketing/testimonials.ts` renders
   nothing while empty. It started empty, and now holds one quote the owner
   supplied (Phu Vo, 2026-10-04, verbatim, no course or score because none was
@@ -1472,6 +1475,45 @@ read counts from the database, so they change when the content is seeded. Seedin
 10+ minutes) and **stops at the first connection error**, so run it in the background and check the
 row counts against the files afterwards (an interrupted run is safe to repeat: it upserts).
 
+## AP U.S. History (the fifth course)
+
+Added 2026-10-05 at full size (owner's request: "full size", then take it off Coming soon). Same shape
+as World History, so no engine change: the exam builder already draws SAQ/DBQ/LEQ by type.
+
+- **Structure**: slug `ap-us-history`, id prefix `ap-ush`, nine units (the CED's nine periods,
+  1491 to the present; weightings 4-6, 6-8, 10-17 x6, 4-6) and 46 topics. Per unit 30 MCQs + 3 SAQs
+  (`unit-N.json`: `ap-ush-uN-mcq-1..30`, `frq-1..3`) and a hard set (`unit-N-hard.json`: MCQs 31..45,
+  one SAQ and one 6-point LEQ as `frq-4..5`), plus a course pool of 4 DBQs + 4 LEQs
+  (`frqs/dbq-leq-pool.json`, `ap-ush-dbq-1..4`, `ap-ush-leq-1..4`). Totals: **405 MCQs** (47 easy,
+  137 medium, 221 hard) and **53 free-response** (36 SAQ, 4 DBQ, 13 LEQ), the same as World.
+  Exam format: 55 MCQ + 3 SAQ + 1 DBQ + 1 LEQ, 195 minutes, the *current* structure; the College Board
+  has announced revisions to the short-answer and long-essay questions for May 2027 but not published
+  details, so this stays as is until it does.
+- **Authoring**: `scripts/content-authoring/ap-us-history/` (`common.py`, `uN_base.py`, `uN_hard.py`,
+  `pool.py`). Edit the scripts, not the JSON. `authoring.Bank` gained a `suffix` argument (default
+  `"-hard"`, so the other courses are unchanged) so a core set writes `unit-N.json`.
+- **Sources are original** with generic attributions ("A Massachusetts minister's sermon, 1630s"), never
+  quotations from real documents or exams: a quote written from memory could be wrong. Stimuli are text
+  only; there are no cartoons or maps because diagram support covers only graphs and force diagrams.
+- **Correctness**: history can't be machine-verified. Claims are kept to well-established CED-level
+  facts. `facts.py` checks that every named event followed by a year ("Stamp Act of 1765", "Fort Mose in
+  1738") agrees with a ~200-event date table (it only catches disagreement with the table, which was
+  itself written from standard dates; its 3 hits were false positives). The usual checks pass
+  (`content:validate`, the choice-letter audit, `render-audit.ts`: 0 problems). **The owner's review in
+  `/admin/review` is the real check**; the course is visible to students as soon as it is seeded,
+  so "checked by a person" on the About page falls below 100% until it is approved.
+- **A tell found and fixed while writing it: the right answer was the longest choice in 97% of
+  questions** (it is the one with the qualifying clauses), which a student can exploit without knowing any
+  history. `pad_uN.py` overlays, loaded by `common.py`, lengthen the wrong choices (`PAD`, in the order the
+  script lists them), trim the right ones (`PADC`) and patch single choices (`PADW`, matched by their
+  current text) until length says nothing; explanations are unchanged. Result: the right answer is the
+  longest in 29% of questions (chance with four choices is 25%), the shortest in 12%, median length ratio
+  1.03. `stats.py` measures it and `flag.py <unit>` lists the questions where it is still the longest.
+  Run `python3 stats.py` after any edit to a question. `PaddedBank.mcq` prints each question's
+  lengths when `DUMP=1`.
+- **Effects**: exam simulations draw from the whole pool (so a third of a U.S. History exam's questions
+  are hard-set items), hard items earn the top XP tier, and the course appears for students on seeding.
+
 ## Forgot password and email
 
 Built 2026-10-05 and **not live until a domain is verified** (see "Turning it on"). Resend is the
@@ -1592,6 +1634,7 @@ in app logic — updating them should be a data edit.
 | AP World History: Modern | 9 units, c.1200 CE–present | 55 MCQ + 3 SAQ (95min) + 1 DBQ + 1 LEQ (100min), 3h15m | **May 2027**: all 3 SAQs required (was pick 1 of 3), LEQ is a single required prompt (was pick 1 of 3). |
 | AP Calculus AB | 8 units | Currently 42 MCQ + 6 FRQ, 3h10m | **May 2027**: College Board has confirmed MCQ count/timing will change; exact numbers not yet published — check before hardcoding exam-sim config for that year. |
 | AP Physics 1 | 8 units (Fluids added as Unit 8) | 40 MCQ + 4 FRQ | **Already redesigned for 2024-25** — if referencing old prep material, it may predate this. |
+| AP U.S. History | 9 units, 1491 to the present | 55 MCQ + 3 SAQ (all required) + 1 DBQ + 1 LEQ, 3h15m | **May 2027**: short-answer and long-essay questions revised (the College Board has not published details). |
 
 ## Milestone status
 
@@ -1706,8 +1749,19 @@ in app logic — updating them should be a data edit.
       alongside the originals. All four are seeded into the database and deployed (2026-10-05;
       row counts and per-question correct-answer/difficulty/diagram checked against the files after
       seeding). See "Hard sets" above.
+- [x] **Post-launch: AP U.S. History.** A fifth course at full size (405 MCQs + 53 free-response,
+      base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
+      writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
+      count. See "AP U.S. History" above.
 
 ## Known issues / follow-ups
+
+- **The right answer is the longest choice far too often in the older courses.** Measured
+  2026-10-05 (share of questions where it is the longest of four; chance is 25%): World History 87%,
+  Calc AB 55%, Physics 1 51%, CSA 36% (U.S. History 29% after the fix described in "AP U.S. History").
+  A student can raise a World History score by always picking the longest answer. Not fixed; the same
+  overlay approach (`pad_uN.py`) would work for World History, whose generators are in
+  `scripts/content-authoring/ap-world-hard/` (the 270 core questions were written straight to JSON).
 
 - **`npm audit` reports vulnerabilities** in `hono`/`mysql2` — both transitive
   dev dependencies of the `prisma` CLI itself (bundled tooling for databases/
