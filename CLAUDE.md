@@ -1382,8 +1382,8 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 ## Topic refreshers
 
 A short written read on each topic, for a student who just missed a question or is starting a unit. Built
-2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB is written (35 topics); the other
-four courses are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
+2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB is written and live (35 topics);
+the other four courses are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
 one course first, the same review as questions, a page per topic.
 
 - **Data**: `Topic.refresher String? @db.Text` and `Topic.refresherReviewed Boolean @default(false)`,
@@ -1416,6 +1416,13 @@ one course first, the same review as questions, a page per topic.
   questions; "Approve all" and the pending counts include them (`approveUnitContent` gained an optional
   fourth argument, the topic ids; `markRefresherReviewed` approves one). The About page counts refreshers
   with the questions in "N of M have been checked by a person" and says they were written with AI help.
+- **Live 2026-10-06.** Migration applied, Calc AB seeded (35 refreshers, all unreviewed; the 400 Calc
+  questions/prompts kept their approvals), then pushed. Checked in the browser with a scratch account: the
+  topic page (desktop and 375px, no overflow, no KaTeX errors), Practice this topic, "Review this concept" from
+  a missed question, the unit page's Refreshers list, Progress's "Refresher" link, a topic without a refresher
+  (redirects to the unit's question list), the admin review pages and the About count (2,216 of 2,251, the 35
+  refreshers in the total). Equations written `$$...$$` on one line render inline, so the authoring helper
+  expands them to display blocks (`$$` on their own lines).
 - **Authoring** (Calc AB): `scripts/content-authoring/ap-calc-refreshers/u1.py..u8.py` write the JSON.
   Each script re-checks its worked examples with sympy before writing, so a number in the text can't drift
   from the maths; edit the scripts, not the JSON. `render-audit.ts` now also renders every refresher
@@ -1820,9 +1827,9 @@ in app logic — updating them should be a data edit.
       alongside the originals. All four are seeded into the database and deployed (2026-10-05;
       row counts and per-question correct-answer/difficulty/diagram checked against the files after
       seeding). See "Hard sets" above.
-- [ ] **Post-launch: topic refreshers.** Engine built and tested (schema, validation, seed, topic page,
-      links, review, About count) and Calc AB's 35 refreshers written; **not live until the migration is
-      applied, Calc AB is seeded and the commits are pushed**. Other courses to follow. See "Topic refreshers".
+- [x] **Post-launch: topic refreshers.** Engine built and tested (schema, validation, seed, topic page,
+      links, review, About count) and Calc AB's 35 refreshers written, seeded and live (unreviewed until the
+      owner approves them in `/admin/review`). The other four courses are still to do. See "Topic refreshers".
 - [x] **Post-launch: AP U.S. History.** A fifth course at full size (405 MCQs + 53 free-response,
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
@@ -1914,6 +1921,10 @@ in app logic — updating them should be a data edit.
   real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
   3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
   real student's, matched the post-seed snapshot.
+  The refreshers were verified in the browser with `scratch_refresh` / `scratch-refresh@example.com`
+  (2026-10-06), temporarily promoted to ADMIN (that scratch account only) to open the review pages without
+  approving anything; deleted afterwards, and every per-user and per-table count matched the pre-migration
+  snapshot.
   **Old test accounts deleted 2026-10-05** (owner's request): `viraj_test`, `alex_test`,
   `deploy_smoketest`, `latex_verify_tmp`, `finalscopecheck` (all `@example.com` students). Checked first
   that nothing a real student owned hung off them: the one class they owned ("Period 3 AP CSA") had only
