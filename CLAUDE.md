@@ -1382,8 +1382,8 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 ## Topic refreshers
 
 A short written read on each topic, for a student who just missed a question or is starting a unit. Built
-2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB is written and live (35 topics).
-CSA is written (39 topics) but not yet seeded; World, Physics 1 and U.S. History are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
+2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB (35 topics) and CSA (39) are
+written and live; World, Physics 1 and U.S. History are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
 one course first, the same review as questions, a page per topic.
 
 - **Data**: `Topic.refresher String? @db.Text` and `Topic.refresherReviewed Boolean @default(false)`,
@@ -1437,8 +1437,7 @@ one course first, the same review as questions, a page per topic.
   Each script re-checks its worked examples with sympy before writing, so a number in the text can't drift
   from the maths; edit the scripts, not the JSON. `render-audit.ts` now also renders every refresher
   (35 for Calc AB: 0 KaTeX errors, 0 raw LaTeX).
-- **Not done**: refreshers for World, Physics 1 and U.S. History (each needs its own authoring pass), and
-  seeding CSA's; no refresher videos; no search. Whether a student has read a refresher is not tracked.
+- **Not done**: refreshers for World, Physics 1 and U.S. History (each needs its own authoring pass); no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
 ## Hard sets (harder questions, added alongside)
 
@@ -1839,8 +1838,8 @@ in app logic — updating them should be a data edit.
       seeding). See "Hard sets" above.
 - [x] **Post-launch: topic refreshers.** Engine built and tested (schema, validation, seed, topic page,
       links, review, About count) and Calc AB's 35 refreshers written, seeded and live (unreviewed until the
-      owner approves them in `/admin/review`). CSA's 39 are written but not yet seeded; the other three courses
-      are still to do. See "Topic refreshers".
+      owner approves them in `/admin/review`). CSA's 39 followed (seeded 2026-10-06 after its Java examples were
+      compiled and run; its 500 approvals were kept); the other three courses are still to do. See "Topic refreshers".
 - [x] **Post-launch: AP U.S. History.** A fifth course at full size (405 MCQs + 53 free-response,
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
@@ -1932,6 +1931,9 @@ in app logic — updating them should be a data edit.
   real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
   3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
   real student's, matched the post-seed snapshot.
+  The CSA refreshers were checked the same way with a second `scratch_refresh` account (the topic page with
+  syntax-highlighted code at desktop and 375px, no overflow, and the unit page's links), deleted afterwards
+  with every count matching the baseline.
   The refreshers were verified in the browser with `scratch_refresh` / `scratch-refresh@example.com`
   (2026-10-06), temporarily promoted to ADMIN (that scratch account only) to open the review pages without
   approving anything; deleted afterwards, and every per-user and per-table count matched the pre-migration
