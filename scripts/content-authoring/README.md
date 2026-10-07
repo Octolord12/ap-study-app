@@ -90,3 +90,15 @@ python3 flag.py ap-calc 5           # the same, one line each
 python3 extend_longest.py ap-calc 5 '{"13": ", since the areas add up"}'   # second-pass: lengthen one question's longest wrong choice
 ```
 
+## Topic refreshers (Calc AB)
+
+`ap-calc-refreshers/u1.py..u8.py` write `content/ap-calc/refreshers/unit-N.json` (one refresher per topic; see
+"Topic refreshers" in CLAUDE.md). Each script checks its worked examples with sympy first. Edit the script, not
+the JSON; `common.py` asserts that a unit has exactly one entry per topic, in order.
+
+```bash
+cd scripts/content-authoring/ap-calc-refreshers
+for u in 1 2 3 4 5 6 7 8; do python3 u$u.py; done
+cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-calc
+```
+
