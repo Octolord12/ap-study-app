@@ -1427,9 +1427,11 @@ one course first, the same review as questions, a page per topic.
   through `code(...)`, which returns the fenced block and records the full program with the output the text
   claims; `finish()` writes the JSON and, **when a JDK is available** (`JAVA_HOME`, or a Temurin JDK unpacked in
   the session scratch folder), compiles and runs every recorded program and fails if the real output differs.
-  **The CSA refreshers were written with no JDK on the machine, so their 39 refreshers' ~60 examples were
-  hand-traced, not machine-checked** (the scripts print how many were not checked). Run them again with a JDK
-  before relying on them. Avoid `$` in examples (the validator reads it as unclosed math).
+  **All 44 CSA examples were compiled and run with Temurin JDK 21 (downloaded into the session scratch
+  folder, not the project) and every printed output matched the text.** They had been hand-traced first and
+  every trace was right. Without a JDK the scripts still write the JSON and print how many examples were not
+  checked, so re-run them with one after editing an example. Avoid `$` in examples (the validator reads it as
+  unclosed math).
 - **Authoring** (Calc AB): `scripts/content-authoring/ap-calc-refreshers/u1.py..u8.py` write the JSON.
   Both courses write through `scripts/content-authoring/refreshers_lib.py`.
   Each script re-checks its worked examples with sympy before writing, so a number in the text can't drift
