@@ -1,8 +1,11 @@
 import Link from "next/link";
 import type { WeakTopic } from "@/lib/study/weak-topics";
 import { RuledList } from "@/components/ui/page";
+import { topicHref } from "@/lib/study/concept-link";
 
-export function WeakTopicsList({ topics }: { topics: WeakTopic[] }) {
+const LINK = "text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline";
+
+export function WeakTopicsList({ topics, withRefresher = new Set() }: { topics: WeakTopic[]; withRefresher?: ReadonlySet<string> }) {
   if (topics.length === 0) {
     return (
       <p className="reading max-w-[52ch]">
@@ -24,10 +27,12 @@ export function WeakTopicsList({ topics }: { topics: WeakTopic[] }) {
             <p className="text-sm">
               <span className="numeral text-xl">{t.accuracyPercent}%</span> <span className="eyebrow">{t.correct} of {t.attempted} right</span>
             </p>
-            <Link
-              href={`/courses/${t.courseSlug}/units/${t.unitSlug}?topic=${t.topicSlug}`}
-              className="text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
-            >
+            {withRefresher.has(t.topicId) ? (
+              <Link href={topicHref(t.courseSlug, t.unitSlug, t.topicSlug, true)} className={LINK}>
+                Refresher
+              </Link>
+            ) : null}
+            <Link href={`/courses/${t.courseSlug}/units/${t.unitSlug}?topic=${t.topicSlug}`} className={LINK}>
               Practice
             </Link>
           </div>

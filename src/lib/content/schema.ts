@@ -50,6 +50,16 @@ export const FRQSchema = z.object({
   diagram: DiagramSchema.optional(),
 });
 
+// A short written refresher for one topic (content/<course>/refreshers/*.json, an array of these).
+// Markdown, with $...$ math and code fences like every other field. Which topic it belongs to is
+// "<unit>/<topic>", the same key a question's conceptLink uses.
+export const RefresherSchema = z.object({
+  unit: z.string().min(1),
+  topic: z.string().min(1),
+  body: z.string().min(1),
+  reviewed: z.boolean(),
+});
+
 export const TopicSchema = z.object({
   slug: z.string().min(1),
   order: z.number().int().positive(),
@@ -90,5 +100,6 @@ export type RubricLine = z.infer<typeof RubricLineSchema>;
 export type FRQ = z.infer<typeof FRQSchema>;
 export type FrqType = z.infer<typeof FrqTypeSchema>;
 export type Topic = z.infer<typeof TopicSchema>;
+export type Refresher = z.infer<typeof RefresherSchema>;
 export type Unit = z.infer<typeof UnitSchema>;
 export type Course = z.infer<typeof CourseSchema>;

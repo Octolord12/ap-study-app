@@ -9,6 +9,7 @@ const mocks = vi.hoisted(() => {
     user: { findUnique: vi.fn(async () => ({ role: state.role })) },
     question: { updateMany: vi.fn(async ({ where }: { where: { id: { in: string[] } } }) => ({ count: where.id.in.length })) },
     fRQPrompt: { updateMany: vi.fn(async ({ where }: { where: { id: { in: string[] } } }) => ({ count: where.id.in.length })) },
+    topic: { updateMany: vi.fn(async ({ where }: { where: { id: { in: string[] } } }) => ({ count: where.id.in.length })) },
   };
   const revalidatePath = vi.fn();
   return { state, db, revalidatePath };
@@ -41,6 +42,20 @@ describe("approveUnitContent", () => {
     expect(mocks.db.question.updateMany).toHaveBeenCalledWith({ where: { id: { in: ["q1", "q2", "q3"] }, unitId: "unit-1", reviewed: false }, data: { reviewed: true } });
     expect(mocks.db.fRQPrompt.updateMany).toHaveBeenCalledWith({ where: { id: { in: ["f1", "f2"] }, unitId: "unit-1", reviewed: false }, data: { reviewed: true } });
     expect(mocks.revalidatePath).toHaveBeenCalledWith("/admin/review");
+  });
+
+  it("also approves the unit's refreshers, only those written and still unreviewed", async () => {
+    const result = await approveUnitContent("unit-1", ["q1"], [], ["t1", "t2"]);
+    expect(result).toEqual({ approved: 3 });
+    expect(mocks.db.topic.updateMany).toHaveBeenCalledWith({
+      where: { id: { in: ["t1", "t2"] }, unitId: "unit-1", refresher: { not: null }, refresherReviewed: false },
+      data: { refresherReviewed: true },
+    });
+  });
+
+  it("does not touch topics when it was handed no refreshers", async () => {
+    await approveUnitContent("unit-1", ["q1"], ["f1"]);
+    expect(mocks.db.topic.updateMany).not.toHaveBeenCalled();
   });
 
   it("skips the query for an empty list", async () => {

@@ -15,13 +15,17 @@ const question = {
   ],
 };
 
-vi.mock("@/lib/study/queries", () => ({ getQuestionsByIds: vi.fn(async () => [question]) }));
+vi.mock("@/lib/study/queries", () => ({
+  getQuestionsByIds: vi.fn(async () => [question]),
+  getTopicKeysWithRefreshers: vi.fn(async () => new Set<string>()),
+}));
 vi.mock("@/lib/content/render", () => ({
   renderContentToHtml: async (text: string) => text,
   renderChoiceTextToHtml: async (text: string) => text,
 }));
 
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
+import { getTopicKeysWithRefreshers } from "@/lib/study/queries";
 
 describe("renderQuizQuestions shuffles choices every time", () => {
   beforeEach(() => vi.clearAllMocks());
@@ -55,5 +59,26 @@ describe("renderQuizQuestions shuffles choices every time", () => {
       expect(a.explanationHtml).toBe(`Correct. This beats option ${shown.B}.`);
       expect(b.explanationHtml).toBe(`Not as good as option ${shown.A}.`);
     }
+  });
+});
+
+describe("renderQuizQuestions concept link", () => {
+  beforeEach(() => vi.clearAllMocks());
+
+  it("opens the unit's question list for that topic when the topic has no refresher", async () => {
+    const [rendered] = await renderQuizQuestions(["q-1"], "ap-x");
+    expect(rendered.conceptHref).toBe("/courses/ap-x/units/unit-1?topic=topic-1");
+  });
+
+  it("opens the topic's refresher page when it has one", async () => {
+    vi.mocked(getTopicKeysWithRefreshers).mockResolvedValueOnce(new Set(["unit-1/topic-1"]));
+    const [rendered] = await renderQuizQuestions(["q-1"], "ap-x");
+    expect(rendered.conceptHref).toBe("/courses/ap-x/units/unit-1/topics/topic-1");
+  });
+
+  it("does not send a topic to a refresher that belongs to a different topic", async () => {
+    vi.mocked(getTopicKeysWithRefreshers).mockResolvedValueOnce(new Set(["unit-1/topic-2"]));
+    const [rendered] = await renderQuizQuestions(["q-1"], "ap-x");
+    expect(rendered.conceptHref).toBe("/courses/ap-x/units/unit-1?topic=topic-1");
   });
 });

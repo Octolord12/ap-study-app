@@ -1,5 +1,6 @@
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
-import { getQuestionsByIds } from "@/lib/study/queries";
+import { getQuestionsByIds, getTopicKeysWithRefreshers } from "@/lib/study/queries";
+import { topicHref, topicKey } from "@/lib/study/concept-link";
 import { displayLabelMap, remapChoiceLetters, shuffleChoices } from "@/lib/study/shuffle-choices";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -14,13 +15,13 @@ import type { Diagram } from "@/lib/content/diagram-schema";
 // its own order. `label` stays the authored label (what is sent back, stored
 // and graded); `displayLabel` is the letter shown. See shuffle-choices.ts.
 export async function renderQuizQuestions(questionIds: string[], courseSlug: string): Promise<RenderedQuestion[]> {
-  const questions = await getQuestionsByIds(questionIds);
+  const [questions, topicsWithRefreshers] = await Promise.all([getQuestionsByIds(questionIds), getTopicKeysWithRefreshers(courseSlug)]);
 
   return Promise.all(
     questions.map(async (q) => {
       // conceptLink is "<course-slug>/<unit-slug>/<topic-slug>" (validated at
-      // content-authoring time); there's no dedicated topic page, so this
-      // points back to the unit page pre-filtered to that topic.
+      // content-authoring time). It opens the topic's refresher page when one is written, and the unit page
+      // filtered to that topic otherwise.
       const [, unitPart, topicPart] = q.conceptLink.split("/");
       const choices = shuffleChoices(q.choices);
       const letters = displayLabelMap(choices);
@@ -31,7 +32,7 @@ export async function renderQuizQuestions(questionIds: string[], courseSlug: str
         stemHtml: await renderContentToHtml(withShownLetters(q.stem), courseSlug),
         explanationHtml: await renderContentToHtml(withShownLetters(q.explanation), courseSlug),
         diagram: (q.diagram as Diagram | null) ?? null,
-        conceptHref: `/courses/${courseSlug}/units/${unitPart}?topic=${topicPart}`,
+        conceptHref: topicHref(courseSlug, unitPart, topicPart, topicsWithRefreshers.has(topicKey(unitPart, topicPart))),
         choices: await Promise.all(
           choices.map(async (c) => ({
             id: c.id,

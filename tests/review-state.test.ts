@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { frqContentChanged, nextReviewedFlag, questionContentChanged, type StoredFrq, type StoredQuestion } from "@/lib/content/review-state";
+import { frqContentChanged, nextRefresherState, nextReviewedFlag, questionContentChanged, type StoredFrq, type StoredQuestion } from "@/lib/content/review-state";
 import type { FRQ, Question } from "@/lib/content/schema";
 
 const question: Question = {
@@ -128,5 +128,30 @@ describe("nextReviewedFlag", () => {
   });
   it("lets a file that says reviewed: true win", () => {
     expect(nextReviewedFlag({ reviewed: false }, true, true)).toBe(true);
+  });
+});
+
+describe("nextRefresherState", () => {
+  const file = { body: "The idea.", reviewed: false };
+
+  it("a refresher the database has not seen starts unreviewed", () => {
+    expect(nextRefresherState(null, file)).toEqual({ refresher: "The idea.", refresherReviewed: false });
+    expect(nextRefresherState({ refresher: null, refresherReviewed: false }, file)).toEqual({ refresher: "The idea.", refresherReviewed: false });
+  });
+
+  it("keeps an approval while the text is exactly what was approved", () => {
+    expect(nextRefresherState({ refresher: "The idea.", refresherReviewed: true }, file)).toEqual({ refresher: "The idea.", refresherReviewed: true });
+  });
+
+  it("sends an approved refresher back for review when the text changes", () => {
+    expect(nextRefresherState({ refresher: "An older idea.", refresherReviewed: true }, file)).toEqual({ refresher: "The idea.", refresherReviewed: false });
+  });
+
+  it("a file that says reviewed: true always wins", () => {
+    expect(nextRefresherState({ refresher: "Older.", refresherReviewed: false }, { ...file, reviewed: true })).toEqual({ refresher: "The idea.", refresherReviewed: true });
+  });
+
+  it("clears a stored refresher the files no longer have", () => {
+    expect(nextRefresherState({ refresher: "The idea.", refresherReviewed: true }, null)).toEqual({ refresher: null, refresherReviewed: false });
   });
 });

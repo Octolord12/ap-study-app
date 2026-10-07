@@ -8,6 +8,7 @@ import { UnitQuestionBrowser, type QuestionRow } from "@/components/study/unit-q
 import { Button } from "@/components/ui/button";
 import { BadgeStamp } from "@/components/ui/stamp";
 import { Breadcrumb, Page, PageHeader, RuledList, Section } from "@/components/ui/page";
+import { topicHref } from "@/lib/study/concept-link";
 import { cn } from "cn";
 
 export async function generateMetadata({
@@ -93,6 +94,26 @@ export default async function UnitPage({
           })}
         </ul>
       </Section>
+
+      {unit.topics.some((t) => t.refresher) ? (
+        <Section label="Refreshers" note="A short read on each topic, for when something isn't clicking.">
+          <RuledList>
+            {unit.topics
+              .filter((t) => t.refresher)
+              .map((t) => (
+                <li key={t.id} className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-3 text-sm">
+                  <span>{t.name}</span>
+                  <Link
+                    href={topicHref(course.slug, unit.slug, t.slug, true)}
+                    className="font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline"
+                  >
+                    Read
+                  </Link>
+                </li>
+              ))}
+          </RuledList>
+        </Section>
+      ) : null}
 
       {unit.questions.length > 0 ? (
         <Section label="Boss battle" note="Answer 70% correctly to conquer the unit.">

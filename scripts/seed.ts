@@ -2,8 +2,8 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { getDb } from "../src/lib/db";
 import { Prisma, type Difficulty } from "../src/generated/prisma/client";
-import { CourseSchema, FRQSchema, QuestionSchema, UnitSchema } from "../src/lib/content/schema";
-import { frqContentChanged, nextReviewedFlag, questionContentChanged } from "../src/lib/content/review-state";
+import { CourseSchema, FRQSchema, QuestionSchema, RefresherSchema, UnitSchema } from "../src/lib/content/schema";
+import { frqContentChanged, nextRefresherState, nextReviewedFlag, questionContentChanged } from "../src/lib/content/review-state";
 
 const CONTENT_DIR = path.join(__dirname, "../content");
 
@@ -40,6 +40,20 @@ async function seedCourse(courseSlug: string) {
   const unitIdBySlug = new Map<string, string>();
   const topicIdByKey = new Map<string, string>(); // "<unitSlug>/<topicSlug>" -> id
 
+  // "<unitSlug>/<topicSlug>" -> the refresher the files hold for that topic (a course may not have any yet)
+  const refresherByTopic = new Map<string, { body: string; reviewed: boolean }>();
+  const refreshersDir = path.join(courseDir, "refreshers");
+  if (existsSync(refreshersDir)) {
+    for (const file of readdirSync(refreshersDir).sort()) {
+      for (const entry of loadJson(path.join(refreshersDir, file)) as unknown[]) {
+        const refresher = RefresherSchema.parse(entry);
+        refresherByTopic.set(`${refresher.unit}/${refresher.topic}`, { body: refresher.body, reviewed: refresher.reviewed });
+      }
+    }
+  }
+  let refresherKept = 0;
+  let refresherReset = 0;
+
   const unitFiles = readdirSync(path.join(courseDir, "units")).sort();
   for (const file of unitFiles) {
     const unit = UnitSchema.parse(loadJson(path.join(courseDir, "units", file)));
@@ -64,10 +78,20 @@ async function seedCourse(courseSlug: string) {
     unitIdBySlug.set(unit.slug, dbUnit.id);
 
     for (const topic of unit.topics) {
+      // Same rule as questions: an approved refresher stays approved while its text is unchanged.
+      const storedTopic = await db.topic.findUnique({
+        where: { unitId_slug: { unitId: dbUnit.id, slug: topic.slug } },
+        select: { refresher: true, refresherReviewed: true },
+      });
+      const refresher = nextRefresherState(storedTopic, refresherByTopic.get(`${unit.slug}/${topic.slug}`) ?? null);
+      if (refresher.refresher && storedTopic?.refresher) {
+        if (refresher.refresherReviewed) refresherKept++;
+        else if (storedTopic.refresherReviewed) refresherReset++;
+      }
       const dbTopic = await db.topic.upsert({
         where: { unitId_slug: { unitId: dbUnit.id, slug: topic.slug } },
-        create: { unitId: dbUnit.id, slug: topic.slug, name: topic.name, order: topic.order },
-        update: { name: topic.name, order: topic.order },
+        create: { unitId: dbUnit.id, slug: topic.slug, name: topic.name, order: topic.order, ...refresher },
+        update: { name: topic.name, order: topic.order, ...refresher },
       });
       topicIdByKey.set(`${unit.slug}/${topic.slug}`, dbTopic.id);
     }
@@ -195,7 +219,10 @@ async function seedCourse(courseSlug: string) {
 
   console.log(
     `✓ ${course.name}: ${unitIdBySlug.size} units, ${topicIdByKey.size} topics, ${questionCount} questions, ${frqCount} FRQs` +
-      (approvalsKept + approvalsReset > 0 ? ` (approvals kept: ${approvalsKept}, reset because the content changed: ${approvalsReset})` : ""),
+      (approvalsKept + approvalsReset > 0 ? ` (approvals kept: ${approvalsKept}, reset because the content changed: ${approvalsReset})` : "") +
+      (refresherByTopic.size > 0
+        ? `; ${refresherByTopic.size} refreshers (approvals kept: ${refresherKept}, reset because the text changed: ${refresherReset})`
+        : ""),
   );
 }
 

@@ -26,7 +26,7 @@ export default async function AdminReviewCoursePage({
       <Section label="Units">
         <RuledList>
           {units.map((unit) => {
-            const pending = unit._count.questions + unit._count.frqPrompts;
+            const pending = unit._count.questions + unit._count.frqPrompts + unit._count.topics;
             return (
               <li key={unit.id}>
                 <Link
@@ -37,7 +37,8 @@ export default async function AdminReviewCoursePage({
                   <span className="eyebrow">
                     {pending === 0
                       ? "All reviewed"
-                      : `${unit._count.questions} question${unit._count.questions === 1 ? "" : "s"} · ${unit._count.frqPrompts} FRQ${unit._count.frqPrompts === 1 ? "" : "s"} pending`}
+                      : `${unit._count.questions} question${unit._count.questions === 1 ? "" : "s"} · ${unit._count.frqPrompts} FRQ${unit._count.frqPrompts === 1 ? "" : "s"}` +
+                        `${unit._count.topics > 0 ? ` · ${unit._count.topics} refresher${unit._count.topics === 1 ? "" : "s"}` : ""} pending`}
                   </span>
                 </Link>
               </li>

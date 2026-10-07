@@ -69,3 +69,23 @@ export function nextReviewedFlag(stored: { reviewed: boolean } | null, changed: 
   if (!stored) return false;
   return stored.reviewed && !changed;
 }
+
+// A topic's refresher follows the same rule as a question: an approval stays while the stored text is
+// exactly what the file says now, and resets the moment the seed would change it. `incoming` is null
+// when the file has no refresher for the topic, which clears a stored one (the files are the source).
+export interface StoredRefresher {
+  refresher: string | null;
+  refresherReviewed: boolean;
+}
+
+export function nextRefresherState(
+  stored: StoredRefresher | null,
+  incoming: { body: string; reviewed: boolean } | null,
+): StoredRefresher {
+  if (!incoming) return { refresher: null, refresherReviewed: false };
+  const changed = !stored || stored.refresher !== incoming.body;
+  return {
+    refresher: incoming.body,
+    refresherReviewed: nextReviewedFlag(stored ? { reviewed: stored.refresherReviewed } : null, changed, incoming.reviewed),
+  };
+}

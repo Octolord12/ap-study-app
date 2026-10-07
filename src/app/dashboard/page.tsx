@@ -75,6 +75,12 @@ export default async function DashboardPage() {
     })),
   );
 
+  const weakWithRefresher = new Set(
+    weakest.length > 0
+      ? (await db.topic.findMany({ where: { id: { in: weakest.map((t) => t.topicId) }, refresher: { not: null } }, select: { id: true } })).map((t) => t.id)
+      : [],
+  );
+
   const mastery = computeUnitMastery(
     attempts.map((a) => ({
       questionId: a.questionId,
@@ -128,7 +134,7 @@ export default async function DashboardPage() {
       </Section>
 
       <Section label="Weakest topics" note="Judged on your latest answer to each question.">
-        <WeakTopicsList topics={weakest} />
+        <WeakTopicsList topics={weakest} withRefresher={weakWithRefresher} />
       </Section>
 
       <Section label="Badges">

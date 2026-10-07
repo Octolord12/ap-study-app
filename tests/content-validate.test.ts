@@ -1,6 +1,16 @@
 import { describe, expect, it } from "vitest";
-import { checkExamSupply, checkMarkdownBalance, validateDiagram, validateFRQ, validateQuestion, validateUnit } from "@/lib/content/validate";
-import type { Choice, FRQ, Question, Unit } from "@/lib/content/schema";
+import {
+  REFRESHER_MAX_CHARS,
+  REFRESHER_MIN_CHARS,
+  checkExamSupply,
+  checkMarkdownBalance,
+  validateDiagram,
+  validateFRQ,
+  validateQuestion,
+  validateRefresher,
+  validateUnit,
+} from "@/lib/content/validate";
+import type { Choice, FRQ, Question, Refresher, Unit } from "@/lib/content/schema";
 import type { ForceDiagram, XYGraphDiagram } from "@/lib/content/diagram-schema";
 
 function makeChoice(overrides: Partial<Choice>): Choice {
@@ -246,5 +256,39 @@ describe("validateUnit", () => {
       }),
     );
     expect(problems.some((p) => p.message.includes("duplicate topic slug"))).toBe(true);
+  });
+});
+
+describe("validateRefresher", () => {
+  const known = new Set(["unit-1/topic-1"]);
+  const body = "Words. ".repeat(100);
+  const make = (overrides: Partial<Refresher> = {}): Refresher => ({ unit: "unit-1", topic: "topic-1", body, reviewed: false, ...overrides });
+
+  it("accepts a refresher of sensible length for a known topic", () => {
+    expect(validateRefresher(make(), known)).toEqual([]);
+  });
+
+  it("flags a topic the course does not have", () => {
+    expect(validateRefresher(make({ topic: "nope" }), known).some((p) => p.message.includes("not defined"))).toBe(true);
+  });
+
+  it("flags one that is too short or too long to be useful", () => {
+    expect(validateRefresher(make({ body: "x".repeat(REFRESHER_MIN_CHARS - 1) }), known).some((p) => p.message.includes("at least"))).toBe(true);
+    expect(validateRefresher(make({ body: "x".repeat(REFRESHER_MAX_CHARS + 1) }), known).some((p) => p.message.includes("under"))).toBe(true);
+  });
+
+  it("flags a top-level heading, since the page title already is the topic name", () => {
+    expect(validateRefresher(make({ body: `# Title\n\n${body}` }), known).some((p) => p.message.includes("heading"))).toBe(true);
+    expect(validateRefresher(make({ body: `## Title\n\n${body}` }), known).some((p) => p.message.includes("heading"))).toBe(true);
+    expect(validateRefresher(make({ body: `### Fine\n\n${body}` }), known)).toEqual([]);
+  });
+
+  it("flags a markdown table, which the renderer would show as raw pipes", () => {
+    expect(validateRefresher(make({ body: `${body}\n\n| x | y |\n|---|---|\n| 1 | 2 |` }), known).some((p) => p.message.includes("table"))).toBe(true);
+  });
+
+  it("flags unclosed LaTeX and unclosed code fences", () => {
+    expect(validateRefresher(make({ body: `${body} $x` }), known).some((p) => p.message.includes("LaTeX"))).toBe(true);
+    expect(validateRefresher(make({ body: `${body} \`\`\`java` }), known).some((p) => p.message.includes("code fence"))).toBe(true);
   });
 });

@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { CourseSchema, FRQSchema, QuestionSchema, UnitSchema } from "../src/lib/content/schema";
-import { checkExamSupply, validateFRQ, validateQuestion, validateUnit } from "../src/lib/content/validate";
+import { CourseSchema, FRQSchema, QuestionSchema, RefresherSchema, UnitSchema } from "../src/lib/content/schema";
+import { checkExamSupply, validateFRQ, validateQuestion, validateRefresher, validateUnit } from "../src/lib/content/validate";
 
 const CONTENT_DIR = path.join(__dirname, "../content");
 
@@ -130,6 +130,42 @@ function validateCourse(courseSlug: string) {
   }
 
   for (const problem of checkExamSupply(examFormat.sections, promptTypes)) fail(courseFile, problem.message);
+
+  // --- refreshers (optional: a course gets them one course at a time) ---
+  const refreshersDir = path.join(courseDir, "refreshers");
+  const refresherTopics = new Set<string>();
+
+  if (existsSync(refreshersDir)) {
+    for (const file of readdirSync(refreshersDir)) {
+      const filePath = path.join(refreshersDir, file);
+      const raw = loadJson(filePath);
+      if (!Array.isArray(raw)) {
+        fail(filePath, "expected a JSON array of refreshers");
+        continue;
+      }
+      raw.forEach((entry, index) => {
+        const result = RefresherSchema.safeParse(entry);
+        if (!result.success) {
+          fail(filePath, `refresher[${index}]: ${formatZodError(result.error)}`);
+          return;
+        }
+        const refresher = result.data;
+        const key = `${refresher.unit}/${refresher.topic}`;
+        const label = `${filePath} (${key})`;
+
+        if (refresherTopics.has(key)) fail(label, `more than one refresher for "${key}"`);
+        refresherTopics.add(key);
+
+        for (const problem of validateRefresher(refresher, topicKeys)) fail(label, problem.message);
+      });
+    }
+
+    // Not an error when some topics have none (a topic without a refresher keeps the old "Review this concept"
+    // link to the unit's question list), but say so, so a half-written course is never a surprise.
+    if (refresherTopics.size > 0 && refresherTopics.size < topicKeys.size) {
+      console.log(`  note: ${courseSlug} has refreshers for ${refresherTopics.size} of ${topicKeys.size} topics`);
+    }
+  }
 }
 
 function main() {

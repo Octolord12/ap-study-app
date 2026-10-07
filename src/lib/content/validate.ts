@@ -1,5 +1,5 @@
 import type { Diagram } from "./diagram-schema";
-import type { FRQ, Question, Unit } from "./schema";
+import type { FRQ, Question, Refresher, Unit } from "./schema";
 
 export interface Problem {
   message: string;
@@ -87,6 +87,39 @@ export function validateFRQ(frq: FRQ, knownTopicKeys: Set<string>, examSectionTy
     problems.push(...validateDiagram(frq.diagram));
   }
 
+  return problems;
+}
+
+// A refresher is read in a minute or two: long enough to teach something, short enough that a student
+// who just missed a question will actually read it. The page already shows the topic name as its title,
+// so the body must not start its own top-level headings.
+export const REFRESHER_MIN_CHARS = 400;
+export const REFRESHER_MAX_CHARS = 3500;
+
+export function validateRefresher(refresher: Refresher, knownTopicKeys: Set<string>): Problem[] {
+  const problems: Problem[] = [];
+
+  if (!knownTopicKeys.has(`${refresher.unit}/${refresher.topic}`)) {
+    problems.push({ message: `unit/topic "${refresher.unit}/${refresher.topic}" is not defined for this course` });
+  }
+
+  const length = refresher.body.trim().length;
+  if (length < REFRESHER_MIN_CHARS) {
+    problems.push({ message: `body is ${length} characters; a refresher needs at least ${REFRESHER_MIN_CHARS}` });
+  }
+  if (length > REFRESHER_MAX_CHARS) {
+    problems.push({ message: `body is ${length} characters; keep a refresher under ${REFRESHER_MAX_CHARS}` });
+  }
+  if (/^#{1,2}\s/m.test(refresher.body)) {
+    problems.push({ message: 'body starts a "#" or "##" heading; use "###" (the page already has the topic name as its title)' });
+  }
+
+  // The markdown pipeline has no table support, so a table would show as rows of pipe characters.
+  if (/^\s*\|.*\|\s*$/m.test(refresher.body)) {
+    problems.push({ message: "body has a markdown table; tables are not supported, use a list or a sentence" });
+  }
+
+  problems.push(...checkMarkdownBalance(refresher.body, "body"));
   return problems;
 }
 

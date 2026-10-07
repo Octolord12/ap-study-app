@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { requireAdminUserId } from "@/lib/admin/session";
 import { getUnitUnreviewedContent } from "@/lib/admin/queries";
-import { approveUnitContent, markFrqReviewed, markQuestionReviewed } from "@/lib/admin/actions";
+import { approveUnitContent, markFrqReviewed, markQuestionReviewed, markRefresherReviewed } from "@/lib/admin/actions";
 import { ApproveAllButton } from "@/components/admin/approve-all-button";
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { Button } from "@/components/ui/button";
@@ -48,7 +48,11 @@ export default async function AdminReviewUnitPage({
     })),
   );
 
-  const pendingCount = unit.questions.length + unit.frqPrompts.length;
+  const refreshers = await Promise.all(
+    unit.topics.map(async (topic) => ({ ...topic, refresherHtml: await renderContentToHtml(topic.refresher ?? "", courseSlug) })),
+  );
+
+  const pendingCount = unit.questions.length + unit.frqPrompts.length + unit.topics.length;
   const approveAll =
     pendingCount > 0 ? (
       <ApproveAllButton
@@ -58,6 +62,7 @@ export default async function AdminReviewUnitPage({
           unit.id,
           unit.questions.map((q) => q.id),
           unit.frqPrompts.map((f) => f.id),
+          unit.topics.map((t) => t.id),
         )}
       />
     ) : null;
@@ -74,12 +79,28 @@ export default async function AdminReviewUnitPage({
           />
         }
         title={unit.name}
-        description={unit.questions.length === 0 && unit.frqPrompts.length === 0 ? "Everything in this unit has been reviewed." : undefined}
+        description={pendingCount === 0 ? "Everything in this unit has been reviewed." : undefined}
       />
 
       {approveAll ? (
         <Section label="Whole unit" note="Or read each item below and approve it one at a time.">
           {approveAll}
+        </Section>
+      ) : null}
+
+      {refreshers.length > 0 ? (
+        <Section label={`Refreshers (${refreshers.length})`} note="Check the facts and the examples, not just the wording.">
+          <div className="space-y-8">
+            {refreshers.map((topic) => (
+              <Sheet key={topic.id} lined={paperLined}>
+                <p className="eyebrow">Refresher · {topic.name}</p>
+                <Html html={topic.refresherHtml} className="mt-2" />
+                <form action={markRefresherReviewed.bind(null, topic.id)} className="mt-5">
+                  <Button type="submit">Approve</Button>
+                </form>
+              </Sheet>
+            ))}
+          </div>
         </Section>
       ) : null}
 

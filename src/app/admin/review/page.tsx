@@ -19,12 +19,13 @@ export default async function AdminReviewIndexPage() {
       />
       <Section label="Courses">
         <RuledList>
-          {courses.map(({ course, questionCount, frqCount }) => (
+          {courses.map(({ course, questionCount, frqCount, refresherCount }) => (
             <li key={course.id}>
               <Link href={`/admin/review/${course.slug}`} className="group flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4">
                 <span className="heading text-xl underline-offset-4 decoration-2 group-hover:underline">{course.name}</span>
                 <span className="eyebrow">
-                  {questionCount} question{questionCount === 1 ? "" : "s"} · {frqCount} FRQ{frqCount === 1 ? "" : "s"} pending
+                  {questionCount} question{questionCount === 1 ? "" : "s"} · {frqCount} FRQ{frqCount === 1 ? "" : "s"}
+                  {refresherCount > 0 ? ` · ${refresherCount} refresher${refresherCount === 1 ? "" : "s"}` : ""} pending
                 </span>
               </Link>
             </li>

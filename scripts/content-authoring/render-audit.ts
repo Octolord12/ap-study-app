@@ -1,6 +1,6 @@
-// Renders every string of a course's *-hard.json files through the real content pipeline
+// Renders every string of a course's *-hard.json files, and every topic refresher, through the real content pipeline
 // and reports KaTeX errors and raw LaTeX left visible.  Usage: npx tsx scripts/content-authoring/render-audit.ts ap-physics-1
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { renderChoiceTextToHtml, renderContentToHtml } from "../../src/lib/content/render";
 
@@ -37,6 +37,13 @@ async function main() {
         await check(`${q.id} sample`, q.sampleResponse);
         for (const r of q.rubric) await check(`${q.id} ${r.id}`, r.description);
       }
+    }
+  }
+  const refresherDir = path.join(ROOT, "refreshers");
+  if (existsSync(refresherDir)) {
+    for (const f of readdirSync(refresherDir).filter((name) => name.endsWith(".json"))) {
+      files.push(path.join(refresherDir, f));
+      for (const r of JSON.parse(readFileSync(path.join(refresherDir, f), "utf-8"))) await check(`${r.unit}/${r.topic} refresher`, r.body);
     }
   }
   console.log(JSON.stringify({ course: COURSE, files: files.length, strings, problems: bad.length }));

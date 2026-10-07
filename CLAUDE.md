@@ -169,7 +169,8 @@ Full schema: `prisma/schema.prisma`. Summary:
 - **Content** (authored in `/content` as JSON → validated → seeded here; the
   app only reads from the DB at runtime): `Course` → `Unit` → `Topic` →
   `Question` (+ `Choice`) / `FRQPrompt` (with a `type`: `FRQ`, `SAQ`, `DBQ` or `LEQ`, see
-  "Exam simulation" below).
+  "Exam simulation" below). `Topic.refresher` (markdown, nullable) and `Topic.refresherReviewed` hold the
+  topic's written refresher: see "Topic refreshers".
 - **Auth.js tables**: `User`, `Account`, `Session`, `VerificationToken` (shapes
   fixed by `@auth/prisma-adapter`, don't rename fields).
 - **Progress**: `Enrollment`, `QuestionAttempt`, `FRQAttempt`, `Bookmark`,
@@ -191,10 +192,9 @@ Full schema: `prisma/schema.prisma`. Summary:
 - **Marketing**: `WaitlistSignup` (`email` unique, stored lowercased; deliberately
   not tied to `User`). Added by migration `20261004163500_add_waitlist_signup`.
 
-There's no dedicated topic-detail route: "browse by topic" is the unit page's
-topic filter (`?topic=<slug>`), which is also what a question's "review this
-concept" link points at. Revisit only if topics need their own content beyond
-filtering (e.g. topic-level notes).
+A topic with a written refresher has its own page (`/courses/<course>/units/<unit>/topics/<topic>`, see
+"Topic refreshers"). Without one, "browse by topic" is the unit page's topic filter (`?topic=<slug>`), which is
+also what a question's "Review this concept" link falls back to.
 
 ### Practice modes (Milestone 4)
 
@@ -384,7 +384,7 @@ SOPIPA) may also apply to how member lists and progress data are handled.
 
 ### Content pipeline (Milestone 2)
 
-`/content/<course-slug>/{course.json, units/*.json, questions/*.json, frqs/*.json}`
+`/content/<course-slug>/{course.json, units/*.json, questions/*.json, frqs/*.json, refreshers/*.json}`
 is the source of truth, authored by hand or generated. Nothing in the app reads
 these files directly.
 
@@ -1294,7 +1294,7 @@ From a parent's-eye review of the app (2026-10-05).
 - Not done from the review (needs decisions or something other than code): exam date and study
   plan (small migration), read-only parent link (new table), self-serve change password / delete
   account, forgot password and parent email (need an email service), real teacher review,
-  testimonials, a real `/teacher` role, refresher notes/video, an AI check for free-response answers.
+  testimonials, a real `/teacher` role, refresher videos (refresher *notes* are built, see "Topic refreshers"), an AI check for free-response answers.
 - Verified signed in end to end on 2026-10-05 with a scratch account (deleted afterwards): exam
   resume after reload, auto-submit at zero carrying the saved answers, the Progress sections,
   and the exam breakdown link. The About page and part-2 components have unit tests and were
@@ -1378,6 +1378,50 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
   account sends none.
 - The privacy page says deletion and password change are in Settings; it also still
   promises access/correction and waitlist removal without an account by request.
+
+## Topic refreshers
+
+A short written read on each topic, for a student who just missed a question or is starting a unit. Built
+2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB is written (35 topics); the other
+four courses are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
+one course first, the same review as questions, a page per topic.
+
+- **Data**: `Topic.refresher String? @db.Text` and `Topic.refresherReviewed Boolean @default(false)`,
+  migration `20261006200000_add_topic_refresher` (two columns, additive). **Apply it before deploying code
+  that reads Topic**: Prisma selects every column, so with the new client against an un-migrated database
+  every Topic query fails, including the seed's. Order: migrate, seed, push.
+- **Content**: `content/<course>/refreshers/unit-N.json`, an array of `{ unit, topic, body, reviewed }`
+  (`RefresherSchema`). `validateRefresher` (`lib/content/validate.ts`): the topic exists, 400 to 3,500
+  characters, no `#`/`##` headings (the page title is the topic name; use `###`), no markdown table (the
+  renderer has no GFM, so a table prints as pipes), balanced `$` and code fences. A course may have some
+  topics without one (the validate script says so); a topic without one keeps the old "Review this
+  concept" behavior.
+- **Layout of a refresher** (a convention, not enforced): `### The idea`, `### Key facts`,
+  `### Watch out for`, `### Worked example`. About 1,000 to 1,700 characters; math in `$...$`.
+- **Seed** (`scripts/seed.ts`): writes `refresher` and `refresherReviewed` per topic through
+  `nextRefresherState` (`lib/content/review-state.ts`, pure and tested), the same rule as questions: an
+  approval stays while the text is exactly what was approved and resets when it changes, and a topic whose
+  file entry is gone has its refresher cleared. The summary line prints `N refreshers (approvals kept: x,
+  reset because the text changed: y)`.
+- **Where students meet it**: the topic page (`app/courses/[courseSlug]/units/[unitSlug]/topics/[topicSlug]`)
+  shows the refresher, a "Practice this topic" button (a quiz of up to 10 of the topic's questions through the
+  generic `/courses/<c>/quiz` route, with the back link pointing at the refresher), the student's own tally
+  for the topic, previous/next topic, a "Report a problem with this refresher" mail link (`reportMailto`
+  gained a `refresher` kind, id `<course>/<unit>/<topic>`), and, while unreviewed, a line saying it has not
+  been checked by a person. A topic with no refresher redirects to the unit page's topic filter. Links in:
+  every question's "Review this concept" (`topicHref` in `lib/study/concept-link.ts`, which decides between
+  the two destinations; `renderQuizQuestions` asks `getTopicKeysWithRefreshers` once per render), a
+  "Refreshers" section on the unit page, and a "Refresher" link beside "Practice" in Progress's Weakest topics.
+- **Review**: `/admin/review` lists each unit's unreviewed refreshers (rendered, with Approve) above its
+  questions; "Approve all" and the pending counts include them (`approveUnitContent` gained an optional
+  fourth argument, the topic ids; `markRefresherReviewed` approves one). The About page counts refreshers
+  with the questions in "N of M have been checked by a person" and says they were written with AI help.
+- **Authoring** (Calc AB): `scripts/content-authoring/ap-calc-refreshers/u1.py..u8.py` write the JSON.
+  Each script re-checks its worked examples with sympy before writing, so a number in the text can't drift
+  from the maths; edit the scripts, not the JSON. `render-audit.ts` now also renders every refresher
+  (35 for Calc AB: 0 KaTeX errors, 0 raw LaTeX).
+- **Not done**: refreshers for CSA, World, Physics 1 and U.S. History (each needs its own authoring
+  pass); no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
 ## Hard sets (harder questions, added alongside)
 
@@ -1776,6 +1820,9 @@ in app logic — updating them should be a data edit.
       alongside the originals. All four are seeded into the database and deployed (2026-10-05;
       row counts and per-question correct-answer/difficulty/diagram checked against the files after
       seeding). See "Hard sets" above.
+- [ ] **Post-launch: topic refreshers.** Engine built and tested (schema, validation, seed, topic page,
+      links, review, About count) and Calc AB's 35 refreshers written; **not live until the migration is
+      applied, Calc AB is seeded and the commits are pushed**. Other courses to follow. See "Topic refreshers".
 - [x] **Post-launch: AP U.S. History.** A fifth course at full size (405 MCQs + 53 free-response,
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course

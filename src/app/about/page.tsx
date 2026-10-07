@@ -22,15 +22,18 @@ function list(names: string[]): string {
 // described, not named (also the owner's choice).
 export default async function AboutPage() {
   const db = getDb();
-  const [courses, questions, reviewedQuestions, prompts, reviewedPrompts] = await Promise.all([
+  const [courses, questions, reviewedQuestions, prompts, reviewedPrompts, refreshers, reviewedRefreshers] = await Promise.all([
     listCourses(),
     db.question.count(),
     db.question.count({ where: { reviewed: true } }),
     db.fRQPrompt.count(),
     db.fRQPrompt.count({ where: { reviewed: true } }),
+    db.topic.count({ where: { refresher: { not: null } } }),
+    db.topic.count({ where: { refresher: { not: null }, refresherReviewed: true } }),
   ]);
-  const total = questions + prompts;
-  const reviewed = reviewedQuestions + reviewedPrompts;
+  // The refreshers are written with AI help like the questions, so they are counted the same way.
+  const total = questions + prompts + refreshers;
+  const reviewed = reviewedQuestions + reviewedPrompts + reviewedRefreshers;
 
   return (
     <Page>
@@ -51,7 +54,7 @@ export default async function AboutPage() {
       <Section label="The questions">
         <div className="reading max-w-[64ch] space-y-3">
           <p>
-            The questions, answers and explanations were written with the help of AI. For math and physics, the calculated answers were checked with
+            The questions, answers, explanations and topic refreshers were written with the help of AI. For math and physics, the calculated answers were checked with
             software.
           </p>
           <p>

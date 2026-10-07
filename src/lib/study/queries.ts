@@ -1,4 +1,5 @@
 import { getDb } from "@/lib/db";
+import { topicKey } from "@/lib/study/concept-link";
 import { rankCramQuestions, type CramCandidate } from "@/lib/study/cram";
 
 export function listCourses() {
@@ -194,4 +195,35 @@ export async function getUserQuestionState(userId: string, questionIds: string[]
   }
 
   return { bookmarkedIds, latestCorrectByQuestion };
+}
+
+// "<unit>/<topic>" for every topic of the course that has a written refresher. One small query, used to
+// decide where each "Review this concept" link goes (see concept-link.ts).
+export async function getTopicKeysWithRefreshers(courseSlug: string): Promise<Set<string>> {
+  const topics = await getDb().topic.findMany({
+    where: { refresher: { not: null }, unit: { course: { slug: courseSlug } } },
+    select: { slug: true, unit: { select: { slug: true } } },
+  });
+  return new Set(topics.map((t) => topicKey(t.unit.slug, t.slug)));
+}
+
+// A topic with its unit, course, its unit's other topics (for previous/next) and its questions.
+export async function getTopicWithQuestions(courseSlug: string, unitSlug: string, topicSlug: string) {
+  const db = getDb();
+  const course = await db.course.findUnique({ where: { slug: courseSlug } });
+  if (!course) return null;
+
+  const unit = await db.unit.findUnique({
+    where: { courseId_slug: { courseId: course.id, slug: unitSlug } },
+    include: { topics: { orderBy: { order: "asc" }, select: { id: true, slug: true, name: true, order: true, refresher: true } } },
+  });
+  if (!unit) return null;
+
+  const topic = await db.topic.findUnique({
+    where: { unitId_slug: { unitId: unit.id, slug: topicSlug } },
+    include: { questions: { select: { id: true } } },
+  });
+  if (!topic) return null;
+
+  return { course, unit, topic };
 }

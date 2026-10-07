@@ -59,6 +59,22 @@ describe("WeakTopicsList", () => {
     expect(screen.getByRole("link", { name: "Practice" })).toHaveAttribute("href", "/courses/ap-calc/units/unit-3?topic=chain-rule");
   });
 
+  it("offers the refresher first when the topic has one, and still the practice link", () => {
+    render(
+      <WeakTopicsList
+        withRefresher={new Set(["t1"])}
+        topics={[
+          { topicId: "t1", topicName: "The Chain Rule", topicSlug: "chain-rule", unitSlug: "unit-3", unitName: "Composite Functions", courseSlug: "ap-calc", courseName: "AP Calculus AB", attempted: 5, correct: 2, accuracyPercent: 40 },
+          { topicId: "t2", topicName: "Implicit Differentiation", topicSlug: "implicit", unitSlug: "unit-3", unitName: "Composite Functions", courseSlug: "ap-calc", courseName: "AP Calculus AB", attempted: 4, correct: 1, accuracyPercent: 25 },
+        ]}
+      />,
+    );
+    const refreshers = screen.getAllByRole("link", { name: "Refresher" });
+    expect(refreshers).toHaveLength(1);
+    expect(refreshers[0]).toHaveAttribute("href", "/courses/ap-calc/units/unit-3/topics/chain-rule");
+    expect(screen.getAllByRole("link", { name: "Practice" })).toHaveLength(2);
+  });
+
   it("explains the empty state instead of showing a blank", () => {
     render(<WeakTopicsList topics={[]} />);
     expect(screen.getByText(/None right now/)).toBeInTheDocument();

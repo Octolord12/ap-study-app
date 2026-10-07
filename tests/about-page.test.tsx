@@ -2,15 +2,18 @@ import { render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
-  counts: { questions: 1050, reviewedQuestions: 0, prompts: 105, reviewedPrompts: 0 },
+  counts: { questions: 1050, reviewedQuestions: 0, prompts: 105, reviewedPrompts: 0, refreshers: 0, reviewedRefreshers: 0 },
   db: {
     question: { count: vi.fn() },
     fRQPrompt: { count: vi.fn() },
+    topic: { count: vi.fn() },
   },
 }));
 
 mocks.db.question.count.mockImplementation(async (args?: { where?: { reviewed?: boolean } }) => (args?.where?.reviewed ? mocks.counts.reviewedQuestions : mocks.counts.questions));
 mocks.db.fRQPrompt.count.mockImplementation(async (args?: { where?: { reviewed?: boolean } }) => (args?.where?.reviewed ? mocks.counts.reviewedPrompts : mocks.counts.prompts));
+
+mocks.db.topic.count.mockImplementation(async (args?: { where?: { refresherReviewed?: boolean } }) => (args?.where?.refresherReviewed ? mocks.counts.reviewedRefreshers : mocks.counts.refreshers));
 
 vi.mock("@/lib/db", () => ({ getDb: () => mocks.db }));
 vi.mock("@/lib/study/queries", () => ({
@@ -26,7 +29,7 @@ async function renderPage() {
 
 describe("About and FAQ", () => {
   beforeEach(() => {
-    mocks.counts = { questions: 1050, reviewedQuestions: 0, prompts: 105, reviewedPrompts: 0 };
+    mocks.counts = { questions: 1050, reviewedQuestions: 0, prompts: 105, reviewedPrompts: 0, refreshers: 0, reviewedRefreshers: 0 };
   });
 
   it("names the courses from the database, and says it was built by one person, with no name", async () => {
@@ -42,10 +45,17 @@ describe("About and FAQ", () => {
   });
 
   it("states the real review count once some content has been approved", async () => {
-    mocks.counts = { questions: 1050, reviewedQuestions: 200, prompts: 105, reviewedPrompts: 5 };
+    mocks.counts = { questions: 1050, reviewedQuestions: 200, prompts: 105, reviewedPrompts: 5, refreshers: 0, reviewedRefreshers: 0 };
     const { container } = await renderPage();
     expect(container.textContent).toContain("205 of 1,155 have been checked by a person");
     expect(container.textContent).not.toMatch(/None of them/);
+  });
+
+  it("counts the topic refreshers with the questions, because they are written the same way", async () => {
+    mocks.counts = { questions: 1050, reviewedQuestions: 200, prompts: 105, reviewedPrompts: 5, refreshers: 35, reviewedRefreshers: 10 };
+    const { container } = await renderPage();
+    expect(container.textContent).toContain("215 of 1,190 have been checked by a person");
+    expect(container.textContent).toMatch(/topic refreshers were written with the help of AI/);
   });
 
   it("does not mention price, because the owner chose not to say yet", async () => {

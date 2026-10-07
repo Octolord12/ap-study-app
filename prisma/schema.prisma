@@ -158,6 +158,12 @@ model Topic {
   slug     String
   name     String
 
+  // A short written refresher on the topic (markdown, KaTeX and code fences allowed), authored in
+  // content/<course>/refreshers/. Null until one is written. `refresherReviewed` works like
+  // Question.reviewed: kept across a re-seed while the text is unchanged (see lib/content/review-state.ts).
+  refresher         String? @db.Text
+  refresherReviewed Boolean @default(false)
+
   unit      Unit       @relation(fields: [unitId], references: [id], onDelete: Cascade)
   questions Question[]
   frqPrompts FRQPrompt[]
