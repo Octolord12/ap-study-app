@@ -1382,8 +1382,8 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 ## Topic refreshers
 
 A short written read on each topic, for a student who just missed a question or is starting a unit. Built
-2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB is written and live (35 topics);
-the other four courses are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
+2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB is written and live (35 topics).
+CSA is written (39 topics) but not yet seeded; World, Physics 1 and U.S. History are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
 one course first, the same review as questions, a page per topic.
 
 - **Data**: `Topic.refresher String? @db.Text` and `Topic.refresherReviewed Boolean @default(false)`,
@@ -1423,12 +1423,20 @@ one course first, the same review as questions, a page per topic.
   (redirects to the unit's question list), the admin review pages and the About count (2,216 of 2,251, the 35
   refreshers in the total). Equations written `$$...$$` on one line render inline, so the authoring helper
   expands them to display blocks (`$$` on their own lines).
+- **Authoring** (CSA): `scripts/content-authoring/ap-csa-refreshers/u1.py..u10.py`. Every Java example goes
+  through `code(...)`, which returns the fenced block and records the full program with the output the text
+  claims; `finish()` writes the JSON and, **when a JDK is available** (`JAVA_HOME`, or a Temurin JDK unpacked in
+  the session scratch folder), compiles and runs every recorded program and fails if the real output differs.
+  **The CSA refreshers were written with no JDK on the machine, so their 39 refreshers' ~60 examples were
+  hand-traced, not machine-checked** (the scripts print how many were not checked). Run them again with a JDK
+  before relying on them. Avoid `$` in examples (the validator reads it as unclosed math).
 - **Authoring** (Calc AB): `scripts/content-authoring/ap-calc-refreshers/u1.py..u8.py` write the JSON.
+  Both courses write through `scripts/content-authoring/refreshers_lib.py`.
   Each script re-checks its worked examples with sympy before writing, so a number in the text can't drift
   from the maths; edit the scripts, not the JSON. `render-audit.ts` now also renders every refresher
   (35 for Calc AB: 0 KaTeX errors, 0 raw LaTeX).
-- **Not done**: refreshers for CSA, World, Physics 1 and U.S. History (each needs its own authoring
-  pass); no refresher videos; no search. Whether a student has read a refresher is not tracked.
+- **Not done**: refreshers for World, Physics 1 and U.S. History (each needs its own authoring pass), and
+  seeding CSA's; no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
 ## Hard sets (harder questions, added alongside)
 
@@ -1829,7 +1837,8 @@ in app logic — updating them should be a data edit.
       seeding). See "Hard sets" above.
 - [x] **Post-launch: topic refreshers.** Engine built and tested (schema, validation, seed, topic page,
       links, review, About count) and Calc AB's 35 refreshers written, seeded and live (unreviewed until the
-      owner approves them in `/admin/review`). The other four courses are still to do. See "Topic refreshers".
+      owner approves them in `/admin/review`). CSA's 39 are written but not yet seeded; the other three courses
+      are still to do. See "Topic refreshers".
 - [x] **Post-launch: AP U.S. History.** A fifth course at full size (405 MCQs + 53 free-response,
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course

@@ -102,3 +102,15 @@ for u in 1 2 3 4 5 6 7 8; do python3 u$u.py; done
 cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-calc
 ```
 
+## Topic refreshers (CSA)
+
+`ap-csa-refreshers/u1.py..u10.py` write `content/ap-csa/refreshers/unit-N.json`. Java examples go through `code()`,
+which records the program and the output the text claims; with a JDK (`JAVA_HOME`) `finish()` compiles and runs every
+one and fails on a mismatch. Without one it says how many examples were not machine-checked.
+
+```bash
+cd scripts/content-authoring/ap-csa-refreshers
+for u in 1 2 3 4 5 6 7 8 9 10; do python3 u$u.py; done
+cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-csa
+```
+
