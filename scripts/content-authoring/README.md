@@ -114,3 +114,16 @@ for u in 1 2 3 4 5 6 7 8 9 10; do python3 u$u.py; done
 cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-csa
 ```
 
+
+## Topic refreshers (Physics 1)
+
+`ap-physics-1-refreshers/u1.py..u8.py` write `content/ap-physics-1/refreshers/unit-N.json`. Each script recomputes
+its worked examples in Python first (`eq()` asserts the value equals the number printed in the text, `sig()` does
+the same to significant figures), using `g = 9.8 m/s^2` and the constants from `common.py`, so a number in the text
+cannot drift from the arithmetic. Rotational inertia and similar formulas are written as the question bank writes them.
+
+```bash
+cd scripts/content-authoring/ap-physics-1-refreshers
+for u in 1 2 3 4 5 6 7 8; do python3 u$u.py; done
+cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-physics-1
+```
