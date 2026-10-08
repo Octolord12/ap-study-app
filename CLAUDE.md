@@ -1382,8 +1382,8 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 ## Topic refreshers
 
 A short written read on each topic, for a student who just missed a question or is starting a unit. Built
-2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB (35 topics) and CSA (39) are
-written and live; World, Physics 1 and U.S. History are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
+2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB (35 topics), CSA (39) and Physics 1
+(32) are written and live; World History and U.S. History are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
 one course first, the same review as questions, a page per topic.
 
 - **Data**: `Topic.refresher String? @db.Text` and `Topic.refresherReviewed Boolean @default(false)`,
@@ -1437,7 +1437,24 @@ one course first, the same review as questions, a page per topic.
   Each script re-checks its worked examples with sympy before writing, so a number in the text can't drift
   from the maths; edit the scripts, not the JSON. `render-audit.ts` now also renders every refresher
   (35 for Calc AB: 0 KaTeX errors, 0 raw LaTeX).
-- **Not done**: refreshers for World, Physics 1 and U.S. History (each needs its own authoring pass); no refresher videos; no search. Whether a student has read a refresher is not tracked.
+- **Authoring** (Physics 1): `scripts/content-authoring/ap-physics-1-refreshers/u1.py..u8.py`, same helper. Each script
+  recomputes its worked examples in plain Python before writing: `eq()` / `sig()` (`common.py`) assert that the number
+  printed in the text is the computed one (`g = 9.8 m/s^2`, `G`, Earth's mass and radius as the question bank uses them),
+  so a number cannot drift. What is *not* machine-checked is the physics in the sentences (what a quantity means, which
+  way a force points); that was proofread, and it is what the owner's review is for. 32 refreshers: 0 KaTeX errors, 0 raw
+  LaTeX. Write a chain of steps as an `aligned` block, one step per line, never `\quad\Rightarrow\quad` on one line (see below).
+- **Wide equations on a phone** (found 2026-10-07, testing Physics 1): KaTeX sets a display equation to `nowrap` and
+  nothing handled overflow, so a long one made the page wider than the screen (the mobile browser zooms out to fit it,
+  which is also why a `scrollWidth > innerWidth` check at 375px said "fine": the viewport had grown to fit). The text
+  column on a 375px phone is **343px**. 12 of Physics 1's first 21 display equations were wider (up to 682px), as are
+  8 of Calc AB's 23 (up to 476px). `globals.css` now gives `.katex-display` `overflow-x: auto` so a long one scrolls
+  inside its own block. Scrolling clips the box, and fractions and big brackets stick out of it by up to 6px, so it also
+  has `padding-block: 0.5em` (taken from KaTeX's 1em margin, so spacing is unchanged); measured 0 clipped of 33 equations.
+  Physics 1's were rewritten as aligned lines so none needs scrolling. **Calc AB's 8 still scroll sideways on a phone**:
+  splitting them would be a content edit and a reseed. To measure, fetch each page as the signed-in user, inject its
+  `.katex-display` HTML into a 343px `.reading.prose` box and read `scrollWidth` (a plain fetch of the page works; the
+  refresher body is in the streamed, hidden block, so `main` is empty in the fetched copy: query `body`).
+- **Not done**: refreshers for World History and U.S. History (each needs its own authoring pass); no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
 ## Hard sets (harder questions, added alongside)
 
@@ -1839,7 +1856,8 @@ in app logic — updating them should be a data edit.
 - [x] **Post-launch: topic refreshers.** Engine built and tested (schema, validation, seed, topic page,
       links, review, About count) and Calc AB's 35 refreshers written, seeded and live (unreviewed until the
       owner approves them in `/admin/review`). CSA's 39 followed (seeded 2026-10-06 after its Java examples were
-      compiled and run; its 500 approvals were kept); the other three courses are still to do. See "Topic refreshers".
+      compiled and run; its 500 approvals were kept). Physics 1's 32 followed (2026-10-07, seeded twice: the second time
+      after the long equations were split; its 400 approvals were kept). World History and U.S. History are still to do. See "Topic refreshers".
 - [x] **Post-launch: AP U.S. History.** A fifth course at full size (405 MCQs + 53 free-response,
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
@@ -1931,6 +1949,11 @@ in app logic — updating them should be a data edit.
   real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
   3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
   real student's, matched the post-seed snapshot.
+  The Physics 1 refreshers were checked with `scratch_phys` / `scratch-phys@example.com` (2026-10-07): all 32 topic
+  pages fetched as that user (485 formulas, 21 display equations, 0 KaTeX errors, all four sections on every page), a
+  phone-width look at Rotational Equilibrium, "Practice this topic", "Review this concept" from a missed question, and
+  the unit page's Refreshers list. Deleted afterwards (it was not promoted to ADMIN); every per-user and per-table count
+  matched the pre-seed snapshot.
   The CSA refreshers were checked the same way with a second `scratch_refresh` account (the topic page with
   syntax-highlighted code at desktop and 375px, no overflow, and the unit page's links), deleted afterwards
   with every count matching the baseline.
