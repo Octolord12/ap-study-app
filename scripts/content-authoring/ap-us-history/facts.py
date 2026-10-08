@@ -55,7 +55,7 @@ for path in sorted(glob.glob("../../../content/ap-us-history/**/*.json", recursi
         elif isinstance(x, dict):
             for k, v in x.items(): walk(v, where + "." + k)
     for item in data:
-        walk(item, item["id"])
+        walk(item, item.get("id") or f'{item["unit"]}/{item["topic"]}')
     for where, text in strings:
         for pat, ok in EVENTS.items():
             for m in re.finditer(pat, text):

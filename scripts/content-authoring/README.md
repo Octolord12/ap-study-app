@@ -127,3 +127,18 @@ cd scripts/content-authoring/ap-physics-1-refreshers
 for u in 1 2 3 4 5 6 7 8; do python3 u$u.py; done
 cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-physics-1
 ```
+
+## Topic refreshers (U.S. History)
+
+`ap-us-history-refreshers/u1.py..u9.py` write `content/ap-us-history/refreshers/unit-N.json`. History has nothing to
+compute or compile, so none of it is machine-verified: claims are kept to well-established, CED-level facts, and
+`ap-us-history/facts.py` (which now also reads the refreshers) checks every named event followed by a year against its
+date table. The "Worked example" is a short-answer prompt with a sketch of a strong response. Avoid `$` (a lone dollar
+amount trips the validator's unclosed-math check; write "15 million dollars"), single-asterisk italics and em dashes.
+
+```bash
+cd scripts/content-authoring/ap-us-history-refreshers
+for u in 1 2 3 4 5 6 7 8 9; do python3 u$u.py; done
+cd ../ap-us-history && python3 facts.py          # expect only the known "Georgia" / "Monroe Doctrine" / "farewell address" false positives
+cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-us-history
+```
