@@ -1382,8 +1382,8 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 ## Topic refreshers
 
 A short written read on each topic, for a student who just missed a question or is starting a unit. Built
-2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB (35 topics), CSA (39) and Physics 1
-(32) are written and live; World History and U.S. History are not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
+2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB (35 topics), CSA (39), Physics 1
+(32) and U.S. History (46) are written and live; World History is not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
 one course first, the same review as questions, a page per topic.
 
 - **Data**: `Topic.refresher String? @db.Text` and `Topic.refresherReviewed Boolean @default(false)`,
@@ -1454,7 +1454,20 @@ one course first, the same review as questions, a page per topic.
   splitting them would be a content edit and a reseed. To measure, fetch each page as the signed-in user, inject its
   `.katex-display` HTML into a 343px `.reading.prose` box and read `scrollWidth` (a plain fetch of the page works; the
   refresher body is in the streamed, hidden block, so `main` is empty in the fetched copy: query `body`).
-- **Not done**: refreshers for World History and U.S. History (each needs its own authoring pass); no refresher videos; no search. Whether a student has read a refresher is not tracked.
+- **Authoring** (U.S. History): `scripts/content-authoring/ap-us-history-refreshers/u1.py..u9.py`, same helper. History has
+  nothing to compute or compile, so **none of it is machine-verified**. Claims are kept to well-established CED-level
+  facts; `ap-us-history/facts.py` (which now also reads refreshers: it falls back to unit/topic when an item has no `id`)
+  checks every named event followed by a year against its date table and found no real disagreement (its 5 hits are all the
+  known "Georgia" false positive in *Worcester v. Georgia*); and every one of the 391 year mentions was read in context.
+  That catches wrong dates and wording slips, not every framing problem, so the owner's review is the real check. The
+  fourth section is a short-answer prompt with a sketch of a strong response (claim, specific evidence, the link between
+  them) instead of a calculation. Rounded figures to look at first: about 120,000 Japanese Americans interned, about
+  180,000 Black Union soldiers, at least 620,000 Civil War deaths, nearly 3,000 on 9/11, 150 or more at Wounded Knee.
+  Authoring slips the validator caught or I fixed while proofreading: a lone `$15 million` (the validator reads a single
+  `$` as unclosed math, so write "15 million dollars"), Salem (about 20 executions, not 19), the 1808 slave-trade ban
+  (Congress ended it; the Constitution only allowed that), Gettysburg ("bloodiest", not "largest"), and the Knights of
+  Labor (they excluded Chinese workers, so not "many races").
+- **Not done**: refreshers for World History (it needs its own authoring pass; History, like U.S. History, can't be machine-verified); no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
 ## Hard sets (harder questions, added alongside)
 
@@ -1857,7 +1870,8 @@ in app logic — updating them should be a data edit.
       links, review, About count) and Calc AB's 35 refreshers written, seeded and live (unreviewed until the
       owner approves them in `/admin/review`). CSA's 39 followed (seeded 2026-10-06 after its Java examples were
       compiled and run; its 500 approvals were kept). Physics 1's 32 followed (2026-10-07, seeded twice: the second time
-      after the long equations were split; its 400 approvals were kept). World History and U.S. History are still to do. See "Topic refreshers".
+      after the long equations were split; its 400 approvals were kept). U.S. History's 46 followed (2026-10-07; written from well-established facts and proofread, not machine-checked; its 458
+      approvals were kept). World History is the only course still to do. See "Topic refreshers".
 - [x] **Post-launch: AP U.S. History.** A fifth course at full size (405 MCQs + 53 free-response,
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
@@ -1954,6 +1968,12 @@ in app logic — updating them should be a data edit.
   phone-width look at Rotational Equilibrium, "Practice this topic", "Review this concept" from a missed question, and
   the unit page's Refreshers list. Deleted afterwards (it was not promoted to ADMIN); every per-user and per-table count
   matched the pre-seed snapshot.
+  The U.S. History refreshers were checked with `scratch_hist` / `scratch-hist@example.com` (2026-10-07): all 46 topic pages
+  fetched as that user (four sections, rendered lists, no leftover markup, a practice link, the report link and the
+  "not checked by a person" notice on every page), the topic page at desktop and 375px (no overflow), "Practice this
+  topic", "Review this concept" from an answered question, and the unit page's Refreshers list. Deleted afterwards (not
+  promoted to ADMIN); every per-user and per-table count matched the pre-seed snapshot, compared with keys sorted (the
+  snapshot lists courses in database order, which can change after a seed).
   The CSA refreshers were checked the same way with a second `scratch_refresh` account (the topic page with
   syntax-highlighted code at desktop and 375px, no overflow, and the unit page's links), deleted afterwards
   with every count matching the baseline.
