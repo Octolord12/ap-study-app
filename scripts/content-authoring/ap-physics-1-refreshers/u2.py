@@ -84,7 +84,12 @@ A $10 \text{ kg}$ sign hangs from two cables, each at $30^\circ$ above the horiz
 
 Weight: $mg = 98 \text{ N}$. The horizontal pulls cancel by symmetry. Vertically, the two cables together hold the weight:
 
-$$2T\sin 30^\circ = 98 \quad\Rightarrow\quad T = \frac{98}{2(0.5)} = 98 \text{ N}.$$
+$$
+\begin{aligned}
+2T\sin 30^\circ &= 98 \\
+T &= \frac{98}{2(0.5)} = 98 \text{ N}
+\end{aligned}
+$$
 
 Each cable carries a tension equal to the whole weight, because the cables are at a shallow angle. A steeper angle would give a smaller tension.
 """),
@@ -107,7 +112,12 @@ A $60 \text{ kg}$ person stands on a scale in an elevator that accelerates **upw
 
 Take up as positive. The normal force from the scale is up, the weight $mg = 588 \text{ N}$ is down:
 
-$$F_N - mg = ma \quad\Rightarrow\quad F_N = 60(9.8 + 2.0) = 708 \text{ N}.$$
+$$
+\begin{aligned}
+F_N - mg &= ma \\
+F_N &= 60(9.8 + 2.0) = 708 \text{ N}
+\end{aligned}
+$$
 
 The scale reads $708 \text{ N}$, more than the $588 \text{ N}$ weight. If the elevator accelerated downward at $2.0 \text{ m/s}^2$, it would read $60(9.8 - 2.0) = 468 \text{ N}$.
 """),
@@ -130,8 +140,8 @@ A $10 \text{ kg}$ block slides down a $30^\circ$ incline with $\mu_k = 0.20$.
 
 $F_N = 98\cos 30^\circ = 84.9 \text{ N}$, so $F_f = 0.20(84.9) = 17.0 \text{ N}$ up the slope. The weight component down the slope is $98\sin 30^\circ = 49 \text{ N}$.
 
-$$a = \frac{49 - 17.0}{10} = 3.20 \text{ m/s}^2 \text{ down the slope.}$$
+$$a = \frac{49 - 17.0}{10} = 3.20 \text{ m/s}^2$$
 
-For a $3.0 \text{ kg}$ and a $2.0 \text{ kg}$ mass on an Atwood machine, $a = \dfrac{1.0(9.8)}{5.0} = 1.96 \text{ m/s}^2$ and the tension is $2.0(9.8 + 1.96) = 23.5 \text{ N}$.
+The acceleration is down the slope. For a $3.0 \text{ kg}$ and a $2.0 \text{ kg}$ mass on an Atwood machine, $a = \dfrac{1.0(9.8)}{5.0} = 1.96 \text{ m/s}^2$ and the tension is $2.0(9.8 + 1.96) = 23.5 \text{ N}$.
 """),
 ])

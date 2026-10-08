@@ -62,9 +62,14 @@ A hydraulic lift has a small piston of area $0.010 \text{ m}^2$ and a large pist
 
 The pressure is $P = \dfrac{200}{0.010} = 2.0\times10^4 \text{ Pa}$, so the large piston exerts
 
-$$F_2 = P A_2 = (2.0\times10^4)(0.50) = 1.0\times10^4 \text{ N},$$
+$$
+\begin{aligned}
+F_2 &= P A_2 \\
+&= (2.0\times10^4)(0.50) = 1.0\times10^4 \text{ N}
+\end{aligned}
+$$
 
-enough to hold up about $1000 \text{ kg}$. The area ratio is $50$.
+That is enough to hold up about $1000 \text{ kg}$. The area ratio is $50$.
 
 To raise the load $0.10 \text{ m}$, the small piston must move $5.0 \text{ m}$. Work in is $200(5.0) = 1000 \text{ J}$ and work out is $(1.0\times10^4)(0.10) = 1000 \text{ J}$.
 """),

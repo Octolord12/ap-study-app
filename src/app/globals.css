@@ -256,6 +256,17 @@ pre {
   font-family: var(--font-mono);
 }
 
+/* KaTeX sets display equations to nowrap with no overflow handling, so a long one pushed the whole page wider
+   than a phone (the mobile browser zooms out to fit it). Scroll the equation inside its own block instead.
+   Scrolling clips the box, and fractions and big brackets stick out of it by up to ~6px, so the box gets padding
+   (taken from KaTeX's own 1em margin, so the spacing around an equation is unchanged). */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-block: 0.5em;
+  padding-block: 0.5em;
+}
+
 /*
  * A ruled-notebook-paper look for math-heavy question sheets -- applied only
  * to AP Calculus AB and AP Physics 1 (see isPaperLinedCourse() in

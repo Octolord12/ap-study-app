@@ -41,7 +41,12 @@ Using degrees or revolutions in $v = r\omega$. The relationship only works with 
 ### Worked example
 A wheel starts from rest with $\alpha = 2.0 \text{ rad/s}^2$. After $5.0 \text{ s}$:
 
-$$\omega = (2.0)(5.0) = 10 \text{ rad/s}, \qquad \theta = \tfrac{1}{2}(2.0)(5.0)^2 = 25 \text{ rad} = 3.98 \text{ rev}.$$
+$$
+\begin{aligned}
+\omega &= (2.0)(5.0) = 10 \text{ rad/s} \\
+\theta &= \tfrac{1}{2}(2.0)(5.0)^2 = 25 \text{ rad} = 3.98 \text{ rev}
+\end{aligned}
+$$
 
 A point on the rim at $r = 0.30 \text{ m}$ has speed $v = (0.30)(10) = 3.0 \text{ m/s}$, centripetal acceleration $a_c = (10)^2(0.30) = 30 \text{ m/s}^2$, and tangential acceleration $a_t = (0.30)(2.0) = 0.60 \text{ m/s}^2$.
 """),
@@ -85,9 +90,15 @@ Forgetting the weight of the beam itself, or measuring a distance from the wrong
 ### Worked example
 A uniform $4.0 \text{ m}$ beam of mass $20 \text{ kg}$ rests on supports at its two ends. A $30 \text{ kg}$ person stands $1.0 \text{ m}$ from the left end.
 
-Torques about the left end remove the left support from the equation:
+Torques about the left end remove the left support from the equation. The beam's weight, $(20)(9.8) = 196 \text{ N}$, acts $2.0 \text{ m}$ from that end, and the person's weight, $(30)(9.8) = 294 \text{ N}$, acts $1.0 \text{ m}$ from it:
 
-$$N_R(4.0) = (20)(9.8)(2.0) + (30)(9.8)(1.0) = 392 + 294 \quad\Rightarrow\quad N_R = 171.5 \text{ N}.$$
+$$
+\begin{aligned}
+N_R(4.0) &= (196)(2.0) + (294)(1.0) \\
+&= 392 + 294 = 686 \\
+N_R &= 171.5 \text{ N}
+\end{aligned}
+$$
 
 Then $N_L = (50)(9.8) - 171.5 = 318.5 \text{ N}$. The left support carries more because the person is nearer to it.
 """),

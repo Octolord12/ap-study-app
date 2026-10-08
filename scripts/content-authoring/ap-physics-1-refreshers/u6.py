@@ -57,7 +57,12 @@ Using the pendulum formula with the mass in it, or saying a bigger swing takes l
 ### Worked example
 A $0.25 \text{ kg}$ mass on a spring with $k = 100 \text{ N/m}$:
 
-$$T = 2\pi\sqrt{\frac{0.25}{100}} = 0.314 \text{ s}, \qquad f = \frac{1}{T} = 3.18 \text{ Hz}.$$
+$$
+\begin{aligned}
+T &= 2\pi\sqrt{\frac{0.25}{100}} = 0.314 \text{ s} \\
+f &= \frac{1}{T} = 3.18 \text{ Hz}
+\end{aligned}
+$$
 
 A $1.0 \text{ m}$ pendulum on Earth:
 

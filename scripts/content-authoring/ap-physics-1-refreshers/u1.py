@@ -86,7 +86,12 @@ A car moving at $25 \text{ m/s}$ brakes with $a = -5.0 \text{ m/s}^2$ until it s
 
 The final velocity is $0$ and time is not asked for, so use $v^2 = v_0^2 + 2a\,\Delta x$:
 
-$$0 = 25^2 + 2(-5.0)\,\Delta x \quad\Rightarrow\quad \Delta x = \frac{625}{10} = 62.5 \text{ m}.$$
+$$
+\begin{aligned}
+0 &= 25^2 + 2(-5.0)\,\Delta x \\
+\Delta x &= \frac{625}{10} = 62.5 \text{ m}
+\end{aligned}
+$$
 
 Time: $t = \dfrac{0 - 25}{-5.0} = 5.0 \text{ s}$. Check: $25(5.0) - \tfrac{1}{2}(5.0)(5.0)^2 = 62.5 \text{ m}$.
 

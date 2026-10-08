@@ -36,7 +36,12 @@ Ignoring direction. Pick a positive direction, then give a velocity in the oppos
 ### Worked example
 A $0.15 \text{ kg}$ ball moving at $+30 \text{ m/s}$ is hit and leaves at $-40 \text{ m/s}$. The bat touches it for $5.0 \text{ ms}$.
 
-$$\Delta p = 0.15\,(-40 - 30) = -10.5 \text{ kg·m/s}.$$
+$$
+\begin{aligned}
+\Delta p &= 0.15\,(-40 - 30) \\
+&= -10.5 \text{ kg·m/s}
+\end{aligned}
+$$
 
 $$F_{avg} = \frac{\Delta p}{\Delta t} = \frac{-10.5}{0.0050} = -2100 \text{ N},$$
 
@@ -61,9 +66,14 @@ Concluding that momentum is not conserved just because kinetic energy changes. M
 ### Worked example
 A $60 \text{ kg}$ skater and a $40 \text{ kg}$ skater stand at rest on frictionless ice and push apart. The $40 \text{ kg}$ skater moves off at $3.0 \text{ m/s}$ to the east.
 
-$$0 = (60)v + (40)(3.0) \quad\Rightarrow\quad v = -2.0 \text{ m/s},$$
+$$
+\begin{aligned}
+0 &= (60)v + (40)(3.0) \\
+v &= -2.0 \text{ m/s}
+\end{aligned}
+$$
 
-so the heavier skater moves at $2.0 \text{ m/s}$ west. The lighter one gets the greater speed, the speeds being inversely proportional to the masses.
+The heavier skater therefore moves at $2.0 \text{ m/s}$ west. The lighter one gets the greater speed, the speeds being inversely proportional to the masses.
 
 The total kinetic energy afterwards is $\tfrac{1}{2}(60)(2.0)^2 + \tfrac{1}{2}(40)(3.0)^2 = 300 \text{ J}$, which came from the skaters' muscles. Energy was added, but momentum was conserved.
 """),

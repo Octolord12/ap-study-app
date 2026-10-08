@@ -34,7 +34,12 @@ Drawing a "centrifugal" force pushing outward. In a free-body diagram you only d
 ### Worked example
 A $1200 \text{ kg}$ car rounds a flat curve of radius $50 \text{ m}$ at $20 \text{ m/s}$. Friction supplies the inward force.
 
-$$a_c = \frac{20^2}{50} = 8.0 \text{ m/s}^2, \qquad F_f = 1200(8.0) = 9600 \text{ N}.$$
+$$
+\begin{aligned}
+a_c &= \frac{20^2}{50} = 8.0 \text{ m/s}^2 \\
+F_f &= 1200(8.0) = 9600 \text{ N}
+\end{aligned}
+$$
 
 The road must supply at least that friction, so $\mu_s mg \ge \dfrac{mv^2}{r}$ and $\mu_s \ge \dfrac{v^2}{rg} = \dfrac{8.0}{9.8} = 0.82$.
 
@@ -58,9 +63,14 @@ Measuring $r$ from the surface of a planet. For an object $h$ above the surface,
 ### Worked example
 Two people of $60 \text{ kg}$ and $80 \text{ kg}$ stand $2.0 \text{ m}$ apart:
 
-$$F_g = \frac{(6.67\times10^{-11})(60)(80)}{(2.0)^2} = 8.0\times10^{-8} \text{ N},$$
+$$
+\begin{aligned}
+F_g &= \frac{(6.67\times10^{-11})(60)(80)}{(2.0)^2} \\
+&= 8.0\times10^{-8} \text{ N}
+\end{aligned}
+$$
 
-far too small to notice. The force is the same on each person.
+That is far too small to notice. The force is the same on each person.
 
 A $500 \text{ kg}$ satellite one Earth radius above the surface is at $r = 2R$, so its weight is $\tfrac{1}{4}$ of the surface value: $\dfrac{500(9.8)}{4} = 1225 \text{ N}$.
 """),
