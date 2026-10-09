@@ -278,7 +278,7 @@
     "difficulty": "hard",
     "stem": "Given a sorted array `{1, 3, 5, 7, 9, 11}` and target `7`, what does binary search check first?",
     "choices": [
-      { "label": "A", "text": "Index 0 (value 1), the first element", "isCorrect": false, "explanation": "Binary search doesn't start at the beginning; that's linear search's approach." },
+      { "label": "A", "text": "Index 0 (value 1), the first element of the array", "isCorrect": false, "explanation": "Binary search doesn't start at the beginning; that's linear search's approach." },
       { "label": "B", "text": "The middle index (around index 2 or 3)", "isCorrect": true, "explanation": "Binary search always begins by examining the middle element of the current search range." },
       { "label": "C", "text": "The last index (value 11), at the far end", "isCorrect": false, "explanation": "Binary search doesn't start at the end either; it starts in the middle." },
       { "label": "D", "text": "Every index in order, from the first to the last", "isCorrect": false, "explanation": "Checking every index in order describes linear search, not binary search." }

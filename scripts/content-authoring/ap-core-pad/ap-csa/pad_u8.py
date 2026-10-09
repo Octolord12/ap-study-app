@@ -13,4 +13,6 @@ PADC = {
     P + "14": "Yes, Java allows jagged arrays, where each row can have a different length",
 }
 
-PADW = {}
+PADW = {
+    "3 columns and 4 rows": "3 columns and 4 rows, in that order",
+}

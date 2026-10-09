@@ -87,4 +87,10 @@ PADW = {
     "Religion played no role in their conflicts, which were fought purely over control of trade routes": "Religion played no role in their conflicts, which were fought purely over control of trade routes and valuable farmland",
     "They all rejected any form of bureaucratic administration and ruled entirely through tribal chiefs": "They all rejected any form of bureaucratic administration and ruled entirely through tribal chiefs and clan councils",
     "They shared no meaningful similarities and shouldn't be compared at all, because each was entirely unique in form": "They shared no meaningful similarities and shouldn't be compared at all, because each was entirely unique in form and function",
+    "The ancient Roman and Byzantine empires": "The ancient Roman and later Byzantine empires",
+    "Through decentralized systems with no central authority": "Through decentralized systems with no central authority at all",
+    "Complete reliance on foreign administrators sent from the Ottoman court": "Complete reliance on foreign administrators sent directly from the Ottoman court",
+    "The Atlantic slave trade with Europe exclusively": "The Atlantic slave trade with European merchants exclusively",
+    "To encourage the growth of overseas colonies and the spread of Japanese power across Southeast Asia": "To encourage the growth of overseas colonies and the spread of Japanese power across all of Southeast Asia",
+    "Ended the need for any other taxation in the empire and made the treasury extremely wealthy": "Ended the need for any other taxation in the empire and made the imperial treasury extremely wealthy",
 }

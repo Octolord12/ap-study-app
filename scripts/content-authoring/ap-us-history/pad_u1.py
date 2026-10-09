@@ -87,3 +87,13 @@ PADC = {
     P + "44": "French traders relied on Native partners for furs, while Spain relied on Native labor and tribute.",
     P + "45": "Poor supply from England, worsened by war with Spain, and tension with local Native peoples.",
 }
+
+PADW = {
+    "They caused widespread famine by replacing native grains.": "They caused widespread famine by replacing the native grains.",
+    "Protestant criticism of Catholic missionary activity and of Spanish treatment of Native converts.": "Protestant criticism of Catholic missionary activity and of the Spanish treatment of Native converts.",
+    "The use of steam engines to power large ocean-going ships across the Atlantic Ocean.": "The use of steam engines to power large ocean-going ships across the entire Atlantic Ocean.",
+    "Maize, the staple grain of Native societies across the Americas": "Maize, the staple grain of many Native societies across the Americas",
+    "A guarantee of freedom of religion for Native converts to Christianity.": "A guarantee of freedom of religion for all Native converts to Christianity.",
+    "The end of farming in Mesoamerica as farmers turned to herding the new animals.": "The end of farming in Mesoamerica as most farmers turned to herding the new animals.",
+    "founding English joint-stock companies to settle North America and the Caribbean.": "founding English joint-stock companies to settle both North America and the Caribbean.",
+}

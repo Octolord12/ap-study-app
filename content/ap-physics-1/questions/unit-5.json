@@ -87,7 +87,7 @@
     "stem": "Is momentum a vector or a scalar quantity?",
     "choices": [
       { "label": "A", "text": "A vector -- it has both magnitude and direction", "isCorrect": true, "explanation": "Momentum (p=mv) inherits the vector nature of velocity, so it has both magnitude and direction." },
-      { "label": "B", "text": "A scalar -- it only has magnitude, no direction", "isCorrect": false, "explanation": "Momentum is a vector because it's derived from velocity (a vector), and it has a meaningful direction." },
+      { "label": "B", "text": "A scalar -- it only has magnitude and never any direction", "isCorrect": false, "explanation": "Momentum is a vector because it's derived from velocity (a vector), and it has a meaningful direction." },
       { "label": "C", "text": "Neither -- momentum has no mathematical properties", "isCorrect": false, "explanation": "Momentum is a well-defined physical quantity with clear mathematical (vector) properties." },
       { "label": "D", "text": "It depends on whether the object is moving in a straight line", "isCorrect": false, "explanation": "Momentum is always a vector, regardless of whether the motion happens to be along a straight line or not." }
     ],
@@ -104,7 +104,7 @@
     "choices": [
       { "label": "A", "text": "-5 m/s", "isCorrect": true, "explanation": "J = FΔt = (-10)(2) = -20 N·s = Δp. Δv = Δp/m = -20/2 = -10 m/s. Final velocity: v = v0 + Δv = 5 + (-10) = -5 m/s." },
       { "label": "B", "text": "0 m/s (the object comes to rest)", "isCorrect": false, "explanation": "The force is large enough to not just stop the object but actually reverse its direction of motion." },
-      { "label": "C", "text": "15 m/s", "isCorrect": false, "explanation": "This incorrectly adds rather than accounts for the negative (opposing) impulse's effect on velocity." },
+      { "label": "C", "text": "15 m/s, found by adding the impulse", "isCorrect": false, "explanation": "This incorrectly adds rather than accounts for the negative (opposing) impulse's effect on velocity." },
       { "label": "D", "text": "-10 m/s", "isCorrect": false, "explanation": "This is the CHANGE in velocity (Δv), not the final velocity (which is v0 + Δv)." }
     ],
     "explanation": "Δv = J/m = -20/2 = -10 m/s. Final velocity = 5 + (-10) = -5 m/s -- the object's direction reverses.",
@@ -199,7 +199,7 @@
     "stem": "A 2 kg gun fires a 0.01 kg bullet at a muzzle velocity of 400 m/s. Using conservation of momentum, what is the gun's recoil velocity?",
     "choices": [
       { "label": "A", "text": "2 m/s, in the direction opposite the bullet", "isCorrect": true, "explanation": "Total momentum starts at zero: 0 = m_bullet·v_bullet + m_gun·v_gun, so v_gun = -(0.01)(400)/2 = -2 m/s." },
-      { "label": "B", "text": "4 m/s, in the direction opposite the bullet", "isCorrect": false, "explanation": "This doesn't correctly divide the bullet's momentum by the gun's mass (2 kg)." },
+      { "label": "B", "text": "4 m/s, in the direction opposite to the bullet", "isCorrect": false, "explanation": "This doesn't correctly divide the bullet's momentum by the gun's mass (2 kg)." },
       { "label": "C", "text": "400 m/s, in the direction opposite the bullet", "isCorrect": false, "explanation": "This is the bullet's speed, not the (much smaller, since the gun is much more massive) recoil speed of the gun." },
       { "label": "D", "text": "0.02 m/s, in the direction opposite the bullet", "isCorrect": false, "explanation": "This doesn't correctly compute the bullet's momentum (0.01×400=4 kg·m/s) before dividing by the gun's mass." }
     ],

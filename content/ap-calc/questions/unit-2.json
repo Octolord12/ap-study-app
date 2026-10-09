@@ -7,7 +7,7 @@
     "stem": "What does the average rate of change of f(x) over [a,b] represent geometrically?",
     "choices": [
       { "label": "A", "text": "The slope of the secant line connecting (a, f(a)) and (b, f(b))", "isCorrect": true, "explanation": "The average rate of change is exactly the slope of the line connecting the two endpoints of the interval." },
-      { "label": "B", "text": "The slope of the tangent line at x=a, at the left endpoint", "isCorrect": false, "explanation": "The slope of the tangent line at a single point describes the INSTANTANEOUS rate of change, not the average rate of change over an interval." },
+      { "label": "B", "text": "The slope of the tangent line at x=a, which is the left endpoint of the interval", "isCorrect": false, "explanation": "The slope of the tangent line at a single point describes the INSTANTANEOUS rate of change, not the average rate of change over an interval." },
       { "label": "C", "text": "The value of f at the midpoint of [a,b], found by averaging f(a) and f(b)", "isCorrect": false, "explanation": "Average rate of change is about the slope between two points, not the function's value at any particular point." },
       { "label": "D", "text": "The area under the curve from a to b, above the x-axis, which the secant does not measure", "isCorrect": false, "explanation": "Area under the curve relates to integration, a completely different concept from rate of change." }
     ],
@@ -137,7 +137,7 @@
       { "label": "A", "text": "No, a function can be continuous at a point without being differentiable there (e.g., a sharp corner)", "isCorrect": true, "explanation": "Continuity is necessary but not sufficient for differentiability; a function like |x| is continuous but not differentiable at x=0." },
       { "label": "B", "text": "Yes, continuity always guarantees differentiability, since both describe the same smooth behavior at a point", "isCorrect": false, "explanation": "This reverses the true one-directional relationship; continuity alone does NOT guarantee differentiability." },
       { "label": "C", "text": "Continuity and differentiability are always equivalent conditions for functions of one variable on any interval", "isCorrect": false, "explanation": "These are NOT always equivalent; differentiability is the stronger of the two conditions." },
-      { "label": "D", "text": "Differentiability is a weaker condition than continuity, so it is easier for a function to meet", "isCorrect": false, "explanation": "This also reverses the relationship; differentiability is actually the STRONGER (more restrictive) condition, not weaker." }
+      { "label": "D", "text": "Differentiability is a weaker condition than continuity, so it is easier for a function to satisfy at a point", "isCorrect": false, "explanation": "This also reverses the relationship; differentiability is actually the STRONGER (more restrictive) condition, not weaker." }
     ],
     "explanation": "Continuity does not guarantee differentiability; a function can have a sharp corner and be continuous but not differentiable there.",
     "conceptLink": "ap-calc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
@@ -169,7 +169,7 @@
       { "label": "A", "text": "A sharp corner, cusp, or vertical tangent line", "isCorrect": true, "explanation": "These features indicate the function's slope is not well-defined at that point, even if the function value itself is continuous." },
       { "label": "B", "text": "A smooth, rounded curve with no breaks or sharp turns anywhere", "isCorrect": false, "explanation": "A smooth, rounded curve is actually characteristic of a DIFFERENTIABLE function, not a non-differentiable one." },
       { "label": "C", "text": "A straight line segment with a constant, nonzero slope", "isCorrect": false, "explanation": "A straight line segment is smoothly differentiable throughout (its derivative is just the constant slope)." },
-      { "label": "D", "text": "Any point where the function is positive", "isCorrect": false, "explanation": "Whether a function's value is positive has no bearing on differentiability; differentiability is about the shape/smoothness of the graph." }
+      { "label": "D", "text": "Any point where the value of the function is positive", "isCorrect": false, "explanation": "Whether a function's value is positive has no bearing on differentiability; differentiability is about the shape/smoothness of the graph." }
     ],
     "explanation": "Sharp corners, cusps, and vertical tangent lines are geometric features that typically indicate non-differentiability.",
     "conceptLink": "ap-calc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",

@@ -31,4 +31,5 @@ PADW = {
     "All the forces that the object exerts on the other objects in its surroundings": "All the forces that the object exerts on the other objects in its surroundings around it, rather than the forces on it",
     "Normal force and Weight are always equal for any object, regardless of its motion or of the surface it rests on, because they are a Third Law pair": "Normal force and Weight are always equal for any object, regardless of its motion or of the surface it rests on, because they are a Third Law pair, so one cancels the other",
     "A continuously applied force in the direction of motion is required to overcome the puck's inertia": "A continuously applied force in the direction of motion is required to overcome the puck's inertia to keep it sliding",
+    "To the left, since friction always dominates over any applied force": "To the left, since friction always dominates over any applied force on the box",
 }

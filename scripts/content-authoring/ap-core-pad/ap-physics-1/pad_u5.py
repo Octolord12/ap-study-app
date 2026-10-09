@@ -35,4 +35,7 @@ PADW = {
     "No -- momentum is only conserved when kinetic energy is also conserved, so an inelastic collision loses some of its momentum to heat, sound and deformation of the objects": "No -- momentum is only conserved when kinetic energy is also conserved, so an inelastic collision loses some of its momentum to heat, sound and deformation of the objects in the process",
     "Closer to elastic -- kinetic energy is almost perfectly conserved in most real collisions, apart from small losses": "Closer to elastic -- kinetic energy is almost perfectly conserved in most real collisions, apart from small losses during the impact",
     "A chaotic, tumbling path that mirrors the wrench's rotation, so the center of mass changes direction as it spins in the air": "A chaotic, tumbling path that mirrors the wrench's rotation, so the center of mass changes direction as it spins in the air at every moment",
+    "4 m/s, in the direction opposite the bullet": "4 m/s, in the direction opposite to the bullet",
+    "A scalar -- it only has magnitude, no direction": "A scalar -- it only has magnitude and never any direction",
+    "15 m/s": "15 m/s, found by adding the impulse",
 }

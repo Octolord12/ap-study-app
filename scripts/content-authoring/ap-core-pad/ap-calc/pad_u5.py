@@ -32,4 +32,5 @@ PADW = {
     "Only at the critical points, never at the endpoints": "Only at the critical points, never at the endpoints of the closed interval",
     "f is definitely not differentiable at x=c, since the second derivative is zero": "f is definitely not differentiable at x=c, since the second derivative is zero at that point as well",
     "To determine whether a function is continuous at every point of its domain": "To determine whether a function is continuous at every point of its domain, and nothing more",
+    "Any point where f(x) = 0, such as an x-intercept of the graph": "Any point where f(x) = 0, such as an x-intercept on the graph of f itself",
 }

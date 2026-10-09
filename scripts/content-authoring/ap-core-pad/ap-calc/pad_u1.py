@@ -22,4 +22,9 @@ PADC = {
 
 PADW = {
     "f must be linear, with a constant slope": "f must be linear, with a constant slope throughout the interval",
+    "f(c) = L exactly, at the point x = c": "f(c) = L exactly, at the single point x = c",
+    "f must be a polynomial, since only polynomials can be continuous at a point": "f must be a polynomial, since only polynomials are ever continuous at a point",
+    "f must be a polynomial of degree at least two": "f must be a polynomial of degree at least two on the interval",
+    "Yes, but only because g is linear on both pieces": "Yes, but only because g is linear on both pieces of its definition",
+    "Ignoring the denominator entirely": "Ignoring the denominator, using only the numerator",
 }

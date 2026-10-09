@@ -25,7 +25,7 @@
       { "label": "A", "text": "Capitalism/democracy versus communism", "isCorrect": true, "explanation": "The fundamental ideological divide between American capitalism/democracy and Soviet communism fueled decades of Cold War tension." },
       { "label": "B", "text": "Both nations shared identical political and economic systems", "isCorrect": false, "explanation": "This contradicts the fundamental ideological divide; the two nations had significantly different political/economic systems." },
       { "label": "C", "text": "A dispute over ancient historical territorial claims", "isCorrect": false, "explanation": "Cold War tensions were rooted in contemporary ideological and geopolitical competition, not ancient historical territorial claims." },
-      { "label": "D", "text": "A religious disagreement exclusively", "isCorrect": false, "explanation": "While various factors existed, the core division was primarily ideological (capitalism/democracy vs. communism), not fundamentally religious." }
+      { "label": "D", "text": "A religious disagreement over church doctrine exclusively", "isCorrect": false, "explanation": "While various factors existed, the core division was primarily ideological (capitalism/democracy vs. communism), not fundamentally religious." }
     ],
     "explanation": "The fundamental ideological divide between capitalism/democracy and communism fueled Cold War tensions.",
     "conceptLink": "ap-world/unit-8-cold-war-and-decolonization/origins-of-the-cold-war",

@@ -153,7 +153,7 @@
       { "label": "A", "text": "dy/dx (since y is itself a function of x)", "isCorrect": true, "explanation": "Because y is treated as a function of x, differentiating any y-term requires multiplying by dy/dx via the chain rule." },
       { "label": "B", "text": "dx/dy (since x is a function of y) and must be multiplied in", "isCorrect": false, "explanation": "This reverses the correct derivative direction needed here; implicit differentiation with respect to x requires dy/dx, not dx/dy." },
       { "label": "C", "text": "No extra factor is needed when y appears in a power", "isCorrect": false, "explanation": "An extra factor (dy/dx) absolutely IS needed; this is the entire point of implicit differentiation for y-terms." },
-      { "label": "D", "text": "y itself, with no derivative notation", "isCorrect": false, "explanation": "Simply writing y without the dy/dx notation would incorrectly ignore that y itself depends on x." }
+      { "label": "D", "text": "y itself, with no derivative notation attached to the term", "isCorrect": false, "explanation": "Simply writing y without the dy/dx notation would incorrectly ignore that y itself depends on x." }
     ],
     "explanation": "Implicit differentiation requires multiplying by dy/dx whenever differentiating a term involving y, since y is a function of x.",
     "conceptLink": "ap-calc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
@@ -407,7 +407,7 @@
     "stem": "If s(t) represents the position of an object at time t, what does s''(t) represent physically?",
     "choices": [
       { "label": "A", "text": "The object's acceleration", "isCorrect": true, "explanation": "The second derivative of position with respect to time is acceleration." },
-      { "label": "B", "text": "The object's velocity", "isCorrect": false, "explanation": "Velocity is represented by the FIRST derivative, s'(t), not the second derivative." },
+      { "label": "B", "text": "The object's velocity at time t", "isCorrect": false, "explanation": "Velocity is represented by the FIRST derivative, s'(t), not the second derivative." },
       { "label": "C", "text": "The object's total distance traveled", "isCorrect": false, "explanation": "Total distance traveled is related to integrating speed, not to the second derivative." },
       { "label": "D", "text": "The object's initial position", "isCorrect": false, "explanation": "Initial position would be s(0), a specific function value, not a derivative at all." }
     ],

@@ -72,7 +72,7 @@
     "choices": [
       { "label": "A", "text": "The velocity of an object at a single specific moment in time", "isCorrect": true, "explanation": "Instantaneous velocity is the velocity at one specific instant, as opposed to averaged over an interval." },
       { "label": "B", "text": "The velocity averaged over the entire trip, from start to finish", "isCorrect": false, "explanation": "This describes average velocity, not instantaneous velocity." },
-      { "label": "C", "text": "The maximum velocity reached at any time during the motion", "isCorrect": false, "explanation": "Instantaneous velocity refers to velocity at a given moment, not specifically the maximum value reached." },
+      { "label": "C", "text": "The maximum velocity reached at any single time during the motion", "isCorrect": false, "explanation": "Instantaneous velocity refers to velocity at a given moment, not specifically the maximum value reached." },
       { "label": "D", "text": "The velocity only at the very end of the motion, at the final instant", "isCorrect": false, "explanation": "Instantaneous velocity can be evaluated at any moment, not just the final one." }
     ],
     "explanation": "Instantaneous velocity is an object's velocity at one specific moment in time.",
@@ -167,7 +167,7 @@
     "stem": "The position-time graph below shows an object's motion. During which time interval is the object's velocity zero?",
     "choices": [
       { "label": "A", "text": "t = 2 s to t = 5 s", "isCorrect": true, "explanation": "The graph is flat (zero slope) from t=2s to t=5s, meaning velocity is zero -- the object is at rest during this interval." },
-      { "label": "B", "text": "t = 0 s to t = 2 s", "isCorrect": false, "explanation": "The graph has a positive, nonzero slope during this interval (position rises from 0 to 10 m), so velocity is nonzero here." },
+      { "label": "B", "text": "t = 0 s to t = 2 s, at the start of the motion", "isCorrect": false, "explanation": "The graph has a positive, nonzero slope during this interval (position rises from 0 to 10 m), so velocity is nonzero here." },
       { "label": "C", "text": "The object's velocity is never zero", "isCorrect": false, "explanation": "The flat segment from t=2s to t=5s does have zero slope, meaning the velocity is zero during that interval." },
       { "label": "D", "text": "The object's velocity is zero for the entire graph", "isCorrect": false, "explanation": "The velocity is nonzero (positive) during the first segment, t=0 to t=2s, where position is increasing." }
     ],
@@ -249,7 +249,7 @@
     "choices": [
       { "label": "A", "text": "The object is at rest (not moving)", "isCorrect": true, "explanation": "A velocity of zero means the object isn't moving during that interval -- it's stationary." },
       { "label": "B", "text": "The object is moving at constant, nonzero speed", "isCorrect": false, "explanation": "A horizontal line at v=0 specifically indicates zero velocity, not a nonzero constant speed." },
-      { "label": "C", "text": "The object is accelerating rapidly", "isCorrect": false, "explanation": "A horizontal (flat) line indicates zero acceleration (no change in velocity), not rapid acceleration." },
+      { "label": "C", "text": "The object is accelerating rapidly at that time", "isCorrect": false, "explanation": "A horizontal (flat) line indicates zero acceleration (no change in velocity), not rapid acceleration." },
       { "label": "D", "text": "The object's position is changing rapidly", "isCorrect": false, "explanation": "With zero velocity, the object's position is NOT changing at all during this interval." }
     ],
     "explanation": "A horizontal line at v=0 on a velocity-time graph means the object is at rest during that interval.",

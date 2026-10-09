@@ -86,3 +86,9 @@ PADC = {
     P + "44": "Democratic-Republican sympathy for the French Revolution, unlike the Federalist preference for Britain.",
     P + "45": "Britain recognized American independence and agreed to boundaries reaching the Mississippi River.",
 }
+
+PADW = {
+    "it ended Loyalist support for Britain in the South and the Caribbean.": "it ended Loyalist support for Britain in the South and in the Caribbean.",
+    "Britain kept control of the land between the Appalachians and the Mississippi for twenty years.": "Britain kept control of the land between the Appalachians and the Mississippi River for twenty years.",
+    "A British order requiring the former colonies to end their religious establishments.": "A British order requiring the former colonies to end their religious establishments after the war.",
+}

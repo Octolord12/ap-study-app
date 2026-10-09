@@ -29,4 +29,6 @@ PADW = {
     "It is proportional to the sum of the two masses and independent of the distance between their centers or surfaces": "It is proportional to the sum of the two masses and independent of the distance between their centers or surfaces, whatever the size of either mass",
     "The ISS actively cancels out gravity using onboard equipment, which produces an equal and opposite force that cancels the pull of Earth on every object inside": "The ISS actively cancels out gravity using onboard equipment, which produces an equal and opposite force that cancels the pull of Earth on every object inside at that altitude",
     "Yes -- a more massive satellite always orbits faster, because it carries more momentum along its path around the planet": "Yes -- a more massive satellite always orbits faster, because it carries more momentum along its path around the planet, covering each orbit sooner",
+    "Orbital speed is completely independent of orbital radius": "Orbital speed is completely independent of the orbital radius of the satellite",
+    "Air resistance acting on the car's body": "Air resistance acting on the car's body as it turns",
 }

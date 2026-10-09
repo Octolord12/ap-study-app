@@ -34,4 +34,7 @@ PADC = {
     P + "28": "One method can work with any subclass of Animal (Dog, Cat, etc.) without knowing the specific subclass in advance",
 }
 
-PADW = {}
+PADW = {
+    "Dog": "Dog, since it is named first",
+    "Nothing; inheritance is just naming": "Nothing; inheritance is just a naming scheme, with no members shared",
+}

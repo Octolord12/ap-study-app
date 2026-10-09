@@ -114,4 +114,7 @@ PADW = {
     "A defense of high tariffs to protect manufacturers in the industrial Northeast.": "A defense of high tariffs to protect manufacturers in the industrial Northeast and Midwest.",
     "expand Black voting rights and bring more citizens into Southern politics and courts.": "expand Black voting rights and bring more citizens into Southern politics, juries and courts.",
     "African Americans should leave the United States and settle permanently in Africa and Haiti.": "African Americans should leave the United States and settle permanently in Africa and Haiti under federal sponsorship.",
+    "The automobile and the interstate highway system, which linked cities and suburbs.": "The automobile and the interstate highway system, which linked cities and their suburbs.",
+    "protect labor unions from legal action by guaranteeing their right to strike and organize.": "protect labor unions from legal action by guaranteeing their right to strike and to organize.",
+    "Railroads reduced the need for telegraphs and mail service across the country.": "Railroads reduced the need for telegraphs and mail service across the whole country.",
 }

@@ -19,4 +19,6 @@ PADW = {
     "Only sums of functions": "Only sums of functions, such as f(x) + g(x) and nothing else",
     "dx/dy (since x is a function of y)": "dx/dy (since x is a function of y) and must be multiplied in",
     "The average of f(x) and f'(x) at each input": "The average of f(x) and f'(x) at each input over the interval",
+    "y itself, with no derivative notation": "y itself, with no derivative notation attached to the term",
+    "The object's velocity": "The object's velocity at time t",
 }

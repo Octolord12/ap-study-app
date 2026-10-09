@@ -116,7 +116,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "It was led by wealthy planters who wanted to keep slavery and win independence from France",
+        "text": "It was led by wealthy white planters who wanted to keep slavery and win independence from France",
         "isCorrect": false,
         "explanation": "The passage describes enslaved people fighting to end slavery."
       },
@@ -350,7 +350,7 @@
       },
       {
         "label": "D",
-        "text": "The government should own all factories and farms and direct production through plans",
+        "text": "The government should own all factories and farms and direct production through central plans",
         "isCorrect": false,
         "explanation": "This describes socialism or communism."
       }

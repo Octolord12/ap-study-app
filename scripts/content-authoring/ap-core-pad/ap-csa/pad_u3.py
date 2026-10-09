@@ -12,4 +12,6 @@ PADC = {
     P + "28": "It throws a NullPointerException, since you cannot call .equals() on a null reference",
 }
 
-PADW = {}
+PADW = {
+    "Bitwise addition of two integers": "Bitwise addition -- adds the bits of two integers together",
+}

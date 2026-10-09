@@ -265,7 +265,7 @@
       { "label": "A", "text": "Logical OR -- true if either operand is true, or both", "isCorrect": false, "explanation": "This describes ||, the OR operator, not &&." },
       { "label": "B", "text": "Logical AND -- true only if both operands are true", "isCorrect": true, "explanation": "&& (AND) requires both sides to be true for the whole expression to be true." },
       { "label": "C", "text": "Logical NOT -- inverts a boolean value from true to false", "isCorrect": false, "explanation": "This describes !, the NOT operator, not &&." },
-      { "label": "D", "text": "Bitwise addition of two integers", "isCorrect": false, "explanation": "&& is a logical operator for booleans, not an arithmetic or bitwise addition operator." }
+      { "label": "D", "text": "Bitwise addition -- adds the bits of two integers together", "isCorrect": false, "explanation": "&& is a logical operator for booleans, not an arithmetic or bitwise addition operator." }
     ],
     "explanation": "`&&` is the logical AND operator: the combined expression is true only when both operands are true.",
     "conceptLink": "ap-csa/unit-3-boolean-if/compound-boolean-expressions",

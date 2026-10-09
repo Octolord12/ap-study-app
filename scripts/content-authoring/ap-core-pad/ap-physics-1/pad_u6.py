@@ -29,4 +29,6 @@ PADC = {
 PADW = {
     "The spring has a constant force regardless of how far it is stretched or compressed from rest": "The spring has a constant force regardless of how far it is stretched or compressed from rest, however large the displacement",
     "Yes -- a larger amplitude always increases the period, since the mass travels farther": "Yes -- a larger amplitude always increases the period, since the mass travels farther on its way out",
+    "The period decreases, since a smaller g makes the pendulum swing faster": "The period decreases, since a smaller g makes the pendulum swing much faster",
+    "It depends on both mass and length equally, according to the period formula": "It depends on both mass and length equally, according to the standard period formula",
 }

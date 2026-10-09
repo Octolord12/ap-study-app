@@ -86,7 +86,7 @@
       },
       {
         "label": "B",
-        "text": "A rejection of English culture and a call for independence from the crown.",
+        "text": "A rejection of English culture and a call for full independence from the crown.",
         "isCorrect": false,
         "explanation": "The signers describe themselves as loyal subjects."
       },
@@ -194,7 +194,7 @@
       },
       {
         "label": "B",
-        "text": "required all settlers to join the Church of England and pay taxes to it.",
+        "text": "required all settlers to join the Church of England and to pay taxes to it.",
         "isCorrect": false,
         "explanation": "Pennsylvania did not require membership in the Church of England."
       },

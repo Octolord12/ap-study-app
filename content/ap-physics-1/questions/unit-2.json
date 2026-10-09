@@ -128,7 +128,7 @@
     "stem": "The free-body diagram below shows a box being pulled to the right by an applied force, with friction opposing the motion. Based on the relative lengths of the vectors shown, what is the direction of the net force on the box?",
     "choices": [
       { "label": "A", "text": "To the right, since the applied force is larger than the friction force", "isCorrect": true, "explanation": "The applied force vector is drawn longer than the friction vector, so the net horizontal force points in the direction of the larger (applied) force -- to the right." },
-      { "label": "B", "text": "To the left, since friction always dominates over any applied force", "isCorrect": false, "explanation": "Friction does not always dominate; here the applied force vector is clearly drawn longer, indicating it's the larger force." },
+      { "label": "B", "text": "To the left, since friction always dominates over any applied force on the box", "isCorrect": false, "explanation": "Friction does not always dominate; here the applied force vector is clearly drawn longer, indicating it's the larger force." },
       { "label": "C", "text": "There is no net force -- the box is in equilibrium and moves at constant velocity", "isCorrect": false, "explanation": "The two horizontal vectors are drawn with different lengths (unequal magnitudes), so they don't cancel -- there IS a net force." },
       { "label": "D", "text": "The net force direction cannot be determined from a free-body diagram alone", "isCorrect": false, "explanation": "A free-body diagram's vector lengths are specifically meant to convey relative force magnitudes, which do let you determine net force direction." }
     ],

@@ -8,7 +8,7 @@
     "choices": [
       { "label": "A", "text": "A single paved imperial road connecting China to Rome, with relay stations for official couriers", "isCorrect": false, "explanation": "It wasn't a single road but a network of many interconnected routes." },
       { "label": "B", "text": "A network of trade routes by land and sea linking East Asia, the Middle East and Europe", "isCorrect": true, "explanation": "The Silk Roads were a web of routes linking distant regions of Afro-Eurasia for trade and exchange." },
-      { "label": "C", "text": "A canal system built by the Mongols to carry grain from southern China to their capital", "isCorrect": false, "explanation": "It wasn't a canal system; the Mongols later helped secure overland routes but didn't build them as canals." },
+      { "label": "C", "text": "A canal system built by the Mongols to carry grain from southern China to their northern capital", "isCorrect": false, "explanation": "It wasn't a canal system; the Mongols later helped secure overland routes but didn't build them as canals." },
       { "label": "D", "text": "A religious pilgrimage route used exclusively by Buddhist monks traveling between China and India", "isCorrect": false, "explanation": "Buddhism did spread along these routes, but they weren't exclusively religious pilgrimage routes; they primarily carried trade." }
     ],
     "explanation": "The Silk Roads were a network of overland and maritime routes linking East Asia, Central Asia, the Middle East, and Europe.",
@@ -425,7 +425,7 @@
       { "label": "A", "text": "It had no effect on agriculture anywhere because farmers refused to plant any foreign crop", "isCorrect": false, "explanation": "The exchange of agricultural knowledge had substantial, well-documented effects on farming practices." },
       { "label": "B", "text": "New crops and farming techniques spread, sometimes raising food production and population", "isCorrect": true, "explanation": "The spread of new crops and techniques across trade networks could boost food production and support larger populations." },
       { "label": "C", "text": "It caused agriculture to disappear entirely in connected regions as farmers turned to trade", "isCorrect": false, "explanation": "Increased exchange generally supported and diversified agriculture, rather than eliminating it." },
-      { "label": "D", "text": "It only affected regions that had no trade connections with their neighbors or the coast", "isCorrect": false, "explanation": "This describes the opposite of what actually happened; it was connected regions that experienced this agricultural exchange." }
+      { "label": "D", "text": "It only affected regions that had no trade connections with their neighbors or with the coast", "isCorrect": false, "explanation": "This describes the opposite of what actually happened; it was connected regions that experienced this agricultural exchange." }
     ],
     "explanation": "Exchange of crops and farming knowledge along trade networks could increase food production and support population growth.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",
@@ -454,7 +454,7 @@
     "difficulty": "medium",
     "stem": "What role did diasporic merchant communities (merchants living long-term in foreign trading cities) play in these exchange networks?",
     "choices": [
-      { "label": "A", "text": "They had no lasting impact on local societies, because they never interacted with townspeople or rulers", "isCorrect": false, "explanation": "Diasporic merchant communities often had substantial, lasting cultural and economic impacts on host societies." },
+      { "label": "A", "text": "They had no lasting impact on local societies, because they never interacted with local townspeople or rulers", "isCorrect": false, "explanation": "Diasporic merchant communities often had substantial, lasting cultural and economic impacts on host societies." },
       { "label": "B", "text": "They often encouraged cultural exchange and sometimes introduced their own practices to host communities", "isCorrect": true, "explanation": "Long-term foreign merchant communities often served as bridges for cultural and religious exchange with their host societies." },
       { "label": "C", "text": "They were universally banned from settling in foreign trade cities by the rulers of every kingdom and empire", "isCorrect": false, "explanation": "Many trade networks actively hosted long-term foreign merchant communities rather than banning them." },
       { "label": "D", "text": "They only interacted with merchants from their own home region and never learned the local language or customs", "isCorrect": false, "explanation": "These communities frequently interacted with diverse local and foreign populations, not just merchants from their own home region." }
@@ -473,7 +473,7 @@
       { "label": "A", "text": "They had minimal impact on world history because they carried only small amounts of luxury goods for kings", "isCorrect": false, "explanation": "These networks had substantial, transformative impacts on world history, not minimal ones." },
       { "label": "B", "text": "They fostered economic, cultural and biological exchange that connected distant regions of Afro-Eurasia", "isCorrect": true, "explanation": "These networks collectively wove distant regions of Afro-Eurasia into an increasingly interconnected system of exchange." },
       { "label": "C", "text": "They existed in complete isolation from one another, with no overlapping merchants, ports or connections", "isCorrect": false, "explanation": "These networks often intersected and overlapped, such as goods moving from the Indian Ocean network into Silk Road routes, rather than existing in total isolation." },
-      { "label": "D", "text": "They only involved the exchange of military technology among the great empires of Eurasia and Africa", "isCorrect": false, "explanation": "Military technology did spread, but this drastically understates the vast range of goods, ideas, religions, and biological exchange also involved." }
+      { "label": "D", "text": "They only involved the exchange of military technology among the great empires of Eurasia and Africa at the time", "isCorrect": false, "explanation": "Military technology did spread, but this drastically understates the vast range of goods, ideas, religions, and biological exchange also involved." }
     ],
     "explanation": "These interconnected networks fostered significant economic, cultural, and biological exchange, linking distant regions of Afro-Eurasia together.",
     "conceptLink": "ap-world/unit-2-networks-of-exchange/effects-of-connectivity",

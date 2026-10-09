@@ -115,4 +115,5 @@ PADW = {
     "persuading Congress to repeal the Fugitive Slave Act and end slavery in the 1840s.": "persuading Congress to repeal the Fugitive Slave Act and to end slavery throughout the 1840s.",
     "The view of earlier generations that slavery was a necessary evil to be ended in time.": "The view of earlier generations that slavery was a necessary evil to be ended in time by law.",
     "states could remove Native peoples within their borders without federal approval.": "states could remove Native peoples within their borders without any federal approval or treaty.",
+    "gradual emancipation with colonization of freed people in Africa.": "gradual emancipation with the colonization of freed people in Africa.",
 }

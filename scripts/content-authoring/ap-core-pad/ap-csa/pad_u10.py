@@ -30,4 +30,6 @@ PADC = {
     P + "30": "Binary search compares against the middle element to eliminate half the remaining elements; this only works if the order lets it infer which half holds the target",
 }
 
-PADW = {}
+PADW = {
+    "Index 0 (value 1), the first element": "Index 0 (value 1), the first element of the array",
+}

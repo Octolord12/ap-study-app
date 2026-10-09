@@ -81,4 +81,10 @@ PADC = {
 PADW = {
     "It operated as a medieval craft guild limited to local artisans and their apprentices": "It operated as a medieval craft guild limited to local artisans and their apprentices in each city",
     "Spain used silver only to pay Native American workers, who then sent it across the Pacific to China as tribute": "Spain used silver only to pay Native American workers, who then sent it across the Pacific to China as tribute each year",
+    "They were massive settler colonies with millions of Portuguese residents, farms and cities": "They were massive settler colonies with millions of Portuguese residents, farms and large cities",
+    "The first European settlement in North America, founded on the coast of Florida": "The first European settlement in North America, founded on the Atlantic coast of Florida",
+    "They were universally rejected and never adopted outside the Americas by any farmers": "They were universally rejected and never adopted outside the Americas by any farmers at all",
+    "Treasure ships purchased from Ming China, whose rulers sold their largest fleets to Portugal and Spain in 1433": "Treasure ships purchased from Ming China, whose rulers sold their largest fleets to both Portugal and Spain in 1433",
+    "Examination results in a colonial civil service open to all subjects": "Examination results in a colonial civil service that was open to all subjects",
+    "An agreement between Britain and France to divide North America along the line of the Mississippi River": "An agreement between Britain and France to divide North America along the line of the great Mississippi River",
 }

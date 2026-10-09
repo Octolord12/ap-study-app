@@ -194,7 +194,7 @@
       },
       {
         "label": "B",
-        "text": "A British order requiring the former colonies to end their religious establishments.",
+        "text": "A British order requiring the former colonies to end their religious establishments after the war.",
         "isCorrect": false,
         "explanation": "Disestablishment occurred as states acted after independence."
       },
@@ -512,7 +512,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Britain kept control of the land between the Appalachians and the Mississippi for twenty years.",
+        "text": "Britain kept control of the land between the Appalachians and the Mississippi River for twenty years.",
         "isCorrect": false,
         "explanation": "The treaty gave that land to the United States."
       },

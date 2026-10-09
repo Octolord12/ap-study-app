@@ -18,4 +18,7 @@ PADC = {
 
 PADW = {
     "No -- negative acceleration always means the object is slowing down, whatever the direction of its motion or the sign of its velocity": "No -- negative acceleration always means the object is slowing down, whatever the direction of its motion or the sign of its velocity in every case",
+    "t = 0 s to t = 2 s": "t = 0 s to t = 2 s, at the start of the motion",
+    "The object is accelerating rapidly": "The object is accelerating rapidly at that time",
+    "The maximum velocity reached at any time during the motion": "The maximum velocity reached at any single time during the motion",
 }

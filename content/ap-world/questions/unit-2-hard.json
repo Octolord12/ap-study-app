@@ -14,7 +14,7 @@
       },
       {
         "label": "B",
-        "text": "A requirement that all subjects convert to a single state religion in order to hold office",
+        "text": "A requirement that all subjects convert to a single state religion in order to hold any office",
         "isCorrect": false,
         "explanation": "The passage shows a variety of faiths being practiced freely."
       },
@@ -56,7 +56,7 @@
       },
       {
         "label": "C",
-        "text": "The Mongols banned long-distance trade in order to protect the herding economy of the steppe and its tribes",
+        "text": "The Mongols banned long-distance trade in order to protect the herding economy of the steppe and its many tribes",
         "isCorrect": false,
         "explanation": "The Mongols encouraged and taxed trade, and many Mongol rulers patronized merchants."
       },
@@ -458,7 +458,7 @@
       },
       {
         "label": "D",
-        "text": "They restored the civil service examinations immediately and recruited officials only by examination.",
+        "text": "They restored the civil service examinations immediately and recruited all of their officials only by examination.",
         "isCorrect": false,
         "explanation": "The examinations were suspended for decades and restored only in 1315, and officials were not recruited only by examination."
       }
@@ -530,7 +530,7 @@
       },
       {
         "label": "D",
-        "text": "Hinduism: to Europe by the Mongols along the Volga River, where it spread among the Slavic towns",
+        "text": "Hinduism: to Europe by the Mongols along the Volga River, where it spread among the Slavic towns and villages",
         "isCorrect": false,
         "explanation": "Hinduism did not spread to Europe through the Mongols."
       }

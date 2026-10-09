@@ -103,7 +103,7 @@
     "stem": "What is a \"critical point\" of a function f?",
     "choices": [
       { "label": "A", "text": "A point where f'(x) = 0 or f'(x) is undefined (within f's domain)", "isCorrect": true, "explanation": "This is the precise definition of a critical point." },
-      { "label": "B", "text": "Any point where f(x) = 0, such as an x-intercept of the graph", "isCorrect": false, "explanation": "f(x)=0 describes a ROOT/zero of the function, a different concept from a critical point." },
+      { "label": "B", "text": "Any point where f(x) = 0, such as an x-intercept on the graph of f itself", "isCorrect": false, "explanation": "f(x)=0 describes a ROOT/zero of the function, a different concept from a critical point." },
       { "label": "C", "text": "The highest point on the entire graph, over the whole domain of the function", "isCorrect": false, "explanation": "A critical point isn't necessarily the highest point on the whole graph; it's a candidate location for a local extremum." },
       { "label": "D", "text": "A point where f is discontinuous, such as a jump or hole in its graph", "isCorrect": false, "explanation": "Critical points are generally about differentiability within the function's domain, not about points of discontinuity." }
     ],

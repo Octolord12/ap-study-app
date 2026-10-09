@@ -44,4 +44,5 @@ PADW = {
     "A single specific numerical value of x for which both sides of the equation are equal": "A single specific numerical value of x for which both sides of the equation are equal at one particular input",
     "Segments with a slope of 1, since dy/dx = 1 there": "Segments with a slope of 1, since dy/dx = 1 there along the line x=0",
     "The slopes become negative as y increases, since the solution curves bend downward": "The slopes become negative as y increases, since the solution curves bend downward toward the axis",
+    "A quantity that never changes over time, whatever its initial value": "A quantity that never changes over time, no matter what its initial value happens to be",
 }

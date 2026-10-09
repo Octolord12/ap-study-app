@@ -266,7 +266,7 @@
       },
       {
         "label": "B",
-        "text": "The use of steam engines to power large ocean-going ships across the Atlantic Ocean.",
+        "text": "The use of steam engines to power large ocean-going ships across the entire Atlantic Ocean.",
         "isCorrect": false,
         "explanation": "Steam-powered ships did not appear until the 1800s."
       },
@@ -494,7 +494,7 @@
       },
       {
         "label": "D",
-        "text": "Maize, the staple grain of Native societies across the Americas",
+        "text": "Maize, the staple grain of many Native societies across the Americas",
         "isCorrect": false,
         "explanation": "Maize was native to the Americas and spread to Europe, Africa and Asia."
       }
@@ -638,7 +638,7 @@
       },
       {
         "label": "D",
-        "text": "They caused widespread famine by replacing native grains.",
+        "text": "They caused widespread famine by replacing the native grains.",
         "isCorrect": false,
         "explanation": "Over time, they usually increased food supplies, though overreliance could be risky."
       }
@@ -704,7 +704,7 @@
       },
       {
         "label": "C",
-        "text": "Protestant criticism of Catholic missionary activity and of Spanish treatment of Native converts.",
+        "text": "Protestant criticism of Catholic missionary activity and of the Spanish treatment of Native converts.",
         "isCorrect": false,
         "explanation": "The author is a Catholic friar who wants to save souls."
       },

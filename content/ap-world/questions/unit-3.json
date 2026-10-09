@@ -102,7 +102,7 @@
     "difficulty": "medium",
     "stem": "The Songhai Empire, a major West African land-based empire during this period, grew powerful in part by controlling what type of trade?",
     "choices": [
-      { "label": "A", "text": "The Atlantic slave trade with Europe exclusively", "isCorrect": false, "explanation": "The Atlantic slave trade later became significant in West Africa, but Songhai's initial rise to power was rooted in trans-Saharan trade, similar to Mali before it." },
+      { "label": "A", "text": "The Atlantic slave trade with European merchants exclusively", "isCorrect": false, "explanation": "The Atlantic slave trade later became significant in West Africa, but Songhai's initial rise to power was rooted in trans-Saharan trade, similar to Mali before it." },
       { "label": "B", "text": "Trans-Saharan trade routes, similar to earlier Mali", "isCorrect": true, "explanation": "Songhai, like Mali before it, built its wealth and power on controlling trans-Saharan trade in gold and salt." },
       { "label": "C", "text": "The Indian Ocean spice trade with Arabia exclusively", "isCorrect": false, "explanation": "Songhai's core economic base was trans-Saharan trade, not the Indian Ocean network on the opposite side of the continent." },
       { "label": "D", "text": "Trade with the Aztec Empire across the Atlantic Ocean", "isCorrect": false, "explanation": "There's no documented direct trade relationship between Songhai in West Africa and the Aztec Empire in Mesoamerica." }
@@ -136,7 +136,7 @@
     "choices": [
       { "label": "A", "text": "Through complex bureaucracies and administrative systems", "isCorrect": true, "explanation": "These empires developed sophisticated administrative structures, often blending central authority with regional accommodation." },
       { "label": "B", "text": "They had no administrative systems at all and ruled by custom", "isCorrect": false, "explanation": "These empires developed sophisticated administrative structures to manage their territories." },
-      { "label": "C", "text": "Through decentralized systems with no central authority", "isCorrect": false, "explanation": "While some regional autonomy existed, these empires maintained meaningful central authority through administrative systems." },
+      { "label": "C", "text": "Through decentralized systems with no central authority at all", "isCorrect": false, "explanation": "While some regional autonomy existed, these empires maintained meaningful central authority through administrative systems." },
       { "label": "D", "text": "By ignoring all regional differences among their subjects", "isCorrect": false, "explanation": "Many of these empires developed nuanced approaches that did account for regional and religious diversity, such as the Ottoman millet system." }
     ],
     "explanation": "These land-based empires managed their vast territories through complex, often sophisticated administrative bureaucracies.",
@@ -201,7 +201,7 @@
       { "label": "A", "text": "A centralized bureaucracy staffed partly through merit-based examinations", "isCorrect": true, "explanation": "The examination system helped staff the vast Chinese bureaucracy with officials selected on demonstrated merit." },
       { "label": "B", "text": "Random selection of officials by lottery among the landowners of every province", "isCorrect": false, "explanation": "Official selection was based on the examination system, not random lottery." },
       { "label": "C", "text": "No taxation or administrative system of any kind, relying on tribute alone", "isCorrect": false, "explanation": "These empires maintained organized taxation and administrative systems to fund and run their governments." },
-      { "label": "D", "text": "Complete reliance on foreign administrators sent from the Ottoman court", "isCorrect": false, "explanation": "The core administration typically relied on trained officials from within the empire, not complete reliance on foreigners." }
+      { "label": "D", "text": "Complete reliance on foreign administrators sent directly from the Ottoman court", "isCorrect": false, "explanation": "The core administration typically relied on trained officials from within the empire, not complete reliance on foreigners." }
     ],
     "explanation": "The Ming/Qing dynasties relied on a centralized bureaucracy staffed in part through merit-based examinations.",
     "conceptLink": "ap-world/unit-3-land-based-empires/empires-administration",
@@ -375,7 +375,7 @@
     "stem": "Which of these empires is generally classified among the major \"gunpowder empires\" of this era (c. 1450-1750), known for using gunpowder weapons to expand and maintain centralized rule?",
     "choices": [
       { "label": "A", "text": "The Ottoman, Safavid, and Mughal empires", "isCorrect": true, "explanation": "These three empires are commonly grouped as \"gunpowder empires\" for their shared reliance on firearms and artillery to expand and centralize power." },
-      { "label": "B", "text": "The ancient Roman and Byzantine empires", "isCorrect": false, "explanation": "The Roman Empire existed many centuries earlier, well before gunpowder weapons existed." },
+      { "label": "B", "text": "The ancient Roman and later Byzantine empires", "isCorrect": false, "explanation": "The Roman Empire existed many centuries earlier, well before gunpowder weapons existed." },
       { "label": "C", "text": "The classical Maya and Aztec civilizations", "isCorrect": false, "explanation": "The classical Maya civilization predates gunpowder weapons and this era." },
       { "label": "D", "text": "The early Sumerian and Akkadian city-states", "isCorrect": false, "explanation": "The Sumerian city-states existed thousands of years earlier, long before gunpowder." }
     ],

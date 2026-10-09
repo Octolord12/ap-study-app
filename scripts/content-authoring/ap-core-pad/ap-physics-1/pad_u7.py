@@ -27,4 +27,7 @@ PADC = {
     P + "30": "Both are conserved in the absence of an external influence: linear momentum needs no net external force, angular momentum needs no net external torque",
 }
 
-PADW = {}
+PADW = {
+    "When there is no net external force acting on the system": "When there is no net external force acting on the whole system",
+    "0° (force parallel to the lever arm)": "0° (force parallel to the lever arm, pointing along it)",
+}

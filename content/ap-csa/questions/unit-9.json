@@ -22,7 +22,7 @@
     "difficulty": "easy",
     "stem": "In `public class Dog extends Animal`, which class is the superclass?",
     "choices": [
-      { "label": "A", "text": "Dog", "isCorrect": false, "explanation": "Dog is the subclass, the one doing the extending." },
+      { "label": "A", "text": "Dog, since it is named first", "isCorrect": false, "explanation": "Dog is the subclass, the one doing the extending." },
       { "label": "B", "text": "Animal", "isCorrect": true, "explanation": "Animal is being extended, making it the superclass." },
       { "label": "C", "text": "Both are superclasses", "isCorrect": false, "explanation": "Only one of these is the superclass; Dog is the subclass." },
       { "label": "D", "text": "Neither; there is no superclass here", "isCorrect": false, "explanation": "Animal is indeed acting as the superclass, since Dog extends it." }
@@ -41,7 +41,7 @@
       { "label": "A", "text": "Only private fields of the superclass, and none of its methods", "isCorrect": false, "explanation": "Private fields are NOT directly accessible/inherited in the usual sense from outside the declaring class, even by subclasses." },
       { "label": "B", "text": "Only the constructor of the superclass, with none of its fields", "isCorrect": false, "explanation": "A subclass does not inherit the superclass's constructors; it can only call them via super()." },
       { "label": "C", "text": "Public and protected fields and methods (not private ones)", "isCorrect": true, "explanation": "Inheritance gives a subclass access to the superclass's non-private members." },
-      { "label": "D", "text": "Nothing; inheritance is just naming", "isCorrect": false, "explanation": "Inheritance genuinely gives the subclass access to non-private members of the superclass." }
+      { "label": "D", "text": "Nothing; inheritance is just a naming scheme, with no members shared", "isCorrect": false, "explanation": "Inheritance genuinely gives the subclass access to non-private members of the superclass." }
     ],
     "explanation": "A subclass inherits its superclass's public and protected fields and methods, but not private ones.",
     "conceptLink": "ap-csa/unit-9-inheritance/superclasses-and-subclasses",

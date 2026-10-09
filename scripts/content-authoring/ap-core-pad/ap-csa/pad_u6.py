@@ -18,4 +18,6 @@ PADC = {
     P + "28": "The loop runs through the whole array, so each pair is swapped twice, undoing the reversal (it should stop at arr.length / 2)",
 }
 
-PADW = {}
+PADW = {
+    "The largest negative number in the array": "The largest negative number found in the array",
+}

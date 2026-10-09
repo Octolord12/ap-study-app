@@ -230,7 +230,7 @@
       },
       {
         "label": "B",
-        "text": "The Committee on Public Information produced posters supporting the war.",
+        "text": "The Committee on Public Information produced posters and films supporting the war effort.",
         "isCorrect": false,
         "explanation": "That shows promotion of the war, not punishment of critics."
       },
@@ -422,7 +422,7 @@
       },
       {
         "label": "D",
-        "text": "ended the New Deal and returned federal power to the states and the courts.",
+        "text": "ended the New Deal and returned much federal power to the states and the courts.",
         "isCorrect": false,
         "explanation": "The New Deal continued."
       }

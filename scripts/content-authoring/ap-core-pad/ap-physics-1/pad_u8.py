@@ -32,4 +32,7 @@ PADC = {
     P + "30": "Because it expresses that the total energy per unit volume of a fluid (pressure + kinetic energy density + potential energy density) is constant along a streamline, just as mechanical energy is conserved for a particle",
 }
 
-PADW = {}
+PADW = {
+    "It sinks, since its density is less than water's density": "It sinks, since its density is less than the density of water",
+    "It sinks completely to the bottom": "It sinks completely to the bottom of the fluid's container",
+}

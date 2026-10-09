@@ -18,4 +18,6 @@ PADC = {
     P + "27": "Removing an element only shifts elements AFTER it, so going backward leaves the already-visited indices before it unaffected",
 }
 
-PADW = {}
+PADW = {
+    "Whether target is in list at least once": "Whether target is in list at least once (yes or no)",
+}

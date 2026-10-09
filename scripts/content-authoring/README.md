@@ -172,3 +172,25 @@ fails if any DBQ in `/content` uses the old layout. Editing a prompt resets its 
 python3 scripts/content-authoring/dbq-layout/apply.py --check   # exit 1 if any DBQ is in the old layout
 python3 scripts/content-authoring/dbq-layout/apply.py           # fix them
 ```
+
+## Answer length, the other end: the right answer is almost never the shortest
+
+After the "right answer is the longest" fix (ap-core-pad, ap-world-pad, ap-us-history overlays), the right answer was still rarely the
+**shortest** choice: 3 to 12% of the questions where length can be a tell (prose choices), against 25% by chance, so a student could drop
+the shortest choice and guess among the rest. `answer-length/` fixes it the same way, through the same `PADW` overlays (a wrong choice's
+current text maps to its longer text): lengthen the one wrong choice that is as short as the right answer, with more specific wording that
+keeps the same claim and stays wrong for the same reason. Only a choice's `text` changes (checked field by field against `git HEAD`).
+
+```bash
+cd scripts/content-authoring/answer-length
+python3 stats.py                                        # right answer longest / shortest per course and set, with the chance rate
+python3 plan.py select selection.json                   # freeze the questions to edit (target: shortest in ~18% of prose questions)
+python3 plan.py show selection.json ap-calc core 0 15   # worksheet: stem, right answer, the choice to lengthen and why it is wrong, its length window
+python3 record.py ap-calc edits.json                    # {"<question id>": "<the lengthened wrong choice, whole>"}; all-or-nothing, safe to re-run
+# then apply: ap-core-pad/apply.py <course> (Calc, Physics 1, CSA) | ap-world-pad/apply.py | re-run ap-us-history/uN_base.py and uN_hard.py
+```
+
+`record.py` rejects an edit unless the new text is longer than the right answer and not much longer than the longest wrong choice, the
+old text is unique in the course (PADW matches by text) and the new text is not already a choice. Calc, Physics 1 and CSA *hard* sets are
+skipped: they are generated with computed distractors and are almost entirely math or code, where length means nothing. Do not lengthen a
+code choice by renaming a variable; it would stand out from its siblings. 2026-10-09: 108 questions, shortest 3-12% -> 14.5-18.7%, longest unchanged.

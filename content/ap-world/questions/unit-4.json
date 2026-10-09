@@ -105,7 +105,7 @@
       { "label": "A", "text": "The first successful circumnavigation of the globe by a European-led expedition", "isCorrect": true, "explanation": "Although Magellan died partway through, his expedition completed the first circumnavigation of the globe." },
       { "label": "B", "text": "The first European contact with China by a fleet sailing around the African cape", "isCorrect": false, "explanation": "European contact with China had occurred earlier via other routes, including overland Silk Road contact." },
       { "label": "C", "text": "The first crossing of the Atlantic Ocean by a Spanish-sponsored European expedition", "isCorrect": false, "explanation": "The Atlantic had already been crossed earlier, notably by Columbus in 1492." },
-      { "label": "D", "text": "The first European settlement in North America, founded on the coast of Florida", "isCorrect": false, "explanation": "Magellan's expedition is significant for circumnavigation, not for founding a settlement in North America." }
+      { "label": "D", "text": "The first European settlement in North America, founded on the Atlantic coast of Florida", "isCorrect": false, "explanation": "Magellan's expedition is significant for circumnavigation, not for founding a settlement in North America." }
     ],
     "explanation": "Magellan's expedition achieved the first circumnavigation of the globe, even though he died before its completion.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/technology-and-exploration",
@@ -201,7 +201,7 @@
       { "label": "A", "text": "They had no effect on population or agriculture, since farmers rejected every foreign crop", "isCorrect": false, "explanation": "These new crops had substantial, well-documented effects on agriculture and population." },
       { "label": "B", "text": "They supported population growth in many regions by providing new calorie-dense foods", "isCorrect": true, "explanation": "Crops like maize and potatoes provided reliable, calorie-dense food sources that supported population growth in various regions." },
       { "label": "C", "text": "They caused widespread famine everywhere they were introduced, as the new crops failed", "isCorrect": false, "explanation": "These crops generally supported, rather than caused, famine, by providing additional reliable food sources." },
-      { "label": "D", "text": "They were universally rejected and never adopted outside the Americas by any farmers", "isCorrect": false, "explanation": "These crops were widely adopted in various regions, such as the potato in Europe and maize in parts of Africa and Asia, not universally rejected." }
+      { "label": "D", "text": "They were universally rejected and never adopted outside the Americas by any farmers at all", "isCorrect": false, "explanation": "These crops were widely adopted in various regions, such as the potato in Europe and maize in parts of Africa and Asia, not universally rejected." }
     ],
     "explanation": "New American crops like maize and potatoes supported population growth across Afro-Eurasia by providing calorie-dense food sources.",
     "conceptLink": "ap-world/unit-4-transoceanic-interconnections/columbian-exchange",
@@ -310,7 +310,7 @@
     "difficulty": "medium",
     "stem": "What role did Portuguese trading posts (feitorias) established along coasts of Africa and Asia typically serve?",
     "choices": [
-      { "label": "A", "text": "They were massive settler colonies with millions of Portuguese residents, farms and cities", "isCorrect": false, "explanation": "Portuguese overseas presence in Africa/Asia was generally centered on smaller trading posts, not massive settler populations." },
+      { "label": "A", "text": "They were massive settler colonies with millions of Portuguese residents, farms and large cities", "isCorrect": false, "explanation": "Portuguese overseas presence in Africa/Asia was generally centered on smaller trading posts, not massive settler populations." },
       { "label": "B", "text": "They were fortified trading posts that controlled commerce rather than settlement colonies", "isCorrect": true, "explanation": "These fortified posts let Portugal control and profit from key trade routes without large-scale settlement." },
       { "label": "C", "text": "They had no economic purpose and were used only as prisons for convicted Portuguese sailors", "isCorrect": false, "explanation": "These posts had a very clear, central economic purpose: controlling and profiting from trade." },
       { "label": "D", "text": "They were exclusively military bases with no trade function, housing only soldiers and cannon", "isCorrect": false, "explanation": "These posts did have military/defensive functions, but they were fundamentally trade-oriented, not purely military bases." }

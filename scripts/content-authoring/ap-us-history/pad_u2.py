@@ -88,6 +88,7 @@ PADC = {
 }
 
 # Second pass: lengthen one wrong choice (matched by its current text) where the right answer was still the longest.
+
 PADW = {
     "Spain permanently lost control of New Mexico after the revolt and never returned to the region.": "Spain permanently lost control of New Mexico after the revolt, and the territory never again came under Spanish rule or missions.",
     "Slavery was more economically central in New England, where large farms depended on it, than in the Chesapeake.": "Slavery was more economically central in New England, where large farms and shipyards depended on enslaved labor, than in the Chesapeake or the Carolinas.",
@@ -110,4 +111,7 @@ PADW = {
     "a Puritan plan to unite the New England colonies under church leadership.": "a Puritan plan to unite all of the New England colonies under a single church leadership.",
     "colonists pay a direct tax to Parliament on every newspaper and legal document.": "colonists pay a direct tax to Parliament on every newspaper, playing card and legal document.",
     "provide a refuge for Catholics fleeing persecution in England and Ireland.": "provide a refuge for Catholics fleeing persecution in England, Ireland and the Netherlands.",
+    "A rejection of English culture and a call for independence from the crown.": "A rejection of English culture and a call for full independence from the crown.",
+    "required all settlers to join the Church of England and pay taxes to it.": "required all settlers to join the Church of England and to pay taxes to it.",
+    "Native American trade networks replaced European imports in the interior.": "Native American trade networks replaced European imports in the interior of the colonies.",
 }

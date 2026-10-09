@@ -279,7 +279,7 @@
     "stem": "An object's average density is LESS than the fluid it's placed in. What happens to the object?",
     "choices": [
       { "label": "A", "text": "It floats, with only part of its volume submerged", "isCorrect": true, "explanation": "When average density is less than the fluid's density, the object floats, displacing just enough fluid so the buoyant force equals its weight." },
-      { "label": "B", "text": "It sinks completely to the bottom", "isCorrect": false, "explanation": "An object LESS dense than the fluid floats -- sinking happens when the object's density is GREATER than the fluid's." },
+      { "label": "B", "text": "It sinks completely to the bottom of the fluid's container", "isCorrect": false, "explanation": "An object LESS dense than the fluid floats -- sinking happens when the object's density is GREATER than the fluid's." },
       { "label": "C", "text": "It remains perfectly suspended at any random depth", "isCorrect": false, "explanation": "An object less dense than the fluid rises to the surface and floats, rather than staying suspended at an arbitrary depth." },
       { "label": "D", "text": "Density has no effect on whether an object floats or sinks", "isCorrect": false, "explanation": "The relative density between the object and fluid is EXACTLY what determines whether it floats or sinks." }
     ],
@@ -311,7 +311,7 @@
     "stem": "An object has a density of $600\\text{ kg/m}^3$, and it is placed in water ($\\rho=1000\\text{ kg/m}^3$). Does it float or sink?",
     "choices": [
       { "label": "A", "text": "It floats, since its density is less than water's density", "isCorrect": true, "explanation": "600 kg/m³ < 1000 kg/m³, so the object is less dense than water and will float." },
-      { "label": "B", "text": "It sinks, since its density is less than water's density", "isCorrect": false, "explanation": "An object with LOWER density than the fluid floats, not sinks -- this reverses the correct relationship." },
+      { "label": "B", "text": "It sinks, since its density is less than the density of water", "isCorrect": false, "explanation": "An object with LOWER density than the fluid floats, not sinks -- this reverses the correct relationship." },
       { "label": "C", "text": "It sinks, since its density is greater than water's density", "isCorrect": false, "explanation": "600 kg/m³ is actually LESS than water's 1000 kg/m³, not greater, so this comparison is incorrect." },
       { "label": "D", "text": "It's impossible to determine without knowing the object's exact shape", "isCorrect": false, "explanation": "For determining float vs. sink, only the DENSITY comparison matters -- exact shape isn't needed for this basic determination." }
     ],

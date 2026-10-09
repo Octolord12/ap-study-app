@@ -103,7 +103,7 @@
     "stem": "A car's velocity (in mph) over a 2-hour trip is given by $v(t)$. How would you interpret $\\dfrac{1}{2}\\int_0^2 v(t)\\,dt$ in this context?",
     "choices": [
       { "label": "A", "text": "The average velocity of the car over the 2-hour trip", "isCorrect": true, "explanation": "This is exactly the average value formula applied to velocity, giving the average velocity." },
-      { "label": "B", "text": "The car's total distance traveled during the trip", "isCorrect": false, "explanation": "Total distance would just be the integral of v(t) alone, without dividing by the time interval." },
+      { "label": "B", "text": "The car's total distance traveled during the entire 2-hour trip", "isCorrect": false, "explanation": "Total distance would just be the integral of v(t) alone, without dividing by the time interval." },
       { "label": "C", "text": "The car's maximum velocity reached at any moment during the trip", "isCorrect": false, "explanation": "This expression gives an AVERAGE, not the maximum value attained during the trip." },
       { "label": "D", "text": "The car's acceleration at the end of the trip, the rate its speed changes", "isCorrect": false, "explanation": "Acceleration would involve a DERIVATIVE of velocity, not an integral of it." }
     ],

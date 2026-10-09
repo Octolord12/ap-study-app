@@ -22,7 +22,7 @@
     "difficulty": "easy",
     "stem": "Which best describes the relationship between a class and an object?",
     "choices": [
-      { "label": "A", "text": "A class is an instance of an object", "isCorrect": false, "explanation": "This reverses the relationship -- objects are instances of classes, not the other way around." },
+      { "label": "A", "text": "A class is an instance of a single object", "isCorrect": false, "explanation": "This reverses the relationship -- objects are instances of classes, not the other way around." },
       { "label": "B", "text": "An object is an instance of a class", "isCorrect": true, "explanation": "A class acts as a blueprint; an object is a concrete instance created from that blueprint." },
       { "label": "C", "text": "Classes and objects are the same thing", "isCorrect": false, "explanation": "A class is a template/definition; an object is a distinct, concrete instance created from it." },
       { "label": "D", "text": "An object can exist without any class", "isCorrect": false, "explanation": "Every object in Java is created from, and belongs to, some class." }
@@ -41,7 +41,7 @@
       { "label": "A", "text": "Only the object's methods, not its data, which each object stores elsewhere", "isCorrect": false, "explanation": "A class defines fields (data) in addition to methods." },
       { "label": "B", "text": "Only the object's data, not its methods, which are defined separately", "isCorrect": false, "explanation": "A class defines methods (behavior) in addition to fields." },
       { "label": "C", "text": "Both the data (fields) and behavior (methods) of its objects", "isCorrect": true, "explanation": "A class bundles together the fields that store an object's state and the methods that define its behavior." },
-      { "label": "D", "text": "Nothing; objects define their own structure independently", "isCorrect": false, "explanation": "Objects get their structure from the class that creates them, not independently." }
+      { "label": "D", "text": "Nothing; each object defines its own structure independently of any class", "isCorrect": false, "explanation": "Objects get their structure from the class that creates them, not independently." }
     ],
     "explanation": "A class is the combined definition of both an object's data (fields) and its behavior (methods).",
     "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
@@ -73,7 +73,7 @@
       { "label": "A", "text": "They automatically share the same field values, since both come from one class", "isCorrect": false, "explanation": "Separately created objects do not automatically share field values; each has its own independent state." },
       { "label": "B", "text": "Each has its own independent copy of the fields defined in the Dog class", "isCorrect": true, "explanation": "Every object created with new gets its own separate storage for the fields defined by its class." },
       { "label": "C", "text": "Changing dog1's fields always changes dog2's fields too, because they share memory", "isCorrect": false, "explanation": "Modifying one object's fields has no effect on a separate object's fields, since they aren't the same object." },
-      { "label": "D", "text": "Only one Dog object can exist in a program at a time", "isCorrect": false, "explanation": "A program can create as many Dog objects as memory allows." }
+      { "label": "D", "text": "Only one Dog object can exist in a program at a time, since a class allows one", "isCorrect": false, "explanation": "A program can create as many Dog objects as memory allows." }
     ],
     "explanation": "Each call to `new Dog()` creates a distinct object with its own independent copy of the class's fields.",
     "conceptLink": "ap-csa/unit-2-using-objects/object-oriented-programming",
@@ -120,7 +120,7 @@
     "choices": [
       { "label": "A", "text": "Declares a variable's type before any value is assigned to it", "isCorrect": false, "explanation": "Declaring a variable's type happens separately (e.g. writing Dog myDog); new is about allocation and construction." },
       { "label": "B", "text": "Allocates memory for a new object and calls its constructor", "isCorrect": true, "explanation": "new sets aside memory for the object's fields and runs the constructor to initialize it." },
-      { "label": "C", "text": "Deletes an existing object and frees its memory for reuse", "isCorrect": false, "explanation": "Java doesn't require manual deletion; new creates objects, it doesn't remove them." },
+      { "label": "C", "text": "Deletes an existing object and frees up its memory for later reuse", "isCorrect": false, "explanation": "Java doesn't require manual deletion; new creates objects, it doesn't remove them." },
       { "label": "D", "text": "Converts a primitive to an object so that it can be passed around", "isCorrect": false, "explanation": "new is for instantiating classes, not for converting primitive values." }
     ],
     "explanation": "`new` allocates space for the object and invokes its constructor to set up its initial state.",
@@ -169,7 +169,7 @@
       { "label": "A", "text": "A brand-new, independent Dog object is created for dog2", "isCorrect": false, "explanation": "No new object is created; this statement only copies the reference, not the object itself." },
       { "label": "B", "text": "dog2 now refers to the same object that dog1 refers to", "isCorrect": true, "explanation": "Assigning one reference variable to another copies the reference (address), so both variables point to the same object." },
       { "label": "C", "text": "dog1's data is copied field-by-field into a new object referenced by dog2", "isCorrect": false, "explanation": "This describes a manual or deep copy, which doesn't happen automatically with simple assignment." },
-      { "label": "D", "text": "This causes a compile error", "isCorrect": false, "explanation": "This is entirely valid Java, assuming dog1 was already declared as a Dog." }
+      { "label": "D", "text": "This causes a compile error, since one variable cannot be set to another", "isCorrect": false, "explanation": "This is entirely valid Java, assuming dog1 was already declared as a Dog." }
     ],
     "explanation": "Assigning `dog2 = dog1` copies the reference, so dog1 and dog2 both point to the same underlying object.",
     "conceptLink": "ap-csa/unit-2-using-objects/creating-and-storing-objects",
@@ -248,7 +248,7 @@
     "choices": [
       { "label": "A", "text": "Void methods can't take parameters, while non-void methods can take as many as the programmer chooses", "isCorrect": false, "explanation": "Void methods can take parameters -- e.g. setName(String name) is void but still takes a parameter." },
       { "label": "B", "text": "A void method performs an action but returns no value; a non-void method returns a value you can use", "isCorrect": true, "explanation": "This is the defining difference -- a non-void method's return value can be stored, printed, or used in an expression." },
-      { "label": "C", "text": "Non-void methods can only be called once in a program, while void methods can be called repeatedly", "isCorrect": false, "explanation": "Non-void methods can be called as many times as needed, just like void methods." },
+      { "label": "C", "text": "Non-void methods can only be called once in a whole program, while void methods can be called repeatedly", "isCorrect": false, "explanation": "Non-void methods can be called as many times as needed, just like void methods." },
       { "label": "D", "text": "There is no difference; the terms are interchangeable in Java, and the compiler treats them identically", "isCorrect": false, "explanation": "There's a real, meaningful difference in whether a usable value comes back from the call." }
     ],
     "explanation": "A non-void method's declared return type indicates it produces a value the caller can use; void means no value comes back.",

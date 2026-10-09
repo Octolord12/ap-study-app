@@ -9,7 +9,7 @@
       { "label": "A", "text": "Loops and conditionals (control structures)", "isCorrect": false, "explanation": "Loops and conditionals are control structures used inside methods, not the main structural components of a class." },
       { "label": "B", "text": "Fields (instance variables) and methods", "isCorrect": true, "explanation": "A class typically bundles together its data (fields) and behavior (methods)." },
       { "label": "C", "text": "Packages and imports (organizational lines)", "isCorrect": false, "explanation": "Packages and imports organize and access code from outside the class, rather than being components defined within it." },
-      { "label": "D", "text": "Comments and whitespace", "isCorrect": false, "explanation": "Comments and whitespace aren't functional parts of a class's structure." }
+      { "label": "D", "text": "Comments and whitespace (non-code lines of text)", "isCorrect": false, "explanation": "Comments and whitespace aren't functional parts of a class's structure." }
     ],
     "explanation": "A class is built from fields, which store its objects' state, and methods, which define their behavior.",
     "conceptLink": "ap-csa/unit-5-writing-classes/anatomy-of-a-class",

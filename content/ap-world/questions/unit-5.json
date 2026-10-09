@@ -104,7 +104,7 @@
     "choices": [
       { "label": "A", "text": "The Thirteen Colonies remaining under British rule permanently as a self-governing dominion", "isCorrect": false, "explanation": "The colonies successfully achieved independence, the opposite of remaining permanently under British rule." },
       { "label": "B", "text": "The Thirteen Colonies won independence from Britain and formed the United States", "isCorrect": true, "explanation": "The revolution resulted in the Thirteen Colonies gaining independence and forming the United States." },
-      { "label": "C", "text": "France gaining control of the colonies after defeating the British in a long war", "isCorrect": false, "explanation": "France provided crucial support to the American revolutionaries, but France did not gain control of the colonies as a result." },
+      { "label": "C", "text": "France gaining control of the colonies after defeating the British in a long and costly war", "isCorrect": false, "explanation": "France provided crucial support to the American revolutionaries, but France did not gain control of the colonies as a result." },
       { "label": "D", "text": "Spain gaining control of the colonies after the peace treaty was signed at Paris in 1783", "isCorrect": false, "explanation": "Spain was not the power that gained control as a result of this revolution." }
     ],
     "explanation": "The American Revolution resulted in the Thirteen Colonies gaining independence from Britain and forming the United States.",
@@ -470,7 +470,7 @@
     "difficulty": "medium",
     "stem": "Considering the broader effects of industrialization discussed in this unit, which best summarizes its overall historical significance?",
     "choices": [
-      { "label": "A", "text": "It had minimal lasting impact on global history, since most factories closed within a few decades", "isCorrect": false, "explanation": "Industrialization had transformative, far-reaching historical significance, not minimal impact." },
+      { "label": "A", "text": "It had minimal lasting impact on global history, since most factories closed within just a few decades", "isCorrect": false, "explanation": "Industrialization had transformative, far-reaching historical significance, not minimal impact." },
       { "label": "B", "text": "It transformed production, society, cities and global power, with effects still shaping the world", "isCorrect": true, "explanation": "Industrialization's transformation of production, social life, urbanization, and global power remains foundational to the modern world." },
       { "label": "C", "text": "It only affected a small, insignificant industry with no broader consequences for society or trade", "isCorrect": false, "explanation": "Industrialization had sweeping effects across many sectors and societies, not confined to one small insignificant industry." },
       { "label": "D", "text": "It had no connection to any social or political movements, which arose from entirely unrelated causes", "isCorrect": false, "explanation": "Industrialization was deeply connected to social and political movements, such as socialism and labor organizing, discussed throughout this unit." }

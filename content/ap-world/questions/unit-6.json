@@ -72,7 +72,7 @@
     "choices": [
       { "label": "A", "text": "National prestige and competition among European powers for global influence and strategic territory", "isCorrect": true, "explanation": "European powers competed for colonies partly to enhance national prestige and secure strategic advantages over rivals." },
       { "label": "B", "text": "A complete absence of rivalry between European nations, which cooperated peacefully on every colonial question", "isCorrect": false, "explanation": "There was significant, well-documented rivalry and competition among European powers during this era of imperial expansion." },
-      { "label": "C", "text": "Random chance, with no strategic considerations guiding where governments chose to claim territory", "isCorrect": false, "explanation": "Imperial expansion involved substantial strategic planning and calculation, not random chance." },
+      { "label": "C", "text": "Random chance, with no strategic considerations at all guiding where governments chose to claim territory", "isCorrect": false, "explanation": "Imperial expansion involved substantial strategic planning and calculation, not random chance." },
       { "label": "D", "text": "Exclusively religious considerations with no political motivation, as governments acted only for their churches", "isCorrect": false, "explanation": "While religious motivations did play some role, political/strategic competition was a significant additional factor, not the exclusive one." }
     ],
     "explanation": "National prestige and strategic competition among European powers also drove imperial expansion, alongside economic motivations.",

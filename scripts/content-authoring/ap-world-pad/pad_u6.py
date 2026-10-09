@@ -80,4 +80,7 @@ PADC = {
     P + "45": "A nationalist from the colony who argued that the railways mainly served to extract resources and strengthen control.",
 }
 
-PADW = {}
+PADW = {
+    "Random chance, with no strategic considerations guiding where governments chose to claim territory": "Random chance, with no strategic considerations at all guiding where governments chose to claim territory",
+    "Airplanes, television and the internet, which appeared only later.": "Airplanes, television and the internet, which appeared only in the twentieth century.",
+}

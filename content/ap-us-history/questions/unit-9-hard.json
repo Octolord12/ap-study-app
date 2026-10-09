@@ -56,7 +56,7 @@
       },
       {
         "label": "C",
-        "text": "ended the two-party system when independent candidates won control of both houses.",
+        "text": "ended the two-party system when independent candidates won control of both houses at once.",
         "isCorrect": false,
         "explanation": "The system continued."
       },
@@ -128,7 +128,7 @@
       },
       {
         "label": "C",
-        "text": "NATO admitted several new members from Eastern Europe in the late 1990s and 2000s.",
+        "text": "NATO admitted several new members from Eastern Europe, including Poland, in the late 1990s and 2000s.",
         "isCorrect": false,
         "explanation": "That occurred after the Cold War ended."
       },
@@ -236,7 +236,7 @@
       },
       {
         "label": "C",
-        "text": "The growth of the Internet in the 1990s and the rise of online commerce and retail.",
+        "text": "The growth of the Internet in the 1990s and the rise of online commerce and retail sales.",
         "isCorrect": false,
         "explanation": "That concerns technology rather than the decline of manufacturing communities."
       },
@@ -482,7 +482,7 @@
       },
       {
         "label": "B",
-        "text": "granted citizenship to all undocumented immigrants who had lived in the country five years.",
+        "text": "granted citizenship to all undocumented immigrants who had lived in the country for five years.",
         "isCorrect": false,
         "explanation": "It did not provide citizenship."
       },

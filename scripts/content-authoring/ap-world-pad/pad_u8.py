@@ -80,4 +80,6 @@ PADW = {
     "A policy of equal rights for all races that began in 1948 and was supported by the government, the churches, most of the country's business leaders and the leaders of the main African political parties.": "A policy of equal rights for all races that began in 1948 and was supported by the government, the churches, most of the country's business leaders and the leaders of the main African political parties in the country.",
     "A joint US-Soviet engineering project designed to link the two halves of the city by rail and road": "A joint US-Soviet engineering project designed to link the two halves of the city by rail and road in the 1950s",
     "A literal iron wall built by the Soviet Union along its entire western border with Europe": "A literal iron wall built by the Soviet Union along its entire western border with Europe in the 1940s",
+    "A religious disagreement exclusively": "A religious disagreement over church doctrine exclusively",
+    "To join NATO as full members and take part in its military planning against the Soviet Union.": "To join NATO as full members and take part in its military planning against the Soviet Union and its allies.",
 }

@@ -68,3 +68,14 @@ PADC = {
     P + "44": "They linked Asian and Middle Eastern markets with European consumers, and their wealth supported art and civic life.",
     P + "45": "Buddhism: from India to China and East Asia along the Silk Roads, by missionaries and merchants.",
 }
+
+PADW = {
+    "A canal system built by the Mongols to carry grain from southern China to their capital": "A canal system built by the Mongols to carry grain from southern China to their northern capital",
+    "It only affected regions that had no trade connections with their neighbors or the coast": "It only affected regions that had no trade connections with their neighbors or with the coast",
+    "They had no lasting impact on local societies, because they never interacted with townspeople or rulers": "They had no lasting impact on local societies, because they never interacted with local townspeople or rulers",
+    "They only involved the exchange of military technology among the great empires of Eurasia and Africa": "They only involved the exchange of military technology among the great empires of Eurasia and Africa at the time",
+    "Hinduism: to Europe by the Mongols along the Volga River, where it spread among the Slavic towns": "Hinduism: to Europe by the Mongols along the Volga River, where it spread among the Slavic towns and villages",
+    "A requirement that all subjects convert to a single state religion in order to hold office": "A requirement that all subjects convert to a single state religion in order to hold any office",
+    "The Mongols banned long-distance trade in order to protect the herding economy of the steppe and its tribes": "The Mongols banned long-distance trade in order to protect the herding economy of the steppe and its many tribes",
+    "They restored the civil service examinations immediately and recruited officials only by examination.": "They restored the civil service examinations immediately and recruited all of their officials only by examination.",
+}

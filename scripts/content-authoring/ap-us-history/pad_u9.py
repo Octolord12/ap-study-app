@@ -87,3 +87,11 @@ PADC = {
     P + "44": "let some immigrants who arrived as children stay and work temporarily, without citizenship.",
     P + "45": "Lawrence v. Texas (2003), the repeal of Don't Ask, Don't Tell (2010) and Obergefell (2015).",
 }
+
+PADW = {
+    "a plan to expand the draft to include women and older volunteers.": "a plan to expand the military draft to include women and older volunteers.",
+    "ended the two-party system when independent candidates won control of both houses.": "ended the two-party system when independent candidates won control of both houses at once.",
+    "granted citizenship to all undocumented immigrants who had lived in the country five years.": "granted citizenship to all undocumented immigrants who had lived in the country for five years.",
+    "The growth of the Internet in the 1990s and the rise of online commerce and retail.": "The growth of the Internet in the 1990s and the rise of online commerce and retail sales.",
+    "NATO admitted several new members from Eastern Europe in the late 1990s and 2000s.": "NATO admitted several new members from Eastern Europe, including Poland, in the late 1990s and 2000s.",
+}

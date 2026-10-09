@@ -22,7 +22,7 @@
     "difficulty": "easy",
     "stem": "In `int[][] arr = new int[3][4];`, what do the 3 and 4 represent?",
     "choices": [
-      { "label": "A", "text": "3 columns and 4 rows", "isCorrect": false, "explanation": "This reverses the convention; the first dimension is rows, the second is columns." },
+      { "label": "A", "text": "3 columns and 4 rows, in that order", "isCorrect": false, "explanation": "This reverses the convention; the first dimension is rows, the second is columns." },
       { "label": "B", "text": "3 rows and 4 columns", "isCorrect": true, "explanation": "By convention, the first bracket specifies rows and the second specifies columns." },
       { "label": "C", "text": "The total number of elements (3+4)", "isCorrect": false, "explanation": "The total number of elements is 3*4=12, not 3+4." },
       { "label": "D", "text": "The minimum and maximum values allowed", "isCorrect": false, "explanation": "These numbers specify array dimensions/sizes, not value constraints." }

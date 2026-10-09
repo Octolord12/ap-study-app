@@ -361,7 +361,7 @@
       { "label": "A", "text": "The sum of all of the elements equal to target", "isCorrect": false, "explanation": "count is incremented by 1 (count++), not accumulated with the target's value." },
       { "label": "B", "text": "The number of times target appears in list", "isCorrect": true, "explanation": "count tracks how many elements match target, incrementing once per match." },
       { "label": "C", "text": "The index of target in list, or -1 if absent", "isCorrect": false, "explanation": "count tracks how many matches were found, not a specific position." },
-      { "label": "D", "text": "Whether target is in list at least once", "isCorrect": false, "explanation": "This method returns an int count, not a boolean presence check." }
+      { "label": "D", "text": "Whether target is in list at least once (yes or no)", "isCorrect": false, "explanation": "This method returns an int count, not a boolean presence check." }
     ],
     "explanation": "This method counts how many elements in `list` are equal to `target`.",
     "conceptLink": "ap-csa/unit-7-arraylist/arraylist-algorithms",

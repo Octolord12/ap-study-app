@@ -83,4 +83,8 @@ PADW = {
     "Hobbes argued that governments could be overthrown at will, while Locke supported absolute monarchy and the divine right of kings": "Hobbes argued that governments could be overthrown at will, while Locke supported absolute monarchy and the divine right of kings in all circumstances",
     "The Catholic Church, which wanted to separate from Rome and form an independent national church": "The Catholic Church, which wanted to separate from Rome and form an independent national church under its own king",
     "rejected all European technology and ideas and sought to return to the older practices of the early Islamic state": "rejected all European technology and ideas and sought to return to the older practices of the early Islamic state during the nineteenth century",
+    "It had minimal lasting impact on global history, since most factories closed within a few decades": "It had minimal lasting impact on global history, since most factories closed within just a few decades",
+    "France gaining control of the colonies after defeating the British in a long war": "France gaining control of the colonies after defeating the British in a long and costly war",
+    "The government should own all factories and farms and direct production through plans": "The government should own all factories and farms and direct production through central plans",
+    "It was led by wealthy planters who wanted to keep slavery and win independence from France": "It was led by wealthy white planters who wanted to keep slavery and win independence from France",
 }

@@ -134,7 +134,7 @@
       },
       {
         "label": "D",
-        "text": "protect labor unions from legal action by guaranteeing their right to strike and organize.",
+        "text": "protect labor unions from legal action by guaranteeing their right to strike and to organize.",
         "isCorrect": false,
         "explanation": "The act was often used against unions."
       }
@@ -632,7 +632,7 @@
       },
       {
         "label": "C",
-        "text": "The automobile and the interstate highway system, which linked cities and suburbs.",
+        "text": "The automobile and the interstate highway system, which linked cities and their suburbs.",
         "isCorrect": false,
         "explanation": "Those came much later."
       },

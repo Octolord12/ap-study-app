@@ -26,4 +26,6 @@ PADC = {
 PADW = {
     "g(x) must never equal zero anywhere on the number line": "g(x) must never equal zero anywhere on the number line, including at the limit point",
     "You must go back to using algebraic factoring exclusively, abandoning derivatives": "You must go back to using algebraic factoring exclusively, abandoning derivatives for the rest of the problem",
+    "The limit must already be a known finite number before starting": "The limit must already be a known finite number before you start differentiating",
+    "You must immediately conclude the limit does not exist, since the first attempt failed": "You must immediately conclude the limit does not exist, since the first application of the rule failed",
 }

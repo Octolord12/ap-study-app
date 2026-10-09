@@ -360,7 +360,7 @@
     "choices": [
       { "label": "A", "text": "Direct substitution gives an indeterminate form like 0/0 or ∞/∞", "isCorrect": true, "explanation": "L'Hopital's Rule specifically applies to resolve these indeterminate forms." },
       { "label": "B", "text": "f(x) and g(x) must both be constant functions on a neighborhood of c", "isCorrect": false, "explanation": "L'Hopital's Rule is used for functions that produce indeterminate forms, not constant functions." },
-      { "label": "C", "text": "The limit must already be a known finite number before starting", "isCorrect": false, "explanation": "If the limit is ALREADY known to be a specific finite number through direct evaluation, there's no need for L'Hopital's Rule." },
+      { "label": "C", "text": "The limit must already be a known finite number before you start differentiating", "isCorrect": false, "explanation": "If the limit is ALREADY known to be a specific finite number through direct evaluation, there's no need for L'Hopital's Rule." },
       { "label": "D", "text": "g(x) must never equal zero anywhere on the number line, including at the limit point", "isCorrect": false, "explanation": "L'Hopital's Rule is specifically relevant in cases where direct substitution DOES cause an issue, like g(c)=0 leading to an indeterminate form." }
     ],
     "explanation": "L'Hopital's Rule requires direct substitution to give an indeterminate form like 0/0 or ∞/∞.",
@@ -439,7 +439,7 @@
     "stem": "What happens if you apply L'Hopital's Rule once, but the resulting limit is STILL an indeterminate form (0/0 or ∞/∞)?",
     "choices": [
       { "label": "A", "text": "You can apply L'Hopital's Rule again (differentiate numerator and denominator once more)", "isCorrect": true, "explanation": "L'Hopital's Rule can be applied repeatedly as long as each application still produces an indeterminate form." },
-      { "label": "B", "text": "You must immediately conclude the limit does not exist, since the first attempt failed", "isCorrect": false, "explanation": "A repeated indeterminate form doesn't mean the limit doesn't exist; it just means you may need to apply the rule again to resolve it." },
+      { "label": "B", "text": "You must immediately conclude the limit does not exist, since the first application of the rule failed", "isCorrect": false, "explanation": "A repeated indeterminate form doesn't mean the limit doesn't exist; it just means you may need to apply the rule again to resolve it." },
       { "label": "C", "text": "You must go back to using algebraic factoring exclusively, abandoning derivatives for the rest of the problem", "isCorrect": false, "explanation": "While algebraic techniques are valid tools generally, L'Hopital's Rule specifically CAN be reapplied when the form remains indeterminate." },
       { "label": "D", "text": "L'Hopital's Rule can only ever be applied exactly once, no matter what form the new limit takes", "isCorrect": false, "explanation": "L'Hopital's Rule can indeed be applied multiple times in succession, as long as each application still produces an indeterminate form beforehand." }
     ],

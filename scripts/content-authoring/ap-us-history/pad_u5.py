@@ -108,4 +108,7 @@ PADW = {
     "he vetoed the Thirteenth Amendment and refused to let the Southern states vote on ratification.": "he vetoed the Thirteenth Amendment and refused to let the Southern states vote on ratification in 1865.",
     "passing new civil rights laws to protect Black voters in the three disputed Southern states.": "passing new civil rights laws to protect Black voters in the three disputed Southern states and nationwide.",
     "Northern support for Southern self-government and the removal of the occupying federal troops.": "Northern support for Southern self-government and the removal of the occupying federal troops from the South.",
+    "The announcement of a plan for Reconstruction of the Southern states after the war.": "The announcement of a detailed plan for Reconstruction of the Southern states after the war.",
+    "annexed Texas and settled its disputed boundary with Mexico.": "annexed Texas and settled its disputed boundary with the Republic of Mexico.",
+    "Lincoln's address at Gettysburg in 1863 about the purpose of the war.": "Lincoln's address at Gettysburg in November 1863 about the purpose of the war.",
 }

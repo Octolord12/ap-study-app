@@ -368,7 +368,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Ended the need for any other taxation in the empire and made the treasury extremely wealthy",
+        "text": "Ended the need for any other taxation in the empire and made the imperial treasury extremely wealthy",
         "isCorrect": false,
         "explanation": "The jizya did not replace other taxes."
       },
@@ -494,7 +494,7 @@
       },
       {
         "label": "D",
-        "text": "To encourage the growth of overseas colonies and the spread of Japanese power across Southeast Asia",
+        "text": "To encourage the growth of overseas colonies and the spread of Japanese power across all of Southeast Asia",
         "isCorrect": false,
         "explanation": "The edict restricts foreign travel and contact."
       }

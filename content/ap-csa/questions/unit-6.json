@@ -377,7 +377,7 @@
       { "label": "A", "text": "The sum of all of the negative numbers in the array", "isCorrect": false, "explanation": "count is incremented by 1 each time (count++), not accumulated with the actual negative values." },
       { "label": "B", "text": "The number of negative elements in the array", "isCorrect": true, "explanation": "count is incremented once for every element that is less than 0, giving the total count of negatives." },
       { "label": "C", "text": "The index of the first negative element found", "isCorrect": false, "explanation": "count tracks a running total of how many negatives were found, not a specific index." },
-      { "label": "D", "text": "The largest negative number in the array", "isCorrect": false, "explanation": "This method never compares or tracks the magnitude of the negative numbers, only counts them." }
+      { "label": "D", "text": "The largest negative number found in the array", "isCorrect": false, "explanation": "This method never compares or tracks the magnitude of the negative numbers, only counts them." }
     ],
     "explanation": "This method counts how many elements in the array are negative.",
     "conceptLink": "ap-csa/unit-6-array/array-algorithms",

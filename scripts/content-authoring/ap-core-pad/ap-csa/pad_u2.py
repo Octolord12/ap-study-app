@@ -16,4 +16,11 @@ PADC = {
     P + "16": "A void method performs an action but returns no value; a non-void method returns a value you can use",
 }
 
-PADW = {}
+PADW = {
+    "A class is an instance of an object": "A class is an instance of a single object",
+    "Non-void methods can only be called once in a program, while void methods can be called repeatedly": "Non-void methods can only be called once in a whole program, while void methods can be called repeatedly",
+    "Deletes an existing object and frees its memory for reuse": "Deletes an existing object and frees up its memory for later reuse",
+    "Nothing; objects define their own structure independently": "Nothing; each object defines its own structure independently of any class",
+    "Only one Dog object can exist in a program at a time": "Only one Dog object can exist in a program at a time, since a class allows one",
+    "This causes a compile error": "This causes a compile error, since one variable cannot be set to another",
+}

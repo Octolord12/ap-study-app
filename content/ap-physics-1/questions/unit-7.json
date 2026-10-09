@@ -167,7 +167,7 @@
     "stem": "For a given force magnitude and lever arm distance, at what angle between the force and lever arm is the resulting torque maximized?",
     "choices": [
       { "label": "A", "text": "90° (force perpendicular to the lever arm)", "isCorrect": true, "explanation": "Since τ=rF·sinθ, torque is maximized when sinθ=1, which occurs at θ=90°." },
-      { "label": "B", "text": "0° (force parallel to the lever arm)", "isCorrect": false, "explanation": "At θ=0°, sinθ=0, giving ZERO torque -- this is the minimum, not the maximum." },
+      { "label": "B", "text": "0° (force parallel to the lever arm, pointing along it)", "isCorrect": false, "explanation": "At θ=0°, sinθ=0, giving ZERO torque -- this is the minimum, not the maximum." },
       { "label": "C", "text": "45° (halfway between parallel and perpendicular)", "isCorrect": false, "explanation": "While torque is nonzero at 45°, sin(45°)≈0.707 is less than sin(90°)=1, so 45° doesn't maximize torque." },
       { "label": "D", "text": "Torque doesn't depend on the angle between them at all", "isCorrect": false, "explanation": "Torque explicitly depends on the angle via the sinθ factor in τ=rF·sinθ." }
     ],
@@ -423,7 +423,7 @@
     "stem": "Under what condition is angular momentum conserved?",
     "choices": [
       { "label": "A", "text": "When there is no net external torque acting on the system", "isCorrect": true, "explanation": "Conservation of angular momentum requires zero net external torque, analogous to how linear momentum conservation requires zero net external force." },
-      { "label": "B", "text": "When there is no net external force acting on the system", "isCorrect": false, "explanation": "This is the condition for LINEAR momentum conservation; angular momentum conservation specifically requires zero net external TORQUE." },
+      { "label": "B", "text": "When there is no net external force acting on the whole system", "isCorrect": false, "explanation": "This is the condition for LINEAR momentum conservation; angular momentum conservation specifically requires zero net external TORQUE." },
       { "label": "C", "text": "Angular momentum is never conserved under any circumstances", "isCorrect": false, "explanation": "Angular momentum IS conserved under the right conditions (no net external torque) -- this is a fundamental conservation law." },
       { "label": "D", "text": "Angular momentum is always conserved, regardless of external torques", "isCorrect": false, "explanation": "Angular momentum conservation specifically REQUIRES the absence of net external torque -- an external torque WOULD change it." }
     ],

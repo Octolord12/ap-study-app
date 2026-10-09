@@ -88,7 +88,7 @@
     "choices": [
       { "label": "A", "text": "Static friction between the tires and the road", "isCorrect": true, "explanation": "On a flat curve, static friction between the tires and road provides the inward (centripetal) force needed to keep the car turning." },
       { "label": "B", "text": "The car's engine directly pushing toward the center", "isCorrect": false, "explanation": "The engine provides forward driving force, not the inward centripetal force needed for turning." },
-      { "label": "C", "text": "Air resistance acting on the car's body", "isCorrect": false, "explanation": "Air resistance opposes motion; it doesn't provide the inward force that keeps the car on a curved path." },
+      { "label": "C", "text": "Air resistance acting on the car's body as it turns", "isCorrect": false, "explanation": "Air resistance opposes motion; it doesn't provide the inward force that keeps the car on a curved path." },
       { "label": "D", "text": "The normal force alone, with no friction needed", "isCorrect": false, "explanation": "On a FLAT curve, the normal force is vertical (balancing weight) and has no horizontal (centripetal) component; friction supplies that instead." }
     ],
     "explanation": "On a flat curve, static friction between tires and road provides the centripetal force.",
@@ -376,7 +376,7 @@
     "choices": [
       { "label": "A", "text": "It is slower, since $v=\\sqrt{GM/r}$ decreases as $r$ increases", "isCorrect": true, "explanation": "Since orbital speed v=√(GM/r) is inversely related to the square root of r, a larger orbital radius means a smaller (slower) required orbital speed." },
       { "label": "B", "text": "It is faster, since higher orbits require more speed to maintain", "isCorrect": false, "explanation": "This is backward -- higher orbits (larger r) actually require LESS orbital speed, not more, per v=√(GM/r)." },
-      { "label": "C", "text": "Orbital speed is completely independent of orbital radius", "isCorrect": false, "explanation": "Orbital speed does depend on radius, via v=√(GM/r) -- it is not independent of r." },
+      { "label": "C", "text": "Orbital speed is completely independent of the orbital radius of the satellite", "isCorrect": false, "explanation": "Orbital speed does depend on radius, via v=√(GM/r) -- it is not independent of r." },
       { "label": "D", "text": "Orbital speed depends only on the satellite's own mass, not on orbital radius", "isCorrect": false, "explanation": "Orbital speed is actually independent of the SATELLITE's mass, but it does depend on the orbital radius r and the central body's mass M." }
     ],
     "explanation": "Since v=√(GM/r), a larger orbital radius corresponds to a smaller (slower) required orbital speed.",

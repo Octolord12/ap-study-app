@@ -22,4 +22,7 @@ PADW = {
     "A smooth, rounded curve with no breaks": "A smooth, rounded curve with no breaks or sharp turns anywhere",
     "The function's derivative is always zero throughout the interval": "The function's derivative is always zero throughout the interval, so its graph is a flat line",
     "The Sum Rule, since there are multiple terms being added": "The Sum Rule, since there are multiple terms being added together in the expression",
+    "The slope of the tangent line at x=a, at the left endpoint": "The slope of the tangent line at x=a, which is the left endpoint of the interval",
+    "Any point where the function is positive": "Any point where the value of the function is positive",
+    "Differentiability is a weaker condition than continuity, so it is easier for a function to meet": "Differentiability is a weaker condition than continuity, so it is easier for a function to satisfy at a point",
 }

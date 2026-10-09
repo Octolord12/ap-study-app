@@ -81,3 +81,9 @@ PADC = {
     P + "42": "aimed to overcome Court rulings against New Deal laws but failed in Congress.",
     P + "43": "It created a lasting Democratic coalition and expanded federal responsibility for economic security.",
 }
+
+PADW = {
+    "test the weapon on a neutral nation that had not joined the Axis.": "test the weapon on a neutral nation that had not joined the Axis powers.",
+    "ended the New Deal and returned federal power to the states and the courts.": "ended the New Deal and returned much federal power to the states and the courts.",
+    "The Committee on Public Information produced posters supporting the war.": "The Committee on Public Information produced posters and films supporting the war effort.",
+}

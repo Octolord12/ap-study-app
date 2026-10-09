@@ -28,4 +28,5 @@ PADW = {
     "By finding the perimeter of the base region only, then multiplying it by the greatest height of the solid at each point": "By finding the perimeter of the base region only, then multiplying it by the greatest height of the solid at each point in the base region",
     "The shape of the cross-section never matters; every shape has the same area formula, so any shape can be substituted into the integral without changing the volume": "The shape of the cross-section never matters; every shape has the same area formula, so any shape can be substituted into the integral without changing the volume of the solid being measured",
     "The car's acceleration at the end of the trip": "The car's acceleration at the end of the trip, the rate its speed changes",
+    "The car's total distance traveled during the trip": "The car's total distance traveled during the entire 2-hour trip",
 }

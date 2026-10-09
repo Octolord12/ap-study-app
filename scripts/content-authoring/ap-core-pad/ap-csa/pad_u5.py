@@ -29,4 +29,6 @@ PADC = {
     P + "27": "It is accessible only within that method (or block where it's declared)",
 }
 
-PADW = {}
+PADW = {
+    "Comments and whitespace": "Comments and whitespace (non-code lines of text)",
+}

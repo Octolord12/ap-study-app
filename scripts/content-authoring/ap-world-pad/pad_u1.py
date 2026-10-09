@@ -100,4 +100,5 @@ PADW = {
     "The Umayyad Caliphate of Damascus": "The Umayyad Caliphate of Damascus and Cordoba",
     "The construction of the Taj Mahal as a tomb for a Mughal emperor's wife": "The construction of the Taj Mahal as a tomb for a Mughal emperor's favorite wife",
     "It had no influence beyond holding church services and performing religious rituals for peasants": "It had no influence beyond holding church services and performing religious rituals for the local peasants",
+    "Its economy depended mainly on maritime trade across the Indian Ocean from East African ports": "Its economy depended mainly on maritime trade across the Indian Ocean from the East African ports",
 }

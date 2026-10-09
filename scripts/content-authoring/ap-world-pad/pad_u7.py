@@ -64,4 +64,7 @@ PADC = {
     P + "45": "the League of Nations' assignment of former Ottoman and German territories to Britain, France and other powers, which governed them as mandates while nationalists sought independence.",
 }
 
-PADW = {}
+PADW = {
+    "It resulted in immediate peace between Japan and the United States, ending hostilities in the Pacific": "It resulted in immediate peace between Japan and the United States, ending all hostilities in the Pacific",
+    "It was an alliance with Japan against the British, signed before the outbreak of the war.": "It was an alliance with Japan against the British, signed shortly before the outbreak of the war.",
+}

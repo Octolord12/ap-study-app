@@ -441,7 +441,7 @@
       { "label": "A", "text": "It had no effect on U.S. involvement, because the country had joined the war in Europe two years earlier", "isCorrect": false, "explanation": "This attack had a very direct, significant, well-documented effect on U.S. entry into the war." },
       { "label": "B", "text": "It led the United States to enter World War II, declaring war on Japan and later on Germany and Italy", "isCorrect": true, "explanation": "The attack on Pearl Harbor directly led to the U.S. declaring war on Japan, followed by war with Germany and Italy." },
       { "label": "C", "text": "It caused the United States to withdraw entirely from all international affairs and to close its ports", "isCorrect": false, "explanation": "This event led to increased, not decreased, U.S. international military involvement." },
-      { "label": "D", "text": "It resulted in immediate peace between Japan and the United States, ending hostilities in the Pacific", "isCorrect": false, "explanation": "This attack led to war between the U.S. and Japan, not immediate peace." }
+      { "label": "D", "text": "It resulted in immediate peace between Japan and the United States, ending all hostilities in the Pacific", "isCorrect": false, "explanation": "This attack led to war between the U.S. and Japan, not immediate peace." }
     ],
     "explanation": "The attack on Pearl Harbor directly led the United States to formally enter World War II.",
     "conceptLink": "ap-world/unit-7-global-conflict/world-war-two-and-mass-atrocities",

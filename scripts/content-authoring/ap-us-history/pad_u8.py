@@ -91,3 +91,10 @@ PADC = {
     P + "44": "became a catalyst for the modern gay rights movement in the 1970s.",
     P + "45": "Foreign competition and energy costs weakened industry in the Northeast as investment moved to the Sun Belt.",
 }
+
+PADW = {
+    "supported Jim Crow laws as a way to protect separate Black institutions in the South.": "supported Jim Crow laws as a way to protect separate Black institutions in the rural South.",
+    "Support for gradual change over many generations through the courts alone.": "Support for gradual change over many generations through the federal courts alone.",
+    "The Gulf of Tonkin Resolution authorized force in Vietnam and shaped Johnson's agenda.": "The Gulf of Tonkin Resolution authorized force in Vietnam and shaped much of Johnson's agenda.",
+    "a surge in public support for the war and for President Nixon's policies.": "a surge in public support for the war and for President Nixon's Vietnam policies.",
+}

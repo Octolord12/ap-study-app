@@ -56,7 +56,7 @@
       },
       {
         "label": "C",
-        "text": "Treasure ships purchased from Ming China, whose rulers sold their largest fleets to Portugal and Spain in 1433",
+        "text": "Treasure ships purchased from Ming China, whose rulers sold their largest fleets to both Portugal and Spain in 1433",
         "isCorrect": false,
         "explanation": "The Portuguese and Spanish used their own caravels and later carracks."
       },
@@ -236,7 +236,7 @@
       },
       {
         "label": "C",
-        "text": "An agreement between Britain and France to divide North America along the line of the Mississippi River",
+        "text": "An agreement between Britain and France to divide North America along the line of the great Mississippi River",
         "isCorrect": false,
         "explanation": "The treaty was between Spain and Portugal."
       },
@@ -368,7 +368,7 @@
     "choices": [
       {
         "label": "A",
-        "text": "Examination results in a colonial civil service open to all subjects",
+        "text": "Examination results in a colonial civil service that was open to all subjects",
         "isCorrect": false,
         "explanation": "The system was not based on examinations."
       },

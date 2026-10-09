@@ -439,7 +439,7 @@
     "stem": "Which statement about casting in Java is true?",
     "choices": [
       { "label": "A", "text": "Casting a double to an int can lose data", "isCorrect": true, "explanation": "Narrowing from double to int discards the fractional part, which is a real loss of information." },
-      { "label": "B", "text": "Casting an int to a double can lose data", "isCorrect": false, "explanation": "Widening from int to double never loses data -- every int value can be represented exactly as a double." },
+      { "label": "B", "text": "Casting an int to a double can lose data in some cases", "isCorrect": false, "explanation": "Widening from int to double never loses data -- every int value can be represented exactly as a double." },
       { "label": "C", "text": "Casting is required to store an int in a double variable", "isCorrect": false, "explanation": "Widening conversions like int to double happen automatically; no explicit cast is required." },
       { "label": "D", "text": "Casting always rounds to the nearest value", "isCorrect": false, "explanation": "Narrowing casts like (int) truncate toward zero -- they discard the fractional part rather than rounding." }
     ],

@@ -23,7 +23,7 @@
     "stem": "What does $dy/dx = ky$ (where k is a constant) model, in general terms?",
     "choices": [
       { "label": "A", "text": "A quantity y whose rate of change is proportional to its current value", "isCorrect": true, "explanation": "This equation states that the rate of change of y is directly proportional to y itself." },
-      { "label": "B", "text": "A quantity that never changes over time, whatever its initial value", "isCorrect": false, "explanation": "dy/dx=ky describes ACTIVE change (proportional to y), not a quantity that stays constant." },
+      { "label": "B", "text": "A quantity that never changes over time, no matter what its initial value happens to be", "isCorrect": false, "explanation": "dy/dx=ky describes ACTIVE change (proportional to y), not a quantity that stays constant." },
       { "label": "C", "text": "A quantity whose rate of change is constant, regardless of its current value or the time", "isCorrect": false, "explanation": "This describes dy/dx=k (a constant rate), different from dy/dx=ky (a rate depending on y's current value)." },
       { "label": "D", "text": "A quantity with no relationship between its rate and its value at any moment in time", "isCorrect": false, "explanation": "This equation specifically establishes a direct, proportional relationship between the rate of change and the current value." }
     ],

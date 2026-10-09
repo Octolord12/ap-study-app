@@ -233,7 +233,7 @@
       { "label": "A", "text": "No -- mass cancels out of the period formula entirely; only length and g matter", "isCorrect": true, "explanation": "T=2π√(L/g) has no mass term -- it cancels out when deriving the pendulum's equation of motion (both gravitational force and inertia scale with mass equally)." },
       { "label": "B", "text": "Yes -- a heavier bob always swings with a longer period, since it has more inertia", "isCorrect": false, "explanation": "Mass has no effect on a simple pendulum's period -- it cancels out entirely in the derivation." },
       { "label": "C", "text": "Yes -- a heavier bob always swings with a shorter period, since gravity pulls on it harder", "isCorrect": false, "explanation": "Mass has no effect on a simple pendulum's period in either direction -- it cancels out completely." },
-      { "label": "D", "text": "It depends on both mass and length equally, according to the period formula", "isCorrect": false, "explanation": "Only length (and g) affect a simple pendulum's period -- mass does not appear in the formula T=2π√(L/g) at all." }
+      { "label": "D", "text": "It depends on both mass and length equally, according to the standard period formula", "isCorrect": false, "explanation": "Only length (and g) affect a simple pendulum's period -- mass does not appear in the formula T=2π√(L/g) at all." }
     ],
     "explanation": "A simple pendulum's period doesn't depend on mass -- only on length and gravitational acceleration.",
     "conceptLink": "ap-physics-1/unit-6-simple-harmonic-motion/period-of-springs-and-pendulums",
@@ -311,7 +311,7 @@
     "stem": "A pendulum clock is moved from Earth to the Moon, where gravitational acceleration is about 1/6 of Earth's. How does the pendulum's period change (with the same length)?",
     "choices": [
       { "label": "A", "text": "The period increases, since $T=2\\pi\\sqrt{L/g}$ and a smaller g increases T", "isCorrect": true, "explanation": "Since g appears in the denominator inside the square root, a smaller g (Moon's gravity) results in a LARGER period -- the pendulum swings more slowly." },
-      { "label": "B", "text": "The period decreases, since a smaller g makes the pendulum swing faster", "isCorrect": false, "explanation": "This is backward -- a smaller g (weaker gravity) actually INCREASES the period, since g is in the denominator of T=2π√(L/g)." },
+      { "label": "B", "text": "The period decreases, since a smaller g makes the pendulum swing much faster", "isCorrect": false, "explanation": "This is backward -- a smaller g (weaker gravity) actually INCREASES the period, since g is in the denominator of T=2π√(L/g)." },
       { "label": "C", "text": "The period is unaffected by the change in gravity, since mass is unchanged", "isCorrect": false, "explanation": "The period explicitly depends on g, via T=2π√(L/g) -- moving to a location with different gravity does change it." },
       { "label": "D", "text": "The pendulum stops swinging entirely on the Moon, where there is no air to carry it", "isCorrect": false, "explanation": "The pendulum still swings on the Moon (gravity, though weaker, is still present and nonzero) -- it just swings with a longer period." }
     ],

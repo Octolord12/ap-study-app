@@ -7,7 +7,7 @@
     "stem": "What does the notation $\\lim_{x \\to c} f(x) = L$ mean?",
     "choices": [
       { "label": "A", "text": "As x approaches c, f(x) approaches L", "isCorrect": true, "explanation": "A limit describes the value f(x) gets arbitrarily close to as x gets arbitrarily close to c." },
-      { "label": "B", "text": "f(c) = L exactly, at the point x = c", "isCorrect": false, "explanation": "The limit describes behavior NEAR c, not necessarily the actual value AT c (which might be undefined or different)." },
+      { "label": "B", "text": "f(c) = L exactly, at the single point x = c", "isCorrect": false, "explanation": "The limit describes behavior NEAR c, not necessarily the actual value AT c (which might be undefined or different)." },
       { "label": "C", "text": "f is undefined at c, so L is only a placeholder", "isCorrect": false, "explanation": "A limit existing doesn't mean f is undefined at c; f could be defined or undefined there, the limit is about nearby behavior." },
       { "label": "D", "text": "The derivative of f at c is L, the slope at that point", "isCorrect": false, "explanation": "This describes a derivative, a different concept from a limit." }
     ],
@@ -105,7 +105,7 @@
       { "label": "A", "text": "Factoring and canceling common factors", "isCorrect": true, "explanation": "Factoring often reveals a common factor that cancels, resolving the 0/0 indeterminate form." },
       { "label": "B", "text": "Immediately concluding the limit doesn't exist", "isCorrect": false, "explanation": "A 0/0 result is an \"indeterminate form,\" meaning further work (like factoring) is needed; it doesn't automatically mean the limit doesn't exist." },
       { "label": "C", "text": "Setting the limit equal to infinity automatically", "isCorrect": false, "explanation": "0/0 doesn't automatically indicate infinity; the actual limit could be a finite number, as further algebraic work often reveals." },
-      { "label": "D", "text": "Ignoring the denominator entirely", "isCorrect": false, "explanation": "The denominator is essential to correctly evaluating the limit; it can't simply be ignored." }
+      { "label": "D", "text": "Ignoring the denominator, using only the numerator", "isCorrect": false, "explanation": "The denominator is essential to correctly evaluating the limit; it can't simply be ignored." }
     ],
     "explanation": "Factoring and canceling common factors is a standard technique for resolving 0/0 indeterminate forms.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/algebraic-limit-techniques",
@@ -201,7 +201,7 @@
       { "label": "A", "text": "f(c) is defined, $\\lim_{x \\to c} f(x)$ exists, and $\\lim_{x \\to c} f(x) = f(c)$", "isCorrect": true, "explanation": "All three conditions together define continuity at a point." },
       { "label": "B", "text": "Only that f(c) is defined, since a value at the point is all that continuity requires", "isCorrect": false, "explanation": "f(c) being defined alone is not sufficient; the limit must also exist and match f(c)." },
       { "label": "C", "text": "Only that the limit exists, since the value at the point itself does not matter", "isCorrect": false, "explanation": "The limit existing alone is not sufficient; f(c) must also be defined and equal to that limit." },
-      { "label": "D", "text": "f must be a polynomial, since only polynomials can be continuous at a point", "isCorrect": false, "explanation": "Continuity is a general property not restricted to polynomials; many non-polynomial functions can also be continuous." }
+      { "label": "D", "text": "f must be a polynomial, since only polynomials are ever continuous at a point", "isCorrect": false, "explanation": "Continuity is a general property not restricted to polynomials; many non-polynomial functions can also be continuous." }
     ],
     "explanation": "Continuity at x=c requires f(c) to be defined, the limit to exist, and the two to be equal.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
@@ -249,7 +249,7 @@
       { "label": "A", "text": "Yes, since both one-sided limits equal 3 and g(2) = 3", "isCorrect": true, "explanation": "The left limit (x+1 as x→2) is 3, g(2) = 3(2)-3 = 3, and the right limit is also 3 -- all three match." },
       { "label": "B", "text": "No, since the two piece definitions are different formulas", "isCorrect": false, "explanation": "Having different formulas on each piece doesn't automatically create a discontinuity; what matters is whether the pieces \"meet up\" at the boundary, which they do here." },
       { "label": "C", "text": "No, since x=2 is a boundary point and boundary points are never continuous", "isCorrect": false, "explanation": "Boundary points of piecewise functions CAN be continuous, as long as the one-sided limits match the function's value there, which is the case here." },
-      { "label": "D", "text": "Yes, but only because g is linear on both pieces", "isCorrect": false, "explanation": "Being linear on each piece isn't what makes this continuous; it's continuous specifically because the values match up at the boundary." }
+      { "label": "D", "text": "Yes, but only because g is linear on both pieces of its definition", "isCorrect": false, "explanation": "Being linear on each piece isn't what makes this continuous; it's continuous specifically because the values match up at the boundary." }
     ],
     "explanation": "Both one-sided limits equal 3, and g(2) = 3(2)-3 = 3, so all three values match and g is continuous at x=2.",
     "conceptLink": "ap-calc/unit-1-limits-and-continuity/continuity",
@@ -408,7 +408,7 @@
     "choices": [
       { "label": "A", "text": "f must be continuous on the closed interval [a,b]", "isCorrect": true, "explanation": "Continuity on [a,b] is the sole requirement for the IVT to apply." },
       { "label": "B", "text": "f must be differentiable everywhere on the interval and beyond", "isCorrect": false, "explanation": "Differentiability is a stronger condition not required by the IVT; only continuity is needed." },
-      { "label": "C", "text": "f must be a polynomial of degree at least two", "isCorrect": false, "explanation": "The IVT applies to any continuous function, not exclusively polynomials." },
+      { "label": "C", "text": "f must be a polynomial of degree at least two on the interval", "isCorrect": false, "explanation": "The IVT applies to any continuous function, not exclusively polynomials." },
       { "label": "D", "text": "f must be linear, with a constant slope throughout the interval", "isCorrect": false, "explanation": "The IVT applies to continuous functions generally, not just linear ones." }
     ],
     "explanation": "The IVT requires only that f be continuous on the closed interval [a,b].",
