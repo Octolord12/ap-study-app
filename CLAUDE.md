@@ -1929,13 +1929,28 @@ in app logic — updating them should be a data edit.
   hard set there is no generator to re-run. Short math and code choices (`$p = mv$`, a line of Java)
   are left alone: their lengths mean nothing, except that a trailing "where m is mass..." on the right
   formula was trimmed, since that was a tell on its own.
-  **Left as is, on purpose**: the right answer is rarely the *shortest* choice now (Calc 4%, Physics 10%,
-  CSA 5% of all questions; World and U.S. History are 12-13%), a small reverse tell. Lengthening the
-  shortest wrong choice in more questions would fix it if it ever matters.
+  The other end, the right answer almost never being the *shortest* choice, was left at first and fixed 2026-10-09 (next entry).
   **Seeded and pushed 2026-10-06** (`1d0acd0`). The seed reset the approval of the 280 changed questions
   (Calc AB 91, Physics 1 104, CSA 85; the rest kept theirs), so those units' pages in `/admin/review` need
   "Approve all" again. Checked afterwards: every database question equals its file, and every per-user and
   per-table count matched the pre-seed snapshot.
+
+- **Answer lengths, the shortest end (fixed and live 2026-10-09).** After the "right answer is the longest" fixes, the right answer
+  was still almost never the *shortest* choice: 3 to 12% of the questions where length can be a tell (a longest choice of at
+  least 30 visible characters), against 25% by chance, so a student could drop the shortest choice and guess among the rest.
+  In 108 questions the one wrong choice as short as the right answer was lengthened with more specific wording that keeps the
+  same claim and stays wrong for the same reason (Calc AB 15, Physics 1 15, CSA 15, World History 31, U.S. History 32). Right
+  answer uniquely shortest, before to after: Calc 7.5 to 18.7%, Physics 6.8 to 18.2%, CSA 3.1 to 14.5%, World core 11.4 to 18.2%
+  and hard 5.2 to 16.3%, U.S. History core 12.2 to 18.1% and hard 5.2 to 17.0%; the longest-choice rate did not move (24 to 29%).
+  The target was about 18%, not an artificial 25%, and CSA and World hard fell short because too few questions could be fixed by
+  lengthening a single choice. Only one wrong choice's text changes per question (checked field by field against `git HEAD`: no
+  labels, correct answers, explanations or free-response prompts). The Calc, Physics and CSA *hard* sets were skipped (generated
+  with computed distractors, almost all math or code, so length means nothing). **Tools**: `scripts/content-authoring/answer-length/`
+  (`stats.py`, `plan.py`, `record.py`, `lib.py`; see the README), which records edits in the existing `PADW` overlays; apply with
+  `ap-core-pad/apply.py <course>`, `ap-world-pad/apply.py`, or by re-running U.S. History's `uN_base.py` / `uN_hard.py`. Don't lengthen a
+  code choice by renaming a variable; it would stand out from its siblings. A correction made while checking: an addition said
+  airplanes and television "appeared only in the later twentieth century" (wrong for both), now "the twentieth century".
+  Seeding reset those 108 approvals (as designed) and the owner asked for them to be re-approved directly, done by id.
 
 - **`npm audit` reports vulnerabilities** in `hono`/`mysql2` — both transitive
   dev dependencies of the `prisma` CLI itself (bundled tooling for databases/
@@ -1997,6 +2012,10 @@ in app logic — updating them should be a data edit.
   real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
   3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
   real student's, matched the post-seed snapshot.
+  The answer-length fix was checked with `scratch_len` / `scratch-len@example.com` (2026-10-09): all 108 edited questions fetched
+  through the real quiz page as that user (the new wording present, 4 choices, no leftover markup), plus a look at one on screen.
+  Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the pre-seed snapshot. The check used a
+  temporary `public/__tmp-len.json` (the repo has no `public/` folder), deleted afterwards.
   The DBQ layout fix was checked with `scratch_dbq` / `scratch-dbq@example.com` (2026-10-09): all 8 DBQ practice pages fetched
   as that user (7 labels, 7 source lines and 7 blockquotes each, no joined paragraphs, no leftover markup), one at desktop and
   one at 375px (no overflow). Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the
