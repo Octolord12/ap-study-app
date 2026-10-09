@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { auth } from "@/lib/auth/config";
 import { getDb } from "@/lib/db";
+import { normalizeClassName } from "@/lib/social/class-name";
 import { generateInviteCode, normalizeInviteCode } from "@/lib/social/invite-code";
 
 async function requireUserId(): Promise<string> {
@@ -18,7 +19,7 @@ export async function createClass(formData: FormData): Promise<void> {
   const userId = await requireUserId();
   const db = getDb();
 
-  const name = (formData.get("name") as string)?.trim();
+  const name = normalizeClassName(formData.get("name"));
   const courseId = (formData.get("courseId") as string) || null;
   if (!name) throw new Error("Class name is required");
 
@@ -42,6 +43,20 @@ export async function createClass(formData: FormData): Promise<void> {
 
   revalidatePath("/classes");
   redirect(`/classes/${newClass.id}`);
+}
+
+export async function renameClass(classId: string, formData: FormData): Promise<void> {
+  const userId = await requireUserId();
+
+  const name = normalizeClassName(formData.get("name"));
+  if (!name) redirect(`/classes/${classId}?error=name`);
+
+  // Scoped to a class this user owns, so anyone else (a member, or a stranger who guessed an id) matches nothing and nothing changes.
+  await getDb().class.updateMany({ where: { id: classId, ownerId: userId }, data: { name } });
+  revalidatePath(`/classes/${classId}`);
+  revalidatePath("/classes");
+  // To the bare page, so an earlier ?error=name doesn't stay on screen after a good save.
+  redirect(`/classes/${classId}`);
 }
 
 export async function joinClass(formData: FormData): Promise<void> {

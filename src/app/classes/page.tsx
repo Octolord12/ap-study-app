@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
+import { CLASS_NAME_MAX } from "@/lib/social/class-name";
 import { SOCIAL_SAFETY_NOTE } from "@/lib/social/copy";
 import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
 
@@ -67,7 +68,7 @@ export default async function ClassesPage({ searchParams }: { searchParams: Prom
       <Section label="Create a class">
         <form action={createClass} className="grid max-w-sm gap-5">
           <Field id="name" label="Name">
-            <Input id="name" name="name" required placeholder="Period 3 AP CSA" />
+            <Input id="name" name="name" required maxLength={CLASS_NAME_MAX} placeholder="Period 3 AP CSA" />
           </Field>
           <Field id="courseId" label="Course" hint="Optional.">
             <Select id="courseId" name="courseId" defaultValue="">

@@ -14,6 +14,9 @@ export function ConfirmRemoveButton({ label, question, action }: ConfirmRemoveBu
   const [confirming, setConfirming] = useState(false);
   const [failed, setFailed] = useState(false);
   const [pending, startTransition] = useTransition();
+  // The failure state commits before the transition's pending flag clears; without this the error shows for a moment above a button
+  // that still says "Removing…" and is disabled.
+  const busy = pending && !failed;
 
   function remove() {
     setFailed(false);
@@ -39,10 +42,10 @@ export function ConfirmRemoveButton({ label, question, action }: ConfirmRemoveBu
     <div className="space-y-2">
       <p className="max-w-[40ch] text-sm">{question}</p>
       <div className="flex flex-wrap gap-2">
-        <Button type="button" size="sm" onClick={remove} disabled={pending}>
-          {pending ? "Removing…" : "Yes, remove"}
+        <Button type="button" size="sm" onClick={remove} disabled={busy}>
+          {busy ? "Removing…" : "Yes, remove"}
         </Button>
-        <Button type="button" size="sm" variant="ghost" onClick={() => setConfirming(false)} disabled={pending}>
+        <Button type="button" size="sm" variant="ghost" onClick={() => setConfirming(false)} disabled={busy}>
           Keep
         </Button>
       </div>

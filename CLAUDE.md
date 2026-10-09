@@ -372,11 +372,21 @@ owner's `OWNER` row can't be removed this way), and `class: { ownerId: <signed-i
 or an owner of some other class, matches nothing and nothing happens, with no error). The button is two steps, like unfriending, and
 says plainly that **the invite code still works, so the person can join again**; there is no way to ban someone or change a class's
 code yet. The shared two-step button is `ConfirmRemoveButton` (`components/social/confirm-remove-button.tsx`); `RemoveFriendButton` and
-`RemoveClassMemberButton` only supply the wording. Tests: `tests/remove-class-member.test.ts` runs the action against an in-memory membership
+`RemoveClassMemberButton` only supply the wording. It counts as busy ("Removing…", disabled) only while no error is showing: the failure state commits before the transition's pending flag clears, so a failed removal used to show its error above a still-disabled "Removing…" button for a moment, and the "says nothing was changed" button tests failed about 1 run in 25 when the CPUs were busy (0 in 60 after the fix; it never failed on a quiet machine, so a single full-suite run could not show it). Tests: `tests/remove-class-member.test.ts` runs the action against an in-memory membership
 table that throws on a filter it does not understand (mutation-checked: dropping the class, role or owner scope, or the person, each
 fails a test, which needed a case of one person in two classes of the same owner), and `tests/remove-class-member-button.test.tsx`.
 
-**Not built**: deleting/renaming a class, banning a removed member or changing a class's invite code, or
+**Renaming a class** (also 2026-10-09): the owner sees a "Rename" section at the bottom of the class page (a name field prefilled with the current name
+and "Save name"); members don't see it. `renameClass(classId, formData)` is an `updateMany` on `{ id: classId, ownerId: <signed-in user> }`, so anyone
+else (a member, or a stranger who guessed an id) matches nothing and nothing changes. A name that is empty, whitespace-only (the browser's `required`
+lets that through) or over **80 characters** (`CLASS_NAME_MAX`, `lib/social/class-name.ts`, `normalizeClassName`) is refused by returning to the page
+with `?error=name`, which shows "Enter a name of 1 to 80 characters."; a good save and a refusal both redirect to the page's own URL, so the message
+doesn't linger. **`createClass` now uses the same rule** (it had no length limit; a whitespace-only name still throws as before, and the create form got
+`maxLength`). The input is keyed on the current name because Base UI's `Input` logs a dev-console error when the `defaultValue` of a mounted field
+changes. Tests: `tests/class-name.test.ts`, and `tests/rename-class.test.ts` runs the action against an in-memory class table that throws on a filter it
+does not understand (mutation-checked: dropping the owner or class scope, the validation, or `createClass`'s use of the rule each fails a test).
+
+**Not built**: deleting a class, banning a removed member or changing a class's invite code, or
 transferring class ownership. `leaveClass` exists for members but explicitly
 refuses to let an `OWNER` leave (would orphan the class) — noted in that
 function rather than silently allowed.
@@ -2049,6 +2059,13 @@ in app logic — updating them should be a data edit.
   by itself (members and leaderboard), the removed person's class list is empty and the class page returns none of the class's content, the
   invite code lets them join again (as the confirm text says), and at 375px nothing overflows. Both were deleted afterwards (the class went
   with its owner); every per-user and per-table count, including the one real friendship, matched the pre-test snapshot.
+  Renaming a class was checked with `scratch_ra` (owner) and `scratch_rb` (member), `scratch-ra@example.com` / `scratch-rb@example.com` (2026-10-09),
+  signed in at once on `localhost:3000` and `127.0.0.1:3000`: a class created with a typo in its name, the Rename section shown to the owner and
+  not to the member, a whitespace-only name and an over-long one (set programmatically, since `maxLength` only stops typing) both refused with the
+  message and the name unchanged, then a corrected name with stray spaces saved trimmed with the URL back to the bare page and no message, the member's
+  class list showing the new name, no Base UI or server errors, and at 375px nothing overflows. That check also showed the Save button dropping to the
+  bottom of the error line when the error was inside the field, so the error now sits under the whole row (like the join form's). Both accounts were
+  deleted afterwards (the class went with its owner); every per-user and per-table count matched the pre-test snapshot.
   The answer-length fix was checked with `scratch_len` / `scratch-len@example.com` (2026-10-09): all 108 edited questions fetched
   through the real quiz page as that user (the new wording present, 4 choices, no leftover markup), plus a look at one on screen.
   Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the pre-seed snapshot. The check used a
