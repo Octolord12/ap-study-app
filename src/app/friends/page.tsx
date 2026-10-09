@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { requireUserId } from "@/lib/auth/session";
 import { getFriendsLeaderboard, getFriendsList, getPendingFriendRequests } from "@/lib/social/queries";
-import { removeFriend, respondToFriendRequest, sendFriendRequest } from "@/lib/social/actions";
+import { cancelFriendRequest, removeFriend, respondToFriendRequest, sendFriendRequest } from "@/lib/social/actions";
 import { RemoveFriendButton } from "@/components/social/remove-friend-button";
 import { Ledger } from "@/components/ui/ledger";
 import { Button } from "@/components/ui/button";
@@ -91,9 +91,16 @@ export default async function FriendsPage({
         <Section label="Sent">
           <RuledList>
             {requests.outgoing.map((r) => (
-              <li key={r.addresseeId} className="flex items-baseline justify-between gap-3 py-3 text-sm">
+              <li key={r.addresseeId} className="flex flex-wrap items-center justify-between gap-3 py-3 text-sm">
                 <span className="font-mono">{r.addressee.username}</span>
-                <span className="eyebrow">Pending</span>
+                <div className="flex items-center gap-3">
+                  <span className="eyebrow">Pending</span>
+                  <form action={cancelFriendRequest.bind(null, r.addresseeId)}>
+                    <Button type="submit" size="sm" variant="outline" aria-label={`Cancel your friend request to ${r.addressee.username}`}>
+                      Cancel
+                    </Button>
+                  </form>
+                </div>
               </li>
             ))}
           </RuledList>

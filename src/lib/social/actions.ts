@@ -146,6 +146,17 @@ export async function removeFriend(friendId: string): Promise<void> {
   revalidatePath("/friends");
 }
 
+export async function cancelFriendRequest(addresseeId: string): Promise<void> {
+  const userId = await requireUserId();
+
+  // Only a PENDING request this user sent: it can't cancel a request someone sent them (that is declined with respondToFriendRequest)
+  // or an accepted friendship (that is removeFriend). Sending again is always possible, so there is no confirmation step.
+  await getDb().friendship.deleteMany({ where: { status: "PENDING", requesterId: userId, addresseeId } });
+  revalidatePath("/friends");
+  // To the bare page, so a leftover "Friend request sent." (?sent=1) or an error from the earlier request doesn't stay on screen.
+  redirect("/friends");
+}
+
 export async function updateLeaderboardOptOut(optOut: boolean): Promise<void> {
   const userId = await requireUserId();
   await getDb().user.update({ where: { id: userId }, data: { leaderboardOptOut: optOut } });

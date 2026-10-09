@@ -357,11 +357,17 @@ request and be accepted again). `removeFriend(friendId)` (`lib/social/actions.ts
 friendship between exactly the signed-in user and that person in either direction, so it can't remove anyone else's friendship, a
 pending request (declining is `respondToFriendRequest`) or a `BLOCKED` row; removing a non-friend does nothing and raises no error. No
 migration. Tests: `tests/remove-friend.test.ts` runs it against an in-memory friendship table (and was mutation-checked: dropping
-the status scope or one direction fails them) and `tests/remove-friend-button.test.tsx` covers the two steps. Cancelling a request you
-*sent* is a separate gap: the "Sent" list only shows "Pending".
+the status scope or one direction fails them) and `tests/remove-friend-button.test.tsx` covers the two steps.
+
+**Cancelling a request you sent** (also 2026-10-09): each row in the "Sent" list has a Cancel button, a plain one-click form like Accept and
+Decline (no confirmation, because sending again undoes it). `cancelFriendRequest(addresseeId)` is one `deleteMany` scoped to a **PENDING**
+request **this user sent** to that person: it can't cancel a request someone sent them (that is declined with `respondToFriendRequest`) or
+an accepted friendship (that is `removeFriend`). It ends in `redirect("/friends")` because testing in the browser showed the page still
+saying "Friend request sent." (the `?sent=1` from the earlier request) right after cancelling it; the bare URL also clears a stale
+error. `tests/cancel-friend-request.test.ts` was mutation-checked the same way (dropping the PENDING scope or the "I sent it" scope fails it).
 
 **Not built**: deleting/renaming a class, removing a member, or
-transferring class ownership, and cancelling a sent friend request. `leaveClass` exists for members but explicitly
+transferring class ownership. `leaveClass` exists for members but explicitly
 refuses to let an `OWNER` leave (would orphan the class) — noted in that
 function rather than silently allowed.
 
@@ -2021,6 +2027,12 @@ in app logic — updating them should be a data edit.
   real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
   3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
   real student's, matched the post-seed snapshot.
+  Unfriending and cancelling a sent request were checked with two scratch accounts, `scratch_fa` and `scratch_fb`
+  (`scratch-fa@example.com`, `scratch-fb@example.com`, 2026-10-09), signed in at once by using `localhost:3000` for one and
+  `127.0.0.1:3000` for the other (the browser keeps separate sessions per origin): request sent, the other side sees it, cancel
+  (clean URL, no stale message), request again, accept, Remove asks first, Keep backs out, "Yes, remove" removes it, and the other
+  side's list and leaderboard are empty too. Both were deleted afterwards; every per-user and per-table count, including the one real
+  friendship, matched the pre-test snapshot.
   The answer-length fix was checked with `scratch_len` / `scratch-len@example.com` (2026-10-09): all 108 edited questions fetched
   through the real quiz page as that user (the new wording present, 4 choices, no leftover markup), plus a look at one on screen.
   Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the pre-seed snapshot. The check used a
