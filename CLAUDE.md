@@ -239,6 +239,12 @@ than an error, and `validate-content` fails if a shipped course would be short.
 section named `FRQ`; World History has none, so the target was undefined and it fell back to
 "use every prompt", which would have been all 53 in one exam. The MCQ draw also used
 `sort(() => Math.random() - 0.5)`, which is biased; both draws now use the uniform `shuffled()`.
+**The same shuffle was still in two more places and was fixed 2026-10-09**: the custom quiz's question pick and the daily challenge's filler
+(`lib/study/queries.ts`). Measured at 360 questions and a 20-question draw, the sort-based version picked the first ones about 1.75 times as often as
+it should (one about 2.9 times) and the last ones about 0.56 times, so custom quizzes and daily fillers had favored whichever questions the database
+returned first; both now use `shuffled()` and are flat to within sampling noise. `tests/question-picks.test.ts` runs thousands of draws against a faked
+database and requires every question to be about equally likely (mutation-checked: putting the old sort back in either place fails it; stable over 40
+runs, quiet and under CPU load). **Don't write `sort(() => Math.random() - 0.5)` anywhere**; use `shuffled()` (`lib/study/exam-selection.ts`).
 Still true: one 195-minute clock for the whole exam (sections are not timed separately), no
 choice among LEQ prompts, and the score estimate uses MCQ accuracy only.
 
@@ -372,7 +378,7 @@ owner's `OWNER` row can't be removed this way), and `class: { ownerId: <signed-i
 or an owner of some other class, matches nothing and nothing happens, with no error). The button is two steps, like unfriending, and
 says plainly that **the invite code still works, so the person can join again**; there is no ban list, but the owner can make a new
 code (next paragraph but one). The shared two-step button is `TwoStepButton` (`components/social/two-step-button.tsx`, called `ConfirmRemoveButton` until the invite-code button needed other wording; its default wording is still a removal's); `RemoveFriendButton`,
-`RemoveClassMemberButton` and `RegenerateInviteCodeButton` only supply the wording. It counts as busy ("Removing…", disabled) only while no error is showing: the failure state commits before the transition's pending flag clears, so a failed removal used to show its error above a still-disabled "Removing…" button for a moment, and the "says nothing was changed" button tests failed about 1 run in 25 when the CPUs were busy (0 in 60 after the fix; it never failed on a quiet machine, so a single full-suite run could not show it). Tests: `tests/remove-class-member.test.ts` runs the action against an in-memory membership
+`RemoveClassMemberButton` and `RegenerateInviteCodeButton` only supply the wording. It counts as busy ("Removing…", disabled) only while no error is showing: the failure state commits before the transition's pending flag clears, so a failed removal used to show its error above a still-disabled "Removing…" button for a moment, and the "says nothing was changed" button tests failed about 1 run in 25 when the CPUs were busy (0 in 60 after the fix; it never failed on a quiet machine, so a single full-suite run could not show it). **`ApproveAllButton` (admin) had the same race** (the friend button was modeled on it) and showed up as a full-suite failure about 1 run in 6 on 2026-10-09; it got the same `busy = pending && !failed` and the whole suite then passed 30 runs in a row. If another component pairs `useTransition` with a failure message and a pending label, give it the same guard. Tests: `tests/remove-class-member.test.ts` runs the action against an in-memory membership
 table that throws on a filter it does not understand (mutation-checked: dropping the class, role or owner scope, or the person, each
 fails a test, which needed a case of one person in two classes of the same owner), and `tests/remove-class-member-button.test.tsx`.
 
@@ -392,8 +398,13 @@ stay."). `regenerateInviteCode(classId)` (`lib/social/actions.ts`) picks a code 
 5 tries, then an error and nothing changes) and writes it with an `updateMany` on `{ id: classId, ownerId: <signed-in user> }`, so anyone else matches
 nothing. Joining looks classes up by code, so the old one gives "No class found with that invite code" from then on; it is how an owner stops a
 removed member rejoining (see "Removing a class member"). **There is still no ban list**: whoever has the *new* code can join, so a removed person
-who is told the new code can come back. Codes come from `Math.random`, not a cryptographic source (6 characters of 31, about 887 million codes);
-fine for a class leaderboard that shows only usernames, but don't rely on a code as a secret for anything more sensitive. Tests:
+who is told the new code can come back. Codes (6 characters of 31, about 887 million) come from Node's `crypto.randomInt` (`lib/social/invite-code.ts`; they came from `Math.random` until
+2026-10-09, whose output can be worked out from earlier output, and `randomInt` is also free of modulo bias), so they can't be predicted. There is still no limit
+on how many codes one visitor can try on the join form (the per-IP rate limit noted under "Limits, known" would cover it), which at this
+code size makes guessing impractical rather than impossible; fine for a class leaderboard that shows only usernames, but don't rely on a code as
+a secret for anything more sensitive. `tests/invite-code.test.ts` fails if `Math.random` is used or the characters are not evenly spread (it
+catches a `randomInt(256) % 31` bias, which a looser spread check missed). The real generator and the real custom-quiz and daily-challenge picks were also run
+read-only against the database (no accounts or writes needed): distinct, in-course, filters honored, 5,000 distinct codes. Tests:
 `tests/regenerate-invite-code.test.ts` (in-memory class table that throws on a filter it does not understand, and runs the join flow to show the old
 code stops working; mutation-checked: dropping the owner or class scope, the collision check, the retry limit or the page refresh each fails a test)
 and `tests/regenerate-invite-code-button.test.tsx`.

@@ -13,6 +13,9 @@ export function ApproveAllButton({ count, action }: ApproveAllButtonProps) {
   const [confirming, setConfirming] = useState(false);
   const [failed, setFailed] = useState(false);
   const [pending, startTransition] = useTransition();
+  // The failure state commits before the transition's pending flag clears; without this the error shows for a moment above a button
+  // that still says "Approving…" and is disabled.
+  const busy = pending && !failed;
 
   function approve() {
     setFailed(false);
@@ -40,10 +43,10 @@ export function ApproveAllButton({ count, action }: ApproveAllButtonProps) {
         Mark all {count} item{count === 1 ? "" : "s"} below as checked by a person? The About page counts them as reviewed.
       </p>
       <div className="flex flex-wrap gap-2">
-        <Button type="button" onClick={approve} disabled={pending}>
-          {pending ? "Approving…" : `Yes, approve all ${count}`}
+        <Button type="button" onClick={approve} disabled={busy}>
+          {busy ? "Approving…" : `Yes, approve all ${count}`}
         </Button>
-        <Button type="button" variant="ghost" onClick={() => setConfirming(false)} disabled={pending}>
+        <Button type="button" variant="ghost" onClick={() => setConfirming(false)} disabled={busy}>
           Cancel
         </Button>
       </div>
