@@ -70,6 +70,16 @@ export async function regenerateInviteCode(classId: string): Promise<void> {
   revalidatePath(`/classes/${classId}`);
 }
 
+export async function deleteClass(classId: string): Promise<void> {
+  const userId = await requireUserId();
+
+  // Scoped to a class this user owns, so anyone else matches nothing. Its memberships go with it (onDelete: Cascade on ClassMembership.class);
+  // nobody's study data is touched, a class only groups people for a leaderboard.
+  await getDb().class.deleteMany({ where: { id: classId, ownerId: userId } });
+  revalidatePath("/classes");
+  redirect("/classes");
+}
+
 export async function joinClass(formData: FormData): Promise<void> {
   const userId = await requireUserId();
   const db = getDb();
@@ -97,7 +107,7 @@ export async function leaveClass(classId: string): Promise<void> {
   const membership = await db.classMembership.findUnique({ where: { classId_userId: { classId, userId } } });
   if (!membership) return;
   if (membership.role === "OWNER") {
-    throw new Error("The class owner can't leave -- delete the class instead (not built yet)");
+    throw new Error("The class owner can't leave -- delete the class instead");
   }
 
   await db.classMembership.delete({ where: { classId_userId: { classId, userId } } });

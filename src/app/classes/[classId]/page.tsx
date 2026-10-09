@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getClassDetail, getClassLeaderboard } from "@/lib/social/queries";
-import { leaveClass, regenerateInviteCode, removeClassMember, renameClass } from "@/lib/social/actions";
+import { deleteClass, leaveClass, regenerateInviteCode, removeClassMember, renameClass } from "@/lib/social/actions";
 import { CLASS_NAME_MAX } from "@/lib/social/class-name";
+import { DeleteClassButton } from "@/components/social/delete-class-button";
 import { RegenerateInviteCodeButton } from "@/components/social/regenerate-invite-code-button";
 import { RemoveClassMemberButton } from "@/components/social/remove-class-member-button";
 import { Ledger } from "@/components/ui/ledger";
@@ -39,6 +40,7 @@ export default async function ClassDetailPage({
   const isOwner = myMembership?.role === "OWNER";
   const renameClassAction = renameClass.bind(null, classId);
   const regenerateInviteCodeAction = regenerateInviteCode.bind(null, classId);
+  const deleteClassAction = deleteClass.bind(null, classId);
 
   return (
     <Page>
@@ -105,6 +107,12 @@ export default async function ClassDetailPage({
               Enter a name of 1 to {CLASS_NAME_MAX} characters.
             </p>
           ) : null}
+        </Section>
+      ) : null}
+
+      {isOwner ? (
+        <Section label="Delete" note="Removes the class for everyone in it.">
+          <DeleteClassButton name={classDetail.name} memberCount={classDetail.memberships.length} action={deleteClassAction} />
         </Section>
       ) : null}
     </Page>

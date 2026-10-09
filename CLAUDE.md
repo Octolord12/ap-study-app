@@ -398,7 +398,19 @@ fine for a class leaderboard that shows only usernames, but don't rely on a code
 code stops working; mutation-checked: dropping the owner or class scope, the collision check, the retry limit or the page refresh each fails a test)
 and `tests/regenerate-invite-code-button.test.tsx`.
 
-**Not built**: deleting a class, banning a removed member, or
+**Deleting a class** (also 2026-10-09): at the bottom of the class page the owner sees a "Delete" section with "Delete class" (two steps). The question
+names the class and how many *other* people lose it ("The 3 other people in it lose the class and its leaderboard. Nobody's answers or XP are touched.
+This cannot be undone; a new class would need a new invite code."; "You lose" when the owner is alone). `deleteClass(classId)` (`lib/social/actions.ts`)
+is one `deleteMany` on `{ id: classId, ownerId: <signed-in user> }`, so anyone else matches nothing, then `revalidatePath("/classes")` and
+`redirect("/classes")` (from the button's transition; checked in the browser that the redirect lands cleanly). Memberships go with the class by
+`onDelete: Cascade` on `ClassMembership.class`; **nothing else in the schema points at a class**, so no one's study data is touched. Both facts are
+asserted by `tests/delete-class.test.ts` reading `prisma/schema.prisma` (it fails if the cascade is removed or another model starts referencing
+`Class`, which is the cue to decide what deleting a class should do to it). Other tests: the action against an in-memory class table that throws on a
+filter it does not understand (mutation-checked: dropping the owner or class scope, or the list refresh, each fails a test), and
+`tests/delete-class-button.test.tsx` (wording for one, several and no other members). The owner-can't-leave error now says "delete the class
+instead". **Account deletion is unchanged**: it still deletes owned classes for everyone in them (see "Settings: change password and delete account").
+
+**Not built**: banning a removed member, or
 transferring class ownership. `leaveClass` exists for members but explicitly
 refuses to let an `OWNER` leave (would orphan the class) — noted in that
 function rather than silently allowed.
@@ -1395,7 +1407,8 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 - **Owned classes are deleted for everyone in them.** Classes can't be handed over, and an
   owner can't leave one, so blocking would trap the owner. The form names each owned class
   and how many other students it affects before they confirm. If class ownership transfer
-  or a delete-class feature is ever built, revisit this.
+  is ever built, revisit this (deleting a class on purpose, built 2026-10-09, doesn't change it:
+  an owner who deletes their account still takes their classes with them).
 - **Sign-in tokens die with the password.** Sessions are stateless JWTs, so on their own
   they stayed valid on other devices after a password change (and after the account was
   deleted). Now each token carries a **stamp**, a fingerprint of the account's password hash
@@ -2084,6 +2097,13 @@ in app logic — updating them should be a data edit.
   confirming shows a new code on the owner's page without a reload with both members still listed, the old code gives "No class found with that
   invite code" and joins nothing, the new code joins, the earlier member stays, and at 375px nothing overflows. No server errors. All three were deleted
   afterwards (the class went with its owner); every per-user and per-table count matched the pre-test snapshot.
+  Deleting a class was checked with `scratch_da` (owner) and `scratch_db` (member), `scratch-da@example.com` / `scratch-db@example.com` (2026-10-09),
+  on `localhost:3000` and `127.0.0.1:3000`: the Delete section shows for the owner and not the member; the confirm reads "You lose..." with the owner alone
+  and "The 1 other person in it loses..." with a member; Keep backs out; confirming redirects to the Classes list (now empty) with no console or server
+  errors; the member's class list is empty, the deleted class's page returns none of its content and its old invite code gives "No class found". Directly in
+  the database just before cleanup, the deleted class's two memberships were gone while the member's account still existed (the cascade, shown for real).
+  A second class showed the confirm at 375px with no overflow. Both accounts were deleted afterwards; every per-user and per-table count matched the
+  pre-test snapshot.
   The answer-length fix was checked with `scratch_len` / `scratch-len@example.com` (2026-10-09): all 108 edited questions fetched
   through the real quiz page as that user (the new wording present, 4 choices, no leftover markup), plus a look at one on screen.
   Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the pre-seed snapshot. The check used a
