@@ -11,7 +11,7 @@ items = []
 def docs(*pairs):
     out = []
     for i, (source, text) in enumerate(pairs, 1):
-        out.append(f"**Document {i}**\nSource: {source}\n\"{text}\"")
+        out.append(f"**Document {i}**\n\nSource: {source}\n\n> \"{text}\"")
     return "\n\n".join(out)
 
 

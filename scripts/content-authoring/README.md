@@ -158,3 +158,17 @@ for u in 1 2 3 4 5 6 7 8 9; do python3 u$u.py; done
 python3 facts.py
 cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-world
 ```
+
+## DBQ document layout
+
+Every document of a DBQ prompt is a bold label, a `Source:` line and the quotation as a blockquote, each separated by a
+blank line. Written as three consecutive lines, markdown joined them into one paragraph ("Document 1 Source: ... "quote"").
+`dbq-layout/apply.py` puts a prompt in that form (idempotent, raw-text edit so World's hand-formatted pool is not
+reformatted, and it asserts that only line breaks changed); `--check` lists any prompt still in the old form. U.S.
+History's pool is generated, and `ap-us-history/pool.py`'s `docs()` helper emits the new layout. `tests/dbq-layout.test.ts`
+fails if any DBQ in `/content` uses the old layout. Editing a prompt resets its approval on the next seed.
+
+```bash
+python3 scripts/content-authoring/dbq-layout/apply.py --check   # exit 1 if any DBQ is in the old layout
+python3 scripts/content-authoring/dbq-layout/apply.py           # fix them
+```
