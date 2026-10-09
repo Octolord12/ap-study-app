@@ -59,7 +59,13 @@ Find the area between $y = x + 2$ and $y = x^2$.
 
 Set them equal: $x + 2 = x^2$ gives $x = -1$ and $x = 2$. On $(-1, 2)$ the line is above the parabola, so
 
-$$\int_{-1}^{2}\big[(x + 2) - x^2\big]\,dx = \left[\frac{x^2}{2} + 2x - \frac{x^3}{3}\right]_{-1}^{2} = \frac{9}{2}.$$
+$$
+\begin{aligned}
+&\int_{-1}^{2}\big[(x + 2) - x^2\big]\,dx \\
+&= \left[\frac{x^2}{2} + 2x - \frac{x^3}{3}\right]_{-1}^{2} \\
+&= \frac{9}{2}
+\end{aligned}
+$$
 """),
 ("volume-by-cross-sections", r"""
 ### The idea
@@ -108,6 +114,12 @@ $$V = \pi\int_0^4 x\,dx = 8\pi.$$
 
 Now rotate the region between $y = x$ (outer) and $y = x^2$ (inner) on $[0, 1]$ about the $x$-axis. Washers:
 
-$$V = \pi\int_0^1 \big(x^2 - x^4\big)\,dx = \pi\left(\frac{1}{3} - \frac{1}{5}\right) = \frac{2\pi}{15}.$$
+$$
+\begin{aligned}
+V &= \pi\int_0^1 \big(x^2 - x^4\big)\,dx \\
+&= \pi\left(\frac{1}{3} - \frac{1}{5}\right) \\
+&= \frac{2\pi}{15}
+\end{aligned}
+$$
 """),
 ])

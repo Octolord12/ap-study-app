@@ -70,7 +70,12 @@ A 10-foot ladder leans against a wall. The bottom slides away at $2$ ft/s. How f
 
 Let $x$ be the bottom's distance and $y$ the top's height. Then $x^2 + y^2 = 100$. Differentiate with respect to $t$:
 
-$$2x\frac{dx}{dt} + 2y\frac{dy}{dt} = 0 \quad\Rightarrow\quad \frac{dy}{dt} = -\frac{x}{y}\frac{dx}{dt}.$$
+$$
+\begin{aligned}
+2x\frac{dx}{dt} + 2y\frac{dy}{dt} &= 0 \\
+\frac{dy}{dt} &= -\frac{x}{y}\frac{dx}{dt}
+\end{aligned}
+$$
 
 When $x = 6$, $y = 8$. So $\dfrac{dy}{dt} = -\dfrac{6}{8}(2) = -1.5$ ft/s. The top is sliding down at $1.5$ ft/s.
 """),
@@ -91,7 +96,12 @@ Getting the over/underestimate backward. Think of the picture: a curve that bend
 ### Worked example
 Estimate $\sqrt{4.1}$. Take $f(x) = \sqrt{x}$ and $a = 4$, where $f(4) = 2$ and $f'(x) = \dfrac{1}{2\sqrt{x}}$ gives $f'(4) = \dfrac{1}{4}$.
 
-$$L(x) = 2 + \tfrac{1}{4}(x - 4), \qquad L(4.1) = 2 + 0.025 = 2.025.$$
+$$
+\begin{aligned}
+L(x) &= 2 + \tfrac{1}{4}(x - 4) \\
+L(4.1) &= 2 + 0.025 = 2.025
+\end{aligned}
+$$
 
 Since $f''(x) < 0$, the curve is concave down, so $2.025$ is an overestimate. The true value is about $2.02485$.
 """),

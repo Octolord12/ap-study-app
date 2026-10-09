@@ -61,7 +61,13 @@ Concluding that "continuous" means "smooth". The graph of $f(x) = |x|$ has no br
 ### Worked example
 Use the definition to find $f'(3)$ for $f(x) = x^2$.
 
-$$\frac{f(3 + h) - f(3)}{h} = \frac{(3 + h)^2 - 9}{h} = \frac{6h + h^2}{h} = 6 + h$$
+$$
+\begin{aligned}
+\frac{f(3 + h) - f(3)}{h} &= \frac{(3 + h)^2 - 9}{h} \\
+&= \frac{6h + h^2}{h} \\
+&= 6 + h
+\end{aligned}
+$$
 
 As $h \to 0$ this approaches $6$, so $f'(3) = 6$.
 
@@ -86,7 +92,12 @@ Differentiate $f(x) = 4x^3 - \dfrac{2}{x^2} + \sqrt{x}$.
 
 First rewrite: $f(x) = 4x^3 - 2x^{-2} + x^{1/2}$. Then differentiate term by term:
 
-$$f'(x) = 12x^2 + 4x^{-3} + \tfrac{1}{2}x^{-1/2} = 12x^2 + \frac{4}{x^3} + \frac{1}{2\sqrt{x}}$$
+$$
+\begin{aligned}
+f'(x) &= 12x^2 + 4x^{-3} + \tfrac{1}{2}x^{-1/2} \\
+&= 12x^2 + \frac{4}{x^3} + \frac{1}{2\sqrt{x}}
+\end{aligned}
+$$
 """),
 ("derivatives-of-trig-exponential-log", r"""
 ### The idea

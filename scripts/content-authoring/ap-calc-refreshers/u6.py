@@ -108,6 +108,11 @@ Evaluate $\displaystyle\int_0^2 2x(x^2 + 1)^5\,dx$.
 
 Let $u = x^2 + 1$, so $du = 2x\,dx$. The limits change: when $x = 0$, $u = 1$, and when $x = 2$, $u = 5$.
 
-$$\int_1^5 u^5\,du = \left[\frac{u^6}{6}\right]_1^5 = \frac{5^6 - 1}{6} = \frac{15624}{6} = 2604.$$
+$$
+\begin{aligned}
+\int_1^5 u^5\,du &= \left[\frac{u^6}{6}\right]_1^5 \\
+&= \frac{5^6 - 1}{6} = \frac{15624}{6} = 2604
+\end{aligned}
+$$
 """),
 ])

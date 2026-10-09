@@ -62,7 +62,13 @@ Cancelling terms instead of factors. In $\dfrac{x^2 - 9}{x - 3}$ you cancel the 
 ### Worked example
 Find $\lim_{x \to 0} \dfrac{\sqrt{x + 4} - 2}{x}$. Substituting gives $\frac{0}{0}$, so multiply top and bottom by the conjugate $\sqrt{x + 4} + 2$:
 
-$$\frac{(\sqrt{x + 4} - 2)(\sqrt{x + 4} + 2)}{x(\sqrt{x + 4} + 2)} = \frac{(x + 4) - 4}{x(\sqrt{x + 4} + 2)} = \frac{1}{\sqrt{x + 4} + 2}$$
+$$
+\begin{aligned}
+&\frac{(\sqrt{x + 4} - 2)(\sqrt{x + 4} + 2)}{x(\sqrt{x + 4} + 2)} \\
+&= \frac{(x + 4) - 4}{x(\sqrt{x + 4} + 2)} \\
+&= \frac{1}{\sqrt{x + 4} + 2}
+\end{aligned}
+$$
 
 Now substitute $x = 0$: the limit is $\dfrac{1}{4}$.
 """),
