@@ -351,8 +351,17 @@ no migration.
   faked by a client sending a bogus XP number, because no such number is ever
   accepted from a client anywhere in the app.
 
-**Not built**: unfriending, deleting/renaming a class, removing a member, or
-transferring class ownership. `leaveClass` exists for members but explicitly
+**Unfriending** (added 2026-10-09): each friend on `/friends` has a Remove button (`RemoveFriendButton`, two steps like the
+admin "Approve all": it asks first, because the person who removes a friend can't undo it themselves, they would have to send a new
+request and be accepted again). `removeFriend(friendId)` (`lib/social/actions.ts`) is one `deleteMany` scoped to an **ACCEPTED**
+friendship between exactly the signed-in user and that person in either direction, so it can't remove anyone else's friendship, a
+pending request (declining is `respondToFriendRequest`) or a `BLOCKED` row; removing a non-friend does nothing and raises no error. No
+migration. Tests: `tests/remove-friend.test.ts` runs it against an in-memory friendship table (and was mutation-checked: dropping
+the status scope or one direction fails them) and `tests/remove-friend-button.test.tsx` covers the two steps. Cancelling a request you
+*sent* is a separate gap: the "Sent" list only shows "Pending".
+
+**Not built**: deleting/renaming a class, removing a member, or
+transferring class ownership, and cancelling a sent friend request. `leaveClass` exists for members but explicitly
 refuses to let an `OWNER` leave (would orphan the class) — noted in that
 function rather than silently allowed.
 

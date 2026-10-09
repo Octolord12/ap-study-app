@@ -129,6 +129,23 @@ export async function respondToFriendRequest(requesterId: string, accept: boolea
   revalidatePath("/friends");
 }
 
+export async function removeFriend(friendId: string): Promise<void> {
+  const userId = await requireUserId();
+
+  // Scoped to an ACCEPTED friendship between exactly these two people, in either direction: it can only ever remove the signed-in
+  // user's own friendship, never someone else's, and never a pending request (declining is respondToFriendRequest) or a blocked row.
+  await getDb().friendship.deleteMany({
+    where: {
+      status: "ACCEPTED",
+      OR: [
+        { requesterId: userId, addresseeId: friendId },
+        { requesterId: friendId, addresseeId: userId },
+      ],
+    },
+  });
+  revalidatePath("/friends");
+}
+
 export async function updateLeaderboardOptOut(optOut: boolean): Promise<void> {
   const userId = await requireUserId();
   await getDb().user.update({ where: { id: userId }, data: { leaderboardOptOut: optOut } });

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { requireUserId } from "@/lib/auth/session";
 import { getFriendsLeaderboard, getFriendsList, getPendingFriendRequests } from "@/lib/social/queries";
-import { respondToFriendRequest, sendFriendRequest } from "@/lib/social/actions";
+import { removeFriend, respondToFriendRequest, sendFriendRequest } from "@/lib/social/actions";
+import { RemoveFriendButton } from "@/components/social/remove-friend-button";
 import { Ledger } from "@/components/ui/ledger";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
@@ -109,8 +110,9 @@ export default async function FriendsPage({
         ) : (
           <RuledList>
             {friends.map((f) => (
-              <li key={f.id} className="py-3 font-mono text-sm">
-                {f.username}
+              <li key={f.id} className="flex flex-wrap items-center justify-between gap-3 py-3">
+                <span className="font-mono text-sm">{f.username}</span>
+                <RemoveFriendButton username={f.username} action={removeFriend.bind(null, f.id)} />
               </li>
             ))}
           </RuledList>
