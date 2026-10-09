@@ -1482,6 +1482,14 @@ one course first, the same review as questions, a page per topic.
   OPEC's Arab members. The owner's review is the real check; figures to look at first: about 12 million Africans embarked on
   the Atlantic slave trade, about six million Jews killed in the Holocaust, "roughly a million or more" Armenians, and the
   world population of about 1.6 billion in 1900 against more than 8 billion in the 2020s.
+- **Approved 2026-10-09.** The owner said they had looked through everything and asked for the approvals to be set
+  directly instead of clicking "Approve all" on every unit page. They had approved 5 Calc AB refreshers themselves in
+  `/admin/review`; the other 190 were set with one `updateMany` on `Topic.refresherReviewed` (only topics that have a
+  refresher and were not yet approved; no other column or table was touched, and every per-user and per-table count was
+  identical before and after). The live About page then read "2,411 of 2,411 have been checked by a person" (2,216 questions
+  and prompts plus 195 refreshers). **Approvals still reset when a refresher's text changes and is reseeded**, so editing
+  one sends it back for review. The About page's wording "The rest have not, so some may contain mistakes" is static and still
+  shows at 100%.
 - **Not done**: no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
 ## Hard sets (harder questions, added alongside)
@@ -1882,8 +1890,8 @@ in app logic — updating them should be a data edit.
       row counts and per-question correct-answer/difficulty/diagram checked against the files after
       seeding). See "Hard sets" above.
 - [x] **Post-launch: topic refreshers.** Engine built and tested (schema, validation, seed, topic page,
-      links, review, About count) and Calc AB's 35 refreshers written, seeded and live (unreviewed until the
-      owner approves them in `/admin/review`). CSA's 39 followed (seeded 2026-10-06 after its Java examples were
+      links, review, About count) and Calc AB's 35 refreshers written, seeded and live (they start unreviewed; **all 195
+      refreshers across the five courses were approved 2026-10-09**, see "Topic refreshers"). CSA's 39 followed (seeded 2026-10-06 after its Java examples were
       compiled and run; its 500 approvals were kept). Physics 1's 32 followed (2026-10-07, seeded twice: the second time
       after the long equations were split; its 400 approvals were kept). U.S. History's 46 followed (2026-10-07; written from well-established facts and proofread, not machine-checked; its 458
       approvals were kept). World History's 43 followed (2026-10-08, same standard; its 458 approvals were kept), which completes the set. The 8 Calc AB equations were
