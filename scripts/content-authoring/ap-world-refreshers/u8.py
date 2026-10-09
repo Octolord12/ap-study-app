@@ -1,0 +1,109 @@
+from common import write
+
+write(8, [
+("origins-of-the-cold-war", r"""
+### The idea
+After World War II, the wartime alliance between the Soviet Union and the Western powers broke down. The United States and the USSR emerged as rival superpowers with opposing ideologies, and Europe was divided between them.
+
+### Key facts
+- **Ideology:** the United States promoted democracy and capitalism, the Soviet Union promoted communism and state control of the economy.
+- **Disputes over Europe:** at wartime meetings (Yalta and Potsdam, 1945) the Allies disagreed about Germany and Eastern Europe. The Soviets installed communist governments across Eastern Europe, and Winston Churchill said an **"Iron Curtain"** had fallen (1946).
+- **Containment:** the United States aimed to stop communism from spreading. The **Truman Doctrine** (1947) gave aid to Greece and Turkey, and the **Marshall Plan** (1948) gave billions of dollars to rebuild Western Europe.
+- **Germany:** divided into East and West. In 1948 to 1949 the Soviets blockaded West Berlin, and the Allies answered with the Berlin Airlift.
+- **Alliances:** **NATO** (1949) joined the West, and the **Warsaw Pact** (1955) joined the Soviet bloc.
+- **Weapons:** the Soviets tested an atomic bomb in 1949, beginning the nuclear arms race.
+- **Asia:** the Communists won the civil war in China in 1949.
+
+### Watch out for
+Giving only one cause. Both sides distrusted each other, and the Cold War grew from ideological differences, security fears and the power vacuum left by the war.
+
+### Worked example
+Prompt: "Explain one way the United States tried to contain communism in Europe."
+
+A strong answer: Through the Marshall Plan of 1948, the United States provided billions of dollars to rebuild the economies of Western Europe, which was meant to reduce poverty and discontent that communists could use. The United States also formed NATO in 1949 as a military alliance against Soviet expansion.
+"""),
+("the-cold-war", r"""
+### The idea
+For more than four decades the United States and the Soviet Union competed for influence around the globe through an arms race, a space race, proxy wars and propaganda, while avoiding direct war between them.
+
+### Key facts
+- **Proxy wars:** the superpowers backed opposing sides in smaller wars. The **Korean War** (1950 to 1953) ended in a divided Korea, and the **Vietnam War** ended with a communist victory in 1975.
+- **Cuba:** after the Cuban Revolution (1959), the **Cuban Missile Crisis** (1962) brought the world close to nuclear war, and ended when the Soviets removed their missiles.
+- **Berlin:** the Berlin Wall (1961) was built to stop East Germans from fleeing to the West.
+- **Arms and space race:** both sides built thousands of nuclear weapons. The Soviets launched Sputnik in 1957, and the United States landed astronauts on the moon in 1969.
+- **Eastern Europe:** the Soviets crushed uprisings in Hungary (1956) and Czechoslovakia (1968).
+- **Nonaligned Movement:** countries such as India and Egypt refused to take sides, as in the Bandung Conference (1955).
+- **Detente:** a period of eased tensions in the 1970s with arms limitation talks.
+- **Afghanistan:** the Soviet invasion in 1979 led to a long and costly war.
+
+### Watch out for
+Calling it a "cold" war because nothing happened. It was never a direct war between the superpowers, but millions died in the proxy wars it fueled.
+
+### Worked example
+Prompt: "Explain one way the Cold War affected a region outside Europe."
+
+A strong answer: In Korea and Vietnam the superpowers supported opposing sides, with the United States and China and the USSR providing troops, weapons or aid. The Korean War ended in a divided country in 1953, and the Vietnam War lasted until 1975, with millions of deaths and years of destruction.
+"""),
+("decolonization", r"""
+### The idea
+After World War II, colonies across Asia, Africa and the Middle East won independence. Weakened European empires, rising nationalism and the Cold War all helped end colonial rule, though paths to independence differed.
+
+### Key facts
+- **Causes:** the war weakened Britain and France, colonial soldiers had fought for freedom abroad, and nationalist leaders organized mass movements. The United States and the USSR both opposed old-style empires.
+- **India:** Gandhi's nonviolent campaigns helped win independence in 1947, and the subcontinent was partitioned into mostly Hindu India and Muslim Pakistan, with mass violence and migration.
+- **Southeast Asia:** Indonesia won independence from the Dutch (1949), and Vietnam fought the French, defeating them at Dien Bien Phu (1954).
+- **Africa:** Ghana, led by Kwame Nkrumah, became the first sub-Saharan colony to gain independence (1957). In 1960 seventeen African states became independent. Some struggles were violent, such as the Algerian War (1954 to 1962) and Kenya's Mau Mau uprising.
+- **Middle East:** the State of Israel was declared in 1948, and the war led to hundreds of thousands of Palestinian refugees.
+- **South Africa:** a system of apartheid (racial segregation) began in 1948 and ended in the 1990s, when Nelson Mandela was elected president (1994).
+
+### Watch out for
+Assuming independence came the same way everywhere. Some colonies won it through negotiation, others only after long wars, and settler colonies such as Algeria and Kenya were the hardest fought.
+
+### Worked example
+Prompt: "Explain one difference between how India and Algeria gained independence."
+
+A strong answer: India won independence in 1947 largely through mass nonviolent campaigns led by Gandhi and negotiations with a weakened Britain. Algeria, where many French settlers lived and France considered the territory part of France, only gained independence in 1962 after a long and violent war.
+"""),
+("newly-independent-states", r"""
+### The idea
+Newly independent states faced the hard task of building nations from colonial borders and economies. They dealt with ethnic divisions, poverty, and pressure from the superpowers while experimenting with different models of government and development.
+
+### Key facts
+- **Borders:** colonial borders often ignored ethnic and cultural lines, which led to conflict and, in some cases, civil war.
+- **Economies:** many depended on exporting a few raw materials. Some governments nationalized key industries or promoted industrial development, and the **Green Revolution** (1960s) raised food output with high-yield crops.
+- **Political systems:** some, such as India, kept democracy, while many others turned to one-party or military rule.
+- **Nonalignment:** many leaders tried to avoid taking sides in the Cold War, but the superpowers competed for their loyalty.
+- **Pan-movements:** leaders such as Nkrumah and Nasser promoted Pan-Africanism and Pan-Arabism. Egypt's Nasser nationalized the Suez Canal in 1956.
+- **Communist China:** Mao Zedong's government (from 1949) carried out the **Great Leap Forward** (1958 to 1962), which caused a catastrophic famine, and the Cultural Revolution (from 1966).
+- **Iran:** the 1979 revolution overthrew the shah and created an Islamic republic.
+
+### Watch out for
+Blaming problems only on colonialism or only on new leaders. Both mattered: colonial borders and economies left a hard legacy, and choices by new governments and Cold War interference shaped outcomes.
+
+### Worked example
+Prompt: "Explain one challenge faced by newly independent states."
+
+A strong answer: Many African states inherited borders drawn by European powers that placed rival ethnic groups in the same country and divided others, which contributed to civil wars and political instability. Their economies also depended on exporting a few raw materials, which left them vulnerable to changes in world prices.
+"""),
+("end-of-the-cold-war", r"""
+### The idea
+The Cold War ended between 1989 and 1991 with the collapse of communist governments in Eastern Europe and the dissolution of the Soviet Union. Several pressures combined, and historians debate their relative weight.
+
+### Key facts
+- **Soviet economic troubles:** the planned economy stagnated, and the arms race and the costly war in Afghanistan (1979 to 1989) drained resources.
+- **Gorbachev:** Mikhail Gorbachev, leader from 1985, introduced **glasnost** (openness) and **perestroika** (restructuring), and refused to use force to keep communist governments in power in Eastern Europe.
+- **Eastern Europe:** the **Solidarity** movement in Poland (1980) challenged communist rule, and in 1989 revolutions toppled governments across the region. The **Berlin Wall** fell in November 1989, and Germany reunified in 1990.
+- **Soviet collapse:** after a failed coup, the Soviet Union dissolved in December 1991 into independent states.
+- **China:** the government crushed the Tiananmen Square protests in 1989 and stayed communist, while Deng Xiaoping's market reforms (from 1978) grew the economy.
+- **Aftermath:** Russia's shift to a market economy brought hardship. In Yugoslavia, the breakup led to wars in the 1990s, including genocide in Bosnia.
+- The United States became the sole superpower.
+
+### Watch out for
+Giving the United States all the credit, or none. American pressure mattered, but so did the Soviet economy, Gorbachev's decisions and the demands of people across Eastern Europe.
+
+### Worked example
+Prompt: "Explain one reason the Soviet Union collapsed."
+
+A strong answer: The Soviet economy was stagnant and weighed down by military spending, including the long war in Afghanistan. Gorbachev's reforms of glasnost and perestroika loosened control, and when he did not use force to stop the revolutions in Eastern Europe in 1989, nationalist movements within the USSR grew, and the union dissolved in 1991.
+"""),
+])

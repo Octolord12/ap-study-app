@@ -142,3 +142,19 @@ for u in 1 2 3 4 5 6 7 8 9; do python3 u$u.py; done
 cd ../ap-us-history && python3 facts.py          # expect only the known "Georgia" / "Monroe Doctrine" / "farewell address" false positives
 cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-us-history
 ```
+
+## Topic refreshers (World History)
+
+`ap-world-refreshers/u1.py..u9.py` write `content/ap-world/refreshers/unit-N.json`, in the same four-section layout as
+U.S. History (the worked example is a short-answer prompt and a sketch of a strong response). Nothing is machine-verified:
+claims are kept to well-established CED-level facts, and `ap-world-refreshers/facts.py` checks every named event followed
+by a year against its date table across the refreshers **and** the existing World questions and prompts. Its known false
+positives are all in existing content ("Haitian Revolution, 1793" for a document dated inside the revolution, "Opium War,
+1840s", the Fourth Crusade in 1204, the UN adopting the Declaration of Human Rights in 1948); a new flag in a refresher is real.
+
+```bash
+cd scripts/content-authoring/ap-world-refreshers
+for u in 1 2 3 4 5 6 7 8 9; do python3 u$u.py; done
+python3 facts.py
+cd ../../.. && npm run content:validate && npx tsx scripts/content-authoring/render-audit.ts ap-world
+```
