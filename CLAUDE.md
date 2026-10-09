@@ -1905,11 +1905,17 @@ in app logic — updating them should be a data edit.
 
 ## Known issues / follow-ups
 
-- **Document-based questions run each document's label, source and quotation together in one paragraph**
-  ("Document 1 Source: ... \"...\""), because the prompt text separates them with single newlines, which
-  markdown joins. It is readable and is the same in World History and U.S. History. Fixing it means either
-  blank lines in the DBQ prompts (a content edit and a reseed of those prompts) or a renderer that keeps
-  line breaks (which would also change the `a)` / `b)` lines of every sample answer, probably for the better).
+- **DBQ document layout (fixed and live 2026-10-09).** Each DBQ document was three consecutive lines (`**Document 1**`,
+  `Source: ...`, the quotation), which markdown joined into one paragraph ("Document 1 Source: ... "quote""). Now every
+  document is a bold label, a `Source:` line and the quotation as a blockquote (the multiple-choice passages' treatment),
+  separated by blank lines, in all 8 DBQs (4 World, 4 U.S. History). Only line breaks changed (checked field by field against
+  the previous version). `scripts/content-authoring/dbq-layout/apply.py` does the rewrite (idempotent; edits raw text so
+  World's hand-formatted pool is not reformatted; `--check` lists prompts still in the old form), U.S. History's `pool.py`
+  `docs()` helper emits the new layout, and `tests/dbq-layout.test.ts` fails on the old one (verified). Seeding reset the 8
+  prompts' approvals (the content changed) and the owner asked for them to be re-approved directly, which was done by id.
+  All four places that show a prompt (practice page, exam, exam results, admin review) use `renderContentToHtml`, so the fix
+  applies to each; the practice page was checked on the real pages at desktop and 375px. Nothing else in the prompts changed,
+  and no other free-response prompt had the problem.
 
 - **Answer lengths in Calc AB, Physics 1 and CSA (core sets) were evened out 2026-10-06**, with the same
   overlay approach as World History (`scripts/content-authoring/ap-core-pad/`: `<course>/pad_uN.py` holding
@@ -1991,6 +1997,10 @@ in app logic — updating them should be a data edit.
   real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
   3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
   real student's, matched the post-seed snapshot.
+  The DBQ layout fix was checked with `scratch_dbq` / `scratch-dbq@example.com` (2026-10-09): all 8 DBQ practice pages fetched
+  as that user (7 labels, 7 source lines and 7 blockquotes each, no joined paragraphs, no leftover markup), one at desktop and
+  one at 375px (no overflow). Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the
+  pre-seed snapshot.
   The World History refreshers (and the 8 reworked Calc AB pages) were checked with `scratch_world` / `scratch-world@example.com`
   (2026-10-08): all 43 World pages fetched as that user (four sections, rendered lists, no leftover markup, a practice link, the
   report link and the "not checked by a person" notice on every page), the 8 Calc pages (0 KaTeX errors, every display
