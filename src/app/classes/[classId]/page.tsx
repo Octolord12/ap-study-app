@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getClassDetail, getClassLeaderboard } from "@/lib/social/queries";
-import { leaveClass } from "@/lib/social/actions";
+import { leaveClass, removeClassMember } from "@/lib/social/actions";
+import { RemoveClassMemberButton } from "@/components/social/remove-class-member-button";
 import { Ledger } from "@/components/ui/ledger";
 import { Button } from "@/components/ui/button";
 import { Breadcrumb, Page, PageHeader, RuledList, Section } from "@/components/ui/page";
@@ -31,6 +32,7 @@ export default async function ClassDetailPage({
   const myMembership = classDetail.memberships.find((m) => m.userId === userId);
   const leaderboard = await getClassLeaderboard(classId, period);
   const leaveClassAction = leaveClass.bind(null, classId);
+  const isOwner = myMembership?.role === "OWNER";
 
   return (
     <Page>
@@ -64,9 +66,14 @@ export default async function ClassDetailPage({
       <Section label={`Members (${classDetail.memberships.length})`}>
         <RuledList>
           {classDetail.memberships.map((m) => (
-            <li key={m.userId} className="flex items-baseline justify-between gap-3 py-3">
+            <li key={m.userId} className="flex flex-wrap items-center justify-between gap-3 py-3">
               <span className="font-mono text-sm">{m.user.username}</span>
-              <span className="eyebrow">{m.role === "OWNER" ? "Owner" : "Member"}</span>
+              <div className="flex items-center gap-3">
+                <span className="eyebrow">{m.role === "OWNER" ? "Owner" : "Member"}</span>
+                {isOwner && m.role === "MEMBER" ? (
+                  <RemoveClassMemberButton username={m.user.username} action={removeClassMember.bind(null, classId, m.userId)} />
+                ) : null}
+              </div>
             </li>
           ))}
         </RuledList>

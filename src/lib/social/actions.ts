@@ -79,6 +79,18 @@ export async function leaveClass(classId: string): Promise<void> {
   redirect("/classes");
 }
 
+export async function removeClassMember(classId: string, memberId: string): Promise<void> {
+  const userId = await requireUserId();
+
+  // One delete scoped three ways: that class, a MEMBER row (so the owner's own OWNER row can't be removed this way), and only when the
+  // signed-in user owns the class. Anyone else, or a person who isn't in the class, matches nothing and nothing happens.
+  await getDb().classMembership.deleteMany({
+    where: { classId, userId: memberId, role: "MEMBER", class: { ownerId: userId } },
+  });
+  revalidatePath(`/classes/${classId}`);
+  revalidatePath("/classes");
+}
+
 export async function sendFriendRequest(formData: FormData): Promise<void> {
   const userId = await requireUserId();
   const db = getDb();

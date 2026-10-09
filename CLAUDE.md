@@ -366,7 +366,17 @@ an accepted friendship (that is `removeFriend`). It ends in `redirect("/friends"
 saying "Friend request sent." (the `?sent=1` from the earlier request) right after cancelling it; the bare URL also clears a stale
 error. `tests/cancel-friend-request.test.ts` was mutation-checked the same way (dropping the PENDING scope or the "I sent it" scope fails it).
 
-**Not built**: deleting/renaming a class, removing a member, or
+**Removing a class member** (added 2026-10-09): on a class page the owner sees a Remove button beside each *member* (not themselves).
+`removeClassMember(classId, memberId)` (`lib/social/actions.ts`) is one `deleteMany` scoped three ways: that class, a `MEMBER` row (so the
+owner's `OWNER` row can't be removed this way), and `class: { ownerId: <signed-in user> }` (so only the class's owner can do it; a member,
+or an owner of some other class, matches nothing and nothing happens, with no error). The button is two steps, like unfriending, and
+says plainly that **the invite code still works, so the person can join again**; there is no way to ban someone or change a class's
+code yet. The shared two-step button is `ConfirmRemoveButton` (`components/social/confirm-remove-button.tsx`); `RemoveFriendButton` and
+`RemoveClassMemberButton` only supply the wording. Tests: `tests/remove-class-member.test.ts` runs the action against an in-memory membership
+table that throws on a filter it does not understand (mutation-checked: dropping the class, role or owner scope, or the person, each
+fails a test, which needed a case of one person in two classes of the same owner), and `tests/remove-class-member-button.test.tsx`.
+
+**Not built**: deleting/renaming a class, banning a removed member or changing a class's invite code, or
 transferring class ownership. `leaveClass` exists for members but explicitly
 refuses to let an `OWNER` leave (would orphan the class) — noted in that
 function rather than silently allowed.
@@ -2033,6 +2043,12 @@ in app logic — updating them should be a data edit.
   (clean URL, no stale message), request again, accept, Remove asks first, Keep backs out, "Yes, remove" removes it, and the other
   side's list and leaderboard are empty too. Both were deleted afterwards; every per-user and per-table count, including the one real
   friendship, matched the pre-test snapshot.
+  Removing a class member was checked with `scratch_ma` (owner) and `scratch_mb` (member), `scratch-ma@example.com` / `scratch-mb@example.com`
+  (2026-10-09), again signed in at once on `localhost:3000` and `127.0.0.1:3000`: the owner sees Remove beside the member and not beside
+  themselves, the member sees no Remove buttons, Remove asks first, Keep backs out, "Yes, remove" removes them and the owner's page updates
+  by itself (members and leaderboard), the removed person's class list is empty and the class page returns none of the class's content, the
+  invite code lets them join again (as the confirm text says), and at 375px nothing overflows. Both were deleted afterwards (the class went
+  with its owner); every per-user and per-table count, including the one real friendship, matched the pre-test snapshot.
   The answer-length fix was checked with `scratch_len` / `scratch-len@example.com` (2026-10-09): all 108 edited questions fetched
   through the real quiz page as that user (the new wording present, 4 choices, no leftover markup), plus a look at one on screen.
   Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the pre-seed snapshot. The check used a
