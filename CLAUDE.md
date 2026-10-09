@@ -1382,8 +1382,8 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
 ## Topic refreshers
 
 A short written read on each topic, for a student who just missed a question or is starting a unit. Built
-2026-10-06 (owner's request: "let's do the concept refreshers"). **Calc AB (35 topics), CSA (39), Physics 1
-(32) and U.S. History (46) are written and live; World History is not.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
+2026-10-06 (owner's request: "let's do the concept refreshers"). **All five courses are written and live: Calc AB (35
+topics), CSA (39), Physics 1 (32), U.S. History (46) and World History (43), 195 refreshers in all.** The owner dismissed the scoping questions, so these defaults were chosen and stated:
 one course first, the same review as questions, a page per topic.
 
 - **Data**: `Topic.refresher String? @db.Text` and `Topic.refresherReviewed Boolean @default(false)`,
@@ -1450,10 +1450,14 @@ one course first, the same review as questions, a page per topic.
   8 of Calc AB's 23 (up to 476px). `globals.css` now gives `.katex-display` `overflow-x: auto` so a long one scrolls
   inside its own block. Scrolling clips the box, and fractions and big brackets stick out of it by up to 6px, so it also
   has `padding-block: 0.5em` (taken from KaTeX's 1em margin, so spacing is unchanged); measured 0 clipped of 33 equations.
-  Physics 1's were rewritten as aligned lines so none needs scrolling. **Calc AB's 8 still scroll sideways on a phone**:
-  splitting them would be a content edit and a reseed. To measure, fetch each page as the signed-in user, inject its
-  `.katex-display` HTML into a 343px `.reading.prose` box and read `scrollWidth` (a plain fetch of the page works; the
-  refresher body is in the streamed, hidden block, so `main` is empty in the fetched copy: query `body`).
+  Physics 1's were rewritten as aligned lines so none needs scrolling, and **Calc AB's 8 were split the same way
+  (2026-10-08)**: all 23 of its display equations now measure at most 343px with none clipped. To measure, put each
+  `.katex-display` into a 343px `.reading.prose` box and read `scrollWidth`. **That works before any reseed**: render the
+  content with `renderContentToHtml`, write the equations' HTML to a temporary `public/__tmp-displays.json` (the repo has no
+  `public/` folder, so create it and delete it afterwards), and fetch it from any page that loads the global CSS, such as
+  `/privacy`, with no sign-in. On a seeded page, fetch it as the signed-in user instead and query `body`, not `main` (the
+  refresher body is in the streamed, hidden block, so `main` is empty in the fetched copy), and strip `annotation` and
+  `.katex-mathml` before searching the text for raw TeX (they hold the TeX source and look like a leak).
 - **Authoring** (U.S. History): `scripts/content-authoring/ap-us-history-refreshers/u1.py..u9.py`, same helper. History has
   nothing to compute or compile, so **none of it is machine-verified**. Claims are kept to well-established CED-level
   facts; `ap-us-history/facts.py` (which now also reads refreshers: it falls back to unit/topic when an item has no `id`)
@@ -1467,7 +1471,18 @@ one course first, the same review as questions, a page per topic.
   `$` as unclosed math, so write "15 million dollars"), Salem (about 20 executions, not 19), the 1808 slave-trade ban
   (Congress ended it; the Constitution only allowed that), Gettysburg ("bloodiest", not "largest"), and the Knights of
   Labor (they excluded Chinese workers, so not "many races").
-- **Not done**: refreshers for World History (it needs its own authoring pass; History, like U.S. History, can't be machine-verified); no refresher videos; no search. Whether a student has read a refresher is not tracked.
+- **Authoring** (World History): `scripts/content-authoring/ap-world-refreshers/u1.py..u9.py`, same helper and layout as
+  U.S. History (the worked example is a short-answer prompt and a sketch of a strong response). Nothing is machine-verified:
+  claims were kept to well-established CED-level facts, all 302 year mentions were read in context, and `facts.py` (a World date
+  table that scans the refreshers *and* the existing World questions and prompts) found no disagreement in the refreshers.
+  Its 5 hits are false positives in existing content: a document dated 1793 inside the Haitian Revolution, "Opium War, 1840s",
+  the Fourth Crusade in 1204, and the UN adopting the Declaration of Human Rights in 1948. A new flag in a refresher is real.
+  Corrections made while proofreading: the Maya "decline" line (Postclassic Maya cities continued), "millions died" on the
+  Middle Passage (well over a million), Brazil's 1822 independence being from Portugal, and the 1973 oil embargo being by
+  OPEC's Arab members. The owner's review is the real check; figures to look at first: about 12 million Africans embarked on
+  the Atlantic slave trade, about six million Jews killed in the Holocaust, "roughly a million or more" Armenians, and the
+  world population of about 1.6 billion in 1900 against more than 8 billion in the 2020s.
+- **Not done**: no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
 ## Hard sets (harder questions, added alongside)
 
@@ -1871,7 +1886,8 @@ in app logic — updating them should be a data edit.
       owner approves them in `/admin/review`). CSA's 39 followed (seeded 2026-10-06 after its Java examples were
       compiled and run; its 500 approvals were kept). Physics 1's 32 followed (2026-10-07, seeded twice: the second time
       after the long equations were split; its 400 approvals were kept). U.S. History's 46 followed (2026-10-07; written from well-established facts and proofread, not machine-checked; its 458
-      approvals were kept). World History is the only course still to do. See "Topic refreshers".
+      approvals were kept). World History's 43 followed (2026-10-08, same standard; its 458 approvals were kept), which completes the set. The 8 Calc AB equations were
+      split in the same pass. See "Topic refreshers".
 - [x] **Post-launch: AP U.S. History.** A fifth course at full size (405 MCQs + 53 free-response,
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
@@ -1963,6 +1979,12 @@ in app logic — updating them should be a data edit.
   real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
   3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
   real student's, matched the post-seed snapshot.
+  The World History refreshers (and the 8 reworked Calc AB pages) were checked with `scratch_world` / `scratch-world@example.com`
+  (2026-10-08): all 43 World pages fetched as that user (four sections, rendered lists, no leftover markup, a practice link, the
+  report link and the "not checked by a person" notice on every page), the 8 Calc pages (0 KaTeX errors, every display
+  equation at most 343px, none clipped), a World page and a Calc page at 375px (no overflow), "Practice this topic", "Review
+  this concept" from an answered question, and the unit page's Refreshers list. Deleted afterwards (not promoted to ADMIN);
+  every per-user and per-table count matched the pre-seed snapshot.
   The Physics 1 refreshers were checked with `scratch_phys` / `scratch-phys@example.com` (2026-10-07): all 32 topic
   pages fetched as that user (485 formulas, 21 display equations, 0 KaTeX errors, all four sections on every page), a
   phone-width look at Rotational Equilibrium, "Practice this topic", "Review this concept" from a missed question, and
