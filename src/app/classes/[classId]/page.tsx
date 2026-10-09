@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUserId } from "@/lib/auth/session";
 import { getClassDetail, getClassLeaderboard } from "@/lib/social/queries";
-import { leaveClass, removeClassMember, renameClass } from "@/lib/social/actions";
+import { leaveClass, regenerateInviteCode, removeClassMember, renameClass } from "@/lib/social/actions";
 import { CLASS_NAME_MAX } from "@/lib/social/class-name";
+import { RegenerateInviteCodeButton } from "@/components/social/regenerate-invite-code-button";
 import { RemoveClassMemberButton } from "@/components/social/remove-class-member-button";
 import { Ledger } from "@/components/ui/ledger";
 import { Button } from "@/components/ui/button";
@@ -37,6 +38,7 @@ export default async function ClassDetailPage({
   const leaveClassAction = leaveClass.bind(null, classId);
   const isOwner = myMembership?.role === "OWNER";
   const renameClassAction = renameClass.bind(null, classId);
+  const regenerateInviteCodeAction = regenerateInviteCode.bind(null, classId);
 
   return (
     <Page>
@@ -61,6 +63,11 @@ export default async function ClassDetailPage({
 
       <Section label="Invite code" note="Share it so others can join from the Classes page.">
         <p className="font-mono text-4xl tracking-[0.25em]">{classDetail.inviteCode}</p>
+        {isOwner ? (
+          <div className="mt-4">
+            <RegenerateInviteCodeButton action={regenerateInviteCodeAction} />
+          </div>
+        ) : null}
       </Section>
 
       <Section label="Leaderboard">

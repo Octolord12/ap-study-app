@@ -3,22 +3,35 @@
 import { useState, useTransition, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 
-interface ConfirmRemoveButtonProps {
+interface TwoStepButtonProps {
   label: string;
   question: ReactNode;
   action: () => Promise<unknown>;
+  // The wording defaults to a removal's; a different action passes its own.
+  trigger?: string;
+  confirm?: string;
+  working?: string;
+  failure?: string;
 }
 
-// Two steps on purpose: whoever removes someone can't undo it themselves, so the first click only asks.
-export function ConfirmRemoveButton({ label, question, action }: ConfirmRemoveButtonProps) {
+// Two steps on purpose: what this does can't be undone by the person who clicks it, so the first click only asks.
+export function TwoStepButton({
+  label,
+  question,
+  action,
+  trigger = "Remove",
+  confirm = "Yes, remove",
+  working = "Removing…",
+  failure = "Could not remove. Nothing was changed; try again.",
+}: TwoStepButtonProps) {
   const [confirming, setConfirming] = useState(false);
   const [failed, setFailed] = useState(false);
   const [pending, startTransition] = useTransition();
   // The failure state commits before the transition's pending flag clears; without this the error shows for a moment above a button
-  // that still says "Removing…" and is disabled.
+  // that still shows the working label and is disabled.
   const busy = pending && !failed;
 
-  function remove() {
+  function run() {
     setFailed(false);
     startTransition(async () => {
       try {
@@ -33,7 +46,7 @@ export function ConfirmRemoveButton({ label, question, action }: ConfirmRemoveBu
   if (!confirming) {
     return (
       <Button type="button" size="sm" variant="outline" onClick={() => setConfirming(true)} aria-label={label}>
-        Remove
+        {trigger}
       </Button>
     );
   }
@@ -42,8 +55,8 @@ export function ConfirmRemoveButton({ label, question, action }: ConfirmRemoveBu
     <div className="space-y-2">
       <p className="max-w-[40ch] text-sm">{question}</p>
       <div className="flex flex-wrap gap-2">
-        <Button type="button" size="sm" onClick={remove} disabled={busy}>
-          {busy ? "Removing…" : "Yes, remove"}
+        <Button type="button" size="sm" onClick={run} disabled={busy}>
+          {busy ? working : confirm}
         </Button>
         <Button type="button" size="sm" variant="ghost" onClick={() => setConfirming(false)} disabled={busy}>
           Keep
@@ -51,7 +64,7 @@ export function ConfirmRemoveButton({ label, question, action }: ConfirmRemoveBu
       </div>
       {failed ? (
         <p role="alert" className="text-sm text-incorrect">
-          Could not remove. Nothing was changed; try again.
+          {failure}
         </p>
       ) : null}
     </div>

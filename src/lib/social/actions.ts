@@ -15,6 +15,16 @@ async function requireUserId(): Promise<string> {
 
 const MAX_INVITE_CODE_ATTEMPTS = 5;
 
+// A code no class has now. Not exported: a "use server" file may only export server actions.
+async function uniqueInviteCode(db: ReturnType<typeof getDb>): Promise<string> {
+  for (let attempt = 0; attempt < MAX_INVITE_CODE_ATTEMPTS; attempt++) {
+    const candidate = generateInviteCode();
+    const existing = await db.class.findUnique({ where: { inviteCode: candidate } });
+    if (!existing) return candidate;
+  }
+  throw new Error("Could not generate a unique invite code, try again");
+}
+
 export async function createClass(formData: FormData): Promise<void> {
   const userId = await requireUserId();
   const db = getDb();
@@ -23,16 +33,7 @@ export async function createClass(formData: FormData): Promise<void> {
   const courseId = (formData.get("courseId") as string) || null;
   if (!name) throw new Error("Class name is required");
 
-  let inviteCode = "";
-  for (let attempt = 0; attempt < MAX_INVITE_CODE_ATTEMPTS; attempt++) {
-    const candidate = generateInviteCode();
-    const existing = await db.class.findUnique({ where: { inviteCode: candidate } });
-    if (!existing) {
-      inviteCode = candidate;
-      break;
-    }
-  }
-  if (!inviteCode) throw new Error("Could not generate a unique invite code, try again");
+  const inviteCode = await uniqueInviteCode(db);
 
   const newClass = await db.class.create({
     data: { name, inviteCode, ownerId: userId, courseId },
@@ -57,6 +58,16 @@ export async function renameClass(classId: string, formData: FormData): Promise<
   revalidatePath("/classes");
   // To the bare page, so an earlier ?error=name doesn't stay on screen after a good save.
   redirect(`/classes/${classId}`);
+}
+
+export async function regenerateInviteCode(classId: string): Promise<void> {
+  const userId = await requireUserId();
+  const db = getDb();
+
+  // The old code stops working at once (join looks classes up by code). Scoped to a class this user owns, so anyone else matches nothing.
+  const inviteCode = await uniqueInviteCode(db);
+  await db.class.updateMany({ where: { id: classId, ownerId: userId }, data: { inviteCode } });
+  revalidatePath(`/classes/${classId}`);
 }
 
 export async function joinClass(formData: FormData): Promise<void> {

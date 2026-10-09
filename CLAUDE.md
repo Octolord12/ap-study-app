@@ -370,9 +370,9 @@ error. `tests/cancel-friend-request.test.ts` was mutation-checked the same way (
 `removeClassMember(classId, memberId)` (`lib/social/actions.ts`) is one `deleteMany` scoped three ways: that class, a `MEMBER` row (so the
 owner's `OWNER` row can't be removed this way), and `class: { ownerId: <signed-in user> }` (so only the class's owner can do it; a member,
 or an owner of some other class, matches nothing and nothing happens, with no error). The button is two steps, like unfriending, and
-says plainly that **the invite code still works, so the person can join again**; there is no way to ban someone or change a class's
-code yet. The shared two-step button is `ConfirmRemoveButton` (`components/social/confirm-remove-button.tsx`); `RemoveFriendButton` and
-`RemoveClassMemberButton` only supply the wording. It counts as busy ("Removing…", disabled) only while no error is showing: the failure state commits before the transition's pending flag clears, so a failed removal used to show its error above a still-disabled "Removing…" button for a moment, and the "says nothing was changed" button tests failed about 1 run in 25 when the CPUs were busy (0 in 60 after the fix; it never failed on a quiet machine, so a single full-suite run could not show it). Tests: `tests/remove-class-member.test.ts` runs the action against an in-memory membership
+says plainly that **the invite code still works, so the person can join again**; there is no ban list, but the owner can make a new
+code (next paragraph but one). The shared two-step button is `TwoStepButton` (`components/social/two-step-button.tsx`, called `ConfirmRemoveButton` until the invite-code button needed other wording; its default wording is still a removal's); `RemoveFriendButton`,
+`RemoveClassMemberButton` and `RegenerateInviteCodeButton` only supply the wording. It counts as busy ("Removing…", disabled) only while no error is showing: the failure state commits before the transition's pending flag clears, so a failed removal used to show its error above a still-disabled "Removing…" button for a moment, and the "says nothing was changed" button tests failed about 1 run in 25 when the CPUs were busy (0 in 60 after the fix; it never failed on a quiet machine, so a single full-suite run could not show it). Tests: `tests/remove-class-member.test.ts` runs the action against an in-memory membership
 table that throws on a filter it does not understand (mutation-checked: dropping the class, role or owner scope, or the person, each
 fails a test, which needed a case of one person in two classes of the same owner), and `tests/remove-class-member-button.test.tsx`.
 
@@ -386,7 +386,19 @@ doesn't linger. **`createClass` now uses the same rule** (it had no length limit
 changes. Tests: `tests/class-name.test.ts`, and `tests/rename-class.test.ts` runs the action against an in-memory class table that throws on a filter it
 does not understand (mutation-checked: dropping the owner or class scope, the validation, or `createClass`'s use of the rule each fails a test).
 
-**Not built**: deleting a class, banning a removed member or changing a class's invite code, or
+**Changing a class's invite code** (also 2026-10-09): under the code on the class page the owner sees "New code" (two steps, since the old code stops
+working at once: "The current one stops working right away, so anyone who has not joined yet will need the new one. People already in the class
+stay."). `regenerateInviteCode(classId)` (`lib/social/actions.ts`) picks a code no class uses (`uniqueInviteCode`, now shared with `createClass`: up to
+5 tries, then an error and nothing changes) and writes it with an `updateMany` on `{ id: classId, ownerId: <signed-in user> }`, so anyone else matches
+nothing. Joining looks classes up by code, so the old one gives "No class found with that invite code" from then on; it is how an owner stops a
+removed member rejoining (see "Removing a class member"). **There is still no ban list**: whoever has the *new* code can join, so a removed person
+who is told the new code can come back. Codes come from `Math.random`, not a cryptographic source (6 characters of 31, about 887 million codes);
+fine for a class leaderboard that shows only usernames, but don't rely on a code as a secret for anything more sensitive. Tests:
+`tests/regenerate-invite-code.test.ts` (in-memory class table that throws on a filter it does not understand, and runs the join flow to show the old
+code stops working; mutation-checked: dropping the owner or class scope, the collision check, the retry limit or the page refresh each fails a test)
+and `tests/regenerate-invite-code-button.test.tsx`.
+
+**Not built**: deleting a class, banning a removed member, or
 transferring class ownership. `leaveClass` exists for members but explicitly
 refuses to let an `OWNER` leave (would orphan the class) — noted in that
 function rather than silently allowed.
@@ -2066,6 +2078,12 @@ in app logic — updating them should be a data edit.
   class list showing the new name, no Base UI or server errors, and at 375px nothing overflows. That check also showed the Save button dropping to the
   bottom of the error line when the error was inside the field, so the error now sits under the whole row (like the join form's). Both accounts were
   deleted afterwards (the class went with its owner); every per-user and per-table count matched the pre-test snapshot.
+  Changing a class's invite code was checked with `scratch_ia` (owner), `scratch_ib` (member) and `scratch_ic` (would-be joiner),
+  `scratch-ia@example.com` etc. (2026-10-09), signed in at once on `localhost:3000`, `127.0.0.1:3000` **and `[::1]:3000`** (the dev server answers on
+  IPv6 loopback too, so a third separate session is possible): the owner sees "New code" and the member doesn't, Keep leaves the code as it was,
+  confirming shows a new code on the owner's page without a reload with both members still listed, the old code gives "No class found with that
+  invite code" and joins nothing, the new code joins, the earlier member stays, and at 375px nothing overflows. No server errors. All three were deleted
+  afterwards (the class went with its owner); every per-user and per-table count matched the pre-test snapshot.
   The answer-length fix was checked with `scratch_len` / `scratch-len@example.com` (2026-10-09): all 108 edited questions fetched
   through the real quiz page as that user (the new wording present, 4 choices, no leftover markup), plus a look at one on screen.
   Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the pre-seed snapshot. The check used a

@@ -1,4 +1,4 @@
-import { ConfirmRemoveButton } from "@/components/social/confirm-remove-button";
+import { TwoStepButton } from "@/components/social/two-step-button";
 
 interface RemoveClassMemberButtonProps {
   username: string;
@@ -7,7 +7,7 @@ interface RemoveClassMemberButtonProps {
 
 export function RemoveClassMemberButton({ username, action }: RemoveClassMemberButtonProps) {
   return (
-    <ConfirmRemoveButton
+    <TwoStepButton
       label={`Remove ${username} from this class`}
       question={
         <>
