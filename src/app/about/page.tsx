@@ -60,7 +60,9 @@ export default async function AboutPage() {
           <p>
             {reviewed === 0
               ? "None of them has been checked by a teacher yet, so some may contain mistakes."
-              : `${reviewed.toLocaleString("en-US")} of ${total.toLocaleString("en-US")} have been checked by a person. The rest have not, so some may contain mistakes.`}{" "}
+              : reviewed >= total
+                ? `All ${total.toLocaleString("en-US")} have been checked by a person. A check is not a guarantee, so a mistake can still get through.`
+                : `${reviewed.toLocaleString("en-US")} of ${total.toLocaleString("en-US")} have been checked by a person. The rest have not, so some may contain mistakes.`}{" "}
             They are practice questions in the style of the exams. They are not College Board questions, and College Board has not reviewed them.
           </p>
           <p>

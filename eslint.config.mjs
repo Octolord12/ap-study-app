@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Git worktrees the desktop app creates for sessions; they hold whole extra copies of the repo.
+    ".claude/worktrees/**",
   ]),
 ]);
 

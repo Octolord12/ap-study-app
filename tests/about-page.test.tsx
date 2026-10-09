@@ -51,6 +51,21 @@ describe("About and FAQ", () => {
     expect(container.textContent).not.toMatch(/None of them/);
   });
 
+  it("says everything has been checked, without claiming it is guaranteed, once every item is approved", async () => {
+    mocks.counts = { questions: 1050, reviewedQuestions: 1050, prompts: 105, reviewedPrompts: 105, refreshers: 35, reviewedRefreshers: 35 };
+    const { container } = await renderPage();
+    expect(container.textContent).toContain("All 1,190 have been checked by a person");
+    expect(container.textContent).toContain("A check is not a guarantee, so a mistake can still get through");
+    expect(container.textContent).not.toMatch(/The rest have not/);
+    expect(container.textContent).not.toMatch(/None of them/);
+  });
+
+  it("keeps the 'rest have not' wording while anything is still unreviewed", async () => {
+    mocks.counts = { questions: 1050, reviewedQuestions: 1050, prompts: 105, reviewedPrompts: 105, refreshers: 35, reviewedRefreshers: 34 };
+    const { container } = await renderPage();
+    expect(container.textContent).toContain("1,189 of 1,190 have been checked by a person. The rest have not");
+  });
+
   it("counts the topic refreshers with the questions, because they are written the same way", async () => {
     mocks.counts = { questions: 1050, reviewedQuestions: 200, prompts: 105, reviewedPrompts: 5, refreshers: 35, reviewedRefreshers: 10 };
     const { container } = await renderPage();

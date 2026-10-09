@@ -1488,8 +1488,10 @@ one course first, the same review as questions, a page per topic.
   refresher and were not yet approved; no other column or table was touched, and every per-user and per-table count was
   identical before and after). The live About page then read "2,411 of 2,411 have been checked by a person" (2,216 questions
   and prompts plus 195 refreshers). **Approvals still reset when a refresher's text changes and is reseeded**, so editing
-  one sends it back for review. The About page's wording "The rest have not, so some may contain mistakes" is static and still
-  shows at 100%.
+  one sends it back for review. The About page has three wordings (`app/about/page.tsx`): none reviewed ("None of them has been
+  checked by a teacher yet..."), some reviewed ("N of M ... The rest have not..."), and, since 2026-10-09, all reviewed ("All N
+  have been checked by a person. A check is not a guarantee, so a mistake can still get through."). Tested in
+  `tests/about-page.test.tsx`.
 - **Not done**: no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
 ## Hard sets (harder questions, added alongside)
@@ -1959,6 +1961,8 @@ in app logic — updating them should be a data edit.
   owner raises cheating (leaderboards, titles, classes) as a problem. Browsers
   can't be stopped from showing page data, so "block dev tools" tricks are not an
   option either.
+- **`npm run lint` ignores `.claude/worktrees/**`** (`eslint.config.mjs`). The desktop app creates git worktrees there, each a
+  whole extra copy of the repo, and before the ignore they produced 505 errors that were not this project's code.
 - **Dev/testing gotchas.** (1) This folder produces duplicate "`<name> 2`"
   files (seen in `.next/` and `node_modules/next/dist/docs/`): Turbopack then
   refuses to start ("Unexpected file in persistence directory") and `tsc` reports
