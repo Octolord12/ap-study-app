@@ -1857,9 +1857,16 @@ of this section).
   -1 is a plus sign); and, in a full read of all 169 questions and 15 prompts, a distractor explanation that described the correct answer, one for 1/2 in the sqrt(x) integral, one for pi in the position-from-velocity question, and
   a repeating-decimal distractor (9/10) with a nonsensical explanation (replaced by 3/10, from using the ratio 1/10). **Fixed in the files, and the three fixed after the first seed (u9-mcq-23, u9-mcq-42, u6-mcq-68) were re-seeded the same day** (before it, `verify-bc.ts` showed exactly those three rows differing from the files; after it, 0 differences, and the
   whole-database snapshot was identical to the one taken just before, since the re-seed changed only those rows' choice text). The seed's approval logic needed nothing here because every BC row is unreviewed.
-- **Status**: to do, (1) decide with the owner whether to carry over the approvals the 400 copied items have in Calc AB (a database write by id, like the earlier re-approvals; the files say `reviewed: false`, and the new items always
-  start unreviewed), (2) commit and push (the notebook-paper cards, plain-text-math typesetting and the Coming soon change deploy with it). **Seeding made the course visible on the live site before the code was pushed** (the landing page and the courses list
-  read the shared database): as of 2026-10-09 the live landing page shows a BC card and still lists BC under "Coming soon", and BC pages lack the math-course styling until the push. The same will happen with any course seeded before its code is deployed: push first, or in the same sitting.
+- **Pushed 2026-10-09** (`af4cca8..49a0aa4`, deploy Ready in 28 s): the notebook-paper cards, plain-text-math typesetting and the Coming soon change are live, the landing page says "across six exams" and lists only AP Biology under Coming soon.
+  **Seeding had made the course visible on the live site before the code was pushed** (the landing page and the courses list read the shared database): for a while the landing page showed a BC card and still listed BC under "Coming soon", and BC pages lacked the
+  math-course styling. The same will happen with any course seeded before its code is deployed: push first, or in the same sitting.
+- **Approvals carried over 2026-10-09** (owner's instruction): the 360 copied questions and 40 copied free-response prompts were set `reviewed: true` by id (`approve-bc-copies.ts` in the session scratch folder; a dry run first). A copy qualifies only if its Calc AB original is approved **and**
+  its stored content is identical to that original (stem, choices and their explanations, explanation, difficulty, diagram, concept link; for prompts also type, points, rubric and sample), and the script refuses to continue if any copy fails that, so 360 + 40 was all of them. The 169 new questions, 15 new
+  prompts and all 58 refreshers were still unreviewed at that point, and the live About page read "2,811 of 3,053 have been checked by a person".
+- **Everything else approved 2026-10-09**: the owner said they had reviewed all BC items (none had been approved in `/admin/review` yet, so nothing existed in the database to show it) and asked for the approvals to be set directly. `approve-bc-rest.ts` (session scratch folder; dry run first,
+  169 questions + 15 prompts + 58 refreshers) set one flag per row (`reviewed`, `refresherReviewed`), only on BC rows that were unreviewed **and** whose stored text equalled the content files, and refused to continue if any row differed. Afterwards every BC row is approved, the five other courses and every user's
+  counts were unchanged, the database still matched the files, and the live About page read "All 3,053 have been checked by a person." Re-seeding keeps all of these approvals while the files are unchanged; editing a text and re-seeding sends that row back for review.
+- **Status**: the course is complete and live; nothing is open.
 
 ## Forgot password and email
 
@@ -2108,8 +2115,8 @@ in app logic — updating them should be a data edit.
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
       count. See "AP U.S. History" above.
-- [ ] **Post-launch: AP Calculus BC (2026-10-09, in progress).** A sixth course: Calc AB's units 1-8 copied, 169 new MCQs, 15 new FRQs and 23 new refreshers for the BC-only topics and
-      units 9-10 (parametric, polar, vector-valued functions; series). Written, validated, tested, **seeded** (unreviewed, re-seeded once for three explanation fixes) and checked in the browser; the approvals decision and the push remain. See "AP Calculus BC".
+- [x] **Post-launch: AP Calculus BC (2026-10-09).** A sixth course: Calc AB's units 1-8 copied, 169 new MCQs, 15 new FRQs and 23 new refreshers for the BC-only topics and
+      units 9-10 (parametric, polar, vector-valued functions; series). Written, validated, tested, **seeded and re-seeded once for three explanation fixes, checked in the browser, pushed, and the 400 copied questions and prompts approved by id; the new items and refreshers await the owner's review. See "AP Calculus BC".
 - [x] **Post-launch: class tools, teacher role, parent link, search (2026-10-09).** Rename, hand over, new invite code, delete, block, an admin-granted teacher role gating
       `/teacher`, a student-made read-only parent link, refresher search, secure invite codes, uniform question draws. Three additive migrations. See "Social",
       "Teachers and /teacher", "Parent link" and "Refresher search".
