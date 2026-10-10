@@ -4,6 +4,7 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import PrivacyPage from "@/app/privacy/page";
 import { MINIMUM_AGE } from "@/lib/age";
+import { PARENT_LINK_DAYS } from "@/lib/share/constants";
 import { CRAM_COOKIE, CRAM_DAYS } from "@/lib/study/cram-mode";
 
 describe("privacy page", () => {
@@ -46,6 +47,23 @@ describe("privacy page", () => {
     const { container } = render(<PrivacyPage />);
     expect(container.textContent).toMatch(/timed exam it also keeps your answers/);
     expect(container.textContent).toMatch(/removed when you submit/);
+  });
+
+  it("describes the parent link as it really works: what it shows, what it never shows, how long it lasts, and that the student controls it", () => {
+    const { container } = render(<PrivacyPage />);
+    const text = container.textContent ?? "";
+    expect(text).toMatch(/A link you make for a parent shows whoever has it a read-only summary of your study/);
+    expect(text).toMatch(/never shows your name, your email, your answers, your friends or your classes/);
+    expect(text).toContain(`It works for ${PARENT_LINK_DAYS} days, or until you turn it off`);
+    expect(text).toMatch(/make or turn off a link for a parent, in Settings/);
+  });
+
+  it("says what is stored about a parent link and a class block, and that the link's secret is not kept", () => {
+    const { container } = render(<PrivacyPage />);
+    const text = container.textContent ?? "";
+    expect(text).toMatch(/a fingerprint of the link's secret. We don't keep the secret itself/);
+    expect(text).toMatch(/a class owner blocks you from rejoining their class, a record of that block/);
+    expect(text).toMatch(/block them from rejoining, and sees the usernames of the people they blocked/);
   });
 
   it("describes the cookie the app really sets, and for as long as it really lasts", () => {

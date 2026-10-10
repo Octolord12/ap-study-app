@@ -61,3 +61,12 @@ export async function getUnitUnreviewedContent(courseSlug: string, unitSlug: str
 
   return { course, unit };
 }
+
+// Usernames only (never email or display name), the same rule as every list another user can see.
+export function listTeachers() {
+  return getDb().user.findMany({
+    where: { role: "TEACHER" },
+    orderBy: { username: "asc" },
+    select: { id: true, username: true, _count: { select: { ownedClasses: true } } },
+  });
+}

@@ -21,6 +21,7 @@ vi.mock("@/lib/study/queries", () => ({
 }));
 
 import AboutPage from "@/app/about/page";
+import { PARENT_LINK_DAYS } from "@/lib/share/constants";
 import { SOCIAL_SAFETY_NOTE } from "@/lib/social/copy";
 
 async function renderPage() {
@@ -71,6 +72,13 @@ describe("About and FAQ", () => {
     const { container } = await renderPage();
     expect(container.textContent).toContain("215 of 1,190 have been checked by a person");
     expect(container.textContent).toMatch(/topic refreshers were written with the help of AI/);
+  });
+
+  it("says how a parent can see progress, tied to the real link lifetime, and that it shows no name or email", async () => {
+    const { container } = await renderPage();
+    expect(container.textContent).toContain("There is no separate parent account. A student can make a read-only link in Settings");
+    expect(container.textContent).toContain(`for ${PARENT_LINK_DAYS} days or until they turn it off`);
+    expect(container.textContent).toContain("a username, never a name or email");
   });
 
   it("does not mention price, because the owner chose not to say yet", async () => {

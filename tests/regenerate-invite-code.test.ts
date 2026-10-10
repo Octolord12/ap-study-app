@@ -35,6 +35,7 @@ const mocks = vi.hoisted(() => {
       }),
     },
     classMembership: { upsert: vi.fn(async () => ({})) },
+    classBan: { findUnique: vi.fn(async () => null) }, // joinClass checks the block list; nobody is blocked in these tests
   };
   return { state, db, revalidatePath: vi.fn() };
 });

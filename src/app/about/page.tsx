@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getDb } from "@/lib/db";
 import { MINIMUM_AGE } from "@/lib/age";
+import { PARENT_LINK_DAYS } from "@/lib/share/constants";
 import { feedbackMailto } from "@/lib/site-contact";
 import { SOCIAL_SAFETY_NOTE } from "@/lib/social/copy";
 import { listCourses } from "@/lib/study/queries";
@@ -98,7 +99,7 @@ export default async function AboutPage() {
       <Section label="Progress">
         <p className="reading max-w-[64ch]">
           The Progress page shows days studied, questions answered, accuracy by unit, the topics a student finds hardest, and the time spent
-          answering. There is no separate parent account yet, so the easiest way to see it is to look at it together.
+          answering. There is no separate parent account. A student can make a read-only link in Settings that shows a parent that summary (a username, never a name or email), for {PARENT_LINK_DAYS} days or until they turn it off, or you can look at the page together.
         </p>
       </Section>
 

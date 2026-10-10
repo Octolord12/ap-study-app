@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import { getDb } from "@/lib/db";
 import { requireAdminUserId } from "@/lib/admin/session";
 
@@ -48,4 +49,31 @@ export async function approveUnitContent(
   ]);
   revalidatePath("/admin/review");
   return { approved: questions.count + frqs.count + refreshers.count };
+}
+
+// Teachers are made by an admin, not by signing up or owning a class (see lib/teacher/role.ts). Granting is by username, case-insensitive, like the
+// friend search. Only a STUDENT becomes a TEACHER (the update is scoped to that role), so an admin's role can never be overwritten by a typo, and
+// revoking only touches a TEACHER, so it can never demote an admin.
+export async function grantTeacherRole(formData: FormData): Promise<void> {
+  await requireAdminUserId();
+  const username = String(formData.get("username") ?? "").trim();
+  if (!username) redirect("/admin/teachers?error=missing");
+
+  const db = getDb();
+  const user = await db.user.findFirst({ where: { username: { equals: username, mode: "insensitive" } }, select: { id: true, username: true, role: true } });
+  if (!user) redirect("/admin/teachers?error=not-found");
+  if (user.role === "ADMIN") redirect("/admin/teachers?error=admin");
+  if (user.role === "TEACHER") redirect("/admin/teachers?error=already");
+
+  await db.user.updateMany({ where: { id: user.id, role: "STUDENT" }, data: { role: "TEACHER" } });
+  revalidatePath("/admin/teachers");
+  redirect(`/admin/teachers?granted=${encodeURIComponent(user.username)}`);
+}
+
+export async function revokeTeacherRole(userId: string): Promise<void> {
+  await requireAdminUserId();
+  await getDb().user.updateMany({ where: { id: userId, role: "TEACHER" }, data: { role: "STUDENT" } });
+  revalidatePath("/admin/teachers");
+  // To the bare page, so the "<name> is a teacher now" (?granted=) or an error from an earlier grant doesn't stay on screen after a revoke.
+  redirect("/admin/teachers");
 }

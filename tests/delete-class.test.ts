@@ -92,23 +92,25 @@ describe("deleteClass", () => {
 describe("what deleting a class takes with it", () => {
   const schema = readFileSync("prisma/schema.prisma", "utf8");
 
-  it("memberships are removed by the database with their class, so the delete can't fail on, or orphan, them", () => {
-    const membership = schema.match(/model ClassMembership \{[\s\S]*?\n\}/)?.[0] ?? "";
-    expect(membership).toMatch(/class\s+Class\s+@relation\(fields: \[classId\], references: \[id\], onDelete: Cascade\)/);
+  it("memberships and blocks are removed by the database with their class, so the delete can't fail on, or orphan, them", () => {
+    for (const model of ["ClassMembership", "ClassBan"]) {
+      const body = schema.match(new RegExp(`model ${model} \\{[\\s\\S]*?\\n\\}`))?.[0] ?? "";
+      expect(body, model).toMatch(/class\s+Class\s+@relation\(fields: \[classId\], references: \[id\], onDelete: Cascade\)/);
+    }
   });
 
-  it("nothing else in the schema points at a class, so no one's study data goes with it", () => {
+  it("nothing else in the schema points at a class (only the people in it and the people blocked from it), so no one's study data goes with it", () => {
     const referencing = [...schema.matchAll(/model (\w+) \{([\s\S]*?)\n\}/g)]
       .filter(([, name, body]) => name !== "Class" && /\bClass\??\s+@relation/.test(body))
       .map(([, name]) => name);
-    expect(referencing).toEqual(["ClassMembership"]);
+    expect(referencing).toEqual(["ClassMembership", "ClassBan"]);
   });
 
-  it("the owner is told to delete the class instead of leaving it", async () => {
+  it("the owner is told to hand the class over or delete it, instead of leaving it", async () => {
     mocks.state.userId = "owner1";
     const db = mocks.db as unknown as { classMembership: unknown };
     db.classMembership = { findUnique: async () => ({ role: "OWNER" }), delete: vi.fn() };
-    await expect(leaveClass("c1")).rejects.toThrow("delete the class instead");
+    await expect(leaveClass("c1")).rejects.toThrow("hand the class to another member, or delete it");
     expect((db.classMembership as { delete: ReturnType<typeof vi.fn> }).delete).not.toHaveBeenCalled();
   });
 });

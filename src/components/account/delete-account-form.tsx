@@ -19,8 +19,10 @@ export function DeleteAccountForm({ ownedClasses }: { ownedClasses: OwnedClass[]
   const others = ownedClasses.reduce((n, c) => n + c.otherMembers, 0);
   const them = one ? "it" : "them";
   const classWarning =
-    `You own ${one ? "a class" : `${ownedClasses.length} classes`} (${ownedClasses.map((c) => c.name).join(", ")}). Classes can't be handed over, so deleting your account deletes ${them}` +
-    (others > 0 ? ` for everyone in ${them}: ${others} other ${others === 1 ? "student" : "students"}.` : `, though nobody else is in ${them}.`);
+    `You own ${one ? "a class" : `${ownedClasses.length} classes`} (${ownedClasses.map((c) => c.name).join(", ")}). Deleting your account deletes ${them}` +
+    (others > 0
+      ? ` for everyone in ${them}: ${others} other ${others === 1 ? "student" : "students"}. To keep ${them}, hand ${them} to another member from the class page first.`
+      : `, though nobody else is in ${them}.`);
 
   return (
     <form action={formAction} className="max-w-md space-y-5">

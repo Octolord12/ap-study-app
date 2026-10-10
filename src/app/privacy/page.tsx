@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { MINIMUM_AGE } from "@/lib/age";
+import { PARENT_LINK_DAYS } from "@/lib/share/constants";
 import { privacyMailto } from "@/lib/site-contact";
 import { Page, PageHeader, Section } from "@/components/ui/page";
 
@@ -8,7 +9,7 @@ export const metadata: Metadata = { title: "Privacy" };
 // Every statement here has to stay true of the code. tests/privacy-page.test.tsx
 // ties the cookie name to the code and fails if an analytics package is added;
 // if you add tracking, a new cookie, or a new kind of stored data, update this.
-const UPDATED = "October 5, 2026";
+const UPDATED = "October 9, 2026";
 
 function Points({ items }: { items: React.ReactNode[] }) {
   return (
@@ -48,7 +49,8 @@ export default function PrivacyPage() {
             "Free-response work: the answers you type and the points you give yourself.",
             "If you ask to reset your password: your email address is used to send you a one-time link that works for an hour. We keep only a fingerprint of the link's code, not the code, and that record goes away with your account. We also email you when your password changes.",
             "If you set an exam date for a course: that date.",
-            "If you use friends or classes: who your friends are, and the classes you created or joined.",
+            "If you use friends or classes: who your friends are, the classes you created or joined, and, if a class owner blocks you from rejoining their class, a record of that block.",
+            "If you make a link for a parent: when it was made, when it ends and when it was last opened, and a fingerprint of the link's secret. We don't keep the secret itself.",
             "If you join the waitlist: your email address, and nothing else. It is used once, to tell you when a new subject is ready.",
             "Our host keeps ordinary server logs, which include things like your IP address and the pages you request.",
           ]}
@@ -59,7 +61,8 @@ export default function PrivacyPage() {
         <Points
           items={[
             "Other students see your username, and your XP on leaderboards. They never see your name or your email.",
-            "Friends see your username. Members of a class, including its owner, see the usernames of the class's members.",
+            "Friends see your username. Members of a class, including its owner, see the usernames of the class's members. A class owner can remove people and block them from rejoining, and sees the usernames of the people they blocked.",
+            `A link you make for a parent shows whoever has it a read-only summary of your study: your username, level, streak, the last 7 days, your weakest topics and how you are doing in each unit. It never shows your name, your email, your answers, your friends or your classes. It works for ${PARENT_LINK_DAYS} days, or until you turn it off.`,
             "You can leave leaderboards in Settings. That removes you from them completely.",
             "Your answers and your free-response work are private to your account.",
             "Our email service, Resend, handles the message when we send you a password reset link or a notice that your password changed.",
@@ -94,7 +97,7 @@ export default function PrivacyPage() {
       <Section label="Your choices">
         <Points
           items={[
-            "Leave leaderboards in Settings. Sound and dark mode are in the account menu. You can log out at any time.",
+            "Leave leaderboards, and make or turn off a link for a parent, in Settings. Sound and dark mode are in the account menu. You can log out at any time.",
             "Change your password, or delete your account and everything tied to it, in Settings. To see what we hold about you, have it corrected, or be removed from the waitlist without an account, write to us.",
           ]}
         />

@@ -185,7 +185,10 @@ Full schema: `prisma/schema.prisma`. Summary:
   lives directly on `User`, updated incrementally rather than derived — see
   the Gamification section below for why that's different from the XP/level
   philosophy.
-- **Social**: `Class`, `ClassMembership`, `Friendship`, `User.leaderboardOptOut`.
+- **Social**: `Class`, `ClassMembership`, `Friendship`, `User.leaderboardOptOut`, and `ClassBan` (people an owner removed *and blocked*;
+  cascades with the class and with the person; see "Blocking a removed member").
+- `User.role` is `STUDENT | ADMIN | TEACHER` (see "Teachers and /teacher").
+- `ParentShare` (the hash of a parent link's secret, expiry, revoked-at, last-viewed-at; cascades with the user): see "Parent link".
 - `Enrollment.examDate` (optional, date only): see "Exam date and study plan".
 - `PasswordResetToken` (hash of the emailed code, expiry, used-at, a per-minute slot that is unique
   per user, cascades with the user): see "Forgot password and email".
@@ -376,8 +379,8 @@ error. `tests/cancel-friend-request.test.ts` was mutation-checked the same way (
 `removeClassMember(classId, memberId)` (`lib/social/actions.ts`) is one `deleteMany` scoped three ways: that class, a `MEMBER` row (so the
 owner's `OWNER` row can't be removed this way), and `class: { ownerId: <signed-in user> }` (so only the class's owner can do it; a member,
 or an owner of some other class, matches nothing and nothing happens, with no error). The button is two steps, like unfriending, and
-says plainly that **the invite code still works, so the person can join again**; there is no ban list, but the owner can make a new
-code (next paragraph but one). The shared two-step button is `TwoStepButton` (`components/social/two-step-button.tsx`, called `ConfirmRemoveButton` until the invite-code button needed other wording; its default wording is still a removal's); `RemoveFriendButton`,
+says plainly that **the invite code still works, so the person can join again**; the second way to confirm, "Remove and block", stops them rejoining
+(see "Blocking a removed member"). The shared two-step button is `TwoStepButton` (`components/social/two-step-button.tsx`, called `ConfirmRemoveButton` until the invite-code button needed other wording; its default wording is still a removal's); `RemoveFriendButton`,
 `RemoveClassMemberButton` and `RegenerateInviteCodeButton` only supply the wording. It counts as busy ("Removing…", disabled) only while no error is showing: the failure state commits before the transition's pending flag clears, so a failed removal used to show its error above a still-disabled "Removing…" button for a moment, and the "says nothing was changed" button tests failed about 1 run in 25 when the CPUs were busy (0 in 60 after the fix; it never failed on a quiet machine, so a single full-suite run could not show it). **`ApproveAllButton` (admin) had the same race** (the friend button was modeled on it) and showed up as a full-suite failure about 1 run in 6 on 2026-10-09; it got the same `busy = pending && !failed` and the whole suite then passed 30 runs in a row. If another component pairs `useTransition` with a failure message and a pending label, give it the same guard. Tests: `tests/remove-class-member.test.ts` runs the action against an in-memory membership
 table that throws on a filter it does not understand (mutation-checked: dropping the class, role or owner scope, or the person, each
 fails a test, which needed a case of one person in two classes of the same owner), and `tests/remove-class-member-button.test.tsx`.
@@ -397,10 +400,10 @@ working at once: "The current one stops working right away, so anyone who has no
 stay."). `regenerateInviteCode(classId)` (`lib/social/actions.ts`) picks a code no class uses (`uniqueInviteCode`, now shared with `createClass`: up to
 5 tries, then an error and nothing changes) and writes it with an `updateMany` on `{ id: classId, ownerId: <signed-in user> }`, so anyone else matches
 nothing. Joining looks classes up by code, so the old one gives "No class found with that invite code" from then on; it is how an owner stops a
-removed member rejoining (see "Removing a class member"). **There is still no ban list**: whoever has the *new* code can join, so a removed person
-who is told the new code can come back. Codes (6 characters of 31, about 887 million) come from Node's `crypto.randomInt` (`lib/social/invite-code.ts`; they came from `Math.random` until
+removed member rejoining (see "Removing a class member"). A person who was *blocked* can't join with the new code either (the block is on the person, see "Blocking a removed member"); one who was only removed can come back if told
+the new code. Codes (6 characters of 31, about 887 million) come from Node's `crypto.randomInt` (`lib/social/invite-code.ts`; they came from `Math.random` until
 2026-10-09, whose output can be worked out from earlier output, and `randomInt` is also free of modulo bias), so they can't be predicted. There is still no limit
-on how many codes one visitor can try on the join form (the per-IP rate limit noted under "Limits, known" would cover it), which at this
+on how many codes one visitor can try on the join form (the prepared rate-limit rule under "Known issues" would cover it), which at this
 code size makes guessing impractical rather than impossible; fine for a class leaderboard that shows only usernames, but don't rely on a code as
 a secret for anything more sensitive. `tests/invite-code.test.ts` fails if `Math.random` is used or the characters are not evenly spread (it
 catches a `randomInt(256) % 31` bias, which a looser spread check missed). The real generator and the real custom-quiz and daily-challenge picks were also run
@@ -414,17 +417,34 @@ names the class and how many *other* people lose it ("The 3 other people in it l
 This cannot be undone; a new class would need a new invite code."; "You lose" when the owner is alone). `deleteClass(classId)` (`lib/social/actions.ts`)
 is one `deleteMany` on `{ id: classId, ownerId: <signed-in user> }`, so anyone else matches nothing, then `revalidatePath("/classes")` and
 `redirect("/classes")` (from the button's transition; checked in the browser that the redirect lands cleanly). Memberships go with the class by
-`onDelete: Cascade` on `ClassMembership.class`; **nothing else in the schema points at a class**, so no one's study data is touched. Both facts are
-asserted by `tests/delete-class.test.ts` reading `prisma/schema.prisma` (it fails if the cascade is removed or another model starts referencing
-`Class`, which is the cue to decide what deleting a class should do to it). Other tests: the action against an in-memory class table that throws on a
+`onDelete: Cascade` on `ClassMembership.class`; **nothing else in the schema points at a class except `ClassBan`** (blocks; also cascading, added 2026-10-09), so no one's study data is touched. Both facts are
+asserted by `tests/delete-class.test.ts` reading `prisma/schema.prisma` (it fails if either cascade is removed or another model starts referencing
+`Class`, which is the cue to decide what deleting a class should do to it; it did its job when `ClassBan` was added and was updated deliberately). Other tests: the action against an in-memory class table that throws on a
 filter it does not understand (mutation-checked: dropping the owner or class scope, or the list refresh, each fails a test), and
-`tests/delete-class-button.test.tsx` (wording for one, several and no other members). The owner-can't-leave error now says "delete the class
-instead". **Account deletion is unchanged**: it still deletes owned classes for everyone in them (see "Settings: change password and delete account").
+`tests/delete-class-button.test.tsx` (wording for one, several and no other members). The owner-can't-leave error now says "hand the class to another member, or delete it". **Account deletion is unchanged**: it still deletes owned classes for everyone in them (see "Settings: change password and delete account").
 
-**Not built**: banning a removed member, or
-transferring class ownership. `leaveClass` exists for members but explicitly
-refuses to let an `OWNER` leave (would orphan the class) — noted in that
-function rather than silently allowed.
+**Handing a class to another member** (2026-10-09, no migration): beside "Remove" on each *member* row the owner sees "Make owner" (two steps: "Make X the owner of this
+class? You become a regular member: you could no longer rename it, change its code, remove people or delete it. They could hand it back.").
+`transferClassOwnership(classId, newOwnerId)` (`lib/social/actions.ts`) runs one **interactive transaction** (the first use of `$transaction` in this
+codebase; checked read-only against the Neon adapter first, including that a throw propagates): an `updateMany` on `Class` scoped to
+`{ id, ownerId: <signed-in user>, memberships: { some: { userId: newOwnerId, role: "MEMBER" } } }` (so only the owner, only to a current plain member, so not a
+stranger, a non-member, a blocked person or someone else's class), then the new owner's membership becomes `OWNER` and the old owner's `MEMBER`. If anything
+fails part-way nothing changes (a half swap would leave two owners or none); `tests/transfer-ownership.test.ts` uses an in-memory store with rollback and
+is mutation-checked six ways (owner scope, member requirement, class scope, no transaction, old owner not demoted, new owner not promoted). Handing it
+to oneself does nothing. The delete-account warning no longer says classes can't be handed over; it now says to hand them over first to keep them.
+`leaveClass` still refuses to let an `OWNER` leave (it would orphan the class); its error says to hand the class to another member or delete it.
+
+**Blocking a removed member** (2026-10-09, migration `20261009160100_add_class_ban`): the Remove confirm has two ways to confirm: "Yes, remove" (they can rejoin with
+the invite code) and "Remove and block". `TwoStepButton` takes an optional `alternate` confirm for this. `ClassBan(classId, userId, bannedAt)` has a composite
+key and cascades with the class and with the person's account. `blockClassMember(classId, memberId)` is one transaction: `deleteMany` of the membership
+(scoped to that class, a `MEMBER` row, and `class: { ownerId: <signed-in user> }`), and only if that removed someone, an idempotent `upsert` of the ban, so it can't block
+the owner, a non-member (no pre-emptive blocks) or a person in someone else's class, and a failure after the removal leaves the member in. **`joinClass` checks the ban and
+gives the same "No class found with that invite code" as a wrong code**, so a blocked person is not told a class exists or that they were blocked; the block is on the
+person, so a new invite code does not lift it. The owner sees a "Blocked" list (usernames only, `getClassBans`, scoped to the owner in the query) with "Unblock"
+(`unblockClassMember`, owner-scoped; it lets them join again, it does not add them back). A person blocked in two classes of the same owner stays blocked in the
+other when one is unblocked (that case needed its own test). `tests/class-ban.test.ts` (mutation-checked 12 ways), `tests/class-bans-query.test.ts`, and the button tests.
+
+**Not built** from the original class-tools list: nothing is left. (Ideas not asked for: a per-person note on why someone was blocked, and an owner-visible history.)
 
 **Bug found and fixed post-launch**: `sendFriendRequest` looked up the target
 by exact-case `username` (`findUnique`), but signup (`auth/schema.ts`) never
@@ -553,8 +573,8 @@ non-optional). DBQ documents are original, invented-but-plausible excerpts
 with realistic attributions (not verbatim quotes from real historical
 sources or from any College Board exam) to stay clearly original while
 still exercising the document-analysis skill. `examFormat` in
-`content/ap-world/course.json` reflects the *current* (pre-May-2027) exam
-structure per the table below, not the upcoming change.
+`content/ap-world/course.json` matches the structure the College Board has published for May 2027 (3 SAQ, 1 DBQ,
+1 LEQ; see the verified table near the end), which is also what the exam builder draws.
 
 **Known gap this surfaced (fixed 2026-10-05)**: `FRQPrompt` had no field distinguishing
 SAQ/DBQ/LEQ, so the exam simulator could not give World History the 3 SAQ + 1 DBQ + 1 LEQ the
@@ -586,9 +606,10 @@ had been separately discussed but never built — sympy-checking each answer
 inline satisfies the same "verified programmatically" requirement without
 that extra tooling investment. No changes needed to `examFormat` in
 `content/ap-calc/course.json` beyond what was already set from the verified
-course-info table (42 MCQ + 6 FRQ, 3h10m) — note the table's flagged
-**May 2027 format change** isn't yet published in enough detail to encode,
-so this remains the current-format data until College Board publishes specifics.
+course-info table (42 MCQ + 6 FRQ, 3h10m). **Update 2026-10-09:** the College Board's AP Central page now lists exactly that
+(42 MCQ in 1h40, 6 FRQ in 1h30) for the May 2027 exam and says the multiple-choice count and timing "have also been updated" and that course content has not
+changed, so the data already matched; only the *per-section* minutes were off (105 and 85, now 100 and 90; students see them on the exam intro page, the exam clock uses
+the total only). See the verified table near the end.
 
 **AP Physics 1 — content not yet started; diagram infra built first.** Asked
 the owner how to scope this given Physics 1 leans heavily on diagrams
@@ -1204,17 +1225,19 @@ announced once, the first time a unit is conquered, via `RewardToast` and a
 `RewardToast`, so anything awarded at submission time (Boss Slayer included)
 was never shown. It's rendered on the result screen now.
 
-### /teacher (skeleton)
+### Teachers and `/teacher`
 
-`/teacher` is gated to **anyone who owns a class** (`requireOwnedClasses`;
-everyone else gets `notFound()`). There is **no teacher role**: classes are open
-to every student, so "owns a class" is the only distinction that exists. Before
-real student data goes in here, replace this with an explicit role. It's
-reached from the "Teacher view" button on a class page you own, not the nav.
-The "Class-wide weaknesses" panel takes `ClassWeakness[]` and shows an honest
-empty state (no invented numbers) until an aggregation exists; "Assign Daily 5
-set" is a disabled button that says it isn't built. FERPA/COPPA considerations
-(see the Social section) apply the moment per-student data appears here.
+`User.role` is `STUDENT | ADMIN | TEACHER` (migration `20261009160000_add_teacher_role`: one `ALTER TYPE "Role" ADD VALUE 'TEACHER'`). **Only a TEACHER or an ADMIN
+can open `/teacher`, and only they see the "Teacher view" button on a class page**; owning a class is no longer enough (classes stay open to every student).
+`lib/teacher/role.ts` has `isTeacherRole`, `requireTeacherUserId()` (session first, then a database read of the role, since the role is not on the session; anyone else
+gets `notFound()`, the admin pages' convention) and `userIsTeacher`; `requireTeacherClasses()` (`lib/teacher/classes.ts`) returns the teacher's own classes, possibly
+none, and the page then says to create one on the Classes page instead of 404-ing. **Teachers are made by an admin** at `/admin/teachers` (a "Teachers" button on the
+content-review index): `grantTeacherRole` takes a username (case-insensitive, like the friend search) and is scoped to a `STUDENT` so it can never overwrite an admin's
+role (it says so instead), `revokeTeacherRole` is scoped to a `TEACHER` so it can't demote an admin (and redirects to the bare page, so an earlier "was made a teacher" message doesn't linger); classes a revoked teacher owns stay as they are. Both are
+admin-only and the page lists usernames only. **The role exposes no student data**: the "Class-wide weaknesses" panel still takes `ClassWeakness[]` and shows an honest
+empty state until an aggregation exists, and "Assign Daily 5 set" is still a disabled button. FERPA/COPPA considerations (see the Social section) apply the moment
+per-student data appears here. Tests: `tests/teacher-role.test.ts` (the gate, including that a student who owns a class gets a 404 and their classes are never read) and
+`tests/admin-teachers.test.ts` (in-memory user table; mutation-checked eight ways). Promoting someone to ADMIN is still a direct database write; teachers are not.
 
 ### Applying migrations here
 
@@ -1225,6 +1248,12 @@ save it as `prisma/migrations/<timestamp>_<name>/migration.sql`, review it, then
 `npx prisma migrate deploy --config prisma7.config.ts` (applies only pending
 migrations; never resets). Vercel does **not** run migrations on deploy, so
 apply a migration *before* pushing code that needs it.
+
+**The 2026-10-09 batch is three additive migrations**, in this order: `20261009160000_add_teacher_role` (enum value), `20261009160100_add_class_ban` (table) and
+`20261009160200_add_parent_share` (table). Their SQL was generated offline with `migrate diff` from the schema as it stood before each change (**don't run `prisma format`
+on `schema.prisma`: it re-aligned dozens of unrelated lines and made a noisy diff**; restore it and edit by hand). Apply all three *before* pushing code that reads them:
+the new code queries `ClassBan` on every join and `ParentShare` on Settings, so against an un-migrated database those pages fail.
+**Applied to the shared database on 2026-10-09** with `migrate deploy` (status checked first: exactly these three were pending; existing tables and every real user's rows were identical before and after). The same day the Calculus AB `Course.examFormat` was updated with one scoped `updateMany` (section minutes 105/85 to 100/90) and compared with the file; compare a JSONB column with a key-order-independent equality (`node:util` `isDeepStrictEqual`), not `JSON.stringify`, because Postgres reorders keys.
 
 Order for a change that adds a column *and* needs content re-seeded (the `FRQPrompt.type` change
 was one): migrate, then `npm run content:seed`, then push. The new column has a default, so the
@@ -1361,10 +1390,11 @@ From a parent's-eye review of the app (2026-10-05).
   math/physics, calculated answers were checked with software. The "checked by a person" count
   is read from the `reviewed` flags, so it stays true on its own. **Owner: confirm you are happy
   with the AI-disclosure sentence.**
-- Not done from the review (needs decisions or something other than code): exam date and study
-  plan (small migration), read-only parent link (new table), self-serve change password / delete
-  account, forgot password and parent email (need an email service), real teacher review,
-  testimonials, a real `/teacher` role, refresher videos (refresher *notes* are built, see "Topic refreshers"), an AI check for free-response answers.
+- Not done from the review (needs decisions or something other than code): forgot password and parent email
+  (need an email service and a domain), real teacher review, testimonials, refresher videos (refresher *notes* are built,
+  see "Topic refreshers"), an AI check for free-response answers (sends a minor's writing to a third party, so it waits on the COPPA/FERPA
+  review and a cost decision). **Since built:** exam date and study plan, self-serve change password / delete account, the read-only parent link
+  (see "Parent link") and a real teacher role (see "Teachers and /teacher").
 - Verified signed in end to end on 2026-10-05 with a scratch account (deleted afterwards): exam
   resume after reload, auto-submit at zero carrying the saved answers, the Progress sections,
   and the exam breakdown link. The About page and part-2 components have unit tests and were
@@ -1415,11 +1445,12 @@ Both live on `/settings` (`ChangePasswordForm`, `DeleteAccountForm`), backed by
   cascades (answers, spaced repetition, XP, badges, boss results, exams, free-response work,
   friendships, memberships, **and any class they own**), plus the `WaitlistSignup` row with
   the same email (it isn't tied to a user). Then `signOut` redirects to `/account-deleted`.
-- **Owned classes are deleted for everyone in them.** Classes can't be handed over, and an
-  owner can't leave one, so blocking would trap the owner. The form names each owned class
-  and how many other students it affects before they confirm. If class ownership transfer
-  is ever built, revisit this (deleting a class on purpose, built 2026-10-09, doesn't change it:
-  an owner who deletes their account still takes their classes with them).
+- **Owned classes are deleted for everyone in them.** An owner can't leave a class, so blocking
+  would trap them. The form names each owned class and how many other students it affects before
+  they confirm, and (since ownership transfer was built, 2026-10-09) tells them to hand a class to
+  another member from its page first if they want it to continue. Deleting a class on purpose
+  doesn't change this: an owner who deletes their account still takes their classes with them.
+  A student's `ParentShare` and `ClassBan` rows go with the account (cascades).
 - **Sign-in tokens die with the password.** Sessions are stateless JWTs, so on their own
   they stayed valid on other devices after a password change (and after the account was
   deleted). Now each token carries a **stamp**, a fingerprint of the account's password hash
@@ -1565,6 +1596,47 @@ one course first, the same review as questions, a page per topic.
   `tests/about-page.test.tsx`.
 - **Not done**: no refresher videos; no search. Whether a student has read a refresher is not tracked.
 
+## Parent link (read-only progress for a parent)
+
+Built 2026-10-09 (the "read-only parent link" from the review follow-ups). **A student makes it; a parent needs no account.**
+
+- **Data**: `ParentShare` (migration `20261009160200_add_parent_share`): `tokenHash` (unique), `expiresAt`, `revokedAt`, `lastViewedAt`, cascades with the user.
+  **Only the hash of the secret is stored** (`lib/share/token.ts`: SHA-256 over `parent-share:v1:<token>`, so it can never equal a password-reset hash), so a copy of
+  the table is not a set of working links. The secret is 32 random bytes as base64url (43 characters).
+- **Student side** (Settings, "Share with a parent", `ParentShareManager`): "Make a link" / "Make a new link" and "Turn off". The full link is shown **once**, right
+  after it is made (afterwards only the hash exists), with a Copy button that does not claim "Copied" if the browser refuses the clipboard. `createParentShare`
+  (`lib/share/actions.ts`) revokes every earlier link and creates the new one in **one transaction** (so there is at most one live link and a failed create leaves the
+  old one on) and builds the address from `siteUrl()`, configuration and never the request's Host header (the same rule as the reset email). `revokeParentShare`. Both act
+  only on the session's own links. **`PARENT_LINK_DAYS = 90`** (`lib/share/constants.ts`) is stated to the student, on the About page and on the privacy page, from one
+  constant. Settings shows when the link was made, when it ends and when it was last opened (`recordShareView`, written at most once an hour so a link preview or a refresh
+  loop isn't a write each time).
+- **Parent side** `/share/<token>` (`app/share/[token]/page.tsx`, public): `findUsableShare` returns only `{ id, expiresAt, userId, username }` for a live link, and **a
+  malformed, unknown, revoked or expired link are all the same 404** (a malformed token never reaches the database). It shows the username (never name or email), level and
+  XP, streak, the last 7 days, weakest topics and per-course accuracy and unit mastery. **No links, forms, buttons or inputs** (a parent has no account, so the list components
+  take `links={false}`; the page test asserts none exist) and no answers, friends, classes, email or free-response text. `robots: noindex`, `referrer: no-referrer`,
+  `dynamic = "force-dynamic"`. A failed view-write doesn't stop the page.
+- **One loader for both pages**: `loadProgressCore(userId)` (`lib/study/progress-data.ts`) builds the numbers for the student's Progress page and the parent's page, so they
+  can't drift apart. The Progress page was refactored onto it; `tests/progress-data.test.ts` pins the wiring (unit rows, weak topics, week entries, and that every query is
+  scoped to the student). `describeCourseAccuracy` is the shared sentence. Student-voice wording ("Loading your week", "Once you have answered") has a neutral version for a parent.
+- **Privacy**: the privacy page says what a link shows and never shows, that it lasts 90 days or until turned off, and what is stored (when made, ends, opened, and a fingerprint of
+  the secret); the About page's Progress paragraph points to it. Tests tie the 90 to the constant.
+- **Limits, known**: anyone who holds the link can read it until it ends (the student's settings say "send it only to someone you trust"); the address is in the host's server logs
+  like any path; "last opened" is the only view history; the site header on the parent's page is the normal one (it shows Log in).
+- **Tests**: `share-token`, `share-actions` (in-memory store with transactions), `share-queries`, `share-page` (plants no name or email in its data and requires none in the
+  output), `parent-share-manager`, `progress-data`, `progress-lists-readonly`. 22 mutations across them were all caught (the first attempt at the clipboard one was a no-op that
+  proved nothing, so it was redone).
+
+## Refresher search
+
+`/courses/<course>/search?q=` (2026-10-09, no migration): a plain GET form ("Search the refreshers", works without JavaScript) on the course page and the results page.
+`lib/study/refresher-search.ts` reads the course's refreshers (at most about 46, roughly 70 KB) and **filters in code**, not with a database `contains`, which is wrong in both
+directions: it matches TeX source such as "dfrac", and it misses a phrase that crosses markdown such as "the **mean** value". Matching is against a readable version
+(`toPlainText`: no headings, emphasis, `$`, TeX commands or braces). Results put topic-name matches first, then course order, at most 30, each with a snippet of about 170
+characters around the first match; the matched words are wrapped in `<mark>` by React from pieces of plain text, never as HTML (a test plants `<img onerror>` and `<script>`).
+The query is 2 to 60 characters after trimming (`normalizeSearchQuery`) and is never handed to the database. Checked read-only against the 195 real refreshers: about 160 ms a
+search, TeX terms and an injection-looking string match nothing, and every hit stays in the course asked for. Tests: `refresher-search`, `refresher-search-results`
+(30; mutation-checked seven ways). Not done: search across courses or over questions.
+
 ## Hard sets (harder questions, added alongside)
 
 All four courses have one: 15 MCQs and 2 FRQs per unit in `questions/unit-N-hard.json` and
@@ -1699,9 +1771,8 @@ as World History, so no engine change: the exam builder already draws SAQ/DBQ/LE
   one SAQ and one 6-point LEQ as `frq-4..5`), plus a course pool of 4 DBQs + 4 LEQs
   (`frqs/dbq-leq-pool.json`, `ap-ush-dbq-1..4`, `ap-ush-leq-1..4`). Totals: **405 MCQs** (47 easy,
   137 medium, 221 hard) and **53 free-response** (36 SAQ, 4 DBQ, 13 LEQ), the same as World.
-  Exam format: 55 MCQ + 3 SAQ + 1 DBQ + 1 LEQ, 195 minutes, the *current* structure; the College Board
-  has announced revisions to the short-answer and long-essay questions for May 2027 but not published
-  details, so this stays as is until it does.
+  Exam format: 55 MCQ + 3 SAQ + 1 DBQ + 1 LEQ, 195 minutes. The College Board's May 2027 changes (all 3 SAQs required, one required LEQ,
+  a DBQ over a wider range) are published and this is already that structure; see the verified table near the end.
 - **Authoring**: `scripts/content-authoring/ap-us-history/` (`common.py`, `uN_base.py`, `uN_hard.py`,
   `pool.py`). Edit the scripts, not the JSON. `authoring.Bank` gained a `suffix` argument (default
   `"-hard"`, so the other courses are unchanged) so a core set writes `unit-N.json`.
@@ -1844,10 +1915,10 @@ in app logic — updating them should be a data edit.
 | Course | Units | Exam format | Recent/upcoming change |
 |---|---|---|---|
 | AP Computer Science A | 10 units (Primitive Types → Recursion) | 42 MCQ + 4 FRQ, 3h | Stable. |
-| AP World History: Modern | 9 units, c.1200 CE–present | 55 MCQ + 3 SAQ (95min) + 1 DBQ + 1 LEQ (100min), 3h15m | **May 2027**: all 3 SAQs required (was pick 1 of 3), LEQ is a single required prompt (was pick 1 of 3). |
-| AP Calculus AB | 8 units | Currently 42 MCQ + 6 FRQ, 3h10m | **May 2027**: College Board has confirmed MCQ count/timing will change; exact numbers not yet published — check before hardcoding exam-sim config for that year. |
+| AP World History: Modern | 9 units, c.1200 CE–present | 55 MCQ + 3 SAQ (95min) + 1 DBQ + 1 LEQ (100min), 3h15m | **May 2027, published** (AP Central "AP History Exam Updates", checked 2026-10-09): all 3 SAQs required (Q1 secondary text source(s), Q2 primary text source, Q3 primary or secondary *non-text* source, each a different period), one required LEQ, DBQ over a wider chronological range, multiple choice and rubrics unchanged, **section timing not specified**. Our data already has 3 SAQ + 1 DBQ + 1 LEQ; our SAQs are text only, so a non-text (image or map) Q3 can't be modeled (diagram support covers only graphs and force diagrams). |
+| AP Calculus AB | 8 units | 42 MCQ (Part A 29 questions, 62 min, no calculator; Part B 13, 38 min, graphing calculator) in 1h40, then 6 FRQ (Part A 2, 30 min, graphing calculator; Part B 4, 60 min, none) in 1h30; 3h10m | **May 2027, published** (AP Central AP Calculus AB exam page, checked 2026-10-09; the page text said the multiple-choice count and timing "have also been updated" and course content is unchanged). Our data matched in counts and total; per-section minutes corrected to 100 and 90. The calculator and no-calculator parts are not modeled. These numbers came from the page through a summarizer, so look at AP Central before relying on them for anything exact. |
 | AP Physics 1 | 8 units (Fluids added as Unit 8) | 40 MCQ + 4 FRQ | **Already redesigned for 2024-25** — if referencing old prep material, it may predate this. |
-| AP U.S. History | 9 units, 1491 to the present | 55 MCQ + 3 SAQ (all required) + 1 DBQ + 1 LEQ, 3h15m | **May 2027**: short-answer and long-essay questions revised (the College Board has not published details). |
+| AP U.S. History | 9 units, 1491 to the present | 55 MCQ + 3 SAQ (all required) + 1 DBQ + 1 LEQ, 3h15m | **May 2027, published**: the same changes as World History above (see that row). |
 
 ## Milestone status
 
@@ -1973,6 +2044,9 @@ in app logic — updating them should be a data edit.
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
       count. See "AP U.S. History" above.
+- [x] **Post-launch: class tools, teacher role, parent link, search (2026-10-09).** Rename, hand over, new invite code, delete, block, an admin-granted teacher role gating
+      `/teacher`, a student-made read-only parent link, refresher search, secure invite codes, uniform question draws. Three additive migrations. See "Social",
+      "Teachers and /teacher", "Parent link" and "Refresher search".
 
 ## Known issues / follow-ups
 
@@ -2035,6 +2109,17 @@ in app logic — updating them should be a data edit.
 - **No middleware-level route protection** — see the proxy.ts gotcha above.
   Every protected page must call `requireUserId()` itself; there's no fallback
   if one forgets to.
+- **No rate limit on sign-in, sign-up, password reset or joining a class (rule prepared, not applied).** Vercel's Hobby plan allows **one** rate-limit rule and three custom
+  rules in all (Vercel docs, checked 2026-10-09; confirm in the dashboard), so one rule has to cover every sensitive route. Server Actions POST to the page's own path and
+  Auth.js has its own endpoint (a password guess can go straight to `/api/auth/callback/credentials`), so the rule matches POSTs to `^/(login|signup|forgot-password|reset-password|classes|api/auth/.*)$`
+  at 300 requests per 60 seconds per IP. That is generous on purpose: a whole class can share one school IP (30 students signing in is roughly 90 POSTs), and counters are per region. At
+  that rate guessing a 6-character class code (about 887 million) or a bcrypt-checked password is still hopeless. Changing a project's firewall is a security setting, so it is the
+  owner's to run, not an agent's. Stage it, then publish:
+  ```bash
+  vercel firewall rules add "Rate limit sign-in, sign-up, password reset and class joining" --condition '{"type":"method","op":"eq","value":"POST"}' --condition '{"type":"path","op":"re","value":"^/(login|signup|forgot-password|reset-password|classes|api/auth/.*)$"}' --action rate_limit --rate-limit-requests 300 --rate-limit-window 60 --rate-limit-keys ip --yes
+  vercel firewall publish
+  ```
+  `vercel firewall rules list` shows it (the project has no custom rules today); `vercel firewall rules remove "<name>"` then `publish` undoes it.
 - **Only one admin** (`viraj1`, promoted 2026-10-05), so `/admin/review` is reachable by the
   owner only. Promoting anyone else is a direct DB write: needs explicit sign-off first.
 - **The authored content still has the correct answer in slot A ~60% of the
@@ -2115,6 +2200,23 @@ in app logic — updating them should be a data edit.
   the database just before cleanup, the deleted class's two memberships were gone while the member's account still existed (the cascade, shown for real).
   A second class showed the confirm at 375px with no overflow. Both accounts were deleted afterwards; every per-user and per-table count matched the
   pre-test snapshot.
+  The 2026-10-09 batch (teacher role, hand-over, block list, parent link, refresher search, Calculus exam minutes) was checked with four scratch accounts,
+  `scratch_pa` (class owner, later teacher), `scratch_pb` and `scratch_pc` (members) and `scratch_pd` (**temporarily promoted to ADMIN by a script that refuses any other
+  username**, to use `/admin/teachers`), `scratch-pa@example.com` etc., signed in at once on `localhost:3000`, `127.0.0.1:3000`, `[::1]:3000` and `admin.localhost:3000`.
+  **Gotcha: client-side buttons are dead on every origin except `localhost`** (pages load and plain forms work, but the dev server doesn't serve its client code to other origins:
+  console shows failing `/_next/hmr` websockets and the page never hydrates), so a multi-account test needs `allowedDevOrigins: ["127.0.0.1", "[::1]", "admin.localhost"]` in
+  `next.config.ts` **temporarily** and a dev-server restart (cookies persist); it was reverted before committing (`git diff next.config.ts` is empty). Checked: a student who owns a
+  class gets the not-found page at `/teacher` and no "Teacher view"; the admin refused to make another admin a teacher, granted a student in mixed case with spaces, revoked, and
+  **the page kept saying "<name> is a teacher now" after a revoke (stale `?granted=`), found only in the browser and fixed with a redirect to the bare URL**; the hand-over both
+  ways (roles swap, the old owner loses owner controls); "Remove and block" (the member leaves, "Blocked (1)" lists them, their invite-code attempt gives exactly the wrong-code
+  message), Unblock (they can join again, they were not added back); a parent link made in Settings (shown once, 90 days, "Last opened" appears after it is viewed), fetched
+  **signed out with `curl`** (HTTP 200, noindex and no-referrer meta, the username and the numbers match the student's Progress page, the real display name and email appear nowhere,
+  no links into the app), a new link killing the old one (404), Turn off killing the new one (404), garbage and short tokens (404); search (highlighting, no-result, too-short and TeX-term
+  states, click-through); the Calculus exam intro page now reading 1 h 40 min and 1 h 30 min; and, at 375px, the Progress page (refactored onto `loadProgressCore`), the Settings
+  section with a link showing, the parent's page, the member rows with the longest confirm open, and the search results, none overflowing. All four were deleted afterwards (the
+  class, memberships and the three link rows cascaded; the `scratch_pd` ADMIN went with its account); every per-user and per-table count, including the new tables, matched the
+  post-migration snapshot. A parent link made on the dev server is built from `siteUrl()`, which defaults to the production address, so it points at the live site; to test locally take
+  its token and open `http://localhost:3000/share/<token>`.
   The answer-length fix was checked with `scratch_len` / `scratch-len@example.com` (2026-10-09): all 108 edited questions fetched
   through the real quiz page as that user (the new wording present, 4 choices, no leftover markup), plus a look at one on screen.
   Deleted afterwards (not promoted to ADMIN); every per-user and per-table count matched the pre-seed snapshot. The check used a

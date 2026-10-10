@@ -101,3 +101,13 @@ export async function getClassDetail(classId: string) {
     },
   });
 }
+
+// The people an owner has blocked. Scoped to the owner in the query itself, so a member or a stranger gets an empty list even if the page
+// asked by mistake. Usernames only, like every list another user can see.
+export function getClassBans(classId: string, ownerId: string) {
+  return getDb().classBan.findMany({
+    where: { classId, class: { ownerId } },
+    orderBy: { bannedAt: "desc" },
+    select: { userId: true, bannedAt: true, user: { select: { username: true } } },
+  });
+}

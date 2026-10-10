@@ -60,6 +60,48 @@ export async function renameClass(classId: string, formData: FormData): Promise<
   redirect(`/classes/${classId}`);
 }
 
+// Remove a member AND stop them rejoining with the invite code. Both writes happen together or not at all, and only when the signed-in user
+// owns the class and the person is currently a plain MEMBER (so it can't block the owner, a stranger, or someone in another class).
+export async function blockClassMember(classId: string, memberId: string): Promise<void> {
+  const userId = await requireUserId();
+
+  await getDb().$transaction(async (tx) => {
+    const removed = await tx.classMembership.deleteMany({ where: { classId, userId: memberId, role: "MEMBER", class: { ownerId: userId } } });
+    if (removed.count === 0) return;
+    await tx.classBan.upsert({ where: { classId_userId: { classId, userId: memberId } }, create: { classId, userId: memberId }, update: {} });
+  });
+  revalidatePath(`/classes/${classId}`);
+  revalidatePath("/classes");
+}
+
+export async function unblockClassMember(classId: string, blockedUserId: string): Promise<void> {
+  const userId = await requireUserId();
+
+  // Unblocking lets them join again with the invite code; it does not add them back. Only the class's owner can.
+  await getDb().classBan.deleteMany({ where: { classId, userId: blockedUserId, class: { ownerId: userId } } });
+  revalidatePath(`/classes/${classId}`);
+}
+
+export async function transferClassOwnership(classId: string, newOwnerId: string): Promise<void> {
+  const userId = await requireUserId();
+  if (newOwnerId === userId) return;
+
+  // The class's owner and both memberships' roles change together or not at all (a half-done swap would leave a class with two owners, or
+  // none). It only moves a class this user owns, and only to someone who is currently a plain member of it, so a stranger, a non-member, a
+  // blocked person or someone else's class matches nothing and nothing changes.
+  await getDb().$transaction(async (tx) => {
+    const moved = await tx.class.updateMany({
+      where: { id: classId, ownerId: userId, memberships: { some: { userId: newOwnerId, role: "MEMBER" } } },
+      data: { ownerId: newOwnerId },
+    });
+    if (moved.count === 0) return;
+    await tx.classMembership.updateMany({ where: { classId, userId: newOwnerId }, data: { role: "OWNER" } });
+    await tx.classMembership.updateMany({ where: { classId, userId }, data: { role: "MEMBER" } });
+  });
+  revalidatePath(`/classes/${classId}`);
+  revalidatePath("/classes");
+}
+
 export async function regenerateInviteCode(classId: string): Promise<void> {
   const userId = await requireUserId();
   const db = getDb();
@@ -90,6 +132,10 @@ export async function joinClass(formData: FormData): Promise<void> {
   const targetClass = await db.class.findUnique({ where: { inviteCode } });
   if (!targetClass) redirect("/classes?error=not-found");
 
+  // Someone the owner blocked gets the same answer as a wrong code: it doesn't tell them there is a class, or that they were blocked.
+  const blocked = await db.classBan.findUnique({ where: { classId_userId: { classId: targetClass.id, userId } } });
+  if (blocked) redirect("/classes?error=not-found");
+
   await db.classMembership.upsert({
     where: { classId_userId: { classId: targetClass.id, userId } },
     create: { classId: targetClass.id, userId, role: "MEMBER" },
@@ -107,7 +153,7 @@ export async function leaveClass(classId: string): Promise<void> {
   const membership = await db.classMembership.findUnique({ where: { classId_userId: { classId, userId } } });
   if (!membership) return;
   if (membership.role === "OWNER") {
-    throw new Error("The class owner can't leave -- delete the class instead");
+    throw new Error("The class owner can't leave -- hand the class to another member, or delete it");
   }
 
   await db.classMembership.delete({ where: { classId_userId: { classId, userId } } });

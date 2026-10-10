@@ -11,6 +11,7 @@ import { isCramModeOn } from "@/lib/study/cram-mode";
 import { toIsoDate } from "@/lib/study/exam-plan";
 import { ExamCountdown } from "@/components/study/exam-countdown";
 import { ExamDateForm } from "@/components/study/exam-date-form";
+import { RefresherSearchForm } from "@/components/study/refresher-search-form";
 import { describeExamFormat, formatDuration } from "@/lib/content/exam-format";
 import { Button } from "@/components/ui/button";
 import { Bubbles, WeightBar } from "@/components/ui/meter";
@@ -82,6 +83,10 @@ export default async function CoursePage({ params }: { params: Promise<{ courseS
           </div>
         </Section>
       ) : null}
+
+      <Section label="Search" note="Across every topic's refresher.">
+        <RefresherSearchForm courseSlug={course.slug} />
+      </Section>
 
       <Section label="Units" note="Weight is the share of the exam each unit makes up.">
         <RuledList>

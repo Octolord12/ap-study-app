@@ -2,16 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
-import { computeUnitMastery, PROFICIENT_MIN_ACCURACY, PROFICIENT_MIN_COVERAGE } from "@/lib/study/mastery";
-import { getAllBadgeStatuses, getUserGamificationStats, getUserUnitTitles } from "@/lib/gamification/queries";
+import { PROFICIENT_MIN_ACCURACY, PROFICIENT_MIN_COVERAGE } from "@/lib/study/mastery";
+import { getAllBadgeStatuses, getUserUnitTitles } from "@/lib/gamification/queries";
+import { describeCourseAccuracy, loadProgressCore } from "@/lib/study/progress-data";
 import { groupTitlesByCourse } from "@/lib/gamification/titles";
 import { isCramModeOn } from "@/lib/study/cram-mode";
 import { CramToggle } from "@/components/study/cram-toggle";
 import { UnitMasteryList } from "@/components/study/unit-mastery-list";
 import { WeakTopicsList } from "@/components/study/weak-topics-list";
 import { WeekActivity } from "@/components/study/week-activity";
-import { daysAgo, toActivityEntries } from "@/lib/study/week-activity";
-import { weakTopics } from "@/lib/study/weak-topics";
 import { XpBar } from "@/components/ui/meter";
 import { Page, PageHeader, Section } from "@/components/ui/page";
 import { BadgeStamp, TitleStamp } from "@/components/ui/stamp";
@@ -23,73 +22,18 @@ export default async function DashboardPage() {
   const userId = await requireUserId();
   const db = getDb();
 
-  // Eight days back, so the browser can pick out its own last seven local days.
-  const since = daysAgo(8);
-  const [enrollments, attempts, stats, badges, cramOn, titles, weekQuestions, weekFrqs, weekExams] = await Promise.all([
-    db.enrollment.findMany({
-      where: { userId },
-      include: {
-        course: { include: { units: { orderBy: { order: "asc" }, include: { _count: { select: { questions: true } } } } } },
-      },
-    }),
-    db.questionAttempt.findMany({
-      where: { userId },
-      select: {
-        questionId: true,
-        correct: true,
-        createdAt: true,
-        question: {
-          select: {
-            unitId: true,
-            topic: { select: { id: true, name: true, slug: true } },
-            unit: { select: { slug: true, name: true, course: { select: { slug: true, name: true } } } },
-          },
-        },
-      },
-    }),
-    getUserGamificationStats(userId),
+  const [{ stats, weekEntries, weakest, courses }, badges, cramOn, titles] = await Promise.all([
+    loadProgressCore(userId),
     getAllBadgeStatuses(userId),
     isCramModeOn(userId),
     getUserUnitTitles(userId),
-    db.questionAttempt.findMany({ where: { userId, createdAt: { gte: since } }, select: { createdAt: true, correct: true, timeSpentMs: true } }),
-    db.fRQAttempt.findMany({ where: { userId, createdAt: { gte: since } }, select: { createdAt: true } }),
-    db.examAttempt.findMany({ where: { userId, completedAt: { gte: since } }, select: { startedAt: true, completedAt: true } }),
   ]);
-  const weekEntries = toActivityEntries({
-    questions: weekQuestions,
-    frqs: weekFrqs,
-    exams: weekExams.flatMap((e) => (e.completedAt ? [{ startedAt: e.startedAt, completedAt: e.completedAt }] : [])),
-  });
-  const weakest = weakTopics(
-    attempts.map((a) => ({
-      questionId: a.questionId,
-      topicId: a.question.topic.id,
-      topicName: a.question.topic.name,
-      topicSlug: a.question.topic.slug,
-      unitSlug: a.question.unit.slug,
-      unitName: a.question.unit.name,
-      courseSlug: a.question.unit.course.slug,
-      courseName: a.question.unit.course.name,
-      correct: a.correct,
-      createdAt: a.createdAt,
-    })),
-  );
 
   const weakWithRefresher = new Set(
     weakest.length > 0
       ? (await db.topic.findMany({ where: { id: { in: weakest.map((t) => t.topicId) }, refresher: { not: null } }, select: { id: true } })).map((t) => t.id)
       : [],
   );
-
-  const mastery = computeUnitMastery(
-    attempts.map((a) => ({
-      questionId: a.questionId,
-      unitId: a.question.unitId,
-      correct: a.correct,
-      createdAt: a.createdAt,
-    })),
-  );
-  const masteryByUnitId = new Map(mastery.map((m) => [m.unitId, m]));
 
   return (
     <Page>
@@ -186,7 +130,7 @@ export default async function DashboardPage() {
         )}
       </Section>
 
-      {enrollments.length === 0 ? (
+      {courses.length === 0 ? (
         <Section label="Courses">
           <p className="reading">
             You haven&apos;t started a course yet.{" "}
@@ -197,40 +141,11 @@ export default async function DashboardPage() {
           </p>
         </Section>
       ) : (
-        enrollments.map(({ course }) => {
-          const totalAttempted = course.units.reduce(
-            (sum, u) => sum + (masteryByUnitId.get(u.id)?.questionsAttempted ?? 0),
-            0,
-          );
-          const totalCorrect = course.units.reduce(
-            (sum, u) => sum + (masteryByUnitId.get(u.id)?.questionsCorrect ?? 0),
-            0,
-          );
-
-          return (
-            <Section
-              key={course.id}
-              label={course.name}
-              note={
-                totalAttempted > 0
-                  ? `${Math.round((totalCorrect / totalAttempted) * 100)}% correct across ${totalAttempted} question${totalAttempted === 1 ? "" : "s"}.`
-                  : "No questions attempted yet."
-              }
-            >
-              <UnitMasteryList
-                courseSlug={course.slug}
-                units={course.units.map((unit) => ({
-                  id: unit.id,
-                  slug: unit.slug,
-                  name: unit.name,
-                  total: unit._count.questions,
-                  attempted: masteryByUnitId.get(unit.id)?.questionsAttempted ?? 0,
-                  correct: masteryByUnitId.get(unit.id)?.questionsCorrect ?? 0,
-                }))}
-              />
-            </Section>
-          );
-        })
+        courses.map((course) => (
+          <Section key={course.id} label={course.name} note={describeCourseAccuracy(course.totalCorrect, course.totalAttempted)}>
+            <UnitMasteryList courseSlug={course.slug} units={course.units} />
+          </Section>
+        ))
       )}
     </Page>
   );

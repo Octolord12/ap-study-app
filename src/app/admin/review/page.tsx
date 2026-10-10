@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { requireAdminUserId } from "@/lib/admin/session";
 import { listCoursesWithUnreviewedCounts } from "@/lib/admin/queries";
+import { Button } from "@/components/ui/button";
 import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
 
 export const metadata: Metadata = { title: "Content review" };
@@ -16,6 +17,11 @@ export default async function AdminReviewIndexPage() {
         eyebrow="Admin"
         title="Content review"
         description="Spot-check generated content before it reaches students. Everything listed is still marked reviewed: false."
+        actions={
+          <Button render={<Link href="/admin/teachers" />} nativeButton={false} variant="outline">
+            Teachers
+          </Button>
+        }
       />
       <Section label="Courses">
         <RuledList>

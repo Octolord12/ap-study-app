@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { requireOwnedClasses } from "@/lib/teacher/classes";
+import { requireTeacherClasses } from "@/lib/teacher/classes";
 import { selectClass } from "@/lib/teacher/select-class";
 import type { ClassWeakness } from "@/lib/teacher/types";
 import { AssignDailyFive } from "@/components/teacher/assign-daily-five";
@@ -11,9 +11,26 @@ import { Page, PageHeader, Section } from "@/components/ui/page";
 export const metadata: Metadata = { title: "Teacher" };
 
 export default async function TeacherPage({ searchParams }: { searchParams: Promise<{ class?: string }> }) {
-  const { classes } = await requireOwnedClasses();
+  const { classes } = await requireTeacherClasses();
   const { class: requestedId } = await searchParams;
-  const selected = selectClass(classes, requestedId)!;
+  const selected = selectClass(classes, requestedId);
+
+  if (!selected) {
+    return (
+      <Page>
+        <PageHeader eyebrow="Teacher" title="Teacher dashboard" description="The tools for running a class." />
+        <Section label="Class">
+          <p className="reading max-w-[52ch]">
+            You don&apos;t have a class yet.{" "}
+            <Link href="/classes" className="font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline">
+              Create one on the Classes page
+            </Link>{" "}
+            and it will appear here.
+          </p>
+        </Section>
+      </Page>
+    );
+  }
 
   // No aggregation behind this yet, so the panel shows its empty state.
   const weaknesses: ClassWeakness[] = [];

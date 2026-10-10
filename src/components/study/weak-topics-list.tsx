@@ -5,11 +5,22 @@ import { topicHref } from "@/lib/study/concept-link";
 
 const LINK = "text-sm font-semibold underline underline-offset-4 hover:bg-mark hover:text-on-mark hover:no-underline";
 
-export function WeakTopicsList({ topics, withRefresher = new Set() }: { topics: WeakTopic[]; withRefresher?: ReadonlySet<string> }) {
+// `links` is false on the read-only parent page (a parent has no account to practice with).
+export function WeakTopicsList({
+  topics,
+  withRefresher = new Set(),
+  links = true,
+}: {
+  topics: WeakTopic[];
+  withRefresher?: ReadonlySet<string>;
+  links?: boolean;
+}) {
   if (topics.length === 0) {
     return (
       <p className="reading max-w-[52ch]">
-        None right now. Once you have answered a few questions on a topic, the ones you find hardest are listed here.
+        {links
+          ? "None right now. Once you have answered a few questions on a topic, the ones you find hardest are listed here."
+          : "None right now. Once a few questions on a topic have been answered, the hardest ones are listed here."}
       </p>
     );
   }
@@ -27,14 +38,16 @@ export function WeakTopicsList({ topics, withRefresher = new Set() }: { topics: 
             <p className="text-sm">
               <span className="numeral text-xl">{t.accuracyPercent}%</span> <span className="eyebrow">{t.correct} of {t.attempted} right</span>
             </p>
-            {withRefresher.has(t.topicId) ? (
+            {links && withRefresher.has(t.topicId) ? (
               <Link href={topicHref(t.courseSlug, t.unitSlug, t.topicSlug, true)} className={LINK}>
                 Refresher
               </Link>
             ) : null}
-            <Link href={`/courses/${t.courseSlug}/units/${t.unitSlug}?topic=${t.topicSlug}`} className={LINK}>
-              Practice
-            </Link>
+            {links ? (
+              <Link href={`/courses/${t.courseSlug}/units/${t.unitSlug}?topic=${t.topicSlug}`} className={LINK}>
+                Practice
+              </Link>
+            ) : null}
           </div>
         </li>
       ))}

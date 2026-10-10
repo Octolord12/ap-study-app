@@ -87,7 +87,9 @@ describe("DeleteAccountForm", () => {
 
   it("warns, with numbers, that an owned class is deleted for the other students in it", () => {
     render(<DeleteAccountForm ownedClasses={[{ id: "c1", name: "Period 3 AP CSA", otherMembers: 4 }]} />);
-    expect(screen.getByRole("note")).toHaveTextContent("You own a class (Period 3 AP CSA). Classes can't be handed over, so deleting your account deletes it for everyone in it: 4 other students.");
+    expect(screen.getByRole("note")).toHaveTextContent(
+      "You own a class (Period 3 AP CSA). Deleting your account deletes it for everyone in it: 4 other students. To keep it, hand it to another member from the class page first.",
+    );
   });
 
   it("handles several classes, one other student, and a class with nobody else in it", () => {
@@ -99,7 +101,9 @@ describe("DeleteAccountForm", () => {
         ]}
       />,
     );
-    expect(screen.getByRole("note")).toHaveTextContent("You own 2 classes (A, B). Classes can't be handed over, so deleting your account deletes them for everyone in them: 1 other student.");
+    expect(screen.getByRole("note")).toHaveTextContent(
+      "You own 2 classes (A, B). Deleting your account deletes them for everyone in them: 1 other student. To keep them, hand them to another member from the class page first.",
+    );
     unmount();
     render(<DeleteAccountForm ownedClasses={[{ id: "a", name: "Solo", otherMembers: 0 }]} />);
     expect(screen.getByRole("note")).toHaveTextContent("deletes it, though nobody else is in it.");

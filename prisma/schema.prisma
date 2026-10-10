@@ -50,6 +50,8 @@ model User {
   examAttempts      ExamAttempt[]
   ownedClasses      Class[]                 @relation("ClassOwner")
   classMemberships  ClassMembership[]
+  classBans         ClassBan[]
+  parentShares      ParentShare[]
   friendshipsSent   Friendship[]            @relation("FriendshipRequester")
   friendshipsRecvd  Friendship[]            @relation("FriendshipAddressee")
 }
@@ -57,6 +59,7 @@ model User {
 enum Role {
   STUDENT
   ADMIN
+  TEACHER
 }
 
 model Account {
@@ -398,6 +401,7 @@ model Class {
   owner       User              @relation("ClassOwner", fields: [ownerId], references: [id], onDelete: Cascade)
   course      Course?           @relation(fields: [courseId], references: [id])
   memberships ClassMembership[]
+  bans        ClassBan[]
 }
 
 enum ClassRole {
@@ -415,6 +419,35 @@ model ClassMembership {
   user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([classId, userId])
+}
+
+// People an owner removed *and blocked*: the invite code no longer lets them in. A plain removal leaves no row here. Both sides cascade, so
+// deleting the class or the person's account clears it.
+model ClassBan {
+  classId  String
+  userId   String
+  bannedAt DateTime @default(now())
+
+  class Class @relation(fields: [classId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([classId, userId])
+}
+
+// A read-only progress link a student made for a parent (see src/lib/share). Only the hash of the secret in the link is stored, so a copy of
+// this table is not a set of working links. It stops working at expiresAt or once revokedAt is set; a student has at most one live link.
+model ParentShare {
+  id           String    @id @default(cuid())
+  userId       String
+  tokenHash    String    @unique
+  createdAt    DateTime  @default(now())
+  expiresAt    DateTime
+  revokedAt    DateTime?
+  lastViewedAt DateTime?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
 }
 
 enum FriendshipStatus {

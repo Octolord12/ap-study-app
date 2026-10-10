@@ -12,6 +12,8 @@ interface TwoStepButtonProps {
   confirm?: string;
   working?: string;
   failure?: string;
+  // A second, different way to confirm (e.g. "Remove and block"), shown beside the first.
+  alternate?: { confirm: string; working: string; action: () => Promise<unknown> };
 }
 
 // Two steps on purpose: what this does can't be undone by the person who clicks it, so the first click only asks.
@@ -23,19 +25,22 @@ export function TwoStepButton({
   confirm = "Yes, remove",
   working = "Removing…",
   failure = "Could not remove. Nothing was changed; try again.",
+  alternate,
 }: TwoStepButtonProps) {
   const [confirming, setConfirming] = useState(false);
   const [failed, setFailed] = useState(false);
+  const [running, setRunning] = useState<"primary" | "alternate">("primary");
   const [pending, startTransition] = useTransition();
   // The failure state commits before the transition's pending flag clears; without this the error shows for a moment above a button
   // that still shows the working label and is disabled.
   const busy = pending && !failed;
 
-  function run() {
+  function run(which: "primary" | "alternate") {
     setFailed(false);
+    setRunning(which);
     startTransition(async () => {
       try {
-        await action();
+        await (which === "alternate" && alternate ? alternate.action : action)();
         setConfirming(false);
       } catch {
         setFailed(true);
@@ -55,9 +60,14 @@ export function TwoStepButton({
     <div className="space-y-2">
       <p className="max-w-[40ch] text-sm">{question}</p>
       <div className="flex flex-wrap gap-2">
-        <Button type="button" size="sm" onClick={run} disabled={busy}>
-          {busy ? working : confirm}
+        <Button type="button" size="sm" onClick={() => run("primary")} disabled={busy}>
+          {busy && running === "primary" ? working : confirm}
         </Button>
+        {alternate ? (
+          <Button type="button" size="sm" onClick={() => run("alternate")} disabled={busy}>
+            {busy && running === "alternate" ? alternate.working : alternate.confirm}
+          </Button>
+        ) : null}
         <Button type="button" size="sm" variant="ghost" onClick={() => setConfirming(false)} disabled={busy}>
           Keep
         </Button>

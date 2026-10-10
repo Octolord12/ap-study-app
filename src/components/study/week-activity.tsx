@@ -21,12 +21,13 @@ function Stat({ value, unit, label }: { value: string; unit?: string; label: str
   );
 }
 
-export function WeekActivity({ entries }: { entries: ActivityEntry[] }) {
+// `forParent` only changes the wording of the empty state, which speaks to the student on their own page.
+export function WeekActivity({ entries, forParent = false }: { entries: ActivityEntry[]; forParent?: boolean }) {
   const isClient = useIsClient();
   const [now] = useState(() => Date.now());
 
   if (!isClient) {
-    return <p className="eyebrow min-h-[13rem]">Loading your week…</p>;
+    return <p className="eyebrow min-h-[13rem]">Loading the week…</p>;
   }
 
   const week = summarizeWeek(entries, now);
@@ -62,7 +63,9 @@ export function WeekActivity({ entries }: { entries: ActivityEntry[] }) {
 
       <p className="mt-5 max-w-[60ch] text-sm text-muted-foreground">
         {week.daysStudied === 0
-          ? "Nothing in the last 7 days yet. Answer a question and today's bar appears."
+          ? forParent
+            ? "Nothing in the last 7 days."
+            : "Nothing in the last 7 days yet. Answer a question and today's bar appears."
           : "Time counts the seconds spent choosing answers and the length of timed exams. Reading explanations isn't counted, so the real time is a bit more. A small mark with no number is a day with free-response work only."}
       </p>
     </div>
