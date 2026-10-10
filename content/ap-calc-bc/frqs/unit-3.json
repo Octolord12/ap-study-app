@@ -1,0 +1,85 @@
+[
+  {
+    "id": "ap-calcbc-u3-frq-1",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "prompt": "Let $f(x) = (2x^2 - 1)^3$.\n\n**(a)** Find $f'(x)$ using the Chain Rule.\n\n**(b)** Evaluate $f'(1)$.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Correctly identifies the outer/inner function structure and applies the chain rule setup: 3(2x^2-1)^2 * d/dx(2x^2-1)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Correctly simplifies to f'(x) = 12x(2x^2-1)^2"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Correctly evaluates f'(1) = 12"
+      }
+    ],
+    "sampleResponse": "(a) Let u = 2x^2-1. f'(x) = 3u^2 * du/dx = 3(2x^2-1)^2 * 4x = 12x(2x^2-1)^2.\n(b) At x=1: 2(1)^2-1 = 1, so f'(1) = 12(1)(1)^2 = 12.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-frq-2",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "prompt": "Consider the curve defined by $x^2 + xy + y^2 = 7$.\n\n**(a)** Find $\\dfrac{dy}{dx}$ in terms of x and y.\n\n**(b)** Find the slope of the tangent line to the curve at the point $(1, 2)$.",
+    "pointValue": 4,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Correctly differentiates x^2 to get 2x"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Correctly applies the product rule to the xy term to get x(dy/dx) + y"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Correctly differentiates y^2 to get 2y(dy/dx), and solves for dy/dx = -(2x+y)/(x+2y)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "Correctly evaluates the slope at (1,2) as -4/5"
+      }
+    ],
+    "sampleResponse": "(a) Differentiating implicitly: 2x + [x(dy/dx) + y] + 2y(dy/dx) = 0. Grouping dy/dx terms: 2x + y + (x + 2y)(dy/dx) = 0. Solving: dy/dx = -(2x+y)/(x+2y).\n(b) At (1,2): dy/dx = -(2(1)+2)/(1+2(2)) = -4/5.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-frq-3",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "prompt": "The position of a particle moving along a line is given by $s(t) = t^3 - 6t^2 + 9t$ (t in seconds, s in meters), for $t \\geq 0$.\n\n**(a)** Find the velocity function $v(t)$.\n\n**(b)** Find the acceleration function $a(t)$.\n\n**(c)** Evaluate $a(2)$.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Correctly finds v(t) = 3t^2 - 12t + 9"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Correctly finds a(t) = 6t - 12 (the derivative of v(t))"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Correctly evaluates a(2) = 0"
+      }
+    ],
+    "sampleResponse": "(a) v(t) = s'(t) = 3t^2 - 12t + 9.\n(b) a(t) = v'(t) = 6t - 12.\n(c) a(2) = 6(2) - 12 = 12 - 12 = 0.",
+    "reviewed": false
+  }
+]

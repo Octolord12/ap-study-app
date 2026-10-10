@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-calcbc-u3-mcq-31",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "If $y=e^{\\sin(x^2)}$, what is $\\dfrac{dy}{dx}$ at $x=\\sqrt{\\pi}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-2$",
+        "isCorrect": false,
+        "explanation": "The derivative of the inner function $x^2$ is $2x$, which at $x=\\sqrt\\pi$ is $2\\sqrt\\pi$, not 2."
+      },
+      {
+        "label": "B",
+        "text": "$2 \\sqrt{\\pi}$",
+        "isCorrect": false,
+        "explanation": "The sign is wrong: $\\cos\\pi=-1$, so the factor $\\cos(x^2)$ is negative at this point."
+      },
+      {
+        "label": "C",
+        "text": "$- 2 \\sqrt{\\pi}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=e^{\\sin(x^2)}\\cdot\\cos(x^2)\\cdot2x$. At $x=\\sqrt\\pi$: $x^2=\\pi$, $\\sin\\pi=0$, $\\cos\\pi=-1$, so $1\\cdot(-1)\\cdot2\\sqrt\\pi=-2\\sqrt\\pi$."
+      },
+      {
+        "label": "D",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "This stops after two layers. There are three: the outer $e^{(\\ )}$, the middle $\\sin(\\ )$ and the inner $x^2$, whose derivative $2x$ is also a factor."
+      }
+    ],
+    "explanation": "Differentiate layer by layer, outside in: $e^u\\to e^u$, then $\\sin w\\to\\cos w$, then $x^2\\to2x$. Multiply, then evaluate.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-32",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "Let $H(x)=f(x)\\cdot g(f(x))$. Values: $f(1)=3$, $f'(1)=-2$, $g(3)=5$ and $g'(3)=4$. What is $H'(1)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-34$",
+        "isCorrect": true,
+        "explanation": "Product rule: $H'(x)=f'(x)\\,g(f(x))+f(x)\\,g'(f(x))\\,f'(x)$. At 1: $(-2)(5)+(3)(4)(-2)=-10-24=-34$."
+      },
+      {
+        "label": "B",
+        "text": "$14$",
+        "isCorrect": false,
+        "explanation": "The product rule adds its two terms. Here the second term is $f(1)g'(3)f'(1)=-24$, so subtracting it gives the wrong sign."
+      },
+      {
+        "label": "C",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "The second term differentiates $g(f(x))$ but leaves out the factor $f'(1)=-2$ from the chain rule."
+      },
+      {
+        "label": "D",
+        "text": "$-8$",
+        "isCorrect": false,
+        "explanation": "This multiplies only the two derivative values. The product rule is $u'v+uv'$, not $u'v'$."
+      }
+    ],
+    "explanation": "Treat $f(x)$ and $g(f(x))$ as the two factors. Differentiating the second factor needs the chain rule.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-33",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "hard",
+    "stem": "The curve $x^2+xy+y^2=7$ passes through the point $(1,2)$. What is the value of $\\dfrac{d^2y}{dx^2}$ at that point?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$- \\frac{6}{25}$",
+        "isCorrect": false,
+        "explanation": "This differentiates $-\\frac{2x+y}{x+2y}$ as if $y$ were a constant. Every $y$ in the expression is a function of $x$ and contributes a $\\frac{dy}{dx}$ term."
+      },
+      {
+        "label": "B",
+        "text": "$- \\frac{42}{125}$",
+        "isCorrect": true,
+        "explanation": "First, $\\frac{dy}{dx}=-\\frac{2x+y}{x+2y}$, which is $-\\frac45$ at $(1,2)$. Differentiate again with the quotient rule, treating $y$ as a function of $x$: $\\frac{d^2y}{dx^2}=-\\frac{(2+y')(x+2y)-(2x+y)(1+2y')}{(x+2y)^2}$. At $(1,2)$ this is $-\\frac{42}{125}$."
+      },
+      {
+        "label": "C",
+        "text": "$- \\frac{42}{5}$",
+        "isCorrect": false,
+        "explanation": "$-\\frac{42}{5}$ is only the numerator of the quotient-rule expression. It still has to be divided by $(x+2y)^2=25$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{42}{125}$",
+        "isCorrect": false,
+        "explanation": "The sign is wrong. Carry the negative sign in $\\frac{dy}{dx}=-\\frac{2x+y}{x+2y}$ through the quotient rule."
+      }
+    ],
+    "explanation": "Find $y'=-\\frac{2x+y}{x+2y}$, substitute $y'=-\\frac45$ at $(1,2)$ after differentiating a second time (not before).",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-34",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "hard",
+    "stem": "At which points on the curve $x^2-xy+y^2=3$ is the tangent line horizontal?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$(1,2)$ and $(-1,-2)$",
+        "isCorrect": true,
+        "explanation": "Differentiating: $2x-y-xy'+2yy'=0$, so $y'=\\frac{y-2x}{2y-x}$. A horizontal tangent needs $y=2x$. Substituting: $x^2-2x^2+4x^2=3x^2=3$, so $x=\\pm1$, giving $(1,2)$ and $(-1,-2)$."
+      },
+      {
+        "label": "B",
+        "text": "$(\\sqrt3,0)$ and $(-\\sqrt3,0)$",
+        "isCorrect": false,
+        "explanation": "These are the $x$-intercepts of the curve. The slope there is $\\frac{0-2\\sqrt3}{0-\\sqrt3}=2$, not 0."
+      },
+      {
+        "label": "C",
+        "text": "$(1,2)$ only",
+        "isCorrect": false,
+        "explanation": "The curve is symmetric about the origin (replacing $(x,y)$ by $(-x,-y)$ leaves the equation unchanged), so $(-1,-2)$ is also a point with a horizontal tangent."
+      },
+      {
+        "label": "D",
+        "text": "$(2,1)$ and $(-2,-1)$",
+        "isCorrect": false,
+        "explanation": "These are the points where the tangent is vertical ($2y=x$, so the denominator of $y'$ is 0), not horizontal."
+      }
+    ],
+    "explanation": "A horizontal tangent means $\\frac{dy}{dx}=0$, so the numerator of $\\frac{y-2x}{2y-x}$ is zero. Then use the curve's equation to find the points.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-35",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "hard",
+    "stem": "Let $f(x)=x^5+x^3+x$, and let $g$ be the inverse function of $f$. What is $g'(3)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{9}$",
+        "isCorrect": true,
+        "explanation": "$f(1)=3$, so $g(3)=1$. Then $g'(3)=\\frac{1}{f'(g(3))}=\\frac{1}{f'(1)}=\\frac1{5+3+1}=\\frac19$."
+      },
+      {
+        "label": "B",
+        "text": "$9$",
+        "isCorrect": false,
+        "explanation": "This is $f'(1)$ itself. The inverse's derivative is the reciprocal."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{433}$",
+        "isCorrect": false,
+        "explanation": "This evaluates $f'$ at 3. The formula needs $f'$ at $g(3)=1$, the input of $f$ that produces 3."
+      },
+      {
+        "label": "D",
+        "text": "$- \\frac{1}{9}$",
+        "isCorrect": false,
+        "explanation": "The derivative of the inverse is the reciprocal $+\\frac{1}{f'(g(3))}$. No negative sign appears; that belongs to the derivative of $\\frac1x$, not to inverses."
+      }
+    ],
+    "explanation": "Find the input $a$ with $f(a)=3$ by inspection, then use $g'(3)=\\frac{1}{f'(a)}$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-36",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "If $f(x)=\\arctan\\left(\\sqrt{x}\\right)$, what is $f'(4)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{4}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{1}{2\\sqrt x}$ alone; the factor $\\frac{1}{1+x}$ from the arctangent is missing."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{5}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{1}{1+x}$ alone. The chain rule also multiplies by the derivative of $\\sqrt x$, which is $\\frac1{2\\sqrt x}=\\frac14$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{68}$",
+        "isCorrect": false,
+        "explanation": "This uses $\\frac{1}{1+x^2}$. The inside of the arctangent is $\\sqrt x$, so the denominator is $1+(\\sqrt x)^2=1+x$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{20}$",
+        "isCorrect": true,
+        "explanation": "$f'(x)=\\frac{1}{1+(\\sqrt x)^2}\\cdot\\frac{1}{2\\sqrt x}=\\frac{1}{(1+x)\\,2\\sqrt x}$. At $x=4$: $\\frac{1}{5\\cdot4}=\\frac1{20}$."
+      }
+    ],
+    "explanation": "$\\frac{d}{du}\\arctan u=\\frac{1}{1+u^2}$ with $u=\\sqrt x$, times $\\frac{du}{dx}=\\frac{1}{2\\sqrt x}$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-37",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "If $y=\\ln\\left(\\dfrac{(x+1)^2}{\\sqrt{x+3}}\\right)$, what is $\\dfrac{dy}{dx}$ at $x=1$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{3}{4}$",
+        "isCorrect": false,
+        "explanation": "This forgets the $\\frac12$ from the square root: $\\ln\\sqrt{x+3}=\\frac12\\ln(x+3)$, whose derivative is $\\frac{1}{2(x+3)}=\\frac18$, not $\\frac14$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{7}{8}$",
+        "isCorrect": true,
+        "explanation": "Rewrite $y=2\\ln(x+1)-\\frac12\\ln(x+3)$. Then $y'=\\frac{2}{x+1}-\\frac{1}{2(x+3)}$, which is $1-\\frac18=\\frac78$ at $x=1$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{3}{8}$",
+        "isCorrect": false,
+        "explanation": "This forgets the exponent 2 on $(x+1)$. $\\ln(x+1)^2=2\\ln(x+1)$, whose derivative is $\\frac{2}{x+1}=1$, not $\\frac12$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{9}{8}$",
+        "isCorrect": false,
+        "explanation": "The second term is subtracted because $\\ln\\frac{A}{B}=\\ln A-\\ln B$, so its derivative is subtracted too."
+      }
+    ],
+    "explanation": "Use $\\ln\\frac AB=\\ln A-\\ln B$ and $\\ln A^p=p\\ln A$ first. Differentiating the sum of simple logs is far easier than applying the chain rule to the whole fraction.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-38",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "hard",
+    "stem": "If $f(x)=\\sin(x^2)$, what is $f''\\left(\\sqrt{\\pi/3}\\right)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$- \\frac{2 \\sqrt{3} \\pi}{3}$",
+        "isCorrect": false,
+        "explanation": "This keeps only the term that comes from differentiating $\\cos(x^2)$. Differentiating the factor $2x$ in the product also gives $2\\cos(x^2)$."
+      },
+      {
+        "label": "B",
+        "text": "$1 + \\frac{2 \\sqrt{3} \\pi}{3}$",
+        "isCorrect": false,
+        "explanation": "The second term has a negative sign: the derivative of $\\cos u$ is $-\\sin u$."
+      },
+      {
+        "label": "C",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "This keeps only $2\\cos(x^2)$ and drops $-4x^2\\sin(x^2)$, which comes from differentiating $\\cos(x^2)$ using the chain rule."
+      },
+      {
+        "label": "D",
+        "text": "$- \\frac{2 \\sqrt{3} \\pi}{3} + 1$",
+        "isCorrect": true,
+        "explanation": "$f'(x)=2x\\cos(x^2)$. By the product and chain rules, $f''(x)=2\\cos(x^2)-4x^2\\sin(x^2)$. At $x^2=\\frac\\pi3$: $2\\cdot\\frac12-4\\cdot\\frac\\pi3\\cdot\\frac{\\sqrt3}2=1-\\frac{2\\sqrt3\\pi}{3}$."
+      }
+    ],
+    "explanation": "Differentiate twice, using the product rule on $2x\\cos(x^2)$ and the chain rule on $\\cos(x^2)$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-39",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "The function $f$ is differentiable and $f'(4)=3$. If $g(x)=f(\\sqrt{x})$, what is $g'(16)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{3}{8}$",
+        "isCorrect": true,
+        "explanation": "$g'(x)=f'(\\sqrt x)\\cdot\\frac{1}{2\\sqrt x}$. At $x=16$, $\\sqrt{x}=4$: $f'(4)\\cdot\\frac{1}{8}=\\frac38$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{3}{32}$",
+        "isCorrect": false,
+        "explanation": "This evaluates the inner derivative $\\frac{1}{2\\sqrt x}$ with $\\sqrt{x}$ replaced by $x$: $\\frac{1}{2\\cdot16}$. The input of $f'$ is $\\sqrt{16}=4$ and the inner derivative is $\\frac{1}{2\\cdot4}$."
+      },
+      {
+        "label": "C",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "This is $f'(4)$ without the chain-rule factor $\\frac{d}{dx}\\sqrt x$."
+      },
+      {
+        "label": "D",
+        "text": "$24$",
+        "isCorrect": false,
+        "explanation": "The derivative of $\\sqrt x$ is $\\frac{1}{2\\sqrt x}$ (a reciprocal), not $2\\sqrt x$."
+      }
+    ],
+    "explanation": "The derivative of $f(u)$ is $f'(u)\\,u'$ with $u=\\sqrt x$, evaluated at $x=16$ where $u=4$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-40",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "hard",
+    "stem": "The function $f$ is differentiable and one-to-one, with $f(1)=3$ and $f'(1)=-4$. Let $g$ be the inverse of $f$. What is $\\dfrac{d}{dx}\\left[(g(x))^2\\right]$ at $x=3$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "$g'(3)=\\frac{1}{f'(1)}=-\\frac14$ is negative because $f$ is decreasing at 1. The sign does not flip."
+      },
+      {
+        "label": "B",
+        "text": "$- \\frac{1}{2}$",
+        "isCorrect": true,
+        "explanation": "$g(3)=1$ and $g'(3)=\\frac1{f'(1)}=-\\frac14$. By the chain rule, $\\frac{d}{dx}[g(x)^2]=2g(x)g'(x)=2(1)\\left(-\\frac14\\right)=-\\frac12$."
+      },
+      {
+        "label": "C",
+        "text": "$-8$",
+        "isCorrect": false,
+        "explanation": "This uses $f'(1)=-4$ in place of $g'(3)$ and skips taking the reciprocal. $g'(3)=\\frac{1}{f'(1)}$."
+      },
+      {
+        "label": "D",
+        "text": "$- \\frac{1}{4}$",
+        "isCorrect": false,
+        "explanation": "This is $g'(3)$ alone. The power on $g$ contributes the factor $2g(3)=2$."
+      }
+    ],
+    "explanation": "First find $g(3)$ and $g'(3)$ from the inverse relationship, then apply the chain rule to $g(x)^2$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-41",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "hard",
+    "stem": "The point $(3,3)$ lies on the curve $x^3+y^3=6xy$. What is the slope of the tangent line to the curve at that point?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$- \\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "This drops the term $6xy'$: the product rule on $6xy$ gives both $6y$ and $6xy'$."
+      },
+      {
+        "label": "B",
+        "text": "$-1$",
+        "isCorrect": true,
+        "explanation": "Differentiate: $3x^2+3y^2y'=6y+6xy'$. Collect $y'$: $y'(3y^2-6x)=6y-3x^2$, so $y'=\\frac{2y-x^2}{y^2-2x}$. At $(3,3)$: $\\frac{6-9}{9-6}=-1$."
+      },
+      {
+        "label": "C",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "This forgets that $\\frac{d}{dx}y^3=3y^2y'$. The chain rule factor $y'$ must stay on that term so that it can be collected."
+      },
+      {
+        "label": "D",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "The numerator is $2y-x^2=6-9=-3$, which is negative, so the slope is negative."
+      }
+    ],
+    "explanation": "Differentiate both sides with respect to $x$, using the product rule on $6xy$ and the chain rule on $y^3$. Collect the $y'$ terms and solve.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-42",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "If $y=(x^2+1)^3(2x-1)^4$, what is $\\dfrac{dy}{dx}$ at $x=1$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$88$",
+        "isCorrect": true,
+        "explanation": "Product rule with chain rule in each term: $y'=3(x^2+1)^2(2x)(2x-1)^4+(x^2+1)^3\\cdot4(2x-1)^3\\cdot2$. At $x=1$: $3\\cdot4\\cdot2\\cdot1+8\\cdot4\\cdot1\\cdot2=24+64=88$."
+      },
+      {
+        "label": "B",
+        "text": "$76$",
+        "isCorrect": false,
+        "explanation": "The inner derivative $2x$ of $x^2+1$ is missing from the first term, which would be $12\\cdot2=24$ at $x=1$."
+      },
+      {
+        "label": "C",
+        "text": "$56$",
+        "isCorrect": false,
+        "explanation": "The inner derivative $2$ of $2x-1$ is missing from the second term, which would be $32\\cdot2=64$ at $x=1$."
+      },
+      {
+        "label": "D",
+        "text": "$44$",
+        "isCorrect": false,
+        "explanation": "Both inner derivatives ($2x$ and $2$) are missing, so each chain-rule term is short by a factor."
+      }
+    ],
+    "explanation": "Each of the two factors is a power of a function, so each differentiates with the chain rule. Then the product rule combines them.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-43",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "hard",
+    "stem": "If $f(x)=x^4-3x^2+\\sin(2x)$, what is $f'''(0)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$8$",
+        "isCorrect": false,
+        "explanation": "The third derivative of $\\sin u$ is $-\\cos u$, so the sign is negative: $\\sin\\to\\cos\\to-\\sin\\to-\\cos$."
+      },
+      {
+        "label": "B",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "This forgets the factor of 2 each time the chain rule is applied to $\\sin(2x)$. After three derivatives the factor is $2^3=8$."
+      },
+      {
+        "label": "C",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The polynomial terms contribute 0 at $x=0$, but the sine term does not: $-8\\cos 0=-8$."
+      },
+      {
+        "label": "D",
+        "text": "$-8$",
+        "isCorrect": true,
+        "explanation": "Differentiate three times: $f'''(x)=24x-8\\cos(2x)$. At $x=0$ this is $0-8=-8$. Each differentiation of $\\sin(2x)$ brings out another factor of 2: $2$, $4$, $8$."
+      }
+    ],
+    "explanation": "Take derivatives one at a time. The $x^4-3x^2$ part contributes $24x$, which is 0 at $x=0$; the $\\sin(2x)$ part supplies the value.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-44",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "The table gives values of the differentiable functions $f$, $g$ and $h$ and their derivatives.\n\n| $x$ | 1 | 2 | 3 |\n|---|---|---|---|\n| $h(x)$ | 3 | 1 | 2 |\n| $h'(x)$ | 5 | 4 | $-1$ |\n| $g(x)$ | 3 | 2 | 1 |\n| $g'(x)$ | $-2$ | 6 | 0 |\n| $f'(x)$ | 7 | $-3$ | 5 |\n\nIf $P(x)=f(g(h(x)))$, what is $P'(2)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-10$",
+        "isCorrect": false,
+        "explanation": "This leaves out the innermost derivative factor $h'(2)=4$."
+      },
+      {
+        "label": "B",
+        "text": "$-72$",
+        "isCorrect": false,
+        "explanation": "This reads every derivative at $x=2$: $f'(2)g'(2)h'(2)$. Each outer derivative must be evaluated at the value of the layers inside it."
+      },
+      {
+        "label": "C",
+        "text": "$120$",
+        "isCorrect": false,
+        "explanation": "Here $g'$ is read at 2 instead of at $h(2)=1$: $5\\cdot6\\cdot4$. The middle derivative must be evaluated at $h(2)=1$."
+      },
+      {
+        "label": "D",
+        "text": "$-40$",
+        "isCorrect": true,
+        "explanation": "$P'(2)=f'(g(h(2)))\\cdot g'(h(2))\\cdot h'(2)$. $h(2)=1$, then $g(1)=3$. So $P'(2)=f'(3)\\cdot g'(1)\\cdot h'(2)=5\\cdot(-2)\\cdot4=-40$."
+      }
+    ],
+    "explanation": "Work from the inside out for the inputs and from the outside in for the derivatives: $h(2)=1$, $g(1)=3$, so the factors are $h'(2)$, $g'(1)$ and $f'(3)$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-45",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "The line tangent to the graph of $g(x)=(x^2+3)^{3/2}$ at $x=1$ crosses the $x$-axis at $x=$",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "This has the wrong sign: $x=1-\\frac{8}{6}$, since the line must go down from $(1,8)$ to reach the axis on the left."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{7}{3}$",
+        "isCorrect": false,
+        "explanation": "The axis crossing is to the left of $x=1$ because the slope is positive and the point is above the axis; it is $1-\\frac{8}{6}$, not $1+\\frac{8}{6}$."
+      },
+      {
+        "label": "C",
+        "text": "$- \\frac{5}{3}$",
+        "isCorrect": false,
+        "explanation": "This uses slope 3, from $\\frac32\\sqrt{4}$, which omits the chain-rule factor $2x=2$."
+      },
+      {
+        "label": "D",
+        "text": "$- \\frac{1}{3}$",
+        "isCorrect": true,
+        "explanation": "$g(1)=4^{3/2}=8$. $g'(x)=\\frac32(x^2+3)^{1/2}\\cdot2x=3x\\sqrt{x^2+3}$, so $g'(1)=6$. The tangent line is $y-8=6(x-1)$. At $y=0$: $x=1-\\frac86=-\\frac13$."
+      }
+    ],
+    "explanation": "Find $g(1)$ and $g'(1)$ (chain rule on the power), write the tangent line, and solve for $x$ when $y=0$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  }
+]

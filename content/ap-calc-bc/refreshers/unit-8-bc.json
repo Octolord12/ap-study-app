@@ -1,0 +1,8 @@
+[
+  {
+    "unit": "unit-8-applications-of-integration",
+    "topic": "arc-length-and-distance-traveled",
+    "body": "### The idea\nThe length of a curve comes from the Pythagorean theorem applied to a tiny piece: a run of $dx$ and a rise of $dy$ make a hypotenuse of $\\sqrt{dx^2 + dy^2}$. Adding up the pieces gives an integral.\n\n### Key facts\n- **Arc length of $y = f(x)$ on $[a, b]$:** $\\displaystyle L = \\int_a^b \\sqrt{1 + \\left(\\frac{dy}{dx}\\right)^2}\\,dx$.\n- The integrand needs the **derivative**, squared and added to 1, all under a square root.\n- Problems built for hand work are designed so that $1 + \\left(\\frac{dy}{dx}\\right)^2$ is a perfect square and the root disappears. Others call for a calculator: write the integral, then give the value.\n- **Distance traveled along a line** with velocity $v(t)$ is $\\displaystyle\\int_a^b |v(t)|\\,dt$. It differs from the displacement $\\int_a^b v(t)\\,dt$ whenever $v$ changes sign.\n- The length of a curve is always at least the straight-line distance between its endpoints.\n\n### Watch out for\nPutting $y$ instead of $y'$ in the formula, leaving out the square root, or forgetting the 1.\n\n### Worked example\nFind the length of $y = \\dfrac{x^2}{4} - \\dfrac{\\ln x}{2}$ from $x = 1$ to $x = e$.\n\n$\\dfrac{dy}{dx} = \\dfrac x2 - \\dfrac{1}{2x}$, and\n\n$$\n1 + \\left(\\frac{dy}{dx}\\right)^2 = \\left(\\frac x2 + \\frac{1}{2x}\\right)^2\n$$\n\nso the root disappears and\n\n$$\n\\begin{aligned}\nL &= \\int_1^e \\left(\\frac x2 + \\frac{1}{2x}\\right)dx \\\\\n&= \\left[\\frac{x^2}{4} + \\frac{\\ln x}{2}\\right]_1^e \\\\\n&= \\left(\\frac{e^2}{4} + \\frac12\\right) - \\frac14 = \\frac{e^2 + 1}{4}\n\\end{aligned}\n$$",
+    "reviewed": false
+  }
+]

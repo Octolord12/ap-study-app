@@ -1,0 +1,59 @@
+{
+  "slug": "unit-10-infinite-sequences-and-series",
+  "order": 10,
+  "name": "Infinite Sequences and Series",
+  "weightingMin": 15,
+  "weightingMax": 20,
+  "topics": [
+    {
+      "slug": "convergent-and-geometric-series",
+      "order": 1,
+      "name": "Convergent Series and Geometric Series"
+    },
+    {
+      "slug": "divergence-integral-and-p-series",
+      "order": 2,
+      "name": "The nth-Term Test, the Integral Test, and p-Series"
+    },
+    {
+      "slug": "comparison-tests",
+      "order": 3,
+      "name": "Comparison Tests"
+    },
+    {
+      "slug": "alternating-series-and-error-bound",
+      "order": 4,
+      "name": "Alternating Series and the Error Bound"
+    },
+    {
+      "slug": "ratio-test-and-absolute-convergence",
+      "order": 5,
+      "name": "The Ratio Test and Absolute Convergence"
+    },
+    {
+      "slug": "taylor-polynomials",
+      "order": 6,
+      "name": "Taylor Polynomial Approximations"
+    },
+    {
+      "slug": "lagrange-error-bound",
+      "order": 7,
+      "name": "The Lagrange Error Bound"
+    },
+    {
+      "slug": "radius-and-interval-of-convergence",
+      "order": 8,
+      "name": "Radius and Interval of Convergence"
+    },
+    {
+      "slug": "taylor-and-maclaurin-series",
+      "order": 9,
+      "name": "Taylor and Maclaurin Series"
+    },
+    {
+      "slug": "power-series-representations",
+      "order": 10,
+      "name": "Representing Functions as Power Series"
+    }
+  ]
+}

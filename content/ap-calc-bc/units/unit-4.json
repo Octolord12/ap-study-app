@@ -1,0 +1,29 @@
+{
+  "slug": "unit-4-contextual-applications-of-differentiation",
+  "order": 4,
+  "name": "Contextual Applications of Differentiation",
+  "weightingMin": 5,
+  "weightingMax": 10,
+  "topics": [
+    {
+      "slug": "straight-line-motion",
+      "order": 1,
+      "name": "Straight-Line Motion"
+    },
+    {
+      "slug": "related-rates",
+      "order": 2,
+      "name": "Related Rates"
+    },
+    {
+      "slug": "local-linearization",
+      "order": 3,
+      "name": "Local Linearity and Approximation"
+    },
+    {
+      "slug": "lhopitals-rule",
+      "order": 4,
+      "name": "L'Hopital's Rule"
+    }
+  ]
+}

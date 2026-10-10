@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ap-calcbc-u6-frq-6",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "prompt": "Let $f(x)=xe^{-x}$ for $x\\ge0$.\n\n**(a)** Find $\\displaystyle\\int f(x)\\,dx$.\n\n**(b)** Evaluate $\\displaystyle\\int_0^\\infty f(x)\\,dx$, or show that it diverges.\n\n**(c)** Find the area of the region bounded by the graph of $f$, the $x$-axis and the line $x=2$.",
+    "pointValue": 9,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Chooses $u=x$ and $dv=e^{-x}dx$ (so $du=dx$, $v=-e^{-x}$)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Applies $\\int u\\,dv=uv-\\int v\\,du$ to get $-xe^{-x}+\\int e^{-x}dx$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) Antiderivative $-xe^{-x}-e^{-x}+C$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Writes the integral as $\\lim_{b\\to\\infty}\\int_0^bf(x)\\,dx$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Evaluates the antiderivative at $b$ and at 0"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Shows $be^{-b}\\to0$ and $e^{-b}\\to0$, and concludes the value is 1"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(c) Sets up $\\int_0^2xe^{-x}\\,dx$ (with $f\\ge0$ on the interval)"
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "(c) Evaluates the antiderivative at 2 and 0"
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "(c) Area $=1-3e^{-2}\\approx0.594$"
+      }
+    ],
+    "sampleResponse": "(a) With $u=x$, $dv=e^{-x}dx$: $\\int xe^{-x}dx=-xe^{-x}+\\int e^{-x}dx=-xe^{-x}-e^{-x}+C$.\n(b) $\\int_0^\\infty xe^{-x}dx=\\lim_{b\\to\\infty}\\left[-xe^{-x}-e^{-x}\\right]_0^b=\\lim_{b\\to\\infty}\\left(-be^{-b}-e^{-b}\\right)-(0-1)=0+1=1$, since $be^{-b}\\to0$ and $e^{-b}\\to0$.\n(c) $f(x)\\ge0$ on $[0,2]$, so the area is $\\int_0^2xe^{-x}dx=\\left[-xe^{-x}-e^{-x}\\right]_0^2=-2e^{-2}-e^{-2}+1=1-3e^{-2}\\approx0.594$.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-frq-7",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "partial-fractions",
+    "prompt": "Let $g(x)=\\dfrac{1}{x^2-x-2}$.\n\n**(a)** Find constants $A$ and $B$ such that $g(x)=\\dfrac{A}{x-2}+\\dfrac{B}{x+1}$.\n\n**(b)** Evaluate $\\displaystyle\\int_3^\\infty g(x)\\,dx$, or show that it diverges.\n\n**(c)** Evaluate $\\displaystyle\\int_0^1g(x)\\,dx$.",
+    "pointValue": 9,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Factors $x^2-x-2=(x-2)(x+1)$ and writes $1=A(x+1)+B(x-2)$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) $A=\\frac13$ and $B=-\\frac13$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Antiderivative $\\frac13\\ln|x-2|-\\frac13\\ln|x+1|$ (or $\\frac13\\ln\\left|\\frac{x-2}{x+1}\\right|$)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Writes the integral as $\\lim_{b\\to\\infty}\\int_3^bg(x)\\,dx$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Evaluates the limit (the term at $b$ tends to 0 after combining the logarithms)"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Value $\\frac13\\ln4=\\frac23\\ln2$"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(c) Uses the same antiderivative with limits 0 and 1 (no discontinuity on $[0,1]$)"
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "(c) Evaluates $\\frac13\\left(\\ln\\frac12-\\ln2\\right)$"
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "(c) Value $-\\frac23\\ln2$"
+      }
+    ],
+    "sampleResponse": "(a) $1=A(x+1)+B(x-2)$. At $x=2$: $A=\\frac13$. At $x=-1$: $B=-\\frac13$.\n(b) $\\int g\\,dx=\\frac13\\ln\\left|\\frac{x-2}{x+1}\\right|+C$. Then $\\int_3^\\infty g\\,dx=\\lim_{b\\to\\infty}\\frac13\\ln\\frac{b-2}{b+1}-\\frac13\\ln\\frac14=0+\\frac13\\ln4=\\frac23\\ln2\\approx0.462$.\n(c) $g$ is continuous on $[0,1]$, so $\\int_0^1g\\,dx=\\frac13\\ln\\left|\\frac{1-2}{1+1}\\right|-\\frac13\\ln\\left|\\frac{0-2}{0+1}\\right|=\\frac13\\ln\\frac12-\\frac13\\ln2=-\\frac23\\ln2\\approx-0.462$.",
+    "reviewed": false
+  }
+]

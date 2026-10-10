@@ -1,0 +1,254 @@
+[
+  {
+    "id": "ap-calcbc-u8-mcq-46",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "arc-length-and-distance-traveled",
+    "difficulty": "easy",
+    "stem": "Which integral gives the length of the curve $y=x^2$ from $x=0$ to $x=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\displaystyle\\int_0^2\\sqrt{1+x^4}\\,dx$",
+        "isCorrect": false,
+        "explanation": "This puts $y=x^2$ itself into the formula. The formula uses the derivative of $y$, not $y$."
+      },
+      {
+        "label": "B",
+        "text": "$\\displaystyle\\int_0^2\\sqrt{1+2x}\\,dx$",
+        "isCorrect": false,
+        "explanation": "The derivative $2x$ must be squared inside the root: $\\left(\\frac{dy}{dx}\\right)^2=4x^2$."
+      },
+      {
+        "label": "C",
+        "text": "$\\displaystyle\\int_0^2\\left(1+4x^2\\right)dx$",
+        "isCorrect": false,
+        "explanation": "The expression $1+\\left(\\frac{dy}{dx}\\right)^2$ must be under a square root."
+      },
+      {
+        "label": "D",
+        "text": "$\\displaystyle\\int_0^2\\sqrt{1+4x^2}\\,dx$",
+        "isCorrect": true,
+        "explanation": "The length is $\\int_a^b\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}\\,dx$. Here $\\frac{dy}{dx}=2x$, so the integrand is $\\sqrt{1+(2x)^2}=\\sqrt{1+4x^2}$."
+      }
+    ],
+    "explanation": "Arc length is the integral of $\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}$ over the interval: the Pythagorean theorem applied to a tiny piece with run $dx$ and rise $dy$.",
+    "conceptLink": "ap-calc-bc/unit-8-applications-of-integration/arc-length-and-distance-traveled",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u8-mcq-47",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "arc-length-and-distance-traveled",
+    "difficulty": "easy",
+    "stem": "What is the length of the curve $y=\\frac23x^{3/2}$ from $x=0$ to $x=3$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2 \\sqrt{3}$",
+        "isCorrect": false,
+        "explanation": "This drops the 1 under the root: $\\int_0^3\\sqrt x\\,dx$. The integrand is $\\sqrt{1+x}$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{14}{3}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=x^{1/2}$, so $\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}=\\sqrt{1+x}$. Then $\\int_0^3\\sqrt{1+x}\\,dx=\\frac23(1+x)^{3/2}\\Big|_0^3=\\frac23(8-1)=\\frac{14}{3}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{16}{3}$",
+        "isCorrect": false,
+        "explanation": "This is the antiderivative at $x=3$ only. The value at the lower limit, $\\frac23(1)^{3/2}=\\frac23$, still has to be subtracted."
+      },
+      {
+        "label": "D",
+        "text": "$7$",
+        "isCorrect": false,
+        "explanation": "The antiderivative of $\\sqrt{1+x}$ is $\\frac23(1+x)^{3/2}$. Leaving out the $\\frac23$ gives 7."
+      }
+    ],
+    "explanation": "Differentiate, square, add 1, and look for a simplification. Here the integrand is a simple root of $1+x$.",
+    "conceptLink": "ap-calc-bc/unit-8-applications-of-integration/arc-length-and-distance-traveled",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u8-mcq-48",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "arc-length-and-distance-traveled",
+    "difficulty": "medium",
+    "stem": "What is the length of the curve $y=\\dfrac{e^x+e^{-x}}{2}$ from $x=0$ to $x=\\ln2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\ln{\\left(2 \\right)}$",
+        "isCorrect": false,
+        "explanation": "This treats $\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}$ as 1, which would be the length of the horizontal projection. The curve is longer than its projection."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{3}{2}$",
+        "isCorrect": false,
+        "explanation": "The antiderivative is $\\frac{e^x-e^{-x}}{2}$. Dropping the denominator 2 doubles the answer."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{3}{4}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=\\frac{e^x-e^{-x}}{2}$, and $1+\\left(\\frac{dy}{dx}\\right)^2=\\left(\\frac{e^x+e^{-x}}{2}\\right)^2$, so the root is $\\frac{e^x+e^{-x}}{2}$. The length is $\\left[\\frac{e^x-e^{-x}}{2}\\right]_0^{\\ln2}=\\frac{2-\\frac12}{2}-0=\\frac34$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{5}{4}$",
+        "isCorrect": false,
+        "explanation": "This evaluates the integrand $\\frac{e^x+e^{-x}}{2}$ at $\\ln2$ instead of its antiderivative."
+      }
+    ],
+    "explanation": "After squaring the derivative and adding 1, the expression under the root is a perfect square, so the root disappears.",
+    "conceptLink": "ap-calc-bc/unit-8-applications-of-integration/arc-length-and-distance-traveled",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u8-mcq-49",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "arc-length-and-distance-traveled",
+    "difficulty": "medium",
+    "stem": "A graphing calculator is allowed. What is the length of the curve $y=\\ln x$ from $x=1$ to $x=3$, to three decimal places?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2.443$",
+        "isCorrect": false,
+        "explanation": "This integrates $\\sqrt{1+(\\ln x)^2}$, using $y$ in place of $y'$ ($\\approx2.443$)."
+      },
+      {
+        "label": "B",
+        "text": "$2.302$",
+        "isCorrect": true,
+        "explanation": "The length is $\\int_1^3\\sqrt{1+\\left(\\frac1x\\right)^2}\\,dx\\approx2.302$."
+      },
+      {
+        "label": "C",
+        "text": "$2.667$",
+        "isCorrect": false,
+        "explanation": "This integrates $1+\\frac{1}{x^2}$ without the square root ($\\approx2.667$)."
+      },
+      {
+        "label": "D",
+        "text": "$1.099$",
+        "isCorrect": false,
+        "explanation": "This integrates $\\sqrt{\\left(\\frac1x\\right)^2}=\\frac1x$ and leaves out the 1 under the root ($\\approx1.099$)."
+      }
+    ],
+    "explanation": "Set up $\\int_1^3\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}\\,dx$ and evaluate it numerically. Write the setup as well as the result.",
+    "conceptLink": "ap-calc-bc/unit-8-applications-of-integration/arc-length-and-distance-traveled",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u8-mcq-50",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "arc-length-and-distance-traveled",
+    "difficulty": "medium",
+    "stem": "A particle moves along the $x$-axis with velocity $v(t)=t^2-4$ for $0\\le t\\le3$. What is the total distance the particle travels?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{16}{3}$",
+        "isCorrect": false,
+        "explanation": "This is the distance traveled on $[0,2]$ only. The particle also moves between $t=2$ and $t=3$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{23}{3}$",
+        "isCorrect": true,
+        "explanation": "The velocity changes sign at $t=2$, so split the interval. $\\int_0^2(4-t^2)\\,dt=\\frac{16}{3}$ and $\\int_2^3(t^2-4)\\,dt=\\frac73$. The total distance is $\\int_0^3|v(t)|\\,dt=\\frac{23}{3}$."
+      },
+      {
+        "label": "C",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "This takes the absolute value of the displacement. When velocity changes sign, the distance is larger than $|\\text{displacement}|$."
+      },
+      {
+        "label": "D",
+        "text": "$-3$",
+        "isCorrect": false,
+        "explanation": "This is the displacement $\\int_0^3v(t)\\,dt$. Distance is never negative; it uses $|v|$."
+      }
+    ],
+    "explanation": "Total distance traveled is the integral of speed, $\\int|v(t)|\\,dt$. Find where $v$ changes sign and integrate each piece with the sign that makes it positive.",
+    "conceptLink": "ap-calc-bc/unit-8-applications-of-integration/arc-length-and-distance-traveled",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u8-mcq-51",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "arc-length-and-distance-traveled",
+    "difficulty": "hard",
+    "stem": "The function $f$ satisfies $f'(x)=\\sqrt{e^x-1}$ for $x\\ge0$. What is the length of the graph of $f$ from $x=0$ to $x=\\ln4$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "The antiderivative of $e^{x/2}$ is $2e^{x/2}$. Without the 2, the value is $e^{\\ln2}-e^0=1$."
+      },
+      {
+        "label": "B",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "This evaluates $2e^{x/2}$ at the upper limit only, $2e^{\\ln 2}=4$, and leaves out the lower limit."
+      },
+      {
+        "label": "C",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "This integrates $e^x$, which is $1+(f')^2$ without the square root: $\\int_0^{\\ln4}e^x\\,dx=3$."
+      },
+      {
+        "label": "D",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "$1+\\left(f'(x)\\right)^2=1+e^x-1=e^x$, so the integrand is $\\sqrt{e^x}=e^{x/2}$. The length is $\\left[2e^{x/2}\\right]_0^{\\ln4}=2(2)-2(1)=2$."
+      }
+    ],
+    "explanation": "Square the derivative that is given, add 1, and simplify before integrating: the root usually disappears in designed problems.",
+    "conceptLink": "ap-calc-bc/unit-8-applications-of-integration/arc-length-and-distance-traveled",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u8-mcq-52",
+    "unit": "unit-8-applications-of-integration",
+    "topic": "arc-length-and-distance-traveled",
+    "difficulty": "hard",
+    "stem": "What is the length of the curve $y=\\dfrac{x^3}{6}+\\dfrac{1}{2x}$ from $x=1$ to $x=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{13}{12}$",
+        "isCorrect": false,
+        "explanation": "This is the antiderivative at $x=2$ only. The value at $x=1$, $\\frac16-\\frac12=-\\frac13$, still has to be subtracted."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{23}{12}$",
+        "isCorrect": false,
+        "explanation": "This integrates $1+\\frac{dy}{dx}$. The formula has $\\sqrt{1+\\left(\\frac{dy}{dx}\\right)^2}$, and $\\sqrt{1+u^2}\\ne1+u$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{17}{12}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=\\frac{x^2}{2}-\\frac{1}{2x^2}$, and $1+\\left(\\frac{dy}{dx}\\right)^2=\\left(\\frac{x^2}{2}+\\frac{1}{2x^2}\\right)^2$. The length is $\\int_1^2\\left(\\frac{x^2}{2}+\\frac{1}{2x^2}\\right)dx=\\left[\\frac{x^3}{6}-\\frac{1}{2x}\\right]_1^2=\\frac{13}{12}-\\left(-\\frac13\\right)=\\frac{17}{12}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{11}{12}$",
+        "isCorrect": false,
+        "explanation": "This is $\\int_1^2\\frac{dy}{dx}\\,dx=y(2)-y(1)$, the change in height. Arc length is greater than the change in height."
+      }
+    ],
+    "explanation": "Look for $1+\\left(\\frac{dy}{dx}\\right)^2$ to be a perfect square. Expanding $\\left(\\frac{x^2}{2}-\\frac{1}{2x^2}\\right)^2$ and adding 1 turns it into $\\left(\\frac{x^2}{2}+\\frac{1}{2x^2}\\right)^2$.",
+    "conceptLink": "ap-calc-bc/unit-8-applications-of-integration/arc-length-and-distance-traveled",
+    "reviewed": false
+  }
+]

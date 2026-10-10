@@ -1,0 +1,974 @@
+[
+  {
+    "id": "ap-calcbc-u6-mcq-46",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "long-division-and-completing-the-square",
+    "difficulty": "easy",
+    "stem": "Which expression is $\\displaystyle\\int\\frac{x^2+3x+5}{x+1}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{x^2}{2}+2x+\\frac{3}{x+1} + C$",
+        "isCorrect": false,
+        "explanation": "After dividing, the remainder term $\\frac{3}{x+1}$ still has to be integrated. Its antiderivative is $3\\ln|x+1|$, not $\\frac{3}{x+1}$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{x^2}{2}+2x+\\ln|x+1| + C$",
+        "isCorrect": false,
+        "explanation": "The remainder is $3$, so the last term is $\\int\\frac{3}{x+1}dx=3\\ln|x+1|$. The 3 cannot be dropped."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{x^2}{2}+2x+3\\ln|x+1| + C$",
+        "isCorrect": true,
+        "explanation": "Divide first: $x^2+3x+5=(x+1)(x+2)+3$, so the integrand is $x+2+\\frac{3}{x+1}$. Integrate each term: $\\frac{x^2}{2}+2x+3\\ln|x+1|$."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac{\\frac{x^3}{3}+\\frac{3x^2}{2}+5x}{\\frac{x^2}{2}+x}+C$",
+        "isCorrect": false,
+        "explanation": "An integral of a quotient is not the quotient of the integrals. Integrating top and bottom separately is not a valid rule; divide first, then integrate term by term."
+      }
+    ],
+    "explanation": "The numerator has higher degree than the denominator, so use long division to rewrite the integrand as a polynomial plus a remainder over $x+1$, then integrate term by term.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/long-division-and-completing-the-square",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-47",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "long-division-and-completing-the-square",
+    "difficulty": "medium",
+    "stem": "Which expression is $\\displaystyle\\int\\frac{dx}{x^2+4x+13}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac13\\arctan\\frac{x+2}{3} + C$",
+        "isCorrect": true,
+        "explanation": "Complete the square: $x^2+4x+13=(x+2)^2+9$. With $u=x+2$, $\\int\\frac{du}{u^2+9}=\\frac13\\arctan\\frac{u}{3}$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac13\\arctan(x+2) + C$",
+        "isCorrect": false,
+        "explanation": "This treats $(x+2)^2+9$ as $(x+2)^2+1$. The 9 means the argument of arctan is $\\frac{x+2}{3}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\ln(x^2+4x+13) + C$",
+        "isCorrect": false,
+        "explanation": "$\\ln(x^2+4x+13)$ would be the antiderivative of $\\frac{2x+4}{x^2+4x+13}$. The numerator here is 1, not the derivative of the denominator."
+      },
+      {
+        "label": "D",
+        "text": "$\\arctan\\frac{x+2}{3} + C$",
+        "isCorrect": false,
+        "explanation": "The antiderivative of $\\frac{1}{u^2+a^2}$ is $\\frac1a\\arctan\\frac ua$. The factor $\\frac13$ is missing."
+      }
+    ],
+    "explanation": "The denominator has no real roots, so complete the square and use the arctangent form $\\int\\frac{du}{u^2+a^2}=\\frac1a\\arctan\\frac ua+C$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/long-division-and-completing-the-square",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-48",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "long-division-and-completing-the-square",
+    "difficulty": "medium",
+    "stem": "What is the value of $\\displaystyle\\int_0^1\\frac{x^2}{x^2+1}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{\\ln{\\left(2 \\right)}}{2}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac12\\ln(x^2+1)$ evaluated from 0 to 1, which would be the integral of $\\frac{x}{x^2+1}$. The numerator here is $x^2$, so divide first."
+      },
+      {
+        "label": "B",
+        "text": "$1 - \\frac{\\pi}{4}$",
+        "isCorrect": true,
+        "explanation": "Divide: $\\frac{x^2}{x^2+1}=1-\\frac{1}{x^2+1}$. Then $\\left[x-\\arctan x\\right]_0^1=1-\\frac\\pi4$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{\\pi}{4} + 1$",
+        "isCorrect": false,
+        "explanation": "The arctangent term is subtracted: $\\frac{x^2}{x^2+1}=1-\\frac{1}{x^2+1}$, not $1+\\frac{1}{x^2+1}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{\\pi}{4}$",
+        "isCorrect": false,
+        "explanation": "This is $\\int_0^1\\frac{dx}{x^2+1}$. The integrand here is $1-\\frac{1}{x^2+1}$, so the 1 contributes too."
+      }
+    ],
+    "explanation": "The degrees of numerator and denominator are equal, so divide before integrating: $\\frac{x^2}{x^2+1}=1-\\frac{1}{x^2+1}$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/long-division-and-completing-the-square",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-49",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "long-division-and-completing-the-square",
+    "difficulty": "medium",
+    "stem": "What is the value of $\\displaystyle\\int_0^2\\frac{dx}{x^2-4x+8}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{\\pi}{4}$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ from $\\frac1a$ with $a=2$ is missing."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{\\pi}{8}$",
+        "isCorrect": true,
+        "explanation": "Complete the square: $x^2-4x+8=(x-2)^2+4$. An antiderivative is $\\frac12\\arctan\\frac{x-2}{2}$. At $x=2$ it is 0 and at $x=0$ it is $\\frac12\\arctan(-1)=-\\frac\\pi8$, so the value is $0-\\left(-\\frac\\pi8\\right)=\\frac\\pi8$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{\\pi}{16}$",
+        "isCorrect": false,
+        "explanation": "The coefficient is $\\frac1a=\\frac12$, not $\\frac1{a^2}=\\frac14$."
+      },
+      {
+        "label": "D",
+        "text": "$- \\ln{\\left(2 \\right)}$",
+        "isCorrect": false,
+        "explanation": "This is $\\ln(x^2-4x+8)$ from 0 to 2, which is $\\ln4-\\ln8$. That is the antiderivative of $\\frac{2x-4}{x^2-4x+8}$, not of $\\frac{1}{x^2-4x+8}$."
+      }
+    ],
+    "explanation": "The quadratic has no real roots. Completing the square gives the arctangent form $\\int\\frac{du}{u^2+a^2}=\\frac1a\\arctan\\frac ua$ with $u=x-2$ and $a=2$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/long-division-and-completing-the-square",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-50",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "long-division-and-completing-the-square",
+    "difficulty": "hard",
+    "stem": "Which expression is $\\displaystyle\\int\\frac{2x+3}{x^2+4x+8}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\ln(x^2+4x+8)-\\frac12\\arctan\\frac{x+2}{2} + C$",
+        "isCorrect": true,
+        "explanation": "Split the numerator as $2x+3=(2x+4)-1$. The first part is the derivative of the denominator, giving $\\ln(x^2+4x+8)$. The rest is $-\\int\\frac{dx}{(x+2)^2+4}=-\\frac12\\arctan\\frac{x+2}{2}$."
+      },
+      {
+        "label": "B",
+        "text": "$\\ln(x^2+4x+8) + C$",
+        "isCorrect": false,
+        "explanation": "Only the part $2x+4$ is the derivative of the denominator. The leftover $-1$ still contributes an arctangent term."
+      },
+      {
+        "label": "C",
+        "text": "$\\ln(x^2+4x+8)+\\frac12\\arctan\\frac{x+2}{2} + C$",
+        "isCorrect": false,
+        "explanation": "$2x+3=(2x+4)-1$, so the leftover term is $-\\frac{1}{x^2+4x+8}$. It is subtracted, not added."
+      },
+      {
+        "label": "D",
+        "text": "$\\ln(x^2+4x+8)-\\arctan\\frac{x+2}{2} + C$",
+        "isCorrect": false,
+        "explanation": "The arctangent term should carry the factor $\\frac1a=\\frac12$."
+      }
+    ],
+    "explanation": "Rewrite the numerator as a multiple of the denominator's derivative plus a constant. The first piece gives a logarithm, the second (after completing the square) an arctangent.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/long-division-and-completing-the-square",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-51",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "difficulty": "easy",
+    "stem": "Which expression is $\\displaystyle\\int xe^x\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{x^{2} e^{x}}{2} + C$",
+        "isCorrect": false,
+        "explanation": "Integrating each factor separately does not work: the integral of a product is not the product of the integrals. Differentiating $\\frac{x^2}{2}e^x$ gives $xe^x+\\frac{x^2}{2}e^x$."
+      },
+      {
+        "label": "B",
+        "text": "$x e^{x} + C$",
+        "isCorrect": false,
+        "explanation": "This is $uv$ alone. The formula also subtracts $\\int v\\,du=\\int e^x\\,dx$."
+      },
+      {
+        "label": "C",
+        "text": "$x e^{x} + e^{x} + C$",
+        "isCorrect": false,
+        "explanation": "The formula is $uv-\\int v\\,du$. The second integral is subtracted."
+      },
+      {
+        "label": "D",
+        "text": "$x e^{x} - e^{x} + C$",
+        "isCorrect": true,
+        "explanation": "Let $u=x$ and $dv=e^x\\,dx$, so $du=dx$ and $v=e^x$. Then $\\int xe^x\\,dx=xe^x-\\int e^x\\,dx=xe^x-e^x$."
+      }
+    ],
+    "explanation": "A product of a polynomial and an exponential is a case for integration by parts: choose $u$ as the factor that gets simpler when differentiated.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/integration-by-parts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-52",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "difficulty": "easy",
+    "stem": "Which choice of $u$ and $dv$ is most useful for $\\displaystyle\\int x\\ln x\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$u=1$ and $dv=x\\ln x\\,dx$",
+        "isCorrect": false,
+        "explanation": "This chooses $dv$ to be the whole integrand, so $v$ is the very integral we are trying to find."
+      },
+      {
+        "label": "B",
+        "text": "$u=x$ and $dv=\\ln x\\,dx$",
+        "isCorrect": false,
+        "explanation": "This is legitimate in principle, but then $v=\\int\\ln x\\,dx$ is itself a parts problem, so it makes the work longer, not shorter."
+      },
+      {
+        "label": "C",
+        "text": "$u=\\ln x$ and $dv=x\\,dx$",
+        "isCorrect": true,
+        "explanation": "Differentiating $\\ln x$ gives the simpler $\\frac1x$, and $v=\\frac{x^2}{2}$ is easy. The new integral is $\\int\\frac{x}{2}\\,dx$."
+      },
+      {
+        "label": "D",
+        "text": "$u=x\\ln x$ and $dv=dx$",
+        "isCorrect": false,
+        "explanation": "Then $du=(\\ln x+1)\\,dx$ and $v=x$, which gives $\\int x(\\ln x+1)\\,dx$, a harder integral than the one we started with."
+      }
+    ],
+    "explanation": "Choose $u$ so that differentiating it simplifies the integral, and $dv$ so that it can be integrated directly. A logarithm is usually $u$ because its derivative is algebraic.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/integration-by-parts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-53",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "difficulty": "medium",
+    "stem": "What is the value of $\\displaystyle\\int_0^1xe^{2x}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{e^2}{2}$",
+        "isCorrect": false,
+        "explanation": "This evaluates only $\\frac{x}{2}e^{2x}$ at 1 and forgets both the second term of the antiderivative and the lower limit."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{e^2-1}{4}$",
+        "isCorrect": false,
+        "explanation": "The lower limit contributes $-\\left(-\\frac14\\right)=+\\frac14$, not $-\\frac14$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{e^2+1}{4}$",
+        "isCorrect": true,
+        "explanation": "With $u=x$ and $dv=e^{2x}dx$: $\\int xe^{2x}dx=\\frac{x}{2}e^{2x}-\\frac14e^{2x}$. At 1 this is $\\frac{e^2}{2}-\\frac{e^2}{4}=\\frac{e^2}{4}$; at 0 it is $-\\frac14$. The value is $\\frac{e^2}{4}+\\frac14$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{e^2}{4}$",
+        "isCorrect": false,
+        "explanation": "This leaves out the value of the antiderivative at the lower limit, which is $-\\frac14$ and not 0."
+      }
+    ],
+    "explanation": "Use parts with $u=x$, $dv=e^{2x}dx$, then evaluate the antiderivative at both limits. Remember $v=\\frac12e^{2x}$, not $e^{2x}$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/integration-by-parts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-54",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "difficulty": "medium",
+    "stem": "What is the value of $\\displaystyle\\int_1^e\\ln x\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-1 + 2 e$",
+        "isCorrect": false,
+        "explanation": "The second integral is subtracted: $x\\ln x-x$, not $x\\ln x+x$."
+      },
+      {
+        "label": "B",
+        "text": "$e$",
+        "isCorrect": false,
+        "explanation": "This evaluates only $x\\ln x$ and drops the $-x$ term: $\\int dx$ still has to be subtracted."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "This takes $\\frac{(\\ln x)^2}{2}$ as the antiderivative of $\\ln x$. Differentiating it gives $\\frac{\\ln x}{x}$."
+      },
+      {
+        "label": "D",
+        "text": "$1$",
+        "isCorrect": true,
+        "explanation": "Let $u=\\ln x$ and $dv=dx$, so $du=\\frac{dx}{x}$ and $v=x$. Then $\\int\\ln x\\,dx=x\\ln x-\\int dx=x\\ln x-x$. From 1 to $e$: $(e-e)-(0-1)=1$."
+      }
+    ],
+    "explanation": "There is no basic antiderivative for $\\ln x$, but parts with $dv=dx$ produces one: $\\int\\ln x\\,dx=x\\ln x-x+C$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/integration-by-parts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-55",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "difficulty": "medium",
+    "stem": "Which expression is $\\displaystyle\\int x^2e^x\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\left(x^{2} - 2 x\\right) e^{x} + C$",
+        "isCorrect": false,
+        "explanation": "The second parts step produces both $-2xe^x$ and $+2e^x$. Stopping at $-2xe^x$ leaves out the constant term $2e^x$."
+      },
+      {
+        "label": "B",
+        "text": "$\\left(x^{2} + 2 x + 2\\right) e^{x} + C$",
+        "isCorrect": false,
+        "explanation": "The first parts step subtracts: $x^2e^x-2\\int xe^x\\,dx$, so the middle term is $-2xe^x$."
+      },
+      {
+        "label": "C",
+        "text": "$\\left(x^{2} - 2 x + 2\\right) e^{x} + C$",
+        "isCorrect": true,
+        "explanation": "Parts twice. First $u=x^2$, $dv=e^xdx$ gives $x^2e^x-2\\int xe^xdx$. Then $\\int xe^xdx=xe^x-e^x$, so the result is $x^2e^x-2xe^x+2e^x=e^x(x^2-2x+2)$."
+      },
+      {
+        "label": "D",
+        "text": "$\\left(x^{2} - 2 x - 2\\right) e^{x} + C$",
+        "isCorrect": false,
+        "explanation": "The last term is $-2\\cdot(-e^x)=+2e^x$. The minus sign in front of the second integral multiplies the minus sign inside it."
+      }
+    ],
+    "explanation": "When the polynomial has degree 2, parts is applied twice, each time lowering the degree by one.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/integration-by-parts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-56",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_0^\\pi e^x\\sin x\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{e^{\\pi}-1}{2}$",
+        "isCorrect": false,
+        "explanation": "The antiderivative at 0 is $-\\frac12$, and subtracting it adds $\\frac12$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{e^{\\pi}+1}{2}$",
+        "isCorrect": true,
+        "explanation": "Two rounds of parts bring back the original integral: $I=e^x\\sin x-e^x\\cos x-I$, so $I=\\frac{e^x}{2}(\\sin x-\\cos x)$. At $\\pi$: $\\frac{e^\\pi}{2}$. At 0: $-\\frac12$. The value is $\\frac{e^\\pi}{2}+\\frac12$."
+      },
+      {
+        "label": "C",
+        "text": "$e^{\\pi}+1$",
+        "isCorrect": false,
+        "explanation": "Solving $I=\\ldots-I$ gives $2I=\\ldots$, so the antiderivative has a factor $\\frac12$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{e^{\\pi}}{2}$",
+        "isCorrect": false,
+        "explanation": "This omits the value at the lower limit: $\\frac{e^0}{2}(\\sin0-\\cos0)=-\\frac12$, not 0."
+      }
+    ],
+    "explanation": "Neither factor gets simpler under repeated differentiation, so apply parts twice. The original integral reappears, and you solve for it algebraically.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/integration-by-parts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-57",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_0^1\\arctan x\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac\\pi4$",
+        "isCorrect": false,
+        "explanation": "This keeps only $x\\arctan x$ and drops $-\\int\\frac{x}{1+x^2}dx$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac\\pi4-\\frac{\\ln2}{2}$",
+        "isCorrect": true,
+        "explanation": "Let $u=\\arctan x$, $dv=dx$. Then $\\int\\arctan x\\,dx=x\\arctan x-\\int\\frac{x}{1+x^2}dx=x\\arctan x-\\frac12\\ln(1+x^2)$. From 0 to 1: $\\frac\\pi4-\\frac12\\ln2$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac\\pi4-\\ln2$",
+        "isCorrect": false,
+        "explanation": "$\\int\\frac{x}{1+x^2}dx=\\frac12\\ln(1+x^2)$. The factor $\\frac12$ comes from $u=1+x^2$, $du=2x\\,dx$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac\\pi4+\\frac{\\ln2}{2}$",
+        "isCorrect": false,
+        "explanation": "The second integral is subtracted: $uv-\\int v\\,du$."
+      }
+    ],
+    "explanation": "An inverse trigonometric function has no basic antiderivative, but taking $dv=dx$ turns the integral into one with a rational integrand.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/integration-by-parts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-58",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "integration-by-parts",
+    "difficulty": "medium",
+    "stem": "A function $f$ has $f(2)=5$ and $\\displaystyle\\int_0^2f(x)\\,dx=7$. What is $\\displaystyle\\int_0^2xf'(x)\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$17$",
+        "isCorrect": false,
+        "explanation": "The second integral is subtracted: $[xf(x)]_0^2-\\int_0^2f(x)\\,dx$."
+      },
+      {
+        "label": "B",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "Let $u=x$, $dv=f'(x)dx$. Then $\\int_0^2xf'(x)dx=\\big[xf(x)\\big]_0^2-\\int_0^2f(x)dx=2(5)-0-7=3$."
+      },
+      {
+        "label": "C",
+        "text": "$-3$",
+        "isCorrect": false,
+        "explanation": "This subtracts in the wrong order: $\\int_0^2f-[xf]_0^2$. The formula is $uv-\\int v\\,du$."
+      },
+      {
+        "label": "D",
+        "text": "$10$",
+        "isCorrect": false,
+        "explanation": "This is $[xf(x)]_0^2$ alone. The integral of $f$ over the interval still has to be subtracted."
+      }
+    ],
+    "explanation": "Parts with $u=x$ and $dv=f'(x)\\,dx$ (so $v=f(x)$) trades an integral of $xf'$ for one of $f$, which is given.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/integration-by-parts",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-59",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "partial-fractions",
+    "difficulty": "easy",
+    "stem": "The expression $\\dfrac{1}{(x-1)(x+2)}$ is written as $\\dfrac{A}{x-1}+\\dfrac{B}{x+2}$. What are $A$ and $B$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$A=\\frac13$ and $B=\\frac13$",
+        "isCorrect": false,
+        "explanation": "Substituting $x=-2$ gives $1=B(-2-1)=-3B$, so $B$ is negative."
+      },
+      {
+        "label": "B",
+        "text": "$A=\\frac13$ and $B=-\\frac13$",
+        "isCorrect": true,
+        "explanation": "Multiply through: $1=A(x+2)+B(x-1)$. At $x=1$: $1=3A$, so $A=\\frac13$. At $x=-2$: $1=-3B$, so $B=-\\frac13$."
+      },
+      {
+        "label": "C",
+        "text": "$A=-\\frac13$ and $B=\\frac13$",
+        "isCorrect": false,
+        "explanation": "The values are swapped. Substituting $x=1$ kills the $B$ term and leaves $1=3A$."
+      },
+      {
+        "label": "D",
+        "text": "$A=1$ and $B=-1$",
+        "isCorrect": false,
+        "explanation": "Each coefficient comes from $3A=1$ and $-3B=1$. The 3 cannot be dropped."
+      }
+    ],
+    "explanation": "Clear denominators to get $1=A(x+2)+B(x-1)$ and substitute the roots $x=1$ and $x=-2$ to isolate each constant.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/partial-fractions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-60",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "partial-fractions",
+    "difficulty": "medium",
+    "stem": "Which expression is $\\displaystyle\\int\\frac{dx}{(x-1)(x+2)}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\ln\\left|\\frac{x-1}{x+2}\\right|+C$",
+        "isCorrect": false,
+        "explanation": "The coefficients are $\\pm\\frac13$, not $\\pm1$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac13\\ln\\left|\\frac{x-1}{x+2}\\right|+C$",
+        "isCorrect": true,
+        "explanation": "$\\frac{1}{(x-1)(x+2)}=\\frac13\\left(\\frac{1}{x-1}-\\frac{1}{x+2}\\right)$, so the integral is $\\frac13\\big(\\ln|x-1|-\\ln|x+2|\\big)+C$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac13\\ln\\left|\\frac{x+2}{x-1}\\right|+C$",
+        "isCorrect": false,
+        "explanation": "The $x-1$ term is the one with the positive coefficient $\\frac13$, so it goes in the numerator."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac13\\ln|(x-1)(x+2)|+C$",
+        "isCorrect": false,
+        "explanation": "The two logarithms have opposite signs, so they combine as a quotient. A product would come from adding them."
+      }
+    ],
+    "explanation": "The denominator factors into distinct linear factors, so decompose into partial fractions and integrate each term as a logarithm.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/partial-fractions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-61",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "partial-fractions",
+    "difficulty": "medium",
+    "stem": "What is the value of $\\displaystyle\\int_2^3\\frac{dx}{x^2-1}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\ln\\frac32$",
+        "isCorrect": false,
+        "explanation": "The coefficient $\\frac12$ is missing."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac12\\ln\\frac32$",
+        "isCorrect": true,
+        "explanation": "$\\frac{1}{x^2-1}=\\frac12\\left(\\frac{1}{x-1}-\\frac{1}{x+1}\\right)$, so the integral is $\\frac12\\ln\\frac{x-1}{x+1}$ from 2 to 3: $\\frac12\\left(\\ln\\frac12-\\ln\\frac13\\right)=\\frac12\\ln\\frac32$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac12\\ln\\frac83$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac12\\ln(x^2-1)$ from 2 to 3. That antiderivative would need the numerator $x$ (so that $du=2x\\,dx$); here the numerator is 1."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac12\\ln\\frac23$",
+        "isCorrect": false,
+        "explanation": "The upper limit minus the lower limit is $\\ln\\frac12-\\ln\\frac13=\\ln\\frac32$. This has them reversed."
+      }
+    ],
+    "explanation": "Factor $x^2-1=(x-1)(x+1)$, decompose, integrate, and evaluate the combined logarithm at the limits.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/partial-fractions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-62",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "partial-fractions",
+    "difficulty": "medium",
+    "stem": "Which expression is $\\displaystyle\\int\\frac{3x+5}{(x+1)(x+3)}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3\\ln|x+1|+5\\ln|x+3| + C$",
+        "isCorrect": false,
+        "explanation": "The coefficients of the numerator are not the partial-fraction constants. Find $A$ and $B$ by substituting the roots."
+      },
+      {
+        "label": "B",
+        "text": "$\\ln|x+1|-2\\ln|x+3| + C$",
+        "isCorrect": false,
+        "explanation": "At $x=-3$: $3(-3)+5=-4$ and $(x+1)=-2$, so $B=\\frac{-4}{-2}=+2$."
+      },
+      {
+        "label": "C",
+        "text": "$\\ln|x+1|+2\\ln|x+3| + C$",
+        "isCorrect": true,
+        "explanation": "Write $\\frac{3x+5}{(x+1)(x+3)}=\\frac{A}{x+1}+\\frac{B}{x+3}$. At $x=-1$: $2=2A$, so $A=1$. At $x=-3$: $-4=-2B$, so $B=2$."
+      },
+      {
+        "label": "D",
+        "text": "$2\\ln|x+1|+\\ln|x+3| + C$",
+        "isCorrect": false,
+        "explanation": "The constants are swapped. $A$ (over $x+1$) comes from substituting $x=-1$, which gives $3(-1)+5=2$ divided by $(-1+3)=2$."
+      }
+    ],
+    "explanation": "Use $3x+5=A(x+3)+B(x+1)$ and substitute $x=-1$ and $x=-3$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/partial-fractions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-63",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "partial-fractions",
+    "difficulty": "hard",
+    "stem": "Which expression is $\\displaystyle\\int\\frac{dP}{P(100-P)}$? (Treat $0<P<100$.)",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{100}\\ln|P(100-P)|+C$",
+        "isCorrect": false,
+        "explanation": "The antiderivative of $\\frac{1}{100-P}$ is $-\\ln|100-P|$ because of the inner function $100-P$. The two logarithms subtract."
+      },
+      {
+        "label": "B",
+        "text": "$\\ln\\left|\\frac{P}{100-P}\\right|+C$",
+        "isCorrect": false,
+        "explanation": "The partial-fraction constants are $\\frac1{100}$, not 1."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{100}\\ln\\left|\\frac{100-P}{P}\\right|+C$",
+        "isCorrect": false,
+        "explanation": "The $\\frac1P$ term has the positive coefficient, so $P$ is in the numerator."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{100}\\ln\\left|\\frac{P}{100-P}\\right|+C$",
+        "isCorrect": true,
+        "explanation": "$\\frac{1}{P(100-P)}=\\frac{1}{100}\\left(\\frac1P+\\frac{1}{100-P}\\right)$. Since $\\int\\frac{dP}{100-P}=-\\ln|100-P|$, the result is $\\frac{1}{100}\\big(\\ln|P|-\\ln|100-P|\\big)$."
+      }
+    ],
+    "explanation": "This is the integral that appears when solving the logistic equation $\\frac{dP}{dt}=kP(1-\\frac{P}{100})$ by separation of variables. It needs partial fractions, with care for the $100-P$ factor.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/partial-fractions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-64",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "partial-fractions",
+    "difficulty": "hard",
+    "stem": "Which expression is $\\displaystyle\\int\\frac{dx}{x^2-x-6}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac15\\ln\\left|\\frac{x+2}{x-3}\\right|+C$",
+        "isCorrect": false,
+        "explanation": "The $\\frac{1}{x-3}$ term has the positive coefficient $\\frac15$, so $x-3$ is in the numerator."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac15\\ln\\left|\\frac{x-3}{x+2}\\right|+C$",
+        "isCorrect": true,
+        "explanation": "$x^2-x-6=(x-3)(x+2)$ and $\\frac{1}{(x-3)(x+2)}=\\frac15\\left(\\frac{1}{x-3}-\\frac{1}{x+2}\\right)$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac15\\ln|(x-3)(x+2)|+C$",
+        "isCorrect": false,
+        "explanation": "The partial-fraction terms have opposite signs, so the logarithms subtract and combine as a quotient."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{2x-1}\\ln|x^2-x-6|+C$",
+        "isCorrect": false,
+        "explanation": "$\\int\\frac{dx}{u}=\\ln|u|$ only works when the numerator is $du$. Here the numerator is 1, and $du=(2x-1)\\,dx$."
+      }
+    ],
+    "explanation": "Factor the quadratic first, then decompose. The constants are $A=\\frac{1}{3+2}$ and $B=\\frac{1}{-2-3}$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/partial-fractions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-65",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "improper-integrals",
+    "difficulty": "easy",
+    "stem": "What is the value of $\\displaystyle\\int_1^\\infty\\frac{dx}{x^2}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "This keeps the antiderivative's value at infinity and forgets to subtract its value at the lower limit: $\\left[-\\frac1x\\right]_1^\\infty=0-(-1)=1$."
+      },
+      {
+        "label": "B",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "This adds the lower-limit value instead of subtracting it: it is $F(\\infty)-F(1)=0-(-1)=1$, not $0+(-1)$."
+      },
+      {
+        "label": "C",
+        "text": "$1$",
+        "isCorrect": true,
+        "explanation": "$\\int_1^b\\frac{dx}{x^2}=1-\\frac1b$, and $\\lim_{b\\to\\infty}\\left(1-\\frac1b\\right)=1$."
+      },
+      {
+        "label": "D",
+        "text": "The integral diverges",
+        "isCorrect": false,
+        "explanation": "An infinite interval does not make an integral diverge by itself. The integrand decays fast enough: $\\frac{1}{x^p}$ converges on $[1,\\infty)$ when $p>1$."
+      }
+    ],
+    "explanation": "Replace the infinite limit by a variable $b$, integrate, and take the limit as $b\\to\\infty$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/improper-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-66",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "improper-integrals",
+    "difficulty": "easy",
+    "stem": "Which statement about $\\displaystyle\\int_1^\\infty\\frac{dx}{x}$ is true?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It converges to 1",
+        "isCorrect": false,
+        "explanation": "The integral of $\\frac1x$ over $[1,b]$ is $\\ln b$, not a number that settles near 1."
+      },
+      {
+        "label": "B",
+        "text": "It diverges, because $\\ln b\\to\\infty$ as $b\\to\\infty$",
+        "isCorrect": true,
+        "explanation": "$\\int_1^b\\frac{dx}{x}=\\ln b$, which grows without bound."
+      },
+      {
+        "label": "C",
+        "text": "It converges to $e$",
+        "isCorrect": false,
+        "explanation": "$\\ln b=1$ only at $b=e$, not as $b\\to\\infty$. The limit of $\\ln b$ is $\\infty$."
+      },
+      {
+        "label": "D",
+        "text": "It converges to 0, because $\\frac1x\\to0$",
+        "isCorrect": false,
+        "explanation": "The integrand approaching 0 does not make the integral converge. It has to approach 0 fast enough, and $\\frac1x$ does not."
+      }
+    ],
+    "explanation": "Compare with $\\int_1^\\infty\\frac{dx}{x^p}$: it converges exactly when $p>1$. Here $p=1$, the borderline case, which diverges.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/improper-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-67",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "improper-integrals",
+    "difficulty": "medium",
+    "stem": "What is the value of $\\displaystyle\\int_0^\\infty e^{-2x}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "The antiderivative of $e^{-2x}$ is $-\\frac12e^{-2x}$, not $-2e^{-2x}$. Dividing by the inner coefficient gives $\\frac12$."
+      },
+      {
+        "label": "B",
+        "text": "The integral diverges",
+        "isCorrect": false,
+        "explanation": "The interval is infinite, but $e^{-2x}$ decays exponentially, so the area is finite."
+      },
+      {
+        "label": "C",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The integrand tends to 0, but the area from 0 up to any $b$ is positive and tends to $\\frac12$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": true,
+        "explanation": "$\\int_0^be^{-2x}dx=\\frac12\\left(1-e^{-2b}\\right)\\to\\frac12$."
+      }
+    ],
+    "explanation": "Take $\\lim_{b\\to\\infty}\\int_0^be^{-2x}dx$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/improper-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-68",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "improper-integrals",
+    "difficulty": "medium",
+    "stem": "What is the value of $\\displaystyle\\int_0^1\\frac{dx}{\\sqrt x}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "The integrand is unbounded at $x=0$, so this is improper: $\\lim_{a\\to0^+}\\int_a^1x^{-1/2}dx=\\lim\\left(2-2\\sqrt a\\right)=2$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "This divides by 2 instead of by $\\frac12$ in the power rule: $\\int x^{-1/2}dx=\\frac{x^{1/2}}{1/2}=2x^{1/2}$."
+      },
+      {
+        "label": "C",
+        "text": "The integral diverges",
+        "isCorrect": false,
+        "explanation": "An unbounded integrand does not guarantee divergence. $\\frac{1}{x^p}$ near 0 converges when $p<1$, and here $p=\\frac12$."
+      },
+      {
+        "label": "D",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "The antiderivative of $x^{-1/2}$ is $2x^{1/2}$. Evaluating at 1 gives 2, not 1."
+      }
+    ],
+    "explanation": "The discontinuity is at the lower limit, so replace 0 by $a$ and take $a\\to0^+$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/improper-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-69",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "improper-integrals",
+    "difficulty": "medium",
+    "stem": "For which values of $p$ does $\\displaystyle\\int_0^1\\frac{dx}{x^p}$ converge?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$p>1$",
+        "isCorrect": false,
+        "explanation": "This is the condition for convergence on $[1,\\infty)$. Near 0 the condition reverses."
+      },
+      {
+        "label": "B",
+        "text": "$p\\le1$",
+        "isCorrect": false,
+        "explanation": "At $p=1$ the integral is $\\int_a^1\\frac{dx}{x}=-\\ln a$, which diverges as $a\\to0^+$."
+      },
+      {
+        "label": "C",
+        "text": "$p\\ne1$",
+        "isCorrect": false,
+        "explanation": "For $p>1$ the integrand blows up faster than $\\frac1x$ near 0, and the integral diverges."
+      },
+      {
+        "label": "D",
+        "text": "$p<1$",
+        "isCorrect": true,
+        "explanation": "Near 0, $\\int_a^1x^{-p}dx=\\frac{1-a^{1-p}}{1-p}$ has a finite limit as $a\\to0^+$ exactly when $1-p>0$. At $p=1$ it is $-\\ln a\\to\\infty$."
+      }
+    ],
+    "explanation": "Compute $\\int_a^1x^{-p}dx$ and look at its limit as $a\\to0^+$. Notice how this differs from $\\int_1^\\infty$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/improper-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-70",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "improper-integrals",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_0^\\infty xe^{-x}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "This comes from the antiderivative $-xe^{-x}+e^{-x}$, which has a sign error: its derivative is $xe^{-x}-2e^{-x}$. The correct one is $-xe^{-x}-e^{-x}$."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "$xe^{-x}\\to0$ at infinity, but that says nothing about the area. The antiderivative at the lower limit is $-1$."
+      },
+      {
+        "label": "C",
+        "text": "$1$",
+        "isCorrect": true,
+        "explanation": "Parts gives the antiderivative $-xe^{-x}-e^{-x}$. As $b\\to\\infty$ it tends to 0 (since $be^{-b}\\to0$), and at 0 it equals $-1$. So the value is $0-(-1)=1$."
+      },
+      {
+        "label": "D",
+        "text": "The integral diverges",
+        "isCorrect": false,
+        "explanation": "The factor $x$ grows, but $e^{-x}$ decays faster, so $be^{-b}\\to0$."
+      }
+    ],
+    "explanation": "Integrate by parts first, then take the limit as the upper bound goes to infinity. $\\lim_{b\\to\\infty}be^{-b}=0$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/improper-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-71",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "improper-integrals",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_2^\\infty\\frac{dx}{x^2-1}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The integral diverges",
+        "isCorrect": false,
+        "explanation": "Each partial-fraction piece diverges separately, but together they cancel at infinity. The integrand behaves like $\\frac{1}{x^2}$ for large $x$, so the integral converges."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{\\ln{\\left(3 \\right)}}{2}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{1}{x^2-1}=\\frac12\\left(\\frac{1}{x-1}-\\frac{1}{x+1}\\right)$, so $\\int_2^b=\\frac12\\ln\\frac{x-1}{x+1}\\Big|_2^b=\\frac12\\ln\\frac{b-1}{b+1}-\\frac12\\ln\\frac13$. As $b\\to\\infty$ the first term goes to $0$, leaving $\\frac12\\ln3$."
+      },
+      {
+        "label": "C",
+        "text": "$\\ln{\\left(3 \\right)}$",
+        "isCorrect": false,
+        "explanation": "The partial-fraction coefficient $\\frac12$ is missing."
+      },
+      {
+        "label": "D",
+        "text": "$- \\frac{\\ln{\\left(3 \\right)}}{2}$",
+        "isCorrect": false,
+        "explanation": "The lower limit contributes $-\\frac12\\ln\\frac13=+\\frac12\\ln3$."
+      }
+    ],
+    "explanation": "Decompose into partial fractions, combine the logarithms before taking the limit, and the infinite parts cancel.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/improper-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-72",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "improper-integrals",
+    "difficulty": "hard",
+    "stem": "Which statement is true about $\\displaystyle\\int_0^2\\frac{dx}{(x-1)^2}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It equals 2, the absolute value of the result from the Fundamental Theorem",
+        "isCorrect": false,
+        "explanation": "This takes the absolute value of the invalid $-2$ because the integrand is positive. The $-2$ is itself the result of applying the FTC where it does not apply, and the area is actually infinite."
+      },
+      {
+        "label": "B",
+        "text": "It equals $-2$, found by the Fundamental Theorem of Calculus",
+        "isCorrect": false,
+        "explanation": "Applying the Fundamental Theorem across $x=1$ with the antiderivative $-\\frac{1}{x-1}$ gives $-1-1=-2$. But the FTC requires a function continuous on the whole interval, and this one is not."
+      },
+      {
+        "label": "C",
+        "text": "It equals 0, because the areas on the two sides of $x=1$ cancel",
+        "isCorrect": false,
+        "explanation": "Symmetry about $x=1$ does not make the two halves cancel: the integrand is positive on both sides, so their areas add."
+      },
+      {
+        "label": "D",
+        "text": "It diverges, because the integrand is unbounded inside the interval at $x=1$",
+        "isCorrect": true,
+        "explanation": "The discontinuity at $x=1$ lies in the middle, so split the integral there. $\\int_0^1\\frac{dx}{(x-1)^2}$ diverges, so the whole integral diverges."
+      }
+    ],
+    "explanation": "Check the interval for points where the integrand is undefined. An interior discontinuity forces you to split the integral and treat each half as an improper integral.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/improper-integrals",
+    "reviewed": false
+  }
+]

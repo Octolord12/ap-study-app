@@ -1,0 +1,39 @@
+{
+  "slug": "unit-9-parametric-polar-and-vector-valued-functions",
+  "order": 9,
+  "name": "Parametric Equations, Polar Coordinates, and Vector-Valued Functions",
+  "weightingMin": 10,
+  "weightingMax": 15,
+  "topics": [
+    {
+      "slug": "parametric-derivatives",
+      "order": 1,
+      "name": "Parametric Equations and Their Derivatives"
+    },
+    {
+      "slug": "parametric-arc-length",
+      "order": 2,
+      "name": "Arc Length of Parametric Curves"
+    },
+    {
+      "slug": "vector-valued-functions",
+      "order": 3,
+      "name": "Vector-Valued Functions"
+    },
+    {
+      "slug": "motion-in-the-plane",
+      "order": 4,
+      "name": "Motion in the Plane"
+    },
+    {
+      "slug": "polar-coordinates-and-derivatives",
+      "order": 5,
+      "name": "Polar Coordinates and Their Derivatives"
+    },
+    {
+      "slug": "area-in-polar-coordinates",
+      "order": 6,
+      "name": "Area in Polar Coordinates"
+    }
+  ]
+}

@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-calcbc-u2-mcq-1",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "average-vs-instantaneous-rate-of-change",
+    "difficulty": "easy",
+    "stem": "What does the average rate of change of f(x) over [a,b] represent geometrically?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The slope of the secant line connecting (a, f(a)) and (b, f(b))",
+        "isCorrect": true,
+        "explanation": "The average rate of change is exactly the slope of the line connecting the two endpoints of the interval."
+      },
+      {
+        "label": "B",
+        "text": "The slope of the tangent line at x=a, which is the left endpoint of the interval",
+        "isCorrect": false,
+        "explanation": "The slope of the tangent line at a single point describes the INSTANTANEOUS rate of change, not the average rate of change over an interval."
+      },
+      {
+        "label": "C",
+        "text": "The value of f at the midpoint of [a,b], found by averaging f(a) and f(b)",
+        "isCorrect": false,
+        "explanation": "Average rate of change is about the slope between two points, not the function's value at any particular point."
+      },
+      {
+        "label": "D",
+        "text": "The area under the curve from a to b, above the x-axis, which the secant does not measure",
+        "isCorrect": false,
+        "explanation": "Area under the curve relates to integration, a completely different concept from rate of change."
+      }
+    ],
+    "explanation": "The average rate of change over [a,b] is the slope of the secant line connecting the interval's endpoints.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/average-vs-instantaneous-rate-of-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-2",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "average-vs-instantaneous-rate-of-change",
+    "difficulty": "medium",
+    "stem": "What is the average rate of change of $f(x) = x^2$ over the interval $[1, 4]$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5",
+        "isCorrect": true,
+        "explanation": "(f(4)-f(1))/(4-1) = (16-1)/3 = 15/3 = 5."
+      },
+      {
+        "label": "B",
+        "text": "15",
+        "isCorrect": false,
+        "explanation": "This is the numerator (change in f) alone, without dividing by the change in x."
+      },
+      {
+        "label": "C",
+        "text": "3",
+        "isCorrect": false,
+        "explanation": "This is the denominator (change in x) alone, not the actual rate of change."
+      },
+      {
+        "label": "D",
+        "text": "16",
+        "isCorrect": false,
+        "explanation": "This is just f(4), not the average rate of change over the interval."
+      }
+    ],
+    "explanation": "$(f(4)-f(1))/(4-1) = (16-1)/3 = 5$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/average-vs-instantaneous-rate-of-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-3",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "average-vs-instantaneous-rate-of-change",
+    "difficulty": "medium",
+    "stem": "How is the instantaneous rate of change of f(x) at x=a defined, in terms of a limit?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\lim_{h \\to 0} \\dfrac{f(a+h) - f(a)}{h}$",
+        "isCorrect": true,
+        "explanation": "This is the standard difference-quotient definition of the instantaneous rate of change (the derivative) at x=a."
+      },
+      {
+        "label": "B",
+        "text": "$\\lim_{h \\to 0} [f(a) + h]$",
+        "isCorrect": false,
+        "explanation": "This doesn't represent a rate of change formula at all; it's just adding h to f(a)."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac{f(a)}{a}$",
+        "isCorrect": false,
+        "explanation": "Dividing the function value by the x-value is unrelated to the definition of instantaneous rate of change."
+      },
+      {
+        "label": "D",
+        "text": "$\\lim_{h \\to \\infty} \\dfrac{f(a+h) - f(a)}{h}$",
+        "isCorrect": false,
+        "explanation": "Instantaneous rate of change involves h approaching 0 (an infinitesimally small interval), not h approaching infinity."
+      }
+    ],
+    "explanation": "The instantaneous rate of change at x=a is defined as $\\lim_{h \\to 0} \\frac{f(a+h)-f(a)}{h}$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/average-vs-instantaneous-rate-of-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-4",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "average-vs-instantaneous-rate-of-change",
+    "difficulty": "hard",
+    "stem": "For $f(x) = x^2$, use the difference quotient $\\dfrac{f(3+h)-f(3)}{h}$ to find the instantaneous rate of change at x=3.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "6",
+        "isCorrect": true,
+        "explanation": "[(3+h)^2 - 9]/h = [6h+h^2]/h = 6+h, which approaches 6 as h approaches 0 -- matching the derivative 2x at x=3."
+      },
+      {
+        "label": "B",
+        "text": "3",
+        "isCorrect": false,
+        "explanation": "This is just the x-value itself, not the correctly computed rate of change."
+      },
+      {
+        "label": "C",
+        "text": "9",
+        "isCorrect": false,
+        "explanation": "This is f(3) itself (the function's value), not its rate of change."
+      },
+      {
+        "label": "D",
+        "text": "0",
+        "isCorrect": false,
+        "explanation": "The rate of change is not zero; x^2 is actively increasing at x=3."
+      }
+    ],
+    "explanation": "Simplifying the difference quotient gives $6+h$, which approaches $6$ as $h \\to 0$, matching $f'(3) = 2(3) = 6$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/average-vs-instantaneous-rate-of-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-5",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "average-vs-instantaneous-rate-of-change",
+    "difficulty": "medium",
+    "stem": "A car travels so that its position is given by $s(t) = t^2 + 3t$ (in meters, t in seconds). What is the car's average velocity from t=1 to t=3?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "7 m/s",
+        "isCorrect": true,
+        "explanation": "(s(3)-s(1))/(3-1) = [(9+9)-(1+3)]/2 = [18-4]/2 = 7."
+      },
+      {
+        "label": "B",
+        "text": "14 m/s",
+        "isCorrect": false,
+        "explanation": "This is the numerator (change in position) alone, without dividing by the change in time."
+      },
+      {
+        "label": "C",
+        "text": "4 m/s",
+        "isCorrect": false,
+        "explanation": "This doesn't represent the correct average velocity calculation."
+      },
+      {
+        "label": "D",
+        "text": "18 m/s",
+        "isCorrect": false,
+        "explanation": "This is s(3) alone, not the average velocity over the interval."
+      }
+    ],
+    "explanation": "$(s(3)-s(1))/(3-1) = (18-4)/2 = 7$ m/s.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/average-vs-instantaneous-rate-of-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-6",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "average-vs-instantaneous-rate-of-change",
+    "difficulty": "medium",
+    "stem": "Why does the instantaneous rate of change require a limit (as opposed to simply computing an average rate of change over a small interval)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Because we want the rate of change AT a single point, which requires shrinking the interval to zero width with a limit",
+        "isCorrect": true,
+        "explanation": "The limit process shrinks the interval to a single point, capturing the exact instantaneous rate rather than an approximation over a small interval."
+      },
+      {
+        "label": "B",
+        "text": "Because limits are only used for infinite intervals, so a finite interval such as [a,b] can never require one",
+        "isCorrect": false,
+        "explanation": "Limits used in this context specifically involve the interval width SHRINKING to zero, not extending to infinity."
+      },
+      {
+        "label": "C",
+        "text": "Because average rates of change are always more accurate than any limit-based calculation could be",
+        "isCorrect": false,
+        "explanation": "Average rates of change describe a broader interval's overall trend, not necessarily a \"more accurate\" measure than the instantaneous rate at a single point."
+      },
+      {
+        "label": "D",
+        "text": "There is no real distinction between the two concepts, since a small interval gives the same answer",
+        "isCorrect": false,
+        "explanation": "There is a very real, meaningful distinction: average rate of change is over an interval, while instantaneous rate is a limit at a single point."
+      }
+    ],
+    "explanation": "A limit is needed to shrink the interval width to zero, capturing the rate of change at a single exact point.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/average-vs-instantaneous-rate-of-change",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-7",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivative-definition-and-differentiability",
+    "difficulty": "easy",
+    "stem": "What is the standard limit definition of the derivative f'(x)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$f'(x) = \\lim_{h \\to 0} \\dfrac{f(x+h) - f(x)}{h}$",
+        "isCorrect": true,
+        "explanation": "This is the standard difference-quotient definition of the derivative."
+      },
+      {
+        "label": "B",
+        "text": "$f'(x) = f(x+1) - f(x)$",
+        "isCorrect": false,
+        "explanation": "This uses a fixed step of 1, not a limit approaching an infinitesimally small change, so it doesn't represent the true instantaneous derivative."
+      },
+      {
+        "label": "C",
+        "text": "$f'(x) = \\dfrac{f(x)}{x}$",
+        "isCorrect": false,
+        "explanation": "Dividing the function by x is unrelated to the derivative's definition."
+      },
+      {
+        "label": "D",
+        "text": "$f'(x) = \\lim_{x \\to 0} f(x)$",
+        "isCorrect": false,
+        "explanation": "This isn't a valid derivative formula; it doesn't involve the difference quotient or the variable h at all."
+      }
+    ],
+    "explanation": "The derivative is defined as $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h}$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-8",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivative-definition-and-differentiability",
+    "difficulty": "medium",
+    "stem": "If a function f is differentiable at x=a, what can be said about its continuity at x=a?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "f must also be continuous at x=a",
+        "isCorrect": true,
+        "explanation": "Differentiability at a point is a stronger condition that guarantees continuity at that same point."
+      },
+      {
+        "label": "B",
+        "text": "f might not be continuous at x=a",
+        "isCorrect": false,
+        "explanation": "Differentiability at a point actually GUARANTEES continuity at that point; a function can't be differentiable without also being continuous there."
+      },
+      {
+        "label": "C",
+        "text": "Differentiability has no connection to continuity",
+        "isCorrect": false,
+        "explanation": "Differentiability and continuity ARE connected; differentiability is actually a stronger condition that implies continuity."
+      },
+      {
+        "label": "D",
+        "text": "f must be discontinuous at x=a",
+        "isCorrect": false,
+        "explanation": "This is the opposite of the true relationship; differentiability implies continuity, not discontinuity."
+      }
+    ],
+    "explanation": "Differentiability at a point guarantees continuity at that point.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-9",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivative-definition-and-differentiability",
+    "difficulty": "medium",
+    "stem": "Is the converse true -- does continuity at a point guarantee differentiability at that point?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "No, a function can be continuous at a point without being differentiable there (e.g., a sharp corner)",
+        "isCorrect": true,
+        "explanation": "Continuity is necessary but not sufficient for differentiability; a function like |x| is continuous but not differentiable at x=0."
+      },
+      {
+        "label": "B",
+        "text": "Yes, continuity always guarantees differentiability, since both describe the same smooth behavior at a point",
+        "isCorrect": false,
+        "explanation": "This reverses the true one-directional relationship; continuity alone does NOT guarantee differentiability."
+      },
+      {
+        "label": "C",
+        "text": "Continuity and differentiability are always equivalent conditions for functions of one variable on any interval",
+        "isCorrect": false,
+        "explanation": "These are NOT always equivalent; differentiability is the stronger of the two conditions."
+      },
+      {
+        "label": "D",
+        "text": "Differentiability is a weaker condition than continuity, so it is easier for a function to satisfy at a point",
+        "isCorrect": false,
+        "explanation": "This also reverses the relationship; differentiability is actually the STRONGER (more restrictive) condition, not weaker."
+      }
+    ],
+    "explanation": "Continuity does not guarantee differentiability; a function can have a sharp corner and be continuous but not differentiable there.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-10",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivative-definition-and-differentiability",
+    "difficulty": "hard",
+    "stem": "The function f(x) = |x| is continuous at x=0 but not differentiable there. Why?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The left- and right-hand derivatives at x=0 are -1 and 1, so they are not equal and the derivative does not exist despite continuity",
+        "isCorrect": true,
+        "explanation": "Since the one-sided derivatives disagree, the two-sided derivative fails to exist, even though f is continuous at x=0."
+      },
+      {
+        "label": "B",
+        "text": "|x| is not continuous at x=0, because the graph has a jump at the origin where the left and right branches meet",
+        "isCorrect": false,
+        "explanation": "|x| IS continuous at x=0 (the limit and function value both equal 0 there); the issue is specifically about differentiability, not continuity."
+      },
+      {
+        "label": "C",
+        "text": "f(0) is undefined, so there is no value of the function at the origin from which a derivative could be computed",
+        "isCorrect": false,
+        "explanation": "f(0) = |0| = 0 is perfectly well-defined."
+      },
+      {
+        "label": "D",
+        "text": "|x| has no defined value anywhere on the real line, so it cannot be differentiated at x=0 or at any other point",
+        "isCorrect": false,
+        "explanation": "|x| is defined and has clear values for every real number, including at x=0."
+      }
+    ],
+    "explanation": "The left-hand and right-hand derivatives of |x| at x=0 are -1 and 1 respectively, so they disagree and the derivative doesn't exist there.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-11",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivative-definition-and-differentiability",
+    "difficulty": "medium",
+    "stem": "What geometric feature of a function's graph typically indicates a point where the function is NOT differentiable (despite possibly being continuous there)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A sharp corner, cusp, or vertical tangent line",
+        "isCorrect": true,
+        "explanation": "These features indicate the function's slope is not well-defined at that point, even if the function value itself is continuous."
+      },
+      {
+        "label": "B",
+        "text": "A smooth, rounded curve with no breaks or sharp turns anywhere",
+        "isCorrect": false,
+        "explanation": "A smooth, rounded curve is actually characteristic of a DIFFERENTIABLE function, not a non-differentiable one."
+      },
+      {
+        "label": "C",
+        "text": "A straight line segment with a constant, nonzero slope",
+        "isCorrect": false,
+        "explanation": "A straight line segment is smoothly differentiable throughout (its derivative is just the constant slope)."
+      },
+      {
+        "label": "D",
+        "text": "Any point where the value of the function is positive",
+        "isCorrect": false,
+        "explanation": "Whether a function's value is positive has no bearing on differentiability; differentiability is about the shape/smoothness of the graph."
+      }
+    ],
+    "explanation": "Sharp corners, cusps, and vertical tangent lines are geometric features that typically indicate non-differentiability.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-12",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivative-definition-and-differentiability",
+    "difficulty": "medium",
+    "stem": "What does it mean for a function to be \"differentiable on an interval\"?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The function has a well-defined derivative at every point within that interval",
+        "isCorrect": true,
+        "explanation": "Differentiability on an interval means the derivative exists at every single point in that interval."
+      },
+      {
+        "label": "B",
+        "text": "The function is defined at only one point in the interval and nowhere else on it",
+        "isCorrect": false,
+        "explanation": "Being differentiable \"on an interval\" means having a well-defined derivative at EVERY point in that interval, not just one point."
+      },
+      {
+        "label": "C",
+        "text": "The function must be a straight line throughout the interval, with a constant slope",
+        "isCorrect": false,
+        "explanation": "Differentiability doesn't require the function to be linear; many differentiable functions are curved."
+      },
+      {
+        "label": "D",
+        "text": "The function's derivative is always zero throughout the interval, so its graph is a flat line",
+        "isCorrect": false,
+        "explanation": "The derivative existing doesn't mean it must be zero everywhere; it just needs to EXIST at each point (it can take any value)."
+      }
+    ],
+    "explanation": "Differentiable on an interval means the derivative exists at every point in that interval.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivative-definition-and-differentiability",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-13",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "power-rule-and-basic-derivatives",
+    "difficulty": "easy",
+    "stem": "What is the derivative of $f(x) = x^n$, according to the Power Rule?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$f'(x) = n \\cdot x^{n-1}$",
+        "isCorrect": true,
+        "explanation": "The Power Rule states that the derivative of x^n is n times x raised to the power n-1."
+      },
+      {
+        "label": "B",
+        "text": "$f'(x) = x^{n+1}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly increases, rather than decreases, the exponent, and omits the coefficient n."
+      },
+      {
+        "label": "C",
+        "text": "$f'(x) = n \\cdot x^n$",
+        "isCorrect": false,
+        "explanation": "This incorrectly keeps the exponent as n instead of reducing it by 1."
+      },
+      {
+        "label": "D",
+        "text": "$f'(x) = x^n / n$",
+        "isCorrect": false,
+        "explanation": "This describes something closer to an antiderivative/integral form, not the derivative."
+      }
+    ],
+    "explanation": "The Power Rule: $\\frac{d}{dx}x^n = nx^{n-1}$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/power-rule-and-basic-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-14",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "power-rule-and-basic-derivatives",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = x^5$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$5x^4$",
+        "isCorrect": true,
+        "explanation": "By the power rule, bring down the exponent 5 and reduce it by 1: 5x^4."
+      },
+      {
+        "label": "B",
+        "text": "$x^4$",
+        "isCorrect": false,
+        "explanation": "This omits the coefficient 5 from the power rule."
+      },
+      {
+        "label": "C",
+        "text": "$5x^6$",
+        "isCorrect": false,
+        "explanation": "This incorrectly increases, rather than decreases, the exponent."
+      },
+      {
+        "label": "D",
+        "text": "$x^5$",
+        "isCorrect": false,
+        "explanation": "This doesn't apply the power rule at all; it's just the original function unchanged."
+      }
+    ],
+    "explanation": "By the power rule, $\\frac{d}{dx}x^5 = 5x^4$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/power-rule-and-basic-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-15",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "power-rule-and-basic-derivatives",
+    "difficulty": "medium",
+    "stem": "What is the derivative of a constant function, $f(x) = 7$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0",
+        "isCorrect": true,
+        "explanation": "The derivative of any constant is always 0, since a constant function has no rate of change."
+      },
+      {
+        "label": "B",
+        "text": "7",
+        "isCorrect": false,
+        "explanation": "The derivative of ANY constant is always 0, regardless of the constant's specific value."
+      },
+      {
+        "label": "C",
+        "text": "1",
+        "isCorrect": false,
+        "explanation": "The derivative of a constant is 0, not 1."
+      },
+      {
+        "label": "D",
+        "text": "x",
+        "isCorrect": false,
+        "explanation": "The derivative of a constant function does not depend on x; it is simply 0."
+      }
+    ],
+    "explanation": "The derivative of any constant function is 0.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/power-rule-and-basic-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-16",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "power-rule-and-basic-derivatives",
+    "difficulty": "hard",
+    "stem": "What is the derivative of $f(x) = 3x^4 - 2x^2 + 7x - 5$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$12x^3 - 4x + 7$",
+        "isCorrect": true,
+        "explanation": "Applying the power rule term by term: d/dx(3x^4)=12x^3, d/dx(-2x^2)=-4x, d/dx(7x)=7, d/dx(-5)=0."
+      },
+      {
+        "label": "B",
+        "text": "$12x^3 - 2x + 7$",
+        "isCorrect": false,
+        "explanation": "This incorrectly keeps the coefficient of the x term as -2 instead of correctly applying the power rule to get -4x."
+      },
+      {
+        "label": "C",
+        "text": "$3x^3 - 2x + 7x$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly reduce the exponents according to the power rule for each term."
+      },
+      {
+        "label": "D",
+        "text": "$12x^4 - 4x^2 + 7x$",
+        "isCorrect": false,
+        "explanation": "This doesn't reduce any of the exponents at all, essentially leaving the original function's exponents unchanged."
+      }
+    ],
+    "explanation": "Applying the power rule term by term gives $12x^3 - 4x + 7$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/power-rule-and-basic-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-17",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "power-rule-and-basic-derivatives",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = 1/x^2$ (equivalently, $x^{-2}$)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-2/x^3$",
+        "isCorrect": true,
+        "explanation": "By the power rule, d/dx(x^-2) = -2x^-3 = -2/x^3."
+      },
+      {
+        "label": "B",
+        "text": "$2/x^3$",
+        "isCorrect": false,
+        "explanation": "This has the correct magnitude but the wrong sign; the power rule requires a negative coefficient when the original exponent is negative."
+      },
+      {
+        "label": "C",
+        "text": "$-2x$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly apply the power rule; the exponent should decrease to -3, not disappear."
+      },
+      {
+        "label": "D",
+        "text": "$1/x$",
+        "isCorrect": false,
+        "explanation": "This looks like the original function form but doesn't reflect the actual derivative computation at all."
+      }
+    ],
+    "explanation": "By the power rule, $\\frac{d}{dx}x^{-2} = -2x^{-3} = -2/x^3$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/power-rule-and-basic-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-18",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "power-rule-and-basic-derivatives",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = \\sqrt{x}$ (equivalently, $x^{1/2}$)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{1}{2\\sqrt{x}}$",
+        "isCorrect": true,
+        "explanation": "By the power rule, d/dx(x^(1/2)) = (1/2)x^(-1/2) = 1/(2√x)."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{1}{2}\\sqrt{x}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly keeps the square root term unchanged rather than converting it to the correct negative-exponent form."
+      },
+      {
+        "label": "C",
+        "text": "$2\\sqrt{x}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly doubles rather than halves, and doesn't correctly apply the power rule's exponent reduction."
+      },
+      {
+        "label": "D",
+        "text": "$(1/2)x^{3/2}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly increases, rather than decreases, the exponent."
+      }
+    ],
+    "explanation": "By the power rule, $\\frac{d}{dx}x^{1/2} = \\frac{1}{2}x^{-1/2} = \\frac{1}{2\\sqrt{x}}$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/power-rule-and-basic-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-19",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivatives-of-trig-exponential-log",
+    "difficulty": "easy",
+    "stem": "What is the derivative of $f(x) = \\sin(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\cos(x)$",
+        "isCorrect": true,
+        "explanation": "This is a fundamental standard derivative: the derivative of sin(x) is cos(x)."
+      },
+      {
+        "label": "B",
+        "text": "$-\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This is actually the derivative of -cos(x), not sin(x), not the correct answer here."
+      },
+      {
+        "label": "C",
+        "text": "$-\\sin(x)$",
+        "isCorrect": false,
+        "explanation": "This is the SECOND derivative of sin(x) (the derivative of cos(x)), not the first derivative."
+      },
+      {
+        "label": "D",
+        "text": "$\\sin(x)$",
+        "isCorrect": false,
+        "explanation": "This would mean sin(x) is its own derivative, which is not correct."
+      }
+    ],
+    "explanation": "The derivative of sin(x) is cos(x).",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivatives-of-trig-exponential-log",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-20",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivatives-of-trig-exponential-log",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = \\cos(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-\\sin(x)$",
+        "isCorrect": true,
+        "explanation": "This is a fundamental standard derivative: the derivative of cos(x) is -sin(x)."
+      },
+      {
+        "label": "B",
+        "text": "$\\sin(x)$",
+        "isCorrect": false,
+        "explanation": "This is missing the negative sign that is part of the correct derivative of cos(x)."
+      },
+      {
+        "label": "C",
+        "text": "$\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This would mean cos(x) is its own derivative, which is not correct."
+      },
+      {
+        "label": "D",
+        "text": "$-\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This is the SECOND derivative of cos(x), not the first derivative."
+      }
+    ],
+    "explanation": "The derivative of cos(x) is -sin(x).",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivatives-of-trig-exponential-log",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-21",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivatives-of-trig-exponential-log",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = e^x$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$e^x$",
+        "isCorrect": true,
+        "explanation": "The exponential function e^x is unique in being its own derivative."
+      },
+      {
+        "label": "B",
+        "text": "$x \\cdot e^{x-1}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly treats e^x like a power function subject to the power rule, but the power rule doesn't apply to exponential functions with a variable exponent."
+      },
+      {
+        "label": "C",
+        "text": "$e$",
+        "isCorrect": false,
+        "explanation": "e is just a constant number (approximately 2.718); it's not the correct derivative expression."
+      },
+      {
+        "label": "D",
+        "text": "$e^x \\cdot \\ln(x)$",
+        "isCorrect": false,
+        "explanation": "This introduces an incorrect extra factor of ln(x) that doesn't belong in the derivative of e^x."
+      }
+    ],
+    "explanation": "$e^x$ is its own derivative: $\\frac{d}{dx}e^x = e^x$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivatives-of-trig-exponential-log",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-22",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivatives-of-trig-exponential-log",
+    "difficulty": "hard",
+    "stem": "What is the derivative of $f(x) = \\ln(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1/x$",
+        "isCorrect": true,
+        "explanation": "This is a fundamental standard derivative: the derivative of ln(x) is 1/x."
+      },
+      {
+        "label": "B",
+        "text": "$x$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly represent the derivative of a logarithmic function."
+      },
+      {
+        "label": "C",
+        "text": "$\\ln(x)$",
+        "isCorrect": false,
+        "explanation": "This would mean ln(x) is its own derivative, which is not correct."
+      },
+      {
+        "label": "D",
+        "text": "$1/\\ln(x)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly inverts the ENTIRE logarithm expression rather than correctly computing the actual derivative, 1/x."
+      }
+    ],
+    "explanation": "The derivative of ln(x) is 1/x.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivatives-of-trig-exponential-log",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-23",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivatives-of-trig-exponential-log",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = 3\\sin(x) + 2\\cos(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3\\cos(x) - 2\\sin(x)$",
+        "isCorrect": true,
+        "explanation": "d/dx(3sin(x)) = 3cos(x), and d/dx(2cos(x)) = -2sin(x); combining gives 3cos(x) - 2sin(x)."
+      },
+      {
+        "label": "B",
+        "text": "$3\\cos(x) + 2\\sin(x)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly keeps the sign of the second term positive, but the derivative of cos(x) introduces a negative sign."
+      },
+      {
+        "label": "C",
+        "text": "$-3\\cos(x) - 2\\sin(x)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly negates the first term as well, but the derivative of sin(x) is positive cos(x), not negative."
+      },
+      {
+        "label": "D",
+        "text": "$3\\sin(x) - 2\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly apply the derivative rules for sine and cosine."
+      }
+    ],
+    "explanation": "Differentiating term by term: $3\\cos(x) - 2\\sin(x)$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivatives-of-trig-exponential-log",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-24",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivatives-of-trig-exponential-log",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = 5e^x - 4\\ln(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$5e^x - 4/x$",
+        "isCorrect": true,
+        "explanation": "d/dx(5e^x) = 5e^x, and d/dx(-4ln(x)) = -4/x; combining gives 5e^x - 4/x."
+      },
+      {
+        "label": "B",
+        "text": "$5e^x - 4x$",
+        "isCorrect": false,
+        "explanation": "This incorrectly treats the derivative of ln(x) as if it were x, rather than the correct 1/x."
+      },
+      {
+        "label": "C",
+        "text": "$5e^x - 4$",
+        "isCorrect": false,
+        "explanation": "This drops the x entirely from the second term's derivative, which should be -4/x, not just -4."
+      },
+      {
+        "label": "D",
+        "text": "$e^x - 4/x$",
+        "isCorrect": false,
+        "explanation": "This drops the coefficient 5 from the first term's derivative."
+      }
+    ],
+    "explanation": "Differentiating term by term: $5e^x - 4/x$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/derivatives-of-trig-exponential-log",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-25",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "sum-difference-product-quotient-rules",
+    "difficulty": "easy",
+    "stem": "According to the Sum Rule, what is the derivative of $f(x) + g(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$f'(x) + g'(x)$",
+        "isCorrect": true,
+        "explanation": "The Sum Rule states that the derivative of a sum is the sum of the derivatives."
+      },
+      {
+        "label": "B",
+        "text": "$f'(x) \\cdot g'(x)$",
+        "isCorrect": false,
+        "explanation": "This describes multiplying the derivatives, which is not how the sum rule works."
+      },
+      {
+        "label": "C",
+        "text": "$f(x) + g'(x)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly leaves f(x) undifferentiated while differentiating g(x)."
+      },
+      {
+        "label": "D",
+        "text": "$f'(x) - g'(x)$",
+        "isCorrect": false,
+        "explanation": "This describes the DIFFERENCE rule's sign, not the sum rule, which uses addition throughout."
+      }
+    ],
+    "explanation": "The Sum Rule: $\\frac{d}{dx}[f(x)+g(x)] = f'(x)+g'(x)$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/sum-difference-product-quotient-rules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-26",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "sum-difference-product-quotient-rules",
+    "difficulty": "medium",
+    "stem": "What does the Product Rule state for the derivative of $f(x) \\cdot g(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$f'(x)g(x) + f(x)g'(x)$",
+        "isCorrect": true,
+        "explanation": "This is the correct Product Rule formula."
+      },
+      {
+        "label": "B",
+        "text": "$f'(x)g'(x)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly multiplies the two derivatives together directly, rather than following the actual product rule formula."
+      },
+      {
+        "label": "C",
+        "text": "$f'(x) + g'(x)$",
+        "isCorrect": false,
+        "explanation": "This describes the sum rule, not the product rule; a product of functions is NOT differentiated by simply adding the individual derivatives."
+      },
+      {
+        "label": "D",
+        "text": "$f(x)g(x)$",
+        "isCorrect": false,
+        "explanation": "This is just the original product itself, not its derivative."
+      }
+    ],
+    "explanation": "The Product Rule: $\\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/sum-difference-product-quotient-rules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-27",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "sum-difference-product-quotient-rules",
+    "difficulty": "medium",
+    "stem": "What does the Quotient Rule state for the derivative of $f(x)/g(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$",
+        "isCorrect": true,
+        "explanation": "This is the correct Quotient Rule formula."
+      },
+      {
+        "label": "B",
+        "text": "$f'(x)/g'(x)$",
+        "isCorrect": false,
+        "explanation": "Simply dividing the two derivatives directly does not correctly represent the quotient rule."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac{f'(x)g(x) + f(x)g'(x)}{[g(x)]^2}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly uses addition in the numerator instead of subtraction, which is actually the product rule's numerator pattern, not the quotient rule's."
+      },
+      {
+        "label": "D",
+        "text": "$f'(x)g(x) - f(x)g'(x)$",
+        "isCorrect": false,
+        "explanation": "This omits the crucial division by [g(x)]^2 in the denominator."
+      }
+    ],
+    "explanation": "The Quotient Rule: $\\frac{d}{dx}\\left[\\frac{f(x)}{g(x)}\\right] = \\frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/sum-difference-product-quotient-rules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-28",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "sum-difference-product-quotient-rules",
+    "difficulty": "hard",
+    "stem": "Find the derivative of $f(x) = x^2 \\sin(x)$ using the Product Rule.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2x\\sin(x) + x^2\\cos(x)$",
+        "isCorrect": true,
+        "explanation": "Product rule: d/dx(x^2)·sin(x) + x^2·d/dx(sin(x)) = 2x·sin(x) + x^2·cos(x)."
+      },
+      {
+        "label": "B",
+        "text": "$2x\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This only accounts for part of the product rule (differentiating x^2 and multiplying by the derivative of sin(x)), while dropping the other necessary term."
+      },
+      {
+        "label": "C",
+        "text": "$x^2\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This only accounts for the second term of the product rule, dropping the first term entirely."
+      },
+      {
+        "label": "D",
+        "text": "$2x\\sin(x) - x^2\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly uses subtraction between the two terms, but the product rule requires addition, not subtraction."
+      }
+    ],
+    "explanation": "By the Product Rule: $\\frac{d}{dx}[x^2\\sin(x)] = 2x\\sin(x) + x^2\\cos(x)$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/sum-difference-product-quotient-rules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-29",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "sum-difference-product-quotient-rules",
+    "difficulty": "medium",
+    "stem": "Find the derivative of $f(x) = e^x/x$ using the Quotient Rule.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{xe^x - e^x}{x^2}$",
+        "isCorrect": true,
+        "explanation": "Quotient rule: [e^x·x - e^x·1]/x^2 = [xe^x - e^x]/x^2."
+      },
+      {
+        "label": "B",
+        "text": "$e^x/x^2$",
+        "isCorrect": false,
+        "explanation": "This drops the numerator's second term (the derivative of the denominator's contribution), missing part of the quotient rule."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac{e^x + xe^x}{x^2}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly uses addition in the numerator instead of the required subtraction for the quotient rule."
+      },
+      {
+        "label": "D",
+        "text": "$e^x \\cdot x$",
+        "isCorrect": false,
+        "explanation": "This doesn't apply the quotient rule at all; it looks more like an incorrect simplification unrelated to the actual formula."
+      }
+    ],
+    "explanation": "By the Quotient Rule: $\\frac{d}{dx}\\left[\\frac{e^x}{x}\\right] = \\frac{xe^x - e^x}{x^2}$.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/sum-difference-product-quotient-rules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-mcq-30",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "sum-difference-product-quotient-rules",
+    "difficulty": "medium",
+    "stem": "Which differentiation rule would be most appropriate to differentiate $f(x) = (3x^2 + 1)(x^3 - 2x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Product Rule, since f(x) is a product of two separate functions",
+        "isCorrect": true,
+        "explanation": "f(x) is structured as a product of two polynomial expressions, so the Product Rule is the appropriate tool."
+      },
+      {
+        "label": "B",
+        "text": "The Quotient Rule, since there is division involved in the expression",
+        "isCorrect": false,
+        "explanation": "There is no division in this expression; it's a product of two polynomial expressions, not a quotient."
+      },
+      {
+        "label": "C",
+        "text": "The Power Rule alone, without needing any other rule or any expansion",
+        "isCorrect": false,
+        "explanation": "While the Power Rule is used within the computation, the overall structure (a product of two non-constant expressions) specifically requires the Product Rule."
+      },
+      {
+        "label": "D",
+        "text": "The Sum Rule, since there are multiple terms being added together in the expression",
+        "isCorrect": false,
+        "explanation": "This expression is a PRODUCT of two factors, not a sum of separate terms at the top level; the Sum Rule wouldn't correctly handle this structure."
+      }
+    ],
+    "explanation": "Since f(x) is a product of two polynomial factors, the Product Rule is the appropriate differentiation technique.",
+    "conceptLink": "ap-calc-bc/unit-2-differentiation-definition-and-properties/sum-difference-product-quotient-rules",
+    "reviewed": false
+  }
+]

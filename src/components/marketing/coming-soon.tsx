@@ -4,7 +4,7 @@ import { WaitlistForm } from "@/components/marketing/waitlist-form";
 // Shown on the signed-out landing page and at the bottom of the signed-in
 // Today screen, so its copy can't refer to anything else on the page.
 // Subjects we would like to add. Not built, no dates promised; edit freely.
-const PLANNED_SUBJECTS = ["AP Biology", "AP Calculus BC"];
+const PLANNED_SUBJECTS = ["AP Biology"];
 
 export function ComingSoon() {
   return (

@@ -8,7 +8,8 @@ a tool for one family; built so it can scale into a public product later
 without a rewrite, but not over-engineered for that future.
 
 Launch courses: AP Computer Science A, AP World History: Modern, AP Calculus
-AB, AP Physics 1. AP U.S. History was added afterwards as a fifth course (see "AP U.S. History").
+AB, AP Physics 1. AP U.S. History was added afterwards as a fifth course (see "AP U.S. History"),
+and AP Calculus BC as a sixth (see "AP Calculus BC").
 
 ## Stack (and why)
 
@@ -1169,8 +1170,8 @@ content is not exposed.
 - The "Coming soon" section (`ComingSoon`) is shown in two places: the bottom of
   the signed-out landing page and the bottom of the signed-in Today screen (both
   its first-course picker and its main view), so its copy must not refer to
-  anything else on the page. Subjects listed in it are the owner's examples (AP Biology, AP Calculus BC),
-  marked "Planned", no dates. AP U.S. History was on the list until it shipped. The copy states no
+  anything else on the page. Subjects listed in it are the owner's examples (now only AP Biology),
+  marked "Planned", no dates. AP U.S. History and AP Calculus BC were on the list until they were built. The copy states no
   count of exams (the component has no data of its own); the landing page and the courses page
   headline derive "five exams" from the course list (`countWord`, `lib/count-word.ts`).
 - **Testimonials are real quotes only.** `lib/marketing/testimonials.ts` renders
@@ -1798,6 +1799,68 @@ as World History, so no engine change: the exam builder already draws SAQ/DBQ/LE
 - **Effects**: exam simulations draw from the whole pool (so a third of a U.S. History exam's questions
   are hard-set items), hard items earn the top XP tier, and the course appears for students on seeding.
 
+## AP Calculus BC (the sixth course)
+
+Started 2026-10-09 (owner: "let's add another AP class", then chose Calculus BC at full size). **The content is written and validated, and was seeded into the shared
+database on 2026-10-09 (all of it unreviewed); it is not pushed yet, so the live site does not show the course until the code that lists it is deployed** (see "Status" at the end
+of this section).
+
+- **Facts used** (AP Central, checked 2026-10-09): the exam format is identical to Calc AB's for May 2027 (42 MCQ in 1 h 40 +
+  6 FRQ in 1 h 30, 3 h 10 in all), so `examFormat` is the same data. The course has 10 units, with the BC multiple-choice weightings
+  5-10, 5-10, 5-10, 5-10, 10-15, 15-20, 5-10, 5-10, 10-15, 15-20. The topic list comes from the Course and Exam Description (a PDF the owner approved
+  downloading; the text was extracted with PDFKit, since the machine has no PDF tool). **Corrections that PDF made to what was assumed**: arc length of
+  `y = f(x)` is Unit 8 (8.13, BC only), not Unit 9; Unit 6 also has "long division and completing the square" (6.10), which our AB bank never covered.
+- **Structure**: slug `ap-calc-bc`, id prefix `ap-calcbc-`, name "AP Calculus BC", 10 units and **58 topics** (`make_units.py` writes them). Units 1-8 keep AB's unit and
+  topic slugs (they are unique per course, so they can repeat) and add: Unit 6 long division / completing the square, integration by parts, partial fractions, improper integrals;
+  Unit 7 Euler's method, logistic models; Unit 8 arc length and distance traveled. Unit 9 has 6 topics and Unit 10 has 10, all new.
+- **Content: 529 MCQs, 55 FRQs, 58 refreshers.**
+  - **Units 1-8 start as copies of Calc AB** (`derive_from_ab.py`: 360 MCQs, 40 FRQs, 35 refreshers). Only identity changes (ids to `ap-calcbc-...`,
+    `conceptLink` to `ap-calc-bc/...`, `reviewed: false`); a check compared every one with its original field by field. **Edit the AB originals and re-run the script**,
+    never the copies. Why copy instead of rewriting: BC contains all of AB, and 400 items that say the same thing again would add review work for no teaching gain. The catch:
+    a student enrolled in both courses sees the same questions twice.
+  - **New BC-only items**: 169 MCQs and 15 FRQs in files named `unit-N-bc.json` (never touched by `derive_from_ab.py`). Units 6-8: 49 MCQs + 5 FRQs for the BC-only topics
+    (ids from `mcq-46` and `frq-6`, after AB's 1-45 and 1-5). Units 9 and 10 are entirely new, 60 MCQs + 5 FRQs each (ids from 1). **That is more than the
+    first estimate** (about 25 for units 6-8): three or four questions per topic is too few for "Practice this topic", which draws 10.
+  - **FRQs are 9 points each** with nine one-point rubric lines, like the real exam (AB's are 4 and 7).
+  - **Refreshers**: the 35 copied plus 23 new. Units 6-8's new ones are in `refreshers/unit-N-bc.json`, units 9 and 10 in `unit-N.json`.
+- **How correctness is established**: the same discipline as Calc AB. `scripts/content-authoring/ap-calc-bc/` has `lib.py` (a sympy-based `Bank` on top of `../authoring.py`) and
+  `u6_bc.py` .. `u10_bc.py` (units 9 and 10 are assembled from `u9_a/b/c/frq.py` and `u10_a/b/c/frq.py`). Every number in a stem, choice or explanation is computed from the same sympy
+  objects as the answer; each wrong choice is a named mistake and `Bank.mcq` refuses duplicate or mathematically equal choices. Beyond that: the two-curve polar-area setups were also checked
+  against an independent grid count in Cartesian coordinates; calculator items give 3 decimals computed with sympy, each distractor a different named slip; ratio and limit claims are checked
+  with `limit`, Taylor and series claims with `series`/`summation`. **Not machine-checked**: the hand-written explanations of why each wrong choice is wrong, and every rubric and sample response.
+  Those are what the owner's review is for. **Caught while proofreading, not by any check**: a refresher whose displayed intermediate step lacked a factor of 1/2 although its final number was right (the
+  sympy assert only compared the final value), a free-response prompt that said "the graphs are shown" with no graph, and a "which condition fails?" question where two conditions failed. Read
+  the displayed steps, not just the answers.
+- **No diagrams for units 9-10**: the diagram support is piecewise-linear x-y graphs (separate x and y scales) and force diagrams, so polar and parametric curves would look distorted.
+  Curves are described in words. Slope fields stay word-described, as in AB.
+- **Length tell**: on the first pass the right answer was uniquely the longest in 39% of the wordy "which statement is correct" questions; four were adjusted and it is 26% now (chance is 25%).
+- **Refresher equations**: 12 of the new display equations were wider than a 343px phone column (up to 517px) and were split into `aligned` lines; all 49 in the course now measure 343px or less.
+  `scripts/content-authoring/display-widths.ts` automates the first half of the measurement (its header lists the steps). `render-audit.ts` now also covers `*-bc.json` files (it only read
+  `*-hard.json` before, so it had not looked at any new item until that was fixed).
+- **Code changes** (small): `lib/content/math-courses.ts` includes `ap-calc-bc` (notebook-paper cards, plain-text-math typesetting); "AP Calculus BC" is off the Coming soon list (only AP Biology is left);
+  `tests/math-courses.test.ts` (mutation-checked) and `tests/coming-soon.test.tsx` cover them. The "five exams" headlines come from the course count, so they say "six" once the course is seeded.
+- **Known deviations**: (0) **the free-response draw is uniform too**: of 55 prompts only 10 are in Units 9-10 and 15 are the new ones, so a BC exam can have no series, parametric or polar
+  free-response at all (about 28% of draws have none from Units 9-10; the first scratch exam drew six Calc AB copies), whereas the real exam always covers them. (1) the exam draw is uniform over the pool, so Units 9 and 10 make up 22.7% of a BC exam against 25-35% on the real one (and Unit 6 13.6% against 15-20%). A draw weighted by
+  the unit weightings would fix it for every course, but it is an engine change nobody has asked for. (2) The calculator and no-calculator parts are not modeled (same as AB). (3) Parts of the real exam
+  that show a graph or a slope field are text only here.
+- **Tools**: `make_units.py`, `derive_from_ab.py`, `u6_bc.py` .. `u10_bc.py` in `scripts/content-authoring/ap-calc-bc/`; the refresher scripts are in `ap-calc-bc-refreshers/` (`common.py` plus `u6.py` .. `u10.py`, each re-checking
+  its worked examples with sympy). A script overwrites its output, so edit the script. Checks after any change: `npm run content:validate`, `npx tsx scripts/content-authoring/render-audit.ts ap-calc-bc`, `npm run test`.
+- **Seeded 2026-10-09** with `npm run content:seed -- ap-calc-bc` (about 8 minutes; "approvals kept: 0" since nothing existed). Verified read-only against the files afterwards (`verify-bc.ts` in the session scratch folder
+  compared every question, choice, free-response prompt, rubric, refresher, unit and topic, and the course's `examFormat`, with 0 differences), and the whole database against a pre-seed snapshot: only the new course's rows
+  were added (+529 questions, +2,116 choices, +55 prompts, +10 units, +58 topics, +1 course), the five existing courses and every user's per-table counts were identical.
+- **Checked in the browser** (2026-10-09, scratch account `scratch_bc` / `scratch-bc@example.com`, created by the real signup form on the local dev server, deleted afterwards; counts then matched the post-seed snapshot exactly):
+  the courses page says "Six exams. Pick one."; the BC page shows 10 units with the BC weightings and the exam as 42 multiple choice / 6 free response in 3 h 10; all 58 refresher pages fetched as that user (four sections each, 1,280
+  formulas, 0 KaTeX errors, no raw TeX, practice and report links, the unchecked notice); all 169 new questions through the real quiz page (4 choices each, 0 KaTeX errors, no raw TeX); all 15 new free-response pages; refresher
+  search (including that a TeX word such as `dfrac` matches nothing); a real exam (48 items, clock 3:09:56) submitted blank, whose results page showed 0/42 with a by-unit breakdown that includes Units 9 and 10; a real quiz question
+  answered with its per-choice explanations; and at 375px the course, unit, refresher, quiz and free-response pages (no overflow, display equations 343px). Server log: no errors.
+- **Proofreading found five more explanation errors after the code checks had passed** (so the generator asserts do not cover prose): in the browser, a wrong choice that said a sign slip "gives -1" although the correct work also has dx/dθ = -1 (the slip that gives
+  -1 is a plus sign); and, in a full read of all 169 questions and 15 prompts, a distractor explanation that described the correct answer, one for 1/2 in the sqrt(x) integral, one for pi in the position-from-velocity question, and
+  a repeating-decimal distractor (9/10) with a nonsensical explanation (replaced by 3/10, from using the ratio 1/10). **Fixed in the files, and the three fixed after the first seed (u9-mcq-23, u9-mcq-42, u6-mcq-68) were re-seeded the same day** (before it, `verify-bc.ts` showed exactly those three rows differing from the files; after it, 0 differences, and the
+  whole-database snapshot was identical to the one taken just before, since the re-seed changed only those rows' choice text). The seed's approval logic needed nothing here because every BC row is unreviewed.
+- **Status**: to do, (1) decide with the owner whether to carry over the approvals the 400 copied items have in Calc AB (a database write by id, like the earlier re-approvals; the files say `reviewed: false`, and the new items always
+  start unreviewed), (2) commit and push (the notebook-paper cards, plain-text-math typesetting and the Coming soon change deploy with it). **Seeding made the course visible on the live site before the code was pushed** (the landing page and the courses list
+  read the shared database): as of 2026-10-09 the live landing page shows a BC card and still lists BC under "Coming soon", and BC pages lack the math-course styling until the push. The same will happen with any course seeded before its code is deployed: push first, or in the same sitting.
+
 ## Forgot password and email
 
 Built 2026-10-05 and **not live until a domain is verified** (see "Turning it on"). Resend is the
@@ -1918,6 +1981,7 @@ in app logic — updating them should be a data edit.
 | AP World History: Modern | 9 units, c.1200 CE–present | 55 MCQ + 3 SAQ (95min) + 1 DBQ + 1 LEQ (100min), 3h15m | **May 2027, published** (AP Central "AP History Exam Updates", checked 2026-10-09): all 3 SAQs required (Q1 secondary text source(s), Q2 primary text source, Q3 primary or secondary *non-text* source, each a different period), one required LEQ, DBQ over a wider chronological range, multiple choice and rubrics unchanged, **section timing not specified**. Our data already has 3 SAQ + 1 DBQ + 1 LEQ; our SAQs are text only, so a non-text (image or map) Q3 can't be modeled (diagram support covers only graphs and force diagrams). |
 | AP Calculus AB | 8 units | 42 MCQ (Part A 29 questions, 62 min, no calculator; Part B 13, 38 min, graphing calculator) in 1h40, then 6 FRQ (Part A 2, 30 min, graphing calculator; Part B 4, 60 min, none) in 1h30; 3h10m | **May 2027, published** (AP Central AP Calculus AB exam page, checked 2026-10-09; the page text said the multiple-choice count and timing "have also been updated" and course content is unchanged). Our data matched in counts and total; per-section minutes corrected to 100 and 90. The calculator and no-calculator parts are not modeled. These numbers came from the page through a summarizer, so look at AP Central before relying on them for anything exact. |
 | AP Physics 1 | 8 units (Fluids added as Unit 8) | 40 MCQ + 4 FRQ | **Already redesigned for 2024-25** — if referencing old prep material, it may predate this. |
+| AP Calculus BC | 10 units (AB's 8 plus Parametric/Polar/Vector-Valued and Infinite Sequences and Series) | 42 MCQ (Part A 29 questions, 62 min, no calculator; Part B 13, 38 min, graphing calculator) in 1h40, then 6 FRQ (Part A 2, 30 min, graphing calculator; Part B 4, 60 min, none) in 1h30; 3h10m | **Same format as AB for May 2027** (AP Central AP Calculus BC exam page, checked 2026-10-09). Unit weightings 5-10, 5-10, 5-10, 5-10, 10-15, 15-20, 5-10, 5-10, 10-15, 15-20. |
 | AP U.S. History | 9 units, 1491 to the present | 55 MCQ + 3 SAQ (all required) + 1 DBQ + 1 LEQ, 3h15m | **May 2027, published**: the same changes as World History above (see that row). |
 
 ## Milestone status
@@ -2044,6 +2108,8 @@ in app logic — updating them should be a data edit.
       base and hard sets in one pass), the existing 2026-10-05 length-tell fix applied while
       writing it, `Coming soon` updated, headlines that said "four exams" now derived from the course
       count. See "AP U.S. History" above.
+- [ ] **Post-launch: AP Calculus BC (2026-10-09, in progress).** A sixth course: Calc AB's units 1-8 copied, 169 new MCQs, 15 new FRQs and 23 new refreshers for the BC-only topics and
+      units 9-10 (parametric, polar, vector-valued functions; series). Written, validated, tested, **seeded** (unreviewed, re-seeded once for three explanation fixes) and checked in the browser; the approvals decision and the push remain. See "AP Calculus BC".
 - [x] **Post-launch: class tools, teacher role, parent link, search (2026-10-09).** Rename, hand over, new invite code, delete, block, an admin-granted teacher role gating
       `/teacher`, a student-made read-only parent link, refresher search, secure invite codes, uniform question draws. Three additive migrations. See "Social",
       "Teachers and /teacher", "Parent link" and "Refresher search".
@@ -2168,6 +2234,8 @@ in app logic — updating them should be a data edit.
   real exam (60 items: 55 multiple choice, then Short answer 1-3 of 3, Document-based question, Long essay;
   3:15 clock), submitted it blank and read the results page. Deleted afterwards; every count, including each
   real student's, matched the post-seed snapshot.
+  The AP Calculus BC course was checked with `scratch_bc` / `scratch-bc@example.com` (2026-10-09; signed up through the real form on the local dev server, never promoted to ADMIN; see "AP Calculus BC");
+  deleted afterwards and every count matched the post-seed snapshot.
   Unfriending and cancelling a sent request were checked with two scratch accounts, `scratch_fa` and `scratch_fb`
   (`scratch-fa@example.com`, `scratch-fb@example.com`, 2026-10-09), signed in at once by using `localhost:3000` for one and
   `127.0.0.1:3000` for the other (the browser keeps separate sessions per origin): request sent, the other side sees it, cancel

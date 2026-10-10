@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ap-calcbc-u3-frq-4",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "prompt": "Consider the curve $C$ given by $x^2y+y^3=10$. The point $(1,2)$ lies on $C$.\n\n**(a)** Show that $\\dfrac{dy}{dx}=-\\dfrac{2xy}{x^2+3y^2}$.\n\n**(b)** Find an equation of the line tangent to $C$ at $(1,2)$.\n\n**(c)** Find all points on $C$ at which the tangent line is horizontal. Show that $C$ has no point with a vertical tangent.\n\n**(d)** Find $\\dfrac{d^2y}{dx^2}$ at $(1,2)$. Is $y$, as a function of $x$, concave up or concave down at that point? Justify your answer.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 2,
+        "description": "(a) Differentiates implicitly with product rule on $x^2y$ and chain rule on $y^3$, and solves for $\\frac{dy}{dx}$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Finds slope $-\\frac{4}{13}$ and the tangent line $y-2=-\\frac4{13}(x-1)$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Sets the numerator $2xy=0$; rules out $y=0$ (not on $C$) and finds $x=0$, $y=\\sqrt[3]{10}$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Shows the denominator $x^2+3y^2$ is never 0 on $C$ (it would require $(0,0)$, which is not on $C$)"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Differentiates $\\frac{dy}{dx}$ again, substituting $\\frac{dy}{dx}=-\\frac4{13}$, to find $-\\frac{660}{2197}$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Concludes concave down because the second derivative is negative"
+      }
+    ],
+    "sampleResponse": "(a) $2xy+x^2y'+3y^2y'=0$, so $y'(x^2+3y^2)=-2xy$ and $y'=-\\frac{2xy}{x^2+3y^2}$.\n(b) At $(1,2)$: $y'=-\\frac{4}{1+12}=-\\frac4{13}$. Tangent: $y-2=-\\frac4{13}(x-1)$.\n(c) $y'=0$ requires $2xy=0$. If $y=0$ the curve equation gives $0=10$, impossible. If $x=0$, $y^3=10$, so the point is $\\left(0,\\sqrt[3]{10}\\right)$. A vertical tangent would need $x^2+3y^2=0$, which forces $x=y=0$, but $(0,0)$ is not on $C$.\n(d) With $N=-2xy$ and $D=x^2+3y^2$: $y''=\\frac{N'D-ND'}{D^2}$ with $N'=-2y-2xy'$ and $D'=2x+6yy'$. At $(1,2)$, $y'=-\\frac4{13}$: $N=-4$, $N'=-\\frac{44}{13}$, $D=13$, $D'=-\\frac{22}{13}$. So $y''=\\frac{-44-\\frac{88}{13}}{169}=-\\frac{660}{2197}$. Since $y''<0$, the curve is concave down at that point.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-frq-5",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "prompt": "The differentiable functions $f$ and $g$ have the values shown in the table. Assume $f'(x)>0$ for all $x$.\n\n| $x$ | 1 | 2 | 3 |\n|---|---|---|---|\n| $f(x)$ | 3 | 5 | 8 |\n| $f'(x)$ | 2 | 4 | 7 |\n| $g(x)$ | 2 | 3 | 1 |\n| $g'(x)$ | $-1$ | 6 | 5 |\n\n**(a)** Let $h(x)=f(g(x))$. Find $h'(1)$ and $h'(2)$.\n\n**(b)** Let $k(x)=\\left[f(x)\\right]^2g(x)$. Find $k'(2)$.\n\n**(c)** Let $m$ be the inverse function of $f$. Find $m'(5)$, and explain why $f$ has an inverse.\n\n**(d)** Find an equation of the line tangent to the graph of $y=h(x)$ at $x=1$.",
+    "pointValue": 7,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Applies the chain rule: $h'(1)=f'(g(1))g'(1)=f'(2)(-1)=-4$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) $h'(2)=f'(g(2))g'(2)=f'(3)\\cdot6=42$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Uses the product rule with the chain rule: $k'(x)=2f(x)f'(x)g(x)+[f(x)]^2g'(x)$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Evaluates $k'(2)=2(5)(4)(3)+25(6)=270$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Finds $m'(5)=\\frac{1}{f'(2)}=\\frac14$ (since $f(2)=5$)"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(c) Explains $f'>0$ means $f$ is increasing, so it is one-to-one"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(d) Finds $h(1)=f(2)=5$ and the line $y-5=-4(x-1)$"
+      }
+    ],
+    "sampleResponse": "(a) $h'(1)=f'(g(1))\\,g'(1)=f'(2)(-1)=-4$. $h'(2)=f'(g(2))\\,g'(2)=f'(3)(6)=42$.\n(b) $k'(x)=2f(x)f'(x)g(x)+[f(x)]^2g'(x)$, so $k'(2)=2(5)(4)(3)+(25)(6)=120+150=270$.\n(c) Since $f(2)=5$, $m(5)=2$, and $m'(5)=\\frac{1}{f'(m(5))}=\\frac1{f'(2)}=\\frac14$. $f$ has an inverse because $f'(x)>0$ means $f$ is strictly increasing, hence one-to-one.\n(d) $h(1)=f(g(1))=f(2)=5$ and $h'(1)=-4$. Tangent line: $y-5=-4(x-1)$.",
+    "reviewed": false
+  }
+]

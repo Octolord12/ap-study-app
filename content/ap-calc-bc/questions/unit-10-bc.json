@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "ap-calcbc-u10-mcq-1",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "convergent-and-geometric-series",
+    "difficulty": "easy",
+    "stem": "What is the sum of the series $\\sum_{n=0}^{\\infty}3\\left(\\frac12\\right)^n$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "3 is the first term. The sum includes all the terms."
+      },
+      {
+        "label": "B",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "This uses $\\frac{a}{1+r}=\\frac{3}{3/2}$. The formula has $1-r$ in the denominator."
+      },
+      {
+        "label": "C",
+        "text": "$6$",
+        "isCorrect": true,
+        "explanation": "A geometric series with first term $a=3$ and ratio $r=\\frac12$ has sum $\\frac{a}{1-r}=\\frac{3}{1/2}=6$."
+      },
+      {
+        "label": "D",
+        "text": "The series diverges",
+        "isCorrect": false,
+        "explanation": "A geometric series converges when $|r|<1$, and here $r=\\frac12$."
+      }
+    ],
+    "explanation": "For $|r|<1$, $\\sum_{n=0}^\\infty ar^n=\\frac{a}{1-r}$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/convergent-and-geometric-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-2",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "convergent-and-geometric-series",
+    "difficulty": "easy",
+    "stem": "What is the sum of the series $\\sum_{n=1}^{\\infty}4\\left(-\\frac13\\right)^{n-1}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "4 is the first term, not the sum."
+      },
+      {
+        "label": "B",
+        "text": "$6$",
+        "isCorrect": false,
+        "explanation": "This uses $\\frac{a}{1-|r|}=\\frac{4}{2/3}$. The ratio is negative, so the denominator is $1-r=1+\\frac13$."
+      },
+      {
+        "label": "C",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "The first term is $a=4$ and the ratio is $r=-\\frac13$. The sum is $\\frac{4}{1-(-1/3)}=\\frac{4}{4/3}=3$."
+      },
+      {
+        "label": "D",
+        "text": "The series diverges",
+        "isCorrect": false,
+        "explanation": "A negative ratio does not cause divergence. The series converges because $|r|=\\frac13<1$."
+      }
+    ],
+    "explanation": "Identify the first term and the common ratio (with its sign), and check $|r|<1$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/convergent-and-geometric-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-3",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "convergent-and-geometric-series",
+    "difficulty": "medium",
+    "stem": "What is the sum of the series $\\sum_{n=1}^{\\infty}\\dfrac{5}{3^n}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{15}{2}$",
+        "isCorrect": false,
+        "explanation": "This uses 5 as the first term, which is the value at $n=0$. The series starts at $n=1$, so the first term is $\\frac53$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{5}{3}$",
+        "isCorrect": false,
+        "explanation": "$\\frac53$ is the first term only."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{5}{2}$",
+        "isCorrect": true,
+        "explanation": "The first term (at $n=1$) is $\\frac53$ and the ratio is $\\frac13$. The sum is $\\frac{5/3}{1-1/3}=\\frac{5/3}{2/3}=\\frac52$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "The first term is $\\frac53$, not $\\frac13$."
+      }
+    ],
+    "explanation": "When the series starts at $n=1$, the first term is the value at $n=1$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/convergent-and-geometric-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-4",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "convergent-and-geometric-series",
+    "difficulty": "medium",
+    "stem": "The repeating decimal $0.272727\\ldots$ can be written as the geometric series $\\frac{27}{100}+\\frac{27}{100^2}+\\frac{27}{100^3}+\\cdots$. What fraction is it equal to?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{27}{100}$",
+        "isCorrect": false,
+        "explanation": "This is the first term only."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{3}{10}$",
+        "isCorrect": false,
+        "explanation": "This uses the ratio $\\frac1{10}$: $\\frac{27/100}{1-1/10}$. The repeating block has two digits, so each term is $\\frac{1}{100}$ of the one before."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{27}{101}$",
+        "isCorrect": false,
+        "explanation": "This uses $1+r$ in the denominator: $\\frac{27/100}{1+1/100}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{3}{11}$",
+        "isCorrect": true,
+        "explanation": "$a=\\frac{27}{100}$ and $r=\\frac1{100}$, so the sum is $\\frac{27/100}{1-1/100}=\\frac{27}{99}=\\frac{3}{11}$."
+      }
+    ],
+    "explanation": "A repeating block of $k$ digits is a geometric series with ratio $10^{-k}$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/convergent-and-geometric-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-5",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "convergent-and-geometric-series",
+    "difficulty": "medium",
+    "stem": "For which values of $x$ does the series $\\sum_{n=0}^{\\infty}\\dfrac{(x-1)^n}{2^n}$ converge?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$x<3$",
+        "isCorrect": false,
+        "explanation": "The condition is an absolute value: $-2<x-1<2$. Values below $-1$ also make the series diverge."
+      },
+      {
+        "label": "B",
+        "text": "$-1<x<3$",
+        "isCorrect": true,
+        "explanation": "It is geometric with ratio $\\frac{x-1}{2}$, so it converges exactly when $\\left|\\frac{x-1}{2}\\right|<1$, that is, $|x-1|<2$, which is $-1<x<3$."
+      },
+      {
+        "label": "C",
+        "text": "$-2<x<2$",
+        "isCorrect": false,
+        "explanation": "This solves $|x|<2$. The ratio involves $x-1$, not $x$."
+      },
+      {
+        "label": "D",
+        "text": "$0<x<2$",
+        "isCorrect": false,
+        "explanation": "This solves $|x-1|<1$. The ratio is $\\frac{x-1}{2}$, so the condition is $|x-1|<2$."
+      }
+    ],
+    "explanation": "A geometric series converges exactly when $|r|<1$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/convergent-and-geometric-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-6",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "convergent-and-geometric-series",
+    "difficulty": "hard",
+    "stem": "What is the sum of the first four terms of the geometric series $6+2+\\frac23+\\frac29+\\cdots$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{80}{9}$",
+        "isCorrect": true,
+        "explanation": "$S_4=a\\cdot\\frac{1-r^4}{1-r}=6\\cdot\\frac{1-\\frac1{81}}{\\frac23}=9\\cdot\\frac{80}{81}=\\frac{80}{9}$. (Directly: $6+2+\\frac23+\\frac29=\\frac{54+18+6+2}{9}$.)"
+      },
+      {
+        "label": "B",
+        "text": "$9$",
+        "isCorrect": false,
+        "explanation": "This is the sum of the whole infinite series, $\\frac{6}{1-1/3}$. The question asks for four terms."
+      },
+      {
+        "label": "C",
+        "text": "$8$",
+        "isCorrect": false,
+        "explanation": "This adds only the first two terms."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{26}{3}$",
+        "isCorrect": false,
+        "explanation": "This adds the first three terms, $6+2+\\frac23$."
+      }
+    ],
+    "explanation": "For a finite geometric sum, $S_n=a\\frac{1-r^n}{1-r}$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/convergent-and-geometric-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-7",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "divergence-integral-and-p-series",
+    "difficulty": "easy",
+    "stem": "Which of the following series can be shown to diverge by the $n$th-Term Test for Divergence?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n}$",
+        "isCorrect": false,
+        "explanation": "The terms approach 0, so the test is inconclusive. The series converges by the alternating series test."
+      },
+      {
+        "label": "B",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{1}{n}$",
+        "isCorrect": false,
+        "explanation": "The terms approach 0, so the test is inconclusive. (This series does diverge, but a different test, such as the integral test, shows it.)"
+      },
+      {
+        "label": "C",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2}$",
+        "isCorrect": false,
+        "explanation": "The terms approach 0, so the test says nothing. The series converges, as a $p$-series with $p=2$."
+      },
+      {
+        "label": "D",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{n}{n+1}$",
+        "isCorrect": true,
+        "explanation": "The terms approach $\\lim\\frac{n}{n+1}=1\\ne0$, so the series diverges by the $n$th-Term Test."
+      }
+    ],
+    "explanation": "If $\\lim a_n\\ne0$ (or does not exist), then $\\sum a_n$ diverges. If $\\lim a_n=0$, the test gives no information.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/divergence-integral-and-p-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-8",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "divergence-integral-and-p-series",
+    "difficulty": "easy",
+    "stem": "Which of the following series converges?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{1}{n^{3/2}}$",
+        "isCorrect": true,
+        "explanation": "It is a $p$-series with $p=\\frac32>1$."
+      },
+      {
+        "label": "B",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{1}{n^{0.9}}$",
+        "isCorrect": false,
+        "explanation": "A $p$-series with $p=0.9<1$ diverges."
+      },
+      {
+        "label": "C",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{1}{n}$",
+        "isCorrect": false,
+        "explanation": "This is the harmonic series, the $p$-series with $p=1$, which diverges."
+      },
+      {
+        "label": "D",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{1}{\\sqrt n}$",
+        "isCorrect": false,
+        "explanation": "It is a $p$-series with $p=\\frac12\\le1$, so it diverges."
+      }
+    ],
+    "explanation": "The $p$-series $\\sum\\frac1{n^p}$ converges exactly when $p>1$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/divergence-integral-and-p-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-9",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "divergence-integral-and-p-series",
+    "difficulty": "medium",
+    "stem": "Consider the series $\\sum_{n=1}^{\\infty}\\dfrac{1}{(n+1)\\left(\\ln(n+1)\\right)^2}$, whose terms are $f(n+1)$ for the function $f(x)=\\dfrac{1}{x(\\ln x)^2}$. Which statement is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The series diverges, because $\\int_2^\\infty\\frac{dx}{x(\\ln x)^2}$ is infinite",
+        "isCorrect": false,
+        "explanation": "The integral is finite: $\\frac1{\\ln b}\\to0$."
+      },
+      {
+        "label": "B",
+        "text": "The series converges, because $\\int_2^\\infty\\frac{dx}{x(\\ln x)^2}=\\frac{1}{\\ln2}$ is finite",
+        "isCorrect": true,
+        "explanation": "$f$ is positive, continuous and decreasing for $x\\ge2$. With $u=\\ln x$: $\\int_2^b\\frac{dx}{x(\\ln x)^2}=\\frac{1}{\\ln2}-\\frac{1}{\\ln b}\\to\\frac1{\\ln2}$. By the Integral Test, the series converges."
+      },
+      {
+        "label": "C",
+        "text": "The series diverges, because its terms behave like $\\frac1n$",
+        "isCorrect": false,
+        "explanation": "The factor $(\\ln n)^2$ makes the terms smaller than $\\frac1n$ by more than any constant; the comparison with $\\frac1n$ does not decide convergence."
+      },
+      {
+        "label": "D",
+        "text": "The series converges to $\\frac{1}{\\ln2}$",
+        "isCorrect": false,
+        "explanation": "The Integral Test says the series converges; it does not say the sum equals the integral."
+      }
+    ],
+    "explanation": "The Integral Test: if $f$ is positive, continuous and decreasing, then $\\sum f(n)$ and $\\int f(x)\\,dx$ converge or diverge together.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/divergence-integral-and-p-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-10",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "divergence-integral-and-p-series",
+    "difficulty": "medium",
+    "stem": "Which statement about the series $\\sum_{n=1}^{\\infty}ne^{-n^2}$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It diverges, because $f(x)=xe^{-x^2}$ is not decreasing on all of $[0,\\infty)$, so the Integral Test fails",
+        "isCorrect": false,
+        "explanation": "The Integral Test only needs $f$ to be decreasing eventually (here for $x\\ge1$). The first terms do not affect convergence."
+      },
+      {
+        "label": "B",
+        "text": "It converges, and its sum is $\\frac{1}{2e}$, the value of the improper integral",
+        "isCorrect": false,
+        "explanation": "The integral's value is not the sum of the series; the Integral Test only decides whether the series converges."
+      },
+      {
+        "label": "C",
+        "text": "The Integral Test cannot be used, because $e^{-x^2}$ has no elementary antiderivative, so the integral cannot be evaluated",
+        "isCorrect": false,
+        "explanation": "The function here is $xe^{-x^2}$, not $e^{-x^2}$, and it is easy to integrate by substitution ($u=-x^2$), so the test is a good choice."
+      },
+      {
+        "label": "D",
+        "text": "It converges: $f(x)=xe^{-x^2}$ is positive and decreasing for $x\\ge1$, and $\\int_1^\\infty xe^{-x^2}dx=\\frac1{2e}$ is finite",
+        "isCorrect": true,
+        "explanation": "$f'(x)=\\left(1-2x^2\\right)e^{-x^2}<0$ for $x\\ge1$, so the Integral Test applies. With $u=-x^2$: $\\int_1^\\infty xe^{-x^2}dx=\\left[-\\frac12e^{-x^2}\\right]_1^\\infty=\\frac1{2e}$."
+      }
+    ],
+    "explanation": "Check the hypotheses (positive, continuous, decreasing), then evaluate the improper integral.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/divergence-integral-and-p-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-11",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "divergence-integral-and-p-series",
+    "difficulty": "medium",
+    "stem": "Which statement about the series $\\sum_{n=1}^{\\infty}\\dfrac{1}{n+3}$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It converges, because it is a $p$-series with $p=1$",
+        "isCorrect": false,
+        "explanation": "A $p$-series with $p=1$ diverges, and this series diverges for the same reason."
+      },
+      {
+        "label": "B",
+        "text": "It diverges, because it is the harmonic series with its first few terms removed",
+        "isCorrect": true,
+        "explanation": "Removing or adding finitely many terms does not change convergence. $\\sum\\frac{1}{n+3}=\\frac14+\\frac15+\\frac16+\\cdots$ diverges like $\\sum\\frac1n$."
+      },
+      {
+        "label": "C",
+        "text": "It converges, because the $+3$ makes the terms smaller than those of the harmonic series",
+        "isCorrect": false,
+        "explanation": "The terms are smaller than $\\frac1n$, but a series smaller than a divergent one proves nothing."
+      },
+      {
+        "label": "D",
+        "text": "It converges, because $\\frac{1}{n+3}\\to0$",
+        "isCorrect": false,
+        "explanation": "Terms approaching 0 is necessary for convergence, not sufficient (the harmonic series is the standard counterexample)."
+      }
+    ],
+    "explanation": "Compare with $\\sum\\frac1n$: shifting the index does not change the behavior.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/divergence-integral-and-p-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-12",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "divergence-integral-and-p-series",
+    "difficulty": "easy",
+    "stem": "For which values of $p$ does the series $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{n^p}$ converge?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$p>0$",
+        "isCorrect": false,
+        "explanation": "For $0<p\\le1$ the terms still go to 0, but the series diverges."
+      },
+      {
+        "label": "B",
+        "text": "$p<1$",
+        "isCorrect": false,
+        "explanation": "That is where $\\int_0^1x^{-p}dx$ converges, not the series."
+      },
+      {
+        "label": "C",
+        "text": "$p\\ge1$",
+        "isCorrect": false,
+        "explanation": "At $p=1$ this is the harmonic series, which diverges."
+      },
+      {
+        "label": "D",
+        "text": "$p>1$",
+        "isCorrect": true,
+        "explanation": "By the Integral Test, $\\int_1^\\infty x^{-p}dx$ is finite exactly when $p>1$."
+      }
+    ],
+    "explanation": "Remember the borderline: $p=1$ diverges.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/divergence-integral-and-p-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-13",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "divergence-integral-and-p-series",
+    "difficulty": "medium",
+    "stem": "A series $\\sum a_n$ has $\\displaystyle\\lim_{n\\to\\infty}a_n=0$. Which conclusion is justified by that fact alone?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The series diverges, because $\\lim a_n=0$ is the condition the test uses to detect divergence",
+        "isCorrect": false,
+        "explanation": "Divergence follows from $\\lim a_n\\ne0$, not from $\\lim a_n=0$."
+      },
+      {
+        "label": "B",
+        "text": "The series converges, because terms that approach 0 let the partial sums settle down",
+        "isCorrect": false,
+        "explanation": "The harmonic series is a counterexample: its terms approach 0 but it diverges."
+      },
+      {
+        "label": "C",
+        "text": "The series converges absolutely, because the terms are eventually smaller than those of any geometric series",
+        "isCorrect": false,
+        "explanation": "Terms approaching 0 does not even guarantee ordinary convergence, so absolute convergence is out of reach too."
+      },
+      {
+        "label": "D",
+        "text": "No conclusion can be drawn about whether the series converges",
+        "isCorrect": true,
+        "explanation": "Both $\\sum\\frac1n$ (divergent) and $\\sum\\frac{1}{n^2}$ (convergent) have terms that approach 0."
+      }
+    ],
+    "explanation": "The $n$th-Term Test can prove divergence, but never convergence.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/divergence-integral-and-p-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-14",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "comparison-tests",
+    "difficulty": "easy",
+    "stem": "Which statement about the series $\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+3}$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The comparison test is inconclusive",
+        "isCorrect": false,
+        "explanation": "The inequality $\\frac{1}{n^2+3}<\\frac1{n^2}$ together with convergence of $\\sum\\frac1{n^2}$ settles it."
+      },
+      {
+        "label": "B",
+        "text": "It diverges, by direct comparison with $\\sum\\frac1{n^2}$",
+        "isCorrect": false,
+        "explanation": "Being smaller than a convergent series cannot make a series diverge."
+      },
+      {
+        "label": "C",
+        "text": "It converges, by direct comparison with $\\sum\\frac1n$",
+        "isCorrect": false,
+        "explanation": "$\\sum\\frac1n$ diverges, so being smaller than it proves nothing."
+      },
+      {
+        "label": "D",
+        "text": "It converges, by direct comparison with $\\sum\\frac{1}{n^2}$",
+        "isCorrect": true,
+        "explanation": "For every $n$, $0<\\frac{1}{n^2+3}<\\frac{1}{n^2}$, and $\\sum\\frac1{n^2}$ converges, so the smaller series converges too."
+      }
+    ],
+    "explanation": "Direct Comparison: if $0\\le a_n\\le b_n$ and $\\sum b_n$ converges, then $\\sum a_n$ converges.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/comparison-tests",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-15",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "comparison-tests",
+    "difficulty": "medium",
+    "stem": "Which statement about the series $\\displaystyle\\sum_{n=2}^{\\infty}\\dfrac{1}{\\sqrt n-1}$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It diverges, because $\\frac{1}{\\sqrt n-1}>\\frac1{\\sqrt n}$ and $\\sum\\frac1{\\sqrt n}$ diverges",
+        "isCorrect": true,
+        "explanation": "For $n\\ge2$ the denominator $\\sqrt n-1$ is smaller than $\\sqrt n$, so each term is larger. A series larger than a divergent $p$-series ($p=\\frac12$) diverges."
+      },
+      {
+        "label": "B",
+        "text": "It converges, because $\\frac{1}{\\sqrt n-1}<\\frac1{\\sqrt n}$",
+        "isCorrect": false,
+        "explanation": "The inequality goes the other way: the smaller denominator makes the term larger."
+      },
+      {
+        "label": "C",
+        "text": "It converges, because it is a $p$-series with $p=\\frac12$",
+        "isCorrect": false,
+        "explanation": "A $p$-series with $p\\le1$ diverges. And this series is not exactly a $p$-series."
+      },
+      {
+        "label": "D",
+        "text": "It converges, because $\\frac1{\\sqrt n-1}\\to0$",
+        "isCorrect": false,
+        "explanation": "Terms approaching 0 is not enough."
+      }
+    ],
+    "explanation": "Check the direction of the inequality when comparing denominators: a smaller denominator means a larger term.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/comparison-tests",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-16",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "comparison-tests",
+    "difficulty": "medium",
+    "stem": "Which statement about the series $\\sum_{n=1}^{\\infty}\\dfrac{2n+1}{n^3-n+5}$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It diverges, by the Limit Comparison Test with $\\sum\\frac1n$",
+        "isCorrect": false,
+        "explanation": "The terms behave like $\\frac{2n}{n^3}=\\frac{2}{n^2}$, not $\\frac1n$. The limit with $\\frac1n$ is 0, which is not a useful comparison."
+      },
+      {
+        "label": "B",
+        "text": "It converges, because the terms approach 0",
+        "isCorrect": false,
+        "explanation": "Terms approaching 0 is necessary but not sufficient."
+      },
+      {
+        "label": "C",
+        "text": "It diverges, because the limit of the ratio is 2",
+        "isCorrect": false,
+        "explanation": "With a convergent comparison series and a finite positive limit, the conclusion is convergence."
+      },
+      {
+        "label": "D",
+        "text": "It converges, by the Limit Comparison Test with $\\sum\\frac1{n^2}$",
+        "isCorrect": true,
+        "explanation": "$\\lim\\frac{(2n+1)/(n^3-n+5)}{1/n^2}=\\lim\\frac{2n^3+n^2}{n^3-n+5}=2$, a finite positive number, and $\\sum\\frac1{n^2}$ converges."
+      }
+    ],
+    "explanation": "Compare with the series of the dominant terms: $\\frac{2n}{n^3}=\\frac2{n^2}$. If the limit of the ratio is finite and positive, both series do the same thing.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/comparison-tests",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-17",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "comparison-tests",
+    "difficulty": "hard",
+    "stem": "Which statement about the series $\\sum_{n=1}^{\\infty}\\sin\\left(\\dfrac1n\\right)$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It converges, because $\\sin\\left(\\frac1n\\right)\\to0$",
+        "isCorrect": false,
+        "explanation": "Terms approaching 0 is not enough for convergence."
+      },
+      {
+        "label": "B",
+        "text": "It diverges, by the Limit Comparison Test with $\\sum\\frac1n$",
+        "isCorrect": true,
+        "explanation": "$\\lim_{n\\to\\infty}\\frac{\\sin(1/n)}{1/n}=1$, a finite positive number, and $\\sum\\frac1n$ diverges. (All terms are positive since $0<\\frac1n\\le1<\\pi$.)"
+      },
+      {
+        "label": "C",
+        "text": "It converges, because $\\sin x\\le x$ and the terms are small",
+        "isCorrect": false,
+        "explanation": "$\\sin\\left(\\frac1n\\right)\\le\\frac1n$ compares the series to a divergent one, which proves nothing."
+      },
+      {
+        "label": "D",
+        "text": "It converges, because $\\left|\\sin\\left(\\frac1n\\right)\\right|\\le1$",
+        "isCorrect": false,
+        "explanation": "A bound by the constant 1 gives no information about the sum."
+      }
+    ],
+    "explanation": "For small $u$, $\\sin u\\approx u$. Use the Limit Comparison Test with $\\sum\\frac1n$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/comparison-tests",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-18",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "comparison-tests",
+    "difficulty": "hard",
+    "stem": "Which statement about the series $\\sum_{n=1}^{\\infty}\\dfrac{n^2+1}{n^3+4n}$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It converges, because $\\frac{n^2+1}{n^3+4n}<\\frac1n$",
+        "isCorrect": false,
+        "explanation": "Being smaller than the divergent harmonic series proves nothing."
+      },
+      {
+        "label": "B",
+        "text": "It converges, because the degree of the denominator is greater than the degree of the numerator",
+        "isCorrect": false,
+        "explanation": "The difference in degrees is only 1, so the terms behave like $\\frac1n$. A difference of at least 2 is needed for convergence."
+      },
+      {
+        "label": "C",
+        "text": "It converges, by the Limit Comparison Test with $\\sum\\frac1{n^2}$",
+        "isCorrect": false,
+        "explanation": "With $\\frac{1}{n^2}$ the limit of the ratio is $\\lim\\frac{n^4+n^2}{n^3+4n}=\\infty$, so the test does not apply."
+      },
+      {
+        "label": "D",
+        "text": "It diverges, by the Limit Comparison Test with $\\sum\\frac1n$",
+        "isCorrect": true,
+        "explanation": "The terms behave like $\\frac{n^2}{n^3}=\\frac1n$: $\\lim\\frac{(n^2+1)/(n^3+4n)}{1/n}=\\lim\\frac{n^3+n}{n^3+4n}=1$, and $\\sum\\frac1n$ diverges."
+      }
+    ],
+    "explanation": "For rational terms, compare with $\\frac1{n^k}$, where $k$ is the difference between the degrees of the denominator and numerator.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/comparison-tests",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-19",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "alternating-series-and-error-bound",
+    "difficulty": "easy",
+    "stem": "Which of the following series converges but does not converge absolutely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{1}{n}$",
+        "isCorrect": false,
+        "explanation": "This is the harmonic series, which diverges."
+      },
+      {
+        "label": "B",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n}$",
+        "isCorrect": true,
+        "explanation": "It converges by the Alternating Series Test, but $\\sum\\left|\\frac{(-1)^n}{n}\\right|=\\sum\\frac1n$ diverges."
+      },
+      {
+        "label": "C",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{(-1)^nn}{n+1}$",
+        "isCorrect": false,
+        "explanation": "The terms approach $\\pm1$, not 0, so the series diverges."
+      },
+      {
+        "label": "D",
+        "text": "$\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n^2}$",
+        "isCorrect": false,
+        "explanation": "It converges absolutely, since $\\sum\\frac1{n^2}$ converges."
+      }
+    ],
+    "explanation": "A series is conditionally convergent when it converges but $\\sum|a_n|$ diverges.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/alternating-series-and-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-20",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "alternating-series-and-error-bound",
+    "difficulty": "easy",
+    "stem": "Why can the Alternating Series Test not be used to show that $\\sum_{n=1}^{\\infty}\\dfrac{(-1)^nn}{n+1}$ converges?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Because $a_n=\\frac{n}{n+1}$ is unbounded",
+        "isCorrect": false,
+        "explanation": "$\\frac{n}{n+1}<1$ for all $n$, so it is bounded."
+      },
+      {
+        "label": "B",
+        "text": "Because the terms do not alternate in sign",
+        "isCorrect": false,
+        "explanation": "They do alternate, because of the factor $(-1)^n$."
+      },
+      {
+        "label": "C",
+        "text": "Because $a_n=\\frac{n}{n+1}$ approaches 1, not 0",
+        "isCorrect": true,
+        "explanation": "The test requires the unsigned terms to approach 0. Here $|a_n|\\to1$, so the series in fact diverges by the $n$th-Term Test."
+      },
+      {
+        "label": "D",
+        "text": "Because $a_n=\\frac{n}{n+1}$ is negative for some $n$",
+        "isCorrect": false,
+        "explanation": "$\\frac{n}{n+1}>0$ for $n\\ge1$. The sign alternation comes from $(-1)^n$."
+      }
+    ],
+    "explanation": "The test requires (1) alternating signs, (2) unsigned terms decreasing and (3) unsigned terms approaching 0. A series whose terms do not approach 0 diverges outright.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/alternating-series-and-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-21",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "alternating-series-and-error-bound",
+    "difficulty": "medium",
+    "stem": "The alternating series $\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n+1}}{n^2}$ is approximated by the sum $S_4$ of its first four terms. What is the best bound on the error $|S-S_4|$ from the Alternating Series Error Bound?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{36}$",
+        "isCorrect": false,
+        "explanation": "This is $a_6$. The first omitted term is $a_5$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{16}$",
+        "isCorrect": false,
+        "explanation": "This is $a_4$, the last term that was used."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{25}$",
+        "isCorrect": true,
+        "explanation": "The error is at most the magnitude of the first term not used, $a_5=\\frac{1}{5^2}=\\frac1{25}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{4}$",
+        "isCorrect": false,
+        "explanation": "This is $a_2$. The bound uses the next term after the partial sum."
+      }
+    ],
+    "explanation": "For an alternating series with decreasing terms, $|S-S_N|\\le a_{N+1}$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/alternating-series-and-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-22",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "alternating-series-and-error-bound",
+    "difficulty": "medium",
+    "stem": "What is the smallest number of terms of $\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n+1}}{n^2}$ that guarantees the partial sum is within $0.001$ of the sum of the series, by the Alternating Series Error Bound?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$31$",
+        "isCorrect": true,
+        "explanation": "We need $a_{N+1}=\\frac{1}{(N+1)^2}<0.001$, so $(N+1)^2>1000$ and $N+1\\ge32$. Hence $N=31$ terms."
+      },
+      {
+        "label": "B",
+        "text": "$500$",
+        "isCorrect": false,
+        "explanation": "$(N+1)^2>1000$ puts $N+1$ near $\\sqrt{1000}\\approx31.6$, nowhere near 500."
+      },
+      {
+        "label": "C",
+        "text": "$1000$",
+        "isCorrect": false,
+        "explanation": "This confuses the size of the error with the number of terms. $(N+1)^2>1000$, not $N+1>1000$."
+      },
+      {
+        "label": "D",
+        "text": "$32$",
+        "isCorrect": false,
+        "explanation": "$N+1=32$ is the index of the first omitted term. The number of terms used is $N=31$."
+      }
+    ],
+    "explanation": "Find the first $N$ with $a_{N+1}<$ the tolerance.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/alternating-series-and-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-23",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "alternating-series-and-error-bound",
+    "difficulty": "hard",
+    "stem": "The series $\\displaystyle\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{(2n+1)!}=1-\\frac1{3!}+\\frac1{5!}-\\cdots$ is approximated by the sum of its first three terms, $1-\\frac16+\\frac1{120}$. What is the Alternating Series Error Bound for this approximation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{5040}$",
+        "isCorrect": true,
+        "explanation": "The first omitted term is the one with $n=3$, namely $\\frac{1}{7!}=\\frac1{5040}$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{720}$",
+        "isCorrect": false,
+        "explanation": "$\\frac1{6!}$ is not in this series (it has only odd factorials)."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{40320}$",
+        "isCorrect": false,
+        "explanation": "$\\frac{1}{8!}$ skips a term: the omitted terms begin with $\\frac{1}{7!}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{120}$",
+        "isCorrect": false,
+        "explanation": "$\\frac1{5!}$ is the last term used, not the first omitted."
+      }
+    ],
+    "explanation": "List the terms: $\\frac1{1!},\\frac1{3!},\\frac1{5!},\\frac1{7!},\\ldots$ and find the first one that is left out.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/alternating-series-and-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-24",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "alternating-series-and-error-bound",
+    "difficulty": "hard",
+    "stem": "For which values of $p$ does the series $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n^p}$ converge conditionally?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$p>0$",
+        "isCorrect": false,
+        "explanation": "This includes $p>1$, where the convergence is absolute."
+      },
+      {
+        "label": "B",
+        "text": "$p>1$",
+        "isCorrect": false,
+        "explanation": "For $p>1$ the series converges absolutely, which is stronger than conditional convergence."
+      },
+      {
+        "label": "C",
+        "text": "$0<p\\le1$",
+        "isCorrect": true,
+        "explanation": "For $p>0$ the terms decrease to 0, so the series converges by the Alternating Series Test. It converges absolutely when $p>1$, so conditional convergence occurs only for $0<p\\le1$."
+      },
+      {
+        "label": "D",
+        "text": "$0<p<1$",
+        "isCorrect": false,
+        "explanation": "At $p=1$ the series $\\sum\\frac{(-1)^n}{n}$ converges conditionally, so $p=1$ is included."
+      }
+    ],
+    "explanation": "Combine two facts: the AST gives convergence for $p>0$, and the $p$-series test gives absolute convergence for $p>1$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/alternating-series-and-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-25",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "ratio-test-and-absolute-convergence",
+    "difficulty": "easy",
+    "stem": "What does the Ratio Test say about the series $\\sum_{n=1}^{\\infty}\\dfrac{2^n}{n!}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The test is inconclusive, because the limit is 1",
+        "isCorrect": false,
+        "explanation": "The limit is 0, not 1."
+      },
+      {
+        "label": "B",
+        "text": "It diverges, because $\\lim\\left|\\frac{a_{n+1}}{a_n}\\right|=0$",
+        "isCorrect": false,
+        "explanation": "A limit less than 1 means convergence, not divergence."
+      },
+      {
+        "label": "C",
+        "text": "It converges, because $\\lim\\left|\\frac{a_{n+1}}{a_n}\\right|=0<1$",
+        "isCorrect": true,
+        "explanation": "$\\frac{a_{n+1}}{a_n}=\\frac{2^{n+1}/(n+1)!}{2^n/n!}=\\frac{2}{n+1}\\to0$. Since the limit is less than 1, the series converges absolutely."
+      },
+      {
+        "label": "D",
+        "text": "It diverges, because $\\lim\\left|\\frac{a_{n+1}}{a_n}\\right|=2$",
+        "isCorrect": false,
+        "explanation": "The ratio is $\\frac{2}{n+1}$, because $\\frac{n!}{(n+1)!}=\\frac1{n+1}$. It does not approach 2."
+      }
+    ],
+    "explanation": "Compute $\\left|\\frac{a_{n+1}}{a_n}\\right|$ and take the limit. Less than 1: converges absolutely; more than 1: diverges; equal to 1: no information.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/ratio-test-and-absolute-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-26",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "ratio-test-and-absolute-convergence",
+    "difficulty": "medium",
+    "stem": "What does the Ratio Test say about the series $\\sum_{n=1}^{\\infty}\\dfrac{n!}{3^n}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The test is inconclusive",
+        "isCorrect": false,
+        "explanation": "The limit is infinite, which is greater than 1, so the test does decide: the series diverges."
+      },
+      {
+        "label": "B",
+        "text": "It diverges, because $\\lim\\left|\\frac{a_{n+1}}{a_n}\\right|=\\infty>1$",
+        "isCorrect": true,
+        "explanation": "$\\frac{a_{n+1}}{a_n}=\\frac{(n+1)!/3^{n+1}}{n!/3^n}=\\frac{n+1}{3}\\to\\infty$."
+      },
+      {
+        "label": "C",
+        "text": "It converges, because $\\lim\\left|\\frac{a_{n+1}}{a_n}\\right|=\\frac13$",
+        "isCorrect": false,
+        "explanation": "The factor $n+1$ from the factorial remains in the ratio, so the limit is not $\\frac13$."
+      },
+      {
+        "label": "D",
+        "text": "It converges, because the factorial is in the numerator",
+        "isCorrect": false,
+        "explanation": "A large factorial in the numerator makes the terms grow, not shrink."
+      }
+    ],
+    "explanation": "Factorials simplify in the ratio: $\\frac{(n+1)!}{n!}=n+1$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/ratio-test-and-absolute-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-27",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "ratio-test-and-absolute-convergence",
+    "difficulty": "medium",
+    "stem": "For the series $\\sum_{n=1}^{\\infty}\\dfrac{n}{2^n}$, what is $\\displaystyle\\lim_{n\\to\\infty}\\left|\\frac{a_{n+1}}{a_n}\\right|$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "The powers of 2 give $\\frac{2^n}{2^{n+1}}=\\frac12$, not 2."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac{n+1}{n}$ does not go to 0."
+      },
+      {
+        "label": "C",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "$\\frac{n+1}{n}\\to1$, but the powers of 2 also contribute a factor $\\frac12$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{a_{n+1}}{a_n}=\\frac{(n+1)/2^{n+1}}{n/2^n}=\\frac{n+1}{2n}\\to\\frac12$."
+      }
+    ],
+    "explanation": "Simplify $\\frac{a_{n+1}}{a_n}$ into pieces whose limits are easy to see.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/ratio-test-and-absolute-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-28",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "ratio-test-and-absolute-convergence",
+    "difficulty": "medium",
+    "stem": "Which statement about the series $\\sum_{n=1}^{\\infty}\\dfrac{(-1)^nn}{n^2+1}$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It converges conditionally",
+        "isCorrect": true,
+        "explanation": "Alternating Series Test: $\\frac{n}{n^2+1}$ is eventually decreasing and approaches 0, so the series converges. But $\\sum\\frac{n}{n^2+1}$ diverges by limit comparison with $\\sum\\frac1n$, so the convergence is not absolute."
+      },
+      {
+        "label": "B",
+        "text": "It converges absolutely",
+        "isCorrect": false,
+        "explanation": "$\\sum\\left|\\frac{(-1)^nn}{n^2+1}\\right|=\\sum\\frac{n}{n^2+1}$ behaves like the harmonic series and diverges."
+      },
+      {
+        "label": "C",
+        "text": "It diverges, by the $n$th-Term Test",
+        "isCorrect": false,
+        "explanation": "The terms approach 0, so the $n$th-Term Test says nothing, and the series does converge."
+      },
+      {
+        "label": "D",
+        "text": "It diverges, because the Ratio Test gives a limit of 1",
+        "isCorrect": false,
+        "explanation": "A ratio-test limit of 1 is inconclusive, not a proof of divergence."
+      }
+    ],
+    "explanation": "Check absolute convergence first. If $\\sum|a_n|$ diverges, test the alternating series itself.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/ratio-test-and-absolute-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-29",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "ratio-test-and-absolute-convergence",
+    "difficulty": "hard",
+    "stem": "The Ratio Test is applied to $\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2}$ and to $\\sum_{n=1}^{\\infty}\\dfrac{1}{n}$. What does it show?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\sum\\frac{1}{n^2}$ converges and $\\sum\\frac1n$ diverges, as the Ratio Test shows",
+        "isCorrect": false,
+        "explanation": "The Ratio Test cannot tell them apart. Another test (the $p$-series test) does."
+      },
+      {
+        "label": "B",
+        "text": "Both converge, because the limit is not greater than 1",
+        "isCorrect": false,
+        "explanation": "A limit equal to 1 is inconclusive. And $\\sum\\frac1n$ diverges."
+      },
+      {
+        "label": "C",
+        "text": "Both diverge, because the limit of the ratio is 1, not less than 1",
+        "isCorrect": false,
+        "explanation": "A limit of 1 does not imply divergence. And $\\sum\\frac1{n^2}$ converges."
+      },
+      {
+        "label": "D",
+        "text": "In both cases the limit of the ratio is 1, so the test is inconclusive for both",
+        "isCorrect": true,
+        "explanation": "$\\frac{n^2}{(n+1)^2}\\to1$ and $\\frac{n}{n+1}\\to1$. The Ratio Test gives no information when the limit is 1."
+      }
+    ],
+    "explanation": "When the Ratio Test's limit equals 1, use a different test.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/ratio-test-and-absolute-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-30",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "ratio-test-and-absolute-convergence",
+    "difficulty": "hard",
+    "stem": "Which statement about the series $\\sum_{n=1}^{\\infty}\\dfrac{(-1)^nn^2}{2^n}$ is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It converges absolutely",
+        "isCorrect": true,
+        "explanation": "For $\\sum\\frac{n^2}{2^n}$ the Ratio Test gives $\\frac{(n+1)^2}{2n^2}\\to\\frac12<1$, so the series of absolute values converges."
+      },
+      {
+        "label": "B",
+        "text": "It converges conditionally, because it alternates",
+        "isCorrect": false,
+        "explanation": "The series of absolute values also converges (Ratio Test), so the convergence is absolute, which is stronger."
+      },
+      {
+        "label": "C",
+        "text": "It diverges, because $n^2$ grows faster than $2^n$ for small $n$",
+        "isCorrect": false,
+        "explanation": "Only the long-run behavior matters, and $2^n$ eventually grows faster than $n^2$."
+      },
+      {
+        "label": "D",
+        "text": "The Ratio Test is inconclusive because the signs alternate",
+        "isCorrect": false,
+        "explanation": "The Ratio Test uses absolute values, so the alternating sign does not matter."
+      }
+    ],
+    "explanation": "Apply the Ratio Test to $|a_n|$. If it converges, the original series converges absolutely.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/ratio-test-and-absolute-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-31",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-polynomials",
+    "difficulty": "easy",
+    "stem": "What is the third-degree Taylor polynomial for $f(x)=e^x$ about $x=0$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$x+\\dfrac{x^2}{2}+\\dfrac{x^3}{6}$",
+        "isCorrect": false,
+        "explanation": "The constant term $f(0)=1$ is missing."
+      },
+      {
+        "label": "B",
+        "text": "$1+x+x^2+x^3$",
+        "isCorrect": false,
+        "explanation": "The coefficients need the factorials $k!$ in the denominators."
+      },
+      {
+        "label": "C",
+        "text": "$1+x+\\dfrac{x^2}{2}+\\dfrac{x^3}{6}$",
+        "isCorrect": true,
+        "explanation": "Every derivative of $e^x$ at 0 equals 1, so the coefficients are $\\frac{f^{(k)}(0)}{k!}=\\frac1{k!}$."
+      },
+      {
+        "label": "D",
+        "text": "$1+x+\\dfrac{x^2}{2}+\\dfrac{x^3}{3}$",
+        "isCorrect": false,
+        "explanation": "The coefficient of $x^3$ is $\\frac{1}{3!}=\\frac16$, not $\\frac13$."
+      }
+    ],
+    "explanation": "$T_n(x)=\\sum_{k=0}^n\\frac{f^{(k)}(a)}{k!}(x-a)^k$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-polynomials",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-32",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-polynomials",
+    "difficulty": "easy",
+    "stem": "What is the third-degree Taylor polynomial for $f(x)=\\sin x$ about $x=0$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$x-\\dfrac{x^3}{6}$",
+        "isCorrect": true,
+        "explanation": "$f(0)=0$, $f'(0)=1$, $f''(0)=0$, $f'''(0)=-1$, so $T_3(x)=x-\\frac{x^3}{3!}$."
+      },
+      {
+        "label": "B",
+        "text": "$1-\\dfrac{x^2}{2}$",
+        "isCorrect": false,
+        "explanation": "This is the second-degree polynomial for $\\cos x$."
+      },
+      {
+        "label": "C",
+        "text": "$x+\\dfrac{x^3}{6}$",
+        "isCorrect": false,
+        "explanation": "The third derivative of $\\sin x$ is $-\\cos x$, which is $-1$ at 0. The sign is negative."
+      },
+      {
+        "label": "D",
+        "text": "$x-\\dfrac{x^3}{3}$",
+        "isCorrect": false,
+        "explanation": "The coefficient is $\\frac{f'''(0)}{3!}=-\\frac16$, not $-\\frac13$."
+      }
+    ],
+    "explanation": "List $f$ and its first three derivatives at 0, then divide by the factorials.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-polynomials",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-33",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-polynomials",
+    "difficulty": "medium",
+    "stem": "A function $f$ has $f(2)=3$, $f'(2)=-1$ and $f''(2)=4$. What is the second-degree Taylor polynomial for $f$ about $x=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3+(x-2)+2(x-2)^2$",
+        "isCorrect": false,
+        "explanation": "$f'(2)=-1$, so the linear term is $-(x-2)$."
+      },
+      {
+        "label": "B",
+        "text": "$3-(x-2)+4(x-2)^2$",
+        "isCorrect": false,
+        "explanation": "The coefficient of the quadratic term is $\\frac{f''(2)}{2!}=2$. The factorial is missing."
+      },
+      {
+        "label": "C",
+        "text": "$3-(x-2)+2(x-2)^2$",
+        "isCorrect": true,
+        "explanation": "$T_2(x)=f(2)+f'(2)(x-2)+\\frac{f''(2)}{2!}(x-2)^2=3-(x-2)+\\frac42(x-2)^2$."
+      },
+      {
+        "label": "D",
+        "text": "$3-x+2x^2$",
+        "isCorrect": false,
+        "explanation": "The polynomial is centered at 2, so the powers are of $(x-2)$, not $x$."
+      }
+    ],
+    "explanation": "A Taylor polynomial about $x=a$ is written in powers of $(x-a)$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-polynomials",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-34",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-polynomials",
+    "difficulty": "medium",
+    "stem": "The second-degree Taylor polynomial for $f(x)=\\ln x$ about $x=1$ is used to approximate $\\ln(1.2)$. What is the approximation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0.18$",
+        "isCorrect": true,
+        "explanation": "$T_2(x)=(x-1)-\\frac{(x-1)^2}{2}$. At $x=1.2$: $0.2-\\frac{0.04}{2}=0.18$."
+      },
+      {
+        "label": "B",
+        "text": "$0.16$",
+        "isCorrect": false,
+        "explanation": "The quadratic coefficient is $\\frac{f''(1)}{2!}=-\\frac12$. Without the $\\frac12$ the term would be $-0.04$."
+      },
+      {
+        "label": "C",
+        "text": "$0.22$",
+        "isCorrect": false,
+        "explanation": "The quadratic coefficient is negative: $f''(1)=-1$."
+      },
+      {
+        "label": "D",
+        "text": "$0.20$",
+        "isCorrect": false,
+        "explanation": "This is the first-degree polynomial $T_1(1.2)=0.2$. The quadratic term $-0.02$ is missing."
+      }
+    ],
+    "explanation": "$f(1)=0$, $f'(1)=1$, $f''(1)=-1$, so $T_2(x)=(x-1)-\\frac12(x-1)^2$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-polynomials",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-35",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-polynomials",
+    "difficulty": "hard",
+    "stem": "A function $f$ has $f(0)=1$, $f'(0)=2$, $f''(0)=-6$ and $f'''(0)=12$. What is the value of the third-degree Taylor polynomial $T_3(x)$ for $f$ about $x=0$ at $x=0.1$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1.200$",
+        "isCorrect": false,
+        "explanation": "This is the first-degree polynomial value, $1+2(0.1)$."
+      },
+      {
+        "label": "B",
+        "text": "$1.182$",
+        "isCorrect": false,
+        "explanation": "The quadratic coefficient was divided by $2!$ but the cubic one was not divided by $3!$."
+      },
+      {
+        "label": "C",
+        "text": "$1.172$",
+        "isCorrect": true,
+        "explanation": "$T_3(x)=1+2x+\\frac{-6}{2!}x^2+\\frac{12}{3!}x^3=1+2x-3x^2+2x^3$. At $x=0.1$: $1+0.2-0.03+0.002=1.172$."
+      },
+      {
+        "label": "D",
+        "text": "$1.152$",
+        "isCorrect": false,
+        "explanation": "This leaves out the factorials: $1+2(0.1)-6(0.01)+12(0.001)$. Each coefficient is $\\frac{f^{(k)}(0)}{k!}$."
+      }
+    ],
+    "explanation": "Compute each Taylor coefficient as the derivative divided by the factorial, then substitute.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-polynomials",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-36",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "lagrange-error-bound",
+    "difficulty": "easy",
+    "stem": "Let $T_n$ be the $n$th-degree Taylor polynomial for $f$ about $x=a$, and suppose $\\left|f^{(n+1)}(t)\\right|\\le M$ for all $t$ between $a$ and $x$. Which is the Lagrange error bound for $|f(x)-T_n(x)|$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{M}{n!}|x-a|^{n}$",
+        "isCorrect": false,
+        "explanation": "The exponent and the derivative must both be one higher than the degree: $n+1$."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{M}{(n+1)!}|x-a|^{n+1}$",
+        "isCorrect": true,
+        "explanation": "The error bound uses the next derivative, $f^{(n+1)}$, with the factorial $(n+1)!$ and the power $n+1$."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac{M}{(n+1)!}|x-a|^{n}$",
+        "isCorrect": false,
+        "explanation": "The power is $n+1$, matching the first omitted term."
+      },
+      {
+        "label": "D",
+        "text": "$M|x-a|^{n+1}$",
+        "isCorrect": false,
+        "explanation": "The factorial $(n+1)!$ is missing."
+      }
+    ],
+    "explanation": "The bound looks like the first omitted Taylor term, with $f^{(n+1)}(a)$ replaced by its maximum $M$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/lagrange-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-37",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "lagrange-error-bound",
+    "difficulty": "medium",
+    "stem": "The third-degree Taylor polynomial $T_3$ for $f(x)=e^x$ about $x=0$ is used to approximate $e^{0.5}$. Using the fact that $\\left|f^{(4)}(t)\\right|\\le2$ for $0\\le t\\le0.5$, which is the Lagrange error bound?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{32}$",
+        "isCorrect": false,
+        "explanation": "This uses $4$ in place of $4!$: $\\frac{2}{4}(0.5)^4$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{192}$",
+        "isCorrect": true,
+        "explanation": "$\\left|f(0.5)-T_3(0.5)\\right|\\le\\frac{2}{4!}(0.5)^4=\\frac{2}{24\\cdot16}=\\frac1{192}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{384}$",
+        "isCorrect": false,
+        "explanation": "This leaves out the bound $M=2$ on the fourth derivative."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{24}$",
+        "isCorrect": false,
+        "explanation": "This uses the exponent 3 and $3!$: $\\frac{2}{3!}(0.5)^3$. For $T_3$ the bound uses $n+1=4$."
+      }
+    ],
+    "explanation": "Here $n=3$, so use $\\frac{M}{4!}|x-0|^4$ with $M=2$ and $x=0.5$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/lagrange-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-38",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "lagrange-error-bound",
+    "difficulty": "medium",
+    "stem": "The fifth-degree Taylor polynomial $T_5$ for $f(x)=\\sin x$ about $x=0$ is used to approximate $\\sin1$. Which is the Lagrange error bound for this approximation, using $\\left|f^{(6)}(t)\\right|\\le1$ for all $t$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{120}$",
+        "isCorrect": false,
+        "explanation": "$\\frac1{5!}$ would be the bound for $T_4$ (it uses $f^{(5)}$). For $T_5$ the bound has $6!$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{720}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{M}{6!}|x|^6=\\frac{1}{720}\\cdot1^6=\\frac1{720}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{5040}$",
+        "isCorrect": false,
+        "explanation": "$\\frac1{7!}$ comes from $f^{(7)}$, the bound for a sixth-degree polynomial. With the given bound on $f^{(6)}$, the error bound for $T_5$ is $\\frac1{6!}=\\frac1{720}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac1{3!}$, the size of the first omitted Taylor term of $T_2$. It is not the bound for $T_5$."
+      }
+    ],
+    "explanation": "For $T_n$ the bound uses $f^{(n+1)}$, so for $T_5$ it uses the sixth derivative.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/lagrange-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-39",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "lagrange-error-bound",
+    "difficulty": "hard",
+    "stem": "The Taylor polynomial $T_n$ for $f(x)=e^x$ about $x=0$ is used to approximate $e$. Using $\\left|f^{(n+1)}(t)\\right|\\le3$ for $0\\le t\\le1$, what is the smallest $n$ for which the Lagrange error bound guarantees an error less than $0.001$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3000$",
+        "isCorrect": false,
+        "explanation": "3000 is the threshold for $(n+1)!$, not for $n$."
+      },
+      {
+        "label": "B",
+        "text": "$6$",
+        "isCorrect": true,
+        "explanation": "The bound is $\\frac{3}{(n+1)!}$. We need $(n+1)!>3000$. Since $6!=720<3000$ and $7!=5040>3000$, $n+1=7$, so $n=6$."
+      },
+      {
+        "label": "C",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "For $n=5$ the bound is $\\frac{3}{720}\\approx0.0042$, which is not less than 0.001."
+      },
+      {
+        "label": "D",
+        "text": "$7$",
+        "isCorrect": false,
+        "explanation": "$n+1=7$, so $n=6$. The index 7 is the factorial's argument, not the degree."
+      }
+    ],
+    "explanation": "Solve $\\frac{M}{(n+1)!}<0.001$ by trying successive factorials.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/lagrange-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-40",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "lagrange-error-bound",
+    "difficulty": "hard",
+    "stem": "The second-degree Taylor polynomial $T_2$ for $f(x)=\\ln x$ about $x=1$ is used to approximate $\\ln(1.5)$. Since $f'''(x)=\\frac{2}{x^3}$, what is the Lagrange error bound?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{81}$",
+        "isCorrect": false,
+        "explanation": "This uses $M=\\frac{2}{1.5^3}=\\frac{16}{27}$, the value at the right endpoint, which is the smallest value of $|f'''|$ on the interval, not the maximum."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{8}$",
+        "isCorrect": false,
+        "explanation": "This divides by $2!$ instead of $3!$: $\\frac{2(0.5)^3}{2}=\\frac18$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{24}$",
+        "isCorrect": true,
+        "explanation": "On $[1,1.5]$ the largest value of $\\left|f'''(t)\\right|=\\frac{2}{t^3}$ is at $t=1$, where it equals 2. So the error is at most $\\frac{2}{3!}(0.5)^3=\\frac{2}{6\\cdot8}=\\frac1{24}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{4}$",
+        "isCorrect": false,
+        "explanation": "This leaves out the $3!$: $2(0.5)^3=\\frac14$."
+      }
+    ],
+    "explanation": "$M$ must be an upper bound for $|f'''(t)|$ over the whole interval between $a$ and $x$. Find where $\\frac{2}{t^3}$ is largest.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/lagrange-error-bound",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-41",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "radius-and-interval-of-convergence",
+    "difficulty": "easy",
+    "stem": "What is the radius of convergence of the power series $\\sum_{n=0}^{\\infty}\\dfrac{x^n}{3^n}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "It is geometric with ratio $\\frac x3$, which converges for $\\left|\\frac x3\\right|<1$, that is $|x|<3$. The radius is 3."
+      },
+      {
+        "label": "B",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "1 would be the radius of $\\sum x^n$. The $3^n$ in the denominator changes it."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "The ratio is $\\frac{x}{3}$, so convergence needs $|x|<3$. The radius is 3, not $\\frac13$."
+      },
+      {
+        "label": "D",
+        "text": "$\\infty$",
+        "isCorrect": false,
+        "explanation": "The series is geometric and diverges for large $|x|$."
+      }
+    ],
+    "explanation": "Apply the Ratio Test to the terms: $\\left|\\frac{x^{n+1}/3^{n+1}}{x^n/3^n}\\right|=\\frac{|x|}{3}$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/radius-and-interval-of-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-42",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "radius-and-interval-of-convergence",
+    "difficulty": "medium",
+    "stem": "What is the interval of convergence of the power series $\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n\\cdot3^n}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$[-1,5)$",
+        "isCorrect": true,
+        "explanation": "The Ratio Test gives $\\frac{|x-2|}{3}<1$, so $-1<x<5$. At $x=5$ the series is $\\sum\\frac1n$ (diverges); at $x=-1$ it is $\\sum\\frac{(-1)^n}{n}$ (converges by the AST)."
+      },
+      {
+        "label": "B",
+        "text": "$[-1,5]$",
+        "isCorrect": false,
+        "explanation": "At $x=5$ the series is the harmonic series, which diverges."
+      },
+      {
+        "label": "C",
+        "text": "$(-1,5]$",
+        "isCorrect": false,
+        "explanation": "The endpoints are reversed: the harmonic series at $x=5$ diverges and the alternating one at $x=-1$ converges."
+      },
+      {
+        "label": "D",
+        "text": "$(-1,5)$",
+        "isCorrect": false,
+        "explanation": "At $x=-1$ the series is the alternating harmonic series, which converges, so $-1$ is included."
+      }
+    ],
+    "explanation": "Find the open interval from the Ratio Test, then test each endpoint separately.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/radius-and-interval-of-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-43",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "radius-and-interval-of-convergence",
+    "difficulty": "medium",
+    "stem": "What is the radius of convergence of the power series $\\sum_{n=0}^{\\infty}n!\\,x^n$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\infty$",
+        "isCorrect": false,
+        "explanation": "A factorial in the numerator makes the terms grow, so the series fails to converge for $x\\ne0$. Factorials in the denominator give an infinite radius."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": true,
+        "explanation": "$\\left|\\frac{(n+1)!\\,x^{n+1}}{n!\\,x^n}\\right|=(n+1)|x|\\to\\infty$ for every $x\\ne0$. The series converges only at $x=0$, so the radius is 0."
+      },
+      {
+        "label": "C",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "The factorials do not cancel to 1; the ratio contains the factor $n+1$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "Nothing in the ratio produces $\\frac12$."
+      }
+    ],
+    "explanation": "Compare with $\\sum\\frac{x^n}{n!}$, whose radius is infinite: a factorial in the denominator helps convergence, in the numerator it destroys it.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/radius-and-interval-of-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-44",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "radius-and-interval-of-convergence",
+    "difficulty": "medium",
+    "stem": "What is the interval of convergence of the power series $\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$[0,\\infty)$",
+        "isCorrect": false,
+        "explanation": "The ratio $\\frac{|x|}{n+1}\\to0$ works for negative $x$ as well."
+      },
+      {
+        "label": "B",
+        "text": "$(-1,1)$",
+        "isCorrect": false,
+        "explanation": "That is the interval for $\\sum x^n$. The factorials make the terms shrink much faster."
+      },
+      {
+        "label": "C",
+        "text": "$(-\\infty,\\infty)$",
+        "isCorrect": true,
+        "explanation": "$\\left|\\frac{x^{n+1}/(n+1)!}{x^n/n!}\\right|=\\frac{|x|}{n+1}\\to0<1$ for every $x$. The series converges for all real $x$."
+      },
+      {
+        "label": "D",
+        "text": "$\\{0\\}$",
+        "isCorrect": false,
+        "explanation": "That would be the interval for $\\sum n!\\,x^n$."
+      }
+    ],
+    "explanation": "When the ratio limit is 0 regardless of $x$, the radius of convergence is infinite.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/radius-and-interval-of-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-45",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "radius-and-interval-of-convergence",
+    "difficulty": "medium",
+    "stem": "What is the interval of convergence of the power series $\\sum_{n=1}^{\\infty}\\dfrac{2^n(x+1)^n}{\\sqrt n}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\left[-\\frac32,-\\frac12\\right]$",
+        "isCorrect": false,
+        "explanation": "At $x=-\\frac12$ the series is $\\sum\\frac1{\\sqrt n}$, a divergent $p$-series ($p=\\frac12$)."
+      },
+      {
+        "label": "B",
+        "text": "$\\left[-\\frac32,-\\frac12\\right)$",
+        "isCorrect": true,
+        "explanation": "The Ratio Test gives $2|x+1|<1$, so $-\\frac32<x<-\\frac12$. At $x=-\\frac12$ the series is $\\sum\\frac1{\\sqrt n}$ (diverges); at $x=-\\frac32$ it is $\\sum\\frac{(-1)^n}{\\sqrt n}$ (converges by the AST)."
+      },
+      {
+        "label": "C",
+        "text": "$(-3,1)$",
+        "isCorrect": false,
+        "explanation": "This solves $\\left|\\frac{x+1}{2}\\right|<1$. The factor is $2^n$ in the numerator, so the condition is $|2(x+1)|<1$."
+      },
+      {
+        "label": "D",
+        "text": "$\\left(-\\frac32,-\\frac12\\right)$",
+        "isCorrect": false,
+        "explanation": "At $x=-\\frac32$ the series converges by the Alternating Series Test, so that endpoint is included."
+      }
+    ],
+    "explanation": "Radius from the Ratio Test: $2|x+1|<1$. Then check each endpoint with a $p$-series or the AST.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/radius-and-interval-of-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-46",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "radius-and-interval-of-convergence",
+    "difficulty": "hard",
+    "stem": "What is the interval of convergence of the power series $\\sum_{n=1}^{\\infty}\\dfrac{(x-1)^n}{n^2}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$(-1,1)$",
+        "isCorrect": false,
+        "explanation": "This is the interval for $\\sum\\frac{x^n}{n^2}$. The center here is 1, not 0."
+      },
+      {
+        "label": "B",
+        "text": "$[0,2)$",
+        "isCorrect": false,
+        "explanation": "At $x=2$ the series is $\\sum\\frac{1}{n^2}$, which converges."
+      },
+      {
+        "label": "C",
+        "text": "$(0,2)$",
+        "isCorrect": false,
+        "explanation": "Both endpoint series converge ($p$-series with $p=2$, and its alternating version), so the endpoints are included."
+      },
+      {
+        "label": "D",
+        "text": "$[0,2]$",
+        "isCorrect": true,
+        "explanation": "The Ratio Test gives $|x-1|<1$. At $x=2$ the series is $\\sum\\frac1{n^2}$ (converges) and at $x=0$ it is $\\sum\\frac{(-1)^n}{n^2}$ (converges absolutely). Both endpoints are included."
+      }
+    ],
+    "explanation": "After finding the open interval, test both endpoints; with $n^2$ in the denominator both converge.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/radius-and-interval-of-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-47",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "radius-and-interval-of-convergence",
+    "difficulty": "hard",
+    "stem": "What is the interval of convergence of the power series $\\sum_{n=1}^{\\infty}\\dfrac{(3x-2)^n}{n}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\left[\\frac13,1\\right)$",
+        "isCorrect": true,
+        "explanation": "The series converges when $|3x-2|<1$, so $\\frac13<x<1$. At $x=1$ it is $\\sum\\frac1n$ (diverges); at $x=\\frac13$ it is $\\sum\\frac{(-1)^n}{n}$ (converges). The radius of convergence in $x$ is $\\frac13$."
+      },
+      {
+        "label": "B",
+        "text": "$(-1,1)$",
+        "isCorrect": false,
+        "explanation": "The condition is $|3x-2|<1$, not $|x|<1$."
+      },
+      {
+        "label": "C",
+        "text": "$\\left[\\frac13,1\\right]$",
+        "isCorrect": false,
+        "explanation": "At $x=1$ the series is the harmonic series, which diverges."
+      },
+      {
+        "label": "D",
+        "text": "$\\left(\\frac13,1\\right]$",
+        "isCorrect": false,
+        "explanation": "The endpoints are reversed: the harmonic series at $x=1$ diverges."
+      }
+    ],
+    "explanation": "The series is geometric-like in $3x-2$: solve $|3x-2|<1$, then test both endpoints in the original series.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/radius-and-interval-of-convergence",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-48",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-and-maclaurin-series",
+    "difficulty": "easy",
+    "stem": "What is the coefficient of $x^4$ in the Maclaurin series for $\\cos x$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{24}$",
+        "isCorrect": true,
+        "explanation": "$\\cos x=1-\\frac{x^2}{2!}+\\frac{x^4}{4!}-\\cdots$, so the coefficient of $x^4$ is $\\frac1{4!}=\\frac1{24}$."
+      },
+      {
+        "label": "B",
+        "text": "$- \\frac{1}{24}$",
+        "isCorrect": false,
+        "explanation": "The signs alternate $+,-,+$ starting with the constant term 1, so the $x^4$ term is positive."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{4}$",
+        "isCorrect": false,
+        "explanation": "The coefficient is $\\frac{f^{(4)}(0)}{4!}$, divided by the factorial $4!=24$, not by 4."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "$\\frac1{3!}=\\frac16$ is the size of the $x^3$ coefficient in $\\sin x$. For $x^4$ in $\\cos x$ it is $\\frac1{4!}$."
+      }
+    ],
+    "explanation": "Know the Maclaurin series for $e^x$, $\\sin x$ and $\\cos x$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-and-maclaurin-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-49",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-and-maclaurin-series",
+    "difficulty": "easy",
+    "stem": "What is the coefficient of $x^4$ in the Maclaurin series for $f(x)=e^{-x^2}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "The term is $\\frac{u^2}{2!}$, so the coefficient is $\\frac12$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{24}$",
+        "isCorrect": false,
+        "explanation": "$\\frac{1}{4!}$ is the coefficient of $u^4$, but here $u=-x^2$, so $x^4$ comes from $\\frac{u^2}{2!}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": true,
+        "explanation": "Substitute $-x^2$ into $e^u=1+u+\\frac{u^2}{2!}+\\cdots$: $1-x^2+\\frac{x^4}{2}-\\frac{x^6}{6}+\\cdots$. The coefficient of $x^4$ is $\\frac12$."
+      },
+      {
+        "label": "D",
+        "text": "$- \\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "$u^2=(-x^2)^2=x^4$ is positive, so the term is $+\\frac{x^4}{2}$."
+      }
+    ],
+    "explanation": "Substituting into a known series is quicker than taking derivatives.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-and-maclaurin-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-50",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-and-maclaurin-series",
+    "difficulty": "medium",
+    "stem": "What are the first three nonzero terms of the Maclaurin series for $f(x)=x^2\\sin x$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$x^3-\\dfrac{x^5}{6}+\\dfrac{x^7}{120}$",
+        "isCorrect": true,
+        "explanation": "Multiply the series $\\sin x=x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\cdots$ by $x^2$ term by term."
+      },
+      {
+        "label": "B",
+        "text": "$x^3+\\dfrac{x^5}{6}+\\dfrac{x^7}{120}$",
+        "isCorrect": false,
+        "explanation": "The signs of $\\sin x$'s series alternate."
+      },
+      {
+        "label": "C",
+        "text": "$x-\\dfrac{x^3}{6}+\\dfrac{x^5}{120}$",
+        "isCorrect": false,
+        "explanation": "This is the series for $\\sin x$; the factor $x^2$ raises each power by 2."
+      },
+      {
+        "label": "D",
+        "text": "$x^3-\\dfrac{x^5}{3}+\\dfrac{x^7}{5}$",
+        "isCorrect": false,
+        "explanation": "The denominators are factorials: $3!=6$ and $5!=120$, not 3 and 5."
+      }
+    ],
+    "explanation": "Multiplying a series by $x^2$ shifts every exponent up by 2.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-and-maclaurin-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-51",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-and-maclaurin-series",
+    "difficulty": "medium",
+    "stem": "The function $f(x)=\\sin\\left(x^2\\right)$ has the Maclaurin series $x^2-\\dfrac{x^6}{6}+\\dfrac{x^{10}}{120}-\\cdots$. What is $f^{(6)}(0)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$- \\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "$-\\frac16$ is the coefficient of $x^6$, not the sixth derivative. Multiply by $6!$."
+      },
+      {
+        "label": "B",
+        "text": "$-720$",
+        "isCorrect": false,
+        "explanation": "$-720$ would be $-6!$. The coefficient of $x^6$ is $-\\frac16$, so multiply $-\\frac16$ by $720$."
+      },
+      {
+        "label": "C",
+        "text": "$120$",
+        "isCorrect": false,
+        "explanation": "The coefficient is negative, so the derivative is negative."
+      },
+      {
+        "label": "D",
+        "text": "$-120$",
+        "isCorrect": true,
+        "explanation": "The coefficient of $x^6$ is $\\frac{f^{(6)}(0)}{6!}=-\\frac16$, so $f^{(6)}(0)=-\\frac{720}{6}=-120$."
+      }
+    ],
+    "explanation": "The coefficient of $x^k$ equals $\\frac{f^{(k)}(0)}{k!}$, so $f^{(k)}(0)=k!\\times$ coefficient.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-and-maclaurin-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-52",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-and-maclaurin-series",
+    "difficulty": "hard",
+    "stem": "What are the first two nonzero terms of the Taylor series for $f(x)=\\sin x$ about $x=\\pi$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$(x-\\pi)-\\dfrac{(x-\\pi)^3}{6}$",
+        "isCorrect": false,
+        "explanation": "This is the Maclaurin pattern. At $x=\\pi$ the derivatives are $\\cos\\pi=-1$ and $-\\cos\\pi=1$, which flips both signs."
+      },
+      {
+        "label": "B",
+        "text": "$-(x-\\pi)+\\dfrac{(x-\\pi)^3}{6}$",
+        "isCorrect": true,
+        "explanation": "$f(\\pi)=0$, $f'(\\pi)=\\cos\\pi=-1$, $f''(\\pi)=0$, $f'''(\\pi)=-\\cos\\pi=1$. So the terms are $-(x-\\pi)+\\frac{1}{3!}(x-\\pi)^3$."
+      },
+      {
+        "label": "C",
+        "text": "$-(x-\\pi)-\\dfrac{(x-\\pi)^3}{6}$",
+        "isCorrect": false,
+        "explanation": "$f'''(\\pi)=-\\cos\\pi=+1$, so the cubic term is positive."
+      },
+      {
+        "label": "D",
+        "text": "$1-\\dfrac{(x-\\pi)^2}{2}$",
+        "isCorrect": false,
+        "explanation": "$f(\\pi)=\\sin\\pi=0$, so there is no constant term."
+      }
+    ],
+    "explanation": "Evaluate $f$ and its derivatives at $\\pi$ instead of 0. Alternatively, use $\\sin x=-\\sin(x-\\pi)$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-and-maclaurin-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-53",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "taylor-and-maclaurin-series",
+    "difficulty": "hard",
+    "stem": "What is $\\displaystyle\\lim_{x\\to0}\\frac{\\sin x-x}{x^3}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "This replaces $\\sin x$ by $x$. The next term of the series, $-\\frac{x^3}{6}$, is of the same order as the denominator."
+      },
+      {
+        "label": "B",
+        "text": "$- \\frac{1}{6}$",
+        "isCorrect": true,
+        "explanation": "Using $\\sin x=x-\\frac{x^3}{6}+\\frac{x^5}{120}-\\cdots$: $\\frac{\\sin x-x}{x^3}=-\\frac16+\\frac{x^2}{120}-\\cdots\\to-\\frac16$."
+      },
+      {
+        "label": "C",
+        "text": "$- \\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "$\\frac{1}{3!}=\\frac16$, not $\\frac12$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "The $x^3$ term of the sine series is negative."
+      }
+    ],
+    "explanation": "Replace $\\sin x$ by its Maclaurin series and cancel the lowest-order terms.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/taylor-and-maclaurin-series",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-54",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "power-series-representations",
+    "difficulty": "easy",
+    "stem": "Which power series represents $\\dfrac{1}{1+x^2}$ for $|x|<1$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\sum_{n=0}^{\\infty}x^{2n}$",
+        "isCorrect": false,
+        "explanation": "That is the series for $\\frac{1}{1-x^2}$. The sign in $1+x^2$ makes the terms alternate."
+      },
+      {
+        "label": "B",
+        "text": "$\\sum_{n=0}^{\\infty}(-1)^nx^{2n+1}$",
+        "isCorrect": false,
+        "explanation": "That is the series for $\\frac{x}{1+x^2}$, with an extra factor of $x$."
+      },
+      {
+        "label": "C",
+        "text": "$\\sum_{n=0}^{\\infty}(-1)^nx^n$",
+        "isCorrect": false,
+        "explanation": "That is the series for $\\frac{1}{1+x}$. The exponents here are $2n$."
+      },
+      {
+        "label": "D",
+        "text": "$\\sum_{n=0}^{\\infty}(-1)^nx^{2n}$",
+        "isCorrect": true,
+        "explanation": "Substitute $-x^2$ into $\\frac{1}{1-u}=\\sum u^n$: $\\sum(-x^2)^n=\\sum(-1)^nx^{2n}=1-x^2+x^4-\\cdots$."
+      }
+    ],
+    "explanation": "Start from the geometric series $\\frac1{1-u}=\\sum u^n$ and substitute $u=-x^2$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/power-series-representations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-55",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "power-series-representations",
+    "difficulty": "easy",
+    "stem": "What is the coefficient of $x^3$ in the Maclaurin series for $\\dfrac{1}{1-3x}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$9$",
+        "isCorrect": false,
+        "explanation": "9 is the coefficient of $x^2$."
+      },
+      {
+        "label": "B",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "3 is the coefficient of $x$. For $x^3$ the ratio is cubed: $3^3=27$."
+      },
+      {
+        "label": "C",
+        "text": "$27$",
+        "isCorrect": true,
+        "explanation": "$\\frac{1}{1-3x}=\\sum(3x)^n=1+3x+9x^2+27x^3+\\cdots$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{27}$",
+        "isCorrect": false,
+        "explanation": "The ratio is $3x$, not $\\frac{x}{3}$."
+      }
+    ],
+    "explanation": "Substitute $u=3x$ into the geometric series.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/power-series-representations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-56",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "power-series-representations",
+    "difficulty": "medium",
+    "stem": "Which is the Maclaurin series for $\\dfrac{1}{(1-x)^2}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1+x+x^2+x^3+\\cdots$",
+        "isCorrect": false,
+        "explanation": "That is the series for $\\frac{1}{1-x}$."
+      },
+      {
+        "label": "B",
+        "text": "$1+4x+9x^2+16x^3+\\cdots$",
+        "isCorrect": false,
+        "explanation": "Squaring the coefficients of $\\frac1{1-x}$ is not the same as squaring the function."
+      },
+      {
+        "label": "C",
+        "text": "$x+2x^2+3x^3+\\cdots$",
+        "isCorrect": false,
+        "explanation": "That is $\\frac{x}{(1-x)^2}$, which has an extra factor of $x$."
+      },
+      {
+        "label": "D",
+        "text": "$1+2x+3x^2+4x^3+\\cdots$",
+        "isCorrect": true,
+        "explanation": "Differentiate $\\frac{1}{1-x}=1+x+x^2+x^3+\\cdots$ term by term: $\\frac{1}{(1-x)^2}=1+2x+3x^2+4x^3+\\cdots$."
+      }
+    ],
+    "explanation": "Termwise differentiation of a power series is allowed inside its interval of convergence.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/power-series-representations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-57",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "power-series-representations",
+    "difficulty": "medium",
+    "stem": "Integrating the series for $\\dfrac{1}{1+x}=1-x+x^2-x^3+\\cdots$ term by term gives a series for $\\ln(1+x)$. What is the coefficient of $x^3$ in that series?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": true,
+        "explanation": "$\\int\\left(1-x+x^2-\\cdots\\right)dx=x-\\frac{x^2}{2}+\\frac{x^3}{3}-\\cdots$ (the constant is 0 because $\\ln1=0$). The coefficient of $x^3$ is $\\frac13$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "There is no factorial here: integrating $x^2$ gives $\\frac{x^3}{3}$."
+      },
+      {
+        "label": "C",
+        "text": "$- \\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "The $x^2$ term of the integrand is $+x^2$, and its integral is $+\\frac{x^3}{3}$."
+      },
+      {
+        "label": "D",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "Integration divides by the new exponent: $\\int x^2dx=\\frac{x^3}{3}$."
+      }
+    ],
+    "explanation": "Integrate each term, and use a known value (here $\\ln1=0$) to find the constant.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/power-series-representations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-58",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "power-series-representations",
+    "difficulty": "medium",
+    "stem": "What is the sum of the series $\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{2n+1}=1-\\dfrac13+\\dfrac15-\\cdots$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "1 is only the first term."
+      },
+      {
+        "label": "B",
+        "text": "$\\ln{\\left(2 \\right)}$",
+        "isCorrect": false,
+        "explanation": "$\\ln2$ is the sum of $\\sum\\frac{(-1)^{n+1}}{n}$, which comes from the series for $\\ln(1+x)$ at $x=1$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{\\pi}{2}$",
+        "isCorrect": false,
+        "explanation": "$\\arctan1=\\frac\\pi4$. The value $\\frac\\pi2$ is $\\lim_{x\\to\\infty}\\arctan x$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{\\pi}{4}$",
+        "isCorrect": true,
+        "explanation": "Integrating $\\frac{1}{1+x^2}=\\sum(-1)^nx^{2n}$ gives $\\arctan x=\\sum\\frac{(-1)^nx^{2n+1}}{2n+1}$, which converges at $x=1$. So the sum is $\\arctan1=\\frac\\pi4$."
+      }
+    ],
+    "explanation": "Recognize the series for $\\arctan x$ at $x=1$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/power-series-representations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-59",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "power-series-representations",
+    "difficulty": "hard",
+    "stem": "Using the first three nonzero terms of the Maclaurin series for $e^{-x^2}$, which is $1-x^2+\\frac{x^4}{2}-\\cdots$, what is the approximation of $\\displaystyle\\int_0^1e^{-x^2}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "This adds the coefficients, $1-1+\\frac12$, which evaluates the integrand at $x=1$ rather than integrating."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{23}{30}$",
+        "isCorrect": true,
+        "explanation": "Integrate term by term: $\\int_0^1\\left(1-x^2+\\frac{x^4}{2}\\right)dx=1-\\frac13+\\frac1{10}=\\frac{23}{30}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{13}{15}$",
+        "isCorrect": false,
+        "explanation": "$\\int_0^1\\frac{x^4}2dx=\\frac1{10}$. Leaving out the $\\frac12$ gives $\\frac15$ and the sum $\\frac{13}{15}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{2}{3}$",
+        "isCorrect": false,
+        "explanation": "This uses the series for $e^{-x}$, $1-x+\\frac{x^2}{2}$, instead of $e^{-x^2}$."
+      }
+    ],
+    "explanation": "Integrating a power series term by term turns each $x^k$ into $\\frac{x^{k+1}}{k+1}$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/power-series-representations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u10-mcq-60",
+    "unit": "unit-10-infinite-sequences-and-series",
+    "topic": "power-series-representations",
+    "difficulty": "hard",
+    "stem": "What is the sum of the series $\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n}{2^n}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "From $\\frac{1}{1-x}=\\sum x^n$, differentiate and multiply by $x$: $\\sum nx^n=\\frac{x}{(1-x)^2}$ for $|x|<1$. At $x=\\frac12$: $\\frac{1/2}{1/4}=2$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "$\\frac12$ is the first term only."
+      },
+      {
+        "label": "C",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "$\\frac{1}{(1-x)^2}$ at $x=\\frac12$ is 4 and is the sum of $\\sum nx^{n-1}$. The series here has $nx^n$, which has one more factor of $x$."
+      },
+      {
+        "label": "D",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "$\\sum\\frac{1}{2^n}=1$ is the geometric series without the factor $n$."
+      }
+    ],
+    "explanation": "Start with a known geometric series, differentiate, and adjust by a power of $x$.",
+    "conceptLink": "ap-calc-bc/unit-10-infinite-sequences-and-series/power-series-representations",
+    "reviewed": false
+  }
+]

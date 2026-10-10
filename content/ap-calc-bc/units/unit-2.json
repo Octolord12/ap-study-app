@@ -1,0 +1,34 @@
+{
+  "slug": "unit-2-differentiation-definition-and-properties",
+  "order": 2,
+  "name": "Differentiation: Definition and Fundamental Properties",
+  "weightingMin": 5,
+  "weightingMax": 10,
+  "topics": [
+    {
+      "slug": "average-vs-instantaneous-rate-of-change",
+      "order": 1,
+      "name": "Average vs. Instantaneous Rate of Change"
+    },
+    {
+      "slug": "derivative-definition-and-differentiability",
+      "order": 2,
+      "name": "Defining the Derivative and Differentiability"
+    },
+    {
+      "slug": "power-rule-and-basic-derivatives",
+      "order": 3,
+      "name": "The Power Rule and Basic Derivatives"
+    },
+    {
+      "slug": "derivatives-of-trig-exponential-log",
+      "order": 4,
+      "name": "Derivatives of Trigonometric, Exponential, and Logarithmic Functions"
+    },
+    {
+      "slug": "sum-difference-product-quotient-rules",
+      "order": 5,
+      "name": "Sum, Difference, Product, and Quotient Rules"
+    }
+  ]
+}

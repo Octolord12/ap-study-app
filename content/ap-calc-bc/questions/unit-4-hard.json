@@ -1,0 +1,542 @@
+[
+  {
+    "id": "ap-calcbc-u4-mcq-31",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "hard",
+    "stem": "A particle moves along a line so that its position for $t\\ge0$ is $s(t)=t^3-9t^2+24t-5$. For which values of $t$ is the speed of the particle increasing?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0<t<2$ and $3<t<4$",
+        "isCorrect": false,
+        "explanation": "On these intervals the velocity and acceleration have opposite signs, so the particle is slowing down, not speeding up."
+      },
+      {
+        "label": "B",
+        "text": "$t>3$",
+        "isCorrect": false,
+        "explanation": "This is where acceleration is positive. A positive acceleration only speeds the particle up when the velocity is also positive, which is not true on $(3,4)$."
+      },
+      {
+        "label": "C",
+        "text": "$2<t<3$ and $t>4$",
+        "isCorrect": true,
+        "explanation": "$v(t)=3(t-2)(t-4)$ and $a(t)=6(t-3)$. Speed increases when $v$ and $a$ have the same sign. On $(2,3)$ both are negative; on $(3,4)$ $v<0<a$; on $(4,\\infty)$ both are positive. So speed increases on $(2,3)$ and $(4,\\infty)$."
+      },
+      {
+        "label": "D",
+        "text": "$0<t<2$ and $t>4$",
+        "isCorrect": false,
+        "explanation": "These are the intervals where the velocity is positive (moving right). Speeding up depends on the signs of velocity and acceleration together."
+      }
+    ],
+    "explanation": "Speed increases exactly when velocity and acceleration have the same sign. Make a sign chart for $v=3(t-2)(t-4)$ and $a=6(t-3)$.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-32",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "hard",
+    "stem": "A particle moves along a line with position $s(t)=t^3-9t^2+24t-5$ for $0\\le t\\le5$. What is the total distance the particle travels in that time?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$15$",
+        "isCorrect": false,
+        "explanation": "$s(5)=15$ is the particle's position at the end, not the distance it traveled."
+      },
+      {
+        "label": "B",
+        "text": "$24$",
+        "isCorrect": false,
+        "explanation": "This stops at $t=4$ and leaves out the last leg from $t=4$ to $t=5$ (a distance of 4)."
+      },
+      {
+        "label": "C",
+        "text": "$28$",
+        "isCorrect": true,
+        "explanation": "$v(t)=3(t-2)(t-4)$ is zero at $t=2$ and $t=4$, where the particle turns around. Positions: $s(0)=-5$, $s(2)=15$, $s(4)=11$, $s(5)=15$. Distance: $20+4+4=28$."
+      },
+      {
+        "label": "D",
+        "text": "$20$",
+        "isCorrect": false,
+        "explanation": "This is the net displacement $s(5)-s(0)$. Total distance adds the lengths of each leg of the trip; the particle moves backward from $t=2$ to $t=4$, which cancels part of the displacement but still counts as distance traveled."
+      }
+    ],
+    "explanation": "Find where $v=0$ and split the interval there. Add the absolute change in position over each piece.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-33",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "hard",
+    "stem": "Water drains from a conical tank (vertex down) with radius 6 ft and height 12 ft at a rate of $8\\pi$ cubic feet per minute. How fast is the water level falling at the instant the water is 4 ft deep?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac12$ ft per minute",
+        "isCorrect": false,
+        "explanation": "This uses $r=h$, as if the cone's radius equaled its height. Here $\\frac rh=\\frac{6}{12}=\\frac12$."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac29$ ft per minute",
+        "isCorrect": false,
+        "explanation": "This substitutes $h=12$ (the full height of the tank) into $\\frac{\\pi h^2}{4}$. The instant in question has the water 4 ft deep."
+      },
+      {
+        "label": "C",
+        "text": "2 ft per minute",
+        "isCorrect": true,
+        "explanation": "The water's radius is proportional to its depth: $r=\\frac h2$. So $V=\\frac13\\pi r^2h=\\frac{\\pi h^3}{12}$ and $\\frac{dV}{dt}=\\frac{\\pi h^2}{4}\\frac{dh}{dt}$. With $\\frac{dV}{dt}=-8\\pi$ and $h=4$: $-8\\pi=4\\pi\\frac{dh}{dt}$, so $\\frac{dh}{dt}=-2$. The level falls at 2 ft/min."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac23$ ft per minute",
+        "isCorrect": false,
+        "explanation": "This treats the radius as the constant 6 ft. The surface of the water has a radius that shrinks with the depth, $r=\\frac h2$, so $V$ is not $12\\pi h$."
+      }
+    ],
+    "explanation": "Use similar triangles to write $r$ in terms of $h$ before differentiating the volume.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-34",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "hard",
+    "stem": "An observer stands 30 m from the base of a launch tower. A rocket rises straight up at 5 m/s. At the instant the rocket is 40 m above the ground, how fast is the observer's angle of elevation $\\theta$ to the rocket changing, in radians per second?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{25}{54}$",
+        "isCorrect": false,
+        "explanation": "$\\sec^2\\theta$ is in the denominator on the other side: $\\frac{d\\theta}{dt}=\\frac{1}{30}\\frac{dh}{dt}\\div\\sec^2\\theta$, not multiplied by it."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{1}{30}\\cdot5$, the rate with the factor $\\sec^2\\theta$ ignored. The derivative of $\\tan\\theta$ is $\\sec^2\\theta\\frac{d\\theta}{dt}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{3}{50}$",
+        "isCorrect": true,
+        "explanation": "$\\tan\\theta=\\frac{h}{30}$, so $\\sec^2\\theta\\frac{d\\theta}{dt}=\\frac1{30}\\frac{dh}{dt}$. At $h=40$: $\\tan\\theta=\\frac43$ and $\\sec^2\\theta=1+\\frac{16}9=\\frac{25}9$. Then $\\frac{d\\theta}{dt}=\\frac{5/30}{25/9}=\\frac{3}{50}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{9}{25}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{1}{\\sec^2\\theta}$ alone, which leaves out the factor $\\frac{1}{30}\\frac{dh}{dt}=\\frac16$."
+      }
+    ],
+    "explanation": "Relate the angle to the height with a tangent, differentiate with respect to $t$, then use the right triangle with legs 30 and 40 to get $\\sec^2\\theta$.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-35",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "hard",
+    "stem": "The volume of a sphere is increasing at a constant rate of $36\\pi$ cubic centimeters per second. At the instant the radius is 3 cm, how fast is the surface area $S=4\\pi r^2$ increasing?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$12\\pi$ cm$^2$/s",
+        "isCorrect": false,
+        "explanation": "This differentiates $4\\pi r^2$ as $4\\pi r$. The power rule gives $2\\cdot4\\pi r=8\\pi r$."
+      },
+      {
+        "label": "B",
+        "text": "$8\\pi$ cm$^2$/s",
+        "isCorrect": false,
+        "explanation": "This is $8\\pi r$ with $r$ replaced by $\\frac{dr}{dt}=1$. The radius is 3 and the rate of change of the radius is 1; both are needed."
+      },
+      {
+        "label": "C",
+        "text": "$36\\pi$ cm$^2$/s",
+        "isCorrect": false,
+        "explanation": "$36\\pi$ is the given rate for the volume. The surface area changes at a different rate."
+      },
+      {
+        "label": "D",
+        "text": "$24\\pi$ cm$^2$/s",
+        "isCorrect": true,
+        "explanation": "$\\frac{dV}{dt}=4\\pi r^2\\frac{dr}{dt}$, so $36\\pi=36\\pi\\frac{dr}{dt}$ and $\\frac{dr}{dt}=1$ cm/s. Then $\\frac{dS}{dt}=8\\pi r\\frac{dr}{dt}=8\\pi(3)(1)=24\\pi$."
+      }
+    ],
+    "explanation": "Use the volume's rate to find $\\frac{dr}{dt}$ first, then differentiate the surface area formula.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-36",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "local-linearization",
+    "difficulty": "hard",
+    "stem": "The tangent line to $f(x)=\\sqrt[3]{x}$ at $x=8$ is used to approximate $\\sqrt[3]{8.3}$. Which is the approximation, and is it an overestimate or an underestimate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.05, an overestimate",
+        "isCorrect": false,
+        "explanation": "This uses $f'(8)=\\frac16$, from $\\frac13\\cdot\\frac{1}{2}$. The derivative is $\\frac13\\cdot8^{-2/3}=\\frac13\\cdot\\frac14=\\frac1{12}$."
+      },
+      {
+        "label": "B",
+        "text": "2.0083, an underestimate",
+        "isCorrect": false,
+        "explanation": "This uses $f'(8)=\\frac1{36}$, which is $\\frac13\\cdot\\frac1{12}$. The exponent $-\\frac23$ applies to 8, giving $\\frac14$, not $\\frac1{12}$."
+      },
+      {
+        "label": "C",
+        "text": "2.025, an underestimate",
+        "isCorrect": false,
+        "explanation": "The value is right, but the graph is concave down ($f''<0$), so it lies below the tangent line and the tangent value overestimates."
+      },
+      {
+        "label": "D",
+        "text": "2.025, an overestimate",
+        "isCorrect": true,
+        "explanation": "$f'(x)=\\frac13x^{-2/3}$, so $f'(8)=\\frac{1}{12}$ and $L(8.3)=2+\\frac{1}{12}(0.3)=2.025$. Since $f''(x)=-\\frac29x^{-5/3}<0$, the graph is concave down and lies below its tangent lines, so the tangent line value is too large."
+      }
+    ],
+    "explanation": "Compute $L(x)=f(8)+f'(8)(x-8)$ and use the sign of $f''$ to decide whether the tangent line sits above or below the graph.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/local-linearization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-37",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "local-linearization",
+    "difficulty": "hard",
+    "stem": "The function $f$ is twice differentiable with $f''(x)<0$ for all $x$. Let $L$ be the line tangent to the graph of $f$ at $x=3$. Which statement is true?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$L(x)>f(x)$ for every $x\\neq3$",
+        "isCorrect": true,
+        "explanation": "When $f''<0$ the graph is concave down, so it lies below every one of its tangent lines (except at the point of tangency). The tangent line overestimates $f$ on both sides of 3."
+      },
+      {
+        "label": "B",
+        "text": "$L(x)=f(x)$ for every $x$ near 3",
+        "isCorrect": false,
+        "explanation": "The tangent line agrees with $f$ only at $x=3$ unless $f$ is linear. Since $f''<0$, $f$ is never linear."
+      },
+      {
+        "label": "C",
+        "text": "$L(x)<f(x)$ for every $x\\neq3$",
+        "isCorrect": false,
+        "explanation": "That is the concave-up case ($f''>0$), where the graph lies above its tangent lines."
+      },
+      {
+        "label": "D",
+        "text": "$L(x)>f(x)$ for $x>3$ and $L(x)<f(x)$ for $x<3$",
+        "isCorrect": false,
+        "explanation": "Concavity does not change sign here ($f''<0$ everywhere), so the tangent line stays on the same side of the graph on both sides of 3."
+      }
+    ],
+    "explanation": "A concave-down graph lies below its tangent lines; a concave-up graph lies above them.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/local-linearization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-38",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "hard",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{e^{2x}-1-2x}{x^2}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "This does not divide by the 2 that comes from differentiating $x^2$. The second application gives $\\frac{4e^{2x}}{2}$."
+      },
+      {
+        "label": "B",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "The form is $\\frac00$. L'Hôpital: $\\frac{2e^{2x}-2}{2x}=\\frac{e^{2x}-1}{x}$, still $\\frac00$. Apply it again: $\\frac{2e^{2x}}{1}\\to2$."
+      },
+      {
+        "label": "C",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "This applies the derivative of $e^{2x}$ as $e^{2x}$, missing the chain-rule factor 2 each time."
+      },
+      {
+        "label": "D",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "After one application the form $\\frac{2e^{2x}-2}{2x}$ is still $\\frac00$, so L'Hôpital must be applied a second time."
+      }
+    ],
+    "explanation": "Apply L'Hôpital's Rule as long as the form remains $\\frac00$.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-39",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "hard",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{x-\\sin x}{x^3}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The first two applications still give $\\frac00$. Keep going until the denominator is nonzero at 0."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "This is $\\lim\\frac{1-\\cos x}{x^2}$. After the first application the denominator is $3x^2$, so the limit is $\\frac13\\cdot\\frac12=\\frac16$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{6}$",
+        "isCorrect": true,
+        "explanation": "Apply L'Hôpital three times: $\\frac{1-\\cos x}{3x^2}\\to\\frac{\\sin x}{6x}\\to\\frac{\\cos x}{6}\\to\\frac16$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "This takes $\\frac{1-\\cos x}{x^2}\\to1$ and divides by 3. That limit is $\\frac12$, not 1."
+      }
+    ],
+    "explanation": "Three applications are needed: the denominators become $3x^2$, $6x$, then $6$.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-40",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "hard",
+    "stem": "What is $\\displaystyle\\lim_{x\\to0^+}x\\ln x$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-\\infty$",
+        "isCorrect": false,
+        "explanation": "$\\ln x\\to-\\infty$, but $x\\to0$ pulls the product the other way. Power functions beat logarithms: the product tends to 0."
+      },
+      {
+        "label": "B",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "A product of a number tending to 0 and one tending to $-\\infty$ is an indeterminate form; it is resolved by rewriting as a quotient, and the result here is 0."
+      },
+      {
+        "label": "C",
+        "text": "$0$",
+        "isCorrect": true,
+        "explanation": "The form is $0\\cdot(-\\infty)$. Rewrite as $\\frac{\\ln x}{1/x}$, which is $\\frac{-\\infty}{\\infty}$. L'Hôpital: $\\frac{1/x}{-1/x^2}=-x\\to0$."
+      },
+      {
+        "label": "D",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "After L'Hôpital the expression is $-x$, which tends to 0, not $-1$."
+      }
+    ],
+    "explanation": "Rewrite the indeterminate product $0\\cdot\\infty$ as a quotient so that L'Hôpital's Rule applies.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-41",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "hard",
+    "stem": "What is $\\displaystyle\\lim_{x\\to\\infty}\\frac{x+\\sin x}{x}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1$",
+        "isCorrect": true,
+        "explanation": "Divide by $x$: $1+\\frac{\\sin x}{x}$. Since $-\\frac1x\\le\\frac{\\sin x}{x}\\le\\frac1x$, the second term tends to 0 and the limit is 1."
+      },
+      {
+        "label": "B",
+        "text": "The limit does not exist, because L'Hôpital's Rule gives $\\lim(1+\\cos x)$, which oscillates",
+        "isCorrect": false,
+        "explanation": "L'Hôpital's Rule only says that if the limit of the derivative quotient exists, it equals the original limit. When the derivative quotient has no limit, the rule is silent; the original limit can still exist."
+      },
+      {
+        "label": "C",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The numerator grows like $x$, so the quotient does not go to 0."
+      },
+      {
+        "label": "D",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "$\\sin x$ is bounded, so it adds nothing in the limit. The terms $x$ in the numerator and denominator give a ratio of 1."
+      }
+    ],
+    "explanation": "L'Hôpital's Rule is not the right tool here. Use algebra and the Squeeze Theorem.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-42",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "difficulty": "hard",
+    "stem": "What is $\\lim_{x \\to 0} \\frac{1-\\cos x}{x\\sin x}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "After the first application the form is still $\\frac00$. Substituting 0 into only the numerator gives a false 0."
+      },
+      {
+        "label": "B",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "This stops after one step by cancelling $\\sin x$ against only part of the denominator $\\sin x+x\\cos x$. The term $x\\cos x$ also tends to 0, so the form is still $\\frac00$ and one more application is needed."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{\\sin x}{\\sin x+x\\cos x}$ is still $\\frac00$. Apply L'Hôpital again: $\\frac{\\cos x}{2\\cos x-x\\sin x}\\to\\frac{1}{2}$."
+      },
+      {
+        "label": "D",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "This is the reciprocal of the correct value; the numerator's derivative $\\cos x$ gives 1 and the denominator's gives 2."
+      }
+    ],
+    "explanation": "Use L'Hôpital's Rule twice. Be careful with the product rule on $x\\sin x$.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/lhopitals-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-43",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "hard",
+    "stem": "A particle moves along a line with velocity $v(t)=t^3-3t^2-9t+5$ for $0\\le t\\le5$. What is the greatest speed of the particle on this interval?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-22$",
+        "isCorrect": false,
+        "explanation": "Speed is never negative. The velocity $-22$ at $t=3$ corresponds to a speed of 22."
+      },
+      {
+        "label": "B",
+        "text": "$10$",
+        "isCorrect": false,
+        "explanation": "10 is the largest value of $v$, but speed is $|v|$. At $t=3$ the velocity is $-22$, which is a speed of 22."
+      },
+      {
+        "label": "C",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "This is the speed only at $t=0$. The extreme values of $|v|$ can occur at critical points of $v$ as well as at endpoints."
+      },
+      {
+        "label": "D",
+        "text": "$22$",
+        "isCorrect": true,
+        "explanation": "Speed is $|v(t)|$. $v'(t)=3(t-3)(t+1)$ is 0 at $t=3$ in the interval. Compare $|v|$ at $t=0,3,5$: $5$, $22$ and $10$. The greatest is 22."
+      }
+    ],
+    "explanation": "Find the critical points of $v$ (zeros of the acceleration), then compare $|v|$ at those points and at the endpoints.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-44",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "difficulty": "hard",
+    "stem": "A particle moves along the $x$-axis with velocity $v(t)=(t-1)^2(t-3)(t+2)$ for $t\\ge0$. How many times does the particle change direction?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "The velocity changes sign at $t=3$ (negative before, positive after), so the particle does change direction."
+      },
+      {
+        "label": "B",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "Counting every zero of $v$, including $t=-2$, is a common slip. $t=-2$ is outside $t\\ge0$ and $t=1$ is a double zero; only $t=3$ is a sign change."
+      },
+      {
+        "label": "C",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "$v=0$ at both $t=1$ and $t=3$, but a particle changes direction only where $v$ changes sign. The double factor at $t=1$ means no sign change there."
+      },
+      {
+        "label": "D",
+        "text": "$1$",
+        "isCorrect": true,
+        "explanation": "The velocity is zero at $t=1$ and $t=3$. At $t=1$ the factor $(t-1)^2$ does not change sign, so $v$ keeps the same sign. At $t=3$, $v$ changes from negative to positive. The particle changes direction once."
+      }
+    ],
+    "explanation": "A zero of the velocity is a turnaround only if the velocity changes sign there. Zeros from squared factors do not.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/straight-line-motion",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-mcq-45",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "difficulty": "hard",
+    "stem": "A 6-foot-tall person walks away from the base of a 15-foot lamppost at 5 feet per second. How fast is the length of the person's shadow increasing?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5 ft/s",
+        "isCorrect": false,
+        "explanation": "5 ft/s is the person's own speed. The shadow length changes at a different rate."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac23$ ft/s",
+        "isCorrect": false,
+        "explanation": "This is the ratio $\\frac{ds}{dx}=\\frac23$ without the factor $\\frac{dx}{dt}=5$."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac{25}{3}$ ft/s",
+        "isCorrect": false,
+        "explanation": "This is the speed of the tip of the shadow: $\\frac{d}{dt}(x+s)=5+\\frac{10}3$. The question asks for the length of the shadow."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac{10}{3}$ ft/s",
+        "isCorrect": true,
+        "explanation": "Let $x$ be the person's distance from the post and $s$ the shadow length. Similar triangles: $\\frac{15}{x+s}=\\frac6s$, so $9s=6x$ and $s=\\frac23x$. Then $\\frac{ds}{dt}=\\frac23\\cdot5=\\frac{10}3$."
+      }
+    ],
+    "explanation": "Draw the similar triangles formed by the lamp and the person, relate $s$ to $x$, and differentiate.",
+    "conceptLink": "ap-calc-bc/unit-4-contextual-applications-of-differentiation/related-rates",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-calcbc-u3-mcq-1",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "easy",
+    "stem": "What does the Chain Rule allow you to differentiate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Composite functions, such as f(g(x))",
+        "isCorrect": true,
+        "explanation": "The Chain Rule is specifically designed for differentiating composite functions."
+      },
+      {
+        "label": "B",
+        "text": "Only polynomial functions, never anything else",
+        "isCorrect": false,
+        "explanation": "Polynomials can be differentiated with the power rule alone in many cases; the Chain Rule specifically addresses composite functions."
+      },
+      {
+        "label": "C",
+        "text": "Only sums of functions, such as f(x) + g(x) and nothing else",
+        "isCorrect": false,
+        "explanation": "Sums of functions are handled by the Sum Rule, not specifically the Chain Rule."
+      },
+      {
+        "label": "D",
+        "text": "Functions with no variables in them at all",
+        "isCorrect": false,
+        "explanation": "This doesn't describe any meaningful category of function relevant to the Chain Rule."
+      }
+    ],
+    "explanation": "The Chain Rule is used to differentiate composite functions, where one function is nested inside another.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-2",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "medium",
+    "stem": "According to the Chain Rule, what is $\\dfrac{d}{dx}[f(g(x))]$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$f'(g(x)) \\cdot g'(x)$",
+        "isCorrect": true,
+        "explanation": "This is the correct Chain Rule formula: the derivative of the outer function evaluated at the inner function, times the derivative of the inner function."
+      },
+      {
+        "label": "B",
+        "text": "$f'(x) \\cdot g'(x)$",
+        "isCorrect": false,
+        "explanation": "This fails to properly account for the composition; it doesn't apply f' to g(x) as required."
+      },
+      {
+        "label": "C",
+        "text": "$f(g'(x))$",
+        "isCorrect": false,
+        "explanation": "This incorrectly applies f (not f') to g'(x), which doesn't represent the chain rule's actual structure."
+      },
+      {
+        "label": "D",
+        "text": "$f'(g(x)) + g'(x)$",
+        "isCorrect": false,
+        "explanation": "The chain rule involves multiplication of the two derivative pieces, not addition."
+      }
+    ],
+    "explanation": "The Chain Rule: $\\frac{d}{dx}[f(g(x))] = f'(g(x)) \\cdot g'(x)$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-3",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "medium",
+    "stem": "Find the derivative of $f(x) = (3x+1)^5$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$15(3x+1)^4$",
+        "isCorrect": true,
+        "explanation": "Let u=3x+1: d/dx(u^5) = 5u^4 * du/dx = 5(3x+1)^4 * 3 = 15(3x+1)^4."
+      },
+      {
+        "label": "B",
+        "text": "$5(3x+1)^4$",
+        "isCorrect": false,
+        "explanation": "This omits the crucial factor of 3 (the derivative of the inner function 3x+1) required by the chain rule."
+      },
+      {
+        "label": "C",
+        "text": "$5(3x+1)^4 \\cdot 3x$",
+        "isCorrect": false,
+        "explanation": "This incorrectly multiplies by 3x instead of just the constant 3 (the derivative of 3x+1)."
+      },
+      {
+        "label": "D",
+        "text": "$15(3x+1)^5$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly reduce the outer exponent from 5 to 4 as required by the power rule component of the chain rule."
+      }
+    ],
+    "explanation": "By the chain rule, $\\frac{d}{dx}(3x+1)^5 = 5(3x+1)^4 \\cdot 3 = 15(3x+1)^4$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-4",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "Find the derivative of $f(x) = \\sin(x^2)$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2x \\cdot \\cos(x^2)$",
+        "isCorrect": true,
+        "explanation": "Let u=x^2: d/dx(sin(u)) = cos(u) * du/dx = cos(x^2) * 2x = 2x cos(x^2)."
+      },
+      {
+        "label": "B",
+        "text": "$\\cos(x^2)$",
+        "isCorrect": false,
+        "explanation": "This omits the crucial factor of 2x (the derivative of the inner function x^2) required by the chain rule."
+      },
+      {
+        "label": "C",
+        "text": "$2x \\cdot \\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly evaluates cosine of just x rather than of the full inner function x^2."
+      },
+      {
+        "label": "D",
+        "text": "$\\cos(2x)$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly apply the chain rule to the composite function sin(x^2)."
+      }
+    ],
+    "explanation": "By the chain rule, $\\frac{d}{dx}\\sin(x^2) = \\cos(x^2) \\cdot 2x = 2x\\cos(x^2)$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-5",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "medium",
+    "stem": "Find the derivative of $f(x) = e^{2x}$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2e^{2x}$",
+        "isCorrect": true,
+        "explanation": "Let u=2x: d/dx(e^u) = e^u * du/dx = e^(2x) * 2 = 2e^(2x)."
+      },
+      {
+        "label": "B",
+        "text": "$e^{2x}$",
+        "isCorrect": false,
+        "explanation": "This omits the crucial factor of 2 (the derivative of the inner function 2x) required by the chain rule."
+      },
+      {
+        "label": "C",
+        "text": "$e^2$",
+        "isCorrect": false,
+        "explanation": "This incorrectly treats the exponent as a constant to evaluate directly, rather than correctly applying the chain rule."
+      },
+      {
+        "label": "D",
+        "text": "$2xe^{2x}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly multiplies by 2x rather than the correct constant 2 (the derivative of the inner function 2x)."
+      }
+    ],
+    "explanation": "By the chain rule, $\\frac{d}{dx}e^{2x} = e^{2x} \\cdot 2 = 2e^{2x}$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-6",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "medium",
+    "stem": "Find the derivative of $f(x) = \\ln(x^2+1)$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{2x}{x^2+1}$",
+        "isCorrect": true,
+        "explanation": "Let u=x^2+1: d/dx(ln(u)) = (1/u) * du/dx = 1/(x^2+1) * 2x = 2x/(x^2+1)."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{1}{x^2+1}$",
+        "isCorrect": false,
+        "explanation": "This omits the crucial factor of 2x (the derivative of the inner function x^2+1) required by the chain rule."
+      },
+      {
+        "label": "C",
+        "text": "$2x$",
+        "isCorrect": false,
+        "explanation": "This only accounts for the derivative of the inner function, without dividing by the inner function itself."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac{1}{2x}$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly apply the chain rule to the composite logarithmic function at all."
+      }
+    ],
+    "explanation": "By the chain rule, $\\frac{d}{dx}\\ln(x^2+1) = \\frac{1}{x^2+1} \\cdot 2x = \\frac{2x}{x^2+1}$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-7",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "hard",
+    "stem": "Find the derivative of $f(x) = (x^2+3x)^4$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$4(x^2+3x)^3 \\cdot (2x+3)$",
+        "isCorrect": true,
+        "explanation": "Let u=x^2+3x: d/dx(u^4) = 4u^3 * du/dx = 4(x^2+3x)^3 * (2x+3)."
+      },
+      {
+        "label": "B",
+        "text": "$4(x^2+3x)^3$",
+        "isCorrect": false,
+        "explanation": "This omits the crucial factor (2x+3), the derivative of the inner function, required by the chain rule."
+      },
+      {
+        "label": "C",
+        "text": "$(2x+3)^4$",
+        "isCorrect": false,
+        "explanation": "This incorrectly raises the inner function's derivative to the 4th power rather than correctly applying the chain rule structure."
+      },
+      {
+        "label": "D",
+        "text": "$4(x^2+3x)^3 \\cdot 2x$",
+        "isCorrect": false,
+        "explanation": "This incorrectly uses only part of the inner function's derivative (2x instead of the full 2x+3)."
+      }
+    ],
+    "explanation": "By the chain rule, $\\frac{d}{dx}(x^2+3x)^4 = 4(x^2+3x)^3 \\cdot (2x+3)$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-8",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "chain-rule",
+    "difficulty": "medium",
+    "stem": "Why is the Chain Rule necessary when differentiating a composite function like f(g(x)), rather than just differentiating f and g separately and adding or multiplying the results directly?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Because the inner function g(x) is itself changing with respect to x, and that rate of change must be accounted for alongside the outer function's sensitivity",
+        "isCorrect": true,
+        "explanation": "The Chain Rule correctly accounts for both the inner function's rate of change and the outer function's sensitivity to it."
+      },
+      {
+        "label": "B",
+        "text": "It isn't necessary; composite functions can be differentiated by any method, since every method gives the same result as the product of f'(x) and g'(x)",
+        "isCorrect": false,
+        "explanation": "The Chain Rule specifically IS necessary for correctly differentiating composite functions; other methods would give incorrect results."
+      },
+      {
+        "label": "C",
+        "text": "Because composite functions have no derivatives, so the Chain Rule is used to approximate them instead",
+        "isCorrect": false,
+        "explanation": "Composite functions absolutely have derivatives, computable specifically via the Chain Rule."
+      },
+      {
+        "label": "D",
+        "text": "Because f(g(x)) is always equal to f(x)·g(x), and the Chain Rule is a shortcut for the product rule",
+        "isCorrect": false,
+        "explanation": "f(g(x)) is a COMPOSITION, not the same as the PRODUCT f(x)*g(x); these are fundamentally different operations."
+      }
+    ],
+    "explanation": "The Chain Rule accounts for both the inner function's rate of change and the outer function's sensitivity to that change.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/chain-rule",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-9",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "easy",
+    "stem": "Why is implicit differentiation used, rather than standard/explicit differentiation, for an equation like $x^2 + y^2 = 25$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Because y is not explicitly solved for in terms of x alone in this equation",
+        "isCorrect": true,
+        "explanation": "Since y isn't isolated as a single explicit function of x, implicit differentiation lets us find dy/dx directly from the equation."
+      },
+      {
+        "label": "B",
+        "text": "Because this equation has no solutions",
+        "isCorrect": false,
+        "explanation": "This equation (a circle) does have solutions; it's just that y isn't isolated as a single explicit function of x."
+      },
+      {
+        "label": "C",
+        "text": "Because $x^2 + y^2 = 25$ cannot be differentiated at all",
+        "isCorrect": false,
+        "explanation": "This equation absolutely CAN be differentiated; that's precisely what implicit differentiation accomplishes."
+      },
+      {
+        "label": "D",
+        "text": "Because implicit differentiation is always easier than explicit differentiation for every function",
+        "isCorrect": false,
+        "explanation": "Implicit differentiation isn't universally \"easier\"; it's specifically useful when y isn't easily isolated as an explicit function of x."
+      }
+    ],
+    "explanation": "Implicit differentiation is used when y is not explicitly isolated as a function of x.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-10",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "medium",
+    "stem": "When applying implicit differentiation to a term involving y (like $y^2$), what extra factor must be included due to the Chain Rule?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "dy/dx (since y is itself a function of x)",
+        "isCorrect": true,
+        "explanation": "Because y is treated as a function of x, differentiating any y-term requires multiplying by dy/dx via the chain rule."
+      },
+      {
+        "label": "B",
+        "text": "dx/dy (since x is a function of y) and must be multiplied in",
+        "isCorrect": false,
+        "explanation": "This reverses the correct derivative direction needed here; implicit differentiation with respect to x requires dy/dx, not dx/dy."
+      },
+      {
+        "label": "C",
+        "text": "No extra factor is needed when y appears in a power",
+        "isCorrect": false,
+        "explanation": "An extra factor (dy/dx) absolutely IS needed; this is the entire point of implicit differentiation for y-terms."
+      },
+      {
+        "label": "D",
+        "text": "y itself, with no derivative notation attached to the term",
+        "isCorrect": false,
+        "explanation": "Simply writing y without the dy/dx notation would incorrectly ignore that y itself depends on x."
+      }
+    ],
+    "explanation": "Implicit differentiation requires multiplying by dy/dx whenever differentiating a term involving y, since y is a function of x.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-11",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "medium",
+    "stem": "Given $x^2 + y^2 = 25$, differentiate both sides implicitly with respect to x.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2x + 2y \\left(\\dfrac{dy}{dx}\\right) = 0$",
+        "isCorrect": true,
+        "explanation": "d/dx(x^2)=2x, d/dx(y^2)=2y(dy/dx) by the chain rule, and d/dx(25)=0."
+      },
+      {
+        "label": "B",
+        "text": "$2x + 2y = 0$",
+        "isCorrect": false,
+        "explanation": "This omits the necessary dy/dx factor on the y^2 term entirely, treating y as if it were a constant."
+      },
+      {
+        "label": "C",
+        "text": "$2x + y \\left(\\dfrac{dy}{dx}\\right) = 0$",
+        "isCorrect": false,
+        "explanation": "This incorrectly drops the coefficient 2 from the y^2 term's derivative."
+      },
+      {
+        "label": "D",
+        "text": "$x + y \\left(\\dfrac{dy}{dx}\\right) = 25$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly differentiate the x^2 term and mishandles the right side as well."
+      }
+    ],
+    "explanation": "Differentiating implicitly gives $2x + 2y\\frac{dy}{dx} = 0$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-12",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "hard",
+    "stem": "Continuing from $2x + 2y\\left(\\dfrac{dy}{dx}\\right) = 0$, solve for $\\dfrac{dy}{dx}$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-x/y$",
+        "isCorrect": true,
+        "explanation": "2y(dy/dx) = -2x, so dy/dx = -2x/(2y) = -x/y."
+      },
+      {
+        "label": "B",
+        "text": "$x/y$",
+        "isCorrect": false,
+        "explanation": "This is missing the negative sign that results from moving 2x to the other side of the equation."
+      },
+      {
+        "label": "C",
+        "text": "$-y/x$",
+        "isCorrect": false,
+        "explanation": "This incorrectly inverts which variable is in the numerator versus denominator."
+      },
+      {
+        "label": "D",
+        "text": "$-2x/y$",
+        "isCorrect": false,
+        "explanation": "This forgets to divide by the coefficient 2 that appears on both x and y terms."
+      }
+    ],
+    "explanation": "Solving $2y\\frac{dy}{dx} = -2x$ gives $\\frac{dy}{dx} = -x/y$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-13",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "medium",
+    "stem": "Using implicit differentiation on $xy = 6$, find $\\dfrac{dy}{dx}$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-y/x$",
+        "isCorrect": true,
+        "explanation": "By the product rule: x(dy/dx) + y = 0, so dy/dx = -y/x."
+      },
+      {
+        "label": "B",
+        "text": "$y/x$",
+        "isCorrect": false,
+        "explanation": "This is missing the negative sign that results from solving the equation correctly."
+      },
+      {
+        "label": "C",
+        "text": "$-x/y$",
+        "isCorrect": false,
+        "explanation": "This incorrectly inverts which variable is in the numerator versus denominator."
+      },
+      {
+        "label": "D",
+        "text": "$x/y$",
+        "isCorrect": false,
+        "explanation": "This both inverts the variables AND drops the necessary negative sign."
+      }
+    ],
+    "explanation": "Differentiating xy=6 with the product rule gives $x\\frac{dy}{dx}+y=0$, so $\\frac{dy}{dx}=-y/x$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-14",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "medium",
+    "stem": "What key insight distinguishes implicit differentiation from standard differentiation, in terms of how you treat y?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Every time you differentiate a term containing y, you multiply by dy/dx (by the chain rule, since y is treated as a function of x)",
+        "isCorrect": true,
+        "explanation": "This is the central insight of implicit differentiation."
+      },
+      {
+        "label": "B",
+        "text": "y is simply treated as a constant and ignored entirely, so any term containing y differentiates to zero and drops out of the equation",
+        "isCorrect": false,
+        "explanation": "y is NOT treated as a constant; it's treated as a function of x, which is why the extra dy/dx factor is needed."
+      },
+      {
+        "label": "C",
+        "text": "x and y are swapped throughout the entire process, so the equation is solved for x first",
+        "isCorrect": false,
+        "explanation": "x and y are not swapped; implicit differentiation still differentiates with respect to x throughout."
+      },
+      {
+        "label": "D",
+        "text": "Implicit differentiation only works for equations with no y terms at all, because y cannot be differentiated",
+        "isCorrect": false,
+        "explanation": "Implicit differentiation is specifically useful for equations that DO contain y terms not explicitly solved for."
+      }
+    ],
+    "explanation": "Every y-term requires an extra dy/dx factor via the chain rule, since y is treated as a function of x.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-15",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "implicit-differentiation",
+    "difficulty": "medium",
+    "stem": "Find $\\dfrac{dy}{dx}$ for the equation $y^3 + x^2 = 10$ at the point $(1, 2)$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-1/6$",
+        "isCorrect": true,
+        "explanation": "Differentiating gives 3y^2(dy/dx) + 2x = 0, so dy/dx = -2x/(3y^2). At (1,2): -2(1)/(3(4)) = -2/12 = -1/6."
+      },
+      {
+        "label": "B",
+        "text": "$1/6$",
+        "isCorrect": false,
+        "explanation": "This is missing the negative sign that results from solving the differentiated equation correctly."
+      },
+      {
+        "label": "C",
+        "text": "$-2/3$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly account for the y^2 term (squaring y=2 to get 4) in the denominator."
+      },
+      {
+        "label": "D",
+        "text": "$-1/3$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly compute the denominator 3y^2 = 3(4) = 12 at the given point."
+      }
+    ],
+    "explanation": "Differentiating gives $\\frac{dy}{dx} = \\frac{-2x}{3y^2}$, which evaluates to $-1/6$ at $(1,2)$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/implicit-differentiation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-16",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "easy",
+    "stem": "What is the derivative of $f(x) = \\arcsin(x)$ (the inverse sine function)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{1}{\\sqrt{1-x^2}}$",
+        "isCorrect": true,
+        "explanation": "This is the standard derivative formula for arcsin(x)."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{1}{\\sqrt{1+x^2}}$",
+        "isCorrect": false,
+        "explanation": "This is actually the derivative formula for arctan(x), not arcsin(x)."
+      },
+      {
+        "label": "C",
+        "text": "$-\\dfrac{1}{\\sqrt{1-x^2}}$",
+        "isCorrect": false,
+        "explanation": "This has the correct magnitude but an incorrect negative sign; arcsin's derivative is positive."
+      },
+      {
+        "label": "D",
+        "text": "$\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "cos(x) is the derivative of sin(x) itself, not of its inverse function arcsin(x)."
+      }
+    ],
+    "explanation": "The derivative of arcsin(x) is $\\frac{1}{\\sqrt{1-x^2}}$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-17",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = \\arctan(x)$ (the inverse tangent function)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{1}{1+x^2}$",
+        "isCorrect": true,
+        "explanation": "This is the standard derivative formula for arctan(x)."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{1}{1-x^2}$",
+        "isCorrect": false,
+        "explanation": "This uses subtraction in the denominator, but the correct formula for arctan's derivative uses addition."
+      },
+      {
+        "label": "C",
+        "text": "$\\sec^2(x)$",
+        "isCorrect": false,
+        "explanation": "sec^2(x) is the derivative of tan(x) itself, not of its inverse function arctan(x)."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac{1}{\\sqrt{1+x^2}}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly includes a square root; arctan's derivative formula does not involve one."
+      }
+    ],
+    "explanation": "The derivative of arctan(x) is $\\frac{1}{1+x^2}$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-18",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "medium",
+    "stem": "Given that f and g are inverse functions ($g(x) = f^{-1}(x)$), what does the formula for the derivative of an inverse function state?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$g'(x) = 1/f'(g(x))$",
+        "isCorrect": true,
+        "explanation": "This is the correct inverse function derivative formula."
+      },
+      {
+        "label": "B",
+        "text": "$g'(x) = f'(x)$",
+        "isCorrect": false,
+        "explanation": "This simply uses f's derivative directly at x, without correctly relating it to the inverse function relationship."
+      },
+      {
+        "label": "C",
+        "text": "$g'(x) = 1/f'(x)$",
+        "isCorrect": false,
+        "explanation": "This divides by f'(x) directly rather than by f' evaluated AT g(x), which is the correct formula."
+      },
+      {
+        "label": "D",
+        "text": "$g'(x) = -f'(x)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly negates f'(x), which isn't part of the correct inverse function derivative formula."
+      }
+    ],
+    "explanation": "The inverse function derivative formula: $g'(x) = \\frac{1}{f'(g(x))}$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-19",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "hard",
+    "stem": "If $f(2) = 5$ and $f'(2) = 4$, and g is the inverse function of f (so $g(5) = 2$), what is $g'(5)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1/4",
+        "isCorrect": true,
+        "explanation": "g'(5) = 1/f'(g(5)) = 1/f'(2) = 1/4."
+      },
+      {
+        "label": "B",
+        "text": "4",
+        "isCorrect": false,
+        "explanation": "This is just f'(2) itself, without taking the reciprocal as the inverse function derivative formula requires."
+      },
+      {
+        "label": "C",
+        "text": "5",
+        "isCorrect": false,
+        "explanation": "This is just the given value of x (5) in this problem, not the computed derivative value."
+      },
+      {
+        "label": "D",
+        "text": "2",
+        "isCorrect": false,
+        "explanation": "This is just g(5) = 2, the function value, not the derivative value."
+      }
+    ],
+    "explanation": "By the inverse function derivative formula, $g'(5) = 1/f'(g(5)) = 1/f'(2) = 1/4$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-20",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "medium",
+    "stem": "What is the derivative of $f(x) = \\arccos(x)$ (the inverse cosine function)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-\\dfrac{1}{\\sqrt{1-x^2}}$",
+        "isCorrect": true,
+        "explanation": "This is the standard derivative formula for arccos(x)."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{1}{\\sqrt{1-x^2}}$",
+        "isCorrect": false,
+        "explanation": "This has the correct magnitude but the wrong sign; arccos's derivative includes a negative sign (unlike arcsin's, which is positive)."
+      },
+      {
+        "label": "C",
+        "text": "$-\\dfrac{1}{\\sqrt{1+x^2}}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly uses addition inside the square root; the correct formula for arccos uses 1-x^2, not 1+x^2."
+      },
+      {
+        "label": "D",
+        "text": "$-\\sin(x)$",
+        "isCorrect": false,
+        "explanation": "-sin(x) is the derivative of cos(x) itself, not of its inverse function arccos(x)."
+      }
+    ],
+    "explanation": "The derivative of arccos(x) is $-\\frac{1}{\\sqrt{1-x^2}}$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-21",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "medium",
+    "stem": "Why does the derivative of an inverse function formula involve dividing by $f'(g(x))$, rather than simply $f'(x)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Because the inverse function's rate of change at x depends on the ORIGINAL function's rate of change at the corresponding point g(x), not at x",
+        "isCorrect": true,
+        "explanation": "The inverse function's derivative depends on the original function's behavior at the point that maps to x under the inverse relationship."
+      },
+      {
+        "label": "B",
+        "text": "Because f'(x) is always zero for invertible functions, so the formula needs a different point where the derivative is nonzero and defined",
+        "isCorrect": false,
+        "explanation": "f'(x) being zero would actually make a function NON-invertible at that point; it's not generally zero for invertible functions."
+      },
+      {
+        "label": "C",
+        "text": "Because dividing is always required in calculus when two functions are composed with each other",
+        "isCorrect": false,
+        "explanation": "Division isn't a universal requirement across all of calculus; this formula's specific structure comes from the precise relationship between inverse functions."
+      },
+      {
+        "label": "D",
+        "text": "There's no real reason; it's an arbitrary convention that textbooks adopted long ago",
+        "isCorrect": false,
+        "explanation": "There is a specific, meaningful mathematical reason related to the geometric relationship between inverse functions, not an arbitrary convention."
+      }
+    ],
+    "explanation": "The inverse function's rate of change at x relates to the original function's rate of change at the corresponding point g(x).",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-22",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "derivatives-of-inverse-functions",
+    "difficulty": "hard",
+    "stem": "Let $h(x) = f^{-1}(x)$ where $f(x) = x^3 + 2$. Given $f(1) = 3$ (so $h(3) = 1$), what is $h'(3)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1/3",
+        "isCorrect": true,
+        "explanation": "f'(x) = 3x^2, so f'(1) = 3. Then h'(3) = 1/f'(h(3)) = 1/f'(1) = 1/3."
+      },
+      {
+        "label": "B",
+        "text": "3",
+        "isCorrect": false,
+        "explanation": "This is just f'(1) itself, without taking the reciprocal as the inverse function derivative formula requires."
+      },
+      {
+        "label": "C",
+        "text": "1",
+        "isCorrect": false,
+        "explanation": "This is just h(3) = 1, the function value, not the derivative."
+      },
+      {
+        "label": "D",
+        "text": "1/9",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly compute f'(1) = 3(1)^2 = 3; an incorrect value of f'(1) leads to this wrong result."
+      }
+    ],
+    "explanation": "Since $f'(x) = 3x^2$, $f'(1) = 3$, so $h'(3) = 1/f'(1) = 1/3$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/derivatives-of-inverse-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-23",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "easy",
+    "stem": "What does the \"second derivative\" of a function, f''(x), represent?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The derivative of the first derivative, f'(x)",
+        "isCorrect": true,
+        "explanation": "The second derivative is obtained by differentiating the first derivative once more."
+      },
+      {
+        "label": "B",
+        "text": "The derivative taken twice as fast as the first",
+        "isCorrect": false,
+        "explanation": "This doesn't describe a valid mathematical operation; the second derivative is differentiating the FIRST derivative, not \"twice as fast.\""
+      },
+      {
+        "label": "C",
+        "text": "f(x) divided by 2, the half-value of the function",
+        "isCorrect": false,
+        "explanation": "Dividing f(x) by 2 is unrelated to the concept of a second derivative."
+      },
+      {
+        "label": "D",
+        "text": "The average of f(x) and f'(x) at each input over the interval",
+        "isCorrect": false,
+        "explanation": "Averaging f(x) and f'(x) does not describe the second derivative at all."
+      }
+    ],
+    "explanation": "The second derivative f''(x) is the derivative of the first derivative f'(x).",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-24",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "medium",
+    "stem": "Find the second derivative of $f(x) = x^4$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$12x^2$",
+        "isCorrect": true,
+        "explanation": "f'(x) = 4x^3, and f''(x) = 12x^2."
+      },
+      {
+        "label": "B",
+        "text": "$4x^3$",
+        "isCorrect": false,
+        "explanation": "This is just the FIRST derivative, not the second."
+      },
+      {
+        "label": "C",
+        "text": "$12x^3$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly reduce the exponent for the second differentiation step."
+      },
+      {
+        "label": "D",
+        "text": "$4x^2$",
+        "isCorrect": false,
+        "explanation": "This incorrectly keeps the exponent from the first derivative step rather than reducing it further."
+      }
+    ],
+    "explanation": "$f'(x) = 4x^3$, and differentiating again gives $f''(x) = 12x^2$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-25",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "medium",
+    "stem": "Find the second derivative of $f(x) = \\sin(x)$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-\\sin(x)$",
+        "isCorrect": true,
+        "explanation": "f'(x) = cos(x), and f''(x) = -sin(x)."
+      },
+      {
+        "label": "B",
+        "text": "$\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This is just the FIRST derivative, not the second."
+      },
+      {
+        "label": "C",
+        "text": "$\\sin(x)$",
+        "isCorrect": false,
+        "explanation": "This would mean the second derivative equals the original function unchanged, without the correct sign flip."
+      },
+      {
+        "label": "D",
+        "text": "$-\\cos(x)$",
+        "isCorrect": false,
+        "explanation": "This is actually the THIRD derivative of sin(x), not the second."
+      }
+    ],
+    "explanation": "$f'(x) = \\cos(x)$, and differentiating again gives $f''(x) = -\\sin(x)$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-26",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "hard",
+    "stem": "If s(t) represents the position of an object at time t, what does s''(t) represent physically?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The object's acceleration",
+        "isCorrect": true,
+        "explanation": "The second derivative of position with respect to time is acceleration."
+      },
+      {
+        "label": "B",
+        "text": "The object's velocity at time t",
+        "isCorrect": false,
+        "explanation": "Velocity is represented by the FIRST derivative, s'(t), not the second derivative."
+      },
+      {
+        "label": "C",
+        "text": "The object's total distance traveled",
+        "isCorrect": false,
+        "explanation": "Total distance traveled is related to integrating speed, not to the second derivative."
+      },
+      {
+        "label": "D",
+        "text": "The object's initial position",
+        "isCorrect": false,
+        "explanation": "Initial position would be s(0), a specific function value, not a derivative at all."
+      }
+    ],
+    "explanation": "The second derivative of position with respect to time represents acceleration.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-27",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "medium",
+    "stem": "Find the third derivative of $f(x) = x^5$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$60x^2$",
+        "isCorrect": true,
+        "explanation": "f'(x)=5x^4, f''(x)=20x^3, f'''(x)=60x^2."
+      },
+      {
+        "label": "B",
+        "text": "$20x^3$",
+        "isCorrect": false,
+        "explanation": "This is just the SECOND derivative, not the third."
+      },
+      {
+        "label": "C",
+        "text": "$5x^4$",
+        "isCorrect": false,
+        "explanation": "This is just the FIRST derivative, not the third."
+      },
+      {
+        "label": "D",
+        "text": "$60x^3$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly reduce the exponent for the third differentiation step."
+      }
+    ],
+    "explanation": "Differentiating three times: $f'(x)=5x^4$, $f''(x)=20x^3$, $f'''(x)=60x^2$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-28",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "medium",
+    "stem": "What does it mean if f''(x) > 0 on an interval?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The graph of f is concave up on that interval",
+        "isCorrect": true,
+        "explanation": "A positive second derivative indicates the function's graph is concave up on that interval."
+      },
+      {
+        "label": "B",
+        "text": "f is decreasing on that interval",
+        "isCorrect": false,
+        "explanation": "The sign of f''(x) relates to CONCAVITY, not directly to whether f itself is increasing or decreasing."
+      },
+      {
+        "label": "C",
+        "text": "f has a maximum at every point in that interval",
+        "isCorrect": false,
+        "explanation": "f''(x) > 0 relates to concavity, not to the function having a maximum at every point."
+      },
+      {
+        "label": "D",
+        "text": "f'(x) must also be positive",
+        "isCorrect": false,
+        "explanation": "f''(x) being positive doesn't necessarily mean f'(x) itself is positive; f' could be negative while still increasing."
+      }
+    ],
+    "explanation": "A positive second derivative indicates the graph of f is concave up on that interval.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-29",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "medium",
+    "stem": "Find f''(x) for $f(x) = 3x^3 - 2x^2 + x - 7$.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$18x - 4$",
+        "isCorrect": true,
+        "explanation": "f'(x) = 9x^2 - 4x + 1, and f''(x) = 18x - 4."
+      },
+      {
+        "label": "B",
+        "text": "$9x^2 - 4x + 1$",
+        "isCorrect": false,
+        "explanation": "This is just the FIRST derivative, not the second."
+      },
+      {
+        "label": "C",
+        "text": "$18x$",
+        "isCorrect": false,
+        "explanation": "This drops the constant term -4 that results from differentiating the -4x term in f'(x)."
+      },
+      {
+        "label": "D",
+        "text": "$9x - 4$",
+        "isCorrect": false,
+        "explanation": "This incorrectly reduces the coefficient of x from 18 to 9, not correctly applying the power rule a second time."
+      }
+    ],
+    "explanation": "$f'(x) = 9x^2-4x+1$, and differentiating again gives $f''(x) = 18x-4$.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u3-mcq-30",
+    "unit": "unit-3-differentiation-composite-implicit-inverse",
+    "topic": "higher-order-derivatives",
+    "difficulty": "medium",
+    "stem": "What notation is commonly used to represent the nth derivative of a function f(x)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$f^{(n)}(x)$",
+        "isCorrect": true,
+        "explanation": "This is the standard notation for the nth derivative of f."
+      },
+      {
+        "label": "B",
+        "text": "$f(x)^n$",
+        "isCorrect": false,
+        "explanation": "This describes raising the function's VALUE to the nth power, a completely different operation from taking derivatives."
+      },
+      {
+        "label": "C",
+        "text": "$n \\cdot f(x)$",
+        "isCorrect": false,
+        "explanation": "This describes multiplying the function by n, unrelated to repeated differentiation."
+      },
+      {
+        "label": "D",
+        "text": "$f(nx)$",
+        "isCorrect": false,
+        "explanation": "This describes evaluating f at the input nx, unrelated to repeated differentiation."
+      }
+    ],
+    "explanation": "$f^{(n)}(x)$ is the standard notation for the nth derivative of f.",
+    "conceptLink": "ap-calc-bc/unit-3-differentiation-composite-implicit-inverse/higher-order-derivatives",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "slug": "unit-6-integration-and-accumulation-of-change",
+  "order": 6,
+  "name": "Integration and Accumulation of Change",
+  "weightingMin": 15,
+  "weightingMax": 20,
+  "topics": [
+    {
+      "slug": "riemann-sums-and-definite-integrals",
+      "order": 1,
+      "name": "Riemann Sums and Definite Integrals"
+    },
+    {
+      "slug": "fundamental-theorem-of-calculus",
+      "order": 2,
+      "name": "The Fundamental Theorem of Calculus"
+    },
+    {
+      "slug": "antiderivatives-and-indefinite-integrals",
+      "order": 3,
+      "name": "Antiderivatives and Indefinite Integrals"
+    },
+    {
+      "slug": "u-substitution",
+      "order": 4,
+      "name": "Integration by u-Substitution"
+    },
+    {
+      "slug": "long-division-and-completing-the-square",
+      "order": 5,
+      "name": "Long Division and Completing the Square"
+    },
+    {
+      "slug": "integration-by-parts",
+      "order": 6,
+      "name": "Integration by Parts"
+    },
+    {
+      "slug": "partial-fractions",
+      "order": 7,
+      "name": "Integration Using Linear Partial Fractions"
+    },
+    {
+      "slug": "improper-integrals",
+      "order": 8,
+      "name": "Improper Integrals"
+    }
+  ]
+}

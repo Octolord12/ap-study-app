@@ -1,0 +1,34 @@
+{
+  "slug": "unit-8-applications-of-integration",
+  "order": 8,
+  "name": "Applications of Integration",
+  "weightingMin": 5,
+  "weightingMax": 10,
+  "topics": [
+    {
+      "slug": "average-value-of-a-function",
+      "order": 1,
+      "name": "The Average Value of a Function"
+    },
+    {
+      "slug": "area-between-curves",
+      "order": 2,
+      "name": "Area Between Curves"
+    },
+    {
+      "slug": "volume-by-cross-sections",
+      "order": 3,
+      "name": "Volume by Cross-Sections"
+    },
+    {
+      "slug": "volume-by-disc-washer",
+      "order": 4,
+      "name": "Volume by the Disc and Washer Methods"
+    },
+    {
+      "slug": "arc-length-and-distance-traveled",
+      "order": 5,
+      "name": "Arc Length and Distance Traveled"
+    }
+  ]
+}

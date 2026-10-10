@@ -1,0 +1,34 @@
+{
+  "slug": "unit-1-limits-and-continuity",
+  "order": 1,
+  "name": "Limits and Continuity",
+  "weightingMin": 5,
+  "weightingMax": 10,
+  "topics": [
+    {
+      "slug": "limit-definition-and-notation",
+      "order": 1,
+      "name": "Defining and Estimating Limits"
+    },
+    {
+      "slug": "algebraic-limit-techniques",
+      "order": 2,
+      "name": "Determining Limits Algebraically"
+    },
+    {
+      "slug": "continuity",
+      "order": 3,
+      "name": "Continuity"
+    },
+    {
+      "slug": "infinite-limits-and-asymptotes",
+      "order": 4,
+      "name": "Infinite Limits and Asymptotes"
+    },
+    {
+      "slug": "intermediate-value-theorem",
+      "order": 5,
+      "name": "The Intermediate Value Theorem"
+    }
+  ]
+}

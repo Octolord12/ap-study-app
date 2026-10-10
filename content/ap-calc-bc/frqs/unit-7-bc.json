@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ap-calcbc-u7-frq-6",
+    "unit": "unit-7-differential-equations",
+    "topic": "eulers-method",
+    "prompt": "Consider the differential equation $\\dfrac{dy}{dx}=\\dfrac{x}{y}$ with the initial condition $y(1)=2$.\n\n**(a)** Use Euler's method, starting at $x=1$ with two steps of equal size, to approximate $y(2)$. Show the work that leads to your answer.\n\n**(b)** Find the particular solution $y=f(x)$ to the differential equation with $y(1)=2$.\n\n**(c)** Find $\\dfrac{d^2y}{dx^2}$ in terms of $x$ and $y$. Use it, together with your answer to part (b), to determine whether your approximation in part (a) is less than or greater than $f(2)$. Give a reason for your answer.",
+    "pointValue": 9,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Step size 0.5; slope at $(1,2)$ is $\\frac12$, giving $y(1.5)\\approx2.25$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Slope at $(1.5,2.25)$ is $\\frac{1.5}{2.25}=\\frac23$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(a) $y(2)\\approx2.25+0.5\\cdot\\frac23=\\frac{31}{12}\\approx2.583$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Separates the variables: $y\\,dy=x\\,dx$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(b) Antidifferentiates both sides and includes a constant: $\\frac{y^2}{2}=\\frac{x^2}{2}+C$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(b) Uses $y(1)=2$ to get $C=\\frac32$ and gives $y=\\sqrt{x^2+3}$ (positive root)"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(c) Differentiates $\\frac xy$ with the quotient rule and substitutes $\\frac{dy}{dx}=\\frac xy$"
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "(c) $\\frac{d^2y}{dx^2}=\\frac{y^2-x^2}{y^3}$ (equivalent forms accepted)"
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "(c) Concludes the approximation is less than $f(2)$ because the solution is concave up ($y^2-x^2=3>0$ and $y>0$ along the solution, so $y''>0$)"
+      }
+    ],
+    "sampleResponse": "(a) $\\Delta x=0.5$. At $(1,2)$: $\\frac{dy}{dx}=\\frac12$, so $y(1.5)\\approx2+0.5\\cdot\\frac12=2.25$. At $(1.5,2.25)$: $\\frac{dy}{dx}=\\frac{1.5}{2.25}=\\frac23$, so $y(2)\\approx2.25+0.5\\cdot\\frac23=\\frac{31}{12}\\approx2.583$.\n(b) $y\\,dy=x\\,dx\\Rightarrow\\frac{y^2}{2}=\\frac{x^2}{2}+C$. With $y(1)=2$: $2=\\frac12+C$, so $C=\\frac32$ and $y^2=x^2+3$. Since $y(1)=2>0$, $f(x)=\\sqrt{x^2+3}$, and $f(2)=\\sqrt7\\approx2.646$.\n(c) $\\frac{d^2y}{dx^2}=\\frac{y-x\\frac{dy}{dx}}{y^2}=\\frac{y-\\frac{x^2}{y}}{y^2}=\\frac{y^2-x^2}{y^3}$. Along the solution $y^2-x^2=3>0$ and $y>0$, so $\\frac{d^2y}{dx^2}=\\frac{3}{y^3}>0$. The graph is concave up, so tangent lines lie below it and the Euler approximation $2.583$ is less than $f(2)\\approx2.646$.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-frq-7",
+    "unit": "unit-7-differential-equations",
+    "topic": "logistic-models",
+    "prompt": "The number of fish $P(t)$, in hundreds, in a lake $t$ years after stocking satisfies the logistic differential equation $\\dfrac{dP}{dt}=0.2P\\left(1-\\dfrac{P}{80}\\right)$, with $P(0)=10$.\n\n**(a)** Find $\\displaystyle\\lim_{t\\to\\infty}P(t)$. Justify your answer.\n\n**(b)** For what value of $P$ is the number of fish growing most rapidly? What is that greatest rate of growth?\n\n**(c)** Use separation of variables to find the particular solution $P(t)$.",
+    "pointValue": 9,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Limit is 80"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Justification: $\\frac{dP}{dt}>0$ for $0<P<80$ and $=0$ at $P=80$, so $P$ increases toward the equilibrium 80 (a bounded increasing function)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) $P=40$ (half the carrying capacity, vertex of the parabola $\\frac{dP}{dt}=0.2P-\\frac{P^2}{400}$)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Greatest rate $=0.2(40)\\left(1-\\frac{40}{80}\\right)=4$ hundred fish per year"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Separates: $\\frac{dP}{P\\left(1-\\frac{P}{80}\\right)}=0.2\\,dt$ and writes $\\frac{80}{P(80-P)}$ as partial fractions $\\frac1P+\\frac{1}{80-P}$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(c) Antidifferentiates both sides: $\\ln|P|-\\ln|80-P|=0.2t+C$"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(c) Uses $P(0)=10$ to get $C=\\ln\\frac{10}{70}=-\\ln7$"
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "(c) Solves for $P$"
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "(c) $P(t)=\\dfrac{80}{1+7e^{-0.2t}}$"
+      }
+    ],
+    "sampleResponse": "(a) For $0<P<80$ the factor $1-\\frac{P}{80}$ is positive, so $\\frac{dP}{dt}>0$ and $P$ increases; it cannot pass the equilibrium $P=80$ where $\\frac{dP}{dt}=0$. Therefore $\\lim_{t\\to\\infty}P=80$.\n(b) $\\frac{dP}{dt}=0.2P-\\frac{P^2}{400}$ is a downward parabola in $P$ with its maximum at $P=40$, where $\\frac{dP}{dt}=0.2(40)\\left(1-\\frac12\\right)=4$ hundred fish per year.\n(c) $\\frac{dP}{P(1-P/80)}=0.2\\,dt$, and $\\frac{1}{P(1-P/80)}=\\frac{80}{P(80-P)}=\\frac1P+\\frac{1}{80-P}$. Integrating: $\\ln|P|-\\ln|80-P|=0.2t+C$. At $t=0$: $\\ln\\frac{10}{70}=C$. So $\\frac{P}{80-P}=\\frac17e^{0.2t}$, which gives $P=\\frac{80}{1+7e^{-0.2t}}$.",
+    "reviewed": false
+  }
+]

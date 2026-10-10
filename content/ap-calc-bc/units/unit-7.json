@@ -1,0 +1,39 @@
+{
+  "slug": "unit-7-differential-equations",
+  "order": 7,
+  "name": "Differential Equations",
+  "weightingMin": 5,
+  "weightingMax": 10,
+  "topics": [
+    {
+      "slug": "modeling-with-differential-equations",
+      "order": 1,
+      "name": "Modeling with Differential Equations"
+    },
+    {
+      "slug": "slope-fields",
+      "order": 2,
+      "name": "Slope Fields"
+    },
+    {
+      "slug": "eulers-method",
+      "order": 3,
+      "name": "Euler's Method"
+    },
+    {
+      "slug": "separation-of-variables",
+      "order": 4,
+      "name": "Separation of Variables"
+    },
+    {
+      "slug": "exponential-growth-and-decay",
+      "order": 5,
+      "name": "Exponential Growth and Decay"
+    },
+    {
+      "slug": "logistic-models",
+      "order": 6,
+      "name": "Logistic Models"
+    }
+  ]
+}

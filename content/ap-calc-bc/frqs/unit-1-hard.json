@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ap-calcbc-u1-frq-4",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "continuity",
+    "prompt": "Let $f(x)=\\dfrac{x^2-2x-8}{x^2-16}$.\n\n**(a)** Find $\\lim_{x\\to4}f(x)$. Show the algebra.\n\n**(b)** The function $f$ is discontinuous at two values of $x$. Identify each, and classify it as removable or infinite. For the infinite one, find both one-sided limits.\n\n**(c)** Define $g(x)=f(x)$ for $x\\neq4$ and $g(4)=k$. Find the value of $k$ that makes $g$ continuous at $x=4$, and state the three conditions you are using for continuity.\n\n**(d)** Find $\\lim_{x\\to\\infty}f(x)$ and give the equation of the horizontal asymptote.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Factors the numerator and denominator and cancels $x-4$ to get $\\frac{x+2}{x+4}$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Evaluates the limit as $\\frac34$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Identifies $x=4$ as a removable discontinuity (factor cancels) and $x=-4$ as infinite"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Gives $\\lim_{x\\to-4^-}f(x)=+\\infty$ and $\\lim_{x\\to-4^+}f(x)=-\\infty$ with sign reasoning"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Sets $k=\\frac34$ and states $g(4)$ exists, the limit exists, and they are equal"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Finds the limit is 1 and gives $y=1$"
+      }
+    ],
+    "sampleResponse": "(a) $f(x)=\\frac{(x-4)(x+2)}{(x-4)(x+4)}=\\frac{x+2}{x+4}$ for $x\\neq4$, so $\\lim_{x\\to4}f(x)=\\frac{6}{8}=\\frac34$.\n(b) $f$ is undefined at $x=4$ and $x=-4$. At $x=4$ the factor cancels and the limit is $\\frac34$, so it is removable. At $x=-4$ the denominator tends to 0 and the numerator tends to $-2$: as $x\\to-4^-$, $x+4<0$, so $f\\to\\frac{-2}{0^-}=+\\infty$; as $x\\to-4^+$, $f\\to\\frac{-2}{0^+}=-\\infty$. This is an infinite discontinuity (vertical asymptote $x=-4$).\n(c) Continuity at 4 requires: $g(4)$ is defined, $\\lim_{x\\to4}g(x)$ exists, and the two are equal. The limit is $\\frac34$, so $k=\\frac34$.\n(d) $\\lim_{x\\to\\infty}\\frac{x+2}{x+4}=1$, so the horizontal asymptote is $y=1$.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u1-frq-5",
+    "unit": "unit-1-limits-and-continuity",
+    "topic": "intermediate-value-theorem",
+    "prompt": "The function $h$ is continuous on $[0,6]$. Selected values are given in the table.\n\n| $x$ | 0 | 1 | 2 | 4 | 6 |\n|---|---|---|---|---|---|\n| $h(x)$ | $-3$ | $-1$ | $2$ | $1$ | $-2$ |\n\n**(a)** Explain why $h(x)=0$ must have at least two solutions in the interval $(0,6)$.\n\n**(b)** Explain why $h(x)=\\frac32$ must have at least one solution in $(1,4)$, and give a smaller interval of $(1,4)$ in which you can guarantee a solution.\n\n**(c)** Let $p(x)=e^x+x-3$. Use the Intermediate Value Theorem to show that $p(x)=0$ has a solution in $(0,1)$. (You may use $e>2.7$.)\n\n**(d)** A student claims that because $h(1)=-1<0$ and $h(4)=1>0$, $h$ must cross every value between $-1$ and $1$ exactly once in $(1,4)$. Is the claim correct? Explain.",
+    "pointValue": 5,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) States $h$ is continuous and finds sign changes on two disjoint intervals, such as $[1,2]$ and $[4,6]$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Concludes that the IVT gives a zero in each, so at least two zeros"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Uses $h(1)=-1<\\frac32<2=h(2)$ (or $h(4)=1$ and $h(2)=2$) and continuity to guarantee a solution in $(1,2)$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Shows $p$ is continuous, $p(0)=-2<0$ and $p(1)=e-2>0$, and concludes by the IVT"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Says the claim is incorrect: the IVT guarantees at least one, not exactly one"
+      }
+    ],
+    "sampleResponse": "(a) $h$ is continuous. Since $h(1)=-1<0<2=h(2)$, the IVT gives a zero in $(1,2)$. Since $h(4)=1>0>-2=h(6)$, the IVT gives a zero in $(4,6)$. These intervals do not overlap, so there are at least two zeros.\n(b) $h(1)=-1<\\frac32<2=h(2)$ and $h$ is continuous on $[1,2]$, so by the IVT there is a $c$ in $(1,2)\\subset(1,4)$ with $h(c)=\\frac32$.\n(c) $p$ is continuous everywhere. $p(0)=1+0-3=-2<0$ and $p(1)=e-2>0.7>0$. By the IVT there is a $c$ in $(0,1)$ with $p(c)=0$.\n(d) The claim is not correct. The IVT guarantees at least one solution for each value between $h(1)$ and $h(4)$, not exactly one. The table gives only a few points, and $h$ could cross a given value several times between them.",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,576 @@
+[
+  {
+    "id": "ap-calcbc-u6-mcq-31",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "riemann-sums-and-definite-integrals",
+    "difficulty": "hard",
+    "stem": "Values of a rate function $R(t)$, in gallons per minute, are given in the table. A trapezoidal sum with the four subintervals shown is used to approximate $\\displaystyle\\int_0^{10}R(t)\\,dt$.\n\n| $t$ | 0 | 2 | 5 | 9 | 10 |\n|---|---|---|---|---|---|\n| $R(t)$ | 4 | 7 | 6 | 3 | 2 |\n\nWhat is the value of the approximation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$56$",
+        "isCorrect": false,
+        "explanation": "This is the left Riemann sum $2(4)+3(7)+4(6)+1(3)$, which uses the left endpoint's value on each subinterval instead of averaging the two ends."
+      },
+      {
+        "label": "B",
+        "text": "$46$",
+        "isCorrect": false,
+        "explanation": "This is the right Riemann sum $2(7)+3(6)+4(3)+1(2)$."
+      },
+      {
+        "label": "C",
+        "text": "$51$",
+        "isCorrect": true,
+        "explanation": "The subintervals have widths 2, 3, 4 and 1. Trapezoids: $2\\cdot\\frac{4+7}{2}+3\\cdot\\frac{7+6}{2}+4\\cdot\\frac{6+3}{2}+1\\cdot\\frac{3+2}{2}=11+19.5+18+2.5=51$."
+      },
+      {
+        "label": "D",
+        "text": "$22$",
+        "isCorrect": false,
+        "explanation": "This adds the five table values without weighting by the widths of the subintervals. An integral approximation multiplies each value by a width."
+      }
+    ],
+    "explanation": "Each trapezoid has area (width) $\\times$ (average of the two end values). The widths come from the differences between consecutive $t$ values.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-32",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "riemann-sums-and-definite-integrals",
+    "difficulty": "hard",
+    "stem": "A right Riemann sum with 4 subintervals of equal width is used to approximate $\\displaystyle\\int_1^5(x^2-1)\\,dx$. What is the value of the sum?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$50$",
+        "isCorrect": true,
+        "explanation": "$\\Delta x=1$ and the right endpoints are 2, 3, 4, 5. The sum is $f(2)+f(3)+f(4)+f(5)=3+8+15+24=50$."
+      },
+      {
+        "label": "B",
+        "text": "$37$",
+        "isCorrect": false,
+        "explanation": "This is the midpoint sum, using 1.5, 2.5, 3.5, 4.5."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{112}{3}$",
+        "isCorrect": false,
+        "explanation": "This is the exact value of the integral, not a Riemann sum."
+      },
+      {
+        "label": "D",
+        "text": "$26$",
+        "isCorrect": false,
+        "explanation": "This is the left sum, using the endpoints 1, 2, 3, 4: $0+3+8+15$."
+      }
+    ],
+    "explanation": "Find $\\Delta x=\\frac{5-1}{4}=1$, list the right endpoints, evaluate $f$ at each, and add (times $\\Delta x$).",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-33",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "fundamental-theorem-of-calculus",
+    "difficulty": "hard",
+    "stem": "Let $G(x)=\\displaystyle\\int_x^{x^2}\\sqrt{1+t^3}\\,dt$. What is $G'(1)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2 \\sqrt{2}$",
+        "isCorrect": false,
+        "explanation": "This keeps only the upper-limit term. The variable lower limit contributes $-\\sqrt{1+x^3}$."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "Both limits equal 1 at $x=1$, so $G(1)=0$, but $G'(1)$ is the rate of change of $G$, not its value."
+      },
+      {
+        "label": "C",
+        "text": "$3 \\sqrt{2}$",
+        "isCorrect": false,
+        "explanation": "The lower limit's term is subtracted, not added: $\\int_x^{x^2}=F(x^2)-F(x)$."
+      },
+      {
+        "label": "D",
+        "text": "$\\sqrt{2}$",
+        "isCorrect": true,
+        "explanation": "$G'(x)=\\sqrt{1+(x^2)^3}\\cdot2x-\\sqrt{1+x^3}$. At $x=1$: $\\sqrt2\\cdot2-\\sqrt2=\\sqrt2$."
+      }
+    ],
+    "explanation": "Write $G(x)=F(x^2)-F(x)$ for an antiderivative $F$ of the integrand, then differentiate with the chain rule: $G'(x)=f(x^2)\\cdot2x-f(x)$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/fundamental-theorem-of-calculus",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-34",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "fundamental-theorem-of-calculus",
+    "difficulty": "hard",
+    "stem": "The graph of $f$ is shown for $0\\le x\\le6$. It consists of line segments. Let $g(x)=\\displaystyle\\int_0^xf(t)\\,dt$. What is the maximum value of $g$ on the interval $[0,6]$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "$g(6)=8-3=5$ is the value at the right endpoint. Since $f<0$ on $(4,6)$, $g$ is decreasing there, so $g(4)=8$ is larger."
+      },
+      {
+        "label": "B",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "4 is the area from $x=0$ to $x=2$ only. The function is still positive from 2 to 4, so $g$ keeps increasing."
+      },
+      {
+        "label": "C",
+        "text": "$11$",
+        "isCorrect": false,
+        "explanation": "This adds the area of the triangle below the axis instead of subtracting it ($8+3$). That area counts negatively in $\\int f$, and $g$ does not reach its maximum at $x=6$."
+      },
+      {
+        "label": "D",
+        "text": "$8$",
+        "isCorrect": true,
+        "explanation": "$g'(x)=f(x)$ is positive on $(0,4)$ and negative on $(4,6)$, so $g$ increases until $x=4$ and then decreases: the maximum is $g(4)$. The area under $f$ from 0 to 4 is the triangle $\\frac12(4)(4)=8$."
+      }
+    ],
+    "explanation": "$g'=f$, so $g$ changes from increasing to decreasing where $f$ changes from positive to negative. Then compute the signed area up to that point.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/fundamental-theorem-of-calculus",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Graph of f made of line segments through (0,0), (2,4), (4,0) and (6,-3).",
+      "xLabel": "x",
+      "yLabel": "f(x)",
+      "xMin": 0,
+      "xMax": 6,
+      "yMin": -4,
+      "yMax": 5,
+      "series": [
+        {
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 2,
+              "y": 4
+            },
+            {
+              "x": 4,
+              "y": 0
+            },
+            {
+              "x": 6,
+              "y": -3
+            }
+          ],
+          "color": "blue",
+          "label": "f"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-35",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "riemann-sums-and-definite-integrals",
+    "difficulty": "hard",
+    "stem": "Suppose $\\displaystyle\\int_1^5f(x)\\,dx=8$, $\\displaystyle\\int_3^5f(x)\\,dx=3$ and $\\displaystyle\\int_1^3g(x)\\,dx=-2$. What is $\\displaystyle\\int_1^3\\big(2f(x)-3g(x)+1\\big)\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$24$",
+        "isCorrect": false,
+        "explanation": "This uses $\\int_1^5f=8$ in place of $\\int_1^3f=5$. The interval of integration must match."
+      },
+      {
+        "label": "B",
+        "text": "$6$",
+        "isCorrect": false,
+        "explanation": "The term $-3g$ gives $-3(-2)=+6$. Subtracting it as $-6$ drops the sign of $\\int g$."
+      },
+      {
+        "label": "C",
+        "text": "$18$",
+        "isCorrect": true,
+        "explanation": "$\\int_1^3f=\\int_1^5f-\\int_3^5f=8-3=5$. Then $2(5)-3(-2)+\\int_1^31\\,dx=10+6+2=18$."
+      },
+      {
+        "label": "D",
+        "text": "$16$",
+        "isCorrect": false,
+        "explanation": "The constant 1 integrates to $1\\cdot(3-1)=2$, not 0."
+      }
+    ],
+    "explanation": "Split $\\int_1^5f$ at $x=3$ to get $\\int_1^3f$. Then use linearity of the integral, including the constant term.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-36",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "u-substitution",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_1^e\\frac{(\\ln x)^2}{x}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": true,
+        "explanation": "Let $u=\\ln x$, $du=\\frac{dx}x$. The limits become $u=0$ and $u=1$: $\\int_0^1u^2\\,du=\\frac13$."
+      },
+      {
+        "label": "B",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "The antiderivative of $u^2$ is $\\frac{u^3}{3}$. Dropping the $\\frac13$ gives 1."
+      },
+      {
+        "label": "C",
+        "text": "$\\dfrac{e^3-1}{3}$",
+        "isCorrect": false,
+        "explanation": "This keeps the old limits $x=1$ and $x=e$ after substituting $u$. The limits must be converted to $u=\\ln1=0$ and $u=\\ln e=1$ (or the antiderivative converted back to $x$)."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{2}{3}$",
+        "isCorrect": false,
+        "explanation": "This doubles the result, as if the antiderivative of $u^2$ were $\\frac{2u^3}{3}$. It is $\\frac{u^3}{3}$, which is $\\frac13$ at $u=1$."
+      }
+    ],
+    "explanation": "Substitute $u=\\ln x$, change the limits of integration to match, and integrate $u^2$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/u-substitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-37",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "antiderivatives-and-indefinite-integrals",
+    "difficulty": "hard",
+    "stem": "The function $f$ satisfies $f''(x)=12x-6$, $f'(1)=0$ and $f(1)=2$. What is $f(0)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "This has $D=5$, from adding $f(1)=2$ and 3 instead of solving $-1+D=2$. The condition $f(1)=2$ gives $D=3$."
+      },
+      {
+        "label": "B",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "$f(1)=2$ is a given value. The condition at $x=1$ gives the constant $D$; the question asks for $f(0)$, which equals $D=3$."
+      },
+      {
+        "label": "C",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "$-1$ is $f(1)$ before adding the constant $D$: $2(1)-3(1)=-1$. The constant is $D=3$."
+      },
+      {
+        "label": "D",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "$f'(x)=6x^2-6x+C$ and $f'(1)=0$ give $C=0$. $f(x)=2x^3-3x^2+D$ and $f(1)=-1+D=2$ give $D=3$. So $f(0)=3$."
+      }
+    ],
+    "explanation": "Integrate twice, using each initial condition right after the integration it belongs to.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/antiderivatives-and-indefinite-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-38",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "fundamental-theorem-of-calculus",
+    "difficulty": "hard",
+    "stem": "Water flows into a tank at a rate $R(t)=30-4t$ gallons per minute for $0\\le t\\le15$, where $t$ is in minutes. The tank holds 200 gallons at $t=0$. What is the greatest amount of water in the tank during this time?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "200 gallons",
+        "isCorrect": false,
+        "explanation": "200 gallons is the starting amount. The amount rises above that while $R(t)>0$."
+      },
+      {
+        "label": "B",
+        "text": "312.5 gallons",
+        "isCorrect": true,
+        "explanation": "The amount is $A(t)=200+\\int_0^tR(s)\\,ds$, which increases while $R>0$ and decreases after. $R=0$ at $t=7.5$. $A(7.5)=200+\\left[30t-2t^2\\right]_0^{7.5}=200+225-112.5=312.5$."
+      },
+      {
+        "label": "C",
+        "text": "537.5 gallons",
+        "isCorrect": false,
+        "explanation": "The $-2t^2$ term is subtracted: $\\int_0^{7.5}(30-4t)\\,dt=225-112.5$, not $225+112.5$."
+      },
+      {
+        "label": "D",
+        "text": "112.5 gallons",
+        "isCorrect": false,
+        "explanation": "This is the net change in the amount from $t=0$ to $t=7.5$; the question asks for the amount in the tank, which includes the initial 200."
+      }
+    ],
+    "explanation": "The amount is largest where the rate changes from positive to negative. Use the initial amount plus the net change up to that time.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/fundamental-theorem-of-calculus",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-39",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "riemann-sums-and-definite-integrals",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_{-1}^{3}\\left|x^2-x-2\\right|\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{8}{3}$",
+        "isCorrect": false,
+        "explanation": "This takes the absolute value of the signed integral, $\\left|\\int(x^2-x-2)\\,dx\\right|$. That is not the same as $\\int|x^2-x-2|\\,dx$, because the positive and negative parts partly cancel inside."
+      },
+      {
+        "label": "B",
+        "text": "$- \\frac{8}{3}$",
+        "isCorrect": false,
+        "explanation": "This integrates $x^2-x-2$ without the absolute value. The area below the axis counts negatively. An integral of an absolute value cannot be negative."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{19}{3}$",
+        "isCorrect": true,
+        "explanation": "$x^2-x-2=(x-2)(x+1)$ is negative on $(-1,2)$ and positive on $(2,3)$. So the integral is $-\\int_{-1}^2(x^2-x-2)dx+\\int_2^3(x^2-x-2)dx=\\frac92+\\frac{11}6=\\frac{19}3$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{9}{2}$",
+        "isCorrect": false,
+        "explanation": "$\\frac92$ is only the area on $(-1,2)$, where the function is negative. The region from 2 to 3 also contributes."
+      }
+    ],
+    "explanation": "Find the sign changes of $x^2-x-2$ in the interval, then integrate each piece with the sign that makes the integrand non-negative.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-40",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "riemann-sums-and-definite-integrals",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\lim_{n\\to\\infty}\\sum_{k=1}^{n}\\frac2n\\left(1+\\frac{2k}{n}\\right)^3$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$40$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac2n$ is the $\\Delta x$ already; doubling the integral $\\int_1^3x^3dx$ counts it twice."
+      },
+      {
+        "label": "B",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "This treats the sum as $\\int_0^2x^3\\,dx=4$. The sample points are $1+\\frac{2k}n$, which run from 1 to 3, not from 0 to 2."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{15}{4}$",
+        "isCorrect": false,
+        "explanation": "This is $\\int_1^2x^3\\,dx$. The interval length is $n\\cdot\\frac2n=2$, so it runs from 1 to 3."
+      },
+      {
+        "label": "D",
+        "text": "$20$",
+        "isCorrect": true,
+        "explanation": "With $\\Delta x=\\frac2n$ and $x_k=1+\\frac{2k}n$, this is a right Riemann sum for $\\int_1^3x^3\\,dx=\\frac{3^4-1^4}{4}=20$."
+      }
+    ],
+    "explanation": "Identify $\\Delta x$ and $x_k$, so the sum becomes $\\sum f(x_k)\\Delta x$ with $f(x)=x^3$ on $[1,3]$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-41",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "fundamental-theorem-of-calculus",
+    "difficulty": "hard",
+    "stem": "Let $F(x)=\\displaystyle\\int_0^x(t^2-4t+3)\\,dt$. At what value of $x$ does $F$ have a local minimum?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "$F'(x)=x^2-4x+3=(x-1)(x-3)$. $F'$ changes from negative to positive at $x=3$, so $F$ has a local minimum there. (At $x=1$, $F'$ changes from positive to negative: a local maximum.)"
+      },
+      {
+        "label": "B",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "At $x=1$, $F'$ changes from positive to negative, which is a local maximum of $F$."
+      },
+      {
+        "label": "C",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "$x=2$ is where $F''(x)=2x-4=0$, an inflection point of $F$, not an extremum."
+      },
+      {
+        "label": "D",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "$F'(0)=0^2-0+3=3\\neq0$, so $x=0$ is not a critical point of $F$. $F$ is increasing through $x=0$."
+      }
+    ],
+    "explanation": "By the Fundamental Theorem, $F'(x)=x^2-4x+3$. Use the First Derivative Test on $F'$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/fundamental-theorem-of-calculus",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-42",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "u-substitution",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_0^{\\ln3}\\frac{e^x}{1+e^x}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\dfrac{\\ln2}{2}$",
+        "isCorrect": false,
+        "explanation": "The substitution $u=1+e^x$ has $du=e^x\\,dx$ exactly; no factor of $\\frac12$ appears."
+      },
+      {
+        "label": "B",
+        "text": "$\\ln3$",
+        "isCorrect": false,
+        "explanation": "This replaces $e^x$ by its upper-limit value 3 only. The antiderivative is $\\ln(1+e^x)$ and is evaluated at both limits."
+      },
+      {
+        "label": "C",
+        "text": "$\\ln4$",
+        "isCorrect": false,
+        "explanation": "This leaves out the lower limit: $\\ln4-\\ln2=\\ln2$, not $\\ln4$."
+      },
+      {
+        "label": "D",
+        "text": "$\\ln2$",
+        "isCorrect": true,
+        "explanation": "Let $u=1+e^x$, $du=e^x\\,dx$. The limits become $u=2$ and $u=4$: $\\int_2^4\\frac{du}{u}=\\ln4-\\ln2=\\ln2$."
+      }
+    ],
+    "explanation": "The numerator is the derivative of the denominator, so the antiderivative is $\\ln(1+e^x)$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/u-substitution",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-43",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "riemann-sums-and-definite-integrals",
+    "difficulty": "hard",
+    "stem": "The function $f$ is continuous, increasing and concave up on $[0,4]$. Let $L$, $R$, $M$ and $T$ be the left, right, midpoint and trapezoidal approximations of $I=\\int_0^4f(x)\\,dx$ using 4 subintervals of equal width. Which ordering must be true?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$L<M<I<T<R$",
+        "isCorrect": true,
+        "explanation": "Increasing: $L<I<R$ and $L<M$, $T<R$. Concave up: the midpoint sum underestimates and the trapezoidal sum overestimates, so $M<I<T$. Combined: $L<M<I<T<R$."
+      },
+      {
+        "label": "B",
+        "text": "$M<L<I<R<T$",
+        "isCorrect": false,
+        "explanation": "For an increasing function the left sum is below the midpoint sum ($L<M$), and the trapezoidal sum is the average of $L$ and $R$, so $T<R$."
+      },
+      {
+        "label": "C",
+        "text": "$L<I<M<T<R$",
+        "isCorrect": false,
+        "explanation": "The midpoint sum is an underestimate for concave-up functions, so $M<I$."
+      },
+      {
+        "label": "D",
+        "text": "$L<T<I<M<R$",
+        "isCorrect": false,
+        "explanation": "For a concave-up function the trapezoids lie above the graph (overestimate) and the midpoint rectangles underestimate: $M<I<T$, the other way around."
+      }
+    ],
+    "explanation": "Increasing gives $L<I<R$; concave up gives $M<I<T$. For an increasing function, $L<M$ and $T<R$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/riemann-sums-and-definite-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-44",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "antiderivatives-and-indefinite-integrals",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_{-2}^{2}\\left(x^3\\cos x+3x^2+5\\right)dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$36$",
+        "isCorrect": true,
+        "explanation": "$x^3\\cos x$ is an odd function, so its integral over $[-2,2]$ is 0. The rest gives $\\int_{-2}^23x^2\\,dx+\\int_{-2}^25\\,dx=16+20=36$."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "Only the odd part, $x^3\\cos x$, integrates to 0. The terms $3x^2$ and 5 are even and add to the integral."
+      },
+      {
+        "label": "C",
+        "text": "$20$",
+        "isCorrect": false,
+        "explanation": "This leaves out the $3x^2$ term: $\\int_{-2}^23x^2\\,dx=\\left[x^3\\right]_{-2}^{2}=16$."
+      },
+      {
+        "label": "D",
+        "text": "$16$",
+        "isCorrect": false,
+        "explanation": "This leaves out the constant term: $\\int_{-2}^25\\,dx=20$."
+      }
+    ],
+    "explanation": "Split the integrand into odd and even parts. The odd part integrates to 0 over a symmetric interval.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/antiderivatives-and-indefinite-integrals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u6-mcq-45",
+    "unit": "unit-6-integration-and-accumulation-of-change",
+    "topic": "u-substitution",
+    "difficulty": "hard",
+    "stem": "What is the value of $\\displaystyle\\int_0^{\\pi/3}\\frac{\\sin x}{\\cos^2x}\\,dx$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "$\\frac12$ is $\\cos\\frac\\pi3$, the value of $u$ at the upper limit. The antiderivative is $\\frac1u=\\sec x$, so the values to compare are $\\sec\\frac\\pi3=2$ and $\\sec0=1$."
+      },
+      {
+        "label": "B",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "$\\sec\\frac\\pi3=2$ is only the upper-limit value. Subtract $\\sec0=1$."
+      },
+      {
+        "label": "C",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "The sign is wrong: $-\\int u^{-2}du=+u^{-1}$, so the antiderivative is $+\\sec x$."
+      },
+      {
+        "label": "D",
+        "text": "$1$",
+        "isCorrect": true,
+        "explanation": "Let $u=\\cos x$, $du=-\\sin x\\,dx$. Then $\\int\\frac{\\sin x}{\\cos^2x}dx=-\\int u^{-2}du=\\frac1u=\\sec x$. So the value is $\\sec\\frac\\pi3-\\sec0=2-1=1$."
+      }
+    ],
+    "explanation": "Substitute $u=\\cos x$ (so $du=-\\sin x\\,dx$) and integrate $-u^{-2}$.",
+    "conceptLink": "ap-calc-bc/unit-6-integration-and-accumulation-of-change/u-substitution",
+    "reviewed": false
+  }
+]

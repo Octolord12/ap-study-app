@@ -9,11 +9,11 @@ describe("ComingSoon", () => {
   it("is headed 'Coming soon', lists the planned subjects, and has the waitlist form", () => {
     render(<ComingSoon />);
     expect(screen.getByText("Coming soon")).toBeInTheDocument();
-    for (const subject of ["AP Biology", "AP Calculus BC"]) {
-      expect(screen.getByText(subject)).toBeInTheDocument();
+    expect(screen.getByText("AP Biology")).toBeInTheDocument();
+    expect(screen.getAllByText("Planned")).toHaveLength(1);
+    for (const shipped of ["AP U.S. History", "AP Calculus BC"]) {
+      expect(screen.queryByText(shipped)).not.toBeInTheDocument();
     }
-    expect(screen.getAllByText("Planned")).toHaveLength(2);
-    expect(screen.queryByText("AP U.S. History")).not.toBeInTheDocument();
     expect(screen.getByLabelText("Email")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Join the list" })).toBeInTheDocument();
   });

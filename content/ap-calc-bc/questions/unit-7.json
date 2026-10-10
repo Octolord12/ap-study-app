@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ap-calcbc-u7-mcq-1",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "easy",
+    "stem": "What is a \"differential equation\"?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "An equation that involves a function and one or more of its derivatives",
+        "isCorrect": true,
+        "explanation": "A differential equation relates a function to one or more of its derivatives."
+      },
+      {
+        "label": "B",
+        "text": "An equation with no variables at all, only numbers and operations",
+        "isCorrect": false,
+        "explanation": "Differential equations specifically involve functions/derivatives, not an absence of variables."
+      },
+      {
+        "label": "C",
+        "text": "An equation that only involves constants and arithmetic, with no unknown function in it",
+        "isCorrect": false,
+        "explanation": "Differential equations involve variable functions and their rates of change, not merely constants."
+      },
+      {
+        "label": "D",
+        "text": "An equation describing a straight line only, like y = mx + b with a constant slope",
+        "isCorrect": false,
+        "explanation": "Differential equations can describe a vast range of relationships, not exclusively straight lines."
+      }
+    ],
+    "explanation": "A differential equation involves a function and one or more of its derivatives.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-2",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "medium",
+    "stem": "What does $dy/dx = ky$ (where k is a constant) model, in general terms?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A quantity y whose rate of change is proportional to its current value",
+        "isCorrect": true,
+        "explanation": "This equation states that the rate of change of y is directly proportional to y itself."
+      },
+      {
+        "label": "B",
+        "text": "A quantity that never changes over time, no matter what its initial value happens to be",
+        "isCorrect": false,
+        "explanation": "dy/dx=ky describes ACTIVE change (proportional to y), not a quantity that stays constant."
+      },
+      {
+        "label": "C",
+        "text": "A quantity whose rate of change is constant, regardless of its current value or the time",
+        "isCorrect": false,
+        "explanation": "This describes dy/dx=k (a constant rate), different from dy/dx=ky (a rate depending on y's current value)."
+      },
+      {
+        "label": "D",
+        "text": "A quantity with no relationship between its rate and its value at any moment in time",
+        "isCorrect": false,
+        "explanation": "This equation specifically establishes a direct, proportional relationship between the rate of change and the current value."
+      }
+    ],
+    "explanation": "$dy/dx=ky$ models a quantity whose rate of change is proportional to its current value.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-3",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "medium",
+    "stem": "A population P grows at a rate proportional to its current size, with proportionality constant 0.05. Write this as a differential equation.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$dP/dt = 0.05P$",
+        "isCorrect": true,
+        "explanation": "This correctly represents a rate of change proportional to the current population, with proportionality constant 0.05."
+      },
+      {
+        "label": "B",
+        "text": "$dP/dt = 0.05$",
+        "isCorrect": false,
+        "explanation": "This describes a constant rate of growth, not one proportional to the current population size."
+      },
+      {
+        "label": "C",
+        "text": "$dP/dt = P/0.05$",
+        "isCorrect": false,
+        "explanation": "This incorrectly divides rather than multiplies by the proportionality constant."
+      },
+      {
+        "label": "D",
+        "text": "$dP/dt = 0.05 + P$",
+        "isCorrect": false,
+        "explanation": "This incorrectly adds rather than multiplies P by the proportionality constant."
+      }
+    ],
+    "explanation": "A rate proportional to the current value is written as $dP/dt = 0.05P$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-4",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "hard",
+    "stem": "What is the \"order\" of a differential equation, and what order is $dy/dx + 3y = x^2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The order is the highest derivative present; this equation has only dy/dx (a first derivative), so it is first-order",
+        "isCorrect": true,
+        "explanation": "The order of a differential equation is the highest-order derivative appearing in it; here that's dy/dx, so it's first-order."
+      },
+      {
+        "label": "B",
+        "text": "The order is the highest power the variable y is raised to; this equation is order 2, because of the x² term in the equation",
+        "isCorrect": false,
+        "explanation": "\"Order\" specifically refers to the HIGHEST DERIVATIVE present, not the highest power of y or x."
+      },
+      {
+        "label": "C",
+        "text": "The order refers to how many terms are in the equation; this one has three terms, so it is order 3",
+        "isCorrect": false,
+        "explanation": "\"Order\" doesn't refer to counting terms; it specifically refers to the highest derivative present."
+      },
+      {
+        "label": "D",
+        "text": "There is no such thing as the \"order\" of a differential equation, since all of them are alike",
+        "isCorrect": false,
+        "explanation": "\"Order\" is indeed a well-defined, standard classification concept for differential equations."
+      }
+    ],
+    "explanation": "The order is the highest derivative present; this equation is first-order since it only involves dy/dx.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-5",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "medium",
+    "stem": "Why are differential equations useful for modeling real-world phenomena (such as population growth, radioactive decay, or cooling)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They describe how a quantity's rate of change relates to the quantity itself or other variables, capturing dynamic processes over time",
+        "isCorrect": true,
+        "explanation": "Differential equations excel at capturing how quantities change dynamically in relation to themselves or other variables."
+      },
+      {
+        "label": "B",
+        "text": "They can only describe static, unchanging quantities, never anything that varies over time or responds to its surroundings or to any outside influence",
+        "isCorrect": false,
+        "explanation": "Differential equations are specifically useful for describing DYNAMIC, CHANGING quantities, not static ones."
+      },
+      {
+        "label": "C",
+        "text": "They have no real-world applications, since every real process is modeled by a plain formula",
+        "isCorrect": false,
+        "explanation": "Differential equations have extensive, well-documented real-world applications across many fields."
+      },
+      {
+        "label": "D",
+        "text": "They only apply to purely abstract mathematical concepts with no connection to reality or to any physical process",
+        "isCorrect": false,
+        "explanation": "Differential equations are widely used to model real, concrete physical/biological/economic phenomena."
+      }
+    ],
+    "explanation": "Differential equations describe how a quantity's rate of change relates to the quantity itself, capturing dynamic real-world processes.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-6",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "medium",
+    "stem": "What is meant by a \"solution\" to a differential equation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A function that satisfies the differential equation when it and its derivatives are substituted in",
+        "isCorrect": true,
+        "explanation": "A solution is a function that, along with its derivatives, makes the differential equation true."
+      },
+      {
+        "label": "B",
+        "text": "A single specific numerical value of x for which both sides of the equation are equal at one particular input",
+        "isCorrect": false,
+        "explanation": "A solution to a differential equation is generally a FUNCTION, not a single specific numerical value."
+      },
+      {
+        "label": "C",
+        "text": "A graph with no mathematical meaning, drawn only to illustrate the equation's general shape",
+        "isCorrect": false,
+        "explanation": "While solutions CAN be represented graphically, the solution itself is a meaningful mathematical function."
+      },
+      {
+        "label": "D",
+        "text": "An equation with no y or x terms at all, obtained by cancelling every variable from both sides and leaving only constants behind",
+        "isCorrect": false,
+        "explanation": "This doesn't describe a meaningful mathematical solution at all."
+      }
+    ],
+    "explanation": "A solution to a differential equation is a function that satisfies the equation when substituted in.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-7",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "difficulty": "medium",
+    "stem": "What distinguishes a \"general solution\" from a \"particular solution\" to a differential equation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A general solution includes an arbitrary constant (like +C), while a particular solution fixes that constant using an initial condition",
+        "isCorrect": true,
+        "explanation": "The general solution represents a whole family of solutions; a particular solution is one specific member of that family."
+      },
+      {
+        "label": "B",
+        "text": "They are always exactly identical, differing only in the notation used to write the constant of integration",
+        "isCorrect": false,
+        "explanation": "A general solution and a particular solution are NOT always identical; the particular solution is a specific case of the general family."
+      },
+      {
+        "label": "C",
+        "text": "A particular solution never satisfies the differential equation, so it is only an approximation of the general one and never an exact function",
+        "isCorrect": false,
+        "explanation": "A particular solution absolutely DOES satisfy the differential equation; it's one specific member of the general solution family."
+      },
+      {
+        "label": "D",
+        "text": "A general solution can never be found, while a particular solution is always easy to compute from the equation",
+        "isCorrect": false,
+        "explanation": "General solutions CAN typically be found for many differential equations, especially the types covered in this course."
+      }
+    ],
+    "explanation": "A general solution includes an arbitrary constant, while a particular solution has that constant fixed by an initial condition.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/modeling-with-differential-equations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-8",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "easy",
+    "stem": "What is a \"slope field\" (or \"direction field\") used for?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "To visually represent the slope of solutions to a differential equation at various points in the plane",
+        "isCorrect": true,
+        "explanation": "A slope field shows small line segments indicating the slope of solution curves at many points."
+      },
+      {
+        "label": "B",
+        "text": "To calculate exact numerical solutions with perfect precision at every point",
+        "isCorrect": false,
+        "explanation": "Slope fields provide a VISUAL, qualitative representation, not a method for calculating exact numerical solutions."
+      },
+      {
+        "label": "C",
+        "text": "To find the antiderivative of a function by reading off its slope",
+        "isCorrect": false,
+        "explanation": "Antiderivatives are a separate, unrelated concept from slope fields."
+      },
+      {
+        "label": "D",
+        "text": "To graph a single specific function with no connection to differential equations, such as a polynomial",
+        "isCorrect": false,
+        "explanation": "Slope fields are directly and specifically connected to visualizing solutions of differential equations."
+      }
+    ],
+    "explanation": "A slope field visually represents the slope of solutions to a differential equation at various points.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-9",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "medium",
+    "stem": "In a slope field for $dy/dx = f(x,y)$, what does each small line segment drawn at a point $(x,y)$ represent?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The slope of the solution curve passing through that particular point, calculated as f(x,y)",
+        "isCorrect": true,
+        "explanation": "Each segment shows the local slope of a solution curve at that specific point."
+      },
+      {
+        "label": "B",
+        "text": "The y-intercept of the solution curve that passes through the point (x,y)",
+        "isCorrect": false,
+        "explanation": "Each segment represents a LOCAL SLOPE at that specific point, not a y-intercept."
+      },
+      {
+        "label": "C",
+        "text": "The x-intercept of the solution curve that passes through the point (x,y)",
+        "isCorrect": false,
+        "explanation": "This doesn't represent an x-intercept; it represents the local slope value."
+      },
+      {
+        "label": "D",
+        "text": "A random, arbitrary slope with no connection to the differential equation or to the solution curve",
+        "isCorrect": false,
+        "explanation": "Each segment's slope is specifically determined by evaluating f(x,y) at that point, not randomly assigned."
+      }
+    ],
+    "explanation": "Each line segment represents the local slope f(x,y) of the solution curve at that point.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-10",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "medium",
+    "stem": "For the differential equation $dy/dx = x$, what would the slope field segments look like at points where x=0?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Horizontal segments (slope = 0), since dy/dx = 0 when x = 0",
+        "isCorrect": true,
+        "explanation": "Substituting x=0 into dy/dx=x gives a slope of 0, meaning horizontal segments."
+      },
+      {
+        "label": "B",
+        "text": "Vertical segments (undefined slope), since the slope blows up",
+        "isCorrect": false,
+        "explanation": "dy/dx=x evaluated at x=0 gives 0, a well-defined (horizontal) slope, not an undefined vertical one."
+      },
+      {
+        "label": "C",
+        "text": "Segments with a slope of 1, since dy/dx = 1 there along the line x=0",
+        "isCorrect": false,
+        "explanation": "dy/dx=x at x=0 specifically gives 0, not 1."
+      },
+      {
+        "label": "D",
+        "text": "Segments with a slope of -1, since dy/dx = -1 there",
+        "isCorrect": false,
+        "explanation": "dy/dx=x at x=0 specifically gives 0, not -1."
+      }
+    ],
+    "explanation": "At x=0, dy/dx=0, so the slope field segments would be horizontal.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-11",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "hard",
+    "stem": "For the differential equation $dy/dx = y$, what pattern would you observe in the slope field as y increases (for y>0)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The slopes become steeper (larger positive values) as y increases, since dy/dx = y grows with y",
+        "isCorrect": true,
+        "explanation": "Since the slope equals y itself, larger y values directly produce steeper slopes."
+      },
+      {
+        "label": "B",
+        "text": "The slopes stay exactly the same everywhere, regardless of y, since the slope depends only on x",
+        "isCorrect": false,
+        "explanation": "The slopes DO change with y in this particular differential equation, rather than staying constant everywhere."
+      },
+      {
+        "label": "C",
+        "text": "The slopes become flatter (closer to zero) as y increases, since the rate falls with y",
+        "isCorrect": false,
+        "explanation": "This is the OPPOSITE of the actual pattern; slopes get STEEPER (not flatter) as y grows larger for y>0."
+      },
+      {
+        "label": "D",
+        "text": "The slopes become negative as y increases, since the solution curves bend downward toward the axis",
+        "isCorrect": false,
+        "explanation": "For y>0, dy/dx=y remains POSITIVE (not negative), since y itself is positive in this scenario."
+      }
+    ],
+    "explanation": "Since dy/dx=y, slopes become steeper as y increases for y>0.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-12",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "medium",
+    "stem": "How can a slope field help you sketch an approximate solution curve to a differential equation, given a specific initial point?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "By following the direction of the segments from the initial point, tracing a curve that stays tangent to the local slopes throughout",
+        "isCorrect": true,
+        "explanation": "Following the slope segments from the initial point produces an approximate solution curve tangent to the field throughout."
+      },
+      {
+        "label": "B",
+        "text": "Slope fields cannot help sketch solution curves at all, since they only show isolated segments that never connect into a curve, so no solution can be sketched from them",
+        "isCorrect": false,
+        "explanation": "Slope fields are specifically a very useful, standard visual tool for sketching approximate solution curves."
+      },
+      {
+        "label": "C",
+        "text": "By ignoring the initial point entirely and drawing any curve that looks smooth",
+        "isCorrect": false,
+        "explanation": "The initial point is essential; the solution curve must specifically pass through this given starting point."
+      },
+      {
+        "label": "D",
+        "text": "By only looking at segments far away from the initial point, where the field is simplest",
+        "isCorrect": false,
+        "explanation": "The curve should be traced by following NEARBY segments consistently from the starting point, not segments far removed from it."
+      }
+    ],
+    "explanation": "A solution curve is sketched by following the slope field segments starting from the given initial point.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-13",
+    "unit": "unit-7-differential-equations",
+    "topic": "slope-fields",
+    "difficulty": "medium",
+    "stem": "What can slope fields reveal about a differential equation's behavior, even without solving it explicitly (i.e., without finding a formula)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Qualitative behavior of solutions, such as whether they increase, decrease, approach certain values, or exhibit other patterns",
+        "isCorrect": true,
+        "explanation": "Slope fields provide valuable qualitative insight into how solutions behave, without needing an explicit formula."
+      },
+      {
+        "label": "B",
+        "text": "The exact numerical value of any specific solution at any point, with complete precision and no approximation of any kind, even for equations with no formula",
+        "isCorrect": false,
+        "explanation": "Slope fields provide qualitative, visual insight, not exact numerical precision for a specific solution's value."
+      },
+      {
+        "label": "C",
+        "text": "Nothing useful; slope fields provide no meaningful insight about any differential equation",
+        "isCorrect": false,
+        "explanation": "Slope fields DO provide meaningful, useful qualitative insight into a differential equation's behavior."
+      },
+      {
+        "label": "D",
+        "text": "Only the color of the resulting graph and its overall shading",
+        "isCorrect": false,
+        "explanation": "Slope fields are mathematical diagrams that reveal actual behavioral information, not merely decorative colors."
+      }
+    ],
+    "explanation": "Slope fields reveal qualitative behavior of solutions without requiring an explicit formula.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/slope-fields",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-14",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "easy",
+    "stem": "What is the general strategy behind \"separation of variables\" for solving a differential equation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Rearranging so all y-terms (with dy) are on one side and all x-terms (with dx) are on the other, then integrating both sides",
+        "isCorrect": true,
+        "explanation": "This is the core technique of separation of variables."
+      },
+      {
+        "label": "B",
+        "text": "Never separating any terms at all, and integrating the whole equation in one step with respect to x, then solving for the constant at the end of the process",
+        "isCorrect": false,
+        "explanation": "Separating the terms is precisely the core strategy of this method, not avoiding separation."
+      },
+      {
+        "label": "C",
+        "text": "Immediately guessing a solution with no algebraic work, then checking it by substitution",
+        "isCorrect": false,
+        "explanation": "This method involves careful, systematic algebraic rearrangement and integration, not simply guessing."
+      },
+      {
+        "label": "D",
+        "text": "Setting all variables equal to zero and solving for the constant that remains",
+        "isCorrect": false,
+        "explanation": "Setting variables to zero doesn't represent the actual, meaningful algebraic process involved in this technique."
+      }
+    ],
+    "explanation": "Separation of variables rearranges the equation so y-terms and x-terms are separated, then integrates both sides.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-15",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "medium",
+    "stem": "Solve the separable differential equation $dy/dx = 2x$, using separation of variables and integration.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y = x^2 + C$",
+        "isCorrect": true,
+        "explanation": "Separating: dy=2x dx. Integrating both sides: y=x^2+C."
+      },
+      {
+        "label": "B",
+        "text": "$y = x^2$",
+        "isCorrect": false,
+        "explanation": "This omits the essential \"+C\" constant of integration."
+      },
+      {
+        "label": "C",
+        "text": "$y = 2x^2 + C$",
+        "isCorrect": false,
+        "explanation": "This incorrectly keeps a coefficient of 2 rather than correctly integrating 2x to get x^2."
+      },
+      {
+        "label": "D",
+        "text": "$y = x + C$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly integrate 2x with respect to x; the correct antiderivative is x^2, not x."
+      }
+    ],
+    "explanation": "Separating and integrating $dy = 2x\\,dx$ gives $y = x^2 + C$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-16",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "medium",
+    "stem": "Solve the separable differential equation $dy/dx = y$ (for y>0), using separation of variables.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y = Ae^x$ (for some constant A)",
+        "isCorrect": true,
+        "explanation": "Separating: dy/y = dx. Integrating: ln|y|=x+C. Solving for y: y=e^(x+C)=Ae^x where A=e^C."
+      },
+      {
+        "label": "B",
+        "text": "$y = x + C$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly account for the exponential relationship that emerges from solving ln|y|=x+C for y."
+      },
+      {
+        "label": "C",
+        "text": "$y = e^x$",
+        "isCorrect": false,
+        "explanation": "This omits the crucial arbitrary constant A entirely, giving only one specific solution rather than the general family."
+      },
+      {
+        "label": "D",
+        "text": "$y = Cx$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly represent the solution derived from properly separating and integrating dy/y = dx."
+      }
+    ],
+    "explanation": "Separating and integrating $dy/y = dx$ gives $\\ln|y|=x+C$, so $y=Ae^x$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-17",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "hard",
+    "stem": "Solve the initial value problem $dy/dx = y$, $y(0) = 3$, using separation of variables.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y = 3e^x$",
+        "isCorrect": true,
+        "explanation": "The general solution is y=Ae^x. Applying y(0)=3: 3=Ae^0=A, so A=3, giving y=3e^x."
+      },
+      {
+        "label": "B",
+        "text": "$y = e^x + 3$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly apply the exponential general solution form Ae^x with the correctly solved constant."
+      },
+      {
+        "label": "C",
+        "text": "$y = 3x$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly represent the exponential nature of the general solution to dy/dx=y."
+      },
+      {
+        "label": "D",
+        "text": "$y = e^{3x}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly places the 3 inside the exponent rather than as the correctly solved multiplicative constant A."
+      }
+    ],
+    "explanation": "Applying the initial condition to $y=Ae^x$ gives $A=3$, so $y=3e^x$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-18",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "medium",
+    "stem": "Solve the separable differential equation $dy/dx = x/y$ (for $y \\neq 0$), using separation of variables.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y^2 = x^2 + C$",
+        "isCorrect": true,
+        "explanation": "Separating: y dy = x dx. Integrating: y^2/2 = x^2/2 + C, or y^2 = x^2 + C' for a new constant."
+      },
+      {
+        "label": "B",
+        "text": "$y = x + C$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly account for the squared terms that emerge from correctly integrating y dy and x dx."
+      },
+      {
+        "label": "C",
+        "text": "$y^2 - x^2 = 0$ always",
+        "isCorrect": false,
+        "explanation": "This incorrectly assumes the arbitrary constant must always be zero, rather than remaining a general arbitrary constant C."
+      },
+      {
+        "label": "D",
+        "text": "$y = x^2/y$",
+        "isCorrect": false,
+        "explanation": "This simply restates the original differential equation's relationship, not the actual solved/integrated result."
+      }
+    ],
+    "explanation": "Separating and integrating $y\\,dy = x\\,dx$ gives $y^2 = x^2 + C$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-19",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "medium",
+    "stem": "What condition must a differential equation $dy/dx = f(x,y)$ satisfy for the \"separation of variables\" technique to be applicable?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "f(x,y) must be expressible as a product (or quotient) of a function of x alone and a function of y alone",
+        "isCorrect": true,
+        "explanation": "This structural condition is what allows the variables to be algebraically separated onto opposite sides."
+      },
+      {
+        "label": "B",
+        "text": "f(x,y) must always be a constant, so the right-hand side contains neither x nor y at all",
+        "isCorrect": false,
+        "explanation": "f(x,y) being constant is a very restrictive special case, not the general condition required for this technique."
+      },
+      {
+        "label": "C",
+        "text": "The equation must have no y term at all, so that only x remains on the right-hand side",
+        "isCorrect": false,
+        "explanation": "Many separable equations DO include y terms (like dy/dx=y or dy/dx=x/y); the key requirement is how x and y terms combine."
+      },
+      {
+        "label": "D",
+        "text": "Separation of variables works for absolutely any differential equation, with no restrictions, which makes the technique a universal method",
+        "isCorrect": false,
+        "explanation": "Separation of variables requires this particular structural condition; it is NOT applicable to every possible differential equation."
+      }
+    ],
+    "explanation": "Separation of variables requires f(x,y) to be expressible as a product/quotient of functions of x alone and y alone.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-20",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "medium",
+    "stem": "After separating variables and integrating both sides of a differential equation, what is typically the next step to find the specific solution (given an initial condition)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Substitute the initial condition's x and y values into the general solution to solve for the constant C",
+        "isCorrect": true,
+        "explanation": "This substitution determines the specific value of C, yielding the particular solution."
+      },
+      {
+        "label": "B",
+        "text": "Ignore the initial condition entirely, since the general solution is already complete",
+        "isCorrect": false,
+        "explanation": "The initial condition is essential; it's specifically used to determine the exact particular solution from the general family."
+      },
+      {
+        "label": "C",
+        "text": "Immediately conclude no solution exists, since the initial condition has not yet been used in the integration",
+        "isCorrect": false,
+        "explanation": "A valid particular solution generally CAN be found using the given initial condition and this substitution process."
+      },
+      {
+        "label": "D",
+        "text": "Multiply both sides by zero to remove the constant from the equation",
+        "isCorrect": false,
+        "explanation": "This doesn't represent any meaningful step in solving these problems."
+      }
+    ],
+    "explanation": "Substituting the initial condition into the general solution determines the constant C, yielding the particular solution.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-21",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "difficulty": "medium",
+    "stem": "Solve $dy/dx = 3x^2y$ (for $y > 0$), leaving the answer in terms of an arbitrary constant A.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y = Ae^{x^3}$",
+        "isCorrect": true,
+        "explanation": "Separating: dy/y = 3x^2 dx. Integrating: ln|y| = x^3+C. Solving for y: y = Ae^(x^3)."
+      },
+      {
+        "label": "B",
+        "text": "$y = x^3 + A$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly represent the exponential relationship that emerges from solving ln|y| = x^3+C for y."
+      },
+      {
+        "label": "C",
+        "text": "$y = Ae^{3x^2}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly uses 3x^2 (matching the ORIGINAL differential equation's right side) rather than the correctly INTEGRATED exponent x^3."
+      },
+      {
+        "label": "D",
+        "text": "$y = A + x^3y$",
+        "isCorrect": false,
+        "explanation": "This isn't a valid simplified solution form; it doesn't correctly represent the result of separating and integrating."
+      }
+    ],
+    "explanation": "Separating and integrating gives $\\ln|y|=x^3+C$, so $y=Ae^{x^3}$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/separation-of-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-22",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "easy",
+    "stem": "The differential equation $dy/dt = ky$ (k a constant) has what general solution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y = y_0e^{kt}$, where $y_0$ is the initial value at t=0",
+        "isCorrect": true,
+        "explanation": "This is the standard general solution to the exponential growth/decay differential equation."
+      },
+      {
+        "label": "B",
+        "text": "$y = kt + y_0$",
+        "isCorrect": false,
+        "explanation": "This describes LINEAR growth/decay, not the exponential relationship that actually solves dy/dt=ky."
+      },
+      {
+        "label": "C",
+        "text": "$y = y_0 + kt^2$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly represent the exponential solution form derived from separation of variables."
+      },
+      {
+        "label": "D",
+        "text": "$y = k/y_0$",
+        "isCorrect": false,
+        "explanation": "This doesn't represent a meaningful solution to this differential equation at all."
+      }
+    ],
+    "explanation": "The general solution to $dy/dt=ky$ is $y=y_0e^{kt}$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-23",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "medium",
+    "stem": "If $k > 0$ in the model $y = y_0e^{kt}$, what type of behavior does this describe?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Exponential growth (y increases over time)",
+        "isCorrect": true,
+        "explanation": "A positive k causes y to grow exponentially as t increases."
+      },
+      {
+        "label": "B",
+        "text": "Exponential decay (y decreases over time)",
+        "isCorrect": false,
+        "explanation": "A POSITIVE k specifically corresponds to growth (increasing y), not decay."
+      },
+      {
+        "label": "C",
+        "text": "No change in y over time",
+        "isCorrect": false,
+        "explanation": "A nonzero k value means y IS changing over time, not staying constant."
+      },
+      {
+        "label": "D",
+        "text": "Linear growth",
+        "isCorrect": false,
+        "explanation": "This describes exponential, not linear, growth, given the e^(kt) form."
+      }
+    ],
+    "explanation": "A positive k describes exponential growth, where y increases over time.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-24",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "medium",
+    "stem": "If $k < 0$ in the model $y = y_0e^{kt}$, what type of behavior does this describe?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Exponential decay (y decreases over time)",
+        "isCorrect": true,
+        "explanation": "A negative k causes y to decay exponentially as t increases."
+      },
+      {
+        "label": "B",
+        "text": "Exponential growth (y increases over time)",
+        "isCorrect": false,
+        "explanation": "A NEGATIVE k specifically corresponds to decay (decreasing y), not growth."
+      },
+      {
+        "label": "C",
+        "text": "No change in y over time",
+        "isCorrect": false,
+        "explanation": "A nonzero k value means y IS changing over time, not staying constant."
+      },
+      {
+        "label": "D",
+        "text": "Linear decay",
+        "isCorrect": false,
+        "explanation": "This describes exponential, not linear, decay, given the e^(kt) form."
+      }
+    ],
+    "explanation": "A negative k describes exponential decay, where y decreases over time.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-25",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "hard",
+    "stem": "A bacteria population starts at 500 and grows according to $dP/dt = 0.1P$ (t in hours). What is the population after 10 hours?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$500e \\approx 1359$",
+        "isCorrect": true,
+        "explanation": "P(t)=500e^(0.1t). At t=10: P(10)=500e^(0.1*10)=500e^1=500e."
+      },
+      {
+        "label": "B",
+        "text": "$500(0.1)(10) = 500$",
+        "isCorrect": false,
+        "explanation": "This incorrectly applies a LINEAR calculation rather than correctly using the exponential solution formula."
+      },
+      {
+        "label": "C",
+        "text": "$5000$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly apply the exponential growth formula with the given rate constant and time."
+      },
+      {
+        "label": "D",
+        "text": "$500 + e$",
+        "isCorrect": false,
+        "explanation": "This incorrectly ADDS e to 500 rather than correctly MULTIPLYING 500 by e^(kt)."
+      }
+    ],
+    "explanation": "$P(10) = 500e^{0.1(10)} = 500e \\approx 1359$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-26",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "medium",
+    "stem": "What is \"half-life,\" a concept commonly associated with exponential decay (e.g., radioactive substances)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The time required for a quantity to decrease to half of its initial value",
+        "isCorrect": true,
+        "explanation": "Half-life is the time it takes for a decaying quantity to reduce to half its original value."
+      },
+      {
+        "label": "B",
+        "text": "The time required for a quantity to double",
+        "isCorrect": false,
+        "explanation": "This describes something closer to a \"doubling time\" (associated with growth), the opposite concept from half-life."
+      },
+      {
+        "label": "C",
+        "text": "A quantity that never changes",
+        "isCorrect": false,
+        "explanation": "Half-life specifically describes an actively DECREASING/CHANGING quantity, not one that stays constant."
+      },
+      {
+        "label": "D",
+        "text": "The total lifespan of a radioactive substance until it completely disappears",
+        "isCorrect": false,
+        "explanation": "Radioactive decay technically never reaches exactly zero in the idealized model; half-life refers to reaching HALF the value."
+      }
+    ],
+    "explanation": "Half-life is the time required for a quantity to decrease to half of its initial value.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-27",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "medium",
+    "stem": "A radioactive substance has a half-life of 10 years. If you start with 80 grams, approximately how much remains after 20 years (two half-lives)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "20 grams",
+        "isCorrect": true,
+        "explanation": "After 1 half-life (10 yrs): 40g. After 2 half-lives (20 yrs): 20g."
+      },
+      {
+        "label": "B",
+        "text": "40 grams",
+        "isCorrect": false,
+        "explanation": "This is the amount remaining after only ONE half-life (10 years), not two half-lives (20 years)."
+      },
+      {
+        "label": "C",
+        "text": "60 grams",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly apply the halving process twice in succession."
+      },
+      {
+        "label": "D",
+        "text": "0 grams",
+        "isCorrect": false,
+        "explanation": "The substance doesn't completely disappear after two half-lives in this idealized exponential decay model."
+      }
+    ],
+    "explanation": "After two half-lives, the substance halves twice: 80 -> 40 -> 20 grams.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-28",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "medium",
+    "stem": "Newton's Law of Cooling states that the rate of change of an object's temperature is proportional to the difference between its temperature and the surrounding ambient temperature. Write this as a differential equation, where T is the object's temperature, $T_a$ is the (constant) ambient temperature, and k is a positive constant.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$dT/dt = -k(T - T_a)$",
+        "isCorrect": true,
+        "explanation": "This correctly captures both the proportionality to the temperature difference and the fact that T moves toward T_a."
+      },
+      {
+        "label": "B",
+        "text": "$dT/dt = k(T + T_a)$",
+        "isCorrect": false,
+        "explanation": "This incorrectly uses ADDITION rather than the required SUBTRACTION to represent the difference between temperatures."
+      },
+      {
+        "label": "C",
+        "text": "$dT/dt = kT_a$",
+        "isCorrect": false,
+        "explanation": "This doesn't correctly capture the proportional relationship to the TEMPERATURE DIFFERENCE, only referencing the ambient temperature alone."
+      },
+      {
+        "label": "D",
+        "text": "$dT/dt = -kT$",
+        "isCorrect": false,
+        "explanation": "This omits the ambient temperature T_a entirely, which is essential to correctly modeling this cooling relationship."
+      }
+    ],
+    "explanation": "Newton's Law of Cooling: $dT/dt = -k(T-T_a)$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-29",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "medium",
+    "stem": "In Newton's Law of Cooling, $dT/dt = -k(T-T_a)$, why is there a negative sign in front of k (assuming k>0)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Because if T > T_a (object warmer than surroundings), the object should be COOLING (T decreasing), requiring a negative rate",
+        "isCorrect": true,
+        "explanation": "The negative sign ensures the temperature moves toward, not away from, the ambient temperature."
+      },
+      {
+        "label": "B",
+        "text": "The negative sign has no particular meaning or purpose; it is only a convention of notation that could be dropped without changing the meaning of the equation",
+        "isCorrect": false,
+        "explanation": "The negative sign has a very specific, meaningful purpose: ensuring the temperature moves toward the ambient temperature."
+      },
+      {
+        "label": "C",
+        "text": "Because temperature can never be positive in this model, so the rate must carry a minus sign to compensate",
+        "isCorrect": false,
+        "explanation": "Temperature values can certainly be positive in most practical unit systems; this doesn't relate to the reason for the negative sign."
+      },
+      {
+        "label": "D",
+        "text": "Because k must always be negative for this to make sense, so the minus sign is part of the constant",
+        "isCorrect": false,
+        "explanation": "The problem specifies k as a POSITIVE constant; the negative sign is placed explicitly in front of it, rather than requiring k itself to be negative."
+      }
+    ],
+    "explanation": "The negative sign ensures that if T > T_a, the temperature decreases (cools) toward T_a, matching physical intuition.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-mcq-30",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "difficulty": "medium",
+    "stem": "Solve $dT/dt = -k(T-T_a)$ using separation of variables, leaving your answer in terms of an arbitrary constant A.",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$T = T_a + Ae^{-kt}$",
+        "isCorrect": true,
+        "explanation": "Separating: dT/(T-T_a) = -k dt. Integrating: ln|T-T_a| = -kt+C, so T-T_a = Ae^(-kt), giving T = T_a + Ae^(-kt)."
+      },
+      {
+        "label": "B",
+        "text": "$T = T_a - kt$",
+        "isCorrect": false,
+        "explanation": "This describes a linear relationship, not the exponential relationship that actually solves this differential equation."
+      },
+      {
+        "label": "C",
+        "text": "$T = Ae^{kt}$",
+        "isCorrect": false,
+        "explanation": "This omits the ambient temperature T_a entirely, and incorrectly uses a positive exponent kt instead of -kt."
+      },
+      {
+        "label": "D",
+        "text": "$T = T_a \\cdot Ae^{-kt}$",
+        "isCorrect": false,
+        "explanation": "This incorrectly multiplies T_a by the exponential term rather than correctly adding it as a separate constant term."
+      }
+    ],
+    "explanation": "Separating and integrating gives $T - T_a = Ae^{-kt}$, so $T = T_a + Ae^{-kt}$.",
+    "conceptLink": "ap-calc-bc/unit-7-differential-equations/exponential-growth-and-decay",
+    "reviewed": false
+  }
+]

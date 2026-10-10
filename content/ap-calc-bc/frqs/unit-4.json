@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ap-calcbc-u4-frq-1",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "related-rates",
+    "prompt": "Oil spills from a tanker in a circular pattern. The radius of the circle increases at a rate of $dr/dt = 3$ m/min. The area of the circle is $A = \\pi r^2$.\n\n**(a)** Find $dA/dt$ in terms of r.\n\n**(b)** Evaluate $dA/dt$ when $r = 10$ m.",
+    "pointValue": 3,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Correctly differentiates A=pi*r^2 with respect to time using the chain rule: dA/dt = 2*pi*r*(dr/dt)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Correctly substitutes dr/dt=3 to get dA/dt = 6*pi*r"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Correctly evaluates dA/dt at r=10 as 60*pi m²/min"
+      }
+    ],
+    "sampleResponse": "(a) Differentiating A = pi*r^2 with respect to t: dA/dt = 2*pi*r*(dr/dt).\n(b) Substituting dr/dt = 3: dA/dt = 2*pi*r*(3) = 6*pi*r. At r=10: dA/dt = 6*pi*(10) = 60*pi m²/min.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-frq-2",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "straight-line-motion",
+    "prompt": "A particle moves along the x-axis with position $x(t) = t^3 - 9t^2 + 24t$ for $t \\geq 0$.\n\n**(a)** Find the velocity $v(t)$.\n\n**(b)** Find all values of t where the particle is at rest.\n\n**(c)** Determine whether the particle is speeding up or slowing down at $t=1$.",
+    "pointValue": 4,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Correctly finds v(t) = 3t^2 - 18t + 24"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Correctly factors/solves to find t=2 and t=4 as the times the particle is at rest"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Correctly evaluates v(1)=9 and a(1)=-12"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "Correctly concludes the particle is slowing down at t=1, since v(1) and a(1) have opposite signs"
+      }
+    ],
+    "sampleResponse": "(a) v(t) = x'(t) = 3t^2 - 18t + 24.\n(b) Setting v(t)=0: 3t^2-18t+24=3(t^2-6t+8)=3(t-2)(t-4)=0, so t=2 or t=4.\n(c) v(1) = 3(1)-18(1)+24 = 9 (positive). a(t) = v'(t) = 6t-18, so a(1) = 6-18 = -12 (negative). Since v(1) and a(1) have opposite signs, the particle is slowing down at t=1.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u4-frq-3",
+    "unit": "unit-4-contextual-applications-of-differentiation",
+    "topic": "lhopitals-rule",
+    "prompt": "Evaluate $\\lim_{x \\to 0} \\dfrac{1-\\cos(x)}{x^2}$ using L'Hopital's Rule. Show each step, applying the rule as many times as necessary.",
+    "pointValue": 4,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Recognizes the original limit is in indeterminate form 0/0 and applies L'Hopital's Rule once: sin(x)/(2x)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Recognizes the new limit is STILL indeterminate (0/0) and applies L'Hopital's Rule a second time: cos(x)/2"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Correctly evaluates cos(0)/2 = 1/2"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "States the final answer as 1/2"
+      }
+    ],
+    "sampleResponse": "Direct substitution gives (1-cos(0))/0^2 = 0/0, an indeterminate form.\nApplying L'Hopital's Rule (differentiating numerator and denominator): lim_{x->0} sin(x)/(2x).\nSubstituting x=0 again gives sin(0)/0 = 0/0, still indeterminate, so apply L'Hopital's Rule again: lim_{x->0} cos(x)/2.\nNow substituting x=0: cos(0)/2 = 1/2.\nSo the limit equals 1/2.",
+    "reviewed": false
+  }
+]

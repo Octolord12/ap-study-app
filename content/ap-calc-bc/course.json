@@ -1,0 +1,24 @@
+{
+  "slug": "ap-calc-bc",
+  "name": "AP Calculus BC",
+  "description": "The full single-variable calculus sequence: everything in AB plus further integration techniques, parametric, polar and vector-valued functions, and infinite sequences and series, aligned to the College Board Course and Exam Description.",
+  "colorTheme": "violet",
+  "examFormat": {
+    "totalDurationMinutes": 190,
+    "sections": [
+      {
+        "type": "MCQ",
+        "questionCount": 42,
+        "durationMinutes": 100,
+        "scoreWeight": 0.5
+      },
+      {
+        "type": "FRQ",
+        "questionCount": 6,
+        "durationMinutes": 90,
+        "scoreWeight": 0.5,
+        "calculatorAllowed": true
+      }
+    ]
+  }
+}

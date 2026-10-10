@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ap-calcbc-u2-frq-4",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "sum-difference-product-quotient-rules",
+    "prompt": "**(a)** Let $q(x)=\\dfrac{4x^3-6x+\\sqrt{x}}{x^2}$. Rewrite $q$ as a sum of power functions, then find $q'(x)$. Do not use the quotient rule.\n\n**(b)** Find an equation of the tangent line, and an equation of the normal line, to the graph of $g(x)=2x^2-8x+5$ at the point $(3,-1)$.\n\n**(c)** Find all points on the graph of $p(x)=x^3-3x^2-9x+4$ at which the tangent line is horizontal.\n\n**(d)** Use the limit definition of the derivative to find $s'(t)$ for $s(t)=80t-5t^2$. Show each step of your work.",
+    "pointValue": 8,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Rewrites $q(x)=4x-6x^{-1}+x^{-3/2}$"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(a) Differentiates correctly: $q'(x)=4+6x^{-2}-\\frac32x^{-5/2}$"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(b) Finds $g'(3)=4$ and the tangent line $y+1=4(x-3)$"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(b) Uses slope $-\\frac14$ for the normal line: $y+1=-\\frac14(x-3)$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(c) Solves $p'(x)=3(x-3)(x+1)=0$ for $x=3$ and $x=-1$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(c) Gives both points with $y$-values: $(3,-23)$ and $(-1,9)$"
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "(d) Sets up $\\lim_{h\\to0}\\frac{s(t+h)-s(t)}{h}$ and expands correctly"
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "(d) Simplifies to $80-10t-5h$ and takes the limit to get $80-10t$"
+      }
+    ],
+    "sampleResponse": "(a) $q(x)=4x-6x^{-1}+x^{-3/2}$, so $q'(x)=4+6x^{-2}-\\frac32x^{-5/2}$.\n(b) $g'(x)=4x-8$, so $g'(3)=4$. Tangent: $y+1=4(x-3)$. Normal slope is $-\\frac14$: $y+1=-\\frac14(x-3)$.\n(c) $p'(x)=3x^2-6x-9=3(x-3)(x+1)$, which is 0 at $x=3$ and $x=-1$. $p(3)=27-27-27+4=-23$ and $p(-1)=-1-3+9+4=9$. The points are $(3,-23)$ and $(-1,9)$.\n(d) $s'(t)=\\lim_{h\\to0}\\frac{80(t+h)-5(t+h)^2-80t+5t^2}{h}=\\lim_{h\\to0}\\frac{80h-10th-5h^2}{h}=\\lim_{h\\to0}(80-10t-5h)=80-10t$.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u2-frq-5",
+    "unit": "unit-2-differentiation-definition-and-properties",
+    "topic": "derivative-definition-and-differentiability",
+    "prompt": "Let $f(x)=\\begin{cases}x^2-4x+7 & x<3\\\\ 2x-2 & x\\ge3\\end{cases}$.\n\n**(a)** Show that $f$ is continuous at $x=3$.\n\n**(b)** Find $\\lim_{x\\to3^-}f'(x)$ and $\\lim_{x\\to3^+}f'(x)$.\n\n**(c)** Is $f$ differentiable at $x=3$? Justify your answer using one-sided derivatives, and give an equation for the tangent line at $x=3$ if it exists.\n\n**(d)** Let $g(x)=\\begin{cases}x^2-4x+7 & x<3\\\\ mx+n & x\\ge3\\end{cases}$. Find the values of $m$ and $n$ for which $g$ is differentiable at $x=3$.",
+    "pointValue": 6,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "(a) Shows the left limit, right limit and $f(3)$ all equal 4"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "(b) Finds $f'(x)=2x-4$ for $x<3$ and $f'(x)=2$ for $x>3$, with both one-sided limits equal to 2"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "(c) Concludes $f$ is differentiable at 3 because it is continuous and the one-sided derivatives agree ($f'(3)=2$)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "(c) Gives the tangent line $y-4=2(x-3)$, that is $y=2x-2$"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "(d) Sets $m=g'(3^-)=2$"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "(d) Uses continuity to find $n=-2$"
+      }
+    ],
+    "sampleResponse": "(a) $\\lim_{x\\to3^-}f(x)=9-12+7=4$, $\\lim_{x\\to3^+}f(x)=6-2=4$ and $f(3)=2(3)-2=4$. All equal, so $f$ is continuous at 3.\n(b) For $x<3$, $f'(x)=2x-4\\to2$. For $x>3$, $f'(x)=2$. Both one-sided limits are 2.\n(c) $f$ is continuous at 3 and the left and right derivatives are both 2, so $f$ is differentiable at 3 with $f'(3)=2$. Tangent line: $y-4=2(x-3)$, i.e. $y=2x-2$.\n(d) The slope must match the left piece: $m=2(3)-4=2$. The pieces must meet: $3m+n=4$, so $n=4-6=-2$.",
+    "reviewed": false
+  }
+]

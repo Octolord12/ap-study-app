@@ -194,3 +194,22 @@ python3 record.py ap-calc edits.json                    # {"<question id>": "<th
 old text is unique in the course (PADW matches by text) and the new text is not already a choice. Calc, Physics 1 and CSA *hard* sets are
 skipped: they are generated with computed distractors and are almost entirely math or code, where length means nothing. Do not lengthen a
 code choice by renaming a variable; it would stand out from its siblings. 2026-10-09: 108 questions, shortest 3-12% -> 14.5-18.7%, longest unchanged.
+
+## AP Calculus BC
+
+`ap-calc-bc/` and `ap-calc-bc-refreshers/` build the sixth course (see "AP Calculus BC" in CLAUDE.md).
+
+- `ap-calc-bc/make_units.py` writes `course.json` and the ten unit files; `derive_from_ab.py` copies Calc AB's units 1-8 (questions, hard sets,
+  free-response prompts, refreshers) with new ids. Run them in that order, and never edit the copies.
+- `ap-calc-bc/lib.py` is a sympy-based `Bank` for the new items (`unit-N-bc.json`): `u6_bc.py`, `u7_bc.py`, `u8_bc.py` (BC-only topics in AB's units) and `u9_bc.py`,
+  `u10_bc.py` (whole units, each assembled from `u9_a/b/c/frq.py` and `u10_a/b/c/frq.py`). Every answer is computed in sympy with asserts; the polar-area setups are also
+  checked against a Cartesian grid count.
+- `ap-calc-bc-refreshers/u6.py` .. `u10.py` write the 23 new refreshers (units 6-8's go to `unit-N-bc.json`).
+- `display-widths.ts <course>` renders a course's refreshers so display-equation widths can be measured in the browser (its header lists the steps).
+- `render-audit.ts <course>` covers `*-hard.json` and `*-bc.json` files and the refreshers.
+
+```bash
+cd scripts/content-authoring/ap-calc-bc && python3 make_units.py && python3 derive_from_ab.py
+for u in 6 7 8 9 10; do python3 u${u}_bc.py | head -1; done
+cd ../ap-calc-bc-refreshers && for u in 6 7 8 9 10; do python3 u$u.py; done
+```

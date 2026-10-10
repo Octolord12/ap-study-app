@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "ap-calcbc-u9-mcq-1",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "easy",
+    "stem": "A curve is given by $x(t)=t^2$ and $y(t)=t^3$. What is $\\dfrac{dy}{dx}$ at $t=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$8$",
+        "isCorrect": false,
+        "explanation": "This subtracts the derivatives ($12-4$). The slope is their quotient."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{1}{3}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{dx/dt}{dy/dt}=\\frac{4}{12}$, the reciprocal of the slope."
+      },
+      {
+        "label": "C",
+        "text": "$12$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{dy}{dt}=3t^2$ at $t=2$. The slope divides by $\\frac{dx}{dt}$."
+      },
+      {
+        "label": "D",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=\\frac{dy/dt}{dx/dt}=\\frac{3t^2}{2t}=\\frac{3t}{2}$, which is 3 at $t=2$."
+      }
+    ],
+    "explanation": "For parametric equations, $\\frac{dy}{dx}=\\frac{dy/dt}{dx/dt}$ provided $\\frac{dx}{dt}\\ne0$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-2",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "easy",
+    "stem": "A curve is given by $x(t)=3\\cos t$ and $y(t)=2\\sin t$. What is $\\dfrac{dy}{dx}$ at $t=\\dfrac\\pi4$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$- \\frac{2}{3}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=\\frac{2\\cos t}{-3\\sin t}=-\\frac23\\cot t$. At $t=\\frac\\pi4$, $\\cot t=1$, so the slope is $-\\frac23$."
+      },
+      {
+        "label": "B",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "At $t=\\frac\\pi4$, $\\sin t=\\cos t$, so the ratio $\\frac{\\cos t}{\\sin t}$ is 1, but the coefficients 2 and 3 still matter."
+      },
+      {
+        "label": "C",
+        "text": "$- \\frac{3}{2}$",
+        "isCorrect": false,
+        "explanation": "This is the reciprocal: $\\frac{dx/dt}{dy/dt}$ rather than $\\frac{dy/dt}{dx/dt}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{2}{3}$",
+        "isCorrect": false,
+        "explanation": "$\\frac{dx}{dt}=-3\\sin t$ is negative. Leaving out the minus sign gives the wrong sign."
+      }
+    ],
+    "explanation": "Differentiate each coordinate with respect to $t$ and divide: the coefficients 2 and 3 stay in the quotient.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-3",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "medium",
+    "stem": "A curve is given by $x(t)=t^3-3t$ and $y(t)=t^2-4t$. At what value of $t$ does the curve have a horizontal tangent line?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "At $t=0$ the curve passes through the origin, but $\\frac{dy}{dt}=-4\\ne0$, so the tangent is not horizontal."
+      },
+      {
+        "label": "B",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "$t=4$ is where $y=0$. A horizontal tangent comes from $\\frac{dy}{dt}=0$, not from $y=0$."
+      },
+      {
+        "label": "C",
+        "text": "$t=-1$ and $t=1$",
+        "isCorrect": false,
+        "explanation": "At $t=\\pm1$, $\\frac{dx}{dt}=3t^2-3=0$ while $\\frac{dy}{dt}\\ne0$. Those are vertical tangents."
+      },
+      {
+        "label": "D",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "A horizontal tangent needs $\\frac{dy}{dt}=2t-4=0$, so $t=2$, and $\\frac{dx}{dt}=3t^2-3=9\\ne0$ there."
+      }
+    ],
+    "explanation": "The tangent is horizontal where $\\frac{dy}{dt}=0$ and $\\frac{dx}{dt}\\ne0$, and vertical where $\\frac{dx}{dt}=0$ and $\\frac{dy}{dt}\\ne0$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-4",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "medium",
+    "stem": "A curve is given by $x(t)=t^2-4t+1$ and $y(t)=t^3-3t$. At what value of $t$ does the curve have a vertical tangent line?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$t=-1$ and $t=1$",
+        "isCorrect": false,
+        "explanation": "At $t=\\pm1$, $\\frac{dy}{dt}=0$ while $\\frac{dx}{dt}\\ne0$. Those are horizontal tangents."
+      },
+      {
+        "label": "B",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "A vertical tangent needs $\\frac{dx}{dt}=2t-4=0$, so $t=2$, and $\\frac{dy}{dt}=3t^2-3=9\\ne0$ there."
+      },
+      {
+        "label": "C",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "$t=4$ gives $x=1$, but $\\frac{dx}{dt}=4\\ne0$ there."
+      },
+      {
+        "label": "D",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "$\\frac{dx}{dt}=-4$ at $t=0$, not 0."
+      }
+    ],
+    "explanation": "The tangent is vertical where $\\frac{dx}{dt}=0$ and $\\frac{dy}{dt}\\ne0$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-5",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "medium",
+    "stem": "A curve is given by $x(t)=t^2+1$ and $y(t)=t^3-t$. Which is an equation of the line tangent to the curve at $t=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y-6=\\frac{11}{4}(x-5)$",
+        "isCorrect": true,
+        "explanation": "At $t=2$ the point is $(5,6)$ and the slope is $\\frac{3t^2-1}{2t}=\\frac{11}{4}$."
+      },
+      {
+        "label": "B",
+        "text": "$y-6=11(x-5)$",
+        "isCorrect": false,
+        "explanation": "11 is $\\frac{dy}{dt}$ at $t=2$. The slope divides by $\\frac{dx}{dt}=4$."
+      },
+      {
+        "label": "C",
+        "text": "$y-5=\\frac{11}{4}(x-6)$",
+        "isCorrect": false,
+        "explanation": "The point is $(x,y)=(5,6)$. This swaps the coordinates."
+      },
+      {
+        "label": "D",
+        "text": "$y-6=\\frac{4}{11}(x-5)$",
+        "isCorrect": false,
+        "explanation": "This uses the reciprocal slope, $\\frac{dx/dt}{dy/dt}$."
+      }
+    ],
+    "explanation": "Find the point from $x(t_0),y(t_0)$, the slope from $\\frac{dy/dt}{dx/dt}$ at $t_0$, then use point-slope form.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-6",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "medium",
+    "stem": "A curve is given by $x(t)=t^2$ and $y(t)=t^3$ for $t>0$. What is $\\dfrac{d^2y}{dx^2}$ at $t=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{3}{2}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)$. The second derivative with respect to $x$ divides it by $\\frac{dx}{dt}$."
+      },
+      {
+        "label": "B",
+        "text": "$6$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{d^2y/dt^2}{d^2x/dt^2}$, which is not a valid formula for $\\frac{d^2y}{dx^2}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{3}{8}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=\\frac{3t}{2}$. Then $\\frac{d^2y}{dx^2}=\\frac{\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)}{dx/dt}=\\frac{3/2}{2t}=\\frac{3}{4t}$, which is $\\frac38$ at $t=2$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{3}{32}$",
+        "isCorrect": false,
+        "explanation": "This divides by $\\left(\\frac{dx}{dt}\\right)^2$ instead of $\\frac{dx}{dt}$."
+      }
+    ],
+    "explanation": "For $\\frac{d^2y}{dx^2}$: differentiate $\\frac{dy}{dx}$ with respect to $t$, then divide by $\\frac{dx}{dt}$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-7",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "medium",
+    "stem": "A curve is given by $x(t)=t^3$ and $y(t)=t^2$ for $t>0$. What is $\\dfrac{d^2y}{dx^2}$ at $t=1$, and what does its sign tell you?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-\\frac{2}{27}$, so the curve is concave down",
+        "isCorrect": false,
+        "explanation": "This divides by $\\left(\\frac{dx}{dt}\\right)^2$ instead of $\\frac{dx}{dt}$."
+      },
+      {
+        "label": "B",
+        "text": "$-\\frac29$, so the curve is concave down",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=\\frac{2t}{3t^2}=\\frac{2}{3t}$. Then $\\frac{d^2y}{dx^2}=\\frac{-\\frac{2}{3t^2}}{3t^2}=-\\frac{2}{9t^4}$, which is $-\\frac29$ at $t=1$. Negative means concave down."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac29$, so the curve is concave up",
+        "isCorrect": false,
+        "explanation": "The sign was lost: $\\frac{d}{dt}\\left(\\frac{2}{3t}\\right)=-\\frac{2}{3t^2}<0$."
+      },
+      {
+        "label": "D",
+        "text": "$-\\frac23$, so the curve is concave down",
+        "isCorrect": false,
+        "explanation": "$-\\frac23$ is $\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)$ at $t=1$. It must be divided by $\\frac{dx}{dt}=3t^2=3$."
+      }
+    ],
+    "explanation": "Concavity of a parametric curve is the sign of $\\frac{d^2y}{dx^2}=\\frac{d(dy/dx)/dt}{dx/dt}$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-8",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "easy",
+    "stem": "Which Cartesian equation describes the curve $x=2t-1$, $y=t^2+1$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y=\\frac{(x-1)^2}{4}+1$",
+        "isCorrect": false,
+        "explanation": "$x=2t-1$ gives $t=\\frac{x+1}{2}$, not $\\frac{x-1}{2}$."
+      },
+      {
+        "label": "B",
+        "text": "$y=(x+1)^2+1$",
+        "isCorrect": false,
+        "explanation": "$t=\\frac{x+1}{2}$, and squaring it gives $\\frac{(x+1)^2}{4}$. The 2 in the denominator is squared too."
+      },
+      {
+        "label": "C",
+        "text": "$y=\\frac{(x+1)^2}{4}+1$",
+        "isCorrect": true,
+        "explanation": "Solve $x=2t-1$ for $t$: $t=\\frac{x+1}{2}$. Then $y=\\left(\\frac{x+1}{2}\\right)^2+1$."
+      },
+      {
+        "label": "D",
+        "text": "$y=\\frac{x^2+1}{4}+1$",
+        "isCorrect": false,
+        "explanation": "Substituting into $t^2$ needs the whole expression $(x+1)$ squared, not $x^2+1$."
+      }
+    ],
+    "explanation": "Solve one equation for $t$ and substitute into the other.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-9",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "medium",
+    "stem": "A curve is given by $x(t)=\\sin t$ and $y(t)=\\cos2t$. What is $\\dfrac{dy}{dx}$ at $t=\\dfrac\\pi6$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-2$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=\\frac{-2\\sin2t}{\\cos t}$. At $t=\\frac\\pi6$: $\\frac{-2\\sin\\frac\\pi3}{\\cos\\frac\\pi6}=\\frac{-2\\cdot\\frac{\\sqrt3}{2}}{\\frac{\\sqrt3}{2}}=-2$."
+      },
+      {
+        "label": "B",
+        "text": "$- \\sqrt{3}$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{dy}{dt}=-2\\sin2t$ at $t=\\frac\\pi6$. The slope divides by $\\frac{dx}{dt}=\\cos t=\\frac{\\sqrt3}2$."
+      },
+      {
+        "label": "C",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "The sign was lost: $\\frac{dy}{dt}=-2\\sin2t$ is negative at $t=\\frac\\pi6$, and $\\frac{dx}{dt}=\\cos t$ is positive."
+      },
+      {
+        "label": "D",
+        "text": "$- \\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "This is the reciprocal of the slope."
+      }
+    ],
+    "explanation": "Chain rule for $\\cos2t$: $\\frac{d}{dt}\\cos2t=-2\\sin2t$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-10",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "hard",
+    "stem": "A curve is given by $x(t)=t^3-3t$ and $y(t)=t^4-4t^2$. For how many values of $t$ does the curve have a horizontal tangent line?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "$\\frac{dy}{dt}=4t\\left(t^2-2\\right)$ has three zeros, not four."
+      },
+      {
+        "label": "B",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "This adds the two values of $t$ where $\\frac{dx}{dt}=0$ ($t=\\pm1$). Those are vertical tangents, not horizontal."
+      },
+      {
+        "label": "C",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dt}=4t^3-8t=4t\\left(t^2-2\\right)=0$ at $t=0,\\pm\\sqrt2$. At each of these $\\frac{dx}{dt}=3t^2-3\\ne0$ (it is $-3$ and $3$), so all three give horizontal tangents."
+      },
+      {
+        "label": "D",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "This counts only $t=\\pm\\sqrt2$ and misses $t=0$, where $\\frac{dy}{dt}=0$ too."
+      }
+    ],
+    "explanation": "Solve $\\frac{dy}{dt}=0$ and then check that $\\frac{dx}{dt}\\ne0$ at each solution.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-11",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-derivatives",
+    "difficulty": "hard",
+    "stem": "A curve is given by $x(t)=2t$ and $y(t)=t^3-3t$. For $t>0$, at what value of $t$ is the slope of the tangent line equal to 12?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "This leaves out the division by $\\frac{dx}{dt}=2$ and also stops at $t^2=5$ without taking the square root."
+      },
+      {
+        "label": "B",
+        "text": "$9$",
+        "isCorrect": false,
+        "explanation": "$t^2=9$, so $t=3$. The square root has to be taken."
+      },
+      {
+        "label": "C",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dy}{dx}=\\frac{3t^2-3}{2}=12$ gives $3t^2=27$, so $t^2=9$ and $t=3$ for $t>0$."
+      },
+      {
+        "label": "D",
+        "text": "$\\sqrt{5}$",
+        "isCorrect": false,
+        "explanation": "This sets $3t^2-3=12$, leaving out the division by $\\frac{dx}{dt}=2$."
+      }
+    ],
+    "explanation": "Write $\\frac{dy}{dx}$ as a function of $t$, set it equal to 12 and solve.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-12",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-arc-length",
+    "difficulty": "easy",
+    "stem": "Which integral gives the length of the curve $x=t^2$, $y=t^3$ for $0\\le t\\le1$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\displaystyle\\int_0^1\\sqrt{t^4+t^6}\\,dt$",
+        "isCorrect": false,
+        "explanation": "This uses the coordinates $x$ and $y$ instead of their derivatives."
+      },
+      {
+        "label": "B",
+        "text": "$\\displaystyle\\int_0^1\\sqrt{4t^2+9t^4}\\,dt$",
+        "isCorrect": true,
+        "explanation": "The length is $\\int\\sqrt{\\left(\\frac{dx}{dt}\\right)^2+\\left(\\frac{dy}{dt}\\right)^2}dt$ with $\\frac{dx}{dt}=2t$ and $\\frac{dy}{dt}=3t^2$."
+      },
+      {
+        "label": "C",
+        "text": "$\\displaystyle\\int_0^1\\left(4t^2+9t^4\\right)dt$",
+        "isCorrect": false,
+        "explanation": "The sum of the squares needs a square root."
+      },
+      {
+        "label": "D",
+        "text": "$\\displaystyle\\int_0^1\\sqrt{2t+3t^2}\\,dt$",
+        "isCorrect": false,
+        "explanation": "The derivatives $2t$ and $3t^2$ must be squared under the root."
+      }
+    ],
+    "explanation": "Arc length of a parametric curve is the integral of the speed, $\\sqrt{(x')^2+(y')^2}$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-arc-length",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-13",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-arc-length",
+    "difficulty": "easy",
+    "stem": "What is the length of the curve $x=3t$, $y=4t$ for $0\\le t\\le2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$14$",
+        "isCorrect": false,
+        "explanation": "This adds the changes in the coordinates, $6+8$, instead of using the Pythagorean theorem."
+      },
+      {
+        "label": "B",
+        "text": "$10$",
+        "isCorrect": true,
+        "explanation": "$\\sqrt{3^2+4^2}=5$ is constant, so the length is $5\\cdot2=10$. (It is the segment from $(0,0)$ to $(6,8)$.)"
+      },
+      {
+        "label": "C",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "5 is the speed. Multiply by the length of the $t$-interval, 2."
+      },
+      {
+        "label": "D",
+        "text": "$50$",
+        "isCorrect": false,
+        "explanation": "This multiplies the sum of squares by the interval: $25\\cdot2$. The square root is missing."
+      }
+    ],
+    "explanation": "A straight line traversed at constant speed has length speed times time.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-arc-length",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-14",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-arc-length",
+    "difficulty": "medium",
+    "stem": "What is the length of the curve $x=2\\cos t$, $y=2\\sin t$ for $0\\le t\\le\\pi$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$4 \\pi$",
+        "isCorrect": false,
+        "explanation": "That is the full circle, the length for $0\\le t\\le2\\pi$."
+      },
+      {
+        "label": "B",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "4 is the diameter, the straight-line distance between the endpoints $(2,0)$ and $(-2,0)$, not the length along the arc."
+      },
+      {
+        "label": "C",
+        "text": "$2 \\pi$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dx}{dt}=-2\\sin t$ and $\\frac{dy}{dt}=2\\cos t$, so the speed is $\\sqrt{4\\sin^2t+4\\cos^2t}=2$. The length is $2\\cdot\\pi=2\\pi$ (half of a circle of radius 2)."
+      },
+      {
+        "label": "D",
+        "text": "$\\pi$",
+        "isCorrect": false,
+        "explanation": "The speed is 2, not 1. The length is the speed times the interval length."
+      }
+    ],
+    "explanation": "The speed on a circle of radius $r$ with parameter $t$ is $r$, so the length is $r\\cdot(\\text{change in }t)$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-arc-length",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-15",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-arc-length",
+    "difficulty": "medium",
+    "stem": "What is the length of the curve $x=3t^2$, $y=2t^3$ for $0\\le t\\le1$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$-2 + 4 \\sqrt{2}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dx}{dt}=6t$, $\\frac{dy}{dt}=6t^2$. The integrand is $\\sqrt{36t^2+36t^4}=6t\\sqrt{1+t^2}$. With $u=1+t^2$: $\\int_0^16t\\sqrt{1+t^2}\\,dt=2(1+t^2)^{3/2}\\Big|_0^1=2\\left(2\\sqrt2-1\\right)$."
+      },
+      {
+        "label": "B",
+        "text": "$- \\frac{1}{3} + \\frac{2 \\sqrt{2}}{3}$",
+        "isCorrect": false,
+        "explanation": "The factor 6 from $6t$ was dropped."
+      },
+      {
+        "label": "C",
+        "text": "$-6 + 12 \\sqrt{2}$",
+        "isCorrect": false,
+        "explanation": "$\\int6t\\sqrt{1+t^2}\\,dt=6\\cdot\\frac13(1+t^2)^{3/2}$, where $\\frac13=\\frac23\\cdot\\frac12$ comes from integrating $u^{1/2}$ and from $du=2t\\,dt$. This leaves out the $\\frac13$."
+      },
+      {
+        "label": "D",
+        "text": "$4 \\sqrt{2}$",
+        "isCorrect": false,
+        "explanation": "This is the antiderivative at $t=1$ only. At $t=0$ it equals 2, which must be subtracted."
+      }
+    ],
+    "explanation": "Factor the integrand: $\\sqrt{36t^2+36t^4}=6t\\sqrt{1+t^2}$, then use $u=1+t^2$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-arc-length",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-16",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-arc-length",
+    "difficulty": "medium",
+    "stem": "A graphing calculator is allowed. What is the length of the curve $x=e^t$, $y=t$ for $0\\le t\\le1$, to three decimal places?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2.003$",
+        "isCorrect": true,
+        "explanation": "The length is $\\int_0^1\\sqrt{e^{2t}+1}\\,dt\\approx2.003$."
+      },
+      {
+        "label": "B",
+        "text": "$2.718$",
+        "isCorrect": false,
+        "explanation": "This integrates $|x'|+|y'|=e^t+1$ and gets $e\\approx2.718$. Speed is $\\sqrt{(x')^2+(y')^2}$, not the sum."
+      },
+      {
+        "label": "C",
+        "text": "$1.796$",
+        "isCorrect": false,
+        "explanation": "This integrates $\\sqrt{x^2+y^2}$ ($\\approx1.796$), the distance from the origin, not the speed."
+      },
+      {
+        "label": "D",
+        "text": "$1.718$",
+        "isCorrect": false,
+        "explanation": "This leaves out the $y'=1$ term under the root, integrating $e^t$ ($\\approx1.718$)."
+      }
+    ],
+    "explanation": "Set up $\\int_0^1\\sqrt{\\left(\\frac{dx}{dt}\\right)^2+\\left(\\frac{dy}{dt}\\right)^2}\\,dt$ and evaluate it with the calculator. Write the setup as well as the result.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-arc-length",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-17",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-arc-length",
+    "difficulty": "hard",
+    "stem": "One arch of a cycloid is given by $x=t-\\sin t$, $y=1-\\cos t$ for $0\\le t\\le2\\pi$. What is its length?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$8$",
+        "isCorrect": true,
+        "explanation": "$\\left(\\frac{dx}{dt}\\right)^2+\\left(\\frac{dy}{dt}\\right)^2=(1-\\cos t)^2+\\sin^2t=2-2\\cos t=4\\sin^2\\frac t2$, so the speed is $2\\sin\\frac t2$ (positive on $[0,2\\pi]$). The length is $\\left[-4\\cos\\frac t2\\right]_0^{2\\pi}=4-(-4)=8$."
+      },
+      {
+        "label": "B",
+        "text": "$16$",
+        "isCorrect": false,
+        "explanation": "The antiderivative of $2\\sin\\frac t2$ is $-4\\cos\\frac t2$. Using $-8\\cos\\frac t2$ would double the result."
+      },
+      {
+        "label": "C",
+        "text": "$2 \\pi$",
+        "isCorrect": false,
+        "explanation": "$2\\pi$ is the width of the arch, $x(2\\pi)-x(0)$. The arch is longer than its base."
+      },
+      {
+        "label": "D",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "This is the antiderivative at $t=2\\pi$ only. At $t=0$ it equals $-4$."
+      }
+    ],
+    "explanation": "Use the identity $1-\\cos t=2\\sin^2\\frac t2$ to turn $2-2\\cos t$ into a perfect square.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-arc-length",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-18",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-arc-length",
+    "difficulty": "hard",
+    "stem": "What is the length of the curve $x=t^3$, $y=\\frac32t^2$ for $0\\le t\\le\\sqrt3$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{7}{3}$",
+        "isCorrect": false,
+        "explanation": "The factor 3 from $3t$ was dropped."
+      },
+      {
+        "label": "B",
+        "text": "$7$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dx}{dt}=3t^2$, $\\frac{dy}{dt}=3t$. The integrand is $\\sqrt{9t^4+9t^2}=3t\\sqrt{t^2+1}$. With $u=t^2+1$, $\\int3t\\sqrt{t^2+1}\\,dt=\\left(t^2+1\\right)^{3/2}$. From $0$ to $\\sqrt3$: $8-1=7$."
+      },
+      {
+        "label": "C",
+        "text": "$8$",
+        "isCorrect": false,
+        "explanation": "This is the antiderivative at the upper limit only; at $t=0$ it is 1."
+      },
+      {
+        "label": "D",
+        "text": "$14$",
+        "isCorrect": false,
+        "explanation": "$\\int3t\\sqrt{t^2+1}\\,dt$ with $du=2t\\,dt$ gives $\\frac32\\int u^{1/2}du=\\left(t^2+1\\right)^{3/2}$. Omitting the $\\frac12$ from $du=2t\\,dt$ doubles it."
+      }
+    ],
+    "explanation": "Factor $3t$ out of the root, then substitute $u=t^2+1$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-arc-length",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-19",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "parametric-arc-length",
+    "difficulty": "medium",
+    "stem": "What is the length of the curve $x=\\frac{t^2}{2}$, $y=\\frac{t^3}{3}$ for $0\\le t\\le\\sqrt3$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{7}{3}$",
+        "isCorrect": true,
+        "explanation": "$\\frac{dx}{dt}=t$, $\\frac{dy}{dt}=t^2$, so the speed is $\\sqrt{t^2+t^4}=t\\sqrt{1+t^2}$. Then $\\int_0^{\\sqrt3}t\\sqrt{1+t^2}\\,dt=\\frac13\\left(1+t^2\\right)^{3/2}\\Big|_0^{\\sqrt3}=\\frac13(8-1)=\\frac73$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{14}{9}$",
+        "isCorrect": false,
+        "explanation": "$\\int t\\sqrt{1+t^2}\\,dt=\\frac12\\cdot\\frac23(1+t^2)^{3/2}=\\frac13(1+t^2)^{3/2}$. Using $\\frac23\\cdot\\frac13$ gives $\\frac29(\\ldots)$."
+      },
+      {
+        "label": "C",
+        "text": "$7$",
+        "isCorrect": false,
+        "explanation": "The antiderivative is $\\frac13(1+t^2)^{3/2}$. Without the $\\frac13$ the value is 7."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{8}{3}$",
+        "isCorrect": false,
+        "explanation": "This is the value of the antiderivative at the upper limit only."
+      }
+    ],
+    "explanation": "The speed simplifies: $\\sqrt{t^2+t^4}=t\\sqrt{1+t^2}$ for $t\\ge0$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/parametric-arc-length",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-20",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "easy",
+    "stem": "A particle's position is $\\vec r(t)=\\langle t^2,\\sin t\\rangle$. What is its velocity vector at $t=\\pi$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\langle 2 \\pi, -1 \\rangle$",
+        "isCorrect": true,
+        "explanation": "$\\vec v(t)=\\vec r\\,'(t)=\\langle2t,\\cos t\\rangle$, and at $t=\\pi$ this is $\\langle2\\pi,-1\\rangle$."
+      },
+      {
+        "label": "B",
+        "text": "$\\langle 2, -1 \\rangle$",
+        "isCorrect": false,
+        "explanation": "The derivative of $t^2$ is $2t$, which is $2\\pi$ at $t=\\pi$."
+      },
+      {
+        "label": "C",
+        "text": "$\\langle 2 \\pi, 1 \\rangle$",
+        "isCorrect": false,
+        "explanation": "$\\frac{d}{dt}\\sin t=\\cos t$, and $\\cos\\pi=-1$."
+      },
+      {
+        "label": "D",
+        "text": "$\\langle \\pi^{2}, 0 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This is the position $\\vec r(\\pi)$, not the velocity."
+      }
+    ],
+    "explanation": "Velocity is the derivative of the position vector, taken component by component.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-21",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "easy",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle3t^2,2t\\rangle$. What is its speed at $t=1$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\sqrt{5}$",
+        "isCorrect": false,
+        "explanation": "This evaluates the components at $t=1$ as $1$ and $2$: $\\sqrt{1^2+2^2}$. At $t=1$, $3t^2=3$."
+      },
+      {
+        "label": "B",
+        "text": "$5$",
+        "isCorrect": false,
+        "explanation": "This adds the components, $3+2$. The magnitude uses the Pythagorean theorem."
+      },
+      {
+        "label": "C",
+        "text": "$\\sqrt{13}$",
+        "isCorrect": true,
+        "explanation": "Speed is the magnitude of velocity: $\\sqrt{3^2+2^2}=\\sqrt{13}$ at $t=1$."
+      },
+      {
+        "label": "D",
+        "text": "$13$",
+        "isCorrect": false,
+        "explanation": "This is the sum of squares. Speed is its square root."
+      }
+    ],
+    "explanation": "Speed is $|\\vec v|=\\sqrt{(x')^2+(y')^2}$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-22",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "medium",
+    "stem": "A particle's position is $\\vec r(t)=\\langle t^3,e^{2t}\\rangle$. What is its acceleration vector at $t=0$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\langle 0, 2 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This is the velocity at $t=0$, $\\langle3t^2,2e^{2t}\\rangle$. Acceleration needs a second derivative."
+      },
+      {
+        "label": "B",
+        "text": "$\\langle 0, 1 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This is the position at $t=0$, $\\langle0^3,e^0\\rangle$. Each derivative of $e^{2t}$ multiplies by 2, so differentiating twice gives $4e^{2t}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\langle 0, 4 \\rangle$",
+        "isCorrect": true,
+        "explanation": "$\\vec a=\\vec r\\,''=\\langle6t,4e^{2t}\\rangle$, which is $\\langle0,4\\rangle$ at $t=0$."
+      },
+      {
+        "label": "D",
+        "text": "$\\langle 6, 4 \\rangle$",
+        "isCorrect": false,
+        "explanation": "The $x$-component is $6t$, which is 0 at $t=0$."
+      }
+    ],
+    "explanation": "Acceleration is the second derivative of position, taken component by component.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-23",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "medium",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle2t,\\cos t\\rangle$ and its position at $t=0$ is $\\langle1,2\\rangle$. What is its position at $t=\\dfrac\\pi2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\langle 1 + \\pi, 3 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This evaluates the velocity component $2t$ at $t=\\frac\\pi2$ (which is $\\pi$) instead of integrating it. The antiderivative of $2t$ is $t^2$, which is $\\frac{\\pi^2}{4}$ there."
+      },
+      {
+        "label": "B",
+        "text": "$\\langle 1 + \\frac{\\pi^{2}}{4}, 3 \\rangle$",
+        "isCorrect": true,
+        "explanation": "Integrate each component: $x(t)=t^2+C_1$ with $x(0)=1$ gives $x=t^2+1$; $y(t)=\\sin t+C_2$ with $y(0)=2$ gives $y=\\sin t+2$. At $t=\\frac\\pi2$: $\\left\\langle\\frac{\\pi^2}{4}+1,3\\right\\rangle$."
+      },
+      {
+        "label": "C",
+        "text": "$\\langle 1 + \\frac{\\pi^{2}}{4}, 1 \\rangle$",
+        "isCorrect": false,
+        "explanation": "The $y$-component also needs its initial value: $y(t)=\\sin t+2$."
+      },
+      {
+        "label": "D",
+        "text": "$\\langle \\frac{\\pi^{2}}{4}, 1 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This leaves out the initial position, so both constants of integration are missing."
+      }
+    ],
+    "explanation": "Integrate the velocity components and use the initial position to find the constants.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-24",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "easy",
+    "stem": "What is $\\displaystyle\\int_0^1\\langle3t^2,2t\\rangle\\,dt$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\langle 3, 2 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This evaluates the integrand at $t=1$. The integral of each component is the antiderivative evaluated at 1 minus at 0."
+      },
+      {
+        "label": "B",
+        "text": "$\\langle 3, 1 \\rangle$",
+        "isCorrect": false,
+        "explanation": "$\\int_0^13t^2dt=\\left[t^3\\right]_0^1=1$, not 3."
+      },
+      {
+        "label": "C",
+        "text": "$\\langle 1, 2 \\rangle$",
+        "isCorrect": false,
+        "explanation": "$\\int_0^12t\\,dt=\\left[t^2\\right]_0^1=1$, not 2."
+      },
+      {
+        "label": "D",
+        "text": "$\\langle 1, 1 \\rangle$",
+        "isCorrect": true,
+        "explanation": "Integrate each component over $[0,1]$: $\\int_0^13t^2dt=1$ and $\\int_0^12t\\,dt=1$."
+      }
+    ],
+    "explanation": "A vector-valued function is integrated one component at a time.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-25",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "medium",
+    "stem": "A particle's position is $\\vec r(t)=\\langle e^t,t^2\\rangle$. What is its velocity at $t=\\ln2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\langle 2, \\ln{\\left(2 \\right)} \\rangle$",
+        "isCorrect": false,
+        "explanation": "The derivative of $t^2$ is $2t$, so the second component is $2\\ln2$."
+      },
+      {
+        "label": "B",
+        "text": "$\\langle 2, \\ln{\\left(2 \\right)}^{2} \\rangle$",
+        "isCorrect": false,
+        "explanation": "This is the position $\\langle e^{\\ln2},(\\ln2)^2\\rangle$, not the velocity."
+      },
+      {
+        "label": "C",
+        "text": "$\\langle 2, 2 \\ln{\\left(2 \\right)} \\rangle$",
+        "isCorrect": true,
+        "explanation": "$\\vec v=\\langle e^t,2t\\rangle$, so at $t=\\ln2$ it is $\\langle2,2\\ln2\\rangle$."
+      },
+      {
+        "label": "D",
+        "text": "$\\langle \\ln{\\left(2 \\right)}, 2 \\ln{\\left(2 \\right)} \\rangle$",
+        "isCorrect": false,
+        "explanation": "$e^t$ is its own derivative, and $e^{\\ln2}=2$, not $\\ln2$."
+      }
+    ],
+    "explanation": "Differentiate component by component, then substitute $t=\\ln2$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-26",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "medium",
+    "stem": "What is $\\displaystyle\\lim_{t\\to0}\\left\\langle\\frac{\\sin t}{t},\\frac{1-\\cos t}{t}\\right\\rangle$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\langle 0, 0 \\rangle$",
+        "isCorrect": false,
+        "explanation": "The first component is the standard limit $\\frac{\\sin t}{t}\\to1$, not 0."
+      },
+      {
+        "label": "B",
+        "text": "$\\langle 1, 1 \\rangle$",
+        "isCorrect": false,
+        "explanation": "$\\frac{1-\\cos t}{t}\\to0$: the numerator approaches 0 faster than the denominator."
+      },
+      {
+        "label": "C",
+        "text": "The limit does not exist",
+        "isCorrect": false,
+        "explanation": "A limit of a vector-valued function exists when each component has a limit, and both do here."
+      },
+      {
+        "label": "D",
+        "text": "$\\langle 1, 0 \\rangle$",
+        "isCorrect": true,
+        "explanation": "Take each limit separately: $\\lim\\frac{\\sin t}{t}=1$, and $\\lim\\frac{1-\\cos t}{t}=0$ (by L'Hospital's Rule, $\\lim\\frac{\\sin t}{1}=0$)."
+      }
+    ],
+    "explanation": "The limit of a vector-valued function is the vector of the limits of its components.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-27",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "hard",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle3t^2-3,2t\\rangle$. At which times is the particle moving straight up or straight down?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$t=-\\sqrt3$ and $t=\\sqrt3$",
+        "isCorrect": false,
+        "explanation": "These satisfy $t^2-3=0$. The condition is $3t^2-3=0$, that is, $t^2=1$."
+      },
+      {
+        "label": "B",
+        "text": "$t=-1$ and $t=1$",
+        "isCorrect": true,
+        "explanation": "The velocity is vertical when its $x$-component is 0 and its $y$-component is not: $3t^2-3=0$ gives $t=\\pm1$, and there $2t=\\pm2\\ne0$."
+      },
+      {
+        "label": "C",
+        "text": "$t=1$ only",
+        "isCorrect": false,
+        "explanation": "$3t^2-3=0$ has two solutions, $t=1$ and $t=-1$, and the $y$-component is nonzero at both."
+      },
+      {
+        "label": "D",
+        "text": "$t=0$ only",
+        "isCorrect": false,
+        "explanation": "At $t=0$ the $y$-component is 0, so the velocity is $\\langle-3,0\\rangle$, which is horizontal."
+      }
+    ],
+    "explanation": "Vertical motion means $x'(t)=0$ with $y'(t)\\ne0$; horizontal motion means $y'(t)=0$ with $x'(t)\\ne0$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-28",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "hard",
+    "stem": "A particle moves with velocity $\\vec v(t)=\\langle2t,3t^2\\rangle$ and has position $\\langle1,-1\\rangle$ at $t=0$. What is its position at $t=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\langle 5, 8 \\rangle$",
+        "isCorrect": false,
+        "explanation": "The initial $y$-coordinate is $-1$, so $8+(-1)=7$."
+      },
+      {
+        "label": "B",
+        "text": "$\\langle 5, 7 \\rangle$",
+        "isCorrect": true,
+        "explanation": "The change in position is $\\int_0^2\\langle2t,3t^2\\rangle dt=\\langle4,8\\rangle$. Adding the initial position gives $\\langle1+4,-1+8\\rangle=\\langle5,7\\rangle$."
+      },
+      {
+        "label": "C",
+        "text": "$\\langle 4, 12 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This evaluates the velocity at $t=2$. Position needs the integral, not the velocity."
+      },
+      {
+        "label": "D",
+        "text": "$\\langle 4, 8 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This is the displacement from $t=0$ to $t=2$. The initial position $\\langle1,-1\\rangle$ must be added."
+      }
+    ],
+    "explanation": "Position at time $t$ is the initial position plus the integral of velocity: $\\vec r(t)=\\vec r(0)+\\int_0^t\\vec v(s)\\,ds$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-29",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "vector-valued-functions",
+    "difficulty": "hard",
+    "stem": "A particle's position is $\\vec r(t)=\\langle\\cos2t,\\sin2t\\rangle$. What is the magnitude of its acceleration?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "1 is the magnitude of the position vector, the radius of the circle."
+      },
+      {
+        "label": "B",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "2 is the particle's speed, the magnitude of the velocity $\\langle-2\\sin2t,2\\cos2t\\rangle$."
+      },
+      {
+        "label": "C",
+        "text": "$4$",
+        "isCorrect": true,
+        "explanation": "$\\vec a=\\vec r\\,''=\\langle-4\\cos2t,-4\\sin2t\\rangle$, whose magnitude is $4\\sqrt{\\cos^22t+\\sin^22t}=4$."
+      },
+      {
+        "label": "D",
+        "text": "$8$",
+        "isCorrect": false,
+        "explanation": "Each derivative of $\\cos2t$ multiplies by 2, so two derivatives multiply by $2^2=4$, not 8."
+      }
+    ],
+    "explanation": "Differentiate twice, then take the magnitude. Each derivative of $\\cos2t$ or $\\sin2t$ brings out a factor of 2.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/vector-valued-functions",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-30",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "easy",
+    "stem": "A particle moves in the plane with velocity $\\vec v(t)=\\langle2t,t^2-1\\rangle$ for $t\\ge0$. What is the particle's speed at $t=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$25$",
+        "isCorrect": false,
+        "explanation": "This is the sum of squares. Speed is its square root."
+      },
+      {
+        "label": "B",
+        "text": "$\\sqrt{3}$",
+        "isCorrect": false,
+        "explanation": "At $t=2$ the components are $\\langle4,3\\rangle$, not $\\langle2,1\\rangle$."
+      },
+      {
+        "label": "C",
+        "text": "$5$",
+        "isCorrect": true,
+        "explanation": "Speed $=\\sqrt{(2t)^2+(t^2-1)^2}=\\sqrt{4t^2+t^4-2t^2+1}=t^2+1$, which is 5 at $t=2$. (Directly: $\\sqrt{4^2+3^2}=5$.)"
+      },
+      {
+        "label": "D",
+        "text": "$7$",
+        "isCorrect": false,
+        "explanation": "This adds the absolute values of the components, $4+3$."
+      }
+    ],
+    "explanation": "Evaluate the velocity components first, then find the length of the vector.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-31",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "medium",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle t^2-4,t\\rangle$. At $t=1$, is the particle speeding up or slowing down?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Speeding up, because both components of the acceleration are positive",
+        "isCorrect": false,
+        "explanation": "The signs of $\\vec a$ alone do not decide this; what matters is whether $\\vec a$ points with or against $\\vec v$. The dot product is $-5$."
+      },
+      {
+        "label": "B",
+        "text": "Slowing down, because the $x$-component of the velocity is negative",
+        "isCorrect": false,
+        "explanation": "The conclusion is right, but not for this reason: a negative velocity component only says the particle is moving left. The test is $\\vec v\\cdot\\vec a<0$."
+      },
+      {
+        "label": "C",
+        "text": "Speeding up, because the $y$-component of the velocity is positive",
+        "isCorrect": false,
+        "explanation": "One component being positive does not mean the speed is increasing. Use $\\vec v\\cdot\\vec a$."
+      },
+      {
+        "label": "D",
+        "text": "Slowing down, because $\\vec v\\cdot\\vec a<0$",
+        "isCorrect": true,
+        "explanation": "At $t=1$: $\\vec v=\\langle-3,1\\rangle$ and $\\vec a=\\langle2t,1\\rangle=\\langle2,1\\rangle$. Then $\\vec v\\cdot\\vec a=-6+1=-5<0$, so the speed is decreasing."
+      }
+    ],
+    "explanation": "The speed increases when $\\vec v\\cdot\\vec a>0$ and decreases when $\\vec v\\cdot\\vec a<0$: the acceleration has a component along, or against, the velocity.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-32",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "medium",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle t-2,3-t\\rangle$ for $t\\ge0$. For which values of $t$ is the particle moving to the right and downward?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2<t<3$",
+        "isCorrect": false,
+        "explanation": "In this interval $y'=3-t>0$: the particle is moving right and upward."
+      },
+      {
+        "label": "B",
+        "text": "$t>3$",
+        "isCorrect": true,
+        "explanation": "Moving right means $x'=t-2>0$, so $t>2$. Moving down means $y'=3-t<0$, so $t>3$. Both hold for $t>3$."
+      },
+      {
+        "label": "C",
+        "text": "$t<2$",
+        "isCorrect": false,
+        "explanation": "For $t<2$ the $x$-component is negative: the particle is moving left."
+      },
+      {
+        "label": "D",
+        "text": "$t>2$",
+        "isCorrect": false,
+        "explanation": "For $2<t<3$ the particle is moving right but $y'=3-t>0$, so it is moving up."
+      }
+    ],
+    "explanation": "Right/left is the sign of $x'$; up/down is the sign of $y'$. Find where both conditions hold.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-33",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "medium",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle2t,t^2-1\\rangle$ for $t\\ge0$. What is the total distance it travels from $t=0$ to $t=3$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$10$",
+        "isCorrect": false,
+        "explanation": "This is the speed at $t=3$. The distance is the integral of the speed."
+      },
+      {
+        "label": "B",
+        "text": "$3 \\sqrt{13}$",
+        "isCorrect": false,
+        "explanation": "This is the length of the displacement vector $\\langle9,6\\rangle$, the straight-line distance between the start and the end. The path is curved, so it is longer."
+      },
+      {
+        "label": "C",
+        "text": "$12$",
+        "isCorrect": true,
+        "explanation": "The speed is $\\sqrt{4t^2+(t^2-1)^2}=t^2+1$. Total distance is $\\int_0^3\\left(t^2+1\\right)dt=\\left[\\frac{t^3}{3}+t\\right]_0^3=12$."
+      },
+      {
+        "label": "D",
+        "text": "$15$",
+        "isCorrect": false,
+        "explanation": "This adds the components of the displacement, $9+6$."
+      }
+    ],
+    "explanation": "Distance traveled is $\\int\\sqrt{(x')^2+(y')^2}\\,dt$. Look for a perfect square under the root.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-34",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "medium",
+    "stem": "A graphing calculator is allowed. A particle moves in the plane with velocity $\\vec v(t)=\\langle\\cos\\left(t^2\\right),\\sin t\\rangle$. To three decimal places, what total distance does it travel from $t=0$ to $t=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1.120$",
+        "isCorrect": false,
+        "explanation": "This is the speed at $t=2$ ($\\approx1.120$), not the total distance."
+      },
+      {
+        "label": "B",
+        "text": "$2.207$",
+        "isCorrect": true,
+        "explanation": "The distance is $\\int_0^2\\sqrt{\\cos^2\\left(t^2\\right)+\\sin^2t}\\,dt\\approx2.207$."
+      },
+      {
+        "label": "C",
+        "text": "$1.489$",
+        "isCorrect": false,
+        "explanation": "This is the magnitude of the displacement ($\\approx1.489$), the straight-line distance from start to finish, which is not the distance traveled."
+      },
+      {
+        "label": "D",
+        "text": "$2.910$",
+        "isCorrect": false,
+        "explanation": "This integrates $|x'|+|y'|$ ($\\approx2.910$). Speed is $\\sqrt{(x')^2+(y')^2}$."
+      }
+    ],
+    "explanation": "Total distance is the integral of speed. Write the integral, then evaluate it numerically.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-35",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "hard",
+    "stem": "A particle has acceleration $\\vec a(t)=\\langle2,6t\\rangle$, velocity $\\langle1,0\\rangle$ and position $\\langle0,1\\rangle$ at $t=0$. What is its position at $t=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\langle 5, 9 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This adds the initial velocity 1 to the position as a constant. The initial velocity is added to the velocity ($2t+1$), so it integrates to $t$ and contributes $+t$ to the position, not $+1$."
+      },
+      {
+        "label": "B",
+        "text": "$\\langle 6, 9 \\rangle$",
+        "isCorrect": true,
+        "explanation": "Integrating: $\\vec v=\\langle2t+1,3t^2\\rangle$. Integrating again: $\\vec r=\\langle t^2+t,t^3+1\\rangle$. At $t=2$: $\\langle6,9\\rangle$."
+      },
+      {
+        "label": "C",
+        "text": "$\\langle 6, 8 \\rangle$",
+        "isCorrect": false,
+        "explanation": "The initial position $\\langle0,1\\rangle$ adds 1 to the $y$-component."
+      },
+      {
+        "label": "D",
+        "text": "$\\langle 4, 8 \\rangle$",
+        "isCorrect": false,
+        "explanation": "This leaves out both constants: the initial velocity adds $t$ to the $x$-component and the initial position adds 1 to the $y$-component."
+      }
+    ],
+    "explanation": "Integrate twice, using the initial velocity after the first integration and the initial position after the second.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-36",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "hard",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle2t-4,3\\rangle$ for $t\\ge0$. At what time is the particle's speed least?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "At $t=0$ the speed is $\\sqrt{16+9}=5$, larger than at $t=2$."
+      },
+      {
+        "label": "B",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "Speed$^2=(2t-4)^2+9$ is smallest when $2t-4=0$, that is, at $t=2$, where the speed is 3."
+      },
+      {
+        "label": "C",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "At $t=4$ the $x$-component is $4$ and the speed is 5, the same as at $t=0$."
+      },
+      {
+        "label": "D",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "At $t=3$ the velocity is $\\langle2,3\\rangle$ and the speed is $\\sqrt{13}\\approx3.6$, more than the speed 3 at $t=2$. The 3 here is the constant $y$-component, not a time."
+      }
+    ],
+    "explanation": "Minimize the speed by minimizing its square: here only the first component varies.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-37",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "hard",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle e^t\\cos t,e^t\\sin t\\rangle$. What is the total distance it travels from $t=0$ to $t=\\ln3$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3$",
+        "isCorrect": false,
+        "explanation": "This is the speed at $t=\\ln3$, $e^{\\ln3}$. Distance is the integral of speed; the lower limit contributes $-1$."
+      },
+      {
+        "label": "B",
+        "text": "$\\ln{\\left(3 \\right)}$",
+        "isCorrect": false,
+        "explanation": "This is the length of the time interval."
+      },
+      {
+        "label": "C",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "The speed is $\\sqrt{e^{2t}\\cos^2t+e^{2t}\\sin^2t}=e^t$. Then $\\int_0^{\\ln3}e^t\\,dt=3-1=2$."
+      },
+      {
+        "label": "D",
+        "text": "$4$",
+        "isCorrect": false,
+        "explanation": "This adds the values at the endpoints instead of subtracting: $e^{\\ln3}+e^0=4$."
+      }
+    ],
+    "explanation": "Speed simplifies to $e^t$ because $\\cos^2t+\\sin^2t=1$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-38",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "motion-in-the-plane",
+    "difficulty": "hard",
+    "stem": "A particle's velocity is $\\vec v(t)=\\langle-3\\sin t,3\\cos t\\rangle$. Which statement is true for all $t$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The particle moves along a straight line at constant speed",
+        "isCorrect": false,
+        "explanation": "A straight-line path at constant velocity would have zero acceleration. Here $\\vec a\\ne\\vec 0$ and the particle moves on a circle."
+      },
+      {
+        "label": "B",
+        "text": "The speed is increasing, because the acceleration is never zero",
+        "isCorrect": false,
+        "explanation": "The acceleration is perpendicular to the velocity, so it does not change the speed."
+      },
+      {
+        "label": "C",
+        "text": "The speed is constant, so the acceleration is zero",
+        "isCorrect": false,
+        "explanation": "Constant speed does not imply zero acceleration. Acceleration also measures a change in direction."
+      },
+      {
+        "label": "D",
+        "text": "The speed is constant, even though the acceleration is never zero",
+        "isCorrect": true,
+        "explanation": "The speed is $3\\sqrt{\\sin^2t+\\cos^2t}=3$. The acceleration $\\langle-3\\cos t,-3\\sin t\\rangle$ has magnitude 3, and $\\vec v\\cdot\\vec a=9\\sin t\\cos t-9\\sin t\\cos t=0$: it changes the direction of motion but not the speed."
+      }
+    ],
+    "explanation": "Compute $\\vec v\\cdot\\vec a$. When it is zero for all $t$, the speed does not change.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/motion-in-the-plane",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-39",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "easy",
+    "stem": "The polar point $\\left(4,\\frac\\pi3\\right)$ has which rectangular coordinates?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\left(2\\sqrt3,2\\right)$",
+        "isCorrect": false,
+        "explanation": "The coordinates are swapped: $\\cos\\frac\\pi3=\\frac12$ goes with $x$ and $\\sin\\frac\\pi3=\\frac{\\sqrt3}2$ with $y$."
+      },
+      {
+        "label": "B",
+        "text": "$\\left(2,2\\sqrt3\\right)$",
+        "isCorrect": true,
+        "explanation": "$x=r\\cos\\theta=4\\cdot\\frac12=2$ and $y=r\\sin\\theta=4\\cdot\\frac{\\sqrt3}{2}=2\\sqrt3$."
+      },
+      {
+        "label": "C",
+        "text": "$\\left(\\frac12,\\frac{\\sqrt3}{2}\\right)$",
+        "isCorrect": false,
+        "explanation": "This is $(\\cos\\theta,\\sin\\theta)$ and leaves out the multiplication by $r=4$."
+      },
+      {
+        "label": "D",
+        "text": "$(2,2)$",
+        "isCorrect": false,
+        "explanation": "$\\sin\\frac\\pi3=\\frac{\\sqrt3}{2}$, not $\\frac12$."
+      }
+    ],
+    "explanation": "Use $x=r\\cos\\theta$ and $y=r\\sin\\theta$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-40",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "easy",
+    "stem": "Which polar coordinates $(r,\\theta)$ with $r>0$ and $0\\le\\theta<2\\pi$ describe the point with rectangular coordinates $(-1,1)$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\left(\\sqrt2,\\frac\\pi4\\right)$",
+        "isCorrect": false,
+        "explanation": "This is the point $(1,1)$ in the first quadrant."
+      },
+      {
+        "label": "B",
+        "text": "$\\left(\\sqrt2,-\\frac\\pi4\\right)$",
+        "isCorrect": false,
+        "explanation": "$\\arctan(-1)=-\\frac\\pi4$ is in the fourth quadrant, which is the point $(1,-1)$. Add $\\pi$ to reach the second quadrant."
+      },
+      {
+        "label": "C",
+        "text": "$\\left(2,\\frac{3\\pi}{4}\\right)$",
+        "isCorrect": false,
+        "explanation": "$r=\\sqrt{x^2+y^2}=\\sqrt2$, not 2."
+      },
+      {
+        "label": "D",
+        "text": "$\\left(\\sqrt2,\\frac{3\\pi}{4}\\right)$",
+        "isCorrect": true,
+        "explanation": "$r=\\sqrt{(-1)^2+1^2}=\\sqrt2$. The point is in the second quadrant, and $\\tan\\theta=-1$ there gives $\\theta=\\frac{3\\pi}4$."
+      }
+    ],
+    "explanation": "Find $r$ from $x^2+y^2=r^2$, and choose $\\theta$ in the correct quadrant (a calculator's $\\arctan$ only returns angles in $(-\\frac\\pi2,\\frac\\pi2)$).",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-41",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "easy",
+    "stem": "Which rectangular equation is equivalent to the polar equation $r=2\\cos\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y=2x$",
+        "isCorrect": false,
+        "explanation": "That is the line $\\tan\\theta=2$. The equation $r=2\\cos\\theta$ is a circle."
+      },
+      {
+        "label": "B",
+        "text": "$x^2+y^2=2y$",
+        "isCorrect": false,
+        "explanation": "$r\\sin\\theta=y$ would give $r=2\\sin\\theta$. Here it is $r\\cos\\theta=x$."
+      },
+      {
+        "label": "C",
+        "text": "$x^2+y^2=4$",
+        "isCorrect": false,
+        "explanation": "This is the equation $r=2$, a circle centered at the origin."
+      },
+      {
+        "label": "D",
+        "text": "$x^2+y^2=2x$",
+        "isCorrect": true,
+        "explanation": "Multiply both sides by $r$: $r^2=2r\\cos\\theta$, which is $x^2+y^2=2x$. This is a circle of radius 1 centered at $(1,0)$."
+      }
+    ],
+    "explanation": "Multiply by $r$ to create the combinations $r^2=x^2+y^2$ and $r\\cos\\theta=x$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-42",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "medium",
+    "stem": "For the polar curve $r=1+\\cos\\theta$, what is $\\dfrac{dy}{dx}$ at $\\theta=\\dfrac\\pi2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1$",
+        "isCorrect": true,
+        "explanation": "With $x=r\\cos\\theta$ and $y=r\\sin\\theta$: $\\frac{dy}{d\\theta}=-\\sin^2\\theta+(1+\\cos\\theta)\\cos\\theta=-1$ and $\\frac{dx}{d\\theta}=-\\sin\\theta\\cos\\theta-(1+\\cos\\theta)\\sin\\theta=-1$ at $\\theta=\\frac\\pi2$. The slope is $\\frac{-1}{-1}=1$."
+      },
+      {
+        "label": "B",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "This keeps only $r\\cos\\theta$ in $\\frac{dy}{d\\theta}$ and leaves out the $r'\\sin\\theta$ term."
+      },
+      {
+        "label": "C",
+        "text": "$-1$",
+        "isCorrect": false,
+        "explanation": "This comes from a sign slip in $\\frac{dx}{d\\theta}$: using $r'\\cos\\theta+r\\sin\\theta$ instead of $r'\\cos\\theta-r\\sin\\theta$ gives $+1$ at this angle, and the slope would be $\\frac{-1}{1}=-1$."
+      },
+      {
+        "label": "D",
+        "text": "undefined",
+        "isCorrect": false,
+        "explanation": "This takes the slope to be $\\tan\\theta$, which is undefined at $\\frac\\pi2$. That is the slope of the radial line, not of the curve."
+      }
+    ],
+    "explanation": "Treat $x=r(\\theta)\\cos\\theta$ and $y=r(\\theta)\\sin\\theta$ as parametric equations in $\\theta$ and use the product rule.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-43",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "medium",
+    "stem": "For the polar curve $r=2\\cos\\theta$, what is $\\dfrac{dy}{dx}$ at $\\theta=\\dfrac\\pi6$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{\\sqrt{3}}{3}$",
+        "isCorrect": false,
+        "explanation": "The slope is $\\frac{2\\cos2\\theta}{-2\\sin2\\theta}$. The minus sign from $\\frac{dx}{d\\theta}$ was lost."
+      },
+      {
+        "label": "B",
+        "text": "$- \\frac{\\sqrt{3}}{3}$",
+        "isCorrect": true,
+        "explanation": "$x=2\\cos^2\\theta$, $y=2\\sin\\theta\\cos\\theta=\\sin2\\theta$. So $\\frac{dy}{d\\theta}=2\\cos2\\theta$ and $\\frac{dx}{d\\theta}=-2\\sin2\\theta$, and the slope is $-\\cot2\\theta=-\\cot\\frac\\pi3=-\\frac{\\sqrt3}3$."
+      },
+      {
+        "label": "C",
+        "text": "$- \\sqrt{3}$",
+        "isCorrect": false,
+        "explanation": "This is $-\\tan2\\theta$, the reciprocal of the slope."
+      },
+      {
+        "label": "D",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "This is the slope at $\\theta=\\frac\\pi4$, where $\\cot2\\theta=\\cot\\frac\\pi2=0$."
+      }
+    ],
+    "explanation": "Write $x$ and $y$ in terms of $\\theta$, simplify with double-angle identities, and divide the derivatives.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-44",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "medium",
+    "stem": "For a polar curve $r=f(\\theta)$, which expression gives $\\dfrac{dy}{dx}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$f'(\\theta)$",
+        "isCorrect": false,
+        "explanation": "$f'(\\theta)=\\frac{dr}{d\\theta}$ is the rate at which the distance from the origin changes, not the slope of the curve."
+      },
+      {
+        "label": "B",
+        "text": "$\\dfrac{f'(\\theta)\\sin\\theta+f(\\theta)\\cos\\theta}{f'(\\theta)\\cos\\theta-f(\\theta)\\sin\\theta}$",
+        "isCorrect": true,
+        "explanation": "With $x=f(\\theta)\\cos\\theta$ and $y=f(\\theta)\\sin\\theta$, the product rule gives $\\frac{dy}{d\\theta}=f'\\sin\\theta+f\\cos\\theta$ and $\\frac{dx}{d\\theta}=f'\\cos\\theta-f\\sin\\theta$."
+      },
+      {
+        "label": "C",
+        "text": "$\\tan\\theta$",
+        "isCorrect": false,
+        "explanation": "$\\tan\\theta$ is the slope of the line from the origin to the point, not the slope of the tangent to the curve."
+      },
+      {
+        "label": "D",
+        "text": "$\\dfrac{f'(\\theta)\\sin\\theta-f(\\theta)\\cos\\theta}{f'(\\theta)\\cos\\theta+f(\\theta)\\sin\\theta}$",
+        "isCorrect": false,
+        "explanation": "The signs of the second terms are reversed in both parts. The product rule adds in $\\frac{dy}{d\\theta}$ and subtracts in $\\frac{dx}{d\\theta}$."
+      }
+    ],
+    "explanation": "A polar curve is a parametric curve in the parameter $\\theta$, so $\\frac{dy}{dx}=\\frac{dy/d\\theta}{dx/d\\theta}$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-45",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "medium",
+    "stem": "How many petals does the polar graph of $r=2\\sin3\\theta$ have?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$1$",
+        "isCorrect": false,
+        "explanation": "A single loop would be the graph of a circle such as $r=2\\sin\\theta$."
+      },
+      {
+        "label": "B",
+        "text": "$6$",
+        "isCorrect": false,
+        "explanation": "6 petals would come from doubling when $n$ is odd. That rule applies to even $n$, which gives $2n$ petals."
+      },
+      {
+        "label": "C",
+        "text": "$3$",
+        "isCorrect": true,
+        "explanation": "For $r=a\\sin n\\theta$ or $a\\cos n\\theta$ with $n$ odd, the graph has $n$ petals. Here $n=3$."
+      },
+      {
+        "label": "D",
+        "text": "$2$",
+        "isCorrect": false,
+        "explanation": "The coefficient 2 is the length of the petals, not their number."
+      }
+    ],
+    "explanation": "For $r=a\\sin n\\theta$ the number of petals is $n$ if $n$ is odd and $2n$ if $n$ is even.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-46",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "medium",
+    "stem": "Which rectangular equation is equivalent to the polar equation $r=4\\sin\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$x^2+(y-2)^2=4$",
+        "isCorrect": true,
+        "explanation": "Multiplying by $r$: $r^2=4r\\sin\\theta$, so $x^2+y^2=4y$. Completing the square gives $x^2+(y-2)^2=4$: a circle of radius 2 centered at $(0,2)$."
+      },
+      {
+        "label": "B",
+        "text": "$x^2+y^2=4$",
+        "isCorrect": false,
+        "explanation": "This is the equation $r=2$."
+      },
+      {
+        "label": "C",
+        "text": "$(x-2)^2+y^2=4$",
+        "isCorrect": false,
+        "explanation": "This is the circle for $r=4\\cos\\theta$, centered at $(2,0)$."
+      },
+      {
+        "label": "D",
+        "text": "$x^2+(y-4)^2=16$",
+        "isCorrect": false,
+        "explanation": "Completing the square on $x^2+y^2-4y=0$ uses half of 4: $(y-2)^2$, with $4$ on the right."
+      }
+    ],
+    "explanation": "Multiply both sides by $r$ and replace $r\\sin\\theta$ by $y$ and $r^2$ by $x^2+y^2$. Then complete the square.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-47",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "hard",
+    "stem": "For the polar curve $r=1+2\\cos\\theta$, what is $\\dfrac{dy}{dx}$ at $\\theta=\\dfrac\\pi2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2$",
+        "isCorrect": true,
+        "explanation": "At $\\theta=\\frac\\pi2$: $r=1$ and $r'=-2\\sin\\theta=-2$. Then $\\frac{dy}{d\\theta}=r'\\sin\\theta+r\\cos\\theta=-2$ and $\\frac{dx}{d\\theta}=r'\\cos\\theta-r\\sin\\theta=-1$. The slope is $\\frac{-2}{-1}=2$."
+      },
+      {
+        "label": "B",
+        "text": "$-2$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac{dy}{d\\theta}$ alone. The slope divides by $\\frac{dx}{d\\theta}=-1$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{1}{2}$",
+        "isCorrect": false,
+        "explanation": "This is the reciprocal, $\\frac{dx}{d\\theta}\\big/\\frac{dy}{d\\theta}$."
+      },
+      {
+        "label": "D",
+        "text": "$0$",
+        "isCorrect": false,
+        "explanation": "This keeps only $r\\cos\\theta$ in $\\frac{dy}{d\\theta}$. The $r'\\sin\\theta$ term is $-2$ at this angle."
+      }
+    ],
+    "explanation": "Compute $r$ and $r'$ at the angle first, then substitute into the two product-rule expressions.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-48",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "medium",
+    "stem": "A particle moves so that its polar coordinates at time $t$ are $r=2+\\sin t$ and $\\theta=t$, for $0\\le t\\le2\\pi$. During which times is the particle's distance from the origin increasing?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$0<t<\\frac\\pi2$ and $\\frac{3\\pi}{2}<t<2\\pi$",
+        "isCorrect": true,
+        "explanation": "The distance is $r=2+\\sin t$, and $\\frac{dr}{dt}=\\cos t$. It is positive where $\\cos t>0$: on $\\left(0,\\frac\\pi2\\right)$ and $\\left(\\frac{3\\pi}2,2\\pi\\right)$."
+      },
+      {
+        "label": "B",
+        "text": "$0<t<\\pi$ and $\\frac{3\\pi}{2}<t<2\\pi$",
+        "isCorrect": false,
+        "explanation": "Between $\\frac\\pi2$ and $\\pi$, $\\frac{dr}{dt}=\\cos t<0$, so the distance is decreasing there."
+      },
+      {
+        "label": "C",
+        "text": "$0<t<\\pi$",
+        "isCorrect": false,
+        "explanation": "On $\\left(0,\\pi\\right)$ the value $\\sin t$ is positive, so $r$ is greater than 2, but it is not increasing the whole time: $\\frac{dr}{dt}=\\cos t$ is negative on $\\left(\\frac\\pi2,\\pi\\right)$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac\\pi2<t<\\frac{3\\pi}2$",
+        "isCorrect": false,
+        "explanation": "This is where $\\cos t<0$: the distance is decreasing."
+      }
+    ],
+    "explanation": "The distance from the origin is $r$. It increases where $\\frac{dr}{dt}>0$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-49",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "polar-coordinates-and-derivatives",
+    "difficulty": "hard",
+    "stem": "The polar curve $r=2\\cos3\\theta$ passes through the origin when $\\theta=\\dfrac\\pi6$. Which line is tangent to the curve at the origin there?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$y=\\dfrac{1}{\\sqrt3}x$",
+        "isCorrect": true,
+        "explanation": "At the pole, $r=0$ and $\\frac{dr}{d\\theta}=-6\\sin3\\theta=-6\\ne0$, so the tangent line at the origin is the line $\\theta=\\frac\\pi6$, which has slope $\\tan\\frac\\pi6=\\frac1{\\sqrt3}$."
+      },
+      {
+        "label": "B",
+        "text": "$y=0$",
+        "isCorrect": false,
+        "explanation": "That is the line $\\theta=0$, where $r=2$: the curve is at its farthest point there, not at the origin."
+      },
+      {
+        "label": "C",
+        "text": "$y=\\sqrt3\\,x$",
+        "isCorrect": false,
+        "explanation": "That is the line $\\theta=\\frac\\pi3$. The curve reaches the origin at $\\theta=\\frac\\pi6$."
+      },
+      {
+        "label": "D",
+        "text": "$x=0$",
+        "isCorrect": false,
+        "explanation": "That is the line $\\theta=\\frac\\pi2$."
+      }
+    ],
+    "explanation": "When $r=0$ at $\\theta_0$ and $\\frac{dr}{d\\theta}\\ne0$, the tangent line to the curve at the origin is the line $\\theta=\\theta_0$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/polar-coordinates-and-derivatives",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-50",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "easy",
+    "stem": "What is the area of the region enclosed by the polar curve $r=2$ for $0\\le\\theta\\le2\\pi$, found with $A=\\frac12\\int r^2\\,d\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$16 \\pi^{2}$",
+        "isCorrect": false,
+        "explanation": "This squares the whole integral. $A=\\frac12\\int r^2\\,d\\theta$ squares only $r$."
+      },
+      {
+        "label": "B",
+        "text": "$2 \\pi$",
+        "isCorrect": false,
+        "explanation": "This integrates $\\frac12r$ instead of $\\frac12r^2$."
+      },
+      {
+        "label": "C",
+        "text": "$8 \\pi$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ is missing."
+      },
+      {
+        "label": "D",
+        "text": "$4 \\pi$",
+        "isCorrect": true,
+        "explanation": "$A=\\frac12\\int_0^{2\\pi}2^2\\,d\\theta=\\frac12\\cdot4\\cdot2\\pi=4\\pi$, the area of a circle of radius 2."
+      }
+    ],
+    "explanation": "In polar coordinates, area $=\\frac12\\int_\\alpha^\\beta r^2\\,d\\theta$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-51",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "medium",
+    "stem": "Which integral gives the area of the region enclosed by the polar curve $r=3\\sin\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\displaystyle\\frac12\\int_0^{\\pi}3\\sin\\theta\\,d\\theta$",
+        "isCorrect": false,
+        "explanation": "The integrand must be $r^2$, not $r$."
+      },
+      {
+        "label": "B",
+        "text": "$\\displaystyle\\frac12\\int_0^{\\pi}\\left(3\\sin\\theta\\right)^2d\\theta$",
+        "isCorrect": true,
+        "explanation": "The graph of $r=3\\sin\\theta$ is a circle traced once as $\\theta$ goes from 0 to $\\pi$. The area is $\\frac12\\int r^2\\,d\\theta$ over that interval."
+      },
+      {
+        "label": "C",
+        "text": "$\\displaystyle\\int_0^{\\pi}\\left(3\\sin\\theta\\right)^2d\\theta$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ is missing."
+      },
+      {
+        "label": "D",
+        "text": "$\\displaystyle\\frac12\\int_0^{2\\pi}\\left(3\\sin\\theta\\right)^2d\\theta$",
+        "isCorrect": false,
+        "explanation": "Over $[0,2\\pi]$ the circle is traced twice (for $\\pi<\\theta<2\\pi$, $r<0$ and the points repeat), so the area would be counted twice."
+      }
+    ],
+    "explanation": "Find the interval over which the curve is traced exactly once, then use $\\frac12\\int r^2\\,d\\theta$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-52",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "medium",
+    "stem": "What is the area of the region enclosed by the polar curve $r=1+\\cos\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$3 \\pi$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ is missing."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{3 \\pi}{2}$",
+        "isCorrect": true,
+        "explanation": "$A=\\frac12\\int_0^{2\\pi}(1+\\cos\\theta)^2d\\theta=\\frac12\\int_0^{2\\pi}\\left(1+2\\cos\\theta+\\cos^2\\theta\\right)d\\theta=\\frac12\\left(2\\pi+0+\\pi\\right)=\\frac{3\\pi}{2}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{3 \\pi}{4}$",
+        "isCorrect": false,
+        "explanation": "This stops at $\\theta=\\pi$, which is only the top half of the curve. The cardioid needs $[0,2\\pi]$."
+      },
+      {
+        "label": "D",
+        "text": "$\\pi$",
+        "isCorrect": false,
+        "explanation": "This integrates $\\frac12r=\\frac12(1+\\cos\\theta)$ instead of $\\frac12r^2$."
+      }
+    ],
+    "explanation": "Expand $(1+\\cos\\theta)^2$ and integrate over a full turn; the cross term $2\\cos\\theta$ integrates to 0 and $\\cos^2\\theta$ to $\\pi$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-53",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "medium",
+    "stem": "What is the area of one petal of the polar curve $r=\\cos2\\theta$, the petal centered on the positive $x$-axis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{\\pi}{16}$",
+        "isCorrect": false,
+        "explanation": "$\\int_{-\\pi/4}^{\\pi/4}\\cos^22\\theta\\,d\\theta=\\frac\\pi4$. Halving it twice gives $\\frac\\pi{16}$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{\\pi}{2}$",
+        "isCorrect": false,
+        "explanation": "This is the area of all four petals, $4\\cdot\\frac\\pi8$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{\\pi}{8}$",
+        "isCorrect": true,
+        "explanation": "That petal is traced for $-\\frac\\pi4\\le\\theta\\le\\frac\\pi4$, where $\\cos2\\theta\\ge0$. $A=\\frac12\\int_{-\\pi/4}^{\\pi/4}\\cos^22\\theta\\,d\\theta=\\frac12\\cdot\\frac\\pi4=\\frac\\pi8$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{\\pi}{4}$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ is missing."
+      }
+    ],
+    "explanation": "Find the two angles where $r=0$ on each side of the petal; those are the limits of integration.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-54",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "hard",
+    "stem": "Which expression gives the area of the region that lies inside the circle $r=4\\cos\\theta$ and outside the circle $r=2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\displaystyle\\frac12\\int_0^{\\pi/3}\\left(16\\cos^2\\theta-4\\right)d\\theta$",
+        "isCorrect": false,
+        "explanation": "This covers only the upper half of the region. The region extends from $-\\frac\\pi3$ to $\\frac\\pi3$."
+      },
+      {
+        "label": "B",
+        "text": "$\\displaystyle\\frac12\\int_{-\\pi/3}^{\\pi/3}\\left(16\\cos^2\\theta-4\\right)d\\theta$",
+        "isCorrect": true,
+        "explanation": "The curves meet where $4\\cos\\theta=2$, so $\\theta=\\pm\\frac\\pi3$. Between these angles the outer curve is $r=4\\cos\\theta$ and the inner is $r=2$: $A=\\frac12\\int\\left(r_{\\text{out}}^2-r_{\\text{in}}^2\\right)d\\theta$."
+      },
+      {
+        "label": "C",
+        "text": "$\\displaystyle\\frac12\\int_{-\\pi/3}^{\\pi/3}\\left(4\\cos\\theta-2\\right)^2d\\theta$",
+        "isCorrect": false,
+        "explanation": "The difference of the areas is $r_{\\text{out}}^2-r_{\\text{in}}^2$, not $\\left(r_{\\text{out}}-r_{\\text{in}}\\right)^2$."
+      },
+      {
+        "label": "D",
+        "text": "$\\displaystyle\\frac12\\int_{-\\pi/2}^{\\pi/2}\\left(16\\cos^2\\theta-4\\right)d\\theta$",
+        "isCorrect": false,
+        "explanation": "Beyond $\\theta=\\pm\\frac\\pi3$ the circle $r=4\\cos\\theta$ is inside $r=2$, so the integrand would be negative there."
+      }
+    ],
+    "explanation": "Find where the curves intersect, decide which is farther from the origin between those angles, and subtract the squares of the radii.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-55",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "medium",
+    "stem": "What is the area swept out by the radius vector of the spiral $r=\\theta$ as $\\theta$ goes from 0 to $\\pi$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{\\pi^{3}}{2}$",
+        "isCorrect": false,
+        "explanation": "$\\int_0^\\pi\\theta^2d\\theta=\\frac{\\pi^3}{3}$. Multiplying by 3 instead of $\\frac13$ gives $\\pi^3$, and half of that is $\\frac{\\pi^3}{2}$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{\\pi^{3}}{6}$",
+        "isCorrect": true,
+        "explanation": "$A=\\frac12\\int_0^\\pi\\theta^2\\,d\\theta=\\frac12\\cdot\\frac{\\pi^3}{3}=\\frac{\\pi^3}{6}$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{\\pi^{2}}{2}$",
+        "isCorrect": false,
+        "explanation": "This integrates $\\frac12r=\\frac12\\theta$. The integrand is $\\frac12r^2$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{\\pi^{3}}{3}$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ is missing."
+      }
+    ],
+    "explanation": "Use $A=\\frac12\\int_0^\\pi r^2\\,d\\theta$ with $r=\\theta$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-56",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "hard",
+    "stem": "What is the area of the region that lies inside the circle $r=3\\cos\\theta$ and outside the cardioid $r=1+\\cos\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$2 \\pi$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ in $A=\\frac12\\int\\left(r_{\\text{out}}^2-r_{\\text{in}}^2\\right)d\\theta$ is missing."
+      },
+      {
+        "label": "B",
+        "text": "$\\pi - \\frac{3 \\sqrt{3}}{2}$",
+        "isCorrect": false,
+        "explanation": "This squares the difference of the radii, $\\left(r_{\\text{out}}-r_{\\text{in}}\\right)^2$. The area between curves subtracts the squares: $r_{\\text{out}}^2-r_{\\text{in}}^2$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{\\pi}{2}$",
+        "isCorrect": false,
+        "explanation": "This integrates only from 0 to $\\frac\\pi3$, the upper half of the region."
+      },
+      {
+        "label": "D",
+        "text": "$\\pi$",
+        "isCorrect": true,
+        "explanation": "The curves meet where $3\\cos\\theta=1+\\cos\\theta$, so $\\cos\\theta=\\frac12$ and $\\theta=\\pm\\frac\\pi3$. $A=\\frac12\\int_{-\\pi/3}^{\\pi/3}\\left(9\\cos^2\\theta-(1+\\cos\\theta)^2\\right)d\\theta=\\frac12\\int\\left(8\\cos^2\\theta-2\\cos\\theta-1\\right)d\\theta=\\frac12(2\\pi)=\\pi$."
+      }
+    ],
+    "explanation": "Find the intersection angles, then integrate $\\frac12\\left(r_{\\text{out}}^2-r_{\\text{in}}^2\\right)$. Use $\\cos^2\\theta=\\frac{1+\\cos2\\theta}{2}$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-57",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "hard",
+    "stem": "What is the area of the region inside both circles $r=2\\sin\\theta$ and $r=2\\cos\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\pi-2$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ in $\\frac12\\int r^2d\\theta$ is missing."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac\\pi2$",
+        "isCorrect": false,
+        "explanation": "This is $\\frac12\\int_0^{\\pi/2}(2\\sin\\theta)^2d\\theta$, the area of half of one whole circle. The boundary switches to the other circle at $\\theta=\\frac\\pi4$."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac\\pi4-\\frac12$",
+        "isCorrect": false,
+        "explanation": "This is only one of the two symmetric pieces ($0\\le\\theta\\le\\frac\\pi4$). The region is twice as large."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac\\pi2-1$",
+        "isCorrect": true,
+        "explanation": "The circles meet at $\\theta=\\frac\\pi4$. For $0\\le\\theta\\le\\frac\\pi4$ the nearer boundary is $r=2\\sin\\theta$, and by symmetry the region is twice that piece: $2\\cdot\\frac12\\int_0^{\\pi/4}4\\sin^2\\theta\\,d\\theta=4\\left(\\frac\\pi8-\\frac14\\right)=\\frac\\pi2-1$."
+      }
+    ],
+    "explanation": "Find where the circles intersect, use the circle that is closer to the origin on each side of that angle, and use symmetry about the line $\\theta=\\frac\\pi4$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-58",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "medium",
+    "stem": "What is the area of the region enclosed by the polar curve $r=2\\cos\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\pi$",
+        "isCorrect": true,
+        "explanation": "The circle is traced once for $-\\frac\\pi2\\le\\theta\\le\\frac\\pi2$: $A=\\frac12\\int_{-\\pi/2}^{\\pi/2}4\\cos^2\\theta\\,d\\theta=2\\cdot\\frac\\pi2=\\pi$. It is a circle of radius 1."
+      },
+      {
+        "label": "B",
+        "text": "$4 \\pi$",
+        "isCorrect": false,
+        "explanation": "This uses $[0,2\\pi]$ and also omits the $\\frac12$."
+      },
+      {
+        "label": "C",
+        "text": "$2 \\pi$",
+        "isCorrect": false,
+        "explanation": "This integrates over $[0,2\\pi]$, which traces the circle twice."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{\\pi}{2}$",
+        "isCorrect": false,
+        "explanation": "$\\int_{-\\pi/2}^{\\pi/2}\\cos^2\\theta\\,d\\theta=\\frac\\pi2$, and the integrand has the coefficient $4\\cdot\\frac12=2$. The result is $\\pi$, not $\\frac\\pi2$."
+      }
+    ],
+    "explanation": "A circle $r=a\\cos\\theta$ is traced once as $\\theta$ goes through an interval of length $\\pi$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-59",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "medium",
+    "stem": "What is the area of one petal of the polar curve $r=2\\sin3\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\frac{\\pi}{3}$",
+        "isCorrect": true,
+        "explanation": "One petal is traced for $0\\le\\theta\\le\\frac\\pi3$ (where $\\sin3\\theta\\ge0$): $A=\\frac12\\int_0^{\\pi/3}4\\sin^23\\theta\\,d\\theta=2\\cdot\\frac\\pi6=\\frac\\pi3$."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{2 \\pi}{3}$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ is missing."
+      },
+      {
+        "label": "C",
+        "text": "$\\pi$",
+        "isCorrect": false,
+        "explanation": "That is the area of all three petals."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{\\pi}{6}$",
+        "isCorrect": false,
+        "explanation": "$\\int_0^{\\pi/3}\\sin^23\\theta\\,d\\theta=\\frac\\pi6$. The coefficient is $\\frac12\\cdot4=2$, so the area is $\\frac\\pi3$."
+      }
+    ],
+    "explanation": "Find two consecutive angles where $r=0$ to bound a single petal, then use $\\sin^2u=\\frac{1-\\cos2u}{2}$.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u9-mcq-60",
+    "unit": "unit-9-parametric-polar-and-vector-valued-functions",
+    "topic": "area-in-polar-coordinates",
+    "difficulty": "hard",
+    "stem": "What is the total area enclosed by the four-petaled rose $r=3\\cos2\\theta$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$9 \\pi$",
+        "isCorrect": false,
+        "explanation": "The factor $\\frac12$ is missing."
+      },
+      {
+        "label": "B",
+        "text": "$\\frac{9 \\pi}{4}$",
+        "isCorrect": false,
+        "explanation": "This integrates over $[0,\\pi]$ and so counts only two of the four petals."
+      },
+      {
+        "label": "C",
+        "text": "$\\frac{9 \\pi}{8}$",
+        "isCorrect": false,
+        "explanation": "This is the area of one petal, $\\frac{9\\pi}{8}$."
+      },
+      {
+        "label": "D",
+        "text": "$\\frac{9 \\pi}{2}$",
+        "isCorrect": true,
+        "explanation": "$A=\\frac12\\int_0^{2\\pi}9\\cos^22\\theta\\,d\\theta=\\frac92\\cdot\\pi=\\frac{9\\pi}{2}$, since $\\int_0^{2\\pi}\\cos^22\\theta\\,d\\theta=\\pi$."
+      }
+    ],
+    "explanation": "The rose $r=3\\cos2\\theta$ closes after $\\theta$ goes from 0 to $2\\pi$. Integrate $\\frac12r^2$ over that interval.",
+    "conceptLink": "ap-calc-bc/unit-9-parametric-polar-and-vector-valued-functions/area-in-polar-coordinates",
+    "reviewed": false
+  }
+]

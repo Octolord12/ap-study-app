@@ -1,0 +1,95 @@
+[
+  {
+    "id": "ap-calcbc-u7-frq-1",
+    "unit": "unit-7-differential-equations",
+    "topic": "separation-of-variables",
+    "prompt": "Consider the differential equation $\\dfrac{dy}{dx} = 2xy$, with initial condition $y(0) = 5$.\n\n**(a)** Solve the differential equation using separation of variables, giving the general solution in terms of an arbitrary constant A.\n\n**(b)** Use the initial condition to find the particular solution.\n\n**(c)** Find $y(1)$, giving an exact value.",
+    "pointValue": 4,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Correctly separates variables: dy/y = 2x dx"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Correctly integrates both sides to get ln|y| = x^2 + C, hence y = Ae^(x^2)"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Correctly uses y(0)=5 to find A=5, giving y = 5e^(x^2)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "Correctly evaluates y(1) = 5e"
+      }
+    ],
+    "sampleResponse": "(a) Separating variables: dy/y = 2x dx. Integrating both sides: ln|y| = x^2 + C. Solving for y: y = e^(x^2+C) = Ae^(x^2), where A = e^C.\n(b) Using y(0)=5: 5 = Ae^0 = A, so A=5. The particular solution is y = 5e^(x^2).\n(c) y(1) = 5e^(1^2) = 5e.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-frq-2",
+    "unit": "unit-7-differential-equations",
+    "topic": "exponential-growth-and-decay",
+    "prompt": "A city's population P (in thousands) is modeled by the differential equation $\\dfrac{dP}{dt} = 0.08P$, where t is measured in years, with initial population $P(0) = 200$ (thousand).\n\n**(a)** Show that $P(t) = 200e^{0.08t}$ is a solution to the differential equation by verifying it satisfies both the equation and the initial condition.\n\n**(b)** Find the population, to the nearest thousand, after 5 years.\n\n**(c)** Find the exact time t (in years) at which the population will have doubled from its initial value.",
+    "pointValue": 4,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Correctly differentiates P(t)=200e^(0.08t) to get dP/dt=16e^(0.08t)=0.08P, and confirms P(0)=200"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Correctly evaluates P(5) = 200e^0.4"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Rounds P(5) correctly to approximately 298 (thousand)"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "Correctly sets up 200e^(0.08t)=400 and solves to get t = ln(2)/0.08 = 25ln(2)/2 years"
+      }
+    ],
+    "sampleResponse": "(a) dP/dt = 200(0.08)e^(0.08t) = 16e^(0.08t) = 0.08(200e^(0.08t)) = 0.08P, so the differential equation is satisfied. Also P(0) = 200e^0 = 200, matching the initial condition.\n(b) P(5) = 200e^(0.08*5) = 200e^0.4 ≈ 200(1.4918) ≈ 298.37, so about 298 thousand.\n(c) Doubling means P(t)=400: 200e^(0.08t)=400, so e^(0.08t)=2, 0.08t=ln2, t = ln2/0.08 = 25ln(2)/2 ≈ 8.66 years.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-calcbc-u7-frq-3",
+    "unit": "unit-7-differential-equations",
+    "topic": "modeling-with-differential-equations",
+    "prompt": "A cup of coffee cools according to Newton's Law of Cooling, $\\dfrac{dT}{dt} = -k(T - 70)$, where T is the temperature (in °F) at time t (in minutes) and 70°F is the room temperature. The coffee starts at 190°F, and after 10 minutes it has cooled to 150°F.\n\n**(a)** Solve the differential equation using separation of variables to find the general solution, in the form $T = 70 + Ae^{-kt}$.\n\n**(b)** Use the initial temperature to find A.\n\n**(c)** Use the condition at t=10 to find the exact value of k (as an expression involving a logarithm).",
+    "pointValue": 4,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "Correctly separates and integrates: dT/(T-70) = -k dt leads to T-70 = Ae^(-kt), so T = 70+Ae^(-kt)"
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "Correctly uses T(0)=190 to find A = 120"
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "Correctly substitutes T(10)=150 to get the equation 150 = 70+120e^(-10k), simplifying to e^(-10k)=2/3"
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "Correctly solves for k = ln(3/2)/10 (equivalently, -ln(2/3)/10)"
+      }
+    ],
+    "sampleResponse": "(a) Separating: dT/(T-70) = -k dt. Integrating: ln|T-70| = -kt+C, so T-70 = Ae^(-kt), giving T = 70+Ae^(-kt).\n(b) T(0)=190: 190 = 70+A, so A = 120.\n(c) T(10)=150: 150 = 70+120e^(-10k), so 80 = 120e^(-10k), e^(-10k) = 2/3. Taking ln of both sides: -10k = ln(2/3), so k = -ln(2/3)/10 = ln(3/2)/10 ≈ 0.0405.",
+    "reviewed": false
+  }
+]
