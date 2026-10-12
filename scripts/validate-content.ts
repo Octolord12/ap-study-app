@@ -1,6 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { CourseSchema, FRQSchema, QuestionSchema, RefresherSchema, UnitSchema } from "../src/lib/content/schema";
+import { drawableTypes } from "../src/lib/content/exam-sections";
 import { checkExamSupply, validateFRQ, validateQuestion, validateRefresher, validateUnit } from "../src/lib/content/validate";
 
 const CONTENT_DIR = path.join(__dirname, "../content");
@@ -99,7 +100,7 @@ function validateCourse(courseSlug: string) {
   // --- FRQs ---
   const frqsDir = path.join(courseDir, "frqs");
   const examFormat = courseResult.data.examFormat;
-  const sectionTypes = examFormat.sections.map((s) => s.type);
+  const sectionTypes = drawableTypes(examFormat.sections);
   const promptTypes: string[] = [];
 
   if (existsSync(frqsDir)) {

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
+import { drawableTypes } from "@/lib/content/exam-sections";
 import { pickExamFrqIds } from "@/lib/study/exam-selection";
 
 // The shipped content, not a fixture: every course must be able to build the exam its examFormat describes.
@@ -13,6 +14,7 @@ interface Frq {
 interface Section {
   type: string;
   questionCount: number;
+  kinds?: string[];
 }
 
 const root = path.resolve(import.meta.dirname, "../content");
@@ -34,11 +36,11 @@ describe.each(courses)("%s exam", (course) => {
     expect(picked).toHaveLength(wanted);
     const byId = new Map(prompts.map((p) => [p.id, p.type]));
     const order = picked.map((id) => byId.get(id));
-    expect(order).toEqual(sections.filter((s) => s.type !== "MCQ").flatMap((s) => Array(s.questionCount).fill(s.type)));
+    expect(order).toEqual(sections.filter((s) => s.type !== "MCQ").flatMap((s) => s.kinds ?? Array(s.questionCount).fill(s.type)));
   });
 
   it("has no prompt whose type is not one of its exam sections", () => {
-    const allowed = new Set(sections.map((s) => s.type));
+    const allowed = new Set(drawableTypes(sections));
     expect(prompts.filter((p) => !allowed.has(p.type)).map((p) => p.id)).toEqual([]);
   });
 });

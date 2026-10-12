@@ -13,13 +13,20 @@ export const SECTION_NAMES: Record<string, string> = {
   LEQ: "long essay",
 };
 
-export type FrqKind = "FRQ" | "SAQ" | "DBQ" | "LEQ";
+export type FrqKind = "FRQ" | "SAQ" | "DBQ" | "LEQ" | "RESULTS" | "RESULTS_GRAPH" | "INVESTIGATION" | "CONCEPT" | "MODEL" | "DATA";
 
+// AP Biology's six free-response kinds use the College Board's own names.
 const FRQ_TITLES: Record<FrqKind, string> = {
   FRQ: "Free response",
   SAQ: "Short answer",
   DBQ: "Document-based question",
   LEQ: "Long essay",
+  RESULTS: "Interpreting and evaluating experimental results",
+  RESULTS_GRAPH: "Interpreting and evaluating experimental results with graphing",
+  INVESTIGATION: "Scientific investigation",
+  CONCEPT: "Conceptual analysis",
+  MODEL: "Analyzing a model or visual representation",
+  DATA: "Analyzing data",
 };
 
 export function frqTitle(type: string): string {

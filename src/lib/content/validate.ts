@@ -1,4 +1,5 @@
-import type { Diagram } from "./diagram-schema";
+import type { CladogramNode, Diagram } from "./diagram-schema";
+import { examDraws } from "./exam-sections";
 import type { FRQ, Question, Refresher, Unit } from "./schema";
 
 export interface Problem {
@@ -153,6 +154,70 @@ export function validateDiagram(diagram: Diagram): Problem[] {
     }
   }
 
+  if (diagram.type === "data-table") {
+    diagram.rows.forEach((row, r) => {
+      if (row.length !== diagram.columns.length) {
+        problems.push({ message: `data-table: row ${r + 1} has ${row.length} cell(s) but there are ${diagram.columns.length} column(s)` });
+      }
+    });
+  }
+
+  if (diagram.type === "bar-graph") problems.push(...validateBarGraph(diagram));
+
+  if (diagram.type === "cladogram") problems.push(...validateCladogram(diagram.root));
+
+  return problems;
+}
+
+function validateBarGraph(diagram: Extract<Diagram, { type: "bar-graph" }>): Problem[] {
+  const problems: Problem[] = [];
+  if (!(diagram.yMax > diagram.yMin)) problems.push({ message: `bar-graph: yMax (${diagram.yMax}) must be greater than yMin (${diagram.yMin})` });
+  if (new Set(diagram.categories).size !== diagram.categories.length) problems.push({ message: "bar-graph: duplicate category name" });
+  diagram.series.forEach((series, si) => {
+    const name = series.label ?? `series ${si + 1}`;
+    if (diagram.series.length > 1 && !series.label) problems.push({ message: `bar-graph: series ${si + 1} needs a label (the legend names them)` });
+    if (series.values.length !== diagram.categories.length) {
+      problems.push({ message: `bar-graph: ${name} has ${series.values.length} value(s) for ${diagram.categories.length} categories` });
+    }
+    if (series.errors && series.errors.length !== diagram.categories.length) {
+      problems.push({ message: `bar-graph: ${name} has ${series.errors.length} error value(s) for ${diagram.categories.length} categories` });
+    }
+    series.values.forEach((value, ci) => {
+      const error = series.errors?.[ci] ?? 0;
+      if (value - error < diagram.yMin || value + error > diagram.yMax) {
+        problems.push({ message: `bar-graph: ${name}, ${diagram.categories[ci] ?? `category ${ci + 1}`}: ${value}${error ? ` ± ${error}` : ""} does not fit in [${diagram.yMin}, ${diagram.yMax}]` });
+      }
+    });
+  });
+  return problems;
+}
+
+export const CLADOGRAM_MAX_TIPS = 12;
+export const CLADOGRAM_MAX_DEPTH = 6;
+
+function validateCladogram(root: CladogramNode): Problem[] {
+  const problems: Problem[] = [];
+  if (!root.children?.length) problems.push({ message: "cladogram: the root needs branches (children)" });
+  const tips: string[] = [];
+  const marks: string[] = [];
+  let deepest = 0;
+  const visit = (node: CladogramNode, depth: number) => {
+    deepest = Math.max(deepest, depth);
+    if (node.mark) marks.push(node.mark);
+    if (node.children?.length) {
+      if (node.label) problems.push({ message: `cladogram: "${node.label}" labels a branching point; only tips have labels` });
+      node.children.forEach((child) => visit(child, depth + 1));
+    } else if (node.label) {
+      tips.push(node.label);
+    } else if (node !== root) {
+      problems.push({ message: "cladogram: a tip has no label" });
+    }
+  };
+  visit(root, 0);
+  if (tips.length > CLADOGRAM_MAX_TIPS) problems.push({ message: `cladogram: ${tips.length} tips; the most drawn is ${CLADOGRAM_MAX_TIPS}` });
+  if (deepest > CLADOGRAM_MAX_DEPTH) problems.push({ message: `cladogram: ${deepest} levels deep; the most drawn is ${CLADOGRAM_MAX_DEPTH}` });
+  if (new Set(tips).size !== tips.length) problems.push({ message: "cladogram: two tips have the same label" });
+  if (new Set(marks).size !== marks.length) problems.push({ message: "cladogram: two nodes have the same mark" });
   return problems;
 }
 
@@ -176,13 +241,12 @@ export function checkMarkdownBalance(text: string, fieldName: string): Problem[]
 
 // Every non-multiple-choice exam section must have at least as many prompts of its type as it asks
 // for, or the exam simulator would hand out a short exam without anyone noticing.
-export function checkExamSupply(sections: readonly { type: string; questionCount: number }[], promptTypes: readonly string[]): Problem[] {
+export function checkExamSupply(sections: readonly { type: string; questionCount: number; kinds?: readonly string[] }[], promptTypes: readonly string[]): Problem[] {
   const problems: Problem[] = [];
-  for (const section of sections) {
-    if (section.type === "MCQ") continue;
-    const have = promptTypes.filter((t) => t === section.type).length;
-    if (have < section.questionCount) {
-      problems.push({ message: `exam section ${section.type} needs ${section.questionCount} prompt(s) of that type, but the course has ${have}` });
+  for (const draw of examDraws(sections)) {
+    const have = promptTypes.filter((t) => t === draw.type).length;
+    if (have < draw.count) {
+      problems.push({ message: `exam section ${draw.type} needs ${draw.count} prompt(s) of that type, but the course has ${have}` });
     }
   }
   return problems;

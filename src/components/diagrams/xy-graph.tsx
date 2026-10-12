@@ -1,29 +1,14 @@
 import type { XYGraphDiagram } from "@/lib/content/diagram-schema";
-import { projectPoint, type PixelDims } from "@/lib/diagrams/geometry";
+import { axisTicks, formatTick, projectPoint, type PixelDims } from "@/lib/diagrams/geometry";
+import { SERIES_COLOR } from "@/lib/diagrams/palette";
 
 const DIMS: PixelDims = { width: 400, height: 280, marginLeft: 55, marginRight: 20, marginTop: 20, marginBottom: 45 };
 const TICK_COUNT = 5;
 
-const SERIES_COLOR: Record<string, string> = {
-  blue: "#3b82f6",
-  red: "#ef4444",
-  green: "#22c55e",
-  purple: "#a855f7",
-};
-
-function ticks(min: number, max: number, count: number): number[] {
-  const step = (max - min) / (count - 1);
-  return Array.from({ length: count }, (_, i) => min + i * step);
-}
-
-function formatTick(value: number): string {
-  return Number.isInteger(value) ? String(value) : value.toFixed(1);
-}
-
 export function XYGraph({ diagram }: { diagram: XYGraphDiagram }) {
   const bounds = diagram;
-  const xTicks = ticks(diagram.xMin, diagram.xMax, TICK_COUNT);
-  const yTicks = ticks(diagram.yMin, diagram.yMax, TICK_COUNT);
+  const xTicks = axisTicks(diagram.xMin, diagram.xMax, TICK_COUNT);
+  const yTicks = axisTicks(diagram.yMin, diagram.yMax, TICK_COUNT);
 
   const originPx = projectPoint({ x: diagram.xMin, y: diagram.yMin }, bounds, DIMS);
   const topRightPx = projectPoint({ x: diagram.xMax, y: diagram.yMax }, bounds, DIMS);

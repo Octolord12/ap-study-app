@@ -1,7 +1,6 @@
-export interface ExamSectionLike {
-  type: string;
-  questionCount: number;
-}
+import { examDraws, type ExamSectionShape } from "@/lib/content/exam-sections";
+
+export type ExamSectionLike = ExamSectionShape;
 
 export interface FrqCandidate {
   id: string;
@@ -106,19 +105,27 @@ export function pickExamMcqIds(questions: readonly UnitCandidate[], count: numbe
 }
 
 // One draw per non-multiple-choice section, in the order the exam format lists them, each from the prompts
-// of that section's type. If a type has fewer prompts than the section asks for, the exam gets fewer rather
-// than failing (validate-content checks the shipped courses never are short). A section with no matching
-// type draws nothing: before this existed, a course with no plain "FRQ" section (World History) got
-// *every* free-response prompt it had.
+// of that section's type (a section with `kinds` is one draw per kind, see exam-sections.ts). If a type has fewer
+// prompts than the section asks for, the exam gets fewer rather than failing (validate-content checks the
+// shipped courses never are short). A section with no matching type draws nothing: before this existed, a
+// course with no plain "FRQ" section (World History) got *every* free-response prompt it had.
 export function pickExamFrqIds(sections: readonly ExamSectionLike[], prompts: readonly FrqCandidate[], random: () => number = Math.random, weights?: UnitWeights): string[] {
   const picked: string[] = [];
   const used = new Set<string>();
   for (const section of sections) {
-    if (section.type === "MCQ") continue;
-    const pool = prompts.filter((p) => p.type === section.type && !used.has(p.id));
-    for (const prompt of pickByUnitWeight(pool, section.questionCount, weights, random)) {
-      picked.push(prompt.id);
-      used.add(prompt.id);
+    const unitsUsed = new Set<string>();
+    for (const draw of examDraws([section])) {
+      let pool = prompts.filter((p) => p.type === draw.type && !used.has(p.id));
+      if (draw.spreadUnits) {
+        // Keep to units this section has not used if enough prompts remain there; otherwise any unit is better than a short exam.
+        const fresh = pool.filter((p) => p.unitId === undefined || !unitsUsed.has(p.unitId));
+        if (fresh.length >= draw.count) pool = fresh;
+      }
+      for (const prompt of pickByUnitWeight(pool, draw.count, weights, random)) {
+        picked.push(prompt.id);
+        used.add(prompt.id);
+        if (prompt.unitId !== undefined) unitsUsed.add(prompt.unitId);
+      }
     }
   }
   return picked;

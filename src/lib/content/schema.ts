@@ -34,8 +34,10 @@ export const RubricLineSchema = z.object({
 });
 
 // Which exam section a prompt is drawn for. Left out, it means plain "FRQ", the one
-// free-response section CSA, Calc and Physics have; World History must say SAQ, DBQ or LEQ.
-export const FrqTypeSchema = z.enum(["FRQ", "SAQ", "DBQ", "LEQ"]);
+// free-response section CSA, Calc and Physics have; World History must say SAQ, DBQ or LEQ; AP Biology's six
+// questions are six kinds (see ExamSectionSchema.kinds): experimental results (with and without graphing),
+// scientific investigation, conceptual analysis, analyzing a model, analyzing data.
+export const FrqTypeSchema = z.enum(["FRQ", "SAQ", "DBQ", "LEQ", "RESULTS", "RESULTS_GRAPH", "INVESTIGATION", "CONCEPT", "MODEL", "DATA"]);
 
 export const FRQSchema = z.object({
   id: z.string().min(1),
@@ -75,13 +77,22 @@ export const UnitSchema = z.object({
   topics: z.array(TopicSchema).min(1),
 });
 
-export const ExamSectionSchema = z.object({
-  type: z.enum(["MCQ", "FRQ", "SAQ", "DBQ", "LEQ"]),
-  questionCount: z.number().int().positive(),
-  durationMinutes: z.number().int().positive(),
-  scoreWeight: z.number().min(0).max(1),
-  calculatorAllowed: z.boolean().optional(),
-});
+export const ExamSectionSchema = z
+  .object({
+    type: z.enum(["MCQ", "FRQ", "SAQ", "DBQ", "LEQ"]),
+    questionCount: z.number().int().positive(),
+    durationMinutes: z.number().int().positive(),
+    scoreWeight: z.number().min(0).max(1),
+    calculatorAllowed: z.boolean().optional(),
+    // One prompt of each kind, in this order; see lib/content/exam-sections.ts. Only on a free-response section.
+    kinds: z.array(FrqTypeSchema).min(2).optional(),
+  })
+  .superRefine((section, ctx) => {
+    if (!section.kinds) return;
+    if (section.type === "MCQ") ctx.addIssue({ code: "custom", message: "kinds belongs on a free-response section, not MCQ" });
+    if (section.kinds.length !== section.questionCount) ctx.addIssue({ code: "custom", message: `kinds lists ${section.kinds.length} but questionCount is ${section.questionCount}` });
+    if (new Set(section.kinds).size !== section.kinds.length) ctx.addIssue({ code: "custom", message: "kinds must be different from one another" });
+  });
 
 export const CourseSchema = z.object({
   slug: z.string().min(1),

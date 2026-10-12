@@ -86,3 +86,13 @@ export function bestLabelDirection(occupiedAngles: number[]): number {
   }
   return best;
 }
+
+// Evenly spaced axis ticks from min to max, inclusive.
+export function axisTicks(min: number, max: number, count: number): number[] {
+  const step = (max - min) / (count - 1);
+  return Array.from({ length: count }, (_, i) => min + i * step);
+}
+
+export function formatTick(value: number): string {
+  return Number.isInteger(value) ? String(value) : value.toFixed(1);
+}
