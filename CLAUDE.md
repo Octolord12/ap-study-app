@@ -233,7 +233,7 @@ the same course's exam close together. Fine for now; revisit if that matters.
 
 **Which free-response prompts an exam gets** (`pickExamFrqIds`, `lib/study/exam-selection.ts`,
 pure and tested): for each non-MCQ section of the course's `examFormat`, in the order listed,
-`questionCount` prompts drawn at random from the prompts whose `FRQPrompt.type` equals the
+`questionCount` prompts drawn (weighted by unit, see below) from the prompts whose `FRQPrompt.type` equals the
 section's type. CSA, Calc and Physics have one `FRQ` section (4, 6, 4 prompts); World History
 has `SAQ` 3, `DBQ` 1, `LEQ` 1, so every World simulation is 55 MCQ + 3 SAQ + 1 DBQ + 1 LEQ in
 that order. The runner and results page label each prompt ("Short answer 2 of 3",
@@ -251,6 +251,30 @@ database and requires every question to be about equally likely (mutation-checke
 runs, quiet and under CPU load). **Don't write `sort(() => Math.random() - 0.5)` anywhere**; use `shuffled()` (`lib/study/exam-selection.ts`).
 Still true: one 195-minute clock for the whole exam (sections are not timed separately), no
 choice among LEQ prompts, and the score estimate uses MCQ accuracy only.
+
+**Exams follow the unit weightings** (2026-10-11; no migration, no content change). The multiple-choice section and every free-response section are drawn
+in proportion to the CED unit weightings instead of uniformly over the bank. Before, a unit's share of an exam followed how many questions it happened to have:
+BC Units 9 and 10 were 22.7% of the multiple choice against the real exam's 25-35%, and about 28% of BC exams had no free-response prompt from them.
+`pickExamMcqIds` and `pickExamFrqIds` (`lib/study/exam-selection.ts`, pure) call `pickByUnitWeight`, which splits the count over the units with
+`allocateByWeight` and then draws uniformly inside each unit; the exam is shuffled so questions are not grouped by unit. A unit's weight is
+`weightingMin + weightingMax` (twice the midpoint; only the proportions matter). The split is **randomized systematic sampling**, not rounding and not
+independent draws: every unit gets the floor or the ceiling of its exact share, the counts add up to exactly N, and a unit's average over many exams is
+exactly its share. The units are shuffled first, because in a fixed order two neighbours whose shares add to less than one could never appear together (tested).
+A unit over its capacity is pinned there and the rest is split again. **It falls back to the old uniform draw** when there is nothing to weight by: no weights,
+a question or prompt without a unit, or a unit whose weight is not positive. `startExam` reads the course's units and selects `unitId` on questions and prompts;
+the two-argument `pickExamFrqIds(sections, prompts)` still works.
+- **What it gives** (2,000 simulated exams per course against the real bank, read-only): every course's multiple choice matches its weightings to within a tenth of a
+  point. BC's 42 questions are always 3,3,3,3,5,7,3,3,5,7 across Units 1-10 (the shares come out whole, so the split does not vary, only the questions do), and every
+  BC exam has exactly one Unit 6 and one Unit 10 free-response prompt (so always a series question) and a Unit 9 one in about 71% of exams.
+- **Free response is an approximation.** The CED weightings are for the multiple-choice section, and the history courses' DBQ and LEQ prompts sit in units that are loose
+  tags (a section of one prompt is drawn from the units that have one of that type), so history free response does not match the weightings (U.S. History's Unit 3 gets 16.1%
+  against a 13.8% target). A by-product that matches the May 2027 rule: the three SAQs of a World or U.S. History exam always come from three different units. Not modeled: the real
+  exam's Part A and B (calculator) split.
+- **Tests**: `tests/exam-weighting.test.ts` (a seeded generator, so it is deterministic; includes every shipped course against its real content files; mutation-checked
+  eight ways: fixed unit order, no random start, ignoring the weights, no capacity pin, no final shuffle, free response ignoring the weights, the wrong weight formula,
+  floored shares) and `tests/start-exam.test.ts` (the action against a faked database that returns only the columns a query selects, so a forgotten `unitId` is caught;
+  mutation-checked four ways). Checked for real with scratch account `scratch_wx` on the local dev server: a BC exam through the real form drew 3,3,3,3,5,7,3,3,5,7 and
+  free response from Units 2, 4, 5, 6, 9 and 10; deleted afterwards, every count identical to the baseline snapshot.
 
 **FRQ self-grading** (`src/components/study/frq-self-grade.tsx`) finally puts
 Milestone 1's `SelfGradingStrategy` (`src/lib/scoring/grading.ts`) to use, and
@@ -1839,10 +1863,11 @@ of this section).
   `*-hard.json` before, so it had not looked at any new item until that was fixed).
 - **Code changes** (small): `lib/content/math-courses.ts` includes `ap-calc-bc` (notebook-paper cards, plain-text-math typesetting); "AP Calculus BC" is off the Coming soon list (only AP Biology is left);
   `tests/math-courses.test.ts` (mutation-checked) and `tests/coming-soon.test.tsx` cover them. The "five exams" headlines come from the course count, so they say "six" once the course is seeded.
-- **Known deviations**: (0) **the free-response draw is uniform too**: of 55 prompts only 10 are in Units 9-10 and 15 are the new ones, so a BC exam can have no series, parametric or polar
-  free-response at all (about 28% of draws have none from Units 9-10; the first scratch exam drew six Calc AB copies), whereas the real exam always covers them. (1) the exam draw is uniform over the pool, so Units 9 and 10 make up 22.7% of a BC exam against 25-35% on the real one (and Unit 6 13.6% against 15-20%). A draw weighted by
-  the unit weightings would fix it for every course, but it is an engine change nobody has asked for. (2) The calculator and no-calculator parts are not modeled (same as AB). (3) Parts of the real exam
-  that show a graph or a slope field are text only here.
+- **Known deviations**: (1) **a BC exam's free response mixes prompts of different sizes**: only the 15 new prompts are 9 points; the 40 copied from Calc AB are worth 3 to 8 points
+  (counts: 3 pts 5, 4 pts 19, 5 pts 1, 6 pts 3, 7 pts 8, 8 pts 4, 9 pts 15), so a drawn exam does not add up to the real exam's 54 points. The exam score estimate uses multiple choice only, so nothing
+  computed is affected, but the free-response part does not read like the real one. (2) The calculator and no-calculator parts are not modeled (same as AB). (3) Parts of the real exam that show a
+  graph or a slope field are text only here. *(The earlier deviations about a uniform exam draw, Units 9-10 at 22.7% of the multiple choice and no series free response in 28% of exams, were fixed 2026-10-11:
+  see "Exams follow the unit weightings".)*
 - **Tools**: `make_units.py`, `derive_from_ab.py`, `u6_bc.py` .. `u10_bc.py` in `scripts/content-authoring/ap-calc-bc/`; the refresher scripts are in `ap-calc-bc-refreshers/` (`common.py` plus `u6.py` .. `u10.py`, each re-checking
   its worked examples with sympy). A script overwrites its output, so edit the script. Checks after any change: `npm run content:validate`, `npx tsx scripts/content-authoring/render-audit.ts ap-calc-bc`, `npm run test`.
 - **Seeded 2026-10-09** with `npm run content:seed -- ap-calc-bc` (about 8 minutes; "approvals kept: 0" since nothing existed). Verified read-only against the files afterwards (`verify-bc.ts` in the session scratch folder
@@ -2120,6 +2145,8 @@ in app logic — updating them should be a data edit.
 - [x] **Post-launch: class tools, teacher role, parent link, search (2026-10-09).** Rename, hand over, new invite code, delete, block, an admin-granted teacher role gating
       `/teacher`, a student-made read-only parent link, refresher search, secure invite codes, uniform question draws. Three additive migrations. See "Social",
       "Teachers and /teacher", "Parent link" and "Refresher search".
+- [x] **Post-launch: exams follow the unit weightings (2026-10-11).** The multiple-choice and free-response draws are weighted by the CED unit weightings in every course (BC always gets a series
+      question). Code and tests only, no migration or reseed. See "Exams follow the unit weightings" under Exam simulation.
 
 ## Known issues / follow-ups
 
@@ -2243,6 +2270,8 @@ in app logic — updating them should be a data edit.
   real student's, matched the post-seed snapshot.
   The AP Calculus BC course was checked with `scratch_bc` / `scratch-bc@example.com` (2026-10-09; signed up through the real form on the local dev server, never promoted to ADMIN; see "AP Calculus BC");
   deleted afterwards and every count matched the post-seed snapshot.
+  The weighted exam draw was checked with `scratch_wx` / `scratch-wx@example.com` (2026-10-11; real signup form on the local dev server, never promoted to ADMIN): enrolled in BC, started a real
+  exam (48 items, 3:09:47 clock) and read its stored ids from the database. Deleted afterwards (it had one enrollment and one exam) and every per-user and per-table count matched the baseline taken just before.
   Unfriending and cancelling a sent request were checked with two scratch accounts, `scratch_fa` and `scratch_fb`
   (`scratch-fa@example.com`, `scratch-fb@example.com`, 2026-10-09), signed in at once by using `localhost:3000` for one and
   `127.0.0.1:3000` for the other (the browser keeps separate sessions per origin): request sent, the other side sees it, cancel
