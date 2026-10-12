@@ -7,7 +7,7 @@ import { getDb } from "@/lib/db";
 import { computeNextReview } from "@/lib/study/spaced-repetition";
 import { pickQuestionIdsForCustomQuiz } from "@/lib/study/queries";
 import { estimateApScoreRange } from "@/lib/study/exam-scoring";
-import { pickExamFrqIds, shuffled } from "@/lib/study/exam-selection";
+import { pickExamFrqIds, pickExamMcqIds, unitWeightsFrom } from "@/lib/study/exam-selection";
 import { SelfGradingStrategy, type RubricLine } from "@/lib/scoring/grading";
 import { grantXpForActivity } from "@/lib/gamification/activity";
 import { xpForCorrectAnswer, xpForFrqPoints } from "@/lib/gamification/xp";
@@ -250,15 +250,17 @@ export async function startExam(courseId: string, courseSlug: string): Promise<v
   const examFormat = course.examFormat as unknown as ContentCourse["examFormat"];
   const mcqTarget = examFormat.sections.find((s) => s.type === "MCQ")?.questionCount;
 
-  const [availableQuestions, availableFrqs] = await Promise.all([
-    db.question.findMany({ where: { courseId }, select: { id: true } }),
-    db.fRQPrompt.findMany({ where: { courseId }, select: { id: true, type: true } }),
+  const [availableQuestions, availableFrqs, units] = await Promise.all([
+    db.question.findMany({ where: { courseId }, select: { id: true, unitId: true } }),
+    db.fRQPrompt.findMany({ where: { courseId }, select: { id: true, type: true, unitId: true } }),
+    db.unit.findMany({ where: { courseId }, select: { id: true, weightingMin: true, weightingMax: true } }),
   ]);
 
   // If a bank is ever smaller than the real exam, use whatever is there rather
   // than failing, and say so on the intro screen.
-  const questionIds = shuffled(availableQuestions.map((q) => q.id)).slice(0, mcqTarget ?? availableQuestions.length);
-  const frqPromptIds = pickExamFrqIds(examFormat.sections, availableFrqs);
+  const weights = unitWeightsFrom(units);
+  const questionIds = pickExamMcqIds(availableQuestions, mcqTarget, weights);
+  const frqPromptIds = pickExamFrqIds(examFormat.sections, availableFrqs, Math.random, weights);
 
   const attempt = await db.examAttempt.create({
     data: { userId, courseId, questionIds, frqPromptIds },
