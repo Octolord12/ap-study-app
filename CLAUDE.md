@@ -539,7 +539,7 @@ reviewed (bool, default false)
 **FRQ Prompt** (`content/<course>/frqs/*.json`)
 ```
 id, unit, topic,
-type (optional: FRQ | SAQ | DBQ | LEQ; omitted means FRQ. Must be one of the course's exam
+type (optional: FRQ | SAQ | DBQ | LEQ | RESULTS | RESULTS_GRAPH | INVESTIGATION | CONCEPT | MODEL | DATA (the last six are AP Biology's); omitted means FRQ. Must be one of the course's exam
       section types, so every World History prompt has to say SAQ, DBQ or LEQ),
 prompt, pointValue,
 rubric: [{ id, points, description }]  (points must sum to pointValue),
@@ -665,13 +665,26 @@ results, standalone FRQ practice, admin review — 8 call sites across 4
 independent data-fetch paths, since there's no single shared "render a
 question" function covering all of them).
 
-**Scope boundary** (documented rather than silently expanded, same as the
+**Scope boundary** (this was written for Physics 1; AP Biology added three kinds on 2026-10-11, see "Diagram kinds added for AP Biology" below)
+(documented rather than silently expanded, same as the
 World History SAQ/DBQ/LEQ gap): only two diagram categories are supported —
 reading a given graph (the graph *is* the given data, not word-equivalent)
 and force-vector diagrams (directions/magnitudes are awkward to specify
 unambiguously in prose). Mechanical scene layouts (inclines, pulleys,
 springs, pendulums as physical arrangements) stay word-described in the stem,
 as before.
+
+**Diagram kinds added for AP Biology** (2026-10-11; `lib/content/diagram-schema.ts`, rendered by the same `DiagramRenderer`, so every question and free-response page shows them with no call-site change):
+- `data-table`: `columns`, `rows` (cells are plain text or numbers, never markdown or HTML), optional `caption`, `rowHeaders` (a Punnett square). A real `<table>` with `scope`d headers inside a focusable,
+  labelled, `overflow-x: auto` region, so on a phone a wide table scrolls in its own box instead of widening the page. **Authoring notes**: a JS number loses its trailing zero (`2.0` prints `2`), so write
+  measured values that need one as strings; cells are plain text, so write `(o - e)²` with Unicode, not `^2`.
+- `bar-graph`: `categories` (2-8), `series` (1-3, each `values` and optional `errors`, drawn as ±bars with caps), `yMin` (below zero for a percent change), `yMax`, a legend when there are several series,
+  category names tilted when the longest would collide (`shouldRotateLabels`). `validateDiagram` checks counts, that every bar and its error bar fit on the axis, that several series are labelled.
+- `cladogram`: a tree `{label?, mark?, trait?, children?}`, tips aligned on the right, `mark` a numbered circle on a node ("which number shows..."), `trait` a labelled tick on the branch leading *into* the
+  node. Only tips have labels; at most 12 tips and 6 levels deep (`validateDiagram`). Trait labels have a halo in the card colour so one wider than its branch stays legible across a connector.
+- Every kind has a text equivalent built from its own data (`lib/diagrams/describe.ts`), used as its accessible name unless the content gives an `altText`. The layout maths is pure (`bar-layout.ts`,
+  `cladogram-layout.ts`) and unit-tested. Pedigrees and cell or molecule drawings stay word-described. Checked in the browser on a temporary preview page (deleted): desktop light and dark, and 375px (no overflow;
+  the 8-column table scrolls inside its box; graphs and trees scale to the column). Tests: `diagrams-data`, `diagrams-layout`, `diagram-components`, mutation-checked (40 mutations, all caught).
 
 **Bug found and fixed while building this**: the force-diagram's object
 label was placed at a fixed position (directly south of the marker), which
@@ -1265,6 +1278,9 @@ per-student data appears here. Tests: `tests/teacher-role.test.ts` (the gate, in
 `tests/admin-teachers.test.ts` (in-memory user table; mutation-checked eight ways). Promoting someone to ADMIN is still a direct database write; teachers are not.
 
 ### Applying migrations here
+
+**`FRQPrompt.type` is a Prisma enum (`FrqType`), not a string**: a new free-response type needs `ALTER TYPE "FrqType" ADD VALUE ...` (found 2026-10-11 when `tsc` rejected a new value; I had said "no
+migration" before looking). Apply it with `migrate deploy` *before* seeding prompts that use the value.
 
 `npm run db:migrate` is `prisma migrate dev` (needs a shadow database, awkward on
 Neon). What worked: generate the SQL offline with
@@ -1893,6 +1909,42 @@ of this section).
   counts were unchanged, the database still matched the files, and the live About page read "All 3,053 have been checked by a person." Re-seeding keeps all of these approvals while the files are unchanged; editing a text and re-seeding sends that row back for review.
 - **Status**: the course is complete and live; nothing is open.
 
+## AP Biology (the seventh course) - in progress
+
+Started 2026-10-11 (owner: "Do Weighted Exam draw and then start on ap bio"; full BC-size scope accepted). **Nothing is seeded and no content exists yet; only the engine support below is built.**
+
+- **Facts used** (AP Central and the 2025-26 Course and Exam Description, a 240-page PDF the owner approved downloading on 2026-10-11, plus its one-page Clarifications and Corrections, which is cosmetic: formatting,
+  resource links, FRQ 5's title, sample FRQs 2 and 5 swapped; text extracted with the PDFKit tool). **60 topics in 8 units** (7, 10, 5, 6, 5, 8, 12, 7); multiple-choice weightings 8-11, 10-13, 12-16, 10-15, 8-11,
+  12-16, 13-20, 10-15. The topic list (CED numbers): Unit 1 Chemistry of Life: 1.1 Structure of Water and Hydrogen Bonding, 1.2 Elements of Life, 1.3 Introduction to Macromolecules, 1.4 Carbohydrates, 1.5 Lipids,
+  1.6 Nucleic Acids, 1.7 Proteins. Unit 2 Cells: 2.1 Cell Structure and Function, 2.2 Cell Size, 2.3 Plasma Membrane, 2.4 Membrane Permeability, 2.5 Membrane Transport, 2.6 Facilitated Diffusion, 2.7 Tonicity and
+  Osmoregulation, 2.8 Mechanisms of Transport, 2.9 Cell Compartmentalization, 2.10 Origins of Cell Compartmentalization. Unit 3 Cellular Energetics: 3.1 Enzymes, 3.2 Environmental Impacts on Enzyme Function,
+  3.3 Cellular Energy, 3.4 Photosynthesis, 3.5 Cellular Respiration. Unit 4 Cell Communication and Cell Cycle: 4.1 Cell Communication, 4.2 Introduction to Signal Transduction, 4.3 Signal Transduction Pathways,
+  4.4 Feedback, 4.5 Cell Cycle, 4.6 Regulation of Cell Cycle. Unit 5 Heredity: 5.1 Meiosis, 5.2 Meiosis and Genetic Diversity, 5.3 Mendelian Genetics, 5.4 Non-Mendelian Genetics, 5.5 Environmental Effects on
+  Phenotype. Unit 6 Gene Expression and Regulation: 6.1 DNA and RNA Structure, 6.2 DNA Replication, 6.3 Transcription and RNA Processing, 6.4 Translation, 6.5 Regulation of Gene Expression, 6.6 Gene Expression and
+  Cell Specialization, 6.7 Mutations, 6.8 Biotechnology. Unit 7 Natural Selection: 7.1 Introduction to Natural Selection, 7.2 Natural Selection, 7.3 Artificial Selection, 7.4 Population Genetics,
+  7.5 Hardy-Weinberg Equilibrium, 7.6 Evidence of Evolution, 7.7 Common Ancestry, 7.8 Continuing Evolution, 7.9 Phylogeny, 7.10 Speciation, 7.11 Variations in Populations, 7.12 Origins of Life on Earth.
+  Unit 8 Ecology: 8.1 Responses to the Environment, 8.2 Energy Flow Through Ecosystems, 8.3 Population Ecology, 8.4 Effect of Density on Populations, 8.5 Community Ecology, 8.6 Biodiversity, 8.7 Disruptions in
+  Ecosystems. Each topic page in the CED lists its learning objectives and "essential knowledge" statements: write content from those, not from memory.
+- **Exam format** (CED "Exam Overview"; AP Central lists no 2027 change): 60 multiple-choice questions in 90 minutes (stand-alone or in sets of 4-5), then 6 free-response in 90 minutes, 3 hours, calculators allowed on both
+  sections. The six free-response questions are six *kinds*: 1 Interpreting and Evaluating Experimental Results (9 points: parts of 1, 3, 3, 2), 2 the same with Graphing (9: 1, 4, 2, 2; the student constructs a graph from
+  a table), 3 Scientific Investigation (4), 4 Conceptual Analysis (4), 5 Analyze Model or Visual Representation (4), 6 Analyze Data (4). **Each short question focuses on a different big idea and a different unit.**
+  The equation sheet gives: mean, standard deviation, standard error, chi-square with its table (p 0.05 and 0.01, 1-8 degrees of freedom), laws of probability, Hardy-Weinberg, rate, population growth, exponential and
+  logistic growth, Simpson's diversity, water and solute potential (R = 0.0831 L bar / mol K), and surface area and volume formulas.
+- **Engine support built (2026-10-11), before any content**:
+  - **`ExamSection.kinds`** (`lib/content/exam-sections.ts`, `schema.ts`): a free-response section may list several prompt types, one prompt of each in order. Biology's exam is `MCQ 60 / 90 min` plus
+    `FRQ 6 / 90 min` with `kinds: [RESULTS, RESULTS_GRAPH, INVESTIGATION, CONCEPT, MODEL, DATA]`, so the exam intro and course cards still read "6 free response, 1 h 30" (six separate sections would have shown six lines
+    and split the 90 minutes). `examDraws()` expands a section into draws, `drawableTypes()` is the set of prompt types a course may have (a Biology prompt left as plain `FRQ` is rejected, it would never be drawn),
+    `checkExamSupply` needs one prompt of every kind, and `pickExamFrqIds` draws one of each kind in order, preferring units this section has not used yet (falling back rather than dropping a kind), still weighted
+    by unit. A course without `kinds` is drawn exactly as before.
+  - **Six new `FrqType` values** (`RESULTS`, `RESULTS_GRAPH`, `INVESTIGATION`, `CONCEPT`, `MODEL`, `DATA`; titles are the College Board's names, in `lib/content/exam-format.ts`): migration
+    `20261011180000_add_ap_biology_frq_types` (six `ALTER TYPE ... ADD VALUE`). **Apply it with `migrate deploy` before seeding Biology prompts.**
+  - **Three diagram kinds** (`data-table`, `bar-graph`, `cladogram`): see "Diagram kinds added for AP Biology" under the diagram support.
+- **Decided, not built**: BC-size content (about 540 multiple choice, about 48 free response, 60 refreshers; 360 over 60 topics would be 6 a topic and "Practice this topic" draws 10); calculations computed in
+  Python or sympy (chi-square against the table, Hardy-Weinberg, water potential, growth, Simpson's index, SE, surface area to volume), facts kept to the CED's required content and proofread (not machine-checkable;
+  the owner's review is the check); each multiple-choice question carries its own stimulus (the app has no shared-stimulus sets); "construct the graph" parts are answered in writing (axes, scale, plotted values)
+  and graded against the rubric; Biology stays out of `math-courses.ts` (no notebook-paper cards), with reaction arrows and subscripts written explicitly.
+- **Next**: `make_units.py`-style structure (course.json with the real format, 60 topics), then content by unit, then seed, browser check, push and approvals, each step gated as for BC.
+
 ## Forgot password and email
 
 Built 2026-10-05 and **not live until a domain is verified** (see "Turning it on"). Resend is the
@@ -2145,6 +2197,7 @@ in app logic — updating them should be a data edit.
 - [x] **Post-launch: class tools, teacher role, parent link, search (2026-10-09).** Rename, hand over, new invite code, delete, block, an admin-granted teacher role gating
       `/teacher`, a student-made read-only parent link, refresher search, secure invite codes, uniform question draws. Three additive migrations. See "Social",
       "Teachers and /teacher", "Parent link" and "Refresher search".
+- [ ] **Post-launch: AP Biology (started 2026-10-11).** Engine support built (free-response kinds, three diagram kinds); content, seed and push still to do. See "AP Biology".
 - [x] **Post-launch: exams follow the unit weightings (2026-10-11).** The multiple-choice and free-response draws are weighted by the CED unit weightings in every course (BC always gets a series
       question). Code and tests only, no migration or reseed. See "Exams follow the unit weightings" under Exam simulation.
 
