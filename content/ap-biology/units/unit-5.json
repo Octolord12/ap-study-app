@@ -1,0 +1,34 @@
+{
+  "slug": "unit-5-heredity",
+  "order": 5,
+  "name": "Heredity",
+  "weightingMin": 8,
+  "weightingMax": 11,
+  "topics": [
+    {
+      "slug": "meiosis",
+      "order": 1,
+      "name": "Meiosis"
+    },
+    {
+      "slug": "meiosis-and-genetic-diversity",
+      "order": 2,
+      "name": "Meiosis and Genetic Diversity"
+    },
+    {
+      "slug": "mendelian-genetics",
+      "order": 3,
+      "name": "Mendelian Genetics"
+    },
+    {
+      "slug": "non-mendelian-genetics",
+      "order": 4,
+      "name": "Non-Mendelian Genetics"
+    },
+    {
+      "slug": "environmental-effects-on-phenotype",
+      "order": 5,
+      "name": "Environmental Effects on Phenotype"
+    }
+  ]
+}

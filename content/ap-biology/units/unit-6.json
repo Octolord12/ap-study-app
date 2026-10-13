@@ -1,0 +1,49 @@
+{
+  "slug": "unit-6-gene-expression-and-regulation",
+  "order": 6,
+  "name": "Gene Expression and Regulation",
+  "weightingMin": 12,
+  "weightingMax": 16,
+  "topics": [
+    {
+      "slug": "dna-and-rna-structure",
+      "order": 1,
+      "name": "DNA and RNA Structure"
+    },
+    {
+      "slug": "dna-replication",
+      "order": 2,
+      "name": "DNA Replication"
+    },
+    {
+      "slug": "transcription-and-rna-processing",
+      "order": 3,
+      "name": "Transcription and RNA Processing"
+    },
+    {
+      "slug": "translation",
+      "order": 4,
+      "name": "Translation"
+    },
+    {
+      "slug": "regulation-of-gene-expression",
+      "order": 5,
+      "name": "Regulation of Gene Expression"
+    },
+    {
+      "slug": "gene-expression-and-cell-specialization",
+      "order": 6,
+      "name": "Gene Expression and Cell Specialization"
+    },
+    {
+      "slug": "mutations",
+      "order": 7,
+      "name": "Mutations"
+    },
+    {
+      "slug": "biotechnology",
+      "order": 8,
+      "name": "Biotechnology"
+    }
+  ]
+}

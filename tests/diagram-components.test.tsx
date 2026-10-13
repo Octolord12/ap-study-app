@@ -122,6 +122,31 @@ describe("cladogram", () => {
   });
 });
 
+describe("xy-graph legend", () => {
+  const xy = (series: { label?: string; color: "blue" | "red" | "green" | "purple" }[]): Diagram => ({
+    type: "xy-graph", xLabel: "S (mM)", yLabel: "Rate", xMin: 0, xMax: 10, yMin: 0, yMax: 10,
+    series: series.map((s) => ({ ...s, points: [{ x: 0, y: 0 }, { x: 5, y: 5 }] })),
+  });
+
+  it("names each line when there are several, so a question can refer to them", () => {
+    const { container } = render(<DiagramRenderer diagram={xy([{ label: "No inhibitor", color: "blue" }, { label: "Inhibitor X", color: "red" }])} />);
+    expect(screen.getByText("No inhibitor")).toBeInTheDocument();
+    expect(screen.getByText("Inhibitor X")).toBeInTheDocument();
+    expect(container.querySelectorAll("svg rect")).toHaveLength(2);
+  });
+
+  it("draws no legend for a single line, even a named one, and keeps the original height", () => {
+    const { container } = render(<DiagramRenderer diagram={xy([{ label: "Only line", color: "blue" }])} />);
+    expect(screen.queryByText("Only line")).toBeNull();
+    expect(container.querySelector("svg")!.getAttribute("viewBox")).toBe("0 0 400 280");
+  });
+
+  it("adds the legend's room above the plot, leaving the plot the same size", () => {
+    const { container } = render(<DiagramRenderer diagram={xy([{ label: "A", color: "blue" }, { label: "B", color: "red" }])} />);
+    expect(container.querySelector("svg")!.getAttribute("viewBox")).toBe("0 0 400 306");
+  });
+});
+
 describe("DiagramRenderer", () => {
   it("still draws the original two kinds", () => {
     const xy: Diagram = { type: "xy-graph", xLabel: "t (s)", yLabel: "v (m/s)", xMin: 0, xMax: 10, yMin: 0, yMax: 10, series: [{ points: [{ x: 0, y: 0 }, { x: 5, y: 5 }], color: "blue" }] };

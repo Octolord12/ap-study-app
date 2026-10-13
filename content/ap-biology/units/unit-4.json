@@ -1,0 +1,39 @@
+{
+  "slug": "unit-4-cell-communication-and-cell-cycle",
+  "order": 4,
+  "name": "Cell Communication and Cell Cycle",
+  "weightingMin": 10,
+  "weightingMax": 15,
+  "topics": [
+    {
+      "slug": "cell-communication",
+      "order": 1,
+      "name": "Cell Communication"
+    },
+    {
+      "slug": "introduction-to-signal-transduction",
+      "order": 2,
+      "name": "Introduction to Signal Transduction"
+    },
+    {
+      "slug": "signal-transduction-pathways",
+      "order": 3,
+      "name": "Signal Transduction Pathways"
+    },
+    {
+      "slug": "feedback",
+      "order": 4,
+      "name": "Feedback"
+    },
+    {
+      "slug": "cell-cycle",
+      "order": 5,
+      "name": "Cell Cycle"
+    },
+    {
+      "slug": "regulation-of-cell-cycle",
+      "order": 6,
+      "name": "Regulation of Cell Cycle"
+    }
+  ]
+}

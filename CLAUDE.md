@@ -682,6 +682,7 @@ as before.
   category names tilted when the longest would collide (`shouldRotateLabels`). `validateDiagram` checks counts, that every bar and its error bar fit on the axis, that several series are labelled.
 - `cladogram`: a tree `{label?, mark?, trait?, children?}`, tips aligned on the right, `mark` a numbered circle on a node ("which number shows..."), `trait` a labelled tick on the branch leading *into* the
   node. Only tips have labels; at most 12 tips and 6 levels deep (`validateDiagram`). Trait labels have a halo in the card colour so one wider than its branch stays legible across a connector.
+- The line graph (`xy-graph`) draws a legend when it has several series and at least one is named (added 2026-10-11, see "AP Biology"); the bar graph does too.
 - Every kind has a text equivalent built from its own data (`lib/diagrams/describe.ts`), used as its accessible name unless the content gives an `altText`. The layout maths is pure (`bar-layout.ts`,
   `cladogram-layout.ts`) and unit-tested. Pedigrees and cell or molecule drawings stay word-described. Checked in the browser on a temporary preview page (deleted): desktop light and dark, and 375px (no overflow;
   the 8-column table scrolls inside its box; graphs and trees scale to the column). Tests: `diagrams-data`, `diagrams-layout`, `diagram-components`, mutation-checked (40 mutations, all caught).
@@ -1207,7 +1208,7 @@ content is not exposed.
 - The "Coming soon" section (`ComingSoon`) is shown in two places: the bottom of
   the signed-out landing page and the bottom of the signed-in Today screen (both
   its first-course picker and its main view), so its copy must not refer to
-  anything else on the page. Subjects listed in it are the owner's examples (now only AP Biology),
+  anything else on the page. Subjects listed in it are the owner's examples (none now: AP Biology was the last, built 2026-10-11; with `PLANNED_SUBJECTS` empty the section is headed "More subjects" and keeps only the waitlist),
   marked "Planned", no dates. AP U.S. History and AP Calculus BC were on the list until they were built. The copy states no
   count of exams (the component has no data of its own); the landing page and the courses page
   headline derive "five exams" from the course list (`countWord`, `lib/count-word.ts`).
@@ -1937,13 +1938,75 @@ Started 2026-10-11 (owner: "Do Weighted Exam draw and then start on ap bio"; ful
     `checkExamSupply` needs one prompt of every kind, and `pickExamFrqIds` draws one of each kind in order, preferring units this section has not used yet (falling back rather than dropping a kind), still weighted
     by unit. A course without `kinds` is drawn exactly as before.
   - **Six new `FrqType` values** (`RESULTS`, `RESULTS_GRAPH`, `INVESTIGATION`, `CONCEPT`, `MODEL`, `DATA`; titles are the College Board's names, in `lib/content/exam-format.ts`): migration
-    `20261011180000_add_ap_biology_frq_types` (six `ALTER TYPE ... ADD VALUE`). **Apply it with `migrate deploy` before seeding Biology prompts.**
+    `20261011180000_add_ap_biology_frq_types` (six `ALTER TYPE ... ADD VALUE`). **Applied to the shared database on 2026-10-11** with `migrate deploy` (status checked first: exactly this one pending;
+    PostgreSQL 18.6; the enum then read `FRQ, SAQ, DBQ, LEQ` plus the six; every per-table and per-user count identical before and after). The engine support was pushed the same day (`71e8410`, `d25b204`; deploy Ready).
   - **Three diagram kinds** (`data-table`, `bar-graph`, `cladogram`): see "Diagram kinds added for AP Biology" under the diagram support.
 - **Decided, not built**: BC-size content (about 540 multiple choice, about 48 free response, 60 refreshers; 360 over 60 topics would be 6 a topic and "Practice this topic" draws 10); calculations computed in
   Python or sympy (chi-square against the table, Hardy-Weinberg, water potential, growth, Simpson's index, SE, surface area to volume), facts kept to the CED's required content and proofread (not machine-checkable;
   the owner's review is the check); each multiple-choice question carries its own stimulus (the app has no shared-stimulus sets); "construct the graph" parts are answered in writing (axes, scale, plotted values)
   and graded against the rubric; Biology stays out of `math-courses.ts` (no notebook-paper cards), with reaction arrows and subscripts written explicitly.
-- **Next**: `make_units.py`-style structure (course.json with the real format, 60 topics), then content by unit, then seed, browser check, push and approvals, each step gated as for BC.
+- **Structure written (2026-10-11, step 2), in the working tree only**: `scripts/content-authoring/ap-biology/make_units.py` writes `content/ap-biology/course.json` (slug `ap-biology`, id prefix `ap-bio-`,
+  colour theme `teal`, 180 minutes: 60 multiple choice in 90 plus six free-response kinds in 90, calculators allowed on both) and `units/unit-1..8.json` (60 topics, slugs derived from the CED names, `order` = the
+  number after the dot in the CED's topic number). Checked two ways: all 60 names against the CED's own topic headers (no mismatch), and by parsing with the real `CourseSchema` / `UnitSchema` and `validateUnit`
+  (8 units, 60 topics, weightings' midpoints add to exactly 100). **Don't commit `content/ap-biology` until it has questions and prompts**: `npm run content:validate` reports one problem per kind ("exam section
+  RESULTS needs 1 prompt(s) of that type, but the course has 0", the guard working) and `tests/exam-supply.test.ts` and `tests/exam-weighting.test.ts` fail on the missing `questions/` and `frqs/` folders.
+  **Don't seed a partial course**: the landing page and the course list read the shared database, so a seeded course is visible to students immediately (this happened with BC before it was pushed).
+- **Unit 3 pilot written (2026-10-11), in the working tree only**: Cellular Energetics, the unit the owner agreed to see first. **60 multiple choice** (3.1 Enzymes 12, 3.2 Environmental Impacts 14, 3.3 Cellular Energy 10,
+  3.4 Photosynthesis 12, 3.5 Cellular Respiration 12; 12 easy, 31 medium, 17 hard; 17 carry a diagram: line graphs, data tables, a bar graph with error bars), **6 free-response prompts, one of each kind** (RESULTS on
+  catalase and temperature, 9 points; RESULTS_GRAPH on yeast fermenting five sugars, 9 points, graded on a written description of the bar graph with error bars; INVESTIGATION on lactase; CONCEPT on order, the second law and a
+  disrupted pathway; MODEL on the thylakoid membrane, with a data table as the "figure"; DATA on inhibitors, a three-line graph) and **5 refreshers**, one per topic.
+  - **Scripts**: `scripts/content-authoring/ap-biology/` has `lib.py` (the `Bank`, with the six kinds and their point totals asserted, plus `table`, `bars`, `tree`, `line` diagram builders and `mean`/`sd`/`se`/`pct_change`),
+    `u3_enzymes.py` (3.1 and 3.2), `u3_energy.py`, `u3_photo.py`, `u3_resp.py`, `u3_frq.py`, `u3_refreshers.py`, and `u3.py`, which assembles them and asserts the counts (60 questions, 12/14/10/12/12 per topic, six kinds in order).
+    Every number in a stem, table, choice or explanation comes from the same variables as the answer (rates, percent changes, means and standard errors computed from raw trials, a pH-to-concentration ratio), with asserts. Each
+    unit script starts with a docstring of the CED's required content and exclusions for its topics, so the questions stay inside what is tested (the Gibbs equation, Calvin-cycle steps, enzyme names and glycolysis steps are excluded
+    by the CED and not used). **Not machine-checked**: the biology in the sentences (what a structure does, which way protons flow, why a distractor is wrong), which was proofread against the essential-knowledge statements.
+  - **Checks run**: `content:validate` (all seven courses clean), `render-audit.ts ap-biology` (651 strings, 0 problems; the audit reads every file for this wholly new course), the choice-letter audit, and a visual check of real
+    items on a temporary page that read the JSON files with the real renderer (desktop and 375px: no overflow, one wide table scrolling inside its box, graphs legible; deleted afterwards).
+  - **Length tell, found and fixed**: as first written the right answer was uniquely the longest choice in **70%** of the questions where length can be a tell and the shortest in 6% (chance 25% each), because the correct
+    answer carried the qualifying clauses. Rewritten by trimming the right answers and lengthening the blunt wrong ones with wording that stays wrong (no meaning changed): now **22% longest, 17% shortest**, median
+    right-to-wrong length ratio 1.04. `length_stats.py [unit]` measures it. **Write every wrong choice about as long as the right one while drafting, and run it before moving on.**
+  - **Bug found by that visual check and fixed: a line graph had no legend.** `XYGraph` accepted a `label` on each series but never drew it, so "which curve is with the enzyme" and "which line is inhibitor Y" could not be
+    answered from the picture. It now draws a legend (shared `lib/diagrams/legend.ts`, wrapping to a second row if labels are long, also used by the bar graph) whenever there are several series and at least one is named; a
+    single line gets none. No existing course used labelled multi-series graphs, so nothing else changed. Tests in `diagrams-layout.test.ts` and `diagram-components.test.tsx`, mutation-checked (8 mutations).
+  - **Open design question (owner's call)**: the app shows a free-response prompt's figure *after* the whole prompt text, so a student reads parts (a) to (d) before the table or graph they refer to (the real exam shows the stimulus
+    first). A small change would let a prompt carry a marker that splits it around the figure (four render sites: practice page, exam, results, admin review).
+  - **Test status in the working tree**: `tests/exam-weighting.test.ts` fails for `ap-biology` ("unit-1-chemistry-of-life: 0 vs 5.7") until all eight units have questions, as expected. Everything else passes.
+- **Units 1 and 2 written (2026-10-11), in the working tree only**, the same way as Unit 3 (`u1_*.py`, `u2_*.py`, `u1_refreshers.py`, `u2_refreshers.py`, assembled by `u1.py` and `u2.py`):
+  - **Unit 1, Chemistry of Life**: 54 multiple choice (1.1 water 9, 1.2 elements 6, 1.3 macromolecules 8, 1.4 carbohydrates 7, 1.5 lipids 8, 1.6 nucleic acids 8, 1.7 proteins 8), 6 free response (RESULTS on radioactive
+    phosphorus and sulfur in bacteria, RESULTS_GRAPH on surface tension with a bar graph and error bars, INVESTIGATION on acid hydrolysis of sucrose, CONCEPT on a protein mutation, MODEL on a DNA segment, DATA on fatty-acid
+    melting points), 7 refreshers. **Unit 2, Cells**: **81** multiple choice (2.1 12, 2.2 8, 2.3 8, 2.4 8, 2.5 8, 2.6 8, 2.7 12, 2.8 6, 2.9 6, 2.10 5; the plan was 80, facilitated diffusion has two questions on one graph), 6
+    free response (potato cores and water potential, agar cubes and surface area-to-volume ratio with a graph to construct, beet pigment leaking from membranes, a blocked sodium-potassium pump, the secretion pathway as a table,
+    glucose uptake with an inhibitor), 10 refreshers. Course total so far: **195 multiple choice, 18 free response, 22 refreshers**.
+  - **Computed, not hand-written**: the water-potential and solute-potential values from the CED's equations (R = 0.0831, T in kelvin), the isotonic point of potato cores by interpolation, surface area-to-volume ratios,
+    polymer bond and water counts, the complementary DNA strand, percent changes, and every mean and standard error from raw replicate data.
+  - **What the asserts caught and what only reading caught.** Caught by asserts: a standard error I had guessed as 0.35 (it is 0.31) in one sample response, and (earlier) 0.4 to 0.6 drops in another (it is 0.32 for every
+    liquid); the sample responses now quote values that the script asserts. **Caught only by proofreading** (the asserts cannot see prose): two distractors whose explanations did not match their numbers (a sphere's
+    surface-area ratio), a table that made two substances move against their gradient in a "which is active transport" question and one explanation that misread it, a hypothesis question whose own table showed the
+    supporting result, a missing question (2.4 had 7 of 8), a "control" that was really a controlled variable, and a free-response sample that misstated a count. Keep proofreading the displayed numbers and explanations, not just the answers.
+  - **Length tell again**: first drafts had the right answer longest in 49% of Unit 2 (and, after a first overcorrection, shortest in 35% of Unit 1). Rebalanced to 21% and 19% for Unit 1 and 24% and 18% for Unit 2;
+    the course so far is 23% longest and 18% shortest. The patch tool for this is a scratch script (exact old text to new text, asserting each match is unique); there is no overlay in the repo.
+- **Units 4, 5 and 6 written (2026-10-11), in the working tree only**, the same way (`u4_*.py` .. `u6_*.py`, `u<N>_refreshers.py`, assembled by `u<N>.py`; `u6_common.py` holds the standard genetic code and strand arithmetic):
+  - **Unit 4, Cell Communication and Cell Cycle**: 61 multiple choice (4.1 8, 4.2 11, 4.3 10, 4.4 9, 4.5 13, 4.6 10; the plan was 60), 6 free response (RESULTS on mitosis counts in an onion root tip, RESULTS_GRAPH on a drug and the
+    percent of cells held at G2 and mitosis, INVESTIGATION on quorum sensing, CONCEPT on a kinase that is always active, MODEL on a signal-transduction key, DATA on blood glucose after a meal), 6 refreshers.
+  - **Unit 5, Heredity**: 50 multiple choice (5.1 10, 5.2 9, 5.3 12, 5.4 12, 5.5 7), 6 free response (RESULTS on a chi-square test of a dihybrid cross with the CED's critical value, RESULTS_GRAPH on genetically identical
+    plants and nitrogen, INVESTIGATION on reciprocal crosses for an X-linked gene, CONCEPT on crossing over, independent assortment and nondisjunction in 2n = 6, MODEL on a table of cells, chromosomes and DNA through meiosis, DATA
+    on a test cross of linked genes as a bar graph), 5 refreshers. Probabilities (`Fraction`), crosses (enumerated), chi-square, map distances and PCR-style arithmetic are computed in the scripts.
+  - **Unit 6, Gene Expression and Regulation**: 70 multiple choice (6.1 8, 6.2 9, 6.3 9, 6.4 10, 6.5 9, 6.6 8, 6.7 10, 6.8 7), 6 free response (RESULTS on the lac operon in a wild type and two mutants, RESULTS_GRAPH on bacterial
+    transformation, INVESTIGATION on UV light and histidine, CONCEPT on a premature stop codon, MODEL on transcription and RNA processing, DATA on the Meselson-Stahl densities as a three-series bar graph), 8 refreshers.
+    The genetic code is used only to compute answers (translations, the frameshift example); any question that needs codons prints exactly those codons in a table, since the CED excludes memorizing the code except AUG.
+  - **Course total so far (Units 1-6): 376 multiple choice, 36 free response, 41 refreshers** (the validator says "41 of 60 topics"). All 7 courses validate, `render-audit.ts ap-biology` reads 4,077 strings with 0 problems,
+    and the full test suite passes except the expected `ap-biology` line in `tests/exam-weighting.test.ts` (it needs all eight units).
+  - **Length tell**: Unit 5 and Unit 6 first drafts had the right answer longest in 41% and 43% (shortest 24% and 29%); rebalanced by lengthening wrong choices or trimming right ones (no meaning changed) to 24%/20% and 24%/16%.
+    The whole course (Units 1-6) is **24% longest, 18% shortest** (chance 25%).
+  - **Caught only by proofreading again** (asserts cannot see prose): a distractor that was actually true ("the amount of DNA is the same as in a G1 cell" after meiosis I), a chi-square sample response whose rounded terms
+    added to 2.04 instead of 2.03 (now quoted to three places and asserted), a stale explanation after the right answer was shortened, and a few garbled or weak distractors.
+- **Units 7 and 8 written (2026-10-11), in the working tree only; all eight units now exist.** Unit 7 Natural Selection: 100 multiple choice (7.1 8, 7.2 9, 7.3 6, 7.4 10, 7.5 10, 7.6 9, 7.7 6, 7.8 8, 7.9 10, 7.10 10, 7.11 7, 7.12 7), 6 free response (Hardy-Weinberg,
+  artificial selection graph, genetic drift with beads, speciation, a real cladogram as the MODEL figure, a molecular-clock graph), 12 refreshers; the vertebrate cladogram is the first real use of the `cladogram` diagram kind.
+  Unit 8 Ecology: 66 multiple choice (8.1 9, 8.2 14, 8.3 9, 8.4 8, 8.5 10, 8.6 7, 8.7 9), 6 free response (woodlice chi-square, yeast logistic growth graph, phosphate and algae, keystone sea star, energy by trophic level, Simpson's index), 7 refreshers.
+  **AP Biology totals: 542 multiple choice, 48 free response (8 of each of the six kinds), 60 refreshers (all 60 topics), 99 questions with a diagram.** `content:validate` clean for all 7 courses, `render-audit.ts ap-biology` 5,848 strings with 0 problems,
+  full test suite 980/980 (the `ap-biology` weighted-draw test now passes), `tsc --noEmit` and `npm run lint` clean. Length tell after rebalancing (Unit 7 first drafts 39%/31%, Unit 8 53%/27%): whole course 24% longest, 18% shortest.
+  Units 7 and 8 were proofread in full; fixes included missing thousands separators and a "3%" that should have been 318%.
+- **Open before launch**: the free-response figure placement (see above; unchanged, owner's call). Done 2026-10-12 on the owner's go-ahead: AP Biology removed from `PLANNED_SUBJECTS` (the section now reads "More subjects", waitlist kept), code and content committed. Seed, browser check and approvals follow; see the log below.
 
 ## Forgot password and email
 

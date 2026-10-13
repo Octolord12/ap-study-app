@@ -1,0 +1,151 @@
+"""Unit 4: six free-response prompts, one of each kind.
+
+  RESULTS        (9)  4.5  mitosis counts in two regions of an onion root tip (percent in mitosis, time in prophase)
+  RESULTS_GRAPH  (9)  4.6  a drug and the percent of cells held at G2 and mitosis (replicate means and standard errors -> bar graph)
+  INVESTIGATION  (4)  4.1  quorum sensing: does a signal in used medium turn on light production?
+  CONCEPT        (4)  4.3  a growth-factor pathway with a kinase that is active all of the time
+  MODEL          (4)  4.2  the components of a signal transduction pathway (a table is the "figure")
+  DATA           (4)  4.4  blood glucose after a meal (a graph of negative feedback)
+
+Part structure follows the CED (see u3_frq.py). Every number is computed here from the raw data.
+"""
+from lib import *
+
+
+def build(B):
+    # ------------------------------------------------------------------ RESULTS (9): onion root tip
+    phases = ["Interphase", "Prophase", "Metaphase", "Anaphase", "Telophase"]
+    meri = [168, 15, 7, 4, 6]
+    elong = [195, 2, 1, 1, 1]
+    assert sum(meri) == 200 and sum(elong) == 200
+    pct_m = sum(meri[1:]) / sum(meri) * 100
+    pct_e = sum(elong[1:]) / sum(elong) * 100
+    cycle = 18
+    t_pro = meri[1] / sum(meri) * cycle
+    assert (round(pct_m, 1), round(pct_e, 1), round(t_pro, 2)) == (16.0, 2.5, 1.35), (pct_m, pct_e, t_pro)
+    rows = [(p, str(a), str(b)) for p, a, b in zip(phases, meri, elong)]
+    B.frq(5, "RESULTS",
+          "The root of an onion grows in length because its cells divide and then elongate. A student prepared slides of a stained onion root tip and examined two regions of the root: the meristem, near the tip of the root, and the elongation zone, farther from the tip. In each region the student counted the cells in 200 cells and recorded the stage of the cell cycle that each cell was in. The results are shown in the table. The cell cycle of the cells in this onion root takes 18 hours.\n\n"
+          "**(a)** **Describe** the role of mitosis in the growth of a root. (1 point)\n\n"
+          "**(b)** (i) **Identify** the dependent variable in the investigation. (ii) **Identify** one variable that the student controlled (kept the same) when counting the cells in the two regions. (iii) **Describe** the difference between the two regions in the number of cells in each stage of mitosis. (3 points)\n\n"
+          "**(c)** (i) **Calculate** the percent of the cells in the meristem that are in mitosis. Give your answer to the nearest 0.1 percent. (ii) **Calculate** the time that a cell in the meristem spends in prophase, in hours, assuming that the cells are at random stages of the cycle. Give your answer to the nearest 0.1 hour. (iii) **Use** the data to support the claim that the cells in the meristem divide more often than the cells in the elongation zone. (3 points)\n\n"
+          "**(d)** A chemical that prevents the spindle from forming is added to a culture of the cells of the meristem. **Predict** how the percent of the cells in metaphase will change, and **justify** your prediction. (2 points)",
+          [(1, "(a) Describes that mitosis produces new cells (genetically identical cells) by dividing existing cells, which increases the number of cells and allows the root to grow."),
+           (1, "(b)(i) Identifies the dependent variable as the number (or percent) of cells in each stage of the cell cycle."),
+           (1, "(b)(ii) Identifies a controlled variable, such as the number of cells counted (200), the way that the roots were stained and prepared, the type of plant, or the magnification."),
+           (1, "(b)(iii) Describes that the meristem has more cells in each of the stages of mitosis (prophase, metaphase, anaphase and telophase) than the elongation zone has, and fewer in interphase."),
+           (1, "(c)(i) Calculates (15 + 7 + 4 + 6) / 200 x 100 = 16.0 percent."),
+           (1, "(c)(ii) Calculates (15 / 200) x 18 hours = 1.35 hours, which is 1.4 hours (accept 1.3 to 1.4)."),
+           (1, "(c)(iii) Uses the data: 16.0 percent of the cells in the meristem are in mitosis, compared with 2.5 percent in the elongation zone, so the cells in the meristem divide more often."),
+           (1, "(d) Predicts that the percent of the cells in metaphase will increase."),
+           (1, "(d) Justifies the prediction: without a spindle the chromosomes cannot be separated, so the cells are held at metaphase (at the spindle checkpoint) and cannot go on to anaphase.")],
+          "(a) Mitosis divides a cell into two genetically identical cells. Many divisions in the root make more cells, and the increase in the number of cells allows the root to grow.\n\n"
+          "(b) (i) The dependent variable is the number of cells in each stage of the cell cycle. (ii) The same number of cells (200) was counted in each region. (iii) The meristem has more cells in each of the stages of mitosis (15, 7, 4 and 6 cells) than the elongation zone (2, 1, 1 and 1), and the elongation zone has more cells in interphase (195 compared with 168).\n\n"
+          "(c) (i) (15 + 7 + 4 + 6) / 200 x 100 = 16.0 percent. (ii) (15 / 200) x 18 = 1.35, which is about 1.4 hours. (iii) In the meristem 16.0 percent of the cells are in mitosis, but in the elongation zone only 2.5 percent are, so the cells of the meristem are dividing more often.\n\n"
+          "(d) The percent of the cells in metaphase will increase. Without a spindle the chromosomes cannot be pulled apart, so the cells are held at metaphase until the chromosomes are attached to the spindle, and they cannot go on to anaphase.",
+          diagram=table(["Stage", "Meristem (number of cells)", "Elongation zone (number of cells)"], rows, caption="Cells in two regions of an onion root tip (200 cells counted in each)", row_headers=True))
+
+    # ------------------------------------------------------------------ RESULTS_GRAPH (9): drug and G2/M
+    doses = ["0", "1", "5", "10"]
+    raw = {"0": [13.8, 14.6, 14.1, 14.3], "1": [22.0, 23.1, 22.4, 22.5], "5": [40.6, 41.9, 41.0, 41.7], "10": [57.9, 59.2, 58.4, 58.9]}
+    means = [mean(raw[d_]) for d_ in doses]
+    ses = [se(raw[d_]) for d_ in doses]
+    assert [round(m_, 1) for m_ in means] == [14.2, 22.5, 41.3, 58.6], means
+    assert [round(e_, 2) for e_ in ses] == [0.17, 0.23, 0.30, 0.29], ses  # the sample response quotes these
+    inc = (means[3] - means[0]) / means[0] * 100
+    assert round(inc) == 313, inc
+    rows = [(d_, fix(m_, 1), fix(e_, 2)) for d_, m_, e_ in zip(doses, means, ses)]
+    B.frq(6, "RESULTS_GRAPH",
+          "Cell cycle checkpoints help to control cell division. Researchers investigated the effect of a drug called drug D on a line of cultured cancer cells. They added drug D at four concentrations to samples of the cells and, after 24 hours, measured the percent of the cells that were in the G2 and mitosis stages of the cell cycle. They used four samples for each concentration. The means and the standard errors of the means are shown in the table.\n\n"
+          "**(a)** **Describe** the role of checkpoints in the cell cycle. (1 point)\n\n"
+          "**(b)** **Construct** a graph of the data in the table. Because you are answering in writing, describe the graph you would draw: the type of graph, what is shown on each axis, with units, the scale of each axis, the values you would plot, and how you would show the standard errors. (4 points)\n\n"
+          "**(c)** (i) **Calculate** the percent increase in the mean percent of cells in G2 and mitosis between the untreated cells (0 µM) and the cells treated with 10 µM of drug D. Give your answer to the nearest whole percent. (ii) **State** a null hypothesis for this investigation. (2 points)\n\n"
+          "**(d)** **Predict** how the number of cells in a culture treated with 10 µM of drug D will compare with the number of cells in an untreated culture after 72 hours, and **justify** your prediction. (2 points)",
+          [(1, "(a) Describes that checkpoints are internal controls that check conditions in the cell (such as the state of the DNA) and allow the cell to go on to the next stage of the cycle only if the conditions are suitable."),
+           (1, "(b) Chooses an appropriate graph type: a bar graph (or a line graph) with the concentration of the drug on the horizontal axis."),
+           (1, "(b) Labels both axes with units: the concentration of drug D (µM) on the horizontal axis and the mean percent of cells in G2 and mitosis (percent) on the vertical axis."),
+           (1, "(b) Gives an appropriate scale: a vertical axis that starts at 0 and has equal intervals, extending to at least 60 percent so that all of the means fit."),
+           (1, "(b) Plots the data accurately (about 14.2, 22.5, 41.3 and 58.6 percent) and shows error bars of plus and minus one standard error for each point."),
+           (1, "(c)(i) Calculates (58.6 - 14.2) / 14.2 x 100 = 313 percent increase."),
+           (1, "(c)(ii) States a null hypothesis: drug D has no effect on the percent of cells in G2 and mitosis (any differences are due to chance)."),
+           (1, "(d) Predicts that the culture treated with drug D will have fewer cells than the untreated culture."),
+           (1, "(d) Justifies the prediction: the drug causes the cells to accumulate at G2 and mitosis, so fewer cells complete mitosis and divide, which slows the increase in the number of cells.")],
+          "(a) Checkpoints are internal controls of the cell cycle. At a checkpoint the cell checks conditions, such as whether the DNA has been replicated correctly, and it goes on to the next stage only if the conditions are suitable.\n\n"
+          "(b) A bar graph. The horizontal axis is labeled \"Concentration of drug D (µM)\" with bars at 0, 1, 5 and 10. The vertical axis is labeled \"Mean percent of cells in G2 and mitosis\" and is scaled from 0 to 70 in steps of 10. The bars are about 14.2, 22.5, 41.3 and 58.6, each with an error bar of plus and minus one standard error (about 0.17, 0.23, 0.30 and 0.29 percent, which are small).\n\n"
+          "(c) (i) (58.6 - 14.2) / 14.2 x 100 = 313 percent. (ii) Drug D has no effect on the percent of cells in G2 and mitosis.\n\n"
+          "(d) There will be fewer cells in the treated culture. The drug causes more cells to be held at G2 and mitosis, so fewer cells finish mitosis and divide, and the number of cells increases more slowly.",
+          diagram=table(["Concentration of drug D (µM)", "Mean percent of cells in G2 and mitosis (n = 4)", "Standard error"], rows, caption="Effect of drug D on cultured cells", row_headers=True))
+
+    # ------------------------------------------------------------------ INVESTIGATION (4): quorum sensing
+    B.frq(1, "INVESTIGATION",
+          "Some bacteria produce light when they are at a high density but not when they are at a low density. A student hypothesizes that the bacteria release a chemical signal into the medium in which they grow. The student grows a dense culture of the bacteria for 24 hours, removes the cells by filtering the culture, and keeps the cell-free liquid. The student plans to add the cell-free liquid to a culture of low density and, 4 hours later, to measure the amount of light produced by the culture.\n\n"
+          "**(a)** **Describe** how the release of a chemical signal can allow bacteria to respond to the number of cells that are present. (1 point)\n\n"
+          "**(b)** **Identify** an appropriate negative control for the investigation. (1 point)\n\n"
+          "**(c)** **Predict** the results for the culture that receives the cell-free liquid and for the control. (1 point)\n\n"
+          "**(d)** **Justify** your prediction. (1 point)",
+          [(1, "(a) Describes that the cells release a signal, so the concentration of the signal rises as the number of cells (the density) rises, and when it reaches a threshold the cells respond by changing gene expression (quorum sensing)."),
+           (1, "(b) Identifies a negative control: a culture of the same low density that receives the same volume of fresh sterile medium (that has never contained bacteria) instead of the cell-free liquid."),
+           (1, "(c) Predicts that the culture that received the cell-free liquid will produce more light than the control (which will produce little or no light)."),
+           (1, "(d) Justifies: the cell-free liquid contains the signal released by the dense culture, which binds receptors in the cells of the low-density culture and turns on the genes for light production.")],
+          "(a) Each cell releases a chemical signal, so the more cells there are, the higher the concentration of the signal. When the concentration reaches a threshold, the cells detect it and change their gene expression, so the cells respond to the density of the population.\n\n"
+          "(b) A low-density culture to which the same volume of fresh sterile medium is added instead of the cell-free liquid.\n\n"
+          "(c) The culture with the cell-free liquid will produce more light than the control, which will produce little or none.\n\n"
+          "(d) The liquid from the dense culture contains the signal that the cells released. It binds to receptors on the bacteria in the low-density culture and turns on the genes that make light, so the control, which has no signal, does not make light.")
+
+    # ------------------------------------------------------------------ CONCEPT (4): kinase always active
+    B.frq(3, "CONCEPT",
+          "A growth factor is a signal that causes cells to divide. In one signal transduction pathway, the growth factor binds to a receptor in the plasma membrane. The receptor activates protein kinase 1, which adds a phosphate group to protein kinase 2, which activates a transcription factor, which turns on genes that are needed for cell division. A mutation changes protein kinase 1 so that it is active all of the time, even when there is no growth factor.\n\n"
+          "**(a)** **Describe** how a signal transduction pathway links the reception of a signal to a response of a cell. (1 point)\n\n"
+          "**(b)** **Explain** how a phosphorylation cascade, such as the one in this pathway, can amplify a signal. (1 point)\n\n"
+          "**(c)** **Predict** how the mutation will affect cell division in a cell when no growth factor is present. (1 point)\n\n"
+          "**(d)** **Justify** your prediction. (1 point)",
+          [(1, "(a) Describes that a ligand binds a receptor, the receptor changes shape and starts a series of relay steps inside the cell (transduction), and the last step produces a response such as a change in gene expression."),
+           (1, "(b) Explains that each activated enzyme (kinase) can activate many molecules of the next component, so the number of activated molecules increases at each step and a small signal produces a large response."),
+           (1, "(c) Predicts that the cell will divide (or will make the response for division) even though no growth factor is present, which could lead to uncontrolled division."),
+           (1, "(d) Justifies: a kinase that is always active keeps activating kinase 2 and the transcription factor without the receptor, so the genes for cell division are turned on without a signal.")],
+          "(a) A ligand binds to a receptor, which changes shape. This starts a relay of signals inside the cell, in which each component activates the next, until the final step makes a response, such as turning on genes.\n\n"
+          "(b) Each activated kinase adds phosphate groups to many molecules of the next protein, so the number of activated molecules becomes larger at each step, and one signal molecule can lead to a large response.\n\n"
+          "(c) The cell will divide even when there is no growth factor, and this could lead to uncontrolled division.\n\n"
+          "(d) Kinase 1 is always active, so it keeps activating kinase 2 and then the transcription factor, whether or not the receptor has bound the growth factor. The genes for cell division are therefore turned on all of the time.")
+
+    # ------------------------------------------------------------------ MODEL (4): signal transduction components
+    model_rows = [("1", "A signal molecule outside the cell"), ("2", "A receptor protein in the plasma membrane"), ("3", "A protein kinase inside the cell that is activated when the receptor changes shape"),
+                  ("4", "Small molecules (second messengers) released in the cytoplasm"), ("5", "A change in the expression of genes in the nucleus")]
+    B.frq(2, "MODEL",
+          "The model represents a signal transduction pathway in a target cell. The table is the key to the model. In the model, the signal molecule (1) binds to the receptor (2) in the plasma membrane. The receptor changes shape and activates the protein kinase (3), which causes the release of the second messengers (4) in the cytoplasm. The second messengers lead to the change in the expression of genes (5) in the nucleus.\n\n"
+          "**(a)** **Identify** the name that is used for the signal molecule (1) that binds to the receptor, and **describe** one characteristic of the receptor that makes the target cell respond to it and other cells not respond. (1 point)\n\n"
+          "**(b)** **Explain** how the model shows the signal being relayed from the plasma membrane to the nucleus. (1 point)\n\n"
+          "**(c)** The model includes the second messengers (4). **Describe** the role of second messengers in a signal transduction pathway. (1 point)\n\n"
+          "**(d)** **Explain** how the response shown in the model (5) can change the phenotype of the cell. (1 point)",
+          [(1, "(a) Identifies the signal molecule as a ligand, and describes that the ligand-binding domain of the receptor recognizes (is specific for) one chemical messenger, so only cells with that receptor respond."),
+           (1, "(b) Explains that the binding of the ligand changes the shape of the receptor, which activates the next component (the kinase), which causes the release of second messengers, so each step passes the signal on to the next step until it reaches the nucleus."),
+           (1, "(c) Describes that second messengers relay and amplify the signal inside the cell (they pass it from the receptor to other components)."),
+           (1, "(d) Explains that a change in gene expression changes which proteins are made (or how much), which changes the structure and function of the cell and so its phenotype.")],
+          "(a) The signal molecule is a ligand. The ligand-binding domain of the receptor recognizes a specific chemical messenger, so only cells that have this receptor respond to the ligand.\n\n"
+          "(b) When the ligand binds, the receptor changes shape and activates the kinase. The kinase causes the release of second messengers in the cytoplasm, and these lead to the change in gene expression in the nucleus, so each component passes the signal on to the next.\n\n"
+          "(c) Second messengers relay the signal from the receptor to other components inside the cell, and a few of them can be made in large numbers, which amplifies the signal.\n\n"
+          "(d) A change in the expression of genes changes which proteins the cell makes and in what amounts. Different proteins change the structure and function of the cell, which changes its phenotype.",
+          diagram=table(["Label", "Part of the model"], model_rows, caption="Key to the model of a signal transduction pathway", row_headers=True))
+
+    # ------------------------------------------------------------------ DATA (4): blood glucose
+    gl = [(0, 90), (40, 150), (80, 115), (120, 92), (160, 90)]
+    drop = (150 - 92) / 150 * 100
+    assert round(drop) == 39, drop
+    g = graph("Time after a meal (min)", "Blood glucose concentration (mg/dL)", 0, 160, 60, 180,
+              [line("Blood glucose", gl, "blue")],
+              "Blood glucose concentration against time after a meal. It is 90 at the start, rises to 150 at 40 minutes, falls to 115 at 80 minutes, and is back to 92 at 120 minutes and 90 at 160 minutes.")
+    B.frq(4, "DATA",
+          "In a healthy person, the pancreas releases the hormone insulin when the concentration of glucose in the blood rises, and insulin causes cells to take up glucose. The graph shows the concentration of glucose in the blood of a healthy person before and after a meal.\n\n"
+          "**(a)** **Describe** the change in the concentration of glucose in the blood during the first 40 minutes after the meal. (1 point)\n\n"
+          "**(b)** **Calculate** the percent decrease in the concentration of glucose in the blood between its highest value and its value at 120 minutes. Give your answer to the nearest whole percent. (1 point)\n\n"
+          "**(c)** A student claims that the concentration of glucose in the blood is regulated by negative feedback. **Evaluate** the claim using the data in the graph. (1 point)\n\n"
+          "**(d)** **Explain** how the release of insulin helps to return the concentration of glucose in the blood to its starting value. (1 point)",
+          [(1, "(a) Describes that the concentration of glucose in the blood rises from 90 mg/dL to 150 mg/dL during the first 40 minutes."),
+           (1, "(b) Calculates (150 - 92) / 150 x 100 = 39 percent decrease."),
+           (1, "(c) Evaluates the claim as supported, using data: the concentration rises after the meal and then returns toward its starting value of about 90 mg/dL, which is what negative feedback does (it reduces the stimulus and returns the variable to its set point)."),
+           (1, "(d) Explains that insulin signals cells (such as liver and muscle cells) to take up glucose from the blood, which lowers the concentration of glucose, so the stimulus for the release of insulin is reduced.")],
+          "(a) During the first 40 minutes the concentration of glucose in the blood rises from 90 mg/dL to 150 mg/dL.\n\n"
+          "(b) (150 - 92) / 150 x 100 = 39 percent decrease.\n\n"
+          "(c) The data support the claim. The concentration of glucose rose after the meal and then fell back to about 90 mg/dL by 160 minutes, which is the pattern of negative feedback: a response that reduces the stimulus and returns the variable to its set point.\n\n"
+          "(d) When the concentration of glucose rises, insulin is released and signals cells to take up glucose from the blood. This lowers the concentration of glucose, which reduces the stimulus for the release of insulin.",
+          diagram=g)

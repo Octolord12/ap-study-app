@@ -1,0 +1,2155 @@
+[
+  {
+    "id": "ap-bio-u1-mcq-1",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "easy",
+    "stem": "Why is a water molecule described as polar?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Each hydrogen atom transfers its electron completely to oxygen, so the molecule has a full negative end and a full positive end.",
+        "isCorrect": false,
+        "explanation": "Electrons in water are shared, not transferred. The charges are partial, not full, and the bonds are covalent rather than ionic."
+      },
+      {
+        "label": "B",
+        "text": "The oxygen and hydrogen atoms share their electrons equally, so the charge is spread evenly over the whole of the molecule.",
+        "isCorrect": false,
+        "explanation": "Equal sharing would make the molecule nonpolar. In water, oxygen attracts the shared electrons more strongly."
+      },
+      {
+        "label": "C",
+        "text": "The two hydrogen atoms are bonded to each other, which moves all of the negative charge of the molecule to the other side.",
+        "isCorrect": false,
+        "explanation": "The hydrogen atoms in water are bonded to oxygen, not to each other. The polarity comes from the unequal sharing in those O-H bonds."
+      },
+      {
+        "label": "D",
+        "text": "Oxygen pulls the shared electrons closer than hydrogen does, so oxygen is slightly negative and each hydrogen slightly positive.",
+        "isCorrect": true,
+        "explanation": "The O-H bonds are polar covalent bonds. Unequal sharing of the electrons gives the oxygen end a partial negative charge and the hydrogen ends partial positive charges."
+      }
+    ],
+    "explanation": "Water is polar because its polar covalent O-H bonds share electrons unequally.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-2",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "easy",
+    "stem": "A water strider walks across the surface of a pond without sinking. Which property of water best explains this observation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Adhesion between the water and the legs of the insect, which pulls the legs down below the surface.",
+        "isCorrect": false,
+        "explanation": "Adhesion is attraction between water and other substances. The insect stays on top because of the cohesion of the water molecules, not because of adhesion."
+      },
+      {
+        "label": "B",
+        "text": "High heat of vaporization, which stops the surface water from evaporating under the weight of the insect.",
+        "isCorrect": false,
+        "explanation": "Heat of vaporization is about the energy needed for water to evaporate. It does not support the insect's weight."
+      },
+      {
+        "label": "C",
+        "text": "Surface tension, which results from hydrogen bonds that hold the water molecules at the surface together.",
+        "isCorrect": true,
+        "explanation": "Hydrogen bonds between water molecules produce cohesion, and cohesion at the surface gives water a high surface tension."
+      },
+      {
+        "label": "D",
+        "text": "High specific heat capacity, which keeps the water at a constant temperature while the insect walks on it.",
+        "isCorrect": false,
+        "explanation": "Specific heat capacity describes how much energy is needed to change the temperature of water. It does not explain why an insect can stay on the surface."
+      }
+    ],
+    "explanation": "Surface tension comes from cohesion: hydrogen bonds hold surface water molecules together.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-3",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "medium",
+    "stem": "Water moves upward through very narrow tubes in a plant, against the pull of gravity. Which properties of water best explain this movement?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The nonpolar nature of water molecules, together with their attraction to the nonpolar walls of the tubes.",
+        "isCorrect": false,
+        "explanation": "Water molecules are polar, not nonpolar. The attraction to the walls is a result of this polarity."
+      },
+      {
+        "label": "B",
+        "text": "The covalent bonds between separate water molecules, together with the loss of heat as the water evaporates.",
+        "isCorrect": false,
+        "explanation": "Separate water molecules are attracted by hydrogen bonds, not by covalent bonds. Evaporation cools the plant but does not explain the column of water."
+      },
+      {
+        "label": "C",
+        "text": "High specific heat capacity of water, together with the high heat of vaporization of water.",
+        "isCorrect": false,
+        "explanation": "These properties affect temperature and evaporation. They do not hold water in a continuous column against gravity."
+      },
+      {
+        "label": "D",
+        "text": "Adhesion of water molecules to the walls of the tubes, and cohesion of water molecules to one another.",
+        "isCorrect": true,
+        "explanation": "Hydrogen bonds make water molecules stick to each other (cohesion) and to the polar walls of the tubes (adhesion), so water can be pulled up in a continuous column."
+      }
+    ],
+    "explanation": "Cohesion and adhesion, both due to hydrogen bonding, allow water to move up narrow tubes.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-4",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "medium",
+    "stem": "The temperature of a large lake changes much more slowly than the temperature of the air above it. Which property of water best explains this difference?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Water has a high surface tension, which traps heat energy beneath the surface of the lake and keeps it there.",
+        "isCorrect": false,
+        "explanation": "Surface tension is about the attraction between surface molecules. It does not control how fast the temperature changes."
+      },
+      {
+        "label": "B",
+        "text": "Water molecules are nonpolar, so they do not take up the energy that is carried to the lake by the sun's light.",
+        "isCorrect": false,
+        "explanation": "Water molecules are polar. Water absorbs energy and the temperature changes slowly because of its high specific heat capacity."
+      },
+      {
+        "label": "C",
+        "text": "Water has a low specific heat capacity, so it holds on to heat energy and does not release any of it into the air.",
+        "isCorrect": false,
+        "explanation": "A low specific heat capacity would make the temperature change quickly. Water has a high specific heat capacity."
+      },
+      {
+        "label": "D",
+        "text": "Water has a high specific heat capacity, so it absorbs or releases a large amount of energy for each degree that its temperature changes.",
+        "isCorrect": true,
+        "explanation": "Energy absorbed by water goes into breaking hydrogen bonds as well as raising the temperature, so the temperature changes slowly."
+      }
+    ],
+    "explanation": "A high specific heat capacity helps water, and the organisms in it, to maintain a stable temperature.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-5",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "medium",
+    "stem": "Sweating helps cool the body of a mammal on a hot day. Which property of water is most directly responsible for the cooling?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Adhesion, because sweat sticks to the skin and traps the heat energy against the body so that it spreads evenly.",
+        "isCorrect": false,
+        "explanation": "Trapping heat against the body would warm it, not cool it. Cooling occurs when sweat evaporates."
+      },
+      {
+        "label": "B",
+        "text": "Cohesion, because the drops of sweat stick together and fall from the skin, carrying their heat energy away with them.",
+        "isCorrect": false,
+        "explanation": "Falling drops are not the main cooling effect. The cooling occurs when the water evaporates from the skin."
+      },
+      {
+        "label": "C",
+        "text": "High specific heat capacity, because the water in sweat absorbs heat energy without increasing the body's temperature at all.",
+        "isCorrect": false,
+        "explanation": "Specific heat capacity helps keep body temperature stable, but the cooling effect of sweating depends on evaporation."
+      },
+      {
+        "label": "D",
+        "text": "High heat of vaporization, because the evaporation of sweat removes a large amount of heat energy from the surface of the body.",
+        "isCorrect": true,
+        "explanation": "Water needs a large input of energy to change from liquid to gas. When sweat evaporates, that energy comes from the body, which cools it."
+      }
+    ],
+    "explanation": "Evaporative cooling depends on water's high heat of vaporization.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-6",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "medium",
+    "stem": "A student heats 100 g of water and 100 g of vegetable oil under the same conditions for 5 minutes, using the same heat source for both, and measures the temperatures shown. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The oil has stronger hydrogen bonds than the water, because the temperature of the oil rose by more than that of the water.",
+        "isCorrect": false,
+        "explanation": "Hydrogen bonding is characteristic of water and is what lets water absorb energy before its temperature rises. The data do not show hydrogen bonds in the oil."
+      },
+      {
+        "label": "B",
+        "text": "Water has a higher specific heat capacity than the oil, because it absorbed the same amount of heat energy but its temperature rose by less.",
+        "isCorrect": true,
+        "explanation": "The water's temperature rose by 8.0 degrees and the oil's by 16.0 degrees for the same energy input, so more energy is needed to raise the temperature of water by one degree."
+      },
+      {
+        "label": "C",
+        "text": "Water has a lower specific heat capacity than the oil, because the temperature of the water rose by less than that of the oil.",
+        "isCorrect": false,
+        "explanation": "This reverses the reasoning. A smaller rise in temperature for the same energy means a higher specific heat capacity."
+      },
+      {
+        "label": "D",
+        "text": "Both liquids have the same specific heat capacity, because both were heated for the same amount of time with the same source.",
+        "isCorrect": false,
+        "explanation": "The same heating time gives the same energy input, but the temperature changes were different, so the specific heat capacities differ."
+      }
+    ],
+    "explanation": "For the same energy input, a smaller temperature change means a higher specific heat capacity.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Liquid (100 g)",
+        "Starting temperature (°C)",
+        "Temperature after 5 min (°C)"
+      ],
+      "rows": [
+        [
+          "Water",
+          "20.0",
+          "28.0"
+        ],
+        [
+          "Vegetable oil",
+          "20.0",
+          "36.0"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Heating water and oil"
+    }
+  },
+  {
+    "id": "ap-bio-u1-mcq-7",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "hard",
+    "stem": "A student places the lower end of each of four narrow glass tubes in a dish of water and measures how high the water rises in each tube. The table shows the results. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Water rises in the tubes because of its high specific heat capacity, which also makes the narrow tubes warmer than the wide tubes.",
+        "isCorrect": false,
+        "explanation": "Specific heat capacity describes how water absorbs heat energy. The data do not involve temperature, and they are explained by adhesion and cohesion."
+      },
+      {
+        "label": "B",
+        "text": "Water rises higher in narrower tubes, which is consistent with water molecules adhering to the walls of the tube and cohering to one another.",
+        "isCorrect": true,
+        "explanation": "Adhesion to the glass pulls water up the wall, and cohesion pulls the neighboring water molecules after it. In a narrower tube there is more wall for the volume of water, so the water rises higher."
+      },
+      {
+        "label": "C",
+        "text": "Water rises higher in wider tubes, because a greater volume of water is able to adhere to the glass of the tube walls.",
+        "isCorrect": false,
+        "explanation": "The data show the opposite: the narrowest tube had the highest rise, 30 mm, and the widest tube had the lowest, 5 mm."
+      },
+      {
+        "label": "D",
+        "text": "The diameter of the tube has no effect on the height of the water, because the same water was used in every tube.",
+        "isCorrect": false,
+        "explanation": "The heights differ from 5 mm to 30 mm, so the diameter of the tube does affect the rise in the water."
+      }
+    ],
+    "explanation": "Capillary action, in which water rises in a narrow tube, depends on adhesion and cohesion, both of which result from hydrogen bonding.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Inside diameter of tube (mm)",
+        "Height of water in tube (mm)"
+      ],
+      "rows": [
+        [
+          "0.5",
+          "30"
+        ],
+        [
+          "1.0",
+          "15"
+        ],
+        [
+          "1.5",
+          "10"
+        ],
+        [
+          "3.0",
+          "5"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Water rising in narrow glass tubes"
+    }
+  },
+  {
+    "id": "ap-bio-u1-mcq-8",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "easy",
+    "stem": "Which statement correctly describes the hydrogen bonds between water molecules?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Each one is an ionic bond that forms when one water molecule gains an electron from a neighboring molecule.",
+        "isCorrect": false,
+        "explanation": "No electrons are transferred between water molecules. The attraction is between partial charges."
+      },
+      {
+        "label": "B",
+        "text": "Each one is a strong covalent bond that forms when two water molecules share a pair of electrons with each other.",
+        "isCorrect": false,
+        "explanation": "Hydrogen bonds are weak attractions, not covalent bonds. The covalent bonds in water are the O-H bonds inside each molecule."
+      },
+      {
+        "label": "C",
+        "text": "Each one is an attraction between the two hydrogen atoms that are part of the same water molecule.",
+        "isCorrect": false,
+        "explanation": "Hydrogen bonds form between different water molecules, between a hydrogen of one and an oxygen of another."
+      },
+      {
+        "label": "D",
+        "text": "Each one is a weak attraction between a slightly positive hydrogen of one molecule and a slightly negative oxygen of another.",
+        "isCorrect": true,
+        "explanation": "Hydrogen bonds form because of the polarity of water. Each is weak, but many of them together give water its unusual properties."
+      }
+    ],
+    "explanation": "Hydrogen bonds are weak attractions between the partial charges of polar molecules such as water.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-9",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "structure-of-water-and-hydrogen-bonding",
+    "difficulty": "hard",
+    "stem": "A scientist proposes a hypothetical liquid whose molecules are nonpolar and cannot form hydrogen bonds. If this liquid replaced the water in cells, which prediction is best supported by what is known about water?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The liquid would behave in the same way as water, because the properties of water result only from the small size of its molecules.",
+        "isCorrect": false,
+        "explanation": "Water's properties depend on its polarity and hydrogen bonding, not on its size alone."
+      },
+      {
+        "label": "B",
+        "text": "The liquid would show a stronger surface tension and a higher heat of vaporization than water, because its molecules would be more stable.",
+        "isCorrect": false,
+        "explanation": "Surface tension and heat of vaporization depend on hydrogen bonds. A liquid that cannot form them would be lower in both."
+      },
+      {
+        "label": "C",
+        "text": "The liquid would have a higher specific heat capacity than water, because nonpolar molecules are able to store more energy.",
+        "isCorrect": false,
+        "explanation": "A high specific heat capacity depends on the energy absorbed by breaking hydrogen bonds. A liquid without them would have a lower value."
+      },
+      {
+        "label": "D",
+        "text": "The liquid would show weaker cohesion and a lower specific heat capacity than water, so it would resist temperature changes less well.",
+        "isCorrect": true,
+        "explanation": "Cohesion and a high specific heat capacity both result from hydrogen bonding between polar water molecules. Without hydrogen bonds, both would be lower."
+      }
+    ],
+    "explanation": "Polarity and hydrogen bonding explain water's cohesion, specific heat capacity and heat of vaporization.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/structure-of-water-and-hydrogen-bonding",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-10",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "elements-of-life",
+    "difficulty": "easy",
+    "stem": "Which three elements are the most prevalent in carbohydrates, lipids, proteins and nucleic acids?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hydrogen, sulfur and phosphorus",
+        "isCorrect": false,
+        "explanation": "Sulfur and phosphorus are found only in some of these molecules, and carbon is the element that is in all of them."
+      },
+      {
+        "label": "B",
+        "text": "Oxygen, nitrogen and calcium",
+        "isCorrect": false,
+        "explanation": "Calcium is not a main component of these molecules, and carbon and hydrogen are more prevalent than nitrogen."
+      },
+      {
+        "label": "C",
+        "text": "Carbon, hydrogen and oxygen",
+        "isCorrect": true,
+        "explanation": "These three elements are the most prevalent in all of the major biological molecules."
+      },
+      {
+        "label": "D",
+        "text": "Carbon, nitrogen and phosphorus",
+        "isCorrect": false,
+        "explanation": "Nitrogen and phosphorus are used in some of these molecules, but hydrogen and oxygen are more prevalent in all of them."
+      }
+    ],
+    "explanation": "Carbon, hydrogen and oxygen make up most of the biological molecules.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/elements-of-life",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-11",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "elements-of-life",
+    "difficulty": "medium",
+    "stem": "Which element is used in building both the phospholipids of membranes and nucleic acids?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phosphorus, which is found in the phosphate groups of these molecules.",
+        "isCorrect": true,
+        "explanation": "Phosphorus is used in phospholipids and in nucleic acids, where phosphate groups are part of the sugar-phosphate backbone."
+      },
+      {
+        "label": "B",
+        "text": "Iron, which is found in the oxygen-carrying proteins of the blood.",
+        "isCorrect": false,
+        "explanation": "Iron is a component of some proteins. It is not used to build phospholipids or nucleic acids."
+      },
+      {
+        "label": "C",
+        "text": "Sulfur, which is found in the side chains of some of the amino acids.",
+        "isCorrect": false,
+        "explanation": "Sulfur is used in building proteins, not phospholipids or nucleic acids."
+      },
+      {
+        "label": "D",
+        "text": "Calcium, which is found as ions in the bones of many animals.",
+        "isCorrect": false,
+        "explanation": "Calcium is not one of the elements used to build phospholipids or nucleic acids."
+      }
+    ],
+    "explanation": "Phosphorus is used in phospholipids and nucleic acids; sulfur is used in proteins.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/elements-of-life",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-12",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "elements-of-life",
+    "difficulty": "hard",
+    "stem": "A culture of bacteria is grown in a medium that contains radioactive phosphorus (³²P) and radioactive sulfur (³⁵S). After several hours, which macromolecules are most likely to contain the radioactive atoms?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "³²P in proteins, and ³⁵S in nucleic acids",
+        "isCorrect": false,
+        "explanation": "This swaps the elements. Sulfur is used in proteins and phosphorus in nucleic acids."
+      },
+      {
+        "label": "B",
+        "text": "³²P and ³⁵S in carbohydrates, but neither in nucleic acids",
+        "isCorrect": false,
+        "explanation": "Carbohydrates do not contain these elements, and nucleic acids do contain phosphorus."
+      },
+      {
+        "label": "C",
+        "text": "³²P in carbohydrates, and ³⁵S in lipids",
+        "isCorrect": false,
+        "explanation": "Carbohydrates are made of carbon, hydrogen and oxygen. Neither phosphorus nor sulfur is used in building them."
+      },
+      {
+        "label": "D",
+        "text": "³²P in nucleic acids, and ³⁵S in proteins",
+        "isCorrect": true,
+        "explanation": "Phosphorus is used in building nucleic acids, and sulfur is used in building proteins."
+      }
+    ],
+    "explanation": "Phosphorus labels nucleic acids (and phospholipids), and sulfur labels proteins.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/elements-of-life",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-13",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "elements-of-life",
+    "difficulty": "medium",
+    "stem": "A student analyzes three purified samples of macromolecules, each of which is a carbohydrate, a protein or a nucleic acid. The table shows which elements were detected. Which identification is most consistent with the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sample 1 is a protein, sample 2 is a nucleic acid, and sample 3 is a carbohydrate.",
+        "isCorrect": false,
+        "explanation": "Sample 1 contains only carbon, hydrogen and oxygen, which fits a carbohydrate, not a protein."
+      },
+      {
+        "label": "B",
+        "text": "Sample 1 is a nucleic acid, sample 2 is a carbohydrate, and sample 3 is a protein.",
+        "isCorrect": false,
+        "explanation": "Sample 1 lacks phosphorus, so it cannot be a nucleic acid, and sample 3 has phosphorus but no sulfur."
+      },
+      {
+        "label": "C",
+        "text": "Sample 1 is a carbohydrate, sample 2 is a protein, and sample 3 is a nucleic acid.",
+        "isCorrect": true,
+        "explanation": "Carbohydrates contain only carbon, hydrogen and oxygen. Proteins use sulfur, and nucleic acids use phosphorus (and nitrogen)."
+      },
+      {
+        "label": "D",
+        "text": "Samples 2 and 3 are both proteins, and sample 1 is a nucleic acid.",
+        "isCorrect": false,
+        "explanation": "Only sample 2 contains sulfur, which is used in proteins, and sample 3 contains phosphorus."
+      }
+    ],
+    "explanation": "The elements in a molecule indicate the type of macromolecule.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/elements-of-life",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Sample",
+        "Carbon",
+        "Hydrogen",
+        "Oxygen",
+        "Nitrogen",
+        "Phosphorus",
+        "Sulfur"
+      ],
+      "rows": [
+        [
+          "Sample 1",
+          "Yes",
+          "Yes",
+          "Yes",
+          "No",
+          "No",
+          "No"
+        ],
+        [
+          "Sample 2",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "No",
+          "Yes"
+        ],
+        [
+          "Sample 3",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "No"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Elements detected in three samples"
+    }
+  },
+  {
+    "id": "ap-bio-u1-mcq-14",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "elements-of-life",
+    "difficulty": "medium",
+    "stem": "A strain of bacteria loses the ability to take up phosphorus from its environment. Which of the following processes would be most directly impaired in the bacteria?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The making of DNA and RNA, and the building of the phospholipids of the cell membrane",
+        "isCorrect": true,
+        "explanation": "Phosphorus is used in phospholipids and in nucleic acids. Without it these molecules cannot be built."
+      },
+      {
+        "label": "B",
+        "text": "The making of the glucose monomers of carbohydrates, which each contain a phosphorus atom",
+        "isCorrect": false,
+        "explanation": "Glucose is made of carbon, hydrogen and oxygen. It does not contain phosphorus."
+      },
+      {
+        "label": "C",
+        "text": "The making of cellulose for the cell wall, because cellulose is a polymer of phosphorus",
+        "isCorrect": false,
+        "explanation": "Cellulose is a carbohydrate made of glucose monomers and does not contain phosphorus."
+      },
+      {
+        "label": "D",
+        "text": "The making of proteins, because every amino acid in a protein contains a phosphorus atom",
+        "isCorrect": false,
+        "explanation": "Sulfur is used in some amino acids, but amino acids do not contain phosphorus."
+      }
+    ],
+    "explanation": "Phosphorus is needed for nucleic acids and phospholipids.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/elements-of-life",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-15",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "elements-of-life",
+    "difficulty": "easy",
+    "stem": "Which of the following molecules is made of only carbon, hydrogen and oxygen?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A carbohydrate, such as starch",
+        "isCorrect": true,
+        "explanation": "Carbohydrates contain only carbon, hydrogen and oxygen."
+      },
+      {
+        "label": "B",
+        "text": "A phospholipid, such as in a cell membrane",
+        "isCorrect": false,
+        "explanation": "Phospholipids also contain phosphorus."
+      },
+      {
+        "label": "C",
+        "text": "A nucleic acid, such as DNA",
+        "isCorrect": false,
+        "explanation": "Nucleic acids also contain nitrogen and phosphorus."
+      },
+      {
+        "label": "D",
+        "text": "A protein, such as an enzyme",
+        "isCorrect": false,
+        "explanation": "Proteins also contain nitrogen, and some contain sulfur."
+      }
+    ],
+    "explanation": "Carbohydrates are made of carbon, hydrogen and oxygen only.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/elements-of-life",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-16",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "introduction-to-macromolecules",
+    "difficulty": "easy",
+    "stem": "Two monosaccharides are joined to form a disaccharide. Which statement correctly describes the reaction?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A hydrogen from one monomer and a hydroxyl group from the other are removed as water, and a covalent bond forms between the monomers.",
+        "isCorrect": true,
+        "explanation": "This is dehydration synthesis. The equivalent of a water molecule is lost and the two monomers are connected by a covalent bond."
+      },
+      {
+        "label": "B",
+        "text": "A hydrogen ion moves from one monomer to the other, and an ionic bond forms between the two monomers without water.",
+        "isCorrect": false,
+        "explanation": "The monomers are connected by a covalent bond, and water is lost in the process. No ionic bond is formed."
+      },
+      {
+        "label": "C",
+        "text": "A water molecule is added to the two monomers, and the covalent bond that held them together is broken in the process.",
+        "isCorrect": false,
+        "explanation": "This describes hydrolysis, which breaks a polymer into smaller molecules. Here a bond is being formed, not broken."
+      },
+      {
+        "label": "D",
+        "text": "A molecule of carbon dioxide is released from each monomer, and the monomers are then held together by hydrogen bonds.",
+        "isCorrect": false,
+        "explanation": "Carbon dioxide is not released when monomers join. The monomers are connected by a covalent bond and water is removed."
+      }
+    ],
+    "explanation": "Dehydration synthesis joins monomers by removing the equivalent of a water molecule.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/introduction-to-macromolecules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-17",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "introduction-to-macromolecules",
+    "difficulty": "easy",
+    "stem": "The bond between two monomers of a polymer is broken by hydrolysis. Which statement correctly describes what happens?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A water molecule is removed from the two monomers, and a new covalent bond forms between them in its place.",
+        "isCorrect": false,
+        "explanation": "This describes dehydration synthesis, which builds polymers. Hydrolysis adds water and breaks a bond."
+      },
+      {
+        "label": "B",
+        "text": "The two monomers each lose a hydroxyl group and a hydrogen ion, and these combine to form a new water molecule.",
+        "isCorrect": false,
+        "explanation": "That is the reverse of hydrolysis. In hydrolysis the water is a reactant that is added to the bond."
+      },
+      {
+        "label": "C",
+        "text": "A water molecule is added to the bond, with its hydrogen added to one monomer and its hydroxyl group added to the other monomer.",
+        "isCorrect": true,
+        "explanation": "Hydrolysis uses a water molecule to break a covalent bond between monomers. The H and OH of the water complete the two monomers."
+      },
+      {
+        "label": "D",
+        "text": "Energy is released when the bond breaks, and no water is needed because the bond splits on its own into two parts.",
+        "isCorrect": false,
+        "explanation": "Hydrolysis requires water. The water molecule is split and its parts are added to the monomers."
+      }
+    ],
+    "explanation": "Hydrolysis breaks a bond between monomers by adding a water molecule.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/introduction-to-macromolecules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-18",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "introduction-to-macromolecules",
+    "difficulty": "medium",
+    "stem": "Which statement correctly pairs each reaction with its effect on a polymer?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Dehydration synthesis joins monomers and releases water, and hydrolysis breaks the bonds between monomers by adding water.",
+        "isCorrect": true,
+        "explanation": "Dehydration synthesis builds polymers and produces water. Hydrolysis breaks polymers down and uses water."
+      },
+      {
+        "label": "B",
+        "text": "Dehydration synthesis and hydrolysis both join monomers into polymers, but they differ in the type of monomer that is used.",
+        "isCorrect": false,
+        "explanation": "Hydrolysis breaks polymers into monomers. The two reactions are different in what they do, not in the monomers they use."
+      },
+      {
+        "label": "C",
+        "text": "Dehydration synthesis and hydrolysis both release a water molecule, but they differ in the type of bond that they form.",
+        "isCorrect": false,
+        "explanation": "Hydrolysis uses a water molecule instead of releasing one."
+      },
+      {
+        "label": "D",
+        "text": "Dehydration synthesis breaks the bonds between monomers and uses water, and hydrolysis joins monomers and releases water.",
+        "isCorrect": false,
+        "explanation": "This reverses the two reactions."
+      }
+    ],
+    "explanation": "Dehydration synthesis builds polymers and releases water; hydrolysis breaks polymers and uses water.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/introduction-to-macromolecules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-19",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "introduction-to-macromolecules",
+    "difficulty": "medium",
+    "stem": "A polymer is built from 100 monomers by dehydration synthesis. How many water molecules are released when it is made?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "50",
+        "isCorrect": false,
+        "explanation": "This assumes that monomers join in pairs. In a polymer every monomer is bonded to the next one in the chain."
+      },
+      {
+        "label": "B",
+        "text": "99",
+        "isCorrect": true,
+        "explanation": "Joining 100 monomers in a chain makes 99 bonds, and each bond forms by the loss of one water molecule."
+      },
+      {
+        "label": "C",
+        "text": "100",
+        "isCorrect": false,
+        "explanation": "This assumes one water molecule for each monomer. A chain of 100 monomers has 99 bonds between them."
+      },
+      {
+        "label": "D",
+        "text": "101",
+        "isCorrect": false,
+        "explanation": "This adds one to the number of monomers. The number of bonds is one less than the number of monomers."
+      }
+    ],
+    "explanation": "A chain of n monomers has n - 1 bonds, and each is formed by the loss of one water molecule.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/introduction-to-macromolecules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-20",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "introduction-to-macromolecules",
+    "difficulty": "medium",
+    "stem": "A polymer made of 25 monomers is completely broken down into monomers by hydrolysis. How many water molecules are used in the process?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "24",
+        "isCorrect": true,
+        "explanation": "A chain of 25 monomers has 24 bonds, and each bond is broken by the addition of one water molecule."
+      },
+      {
+        "label": "B",
+        "text": "25",
+        "isCorrect": false,
+        "explanation": "This assumes one water molecule for each monomer. There are only 24 bonds in a chain of 25 monomers."
+      },
+      {
+        "label": "C",
+        "text": "12",
+        "isCorrect": false,
+        "explanation": "This assumes that each water molecule breaks two bonds. Each hydrolysis reaction breaks one bond and uses one water molecule."
+      },
+      {
+        "label": "D",
+        "text": "26",
+        "isCorrect": false,
+        "explanation": "This adds one to the number of monomers. The number of bonds is one fewer than the number of monomers."
+      }
+    ],
+    "explanation": "Complete hydrolysis of a chain of n monomers uses n - 1 water molecules.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/introduction-to-macromolecules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-21",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "introduction-to-macromolecules",
+    "difficulty": "medium",
+    "stem": "In an experiment, 342 g of the disaccharide sucrose is completely broken down by hydrolysis into 180 g of glucose and 180 g of fructose. What mass of water is used in the reaction?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "360 g",
+        "isCorrect": false,
+        "explanation": "This is the combined mass of the products. The mass of water is the difference between the products and the sucrose."
+      },
+      {
+        "label": "B",
+        "text": "18 g",
+        "isCorrect": true,
+        "explanation": "Mass is conserved, so the mass of water used is the mass of the products minus the mass of the sucrose: (180 + 180) - 342 = 18 g."
+      },
+      {
+        "label": "C",
+        "text": "36 g",
+        "isCorrect": false,
+        "explanation": "This assumes that two water molecules are used. Breaking the single bond in sucrose uses one water molecule."
+      },
+      {
+        "label": "D",
+        "text": "9 g",
+        "isCorrect": false,
+        "explanation": "This divides the water between the two products. All of the water is added to the sucrose."
+      }
+    ],
+    "explanation": "The products have the mass of the sucrose plus the mass of the water that was added.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/introduction-to-macromolecules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-22",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "introduction-to-macromolecules",
+    "difficulty": "easy",
+    "stem": "In the digestive system, enzymes break down the large polymers in food into monomers. Which type of reaction is this, and what does each reaction require?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Dehydration synthesis, which requires a molecule of water for each bond that is broken.",
+        "isCorrect": false,
+        "explanation": "Dehydration synthesis forms bonds and releases water. It does not break down polymers."
+      },
+      {
+        "label": "B",
+        "text": "Hydrolysis, which requires a molecule of water for each bond that is broken in the polymer.",
+        "isCorrect": true,
+        "explanation": "Digestion breaks bonds between monomers by adding water, which is hydrolysis."
+      },
+      {
+        "label": "C",
+        "text": "Dehydration synthesis, which releases a molecule of water for each monomer that is released.",
+        "isCorrect": false,
+        "explanation": "Dehydration synthesis builds polymers, and it is the reverse of what digestion does."
+      },
+      {
+        "label": "D",
+        "text": "Hydrolysis, which releases a molecule of water for each bond that is broken in the polymer.",
+        "isCorrect": false,
+        "explanation": "Hydrolysis uses water. It does not release it."
+      }
+    ],
+    "explanation": "Digestion of polymers into monomers is hydrolysis, which uses water.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/introduction-to-macromolecules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-23",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "introduction-to-macromolecules",
+    "difficulty": "hard",
+    "stem": "An enzyme that catalyzes the hydrolysis of a polymer into its monomers is inhibited in a cell. Which prediction is most consistent with the effect of this change?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cell would have the same amount of polymer, because dehydration synthesis would also be stopped by the inhibitor.",
+        "isCorrect": false,
+        "explanation": "The inhibitor acts on an enzyme for hydrolysis. Dehydration synthesis would not be stopped by it."
+      },
+      {
+        "label": "B",
+        "text": "The polymer would accumulate, and fewer monomers would be available to the cell for building other molecules.",
+        "isCorrect": true,
+        "explanation": "Hydrolysis breaks polymers into monomers. If it is inhibited, less polymer is broken down and fewer monomers are produced."
+      },
+      {
+        "label": "C",
+        "text": "The monomers would accumulate, and the polymer would be broken down more quickly by another reaction.",
+        "isCorrect": false,
+        "explanation": "Inhibiting the breakdown of the polymer would make fewer monomers, not more."
+      },
+      {
+        "label": "D",
+        "text": "Water would accumulate in the cell, because it is no longer needed to join monomers into a polymer.",
+        "isCorrect": false,
+        "explanation": "Hydrolysis uses water to break the polymer, and the inhibition does not change the joining of monomers."
+      }
+    ],
+    "explanation": "Blocking hydrolysis blocks the release of monomers from polymers.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/introduction-to-macromolecules",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-24",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "carbohydrates",
+    "difficulty": "easy",
+    "stem": "What are the monomers of polysaccharides such as starch and cellulose?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Fatty acids, which are joined by covalent bonds in long branched chains",
+        "isCorrect": false,
+        "explanation": "Fatty acids are parts of many lipids. Lipids are not polymers of fatty acids, and carbohydrates are not made of them."
+      },
+      {
+        "label": "B",
+        "text": "Nucleotides, which are joined by covalent bonds in a long sugar-phosphate chain of many units",
+        "isCorrect": false,
+        "explanation": "Nucleotides are the monomers of nucleic acids, not of carbohydrates."
+      },
+      {
+        "label": "C",
+        "text": "Amino acids, which are joined by covalent bonds called peptide bonds",
+        "isCorrect": false,
+        "explanation": "Amino acids are the monomers of proteins, not of carbohydrates."
+      },
+      {
+        "label": "D",
+        "text": "Monosaccharides, which are simple sugars joined by covalent bonds into chains",
+        "isCorrect": true,
+        "explanation": "Polysaccharides, or complex carbohydrates, are polymers of monosaccharides."
+      }
+    ],
+    "explanation": "The monomers of polysaccharides are monosaccharides (simple sugars).",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/carbohydrates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-25",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "carbohydrates",
+    "difficulty": "easy",
+    "stem": "Which of the following are examples of polysaccharides?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Glucose, fructose and sucrose, which are all small sugar molecules",
+        "isCorrect": false,
+        "explanation": "Glucose and fructose are monosaccharides, and sucrose is a disaccharide. None is a polysaccharide."
+      },
+      {
+        "label": "B",
+        "text": "Glycogen, hemoglobin and cellulose, which are all found in living organisms",
+        "isCorrect": false,
+        "explanation": "Hemoglobin is a protein, so it is not a polysaccharide."
+      },
+      {
+        "label": "C",
+        "text": "Starch, DNA and cholesterol, which are all large molecules in cells",
+        "isCorrect": false,
+        "explanation": "DNA is a nucleic acid and cholesterol is a steroid. Only starch is a polysaccharide."
+      },
+      {
+        "label": "D",
+        "text": "Starch, glycogen and cellulose, which are all polymers of sugar monomers",
+        "isCorrect": true,
+        "explanation": "These three are complex carbohydrates made from monosaccharides."
+      }
+    ],
+    "explanation": "Starch, glycogen and cellulose are polysaccharides.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/carbohydrates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-26",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "carbohydrates",
+    "difficulty": "medium",
+    "stem": "Which statement correctly pairs a polysaccharide with its function?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Glycogen, which stores energy in the cells of animals such as humans",
+        "isCorrect": true,
+        "explanation": "Animals store glucose as glycogen, and plants store it as starch."
+      },
+      {
+        "label": "B",
+        "text": "Starch, which provides structural support in the cell walls of plants",
+        "isCorrect": false,
+        "explanation": "Starch stores energy in plants. The structural polysaccharide of plants is cellulose."
+      },
+      {
+        "label": "C",
+        "text": "Cellulose, which stores energy in the liver cells of animals",
+        "isCorrect": false,
+        "explanation": "Cellulose is a structural molecule in plant cell walls, not an energy store in animals."
+      },
+      {
+        "label": "D",
+        "text": "Cellulose, which carries the genetic information in plant cells",
+        "isCorrect": false,
+        "explanation": "Genetic information is carried by nucleic acids, not by polysaccharides."
+      }
+    ],
+    "explanation": "Starch and glycogen store energy, and cellulose provides structural support in plant cell walls.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/carbohydrates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-27",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "carbohydrates",
+    "difficulty": "medium",
+    "stem": "Which statement about the structure of polysaccharides is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They are held together by hydrogen bonds, which form between the monosaccharides in the polymer chain.",
+        "isCorrect": false,
+        "explanation": "The bonds between the monomers are covalent. Hydrogen bonds are weaker interactions."
+      },
+      {
+        "label": "B",
+        "text": "They are polymers of amino acids that have been modified by the addition of one or more sugar groups.",
+        "isCorrect": false,
+        "explanation": "Polysaccharides are polymers of monosaccharides, not of amino acids."
+      },
+      {
+        "label": "C",
+        "text": "They may be linear or branched polymers of monosaccharides that are connected by covalent bonds.",
+        "isCorrect": true,
+        "explanation": "Complex carbohydrates are made of sugar monomers joined by covalent bonds, in chains that may be linear or branched."
+      },
+      {
+        "label": "D",
+        "text": "They are always linear chains, because each monosaccharide can form a covalent bond with only two others.",
+        "isCorrect": false,
+        "explanation": "Some polysaccharides are branched, so the chains do not have to be linear."
+      }
+    ],
+    "explanation": "Polysaccharides are linear or branched polymers of monosaccharides.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/carbohydrates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-28",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "carbohydrates",
+    "difficulty": "medium",
+    "stem": "The table gives information about three polysaccharides. Which statement is best supported by the table?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cellulose and glycogen both store energy, but they are made by different groups of organisms.",
+        "isCorrect": false,
+        "explanation": "The table shows that cellulose provides structural support. It is not described as an energy store."
+      },
+      {
+        "label": "B",
+        "text": "Starch and glycogen both store energy, but they are made by different groups of living organisms.",
+        "isCorrect": true,
+        "explanation": "Both are energy stores. Starch is found in plants and glycogen in animals."
+      },
+      {
+        "label": "C",
+        "text": "Starch and cellulose are made by plants, so they must have the same structure and the same function in plants.",
+        "isCorrect": false,
+        "explanation": "They are both made by plants, but their functions differ. The table shows different functions."
+      },
+      {
+        "label": "D",
+        "text": "Glycogen and cellulose are made by different organisms, so only one of them can be a polymer of sugars.",
+        "isCorrect": false,
+        "explanation": "All three are polysaccharides, so all three are polymers of sugars."
+      }
+    ],
+    "explanation": "The table compares the source and function of starch, glycogen and cellulose.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/carbohydrates",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Polysaccharide",
+        "Made by",
+        "Function"
+      ],
+      "rows": [
+        [
+          "Starch",
+          "Plants",
+          "Stores energy"
+        ],
+        [
+          "Glycogen",
+          "Animals",
+          "Stores energy"
+        ],
+        [
+          "Cellulose",
+          "Plants",
+          "Gives structural support in cell walls"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Three polysaccharides"
+    }
+  },
+  {
+    "id": "ap-bio-u1-mcq-29",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "carbohydrates",
+    "difficulty": "medium",
+    "stem": "A linear polysaccharide is built from glucose monomers by dehydration synthesis, and 249 water molecules are released. How many glucose monomers does the polysaccharide contain?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "248",
+        "isCorrect": false,
+        "explanation": "This subtracts one from the number of water molecules. The number of monomers is one more than the number of bonds."
+      },
+      {
+        "label": "B",
+        "text": "250",
+        "isCorrect": true,
+        "explanation": "A linear chain of n monomers has n - 1 bonds, so the release of 249 water molecules means that 250 monomers were joined."
+      },
+      {
+        "label": "C",
+        "text": "249",
+        "isCorrect": false,
+        "explanation": "This takes the number of water molecules as the number of monomers. There is one more monomer than there are bonds."
+      },
+      {
+        "label": "D",
+        "text": "500",
+        "isCorrect": false,
+        "explanation": "This doubles the number of monomers. Each water molecule is released when one bond forms between two monomers."
+      }
+    ],
+    "explanation": "A chain of n monomers has n - 1 bonds, so the number of monomers is the number of water molecules plus one.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/carbohydrates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-30",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "carbohydrates",
+    "difficulty": "hard",
+    "stem": "A mutation prevents a plant from making cellulose. Which effect is most likely in the cells of the plant?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The plant would store genetic information in a different way, because cellulose is part of the plant's DNA.",
+        "isCorrect": false,
+        "explanation": "Cellulose is not part of DNA. Genetic information is stored in nucleic acids."
+      },
+      {
+        "label": "B",
+        "text": "The cell walls would be weaker, so the cells of the plant would have less structural support to hold them upright.",
+        "isCorrect": true,
+        "explanation": "Cellulose is the structural polysaccharide of plant cell walls, so without it the walls are weaker."
+      },
+      {
+        "label": "C",
+        "text": "The plant would be unable to make glucose, because glucose is the monomer that is built from cellulose.",
+        "isCorrect": false,
+        "explanation": "Glucose is the monomer from which cellulose is built, not the other way around."
+      },
+      {
+        "label": "D",
+        "text": "The plant would be unable to store energy, because cellulose is the main energy storage polysaccharide in plant cells.",
+        "isCorrect": false,
+        "explanation": "Plants store energy mainly as starch. Cellulose has a structural role."
+      }
+    ],
+    "explanation": "Cellulose provides structural support in plant cell walls.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/carbohydrates",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-31",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "lipids",
+    "difficulty": "easy",
+    "stem": "Which statement describes a general property of lipids?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They are typically nonpolar and hydrophobic, so they do not dissolve readily in water or mix with it.",
+        "isCorrect": true,
+        "explanation": "Lipids are nonpolar, which is why they do not mix well with water."
+      },
+      {
+        "label": "B",
+        "text": "They are typically polar and hydrophilic, so they dissolve readily in water and form hydrogen bonds with it.",
+        "isCorrect": false,
+        "explanation": "Lipids are nonpolar and hydrophobic. It is polar molecules that dissolve in water."
+      },
+      {
+        "label": "C",
+        "text": "They are ionic compounds that break apart into charged particles when they are mixed with water.",
+        "isCorrect": false,
+        "explanation": "Lipids are nonpolar molecules and are not ionic compounds."
+      },
+      {
+        "label": "D",
+        "text": "They are polymers of amino acids that fold into specific shapes, which determines their function.",
+        "isCorrect": false,
+        "explanation": "Amino acids are the monomers of proteins, not lipids."
+      }
+    ],
+    "explanation": "Lipids are typically nonpolar and hydrophobic.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/lipids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-32",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "lipids",
+    "difficulty": "medium",
+    "stem": "Which statement correctly describes an unsaturated fatty acid?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It has a phosphate group in its tail, which makes the fatty acid polar and gives it a kink.",
+        "isCorrect": false,
+        "explanation": "A phosphate group is part of a phospholipid. Unsaturated fatty acids are described by double bonds in the tail."
+      },
+      {
+        "label": "B",
+        "text": "It has a carbon atom that is joined to more hydrogen atoms than in any other fatty acid in the tail.",
+        "isCorrect": false,
+        "explanation": "Unsaturated fatty acids have fewer hydrogen atoms because of the double bonds in the tail."
+      },
+      {
+        "label": "C",
+        "text": "It has only single bonds between the carbon atoms in its tail, which keeps the carbon chain straight.",
+        "isCorrect": false,
+        "explanation": "This describes a saturated fatty acid, which is saturated with hydrogen atoms."
+      },
+      {
+        "label": "D",
+        "text": "It has at least one double bond between carbon atoms in its tail, which causes the carbon chain to kink.",
+        "isCorrect": true,
+        "explanation": "Double bonds between carbons in the hydrocarbon tail put a bend in the chain."
+      }
+    ],
+    "explanation": "Unsaturated fatty acids contain at least one carbon-carbon double bond, which kinks the chain.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/lipids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-33",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "lipids",
+    "difficulty": "medium",
+    "stem": "Olive oil is liquid at room temperature, but butter is solid at the same temperature. Which statement best explains the difference?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Olive oil has more unsaturated fatty acids, whose kinked tails prevent the molecules from packing closely together.",
+        "isCorrect": true,
+        "explanation": "The more unsaturated a lipid is, the more liquid it is at room temperature, because kinks in the tails keep the molecules apart."
+      },
+      {
+        "label": "B",
+        "text": "Olive oil has more saturated fatty acids, whose straight tails keep the molecules too far apart to form a solid at all.",
+        "isCorrect": false,
+        "explanation": "Straight tails of saturated fatty acids pack closely together, which makes a lipid more solid."
+      },
+      {
+        "label": "C",
+        "text": "Olive oil is made of proteins, which are always liquids at room temperature, and butter is made of fats.",
+        "isCorrect": false,
+        "explanation": "Olive oil is a lipid and not a protein, and proteins are not liquids because of their type."
+      },
+      {
+        "label": "D",
+        "text": "Butter contains more water than olive oil, and the water holds the lipid molecules together as a solid.",
+        "isCorrect": false,
+        "explanation": "Water is not the reason that butter is solid. Both are made mostly of lipids."
+      }
+    ],
+    "explanation": "More double bonds means more kinks, less tight packing and a more liquid lipid at room temperature.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/lipids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-34",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "lipids",
+    "difficulty": "hard",
+    "stem": "A student measures the average number of carbon-carbon double bonds per fatty acid in four fats and records whether each fat is solid or liquid at 20 °C. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Fats with fewer double bonds per fatty acid are more likely to be liquid at 20 °C than fats with more double bonds.",
+        "isCorrect": false,
+        "explanation": "This reverses the pattern in the data. Fats with fewer double bonds are the solids."
+      },
+      {
+        "label": "B",
+        "text": "Fats with more double bonds per fatty acid are more likely to be liquid at 20 °C than fats with fewer double bonds.",
+        "isCorrect": true,
+        "explanation": "The two fats with fewer than half a double bond per fatty acid are solid, and the two with more than one are liquid."
+      },
+      {
+        "label": "C",
+        "text": "Whether a fat is solid or liquid at 20 °C does not depend on its fatty acids, because all four are fats.",
+        "isCorrect": false,
+        "explanation": "The four fats differ in their state and in their number of double bonds, which suggests that the two are related."
+      },
+      {
+        "label": "D",
+        "text": "Double bonds make the tails of fatty acids straighter, which explains why these fats are liquid at 20 °C.",
+        "isCorrect": false,
+        "explanation": "Double bonds put kinks in the tails. Kinked tails pack less closely, which explains the liquid fats."
+      }
+    ],
+    "explanation": "The data show that fats with more double bonds per fatty acid tend to be liquid at room temperature.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/lipids",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Fat",
+        "Average number of C=C double bonds per fatty acid",
+        "State at 20 °C"
+      ],
+      "rows": [
+        [
+          "Fat P",
+          "0.3",
+          "Solid"
+        ],
+        [
+          "Fat Q",
+          "1.1",
+          "Liquid"
+        ],
+        [
+          "Fat R",
+          "1.9",
+          "Liquid"
+        ],
+        [
+          "Fat S",
+          "0.1",
+          "Solid"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Four fats"
+    }
+  },
+  {
+    "id": "ap-bio-u1-mcq-35",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "lipids",
+    "difficulty": "easy",
+    "stem": "Which type of lipid groups together to form the lipid bilayers of plasma membranes and other cell membranes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Phospholipids, which group together to form a bilayer in the plasma membrane",
+        "isCorrect": true,
+        "explanation": "Phospholipids form the lipid bilayer found in plasma and cell membranes."
+      },
+      {
+        "label": "B",
+        "text": "Cholesterol, which forms the entire bilayer of the plasma membrane by itself",
+        "isCorrect": false,
+        "explanation": "Cholesterol is found in animal cell membranes and stabilizes them, but phospholipids form the bilayer."
+      },
+      {
+        "label": "C",
+        "text": "Fats, which store energy and can provide insulation in some mammals",
+        "isCorrect": false,
+        "explanation": "Fats store energy and insulate. The bilayer is formed by phospholipids."
+      },
+      {
+        "label": "D",
+        "text": "Steroids, which are hormones that support growth and development in the body",
+        "isCorrect": false,
+        "explanation": "Steroids are lipids that act as hormones. They do not form the bilayer."
+      }
+    ],
+    "explanation": "Phospholipids form the lipid bilayer of cell membranes.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/lipids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-36",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "lipids",
+    "difficulty": "medium",
+    "stem": "Which statement about steroids is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Steroids are the lipids that form the lipid bilayer, with a hydrophilic head and two hydrophobic tails.",
+        "isCorrect": false,
+        "explanation": "This describes phospholipids, not steroids."
+      },
+      {
+        "label": "B",
+        "text": "Steroids include hormones that support physiological functions such as growth and development, energy metabolism and homeostasis.",
+        "isCorrect": true,
+        "explanation": "Steroid hormones act as chemical signals that support many functions of the body."
+      },
+      {
+        "label": "C",
+        "text": "Steroids are polymers of nucleotides, which store the genetic information that is passed on from parent to offspring.",
+        "isCorrect": false,
+        "explanation": "Nucleotides are the monomers of nucleic acids, which store genetic information."
+      },
+      {
+        "label": "D",
+        "text": "Steroids are the main energy storage lipids, which are stored in cells and used for insulation in mammals.",
+        "isCorrect": false,
+        "explanation": "This describes fats. Steroids are mainly known as hormones."
+      }
+    ],
+    "explanation": "Steroids are lipids that function as hormones.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/lipids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-37",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "lipids",
+    "difficulty": "medium",
+    "stem": "Which statement describes a function of cholesterol in animal cells?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It stores energy for the cell in the form of a long polymer of sugar molecules.",
+        "isCorrect": false,
+        "explanation": "Cholesterol is a lipid, not a polysaccharide, and it is not mainly an energy store."
+      },
+      {
+        "label": "B",
+        "text": "It stores the genetic information of the cell in the order of its subcomponents.",
+        "isCorrect": false,
+        "explanation": "Genetic information is stored in nucleic acids, not in cholesterol."
+      },
+      {
+        "label": "C",
+        "text": "It provides structural stability to the plasma membrane of the cell.",
+        "isCorrect": true,
+        "explanation": "Cholesterol is found in animal cell membranes, where it provides structural stability."
+      },
+      {
+        "label": "D",
+        "text": "It carries amino acids to the ribosome so that they can be joined into a protein.",
+        "isCorrect": false,
+        "explanation": "Transfer of amino acids is not a function of cholesterol."
+      }
+    ],
+    "explanation": "Cholesterol provides structural stability to animal cell membranes.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/lipids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-38",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "lipids",
+    "difficulty": "hard",
+    "stem": "A manufacturer converts a liquid vegetable oil into a solid margarine by adding hydrogen atoms to the double bonds in its fatty acid tails. Which explanation best accounts for the margarine being solid?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The tails become polar and hydrophilic, so the lipid molecules form hydrogen bonds with one another and with the water.",
+        "isCorrect": false,
+        "explanation": "The tails remain nonpolar hydrocarbon chains after the hydrogen is added."
+      },
+      {
+        "label": "B",
+        "text": "The tails gain double bonds, so the fatty acids become more unsaturated and the lipid molecules form a solid at room temperature.",
+        "isCorrect": false,
+        "explanation": "Adding hydrogen to double bonds reduces the number of double bonds, so the fatty acids become more saturated."
+      },
+      {
+        "label": "C",
+        "text": "The tails become more kinked, so the lipid molecules pack more closely together and the lipid is solid at room temperature.",
+        "isCorrect": false,
+        "explanation": "Adding hydrogen to the double bonds removes the kinks. It does not add more."
+      },
+      {
+        "label": "D",
+        "text": "The tails become saturated and straight, so the lipid molecules pack closely together and the lipid is solid at room temperature.",
+        "isCorrect": true,
+        "explanation": "Removing the double bonds removes the kinks. Straight tails pack closely, which makes the lipid more solid."
+      }
+    ],
+    "explanation": "More saturated tails are straighter, pack more closely and make a lipid more solid.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/lipids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-39",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "nucleic-acids",
+    "difficulty": "easy",
+    "stem": "Which choice lists the three structural components of a nucleotide?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A monosaccharide, a hydroxyl group and a peptide bond between two molecules",
+        "isCorrect": false,
+        "explanation": "A nucleotide does not contain a peptide bond. Peptide bonds join amino acids."
+      },
+      {
+        "label": "B",
+        "text": "A fatty acid tail, a glycerol molecule and a phosphate group in a membrane",
+        "isCorrect": false,
+        "explanation": "These are parts of lipids such as phospholipids, not of nucleotides."
+      },
+      {
+        "label": "C",
+        "text": "A five-carbon sugar, a phosphate group and a nitrogenous base",
+        "isCorrect": true,
+        "explanation": "Each nucleotide of DNA or RNA has these three components."
+      },
+      {
+        "label": "D",
+        "text": "An amino group, a carboxyl group and a variable R group on a central carbon",
+        "isCorrect": false,
+        "explanation": "These are the parts of an amino acid, the monomer of proteins."
+      }
+    ],
+    "explanation": "A nucleotide has a five-carbon sugar, a phosphate and a nitrogenous base.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/nucleic-acids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-40",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "nucleic-acids",
+    "difficulty": "easy",
+    "stem": "Which choice correctly identifies two structural differences between DNA and RNA?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "DNA and RNA contain the same sugar and bases, but DNA is found only in the nucleus and RNA only in the cytoplasm.",
+        "isCorrect": false,
+        "explanation": "The sugar and one base differ. The locations are not what distinguishes the structures."
+      },
+      {
+        "label": "B",
+        "text": "DNA contains the base uracil and is typically single stranded, whereas RNA contains thymine and is typically double stranded.",
+        "isCorrect": false,
+        "explanation": "DNA contains thymine and is typically double stranded. RNA contains uracil and is typically single stranded."
+      },
+      {
+        "label": "C",
+        "text": "DNA contains the sugar deoxyribose and the base thymine, whereas RNA contains the sugar ribose and the base uracil.",
+        "isCorrect": true,
+        "explanation": "These are the structural differences in the sugar and in one of the bases."
+      },
+      {
+        "label": "D",
+        "text": "DNA contains the sugar ribose and the base uracil, whereas RNA contains the sugar deoxyribose and the base thymine.",
+        "isCorrect": false,
+        "explanation": "This reverses the sugars and bases of the two molecules."
+      }
+    ],
+    "explanation": "DNA has deoxyribose and thymine; RNA has ribose and uracil.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/nucleic-acids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-41",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "nucleic-acids",
+    "difficulty": "medium",
+    "stem": "One strand of a DNA molecule has the sequence 5'-ATGCCATG-3'. What is the sequence of the complementary strand, written in the 5' to 3' direction?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5'-TACGGTAC-3'",
+        "isCorrect": false,
+        "explanation": "These are the complementary bases, but they are written in the 3' to 5' direction. The strand must be reversed to give the 5' to 3' sequence."
+      },
+      {
+        "label": "B",
+        "text": "5'-GTACCGTA-3'",
+        "isCorrect": false,
+        "explanation": "This is the original strand written backward. It has the same bases and not the complementary ones."
+      },
+      {
+        "label": "C",
+        "text": "5'-ATGCCATG-3'",
+        "isCorrect": false,
+        "explanation": "This is the original sequence. The complementary strand has the complementary base at each position."
+      },
+      {
+        "label": "D",
+        "text": "5'-CATGGCAT-3'",
+        "isCorrect": true,
+        "explanation": "Complementary bases pair A with T and C with G, and the strands are antiparallel. The complement reads 3'-TACGGTAC-5', which is 5'-CATGGCAT-3' when written from the 5' end."
+      }
+    ],
+    "explanation": "Pair A with T and C with G, then write the new strand 5' to 3', because the strands run in opposite directions.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/nucleic-acids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-42",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "nucleic-acids",
+    "difficulty": "medium",
+    "stem": "In a DNA double helix, one strand runs in the 5' to 3' direction from left to right. In which direction does the other strand run?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "In the opposite direction, so it runs 5' to 3' from right to left, which makes the strands antiparallel.",
+        "isCorrect": true,
+        "explanation": "DNA is an antiparallel double helix, with two strands running in opposite 5' to 3' orientations."
+      },
+      {
+        "label": "B",
+        "text": "It runs 3' to 5' from left to right, because the second strand must follow the same path as the first.",
+        "isCorrect": false,
+        "explanation": "A strand that runs 3' to 5' from left to right runs the same way as the first strand. The antiparallel strand runs the opposite way."
+      },
+      {
+        "label": "C",
+        "text": "In the same direction, so it also runs 5' to 3' from left to right, which makes the strands parallel.",
+        "isCorrect": false,
+        "explanation": "The strands of DNA are antiparallel, not parallel."
+      },
+      {
+        "label": "D",
+        "text": "It has no particular direction, because only one strand of DNA is made of nucleotides that have a 5' end.",
+        "isCorrect": false,
+        "explanation": "Both strands are made of nucleotides, and each strand has a 5' end and a 3' end."
+      }
+    ],
+    "explanation": "The two strands of DNA are antiparallel.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/nucleic-acids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-43",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "nucleic-acids",
+    "difficulty": "medium",
+    "stem": "During the synthesis of a strand of nucleic acid, where on the growing strand are new nucleotides added?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "To the 5' end, forming a covalent bond with the phosphate group of the sugar at that end of the strand.",
+        "isCorrect": false,
+        "explanation": "Nucleotides are added to the 3' end, not the 5' end."
+      },
+      {
+        "label": "B",
+        "text": "To the middle of the strand, by breaking a hydrogen bond between two of the nucleotides in the strand.",
+        "isCorrect": false,
+        "explanation": "Nucleotides are added at the end of the strand, forming a covalent bond."
+      },
+      {
+        "label": "C",
+        "text": "To the 3' end, forming a covalent bond with the hydroxyl group of the sugar at that end of the strand.",
+        "isCorrect": true,
+        "explanation": "New nucleotides are added to the 3' end of the growing strand."
+      },
+      {
+        "label": "D",
+        "text": "To either end, because both ends of the strand have a hydroxyl group that can form a covalent bond.",
+        "isCorrect": false,
+        "explanation": "Only one end is used. The 5' end has a phosphate and the 3' end a hydroxyl group."
+      }
+    ],
+    "explanation": "Nucleotides are added to the 3' end of a growing strand.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/nucleic-acids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-44",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "nucleic-acids",
+    "difficulty": "hard",
+    "stem": "A researcher analyzes the nitrogenous bases in two purified samples of nucleic acid. The table shows the percentage of each base. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Both samples are probably RNA, because they contain different amounts of the four bases and neither one shows equal amounts of paired bases.",
+        "isCorrect": false,
+        "explanation": "Sample 1 contains thymine and not uracil, so it is not RNA, and its equal pairs fit a double helix."
+      },
+      {
+        "label": "B",
+        "text": "Sample 1 is probably double-stranded DNA, because it has thymine and equal amounts of A and T and of G and C, and sample 2 is probably RNA.",
+        "isCorrect": true,
+        "explanation": "DNA has thymine, and in a double helix A pairs with T and G with C. RNA contains uracil in place of thymine."
+      },
+      {
+        "label": "C",
+        "text": "Both samples are probably DNA, because both contain the bases adenine, guanine and cytosine, although in different amounts in each.",
+        "isCorrect": false,
+        "explanation": "Sample 2 contains uracil and no thymine, so it is not DNA."
+      },
+      {
+        "label": "D",
+        "text": "Sample 1 is probably RNA, because it has equal amounts of A and T, and sample 2 is probably DNA, because it contains uracil in addition to the other bases.",
+        "isCorrect": false,
+        "explanation": "Thymine is found in DNA and uracil is found in RNA, so the identification is reversed."
+      }
+    ],
+    "explanation": "Thymine indicates DNA, uracil indicates RNA, and equal A and T and equal G and C fit a double helix.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/nucleic-acids",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Sample",
+        "Adenine (%)",
+        "Thymine (%)",
+        "Uracil (%)",
+        "Guanine (%)",
+        "Cytosine (%)"
+      ],
+      "rows": [
+        [
+          "Sample 1",
+          "30",
+          "30",
+          "0",
+          "20",
+          "20"
+        ],
+        [
+          "Sample 2",
+          "18",
+          "0",
+          "29",
+          "32",
+          "21"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Base composition of two nucleic acid samples"
+    }
+  },
+  {
+    "id": "ap-bio-u1-mcq-45",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "nucleic-acids",
+    "difficulty": "easy",
+    "stem": "Which type of interaction holds the two strands of a DNA double helix together?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Ionic bonds between the positively charged and negatively charged bases of the two strands",
+        "isCorrect": false,
+        "explanation": "The bases are held together by hydrogen bonds, not by ionic bonds."
+      },
+      {
+        "label": "B",
+        "text": "Peptide bonds between the nitrogenous bases of the two strands of the double helix",
+        "isCorrect": false,
+        "explanation": "Peptide bonds join amino acids in proteins and do not occur in DNA."
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bonds between the complementary bases A and T and between C and G of the strands",
+        "isCorrect": true,
+        "explanation": "Complementary bases on the two strands pair through hydrogen bonds."
+      },
+      {
+        "label": "D",
+        "text": "Covalent bonds between the sugar of one strand and the phosphate of the opposite strand",
+        "isCorrect": false,
+        "explanation": "Covalent bonds join the nucleotides within each strand. They do not hold the two strands together."
+      }
+    ],
+    "explanation": "The two strands are held together by hydrogen bonds between complementary bases.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/nucleic-acids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-46",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "nucleic-acids",
+    "difficulty": "hard",
+    "stem": "A mutation changes one nucleotide in a gene from G to A. Which statement best explains how this change could alter the information carried by the gene?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The information is stored in the hydrogen bonds between strands, so the change would only affect the strength of the bonds.",
+        "isCorrect": false,
+        "explanation": "The hydrogen bonds hold the strands together. The information is in the sequence of the bases."
+      },
+      {
+        "label": "B",
+        "text": "The information is stored in the sugar-phosphate backbone, so a change in a base cannot change it in any way.",
+        "isCorrect": false,
+        "explanation": "The backbone is the same along the strand. The information is carried in the order of the bases."
+      },
+      {
+        "label": "C",
+        "text": "Biological information is encoded in the sequence of nucleotides, so a change in the sequence can change the information.",
+        "isCorrect": true,
+        "explanation": "In nucleic acids the information is in the order of the nucleotide monomers, and a change in that order can change it."
+      },
+      {
+        "label": "D",
+        "text": "The information is stored in the number of strands in the molecule, so one base change has no effect on it.",
+        "isCorrect": false,
+        "explanation": "The number of strands does not carry the information. The sequence of nucleotides does."
+      }
+    ],
+    "explanation": "In DNA and RNA, information is encoded in the sequence of nucleotides.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/nucleic-acids",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-47",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "proteins",
+    "difficulty": "easy",
+    "stem": "How are the amino acids in a polypeptide joined to one another?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "By ionic bonds, each formed between the positively charged and negatively charged ends of two amino acids.",
+        "isCorrect": false,
+        "explanation": "The amino acids in the chain are joined by covalent bonds, not ionic bonds."
+      },
+      {
+        "label": "B",
+        "text": "By hydrogen bonds, each formed between the R group of one amino acid and the R group of the next.",
+        "isCorrect": false,
+        "explanation": "Hydrogen bonds between R groups contribute to the folding of the protein. They do not join the amino acids in the chain."
+      },
+      {
+        "label": "C",
+        "text": "By glycosidic bonds, each formed between the hydroxyl groups of the amino acid and the next amino acid.",
+        "isCorrect": false,
+        "explanation": "Glycosidic bonds join monosaccharides in carbohydrates and do not join amino acids."
+      },
+      {
+        "label": "D",
+        "text": "By covalent peptide bonds between the carboxyl group of one amino acid and the amine group of the next.",
+        "isCorrect": true,
+        "explanation": "Peptide bonds are covalent bonds, and they form a growing chain of amino acids."
+      }
+    ],
+    "explanation": "Amino acids are joined by covalent peptide bonds.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/proteins",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-48",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "proteins",
+    "difficulty": "easy",
+    "stem": "What determines the primary structure of a protein?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The specific sequence of amino acids in the polypeptide chain",
+        "isCorrect": true,
+        "explanation": "The primary structure is the order of amino acids, and it determines the overall shape of the protein."
+      },
+      {
+        "label": "B",
+        "text": "The association of two or more separate polypeptide chains into a single functional protein",
+        "isCorrect": false,
+        "explanation": "This describes the quaternary structure."
+      },
+      {
+        "label": "C",
+        "text": "The folding of the polypeptide backbone into alpha helices and beta-pleated sheets",
+        "isCorrect": false,
+        "explanation": "This describes the secondary structure."
+      },
+      {
+        "label": "D",
+        "text": "The three-dimensional shape that results from interactions between the R groups of amino acids",
+        "isCorrect": false,
+        "explanation": "This describes the tertiary structure."
+      }
+    ],
+    "explanation": "Primary structure is the amino acid sequence.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/proteins",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-49",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "proteins",
+    "difficulty": "medium",
+    "stem": "A polypeptide is made of 120 amino acids in a single linear chain. How many peptide bonds does it contain?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "120",
+        "isCorrect": false,
+        "explanation": "This assumes one peptide bond for each amino acid. A chain has one fewer bond than the number of amino acids."
+      },
+      {
+        "label": "B",
+        "text": "118",
+        "isCorrect": false,
+        "explanation": "This subtracts two from the number of amino acids. A linear chain of n amino acids has n - 1 bonds."
+      },
+      {
+        "label": "C",
+        "text": "119",
+        "isCorrect": true,
+        "explanation": "A chain of 120 amino acids has 119 bonds between them, one for each pair of neighboring amino acids."
+      },
+      {
+        "label": "D",
+        "text": "240",
+        "isCorrect": false,
+        "explanation": "This assumes two peptide bonds for each amino acid. Each amino acid is joined to its neighbors, so each bond is shared by two."
+      }
+    ],
+    "explanation": "A linear chain of n amino acids has n - 1 peptide bonds.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/proteins",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-50",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "proteins",
+    "difficulty": "medium",
+    "stem": "Alpha helices and beta-pleated sheets are examples of the secondary structure of a protein. What forms these shapes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Disulfide bridges between the R groups of amino acids that are far apart in the chain",
+        "isCorrect": false,
+        "explanation": "Disulfide bridges contribute to the tertiary structure."
+      },
+      {
+        "label": "B",
+        "text": "Ionic interactions between R groups of two different polypeptide chains in the protein",
+        "isCorrect": false,
+        "explanation": "Interactions between different chains belong to the quaternary structure."
+      },
+      {
+        "label": "C",
+        "text": "Covalent bonds between the carboxyl group of one amino acid and the amine group of the next",
+        "isCorrect": false,
+        "explanation": "These are the peptide bonds that make the primary structure."
+      },
+      {
+        "label": "D",
+        "text": "Hydrogen bonding between atoms of the polypeptide backbone, in local regions of the chain",
+        "isCorrect": true,
+        "explanation": "Secondary structure comes from hydrogen bonds between backbone atoms."
+      }
+    ],
+    "explanation": "Secondary structure is formed by hydrogen bonding in the polypeptide backbone.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/proteins",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-51",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "proteins",
+    "difficulty": "medium",
+    "stem": "Which interactions between the R groups of amino acids determine the three-dimensional shape of the tertiary structure of a protein?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Only the interactions between separate polypeptide chains that make up a multi-chain protein",
+        "isCorrect": false,
+        "explanation": "This describes the quaternary structure, which exists only in proteins that have more than one polypeptide."
+      },
+      {
+        "label": "B",
+        "text": "Only the peptide bonds that join each amino acid to the next one in the polypeptide chain",
+        "isCorrect": false,
+        "explanation": "Peptide bonds join the amino acids and make the primary structure. They do not fold the chain."
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bonds, hydrophobic interactions, ionic interactions and disulfide bridges",
+        "isCorrect": true,
+        "explanation": "These interactions between R groups fold the polypeptide into its tertiary structure."
+      },
+      {
+        "label": "D",
+        "text": "Only the hydrogen bonds between the atoms of the polypeptide backbone in the helices and sheets",
+        "isCorrect": false,
+        "explanation": "This describes the secondary structure and leaves out the interactions between R groups."
+      }
+    ],
+    "explanation": "R-group interactions fold a polypeptide into its tertiary structure.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/proteins",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-52",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "proteins",
+    "difficulty": "medium",
+    "stem": "The table shows the number of polypeptide chains in four proteins. Which proteins have a quaternary structure?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hemoglobin and collagen, because each is made of more than one polypeptide chain.",
+        "isCorrect": true,
+        "explanation": "Quaternary structure arises from interactions between multiple polypeptides."
+      },
+      {
+        "label": "B",
+        "text": "Hemoglobin only, because it is the protein with the highest number of polypeptide chains.",
+        "isCorrect": false,
+        "explanation": "Collagen also has more than one chain. A quaternary structure does not require four chains."
+      },
+      {
+        "label": "C",
+        "text": "Myoglobin and lysozyme, because each is made of a single chain with a tertiary structure.",
+        "isCorrect": false,
+        "explanation": "A single polypeptide has no quaternary structure, because there are no other chains to interact with."
+      },
+      {
+        "label": "D",
+        "text": "All four of the proteins, because each has a primary, secondary and tertiary structure.",
+        "isCorrect": false,
+        "explanation": "All proteins have the first three levels. Quaternary structure exists only if more than one polypeptide is present."
+      }
+    ],
+    "explanation": "Quaternary structure requires more than one polypeptide.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/proteins",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Protein",
+        "Number of polypeptide chains"
+      ],
+      "rows": [
+        [
+          "Hemoglobin",
+          "4"
+        ],
+        [
+          "Myoglobin",
+          "1"
+        ],
+        [
+          "Collagen",
+          "3"
+        ],
+        [
+          "Lysozyme",
+          "1"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Four proteins"
+    }
+  },
+  {
+    "id": "ap-bio-u1-mcq-53",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "proteins",
+    "difficulty": "hard",
+    "stem": "In a water-soluble protein, a polar amino acid on the outer surface of the protein is replaced by a nonpolar amino acid because of a mutation. Which outcome is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The new nonpolar R group may interact differently with water, which could change the folding or make the proteins clump together.",
+        "isCorrect": true,
+        "explanation": "R groups can be hydrophobic or hydrophilic, and their interactions determine structure and function. A hydrophobic group on a surface in water may cause aggregation."
+      },
+      {
+        "label": "B",
+        "text": "The protein would become more soluble in water, because the nonpolar R group forms more hydrogen bonds with water.",
+        "isCorrect": false,
+        "explanation": "Nonpolar R groups do not form hydrogen bonds with water, so the change would not increase solubility."
+      },
+      {
+        "label": "C",
+        "text": "The peptide bonds of the protein would break, because nonpolar R groups cannot be joined by peptide bonds to the other amino acids in the chain.",
+        "isCorrect": false,
+        "explanation": "A peptide bond joins the backbone of amino acids and does not depend on whether the R group is polar or nonpolar."
+      },
+      {
+        "label": "D",
+        "text": "The protein would be unchanged, because a change in a single amino acid cannot affect the shape of a protein at all.",
+        "isCorrect": false,
+        "explanation": "The sequence determines the shape. A single change can alter folding and function."
+      }
+    ],
+    "explanation": "The properties of R groups determine how a protein folds and functions.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/proteins",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u1-mcq-54",
+    "unit": "unit-1-chemistry-of-life",
+    "topic": "proteins",
+    "difficulty": "hard",
+    "stem": "A chemical disrupts hydrogen bonds and ionic interactions in a protein but does not break any covalent bonds. Which level of protein structure would remain intact?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The secondary structure, because the helices and sheets depend mainly on covalent bonds in the backbone.",
+        "isCorrect": false,
+        "explanation": "Secondary structure depends on hydrogen bonds, which the chemical disrupts."
+      },
+      {
+        "label": "B",
+        "text": "The primary structure, because the peptide bonds that join the amino acids are covalent bonds.",
+        "isCorrect": true,
+        "explanation": "The sequence of amino acids is held together by covalent peptide bonds, which this chemical does not break."
+      },
+      {
+        "label": "C",
+        "text": "The quaternary structure, because the chains of a multi-chain protein are always held by covalent bonds.",
+        "isCorrect": false,
+        "explanation": "Chains are usually held by weaker interactions such as hydrogen bonds and ionic interactions."
+      },
+      {
+        "label": "D",
+        "text": "The tertiary structure, because the folding depends on ionic interactions that are covalent bonds.",
+        "isCorrect": false,
+        "explanation": "Ionic interactions are not covalent bonds, and the chemical disrupts them."
+      }
+    ],
+    "explanation": "Only the primary structure depends on covalent peptide bonds alone.",
+    "conceptLink": "ap-biology/unit-1-chemistry-of-life/proteins",
+    "reviewed": false
+  }
+]

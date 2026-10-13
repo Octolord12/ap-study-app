@@ -1,0 +1,69 @@
+{
+  "slug": "unit-7-natural-selection",
+  "order": 7,
+  "name": "Natural Selection",
+  "weightingMin": 13,
+  "weightingMax": 20,
+  "topics": [
+    {
+      "slug": "introduction-to-natural-selection",
+      "order": 1,
+      "name": "Introduction to Natural Selection"
+    },
+    {
+      "slug": "natural-selection",
+      "order": 2,
+      "name": "Natural Selection"
+    },
+    {
+      "slug": "artificial-selection",
+      "order": 3,
+      "name": "Artificial Selection"
+    },
+    {
+      "slug": "population-genetics",
+      "order": 4,
+      "name": "Population Genetics"
+    },
+    {
+      "slug": "hardy-weinberg-equilibrium",
+      "order": 5,
+      "name": "Hardy–Weinberg Equilibrium"
+    },
+    {
+      "slug": "evidence-of-evolution",
+      "order": 6,
+      "name": "Evidence of Evolution"
+    },
+    {
+      "slug": "common-ancestry",
+      "order": 7,
+      "name": "Common Ancestry"
+    },
+    {
+      "slug": "continuing-evolution",
+      "order": 8,
+      "name": "Continuing Evolution"
+    },
+    {
+      "slug": "phylogeny",
+      "order": 9,
+      "name": "Phylogeny"
+    },
+    {
+      "slug": "speciation",
+      "order": 10,
+      "name": "Speciation"
+    },
+    {
+      "slug": "variations-in-populations",
+      "order": 11,
+      "name": "Variations in Populations"
+    },
+    {
+      "slug": "origins-of-life-on-earth",
+      "order": 12,
+      "name": "Origins of Life on Earth"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "unit-3-cellular-energetics",
+  "order": 3,
+  "name": "Cellular Energetics",
+  "weightingMin": 12,
+  "weightingMax": 16,
+  "topics": [
+    {
+      "slug": "enzymes",
+      "order": 1,
+      "name": "Enzymes"
+    },
+    {
+      "slug": "environmental-impacts-on-enzyme-function",
+      "order": 2,
+      "name": "Environmental Impacts on Enzyme Function"
+    },
+    {
+      "slug": "cellular-energy",
+      "order": 3,
+      "name": "Cellular Energy"
+    },
+    {
+      "slug": "photosynthesis",
+      "order": 4,
+      "name": "Photosynthesis"
+    },
+    {
+      "slug": "cellular-respiration",
+      "order": 5,
+      "name": "Cellular Respiration"
+    }
+  ]
+}

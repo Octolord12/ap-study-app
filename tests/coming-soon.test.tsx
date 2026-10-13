@@ -6,12 +6,12 @@ vi.mock("@/lib/marketing/actions", () => ({ joinWaitlist: vi.fn() }));
 import { ComingSoon } from "@/components/marketing/coming-soon";
 
 describe("ComingSoon", () => {
-  it("is headed 'Coming soon', lists the planned subjects, and has the waitlist form", () => {
+  it("keeps the waitlist and says that nothing is planned, now that every subject we planned is built", () => {
     render(<ComingSoon />);
-    expect(screen.getByText("Coming soon")).toBeInTheDocument();
-    expect(screen.getByText("AP Biology")).toBeInTheDocument();
-    expect(screen.getAllByText("Planned")).toHaveLength(1);
-    for (const shipped of ["AP U.S. History", "AP Calculus BC"]) {
+    expect(screen.getByText("More subjects")).toBeInTheDocument();
+    expect(screen.getByText(/None planned yet/)).toBeInTheDocument();
+    expect(screen.queryByText("Planned")).not.toBeInTheDocument();
+    for (const shipped of ["AP Biology", "AP U.S. History", "AP Calculus BC"]) {
       expect(screen.queryByText(shipped)).not.toBeInTheDocument();
     }
     expect(screen.getByLabelText("Email")).toBeInTheDocument();

@@ -1,0 +1,2989 @@
+[
+  {
+    "id": "ap-bio-u6-mcq-1",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-and-rna-structure",
+    "difficulty": "easy",
+    "stem": "Which statement correctly compares the chromosomes of a typical prokaryotic cell with those of a typical eukaryotic cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A prokaryote typically has a chromosome that is made of RNA, and a eukaryote typically has chromosomes that are made of DNA only.",
+        "isCorrect": false,
+        "explanation": "The chromosomes of both prokaryotes and eukaryotes are made of DNA."
+      },
+      {
+        "label": "B",
+        "text": "A prokaryote and a eukaryote typically both have a single circular chromosome, and both of them condense it with histones.",
+        "isCorrect": false,
+        "explanation": "Eukaryotic chromosomes are typically linear and are multiple, and prokaryotic chromosomes are typically circular."
+      },
+      {
+        "label": "C",
+        "text": "A prokaryote typically has several linear chromosomes, and a eukaryote typically has a single circular chromosome that is packaged with histones.",
+        "isCorrect": false,
+        "explanation": "This reverses the typical chromosomes of the two kinds of cells."
+      },
+      {
+        "label": "D",
+        "text": "A prokaryote typically has a circular chromosome, and a eukaryote typically has several linear chromosomes that are condensed with histones and other proteins.",
+        "isCorrect": true,
+        "explanation": "Prokaryotes typically have a circular chromosome, and eukaryotes typically have multiple linear chromosomes that are condensed with histones and associated proteins."
+      }
+    ],
+    "explanation": "Prokaryotes typically have circular chromosomes; eukaryotes typically have multiple linear chromosomes condensed with histones.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-and-rna-structure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-2",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-and-rna-structure",
+    "difficulty": "easy",
+    "stem": "Which of the following describes a plasmid?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "An extra-chromosomal, circular molecule of DNA that can be present in prokaryotes and in some eukaryotes",
+        "isCorrect": true,
+        "explanation": "Plasmids are extra-chromosomal circular molecules of DNA in prokaryotes and eukaryotes."
+      },
+      {
+        "label": "B",
+        "text": "A protein that unwinds the main chromosome of a bacterium at the start of its replication and that is made by the cell",
+        "isCorrect": false,
+        "explanation": "A plasmid is a molecule of DNA and is not a protein."
+      },
+      {
+        "label": "C",
+        "text": "A linear chromosome made of DNA and histones that is found in the nucleus of every eukaryotic cell of an organism",
+        "isCorrect": false,
+        "explanation": "This describes a eukaryotic chromosome and not a plasmid."
+      },
+      {
+        "label": "D",
+        "text": "A small circular molecule of RNA that is found inside the ribosomes of bacteria and that is used to make proteins",
+        "isCorrect": false,
+        "explanation": "Plasmids are made of DNA and are not part of ribosomes."
+      }
+    ],
+    "explanation": "Plasmids are extra-chromosomal circular DNA molecules.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-and-rna-structure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-3",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-and-rna-structure",
+    "difficulty": "medium",
+    "stem": "Which pair of nitrogenous bases are both purines, with a double ring structure?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Adenine and thymine, which each have a single ring structure and which pair with each other in DNA",
+        "isCorrect": false,
+        "explanation": "Adenine is a purine (double ring), and thymine is a pyrimidine (single ring)."
+      },
+      {
+        "label": "B",
+        "text": "Cytosine and uracil, which each have a double ring structure and which pair with other pyrimidines",
+        "isCorrect": false,
+        "explanation": "Cytosine and uracil are pyrimidines, and they have a single ring."
+      },
+      {
+        "label": "C",
+        "text": "Adenine and guanine, which each have a double ring structure and which pair with pyrimidines",
+        "isCorrect": true,
+        "explanation": "Adenine and guanine are the purines."
+      },
+      {
+        "label": "D",
+        "text": "Thymine and cytosine, which each have a double ring structure and which pair with the other purines",
+        "isCorrect": false,
+        "explanation": "Thymine and cytosine are pyrimidines with a single ring."
+      }
+    ],
+    "explanation": "Purines (adenine and guanine) have a double ring structure; pyrimidines (cytosine, thymine and uracil) have a single ring.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-and-rna-structure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-4",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-and-rna-structure",
+    "difficulty": "medium",
+    "stem": "In a sample of double-stranded DNA, 20% of the bases are adenine. What percent of the bases in the sample are cytosine?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "60%, because the bases other than adenine and thymine are all cytosine in the double-stranded DNA",
+        "isCorrect": false,
+        "explanation": "The remaining 60% is shared by guanine and cytosine in equal amounts, which is 30% each."
+      },
+      {
+        "label": "B",
+        "text": "20%, because cytosine is present in the same amount as adenine in a molecule of double-stranded DNA",
+        "isCorrect": false,
+        "explanation": "Cytosine pairs with guanine, so it is equal to guanine and not to adenine."
+      },
+      {
+        "label": "C",
+        "text": "30%, because adenine pairs with thymine (20%), and the remaining 60% is guanine and cytosine in equal amounts",
+        "isCorrect": true,
+        "explanation": "A = T = 20%, so G + C = 60%, and G = C = 30%."
+      },
+      {
+        "label": "D",
+        "text": "80%, because the bases other than adenine are all cytosine in the molecule of double-stranded DNA",
+        "isCorrect": false,
+        "explanation": "Thymine is also present in a double-stranded DNA and is equal to adenine."
+      }
+    ],
+    "explanation": "In double-stranded DNA, A = T and G = C.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-and-rna-structure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-5",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-and-rna-structure",
+    "difficulty": "medium",
+    "stem": "In a DNA double helix, a purine always pairs with a pyrimidine. Which statement best explains why this is important to the structure of DNA?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A double-ring base paired with a single-ring base keeps the width of the double helix the same along its entire length.",
+        "isCorrect": true,
+        "explanation": "Pairing a purine with a pyrimidine gives a consistent width to the helix."
+      },
+      {
+        "label": "B",
+        "text": "A purine and a pyrimidine are joined by covalent bonds, which are stronger than the bonds that could join two purines together.",
+        "isCorrect": false,
+        "explanation": "Base pairs are held together by hydrogen bonds, which are weaker than covalent bonds."
+      },
+      {
+        "label": "C",
+        "text": "Two double-ring bases paired together would be too narrow to fit between the sugar-phosphate backbones of the DNA double helix.",
+        "isCorrect": false,
+        "explanation": "Two purines paired together would be too wide, not too narrow."
+      },
+      {
+        "label": "D",
+        "text": "A purine and a pyrimidine are the only two bases that are found in both DNA and RNA, and so they have to pair with each other.",
+        "isCorrect": false,
+        "explanation": "Adenine, guanine and cytosine are found in both DNA and RNA."
+      }
+    ],
+    "explanation": "Purines pair with pyrimidines, which gives the DNA double helix a constant width.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-and-rna-structure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-6",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-and-rna-structure",
+    "difficulty": "easy",
+    "stem": "During transcription, an RNA molecule is made from a DNA template strand. Which base in the RNA pairs with an adenine in the template strand?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Thymine, because thymine pairs with adenine in every kind of nucleic acid, including the RNA that is made in transcription",
+        "isCorrect": false,
+        "explanation": "Thymine is found in DNA. RNA has uracil in its place."
+      },
+      {
+        "label": "B",
+        "text": "Cytosine, because cytosine is a pyrimidine and so it can pair with adenine, which is a purine, in any nucleic acid",
+        "isCorrect": false,
+        "explanation": "Cytosine pairs with guanine."
+      },
+      {
+        "label": "C",
+        "text": "Uracil, because RNA has uracil in place of thymine and uracil pairs with adenine",
+        "isCorrect": true,
+        "explanation": "In RNA, adenine pairs with uracil."
+      },
+      {
+        "label": "D",
+        "text": "Adenine, because identical bases pair with each other when the RNA is made on the template strand of the DNA molecule",
+        "isCorrect": false,
+        "explanation": "Adenine is a purine and pairs with a pyrimidine. It does not pair with another purine."
+      }
+    ],
+    "explanation": "In RNA, adenine pairs with uracil.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-and-rna-structure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-7",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-and-rna-structure",
+    "difficulty": "hard",
+    "stem": "The table shows the percent of each base in three samples of nucleic acid. Which sample is most likely to be double-stranded DNA?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sample 1, because it contains thymine and the amount of adenine equals the amount of thymine, and the amount of guanine equals the amount of cytosine",
+        "isCorrect": true,
+        "explanation": "Base pairing in double-stranded DNA requires A = T and G = C."
+      },
+      {
+        "label": "B",
+        "text": "Sample 3, because it contains thymine, and every nucleic acid that contains thymine has to be double-stranded DNA",
+        "isCorrect": false,
+        "explanation": "The amounts of adenine and thymine are not equal in Sample 3, so it is probably single-stranded DNA."
+      },
+      {
+        "label": "C",
+        "text": "Sample 2, because it has a high percent of guanine, which makes the double helix more stable than the other samples would be",
+        "isCorrect": false,
+        "explanation": "Sample 2 contains uracil and not thymine, so it is RNA."
+      },
+      {
+        "label": "D",
+        "text": "All of the samples, because all three have base percents that add up to 100% and so all of them can form a double helix",
+        "isCorrect": false,
+        "explanation": "The base percents of every sample add up to 100%, but that does not show that the sample is double-stranded."
+      }
+    ],
+    "explanation": "Double-stranded DNA contains thymine, with A = T and G = C.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-and-rna-structure",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Sample",
+        "Adenine (%)",
+        "Thymine or uracil (%)",
+        "Guanine (%)",
+        "Cytosine (%)"
+      ],
+      "rows": [
+        [
+          "Sample 1",
+          "30",
+          "30 (T)",
+          "20",
+          "20"
+        ],
+        [
+          "Sample 2",
+          "23",
+          "27 (U)",
+          "31",
+          "19"
+        ],
+        [
+          "Sample 3",
+          "28",
+          "22 (T)",
+          "26",
+          "24"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Base composition of three samples of nucleic acid"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-8",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-and-rna-structure",
+    "difficulty": "medium",
+    "stem": "One strand of a DNA molecule has the sequence 5'-ATGCCGAT-3'. What is the sequence of the complementary strand?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5'-TACGGCTA-3', because each base is replaced by its partner and the order stays the same as in the first strand",
+        "isCorrect": false,
+        "explanation": "This has the correct partners but the wrong direction. The complementary strand is antiparallel."
+      },
+      {
+        "label": "B",
+        "text": "5'-ATGCCGAT-3', because the two strands of a DNA double helix have the same sequence when they are read in the same direction",
+        "isCorrect": false,
+        "explanation": "The strands are complementary and they do not have the same sequence."
+      },
+      {
+        "label": "C",
+        "text": "5'-ATCGGCAT-3', because the complementary strand is antiparallel and pairs A with T and G with C",
+        "isCorrect": true,
+        "explanation": "The strand that pairs with 5'-ATGCCGAT-3' is 3'-TACGGCTA-5', which is written 5'-ATCGGCAT-3'."
+      },
+      {
+        "label": "D",
+        "text": "5'-UACGGCUA-3', because the complementary strand is made of RNA bases and has uracil",
+        "isCorrect": false,
+        "explanation": "DNA has thymine, and the complementary strand of a DNA molecule is DNA."
+      }
+    ],
+    "explanation": "The two strands of DNA are complementary and antiparallel.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-and-rna-structure",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-9",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "easy",
+    "stem": "DNA replication is described as semiconservative. What does this mean?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Each new DNA molecule consists of half of the original chromosome, and the other half of the chromosome is lost.",
+        "isCorrect": false,
+        "explanation": "The whole genome is copied in replication."
+      },
+      {
+        "label": "B",
+        "text": "Each new DNA molecule consists of two newly synthesized strands, while the original molecule stays unchanged.",
+        "isCorrect": false,
+        "explanation": "This describes conservative replication, which does not happen."
+      },
+      {
+        "label": "C",
+        "text": "Each new DNA molecule consists of one original strand and one newly synthesized strand.",
+        "isCorrect": true,
+        "explanation": "In semiconservative replication, one strand of DNA serves as the template for a new, complementary strand."
+      },
+      {
+        "label": "D",
+        "text": "Each new DNA molecule consists of short pieces of the original DNA that are mixed with short pieces of new DNA.",
+        "isCorrect": false,
+        "explanation": "This describes dispersive replication, which does not happen."
+      }
+    ],
+    "explanation": "In semiconservative replication, each new DNA molecule has one old strand and one new strand.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-10",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "easy",
+    "stem": "In which direction does DNA polymerase add nucleotides to a growing strand of DNA?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It adds nucleotides to the 3' end of the new strand, so the new strand is synthesized in the 5' to 3' direction.",
+        "isCorrect": true,
+        "explanation": "DNA is synthesized in the 5' to 3' direction."
+      },
+      {
+        "label": "B",
+        "text": "It adds nucleotides to the 5' end of the new strand, so the new strand is synthesized in the 3' to 5' direction.",
+        "isCorrect": false,
+        "explanation": "DNA polymerase cannot add nucleotides to the 5' end."
+      },
+      {
+        "label": "C",
+        "text": "It adds nucleotides to the 3' end of the template strand, so the template strand becomes longer as replication goes on.",
+        "isCorrect": false,
+        "explanation": "The template strand is not extended. The new strand is made."
+      },
+      {
+        "label": "D",
+        "text": "It adds nucleotides to either end of the new strand, depending on which strand of the DNA is used as the template.",
+        "isCorrect": false,
+        "explanation": "DNA polymerase adds nucleotides only to the 3' end of the new strand."
+      }
+    ],
+    "explanation": "DNA polymerase synthesizes DNA in the 5' to 3' direction.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-11",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "medium",
+    "stem": "A researcher uses a drug that inhibits helicase in dividing cells. Which result is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The RNA primers are not made, so DNA polymerase cannot start the synthesis of new strands of DNA on either strand.",
+        "isCorrect": false,
+        "explanation": "The primers are not made by helicase."
+      },
+      {
+        "label": "B",
+        "text": "The two strands of the parental DNA are not separated, so the replication fork cannot move forward and replication stops.",
+        "isCorrect": true,
+        "explanation": "Helicase unwinds the DNA strands at the replication fork."
+      },
+      {
+        "label": "C",
+        "text": "The DNA ahead of the replication fork becomes overly coiled, so the fork stalls because of the stress on the helix of the DNA.",
+        "isCorrect": false,
+        "explanation": "Relaxing the supercoiling ahead of the fork is done by topoisomerase."
+      },
+      {
+        "label": "D",
+        "text": "The newly made strands are not joined together, so many short fragments of DNA collect on the lagging strand.",
+        "isCorrect": false,
+        "explanation": "The joining of fragments on the lagging strand is done by ligase."
+      }
+    ],
+    "explanation": "Helicase unwinds the DNA strands.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-12",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "medium",
+    "stem": "As helicase unwinds the DNA at a replication fork, the DNA ahead of the fork becomes more tightly twisted. Which enzyme relaxes this supercoiling?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "DNA polymerase, which relaxes the supercoiling as it moves along the strand that is used as the template",
+        "isCorrect": false,
+        "explanation": "DNA polymerase synthesizes new strands."
+      },
+      {
+        "label": "B",
+        "text": "RNA polymerase, which relaxes the supercoiling by making the primers in front of the replication fork",
+        "isCorrect": false,
+        "explanation": "RNA polymerase makes RNA. Relaxing supercoiling is the function of topoisomerase."
+      },
+      {
+        "label": "C",
+        "text": "Ligase, which relaxes the supercoiling by joining the strands of the DNA in front of the replication fork",
+        "isCorrect": false,
+        "explanation": "Ligase joins fragments on the lagging strand."
+      },
+      {
+        "label": "D",
+        "text": "Topoisomerase, which relaxes the supercoiling of the DNA in front of the replication fork",
+        "isCorrect": true,
+        "explanation": "Topoisomerase relaxes supercoiling in front of the replication fork."
+      }
+    ],
+    "explanation": "Topoisomerase relaxes supercoiling in front of the replication fork.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-13",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "medium",
+    "stem": "DNA polymerase cannot start a new strand of DNA on its own. Which statement explains how synthesis is started?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A DNA primer is made by ligase on the template strand, and DNA polymerase then adds nucleotides to its 5' end.",
+        "isCorrect": false,
+        "explanation": "The primers are RNA, and DNA polymerase adds nucleotides to the 3' end of the primer."
+      },
+      {
+        "label": "B",
+        "text": "An RNA primer is made that is paired with the template, and DNA polymerase adds nucleotides to the end of the primer.",
+        "isCorrect": true,
+        "explanation": "DNA polymerase requires RNA primers to initiate DNA synthesis."
+      },
+      {
+        "label": "C",
+        "text": "Helicase adds the first nucleotides to the template strand, and DNA polymerase then adds the other nucleotides to it.",
+        "isCorrect": false,
+        "explanation": "Helicase unwinds the DNA and does not synthesize nucleotides."
+      },
+      {
+        "label": "D",
+        "text": "The two parental strands pair with each other again, and DNA polymerase then adds nucleotides to this double helix.",
+        "isCorrect": false,
+        "explanation": "The new strand is made on a template strand and needs a primer."
+      }
+    ],
+    "explanation": "DNA polymerase requires an RNA primer to start synthesis.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-14",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "medium",
+    "stem": "At a replication fork, one new strand is made continuously and the other new strand is made in short pieces. Which statement best explains why one strand is made in short pieces?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "DNA polymerase adds nucleotides only in the 5' to 3' direction, so the strand that must grow away from the fork is made as a series of fragments.",
+        "isCorrect": true,
+        "explanation": "The lagging strand is synthesized discontinuously because DNA is synthesized only in the 5' to 3' direction."
+      },
+      {
+        "label": "B",
+        "text": "One of the parental strands cannot be used as a template, so the new strand has to be copied from fragments of the other new strand.",
+        "isCorrect": false,
+        "explanation": "Both parental strands are used as templates in replication."
+      },
+      {
+        "label": "C",
+        "text": "Ligase cuts the new strand into short pieces after it has been made, so that the pieces can then be used as primers for other strands.",
+        "isCorrect": false,
+        "explanation": "Ligase joins fragments. It does not cut the new strand."
+      },
+      {
+        "label": "D",
+        "text": "Helicase can unwind only a few base pairs at a time, so the strand is made in short pieces that match the length of the unwound DNA.",
+        "isCorrect": false,
+        "explanation": "Helicase unwinds the DNA continuously, and the fragments are due to the direction of synthesis."
+      }
+    ],
+    "explanation": "The lagging strand is made discontinuously because DNA polymerase synthesizes only in the 5' to 3' direction.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-15",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "medium",
+    "stem": "A mutation in a cell prevents ligase from working. Which result is most likely during replication in this cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The leading strand is not made at all, because ligase is necessary to start the synthesis of this strand at the origin.",
+        "isCorrect": false,
+        "explanation": "The leading strand is made continuously by DNA polymerase and does not need ligase."
+      },
+      {
+        "label": "B",
+        "text": "The fragments on the lagging strand are not joined together, so the new lagging strand is in pieces and not continuous.",
+        "isCorrect": true,
+        "explanation": "Ligase joins the fragments on the lagging strand."
+      },
+      {
+        "label": "C",
+        "text": "The RNA primers cannot be made, because ligase is the enzyme that adds nucleotides to the 3' end of the primer.",
+        "isCorrect": false,
+        "explanation": "Primers are made by an RNA polymerase, and DNA polymerase adds nucleotides to them."
+      },
+      {
+        "label": "D",
+        "text": "The two parental strands cannot be separated, because ligase is the enzyme that breaks the hydrogen bonds between the bases.",
+        "isCorrect": false,
+        "explanation": "Helicase separates the parental strands."
+      }
+    ],
+    "explanation": "Ligase joins the fragments on the lagging strand.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-16",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "hard",
+    "stem": "Bacteria were grown for many generations in a medium that contained heavy nitrogen (15N) and were then moved to a medium that contained light nitrogen (14N). The table shows the DNA that was found after each generation of growth in the new medium. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Replication is semiconservative, because the DNA after one generation is all of intermediate density, and a light DNA appears after two generations.",
+        "isCorrect": true,
+        "explanation": "One generation of all intermediate DNA rules out conservative replication, and the light DNA at generation 2 rules out dispersive replication."
+      },
+      {
+        "label": "B",
+        "text": "Replication is dispersive, because the DNA after two generations contains some DNA that is of intermediate density.",
+        "isCorrect": false,
+        "explanation": "Dispersive replication predicts that all of the DNA stays intermediate, with no light DNA at generation 2."
+      },
+      {
+        "label": "C",
+        "text": "Replication is conservative, because the DNA after one generation is of intermediate density, which means that it is a mixture of old and new DNA in each molecule.",
+        "isCorrect": false,
+        "explanation": "Conservative replication predicts heavy and light DNA after the first generation, with no intermediate DNA."
+      },
+      {
+        "label": "D",
+        "text": "Replication cannot be described by any model, because the percent of the heavy DNA falls to zero after one generation.",
+        "isCorrect": false,
+        "explanation": "The data fit the semiconservative model."
+      }
+    ],
+    "explanation": "The results of Meselson and Stahl showed that DNA replication is semiconservative.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Generation in the 14N medium",
+        "Heavy DNA (15N/15N) (%)",
+        "Intermediate DNA (15N/14N) (%)",
+        "Light DNA (14N/14N) (%)"
+      ],
+      "rows": [
+        [
+          "0 (before the shift)",
+          "100",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "100",
+          "0"
+        ],
+        [
+          "2",
+          "0",
+          "50",
+          "50"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Density of the DNA of bacteria after growth in a 14N medium"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-17",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "dna-replication",
+    "difficulty": "hard",
+    "stem": "Both strands of a DNA molecule contain 15N. The molecule is replicated 3 times in a medium that contains only 14N. How many of the resulting DNA molecules contain 15N in one of their strands?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2, because replication is semiconservative and the two original strands each end up in a different molecule of the 8 molecules",
+        "isCorrect": true,
+        "explanation": "After 3 rounds there are 8 molecules, and the 2 original strands are in 2 different molecules."
+      },
+      {
+        "label": "B",
+        "text": "8, because every new molecule of DNA contains an original strand that was made with 15N",
+        "isCorrect": false,
+        "explanation": "Only two molecules contain an original strand. The other 6 are made of new strands only."
+      },
+      {
+        "label": "C",
+        "text": "4, because half of the DNA molecules contain an original strand after each round of replication",
+        "isCorrect": false,
+        "explanation": "The fraction of molecules with an original strand is halved in each round, and it is 2 of 8 after three rounds."
+      },
+      {
+        "label": "D",
+        "text": "1, because the original molecule is the only molecule that contains 15N after the replication has taken place",
+        "isCorrect": false,
+        "explanation": "The two original strands are separated and each one ends up in a different molecule."
+      }
+    ],
+    "explanation": "In semiconservative replication, the original strands are never destroyed; each one pairs with a new strand.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/dna-replication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-18",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "easy",
+    "stem": "Which statement correctly matches a type of RNA with its function?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Transfer RNA is the molecule that is used as the template for the synthesis of mRNA by RNA polymerase in the nucleus.",
+        "isCorrect": false,
+        "explanation": "A strand of DNA is the template for transcription."
+      },
+      {
+        "label": "B",
+        "text": "Messenger RNA is a functional building block of the ribosome, and it combines with proteins to form the subunits.",
+        "isCorrect": false,
+        "explanation": "Ribosomal RNA is the building block of ribosomes. mRNA carries information."
+      },
+      {
+        "label": "C",
+        "text": "Transfer RNA binds one specific amino acid, and it has an anticodon that base pairs with a codon of the mRNA.",
+        "isCorrect": true,
+        "explanation": "tRNA molecules bind specific amino acids and have anticodons that pair with codons."
+      },
+      {
+        "label": "D",
+        "text": "Ribosomal RNA carries the information of a gene from the DNA in the nucleus to the ribosome in the cytoplasm.",
+        "isCorrect": false,
+        "explanation": "mRNA carries the information from the nucleus to the ribosome."
+      }
+    ],
+    "explanation": "mRNA carries information, tRNA brings amino acids, and rRNA is part of the ribosome.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-19",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "easy",
+    "stem": "During transcription of a gene, which molecule is used by RNA polymerase as a template?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A molecule of tRNA, which brings the bases to the DNA so that RNA polymerase can add them to the new RNA",
+        "isCorrect": false,
+        "explanation": "tRNA carries amino acids in translation and is not the template for RNA polymerase."
+      },
+      {
+        "label": "B",
+        "text": "Both strands of the DNA at the same time, which each make a separate molecule of mRNA from the same gene",
+        "isCorrect": false,
+        "explanation": "RNA polymerase uses a single template strand of DNA."
+      },
+      {
+        "label": "C",
+        "text": "A single strand of the DNA, which directs the order of the bases in the new RNA molecule",
+        "isCorrect": true,
+        "explanation": "RNA polymerase uses a single template strand of DNA to direct the inclusion of bases in the new RNA."
+      },
+      {
+        "label": "D",
+        "text": "A molecule of mRNA, which is copied by RNA polymerase into a new strand of DNA in the nucleus of the cell",
+        "isCorrect": false,
+        "explanation": "Copying RNA into DNA is done only by reverse transcriptase in retroviruses."
+      }
+    ],
+    "explanation": "RNA polymerase uses a single template strand of DNA.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-20",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "medium",
+    "stem": "In which direction does RNA polymerase read the template strand of the DNA, and in which direction does it synthesize the mRNA?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It reads the template in the 3' to 5' direction and synthesizes the mRNA in the 5' to 3' direction.",
+        "isCorrect": true,
+        "explanation": "RNA polymerase synthesizes mRNA in the 5' to 3' direction by reading the template DNA in the 3' to 5' direction."
+      },
+      {
+        "label": "B",
+        "text": "It reads the template in the 5' to 3' direction and synthesizes the mRNA in the 3' to 5' direction.",
+        "isCorrect": false,
+        "explanation": "This reverses the directions."
+      },
+      {
+        "label": "C",
+        "text": "It reads the template in the 5' to 3' direction and synthesizes the mRNA in the 5' to 3' direction.",
+        "isCorrect": false,
+        "explanation": "The template is antiparallel to the new strand, so it is read 3' to 5'."
+      },
+      {
+        "label": "D",
+        "text": "It reads the template in the 3' to 5' direction and synthesizes the mRNA in the 3' to 5' direction.",
+        "isCorrect": false,
+        "explanation": "RNA, like DNA, is synthesized in the 5' to 3' direction."
+      }
+    ],
+    "explanation": "RNA polymerase reads the template 3' to 5' and synthesizes RNA 5' to 3'.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-21",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "medium",
+    "stem": "The template strand of a gene is 3'-TACGGATCCTGA-5'. What is the sequence of the mRNA that is made from this template?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5'-AUGCCUAGGACU-3', because the mRNA is complementary and antiparallel to the template, with uracil in place of thymine",
+        "isCorrect": true,
+        "explanation": "Each base of the template is paired with its partner: A with U, T with A, G with C and C with G, and the new strand is written 5' to 3'."
+      },
+      {
+        "label": "B",
+        "text": "5'-UACGGAUCCUGA-3', because the mRNA has the same sequence as the template strand, with uracil in place of thymine",
+        "isCorrect": false,
+        "explanation": "The mRNA is complementary to the template and does not have the same sequence."
+      },
+      {
+        "label": "C",
+        "text": "5'-ATGCCTAGGACT-3', because the mRNA is complementary to the template, as it is in DNA, and has thymine",
+        "isCorrect": false,
+        "explanation": "RNA has uracil in place of thymine."
+      },
+      {
+        "label": "D",
+        "text": "5'-UCAGGAUCCGUA-3', because the complementary bases are read from the 5' end of the template, which reverses their order",
+        "isCorrect": false,
+        "explanation": "The template is written 3' to 5', so the complementary bases are written in the same left to right order, and the mRNA is 5'-AUGCCUAGGACU-3'."
+      }
+    ],
+    "explanation": "The mRNA is complementary and antiparallel to the template strand.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-22",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "medium",
+    "stem": "Which statement correctly describes the processing of a eukaryotic mRNA transcript before it leaves the nucleus?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The exons are removed and the introns are spliced together, which generates the mature mRNA that is translated.",
+        "isCorrect": false,
+        "explanation": "Introns are excised, and exons are retained and spliced."
+      },
+      {
+        "label": "B",
+        "text": "A poly-A tail is added, which helps with ribosomal recognition, and a GTP cap is added, which makes the mRNA more stable.",
+        "isCorrect": false,
+        "explanation": "This reverses the functions of the cap and the tail."
+      },
+      {
+        "label": "C",
+        "text": "A GTP cap is added, which helps with ribosomal recognition, and a poly-A tail is added, which makes the mRNA more stable.",
+        "isCorrect": true,
+        "explanation": "The cap helps ribosomes to recognize the mRNA, and the poly-A tail makes it more stable."
+      },
+      {
+        "label": "D",
+        "text": "A second strand of RNA is added to the transcript, which makes the mRNA double-stranded and more stable.",
+        "isCorrect": false,
+        "explanation": "Processing does not make the mRNA double-stranded."
+      }
+    ],
+    "explanation": "Eukaryotic mRNA gets a GTP cap, a poly-A tail, and splicing.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-23",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "medium",
+    "stem": "Alternative splicing of a single pre-mRNA can produce several different mature mRNAs. Which statement best explains how this happens?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Different introns are translated into proteins by the ribosome, so that one gene can code for several versions of a protein.",
+        "isCorrect": false,
+        "explanation": "Introns are removed and are not translated."
+      },
+      {
+        "label": "B",
+        "text": "Different combinations of exons are kept and the introns are removed, so that one gene can code for several versions of a protein.",
+        "isCorrect": true,
+        "explanation": "The excision of introns, with the splicing and retention of exons, generates different versions of the mature mRNA."
+      },
+      {
+        "label": "C",
+        "text": "Different numbers of the nucleotides are added to the poly-A tail, so that the codons of the mRNA are changed in each version of the mRNA.",
+        "isCorrect": false,
+        "explanation": "The poly-A tail does not change the codons of the mRNA."
+      },
+      {
+        "label": "D",
+        "text": "Different strands of the DNA are used as the template by RNA polymerase, so that one gene can code for several mRNAs.",
+        "isCorrect": false,
+        "explanation": "RNA polymerase uses a single template strand."
+      }
+    ],
+    "explanation": "Alternative splicing generates different mature mRNAs from one gene.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-24",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "hard",
+    "stem": "A eukaryotic gene is transcribed into a pre-mRNA of 1,800 nucleotides. The pre-mRNA contains two introns, of 300 and 450 nucleotides. After splicing, a poly-A tail of 200 nucleotides is added. Ignoring the cap, how many nucleotides are in the mature mRNA?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1,800, because the mature mRNA has the same number of nucleotides as the pre-mRNA from which it was made",
+        "isCorrect": false,
+        "explanation": "Splicing removes the introns and the tail is added, so the length changes."
+      },
+      {
+        "label": "B",
+        "text": "1,250, because the 750 nucleotides of the introns are removed and then the 200 nucleotides of the tail are added",
+        "isCorrect": true,
+        "explanation": "1,800 - 300 - 450 + 200 = 1,250."
+      },
+      {
+        "label": "C",
+        "text": "1,050, because the introns are removed but the poly-A tail is not counted as a part of the mature mRNA",
+        "isCorrect": false,
+        "explanation": "The tail is part of the mature mRNA: 1,050 + 200 = 1,250."
+      },
+      {
+        "label": "D",
+        "text": "2,000, because the poly-A tail is added to the whole transcript and the introns are kept in the mature mRNA that leaves the nucleus",
+        "isCorrect": false,
+        "explanation": "Introns are removed during splicing."
+      }
+    ],
+    "explanation": "The mature mRNA is the pre-mRNA minus the introns, plus the poly-A tail.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-25",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "hard",
+    "stem": "A mutation in a eukaryotic cell prevents the addition of a poly-A tail to the mRNA of a gene. Which result is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The mRNA is not recognized by RNA polymerase, so the gene is not transcribed in the nucleus of the cell.",
+        "isCorrect": false,
+        "explanation": "The tail is added to the transcript after transcription has taken place."
+      },
+      {
+        "label": "B",
+        "text": "The mRNA is less stable and is broken down sooner, so less of the protein is made from the mRNA in the cell.",
+        "isCorrect": true,
+        "explanation": "The poly-A tail makes mRNA more stable."
+      },
+      {
+        "label": "C",
+        "text": "The mRNA cannot leave the cell, so the protein is made in the nucleus instead of on the ribosomes in the cytoplasm.",
+        "isCorrect": false,
+        "explanation": "mRNA does not leave the cell. The tail affects stability."
+      },
+      {
+        "label": "D",
+        "text": "The introns are not removed from the mRNA, so the protein that is made has the extra amino acids from the introns.",
+        "isCorrect": false,
+        "explanation": "The tail does not control the removal of introns."
+      }
+    ],
+    "explanation": "The poly-A tail makes mRNA more stable.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-26",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "transcription-and-rna-processing",
+    "difficulty": "easy",
+    "stem": "Which sequence of events correctly describes the flow of information for a protein-coding gene in a eukaryotic cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "DNA is transcribed in the nucleus, the RNA is processed, the mRNA moves to the cytoplasm, and the mRNA is translated by a ribosome.",
+        "isCorrect": true,
+        "explanation": "Information flows from DNA to mRNA to protein: transcription and RNA processing in the nucleus, and translation in the cytoplasm."
+      },
+      {
+        "label": "B",
+        "text": "DNA is translated in the cytoplasm, the polypeptide is processed, the mRNA moves to the nucleus, and then the mRNA is transcribed there.",
+        "isCorrect": false,
+        "explanation": "Transcription and translation are in the opposite order in this answer."
+      },
+      {
+        "label": "C",
+        "text": "A protein is used as a template in the cytoplasm, the protein is transcribed into mRNA, and the mRNA is copied into DNA.",
+        "isCorrect": false,
+        "explanation": "The flow of information from protein to RNA does not occur."
+      },
+      {
+        "label": "D",
+        "text": "DNA is replicated in the nucleus, the DNA moves to the cytoplasm, and the DNA is translated directly into a protein.",
+        "isCorrect": false,
+        "explanation": "DNA is not translated directly. It is transcribed into RNA first."
+      }
+    ],
+    "explanation": "DNA is transcribed to RNA, and RNA is translated to protein.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/transcription-and-rna-processing",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-27",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "easy",
+    "stem": "Where does translation take place in a eukaryotic cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Only on the ribosomes that are bound to the chromosomes inside the nucleus, where the mRNA is made",
+        "isCorrect": false,
+        "explanation": "Translation occurs in the cytoplasm and on the rough ER and not inside the nucleus."
+      },
+      {
+        "label": "B",
+        "text": "Only on the inner surface of the nuclear envelope, because the mRNA remains in the nucleus until it is translated",
+        "isCorrect": false,
+        "explanation": "mRNA leaves the nucleus to be translated in the cytoplasm."
+      },
+      {
+        "label": "C",
+        "text": "On ribosomes in the cytoplasm, and on ribosomes on the cytoplasmic surface of the rough ER of the cell",
+        "isCorrect": true,
+        "explanation": "Translation occurs on ribosomes in the cytoplasm and on the cytoplasmic surface of the rough ER."
+      },
+      {
+        "label": "D",
+        "text": "Inside the Golgi apparatus, where the ribosomes join the amino acids in the order that the mRNA specifies",
+        "isCorrect": false,
+        "explanation": "Ribosomes are not found inside the Golgi apparatus."
+      }
+    ],
+    "explanation": "Translation takes place on ribosomes in the cytoplasm and on the rough ER.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-28",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "medium",
+    "stem": "A tRNA molecule has the anticodon 3'-UAC-5'. Which mRNA codon does this anticodon pair with?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5'-GUA-3', because the codon has the bases of the anticodon in the reverse order and is not complementary to it",
+        "isCorrect": false,
+        "explanation": "5'-GUA-3' does not pair with 3'-UAC-5'. Its partner bases would be 3'-CAU-5'."
+      },
+      {
+        "label": "B",
+        "text": "5'-UAC-3', because the codon is the same sequence as the anticodon with which it pairs in the ribosome",
+        "isCorrect": false,
+        "explanation": "The codon is complementary to the anticodon and is not the same sequence."
+      },
+      {
+        "label": "C",
+        "text": "5'-AUG-3', because each base of the anticodon pairs with its partner and the two strands are antiparallel",
+        "isCorrect": true,
+        "explanation": "U pairs with A, A with U, and C with G. The codon is 5'-AUG-3', the start codon."
+      },
+      {
+        "label": "D",
+        "text": "5'-TAC-3', because the codon is made of DNA bases and pairs with the bases of the anticodon of the tRNA",
+        "isCorrect": false,
+        "explanation": "Codons are in mRNA, which has uracil and not thymine."
+      }
+    ],
+    "explanation": "The anticodon of a tRNA pairs with a codon of the mRNA.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-29",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "easy",
+    "stem": "Translation is started when the rRNA of the ribosome interacts with the mRNA at the start codon. Which statement is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The start codon is UAA, and it codes for the amino acid methionine, which is the first amino acid of the new polypeptide.",
+        "isCorrect": false,
+        "explanation": "UAA is a stop codon."
+      },
+      {
+        "label": "B",
+        "text": "The start codon is the first codon at the 5' end of every mRNA, and it codes for a different amino acid in each of the mRNAs.",
+        "isCorrect": false,
+        "explanation": "The start codon is AUG and always codes for methionine."
+      },
+      {
+        "label": "C",
+        "text": "The start codon is AUG, and it does not code for an amino acid, but instead it tells the ribosome to start to read the mRNA.",
+        "isCorrect": false,
+        "explanation": "AUG codes for methionine in addition to starting the translation."
+      },
+      {
+        "label": "D",
+        "text": "The start codon is AUG, and it codes for the amino acid methionine, which is the first amino acid of the new polypeptide.",
+        "isCorrect": true,
+        "explanation": "Translation is initiated at the start codon, AUG, which codes for methionine."
+      }
+    ],
+    "explanation": "Translation starts at the start codon AUG, which codes for methionine.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-30",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "hard",
+    "stem": "The mRNA 5'-GCAUGGCUUGGUAAGC-3' is translated by a ribosome. Using the table of codons, what is the sequence of amino acids of the polypeptide that is made?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Met-Ala-Trp-Stop, because the stop codon is added to the polypeptide as the last amino acid in the chain",
+        "isCorrect": false,
+        "explanation": "A stop codon does not code for an amino acid. The polypeptide is released at the stop codon."
+      },
+      {
+        "label": "B",
+        "text": "Trp-Ala-Met, because the polypeptide is read from the 3' end of the mRNA and is made from the last codon first",
+        "isCorrect": false,
+        "explanation": "The mRNA is read from the 5' end, starting at the start codon."
+      },
+      {
+        "label": "C",
+        "text": "Ala-Trp-Leu-Gly-Lys, because the first three bases of the mRNA are read first and the reading continues in triplets",
+        "isCorrect": false,
+        "explanation": "Translation starts at the start codon AUG and not at the first base of the mRNA."
+      },
+      {
+        "label": "D",
+        "text": "Met-Ala-Trp, because translation starts at the first AUG and stops at the UAA codon",
+        "isCorrect": true,
+        "explanation": "The reading starts at AUG (Met), GCU is Ala, UGG is Trp, and UAA is a stop codon."
+      }
+    ],
+    "explanation": "Translation starts at AUG, reads the mRNA in triplets, and stops at a stop codon.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "mRNA codon (5' to 3')",
+        "Amino acid"
+      ],
+      "rows": [
+        [
+          "AUG",
+          "Met"
+        ],
+        [
+          "GCU",
+          "Ala"
+        ],
+        [
+          "UGG",
+          "Trp"
+        ],
+        [
+          "UAA",
+          "Stop"
+        ],
+        [
+          "GCA",
+          "Ala"
+        ],
+        [
+          "CUU",
+          "Leu"
+        ],
+        [
+          "GGU",
+          "Gly"
+        ],
+        [
+          "AAG",
+          "Lys"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Some mRNA codons and the amino acids that they code for"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-31",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "medium",
+    "stem": "The genetic code is described as redundant. What does this mean?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The code is copied twice in each cell, so that a mistake in one copy of a codon does not change the protein.",
+        "isCorrect": false,
+        "explanation": "Redundancy refers to the codons, not to the copies of the code in the cell."
+      },
+      {
+        "label": "B",
+        "text": "Every codon codes for more than one amino acid, so the ribosome has to choose between them for each codon.",
+        "isCorrect": false,
+        "explanation": "Each codon codes for a specific amino acid (or a stop)."
+      },
+      {
+        "label": "C",
+        "text": "Many amino acids are coded for by more than one codon, so different codons can specify the same amino acid.",
+        "isCorrect": true,
+        "explanation": "Many amino acids are encoded by more than one codon."
+      },
+      {
+        "label": "D",
+        "text": "Every amino acid is coded for by exactly one codon, so the 20 amino acids use only 20 of the possible codons.",
+        "isCorrect": false,
+        "explanation": "There are 64 codons, and many amino acids have more than one."
+      }
+    ],
+    "explanation": "More than one codon can code for the same amino acid.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-32",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "medium",
+    "stem": "A gene from a human is placed into a bacterium, and the bacterium makes the human protein with the correct sequence of amino acids. Which statement best explains this?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The bacterium makes the protein without translation, because proteins can be made directly from the DNA in the plasmid.",
+        "isCorrect": false,
+        "explanation": "The protein is made by transcription and translation."
+      },
+      {
+        "label": "B",
+        "text": "The human gene changes its sequence when it enters the bacterium, so the sequence matches the code of the bacterium.",
+        "isCorrect": false,
+        "explanation": "The gene does not change its sequence to match the code of the host."
+      },
+      {
+        "label": "C",
+        "text": "Nearly all living organisms use the same genetic code, which is evidence for the common ancestry of living organisms.",
+        "isCorrect": true,
+        "explanation": "A shared genetic code allows the bacterium to translate the human mRNA correctly."
+      },
+      {
+        "label": "D",
+        "text": "Bacteria and humans use different genetic codes, so the bacterium has to convert the code of the human gene into its own.",
+        "isCorrect": false,
+        "explanation": "The code is nearly the same in all organisms."
+      }
+    ],
+    "explanation": "The universal genetic code is evidence for common ancestry.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-33",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "medium",
+    "stem": "In a bacterial cell, ribosomes can begin to translate an mRNA while the mRNA is still being transcribed. In a eukaryotic cell this does not happen. Which statement best explains the difference?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A bacterium has no nucleus, so ribosomes can reach the mRNA as it is made, but a eukaryote makes and processes its mRNA in the nucleus before translation.",
+        "isCorrect": true,
+        "explanation": "In prokaryotes translation of the mRNA occurs while it is being transcribed."
+      },
+      {
+        "label": "B",
+        "text": "A eukaryote has no mRNA, so the DNA of a eukaryote is translated directly into a protein by the ribosomes of the cell.",
+        "isCorrect": false,
+        "explanation": "Eukaryotes use mRNA to make proteins."
+      },
+      {
+        "label": "C",
+        "text": "A bacterium has no ribosomes of its own, so it uses the ribosomes that are bound to the mRNA by the cell membrane.",
+        "isCorrect": false,
+        "explanation": "Bacteria have ribosomes."
+      },
+      {
+        "label": "D",
+        "text": "A bacterium does not need to process its mRNA, so the mRNA is transcribed more quickly than the mRNA of a eukaryote.",
+        "isCorrect": false,
+        "explanation": "The lack of a nucleus is what allows translation during transcription."
+      }
+    ],
+    "explanation": "In prokaryotes there is no nucleus, so translation can start during transcription.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-34",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "medium",
+    "stem": "A retrovirus has a genome made of RNA. A drug that inhibits reverse transcriptase is given to cells that are infected with the retrovirus. Which result is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The viral DNA is not copied into RNA, so the host cells cannot make the proteins that are needed for the new viruses.",
+        "isCorrect": false,
+        "explanation": "The step that the drug inhibits is the copying of RNA into DNA, and not of DNA into RNA."
+      },
+      {
+        "label": "B",
+        "text": "The viral proteins are not translated by the ribosomes, so the viral RNA is destroyed by the enzymes of the host cell.",
+        "isCorrect": false,
+        "explanation": "Reverse transcriptase acts before the translation of the viral proteins."
+      },
+      {
+        "label": "C",
+        "text": "The host DNA is not copied during replication, so the infected cells cannot divide and the virus cannot spread to other cells.",
+        "isCorrect": false,
+        "explanation": "Reverse transcriptase does not copy the DNA of the host cell."
+      },
+      {
+        "label": "D",
+        "text": "The viral RNA is not copied into DNA, so the DNA cannot be integrated into the host genome and new viruses are not made.",
+        "isCorrect": true,
+        "explanation": "Reverse transcriptase copies the viral RNA genome into DNA, which integrates into the host genome."
+      }
+    ],
+    "explanation": "Retroviruses use reverse transcriptase to copy RNA into DNA.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-35",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "hard",
+    "stem": "A polypeptide has 120 amino acids. What is the minimum number of nucleotides in the coding region of the mRNA that codes for it, including the stop codon?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "121, because each of the amino acids, and the stop codon, is coded for by one nucleotide of the mRNA",
+        "isCorrect": false,
+        "explanation": "Each codon has three nucleotides."
+      },
+      {
+        "label": "B",
+        "text": "363, because each of the 120 amino acids needs a codon of three nucleotides and the stop codon needs three nucleotides",
+        "isCorrect": true,
+        "explanation": "(120 + 1) x 3 = 363."
+      },
+      {
+        "label": "C",
+        "text": "242, because each of the amino acids, and the stop codon, is coded for by two nucleotides of the mRNA",
+        "isCorrect": false,
+        "explanation": "Each codon has three nucleotides."
+      },
+      {
+        "label": "D",
+        "text": "360, because each of the 120 amino acids needs a codon of three nucleotides, and the stop codon is not counted",
+        "isCorrect": false,
+        "explanation": "A stop codon has three nucleotides that are part of the coding region: 360 + 3 = 363."
+      }
+    ],
+    "explanation": "Codons are triplets; a stop codon ends the coding region.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-36",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "translation",
+    "difficulty": "medium",
+    "stem": "Which event occurs during the elongation stage of translation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A tRNA brings the amino acid that the next codon specifies, and the amino acid is transferred to the growing polypeptide chain.",
+        "isCorrect": true,
+        "explanation": "In elongation, tRNA brings the correct amino acid to the place specified by the codon, and the amino acid is added to the chain."
+      },
+      {
+        "label": "B",
+        "text": "The rRNA of the ribosome interacts with the mRNA at the start codon, and the first tRNA binds the start codon.",
+        "isCorrect": false,
+        "explanation": "This happens in initiation."
+      },
+      {
+        "label": "C",
+        "text": "The introns are removed from the mRNA, and the exons are spliced together before they are read by the ribosome.",
+        "isCorrect": false,
+        "explanation": "Splicing takes place in the nucleus before translation."
+      },
+      {
+        "label": "D",
+        "text": "The ribosome reaches a stop codon, and the newly synthesized protein is released from the ribosome.",
+        "isCorrect": false,
+        "explanation": "This happens in termination."
+      }
+    ],
+    "explanation": "Elongation: tRNA brings amino acids to the ribosome, and each one is added to the growing chain.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/translation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-37",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "easy",
+    "stem": "Some genes are constitutively expressed and other genes are inducible. Which statement correctly describes the difference?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A constitutive gene is expressed all of the time, and an inducible gene is expressed only when a signal or a condition turns it on.",
+        "isCorrect": true,
+        "explanation": "Constitutive genes are expressed continuously, and inducible genes are expressed in response to a condition."
+      },
+      {
+        "label": "B",
+        "text": "A constitutive gene has a mutation that stops it, and an inducible gene is a normal gene that works in all conditions.",
+        "isCorrect": false,
+        "explanation": "Constitutive expression is a normal feature of some genes and is not caused by a mutation."
+      },
+      {
+        "label": "C",
+        "text": "A constitutive gene is expressed only in response to a signal, and an inducible gene is expressed all of the time in the cells of the organism.",
+        "isCorrect": false,
+        "explanation": "This reverses the two terms."
+      },
+      {
+        "label": "D",
+        "text": "A constitutive gene is found only in prokaryotes, and an inducible gene is found only in the cells of eukaryotes.",
+        "isCorrect": false,
+        "explanation": "Both kinds of regulation are found in prokaryotes and in eukaryotes."
+      }
+    ],
+    "explanation": "Constitutive genes are always expressed; inducible genes are expressed in response to a signal.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-38",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "medium",
+    "stem": "Which statement correctly describes regulatory sequences?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They are the codons of the genes that code for the amino acids of the regulatory proteins of the cell.",
+        "isCorrect": false,
+        "explanation": "Regulatory sequences do not code for amino acids. They bind regulatory proteins."
+      },
+      {
+        "label": "B",
+        "text": "They are stretches of mRNA that bind the ribosome to control the speed at which proteins are made in the cell.",
+        "isCorrect": false,
+        "explanation": "Regulatory sequences are DNA, and they control transcription."
+      },
+      {
+        "label": "C",
+        "text": "They are proteins that bind to the DNA polymerase to control the replication of the genes of the cell.",
+        "isCorrect": false,
+        "explanation": "Regulatory sequences are not proteins, and they control transcription and not replication."
+      },
+      {
+        "label": "D",
+        "text": "They are stretches of DNA that interact with regulatory proteins to control the transcription of genes.",
+        "isCorrect": true,
+        "explanation": "Regulatory sequences are stretches of DNA that interact with regulatory proteins to control transcription."
+      }
+    ],
+    "explanation": "Regulatory sequences are DNA sequences that interact with regulatory proteins.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-39",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "medium",
+    "stem": "In the lac operon of E. coli, there is no lactose in the environment of the bacteria. Which statement describes what happens?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The repressor protein binds to the promoter, and this helps RNA polymerase to transcribe the genes for the use of lactose.",
+        "isCorrect": false,
+        "explanation": "The repressor blocks transcription."
+      },
+      {
+        "label": "B",
+        "text": "The repressor protein is not made, and RNA polymerase transcribes the genes for the use of lactose at a high rate.",
+        "isCorrect": false,
+        "explanation": "The repressor is made all of the time. It is active when lactose is absent."
+      },
+      {
+        "label": "C",
+        "text": "The repressor protein is removed from the operator, and RNA polymerase transcribes the genes for the use of lactose.",
+        "isCorrect": false,
+        "explanation": "This happens when lactose is present."
+      },
+      {
+        "label": "D",
+        "text": "The repressor protein binds to the operator, and this blocks RNA polymerase, so the genes for the use of lactose are not transcribed.",
+        "isCorrect": true,
+        "explanation": "Without lactose, the active repressor binds the operator and prevents transcription."
+      }
+    ],
+    "explanation": "In an inducible operon such as the lac operon, the repressor blocks transcription until the inducer is present.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-40",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "medium",
+    "stem": "Lactose is added to the environment of E. coli cells that were grown without lactose. Which statement best describes how the lac operon is turned on?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lactose changes the sequence of the promoter, the promoter can then bind the repressor, and the genes are transcribed.",
+        "isCorrect": false,
+        "explanation": "Lactose does not change the DNA sequence."
+      },
+      {
+        "label": "B",
+        "text": "A molecule that is made from lactose binds to the repressor, the repressor can no longer bind to the operator, and the genes are transcribed.",
+        "isCorrect": true,
+        "explanation": "The inducer binds the repressor and changes its shape, so it is released from the operator and transcription takes place."
+      },
+      {
+        "label": "C",
+        "text": "Lactose binds to the operator, the operator can no longer bind to the repressor, and the genes are not transcribed.",
+        "isCorrect": false,
+        "explanation": "The repressor binds to the operator, and the operator is a sequence of DNA."
+      },
+      {
+        "label": "D",
+        "text": "Lactose binds to RNA polymerase, the polymerase can then change into a repressor, and the genes are not transcribed.",
+        "isCorrect": false,
+        "explanation": "Lactose acts on the repressor and not on RNA polymerase."
+      }
+    ],
+    "explanation": "In an inducible operon, the inducer inactivates the repressor so that the genes can be transcribed.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-41",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "medium",
+    "stem": "The trp operon is a repressible operon. When tryptophan is abundant in the cell, tryptophan binds to the repressor. Which result is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The repressor is broken down by the cell, so the genes for making tryptophan are transcribed at a higher rate.",
+        "isCorrect": false,
+        "explanation": "Tryptophan does not cause the destruction of the repressor."
+      },
+      {
+        "label": "B",
+        "text": "The repressor becomes active and binds to the operator, so the genes for making tryptophan are not transcribed.",
+        "isCorrect": true,
+        "explanation": "In a repressible operon, the end product activates the repressor, which turns off the synthesis of the product when it is not needed."
+      },
+      {
+        "label": "C",
+        "text": "The repressor becomes inactive and leaves the operator, so the genes for making tryptophan are transcribed at a higher rate.",
+        "isCorrect": false,
+        "explanation": "This is the pattern of an inducible operon, and tryptophan makes the repressor active."
+      },
+      {
+        "label": "D",
+        "text": "The repressor binds to the tryptophan that is in the cell, so the amount of tryptophan in the cell is made lower.",
+        "isCorrect": false,
+        "explanation": "The tryptophan activates the repressor and is not removed by it."
+      }
+    ],
+    "explanation": "In a repressible operon, the end product activates the repressor and turns off transcription.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-42",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "hard",
+    "stem": "The table shows the activity of the enzyme that breaks down lactose in a wild-type strain of E. coli and in three mutant strains, grown with and without lactose. Strain 1 has a mutation in the lac operon. Which mutation is most consistent with the data for Strain 1?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A mutation in the operator so that the repressor can no longer bind to it, which allows transcription to take place all of the time",
+        "isCorrect": true,
+        "explanation": "A repressor that cannot bind to the operator allows the genes to be transcribed whether or not lactose is present."
+      },
+      {
+        "label": "B",
+        "text": "A mutation in the promoter so that RNA polymerase can no longer bind to it, which prevents transcription in all conditions",
+        "isCorrect": false,
+        "explanation": "This would give low activity, with or without lactose, as in Strain 2."
+      },
+      {
+        "label": "C",
+        "text": "A mutation in the gene for the enzyme so that the enzyme is made inactive, which lowers the activity of the enzyme in all conditions",
+        "isCorrect": false,
+        "explanation": "This would give low activity with and without lactose, not high activity."
+      },
+      {
+        "label": "D",
+        "text": "A mutation in the cell membrane so that lactose can no longer enter the cell, which lowers the activity of the enzyme with lactose",
+        "isCorrect": false,
+        "explanation": "This would give low activity with lactose and not high activity without it."
+      }
+    ],
+    "explanation": "A mutation that stops the repressor from binding the operator makes the operon constitutive.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Strain",
+        "Enzyme activity without lactose",
+        "Enzyme activity with lactose"
+      ],
+      "rows": [
+        [
+          "Wild type",
+          "Low",
+          "High"
+        ],
+        [
+          "Strain 1",
+          "High",
+          "High"
+        ],
+        [
+          "Strain 2",
+          "Low",
+          "Low"
+        ],
+        [
+          "Strain 3",
+          "Low",
+          "High"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Activity of the enzyme that breaks down lactose"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-43",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "medium",
+    "stem": "Epigenetic changes can affect gene expression. Which statement correctly describes an epigenetic change?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A change in the number of chromosomes in a cell changes how much of each gene is expressed in the cells of the organism.",
+        "isCorrect": false,
+        "explanation": "This describes a change in the chromosome number, which is not an epigenetic change."
+      },
+      {
+        "label": "B",
+        "text": "A permanent change in the order of the bases of a gene changes the amino acid sequence of the protein that the gene codes for.",
+        "isCorrect": false,
+        "explanation": "This describes a mutation."
+      },
+      {
+        "label": "C",
+        "text": "A change in the sequence of the mRNA after it has been made changes the protein that is made and also the gene that was copied by the cell.",
+        "isCorrect": false,
+        "explanation": "Epigenetic changes affect the DNA or the histones and not the mRNA, and they do not change the gene."
+      },
+      {
+        "label": "D",
+        "text": "A reversible modification of the DNA or of the histones changes how much a gene is expressed, without a change in the DNA sequence.",
+        "isCorrect": true,
+        "explanation": "Epigenetic changes affect gene expression through reversible modifications of DNA or histones."
+      }
+    ],
+    "explanation": "Epigenetic changes are reversible modifications of DNA or histones that affect gene expression.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-44",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "medium",
+    "stem": "In bacteria, the genes for the enzymes of one pathway are often next to each other and are controlled by a single operator. What is an advantage of this arrangement?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The genes can be coordinately regulated, so all of the enzymes of the pathway are made together when they are needed.",
+        "isCorrect": true,
+        "explanation": "Groups of genes in prokaryotes are coordinately regulated in operons."
+      },
+      {
+        "label": "B",
+        "text": "The genes can be translated by different kinds of ribosomes, so each enzyme is made at a different rate from the others.",
+        "isCorrect": false,
+        "explanation": "The arrangement of the genes on the DNA is related to transcription and not to the kind of ribosome."
+      },
+      {
+        "label": "C",
+        "text": "The genes can be transcribed from different promoters, so each enzyme is made at a different time from the others.",
+        "isCorrect": false,
+        "explanation": "A single operator controls the whole group, so the genes are made together."
+      },
+      {
+        "label": "D",
+        "text": "The genes can be spliced in different ways, so each gene can code for several versions of an enzyme in the pathway.",
+        "isCorrect": false,
+        "explanation": "Bacterial operons are not spliced in this way."
+      }
+    ],
+    "explanation": "Operons allow groups of genes to be coordinately regulated.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-45",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "regulation-of-gene-expression",
+    "difficulty": "hard",
+    "stem": "Lactose is added to a culture of E. coli at 10 minutes and is removed from the culture at 40 minutes. The graph shows the activity of the enzyme that breaks down lactose. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Lactose permanently changes the sequence of the gene, because the activity of the enzyme is higher after the lactose has been added.",
+        "isCorrect": false,
+        "explanation": "The activity decreases after the lactose is removed, so the change is reversible and is not a change in the DNA sequence."
+      },
+      {
+        "label": "B",
+        "text": "The enzyme is made only after the lactose has been removed, because the activity is highest at the time that the lactose is removed.",
+        "isCorrect": false,
+        "explanation": "The activity starts to rise soon after the lactose is added."
+      },
+      {
+        "label": "C",
+        "text": "The gene for the enzyme is constitutively expressed, because the activity of the enzyme is not zero at any time during the experiment.",
+        "isCorrect": false,
+        "explanation": "The activity is low at first and rises after lactose is added, which is a response to a signal and not constitutive expression."
+      },
+      {
+        "label": "D",
+        "text": "The gene for the enzyme is inducible, because the activity increases when lactose is added and decreases after the lactose is removed.",
+        "isCorrect": true,
+        "explanation": "Expression of an inducible gene increases in the presence of the inducer and decreases when the inducer is removed."
+      }
+    ],
+    "explanation": "An inducible gene is turned on by a signal and turns off again when the signal is removed.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/regulation-of-gene-expression",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Enzyme activity against time. It stays at 2 until 10 minutes, rises to 100 at 40 minutes, and then falls to 62 at 50 minutes, 26 at 60 minutes and 10 at 70 minutes.",
+      "xLabel": "Time (min)",
+      "yLabel": "Activity of the enzyme that breaks down lactose (arbitrary units)",
+      "xMin": 0,
+      "xMax": 70,
+      "yMin": 0,
+      "yMax": 120,
+      "series": [
+        {
+          "label": "Enzyme activity",
+          "points": [
+            {
+              "x": 0,
+              "y": 2
+            },
+            {
+              "x": 10,
+              "y": 2
+            },
+            {
+              "x": 20,
+              "y": 45
+            },
+            {
+              "x": 30,
+              "y": 90
+            },
+            {
+              "x": 40,
+              "y": 100
+            },
+            {
+              "x": 50,
+              "y": 62
+            },
+            {
+              "x": 60,
+              "y": 26
+            },
+            {
+              "x": 70,
+              "y": 10
+            }
+          ],
+          "color": "green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-46",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "gene-expression-and-cell-specialization",
+    "difficulty": "easy",
+    "stem": "A muscle cell and a nerve cell from the same person have different structures and functions. Which statement best explains this difference?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The two cells have the same genes, and the same genes are expressed in each cell, so the difference is due to the environment.",
+        "isCorrect": false,
+        "explanation": "The cells express different sets of genes."
+      },
+      {
+        "label": "B",
+        "text": "The two cells have different genes, because the cells lost the genes that they do not use when they became specialized.",
+        "isCorrect": false,
+        "explanation": "The cells of an organism have the same genes."
+      },
+      {
+        "label": "C",
+        "text": "The two cells have different numbers of chromosomes, because the nerve cell is formed by meiosis and the muscle cell by mitosis.",
+        "isCorrect": false,
+        "explanation": "Both kinds of cell are body cells that are formed by mitosis and have the same chromosomes."
+      },
+      {
+        "label": "D",
+        "text": "The two cells have the same genes, but different genes are expressed in each cell, so the cells make different proteins.",
+        "isCorrect": true,
+        "explanation": "Gene regulation results in differential gene expression, which influences cell products and functions."
+      }
+    ],
+    "explanation": "Differential gene expression gives different cell types the same genes but different proteins.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/gene-expression-and-cell-specialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-47",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "gene-expression-and-cell-specialization",
+    "difficulty": "medium",
+    "stem": "Which statement correctly describes how transcription is initiated in a eukaryotic cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "RNA polymerase and transcription factors bind to promoter or enhancer sequences of the DNA, which can be upstream or downstream of the start site.",
+        "isCorrect": true,
+        "explanation": "RNA polymerase and transcription factors bind promoter or enhancer DNA sequences to initiate transcription."
+      },
+      {
+        "label": "B",
+        "text": "Enhancer sequences can work only when they are next to the start site and on the upstream side of the promoter.",
+        "isCorrect": false,
+        "explanation": "Enhancers can be upstream or downstream of the transcription start site."
+      },
+      {
+        "label": "C",
+        "text": "RNA polymerase binds to the ribosome, and transcription factors bring the amino acids to the site of transcription.",
+        "isCorrect": false,
+        "explanation": "RNA polymerase is not bound to the ribosome in transcription."
+      },
+      {
+        "label": "D",
+        "text": "Transcription factors bind to the mRNA, and this allows RNA polymerase to copy the mRNA into a new strand of DNA.",
+        "isCorrect": false,
+        "explanation": "Transcription factors bind to DNA sequences, and transcription makes RNA from DNA."
+      }
+    ],
+    "explanation": "Transcription factors and RNA polymerase bind promoter and enhancer sequences.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/gene-expression-and-cell-specialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-48",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "gene-expression-and-cell-specialization",
+    "difficulty": "medium",
+    "stem": "A negative regulatory molecule inhibits the expression of a gene. Which statement describes how this happens?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It binds to the protein that the gene codes for and breaks it down, so the cell has less of the protein.",
+        "isCorrect": false,
+        "explanation": "A negative regulator of transcription acts before the protein is made."
+      },
+      {
+        "label": "B",
+        "text": "It binds to the ribosome and blocks translation, so the tRNAs cannot bring the amino acids to the mRNA.",
+        "isCorrect": false,
+        "explanation": "Negative regulators of transcription act on the DNA, not on the ribosome."
+      },
+      {
+        "label": "C",
+        "text": "It binds to the DNA polymerase and blocks replication, so the gene cannot be copied before the cell divides.",
+        "isCorrect": false,
+        "explanation": "The molecule controls transcription and not replication."
+      },
+      {
+        "label": "D",
+        "text": "It binds to the DNA of the gene and blocks transcription, so less mRNA is made from the gene.",
+        "isCorrect": true,
+        "explanation": "Negative regulatory molecules inhibit gene expression by binding to DNA and blocking transcription."
+      }
+    ],
+    "explanation": "Negative regulators bind DNA and block transcription.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/gene-expression-and-cell-specialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-49",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "gene-expression-and-cell-specialization",
+    "difficulty": "medium",
+    "stem": "Certain small RNA molecules have roles in regulating gene expression. Which statement best describes one way in which a small RNA can reduce the expression of a gene?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It base pairs with a complementary mRNA, so the mRNA is broken down or cannot be translated into protein.",
+        "isCorrect": true,
+        "explanation": "Small RNAs can pair with mRNA molecules and prevent their translation or cause their degradation."
+      },
+      {
+        "label": "B",
+        "text": "It adds a poly-A tail to the mRNA, so the mRNA is more stable and is translated more often.",
+        "isCorrect": false,
+        "explanation": "This would increase the expression of the gene and not reduce it."
+      },
+      {
+        "label": "C",
+        "text": "It changes the sequence of the gene in the DNA, so the gene codes for a protein that does not work.",
+        "isCorrect": false,
+        "explanation": "Regulatory small RNAs do not change the DNA sequence."
+      },
+      {
+        "label": "D",
+        "text": "It base pairs with the amino acids of the protein, so the protein cannot fold into its correct shape in the cell.",
+        "isCorrect": false,
+        "explanation": "RNA base pairs with nucleic acids and not with amino acids."
+      }
+    ],
+    "explanation": "Small RNAs regulate gene expression, for example by pairing with mRNA.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/gene-expression-and-cell-specialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-50",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "gene-expression-and-cell-specialization",
+    "difficulty": "hard",
+    "stem": "The table shows the relative amounts of the mRNA of three genes in three types of cell from the same organism. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Gene 3 is not expressed in any of the three types of cell, because the amounts of mRNA are about the same in all of them.",
+        "isCorrect": false,
+        "explanation": "Gene 3 is expressed at a similar, substantial level in all three types."
+      },
+      {
+        "label": "B",
+        "text": "Gene 3 is expressed at similar levels in all three types of cell, but genes 1 and 2 are each expressed at high levels in only one type of cell.",
+        "isCorrect": true,
+        "explanation": "Gene 3 has similar amounts of mRNA in all three types, and genes 1 and 2 are expressed in a single type each."
+      },
+      {
+        "label": "C",
+        "text": "Genes 1 and 2 are present only in one type of cell each, and so the other two types of cell have lost them.",
+        "isCorrect": false,
+        "explanation": "The cells of one organism have the same genes. The data show differences in expression and not in the presence of the genes."
+      },
+      {
+        "label": "D",
+        "text": "All three genes are expressed in the same way in all of the cells, because the three cell types came from the same organism.",
+        "isCorrect": false,
+        "explanation": "Genes 1 and 2 are expressed very differently in the three types of cell."
+      }
+    ],
+    "explanation": "Cell types differ in which genes are expressed, even though they have the same genes.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/gene-expression-and-cell-specialization",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Gene",
+        "Cell type A",
+        "Cell type B",
+        "Cell type C"
+      ],
+      "rows": [
+        [
+          "Gene 1",
+          "96",
+          "1",
+          "2"
+        ],
+        [
+          "Gene 2",
+          "2",
+          "94",
+          "1"
+        ],
+        [
+          "Gene 3",
+          "51",
+          "49",
+          "50"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Relative amount of mRNA in three cell types"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-51",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "gene-expression-and-cell-specialization",
+    "difficulty": "medium",
+    "stem": "A transcription factor that is needed to turn on a muscle gene is not made in liver cells of the same person. Which prediction is most consistent with this?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The muscle gene is present in the liver cells but is not transcribed, so the muscle protein is not made in them.",
+        "isCorrect": true,
+        "explanation": "Without the transcription factor, the gene is not expressed, though it is still present."
+      },
+      {
+        "label": "B",
+        "text": "The muscle gene is replicated more often in the liver cells, so that more copies of the gene are available for use.",
+        "isCorrect": false,
+        "explanation": "The lack of a transcription factor does not change how often the gene is replicated."
+      },
+      {
+        "label": "C",
+        "text": "The muscle gene is absent from the DNA of the liver cells, because they have lost the genes that they do not use.",
+        "isCorrect": false,
+        "explanation": "Both kinds of cell have the same genes."
+      },
+      {
+        "label": "D",
+        "text": "The muscle gene is transcribed at a high rate in the liver cells, but the mRNA is not translated into protein.",
+        "isCorrect": false,
+        "explanation": "Without the transcription factor, the gene is not transcribed."
+      }
+    ],
+    "explanation": "Transcription factors bind to regulatory sequences and are needed to turn on genes.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/gene-expression-and-cell-specialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-52",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "gene-expression-and-cell-specialization",
+    "difficulty": "medium",
+    "stem": "During the development of an embryo, a transcription factor is made in a group of cells. This transcription factor turns on genes for other transcription factors, which turn on other genes. What does this process produce?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sequential gene expression, in which each set of genes that is turned on leads to the expression of the next set, as the tissues develop.",
+        "isCorrect": true,
+        "explanation": "Induction of transcription factors during development results in sequential gene expression."
+      },
+      {
+        "label": "B",
+        "text": "Simultaneous expression of all genes in all cells, because each cell makes all of the transcription factors at the same time.",
+        "isCorrect": false,
+        "explanation": "The expression of genes is in a sequence, and different cells express different genes."
+      },
+      {
+        "label": "C",
+        "text": "Permanent loss of the genes that are not used, because the cells remove them from the DNA as the tissues develop.",
+        "isCorrect": false,
+        "explanation": "Cells do not lose the genes that they do not use."
+      },
+      {
+        "label": "D",
+        "text": "Replication of the DNA in each of the cells, because transcription factors are the enzymes that copy the DNA.",
+        "isCorrect": false,
+        "explanation": "Transcription factors regulate transcription and do not copy the DNA."
+      }
+    ],
+    "explanation": "Induction of transcription factors during development results in sequential gene expression.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/gene-expression-and-cell-specialization",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-53",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "gene-expression-and-cell-specialization",
+    "difficulty": "hard",
+    "stem": "Researchers made four versions of a gene and measured the amount of mRNA that each version produced in cells. Which conclusion is best supported by the data in the table?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The enhancer alone is enough for a high level of transcription, because the enhancer increases transcription when it is present.",
+        "isCorrect": false,
+        "explanation": "With the promoter deleted, the amount of mRNA is zero."
+      },
+      {
+        "label": "B",
+        "text": "The enhancer works only when it is upstream of the promoter, because it is a part of the promoter of the gene that is transcribed.",
+        "isCorrect": false,
+        "explanation": "The enhancer still works when it is moved downstream of the gene."
+      },
+      {
+        "label": "C",
+        "text": "The promoter alone is enough for a high level of transcription, because RNA polymerase binds to the promoter.",
+        "isCorrect": false,
+        "explanation": "With the enhancer deleted, the amount of mRNA is very low."
+      },
+      {
+        "label": "D",
+        "text": "Both a promoter and an enhancer are needed for a high level of transcription, and the enhancer works from either side of the gene.",
+        "isCorrect": true,
+        "explanation": "Removing either sequence greatly reduces transcription, and the enhancer still works when it is moved downstream."
+      }
+    ],
+    "explanation": "Promoters and enhancers both regulate transcription; enhancers can be upstream or downstream of the start site.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/gene-expression-and-cell-specialization",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Version of the gene",
+        "Description",
+        "Relative amount of mRNA"
+      ],
+      "rows": [
+        [
+          "1",
+          "Promoter and enhancer, with the enhancer upstream of the promoter",
+          "100"
+        ],
+        [
+          "2",
+          "Promoter only (the enhancer is deleted)",
+          "6"
+        ],
+        [
+          "3",
+          "Enhancer only (the promoter is deleted)",
+          "0"
+        ],
+        [
+          "4",
+          "Promoter and enhancer, with the enhancer moved downstream of the gene",
+          "94"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Effect of regulatory sequences on transcription"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-54",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "easy",
+    "stem": "Which statement describes a point mutation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A whole chromosome fails to separate from its homologous chromosome during the first division of meiosis.",
+        "isCorrect": false,
+        "explanation": "This describes nondisjunction, which changes the chromosome number."
+      },
+      {
+        "label": "B",
+        "text": "One or more nucleotides are inserted into the DNA, which shifts the reading frame of the gene.",
+        "isCorrect": false,
+        "explanation": "This describes a frameshift mutation."
+      },
+      {
+        "label": "C",
+        "text": "A short sequence of the DNA is copied into mRNA more often than the other sequences of the gene.",
+        "isCorrect": false,
+        "explanation": "This describes a change in transcription and is not a mutation."
+      },
+      {
+        "label": "D",
+        "text": "One nucleotide in the DNA is substituted for a different nucleotide.",
+        "isCorrect": true,
+        "explanation": "Point mutations occur when one nucleotide has been substituted for a different nucleotide."
+      }
+    ],
+    "explanation": "A point mutation substitutes one nucleotide for another.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-55",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "medium",
+    "stem": "A point mutation in a gene changes one codon in the mRNA from GAA to GAG. Using the table, which type of mutation is this?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A nonsense mutation, because the new codon causes the translation of the mRNA to stop earlier than it did before",
+        "isCorrect": false,
+        "explanation": "Neither codon is a stop codon."
+      },
+      {
+        "label": "B",
+        "text": "A silent mutation, because the new codon codes for the same amino acid as the original codon",
+        "isCorrect": true,
+        "explanation": "GAA and GAG both code for glutamic acid, so the amino acid sequence is unchanged."
+      },
+      {
+        "label": "C",
+        "text": "A frameshift mutation, because a nucleotide was added to the sequence and so the reading frame is shifted",
+        "isCorrect": false,
+        "explanation": "A nucleotide was substituted. None was added, so the reading frame is not shifted."
+      },
+      {
+        "label": "D",
+        "text": "A mutation that changes the protein, because any change in a codon has to change the amino acid that it codes for",
+        "isCorrect": false,
+        "explanation": "The genetic code is redundant, so more than one codon can code for an amino acid."
+      }
+    ],
+    "explanation": "A silent mutation changes the nucleotide sequence but not the amino acid sequence.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "mRNA codon (5' to 3')",
+        "Amino acid"
+      ],
+      "rows": [
+        [
+          "GAA",
+          "Glu"
+        ],
+        [
+          "GAG",
+          "Glu"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Some mRNA codons and the amino acids that they code for"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-56",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "medium",
+    "stem": "A mutation changes one codon near the middle of an mRNA from UAC to UAA. Using the table, which result is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The polypeptide is the same as normal, because the new codon codes for the same amino acid as the original codon.",
+        "isCorrect": false,
+        "explanation": "UAC codes for tyrosine, and UAA is a stop codon."
+      },
+      {
+        "label": "B",
+        "text": "The polypeptide is shorter than normal, because the new codon is a stop codon that ends the translation early.",
+        "isCorrect": true,
+        "explanation": "UAA is a stop codon, so the mutation is a nonsense mutation and translation stops at that codon."
+      },
+      {
+        "label": "C",
+        "text": "The polypeptide is longer than normal, because the new codon adds extra amino acids to the end of the chain.",
+        "isCorrect": false,
+        "explanation": "A stop codon ends translation. It does not add amino acids."
+      },
+      {
+        "label": "D",
+        "text": "The polypeptide has every amino acid after the mutation changed, because the reading frame is shifted by the mutation.",
+        "isCorrect": false,
+        "explanation": "A substitution does not shift the reading frame."
+      }
+    ],
+    "explanation": "A nonsense mutation causes a premature stop.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "mRNA codon (5' to 3')",
+        "Amino acid"
+      ],
+      "rows": [
+        [
+          "UAC",
+          "Tyr"
+        ],
+        [
+          "UAA",
+          "Stop"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Some mRNA codons and the amino acids that they code for"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-57",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "hard",
+    "stem": "The mRNA 5'-AUGGAACCUUGGAAAUAA-3' codes for the polypeptide Met-Glu-Pro-Trp-Lys. The fourth nucleotide of the mRNA (the first G of the codon GAA) is deleted. Using the table, which statement best describes the new polypeptide?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It begins Met-Asn-Leu-Gly-Asn, because the deletion shifts the reading frame and changes every codon after the deletion",
+        "isCorrect": true,
+        "explanation": "A deletion of one nucleotide is a frameshift. The mRNA is read as AUG AAC CUU GGA AAU AA, so all the codons after the deletion are different."
+      },
+      {
+        "label": "B",
+        "text": "It is Met-Glu-Pro-Trp-Lys, because the genetic code is redundant and so a deletion of one nucleotide does not change the protein",
+        "isCorrect": false,
+        "explanation": "Redundancy helps with some substitutions, but it does not help when the reading frame is shifted."
+      },
+      {
+        "label": "C",
+        "text": "It is Met-Asn-Pro-Trp-Lys, because only the codon that lost the nucleotide is changed and the rest of the mRNA is the same",
+        "isCorrect": false,
+        "explanation": "The following codons are changed too, because the frame is shifted."
+      },
+      {
+        "label": "D",
+        "text": "It is Met-Pro-Trp-Lys, because only the codon that lost a nucleotide is removed and the other codons are read as before",
+        "isCorrect": false,
+        "explanation": "The nucleotides are read in triplets, so the removal of one nucleotide changes the grouping of all of the following nucleotides."
+      }
+    ],
+    "explanation": "Insertions or deletions of one or two nucleotides shift the reading frame.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "mRNA codon (5' to 3')",
+        "Amino acid"
+      ],
+      "rows": [
+        [
+          "AUG",
+          "Met"
+        ],
+        [
+          "GAA",
+          "Glu"
+        ],
+        [
+          "CCU",
+          "Pro"
+        ],
+        [
+          "UGG",
+          "Trp"
+        ],
+        [
+          "AAA",
+          "Lys"
+        ],
+        [
+          "UAA",
+          "Stop"
+        ],
+        [
+          "AAC",
+          "Asn"
+        ],
+        [
+          "CUU",
+          "Leu"
+        ],
+        [
+          "GGA",
+          "Gly"
+        ],
+        [
+          "AAU",
+          "Asn"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Some mRNA codons and the amino acids that they code for"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-58",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "medium",
+    "stem": "A mutation in a bacterium makes the bacterium resistant to an antibiotic. Which statement best describes the effect of this mutation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is harmful in every environment, because any change to the DNA of a bacterium makes the cell less able to survive.",
+        "isCorrect": false,
+        "explanation": "Some mutations are beneficial, depending on the environment."
+      },
+      {
+        "label": "B",
+        "text": "It has no effect in any environment, because the mutation changes the DNA and does not change the proteins of the bacterium.",
+        "isCorrect": false,
+        "explanation": "A mutation can change the protein and the phenotype."
+      },
+      {
+        "label": "C",
+        "text": "It is beneficial in every environment, because a mutation that gives resistance always increases the survival of the bacterium.",
+        "isCorrect": false,
+        "explanation": "The effect of a mutation depends on the environment."
+      },
+      {
+        "label": "D",
+        "text": "It is beneficial in an environment that contains the antibiotic, and it may be neutral or harmful in an environment without it.",
+        "isCorrect": true,
+        "explanation": "Whether a mutation is beneficial, detrimental or neutral depends on the environmental context."
+      }
+    ],
+    "explanation": "Whether a mutation is beneficial, detrimental or neutral depends on the environment.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-59",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "medium",
+    "stem": "Which of the following can cause random mutations in DNA?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Normal division of the cell by mitosis, which always changes the sequence of the DNA of the daughter cells",
+        "isCorrect": false,
+        "explanation": "Mitosis normally gives daughter cells with identical DNA."
+      },
+      {
+        "label": "B",
+        "text": "Transcription of the DNA by RNA polymerase and translation of the mRNA by the ribosomes of the cell",
+        "isCorrect": false,
+        "explanation": "Transcription and translation do not change the DNA sequence."
+      },
+      {
+        "label": "C",
+        "text": "The needs of the organism, because mutations occur in the genes that an organism requires in its environment",
+        "isCorrect": false,
+        "explanation": "Mutations are random and do not occur because the organism needs them."
+      },
+      {
+        "label": "D",
+        "text": "Errors in DNA replication or DNA repair, and exposure to radiation, such as UV light, or to reactive chemicals",
+        "isCorrect": true,
+        "explanation": "Errors in replication or repair, radiation and reactive chemicals can all cause random mutations."
+      }
+    ],
+    "explanation": "Mutations are random; they come from errors in replication or repair, and from radiation and reactive chemicals.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-60",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "medium",
+    "stem": "Which process in prokaryotes is the transfer of DNA from one bacterial cell to another by a virus?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Transformation, which is the uptake of DNA from the surroundings of the cell by a bacterial cell",
+        "isCorrect": false,
+        "explanation": "This is the uptake of DNA from the environment."
+      },
+      {
+        "label": "B",
+        "text": "Transduction, which is the viral transmission of genetic information between bacterial cells",
+        "isCorrect": true,
+        "explanation": "In transduction, a virus carries DNA from one cell to another."
+      },
+      {
+        "label": "C",
+        "text": "Conjugation, which is the transfer of DNA through direct contact between two bacterial cells",
+        "isCorrect": false,
+        "explanation": "This is the cell-to-cell transfer of DNA, and no virus is involved."
+      },
+      {
+        "label": "D",
+        "text": "Transposition, which is the movement of segments of DNA within and between DNA molecules in the cell",
+        "isCorrect": false,
+        "explanation": "This is the movement of DNA segments, and it does not need a virus."
+      }
+    ],
+    "explanation": "Horizontal gene transfer in prokaryotes includes transformation, transduction, conjugation and transposition.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-61",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "medium",
+    "stem": "A change in chromosome number often results in a new phenotype. Which event is most likely to cause a change in the number of chromosomes in a gamete?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A silent mutation in which the sequence of the DNA changes but the amino acid sequence stays the same in the protein that is made",
+        "isCorrect": false,
+        "explanation": "A silent mutation does not change the number of chromosomes."
+      },
+      {
+        "label": "B",
+        "text": "Nondisjunction, in which homologous chromosomes or sister chromatids fail to separate correctly in meiosis",
+        "isCorrect": true,
+        "explanation": "Errors in meiosis such as nondisjunction change the number of chromosomes."
+      },
+      {
+        "label": "C",
+        "text": "A point mutation in which one nucleotide of a gene is replaced by a different nucleotide in the DNA",
+        "isCorrect": false,
+        "explanation": "A point mutation changes a nucleotide and not the number of chromosomes."
+      },
+      {
+        "label": "D",
+        "text": "A frameshift mutation in which the deletion of a nucleotide changes the codons of the mRNA of a gene",
+        "isCorrect": false,
+        "explanation": "A frameshift changes the reading frame and not the number of chromosomes."
+      }
+    ],
+    "explanation": "Nondisjunction changes chromosome number (aneuploidy).",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-62",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "hard",
+    "stem": "Two related strains of a virus infect the same host cell at the same time. Which result is possible?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The two strains become one species of bacteria, because the viral proteins combine with the proteins of the host.",
+        "isCorrect": false,
+        "explanation": "Viruses are not bacteria, and the strains do not change into a new kind of cell."
+      },
+      {
+        "label": "B",
+        "text": "The two strains cannot be copied in the host cell, because a host cell can make only one strain of virus at a time.",
+        "isCorrect": false,
+        "explanation": "A host cell can make copies of both strains."
+      },
+      {
+        "label": "C",
+        "text": "The host cell divides by meiosis, so the viruses are shared between the haploid cells that are made.",
+        "isCorrect": false,
+        "explanation": "Viruses do not use meiosis, and the host cell is not changed in this way."
+      },
+      {
+        "label": "D",
+        "text": "The two strains recombine their genetic information, so new viruses with a combination of genes from both strains can be made.",
+        "isCorrect": true,
+        "explanation": "Related viruses can recombine genetic information if they infect the same host cell."
+      }
+    ],
+    "explanation": "Related viruses can recombine genetic information if they infect the same host cell.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-63",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "mutations",
+    "difficulty": "hard",
+    "stem": "A population of bacteria is exposed to an antibiotic in each generation. The table shows the percent of the bacteria that are resistant. Which statement best explains the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The bacteria needed resistance in order to survive, so the cells changed their DNA to make themselves resistant.",
+        "isCorrect": false,
+        "explanation": "Mutations do not occur because they are needed."
+      },
+      {
+        "label": "B",
+        "text": "The percent of the resistant bacteria increased because the antibiotic made the non-resistant bacteria mutate into resistant ones.",
+        "isCorrect": false,
+        "explanation": "The antibiotic kills the non-resistant bacteria and does not turn them into resistant ones."
+      },
+      {
+        "label": "C",
+        "text": "The antibiotic caused each of the bacteria to make a mutation for resistance, so the percent of resistant bacteria increased.",
+        "isCorrect": false,
+        "explanation": "Mutations are random. The antibiotic selects for bacteria that already have a resistance mutation."
+      },
+      {
+        "label": "D",
+        "text": "Some bacteria already had a mutation for resistance, and they survived and reproduced more than the others, so their frequency rose in the population.",
+        "isCorrect": true,
+        "explanation": "A mutation that enhances survival and reproduction can be selected for by environmental conditions."
+      }
+    ],
+    "explanation": "Natural selection increases the frequency of a mutation that enhances survival and reproduction in an environment.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/mutations",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Generation",
+        "Resistant bacteria (%)"
+      ],
+      "rows": [
+        [
+          "0",
+          "0.1"
+        ],
+        [
+          "1",
+          "4.5"
+        ],
+        [
+          "2",
+          "61"
+        ],
+        [
+          "3",
+          "96"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Bacteria that are resistant to an antibiotic"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-64",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "biotechnology",
+    "difficulty": "easy",
+    "stem": "A mixture of DNA fragments that are 500, 1,200, 2,000 and 3,000 base pairs long is loaded into a well of an agarose gel, and an electric current is applied. Which fragment travels the farthest from the well?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The 3,000 base pair fragment, because larger fragments have more DNA and so they are pulled through the gel faster",
+        "isCorrect": false,
+        "explanation": "Larger fragments are slowed down more by the gel, so they move more slowly."
+      },
+      {
+        "label": "B",
+        "text": "None of the fragments travel, because DNA is a large molecule that cannot move through a gel when a current is applied",
+        "isCorrect": false,
+        "explanation": "DNA has a negative charge and moves toward the positive electrode."
+      },
+      {
+        "label": "C",
+        "text": "All of the fragments travel the same distance, because the DNA of each fragment has the same negative charge",
+        "isCorrect": false,
+        "explanation": "Fragments of different sizes travel different distances in the gel."
+      },
+      {
+        "label": "D",
+        "text": "The 500 base pair fragment, because smaller fragments move through the gel more easily than larger fragments",
+        "isCorrect": true,
+        "explanation": "Gel electrophoresis separates DNA fragments by size and charge, and smaller fragments travel farther."
+      }
+    ],
+    "explanation": "In gel electrophoresis, the smallest DNA fragments travel the farthest.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/biotechnology",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-65",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "biotechnology",
+    "difficulty": "hard",
+    "stem": "A sample of DNA from a crime scene and samples from three suspects were cut with the same enzyme and separated by gel electrophoresis. The table shows the sizes of the fragments. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The DNA of the suspects is the same as the DNA of the sample, because all of the DNA is cut by the same enzyme.",
+        "isCorrect": false,
+        "explanation": "The same enzyme cuts different DNA into fragments of different sizes."
+      },
+      {
+        "label": "B",
+        "text": "The DNA from Suspect A has the same fragments as the DNA from the crime scene, so it may have come from Suspect A, but this is not proof.",
+        "isCorrect": true,
+        "explanation": "The fragment pattern of Suspect A matches the pattern of the sample from the scene."
+      },
+      {
+        "label": "C",
+        "text": "The DNA from Suspect C came from the crime scene, because it has the 850 base pair fragment that is also in the sample.",
+        "isCorrect": false,
+        "explanation": "Suspect C has a different pattern, with a 1,500 base pair fragment and without the 400 base pair fragment."
+      },
+      {
+        "label": "D",
+        "text": "The DNA from Suspect B came from the crime scene, because it has fragments of two of the same sizes as the sample from the scene.",
+        "isCorrect": false,
+        "explanation": "Suspect B has a fragment of 900 base pairs, which is not in the sample from the scene, so the patterns do not match."
+      }
+    ],
+    "explanation": "A DNA fingerprint compares the fragment patterns of different samples.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/biotechnology",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Sample",
+        "Fragment 1 (base pairs)",
+        "Fragment 2 (base pairs)",
+        "Fragment 3 (base pairs)"
+      ],
+      "rows": [
+        [
+          "Crime scene",
+          "1,200",
+          "850",
+          "400"
+        ],
+        [
+          "Suspect A",
+          "1,200",
+          "850",
+          "400"
+        ],
+        [
+          "Suspect B",
+          "1,200",
+          "900",
+          "400"
+        ],
+        [
+          "Suspect C",
+          "1,500",
+          "850",
+          "none"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Fragments of DNA from a crime scene and from three suspects"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-66",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "biotechnology",
+    "difficulty": "medium",
+    "stem": "Polymerase chain reaction (PCR) is used to make many copies of a segment of DNA. Which list gives the three steps of each cycle of PCR in the correct order?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Extending the new DNA molecules, annealing primers to the DNA, and denaturing the DNA to end the cycle",
+        "isCorrect": false,
+        "explanation": "Extension happens after primers are annealed."
+      },
+      {
+        "label": "B",
+        "text": "Denaturing the DNA, annealing primers to the original strands, and extending the new DNA molecules",
+        "isCorrect": true,
+        "explanation": "In PCR, DNA is denatured, primers are annealed to the original strands, and the new DNA is extended."
+      },
+      {
+        "label": "C",
+        "text": "Annealing primers to the DNA, denaturing the DNA, and extending the new DNA molecules",
+        "isCorrect": false,
+        "explanation": "The strands must be separated before primers can bind to them."
+      },
+      {
+        "label": "D",
+        "text": "Denaturing the DNA, extending the new DNA molecules, and annealing primers to the finished strands",
+        "isCorrect": false,
+        "explanation": "Primers have to be annealed before the new DNA can be extended."
+      }
+    ],
+    "explanation": "Each PCR cycle: denature, anneal primers, extend.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/biotechnology",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-67",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "biotechnology",
+    "difficulty": "medium",
+    "stem": "A PCR reaction starts with 3 copies of a segment of DNA. Assuming that the number of copies doubles in each cycle, how many copies are there after 5 cycles?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "48, because the number of copies doubles only 4 times, as the first cycle starts the reaction",
+        "isCorrect": false,
+        "explanation": "The number doubles in each of the 5 cycles."
+      },
+      {
+        "label": "B",
+        "text": "96, because the number of copies doubles 5 times, which multiplies the starting number of copies by 32",
+        "isCorrect": true,
+        "explanation": "3 x 2⁵ = 96."
+      },
+      {
+        "label": "C",
+        "text": "32, because the number of copies doubles 5 times, and the starting number is not used in the calculation",
+        "isCorrect": false,
+        "explanation": "The starting number of 3 copies is multiplied by 32."
+      },
+      {
+        "label": "D",
+        "text": "15, because the same number of copies is added in each cycle and so the number is multiplied by 5",
+        "isCorrect": false,
+        "explanation": "The number of copies doubles in each cycle. It does not increase by the same amount: 3 x 2⁵ = 96."
+      }
+    ],
+    "explanation": "In PCR the number of copies doubles with each cycle.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/biotechnology",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-68",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "biotechnology",
+    "difficulty": "medium",
+    "stem": "A plasmid that has a gene for resistance to the antibiotic ampicillin is mixed with bacteria that are sensitive to ampicillin, and conditions are used that allow the bacteria to take up the plasmid. The bacteria are then spread onto a plate that contains ampicillin. Which result is expected?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "All of the bacteria grow into colonies, because the plasmid that is added to the mixture also protects the cells that did not take it up.",
+        "isCorrect": false,
+        "explanation": "Cells that did not take up the plasmid do not have the resistance gene."
+      },
+      {
+        "label": "B",
+        "text": "Only the bacteria that did not take up the plasmid grow into colonies, because the plasmid slows down the growth of bacteria.",
+        "isCorrect": false,
+        "explanation": "The bacteria without the plasmid are killed by the ampicillin."
+      },
+      {
+        "label": "C",
+        "text": "Only the bacteria that took up the plasmid grow into colonies, because only those bacteria have the gene for resistance to ampicillin.",
+        "isCorrect": true,
+        "explanation": "Bacterial transformation introduces foreign DNA, and the resistance gene allows the transformed bacteria to grow in the presence of the antibiotic."
+      },
+      {
+        "label": "D",
+        "text": "None of the bacteria grow into colonies, because a gene for resistance to ampicillin cannot be expressed in a bacterial cell.",
+        "isCorrect": false,
+        "explanation": "The transformed bacteria express the gene and are able to grow."
+      }
+    ],
+    "explanation": "Bacterial transformation introduces foreign DNA into bacterial cells; a resistance gene allows selection.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/biotechnology",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u6-mcq-69",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "biotechnology",
+    "difficulty": "hard",
+    "stem": "A student performs a bacterial transformation with a plasmid that has an ampicillin resistance gene. The table shows the results on four plates. Which statement is best supported by the results?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The ampicillin has no effect on bacteria, because bacteria grew on plate C, which contained ampicillin.",
+        "isCorrect": false,
+        "explanation": "No bacteria grew on plate B, so ampicillin does kill bacteria that lack the plasmid."
+      },
+      {
+        "label": "B",
+        "text": "The plasmid kills the bacteria on plate D, because a lawn of bacteria grew on plate A, which had no plasmid.",
+        "isCorrect": false,
+        "explanation": "Plate D has a lawn of bacteria. The plasmid does not kill them."
+      },
+      {
+        "label": "C",
+        "text": "The colonies on plate C result from the plasmid, because bacteria without the plasmid did not grow on ampicillin on plate B.",
+        "isCorrect": true,
+        "explanation": "Plate B shows that the bacteria without the plasmid cannot grow with ampicillin, so growth on plate C requires the plasmid."
+      },
+      {
+        "label": "D",
+        "text": "The colonies on plate C result from a mutation, because the same number of colonies is found on plate D as on plate C, which received the same amount of plasmid.",
+        "isCorrect": false,
+        "explanation": "Plate D has a lawn of bacteria, and it does not show the same number of colonies as plate C."
+      }
+    ],
+    "explanation": "A control without the plasmid shows that growth on ampicillin requires the plasmid.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/biotechnology",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Plate",
+        "Plasmid added",
+        "Ampicillin in the agar",
+        "Result"
+      ],
+      "rows": [
+        [
+          "A",
+          "No plasmid",
+          "No",
+          "Lawn of bacteria"
+        ],
+        [
+          "B",
+          "No plasmid",
+          "Yes",
+          "No colonies"
+        ],
+        [
+          "C",
+          "Plasmid",
+          "Yes",
+          "148 colonies"
+        ],
+        [
+          "D",
+          "Plasmid",
+          "No",
+          "Lawn of bacteria"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Results of a bacterial transformation"
+    }
+  },
+  {
+    "id": "ap-bio-u6-mcq-70",
+    "unit": "unit-6-gene-expression-and-regulation",
+    "topic": "biotechnology",
+    "difficulty": "medium",
+    "stem": "A scientist amplifies a segment of DNA from an unknown fish by PCR and determines its sequence. The scientist compares the sequence with the sequences from three known species, as shown in the table. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The unknown fish cannot be identified, because none of the sequences of the species is exactly the same as the sequence of the fish.",
+        "isCorrect": false,
+        "explanation": "A small difference does not prevent identification. The most similar sequence is the best match."
+      },
+      {
+        "label": "B",
+        "text": "The unknown fish is most likely to be species 3, because its DNA sequence is the least similar to the sequence from species 3.",
+        "isCorrect": false,
+        "explanation": "A low similarity indicates a more distant relationship."
+      },
+      {
+        "label": "C",
+        "text": "The unknown fish is equally related to all three species, because the DNA of all of the species is made of the same four nucleotides.",
+        "isCorrect": false,
+        "explanation": "The order of the nucleotides is different in the species, and that is what is compared."
+      },
+      {
+        "label": "D",
+        "text": "The unknown fish is most likely to be species 1, because its DNA sequence is the most similar (99.8%) to the sequence from species 1.",
+        "isCorrect": true,
+        "explanation": "DNA sequence comparison can be used to identify organisms. The highest similarity suggests the closest relationship."
+      }
+    ],
+    "explanation": "Amplified and sequenced DNA can be used to identify organisms and to perform phylogenetic analysis.",
+    "conceptLink": "ap-biology/unit-6-gene-expression-and-regulation/biotechnology",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Known species",
+        "Similarity to the sequence of the unknown fish (%)"
+      ],
+      "rows": [
+        [
+          "Species 1",
+          "99.8"
+        ],
+        [
+          "Species 2",
+          "92.1"
+        ],
+        [
+          "Species 3",
+          "85.0"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Comparison of a DNA sequence from an unknown fish with known species"
+    }
+  }
+]

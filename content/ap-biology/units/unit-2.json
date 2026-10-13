@@ -1,0 +1,59 @@
+{
+  "slug": "unit-2-cells",
+  "order": 2,
+  "name": "Cells",
+  "weightingMin": 10,
+  "weightingMax": 13,
+  "topics": [
+    {
+      "slug": "cell-structure-and-function",
+      "order": 1,
+      "name": "Cell Structure and Function"
+    },
+    {
+      "slug": "cell-size",
+      "order": 2,
+      "name": "Cell Size"
+    },
+    {
+      "slug": "plasma-membrane",
+      "order": 3,
+      "name": "Plasma Membrane"
+    },
+    {
+      "slug": "membrane-permeability",
+      "order": 4,
+      "name": "Membrane Permeability"
+    },
+    {
+      "slug": "membrane-transport",
+      "order": 5,
+      "name": "Membrane Transport"
+    },
+    {
+      "slug": "facilitated-diffusion",
+      "order": 6,
+      "name": "Facilitated Diffusion"
+    },
+    {
+      "slug": "tonicity-and-osmoregulation",
+      "order": 7,
+      "name": "Tonicity and Osmoregulation"
+    },
+    {
+      "slug": "mechanisms-of-transport",
+      "order": 8,
+      "name": "Mechanisms of Transport"
+    },
+    {
+      "slug": "cell-compartmentalization",
+      "order": 9,
+      "name": "Cell Compartmentalization"
+    },
+    {
+      "slug": "origins-of-cell-compartmentalization",
+      "order": 10,
+      "name": "Origins of Cell Compartmentalization"
+    }
+  ]
+}

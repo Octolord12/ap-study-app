@@ -159,7 +159,7 @@ describe.each(courses)("%s weighted exam", (course) => {
   const sum = [...weights.values()].reduce((a, b) => a + b, 0);
   const questions = readDir<Item>(course, "questions").map((q) => ({ id: q.id, unitId: q.unit }));
   const prompts = readDir<Item>(course, "frqs").map((f) => ({ id: f.id, type: f.type ?? "FRQ", unitId: f.unit }));
-  const sections = JSON.parse(fs.readFileSync(path.join(root, course, "course.json"), "utf8")).examFormat.sections as { type: string; questionCount: number }[];
+  const sections = JSON.parse(fs.readFileSync(path.join(root, course, "course.json"), "utf8")).examFormat.sections as { type: string; questionCount: number; kinds?: string[] }[];
   const mcqCount = sections.find((s) => s.type === "MCQ")!.questionCount;
 
   it("draws the multiple-choice count, and every unit gets the floor or ceiling of its weighted share", () => {
@@ -180,7 +180,7 @@ describe.each(courses)("%s weighted exam", (course) => {
   });
 
   it("builds the free-response items its exam format asks for, in section order", () => {
-    const wanted = sections.filter((s) => s.type !== "MCQ").flatMap((s) => Array(s.questionCount).fill(s.type));
+    const wanted = sections.filter((s) => s.type !== "MCQ").flatMap((s) => s.kinds ?? Array(s.questionCount).fill(s.type));
     const byId = new Map(prompts.map((p) => [p.id, p.type]));
     const random = seeded(101);
     for (let run = 0; run < 200; run++) {

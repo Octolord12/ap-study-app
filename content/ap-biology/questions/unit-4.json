@@ -1,0 +1,2540 @@
+[
+  {
+    "id": "ap-bio-u4-mcq-1",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-communication",
+    "difficulty": "easy",
+    "stem": "In which two ways can cells communicate with one another?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "By direct contact only, because chemical signals cannot move from one cell to another",
+        "isCorrect": false,
+        "explanation": "Chemical signals such as hormones and local regulators do travel between cells."
+      },
+      {
+        "label": "B",
+        "text": "By the exchange of whole organelles, because all signals are carried by organelles between the cells",
+        "isCorrect": false,
+        "explanation": "Signals are not carried between cells by organelles. Cells use contact and chemical signals."
+      },
+      {
+        "label": "C",
+        "text": "By direct contact with other cells, or from a distance by chemical signaling",
+        "isCorrect": true,
+        "explanation": "Cells communicate through direct contact between cells and through chemical signals that can act at a distance."
+      },
+      {
+        "label": "D",
+        "text": "By chemical signals only, because the plasma membranes of different cells never touch one another",
+        "isCorrect": false,
+        "explanation": "Cells can interact by direct contact, as immune cells do."
+      }
+    ],
+    "explanation": "Cells communicate by direct contact or by chemical signaling.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-communication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-2",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-communication",
+    "difficulty": "medium",
+    "stem": "A neuron releases neurotransmitter molecules that affect only the neighboring cell across a tiny gap. Which term best describes the neurotransmitter?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A hormone, which travels through the bloodstream and acts only on cells that are far away from the signaling cell",
+        "isCorrect": false,
+        "explanation": "A neurotransmitter crossing a small gap is acting over a short distance, not in the bloodstream."
+      },
+      {
+        "label": "B",
+        "text": "A second messenger, which relays the signal inside the cytoplasm of the target cell after the signal binds",
+        "isCorrect": false,
+        "explanation": "A second messenger acts inside the cell, whereas the neurotransmitter acts between cells."
+      },
+      {
+        "label": "C",
+        "text": "A receptor protein, which is built into the plasma membrane of the target cell and binds the signal",
+        "isCorrect": false,
+        "explanation": "The neurotransmitter is the signal and not the receptor."
+      },
+      {
+        "label": "D",
+        "text": "A local regulator, which targets cells in the vicinity of the cell that releases it, over a short distance",
+        "isCorrect": true,
+        "explanation": "Local regulators act over short distances on nearby target cells."
+      }
+    ],
+    "explanation": "Local regulators act over short distances on cells near the signaling cell.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-communication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-3",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-communication",
+    "difficulty": "medium",
+    "stem": "Cells in the pancreas release insulin into the blood, and insulin affects the cells of the liver and muscles. Which statement correctly describes this signaling?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is short-distance signaling, in which a local regulator reaches only the cells that are next to the pancreas cells.",
+        "isCorrect": false,
+        "explanation": "Insulin reaches the liver and muscle, which are far from the pancreas, so it is long-distance signaling."
+      },
+      {
+        "label": "B",
+        "text": "It is signaling by direct contact, in which the pancreas cells must touch every cell that receives the insulin.",
+        "isCorrect": false,
+        "explanation": "Insulin is released into the blood and does not depend on direct contact."
+      },
+      {
+        "label": "C",
+        "text": "It is not a form of signaling, because the insulin is made by the cells of the pancreas and used by the same cells.",
+        "isCorrect": false,
+        "explanation": "Insulin is made by pancreas cells and acts on other cells, which is signaling."
+      },
+      {
+        "label": "D",
+        "text": "It is long-distance signaling, in which a signal released by one cell type travels to target cells of another type.",
+        "isCorrect": true,
+        "explanation": "Hormones such as insulin travel long distances through the blood to target cells of different types."
+      }
+    ],
+    "explanation": "Signals released by one cell type can travel long distances to target cells of another type.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-communication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-4",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-communication",
+    "difficulty": "medium",
+    "stem": "Which of the following is an example of cell-to-cell communication through direct contact?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A plant cell releases ethylene gas that diffuses through the air and affects fruit on a different plant",
+        "isCorrect": false,
+        "explanation": "This is signaling by a chemical released into the surroundings, not by contact."
+      },
+      {
+        "label": "B",
+        "text": "A neuron releases neurotransmitter that diffuses across a small gap to a neighboring neuron or muscle cell",
+        "isCorrect": false,
+        "explanation": "This is signaling by a local regulator."
+      },
+      {
+        "label": "C",
+        "text": "A pancreas cell releases insulin that moves in the blood to target cells in the liver and the muscles",
+        "isCorrect": false,
+        "explanation": "This is long-distance signaling by a hormone."
+      },
+      {
+        "label": "D",
+        "text": "A helper T cell recognizes an antigen that is displayed on the surface of an antigen-presenting cell",
+        "isCorrect": true,
+        "explanation": "Immune cells interact through direct contact, for example T cells with antigen-presenting cells."
+      }
+    ],
+    "explanation": "Immune cells interact through direct cell-to-cell contact.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-communication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-5",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-communication",
+    "difficulty": "medium",
+    "stem": "Some species of bacteria produce light only when many cells are present in the same place. Which statement best explains how the bacteria sense that many cells are present?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Each cell is given a signal by the environment that tells it to make light, so the cells never communicate with each other.",
+        "isCorrect": false,
+        "explanation": "In quorum sensing the bacteria communicate with each other by releasing and detecting a signal."
+      },
+      {
+        "label": "B",
+        "text": "Each cell releases a chemical signal, so the concentration of the signal in the surroundings rises as the population density rises, and gene expression changes at a threshold.",
+        "isCorrect": true,
+        "explanation": "This is quorum sensing: bacteria use chemical messengers to respond to population density."
+      },
+      {
+        "label": "C",
+        "text": "Each cell makes light whenever it makes a signal, so the light increases only when the cells each make less of the signal.",
+        "isCorrect": false,
+        "explanation": "A rising signal concentration, not less of the signal, is what leads to the response."
+      },
+      {
+        "label": "D",
+        "text": "Each cell counts the cells that touch it, and then it passes the number of cells to the neighbors by moving an organelle.",
+        "isCorrect": false,
+        "explanation": "Quorum sensing relies on a chemical signal, not on counting touching cells or moving organelles."
+      }
+    ],
+    "explanation": "Bacteria use chemical messengers to communicate with nearby cells and to respond to population density (quorum sensing).",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-communication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-6",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-communication",
+    "difficulty": "hard",
+    "stem": "Researchers grew a species of bacteria in cultures of different cell densities and measured the concentration of a signal molecule in the medium and the amount of light produced. The table shows the results. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The bacteria produce light only after the concentration of the signal molecule has increased, which is consistent with the signal reflecting how many cells are present.",
+        "isCorrect": true,
+        "explanation": "Light appeared when the signal concentration was high, and the signal concentration increased with the density of the culture."
+      },
+      {
+        "label": "B",
+        "text": "The concentration of the signal molecule is the same at every density, because each cell releases only one molecule of the signal.",
+        "isCorrect": false,
+        "explanation": "The signal concentration rose from low to very high as the density increased."
+      },
+      {
+        "label": "C",
+        "text": "The bacteria produce light in proportion to the number of cells at every density, because even the sparse cultures made some light.",
+        "isCorrect": false,
+        "explanation": "The two lowest densities made no light, so light is not produced in proportion at every density."
+      },
+      {
+        "label": "D",
+        "text": "The signal molecule prevents the production of light, because the cultures with the most signal had the highest light production.",
+        "isCorrect": false,
+        "explanation": "The data show light increasing as the signal increased, so the signal does not prevent light."
+      }
+    ],
+    "explanation": "Quorum sensing links the concentration of a signal to the density of the population.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-communication",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Cell density (cells/mL)",
+        "Concentration of signal in the medium",
+        "Light produced"
+      ],
+      "rows": [
+        [
+          "10³",
+          "Low",
+          "None"
+        ],
+        [
+          "10⁴",
+          "Low",
+          "None"
+        ],
+        [
+          "10⁶",
+          "High",
+          "Low"
+        ],
+        [
+          "10⁸",
+          "Very high",
+          "High"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Cultures of bacteria at four densities"
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-7",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-communication",
+    "difficulty": "medium",
+    "stem": "A hormone is carried in the blood to all of the tissues of the body, but only some of the cell types respond to it. Which statement best explains why only some cells respond?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Only the target cells can make the hormone, so the other cells have no use for a hormone that they cannot produce.",
+        "isCorrect": false,
+        "explanation": "Target cells do not have to make the hormone. They have to have a receptor that recognizes it."
+      },
+      {
+        "label": "B",
+        "text": "Only the target cells contain DNA, so the hormone is unable to affect cells that have no genetic material in them.",
+        "isCorrect": false,
+        "explanation": "All of the cells of the body, apart from some specialized cells such as mature red blood cells, contain DNA."
+      },
+      {
+        "label": "C",
+        "text": "Only the target cells have the specific receptor protein that recognizes the hormone, so only they can respond to it.",
+        "isCorrect": true,
+        "explanation": "A signal affects a cell only if the cell has a receptor with a ligand-binding domain that recognizes it."
+      },
+      {
+        "label": "D",
+        "text": "Only the target cells are close enough to the blood vessels, so the hormone is unable to reach the other kinds of cells.",
+        "isCorrect": false,
+        "explanation": "The hormone is carried in the blood to all of the tissues, so the distance from vessels is not what decides the response."
+      }
+    ],
+    "explanation": "Target cells have specific receptors for a signal.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-communication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-8",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-communication",
+    "difficulty": "hard",
+    "stem": "A drug stops a cell from releasing a local regulator. Which prediction about the cells that are near the treated cell is most consistent with what is known about local signaling?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The nearby cells will make the response anyway, because the receptors in the cells are always active in the absence of any signal.",
+        "isCorrect": false,
+        "explanation": "A receptor is normally activated when its ligand binds. Without the ligand there is no response."
+      },
+      {
+        "label": "B",
+        "text": "The nearby cells will make a stronger response, because the lack of the regulator makes their receptors more sensitive to it.",
+        "isCorrect": false,
+        "explanation": "Without the signal, the nearby cells do not receive the message and make no response."
+      },
+      {
+        "label": "C",
+        "text": "The nearby target cells will not receive the signal, so they will not make the response that the regulator would normally cause.",
+        "isCorrect": true,
+        "explanation": "Local regulators target cells in the vicinity of the signaling cell. Without the signal there is no response."
+      },
+      {
+        "label": "D",
+        "text": "The cells that are far away in the body will stop responding to the local regulator, because it has been blocked at its source.",
+        "isCorrect": false,
+        "explanation": "A local regulator acts on nearby cells and not on cells that are far away in the body."
+      }
+    ],
+    "explanation": "Without the release of a local regulator, nearby target cells do not receive the signal.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-communication",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-9",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "easy",
+    "stem": "In a signal transduction pathway, what is a ligand?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A part of the DNA that stores the information about how the cell should respond to the signal that arrives",
+        "isCorrect": false,
+        "explanation": "A ligand is a chemical messenger, not a part of the DNA."
+      },
+      {
+        "label": "B",
+        "text": "A protein that carries the signal inside the cell, relaying it from the plasma membrane to the nucleus",
+        "isCorrect": false,
+        "explanation": "This describes a relay protein or a second messenger, not the ligand."
+      },
+      {
+        "label": "C",
+        "text": "A chemical messenger that is recognized by, and binds to, a receptor protein in a target cell of the body",
+        "isCorrect": true,
+        "explanation": "Signaling begins with the recognition of a ligand by a receptor protein."
+      },
+      {
+        "label": "D",
+        "text": "An enzyme that adds a phosphate group to other proteins in the cell, which changes the activity of those proteins",
+        "isCorrect": false,
+        "explanation": "This describes a protein kinase. The ligand is the signal."
+      }
+    ],
+    "explanation": "A ligand is a chemical messenger that binds a receptor.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-10",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "easy",
+    "stem": "Which choice lists the main stages of a signal transduction pathway in the correct order?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The signal is relayed inside the cell, the ligand binds a receptor, and the cell makes a response",
+        "isCorrect": false,
+        "explanation": "A signal cannot be relayed before the ligand has bound the receptor."
+      },
+      {
+        "label": "B",
+        "text": "The ligand binds a receptor, the cell makes a response, and the signal is relayed inside the cell",
+        "isCorrect": false,
+        "explanation": "The relay of the signal takes place before the response."
+      },
+      {
+        "label": "C",
+        "text": "The ligand binds a receptor, the signal is relayed inside the cell, and the cell makes a response",
+        "isCorrect": true,
+        "explanation": "Pathways link the reception of a signal with a cellular response through relay steps."
+      },
+      {
+        "label": "D",
+        "text": "The cell makes a response, the signal is relayed inside the cell, and the ligand binds a receptor",
+        "isCorrect": false,
+        "explanation": "This reverses the order. The response is the last step."
+      }
+    ],
+    "explanation": "Reception, transduction (relay), response.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-11",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "medium",
+    "stem": "Which statement best explains why a receptor responds to one kind of ligand and not to others?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The ligand-binding domain of the receptor recognizes a specific chemical messenger, so only that ligand binds to it.",
+        "isCorrect": true,
+        "explanation": "The binding domain has a shape that recognizes a specific peptide or small molecule."
+      },
+      {
+        "label": "B",
+        "text": "The receptor is made of lipid, so it binds only to the ligands that are made of lipids and no other kinds of molecules.",
+        "isCorrect": false,
+        "explanation": "Receptor proteins are proteins, and their binding domains recognize both peptide and small-molecule ligands."
+      },
+      {
+        "label": "C",
+        "text": "The receptor binds any ligand that is present, and the cell decides which ligands to respond to inside the nucleus.",
+        "isCorrect": false,
+        "explanation": "A receptor binds specific ligands. It does not bind every ligand that is present."
+      },
+      {
+        "label": "D",
+        "text": "The receptor responds only to the ligands that are made by the same cell that carries the receptor in its membrane.",
+        "isCorrect": false,
+        "explanation": "Receptors respond to ligands from other cells as well, and the specificity comes from the binding domain."
+      }
+    ],
+    "explanation": "The ligand-binding domain of a receptor recognizes a specific chemical messenger.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-12",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "medium",
+    "stem": "A steroid hormone is a small, nonpolar molecule that can cross the plasma membrane of a cell. Where is the receptor for such a hormone most likely to be located?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Only in the cell wall of the target cell, because the hormone must be stopped before it enters the cell membrane",
+        "isCorrect": false,
+        "explanation": "Animal cells do not have cell walls, and the receptor is not located to stop the hormone from entering."
+      },
+      {
+        "label": "B",
+        "text": "Only on the outside surface of the plasma membrane, because all of the receptors for hormones are exposed to the blood",
+        "isCorrect": false,
+        "explanation": "Receptors can be inside the cell, in the cytoplasm or the nucleus."
+      },
+      {
+        "label": "C",
+        "text": "Inside the target cell, in the cytoplasm or in the nucleus, because the hormone can enter the cell",
+        "isCorrect": true,
+        "explanation": "Receptors may be on the cell surface or in the cytoplasm or nucleus. A ligand that can cross the membrane can bind a receptor inside."
+      },
+      {
+        "label": "D",
+        "text": "Only in the lipid bilayer of the plasma membrane, because the hormone is nonpolar and dissolves in the fatty acid tails",
+        "isCorrect": false,
+        "explanation": "A receptor that is a protein is not located only in the bilayer, and an internal receptor is possible."
+      }
+    ],
+    "explanation": "Receptors may be on the surface of a target cell or in its cytoplasm or nucleus.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-13",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "medium",
+    "stem": "After a ligand binds to a G protein-coupled receptor in the plasma membrane, which change occurs in the receptor?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The receptor becomes a part of the lipid bilayer, which makes the membrane unable to bind any more ligand molecules.",
+        "isCorrect": false,
+        "explanation": "The receptor changes shape and continues to be a signaling protein."
+      },
+      {
+        "label": "B",
+        "text": "The receptor breaks down the ligand into amino acids, which then diffuse to the nucleus and start the response.",
+        "isCorrect": false,
+        "explanation": "The ligand is not broken down by the receptor to start the response."
+      },
+      {
+        "label": "C",
+        "text": "The receptor moves out of the plasma membrane and into the nucleus, where it copies the ligand into a new molecule.",
+        "isCorrect": false,
+        "explanation": "The receptor does not leave the membrane to copy the ligand."
+      },
+      {
+        "label": "D",
+        "text": "The part of the receptor that lies inside the cell changes shape, which starts the transduction of the signal.",
+        "isCorrect": true,
+        "explanation": "After the ligand binds, the intracellular domain of the receptor changes shape and initiates transduction."
+      }
+    ],
+    "explanation": "Binding of the ligand causes the intracellular domain of the receptor to change shape.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-14",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "medium",
+    "stem": "Cyclic AMP (cAMP) is often involved in signal transduction pathways. Which statement best describes the role of cAMP?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is a second messenger that relays and amplifies the signal inside the cell after the receptor is activated.",
+        "isCorrect": true,
+        "explanation": "Enzymes and second messengers such as cAMP relay and amplify the intracellular signal."
+      },
+      {
+        "label": "B",
+        "text": "It is a receptor protein that spans the plasma membrane and changes shape when the hormone arrives at the cell.",
+        "isCorrect": false,
+        "explanation": "cAMP is a small molecule and not a receptor protein."
+      },
+      {
+        "label": "C",
+        "text": "It is a transcription factor that binds to the DNA of the cell and copies the genes into messenger RNA molecules.",
+        "isCorrect": false,
+        "explanation": "A second messenger relays the signal. It does not copy genes into mRNA."
+      },
+      {
+        "label": "D",
+        "text": "It is the ligand that binds to the receptor on the outside of the cell and starts the pathway in the membrane.",
+        "isCorrect": false,
+        "explanation": "The ligand is the extracellular signal, and cAMP acts inside the cell."
+      }
+    ],
+    "explanation": "Second messengers such as cAMP relay and amplify the intracellular signal.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-15",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "medium",
+    "stem": "One ligand molecule binds to one receptor and activates it. In the cell, each activated receptor activates 20 molecules of a relay protein, and each activated relay protein activates 50 molecules of an enzyme. How many enzyme molecules are activated by one ligand molecule?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1,000",
+        "isCorrect": true,
+        "explanation": "The signal is amplified at each step: 1 receptor x 20 relay proteins x 50 enzyme molecules = 1,000 enzyme molecules."
+      },
+      {
+        "label": "B",
+        "text": "20",
+        "isCorrect": false,
+        "explanation": "This counts only the first step. The activated relay proteins each activate many enzyme molecules."
+      },
+      {
+        "label": "C",
+        "text": "70",
+        "isCorrect": false,
+        "explanation": "This adds the numbers (1 + 20 + 50). The amplification at each step multiplies the number of molecules."
+      },
+      {
+        "label": "D",
+        "text": "50",
+        "isCorrect": false,
+        "explanation": "This counts only the final step of the cascade. The relay proteins were also activated in large numbers."
+      }
+    ],
+    "explanation": "A cascade amplifies a signal because each step multiplies the number of activated molecules.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-16",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "medium",
+    "stem": "Many signal transduction pathways include a phosphorylation cascade. Which statement best describes a phosphorylation cascade?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A single protein adds a phosphate group to the ligand, so the ligand can be recognized by every receptor in the cell.",
+        "isCorrect": false,
+        "explanation": "The cascade modifies proteins inside the cell, not the ligand outside it."
+      },
+      {
+        "label": "B",
+        "text": "One protein removes the DNA from the next protein, and this continues in a series of steps until the nucleus is reached.",
+        "isCorrect": false,
+        "explanation": "Phosphorylation involves the addition of a phosphate group and does not involve removing DNA."
+      },
+      {
+        "label": "C",
+        "text": "Each protein destroys the one before it, and the response is produced only when all of the proteins have been destroyed.",
+        "isCorrect": false,
+        "explanation": "A cascade relays the signal by activating the next component, not by destroying the previous one."
+      },
+      {
+        "label": "D",
+        "text": "One protein kinase adds a phosphate group to the next protein, activating it, and this continues in a series of steps.",
+        "isCorrect": true,
+        "explanation": "A cascade of protein modifications by phosphorylation relays the signal and often amplifies it."
+      }
+    ],
+    "explanation": "Phosphorylation cascades relay a signal by activating one protein after another.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-17",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "medium",
+    "stem": "A ligand binds to a protein in the plasma membrane that forms a channel, and the channel opens. Which term describes this type of receptor?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A ligand-gated channel, because the binding of the ligand causes the channel to open or close",
+        "isCorrect": true,
+        "explanation": "The binding of ligands to ligand-gated channels can cause the channel to open or close."
+      },
+      {
+        "label": "B",
+        "text": "A phosphorylation cascade, because it adds phosphate groups to a series of proteins that are located inside the cell",
+        "isCorrect": false,
+        "explanation": "A channel that opens when the ligand binds is not a cascade of phosphorylation."
+      },
+      {
+        "label": "C",
+        "text": "A second messenger, because it relays the signal from the surface of the cell to the inside of the nucleus",
+        "isCorrect": false,
+        "explanation": "A second messenger is a small molecule inside the cell, and a channel is a membrane protein."
+      },
+      {
+        "label": "D",
+        "text": "A transcription factor, because it binds to the DNA and starts the copying of a gene into messenger RNA",
+        "isCorrect": false,
+        "explanation": "A channel is in the plasma membrane. A transcription factor works on the DNA."
+      }
+    ],
+    "explanation": "Ligand-gated channels open or close when a ligand binds.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-18",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "medium",
+    "stem": "G protein-coupled receptors are an example of a type of receptor protein in eukaryotic cells. Which statement best describes a receptor of this type?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is a protein that carries the ligand across the plasma membrane and then releases it to the DNA of the target cell.",
+        "isCorrect": false,
+        "explanation": "A cell-surface receptor passes on the signal and does not usually carry the ligand across the membrane."
+      },
+      {
+        "label": "B",
+        "text": "It is a protein inside the nucleus that copies the ligand into messenger RNA and sends the copy to the cytoplasm.",
+        "isCorrect": false,
+        "explanation": "A receptor does not copy the ligand. It relays the signal."
+      },
+      {
+        "label": "C",
+        "text": "It is a lipid in the plasma membrane that releases the ligand into the cytoplasm after the lipid has been broken down.",
+        "isCorrect": false,
+        "explanation": "Receptors are proteins and not lipids, and the ligand does not need to enter the cell for the receptor to work."
+      },
+      {
+        "label": "D",
+        "text": "It is a membrane protein that binds a ligand outside the cell and relays the signal to components inside the cell.",
+        "isCorrect": true,
+        "explanation": "Receptor proteins recognize a chemical messenger and, after it binds, start the transduction of the signal inside the cell."
+      }
+    ],
+    "explanation": "G protein-coupled receptors are receptor proteins that start signal transduction after a ligand binds.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-19",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "introduction-to-signal-transduction",
+    "difficulty": "hard",
+    "stem": "Researchers study a pathway in which a growth factor causes cell division. They add the growth factor to four cell types and record the response, as shown in the table. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Kinase 2 acts after the transcription factor, because cells that lack kinase 2 do not divide when the growth factor is added.",
+        "isCorrect": false,
+        "explanation": "The response returns when the transcription factor is activated directly, so kinase 2 acts before it."
+      },
+      {
+        "label": "B",
+        "text": "The receptor is not needed for the response, because the cells that lack the receptor have had the growth factor added to them.",
+        "isCorrect": false,
+        "explanation": "The cells without the receptor have no response, so the receptor is needed."
+      },
+      {
+        "label": "C",
+        "text": "The growth factor acts inside the cell and not at a receptor, because the drug is able to produce the same response as the growth factor.",
+        "isCorrect": false,
+        "explanation": "The drug bypasses the earlier steps. This does not show that the growth factor acts inside the cell."
+      },
+      {
+        "label": "D",
+        "text": "Kinase 2 acts between the receptor and the transcription factor, because activating the transcription factor directly restores the response in cells that lack kinase 2.",
+        "isCorrect": true,
+        "explanation": "Without kinase 2 there is no response, but a drug that activates the transcription factor gives a response, so the transcription factor acts after kinase 2."
+      }
+    ],
+    "explanation": "Comparing mutants, and bypassing a step with a drug, shows the order of the components of a pathway.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/introduction-to-signal-transduction",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Cell type",
+        "Growth factor added",
+        "Response"
+      ],
+      "rows": [
+        [
+          "Normal cells",
+          "Yes",
+          "Cell division"
+        ],
+        [
+          "Cells without the receptor",
+          "Yes",
+          "None"
+        ],
+        [
+          "Cells without kinase 2",
+          "Yes",
+          "None"
+        ],
+        [
+          "Cells without kinase 2, with a drug that activates the transcription factor directly",
+          "Yes",
+          "Cell division"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Responses of four cell types"
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-20",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "easy",
+    "stem": "Which of the following can be a cellular response to a signal transduction pathway?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A change in the sequence of the DNA of every gene in the cell, which is a permanent change in its genotype",
+        "isCorrect": false,
+        "explanation": "Signaling changes how genes are used. It does not change the DNA sequence of every gene."
+      },
+      {
+        "label": "B",
+        "text": "A change in the type of ligand that the cell receives from the neighboring cells in the surrounding tissue",
+        "isCorrect": false,
+        "explanation": "The response is a change in the cell that receives the signal."
+      },
+      {
+        "label": "C",
+        "text": "A change in the shape of the ligand, which turns it into a receptor protein that is built into the cell membrane",
+        "isCorrect": false,
+        "explanation": "A ligand is not turned into a receptor in response to a signal."
+      },
+      {
+        "label": "D",
+        "text": "A change in gene expression, a change in cell function, or programmed cell death, which is called apoptosis",
+        "isCorrect": true,
+        "explanation": "Signal transduction can change gene expression and function, which may alter phenotype, or result in apoptosis."
+      }
+    ],
+    "explanation": "Signal transduction can change gene expression and cell function or lead to apoptosis.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-21",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "medium",
+    "stem": "A mutation changes the intracellular domain of a receptor so that it cannot change shape when the ligand binds. Which effect is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The ligand cannot bind the receptor, so the cell responds as if the ligand were absent and makes the normal response.",
+        "isCorrect": false,
+        "explanation": "The mutation is in the intracellular domain, so the ligand-binding domain still works."
+      },
+      {
+        "label": "B",
+        "text": "The ligand can still bind the receptor, but the signal is not transduced, so the cell does not make the response.",
+        "isCorrect": true,
+        "explanation": "Mutations in any domain of a receptor can alter the transduction of the signal to the downstream components."
+      },
+      {
+        "label": "C",
+        "text": "The ligand is changed into a different molecule, which causes the cell to respond to many other signals as well.",
+        "isCorrect": false,
+        "explanation": "The ligand is not changed by the mutation of the receptor."
+      },
+      {
+        "label": "D",
+        "text": "The cell makes the response all of the time, because the receptor no longer needs the ligand to start the pathway.",
+        "isCorrect": false,
+        "explanation": "A receptor that cannot change shape cannot start the pathway at all."
+      }
+    ],
+    "explanation": "A mutation in any domain of the receptor can alter the transduction of the signal.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-22",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "medium",
+    "stem": "A drug has a shape like that of a ligand. It binds to the ligand-binding domain of the receptor but does not cause the receptor to change shape. Which effect is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The drug has no effect on the pathway, because only the ligand is able to bind the ligand-binding domain of the receptor.",
+        "isCorrect": false,
+        "explanation": "A molecule with a similar shape can bind the domain and so block the real ligand."
+      },
+      {
+        "label": "B",
+        "text": "The drug destroys the receptor, which removes the pathway from the cell permanently after one dose of the drug.",
+        "isCorrect": false,
+        "explanation": "Nothing in the description suggests that the receptor is destroyed."
+      },
+      {
+        "label": "C",
+        "text": "The drug activates the pathway, because anything that binds to the receptor is able to start the response in the cell.",
+        "isCorrect": false,
+        "explanation": "The receptor changes shape only if the drug activates it, and here it does not."
+      },
+      {
+        "label": "D",
+        "text": "The drug blocks the pathway, because it occupies the receptor, so the real ligand cannot bind and start the signal.",
+        "isCorrect": true,
+        "explanation": "Chemicals that interact with a component of a pathway can inhibit it."
+      }
+    ],
+    "explanation": "Chemicals that interact with a signaling component may inhibit the pathway.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-23",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "medium",
+    "stem": "A chemical inhibits a protein kinase in the middle of a phosphorylation cascade. Which prediction is most consistent with this change?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The proteins before the inhibited step will be destroyed, so the receptor will no longer be in the plasma membrane.",
+        "isCorrect": false,
+        "explanation": "Inhibiting a kinase does not destroy the components before it."
+      },
+      {
+        "label": "B",
+        "text": "The proteins after the inhibited step will be activated by other signals, so the response will be larger than normal.",
+        "isCorrect": false,
+        "explanation": "Nothing in the description supports activation by other signals."
+      },
+      {
+        "label": "C",
+        "text": "The ligand will no longer bind the receptor, because the kinase is necessary for the ligand to reach the surface of the cell.",
+        "isCorrect": false,
+        "explanation": "The kinase works inside the cell and does not affect the binding of the ligand."
+      },
+      {
+        "label": "D",
+        "text": "The proteins after the inhibited step will not be activated, so the cell will not make the response even if the ligand binds.",
+        "isCorrect": true,
+        "explanation": "A chemical that interacts with a component of the pathway can inhibit it, and this blocks the downstream components."
+      }
+    ],
+    "explanation": "Inhibiting one component of a cascade blocks the components that follow it.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-24",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "hard",
+    "stem": "A mutation makes a protein kinase near the start of a growth-factor pathway active all of the time, even when no growth factor is present. Which prediction is most consistent with this mutation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cell will make the response only when the growth factor is present, because the receptor must still be active.",
+        "isCorrect": false,
+        "explanation": "The kinase is active without the ligand, so the response does not depend on the receptor."
+      },
+      {
+        "label": "B",
+        "text": "The cell will make the response, such as cell division, without a signal, which could lead to uncontrolled cell division.",
+        "isCorrect": true,
+        "explanation": "A mutation in any component of the pathway can change downstream events. An always-active kinase keeps the pathway on."
+      },
+      {
+        "label": "C",
+        "text": "The cell will undergo apoptosis at once, because every active kinase causes a cell to destroy itself by programmed death.",
+        "isCorrect": false,
+        "explanation": "Not every active kinase leads to apoptosis, and this pathway is a growth pathway."
+      },
+      {
+        "label": "D",
+        "text": "The cell will never make the response, because a kinase that is always active cannot pass the signal to the next protein.",
+        "isCorrect": false,
+        "explanation": "An always-active kinase continues to activate the proteins after it."
+      }
+    ],
+    "explanation": "A mutation can make a pathway active without a signal.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-25",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "medium",
+    "stem": "During the development of a human hand, the tissue between the fingers is removed. Which cellular response, triggered by signal transduction, best accounts for this?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Endocytosis, which is the taking in of the material by the cell membrane and which makes the cells between the fingers larger",
+        "isCorrect": false,
+        "explanation": "Endocytosis does not account for the removal of cells."
+      },
+      {
+        "label": "B",
+        "text": "Mitosis, which is the division of the cells to make new cells between the fingers and so to enlarge the tissue",
+        "isCorrect": false,
+        "explanation": "Mitosis would add cells and would not remove the tissue."
+      },
+      {
+        "label": "C",
+        "text": "Apoptosis, which is the programmed death of the cells between the fingers and so removes the tissue that lies between them",
+        "isCorrect": true,
+        "explanation": "Signal transduction can result in programmed cell death, and removal of tissue during development is an example."
+      },
+      {
+        "label": "D",
+        "text": "Active transport, which is the movement of ions by pumps and which makes the cells between the fingers swell",
+        "isCorrect": false,
+        "explanation": "Active transport does not remove tissue."
+      }
+    ],
+    "explanation": "Signal transduction can result in programmed cell death (apoptosis).",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-26",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "medium",
+    "stem": "Yeast cells of one mating type release a pheromone that binds to receptors on yeast cells of the other mating type. Which response is most likely in the cells that receive the pheromone?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A change in gene expression, in which genes that are needed for mating are turned on in the cells that receive it",
+        "isCorrect": true,
+        "explanation": "Mating pheromones in yeast trigger the expression of mating genes through a signal transduction pathway."
+      },
+      {
+        "label": "B",
+        "text": "A change in the sequence of the yeast DNA, in which the genes needed for mating are made from new nucleotides",
+        "isCorrect": false,
+        "explanation": "Signaling changes gene expression and does not rewrite the DNA sequence."
+      },
+      {
+        "label": "C",
+        "text": "A change in the pheromone into a receptor, in which the cell starts to bind the pheromone that it has released",
+        "isCorrect": false,
+        "explanation": "A signal is not changed into a receptor by the response to it."
+      },
+      {
+        "label": "D",
+        "text": "A change in the cell wall into a rigid shell, in which the cell stops responding to any signal for the rest of its life",
+        "isCorrect": false,
+        "explanation": "The pheromone triggers a response that prepares the cell for mating."
+      }
+    ],
+    "explanation": "Signal transduction can change gene expression, as in the response of yeast cells to mating pheromones.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-27",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "hard",
+    "stem": "In a liver cell, epinephrine binds to a receptor on the cell surface, and this leads through a signal transduction pathway to the breakdown of glycogen to glucose. Which statement best describes the response of the liver cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The signal causes the cell to make more receptors, so the epinephrine that binds is removed from the blood for good.",
+        "isCorrect": false,
+        "explanation": "The response described is the breakdown of glycogen."
+      },
+      {
+        "label": "B",
+        "text": "The signal changes the function of the cell, since glycogen is broken down to release glucose, without changing its DNA.",
+        "isCorrect": true,
+        "explanation": "Signal transduction can alter cell function, and epinephrine stimulates the breakdown of glycogen in mammals."
+      },
+      {
+        "label": "C",
+        "text": "The signal enters the nucleus and rewrites the sequence of the genes, so the cell can break down glycogen from then on.",
+        "isCorrect": false,
+        "explanation": "A signal transduction pathway changes how the cell functions and does not rewrite the DNA sequence."
+      },
+      {
+        "label": "D",
+        "text": "The signal is broken down by the cell into glucose, so the glucose that is released comes from the epinephrine itself.",
+        "isCorrect": false,
+        "explanation": "The glucose comes from glycogen, not from the epinephrine."
+      }
+    ],
+    "explanation": "Signal transduction can change cell function, as when epinephrine stimulates glycogen breakdown.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-28",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "hard",
+    "stem": "Which statement best describes how signal transduction pathways contribute to the development of the body plan of an embryo?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Signals between cells change gene expression in the cells that receive them, which affects how those cells specialize and where body parts form.",
+        "isCorrect": true,
+        "explanation": "Signaling pathways regulate gene expression during embryonic development, for example with morphogens and with the HOX genes that regulate body plans."
+      },
+      {
+        "label": "B",
+        "text": "Signals between cells are not used in development, because each cell of the embryo follows a plan that is stored only in its own cytoplasm.",
+        "isCorrect": false,
+        "explanation": "Cells in an embryo communicate, and signals help to direct development."
+      },
+      {
+        "label": "C",
+        "text": "Signals between cells cause the cells of the embryo to stop dividing, which fixes the final shape of the body at an early stage.",
+        "isCorrect": false,
+        "explanation": "Signaling can promote or limit division, but the shape of the body results from the pattern of gene expression."
+      },
+      {
+        "label": "D",
+        "text": "Signals between cells change the DNA sequence of the cells that receive them, which gives each body part its own set of genes.",
+        "isCorrect": false,
+        "explanation": "Cells in an embryo carry the same DNA. Signals change which genes are expressed."
+      }
+    ],
+    "explanation": "Signals regulate gene expression in embryonic development.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-29",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "signal-transduction-pathways",
+    "difficulty": "hard",
+    "stem": "The graph shows the response of a cell to different concentrations of a ligand. Which statement best explains why the response levels off at high ligand concentrations?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cell destroys the extra ligand at high concentrations, so none of it can bind to a receptor in the membrane.",
+        "isCorrect": false,
+        "explanation": "Nothing in the data suggests that the cell destroys the ligand."
+      },
+      {
+        "label": "B",
+        "text": "The receptors are removed by the cell as the ligand concentration rises, so the response falls to zero at high concentrations.",
+        "isCorrect": false,
+        "explanation": "The graph shows the response leveling off near 100 percent and not falling to zero."
+      },
+      {
+        "label": "C",
+        "text": "The ligand turns into a different molecule at high concentrations, so it is no longer recognized by the receptor.",
+        "isCorrect": false,
+        "explanation": "A ligand does not change into a different molecule because of its concentration."
+      },
+      {
+        "label": "D",
+        "text": "Nearly all of the receptors are occupied at high concentrations, so adding more ligand cannot activate more receptors.",
+        "isCorrect": true,
+        "explanation": "The number of receptors is limited. When they are all bound, the response reaches its maximum."
+      }
+    ],
+    "explanation": "A limited number of receptors sets a maximum response.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/signal-transduction-pathways",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Response against ligand concentration. The response rises steeply from 0 at 0 nanomolar to about 88 percent at 5 nanomolar and then levels off at about 100 percent by 20 nanomolar.",
+      "xLabel": "Concentration of ligand (nM)",
+      "yLabel": "Response of the cell (% of maximum)",
+      "xMin": 0,
+      "xMax": 20,
+      "yMin": 0,
+      "yMax": 100,
+      "series": [
+        {
+          "label": "Response",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 1,
+              "y": 38
+            },
+            {
+              "x": 2,
+              "y": 62
+            },
+            {
+              "x": 5,
+              "y": 88
+            },
+            {
+              "x": 10,
+              "y": 98
+            },
+            {
+              "x": 20,
+              "y": 100
+            }
+          ],
+          "color": "blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-30",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "easy",
+    "stem": "Which statement correctly describes negative feedback?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It has no effect on the initial stimulus, so a system that has been disturbed stays at the new value for good.",
+        "isCorrect": false,
+        "explanation": "Negative feedback acts on the stimulus to return the system to its set point."
+      },
+      {
+        "label": "B",
+        "text": "It reduces the initial stimulus, so a system that has been disturbed is returned toward its set point.",
+        "isCorrect": true,
+        "explanation": "Negative feedback mechanisms maintain homeostasis by reducing the initial stimulus."
+      },
+      {
+        "label": "C",
+        "text": "It removes the set point, so a system that has been disturbed no longer has a value to which it can return.",
+        "isCorrect": false,
+        "explanation": "A set point is the target value that negative feedback restores."
+      },
+      {
+        "label": "D",
+        "text": "It amplifies the initial stimulus, so a system that has been disturbed is moved further from its set point.",
+        "isCorrect": false,
+        "explanation": "This describes positive feedback."
+      }
+    ],
+    "explanation": "Negative feedback returns a system toward its set point.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-31",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "easy",
+    "stem": "Which statement correctly describes positive feedback?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It reduces a response, so the variable that started the response is brought back toward its initial set point.",
+        "isCorrect": false,
+        "explanation": "This describes negative feedback."
+      },
+      {
+        "label": "B",
+        "text": "It stops a response at once, so the variable that started the response stays at the value that it had at the start.",
+        "isCorrect": false,
+        "explanation": "Positive feedback does not stop the response. It amplifies it."
+      },
+      {
+        "label": "C",
+        "text": "It keeps a response constant, so the variable that started the response does not change from its initial set point.",
+        "isCorrect": false,
+        "explanation": "Positive feedback produces change and does not hold a variable constant."
+      },
+      {
+        "label": "D",
+        "text": "It amplifies a response, so the variable that started the response moves further away from its initial set point.",
+        "isCorrect": true,
+        "explanation": "Positive feedback intensifies the stimulus, which starts an additional response and produces a system change."
+      }
+    ],
+    "explanation": "Positive feedback amplifies a response and moves the variable away from its set point.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-32",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "stem": "After a meal, the concentration of glucose in the blood rises, and the pancreas releases insulin, which causes cells to take up glucose, so the concentration of glucose in the blood falls. Which type of mechanism is this?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Positive feedback, because the response amplifies the stimulus and moves the blood glucose further from its set point",
+        "isCorrect": false,
+        "explanation": "The response lowers the glucose, so it reduces the stimulus."
+      },
+      {
+        "label": "B",
+        "text": "Negative feedback, because the response reduces the stimulus and returns the blood glucose toward its set point",
+        "isCorrect": true,
+        "explanation": "The rise in glucose causes a response that lowers it again, which is negative feedback."
+      },
+      {
+        "label": "C",
+        "text": "Neither type of feedback, because blood glucose is not a variable that is controlled by the body in any kind of way",
+        "isCorrect": false,
+        "explanation": "Blood glucose is regulated, for example by insulin and glucagon."
+      },
+      {
+        "label": "D",
+        "text": "Positive feedback, because the release of insulin is a response to the rise in the concentration of glucose in the blood",
+        "isCorrect": false,
+        "explanation": "Having a response to a stimulus does not make the feedback positive. What matters is whether the response reduces or amplifies the stimulus."
+      }
+    ],
+    "explanation": "Regulation of blood sugar by insulin and glucagon is an example of negative feedback.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-33",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "stem": "During childbirth, the stretching of the cervix causes the release of oxytocin, which causes stronger contractions of the uterus, which stretch the cervix more and cause the release of more oxytocin. Which type of mechanism is this?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Neither type of feedback, because the contractions of the uterus are controlled only by the muscles of the uterus",
+        "isCorrect": false,
+        "explanation": "The release of oxytocin and the stretching of the cervix form a feedback loop."
+      },
+      {
+        "label": "B",
+        "text": "Negative feedback, because the response intensifies the stimulus that caused it and returns the system to its set point",
+        "isCorrect": false,
+        "explanation": "Negative feedback reduces the stimulus. Here the stimulus is intensified."
+      },
+      {
+        "label": "C",
+        "text": "Negative feedback, because the release of oxytocin is a response to a stimulus and the response is made by a hormone",
+        "isCorrect": false,
+        "explanation": "A response to a stimulus is not enough to make a mechanism negative feedback."
+      },
+      {
+        "label": "D",
+        "text": "Positive feedback, because the response intensifies the stimulus that caused it, so the process is amplified until the end",
+        "isCorrect": true,
+        "explanation": "The stronger contractions increase the stretching of the cervix, which amplifies the response until the baby is born."
+      }
+    ],
+    "explanation": "The onset of labor is an example of positive feedback.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-34",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "stem": "Ripe fruit releases ethylene gas, and ethylene causes nearby fruit to ripen and to release more ethylene. Which statement best describes this process?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is negative feedback, because the response (the release of more ethylene) reduces the stimulus (the ethylene).",
+        "isCorrect": false,
+        "explanation": "The release of more ethylene increases the stimulus and does not reduce it."
+      },
+      {
+        "label": "B",
+        "text": "It is positive feedback, because the response (the release of more ethylene) amplifies the stimulus (the ethylene).",
+        "isCorrect": true,
+        "explanation": "The ripening of fruit is an example of positive feedback, because each response increases the stimulus."
+      },
+      {
+        "label": "C",
+        "text": "It is not feedback of any kind, because ethylene is a gas that is released into the air and not into the blood.",
+        "isCorrect": false,
+        "explanation": "Feedback does not depend on the way in which a signal travels."
+      },
+      {
+        "label": "D",
+        "text": "It is negative feedback, because the fruit returns to the set point of the unripe fruit after the ethylene is released.",
+        "isCorrect": false,
+        "explanation": "The fruit moves away from its starting state and does not return to it."
+      }
+    ],
+    "explanation": "Ripening of fruit is an example of positive feedback.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-35",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "stem": "A person exercises in a hot room. The graph shows the body temperature of the person. Which statement best describes the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The temperature rises further and further away from 37 °C during the whole time, which is consistent with positive feedback.",
+        "isCorrect": false,
+        "explanation": "The graph shows that the temperature comes back to 37 °C after 30 minutes."
+      },
+      {
+        "label": "B",
+        "text": "The temperature does not change from 37 °C at any time, which shows that body temperature is not controlled by feedback.",
+        "isCorrect": false,
+        "explanation": "The temperature changes during the first 30 minutes and then returns to 37 °C."
+      },
+      {
+        "label": "C",
+        "text": "The temperature falls below 37 °C at 30 minutes, which shows that the body is no longer able to control its temperature.",
+        "isCorrect": false,
+        "explanation": "The temperature rises to 38.2 °C at 30 minutes and does not fall below 37 °C."
+      },
+      {
+        "label": "D",
+        "text": "The temperature rises above the set point of 37 °C and then returns to it, which is consistent with negative feedback such as sweating.",
+        "isCorrect": true,
+        "explanation": "A disturbance moves the temperature away from the set point, and a response returns it. This is what negative feedback does."
+      }
+    ],
+    "explanation": "Negative feedback returns a variable toward its set point after a disturbance.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Body temperature against time. It rises from 37.0 to 38.2 degrees Celsius in the first 30 minutes and then falls back to 37.0 by 60 minutes.",
+      "xLabel": "Time after the start of heat exposure (min)",
+      "yLabel": "Body temperature (°C)",
+      "xMin": 0,
+      "xMax": 60,
+      "yMin": 36,
+      "yMax": 40,
+      "series": [
+        {
+          "label": "Body temperature",
+          "points": [
+            {
+              "x": 0,
+              "y": 37.0
+            },
+            {
+              "x": 15,
+              "y": 38.0
+            },
+            {
+              "x": 30,
+              "y": 38.2
+            },
+            {
+              "x": 45,
+              "y": 37.4
+            },
+            {
+              "x": 60,
+              "y": 37.0
+            }
+          ],
+          "color": "red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-36",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "hard",
+    "stem": "A mutation prevents the insulin receptor from working in the cells of a person. Which prediction about the blood glucose of the person after a meal is most consistent with how negative feedback regulates it?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The blood glucose will stay high for longer, because cells cannot respond to insulin by taking up glucose and so the stimulus is not reduced.",
+        "isCorrect": true,
+        "explanation": "Without a working receptor the response to insulin does not occur, so the negative feedback loop cannot lower the glucose."
+      },
+      {
+        "label": "B",
+        "text": "The blood glucose will fall faster than normal, because the pancreas will release a larger amount of insulin to make up for the mutation.",
+        "isCorrect": false,
+        "explanation": "A larger amount of insulin cannot act on cells that cannot respond to it."
+      },
+      {
+        "label": "C",
+        "text": "The blood glucose will fall below the set point, because the loss of the receptor removes the signal that tells cells to keep glucose.",
+        "isCorrect": false,
+        "explanation": "Glucose is more likely to stay high because cells cannot take it up in response to insulin."
+      },
+      {
+        "label": "D",
+        "text": "The blood glucose will not change after the meal, because glucose from food does not reach the blood in a person with the mutation.",
+        "isCorrect": false,
+        "explanation": "Glucose from food enters the blood as usual. The mutation affects the response of the cells."
+      }
+    ],
+    "explanation": "Negative feedback needs a working response to reduce the stimulus.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-37",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "hard",
+    "stem": "Which statement best explains why positive feedback cannot be used by a cell or an organism to maintain homeostasis over a long period?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Positive feedback amplifies a change and moves the variable further from its set point, so it needs an end point or another mechanism to stop it.",
+        "isCorrect": true,
+        "explanation": "Positive feedback intensifies the stimulus. A process such as labor ends when the baby is born."
+      },
+      {
+        "label": "B",
+        "text": "Positive feedback stops all responses in the body, so the variable has no way of changing from the value that it has at the start.",
+        "isCorrect": false,
+        "explanation": "Positive feedback produces more of a response and does not stop responses."
+      },
+      {
+        "label": "C",
+        "text": "Positive feedback works only in plants, so animals have no mechanism that is able to amplify a response to a stimulus.",
+        "isCorrect": false,
+        "explanation": "Positive feedback occurs in animals as well, as in labor and lactation."
+      },
+      {
+        "label": "D",
+        "text": "Positive feedback reduces a change and moves the variable toward its set point, so it holds the variable at a fixed value for too long.",
+        "isCorrect": false,
+        "explanation": "Positive feedback does not move a variable toward the set point. This describes negative feedback."
+      }
+    ],
+    "explanation": "Positive feedback moves a variable away from its set point.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-38",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "stem": "A person goes outside on a cold day, and the body temperature begins to fall. The person begins to shiver, which produces heat, and the temperature returns to normal. Which statement is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The shivering is part of a positive feedback mechanism, because it makes the temperature fall further from the normal value.",
+        "isCorrect": false,
+        "explanation": "Shivering raises the temperature, so it opposes the change."
+      },
+      {
+        "label": "B",
+        "text": "The shivering is a stimulus that lowers the temperature, because the movement of the muscles loses heat to the air outside.",
+        "isCorrect": false,
+        "explanation": "Shivering generates heat and raises the temperature."
+      },
+      {
+        "label": "C",
+        "text": "The shivering is not related to temperature, because muscles move only as a response to signals about the position of the body.",
+        "isCorrect": false,
+        "explanation": "Shivering is a response to the lower temperature of the body."
+      },
+      {
+        "label": "D",
+        "text": "The shivering is part of a negative feedback mechanism, because it reduces the fall in temperature that was the stimulus.",
+        "isCorrect": true,
+        "explanation": "Shivering is a response that returns the temperature toward the set point."
+      }
+    ],
+    "explanation": "Negative feedback mechanisms operate at the organismal level, for example in regulating body temperature.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/feedback",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-39",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "easy",
+    "stem": "Which choice lists the stages of interphase of the cell cycle in order?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "G1, then G2, then S",
+        "isCorrect": false,
+        "explanation": "DNA is replicated in S phase, which comes before G2."
+      },
+      {
+        "label": "B",
+        "text": "S, then G1, then G2",
+        "isCorrect": false,
+        "explanation": "DNA is replicated in S phase, which comes after G1."
+      },
+      {
+        "label": "C",
+        "text": "G2, then S, then G1",
+        "isCorrect": false,
+        "explanation": "The order of the stages is G1, S and G2."
+      },
+      {
+        "label": "D",
+        "text": "G1, then S, then G2",
+        "isCorrect": true,
+        "explanation": "Interphase has three stages: G1, S and G2."
+      }
+    ],
+    "explanation": "Interphase consists of G1, S and G2.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-40",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "easy",
+    "stem": "What happens to the DNA of a cell during S phase?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is broken down by enzymes, so the cell has no DNA for a period before it enters the next stage of the cell cycle.",
+        "isCorrect": false,
+        "explanation": "The DNA is not broken down. It is copied."
+      },
+      {
+        "label": "B",
+        "text": "It condenses, so each chromosome is compact and is moved along the spindle fibers to the equator of the cell.",
+        "isCorrect": false,
+        "explanation": "This describes events in mitosis and not S phase."
+      },
+      {
+        "label": "C",
+        "text": "It is divided between two cells, so each of the two cells has half of the DNA that the original cell had.",
+        "isCorrect": false,
+        "explanation": "DNA is divided between cells at the end of mitosis, and each daughter cell gets a complete copy."
+      },
+      {
+        "label": "D",
+        "text": "It replicates, so each chromosome consists of two sister chromatids connected at a centromere.",
+        "isCorrect": true,
+        "explanation": "In S phase, DNA in the form of chromatin replicates to form two sister chromatids connected at a centromere."
+      }
+    ],
+    "explanation": "DNA replicates in S phase, forming sister chromatids.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-41",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "medium",
+    "stem": "Which of the following events take place during G1 and G2 of the cell cycle?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "In G1 the cell is metabolically active and duplicates organelles, and in G2 proteins are made and the centrosomes replicate.",
+        "isCorrect": true,
+        "explanation": "G1 involves growth and duplication of organelles, and G2 involves protein synthesis, large amounts of ATP and replication of centrosomes."
+      },
+      {
+        "label": "B",
+        "text": "In G1 the cell divides its cytoplasm, and in G2 the nuclear envelope breaks down and the spindle forms in the cell.",
+        "isCorrect": false,
+        "explanation": "The cytoplasm divides in cytokinesis, and the nuclear envelope breaks down in mitosis."
+      },
+      {
+        "label": "C",
+        "text": "In G1 the DNA is replicated and sister chromatids form, and in G2 the chromosomes line up along the equator of the cell.",
+        "isCorrect": false,
+        "explanation": "DNA is replicated in S phase, and chromosomes line up in metaphase."
+      },
+      {
+        "label": "D",
+        "text": "In G1 the sister chromatids are pulled apart, and in G2 the cell is separated into two daughter cells by a furrow.",
+        "isCorrect": false,
+        "explanation": "These events occur during mitosis and cytokinesis, after interphase."
+      }
+    ],
+    "explanation": "G1 and G2 are phases of growth and preparation.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-42",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "medium",
+    "stem": "A mature nerve cell no longer divides, but some nondividing cells can re-enter the cell cycle if they receive appropriate cues. Which term describes the stage of a cell that has left the cell cycle but may re-enter it?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "G2, a stage in which a cell is making proteins for mitosis and cannot leave the cycle after it has entered this stage",
+        "isCorrect": false,
+        "explanation": "G2 is a part of the cell cycle that comes before mitosis."
+      },
+      {
+        "label": "B",
+        "text": "S phase, a stage in which a cell is replicating its DNA and then divides when the replication is finished",
+        "isCorrect": false,
+        "explanation": "S phase is a part of the cell cycle in which DNA replicates."
+      },
+      {
+        "label": "C",
+        "text": "G0, a stage in which a cell no longer divides but can reenter the cell cycle in response to appropriate cues",
+        "isCorrect": true,
+        "explanation": "A cell can enter G0, in which it does not divide, and may re-enter the cycle."
+      },
+      {
+        "label": "D",
+        "text": "Telophase, a stage in which a cell is separating its cytoplasm and then enters a new cycle of mitosis at once",
+        "isCorrect": false,
+        "explanation": "Telophase is a stage of mitosis, and cells in it are part of the cell cycle."
+      }
+    ],
+    "explanation": "Cells can enter G0 and may re-enter the cell cycle in response to cues.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-43",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "easy",
+    "stem": "Which choice lists the stages of mitosis in the correct order?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Prophase, anaphase, metaphase, telophase",
+        "isCorrect": false,
+        "explanation": "Chromosomes line up at the equator in metaphase, which comes before anaphase."
+      },
+      {
+        "label": "B",
+        "text": "Prophase, metaphase, telophase, anaphase",
+        "isCorrect": false,
+        "explanation": "Anaphase, in which sister chromatids separate, comes before telophase."
+      },
+      {
+        "label": "C",
+        "text": "Prophase, metaphase, anaphase, telophase",
+        "isCorrect": true,
+        "explanation": "The stages of mitosis occur in this order, followed by cytokinesis."
+      },
+      {
+        "label": "D",
+        "text": "Metaphase, prophase, anaphase, telophase",
+        "isCorrect": false,
+        "explanation": "Prophase is the first stage of mitosis."
+      }
+    ],
+    "explanation": "Mitosis occurs in the order prophase, metaphase, anaphase, telophase.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-44",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "medium",
+    "stem": "Which of the following events occurs in prophase of mitosis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The sister chromatids condense, the mitotic spindle begins to form, and the centrosomes move to opposite poles of the cell.",
+        "isCorrect": true,
+        "explanation": "These are the events of prophase."
+      },
+      {
+        "label": "B",
+        "text": "The spindle fibers align the chromosomes along the equator of the cell, and each chromosome is attached to fibers from both poles.",
+        "isCorrect": false,
+        "explanation": "This describes metaphase."
+      },
+      {
+        "label": "C",
+        "text": "The paired sister chromatids separate, and the spindle fibers pull the chromatids toward the opposite poles of the cell.",
+        "isCorrect": false,
+        "explanation": "This describes anaphase."
+      },
+      {
+        "label": "D",
+        "text": "The spindle breaks down, a new nuclear envelope forms around each set of chromosomes, and then the cytoplasm divides.",
+        "isCorrect": false,
+        "explanation": "This describes telophase and cytokinesis."
+      }
+    ],
+    "explanation": "In prophase the chromatids condense and the spindle begins to form.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-45",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "medium",
+    "stem": "In which stage of mitosis do the paired sister chromatids separate and are pulled toward opposite poles of the cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Telophase, in which the spindle breaks down and a new nuclear envelope forms after the chromatids have separated",
+        "isCorrect": false,
+        "explanation": "In telophase the chromatids have already reached the poles."
+      },
+      {
+        "label": "B",
+        "text": "Metaphase, in which the spindle fibers align the chromosomes along the equator before they separate",
+        "isCorrect": false,
+        "explanation": "Chromosomes line up in metaphase, and they separate in anaphase."
+      },
+      {
+        "label": "C",
+        "text": "Prophase, in which the chromosomes condense and the spindle starts to form before the chromatids separate",
+        "isCorrect": false,
+        "explanation": "The chromatids are still joined in prophase."
+      },
+      {
+        "label": "D",
+        "text": "Anaphase, in which the spindle fibers pull the separated chromatids toward the opposite poles of the cell",
+        "isCorrect": true,
+        "explanation": "In anaphase the sister chromatids separate and are pulled toward the poles."
+      }
+    ],
+    "explanation": "Sister chromatids separate in anaphase.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-46",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "medium",
+    "stem": "How does cytokinesis differ in animal cells and plant cells?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "In animal cells a cleavage furrow forms, and in plant cells a cell plate forms, and each results in two new daughter cells.",
+        "isCorrect": true,
+        "explanation": "Cytokinesis divides the cytoplasm by a cleavage furrow in animal cells and by a cell plate in plant cells."
+      },
+      {
+        "label": "B",
+        "text": "In animal cells the cytoplasm divides after mitosis, but in plant cells it never divides, so the cells have many nuclei.",
+        "isCorrect": false,
+        "explanation": "The cytoplasm of plant cells divides too, by the formation of a cell plate."
+      },
+      {
+        "label": "C",
+        "text": "In animal cells a cell plate forms, and in plant cells a cleavage furrow forms, and each results in two new daughter cells.",
+        "isCorrect": false,
+        "explanation": "This reverses the two structures."
+      },
+      {
+        "label": "D",
+        "text": "In animal cells and plant cells a cleavage furrow forms, but in plant cells the furrow is made of cellulose and stays.",
+        "isCorrect": false,
+        "explanation": "Plant cells form a cell plate and not a cleavage furrow."
+      }
+    ],
+    "explanation": "Cytokinesis uses a cleavage furrow in animal cells and a cell plate in plant cells.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-47",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "medium",
+    "stem": "A student counts 200 cells in a stained onion root tip and records the stage of each cell, as shown in the table. What percent of the cells are in mitosis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "80%",
+        "isCorrect": false,
+        "explanation": "This is the percent of the cells that are in interphase (160 / 200). Mitosis includes the other stages."
+      },
+      {
+        "label": "B",
+        "text": "10%",
+        "isCorrect": false,
+        "explanation": "This is the percent of the cells that are in prophase only (20 / 200)."
+      },
+      {
+        "label": "C",
+        "text": "20%",
+        "isCorrect": true,
+        "explanation": "The cells in prophase, metaphase, anaphase and telophase are in mitosis: 20 + 8 + 6 + 6 = 40. 40 / 200 x 100 = 20 percent."
+      },
+      {
+        "label": "D",
+        "text": "40%",
+        "isCorrect": false,
+        "explanation": "This is the number of cells in mitosis (40) and not the percent. The percent is the number divided by the total."
+      }
+    ],
+    "explanation": "Percent of cells in mitosis = cells in prophase, metaphase, anaphase and telophase divided by the total.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Stage",
+        "Number of cells"
+      ],
+      "rows": [
+        [
+          "Interphase",
+          "160"
+        ],
+        [
+          "Prophase",
+          "20"
+        ],
+        [
+          "Metaphase",
+          "8"
+        ],
+        [
+          "Anaphase",
+          "6"
+        ],
+        [
+          "Telophase",
+          "6"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Cells in the root tip of an onion (200 cells counted)"
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-48",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "hard",
+    "stem": "The cells in the onion root tip complete a cell cycle in 24 hours. Assuming that the cells are at random stages of the cycle, about how long does a cell spend in prophase, based on the table?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "9.6 hours",
+        "isCorrect": false,
+        "explanation": "This is the time for 40 percent of the cycle (0.40 x 24), which uses the number of cells in mitosis, 40, instead of the number in prophase."
+      },
+      {
+        "label": "B",
+        "text": "2.4 hours",
+        "isCorrect": true,
+        "explanation": "The fraction of the cells in prophase is 20 / 200 = 0.10, so the time in prophase is 0.10 x 24 hours = 2.4 hours."
+      },
+      {
+        "label": "C",
+        "text": "20 hours",
+        "isCorrect": false,
+        "explanation": "This is the number of cells in prophase (20) and not a time."
+      },
+      {
+        "label": "D",
+        "text": "1.2 hours",
+        "isCorrect": false,
+        "explanation": "This uses a cycle of 12 hours instead of the 24 hours that the question gives."
+      }
+    ],
+    "explanation": "The time in a stage = the fraction of the cells in that stage x the length of the whole cycle.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Stage",
+        "Number of cells"
+      ],
+      "rows": [
+        [
+          "Interphase",
+          "160"
+        ],
+        [
+          "Prophase",
+          "20"
+        ],
+        [
+          "Metaphase",
+          "8"
+        ],
+        [
+          "Anaphase",
+          "6"
+        ],
+        [
+          "Telophase",
+          "6"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Cells in the root tip of an onion (200 cells counted)"
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-49",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "medium",
+    "stem": "Mitosis results in the transfer of a complete genome from a parent cell to daughter cells. Which statement correctly describes the result of mitosis in eukaryotes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Two daughter cells that each have half of the genes of the parent cell, so that the cells can specialize in different jobs",
+        "isCorrect": false,
+        "explanation": "Each daughter cell receives a complete genome. They can specialize because of gene expression."
+      },
+      {
+        "label": "B",
+        "text": "Four daughter cells that each have half of the chromosomes of the parent cell, which are used for sexual reproduction",
+        "isCorrect": false,
+        "explanation": "This describes meiosis."
+      },
+      {
+        "label": "C",
+        "text": "Two daughter cells that are genetically identical to the parent cell, which are used for growth, tissue repair and asexual reproduction",
+        "isCorrect": true,
+        "explanation": "Mitosis ensures the transfer of a complete genome to two genetically identical daughter cells."
+      },
+      {
+        "label": "D",
+        "text": "One daughter cell that has twice the genome of the parent cell, so that the organism can grow by making larger cells",
+        "isCorrect": false,
+        "explanation": "Mitosis produces two daughter cells that have the same genome as the parent."
+      }
+    ],
+    "explanation": "Mitosis produces two genetically identical daughter cells.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-50",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "hard",
+    "stem": "A diploid cell of an animal has 6 chromosomes before DNA replication (2n = 6). How many chromosomes and how many chromatids are present in the cell during G2, and how many chromosomes are present during anaphase of mitosis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "In G2 there are 6 chromosomes and 6 chromatids, and in anaphase there are 12 chromosomes",
+        "isCorrect": false,
+        "explanation": "In G2 each chromosome has been replicated and has two chromatids, so there are 12 chromatids."
+      },
+      {
+        "label": "B",
+        "text": "In G2 there are 6 chromosomes and 12 chromatids, and in anaphase there are 6 chromosomes",
+        "isCorrect": false,
+        "explanation": "In anaphase the sister chromatids separate, and each one counts as a chromosome, so there are 12."
+      },
+      {
+        "label": "C",
+        "text": "In G2 there are 12 chromosomes and 12 chromatids, and in anaphase there are 12 chromosomes",
+        "isCorrect": false,
+        "explanation": "Replication doubles the chromatids, not the chromosomes, because sister chromatids are counted as one chromosome."
+      },
+      {
+        "label": "D",
+        "text": "In G2 there are 6 chromosomes and 12 chromatids, and in anaphase there are 12 chromosomes",
+        "isCorrect": true,
+        "explanation": "DNA replication makes each chromosome consist of two sister chromatids, so the number of chromosomes does not change in G2. In anaphase the sister chromatids separate and each is then a chromosome."
+      }
+    ],
+    "explanation": "Count chromosomes by the number of centromeres. Replication makes sister chromatids but does not add chromosomes.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-51",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "cell-cycle",
+    "difficulty": "hard",
+    "stem": "The graph shows the amount of DNA in a cell during one cell cycle. Which statement best explains the rise in the amount of DNA between 8 and 14 hours?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cell is in cytokinesis, in which the cytoplasm divides, so the amount of DNA doubles in each of the two new cells.",
+        "isCorrect": false,
+        "explanation": "Cytokinesis reduces the amount of DNA per cell. It does not double it."
+      },
+      {
+        "label": "B",
+        "text": "The cell is in S phase, in which the DNA is replicated, so the amount of DNA doubles from 2 to 4.",
+        "isCorrect": true,
+        "explanation": "The doubling of the amount of DNA corresponds to S phase."
+      },
+      {
+        "label": "C",
+        "text": "The cell is in G1, in which the cell duplicates its organelles, so the amount of DNA doubles as each organelle gets a copy.",
+        "isCorrect": false,
+        "explanation": "The amount of DNA doubles in S phase. In G1 the amount of DNA stays the same."
+      },
+      {
+        "label": "D",
+        "text": "The cell is in anaphase, in which the sister chromatids separate, so the amount of DNA doubles in the one cell.",
+        "isCorrect": false,
+        "explanation": "Anaphase separates chromatids, and the cell at the end of mitosis divides into two cells with half the amount."
+      }
+    ],
+    "explanation": "The amount of DNA per cell doubles in S phase and halves when the cell divides.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/cell-cycle",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Relative amount of DNA per cell over a 24 hour cell cycle. It is 2 from 0 to 8 hours, rises to 4 between 8 and 14 hours, stays at 4 until 20 hours, and falls to 2 by 21 hours.",
+      "xLabel": "Time (hours)",
+      "yLabel": "Relative amount of DNA per cell",
+      "xMin": 0,
+      "xMax": 24,
+      "yMin": 0,
+      "yMax": 5,
+      "series": [
+        {
+          "label": "DNA per cell",
+          "points": [
+            {
+              "x": 0,
+              "y": 2
+            },
+            {
+              "x": 8,
+              "y": 2
+            },
+            {
+              "x": 14,
+              "y": 4
+            },
+            {
+              "x": 20,
+              "y": 4
+            },
+            {
+              "x": 21,
+              "y": 2
+            },
+            {
+              "x": 24,
+              "y": 2
+            }
+          ],
+          "color": "blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-52",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "easy",
+    "stem": "What is the role of a checkpoint in the cell cycle?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is an internal control that checks conditions in the cell and lets the cycle continue only if they are suitable.",
+        "isCorrect": true,
+        "explanation": "A number of internal controls, or checkpoints, regulate progression through the cell cycle."
+      },
+      {
+        "label": "B",
+        "text": "It is a signal from outside the body that makes every cell divide at the same time and at the same rate as the others.",
+        "isCorrect": false,
+        "explanation": "Checkpoints are internal controls and do not make all of the cells divide at the same time."
+      },
+      {
+        "label": "C",
+        "text": "It is an enzyme that joins the fragments of DNA after replication, so that the DNA of the cell is complete.",
+        "isCorrect": false,
+        "explanation": "A checkpoint is not an enzyme that joins DNA fragments."
+      },
+      {
+        "label": "D",
+        "text": "It is a stage of the cell cycle in which the cell makes copies of its DNA so that the next stage can begin.",
+        "isCorrect": false,
+        "explanation": "A checkpoint is a control. The copying of DNA happens in S phase."
+      }
+    ],
+    "explanation": "Checkpoints are internal controls of the cell cycle.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-53",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "medium",
+    "stem": "At the checkpoint that comes just before the cell begins mitosis, the cell checks whether its DNA has been replicated correctly. What is the purpose of this timing?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It makes sure that the DNA is complete and undamaged before the cell divides, so each daughter cell receives a complete genome.",
+        "isCorrect": true,
+        "explanation": "The timing of a checkpoint is related to the process it protects. Checking replicated DNA before mitosis prevents the passing on of errors."
+      },
+      {
+        "label": "B",
+        "text": "It makes sure that the cell is as small as possible before the cell divides, so that each daughter cell is smaller than the parent.",
+        "isCorrect": false,
+        "explanation": "A checkpoint does not aim to make the cell as small as possible."
+      },
+      {
+        "label": "C",
+        "text": "It makes sure that mitosis begins at once whatever the state of the DNA, so that the cycle is never delayed for any reason.",
+        "isCorrect": false,
+        "explanation": "A checkpoint is a place where the cycle can be stopped if conditions are not suitable."
+      },
+      {
+        "label": "D",
+        "text": "It makes sure that the DNA is replicated more than once before the cell divides, so that each daughter cell has extra copies.",
+        "isCorrect": false,
+        "explanation": "The DNA is replicated once in each cell cycle. Extra copies are not the aim of the checkpoint."
+      }
+    ],
+    "explanation": "Checkpoints give the cell a chance to check conditions before it goes on to the next stage.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-54",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "medium",
+    "stem": "Which statement best describes how cyclins and cyclin-dependent kinases (CDKs) control the cell cycle?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cyclins interact with CDKs to activate them, and the resulting activity of the CDKs moves the cell from one stage of the cycle to the next.",
+        "isCorrect": true,
+        "explanation": "Interactions between cyclins and CDKs control the cell cycle."
+      },
+      {
+        "label": "B",
+        "text": "CDKs are active all the time at the same level, so the cyclins have no effect on the stages through which a cell passes.",
+        "isCorrect": false,
+        "explanation": "CDKs are controlled by the cyclins they interact with, and so their activity changes."
+      },
+      {
+        "label": "C",
+        "text": "Cyclins are made only at the end of the cell cycle, so the concentration of cyclin does not change during the earlier stages.",
+        "isCorrect": false,
+        "explanation": "The concentration of cyclin changes through the cycle."
+      },
+      {
+        "label": "D",
+        "text": "Cyclins and CDKs are the DNA that is copied in S phase, so the cell cycle ends when they have been copied twice.",
+        "isCorrect": false,
+        "explanation": "Cyclins and CDKs are proteins and not DNA."
+      }
+    ],
+    "explanation": "Interactions between cyclins and CDKs control the cell cycle.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-55",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "medium",
+    "stem": "The graph shows the concentration of a cyclin in a dividing cell over one cell cycle. Which statement is best supported by the graph?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The concentration of the cyclin stays at the same value through the whole cell cycle, which shows that it has no role in the cycle.",
+        "isCorrect": false,
+        "explanation": "The concentration changes a great deal during the cycle."
+      },
+      {
+        "label": "B",
+        "text": "The concentration of the cyclin rises and falls in a cycle, which is consistent with its role in controlling the progress of the cell through the stages of the cycle.",
+        "isCorrect": true,
+        "explanation": "The cyclin rises to a peak and then drops sharply, as expected for a protein that controls the progress of the cell cycle."
+      },
+      {
+        "label": "C",
+        "text": "The concentration of the cyclin increases at a steady rate through the whole cell cycle, which shows that it is never broken down.",
+        "isCorrect": false,
+        "explanation": "The graph shows a sharp fall at 21 hours."
+      },
+      {
+        "label": "D",
+        "text": "The concentration of the cyclin is highest at the start of the cycle, which shows that it is made only during the stage of G1.",
+        "isCorrect": false,
+        "explanation": "The graph shows that the concentration is lowest at the start and highest at 20 hours."
+      }
+    ],
+    "explanation": "The concentrations of cyclins vary in a cycle, which helps to control the cell cycle.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Relative concentration of a cyclin over a 24 hour cell cycle. It is low at first, rises slowly to about 40 at 14 hours and then steeply to 100 at 20 hours, and falls to 15 at 21 hours.",
+      "xLabel": "Time (hours)",
+      "yLabel": "Relative concentration of cyclin",
+      "xMin": 0,
+      "xMax": 24,
+      "yMin": 0,
+      "yMax": 100,
+      "series": [
+        {
+          "label": "Cyclin",
+          "points": [
+            {
+              "x": 0,
+              "y": 10
+            },
+            {
+              "x": 6,
+              "y": 10
+            },
+            {
+              "x": 10,
+              "y": 20
+            },
+            {
+              "x": 14,
+              "y": 40
+            },
+            {
+              "x": 18,
+              "y": 85
+            },
+            {
+              "x": 20,
+              "y": 100
+            },
+            {
+              "x": 21,
+              "y": 15
+            },
+            {
+              "x": 24,
+              "y": 10
+            }
+          ],
+          "color": "purple"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-56",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "medium",
+    "stem": "A mutation inactivates a protein that normally stops the cell cycle at a checkpoint when the DNA is damaged. Which outcome is most likely for a cell that has damaged DNA and this mutation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cell stops dividing for good, because the loss of the protein causes every damaged cell to enter G0 at once.",
+        "isCorrect": false,
+        "explanation": "Loss of a protein that stops the cycle does not cause the cell to stop dividing."
+      },
+      {
+        "label": "B",
+        "text": "The cell continues to divide with damaged DNA, which can pass mutations on to daughter cells and may lead to cancer.",
+        "isCorrect": true,
+        "explanation": "Disruptions to the cell cycle may result in cancer. Without the checkpoint the damage is not stopped."
+      },
+      {
+        "label": "C",
+        "text": "The cell makes more copies of its DNA in S phase, because the protein normally makes sure that the DNA is replicated once.",
+        "isCorrect": false,
+        "explanation": "The effect on damaged cells is that they continue to divide."
+      },
+      {
+        "label": "D",
+        "text": "The cell repairs the DNA more quickly than before, because the protein that was lost normally slows down repair.",
+        "isCorrect": false,
+        "explanation": "The protein is a checkpoint control. Its loss does not speed up repair."
+      }
+    ],
+    "explanation": "Disruptions to the cell cycle may result in cancer or apoptosis.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-57",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "medium",
+    "stem": "Which statement best describes the fate of a cell that has damaged DNA that cannot be repaired, when its checkpoints are working normally?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cell makes a second nucleus, because this lets the cell keep the damaged DNA apart from the healthy DNA.",
+        "isCorrect": false,
+        "explanation": "A cell does not make a second nucleus to separate damaged DNA."
+      },
+      {
+        "label": "B",
+        "text": "The cell moves to the next stage of the cycle without delay, because the damage is detected only at the end of mitosis.",
+        "isCorrect": false,
+        "explanation": "Damage is detected at the checkpoints before the cell goes on to the next stage."
+      },
+      {
+        "label": "C",
+        "text": "The cell divides at once, because the damage is copied into both of the daughter cells, which can repair it.",
+        "isCorrect": false,
+        "explanation": "Working checkpoints stop the cycle, and daughter cells do not repair DNA that the parent could not."
+      },
+      {
+        "label": "D",
+        "text": "The cell may undergo apoptosis, which is programmed cell death, so that the damaged DNA is not passed on.",
+        "isCorrect": true,
+        "explanation": "Disruptions to the cell cycle may result in cancer or apoptosis, and apoptosis removes damaged cells."
+      }
+    ],
+    "explanation": "Apoptosis can remove cells that cannot pass the checkpoints.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-58",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "hard",
+    "stem": "Researchers measure the percent of cells in each stage of the cell cycle in untreated cells and in cells that were treated with a drug, as shown in the table. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The drug causes the cells to accumulate in G1, which suggests that it prevents the cells from starting the replication of DNA.",
+        "isCorrect": false,
+        "explanation": "The percent of the cells in G1 decreased from 55 to 20 percent."
+      },
+      {
+        "label": "B",
+        "text": "The drug has no effect on the cell cycle, because the percent of the cells in S phase is almost the same in both groups.",
+        "isCorrect": false,
+        "explanation": "The percent of cells in S phase is similar, but the percentages in G1 and in G2/M differ a great deal."
+      },
+      {
+        "label": "C",
+        "text": "The drug causes the cells to accumulate at the G2 and mitosis stages, which suggests that it prevents the cells from completing mitosis.",
+        "isCorrect": true,
+        "explanation": "The percent of the cells in G2/M increased from 15 to 55 percent, so more cells are held at that point of the cycle."
+      },
+      {
+        "label": "D",
+        "text": "The drug causes all of the cells to divide faster, because the percent of the cells in G2 and mitosis increased in the treated cells.",
+        "isCorrect": false,
+        "explanation": "Cells accumulating in a stage suggests that they are held there, not that they divide faster."
+      }
+    ],
+    "explanation": "A build-up of cells in a stage suggests that they are held at the following checkpoint.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Cell group",
+        "G1 (% of cells)",
+        "S (% of cells)",
+        "G2 and mitosis (% of cells)"
+      ],
+      "rows": [
+        [
+          "Untreated cells",
+          "55",
+          "30",
+          "15"
+        ],
+        [
+          "Cells treated with a drug for 24 hours",
+          "20",
+          "25",
+          "55"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Percent of cells in each stage of the cell cycle"
+    }
+  },
+  {
+    "id": "ap-bio-u4-mcq-59",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "hard",
+    "stem": "A cell has a mutation that stops it from checking whether all of its chromosomes are attached to the spindle before anaphase begins. Which prediction is most consistent with this mutation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Chromosomes will be separated correctly all of the time, because the spindle attaches to them whether or not a check takes place.",
+        "isCorrect": false,
+        "explanation": "The check is there to prevent errors. Without it, errors are more likely."
+      },
+      {
+        "label": "B",
+        "text": "Chromosomes will not be separated at all, because the cell will wait for ever at the stage before anaphase begins.",
+        "isCorrect": false,
+        "explanation": "Without the check the cell does not wait, so anaphase can begin too early."
+      },
+      {
+        "label": "C",
+        "text": "Chromosomes may be separated incorrectly, so the daughter cells may have too many or too few chromosomes.",
+        "isCorrect": true,
+        "explanation": "Without the check, anaphase can begin before all of the chromosomes are attached, which leads to errors in the separation of the chromosomes."
+      },
+      {
+        "label": "D",
+        "text": "Chromosomes will be replicated a second time, because the cell will return to S phase when the check is not made.",
+        "isCorrect": false,
+        "explanation": "The missing check affects the separation of the chromosomes and does not cause a second round of replication."
+      }
+    ],
+    "explanation": "Checkpoints help to make sure that chromosomes are separated correctly.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-60",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "medium",
+    "stem": "Why do most mature nerve cells in an adult not divide?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "They have exited the cell cycle and entered G0, in which a cell no longer divides, although some nondividing cells can re-enter the cycle.",
+        "isCorrect": true,
+        "explanation": "Nondividing cells may exit the cell cycle or be held at a particular stage."
+      },
+      {
+        "label": "B",
+        "text": "They have no DNA, so the cells cannot copy their genetic information and so cannot enter the next stage of the cycle.",
+        "isCorrect": false,
+        "explanation": "Nerve cells contain DNA."
+      },
+      {
+        "label": "C",
+        "text": "They are in S phase all of the time, so the DNA is replicated again and again without the cell ever dividing.",
+        "isCorrect": false,
+        "explanation": "A cell in G0 is not continuously replicating DNA."
+      },
+      {
+        "label": "D",
+        "text": "They are stuck at the end of mitosis, so each cell has two nuclei that cannot be separated in the cytoplasm.",
+        "isCorrect": false,
+        "explanation": "Mature nerve cells are not stuck in mitosis."
+      }
+    ],
+    "explanation": "Cells that do not divide may exit the cell cycle (G0).",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u4-mcq-61",
+    "unit": "unit-4-cell-communication-and-cell-cycle",
+    "topic": "regulation-of-cell-cycle",
+    "difficulty": "hard",
+    "stem": "Researchers fused cells in different stages of the cell cycle and observed what happened to the nucleus of the cell that was in G1, as shown in the table. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cytoplasm of a cell in S phase contains a factor that triggers the start of DNA replication in a nucleus that is in G1.",
+        "isCorrect": true,
+        "explanation": "The G1 nucleus began to replicate its DNA when fused with an S-phase cell and not when fused with a G2 cell, so a signal in the S-phase cell starts replication."
+      },
+      {
+        "label": "B",
+        "text": "All of the cells begin to replicate their DNA when they are fused with any other cell, whatever the stage of that other cell.",
+        "isCorrect": false,
+        "explanation": "Only the fusion with an S-phase cell caused the early start of replication."
+      },
+      {
+        "label": "C",
+        "text": "The DNA replication of a nucleus that is in G1 is controlled only by the nucleus, and the cytoplasm of the cell has no effect.",
+        "isCorrect": false,
+        "explanation": "The nucleus of the G1 cell began to replicate in the cytoplasm of the S-phase cell, so the cytoplasm has an effect."
+      },
+      {
+        "label": "D",
+        "text": "The cytoplasm of a cell in G2 contains a factor that triggers the start of DNA replication in a nucleus that is in G1.",
+        "isCorrect": false,
+        "explanation": "The G1 nucleus did not begin to replicate when fused with the G2 cell."
+      }
+    ],
+    "explanation": "Cell fusion experiments show that regulators in the cytoplasm control the progress of the cell cycle.",
+    "conceptLink": "ap-biology/unit-4-cell-communication-and-cell-cycle/regulation-of-cell-cycle",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Cells that were fused",
+        "What was observed"
+      ],
+      "rows": [
+        [
+          "S-phase cell fused with a G1 cell",
+          "The nucleus of the G1 cell began to replicate its DNA"
+        ],
+        [
+          "G2 cell fused with a G1 cell",
+          "The nucleus of the G1 cell did not begin to replicate its DNA until it would normally have done so"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Fusion of cells at different stages of the cell cycle"
+    }
+  }
+]

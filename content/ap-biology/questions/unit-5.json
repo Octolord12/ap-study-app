@@ -1,0 +1,1942 @@
+[
+  {
+    "id": "ap-bio-u5-mcq-1",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "easy",
+    "stem": "What is the result of meiosis in a diploid organism that reproduces sexually?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Haploid body cells, each of which has one set of chromosomes",
+        "isCorrect": false,
+        "explanation": "Meiosis makes gametes. Body cells are not haploid in a diploid organism."
+      },
+      {
+        "label": "B",
+        "text": "Diploid body cells, each of which has two sets of chromosomes",
+        "isCorrect": false,
+        "explanation": "Diploid body cells are made by mitosis, not by meiosis."
+      },
+      {
+        "label": "C",
+        "text": "Haploid gametes, each of which has one set of chromosomes",
+        "isCorrect": true,
+        "explanation": "Meiosis forms haploid gamete cells from diploid cells."
+      },
+      {
+        "label": "D",
+        "text": "Diploid gametes, each of which has two sets of chromosomes",
+        "isCorrect": false,
+        "explanation": "Gametes are haploid, so that fertilization restores the diploid number."
+      }
+    ],
+    "explanation": "Meiosis forms haploid gametes in sexually reproducing diploid organisms.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-2",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "easy",
+    "stem": "Which statement correctly compares the products of mitosis and meiosis in an animal?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mitosis and meiosis both make four genetically identical cells, and they differ only in the use of a spindle.",
+        "isCorrect": false,
+        "explanation": "Both processes use a spindle, and they differ in the number of cells and the genetic content."
+      },
+      {
+        "label": "B",
+        "text": "Mitosis makes two genetically identical diploid cells, and meiosis makes four genetically different haploid cells.",
+        "isCorrect": true,
+        "explanation": "Mitosis and meiosis differ in the number of cells produced and in the genetic content of the daughter cells."
+      },
+      {
+        "label": "C",
+        "text": "Mitosis makes four genetically different haploid cells, and meiosis makes two genetically identical diploid cells.",
+        "isCorrect": false,
+        "explanation": "This reverses the products of the two processes."
+      },
+      {
+        "label": "D",
+        "text": "Mitosis makes two haploid cells, and meiosis makes two diploid cells, and both of them use a spindle.",
+        "isCorrect": false,
+        "explanation": "Mitosis makes diploid cells and meiosis makes haploid cells."
+      }
+    ],
+    "explanation": "Mitosis and meiosis both use a spindle but differ in the number of cells produced and in their genetic content.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-3",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "medium",
+    "stem": "Which of the following events occurs in prophase I of meiosis but not in prophase of mitosis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Homologous chromosomes pair up in synapsis, and chiasmata may form between them",
+        "isCorrect": true,
+        "explanation": "In prophase I the homologous chromosomes pair and condense, and chiasmata may form."
+      },
+      {
+        "label": "B",
+        "text": "The sister chromatids condense and the mitotic spindle starts to form between the centrosomes",
+        "isCorrect": false,
+        "explanation": "This happens in prophase of mitosis and also in prophase I."
+      },
+      {
+        "label": "C",
+        "text": "The sister chromatids separate and are pulled to the opposite poles by the spindle fibers",
+        "isCorrect": false,
+        "explanation": "Sister chromatids separate in anaphase of mitosis and in anaphase II."
+      },
+      {
+        "label": "D",
+        "text": "The nuclear envelope breaks down and the centrosomes move to the opposite poles of the cell",
+        "isCorrect": false,
+        "explanation": "This happens in prophase of mitosis as well."
+      }
+    ],
+    "explanation": "Synapsis of homologous chromosomes is a feature of prophase I.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-4",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "medium",
+    "stem": "How does the arrangement of chromosomes at the equator of the cell in metaphase I of meiosis differ from the arrangement in metaphase of mitosis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "In metaphase I the individual chromosomes line up at the equator, but in mitosis the homologous pairs line up.",
+        "isCorrect": false,
+        "explanation": "This reverses the arrangements."
+      },
+      {
+        "label": "B",
+        "text": "In metaphase I the homologous pairs line up at the equator, but in mitosis individual chromosomes line up.",
+        "isCorrect": true,
+        "explanation": "Meiotic spindle fibers align homologous pairs along the equator in metaphase I."
+      },
+      {
+        "label": "C",
+        "text": "In metaphase I all of the sister chromatids line up in a single row, but in mitosis they scatter in the cell.",
+        "isCorrect": false,
+        "explanation": "In mitosis the chromosomes line up at the equator as well."
+      },
+      {
+        "label": "D",
+        "text": "In metaphase I the chromosomes do not line up at the equator, but in mitosis they do line up there.",
+        "isCorrect": false,
+        "explanation": "Chromosomes line up at the equator in metaphase I."
+      }
+    ],
+    "explanation": "Homologous pairs align at the metaphase plate in metaphase I.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-5",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "medium",
+    "stem": "What separates during anaphase I of meiosis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The homologous chromosomes, while the sister chromatids of each chromosome remain attached",
+        "isCorrect": true,
+        "explanation": "In anaphase I homologous chromosomes separate and are pulled toward the poles."
+      },
+      {
+        "label": "B",
+        "text": "The two daughter cells, while the chromosomes in each stay together in a pair",
+        "isCorrect": false,
+        "explanation": "The cells separate at cytokinesis after telophase."
+      },
+      {
+        "label": "C",
+        "text": "The nuclear envelope and the spindle, while the chromosomes stay at the equator of the cell",
+        "isCorrect": false,
+        "explanation": "The chromosomes move to the poles in anaphase I."
+      },
+      {
+        "label": "D",
+        "text": "The sister chromatids of each chromosome, while the homologous chromosomes stay paired together",
+        "isCorrect": false,
+        "explanation": "Sister chromatids separate in anaphase II."
+      }
+    ],
+    "explanation": "Homologs separate in anaphase I; sister chromatids separate in anaphase II.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-6",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "medium",
+    "stem": "Which event distinguishes anaphase II from anaphase I?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "In anaphase II the DNA is replicated again, as the sister chromatids are pulled apart toward the poles.",
+        "isCorrect": false,
+        "explanation": "DNA is not replicated between meiosis I and meiosis II."
+      },
+      {
+        "label": "B",
+        "text": "In anaphase II the chromosomes line up in pairs on the equator, as the chiasmata hold them together.",
+        "isCorrect": false,
+        "explanation": "This describes metaphase I."
+      },
+      {
+        "label": "C",
+        "text": "In anaphase II the homologous chromosomes are pulled apart toward opposite poles, as the pairs break down.",
+        "isCorrect": false,
+        "explanation": "Homologous chromosomes separate in anaphase I."
+      },
+      {
+        "label": "D",
+        "text": "In anaphase II the sister chromatids are pulled apart toward opposite poles, as the centromeres separate.",
+        "isCorrect": true,
+        "explanation": "In anaphase II the centromeres separate, and the sister chromatids are pulled to opposite poles."
+      }
+    ],
+    "explanation": "Sister chromatids separate in anaphase II.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-7",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "medium",
+    "stem": "A diploid cell has 8 chromosomes (2n = 8). How many chromosomes does each cell have at the end of meiosis I, and how many at the end of meiosis II?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4 chromosomes at the end of meiosis I, and 4 chromosomes at the end of meiosis II",
+        "isCorrect": true,
+        "explanation": "Meiosis I separates the homologous chromosomes, so each cell has the haploid number (4). Meiosis II separates sister chromatids, and each cell still has 4 chromosomes."
+      },
+      {
+        "label": "B",
+        "text": "8 chromosomes at the end of meiosis I, and 4 chromosomes at the end of meiosis II",
+        "isCorrect": false,
+        "explanation": "The number of chromosomes is halved in meiosis I, because the homologous chromosomes separate."
+      },
+      {
+        "label": "C",
+        "text": "8 chromosomes at the end of meiosis I, and 8 chromosomes at the end of meiosis II",
+        "isCorrect": false,
+        "explanation": "The cells that result from meiosis are haploid and so they have 4 chromosomes."
+      },
+      {
+        "label": "D",
+        "text": "4 chromosomes at the end of meiosis I, and 2 chromosomes at the end of meiosis II",
+        "isCorrect": false,
+        "explanation": "Meiosis II separates the sister chromatids. It does not halve the number of chromosomes again."
+      }
+    ],
+    "explanation": "Meiosis I halves the number of chromosomes; meiosis II separates sister chromatids and does not change the number.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-8",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "medium",
+    "stem": "Which choice lists a similarity between mitosis and meiosis, and a difference between them?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Both make two daughter cells, but only mitosis happens in the cells that form the gametes of an animal.",
+        "isCorrect": false,
+        "explanation": "Meiosis happens in the cells that form gametes, and it makes four cells."
+      },
+      {
+        "label": "B",
+        "text": "Both use a spindle apparatus to move chromosomes, but meiosis makes four cells and mitosis makes two.",
+        "isCorrect": true,
+        "explanation": "Mitosis and meiosis are similar in the use of a spindle and they differ in the number of cells and their genetic content."
+      },
+      {
+        "label": "C",
+        "text": "Both start with the replication of DNA, but only mitosis makes cells that have different combinations of alleles.",
+        "isCorrect": false,
+        "explanation": "Meiosis makes cells that differ genetically. Mitosis makes identical cells."
+      },
+      {
+        "label": "D",
+        "text": "Both make daughter cells with half of the chromosomes, but only meiosis uses a spindle to move them.",
+        "isCorrect": false,
+        "explanation": "Mitosis does not make cells with half of the chromosomes, and both processes use a spindle."
+      }
+    ],
+    "explanation": "Mitosis and meiosis both use a spindle; they differ in the number of cells and in their genetic content.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-9",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "hard",
+    "stem": "The table compares two processes of cell division in a diploid organism. Which statement is best supported by the table?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Both processes are mitosis, because both of them have a diploid parent cell and make daughter cells with chromosomes.",
+        "isCorrect": false,
+        "explanation": "The two processes differ in the number of divisions and in the cells they make."
+      },
+      {
+        "label": "B",
+        "text": "Process 2 is meiosis, because it has two divisions and makes four haploid cells that are genetically different from each other.",
+        "isCorrect": true,
+        "explanation": "Meiosis has two divisions and produces four genetically different haploid cells."
+      },
+      {
+        "label": "C",
+        "text": "Process 2 is mitosis, because it makes four cells and so it is able to supply a larger number of cells for growth.",
+        "isCorrect": false,
+        "explanation": "Mitosis makes two cells. The four haploid cells indicate meiosis."
+      },
+      {
+        "label": "D",
+        "text": "Process 1 is meiosis, because it has one division and makes two diploid cells that are identical to the parent cell.",
+        "isCorrect": false,
+        "explanation": "Process 1 matches mitosis, which makes two identical diploid cells."
+      }
+    ],
+    "explanation": "Meiosis has two divisions and makes four genetically different haploid cells.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Process",
+        "Number of divisions",
+        "Cells produced",
+        "Chromosome number of the cells",
+        "Genetic content of the cells"
+      ],
+      "rows": [
+        [
+          "Process 1",
+          "1",
+          "2",
+          "Diploid",
+          "Identical to the parent cell"
+        ],
+        [
+          "Process 2",
+          "2",
+          "4",
+          "Haploid",
+          "Different from each other and from the parent cell"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Two processes of cell division"
+    }
+  },
+  {
+    "id": "ap-bio-u5-mcq-10",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis",
+    "difficulty": "hard",
+    "stem": "At the end of meiosis I, each cell is haploid, although each of its chromosomes still consists of two sister chromatids. Which statement best explains why the cell is described as haploid?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The homologous chromosomes have separated, so each cell has one chromosome (one set) from each homologous pair.",
+        "isCorrect": true,
+        "explanation": "The chromosome number is counted by the number of centromeres, and each cell now has only one chromosome of each homologous pair."
+      },
+      {
+        "label": "B",
+        "text": "The cell has not replicated its DNA, so it has half of the chromosomes that were present in the parent cell.",
+        "isCorrect": false,
+        "explanation": "DNA was replicated before meiosis I, so the cell has duplicated chromosomes."
+      },
+      {
+        "label": "C",
+        "text": "The sister chromatids have separated, so each cell has only one chromatid of each of its chromosomes.",
+        "isCorrect": false,
+        "explanation": "The sister chromatids separate in meiosis II, and they are still attached at the end of meiosis I."
+      },
+      {
+        "label": "D",
+        "text": "Each chromosome has been cut in half, so each cell has half of the DNA of every one of its chromosomes.",
+        "isCorrect": false,
+        "explanation": "Chromosomes are not cut in half in meiosis I. Each chromosome still consists of two sister chromatids."
+      }
+    ],
+    "explanation": "Ploidy is counted by chromosomes (centromeres), not by chromatids.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-11",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "easy",
+    "stem": "Which statement correctly describes crossing over?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "In prophase II, sister chromatids of the same chromosome exchange genetic material, which keeps the genetic content of the gametes the same.",
+        "isCorrect": false,
+        "explanation": "Crossing over occurs in prophase I and between non-sister chromatids."
+      },
+      {
+        "label": "B",
+        "text": "In prophase I, non-sister chromatids of homologous chromosomes exchange genetic material, which increases genetic diversity among the gametes.",
+        "isCorrect": true,
+        "explanation": "Crossing over (recombination) happens in prophase I and produces new combinations of alleles."
+      },
+      {
+        "label": "C",
+        "text": "In anaphase I, the chromosomes break and join at random, which makes the gametes diploid and genetically identical.",
+        "isCorrect": false,
+        "explanation": "Gametes are haploid and are not genetically identical."
+      },
+      {
+        "label": "D",
+        "text": "In metaphase I, the two homologous chromosomes fuse into one chromosome, which doubles the number of chromosomes in the gametes.",
+        "isCorrect": false,
+        "explanation": "Homologous chromosomes do not fuse. They exchange segments."
+      }
+    ],
+    "explanation": "Crossing over between non-sister chromatids increases genetic diversity.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-12",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "medium",
+    "stem": "An organism has 8 chromosomes in its body cells (2n = 8). Ignoring crossing over, how many different combinations of maternal and paternal chromosomes are possible in its gametes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4",
+        "isCorrect": false,
+        "explanation": "This is the number of chromosomes in a gamete (the haploid number), not the number of possible combinations."
+      },
+      {
+        "label": "B",
+        "text": "8",
+        "isCorrect": false,
+        "explanation": "This is 2 x 4. Each pair of chromosomes assorts independently, so the number of combinations is 2 raised to the power of 4."
+      },
+      {
+        "label": "C",
+        "text": "256",
+        "isCorrect": false,
+        "explanation": "This is 16 x 16, the number of ways in which a gamete from each of two such parents could combine at fertilization, not the number of kinds of gamete."
+      },
+      {
+        "label": "D",
+        "text": "16",
+        "isCorrect": true,
+        "explanation": "Each of the 4 homologous pairs can line up in 2 ways at metaphase I, so the number of combinations is 2⁴ = 16."
+      }
+    ],
+    "explanation": "With n homologous pairs, independent assortment gives 2ⁿ possible combinations in the gametes.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-13",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "medium",
+    "stem": "Which of the following is a source of genetic variation among the offspring of sexually reproducing parents?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Replication of the DNA before meiosis, which makes identical copies of every chromosome in the parent cell",
+        "isCorrect": false,
+        "explanation": "Replication makes copies and does not by itself create new combinations."
+      },
+      {
+        "label": "B",
+        "text": "Random assortment of homologous chromosomes during meiosis and random fertilization of the gametes",
+        "isCorrect": true,
+        "explanation": "Crossing over, random assortment and fertilization all increase genetic variation."
+      },
+      {
+        "label": "C",
+        "text": "Production of the gametes of both parents at the same time, which makes the gametes have the same alleles",
+        "isCorrect": false,
+        "explanation": "Gametes differ in their alleles, which is a source of variation."
+      },
+      {
+        "label": "D",
+        "text": "Division of the somatic cells of the parent by mitosis, which makes genetically identical cells in its body",
+        "isCorrect": false,
+        "explanation": "Mitosis makes genetically identical cells, so it does not add variation to the gametes."
+      }
+    ],
+    "explanation": "Crossing over, random assortment and fertilization increase genetic variation.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-14",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "medium",
+    "stem": "Nondisjunction of one pair of homologous chromosomes occurs during meiosis I in a cell with 2n = 4. What are the chromosome numbers of the four gametes that result?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Two gametes with 4 chromosomes and two gametes with 0 chromosomes, because both pairs fail to separate",
+        "isCorrect": false,
+        "explanation": "Only one pair fails to separate, so two gametes have 3 chromosomes and two have 1."
+      },
+      {
+        "label": "B",
+        "text": "Two gametes with 2 chromosomes, one gamete with 3 chromosomes and one gamete with 1 chromosome",
+        "isCorrect": false,
+        "explanation": "This pattern results from nondisjunction in meiosis II. In meiosis I all four gametes are abnormal."
+      },
+      {
+        "label": "C",
+        "text": "Four gametes with 2 chromosomes each, because nondisjunction does not change the number of chromosomes",
+        "isCorrect": false,
+        "explanation": "Nondisjunction changes the number of chromosomes in the gametes."
+      },
+      {
+        "label": "D",
+        "text": "Two gametes with 3 chromosomes and two gametes with 1 chromosome, because one pair moves to the same pole",
+        "isCorrect": true,
+        "explanation": "Both homologs of one pair move to the same pole, so two gametes have an extra chromosome (n + 1 = 3) and two lack one (n - 1 = 1)."
+      }
+    ],
+    "explanation": "Nondisjunction in meiosis I makes all four gametes abnormal: two with n + 1 and two with n - 1.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-15",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "medium",
+    "stem": "Nondisjunction occurs for one chromosome during meiosis II. How many of the four gametes are expected to have the normal haploid number of chromosomes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Two, because only the cell in which the sister chromatids failed to separate makes two abnormal gametes",
+        "isCorrect": true,
+        "explanation": "Only one of the two meiosis II divisions goes wrong, so two gametes are normal, one is n + 1 and one is n - 1."
+      },
+      {
+        "label": "B",
+        "text": "One, because nondisjunction affects three of the gametes and leaves a single gamete with the normal number",
+        "isCorrect": false,
+        "explanation": "Nondisjunction in one cell in meiosis II affects two gametes and leaves two normal."
+      },
+      {
+        "label": "C",
+        "text": "None, because the failure of one chromosome to separate affects all four of the gametes that are made",
+        "isCorrect": false,
+        "explanation": "This is what happens in nondisjunction in meiosis I."
+      },
+      {
+        "label": "D",
+        "text": "Four, because meiosis II does not separate the chromosomes and so an error cannot change the number",
+        "isCorrect": false,
+        "explanation": "Meiosis II separates sister chromatids, and an error can change the number."
+      }
+    ],
+    "explanation": "Nondisjunction in meiosis II affects only the two gametes that come from one of the two cells.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-16",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "hard",
+    "stem": "A chromosome from the father carries alleles A and B. The homologous chromosome from the mother carries alleles a and b. Which statement correctly describes how crossing over could change the gametes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A crossover between the two genes could change the allele A into the allele a, so that it is the same as the maternal allele.",
+        "isCorrect": false,
+        "explanation": "Crossing over exchanges alleles between chromatids. It does not change one allele into another."
+      },
+      {
+        "label": "B",
+        "text": "A crossover between the two genes would make all of the gametes carry A and B, as in the chromosome of the father.",
+        "isCorrect": false,
+        "explanation": "Crossing over produces new combinations in some gametes. It does not make all gametes alike."
+      },
+      {
+        "label": "C",
+        "text": "A crossover between the two genes could take place only in the cells of the mother, because only her chromosomes have the b allele.",
+        "isCorrect": false,
+        "explanation": "Crossing over occurs in meiosis in both parents."
+      },
+      {
+        "label": "D",
+        "text": "A crossover between the two genes could produce a chromatid with alleles A and b, a combination that was not in either parent's chromosome.",
+        "isCorrect": true,
+        "explanation": "Crossing over exchanges segments between non-sister chromatids, which can make new combinations of alleles."
+      }
+    ],
+    "explanation": "Crossing over can combine alleles from the two homologs on one chromatid.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-17",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "hard",
+    "stem": "A person has trisomy 21 because they received two copies of chromosome 21 from one parent. Which statement best explains how this could have happened?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Mitosis occurred twice in the zygote after fertilization, so the cells have two copies of chromosome 21 that came from the same parent.",
+        "isCorrect": false,
+        "explanation": "The extra chromosome comes from a gamete that was not haploid."
+      },
+      {
+        "label": "B",
+        "text": "Crossing over occurred in prophase I, so the gamete had received a second copy of chromosome 21 from the same parent.",
+        "isCorrect": false,
+        "explanation": "Crossing over exchanges segments and does not add whole chromosomes."
+      },
+      {
+        "label": "C",
+        "text": "Nondisjunction occurred during meiosis in the parent, so a gamete had two copies of chromosome 21 and fused with a normal gamete.",
+        "isCorrect": true,
+        "explanation": "Incorrect separation of homologous chromosomes or sister chromatids makes gametes that are not haploid."
+      },
+      {
+        "label": "D",
+        "text": "Replication occurred twice in S phase, so the gamete had received four copies of every chromosome from the parent.",
+        "isCorrect": false,
+        "explanation": "Double replication would affect all of the chromosomes and not only chromosome 21."
+      }
+    ],
+    "explanation": "Nondisjunction produces gametes that are no longer haploid.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-18",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "medium",
+    "stem": "Meiosis I is sometimes called a reduction division. Which statement best explains this name?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It reduces the genetic variation of the gametes, because the cells make identical copies of the chromosomes of the parent.",
+        "isCorrect": false,
+        "explanation": "Meiosis increases genetic variation. It does not reduce it."
+      },
+      {
+        "label": "B",
+        "text": "It reduces the number of cells from four to two, because the first division combines the cells that were made earlier.",
+        "isCorrect": false,
+        "explanation": "Meiosis I produces two cells from one. It does not combine cells."
+      },
+      {
+        "label": "C",
+        "text": "It reduces the amount of DNA in each chromosome by half, because the chromatids of each chromosome are separated.",
+        "isCorrect": false,
+        "explanation": "The chromatids of each chromosome separate in meiosis II."
+      },
+      {
+        "label": "D",
+        "text": "It reduces the number of chromosomes in each cell from diploid to haploid, because the homologous chromosomes separate.",
+        "isCorrect": true,
+        "explanation": "The separation of homologs in meiosis I reduces the chromosome number by half."
+      }
+    ],
+    "explanation": "Meiosis I reduces the chromosome number from diploid to haploid.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-19",
+    "unit": "unit-5-heredity",
+    "topic": "meiosis-and-genetic-diversity",
+    "difficulty": "hard",
+    "stem": "Humans have 23 pairs of chromosomes. Ignoring crossing over, one person can make 8,388,608 genetically different gametes. About how many genetically different zygotes could two unrelated people produce when a gamete from each of them fuses?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "46, because a zygote has 46 chromosomes and so there are 46 different kinds of zygote",
+        "isCorrect": false,
+        "explanation": "The number of chromosomes in a zygote is not the number of combinations of chromosomes that are possible."
+      },
+      {
+        "label": "B",
+        "text": "About 17 million, because the 8,388,608 kinds of gamete from one parent are added to the 8,388,608 kinds from the other parent",
+        "isCorrect": false,
+        "explanation": "8,388,608 + 8,388,608 = 16,777,216. The kinds of gamete combine with each other, so the numbers are multiplied and not added."
+      },
+      {
+        "label": "C",
+        "text": "About 70 trillion, because each of the 8,388,608 kinds of gamete from one parent can combine with each kind from the other",
+        "isCorrect": true,
+        "explanation": "Random fertilization multiplies the numbers: 8,388,608 x 8,388,608 = 70,368,744,177,664, which is about 70 trillion."
+      },
+      {
+        "label": "D",
+        "text": "About 8.4 million, because the zygote has the same number of kinds of chromosome combinations as one of the gametes",
+        "isCorrect": false,
+        "explanation": "Each parent supplies one of 8,388,608 kinds of gamete, so the number of kinds of zygote is much greater than 8,388,608."
+      }
+    ],
+    "explanation": "Random fertilization of genetically different gametes greatly increases the number of possible genotypes.",
+    "conceptLink": "ap-biology/unit-5-heredity/meiosis-and-genetic-diversity",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-20",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "easy",
+    "stem": "A heterozygous pea plant (Aa) is crossed with another heterozygous plant (Aa). What is the probability that an offspring is homozygous recessive (aa)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1/2, because half of the alleles that each parent has are recessive alleles and so half of the offspring are recessive",
+        "isCorrect": false,
+        "explanation": "The offspring needs the recessive allele from both parents, so the two probabilities are multiplied."
+      },
+      {
+        "label": "B",
+        "text": "1/4, because the probability that each parent passes on the a allele is 1/2 and the two events are independent",
+        "isCorrect": true,
+        "explanation": "The probabilities of independent events are multiplied: 1/2 x 1/2 = 1/4."
+      },
+      {
+        "label": "C",
+        "text": "0, because a heterozygous parent shows the dominant phenotype and so cannot pass on the recessive allele to its offspring",
+        "isCorrect": false,
+        "explanation": "A heterozygous parent can pass on either allele, each with a probability of 1/2."
+      },
+      {
+        "label": "D",
+        "text": "3/4, because three of the four possible offspring show the recessive phenotype in the Punnett square of this cross",
+        "isCorrect": false,
+        "explanation": "Three fourths of the offspring show the dominant phenotype. One fourth are aa."
+      }
+    ],
+    "explanation": "The rule of multiplication gives the probability of two independent events: 1/2 x 1/2 = 1/4.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-21",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "easy",
+    "stem": "A test cross is performed with a pea plant that shows a dominant phenotype and has an unknown genotype. Half of the offspring show the dominant phenotype and half show the recessive phenotype. What is the genotype of the unknown plant?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Homozygous dominant, because the plant shows the dominant phenotype and so both of its alleles must be dominant alleles",
+        "isCorrect": false,
+        "explanation": "A homozygous dominant plant would have only offspring with the dominant phenotype in a test cross."
+      },
+      {
+        "label": "B",
+        "text": "It cannot be determined, because the cross used only one parent that has an unknown genotype and so the ratio is not useful",
+        "isCorrect": false,
+        "explanation": "The ratio of the phenotypes of the offspring shows the genotype of the unknown parent."
+      },
+      {
+        "label": "C",
+        "text": "Heterozygous, because a plant that is homozygous dominant would have produced only offspring that show the dominant phenotype",
+        "isCorrect": true,
+        "explanation": "A test cross is a cross with a homozygous recessive. Half and half indicates that the unknown parent makes two kinds of gametes."
+      },
+      {
+        "label": "D",
+        "text": "Homozygous recessive, because the offspring show the recessive phenotype and so the parent must have two recessive alleles",
+        "isCorrect": false,
+        "explanation": "The parent shows the dominant phenotype, so it has at least one dominant allele."
+      }
+    ],
+    "explanation": "A test cross with a homozygous recessive reveals the genotype of the individual with the dominant phenotype.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-22",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "Two pea plants that are heterozygous for two genes on different chromosomes (AaBb) are crossed. What fraction of the offspring is expected to show the dominant phenotype for both traits?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1/16, because only one of the sixteen boxes in the Punnett square shows the dominant phenotype for both of the traits",
+        "isCorrect": false,
+        "explanation": "1/16 is the fraction that is homozygous recessive for both genes (aabb)."
+      },
+      {
+        "label": "B",
+        "text": "3/4, because each plant has the dominant phenotype and so three fourths of the offspring show it for both of the traits",
+        "isCorrect": false,
+        "explanation": "3/4 is the fraction that shows the dominant phenotype for a single trait."
+      },
+      {
+        "label": "C",
+        "text": "3/16, because three of the sixteen boxes in the Punnett square show the dominant phenotype for both of the traits",
+        "isCorrect": false,
+        "explanation": "3/16 is the fraction that shows one dominant and one recessive phenotype, such as A_ bb."
+      },
+      {
+        "label": "D",
+        "text": "9/16, because 3/4 of the offspring show the dominant phenotype for each trait and the genes assort independently",
+        "isCorrect": true,
+        "explanation": "Independent probabilities are multiplied: 3/4 x 3/4 = 9/16."
+      }
+    ],
+    "explanation": "In a dihybrid cross AaBb x AaBb the phenotypes are in the ratio 9:3:3:1.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-23",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "Two parents are both heterozygous (Aa) for a gene. The dominant allele A produces the dominant phenotype. What is the probability that three children of these parents all show the dominant phenotype?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "27/64, because each child has a probability of 3/4 of showing the dominant phenotype and the births are independent events",
+        "isCorrect": true,
+        "explanation": "The probability of three independent events is the product: 3/4 x 3/4 x 3/4 = 27/64."
+      },
+      {
+        "label": "B",
+        "text": "9/16, because the probability of the dominant phenotype in each child is 3/4 and this is multiplied by the same probability twice",
+        "isCorrect": false,
+        "explanation": "This is (3/4)², the probability for two children and not for three."
+      },
+      {
+        "label": "C",
+        "text": "9/4, because the probability of 3/4 for each child is added for each of the three children in the family",
+        "isCorrect": false,
+        "explanation": "Probabilities of independent events are multiplied. A probability cannot be greater than 1."
+      },
+      {
+        "label": "D",
+        "text": "3/4, because the genotypes of the parents do not change and so the probability is the same as that for each child",
+        "isCorrect": false,
+        "explanation": "The probability that all three children show the dominant phenotype is lower than the probability for one child."
+      }
+    ],
+    "explanation": "The rule of multiplication gives the probability that independent events all occur.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-24",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "Two heterozygous parents (Aa x Aa) have an offspring. The offspring can be heterozygous because it receives A from the first parent and a from the second parent, or because it receives a from the first parent and A from the second parent. What is the probability that the offspring is heterozygous?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1/16, because the probabilities of 1/4 for the two ways to be heterozygous are multiplied by each other",
+        "isCorrect": false,
+        "explanation": "The two ways are mutually exclusive, so the probabilities are added and not multiplied."
+      },
+      {
+        "label": "B",
+        "text": "1/4, because each of the two ways to be heterozygous has a probability of 1/4 and so the answer is the same",
+        "isCorrect": false,
+        "explanation": "There are two different ways to be heterozygous, and their probabilities are added."
+      },
+      {
+        "label": "C",
+        "text": "1/2, because the probabilities of the two mutually exclusive ways to be heterozygous (1/4 each) are added",
+        "isCorrect": true,
+        "explanation": "The rule of addition applies to mutually exclusive events: 1/4 + 1/4 = 1/2."
+      },
+      {
+        "label": "D",
+        "text": "3/4, because three of the four possible genotypes of the offspring are different from the genotype of the parents",
+        "isCorrect": false,
+        "explanation": "Only the genotype Aa is heterozygous. Of the four boxes in the Punnett square two are Aa."
+      }
+    ],
+    "explanation": "The rule of addition gives the probability that one of several mutually exclusive events occurs.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-25",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "A student crosses pea plants and records the results in the table. Which statement is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "White is dominant, because two white parents in cross 2 had only white offspring and so white was transmitted to every offspring.",
+        "isCorrect": false,
+        "explanation": "A recessive trait also breeds true. All white offspring from two white parents is expected when white is recessive."
+      },
+      {
+        "label": "B",
+        "text": "Purple is dominant, because two purple parents in cross 1 had some white offspring, so the purple parents carried a hidden allele for white.",
+        "isCorrect": true,
+        "explanation": "Two parents that show the same phenotype and have some offspring with a different phenotype means that the trait of the parents is dominant and that the parents were heterozygous."
+      },
+      {
+        "label": "C",
+        "text": "Neither allele is dominant, because the offspring of cross 3 do not show the white phenotype of one of their two parents.",
+        "isCorrect": false,
+        "explanation": "When one phenotype appears in the offspring and the other is hidden, the phenotype that appears is dominant."
+      },
+      {
+        "label": "D",
+        "text": "Purple is recessive, because two purple parents in cross 1 had some offspring with a different color from the color of the parents.",
+        "isCorrect": false,
+        "explanation": "If purple was recessive, two purple parents would have only purple offspring."
+      }
+    ],
+    "explanation": "Two parents with the same phenotype that have offspring with a different phenotype are both heterozygous for a dominant trait.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Cross",
+        "Parent phenotypes",
+        "Offspring"
+      ],
+      "rows": [
+        [
+          "1",
+          "Purple x purple",
+          "Some offspring white"
+        ],
+        [
+          "2",
+          "White x white",
+          "All offspring white"
+        ],
+        [
+          "3",
+          "Purple x white",
+          "All offspring purple"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Results of three crosses of pea plants"
+    }
+  },
+  {
+    "id": "ap-bio-u5-mcq-26",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "Mendel observed that two genes that are on different chromosomes are inherited independently of each other. Which statement best explains this observation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The homologous pairs of chromosomes line up at random at the equator in metaphase I, so the alleles of one gene do not affect the alleles of the other in a gamete.",
+        "isCorrect": true,
+        "explanation": "The orientation of each homologous pair at metaphase I is random, so genes on different chromosomes assort independently."
+      },
+      {
+        "label": "B",
+        "text": "Each gene is replicated at a different time in the S phase, so the alleles of one gene are not passed on together with the alleles of another gene.",
+        "isCorrect": false,
+        "explanation": "The time of replication does not determine which alleles end up in a gamete."
+      },
+      {
+        "label": "C",
+        "text": "The alleles of different genes cross over in prophase II, so the alleles of one gene are always exchanged with the alleles of another gene.",
+        "isCorrect": false,
+        "explanation": "Crossing over happens between homologous chromosomes in prophase I and it does not explain the independence of genes on different chromosomes."
+      },
+      {
+        "label": "D",
+        "text": "The sister chromatids of every chromosome separate in meiosis I, so the alleles of the two genes are separated from each other in this division.",
+        "isCorrect": false,
+        "explanation": "Homologous chromosomes separate in meiosis I. Sister chromatids separate in meiosis II."
+      }
+    ],
+    "explanation": "Independent assortment of genes on different chromosomes results from the random alignment of homologous pairs in metaphase I.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-27",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "A monohybrid cross is expected to give a 3:1 ratio of phenotypes. Among 200 offspring, the student observes 140 with the dominant phenotype and 60 with the recessive phenotype. The chi-square value is 2.67. The critical value at p = 0.05 with 1 degree of freedom is 3.84. Which conclusion is best supported?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The null hypothesis cannot be rejected, because the chi-square value is lower than the critical value, so the difference could be due to chance.",
+        "isCorrect": true,
+        "explanation": "A chi-square value that is lower than the critical value means that there is no significant difference between the observed and the expected counts."
+      },
+      {
+        "label": "B",
+        "text": "The null hypothesis is rejected, because the observed counts are not exactly the same as the expected counts of 150 and 50.",
+        "isCorrect": false,
+        "explanation": "Some difference from the expected counts is expected because of chance. The test compares the chi-square value with the critical value."
+      },
+      {
+        "label": "C",
+        "text": "The null hypothesis is rejected, because the chi-square value is greater than zero, which means that the counts are different.",
+        "isCorrect": false,
+        "explanation": "A value greater than zero is expected from chance. The value is compared with the critical value."
+      },
+      {
+        "label": "D",
+        "text": "The null hypothesis is proved true, because the chi-square value is lower than the critical value, and so the ratio of 3:1 is shown to be correct for the cross.",
+        "isCorrect": false,
+        "explanation": "A chi-square test can fail to reject the null hypothesis. It cannot prove it."
+      }
+    ],
+    "explanation": "If chi-square is lower than the critical value, the null hypothesis is not rejected.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-28",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "In a second experiment, the student observes 130 offspring with the dominant phenotype and 70 with the recessive phenotype, and the expected counts are 150 and 50. The chi-square value is 10.67. The critical value at p = 0.05 with 1 degree of freedom is 3.84. Which conclusion is best supported?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The null hypothesis cannot be rejected, because the chi-square value is greater than the critical value, and so the difference between the counts must be due to chance alone.",
+        "isCorrect": false,
+        "explanation": "A value that is greater than the critical value leads to rejection of the null hypothesis."
+      },
+      {
+        "label": "B",
+        "text": "The experiment is invalid, because the chi-square value is greater than the chi-square value that was found in the first experiment.",
+        "isCorrect": false,
+        "explanation": "A chi-square test can reject a null hypothesis in one experiment and not in another."
+      },
+      {
+        "label": "C",
+        "text": "The null hypothesis cannot be rejected, because the observed counts of 130 and 70 are close to the expected counts of 150 and 50.",
+        "isCorrect": false,
+        "explanation": "The conclusion depends on the chi-square value and the critical value and not on how close the counts look."
+      },
+      {
+        "label": "D",
+        "text": "The null hypothesis is rejected, because the chi-square value is greater than the critical value, so the difference is unlikely to be due to chance alone.",
+        "isCorrect": true,
+        "explanation": "A chi-square value that is greater than the critical value means that the null hypothesis is rejected."
+      }
+    ],
+    "explanation": "If chi-square is greater than the critical value, the null hypothesis is rejected.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-29",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "easy",
+    "stem": "A student uses a chi-square test to compare the observed numbers of offspring of a dihybrid cross in four phenotype categories with the numbers that are expected. How many degrees of freedom should the student use to find the critical value?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4, because there are four phenotype categories and each category adds one degree of freedom to the test",
+        "isCorrect": false,
+        "explanation": "One is subtracted from the number of categories."
+      },
+      {
+        "label": "B",
+        "text": "1, because the null hypothesis is a single hypothesis about the ratio of the phenotypes of the offspring",
+        "isCorrect": false,
+        "explanation": "The degrees of freedom depend on the number of categories and not on the number of hypotheses."
+      },
+      {
+        "label": "C",
+        "text": "16, because the Punnett square of a dihybrid cross has sixteen boxes and each box is a degree of freedom",
+        "isCorrect": false,
+        "explanation": "The categories are the phenotypes, not the boxes of the Punnett square."
+      },
+      {
+        "label": "D",
+        "text": "3, because the degrees of freedom are the number of phenotype categories minus one, and 4 - 1 = 3",
+        "isCorrect": true,
+        "explanation": "The degrees of freedom for a chi-square test are the number of categories minus 1: 4 - 1 = 3."
+      }
+    ],
+    "explanation": "Degrees of freedom = number of categories - 1.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-30",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "hard",
+    "stem": "Two parents are both heterozygous for three genes on different chromosomes (AaBbCc x AaBbCc). What is the probability that an offspring has the genotype aa, shows the dominant phenotype for the second gene (B_), and has the genotype cc?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "5/4, because the probabilities of 1/4, 3/4 and 1/4 for the three genes are added to give the total for the offspring",
+        "isCorrect": false,
+        "explanation": "Probabilities for independent events that must all occur are multiplied. A probability cannot be greater than 1."
+      },
+      {
+        "label": "B",
+        "text": "3/64, because the probability for each gene is found separately (1/4, 3/4 and 1/4) and the three probabilities are multiplied",
+        "isCorrect": true,
+        "explanation": "The genes assort independently, so the probabilities are multiplied: 1/4 x 3/4 x 1/4 = 3/64."
+      },
+      {
+        "label": "C",
+        "text": "1/64, because the probability of the recessive genotype of each of the three genes is 1/4 and the probabilities are multiplied",
+        "isCorrect": false,
+        "explanation": "The second gene is required to show the dominant phenotype, which has a probability of 3/4 and not of 1/4."
+      },
+      {
+        "label": "D",
+        "text": "9/64, because two of the three genes have to show a recessive genotype and the other gene has to be dominant",
+        "isCorrect": false,
+        "explanation": "The dominant requirement applies to one gene (B_) and two genes need the recessive genotype: 1/4 x 3/4 x 1/4."
+      }
+    ],
+    "explanation": "Multiply the probabilities of independent events that must all occur.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-31",
+    "unit": "unit-5-heredity",
+    "topic": "mendelian-genetics",
+    "difficulty": "hard",
+    "stem": "A plant with the genotype AaBb is crossed with a plant with the genotype aabb. The two genes are on different chromosomes. What fraction of the offspring is expected to have the genotype aabb?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1/16, because the genotype aabb has a probability of 1/16 when two double heterozygotes are crossed with each other",
+        "isCorrect": false,
+        "explanation": "1/16 applies to a cross of two double heterozygotes. Here one parent is aabb and makes only ab gametes."
+      },
+      {
+        "label": "B",
+        "text": "1/4, because 1/2 of the gametes of the AaBb plant carry a, 1/2 carry b, and the aabb plant gives only a and b gametes",
+        "isCorrect": true,
+        "explanation": "The probability of an a gamete is 1/2 and the probability of a b gamete is 1/2, so 1/2 x 1/2 = 1/4."
+      },
+      {
+        "label": "C",
+        "text": "9/16, because the genes are on different chromosomes and so the offspring show the ratio of 9:3:3:1 in this cross",
+        "isCorrect": false,
+        "explanation": "The ratio 9:3:3:1 applies to a cross of two double heterozygotes."
+      },
+      {
+        "label": "D",
+        "text": "1/2, because the aabb plant gives only gametes that carry recessive alleles and so half of the offspring have its genotype",
+        "isCorrect": false,
+        "explanation": "Each gamete from the AaBb plant must also carry both recessive alleles, which has a probability of 1/4."
+      }
+    ],
+    "explanation": "In a test cross of a dihybrid, each of the four phenotype classes is expected at a frequency of 1/4.",
+    "conceptLink": "ap-biology/unit-5-heredity/mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-32",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "easy",
+    "stem": "When a snapdragon plant with red flowers is crossed with a snapdragon plant with white flowers, all of the offspring have pink flowers. Which statement best explains this result?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The allele for red flowers is completely dominant, so the heterozygous offspring have the red phenotype of one parent.",
+        "isCorrect": false,
+        "explanation": "With complete dominance, the heterozygotes would be red and not pink."
+      },
+      {
+        "label": "B",
+        "text": "The two alleles show incomplete dominance, so the heterozygous offspring have a phenotype that is intermediate between those of the parents.",
+        "isCorrect": true,
+        "explanation": "In incomplete dominance the phenotype of the heterozygote is a blend of the two homozygous phenotypes."
+      },
+      {
+        "label": "C",
+        "text": "The two alleles show codominance, so the heterozygous offspring have both red and white flowers on the same plant.",
+        "isCorrect": false,
+        "explanation": "In codominance, both alleles are fully expressed, as red and white patches. The offspring here are uniformly pink."
+      },
+      {
+        "label": "D",
+        "text": "The color of the flowers is controlled by many genes, so the offspring have a mixture of the phenotypes of the two parents in a continuous range.",
+        "isCorrect": false,
+        "explanation": "A cross of two true-breeding plants with a single gene shows the intermediate phenotype from incomplete dominance. It does not need many genes."
+      }
+    ],
+    "explanation": "Incomplete dominance produces a heterozygous phenotype that is intermediate between the two homozygous phenotypes.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-33",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "A man with blood type AB and a woman with blood type O have children. The alleles are IA, IB and i, where IA and IB are codominant and i is recessive. Which blood types are possible in their children?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Only type O, because the recessive allele of the mother is expressed in each of the children that she has with this father",
+        "isCorrect": false,
+        "explanation": "The alleles IA and IB are not recessive, so a child with one of them is not type O."
+      },
+      {
+        "label": "B",
+        "text": "Type A, type B, type AB and type O, because each parent can pass on either of its alleles to a child with equal probability",
+        "isCorrect": false,
+        "explanation": "The woman has type O, so she is ii and passes on only the i allele. Type AB and type O are not possible."
+      },
+      {
+        "label": "C",
+        "text": "Only type A and type B, because each child receives either IA or IB from the father and the allele i from the mother",
+        "isCorrect": true,
+        "explanation": "The father passes on IA or IB, and the mother passes on i, so the genotypes are IAi (type A) or IBi (type B)."
+      },
+      {
+        "label": "D",
+        "text": "Only type AB, because the father has type AB and the codominant alleles of the father are both expressed in all of the children",
+        "isCorrect": false,
+        "explanation": "Each child receives only one of the two alleles of the father."
+      }
+    ],
+    "explanation": "Codominant alleles are both expressed in the heterozygote; each child receives one allele from each parent.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-34",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "easy",
+    "stem": "A person with blood type AB has red blood cells that have both the A antigen and the B antigen on their surface. Which statement best explains this?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A new mutation occurred in the cells of the person, so that a new allele makes the second antigen in addition to the first one.",
+        "isCorrect": false,
+        "explanation": "A person with type AB inherited an allele for each of the two antigens from the parents. A new mutation is not needed."
+      },
+      {
+        "label": "B",
+        "text": "The alleles for A and B show incomplete dominance, so the antigens of the person are an intermediate form between A and B.",
+        "isCorrect": false,
+        "explanation": "In incomplete dominance an intermediate phenotype is seen. Here, the two separate antigens are both present."
+      },
+      {
+        "label": "C",
+        "text": "The alleles for A and B are codominant, so both alleles are fully expressed in a person who inherits one of each.",
+        "isCorrect": true,
+        "explanation": "Codominance means that both alleles of the heterozygote are expressed at the same time and not blended."
+      },
+      {
+        "label": "D",
+        "text": "The allele for A is dominant over the allele for B, so the antigen B is made only in the cells that do not make the antigen A.",
+        "isCorrect": false,
+        "explanation": "If one allele were dominant, only one antigen would be present."
+      }
+    ],
+    "explanation": "In codominance, both alleles are expressed in the heterozygote.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-35",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "Red-green color blindness is caused by a recessive allele on the X chromosome. A woman who is a carrier $(X^B X^b)$ and a man with normal color vision $(X^B Y)$ have a child. What is the probability that a son of this couple is color-blind?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "1/2, because the son receives his X chromosome from his mother and half of her X chromosomes carry the recessive allele",
+        "isCorrect": true,
+        "explanation": "A son receives the Y chromosome from his father and one X chromosome from his mother, who passes on $X^b$ with a probability of 1/2."
+      },
+      {
+        "label": "B",
+        "text": "1, because the recessive allele is on the X chromosome and every son has the X chromosome from the carrier mother",
+        "isCorrect": false,
+        "explanation": "The mother has one normal X chromosome and one with the recessive allele and so she passes on each with equal probability."
+      },
+      {
+        "label": "C",
+        "text": "0, because the father has normal color vision and so he cannot have a son with a recessive trait that is X-linked",
+        "isCorrect": false,
+        "explanation": "The son receives his X chromosome from his mother and not from his father."
+      },
+      {
+        "label": "D",
+        "text": "1/4, because the probability that one of the four possible children is a color-blind son is one fourth",
+        "isCorrect": false,
+        "explanation": "1/4 is the probability that a child (of either sex) is a color-blind son. The question asks about a son."
+      }
+    ],
+    "explanation": "A son receives his X chromosome from his mother; a carrier mother passes the recessive allele to half of her sons.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-36",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "Recessive X-linked disorders, such as hemophilia, are more common in males than in females. Which statement best explains this?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Males have only one X chromosome, so a single recessive allele on it is expressed, while a female needs two copies of the recessive allele.",
+        "isCorrect": true,
+        "explanation": "A male has one X chromosome and no second allele that can mask the recessive allele."
+      },
+      {
+        "label": "B",
+        "text": "Males have two X chromosomes, so the recessive alleles on both of them are more likely to be expressed than the alleles in females.",
+        "isCorrect": false,
+        "explanation": "Females have two X chromosomes and males have one X and one Y."
+      },
+      {
+        "label": "C",
+        "text": "Males receive the X chromosome from the father, so the fathers with the recessive allele always pass the disorder to their sons.",
+        "isCorrect": false,
+        "explanation": "A son receives his X chromosome from his mother and the Y chromosome from his father."
+      },
+      {
+        "label": "D",
+        "text": "Males make more of the proteins that are coded for by genes on the X chromosome, so the recessive alleles are expressed more strongly.",
+        "isCorrect": false,
+        "explanation": "The difference is in the number of copies of the allele and not in the amounts of protein that are made."
+      }
+    ],
+    "explanation": "Males express any allele on their single X chromosome.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-37",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "A mutation in a gene in the mitochondrial DNA causes a disorder. Which pattern of inheritance is expected?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Half of the sons of an affected mother have the mutation, and none of the daughters of an affected mother inherit it.",
+        "isCorrect": false,
+        "explanation": "The pattern of mitochondrial inheritance is the same in sons and daughters, as they all receive their mitochondria from the egg."
+      },
+      {
+        "label": "B",
+        "text": "Half of the children of each affected parent have the mutation, as the alleles of the two parents separate in meiosis in the usual way.",
+        "isCorrect": false,
+        "explanation": "Mitochondrial genes are not located on the nuclear chromosomes that segregate in meiosis."
+      },
+      {
+        "label": "C",
+        "text": "All of the children of an affected father have the mutation, and none of the children of an affected mother inherit it.",
+        "isCorrect": false,
+        "explanation": "The sperm contributes almost no mitochondria to the zygote."
+      },
+      {
+        "label": "D",
+        "text": "All of the children of an affected mother have the mutation, and none of the children of an affected father inherit it.",
+        "isCorrect": true,
+        "explanation": "Mitochondria in the zygote come from the egg, so mitochondrial DNA is inherited from the mother."
+      }
+    ],
+    "explanation": "Genes in mitochondrial and chloroplast DNA are inherited from the maternal parent.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-38",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "The heights of adults in a large population show a continuous range of values and the distribution is bell-shaped. Which statement best explains this variation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Height is controlled by genes on the Y chromosome, so the range in the population depends only on the number of males.",
+        "isCorrect": false,
+        "explanation": "Both males and females show a range of heights, and the Y chromosome is found only in males."
+      },
+      {
+        "label": "B",
+        "text": "Height is controlled by a single gene with two alleles, so the phenotypes are in a 3:1 ratio of tall to short people.",
+        "isCorrect": false,
+        "explanation": "A single gene with two alleles gives two discrete phenotypes and not a continuous range."
+      },
+      {
+        "label": "C",
+        "text": "Height is controlled by a single gene that has codominant alleles, so each person has both the tall and the short phenotype.",
+        "isCorrect": false,
+        "explanation": "Codominance does not produce a continuous range of values."
+      },
+      {
+        "label": "D",
+        "text": "Height is a polygenic trait, so many genes each add a small effect and the environment also influences the phenotype.",
+        "isCorrect": true,
+        "explanation": "Polygenic traits are controlled by many genes and show continuous variation."
+      }
+    ],
+    "explanation": "Polygenic inheritance and environmental effects produce continuous variation.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-39",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "The allele that causes sickle cell disease changes the structure of hemoglobin, and it leads to anemia, pain, damage to organs, and a greater resistance to malaria. Which term describes a single gene that affects several traits?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Incomplete dominance, because the effects on the traits are intermediate between the effects of the two homozygotes",
+        "isCorrect": false,
+        "explanation": "Incomplete dominance describes the phenotype of the heterozygote for one trait."
+      },
+      {
+        "label": "B",
+        "text": "Pleiotropy, because one gene has effects on several different characteristics of the organism",
+        "isCorrect": true,
+        "explanation": "Pleiotropy is the situation in which a single gene affects more than one trait."
+      },
+      {
+        "label": "C",
+        "text": "Polygenic inheritance, because the several traits that are affected are controlled by many genes in the organism",
+        "isCorrect": false,
+        "explanation": "Polygenic inheritance describes one trait that is influenced by many genes. This is the reverse of the situation here."
+      },
+      {
+        "label": "D",
+        "text": "Nondisjunction, because the several traits are affected by the failure of the chromosomes to separate in meiosis",
+        "isCorrect": false,
+        "explanation": "Sickle cell disease is caused by a change in the sequence of the gene and not by a change in the number of chromosomes."
+      }
+    ],
+    "explanation": "Pleiotropy: one gene affects several traits.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-40",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "hard",
+    "stem": "A heterozygous fly (AaBb, with A and B on one chromosome) is crossed with a fly that is homozygous recessive (aabb). The table shows the 1,000 offspring. What is the distance between the two genes in map units (1% recombination = 1 map unit)?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "10 map units, because 100 of the 1,000 offspring (55 + 45) are recombinants, and 100/1,000 is 10%",
+        "isCorrect": true,
+        "explanation": "Recombination frequency = recombinants / total offspring = 100/1,000 = 10%, which is 10 map units."
+      },
+      {
+        "label": "B",
+        "text": "50 map units, because the genes assort independently and so half of the offspring are recombinants",
+        "isCorrect": false,
+        "explanation": "If the genes assorted independently, 50% of the offspring would be recombinants. The data show only 10%."
+      },
+      {
+        "label": "C",
+        "text": "90 map units, because 900 of the 1,000 offspring show the parental combinations of the alleles",
+        "isCorrect": false,
+        "explanation": "900/1,000 is the frequency of the parental types. The map distance is based on the recombinants."
+      },
+      {
+        "label": "D",
+        "text": "5 map units, because only one of the two kinds of recombinant offspring is counted in the calculation of the distance",
+        "isCorrect": false,
+        "explanation": "Both kinds of recombinant offspring are counted: (55 + 45)/1,000."
+      }
+    ],
+    "explanation": "Map distance (in map units) = percent of recombinant offspring.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Offspring genotype",
+        "Number of offspring",
+        "Class"
+      ],
+      "rows": [
+        [
+          "AB",
+          "460",
+          "Parental"
+        ],
+        [
+          "ab",
+          "440",
+          "Parental"
+        ],
+        [
+          "Ab",
+          "55",
+          "Recombinant"
+        ],
+        [
+          "aB",
+          "45",
+          "Recombinant"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Offspring of a test cross of two linked genes"
+    }
+  },
+  {
+    "id": "ap-bio-u5-mcq-41",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "hard",
+    "stem": "Three linked genes (A, B and C) are on the same chromosome. The table shows the recombination frequencies between each pair of genes. What is the order of the genes on the chromosome?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A, B, C, because the distance between A and C is the sum of the distances between A and B and between B and C",
+        "isCorrect": true,
+        "explanation": "8 + 12 = 20, so B is between A and C."
+      },
+      {
+        "label": "B",
+        "text": "It cannot be determined, because the recombination frequencies do not show on which chromosome the genes are located",
+        "isCorrect": false,
+        "explanation": "The sum of the two shorter distances equals the longest distance, which shows the order of the genes."
+      },
+      {
+        "label": "C",
+        "text": "B, A, C, because the genes that are the furthest apart are the genes B and C and so they are at the ends",
+        "isCorrect": false,
+        "explanation": "The greatest distance is between A and C (20 map units), so those genes are at the two ends."
+      },
+      {
+        "label": "D",
+        "text": "A, C, B, because the genes that are the closest together are A and C",
+        "isCorrect": false,
+        "explanation": "A and C are the genes that are the furthest apart (20 map units)."
+      }
+    ],
+    "explanation": "The two genes that are the furthest apart are at the ends of the map, and the third gene is between them.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Pair of genes",
+        "Recombination frequency (%)"
+      ],
+      "rows": [
+        [
+          "A and B",
+          "8"
+        ],
+        [
+          "B and C",
+          "12"
+        ],
+        [
+          "A and C",
+          "20"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Recombination frequencies for three linked genes"
+    }
+  },
+  {
+    "id": "ap-bio-u5-mcq-42",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "hard",
+    "stem": "In fruit flies, the allele for white eyes is recessive and is on the X chromosome. A white-eyed female is crossed with a red-eyed male. Which phenotypes are expected in the offspring?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "All of the daughters have white eyes and all of the sons have red eyes, because each son receives his X chromosome from his father.",
+        "isCorrect": false,
+        "explanation": "A son receives the Y chromosome from his father and the X chromosome from his mother."
+      },
+      {
+        "label": "B",
+        "text": "All of the offspring have red eyes, because the allele for red eyes of the father is dominant and so it is expressed in both sexes.",
+        "isCorrect": false,
+        "explanation": "Sons receive their X chromosome from the mother, who has only the recessive allele, so the sons have white eyes."
+      },
+      {
+        "label": "C",
+        "text": "All of the daughters have red eyes and all of the sons have white eyes, because each son receives his X chromosome from his mother.",
+        "isCorrect": true,
+        "explanation": "Daughters receive the X chromosome with the dominant allele from the father, and sons receive the X chromosome with the recessive allele from the mother."
+      },
+      {
+        "label": "D",
+        "text": "Half of the daughters and half of the sons have white eyes, because each parent passes on one of its two alleles at random.",
+        "isCorrect": false,
+        "explanation": "The mother is homozygous recessive and so she passes only the recessive allele. The pattern depends on the sex of the offspring."
+      }
+    ],
+    "explanation": "In a cross of a recessive X-linked trait in the mother with the dominant trait in the father, the sons show the trait of the mother.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-43",
+    "unit": "unit-5-heredity",
+    "topic": "non-mendelian-genetics",
+    "difficulty": "medium",
+    "stem": "Two snapdragon plants with pink flowers (RW) are crossed. Red flowers (RR) and white flowers (WW) show incomplete dominance. What is the expected ratio of red to pink to white flowers among the offspring?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "All pink, because both of the parents have pink flowers and so all of their offspring have the same phenotype as the parents",
+        "isCorrect": false,
+        "explanation": "Heterozygous parents produce gametes with either allele, and so the three genotypes appear in the offspring."
+      },
+      {
+        "label": "B",
+        "text": "1 red : 2 pink : 1 white, because the phenotype ratio is the same as the genotype ratio when there is incomplete dominance",
+        "isCorrect": true,
+        "explanation": "The genotypes are in a ratio of 1 RR : 2 RW : 1 WW, and each genotype has its own phenotype."
+      },
+      {
+        "label": "C",
+        "text": "1 red : 1 pink : 1 white, because there are three phenotypes and each one is equally likely in the offspring of this cross",
+        "isCorrect": false,
+        "explanation": "The pink phenotype is expected to be twice as common as each of the others, as the RW genotype can form in two ways."
+      },
+      {
+        "label": "D",
+        "text": "3 red : 1 white, because the allele for red flowers is dominant over the allele for white flowers in the offspring",
+        "isCorrect": false,
+        "explanation": "This ratio is for complete dominance. In incomplete dominance the heterozygote is pink."
+      }
+    ],
+    "explanation": "With incomplete dominance, a cross of two heterozygotes gives a 1:2:1 ratio of both genotypes and phenotypes.",
+    "conceptLink": "ap-biology/unit-5-heredity/non-mendelian-genetics",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-44",
+    "unit": "unit-5-heredity",
+    "topic": "environmental-effects-on-phenotype",
+    "difficulty": "easy",
+    "stem": "Two genetically identical twins are raised in different homes. As adults, one is taller than the other. Which statement best explains this difference?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The phenotype of a person depends on the environment as well as on the genotype, so differences such as nutrition can result in different heights.",
+        "isCorrect": true,
+        "explanation": "Genetically identical individuals can differ in phenotype because of differences in the environment."
+      },
+      {
+        "label": "B",
+        "text": "The twins must have different DNA sequences, because genetically identical individuals always show the same phenotype in every kind of environment in which they live.",
+        "isCorrect": false,
+        "explanation": "The twins are genetically identical. The same genotype can give different phenotypes."
+      },
+      {
+        "label": "C",
+        "text": "The twins had nondisjunction in meiosis, because one of the twins has a different number of chromosomes from the number in the other.",
+        "isCorrect": false,
+        "explanation": "Identical twins arise from the division of one zygote and are not formed by separate gametes."
+      },
+      {
+        "label": "D",
+        "text": "Height is not influenced by genes, because the twins have a different height and so the genotype has no effect on the phenotype.",
+        "isCorrect": false,
+        "explanation": "Genes influence height and the environment influences it too."
+      }
+    ],
+    "explanation": "Phenotype is determined by genotype and by the environment.",
+    "conceptLink": "ap-biology/unit-5-heredity/environmental-effects-on-phenotype",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-45",
+    "unit": "unit-5-heredity",
+    "topic": "environmental-effects-on-phenotype",
+    "difficulty": "medium",
+    "stem": "Hydrangea plants with the same genotype produce blue flowers in acidic soil and pink flowers in basic soil. Which statement is best supported by this observation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The pH of the soil mutates the DNA of the plants, because the flower color is changed in the plants that grow in acidic soil.",
+        "isCorrect": false,
+        "explanation": "A change in flower color with the environment is not evidence for a change in the DNA sequence."
+      },
+      {
+        "label": "B",
+        "text": "The plants in the two soils have different alleles for flower color, because a single genotype can only give a single phenotype.",
+        "isCorrect": false,
+        "explanation": "A single genotype can give different phenotypes in different environments."
+      },
+      {
+        "label": "C",
+        "text": "The environment, in this case the pH of the soil, can influence the phenotype produced by a genotype.",
+        "isCorrect": true,
+        "explanation": "The same genotype gives different flower colors in different soils, so the environment affects the phenotype."
+      },
+      {
+        "label": "D",
+        "text": "The color of flowers is inherited only through the cytoplasm, because the soil changes the alleles that are present in the nucleus.",
+        "isCorrect": false,
+        "explanation": "Soil pH does not change the alleles in the nucleus."
+      }
+    ],
+    "explanation": "The same genotype can produce different phenotypes in different environments.",
+    "conceptLink": "ap-biology/unit-5-heredity/environmental-effects-on-phenotype",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-46",
+    "unit": "unit-5-heredity",
+    "topic": "environmental-effects-on-phenotype",
+    "difficulty": "medium",
+    "stem": "The fur of a Himalayan rabbit is white on most of its body and dark on its ears, feet and nose, which are cooler. Researchers shave a patch of fur on the back of a rabbit and keep the patch cold, and the new fur that grows is dark. Which statement best explains these observations?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cold caused a mutation that changed the genotype, because the dark fur that grew is different from the fur that was shaved.",
+        "isCorrect": false,
+        "explanation": "The cells of the rabbit have the same genotype in all places. The temperature affects how the genotype is expressed."
+      },
+      {
+        "label": "B",
+        "text": "The cells in the back of the rabbit lost the gene for the dark pigment, because the new fur from the cold patch has a different DNA sequence.",
+        "isCorrect": false,
+        "explanation": "The cold patch did not change the DNA sequence. The cells have the same genes in all of the body."
+      },
+      {
+        "label": "C",
+        "text": "The enzyme that produces the dark pigment is active only at lower temperatures, so the temperature of the tissue affects the phenotype.",
+        "isCorrect": true,
+        "explanation": "Temperature affects the activity of the pigment-making enzyme, which results in a change in the phenotype of the fur."
+      },
+      {
+        "label": "D",
+        "text": "The rabbit has different genes in the cooler parts of the body, because the dark fur is only found on the ears, feet and nose.",
+        "isCorrect": false,
+        "explanation": "All of the body cells of the rabbit have the same genes. The difference in phenotype results from the difference in temperature."
+      }
+    ],
+    "explanation": "Temperature affects the activity of an enzyme, and so it affects the phenotype produced by the same genotype.",
+    "conceptLink": "ap-biology/unit-5-heredity/environmental-effects-on-phenotype",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-47",
+    "unit": "unit-5-heredity",
+    "topic": "environmental-effects-on-phenotype",
+    "difficulty": "hard",
+    "stem": "Researchers grew plants of two genotypes at two temperatures and measured their heights. Which conclusion is best supported by the data in the graph?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The height of the plants is determined only by the genotype, because the plants of the two genotypes differ in height at 15 °C.",
+        "isCorrect": false,
+        "explanation": "The height of genotype 1 differs between the temperatures, so the environment also influences the phenotype."
+      },
+      {
+        "label": "B",
+        "text": "Temperature changes the height of genotype 1 a lot (about 67% taller) but of genotype 2 very little (about 7%), so the effect depends on the genotype.",
+        "isCorrect": true,
+        "explanation": "Genotype 1 increases from 12 to 20 cm, and genotype 2 increases from 14 to 15 cm."
+      },
+      {
+        "label": "C",
+        "text": "The height of the plants is determined only by the temperature, because the plants of genotype 1 are taller at 25 °C than at 15 °C, and so the genotype is not important.",
+        "isCorrect": false,
+        "explanation": "The two genotypes respond differently to the temperature, so the genotype is also important."
+      },
+      {
+        "label": "D",
+        "text": "Temperature has the same effect on both genotypes, because the plants of each genotype are taller at 25 °C than at 15 °C.",
+        "isCorrect": false,
+        "explanation": "The sizes of the increases are very different between the two genotypes."
+      }
+    ],
+    "explanation": "The phenotype depends on the genotype, on the environment, and on how the genotype responds to the environment.",
+    "conceptLink": "ap-biology/unit-5-heredity/environmental-effects-on-phenotype",
+    "reviewed": false,
+    "diagram": {
+      "type": "bar-graph",
+      "xLabel": "Genotype",
+      "yLabel": "Mean height of plants (cm)",
+      "yMin": 0,
+      "yMax": 25,
+      "categories": [
+        "Genotype 1",
+        "Genotype 2"
+      ],
+      "series": [
+        {
+          "values": [
+            12.0,
+            14.0
+          ],
+          "color": "blue",
+          "label": "15 °C"
+        },
+        {
+          "values": [
+            20.0,
+            15.0
+          ],
+          "color": "red",
+          "label": "25 °C"
+        }
+      ],
+      "altText": "Bar graph. Genotype 1: mean height 12 cm at 15 degrees Celsius and 20 cm at 25 degrees Celsius. Genotype 2: 14 cm at 15 degrees Celsius and 15 cm at 25 degrees Celsius."
+    }
+  },
+  {
+    "id": "ap-bio-u5-mcq-48",
+    "unit": "unit-5-heredity",
+    "topic": "environmental-effects-on-phenotype",
+    "difficulty": "medium",
+    "stem": "In some reptiles, eggs that are incubated at a lower temperature develop into males and eggs that are incubated at a higher temperature develop into females. Which statement best describes this observation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The sex of the offspring is determined only by the sex chromosomes that each egg receives, which are not affected by the environment.",
+        "isCorrect": false,
+        "explanation": "In these reptiles the temperature influences the sex of the offspring."
+      },
+      {
+        "label": "B",
+        "text": "The temperature has no effect on the offspring, because all of the eggs that a female lays have the same genotype as each other.",
+        "isCorrect": false,
+        "explanation": "Eggs with the same genotype can develop differently at different temperatures."
+      },
+      {
+        "label": "C",
+        "text": "The sex of the offspring is influenced by the temperature of the environment during development, which is an environmental effect on the phenotype.",
+        "isCorrect": true,
+        "explanation": "In these reptiles the temperature during incubation determines the sex of the offspring."
+      },
+      {
+        "label": "D",
+        "text": "The temperature changes the DNA sequence of the eggs, which results in new alleles for sex that are inherited by the offspring.",
+        "isCorrect": false,
+        "explanation": "Temperature affects how the genes are expressed during development. It does not change the DNA sequence in this way."
+      }
+    ],
+    "explanation": "The environment can determine a trait such as the sex of the offspring.",
+    "conceptLink": "ap-biology/unit-5-heredity/environmental-effects-on-phenotype",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-49",
+    "unit": "unit-5-heredity",
+    "topic": "environmental-effects-on-phenotype",
+    "difficulty": "hard",
+    "stem": "A student wants to know whether a difference in height between plants from a high-elevation population and plants from a low-elevation population results from genes or from the environment. Which experiment would best answer this question?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Compare the DNA of one plant from each population with the DNA of a plant from a third species that grows in the same area.",
+        "isCorrect": false,
+        "explanation": "The question is about the two populations, and a plant of a different species is not an appropriate comparison."
+      },
+      {
+        "label": "B",
+        "text": "Measure the heights of more plants in each of the two populations where they grow naturally and then compare the average heights.",
+        "isCorrect": false,
+        "explanation": "The plants grow in different environments, so differences might still result from the environment."
+      },
+      {
+        "label": "C",
+        "text": "Grow seeds from both populations together in the same garden under the same conditions, and then compare the heights of the plants.",
+        "isCorrect": true,
+        "explanation": "If the plants differ when they grow in the same environment, the difference is likely to be caused by genetic differences."
+      },
+      {
+        "label": "D",
+        "text": "Grow seeds from the high-elevation population in the garden and the seeds from the low-elevation population in their natural habitat.",
+        "isCorrect": false,
+        "explanation": "The two groups would be in different environments and so the experiment cannot separate the effects of the environment and the genotype."
+      }
+    ],
+    "explanation": "To separate genetic and environmental effects, compare organisms from different populations in the same environment.",
+    "conceptLink": "ap-biology/unit-5-heredity/environmental-effects-on-phenotype",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u5-mcq-50",
+    "unit": "unit-5-heredity",
+    "topic": "environmental-effects-on-phenotype",
+    "difficulty": "medium",
+    "stem": "The Arctic fox has a brown coat in summer and a white coat in winter. The change is triggered by the length of the day and the temperature. Which statement best explains this change?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Signals from the environment change which genes are expressed in the cells of the fox, so the same genotype produces different phenotypes in different seasons.",
+        "isCorrect": true,
+        "explanation": "Environmental cues can alter gene expression, and this changes the phenotype without a change in the DNA sequence."
+      },
+      {
+        "label": "B",
+        "text": "The fox has two different genotypes, one for each season, so the coat color is the result of the genotype that is present at that time.",
+        "isCorrect": false,
+        "explanation": "The fox has one genotype, which gives two phenotypes depending on the environment."
+      },
+      {
+        "label": "C",
+        "text": "The DNA sequence of the fox mutates each autumn and then mutates back in spring, so the genes for the color of the coat are changed twice each year.",
+        "isCorrect": false,
+        "explanation": "Gene expression changes with the environment while the DNA sequence stays the same."
+      },
+      {
+        "label": "D",
+        "text": "The change in the color of the coat is random, so the environment has no effect on the genes that are expressed in the fox.",
+        "isCorrect": false,
+        "explanation": "The change is triggered by signals in the environment, such as the length of the day, and it is not random."
+      }
+    ],
+    "explanation": "The environment can change gene expression and so change the phenotype.",
+    "conceptLink": "ap-biology/unit-5-heredity/environmental-effects-on-phenotype",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "slug": "ap-biology",
+  "name": "AP Biology",
+  "description": "The full course in eight units, from the chemistry of life and cells through energetics, cell communication, heredity and gene expression to natural selection and ecology, aligned to the College Board Course and Exam Description.",
+  "colorTheme": "teal",
+  "examFormat": {
+    "totalDurationMinutes": 180,
+    "sections": [
+      {
+        "type": "MCQ",
+        "questionCount": 60,
+        "durationMinutes": 90,
+        "scoreWeight": 0.5,
+        "calculatorAllowed": true
+      },
+      {
+        "type": "FRQ",
+        "questionCount": 6,
+        "durationMinutes": 90,
+        "scoreWeight": 0.5,
+        "calculatorAllowed": true,
+        "kinds": [
+          "RESULTS",
+          "RESULTS_GRAPH",
+          "INVESTIGATION",
+          "CONCEPT",
+          "MODEL",
+          "DATA"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "unit-1-chemistry-of-life",
+  "order": 1,
+  "name": "Chemistry of Life",
+  "weightingMin": 8,
+  "weightingMax": 11,
+  "topics": [
+    {
+      "slug": "structure-of-water-and-hydrogen-bonding",
+      "order": 1,
+      "name": "Structure of Water and Hydrogen Bonding"
+    },
+    {
+      "slug": "elements-of-life",
+      "order": 2,
+      "name": "Elements of Life"
+    },
+    {
+      "slug": "introduction-to-macromolecules",
+      "order": 3,
+      "name": "Introduction to Macromolecules"
+    },
+    {
+      "slug": "carbohydrates",
+      "order": 4,
+      "name": "Carbohydrates"
+    },
+    {
+      "slug": "lipids",
+      "order": 5,
+      "name": "Lipids"
+    },
+    {
+      "slug": "nucleic-acids",
+      "order": 6,
+      "name": "Nucleic Acids"
+    },
+    {
+      "slug": "proteins",
+      "order": 7,
+      "name": "Proteins"
+    }
+  ]
+}

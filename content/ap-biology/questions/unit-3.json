@@ -1,0 +1,2883 @@
+[
+  {
+    "id": "ap-bio-u3-mcq-1",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "easy",
+    "stem": "Which statement correctly describes how an enzyme affects a chemical reaction in a cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is used up as the reaction proceeds, so more enzyme must be made for every reaction that occurs.",
+        "isCorrect": false,
+        "explanation": "An enzyme is not consumed. It is released unchanged and can catalyze the same reaction again."
+      },
+      {
+        "label": "B",
+        "text": "It changes the reaction so that its products hold more energy than the substrates had at the start.",
+        "isCorrect": false,
+        "explanation": "An enzyme does not change the energy of the substrates or of the products. It changes only how quickly the reaction proceeds."
+      },
+      {
+        "label": "C",
+        "text": "It supplies the energy the reactants need to reach the transition state, using energy stored in the enzyme.",
+        "isCorrect": false,
+        "explanation": "An enzyme does not provide energy to a reaction. It lowers the energy barrier that the reactants must cross."
+      },
+      {
+        "label": "D",
+        "text": "It lowers the activation energy of the reaction, so the reaction proceeds faster.",
+        "isCorrect": true,
+        "explanation": "Enzymes are protein catalysts. By lowering the activation energy they let many more collisions between substrate molecules lead to product."
+      }
+    ],
+    "explanation": "Enzymes are biological catalysts: they speed up a reaction by lowering its activation energy without being used up.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-2",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "medium",
+    "stem": "A student states that an enzyme catalyzes a reaction only when the substrate is compatible with the enzyme's active site. What does it mean for a substrate to be compatible?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The substrate's shape and charge match the active site, so it can form an enzyme-substrate complex.",
+        "isCorrect": true,
+        "explanation": "Binding depends on both the shape and the charge distribution of the substrate and the active site, which is why most enzymes act on only one or a few substrates."
+      },
+      {
+        "label": "B",
+        "text": "The substrate is a protein built from the same amino acids as the enzyme, so the two can bind each other.",
+        "isCorrect": false,
+        "explanation": "Compatibility does not depend on the substrate's composition. Many enzymes act on carbohydrates, lipids or nucleic acids."
+      },
+      {
+        "label": "C",
+        "text": "The substrate carries the same charge as the active site, so the two are strongly attracted to each other.",
+        "isCorrect": false,
+        "explanation": "Like charges repel. Binding is favored when the charges and shapes are complementary, not identical."
+      },
+      {
+        "label": "D",
+        "text": "The substrate and the active site are about the same size, even if their charges are very different.",
+        "isCorrect": false,
+        "explanation": "Size alone is not enough. The charges of the substrate and the active site must also fit, or the substrate will not bind."
+      }
+    ],
+    "explanation": "The enzyme-substrate complex forms when the substrate's shape and charge are compatible with the active site.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-3",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "easy",
+    "stem": "The graph shows the free energy of the same reaction with and without an enzyme. By how much does the enzyme lower the activation energy of the reaction?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "30 kJ/mol",
+        "isCorrect": false,
+        "explanation": "This is the activation energy with the enzyme (60 - 30), which is also the energy released by the reaction (30 - 0). Neither is the amount the enzyme lowers the activation energy."
+      },
+      {
+        "label": "B",
+        "text": "90 kJ/mol",
+        "isCorrect": false,
+        "explanation": "This is the activation energy without the enzyme (120 - 30). The question asks for how much the enzyme lowers it, which is a difference between the two curves."
+      },
+      {
+        "label": "C",
+        "text": "60 kJ/mol",
+        "isCorrect": true,
+        "explanation": "The activation energy is the rise from the energy of the reactants (30) to the top of the curve: 120 - 30 = 90 kJ/mol without the enzyme and 60 - 30 = 30 kJ/mol with it. The enzyme lowers it by 90 - 30 = 60 kJ/mol."
+      },
+      {
+        "label": "D",
+        "text": "120 kJ/mol",
+        "isCorrect": false,
+        "explanation": "This is the height of the uncatalyzed peak. Activation energy is measured from the energy of the reactants up to the peak, not from zero."
+      }
+    ],
+    "explanation": "Subtract the energy of the reactants from each peak to find the two activation energies, then subtract them.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Free energy against reaction progress for one reaction with and without an enzyme. Both start at 30 and end at 0 kJ/mol. The uncatalyzed curve peaks at 120 and the catalyzed curve peaks at 60.",
+      "xLabel": "Reaction progress",
+      "yLabel": "Free energy (kJ/mol)",
+      "xMin": 0,
+      "xMax": 10,
+      "yMin": 0,
+      "yMax": 120,
+      "series": [
+        {
+          "label": "Without enzyme",
+          "points": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 5,
+              "y": 120
+            },
+            {
+              "x": 10,
+              "y": 0
+            }
+          ],
+          "color": "blue"
+        },
+        {
+          "label": "With enzyme",
+          "points": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 5,
+              "y": 60
+            },
+            {
+              "x": 10,
+              "y": 0
+            }
+          ],
+          "color": "red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-4",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "medium",
+    "stem": "Which conclusion about the enzyme-catalyzed reaction is best supported by the graph?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The energy released is the same with or without the enzyme, but the enzyme lowers the energy barrier.",
+        "isCorrect": true,
+        "explanation": "Both curves start at the same energy and end at the same energy, so the energy released is unchanged. Only the height of the peak, the activation energy, differs."
+      },
+      {
+        "label": "B",
+        "text": "The enzyme makes the products lower in energy than they would be without the enzyme, so more energy is released.",
+        "isCorrect": false,
+        "explanation": "Both curves end at the same level, so the products have the same energy either way."
+      },
+      {
+        "label": "C",
+        "text": "The enzyme raises the energy of the reactants, which makes it easier for the reaction to get started.",
+        "isCorrect": false,
+        "explanation": "Both curves start at the same energy. The enzyme does not change the energy of the reactants."
+      },
+      {
+        "label": "D",
+        "text": "The enzyme removes the activation energy completely, so the reaction no longer has an energy barrier.",
+        "isCorrect": false,
+        "explanation": "The catalyzed curve still rises to a peak. The enzyme lowers the activation energy; it does not remove it."
+      }
+    ],
+    "explanation": "An enzyme changes how fast a reaction proceeds by lowering the peak, not the overall energy change from reactants to products.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Free energy against reaction progress for one reaction with and without an enzyme. Both start at 30 and end at 0 kJ/mol. The uncatalyzed curve peaks at 120 and the catalyzed curve peaks at 60.",
+      "xLabel": "Reaction progress",
+      "yLabel": "Free energy (kJ/mol)",
+      "xMin": 0,
+      "xMax": 10,
+      "yMin": 0,
+      "yMax": 120,
+      "series": [
+        {
+          "label": "Without enzyme",
+          "points": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 5,
+              "y": 120
+            },
+            {
+              "x": 10,
+              "y": 0
+            }
+          ],
+          "color": "blue"
+        },
+        {
+          "label": "With enzyme",
+          "points": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 5,
+              "y": 60
+            },
+            {
+              "x": 10,
+              "y": 0
+            }
+          ],
+          "color": "red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-5",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "medium",
+    "stem": "A student investigates whether the concentration of the enzyme catalase affects the rate at which hydrogen peroxide is broken down. Four tubes receive the same volume of hydrogen peroxide and 0, 1, 2 or 3 mL of catalase solution, with water added so that every tube has the same total volume. The volume of oxygen gas collected in 60 seconds is recorded for each tube. What is the dependent variable?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The volume of catalase solution added to each tube",
+        "isCorrect": false,
+        "explanation": "This is the independent variable, the factor the student deliberately changes from tube to tube."
+      },
+      {
+        "label": "B",
+        "text": "The volume of oxygen gas collected in 60 seconds",
+        "isCorrect": true,
+        "explanation": "The dependent variable is the quantity that is measured and expected to respond to the change the student makes. Here that is the oxygen collected."
+      },
+      {
+        "label": "C",
+        "text": "The volume of hydrogen peroxide in each tube",
+        "isCorrect": false,
+        "explanation": "This is kept the same in every tube, so it is a controlled variable, not the measured outcome."
+      },
+      {
+        "label": "D",
+        "text": "The total volume of liquid in each tube",
+        "isCorrect": false,
+        "explanation": "The student adds water to keep this the same in every tube, so it is a controlled variable."
+      }
+    ],
+    "explanation": "Independent variable: what is changed. Dependent variable: what is measured. Controlled variables: what is held constant.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-6",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "medium",
+    "stem": "In the catalase investigation, one tube contains the hydrogen peroxide and 3 mL of water but no catalase. What is the purpose of this tube?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It provides a constant amount of enzyme in each trial, which the other tubes can be compared with.",
+        "isCorrect": false,
+        "explanation": "The tube contains no enzyme. Its purpose is to show what happens without it."
+      },
+      {
+        "label": "B",
+        "text": "It shows that hydrogen peroxide is the only substrate that catalase is able to act on.",
+        "isCorrect": false,
+        "explanation": "A tube without the enzyme cannot show anything about which substrates the enzyme acts on. That would need other substrates to be tested."
+      },
+      {
+        "label": "C",
+        "text": "It shows how much oxygen forms without the enzyme, so the effect of catalase can be identified.",
+        "isCorrect": true,
+        "explanation": "A control tube lacking only the factor being tested provides the baseline. Any oxygen in the other tubes beyond this baseline can be attributed to the catalase."
+      },
+      {
+        "label": "D",
+        "text": "It reduces random error in the volume measurements by averaging the results from all four tubes.",
+        "isCorrect": false,
+        "explanation": "Averaging is done with repeated trials. A control tube is not a replicate; it tests a different condition."
+      }
+    ],
+    "explanation": "A control lets the investigator attribute the results to the factor being tested, here the presence of the enzyme.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-7",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "medium",
+    "stem": "A mutation replaces an amino acid in the active site of an enzyme. The substrate is positively charged and is normally held at the active site by attraction to a negatively charged R group. The new amino acid has a positively charged R group. Which outcome is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The substrate binds more tightly, so the reaction rate increases because the substrate stays at the active site longer.",
+        "isCorrect": false,
+        "explanation": "Two positive charges repel each other. The change removes the attraction that held the substrate in place."
+      },
+      {
+        "label": "B",
+        "text": "The enzyme can now bind any positively charged molecule, so its activity increases.",
+        "isCorrect": false,
+        "explanation": "A change like this usually reduces the match with the original substrate. It does not make the enzyme work on every molecule with a positive charge."
+      },
+      {
+        "label": "C",
+        "text": "The reaction rate is unchanged, because the active site recognizes a substrate by its overall size only.",
+        "isCorrect": false,
+        "explanation": "Both shape and charge determine whether a substrate fits. Changing the charge of an active-site R group can change binding."
+      },
+      {
+        "label": "D",
+        "text": "The substrate binds less tightly or not at all, so the rate of the reaction decreases.",
+        "isCorrect": true,
+        "explanation": "The positively charged R group now repels the positively charged substrate, so the substrate is no longer held in the active site and the enzyme-substrate complex forms less often."
+      }
+    ],
+    "explanation": "The active site must be compatible with the substrate's shape and charge. Changing the charge of an active-site amino acid can weaken binding.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-8",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "medium",
+    "stem": "A student measures the initial rate of formation of a product from a substrate under three conditions, with the results shown. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The enzyme is used up as the reaction proceeds, which explains why the rate is so high in the second condition but not the third.",
+        "isCorrect": false,
+        "explanation": "The data say nothing about the enzyme being consumed. Enzymes are not used up in the reactions they catalyze."
+      },
+      {
+        "label": "B",
+        "text": "The reaction does not need a working enzyme, since the substrate is converted to product in all three conditions at some rate.",
+        "isCorrect": false,
+        "explanation": "The rates in the first and third conditions are very small compared with 15.8. The enzyme is needed for the high rate."
+      },
+      {
+        "label": "C",
+        "text": "Boiling made the enzyme more active, but the cooling that followed lowered the rate again almost to zero.",
+        "isCorrect": false,
+        "explanation": "The rate after boiling and cooling is 0.3, almost the rate with no enzyme at all. The enzyme did not become more active."
+      },
+      {
+        "label": "D",
+        "text": "The enzyme must keep its three-dimensional structure to speed up the reaction, since boiling returned the rate to about its value without enzyme.",
+        "isCorrect": true,
+        "explanation": "Boiling destroyed the enzyme's shape and so its ability to catalyze. The rate with boiled enzyme (0.3) is close to the rate with no enzyme (0.2)."
+      }
+    ],
+    "explanation": "Comparing the three conditions: the enzyme raises the rate a great deal, and boiling removes that effect.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Condition",
+        "Initial rate of product formation (µmol/min)"
+      ],
+      "rows": [
+        [
+          "Substrate only",
+          "0.2"
+        ],
+        [
+          "Substrate + enzyme",
+          "15.8"
+        ],
+        [
+          "Substrate + enzyme boiled for 10 min, then cooled",
+          "0.3"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Rate of product formation under three conditions"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-9",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "hard",
+    "stem": "The table shows the initial rate of an enzyme-catalyzed reaction at different enzyme concentrations. Substrate was present in excess in every trial. If the pattern continues, what rate would be expected at an enzyme concentration of 10 µg/mL?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "16.0 µmol/min",
+        "isCorrect": false,
+        "explanation": "This multiplies 10 by 1.6, which is the rate gain for each 2 µg/mL step, not for each 1 µg/mL."
+      },
+      {
+        "label": "B",
+        "text": "9.6 µmol/min",
+        "isCorrect": false,
+        "explanation": "This is the expected rate at 12 µg/mL (12 x 0.8). At 10 µg/mL the rate is 8.0 µmol/min."
+      },
+      {
+        "label": "C",
+        "text": "8.0 µmol/min",
+        "isCorrect": true,
+        "explanation": "The rate rises by 0.8 µmol/min for every 1 µg/mL, so at 10 µg/mL the rate is 10 x 0.8 = 8.0 µmol/min. With substrate in excess, more enzyme means more active sites and a proportionally higher rate."
+      },
+      {
+        "label": "D",
+        "text": "6.4 µmol/min",
+        "isCorrect": false,
+        "explanation": "This assumes the rate has leveled off at its value at 8 µg/mL. The rate would level off only if substrate ran short, but substrate is in excess."
+      }
+    ],
+    "explanation": "The data show a constant increase in rate per unit of enzyme, so the rate is proportional to enzyme concentration while substrate is in excess.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Enzyme concentration (µg/mL)",
+        "Initial rate (µmol/min)"
+      ],
+      "rows": [
+        [
+          "0",
+          "0.0"
+        ],
+        [
+          "2",
+          "1.6"
+        ],
+        [
+          "4",
+          "3.2"
+        ],
+        [
+          "6",
+          "4.8"
+        ],
+        [
+          "8",
+          "6.4"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Initial rate at five enzyme concentrations (substrate in excess)"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-10",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "hard",
+    "stem": "Enzyme 1 catalyzes reactions of both substrate X and substrate Y. Enzyme 2 catalyzes the reaction of substrate Y only. X and Y have very similar shapes, but X has an extra negatively charged group. Which statement best explains the difference between the enzymes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Enzyme 1 supplies more energy to its reactions than enzyme 2 does, so it can act on a wider range of substrates.",
+        "isCorrect": false,
+        "explanation": "Enzymes do not supply energy to reactions. They lower the activation energy."
+      },
+      {
+        "label": "B",
+        "text": "Enzyme 1's active site fits the shape and charge of both X and Y, but enzyme 2's active site fits only Y.",
+        "isCorrect": true,
+        "explanation": "Substrate specificity comes from the match between the substrate and the active site. The extra charged group on X prevents it from fitting the active site of enzyme 2."
+      },
+      {
+        "label": "C",
+        "text": "Enzyme 2 is not a protein, so it is able to act on only one kind of substrate, whereas enzyme 1 is.",
+        "isCorrect": false,
+        "explanation": "Enzymes are proteins (with rare exceptions), and being a protein does not limit an enzyme to one substrate. Specificity comes from the active site."
+      },
+      {
+        "label": "D",
+        "text": "Substrate Y has a lower activation energy than X, so both enzymes react with Y more easily than with X.",
+        "isCorrect": false,
+        "explanation": "This does not explain why enzyme 1 acts on X and enzyme 2 does not. That difference is due to what the active sites can bind."
+      }
+    ],
+    "explanation": "An enzyme acts on the substrates whose shape and charge fit its active site.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-11",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "easy",
+    "stem": "After an enzyme molecule has catalyzed a reaction, what is most likely to happen to that enzyme molecule?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is broken down into amino acids, which are recycled to make new enzymes.",
+        "isCorrect": false,
+        "explanation": "Enzymes are eventually broken down in cells, but not by catalyzing a reaction. Each use does not destroy the enzyme."
+      },
+      {
+        "label": "B",
+        "text": "It stays attached to the product, so it can no longer bind to a substrate.",
+        "isCorrect": false,
+        "explanation": "The product is released from the active site. Products that stay bound would stop the enzyme working after one reaction, which is not how catalysts act."
+      },
+      {
+        "label": "C",
+        "text": "It is converted into one of the products of the reaction.",
+        "isCorrect": false,
+        "explanation": "An enzyme is a protein catalyst, not a reactant. It is not converted into the products."
+      },
+      {
+        "label": "D",
+        "text": "It is released unchanged and can bind another substrate molecule.",
+        "isCorrect": true,
+        "explanation": "Enzymes are catalysts. They are not changed by the reactions they speed up, so one enzyme molecule can catalyze many reactions."
+      }
+    ],
+    "explanation": "An enzyme is a catalyst: it is not used up and can act on many substrate molecules.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-12",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "enzymes",
+    "difficulty": "easy",
+    "stem": "Which statement best describes the enzyme-substrate complex?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A temporary association in which the substrate is bound at the enzyme's active site.",
+        "isCorrect": true,
+        "explanation": "The substrate binds to the active site, the reaction occurs, and the product or products are released."
+      },
+      {
+        "label": "B",
+        "text": "A group of enzymes that act one after another in a metabolic pathway and pass products along.",
+        "isCorrect": false,
+        "explanation": "A series of enzymes in a pathway is not an enzyme-substrate complex, which involves a single enzyme and its substrate."
+      },
+      {
+        "label": "C",
+        "text": "A permanent bond between the enzyme and the product, which ends the activity of the enzyme.",
+        "isCorrect": false,
+        "explanation": "The products are released and the enzyme can be used again. The complex is temporary."
+      },
+      {
+        "label": "D",
+        "text": "The structure that forms when two substrate molecules bind to each other before an enzyme acts.",
+        "isCorrect": false,
+        "explanation": "The complex is formed between an enzyme and a substrate, not between two substrates."
+      }
+    ],
+    "explanation": "The enzyme-substrate complex is the temporary state in which the substrate is bound at the active site.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/enzymes",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-13",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "easy",
+    "stem": "What happens to an enzyme when it is denatured by a high temperature?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Its peptide bonds break, which separates the polypeptide into individual amino acids that cannot form an active site.",
+        "isCorrect": false,
+        "explanation": "Denaturation does not break peptide bonds. The order of amino acids stays the same, but the folding is lost."
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bonds that maintain its three-dimensional shape are disrupted, so the active site changes and substrate can no longer bind.",
+        "isCorrect": true,
+        "explanation": "Denaturation changes the shape of the protein without breaking the peptide bonds. Because the shape of the active site is lost, the enzyme cannot bind its substrate."
+      },
+      {
+        "label": "C",
+        "text": "Its active site becomes larger as the protein stretches out, so the enzyme can bind a wider range of substrates.",
+        "isCorrect": false,
+        "explanation": "A denatured active site does not become a better binding site for more substrates. The loss of shape usually means substrates cannot bind."
+      },
+      {
+        "label": "D",
+        "text": "Its substrate molecules are denatured by the heat as well, so they can no longer fit into any enzyme.",
+        "isCorrect": false,
+        "explanation": "Denaturation affects the enzyme protein. Substrates are not denatured by the same change."
+      }
+    ],
+    "explanation": "Denaturation is a loss of the three-dimensional structure of a protein, which removes its function.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-14",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "easy",
+    "stem": "Pepsin works in the stomach, where the pH is about 2, and its activity is very low at pH 8. Which statement best explains the low activity at pH 8?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A higher pH raises the activation energy of the reaction itself without affecting the enzyme.",
+        "isCorrect": false,
+        "explanation": "The pH affects the enzyme's structure, which is why its activity changes. The explanation does not rely on a change to the reaction itself."
+      },
+      {
+        "label": "B",
+        "text": "The change in pH alters the ionic and hydrogen bonds in pepsin, which changes the shape of its active site.",
+        "isCorrect": true,
+        "explanation": "Each enzyme has an optimal pH range. Outside it, changes in charge disrupt the bonds that hold the enzyme's shape."
+      },
+      {
+        "label": "C",
+        "text": "At pH 8 there are too few hydrogen ions, which pepsin needs as its substrate, for the reaction to occur.",
+        "isCorrect": false,
+        "explanation": "Pepsin's substrates are proteins, not hydrogen ions."
+      },
+      {
+        "label": "D",
+        "text": "All enzymes work best at acidic pH, so any enzyme would be slowed at pH 8, as it would be in the small intestine.",
+        "isCorrect": false,
+        "explanation": "Many enzymes have optimum pH values in the neutral or basic range. Each enzyme has its own optimum."
+      }
+    ],
+    "explanation": "Enzymes function best in a particular pH range. Outside it, the enzyme's structure is disrupted.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-15",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "medium",
+    "stem": "The graph shows the activity of an enzyme from human cells and an enzyme from a bacterium that lives in hot springs at different temperatures. Between 37 °C and 55 °C, the activity of the human enzyme decreases while the activity of the bacterial enzyme increases. Which statement best explains these observations?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Higher temperatures lower the activation energy of reactions in bacteria but raise it in human cells, so the rates differ.",
+        "isCorrect": false,
+        "explanation": "Temperature does not do this. The difference arises from how the enzymes' structures respond to heat."
+      },
+      {
+        "label": "B",
+        "text": "Hot-spring bacteria make more of their enzyme as the temperature rises, which the human cells cannot do, so it appears more active.",
+        "isCorrect": false,
+        "explanation": "The graph shows the activity of the enzymes at each temperature, not the amount of enzyme made. Making more enzyme is not shown."
+      },
+      {
+        "label": "C",
+        "text": "The bacterial enzyme has no activation energy, so heat does not affect it, while the human enzyme requires heat to work.",
+        "isCorrect": false,
+        "explanation": "Every enzyme-catalyzed reaction has an activation energy. The bacterial enzyme is affected by temperature too, as the graph shows."
+      },
+      {
+        "label": "D",
+        "text": "At 55 °C the human enzyme is denaturing, but the bacterial enzyme keeps its structure and collides with substrate more often than at 37 °C.",
+        "isCorrect": true,
+        "explanation": "A rise in temperature increases collisions between enzyme and substrate until the optimum is passed. Past its optimum an enzyme denatures. The two enzymes have different optimum temperatures."
+      }
+    ],
+    "explanation": "Each enzyme has an optimum temperature. Below it, higher temperature raises the rate; above it, denaturation lowers the rate.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Relative activity against temperature for two enzymes. The human enzyme peaks at 100 percent at 37 degrees and falls to near zero by 65. The bacterial enzyme peaks at 100 percent at 70 degrees.",
+      "xLabel": "Temperature (°C)",
+      "yLabel": "Relative enzyme activity (%)",
+      "xMin": 0,
+      "xMax": 100,
+      "yMin": 0,
+      "yMax": 100,
+      "series": [
+        {
+          "label": "Human enzyme",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 10,
+              "y": 15
+            },
+            {
+              "x": 20,
+              "y": 40
+            },
+            {
+              "x": 30,
+              "y": 80
+            },
+            {
+              "x": 37,
+              "y": 100
+            },
+            {
+              "x": 45,
+              "y": 55
+            },
+            {
+              "x": 55,
+              "y": 10
+            },
+            {
+              "x": 65,
+              "y": 0
+            },
+            {
+              "x": 100,
+              "y": 0
+            }
+          ],
+          "color": "blue"
+        },
+        {
+          "label": "Hot-spring bacterial enzyme",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 20,
+              "y": 5
+            },
+            {
+              "x": 40,
+              "y": 20
+            },
+            {
+              "x": 55,
+              "y": 45
+            },
+            {
+              "x": 70,
+              "y": 100
+            },
+            {
+              "x": 80,
+              "y": 60
+            },
+            {
+              "x": 90,
+              "y": 10
+            },
+            {
+              "x": 100,
+              "y": 0
+            }
+          ],
+          "color": "red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-16",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "medium",
+    "stem": "The table gives the relative activity of three digestive enzymes at three pH values. Pepsin is made in the stomach and passes into the small intestine, where the pH is about 8. Based on the data, what is most likely to happen to the activity of pepsin in the small intestine?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Its activity will stay the same, because enzymes in the digestive system function at any pH level.",
+        "isCorrect": false,
+        "explanation": "The data show that the activity of each enzyme depends strongly on pH."
+      },
+      {
+        "label": "B",
+        "text": "Its activity will fall to about 25 percent, as at pH 5, because the intestine is not much less acidic than the stomach.",
+        "isCorrect": false,
+        "explanation": "The 25 percent figure is pepsin's activity at pH 5. The small intestine is at about pH 8, where the table shows pepsin's activity is 0 percent."
+      },
+      {
+        "label": "C",
+        "text": "Its activity will fall to almost zero, because the higher pH changes the structure of the enzyme.",
+        "isCorrect": true,
+        "explanation": "The data show pepsin has no measurable activity at pH 8. A pH far from the optimum changes the enzyme's structure and so the active site."
+      },
+      {
+        "label": "D",
+        "text": "Its activity will increase, because the conditions in the small intestine are the optimum for trypsin.",
+        "isCorrect": false,
+        "explanation": "An enzyme's optimum pH is its own property. Conditions that suit trypsin do not suit pepsin."
+      }
+    ],
+    "explanation": "Each enzyme has an optimum pH. Pepsin is active at low pH and is inactive at pH 8.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Enzyme",
+        "pH 2",
+        "pH 5",
+        "pH 8"
+      ],
+      "rows": [
+        [
+          "Pepsin",
+          "100",
+          "25",
+          "0"
+        ],
+        [
+          "Trypsin",
+          "0",
+          "10",
+          "100"
+        ],
+        [
+          "Salivary amylase",
+          "0",
+          "60",
+          "30"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Relative activity (%) at three pH values"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-17",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "medium",
+    "stem": "Samples of the same enzyme were exposed to different temperatures for 5 minutes and then returned to 25 °C, where their activity was measured. Which statement best explains the difference between the two heated samples?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Enzymes are permanently denatured by any temperature above 25 °C, so the sample heated to 50 °C should also have lost its activity.",
+        "isCorrect": false,
+        "explanation": "The data show the sample heated to 50 °C kept most of its activity. Not all denaturation is permanent."
+      },
+      {
+        "label": "B",
+        "text": "The sample heated to 90 °C lost activity because its substrate was used up during the heating, but the other sample's was not.",
+        "isCorrect": false,
+        "explanation": "Substrate was not part of the heating treatment. The loss of activity points to a change in the enzyme."
+      },
+      {
+        "label": "C",
+        "text": "Heating to 50 °C disrupted the enzyme's structure only temporarily and it refolded on cooling, but heating to 90 °C caused lasting changes.",
+        "isCorrect": true,
+        "explanation": "In some cases denaturation is reversible and the enzyme regains its shape and activity. Greater disruption can leave the enzyme permanently unable to fold correctly."
+      },
+      {
+        "label": "D",
+        "text": "Heating at 50 °C increased the amount of enzyme in the sample, which explains why its activity stayed high after the heating.",
+        "isCorrect": false,
+        "explanation": "Heating does not make more enzyme. The activity stayed high because the enzyme returned to its active structure."
+      }
+    ],
+    "explanation": "Denaturation can be reversible when the disruption is small, and irreversible when the structure is severely altered.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Treatment of enzyme sample",
+        "Activity at 25 °C (% of control)"
+      ],
+      "rows": [
+        [
+          "None (control, kept at 25 °C)",
+          "100"
+        ],
+        [
+          "50 °C for 5 min, then returned to 25 °C",
+          "92"
+        ],
+        [
+          "90 °C for 5 min, then returned to 25 °C",
+          "4"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Enzyme activity after heating"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-18",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "medium",
+    "stem": "The rate of a reaction catalyzed by an enzyme increases as the temperature rises from 10 °C to 30 °C. Which statement best explains this increase?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Higher temperature lowers the activation energy of the reaction by more than the enzyme itself does in the cell.",
+        "isCorrect": false,
+        "explanation": "Temperature does not lower activation energy. It increases the rate by raising the frequency of collisions."
+      },
+      {
+        "label": "B",
+        "text": "Higher temperature increases the average speed of molecules, so enzyme and substrate collide more often.",
+        "isCorrect": true,
+        "explanation": "More frequent collisions between enzymes and substrates mean more enzyme-substrate complexes form per second, until the temperature rises past the optimum."
+      },
+      {
+        "label": "C",
+        "text": "Higher temperature makes the enzyme produce more substrate, so the reaction has more reactants available.",
+        "isCorrect": false,
+        "explanation": "Enzymes do not make substrate. The substrate concentration is unchanged by the temperature."
+      },
+      {
+        "label": "D",
+        "text": "Higher temperature makes the active site larger, so more substrate molecules can be bound at the same time.",
+        "isCorrect": false,
+        "explanation": "The active site's shape is not enlarged by heating. Heating beyond the optimum would disrupt it."
+      }
+    ],
+    "explanation": "Below the optimum temperature, a rise in temperature raises the rate because molecules collide more often.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-19",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "hard",
+    "stem": "The table shows the concentration of product over time in an enzyme-catalyzed reaction. What is the average rate of product formation between 4 and 8 minutes?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.0 mM/min",
+        "isCorrect": false,
+        "explanation": "This is the change in concentration (8.0 - 6.0) without dividing by the elapsed time."
+      },
+      {
+        "label": "B",
+        "text": "0.50 mM/min",
+        "isCorrect": true,
+        "explanation": "Rate is the change in product concentration divided by the change in time: (8.0 - 6.0) mM / (8 - 4) min = 0.50 mM/min."
+      },
+      {
+        "label": "C",
+        "text": "1.0 mM/min",
+        "isCorrect": false,
+        "explanation": "This divides the final concentration by the total time (8.0 / 8), which gives the average over the whole experiment rather than between 4 and 8 minutes."
+      },
+      {
+        "label": "D",
+        "text": "1.5 mM/min",
+        "isCorrect": false,
+        "explanation": "This is the rate over the first 4 minutes (6.0 / 4). The question asks about 4 to 8 minutes, when the rate has slowed."
+      }
+    ],
+    "explanation": "Average rate = change in product concentration / change in time over the interval asked about.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Time (min)",
+        "Product concentration (mM)"
+      ],
+      "rows": [
+        [
+          "0",
+          "0.0"
+        ],
+        [
+          "2",
+          "3.4"
+        ],
+        [
+          "4",
+          "6.0"
+        ],
+        [
+          "6",
+          "7.6"
+        ],
+        [
+          "8",
+          "8.0"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Product formed in an enzyme-catalyzed reaction"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-20",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "medium",
+    "stem": "Using the data in the table, which statement best explains why the rate of product formation decreases as the reaction proceeds?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The temperature of the reaction mixture falls steadily, which lowers the rate of the enzyme in the later minutes.",
+        "isCorrect": false,
+        "explanation": "Nothing in the data suggests a falling temperature. The pattern is what is expected when substrate is used up."
+      },
+      {
+        "label": "B",
+        "text": "As substrate is used up and product builds up, fewer enzyme-substrate complexes form and the reaction slows.",
+        "isCorrect": true,
+        "explanation": "The relative concentrations of substrate and product affect how efficiently an enzyme-catalyzed reaction proceeds. As substrate falls, collisions with enzyme that lead to product become less frequent."
+      },
+      {
+        "label": "C",
+        "text": "The activation energy of the reaction increases over time, so fewer collisions lead to product in the later minutes.",
+        "isCorrect": false,
+        "explanation": "Activation energy is a property of the reaction and the enzyme. It does not rise as the reaction proceeds."
+      },
+      {
+        "label": "D",
+        "text": "The enzyme is consumed as it catalyzes the reaction, so less enzyme is available later in the reaction to bind substrate.",
+        "isCorrect": false,
+        "explanation": "Enzymes are not consumed by the reactions they catalyze."
+      }
+    ],
+    "explanation": "A reaction slows as its substrate is depleted and its product builds up.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Time (min)",
+        "Product concentration (mM)"
+      ],
+      "rows": [
+        [
+          "0",
+          "0.0"
+        ],
+        [
+          "2",
+          "3.4"
+        ],
+        [
+          "4",
+          "6.0"
+        ],
+        [
+          "6",
+          "7.6"
+        ],
+        [
+          "8",
+          "8.0"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Product formed in an enzyme-catalyzed reaction"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-21",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "medium",
+    "stem": "A molecule similar in structure to an enzyme's substrate is added to an enzyme-catalyzed reaction, and the rate of the reaction decreases. When the concentration of substrate is greatly increased, the rate returns to nearly its original value. Which statement best explains these observations?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The molecule denatures the enzyme, and the extra substrate causes the enzyme to refold into its active shape.",
+        "isCorrect": false,
+        "explanation": "Denaturation does not explain the restoration of the rate by substrate. Substrate does not refold enzymes."
+      },
+      {
+        "label": "B",
+        "text": "The molecule is a noncompetitive inhibitor that binds to an allosteric site and permanently changes the enzyme's structure.",
+        "isCorrect": false,
+        "explanation": "A noncompetitive inhibitor binds somewhere other than the active site, and extra substrate cannot overcome its effect."
+      },
+      {
+        "label": "C",
+        "text": "The molecule is a competitive inhibitor that binds the active site reversibly, so extra substrate competes with it for the active sites.",
+        "isCorrect": true,
+        "explanation": "A competitive inhibitor resembles the substrate and binds the active site reversibly. A high substrate concentration makes it much more likely that the substrate occupies the active sites."
+      },
+      {
+        "label": "D",
+        "text": "The molecule lowers the activation energy of the reaction, and the extra substrate raises it again to the original level.",
+        "isCorrect": false,
+        "explanation": "A competitive inhibitor does not alter the activation energy. It blocks access to the active site."
+      }
+    ],
+    "explanation": "Competitive inhibitors bind the active site reversibly, so adding more substrate can overcome them.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-22",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "hard",
+    "stem": "The graph shows the rate of an enzyme-catalyzed reaction at different substrate concentrations with no inhibitor and with each of two inhibitors. Which statement is best supported by the graph?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Inhibitor Y is more likely noncompetitive, because adding substrate does not restore the maximum rate seen with no inhibitor.",
+        "isCorrect": true,
+        "explanation": "A noncompetitive inhibitor binds at an allosteric site and changes the enzyme's activity, so extra substrate cannot overcome it. The rate with Y stays near 50."
+      },
+      {
+        "label": "B",
+        "text": "Inhibitor Y is a competitive inhibitor, because it lowers the rate at the low substrate concentrations shown.",
+        "isCorrect": false,
+        "explanation": "Competitive inhibition can be overcome by high substrate concentration. The rate with Y does not recover."
+      },
+      {
+        "label": "C",
+        "text": "The two inhibitors act in the same way, because both lower the rate at every substrate concentration shown on the graph.",
+        "isCorrect": false,
+        "explanation": "They differ at high substrate concentration, where the rate with X nearly reaches the maximum but the rate with Y does not."
+      },
+      {
+        "label": "D",
+        "text": "Inhibitor X is more likely a noncompetitive inhibitor, because it lowers the rate at low substrate concentrations.",
+        "isCorrect": false,
+        "explanation": "Both types of inhibitor lower the rate at low substrate concentration. The rate with X approaches the maximum at high substrate, as expected for a competitive inhibitor."
+      }
+    ],
+    "explanation": "Competitive inhibition can be overcome by more substrate; noncompetitive inhibition cannot.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Reaction rate against substrate concentration. Without inhibitor the rate levels off near 100. With inhibitor X the rate is lower at low concentrations but reaches about 97 at 40 mM. With inhibitor Y the rate levels off near 50.",
+      "xLabel": "Substrate concentration (mM)",
+      "yLabel": "Reaction rate (µmol/min)",
+      "xMin": 0,
+      "xMax": 40,
+      "yMin": 0,
+      "yMax": 100,
+      "series": [
+        {
+          "label": "No inhibitor",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 5,
+              "y": 60
+            },
+            {
+              "x": 10,
+              "y": 85
+            },
+            {
+              "x": 20,
+              "y": 95
+            },
+            {
+              "x": 40,
+              "y": 100
+            }
+          ],
+          "color": "blue"
+        },
+        {
+          "label": "Inhibitor X",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 5,
+              "y": 25
+            },
+            {
+              "x": 10,
+              "y": 50
+            },
+            {
+              "x": 20,
+              "y": 80
+            },
+            {
+              "x": 40,
+              "y": 97
+            }
+          ],
+          "color": "green"
+        },
+        {
+          "label": "Inhibitor Y",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 5,
+              "y": 30
+            },
+            {
+              "x": 10,
+              "y": 42
+            },
+            {
+              "x": 20,
+              "y": 48
+            },
+            {
+              "x": 40,
+              "y": 50
+            }
+          ],
+          "color": "red"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-23",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "medium",
+    "stem": "The graph shows that the rate of an enzyme-catalyzed reaction rises as the substrate concentration increases, and then levels off. Which statement best explains why the rate levels off at high substrate concentrations?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Nearly all the active sites are occupied at high substrate concentration, so more substrate cannot increase the rate.",
+        "isCorrect": true,
+        "explanation": "When the enzyme is saturated, each active site is already working as fast as it can, so extra substrate cannot be bound."
+      },
+      {
+        "label": "B",
+        "text": "The high concentration of substrate denatures the enzyme, so no further product can form at any concentration.",
+        "isCorrect": false,
+        "explanation": "The graph shows the rate leveling off, not falling. Denaturation would lower the rate."
+      },
+      {
+        "label": "C",
+        "text": "The enzyme molecules are converted into product once the substrate concentration becomes high, so less enzyme remains.",
+        "isCorrect": false,
+        "explanation": "Enzymes are catalysts and are not converted into the products."
+      },
+      {
+        "label": "D",
+        "text": "The activation energy of the reaction rises as more substrate is added, which cancels the extra substrate.",
+        "isCorrect": false,
+        "explanation": "Substrate concentration does not change the activation energy."
+      }
+    ],
+    "explanation": "Enzyme-catalyzed reaction rates level off when the enzyme is saturated with substrate.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Reaction rate rises steeply with substrate concentration and levels off near 100 micromoles per minute above about 20 millimolar.",
+      "xLabel": "Substrate concentration (mM)",
+      "yLabel": "Reaction rate (µmol/min)",
+      "xMin": 0,
+      "xMax": 40,
+      "yMin": 0,
+      "yMax": 100,
+      "series": [
+        {
+          "label": "No inhibitor",
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 5,
+              "y": 60
+            },
+            {
+              "x": 10,
+              "y": 85
+            },
+            {
+              "x": 20,
+              "y": 95
+            },
+            {
+              "x": 40,
+              "y": 100
+            }
+          ],
+          "color": "blue"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-24",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "hard",
+    "stem": "A student heats an enzyme to 60 °C and finds that its activity at that temperature is zero. The student claims that the enzyme has been denatured and cannot regain activity. Which additional investigation would best test whether the loss of activity is irreversible?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Measuring the activity of the enzyme at 80 °C to see whether the activity falls even further.",
+        "isCorrect": false,
+        "explanation": "This would show how activity changes at a higher temperature, not whether the loss at 60 °C can be reversed."
+      },
+      {
+        "label": "B",
+        "text": "Adding much more substrate at 60 °C and measuring whether the rate of the reaction increases.",
+        "isCorrect": false,
+        "explanation": "Extra substrate overcomes competitive inhibition or low substrate concentration, but it cannot show whether the enzyme's structure can recover."
+      },
+      {
+        "label": "C",
+        "text": "Cooling a sample of the heated enzyme to its optimum temperature and measuring whether its activity returns.",
+        "isCorrect": true,
+        "explanation": "If the loss of activity were due to reversible changes in structure, activity would be restored on cooling. If no activity returns, the denaturation was irreversible."
+      },
+      {
+        "label": "D",
+        "text": "Repeating the measurement at 60 °C with the same enzyme sample to see whether the result is the same.",
+        "isCorrect": false,
+        "explanation": "Repeating the measurement at 60 °C only checks that the result can be reproduced. It does not test whether the change is reversible."
+      }
+    ],
+    "explanation": "To test reversibility, return the enzyme to favorable conditions and see whether activity is restored.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-25",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "hard",
+    "stem": "In a metabolic pathway, enzyme 1 converts substance A to B, enzyme 2 converts B to C, and enzyme 3 converts C to D. A drug that competitively inhibits enzyme 2 is added to cells that are making D. Which prediction about the concentrations of B, C and D is most consistent with the effect of the drug?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The concentration of B will increase, and the concentrations of C and D will decrease.",
+        "isCorrect": true,
+        "explanation": "With enzyme 2 inhibited, B is converted to C more slowly, so B builds up. Less C is made, and so less D is made."
+      },
+      {
+        "label": "B",
+        "text": "The concentration of B will decrease, and the concentrations of C and D will increase.",
+        "isCorrect": false,
+        "explanation": "Inhibiting enzyme 2 slows the conversion of B to C, so B would accumulate rather than fall."
+      },
+      {
+        "label": "C",
+        "text": "The concentrations of B, C and D will all increase, because the drug causes the pathway to run backward.",
+        "isCorrect": false,
+        "explanation": "A competitive inhibitor slows a reaction. It does not reverse the direction of a pathway."
+      },
+      {
+        "label": "D",
+        "text": "The concentration of B will not change, but the concentration of D will increase.",
+        "isCorrect": false,
+        "explanation": "B is the substrate of the inhibited enzyme. D is made from C, which is now being produced more slowly."
+      }
+    ],
+    "explanation": "Inhibiting one enzyme of a pathway causes its substrate to accumulate and its products to decrease.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-26",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "environmental-impacts-on-enzyme-function",
+    "difficulty": "hard",
+    "stem": "The graph shows the mean rate of an enzyme-catalyzed reaction at four temperatures. Each bar is the mean of five trials, and the error bars show plus or minus 2 standard errors of the mean, which is approximately a 95 percent confidence interval. Which conclusion is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The rate at 37 °C is higher than at 30 °C, but the data do not support a difference between 37 °C and 50 °C.",
+        "isCorrect": true,
+        "explanation": "The error bars for 30 °C and 37 °C do not overlap, so that difference is unlikely to be due to chance. The error bars for 37 °C and 50 °C overlap, so the data do not support a real difference."
+      },
+      {
+        "label": "B",
+        "text": "The rates at 20 °C and 30 °C are not different, because both are lower than the rates at 37 °C and at 50 °C.",
+        "isCorrect": false,
+        "explanation": "The error bars for 20 °C and 30 °C do not overlap, so these two rates probably differ."
+      },
+      {
+        "label": "C",
+        "text": "The enzyme is denatured at 50 °C, because its mean rate is lower than the mean rate at 37 °C.",
+        "isCorrect": false,
+        "explanation": "The data do not show that the rate at 50 °C is lower than the rate at 37 °C, so they do not support denaturation at 50 °C."
+      },
+      {
+        "label": "D",
+        "text": "The rate at 50 °C is lower than the rate at 37 °C, because the mean value at 50 °C is the smaller one.",
+        "isCorrect": false,
+        "explanation": "A smaller mean is not enough. The error bars overlap, so the difference may be due to chance variation."
+      }
+    ],
+    "explanation": "When 95 percent confidence intervals overlap, the data do not support a real difference between the means.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/environmental-impacts-on-enzyme-function",
+    "reviewed": false,
+    "diagram": {
+      "type": "bar-graph",
+      "xLabel": "Temperature",
+      "yLabel": "Mean reaction rate (µmol/min)",
+      "yMin": 0,
+      "yMax": 16,
+      "categories": [
+        "20 °C",
+        "30 °C",
+        "37 °C",
+        "50 °C"
+      ],
+      "series": [
+        {
+          "values": [
+            3.1,
+            6.2,
+            9.8,
+            8.4
+          ],
+          "color": "blue",
+          "errors": [
+            0.8,
+            1.0,
+            1.2,
+            1.8
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-27",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "easy",
+    "stem": "Which statement best explains why living cells need a continual input of energy?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Once cells have stored enough energy, the first law of thermodynamics requires them to release all of that energy as heat.",
+        "isCorrect": false,
+        "explanation": "The first law says energy is conserved. It does not require cells to release stored energy."
+      },
+      {
+        "label": "B",
+        "text": "Cells make new energy during chemical reactions, and this energy must be replaced when it is released.",
+        "isCorrect": false,
+        "explanation": "Energy cannot be created. Cells transfer energy that is already present in their food or in sunlight."
+      },
+      {
+        "label": "C",
+        "text": "Energy is needed to maintain the highly ordered structure of the cell, and some is lost to the surroundings as heat.",
+        "isCorrect": true,
+        "explanation": "Cells are highly ordered, and maintaining that order and powering processes requires energy. Energy transfers are never perfectly efficient, so some energy is released as heat."
+      },
+      {
+        "label": "D",
+        "text": "Cells need energy only when they divide or grow, because other cell processes do not use energy.",
+        "isCorrect": false,
+        "explanation": "Transport, synthesis, movement and many other cell processes use energy continuously."
+      }
+    ],
+    "explanation": "All living systems require an input of energy to maintain order and to power cellular processes.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-28",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "medium",
+    "stem": "A student claims that a living cell, which is highly ordered, must violate the second law of thermodynamics. Which response is best?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cells are alive, so the laws of thermodynamics do not apply to them in the same way that they apply to nonliving matter such as rocks.",
+        "isCorrect": false,
+        "explanation": "The laws of thermodynamics apply to all matter and energy, including living systems."
+      },
+      {
+        "label": "B",
+        "text": "The cell does not violate the law: it takes in energy and releases heat, so the disorder of its surroundings increases.",
+        "isCorrect": true,
+        "explanation": "A cell is not an isolated system. Energy input lets it maintain order, and the heat it releases increases the disorder of the surroundings."
+      },
+      {
+        "label": "C",
+        "text": "The cell avoids the law by making new energy from nothing, which is what keeps the cell ordered.",
+        "isCorrect": false,
+        "explanation": "Energy cannot be made from nothing. That would violate the first law of thermodynamics."
+      },
+      {
+        "label": "D",
+        "text": "The cell does violate the law, but only for as long as it remains alive and is able to grow.",
+        "isCorrect": false,
+        "explanation": "A living cell does not violate the law at any point. Its order is paid for by energy input."
+      }
+    ],
+    "explanation": "Living systems maintain order by an input of energy and do not violate the first or second laws of thermodynamics.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-29",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "medium",
+    "stem": "A cell is exposed to conditions in which its rate of energy input stays well below its rate of energy loss for a long time. Which outcome is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cell makes up the difference by converting its own waste heat back into useful energy.",
+        "isCorrect": false,
+        "explanation": "Heat released to the surroundings is not recaptured by the cell to do work."
+      },
+      {
+        "label": "B",
+        "text": "The cell becomes more highly ordered, because less energy is available to be lost.",
+        "isCorrect": false,
+        "explanation": "Order requires energy input. With too little energy, order is lost, not gained."
+      },
+      {
+        "label": "C",
+        "text": "The cell continues to function normally, because the first law ensures that energy is never lost.",
+        "isCorrect": false,
+        "explanation": "Energy is conserved overall, but a cell loses usable energy to the surroundings. If it is not replaced, the cell cannot function."
+      },
+      {
+        "label": "D",
+        "text": "The cell can no longer maintain its order or power its processes, and it eventually dies.",
+        "isCorrect": true,
+        "explanation": "Energy input must exceed energy loss for a cell to maintain order. A significant loss of order or energy flow results in death."
+      }
+    ],
+    "explanation": "For a cell to maintain order, energy input must exceed energy loss.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-30",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "medium",
+    "stem": "Which statement best describes coupled reactions in cells?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Reactions in which the product of one reaction is destroyed before the next reaction can use it.",
+        "isCorrect": false,
+        "explanation": "In coupled reactions, the energy released by one process is used by the other, not wasted by destroying a product."
+      },
+      {
+        "label": "B",
+        "text": "An energy-releasing reaction, such as ATP hydrolysis, is linked to an energy-requiring reaction and drives it.",
+        "isCorrect": true,
+        "explanation": "Coupling lets energy released in one process be used by a process that requires energy."
+      },
+      {
+        "label": "C",
+        "text": "Two reactions that are catalyzed by the same enzyme, which therefore works twice as fast on each of the two reactions.",
+        "isCorrect": false,
+        "explanation": "Coupling is about energy transfer between processes. It is not about two reactions sharing an enzyme."
+      },
+      {
+        "label": "D",
+        "text": "Two reactions that both require energy take place at the same time in the same part of the cell.",
+        "isCorrect": false,
+        "explanation": "Coupling involves one process that releases energy and one that requires it."
+      }
+    ],
+    "explanation": "Coupling links an energy-releasing process to an energy-requiring process.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-31",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "medium",
+    "stem": "Many cellular processes that release energy occur through a series of small steps rather than in a single reaction. Which statement best explains the advantage of a series of steps?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Each step creates a small amount of new energy, and the amounts add up to a much larger total than a single reaction would give.",
+        "isCorrect": false,
+        "explanation": "Energy is not created in any step. It is transferred between molecules, with some lost as heat."
+      },
+      {
+        "label": "B",
+        "text": "A series of steps makes sure that all of the energy released is lost as heat to the surroundings of the cell.",
+        "isCorrect": false,
+        "explanation": "A pathway transfers much of the energy to molecules such as ATP rather than losing it all as heat."
+      },
+      {
+        "label": "C",
+        "text": "A single large reaction could not be catalyzed by an enzyme, so the process must be divided into steps.",
+        "isCorrect": false,
+        "explanation": "Enzymes can catalyze reactions of many sizes. The advantage of steps is controlled energy transfer."
+      },
+      {
+        "label": "D",
+        "text": "A sequence of steps allows energy to be transferred in a more controlled way, with each product becoming the next reactant.",
+        "isCorrect": true,
+        "explanation": "In a metabolic pathway, the product of one reaction is typically the reactant of the next, so energy is released and transferred gradually."
+      }
+    ],
+    "explanation": "Sequential pathways allow a more controlled transfer of energy.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-32",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "hard",
+    "stem": "A mutation in a cell prevents it from converting ADP and inorganic phosphate to ATP. Which prediction about the cell is best supported by what is known about energy in living systems?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Processes that need energy, such as active transport and synthesis, will slow or stop, and the cell will die.",
+        "isCorrect": true,
+        "explanation": "ATP couples energy-releasing processes to energy-requiring ones. Without ATP production the cell cannot maintain its order or power its processes."
+      },
+      {
+        "label": "B",
+        "text": "The cell will become more highly ordered, because it is no longer using energy to make ATP and so wastes less.",
+        "isCorrect": false,
+        "explanation": "A cell maintains order by using energy. Without it, order is lost."
+      },
+      {
+        "label": "C",
+        "text": "Processes that require energy will continue unchanged, because energy cannot be lost from a cell once it is taken in.",
+        "isCorrect": false,
+        "explanation": "Cells lose energy to the surroundings. Without a new input of usable energy, processes that need energy slow down."
+      },
+      {
+        "label": "D",
+        "text": "The cell will use the heat it releases to make ATP, so there will be little change in the cell's function.",
+        "isCorrect": false,
+        "explanation": "Heat released to the surroundings is not recaptured to make ATP."
+      }
+    ],
+    "explanation": "Cells that cannot make ATP lose the ability to maintain order and eventually die.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-33",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "medium",
+    "stem": "Glycolysis is found in organisms in the domains Bacteria, Archaea and Eukarya. Which statement best explains how this observation supports the claim that all living organisms share a common ancestor?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Glycolysis occurs only in organisms that have mitochondria, which shows that they are closely related.",
+        "isCorrect": false,
+        "explanation": "Glycolysis occurs in the cytosol of cells with or without mitochondria."
+      },
+      {
+        "label": "B",
+        "text": "A pathway present in all three domains was most likely inherited from a common ancestor that already had the pathway.",
+        "isCorrect": true,
+        "explanation": "Core metabolic pathways such as glycolysis are conserved across all domains. A feature shared by all groups is best explained by inheritance from a common ancestor."
+      },
+      {
+        "label": "C",
+        "text": "Each domain evolved glycolysis independently, which shows that the pathway is the best way to release energy.",
+        "isCorrect": false,
+        "explanation": "The claim of common ancestry rests on a shared, inherited pathway, not on independent origins."
+      },
+      {
+        "label": "D",
+        "text": "Glycolysis requires no enzymes, so any organism can carry it out without having inherited the ability from an ancestor.",
+        "isCorrect": false,
+        "explanation": "Glycolysis is a series of enzyme-catalyzed reactions. Its presence in all three domains is evidence of shared ancestry."
+      }
+    ],
+    "explanation": "Conserved pathways across the three domains are evidence for common ancestry.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-34",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "hard",
+    "stem": "A researcher tests four organisms from three domains for the enzymes of two metabolic pathways. The results are shown in the table. Which claim is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Oxidative phosphorylation is older than glycolysis, because it is found in the organisms that are the most complex of the four that were tested.",
+        "isCorrect": false,
+        "explanation": "The data show that glycolysis is present in all four organisms and oxidative phosphorylation in only two."
+      },
+      {
+        "label": "B",
+        "text": "Because oxidative phosphorylation is missing in some organisms, the data provide no evidence for common ancestry.",
+        "isCorrect": false,
+        "explanation": "The presence of glycolysis in every organism is evidence for common ancestry, even though one pathway is not found in all of them."
+      },
+      {
+        "label": "C",
+        "text": "Organisms that lack oxidative phosphorylation cannot make any ATP, because oxidative phosphorylation is the only pathway that makes ATP.",
+        "isCorrect": false,
+        "explanation": "Every organism in the table has glycolysis, which forms ATP. The data do not show that ATP cannot be made."
+      },
+      {
+        "label": "D",
+        "text": "Glycolysis was found in organisms from all three domains, which supports the claim that they share a common ancestor with the pathway.",
+        "isCorrect": true,
+        "explanation": "A pathway found in every organism tested, across three domains, is consistent with its being inherited from a common ancestor."
+      }
+    ],
+    "explanation": "Evidence for common ancestry comes from features shared by organisms in different groups, such as glycolysis.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Organism",
+        "Domain",
+        "Glycolysis enzymes detected",
+        "Oxidative phosphorylation enzymes detected"
+      ],
+      "rows": [
+        [
+          "Organism 1",
+          "Bacteria",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Organism 2",
+          "Bacteria",
+          "Yes",
+          "No"
+        ],
+        [
+          "Organism 3",
+          "Archaea",
+          "Yes",
+          "No"
+        ],
+        [
+          "Organism 4",
+          "Eukarya",
+          "Yes",
+          "Yes"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Metabolic pathways in four organisms"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-35",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "medium",
+    "stem": "A cell takes in 1,000 J of chemical energy from its food. During a series of reactions, 400 J of this energy is transferred to molecules of ATP. According to the first law of thermodynamics, what happened to the remaining 600 J?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It was converted into new matter in the cell.",
+        "isCorrect": false,
+        "explanation": "The energy released in these reactions is not converted into matter. Most of it is lost as heat."
+      },
+      {
+        "label": "B",
+        "text": "It was destroyed during the reactions.",
+        "isCorrect": false,
+        "explanation": "The first law says that energy cannot be created or destroyed."
+      },
+      {
+        "label": "C",
+        "text": "It was transferred to the surroundings, mostly as heat.",
+        "isCorrect": true,
+        "explanation": "Energy cannot be destroyed. The energy that was not stored in ATP was released to the surroundings, mostly as heat."
+      },
+      {
+        "label": "D",
+        "text": "It was stored in the cell as additional ATP that has not yet been measured.",
+        "isCorrect": false,
+        "explanation": "The question states that the energy transferred to ATP is 400 J. The rest was not stored in ATP."
+      }
+    ],
+    "explanation": "Energy is conserved. Energy that is not captured in a useful form is released to the surroundings, mostly as heat.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-36",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-energy",
+    "difficulty": "hard",
+    "stem": "A student claims that a reaction that builds a large molecule from smaller ones, which requires an input of energy, can occur on its own if enough of the right enzyme is present. Which response best evaluates the claim?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The claim is not supported, because the large molecules of cells are built without the help of enzymes in most cases.",
+        "isCorrect": false,
+        "explanation": "Enzymes catalyze the synthesis of most large molecules in cells. The problem is energy, not the presence of enzymes."
+      },
+      {
+        "label": "B",
+        "text": "The claim is supported, because adding more enzyme lowers the amount of energy the reaction needs to the point of zero.",
+        "isCorrect": false,
+        "explanation": "More enzyme can increase the rate. It does not remove the need for energy input."
+      },
+      {
+        "label": "C",
+        "text": "The claim is supported, because enzymes provide the energy needed by reactions that build large molecules from small ones in cells.",
+        "isCorrect": false,
+        "explanation": "Enzymes do not provide energy to reactions."
+      },
+      {
+        "label": "D",
+        "text": "The claim is not supported, because enzymes do not supply energy; the reaction must be coupled to an energy-releasing one.",
+        "isCorrect": true,
+        "explanation": "Enzymes speed up reactions but do not provide energy. Energy-requiring reactions in cells are coupled to processes that release energy."
+      }
+    ],
+    "explanation": "Enzymes do not supply energy. Reactions that require energy are coupled to reactions that release it.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-energy",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-37",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "easy",
+    "stem": "Which choice correctly lists the inputs and the outputs of photosynthesis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Inputs: carbon dioxide and oxygen. Outputs: water and light energy.",
+        "isCorrect": false,
+        "explanation": "Light energy is an input to photosynthesis, not an output, and oxygen is an output, not an input."
+      },
+      {
+        "label": "B",
+        "text": "Inputs: water and oxygen. Outputs: carbohydrates and carbon dioxide.",
+        "isCorrect": false,
+        "explanation": "Carbon dioxide is an input and oxygen is an output of photosynthesis."
+      },
+      {
+        "label": "C",
+        "text": "Inputs: carbon dioxide, water and light energy. Outputs: carbohydrates and oxygen.",
+        "isCorrect": true,
+        "explanation": "Photosynthesis uses carbon dioxide, water and light energy to make carbohydrates and oxygen."
+      },
+      {
+        "label": "D",
+        "text": "Inputs: oxygen and carbohydrates. Outputs: carbon dioxide, water and energy released.",
+        "isCorrect": false,
+        "explanation": "This reverses the process. It describes the overall inputs and outputs of aerobic cellular respiration."
+      }
+    ],
+    "explanation": "Photosynthesis: CO₂ + H₂O + light energy gives carbohydrates + O₂.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-38",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "easy",
+    "stem": "In a plant cell, where do the light reactions and the Calvin cycle of photosynthesis take place?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The light reactions take place in the stroma, and the Calvin cycle takes place in the thylakoid membranes.",
+        "isCorrect": false,
+        "explanation": "This reverses the locations. The photosystems are in the thylakoid membranes."
+      },
+      {
+        "label": "B",
+        "text": "The light reactions take place in the thylakoid membranes, and the Calvin cycle takes place in the stroma.",
+        "isCorrect": true,
+        "explanation": "The thylakoid membranes (stacked in grana) contain the photosystems and electron transport chain. The carbon fixation reactions of the Calvin cycle occur in the stroma."
+      },
+      {
+        "label": "C",
+        "text": "The light reactions take place in the cytosol, and the Calvin cycle takes place in the nucleus.",
+        "isCorrect": false,
+        "explanation": "Neither process takes place in the cytosol or nucleus of a plant cell. Both are in the chloroplast."
+      },
+      {
+        "label": "D",
+        "text": "Both take place in the mitochondria, where the ATP is made.",
+        "isCorrect": false,
+        "explanation": "Photosynthesis takes place in chloroplasts. Mitochondria carry out cellular respiration."
+      }
+    ],
+    "explanation": "Light reactions: thylakoid membranes. Calvin cycle: stroma.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-39",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "medium",
+    "stem": "A researcher supplies a photosynthesizing plant with water that contains the heavy oxygen isotope ¹⁸O and with carbon dioxide that contains only ordinary oxygen. In which molecule released by the plant would the ¹⁸O first be found?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Glucose, the carbohydrate",
+        "isCorrect": false,
+        "explanation": "Glucose is made from carbon dioxide in the Calvin cycle. The oxygen released as a gas is the oxygen from the water that is split in the light reactions."
+      },
+      {
+        "label": "B",
+        "text": "O₂, the oxygen gas",
+        "isCorrect": true,
+        "explanation": "Water is split in the light reactions, and the oxygen from the water is released as O₂."
+      },
+      {
+        "label": "C",
+        "text": "NADPH, which carries electrons to the Calvin cycle",
+        "isCorrect": false,
+        "explanation": "NADPH carries hydrogen and electrons, not oxygen atoms."
+      },
+      {
+        "label": "D",
+        "text": "CO₂, the carbon dioxide",
+        "isCorrect": false,
+        "explanation": "Carbon dioxide is an input of photosynthesis. The ¹⁸O in the water would not be released in carbon dioxide."
+      }
+    ],
+    "explanation": "Water splitting in photosystem II is the source of the oxygen gas released in photosynthesis.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-40",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "medium",
+    "stem": "In the light reactions, what is the immediate source of the electrons that replace those lost from photosystem II after it absorbs light?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "NADPH, which is produced from the light reactions",
+        "isCorrect": false,
+        "explanation": "NADPH is a product of the light reactions, not a source of electrons for photosystem II."
+      },
+      {
+        "label": "B",
+        "text": "Carbon dioxide, which enters the stroma",
+        "isCorrect": false,
+        "explanation": "Carbon dioxide is used in the Calvin cycle. It does not supply electrons to photosystem II."
+      },
+      {
+        "label": "C",
+        "text": "Water, which is split",
+        "isCorrect": true,
+        "explanation": "Water is split, supplying electrons to photosystem II and releasing oxygen as a product."
+      },
+      {
+        "label": "D",
+        "text": "Photosystem I, which passes electrons back to photosystem II",
+        "isCorrect": false,
+        "explanation": "Electrons move from photosystem II to photosystem I through the electron transport chain, not the other way."
+      }
+    ],
+    "explanation": "Water splits to replace the electrons that photosystem II loses when light excites chlorophyll.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-41",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "medium",
+    "stem": "At the end of the electron transport chain of the light reactions, to what are the electrons ultimately transferred?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "NADP⁺, which is reduced to NADPH for use in the Calvin cycle",
+        "isCorrect": true,
+        "explanation": "In the light reactions, electrons passing through the thylakoid membrane are picked up and ultimately transferred to NADP⁺, reducing it to NADPH."
+      },
+      {
+        "label": "B",
+        "text": "Oxygen, which is reduced to form water",
+        "isCorrect": false,
+        "explanation": "Oxygen is the final electron acceptor in the electron transport chain of cellular respiration, not in the light reactions."
+      },
+      {
+        "label": "C",
+        "text": "Carbon dioxide, which is converted directly to glucose in the thylakoid membrane",
+        "isCorrect": false,
+        "explanation": "Carbon dioxide is converted to carbohydrates in the Calvin cycle in the stroma, and NADPH is used to power the process."
+      },
+      {
+        "label": "D",
+        "text": "Water, which is re-formed on the inside of the thylakoid",
+        "isCorrect": false,
+        "explanation": "Water is split to provide electrons in the light reactions. It is not re-formed from them."
+      }
+    ],
+    "explanation": "Electrons from the light reactions reduce NADP⁺ to NADPH.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-42",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "hard",
+    "stem": "In illuminated chloroplasts, the pH of the thylakoid lumen is 5.0 and the pH of the stroma is 8.0. Approximately how many times greater is the concentration of hydrogen ions in the lumen than in the stroma?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3 times",
+        "isCorrect": false,
+        "explanation": "This is the difference in pH units. Because the pH scale is logarithmic, each unit is a tenfold change in concentration."
+      },
+      {
+        "label": "B",
+        "text": "1,000 times",
+        "isCorrect": true,
+        "explanation": "The pH scale is logarithmic. A difference of 3 pH units means a 10³ = 1,000-fold difference in hydrogen ion concentration."
+      },
+      {
+        "label": "C",
+        "text": "100 times",
+        "isCorrect": false,
+        "explanation": "This would be a difference of 2 pH units. The difference here is 3 units."
+      },
+      {
+        "label": "D",
+        "text": "1.6 times",
+        "isCorrect": false,
+        "explanation": "This divides one pH value by the other (8.0 / 5.0). The pH scale is logarithmic, so the concentrations differ by a power of ten."
+      }
+    ],
+    "explanation": "Each pH unit is a tenfold change in hydrogen ion concentration. The lumen is the more acidic compartment.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-43",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "medium",
+    "stem": "Which statement correctly describes how ATP is made in the light reactions of photosynthesis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Electrons flow through ATP synthase and phosphorylate ADP as they pass from photosystem II to photosystem I in the membrane.",
+        "isCorrect": false,
+        "explanation": "Electrons pass through the electron transport chain. ATP synthase is a channel for protons."
+      },
+      {
+        "label": "B",
+        "text": "Light energy is transferred directly to ADP and inorganic phosphate, which combine without any proton gradient being involved.",
+        "isCorrect": false,
+        "explanation": "ATP is made using the proton gradient formed across the thylakoid membrane."
+      },
+      {
+        "label": "C",
+        "text": "Protons flow from the lumen to the stroma through ATP synthase, which drives the formation of ATP from ADP and phosphate.",
+        "isCorrect": true,
+        "explanation": "This is chemiosmosis. The movement of protons through ATP synthase drives ATP formation, which in photosynthesis is called photophosphorylation."
+      },
+      {
+        "label": "D",
+        "text": "Protons are pumped by ATP synthase from the stroma into the thylakoid lumen, using the energy that is stored in ATP.",
+        "isCorrect": false,
+        "explanation": "This reverses the direction. The electron transport chain pumps protons into the lumen, and ATP synthase makes ATP as they flow back."
+      }
+    ],
+    "explanation": "The proton gradient across the thylakoid membrane drives ATP synthesis by ATP synthase.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-44",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "hard",
+    "stem": "A plant that has been in bright light is moved into darkness. After several minutes, which change is most likely in the Calvin cycle taking place in the stroma?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The Calvin cycle speeds up, because carbon dioxide no longer has to compete with oxygen at the active site.",
+        "isCorrect": false,
+        "explanation": "Without ATP and NADPH from the light reactions the Calvin cycle cannot continue at a high rate."
+      },
+      {
+        "label": "B",
+        "text": "The Calvin cycle runs in reverse in the dark, producing carbon dioxide from carbohydrates.",
+        "isCorrect": false,
+        "explanation": "The Calvin cycle does not run in reverse in the dark. It slows because its energy supply decreases."
+      },
+      {
+        "label": "C",
+        "text": "The Calvin cycle is unchanged, because it uses light energy directly in the stroma of the chloroplast.",
+        "isCorrect": false,
+        "explanation": "The Calvin cycle uses ATP and NADPH made in the light reactions. It does not absorb light."
+      },
+      {
+        "label": "D",
+        "text": "The Calvin cycle slows, because the ATP and NADPH it uses are no longer replaced by the light reactions.",
+        "isCorrect": true,
+        "explanation": "The energy captured in the light reactions and transferred to ATP and NADPH powers the Calvin cycle. Without light, these are used up and not replaced."
+      }
+    ],
+    "explanation": "The light reactions supply the ATP and NADPH that power carbon fixation in the Calvin cycle.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-45",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "medium",
+    "stem": "Which evidence would best support the claim that photosynthesis by prokaryotes was responsible for the production of an oxygenated atmosphere on Earth?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Fossils of photosynthetic prokaryotes in rocks that are older than the first widespread oxidized minerals.",
+        "isCorrect": true,
+        "explanation": "Photosynthesis releases oxygen. Evidence that photosynthetic prokaryotes existed before oxygen-dependent minerals formed supports the claim that they were the source."
+      },
+      {
+        "label": "B",
+        "text": "Fossils of animals that needed oxygen for cellular respiration, found in rocks younger than the prokaryote fossils.",
+        "isCorrect": false,
+        "explanation": "The animals show that oxygen was present later. They do not show where the oxygen came from."
+      },
+      {
+        "label": "C",
+        "text": "The observation that oxygen is the second most abundant gas in the present atmosphere.",
+        "isCorrect": false,
+        "explanation": "The present amount of oxygen does not identify which organisms produced it."
+      },
+      {
+        "label": "D",
+        "text": "The observation that modern plants release oxygen when they carry out photosynthesis.",
+        "isCorrect": false,
+        "explanation": "This shows that photosynthesis releases oxygen today, but it does not show that prokaryotes produced the oxygen in Earth's early atmosphere."
+      }
+    ],
+    "explanation": "Evidence that supports a claim must connect the claim to the observation, here the order and the process.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-46",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "hard",
+    "stem": "In a leaf disk assay, disks float when the oxygen produced by photosynthesis fills their air spaces. A student measures the median time for disks to float at six light intensities. The rate is calculated as 1 divided by the time. Which hypothesis best explains the lack of increase in the rate between 800 and 1,600 µmol photons per square meter per second?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The rate and the light intensity have an inverse relationship at high light intensities, so the rate falls.",
+        "isCorrect": false,
+        "explanation": "An inverse relationship would show a lower rate at 1,600 than at 800. The rate is the same."
+      },
+      {
+        "label": "B",
+        "text": "Another factor, such as the supply of carbon dioxide, has become the limiting factor.",
+        "isCorrect": true,
+        "explanation": "The rate was increasing with light and then stopped increasing even though the light intensity doubled. This is expected when a different factor limits the rate."
+      },
+      {
+        "label": "C",
+        "text": "Light is no longer used by the leaf disks at these intensities.",
+        "isCorrect": false,
+        "explanation": "The rate is 0.200 at both intensities, which means photosynthesis is still occurring at a high rate."
+      },
+      {
+        "label": "D",
+        "text": "The leaf disks have stopped producing oxygen at these intensities.",
+        "isCorrect": false,
+        "explanation": "The disks still float, so they are still producing oxygen. The rate has not fallen."
+      }
+    ],
+    "explanation": "A rate that stops increasing as light increases suggests another factor is now limiting.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Light intensity (µmol photons/m²/s)",
+        "Median time to float (min)",
+        "Rate (1/min)"
+      ],
+      "rows": [
+        [
+          "0",
+          "Did not float",
+          "0.000"
+        ],
+        [
+          "100",
+          "24",
+          "0.042"
+        ],
+        [
+          "200",
+          "12",
+          "0.083"
+        ],
+        [
+          "400",
+          "6",
+          "0.167"
+        ],
+        [
+          "800",
+          "5",
+          "0.200"
+        ],
+        [
+          "1600",
+          "5",
+          "0.200"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Leaf disk assay"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-47",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "medium",
+    "stem": "The graph shows the rate of photosynthesis in a plant leaf exposed to different wavelengths of light. Which statement is best supported by the data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The rate does not change with wavelength, because light is the energy source for all wavelengths equally.",
+        "isCorrect": false,
+        "explanation": "The graph shows that the rate changes a lot with wavelength."
+      },
+      {
+        "label": "B",
+        "text": "The rate is highest in blue and red light and lowest in green light, which suggests chlorophyll absorbs blue and red best.",
+        "isCorrect": true,
+        "explanation": "The graph shows peaks near 430 nm (blue) and 680 nm (red). A pigment's absorption of a wavelength determines how well that wavelength drives photosynthesis."
+      },
+      {
+        "label": "C",
+        "text": "The rate is zero for green light, because chlorophyll cannot absorb any green light at all and so green light is useless.",
+        "isCorrect": false,
+        "explanation": "The rate is low but not zero near 550 nm, so some light in that range is used."
+      },
+      {
+        "label": "D",
+        "text": "The rate is highest in green light, because leaves appear green and so must use green light most.",
+        "isCorrect": false,
+        "explanation": "The graph shows the lowest rates in the green region. Leaves look green because they absorb green light poorly."
+      }
+    ],
+    "explanation": "The rate of photosynthesis depends on how well the wavelengths of light are absorbed by the photosynthetic pigments.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false,
+    "diagram": {
+      "type": "xy-graph",
+      "altText": "Relative rate of photosynthesis against wavelength from 400 to 700 nanometers. The rate is highest near 430 and 680 nanometers and lowest near 550 nanometers.",
+      "xLabel": "Wavelength of light (nm)",
+      "yLabel": "Relative rate of photosynthesis (%)",
+      "xMin": 400,
+      "xMax": 700,
+      "yMin": 0,
+      "yMax": 100,
+      "series": [
+        {
+          "label": "Photosynthetic rate",
+          "points": [
+            {
+              "x": 400,
+              "y": 60
+            },
+            {
+              "x": 430,
+              "y": 95
+            },
+            {
+              "x": 470,
+              "y": 85
+            },
+            {
+              "x": 500,
+              "y": 35
+            },
+            {
+              "x": 550,
+              "y": 20
+            },
+            {
+              "x": 600,
+              "y": 40
+            },
+            {
+              "x": 650,
+              "y": 80
+            },
+            {
+              "x": 680,
+              "y": 100
+            },
+            {
+              "x": 700,
+              "y": 40
+            }
+          ],
+          "color": "green"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-48",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "photosynthesis",
+    "difficulty": "hard",
+    "stem": "A herbicide blocks the transfer of electrons from photosystem II to the electron transport chain in chloroplasts. Which set of effects is most likely?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Only the Calvin cycle is affected, because the light reactions do not depend on the transfer of electrons.",
+        "isCorrect": false,
+        "explanation": "The light reactions depend on electron transfer. The effect on the Calvin cycle occurs because the light reactions slow."
+      },
+      {
+        "label": "B",
+        "text": "The proton gradient becomes larger because protons cannot be used, so more ATP is made by ATP synthase.",
+        "isCorrect": false,
+        "explanation": "The proton gradient is formed as electrons pass through the electron transport chain. Blocking that flow reduces the gradient."
+      },
+      {
+        "label": "C",
+        "text": "More oxygen is released, because electrons that cannot move on cause water to be split faster at photosystem II.",
+        "isCorrect": false,
+        "explanation": "Water is split to replace the electrons lost by photosystem II. If electrons cannot be passed on, less water is split."
+      },
+      {
+        "label": "D",
+        "text": "Less oxygen is released, a smaller proton gradient forms across the thylakoid membrane, and less ATP and NADPH are made.",
+        "isCorrect": true,
+        "explanation": "Blocking electron flow from photosystem II reduces the splitting of water that replaces its electrons, reduces the proton pumping that depends on electron flow, and so lowers ATP and NADPH production."
+      }
+    ],
+    "explanation": "Photosystem II, the electron transport chain, the proton gradient and ATP synthesis are linked. Blocking one step reduces the later steps.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/photosynthesis",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-49",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "easy",
+    "stem": "Which statement correctly describes glycolysis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It takes place in the inner mitochondrial membrane and makes most of the ATP in a cell.",
+        "isCorrect": false,
+        "explanation": "The inner mitochondrial membrane is where the electron transport chain and ATP synthase are found."
+      },
+      {
+        "label": "B",
+        "text": "It takes place in the cytosol and converts glucose to pyruvate, forming ATP and NADH.",
+        "isCorrect": true,
+        "explanation": "Glycolysis releases some of the energy in glucose to form ATP (from ADP and inorganic phosphate), NADH (from NAD⁺) and pyruvate."
+      },
+      {
+        "label": "C",
+        "text": "It takes place in the mitochondrial matrix and requires oxygen to proceed.",
+        "isCorrect": false,
+        "explanation": "Glycolysis occurs in the cytosol and does not require oxygen."
+      },
+      {
+        "label": "D",
+        "text": "It takes place in chloroplasts and uses light energy to convert carbon dioxide to glucose.",
+        "isCorrect": false,
+        "explanation": "This describes photosynthesis, not glycolysis. Glycolysis breaks down glucose."
+      }
+    ],
+    "explanation": "Glycolysis occurs in the cytosol, oxidizes glucose to pyruvate and forms ATP and NADH without needing oxygen.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-50",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "easy",
+    "stem": "In aerobic cellular respiration in eukaryotes, which molecule is the final electron acceptor of the electron transport chain?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Pyruvate, which is reduced to form lactic acid",
+        "isCorrect": false,
+        "explanation": "Pyruvate is reduced to lactic acid in fermentation. It is not the final electron acceptor of the electron transport chain."
+      },
+      {
+        "label": "B",
+        "text": "Oxygen, which is reduced to form water",
+        "isCorrect": true,
+        "explanation": "Oxygen is the terminal electron acceptor in aerobic respiration."
+      },
+      {
+        "label": "C",
+        "text": "Carbon dioxide, which is reduced to form glucose",
+        "isCorrect": false,
+        "explanation": "Carbon dioxide is released in the Krebs cycle. It is not an electron acceptor of the chain."
+      },
+      {
+        "label": "D",
+        "text": "NAD⁺, which is reduced to form NADH",
+        "isCorrect": false,
+        "explanation": "NAD⁺ accepts electrons earlier in respiration, forming NADH, which then delivers electrons to the electron transport chain."
+      }
+    ],
+    "explanation": "Oxygen is the terminal electron acceptor in aerobic cellular respiration.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-51",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "medium",
+    "stem": "Which statement correctly describes the Krebs (citric acid) cycle in a eukaryotic cell?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It takes place in the cytosol, where glucose is converted to pyruvate and a small amount of ATP is made.",
+        "isCorrect": false,
+        "explanation": "This describes glycolysis."
+      },
+      {
+        "label": "B",
+        "text": "It takes place in the intermembrane space, where protons accumulate to form a gradient for ATP synthase.",
+        "isCorrect": false,
+        "explanation": "Protons accumulate in the intermembrane space because of the electron transport chain, not the Krebs cycle."
+      },
+      {
+        "label": "C",
+        "text": "It takes place on the inner mitochondrial membrane, where oxygen is reduced to water as electrons move along.",
+        "isCorrect": false,
+        "explanation": "This describes the electron transport chain. The Krebs cycle takes place in the matrix."
+      },
+      {
+        "label": "D",
+        "text": "It takes place in the mitochondrial matrix, where carbon dioxide is released and NAD⁺ and FAD gain electrons.",
+        "isCorrect": true,
+        "explanation": "During the Krebs cycle, carbon dioxide is released from organic intermediates, some ATP is made, and electrons are transferred by NAD⁺ and FAD."
+      }
+    ],
+    "explanation": "The Krebs cycle takes place in the mitochondrial matrix and delivers electrons to the electron transport chain via NADH and FADH₂.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-52",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "medium",
+    "stem": "When the electron transport chain is operating in a mitochondrion, which statement about the two sides of the inner mitochondrial membrane is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The intermembrane space has a higher concentration of protons and a lower pH than the matrix.",
+        "isCorrect": true,
+        "explanation": "Electron transport is accompanied by the movement of protons into the intermembrane space. The pH of the matrix is higher than that of the intermembrane space."
+      },
+      {
+        "label": "B",
+        "text": "The matrix has a higher concentration of protons and a lower pH than the intermembrane space.",
+        "isCorrect": false,
+        "explanation": "This reverses the gradient. Protons are pumped out of the matrix."
+      },
+      {
+        "label": "C",
+        "text": "The intermembrane space has a lower concentration of protons and a higher pH than the matrix.",
+        "isCorrect": false,
+        "explanation": "This reverses the gradient. It is the intermembrane space that has the higher proton concentration and the lower pH."
+      },
+      {
+        "label": "D",
+        "text": "The two sides have the same concentration of protons, because protons move freely across the membrane.",
+        "isCorrect": false,
+        "explanation": "The membrane is not freely permeable to protons. A gradient forms and is used to make ATP."
+      }
+    ],
+    "explanation": "The electron transport chain builds a proton gradient across the inner mitochondrial membrane, high in the intermembrane space and low in the matrix.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-53",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "medium",
+    "stem": "The inner membrane of a mitochondrion is highly folded. Which statement best explains how this feature affects the production of ATP?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The folds increase the surface area of the inner membrane, so more ATP synthase and electron transport proteins fit in it.",
+        "isCorrect": true,
+        "explanation": "Folding of the inner membrane increases surface area, which allows more ATP to be synthesized."
+      },
+      {
+        "label": "B",
+        "text": "The folds reduce the volume of the matrix, so the Krebs cycle takes place at a slower rate and less ATP is made.",
+        "isCorrect": false,
+        "explanation": "The folds are not related to slowing down the Krebs cycle. They increase the area available for oxidative phosphorylation."
+      },
+      {
+        "label": "C",
+        "text": "The folds increase the volume of the cytosol available for glycolysis, which makes more ATP.",
+        "isCorrect": false,
+        "explanation": "The folds are inside the mitochondrion and do not change the volume of the cytosol."
+      },
+      {
+        "label": "D",
+        "text": "The folds prevent protons from moving into the intermembrane space, so that ATP is made more slowly.",
+        "isCorrect": false,
+        "explanation": "The proton gradient needs protons to move into the intermembrane space. The folds help ATP production by providing more membrane."
+      }
+    ],
+    "explanation": "A larger inner membrane area holds more of the proteins needed for oxidative phosphorylation.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-54",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "medium",
+    "stem": "During intense exercise, muscle cells may not receive enough oxygen and may carry out lactic acid fermentation. What is the main benefit to the cell of fermentation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It allows the electron transport chain to continue to pump protons without oxygen.",
+        "isCorrect": false,
+        "explanation": "Fermentation does not supply electrons to the electron transport chain."
+      },
+      {
+        "label": "B",
+        "text": "It produces more ATP from each glucose than aerobic respiration does in the muscle cell.",
+        "isCorrect": false,
+        "explanation": "Aerobic respiration makes much more ATP per glucose than fermentation."
+      },
+      {
+        "label": "C",
+        "text": "It allows glycolysis to continue to produce ATP when oxygen is not available.",
+        "isCorrect": true,
+        "explanation": "Fermentation lets glycolysis proceed in the absence of oxygen by regenerating NAD⁺, so some ATP continues to be made."
+      },
+      {
+        "label": "D",
+        "text": "It converts lactic acid back into glucose, which stores the energy for later use.",
+        "isCorrect": false,
+        "explanation": "Fermentation produces lactic acid from pyruvate. It does not make glucose."
+      }
+    ],
+    "explanation": "Fermentation allows glycolysis to proceed in the absence of oxygen.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-55",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "hard",
+    "stem": "Cyanide blocks the transfer of electrons from the last carrier of the mitochondrial electron transport chain to oxygen. Which set of effects is most likely in cells exposed to cyanide?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The proton gradient increases, because protons can no longer flow back through ATP synthase into the matrix.",
+        "isCorrect": false,
+        "explanation": "The gradient is made by the electron transport chain. If electron transport stops, the gradient cannot be maintained."
+      },
+      {
+        "label": "B",
+        "text": "Electron transport stops, the proton gradient cannot be maintained, and less ATP is made by oxidative phosphorylation.",
+        "isCorrect": true,
+        "explanation": "With electron flow blocked, protons are no longer pumped. The proton gradient dissipates and ATP synthase makes less ATP."
+      },
+      {
+        "label": "C",
+        "text": "Electron transport speeds up, because the electrons that cannot reach oxygen move faster through the chain.",
+        "isCorrect": false,
+        "explanation": "Blocking the last step stops the chain, because electrons have nowhere to go."
+      },
+      {
+        "label": "D",
+        "text": "Oxygen use increases, because the cell tries to make up for the lack of ATP by using more oxygen.",
+        "isCorrect": false,
+        "explanation": "Cyanide stops the use of oxygen as a terminal electron acceptor, so oxygen consumption falls."
+      }
+    ],
+    "explanation": "Electron transport, the proton gradient and ATP synthesis are linked, so blocking electron transport reduces ATP synthesis.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-56",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "hard",
+    "stem": "A chemical makes the inner mitochondrial membrane permeable to protons, so protons flow back into the matrix without passing through ATP synthase. Which set of effects is most likely in cells treated with the chemical?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The rate of oxygen consumption increases, less ATP is made by oxidative phosphorylation, and more energy is released as heat.",
+        "isCorrect": true,
+        "explanation": "Decoupling oxidative phosphorylation from electron transport generates heat. Electron transport continues, and oxygen is used, but the energy of the gradient is not captured in ATP."
+      },
+      {
+        "label": "B",
+        "text": "The rate of oxygen consumption is unchanged and the cell releases less heat, because the gradient is then easier for the cell to maintain.",
+        "isCorrect": false,
+        "explanation": "The leak makes it harder to maintain the gradient, so the chain works faster. More heat is released."
+      },
+      {
+        "label": "C",
+        "text": "The rate of oxygen consumption decreases and more ATP is made, because the protons enter the matrix more easily.",
+        "isCorrect": false,
+        "explanation": "Protons that leak across the membrane do not pass through ATP synthase, so less ATP is made."
+      },
+      {
+        "label": "D",
+        "text": "Electron transport stops, because the protons that are needed to pump electrons are no longer available.",
+        "isCorrect": false,
+        "explanation": "Electron transport does not stop. Without the gradient to oppose it, it continues."
+      }
+    ],
+    "explanation": "Uncoupling lets the energy of the gradient escape as heat instead of being used to make ATP.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-57",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "medium",
+    "stem": "A student measures the volume of carbon dioxide produced by yeast in anaerobic conditions in 30 minutes at different sucrose concentrations. What is the rate of carbon dioxide production, in mL per minute, in the 4 percent sucrose treatment?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.29 mL/min",
+        "isCorrect": true,
+        "explanation": "Rate = volume / time = 8.7 mL / 30 min = 0.29 mL/min."
+      },
+      {
+        "label": "B",
+        "text": "0.15 mL/min",
+        "isCorrect": false,
+        "explanation": "This divides by 60 minutes instead of the 30 minutes of the experiment."
+      },
+      {
+        "label": "C",
+        "text": "8.7 mL/min",
+        "isCorrect": false,
+        "explanation": "This is the total volume produced in 30 minutes. A rate is the volume divided by the time."
+      },
+      {
+        "label": "D",
+        "text": "261 mL/min",
+        "isCorrect": false,
+        "explanation": "This multiplies the volume by the time (8.7 x 30) instead of dividing."
+      }
+    ],
+    "explanation": "Rate = amount produced / time.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Sucrose concentration (%)",
+        "Volume of CO₂ produced in 30 min (mL)"
+      ],
+      "rows": [
+        [
+          "0",
+          "0.3"
+        ],
+        [
+          "2",
+          "4.5"
+        ],
+        [
+          "4",
+          "8.7"
+        ],
+        [
+          "6",
+          "11.8"
+        ],
+        [
+          "8",
+          "12.0"
+        ],
+        [
+          "10",
+          "12.1"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Fermentation by yeast"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-58",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "easy",
+    "stem": "Which statement about cellular respiration is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Cellular respiration in plants takes place only at night, when photosynthesis has stopped for the day.",
+        "isCorrect": false,
+        "explanation": "Plant cells carry out cellular respiration all the time. Photosynthesis may produce more oxygen than respiration uses in the light."
+      },
+      {
+        "label": "B",
+        "text": "Only organisms with mitochondria can obtain usable energy from glucose and other molecules.",
+        "isCorrect": false,
+        "explanation": "Prokaryotes lack mitochondria and still obtain energy from glucose by glycolysis, fermentation or respiration."
+      },
+      {
+        "label": "C",
+        "text": "Plants, animals and most other organisms carry out cellular respiration, because all cells need ATP.",
+        "isCorrect": true,
+        "explanation": "Respiration and fermentation are characteristic of all forms of life. Plants carry out photosynthesis and cellular respiration."
+      },
+      {
+        "label": "D",
+        "text": "Only animals carry out cellular respiration, and plants carry out photosynthesis instead.",
+        "isCorrect": false,
+        "explanation": "This is a common misconception. Plants have mitochondria and carry out cellular respiration, including in the dark."
+      }
+    ],
+    "explanation": "All forms of life use respiration or fermentation to obtain usable energy from molecules.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  },
+  {
+    "id": "ap-bio-u3-mcq-59",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "hard",
+    "stem": "In a respirometer experiment, the volume of oxygen consumed by germinating peas is measured, with glass beads of the same volume as a control for changes in temperature and pressure. What is the rate of oxygen consumption by the germinating peas over 20 minutes, corrected using the control?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.80 mL/min",
+        "isCorrect": false,
+        "explanation": "This divides the corrected volume by 5 minutes, the length of one interval, instead of the 20 minutes over which the volume was measured."
+      },
+      {
+        "label": "B",
+        "text": "0.20 mL/min",
+        "isCorrect": true,
+        "explanation": "The corrected volume is 4.2 - 0.2 = 4.0 mL. The rate is 4.0 mL / 20 min = 0.20 mL/min."
+      },
+      {
+        "label": "C",
+        "text": "4.0 mL/min",
+        "isCorrect": false,
+        "explanation": "This is the corrected volume. A rate is the volume divided by the time."
+      },
+      {
+        "label": "D",
+        "text": "0.21 mL/min",
+        "isCorrect": false,
+        "explanation": "This divides the uncorrected volume (4.2 mL) by 20 minutes. The control shows that 0.2 mL of the change was not due to the peas."
+      }
+    ],
+    "explanation": "Subtract the control, then divide by the time over which the change was measured.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Time (min)",
+        "Germinating peas: cumulative O₂ consumed (mL)",
+        "Glass beads: cumulative change (mL)"
+      ],
+      "rows": [
+        [
+          "0",
+          "0.0",
+          "0.0"
+        ],
+        [
+          "5",
+          "0.9",
+          "0.1"
+        ],
+        [
+          "10",
+          "2.0",
+          "0.1"
+        ],
+        [
+          "15",
+          "3.1",
+          "0.2"
+        ],
+        [
+          "20",
+          "4.2",
+          "0.2"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Respirometer data"
+    }
+  },
+  {
+    "id": "ap-bio-u3-mcq-60",
+    "unit": "unit-3-cellular-energetics",
+    "topic": "cellular-respiration",
+    "difficulty": "medium",
+    "stem": "Many aerobic prokaryotes have no mitochondria but still carry out electron transport coupled to the synthesis of ATP. Where are protons moved by the electron transport chain in these cells?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Across the membrane of a nucleus, which holds the proton gradient used by ATP synthase to make ATP.",
+        "isCorrect": false,
+        "explanation": "Prokaryotes do not have a nucleus. Their electron transport chains are in the plasma membrane."
+      },
+      {
+        "label": "B",
+        "text": "Into small mitochondria that are present in the cytoplasm of every aerobic prokaryote cell.",
+        "isCorrect": false,
+        "explanation": "Prokaryotes do not have mitochondria."
+      },
+      {
+        "label": "C",
+        "text": "Nowhere, because only cells that contain mitochondria are able to build a proton gradient.",
+        "isCorrect": false,
+        "explanation": "Electron transport chains occur in chloroplasts, in mitochondria and across prokaryotic plasma membranes."
+      },
+      {
+        "label": "D",
+        "text": "Across the plasma membrane, so a proton gradient forms there and drives ATP synthesis as protons flow back.",
+        "isCorrect": true,
+        "explanation": "In prokaryotes, the passage of electrons is accompanied by the movement of protons across the plasma membrane."
+      }
+    ],
+    "explanation": "Electron transport chains occur in chloroplasts, in mitochondria, and across the plasma membranes of prokaryotes.",
+    "conceptLink": "ap-biology/unit-3-cellular-energetics/cellular-respiration",
+    "reviewed": false
+  }
+]

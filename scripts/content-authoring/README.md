@@ -213,3 +213,20 @@ cd scripts/content-authoring/ap-calc-bc && python3 make_units.py && python3 deri
 for u in 6 7 8 9 10; do python3 u${u}_bc.py | head -1; done
 cd ../ap-calc-bc-refreshers && for u in 6 7 8 9 10; do python3 u$u.py; done
 ```
+
+## AP Biology
+
+`ap-biology/` builds the seventh course (see "AP Biology" in CLAUDE.md).
+
+- `ap-biology/make_units.py` writes `content/ap-biology/course.json` (the CED's exam format, with the six free-response kinds) and the eight unit files (60 topics). The names, order and
+  weightings are the 2025-26 CED's; edit the script, not the JSON.
+- `lib.py` is the Bank (ids `ap-bio-uN-mcq-1..`, `ap-bio-uN-frq-1..`; the six free-response kinds with their point totals asserted) and the diagram builders. Each unit is a set of scripts that
+  `u<N>.py` assembles; **Units 1 to 6 are written** (`u1_*.py` .. `u6_*.py`, with `u<N>_refreshers.py` and `u<N>.py`; `u6_common.py` has the genetic code and strand helpers). `length_stats.py [unit]` measures whether the right answer
+  is a length tell (run it while drafting). `render-audit.ts ap-biology` renders every string.
+- **Don't commit `content/ap-biology` until all eight units have questions**: `tests/exam-weighting.test.ts` checks a unit's share of every unit and fails for a course with questions in only some.
+
+```bash
+cd scripts/content-authoring/ap-biology && python3 make_units.py
+for u in 1 2 3 4 5 6; do python3 u$u.py && python3 u${u}_refreshers.py; done && python3 length_stats.py
+```
+

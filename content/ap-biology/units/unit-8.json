@@ -1,0 +1,44 @@
+{
+  "slug": "unit-8-ecology",
+  "order": 8,
+  "name": "Ecology",
+  "weightingMin": 10,
+  "weightingMax": 15,
+  "topics": [
+    {
+      "slug": "responses-to-the-environment",
+      "order": 1,
+      "name": "Responses to the Environment"
+    },
+    {
+      "slug": "energy-flow-through-ecosystems",
+      "order": 2,
+      "name": "Energy Flow Through Ecosystems"
+    },
+    {
+      "slug": "population-ecology",
+      "order": 3,
+      "name": "Population Ecology"
+    },
+    {
+      "slug": "effect-of-density-on-populations",
+      "order": 4,
+      "name": "Effect of Density on Populations"
+    },
+    {
+      "slug": "community-ecology",
+      "order": 5,
+      "name": "Community Ecology"
+    },
+    {
+      "slug": "biodiversity",
+      "order": 6,
+      "name": "Biodiversity"
+    },
+    {
+      "slug": "disruptions-in-ecosystems",
+      "order": 7,
+      "name": "Disruptions in Ecosystems"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import { GROUP_FRACTION, layoutBars, shouldRotateLabels, yPixel } from "@/lib/di
 import { CLADOGRAM_DIMS, layoutCladogram, tipCount, tipLabels, treeDepth } from "@/lib/diagrams/cladogram-layout";
 import { describeBarGraph, describeCladogram, describeDataTable, nestedGroups } from "@/lib/diagrams/describe";
 import { axisTicks, formatTick, type PixelDims } from "@/lib/diagrams/geometry";
+import { layoutLegend, LEGEND_ROW_HEIGHT, legendLabels } from "@/lib/diagrams/legend";
 
 const DIMS: PixelDims = { width: 420, height: 300, marginLeft: 50, marginRight: 20, marginTop: 20, marginBottom: 50 };
 // plot area: x 50..400 (350 wide), y 20..250 (230 tall)
@@ -134,5 +135,37 @@ describe("axis helpers (shared by the line and bar graphs)", () => {
   it("writes whole numbers plainly and others to one decimal", () => {
     expect(formatTick(5)).toBe("5");
     expect(formatTick(2.5)).toBe("2.5");
+  });
+});
+
+describe("legend layout", () => {
+  it("puts labels in one row, left to right, when they fit, and leaves room for that row above the plot", () => {
+    const { items, rows, height } = layoutLegend(["Control", "Treated"], 400);
+    expect(rows).toBe(1);
+    expect(items.map((i) => i.row)).toEqual([0, 0]);
+    expect(items[0].x).toBe(0);
+    expect(items[1].x).toBeGreaterThan(items[0].x + 18 + "Control".length * 6);
+    expect(height).toBe(LEGEND_ROW_HEIGHT + 8);
+  });
+
+  it("wraps to the next row, from the left edge, when the next label would run past the width", () => {
+    const { items, rows, height } = layoutLegend(["Human enzyme", "Hot-spring bacterial enzyme", "Fungal enzyme"], 250);
+    expect(items[0]).toEqual({ x: 0, row: 0 });
+    expect(items[1].row).toBe(1);
+    expect(items[1].x).toBe(0);
+    expect(rows).toBe(items[items.length - 1].row + 1);
+    expect(height).toBe(rows * LEGEND_ROW_HEIGHT + 8);
+  });
+
+  it("never wraps a lone first label, however long, and takes no room for no labels", () => {
+    expect(layoutLegend(["A very long series label that is wider than the plot"], 40).rows).toBe(1);
+    expect(layoutLegend([], 400)).toEqual({ items: [], rows: 0, height: 0 });
+  });
+
+  it("shows a legend only when it tells series apart: more than one series and at least one name", () => {
+    expect(legendLabels([{ label: "Only one" }])).toEqual([]);
+    expect(legendLabels([{}, {}])).toEqual([]);
+    expect(legendLabels([{ label: "2022" }, { label: "2023" }])).toEqual(["2022", "2023"]);
+    expect(legendLabels([{ label: "2022" }, {}])).toEqual(["2022", "Series 2"]);
   });
 });

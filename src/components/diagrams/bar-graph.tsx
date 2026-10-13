@@ -2,19 +2,21 @@ import type { BarGraphDiagram } from "@/lib/content/diagram-schema";
 import { layoutBars, shouldRotateLabels } from "@/lib/diagrams/bar-layout";
 import { describeBarGraph } from "@/lib/diagrams/describe";
 import { axisTicks, formatTick, type PixelDims } from "@/lib/diagrams/geometry";
+import { layoutLegend, LEGEND_ROW_HEIGHT, legendLabels } from "@/lib/diagrams/legend";
 import { SERIES_COLOR } from "@/lib/diagrams/palette";
 
 const PLOT_HEIGHT = 232;
 const TICK_COUNT = 5;
 
 export function BarGraph({ diagram }: { diagram: BarGraphDiagram }) {
-  const legend = diagram.series.length > 1;
   const width = 420;
   const marginLeft = 55;
   const marginRight = 20;
+  const labels = legendLabels(diagram.series);
+  const legend = layoutLegend(labels, width - marginLeft - marginRight);
   const slot = (width - marginLeft - marginRight) / diagram.categories.length;
   const rotate = shouldRotateLabels(diagram.categories, slot);
-  const marginTop = legend ? 44 : 20;
+  const marginTop = 20 + legend.height;
   const marginBottom = rotate ? 96 : 48;
   const dims: PixelDims = { width, height: PLOT_HEIGHT + marginTop + marginBottom, marginLeft, marginRight, marginTop, marginBottom };
   const layout = layoutBars(diagram.series, diagram.categories.length, diagram.yMin, diagram.yMax, dims);
@@ -71,18 +73,14 @@ export function BarGraph({ diagram }: { diagram: BarGraphDiagram }) {
         {diagram.yLabel}
       </text>
 
-      {legend &&
-        diagram.series.map((s, si) => {
-          const x = marginLeft + si * 120;
-          return (
-            <g key={si}>
-              <rect x={x} y={12} width={12} height={12} fill={SERIES_COLOR[s.color]} />
-              <text x={x + 18} y={22} fontSize={11} fill="currentColor">
-                {s.label ?? `Series ${si + 1}`}
-              </text>
-            </g>
-          );
-        })}
+      {labels.map((label, i) => (
+        <g key={i} transform={`translate(${marginLeft + legend.items[i].x}, ${10 + legend.items[i].row * LEGEND_ROW_HEIGHT})`}>
+          <rect width={12} height={12} fill={SERIES_COLOR[diagram.series[i].color]} />
+          <text x={18} y={10} fontSize={11} fill="currentColor">
+            {label}
+          </text>
+        </g>
+      ))}
     </svg>
   );
 }

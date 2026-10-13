@@ -1,12 +1,17 @@
 import type { XYGraphDiagram } from "@/lib/content/diagram-schema";
 import { axisTicks, formatTick, projectPoint, type PixelDims } from "@/lib/diagrams/geometry";
+import { layoutLegend, LEGEND_ROW_HEIGHT, legendLabels } from "@/lib/diagrams/legend";
 import { SERIES_COLOR } from "@/lib/diagrams/palette";
 
-const DIMS: PixelDims = { width: 400, height: 280, marginLeft: 55, marginRight: 20, marginTop: 20, marginBottom: 45 };
+const BASE_DIMS: PixelDims = { width: 400, height: 280, marginLeft: 55, marginRight: 20, marginTop: 20, marginBottom: 45 };
 const TICK_COUNT = 5;
 
 export function XYGraph({ diagram }: { diagram: XYGraphDiagram }) {
   const bounds = diagram;
+  const labels = legendLabels(diagram.series);
+  const legend = layoutLegend(labels, BASE_DIMS.width - BASE_DIMS.marginLeft - BASE_DIMS.marginRight);
+  // The plot keeps its size: the legend's room is added above it.
+  const DIMS: PixelDims = { ...BASE_DIMS, marginTop: BASE_DIMS.marginTop + legend.height, height: BASE_DIMS.height + legend.height };
   const xTicks = axisTicks(diagram.xMin, diagram.xMax, TICK_COUNT);
   const yTicks = axisTicks(diagram.yMin, diagram.yMax, TICK_COUNT);
 
@@ -101,6 +106,14 @@ export function XYGraph({ diagram }: { diagram: XYGraphDiagram }) {
           </g>
         );
       })}
+      {labels.map((label, i) => (
+        <g key={label} transform={`translate(${DIMS.marginLeft + legend.items[i].x}, ${10 + legend.items[i].row * LEGEND_ROW_HEIGHT})`}>
+          <rect width={12} height={12} fill={SERIES_COLOR[diagram.series[i].color]} />
+          <text x={18} y={10} fontSize={11} fill="currentColor">
+            {label}
+          </text>
+        </g>
+      ))}
     </svg>
   );
 }
