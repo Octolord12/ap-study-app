@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { BarGraphDiagram, CladogramDiagram, CladogramNode, DataTableDiagram } from "@/lib/content/diagram-schema";
 import { GROUP_FRACTION, layoutBars, shouldRotateLabels, yPixel } from "@/lib/diagrams/bar-layout";
-import { CLADOGRAM_DIMS, layoutCladogram, tipCount, tipLabels, treeDepth } from "@/lib/diagrams/cladogram-layout";
+import { CLADOGRAM_CHAR_WIDTH, CLADOGRAM_DIMS, CLADOGRAM_LEVEL_WIDTH, layoutCladogram, tipCount, tipLabels, treeDepth } from "@/lib/diagrams/cladogram-layout";
 import { describeBarGraph, describeCladogram, describeDataTable, nestedGroups } from "@/lib/diagrams/describe";
 import { axisTicks, formatTick, type PixelDims } from "@/lib/diagrams/geometry";
 import { layoutLegend, LEGEND_ROW_HEIGHT, legendLabels } from "@/lib/diagrams/legend";
@@ -66,6 +66,26 @@ describe("cladogram layout", () => {
     expect(tipCount(root)).toBe(4);
     expect(treeDepth(root)).toBe(3);
     expect(tipLabels(root)).toEqual(["A", "B", "C", "D"]);
+  });
+
+  it("draws a deep tree wide enough that every level has room for a trait label, and leaves a shallow tree at the minimum width", () => {
+    const ladder: CladogramNode = { children: [tip("A"), { mark: "1", children: [tip("B"), { mark: "2", children: [tip("C"), { mark: "3", children: [tip("D"), { mark: "4", children: [tip("E"), tip("F")] }] }] }] }] };
+    expect(treeDepth(ladder)).toBe(5);
+    const { nodes } = layoutCladogram(ladder);
+    const xs = [...new Set(nodes.filter((n) => !n.isTip).map((n) => n.x))].sort((a, b) => a - b);
+    for (let i = 1; i < xs.length; i++) expect(xs[i] - xs[i - 1]).toBeGreaterThanOrEqual(CLADOGRAM_LEVEL_WIDTH);
+    const shallow = layoutCladogram(root).nodes.filter((n) => n.isTip)[0].x;
+    expect(shallow).toBe(CLADOGRAM_DIMS.stem + CLADOGRAM_DIMS.treeWidth);
+  });
+
+  it("sizes the room for the tip names to the longest name, up to the most that is allowed", () => {
+    const short = layoutCladogram({ children: [tip("Cat"), tip("Dog")] });
+    const medium = layoutCladogram({ children: [tip("Salamander"), tip("Dog")] });
+    const long = layoutCladogram({ children: [tip("A name that is much too long for the room"), tip("Dog")] });
+    const tipX = CLADOGRAM_DIMS.stem + CLADOGRAM_DIMS.treeWidth;
+    expect(medium.width - tipX).toBe(Math.ceil(10 * CLADOGRAM_CHAR_WIDTH) + 24);
+    expect(short.width).toBeLessThan(medium.width);
+    expect(long.width - tipX).toBe(CLADOGRAM_DIMS.labelRoom);
   });
 
   it("gives every tip its own row, evenly spaced from the top, all at the right edge", () => {

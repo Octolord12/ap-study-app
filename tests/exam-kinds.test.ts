@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { drawableTypes, examDraws } from "@/lib/content/exam-sections";
+import { drawableTypes, examDraws, frqSupplyShort } from "@/lib/content/exam-sections";
 import { frqTitle } from "@/lib/content/exam-format";
 import { CourseSchema, ExamSectionSchema, FRQSchema } from "@/lib/content/schema";
 import { checkExamSupply, validateFRQ } from "@/lib/content/validate";
@@ -135,5 +135,25 @@ describe("pickExamFrqIds for a section with kinds", () => {
     expect(picked).toHaveLength(6);
     expect(new Set(picked).size).toBe(6);
     expect(picked.every((id) => frqs.some((f) => f.id === id))).toBe(true);
+  });
+});
+
+describe("frqSupplyShort", () => {
+  const supply = (entries: [string, number][]) => new Map(entries);
+  const full = KINDS.map((k): [string, number] => [k, 8]);
+
+  it("is false when every kind has a prompt, although no prompt is typed with the section's own name", () => {
+    expect(frqSupplyShort(bio, supply(full))).toBe(false);
+  });
+
+  it("is true when one kind has no prompts", () => {
+    expect(frqSupplyShort(bio, supply(full.filter(([k]) => k !== "MODEL")))).toBe(true);
+  });
+
+  it("checks a plain section against its own type and count", () => {
+    const world = [{ type: "MCQ", questionCount: 55 }, { type: "SAQ", questionCount: 3 }, { type: "DBQ", questionCount: 1 }];
+    expect(frqSupplyShort(world, supply([["SAQ", 36], ["DBQ", 4]]))).toBe(false);
+    expect(frqSupplyShort(world, supply([["SAQ", 2], ["DBQ", 4]]))).toBe(true);
+    expect(frqSupplyShort(world, supply([["SAQ", 36]]))).toBe(true);
   });
 });

@@ -109,6 +109,14 @@ describe("cladogram", () => {
     expect(name).toContain('"mantle" arises');
   });
 
+  it("sits in a focusable box that scrolls sideways, and the tree keeps a minimum width so its labels stay readable on a phone", () => {
+    render(<DiagramRenderer diagram={clade} />);
+    const box = screen.getByRole("region", { name: /scrolls sideways/i });
+    expect(box).toHaveAttribute("tabindex", "0");
+    expect(box.className).toContain("overflow-x-auto");
+    expect(screen.getByRole("img").getAttribute("class")).toContain("min-w-[26rem]");
+  });
+
   it("writes every tip's name, the node marks and the branch character", () => {
     render(<DiagramRenderer diagram={clade} />);
     for (const text of ["Annelida", "Chiton", "Clam", "1", "2", "mantle"]) expect(screen.getByText(text)).toBeInTheDocument();

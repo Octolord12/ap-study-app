@@ -4,6 +4,7 @@ import { requireUserId } from "@/lib/auth/session";
 import { getDb } from "@/lib/db";
 import { startExam } from "@/lib/study/actions";
 import { formatDuration, SECTION_NAMES } from "@/lib/content/exam-format";
+import { frqSupplyShort } from "@/lib/content/exam-sections";
 import { Button } from "@/components/ui/button";
 import { Breadcrumb, Page, PageHeader, RuledList, Section } from "@/components/ui/page";
 import type { Course as ContentCourse } from "@/lib/content/schema";
@@ -25,8 +26,9 @@ export default async function ExamIntroPage({ params }: { params: Promise<{ cour
     getDb().fRQPrompt.groupBy({ by: ["type"], where: { courseId: course.id }, _count: { _all: true } }),
   ]);
   const availableFrqs = frqSupply.reduce((sum, row) => sum + row._count._all, 0);
-  const frqShort = examFormat.sections.some(
-    (s) => s.type !== "MCQ" && (frqSupply.find((row) => row.type === s.type)?._count._all ?? 0) < s.questionCount,
+  const frqShort = frqSupplyShort(
+    examFormat.sections,
+    new Map(frqSupply.map((row) => [row.type as string, row._count._all])),
   );
   const short = availableQuestions < (mcqSection?.questionCount ?? 0) || frqShort;
 

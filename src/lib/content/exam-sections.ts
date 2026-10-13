@@ -27,3 +27,12 @@ export function examDraws(sections: readonly ExamSectionShape[]): ExamDraw[] {
 export function drawableTypes(sections: readonly ExamSectionShape[]): string[] {
   return examDraws(sections).map((d) => d.type);
 }
+
+// True when the prompts a course has cannot fill its free-response sections (so the exam intro warns that the
+// simulation will be short). Supply is counted per prompt type and checked against the draws, not the section's
+// own `type`, because a section with `kinds` is made of prompts typed with the kinds.
+export function frqSupplyShort(sections: readonly ExamSectionShape[], supplyByType: ReadonlyMap<string, number>): boolean {
+  const needed = new Map<string, number>();
+  for (const draw of examDraws(sections)) needed.set(draw.type, (needed.get(draw.type) ?? 0) + draw.count);
+  return [...needed].some(([type, count]) => (supplyByType.get(type) ?? 0) < count);
+}
