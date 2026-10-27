@@ -1,0 +1,644 @@
+[
+  {
+    "id": "ap-stat-u3-frq-1",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-proportions",
+    "type": "COLLECT_DATA",
+    "prompt": "A teacher wants to find out whether sending a text-message reminder the evening before an assignment is due increases the proportion of students who turn the assignment in on time. Sixty students in the teacher's classes agree to take part and to receive a text message on their phone if they are asked to.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify the experimental units, the treatments, and the response variable for an experiment that the teacher could carry out.\n\n**B.** Describe how the teacher could use a random process to assign the students to the treatments.\n\n**C.** Describe one way that the teacher could reduce the chance that other differences between the two groups, such as the assignment itself, affect the results.\n\n**D.** State the statistics that the teacher should calculate from the data, and say how the teacher should compare the two groups.\n\n**E.** Suppose that the difference in the proportions turned in on time is too large to be explained by chance alone. What conclusion can the teacher make, and for which students does it apply?",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies the experimental units as the students."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Identifies the treatments (a reminder and no reminder) and the response variable (turned in on time)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Describes a random process for the assignment (such as a random number generator or drawing names)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: States that the students are divided into two groups, with each student having a chance of being in either group (for example 30 and 30)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Describes a way to reduce other sources of variation (the same assignment and due date for both groups, or blinding)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "D: States that the proportion on time should be calculated in each group."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: States that the groups are compared with the difference in the proportions."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "E: States a cause-and-effect conclusion, because of random assignment."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the conclusion applies to similar students (the volunteers), not to all students."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Gives the conclusion in context, in terms of the reminder and turning in the assignment on time."
+      }
+    ],
+    "sampleResponse": "A. The experimental units are the 60 students. The treatments are receiving the text-message reminder and not receiving a reminder (the control). The response variable is whether the student turns in the assignment on time.\n\nB. Number the students from 1 to 60. Use a random number generator to select 30 different numbers, and assign the students with those numbers to the reminder group. The other 30 students are the control group.\n\nC. Give both groups the same assignment with the same due date, and give both groups the same instructions, so that the only difference is the text message. (The teacher could also have someone who does not know the group record who turned in the work.)\n\nD. Calculate the proportion of students who turned in the assignment on time in each group, p̂₁ for the reminder group and p̂₂ for the control group, and compare them using the difference p̂₁ - p̂₂.\n\nE. Because the students were randomly assigned to the treatments, the teacher can conclude that the reminder caused the greater proportion of students to turn in the assignment on time. The conclusion applies to students like those in the experiment (the volunteers), and not to all students.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u3-frq-2",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "constructing-a-confidence-interval-for-a-population-proportion",
+    "type": "INFERENCE",
+    "prompt": "A city has about 120,000 adults. A transportation department selected a random sample of 400 adults from the city and asked each adult whether he or she rides a city bus at least once a week. In the sample, 172 of the adults said that they do.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify the appropriate inference procedure for estimating the proportion of all adults in the city who ride a city bus at least once a week, and state the parameter in context.\n\n**B.** Verify that the conditions for this procedure are met.\n\n**C.** Construct and show the work for a 95% confidence interval for the proportion of all adults in the city who ride a city bus at least once a week.\n\n**D.** Interpret the interval from part C in context.\n\n**E.** A city official claims that half of all adults in the city ride a city bus at least once a week. Does the interval provide convincing evidence against the claim? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies a one-sample z-interval for a population proportion."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: States the parameter in context: the proportion of all adults in the city who ride a city bus at least once a week."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition and the 10% condition (400 is less than 10% of 120,000)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the normality condition with the counts 172 and 228 (both at least 10)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Gives the correct formula with the values substituted (p̂ = 0.430, $z^*$ = 1.96, n = 400)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Gives the interval (0.381, 0.479)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Interprets the confidence level (95% confident)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States that the interval is for the proportion of all adults in the city who ride a city bus at least once a week."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that 0.50 is not in the interval, so it is not a plausible value."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Concludes that there is convincing evidence against the claim (the proportion is less than 0.50)."
+      }
+    ],
+    "sampleResponse": "A. A one-sample z-interval for a population proportion. The parameter is p, the proportion of all adults in the city who ride a city bus at least once a week.\n\nB. Randomization: the adults are a random sample from the city. 10% condition: the sample size of 400 is less than 10% of the 120,000 adults in the city. Normality: the numbers of successes and failures are 172 and 228, which are both at least 10.\n\nC. p̂ = 172 / 400 = 0.430. The interval is p̂ ± $z^*$√(p̂(1 - p̂) / n) = 0.430 ± 1.96√(0.430(1 - 0.430) / 400) = 0.430 ± 0.0485, which is (0.381, 0.479).\n\nD. We are 95% confident that the interval from 0.381 to 0.479 contains the proportion of all adults in the city who ride a city bus at least once a week.\n\nE. Yes. The value 0.50 is not in the interval (0.381, 0.479), so 0.50 is not a plausible value for the proportion. All plausible values are less than 0.50, so the interval provides convincing evidence that fewer than half of the adults ride a city bus at least once a week.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u3-frq-3",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "carrying-out-a-test-for-a-population-proportion",
+    "type": "INFERENCE",
+    "prompt": "A company that runs a gym says that 40% of its members renew their membership each year. The manager thinks that the proportion has increased after a change in the price. The manager selected a random sample of 150 members from the company's very large membership list, and 71 of them renewed.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** State the appropriate null and alternative hypotheses for a test of the manager's belief. Define any parameter that you use.\n\n**B.** Verify that the conditions for the test are met.\n\n**C.** Calculate the test statistic and the p-value for the test.\n\n**D.** Using a significance level of α = 0.05, state a conclusion for the test in context, and justify your conclusion.\n\n**E.** Describe a Type I error in the context of this test, and give its probability.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States the hypotheses H₀: p = 0.40 and Hₐ: p > 0.40."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Defines p as the proportion of all of the company's members who renew their membership."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition and the 10% condition."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the normality condition using the null value (n p₀ = 60 and n(1 - p₀) = 90, both at least 10)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the test statistic z = 1.83."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the p-value 0.033."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Compares the p-value with α = 0.05 and rejects the null hypothesis."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States a conclusion in context, in terms of the alternative (convincing evidence that the proportion who renew is greater than 0.40)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Describes a Type I error in context (convincing evidence of an increase when the proportion is still 0.40)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the probability of a Type I error is α = 0.05."
+      }
+    ],
+    "sampleResponse": "A. Let p be the proportion of all of the company's members who renew their membership. H₀: p = 0.40 and Hₐ: p > 0.40.\n\nB. Randomization: the members are a random sample from the membership list. 10% condition: 150 is less than 10% of a very large membership. Normality: n p₀ = 150(0.40) = 60 and n(1 - p₀) = 150(0.60) = 90, which are both at least 10.\n\nC. p̂ = 71 / 150 = 0.4733. z = (0.4733 - 0.40) / √(0.40(1 - 0.40) / 150) = 1.83. The p-value is P(z ≥ 1.83) = 0.033.\n\nD. The p-value 0.033 is less than α = 0.05, so reject the null hypothesis. There is convincing statistical evidence that the proportion of all of the company's members who renew their membership is greater than 0.40.\n\nE. A Type I error is concluding that there is convincing evidence that the proportion of all members who renew is greater than 0.40 when the proportion is actually 0.40. The probability of a Type I error is the significance level, α = 0.05.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u3-frq-4",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-proportions",
+    "type": "INFERENCE",
+    "prompt": "A district wants to compare how students at two large high schools feel about starting the school day later. A random sample of 220 students from School A and an independent random sample of 240 students from School B were each asked whether they favor a later start time. In the School A sample, 132 students favor a later start time, and in the School B sample, 105 students favor it.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify the appropriate inference procedure for estimating the difference between the proportions of all students at the two schools who favor a later start time, and state the parameter in context.\n\n**B.** Verify that the conditions for the procedure are met.\n\n**C.** Construct and show the work for a 95% confidence interval for the difference in the proportions of all students at the two schools who favor a later start time, School A minus School B.\n\n**D.** Interpret the interval from part C in context.\n\n**E.** Does the interval provide convincing evidence of a difference between the proportions of all students at the two schools who favor a later start time? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies a two-sample z-interval for a difference between population proportions."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: States the parameter in context: the difference between the proportions of all students at School A and at School B who favor a later start time."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition (two independent random samples) and the 10% condition for each sample."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the normality condition with the four counts (successes and failures in both samples, all at least 10)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Gives the correct formula with the values substituted (p̂₁ = 0.600, p̂₂ = 0.4375, $z^*$ = 1.96)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Gives the interval (0.072, 0.253)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Interprets the confidence level (95% confident)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States that the interval is for the difference in the two population proportions, in context."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the interval does not contain 0."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Concludes that the proportion is greater at School A (convincing evidence of a difference)."
+      }
+    ],
+    "sampleResponse": "A. A two-sample z-interval for a difference between population proportions. The parameter is p₁ - p₂, where p₁ is the proportion of all students at School A who favor a later start time and p₂ is the proportion of all students at School B who favor a later start time.\n\nB. Randomization: the data come from two independent random samples. 10% condition: each sample is less than 10% of the students at its (large) school. Normality: the numbers of successes and failures are 132 and 88 for School A and 105 and 135 for School B, all at least 10.\n\nC. p̂₁ = 132 / 220 = 0.600 and p̂₂ = 105 / 240 = 0.4375. The interval is (0.600 - 0.4375) ± 1.96√(0.600(1 - 0.600) / 220 + 0.4375(1 - 0.4375) / 240) = 0.1625 ± 0.0902, which is (0.072, 0.253).\n\nD. We are 95% confident that the interval from 0.072 to 0.253 contains the difference between the proportion of all students at School A and the proportion of all students at School B who favor a later start time.\n\nE. Yes. The interval (0.072, 0.253) does not contain 0, and all of its values are positive, so there is convincing evidence that the proportion of all students who favor a later start time is greater at School A than at School B.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u3-frq-5",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-proportions",
+    "type": "INFERENCE",
+    "prompt": "A teacher randomly assigned 160 volunteer students to two groups of 80. The students in Group 1 studied for a test with a new study app, and the students in Group 2 studied with a notebook. Then all of the students took the same test. In Group 1, 52 of the 80 students passed the test, and in Group 2, 38 of the 80 students passed. The teacher believes that the app increases the proportion of students like these who pass.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** State the appropriate null and alternative hypotheses for a test of the teacher's belief. Define any parameters that you use.\n\n**B.** Verify that the conditions for the test are met.\n\n**C.** Calculate the test statistic and the p-value for the test.\n\n**D.** Using a significance level of α = 0.05, state a conclusion for the test in context, and justify your conclusion.\n\n**E.** Can the teacher conclude that the app causes a greater proportion of students to pass? Can the conclusion be applied to all students? Justify your answers.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States H₀: p₁ - p₂ = 0 and Hₐ: p₁ - p₂ > 0."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Defines the parameters in context (the proportions of students like these who would pass with the app and with a notebook)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition (random assignment; the 10% condition is not needed)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the normality condition using the combined proportion (0.5625); all four expected counts are at least 10."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the test statistic z = 2.23, using the combined proportion in the standard error."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the p-value 0.013."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Compares the p-value with α = 0.05 and rejects the null hypothesis."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States a conclusion in context, in terms of the alternative (convincing evidence that the proportion who pass is greater with the app)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that a cause-and-effect conclusion is justified because of the random assignment."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the conclusion applies to students like the volunteers, not to all students."
+      }
+    ],
+    "sampleResponse": "A. Let p₁ be the proportion of students like these who would pass the test after studying with the app, and let p₂ be the proportion who would pass after studying with a notebook. H₀: p₁ - p₂ = 0 and Hₐ: p₁ - p₂ > 0.\n\nB. Randomization: the students were randomly assigned to the two treatments (the 10% condition is not needed for an experiment). Normality: the combined proportion is $\\hat{p}_c$ = (52 + 38) / (80 + 80) = 0.5625, and n$\\hat{p}_c$ = 45.0 and n(1 - $\\hat{p}_c$) = 35.0 for both groups, all at least 10.\n\nC. p̂₁ = 0.6500 and p̂₂ = 0.4750. z = (0.6500 - 0.4750) / √(0.5625(1 - 0.5625)(1/80 + 1/80)) = 2.23. The p-value is P(z ≥ 2.23) = 0.013.\n\nD. The p-value 0.013 is less than α = 0.05, so reject the null hypothesis. There is convincing statistical evidence that the proportion of students like these who would pass after studying with the app is greater than the proportion who would pass after studying with a notebook.\n\nE. Yes, the teacher can conclude that the app causes the greater proportion to pass, because the students were randomly assigned to the two treatments. No, the conclusion cannot be applied to all students, because the students were volunteers and not a random sample of all students; it applies to students like those in the experiment.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u3-frq-6",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "carrying-out-a-chi-square-test-for-homogeneity-or-independence",
+    "type": "INFERENCE",
+    "prompt": "A researcher selected a random sample of 300 adults from a large city and asked each adult for his or her age group and the main way that he or she gets news. The table shows the counts.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** State the appropriate null and alternative hypotheses for a test of whether there is an association between age group and the main way of getting news for adults in the city.\n\n**B.** Verify that the conditions for the test are met.\n\n**C.** Calculate the expected count for the adults who are under 30 and get news mainly online, and calculate the test statistic and the degrees of freedom.\n\n**D.** The p-value for the test is less than 0.0001. Using a significance level of α = 0.05, state a conclusion for the test in context, and justify your conclusion.\n\n**E.** Which cell of the table contributes the most to the chi-square statistic? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States the null hypothesis: no association between age group and the main way of getting news (independence), in context."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: States the alternative hypothesis: there is an association, in context."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition and the 10% condition."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the expected counts condition (all expected counts greater than 5), with the smallest expected count or a statement about the expected counts."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the expected count 43.3."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the test statistic 30.34."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "C: Gives the degrees of freedom 4."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Compares the p-value with α = 0.05 and rejects the null hypothesis."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "D: States a conclusion in context (convincing evidence of an association between age group and the main way of getting news)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Identifies the cell with the largest contribution (50 or over, from print: 9.00) with a justification."
+      }
+    ],
+    "sampleResponse": "A. H₀: There is no association between age group and the main way of getting news for the adults in the city (the variables are independent). Hₐ: There is an association between age group and the main way of getting news for the adults in the city.\n\nB. Randomization: the data are a random sample of adults from the city. 10% condition: 300 is less than 10% of the adults in a large city. Expected counts: all of the expected counts are greater than 5 (the smallest is 25.0).\n\nC. Expected count = (100)(130) / 300 = 43.3. χ² = Σ (observed - expected)² / expected = 30.34, with df = (3 - 1)(3 - 1) = 4.\n\nD. The p-value is less than 0.0001, which is less than α = 0.05, so reject the null hypothesis. There is convincing statistical evidence of an association between age group and the main way of getting news for the adults in the city.\n\nE. The adults who are 50 or over and get news mainly from print contribute the most. The contribution (observed - expected)² / expected is (40 - 25.0)² / 25.0 = 9.00, the largest of the nine cells.",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Age group",
+        "Online",
+        "Television",
+        "Print",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Under 30",
+          "60",
+          "25",
+          "15",
+          "100"
+        ],
+        [
+          "30 to 49",
+          "45",
+          "35",
+          "20",
+          "100"
+        ],
+        [
+          "50 or over",
+          "25",
+          "35",
+          "40",
+          "100"
+        ],
+        [
+          "Total",
+          "130",
+          "95",
+          "75",
+          "300"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Main way of getting news, for 300 adults"
+    }
+  },
+  {
+    "id": "ap-stat-u3-frq-7",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "carrying-out-a-chi-square-test-for-homogeneity-or-independence",
+    "type": "INFERENCE",
+    "prompt": "In a study of three treatments for back pain, 150 volunteer patients were randomly assigned to Treatment A, Treatment B or Treatment C, 50 patients to each. After 6 weeks, each patient was classified as improved, stayed the same, or got worse. The table shows the counts.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify the appropriate test for determining whether the distribution of the outcome is different for the three treatments, and state the null and alternative hypotheses.\n\n**B.** Verify that the conditions for the test are met.\n\n**C.** Calculate the test statistic and the degrees of freedom.\n\n**D.** The p-value for the test is 0.0028. Using a significance level of α = 0.05, state a conclusion for the test in context, and justify your conclusion.\n\n**E.** Does the conclusion support a cause-and-effect relationship between the treatment and the outcome? Does it apply to all patients with back pain? Justify your answers.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies a chi-square test for homogeneity."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: States H₀ (no difference in the distribution of the outcome across the treatments) and Hₐ (a difference), in context."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition (random assignment; no 10% condition)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the expected counts condition (all greater than 5)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the test statistic 16.16."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Gives the degrees of freedom 4."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Compares the p-value with α = 0.05 and rejects the null hypothesis."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States a conclusion in context (the distribution of the outcome is different for at least one treatment)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Says a cause-and-effect conclusion is justified because of the random assignment."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Says the conclusion applies to patients like the volunteers, not to all patients with back pain."
+      }
+    ],
+    "sampleResponse": "A. A chi-square test for homogeneity. H₀: There is no difference in the distribution of the outcome (improved, stayed the same, got worse) across the three treatments. Hₐ: There is a difference in the distribution of the outcome across the three treatments.\n\nB. Randomization: the patients were randomly assigned to the treatments (the 10% condition is not needed for an experiment). Expected counts: all of the expected counts are greater than 5 (the smallest is 11.0).\n\nC. χ² = Σ (observed - expected)² / expected = 16.16, and df = (3 - 1)(3 - 1) = 4.\n\nD. The p-value 0.0028 is less than α = 0.05, so reject the null hypothesis. There is convincing statistical evidence that the distribution of the outcome is different for at least one of the three treatments.\n\nE. Yes, because the patients were randomly assigned to the treatments, a difference in the distributions of the outcome that is too large to be due to chance can be attributed to the treatments. No, the patients were volunteers and not a random sample of all patients with back pain, so the conclusion applies to patients like those in the study.",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Treatment",
+        "Improved",
+        "Stayed the same",
+        "Got worse",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Treatment A",
+          "30",
+          "15",
+          "5",
+          "50"
+        ],
+        [
+          "Treatment B",
+          "22",
+          "18",
+          "10",
+          "50"
+        ],
+        [
+          "Treatment C",
+          "12",
+          "20",
+          "18",
+          "50"
+        ],
+        [
+          "Total",
+          "64",
+          "53",
+          "33",
+          "150"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Outcomes of 150 patients"
+    }
+  },
+  {
+    "id": "ap-stat-u3-frq-8",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "sampling-distributions-for-sample-proportions",
+    "type": "MULTI_FOCUS",
+    "prompt": "A company says that 30% of the visits to its website end with a click on an advertisement. A marketing analyst believes that the proportion is greater than 30%. The analyst plans to take a random sample of 100 visits from the very large number of visits to the website, and to test the company's claim at the significance level α = 0.05.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Suppose that the company's claim is correct. Find the mean and the standard deviation of the sampling distribution of the sample proportion $\\hat{p}$ for random samples of 100 visits.\n\n**B.** Verify that the sampling distribution of $\\hat{p}$ can be approximated by a normal distribution.\n\n**C.** Suppose that the company's claim is correct. Calculate the probability that the proportion of the 100 visits in the sample that end with a click is 0.38 or greater.\n\n**D.** Describe a Type I error in the context of this test, and give its probability.\n\n**E.** Describe a Type II error in the context of this test. State one change to the study that would decrease the probability of a Type II error.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States the mean of the sampling distribution as 0.30."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Calculates the standard deviation 0.0458."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization and 10% conditions."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies that n p and n(1 - p) are both at least 10 (30 and 70)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the z-score 1.75 using the mean and standard deviation from part A."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the probability 0.040."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Describes a Type I error in context (evidence for a proportion greater than 0.30 when it is 0.30)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States that the probability of a Type I error is 0.05."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Describes a Type II error in context (no convincing evidence of a proportion greater than 0.30 when it is greater)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States a valid change that decreases the probability of a Type II error (a larger sample size, or a larger α)."
+      }
+    ],
+    "sampleResponse": "A. μ = p = 0.30 and σ = √(p(1 - p) / n) = √(0.30(0.70) / 100) = 0.0458.\n\nB. The visits are a random sample, 100 is less than 10% of a very large number of visits, and n p = 100(0.30) = 30 and n(1 - p) = 100(0.70) = 70 are both at least 10, so the sampling distribution is approximately normal.\n\nC. z = (0.38 - 0.30) / 0.0458 = 1.75, so P($\\hat{p}$ ≥ 0.38) = P(z ≥ 1.75) = 0.040.\n\nD. A Type I error is concluding that there is convincing evidence that the proportion of visits that end with a click is greater than 0.30, when the proportion is actually 0.30. Its probability is the significance level, 0.05.\n\nE. A Type II error is concluding that there is not convincing evidence that the proportion of visits that end with a click is greater than 0.30, when it is actually greater than 0.30. Increasing the sample size (or increasing the significance level) would decrease the probability of a Type II error.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u3-frq-9",
+    "unit": "unit-3-inference-for-categorical-data-proportions",
+    "topic": "constructing-a-confidence-interval-for-a-population-proportion",
+    "type": "MULTI_FOCUS",
+    "prompt": "A city council wants to estimate the proportion of the 5,000 registered voters in a neighborhood who support building a new park. The council has an alphabetical list of all 5,000 registered voters.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** The council wants a 95% confidence interval with a margin of error of no more than 0.04, and has no earlier estimate of the proportion. Find the minimum sample size that is needed. Show your work.\n\n**B.** Describe how the council could select a simple random sample of voters of the size found in part A from the list.\n\n**C.** Instead, the council mails a survey to 800 randomly selected voters, and 320 of them return it. Identify a type of bias that could affect the result, and explain how it could affect the result.\n\n**D.** Of the 320 voters who returned the survey, 176 support building the park. Construct a 95% confidence interval for the proportion of all voters in the neighborhood who support building the park.\n\n**E.** Explain why the margin of error of the interval in part D does not take the bias from part C into account.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Uses the sample size formula with p̂ = 0.5 and the correct values substituted."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Calculates 600.25."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "A: Rounds up to 601."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Describes numbering the voters and using a random number generator (or another random process)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "B: States that 601 different numbers are selected (without replacement)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Identifies nonresponse bias."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "C: Explains how it could affect the result (the voters who responded may differ from those who did not)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Gives the correct interval formula with the values substituted ($\\hat{p}$ = 0.550, n = 320)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "D: Gives the interval (0.495, 0.605)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Explains that the margin of error accounts only for sampling variability and not for bias from the sampling method."
+      }
+    ],
+    "sampleResponse": "A. n = ($z^*$ / MOE)² p̂(1 - p̂) with p̂ = 0.5 (the value that gives the largest sample size): n = (1.96 / 0.04)²(0.5)(0.5) = 600.25. The sample size must be a whole number, so round up: n = 601.\n\nB. Number the voters from 1 to 5,000 in the list. Use a random number generator to select 601 different numbers between 1 and 5,000. The voters with those numbers are the sample.\n\nC. Nonresponse bias: only 320 of the 800 voters responded (40%). The voters who returned the survey may differ from the voters who did not (for example, voters with a strong opinion about the park may be more likely to respond), so the result may be consistently too high or too low for the voters in the neighborhood.\n\nD. p̂ = 176 / 320 = 0.550. The interval is 0.550 ± 1.96√(0.550(1 - 0.550) / 320) = 0.550 ± 0.0545, which is (0.495, 0.605).\n\nE. The margin of error measures only the variability from sampling (how much the sample proportion typically varies from sample to sample). Bias is a systematic error from the sampling method, so a larger sample or a different margin of error would not remove it.",
+    "reviewed": false
+  }
+]

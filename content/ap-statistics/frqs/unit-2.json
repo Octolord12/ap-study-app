@@ -1,0 +1,961 @@
+[
+  {
+    "id": "ap-stat-u2-frq-1",
+    "unit": "unit-2-probability-random-variables-and-probability-distributions",
+    "topic": "estimating-probabilities-using-simulation",
+    "type": "COLLECT_DATA",
+    "prompt": "A restaurant puts a coupon for a free dessert in 1 of every 5 of its children's meals, chosen at random, so each meal has a coupon with probability 0.20, independently of the other meals. A family buys 4 children's meals. The restaurant owner wants to estimate the probability that at least one of the 4 meals has a coupon. A student plans to use a table of random digits, in which each of the digits 0 through 9 is equally likely, to simulate the process.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe how the student can use the random digits to simulate whether one meal has a coupon.\n\n**B.** Describe one trial of the simulation. Say what the student does and what the student records.\n\n**C.** The student carries out 100 trials of the simulation. In 58 of the trials, at least one of the 4 meals has a coupon. Calculate an estimate of the probability that at least one of the 4 meals has a coupon.\n\n**D.** Calculate the exact probability that at least one of the 4 meals has a coupon. Show your work.\n\n**E.** Explain why the estimate in part C is not equal to the exact probability in part D, and describe how the student could get an estimate that is likely to be closer to the exact probability.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Assigns digits to a coupon with a total probability of 0.20 (for example, 0 and 1 represent a coupon)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Assigns the remaining digits (2 through 9) to a meal without a coupon."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Describes one trial as reading 4 digits, one for each of the 4 meals."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: States that the student records whether at least one of the 4 digits is a coupon digit."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the estimate as the relative frequency 58 / 100 = 0.58."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "D: Uses the complement: P(at least one coupon) = 1 - P(no coupon in the 4 meals)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Calculates P(no coupon in the 4 meals) = (0.80)⁴ = 0.4096 (using independence)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Calculates the exact probability 0.5904."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Explains that the estimate is based on a limited number of trials, so it varies by chance from the exact probability."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that more trials are likely to give an estimate that is closer to the exact probability (the law of large numbers)."
+      }
+    ],
+    "sampleResponse": "A. Let the digits 0 and 1 represent a meal with a coupon and the digits 2 through 9 represent a meal without a coupon. Two of the ten equally likely digits give a probability of 0.20 for a coupon.\n\nB. One trial reads 4 digits from the table, one for each of the meals. The student records whether at least one of the 4 digits is a 0 or a 1 (a coupon).\n\nC. The estimated probability is the relative frequency of the trials with at least one coupon: 58 / 100 = 0.58.\n\nD. The probability that a meal has no coupon is 0.80, and the meals are independent, so P(no coupon in 4 meals) = (0.80)⁴ = 0.4096. P(at least one coupon) = 1 - 0.4096 = 0.5904.\n\nE. An estimate from a simulation is a relative frequency of a number of trials that is not large, so it varies by chance and is not usually equal to the exact probability (0.58 compared with 0.5904). The student could run many more trials, since by the law of large numbers the relative frequency gets closer to the probability as the number of trials increases.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u2-frq-2",
+    "unit": "unit-2-probability-random-variables-and-probability-distributions",
+    "topic": "summary-statistics-for-two-categorical-variables",
+    "type": "ANALYZE_DATA",
+    "prompt": "A researcher surveyed 500 adults, 300 who live in an urban area and 200 who live in a rural area, about the kind of pet that they own. The table shows the results.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Calculate the joint relative frequency of the adults who live in a rural area and own a dog. Interpret this value in context.\n\n**B.** Calculate the marginal relative frequency of the adults who own a cat.\n\n**C.** Among the adults who live in an urban area, what proportion own a cat? Among the adults who live in a rural area, what proportion own a cat?\n\n**D.** Given that an adult owns a dog, what is the proportion who live in a rural area?\n\n**E.** The researcher claims that there is an association between the region where an adult lives and the kind of pet that the adult owns. Use the relative frequencies of the dog owners in each region to justify the claim.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Calculates the joint relative frequency 100 / 500 = 0.20."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Interprets the value in context: about 20% of all of the adults in the survey live in a rural area and own a dog."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Identifies the number of cat owners (150) and divides by the total 500."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Gives the marginal relative frequency 0.30."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the proportion of the urban adults who own a cat: 110 / 300 = 0.367."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the proportion of the rural adults who own a cat: 40 / 200 = 0.200."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Restricts to the 160 adults who own a dog."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Gives the conditional relative frequency 100 / 160 = 0.625."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Compares the proportions of dog owners in each region (0.20 for urban and 0.50 for rural)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Concludes that the proportions are different, so the variables appear to be associated."
+      }
+    ],
+    "sampleResponse": "A. The joint relative frequency is 100 / 500 = 0.20. About 20% of all of the 500 adults surveyed live in a rural area and own a dog.\n\nB. 150 adults own a cat, so the marginal relative frequency is 150 / 500 = 0.30.\n\nC. Urban: 110 / 300 = 0.367. Rural: 40 / 200 = 0.200.\n\nD. There are 160 dog owners and 100 of them live in a rural area: 100 / 160 = 0.625.\n\nE. The conditional relative frequency of owning a dog is 60 / 300 = 0.20 for the adults in an urban area and 100 / 200 = 0.50 for the adults in a rural area. The proportions are very different, so the distribution of the kind of pet is not the same in the two regions, which is evidence of an association between region and kind of pet.",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Region",
+        "Dog",
+        "Cat",
+        "No pet",
+        "Total"
+      ],
+      "rows": [
+        [
+          "Urban",
+          "60",
+          "110",
+          "130",
+          "300"
+        ],
+        [
+          "Rural",
+          "100",
+          "40",
+          "60",
+          "200"
+        ],
+        [
+          "Total",
+          "160",
+          "150",
+          "190",
+          "500"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Pets owned by 500 adults, by region"
+    }
+  },
+  {
+    "id": "ap-stat-u2-frq-3",
+    "unit": "unit-2-probability-random-variables-and-probability-distributions",
+    "topic": "parameters-of-random-variables",
+    "type": "ANALYZE_DATA",
+    "prompt": "The random variable X is the number of customers who arrive at a coffee counter during a randomly selected 10-minute interval. The table shows the probability distribution of X, with one probability missing.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Find the missing probability, P(X = 3).\n\n**B.** What is the probability that at least 2 customers arrive in a 10-minute interval? Show your work.\n\n**C.** Calculate the mean (expected value) of X. Show your work.\n\n**D.** Calculate the standard deviation of X. Show your work.\n\n**E.** Interpret the mean from part C and the standard deviation from part D in context, and use the table to say whether it would be unusual for 4 customers to arrive in a 10-minute interval.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Uses the fact that the probabilities add to 1 and finds P(X = 3) = 0.20."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "B: Identifies the values X = 2, 3 and 4 (at least 2)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Adds the probabilities to get 0.55."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "C: Uses the expected value formula, the sum of x P(x)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the mean 1.80."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "D: Uses the standard deviation formula with the deviations from the mean."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Calculates the standard deviation 1.21."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "E: Interprets the mean in context: the long-run average number of customers per 10-minute interval is about 1.80."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Interprets the standard deviation in context: the number of customers typically differs from the mean by about 1.21 customers."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Uses P(X = 4) = 0.10 to say whether 4 customers is unusual (it happens 10% of the time, so it is not very unusual)."
+      }
+    ],
+    "sampleResponse": "A. The probabilities add to 1, so P(X = 3) = 1 - (0.15 + 0.30 + 0.25 + 0.10) = 0.20.\n\nB. P(X ≥ 2) = P(2) + P(3) + P(4) = 0.25 + 0.20 + 0.10 = 0.55.\n\nC. μ = 0(0.15) + 1(0.30) + 2(0.25) + 3(0.20) + 4(0.10) = 1.80 customers.\n\nD. σ = √[(0 - 1.80)²(0.15) + (1 - 1.80)²(0.30) + (2 - 1.80)²(0.25) + (3 - 1.80)²(0.20) + (4 - 1.80)²(0.10)] = √1.4600 = 1.21 customers.\n\nE. Over a very large number of 10-minute intervals, the mean number of customers who arrive per interval is about 1.80 customers. The number of customers in an interval typically differs from the mean of 1.80 by about 1.21 customers. P(X = 4) = 0.10, so 4 customers arrive in 10% of the intervals, which is not very unusual.",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Number of customers, x",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "rows": [
+        [
+          "P(X = x)",
+          "0.15",
+          "0.30",
+          "0.25",
+          "?",
+          "0.10"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Probability distribution of the number of customers who arrive in a 10-minute interval"
+    }
+  },
+  {
+    "id": "ap-stat-u2-frq-4",
+    "unit": "unit-2-probability-random-variables-and-probability-distributions",
+    "topic": "the-normal-distribution",
+    "type": "ANALYZE_DATA",
+    "prompt": "The battery life of a certain brand of phone battery is approximately normally distributed with a mean of 40 hours and a standard deviation of 5 hours. The graph shows the distribution.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Calculate the z-score for a battery that lasts 33 hours, and interpret the z-score in context.\n\n**B.** What is the probability that a randomly selected battery lasts less than 33 hours? Sketch a normal curve, shade the region, and show your work.\n\n**C.** What is the probability that a randomly selected battery lasts between 35 hours and 48 hours? Show your work.\n\n**D.** Find the battery life that is at the 90th percentile of the distribution. Show your work.\n\n**E.** A battery lasts 28 hours. Calculate the z-score, and use it to say whether a battery life of 28 hours is unusual.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Calculates z = (33 - 40) / 5 = -1.4."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Interprets the z-score in context: the battery life is 1.4 standard deviations below the mean battery life."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Draws a normal curve, labels the mean, and shades the region to the left of 33."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Calculates the probability 0.0808."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates both z-scores (-1.0 and 1.6) or identifies the boundaries 35 and 48."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the probability 0.7865 (the area between the boundaries)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Uses the z-score for the 90th percentile (1.28)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Calculates the battery life 46.4 hours."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Calculates z = (28 - 40) / 5 = -2.4."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Concludes that 28 hours is unusual, with a justification (2.4 standard deviations below the mean, or a probability of 0.0082)."
+      }
+    ],
+    "sampleResponse": "A. z = (33 - 40) / 5 = -1.4. A battery that lasts 33 hours has a life that is 1.4 standard deviations below the mean battery life.\n\nB. P(X < 33) = P(Z < -1.4) = 0.0808. (The sketch is a normal curve with the mean 40 marked, the region to the left of 33 shaded, and 33 labeled.)\n\nC. z = (35 - 40) / 5 = -1.0 and z = (48 - 40) / 5 = 1.6. P(35 < X < 48) = P(-1.0 < Z < 1.6) = 0.9452 - 0.1587 = 0.7865.\n\nD. The 90th percentile has z = 1.282, so x = 40 + 1.282(5) = 46.4 hours.\n\nE. z = (28 - 40) / 5 = -2.4. The battery life is 2.4 standard deviations below the mean, and P(X < 28) = 0.0082, so only about 0.8% of the batteries last less than 28 hours. A battery life of 28 hours is unusual.",
+    "reviewed": false,
+    "diagram": {
+      "type": "density-curve",
+      "points": [
+        {
+          "x": 25.0,
+          "y": 0.000886
+        },
+        {
+          "x": 25.4167,
+          "y": 0.001134
+        },
+        {
+          "x": 25.8333,
+          "y": 0.001441
+        },
+        {
+          "x": 26.25,
+          "y": 0.001819
+        },
+        {
+          "x": 26.6667,
+          "y": 0.002279
+        },
+        {
+          "x": 27.0833,
+          "y": 0.002837
+        },
+        {
+          "x": 27.5,
+          "y": 0.003506
+        },
+        {
+          "x": 27.9167,
+          "y": 0.004303
+        },
+        {
+          "x": 28.3333,
+          "y": 0.005244
+        },
+        {
+          "x": 28.75,
+          "y": 0.006348
+        },
+        {
+          "x": 29.1667,
+          "y": 0.007631
+        },
+        {
+          "x": 29.5833,
+          "y": 0.009109
+        },
+        {
+          "x": 30.0,
+          "y": 0.010798
+        },
+        {
+          "x": 30.4167,
+          "y": 0.012712
+        },
+        {
+          "x": 30.8333,
+          "y": 0.014862
+        },
+        {
+          "x": 31.25,
+          "y": 0.017255
+        },
+        {
+          "x": 31.6667,
+          "y": 0.019895
+        },
+        {
+          "x": 32.0833,
+          "y": 0.022781
+        },
+        {
+          "x": 32.5,
+          "y": 0.025904
+        },
+        {
+          "x": 32.9167,
+          "y": 0.029251
+        },
+        {
+          "x": 33.3333,
+          "y": 0.032802
+        },
+        {
+          "x": 33.75,
+          "y": 0.03653
+        },
+        {
+          "x": 34.1667,
+          "y": 0.0404
+        },
+        {
+          "x": 34.5833,
+          "y": 0.04437
+        },
+        {
+          "x": 35.0,
+          "y": 0.048394
+        },
+        {
+          "x": 35.4167,
+          "y": 0.052417
+        },
+        {
+          "x": 35.8333,
+          "y": 0.056382
+        },
+        {
+          "x": 36.25,
+          "y": 0.060227
+        },
+        {
+          "x": 36.6667,
+          "y": 0.06389
+        },
+        {
+          "x": 37.0833,
+          "y": 0.067305
+        },
+        {
+          "x": 37.5,
+          "y": 0.070413
+        },
+        {
+          "x": 37.9167,
+          "y": 0.073154
+        },
+        {
+          "x": 38.3333,
+          "y": 0.075477
+        },
+        {
+          "x": 38.75,
+          "y": 0.077334
+        },
+        {
+          "x": 39.1667,
+          "y": 0.078688
+        },
+        {
+          "x": 39.5833,
+          "y": 0.079512
+        },
+        {
+          "x": 40.0,
+          "y": 0.079788
+        },
+        {
+          "x": 40.4167,
+          "y": 0.079512
+        },
+        {
+          "x": 40.8333,
+          "y": 0.078688
+        },
+        {
+          "x": 41.25,
+          "y": 0.077334
+        },
+        {
+          "x": 41.6667,
+          "y": 0.075477
+        },
+        {
+          "x": 42.0833,
+          "y": 0.073154
+        },
+        {
+          "x": 42.5,
+          "y": 0.070413
+        },
+        {
+          "x": 42.9167,
+          "y": 0.067305
+        },
+        {
+          "x": 43.3333,
+          "y": 0.06389
+        },
+        {
+          "x": 43.75,
+          "y": 0.060227
+        },
+        {
+          "x": 44.1667,
+          "y": 0.056382
+        },
+        {
+          "x": 44.5833,
+          "y": 0.052417
+        },
+        {
+          "x": 45.0,
+          "y": 0.048394
+        },
+        {
+          "x": 45.4167,
+          "y": 0.04437
+        },
+        {
+          "x": 45.8333,
+          "y": 0.0404
+        },
+        {
+          "x": 46.25,
+          "y": 0.03653
+        },
+        {
+          "x": 46.6667,
+          "y": 0.032802
+        },
+        {
+          "x": 47.0833,
+          "y": 0.029251
+        },
+        {
+          "x": 47.5,
+          "y": 0.025904
+        },
+        {
+          "x": 47.9167,
+          "y": 0.022781
+        },
+        {
+          "x": 48.3333,
+          "y": 0.019895
+        },
+        {
+          "x": 48.75,
+          "y": 0.017255
+        },
+        {
+          "x": 49.1667,
+          "y": 0.014862
+        },
+        {
+          "x": 49.5833,
+          "y": 0.012712
+        },
+        {
+          "x": 50.0,
+          "y": 0.010798
+        },
+        {
+          "x": 50.4167,
+          "y": 0.009109
+        },
+        {
+          "x": 50.8333,
+          "y": 0.007631
+        },
+        {
+          "x": 51.25,
+          "y": 0.006348
+        },
+        {
+          "x": 51.6667,
+          "y": 0.005244
+        },
+        {
+          "x": 52.0833,
+          "y": 0.004303
+        },
+        {
+          "x": 52.5,
+          "y": 0.003506
+        },
+        {
+          "x": 52.9167,
+          "y": 0.002837
+        },
+        {
+          "x": 53.3333,
+          "y": 0.002279
+        },
+        {
+          "x": 53.75,
+          "y": 0.001819
+        },
+        {
+          "x": 54.1667,
+          "y": 0.001441
+        },
+        {
+          "x": 54.5833,
+          "y": 0.001134
+        },
+        {
+          "x": 55.0,
+          "y": 0.000886
+        }
+      ],
+      "shade": [],
+      "ticks": [
+        {
+          "x": 25,
+          "label": "25"
+        },
+        {
+          "x": 30,
+          "label": "30"
+        },
+        {
+          "x": 35,
+          "label": "35"
+        },
+        {
+          "x": 40,
+          "label": "40"
+        },
+        {
+          "x": 45,
+          "label": "45"
+        },
+        {
+          "x": 50,
+          "label": "50"
+        },
+        {
+          "x": 55,
+          "label": "55"
+        }
+      ],
+      "xLabel": "Battery life (hours)",
+      "altText": "Normal curve of the battery life, in hours, with mean 40 and standard deviation 5."
+    }
+  },
+  {
+    "id": "ap-stat-u2-frq-5",
+    "unit": "unit-2-probability-random-variables-and-probability-distributions",
+    "topic": "independent-events-and-unions-of-events",
+    "type": "ANALYZE_DATA",
+    "prompt": "At a high school, 60% of the students play a sport, 40% of the students are in the band, and 30% of the students both play a sport and are in the band. One student is selected at random from the school.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** What is the probability that the student plays a sport or is in the band? Show your work.\n\n**B.** What is the probability that the student neither plays a sport nor is in the band?\n\n**C.** Given that the student plays a sport, what is the probability that the student is in the band? Show your work.\n\n**D.** Are the events \"plays a sport\" and \"is in the band\" independent? Justify your answer with probabilities.\n\n**E.** Are the events \"plays a sport\" and \"is in the band\" mutually exclusive? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Uses P(A or B) = P(A) + P(B) - P(A and B), with the given probabilities substituted."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Calculates the probability 0.70."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Recognizes the event as the complement of \"sport or band\" (or uses 1 - the union)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Calculates the probability 0.30."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Uses the conditional probability formula P(band and sport) / P(sport)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the probability 0.50."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Compares P(band | sport) with P(band), or P(sport and band) with P(sport) P(band) = 0.24."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Concludes that the events are not independent, with the justification that the probabilities are not equal."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Uses the joint probability P(sport and band) = 0.30, which is not 0."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Concludes that the events are not mutually exclusive."
+      }
+    ],
+    "sampleResponse": "A. P(sport or band) = P(sport) + P(band) - P(sport and band) = 0.60 + 0.40 - 0.30 = 0.70.\n\nB. The event is the complement of \"sport or band\": 1 - 0.70 = 0.30.\n\nC. P(band | sport) = P(band and sport) / P(sport) = 0.30 / 0.60 = 0.50.\n\nD. If the events were independent, P(band | sport) would equal P(band), or P(sport and band) would equal P(sport) P(band) = 0.60(0.40) = 0.24. But P(band | sport) = 0.50 is not equal to P(band) = 0.40 (and 0.30 is not 0.24), so the events are not independent.\n\nE. The events are not mutually exclusive, because P(sport and band) = 0.30, which is not 0. Some students both play a sport and are in the band.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u2-frq-6",
+    "unit": "unit-2-probability-random-variables-and-probability-distributions",
+    "topic": "the-binomial-distribution",
+    "type": "ANALYZE_DATA",
+    "prompt": "A quiz has 10 multiple-choice questions, and each question has 4 choices. A student guesses the answer to every question. Let X be the number of questions that the student answers correctly. The dotplot shows the value of X in each of 50 simulated trials of this situation.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe the shape of the distribution of the simulated results.\n\n**B.** Use the dotplot to estimate the probability that the student answers at least 4 questions correctly.\n\n**C.** X is a binomial random variable. Identify n and p, and calculate the exact probability that the student answers at least 4 questions correctly. Show your work.\n\n**D.** Compare the estimate in part B with the exact probability in part C. Describe one way to improve the simulation.\n\n**E.** Calculate the mean and the standard deviation of X, and interpret the mean in context.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Describes the shape as skewed to the right (and unimodal)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "B: Counts the trials with 4 or more correct answers (9)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Divides by 50 to get the estimate 0.18."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "C: Identifies n = 10 and p = 0.25."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the probability 0.2241 (for example by the complement, 1 - P(X ≤ 3))."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "D: Compares the estimate with the exact probability."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Describes a valid improvement (many more trials)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "E: Calculates the mean 2.5 and the standard deviation 1.37."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Interprets the mean as the long-run average number of correct answers per quiz."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Uses the formulas for a binomial random variable, np and the square root of np(1 - p), with the values substituted."
+      }
+    ],
+    "sampleResponse": "A. The distribution is unimodal and skewed to the right. The most common values are 1, 2 and 3 correct answers, and there are a few trials with a large number of correct answers.\n\nB. 9 of the 50 trials have 4 or more correct answers, so the estimate is 9 / 50 = 0.18.\n\nC. n = 10 and p = 1/4 = 0.25. P(X ≥ 4) = 1 - P(X ≤ 3) = 1 - [P(0) + P(1) + P(2) + P(3)] = 1 - 0.7759 = 0.2241.\n\nD. The estimate 0.18 is close to the exact probability 0.2241; they differ because the simulation used only 50 trials. The simulation can be improved by using many more trials.\n\nE. μ = np = 10(0.25) = 2.5 and σ = √(np(1 - p)) = √(10(0.25)(0.75)) = 1.37. Over a very large number of quizzes on which the student guesses, the mean number of correct answers is about 2.5 per quiz.",
+    "reviewed": false,
+    "diagram": {
+      "type": "dotplot",
+      "xLabel": "Number of correct answers",
+      "axisMin": 0,
+      "axisMax": 10,
+      "axisStep": 1,
+      "dots": [
+        {
+          "x": 0,
+          "count": 2
+        },
+        {
+          "x": 1,
+          "count": 9
+        },
+        {
+          "x": 2,
+          "count": 16
+        },
+        {
+          "x": 3,
+          "count": 14
+        },
+        {
+          "x": 4,
+          "count": 7
+        },
+        {
+          "x": 5,
+          "count": 2
+        }
+      ],
+      "altText": "Dotplot of the number of correct answers out of 10, in each of 50 simulated trials of guessing on a quiz."
+    }
+  },
+  {
+    "id": "ap-stat-u2-frq-7",
+    "unit": "unit-2-probability-random-variables-and-probability-distributions",
+    "topic": "the-binomial-distribution",
+    "type": "MULTI_FOCUS",
+    "prompt": "A factory makes light bulbs, and 4% of the bulbs that it makes are defective. A quality inspector examines a random sample of 10 bulbs from one day's production, which is a very large number of bulbs. Let X be the number of defective bulbs in the sample of 10.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Explain why X can be modeled with a binomial distribution. Identify n and p.\n\n**B.** What is the probability that exactly 1 of the 10 bulbs is defective? Show your work.\n\n**C.** What is the probability that at least 1 of the 10 bulbs is defective? Show your work.\n\n**D.** Calculate the mean of X, and interpret the mean in context.\n\n**E.** The inspector could examine the first 10 bulbs made that day instead of a random sample. Explain why a random sample is better for estimating the proportion of defective bulbs made that day.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Justifies the binomial model: a fixed number of trials, two outcomes, independent, and the same probability of success."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Identifies n = 10 and p = 0.04."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Uses the binomial probability formula with n = 10, p = 0.04 and x = 1."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Calculates the probability 0.2770."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Uses the complement, 1 - P(X = 0), or adds the probabilities for 1 through 10."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the probability 0.3352."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Calculates the mean np = 0.40."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Interprets the mean in context: the long-run average number of defective bulbs in a sample of 10 is about 0.40."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Explains that the first 10 bulbs may not be representative of the whole day (a possible bias)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Explains that random selection gives every bulb a chance, so the sample can be used to generalize to the day's production."
+      }
+    ],
+    "sampleResponse": "A. There is a fixed number of trials (10 bulbs), each bulb is either defective (success) or not defective (failure), the bulbs are independent (a random sample from a very large number of bulbs), and the probability that a bulb is defective is the same, 0.04, for every bulb. So n = 10 and p = 0.04.\n\nB. P(X = 1) = C(10, 1)(0.04)¹(0.96)⁹ = 0.2770.\n\nC. P(X ≥ 1) = 1 - P(X = 0) = 1 - (0.96)¹⁰ = 1 - 0.6648 = 0.3352.\n\nD. μ = np = 10(0.04) = 0.40. Over many random samples of 10 bulbs, the mean number of defective bulbs per sample is about 0.40.\n\nE. The first 10 bulbs made may not be representative of the whole day: machines can behave differently when they start, so those bulbs might have a higher or lower rate of defects. A random sample gives every bulb made that day a chance of being selected, so the sample proportion can be used to estimate the proportion for the whole day without a systematic bias.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u2-frq-8",
+    "unit": "unit-2-probability-random-variables-and-probability-distributions",
+    "topic": "sampling-distributions-and-the-central-limit-theorem",
+    "type": "MULTI_FOCUS",
+    "prompt": "The waiting times at a clinic have a distribution that is strongly skewed to the right, with a mean of 20 minutes. A researcher simulates random samples of 40 waiting times from this population, calculates the mean of each sample, and repeats the process 200 times. The histogram shows the 200 sample means.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe the shape and the center of the distribution of the 200 sample means.\n\n**B.** Explain why the distribution of the sample means has the shape that you described in part A, even though the population is skewed to the right.\n\n**C.** Use the histogram to estimate the probability that a random sample of 40 waiting times has a mean greater than 24 minutes. Show your work.\n\n**D.** The researcher repeats the simulation with random samples of size 10 instead of size 40. Describe how the shape of the distribution of the sample means is likely to change, and explain why.\n\n**E.** The clinic has a list of 2,000 waiting times. Describe how the researcher can select a simple random sample of 40 of the waiting times from the list.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Describes the shape as approximately normal (unimodal and symmetric)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Describes the center as near 20 minutes (the population mean)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Cites the central limit theorem (the sampling distribution of a mean is approximately normal)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: States that this is because the sample size is large (and the approximation improves as the sample gets larger)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Counts the sample means greater than 24 (15)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Divides by 200 to get the estimate 0.075."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: States that the distribution of the means of samples of size 10 is likely to be more skewed to the right (less normal)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Explains that a smaller sample gives a poorer normal approximation (central limit theorem)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Describes numbering the 2,000 values and using a random mechanism, such as a random number generator, to choose numbers."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that 40 different numbers are selected (without replacement) and the corresponding waiting times are the sample."
+      }
+    ],
+    "sampleResponse": "A. The distribution of the sample means is approximately normal (unimodal and approximately symmetric), and it is centered near the population mean of 20 minutes (the mean of the 200 sample means is about 19.9 minutes).\n\nB. By the central limit theorem, the sampling distribution of the mean of a random sample has a shape that can be approximated by a normal distribution, and the larger the sample the better the approximation. A sample of size 40 is large enough for the distribution of the sample means to be approximately normal even though the population is skewed.\n\nC. 15 of the 200 sample means are greater than 24, so the estimated probability is 15 / 200 = 0.075.\n\nD. The distribution of the sample means for samples of size 10 is likely to be more skewed to the right (less close to normal) than for samples of size 40, because the normal approximation of the central limit theorem is better for larger samples.\n\nE. Number the waiting times from 1 to 2,000. Use a random number generator to select 40 different numbers between 1 and 2,000 (ignoring repeats), and use the waiting times with those numbers.",
+    "reviewed": false,
+    "diagram": {
+      "type": "histogram",
+      "xLabel": "Sample mean (minutes)",
+      "yLabel": "Frequency",
+      "edges": [
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36
+      ],
+      "values": [
+        0,
+        1,
+        20,
+        32,
+        57,
+        43,
+        32,
+        8,
+        5,
+        2,
+        0,
+        0,
+        0
+      ],
+      "yMax": 60,
+      "yStep": 10,
+      "tickAt": "edges",
+      "labelEvery": 1,
+      "altText": "Histogram of the means of 200 simulated random samples of 40 waiting times from a right-skewed population with mean 20 minutes."
+    }
+  }
+]

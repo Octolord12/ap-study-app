@@ -235,12 +235,14 @@ for u in 1 2 3 4 5 6; do python3 u$u.py && python3 u${u}_refreshers.py; done && 
 `ap-statistics/` builds the eighth course on the redesigned 2026-27 syllabus (see "AP Statistics" in CLAUDE.md). Needs `numpy` and `scipy` (`pip3 install --user numpy scipy`; local checking aids, not project dependencies).
 
 - `ap-statistics/make_units.py` writes `content/ap-statistics/course.json` (42 multiple choice plus four free-response kinds, 10 points each) and the five unit files (55 topics). The names, order and weightings are the CED's (effective Fall 2026); edit the script, not the JSON.
-- `lib.py` is the Bank (four choices per question, ids `ap-stat-uN-mcq-1..`, `ap-stat-uN-frq-1..`, ten one-point rubric lines per prompt) plus `lsrl` and the diagram builders. **Unit 5 is written** as the pilot (`u5_*.py`, `u5_refreshers.py`, assembled by `u5.py`).
+- `lib.py` is the Bank (four choices per question, ids `ap-stat-uN-mcq-1..`, `ap-stat-uN-frq-1..`, ten one-point rubric lines per prompt) plus the statistics helpers (`lsrl`, `prop_ci`, `t_test`, `chi_square`, `quartiles`, ...) and the diagram builders (`scatter`, `histogram`, `boxplot`, `dotplot`, `density`, `twoway`, `table`).
+  **All five units are written**: per unit `uN_a.py`..`uN_d.py` (multiple choice), `uN_frq*.py`, `uN_refreshers.py`, assembled by `uN.py`, which asserts the counts and then saves (502 multiple choice, 47 free response, 55 refreshers in all).
   `length_stats.py [unit]` measures whether the right answer is a length tell. `render-audit.ts ap-statistics` renders every string.
+- Every number in a question comes from numpy or scipy, computed from the same variables the stem prints. `check_markdown` fails the run on em dashes, unbalanced `$`, single-asterisk emphasis and `_` outside math: write `$z^*$`, `$t^*$`, `$\hat{p}_c$`, `$\mu_d$`.
 - **Run python directly, not with `-I`**: the isolated mode hides the user-level numpy and scipy.
-- Unlike Biology, the pilot was committed before the course was complete (owner's request), so `tests/exam-supply.test.ts` and `tests/exam-weighting.test.ts` fail for `ap-statistics` until all five units and all four free-response kinds exist.
+- The suite is green for `ap-statistics` now that all five units and all four free-response kinds exist (it was red between the pilot commit and Units 1 to 4).
 
 ```bash
 cd scripts/content-authoring/ap-statistics && python3 make_units.py
-python3 u5.py && python3 u5_refreshers.py && python3 length_stats.py
+for u in 1 2 3 4 5; do python3 u$u.py && python3 u${u}_refreshers.py; done && python3 length_stats.py
 ```

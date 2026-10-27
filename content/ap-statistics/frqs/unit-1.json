@@ -1,0 +1,1084 @@
+[
+  {
+    "id": "ap-stat-u1-frq-1",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "random-sampling",
+    "type": "COLLECT_DATA",
+    "prompt": "A national park wants to learn how visitors rate its trails. About 12,000 visitors come to the park on a typical weekend. The park is considering three methods of collecting data.\n\nMethod 1: Each visitor is given a different number when entering the park. A random number generator selects 400 different numbers, and the visitors with those numbers are surveyed.\n\nMethod 2: The park has three entrances (North, East, and South) that are used by different kinds of visitors. At each entrance, a random number generator selects 150 visitors, and these visitors are surveyed.\n\nMethod 3: A comment box is placed near the visitor center, and visitors are invited to drop in a rating card if they wish.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** (i) Identify the sampling method for Method 1.\n\n(ii) Identify the sampling method for Method 2.\n\n**B.** (i) Explain why the results of Method 1 can be generalized to all of the visitors to the park that weekend.\n\n(ii) Describe one advantage of Method 2 over Method 1.\n\n**C.** (i) Identify the type of bias that is most likely to affect the results of Method 3.\n\n(ii) Describe how the ratings from Method 3 would likely differ from the ratings of all of the visitors.\n\n**D.** Each surveyed visitor will rate the trails as Excellent, Good, Fair, or Poor. (i) Identify a graphical display that is appropriate for the percent of visitors who chose each rating.\n\n(ii) Explain why the display is appropriate.\n\n**E.** The park wants to know whether the mean rating of the trails, on a scale from 1 to 5, is greater for visitors who come with children than for visitors who come without children. Determine a valid investigative question for this study. Ensure that all three components of a valid investigative question are included in your response.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A(i): Identifies Method 1 as a simple random sample."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A(ii): Identifies Method 2 as a stratified random sample (with the entrances as the strata)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B(i): Explains that the visitors were selected using a random mechanism, so the sample is representative and the results can be generalized to all of the visitors that weekend."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B(ii): Describes an advantage of Method 2: it guarantees that each of the entrances is represented in the sample (which helps when visitors at the entrances differ)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C(i): Identifies voluntary response bias."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C(ii): Describes the likely difference: visitors with strong opinions (very satisfied or very dissatisfied) would be more likely to respond, so the ratings would not represent all of the visitors."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D(i): Identifies a bar chart (or a pie chart) of the relative frequencies."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D(ii): Explains that the rating is a categorical variable and that a bar chart displays the relative frequency of each category."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Gives an investigative question that is about the variable (the trail rating) and the parameter with the direction of the alternative (the mean rating greater for visitors with children)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Includes the population to which the conclusion applies (the visitors to the park) and the type of conclusion (association, since it is an observational study, not cause and effect)."
+      }
+    ],
+    "sampleResponse": "A. (i) Method 1 is a simple random sample. (ii) Method 2 is a stratified random sample, with the three entrances as the strata.\n\nB. (i) The visitors were selected using a random number generator, so the sample is likely to be representative of all of the visitors that weekend, and the results can be generalized to them. (ii) Method 2 makes sure that visitors from each of the three entrances are included, which helps if visitors who use different entrances have different opinions.\n\nC. (i) Voluntary response bias. (ii) Visitors who choose to drop in a card are likely to be those with strong opinions, for example very happy or very unhappy, so the ratings are probably not representative of all of the visitors.\n\nD. (i) A bar chart (or a pie chart) of the percents. (ii) The rating is a categorical variable, and a bar chart shows the relative frequency of each category.\n\nE. Is the mean rating of the trails, on a scale from 1 to 5, greater for visitors to the park who come with children than for visitors who come without children? The visitors who are selected at random from all of the visitors to the park should be used, and since this is an observational study the conclusion can be about an association for those visitors, not about cause and effect.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u1-frq-2",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "experimental-design",
+    "type": "COLLECT_DATA",
+    "prompt": "A teacher wants to know whether listening to instrumental music while studying changes how well students do on a vocabulary test. Sixty students who volunteered will take part. Each student will study the same list of words for 20 minutes and will then take the same test.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe a completely randomized design for an experiment that can be used to investigate the teacher's question. Include the treatments and describe how the treatments are assigned to the students using a random method.\n\n**B.** (i) Identify the experimental units in the experiment.\n\n(ii) Identify the response variable.\n\n**C.** Explain why the students cannot be blinded to the treatment in this experiment, and identify a person who could be blinded.\n\n**D.** Identify one extraneous variable that the teacher should control in this experiment, and describe how the teacher could control it.\n\n**E.** Suppose that the group that listened to music scores higher, on average, than the other group, by more than would be expected from chance alone. (i) Explain why the teacher can conclude that the music caused the higher scores.\n\n(ii) The students were volunteers. To which group of students can the conclusion be applied?",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies two treatments (instrumental music and no music, or a control)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Describes a random assignment method (for example, numbering the 60 students and using a random number generator to select 30 different students for the music group)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "A: Makes the design completely randomized with more than one student per treatment (30 in each group, or all of the students assigned at random with no grouping)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B(i): Identifies the experimental units as the 60 students."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "B(ii): Identifies the response variable as the score on the vocabulary test."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Explains that the students know whether they are listening to music (so they cannot be blinded) and identifies someone who could be blinded, such as the person who grades the tests."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D(i): Identifies an extraneous variable, such as the amount of study time, the word list, the room, or the time of day."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D(ii): Describes how to control it directly (keep it the same for all of the students)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E(i): Explains that random assignment makes the groups similar with respect to other variables, so that a difference in scores can be attributed to (caused by) the music."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E(ii): Identifies that the conclusion applies only to students similar to the volunteers (the volunteers were not randomly selected from a larger population)."
+      }
+    ],
+    "sampleResponse": "A. The two treatments are studying with instrumental music and studying without music. Number the 60 students from 1 to 60, use a random number generator to select 30 different numbers, and assign the students with those numbers to the music group. The other 30 students are assigned to the group with no music.\n\nB. (i) The experimental units are the 60 students. (ii) The response variable is the score on the vocabulary test.\n\nC. A student knows whether music is playing, so the students cannot be blinded. The person who grades the tests could be blinded by not being told which group each student was in.\n\nD. The amount of study time, the word list, the room, or the time of day. For example, the teacher could have all of the students study in the same room, at the same time of day, with the same word list and for exactly 20 minutes.\n\nE. (i) The students were randomly assigned to the treatments, so the two groups should be similar in all of the other variables that could affect the scores. A difference in the scores is therefore likely to have been caused by the music. (ii) Only students who are similar to the volunteers, because the students were not randomly selected from a larger population.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u1-frq-3",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "experimental-design",
+    "type": "COLLECT_DATA",
+    "prompt": "A company claims that its energy drink shortens a person's reaction time. A researcher recruits 24 volunteers. Each volunteer will have their reaction time measured twice, on two different days: once after drinking the energy drink and once after drinking a drink that looks and tastes the same but has no active ingredient. For each volunteer, a coin flip will decide which drink is taken first.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** (i) Identify the type of experimental design that the researcher is using.\n\n(ii) Identify the response variable.\n\n**B.** Explain why using each volunteer for both treatments can make the comparison of the two drinks more precise than assigning each volunteer to only one drink.\n\n**C.** Explain why a coin flip is used to decide which drink each volunteer takes first.\n\n**D.** (i) Explain how the researcher can make the experiment double-blind.\n\n(ii) Identify one reason why a double-blind design is helpful.\n\n**E.** The volunteers were not selected at random from all adults. Explain what type of conclusion the researcher can make if the mean reaction time is shorter after the energy drink than after the other drink, by more than would be expected from chance alone.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A(i): Identifies a matched pairs design (each volunteer receives both treatments in a random order)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A(ii): Identifies the response variable as the reaction time."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Explains that each volunteer is compared with himself or herself, so the comparison is not affected by differences between volunteers."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Explains that this removes an extraneous source of variation (the variation in reaction time from one person to another), which makes the comparison more precise."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Explains that randomizing the order balances out effects of the order (for example, practice or the day) between the two drinks."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Explains that this keeps the order from being confounded with the drink."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D(i): Describes how to make the experiment double-blind: the drinks look the same, and neither the volunteers nor the people who measure the reaction time know which drink was given."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D(ii): Explains that blinding prevents the expectations of the volunteers and the researchers from affecting the responses."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that a cause-and-effect conclusion is possible because of the random assignment of the order of the treatments."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the conclusion applies only to people who are similar to the volunteers, since they were not randomly selected."
+      }
+    ],
+    "sampleResponse": "A. (i) A matched pairs design, since every volunteer gets both treatments and the order is randomized. (ii) The response variable is the reaction time (for example, in milliseconds).\n\nB. Each volunteer is compared with himself or herself, so the variation in reaction time from one person to another (an extraneous source of variation) does not affect the comparison of the drinks.\n\nC. It randomizes the order of the treatments, so that effects of the day or of learning from the first test are balanced between the two drinks, and are not confounded with the drink.\n\nD. (i) A person who has no information about which drink is which prepares the drinks, so neither the volunteers nor the people who measure reaction time know which one has the active ingredient. (ii) It prevents expectations of the volunteers or of the researchers from influencing the measured reaction times.\n\nE. Because the order of the treatments was randomized, the researcher can conclude that the energy drink caused the shorter reaction times, but only for people who are similar to the volunteers.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u1-frq-4",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "potential-problems-with-sampling",
+    "type": "COLLECT_DATA",
+    "prompt": "A company has 5,000 customers. To estimate the proportion of its customers who are satisfied with its service, the company emails a survey to all of its customers. The email begins, \"We take great pride in our excellent service. How satisfied were you with our excellent service?\" Of the 5,000 customers, 600 respond, and 540 of the 600 say they are satisfied.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Is the company's survey a census or a sample? Explain.\n\n**B.** (i) Identify one type of bias that might result from the number of customers who responded.\n\n(ii) Explain how this type of bias could affect the estimate of the proportion of all of the customers who are satisfied.\n\n**C.** (i) Identify one type of bias that might result from the wording of the question.\n\n(ii) Rewrite the question so that it does not lead the customers to a particular answer.\n\n**D.** The company reports that 90% of all customers are satisfied. Explain why this conclusion may not be justified. Give two different reasons.\n\n**E.** Describe a different method that the company could use to select a sample of customers that would reduce the bias from the number of customers who respond. Include how the customers are selected and how the company can reduce nonresponse among the selected customers.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies the survey as a sample (not a census) because data were obtained from only the 600 customers who responded, and not from all of the customers."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "B(i): Identifies nonresponse bias (or voluntary response bias)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B(ii): Explains that the customers who responded could differ from the customers who did not respond, so the sample proportion could be consistently too large or too small."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "C(i): Identifies response bias (question wording bias, a leading question)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C(ii): Rewrites the question in a neutral way (without the words about excellent service) and without suggesting an answer."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "D: Gives the first reason: nonresponse (the customers who responded may differ from those who did not), so the statistic may not be close to the proportion for all of the customers."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Gives the second reason: the wording of the question leads the customers to a satisfied answer, so the responses may be too positive."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "E: Describes a random selection method, such as a simple random sample of the customers."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Describes the procedure (for example, numbering the customers from 1 to 5,000 and using a random number generator to select a number of different customers)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Describes a way of reducing nonresponse (following up with the selected customers so that nearly all of them respond)."
+      }
+    ],
+    "sampleResponse": "A. It is a sample, not a census, because only the 600 customers who responded provided data. Information was not obtained from every one of the 5,000 customers.\n\nB. (i) Nonresponse bias (and voluntary response bias). (ii) The 600 customers who responded may differ from the customers who did not respond. For example, customers who were very satisfied (or very unhappy) may be more likely to respond, so the proportion in the sample could be too large (or too small).\n\nC. (i) Response bias (question wording bias), because the wording leads the customers to say that they are satisfied. (ii) \"How satisfied were you with the service that you received from our company?\", with response choices that include very satisfied and very dissatisfied.\n\nD. First, only 600 of the 5,000 customers responded, and the customers who responded may differ from the ones who did not, so the 90% may not be close to the proportion for all 5,000 customers. Second, the question was written in a leading way that encourages a satisfied answer, so the responses may be too positive.\n\nE. Select a simple random sample of 400 customers by numbering the customers from 1 to 5,000 and using a random number generator to select 400 different numbers. Then follow up with the customers who do not reply, by phone or by another email, so that nearly all of the selected customers respond.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u1-frq-5",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "the-investigative-question-revisited-and-data-collection",
+    "type": "COLLECT_DATA",
+    "prompt": "Researchers used the medical records of 3,000 adults to compare the rates of heart disease for adults who said that they eat fish at least once a week and adults who said that they eat fish less often than once a week. They found that the rate of heart disease was lower for the adults who eat fish at least once a week.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** (i) Identify the type of study (experiment or observational study) that the researchers conducted.\n\n(ii) Is the study prospective or retrospective? Explain.\n\n**B.** Identify the explanatory variable and the response variable in this study.\n\n**C.** Explain why the researchers cannot conclude that eating fish causes a lower rate of heart disease.\n\n**D.** Identify a variable that could be a confounding variable in this study, and explain how it must be related to the other variables.\n\n**E.** Describe an experiment that could be used to investigate whether eating fish causes a lower rate of heart disease. Include how the treatments would be assigned.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A(i): Identifies the study as an observational study."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A(ii): Identifies the study as retrospective, because data from the past (records) were used."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Identifies the explanatory variable as how often the adult eats fish."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Identifies the response variable as whether the adult has heart disease."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Explains that the treatments were not assigned by the researchers (the adults chose), so an observational study can show an association but not cause and effect."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "D(i): Identifies a plausible confounding variable (for example, amount of exercise, diet in general, income, or smoking)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D(ii): Explains that the variable must be associated with both the explanatory variable (eating fish) and the response variable (heart disease)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "E: Describes an experiment that compares at least two treatments (a diet with fish and a diet without fish)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Describes random assignment of the treatments to the experimental units (for example, a random number generator or a coin flip)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Explains that, with random assignment, the experiment can show cause and effect (the potential for confounding is reduced)."
+      }
+    ],
+    "sampleResponse": "A. (i) An observational study. (ii) Retrospective, because the researchers used records of data that had already been collected.\n\nB. The explanatory variable is how often the adult eats fish (at least once a week or less often). The response variable is whether the adult has heart disease.\n\nC. The adults chose how much fish to eat, and the researchers did not assign the treatments. There could be other differences between the two groups, so the study shows an association but not a cause.\n\nD. The amount of exercise is a possible confounding variable. It must be associated with eating fish (adults who eat fish may exercise more) and also with the rate of heart disease (adults who exercise more may have less heart disease).\n\nE. Select volunteers and use a random method, such as a random number generator, to assign half of the volunteers to a diet that includes fish at least once a week and half to a diet without fish. After some years compare the rates of heart disease of the two groups.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u1-frq-6",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "random-sampling",
+    "type": "COLLECT_DATA",
+    "prompt": "A school district has 6,000 high school students at 12 high schools, with about 500 students at each school. The students are in grades 9, 10, 11, and 12, with about the same number in each grade. The district wants to survey a sample of about 1,000 students about the amount of homework they have each night.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe how the district could select a stratified random sample of 1,000 students, using the grades as the strata. Include how the random numbers are used and how many students are selected from each grade.\n\n**B.** Explain one advantage of using the grades as the strata.\n\n**C.** Describe how the district could select a cluster random sample of about 1,000 students, using the schools as the clusters. Include the number of schools that you choose.\n\n**D.** Identify one disadvantage of the cluster sample in part C compared with the stratified random sample in part A.\n\n**E.** The district wants the sample to represent students of all four grades. Which of the two samples, the stratified sample or the cluster sample, is better for this purpose? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Describes dividing the students into the four grades (strata), selecting a simple random sample within each grade, and combining the four samples."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Describes the use of random numbers (numbering the students in each grade and using a random number generator to select different numbers)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "A: Gives sample sizes for the grades that add to 1,000 (for example, 250 for each grade, because the grades are about the same size)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Explains an advantage of using the grades as the strata: each grade is represented in the sample, and the amount of homework may differ between grades."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Describes selecting a simple random sample of the schools (for example, numbering the schools and using a random number generator)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Describes surveying every student at the chosen schools."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "C: Gives a number of schools that makes sense for the sample size (2 schools, which is about 1,000 students)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Identifies a disadvantage of the cluster sample: the schools that are chosen may differ from the other schools, so the sample may not be representative of the district."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Chooses the stratified random sample as the better method for representing all four grades."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Justifies the choice: a stratified sample includes students from every grade, which is controlled by the sampling method, and a cluster sample does not control the grades."
+      }
+    ],
+    "sampleResponse": "A. Make a list of the students in each grade. Select 250 students from each grade (since the four grades are about the same size). Number the students in a grade from 1 to the number of students in the grade, use a random number generator to select 250 different numbers, and use the students with those numbers. Combine the four groups of 250 into one sample of 1,000.\n\nB. Each grade is guaranteed to be represented in the sample. If the amount of homework differs between the grades, the sample will include the right amount of students from each grade.\n\nC. Number the 12 schools from 1 to 12 and use a random number generator to select 2 different schools (about 500 students each). Then survey every one of the students at the 2 selected schools, which is about 1,000 students.\n\nD. The students at the chosen schools could be different from the students at the schools that were not chosen (if the schools are not alike), so the sample may not be representative of all of the students. The sample is also less spread out over the whole district.\n\nE. The stratified sample is better, because it selects students from each of the four grades. A cluster sample of schools may not have students from the same proportion of each grade, though each school has all grades, and it only includes some of the schools.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u1-frq-7",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "experimental-design",
+    "type": "COLLECT_DATA",
+    "prompt": "An agronomist wants to compare three fertilizers, A, B, and C, for growing corn. The agronomist has 24 equal plots of land in four fields. Each field has 6 plots, and the soil quality is different from one field to another but is about the same within a field.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify a blocking variable for an experiment on the fertilizers, and explain why it should be used as a blocking variable.\n\n**B.** Describe how the agronomist could randomly assign the fertilizers to the plots in a randomized block design.\n\n**C.** Explain what replication means in this experiment, and how many plots are assigned to each fertilizer.\n\n**D.** Explain one advantage of a randomized block design over a completely randomized design in this experiment.\n\n**E.** The agronomist finds that the mean yield is greater for fertilizer B than for fertilizers A and C. What type of conclusion is justified by the design of the experiment? Explain.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies the field (soil quality) as the blocking variable."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Explains that soil quality is a source of variation in yield that is not the fertilizer, and the plots within a field are alike."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Describes randomly assigning the fertilizers to the plots separately within each field (block)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: States that each fertilizer is assigned to the same number of plots in each field (2 plots for each fertilizer in each field)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Explains that replication means more than one experimental unit is assigned to each treatment."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: States that 8 plots are assigned to each fertilizer (24 / 3)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Explains that blocking separates the variation in yield caused by soil from the variation caused by the fertilizers."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Explains that this allows a more precise comparison of the fertilizers (the treatments are compared within blocks)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Concludes that a cause-and-effect conclusion is justified because of random assignment of the treatments."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Notes that the conclusion applies to plots similar to those that were used in the experiment."
+      }
+    ],
+    "sampleResponse": "A. The field (the soil quality) is a blocking variable. Soil quality is a source of variation in the yield that is not the fertilizer, and the plots within one field are alike.\n\nB. Treat each field as a block of 6 plots. Within each field, use a random number generator to assign two of the 6 plots to each fertilizer (for example, number the plots 1 to 6 and randomly select two for A, two for B and two for C). Do this separately for each of the four fields.\n\nC. Replication means that more than one experimental unit is assigned to each treatment. Each fertilizer is assigned to 8 plots (2 in each of the 4 fields).\n\nD. Blocking separates the variation in yield that is caused by the soil quality from the variation caused by the fertilizers, so the fertilizers can be compared within the fields without the differences in soil, which makes the comparison more precise.\n\nE. A cause-and-effect conclusion, because the fertilizers were randomly assigned to the plots within each block, which reduces the potential for confounding variables. The conclusion applies to plots similar to those in the experiment.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u1-frq-8",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "the-investigative-question-revisited-and-data-collection",
+    "type": "COLLECT_DATA",
+    "prompt": "A company has 450 employees. The human resources department wants to know whether the mean number of days per week that employees would like to work from home is greater than 2 days. The department is considering collecting data from every employee or from a sample of the employees.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Determine a valid investigative question for the study. Ensure that all three components of a valid investigative question are included in your response.\n\n**B.** Collecting data from every employee is a census. Identify one reason why the department might choose a sample instead.\n\n**C.** Describe a method for selecting a simple random sample of 60 employees from the company's list of its 450 employees.\n\n**D.** Describe one source of bias that could occur if the department emails a survey to all of the employees and uses only the responses it receives.\n\n**E.** If the sample is a simple random sample, to what group of people can the department generalize its conclusion? Explain.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States an investigative question that is about the variable of interest (the number of days per week employees want to work from home)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Names the parameter (the mean for the employees) and the direction of the alternative (greater than 2 days)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "A: Includes the population to which the conclusion will apply (all employees of the company) in the question or its description."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Gives a reason for a sample: a census would take much more time or cost, or it could be difficult to get everyone to respond."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Describes numbering the employees (1 to 450) and using a random number generator to select 60 different numbers."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Specifies that the employees with the selected numbers are the sample (selected without repeats)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Identifies nonresponse bias or voluntary response bias."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Explains that the employees who respond may differ from the ones who do not, so the mean could be consistently too large or too small."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the conclusion can be generalized to all of the employees of the company."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Explains that this is because the sample was selected at random from the employees (and does not apply to employees of other companies)."
+      }
+    ],
+    "sampleResponse": "A. Is the mean number of days per week that employees of the company would like to work from home greater than 2 days? The department should randomly select employees from the company, so that the conclusion can be made about all of the employees of the company.\n\nB. A census can be time-consuming and costly, and it may be difficult to obtain a response from every employee. A sample can answer the question with less effort.\n\nC. Number the employees from 1 to 450, use a random number generator to select 60 different numbers from 1 to 450, and use the employees with those numbers.\n\nD. Nonresponse (or voluntary response) bias. The employees who respond may have stronger opinions about working from home than the employees who do not, so the mean of the responses could be too large or too small.\n\nE. The department can generalize to all 450 employees of the company, because a simple random sample is selected using a random mechanism, so it is representative. It cannot generalize to employees of other companies.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u1-frq-9",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "comparisons-of-the-distributions-for-one-quantitative-variable",
+    "type": "ANALYZE_DATA",
+    "prompt": "A teacher gave the same final exam to two classes of 24 students each. The boxplots show the distributions of the scores. The mean and the standard deviation of the scores are 71.1 and 6.3 for Class A, and 79.3 and 11.1 for Class B. The five-number summaries are Class A: 61, 67.0, 70.5, 74.5, 85 and Class B: 41, 73.5, 81.0, 84.0, 99.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Compare the centers of the two distributions of scores, using the medians.\n\n**B.** Compare the variability of the two distributions of scores, using the interquartile ranges (IQR).\n\n**C.** The lowest score in Class B is shown as a separate point. Use the rule that an outlier is a value more than 1.5 IQR below the first quartile or above the third quartile to show that the lowest score in Class B is an outlier.\n\n**D.** In Class A, the highest score is 85. Calculate the z-score for this score, and interpret the z-score in context.\n\n**E.** A student in Class B says, \"Class B did better on the exam than Class A.\" Use the boxplots to justify a claim about the performance of the two classes, and say whether the outlier changes your claim.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Compares the medians correctly (81.0 for Class B is greater than 70.5 for Class A)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: States the conclusion in context: the center of the scores is higher for Class B."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Calculates the IQRs (7.5 for Class A and 10.5 for Class B)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Compares the variability in context: the middle 50% of the scores of Class B are more spread out."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the lower boundary: 73.5 - 1.5(10.5) = 57.8."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Concludes that 41 is less than the boundary, so it is an outlier."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Calculates the z-score = (85 - 71.1) / 6.3 = 2.19."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Interprets the z-score in context: the highest score of Class A is about 2.19 standard deviations above the mean score of Class A."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Justifies a claim using the boxplots: the distribution of Class B is shifted higher (a greater median and quartiles), so Class B generally did better."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the outlier does not change the claim (the median and IQR are resistant)."
+      }
+    ],
+    "sampleResponse": "A. The median of Class B (81.0) is greater than the median of Class A (70.5), so the center of the scores is higher for Class B, by 10.5 points.\n\nB. The IQR for Class A is 74.5 - 67.0 = 7.5 and the IQR for Class B is 84.0 - 73.5 = 10.5. The IQR is greater for Class B, so the scores of Class B are more variable in the middle 50%.\n\nC. For Class B, IQR = 10.5, so the lower boundary is Q1 - 1.5(IQR) = 73.5 - 1.5(10.5) = 57.8. The lowest score, 41, is less than 57.8, so it is an outlier.\n\nD. z = (85 - 71.1) / 6.3 = 2.19. The highest score in Class A is about 2.19 standard deviations above the mean score of Class A.\n\nE. The boxplot of Class B is shifted to the right of the boxplot of Class A (the median, the quartiles and the maximum are all higher), so the students in Class B generally scored higher. The one low outlier in Class B does not change this claim, because the median and the IQR are not much affected by an outlier.",
+    "reviewed": false,
+    "diagram": {
+      "type": "boxplot",
+      "xLabel": "Score on the final exam (points)",
+      "axisMin": 30.0,
+      "axisMax": 110.0,
+      "axisStep": 10.0,
+      "groups": [
+        {
+          "min": 61,
+          "q1": 67.0,
+          "median": 70.5,
+          "q3": 74.5,
+          "max": 85,
+          "label": "Class A"
+        },
+        {
+          "min": 68,
+          "q1": 73.5,
+          "median": 81.0,
+          "q3": 84.0,
+          "max": 99,
+          "label": "Class B",
+          "outliers": [
+            41
+          ]
+        }
+      ],
+      "altText": "Boxplots of the final exam scores of Class A and Class B; Class B has one low outlier."
+    }
+  },
+  {
+    "id": "ap-stat-u1-frq-10",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "descriptions-for-one-quantitative-variable-distributions",
+    "type": "ANALYZE_DATA",
+    "prompt": "A company asked each of 60 workers for the time, in minutes, that it takes the worker to commute to work. The histogram shows the distribution of the times. The mean is 29.6 minutes, the median is 27.0 minutes, the standard deviation is 15.6 minutes, and the interquartile range is 17.0 minutes.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe the distribution of the commute times in context. Include the shape, the center, and the variability.\n\n**B.** Explain why the median and the IQR are better than the mean and the standard deviation for describing these data.\n\n**C.** Use the histogram to find the number of workers whose commute time is 40 minutes or more.\n\n**D.** Explain why the mean is greater than the median for these data.\n\n**E.** The company converts the commute times from minutes to hours. (i) Find the mean of the commute times in hours.\n\n(ii) Find the standard deviation of the commute times in hours.\n\n(iii) Explain how the shape of the distribution of the times is affected by the change of units.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Describes the shape in context: skewed to the right (long tail toward longer commute times)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Describes the center in context (a typical commute of about 27.0 minutes, the median, or about 29.6 minutes, the mean)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "A: Describes the variability in context (an IQR of 17.0 minutes or a standard deviation of 15.6 minutes, or a range of the times)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Explains that the median and the IQR are resistant measures that are not affected much by the skew and the large values, while the mean and the standard deviation are."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Reads the histogram correctly: 13 workers had commute times of 40 minutes or more."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "D: Explains that the right skew (a few very large values) pulls the mean up toward the tail."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Explains that the median is resistant, so it is less affected by the large values and is smaller than the mean."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "E(i): Calculates the mean in hours: 29.6 / 60 = 0.494."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E(ii): Calculates the standard deviation in hours: 15.6 / 60 = 0.259."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E(iii): States that the shape does not change (the distribution is still skewed right), because all values are divided by the same positive number."
+      }
+    ],
+    "sampleResponse": "A. The distribution is skewed to the right (a long tail toward the longer times), with a peak at the shorter times. A typical commute time is about 27.0 minutes (the median). The commute times vary, with an IQR of 17.0 minutes, and a few workers have a much longer commute than the others.\n\nB. The distribution is skewed to the right with some large values. The median and the IQR are resistant to outliers and skew, but the mean and the standard deviation are pulled toward the long right tail.\n\nC. The bars from 40 minutes up have heights 5, 3, 4, 1, 0, 0, so 13 workers had a commute of 40 minutes or more.\n\nD. The distribution is skewed right. The few very long commute times pull the mean toward the right tail, but they do not affect the median much, so the mean is greater than the median.\n\nE. (i) 29.6 / 60 = 0.494 hours. (ii) 15.6 / 60 = 0.259 hours. (iii) The shape does not change: it is still skewed to the right, because every value is divided by the same number.",
+    "reviewed": false,
+    "diagram": {
+      "type": "histogram",
+      "xLabel": "Commute time (minutes)",
+      "yLabel": "Frequency",
+      "edges": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "values": [
+        2,
+        20,
+        16,
+        9,
+        5,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "yMax": 25,
+      "yStep": 5,
+      "tickAt": "edges",
+      "labelEvery": 1,
+      "altText": "Histogram of the commute times of 60 workers: skewed to the right."
+    }
+  },
+  {
+    "id": "ap-stat-u1-frq-11",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "summary-statistics-for-one-quantitative-variable",
+    "type": "ANALYZE_DATA",
+    "prompt": "A restaurant recorded the time, in minutes, that it took to deliver each of 12 orders. The times, in order from least to greatest, are 22, 25, 27, 28, 30, 31, 33, 34, 36, 38, 41, and 85. The dotplot shows the data.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Calculate the median and the interquartile range (IQR) of the delivery times.\n\n**B.** Use the rule that an outlier is a value more than 1.5 IQR above the third quartile or below the first quartile to determine whether the longest delivery time is an outlier.\n\n**C.** The mean of all 12 delivery times is 35.83 minutes. (i) Calculate the mean of the 11 times that remain when the time of 85 minutes is removed.\n\n(ii) Explain which summary statistic of center, the mean or the median, is affected more by removing the time of 85 minutes.\n\n**D.** The restaurant wants to report a typical delivery time and the variability of the delivery times. Which measures should it use? Justify your answer.\n\n**E.** Each delivery time is increased by 5 minutes because of a change in the route. Describe the effect of this change on the median and on the IQR.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Calculates the median correctly (32.0 minutes)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Calculates the quartiles and the IQR correctly (Q1 = 27.5, Q3 = 37.0, IQR = 9.5)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Calculates the upper boundary 37.0 + 1.5(9.5) = 51.25."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Concludes that 85 is greater than the boundary, so it is an outlier."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C(i): Calculates the mean without the 85: 345 / 11 = 31.36 minutes."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C(ii): Identifies the mean as affected more, supported by the change in the mean (35.83 to 31.36) and the small change in the median (32.0 to 31.0)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Chooses the median and the IQR."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Justifies the choice: the data have an outlier, and the median and the IQR are resistant to outliers."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the median increases by 5 minutes."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the IQR does not change (adding a constant does not change the variability)."
+      }
+    ],
+    "sampleResponse": "A. The median is (31 + 33) / 2 = 32.0 minutes. Q1 is the median of the lower six values (27 and 28), which is 27.5, and Q3 is the median of the upper six values (36 and 38), which is 37.0. IQR = 37.0 - 27.5 = 9.5 minutes.\n\nB. The upper boundary is Q3 + 1.5(IQR) = 37.0 + 1.5(9.5) = 51.25. The longest time, 85, is greater than 51.25, so it is an outlier.\n\nC. (i) The mean of the 11 times is 345 / 11 = 31.36 minutes. (ii) The mean changes from 35.83 to 31.36, a change of 4.47 minutes, and the median changes from 32.0 to 31.0, a change of 1.0 minute. The mean is affected more, because it is not resistant to outliers.\n\nD. The restaurant should use the median and the IQR, because the data have an outlier, and these measures are resistant, so they describe a typical delivery and the variability of most of the deliveries.\n\nE. Adding 5 minutes to each time adds 5 to the median (it becomes 37 minutes), but the IQR does not change (it is still 9.5 minutes), since adding a constant does not change the spread.",
+    "reviewed": false,
+    "diagram": {
+      "type": "dotplot",
+      "xLabel": "Delivery time (minutes)",
+      "axisMin": 20,
+      "axisMax": 90,
+      "axisStep": 10,
+      "dots": [
+        {
+          "x": 22,
+          "count": 1
+        },
+        {
+          "x": 25,
+          "count": 1
+        },
+        {
+          "x": 27,
+          "count": 1
+        },
+        {
+          "x": 28,
+          "count": 1
+        },
+        {
+          "x": 30,
+          "count": 1
+        },
+        {
+          "x": 31,
+          "count": 1
+        },
+        {
+          "x": 33,
+          "count": 1
+        },
+        {
+          "x": 34,
+          "count": 1
+        },
+        {
+          "x": 36,
+          "count": 1
+        },
+        {
+          "x": 38,
+          "count": 1
+        },
+        {
+          "x": 41,
+          "count": 1
+        },
+        {
+          "x": 85,
+          "count": 1
+        }
+      ],
+      "altText": "Dotplot of 12 delivery times; one value, 85, is far from the others."
+    }
+  },
+  {
+    "id": "ap-stat-u1-frq-12",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "graphical-representations-for-one-categorical-variable",
+    "type": "ANALYZE_DATA",
+    "prompt": "A school asked 300 randomly selected students and 120 randomly selected teachers whether the school day should start earlier, at the same time, or later. The table shows the numbers of responses.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** (i) Calculate the relative frequency of the students who prefer a later start.\n\n(ii) Calculate the relative frequency of the teachers who prefer a later start.\n\n**B.** Compare the distributions of the preferences of the students and of the teachers. Use the relative frequencies, in context.\n\n**C.** A student says, \"More students than teachers prefer a later start, so students are more in favor of a later start than teachers.\" Explain why using the counts to compare the two groups is not appropriate.\n\n**D.** Identify a graphical display that could be used to compare the preferences of the students and of the teachers, and explain why it is appropriate.\n\n**E.** The principal says that most of the students prefer a later start. Is the claim supported by the data? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A(i): Calculates the relative frequency for the students: 180 / 300 = 0.60."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A(ii): Calculates the relative frequency for the teachers: 24 / 120 = 0.20."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Compares the groups using the relative frequencies: a much greater proportion of the students than of the teachers prefer a later start (0.60 compared with 0.20)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Describes the other part of the distributions in context: most of the teachers (0.55) prefer an earlier start, but few of the students (0.15) do."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Explains that the groups have different sizes (300 and 120), so the counts cannot be compared directly."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Explains that the relative frequencies (proportions) should be used to compare the two groups."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Identifies a side-by-side (or segmented) bar chart of the relative frequencies, for the two groups."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Explains that the variable is categorical and the relative frequencies let groups of different sizes be compared."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the claim is supported, using the relative frequency (0.60, which is greater than 0.5)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Notes that the conclusion applies to the students of the school, since the students were randomly selected."
+      }
+    ],
+    "sampleResponse": "A. (i) 180 / 300 = 0.60. (ii) 24 / 120 = 0.20.\n\nB. The students prefer a later start (60% of the students, with only 15% preferring an earlier start), but most of the teachers prefer an earlier start (55% of the teachers, with only 20% preferring a later start). The preferences of the two groups are very different.\n\nC. The groups are different sizes (300 students and 120 teachers), so a larger count for the students does not mean a larger proportion. The relative frequencies should be compared instead: 0.60 is much greater than 0.20, so the student's conclusion is correct, but it has to be justified with the proportions and not with the counts.\n\nD. A side-by-side (or segmented) bar chart of the relative frequencies of the three responses for each group. The preferred start time is a categorical variable, and relative frequencies allow groups of different sizes to be compared.\n\nE. Yes. 180 of the 300 students (60%) prefer a later start, which is more than half. This applies to the students in the school because the students were selected at random.",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Preferred start time",
+        "Students",
+        "Teachers"
+      ],
+      "rows": [
+        [
+          "Earlier",
+          "45",
+          "66"
+        ],
+        [
+          "Same",
+          "75",
+          "30"
+        ],
+        [
+          "Later",
+          "180",
+          "24"
+        ],
+        [
+          "Total",
+          "300",
+          "120"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Responses to the question: Should the school day start earlier, at the same time, or later?"
+    }
+  },
+  {
+    "id": "ap-stat-u1-frq-13",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "random-sampling",
+    "type": "MULTI_FOCUS",
+    "prompt": "A school has 800 students. A counselor selected a simple random sample of 40 students and asked each student how many hours the student slept on the previous school night. The histogram shows the data. The mean of the sample is 7.20 hours and the standard deviation is 1.02 hours.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe a method that the counselor could have used to select the simple random sample of 40 students from the 800 students. Include how the random numbers are used.\n\n**B.** Describe the distribution of the hours of sleep shown in the histogram. Include the shape, the center, and any unusual features.\n\n**C.** One student in the sample slept 3.6 hours. (i) Calculate the z-score for this student.\n\n(ii) Interpret the z-score in context.\n\n**D.** An outlier can be defined as a value that is more than 2 standard deviations from the mean. Does this definition identify the student who slept the least as an outlier? Show your work.\n\n**E.** To which group of students can the counselor generalize the results of the sample? Explain why.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Describes numbering the 800 students (from 1 to 800)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Describes using a random number generator to select 40 different numbers, and using the students with those numbers."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Describes the shape in context: approximately symmetric and unimodal."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Describes the center (about 7.2 hours) and identifies the unusual low value (a student who slept about 3.6 hours)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C(i): Calculates the z-score: (3.6 - 7.20) / 1.02 = -3.54."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C(ii): Interprets the z-score in context: this student slept more than 2 standard deviations less than the mean amount of sleep of the sample."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Calculates 2 standard deviations (2.04 hours) and the distance of the value from the mean (3.60 hours)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Concludes that the value is an outlier by the 2 standard deviation rule, since the distance is greater than 2 standard deviations."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the results can be generalized to all 800 students at the school."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Explains that this is because the sample was selected at random (a simple random sample) from the students at the school."
+      }
+    ],
+    "sampleResponse": "A. Make a list of the 800 students and number them from 1 to 800. Use a random number generator to select 40 different numbers from 1 to 800 (ignoring any repeats). The students with those numbers are the sample.\n\nB. The distribution is approximately symmetric and unimodal, with a center near 7.2 hours of sleep (the mean). There is one unusually low value, a student who slept about 3.6 hours, which is separated from the others.\n\nC. (i) z = (3.6 - 7.20) / 1.02 = -3.54. (ii) This student slept 3.54 standard deviations less than the mean number of hours of sleep of the 40 students.\n\nD. Yes. The student's value is 3.60 hours below the mean, and 2 standard deviations is 2(1.02) = 2.04 hours. Since 3.60 > 2.04, the value is an outlier by this rule.\n\nE. All 800 students at the school, because the sample was selected at random from the students at the school, so it is representative of them. The counselor cannot generalize to students at other schools.",
+    "reviewed": false,
+    "diagram": {
+      "type": "histogram",
+      "xLabel": "Hours of sleep on a school night",
+      "yLabel": "Frequency",
+      "edges": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "values": [
+        1,
+        0,
+        2,
+        11,
+        18,
+        7,
+        1,
+        0
+      ],
+      "yMax": 20,
+      "yStep": 2,
+      "tickAt": "edges",
+      "labelEvery": 1,
+      "altText": "Histogram of the hours of sleep of 40 students: roughly symmetric with a low value."
+    }
+  },
+  {
+    "id": "ap-stat-u1-frq-14",
+    "unit": "unit-1-exploring-one-variable-data-and-collecting-data",
+    "topic": "experimental-design",
+    "type": "MULTI_FOCUS",
+    "prompt": "A gardener has 40 tomato plants. The gardener uses a random number generator to assign 20 of the plants to receive fertilizer A and the other 20 plants to receive fertilizer B. After the growing season, the yield of each plant, in grams, is measured. The boxplots show the distributions of the yields.\n\nThe five-number summaries are fertilizer A: 43.9, 48.5, 51.3, 55.2, 61.5 and fertilizer B: 52.5, 55.8, 60.5, 62.7, 78.0.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** (i) Identify the type of study (experiment or observational study) that the gardener conducted.\n\n(ii) Identify the response variable.\n\n**B.** Compare the distributions of the yields of the two fertilizers. Include the center and the variability.\n\n**C.** The largest yield for fertilizer B, 78.0 grams, is shown as a separate point. Use the 1.5 IQR rule to show that it is an outlier.\n\n**D.** Suppose that the difference in the yields is too large to be explained by chance alone. Explain why the gardener could then conclude that fertilizer B caused the greater yields.\n\n**E.** A neighbor says that the result applies to all kinds of plants in all gardens. Explain why the neighbor's statement is not justified.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A(i): Identifies the study as an experiment (the gardener assigned the treatments)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A(ii): Identifies the response variable as the yield of a plant."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Compares the centers using the medians (60.5 for fertilizer B and 51.3 for fertilizer A): the center is higher for fertilizer B."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Compares the variability using the IQRs or the ranges (6.7 and 6.9): similar variability."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the upper boundary: 62.7 + 1.5(6.9) = 73.05."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Concludes that 78.0 is greater than the boundary, so it is an outlier."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Explains that the plants were randomly assigned to the treatments."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Explains that random assignment makes the groups similar in other variables, so a difference in the yields can be attributed to the fertilizers (a cause-and-effect conclusion)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Explains that the plants were not randomly selected from a larger population (all plants)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the conclusion applies only to plants that are similar to those that were in the experiment."
+      }
+    ],
+    "sampleResponse": "A. (i) An experiment, because the gardener assigned the treatments (the fertilizers) to the plants. (ii) The response variable is the yield of a plant, in grams.\n\nB. The median yield is greater for fertilizer B (60.5 grams) than for fertilizer A (51.3 grams), so the center is higher for B. The IQR is 6.7 for A and 6.9 for B, so the variability of the middle 50% is similar for the two fertilizers.\n\nC. For fertilizer B, the upper boundary is Q3 + 1.5(IQR) = 62.7 + 1.5(6.9) = 73.05. Since 78.0 is greater than 73.05, it is an outlier.\n\nD. The plants were randomly assigned to the fertilizers, which creates groups that are as similar as possible in the other variables that could affect the yield. So the difference in the yields is likely caused by the fertilizers.\n\nE. The plants in the experiment were 40 tomato plants in one garden, and they were not randomly selected from all plants. The results apply to plants that are similar to these tomato plants, not to all kinds of plants.",
+    "reviewed": false,
+    "diagram": {
+      "type": "boxplot",
+      "xLabel": "Yield of a plant (grams)",
+      "axisMin": 40.0,
+      "axisMax": 80.0,
+      "axisStep": 5.0,
+      "groups": [
+        {
+          "min": 43.9,
+          "q1": 48.55,
+          "median": 51.3,
+          "q3": 55.25,
+          "max": 61.5,
+          "label": "Fertilizer A"
+        },
+        {
+          "min": 52.5,
+          "q1": 55.8,
+          "median": 60.5,
+          "q3": 62.7,
+          "max": 71.9,
+          "label": "Fertilizer B",
+          "outliers": [
+            78.0
+          ]
+        }
+      ],
+      "altText": "Boxplots of the yields of plants that received fertilizer A and fertilizer B; B has one high outlier."
+    }
+  }
+]

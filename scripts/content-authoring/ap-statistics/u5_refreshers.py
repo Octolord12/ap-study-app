@@ -63,7 +63,7 @@ The correlation coefficient, $r$, is one number that summarizes the **direction 
 - **Correlation does not imply causation.** A real relationship between two variables does not mean that changes in one cause changes in the other.
 
 ### Watch out for
-$r$ is not the slope, not the percent of points on a line, and not the percent of variation explained (that is $r^2$). And $r$ near 0 means no *linear* association, but there can still be a strong curved pattern.
+$r$ is not the slope, not the percent of points on a line, and not the percent of variation explained (that is $r^2$). And $r$ near 0 means no linear association, but there can still be a strong curved pattern.
 
 ### Worked example
 Prompt: "For the points (1, 9), (2, 7), (3, 6), (4, 3), (5, 2), technology gives $r = -0.99$. Interpret $r$."
@@ -75,7 +75,7 @@ The value is negative and very close to $-1$. There is a strong, negative, linea
 If the form of a relationship looks linear, a **linear regression model** uses the explanatory variable $x$ to predict the response variable $y$.
 
 ### Key facts
-- The predicted response is $\hat{y} = a + bx$, where $a$ is the **y-intercept** and $b$ is the **slope**. The symbol $\hat{y}$ ("y-hat") is a *predicted* value, not an observed one.
+- The predicted response is $\hat{y} = a + bx$, where $a$ is the **y-intercept** and $b$ is the **slope**. The symbol $\hat{y}$ ("y-hat") is a predicted value, not an observed one.
 - **Interpolation** is predicting for an $x$ inside the interval of $x$-values used to find the line.
 - **Extrapolation** is predicting for an $x$ outside that interval. The prediction is less reliable the farther out it is.
 - Only fit a linear model when the data show a linear trend.
@@ -100,7 +100,7 @@ A **residual** measures how far an observation is from the model's prediction: $
 - **Curvature** in a residual plot suggests that the linear model is not the most appropriate model.
 
 ### Watch out for
-Subtract in the right order: observed minus predicted. The sign is the whole message, so say "underpredicts" or "overpredicts" in context. And a residual plot should be judged by its *pattern*, not by whether it has both positive and negative values.
+Subtract in the right order: observed minus predicted. The sign is the whole message, so say "underpredicts" or "overpredicts" in context. And a residual plot should be judged by its pattern, not by whether it has both positive and negative values.
 
 ### Worked example
 Prompt: "The line $\hat{y} = 41 + 6.5x$ predicts a quiz score from hours studied. A student who studied 3 hours scored 68. Find and interpret the residual."
@@ -113,13 +113,13 @@ The **least-squares regression line** is the line that makes the sum of the squa
 
 ### Key facts
 - The line always passes through the point $(\bar{x}, \bar{y})$.
-- **Slope:** the *predicted* change in the response for a one-unit increase in the explanatory variable, in context.
-- **Y-intercept:** the *predicted* response when the explanatory variable is 0, in context. Sometimes it has no reasonable interpretation: $x = 0$ may be outside the data (extrapolation), or the value may be impossible, such as a negative height.
+- **Slope:** the predicted change in the response for a one-unit increase in the explanatory variable, in context.
+- **Y-intercept:** the predicted response when the explanatory variable is 0, in context. Sometimes it has no reasonable interpretation: $x = 0$ may be outside the data (extrapolation), or the value may be impossible, such as a negative height.
 - $r^2$, the **coefficient of determination**, is the proportion of the variation in the response that is explained by the linear relationship with the explanatory variable.
 - The slope and $r$ always have the same sign.
 
 ### Watch out for
-Always say "predicted" when interpreting the slope and intercept, name the units, and use the context. And $r^2$ is a proportion of *variation*, not a percent of points on the line. To get $r$ from $r^2$, take the square root and give it the sign of the slope.
+Always say "predicted" when interpreting the slope and intercept, name the units, and use the context. And $r^2$ is a proportion of variation, not a percent of points on the line. To get $r$ from $r^2$, take the square root and give it the sign of the slope.
 
 ### Worked example
 Prompt: "Output for predicting resting heart rate (beats per minute) from hours of exercise per week: Constant 78.4, Hours $-2.15$, R-sq = 54.3%. Interpret each part."
@@ -129,4 +129,7 @@ Slope: for each additional hour of exercise per week, the predicted resting hear
 ]
 
 if __name__ == "__main__":
+    import lib  # noqa: F401  (the same text rules as the questions)
+    for _slug, _body in ENTRIES:
+        lib.check_markdown(_body)
     refreshers_lib.write("ap-statistics", 5, ENTRIES)

@@ -1,0 +1,856 @@
+[
+  {
+    "id": "ap-stat-u4-frq-1",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "type": "COLLECT_DATA",
+    "prompt": "A sports store wants to know whether a new model of running shoe lets runners finish a 5-kilometer course faster than the old model. Twenty runners agree to take part. Each runner is willing to run the course twice, wearing a different model each time, on two different days.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify the experimental units, the treatments, and the response variable.\n\n**B.** Describe how the store should use a random process to decide the order in which each runner wears the models, and explain why the order should be randomized.\n\n**C.** Describe one other way to control the conditions so that the comparison of the two models is fair.\n\n**D.** Describe the statistic that the store should calculate for each runner, and the analysis that the store should use to decide whether the new model is faster.\n\n**E.** Suppose that the analysis gives convincing evidence that the new model is faster. What conclusion can the store make, and for which runners does it apply?",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies the runners as the experimental units."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Identifies the treatments (the two models) and the response variable (the finishing time)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Describes a random process for the order (such as a coin flip for each runner)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Explains that randomizing the order balances out the effect of the order (such as fatigue or practice)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Describes a way to control other conditions (the same course, similar weather or time of day, the same rest)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "D: States that the difference between the two times is calculated for each runner (a matched pairs analysis)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: States a one-sample t-procedure on the differences (a test or an interval for the population mean difference)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "E: States a cause-and-effect conclusion, because of randomization of the order and the comparison within runners."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the new model is faster on average, in context."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the conclusion applies to runners like the volunteers, not to all runners."
+      }
+    ],
+    "sampleResponse": "A. The experimental units are the 20 runners. The treatments are wearing the new model and wearing the old model. The response variable is the time the runner takes to finish the 5-kilometer course.\n\nB. For each runner, flip a coin (or use a random number generator): heads means the runner wears the new model first, and tails means the old model first. Randomizing the order spreads any effect of the order (fatigue or practice) evenly, so it does not favor one model.\n\nC. Have every runner run the same course at about the same time of day and in similar weather, and with the same amount of rest between the two runs.\n\nD. Calculate, for each runner, the difference in the finishing times (old model minus new model). Use the 20 differences in a one-sample t-test (or t-interval) for the population mean difference, with the hypothesis that the mean difference is 0.\n\nE. Because the order was randomized, and each runner used both models, the store can conclude that the new model causes faster times, on average, for runners like those in the study. The conclusion applies to runners like the 20 volunteers, and not to all runners, because they were not a random sample of all runners.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-frq-2",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "type": "COLLECT_DATA",
+    "prompt": "A school has 1,200 students: 400 freshmen, 350 sophomores, 250 juniors and 200 seniors. The student council wants to estimate the mean number of hours that all of the students at the school sleep on a school night. A council member suggests asking the students who are in the cafeteria at lunch.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Explain why asking the students in the cafeteria at lunch is likely to give a biased estimate of the mean number of hours of sleep, and describe the direction of the bias if you can.\n\n**B.** Describe how the council could select a stratified random sample of 60 students, using the grade levels as the strata, so that each grade level is represented in proportion to its size.\n\n**C.** Explain why a stratified random sample may be a better choice here than a simple random sample.\n\n**D.** The council selects a sample, calculates the sample mean and the sample standard deviation of the hours of sleep, and wants to estimate the population mean. Name the procedure that the council should use, and state the conditions that must be checked.\n\n**E.** Another student says, \"If we use a larger sample, our result will be unbiased.\" Is this correct? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies the cafeteria sample as a convenience sample (or voluntary or undercoverage bias): not every student has a chance to be selected."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Explains how this could make the estimate too high or too low, in context."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Gives the correct allocation of the 60 students to the grade levels (proportional to 400, 350, 250 and 200: about 20, 17 or 18, 12 or 13, and 10)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Describes a random process to select students within each grade (a random number generator or similar)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Explains that a stratified sample guarantees representation of every grade, in proportion to size."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Explains that this can reduce variability if the grades differ in the amount of sleep."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Identifies a one-sample t-interval for a population mean."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States the randomization condition and the 10% condition (n ≤ 120)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "D: States the sample data condition (n ≥ 30, or no strong skewness or outliers)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the statement is incorrect, because a larger sample does not remove bias from the sampling method."
+      }
+    ],
+    "sampleResponse": "A. The students in the cafeteria at lunch are a convenience sample: students who are not in the cafeteria (for example those who sleep in, eat elsewhere, or have a different schedule) have no chance of being selected, so the sample may not represent all students. Students who are up early or who eat at school may sleep less, so the estimate may be too low (the direction is not certain).\n\nB. The proportions of the 60 students are 400/1200, 350/1200, 250/1200 and 200/1200 of the sample: 20 freshmen, 17 or 18 sophomores, 12 or 13 juniors and 10 seniors (for example 20, 18, 12 and 10). For each grade, number the students and use a random number generator to select the needed number of different students from that grade. Combine the four groups.\n\nC. Students in different grades may sleep different amounts. A stratified sample guarantees that every grade is represented in proportion to its size, which reduces the variability of the sample mean compared with a simple random sample, where one grade could be over- or under-represented by chance.\n\nD. A one-sample t-interval for a population mean (the population standard deviation is unknown). Conditions: the sample is random; the 10% condition (the sample is less than 10% of the 1,200 students, so n ≤ 120); and the sample data condition (n ≥ 30, or the data are approximately normal, or there is no strong skewness or outliers).\n\nE. No. Bias comes from the sampling method. A larger sample taken with a biased method, such as asking the students in the cafeteria, is still biased. A larger sample reduces variability, not bias; random selection is what removes the bias.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-frq-3",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "type": "INFERENCE",
+    "prompt": "A manufacturer claims that the mean lifetime of its rechargeable batteries is 55 hours. A consumer group selected a random sample of 15 batteries from the very large number of batteries that the manufacturer made in one month, and recorded the lifetime, in hours, of each. The dotplot shows the lifetimes. The mean of the sample is 47.53 hours and the standard deviation is 6.12 hours.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify the appropriate inference procedure for estimating the mean lifetime of all of the batteries that the manufacturer made in that month, and state the parameter in context.\n\n**B.** Verify that the conditions for the procedure are met.\n\n**C.** Construct and show the work for a 95% confidence interval for the mean lifetime.\n\n**D.** Interpret the interval from part C in context.\n\n**E.** Does the interval provide convincing evidence against the manufacturer's claim that the mean lifetime is 55 hours? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies a one-sample t-interval for a population mean."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: States the parameter in context: the mean lifetime of all of the batteries made in that month."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition and the 10% condition."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the sample data condition (n < 30 and the dotplot shows no strong skewness or outliers)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Gives the correct formula with the values substituted ($t^*$ = 2.145 with df = 14)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Gives the interval (44.15, 50.92)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Interprets the confidence level (95% confident)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States that the interval is for the mean lifetime of all of the batteries, in context."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that 55 is not in the interval, so it is not a plausible value."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Concludes that there is convincing evidence against the claim (the mean is less than 55 hours)."
+      }
+    ],
+    "sampleResponse": "A. A one-sample t-interval for a population mean (the population standard deviation is unknown). The parameter is μ, the mean lifetime, in hours, of all of the batteries that the manufacturer made in that month.\n\nB. Randomization: the batteries are a random sample. 10% condition: the sample of 15 is less than 10% of a very large number of batteries. Sample data condition: n = 15 < 30, but the dotplot is roughly symmetric with no strong skewness or outliers.\n\nC. $\\bar{x}$ ± $t^*$ s / √n = 47.53 ± 2.145(6.12 / √15) with df = 14, which is 47.53 ± 3.39, or (44.15, 50.92).\n\nD. We are 95% confident that the interval from 44.15 to 50.92 hours contains the mean lifetime of all of the batteries that the manufacturer made in that month.\n\nE. Yes. The value 55 hours is not in the interval (44.15, 50.92), so it is not a plausible value for the mean. All plausible values are less than 55, so the interval provides convincing evidence that the mean lifetime is less than 55 hours.",
+    "reviewed": false,
+    "diagram": {
+      "type": "dotplot",
+      "xLabel": "Lifetime (hours)",
+      "axisMin": 36,
+      "axisMax": 60,
+      "axisStep": 2,
+      "dots": [
+        {
+          "x": 38,
+          "count": 2
+        },
+        {
+          "x": 39,
+          "count": 1
+        },
+        {
+          "x": 44,
+          "count": 2
+        },
+        {
+          "x": 47,
+          "count": 1
+        },
+        {
+          "x": 48,
+          "count": 1
+        },
+        {
+          "x": 49,
+          "count": 3
+        },
+        {
+          "x": 50,
+          "count": 1
+        },
+        {
+          "x": 51,
+          "count": 1
+        },
+        {
+          "x": 52,
+          "count": 1
+        },
+        {
+          "x": 57,
+          "count": 1
+        },
+        {
+          "x": 58,
+          "count": 1
+        }
+      ],
+      "altText": "Dotplot of the lifetimes, in hours, of 15 batteries: roughly symmetric, with no outliers."
+    }
+  },
+  {
+    "id": "ap-stat-u4-frq-4",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "type": "INFERENCE",
+    "prompt": "A clinic says that the mean wait time for its patients is 35 minutes. The manager believes that the mean wait time is less than 35 minutes. The manager selected a random sample of 20 patients from the clinic's very large number of patients and recorded each patient's wait time. The dotplot shows the wait times. The mean of the sample is 29.90 minutes and the standard deviation is 5.74 minutes.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** State the appropriate null and alternative hypotheses for a test of the manager's belief. Define any parameter that you use.\n\n**B.** Verify that the conditions for the test are met.\n\n**C.** Calculate the test statistic and the p-value for the test.\n\n**D.** Using a significance level of α = 0.05, state a conclusion for the test in context, and justify your conclusion.\n\n**E.** Interpret the p-value from part C in context.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States H₀: μ = 35 and Hₐ: μ < 35."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Defines μ as the mean wait time of all of the clinic's patients."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition and the 10% condition."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the sample data condition (n < 30 and the dotplot shows no strong skewness or outliers)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the test statistic t = -3.97 (with df = 19)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the p-value 0.0004."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Compares the p-value with α = 0.05 and rejects the null hypothesis."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States a conclusion in context, in terms of the alternative (convincing evidence that the mean is less than 35 minutes)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the p-value is computed assuming the null hypothesis (mean 35) is true."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Interprets it as the probability of a sample mean at least as small as 29.90 in a random sample of 20."
+      }
+    ],
+    "sampleResponse": "A. Let μ be the mean wait time, in minutes, of all of the clinic's patients. H₀: μ = 35 and Hₐ: μ < 35.\n\nB. Randomization: the patients are a random sample. 10% condition: 20 is less than 10% of a very large number of patients. Sample data condition: n = 20 < 30, but the dotplot is roughly symmetric with no strong skewness or outliers.\n\nC. t = (29.90 - 35) / (5.74 / √20) = -3.97, with df = 19. The p-value is P(t ≤ -3.97) = 0.0004.\n\nD. The p-value 0.0004 is less than α = 0.05, so reject the null hypothesis. There is convincing statistical evidence that the mean wait time of all of the clinic's patients is less than 35 minutes.\n\nE. Assuming that the mean wait time of all of the clinic's patients is 35 minutes, the probability of getting a sample mean as small as 29.90 minutes or smaller, in a random sample of 20 patients, is 0.0004.",
+    "reviewed": false,
+    "diagram": {
+      "type": "dotplot",
+      "xLabel": "Wait time (minutes)",
+      "axisMin": 18,
+      "axisMax": 42,
+      "axisStep": 2,
+      "dots": [
+        {
+          "x": 20,
+          "count": 1
+        },
+        {
+          "x": 22,
+          "count": 2
+        },
+        {
+          "x": 23,
+          "count": 1
+        },
+        {
+          "x": 26,
+          "count": 1
+        },
+        {
+          "x": 27,
+          "count": 2
+        },
+        {
+          "x": 28,
+          "count": 1
+        },
+        {
+          "x": 29,
+          "count": 1
+        },
+        {
+          "x": 30,
+          "count": 1
+        },
+        {
+          "x": 31,
+          "count": 3
+        },
+        {
+          "x": 32,
+          "count": 1
+        },
+        {
+          "x": 33,
+          "count": 2
+        },
+        {
+          "x": 36,
+          "count": 1
+        },
+        {
+          "x": 38,
+          "count": 2
+        },
+        {
+          "x": 41,
+          "count": 1
+        }
+      ],
+      "altText": "Dotplot of the wait times, in minutes, of 20 patients: roughly symmetric, with no outliers."
+    }
+  },
+  {
+    "id": "ap-stat-u4-frq-5",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "type": "INFERENCE",
+    "prompt": "A teacher randomly selected 12 students from a very large school district. Each student took a vocabulary quiz, completed a two-week tutoring program, and then took a similar quiz. The teacher recorded the difference in each student's scores, after minus before. The dotplot shows the differences. The mean of the differences is 3.00 points and the standard deviation is 4.22 points.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify the appropriate inference procedure for estimating the mean change in the scores for all of the students in the district, and state the parameter in context.\n\n**B.** Verify that the conditions for the procedure are met.\n\n**C.** Construct and show the work for a 95% confidence interval for the parameter.\n\n**D.** Interpret the interval from part C in context.\n\n**E.** Does the interval provide convincing evidence that the mean score is different after the program? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies a one-sample t-interval for a population mean difference (matched pairs)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: States the parameter in context, with the order of subtraction (after - before)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition and the 10% condition."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the sample data condition using the differences (n < 30 and the dotplot shows no strong skewness or outliers)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Gives the correct formula with the values substituted ($t^*$ = 2.201 with df = 11)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Gives the interval (0.32, 5.68)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Interprets the confidence level (95% confident)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States that the interval is for the mean difference (after - before), in context."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the interval does not contain 0."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Concludes that there is convincing evidence of a change (the mean score is greater after the program)."
+      }
+    ],
+    "sampleResponse": "A. A one-sample t-interval for a population mean difference (matched pairs). The parameter is $\\mu_d$, the mean difference (after - before) in the vocabulary scores of all of the students in the district who complete the program.\n\nB. Randomization: the students are a random sample. 10% condition: 12 is less than 10% of the students in a very large district. Sample data condition: there are 12 differences, which is fewer than 30, and the dotplot of the differences is roughly symmetric with no strong skewness or outliers.\n\nC. $\\bar{x}_d$ ± $t^*$ $s_d$ / √n = 3.00 ± 2.201(4.22 / √12) with df = 11, which is 3.00 ± 2.68, or (0.32, 5.68).\n\nD. We are 95% confident that the interval from 0.32 to 5.68 points contains the mean difference (after - before) in the vocabulary scores of all of the students in the district who complete the program.\n\nE. Yes. The interval (0.32, 5.68) does not contain 0 and all of its values are positive, so there is convincing evidence that the mean score after the program is greater than the mean score before it.",
+    "reviewed": false,
+    "diagram": {
+      "type": "dotplot",
+      "xLabel": "Difference in score (after - before)",
+      "axisMin": -5,
+      "axisMax": 11,
+      "axisStep": 1,
+      "dots": [
+        {
+          "x": -4,
+          "count": 1
+        },
+        {
+          "x": -3,
+          "count": 1
+        },
+        {
+          "x": 0,
+          "count": 1
+        },
+        {
+          "x": 1,
+          "count": 1
+        },
+        {
+          "x": 2,
+          "count": 1
+        },
+        {
+          "x": 3,
+          "count": 1
+        },
+        {
+          "x": 4,
+          "count": 3
+        },
+        {
+          "x": 6,
+          "count": 1
+        },
+        {
+          "x": 9,
+          "count": 1
+        },
+        {
+          "x": 10,
+          "count": 1
+        }
+      ],
+      "altText": "Dotplot of the differences in the scores, after minus before, for 12 students: roughly symmetric, with no outliers."
+    }
+  },
+  {
+    "id": "ap-stat-u4-frq-6",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "type": "INFERENCE",
+    "prompt": "A company randomly selected 14 of its many workers to test a new tool. Each worker did the same task twice, once with the old tool and once with the new tool, and the order was randomized. The company recorded each worker's difference in times, in seconds, old tool minus new tool. The dotplot shows the differences. The mean of the differences is 4.14 seconds and the standard deviation is 3.03 seconds. The company believes that the new tool is faster.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** State the appropriate null and alternative hypotheses for a test of the company's belief. Define any parameter that you use.\n\n**B.** Verify that the conditions for the test are met.\n\n**C.** Calculate the test statistic and the p-value for the test.\n\n**D.** Using a significance level of α = 0.05, state a conclusion for the test in context, and justify your conclusion.\n\n**E.** Can the company conclude that the new tool causes the shorter times? Explain your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States H₀: $\\mu_d$ = 0 and Hₐ: $\\mu_d$ > 0 (with the order of subtraction, old - new)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Defines the parameter as the mean difference in the times of all of the company's workers."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition and the 10% condition."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the sample data condition using the differences (n < 30 and the dotplot shows no strong skewness or outliers)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the test statistic t = 5.11."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the p-value 0.0001."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Compares the p-value with α = 0.05 and rejects the null hypothesis."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States a conclusion in context, in terms of the alternative (convincing evidence that the mean time with the new tool is shorter)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that a cause-and-effect conclusion is justified because the order was randomized."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Gives a reason, in context (each worker used both tools in a random order, which controls other differences)."
+      }
+    ],
+    "sampleResponse": "A. Let $\\mu_d$ be the mean difference (old tool - new tool) in the times, in seconds, of all of the company's workers. H₀: $\\mu_d$ = 0 and Hₐ: $\\mu_d$ > 0.\n\nB. Randomization: the workers are a random sample, and the order of the tools was randomized. 10% condition: 14 is less than 10% of the company's many workers. Sample data condition: there are 14 differences, which is fewer than 30, and the dotplot of the differences is roughly symmetric with no strong skewness or outliers.\n\nC. t = (4.14 - 0) / (3.03 / √14) = 5.11, with df = 13. The p-value is P(t ≥ 5.11) = 0.0001.\n\nD. The p-value 0.0001 is less than α = 0.05, so reject the null hypothesis. There is convincing statistical evidence that the mean time with the old tool is greater than the mean time with the new tool for all of the company's workers.\n\nE. Yes. Each worker used both tools in a randomized order, which controls the effect of the order and of differences among the workers, so a difference that is too large to be due to chance can be attributed to the tools. The conclusion applies to the company's workers, because they were randomly selected.",
+    "reviewed": false,
+    "diagram": {
+      "type": "dotplot",
+      "xLabel": "Difference in time (old - new), seconds",
+      "axisMin": -2,
+      "axisMax": 10,
+      "axisStep": 1,
+      "dots": [
+        {
+          "x": -1,
+          "count": 2
+        },
+        {
+          "x": 2,
+          "count": 2
+        },
+        {
+          "x": 3,
+          "count": 1
+        },
+        {
+          "x": 4,
+          "count": 2
+        },
+        {
+          "x": 5,
+          "count": 3
+        },
+        {
+          "x": 6,
+          "count": 2
+        },
+        {
+          "x": 9,
+          "count": 2
+        }
+      ],
+      "altText": "Dotplot of the differences in the times, old tool minus new tool, for 14 workers: roughly symmetric, with no outliers."
+    }
+  },
+  {
+    "id": "ap-stat-u4-frq-7",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "type": "INFERENCE",
+    "prompt": "A researcher compared the times that students at two large high schools take to get to school. She selected independent random samples of 36 students from School A and 40 students from School B. In the School A sample, the mean time was 23.4 minutes with a standard deviation of 6.6 minutes. In the School B sample, the mean time was 20.5 minutes with a standard deviation of 5.3 minutes.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Identify the appropriate inference procedure for estimating the difference between the mean times of all students at the two schools, and state the parameter in context.\n\n**B.** Verify that the conditions for the procedure are met.\n\n**C.** A technology output gives 67.1 degrees of freedom. Construct and show the work for a 95% confidence interval for the difference in the mean times, School A minus School B.\n\n**D.** Interpret the interval from part C in context.\n\n**E.** Does the interval provide convincing evidence of a difference between the mean times of all students at the two schools? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Identifies a two-sample t-interval for a difference between population means."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: States the parameter in context: the difference between the mean times of all students at School A and at School B."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition (two independent random samples) and the 10% condition for each sample."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the sample data condition (both sample sizes, 36 and 40, are at least 30)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Gives the correct formula with the values substituted (difference 2.9, standard error 1.383, $t^*$ = 1.996)."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Gives the interval (0.14, 5.66)."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Interprets the confidence level (95% confident)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States that the interval is for the difference in the two population mean times, in context."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the interval does not contain 0."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Concludes that the mean time is greater at School A (convincing evidence of a difference)."
+      }
+    ],
+    "sampleResponse": "A. A two-sample t-interval for a difference between population means. The parameter is μ₁ - μ₂, where μ₁ is the mean time, in minutes, that all students at School A take to get to school and μ₂ is the mean time that all students at School B take.\n\nB. Randomization: the data come from two independent random samples. 10% condition: each sample is less than 10% of the students at its (large) school. Sample data condition: both sample sizes, 36 and 40, are at least 30.\n\nC. (23.4 - 20.5) ± $t^*$√(6.6²/36 + 5.3²/40) = 2.9 ± 1.996(1.383) = 2.9 ± 2.76, which is (0.14, 5.66).\n\nD. We are 95% confident that the interval from 0.14 to 5.66 minutes contains the difference between the mean time of all students at School A and the mean time of all students at School B to get to school.\n\nE. Yes. The interval (0.14, 5.66) does not contain 0, and all of its values are positive, so there is convincing evidence that the mean time is greater for the students at School A than for the students at School B.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-frq-8",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "type": "INFERENCE",
+    "prompt": "A trainer randomly assigned 34 volunteers to a new training program (16 volunteers) or the standard training program (18 volunteers). After 8 weeks, each volunteer took a fitness test. The boxplots show the scores. The new program group had a mean of 80.75 points and a standard deviation of 9.11 points. The standard program group had a mean of 72.11 points and a standard deviation of 5.51 points. The trainer believes that the new program gives a greater mean score.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** State the appropriate null and alternative hypotheses for a test of the trainer's belief. Define any parameters that you use.\n\n**B.** Verify that the conditions for the test are met.\n\n**C.** Calculate the test statistic and the p-value for the test. (Technology gives 24.1 degrees of freedom.)\n\n**D.** Using a significance level of α = 0.05, state a conclusion for the test in context, and justify your conclusion.\n\n**E.** Can the trainer conclude that the new program causes the greater mean score? Can the conclusion be applied to all adults? Justify your answers.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States H₀: μ₁ - μ₂ = 0 and Hₐ: μ₁ - μ₂ > 0."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Defines the parameters in context (the mean scores for volunteers like these after each program)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization condition (random assignment; the 10% condition is not needed)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies the sample data condition (both n < 30 and the boxplots show no strong skewness or outliers)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the test statistic t = 3.30."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the p-value 0.0015."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Compares the p-value with α = 0.05 and rejects the null hypothesis."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States a conclusion in context, in terms of the alternative (convincing evidence that the mean score is greater with the new program)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that a cause-and-effect conclusion is justified because of random assignment."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: States that the conclusion applies to volunteers like those in the study, not to all adults."
+      }
+    ],
+    "sampleResponse": "A. Let μ₁ be the mean fitness test score for volunteers like these after the new program, and μ₂ the mean score after the standard program. H₀: μ₁ - μ₂ = 0 and Hₐ: μ₁ - μ₂ > 0.\n\nB. Randomization: the volunteers were randomly assigned to the programs (the 10% condition is not needed for an experiment). Sample data condition: both sample sizes (16 and 18) are less than 30, but the boxplots are roughly symmetric with no outliers.\n\nC. t = (80.75 - 72.11) / √(9.11²/16 + 5.51²/18) = 3.30. The p-value is P(t ≥ 3.30) = 0.0015.\n\nD. The p-value 0.0015 is less than α = 0.05, so reject the null hypothesis. There is convincing statistical evidence that the mean fitness test score is greater after the new program than after the standard program for volunteers like these.\n\nE. Yes, the trainer can conclude that the new program causes the greater mean score, because the volunteers were randomly assigned to the programs. No, the conclusion cannot be applied to all adults, because the participants were volunteers and not a random sample of all adults; it applies to people like the volunteers.",
+    "reviewed": false,
+    "diagram": {
+      "type": "boxplot",
+      "xLabel": "Score on the fitness test (points)",
+      "axisMin": 55,
+      "axisMax": 105,
+      "axisStep": 5,
+      "groups": [
+        {
+          "min": 67,
+          "q1": 75.0,
+          "median": 81.5,
+          "q3": 84.5,
+          "max": 98,
+          "label": "New program"
+        },
+        {
+          "min": 63,
+          "q1": 69,
+          "median": 71.0,
+          "q3": 75,
+          "max": 82,
+          "label": "Standard program"
+        }
+      ],
+      "altText": "Boxplots of the fitness test scores of the volunteers in the two programs: both roughly symmetric, with no outliers."
+    }
+  },
+  {
+    "id": "ap-stat-u4-frq-9",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "type": "MULTI_FOCUS",
+    "prompt": "The heights of the plants in a large field are approximately normally distributed with a mean of 70 centimeters and a standard deviation of 10 centimeters. A botanist selects a random sample of 25 plants from the field.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Find the mean and the standard deviation of the sampling distribution of the sample mean height $\\bar{x}$ for random samples of 25 plants.\n\n**B.** Justify that it is appropriate to model the sampling distribution of $\\bar{x}$ with a normal distribution.\n\n**C.** Calculate the probability that the mean height of the 25 plants in the sample is greater than 75 centimeters.\n\n**D.** Calculate the probability that one plant selected at random from the field is taller than 75 centimeters, and explain why this probability is different from the probability in part C.\n\n**E.** The botanist wants the standard deviation of the sampling distribution to be half as large. By what factor should the sample size be multiplied? Justify your answer.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States the mean of the sampling distribution as 70 centimeters."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Calculates the standard deviation 2.0 centimeters."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the randomization and 10% conditions."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Cites the approximately normal population, so the sampling distribution of the mean is normal for any n."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the z-score 2.5, using the standard deviation from part A."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the probability 0.0062."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Calculates the probability for one plant (0.3085), using the standard deviation of 10."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Explains that individual values vary more than the mean of a sample (the standard deviation of $\\bar{x}$ is smaller)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the sample size should be multiplied by 4."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Justifies the answer using σ / √n."
+      }
+    ],
+    "sampleResponse": "A. μ = 70 centimeters and σ = 10 / √25 = 2.0 centimeters.\n\nB. The plants are a random sample, 25 is less than 10% of the plants in a large field, and the population is approximately normal, so the sampling distribution of $\\bar{x}$ is normal for any sample size.\n\nC. z = (75 - 70) / 2.0 = 2.5, so P($\\bar{x}$ > 75) = P(z > 2.5) = 0.0062.\n\nD. For one plant, z = (75 - 70) / 10 = 0.5, so P(X > 75) = 0.3085. The probability is much greater than the probability in part C because individual plants vary more (standard deviation 10) than the mean of 25 plants (standard deviation 2), so a sample mean is much less likely to be far from 70.\n\nE. The standard deviation is 10 / √n, so to halve it the sample size must be multiplied by 4 (from 25 to 100), because √4 = 2.",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-frq-10",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "type": "MULTI_FOCUS",
+    "prompt": "A district has 3,000 students at Lincoln High School and 4,000 students at Roosevelt High School. The mean score on a district math test is 60 points with a standard deviation of 10 points at Lincoln, and 55 points with a standard deviation of 12 points at Roosevelt. A researcher plans to select independent random samples of 40 Lincoln students and 50 Roosevelt students.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Find the mean and the standard deviation of the sampling distribution of $\\bar{x}_1 - \\bar{x}_2$, the sample mean score at Lincoln minus the sample mean score at Roosevelt.\n\n**B.** Verify that the conditions for using a normal distribution to model this sampling distribution are met.\n\n**C.** Calculate the probability that the sample mean score at Lincoln is greater than the sample mean score at Roosevelt.\n\n**D.** Describe how the researcher could select the simple random sample of 40 Lincoln students from a list of the 3,000 students.\n\n**E.** Interpret the standard deviation from part A in context.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States the mean of the sampling distribution as 5 points."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Calculates the standard deviation 2.32 points."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Verifies the independent random samples and the 10% condition for both samples."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Verifies that both sample sizes are at least 30."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the z-score -2.16, using the mean and the standard deviation from part A."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the probability 0.9844."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: Describes numbering the 3,000 students and using a random number generator (or another random process)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: States that 40 different numbers are selected (without replacement)."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Interprets the standard deviation as the typical amount that the difference in the sample means varies from the difference in the population means."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Gives the interpretation in context (the difference in the sample mean scores, Lincoln minus Roosevelt)."
+      }
+    ],
+    "sampleResponse": "A. μ = 60 - 55 = 5 points and σ = √(10²/40 + 12²/50) = √(2.5 + 2.88) = 2.32 points.\n\nB. The samples are independent random samples. 10% condition: 40 is less than 10% of 3,000, and 50 is less than 10% of 4,000. Sample data condition: both sample sizes, 40 and 50, are at least 30, so the sampling distribution is approximately normal.\n\nC. z = (0 - 5) / 2.32 = -2.16, so P($\\bar{x}_1 - \\bar{x}_2$ > 0) = P(z > -2.16) = 0.9844.\n\nD. Number the Lincoln students from 1 to 3,000. Use a random number generator to select 40 different numbers between 1 and 3,000. The students with those numbers are the sample.\n\nE. In pairs of random samples of these sizes, the difference between the sample mean scores (Lincoln minus Roosevelt) typically varies from the difference in the population mean scores, 5 points, by about 2.32 points.",
+    "reviewed": false
+  }
+]

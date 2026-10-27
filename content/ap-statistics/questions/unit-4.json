@@ -1,0 +1,3454 @@
+[
+  {
+    "id": "ap-stat-u4-mcq-1",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "easy",
+    "stem": "A population of delivery times has a mean of 50 minutes and a standard deviation of 12 minutes. Random samples of size 36 are selected. What are the mean and the standard deviation of the sampling distribution of the sample mean $\\bar{x}$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The mean is 50 minutes and the standard deviation is 0.33 minutes",
+        "isCorrect": false,
+        "explanation": "This divides σ by n instead of by √n."
+      },
+      {
+        "label": "B",
+        "text": "The mean is 50 minutes and the standard deviation is 2.00 minutes",
+        "isCorrect": true,
+        "explanation": "μ̄ = μ = 50 and σ = σ / √n = 12 / √36 = 2."
+      },
+      {
+        "label": "C",
+        "text": "The mean is 50 minutes and the standard deviation is 12 minutes",
+        "isCorrect": false,
+        "explanation": "The standard deviation of 12 is for the individual delivery times. The sample mean varies less."
+      },
+      {
+        "label": "D",
+        "text": "The mean is 50 minutes and the standard deviation is 4.00 minutes",
+        "isCorrect": false,
+        "explanation": "This is σ² / n, which is the variance of $\\bar{x}$, not its standard deviation."
+      }
+    ],
+    "explanation": "μ = 50 and σ = 12 / √36 = 2 minutes.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-2",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "medium",
+    "stem": "The weights of the apples from an orchard are approximately normally distributed. A random sample of only 8 apples is selected from the very large number of apples in the orchard. Is it appropriate to use a normal distribution to model the sampling distribution of the sample mean weight?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "No, because the sampling distribution of a sample mean is never normal, whatever the shape of the population or the sample size is",
+        "isCorrect": false,
+        "explanation": "It is normal when the population is normal, and approximately normal for large samples from other populations."
+      },
+      {
+        "label": "B",
+        "text": "Yes, because the sample size is less than 10% of the population",
+        "isCorrect": false,
+        "explanation": "The 10% condition is a separate condition. The shape comes from the normal population."
+      },
+      {
+        "label": "C",
+        "text": "Yes, because the population is approximately normal, so the sampling distribution of the sample mean is normal for any n",
+        "isCorrect": true,
+        "explanation": "When the population is normal, the sample mean is normally distributed regardless of n."
+      },
+      {
+        "label": "D",
+        "text": "No, because the sample size, 8, is less than 30",
+        "isCorrect": false,
+        "explanation": "The sample size of 30 is needed only when the population is not normal."
+      }
+    ],
+    "explanation": "A normal population gives a normal sampling distribution of $\\bar{x}$ for any n.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-3",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "medium",
+    "stem": "The amounts of time, in minutes, that customers wait at a clinic have a distribution that is strongly skewed to the right. A random sample of 15 customers is selected from a very large number of customers. Is it appropriate to use a normal distribution to model the sampling distribution of the sample mean?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "No, because the population is not normal and the sample size, 15, is less than 30",
+        "isCorrect": true,
+        "explanation": "For a population that is not normal, the sample size should be at least 30."
+      },
+      {
+        "label": "B",
+        "text": "Yes, because the sample is random and 15 is less than 10% of the customers",
+        "isCorrect": false,
+        "explanation": "The randomization and 10% conditions do not decide the shape."
+      },
+      {
+        "label": "C",
+        "text": "Yes, because every sampling distribution is approximately normal",
+        "isCorrect": false,
+        "explanation": "A sampling distribution is approximately normal only under conditions on the population or the sample size."
+      },
+      {
+        "label": "D",
+        "text": "No, because a random sample of customers cannot be used to find a sample mean of the times",
+        "isCorrect": false,
+        "explanation": "A random sample is what makes a sample mean usable. The problem is the shape."
+      }
+    ],
+    "explanation": "A skewed population and n < 30: the normal model is not appropriate.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-4",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "medium",
+    "stem": "The scores on a test are approximately normally distributed with a mean of 100 and a standard deviation of 20. A random sample of 64 scores is selected. What is the probability that the sample mean is greater than 105?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.977",
+        "isCorrect": false,
+        "explanation": "This is the probability that the sample mean is less than 105."
+      },
+      {
+        "label": "B",
+        "text": "0.023",
+        "isCorrect": true,
+        "explanation": "The sampling distribution of $\\bar{x}$ has mean 100 and standard deviation 20 / √64 = 2.5. z = (105 - 100) / 2.5 = 2.0."
+      },
+      {
+        "label": "C",
+        "text": "0.000",
+        "isCorrect": false,
+        "explanation": "This divides the standard deviation by n instead of by √n."
+      },
+      {
+        "label": "D",
+        "text": "0.401",
+        "isCorrect": false,
+        "explanation": "This uses the standard deviation of individual scores, 20, which is the probability that one score is greater than 105."
+      }
+    ],
+    "explanation": "P($\\bar{x}$ > 105) = P(z > 2.0), about 0.023.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-5",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "medium",
+    "stem": "The standard deviation of the sampling distribution of the sample mean time, for random samples of 64 customers, is 2.5 minutes. Which of the following is the correct interpretation of this value?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Every sample mean time is within 2.5 minutes of the population mean time",
+        "isCorrect": false,
+        "explanation": "Some sample means are farther away. The standard deviation is a typical distance."
+      },
+      {
+        "label": "B",
+        "text": "In random samples of 64 customers, the sample mean time typically varies from the population mean by about 2.5 minutes",
+        "isCorrect": true,
+        "explanation": "The standard deviation of a sampling distribution is the typical amount that the statistic varies from the parameter."
+      },
+      {
+        "label": "C",
+        "text": "The time of a typical customer varies from the mean time of all customers by about 2.5 minutes in a random sample of 64",
+        "isCorrect": false,
+        "explanation": "That would describe the standard deviation of individual times, not of the sample mean."
+      },
+      {
+        "label": "D",
+        "text": "The mean time of the 64 customers in each sample is exactly 2.5 minutes",
+        "isCorrect": false,
+        "explanation": "The sample mean varies from sample to sample. 2.5 is a measure of how much."
+      }
+    ],
+    "explanation": "The standard deviation of $\\bar{x}$ is the typical distance of $\\bar{x}$ from μ in repeated samples.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-6",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "easy",
+    "stem": "Random samples are selected from a large population. The sample size is increased from 50 to 200. What happens to the standard deviation of the sampling distribution of the sample mean?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It does not change",
+        "isCorrect": false,
+        "explanation": "The sample size is in the formula, so the standard deviation changes."
+      },
+      {
+        "label": "B",
+        "text": "It is divided by 4",
+        "isCorrect": false,
+        "explanation": "The standard deviation involves √n, so quadrupling n divides it by 2, not by 4."
+      },
+      {
+        "label": "C",
+        "text": "It is divided by 2",
+        "isCorrect": true,
+        "explanation": "σ / √n: √200 is 2 times √50, so the standard deviation is divided by 2."
+      },
+      {
+        "label": "D",
+        "text": "It is multiplied by 2",
+        "isCorrect": false,
+        "explanation": "A larger sample gives less variability in the sample mean."
+      }
+    ],
+    "explanation": "Quadrupling n divides σ / √n by 2.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-7",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "medium",
+    "stem": "A district has 900 teachers. A researcher plans to select a simple random sample of 120 teachers without replacement, and to use the sampling distribution of the sample mean salary. Which of the following is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Both conditions are met, because the sample was selected at random",
+        "isCorrect": false,
+        "explanation": "The sample is random, but 120 is more than 10% of 900."
+      },
+      {
+        "label": "B",
+        "text": "The 10% condition is not met, because the sample size of 120 is more than 10% of the 900 teachers",
+        "isCorrect": true,
+        "explanation": "n ≤ N / 10 = 90 is needed."
+      },
+      {
+        "label": "C",
+        "text": "The randomization condition is not met, because the teachers were selected without replacement from the list",
+        "isCorrect": false,
+        "explanation": "Selecting without replacement is allowed. The 10% condition handles it."
+      },
+      {
+        "label": "D",
+        "text": "The 10% condition is met, because the sample size of 120 is greater than 30",
+        "isCorrect": false,
+        "explanation": "The 10% condition compares the sample size with the population size."
+      }
+    ],
+    "explanation": "120 > 90 = 10% of 900: the 10% condition fails.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-8",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "hard",
+    "stem": "The populations of household incomes in a city is extremely skewed to the right. A random sample of 35 households is selected from the very large number of households. Which of the following is the best statement about the sampling distribution of the sample mean income?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is skewed in the same way as the population, whatever the sample size",
+        "isCorrect": false,
+        "explanation": "The sampling distribution becomes more normal as n increases."
+      },
+      {
+        "label": "B",
+        "text": "It has the same standard deviation as the population, because the sample is random and large enough to represent the population",
+        "isCorrect": false,
+        "explanation": "The standard deviation of $\\bar{x}$ is σ / √n."
+      },
+      {
+        "label": "C",
+        "text": "It may still be noticeably skewed, because an extremely skewed population may need a sample size much larger than 30",
+        "isCorrect": true,
+        "explanation": "The rule n ≥ 30 is a guide, and extreme skewness needs a larger n."
+      },
+      {
+        "label": "D",
+        "text": "It is exactly normal, because the sample size is at least 30",
+        "isCorrect": false,
+        "explanation": "It is approximately normal at best, and only for large enough n."
+      }
+    ],
+    "explanation": "Extreme skewness: a sample size much larger than 30 may be needed.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-9",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-sample-means",
+    "difficulty": "hard",
+    "stem": "The heights of the plants in a large field are approximately normally distributed with a mean of 70 cm and a standard deviation of 10 cm. The probability that one randomly selected plant is taller than 75 cm is 0.309. What is the probability that the mean height of a random sample of 25 plants is greater than 75 cm?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.006",
+        "isCorrect": true,
+        "explanation": "The sample mean has standard deviation 10 / √25 = 2, so z = (75 - 70) / 2 = 2.5, which is far in the tail."
+      },
+      {
+        "label": "B",
+        "text": "0.000",
+        "isCorrect": false,
+        "explanation": "This divides the standard deviation by n = 25 instead of by √25 = 5."
+      },
+      {
+        "label": "C",
+        "text": "0.309",
+        "isCorrect": false,
+        "explanation": "This is the probability for one plant. A sample mean varies less than one value."
+      },
+      {
+        "label": "D",
+        "text": "0.062",
+        "isCorrect": false,
+        "explanation": "This divides the probability for one plant by 5, which is not how the standard deviation changes."
+      }
+    ],
+    "explanation": "P($\\bar{x}$ > 75) = P(z > 2.5), about 0.006, much less than P(X > 75).",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-10",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Which of the following is true of a t-distribution, compared with the standard normal distribution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is skewed to the right, with narrower tails than the standard normal distribution, for any degrees of freedom",
+        "isCorrect": false,
+        "explanation": "A t-distribution is symmetric."
+      },
+      {
+        "label": "B",
+        "text": "It is symmetric and bell-shaped, but with narrower tails and a higher peak",
+        "isCorrect": false,
+        "explanation": "The tails of a t-distribution are wider, not narrower."
+      },
+      {
+        "label": "C",
+        "text": "It is symmetric and bell-shaped, but with wider tails; it has a lower peak when its degrees of freedom are small",
+        "isCorrect": true,
+        "explanation": "t-distributions have fatter tails, especially for small degrees of freedom."
+      },
+      {
+        "label": "D",
+        "text": "It is identical to the standard normal distribution for every sample size",
+        "isCorrect": false,
+        "explanation": "A t-distribution is close to the standard normal distribution only when the degrees of freedom are large."
+      }
+    ],
+    "explanation": "A t-distribution has wider tails than the standard normal; it approaches the standard normal as df increases.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-11",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "easy",
+    "stem": "A researcher selects a random sample of 22 batteries of one brand and records the lifetime of each, in hours. The researcher wants to estimate the mean lifetime of all batteries of this brand. The population standard deviation is unknown. Which procedure is appropriate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A one-sample z-interval for a population mean, using the sample standard deviation as σ",
+        "isCorrect": false,
+        "explanation": "When σ is unknown, the sample standard deviation is used with the t-distribution."
+      },
+      {
+        "label": "B",
+        "text": "A one-sample t-interval for a population mean",
+        "isCorrect": true,
+        "explanation": "The parameter is one population mean and σ is unknown, so t is used."
+      },
+      {
+        "label": "C",
+        "text": "A one-sample z-interval for a population proportion",
+        "isCorrect": false,
+        "explanation": "The variable is quantitative (hours), so the parameter is a mean, not a proportion."
+      },
+      {
+        "label": "D",
+        "text": "A two-sample t-interval for a difference between population means",
+        "isCorrect": false,
+        "explanation": "There is one sample and one population."
+      }
+    ],
+    "explanation": "One quantitative variable, one sample, σ unknown: a one-sample t-interval.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-12",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A teacher gives the same 15 students a reading test before a tutoring program and another reading test after the program. The teacher wants to estimate the mean change in the scores, for students like these. Which procedure is appropriate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A two-sample t-interval for a difference between two population means, treating the before and after scores as independent samples",
+        "isCorrect": false,
+        "explanation": "The before and after scores are for the same students, so they are not independent."
+      },
+      {
+        "label": "B",
+        "text": "A two-sample z-interval for a difference between population proportions",
+        "isCorrect": false,
+        "explanation": "The scores are quantitative, not categories."
+      },
+      {
+        "label": "C",
+        "text": "A one-sample t-interval for a population mean difference, using the differences (after - before) for the 15 students",
+        "isCorrect": true,
+        "explanation": "The scores are paired, so the analysis uses one sample of differences."
+      },
+      {
+        "label": "D",
+        "text": "A one-sample t-interval for the mean of the before scores only",
+        "isCorrect": false,
+        "explanation": "The question is about the change, which needs both scores."
+      }
+    ],
+    "explanation": "A matched pairs design: take the differences and use a one-sample t-interval.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-13",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Each of 15 students takes a reading test before a tutoring program and again after it. Let the difference for a student be the after score minus the before score. Which of the following correctly states the parameter for a confidence interval for the mean change?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\mu_d$ = the mean difference in the reading test scores",
+        "isCorrect": false,
+        "explanation": "This does not state the order of subtraction or the population."
+      },
+      {
+        "label": "B",
+        "text": "$\\mu_d$ = the mean of the 15 differences in the reading test scores of the students in the sample who were tested",
+        "isCorrect": false,
+        "explanation": "That describes the sample mean difference, a statistic."
+      },
+      {
+        "label": "C",
+        "text": "$\\mu_d$ = the mean reading test score of the students after the program",
+        "isCorrect": false,
+        "explanation": "This is the mean of the after scores, not the mean difference."
+      },
+      {
+        "label": "D",
+        "text": "$\\mu_d$ = the mean difference (after - before) in the reading test scores of all students like these",
+        "isCorrect": true,
+        "explanation": "The parameter references the population mean difference, the response variable, and the order of subtraction."
+      }
+    ],
+    "explanation": "State the population mean difference with the order of subtraction.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-14",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A random sample of 12 people from a very large group finishes a puzzle. The dotplot shows the times. A student wants to construct a one-sample t-interval for the mean time of all people in the group. Which of the following is correct about the sample data condition?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The condition is not met, because the data are not exactly normal",
+        "isCorrect": false,
+        "explanation": "The data need not be exactly normal, but they should be free from strong skewness and outliers."
+      },
+      {
+        "label": "B",
+        "text": "The condition is met, because the sample was selected at random",
+        "isCorrect": false,
+        "explanation": "Random selection is the randomization condition. The sample data condition is about the shape of the data."
+      },
+      {
+        "label": "C",
+        "text": "The condition is met, because the sample size is greater than 10",
+        "isCorrect": false,
+        "explanation": "A sample size of 10 or more is not the condition. For n < 30 the data must have no strong skewness or outliers."
+      },
+      {
+        "label": "D",
+        "text": "The condition is not met, because the sample size is less than 30 and the data have a strong outlier",
+        "isCorrect": true,
+        "explanation": "For n < 30, the sample data should be free from strong skewness and outliers."
+      }
+    ],
+    "explanation": "n = 12 < 30 and there is a strong outlier: the sample data condition is not met.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false,
+    "diagram": {
+      "type": "dotplot",
+      "xLabel": "Time to finish a puzzle (minutes)",
+      "axisMin": 10,
+      "axisMax": 55,
+      "axisStep": 5,
+      "dots": [
+        {
+          "x": 12,
+          "count": 1
+        },
+        {
+          "x": 14,
+          "count": 1
+        },
+        {
+          "x": 15,
+          "count": 2
+        },
+        {
+          "x": 16,
+          "count": 1
+        },
+        {
+          "x": 17,
+          "count": 2
+        },
+        {
+          "x": 18,
+          "count": 1
+        },
+        {
+          "x": 19,
+          "count": 1
+        },
+        {
+          "x": 20,
+          "count": 1
+        },
+        {
+          "x": 21,
+          "count": 1
+        },
+        {
+          "x": 52,
+          "count": 1
+        }
+      ],
+      "altText": "Dotplot of the times of 12 people to finish a puzzle: most are between 12 and 21 minutes, and one is 52 minutes."
+    }
+  },
+  {
+    "id": "ap-stat-u4-mcq-15",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A random sample of 25 batteries has a mean lifetime of 48.2 hours and a standard deviation of 6.4 hours. The lifetimes are approximately normally distributed. Which of the following is a 95% confidence interval for the mean lifetime of all batteries of this brand?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "(45.56, 50.84)",
+        "isCorrect": true,
+        "explanation": "$\\bar{x}$ ± $t^*$ s / √n = 48.2 ± 2.064(6.4 / √25), with df = 24."
+      },
+      {
+        "label": "B",
+        "text": "(34.99, 61.41)",
+        "isCorrect": false,
+        "explanation": "This uses s in place of the standard error, s / √n."
+      },
+      {
+        "label": "C",
+        "text": "(45.69, 50.71)",
+        "isCorrect": false,
+        "explanation": "This uses the critical value 1.96 from the standard normal distribution. With an unknown σ, use the t critical value."
+      },
+      {
+        "label": "D",
+        "text": "(44.62, 51.78)",
+        "isCorrect": false,
+        "explanation": "This uses the critical value for a 99% confidence level, 2.797."
+      }
+    ],
+    "explanation": "48.2 ± 2.064(1.28) = (45.56, 50.84).",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-16",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "What is the critical value $t^*$ for a 95% confidence interval for a population mean, based on a random sample of size 15?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "2.145",
+        "isCorrect": true,
+        "explanation": "The degrees of freedom are n - 1 = 14, and the central 95% of the t-distribution with 14 degrees of freedom lies between -2.145 and 2.145."
+      },
+      {
+        "label": "B",
+        "text": "1.960",
+        "isCorrect": false,
+        "explanation": "This is the critical value for a 95% confidence level from the standard normal distribution."
+      },
+      {
+        "label": "C",
+        "text": "1.761",
+        "isCorrect": false,
+        "explanation": "This is the critical value for a 90% confidence level with 14 degrees of freedom."
+      },
+      {
+        "label": "D",
+        "text": "2.131",
+        "isCorrect": false,
+        "explanation": "This is the critical value for 15 degrees of freedom. The degrees of freedom are n - 1 = 14."
+      }
+    ],
+    "explanation": "df = 14 and $t^*$ = 2.145.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-17",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A random sample of 36 students has a mean commute of 33.4 minutes and a standard deviation of 10.2 minutes. What are the standard error of the sample mean and the margin of error for a 95% confidence interval?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The standard error is 0.28 minutes and the margin of error is 0.58 minutes",
+        "isCorrect": false,
+        "explanation": "This divides s by n instead of by √n."
+      },
+      {
+        "label": "B",
+        "text": "The standard error is 10.2 minutes and the margin of error is 20.71 minutes",
+        "isCorrect": false,
+        "explanation": "The standard deviation is not the standard error. The standard error divides by √n."
+      },
+      {
+        "label": "C",
+        "text": "The standard error is 1.70 minutes and the margin of error is 1.70 minutes",
+        "isCorrect": false,
+        "explanation": "The margin of error is the critical value times the standard error, not the standard error."
+      },
+      {
+        "label": "D",
+        "text": "The standard error is 1.70 minutes and the margin of error is 3.45 minutes",
+        "isCorrect": true,
+        "explanation": "SE = s / √n = 10.2 / 6 = 1.7, and the margin of error is $t^*$ × SE = 2.030(1.7) with df = 35."
+      }
+    ],
+    "explanation": "SE = 1.70 and the margin of error = 2.030(1.7) = 3.45 minutes.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-18",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "hard",
+    "stem": "Each of 16 students solves a set of problems with and without music. The difference for each student is the time without music minus the time with music. The mean of the 16 differences is 2.5 minutes and the standard deviation is 4.0 minutes. The differences have no strong skewness or outliers. Which of the following is a 95% confidence interval for the population mean difference?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "(-6.03, 11.03)",
+        "isCorrect": false,
+        "explanation": "This uses the standard deviation of the differences in place of the standard error."
+      },
+      {
+        "label": "B",
+        "text": "(0.37, 4.63)",
+        "isCorrect": true,
+        "explanation": "2.5 ± 2.131(4.0 / √16), with df = 15."
+      },
+      {
+        "label": "C",
+        "text": "(0.54, 4.46)",
+        "isCorrect": false,
+        "explanation": "This uses 1.96 and the standard deviation divided by 2, with the wrong critical value for df = 15."
+      },
+      {
+        "label": "D",
+        "text": "(0.38, 4.62)",
+        "isCorrect": false,
+        "explanation": "This uses 16 degrees of freedom instead of 15."
+      }
+    ],
+    "explanation": "2.5 ± 2.131(1.0) = (0.37, 4.63).",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-19",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A researcher records the mass of each of 10 pairs of identical twins, one twin raised in a city and the other in the country. The researcher wants to estimate the mean difference in the masses. Which of the following is the best analysis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A chi-square test for homogeneity, comparing city and country",
+        "isCorrect": false,
+        "explanation": "The response is quantitative, not categories in a two-way table."
+      },
+      {
+        "label": "B",
+        "text": "A one-sample t-interval for a mean difference, using the 10 differences between the twins",
+        "isCorrect": true,
+        "explanation": "Each pair is dependent, so use the differences."
+      },
+      {
+        "label": "C",
+        "text": "A one-sample z-interval for a proportion, comparing the number of heavier twins",
+        "isCorrect": false,
+        "explanation": "The data are masses, a quantitative variable. The pairs allow a mean difference."
+      },
+      {
+        "label": "D",
+        "text": "A two-sample t-interval, treating the 10 city twins and the 10 country twins as independent samples",
+        "isCorrect": false,
+        "explanation": "The twins in a pair are related, so the samples are not independent."
+      }
+    ],
+    "explanation": "Matched pairs: the analysis is based on the differences.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-20",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A 95% confidence interval for the mean lifetime of all batteries of a brand is (45.56, 50.84) hours. Which of the following is a correct interpretation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is a 95% probability that the mean lifetime of the 25 batteries in the sample is between 45.56 and 50.84 hours",
+        "isCorrect": false,
+        "explanation": "The sample mean, 48.2, is known. The interval is about the population mean."
+      },
+      {
+        "label": "B",
+        "text": "We are 95% confident that the interval from 45.56 to 50.84 hours contains the mean lifetime of all batteries of this brand",
+        "isCorrect": true,
+        "explanation": "An interpretation references the parameter, the population, and the context."
+      },
+      {
+        "label": "C",
+        "text": "The mean lifetime of every battery of this brand is between 45.56 and 50.84 hours",
+        "isCorrect": false,
+        "explanation": "Individual lifetimes vary around the mean. The interval is for the population mean."
+      },
+      {
+        "label": "D",
+        "text": "95% of all batteries of this brand have lifetimes between 45.56 and 50.84 hours",
+        "isCorrect": false,
+        "explanation": "The interval estimates the mean. It does not describe where 95% of the individual lifetimes are."
+      }
+    ],
+    "explanation": "Interpret the interval as a statement of confidence about the population mean.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-21",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Which of the following is the correct interpretation of a 95% confidence level for a population mean?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "In repeated random sampling with the same sample size, about 95% of the intervals created will capture the population mean",
+        "isCorrect": true,
+        "explanation": "The confidence level describes the long-run success rate of the method."
+      },
+      {
+        "label": "B",
+        "text": "There is a 95% probability that the population mean is in the one interval that was created from the random sample that was selected",
+        "isCorrect": false,
+        "explanation": "The population mean is a fixed value. A particular interval either contains it or does not."
+      },
+      {
+        "label": "C",
+        "text": "95% of the individual values in the population are within the interval",
+        "isCorrect": false,
+        "explanation": "The interval is for the mean, not for the individual values."
+      },
+      {
+        "label": "D",
+        "text": "In repeated random sampling, 95% of the sample means will be equal to the population mean",
+        "isCorrect": false,
+        "explanation": "Sample means vary, and most are not equal to the population mean."
+      }
+    ],
+    "explanation": "A 95% confidence level: about 95% of intervals from repeated random samples capture the mean.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-22",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A company claims that the mean lifetime of its batteries is 52 hours. A 95% confidence interval for the mean lifetime, from a random sample of batteries, is (45.56, 50.84) hours. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The interval provides convincing evidence that the mean lifetime is 52 hours, because 52 is close to the interval of plausible values",
+        "isCorrect": false,
+        "explanation": "A value outside the interval is not plausible, however close it is."
+      },
+      {
+        "label": "B",
+        "text": "The interval provides convincing evidence that the mean lifetime is not 52 hours, because 52 is not a plausible value",
+        "isCorrect": true,
+        "explanation": "Values outside the interval are not plausible values for the mean."
+      },
+      {
+        "label": "C",
+        "text": "The interval provides convincing evidence that the mean lifetime is 48.2 hours, the center of the interval",
+        "isCorrect": false,
+        "explanation": "An interval gives a range of plausible values and does not prove a single value."
+      },
+      {
+        "label": "D",
+        "text": "The interval provides no information about the claim, because an interval cannot be used to evaluate a claim",
+        "isCorrect": false,
+        "explanation": "An interval gives plausible values and can support or contradict a claim."
+      }
+    ],
+    "explanation": "52 is not in (45.56, 50.84): not a plausible value for the mean.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-23",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "hard",
+    "stem": "A 95% confidence interval for the mean lifetime of a brand of batteries is (48.36, 53.64) hours. A manager claims that the mean lifetime is at least 50 hours. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The interval does not provide convincing evidence against the claim, because values of 50 hours or more are plausible and 50 is in the interval",
+        "isCorrect": true,
+        "explanation": "The interval includes 50 and values above it."
+      },
+      {
+        "label": "B",
+        "text": "The interval proves that the mean lifetime is at least 50 hours",
+        "isCorrect": false,
+        "explanation": "An interval gives plausible values and cannot prove a claim."
+      },
+      {
+        "label": "C",
+        "text": "The interval provides convincing evidence against the claim, because part of the interval is below 50 hours",
+        "isCorrect": false,
+        "explanation": "A part of the interval being below 50 does not make the claim implausible, since 50 and higher values are also plausible."
+      },
+      {
+        "label": "D",
+        "text": "The interval provides convincing evidence for the claim, because the center of the interval is 51",
+        "isCorrect": false,
+        "explanation": "The center is 51, but the interval also includes values less than 50, so it is not convincing evidence that the mean is at least 50."
+      }
+    ],
+    "explanation": "50 is in the interval, so a mean of at least 50 is plausible.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-24",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Each of 20 workers has the time for a task recorded with an old tool and with a new tool. The difference for each worker is the time with the old tool minus the time with the new tool. A 95% confidence interval for the population mean difference is (-0.4, 3.2) minutes. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is convincing evidence that the mean times are equal, because 0 is in the interval",
+        "isCorrect": false,
+        "explanation": "An interval that contains 0 does not prove that the means are equal."
+      },
+      {
+        "label": "B",
+        "text": "There is not convincing evidence of a difference in the mean times, because 0 is in the interval",
+        "isCorrect": true,
+        "explanation": "If the interval contains 0, there is not sufficient evidence of a difference."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing evidence that the new tool is faster, because most of the interval is positive",
+        "isCorrect": false,
+        "explanation": "The interval includes 0 and negative values, so a difference has not been shown."
+      },
+      {
+        "label": "D",
+        "text": "There is convincing evidence of a difference, because the interval is not centered at 0",
+        "isCorrect": false,
+        "explanation": "The question is whether 0 is a plausible value. It is in the interval."
+      }
+    ],
+    "explanation": "0 is a plausible value for the mean difference.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-25",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Each of 20 students takes a test before and after a review class. The difference for each student is the after score minus the before score. A 95% confidence interval for the population mean difference is (1.2, 4.8) points. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is convincing evidence that the mean score after the review class is greater than the mean score before it, for students like these",
+        "isCorrect": true,
+        "explanation": "All plausible values of the mean difference (after - before) are positive."
+      },
+      {
+        "label": "B",
+        "text": "There is not convincing evidence of a change, because the interval has a width of 3.6 points",
+        "isCorrect": false,
+        "explanation": "The width does not decide this. The interval does not contain 0."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing evidence that the mean score before the review class is greater than the mean score after it",
+        "isCorrect": false,
+        "explanation": "Positive values of (after - before) mean that the after scores are greater."
+      },
+      {
+        "label": "D",
+        "text": "There is convincing evidence that every student scored between 1.2 and 4.8 points higher after the review class",
+        "isCorrect": false,
+        "explanation": "The interval is for the mean difference, not for each student."
+      }
+    ],
+    "explanation": "The interval has only positive values: the mean difference (after - before) is positive.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-26",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "easy",
+    "stem": "A student constructs a 90% confidence interval and a 99% confidence interval for a population mean, using the same random sample. Which of the following is true?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The 99% interval is narrower, because it is more likely to contain the mean of the population",
+        "isCorrect": false,
+        "explanation": "To be more confident, the interval must be wider."
+      },
+      {
+        "label": "B",
+        "text": "The two intervals have the same width, because they use the same sample",
+        "isCorrect": false,
+        "explanation": "The critical values differ, so the margins of error differ."
+      },
+      {
+        "label": "C",
+        "text": "The 99% interval is wider, because a greater confidence level has a greater critical value",
+        "isCorrect": true,
+        "explanation": "$t^*$ is greater for a greater confidence level."
+      },
+      {
+        "label": "D",
+        "text": "The 90% interval is wider, because it is less likely to contain the mean",
+        "isCorrect": false,
+        "explanation": "A lower confidence level gives a narrower interval."
+      }
+    ],
+    "explanation": "For the same sample, higher confidence means a larger critical value and a wider interval.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-27",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A 95% confidence interval for a population mean, based on a random sample of 36 with a standard deviation of 10.2, has a width of about 6.90. About what would the width be for a random sample of 144, with the same standard deviation and confidence level?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "About 13.80, because a larger sample gives a larger margin of error",
+        "isCorrect": false,
+        "explanation": "A larger sample gives a smaller margin of error."
+      },
+      {
+        "label": "B",
+        "text": "About 1.73, because the width is divided by 4 when the sample size is multiplied by 4",
+        "isCorrect": false,
+        "explanation": "The width is proportional to 1 / √n, so it is divided by about 2."
+      },
+      {
+        "label": "C",
+        "text": "About 3.36, because the width is approximately proportional to 1 / √n and √144 is 2 times √36",
+        "isCorrect": true,
+        "explanation": "Quadrupling the sample size roughly halves the width."
+      },
+      {
+        "label": "D",
+        "text": "About 6.90, because the confidence level and the standard deviation did not change",
+        "isCorrect": false,
+        "explanation": "The sample size is in the standard error, so the width changes."
+      }
+    ],
+    "explanation": "Width is about proportional to 1 / √n: 6.90 / 2 is about 3.36.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-28",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Two researchers each take a random sample from the same population and construct a 95% confidence interval for the population mean. Researcher 1 uses n = 25 with s = 8. Researcher 2 uses n = 100 with s = 8. Which of the following is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The two intervals have the same width, because the standard deviations and the confidence levels are equal",
+        "isCorrect": false,
+        "explanation": "The sample sizes differ, so the standard errors differ."
+      },
+      {
+        "label": "B",
+        "text": "Researcher 1's interval is narrower, because a smaller sample has less variability in the data",
+        "isCorrect": false,
+        "explanation": "The standard error is greater for the smaller sample."
+      },
+      {
+        "label": "C",
+        "text": "Researcher 2's interval is wider, because a larger sample gives a greater critical value",
+        "isCorrect": false,
+        "explanation": "A larger sample gives a smaller critical value and a smaller standard error."
+      },
+      {
+        "label": "D",
+        "text": "Researcher 2's interval is narrower, because the larger sample size gives a smaller standard error",
+        "isCorrect": true,
+        "explanation": "SE = s / √n is 1.6 for Researcher 1 and 0.8 for Researcher 2."
+      }
+    ],
+    "explanation": "A larger n gives a smaller SE and a narrower interval.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-29",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "easy",
+    "stem": "A cereal company claims that the mean weight of its boxes is 340 grams. An inspector believes that the mean weight is less than 340 grams and plans to weigh a random sample of 20 boxes. The population standard deviation is unknown. Which procedure is appropriate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A one-sample z-test for a population proportion",
+        "isCorrect": false,
+        "explanation": "The weights are quantitative, so the parameter is a mean, not a proportion."
+      },
+      {
+        "label": "B",
+        "text": "A one-sample z-test for a population mean, using the sample standard deviation as σ",
+        "isCorrect": false,
+        "explanation": "When σ is unknown, the sample standard deviation is used with the t-distribution."
+      },
+      {
+        "label": "C",
+        "text": "A one-sample t-test for a population mean",
+        "isCorrect": true,
+        "explanation": "The parameter is one population mean, compared with a claimed value, and σ is unknown."
+      },
+      {
+        "label": "D",
+        "text": "A two-sample t-test for a difference between two population means",
+        "isCorrect": false,
+        "explanation": "There is one sample and one population."
+      }
+    ],
+    "explanation": "One mean, claimed value, σ unknown: a one-sample t-test.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-30",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A cereal company claims that the mean weight of its boxes is 340 grams. An inspector believes that the mean weight is less than 340 grams. Which of the following are the correct hypotheses?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "H₀: x̄ = 340 and Hₐ: x̄ < 340, where x̄ is the mean weight, in grams, of the boxes in the sample",
+        "isCorrect": false,
+        "explanation": "Hypotheses are about the population mean μ, not the sample mean."
+      },
+      {
+        "label": "B",
+        "text": "H₀: μ = 340 and Hₐ: μ < 340, where μ is the mean weight, in grams, of all of the company's boxes",
+        "isCorrect": true,
+        "explanation": "The null hypothesis is the claim with an equality, and the alternative is the inspector's belief."
+      },
+      {
+        "label": "C",
+        "text": "H₀: μ < 340 and Hₐ: μ = 340, where μ is the mean weight, in grams, of all of the company's boxes",
+        "isCorrect": false,
+        "explanation": "The null hypothesis contains the equality."
+      },
+      {
+        "label": "D",
+        "text": "H₀: μ = 340 and Hₐ: μ > 340, where μ is the mean weight, in grams, of all of the company's boxes",
+        "isCorrect": false,
+        "explanation": "The inspector believes that the mean is less than 340, not greater."
+      }
+    ],
+    "explanation": "H0: μ = 340 and Ha: μ < 340.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-31",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Twelve people each have their reaction time measured before and after drinking an energy drink. The researcher wants to test whether the mean reaction time is different after the drink. Which procedure is appropriate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A one-sample t-test for the mean of the before times",
+        "isCorrect": false,
+        "explanation": "The question is about the change, which needs both times."
+      },
+      {
+        "label": "B",
+        "text": "A chi-square test for homogeneity of the before and after times",
+        "isCorrect": false,
+        "explanation": "The response is quantitative, and a chi-square test is for categorical data."
+      },
+      {
+        "label": "C",
+        "text": "A one-sample t-test for a population mean difference, using the 12 differences",
+        "isCorrect": true,
+        "explanation": "The measurements are paired, so the analysis is a one-sample test of the differences."
+      },
+      {
+        "label": "D",
+        "text": "A two-sample t-test for a difference between two population means, using independent samples",
+        "isCorrect": false,
+        "explanation": "The before and after times are for the same people, so they are not independent."
+      }
+    ],
+    "explanation": "Matched pairs: use the differences in a one-sample t-test.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-32",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "hard",
+    "stem": "Twelve people each have their reaction time, in milliseconds, measured before and after drinking an energy drink. Let the difference for a person be the time before minus the time after. The researcher believes that the drink shortens the mean reaction time. Which of the following are the correct hypotheses?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "H₀: $\\mu_d$ > 0 and Hₐ: $\\mu_d$ = 0, where $\\mu_d$ is the population mean difference (before - after) in the reaction times of people like these",
+        "isCorrect": false,
+        "explanation": "The null hypothesis has the equality."
+      },
+      {
+        "label": "B",
+        "text": "H₀: $\\mu_d$ = 0 and Hₐ: $\\mu_d$ > 0, where $\\mu_d$ is the population mean difference (before - after) in the reaction times of people like these",
+        "isCorrect": true,
+        "explanation": "A shorter time after the drink gives a positive difference (before - after)."
+      },
+      {
+        "label": "C",
+        "text": "H₀: μ₁ = μ₂ and Hₐ: μ₁ > μ₂, where μ₁ and μ₂ are the mean reaction times of two separate groups",
+        "isCorrect": false,
+        "explanation": "The data are paired, so the parameter is one mean difference."
+      },
+      {
+        "label": "D",
+        "text": "H₀: $\\mu_d$ = 0 and Hₐ: $\\mu_d$ < 0, where $\\mu_d$ is the population mean difference (before - after) in the reaction times of people like these",
+        "isCorrect": false,
+        "explanation": "A positive mean difference (before - after) means that the drink shortens the time, so the alternative is $\\mu_d$ > 0."
+      }
+    ],
+    "explanation": "With d = before - after, the researcher's belief is $\\mu_d$ > 0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-33",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "easy",
+    "stem": "A teacher says that the mean time that students spend on homework each night is 40 minutes. A parent thinks the mean is different from 40 minutes. Which of the following are the correct hypotheses?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "H₀: μ = 40 and Hₐ: μ > 40, where μ is the mean time, in minutes, that all students spend on homework each night",
+        "isCorrect": false,
+        "explanation": "The parent does not say the mean is greater, only that it is different."
+      },
+      {
+        "label": "B",
+        "text": "H₀: μ = 40 and Hₐ: μ < 40, where μ is the mean time, in minutes, that all students spend on homework each night",
+        "isCorrect": false,
+        "explanation": "The parent does not say the mean is less, only that it is different."
+      },
+      {
+        "label": "C",
+        "text": "H₀: μ ≠ 40 and Hₐ: μ = 40, where μ is the mean time, in minutes, that all students spend on homework each night",
+        "isCorrect": false,
+        "explanation": "The null hypothesis contains the equality."
+      },
+      {
+        "label": "D",
+        "text": "H₀: μ = 40 and Hₐ: μ ≠ 40, where μ is the mean time, in minutes, that all students spend on homework each night",
+        "isCorrect": true,
+        "explanation": "A difference in either direction is a two-sided alternative."
+      }
+    ],
+    "explanation": "A mean that is different: Ha: μ ≠ 40.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-34",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A random sample of 14 students from a very large school is selected, and each student's time to finish an assignment is recorded. The dotplot shows the times. A one-sample t-test is planned for the mean time of all students at the school. Which of the following is the best statement about the conditions?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The sample data condition is not met, because the sample size is less than 30",
+        "isCorrect": false,
+        "explanation": "A sample size under 30 is acceptable when the data show no strong skewness or outliers."
+      },
+      {
+        "label": "B",
+        "text": "The sample data condition is not met, because the data are not exactly normal in shape",
+        "isCorrect": false,
+        "explanation": "The data need not be exactly normal."
+      },
+      {
+        "label": "C",
+        "text": "The 10% condition is not met, because the sample size of 14 is greater than 10",
+        "isCorrect": false,
+        "explanation": "The 10% condition compares the sample size with the number of students at the school, which is very large."
+      },
+      {
+        "label": "D",
+        "text": "The sample data condition is met, because n < 30 and the dotplot has no strong skewness or outliers",
+        "isCorrect": true,
+        "explanation": "For n < 30, the sample data should be free from strong skewness and outliers."
+      }
+    ],
+    "explanation": "n = 14 < 30 and the data are roughly symmetric with no outliers: the condition is met.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false,
+    "diagram": {
+      "type": "dotplot",
+      "xLabel": "Time (minutes)",
+      "axisMin": 30,
+      "axisMax": 46,
+      "axisStep": 2,
+      "dots": [
+        {
+          "x": 31,
+          "count": 1
+        },
+        {
+          "x": 33,
+          "count": 1
+        },
+        {
+          "x": 34,
+          "count": 1
+        },
+        {
+          "x": 35,
+          "count": 1
+        },
+        {
+          "x": 36,
+          "count": 2
+        },
+        {
+          "x": 37,
+          "count": 1
+        },
+        {
+          "x": 38,
+          "count": 2
+        },
+        {
+          "x": 39,
+          "count": 1
+        },
+        {
+          "x": 40,
+          "count": 1
+        },
+        {
+          "x": 41,
+          "count": 1
+        },
+        {
+          "x": 43,
+          "count": 1
+        },
+        {
+          "x": 45,
+          "count": 1
+        }
+      ],
+      "altText": "Dotplot of 14 times: roughly symmetric around 37 minutes, with no outliers."
+    }
+  },
+  {
+    "id": "ap-stat-u4-mcq-35",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A random sample of 11 customers from a very large number of customers is selected, and each customer's wait time is recorded. The boxplot shows the times. A one-sample t-test is planned for the mean wait time of all customers. Which of the following is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The sample data condition is not met, because the sample size is less than 30 and the data have an outlier",
+        "isCorrect": true,
+        "explanation": "For n < 30, the sample data should be free from strong skewness and outliers."
+      },
+      {
+        "label": "B",
+        "text": "The sample data condition is met, because the outlier is only one of the 11 values in the sample of customers",
+        "isCorrect": false,
+        "explanation": "One strong outlier in a small sample violates the condition."
+      },
+      {
+        "label": "C",
+        "text": "The sample data condition is met, because the sample size is greater than 10",
+        "isCorrect": false,
+        "explanation": "A sample size above 10 does not meet the condition if there is an outlier."
+      },
+      {
+        "label": "D",
+        "text": "The randomization condition is not met, because the data have an outlier",
+        "isCorrect": false,
+        "explanation": "An outlier does not mean the sample was selected without a random method."
+      }
+    ],
+    "explanation": "n = 11 < 30 and there is an outlier (45): the sample data condition is not met.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false,
+    "diagram": {
+      "type": "boxplot",
+      "xLabel": "Time (minutes)",
+      "axisMin": 0,
+      "axisMax": 50,
+      "axisStep": 5,
+      "groups": [
+        {
+          "min": 7,
+          "q1": 9,
+          "median": 10,
+          "q3": 13,
+          "max": 14,
+          "outliers": [
+            45
+          ]
+        }
+      ],
+      "altText": "Boxplot of 11 times: the box is between about 9 and 13 minutes, and one value, 45, is plotted as an outlier."
+    }
+  },
+  {
+    "id": "ap-stat-u4-mcq-36",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "easy",
+    "stem": "A researcher will test a claim about the mean daily screen time of all students at a school. Which of the following is the best way to define the parameter in context?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "μ = the median daily screen time, in hours, of all students at the school",
+        "isCorrect": false,
+        "explanation": "The test is about the mean, not the median."
+      },
+      {
+        "label": "B",
+        "text": "μ = the mean daily screen time, in hours, of the students in the sample who answered",
+        "isCorrect": false,
+        "explanation": "This is a sample mean, a statistic."
+      },
+      {
+        "label": "C",
+        "text": "μ = the mean daily screen time, in hours, of all students at the school",
+        "isCorrect": true,
+        "explanation": "The parameter references the population mean, the response variable and the population."
+      },
+      {
+        "label": "D",
+        "text": "μ = the mean daily screen time of the students who answered the survey at school",
+        "isCorrect": false,
+        "explanation": "This does not state the population."
+      }
+    ],
+    "explanation": "The parameter is the population mean, in context.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-37",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Why is a t-test, rather than a z-test, used for a population mean in most situations?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Because the population standard deviation σ is usually unknown, so s is used, and the t-distribution accounts for the added variability",
+        "isCorrect": true,
+        "explanation": "t-distributions are used when σ is unknown and s must be used."
+      },
+      {
+        "label": "B",
+        "text": "Because a t-test does not require a random sample",
+        "isCorrect": false,
+        "explanation": "A random sample or a randomized experiment is still required."
+      },
+      {
+        "label": "C",
+        "text": "Because the population standard deviation σ is always known and equal to the sample standard deviation, so t is a more exact choice in every situation",
+        "isCorrect": false,
+        "explanation": "σ is usually not known."
+      },
+      {
+        "label": "D",
+        "text": "Because a t-test can be used only when the sample size is less than 30",
+        "isCorrect": false,
+        "explanation": "A t-test can be used for any sample size when the conditions are met."
+      }
+    ],
+    "explanation": "t is used when σ is unknown and s replaces it.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-38",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A random sample of 25 students has a mean score of 52.1 and a standard deviation of 8.0. A test has H₀: μ = 50 and Hₐ: μ > 50. What is the value of the test statistic?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "t = 6.56",
+        "isCorrect": false,
+        "explanation": "This divides s by n instead of by √n."
+      },
+      {
+        "label": "B",
+        "text": "t = 0.26",
+        "isCorrect": false,
+        "explanation": "This leaves out the division by √n: the standard error is s / √n."
+      },
+      {
+        "label": "C",
+        "text": "t = 1.31",
+        "isCorrect": true,
+        "explanation": "t = ($\\bar{x}$ - μ₀) / (s / √n) = (52.1 - 50) / (8.0 / √25) = 2.1 / 1.6."
+      },
+      {
+        "label": "D",
+        "text": "t = -1.31",
+        "isCorrect": false,
+        "explanation": "The difference is taken in the wrong order: a sample mean above μ₀ gives a positive t."
+      }
+    ],
+    "explanation": "t = 2.1 / 1.6 = 1.31.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-39",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "easy",
+    "stem": "A one-sample t-test is based on a random sample of 25 values. How many degrees of freedom does the t-distribution have?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "24",
+        "isCorrect": true,
+        "explanation": "df = n - 1 = 24."
+      },
+      {
+        "label": "B",
+        "text": "23",
+        "isCorrect": false,
+        "explanation": "This is n - 2, which is the degrees of freedom for a different procedure."
+      },
+      {
+        "label": "C",
+        "text": "26",
+        "isCorrect": false,
+        "explanation": "This is n + 1, which has no use here."
+      },
+      {
+        "label": "D",
+        "text": "25",
+        "isCorrect": false,
+        "explanation": "This is the sample size. The degrees of freedom are n - 1."
+      }
+    ],
+    "explanation": "df = 25 - 1 = 24.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-40",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A one-sample t-test of H₀: μ = 50 versus Hₐ: μ ≠ 50 is based on a random sample of 25 values and gives t = 2.30. What is the p-value?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.021",
+        "isCorrect": false,
+        "explanation": "This uses the standard normal distribution. The p-value should come from the t-distribution with 24 degrees of freedom."
+      },
+      {
+        "label": "B",
+        "text": "0.015",
+        "isCorrect": false,
+        "explanation": "This is the one-sided p-value, for Hₐ: μ > 50 only."
+      },
+      {
+        "label": "C",
+        "text": "0.030",
+        "isCorrect": true,
+        "explanation": "The two-sided p-value is 2P(t ≥ 2.30) with df = 24."
+      },
+      {
+        "label": "D",
+        "text": "0.985",
+        "isCorrect": false,
+        "explanation": "This is the area to the left of t = 2.30, not a tail probability."
+      }
+    ],
+    "explanation": "p-value = 2P(t ≥ 2.30) with df = 24, about 0.030.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-41",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "easy",
+    "stem": "A test of H₀: μ = 50 versus Hₐ: μ ≠ 50 gives t = 2.30 with 24 degrees of freedom and a p-value of 0.030. The significance level is 0.05. Which of the following is the correct decision and its meaning?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Fail to reject the null hypothesis, because the mean is not equal to 50 in the sample",
+        "isCorrect": false,
+        "explanation": "The sample mean always differs somewhat from μ₀. The p-value decides."
+      },
+      {
+        "label": "B",
+        "text": "Fail to reject the null hypothesis, because the p-value is less than 0.05; there is no convincing evidence that the mean is different",
+        "isCorrect": false,
+        "explanation": "A p-value less than α leads to rejecting the null hypothesis."
+      },
+      {
+        "label": "C",
+        "text": "Reject the null hypothesis, because t = 2.30 is greater than the degrees of freedom, 24",
+        "isCorrect": false,
+        "explanation": "The decision compares the p-value with α."
+      },
+      {
+        "label": "D",
+        "text": "Reject the null hypothesis, because the p-value is less than 0.05; there is convincing evidence that the mean differs from 50",
+        "isCorrect": true,
+        "explanation": "A p-value less than α means reject H0."
+      }
+    ],
+    "explanation": "p-value 0.030 < 0.05: reject H0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-42",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A test of H₀: μ = 340 versus Hₐ: μ < 340, where μ is the mean weight, in grams, of all of a company's cereal boxes, has a p-value of 0.18. The significance level is 0.05. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is not convincing statistical evidence that the mean weight of all of the company's cereal boxes is less than 340 grams",
+        "isCorrect": true,
+        "explanation": "The p-value is greater than α: fail to reject H0."
+      },
+      {
+        "label": "B",
+        "text": "It has been proved that the company's boxes weigh exactly 340 grams",
+        "isCorrect": false,
+        "explanation": "Failing to reject H0 is not proof, and the language should be non-definitive."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing statistical evidence that the mean weight of all of the company's cereal boxes is less than 340 grams, as the inspector believes",
+        "isCorrect": false,
+        "explanation": "The p-value is greater than 0.05, so the evidence is not convincing."
+      },
+      {
+        "label": "D",
+        "text": "There is convincing statistical evidence that the mean weight of all of the company's cereal boxes is 340 grams",
+        "isCorrect": false,
+        "explanation": "A test cannot show that the null hypothesis is true."
+      }
+    ],
+    "explanation": "p-value 0.18 > 0.05: fail to reject H0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-43",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A test of H₀: μ = 40 versus Hₐ: μ ≠ 40, where μ is the mean time, in minutes, that all students at a school spend on homework each night, has a p-value of 0.03. Which of the following is the correct interpretation of the p-value?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Assuming that the mean time is different from 40 minutes, the probability of the observed sample mean from the random sample that was selected is 0.03",
+        "isCorrect": false,
+        "explanation": "The p-value is computed assuming the null value, not the alternative."
+      },
+      {
+        "label": "B",
+        "text": "3% of the students at the school spend 40 minutes on homework",
+        "isCorrect": false,
+        "explanation": "The p-value is not a percent of the students."
+      },
+      {
+        "label": "C",
+        "text": "Assuming that the mean time of all students is 40 minutes, the probability of a sample mean at least as far from 40 as the one observed is 0.03",
+        "isCorrect": true,
+        "explanation": "The p-value is computed assuming that the null hypothesis is true."
+      },
+      {
+        "label": "D",
+        "text": "The probability that the mean time of all students at the school is 40 minutes is 0.03",
+        "isCorrect": false,
+        "explanation": "The p-value is not the probability that the null hypothesis is true."
+      }
+    ],
+    "explanation": "The p-value is computed assuming H0 is true.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-44",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "Each of 16 workers has a task timed with an old tool and with a new tool. The difference for each worker is the time with the old tool minus the time with the new tool. The mean of the differences is 2.5 minutes with a standard deviation of 4.0 minutes. The differences have no strong skewness or outliers. A test of H₀: $\\mu_d$ = 0 versus Hₐ: $\\mu_d$ ≠ 0 gives t = 2.50 with df = 15 and a p-value of 0.025. Which of the following is the best conclusion at the 0.05 significance level?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is convincing statistical evidence that the population mean difference in the times (old - new) is not 0 for workers like these",
+        "isCorrect": true,
+        "explanation": "The p-value, 0.025, is less than 0.05: reject H0."
+      },
+      {
+        "label": "B",
+        "text": "There is convincing statistical evidence that the two tools take the same mean time",
+        "isCorrect": false,
+        "explanation": "A small p-value is evidence for a difference, not for sameness."
+      },
+      {
+        "label": "C",
+        "text": "There is not convincing statistical evidence of a difference in the mean times, because the sample mean difference is only 2.5 minutes",
+        "isCorrect": false,
+        "explanation": "The decision depends on the p-value, not on the size of the sample mean difference alone."
+      },
+      {
+        "label": "D",
+        "text": "There is convincing statistical evidence that the mean difference in the 16 sampled workers is not 0",
+        "isCorrect": false,
+        "explanation": "The conclusion should be about the population of workers, not about the sample."
+      }
+    ],
+    "explanation": "t = 2.5 / (4.0 / √16) = 2.50; p-value = 0.025 < 0.05: reject H0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-45",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "hard",
+    "stem": "A student has a t-statistic of 2.1 from a random sample of 15 values and finds the two-sided p-value 0.036 by using a standard normal distribution. The correct p-value, from the t-distribution with 14 degrees of freedom, is 0.054. What is wrong with the student's approach?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The student should have doubled the p-value a second time, because the test is two-sided",
+        "isCorrect": false,
+        "explanation": "The p-value already includes both tails."
+      },
+      {
+        "label": "B",
+        "text": "The student used a standard normal distribution, which has thinner tails, so the p-value is too small and the evidence looks stronger",
+        "isCorrect": true,
+        "explanation": "A t-statistic from a small sample follows a t-distribution, which has wider tails."
+      },
+      {
+        "label": "C",
+        "text": "Nothing is wrong, because the standard normal distribution and the t-distribution are always the same for every sample size and every sample",
+        "isCorrect": false,
+        "explanation": "They are close only for large samples."
+      },
+      {
+        "label": "D",
+        "text": "The student used a t-distribution, which has thinner tails than the standard normal distribution",
+        "isCorrect": false,
+        "explanation": "The student used the standard normal distribution, and the t-distribution has wider tails."
+      }
+    ],
+    "explanation": "For small samples, using the standard normal distribution gives a p-value that is too small.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-46",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "difficulty": "medium",
+    "stem": "A random sample of 40 students is used to test H₀: μ = 70 versus Hₐ: μ > 70. The result is not statistically significant at the 0.05 level. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The test was invalid, because a valid test always rejects the null hypothesis when the sample is large enough",
+        "isCorrect": false,
+        "explanation": "A valid test may or may not reject the null hypothesis."
+      },
+      {
+        "label": "B",
+        "text": "The mean is exactly 70, because the test did not reject the null hypothesis, so H₀ is true",
+        "isCorrect": false,
+        "explanation": "A test cannot show that the null hypothesis is true."
+      },
+      {
+        "label": "C",
+        "text": "The mean is less than 70, because the p-value is large",
+        "isCorrect": false,
+        "explanation": "A large p-value does not point to the other direction."
+      },
+      {
+        "label": "D",
+        "text": "There is not convincing evidence that the mean is greater than 70, and this does not show that it is 70",
+        "isCorrect": true,
+        "explanation": "Failing to reject H0 is not evidence for H0."
+      }
+    ],
+    "explanation": "Failing to reject H0 means no convincing evidence for Ha, not evidence for H0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-47",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "medium",
+    "stem": "Independent random samples of 40 students from School A and 50 students from School B are selected. The mean test score is 60 with a standard deviation of 10 at School A, and 55 with a standard deviation of 12 at School B. What are the mean and the standard deviation of the sampling distribution of $\\bar{x}_1 - \\bar{x}_2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The mean is 5 and the standard deviation is 5.38",
+        "isCorrect": false,
+        "explanation": "This is the variance, before the square root."
+      },
+      {
+        "label": "B",
+        "text": "The mean is 5 and the standard deviation is 2.32",
+        "isCorrect": true,
+        "explanation": "μ = 60 - 55 = 5 and σ = √(10²/40 + 12²/50) = √(2.5 + 2.88)."
+      },
+      {
+        "label": "C",
+        "text": "The mean is 115 and the standard deviation is 2.32",
+        "isCorrect": false,
+        "explanation": "The mean of the difference is the difference of the means, 60 - 55, not the sum."
+      },
+      {
+        "label": "D",
+        "text": "The mean is 5 and the standard deviation is 3.28",
+        "isCorrect": false,
+        "explanation": "This adds the two standard deviations. The variances are added, and then the square root is taken."
+      }
+    ],
+    "explanation": "μ = 5 and σ = √(2.5 + 2.88) = 2.32.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-48",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "medium",
+    "stem": "Which of the following conditions must be met for the sampling distribution of $\\bar{x}_1 - \\bar{x}_2$ to be used when the data come from two samples taken without replacement?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The two samples are matched pairs, and each sample is at least 10% of its population of values in the study",
+        "isCorrect": false,
+        "explanation": "The samples must be independent, and at most 10% of the populations."
+      },
+      {
+        "label": "B",
+        "text": "One sample is random, and the other is a convenience sample of the same size",
+        "isCorrect": false,
+        "explanation": "Both samples must be random."
+      },
+      {
+        "label": "C",
+        "text": "The two samples are random, and the sample sizes are equal",
+        "isCorrect": false,
+        "explanation": "The sample sizes do not need to be equal."
+      },
+      {
+        "label": "D",
+        "text": "The two samples are independent random samples, and each sample is at most 10% of its population",
+        "isCorrect": true,
+        "explanation": "These are the randomization and 10% conditions for two samples."
+      }
+    ],
+    "explanation": "Two independent random samples, each at most 10% of its population.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-49",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "medium",
+    "stem": "A researcher randomly assigns 60 volunteers to one of two diets, 30 to each, and compares the mean weight loss of the two groups. Which condition is needed to use the sampling distribution of $\\bar{x}_1 - \\bar{x}_2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Each volunteer must choose their diet, so that the two groups are of equal size",
+        "isCorrect": false,
+        "explanation": "Choosing a diet is not random assignment."
+      },
+      {
+        "label": "B",
+        "text": "The volunteers must be a random sample from a population, and the 10% condition must be met",
+        "isCorrect": false,
+        "explanation": "For an experiment, random assignment is what is needed."
+      },
+      {
+        "label": "C",
+        "text": "Each group must be at most 10% of a population of all volunteers",
+        "isCorrect": false,
+        "explanation": "The 10% condition is unnecessary for a randomized experiment."
+      },
+      {
+        "label": "D",
+        "text": "The diets must be randomly assigned to the volunteers; the 10% condition is not needed",
+        "isCorrect": true,
+        "explanation": "For an experiment, the data need only meet the randomization condition."
+      }
+    ],
+    "explanation": "For an experiment, random assignment provides randomization; no 10% condition.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-50",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "medium",
+    "stem": "The heights of the plants of two varieties are each approximately normally distributed. Independent random samples of 8 plants of Variety 1 and 10 plants of Variety 2 are selected from very large fields. Is it appropriate to model the sampling distribution of $\\bar{x}_1 - \\bar{x}_2$ with a normal distribution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Yes, because the sample sizes add to more than 10",
+        "isCorrect": false,
+        "explanation": "The sizes do not decide this. The normal populations do."
+      },
+      {
+        "label": "B",
+        "text": "No, because the sample sizes are not equal",
+        "isCorrect": false,
+        "explanation": "The sample sizes do not need to be equal."
+      },
+      {
+        "label": "C",
+        "text": "Yes, because each population is approximately normal, so the sampling distribution of the difference is normal for any sample sizes",
+        "isCorrect": true,
+        "explanation": "A difference of sample means from two normal populations is normal."
+      },
+      {
+        "label": "D",
+        "text": "No, because both sample sizes are less than 30",
+        "isCorrect": false,
+        "explanation": "The sample sizes matter only when the populations are not normal."
+      }
+    ],
+    "explanation": "Normal populations give a normal sampling distribution of $\\bar{x}_1 - \\bar{x}_2$.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-51",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "medium",
+    "stem": "The incomes in two cities are each strongly skewed to the right. Independent random samples of 20 households from City A and 45 households from City B are selected from very large numbers of households. Is it appropriate to model the sampling distribution of $\\bar{x}_1 - \\bar{x}_2$ with a normal distribution?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Yes, because the samples are random and independent",
+        "isCorrect": false,
+        "explanation": "These are the randomization conditions. The shape needs both n ≥ 30."
+      },
+      {
+        "label": "B",
+        "text": "No, because the populations are in different cities",
+        "isCorrect": false,
+        "explanation": "Different populations are expected. The sample size of 20 is the issue."
+      },
+      {
+        "label": "C",
+        "text": "Yes, because one of the sample sizes, 45, is greater than 30, which is large enough for the difference",
+        "isCorrect": false,
+        "explanation": "Both sample sizes should be at least 30."
+      },
+      {
+        "label": "D",
+        "text": "No, because the populations are not normal and one of the sample sizes, 20, is less than 30",
+        "isCorrect": true,
+        "explanation": "When the populations are not normal, both sample sizes should be at least 30."
+      }
+    ],
+    "explanation": "n1 = 20 < 30 and skewed populations: not appropriate.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-52",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "hard",
+    "stem": "Independent random samples of 40 students from School A (μ₁ = 60, σ₁ = 10) and 50 students from School B (μ₂ = 55, σ₂ = 12) are selected. The sampling distribution of $\\bar{x}_1 - \\bar{x}_2$ is approximately normal with mean 5 and standard deviation 2.32. What is the approximate probability that the sample mean at School A is greater than the sample mean at School B?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.859",
+        "isCorrect": false,
+        "explanation": "This doubles the standard deviation, which is not the standard deviation of the difference."
+      },
+      {
+        "label": "B",
+        "text": "0.500",
+        "isCorrect": false,
+        "explanation": "This would be the probability if the mean of the difference were 0. The mean is 5."
+      },
+      {
+        "label": "C",
+        "text": "0.984",
+        "isCorrect": true,
+        "explanation": "P($\\bar{x}_1 - \\bar{x}_2$ > 0) = P(z > (0 - 5) / 2.32) = P(z > -2.16)."
+      },
+      {
+        "label": "D",
+        "text": "0.016",
+        "isCorrect": false,
+        "explanation": "This is P(z < -2.16), the probability that the sample mean at School A is less than the sample mean at School B."
+      }
+    ],
+    "explanation": "P($\\bar{x}_1 - \\bar{x}_2$ > 0) = P(z > -2.16), about 0.984.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-53",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "medium",
+    "stem": "The sampling distribution of $\\bar{x}_1 - \\bar{x}_2$ for independent random samples from School A and School B has a mean of 5 points. Which of the following is the correct interpretation of the mean?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The mean score at each of the two schools is 5 points",
+        "isCorrect": false,
+        "explanation": "The mean describes the difference, 5, not each population mean."
+      },
+      {
+        "label": "B",
+        "text": "Over many pairs of random samples, the mean of the differences in the sample means, School A minus School B, is 5 points, which is μ₁ - μ₂",
+        "isCorrect": true,
+        "explanation": "The mean of the sampling distribution is the difference in the population means."
+      },
+      {
+        "label": "C",
+        "text": "The scores of 5 points are the most common scores at the two schools",
+        "isCorrect": false,
+        "explanation": "The mean of the difference does not describe the common scores."
+      },
+      {
+        "label": "D",
+        "text": "In every pair of random samples, the mean at School A is exactly 5 points greater than the mean at School B in that pair, so the sample means never vary",
+        "isCorrect": false,
+        "explanation": "The differences vary from one pair of samples to another."
+      }
+    ],
+    "explanation": "Interpret the mean as the average difference over many pairs of samples.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-54",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "medium",
+    "stem": "The standard deviation of the sampling distribution of $\\bar{x}_1 - \\bar{x}_2$ for independent random samples of test scores from School A and School B is 2.32 points. Which of the following is the correct interpretation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The scores of the students at the two schools typically differ by 2.32 points",
+        "isCorrect": false,
+        "explanation": "That would be about the scores of individual students, not about the difference in the means."
+      },
+      {
+        "label": "B",
+        "text": "The mean score at School A is 2.32 points greater than the mean score at School B",
+        "isCorrect": false,
+        "explanation": "That would be the mean of the sampling distribution, not its standard deviation."
+      },
+      {
+        "label": "C",
+        "text": "Every difference in the sample mean scores is within 2.32 points of the difference in the population mean scores",
+        "isCorrect": false,
+        "explanation": "Some differences are farther away. The standard deviation is a typical distance."
+      },
+      {
+        "label": "D",
+        "text": "In pairs of random samples, the difference in the sample mean scores typically varies from the difference in the population mean scores by about 2.32 points",
+        "isCorrect": true,
+        "explanation": "The standard deviation is the typical amount that the statistic varies from the parameter."
+      }
+    ],
+    "explanation": "The standard deviation is the typical distance of the statistic from the parameter.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-55",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "sampling-distributions-for-the-difference-between-two-sample-means",
+    "difficulty": "hard",
+    "stem": "Both sample sizes are doubled, from 40 and 50 to 80 and 100, and the population means and standard deviations stay the same. What happens to the standard deviation of the sampling distribution of $\\bar{x}_1 - \\bar{x}_2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is multiplied by 2",
+        "isCorrect": false,
+        "explanation": "Larger samples have less variability, so the standard deviation decreases."
+      },
+      {
+        "label": "B",
+        "text": "It is divided by √2, so it is about 71% of its original value",
+        "isCorrect": true,
+        "explanation": "Each variance is divided by 2, so the variance of the difference is divided by 2 and the standard deviation by √2."
+      },
+      {
+        "label": "C",
+        "text": "It does not change",
+        "isCorrect": false,
+        "explanation": "The sample sizes are in the formula, so the standard deviation changes."
+      },
+      {
+        "label": "D",
+        "text": "It is divided by 2",
+        "isCorrect": false,
+        "explanation": "The variance is divided by 2, so the standard deviation is divided by √2, not by 2."
+      }
+    ],
+    "explanation": "σ changes from 2.32 to 1.64: divided by √2.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/sampling-distributions-for-the-difference-between-two-sample-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-56",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "easy",
+    "stem": "A researcher takes independent random samples of 30 students from School A and 32 students from School B, and records the time each student spends on homework. The researcher wants to estimate the difference between the mean times of all students at the two schools. Which procedure is appropriate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A two-sample t-interval for a difference between population means",
+        "isCorrect": true,
+        "explanation": "The parameter is μ₁ - μ₂, estimated from two independent samples, with σ unknown."
+      },
+      {
+        "label": "B",
+        "text": "A one-sample t-interval for a population mean of the times at one school",
+        "isCorrect": false,
+        "explanation": "There are two populations, so the parameter is a difference between two means."
+      },
+      {
+        "label": "C",
+        "text": "A one-sample t-interval for a population mean difference, using matched pairs",
+        "isCorrect": false,
+        "explanation": "The students in the two samples are not paired."
+      },
+      {
+        "label": "D",
+        "text": "A two-sample z-interval for a difference between population proportions",
+        "isCorrect": false,
+        "explanation": "The time is quantitative, so the parameter is a difference in means, not proportions."
+      }
+    ],
+    "explanation": "Two independent samples, quantitative response: a two-sample t-interval.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-57",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "easy",
+    "stem": "Independent random samples from School A and School B are used to construct an interval for the difference in the mean times that students spend on homework each night. Which of the following correctly states the parameter?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "μ₁ - μ₂ = the difference between the mean time, in minutes, that all students at School A and all students at School B spend on homework each night",
+        "isCorrect": true,
+        "explanation": "The parameter references the difference in the means, the response variable and the populations."
+      },
+      {
+        "label": "B",
+        "text": "μ = the mean time that all students at both schools spend on homework each night",
+        "isCorrect": false,
+        "explanation": "This is a single combined mean, not a difference."
+      },
+      {
+        "label": "C",
+        "text": "$\\bar{x}_1 - \\bar{x}_2$ = the difference between the mean times of the students in the two samples",
+        "isCorrect": false,
+        "explanation": "This is a statistic. The parameter is about the populations."
+      },
+      {
+        "label": "D",
+        "text": "μ₁ - μ₂ = the difference between the numbers of students at the two schools who do homework each night, in the sample of students that was selected from the schools",
+        "isCorrect": false,
+        "explanation": "The parameter is a difference in mean times, not in counts."
+      }
+    ],
+    "explanation": "The parameter is the difference between the two population means, in context.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-58",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Independent random samples of 15 people (Group 1) and 18 people (Group 2) from very large populations complete a task. The boxplots show the times. A two-sample t-interval is planned for the difference in the mean times. Which of the following is correct about the sample data condition?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The condition is not met, because both sample sizes are less than 30, and 30 is always required for a t-interval",
+        "isCorrect": false,
+        "explanation": "Samples under 30 are acceptable when the data show no strong skewness or outliers."
+      },
+      {
+        "label": "B",
+        "text": "The condition is not met, because the two boxplots overlap",
+        "isCorrect": false,
+        "explanation": "Overlapping boxplots do not violate the condition."
+      },
+      {
+        "label": "C",
+        "text": "The condition is met, because both samples are small but both boxplots are roughly symmetric with no outliers",
+        "isCorrect": true,
+        "explanation": "When a sample size is less than 30, the data should be free from strong skewness and outliers."
+      },
+      {
+        "label": "D",
+        "text": "The condition is met, because the sample sizes are different",
+        "isCorrect": false,
+        "explanation": "The sample sizes do not decide this. The shapes of the data do."
+      }
+    ],
+    "explanation": "Both n < 30 and both data sets look symmetric with no outliers: the condition is met.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false,
+    "diagram": {
+      "type": "boxplot",
+      "xLabel": "Time to complete the task (seconds)",
+      "axisMin": 25,
+      "axisMax": 65,
+      "axisStep": 5,
+      "groups": [
+        {
+          "min": 34,
+          "q1": 43,
+          "median": 49,
+          "q3": 55,
+          "max": 63,
+          "label": "Group 1"
+        },
+        {
+          "min": 29,
+          "q1": 39,
+          "median": 45.5,
+          "q3": 54,
+          "max": 62,
+          "label": "Group 2"
+        }
+      ],
+      "altText": "Boxplots of the times of two groups: both are roughly symmetric, with no outliers."
+    }
+  },
+  {
+    "id": "ap-stat-u4-mcq-59",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Independent random samples of 11 people (Group 1) and 12 people (Group 2) from very large populations complete a task. The boxplots show the times. A two-sample t-interval is planned for the difference in the mean times. Which of the following is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The sample data condition is met, because the data for Group 2 have no outlier",
+        "isCorrect": false,
+        "explanation": "Both samples need to be free from strong skewness and outliers when a sample size is less than 30."
+      },
+      {
+        "label": "B",
+        "text": "The sample data condition is met, because the sample sizes are greater than 10",
+        "isCorrect": false,
+        "explanation": "A sample size above 10 does not meet the condition if there is an outlier."
+      },
+      {
+        "label": "C",
+        "text": "The randomization condition is not met, because there is an outlier in the data for Group 1 of the samples",
+        "isCorrect": false,
+        "explanation": "An outlier does not mean the samples were not selected at random."
+      },
+      {
+        "label": "D",
+        "text": "The sample data condition is not met, because a sample size is less than 30 and Group 1 has an outlier",
+        "isCorrect": true,
+        "explanation": "If either sample size is less than 30, both samples should be free from strong skewness and outliers."
+      }
+    ],
+    "explanation": "n < 30 and an outlier in Group 1: the sample data condition is not met.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false,
+    "diagram": {
+      "type": "boxplot",
+      "xLabel": "Time to complete the task (seconds)",
+      "axisMin": 0,
+      "axisMax": 45,
+      "axisStep": 5,
+      "groups": [
+        {
+          "min": 8,
+          "q1": 10,
+          "median": 12,
+          "q3": 14,
+          "max": 15,
+          "label": "Group 1",
+          "outliers": [
+            41
+          ]
+        },
+        {
+          "min": 9,
+          "q1": 11.5,
+          "median": 13.5,
+          "q3": 15.5,
+          "max": 18,
+          "label": "Group 2"
+        }
+      ],
+      "altText": "Boxplots of the times of two groups: Group 1 has one outlier at 41 seconds."
+    }
+  },
+  {
+    "id": "ap-stat-u4-mcq-60",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "hard",
+    "stem": "Independent random samples of students from two schools have times, in minutes, to finish a test. School A: n = 30, mean 24.1, standard deviation 5.2. School B: n = 32, mean 21.0, standard deviation 4.8. Both data sets have no strong skewness or outliers. Which of the following is a 95% confidence interval for the difference in the mean times, School A minus School B, as given by technology?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "(-0.50, 6.70)",
+        "isCorrect": false,
+        "explanation": "This adds the two standard errors instead of adding the variances and taking the square root."
+      },
+      {
+        "label": "B",
+        "text": "(-5.65, -0.55)",
+        "isCorrect": false,
+        "explanation": "This is the interval for School B minus School A, with the opposite sign."
+      },
+      {
+        "label": "C",
+        "text": "(0.60, 5.60)",
+        "isCorrect": false,
+        "explanation": "This uses 1.96 from the standard normal distribution. For a difference in means with unknown σ, use the t critical value."
+      },
+      {
+        "label": "D",
+        "text": "(0.55, 5.65)",
+        "isCorrect": true,
+        "explanation": "(24.1 - 21.0) ± $t^*$√(5.2²/30 + 4.8²/32) = 3.1 ± 2.001(1.273)."
+      }
+    ],
+    "explanation": "3.1 ± 2.548 = (0.55, 5.65).",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-61",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Independent random samples of students from two schools have times, in minutes, to finish a test. School A: n = 30, standard deviation 5.2. School B: n = 32, standard deviation 4.8. What is the standard error of the difference in the sample mean times?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.101",
+        "isCorrect": false,
+        "explanation": "This subtracts the standard errors. For independent samples, the variances are added."
+      },
+      {
+        "label": "B",
+        "text": "1.621",
+        "isCorrect": false,
+        "explanation": "This is the variance of the difference, before the square root."
+      },
+      {
+        "label": "C",
+        "text": "1.798",
+        "isCorrect": false,
+        "explanation": "This adds the two standard errors. The variances are added first."
+      },
+      {
+        "label": "D",
+        "text": "1.273",
+        "isCorrect": true,
+        "explanation": "SE = √(s₁²/n₁ + s₂²/n₂) = √(5.2²/30 + 4.8²/32)."
+      }
+    ],
+    "explanation": "SE = 1.273.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-62",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "For a two-sample t-interval, which of the following is the margin of error?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The sum of the two sample standard deviations divided by the total of the two sample sizes in the two groups studied",
+        "isCorrect": false,
+        "explanation": "This is not a standard error or a margin of error."
+      },
+      {
+        "label": "B",
+        "text": "The critical value $t^*$ times the standard error of the difference of the two sample means, √(s₁²/n₁ + s₂²/n₂)",
+        "isCorrect": true,
+        "explanation": "MOE = $t^*$ × SE."
+      },
+      {
+        "label": "C",
+        "text": "The critical value $t^*$ times the standard deviation of the pooled samples",
+        "isCorrect": false,
+        "explanation": "The margin of error uses the standard error of the difference."
+      },
+      {
+        "label": "D",
+        "text": "The difference of the two sample means, $\\bar{x}_1 - \\bar{x}_2$, divided by $t^*$",
+        "isCorrect": false,
+        "explanation": "The difference of the sample means is the point estimate, the center of the interval."
+      }
+    ],
+    "explanation": "Margin of error = $t^*$ × SE of the difference.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-63",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "hard",
+    "stem": "A two-sample t-interval is constructed from independent samples of sizes 12 and 15. Technology reports the degrees of freedom. Between which two values must the degrees of freedom fall?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "14 and 27",
+        "isCorrect": false,
+        "explanation": "These are the larger of n - 1 (14) and n₁ + n₂ (27)."
+      },
+      {
+        "label": "B",
+        "text": "11 and 25",
+        "isCorrect": true,
+        "explanation": "The degrees of freedom fall between the smaller of n₁ - 1 and n₂ - 1 (11) and n₁ + n₂ - 2 (25)."
+      },
+      {
+        "label": "C",
+        "text": "12 and 15",
+        "isCorrect": false,
+        "explanation": "These are the sample sizes. The degrees of freedom are based on n - 1 and n₁ + n₂ - 2."
+      },
+      {
+        "label": "D",
+        "text": "0 and 27",
+        "isCorrect": false,
+        "explanation": "The degrees of freedom are bounded more tightly."
+      }
+    ],
+    "explanation": "min(n1 - 1, n2 - 1) = 11 and n1 + n2 - 2 = 25.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-64",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "easy",
+    "stem": "A confidence interval is calculated for the difference in two population means, μ₁ - μ₂. The sample means are $\\bar{x}_1$ = 24.1 and $\\bar{x}_2$ = 21.0. Which of the following is the point estimate for the difference?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "45.1",
+        "isCorrect": false,
+        "explanation": "This is the sum of the sample means. The point estimate of the difference is found by subtracting."
+      },
+      {
+        "label": "B",
+        "text": "3.1",
+        "isCorrect": true,
+        "explanation": "The point estimate is $\\bar{x}_1 - \\bar{x}_2$ = 24.1 - 21.0."
+      },
+      {
+        "label": "C",
+        "text": "-3.1",
+        "isCorrect": false,
+        "explanation": "This is $\\bar{x}_2 - \\bar{x}_1$. The difference is written in the order the parameter is defined: μ₁ - μ₂."
+      },
+      {
+        "label": "D",
+        "text": "22.55",
+        "isCorrect": false,
+        "explanation": "This is the mean of the two sample means, not their difference."
+      }
+    ],
+    "explanation": "Point estimate = 24.1 - 21.0 = 3.1.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-65",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "A 95% confidence interval for the difference between the mean times, in minutes, that students at School A and School B take to finish a test, School A minus School B, is (0.55, 5.65). Which of the following is a correct interpretation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The mean time at School A is between 0.55 and 5.65 minutes for 95% of the days on which the test is given",
+        "isCorrect": false,
+        "explanation": "The interval does not describe days."
+      },
+      {
+        "label": "B",
+        "text": "95% of the students at School A take 0.55 to 5.65 minutes longer than the students at School B",
+        "isCorrect": false,
+        "explanation": "The interval is about the difference in the means, not about individual students."
+      },
+      {
+        "label": "C",
+        "text": "We are 95% confident that the interval from 0.55 to 5.65 minutes contains the difference between the mean time of all students at School A and the mean time of all students at School B",
+        "isCorrect": true,
+        "explanation": "The interpretation references the difference in the means and both populations."
+      },
+      {
+        "label": "D",
+        "text": "There is a 95% probability that the difference between the sample mean times of the two schools is between 0.55 and 5.65 minutes",
+        "isCorrect": false,
+        "explanation": "The sample means are known. The interval is about the difference in the population means."
+      }
+    ],
+    "explanation": "Interpret the interval for the difference in the population means.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-66",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "A 95% confidence interval for μ₁ - μ₂, the difference between the mean scores of students at two schools, is (-1.3, 5.2) points. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is not convincing evidence of a difference between the two population mean scores, because 0 is in the interval",
+        "isCorrect": true,
+        "explanation": "If the interval contains 0, there is insufficient evidence of a difference."
+      },
+      {
+        "label": "B",
+        "text": "There is convincing evidence that the mean score is greater at the first school, because most of the interval is positive",
+        "isCorrect": false,
+        "explanation": "The interval includes 0 and negative values, so a difference has not been shown."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing evidence that the two population mean scores are equal, because 0 is in the interval",
+        "isCorrect": false,
+        "explanation": "An interval that contains 0 does not prove that the means are equal."
+      },
+      {
+        "label": "D",
+        "text": "There is convincing evidence of a difference, because the interval is not centered at 0",
+        "isCorrect": false,
+        "explanation": "The question is whether 0 is a plausible value. It is in the interval."
+      }
+    ],
+    "explanation": "0 is a plausible value for the difference.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-67",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "A 95% confidence interval for μ₁ - μ₂, the difference between the mean cholesterol levels of adults who take Drug 1 and Drug 2, is (-18.5, -4.2) points. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is not convincing evidence of a difference, because the lower limit is negative",
+        "isCorrect": false,
+        "explanation": "Both limits are negative, so 0 is not in the interval."
+      },
+      {
+        "label": "B",
+        "text": "There is convincing evidence that the mean cholesterol level is higher with Drug 1 than with Drug 2, because the interval has only negative values",
+        "isCorrect": false,
+        "explanation": "Negative values of μ₁ - μ₂ mean that μ₁ is less than μ₂."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing evidence that the mean cholesterol level is lower with Drug 1 than with Drug 2, because the interval has only negative values",
+        "isCorrect": true,
+        "explanation": "A negative difference μ₁ - μ₂ means that μ₁ is less than μ₂."
+      },
+      {
+        "label": "D",
+        "text": "Every adult who takes Drug 1 has a cholesterol level between 4.2 and 18.5 points lower than with Drug 2",
+        "isCorrect": false,
+        "explanation": "The interval is for the difference in the mean levels, not for each adult."
+      }
+    ],
+    "explanation": "Both limits are negative: μ1 < μ2.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-68",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Which of the following is the correct interpretation of the confidence level in a 95% confidence interval for the difference between two population means?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is a 95% chance that the one interval that was created contains the difference in the sample means",
+        "isCorrect": false,
+        "explanation": "The difference in the sample means is known and is the center of the interval."
+      },
+      {
+        "label": "B",
+        "text": "In repeated random sampling with the same sample sizes, approximately 95% of the intervals created will capture the difference between the two population means",
+        "isCorrect": true,
+        "explanation": "The confidence level describes the long-run success rate of the method."
+      },
+      {
+        "label": "C",
+        "text": "In repeated random sampling, 95% of the differences in the sample means will be equal to the difference in the population means of the two schools being compared",
+        "isCorrect": false,
+        "explanation": "Most differences in sample means are not equal to the population difference."
+      },
+      {
+        "label": "D",
+        "text": "The difference between the population means is between the limits of the interval 95% of the time",
+        "isCorrect": false,
+        "explanation": "The difference in the population means is a fixed value. It does not move."
+      }
+    ],
+    "explanation": "Long-run capture rate of the method: about 95% of intervals.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-69",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "hard",
+    "stem": "In a randomized experiment, 40 volunteers are randomly assigned to a new study method and 40 volunteers to the usual method. A 95% confidence interval for μ₁ - μ₂, the difference between the mean test scores with the new method and the usual method, is (1.4, 8.9) points. Which of the following is the best conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is not convincing evidence of a difference, because the lower limit, 1.4, is close to 0",
+        "isCorrect": false,
+        "explanation": "The interval does not contain 0, so there is convincing evidence of a difference."
+      },
+      {
+        "label": "B",
+        "text": "There is convincing evidence that the new method would cause a greater mean score for all students in the country, because the interval has only positive values",
+        "isCorrect": false,
+        "explanation": "The volunteers were not randomly selected from all students, so the conclusion cannot be generalized so widely."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing evidence that the new method causes a greater mean score for volunteers like these, because the treatments were randomly assigned",
+        "isCorrect": true,
+        "explanation": "Random assignment allows a cause-and-effect conclusion, for individuals similar to the volunteers."
+      },
+      {
+        "label": "D",
+        "text": "There is only evidence of an association between the study method and the score, because the volunteers chose to take part",
+        "isCorrect": false,
+        "explanation": "Random assignment of the treatments allows a cause-and-effect conclusion."
+      }
+    ],
+    "explanation": "Random assignment gives cause and effect; volunteers limit the generalization.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-70",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "easy",
+    "stem": "From the same two independent random samples, a student constructs a 90% confidence interval and a 99% confidence interval for the difference between two population means. Which of the following is true?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The 90% interval is wider, because it is less likely to contain the difference",
+        "isCorrect": false,
+        "explanation": "A lower confidence level gives a narrower interval."
+      },
+      {
+        "label": "B",
+        "text": "The 99% interval is wider (6.78 compared with 4.26), because a greater confidence level has a greater critical value",
+        "isCorrect": true,
+        "explanation": "$t^*$ increases with the confidence level."
+      },
+      {
+        "label": "C",
+        "text": "The two intervals have the same width, because they use the same samples",
+        "isCorrect": false,
+        "explanation": "The critical values differ, so the margins of error differ."
+      },
+      {
+        "label": "D",
+        "text": "The 99% interval is narrower, because it is more likely to contain the difference",
+        "isCorrect": false,
+        "explanation": "To be more confident, the interval must be wider."
+      }
+    ],
+    "explanation": "Higher confidence: larger critical value and a wider interval.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-71",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Two studies find the same sample means (24.1 and 21.0) and standard deviations (5.2 and 4.8). Study X has samples of about 30 per group and Study Y has samples of about 120 per group. The 95% intervals for μ₁ - μ₂ are (0.55, 5.65) for Study X and (1.85, 4.35) for Study Y. Which of the following is the best statement?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Only Study X provides convincing evidence of a difference, because its interval is wider",
+        "isCorrect": false,
+        "explanation": "A wider interval is less precise, and both intervals exclude 0."
+      },
+      {
+        "label": "B",
+        "text": "Both intervals provide convincing evidence of a difference, and the interval for Study Y is narrower because its larger samples give a smaller standard error",
+        "isCorrect": true,
+        "explanation": "Neither interval contains 0, and the width is about proportional to 1 / √n."
+      },
+      {
+        "label": "C",
+        "text": "The two intervals have the same width, because the sample means and standard deviations are the same",
+        "isCorrect": false,
+        "explanation": "The sample sizes differ, and the standard error depends on them."
+      },
+      {
+        "label": "D",
+        "text": "Neither interval provides convincing evidence of a difference, because the sample means differ by only 3.1 minutes in the samples",
+        "isCorrect": false,
+        "explanation": "Both intervals exclude 0, so they show convincing evidence of a difference."
+      }
+    ],
+    "explanation": "Neither interval contains 0. Larger samples give a narrower interval.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-72",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "difficulty": "hard",
+    "stem": "A 95% confidence interval for the difference between the mean heights of plants grown with and without a fertilizer, with minus without, is (-0.6, 1.4) cm. A gardener says, \"The fertilizer does not change the mean height.\" Which of the following is the best response?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The gardener is correct, because 0 is in the interval, which proves that the means are equal",
+        "isCorrect": false,
+        "explanation": "An interval cannot prove that the means are equal."
+      },
+      {
+        "label": "B",
+        "text": "The gardener is incorrect, because an interval that contains negative values shows that the fertilizer lowers the mean height of plants",
+        "isCorrect": false,
+        "explanation": "The interval also contains positive values and 0."
+      },
+      {
+        "label": "C",
+        "text": "The interval does not provide convincing evidence of a difference, but it does not show that the means are equal; 0 is plausible",
+        "isCorrect": true,
+        "explanation": "An interval that contains 0 fails to show a difference, but it does not prove no difference."
+      },
+      {
+        "label": "D",
+        "text": "The gardener is incorrect, because the interval has a width of 2.0 cm",
+        "isCorrect": false,
+        "explanation": "A width of 2.0 does not show a difference."
+      }
+    ],
+    "explanation": "0 is plausible, but so are other values: not convincing evidence of a difference, and not proof of none.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-73",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "easy",
+    "stem": "In a randomized experiment, 40 volunteers are randomly assigned to a new study method and 40 volunteers to the usual method. A researcher wants to test whether the mean test score is greater with the new method. The population standard deviations are unknown. Which procedure is appropriate?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A one-sample t-test for a population mean of one group of students at the school",
+        "isCorrect": false,
+        "explanation": "There are two treatment groups, so the parameter is a difference between two means."
+      },
+      {
+        "label": "B",
+        "text": "A two-sample t-test for the difference between two population means",
+        "isCorrect": true,
+        "explanation": "The parameter is μ₁ - μ₂ for two independent treatment groups, with σ unknown."
+      },
+      {
+        "label": "C",
+        "text": "A one-sample t-test for a population mean difference, using matched pairs",
+        "isCorrect": false,
+        "explanation": "The volunteers in the two groups are different people, not matched pairs."
+      },
+      {
+        "label": "D",
+        "text": "A two-sample z-test for the difference between two population proportions",
+        "isCorrect": false,
+        "explanation": "The scores are quantitative, so the parameter is a difference in means, not proportions."
+      }
+    ],
+    "explanation": "Two independent treatment groups with a quantitative response: a two-sample t-test.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-74",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "In a randomized experiment, volunteers are randomly assigned to a new study method (population 1) or the usual method (population 2). The researcher believes that the mean test score is greater with the new method. Which of the following are the correct hypotheses?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "H₀: μ₁ - μ₂ = 0 and Hₐ: μ₁ - μ₂ > 0, where μ₁ and μ₂ are the mean test scores of all students like these",
+        "isCorrect": true,
+        "explanation": "The null hypothesis states no difference, and the alternative states the belief."
+      },
+      {
+        "label": "B",
+        "text": "H₀: μ₁ - μ₂ = 0 and Hₐ: μ₁ - μ₂ < 0, where μ₁ and μ₂ are the mean test scores of all students like these with each method",
+        "isCorrect": false,
+        "explanation": "The researcher believes that μ₁ is greater, so the alternative is μ₁ - μ₂ > 0."
+      },
+      {
+        "label": "C",
+        "text": "H₀: μ₁ - μ₂ > 0 and Hₐ: μ₁ - μ₂ = 0, where μ₁ and μ₂ are the mean test scores of all students like these with each method",
+        "isCorrect": false,
+        "explanation": "The null hypothesis contains the equality (no difference)."
+      },
+      {
+        "label": "D",
+        "text": "H₀: x̄₁ - x̄₂ = 0 and Hₐ: x̄₁ - x̄₂ > 0, where x̄₁ and x̄₂ are the mean scores of the volunteers in the groups",
+        "isCorrect": false,
+        "explanation": "Hypotheses are about the population means, not the sample means."
+      }
+    ],
+    "explanation": "H0: μ1 - μ2 = 0; Ha: μ1 - μ2 > 0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-75",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "easy",
+    "stem": "A principal wants to know whether the mean time that students spend on homework each night differs between Grade 9 and Grade 12 at a school. Which of the following are the correct hypotheses?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "H₀: μ = 60 and Hₐ: μ ≠ 60, where μ is the mean time that all students at the school spend on homework each night of the whole school year, in minutes",
+        "isCorrect": false,
+        "explanation": "The question compares two groups. It is not a test about one mean and a stated value."
+      },
+      {
+        "label": "B",
+        "text": "H₀: μ₁ = μ₂ and Hₐ: μ₁ ≠ μ₂, where μ₁ and μ₂ are the mean times that all Grade 9 and all Grade 12 students at the school spend on homework",
+        "isCorrect": true,
+        "explanation": "A difference in either direction is a two-sided alternative."
+      },
+      {
+        "label": "C",
+        "text": "H₀: μ₁ ≠ μ₂ and Hₐ: μ₁ = μ₂, where μ₁ and μ₂ are the mean times that all Grade 9 students and all Grade 12 students spend on homework each night",
+        "isCorrect": false,
+        "explanation": "The null hypothesis contains the equality."
+      },
+      {
+        "label": "D",
+        "text": "H₀: μ₁ = μ₂ and Hₐ: μ₁ > μ₂, where μ₁ and μ₂ are the mean times that all Grade 9 students and all Grade 12 students spend on homework each night",
+        "isCorrect": false,
+        "explanation": "The question does not say that Grade 9 is greater, so the alternative is two-sided."
+      }
+    ],
+    "explanation": "A difference in either direction: Ha: μ1 ≠ μ2.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-76",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "easy",
+    "stem": "A researcher will test a claim about the mean daily screen time of the students in two cities. Which of the following correctly defines the parameters?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "μ₁ = the number of students in City A who use screens, and μ₂ = the number in City B",
+        "isCorrect": false,
+        "explanation": "The parameters are mean times, not counts."
+      },
+      {
+        "label": "B",
+        "text": "μ₁ = the mean daily screen time, in hours, of all students in City A, and μ₂ = the same mean for all students in City B",
+        "isCorrect": true,
+        "explanation": "The parameters reference the means, the response variable and the populations in context."
+      },
+      {
+        "label": "C",
+        "text": "μ₁ = the mean daily screen time of the students in the sample from City A, and μ₂ = the same for the students in the sample from City B",
+        "isCorrect": false,
+        "explanation": "These are sample means, statistics, and not the population parameters."
+      },
+      {
+        "label": "D",
+        "text": "μ = the mean daily screen time, in hours, of all students in both cities",
+        "isCorrect": false,
+        "explanation": "This is one combined mean. A test of a difference needs two parameters."
+      }
+    ],
+    "explanation": "The parameters are the two population means, in context.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-77",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Which conditions must be verified for a two-sample t-test for the difference between two population means when the data come from a randomized experiment with 25 units in each treatment group?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The volunteers are randomly selected from a population, and the group sizes are equal",
+        "isCorrect": false,
+        "explanation": "For an experiment, random assignment is what is needed, and the group sizes need not be equal."
+      },
+      {
+        "label": "B",
+        "text": "The two groups are paired, and the differences are free from outliers",
+        "isCorrect": false,
+        "explanation": "The groups are independent treatment groups, not paired."
+      },
+      {
+        "label": "C",
+        "text": "The treatments are randomly assigned, and both samples of responses are free from strong skewness and outliers (or both populations are approximately normal); the 10% condition is not needed",
+        "isCorrect": true,
+        "explanation": "For an experiment, the randomization condition is the random assignment, and the sample data condition applies because n < 30."
+      },
+      {
+        "label": "D",
+        "text": "The treatments are randomly assigned, and each group is at most 10% of a population",
+        "isCorrect": false,
+        "explanation": "The 10% condition is unnecessary for a randomized experiment."
+      }
+    ],
+    "explanation": "Random assignment, and the sample data condition for n < 30; no 10% condition.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-78",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Independent random samples of 45 students from School A and 52 students from School B, from large schools, are used in a two-sample t-test for the difference between the population mean scores. Which of the following is correct about the conditions?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The 10% condition is not met, because both samples are larger than 30",
+        "isCorrect": false,
+        "explanation": "The 10% condition compares each sample with its population, which is large."
+      },
+      {
+        "label": "B",
+        "text": "All conditions are met: the samples are independent and random, each is less than 10% of its school, and both sample sizes are at least 30",
+        "isCorrect": true,
+        "explanation": "These are the randomization, 10% and sample data conditions."
+      },
+      {
+        "label": "C",
+        "text": "The sample data condition is not met, because the sample sizes are not equal",
+        "isCorrect": false,
+        "explanation": "The sample sizes do not need to be equal."
+      },
+      {
+        "label": "D",
+        "text": "The randomization condition is not met, because the samples are of different schools",
+        "isCorrect": false,
+        "explanation": "Independent random samples from different populations meet the condition."
+      }
+    ],
+    "explanation": "Independent random samples, each under 10% of its population, both n ≥ 30.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-79",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Which of the following situations calls for a two-sample t-test (independent samples), and not for a matched pairs analysis?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A researcher measures the resting heart rates of 40 pairs of twins, one twin trained and one did not",
+        "isCorrect": false,
+        "explanation": "The twins in a pair are related, so the data are matched pairs."
+      },
+      {
+        "label": "B",
+        "text": "A researcher measures the resting heart rate of each of 40 people sitting and then standing, in a random order, with a rest in between",
+        "isCorrect": false,
+        "explanation": "Each person is measured under both conditions, so the data are paired."
+      },
+      {
+        "label": "C",
+        "text": "A researcher compares the resting heart rates of a random sample of 40 runners and a separate random sample of 40 swimmers",
+        "isCorrect": true,
+        "explanation": "The two groups are made of different people, with no pairing."
+      },
+      {
+        "label": "D",
+        "text": "A researcher measures the resting heart rate of each of 40 people before and after a month of training",
+        "isCorrect": false,
+        "explanation": "Each person is measured twice, so the data are paired."
+      }
+    ],
+    "explanation": "Two separate groups, no pairing: a two-sample t-test.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-80",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "In a randomized experiment, 11 volunteers in Group 1 and 12 volunteers in Group 2 receive two treatments, and their times are recorded. The boxplots show the times. A two-sample t-test is planned. Which of the following is correct about the conditions?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The 10% condition is not met, because the group sizes are small",
+        "isCorrect": false,
+        "explanation": "The 10% condition is unnecessary for a randomized experiment."
+      },
+      {
+        "label": "B",
+        "text": "The sample data condition is not met, because a sample size is less than 30 and Group 1 has an outlier",
+        "isCorrect": true,
+        "explanation": "If either sample size is less than 30, both samples should be free from strong skewness and outliers."
+      },
+      {
+        "label": "C",
+        "text": "The randomization condition is not met, because the sample sizes are not equal to each other in the two groups",
+        "isCorrect": false,
+        "explanation": "The sample sizes need not be equal, and random assignment meets the randomization condition."
+      },
+      {
+        "label": "D",
+        "text": "All conditions are met, because the treatments were randomly assigned",
+        "isCorrect": false,
+        "explanation": "Random assignment gives the randomization condition, but the sample data condition is also needed."
+      }
+    ],
+    "explanation": "n < 30 and an outlier in Group 1: the sample data condition is not met.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false,
+    "diagram": {
+      "type": "boxplot",
+      "xLabel": "Time (minutes)",
+      "axisMin": 0,
+      "axisMax": 40,
+      "axisStep": 5,
+      "groups": [
+        {
+          "min": 3,
+          "q1": 4,
+          "median": 6,
+          "q3": 9,
+          "max": 12,
+          "label": "Group 1",
+          "outliers": [
+            34
+          ]
+        },
+        {
+          "min": 5,
+          "q1": 6.5,
+          "median": 9.0,
+          "q3": 12.5,
+          "max": 16,
+          "label": "Group 2"
+        }
+      ],
+      "altText": "Boxplots of two groups: Group 1 has an outlier at 34 minutes and a long upper whisker."
+    }
+  },
+  {
+    "id": "ap-stat-u4-mcq-81",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "setting-up-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "A student writes the hypotheses H₀: x̄₁ = x̄₂ and Hₐ: x̄₁ > x̄₂ for a test about the mean times of all students in two schools, where x̄₁ and x̄₂ are the mean times of the students in two samples. What is the error?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is no error, because the sample means are used to carry out the test",
+        "isCorrect": false,
+        "explanation": "The sample means are used in the test statistic, but the hypotheses are about the parameters."
+      },
+      {
+        "label": "B",
+        "text": "The hypotheses are about sample means, but they should be about the population means μ₁ and μ₂",
+        "isCorrect": true,
+        "explanation": "Hypotheses are statements about population parameters."
+      },
+      {
+        "label": "C",
+        "text": "The alternative hypothesis must always be two-sided",
+        "isCorrect": false,
+        "explanation": "An alternative hypothesis can be one-sided."
+      },
+      {
+        "label": "D",
+        "text": "The null hypothesis should have the inequality x̄₁ > x̄₂, and the alternative should have the equality",
+        "isCorrect": false,
+        "explanation": "The null hypothesis has the equality."
+      }
+    ],
+    "explanation": "Hypotheses use the parameters μ1 and μ2, not the statistics.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/setting-up-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-82",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Independent random samples of students from two schools have times, in minutes, to finish a test. School A: n = 30, mean 24.1, standard deviation 5.2. School B: n = 32, mean 21.0, standard deviation 4.8. A test has H₀: μ₁ - μ₂ = 0 and Hₐ: μ₁ - μ₂ ≠ 0. What is the value of the test statistic?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "t = 1.72",
+        "isCorrect": false,
+        "explanation": "This adds the two standard errors instead of adding the variances and taking the square root."
+      },
+      {
+        "label": "B",
+        "text": "t = 0.44",
+        "isCorrect": false,
+        "explanation": "This leaves out the division by the sample sizes inside the standard error."
+      },
+      {
+        "label": "C",
+        "text": "t = -2.43",
+        "isCorrect": false,
+        "explanation": "The difference is taken in the wrong order for Hₐ as written: μ₁ - μ₂ uses 24.1 - 21.0."
+      },
+      {
+        "label": "D",
+        "text": "t = 2.43",
+        "isCorrect": true,
+        "explanation": "t = (24.1 - 21.0) / √(5.2²/30 + 4.8²/32) = 3.1 / 1.273."
+      }
+    ],
+    "explanation": "t = 3.1 / 1.273 = 2.43.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-83",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "A two-sample t-test of H₀: μ₁ - μ₂ = 0 versus Hₐ: μ₁ - μ₂ ≠ 0 gives t = 2.43, and technology reports 58.8 degrees of freedom. Which of the following is the p-value?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "0.982",
+        "isCorrect": false,
+        "explanation": "This is 1 minus the two-sided p-value, which is not a tail probability."
+      },
+      {
+        "label": "B",
+        "text": "0.018",
+        "isCorrect": true,
+        "explanation": "The two-sided p-value is 2P(t ≥ 2.43) with about 59 degrees of freedom."
+      },
+      {
+        "label": "C",
+        "text": "0.015",
+        "isCorrect": false,
+        "explanation": "This uses the standard normal distribution. The p-value should come from the t-distribution."
+      },
+      {
+        "label": "D",
+        "text": "0.009",
+        "isCorrect": false,
+        "explanation": "This is the one-sided p-value, for Hₐ: μ₁ - μ₂ > 0 only."
+      }
+    ],
+    "explanation": "p-value = 2P(t ≥ 2.43) = 0.018.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-84",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Independent random samples of students from School A and School B are used in a two-sample t-test of H₀: μ₁ - μ₂ = 0 versus Hₐ: μ₁ - μ₂ ≠ 0, where μ₁ and μ₂ are the mean times, in minutes, to finish a test for all students at the schools. The p-value is 0.018. Which of the following is the best conclusion at the 0.05 significance level?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is convincing statistical evidence that the mean times are different for the students in the two samples",
+        "isCorrect": false,
+        "explanation": "The conclusion should be about the population means, not the samples."
+      },
+      {
+        "label": "B",
+        "text": "There is not convincing statistical evidence of a difference, because the sample means differ by only 3.1 minutes",
+        "isCorrect": false,
+        "explanation": "The decision depends on the p-value. A difference in the sample means can still be significant."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing statistical evidence that the mean times to finish the test are equal for all students at the two schools, as H₀ states",
+        "isCorrect": false,
+        "explanation": "A small p-value is evidence for a difference, not for sameness."
+      },
+      {
+        "label": "D",
+        "text": "There is convincing statistical evidence that the mean times to finish the test are different for all students at the two schools",
+        "isCorrect": true,
+        "explanation": "The p-value, 0.018, is less than 0.05: reject H0."
+      }
+    ],
+    "explanation": "p-value 0.018 < 0.05: reject H0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-85",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "In a randomized experiment, 40 volunteers are randomly assigned to a new study method and 40 volunteers to the usual method. A two-sample t-test of H₀: μ₁ - μ₂ = 0 versus Hₐ: μ₁ - μ₂ > 0 has a p-value of 0.006. Which of the following is the best conclusion at the 0.05 significance level?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is only evidence of an association between the method and the score, because the volunteers chose to take part",
+        "isCorrect": false,
+        "explanation": "Random assignment of the treatments allows a cause-and-effect conclusion."
+      },
+      {
+        "label": "B",
+        "text": "There is convincing statistical evidence that the new method causes a greater mean score than the usual method for students like these volunteers",
+        "isCorrect": true,
+        "explanation": "The p-value is small and the treatments were randomly assigned."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing statistical evidence that the new method would cause a greater mean score for all students in the country, since the treatments were randomly assigned",
+        "isCorrect": false,
+        "explanation": "The volunteers were not a random sample of all students, so the conclusion applies only to similar students."
+      },
+      {
+        "label": "D",
+        "text": "There is not convincing statistical evidence of a difference, because the p-value is not 0",
+        "isCorrect": false,
+        "explanation": "The p-value is less than 0.05, so the evidence is convincing."
+      }
+    ],
+    "explanation": "Small p-value and random assignment: convincing evidence of a causal effect for similar volunteers.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-86",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "Independent random samples of 35 students at School A and 38 students at School B are used to test H₀: μ₁ - μ₂ = 0 versus Hₐ: μ₁ - μ₂ > 0, where μ₁ and μ₂ are the mean test scores of all students at the schools. The sample means are 78.4 and 75.1. The test gives t = 1.22 and a p-value of 0.113. Which of the following is the best conclusion at the 0.05 significance level?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is convincing statistical evidence that the mean test scores of all students at the two schools are equal",
+        "isCorrect": false,
+        "explanation": "A test cannot show that the null hypothesis is true."
+      },
+      {
+        "label": "B",
+        "text": "It has been proved that the two schools have the same mean test score",
+        "isCorrect": false,
+        "explanation": "Failing to reject H0 does not prove anything about equality."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing statistical evidence that the mean test score of all students at School A is greater than that at School B, because 78.4 is greater than 75.1",
+        "isCorrect": false,
+        "explanation": "The p-value, 0.113, is greater than 0.05, so the evidence is not convincing."
+      },
+      {
+        "label": "D",
+        "text": "There is not convincing statistical evidence that the mean test score of all students at School A is greater than that at School B",
+        "isCorrect": true,
+        "explanation": "The p-value, 0.113, is greater than 0.05: fail to reject H0."
+      }
+    ],
+    "explanation": "p-value 0.113 > 0.05: fail to reject H0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-87",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "A two-sample t-test for the difference between two population means has a p-value of 0.02. Which of the following is the correct interpretation of the p-value?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The probability that the two population means are equal is 0.02",
+        "isCorrect": false,
+        "explanation": "The p-value is not the probability that the null hypothesis is true."
+      },
+      {
+        "label": "B",
+        "text": "The difference between the two sample means is 0.02",
+        "isCorrect": false,
+        "explanation": "The p-value is a probability, not a difference in means."
+      },
+      {
+        "label": "C",
+        "text": "Assuming that the two population means are equal, the probability of getting a difference in the sample means at least as extreme as the one observed is 0.02",
+        "isCorrect": true,
+        "explanation": "The p-value is computed assuming that the null hypothesis is true: the means are equal."
+      },
+      {
+        "label": "D",
+        "text": "Assuming that the two population means are different, the probability of a difference in the sample means at least as extreme as the one observed is 0.02 in the study",
+        "isCorrect": false,
+        "explanation": "The p-value is computed assuming the null hypothesis, of no difference, is true."
+      }
+    ],
+    "explanation": "The p-value is computed assuming H0 (equal means) is true.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-88",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "hard",
+    "stem": "A student calculates a test statistic for a difference in two sample means as ($\\bar{x}_1 - \\bar{x}_2$) / $\\sqrt{(s_1^2 + s_2^2) / (n_1 + n_2)}$. What is wrong with this standard error?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The standard error of the difference is √(s₁²/n₁ + s₂²/n₂): each variance is divided by its own sample size, then added",
+        "isCorrect": true,
+        "explanation": "The variance of each sample mean is s² / n for that sample."
+      },
+      {
+        "label": "B",
+        "text": "The standard error should use the product of the sample sizes",
+        "isCorrect": false,
+        "explanation": "The sample sizes are used in the denominators of each term."
+      },
+      {
+        "label": "C",
+        "text": "Nothing is wrong, because the variances and the sample sizes can be added separately",
+        "isCorrect": false,
+        "explanation": "The variances must be divided by their own sample sizes."
+      },
+      {
+        "label": "D",
+        "text": "The standard error should add the standard deviations s₁ + s₂ and divide by n₁ + n₂",
+        "isCorrect": false,
+        "explanation": "The variances are added, not the standard deviations."
+      }
+    ],
+    "explanation": "SE = √(s1²/n1 + s2²/n2).",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-89",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "hard",
+    "stem": "Two studies find the same sample mean difference (3.1 minutes) and the same standard deviations (5.2 and 4.8). Study X has samples of about 30 per group and Study Y has about 120 per group. The two-sided p-values are 0.018 for Study X and less than 0.0001 for Study Y. Which of the following is the best explanation for the difference between the p-values?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The larger samples in Study Y give a larger difference in the sample means",
+        "isCorrect": false,
+        "explanation": "The sample mean difference is the same, 3.1, in both studies."
+      },
+      {
+        "label": "B",
+        "text": "The larger samples in Study Y give a smaller standard error, so the same difference is farther from 0 in standard errors and the p-value is smaller",
+        "isCorrect": true,
+        "explanation": "The test statistic is the difference divided by the standard error, which decreases with the sample size."
+      },
+      {
+        "label": "C",
+        "text": "The p-value does not depend on the sample sizes, so the difference is due to chance",
+        "isCorrect": false,
+        "explanation": "The standard error depends on the sample sizes, so the p-value does too."
+      },
+      {
+        "label": "D",
+        "text": "The larger samples in Study Y give a larger standard error, so the p-value is smaller",
+        "isCorrect": false,
+        "explanation": "A larger sample gives a smaller standard error, not a larger one."
+      }
+    ],
+    "explanation": "Same difference, smaller SE with larger n: a larger t and a smaller p-value.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u4-mcq-90",
+    "unit": "unit-4-inference-for-quantitative-data-means",
+    "topic": "carrying-out-a-test-for-the-difference-between-two-population-means",
+    "difficulty": "medium",
+    "stem": "A two-sample t-test comparing the mean scores of two groups gives a p-value of 0.30. Which of the following is the best interpretation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is a 30% chance that the two population means are equal",
+        "isCorrect": false,
+        "explanation": "The p-value is not the probability that the null hypothesis is true."
+      },
+      {
+        "label": "B",
+        "text": "Assuming that the two population means are equal, a difference in the sample means this large would not be unusual; there is not convincing evidence of a difference",
+        "isCorrect": true,
+        "explanation": "A p-value that is not small does not provide convincing evidence for the alternative."
+      },
+      {
+        "label": "C",
+        "text": "There is convincing evidence that the two population means are equal",
+        "isCorrect": false,
+        "explanation": "A test cannot show that the null hypothesis is true."
+      },
+      {
+        "label": "D",
+        "text": "The two sample means are 30% different",
+        "isCorrect": false,
+        "explanation": "The p-value is not a percent difference of the sample means."
+      }
+    ],
+    "explanation": "A p-value of 0.30 would not be unusual under H0.",
+    "conceptLink": "ap-statistics/unit-4-inference-for-quantitative-data-means/carrying-out-a-test-for-the-difference-between-two-population-means",
+    "reviewed": false
+  }
+]
