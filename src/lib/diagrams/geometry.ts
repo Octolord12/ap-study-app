@@ -93,6 +93,7 @@ export function axisTicks(min: number, max: number, count: number): number[] {
   return Array.from({ length: count }, (_, i) => min + i * step);
 }
 
+// Up to three decimals, without trailing zeros: an axis of 0 to 1 in four steps must read 0.25 and 0.75, not 0.3 and 0.8.
 export function formatTick(value: number): string {
-  return Number.isInteger(value) ? String(value) : value.toFixed(1);
+  return String(Number(value.toFixed(3)));
 }

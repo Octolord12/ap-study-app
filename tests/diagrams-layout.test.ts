@@ -152,9 +152,17 @@ describe("axis helpers (shared by the line and bar graphs)", () => {
     expect(axisTicks(0, 20, 5)).toEqual([0, 5, 10, 15, 20]);
     expect(axisTicks(-1, 1, 3)).toEqual([-1, 0, 1]);
   });
-  it("writes whole numbers plainly and others to one decimal", () => {
+  it("writes whole numbers plainly and others with the decimals they need, up to three", () => {
     expect(formatTick(5)).toBe("5");
     expect(formatTick(2.5)).toBe("2.5");
+  });
+  it("does not round a tick to a wrong value: a quarter step reads 0.25 and 18.75, not 0.3 and 18.8", () => {
+    expect(axisTicks(0, 1, 5).map(formatTick)).toEqual(["0", "0.25", "0.5", "0.75", "1"]);
+    expect(axisTicks(0, 25, 5).map(formatTick)).toEqual(["0", "6.25", "12.5", "18.75", "25"]);
+    expect(axisTicks(0, 0.5, 5).map(formatTick)).toEqual(["0", "0.125", "0.25", "0.375", "0.5"]);
+  });
+  it("hides floating-point noise", () => {
+    expect(formatTick(0.1 + 0.2)).toBe("0.3");
   });
 });
 
