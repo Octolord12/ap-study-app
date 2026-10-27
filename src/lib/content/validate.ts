@@ -1,4 +1,5 @@
 import type { CladogramNode, Diagram } from "./diagram-schema";
+import { validateBoxplot, validateDensityCurve, validateDotplot, validateHistogram, validateScatterplot } from "./validate-stats-diagrams";
 import { examDraws } from "./exam-sections";
 import type { FRQ, Question, Refresher, Unit } from "./schema";
 
@@ -165,6 +166,12 @@ export function validateDiagram(diagram: Diagram): Problem[] {
   if (diagram.type === "bar-graph") problems.push(...validateBarGraph(diagram));
 
   if (diagram.type === "cladogram") problems.push(...validateCladogram(diagram.root));
+
+  if (diagram.type === "histogram") problems.push(...validateHistogram(diagram));
+  if (diagram.type === "boxplot") problems.push(...validateBoxplot(diagram));
+  if (diagram.type === "dotplot") problems.push(...validateDotplot(diagram));
+  if (diagram.type === "scatterplot") problems.push(...validateScatterplot(diagram));
+  if (diagram.type === "density-curve") problems.push(...validateDensityCurve(diagram));
 
   return problems;
 }

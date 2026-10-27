@@ -96,12 +96,99 @@ export const CladogramDiagramSchema = z.object({
   root: CladogramNodeSchema,
 });
 
+// The statistics graphs. Axis ranges and steps are written out (not worked out from the data) so a graph shows
+// exactly the scale a question needs; validateDiagram checks that the data fit the axis and the step divides it.
+
+const AxisSchema = {
+  axisMin: z.number(),
+  axisMax: z.number(),
+  axisStep: z.number().positive(),
+};
+
+// Bars side by side with no gaps: `edges` has one more entry than `values`. Labels go under the edges (a measured
+// variable) or under the middle of each bar (a variable that takes whole values, such as a count of successes).
+export const HistogramDiagramSchema = z.object({
+  type: z.literal("histogram"),
+  altText: z.string().min(1).optional(),
+  xLabel: z.string().min(1),
+  yLabel: z.string().min(1).default("Frequency"),
+  edges: z.array(z.number()).min(3).max(26),
+  values: z.array(z.number().min(0)).min(2).max(25),
+  yMax: z.number().positive(),
+  yStep: z.number().positive(),
+  tickAt: z.enum(["edges", "centers"]).default("edges"),
+  labelEvery: z.number().int().min(1).max(10).default(1), // label every nth edge when there are many bins
+});
+
+const BoxplotGroupSchema = z.object({
+  label: z.string().min(1).max(40).optional(), // required when there are several groups
+  min: z.number(), // the lower whisker: the smallest value that is not an outlier
+  q1: z.number(),
+  median: z.number(),
+  q3: z.number(),
+  max: z.number(), // the upper whisker
+  outliers: z.array(z.number()).max(12).optional(),
+});
+
+export const BoxplotDiagramSchema = z.object({
+  type: z.literal("boxplot"),
+  altText: z.string().min(1).optional(),
+  xLabel: z.string().min(1),
+  ...AxisSchema,
+  groups: z.array(BoxplotGroupSchema).min(1).max(4),
+});
+
+// `count` dots stacked above `x`.
+export const DotplotDiagramSchema = z.object({
+  type: z.literal("dotplot"),
+  altText: z.string().min(1).optional(),
+  xLabel: z.string().min(1),
+  ...AxisSchema,
+  dots: z.array(z.object({ x: z.number(), count: z.number().int().min(1).max(16) })).min(1).max(60),
+});
+
+const ScatterPointSchema = z.object({ x: z.number(), y: z.number() });
+
+// Points, optionally with the least-squares line drawn through the plot, and a dashed line at zero for a residual plot.
+export const ScatterplotDiagramSchema = z.object({
+  type: z.literal("scatterplot"),
+  altText: z.string().min(1).optional(),
+  xLabel: z.string().min(1),
+  yLabel: z.string().min(1),
+  xMin: z.number(),
+  xMax: z.number(),
+  xStep: z.number().positive(),
+  yMin: z.number(),
+  yMax: z.number(),
+  yStep: z.number().positive(),
+  points: z.array(ScatterPointSchema).min(2).max(80),
+  line: z.object({ intercept: z.number(), slope: z.number() }).optional(),
+  zeroLine: z.boolean().default(false),
+  highlights: z.array(z.object({ index: z.number().int().min(0), label: z.string().min(1).max(6) })).max(4).optional(),
+});
+
+// A smooth curve given as points (worked out when the content is written, with scipy), with regions shaded under it
+// and labelled values on the axis: a normal, t or chi-square curve for a probability, a critical value or a p-value.
+export const DensityCurveDiagramSchema = z.object({
+  type: z.literal("density-curve"),
+  altText: z.string().min(1).optional(),
+  xLabel: z.string().min(1).optional(),
+  points: z.array(ScatterPointSchema).min(20).max(400),
+  shade: z.array(z.object({ from: z.number(), to: z.number() })).max(2).optional(),
+  ticks: z.array(z.object({ x: z.number(), label: z.string().min(1).max(14) })).max(8),
+});
+
 export const DiagramSchema = z.discriminatedUnion("type", [
   XYGraphDiagramSchema,
   ForceDiagramSchema,
   DataTableDiagramSchema,
   BarGraphDiagramSchema,
   CladogramDiagramSchema,
+  HistogramDiagramSchema,
+  BoxplotDiagramSchema,
+  DotplotDiagramSchema,
+  ScatterplotDiagramSchema,
+  DensityCurveDiagramSchema,
 ]);
 
 export type GraphSeries = z.infer<typeof GraphSeriesSchema>;
@@ -112,4 +199,10 @@ export type DataTableDiagram = z.infer<typeof DataTableDiagramSchema>;
 export type BarSeries = z.infer<typeof BarSeriesSchema>;
 export type BarGraphDiagram = z.infer<typeof BarGraphDiagramSchema>;
 export type CladogramDiagram = z.infer<typeof CladogramDiagramSchema>;
+export type HistogramDiagram = z.infer<typeof HistogramDiagramSchema>;
+export type BoxplotGroup = z.infer<typeof BoxplotGroupSchema>;
+export type BoxplotDiagram = z.infer<typeof BoxplotDiagramSchema>;
+export type DotplotDiagram = z.infer<typeof DotplotDiagramSchema>;
+export type ScatterplotDiagram = z.infer<typeof ScatterplotDiagramSchema>;
+export type DensityCurveDiagram = z.infer<typeof DensityCurveDiagramSchema>;
 export type Diagram = z.infer<typeof DiagramSchema>;

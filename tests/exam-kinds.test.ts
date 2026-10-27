@@ -91,6 +91,52 @@ describe("prompt types and supply for a course with kinds", () => {
   });
 });
 
+describe("a course with four kinds of free response (AP Statistics)", () => {
+  const STATS_KINDS = ["COLLECT_DATA", "ANALYZE_DATA", "INFERENCE", "MULTI_FOCUS"] as const;
+  const stats = [
+    { type: "MCQ", questionCount: 42 },
+    { type: "FRQ", questionCount: 4, kinds: STATS_KINDS },
+  ];
+
+  it("draws one prompt of each kind in the order of the exam's four questions", () => {
+    expect(examDraws(stats).map((d) => [d.type, d.count])).toEqual(STATS_KINDS.map((k) => [k, 1]));
+    expect(drawableTypes(stats)).toEqual([...STATS_KINDS]);
+  });
+
+  it("accepts the section as course.json writes it, and rejects a kind that is not one of the four", () => {
+    const section = { type: "FRQ", questionCount: 4, durationMinutes: 90, scoreWeight: 0.5, kinds: [...STATS_KINDS] };
+    expect(ExamSectionSchema.safeParse(section).success).toBe(true);
+    expect(ExamSectionSchema.safeParse({ ...section, kinds: ["COLLECT_DATA", "ANALYZE_DATA", "INFERENCE", "RESULTS_GRAPHS"] }).success).toBe(false);
+    expect(ExamSectionSchema.safeParse({ ...section, questionCount: 6 }).success).toBe(false);
+  });
+
+  it("needs a prompt of every kind, and rejects an untyped prompt", () => {
+    expect(checkExamSupply(stats, STATS_KINDS.flatMap((k) => [k, k]))).toEqual([]);
+    expect(checkExamSupply(stats, ["COLLECT_DATA", "ANALYZE_DATA", "MULTI_FOCUS"]).map((p) => p.message)).toEqual(["exam section INFERENCE needs 1 prompt(s) of that type, but the course has 0"]);
+  });
+
+  it("titles each question by what it assesses", () => {
+    expect(STATS_KINDS.map(frqTitle)).toEqual([
+      "Formulating questions and collecting data",
+      "Analyzing data and interpreting results",
+      "Inference",
+      "Multi-focus: collecting, analyzing and interpreting",
+    ]);
+  });
+
+  it("draws one of each kind, in order, from different units where it can", () => {
+    const sp = STATS_KINDS.flatMap((type, k) => Array.from({ length: 6 }, (_, i) => ({ id: `${type}-${i}`, type, unitId: `u${((k + i) % 5) + 1}` })));
+    const byId = new Map(sp.map((p) => [p.id, p]));
+    const w = unitWeightsFrom([[20, 30], [15, 25], [15, 25], [10, 20], [10, 20]].map(([min, max], i) => ({ id: `u${i + 1}`, weightingMin: min, weightingMax: max })));
+    const random = seeded(7);
+    for (let run = 0; run < 200; run++) {
+      const picked = pickExamFrqIds(stats, sp, random, w).map((id) => byId.get(id)!);
+      expect(picked.map((p) => p.type)).toEqual([...STATS_KINDS]);
+      expect(new Set(picked.map((p) => p.unitId)).size).toBeGreaterThanOrEqual(3);
+    }
+  });
+});
+
 describe("pickExamFrqIds for a section with kinds", () => {
   it("gives one prompt of each kind, in the listed order", () => {
     const random = seeded(1);

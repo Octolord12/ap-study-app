@@ -217,7 +217,7 @@ model Choice {
 
 // Which exam section a free-response prompt belongs to. Courses with a single
 // free-response section (CSA, Calc, Physics) use FRQ; World History has three kinds;
-// AP Biology's six questions are six kinds (the last six values).
+// AP Biology's six questions are six kinds (RESULTS to DATA); AP Statistics' four are four kinds (the last four).
 enum FrqType {
   FRQ
   SAQ
@@ -229,6 +229,10 @@ enum FrqType {
   CONCEPT
   MODEL
   DATA
+  COLLECT_DATA
+  ANALYZE_DATA
+  INFERENCE
+  MULTI_FOCUS
 }
 
 model FRQPrompt {

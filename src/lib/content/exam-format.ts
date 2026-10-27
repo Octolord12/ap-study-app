@@ -13,9 +13,24 @@ export const SECTION_NAMES: Record<string, string> = {
   LEQ: "long essay",
 };
 
-export type FrqKind = "FRQ" | "SAQ" | "DBQ" | "LEQ" | "RESULTS" | "RESULTS_GRAPH" | "INVESTIGATION" | "CONCEPT" | "MODEL" | "DATA";
+export type FrqKind =
+  | "FRQ"
+  | "SAQ"
+  | "DBQ"
+  | "LEQ"
+  | "RESULTS"
+  | "RESULTS_GRAPH"
+  | "INVESTIGATION"
+  | "CONCEPT"
+  | "MODEL"
+  | "DATA"
+  | "COLLECT_DATA"
+  | "ANALYZE_DATA"
+  | "INFERENCE"
+  | "MULTI_FOCUS";
 
-// AP Biology's six free-response kinds use the College Board's own names.
+// AP Biology's six free-response kinds use the College Board's own names; AP Statistics' four are described by what
+// each question assesses (the College Board calls them "Multi-Focus on Practices 1 and 2", "3 and 4", "Inference", and "2, 3, and 4").
 const FRQ_TITLES: Record<FrqKind, string> = {
   FRQ: "Free response",
   SAQ: "Short answer",
@@ -27,6 +42,10 @@ const FRQ_TITLES: Record<FrqKind, string> = {
   CONCEPT: "Conceptual analysis",
   MODEL: "Analyzing a model or visual representation",
   DATA: "Analyzing data",
+  COLLECT_DATA: "Formulating questions and collecting data",
+  ANALYZE_DATA: "Analyzing data and interpreting results",
+  INFERENCE: "Inference",
+  MULTI_FOCUS: "Multi-focus: collecting, analyzing and interpreting",
 };
 
 export function frqTitle(type: string): string {

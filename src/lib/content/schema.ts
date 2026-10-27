@@ -36,8 +36,25 @@ export const RubricLineSchema = z.object({
 // Which exam section a prompt is drawn for. Left out, it means plain "FRQ", the one
 // free-response section CSA, Calc and Physics have; World History must say SAQ, DBQ or LEQ; AP Biology's six
 // questions are six kinds (see ExamSectionSchema.kinds): experimental results (with and without graphing),
-// scientific investigation, conceptual analysis, analyzing a model, analyzing data.
-export const FrqTypeSchema = z.enum(["FRQ", "SAQ", "DBQ", "LEQ", "RESULTS", "RESULTS_GRAPH", "INVESTIGATION", "CONCEPT", "MODEL", "DATA"]);
+// scientific investigation, conceptual analysis, analyzing a model, analyzing data. AP Statistics' four questions are
+// four kinds too: formulating questions and collecting data, analyzing data and interpreting results, inference, and a
+// multi-focus question over several content areas.
+export const FrqTypeSchema = z.enum([
+  "FRQ",
+  "SAQ",
+  "DBQ",
+  "LEQ",
+  "RESULTS",
+  "RESULTS_GRAPH",
+  "INVESTIGATION",
+  "CONCEPT",
+  "MODEL",
+  "DATA",
+  "COLLECT_DATA",
+  "ANALYZE_DATA",
+  "INFERENCE",
+  "MULTI_FOCUS",
+]);
 
 export const FRQSchema = z.object({
   id: z.string().min(1),
