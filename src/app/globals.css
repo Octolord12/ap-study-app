@@ -269,7 +269,7 @@ pre {
 
 /*
  * A ruled-notebook-paper look for math-heavy question sheets -- applied only
- * to AP Calculus AB and AP Physics 1 (see isPaperLinedCourse() in
+ * to the math courses: Calculus AB and BC, Physics 1 and Statistics (see isPaperLinedCourse() in
  * src/lib/content/paper-lined.ts), approved by the owner after a preview. It
  * is the one warm object on a cool page: the notebook the student works in.
  * Plain CSS gradients, unlayered (like `pre` above) so it wins over

@@ -4,8 +4,8 @@ import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 import { normalizePlainMath } from "@/lib/content/plain-math";
 
 describe("which courses count as math courses", () => {
-  it("includes both calculus courses and Physics 1, so they get the notebook-paper cards and the math typesetting", () => {
-    for (const slug of ["ap-calc", "ap-calc-bc", "ap-physics-1"]) {
+  it("includes both calculus courses, Physics 1 and Statistics, so they get the notebook-paper cards and the math typesetting", () => {
+    for (const slug of ["ap-calc", "ap-calc-bc", "ap-physics-1", "ap-statistics"]) {
       expect(isMathCourse(slug), slug).toBe(true);
       expect(isPaperLinedCourse(slug), slug).toBe(true);
     }
