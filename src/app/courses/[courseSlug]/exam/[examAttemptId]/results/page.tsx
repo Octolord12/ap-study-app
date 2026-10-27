@@ -11,8 +11,8 @@ import { examWeakUnits, type ExamQuestionResult } from "@/lib/study/exam-breakdo
 import { frqTitle } from "@/lib/content/exam-format";
 import { FrqSelfGrade } from "@/components/study/frq-self-grade";
 import { renderRubric } from "@/lib/study/render-rubric";
-import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
-import { Html } from "@/components/ui/html";
+import { renderFrqPrompt } from "@/lib/study/render-frq-prompt";
+import { FrqPrompt } from "@/components/study/frq-prompt";
 import { Breadcrumb, Page, PageHeader, Section } from "@/components/ui/page";
 import { Sheet } from "@/components/ui/sheet";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -82,14 +82,17 @@ export default async function ExamResultsPage({
   const frqInExamOrder = [...frqPrompts].sort((a, b) => (examOrder.get(a.id) ?? 0) - (examOrder.get(b.id) ?? 0));
 
   const frqSections = await Promise.all(
-    frqInExamOrder.map(async (frq) => ({
-      frq,
-      promptHtml: await renderContentToHtml(frq.prompt, courseSlug),
-      sampleResponseHtml: await renderContentToHtml(frq.sampleResponse, courseSlug),
-      diagram: (frq.diagram as Diagram | null) ?? null,
-      rubric: await renderRubric(frq.rubric, courseSlug),
-      existingAttempt: frqAttemptByPromptId.get(frq.id),
-    })),
+    frqInExamOrder.map(async (frq) => {
+      const diagram = (frq.diagram as Diagram | null) ?? null;
+      return {
+        frq,
+        prompt: await renderFrqPrompt(frq.prompt, courseSlug, diagram !== null),
+        sampleResponseHtml: await renderContentToHtml(frq.sampleResponse, courseSlug),
+        diagram,
+        rubric: await renderRubric(frq.rubric, courseSlug),
+        existingAttempt: frqAttemptByPromptId.get(frq.id),
+      };
+    }),
   );
 
   return (
@@ -134,15 +137,14 @@ export default async function ExamResultsPage({
       {frqSections.length > 0 ? (
         <Section label="Free response" note="Grade your own responses against each rubric.">
           <div className="space-y-6">
-            {frqSections.map(({ frq, promptHtml, sampleResponseHtml, diagram, rubric, existingAttempt }) => (
+            {frqSections.map(({ frq, prompt, sampleResponseHtml, diagram, rubric, existingAttempt }) => (
               <Sheet key={frq.id} lined={paperLined}>
                 <div className="space-y-6">
                   <div>
                     <p className="eyebrow mb-2">
                       {frqTitle(frq.type)} · {frq.pointValue} point{frq.pointValue === 1 ? "" : "s"}
                     </p>
-                    <Html html={promptHtml} />
-                    {diagram && <DiagramRenderer diagram={diagram} />}
+                    <FrqPrompt prompt={prompt} diagram={diagram} />
                   </div>
                   <FrqSelfGrade
                     frqPromptId={frq.id}

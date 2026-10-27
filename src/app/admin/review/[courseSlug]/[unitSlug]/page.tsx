@@ -11,6 +11,8 @@ import { Html } from "@/components/ui/html";
 import { Breadcrumb, Page, PageHeader, Section } from "@/components/ui/page";
 import { Sheet } from "@/components/ui/sheet";
 import { renderRubric } from "@/lib/study/render-rubric";
+import { renderFrqPrompt } from "@/lib/study/render-frq-prompt";
+import { FrqPrompt } from "@/components/study/frq-prompt";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
 import { isPaperLinedCourse } from "@/lib/content/paper-lined";
@@ -42,7 +44,7 @@ export default async function AdminReviewUnitPage({
   const frqPrompts = await Promise.all(
     unit.frqPrompts.map(async (frq) => ({
       ...frq,
-      promptHtml: await renderContentToHtml(frq.prompt, courseSlug),
+      prompt: await renderFrqPrompt(frq.prompt, courseSlug, frq.diagram !== null),
       sampleResponseHtml: await renderContentToHtml(frq.sampleResponse, courseSlug),
       rubricLines: await renderRubric(frq.rubric, courseSlug),
     })),
@@ -148,8 +150,7 @@ export default async function AdminReviewUnitPage({
                 <p className="eyebrow">
                   {frq.topic.name} · {frq.pointValue} pts
                 </p>
-                <Html html={frq.promptHtml} className="mt-2" />
-                {frq.diagram && <DiagramRenderer diagram={frq.diagram as unknown as Diagram} />}
+                <FrqPrompt prompt={frq.prompt} diagram={(frq.diagram as unknown as Diagram | null) ?? null} className="mt-2" />
                 <div className="mt-5 border-t-2 border-current pt-4">
                   <p className="eyebrow !text-current">Rubric</p>
                   <ul className="mt-2 space-y-2 text-sm">

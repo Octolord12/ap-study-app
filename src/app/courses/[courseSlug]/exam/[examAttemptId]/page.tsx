@@ -5,6 +5,7 @@ import { getDb } from "@/lib/db";
 import { renderChoiceTextToHtml, renderContentToHtml } from "@/lib/content/render";
 import { displayLabelMap, remapChoiceLetters, shuffleChoices } from "@/lib/study/shuffle-choices";
 import { examSecondsLeft } from "@/lib/study/exam-clock";
+import { renderFrqPrompt } from "@/lib/study/render-frq-prompt";
 import { ExamRunner, type ExamFrqItem, type ExamMcqItem } from "@/components/study/exam-runner";
 import type { Course as ContentCourse } from "@/lib/content/schema";
 import type { Diagram } from "@/lib/content/diagram-schema";
@@ -68,13 +69,16 @@ export default async function ExamRunnerPage({
     frqPromptIds
       .map((id) => frqById.get(id))
       .filter((f): f is NonNullable<typeof f> => f !== undefined)
-      .map(async (f) => ({
-        id: f.id,
-        type: f.type,
-        promptHtml: await renderContentToHtml(f.prompt, courseSlug),
-        diagram: (f.diagram as Diagram | null) ?? null,
-        pointValue: f.pointValue,
-      })),
+      .map(async (f) => {
+        const diagram = (f.diagram as Diagram | null) ?? null;
+        return {
+          id: f.id,
+          type: f.type,
+          prompt: await renderFrqPrompt(f.prompt, courseSlug, diagram !== null),
+          diagram,
+          pointValue: f.pointValue,
+        };
+      }),
   );
 
   return (

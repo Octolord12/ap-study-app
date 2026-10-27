@@ -16,7 +16,7 @@ const mcqItems: ExamMcqItem[] = [
   { id: "q1", stemHtml: "<p>First question</p>", diagram: null, choices: choices("q1") },
   { id: "q2", stemHtml: "<p>Second question</p>", diagram: null, choices: choices("q2") },
 ];
-const frqItems: ExamFrqItem[] = [{ id: "f1", type: "FRQ", promptHtml: "<p>Explain it</p>", diagram: null, pointValue: 4 }];
+const frqItems: ExamFrqItem[] = [{ id: "f1", type: "FRQ", prompt: { introHtml: "<p>Explain it</p>", partsHtml: "" }, diagram: null, pointValue: 4 }];
 const KEY = examDraftKey("exam-1");
 
 function renderRunner(initialSecondsLeft: number) {
@@ -143,12 +143,34 @@ describe("ExamRunner keeps answers across a reload", () => {
   });
 });
 
+describe("a free-response figure sits between the set-up and the lettered parts", () => {
+  const withFigure: ExamFrqItem[] = [
+    {
+      id: "f2",
+      type: "RESULTS",
+      prompt: { introHtml: "<p>Set-up text</p>", partsHtml: "<p>(a) Describe the trend.</p>" },
+      diagram: { type: "data-table", caption: "Results table", columns: ["Trial", "Rate"], rows: [["1", 2]], rowHeaders: false },
+      pointValue: 9,
+    },
+  ];
+
+  it("shows the table after the set-up text and before part (a)", () => {
+    render(<ExamRunner examAttemptId="exam-3" courseSlug="ap-biology" initialSecondsLeft={3600} mcqItems={mcqItems} frqItems={withFigure} />);
+    fireEvent.click(screen.getAllByRole("button", { name: /^Question 3/ })[0]);
+    const setUp = screen.getByText("Set-up text");
+    const table = screen.getByRole("table");
+    const partA = screen.getByText("(a) Describe the trend.");
+    expect(setUp.compareDocumentPosition(table) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(table.compareDocumentPosition(partA) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
+});
+
 describe("labels for several kinds of free response", () => {
   const worldFrqs: ExamFrqItem[] = [
-    { id: "s1", type: "SAQ", promptHtml: "<p>SAQ one</p>", diagram: null, pointValue: 3 },
-    { id: "s2", type: "SAQ", promptHtml: "<p>SAQ two</p>", diagram: null, pointValue: 3 },
-    { id: "d1", type: "DBQ", promptHtml: "<p>The DBQ</p>", diagram: null, pointValue: 7 },
-    { id: "l1", type: "LEQ", promptHtml: "<p>The LEQ</p>", diagram: null, pointValue: 6 },
+    { id: "s1", type: "SAQ", prompt: { introHtml: "<p>SAQ one</p>", partsHtml: "" }, diagram: null, pointValue: 3 },
+    { id: "s2", type: "SAQ", prompt: { introHtml: "<p>SAQ two</p>", partsHtml: "" }, diagram: null, pointValue: 3 },
+    { id: "d1", type: "DBQ", prompt: { introHtml: "<p>The DBQ</p>", partsHtml: "" }, diagram: null, pointValue: 7 },
+    { id: "l1", type: "LEQ", prompt: { introHtml: "<p>The LEQ</p>", partsHtml: "" }, diagram: null, pointValue: 6 },
   ];
 
   it("names each prompt's kind, numbering only kinds that have several", () => {

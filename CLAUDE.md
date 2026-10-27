@@ -276,6 +276,18 @@ the two-argument `pickExamFrqIds(sections, prompts)` still works.
   mutation-checked four ways). Checked for real with scratch account `scratch_wx` on the local dev server: a BC exam through the real form drew 3,3,3,3,5,7,3,3,5,7 and
   free response from Units 2, 4, 5, 6, 9 and 10; deleted afterwards, every count identical to the baseline snapshot.
 
+**Free-response figure placement** (2026-10-26; no migration, no content change). A prompt's table or graph is drawn **between the set-up text and the first lettered part**, like the real
+exam's stimulus, not after the whole prompt. Before, a student read parts (a) to (d) before the figure they refer to. `splitPromptAtParts` (`lib/content/split-prompt.ts`, pure) splits the
+prompt's *markdown* at the first paragraph that starts with `**(a)**` or `(a) ` (a mention of "part (a)" inside a sentence does not count); `renderFrqPrompt` (`lib/study/render-frq-prompt.ts`)
+renders the two halves on the server and returns `{ introHtml, partsHtml }`; `FrqPrompt` (`components/study/frq-prompt.tsx`) draws intro, figure, parts. It is used by all four places a
+prompt appears: the practice page, `ExamRunner` (its `ExamFrqItem.promptHtml` became `prompt`), the exam results page and the admin review list.
+- **Falls back to the old layout** (everything in `introHtml`, figure after it) when the prompt has no figure, has no lettered part, starts with its first part (no set-up to put a figure after),
+  or the split would cut through a code fence or a `$`/`$$` formula. A prompt with no figure is never split, so its HTML is unchanged.
+- **Authoring convention this relies on**: set-up text, a blank line, then `**(a)** ...`. All 37 shipped prompts that have a figure follow it, and `tests/split-prompt.test.ts` reads every
+  `content/*/frqs/*.json` and fails if a prompt with a diagram can't be placed, so a new one that breaks the convention shows up in the suite instead of silently losing the placement.
+- **`FrqSelfGrade` is untouched**: the prompt is not part of it (see its nested/standalone gotcha above), so this didn't change who owns the notebook-paper background.
+- Tests: `split-prompt` (rules and the content check), `render-frq-prompt` (which half is rendered and with which course), `frq-prompt` (DOM order), and an `ExamRunner` case. Mutation-checked.
+
 **FRQ self-grading** (`src/components/study/frq-self-grade.tsx`) finally puts
 Milestone 1's `SelfGradingStrategy` (`src/lib/scoring/grading.ts`) to use, and
 is shared between two contexts: standalone practice (write + grade in one
@@ -1968,8 +1980,8 @@ Started 2026-10-11 (owner: "Do Weighted Exam draw and then start on ap bio"; ful
   - **Bug found by that visual check and fixed: a line graph had no legend.** `XYGraph` accepted a `label` on each series but never drew it, so "which curve is with the enzyme" and "which line is inhibitor Y" could not be
     answered from the picture. It now draws a legend (shared `lib/diagrams/legend.ts`, wrapping to a second row if labels are long, also used by the bar graph) whenever there are several series and at least one is named; a
     single line gets none. No existing course used labelled multi-series graphs, so nothing else changed. Tests in `diagrams-layout.test.ts` and `diagram-components.test.tsx`, mutation-checked (8 mutations).
-  - **Open design question (owner's call)**: the app shows a free-response prompt's figure *after* the whole prompt text, so a student reads parts (a) to (d) before the table or graph they refer to (the real exam shows the stimulus
-    first). A small change would let a prompt carry a marker that splits it around the figure (four render sites: practice page, exam, results, admin review).
+  - **Figure placement (decided and built 2026-10-26)**: a free-response prompt's figure used to follow the whole prompt text, so a student read parts (a) to (d) before the table or graph they refer to. It now sits between the
+    set-up text and the first lettered part (the real exam shows the stimulus first). See "Free-response figure placement" under Exam simulation.
   - **Test status in the working tree**: `tests/exam-weighting.test.ts` fails for `ap-biology` ("unit-1-chemistry-of-life: 0 vs 5.7") until all eight units have questions, as expected. Everything else passes.
 - **Units 1 and 2 written (2026-10-11), in the working tree only**, the same way as Unit 3 (`u1_*.py`, `u2_*.py`, `u1_refreshers.py`, `u2_refreshers.py`, assembled by `u1.py` and `u2.py`):
   - **Unit 1, Chemistry of Life**: 54 multiple choice (1.1 water 9, 1.2 elements 6, 1.3 macromolecules 8, 1.4 carbohydrates 7, 1.5 lipids 8, 1.6 nucleic acids 8, 1.7 proteins 8), 6 free response (RESULTS on radioactive
@@ -2016,7 +2028,7 @@ Started 2026-10-11 (owner: "Do Weighted Exam draw and then start on ap bio"; ful
   **(2) The vertebrate cladogram was cramped**: a five-level tree gave each level 50px, so the trait labels "Four limbs" and "Amniotic egg" ran into the connectors and the circles. A tree is now drawn at least `CLADOGRAM_LEVEL_WIDTH` (80px) per level, the room right of the tips follows the longest tip name instead of a fixed 170px, and the figure keeps a 416px minimum width inside a focusable box that scrolls sideways on a phone
   (labels about 8.7px at 375px instead of 6.4px). Tests in `diagrams-layout.test.ts` and `diagram-components.test.tsx`, mutation-checked.
 - **Approved 2026-10-26** (owner: "I reviewed all of it, approve everything"): a dry run first compared every stored question, choice, prompt, rubric, sample response, diagram and refresher with the content files (0 differences, 542 + 48 + 60 waiting), then one `updateMany` per table set `reviewed` on exactly those ids (542 questions, 48 prompts) and `refresherReviewed` on the 60 topics. The other six courses and every table and per-user count were identical before and after, and the live About page reads "All 3,703 have been checked by a person." The approval scripts (`approve-bio.ts`, `snap.ts`) lived in the session scratch folder, which is cleared between sessions; they were adapted from the Calculus BC ones described above and are easy to rewrite (compare rows with files, abort on any difference, scope every update to the course's own ids). Re-seeding keeps these approvals while the files are unchanged.
-- **Open**: the free-response figure placement (owner's call, unchanged).
+- **Open**: nothing.
 
 ## Forgot password and email
 

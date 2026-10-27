@@ -5,6 +5,8 @@ import { submitExamAttempt } from "@/lib/study/actions";
 import { Button } from "@/components/ui/button";
 import { Choice, ChoiceList } from "@/components/ui/choice";
 import { Html } from "@/components/ui/html";
+import { FrqPrompt } from "@/components/study/frq-prompt";
+import type { RenderedFrqPrompt } from "@/lib/study/render-frq-prompt";
 import { Label } from "@/components/ui/label";
 import { Sheet } from "@/components/ui/sheet";
 import { Textarea } from "@/components/ui/textarea";
@@ -25,7 +27,7 @@ export interface ExamMcqItem {
 export interface ExamFrqItem {
   id: string;
   type: string; // FRQ, SAQ, DBQ or LEQ
-  promptHtml: string;
+  prompt: RenderedFrqPrompt;
   diagram: Diagram | null;
   pointValue: number;
 }
@@ -273,8 +275,7 @@ export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqI
               <p className="eyebrow mb-2">
                 {frqItem.pointValue} point{frqItem.pointValue === 1 ? "" : "s"}
               </p>
-              <Html html={frqItem.promptHtml} />
-              {frqItem.diagram && <DiagramRenderer diagram={frqItem.diagram} />}
+              <FrqPrompt prompt={frqItem.prompt} diagram={frqItem.diagram} />
               <div className="mt-5 space-y-1.5">
                 <Label htmlFor={`frq-${frqItem.id}`}>Your response</Label>
                 <Textarea

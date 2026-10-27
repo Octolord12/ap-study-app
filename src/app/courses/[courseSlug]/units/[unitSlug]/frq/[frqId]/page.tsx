@@ -5,9 +5,9 @@ import { getDb } from "@/lib/db";
 import { renderContentToHtml } from "@/lib/content/render";
 import { FrqSelfGrade } from "@/components/study/frq-self-grade";
 import { renderRubric } from "@/lib/study/render-rubric";
+import { renderFrqPrompt } from "@/lib/study/render-frq-prompt";
 import { frqTitle } from "@/lib/content/exam-format";
-import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
-import { Html } from "@/components/ui/html";
+import { FrqPrompt } from "@/components/study/frq-prompt";
 import { ReportProblem } from "@/components/study/report-problem";
 import { Page } from "@/components/ui/page";
 import { Sheet } from "@/components/ui/sheet";
@@ -28,12 +28,12 @@ export default async function FrqPracticePage({
   const frq = await getDb().fRQPrompt.findUnique({ where: { id: frqId } });
   if (!frq) notFound();
 
-  const [promptHtml, sampleResponseHtml] = await Promise.all([
-    renderContentToHtml(frq.prompt, courseSlug),
+  const diagram = (frq.diagram as Diagram | null) ?? null;
+  const [prompt, sampleResponseHtml] = await Promise.all([
+    renderFrqPrompt(frq.prompt, courseSlug, diagram !== null),
     renderContentToHtml(frq.sampleResponse, courseSlug),
   ]);
   const rubric = await renderRubric(frq.rubric, courseSlug);
-  const diagram = (frq.diagram as Diagram | null) ?? null;
   const paperLined = isPaperLinedCourse(courseSlug);
 
   return (
@@ -57,8 +57,7 @@ export default async function FrqPracticePage({
 
         <div className="min-w-0 space-y-6">
           <Sheet lined={paperLined}>
-            <Html html={promptHtml} />
-            {diagram && <DiagramRenderer diagram={diagram} />}
+            <FrqPrompt prompt={prompt} diagram={diagram} />
           </Sheet>
 
           <FrqSelfGrade
