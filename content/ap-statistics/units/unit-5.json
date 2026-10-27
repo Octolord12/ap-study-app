@@ -1,0 +1,34 @@
+{
+  "slug": "unit-5-regression-analysis",
+  "order": 5,
+  "name": "Regression Analysis",
+  "weightingMin": 10,
+  "weightingMax": 20,
+  "topics": [
+    {
+      "slug": "graphical-representations-between-two-quantitative-variables",
+      "order": 1,
+      "name": "Graphical Representations Between Two Quantitative Variables"
+    },
+    {
+      "slug": "correlation",
+      "order": 2,
+      "name": "Correlation"
+    },
+    {
+      "slug": "linear-regression-models",
+      "order": 3,
+      "name": "Linear Regression Models"
+    },
+    {
+      "slug": "residuals",
+      "order": 4,
+      "name": "Residuals"
+    },
+    {
+      "slug": "least-squares-regression",
+      "order": 5,
+      "name": "Least-Squares Regression"
+    }
+  ]
+}

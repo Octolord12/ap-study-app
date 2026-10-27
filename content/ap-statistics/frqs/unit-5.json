@@ -1,0 +1,976 @@
+[
+  {
+    "id": "ap-stat-u5-frq-1",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "type": "ANALYZE_DATA",
+    "prompt": "A researcher studied whether the amount of sleep that college students get is related to their reaction times. The researcher selected a random sample of 18 students and recorded, for each student, the number of hours of sleep the student got the night before and the student's time to react to a visual signal, in milliseconds (ms). The scatterplot shows the data.\n\nTechnology was used to analyze the data. The least-squares regression line for predicting reaction time from hours of sleep has a y-intercept of 388.27 and a slope of -18.37. The correlation coefficient is r = -0.84, and the coefficient of determination is $r^2$ = 0.71.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe the association between the number of hours of sleep and reaction time that is shown in the scatterplot. Describe the form, the direction, and the strength of the association, in context.\n\n**B.** (i) Interpret the correlation coefficient in context.\n\n(ii) A classmate looks at the results and says, \"Getting more sleep makes a student react faster.\" Explain why the study does not justify the classmate's conclusion.\n\n**C.** (i) Write the equation of the least-squares regression line. Define any variables that you use in the equation.\n\n(ii) Interpret the slope of the line in context.\n\n**D.** One of the 18 students slept 7.5 hours and had a reaction time of 228 ms.\n\n(i) Calculate the predicted reaction time for a student who slept 7.5 hours.\n\n(ii) Calculate the residual for this student, and interpret the residual in context.\n\n**E.** Interpret the coefficient of determination, $r^2$ = 0.71, in context.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Describes the form and direction in context: the association is linear and negative (students who sleep more hours tend to have shorter reaction times)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Describes the strength in context: the association is strong (the points are close to the line), consistent with the correlation coefficient."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B(i): Interprets r in context: r = -0.84 indicates a strong, negative, linear association between hours of sleep and reaction time."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B(ii): Explains that an association does not show cause and effect. Students were not assigned amounts of sleep (this is an observational study), so other factors could explain the association. (A random sample allows generalizing to the population, not concluding causation.)"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C(i): Writes the equation with variables defined: predicted reaction time = 388.27 - 18.37(hours of sleep), or $\\hat{y}$ = 388.27 - 18.37x with x = hours of sleep and $\\hat{y}$ = predicted reaction time in ms."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C(ii): Interprets the slope in context: for each additional hour of sleep, the predicted reaction time decreases by about 18.37 ms."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D(i): Calculates the predicted reaction time: 388.27 - 18.37(7.5) = 250.5 ms."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D(ii): Calculates the residual = observed - predicted = 228 - 250.5 = -22.5 ms."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "D(ii): Interprets the residual in context: the observed reaction time of this student was about 22.5 ms lower than the model predicted (the model overpredicted)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Interprets $r^2$ in context: about 71% of the variation in reaction times is explained by the linear relationship with hours of sleep."
+      }
+    ],
+    "sampleResponse": "A. The scatterplot shows a linear, negative association: students who slept more hours tended to have shorter reaction times. The points are close to a line, so the association is strong.\n\nB. (i) r = -0.84 means that there is a strong, negative, linear association between hours of sleep and reaction time. (ii) Students were not assigned how much to sleep, so this is an observational study. It shows an association but not cause and effect, because other factors (for example, general health or how alert a student is) could be related to both sleep and reaction time.\n\nC. (i) $\\hat{y}$ = 388.27 - 18.37x, where x is the number of hours of sleep and $\\hat{y}$ is the predicted reaction time in ms. (ii) For each additional hour of sleep, the predicted reaction time decreases by about 18.37 ms.\n\nD. (i) $\\hat{y}$ = 388.27 - 18.37(7.5) = 250.5 ms. (ii) The residual is 228 - 250.5 = -22.5 ms. This student's reaction time was about 22.5 ms lower than the model predicted.\n\nE. About 71% of the variation in reaction times is explained by the linear relationship with hours of sleep.",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Hours of sleep",
+      "yLabel": "Reaction time (ms)",
+      "xMin": 4.0,
+      "xMax": 10.0,
+      "xStep": 1.0,
+      "yMin": 180.0,
+      "yMax": 320.0,
+      "yStep": 20.0,
+      "points": [
+        {
+          "x": 5.1,
+          "y": 305
+        },
+        {
+          "x": 5.3,
+          "y": 290
+        },
+        {
+          "x": 5.4,
+          "y": 275
+        },
+        {
+          "x": 5.6,
+          "y": 270
+        },
+        {
+          "x": 6.0,
+          "y": 286
+        },
+        {
+          "x": 6.2,
+          "y": 273
+        },
+        {
+          "x": 6.5,
+          "y": 270
+        },
+        {
+          "x": 6.6,
+          "y": 297
+        },
+        {
+          "x": 6.9,
+          "y": 270
+        },
+        {
+          "x": 7.1,
+          "y": 267
+        },
+        {
+          "x": 7.4,
+          "y": 242
+        },
+        {
+          "x": 7.5,
+          "y": 228
+        },
+        {
+          "x": 7.8,
+          "y": 239
+        },
+        {
+          "x": 8.0,
+          "y": 224
+        },
+        {
+          "x": 8.4,
+          "y": 236
+        },
+        {
+          "x": 8.7,
+          "y": 257
+        },
+        {
+          "x": 8.9,
+          "y": 234
+        },
+        {
+          "x": 9.0,
+          "y": 204
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of reaction time against hours of sleep for 18 students: a strong negative linear pattern."
+    }
+  },
+  {
+    "id": "ap-stat-u5-frq-2",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "type": "ANALYZE_DATA",
+    "prompt": "A resale website recorded the age, in years, and the resale value, in hundreds of dollars, of 16 laptop computers of the same model that were sold on the site. A linear regression model was used to predict resale value from age. The ages in the data are between 1 year and 7 years. The residual plot for the model is shown.\n\nThe least-squares regression line is $\\hat{y}$ = 6.62 - 0.94x, where x is the age of the laptop in years and $\\hat{y}$ is the predicted resale value in hundreds of dollars. The coefficient of determination is $r^2$ = 0.92.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Based on the residual plot, is a linear model appropriate for these data? Justify your answer.\n\n**B.** (i) Use the regression line to calculate the predicted resale value of a laptop that is 4 years old.\n\n(ii) A student uses the regression line to predict the resale value of a laptop that is 10 years old. Identify the type of prediction this is, and explain why the prediction is less reliable than the prediction in part (i).\n\n**C.** A laptop that is 6 years old sold for 1.21 hundred dollars. Calculate the residual for this laptop, and interpret the residual in context.\n\n**D.** A student says, \"Because $r^2$ = 0.92, 92% of the laptops lie on the regression line, so a linear model is appropriate.\" Identify two errors in the student's statement.\n\n**E.** Interpret the slope of the regression line in context.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: States that a linear model is not appropriate (not the most appropriate model) for these data."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Justifies using the residual plot: the residuals show a curved pattern (positive for the youngest and the oldest laptops and negative in the middle) instead of random scatter around zero."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B(i): Calculates the predicted resale value for a 4-year-old laptop: 6.62 - 0.94(4) = 2.86 hundred dollars."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B(ii): Identifies the prediction for a 10-year-old laptop as an extrapolation (10 years is outside the ages from 1 to 7 years in the data)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "B(ii): Explains that the prediction is less reliable because the pattern may not continue beyond the ages in the data (the farther from the data, the less reliable), and the linear model does not fit the curved pattern. (For example, the line gives 6.62 - 0.94(10) = -2.78 hundred dollars, a negative resale value, which is impossible.)"
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Calculates the residual = observed - predicted = 1.21 - 0.98 = 0.23 hundred dollars."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "C: Interprets the residual in context: this laptop sold for about 0.23 hundred dollars more than the model predicted for a 6-year-old laptop."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Identifies the first error: $r^2$ is the proportion of the variation in resale value that is explained by the linear relationship with age (about 92%), not the percent of laptops that lie on the line."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "D: Identifies the second error: a large $r^2$ does not mean that a linear model is appropriate. The residual plot shows curvature, so the linear model is not appropriate."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Interprets the slope in context: for each additional year of age, the predicted resale value decreases by about 0.94 hundred dollars."
+      }
+    ],
+    "sampleResponse": "A. No. A linear model is not appropriate. The residual plot has a curved pattern: the residuals are positive for the newest and the oldest laptops and negative for the laptops in the middle. If a linear model were appropriate, the residuals would be scattered at random around zero.\n\nB. (i) $\\hat{y}$ = 6.62 - 0.94(4) = 2.86, so the predicted resale value is about 2.86 hundred dollars. (ii) A 10-year-old laptop is outside the ages from 1 to 7 years in the data, so the prediction is an extrapolation. It is less reliable because we do not know that the pattern continues beyond 7 years, and the relationship is curved, not linear. In fact, the line gives 6.62 - 0.94(10) = -2.78 hundred dollars, a negative resale value, which is impossible.\n\nC. The predicted value for a 6-year-old laptop is 6.62 - 0.94(6) = 0.98. The residual is 1.21 - 0.98 = 0.23 hundred dollars. This laptop sold for about 0.23 hundred dollars more than the model predicted.\n\nD. First, $r^2$ = 0.92 means that about 92% of the variation in resale value is explained by the linear relationship with age. It does not mean that 92% of the laptops lie on the line. Second, a large $r^2$ does not show that a linear model is appropriate. The residual plot has a curved pattern, so the linear model is not appropriate.\n\nE. For each additional year of age, the predicted resale value decreases by about 0.94 hundred dollars.",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Age of the laptop (years)",
+      "yLabel": "Residual (hundreds of dollars)",
+      "xMin": 0.0,
+      "xMax": 8.0,
+      "xStep": 1.0,
+      "yMin": -0.75,
+      "yMax": 1.25,
+      "yStep": 0.25,
+      "points": [
+        {
+          "x": 1.0,
+          "y": 1.058
+        },
+        {
+          "x": 1.5,
+          "y": 0.38
+        },
+        {
+          "x": 2.0,
+          "y": 0.201
+        },
+        {
+          "x": 2.5,
+          "y": -0.377
+        },
+        {
+          "x": 3.0,
+          "y": -0.316
+        },
+        {
+          "x": 3.5,
+          "y": -0.475
+        },
+        {
+          "x": 4.0,
+          "y": -0.613
+        },
+        {
+          "x": 4.0,
+          "y": -0.383
+        },
+        {
+          "x": 4.5,
+          "y": -0.532
+        },
+        {
+          "x": 5.0,
+          "y": -0.19
+        },
+        {
+          "x": 5.0,
+          "y": -0.37
+        },
+        {
+          "x": 5.5,
+          "y": -0.169
+        },
+        {
+          "x": 6.0,
+          "y": 0.243
+        },
+        {
+          "x": 6.0,
+          "y": 0.443
+        },
+        {
+          "x": 6.5,
+          "y": 0.374
+        },
+        {
+          "x": 7.0,
+          "y": 0.726
+        }
+      ],
+      "zeroLine": true,
+      "altText": "Residual plot: residuals against age, with a U-shaped (curved) pattern."
+    }
+  },
+  {
+    "id": "ap-stat-u5-frq-3",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "type": "ANALYZE_DATA",
+    "prompt": "A tutoring center wants to know how the number of hours that a student is tutored is related to the student's improvement on a placement test. The center selected a random sample of 16 students and recorded, for each student, the number of hours of tutoring received (between 0 and 10 hours) and the improvement in the student's test score, in points. The scatterplot shows the data.\n\nTechnology output for the least-squares regression line for predicting improvement from hours of tutoring is shown.\n\nConstant: 8.61\nHours of tutoring: 3.77\nR-sq = 80.1%\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** (i) Identify the explanatory variable.\n\n(ii) Describe the form and the direction of the association shown in the scatterplot, in context.\n\n**B.** (i) Write the equation of the least-squares regression line. Define any variables that you use in the equation.\n\n(ii) Interpret the y-intercept of the line in context, or explain why it cannot be interpreted.\n\n**C.** One student in the sample received 5 hours of tutoring and improved by 35 points.\n\n(i) Calculate the predicted improvement for a student who received 5 hours of tutoring.\n\n(ii) Calculate the residual for this student.\n\n**D.** (i) Determine the value of the correlation coefficient, r. Show how you found it.\n\n(ii) Interpret the coefficient of determination in context.\n\n**E.** A tutor uses the regression line to predict the improvement of a student who received 40 hours of tutoring.\n\n(i) Identify the type of prediction this is.\n\n(ii) Explain why this prediction is not reasonable.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A(i): Identifies the explanatory variable as the number of hours of tutoring (it is the variable used to predict improvement)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A(ii): Describes the form and direction in context: the association is linear and positive (students with more hours of tutoring tend to have greater improvement)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B(i): Writes the equation with variables defined: predicted improvement = 8.61 + 3.77(hours of tutoring), or $\\hat{y}$ = 8.61 + 3.77x with x = hours of tutoring and $\\hat{y}$ = predicted improvement in points."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B(ii): Interprets the y-intercept in context: the predicted improvement for a student who received 0 hours of tutoring is 8.61 points. (0 hours is within the data, so the interpretation is reasonable.)"
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C(i): Calculates the predicted improvement: 8.61 + 3.77(5) = 27.46 points."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C(ii): Calculates the residual = observed - predicted = 35 - 27.46 = 7.54 points."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D(i): Determines r = 0.895 (the positive square root of 0.801, positive because the slope is positive)."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D(ii): Interprets the coefficient of determination in context: about 80.1% of the variation in improvement is explained by the linear relationship with hours of tutoring."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E(i): Identifies the prediction as an extrapolation (40 hours is outside the 0 to 10 hours in the data)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E(ii): Explains that the prediction is not reasonable because it extrapolates far beyond the data (the line may not continue to hold) and the predicted improvement of 159 points is not realistic for a test score."
+      }
+    ],
+    "sampleResponse": "A. (i) The explanatory variable is the number of hours of tutoring. (ii) The association is linear and positive: students who had more hours of tutoring tended to improve by more points.\n\nB. (i) $\\hat{y}$ = 8.61 + 3.77x, where x is the number of hours of tutoring and $\\hat{y}$ is the predicted improvement in points. (ii) The predicted improvement for a student who received 0 hours of tutoring is 8.61 points. This makes sense because 0 hours is in the data.\n\nC. (i) $\\hat{y}$ = 8.61 + 3.77(5) = 27.46 points. (ii) The residual is 35 - 27.46 = 7.54 points.\n\nD. (i) The slope is positive and R-sq = 80.1%, so r = +sqrt(0.801) = 0.895. (ii) About 80.1% of the variation in improvement is explained by the linear relationship with hours of tutoring.\n\nE. (i) This is an extrapolation, because 40 hours is far outside the 0 to 10 hours in the data. (ii) The prediction is not reasonable: we do not know that the linear pattern continues so far beyond the data, and the line predicts an improvement of 8.61 + 3.77(40) = 159 points, which is not realistic for a test score.",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Hours of tutoring",
+      "yLabel": "Improvement (points)",
+      "xMin": 0,
+      "xMax": 10,
+      "xStep": 2,
+      "yMin": 0.0,
+      "yMax": 60.0,
+      "yStep": 10.0,
+      "points": [
+        {
+          "x": 0,
+          "y": 6
+        },
+        {
+          "x": 0.5,
+          "y": 11
+        },
+        {
+          "x": 1,
+          "y": 14
+        },
+        {
+          "x": 1.5,
+          "y": 19
+        },
+        {
+          "x": 2,
+          "y": 17
+        },
+        {
+          "x": 3,
+          "y": 26
+        },
+        {
+          "x": 3,
+          "y": 6
+        },
+        {
+          "x": 4,
+          "y": 20
+        },
+        {
+          "x": 5,
+          "y": 35
+        },
+        {
+          "x": 5.5,
+          "y": 31
+        },
+        {
+          "x": 6,
+          "y": 39
+        },
+        {
+          "x": 7,
+          "y": 26
+        },
+        {
+          "x": 7.5,
+          "y": 36
+        },
+        {
+          "x": 8,
+          "y": 33
+        },
+        {
+          "x": 9,
+          "y": 44
+        },
+        {
+          "x": 10,
+          "y": 50
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of improvement against hours of tutoring for 16 students: a positive linear pattern."
+    }
+  },
+  {
+    "id": "ap-stat-u5-frq-4",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "type": "MULTI_FOCUS",
+    "prompt": "A city official wants to know whether blocks in the city that have more trees are cooler on hot days. The city has 800 blocks. The official used a random number generator to select a simple random sample of 25 of the blocks. On one hot afternoon, the official recorded for each selected block the number of trees on the block and the average temperature on the block, in degrees Fahrenheit. The scatterplot shows the data.\n\nThe least-squares regression line for predicting temperature from the number of trees is $\\hat{y}$ = 98.92 - 0.289x, where x is the number of trees on a block and $\\hat{y}$ is the predicted temperature in degrees Fahrenheit.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** (i) Identify the type of study (experiment or observational study) that the official conducted.\n\n(ii) Explain why the results of the study can be generalized to all 800 blocks in the city.\n\n**B.** Describe the form, the direction, and the strength of the association shown in the scatterplot, in context.\n\n**C.** (i) Interpret the slope of the regression line in context.\n\n(ii) Calculate the predicted temperature for a block that has 30 trees.\n\n**D.** The official concludes, \"Planting more trees on a block will lower the temperature on the block.\"\n\n(i) Explain why the study does not justify this conclusion.\n\n(ii) Identify a variable, other than the number of trees, that could explain why blocks with more trees were cooler.\n\n**E.** One block in the sample had 12 trees and an average temperature of 96.0 degrees Fahrenheit. Calculate the residual for this block, and interpret the residual in context.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A(i): Identifies the study as an observational study (the official did not assign the number of trees to blocks)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A(ii): Explains that the blocks were selected at random (a simple random sample), so the sample should be representative of all 800 blocks and the results can be generalized to them."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B: Describes the form and direction in context: the association is linear and negative (blocks with more trees tend to have lower temperatures)."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B: Describes the strength in context: the association is strong (the points are close to a line)."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C(i): Interprets the slope in context: for each additional tree on a block, the predicted temperature decreases by about 0.289 degrees Fahrenheit."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C(ii): Calculates the predicted temperature for 30 trees: 98.92 - 0.289(30) = 90.2 degrees Fahrenheit."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D(i): Explains that an observational study can show an association but not cause and effect, because the number of trees was not randomly assigned to blocks."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D(ii): Identifies a plausible variable that could explain the association, such as the amount of pavement or buildings on the block, or the amount of shade or open space, which could be related to both the number of trees and the temperature."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Calculates the residual = observed - predicted = 96.0 - 95.5 = 0.5 degrees Fahrenheit."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Interprets the residual in context: this block was 0.5 degrees Fahrenheit warmer than the model predicted for a block with 12 trees."
+      }
+    ],
+    "sampleResponse": "A. (i) The official conducted an observational study, because the number of trees on each block was not assigned by the official. (ii) The blocks were selected with a simple random sample from all 800 blocks, so the sample is likely to be representative of the blocks in the city, and the results can be generalized to all 800 blocks.\n\nB. The association is linear and negative: blocks with more trees tend to have lower average temperatures. The points are close to a line, so the association is strong.\n\nC. (i) For each additional tree on a block, the predicted average temperature decreases by about 0.289 degrees Fahrenheit. (ii) $\\hat{y}$ = 98.92 - 0.289(30) = 90.2 degrees Fahrenheit.\n\nD. (i) This is an observational study, so it shows an association between the number of trees and the temperature but cannot show that planting trees causes the temperature to go down. (ii) The amount of pavement and buildings on a block could be related to both the number of trees (fewer trees where there is more pavement) and the temperature (more pavement is hotter).\n\nE. The predicted temperature for 12 trees is 98.92 - 0.289(12) = 95.5. The residual is 96.0 - 95.5 = 0.5. This block was 0.5 degrees Fahrenheit warmer than the model predicted.",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Number of trees on the block",
+      "yLabel": "Average temperature (degrees F)",
+      "xMin": 0.0,
+      "xMax": 50.0,
+      "xStep": 10.0,
+      "yMin": 84.0,
+      "yMax": 100.0,
+      "yStep": 2.0,
+      "points": [
+        {
+          "x": 1,
+          "y": 98.9
+        },
+        {
+          "x": 4,
+          "y": 96.7
+        },
+        {
+          "x": 4,
+          "y": 98.3
+        },
+        {
+          "x": 7,
+          "y": 95.6
+        },
+        {
+          "x": 8,
+          "y": 97.3
+        },
+        {
+          "x": 9,
+          "y": 96.0
+        },
+        {
+          "x": 12,
+          "y": 96.0
+        },
+        {
+          "x": 13,
+          "y": 97.1
+        },
+        {
+          "x": 15,
+          "y": 94.8
+        },
+        {
+          "x": 16,
+          "y": 92.0
+        },
+        {
+          "x": 18,
+          "y": 91.0
+        },
+        {
+          "x": 19,
+          "y": 95.7
+        },
+        {
+          "x": 20,
+          "y": 92.8
+        },
+        {
+          "x": 23,
+          "y": 90.3
+        },
+        {
+          "x": 23,
+          "y": 94.6
+        },
+        {
+          "x": 25,
+          "y": 91.9
+        },
+        {
+          "x": 26,
+          "y": 92.5
+        },
+        {
+          "x": 28,
+          "y": 92.8
+        },
+        {
+          "x": 30,
+          "y": 88.9
+        },
+        {
+          "x": 33,
+          "y": 88.5
+        },
+        {
+          "x": 33,
+          "y": 91.4
+        },
+        {
+          "x": 35,
+          "y": 86.7
+        },
+        {
+          "x": 36,
+          "y": 89.9
+        },
+        {
+          "x": 39,
+          "y": 85.3
+        },
+        {
+          "x": 39,
+          "y": 88.6
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of average temperature against number of trees for 25 blocks: a strong negative linear pattern."
+    }
+  },
+  {
+    "id": "ap-stat-u5-frq-5",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "type": "MULTI_FOCUS",
+    "prompt": "A school has 600 students. A teacher wants to select a simple random sample of 30 of the students and measure each selected student's height and arm span, both in inches, to see how well height can be used to predict arm span. The scatterplot shows the data for the 30 students who were selected, with the least-squares regression line.\n\nThe heights of the students in the sample have a mean of 67.1 inches and a standard deviation of 4.3 inches. The regression line for predicting arm span from height is $\\hat{y}$ = 0.66 + 0.979x, where x is height in inches and $\\hat{y}$ is the predicted arm span in inches. The coefficient of determination is $r^2$ = 0.962.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** Describe a method that the teacher could use to select a simple random sample of 30 students from the 600 students. Include a description of how the random numbers are used.\n\n**B.** One student in the sample is 70.3 inches tall. (i) Calculate the z-score for this student's height.\n\n(ii) Interpret the z-score in context.\n\n**C.** (i) Interpret the slope of the regression line in context.\n\n(ii) Calculate the predicted arm span for the student who is 70.3 inches tall.\n\n(iii) The arm span of this student is 71.0 inches. Calculate the residual.\n\n**D.** Interpret the coefficient of determination, $r^2$ = 0.962, in context.\n\n**E.** The teacher says, \"If we had measured the heights and the arm spans in centimeters instead of inches, the value of $r^2$ would be different.\" Is the teacher correct? Explain.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A: Assigns each of the 600 students a different number from 1 to 600 (a label, for example from an alphabetical list)."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A: Uses a random number generator (or a random number table) to select 30 different numbers from 1 to 600, ignoring repeats; the students with those numbers are the sample."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B(i): Calculates the z-score = (70.3 - 67.1) / 4.3 = 0.74."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B(ii): Interprets the z-score in context: this student's height is about 0.74 standard deviations above the mean height of the students in the sample."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C(i): Interprets the slope in context: for each additional inch of height, the predicted arm span increases by about 0.979 inches."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C(ii): Calculates the predicted arm span: 0.66 + 0.979(70.3) = 69.48 inches."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "C(iii): Calculates the residual = observed - predicted = 71.0 - 69.48 = 1.52 inches."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Interprets $r^2$ in context: about 96.2% of the variation in arm span is explained by the linear relationship with height."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: States that the teacher is not correct ($r^2$ would not change)."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Explains that the correlation coefficient r (and so $r^2$) has no units and is not changed by a change of units."
+      }
+    ],
+    "sampleResponse": "A. Make a list of the 600 students and number them 1 to 600. Use a random number generator to pick 30 different integers from 1 to 600 (if a number repeats, ignore it and generate another). The students with those numbers are in the sample.\n\nB. (i) z = (70.3 - 67.1) / 4.3 = 0.74. (ii) This student's height is about 0.74 standard deviations above the mean height of the sample.\n\nC. (i) For each additional inch of height, the predicted arm span increases by about 0.979 inches. (ii) $\\hat{y}$ = 0.66 + 0.979(70.3) = 69.48 inches. (iii) The residual is 71.0 - 69.48 = 1.52 inches.\n\nD. About 96.2% of the variation in arm span is explained by the linear relationship with height.\n\nE. The teacher is not correct. The correlation coefficient r has no units, so changing from inches to centimeters does not change r, and so it does not change $r^2$.",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Height (inches)",
+      "yLabel": "Arm span (inches)",
+      "xMin": 57.5,
+      "xMax": 75.0,
+      "xStep": 2.5,
+      "yMin": 57.5,
+      "yMax": 75.0,
+      "yStep": 2.5,
+      "points": [
+        {
+          "x": 59.8,
+          "y": 58.8
+        },
+        {
+          "x": 60.3,
+          "y": 58.2
+        },
+        {
+          "x": 60.9,
+          "y": 61.3
+        },
+        {
+          "x": 61.2,
+          "y": 61.4
+        },
+        {
+          "x": 61.7,
+          "y": 61.0
+        },
+        {
+          "x": 62.4,
+          "y": 60.9
+        },
+        {
+          "x": 63.1,
+          "y": 63.5
+        },
+        {
+          "x": 63.6,
+          "y": 63.0
+        },
+        {
+          "x": 64.0,
+          "y": 64.3
+        },
+        {
+          "x": 64.2,
+          "y": 64.4
+        },
+        {
+          "x": 64.8,
+          "y": 64.0
+        },
+        {
+          "x": 65.2,
+          "y": 64.1
+        },
+        {
+          "x": 65.6,
+          "y": 65.1
+        },
+        {
+          "x": 66.0,
+          "y": 65.0
+        },
+        {
+          "x": 66.6,
+          "y": 64.8
+        },
+        {
+          "x": 67.9,
+          "y": 68.1
+        },
+        {
+          "x": 68.4,
+          "y": 66.3
+        },
+        {
+          "x": 68.9,
+          "y": 66.8
+        },
+        {
+          "x": 69.0,
+          "y": 68.7
+        },
+        {
+          "x": 69.5,
+          "y": 68.1
+        },
+        {
+          "x": 70.2,
+          "y": 69.6
+        },
+        {
+          "x": 70.3,
+          "y": 71.0
+        },
+        {
+          "x": 70.8,
+          "y": 70.0
+        },
+        {
+          "x": 71.3,
+          "y": 70.2
+        },
+        {
+          "x": 71.8,
+          "y": 70.2
+        },
+        {
+          "x": 71.8,
+          "y": 72.6
+        },
+        {
+          "x": 72.6,
+          "y": 71.7
+        },
+        {
+          "x": 73.1,
+          "y": 71.6
+        },
+        {
+          "x": 73.5,
+          "y": 73.3
+        },
+        {
+          "x": 73.8,
+          "y": 72.5
+        }
+      ],
+      "zeroLine": false,
+      "line": {
+        "intercept": 0.6595,
+        "slope": 0.9793
+      },
+      "altText": "Scatterplot of arm span against height for 30 students with the regression line: a strong positive linear pattern."
+    }
+  },
+  {
+    "id": "ap-stat-u5-frq-6",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "type": "MULTI_FOCUS",
+    "prompt": "A baseball analyst studied the exit velocity (the speed of the ball just after it is hit), in miles per hour (mph), and the distance traveled, in feet, of 22 batted balls. The exit velocities of the batted balls for the whole season are approximately normally distributed with a mean of 88.5 mph and a standard deviation of 5.4 mph. The data for the 22 batted balls are between 72 mph and 108 mph. A linear regression model was used to predict distance from exit velocity, and the residual plot for the model is shown.\n\nThe least-squares regression line is $\\hat{y}$ = -139.6 + 5.57x, where x is the exit velocity in mph and $\\hat{y}$ is the predicted distance in feet.\n\nUse the given information to respond to parts A, B, C, D, and E. Label any subparts (e.g., i and ii) that may be present.\n\n**A.** (i) Calculate the z-score for a batted ball with an exit velocity of 95 mph.\n\n(ii) Use the standard normal table to find the probability that a randomly selected batted ball has an exit velocity greater than 95 mph.\n\n**B.** (i) Interpret the slope of the regression line in context.\n\n(ii) Use the regression line to calculate the predicted distance for a batted ball with an exit velocity of 95 mph.\n\n**C.** A batted ball with an exit velocity of 95 mph traveled 350 feet. Calculate the residual for this batted ball, and interpret the residual in context.\n\n**D.** Based on the residual plot, is a linear model appropriate for the data? Justify your answer.\n\n**E.** The analyst uses the regression line to predict the distance of a ball with an exit velocity of 130 mph. Explain why this prediction should not be trusted.",
+    "pointValue": 10,
+    "rubric": [
+      {
+        "id": "r1",
+        "points": 1,
+        "description": "A(i): Calculates the z-score = (95 - 88.5) / 5.4 = 1.20."
+      },
+      {
+        "id": "r2",
+        "points": 1,
+        "description": "A(ii): Uses the table to find the probability: P(Z > 1.20) = 1 - 0.8849 = 0.1151 (about 0.115)."
+      },
+      {
+        "id": "r3",
+        "points": 1,
+        "description": "B(i): Interprets the slope in context: for each additional mph of exit velocity, the predicted distance increases by about 5.57 feet."
+      },
+      {
+        "id": "r4",
+        "points": 1,
+        "description": "B(ii): Calculates the predicted distance: -139.6 + 5.57(95) = 389.5 feet."
+      },
+      {
+        "id": "r5",
+        "points": 1,
+        "description": "C: Calculates the residual = observed - predicted = 350 - 389.5 = -39.5 feet."
+      },
+      {
+        "id": "r6",
+        "points": 1,
+        "description": "C: Interprets the residual in context: this ball traveled about 39.5 feet less far than the model predicted for an exit velocity of 95 mph."
+      },
+      {
+        "id": "r7",
+        "points": 1,
+        "description": "D: States that a linear model is appropriate."
+      },
+      {
+        "id": "r8",
+        "points": 1,
+        "description": "D: Justifies using the residual plot: the residuals are scattered randomly above and below zero, with no pattern or curvature."
+      },
+      {
+        "id": "r9",
+        "points": 1,
+        "description": "E: Identifies that 130 mph is outside the interval of exit velocities in the data (72 to 108 mph), so the prediction is an extrapolation."
+      },
+      {
+        "id": "r10",
+        "points": 1,
+        "description": "E: Explains that an extrapolation is not reliable because the linear pattern may not continue beyond the data (the line predicts 584 feet, which is not realistic)."
+      }
+    ],
+    "sampleResponse": "A. (i) z = (95 - 88.5) / 5.4 = 1.20. (ii) From the table, P(Z < 1.20) = 0.8849, so P(Z > 1.20) = 1 - 0.8849 = 0.1151.\n\nB. (i) For each additional mph of exit velocity, the predicted distance increases by about 5.57 feet. (ii) $\\hat{y}$ = -139.6 + 5.57(95) = 389.5 feet.\n\nC. The residual is 350 - 389.5 = -39.5 feet. The ball traveled about 39.5 feet less far than the model predicted.\n\nD. Yes, a linear model is appropriate. The residuals in the residual plot are scattered at random above and below zero, with no pattern or curve.\n\nE. An exit velocity of 130 mph is far outside the 72 to 108 mph in the data, so the prediction is an extrapolation. We do not know that the linear pattern continues that far, and the line predicts 584 feet, which is not realistic.",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Exit velocity (mph)",
+      "yLabel": "Residual (feet)",
+      "xMin": 70.0,
+      "xMax": 110.0,
+      "xStep": 5.0,
+      "yMin": -15.0,
+      "yMax": 15.0,
+      "yStep": 5.0,
+      "points": [
+        {
+          "x": 73,
+          "y": 12.208
+        },
+        {
+          "x": 74,
+          "y": -2.359
+        },
+        {
+          "x": 75,
+          "y": -9.926
+        },
+        {
+          "x": 77,
+          "y": 9.94
+        },
+        {
+          "x": 78,
+          "y": 9.373
+        },
+        {
+          "x": 81,
+          "y": -1.327
+        },
+        {
+          "x": 82,
+          "y": -11.894
+        },
+        {
+          "x": 85,
+          "y": -9.595
+        },
+        {
+          "x": 85,
+          "y": 2.405
+        },
+        {
+          "x": 88,
+          "y": -7.295
+        },
+        {
+          "x": 89,
+          "y": 10.138
+        },
+        {
+          "x": 91,
+          "y": 0.004
+        },
+        {
+          "x": 93,
+          "y": -11.129
+        },
+        {
+          "x": 94,
+          "y": 1.304
+        },
+        {
+          "x": 96,
+          "y": -7.83
+        },
+        {
+          "x": 98,
+          "y": 8.036
+        },
+        {
+          "x": 99,
+          "y": 6.47
+        },
+        {
+          "x": 101,
+          "y": -4.664
+        },
+        {
+          "x": 103,
+          "y": -1.798
+        },
+        {
+          "x": 104,
+          "y": -0.365
+        },
+        {
+          "x": 107,
+          "y": 1.935
+        },
+        {
+          "x": 108,
+          "y": 6.368
+        }
+      ],
+      "zeroLine": true,
+      "altText": "Residual plot: residuals against exit velocity, scattered at random above and below zero."
+    }
+  }
+]

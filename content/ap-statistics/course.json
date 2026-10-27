@@ -1,0 +1,31 @@
+{
+  "slug": "ap-statistics",
+  "name": "AP Statistics",
+  "description": "The redesigned 2026-27 course in five units: exploring one-variable data and collecting data, probability and probability distributions, inference for proportions, inference for means, and regression, aligned to the College Board Course and Exam Description.",
+  "colorTheme": "indigo",
+  "examFormat": {
+    "totalDurationMinutes": 180,
+    "sections": [
+      {
+        "type": "MCQ",
+        "questionCount": 42,
+        "durationMinutes": 90,
+        "scoreWeight": 0.5,
+        "calculatorAllowed": true
+      },
+      {
+        "type": "FRQ",
+        "questionCount": 4,
+        "durationMinutes": 90,
+        "scoreWeight": 0.5,
+        "calculatorAllowed": true,
+        "kinds": [
+          "COLLECT_DATA",
+          "ANALYZE_DATA",
+          "INFERENCE",
+          "MULTI_FOCUS"
+        ]
+      }
+    ]
+  }
+}

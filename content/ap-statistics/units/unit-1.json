@@ -1,0 +1,74 @@
+{
+  "slug": "unit-1-exploring-one-variable-data-and-collecting-data",
+  "order": 1,
+  "name": "Exploring One-Variable Data and Collecting Data",
+  "weightingMin": 20,
+  "weightingMax": 30,
+  "topics": [
+    {
+      "slug": "introducing-statistics-what-can-we-learn-from-data",
+      "order": 1,
+      "name": "Introducing Statistics: What Can We Learn from Data?"
+    },
+    {
+      "slug": "variables",
+      "order": 2,
+      "name": "Variables"
+    },
+    {
+      "slug": "tabular-representation-and-summary-statistics-for-one-categorical-variable",
+      "order": 3,
+      "name": "Tabular Representation and Summary Statistics for One Categorical Variable"
+    },
+    {
+      "slug": "graphical-representations-for-one-categorical-variable",
+      "order": 4,
+      "name": "Graphical Representations for One Categorical Variable"
+    },
+    {
+      "slug": "graphical-representations-for-one-quantitative-variable",
+      "order": 5,
+      "name": "Graphical Representations for One Quantitative Variable"
+    },
+    {
+      "slug": "descriptions-for-one-quantitative-variable-distributions",
+      "order": 6,
+      "name": "Descriptions for One Quantitative Variable Distributions"
+    },
+    {
+      "slug": "summary-statistics-for-one-quantitative-variable",
+      "order": 7,
+      "name": "Summary Statistics for One Quantitative Variable"
+    },
+    {
+      "slug": "graphical-representations-of-summary-statistics-for-one-quantitative-variable",
+      "order": 8,
+      "name": "Graphical Representations of Summary Statistics for One Quantitative Variable"
+    },
+    {
+      "slug": "comparisons-of-the-distributions-for-one-quantitative-variable",
+      "order": 9,
+      "name": "Comparisons of the Distributions for One Quantitative Variable"
+    },
+    {
+      "slug": "the-investigative-question-revisited-and-data-collection",
+      "order": 10,
+      "name": "The Investigative Question Revisited and Data Collection"
+    },
+    {
+      "slug": "random-sampling",
+      "order": 11,
+      "name": "Random Sampling"
+    },
+    {
+      "slug": "potential-problems-with-sampling",
+      "order": 12,
+      "name": "Potential Problems with Sampling"
+    },
+    {
+      "slug": "experimental-design",
+      "order": 13,
+      "name": "Experimental Design"
+    }
+  ]
+}

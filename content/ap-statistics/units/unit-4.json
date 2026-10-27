@@ -1,0 +1,59 @@
+{
+  "slug": "unit-4-inference-for-quantitative-data-means",
+  "order": 4,
+  "name": "Inference for Quantitative Data: Means",
+  "weightingMin": 10,
+  "weightingMax": 20,
+  "topics": [
+    {
+      "slug": "sampling-distributions-for-sample-means",
+      "order": 1,
+      "name": "Sampling Distributions for Sample Means"
+    },
+    {
+      "slug": "constructing-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+      "order": 2,
+      "name": "Constructing a Confidence Interval for a Population Mean or Population Mean Difference"
+    },
+    {
+      "slug": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-mean-or-population-mean-difference",
+      "order": 3,
+      "name": "Justifying a Claim Based on a Confidence Interval for a Population Mean or Population Mean Difference"
+    },
+    {
+      "slug": "setting-up-a-test-for-a-population-mean-or-population-mean-difference",
+      "order": 4,
+      "name": "Setting Up a Test for a Population Mean or Population Mean Difference"
+    },
+    {
+      "slug": "carrying-out-a-test-for-a-population-mean-or-population-mean-difference",
+      "order": 5,
+      "name": "Carrying Out a Test for a Population Mean or Population Mean Difference"
+    },
+    {
+      "slug": "sampling-distributions-for-the-difference-between-two-sample-means",
+      "order": 6,
+      "name": "Sampling Distributions for the Difference Between Two Sample Means"
+    },
+    {
+      "slug": "constructing-a-confidence-interval-for-the-difference-between-two-population-means",
+      "order": 7,
+      "name": "Constructing a Confidence Interval for the Difference Between Two Population Means"
+    },
+    {
+      "slug": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-means",
+      "order": 8,
+      "name": "Justifying a Claim Based on a Confidence Interval for the Difference Between Two Population Means"
+    },
+    {
+      "slug": "setting-up-a-test-for-the-difference-between-two-population-means",
+      "order": 9,
+      "name": "Setting Up a Test for the Difference Between Two Population Means"
+    },
+    {
+      "slug": "carrying-out-a-test-for-the-difference-between-two-population-means",
+      "order": 10,
+      "name": "Carrying Out a Test for the Difference Between Two Population Means"
+    }
+  ]
+}

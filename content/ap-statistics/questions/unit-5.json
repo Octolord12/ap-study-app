@@ -1,0 +1,3457 @@
+[
+  {
+    "id": "ap-stat-u5-mcq-1",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "easy",
+    "stem": "A researcher wants to use the number of hours that students study per week to predict their scores on a statistics exam. The researcher will construct a scatterplot of the data. Which of the following correctly describes how the variables should be placed on the scatterplot?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Hours studied per week should be on the horizontal axis, because it is the variable used to predict, and exam score on the vertical axis, because it is the variable being predicted",
+        "isCorrect": true,
+        "explanation": "The explanatory variable, the one used to explain or predict, goes on the horizontal axis. The response variable goes on the vertical axis."
+      },
+      {
+        "label": "B",
+        "text": "Exam score should be on the horizontal axis, because the variable that is measured last in a study is always the explanatory variable of the study",
+        "isCorrect": false,
+        "explanation": "The explanatory variable is the one used to explain or predict, not the one measured first or last."
+      },
+      {
+        "label": "C",
+        "text": "Either variable can be on either axis, because a scatterplot shows the association between the variables in the same way whichever axis each variable is on",
+        "isCorrect": false,
+        "explanation": "By convention the explanatory variable is on the horizontal axis. Reversing the axes changes which variable is being used to predict the other."
+      },
+      {
+        "label": "D",
+        "text": "Exam score should be on the horizontal axis, because it is the variable of main interest, and hours studied on the vertical axis, because it is easier to measure",
+        "isCorrect": false,
+        "explanation": "The variable of main interest here is the response, which belongs on the vertical axis."
+      }
+    ],
+    "explanation": "The explanatory variable (hours studied) is placed on the x-axis and the response variable (exam score) on the y-axis.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-2",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "medium",
+    "stem": "A café owner recorded the high temperature, in degrees Fahrenheit, and the number of iced coffees sold on each of 14 days. The scatterplot shows the data. Which of the following best describes the association shown in the scatterplot?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The association is linear and positive, and it is moderately strong, with no unusual features because every day lies close to the line",
+        "isCorrect": false,
+        "explanation": "One day, with sales well below the others at a similar temperature, does not fit the general pattern."
+      },
+      {
+        "label": "B",
+        "text": "The association is non-linear and positive, and it is moderately strong, with one day that does not fit the general pattern of the other days",
+        "isCorrect": false,
+        "explanation": "The points follow a roughly straight pattern, so the form is linear."
+      },
+      {
+        "label": "C",
+        "text": "The association is linear and negative, and it is moderately strong, with one day that does not fit the general pattern of the other days",
+        "isCorrect": false,
+        "explanation": "The points rise from left to right, so the direction is positive, not negative."
+      },
+      {
+        "label": "D",
+        "text": "The association is linear and positive, and it is moderately strong, with one day that does not fit the general pattern of the other days",
+        "isCorrect": true,
+        "explanation": "Form: the points follow a line. Direction: sales tend to increase as the temperature increases. Strength: the points are fairly close to the pattern. The point well below the others is an unusual feature."
+      }
+    ],
+    "explanation": "The points rise from left to right along a roughly straight pattern (positive and linear), with a moderate amount of scatter. The one low point is an unusual feature.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "High temperature (degrees F)",
+      "yLabel": "Iced coffees sold",
+      "xMin": 60.0,
+      "xMax": 95.0,
+      "xStep": 5.0,
+      "yMin": 40.0,
+      "yMax": 140.0,
+      "yStep": 20.0,
+      "points": [
+        {
+          "x": 62,
+          "y": 76
+        },
+        {
+          "x": 65,
+          "y": 93
+        },
+        {
+          "x": 68,
+          "y": 96
+        },
+        {
+          "x": 70,
+          "y": 86
+        },
+        {
+          "x": 72,
+          "y": 103
+        },
+        {
+          "x": 74,
+          "y": 62
+        },
+        {
+          "x": 76,
+          "y": 92
+        },
+        {
+          "x": 78,
+          "y": 115
+        },
+        {
+          "x": 80,
+          "y": 103
+        },
+        {
+          "x": 82,
+          "y": 107
+        },
+        {
+          "x": 85,
+          "y": 114
+        },
+        {
+          "x": 87,
+          "y": 121
+        },
+        {
+          "x": 90,
+          "y": 116
+        },
+        {
+          "x": 92,
+          "y": 131
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of iced coffees sold against high temperature for 14 days: a positive linear pattern with one low point."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-3",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "easy",
+    "stem": "A scatterplot of the age of a used car, in years, and its selling price, in thousands of dollars, shows a negative association. Which of the following statements describes what a negative association means in this context?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "As the age of a car increases, the selling price always decreases, with no exceptions",
+        "isCorrect": false,
+        "explanation": "A scatterplot shows a tendency. An association does not mean that every car follows the pattern."
+      },
+      {
+        "label": "B",
+        "text": "As the age of a car increases, the selling price tends to decrease",
+        "isCorrect": true,
+        "explanation": "A negative association means that as the values of the explanatory variable increase, the values of the response variable tend to decrease."
+      },
+      {
+        "label": "C",
+        "text": "As the selling price of a car increases, the age of the car tends to increase",
+        "isCorrect": false,
+        "explanation": "That reverses the variables and describes a positive association. A negative association means the older cars tend to cost less."
+      },
+      {
+        "label": "D",
+        "text": "As the age of a car increases, the selling price tends to increase",
+        "isCorrect": false,
+        "explanation": "That describes a positive association."
+      }
+    ],
+    "explanation": "In a negative association the response variable tends to decrease as the explanatory variable increases: older cars tend to sell for less.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-4",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "medium",
+    "stem": "After a patient takes a dose of a medicine, the concentration of the medicine in the blood is measured at several times. The scatterplot shows the concentration, in milligrams per liter, against the number of hours since the dose. Which of the following describes the form of the association?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The form is non-linear, because the points follow a curve that rises and then falls instead of following a straight line",
+        "isCorrect": true,
+        "explanation": "The concentration increases for the first hours and then decreases, which a straight line cannot describe."
+      },
+      {
+        "label": "B",
+        "text": "The form is linear and negative, because the concentration is lower at the end of the study than it was at the highest point",
+        "isCorrect": false,
+        "explanation": "The points do not follow a straight line that falls from left to right. They rise first."
+      },
+      {
+        "label": "C",
+        "text": "There is no form, because the points do not all lie exactly on a single curve or line and so no pattern can be described",
+        "isCorrect": false,
+        "explanation": "Points rarely lie exactly on a curve. The overall pattern is clearly curved."
+      },
+      {
+        "label": "D",
+        "text": "The form is linear and positive, because the concentration is higher after several hours than it was at the beginning of the study",
+        "isCorrect": false,
+        "explanation": "The concentration is not higher at every later time. The points rise and then fall, so the pattern is not linear."
+      }
+    ],
+    "explanation": "The points rise to a maximum and then fall, so the form is a curve (non-linear).",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Hours since the dose",
+      "yLabel": "Concentration (mg/L)",
+      "xMin": 0.0,
+      "xMax": 14.0,
+      "xStep": 2.0,
+      "yMin": 2.0,
+      "yMax": 12.0,
+      "yStep": 2.0,
+      "points": [
+        {
+          "x": 0,
+          "y": 3.7
+        },
+        {
+          "x": 1,
+          "y": 6.2
+        },
+        {
+          "x": 2,
+          "y": 8.0
+        },
+        {
+          "x": 3,
+          "y": 8.9
+        },
+        {
+          "x": 4,
+          "y": 9.8
+        },
+        {
+          "x": 5,
+          "y": 10.7
+        },
+        {
+          "x": 6,
+          "y": 11.2
+        },
+        {
+          "x": 7,
+          "y": 11.0
+        },
+        {
+          "x": 8,
+          "y": 10.7
+        },
+        {
+          "x": 9,
+          "y": 9.8
+        },
+        {
+          "x": 10,
+          "y": 8.6
+        },
+        {
+          "x": 11,
+          "y": 8.1
+        },
+        {
+          "x": 12,
+          "y": 5.8
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of blood concentration against hours since the dose: the points rise to a peak and then fall."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-5",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "medium",
+    "stem": "A veterinarian recorded the shoulder height, in inches, and the weight, in pounds, of dogs of many breeds that were brought to a clinic in one day. The scatterplot shows the data. Which of the following is an unusual feature of the scatterplot?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The points follow a curve that rises and then falls, which is an unusual feature that a student should describe as the form",
+        "isCorrect": false,
+        "explanation": "The points do not rise and then fall. They are in two clusters."
+      },
+      {
+        "label": "B",
+        "text": "There are no unusual features, because the points show a positive association that is strong and that rises from left to right",
+        "isCorrect": false,
+        "explanation": "The overall trend is positive, but the gap between two groups of points is an unusual feature to describe."
+      },
+      {
+        "label": "C",
+        "text": "One point does not fit the general pattern, because it is much farther from the line than all of the other points are",
+        "isCorrect": false,
+        "explanation": "No single point stands apart from the others. Instead the points form two groups."
+      },
+      {
+        "label": "D",
+        "text": "The points form two separate clusters, one of small dogs and one of large dogs, with no points between them",
+        "isCorrect": true,
+        "explanation": "Clusters of individual points are an unusual feature. Here the points are in two groups with a large gap between them."
+      }
+    ],
+    "explanation": "The data fall into two clusters (small dogs and large dogs). Clusters are an unusual feature of a scatterplot.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Shoulder height (inches)",
+      "yLabel": "Weight (pounds)",
+      "xMin": 0.0,
+      "xMax": 25.0,
+      "xStep": 5.0,
+      "yMin": 0.0,
+      "yMax": 60.0,
+      "yStep": 10.0,
+      "points": [
+        {
+          "x": 5.3,
+          "y": 13.1
+        },
+        {
+          "x": 6.3,
+          "y": 10.2
+        },
+        {
+          "x": 5.6,
+          "y": 15.1
+        },
+        {
+          "x": 6.6,
+          "y": 9.5
+        },
+        {
+          "x": 5.6,
+          "y": 12.9
+        },
+        {
+          "x": 5.0,
+          "y": 15.7
+        },
+        {
+          "x": 5.1,
+          "y": 11.6
+        },
+        {
+          "x": 6.8,
+          "y": 13.1
+        },
+        {
+          "x": 4.2,
+          "y": 10.5
+        },
+        {
+          "x": 21.0,
+          "y": 44.7
+        },
+        {
+          "x": 21.6,
+          "y": 54.3
+        },
+        {
+          "x": 20.6,
+          "y": 55.9
+        },
+        {
+          "x": 23.6,
+          "y": 51.8
+        },
+        {
+          "x": 22.1,
+          "y": 45.6
+        },
+        {
+          "x": 18.3,
+          "y": 57.7
+        },
+        {
+          "x": 19.7,
+          "y": 47.0
+        },
+        {
+          "x": 23.4,
+          "y": 54.5
+        },
+        {
+          "x": 18.7,
+          "y": 48.5
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of weight against shoulder height: two clusters of points, one at low values and one at high values."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-6",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "medium",
+    "stem": "A utility company recorded the average outdoor temperature, in degrees Fahrenheit, and the average household electricity use, in kilowatt-hours per month, for each of 12 months. The scatterplot shows the data. Which of the following claims is supported by the scatterplot?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is no association between temperature and electricity use, because the points do not follow a straight line",
+        "isCorrect": false,
+        "explanation": "A pattern does not have to be linear to be an association. The points follow a clear curve."
+      },
+      {
+        "label": "B",
+        "text": "Electricity use tends to be higher in months with very low or very high temperatures than in months with mild temperatures",
+        "isCorrect": true,
+        "explanation": "The points form a U shape: use is highest at the lowest and highest temperatures and lowest for mild temperatures."
+      },
+      {
+        "label": "C",
+        "text": "Electricity use tends to decrease as the average outdoor temperature increases, for all of the months in the data set",
+        "isCorrect": false,
+        "explanation": "Use increases again in the hottest months, so it does not decrease for all temperatures."
+      },
+      {
+        "label": "D",
+        "text": "Electricity use tends to increase as the average outdoor temperature increases, for all of the months in the data set",
+        "isCorrect": false,
+        "explanation": "Use is high in the coldest months too, so it does not increase for all of the temperatures."
+      }
+    ],
+    "explanation": "A scatterplot can justify claims about the variables. The U-shaped pattern supports the claim that use is higher at the temperature extremes.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Average temperature (degrees F)",
+      "yLabel": "Electricity use (kWh)",
+      "xMin": 30.0,
+      "xMax": 90.0,
+      "xStep": 10.0,
+      "yMin": 550.0,
+      "yMax": 950.0,
+      "yStep": 50.0,
+      "points": [
+        {
+          "x": 35,
+          "y": 914
+        },
+        {
+          "x": 38,
+          "y": 903
+        },
+        {
+          "x": 47,
+          "y": 672
+        },
+        {
+          "x": 58,
+          "y": 581
+        },
+        {
+          "x": 68,
+          "y": 645
+        },
+        {
+          "x": 77,
+          "y": 782
+        },
+        {
+          "x": 84,
+          "y": 903
+        },
+        {
+          "x": 82,
+          "y": 844
+        },
+        {
+          "x": 74,
+          "y": 705
+        },
+        {
+          "x": 61,
+          "y": 606
+        },
+        {
+          "x": 48,
+          "y": 675
+        },
+        {
+          "x": 39,
+          "y": 841
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of electricity use against temperature for 12 months: a U-shaped pattern."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-7",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "easy",
+    "stem": "Which of the following is NOT one of the characteristics that are used to describe the association shown in a scatterplot?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The direction of the association between the variables",
+        "isCorrect": false,
+        "explanation": "Direction (positive or negative) is one of the characteristics used to describe a scatterplot."
+      },
+      {
+        "label": "B",
+        "text": "The strength of the association between the variables",
+        "isCorrect": false,
+        "explanation": "Strength (strong, moderate, or weak) is one of the characteristics used to describe a scatterplot."
+      },
+      {
+        "label": "C",
+        "text": "Unusual features such as clusters or points that do not fit",
+        "isCorrect": false,
+        "explanation": "Unusual features are one of the characteristics used to describe a scatterplot."
+      },
+      {
+        "label": "D",
+        "text": "The median of the values of the response variable",
+        "isCorrect": true,
+        "explanation": "A description of a scatterplot includes form, direction, strength, and unusual features. The median of one variable is not one of them."
+      }
+    ],
+    "explanation": "A scatterplot is described by form, direction, strength, and unusual features.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-8",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "medium",
+    "stem": "A teacher recorded the number of absences and the final grade, in points, for 8 students in a class. The data are shown in the table. Which of the following best describes the association between the number of absences and the final grade?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The association is negative and non-linear: the final grades fall slowly for students with a few absences and then very quickly",
+        "isCorrect": false,
+        "explanation": "The grades decrease by roughly the same amount for each extra absence, so the pairs follow a line."
+      },
+      {
+        "label": "B",
+        "text": "The association is positive and linear: students with more absences tend to have higher final grades",
+        "isCorrect": false,
+        "explanation": "The final grades decrease as the absences increase, so the direction is negative."
+      },
+      {
+        "label": "C",
+        "text": "There is no association, because students with 0 absences and students with 10 absences both took the same final exam",
+        "isCorrect": false,
+        "explanation": "Taking the same exam does not mean there is no association. The pairs show a clear pattern."
+      },
+      {
+        "label": "D",
+        "text": "The association is negative and linear: students with more absences tend to have lower final grades",
+        "isCorrect": true,
+        "explanation": "As the number of absences increases, the final grades decrease, and the pairs fall close to a line."
+      }
+    ],
+    "explanation": "The grades go down as the number of absences goes up, in a roughly straight pattern: a negative linear association.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Absences",
+        "Final grade (points)"
+      ],
+      "rows": [
+        [
+          "0",
+          "96"
+        ],
+        [
+          "1",
+          "93"
+        ],
+        [
+          "2",
+          "91"
+        ],
+        [
+          "3",
+          "86"
+        ],
+        [
+          "4",
+          "84"
+        ],
+        [
+          "6",
+          "77"
+        ],
+        [
+          "8",
+          "70"
+        ],
+        [
+          "10",
+          "61"
+        ]
+      ],
+      "rowHeaders": false,
+      "caption": "Absences and final grade for 8 students"
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-9",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "hard",
+    "stem": "A student looks at a scatterplot in which the points rise steeply from left to right and are widely spread out around the general pattern. The student says that the association is strong because the pattern is steep. Which of the following is the best response to the student?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Strength depends only on the number of points that are plotted, so a scatterplot with many points always shows a strong association",
+        "isCorrect": false,
+        "explanation": "The number of points does not determine the strength of an association."
+      },
+      {
+        "label": "B",
+        "text": "Strength depends on how closely the points follow the general pattern, so a steep pattern with widely spread points is not a strong association",
+        "isCorrect": true,
+        "explanation": "The strength of an association is how closely the points follow the pattern. Steepness is not strength."
+      },
+      {
+        "label": "C",
+        "text": "The student is correct, because the steeper the general pattern is, the stronger the association between the two variables is",
+        "isCorrect": false,
+        "explanation": "Steepness describes the slope of the pattern, not how closely the points follow it."
+      },
+      {
+        "label": "D",
+        "text": "The student is correct, but only when the form of the association is linear and the direction of the association is positive",
+        "isCorrect": false,
+        "explanation": "Even for a positive linear form, strength depends on how closely the points follow the pattern."
+      }
+    ],
+    "explanation": "Strong means the points follow the pattern closely. A steep pattern with a lot of scatter is a weak or moderate association.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-10",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "medium",
+    "stem": "A scatterplot shows the age of a machine, in years, and the number of defective parts it made in one week. One point is labeled P. Which of the following statements about point P is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Point P shows that the form of the association is non-linear, because a single point is far from the rest of the points",
+        "isCorrect": false,
+        "explanation": "One point away from the pattern does not make the form of the association curved. The other points follow a line."
+      },
+      {
+        "label": "B",
+        "text": "Point P shows that the direction of the association is positive, because it is higher than the points that are next to it",
+        "isCorrect": false,
+        "explanation": "The direction is determined by the overall pattern of all the points, which is negative."
+      },
+      {
+        "label": "C",
+        "text": "Point P is an unusual feature, because it does not fit the general negative linear pattern that the other points show",
+        "isCorrect": true,
+        "explanation": "Points that do not fit the general pattern are an unusual feature. P is far above where the other points suggest it should be."
+      },
+      {
+        "label": "D",
+        "text": "Point P is not an unusual feature, because every point in a scatterplot is part of the pattern of the association",
+        "isCorrect": false,
+        "explanation": "A point can be far from the general pattern. That is an unusual feature to be described."
+      }
+    ],
+    "explanation": "Point P lies well away from the negative linear pattern formed by the other points, so it is an unusual feature.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Age of the machine (years)",
+      "yLabel": "Defective parts in a week",
+      "xMin": 0.0,
+      "xMax": 16.0,
+      "xStep": 2.0,
+      "yMin": 30.0,
+      "yMax": 100.0,
+      "yStep": 10.0,
+      "points": [
+        {
+          "x": 1,
+          "y": 88
+        },
+        {
+          "x": 2,
+          "y": 83
+        },
+        {
+          "x": 3,
+          "y": 78
+        },
+        {
+          "x": 4,
+          "y": 78
+        },
+        {
+          "x": 5,
+          "y": 69
+        },
+        {
+          "x": 6,
+          "y": 67
+        },
+        {
+          "x": 7,
+          "y": 66
+        },
+        {
+          "x": 8,
+          "y": 57
+        },
+        {
+          "x": 9,
+          "y": 55
+        },
+        {
+          "x": 10,
+          "y": 52
+        },
+        {
+          "x": 11,
+          "y": 96
+        },
+        {
+          "x": 12,
+          "y": 42
+        },
+        {
+          "x": 13,
+          "y": 40
+        },
+        {
+          "x": 14,
+          "y": 34
+        }
+      ],
+      "zeroLine": false,
+      "highlights": [
+        {
+          "index": 10,
+          "label": "P"
+        }
+      ],
+      "altText": "Scatterplot of defective parts against machine age: a negative linear pattern with one point labeled P far above it."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-11",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "easy",
+    "stem": "A teacher wants to use the number of hours of sleep that students got last night to predict the number of questions that they answer correctly on a 25-question quiz. Student 3 slept 7 hours and answered 18 questions correctly. Which of the following is the ordered pair that represents Student 3 on a scatterplot?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "(18, 7), with the 18 on the horizontal axis, because the number of questions is the larger of the two numbers",
+        "isCorrect": false,
+        "explanation": "The axis a variable goes on does not depend on the size of its values. The explanatory variable is on the horizontal axis."
+      },
+      {
+        "label": "B",
+        "text": "(7, 25), with the 7 on the horizontal axis, because the total number of questions on the quiz is the second coordinate",
+        "isCorrect": false,
+        "explanation": "The second coordinate is the number of questions this student answered correctly, which is 18."
+      },
+      {
+        "label": "C",
+        "text": "(18, 7), with the 18 on the horizontal axis, because the response variable is always on the horizontal axis of a scatterplot",
+        "isCorrect": false,
+        "explanation": "The response variable is on the vertical axis."
+      },
+      {
+        "label": "D",
+        "text": "(7, 18), with the 7 on the horizontal axis, because hours of sleep is the explanatory variable",
+        "isCorrect": true,
+        "explanation": "The explanatory variable (hours of sleep) is the first coordinate, plotted on the horizontal axis. The response (questions correct) is the second."
+      }
+    ],
+    "explanation": "Each point is (explanatory value, response value) = (7, 18).",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-12",
+    "unit": "unit-5-regression-analysis",
+    "topic": "graphical-representations-between-two-quantitative-variables",
+    "difficulty": "hard",
+    "stem": "A scientist measured the amount of a chemical that remained in a sample, in grams, each day for 12 days. The scatterplot shows the amount remaining against the number of days. Which of the following best describes the form and the direction of the association?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The association is non-linear and positive: the amount remaining increases quickly at first and then levels off over time",
+        "isCorrect": false,
+        "explanation": "The amount remaining decreases, so the direction is negative."
+      },
+      {
+        "label": "B",
+        "text": "The association is non-linear and negative: the amount remaining decreases quickly at first and then levels off",
+        "isCorrect": true,
+        "explanation": "The points fall from left to right (negative) along a curve that flattens out, so the form is non-linear."
+      },
+      {
+        "label": "C",
+        "text": "The association is linear and positive: the amount remaining increases by about the same amount during each of the days",
+        "isCorrect": false,
+        "explanation": "The points fall from left to right, and they do not follow a line."
+      },
+      {
+        "label": "D",
+        "text": "The association is linear and negative: the amount remaining decreases by about the same amount during each of the days",
+        "isCorrect": false,
+        "explanation": "The decreases get smaller over time, so a line does not describe the pattern."
+      }
+    ],
+    "explanation": "The points decrease from left to right (negative) along a curve that levels off (non-linear).",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/graphical-representations-between-two-quantitative-variables",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Days",
+      "yLabel": "Amount remaining (g)",
+      "xMin": 0.0,
+      "xMax": 14.0,
+      "xStep": 2.0,
+      "yMin": 0.0,
+      "yMax": 30.0,
+      "yStep": 5.0,
+      "points": [
+        {
+          "x": 1,
+          "y": 28.0
+        },
+        {
+          "x": 2,
+          "y": 20.8
+        },
+        {
+          "x": 3,
+          "y": 14.0
+        },
+        {
+          "x": 4,
+          "y": 10.3
+        },
+        {
+          "x": 5,
+          "y": 7.5
+        },
+        {
+          "x": 6,
+          "y": 4.9
+        },
+        {
+          "x": 7,
+          "y": 3.6
+        },
+        {
+          "x": 8,
+          "y": 4.4
+        },
+        {
+          "x": 9,
+          "y": 3.7
+        },
+        {
+          "x": 10,
+          "y": 3.8
+        },
+        {
+          "x": 11,
+          "y": 2.2
+        },
+        {
+          "x": 12,
+          "y": 1.4
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of the amount remaining against days: a curve that falls quickly and then levels off."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-13",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "easy",
+    "stem": "A student calculated the correlation coefficient for four different data sets. Which of the following values must contain an error?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "r = 0",
+        "isCorrect": false,
+        "explanation": "r = 0 is possible. It means that there is no linear association."
+      },
+      {
+        "label": "B",
+        "text": "r = -1",
+        "isCorrect": false,
+        "explanation": "r = -1 is possible. It means a perfect negative linear association."
+      },
+      {
+        "label": "C",
+        "text": "r = 0.62",
+        "isCorrect": false,
+        "explanation": "r = 0.62 is possible. It means a moderate positive linear association."
+      },
+      {
+        "label": "D",
+        "text": "r = 1.3",
+        "isCorrect": true,
+        "explanation": "A correlation coefficient is always between -1 and 1, inclusive, so 1.3 is not possible."
+      }
+    ],
+    "explanation": "r must be between -1 and 1, inclusive.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-14",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "easy",
+    "stem": "A researcher studied the relationship between the number of hours that adults spent watching television per day and their scores on a fitness test. The correlation coefficient was r = -0.82. Which of the following is the best interpretation of the correlation coefficient?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is a strong, negative linear association between the hours of television and the fitness score",
+        "isCorrect": true,
+        "explanation": "The value is negative, so the association is negative. It is close to -1, so the linear association is strong."
+      },
+      {
+        "label": "B",
+        "text": "There is a strong, positive linear association between the hours of television and the fitness score",
+        "isCorrect": false,
+        "explanation": "The correlation coefficient is negative, so the direction is negative."
+      },
+      {
+        "label": "C",
+        "text": "There is a weak, negative linear association between the hours of television and the fitness score",
+        "isCorrect": false,
+        "explanation": "A value close to -1 indicates a strong association, not a weak one. A weak association is close to 0."
+      },
+      {
+        "label": "D",
+        "text": "There is a strong, negative association, and 82 percent of the fitness scores are lower for adults who watch more television",
+        "isCorrect": false,
+        "explanation": "r is not a percent of the observations, and it does not say that 82 percent of the scores follow the pattern."
+      }
+    ],
+    "explanation": "r = -0.82 is negative (the fitness score tends to decrease as television time increases) and close to -1 (strong).",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-15",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "medium",
+    "stem": "Relationship 1 has a correlation coefficient of r = -0.91. Relationship 2 has a correlation coefficient of r = 0.78. Which of the following statements is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Relationship 1 has the stronger linear association, because -0.91 is closer to -1 than 0.78 is to 1",
+        "isCorrect": true,
+        "explanation": "Strength depends on how close r is to -1 or 1, not on its sign. |-0.91| is greater than |0.78|."
+      },
+      {
+        "label": "B",
+        "text": "Relationship 2 has the stronger linear association, because 0.78 is a greater number than -0.91",
+        "isCorrect": false,
+        "explanation": "A greater value of r does not mean a stronger association. Strength is how close r is to -1 or 1."
+      },
+      {
+        "label": "C",
+        "text": "Relationship 2 has the stronger linear association, because positive correlations are always stronger than negative correlations",
+        "isCorrect": false,
+        "explanation": "The sign gives the direction, not the strength."
+      },
+      {
+        "label": "D",
+        "text": "The two relationships have equally strong linear associations, because the signs of the two correlation coefficients are different",
+        "isCorrect": false,
+        "explanation": "Opposite signs mean opposite directions. The strengths are determined by how close each value is to -1 or 1, and they differ."
+      }
+    ],
+    "explanation": "The relationship with the correlation coefficient that is farther from 0 (closer to -1 or 1) is stronger.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-16",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "medium",
+    "stem": "A data set contains the heights, in inches, and the weights, in pounds, of 40 students. The correlation coefficient is r = 0.62. Each height is converted to centimeters and each weight is converted to kilograms. What is the correlation coefficient for the converted data?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The correlation coefficient is 0.62 multiplied by 2.54, because each height in centimeters is 2.54 times the height in inches",
+        "isCorrect": false,
+        "explanation": "r has no units, so it is not multiplied by a conversion factor."
+      },
+      {
+        "label": "B",
+        "text": "The correlation coefficient cannot be determined without calculating it again from the converted heights and the converted weights of all 40 students",
+        "isCorrect": false,
+        "explanation": "It does not need to be recalculated. r is not affected by a change of units."
+      },
+      {
+        "label": "C",
+        "text": "The correlation coefficient is less than 0.62, because weights in kilograms are smaller numbers than weights in pounds",
+        "isCorrect": false,
+        "explanation": "The size of the numbers does not change r."
+      },
+      {
+        "label": "D",
+        "text": "The correlation coefficient is still 0.62, because r has no units and does not change when the units of measurement are changed",
+        "isCorrect": true,
+        "explanation": "r is unit-free. Converting to different units does not change it."
+      }
+    ],
+    "explanation": "The correlation coefficient is unit-free, so it does not change when the units are changed.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-17",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "medium",
+    "stem": "The scatterplot shows the number of absences and the percent of homework completed for 20 students. Which of the following is the best estimate of the correlation coefficient?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "r = -0.6, because the association is negative and the points follow the pattern moderately closely",
+        "isCorrect": true,
+        "explanation": "The points decrease from left to right (negative) with a fair amount of scatter, so r is moderately far from 0."
+      },
+      {
+        "label": "B",
+        "text": "r = 0.6, because the association is positive and the points follow the pattern moderately closely from left to right",
+        "isCorrect": false,
+        "explanation": "The points decrease from left to right, so r must be negative."
+      },
+      {
+        "label": "C",
+        "text": "r = -0.1, because the association is negative and the points follow the pattern only very loosely",
+        "isCorrect": false,
+        "explanation": "The points follow a clear downward pattern, so the association is stronger than r = -0.1."
+      },
+      {
+        "label": "D",
+        "text": "r = -0.95, because the association is negative and the points follow the pattern very closely",
+        "isCorrect": false,
+        "explanation": "There is too much scatter around the pattern for r to be this close to -1."
+      }
+    ],
+    "explanation": "The pattern slopes downward with moderate scatter. The correlation coefficient of these points is about -0.60.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Number of absences",
+      "yLabel": "Homework completed (%)",
+      "xMin": 0,
+      "xMax": 22,
+      "xStep": 2,
+      "yMin": 0,
+      "yMax": 100,
+      "yStep": 20,
+      "points": [
+        {
+          "x": 1,
+          "y": 80
+        },
+        {
+          "x": 2,
+          "y": 70
+        },
+        {
+          "x": 3,
+          "y": 77
+        },
+        {
+          "x": 4,
+          "y": 54
+        },
+        {
+          "x": 5,
+          "y": 86
+        },
+        {
+          "x": 6,
+          "y": 85
+        },
+        {
+          "x": 7,
+          "y": 73
+        },
+        {
+          "x": 8,
+          "y": 44
+        },
+        {
+          "x": 9,
+          "y": 62
+        },
+        {
+          "x": 10,
+          "y": 49
+        },
+        {
+          "x": 11,
+          "y": 43
+        },
+        {
+          "x": 12,
+          "y": 81
+        },
+        {
+          "x": 13,
+          "y": 81
+        },
+        {
+          "x": 14,
+          "y": 26
+        },
+        {
+          "x": 15,
+          "y": 70
+        },
+        {
+          "x": 16,
+          "y": 53
+        },
+        {
+          "x": 17,
+          "y": 39
+        },
+        {
+          "x": 18,
+          "y": 32
+        },
+        {
+          "x": 19,
+          "y": 52
+        },
+        {
+          "x": 20,
+          "y": 38
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of percent of homework completed against absences for 20 students: a moderate negative pattern."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-18",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "hard",
+    "stem": "The scatterplot shows the number of students in a school who have a tablet computer for each of 12 years. The correlation coefficient is r = 0.95. A student says, \"Because r is close to 1, the relationship is linear, and a linear model is appropriate for these data.\" Which of the following is the best response to the student?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The student is correct, because the correlation coefficient describes the strength of any association, whether it is linear or curved",
+        "isCorrect": false,
+        "explanation": "r describes the strength of a linear association only."
+      },
+      {
+        "label": "B",
+        "text": "The student is incorrect, because the scatterplot shows a curved pattern and an r close to 1 does not mean that a linear model is appropriate",
+        "isCorrect": true,
+        "explanation": "The scatterplot shows a pattern that curves upward. An r close to 1 or -1 does not guarantee that the form is linear."
+      },
+      {
+        "label": "C",
+        "text": "The student is incorrect, because the correlation coefficient cannot be as large as this when the pattern of the points is curved",
+        "isCorrect": false,
+        "explanation": "A curved pattern can still have a correlation coefficient close to 1."
+      },
+      {
+        "label": "D",
+        "text": "The student is correct, because a correlation coefficient that is close to 1 shows that the form of the association is linear",
+        "isCorrect": false,
+        "explanation": "r measures the strength of a linear association. A high r does not show that the form is linear. The scatterplot must be examined."
+      }
+    ],
+    "explanation": "A value of r close to 1 or -1 does not mean that a linear model is appropriate. The curved pattern in the scatterplot shows it is not.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Year",
+      "yLabel": "Students with a tablet",
+      "xMin": 0.0,
+      "xMax": 14.0,
+      "xStep": 2.0,
+      "yMin": 0.0,
+      "yMax": 60.0,
+      "yStep": 10.0,
+      "points": [
+        {
+          "x": 1,
+          "y": 3.3
+        },
+        {
+          "x": 2,
+          "y": 3.6
+        },
+        {
+          "x": 3,
+          "y": 5.6
+        },
+        {
+          "x": 4,
+          "y": 9.1
+        },
+        {
+          "x": 5,
+          "y": 10.2
+        },
+        {
+          "x": 6,
+          "y": 12.8
+        },
+        {
+          "x": 7,
+          "y": 17.8
+        },
+        {
+          "x": 8,
+          "y": 22.6
+        },
+        {
+          "x": 9,
+          "y": 26.6
+        },
+        {
+          "x": 10,
+          "y": 34.7
+        },
+        {
+          "x": 11,
+          "y": 45.4
+        },
+        {
+          "x": 12,
+          "y": 57.0
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of the number of students with a tablet against year: a curve that rises faster and faster."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-19",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "medium",
+    "stem": "A study of 40 cities found a strong positive correlation, r = 0.85, between the number of ice cream shops in a city and the number of drowning incidents in the city each year. Which of the following is the most appropriate conclusion?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is a strong positive linear association, but this does not show that ice cream shops cause drownings, because warm weather could be related to both",
+        "isCorrect": true,
+        "explanation": "Correlation does not imply causation. A related factor could explain the association."
+      },
+      {
+        "label": "B",
+        "text": "About 85 percent of the drowning incidents in a city are caused by the ice cream shops that are located within the boundaries of that city",
+        "isCorrect": false,
+        "explanation": "r is not the percent of incidents, and it does not give a cause."
+      },
+      {
+        "label": "C",
+        "text": "Ice cream shops cause drownings, so a city could reduce the number of drowning incidents by closing some of its ice cream shops",
+        "isCorrect": false,
+        "explanation": "A strong correlation does not show that one variable causes changes in the other."
+      },
+      {
+        "label": "D",
+        "text": "There is no association between the variables, because there is no reasonable way that an ice cream shop could ever cause a drowning in a city",
+        "isCorrect": false,
+        "explanation": "The data do show a strong association. Whether one variable causes the other is a separate question."
+      }
+    ],
+    "explanation": "A correlation shows association, not causation.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-20",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "easy",
+    "stem": "A set of points has a correlation coefficient of r = 1. Which of the following must be true?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is no pattern in the points, because a value of 1 means that the data are as random as possible",
+        "isCorrect": false,
+        "explanation": "r = 1 is the strongest possible linear pattern."
+      },
+      {
+        "label": "B",
+        "text": "All of the points lie on a single straight line that slopes upward",
+        "isCorrect": true,
+        "explanation": "r = 1 is a perfect positive linear association. All points lie on a line with a positive slope."
+      },
+      {
+        "label": "C",
+        "text": "All of the points lie on a single straight line that has a slope of exactly 1",
+        "isCorrect": false,
+        "explanation": "A perfect association can have any positive slope. The slope is not r."
+      },
+      {
+        "label": "D",
+        "text": "A change in the first variable is the cause of the change in the second",
+        "isCorrect": false,
+        "explanation": "Correlation does not imply causation, even for r = 1."
+      }
+    ],
+    "explanation": "r = 1 means a perfect positive linear association: the points lie exactly on an upward-sloping line (of any slope).",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-21",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "hard",
+    "stem": "A scatterplot of the number of hours that students spend on homework and their grade point averages has a correlation coefficient of r = 0.60. Which of the following is an appropriate interpretation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Sixty percent of the variation in the grade point averages is explained by the number of hours spent on homework",
+        "isCorrect": false,
+        "explanation": "That describes r squared, not r. About 36 percent would be explained here."
+      },
+      {
+        "label": "B",
+        "text": "Exactly 60 percent of the students in the data set are on the line that best fits the points in the scatterplot",
+        "isCorrect": false,
+        "explanation": "r is not the percent of points on a line."
+      },
+      {
+        "label": "C",
+        "text": "For each additional hour spent on homework, the grade point average increases by 0.60 points",
+        "isCorrect": false,
+        "explanation": "That would be an interpretation of a slope. r is not a slope."
+      },
+      {
+        "label": "D",
+        "text": "The linear association is positive and moderate, so students who spend more hours on homework tend to have higher grade point averages",
+        "isCorrect": true,
+        "explanation": "r = 0.60 is positive and moderate: the response tends to increase as the explanatory variable increases."
+      }
+    ],
+    "explanation": "r = 0.60 describes the direction (positive) and strength (moderate) of the linear association. It is not a percent of the points, a slope, or the percent of variation explained.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-22",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "medium",
+    "stem": "The scatterplot shows the relationship between two variables. The correlation coefficient is r = 0.00. Which of the following conclusions is best supported by the scatterplot and the correlation coefficient?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "There is a strong linear association, because the points are closely grouped around a single curve that is clearly visible",
+        "isCorrect": false,
+        "explanation": "The pattern is curved, not linear, and r is near 0, so the linear association is essentially zero."
+      },
+      {
+        "label": "B",
+        "text": "There is a weak positive linear association, because the correlation coefficient is slightly greater than 0",
+        "isCorrect": false,
+        "explanation": "A value this close to 0 means essentially no linear association, and the pattern is strongly curved."
+      },
+      {
+        "label": "C",
+        "text": "There is no association of any kind between the variables, because the correlation coefficient is so close to 0",
+        "isCorrect": false,
+        "explanation": "r near 0 means no linear association. A strong curved association can still exist."
+      },
+      {
+        "label": "D",
+        "text": "There is almost no linear association, but there is a strong non-linear association, because the points follow a curve",
+        "isCorrect": true,
+        "explanation": "r measures only linear association. A value near 0 means almost no linear association. The points follow a clear curve."
+      }
+    ],
+    "explanation": "r near 0 means no linear association, but this scatterplot shows a strong curved pattern.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "x",
+      "yLabel": "y",
+      "xMin": -6.0,
+      "xMax": 6.0,
+      "xStep": 2.0,
+      "yMin": -5.0,
+      "yMax": 30.0,
+      "yStep": 5.0,
+      "points": [
+        {
+          "x": -5.0,
+          "y": -1.1
+        },
+        {
+          "x": -4.5,
+          "y": 4.8
+        },
+        {
+          "x": -4.0,
+          "y": 7.2
+        },
+        {
+          "x": -3.5,
+          "y": 12.7
+        },
+        {
+          "x": -3.0,
+          "y": 17.2
+        },
+        {
+          "x": -2.5,
+          "y": 17.2
+        },
+        {
+          "x": -2.0,
+          "y": 22.5
+        },
+        {
+          "x": -1.5,
+          "y": 21.0
+        },
+        {
+          "x": -1.0,
+          "y": 23.5
+        },
+        {
+          "x": -0.5,
+          "y": 22.7
+        },
+        {
+          "x": 0.0,
+          "y": 23.5
+        },
+        {
+          "x": 0.5,
+          "y": 22.7
+        },
+        {
+          "x": 1.0,
+          "y": 23.6
+        },
+        {
+          "x": 1.5,
+          "y": 24.8
+        },
+        {
+          "x": 2.0,
+          "y": 21.2
+        },
+        {
+          "x": 2.5,
+          "y": 20.1
+        },
+        {
+          "x": 3.0,
+          "y": 15.4
+        },
+        {
+          "x": 3.5,
+          "y": 11.2
+        },
+        {
+          "x": 4.0,
+          "y": 8.3
+        },
+        {
+          "x": 4.5,
+          "y": 4.3
+        },
+        {
+          "x": 5.0,
+          "y": -1.8
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of y against x: a symmetric arch shape that rises and then falls."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-23",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "easy",
+    "stem": "Four different pairs of variables have the correlation coefficients shown. Which pair has the weakest linear association?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The pair with r = 0.48",
+        "isCorrect": false,
+        "explanation": "0.48 is farther from 0 than -0.15 is, so it is a stronger association."
+      },
+      {
+        "label": "B",
+        "text": "The pair with r = 0.31",
+        "isCorrect": false,
+        "explanation": "0.31 is farther from 0 than -0.15 is, so it is a stronger association."
+      },
+      {
+        "label": "C",
+        "text": "The pair with r = -0.82",
+        "isCorrect": false,
+        "explanation": "-0.82 is close to -1, so this is a strong association."
+      },
+      {
+        "label": "D",
+        "text": "The pair with r = -0.15",
+        "isCorrect": true,
+        "explanation": "|-0.15| is the closest to 0 of the four values, so this is the weakest linear association."
+      }
+    ],
+    "explanation": "The weakest linear association is the one with a correlation coefficient closest to 0.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-24",
+    "unit": "unit-5-regression-analysis",
+    "topic": "correlation",
+    "difficulty": "easy",
+    "stem": "A researcher wants to calculate a correlation coefficient. For which of the following pairs of variables is it appropriate to calculate a correlation coefficient?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The postal code and the sale price of each house that was sold in a city last year",
+        "isCorrect": false,
+        "explanation": "A postal code is a label, so it is a categorical variable even though it is written with numbers."
+      },
+      {
+        "label": "B",
+        "text": "The eye color and the hair color of each student in a class",
+        "isCorrect": false,
+        "explanation": "Both variables are categorical. A correlation coefficient needs two quantitative variables."
+      },
+      {
+        "label": "C",
+        "text": "The favorite sport of each student and the number of siblings of the student",
+        "isCorrect": false,
+        "explanation": "Favorite sport is a categorical variable. A correlation coefficient needs two quantitative variables."
+      },
+      {
+        "label": "D",
+        "text": "The height, in inches, and the arm span, in inches, of each student in a class",
+        "isCorrect": true,
+        "explanation": "A correlation coefficient describes the linear association between two quantitative variables, and both of these are quantitative."
+      }
+    ],
+    "explanation": "Correlation applies to two quantitative variables.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/correlation",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-25",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "easy",
+    "stem": "The equation of a regression line for predicting the height of a plant, in centimeters, from the number of days since it was planted is $\\hat{y} = 3.20 + 1.45x$. What is the predicted height of a plant 12 days after it was planted?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "4.65 centimeters",
+        "isCorrect": false,
+        "explanation": "This adds the intercept and the slope without using x = 12."
+      },
+      {
+        "label": "B",
+        "text": "20.60 centimeters",
+        "isCorrect": true,
+        "explanation": "Substitute x = 12: 3.2 + 1.45(12) = 20.6."
+      },
+      {
+        "label": "C",
+        "text": "17.40 centimeters",
+        "isCorrect": false,
+        "explanation": "This leaves out the y-intercept. The predicted value is a + bx."
+      },
+      {
+        "label": "D",
+        "text": "39.85 centimeters",
+        "isCorrect": false,
+        "explanation": "This multiplies the y-intercept by 12 instead of the slope. The slope is multiplied by x."
+      }
+    ],
+    "explanation": "Predicted height = 3.2 + 1.45(12) = 20.6 cm.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-26",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "easy",
+    "stem": "A forester measured the trunk diameters of trees that were between 10 and 40 years old and found a linear regression model for predicting trunk diameter from age. For which of the following ages would a prediction from the model involve extrapolation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "18 years, because 18 is not one of the ages of the trees that were measured in the study of the forester",
+        "isCorrect": false,
+        "explanation": "18 is inside the interval from 10 to 40. A value inside the interval is interpolation even if no tree had exactly that age."
+      },
+      {
+        "label": "B",
+        "text": "25 years, because 25 is near the middle of the interval of ages that was used to find the model",
+        "isCorrect": false,
+        "explanation": "25 is inside the interval from 10 to 40, so this would be interpolation."
+      },
+      {
+        "label": "C",
+        "text": "33 years, because 33 is close to the oldest of the trees that were measured in the study of the forester",
+        "isCorrect": false,
+        "explanation": "33 is inside the interval from 10 to 40, so this would be interpolation."
+      },
+      {
+        "label": "D",
+        "text": "52 years, because 52 is outside the interval of ages from 10 to 40 that was used to find the model",
+        "isCorrect": true,
+        "explanation": "Extrapolation is predicting for an x-value outside the interval of x-values used to find the model."
+      }
+    ],
+    "explanation": "A prediction for an age outside 10 to 40 years is extrapolation.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-27",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "medium",
+    "stem": "A pediatrician used a linear regression model to predict the weight of an infant from its age. The model was found using infants who were between 6 and 12 months old. Which of the following predictions is likely to be the LEAST reliable?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The prediction for an infant who is 30 months old, because it is the farthest beyond the interval of ages that was used to find the model",
+        "isCorrect": true,
+        "explanation": "A prediction is less reliable the further the x-value is beyond the interval used to find the line. 30 is farthest from the interval."
+      },
+      {
+        "label": "B",
+        "text": "The prediction for an infant who is 9 months old, because it is in the middle of the interval of ages that was used to find the model",
+        "isCorrect": false,
+        "explanation": "9 months is inside the interval, so this is interpolation and it is the most reliable."
+      },
+      {
+        "label": "C",
+        "text": "The prediction for an infant who is 5 months old, because it is below the interval of ages that was used to find the model",
+        "isCorrect": false,
+        "explanation": "5 months is extrapolation, but it is only 1 month below the interval. 30 months is much farther away."
+      },
+      {
+        "label": "D",
+        "text": "The prediction for an infant who is 14 months old, because it is beyond the interval of ages that was used to find the model",
+        "isCorrect": false,
+        "explanation": "14 months is extrapolation, but it is only 2 months beyond the interval, so it is more reliable than the prediction for 30 months."
+      }
+    ],
+    "explanation": "The further an x-value is from the interval used to find the model, the less reliable the prediction.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-28",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "medium",
+    "stem": "A company used technology to find a regression line for predicting the annual salary of an employee, in thousands of dollars, from the number of years of experience. Part of the output is shown. Which of the following is the equation of the regression line?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "$\\hat{y} = 18.62 + 2.37x$, where x is years of experience and y-hat is the predicted salary",
+        "isCorrect": true,
+        "explanation": "The constant is the y-intercept and the coefficient of years of experience is the slope: y-hat = a + bx."
+      },
+      {
+        "label": "B",
+        "text": "$\\hat{y} = 2.37 + 18.62x$, where x is years of experience and y-hat is the predicted salary",
+        "isCorrect": false,
+        "explanation": "This reverses the roles of the two coefficients. The constant is the intercept."
+      },
+      {
+        "label": "C",
+        "text": "$\\hat{x} = 18.62 + 2.37y$, where y is the salary and x-hat is the predicted number of years",
+        "isCorrect": false,
+        "explanation": "The model predicts the salary from the years of experience. The variables are not reversed."
+      },
+      {
+        "label": "D",
+        "text": "$\\hat{y} = 18.62 - 2.37x$, where x is years of experience and y-hat is the predicted salary",
+        "isCorrect": false,
+        "explanation": "Both coefficients are positive in the output, so the slope is +2.37."
+      }
+    ],
+    "explanation": "The Constant is the y-intercept (18.62) and the coefficient of the explanatory variable is the slope (2.37).",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Predictor",
+        "Coefficient"
+      ],
+      "rows": [
+        [
+          "Constant",
+          "18.62"
+        ],
+        [
+          "Years of experience",
+          "2.37"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Regression of salary (thousands of dollars) on years of experience"
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-29",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "medium",
+    "stem": "The equation of a regression line for predicting a student's test score from the number of hours the student studied is $\\hat{y} = 52.1 + 3.4x$. According to the model, about how many hours of studying are needed for a predicted score of 80?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "94.9 hours",
+        "isCorrect": false,
+        "explanation": "This multiplies by the slope instead of dividing by it."
+      },
+      {
+        "label": "B",
+        "text": "38.9 hours",
+        "isCorrect": false,
+        "explanation": "This adds the intercept instead of subtracting it."
+      },
+      {
+        "label": "C",
+        "text": "8.2 hours",
+        "isCorrect": true,
+        "explanation": "Solve 80 = 52.1 + 3.4x: x = (80 - 52.1) / 3.4 = 8.2."
+      },
+      {
+        "label": "D",
+        "text": "23.5 hours",
+        "isCorrect": false,
+        "explanation": "This divides 80 by the slope without subtracting the intercept first."
+      }
+    ],
+    "explanation": "80 = 52.1 + 3.4x, so x = 8.2 hours.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-30",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "medium",
+    "stem": "The equation of a regression line for predicting the time, in minutes, that a runner takes to finish a 5-kilometer race from the number of weeks of training is $\\hat{y} = 38.40 - 0.72x$. How does the predicted time for a runner who trained for 10 weeks compare with the predicted time for a runner who trained for 6 weeks?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The predicted time is 0.72 minutes less for the runner who trained for 10 weeks",
+        "isCorrect": false,
+        "explanation": "The slope is the change in the predicted time for 1 week. The runners differ by 4 weeks."
+      },
+      {
+        "label": "B",
+        "text": "The predicted time is 2.88 minutes more for the runner who trained for 10 weeks",
+        "isCorrect": false,
+        "explanation": "The slope is negative, so more weeks of training means a smaller predicted time."
+      },
+      {
+        "label": "C",
+        "text": "The predicted time is 2.88 minutes less for the runner who trained for 10 weeks",
+        "isCorrect": true,
+        "explanation": "The x-values differ by 4 weeks, and the predicted time changes by 4 times the slope: 4(-0.72) = -2.88 minutes."
+      },
+      {
+        "label": "D",
+        "text": "The predicted time is 7.2 minutes less for the runner who trained for 10 weeks",
+        "isCorrect": false,
+        "explanation": "This multiplies the slope by 10 weeks instead of by the difference of 4 weeks between the two runners."
+      }
+    ],
+    "explanation": "The predicted response changes by b times the change in x: -0.72 x 4 = -2.88 minutes.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-31",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "medium",
+    "stem": "A psychologist recorded the number of words that a person could recall from a list after each of 12 practice sessions. The scatterplot shows the number of words recalled against the number of practice sessions. A student wants to use a linear regression model to predict the number of words recalled. Which of the following is the best statement about the student's plan?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "A linear regression model is not appropriate, because the association between the number of sessions and the words recalled is weak",
+        "isCorrect": false,
+        "explanation": "The association is not weak. The points closely follow a curve, and the problem is the curved form."
+      },
+      {
+        "label": "B",
+        "text": "A linear regression model is appropriate, because the direction of the association is positive and the number of words increases with practice",
+        "isCorrect": false,
+        "explanation": "A positive direction does not make a linear model appropriate. The form of the association must also be linear."
+      },
+      {
+        "label": "C",
+        "text": "A linear regression model is appropriate, because the number of words recalled never decreases as the number of practice sessions increases",
+        "isCorrect": false,
+        "explanation": "The points do not follow a line. The increases get smaller, so the form is curved."
+      },
+      {
+        "label": "D",
+        "text": "A linear regression model is not appropriate, because the form of the association is curved: the number of words increases quickly at first and then levels off",
+        "isCorrect": true,
+        "explanation": "A linear model should be used only if the form of the association looks linear. These points curve."
+      }
+    ],
+    "explanation": "A linear regression model should be fit only if the data show a linear trend. This pattern is curved.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Practice sessions",
+      "yLabel": "Words recalled",
+      "xMin": 0.0,
+      "xMax": 14.0,
+      "xStep": 2.0,
+      "yMin": 5.0,
+      "yMax": 35.0,
+      "yStep": 5.0,
+      "points": [
+        {
+          "x": 1,
+          "y": 7.2
+        },
+        {
+          "x": 2,
+          "y": 14.0
+        },
+        {
+          "x": 3,
+          "y": 19.5
+        },
+        {
+          "x": 4,
+          "y": 21.8
+        },
+        {
+          "x": 5,
+          "y": 24.6
+        },
+        {
+          "x": 6,
+          "y": 25.3
+        },
+        {
+          "x": 7,
+          "y": 26.1
+        },
+        {
+          "x": 8,
+          "y": 27.3
+        },
+        {
+          "x": 9,
+          "y": 28.1
+        },
+        {
+          "x": 10,
+          "y": 27.9
+        },
+        {
+          "x": 11,
+          "y": 29.3
+        },
+        {
+          "x": 12,
+          "y": 28.5
+        }
+      ],
+      "zeroLine": false,
+      "altText": "Scatterplot of words recalled against practice sessions: a curve that rises quickly and then levels off."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-32",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "hard",
+    "stem": "A company found the regression line $\\hat{y} = 25.30 + 0.62x$ for predicting the monthly sales of a salesperson, in thousands of units, from the number of hours of training. The line was found using salespeople who had between 20 and 60 hours of training. A manager uses the line to predict the monthly sales of a salesperson who had 150 hours of training and gets 118.3. Which of the following is the best statement about the manager's prediction?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The prediction is an interpolation, because 150 hours is a number that is greater than all of the numbers of hours in the data set of the company",
+        "isCorrect": false,
+        "explanation": "Interpolation is prediction inside the interval of the data. 150 is outside it."
+      },
+      {
+        "label": "B",
+        "text": "The prediction is reliable, because the regression line was found by a method that fits all of the data as closely as possible",
+        "isCorrect": false,
+        "explanation": "Fitting the data closely does not make predictions outside the interval of x-values reliable."
+      },
+      {
+        "label": "C",
+        "text": "The prediction is reliable, because sales should keep increasing at the same rate for each additional hour of training that is given",
+        "isCorrect": false,
+        "explanation": "There is no evidence in the data that the pattern continues beyond 60 hours."
+      },
+      {
+        "label": "D",
+        "text": "The prediction is an extrapolation, because 150 hours is far beyond the 20 to 60 hours in the data, so it is not likely to be reliable",
+        "isCorrect": true,
+        "explanation": "A prediction for an x-value far outside the interval used to find the line is an extrapolation and is not reliable."
+      }
+    ],
+    "explanation": "150 hours is well outside the 20 to 60 hours used to find the line, so the prediction is an extrapolation.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-33",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "easy",
+    "stem": "In a linear regression model written as $\\hat{y} = a + bx$, what does $\\hat{y}$ represent?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The observed value of the response variable for a given value of the explanatory variable",
+        "isCorrect": false,
+        "explanation": "The observed value is y. y-hat is the value predicted by the model."
+      },
+      {
+        "label": "B",
+        "text": "The mean of all of the observed values of the response variable in the data set that was used to find the model",
+        "isCorrect": false,
+        "explanation": "The mean of the response is written y-bar. y-hat is a prediction for a particular x."
+      },
+      {
+        "label": "C",
+        "text": "The value of the explanatory variable that is used to make a prediction with the model",
+        "isCorrect": false,
+        "explanation": "The explanatory variable is x. y-hat is the predicted response."
+      },
+      {
+        "label": "D",
+        "text": "The predicted value of the response variable for a given value of the explanatory variable",
+        "isCorrect": true,
+        "explanation": "y-hat is the value of the response that the model predicts for the given x."
+      }
+    ],
+    "explanation": "y-hat is the predicted response for a given x.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-34",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "easy",
+    "stem": "A basketball coach used data from players who practiced between 2 and 10 hours per week to find the regression line $\\hat{y} = 41.5 + 3.9x$, where x is the number of hours of practice per week and y-hat is the predicted free-throw percentage. What is the predicted free-throw percentage for a player who practices 6 hours per week?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "45.4%",
+        "isCorrect": false,
+        "explanation": "This adds the intercept and the slope and does not use x = 6."
+      },
+      {
+        "label": "B",
+        "text": "23.4%",
+        "isCorrect": false,
+        "explanation": "This leaves out the y-intercept."
+      },
+      {
+        "label": "C",
+        "text": "252.9%",
+        "isCorrect": false,
+        "explanation": "This multiplies the intercept by 6 instead of the slope."
+      },
+      {
+        "label": "D",
+        "text": "64.9%",
+        "isCorrect": true,
+        "explanation": "Substitute x = 6: 41.5 + 3.9(6) = 64.9."
+      }
+    ],
+    "explanation": "Predicted percentage = 41.5 + 3.9(6) = 64.9.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-35",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "hard",
+    "stem": "A basketball coach used data from players who practiced between 2 and 10 hours per week to find the regression line $\\hat{y} = 41.5 + 3.9x$, where x is the number of hours of practice per week and y-hat is the predicted free-throw percentage. The coach uses the line to predict the free-throw percentage of a player who practices 16 hours per week and gets 103.9%. Which of the following is the best statement about this prediction?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is an extrapolation, and a free-throw percentage cannot be greater than 100%, which shows that the line should not be used for this many hours",
+        "isCorrect": true,
+        "explanation": "16 hours is far outside the 2 to 10 hours in the data, and a predicted percentage above 100 is impossible."
+      },
+      {
+        "label": "B",
+        "text": "It is an interpolation, but it is not reliable because a player cannot practice for this many hours in a single week",
+        "isCorrect": false,
+        "explanation": "The problem is not that the number of hours is large. 16 hours is outside the interval of the data."
+      },
+      {
+        "label": "C",
+        "text": "It is an interpolation, and it is reliable because the regression line was found from data on the free-throw percentage of players",
+        "isCorrect": false,
+        "explanation": "16 hours is outside the interval from 2 to 10 hours, so this is not interpolation."
+      },
+      {
+        "label": "D",
+        "text": "It is an extrapolation, but it is reliable because a larger number of hours of practice always leads to a larger free-throw percentage",
+        "isCorrect": false,
+        "explanation": "An extrapolation is not reliable, and a percentage above 100 shows that the pattern cannot continue."
+      }
+    ],
+    "explanation": "x = 16 is outside the interval from 2 to 10 hours, so the prediction is an extrapolation. A predicted percentage over 100% is impossible.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-36",
+    "unit": "unit-5-regression-analysis",
+    "topic": "linear-regression-models",
+    "difficulty": "medium",
+    "stem": "A basketball coach used data from players who practiced between 2 and 10 hours per week to find the regression line $\\hat{y} = 41.5 + 3.9x$, where x is the number of hours of practice per week and y-hat is the predicted free-throw percentage. How does the predicted free-throw percentage for a player who practices 8 hours per week compare with the predicted percentage for a player who practices 4 hours per week?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is 57.1 percentage points greater",
+        "isCorrect": false,
+        "explanation": "This is the predicted percentage for 4 hours, not the difference between the two predictions."
+      },
+      {
+        "label": "B",
+        "text": "It is 15.6 percentage points greater",
+        "isCorrect": true,
+        "explanation": "The players differ by 4 hours, and the predicted percentage changes by 4 times the slope: 4(3.9) = 15.6."
+      },
+      {
+        "label": "C",
+        "text": "It is 15.6 percentage points less",
+        "isCorrect": false,
+        "explanation": "The slope is positive, so more practice means a greater predicted percentage."
+      },
+      {
+        "label": "D",
+        "text": "It is 3.9 percentage points greater",
+        "isCorrect": false,
+        "explanation": "The slope is the change in the predicted percentage for 1 hour. The players differ by 4 hours."
+      }
+    ],
+    "explanation": "The difference in the predicted values is the slope times the difference in x: 3.9 x 4 = 15.6.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/linear-regression-models",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-37",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "easy",
+    "stem": "The equation of a regression line for predicting a student's score on a vocabulary quiz from the number of hours that the student studied is $\\hat{y} = 41.0 + 6.5x$. A student who studied for 3 hours scored 68 on the quiz. What is the residual for this student?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "60.5",
+        "isCorrect": false,
+        "explanation": "This is the predicted score, not the residual."
+      },
+      {
+        "label": "B",
+        "text": "-7.5",
+        "isCorrect": false,
+        "explanation": "This subtracts in the wrong order. A residual is observed minus predicted."
+      },
+      {
+        "label": "C",
+        "text": "68",
+        "isCorrect": false,
+        "explanation": "This is the observed score, not the residual."
+      },
+      {
+        "label": "D",
+        "text": "7.5",
+        "isCorrect": true,
+        "explanation": "The predicted score is 41 + 6.5(3) = 60.5. The residual is observed minus predicted: 68 - 60.5 = 7.5."
+      }
+    ],
+    "explanation": "Residual = observed - predicted = 68 - 60.5 = 7.5.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-38",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "medium",
+    "stem": "A regression line is used to predict a student's exam score from the number of hours studied. The residual for one student is -6.5. Which of the following is the best interpretation of this residual?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The student's observed score was 6.5 points higher than the score that the model predicted, so the model underpredicted for this student",
+        "isCorrect": false,
+        "explanation": "A negative residual means the observed score is lower than the predicted score, not higher."
+      },
+      {
+        "label": "B",
+        "text": "The student's observed exam score was -6.5, so the student scored below zero on the exam and the data were recorded incorrectly",
+        "isCorrect": false,
+        "explanation": "A residual is a difference between the observed score and the predicted score. It is not the observed score."
+      },
+      {
+        "label": "C",
+        "text": "The student's observed score was 6.5 points lower than the score that the model predicted, so the model overpredicted for this student",
+        "isCorrect": true,
+        "explanation": "A negative residual means the observed value is below the predicted value, so the model overpredicts."
+      },
+      {
+        "label": "D",
+        "text": "The student's predicted exam score was -6.5, so the regression line cannot be used to make a prediction for this student",
+        "isCorrect": false,
+        "explanation": "The residual is not the predicted score. It is the difference between the observed and predicted scores."
+      }
+    ],
+    "explanation": "Residual = observed - predicted. A negative residual means the observed value is less than the predicted value, so the model overpredicts.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-39",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "easy",
+    "stem": "On a scatterplot that includes the regression line, one point is above the line. Which of the following is true about the residual for that point?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The residual is positive, and the model overpredicts the response value for that point",
+        "isCorrect": false,
+        "explanation": "A positive residual means the model underpredicts, not overpredicts."
+      },
+      {
+        "label": "B",
+        "text": "The residual is zero, because the point is close to the regression line and so the observed and predicted values are equal",
+        "isCorrect": false,
+        "explanation": "A residual of zero means the point is exactly on the line. This point is above it."
+      },
+      {
+        "label": "C",
+        "text": "The residual is negative, and the model underpredicts the response value for that point",
+        "isCorrect": false,
+        "explanation": "A point above the line has a positive residual."
+      },
+      {
+        "label": "D",
+        "text": "The residual is positive, and the model underpredicts the response value for that point",
+        "isCorrect": true,
+        "explanation": "A point above the line has an observed value greater than the predicted value, so the residual is positive and the model underpredicts."
+      }
+    ],
+    "explanation": "A point above the line has an observed response greater than predicted: the residual is positive and the model underpredicts.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-40",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "medium",
+    "stem": "A linear regression model was fit to predict the weekly sales of a product, in hundreds of units, from the number of weeks since the product was introduced. The residual plot for the model is shown. Which of the following is the best conclusion from the residual plot?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The residuals show no clear pattern, which confirms that the association is linear and the linear model is appropriate",
+        "isCorrect": true,
+        "explanation": "Apparent randomness in a residual plot confirms a linear form and shows that the linear model is appropriate."
+      },
+      {
+        "label": "B",
+        "text": "The linear model is appropriate, because the residual plot has a positive slope that is the same as the slope of the regression line",
+        "isCorrect": false,
+        "explanation": "A residual plot of a least-squares fit does not show the slope of the line. The important feature is the lack of a pattern."
+      },
+      {
+        "label": "C",
+        "text": "The linear model is not appropriate, because the residuals are not all equal to zero for the weeks that are shown",
+        "isCorrect": false,
+        "explanation": "Residuals are never all zero. A residual plot with no pattern supports the model."
+      },
+      {
+        "label": "D",
+        "text": "The residuals show a clear curved pattern, which shows that the association is non-linear and the linear model is not appropriate",
+        "isCorrect": false,
+        "explanation": "The residuals are scattered at random above and below zero. There is no curvature."
+      }
+    ],
+    "explanation": "Random scatter of the residuals around zero indicates that a linear model is appropriate.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Weeks since introduction",
+      "yLabel": "Residual",
+      "xMin": 0.0,
+      "xMax": 25.0,
+      "xStep": 5.0,
+      "yMin": -15.0,
+      "yMax": 10.0,
+      "yStep": 5.0,
+      "points": [
+        {
+          "x": 1,
+          "y": -2.79
+        },
+        {
+          "x": 2,
+          "y": 2.53
+        },
+        {
+          "x": 3,
+          "y": -0.75
+        },
+        {
+          "x": 4,
+          "y": 3.269
+        },
+        {
+          "x": 5,
+          "y": 3.489
+        },
+        {
+          "x": 6,
+          "y": -6.791
+        },
+        {
+          "x": 7,
+          "y": -7.971
+        },
+        {
+          "x": 8,
+          "y": 6.748
+        },
+        {
+          "x": 9,
+          "y": -3.832
+        },
+        {
+          "x": 10,
+          "y": -4.512
+        },
+        {
+          "x": 11,
+          "y": 9.008
+        },
+        {
+          "x": 12,
+          "y": -0.572
+        },
+        {
+          "x": 13,
+          "y": 5.847
+        },
+        {
+          "x": 14,
+          "y": -0.833
+        },
+        {
+          "x": 15,
+          "y": 1.887
+        },
+        {
+          "x": 16,
+          "y": -7.093
+        },
+        {
+          "x": 17,
+          "y": 1.427
+        },
+        {
+          "x": 18,
+          "y": 5.446
+        },
+        {
+          "x": 19,
+          "y": -0.934
+        },
+        {
+          "x": 20,
+          "y": 2.786
+        },
+        {
+          "x": 21,
+          "y": 1.406
+        },
+        {
+          "x": 22,
+          "y": -9.675
+        },
+        {
+          "x": 23,
+          "y": 2.545
+        },
+        {
+          "x": 24,
+          "y": -0.635
+        }
+      ],
+      "zeroLine": true,
+      "altText": "Residual plot: residuals against weeks, scattered at random above and below zero with no pattern."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-41",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "medium",
+    "stem": "A linear regression model was fit to predict the stopping distance of a vehicle, in meters, from its speed. The residual plot for the model is shown. Which of the following is the best conclusion from the residual plot?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The linear model is appropriate, because some of the residuals are positive and some of the residuals are negative",
+        "isCorrect": false,
+        "explanation": "Both signs always occur. What matters is whether there is a pattern, and this residual plot shows a curve."
+      },
+      {
+        "label": "B",
+        "text": "The association between the variables is strong and linear, because the points in the residual plot follow a clear and easily visible pattern",
+        "isCorrect": false,
+        "explanation": "A clear pattern in a residual plot means the model does not describe the data well. It does not show a linear association."
+      },
+      {
+        "label": "C",
+        "text": "The residuals show a clear curved pattern, which suggests that the linear model is not the most appropriate model for the data",
+        "isCorrect": true,
+        "explanation": "Curvature in a residual plot suggests that a linear model is not the most appropriate model."
+      },
+      {
+        "label": "D",
+        "text": "The linear model is appropriate, because the positive residuals and the negative residuals cancel each other out",
+        "isCorrect": false,
+        "explanation": "Residuals always balance out around the line. A curved pattern still shows that the linear form is not appropriate."
+      }
+    ],
+    "explanation": "The residuals are positive at both ends and negative in the middle, a curved pattern, so a linear model is not the most appropriate.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Speed (x)",
+      "yLabel": "Residual",
+      "xMin": 0.0,
+      "xMax": 25.0,
+      "xStep": 5.0,
+      "yMin": -20.0,
+      "yMax": 30.0,
+      "yStep": 10.0,
+      "points": [
+        {
+          "x": 1,
+          "y": 24.921
+        },
+        {
+          "x": 2,
+          "y": 17.898
+        },
+        {
+          "x": 3,
+          "y": 10.276
+        },
+        {
+          "x": 4,
+          "y": 6.953
+        },
+        {
+          "x": 5,
+          "y": 0.53
+        },
+        {
+          "x": 6,
+          "y": 0.307
+        },
+        {
+          "x": 7,
+          "y": -4.716
+        },
+        {
+          "x": 8,
+          "y": -7.239
+        },
+        {
+          "x": 9,
+          "y": -8.462
+        },
+        {
+          "x": 10,
+          "y": -10.284
+        },
+        {
+          "x": 11,
+          "y": -14.907
+        },
+        {
+          "x": 12,
+          "y": -16.03
+        },
+        {
+          "x": 13,
+          "y": -16.053
+        },
+        {
+          "x": 14,
+          "y": -13.476
+        },
+        {
+          "x": 15,
+          "y": -13.599
+        },
+        {
+          "x": 16,
+          "y": -8.022
+        },
+        {
+          "x": 17,
+          "y": -5.845
+        },
+        {
+          "x": 18,
+          "y": -2.267
+        },
+        {
+          "x": 19,
+          "y": -0.89
+        },
+        {
+          "x": 20,
+          "y": 5.187
+        },
+        {
+          "x": 21,
+          "y": 4.364
+        },
+        {
+          "x": 22,
+          "y": 9.241
+        },
+        {
+          "x": 23,
+          "y": 20.218
+        },
+        {
+          "x": 24,
+          "y": 21.895
+        }
+      ],
+      "zeroLine": true,
+      "altText": "Residual plot: residuals against speed, forming a U shape: positive, then negative, then positive."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-42",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "medium",
+    "stem": "The equation of a regression line is $\\hat{y} = 4.10 + 0.52x$. For an observation with x = 30, the residual is -2.3. What is the observed value of y for this observation?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "17.4",
+        "isCorrect": true,
+        "explanation": "The predicted value is 4.1 + 0.52(30) = 19.7. Since residual = observed - predicted, observed = predicted + residual = 19.7 + (-2.3) = 17.4."
+      },
+      {
+        "label": "B",
+        "text": "19.7",
+        "isCorrect": false,
+        "explanation": "This is the predicted value, not the observed value."
+      },
+      {
+        "label": "C",
+        "text": "27.7",
+        "isCorrect": false,
+        "explanation": "This adds the residual to x instead of to the predicted value."
+      },
+      {
+        "label": "D",
+        "text": "22.0",
+        "isCorrect": false,
+        "explanation": "This subtracts the residual from the predicted value. Observed = predicted + residual."
+      }
+    ],
+    "explanation": "Observed = predicted + residual = 19.7 + (-2.3) = 17.4.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-43",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "easy",
+    "stem": "A residual plot for a linear regression model is a scatterplot of which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The observed response values versus the predicted response values, with the regression line drawn through the points",
+        "isCorrect": false,
+        "explanation": "That plot compares observed and predicted values. A residual plot shows the differences between them."
+      },
+      {
+        "label": "B",
+        "text": "The residuals versus the explanatory variable values, or the residuals versus the predicted response values",
+        "isCorrect": true,
+        "explanation": "A residual plot shows the residuals on the vertical axis, against either the explanatory variable or the predicted response."
+      },
+      {
+        "label": "C",
+        "text": "The explanatory variable values versus the observed response values, with the regression line drawn through the points",
+        "isCorrect": false,
+        "explanation": "That is the original scatterplot, not a residual plot."
+      },
+      {
+        "label": "D",
+        "text": "The predicted response values versus the explanatory variable values, with the residuals as the labels of the points",
+        "isCorrect": false,
+        "explanation": "The predicted values lie on a line when plotted against the explanatory variable. The residuals are plotted on the vertical axis."
+      }
+    ],
+    "explanation": "A residual plot is a scatterplot of the residuals versus the predicted response values (or the explanatory variable values).",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-44",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "medium",
+    "stem": "A regression line was used to predict the response for four observations. The observed and predicted values are shown in the table. For which observation did the model overpredict by the greatest amount?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "Observation C, which has a residual of 1",
+        "isCorrect": false,
+        "explanation": "C has a positive residual, so the model underpredicted for C."
+      },
+      {
+        "label": "B",
+        "text": "Observation D, which has a residual of -5",
+        "isCorrect": false,
+        "explanation": "D was overpredicted, but by less than B. A residual of -5 is smaller in size than -8."
+      },
+      {
+        "label": "C",
+        "text": "Observation A, which has a residual of 4",
+        "isCorrect": false,
+        "explanation": "A has a positive residual, so the model underpredicted for A."
+      },
+      {
+        "label": "D",
+        "text": "Observation B, which has a residual of -8",
+        "isCorrect": true,
+        "explanation": "Overprediction means the observed value is less than the predicted value. B has the most negative residual: 61 - 69 = -8."
+      }
+    ],
+    "explanation": "The greatest overprediction is the most negative residual, observed - predicted = 61 - 69 = -8, for observation B.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Observation",
+        "Observed value",
+        "Predicted value"
+      ],
+      "rows": [
+        [
+          "A",
+          "52",
+          "48"
+        ],
+        [
+          "B",
+          "61",
+          "69"
+        ],
+        [
+          "C",
+          "75",
+          "74"
+        ],
+        [
+          "D",
+          "90",
+          "95"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "Observed and predicted values"
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-45",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "medium",
+    "stem": "The scatterplot shows the least-squares regression line for predicting the amount of money a store collects in a day, in hundreds of dollars, from the number of customers, in hundreds. The point labeled P is above the line. Which of the following is a correct statement about the residual for P?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The residual is positive, because the observed value is greater than the value predicted by the line, so the model overpredicts for P",
+        "isCorrect": false,
+        "explanation": "The residual is positive, but a positive residual means the model underpredicts."
+      },
+      {
+        "label": "B",
+        "text": "The residual is negative, because the point is above the line and so the observed value is less than the predicted value, so the model overpredicts for P",
+        "isCorrect": false,
+        "explanation": "A point above the line has a positive residual. The model underpredicts."
+      },
+      {
+        "label": "C",
+        "text": "The residual is zero, because the point P is close to the line and so the observed and predicted values are the same",
+        "isCorrect": false,
+        "explanation": "A residual is zero only when the point is exactly on the line. P is above it."
+      },
+      {
+        "label": "D",
+        "text": "The residual is positive, because the observed value is greater than the value predicted by the line, so the model underpredicts for P",
+        "isCorrect": true,
+        "explanation": "P is above the line, so the observed value is greater than the predicted value. The residual is positive and the model underpredicts."
+      }
+    ],
+    "explanation": "Above the line means observed > predicted: a positive residual and an underprediction.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Customers (hundreds)",
+      "yLabel": "Money collected (hundreds of dollars)",
+      "xMin": 0.0,
+      "xMax": 14.0,
+      "xStep": 2.0,
+      "yMin": 20.0,
+      "yMax": 70.0,
+      "yStep": 10.0,
+      "points": [
+        {
+          "x": 1,
+          "y": 27
+        },
+        {
+          "x": 2,
+          "y": 22
+        },
+        {
+          "x": 3,
+          "y": 31
+        },
+        {
+          "x": 4,
+          "y": 30
+        },
+        {
+          "x": 5,
+          "y": 39
+        },
+        {
+          "x": 6,
+          "y": 35
+        },
+        {
+          "x": 7,
+          "y": 45
+        },
+        {
+          "x": 8,
+          "y": 60
+        },
+        {
+          "x": 9,
+          "y": 51
+        },
+        {
+          "x": 10,
+          "y": 55
+        },
+        {
+          "x": 11,
+          "y": 52
+        },
+        {
+          "x": 12,
+          "y": 56
+        }
+      ],
+      "zeroLine": false,
+      "line": {
+        "intercept": 20.6667,
+        "slope": 3.2692
+      },
+      "highlights": [
+        {
+          "index": 7,
+          "label": "P"
+        }
+      ],
+      "altText": "Scatterplot with the regression line: a positive pattern; the point labeled P is well above the line."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-46",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "hard",
+    "stem": "The residual plot is for a linear model that predicts the fuel efficiency of a car, in miles per gallon, from the age of the car, in years. The point labeled Q has a residual of about -15. Which of the following is the best interpretation of the residual for Q?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The observed fuel efficiency for the car at Q was about 15 miles per gallon lower than the model predicted, so the model overpredicted for this car",
+        "isCorrect": true,
+        "explanation": "A negative residual means observed minus predicted is negative: the observed value is lower than the predicted value."
+      },
+      {
+        "label": "B",
+        "text": "The observed fuel efficiency for the car at Q was about -15 miles per gallon, which is not possible, so the data for this car must be wrong",
+        "isCorrect": false,
+        "explanation": "The residual is the difference between the observed and predicted values. It is not the observed value."
+      },
+      {
+        "label": "C",
+        "text": "The observed fuel efficiency for the car at Q was about 15 miles per gallon higher than the model predicted, so the model underpredicted for this car",
+        "isCorrect": false,
+        "explanation": "A negative residual means the model overpredicted, not underpredicted."
+      },
+      {
+        "label": "D",
+        "text": "The predicted fuel efficiency for the car at Q was about -15 miles per gallon, so the model should not be used for a car like this one",
+        "isCorrect": false,
+        "explanation": "The residual is not the predicted value. It is observed minus predicted."
+      }
+    ],
+    "explanation": "A residual of about -15 means the observed value was about 15 units below the predicted value.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false,
+    "diagram": {
+      "type": "scatterplot",
+      "xLabel": "Age of the car (years)",
+      "yLabel": "Residual",
+      "xMin": 0.0,
+      "xMax": 25.0,
+      "xStep": 5.0,
+      "yMin": -20.0,
+      "yMax": 5.0,
+      "yStep": 5.0,
+      "points": [
+        {
+          "x": 1,
+          "y": -1.306
+        },
+        {
+          "x": 2,
+          "y": -2.736
+        },
+        {
+          "x": 3,
+          "y": -3.267
+        },
+        {
+          "x": 4,
+          "y": 4.203
+        },
+        {
+          "x": 5,
+          "y": 0.972
+        },
+        {
+          "x": 6,
+          "y": 2.142
+        },
+        {
+          "x": 7,
+          "y": 0.812
+        },
+        {
+          "x": 8,
+          "y": -0.819
+        },
+        {
+          "x": 9,
+          "y": 2.751
+        },
+        {
+          "x": 10,
+          "y": 1.32
+        },
+        {
+          "x": 11,
+          "y": 3.39
+        },
+        {
+          "x": 12,
+          "y": 2.259
+        },
+        {
+          "x": 13,
+          "y": 4.129
+        },
+        {
+          "x": 14,
+          "y": -14.802
+        },
+        {
+          "x": 15,
+          "y": -2.532
+        },
+        {
+          "x": 16,
+          "y": -2.562
+        },
+        {
+          "x": 17,
+          "y": 3.207
+        },
+        {
+          "x": 18,
+          "y": -2.223
+        },
+        {
+          "x": 19,
+          "y": 2.646
+        },
+        {
+          "x": 20,
+          "y": 2.416
+        }
+      ],
+      "zeroLine": true,
+      "highlights": [
+        {
+          "index": 13,
+          "label": "Q"
+        }
+      ],
+      "altText": "Residual plot: residuals against age; most are scattered near zero, and the point labeled Q is far below zero."
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-47",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "easy",
+    "stem": "A cafe owner recorded the outside temperature, in degrees Celsius, and the number of cups of hot chocolate sold on each of many days. The regression line for predicting the number of cups sold from the temperature is $\\hat{y} = 142.0 - 3.6x$. On one day the temperature was 15 degrees Celsius and 91 cups were sold. What is the residual for that day?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "3 cups",
+        "isCorrect": true,
+        "explanation": "The predicted number of cups is 142 + (-3.6)(15) = 88. The residual is 91 - 88 = 3."
+      },
+      {
+        "label": "B",
+        "text": "88 cups",
+        "isCorrect": false,
+        "explanation": "This is the predicted number of cups, not the residual."
+      },
+      {
+        "label": "C",
+        "text": "-3 cups",
+        "isCorrect": false,
+        "explanation": "This subtracts in the wrong order. A residual is observed minus predicted."
+      },
+      {
+        "label": "D",
+        "text": "91 cups",
+        "isCorrect": false,
+        "explanation": "This is the observed number of cups, not the residual."
+      }
+    ],
+    "explanation": "Predicted = 88; residual = 91 - 88 = 3.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-48",
+    "unit": "unit-5-regression-analysis",
+    "topic": "residuals",
+    "difficulty": "medium",
+    "stem": "A cafe owner recorded the outside temperature, in degrees Celsius, and the number of cups of hot chocolate sold on each of many days. The regression line for predicting the number of cups sold from the temperature is $\\hat{y} = 142.0 - 3.6x$. On one day the temperature was 15 degrees Celsius and 91 cups were sold. Which of the following is the best interpretation of the residual for that day?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The cafe sold exactly 3 cups of hot chocolate on that day, which is the number that was predicted by the model",
+        "isCorrect": false,
+        "explanation": "The residual is the difference between the observed and the predicted number of cups, not the number sold."
+      },
+      {
+        "label": "B",
+        "text": "The cafe sold 3 fewer cups of hot chocolate than the number predicted by the model, so the model overpredicted for that day",
+        "isCorrect": false,
+        "explanation": "The residual is positive, so the cafe sold more cups than predicted."
+      },
+      {
+        "label": "C",
+        "text": "The cafe sold 3 more cups of hot chocolate than the number predicted by the model, so the model underpredicted for that day",
+        "isCorrect": true,
+        "explanation": "The residual is positive (observed - predicted = 3), so the observed value is 3 greater than predicted and the model underpredicts."
+      },
+      {
+        "label": "D",
+        "text": "The cafe sold 3 more cups of hot chocolate than the number predicted by the model, so the model overpredicted for that day",
+        "isCorrect": false,
+        "explanation": "The cafe did sell more than predicted, but that means the model underpredicted."
+      }
+    ],
+    "explanation": "A residual of +3 means that the observed number of cups was 3 more than predicted: the model underpredicted.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/residuals",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-49",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "easy",
+    "stem": "The least-squares regression line for a set of data is the line that minimizes which of the following?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The size of the largest residual of any of the points",
+        "isCorrect": false,
+        "explanation": "The line minimizes the sum of the squared residuals, not the single largest residual."
+      },
+      {
+        "label": "B",
+        "text": "The sum of the residuals of the points",
+        "isCorrect": false,
+        "explanation": "The residuals of the least-squares line add to 0, so this is not what is minimized."
+      },
+      {
+        "label": "C",
+        "text": "The sum of the squares of the residuals",
+        "isCorrect": true,
+        "explanation": "The least-squares line is the line for which the sum of the squared residuals is as small as possible."
+      },
+      {
+        "label": "D",
+        "text": "The number of points that are not on the line",
+        "isCorrect": false,
+        "explanation": "The line is not chosen to pass through as many points as possible."
+      }
+    ],
+    "explanation": "The least-squares regression line minimizes the sum of the squares of the residuals.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-50",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "easy",
+    "stem": "The equation of the least-squares regression line for predicting a violinist's performance rating, in points, from the number of hours that the violinist practices per week is $\\hat{y} = 12.4 + 2.1x$. Which of the following is the correct interpretation of the slope?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "For each additional hour of practice per week, the predicted performance rating increases by 2.1 points",
+        "isCorrect": true,
+        "explanation": "The slope is the predicted change in the response for a one-unit increase in the explanatory variable."
+      },
+      {
+        "label": "B",
+        "text": "For each additional hour of practice per week, the predicted performance rating decreases by 2.1 points",
+        "isCorrect": false,
+        "explanation": "The slope is positive, so the predicted rating increases."
+      },
+      {
+        "label": "C",
+        "text": "For each additional point of performance rating, the predicted number of hours of practice per week increases by 2.1",
+        "isCorrect": false,
+        "explanation": "This reverses the roles of the variables. The model predicts the rating from the hours."
+      },
+      {
+        "label": "D",
+        "text": "A violinist who does not practice is predicted to have a performance rating of 2.1 points on the rating scale",
+        "isCorrect": false,
+        "explanation": "That would be the y-intercept, which is 12.4. The slope is the change for each additional hour."
+      }
+    ],
+    "explanation": "The slope 2.1 is the predicted increase in the performance rating for each additional hour of practice per week.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-51",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "medium",
+    "stem": "The equation of the least-squares regression line for predicting the resting heart rate, in beats per minute, of adults from the number of minutes that they exercise per day is $\\hat{y} = 71.6 - 0.18x$. The data include adults who exercise from 0 to 60 minutes per day. Which of the following is the correct interpretation of the y-intercept?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "For each additional minute of exercise per day, the predicted resting heart rate decreases by 71.6 beats per minute",
+        "isCorrect": false,
+        "explanation": "That describes a slope. The slope is -0.18."
+      },
+      {
+        "label": "B",
+        "text": "The predicted resting heart rate of an adult who does not exercise is 71.6 beats per minute",
+        "isCorrect": true,
+        "explanation": "The y-intercept is the predicted response when the explanatory variable is 0. Here 0 minutes of exercise is in the data, so the interpretation makes sense."
+      },
+      {
+        "label": "C",
+        "text": "An adult with a resting heart rate of 0 beats per minute is predicted to exercise for 71.6 minutes per day",
+        "isCorrect": false,
+        "explanation": "This reverses the roles of the variables. The y-intercept is a predicted response, not a predicted explanatory value."
+      },
+      {
+        "label": "D",
+        "text": "The mean resting heart rate of all of the adults in the data set is 71.6 beats per minute",
+        "isCorrect": false,
+        "explanation": "The intercept is a prediction for x = 0. It is not the mean of the response for all adults."
+      }
+    ],
+    "explanation": "When x = 0, the predicted resting heart rate is 71.6 beats per minute.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-52",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "medium",
+    "stem": "The equation of the least-squares regression line for predicting the weight, in pounds, of adult women from their height, in inches, is $\\hat{y} = -119.4 + 4.0x$. The heights in the data are between 58 inches and 72 inches. Which of the following best explains why the y-intercept has no reasonable interpretation in this context?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The y-intercept has no interpretation because the slope of the regression line is positive and is greater than 1",
+        "isCorrect": false,
+        "explanation": "The sign and size of the slope do not decide whether the intercept can be interpreted."
+      },
+      {
+        "label": "B",
+        "text": "A height of 0 inches is far outside the heights in the data, and the predicted weight of -119.4 pounds is not possible",
+        "isCorrect": true,
+        "explanation": "The intercept is a prediction at x = 0, which is an extrapolation here, and a weight cannot be negative."
+      },
+      {
+        "label": "C",
+        "text": "The y-intercept cannot be interpreted because the data set must be too small for any intercept to be calculated",
+        "isCorrect": false,
+        "explanation": "The intercept can be calculated from any data set. The problem is that x = 0 is outside the data and the value is negative."
+      },
+      {
+        "label": "D",
+        "text": "The y-intercept of a least-squares regression line never has a reasonable interpretation in any context",
+        "isCorrect": false,
+        "explanation": "In many contexts, such as when x = 0 is in the data, the y-intercept can be interpreted."
+      }
+    ],
+    "explanation": "x = 0 is outside the interval of heights used to find the line (an extrapolation), and the negative weight is not logical.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-53",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "medium",
+    "stem": "A least-squares regression line is used to predict a student's test score from the number of hours that the student studied. The coefficient of determination is $r^2 = 0.64$. Which of the following is a correct interpretation of $r^2$?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "About 64% of the variation in the number of hours studied is explained by the linear relationship with the test scores",
+        "isCorrect": false,
+        "explanation": "This reverses the variables. The response is the test score."
+      },
+      {
+        "label": "B",
+        "text": "About 64% of the variation in test scores is explained by the linear relationship with the number of hours studied",
+        "isCorrect": true,
+        "explanation": "r squared is the proportion of the variation in the response variable that is explained by the linear relationship with the explanatory variable."
+      },
+      {
+        "label": "C",
+        "text": "The correlation between the number of hours studied and the test score is 0.64, so the association is positive and moderate",
+        "isCorrect": false,
+        "explanation": "r squared is the square of the correlation. Here r would be about 0.80."
+      },
+      {
+        "label": "D",
+        "text": "About 64% of the students have test scores that are exactly the same as the scores that the regression line predicts",
+        "isCorrect": false,
+        "explanation": "r squared is not the percent of the points that are on the line."
+      }
+    ],
+    "explanation": "r squared = 0.64 means that about 64% of the variation in the response (test score) is explained by the linear relationship with the explanatory variable (hours studied).",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-54",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "medium",
+    "stem": "For a set of data, the mean of the explanatory variable is $\\bar{x} = 30$ and the mean of the response variable is $\\bar{y} = 82$. The slope of the least-squares regression line is 1.6. What is the y-intercept of the line?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "-101.2",
+        "isCorrect": false,
+        "explanation": "This reverses the roles of x-bar and y-bar."
+      },
+      {
+        "label": "B",
+        "text": "130.0",
+        "isCorrect": false,
+        "explanation": "This adds b times x-bar to y-bar. The intercept is y-bar minus b times x-bar."
+      },
+      {
+        "label": "C",
+        "text": "34.0",
+        "isCorrect": true,
+        "explanation": "The least-squares line passes through (30, 82), so 82 = a + 1.6(30) and a = 82 - 48 = 34."
+      },
+      {
+        "label": "D",
+        "text": "80.4",
+        "isCorrect": false,
+        "explanation": "This subtracts the slope from y-bar without multiplying the slope by x-bar."
+      }
+    ],
+    "explanation": "Because the line passes through (x-bar, y-bar): a = 82 - 1.6(30) = 34.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-55",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "medium",
+    "stem": "A student draws a line by eye through a scatterplot. The sum of the squares of the residuals for the student's line is 150. The sum of the squares of the residuals for the least-squares regression line is 120. Which of the following statements is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "This result shows that the least-squares line does not pass through the point of the means, unlike the line drawn by the student",
+        "isCorrect": false,
+        "explanation": "The least-squares line always passes through (x-bar, y-bar)."
+      },
+      {
+        "label": "B",
+        "text": "This result is expected, because the least-squares line has the smallest possible sum of squared residuals of all of the lines",
+        "isCorrect": true,
+        "explanation": "By definition, the least-squares line minimizes the sum of the squared residuals."
+      },
+      {
+        "label": "C",
+        "text": "This result is not possible, because a line that is drawn by eye through the middle of the points must have a smaller sum",
+        "isCorrect": false,
+        "explanation": "No line has a smaller sum of squared residuals than the least-squares line."
+      },
+      {
+        "label": "D",
+        "text": "This result shows that the student's line is a better model, because a larger sum of squares means that the line fits better",
+        "isCorrect": false,
+        "explanation": "A larger sum of squared residuals means a worse fit."
+      }
+    ],
+    "explanation": "The least-squares line minimizes the sum of the squared residuals, so no other line can have a smaller sum.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-56",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "easy",
+    "stem": "Two different least-squares regression lines were found for predicting the same response variable. The line that uses the first explanatory variable has $r^2 = 0.81$. The line that uses the second explanatory variable has $r^2 = 0.45$. Which of the following statements is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The linear relationship with the first explanatory variable explains a greater proportion of the variation in the response variable",
+        "isCorrect": true,
+        "explanation": "r squared is the proportion of the variation in the response that is explained. 0.81 is greater than 0.45."
+      },
+      {
+        "label": "B",
+        "text": "The regression line for the first explanatory variable has a greater slope than the line for the second explanatory variable",
+        "isCorrect": false,
+        "explanation": "r squared does not tell the size of the slope."
+      },
+      {
+        "label": "C",
+        "text": "The first explanatory variable causes the response variable to change, but the second explanatory variable does not",
+        "isCorrect": false,
+        "explanation": "A larger r squared does not show that a variable is a cause."
+      },
+      {
+        "label": "D",
+        "text": "The linear relationship with the second explanatory variable explains a greater proportion of the variation in the response variable",
+        "isCorrect": false,
+        "explanation": "The smaller r squared explains a smaller proportion of the variation."
+      }
+    ],
+    "explanation": "The greater r squared means that more of the variation in the response is explained by the linear relationship.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-57",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "hard",
+    "stem": "For a set of data the correlation coefficient is r = -0.74. Which of the following must be true about the slope of the least-squares regression line?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The slope is equal to -0.74, because the slope of a regression line is the same as the correlation coefficient",
+        "isCorrect": false,
+        "explanation": "The slope has the same sign as r, but it is not equal to r. Its size depends on the units of the two variables."
+      },
+      {
+        "label": "B",
+        "text": "The sign of the slope cannot be determined, because the slope also depends on the units of the two variables",
+        "isCorrect": false,
+        "explanation": "The size of the slope depends on the units, but its sign does not. It is the same as the sign of r."
+      },
+      {
+        "label": "C",
+        "text": "The slope is positive, because the value of r squared is 0.55, which is a positive number that is less than 1",
+        "isCorrect": false,
+        "explanation": "r squared is always positive. The sign of the slope is the sign of r."
+      },
+      {
+        "label": "D",
+        "text": "The slope is negative, because the slope of the least-squares line and the correlation coefficient always have the same sign",
+        "isCorrect": true,
+        "explanation": "A negative correlation means a negative association, so the least-squares line slopes downward."
+      }
+    ],
+    "explanation": "The slope and the correlation coefficient have the same sign.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false
+  },
+  {
+    "id": "ap-stat-u5-mcq-58",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "medium",
+    "stem": "Researchers used technology to find the least-squares regression line for predicting the resting heart rate, in beats per minute, of 40 adults from the number of hours per week that they exercise. The adults exercised between 0 and 8 hours per week. Part of the output is shown. Which of the following is a correct interpretation of the slope?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "For each additional hour of exercise per week, the predicted resting heart rate decreases by about 2.15 beats per minute",
+        "isCorrect": true,
+        "explanation": "The slope is -2.15, so the predicted resting heart rate decreases by 2.15 beats per minute for each additional hour of exercise per week."
+      },
+      {
+        "label": "B",
+        "text": "For each additional beat per minute of resting heart rate, the predicted hours of exercise per week decrease by about 2.15",
+        "isCorrect": false,
+        "explanation": "This reverses the roles of the variables."
+      },
+      {
+        "label": "C",
+        "text": "For each additional hour of exercise per week, the predicted resting heart rate increases by about 2.15 beats per minute",
+        "isCorrect": false,
+        "explanation": "The coefficient is negative, so the predicted heart rate decreases."
+      },
+      {
+        "label": "D",
+        "text": "For each additional hour of exercise per week, the resting heart rate of every adult decreases by exactly 2.15 beats per minute",
+        "isCorrect": false,
+        "explanation": "The slope describes the predicted change on average, not an exact change for every adult."
+      }
+    ],
+    "explanation": "The slope -2.15 is the predicted change in resting heart rate for one more hour of exercise per week: a decrease of about 2.15 beats per minute.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Predictor",
+        "Coefficient"
+      ],
+      "rows": [
+        [
+          "Constant",
+          "78.40"
+        ],
+        [
+          "Hours of exercise per week",
+          "-2.15"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "R-sq = 54.3%"
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-59",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "medium",
+    "stem": "Researchers used technology to find the least-squares regression line for predicting the resting heart rate, in beats per minute, of 40 adults from the number of hours per week that they exercise. The adults exercised between 0 and 8 hours per week. Part of the output is shown. Which of the following statements about the y-intercept of the line is correct?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "It is the predicted decrease in the resting heart rate for each additional hour of exercise that an adult does every week, so it is a rate of change",
+        "isCorrect": false,
+        "explanation": "That describes the slope, not the y-intercept."
+      },
+      {
+        "label": "B",
+        "text": "It can be interpreted: the predicted resting heart rate of an adult who does not exercise is about 78.4 beats per minute, because 0 hours is within the data",
+        "isCorrect": true,
+        "explanation": "The y-intercept is the predicted response when x = 0, and 0 hours is within the interval 0 to 8 hours, so the interpretation is reasonable."
+      },
+      {
+        "label": "C",
+        "text": "It cannot be interpreted in context, because 0 hours of exercise per week is outside the interval of hours of the 40 adults in the data",
+        "isCorrect": false,
+        "explanation": "0 hours is in the data (the adults exercised from 0 to 8 hours), so the intercept can be interpreted."
+      },
+      {
+        "label": "D",
+        "text": "It is the mean resting heart rate of the 40 adults who were in the study, which is about 78.4 beats per minute for all of them",
+        "isCorrect": false,
+        "explanation": "The intercept is a prediction for x = 0. It is not the mean resting heart rate of all of the adults."
+      }
+    ],
+    "explanation": "The y-intercept is the predicted response for x = 0. Here x = 0 is in the data, so it is interpretable.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Predictor",
+        "Coefficient"
+      ],
+      "rows": [
+        [
+          "Constant",
+          "78.40"
+        ],
+        [
+          "Hours of exercise per week",
+          "-2.15"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "R-sq = 54.3%"
+    }
+  },
+  {
+    "id": "ap-stat-u5-mcq-60",
+    "unit": "unit-5-regression-analysis",
+    "topic": "least-squares-regression",
+    "difficulty": "hard",
+    "stem": "Researchers used technology to find the least-squares regression line for predicting the resting heart rate, in beats per minute, of 40 adults from the number of hours per week that they exercise. The adults exercised between 0 and 8 hours per week. Part of the output is shown. What is the value of the correlation coefficient?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "r = 0.737",
+        "isCorrect": false,
+        "explanation": "The square root of r squared is 0.737, but the slope is negative, so r must be negative."
+      },
+      {
+        "label": "B",
+        "text": "r = -0.737",
+        "isCorrect": true,
+        "explanation": "r squared is 0.543, so |r| = sqrt(0.543) = 0.737. The slope is negative, so r is negative."
+      },
+      {
+        "label": "C",
+        "text": "r = -0.543",
+        "isCorrect": false,
+        "explanation": "0.543 is r squared, not r. r is the square root of r squared."
+      },
+      {
+        "label": "D",
+        "text": "r = -0.295",
+        "isCorrect": false,
+        "explanation": "This squares r squared instead of taking its square root."
+      }
+    ],
+    "explanation": "r = -sqrt(0.543) = -0.737. The sign of r matches the sign of the slope.",
+    "conceptLink": "ap-statistics/unit-5-regression-analysis/least-squares-regression",
+    "reviewed": false,
+    "diagram": {
+      "type": "data-table",
+      "columns": [
+        "Predictor",
+        "Coefficient"
+      ],
+      "rows": [
+        [
+          "Constant",
+          "78.40"
+        ],
+        [
+          "Hours of exercise per week",
+          "-2.15"
+        ]
+      ],
+      "rowHeaders": true,
+      "caption": "R-sq = 54.3%"
+    }
+  }
+]

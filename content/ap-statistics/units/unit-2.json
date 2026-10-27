@@ -1,0 +1,69 @@
+{
+  "slug": "unit-2-probability-random-variables-and-probability-distributions",
+  "order": 2,
+  "name": "Probability, Random Variables, and Probability Distributions",
+  "weightingMin": 15,
+  "weightingMax": 25,
+  "topics": [
+    {
+      "slug": "tabular-and-graphical-representations-for-the-distributions-of-two-categorical-variables",
+      "order": 1,
+      "name": "Tabular and Graphical Representations for the Distributions of Two Categorical Variables"
+    },
+    {
+      "slug": "summary-statistics-for-two-categorical-variables",
+      "order": 2,
+      "name": "Summary Statistics for Two Categorical Variables"
+    },
+    {
+      "slug": "estimating-probabilities-using-simulation",
+      "order": 3,
+      "name": "Estimating Probabilities Using Simulation"
+    },
+    {
+      "slug": "introduction-to-probability",
+      "order": 4,
+      "name": "Introduction to Probability"
+    },
+    {
+      "slug": "mutually-exclusive-events",
+      "order": 5,
+      "name": "Mutually Exclusive Events"
+    },
+    {
+      "slug": "conditional-probability",
+      "order": 6,
+      "name": "Conditional Probability"
+    },
+    {
+      "slug": "independent-events-and-unions-of-events",
+      "order": 7,
+      "name": "Independent Events and Unions of Events"
+    },
+    {
+      "slug": "introduction-to-random-variables-and-probability-distributions",
+      "order": 8,
+      "name": "Introduction to Random Variables and Probability Distributions"
+    },
+    {
+      "slug": "parameters-of-random-variables",
+      "order": 9,
+      "name": "Parameters of Random Variables"
+    },
+    {
+      "slug": "the-binomial-distribution",
+      "order": 10,
+      "name": "The Binomial Distribution"
+    },
+    {
+      "slug": "the-normal-distribution",
+      "order": 11,
+      "name": "The Normal Distribution"
+    },
+    {
+      "slug": "sampling-distributions-and-the-central-limit-theorem",
+      "order": 12,
+      "name": "Sampling Distributions and the Central Limit Theorem"
+    }
+  ]
+}

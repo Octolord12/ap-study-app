@@ -1,0 +1,84 @@
+{
+  "slug": "unit-3-inference-for-categorical-data-proportions",
+  "order": 3,
+  "name": "Inference for Categorical Data: Proportions",
+  "weightingMin": 15,
+  "weightingMax": 25,
+  "topics": [
+    {
+      "slug": "estimators",
+      "order": 1,
+      "name": "Estimators"
+    },
+    {
+      "slug": "sampling-distributions-for-sample-proportions",
+      "order": 2,
+      "name": "Sampling Distributions for Sample Proportions"
+    },
+    {
+      "slug": "constructing-a-confidence-interval-for-a-population-proportion",
+      "order": 3,
+      "name": "Constructing a Confidence Interval for a Population Proportion"
+    },
+    {
+      "slug": "justifying-a-claim-based-on-a-confidence-interval-for-a-population-proportion",
+      "order": 4,
+      "name": "Justifying a Claim Based on a Confidence Interval for a Population Proportion"
+    },
+    {
+      "slug": "setting-up-a-test-for-a-population-proportion",
+      "order": 5,
+      "name": "Setting Up a Test for a Population Proportion"
+    },
+    {
+      "slug": "p-values",
+      "order": 6,
+      "name": "p-Values"
+    },
+    {
+      "slug": "carrying-out-a-test-for-a-population-proportion",
+      "order": 7,
+      "name": "Carrying Out a Test for a Population Proportion"
+    },
+    {
+      "slug": "potential-errors-when-performing-tests",
+      "order": 8,
+      "name": "Potential Errors When Performing Tests"
+    },
+    {
+      "slug": "sampling-distributions-for-the-difference-between-sample-proportions",
+      "order": 9,
+      "name": "Sampling Distributions for the Difference Between Sample Proportions"
+    },
+    {
+      "slug": "constructing-a-confidence-interval-for-the-difference-between-two-population-proportions",
+      "order": 10,
+      "name": "Constructing a Confidence Interval for the Difference Between Two Population Proportions"
+    },
+    {
+      "slug": "justifying-a-claim-based-on-a-confidence-interval-for-the-difference-between-two-population-proportions",
+      "order": 11,
+      "name": "Justifying a Claim Based on a Confidence Interval for the Difference Between Two Population Proportions"
+    },
+    {
+      "slug": "setting-up-a-test-for-the-difference-between-two-population-proportions",
+      "order": 12,
+      "name": "Setting Up a Test for the Difference Between Two Population Proportions"
+    },
+    {
+      "slug": "carrying-out-a-test-for-the-difference-between-two-population-proportions",
+      "order": 13,
+      "name": "Carrying Out a Test for the Difference Between Two Population Proportions"
+    },
+    {
+      "slug": "setting-up-a-chi-square-test-for-homogeneity-or-independence",
+      "order": 14,
+      "name": "Setting Up a Chi-Square Test for Homogeneity or Independence"
+    },
+    {
+      "slug": "carrying-out-a-chi-square-test-for-homogeneity-or-independence",
+      "order": 15,
+      "name": "Carrying Out a Chi-Square Test for Homogeneity or Independence"
+    }
+  ]
+}
