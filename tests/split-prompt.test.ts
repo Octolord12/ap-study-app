@@ -11,6 +11,17 @@ describe("splitPromptAtParts", () => {
     });
   });
 
+  it("recognizes the bold capital A. that AP Statistics prompts use", () => {
+    expect(splitPromptAtParts("Set-up.\n\nUse the given information to respond to parts A and B.\n\n**A.** First.\n\n**B.** Second.")).toEqual({
+      intro: "Set-up.\n\nUse the given information to respond to parts A and B.",
+      parts: "**A.** First.\n\n**B.** Second.",
+    });
+  });
+
+  it("does not take a paragraph that merely starts with a capital A. for the first part", () => {
+    expect(splitPromptAtParts("Set-up.\n\nA. Smith studied this.\n\nMore text.")).toBeNull();
+  });
+
   it("also recognizes an unbolded (a)", () => {
     expect(splitPromptAtParts("Set-up.\n\n(a) First.\n\n(b) Second.")).toEqual({ intro: "Set-up.", parts: "(a) First.\n\n(b) Second." });
   });

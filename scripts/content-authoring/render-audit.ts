@@ -1,4 +1,4 @@
-// Renders every string of a course's *-hard.json and *-bc.json files (every file, for a course that is wholly new: AP Biology), and every topic refresher, through the real content pipeline
+// Renders every string of a course's *-hard.json and *-bc.json files (every file, for a course that is wholly new: AP Biology, AP Statistics), and every topic refresher, through the real content pipeline
 // and reports KaTeX errors and raw LaTeX left visible.  Usage: npx tsx scripts/content-authoring/render-audit.ts ap-physics-1
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
@@ -7,7 +7,7 @@ import { renderChoiceTextToHtml, renderContentToHtml } from "../../src/lib/conte
 const COURSE = process.argv[2];
 if (!COURSE) throw new Error("usage: render-audit.ts <course-slug>");
 const ROOT = path.join(__dirname, "../../content", COURSE);
-const WHOLLY_NEW_COURSES = ["ap-biology"];
+const WHOLLY_NEW_COURSES = ["ap-biology", "ap-statistics"];
 
 async function main() {
   const files = ["questions", "frqs"].flatMap((dir) =>

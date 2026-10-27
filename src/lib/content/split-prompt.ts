@@ -3,9 +3,10 @@ export interface SplitPrompt {
   parts: string;
 }
 
-// A free-response prompt is written as a set-up paragraph or two followed by the lettered parts, "**(a)** ...".
-// A figure belongs between the two: the real exam shows the stimulus before the questions that refer to it.
-const FIRST_PART = /\r?\n\r?\n(?=(?:\*\*\(a\)\*\*|\(a\))[ \t])/;
+// A free-response prompt is written as a set-up paragraph or two followed by the lettered parts, "**(a)** ..." (or "**A.** ...",
+// the College Board's own labels for AP Statistics). A figure belongs between the two: the real exam shows the stimulus before the
+// questions that refer to it.
+const FIRST_PART = /\r?\n\r?\n(?=(?:\*\*\(a\)\*\*|\*\*A\.\*\*|\(a\))[ \t])/;
 
 function isBalanced(markdown: string): boolean {
   const fences = markdown.split("\n").filter((line) => line.trimStart().startsWith("```")).length;
