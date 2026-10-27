@@ -1910,9 +1910,9 @@ of this section).
   counts were unchanged, the database still matched the files, and the live About page read "All 3,053 have been checked by a person." Re-seeding keeps all of these approvals while the files are unchanged; editing a text and re-seeding sends that row back for review.
 - **Status**: the course is complete and live; nothing is open.
 
-## AP Biology (the seventh course) - in progress
+## AP Biology (the seventh course)
 
-Started 2026-10-11 (owner: "Do Weighted Exam draw and then start on ap bio"; full BC-size scope accepted). **Nothing is seeded and no content exists yet; only the engine support below is built.**
+Started 2026-10-11 (owner: "Do Weighted Exam draw and then start on ap bio"; full BC-size scope accepted). **Complete and live (seeded and pushed 2026-10-12, approved 2026-10-26); nothing is open except the figure-placement question below.** The sections below are in the order the work was done, so early ones say "in the working tree only" or "nothing is seeded": that was true then.
 
 - **Facts used** (AP Central and the 2025-26 Course and Exam Description, a 240-page PDF the owner approved downloading on 2026-10-11, plus its one-page Clarifications and Corrections, which is cosmetic: formatting,
   resource links, FRQ 5's title, sample FRQs 2 and 5 swapped; text extracted with the PDFKit tool). **60 topics in 8 units** (7, 10, 5, 6, 5, 8, 12, 7); multiple-choice weightings 8-11, 10-13, 12-16, 10-15, 8-11,
@@ -2015,7 +2015,8 @@ Started 2026-10-11 (owner: "Do Weighted Exam draw and then start on ap bio"; ful
   Two real bugs found by it, both fixed and tested: **(1) the exam intro said "fewer than the real exam, so the simulation uses all of them" for AP Biology** (542 and 48 prompts): `frqShort` looked up prompt supply by the section's own type `FRQ`, but Biology's prompts are typed with the six kinds. It now uses `frqSupplyShort` (`lib/content/exam-sections.ts`, which goes through `examDraws`; mutation-checked).
   **(2) The vertebrate cladogram was cramped**: a five-level tree gave each level 50px, so the trait labels "Four limbs" and "Amniotic egg" ran into the connectors and the circles. A tree is now drawn at least `CLADOGRAM_LEVEL_WIDTH` (80px) per level, the room right of the tips follows the longest tip name instead of a fixed 170px, and the figure keeps a 416px minimum width inside a focusable box that scrolls sideways on a phone
   (labels about 8.7px at 375px instead of 6.4px). Tests in `diagrams-layout.test.ts` and `diagram-components.test.tsx`, mutation-checked.
-- **Open**: the free-response figure placement (owner's call, unchanged); the owner's review and approvals of the new content (all of it is unreviewed, so the About page's "checked by a person" count is below 100% until then).
+- **Approved 2026-10-26** (owner: "I reviewed all of it, approve everything"): a dry run first compared every stored question, choice, prompt, rubric, sample response, diagram and refresher with the content files (0 differences, 542 + 48 + 60 waiting), then one `updateMany` per table set `reviewed` on exactly those ids (542 questions, 48 prompts) and `refresherReviewed` on the 60 topics. The other six courses and every table and per-user count were identical before and after, and the live About page reads "All 3,703 have been checked by a person." The approval scripts (`approve-bio.ts`, `snap.ts`) lived in the session scratch folder, which is cleared between sessions; they were adapted from the Calculus BC ones described above and are easy to rewrite (compare rows with files, abort on any difference, scope every update to the course's own ids). Re-seeding keeps these approvals while the files are unchanged.
+- **Open**: the free-response figure placement (owner's call, unchanged).
 
 ## Forgot password and email
 
@@ -2269,7 +2270,7 @@ in app logic — updating them should be a data edit.
 - [x] **Post-launch: class tools, teacher role, parent link, search (2026-10-09).** Rename, hand over, new invite code, delete, block, an admin-granted teacher role gating
       `/teacher`, a student-made read-only parent link, refresher search, secure invite codes, uniform question draws. Three additive migrations. See "Social",
       "Teachers and /teacher", "Parent link" and "Refresher search".
-- [ ] **Post-launch: AP Biology (started 2026-10-11).** Engine support built (free-response kinds, three diagram kinds); content, seed and push still to do. See "AP Biology".
+- [x] **Post-launch: AP Biology (2026-10-11 to 2026-10-26).** A seventh course: engine support (six free-response kinds, three diagram kinds), 542 multiple choice, 48 free response, 60 refreshers, seeded, checked in the browser, pushed and approved. See "AP Biology".
 - [x] **Post-launch: exams follow the unit weightings (2026-10-11).** The multiple-choice and free-response draws are weighted by the CED unit weightings in every course (BC always gets a series
       question). Code and tests only, no migration or reseed. See "Exams follow the unit weightings" under Exam simulation.
 
