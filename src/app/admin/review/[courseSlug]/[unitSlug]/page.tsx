@@ -15,7 +15,6 @@ import { renderFrqPrompt } from "@/lib/study/render-frq-prompt";
 import { FrqPrompt } from "@/components/study/frq-prompt";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
-import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 export const metadata: Metadata = { title: "Content review" };
 
@@ -30,7 +29,6 @@ export default async function AdminReviewUnitPage({
   const result = await getUnitUnreviewedContent(courseSlug, unitSlug);
   if (!result) notFound();
   const { course, unit } = result;
-  const paperLined = isPaperLinedCourse(courseSlug);
   const questions = await Promise.all(
     unit.questions.map(async (question) => ({
       ...question,
@@ -94,7 +92,7 @@ export default async function AdminReviewUnitPage({
         <Section label={`Refreshers (${refreshers.length})`} note="Check the facts and the examples, not just the wording.">
           <div className="space-y-8">
             {refreshers.map((topic) => (
-              <Sheet key={topic.id} lined={paperLined}>
+              <Sheet key={topic.id}>
                 <p className="eyebrow">Refresher · {topic.name}</p>
                 <Html html={topic.refresherHtml} className="mt-2" />
                 <form action={markRefresherReviewed.bind(null, topic.id)} className="mt-5">
@@ -110,7 +108,7 @@ export default async function AdminReviewUnitPage({
         <Section label={`Questions (${unit.questions.length})`}>
           <div className="space-y-8">
             {questions.map((question) => (
-              <Sheet key={question.id} lined={paperLined}>
+              <Sheet key={question.id}>
                 <p className="eyebrow">
                   {question.topic.name} · {question.difficulty.toLowerCase()}
                 </p>
@@ -129,7 +127,7 @@ export default async function AdminReviewUnitPage({
                     ))}
                   </ChoiceList>
                 </div>
-                <div className="mt-5 border-t-2 border-current pt-4">
+                <div className="mt-5 border-t-[1.5px] border-current pt-4">
                   <p className="eyebrow !text-current">Explanation</p>
                   <Html html={question.explanationHtml} size="sm" className="mt-1.5" />
                 </div>
@@ -146,12 +144,12 @@ export default async function AdminReviewUnitPage({
         <Section label={`Free response (${unit.frqPrompts.length})`}>
           <div className="space-y-8">
             {frqPrompts.map((frq) => (
-              <Sheet key={frq.id} lined={paperLined}>
+              <Sheet key={frq.id}>
                 <p className="eyebrow">
                   {frq.topic.name} · {frq.pointValue} pts
                 </p>
                 <FrqPrompt prompt={frq.prompt} diagram={(frq.diagram as unknown as Diagram | null) ?? null} className="mt-2" />
-                <div className="mt-5 border-t-2 border-current pt-4">
+                <div className="mt-5 border-t-[1.5px] border-current pt-4">
                   <p className="eyebrow !text-current">Rubric</p>
                   <ul className="mt-2 space-y-2 text-sm">
                     {frq.rubricLines.map((line) => (
@@ -164,7 +162,7 @@ export default async function AdminReviewUnitPage({
                     ))}
                   </ul>
                 </div>
-                <div className="mt-5 border-t-2 border-current pt-4">
+                <div className="mt-5 border-t-[1.5px] border-current pt-4">
                   <p className="eyebrow !text-current">Sample response</p>
                   <Html html={frq.sampleResponseHtml} size="sm" className="mt-1.5" />
                 </div>

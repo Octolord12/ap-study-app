@@ -48,13 +48,11 @@ export function QuizRunner({
   backHref,
   backLabel,
   source = "PRACTICE",
-  paperLined = false,
 }: {
   questions: RenderedQuestion[];
   backHref: string;
   backLabel: string;
   source?: AttemptSource;
-  paperLined?: boolean;
 }) {
   const [index, setIndex] = useState(0);
   const [selectedLabel, setSelectedLabel] = useState<string | null>(null);
@@ -74,7 +72,7 @@ export function QuizRunner({
     return (
       <>
         {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
-        <div className="border-t-2 border-foreground pt-6">
+        <div className="border-t-[1.5px] border-foreground pt-6">
           <p className="eyebrow">Finished</p>
           <p className="numeral mt-2 text-[clamp(4rem,14vw,8rem)]">
             {correctCount} / {questions.length}
@@ -147,7 +145,7 @@ export function QuizRunner({
           </Link>
         </div>
 
-        <Sheet lined={paperLined} className="min-w-0">
+        <Sheet binder className="min-w-0">
           <Html html={question.stemHtml} className="text-[1.1875rem]" />
           {question.diagram && <DiagramRenderer diagram={question.diagram} />}
 
@@ -172,7 +170,7 @@ export function QuizRunner({
           </div>
 
           {revealed ? (
-            <div className="mt-6 border-t-2 border-current pt-4">
+            <div className="mt-6 border-t-[1.5px] border-current pt-4">
               <p className="eyebrow !text-current">Explanation</p>
               <Html html={question.explanationHtml} size="sm" className="mt-1.5" />
               <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2">

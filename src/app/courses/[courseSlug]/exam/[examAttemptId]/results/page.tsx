@@ -16,7 +16,6 @@ import { FrqPrompt } from "@/components/study/frq-prompt";
 import { Breadcrumb, Page, PageHeader, Section } from "@/components/ui/page";
 import { Sheet } from "@/components/ui/sheet";
 import type { Diagram } from "@/lib/content/diagram-schema";
-import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 export const metadata: Metadata = { title: "Exam results" };
 
@@ -28,7 +27,6 @@ export default async function ExamResultsPage({
   const userId = await requireUserId();
   const { courseSlug, examAttemptId } = await params;
   const db = getDb();
-  const paperLined = isPaperLinedCourse(courseSlug);
 
   const attempt = await db.examAttempt.findUnique({ where: { id: examAttemptId } });
   if (!attempt || attempt.userId !== userId) notFound();
@@ -138,7 +136,7 @@ export default async function ExamResultsPage({
         <Section label="Free response" note="Grade your own responses against each rubric.">
           <div className="space-y-6">
             {frqSections.map(({ frq, prompt, sampleResponseHtml, diagram, rubric, existingAttempt }) => (
-              <Sheet key={frq.id} lined={paperLined}>
+              <Sheet binder key={frq.id}>
                 <div className="space-y-6">
                   <div>
                     <p className="eyebrow mb-2">
@@ -165,7 +163,6 @@ export default async function ExamResultsPage({
         <ExamMcqReview
           questions={renderedQuestions}
           chosenLabelByQuestionId={chosenLabelByQuestionId}
-          paperLined={paperLined}
         />
       </Section>
     </Page>

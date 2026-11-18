@@ -37,14 +37,11 @@ interface FrqSelfGradeProps {
   existingAttemptId?: string;
   onGraded?: (result: { pointsAwarded: number; maxPoints: number }) => void;
   /**
-   * Wraps this component's own root in the paper-lined card chrome (border,
-   * padding, notebook background). Only pass this when the caller ISN'T
-   * already nesting this component inside its own paper-lined container
-   * (e.g. the exam results page shares one Card with the prompt above it) --
-   * two paper-lined boxes nested inside each other makes the ruled lines
-   * visibly discontinuous where the inner box's background restarts.
+   * Wraps this component's own root in a sheet (border, padding). Only pass this when the caller ISN'T
+   * already nesting this component inside its own sheet (e.g. the exam results page shares one sheet with
+   * the prompt above it): two sheets nested inside each other would show two ink edges and two stacks.
    */
-  paperLined?: boolean;
+  boxed?: boolean;
 }
 
 export function FrqSelfGrade({
@@ -55,7 +52,7 @@ export function FrqSelfGrade({
   existingResponseText,
   existingAttemptId,
   onGraded,
-  paperLined = false,
+  boxed = false,
 }: FrqSelfGradeProps) {
   const [responseText, setResponseText] = useState(existingResponseText ?? "");
   const [revealed, setRevealed] = useState(false);
@@ -149,7 +146,7 @@ export function FrqSelfGrade({
             </ul>
           </div>
 
-          <div className="border-t-2 border-current pt-4">
+          <div className="border-t-[1.5px] border-current pt-4">
             <p className="eyebrow !text-current">Sample response</p>
             <Html html={sampleResponseHtml} size="sm" className="mt-2" />
           </div>
@@ -173,5 +170,5 @@ export function FrqSelfGrade({
     </div>
   );
 
-  return paperLined ? <Sheet lined>{content}</Sheet> : content;
+  return boxed ? <Sheet binder>{content}</Sheet> : content;
 }

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Archivo, IBM_Plex_Mono, Source_Serif_4 } from "next/font/google";
+import { Bricolage_Grotesque, Literata } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteTabBar } from "@/components/nav/site-tab-bar";
@@ -11,25 +11,18 @@ import "./globals.css";
 // Variable names deliberately differ from Tailwind's own --font-sans /
 // --font-serif / --font-mono (mapped in globals.css): pointing one of those at
 // itself made every page fall back to the browser's default serif.
-const archivo = Archivo({
-  variable: "--font-archivo",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
-  axes: ["wdth"],
+  axes: ["wdth", "opsz"],
   display: "swap",
 });
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
+const literata = Literata({
+  variable: "--font-literata",
   subsets: ["latin"],
   style: ["normal", "italic"],
   axes: ["opsz"],
-  display: "swap",
-});
-
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
-  subsets: ["latin"],
-  weight: ["400", "500"],
   display: "swap",
 });
 
@@ -53,8 +46,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f8f6" },
-    { media: "(prefers-color-scheme: dark)", color: "#14161a" },
+    { media: "(prefers-color-scheme: light)", color: "#e3e7f0" },
+    { media: "(prefers-color-scheme: dark)", color: "#0e1320" },
   ],
 };
 
@@ -62,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${archivo.variable} ${sourceSerif.variable} ${plexMono.variable} h-full antialiased`}
+      className={`${bricolage.variable} ${literata.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">

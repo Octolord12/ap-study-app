@@ -14,7 +14,6 @@ import { RewardToast, hasReward, type Reward } from "@/components/gamification/r
 import { playBossDefeatedSound, playBossHitSound } from "@/lib/gamification/sound";
 import type { RenderedQuestion } from "@/components/study/quiz-runner";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
-import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 import { bossBattleNeeded } from "@/lib/study/boss-battle-rules";
 
 export function BossBattleRunner({
@@ -55,7 +54,6 @@ export function BossBattleRunner({
   const total = questions.length;
   const healthPct = Math.max(0, 100 - Math.round((correctCount / total) * 100));
   const question = questions[index];
-  const paperLined = isPaperLinedCourse(courseSlug);
   const isLast = index === total - 1;
 
   async function handleAttack() {
@@ -115,7 +113,7 @@ export function BossBattleRunner({
 
   if (battleResult) {
     return (
-      <div className="border-t-2 border-foreground pt-6">
+      <div className="border-t-[1.5px] border-foreground pt-6">
         {/* Badges and titles are awarded when the battle is submitted, which is
             the moment this screen replaces the questions. */}
         {reward ? <RewardToast key={rewardKey} reward={reward} onDismiss={() => setReward(null)} /> : null}
@@ -201,7 +199,7 @@ export function BossBattleRunner({
           </div>
         </div>
 
-        <Sheet lined={paperLined}>
+        <Sheet binder>
           <Html html={question.stemHtml} className="text-[1.1875rem]" />
           {question.diagram && <DiagramRenderer diagram={question.diagram} />}
 

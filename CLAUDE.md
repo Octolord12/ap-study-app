@@ -16,7 +16,7 @@ and AP Calculus BC as a sixth (see "AP Calculus BC").
 | Layer | Choice | Why |
 |---|---|---|
 | Framework | Next.js 16 (App Router, TypeScript), deployed on Vercel | One codebase for frontend + backend, mobile-first, best-documented React framework for a solo maintainer. |
-| Styling/UI | Tailwind CSS v4 + shadcn/ui primitives, one custom design system on top | Components you own the code for (not a black box). The look (graphite on paper, one highlighter accent) lives in `globals.css` tokens and a small shared component set -- see "Visual design system" below. |
+| Styling/UI | Tailwind CSS v4 + shadcn/ui primitives, one custom design system on top | Components you own the code for (not a black box). The look (a school binder: white sheets on a cool desk, ink for actions, one color per course) lives in `globals.css` tokens and a small shared component set -- see "Binder redesign" below. |
 | Database | Postgres via Neon (Vercel Marketplace) | Serverless, scales to zero, free tier, relational data fits the course→unit→topic→question hierarchy. |
 | ORM | Prisma 7 (with `@prisma/adapter-neon` driver adapter) | Gentlest learning curve for a solo maintainer; declarative schema + migrations. Prisma 7's generated client *requires* a driver adapter now (no more bare `new PrismaClient()` reading `DATABASE_URL` implicitly) — see `src/lib/db/index.ts`. |
 | Auth | Auth.js (NextAuth v5 beta), Credentials provider, self-hosted | No third party holding user emails (some users may be minors); free; full control. Chosen over Clerk for privacy, per project decision. |
@@ -894,7 +894,35 @@ created one real test account (`deploy-smoketest@example.com` / username
 `deploy_smoketest`) in the shared Neon database. It and the other early test
 accounts were deleted on 2026-10-05 (see "Test accounts" in known issues).
 
-## Visual design system (post-launch overhaul)
+## Binder redesign (2026-11-17, current look)
+
+Replaces the graphite-and-highlighter system below (kept for history; where the two disagree, this section is right). Process: the owner asked to "rewrite the look", one direction was proposed and shown as a working specimen (an Artifact, "AP Study Binder"), then
+approved ("Yes, build it") and built. **Committed but not pushed when this was written; `tsc` was clean, but the full vitest suite, `npm run lint` and `npm run build` had not run (see the dataless-files gotcha below).**
+
+**The idea**: a subject binder. A white sheet with an ink edge and the edge of the sheet behind it, punched holes in its left margin, divider tabs along its top, one tab color per course. **Color is the course, ink is the action.**
+- **Tokens** (`globals.css`): `--background` is the desk `#e3e7f0`, `--card` the page `#fff`, `--foreground` ink `#1b2438`, `--muted-foreground` `#475069` (6.0:1 on the muted fill, 6.5:1 on the desk); `.dark` is `#0e1320` desk, `#1a2133` page, `#e8ecf5` ink. The shadcn names are unchanged, so primitives needed no
+  rewrite. Radii are 4px (sheets), 6px (buttons, answer rows), 2px (label plates). No soft shadows anywhere; the only shadow is the hard offset of the sheet behind (`.sheet`) and the button hover.
+- **The course color** is `--c`. `:root` gives the default (periwinkle `#9aa6f2`); any element with `data-c="<key>"` re-points it (`csa #62c7de`, `world #f2a65a`, `ush #ee7f76`, `ab #9aa6f2`, `bc #b98ceb`, `phys #f28db8`, `bio #7ed493`, `stats #ebcf55`), and `--mark` / `--accent` follow it
+  (`:root, [data-c] { --mark: var(--c) }` has to be re-declared per element because `var()` resolves where it is declared). The color is the same in light and dark and is only ever a **background behind `--on-mark` ink** (`#141b2d`; every tab color is at least 6.5:1 with it). Tailwind: `bg-course`, `bg-mark`, `text-on-mark`.
+  `lib/content/course-accent.ts` maps a course slug to its key and its short tab label (`ap-calc` -> `ab` / "Calc AB"); **a course added later needs one line there and one `[data-c]` rule in `globals.css`**, or it silently gets the default color.
+  `app/courses/[courseSlug]/layout.tsx` sets `data-c` for everything under a course and draws the course-color band under the header, so every course page, quiz, exam and boss battle takes the color with no per-page work.
+- **Type** (`next/font/google` in `layout.tsx`): Bricolage Grotesque (variable `wdth` + `opsz`) for display and UI, Literata for everything read at length, the system monospace for code. `.display` (800, 78% width), `.heading`, `.numeral`, `.eyebrow` (now **sentence case**, 14px, 600, no mono, no caps). The `--font-bricolage` / `--font-literata`
+  variable names differ from Tailwind's `--font-sans` / `--font-serif` on purpose (the old never-alias-a-variable-to-itself bug).
+- **Components**: `Sheet` (`ui/sheet.tsx`) takes `binder` (three punched holes and room for them: used on every sheet a student works on: quiz, boss, exam, review, free-response prompt), `band` (course color across the top) and `stack` (1 or 2 sheets showing underneath). `Button`: ink fills, and on hover
+  the button lifts and casts a hard `3px` shadow in `--c`; ghost and link variants highlight in the course color. `CourseTab` / `TabStripe` (`ui/course-tab.tsx`): the divider tab (`.tab-chip`) and the eight-tab stripe across the top of the header. `.plate` is the white label box ("Level 7", "Enrolled").
+  `FrqSelfGrade`'s `paperLined` prop is now `boxed` (wrap in a `Sheet`); the nested/standalone rule in "FRQ self-grading" still holds, with "paper-lined" read as "sheet".
+- **Answer rows** (`.choice` in `globals.css`, `ui/choice.tsx`): a rounded row with a lettered bubble. Picked = the course color tinted into the row, an ink edge, a filled ink bubble. Revealed: the right row gets a green edge and the word "Correct", a wrong pick a **dashed red edge** and "Your answer", each with an icon in the bubble. **Never a green or red
+  fill**: Biology is green and U.S. History is coral, so a fill would read as a course. The verdict sits under the text (grid areas `bubble text / . verdict`), and the text span is `.choice-text`.
+- **Landing**: `SampleQuestion` is a tabbed binder, one tab and one question per course (`lib/marketing/sample-question.ts`, eight items: the Calculus AB one is verbatim from the bank, the other seven were written for the page and their answers worked out by hand; none refers to a choice by letter). `lib/marketing/render-samples.ts` runs the markdown
+  pipeline once per server process and shuffles the choices per visit. Lists that name a course (courses page, Today, the exams list) lead with its `CourseTab`.
+- **Retired**: the notebook-paper cards (`.paper-lined`, `--nb-*`, `lib/content/paper-lined.ts`, every `paperLined` prop and `lined` Sheet prop), the highlighter-yellow accent, mono caps labels, the uppercase wordmark. `lib/content/math-courses.ts` still decides the plain-text-math typesetting; only the card styling is gone, so the "notebook-paper" remarks in the sections below are historical.
+  Also updated to the new colors: favicon (a divider tab), apple icon, Open Graph image (eight tabs), manifest, `global-error.tsx`, the email button.
+- **Checked** (signed in with scratch account `scratch_binder`, local dev server): landing at 800 and 375px (no overflow after a grid fix: a grid item holding a scrolling tab row needs `min-w-0` and a `minmax(0,1fr)` column), courses list, a course page, a daily quiz with a reveal, Today, Progress in dark mode. Not looked at: the exam
+  runner, boss battle, free-response page, Friends/Classes/Settings/admin pages (they follow the tokens, but nobody has looked), and the specimen's per-day streak "holes" were not built (the Today screen keeps the tally marks).
+- **Dev-environment gotcha found doing this**: this folder is synced by iCloud and about 64,000 files in `node_modules` were evicted placeholders (`ls -lO` shows `dataless`). Reading one blocks until it downloads, so `tsc` with its incremental cache and **vitest** (workers time out after 60 s: "Timeout waiting for worker to respond") hang with 0% CPU.
+  `tsc --noEmit --incremental false` works. Materialize the files with `find node_modules -type f -flags +dataless -print0 | xargs -0 -P 16 -n 40 cat > /dev/null`, or keep the project out of iCloud's "Optimize Mac Storage".
+
+## Visual design system (post-launch overhaul; superseded by the binder redesign above)
 
 The owner found the UI generic (shadcn defaults, a stock mint-teal palette,
 emoji icons, one centered column on every page) and asked for it to look like
@@ -1027,7 +1055,9 @@ a user choice. Contrast: every text pair is >= 5.6:1 in both modes.
   highlighted-row text, the stuck yellow after reveal, the pre-hydration tap,
   the 768px header overflow) were invisible in a first screenshot.
 
-### "Paper-lined" question cards for Calc AB / Physics 1
+### "Paper-lined" question cards for Calc AB / Physics 1 (retired 2026-11-17)
+
+*Superseded: the binder redesign removed `.paper-lined`, `paper-lined.ts` and the `paperLined` props; this section is kept for the history of why choices render the way they do.*
 
 A ruled-notebook-paper background for question cards, requested by the
 owner specifically for the two math-heavy courses -- shown as a live

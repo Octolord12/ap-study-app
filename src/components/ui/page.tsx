@@ -54,7 +54,7 @@ export function PageHeader({
   className?: string
 }) {
   return (
-    <header className={cn(GRID, "border-b-2 border-foreground pb-8", className)}>
+    <header className={cn(GRID, "border-b-[1.5px] border-foreground pb-8", className)}>
       <div className="eyebrow md:pt-3">{eyebrow}</div>
       <div className="min-w-0">
         <h1 className="display text-[clamp(2.25rem,5.5vw,3.5rem)] text-balance">{title}</h1>

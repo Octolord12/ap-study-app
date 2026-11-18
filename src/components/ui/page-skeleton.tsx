@@ -13,7 +13,7 @@ export function PageSkeleton() {
       <p role="status" className="eyebrow">
         Loading
       </p>
-      <div className="mt-6 border-b-2 border-foreground pb-8">
+      <div className="mt-6 border-b-[1.5px] border-foreground pb-8">
         <div className="h-12 w-3/5 max-w-md bg-muted motion-safe:animate-pulse" />
       </div>
       <div className="mt-8 space-y-0 border-b border-border">

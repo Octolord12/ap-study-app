@@ -4,7 +4,6 @@ import { requireUserId } from "@/lib/auth/session";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { QuizRunner } from "@/components/study/quiz-runner";
 import { Page } from "@/components/ui/page";
-import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 import type { AttemptSource } from "@/generated/prisma/client";
 
 export const metadata: Metadata = { title: "Quiz" };
@@ -43,7 +42,6 @@ export default async function CourseQuizPage({
         backHref={backHref}
         backLabel={backLabel || "Back to course"}
         source={attemptSource}
-        paperLined={isPaperLinedCourse(courseSlug)}
       />
     </Page>
   );

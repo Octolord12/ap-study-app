@@ -13,7 +13,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { cn } from "cn";
 import { DiagramRenderer } from "@/components/diagrams/diagram-renderer";
 import type { Diagram } from "@/lib/content/diagram-schema";
-import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 import { frqTitle } from "@/lib/content/exam-format";
 import { examDraftKey, parseExamDraft, purgeStaleExamDrafts, serializeExamDraft } from "@/lib/study/exam-draft";
 
@@ -76,7 +75,6 @@ export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqI
 
   const items = [...mcqItems, ...frqItems];
   const total = items.length;
-  const paperLined = isPaperLinedCourse(courseSlug);
 
   async function handleSubmit() {
     if (submittingRef.current) return;
@@ -157,7 +155,7 @@ export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqI
   }
 
   if (total === 0) {
-    return <p className="reading border-t-2 border-foreground pt-6 text-lg">No questions are available for this exam.</p>;
+    return <p className="reading border-t-[1.5px] border-foreground pt-6 text-lg">No questions are available for this exam.</p>;
   }
 
   const isFrq = index >= mcqItems.length;
@@ -246,7 +244,7 @@ export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqI
           <div className="mt-3">{grid}</div>
         </details>
 
-        <Sheet lined={paperLined}>
+        <Sheet binder>
           {mcqItem ? (
             <>
               <Html html={mcqItem.stemHtml} className="text-[1.1875rem]" />
@@ -301,7 +299,7 @@ export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqI
           ) : null}
         </div>
 
-        <div className="border-t-2 border-foreground pt-4">
+        <div className="border-t-[1.5px] border-foreground pt-4">
           {confirming ? (
             <div role="alertdialog" aria-label="Confirm submit" className="space-y-3">
               <p className="text-sm font-medium">

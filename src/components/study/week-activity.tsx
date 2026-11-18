@@ -50,7 +50,7 @@ export function WeekActivity({ entries, forParent = false }: { entries: Activity
             </span>
             <span aria-hidden className="flex h-24 w-full items-end bg-border">
               <i
-                className={cn("block w-full", day.isToday ? "bg-mark border-b-2 border-foreground" : "bg-foreground")}
+                className={cn("block w-full", day.isToday ? "bg-mark border-b-[1.5px] border-foreground" : "bg-foreground")}
                 style={{ height: day.questions > 0 ? `${Math.max(6, Math.round((day.questions / peak) * 100))}%` : day.active ? "3px" : "0" }}
               />
             </span>

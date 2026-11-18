@@ -12,18 +12,16 @@ import { Sheet } from "@/components/ui/sheet";
 export function ExamMcqReview({
   questions,
   chosenLabelByQuestionId,
-  paperLined = false,
 }: {
   questions: RenderedQuestion[];
   chosenLabelByQuestionId: Map<string, string>;
-  paperLined?: boolean;
 }) {
   return (
     <div className="space-y-6">
       {questions.map((question, index) => {
         const chosenLabel = chosenLabelByQuestionId.get(question.id);
         return (
-          <Sheet key={question.id} lined={paperLined}>
+          <Sheet binder key={question.id}>
             <p className="eyebrow">Question {index + 1}</p>
             <Html html={question.stemHtml} className="mt-2" />
             {question.diagram && <DiagramRenderer diagram={question.diagram} />}
@@ -46,7 +44,7 @@ export function ExamMcqReview({
               </ChoiceList>
             </div>
             {!chosenLabel ? <p className="mt-3 text-sm font-medium">You didn&apos;t answer this one.</p> : null}
-            <div className="mt-5 border-t-2 border-current pt-4">
+            <div className="mt-5 border-t-[1.5px] border-current pt-4">
               <p className="eyebrow !text-current">Explanation</p>
               <Html html={question.explanationHtml} size="sm" className="mt-1.5" />
               <div className="mt-3 flex flex-wrap items-center gap-x-6 gap-y-2">

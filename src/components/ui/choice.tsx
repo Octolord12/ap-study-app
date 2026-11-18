@@ -42,7 +42,7 @@ function ChoiceFace({ shown, textHtml, explanationHtml, revealed, state, verdict
       <span className="choice-bubble" aria-hidden>
         {icon ?? shown}
       </span>
-      <span className="min-w-0">
+      <span className="choice-text">
         <Html html={textHtml} inline className={state === "correct" ? "font-semibold" : undefined} />
         {revealed && explanationHtml ? <Html html={explanationHtml} size="sm" className="mt-1.5 opacity-85" /> : null}
       </span>

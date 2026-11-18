@@ -5,15 +5,15 @@
 export default function GlobalError({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, background: "#f7f8f6", color: "#1f2328", fontFamily: "system-ui, -apple-system, 'Segoe UI', sans-serif" }}>
+      <body style={{ margin: 0, background: "#e3e7f0", color: "#1b2438", fontFamily: "system-ui, -apple-system, 'Segoe UI', sans-serif" }}>
         <main style={{ maxWidth: 640, margin: "0 auto", padding: "96px 24px" }}>
-          <p style={{ fontSize: 12, letterSpacing: "0.08em", textTransform: "uppercase", color: "#59606a", margin: 0 }}>Something broke</p>
+          <p style={{ fontSize: 14, fontWeight: 600, color: "#475069", margin: 0 }}>Something broke</p>
           <h1 style={{ fontSize: 44, lineHeight: 1, margin: "12px 0 16px", fontWeight: 800 }}>The app didn&apos;t load.</h1>
           <p style={{ fontSize: 18, lineHeight: 1.5, margin: "0 0 28px" }}>Reload the page. If it keeps happening, try again in a few minutes.</p>
           <button
             type="button"
             onClick={() => reset()}
-            style={{ background: "#1f2328", color: "#f7f8f6", border: "1px solid #1f2328", borderRadius: 2, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer" }}
+            style={{ background: "#1b2438", color: "#ffffff", border: "1px solid #1b2438", borderRadius: 6, padding: "12px 20px", fontSize: 15, fontWeight: 600, cursor: "pointer" }}
           >
             Try again
           </button>

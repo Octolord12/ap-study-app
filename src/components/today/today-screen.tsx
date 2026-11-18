@@ -6,7 +6,9 @@ import { CramNotice } from "@/components/study/cram-toggle";
 import { ComingSoon } from "@/components/marketing/coming-soon";
 import { ExamCountdown } from "@/components/study/exam-countdown";
 import { listCourses } from "@/lib/study/queries";
+import { courseAccent } from "@/lib/content/course-accent";
 import { Button } from "@/components/ui/button";
+import { CourseTab } from "@/components/ui/course-tab";
 import { XpBar } from "@/components/ui/meter";
 import { Page, PageHeader, RuledList, Section } from "@/components/ui/page";
 import { Tally } from "@/components/ui/tally";
@@ -33,7 +35,10 @@ export async function TodayScreen({ userId }: { userId: string }) {
           <RuledList>
             {catalog.map((course) => (
               <li key={course.id} className="flex items-center justify-between gap-4 py-4">
-                <span className="heading text-xl">{course.name}</span>
+                <span className="heading flex items-center gap-3 text-xl">
+                  <CourseTab slug={course.slug} name={course.name} className="shrink-0" />
+                  {course.name}
+                </span>
                 <Button render={<Link href={`/courses/${course.slug}`} />} nativeButton={false} variant="outline" size="sm">
                   Open
                 </Button>
@@ -62,11 +67,14 @@ export async function TodayScreen({ userId }: { userId: string }) {
         <RuledList>
           {courses.map((course) => (
             <li key={course.id} className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-4">
-              <div>
-                <p className="heading text-xl">{course.name}</p>
-                <p className="mt-0.5 text-sm text-muted-foreground">
-                  {course.dailyDone ? "Done for today. A new set opens tomorrow." : "Five questions."}
-                </p>
+              <div className="flex items-start gap-3">
+                <CourseTab slug={course.slug} name={course.name} className="mt-1 shrink-0" />
+                <div>
+                  <p className="heading text-xl">{course.name}</p>
+                  <p className="mt-0.5 text-sm text-muted-foreground">
+                    {course.dailyDone ? "Done for today. A new set opens tomorrow." : "Five questions."}
+                  </p>
+                </div>
               </div>
               <Button
                 render={<Link href={`/courses/${course.slug}/daily`} />}
@@ -94,11 +102,14 @@ export async function TodayScreen({ userId }: { userId: string }) {
               .filter((c) => c.dueCount > 0)
               .map((course) => (
                 <li key={course.id} className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-4">
-                  <div>
-                    <p className="heading text-xl">{course.name}</p>
-                    <p className="mt-0.5 text-sm text-muted-foreground">
-                      {course.dueCount} question{course.dueCount === 1 ? "" : "s"} {cram ? "to cram" : "due"}
-                    </p>
+                  <div className="flex items-start gap-3">
+                    <CourseTab slug={course.slug} name={course.name} className="mt-1 shrink-0" />
+                    <div>
+                      <p className="heading text-xl">{course.name}</p>
+                      <p className="mt-0.5 text-sm text-muted-foreground">
+                        {course.dueCount} question{course.dueCount === 1 ? "" : "s"} {cram ? "to cram" : "due"}
+                      </p>
+                    </div>
                   </div>
                   <Button render={<Link href={`/courses/${course.slug}/practice/weak-spot`} />} nativeButton={false} variant="outline">
                     {cram ? "Start cram" : "Review"}
@@ -114,8 +125,11 @@ export async function TodayScreen({ userId }: { userId: string }) {
           {courses
             .filter((c) => c.examDateIso)
             .map((course) => (
-              <div key={course.id}>
-                <p className="heading mb-2 text-xl">{course.name}</p>
+              <div key={course.id} data-c={courseAccent(course.slug)}>
+                <p className="heading mb-2 flex items-center gap-3 text-xl">
+                  <CourseTab slug={course.slug} name={course.name} className="shrink-0" />
+                  {course.name}
+                </p>
                 <ExamCountdown
                   examDateIso={course.examDateIso!}
                   total={course.coverage.total}

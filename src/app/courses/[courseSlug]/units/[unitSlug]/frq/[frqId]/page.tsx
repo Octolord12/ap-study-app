@@ -12,7 +12,6 @@ import { ReportProblem } from "@/components/study/report-problem";
 import { Page } from "@/components/ui/page";
 import { Sheet } from "@/components/ui/sheet";
 import type { Diagram } from "@/lib/content/diagram-schema";
-import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: "Free-response practice" };
@@ -34,7 +33,6 @@ export default async function FrqPracticePage({
     renderContentToHtml(frq.sampleResponse, courseSlug),
   ]);
   const rubric = await renderRubric(frq.rubric, courseSlug);
-  const paperLined = isPaperLinedCourse(courseSlug);
 
   return (
     <Page>
@@ -56,7 +54,7 @@ export default async function FrqPracticePage({
         </div>
 
         <div className="min-w-0 space-y-6">
-          <Sheet lined={paperLined}>
+          <Sheet binder>
             <FrqPrompt prompt={prompt} diagram={diagram} />
           </Sheet>
 
@@ -65,7 +63,7 @@ export default async function FrqPracticePage({
             pointValue={frq.pointValue}
             rubric={rubric}
             sampleResponseHtml={sampleResponseHtml}
-            paperLined={paperLined}
+            boxed
           />
         </div>
       </div>

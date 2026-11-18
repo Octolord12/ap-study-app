@@ -7,21 +7,22 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * One identity: graphite on cool paper, with a single highlighter accent.
- * The semantic names (background, foreground, muted, ...) are the shadcn
- * contract that the UI primitives are written against; the design names
- * (paper, ink, mark, ...) are aliases onto them so pages can say what they
- * mean. Light is the default; .dark is applied to <html> by the theme store
+ * One identity: a school binder. A white sheet on a cool desk, ink for every action, and one color per course
+ * (the divider tab) that marks which course you are in. The semantic names (background, foreground, muted, ...)
+ * are the shadcn contract the UI primitives are written against; the design names (mark, on-mark, correct, ...)
+ * are aliases onto them. Light is the default; .dark is applied to <html> by the theme store
  * (src/components/theme/theme-sync.tsx, src/lib/theme/inline-script.ts).
  *
- * The highlighter is a background, never a text color: every use pairs it
- * with --on-mark (ink). Correct / incorrect always travel with an icon and a
- * word, never color alone.
+ * --c is the current course color. :root gives the default; any element with data-c="<key>" (see
+ * src/lib/content/course-accent.ts) re-points it, and --mark / --accent follow it. The course color is a
+ * background behind ink text (--on-mark), never a text color, and it is the same in light and dark.
+ * Correct / incorrect always travel with an icon and a word, never color alone, and never a fill: green and red
+ * are course colors too.
  */
 @theme inline {
-  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-sans: var(--font-bricolage), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: var(--font-literata), Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --font-heading: var(--font-sans);
 
   --color-background: var(--background);
@@ -47,76 +48,79 @@
   --color-on-mark: var(--on-mark);
   --color-correct: var(--correct);
   --color-incorrect: var(--incorrect);
+  --color-course: var(--c);
 
-  --radius-sm: 2px;
-  --radius-md: 3px;
-  --radius-lg: 4px;
-  --radius-xl: 6px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 6px;
+  --radius-xl: 10px;
 }
 
 :root {
   color-scheme: light;
-  --background: #f7f8f6;
-  --foreground: #1f2328;
+  --background: #e3e7f0;
+  --foreground: #1b2438;
   --card: #ffffff;
-  --card-foreground: #1f2328;
+  --card-foreground: #1b2438;
   --popover: #ffffff;
-  --popover-foreground: #1f2328;
-  --primary: #1f2328;
-  --primary-foreground: #f7f8f6;
-  --secondary: #eceeea;
-  --secondary-foreground: #1f2328;
-  --muted: #eceeea;
-  --muted-foreground: #59606a;
-  --accent: #ffe24a;
-  --accent-foreground: #1f2328;
-  --destructive: #c62828;
-  --border: rgb(31 35 40 / 0.16);
-  --input: #1f2328;
-  --ring: #1f2328;
+  --popover-foreground: #1b2438;
+  --primary: #1b2438;
+  --primary-foreground: #ffffff;
+  --secondary: #d9dfec;
+  --secondary-foreground: #1b2438;
+  --muted: #d9dfec;
+  --muted-foreground: #475069;
+  --destructive: #b3261e;
+  --border: rgb(27 36 56 / 0.2);
+  --input: #1b2438;
+  --ring: #1b2438;
 
-  --mark: #ffe24a;
-  --on-mark: #1f2328;
-  --correct: #157347;
-  --incorrect: #c62828;
+  --on-mark: #141b2d;
+  --correct: #14703a;
+  --incorrect: #b3261e;
 
-  --nb-paper: #fdf9ef;
-  --nb-ink: #2b2620;
-  --nb-line: rgb(90 120 170 / 0.3);
-  --nb-margin: rgb(196 90 90 / 0.4);
+  /* the default course color, used outside a course */
+  --c: #9aa6f2;
 }
 
 .dark {
   color-scheme: dark;
-  --background: #14161a;
-  --foreground: #eceef0;
-  --card: #1c1f24;
-  --card-foreground: #eceef0;
-  --popover: #1c1f24;
-  --popover-foreground: #eceef0;
-  --primary: #eceef0;
-  --primary-foreground: #14161a;
-  --secondary: #23272d;
-  --secondary-foreground: #eceef0;
-  --muted: #23272d;
-  --muted-foreground: #a0a7b0;
-  --accent: #ffd93d;
-  --accent-foreground: #14161a;
+  --background: #0e1320;
+  --foreground: #e8ecf5;
+  --card: #1a2133;
+  --card-foreground: #e8ecf5;
+  --popover: #1a2133;
+  --popover-foreground: #e8ecf5;
+  --primary: #e8ecf5;
+  --primary-foreground: #0e1320;
+  --secondary: #232c42;
+  --secondary-foreground: #e8ecf5;
+  --muted: #232c42;
+  --muted-foreground: #a3adc6;
   --destructive: #ff8a80;
-  --border: rgb(236 238 240 / 0.16);
-  --input: rgb(236 238 240 / 0.7);
-  --ring: #eceef0;
+  --border: rgb(232 236 245 / 0.2);
+  --input: rgb(232 236 245 / 0.7);
+  --ring: #e8ecf5;
 
-  --mark: #ffd93d;
-  --on-mark: #14161a;
-  --correct: #5fcb8a;
+  --correct: #5fd08a;
   --incorrect: #ff8a80;
-
-  --nb-paper: #1d1912;
-  --nb-ink: #ece6d9;
-  --nb-line: rgb(255 255 255 / 0.07);
-  --nb-margin: rgb(214 120 110 / 0.3);
 }
+
+/* var() is resolved where it is declared, so --mark has to be re-declared on every element that sets --c. */
+:root,
+[data-c] {
+  --mark: var(--c);
+  --accent: var(--c);
+  --accent-foreground: var(--on-mark);
+}
+[data-c="csa"] { --c: #62c7de; }
+[data-c="world"] { --c: #f2a65a; }
+[data-c="ush"] { --c: #ee7f76; }
+[data-c="ab"] { --c: #9aa6f2; }
+[data-c="bc"] { --c: #b98ceb; }
+[data-c="phys"] { --c: #f28db8; }
+[data-c="bio"] { --c: #7ed493; }
+[data-c="stats"] { --c: #ebcf55; }
 
 @layer base {
   * {
@@ -130,7 +134,7 @@
     @apply bg-background text-foreground antialiased;
   }
   :focus-visible {
-    outline: 2px solid var(--ring);
+    outline: 3px solid var(--ring);
     outline-offset: 2px;
   }
   ::selection {
@@ -145,35 +149,34 @@
 }
 
 /*
- * Type roles. Archivo carries display and UI (width axis: 75% for display
- * numerals and headlines), Source Serif 4 carries everything a student reads
- * at length (stems, explanations), IBM Plex Mono carries labels and code.
+ * Type roles. Bricolage Grotesque carries display and UI (width axis: narrow for display numerals and headlines),
+ * Literata carries everything a student reads at length (stems, explanations), and code uses the system monospace.
  */
 @layer components {
   .display {
     font-weight: 800;
-    font-stretch: 75%;
-    line-height: 0.95;
-    letter-spacing: -0.01em;
+    font-stretch: 78%;
+    line-height: 0.98;
+    letter-spacing: -0.02em;
   }
   .heading {
     font-weight: 700;
-    font-stretch: 85%;
-    line-height: 1.1;
+    font-stretch: 92%;
+    line-height: 1.12;
+    letter-spacing: -0.005em;
   }
   .numeral {
     font-weight: 800;
-    font-stretch: 75%;
+    font-stretch: 80%;
     line-height: 1;
+    letter-spacing: -0.02em;
     font-variant-numeric: tabular-nums;
   }
+  /* A small label in sentence case: where you are, what a block is. */
   .eyebrow {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.35;
     color: var(--muted-foreground);
   }
   .hl {
@@ -187,7 +190,85 @@
     border-top: 1px solid var(--border);
   }
   .rule-strong {
-    border-top: 2px solid var(--foreground);
+    border-top: 1.5px solid var(--foreground);
+  }
+  /* The label plate on a binder spine: a small white box with an ink edge. */
+  .plate {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1.5px solid var(--foreground);
+    border-radius: 2px;
+    background: var(--card);
+    color: var(--card-foreground);
+    padding: 0.1875rem 0.5625rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  /* A divider tab: the course color with an ink edge, rounded at the top. */
+  .tab-chip {
+    display: inline-block;
+    background: var(--c);
+    color: var(--on-mark);
+    border: 1.5px solid var(--foreground);
+    border-radius: 6px 6px 0 0;
+    padding: 0.4375rem 0.5rem 0.375rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+/* A sheet of paper: white, ink edge, and the edge of the sheet behind it. */
+.sheet {
+  position: relative;
+  background: var(--card);
+  color: var(--card-foreground);
+  border: 1.5px solid var(--foreground);
+  border-radius: 4px;
+  box-shadow:
+    4px 4px 0 0 var(--card),
+    4px 4px 0 1.5px var(--foreground);
+}
+.sheet[data-stack="2"] {
+  box-shadow:
+    5px 5px 0 0 var(--card),
+    5px 5px 0 1.5px var(--foreground),
+    10px 10px 0 0 var(--card),
+    10px 10px 0 1.5px var(--foreground);
+}
+.sheet-band {
+  height: 10px;
+  background: var(--c);
+  border-bottom: 1.5px solid var(--foreground);
+  border-radius: 2px 2px 0 0;
+}
+.sheet-holes {
+  position: absolute;
+  inset: 0 auto 0 0.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  pointer-events: none;
+}
+.sheet-holes i {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 9999px;
+  background: var(--background);
+  box-shadow: inset 1.5px 2px 0 var(--border);
+}
+@media (max-width: 40rem) {
+  .sheet-holes {
+    left: 0.6875rem;
+  }
+  .sheet-holes i {
+    width: 1rem;
+    height: 1rem;
   }
 }
 
@@ -200,7 +281,7 @@
 .reading {
   font-family: var(--font-serif);
   font-size: 1.0625rem;
-  line-height: 1.65;
+  line-height: 1.6;
   color: var(--foreground);
 }
 .reading.prose {
@@ -221,7 +302,7 @@
   --tw-prose-th-borders: var(--border);
   --tw-prose-td-borders: var(--border);
   font-size: 1.0625rem;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 .reading.reading-sm,
 .reading.prose.reading-sm {
@@ -268,66 +349,29 @@ pre {
 }
 
 /*
- * A ruled-notebook-paper look for math-heavy question sheets -- applied only
- * to the math courses: Calculus AB and BC, Physics 1 and Statistics (see isPaperLinedCourse() in
- * src/lib/content/paper-lined.ts), approved by the owner after a preview. It
- * is the one warm object on a cool page: the notebook the student works in.
- * Plain CSS gradients, unlayered (like `pre` above) so it wins over
- * Tailwind's `bg-card` utility regardless of class order -- see Tailwind
- * v4's cascade-layer priority. No images/assets.
- */
-.paper-lined {
-  /* Real left inset for content, well past the margin line below -- the
-     line sits at 18-20px (in the padding gutter itself), text starts at
-     28px (this padding) + the sheet body's own padding, leaving clear
-     daylight between the line and anything written. */
-  padding-left: 28px;
-  background-color: var(--nb-paper);
-  background-image:
-    linear-gradient(to right, transparent 18px, var(--nb-margin) 18px, var(--nb-margin) 20px, transparent 20px),
-    repeating-linear-gradient(
-      to bottom,
-      transparent,
-      transparent 27px,
-      var(--nb-line) 27px,
-      var(--nb-line) 28px
-    );
-  background-size: 100% 100%, 100% 28px;
-  background-position: 0 0, 0 10px;
-  background-repeat: no-repeat, repeat;
-  color: var(--nb-ink);
-}
-.paper-lined .reading,
-.paper-lined .reading.prose {
-  --tw-prose-body: var(--nb-ink);
-  --tw-prose-headings: var(--nb-ink);
-  --tw-prose-bold: var(--nb-ink);
-  --tw-prose-links: var(--nb-ink);
-  --tw-prose-code: var(--nb-ink);
-  color: var(--nb-ink);
-}
-
-/*
- * Answer choices: a bubble-sheet row. A native radio does the work (arrow
- * keys, form semantics); everything else is styling driven by :has().
- * Borders use currentColor so the same rule reads on a plain sheet and on
- * notebook paper.
+ * Answer choices: a bubble-sheet row. A native radio does the work (arrow keys, form semantics); everything else is
+ * styling driven by :has(). Picked = the course color behind ink and an ink edge. Revealed: the right row gets a
+ * green edge and the word "Correct", the wrong pick a dashed red edge and "Your answer", each with an icon.
  */
 .choice {
   position: relative;
   display: grid;
-  grid-template-columns: 2rem minmax(0, 1fr) auto;
-  column-gap: 0.75rem;
+  grid-template-columns: 1.875rem minmax(0, 1fr);
+  grid-template-areas: "bubble text" ". verdict";
+  column-gap: 0.875rem;
   align-items: start;
-  padding: 0.75rem 0.625rem;
-  border-top: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  padding: 0.6875rem 0.875rem;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
   cursor: pointer;
+  transition:
+    border-color 120ms,
+    background-color 120ms;
 }
-.choice:last-of-type {
-  border-bottom: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+.choice + .choice {
+  margin-top: 0.625rem;
 }
-/* Text inside a row follows the row (highlighter ink when selected), not the
-   sheet's own reading color. */
 .choice .reading {
   color: inherit;
 }
@@ -337,62 +381,73 @@ pre {
   pointer-events: none;
 }
 .choice-bubble {
+  grid-area: bubble;
   display: grid;
   place-items: center;
   width: 1.875rem;
   height: 1.875rem;
-  border: 1.5px solid currentColor;
+  border: 1.5px solid var(--foreground);
   border-radius: 9999px;
-  font-size: 0.8125rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 700;
   line-height: 1;
+  transition:
+    background-color 120ms,
+    color 120ms;
+}
+.choice-text {
+  grid-area: text;
+  min-width: 0;
+  padding-top: 0.125rem;
 }
 .choice-verdict {
+  grid-area: verdict;
   display: inline-flex;
   align-items: center;
   gap: 0.375rem;
-  min-height: 1.875rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  margin-top: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
-.choice[data-revealed="false"]:hover .choice-bubble {
-  background: var(--mark);
-  border-color: var(--on-mark);
-  color: var(--on-mark);
+.choice-verdict:empty {
+  display: none;
+}
+.choice[data-revealed="false"]:hover {
+  border-color: var(--foreground);
 }
 .choice[data-revealed="false"]:has(> input:checked) {
-  background: var(--mark);
-  color: var(--on-mark);
+  border-color: var(--foreground);
+  background: color-mix(in srgb, var(--c) 28%, var(--card));
 }
 .choice[data-revealed="false"]:has(> input:checked) .choice-bubble {
-  background: var(--on-mark);
-  border-color: var(--on-mark);
-  color: var(--mark);
+  background: var(--foreground);
+  color: var(--card);
 }
 .choice:has(> input:focus-visible) {
-  outline: 2px solid var(--ring);
+  outline: 3px solid var(--ring);
   outline-offset: 2px;
 }
 .choice[data-revealed="true"] {
   cursor: default;
 }
-.choice[data-state="correct"] .choice-bubble {
-  background: var(--correct);
+.choice[data-state="correct"] {
   border-color: var(--correct);
-  color: var(--card);
+  box-shadow: inset 0 0 0 1px var(--correct);
 }
+.choice[data-state="correct"] .choice-bubble,
 .choice[data-state="correct"] .choice-verdict {
+  border-color: var(--correct);
   color: var(--correct);
 }
-.choice[data-state="wrong"] .choice-bubble {
-  background: var(--incorrect);
+.choice[data-state="wrong"] {
+  border-style: dashed;
   border-color: var(--incorrect);
-  color: var(--card);
+  background: color-mix(in srgb, var(--c) 28%, var(--card));
 }
+.choice[data-state="wrong"] .choice-bubble,
 .choice[data-state="wrong"] .choice-verdict {
+  border-color: var(--incorrect);
   color: var(--incorrect);
 }
 .choice[data-revealed="true"] .choice-bubble svg {

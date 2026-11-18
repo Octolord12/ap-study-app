@@ -4,7 +4,6 @@ import { requireUserId } from "@/lib/auth/session";
 import { renderQuizQuestions } from "@/lib/study/render-quiz";
 import { QuizRunner } from "@/components/study/quiz-runner";
 import { Page } from "@/components/ui/page";
-import { isPaperLinedCourse } from "@/lib/content/paper-lined";
 
 export const metadata: Metadata = { title: "Unit quiz" };
 
@@ -31,7 +30,6 @@ export default async function UnitQuizPage({
         questions={rendered}
         backHref={`/courses/${courseSlug}/units/${unitSlug}`}
         backLabel="Back to unit"
-        paperLined={isPaperLinedCourse(courseSlug)}
       />
     </Page>
   );

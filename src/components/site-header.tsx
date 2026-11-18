@@ -4,14 +4,15 @@ import { logoutAction } from "@/lib/auth/actions";
 import { getUserGamificationStats } from "@/lib/gamification/queries";
 import { Button } from "@/components/ui/button";
 import { Tally } from "@/components/ui/tally";
+import { COURSE_ACCENT_KEYS } from "@/lib/content/course-accent";
+import { TabStripe } from "@/components/ui/course-tab";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { NavLink } from "@/components/nav/nav-link";
 import { AccountMenu } from "@/components/nav/account-menu";
 
 export function Wordmark() {
   return (
-    <Link href="/" className="display flex shrink-0 items-center gap-2 text-lg whitespace-nowrap uppercase sm:text-[1.375rem]">
-      <span aria-hidden className="block size-3.5 rounded-full border-2 border-foreground bg-mark" />
+    <Link href="/" className="display shrink-0 text-xl whitespace-nowrap sm:text-[1.5rem]">
       AP Study App
     </Link>
   );
@@ -23,7 +24,8 @@ export async function SiteHeader() {
   const signedIn = Boolean(session?.user && stats);
 
   return (
-    <header className="border-b-2 border-foreground bg-background">
+    <header className="border-b-[1.5px] border-foreground bg-background">
+      <TabStripe keys={COURSE_ACCENT_KEYS} className="h-1.5 border-b-[1.5px] border-foreground" />
       <div className="mx-auto flex h-14 w-full max-w-[67.5rem] items-center justify-between gap-4 px-4 sm:px-6">
         <div className="flex items-center gap-8">
           <Wordmark />
@@ -52,20 +54,17 @@ export async function SiteHeader() {
                   <Tally count={stats.currentStreak} className="hidden h-6 w-auto lg:block" />
                   <span className="numeral text-xl">{stats.currentStreak}</span>
                   <span className="eyebrow">
-                      day<span className="hidden sm:inline"> streak</span>
-                    </span>
+                    day<span className="hidden sm:inline"> streak</span>
+                  </span>
                 </span>
               ) : null}
-              <span className="flex items-baseline gap-1.5">
-                <span className="eyebrow">Lvl</span>
-                <span className="numeral text-2xl">{stats.level}</span>
-              </span>
+              <span className="plate">Level {stats.level}</span>
             </Link>
             <AccountMenu name={session?.user?.name ?? "Account"}>
               <form action={logoutAction}>
                 <button
                   type="submit"
-                  className="flex min-h-11 w-full items-center px-3 text-left text-sm font-semibold hover:bg-mark hover:text-on-mark"
+                  className="flex min-h-11 w-full items-center px-3 text-left text-sm font-bold hover:bg-mark hover:text-on-mark"
                 >
                   Log out
                 </button>

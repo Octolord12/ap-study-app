@@ -1,25 +1,30 @@
 import * as React from "react"
 import { cn } from "cn"
 
-// The one boxed object in the system: a sheet of paper. Everything else is
-// laid out with rules and whitespace. `lined` switches it to ruled notebook
-// paper (Calc AB / Physics 1 question sheets, see .paper-lined in
-// globals.css). The notebook padding lives on the outer element and the
-// body padding inside it, so the margin line never touches text.
+// The one boxed object in the system: a sheet of paper (white, ink edge, the edge of the sheet behind it).
+// `binder` punches three holes in the left margin and makes room for them, for the sheets a student works on
+// (a question, a free-response prompt). `band` puts the current course color across the top, like the divider
+// the sheet sits behind. `stack` is how many sheets show underneath.
 export function Sheet({
-  lined = false,
+  binder = false,
+  band = false,
+  stack = 1,
   className,
   bodyClassName,
   children,
   ...props
-}: React.ComponentProps<"div"> & { lined?: boolean; bodyClassName?: string }) {
+}: React.ComponentProps<"div"> & { binder?: boolean; band?: boolean; stack?: 1 | 2; bodyClassName?: string }) {
   return (
-    <div
-      data-slot="sheet"
-      className={cn("rounded-sm border border-border bg-card text-card-foreground", lined && "paper-lined", className)}
-      {...props}
-    >
-      <div className={cn("p-4 sm:p-6", bodyClassName)}>{children}</div>
+    <div data-slot="sheet" data-stack={stack} className={cn("sheet", className)} {...props}>
+      {band ? <div className="sheet-band" aria-hidden /> : null}
+      {binder ? (
+        <div className="sheet-holes" aria-hidden>
+          <i />
+          <i />
+          <i />
+        </div>
+      ) : null}
+      <div className={cn("p-4 sm:p-6", binder && "pl-11 sm:pl-14", bodyClassName)}>{children}</div>
     </div>
   )
 }

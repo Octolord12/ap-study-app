@@ -3,25 +3,22 @@ import { ImageResponse } from "next/og";
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-// A filled answer bubble in highlighter yellow: the same mark as the wordmark.
+// A divider tab: the binder's mark, in the default course color.
 export default function Icon() {
   return new ImageResponse(
     (
-      <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "#f7f8f6" }}>
+      <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "#e3e7f0" }}>
         <div
           style={{
-            width: 26,
+            width: 22,
             height: 26,
-            borderRadius: 13,
-            background: "#ffe24a",
-            border: "3px solid #1f2328",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
+            borderRadius: "8px 8px 0 0",
+            background: "#9aa6f2",
+            border: "3px solid #1b2438",
+            borderBottom: "0",
+            marginTop: 6,
           }}
-        >
-          <div style={{ width: 8, height: 8, borderRadius: 4, background: "#1f2328" }} />
-        </div>
+        />
       </div>
     ),
     size,

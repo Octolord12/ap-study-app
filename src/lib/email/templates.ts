@@ -7,10 +7,10 @@ const escapeHtml = (text: string) => text.replace(/&/g, "&amp;").replace(/</g, "
 function wrap(paragraphs: string[], link?: { href: string; label: string }): string {
   const body = paragraphs.map((p) => `<p style="margin:0 0 16px">${escapeHtml(p)}</p>`).join("");
   const button = link
-    ? `<p style="margin:0 0 16px"><a href="${escapeHtml(link.href)}" style="display:inline-block;background:#1f2328;color:#ffffff;padding:12px 18px;text-decoration:none;font-weight:600">${escapeHtml(link.label)}</a></p>` +
+    ? `<p style="margin:0 0 16px"><a href="${escapeHtml(link.href)}" style="display:inline-block;background:#1b2438;color:#ffffff;padding:12px 18px;text-decoration:none;font-weight:600">${escapeHtml(link.label)}</a></p>` +
       `<p style="margin:0 0 16px;font-size:13px;color:#59606a">If the button doesn't work, paste this into your browser:<br>${escapeHtml(link.href)}</p>`
     : "";
-  return `<div style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#1f2328;max-width:480px">${body}${button}</div>`;
+  return `<div style="font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.5;color:#1b2438;max-width:480px">${body}${button}</div>`;
 }
 
 export function passwordResetEmail(to: string, resetUrl: string): EmailMessage {

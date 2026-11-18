@@ -26,7 +26,7 @@ export function XpBar({ value, max, label, className }: { value: number; max: nu
   const pct = max > 0 ? Math.min(100, Math.round((value / max) * 100)) : 0
   return (
     <div role="img" aria-label={label} className={cn("relative h-2.5 w-full bg-border", className)}>
-      <i className="absolute inset-y-0 left-0 block border-b-2 border-foreground bg-mark" style={{ width: `${pct}%` }} />
+      <i className="absolute inset-y-0 left-0 block border-b-[1.5px] border-foreground bg-mark" style={{ width: `${pct}%` }} />
     </div>
   )
 }
