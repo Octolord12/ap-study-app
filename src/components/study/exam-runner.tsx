@@ -244,7 +244,7 @@ export function ExamRunner({ examAttemptId, courseSlug, initialSecondsLeft, mcqI
           <div className="mt-3">{grid}</div>
         </details>
 
-        <Sheet binder>
+        <Sheet>
           {mcqItem ? (
             <>
               <Html html={mcqItem.stemHtml} className="text-[1.1875rem]" />

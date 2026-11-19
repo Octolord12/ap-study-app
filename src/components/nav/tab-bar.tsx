@@ -22,7 +22,7 @@ export function TabBar() {
     <>
       <nav
         aria-label="Primary"
-        className="fixed inset-x-0 bottom-0 z-40 border-t-[1.5px] border-foreground bg-background pb-[env(safe-area-inset-bottom)] lg:hidden"
+        className="fixed inset-x-0 bottom-0 z-40 border-t-2 border-foreground bg-background pb-[env(safe-area-inset-bottom)] lg:hidden"
       >
         <ul className="grid grid-cols-5">
           {TABS.map(({ href, label, Icon, ...rest }) => {
@@ -32,10 +32,10 @@ export function TabBar() {
                 <Link
                   href={href}
                   aria-current={active ? "page" : undefined}
-                  className="flex min-h-14 flex-col items-center justify-center gap-1 text-[0.6875rem] font-semibold"
+                  className="flex min-h-14 flex-col items-center justify-center gap-1 text-[0.6875rem] font-bold"
                 >
                   <Icon className="size-5" strokeWidth={active ? 2.25 : 1.75} aria-hidden />
-                  <span className={cn("px-1", active && "bg-mark text-on-mark")}>{label}</span>
+                  <span className={cn("rounded-full px-2 py-0.5", active && "bg-mark text-on-mark")}>{label}</span>
                 </Link>
               </li>
             );

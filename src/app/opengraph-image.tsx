@@ -6,10 +6,11 @@ export const alt = "AP Study App: practice for AP exams, every incorrect answer 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const INK = "#1b2438";
-const PAPER = "#e3e7f0";
+const INK = "#0c1b48";
+const SKY = "#62a7ea";
+const LEMON = "#f2ea1e";
 
-// One tab per course, in the same colors as the app (see globals.css).
+// The course chips, in the same colors as the app (see globals.css).
 const TABS = [
   { name: "CSA", color: "#62c7de" },
   { name: "World", color: "#f2a65a" },
@@ -21,18 +22,7 @@ const TABS = [
   { name: "Stats", color: "#ebcf55" },
 ];
 
-function Tally() {
-  return (
-    <div style={{ display: "flex", position: "relative", width: 150, height: 64 }}>
-      {[0, 1, 2, 3].map((i) => (
-        <div key={i} style={{ position: "absolute", left: 14 + i * 28, top: 4, width: 8, height: 56, borderRadius: 4, background: INK }} />
-      ))}
-      <div style={{ position: "absolute", left: 0, top: 28, width: 132, height: 8, borderRadius: 4, background: INK, transform: "rotate(-24deg)" }} />
-    </div>
-  );
-}
-
-// Type on the desk with one divider tab per course: the same system as the app.
+// Huge navy type on sky blue, a lemon sticker and one chip per course: the same system as the app.
 // ImageResponse can't read next/font, so the headline uses the bold sans that
 // ships with KaTeX (already a dependency, so nothing is downloaded or added).
 export default async function OpengraphImage() {
@@ -48,7 +38,7 @@ export default async function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: PAPER,
+          background: SKY,
           color: INK,
           padding: "52px 72px 56px",
           fontFamily: "KaTeX Sans",
@@ -59,7 +49,24 @@ export default async function OpengraphImage() {
           <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 34, letterSpacing: -0.5 }}>
             AP Study App
           </div>
-          <Tally />
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: 150,
+              height: 150,
+              borderRadius: 75,
+              background: LEMON,
+              border: `4px solid ${INK}`,
+              fontSize: 34,
+              lineHeight: 1.05,
+              textAlign: "center",
+              transform: "rotate(-8deg)",
+            }}
+          >
+            8 AP exams
+          </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={line}>Practice for AP exams.</div>
@@ -73,11 +80,10 @@ export default async function OpengraphImage() {
               style={{
                 display: "flex",
                 background: tab.color,
-                color: "#141b2d",
+                color: INK,
                 border: `3px solid ${INK}`,
-                borderBottom: "0",
-                borderRadius: "14px 14px 0 0",
-                padding: "14px 20px 10px",
+                borderRadius: 999,
+                padding: "10px 22px",
                 fontSize: 26,
               }}
             >

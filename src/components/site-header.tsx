@@ -4,16 +4,14 @@ import { logoutAction } from "@/lib/auth/actions";
 import { getUserGamificationStats } from "@/lib/gamification/queries";
 import { Button } from "@/components/ui/button";
 import { Tally } from "@/components/ui/tally";
-import { COURSE_ACCENT_KEYS } from "@/lib/content/course-accent";
-import { TabStripe } from "@/components/ui/course-tab";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { NavLink } from "@/components/nav/nav-link";
 import { AccountMenu } from "@/components/nav/account-menu";
 
 export function Wordmark() {
   return (
-    <Link href="/" className="display shrink-0 text-xl whitespace-nowrap sm:text-[1.5rem]">
-      AP Study App
+    <Link href="/" className="display shrink-0 text-2xl whitespace-nowrap sm:text-[1.75rem]">
+      AP Study
     </Link>
   );
 }
@@ -24,8 +22,7 @@ export async function SiteHeader() {
   const signedIn = Boolean(session?.user && stats);
 
   return (
-    <header className="border-b-[1.5px] border-foreground bg-background">
-      <TabStripe keys={COURSE_ACCENT_KEYS} className="h-1.5 border-b-[1.5px] border-foreground" />
+    <header className="border-b-2 border-foreground bg-background">
       <div className="mx-auto flex h-14 w-full max-w-[67.5rem] items-center justify-between gap-4 px-4 sm:px-6">
         <div className="flex items-center gap-8">
           <Wordmark />
@@ -64,7 +61,7 @@ export async function SiteHeader() {
               <form action={logoutAction}>
                 <button
                   type="submit"
-                  className="flex min-h-11 w-full items-center px-3 text-left text-sm font-bold hover:bg-mark hover:text-on-mark"
+                  className="flex min-h-11 w-full items-center px-3 text-left text-sm font-extrabold hover:bg-mark hover:text-on-mark"
                 >
                   Log out
                 </button>

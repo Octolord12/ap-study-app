@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Bricolage_Grotesque, Literata } from "next/font/google";
+import { Anton, Archivo, JetBrains_Mono } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteTabBar } from "@/components/nav/site-tab-bar";
@@ -11,20 +11,9 @@ import "./globals.css";
 // Variable names deliberately differ from Tailwind's own --font-sans /
 // --font-serif / --font-mono (mapped in globals.css): pointing one of those at
 // itself made every page fall back to the browser's default serif.
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
-  subsets: ["latin"],
-  axes: ["wdth", "opsz"],
-  display: "swap",
-});
-
-const literata = Literata({
-  variable: "--font-literata",
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz"],
-  display: "swap",
-});
+const anton = Anton({ variable: "--font-anton", subsets: ["latin"], weight: "400", display: "swap" });
+const archivo = Archivo({ variable: "--font-archivo", subsets: ["latin"], display: "swap" });
+const jetbrainsMono = JetBrains_Mono({ variable: "--font-jbmono", subsets: ["latin"], display: "swap" });
 
 const SITE_NAME = "AP Study App";
 const DESCRIPTION =
@@ -46,8 +35,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#e3e7f0" },
-    { media: "(prefers-color-scheme: dark)", color: "#0e1320" },
+    { media: "(prefers-color-scheme: light)", color: "#62a7ea" },
+    { media: "(prefers-color-scheme: dark)", color: "#0c1b48" },
   ],
 };
 
@@ -55,7 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${literata.variable} h-full antialiased`}
+      className={`${anton.variable} ${archivo.variable} ${jetbrainsMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">

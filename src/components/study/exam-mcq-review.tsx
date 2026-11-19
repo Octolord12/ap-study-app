@@ -21,7 +21,7 @@ export function ExamMcqReview({
       {questions.map((question, index) => {
         const chosenLabel = chosenLabelByQuestionId.get(question.id);
         return (
-          <Sheet binder key={question.id}>
+          <Sheet key={question.id}>
             <p className="eyebrow">Question {index + 1}</p>
             <Html html={question.stemHtml} className="mt-2" />
             {question.diagram && <DiagramRenderer diagram={question.diagram} />}

@@ -170,5 +170,5 @@ export function FrqSelfGrade({
     </div>
   );
 
-  return boxed ? <Sheet binder>{content}</Sheet> : content;
+  return boxed ? <Sheet>{content}</Sheet> : content;
 }

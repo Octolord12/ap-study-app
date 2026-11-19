@@ -199,7 +199,7 @@ export function BossBattleRunner({
           </div>
         </div>
 
-        <Sheet binder>
+        <Sheet>
           <Html html={question.stemHtml} className="text-[1.1875rem]" />
           {question.diagram && <DiagramRenderer diagram={question.diagram} />}
 

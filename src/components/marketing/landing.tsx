@@ -6,7 +6,6 @@ import { describeExamFormat, formatDuration } from "@/lib/content/exam-format";
 import { TESTIMONIALS } from "@/lib/marketing/testimonials";
 import { MINIMUM_AGE } from "@/lib/age";
 import { LandingWaitlist } from "@/components/marketing/landing-waitlist";
-import { hostGrotesk, jetbrainsMono } from "@/components/marketing/landing-fonts";
 import styles from "./landing.module.css";
 
 const FAQ = [
@@ -45,7 +44,7 @@ export async function Landing() {
   const quote = TESTIMONIALS[0];
 
   return (
-    <div className={`${styles.lp} ${hostGrotesk.variable} ${jetbrainsMono.variable}`}>
+    <div className={styles.lp}>
       <section className={styles.hero} aria-labelledby="hero-h">
         <div className={styles.wrap}>
           <div className={styles.heroText}>
@@ -54,8 +53,13 @@ export async function Landing() {
               <span>See the formats</span>
             </a>
             <h1 id="hero-h" className={styles.h1}>
-              AP practice that explains every miss
+              AP practice that explains <span className="hl">every miss</span>
             </h1>
+            <span className={`sticker ${styles.heroSticker}`} aria-hidden="true">
+              {countWord(courses.length, true)}
+              <br />
+              AP exams
+            </span>
             <p className={styles.heroLead}>
               Answer a question, then read why each choice is right or wrong. {totalMcq.toLocaleString("en-US")} multiple-choice questions and {totalFrq}{" "}
               free-response prompts across {examsWord} exams.

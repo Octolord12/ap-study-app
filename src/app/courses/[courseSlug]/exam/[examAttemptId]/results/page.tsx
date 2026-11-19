@@ -136,7 +136,7 @@ export default async function ExamResultsPage({
         <Section label="Free response" note="Grade your own responses against each rubric.">
           <div className="space-y-6">
             {frqSections.map(({ frq, prompt, sampleResponseHtml, diagram, rubric, existingAttempt }) => (
-              <Sheet binder key={frq.id}>
+              <Sheet key={frq.id}>
                 <div className="space-y-6">
                   <div>
                     <p className="eyebrow mb-2">

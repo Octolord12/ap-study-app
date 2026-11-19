@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Practice for AP Calculus AB, Physics 1, Computer Science A, World History and U.S. History.",
     start_url: "/",
     display: "standalone",
-    background_color: "#e3e7f0",
-    theme_color: "#e3e7f0",
+    background_color: "#62a7ea",
+    theme_color: "#62a7ea",
   };
 }

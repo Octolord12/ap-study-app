@@ -54,7 +54,7 @@ export default async function FrqPracticePage({
         </div>
 
         <div className="min-w-0 space-y-6">
-          <Sheet binder>
+          <Sheet>
             <FrqPrompt prompt={prompt} diagram={diagram} />
           </Sheet>
 

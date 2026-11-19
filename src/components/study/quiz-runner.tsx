@@ -145,7 +145,7 @@ export function QuizRunner({
           </Link>
         </div>
 
-        <Sheet binder className="min-w-0">
+        <Sheet className="min-w-0">
           <Html html={question.stemHtml} className="text-[1.1875rem]" />
           {question.diagram && <DiagramRenderer diagram={question.diagram} />}
 
