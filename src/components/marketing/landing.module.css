@@ -70,6 +70,20 @@
 .link:hover {
   color: var(--accent);
 }
+/* Looks the same, but the tap area reaches 44px tall: the text itself is only about 22px. */
+.link,
+.pill {
+  position: relative;
+}
+.link::after,
+.pill::after {
+  content: "";
+  position: absolute;
+  inset: -0.75rem -0.25rem;
+}
+.pill::after {
+  inset: -0.3125rem 0;
+}
 .lp a:focus-visible,
 .lp button:focus-visible,
 .lp input:focus-visible {
