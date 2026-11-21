@@ -52,8 +52,21 @@ export async function Landing() {
               <span>{countWord(courses.length, true)} AP exams</span>
               <span>See the formats</span>
             </a>
+            <span className={styles.ghost} aria-hidden="true">
+              AP
+            </span>
             <h1 id="hero-h" className={styles.h1}>
-              AP practice that explains <span className="hl">every miss</span>
+              <span className={styles.line}>
+                <span style={{ ["--i" as string]: 0 }}>AP practice</span>
+              </span>{" "}
+              <span className={styles.line}>
+                <span style={{ ["--i" as string]: 1 }}>that explains</span>
+              </span>{" "}
+              <span className={styles.line}>
+                <span style={{ ["--i" as string]: 2 }}>
+                  <span className="hl">every miss</span>
+                </span>
+              </span>
             </h1>
             <span className={`sticker ${styles.heroSticker}`} aria-hidden="true">
               {countWord(courses.length, true)}
